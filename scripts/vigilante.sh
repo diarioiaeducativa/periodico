@@ -52,17 +52,20 @@ python3 scripts/publicado.py
 python3 generar.py || { avisar "Hoy ($HOY) no hay número en la web y el generador falla con la reserva: queda a mano."; exit 1; }
 python3 -m pagefind --site sitio >/dev/null || echo "vigilante: sin índice nuevo del buscador; queda el anterior"
 
-if [ "$SIMULAR" = 1 ]; then
-  echo "vigilante (simulación): el sitio está montado en sitio/ con la reserva; no se sube nada"
-  exit 0
-fi
-
 # El sitio: lo mismo que publicar-nas.sh, con la clave de despliegue del vigilante
-mkdir -p ~/.ssh && printf '%s\n' "$SITIO_KEY" > ~/.ssh/sitio && chmod 600 ~/.ssh/sitio
-ssh-keyscan -t ed25519 github.com >> ~/.ssh/known_hosts 2>/dev/null
-export GIT_SSH_COMMAND="ssh -i $HOME/.ssh/sitio -o IdentitiesOnly=yes"
+if [ -n "${SITIO_KEY:-}" ]; then
+  mkdir -p ~/.ssh && printf '%s\n' "$SITIO_KEY" > ~/.ssh/sitio && chmod 600 ~/.ssh/sitio
+  ssh-keyscan -t ed25519 github.com >> ~/.ssh/known_hosts 2>/dev/null
+  export GIT_SSH_COMMAND="ssh -i $HOME/.ssh/sitio -o IdentitiesOnly=yes"
+fi
 git clone -q --depth 1 git@github.com:diarioiaeducativa/diarioiaeducativa.github.io.git /tmp/sitio ||
   { avisar "Hoy ($HOY) no hay número en la web y no puedo descargar el repositorio del sitio: queda a mano."; exit 1; }
+if [ "$SIMULAR" = 1 ]; then   # se comprueban las credenciales sin subir nada ni avisar
+  echo "vigilante (simulación): el sitio está montado con la reserva y la clave del sitio descarga su repositorio; no se sube nada"
+  git -C /tmp/sitio push --dry-run -q 2>&1 | tail -1
+  [ -n "${TELEGRAM_TOKEN:-}" ] && curl -s --max-time 30 "https://api.telegram.org/bot$TELEGRAM_TOKEN/getMe" | grep -o '"ok":[a-z]*' | sed 's/^/vigilante (simulación): bot de avisos /'
+  exit 0
+fi
 rsync -a --delete --exclude .git --exclude README.md --exclude LICENSE --exclude LICENSE-CODIGO \
   --exclude .nojekyll --exclude fuentes/OFL.txt sitio/ /tmp/sitio/
 git config --global user.name "Diario de IA Educativa (vigilante)"
