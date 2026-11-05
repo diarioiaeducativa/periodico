@@ -1,0 +1,67 @@
+{
+ "fecha": "2026-11-03",
+ "piezas": [
+  {
+   "id": "mit-comite-ia",
+   "seccion": "biblioteca",
+   "importancia": 2,
+   "grupo": "chatgpt",
+   "antetitulo": "Informe del MIT",
+   "titular": "Un comitè del MIT demana redissenyar objectius, avaluació i comunitat presencial davant d'una IA que ja resol gairebé qualsevol treball escrit",
+   "entradilla": "El comitè ad hoc de l'Institut Tecnològic de Massachusetts proposa vuit principis i un conjunt de recomanacions per adaptar l'ensenyament universitari a la IA generativa.",
+   "cuerpo": [
+    "El document és l'informe final de l'Ad Hoc Committee on AI Use in Teaching, Learning, and Research Training del Massachusetts Institute of Technology (MIT). La direcció de la institució el va encarregar el gener del 2026 per avaluar l'ús actual de la IA generativa, identificar innovacions en la docència i l'avaluació i proposar una política d'ús. Està datat el 13 d'agost del 2026 i el copresideixen Eric Klopfer i Sam Madden; el comitè reuneix estudiants de grau i de postgrau, professorat de totes les escoles i personal d'unitats com les biblioteques i el Teaching and Learning Lab. És un document institucional, adreçat a la comunitat del MIT.",
+    "El comitè conclou que la qüestió és més profunda que redactar una norma: afecta l'estructura, el sentit i el valor de la formació universitària. Segons l'informe, la IA pot donar respostes raonables a gairebé qualsevol tasca escrita del grau, i adverteix: «This is not a moment for patches and duct tape.» Entre les dades que aporta, en l'enquesta tecnològica de la tardor del 2025 més de dos terços de l'alumnat que va respondre creia que la IA tindrà importància en la seva carrera, però només un 25 % considerava que el MIT el prepara adequadament per usar-la.",
+    "Els vuit principis són: ser humil, ser audaç, posar les persones al centre, apostar per l'aprenentatge, ensenyar amb intencionalitat, reconèixer que no hi ha una solució única, augmentar en lloc d'automatitzar i pensar més enllà de l'aula i del campus. El quart parla de l'esforç productiu i d'un nou contracte social entre docents i estudiants; el setè demana usar la IA, en paraules de l'informe, «to augment and enhance curiosity, creativity, and learning, not automate them». El cinquè planteja definir primer el propòsit de l'aprenentatge en lloc de preguntar-se si la IA s'ha de permetre o prohibir.",
+    "Les recomanacions s'agrupen en tres blocs. El primer, sobre els processos educatius, demana revisar els objectius de cada matèria, recórrer a exàmens orals, portafolis semestrals o treballs fora de l'aula acompanyats de conversa a classe, i reforçar l'aprenentatge per projectes i l'aprenentatge social presencial. Reclama també una política d'IA justificada a cada assignatura, amb format estàndard i pautes clares i coherents. Desaconsella refiar-se dels detectors d'IA, que considera poc fiables, i descriu els navegadors de bloqueig actuals com a defectuosos i propers a la vigilància, tot i que recomana estudiar-los; prefereix l'historial de versions i la retroalimentació per etapes. El segon bloc, sobre la comunitat i l'experiència residencial, recomana que el professorat declari el seu propi ús d'IA, que s'ensenyi un ús eficaç, responsable i ètic des de les sessions d'acollida de l'alumnat i que tota tesi inclogui una declaració sobre com es va usar la IA, sense que hi figuri mai com a coautora.",
+    "El tercer bloc proposa estructures de suport: un comitè permanent sobre IA i educació, responsables d'IA per escola o departament, becaris i un equip d'implementació, un fons per a pilots, formació i suport continus al professorat i mètriques d'ús, participació i resultats. Inclou també accés equitatiu a la tecnologia, una plataforma que no lligui la comunitat a un únic proveïdor de models i el seguiment dels costos i de l'impacte ambiental. Aquestes mesures depenen dels recursos d'una universitat concreta.",
+    "Aquest informe es relaciona per tema amb altres documents de la biblioteca: l'avaluació en l'era de la IA, com [Responsible Assessment in the AI Era](https://t.me/ChatGPTedu/21753/50953), o la integritat acadèmica, com [A Comprehensive Academic Integrity (CAI) Framework: An Overview](https://t.me/ChatGPTedu/21753/41875). El diari no n'ha contrastat el contingut amb el d'aquest informe. Per a un docent, el més aprofitable són les idees transferibles: partir dels objectius d'aprenentatge abans de decidir què es permet, declarar a cada assignatura quins usos d'IA són admissibles i per què, i diversificar l'avaluació amb components orals o de procés. Convé començar pel bloc sobre els processos educatius, el més proper a l'aula. Com a límit, el context és el d'una universitat de recerca concreta, de manera que la seva translació a altres nivells o centres requereix adaptació."
+   ],
+   "documento": {
+    "titulo": "Report of MIT's Ad Hoc Committee on AI Use in Teaching, Learning, and Research Training",
+    "autoria": "Ad Hoc Committee on AI Use in Teaching, Learning, and Research Training, Massachusetts Institute of Technology (copresidents: Eric Klopfer i Sam Madden)",
+    "anyo": "2026",
+    "idioma": "anglès",
+    "licencia": "no consta",
+    "url": "https://aiandeducation.mit.edu/report/"
+   },
+   "fuentes": [
+    {
+     "titulo": "Report of MIT's Ad Hoc Committee on AI Use in Teaching, Learning, and Research Training (versió web) (en anglès)",
+     "url": "https://aiandeducation.mit.edu/report/"
+    },
+    {
+     "titulo": "AI and Education at MIT (pàgina del comitè) (en anglès)",
+     "url": "https://aiandeducation.mit.edu/"
+    },
+    {
+     "titulo": "Responsible Assessment in the AI Era (Biblioteca digital) (en anglès)",
+     "url": "https://t.me/ChatGPTedu/21753/50953"
+    },
+    {
+     "titulo": "A Comprehensive Academic Integrity (CAI) Framework: An Overview (Biblioteca digital) (en anglès)",
+     "url": "https://t.me/ChatGPTedu/21753/41875"
+    }
+   ],
+   "mensaje": {
+    "grupo": "chatgpt",
+    "id": 53925
+   },
+   "comprobado": "La entrada solo trae la ficha, sin texto del PDF. El revisor leyó con WebFetch la versión web oficial del informe (aiandeducation.mit.edu/report/) y la página del comité (aiandeducation.mit.edu), y contrastó punto por punto fecha, copresidentes, encargo de enero de 2026, composición del comité, los ocho principios, las recomendaciones de los tres bloques, los datos de la encuesta y las dos citas en inglés, que constan literalmente en las secciones 2.2 y 2.7. WebFetch devuelve resúmenes automáticos, no el texto íntegro. La licencia no figura en la página. De los dos documentos de la biblioteca enlazados solo se conoce el título (existen en la lista de la entrada); la relación se limita al tema.",
+   "ilustracion_alt": "Esquema amb una barra superior de vuit principis de la qual surten tres fletxes cap a tres columnes: processos educatius (examen oral, portafolis), comunitat (grup de persones) i estructures de suport (organigrama i eines).",
+   "ilustracion": "Esquema en tres columnas con los tres bloques de recomendaciones (procesos educativos, personas y comunidad, estructuras y herramientas), cada una con tres o cuatro acciones clave, sobre una barra superior con los ocho principios.",
+   "repaso": [
+    "Entradilla: quitada la afirmación de que se intenta «mantenerla fuera del aula», que el informe no dice.",
+    "Párrafo 1: quitado que el informe se presente como llamada a la acción para otras instituciones (es una llamada dirigida al MIT).",
+    "Párrafo 2: quitada la atribución de las «indicaciones confusas» a la encuesta (son opiniones del alumnado, no de ese dato).",
+    "Párrafo 3: precisado que el esfuerzo productivo y el contrato social son del cuarto principio y la cita del séptimo; el contrato social va sin comillas; el quinto principio se ajusta a lo que dice el informe.",
+    "Párrafo 4: detectores y navegadores de bloqueo matizados (el informe recomienda estudiar los segundos); ejemplos de evaluación, formato estándar y declaración de uso de IA ajustados a las secciones 3.1 y 3.2.",
+    "Párrafo 5: quitado que el informe se declare «provisional» (no lo dice); «muchos recursos» sustituido por una formulación comprobable.",
+    "Párrafo 6: la frase sobre la relación con otros documentos queda como mera coincidencia temática, sin comparación.",
+    "Extensión: el cuerpo pasaba de 700 palabras; recortado a unas 640.",
+    "Citas literales, fecha, copresidentes, cifras y mensaje 53925 confirmados; no se nombra a quien lo subió."
+   ]
+  }
+ ],
+ "descartado": []
+}

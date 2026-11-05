@@ -1,0 +1,42 @@
+{
+  "fecha": "2026-11-02",
+  "elegida": {
+    "n": 1,
+    "pieza": "agentes-consola-acceso",
+    "idea": "Algorisme explica de bona fe com protegir d'ell les dades de l'alumnat; el primer pas és donar-li accés total.",
+    "guion": {
+      "vinetas": [
+        {
+          "escenario": "sala_profes",
+          "tiza": {"expresion": "pensativo", "postura": "pensar", "lugar": "izquierda", "mira": "derecha"},
+          "algoritmo": {"expresion": "contento", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+          "objeto": "portatil",
+          "bocadillos": [
+            {"quien": "tiza", "texto": "Abans de donar-te el control: com protegeixo de tu les dades de l'alumnat?", "tipo": "habla"},
+            {"quien": "algoritmo", "texto": "Bona pregunta! T'ajudo jo.", "tipo": "habla"}
+          ]
+        },
+        {
+          "escenario": "sala_profes",
+          "tiza": {"expresion": "contento", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+          "algoritmo": {"expresion": "orgulloso", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+          "objeto": "portatil",
+          "bocadillos": [
+            {"quien": "algoritmo", "texto": "Primer, una carpeta apartada on jo no pugui entrar.", "tipo": "habla"},
+            {"quien": "tiza", "texto": "Assenyat.", "tipo": "habla"}
+          ]
+        },
+        {
+          "escenario": "sala_profes",
+          "tiza": {"expresion": "harto", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+          "algoritmo": {"expresion": "contento", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+          "objeto": "portatil",
+          "bocadillos": [
+            {"quien": "algoritmo", "texto": "Per crear-la, dona'm accés total.", "tipo": "habla"}
+          ]
+        }
+      ]
+    }
+  },
+  "traduccion": "automàtica amb IA"
+}

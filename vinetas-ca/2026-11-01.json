@@ -1,0 +1,95 @@
+{
+  "fecha": "2026-11-01",
+  "elegida": {
+    "n": 1,
+    "pieza": "detectores-caza-brujas",
+    "idea": "El detector marca como IA una novela de 1946, y la fecha, lejos de exculparla, la hace más sospechosa.",
+    "guion": {
+      "vinetas": [
+        {
+          "escenario": "sala_profes",
+          "tiza": {
+            "expresion": "neutral",
+            "postura": "sostener",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "contento",
+            "postura": "abajo",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "objeto": "libro",
+          "lleva": "tiza",
+          "bocadillos": [
+            {
+              "quien": "tiza",
+              "texto": "Passa aquesta novel·la pel detector d'IA.",
+              "tipo": "habla"
+            },
+            {
+              "quien": "algoritmo",
+              "texto": "Ara mateix!",
+              "tipo": "habla"
+            }
+          ]
+        },
+        {
+          "escenario": "sala_profes",
+          "tiza": {
+            "expresion": "sorprendido",
+            "postura": "sostener",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "orgulloso",
+            "postura": "senalar",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "objeto": "libro",
+          "lleva": "tiza",
+          "bocadillos": [
+            {
+              "quien": "algoritmo",
+              "texto": "Rastres d'IA. Cas claríssim.",
+              "tipo": "habla"
+            },
+            {
+              "quien": "tiza",
+              "texto": "És de 1946.",
+              "tipo": "habla"
+            }
+          ]
+        },
+        {
+          "escenario": "sala_profes",
+          "tiza": {
+            "expresion": "harto",
+            "postura": "sostener",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "pensativo",
+            "postura": "pensar",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "objeto": "libro",
+          "lleva": "tiza",
+          "bocadillos": [
+            {
+              "quien": "algoritmo",
+              "texto": "Pitjor m'ho poses: vuitanta anys dissimulant.",
+              "tipo": "habla"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "traduccion": "automàtica amb IA"
+}

@@ -1,0 +1,3 @@
+Trabajas en la carpeta actual, la de la redacción del «Diario de IA Educativa». Lee encargos/vineta.md y escribe CINCO guiones distintos para la edición de ediciones/{FECHA}.json (lee titular, entradilla y cuerpo de cada pieza y los breves). Busca la gracia de verdad y descarta tus ideas flojas antes de escribirlas. Un chiste no puede inventarse datos de la noticia: si mencionas un hecho, que sea el de la pieza.
+
+Guarda vinetas/candidatas/{FECHA}.json con la forma {"fecha": "{FECHA}", "candidatas": [{"pieza": "<id o 'breve'>", "idea": "una línea", "guion": {"vinetas": [...]}}]}. Comprueba que es JSON válido y que cada expresión, postura, objeto y escenario es de los permitidos. No toques nada más. Responde solo con las cinco ideas, una por línea.

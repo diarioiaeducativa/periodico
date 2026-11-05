@@ -1,0 +1,50 @@
+{
+  "fecha": "2026-11-03",
+  "elegida": {
+    "n": 2,
+    "pieza": "google-ia-cuentas-escolares",
+    "idea": "Algoritmo redacta el aviso de que la IA está bloqueada y no puede evitar ofrecerse a resumirlo.",
+    "guion": {
+      "vinetas": [
+        {
+          "escenario": "sala_profes",
+          "tiza": {"expresion": "neutral", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+          "algoritmo": {"expresion": "contento", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+          "objeto": "portatil",
+          "bocadillos": [
+            {"quien": "tiza", "texto": "Si el centro bloquea la IA, el alumnado verá un aviso del centro.", "tipo": "habla"},
+            {"quien": "algoritmo", "texto": "¡Lo redacto yo!", "tipo": "habla"}
+          ]
+        },
+        {
+          "escenario": "sala_profes",
+          "tiza": {"expresion": "contento", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+          "algoritmo": {"expresion": "orgulloso", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+          "objeto": "portatil",
+          "bocadillos": [
+            {"quien": "algoritmo", "texto": "«Tu centro ha desactivado la IA.»", "tipo": "habla"},
+            {"quien": "tiza", "texto": "Claro y breve.", "tipo": "habla"}
+          ]
+        },
+        {
+          "escenario": "sala_profes",
+          "tiza": {"expresion": "harto", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+          "algoritmo": {"expresion": "contento", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+          "objeto": "portatil",
+          "bocadillos": [
+            {"quien": "algoritmo", "texto": "«¿Quieres que te lo resuma?»", "tipo": "habla"}
+          ]
+        }
+      ]
+    }
+  },
+  "motivo": "Es la única que llega a 7 de gracia. El chiste nace de un dato concreto de la noticia (el alumnado de un centro que bloquee la IA verá un aviso del centro) y de la manía más reconocible de la IA: ser servicial hasta en el mensaje que anuncia que está apagada, ofreciéndose a resumir una frase de seis palabras. Se entiende sin leer la noticia, el remate es corto y no se explica, y el silencio harto de Tiza lo cierra. Respeta todas las prohibiciones y no inventa datos.",
+  "retoques": "Viñeta 1: «verá un mensaje del centro avisándolo» pasa a «verá un aviso del centro» (de 78 a 65 caracteres, sin redundancia) y «¡Os lo redacto yo!» a «¡Lo redacto yo!». Viñeta 2: «Claro y breve. Perfecto.» se queda en «Claro y breve.», que basta para preparar el remate. Escenario, expresiones, posturas y objeto se mantienen: el portátil en las tres viñetas sitúa el aviso, Algoritmo señala la pantalla y la cara harta de Tiza hace de remate mudo. Ningún bocadillo pasa de 90 caracteres (el más largo tiene 65).",
+  "puntuaciones": [
+    {"n": 1, "pieza": "google-ia-cuentas-escolares", "gracia": 6, "claridad": 7, "remate": 6, "prohibiciones": "respeta", "nota": "La idea (Algoritmo hace la pelota a quien tiene el interruptor) funciona, pero el remate del café y el «¿te corrijo algo?» es previsible y la viñeta 1 es larga. Que la coordinadora digital administre es verosímil, aunque la noticia habla de administradores en general; no llega a inventar datos."},
+    {"n": 2, "pieza": "google-ia-cuentas-escolares", "gracia": 7, "claridad": 8, "remate": 8, "prohibiciones": "respeta", "nota": "Se apoya en un dato real (el aviso del centro) y el remate es breve y sorprendente: la IA no sabe dejar de ofrecerse ni en su propio aviso de apagado. La viñeta 1 sobraba algo de texto."},
+    {"n": 3, "pieza": "google-ia-cuentas-escolares", "gracia": 5, "claridad": 7, "remate": 5, "prohibiciones": "respeta", "nota": "La rapidez de la IA frente al «sin prisas» se ve venir desde la viñeta 1, y la 3 solo repite la misma idea con un minuto más. La pausa para el café no la levanta."},
+    {"n": 4, "pieza": "google-ia-cuentas-escolares", "gracia": 6, "claridad": 7, "remate": 6, "prohibiciones": "respeta", "nota": "Contrastar contando cuántas cuentas lo repiten es un chiste muy visto. Además trata como bulo algo que la noticia confirma en lo esencial: según Engadget, el alumnado de un centro que bloquee la IA no tendrá acceso a Search. Lo que dice la tira deja en el lector una impresión falsa de la noticia."},
+    {"n": 5, "pieza": "misiones-orbitales", "gracia": 6, "claridad": 5, "remate": 6, "prohibiciones": "respeta", "nota": "El contraste entre intentos ilimitados y un intento por misión es real, pero el remate (crear más astronautas) solo se entiende si se sabe que la actividad empieza creando un astronauta. Dos bocadillos largos y una idea de trampa poco clara: ¿Algoritmo hace de alumno?"}
+  ]
+}

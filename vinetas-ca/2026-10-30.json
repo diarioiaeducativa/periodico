@@ -1,0 +1,91 @@
+{
+  "fecha": "2026-10-30",
+  "elegida": {
+    "n": 5,
+    "pieza": "digcompedu",
+    "idea": "El domingo a las 23:47 la IA avisa de que el marco europeo incluirá el bienestar digital, con un resumen de cuarenta páginas.",
+    "guion": {
+      "vinetas": [
+        {
+          "cartela": "Diumenge, 23.47",
+          "tiza": {
+            "expresion": "agotado",
+            "postura": "sostener",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "contento",
+            "postura": "arriba",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "objeto": "notificaciones",
+          "lleva": "tiza",
+          "bocadillos": [
+            {
+              "quien": "algoritmo",
+              "texto": "Novetat! El marc europeu de competència docent inclourà el benestar digital.",
+              "tipo": "habla"
+            }
+          ],
+          "escenario": "casa_noche"
+        },
+        {
+          "tiza": {
+            "expresion": "agotado",
+            "postura": "sostener",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "orgulloso",
+            "postura": "abajo",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "objeto": "papeles",
+          "lleva": "tiza",
+          "bocadillos": [
+            {
+              "quien": "algoritmo",
+              "texto": "T'he preparat un resum de quaranta pàgines.",
+              "tipo": "habla"
+            },
+            {
+              "quien": "tiza",
+              "texto": "Gràcies...",
+              "tipo": "habla"
+            }
+          ],
+          "escenario": "casa_noche"
+        },
+        {
+          "tiza": {
+            "expresion": "harto",
+            "postura": "sostener",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "contento",
+            "postura": "abajo",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "objeto": "movil",
+          "lleva": "tiza",
+          "bocadillos": [
+            {
+              "quien": "algoritmo",
+              "texto": "Ho comentem ara o et desperto a les sis?",
+              "tipo": "habla"
+            }
+          ],
+          "escenario": "casa_noche"
+        }
+      ]
+    }
+  },
+  "traduccion": "automàtica amb IA"
+}

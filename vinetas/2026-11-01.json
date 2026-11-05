@@ -1,0 +1,133 @@
+{
+  "fecha": "2026-11-01",
+  "elegida": {
+    "n": 1,
+    "pieza": "detectores-caza-brujas",
+    "idea": "El detector marca como IA una novela de 1946, y la fecha, lejos de exculparla, la hace más sospechosa.",
+    "guion": {
+      "vinetas": [
+        {
+          "escenario": "sala_profes",
+          "tiza": {
+            "expresion": "neutral",
+            "postura": "sostener",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "contento",
+            "postura": "abajo",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "objeto": "libro",
+          "lleva": "tiza",
+          "bocadillos": [
+            {
+              "quien": "tiza",
+              "texto": "Pasa esta novela por el detector de IA.",
+              "tipo": "habla"
+            },
+            {
+              "quien": "algoritmo",
+              "texto": "¡Ahora mismo!",
+              "tipo": "habla"
+            }
+          ]
+        },
+        {
+          "escenario": "sala_profes",
+          "tiza": {
+            "expresion": "sorprendido",
+            "postura": "sostener",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "orgulloso",
+            "postura": "senalar",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "objeto": "libro",
+          "lleva": "tiza",
+          "bocadillos": [
+            {
+              "quien": "algoritmo",
+              "texto": "Rastros de IA. Caso clarísimo.",
+              "tipo": "habla"
+            },
+            {
+              "quien": "tiza",
+              "texto": "Es de 1946.",
+              "tipo": "habla"
+            }
+          ]
+        },
+        {
+          "escenario": "sala_profes",
+          "tiza": {
+            "expresion": "harto",
+            "postura": "sostener",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "pensativo",
+            "postura": "pensar",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "objeto": "libro",
+          "lleva": "tiza",
+          "bocadillos": [
+            {
+              "quien": "algoritmo",
+              "texto": "Peor me lo pones: ochenta años disimulando.",
+              "tipo": "habla"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "motivo": "Es la más redonda: sale del dato concreto del reportaje (una novela de 1946 a la que el detector encontró rastros de IA), se entiende sin leer la noticia porque todo el mundo sabe que en 1946 no había IA, y el remate retrata a Algoritmo tal como es: seguro de sí mismo justo cuando se equivoca, convirtiendo la prueba que lo desmiente en agravante. La ironía apunta al detector, no a nadie. Por detrás quedan la 5 (las «palabras propias» ya preparadas, buen remate pero con un «le» que no se ve en la viñeta) y la 2 (gag de los nombres de archivo, gracioso pero más conocido).",
+  "retoques": "Viñeta 3: «Peor me lo pones: lleva ochenta años disimulando» pasa a «Peor me lo pones: ochenta años disimulando», más seco y con el golpe al final. Escenario, expresiones y objetos se mantienen: el libro en la mano de Tiza ancla el año en las tres viñetas y la mano a la barbilla de Algoritmo en la última refuerza su pose de detective.",
+  "puntuaciones": [
+    {
+      "n": 1,
+      "gracia": 8,
+      "claridad": 9,
+      "remate": 8,
+      "respeto": true
+    },
+    {
+      "n": 2,
+      "gracia": 7,
+      "claridad": 7,
+      "remate": 7,
+      "respeto": true
+    },
+    {
+      "n": 3,
+      "gracia": 6,
+      "claridad": 8,
+      "remate": 6,
+      "respeto": true
+    },
+    {
+      "n": 4,
+      "gracia": 6,
+      "claridad": 7,
+      "remate": 6,
+      "respeto": true
+    },
+    {
+      "n": 5,
+      "gracia": 7,
+      "claridad": 7,
+      "remate": 8,
+      "respeto": true
+    }
+  ]
+}

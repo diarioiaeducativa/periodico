@@ -1,0 +1,327 @@
+#!/usr/bin/env python3
+# SPDX-License-Identifier: AGPL-3.0-or-later
+"""La viñeta diaria: Tiza y Algoritmo en una tira de tres viñetas.
+
+Los personajes están dibujados aquí, una sola vez, con un repertorio cerrado de
+expresiones, posturas y objetos. La IA solo escribe el guion (qué dicen, con qué
+cara, en qué postura y con qué objeto); este módulo lo convierte en SVG. Así el
+dibujo es siempre el mismo y todo el esfuerzo de la IA va al humor.
+
+Clases de color: las de comun.css (t, a, r, fa, ft, fz) y las propias de la viñeta
+(tz: cuerpo de la tiza, cara: rasgos sobre la tiza, sp: rasgos sobre el cursor)."""
+import html
+import textwrap
+
+ANCHO, ALTO, SUELO = 400, 360, 332
+ESCALA = 1.18   # tamaño de los personajes respecto al dibujo base
+
+EXPRESIONES = ["neutral", "contento", "sorprendido", "preocupado", "orgulloso", "pensativo", "enfadado", "cargando",
+               "agotado", "riendo", "avergonzado", "harto"]
+POSTURAS = ["abajo", "senalar", "arriba", "pensar", "encoger", "sostener"]
+OBJETOS = ["pizarra", "portatil", "reloj", "examenes", "papeles", "libro", "movil", "folio", "taza", "notificaciones"]
+DE_FONDO = {"pizarra", "portatil", "reloj", "examenes", "papeles"}   # van en el centro; los demás, en la mano de quien «sostiene»
+ESCENARIOS = ["aula", "sala_profes", "fotocopiadora", "claustro", "casa_noche"]
+
+
+def e(t):
+    return html.escape(t or "", quote=True)
+
+
+# ---------- Rasgos de la cara (coordenadas relativas al centro de la cara) ----------
+
+def cara(expr, clase, ojo_clase, ojo_r):
+    """Ojos, cejas y boca. `clase` pinta los trazos; `ojo_clase` rellena los ojos."""
+    o = []
+    if expr == "orgulloso":
+        o.append(f'<path class="{clase}" d="M-12 0 Q-9 -3 -6 0 M6 0 Q9 -3 12 0"/>')
+    elif expr == "agotado":   # ojos entornados y ojeras
+        o.append(f'<path class="{clase}" d="M-12 0 L-6 0 M6 0 L12 0"/><path class="{clase} fino" d="M-12 5 Q-9 8 -6 5 M6 5 Q9 8 12 5"/>')
+    elif expr == "riendo":    # ojos cerrados de risa
+        o.append(f'<path class="{clase}" d="M-12 2 Q-9 -4 -6 2 M6 2 Q9 -4 12 2"/>')
+    elif expr == "harto":     # párpados a media asta
+        o.append(f'<circle class="{ojo_clase}" cx="-9" cy="1.5" r="{ojo_r - 0.4}"/><circle class="{ojo_clase}" cx="9" cy="1.5" r="{ojo_r - 0.4}"/>'
+                 f'<path class="{clase}" d="M-13 -1 L-5 -1 M5 -1 L13 -1"/>')
+    elif expr == "avergonzado":   # mirada al suelo
+        o.append(f'<circle class="{ojo_clase}" cx="-10" cy="2.5" r="{ojo_r}"/><circle class="{ojo_clase}" cx="8" cy="2.5" r="{ojo_r}"/>')
+    elif expr == "sorprendido":
+        o.append(f'<circle class="{ojo_clase}" cx="-9" cy="0" r="{ojo_r + 1.2}"/><circle class="{ojo_clase}" cx="9" cy="0" r="{ojo_r + 1.2}"/>')
+    else:
+        o.append(f'<circle class="{ojo_clase}" cx="-9" cy="0" r="{ojo_r}"/><circle class="{ojo_clase}" cx="9" cy="0" r="{ojo_r}"/>')
+    cejas = {
+        "sorprendido": "M-13 -10 Q-9 -13 -5 -10 M5 -10 Q9 -13 13 -10",
+        "preocupado": "M-13 -7 L-5 -10 M13 -7 L5 -10",
+        "enfadado": "M-13 -10 L-5 -6 M13 -10 L5 -6",
+        "pensativo": "M5 -10 Q9 -13 13 -10",
+        "avergonzado": "M-13 -7 L-5 -9 M13 -7 L5 -9",
+        "agotado": "M-13 -6 L-5 -7 M13 -6 L5 -7",
+    }.get(expr)
+    if cejas:
+        o.append(f'<path class="{clase}" d="{cejas}"/>')
+    boca = {
+        "neutral": "M-6 15 L6 15",
+        "contento": "M-8 12 Q0 21 8 12",
+        "preocupado": "M-7 18 Q0 12 7 18",
+        "orgulloso": "M-6 15 Q3 19 9 11",
+        "pensativo": "M-2 16 L6 14",
+        "enfadado": "M-7 18 Q0 13 7 18",
+        "agotado": "M-5 16 Q0 14 5 16",
+        "riendo": "M-8 11 L8 11 Q0 24 -8 11 Z",
+        "avergonzado": "M-5 16 Q-2 14 0 16 Q2 18 5 16",
+        "harto": "M-6 16 L6 16",
+    }.get(expr)
+    if expr == "sorprendido":
+        o.append(f'<ellipse class="{clase}" cx="0" cy="16" rx="4" ry="5"/>')
+    elif expr == "cargando":
+        o.append(f'<circle class="{ojo_clase}" cx="-7" cy="16" r="1.8"/><circle class="{ojo_clase}" cx="0" cy="16" r="1.8"/><circle class="{ojo_clase}" cx="7" cy="16" r="1.8"/>')
+    elif boca:
+        o.append(f'<path class="{clase}" d="{boca}"/>')
+    if expr == "avergonzado":   # el rubor, en el rojo de corregir
+        o.append('<path class="rubor" d="M-19 9 L-15 6 M-15 10 L-11 7 M11 7 L15 10 M15 6 L19 9"/>')
+    return "".join(o)
+
+
+# ---------- Brazos (mirando a la derecha; se reflejan si el personaje mira a la izquierda) ----------
+
+def brazos(postura, hombro_y, medio, clase):
+    """Devuelve (trazos, punto de la mano delantera) para la postura."""
+    L, R, y = -medio, medio, hombro_y
+    caido_izq = f"M{L} {y} Q{L - 10} {y + 20} {L - 8} {y + 38}"
+    caido_der = f"M{R} {y} Q{R + 10} {y + 20} {R + 8} {y + 38}"
+    mano = (R + 8, y + 38)
+    if postura == "senalar":
+        d = f"{caido_izq} M{R} {y} L{R + 32} {y - 16} M{R + 32} {y - 16} L{R + 40} {y - 19}"
+        mano = (R + 40, y - 19)
+    elif postura == "arriba":
+        d = f"M{L} {y - 2} L{L - 16} {y - 32} M{R} {y - 2} L{R + 16} {y - 32}"
+    elif postura == "pensar":
+        d = f"{caido_izq} M{R} {y} Q{R + 10} {y - 8} {R - 12} {y - 18}"
+    elif postura == "encoger":
+        d = f"M{L} {y + 2} L{L - 14} {y - 4} L{L - 18} {y - 14} M{R} {y + 2} L{R + 14} {y - 4} L{R + 18} {y - 14}"
+    elif postura == "sostener":
+        d = f"M{L} {y + 2} Q{L + 6} {y + 18} {R + 18} {y + 14} M{R} {y + 2} L{R + 20} {y + 12}"
+        mano = (R + 22, y + 10)
+    else:
+        d = f"{caido_izq} {caido_der}"
+    return f'<path class="{clase}" d="{d}"/>', mano
+
+
+# ---------- Personajes ----------
+
+def tiza(cx, mira, expr, postura):
+    """Una barra de tiza con la punta gastada: el oficio de enseñar."""
+    arriba, abajo, medio = SUELO - 150, SUELO - 18, 21
+    cuerpo = (f'<path class="tz" d="M{-medio} {abajo - 10} L{-medio} {arriba + 12} Q{-medio} {arriba + 2} {-medio + 8} {arriba + 4} '
+              f'L{-6} {arriba} L{2} {arriba + 5} L{9} {arriba + 1} L{medio - 4} {arriba + 6} Q{medio} {arriba + 6} {medio} {arriba + 14} '
+              f'L{medio} {abajo - 10} Q{medio} {abajo} {medio - 10} {abajo} L{-medio + 10} {abajo} Q{-medio} {abajo} {-medio} {abajo - 10} Z"/>')
+    vetas = f'<path class="t fino" d="M{-medio + 6} {arriba + 40} L{-medio + 6} {arriba + 70} M{medio - 7} {arriba + 90} L{medio - 7} {arriba + 104}"/>'
+    polvo = f'<circle class="ft polvo" cx="-14" cy="{arriba - 8}" r="1.4"/><circle class="ft polvo" cx="4" cy="{arriba - 13}" r="1.1"/><circle class="ft polvo" cx="15" cy="{arriba - 6}" r="1.3"/>'
+    piernas = f'<path class="t" d="M-9 {abajo} L-11 {SUELO} L-19 {SUELO} M9 {abajo} L11 {SUELO} L19 {SUELO}"/>'
+    br, mano = brazos(postura, arriba + 70, medio, "t")
+    rostro = f'<g transform="translate(2 {arriba + 34})">{cara(expr, "cara", "fcara", 2.6)}</g>'
+    g = f'{piernas}{cuerpo}{vetas}{polvo}{rostro}{br}'
+    return envolver(cx, mira, g), mano_abs(cx, mira, mano)
+
+
+def algoritmo(cx, mira, expr, postura):
+    """Un cursor de bloque que flota y parpadea: la IA, siempre dispuesta y no siempre acertada."""
+    abajo, alto, medio = SUELO - 30, 86, 28
+    arriba = abajo - alto
+    cuerpo = f'<rect class="fz" x="{-medio}" y="{arriba}" width="{medio * 2}" height="{alto}" rx="7"/>'
+    flota = f'<path class="a discontinuo" d="M-18 {abajo + 12} L18 {abajo + 12} M-10 {abajo + 21} L10 {abajo + 21}"/>'
+    parpadeo = ""
+    if expr == "cargando":
+        parpadeo = f'<path class="a" d="M{-medio - 10} {arriba + 6} L{-medio - 18} {arriba - 2} M0 {arriba - 10} L0 {arriba - 20} M{medio + 10} {arriba + 6} L{medio + 18} {arriba - 2}"/>'
+    br, mano = brazos(postura, arriba + 50, medio, "a")
+    ojos = f'<circle class="ojo" cx="-9" cy="0" r="7"/><circle class="ojo" cx="9" cy="0" r="7"/>' if expr not in ("orgulloso", "agotado", "riendo") else ""
+    if expr == "harto":   # el párpado del cursor, del mismo azul, tapa medio ojo
+        ojos += '<rect class="fz" x="-17" y="-8" width="16" height="7"/><rect class="fz" x="1" y="-8" width="16" height="7"/>'
+    pupilas_expr = expr if expr in ("orgulloso", "cargando") else expr
+    rostro = f'<g transform="translate(2 {arriba + 28})">{ojos}{cara(pupilas_expr, "sp", "fpupila", 2.6)}</g>'
+    if expr == "cargando":   # los puntos de «cargando» van en la boca, sobre el azul
+        rostro = rostro.replace('class="fpupila" cx="-7" cy="16"', 'class="fsp" cx="-7" cy="16"').replace(
+            'class="fpupila" cx="0" cy="16"', 'class="fsp" cx="0" cy="16"').replace('class="fpupila" cx="7" cy="16"', 'class="fsp" cx="7" cy="16"')
+    g = f'{flota}{cuerpo}{parpadeo}{rostro}{br}'
+    return envolver(cx, mira, g), mano_abs(cx, mira, mano)
+
+
+def envolver(cx, mira, g):
+    sx = ESCALA if mira == "derecha" else -ESCALA
+    return f'<g transform="translate({cx} {SUELO}) scale({sx} {ESCALA}) translate(0 {-SUELO})">{g}</g>'
+
+
+def mano_abs(cx, mira, mano):
+    x, y = mano
+    x, y = x * ESCALA, SUELO + (y - SUELO) * ESCALA
+    return (cx + x if mira == "derecha" else cx - x, y)
+
+
+CABEZA = {q: SUELO - (SUELO - y) * ESCALA for q, y in {"tiza": SUELO - 162, "algoritmo": SUELO - 30 - 86 - 6}.items()}
+
+
+# ---------- Objetos ----------
+
+def objeto(nombre, x, y):
+    if nombre == "pizarra":
+        return (f'<g transform="translate({x - 60} 168)"><rect class="t fa" x="0" y="0" width="120" height="78" rx="3"/>'
+                f'<path class="t fino" d="M14 22 L70 22 M14 38 L92 38 M14 54 L56 54"/><path class="t" d="M30 78 L22 104 M90 78 L98 104"/></g>')
+    if nombre == "portatil":
+        return (f'<g transform="translate({x - 34} {SUELO - 48})"><rect class="t fa" x="6" y="0" width="56" height="38" rx="3"/>'
+                f'<path class="t" d="M0 46 L68 46 L62 38 L6 38 Z"/></g>')
+    if nombre == "libro":
+        return f'<g transform="translate({x - 14} {y - 14})"><path class="t fa" d="M0 4 L14 0 L28 4 L28 26 L14 22 L0 26 Z"/><path class="t" d="M14 0 L14 22"/></g>'
+    if nombre == "movil":
+        return f'<g transform="translate({x - 9} {y - 16})"><rect class="t fa" x="0" y="0" width="18" height="30" rx="3"/><path class="t" d="M6 25 L12 25"/></g>'
+    if nombre == "folio":
+        return f'<g transform="translate({x - 12} {y - 18})"><path class="t tz" d="M0 0 L18 0 L24 6 L24 32 L0 32 Z"/><path class="cara fino" d="M4 12 L20 12 M4 18 L20 18 M4 24 L14 24"/></g>'
+    if nombre == "taza":
+        return f'<g transform="translate({x - 10} {y - 12})"><path class="t fa" d="M0 0 L18 0 L16 22 L2 22 Z"/><path class="t" d="M18 5 Q26 8 17 15 M6 -6 Q4 -10 7 -13 M12 -6 Q10 -10 13 -13"/></g>'
+    if nombre == "reloj":   # en la pared, entre los dos
+        return (f'<g transform="translate({x} 172)"><circle class="t fa" r="17"/><path class="t" d="M0 0 L0 -10 M0 0 L8 4"/>'
+                f'<path class="t fino" d="M0 -14 L0 -12 M14 0 L12 0 M0 14 L0 12 M-14 0 L-12 0"/></g>')
+    if nombre == "examenes":   # el montón de exámenes por corregir, en el suelo
+        hojas = "".join(f'<rect class="t tz" x="{-26 + i}" y="{-8 * i - 8}" width="52" height="8" rx="1"/>' for i in range(5))
+        return f'<g transform="translate({x} {SUELO})">{hojas}<path class="r" d="M-8 -50 L-3 -45 L8 -56"/></g>'
+    if nombre == "papeles":   # papeles revueltos en el suelo
+        return (f'<g transform="translate({x} {SUELO})"><path class="t tz" d="M-30 0 L-26 -14 L2 -10 L-2 0 Z"/>'
+                f'<path class="t tz" d="M-6 0 L-4 -20 L22 -18 L24 0 Z"/><path class="t tz" d="M-18 -18 L2 -30 L14 -14 L-6 -4 Z"/>'
+                f'<path class="cara fino" d="M-12 -18 L2 -26 M-8 -14 L6 -22"/></g>')
+    if nombre == "notificaciones":   # el móvil que no para
+        return (f'<g transform="translate({x - 9} {y - 16})"><rect class="t fa" x="0" y="0" width="18" height="30" rx="3"/>'
+                f'<circle class="fr" cx="17" cy="1" r="6"/><path class="r" d="M24 -8 L29 -12 M26 -1 L32 -1 M24 6 L29 10"/></g>')
+    return ""
+
+
+# ---------- Escenarios (al fondo, con trazo suave para que manden los personajes) ----------
+
+def escenario(nombre):
+    if nombre == "aula":
+        return ('<rect class="pizarra-verde" x="70" y="150" width="260" height="70" rx="3"/>'
+                '<path class="tiza-linea" d="M92 172 L150 172 M92 188 L176 188 M92 204 L130 204"/>'
+                '<path class="fondo" d="M70 224 L330 224"/>'
+                '<path class="fondo" d="M0 296 L46 296 M8 296 L8 332 M40 296 L40 332 M354 296 L400 296 M360 296 L360 332 M392 296 L392 332"/>')
+    if nombre == "sala_profes":
+        return ('<rect class="corcho" x="130" y="150" width="140" height="62" rx="2"/>'
+                '<rect class="nota" x="142" y="160" width="26" height="22"/><rect class="nota" x="180" y="166" width="30" height="20"/>'
+                '<rect class="nota" x="224" y="158" width="28" height="26"/>'
+                '<path class="fondo" d="M0 262 L60 262 L60 332 M0 262 L0 332"/>'
+                '<path class="fondo" d="M18 262 L18 228 L44 228 L44 262 M22 240 L40 240 M26 250 Q31 244 36 250"/>'
+                '<path class="fondo" d="M50 228 Q56 220 50 212 M42 226 Q48 218 42 210"/>')
+    if nombre == "fotocopiadora":
+        return ('<path class="mueble" d="M162 332 L162 238 L238 238 L238 332 Z"/>'
+                '<path class="fondo" d="M156 238 L244 238 L244 226 L156 226 Z M174 262 L226 262 M174 282 L226 282 M244 236 L262 230 L262 238 L244 244"/>'
+                '<circle class="fr" cx="228" cy="250" r="3.5"/>')
+    if nombre == "claustro":
+        return ('<path class="fondo" d="M40 228 L40 196 Q40 186 52 186 L72 186 Q84 186 84 196 L84 228 M316 228 L316 196 Q316 186 328 186 L348 186 Q360 186 360 196 L360 228"/>')
+    if nombre == "casa_noche":
+        return ('<rect class="ventana" x="22" y="152" width="84" height="66" rx="3"/>'
+                '<path class="fondo" d="M64 152 L64 218 M22 185 L106 185"/><circle class="luna" cx="44" cy="168" r="8"/>'
+                '<path class="mueble" d="M60 332 L60 264 Q60 248 78 248 L322 248 Q340 248 340 264 L340 332 Z"/>'
+                '<path class="fondo" d="M48 300 L352 300 M372 332 L372 196 M356 196 L388 196 L380 170 L364 170 Z"/>')
+    return ""
+
+
+def delante(nombre):
+    """Lo que tapa a los personajes: la mesa del claustro."""
+    if nombre == "claustro":
+        return ('<rect class="mesa" x="10" y="284" width="380" height="48"/>'
+                '<path class="fondo" d="M60 280 L96 276 L100 282 M262 282 L300 278"/>')
+    return ""
+
+
+# ---------- Bocadillos ----------
+
+def lineas(texto, ancho_chars):
+    return textwrap.wrap(texto, ancho_chars) or [""]
+
+
+def bocadillo(texto, cx, punta, tipo="habla", y0=12, ancho=172):
+    ls = lineas(texto, int((ancho - 10) / 9))   # Newsreader a 17 px: unas 9 unidades por letra, con margen
+    alto = 18 + 20 * len(ls)
+    x0 = max(8, min(ANCHO - ancho - 8, cx - ancho / 2))
+    txt = "".join(f'<tspan x="{x0 + ancho / 2}" dy="{0 if i == 0 else 20}">{e(l)}</tspan>' for i, l in enumerate(ls))
+    texto_svg = f'<text class="bocadillo-texto" x="{x0 + ancho / 2}" y="{y0 + 26}" text-anchor="middle">{txt}</text>'
+    px, py = punta
+    base = min(max(px, x0 + 24), x0 + ancho - 24)
+    fondo = y0 + alto
+    largo = max(1, ((px - base) ** 2 + (py - fondo) ** 2) ** 0.5)
+    tope = 30 if tipo != "piensa" else 60
+    if largo > tope:   # la cola apunta a quien habla, pero corta, como en los tebeos
+        px, py = base + (px - base) * tope / largo, fondo + (py - fondo) * tope / largo
+    if tipo == "piensa":
+        forma = f'<rect class="globo" x="{x0}" y="{y0}" width="{ancho}" height="{alto}" rx="{min(alto / 2, 26)}"/>'
+        cola = "".join(f'<circle class="globo" cx="{base + (px - base) * f}" cy="{y0 + alto + (py - y0 - alto) * f}" r="{r}"/>'
+                       for f, r in ((0.35, 6), (0.7, 3.5)))
+        return forma + cola + texto_svg
+    forma = f'<rect class="globo" x="{x0}" y="{y0}" width="{ancho}" height="{alto}" rx="14"/>'
+    cola = (f'<path class="globo-cola" d="M{base - 9} {y0 + alto - 1} L{px} {py} L{base + 9} {y0 + alto - 1}"/>')
+    return forma + cola + texto_svg, alto
+
+
+def cartela(texto):
+    return (f'<rect class="cartela" x="0" y="0" width="{ANCHO}" height="34"/>'
+            f'<text class="cartela-texto" x="12" y="23">{e(texto)}</text>')
+
+
+# ---------- Viñeta y tira ----------
+
+def panel(v, n):
+    """Una viñeta. `v`: {"cartela"?, "tiza": {...}, "algoritmo": {...}, "objeto"?, "bocadillos": [...]}."""
+    partes = [f'<rect class="marco" x="1.5" y="1.5" width="{ANCHO - 3}" height="{ALTO - 3}" rx="4"/>',
+              f'<path class="t fino" d="M14 {SUELO} L{ANCHO - 14} {SUELO}"/>']
+    partes.append(escenario(v.get("escenario")))
+    obj = v.get("objeto")
+    if obj in DE_FONDO:
+        partes.append(objeto(obj, ANCHO / 2, 0))
+    pos = {}
+    manos = {}
+    personajes = {"tiza": tiza, "algoritmo": algoritmo}
+    for quien in ("tiza", "algoritmo"):
+        p = v.get(quien)
+        if not p:
+            continue
+        x = {"izquierda": 108, "centro": 200, "derecha": 292}.get(p.get("lugar"), 108 if quien == "tiza" else 292)
+        mira = p.get("mira") or ("derecha" if x < 200 else "izquierda")
+        expr = p.get("expresion") if p.get("expresion") in EXPRESIONES else "neutral"
+        post = p.get("postura") if p.get("postura") in POSTURAS else "abajo"
+        svg, mano = personajes[quien](x, mira, expr, post)
+        partes.append(svg)
+        pos[quien] = x
+        if post == "sostener":
+            manos[quien] = mano
+    partes.append(delante(v.get("escenario")))
+    if obj and obj not in DE_FONDO and manos:
+        quien = v.get("lleva") if v.get("lleva") in manos else next(iter(manos))
+        partes.append(objeto(obj, *manos[quien]))
+    y = 12
+    if v.get("cartela"):
+        partes.append(cartela(v["cartela"]))
+        y = 44
+    globos = [b for b in v.get("bocadillos", []) if b.get("quien") in pos][:2]
+    for orden, b in enumerate(globos):
+        # Se lee de arriba abajo: el segundo bocadillo, un poco más bajo que el primero
+        y_globo = y + (30 if orden == 1 else 0)
+        quien = b["quien"]
+        x = pos[quien]
+        if len(globos) == 2:
+            x = 100 if x <= pos[[g["quien"] for g in globos if g is not b][0]] else 300
+        punta = (pos[quien] + (6 if pos[quien] < 200 else -6), CABEZA[quien])
+        # Si habla una sola persona, el globo se ensancha: menos líneas y no baja hasta las cabezas
+        ancho = 172 if len(globos) == 2 else 236
+        r = bocadillo(b.get("texto", ""), x, punta, b.get("tipo", "habla"), y_globo, ancho)
+        partes.append(r[0] if isinstance(r, tuple) else r)
+    desc = " ".join(f'{"Tiza" if b["quien"] == "tiza" else "Algoritmo"}{" piensa" if b.get("tipo") == "piensa" else ""}: «{b.get("texto", "")}».' for b in globos)
+    if v.get("cartela"):
+        desc = f'{v["cartela"]}. {desc}'
+    return (f'<svg class="panel" viewBox="0 0 {ANCHO} {ALTO}" role="img" aria-label="Viñeta {n}. {e(desc)}" '
+            f'xmlns="http://www.w3.org/2000/svg">{"".join(partes)}</svg>')
+
+
+def tira(guion):
+    return "".join(f'<div class="vineta-panel">{panel(v, i + 1)}</div>' for i, v in enumerate(guion.get("vinetas", [])[:3]))
+
+
+if __name__ == "__main__":
+    import json
+    import sys
+    g = json.load(open(sys.argv[1]))
+    print(tira(g))

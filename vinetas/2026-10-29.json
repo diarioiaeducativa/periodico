@@ -1,0 +1,163 @@
+{
+  "fecha": "2026-10-29",
+  "elegida": {
+    "n": 3,
+    "pieza": "dictados-voz-gallego",
+    "idea": "La voz sintética dicta la misma frase 38 veces con igual ilusión y se ofrece a añadir un suspiro «para dar realismo».",
+    "guion": {
+      "vinetas": [
+        {
+          "cartela": "Dictado, 10:15",
+          "tiza": {
+            "expresion": "neutral",
+            "postura": "abajo",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "contento",
+            "postura": "abajo",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "bocadillos": [
+            {
+              "quien": "algoritmo",
+              "texto": "«El gato duerme.» Primera vez.",
+              "tipo": "habla"
+            },
+            {
+              "quien": "tiza",
+              "texto": "Otra vez, por favor.",
+              "tipo": "habla"
+            }
+          ],
+          "escenario": "aula"
+        },
+        {
+          "tiza": {
+            "expresion": "agotado",
+            "postura": "abajo",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "contento",
+            "postura": "arriba",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "bocadillos": [
+            {
+              "quien": "algoritmo",
+              "texto": "«El gato duerme.» Vez 38. Igual de ilusionado.",
+              "tipo": "habla"
+            }
+          ],
+          "escenario": "aula"
+        },
+        {
+          "tiza": {
+            "expresion": "harto",
+            "postura": "abajo",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "neutral",
+            "postura": "abajo",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "bocadillos": [
+            {
+              "quien": "algoritmo",
+              "texto": "¿Le añado un suspiro?",
+              "tipo": "habla"
+            },
+            {
+              "quien": "tiza",
+              "texto": "Sí. Da realismo.",
+              "tipo": "habla"
+            }
+          ],
+          "escenario": "aula"
+        }
+      ]
+    }
+  },
+  "motivo": "Contrasta la paciencia infinita de la máquina con la del aula sin culpar a nadie, y el remate (el suspiro como rasgo humano) es breve y sorprende. Se entiende sin conocer el recurso. La 9 («dictaba con rencor») tenía la misma gracia, pero roza el reproche al alumnado que pide repetir.",
+  "retoques": "Viñeta 3: «Puedo añadir un suspiro.» / «Añádelo. Da realismo.» pasa a «¿Le añado un suspiro?» / «Sí. Da realismo.», más corto y con mejor ritmo.",
+  "puntuaciones": [
+    {
+      "n": 1,
+      "gracia": 6,
+      "claridad": 6,
+      "remate": 6,
+      "respeto": true
+    },
+    {
+      "n": 2,
+      "gracia": 7,
+      "claridad": 8,
+      "remate": 7,
+      "respeto": true
+    },
+    {
+      "n": 3,
+      "gracia": 7,
+      "claridad": 8,
+      "remate": 8,
+      "respeto": true
+    },
+    {
+      "n": 4,
+      "gracia": 6,
+      "claridad": 6,
+      "remate": 6,
+      "respeto": true
+    },
+    {
+      "n": 5,
+      "gracia": 6,
+      "claridad": 8,
+      "remate": 6,
+      "respeto": true
+    },
+    {
+      "n": 6,
+      "gracia": 5,
+      "claridad": 7,
+      "remate": 5,
+      "respeto": true
+    },
+    {
+      "n": 7,
+      "gracia": 5,
+      "claridad": 7,
+      "remate": 5,
+      "respeto": true
+    },
+    {
+      "n": 8,
+      "gracia": 4,
+      "claridad": 6,
+      "remate": 3,
+      "respeto": true
+    },
+    {
+      "n": 9,
+      "gracia": 7,
+      "claridad": 8,
+      "remate": 7,
+      "respeto": true
+    },
+    {
+      "n": 10,
+      "gracia": 5,
+      "claridad": 7,
+      "remate": 5,
+      "respeto": true
+    }
+  ]
+}

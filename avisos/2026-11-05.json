@@ -1,0 +1,32 @@
+{
+  "fecha": "2026-11-05",
+  "avisos": {
+    "chatgpt": {
+      "saludo": "Buenos días. Jueves con dos propuestas para llevar al aula.",
+      "puntos": [
+        "Una herramienta reparte al alumnado en grupos base y de expertos para la técnica Jigsaw, con subtemas equilibrados, temporizador y cinco lenguas",
+        "Cincuenta y cuatro lecciones de ciencias en 3D, en chino y con licencia abierta, funcionan sin conexión desde un único archivo HTML, por si sirven de modelo",
+        "La viñeta de Tiza y Algoritmo parte de una cámara que se graba caminando, en lugar de describirla en un prompt"
+      ]
+    },
+    "vce": {
+      "saludo": "Buenos días. Hoy llegan dos recursos nuevos del repositorio y un ejemplo de lecciones hechas con IA.",
+      "puntos": [
+        "Rompecabezas – Técnica Jigsaw forma al azar los grupos base y de expertos a partir de la lista del alumnado, y se abre en el navegador sin crear cuenta",
+        "EduTicTac Blocs, de Samuel Soriano, es un editor por bloques basado en TurboWarp y compatible con proyectos de Scratch, con veinte plantillas para el aula",
+        "Tongjiang Lab reúne 54 lecciones 3D de ciencias, cada una en un solo HTML sin conexión, y se comentó en el grupo como muestra de lo que viene con IA"
+      ]
+    },
+    "edumedia": {
+      "saludo": "Buenos días. Hoy toca cámara, movimiento y escenas en 3D.",
+      "puntos": [
+        "Raül Torres cuenta cómo ha convertido el móvil y unas gafas de realidad virtual en cámara para Blender, y usa ese recorrido como guía para un generador de vídeo",
+        "También él enseñó un paseo por Girona en modo videojuego, hecho con Claude, que viaja en el tiempo desde el Paleolítico hasta 2026",
+        "Tiza graba un travelling caminando de verdad, y la viñeta de hoy sigue el resultado de esas tomas"
+      ]
+    }
+  },
+  "titulo": "Diario de IA Educativa · Núm. 4",
+  "fecha_texto": "Jueves, 5 de noviembre de 2026",
+  "url": "https://diarioiaeducativa.github.io/?n=4"
+}

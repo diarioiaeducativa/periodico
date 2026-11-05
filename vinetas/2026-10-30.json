@@ -1,0 +1,164 @@
+{
+  "fecha": "2026-10-30",
+  "elegida": {
+    "n": 5,
+    "pieza": "digcompedu",
+    "idea": "El domingo a las 23:47 la IA avisa de que el marco europeo incluirá el bienestar digital, con un resumen de cuarenta páginas.",
+    "guion": {
+      "vinetas": [
+        {
+          "cartela": "Domingo, 23:47",
+          "tiza": {
+            "expresion": "agotado",
+            "postura": "sostener",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "contento",
+            "postura": "arriba",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "objeto": "notificaciones",
+          "lleva": "tiza",
+          "bocadillos": [
+            {
+              "quien": "algoritmo",
+              "texto": "¡Novedad! El marco europeo de competencia docente incluirá el bienestar digital.",
+              "tipo": "habla"
+            }
+          ],
+          "escenario": "casa_noche"
+        },
+        {
+          "tiza": {
+            "expresion": "agotado",
+            "postura": "sostener",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "orgulloso",
+            "postura": "abajo",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "objeto": "papeles",
+          "lleva": "tiza",
+          "bocadillos": [
+            {
+              "quien": "algoritmo",
+              "texto": "Te he preparado un resumen de cuarenta páginas.",
+              "tipo": "habla"
+            },
+            {
+              "quien": "tiza",
+              "texto": "Gracias...",
+              "tipo": "habla"
+            }
+          ],
+          "escenario": "casa_noche"
+        },
+        {
+          "tiza": {
+            "expresion": "harto",
+            "postura": "sostener",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "contento",
+            "postura": "abajo",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "objeto": "movil",
+          "lleva": "tiza",
+          "bocadillos": [
+            {
+              "quien": "algoritmo",
+              "texto": "¿Lo comentamos ahora o te despierto a las seis?",
+              "tipo": "habla"
+            }
+          ],
+          "escenario": "casa_noche"
+        }
+      ]
+    }
+  },
+  "motivo": "La ironía es redonda y está en la propia noticia: anunciar la desconexión a medianoche de un domingo. El remate, servicial y sin malicia, sube la apuesta en una línea. Supera a la 1, con la misma idea pero menos afilada, y a la 8 (los volcanes en el anexo), muy buena pero más tópica.",
+  "retoques": "ninguno Después, en revisión: «derecho a la desconexión» pasa a «bienestar digital», que es lo que dice la noticia.",
+  "puntuaciones": [
+    {
+      "n": 1,
+      "gracia": 7,
+      "claridad": 8,
+      "remate": 7,
+      "respeto": true
+    },
+    {
+      "n": 2,
+      "gracia": 6,
+      "claridad": 7,
+      "remate": 6,
+      "respeto": true
+    },
+    {
+      "n": 3,
+      "gracia": 7,
+      "claridad": 6,
+      "remate": 7,
+      "respeto": true
+    },
+    {
+      "n": 4,
+      "gracia": 6,
+      "claridad": 7,
+      "remate": 6,
+      "respeto": true
+    },
+    {
+      "n": 5,
+      "gracia": 8,
+      "claridad": 8,
+      "remate": 8,
+      "respeto": true
+    },
+    {
+      "n": 6,
+      "gracia": 6,
+      "claridad": 6,
+      "remate": 6,
+      "respeto": true
+    },
+    {
+      "n": 7,
+      "gracia": 7,
+      "claridad": 8,
+      "remate": 7,
+      "respeto": true
+    },
+    {
+      "n": 8,
+      "gracia": 7,
+      "claridad": 8,
+      "remate": 7,
+      "respeto": true
+    },
+    {
+      "n": 9,
+      "gracia": 6,
+      "claridad": 8,
+      "remate": 6,
+      "respeto": true
+    },
+    {
+      "n": 10,
+      "gracia": 6,
+      "claridad": 7,
+      "remate": 6,
+      "respeto": true
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "fecha": "2026-11-03",
+  "piezas": [
+    {
+      "id": "laboratori-de-formulacio",
+      "seccion": "vibecoding",
+      "repositorio": "dia",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Nou al repositori",
+      "titular": "Un laboratori en català permet practicar la formulació inorgànica amb preguntes, pistes i reptes",
+      "entradilla": "«Laboratori de formulació», creada per Felip Sarroca i Gil, ofereix exercicis de nomenclatura inorgànica per a Secundària i Batxillerat, amb tres modes de treball i marcador de progrés.",
+      "cuerpo": [
+        "«Laboratori de formulació» és una aplicació web per aprendre i practicar la formulació i la nomenclatura dels compostos inorgànics. Segons la fitxa del repositori, segueix les recomanacions de la IUPAC del 2005 i s'adreça a l'alumnat d'Educació Secundària Obligatòria i de Batxillerat, a l'àrea de Ciència i Tecnologia. Està íntegrament en català, i al peu de pàgina consta que l'ha creada Felip Sarroca amb l'assistència de la intel·ligència artificial.",
+        "En obrir-la es veu una capçalera amb tres modes: «Aprèn», «Practica» i «Repte». En el mode de pràctica, que és el que mostra la captura, apareix una pregunta d'opció múltiple amb quatre respostes, per exemple la fórmula del sulfur de bari, amb l'etiqueta de la família («sal binària») i el nivell («fàcil»). A sota hi ha botons per demanar una pista o mostrar la solució. Es pot filtrar per nivell (fàcil, mitjà i Batxillerat) i per família de compostos, i el tauler lateral permet triar el tipus d'activitat: barreja de totes, construir compostos unint ions fins que la càrrega total sigui zero, passar del nom a la fórmula, de la fórmula al nom, triar entre quatre opcions o classificar un compost a la seva família.",
+        "Un comptador d'intents, encerts i ratxa acompanya cada sessió. La pàgina indica que el progrés es desa només al navegador i ofereix una taula d'ions. Segons la fitxa, inclou a més un mode projector pensat per a la pissarra digital, que no s'aprecia a la captura.",
+        "Per al professorat, el recurs pot servir com a pràctica autònoma de l'alumnat o com a activitat de repàs projectada a l'aula. S'obre des del navegador i no mostra cap pantalla d'accés ni de pagament. Qui faci classe en castellà ha de tenir en compte que tot el text, tant el de les preguntes com el de les ajudes, és en català.",
+        "L'obra es comparteix amb llicència CC BY-NC-SA 4.0, que permet adaptar-la amb atribució, sense ús comercial i compartint les obres derivades amb la mateixa llicència."
+      ],
+      "recursos": [
+        {
+          "id": "laboratori-de-formulacio",
+          "titulo": "Laboratori de formulació",
+          "autoria": "Felip Sarroca i Gil",
+          "url": "https://ja.cat/formulacio",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://ja.cat/formulacio",
+          "licencia": "CC BY-NC-SA 4.0",
+          "captura": "2026-11-03-laboratori-de-formulacio.jpg",
+          "captura_alt": "Pantalla del mode Practica amb la pregunta «Quina és la fórmula de: sulfur de bari» i quatre opcions (BaS, Ba2S2, BaCl2, PbCl2), botons de pista i solució, i a la dreta la llista de tipus d'activitat.",
+          "texto": []
+        }
+      ],
+      "fuentes": [
+        {"titulo": "Laboratori de formulació", "url": "https://ja.cat/formulacio"}
+      ],
+      "comprobado": "Se miró la captura (modo Practica, pregunta de opción múltiple, filtros, tipos de actividad, contadores y pie con autoría y licencia). WebFetch siguió la redirección y devolvió el texto de la página: modos Aprèn, Practica y Repte, tabla de iones, contadores, progreso guardado solo en el navegador; no menciona cuenta ni modo proyector. La referencia a la IUPAC 2005 y el modo proyector proceden de la ficha y se atribuyen a ella."
+    },
+    {
+      "id": "foqo-formulacion-quimica-organica",
+      "seccion": "vibecoding",
+      "repositorio": "dia",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Nou al repositori",
+      "titular": "FoQo genera tests de formulació orgànica i dona el nom d'una estructura dibuixada",
+      "entradilla": "L'aplicació de FiQuiPedia permet practicar la nomenclatura de química orgànica amb tests configurables i una eina que passa de la fórmula al nom.",
+      "cuerpo": [
+        "FoQo, «Formulación Química Orgánica», és una aplicació web de FiQuiPedia per practicar la nomenclatura dels compostos orgànics. La fitxa del repositori la situa a Secundària, Batxillerat i Universitat, dins de Ciència i Tecnologia, i està en castellà. És una pàgina sense registre aparent: en obrir-la mostra directament tres accessos, sense formulari d'entrada.",
+        "La pantalla d'inici ofereix tres botons: «Tests», «F → N» i «Panel». Segons la descripció de la fitxa, els tests demanen anomenar un compost a partir de la seva fórmula o formular un nom donat, i el tauler permet configurar el tipus d'exercici: cadenes, dobles i triples enllaços, radicals, ramificacions, grups funcionals i cicles. L'eina «F → N» serveix, sempre segons la fitxa, per obtenir el nom i les propietats d'una fórmula o d'una estructura dibuixada a l'editor. A la pàgina es veu la paleta d'enllaços i grups funcionals (-OH, -COOH, -NH₂, -NO₂ i altres) que s'utilitza per construir les molècules, i es citen les biblioteques JSME i 3Dmol.js, amb les quals es treballen l'editor i la visualització de molècules.",
+        "La fitxa indica que admet diverses representacions (semidesenvolupada, esquelètica, d'esquema rectangular i en 3D) i que es poden consultar tant la nomenclatura IUPAC del 2013, amb el nom preferent (PIN), com la del 1993. Per al professorat, la fitxa assenyala que es pot usar a classe, per a tasques o com a pràctica autònoma, amb exportació a PDF i com a paquet SCORM per a Moodle. Aquestes funcions procedeixen de la descripció de la fitxa; la captura només mostra la pantalla d'inici.",
+        "L'obra consta amb doble llicència: AGPL v3 per al codi i CC BY-SA 4.0 per als continguts. La pàgina enllaça amb el codi a GitLab i amb les biblioteques que utilitza."
+      ],
+      "recursos": [
+        {
+          "id": "foqo-formulacion-quimica-organica",
+          "titulo": "FoQo - Formulación Química Orgánica",
+          "autoria": "FiQuiPedia",
+          "url": "https://foqo.fiquipedia.es/",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://foqo.fiquipedia.es/",
+          "licencia": "AGPL v3 (codi) · CC BY-SA 4.0 (continguts)",
+          "captura": "2026-11-03-foqo-formulacion-quimica-organica.jpg",
+          "captura_alt": "Pantalla d'inici titulada «Formulación Química» amb els botons Tests, F → N i Panel, logotips d'IUPAC i CAS, enllaços a biblioteques i una fila de grups funcionals.",
+          "texto": []
+        }
+      ],
+      "fuentes": [
+        {"titulo": "FoQo - Formulación Química Orgánica (en castellà)", "url": "https://foqo.fiquipedia.es/"},
+        {"titulo": "Codi de FoQo a GitLab (en castellà)", "url": "https://gitlab.com/fiquipedia/foqo/-/blob/main/README.md"}
+      ],
+      "comprobado": "Se miró la captura (pantalla de inicio con Tests, F → N y Panel, sin pedir cuenta) y se abrió la web con WebFetch: tests de fórmula, herramienta F → N, panel de configuración, exportación a PDF, mención de SCORM, bibliotecas y licencias; no dice si hay cuenta. No se pudo ver ningún test ni el editor en funcionamiento: lo relativo a representaciones 3D, nomenclaturas y uso en clase procede de la ficha. La página de GitLab solo cargó con su título (README de FoQo), sin contenido legible."
+    }
+  ],
+  "descartado": [],
+  "repaso": [
+    "Laboratori de formulació: quitado «no pide cuenta ni pago» (no consta; solo se ve que no hay pantalla de acceso); el modo proyector pasa a atribuirse a la ficha (la página no lo muestra); quitado «los nombres de los compuestos» y condensado para ajustarse a las 350 palabras.",
+    "FoQo: quitado «con su documentación» respecto al enlace de GitLab (no se pudo leer el README); ajustado «comprobado».",
+    "Título, autoría, licencia, fichas, capturas y captura_alt coinciden con la entrada; sin enlaces a lo ya publicado (nada relacionado en publicado.txt); no se nombra a Juanjo de Haro; ningún recurso descartado."
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "fecha": "2026-11-04",
+  "candidatas": [
+    {
+      "pieza": "camara-virtual-blender",
+      "idea": "Tiza graba el travelling caminando de verdad y todas las tomas acaban, sin querer, en la cafetera.",
+      "guion": {"vinetas": [
+        {"escenario": "sala_profes",
+         "tiza": {"expresion": "contento", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "sorprendido", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+         "objeto": "movil", "lleva": "tiza",
+         "bocadillos": [{"quien": "tiza", "texto": "Hoy el travelling no lo describo en un prompt: lo grabo andando.", "tipo": "habla"}]},
+        {"escenario": "sala_profes",
+         "tiza": {"expresion": "orgulloso", "postura": "sostener", "lugar": "centro", "mira": "derecha"},
+         "algoritmo": {"expresion": "contento", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+         "objeto": "movil", "lleva": "tiza",
+         "bocadillos": [{"quien": "tiza", "texto": "Pulso REC, camino por la sala y Blender copia la cámara.", "tipo": "habla"},
+                        {"quien": "algoritmo", "texto": "¡Movimiento real! Nada de adivinar.", "tipo": "habla"}]},
+        {"escenario": "sala_profes",
+         "tiza": {"expresion": "avergonzado", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "pensativo", "postura": "pensar", "lugar": "derecha", "mira": "izquierda"},
+         "objeto": "movil", "lleva": "tiza",
+         "bocadillos": [{"quien": "algoritmo", "texto": "Precioso. ¿Por qué las tres tomas acaban en la cafetera?", "tipo": "habla"}]}
+      ]}
+    },
+    {
+      "pieza": "camara-virtual-blender",
+      "idea": "Algoritmo convierte «travelling entre pupitres» en una catedral aérea; Tiza se lo enseña andando y él lo entiende a su manera.",
+      "guion": {"vinetas": [
+        {"escenario": "aula",
+         "tiza": {"expresion": "neutral", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "contento", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+         "objeto": "portatil",
+         "bocadillos": [{"quien": "algoritmo", "texto": "Tú dime el plano y yo genero el vídeo.", "tipo": "habla"},
+                        {"quien": "tiza", "texto": "Travelling lento entre los pupitres, a la altura de los ojos.", "tipo": "habla"}]},
+        {"escenario": "aula",
+         "tiza": {"expresion": "sorprendido", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "orgulloso", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+         "objeto": "portatil",
+         "bocadillos": [{"quien": "algoritmo", "texto": "¡Hecho! Vista aérea épica sobre una catedral.", "tipo": "habla"}]},
+        {"escenario": "aula",
+         "tiza": {"expresion": "harto", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "cargando", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+         "objeto": "movil", "lleva": "tiza",
+         "bocadillos": [{"quien": "tiza", "texto": "Mira: pulso REC y camino. Así.", "tipo": "habla"},
+                        {"quien": "algoritmo", "texto": "Entendido. Catedral, pero andando.", "tipo": "habla"}]}
+      ]}
+    },
+    {
+      "pieza": "tongjiang-lab-3d",
+      "idea": "Algoritmo quiere «mejorar» la lección que funciona sin conexión con nube y servidor; se cae el wifi y solo gira la molécula de Tiza.",
+      "guion": {"vinetas": [
+        {"escenario": "aula",
+         "tiza": {"expresion": "contento", "postura": "senalar", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "sorprendido", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+         "objeto": "pizarra",
+         "bocadillos": [{"quien": "tiza", "texto": "Lección 3D de química: un solo HTML que funciona sin conexión.", "tipo": "habla"},
+                        {"quien": "algoritmo", "texto": "¿Sin conexión? Déjame mejorarla.", "tipo": "habla"}]},
+        {"escenario": "aula",
+         "tiza": {"expresion": "harto", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "orgulloso", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+         "objeto": "pizarra",
+         "bocadillos": [{"quien": "algoritmo", "texto": "Le pongo cuentas, servidor, nube y sincronización en tiempo real.", "tipo": "habla"}]},
+        {"cartela": "Lunes, 9:00. Se cae el wifi del centro.",
+         "escenario": "aula",
+         "tiza": {"expresion": "contento", "postura": "senalar", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "cargando", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+         "objeto": "pizarra",
+         "bocadillos": [{"quien": "tiza", "texto": "La molécula gira. La tuya sigue cargando.", "tipo": "habla"}]}
+      ]}
+    },
+    {
+      "pieza": "tongjiang-lab-3d",
+      "idea": "54 lecciones estupendas, todas en chino; Algoritmo se ofrece a traducirlas «con la misma seguridad que todo lo demás».",
+      "guion": {"vinetas": [
+        {"escenario": "aula",
+         "tiza": {"expresion": "contento", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "contento", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+         "objeto": "pizarra",
+         "bocadillos": [{"quien": "algoritmo", "texto": "¡54 lecciones 3D de ciencias, abiertas y sin conexión!", "tipo": "habla"},
+                        {"quien": "tiza", "texto": "Y con pregunta guía e itinerario para el profesorado.", "tipo": "habla"}]},
+        {"escenario": "aula",
+         "tiza": {"expresion": "pensativo", "postura": "pensar", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "orgulloso", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+         "objeto": "pizarra",
+         "bocadillos": [{"quien": "tiza", "texto": "Un detalle: está todo en chino.", "tipo": "habla"},
+                        {"quien": "algoritmo", "texto": "Te lo traduzco. La licencia deja adaptar, con crédito.", "tipo": "habla"}]},
+        {"escenario": "aula",
+         "tiza": {"expresion": "preocupado", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "orgulloso", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+         "objeto": "pizarra",
+         "bocadillos": [{"quien": "tiza", "texto": "¿Y tú sabes chino?", "tipo": "habla"},
+                        {"quien": "algoritmo", "texto": "Con la misma seguridad que todo lo demás.", "tipo": "habla"}]}
+      ]}
+    },
+    {
+      "pieza": "breve",
+      "idea": "Tiza quiere usar el viaje en el tiempo del paseo por Girona para llegar a junio, pero solo va del Paleolítico a 2026.",
+      "guion": {"vinetas": [
+        {"cartela": "Noviembre",
+         "escenario": "sala_profes",
+         "tiza": {"expresion": "agotado", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "contento", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+         "objeto": "taza", "lleva": "tiza",
+         "bocadillos": [{"quien": "algoritmo", "texto": "Un paseo por Girona en modo videojuego, ¡con viaje en el tiempo!", "tipo": "habla"},
+                        {"quien": "tiza", "texto": "¿Viaje en el tiempo? Llévame a junio.", "tipo": "habla"}]},
+        {"escenario": "sala_profes",
+         "tiza": {"expresion": "sorprendido", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "neutral", "postura": "encoger", "lugar": "derecha", "mira": "izquierda"},
+         "objeto": "taza", "lleva": "tiza",
+         "bocadillos": [{"quien": "algoritmo", "texto": "Solo va del Paleolítico a 2026. Hacia atrás.", "tipo": "habla"}]},
+        {"escenario": "sala_profes",
+         "tiza": {"expresion": "harto", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+         "objeto": "taza", "lleva": "tiza",
+         "bocadillos": [{"quien": "tiza", "texto": "O sea, que a junio, andando.", "tipo": "habla"}]}
+      ]}
+    }
+  ]
+}

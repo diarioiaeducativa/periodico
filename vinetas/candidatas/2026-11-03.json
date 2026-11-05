@@ -1,0 +1,183 @@
+{
+  "fecha": "2026-11-03",
+  "candidatas": [
+    {
+      "pieza": "google-ia-cuentas-escolares",
+      "idea": "Algoritmo se entera de que vendrá apagado hasta que lo active quien administra, y quien administra es Tiza.",
+      "guion": {
+        "vinetas": [
+          {
+            "escenario": "sala_profes",
+            "tiza": {"expresion": "neutral", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+            "algoritmo": {"expresion": "contento", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+            "objeto": "movil",
+            "lleva": "tiza",
+            "bocadillos": [
+              {"quien": "tiza", "texto": "En las cuentas del alumnado vendrás apagado hasta que te active quien administra.", "tipo": "habla"},
+              {"quien": "algoritmo", "texto": "¿Y quién administra aquí?", "tipo": "habla"}
+            ]
+          },
+          {
+            "escenario": "sala_profes",
+            "tiza": {"expresion": "orgulloso", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+            "algoritmo": {"expresion": "sorprendido", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+            "bocadillos": [
+              {"quien": "tiza", "texto": "La coordinadora digital. O sea, yo.", "tipo": "habla"}
+            ]
+          },
+          {
+            "escenario": "sala_profes",
+            "tiza": {"expresion": "harto", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+            "algoritmo": {"expresion": "contento", "postura": "sostener", "lugar": "derecha", "mira": "izquierda"},
+            "objeto": "taza",
+            "lleva": "algoritmo",
+            "bocadillos": [
+              {"quien": "algoritmo", "texto": "¿Un café, coordinadora? Recién hecho. ¿Te corrijo algo?", "tipo": "habla"}
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "pieza": "google-ia-cuentas-escolares",
+      "idea": "Algoritmo redacta el aviso de que la IA está bloqueada y no puede evitar ofrecerse a resumirlo.",
+      "guion": {
+        "vinetas": [
+          {
+            "escenario": "sala_profes",
+            "tiza": {"expresion": "neutral", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+            "algoritmo": {"expresion": "contento", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+            "objeto": "portatil",
+            "bocadillos": [
+              {"quien": "tiza", "texto": "Si el centro bloquea la IA, el alumnado verá un mensaje del centro avisándolo.", "tipo": "habla"},
+              {"quien": "algoritmo", "texto": "¡Os lo redacto yo!", "tipo": "habla"}
+            ]
+          },
+          {
+            "escenario": "sala_profes",
+            "tiza": {"expresion": "contento", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+            "algoritmo": {"expresion": "orgulloso", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+            "objeto": "portatil",
+            "bocadillos": [
+              {"quien": "algoritmo", "texto": "«Tu centro ha desactivado la IA.»", "tipo": "habla"},
+              {"quien": "tiza", "texto": "Claro y breve. Perfecto.", "tipo": "habla"}
+            ]
+          },
+          {
+            "escenario": "sala_profes",
+            "tiza": {"expresion": "harto", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+            "algoritmo": {"expresion": "contento", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+            "objeto": "portatil",
+            "bocadillos": [
+              {"quien": "algoritmo", "texto": "«¿Quieres que te lo resuma?»", "tipo": "habla"}
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "pieza": "google-ia-cuentas-escolares",
+      "idea": "El claustro quiere formar a profesorado y familias sin prisas, y Algoritmo entiende «sin prisas» a su manera.",
+      "guion": {
+        "vinetas": [
+          {
+            "escenario": "claustro",
+            "tiza": {"expresion": "neutral", "postura": "senalar", "lugar": "izquierda", "mira": "derecha"},
+            "algoritmo": {"expresion": "contento", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+            "bocadillos": [
+              {"quien": "tiza", "texto": "Antes de activar nada, formaremos al profesorado y a las familias. Sin prisas.", "tipo": "habla"},
+              {"quien": "algoritmo", "texto": "¡Hecho! Curso completo en tres minutos.", "tipo": "habla"}
+            ]
+          },
+          {
+            "escenario": "claustro",
+            "tiza": {"expresion": "harto", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+            "algoritmo": {"expresion": "cargando", "postura": "pensar", "lugar": "derecha", "mira": "izquierda"},
+            "bocadillos": [
+              {"quien": "tiza", "texto": "He dicho sin prisas.", "tipo": "habla"}
+            ]
+          },
+          {
+            "escenario": "claustro",
+            "tiza": {"expresion": "agotado", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+            "algoritmo": {"expresion": "orgulloso", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+            "bocadillos": [
+              {"quien": "algoritmo", "texto": "Versión sosegada: cuatro minutos. Con pausa para el café.", "tipo": "habla"}
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "pieza": "google-ia-cuentas-escolares",
+      "idea": "Tiza pide a Algoritmo que contraste el bulo alarmista, y lo contrasta contando cuántas cuentas más lo repiten.",
+      "guion": {
+        "vinetas": [
+          {
+            "escenario": "sala_profes",
+            "tiza": {"expresion": "pensativo", "postura": "pensar", "lugar": "izquierda", "mira": "derecha"},
+            "algoritmo": {"expresion": "sorprendido", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+            "bocadillos": [
+              {"quien": "algoritmo", "texto": "¡Última hora! Los centros que prohíban la IA se quedarán sin buscador.", "tipo": "habla"},
+              {"quien": "tiza", "texto": "¿Fuente?", "tipo": "habla"}
+            ]
+          },
+          {
+            "escenario": "sala_profes",
+            "tiza": {"expresion": "neutral", "postura": "senalar", "lugar": "izquierda", "mira": "derecha"},
+            "algoritmo": {"expresion": "neutral", "postura": "encoger", "lugar": "derecha", "mira": "izquierda"},
+            "bocadillos": [
+              {"quien": "algoritmo", "texto": "Circula por redes.", "tipo": "habla"},
+              {"quien": "tiza", "texto": "Contrástalo antes de repetirlo.", "tipo": "habla"}
+            ]
+          },
+          {
+            "escenario": "sala_profes",
+            "tiza": {"expresion": "harto", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+            "algoritmo": {"expresion": "orgulloso", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+            "bocadillos": [
+              {"quien": "algoritmo", "texto": "Contrastado: lo repiten dos mil cuentas más.", "tipo": "habla"}
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "pieza": "misiones-orbitales",
+      "idea": "Algoritmo saca todas las estrellas a fuerza de intentos ilimitados y, ante el intento único de la versión de clase, busca otra salida.",
+      "guion": {
+        "vinetas": [
+          {
+            "escenario": "aula",
+            "tiza": {"expresion": "pensativo", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+            "algoritmo": {"expresion": "orgulloso", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+            "objeto": "portatil",
+            "bocadillos": [
+              {"quien": "algoritmo", "texto": "¡Misión orbital superada con todas las estrellas!", "tipo": "habla"},
+              {"quien": "tiza", "texto": "¿A la primera?", "tipo": "habla"}
+            ]
+          },
+          {
+            "escenario": "aula",
+            "tiza": {"expresion": "harto", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+            "algoritmo": {"expresion": "avergonzado", "postura": "encoger", "lugar": "derecha", "mira": "izquierda"},
+            "objeto": "portatil",
+            "bocadillos": [
+              {"quien": "algoritmo", "texto": "A la trescientas. En la versión de práctica los intentos son ilimitados.", "tipo": "habla"}
+            ]
+          },
+          {
+            "escenario": "aula",
+            "tiza": {"expresion": "neutral", "postura": "senalar", "lugar": "izquierda", "mira": "derecha"},
+            "algoritmo": {"expresion": "pensativo", "postura": "pensar", "lugar": "derecha", "mira": "izquierda"},
+            "objeto": "portatil",
+            "bocadillos": [
+              {"quien": "tiza", "texto": "En la versión de clase hay un intento por misión.", "tipo": "habla"},
+              {"quien": "algoritmo", "texto": "Ya. ¿Y cuántos astronautas me puedo crear?", "tipo": "habla"}
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

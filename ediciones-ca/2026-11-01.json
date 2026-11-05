@@ -1,0 +1,134 @@
+{
+  "fecha": "2026-11-01",
+  "hay_edicion": true,
+  "motivo": "Domingo tranquilo, con un debate de fondo en el grupo general a raíz de un reportaje sobre detectores de IA, una aplicación escolar compartida y una guía para familias; la sincronización entre equipos, ya tratada el 30, queda en un breve.",
+  "piezas": [
+    {
+      "id": "detectores-caza-brujas",
+      "seccion": "debates",
+      "importancia": 1,
+      "grupo": "chatgpt",
+      "antetitulo": "Detectors d'IA",
+      "titular": "El sector editorial adverteix d'una «cacera de bruixes» pels detectors de textos amb IA",
+      "entradilla": "Un reportatge de La Vanguardia recull acusacions d'ús d'IA basades en detectors que es contradiuen amb el temps. El debat arriba a l'educació: com comprovar l'autoria sense perseguir.",
+      "cuerpo": [
+        "Un [reportatge publicat l'1 de novembre a La Vanguardia](https://www.lavanguardia.com/cultura/20261101/11672707/escrito-inteligencia-artificial-nuevo-delirio-editorial-detectores-pangram-almadia.html) (en castellà) descriu com editorials i agències literàries comencen a passar manuscrits per detectors d'IA com Pangram. Diverses persones del sector parlen de «paranoia» i de «cacera de bruixes»: autors que afirmen no haver fet servir IA són acusats i no saben com demostrar-ho, i circulen consells per guardar l'historial de versions d'un text per si cal provar l'autoria. El reportatge cita a més un cas recent amb una novel·la premiada per una editorial mexicana i assenyala que aquestes eines «no són infal·libles»: dues novel·les de 1969 i 1946 que en proves anteriors van donar rastres d'IA ara apareixen com a humanes amb el mateix detector, segons la comprovació del mateix diari.",
+        "Al grup, la conversa va traslladar l'assumpte a l'avaluació de l'alumnat. Una postura sosté que el problema és la sospita generalitzada: el detector unes vegades encerta i unes altres no, de manera que la comprovació hauria de basar-se a conèixer la persona, a triangular l'autoria amb altres formats i contextos sobre el mateix tema i a valorar si qui signa podria haver escrit allò que presenta, com planteja el mateix reportatge en proposar una conversa amb l'autor.",
+        "Una altra postura insisteix que, abans de vigilar, cal fixar un marc: si s'autoritza la IA, per a quins usos, amb quin detector i quines mètriques i quines evidències pot aportar qui és acusat. Sense regles clares, adverteix, la sospita no té límit; i confia que, amb el temps, la IA i la creació humana trobin cadascuna el seu espai. Hi va haver acord que cal clarificar els usos permesos de la IA i la seva finalitat."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Escrito con IA: el nuevo delirio editorial (La Vanguardia, 1-11-2026) (en castellà)",
+          "url": "https://www.lavanguardia.com/cultura/20261101/11672707/escrito-inteligencia-artificial-nuevo-delirio-editorial-detectores-pangram-almadia.html"
+        }
+      ],
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 53814
+      },
+      "comprobado": "Leído el reportaje de La Vanguardia (de pago; texto recuperado de la página): paranoia y caza de brujas, historiales de versiones, Pangram, prueba con dos novelas de 1946 y 1969 con resultado distinto una semana después, entrevista como comprobación (Joan Tarrida). Las posturas del grupo salen de los mensajes #53815-#53826 y #53821-#53826 y #53835-#53836. Se omite una afirmación del grupo sobre una firma previa de la autora, que el reportaje no recoge.",
+      "ilustracion": "Balanza con un informe de detector en un platillo (con un signo de interrogación) y, en el otro, tres pesos: conversación con la persona, otros textos y contextos sobre el mismo tema, y reglas claras de uso. Debajo, una lupa sobre un texto con la etiqueta «indicio, no prueba».",
+      "ilustracion_alt": "Balança que pesa, en un plat, «Detector», un informe de detector d'IA marcat amb un interrogant, i en l'altre, «Conversa i regles», la conversa amb la persona i unes regles clares d'ús; a baix, una lupa i el rètol «Indici, no prova»."
+    },
+    {
+      "id": "la-teva-veu",
+      "seccion": "vibecoding",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Aplicació escolar",
+      "titular": "Una escola de Catalunya comparteix una aplicació per a l'autoavaluació de l'alumnat i la valoració docent",
+      "entradilla": "«La teva veu», creada per Felip Sarroca per a l'Escola Ramon Pont, genera informes en PDF per a famílies i professorat.",
+      "cuerpo": [
+        "«La teva veu» és una aplicació web de l'Escola Ramon Pont (de 3r de primària a 4t d'ESO), creada per Felip Sarroca amb ajuda d'IA. Té dos apartats que s'activen per separat. A «Em miro» l'alumnat s'autoavalua en cada avaluació amb preguntes adaptades a la seva etapa i la tutoria genera l'informe individual «Així em veig» per a la família. A «Et veig…» l'alumnat valora cada docent; un docent només rep l'informe agregat «Així et veiem» si hi ha almenys 15 respostes, i el compara amb la seva pròpia autoavaluació.",
+        "Només hi entren comptes del domini del centre incloses al cens, i l'administració pot editar preguntes i textos i importar dades de Clickedu. Segons la seva pàgina, l'aplicació funciona, però encara no s'ha obert cap recollida i els informes es lliuren en PDF o en paper, perquè l'enviament per correu està pendent.",
+        "L'autor la comparteix com a base perquè altres centres creïn la seva: requereix un Google Workspace propi, una base de dades a Neon, GitHub Pages i eines de desenvolupament, i la documentació n'explica el procés. Es distribueix amb llicència CC BY-NC-SA 4.0, sense el logotip del centre. Per al professorat interessat, és un exemple de com donar veu a l'alumnat amb garanties d'anonimat i un mínim de respostes."
+      ],
+      "fuentes": [
+        {
+          "titulo": "La teva veu (Escola Ramon Pont, de Felip Sarroca)",
+          "url": "https://felipsarroca.github.io/util-apps/LaTevaVeu/"
+        }
+      ],
+      "mensaje": {
+        "grupo": "vce",
+        "id": 14474
+      },
+      "comprobado": "Abierta la web de la aplicación (enlace corto ja.cat/tensveu, que redirige): apartados, 15 respuestas mínimas, cuentas @ramonpont.cat, requisitos, licencia, autoría y estado a 1-11-2026. La cita de LOMLOE y Decreto 175/2022 es del autor en el grupo y no se ha verificado, por eso no se recoge.",
+      "ilustracion": null,
+      "ilustracion_alt": "Un grup de figures, «Alumnat», passa per un embut amb la xifra «15» i el rètol «Mínim respostes», i arriba a un informe amb barres i una línia de referència, «Informe docent»."
+    },
+    {
+      "id": "familias-deberes-ia",
+      "seccion": "debates",
+      "importancia": 3,
+      "grupo": "chatgpt",
+      "antetitulo": "Guia per a famílies",
+      "titular": "Una publicació orienta les famílies quan la IA fa els deures",
+      "entradilla": "Chema Falcó proposa una prova senzilla i una regla comuna per distingir fer servir la IA per aprendre de delegar-li l'aprenentatge.",
+      "cuerpo": [
+        "A la sèrie «Familias con inteligencia», Chema Falcó publica «¿Termina los deberes en diez minutos?», adreçada a les famílies. Parteix d'un cas fictici: una alumna acabada d'arribar a Espanya que comença fent servir la IA per aprendre castellà i acaba demanant-li la resolució completa de gairebé totes les tasques, fins que la professora detecta una redacció que no encaixa amb el seu nivell.",
+        "La proposta és una prova senzilla, que l'alumne expliqui amb les seves paraules què va resoldre, per què va triar el que va triar i què va aprendre, i una regla comuna: primer pensar, després preguntar i, quan la IA respongui, verificar, reformular i declarar l'ús. Aconsella evitar acusacions directes i contactar amb el centre per conèixer els usos permesos en cada matèria."
+      ],
+      "fuentes": [
+        {
+          "titulo": "¿Termina los deberes en diez minutos? (Chema Falcó, «Familias con inteligencia») (en castellà)",
+          "url": "https://profechef.substack.com/p/termina-los-deberes-en-diez-minutos"
+        }
+      ],
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 53859
+      },
+      "comprobado": "Abierto el enlace corto compartido, que lleva a la publicación en Substack (1-11-2026): autoría, caso, prueba, regla y consejos coinciden con la pieza.",
+      "ilustracion": null,
+      "ilustracion_alt": "Tres passos enllaçats amb fletxes, «Pensar», amb un llapis; «Preguntar», amb un globus de diàleg, i «Verificar», amb una marca de comprovació, i a sota un alumne que explica un full de deures, «Amb les teves paraules»."
+    }
+  ],
+  "breves": [
+    {
+      "texto": "El client d'accés compartit de rclone a Google Drive deixarà de funcionar el 2026, segons la seva documentació (en anglès). Crear-ne un de propi, que a més evita el límit de consultes compartit, es considera ja obligatori.",
+      "url": "https://rclone.org/drive/#making-your-own-client-id",
+      "grupo": "vce",
+      "mensaje": {
+        "grupo": "vce",
+        "id": 14480
+      }
+    },
+    {
+      "texto": "La UVic-UCC va coorganitzar a Lleida una jornada sobre integritat en l'activitat docent i la IA. La notícia de la universitat no recull conclusions concretes.",
+      "url": "https://apunt.uvic.cat/la-uvic-ucc-coorganitza-i-participa-en-una-trobada-a-lleida-per-abordar-lus-de-la-intelligencia",
+      "grupo": "chatgpt",
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 53843
+      }
+    }
+  ],
+  "descartado": [
+    "Webserie y flujo con MCP del 31: ya publicado.",
+    "Sincronización multidispositivo con Git y rclone: tratada el 30; solo se aprovecha la novedad de rclone en un breve.",
+    "Bot del repositorio y /misrecursos: administración interna.",
+    "Película y debate sobre el caso del terrorista identificado por su escritura: la fuente (FBI) no pudo abrirse.",
+    "Mazinger Z en Three.js y comentarios sobre Mistral: sin contenido comprobable."
+  ],
+  "repaso": [
+    "Pieza de detectores: corregida la prueba de las dos novelas (1969 y 1946) para ajustarla a lo que dice el reportaje; suavizado el cierre del debate y eliminado el párrafo final, que era una conclusión propia no recogida en la fuente.",
+    "Pieza de detectores: el mensaje enlazado pasa del #53812 (solo una imagen sin texto) al #53814, que contiene el enlace del reportaje.",
+    "Pieza de familias: eliminada la frase sobre replantear las tareas de evaluación, que no aparece en la publicación (solo en el mensaje del grupo); quitada la mención a tutorías.",
+    "Breve de rclone: mensaje corregido al #14480, donde empieza el hilo (el #14487 muestra ese mismo mensaje).",
+    "Breve de la UVic: sustituida la afirmación de que las conclusiones no se han publicado (dicho solo en el grupo) por lo que sí dice la noticia: no recoge conclusiones concretas.",
+    "La teva veu y rclone verificados contra su web y su documentación; La Vanguardia no pudo abrirse con WebFetch y se leyó por curl. No se pudo abrir la página del FBI, por lo que no se usa."
+  ],
+  "editorial": {
+    "id": "desde-la-redaccion",
+    "antetitulo": "Des de la redacció",
+    "titular": "Un diari escrit per una redacció d'agents d'IA",
+    "entradilla": "El Diari d'IA Educativa explica cada matí el que es parla en tres comunitats docents. L'escriu un equip de set agents d'intel·ligència artificial, cadascun amb el seu ofici, i el dirigeixen persones.",
+    "cuerpo": [
+      "Cada nit, quan es tanca el dia, la redacció es posa en marxa. Un **redactor** llegeix les converses de [ChatGPT-IA-edu](https://t.me/ChatGPTedu), [Vibe Coding Educativo](https://t.me/vceduca) i [EduMedia-IAG](https://t.me/EduMediaIAG), tria el que pot interessar a qui no hi és i escriu les peces, comprovant cada dada a la seva font original. Un **revisor**, que no ha escrit res, torna a obrir aquestes fonts i treu el que no pot confirmar. Un **il·lustrador** dibuixa el que explica cada notícia principal.",
+      "La vinyeta té el seu propi equip: un **guionista** escriu cinc acudits i un **jutge d'humor**, que no els ha escrit, tria el millor, o cap si no fa gràcia. Un **traductor** prepara aquesta edició en català a partir de la castellana, el Diario de IA Educativa, i un altre agent escriu l'avís de cada matí als grups.",
+      "Treballen així, en equip i revisant-se entre ells, perquè un agent sol s'equivoca més que una redacció que es corregeix. Tot i així, hi pot haver errors: si en veus algun, o alguna cosa teva que prefereixes que no surti, digues-ho a qui administra el teu grup. La idea del diari és de [Raül Torres](https://raultorres-ia.github.io/apps/raul-torres-ai-portfolio/); la redacció la va dissenyar i la supervisa [Juan José de Haro](https://bilateria.org)."
+    ],
+    "ilustracion_alt": "Organigrama de la redacció: els missatges dels «Grups» passen pel «Redactor» i el «Revisor»; d'aquí surten l'«Il·lustrador», «Guió i jutge» (un globus de diàleg amb la nota «7» del jutge d'humor) i el «Traductor», que passa del castellà («ES») al català («CA»); tot arriba al diari de les «7:00» i als «Avisos» als grups."
+  }
+}

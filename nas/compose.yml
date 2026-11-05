@@ -1,0 +1,39 @@
+# El Diario de IA Educativa, preparándose solo cada noche en el NAS.
+#
+#   docker compose up -d                                   arrancar
+#   docker logs -f diario-ia-educativa                     ver el reloj
+#   docker exec diario-ia-educativa /proyecto/scripts/noche.sh 2026-11-02     preparar un día a mano
+#
+# Parte de la imagen del boletín semanal, que ya trae Claude Code, Python y git, y le añade el
+# cliente SSH y rsync (Dockerfile). Lo que importa vive fuera del contenedor, en /volume1/docker/diario-ia-educativa:
+# repo (la redacción, clon de diarioiaeducativa/periodico), sitio (clon del sitio publicado)
+# y home (las claves de despliegue y la configuración de los avisos).
+services:
+  diario-ia-educativa:
+    build: .
+    image: diario-ia-educativa:local
+    container_name: diario-ia-educativa
+    restart: unless-stopped
+    user: "1000:10"
+    entrypoint: ["/proyecto/nas/reloj.sh"]
+    environment:
+      TZ: Europe/Madrid
+      HOME: /home/jjdeharo
+    # El token de un año de Claude, el mismo de los demás contenedores con agente.
+    env_file:
+      - path: ../meteo-local/home/.config/meteo-local/claude.env
+        required: false
+    # Como mucho tres agentes a la vez. Con tope de memoria: el NAS tiene 8 GB y el swap ya se
+    # llenó una vez por un navegador abandonado (01/02-11-2026).
+    cpus: 1.5
+    mem_limit: 2g
+    volumes:
+      - ./repo:/proyecto
+      - ./sitio:/sitio
+      - ./home:/home/jjdeharo
+      # Los mensajes de los grupos, solo para leer, y la carpeta donde el bot recoge los avisos.
+      - ../bot-chatgpt-ia-edu/repo/datos:/bot-datos:ro
+      - ../bot-chatgpt-ia-edu/repo/datos/diario:/avisos-bot
+      # El aviso a Juanjo por Telegram, el mismo de los demás contenedores.
+      - ../boletin-semanal/home/.local/bin/avisar-juanjo:/usr/local/bin/avisar-juanjo:ro
+      - ../boletin-semanal/home/.config/avisar-juanjo:/home/jjdeharo/.config/avisar-juanjo

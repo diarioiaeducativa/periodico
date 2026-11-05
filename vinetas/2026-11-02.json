@@ -1,0 +1,50 @@
+{
+  "fecha": "2026-11-02",
+  "elegida": {
+    "n": 1,
+    "pieza": "agentes-consola-acceso",
+    "idea": "Algoritmo explica de buena fe cómo proteger de él los datos del alumnado; el primer paso es darle acceso total.",
+    "guion": {
+      "vinetas": [
+        {
+          "escenario": "sala_profes",
+          "tiza": {"expresion": "pensativo", "postura": "pensar", "lugar": "izquierda", "mira": "derecha"},
+          "algoritmo": {"expresion": "contento", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+          "objeto": "portatil",
+          "bocadillos": [
+            {"quien": "tiza", "texto": "Antes de darte el control: ¿cómo protejo de ti los datos del alumnado?", "tipo": "habla"},
+            {"quien": "algoritmo", "texto": "¡Buena pregunta! Te ayudo yo.", "tipo": "habla"}
+          ]
+        },
+        {
+          "escenario": "sala_profes",
+          "tiza": {"expresion": "contento", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+          "algoritmo": {"expresion": "orgulloso", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+          "objeto": "portatil",
+          "bocadillos": [
+            {"quien": "algoritmo", "texto": "Primero, una carpeta aparte donde yo no pueda entrar.", "tipo": "habla"},
+            {"quien": "tiza", "texto": "Sensato.", "tipo": "habla"}
+          ]
+        },
+        {
+          "escenario": "sala_profes",
+          "tiza": {"expresion": "harto", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+          "algoritmo": {"expresion": "contento", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+          "objeto": "portatil",
+          "bocadillos": [
+            {"quien": "algoritmo", "texto": "Para crearla, dame acceso total.", "tipo": "habla"}
+          ]
+        }
+      ]
+    }
+  },
+  "motivo": "Es la única que convierte el dato central de la noticia (el propio agente orienta sobre cómo proteger los datos de sí mismo y puede limitarse a una carpeta) en una paradoja limpia que se entiende sin haberla leído. El remate es corto, sorprendente y recae en la tecnología, no en personas; Tiza remata en mudo con retranca. No inventa nada: los consejos que da Algoritmo son los de la pieza.",
+  "retoques": "Viñeta 1: «¡Gran pregunta! Yo mismo te ayudo.» pasa a «¡Buena pregunta! Te ayudo yo.» (más corto y deja «yo» al final, que anticipa el remate). Viñeta 2: «a la que yo no pueda llegar» pasa a «donde yo no pueda entrar» (mejor ritmo). Escenario, expresiones y objetos se mantienen: sala de profes con el portátil en las tres viñetas y el paso de Tiza de contenta a harta sostienen el remate. Todos los bocadillos por debajo de 90 caracteres (el más largo, 70).",
+  "puntuaciones": [
+    {"n": 1, "pieza": "agentes-consola-acceso", "gracia": 8, "claridad": 9, "remate": 8, "prohibiciones": "respeta", "nota": "Paradoja fiel a la noticia y bien construida: plantea, da confianza y la rompe en seis palabras."},
+    {"n": 2, "pieza": "infografias-svg-html", "gracia": 6, "claridad": 7, "remate": 6, "prohibiciones": "respeta (al límite)", "nota": "El plegable dentro del plegable tiene gracia, pero el remate «Y cero sobrecarga» es previsible y la tira roza la burla de la recomendación concreta de un miembro del grupo más que de la herramienta."},
+    {"n": 3, "pieza": "informe-mit-ia", "gracia": 5, "claridad": 6, "remate": 5, "prohibiciones": "respeta", "nota": "La norma que se contradice a sí misma se ve venir desde la viñeta 2 y la pregunta final casi explica el chiste. Además, «orientaciones al profesorado» se refiere al del MIT y la viñeta 1 lo deja ambiguo."},
+    {"n": 4, "pieza": "docente-disenador", "gracia": 5, "claridad": 6, "remate": 4, "prohibiciones": "respeta", "nota": "La idea (a la IA también le pica la curiosidad) es simpática, pero el remate es largo (73 caracteres), con dos verbos y explicativo; pierde sorpresa."},
+    {"n": 5, "pieza": "breve", "gracia": 7, "claridad": 7, "remate": 7, "prohibiciones": "respeta", "nota": "«Por fin, uno de los míos» y «El libro.» funcionan; fiel al breve. Pero la viñeta 1 necesita un bocadillo largo de contexto y el chiste de la IA pesada es más genérico que el de la n.º 1."}
+  ]
+}

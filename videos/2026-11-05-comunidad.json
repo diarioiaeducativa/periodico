@@ -1,0 +1,41 @@
+{
+  "id": "2026-11-05-comunidad",
+  "tipo": "comunidad",
+  "publicado": "2026-11-05",
+  "duracion": 37,
+  "titulo": {
+    "es": "Así encaja todo: los grupos, el bot, los boletines y el diario",
+    "ca": "Com encaixa tot: els grups, el bot, els butlletins i el diari"
+  },
+  "descripcion": {
+    "es": "Un mapa que se dibuja pieza a pieza: de ChatGPT-IA-edu nacieron Vibe Coding Educativo y EduMedia-IAG, un bot busca en los tres grupos, cada semana sale un boletín de cada uno y cada mañana, este diario. Cifras de miembros del 5 de noviembre de 2026.",
+    "ca": "Un mapa que es dibuixa peça a peça: de ChatGPT-IA-edu van néixer Vibe Coding Educativo i EduMedia-IAG, un bot cerca als tres grups, cada setmana surt un butlletí de cadascun i cada matí, aquest diari. Xifres de membres del 5 de novembre de 2026."
+  },
+  "pantalla": {
+    "es": [
+      "Comunidad de IA Educativa. Así encaja todo.",
+      "El origen: ChatGPT-IA-edu. Más de 4.000 docentes hablando de IA desde 2023.",
+      "De ahí nació Vibe Coding Educativo. Más de 1.800 docentes que crean aplicaciones educativas con IA.",
+      "Y se sumó EduMedia-IAG. Casi 800 docentes creando imagen, audio y vídeo con IA.",
+      "Un bot para los tres grupos: Bot de IA Educativa. Encuentra lo que se dijo, con el enlace al mensaje.",
+      "Cada semana, los boletines: resumen, pódcast, vídeo e infografía de cada grupo.",
+      "Cada mañana, a las 7:00, el Diario de IA Educativa: lo que se habla en los grupos, comprobado y contado.",
+      "@comunidad.iaeducativa. Y ahora, todo esto también aquí: lo mejor de los grupos, el diario y los boletines. t.me/ChatGPTedu"
+    ],
+    "ca": [
+      "Comunidad de IA Educativa. Així encaixa tot.",
+      "L'origen: ChatGPT-IA-edu. Més de 4.000 docents parlant d'IA des del 2023.",
+      "D'aquí va néixer Vibe Coding Educativo. Més de 1.800 docents que creen aplicacions educatives amb IA.",
+      "I s'hi va sumar EduMedia-IAG. Gairebé 800 docents creant imatge, àudio i vídeo amb IA.",
+      "Un bot per als tres grups: Bot de IA Educativa. Troba el que es va dir, amb l'enllaç al missatge.",
+      "Cada setmana, els butlletins: resum, pòdcast, vídeo i infografia de cada grup.",
+      "Cada matí, a les 7:00, el Diario de IA Educativa: el que es parla als grups, comprovat i explicat.",
+      "@comunidad.iaeducativa. I ara, tot això també aquí: el millor dels grups, el diari i els butlletins. t.me/ChatGPTedu"
+    ]
+  },
+  "archivos": {
+    "es": {"video": "2026-11-05-comunidad-es.mp4", "poster": "2026-11-05-comunidad-es.jpg"}
+  },
+  "instagram": "https://www.instagram.com/reel/DfWeeynpc7L/",
+  "musica": "compuesta por programa con el prototipo de scripts/musica.py, 120 ppm, la menor"
+}

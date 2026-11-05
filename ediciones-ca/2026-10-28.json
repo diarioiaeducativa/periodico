@@ -1,0 +1,127 @@
+{
+  "fecha": "2026-10-28",
+  "hay_edicion": true,
+  "motivo": "Día de poca conversación (20 mensajes con contenido), con un anuncio de modelo, una aplicación educativa compartida y un recurso 3D que da pie a probar prompts; edición modesta.",
+  "piezas": [
+    {
+      "id": "gemini4carbon",
+      "seccion": "novedades",
+      "importancia": 1,
+      "grupo": "chatgpt",
+      "antetitulo": "Nou model de Google",
+      "titular": "Google presenta Gemini 4 Carbon, de moment només per a especialistes en ciberseguretat",
+      "entradilla": "Google DeepMind ha anunciat el seu nou model de frontera, que per ara només fa servir un grup reduït de professionals de la defensa informàtica. No hi ha data per al públic general.",
+      "cuerpo": [
+        "Google DeepMind va anunciar el 28 d'octubre de 2026 Gemini 4 Carbon, que descriu com el seu model més capaç fins ara i successor de Gemini 4 Argon, llançat dues setmanes abans. Segons la companyia, comença a estar disponible aquesta setmana per a un subconjunt de persones dedicades a la defensa en ciberseguretat i s'ampliarà gradualment a més socis de confiança mitjançant el programa Fairwind.",
+        "L'accés per a desenvolupadors, empreses i públic general arribarà «tan aviat com sigui possible», segons Google, però l'anunci no en dona data. Així, per al professorat es tracta per ara d'una notícia sobre el que està per venir, no d'una eina utilitzable a l'aula. Al grup es va fer notar precisament això: de moment només és un anunci.",
+        "Google atribueix al model millores en programació, tasques amb diversos passos i desenvolupament web, i el seu major avenç és en ciberseguretat. Entre les xifres que ofereix hi ha el primer lloc a l'índex Artificial Analysis Intelligence Index v5.0 (59 punts) i més del doble d'èxit en generació de codi segur respecte a Argon. Són resultats publicats per la mateixa empresa, sense verificació independent en el que s'ha consultat.",
+        "Els preus de l'API, quan estigui disponible en general, seran de 2 dòlars per milió de tòkens d'entrada i 10 de sortida durant un període introductori, i de 4 i 20 dòlars després. L'anunci no esmenta usos educatius."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Introducing Gemini 4 Carbon (Google, en anglès)",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/"
+        }
+      ],
+      "comprobado": "Leído el anuncio oficial en blog.google: fecha 28-10-2026, acceso inicial restringido a un subconjunto de defensores en ciberseguridad, ampliación gradual por el programa Fairwind, Argon lanzado «hace dos semanas», cifras de benchmarks (índice v5.0, 59 puntos; más del doble de éxito en código seguro) y precios introductorio y posterior. Las cifras son autodeclaradas por Google. El enlace de X del grupo no se pudo abrir.",
+      "ilustracion": "Esquema de escalera de acceso en tres peldaños: 'Ahora: defensa en ciberseguridad', 'Después: socios de confianza (Fairwind)', 'Más adelante, sin fecha: desarrolladoras, empresas y público', con el tercero en trazo discontinuo y un candado abierto a medias.",
+      "ilustracion_alt": "Escala de tres graons que puja d'esquerra a dreta: el primer, amb unes poques persones, és la defensa en ciberseguretat; el segon, amb més persones, els socis de confiança; el tercer, amb traç discontinu i un cadenat entreobert, queda marcat «sense data».",
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 53763
+      }
+    },
+    {
+      "id": "plec-dictados",
+      "seccion": "vibecoding",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Recurs en català",
+      "titular": "Plec genera dictats plegables en català, amb àudio, perquè l'alumnat s'autocorregeixi",
+      "entradilla": "Una aplicació oberta crea llistes de paraules o pseudoparaules per dictar a classe, que s'imprimeixen en un full plegat perquè l'alumnat corregeixi les seves pròpies respostes.",
+      "cuerpo": [
+        "Plec, creada per Aarón Fortuño segons el web del projecte, és un recurs obert (llicència MIT) per practicar l'ortografia catalana. El professorat tria entre dictats de paraules o de pseudoparaules, de 8 a 24 elements, amb nivell orientatiu (cicle mitjà, cicle superior o institut) i filtres per dificultat ortogràfica. La seva presentació parla d'un catàleg de prop de 3.300 paraules.",
+        "El resultat s'imprimeix en PDF amb un plegat en terços o en quart de full, de manera que la solució queda oculta: el docent dicta, l'alumnat escriu i després desplega el full per autocorregir-se. Cada dictat té un codi que permet recuperar la mateixa llista, amb les mateixes paraules i en el mateix ordre, des d'un altre dispositiu.",
+        "Les paraules es poden escoltar, la qual cosa permet fer-lo servir com a tasca autònoma a classe o a casa. Hi ha àudio en català central i valencià; la varietat mallorquina està en pausa mentre se'n revisa la transcripció fonètica.",
+        "L'aplicació no requereix comptes ni desa els dictats en cap servidor. Està íntegrament en català."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Plec · Dictats per desplegar",
+          "url": "https://plec.ortogra.fi/ca/"
+        }
+      ],
+      "comprobado": "Abierta la web de la aplicación (plec.ortogra.fi/ca): autoría (Aarón Fortuño), opciones de 8 a 24 palabras, niveles, plegado en tercios o cuarto, código para recuperar la lista, audio central y valenciano con mallorquín en pausa, sin cuentas ni almacenamiento en servidor, licencia MIT, sitio en catalán. La cifra de unas 3.300 palabras procede de la presentación de la aplicación en el grupo; la web no da el total.",
+      "ilustracion": null,
+      "ilustracion_alt": "Esquema de tres moments: «Es dicta», amb un altaveu; «S'escriu», amb un full plegat on l'alumnat anota les seves respostes amb la solució oculta, i «Es corregeix», amb el full desplegat, les respostes al costat de la solució i marques d'encert i d'error.",
+      "mensaje": {
+        "grupo": "vce",
+        "id": 14314
+      }
+    },
+    {
+      "id": "everyjoule-prompt",
+      "seccion": "vibecoding",
+      "importancia": 3,
+      "grupo": "vce",
+      "antetitulo": "Llibres 3D",
+      "titular": "Un prompt per crear lliçons 3D interactives inspirades en «Every Joule»",
+      "entradilla": "Un membre dels grups va compartir un prompt extens perquè una IA generi una lliçó interactiva en 3D amb l'estil d'un llibre de física sobre energia.",
+      "cuerpo": [
+        "«Every Joule» és un llibre interactiu en 3D sobre energia publicat a iamtechartist.com. Segons la seva pàgina, reuneix deu lliçons de física de GCSE i IGCSE (secundària al Regne Unit), en què es prediu, es prova i es comprova la resposta aixecant una solapa, i en completar-la s'obté un segell. Inclou notes per a docents i requereix acceleració gràfica al navegador. El web no indica autoria individual ni llicència.",
+        "Per reproduir aquest estil amb altres temes, es va compartir un prompt en anglès que demana a un model un únic fitxer HTML amb Three.js. Exigeix la metàfora del llibre, el flux predir-observar-provar-explicar-segell, una solapa lateral amb fórmula o codi i una interfície en castellà. Té un buit, «[TEMA AQUÍ]», on es posa la matèria, per exemple la fotosíntesi o les lleis de Newton.",
+        "Qui el va compartir va proposar provar-lo amb Claude i amb altres models de pagament i publicar-ne els resultats. Encara no se n'havien publicat als missatges del dia. Com amb qualsevol recurs generat amb IA, convé revisar el contingut científic i l'accessibilitat abans de portar-lo a l'aula."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Every Joule (Techartist)",
+          "url": "https://iamtechartist.com/every-joule/"
+        }
+      ],
+      "comprobado": "Abierta la página de Every Joule: diez lecciones, GCSE/IGCSE, secuencia predecir-probar-solapa-sello, notas docentes, requisito de aceleración gráfica, sin autoría ni licencia. No se ejecutó el prompt ni se comprobó que produzca resultados equivalentes; solo se describe su contenido tal como se compartió.",
+      "ilustracion": null,
+      "ilustracion_alt": "Esquema de tres passos: «Prompt», un full amb un buit discontinu per al tema; «Llibre 3D», un llibre obert amb una solapa aixecada que deixa veure la resposta, i «Segell», amb una marca de comprovació en completar la lliçó.",
+      "mensaje": {
+        "grupo": "vce",
+        "id": 14347
+      }
+    }
+  ],
+  "breves": [
+    {
+      "texto": "L'AEPD va publicar el 27 d'octubre un decàleg per a qui fa servir assistents i agents d'IA. Recomana que l'agent prepari i la persona aprovi, amb els permisos justos i confirmació abans d'enviar, compartir o pagar.",
+      "url": "https://www.aepd.es/prensa-y-comunicacion/notas-de-prensa/la-aepd-publica-un-decalogo-para-delegar-tareas-en-asistentes",
+      "grupo": "chatgpt",
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 53752
+      }
+    },
+    {
+      "texto": "La documentació de GitHub indica que el professorat verificat a GitHub Education pot accedir gratis a Copilot Pro, i que l'elegibilitat es reavalua cada mes.",
+      "url": "https://docs.github.com/es/copilot/how-tos/copilot-on-github/set-up-copilot/enable-copilot/set-up-for-teachers-and-os-maintainers",
+      "grupo": "vce",
+      "mensaje": {
+        "grupo": "vce",
+        "id": 14352
+      }
+    }
+  ],
+  "descartado": [
+    "Recorte del uso gratuito de OpenCode (consulta de un miembro): no confirmado en fuentes oficiales; solo hay informes dispersos y no se encontró anuncio de recorte.",
+    "Vídeo de YouTube sobre Claude «reinventándose»: no se pudo saber de qué trata; sin fuente verificable.",
+    "Ampliación del bot de los grupos y /misrecursos: administración interna, excluida.",
+    "Laboratori de formulació y Reactius i sobrants (Felip Sarroca): publicados el 27 de octubre, no son noticia del 28.",
+    "Enlace a un tuit de la AEPD (28 de octubre): no se pudo abrir; se cubre el decálogo en un breve a partir de la fuente oficial.",
+    "Mensajes sobre límites de uso o reseteo y charla trivial: quejas personales o sin contenido."
+  ],
+  "repaso": [
+    "Gemini 4 Carbon: reescrito el campo «comprobado» a lo realmente verificado en el anuncio de Google (se citaba un contraste con Android Authority que no se pudo repetir). El cuerpo era correcto.",
+    "Plec: titular sin la expresión confusa «modelo oculto».",
+    "Plec: eliminado el alias de Telegram «xosqox» (identificación deducida); la autoría se da solo como figura en la web.",
+    "Plec: quitadas las cifras exactas «3.299 palabras y 96 pseudopalabras» (la web no las da; queda «cerca de 3.300» atribuido a la presentación).",
+    "Plec: quitados el plan de ampliar al castellano, la petición de voces y los «niveles como propuesta editorial», que no constan en la fuente pública; quitado «gratuito» (la web dice abierto).",
+    "Every Joule: quitada la descripción de «dibujos de tinta» y «color como flujo de energía», que la página no confirma (venía del prompt, no de la fuente); añadido el requisito de aceleración gráfica.",
+    "Breve de GitHub Education: quitado «correo institucional y documentos», que esa página no dice."
+  ]
+}

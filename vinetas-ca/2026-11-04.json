@@ -1,0 +1,27 @@
+{
+  "fecha": "2026-11-04",
+  "elegida": {
+    "n": 1,
+    "pieza": "camara-virtual-blender",
+    "idea": "Guix grava el travelling caminant de debò i totes les preses acaben, sense voler, a la cafetera.",
+    "guion": {"vinetas": [
+      {"escenario": "sala_profes",
+       "tiza": {"expresion": "contento", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "sorprendido", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+       "objeto": "movil", "lleva": "tiza",
+       "bocadillos": [{"quien": "tiza", "texto": "Avui el travelling no l'escric en un prompt: el gravo caminant.", "tipo": "habla"}]},
+      {"escenario": "sala_profes",
+       "tiza": {"expresion": "orgulloso", "postura": "sostener", "lugar": "centro", "mira": "derecha"},
+       "algoritmo": {"expresion": "contento", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+       "objeto": "movil", "lleva": "tiza",
+       "bocadillos": [{"quien": "tiza", "texto": "Premo REC, camino i Blender copia la càmera.", "tipo": "habla"},
+                      {"quien": "algoritmo", "texto": "Moviment real, res d'endevinar!", "tipo": "habla"}]},
+      {"escenario": "sala_profes",
+       "tiza": {"expresion": "avergonzado", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "pensativo", "postura": "pensar", "lugar": "derecha", "mira": "izquierda"},
+       "objeto": "movil", "lleva": "tiza",
+       "bocadillos": [{"quien": "algoritmo", "texto": "Preciós. Per què les tres preses acaben a la cafetera?", "tipo": "habla"}]}
+    ]}
+  },
+  "traduccion": "automàtica amb IA"
+}

@@ -1,0 +1,154 @@
+{
+  "fecha": "2026-10-28",
+  "elegida": {
+    "n": 6,
+    "pieza": "gemini4carbon",
+    "idea": "La IA nueva llegará «lo antes posible», y Tiza descubre que ese plazo también le sirve para los exámenes.",
+    "guion": {
+      "vinetas": [
+        {
+          "tiza": {
+            "expresion": "contento",
+            "postura": "abajo",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "contento",
+            "postura": "arriba",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "bocadillos": [
+            {
+              "quien": "algoritmo",
+              "texto": "¡Ha salido el modelo más capaz de la historia!",
+              "tipo": "habla"
+            },
+            {
+              "quien": "tiza",
+              "texto": "¿Puedo probarlo en clase?",
+              "tipo": "habla"
+            }
+          ],
+          "escenario": "sala_profes",
+          "objeto": "reloj"
+        },
+        {
+          "tiza": {
+            "expresion": "harto",
+            "postura": "pensar",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "neutral",
+            "postura": "encoger",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "bocadillos": [
+            {
+              "quien": "algoritmo",
+              "texto": "De momento, solo expertos en ciberseguridad. El resto, «lo antes posible».",
+              "tipo": "habla"
+            }
+          ],
+          "escenario": "sala_profes"
+        },
+        {
+          "cartela": "Esa tarde, en clase",
+          "tiza": {
+            "expresion": "orgulloso",
+            "postura": "senalar",
+            "lugar": "centro",
+            "mira": "derecha"
+          },
+          "bocadillos": [
+            {
+              "quien": "tiza",
+              "texto": "¿Los exámenes corregidos? Lo antes posible.",
+              "tipo": "habla"
+            }
+          ],
+          "escenario": "aula",
+          "objeto": "examenes"
+        }
+      ]
+    }
+  },
+  "motivo": "Es la única que da la vuelta al chiste: el plazo vago de la tecnología acaba en boca de Tiza, y cualquier docente se reconoce en el remate. Se entiende sin la noticia y no nombra a ninguna empresa. La 10 (pseudopalabras) estuvo cerca, pero su remate es más previsible.",
+  "retoques": "Quitado el bocadillo de Tiza «Ese plazo me suena.» en la viñeta 2, que anunciaba el remate; ahora Tiza solo piensa en silencio y la tercera viñeta sorprende más.",
+  "puntuaciones": [
+    {
+      "n": 1,
+      "gracia": 6,
+      "claridad": 5,
+      "remate": 6,
+      "respeto": true
+    },
+    {
+      "n": 2,
+      "gracia": 6,
+      "claridad": 7,
+      "remate": 6,
+      "respeto": true
+    },
+    {
+      "n": 3,
+      "gracia": 5,
+      "claridad": 5,
+      "remate": 5,
+      "respeto": true
+    },
+    {
+      "n": 4,
+      "gracia": 6,
+      "claridad": 7,
+      "remate": 6,
+      "respeto": false
+    },
+    {
+      "n": 5,
+      "gracia": 6,
+      "claridad": 6,
+      "remate": 6,
+      "respeto": true
+    },
+    {
+      "n": 6,
+      "gracia": 7,
+      "claridad": 8,
+      "remate": 8,
+      "respeto": true
+    },
+    {
+      "n": 7,
+      "gracia": 6,
+      "claridad": 8,
+      "remate": 6,
+      "respeto": true
+    },
+    {
+      "n": 8,
+      "gracia": 6,
+      "claridad": 7,
+      "remate": 6,
+      "respeto": true
+    },
+    {
+      "n": 9,
+      "gracia": 6,
+      "claridad": 8,
+      "remate": 5,
+      "respeto": true
+    },
+    {
+      "n": 10,
+      "gracia": 7,
+      "claridad": 7,
+      "remate": 7,
+      "respeto": true
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "fecha": "2026-10-30",
+  "hay_edicion": true,
+  "motivo": "Día flojo a normal: ChatGPT-IA-edu y Vibe Coding Educativo dieron tres temas con sustancia (un asistente de pago para docentes de Cataluña, la actualización europea de DigCompEdu y la sincronización de skills entre equipos); EduMedia-IAG no tuvo mensajes.",
+  "piezas": [
+    {
+      "id": "eductia",
+      "seccion": "herramientas",
+      "importancia": 1,
+      "grupo": "chatgpt",
+      "antetitulo": "Asistentes para docentes",
+      "titular": "Eductia ofrece una IA de pago para preparar materiales docentes en Cataluña",
+      "entradilla": "El servicio genera situaciones de aprendizaje, actividades e instrumentos de evaluación alineados con la normativa catalana, y plantea la duda de qué aporta frente a una IA de uso general.",
+      "cuerpo": [
+        "Eductia es un asistente de inteligencia artificial pensado para el profesorado y los centros de Cataluña. Según su web, genera situaciones de aprendizaje, actividades, instrumentos de evaluación, planes de apoyo individualizado y objetivos de aprendizaje, alineados con la LOMLOE y con los decretos catalanes. La interfaz está en catalán y los resultados se pueden descargar en PDF o Word.",
+        "Es de pago, con una prueba gratuita de siete días. Los planes publicados son Básico (6 euros al mes, 5.000 créditos), Avanzado (10 euros, 10.000 créditos) y Premium (13 euros, 20.000 créditos), con descuentos para centros. La web indica que no se solicitan ni se guardan datos que identifiquen al alumnado, que lo que escribe el docente no se usa para entrenar ningún modelo y que cada docente puede consultar y borrar sus datos.",
+        "Su política de privacidad señala que los contenidos se generan con IA generativa de OpenAI y Anthropic, que actúan como encargados del tratamiento. Ninguna de las páginas consultadas indica en qué país se procesan los datos, un aspecto relevante para centros que deban justificar las transferencias fuera de la Unión Europea.",
+        "En la discusión, la lectura mayoritaria fue que se trata de modelos generales conectados por API bajo una capa propia con restricciones y buena documentación, y que apenas ofrece nada que no pueda lograrse con un asistente estándar bien instruido. Se apuntó también que existe un nicho: el profesorado con poco tiempo o conocimientos para construir por su cuenta instrucciones elaboradas puede preferir una herramienta ya preparada."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Eductia (web del servicio)",
+          "url": "https://eductia.com/"
+        },
+        {
+          "titulo": "Eductia: privacidad",
+          "url": "https://eductia.com/privacitat"
+        }
+      ],
+      "comprobado": "Precios, prueba de 7 días, funciones, afirmaciones sobre datos y entrenamiento: leídos en eductia.com. Proveedores OpenAI y Anthropic: confirmados en eductia.com/privacitat (la portada y las FAQ no los nombran). Ubicación del procesamiento: no figura en ninguna de las páginas consultadas; se dice así. Comprobado de nuevo: precios, prueba de 7 días, funciones, proveedores (la política dice que actúan como encargados del tratamiento) y ausencia del país de procesamiento de los proveedores de IA.",
+      "ilustracion": "Esquema en capas: arriba el docente con una interfaz web; en medio una capa 'Eductia' (instrucciones, plantillas LOMLOE, asistentes encadenados); abajo, por API, los modelos de dos proveedores externos. Una flecha de datos y un interrogante sobre el país donde se procesan.",
+      "ilustracion_alt": "Esquema en tres capas: arriba, «Docente», una persona ante una ventana web; en medio, «Eductia», la capa propia del servicio con documentos y pasos encadenados; abajo, dos proveedores de modelos, «OpenAI» y «Anthropic», conectados por una línea discontinua que termina en un interrogante rojo, «¿País?», sobre el país donde se procesan los datos.",
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 53778
+      }
+    },
+    {
+      "id": "digcompedu",
+      "seccion": "novedades",
+      "importancia": 2,
+      "grupo": "chatgpt",
+      "antetitulo": "Competencia digital docente",
+      "titular": "La Comisión Europea actualiza DigCompEdu para incorporar la IA y el bienestar digital",
+      "entradilla": "El marco europeo de competencia digital del profesorado se está revisando, con versión final prevista para la primavera de 2027 y consultas al profesorado.",
+      "cuerpo": [
+        "La Comisión Europea lanzó en mayo de 2026 la actualización de DigCompEdu, el marco de referencia de la competencia digital del profesorado. La versión final está prevista para la primavera de 2027, según el Centro Común de Investigación (JRC).",
+        "El borrador mantiene las seis áreas de competencia y da más protagonismo a la capacidad de decisión y el criterio profesional del profesorado. La alfabetización en IA se integra en todo el marco, incluidas las limitaciones de los sistemas generativos y cuándo conviene usarlos. El bienestar digital aparece como tema transversal, con un eje propio de bienestar y sostenibilidad que abarca carga de trabajo, tiempo de pantalla y derecho a la desconexión.",
+        "El proceso incluye talleres de consulta y encuestas con docentes y otras partes interesadas; las páginas oficiales consultadas no publican fechas para ellas."
+      ],
+      "fuentes": [
+        {
+          "titulo": "DigCompEdu (Centro Común de Investigación, Comisión Europea)",
+          "url": "https://joint-research-centre.ec.europa.eu/DigCompEdu_en"
+        },
+        {
+          "titulo": "Update of the DigCompEdu framework underway (School Education Gateway)",
+          "url": "https://school-education.ec.europa.eu/en/discover/news/update-digcompedu-framework-underway"
+        }
+      ],
+      "comprobado": "Lanzamiento en mayo de 2026, versión final en primavera de 2027, seis áreas, IA y bienestar transversales: leídos en la página del JRC; talleres y encuestas, en School Education Gateway (noticia del 4 de mayo de 2026). El enlace de la encuesta difundido en el grupo redirige a una página de error y ninguna fuente oficial da el plazo, por lo que no se cita.",
+      "ilustracion": null,
+      "ilustracion_alt": "Seis círculos alrededor de un centro, «Criterio», el criterio docente, rodeados por un anillo discontinuo, «IA en todas», la IA presente en todo el marco; a la derecha, «Bienestar», un eje con tres iconos: un reloj, una pantalla y un botón de apagado.",
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 53776
+      }
+    },
+    {
+      "id": "skills-sincronizar",
+      "seccion": "vibecoding",
+      "importancia": 3,
+      "grupo": "vce",
+      "antetitulo": "Trabajo con agentes",
+      "titular": "Docentes comparan cómo mantener las mismas skills y proyectos en varios ordenadores",
+      "entradilla": "Quien programa con asistentes de IA en varios equipos describe tres enfoques: repositorio Git, sincronización continua y una carpeta compartida en la nube.",
+      "cuerpo": [
+        "Quien trabaja con asistentes de programación en más de un ordenador se encuentra con un problema práctico: mantener iguales las skills (instrucciones reutilizables), la configuración y los proyectos. En el grupo se compararon varias soluciones.",
+        "La primera, que sugirió el propio asistente, es separar las cosas: los proyectos en un repositorio privado de GitHub, con subida y descarga en cada sesión, y la configuración con una herramienta de sincronización como Syncthing. Syncthing es de código abierto y, según su web, no usa servidor central: los datos permanecen en los equipos del usuario. Un participante advirtió de que una sincronización espejo propaga también los borrados, así que no sustituye a una copia de seguridad, y que GitHub encaja mejor como copia que como sincronización.",
+        "Otros dos enfoques parten de una carpeta de Google Drive que contiene las skills, la configuración de servidores MCP y las herramientas de línea de comandos; al abrir el asistente en un equipo nuevo se le pide revisar esa carpeta y actualizar su configuración. Uno de ellos añade un índice de skills con documentación y un selector por proyecto, de modo que solo se instalan las necesarias, sin sincronización automática. La conclusión provisional de quien planteó la duda fue centralizar los proyectos y pasar a mano las mejoras de skills."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Syncthing",
+          "url": "https://syncthing.net/"
+        }
+      ],
+      "comprobado": "Solo se verificó en syncthing.net que es de código abierto y sin servidor central. El comportamiento de los borrados y la sincronización en un sentido son afirmaciones de participantes y no se comprobaron en la documentación. Los flujos con Drive son descripciones de uso personal, no verificables.",
+      "ilustracion": null,
+      "ilustracion_alt": "Dos ordenadores, cada uno con una carpeta de skills, unidos por tres caminos: arriba, «Git», una cadena de puntos que representa un repositorio; en medio, «Syncthing», dos flechas de ida y vuelta de la sincronización continua, y abajo, «Nube», una carpeta compartida.",
+      "mensaje": {
+        "grupo": "vce",
+        "id": 14401
+      }
+    }
+  ],
+  "breves": [
+    {
+      "texto": "En el grupo se distinguió el vibe coding, crear recursos digitales con IA y lenguaje natural, de la IA agéntica, que persigue objetivos de forma autónoma. Es una explicación de uso corriente, no una definición oficial.",
+      "url": null,
+      "grupo": "vce",
+      "mensaje": {
+        "grupo": "vce",
+        "id": 14388
+      }
+    }
+  ],
+  "descartado": [
+    "Batalla de prompts (plataforma para aprender a diseñar prompts): la web no ofreció contenido verificable y era presentación del propio creador al unirse al grupo.",
+    "Humor y herramienta Dextop para sincronizar tablet y PC: respuesta puntual a una consulta personal, sin tema general comprobado.",
+    "Informe de estado del repositorio, bot de IA Educativa y mensajes de moderación: administración interna de los grupos.",
+    "Debate sobre three.js y gemelos digitales: del día anterior, sin novedades el 30.",
+    "Exploradores de la Naturaleza (videojuego de DAmp): la página no muestra contenido verificable.",
+    "Dictados en gallego: publicados el 29."
+  ],
+  "repaso": [
+    "DigCompEdu: quitados la encuesta abierta «hasta el 8 de noviembre» y el aviso de «no confirmado»: no se puede confirmar (el enlace falla) y un periódico no publica ese tipo de dato.",
+    "DigCompEdu: «autonomía» sustituido por «capacidad de decisión y criterio profesional» (la fuente habla de agency y judgement); entradilla sin la petición de opinión.",
+    "Skills: sin cambios de contenido; esta pieza se mantiene como única sobre el tema (el 31 se retira su repetición).",
+    "Quitado el breve «Exploradores de la Naturaleza»: la página solo muestra el título y un botón; contenido y licencia no se pudieron comprobar y no se publica un recurso sin confirmar.",
+    "Breve de vibe coding: quitada la atribución a «un miembro».",
+    "Eductia: sin cambios en el cuerpo; todas las cifras y afirmaciones coinciden con la web y la política de privacidad."
+  ]
+}

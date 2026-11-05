@@ -1,0 +1,162 @@
+{
+  "fecha": "2026-10-31",
+  "elegida": {
+    "n": 8,
+    "pieza": "webserie-never-sleep-again",
+    "idea": "La serie de terror de Halloween llega a su gran momento y el monstruo resulta ser un asistente servicial.",
+    "guion": {
+      "vinetas": [
+        {
+          "cartela": "Noche de Halloween",
+          "tiza": {
+            "expresion": "neutral",
+            "postura": "sostener",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "orgulloso",
+            "postura": "abajo",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "objeto": "taza",
+          "lleva": "tiza",
+          "bocadillos": [
+            {
+              "quien": "algoritmo",
+              "texto": "Te he hecho una serie de terror. Atenta al monstruo.",
+              "tipo": "habla"
+            },
+            {
+              "quien": "tiza",
+              "texto": "A ver si da miedo.",
+              "tipo": "habla"
+            }
+          ],
+          "escenario": "casa_noche"
+        },
+        {
+          "tiza": {
+            "expresion": "sorprendido",
+            "postura": "sostener",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "contento",
+            "postura": "abajo",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "objeto": "taza",
+          "lleva": "tiza",
+          "bocadillos": [
+            {
+              "quien": "algoritmo",
+              "texto": "Casa a oscuras. Una puerta cruje. Y de pronto...",
+              "tipo": "habla"
+            }
+          ],
+          "escenario": "casa_noche"
+        },
+        {
+          "tiza": {
+            "expresion": "riendo",
+            "postura": "encoger",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "contento",
+            "postura": "arriba",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "bocadillos": [
+            {
+              "quien": "algoritmo",
+              "texto": "«Hola, soy el monstruo. ¿En qué puedo ayudarte hoy?»",
+              "tipo": "habla"
+            }
+          ],
+          "escenario": "casa_noche"
+        }
+      ]
+    }
+  },
+  "motivo": "Es la más limpia del día: la tensión crece en dos viñetas y el remate rompe con la manía más reconocible de la IA, la cortesía de asistente. Se entiende sin la noticia y cae en Halloween. Por detrás quedan la 2 (la programación como verdadero terror) y la 4 (el pendrive del aula 14).",
+  "retoques": "Viñeta 1: quitado «con IA» de «Te he hecho una serie de terror con IA», redundante en boca de Algoritmo.",
+  "puntuaciones": [
+    {
+      "n": 1,
+      "gracia": 6,
+      "claridad": 7,
+      "remate": 6,
+      "respeto": true
+    },
+    {
+      "n": 2,
+      "gracia": 7,
+      "claridad": 8,
+      "remate": 7,
+      "respeto": true
+    },
+    {
+      "n": 3,
+      "gracia": 6,
+      "claridad": 8,
+      "remate": 6,
+      "respeto": true
+    },
+    {
+      "n": 4,
+      "gracia": 7,
+      "claridad": 8,
+      "remate": 7,
+      "respeto": true
+    },
+    {
+      "n": 5,
+      "gracia": 7,
+      "claridad": 7,
+      "remate": 7,
+      "respeto": true
+    },
+    {
+      "n": 6,
+      "gracia": 6,
+      "claridad": 7,
+      "remate": 6,
+      "respeto": true
+    },
+    {
+      "n": 7,
+      "gracia": 7,
+      "claridad": 7,
+      "remate": 7,
+      "respeto": true
+    },
+    {
+      "n": 8,
+      "gracia": 8,
+      "claridad": 9,
+      "remate": 9,
+      "respeto": true
+    },
+    {
+      "n": 9,
+      "gracia": 5,
+      "claridad": 7,
+      "remate": 5,
+      "respeto": true
+    },
+    {
+      "n": 10,
+      "gracia": 6,
+      "claridad": 6,
+      "remate": 6,
+      "respeto": true
+    }
+  ]
+}

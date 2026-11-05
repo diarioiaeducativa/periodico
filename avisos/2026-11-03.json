@@ -1,0 +1,8 @@
+{
+  "fecha": "2026-11-03",
+  "avisos": {
+    "chatgpt": "Buenos días. El comité del MIT pide replantear qué debe aprender el alumnado y cómo se evalúa, en lugar de limitarse a prohibir la IA, y en este grupo sigue la conversación sobre un profesorado que diseña la enseñanza y guía, más que transmitir información. Las dos cuestiones, con sus matices, están en el número de hoy.\n👉 https://diarioiaeducativa.github.io/",
+    "vce": "Buenos días. Antes de dar a un agente de consola el control de un equipo, conviene decidir qué queda fuera de su alcance, sobre todo los datos del alumnado, y limitarlo a una carpeta concreta. También, una recomendación para las infografías: HTML y SVG antes que imágenes generadas. Y la viñeta de Tiza y Algoritmo va de pedirle al agente que proteja esos datos.\n👉 https://diarioiaeducativa.github.io/",
+    "edumedia": "Buenos días. Hay una web que reúne vídeos de motion graphics hechos con IA, cada uno con el prompt que lo produjo, y skills para que un agente de programación aprenda diseño en movimiento: tipografía cinética, gráficos, diagramas, partículas. Y un argumento para hacer infografías en HTML y SVG cuando importan la nitidez y la accesibilidad.\n👉 https://diarioiaeducativa.github.io/"
+  }
+}

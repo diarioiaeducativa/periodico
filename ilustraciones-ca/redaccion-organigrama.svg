@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 716 620">
+  <!-- Convención: caja rellena = agente de IA; solo contorno = lo que entra (mensajes) y lo que se publica -->
+  <!-- Los grupos -->
+  <path class="t" d="M18 112 h56 a8 8 0 0 1 8 8 v22 a8 8 0 0 1 -8 8 h-40 l-10 10 v-10 h-6 a8 8 0 0 1 -8 -8 v-22 a8 8 0 0 1 8 -8 z"/>
+  <path class="t" d="M18 170 h56 a8 8 0 0 1 8 8 v22 a8 8 0 0 1 -8 8 h-40 l-10 10 v-10 h-6 a8 8 0 0 1 -8 -8 v-22 a8 8 0 0 1 8 -8 z"/>
+  <path class="t" d="M18 228 h56 a8 8 0 0 1 8 8 v22 a8 8 0 0 1 -8 8 h-40 l-10 10 v-10 h-6 a8 8 0 0 1 -8 -8 v-22 a8 8 0 0 1 8 -8 z"/>
+  <path class="t" d="M30 126 h34 M30 136 h22 M30 184 h34 M30 194 h26 M30 242 h34 M30 252 h18"/>
+  <text class="lbl" x="48" y="310" text-anchor="middle">Grups</text>
+  <!-- Documentalista: los documentos de la Biblioteca digital y los recursos del repositorio -->
+  <text class="lbl" x="14" y="62">Biblioteca</text>
+  <text class="lbl" x="14" y="80">Repositori</text>
+  <path class="t" d="M82 118 Q96 70 118 70 M110 63 L118 70 L110 77"/>
+  <rect class="t fa" x="124" y="44" width="80" height="52" rx="8"/>
+  <path class="t" d="M146 58 v28 M154 58 v28 M162 62 v24"/><path class="a" d="M170 60 l8 26"/>
+  <text class="lbl" x="164" y="118" text-anchor="middle">Documentalista</text>
+  <path class="t" d="M206 70 H280 V158 M273 150 L280 158 L287 150"/>
+  <!-- Redactor y revisor -->
+  <path class="t" d="M88 190 L118 190 M110 183 L118 190 L110 197"/>
+  <rect class="t fa" x="124" y="164" width="80" height="52" rx="8"/>
+  <path class="a" d="M146 198 L172 172 L180 180 L154 206 L144 208 Z M168 176 L176 184"/>
+  <text class="lbl" x="164" y="238" text-anchor="middle">Redactor</text>
+  <path class="t" d="M206 190 L234 190 M226 183 L234 190 L226 197"/>
+  <rect class="t fa" x="240" y="164" width="80" height="52" rx="8"/>
+  <path class="r" d="M260 190 L274 204 L300 176"/>
+  <text class="lbl" x="280" y="238" text-anchor="middle">Revisor</text>
+  <!-- Viñeta: guionista y juez de humor -->
+  <path class="t" d="M322 190 L362 190 M354 183 L362 190 L354 197"/>
+  <rect class="t fa" x="368" y="164" width="80" height="52" rx="8"/>
+  <path class="t" d="M392 178 h26 a5 5 0 0 1 5 5 v10 a5 5 0 0 1 -5 5 h-16 l-6 6 v-6 h-4 a5 5 0 0 1 -5 -5 v-10 a5 5 0 0 1 5 -5 z"/>
+  <path class="a" d="M395 186 h20 M395 192 h12"/>
+  <text class="lbl" x="408" y="238" text-anchor="middle">Guionista</text>
+  <path class="t" d="M450 190 L476 190 M468 183 L476 190 L468 197"/>
+  <rect class="t fa" x="482" y="164" width="80" height="52" rx="8"/>
+  <path class="a" d="M530 178.5 L521.5 170 L506 185.5 L514.5 194 Z"/><path class="t" d="M522.2 186.2 L536.4 200.4 M500 206 h24"/>
+  <text class="lbl" x="522" y="238" text-anchor="middle">Jutge d'humor</text>
+  <!-- Franja compartida: dibujos y traducción, para el número, la Biblioteca y el reportaje -->
+  <path class="t" d="M280 248 V294 M273 286 L280 294 L287 286"/>
+  <path class="t" d="M522 248 V294 M515 286 L522 294 L529 286"/>
+  <rect class="t fa" x="240" y="300" width="80" height="52" rx="8"/>
+  <path class="a" d="M258 340 Q268 316 282 328 T304 314"/><circle class="fz" cx="304" cy="314" r="4"/>
+  <text class="lbl" x="280" y="374" text-anchor="middle">Il·lustrador</text>
+  <path class="t" d="M324 318 L360 318 M352 311 L360 318 L352 325 M364 336 L328 336 M336 329 L328 336 L336 343"/>
+  <rect class="t fa" x="368" y="300" width="80" height="52" rx="8"/>
+  <path class="t" d="M386 326 Q408 306 430 326 Q408 346 386 326 Z"/><circle class="a" cx="408" cy="326" r="7"/><circle class="ft" cx="408" cy="326" r="3"/>
+  <text class="lbl" x="408" y="374" text-anchor="middle">Revisor de</text>
+  <text class="lbl" x="408" y="394" text-anchor="middle">dibuixos</text>
+  <path class="t" d="M450 326 L476 326 M468 319 L476 326 L468 333"/>
+  <rect class="t fa" x="482" y="300" width="80" height="52" rx="8"/>
+  <text class="ft" x="500" y="332" font-family="Newsreader, Georgia, serif" font-size="16" font-weight="700" text-anchor="middle">ES</text>
+  <path class="a" d="M513 326 L527 326 M522 321 L527 326 L522 331"/>
+  <text class="ft" x="545" y="332" font-family="Newsreader, Georgia, serif" font-size="16" font-weight="700" text-anchor="middle">CA</text>
+  <text class="lbl" x="522" y="374" text-anchor="middle">Traductor</text>
+  <!-- El número de las 7:00 y el portavoz -->
+  <path class="t" d="M564 326 L604 326 M596 319 L604 326 L596 333"/>
+  <rect class="t" x="610" y="246" width="92" height="110" rx="6"/>
+  <path class="t" d="M622 266 h68 M622 274 h68"/>
+  <path class="t" d="M622 290 h30 M622 300 h30 M622 310 h30 M622 320 h30 M660 290 h30 v34 h-30 z"/>
+  <text class="lbl" x="656" y="346" text-anchor="middle">7:00</text>
+  <path class="t" d="M656 358 L656 386 M649 379 L656 386 L663 379"/>
+  <rect class="t fa" x="616" y="392" width="80" height="52" rx="8"/>
+  <path class="a" d="M640.5 414.5 L667.5 407 L667.5 425 L640.5 419 Z M653.4 423.2 a4.5 4.5 0 1 1 -8.7 -2.4"/>
+  <text class="lbl" x="656" y="466" text-anchor="middle">Portaveu</text>
+  <!-- Los domingos: el reportaje, que pasa también por la franja compartida -->
+  <text class="lbl" x="58" y="420">Diumenges</text>
+  <path class="t" d="M48 322 V476 H118 M110 469 L118 476 L110 483"/>
+  <rect class="t fa" x="124" y="450" width="80" height="52" rx="8"/>
+  <circle class="t" cx="164" cy="476" r="14"/><circle class="ft" cx="164" cy="476" r="4"/>
+  <text class="lbl" x="164" y="524" text-anchor="middle">Cap de</text>
+  <text class="lbl" x="164" y="544" text-anchor="middle">reportatges</text>
+  <path class="t" d="M206 476 L234 476 M226 469 L234 476 L226 483"/>
+  <rect class="t fa" x="240" y="450" width="80" height="52" rx="8"/>
+  <circle class="t" cx="274" cy="472" r="10"/><path class="a" d="M281 479 L294 492"/>
+  <text class="lbl" x="280" y="524" text-anchor="middle">Reporter</text>
+  <path class="t" d="M322 476 L362 476 M354 469 L362 476 L354 483"/>
+  <rect class="t fa" x="368" y="450" width="80" height="52" rx="8"/>
+  <path class="t" d="M384 464 h20 M384 474 h20 M384 484 h14"/><path class="a" d="M410 478 L418 486 L434 466"/>
+  <text class="lbl" x="408" y="524" text-anchor="middle">Verificador</text>
+  <path class="t" d="M408 448 V414 H222 V336 H234 M226 329 L234 336 L226 343"/>
+  <path class="t" d="M522 382 V430 M515 422 L522 430 L529 422"/>
+  <rect class="t" x="482" y="436" width="92" height="82" rx="6"/>
+  <path class="t" d="M494 452 h68 M494 460 h68 M494 474 h68 M494 484 h68 M494 494 h68 M494 504 h40"/>
+  <text class="lbl" x="528" y="540" text-anchor="middle">Reportatge</text>
+  <path class="t" d="M576 470 H590 V346 H604 M596 339 L604 346 L596 353"/>
+  <!-- Leyenda -->
+  <path class="t" d="M14 572 H702"/>
+  <rect class="t fa" x="124" y="586" width="34" height="24" rx="6"/>
+  <text class="lbl" x="168" y="604">Agent d'IA</text>
+  <rect class="t" x="330" y="586" width="34" height="24" rx="6"/>
+  <text class="lbl" x="374" y="604">El que entra i el que es publica</text>
+</svg>

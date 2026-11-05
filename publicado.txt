@@ -1,0 +1,62 @@
+# Lo ya publicado. Para enlazar una pieza en un texto: [texto que dice de qué trata](pieza:AAAA-MM-DD/id)
+# La fecha de la clave es la de las conversaciones: si dices cuándo lo contó el diario,
+# usa la de publicación que va en el encabezado de cada día («publicado el …»).
+
+## 2026-10-28 (publicado el jueves 29 de octubre de 2026)
+- pieza:2026-10-28/gemini4carbon (novedades) Google presenta Gemini 4 Carbon, de momento solo para especialistas en ciberseguridad
+- pieza:2026-10-28/plec-dictados (vibecoding) Plec genera dictados plegables en catalán, con audio, para que el alumnado se autocorrija
+- pieza:2026-10-28/everyjoule-prompt (vibecoding) Un prompt para crear lecciones 3D interactivas inspiradas en «Every Joule»
+- breve: La AEPD publicó el 27 de octubre un decálogo para quien usa asistentes y agentes de IA. Re
+- breve: La documentación de GitHub indica que el profesorado verificado en GitHub Education puede 
+
+## 2026-10-29 (publicado el viernes 30 de octubre de 2026)
+- pieza:2026-10-29/dictados-voz-gallego (vibecoding) EDUmind ofrece dictados en gallego y castellano con voces sintéticas de código abierto
+
+## 2026-10-30 (publicado el sábado 31 de octubre de 2026)
+- pieza:2026-10-30/eductia (herramientas) Eductia ofrece una IA de pago para preparar materiales docentes en Cataluña
+- pieza:2026-10-30/digcompedu (novedades) La Comisión Europea actualiza DigCompEdu para incorporar la IA y el bienestar digital
+- pieza:2026-10-30/skills-sincronizar (vibecoding) Docentes comparan cómo mantener las mismas skills y proyectos en varios ordenadores
+- breve: En el grupo se distinguió el vibe coding, crear recursos digitales con IA y lenguaje natur
+
+## 2026-10-31 (publicado el domingo 1 de noviembre de 2026)
+- pieza:2026-10-31/webserie-never-sleep-again (multimedia) Una webserie de terror hecha con IA documenta paso a paso su flujo de trabajo
+- pieza:2026-10-31/mapa-potencial-gravitatorio (vibecoding) Un laboratorio interactivo guía al alumnado de 2.º de Bachillerato por el potencial gravitatorio
+- pieza:2026-10-31/teclado-espanol (vibecoding) Una actividad interactiva enseña a escribir los símbolos del teclado español
+- breve: Sincronizar carpetas no es hacer copia de seguridad, recordó un hilo sobre Syncthing. INCI
+- pieza:2026-10-31/agentes-ia-permisos-datos-alumnado (reportaje) Delegar tareas en un agente de IA obliga a decidir antes qué puede ver, recordar y hacer
+
+## 2026-11-01 (publicado el lunes 2 de noviembre de 2026)
+- pieza:2026-11-01/detectores-caza-brujas (debates) El sector editorial advierte de una «caza de brujas» por los detectores de textos con IA
+- pieza:2026-11-01/la-teva-veu (vibecoding) Una escuela de Cataluña comparte una aplicación para la autoevaluación del alumnado y la valoración docente
+- pieza:2026-11-01/familias-deberes-ia (debates) Una publicación orienta a las familias cuando la IA hace los deberes
+- breve: El cliente de acceso compartido de rclone a Google Drive dejará de funcionar en 2026, segú
+- breve: La UVic-UCC coorganizó en Lleida una jornada sobre integridad en la actividad docente y la
+
+## 2026-11-02 (publicado el martes 3 de noviembre de 2026)
+- pieza:2026-11-02/infografias-svg-html (multimedia) Un docente recomienda crear infografías en HTML y SVG antes que como imágenes generadas
+- pieza:2026-11-02/informe-mit-ia (novedades) El MIT publica un informe que pide replantear enseñanza y evaluación ante la IA
+- pieza:2026-11-02/docente-disenador (debates) El profesorado como diseñador de la enseñanza centra el debate sobre la IA en el aula
+- pieza:2026-11-02/agentes-consola-acceso (vibecoding) Dar acceso total a un agente de consola exige proteger los datos del alumnado
+- pieza:2026-11-02/motionvideo-skills (multimedia) Una web reúne vídeos de motion graphics con sus prompts y skills para agentes
+- breve: La web del nuevo libro de Ethan Mollick incluye un «cursor con IA» que acompaña la lectura
+- pieza:2026-11-02/unesco-edad-ia (biblioteca) Un informe para la UNESCO propone sustituir «¿a qué edad?» por «¿para qué y con qué evidencia?» al usar IA en el aula
+- pieza:2026-11-02/wef-infancia-ia (biblioteca) El Foro Económico Mundial fija siete prácticas para que la IA sea segura para la infancia sin cerrarle el acceso al aprendizaje
+- pieza:2026-11-02/cat-orientacions-ia (biblioteca) Cataluña fija en 45 orientaciones qué usos de la IA promover y cuáles limitar en los centros educativos
+- pieza:2026-11-02/cat-tecnologies-educatives (biblioteca) Cataluña ofrece criterios para decidir cuándo una tecnología aporta valor en primaria y ESO, y sitúa la IA en 4.º
+
+## 2026-11-03 (publicado el miércoles 4 de noviembre de 2026)
+- pieza:2026-11-03/google-ia-cuentas-escolares (debates) Docentes debaten el anuncio de Google que desactiva por defecto la IA y el buscador en cuentas escolares
+- pieza:2026-11-03/misiones-orbitales (vibecoding) Una actividad gamificada lleva el campo gravitatorio de 2.º de Bachillerato a nueve misiones orbitales
+- pieza:2026-11-03/pulso-demografico (vibecoding) Un profesor de Geografía crea con Gemini un contador de nacimientos y muertes en el mundo
+- breve: En EduMedia-IAG se explicó cómo usar las skills de MotionVideo: se instala la skill en la 
+- breve: En Estados Unidos, el distrito escolar de Los Ángeles [bloqueó en septiembre](https://lais
+- pieza:2026-11-03/mit-comite-ia (biblioteca) Un comité del MIT pide rediseñar objetivos, evaluación y comunidad presencial ante una IA que ya resuelve casi cualquier trabajo escrito
+- pieza:2026-11-03/laboratori-de-formulacio (repositorio) Un laboratorio en catalán permite practicar la formulación inorgánica con preguntas, pistas y retos — recursos con artículo: Laboratori de formulació (https://ja.cat/formulacio)
+- pieza:2026-11-03/foqo-formulacion-quimica-organica (repositorio) FoQo genera tests de formulación orgánica y da el nombre de una estructura dibujada — recursos con artículo: FoQo - Formulación Química Orgánica (https://foqo.fiquipedia.es/)
+
+## 2026-11-04 (publicado el jueves 5 de noviembre de 2026)
+- pieza:2026-11-04/camara-virtual-blender (multimedia) El administrador de EduMedia-IAG convierte el móvil y las gafas de realidad virtual en una cámara virtual para Blender
+- pieza:2026-11-04/tongjiang-lab-3d (vibecoding) Un proyecto abierto ofrece 54 lecciones interactivas en 3D de ciencias para secundaria superior, en chino
+- breve: Raül Torres compartió en EduMedia-IAG un paseo en modo videojuego por Girona hecho con Cla
+- pieza:2026-11-04/rompecabezas-tecnica-jigsaw (repositorio) Una herramienta forma al azar los grupos base y de expertos de la técnica Jigsaw — recursos con artículo: Rompecabezas – Técnica Jigsaw (https://jigsawcoop.github.io/)
+- pieza:2026-11-04/edutictac-blocs (repositorio) Un editor de programación por bloques, basado en TurboWarp y compatible con Scratch, para aprender a programar — recursos con artículo: EduTicTac Blocs (https://blocs.edutictac.es/)

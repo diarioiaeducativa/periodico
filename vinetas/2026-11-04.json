@@ -1,0 +1,35 @@
+{
+  "fecha": "2026-11-04",
+  "elegida": {
+    "n": 1,
+    "pieza": "camara-virtual-blender",
+    "idea": "Tiza graba el travelling caminando de verdad y todas las tomas acaban, sin querer, en la cafetera.",
+    "guion": {"vinetas": [
+      {"escenario": "sala_profes",
+       "tiza": {"expresion": "contento", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "sorprendido", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+       "objeto": "movil", "lleva": "tiza",
+       "bocadillos": [{"quien": "tiza", "texto": "Hoy el travelling no lo escribo en un prompt: lo grabo andando.", "tipo": "habla"}]},
+      {"escenario": "sala_profes",
+       "tiza": {"expresion": "orgulloso", "postura": "sostener", "lugar": "centro", "mira": "derecha"},
+       "algoritmo": {"expresion": "contento", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+       "objeto": "movil", "lleva": "tiza",
+       "bocadillos": [{"quien": "tiza", "texto": "Pulso REC, camino y Blender copia la cámara.", "tipo": "habla"},
+                      {"quien": "algoritmo", "texto": "¡Movimiento real, nada de adivinar!", "tipo": "habla"}]},
+      {"escenario": "sala_profes",
+       "tiza": {"expresion": "avergonzado", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "pensativo", "postura": "pensar", "lugar": "derecha", "mira": "izquierda"},
+       "objeto": "movil", "lleva": "tiza",
+       "bocadillos": [{"quien": "algoritmo", "texto": "Precioso. ¿Por qué las tres tomas acaban en la cafetera?", "tipo": "habla"}]}
+    ]}
+  },
+  "motivo": "Es la única cuyo remate sorprende de verdad y nace del propio método de la noticia (pulsar REC y caminar por la habitación): el movimiento «real» delata al docente, que en la sala de profes va solo hacia el café. Retranca amable sobre Tiza, sin culpar a nadie, y la cafetera del escenario ya está dibujada, así que el dibujo hace la mitad del chiste. Datos fieles: REC, caminar, Blender mueve la cámara. La 5 tiene el mejor arranque («Llévame a junio») pero un remate previsible; las demás se quedan en chistes ya vistos o con remates que explican el gag.",
+  "retoques": "V1: «describo» pasa a «escribo», que encaja mejor con «prompt». V2: Tiza dice «Pulso REC, camino y Blender copia la cámara» (sobraba «por la sala») y Algoritmo, «¡Movimiento real, nada de adivinar!», en una sola frase con más ritmo. V3 sin cambios. Escenario, expresiones y objetos se mantienen: sala_profes en las tres viñetas (la cafetera de fondo sostiene el remate), el móvil en la mano de Tiza todo el tiempo y Tiza avergonzada en el remate. Ningún bocadillo pasa de 63 caracteres.",
+  "puntuaciones": [
+    {"n": 1, "pieza": "camara-virtual-blender", "gracia": 7, "claridad": 7, "remate": 8, "prohibiciones": "respeta", "nota": "Remate sorprendente y corto, apoyado en el escenario. Quien no sepa qué es un travelling o Blender lo pilla igual: graba andando y siempre acaba en el café. Datos correctos."},
+    {"n": 2, "pieza": "camara-virtual-blender", "gracia": 5, "claridad": 7, "remate": 5, "prohibiciones": "respeta", "nota": "La IA que se pasa de épica con el prompt es un tópico muy gastado. «Catedral, pero andando» tiene algo, pero llega flojo, y la V1 se come dos bocadillos en plantear."},
+    {"n": 3, "pieza": "tongjiang-lab-3d", "gracia": 6, "claridad": 8, "remate": 5, "prohibiciones": "respeta", "nota": "Buena diana (complicar con nube lo que funciona sin conexión) y el wifi que se cae es algo que todo docente reconoce. Pero la cartela anuncia el gag y el remate de Tiza explica lo que ya muestra el Algoritmo «cargando». Datos correctos (un HTML, sin conexión)."},
+    {"n": 4, "pieza": "tongjiang-lab-3d", "gracia": 5, "claridad": 7, "remate": 6, "prohibiciones": "respeta", "nota": "La V1 parece la nota de prensa. El remate sobre la seguridad del Algoritmo funciona a medias, porque obliga al personaje a ser consciente de su manía. La licencia se resume bien, aunque omite que no permite uso comercial (no es falso)."},
+    {"n": 5, "pieza": "breve", "gracia": 6, "claridad": 8, "remate": 5, "prohibiciones": "respeta", "nota": "«Llévame a junio» es la mejor frase del día, pero está en la V1. «A junio, andando» es la conclusión esperada y la tira se desinfla. Datos correctos (del Paleolítico a 2026)."}
+  ]
+}

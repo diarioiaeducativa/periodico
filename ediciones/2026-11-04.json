@@ -1,0 +1,100 @@
+{
+  "fecha": "2026-11-04",
+  "hay_edicion": true,
+  "motivo": "Día flojo en ChatGPT-IA-edu (solo el aviso del bot sobre el tema de Google ya publicado, sin novedad); algo más en EduMedia-IAG (cámara virtual para Blender) y en Vibe Coding Educativo (lecciones 3D de ciencias).",
+  "piezas": [
+    {
+      "id": "camara-virtual-blender",
+      "seccion": "multimedia",
+      "importancia": 1,
+      "grupo": "edumedia",
+      "antetitulo": "Cine con IA",
+      "titular": "El administrador de EduMedia-IAG convierte el móvil y las gafas de realidad virtual en una cámara virtual para Blender",
+      "entradilla": "Raül Torres describe cómo ha hecho, con ayuda de Claude, un sistema que graba movimientos de cámara reales en Blender para guiar después a un generador de vídeo con IA.",
+      "cuerpo": [
+        "Raül Torres, administrador de EduMedia-IAG y coautor de este diario, cuenta que ha creado con Claude una herramienta para controlar la cámara en escenas 3D sin depender solo del texto de un prompt. La versión para móvil consiste en una página web con WebXR que lee la posición y la rotación del teléfono, y un complemento de Python para Blender que mueve la cámara de la escena en tiempo real. Al pulsar REC y caminar por la habitación, Blender graba los fotogramas clave; en la pantalla del móvil se ve lo que ve la cámara.",
+        "Después, según su relato, se detiene la grabación, se exporta un MP4 y ese vídeo sirve de referencia de cámara para el generador de vídeo Seedance 2.5. La página oficial de Seedance 2.5 confirma que el modelo puede tomar un vídeo de referencia como guía del movimiento de cámara.",
+        "Una segunda versión lleva el mismo método a unas gafas Meta Quest 3: mediante Quest Link y el complemento VR Scene Inspection (OpenXR) que incluye Blender, quien graba sostiene una cámara virtual en el mando, el gatillo inicia y detiene la grabación y los joysticks permiten travellings y paneos. El autor señala que aún debe ajustar detalles, como la velocidad del mando izquierdo.",
+        "Para el aula de audiovisuales o de plástica, la idea importa porque devuelve el control del encuadre y del movimiento al alumnado: se construye el escenario, se decide dónde va la cámara y la IA se usa después para transformar ese material. El autor pone como ejemplo de su método de trabajo su propia serie, «Never Sleep Again», que [el diario contó el 1 de noviembre](pieza:2026-10-31/webserie-never-sleep-again). Las herramientas descritas son un desarrollo personal y, por ahora, el grupo solo cuenta con sus capturas, sus vídeos de prueba y su explicación."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Mensaje original en EduMedia-IAG",
+          "url": "https://t.me/EduMediaIAG/12067"
+        },
+        {
+          "titulo": "Blender: manual del complemento VR Scene Inspection",
+          "url": "https://docs.blender.org/manual/es/latest/addons/vr_scene_inspection.html"
+        },
+        {
+          "titulo": "ByteDance Seed: Seedance 2.5",
+          "url": "https://seed.bytedance.com/en/seedance2_5"
+        }
+      ],
+      "mensaje": {
+        "grupo": "edumedia",
+        "id": 12067
+      },
+      "comprobado": "Contrastado con los mensajes #12067-#12108 del grupo (WebFetch del #12067 en Telegram: es de Raül Torres, 4 nov). No hay página pública de la herramienta. El manual de Blender: el enlace del borrador daba 404; la dirección corregida abre el manual (Blender 5.2) con la página VR Scene Inspection, y la búsqueda confirma que es un complemento oficial incluido en Blender, basado en OpenXR y con seguimiento de mandos; Quest Link no aparece en el manual y se atribuye al autor. Seedance 2.5 no confirmado en fuente oficial (solo guías de terceros sobre Seedance 2.0, que sí admite vídeo de referencia de cámara): se mantiene como afirmación del autor. Se quitó la frase que atribuía al mismo autor la webserie, porque no se ha verificado.",
+      "ilustracion": "Esquema en tres pasos de izquierda a derecha: un móvil o unas gafas de realidad virtual que se mueven por una habitación, una escena 3D de Blender con una cámara que sigue ese movimiento dibujada como trayectoria punteada, y un fotograma de vídeo final generado por IA a partir del recorrido.",
+      "ilustracion_alt": "Esquema en tres pasos de izquierda a derecha: un móvil con un punto rojo y el rótulo REC, bajo el rótulo «Móvil o gafas»; una flecha hacia un cubo 3D con una cámara al final de una trayectoria de puntos, bajo el rótulo «Escena en Blender»; y otra flecha hacia un fotograma de vídeo con un paisaje, bajo el rótulo «Vídeo con IA»."
+    },
+    {
+      "id": "tongjiang-lab-3d",
+      "seccion": "vibecoding",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Ciencia en 3D",
+      "titular": "Un proyecto abierto ofrece 54 lecciones interactivas en 3D de ciencias para secundaria superior, en chino",
+      "entradilla": "Tongjiang Lab reúne lecciones de física, química, biología y geografía en archivos HTML que funcionan sin conexión; en el grupo se señaló como ejemplo de lo que se podrá hacer con IA.",
+      "cuerpo": [
+        "En Vibe Coding Educativo se compartió Tongjiang Lab (铜匠实验室), un repositorio abierto de lecciones de ciencias en 3D para secundaria superior. Según su documentación, contiene 54 lecciones: 10 de física, 25 de química, 5 de biología y 14 de geografía. Cada una es un único archivo HTML de aproximadamente 1 MB que funciona sin conexión, de modo que sirve en un proyector o en una pizarra digital.",
+        "Cada lección presenta una escena 3D con un panel de control en vivo, una pregunta guía y un itinerario paso a paso para el profesorado. Se pueden abrir en línea, descargar una a una o en un zip, e incorporar a otra web mediante un iframe. Las lecciones siguen el currículo chino y los libros de texto de la editorial People's Education Press, aunque el proyecto aclara que no tiene relación con ella.",
+        "La interfaz está en chino; el proyecto indica que prevé otros idiomas. La licencia es CC BY-NC 4.0, que permite compartir y adaptar con crédito y sin uso comercial. El autor figura como Tongjiang.",
+        "Quien lo compartió en el grupo lo presenta como muestra de lo que se podrá hacer en los próximos meses con IA, y ha traducido al inglés una de las simulaciones en su propia web. El interés para el profesorado hispanohablante es doble: un modelo de lección 3D autocontenida y una base reutilizable, siempre que se respete la licencia."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Tongjiang Lab (repositorio en GitHub)",
+          "url": "https://github.com/smithjohn78390/tongjiang-lab"
+        },
+        {
+          "titulo": "Tongjiang Lab (web de las lecciones)",
+          "url": "https://lab.tongjiang.app"
+        }
+      ],
+      "mensaje": {
+        "grupo": "vce",
+        "id": 14628
+      },
+      "comprobado": "Abiertos el repositorio de GitHub y lab.tongjiang.app: 54 lecciones (10 física, 25 química, 5 biología, 14 geografía), HTML autocontenido de ~1 MB que funciona sin conexión, zip/descarga individual/iframe, CC BY-NC 4.0 (three.js bajo MIT), interfaz en chino con otros idiomas previstos, currículo nacional y libros PEP 2019 sin afiliación, autor Tongjiang. Abierta eduvers.org/en/simulations: solo una simulación figura en inglés, el resto bajo «Chinese». Mensaje #14628 abierto en Telegram: coincide.",
+      "ilustracion": null,
+      "ilustracion_alt": "Una barra dividida en cuatro tramos de ancho proporcional, bajo el rótulo «54 lecciones»; sobre cada tramo un icono: un átomo sobre «Física», un matraz sobre «Química» (el tramo más largo, en azul), una hélice de ADN sobre «Biología» (el más corto) y un globo terráqueo sobre «Geografía»."
+    }
+  ],
+  "breves": [
+    {
+      "texto": "Raül Torres compartió en EduMedia-IAG un paseo en modo videojuego por Girona hecho con Claude, con lugares tomados del mapa real y viaje en el tiempo desde el Paleolítico hasta 2026. Se ejecuta desde la web y no consta enlace público.",
+      "url": null,
+      "grupo": "edumedia",
+      "mensaje": {
+        "grupo": "edumedia",
+        "id": 12049
+      }
+    }
+  ],
+  "descartado": [
+    "Anuncio de Google sobre IA en cuentas escolares (ChatGPT-IA-edu): ya publicado el 3 de noviembre; hoy solo el aviso del bot, sin datos nuevos. ChatGPT-IA-edu no tiene nada más publicable el día 4.",
+    "Agenda Docente y sus AgendApps (VCE): busqué la app en WebSearch (revisor, de nuevo) y no hay fuente oficial ni ficha; solo un vídeo de TikTok. Sin comprobar.",
+    "Fil i compte, banco de problemas de mates en catalán (VCE): buscado de nuevo sin resultados y el mensaje no incluye enlace. Sin comprobar.",
+    "Misiones orbitales (VCE): ya publicado el 3 de noviembre.",
+    "Mensaje publicitario en chino, saludos, bromas, comandos del bot y mensajes del bot: no son noticia."
+  ],
+  "repaso": [
+    "Blender: el enlace del manual daba 404; sustituido por la dirección vigente (addons/vr_scene_inspection.html). La fuente «Mensaje original» apuntaba a #12069; ahora a #12067, el mensaje inicial.",
+    "Quitada la frase que atribuía al autor la webserie «Never Sleep Again» del 31 de octubre (no verificado); se mantiene el enlace a esa pieza como ejemplo que él mismo cita.",
+    "Seedance 2.5 sigue como afirmación del autor: solo hay fuentes de terceros sobre Seedance 2.0.",
+    "Tongjiang Lab: todos los datos confirmados en el repositorio y en lab.tongjiang.app; sin cambios en el texto.",
+    "Breve de Girona y descartes (Agenda Docente, Fil i compte, Google): revisados, sin cambios. ChatGPT-IA-edu queda sin pieza porque no hay nada nuevo."
+  ]
+}

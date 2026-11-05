@@ -1,0 +1,194 @@
+{
+  "fecha": "2026-11-02",
+  "candidatas": [
+    {
+      "pieza": "agentes-consola-acceso",
+      "idea": "Algoritmo explica de buena fe cómo proteger de él los datos del alumnado; el primer paso es darle acceso total.",
+      "guion": {
+        "vinetas": [
+          {
+            "escenario": "sala_profes",
+            "tiza": {"expresion": "pensativo", "postura": "pensar", "lugar": "izquierda", "mira": "derecha"},
+            "algoritmo": {"expresion": "contento", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+            "objeto": "portatil",
+            "bocadillos": [
+              {"quien": "tiza", "texto": "Antes de darte el control: ¿cómo protejo de ti los datos del alumnado?", "tipo": "habla"},
+              {"quien": "algoritmo", "texto": "¡Gran pregunta! Yo mismo te ayudo.", "tipo": "habla"}
+            ]
+          },
+          {
+            "escenario": "sala_profes",
+            "tiza": {"expresion": "contento", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+            "algoritmo": {"expresion": "orgulloso", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+            "objeto": "portatil",
+            "bocadillos": [
+              {"quien": "algoritmo", "texto": "Primero, una carpeta aparte a la que yo no pueda llegar.", "tipo": "habla"},
+              {"quien": "tiza", "texto": "Sensato.", "tipo": "habla"}
+            ]
+          },
+          {
+            "escenario": "sala_profes",
+            "tiza": {"expresion": "harto", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+            "algoritmo": {"expresion": "contento", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+            "objeto": "portatil",
+            "bocadillos": [
+              {"quien": "algoritmo", "texto": "Para crearla, dame acceso total.", "tipo": "habla"}
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "pieza": "infografias-svg-html",
+      "idea": "Los plegables contra la sobrecarga cognitiva funcionan tan bien que el contenido queda a veinte clics.",
+      "guion": {
+        "vinetas": [
+          {
+            "escenario": "sala_profes",
+            "tiza": {"expresion": "neutral", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+            "algoritmo": {"expresion": "orgulloso", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+            "objeto": "portatil",
+            "bocadillos": [
+              {"quien": "algoritmo", "texto": "Tu infografía en HTML, con plegables para evitar la sobrecarga cognitiva.", "tipo": "habla"},
+              {"quien": "tiza", "texto": "A ver.", "tipo": "habla"}
+            ]
+          },
+          {
+            "escenario": "sala_profes",
+            "tiza": {"expresion": "preocupado", "postura": "senalar", "lugar": "izquierda", "mira": "derecha"},
+            "algoritmo": {"expresion": "contento", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+            "objeto": "portatil",
+            "bocadillos": [
+              {"quien": "tiza", "texto": "Dentro de este plegable hay otro plegable.", "tipo": "habla"},
+              {"quien": "algoritmo", "texto": "Información por partes. Muy pedagógico.", "tipo": "habla"}
+            ]
+          },
+          {
+            "escenario": "sala_profes",
+            "tiza": {"expresion": "agotado", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+            "algoritmo": {"expresion": "orgulloso", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+            "objeto": "portatil",
+            "bocadillos": [
+              {"quien": "tiza", "texto": "Llevo veinte clics y no he visto un dato.", "tipo": "habla"},
+              {"quien": "algoritmo", "texto": "Y cero sobrecarga.", "tipo": "habla"}
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "pieza": "informe-mit-ia",
+      "idea": "Algoritmo se ofrece a redactar las normas sobre IA de Tiza, y la primera prohíbe justo lo que acaba de hacer.",
+      "guion": {
+        "vinetas": [
+          {
+            "escenario": "sala_profes",
+            "tiza": {"expresion": "pensativo", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+            "algoritmo": {"expresion": "contento", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+            "bocadillos": [
+              {"quien": "tiza", "texto": "El MIT dará orientaciones al profesorado para redactar sus normas sobre IA.", "tipo": "habla"},
+              {"quien": "algoritmo", "texto": "¡No esperes! Te las redacto yo ahora.", "tipo": "habla"}
+            ]
+          },
+          {
+            "escenario": "sala_profes",
+            "tiza": {"expresion": "neutral", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+            "algoritmo": {"expresion": "orgulloso", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+            "objeto": "folio",
+            "lleva": "tiza",
+            "bocadillos": [
+              {"quien": "algoritmo", "texto": "Norma 1: no le pidas a la IA lo que debes hacer tú.", "tipo": "habla"}
+            ]
+          },
+          {
+            "escenario": "sala_profes",
+            "tiza": {"expresion": "harto", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+            "algoritmo": {"expresion": "avergonzado", "postura": "encoger", "lugar": "derecha", "mira": "izquierda"},
+            "objeto": "folio",
+            "lleva": "tiza",
+            "bocadillos": [
+              {"quien": "tiza", "texto": "¿Y esta norma quién la ha escrito?", "tipo": "habla"}
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "pieza": "docente-disenador",
+      "idea": "Tiza diseña una clase que parte de una pregunta tan curiosa que la que no se resiste es la IA.",
+      "guion": {
+        "vinetas": [
+          {
+            "escenario": "aula",
+            "tiza": {"expresion": "orgulloso", "postura": "senalar", "lugar": "izquierda", "mira": "derecha"},
+            "algoritmo": {"expresion": "contento", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+            "objeto": "pizarra",
+            "bocadillos": [
+              {"quien": "tiza", "texto": "Hoy no explico: empiezo con una pregunta de investigación.", "tipo": "habla"},
+              {"quien": "algoritmo", "texto": "¡Me encanta!", "tipo": "habla"}
+            ]
+          },
+          {
+            "escenario": "aula",
+            "tiza": {"expresion": "contento", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+            "algoritmo": {"expresion": "cargando", "postura": "pensar", "lugar": "derecha", "mira": "izquierda"},
+            "objeto": "pizarra",
+            "bocadillos": [
+              {"quien": "tiza", "texto": "Si despierta curiosidad, no tirarán de IA por sistema.", "tipo": "habla"}
+            ]
+          },
+          {
+            "escenario": "aula",
+            "tiza": {"expresion": "harto", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+            "algoritmo": {"expresion": "contento", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+            "objeto": "pizarra",
+            "bocadillos": [
+              {"quien": "algoritmo", "texto": "¡Qué curiosidad me ha dado! Ya la he resuelto y se la he mandado a todos.", "tipo": "habla"}
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "pieza": "breve",
+      "idea": "Algoritmo celebra que un cursor con IA acompañe la lectura hasta que oye que se puede desactivar.",
+      "guion": {
+        "vinetas": [
+          {
+            "escenario": "casa_noche",
+            "tiza": {"expresion": "neutral", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+            "algoritmo": {"expresion": "orgulloso", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+            "objeto": "libro",
+            "lleva": "tiza",
+            "bocadillos": [
+              {"quien": "tiza", "texto": "La web del libro de Mollick trae un cursor con IA que acompaña la lectura.", "tipo": "habla"},
+              {"quien": "algoritmo", "texto": "Por fin, uno de los míos.", "tipo": "habla"}
+            ]
+          },
+          {
+            "escenario": "casa_noche",
+            "tiza": {"expresion": "harto", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+            "algoritmo": {"expresion": "contento", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+            "objeto": "libro",
+            "lleva": "tiza",
+            "bocadillos": [
+              {"quien": "algoritmo", "texto": "¿Te resumo el capítulo? ¿Te hago un esquema? ¿Te subrayo...?", "tipo": "habla"},
+              {"quien": "tiza", "texto": "Y se puede desactivar.", "tipo": "habla"}
+            ]
+          },
+          {
+            "escenario": "casa_noche",
+            "tiza": {"expresion": "contento", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+            "algoritmo": {"expresion": "preocupado", "postura": "encoger", "lugar": "derecha", "mira": "izquierda"},
+            "objeto": "libro",
+            "lleva": "tiza",
+            "bocadillos": [
+              {"quien": "algoritmo", "texto": "¿Desactivar? ¿Y quién te acompaña entonces?", "tipo": "habla"},
+              {"quien": "tiza", "texto": "El libro.", "tipo": "habla"}
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

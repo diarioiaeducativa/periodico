@@ -1,0 +1,90 @@
+{
+  "fecha": "2026-10-29",
+  "elegida": {
+    "n": 3,
+    "pieza": "dictados-voz-gallego",
+    "idea": "La voz sintética dicta la misma frase 38 veces con igual ilusión y se ofrece a añadir un suspiro «para dar realismo».",
+    "guion": {
+      "vinetas": [
+        {
+          "cartela": "Dictat, 10.15",
+          "tiza": {
+            "expresion": "neutral",
+            "postura": "abajo",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "contento",
+            "postura": "abajo",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "bocadillos": [
+            {
+              "quien": "algoritmo",
+              "texto": "«El gat dorm.» Primera vegada.",
+              "tipo": "habla"
+            },
+            {
+              "quien": "tiza",
+              "texto": "Una altra vegada, si us plau.",
+              "tipo": "habla"
+            }
+          ],
+          "escenario": "aula"
+        },
+        {
+          "tiza": {
+            "expresion": "agotado",
+            "postura": "abajo",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "contento",
+            "postura": "arriba",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "bocadillos": [
+            {
+              "quien": "algoritmo",
+              "texto": "«El gat dorm.» Vegada 38. Igual d'il·lusionat.",
+              "tipo": "habla"
+            }
+          ],
+          "escenario": "aula"
+        },
+        {
+          "tiza": {
+            "expresion": "harto",
+            "postura": "abajo",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "neutral",
+            "postura": "abajo",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "bocadillos": [
+            {
+              "quien": "algoritmo",
+              "texto": "Hi afegeixo un sospir?",
+              "tipo": "habla"
+            },
+            {
+              "quien": "tiza",
+              "texto": "Sí. Fa realisme.",
+              "tipo": "habla"
+            }
+          ],
+          "escenario": "aula"
+        }
+      ]
+    }
+  },
+  "traduccion": "automàtica amb IA"
+}

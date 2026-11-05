@@ -1,0 +1,42 @@
+{
+  "fecha": "2026-11-03",
+  "elegida": {
+    "n": 2,
+    "pieza": "google-ia-cuentas-escolares",
+    "idea": "Algorisme redacta l'avís que la IA està bloquejada i no pot evitar oferir-se a resumir-lo.",
+    "guion": {
+      "vinetas": [
+        {
+          "escenario": "sala_profes",
+          "tiza": {"expresion": "neutral", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+          "algoritmo": {"expresion": "contento", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+          "objeto": "portatil",
+          "bocadillos": [
+            {"quien": "tiza", "texto": "Si el centre bloqueja la IA, l'alumnat veurà un avís del centre.", "tipo": "habla"},
+            {"quien": "algoritmo", "texto": "El redacto jo!", "tipo": "habla"}
+          ]
+        },
+        {
+          "escenario": "sala_profes",
+          "tiza": {"expresion": "contento", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+          "algoritmo": {"expresion": "orgulloso", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+          "objeto": "portatil",
+          "bocadillos": [
+            {"quien": "algoritmo", "texto": "«El teu centre ha desactivat la IA.»", "tipo": "habla"},
+            {"quien": "tiza", "texto": "Clar i breu.", "tipo": "habla"}
+          ]
+        },
+        {
+          "escenario": "sala_profes",
+          "tiza": {"expresion": "harto", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+          "algoritmo": {"expresion": "contento", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+          "objeto": "portatil",
+          "bocadillos": [
+            {"quien": "algoritmo", "texto": "«Vols que te'l resumeixi?»", "tipo": "habla"}
+          ]
+        }
+      ]
+    }
+  },
+  "traduccion": "automàtica amb IA"
+}

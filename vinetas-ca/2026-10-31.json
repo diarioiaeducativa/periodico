@@ -1,0 +1,89 @@
+{
+  "fecha": "2026-10-31",
+  "elegida": {
+    "n": 8,
+    "pieza": "webserie-never-sleep-again",
+    "idea": "La serie de terror de Halloween llega a su gran momento y el monstruo resulta ser un asistente servicial.",
+    "guion": {
+      "vinetas": [
+        {
+          "cartela": "Nit de Halloween",
+          "tiza": {
+            "expresion": "neutral",
+            "postura": "sostener",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "orgulloso",
+            "postura": "abajo",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "objeto": "taza",
+          "lleva": "tiza",
+          "bocadillos": [
+            {
+              "quien": "algoritmo",
+              "texto": "T'he fet una sèrie de terror. Atenta al monstre.",
+              "tipo": "habla"
+            },
+            {
+              "quien": "tiza",
+              "texto": "A veure si fa por.",
+              "tipo": "habla"
+            }
+          ],
+          "escenario": "casa_noche"
+        },
+        {
+          "tiza": {
+            "expresion": "sorprendido",
+            "postura": "sostener",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "contento",
+            "postura": "abajo",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "objeto": "taza",
+          "lleva": "tiza",
+          "bocadillos": [
+            {
+              "quien": "algoritmo",
+              "texto": "Casa a les fosques. Una porta cruix. I de sobte...",
+              "tipo": "habla"
+            }
+          ],
+          "escenario": "casa_noche"
+        },
+        {
+          "tiza": {
+            "expresion": "riendo",
+            "postura": "encoger",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "contento",
+            "postura": "arriba",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "bocadillos": [
+            {
+              "quien": "algoritmo",
+              "texto": "«Hola, sóc el monstre. En què et puc ajudar avui?»",
+              "tipo": "habla"
+            }
+          ],
+          "escenario": "casa_noche"
+        }
+      ]
+    }
+  },
+  "traduccion": "automàtica amb IA"
+}

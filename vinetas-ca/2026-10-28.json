@@ -1,0 +1,81 @@
+{
+  "fecha": "2026-10-28",
+  "elegida": {
+    "n": 6,
+    "pieza": "gemini4carbon",
+    "idea": "La IA nueva llegará «lo antes posible», y Tiza descubre que ese plazo también le sirve para los exámenes.",
+    "guion": {
+      "vinetas": [
+        {
+          "tiza": {
+            "expresion": "contento",
+            "postura": "abajo",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "contento",
+            "postura": "arriba",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "bocadillos": [
+            {
+              "quien": "algoritmo",
+              "texto": "Ha sortit el model més capaç de la història!",
+              "tipo": "habla"
+            },
+            {
+              "quien": "tiza",
+              "texto": "Puc provar-lo a classe?",
+              "tipo": "habla"
+            }
+          ],
+          "escenario": "sala_profes",
+          "objeto": "reloj"
+        },
+        {
+          "tiza": {
+            "expresion": "harto",
+            "postura": "pensar",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "neutral",
+            "postura": "encoger",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "bocadillos": [
+            {
+              "quien": "algoritmo",
+              "texto": "De moment, només experts en ciberseguretat. La resta, «tan aviat com sigui possible».",
+              "tipo": "habla"
+            }
+          ],
+          "escenario": "sala_profes"
+        },
+        {
+          "cartela": "Aquella tarda, a classe",
+          "tiza": {
+            "expresion": "orgulloso",
+            "postura": "senalar",
+            "lugar": "centro",
+            "mira": "derecha"
+          },
+          "bocadillos": [
+            {
+              "quien": "tiza",
+              "texto": "Els exàmens corregits? Tan aviat com sigui possible.",
+              "tipo": "habla"
+            }
+          ],
+          "escenario": "aula",
+          "objeto": "examenes"
+        }
+      ]
+    }
+  },
+  "traduccion": "automàtica amb IA"
+}

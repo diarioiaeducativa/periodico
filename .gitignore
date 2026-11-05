@@ -1,0 +1,22 @@
+# Los mensajes de los grupos: material de trabajo, no se publica (están en los grupos, que son públicos)
+dias/
+# Se genera con generar.py y se publica en diarioiaeducativa.github.io
+sitio/
+ediciones-borrador/
+registro/
+estado/
+__pycache__/
+# Pruebas del 01-11-2026, antes de elegir Opus para el humor
+vinetas/candidatas-a/
+vinetas/candidatas-b/
+vinetas/jurado/
+semanas/
+reportajes-borrador/
+revision/
+biblioteca-borrador/
+biblioteca-entrada/
+repositorio-borrador/
+repositorio-entrada/
+# Las imágenes del carrusel de Instagram: se rehacen con scripts/instagram.py y viven un día en la rama instagram del sitio (ADR 0015)
+instagram/
+indice/
