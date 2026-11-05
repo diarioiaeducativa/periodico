@@ -89,7 +89,12 @@ Aprobado ese mismo día («sí a todo, hazlo»), junto con el resumen semanal d�
 
 ## Validación
 
-- `reserva.sh` en el NAS, tres veces, para dejar las tres reservas listas.
-- El vigilante, lanzado a mano en modo simulación en GitHub Actions: monta el número con la reserva
-  sin subir nada.
-- `preparar.py` con `RECUPERA=1` en el NAS sobre los mensajes reales.
+- 05-11-2026, en el NAS: `reserva.sh` tres veces; tres reservas listas y subidas
+  (`reserva/2099-01-01` a `03`), unos 3 minutos cada una.
+- `preparar.py` con `RECUPERA=1` en el NAS sobre los mensajes reales del 04-11: el día anterior
+  entra como «RECUPERADO» y cuenta como noticia (156 mensajes en lugar de 68).
+- `setsid` en el contenedor: parar el grupo de procesos para `timeout` y lo que lanza, sin restos.
+- El vigilante en GitHub Actions, lanzado a mano en simulación (`simular`, y `fecha` para dar por
+  perdido un número): monta el número con la reserva, genera el sitio y el buscador, descarga el
+  repositorio del sitio con su clave, `push --dry-run` sin error y el bot de avisos responde
+  (`getMe`), sin subir ni enviar nada (ejecución 42084398936).
