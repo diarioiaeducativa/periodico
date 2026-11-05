@@ -7,6 +7,7 @@
 #
 #   scripts/vigilante.sh             lo que hace GitHub Actions
 #   SIMULAR=1 scripts/vigilante.sh   todo menos subir nada y avisar, aunque no sea la hora
+#   SIMULAR=1 FECHA=AAAA-MM-DD …     lo mismo, como si faltara el número de esas conversaciones
 #
 # Necesita, en GitHub Actions: SITIO_KEY (clave de despliegue con escritura en el repositorio del
 # sitio) y TELEGRAM_TOKEN y TELEGRAM_CHAT (el bot «Agentes IA», para avisar a Juanjo).
@@ -19,6 +20,7 @@ WEB="https://diarioiaeducativa.github.io/"
 export TZ=Europe/Madrid
 HOY=$(date +%F)
 F=$(date -d yesterday +%F)
+[ "$SIMULAR" = 1 ] && [ -n "${FECHA:-}" ] && F=$FECHA
 m=$(( 10#$(date +%H) * 60 + 10#$(date +%M) ))
 
 avisar() {
