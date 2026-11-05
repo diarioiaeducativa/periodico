@@ -13,6 +13,7 @@ import pathlib
 import re
 import os
 import shutil
+import urllib.parse
 from email.utils import format_datetime
 from zoneinfo import ZoneInfo
 
@@ -32,6 +33,7 @@ BIBLIOTECA_PORTADA = 3   # artículos de la Biblioteca en la portada, aparte de 
 TEMA_BIBLIOTECA = "https://t.me/ChatGPTedu/21753"
 REPOSITORIO = "https://vibe-coding-educativo.github.io/app_edu/"   # el Repositorio de recursos de VCE (ADR 0008)
 CODIGO = "https://github.com/diarioiaeducativa/periodico"   # el código de la redacción, público (ADR 0019)
+VCER = ("recomendable", 100, "2026-11")   # la última evaluación VCER: resultado, porcentaje y mes (ADR 0020, evaluacion-vcer.md)
 # Primer día del número 1: los días anteriores (la prueba) salen en portada y archivo, sin número
 LANZAMIENTO = "2026-11-01"
 
@@ -74,7 +76,7 @@ IDIOMAS = {
         "no_existe": "Esta página no existe",
         "no_existe_txt": "Puede que el enlace esté mal escrito o que la pieza se haya retirado. La portada de hoy y la hemeroteca siguen ahí.",
         "redactado": "Redactado con IA a partir de las conversaciones de los grupos. Cada dato se comprueba en su fuente original, enlazada al final de cada pieza; las opiniones de los miembros no se atribuyen a nadie.",
-        "licencia": "Textos e ilustraciones con licencia", "deed": "deed.es", "codigo_enlace": "el repositorio de la redacción",
+        "licencia": "Textos e ilustraciones con licencia", "deed": "deed.es", "vcer": "Evaluación VCER: Recomendable (100 %), noviembre de 2026", "codigo_enlace": "el repositorio de la redacción",
         "letra": "Letra", "iconos": "Iconos", "traduccion": "",
         "idioma": "Idioma", "secciones_nav": "Secciones", "rss": "RSS",
         "nombre_corto": "Diario IA", "instalar": "Instalar la app",
@@ -187,7 +189,7 @@ IDIOMAS = {
         "no_existe": "Aquesta pàgina no existeix",
         "no_existe_txt": "Pot ser que l'enllaç estigui mal escrit o que la peça s'hagi retirat. La portada d'avui i l'hemeroteca continuen aquí.",
         "redactado": "Redactat amb IA a partir de les converses dels grups. Cada dada es comprova a la seva font original, enllaçada al final de cada peça; les opinions dels membres no s'atribueixen a ningú.",
-        "licencia": "Textos i il·lustracions amb llicència", "deed": "deed.ca", "codigo_enlace": "repositori de la redacció",
+        "licencia": "Textos i il·lustracions amb llicència", "deed": "deed.ca", "vcer": "Avaluació VCER: Recomanable (100 %), novembre de 2026", "codigo_enlace": "repositori de la redacció",
         "letra": "Lletra", "iconos": "Icones",
         "traduccion": "Traducció automàtica amb IA de l'edició en castellà (Diario de IA Educativa), sense revisió professional.",
         "idioma": "Idioma", "secciones_nav": "Seccions", "rss": "RSS",
@@ -653,6 +655,13 @@ SCRIPT_TEMA = """<script>
 DIAS_PIE = 7            # el pie lista los últimos días; el resto, en la hemeroteca
 
 
+def url_vcer():
+    """La página de la mención VCER, con el título y la dirección del diario en el idioma de la página."""
+    r, p, f = VCER
+    q = urllib.parse.urlencode({"r": r, "p": p, "f": f, "t": L["titulo"], "u": BASE + L["carpeta"]}, quote_via=urllib.parse.quote)
+    return "https://vibe-coding-educativo.github.io/vibe-responsable/vcer/?" + q
+
+
 def pie(prof, eds, actual):
     marca = ' aria-current="page"'
     archivo = "".join(
@@ -679,6 +688,7 @@ def pie(prof, eds, actual):
     {trad}
     <p>© {datetime.date.fromisoformat(eds[-1]["fecha"]).year} {enlace(WEB_JUANJO, "Juan José de Haro")} {L["y"]} {enlace(WEB_RAUL, "Raül Torres")}. {L["licencia"]} {enlace("https://creativecommons.org/licenses/by-sa/4.0/" + L["deed"], "CC BY-SA 4.0")}.</p>
     <p>{L["letra"]} {enlace("https://github.com/productiontype/Newsreader", "Newsreader")} (Production Type, <a href="{prof}fuentes/OFL.txt">OFL</a>). {L["iconos"]} {enlace("https://lucide.dev", "Lucide")} (<a href="{prof}LICENSE-LUCIDE.txt">ISC</a>).</p>
+    <p>{enlace(url_vcer(), L["vcer"])}.</p>
   </div>
 </footer>"""
 

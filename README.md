@@ -20,7 +20,8 @@ reportaje del domingo ([ADR 0004](docs/adr/0004-reportaje-del-domingo.md)). El s
 Código con licencia [AGPL v3](LICENSE); textos e ilustraciones, CC BY-SA 4.0, © 2026 Juan José de
 Haro y Raül Torres. Letra [Newsreader](https://github.com/productiontype/Newsreader) (OFL,
 `estaticos/fuentes/OFL.txt`) e iconos de [Lucide](https://lucide.dev) (ISC, `lucide/LICENSE`).
-El porqué de cada decisión está en los [ADR](docs/adr/README.md).
+El porqué de cada decisión está en los [ADR](docs/adr/README.md), y la última evaluación con la
+rúbrica VCER, en [evaluacion-vcer.md](evaluacion-vcer.md).
 
 Los mensajes de los grupos (`dias/`), los registros de cada noche y las credenciales no están en
 el repositorio: los mensajes los recoge cada noche `scripts/preparar.py` de lo que guarda el Bot de

@@ -22,6 +22,12 @@ y eso no se publica.
   esas menciones seguían en los commits anteriores. El historial anterior, con sus notas
   `refs/notes/ia`, se guarda completo en el repositorio privado
   `diarioiaeducativa/periodico-historial`.
+- **El repositorio público es uno nuevo con el mismo nombre.** Al cambiar la visibilidad, GitHub
+  respondió con errores 500 y dejó el cambio «en curso» sin terminarlo, también desde la web.
+  Se renombró ese repositorio a `diarioiaeducativa/periodico-bloqueado` (privado, con el mismo
+  commit), se creó `diarioiaeducativa/periodico` público, se subió el historial nuevo con sus
+  notas y la clave de despliegue del NAS pasó al nuevo (una clave solo puede estar en un
+  repositorio). Las direcciones no cambian.
 - **El clon del NAS se pone en el historial nuevo** con `git fetch` y `git reset --hard
   origin/main`: conserva las carpetas que no se suben (`dias/`, `estado/`, `registro/`…), que
   están en `.gitignore`.
@@ -62,4 +68,6 @@ y eso no se publica.
 
 - `git grep` en el árbol publicado de «plan Max», «suscripción», claves y rutas de credenciales:
   sin resultados (salvo las suscripciones de Web Push del ADR 0013, que son otra cosa).
+- Desde el contenedor del NAS, `git fetch` y `git push --dry-run` contra el repositorio público
+  funcionan con su clave.
 - El NAS prepara el número de la noche del 05-11 con el historial nuevo.
