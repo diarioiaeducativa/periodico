@@ -25,7 +25,7 @@ y eso no se publica.
 - **El repositorio público es uno nuevo con el mismo nombre.** Al cambiar la visibilidad, GitHub
   respondió con errores 500 y dejó el cambio «en curso» sin terminarlo, también desde la web.
   Se renombró ese repositorio a `diarioiaeducativa/periodico-bloqueado` (privado, con el mismo
-  commit), se creó `diarioiaeducativa/periodico` público, se subió el historial nuevo con sus
+  commit; se borró el mismo día, cuando GitHub soltó el bloqueo), se creó `diarioiaeducativa/periodico` público, se subió el historial nuevo con sus
   notas y la clave de despliegue del NAS pasó al nuevo (una clave solo puede estar en un
   repositorio). Las direcciones no cambian.
 - **El clon del NAS se pone en el historial nuevo** con `git fetch` y `git reset --hard
