@@ -16,6 +16,7 @@ reportaje del domingo ([ADR 0004](docs/adr/0004-reportaje-del-domingo.md)). El s
 - `lucide/iconos.txt`: los iconos de Lucide que el ilustrador puede usar en sus dibujos, preparados por `scripts/lucide.py` ([ADR 0014](docs/adr/0014-iconos-de-lucide-rotulos-en-la-descripcion-y-dibujos-ampliables.md)).
 - `ediciones/`, `ilustraciones/`, `vinetas/` (y sus versiones `-ca`) y `avisos/`: lo que ha escrito la redacción.
 - `publicar.sh`: publicar a mano desde el portátil.
+- `reserva/`, `scripts/reserva.sh` y `scripts/reserva.py`: las piezas de reserva para que no haya ningún día sin número, y `scripts/vigilante.sh` con `.github/workflows/vigilante.yml`, el vigilante que saca el número desde GitHub si el NAS no lo ha publicado ([ADR 0021](docs/adr/0021-ningun-dia-sin-numero.md)).
 
 Código con licencia [AGPL v3](LICENSE); textos e ilustraciones, CC BY-SA 4.0, © 2026 Juan José de
 Haro y Raül Torres. Letra [Newsreader](https://github.com/productiontype/Newsreader) (OFL,

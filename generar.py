@@ -76,7 +76,7 @@ IDIOMAS = {
         "no_existe": "Esta página no existe",
         "no_existe_txt": "Puede que el enlace esté mal escrito o que la pieza se haya retirado. La portada de hoy y la hemeroteca siguen ahí.",
         "redactado": "Redactado con IA a partir de las conversaciones de los grupos. Cada dato se comprueba en su fuente original, enlazada al final de cada pieza; las opiniones de los miembros no se atribuyen a nadie.",
-        "licencia": "Textos e ilustraciones con licencia", "deed": "deed.es", "vcer": "Evaluación VCER: Recomendable (100 %), noviembre de 2026", "codigo_enlace": "el repositorio de la redacción",
+        "licencia": "Textos e ilustraciones con licencia", "deed": "deed.es", "reserva_aviso": "Hoy no han podido salir las noticias de los grupos de ayer por un fallo de la redacción del diario. Salen mañana, junto con las de hoy; mientras tanto, un recurso del fondo del repositorio.", "vcer": "Evaluación VCER: Recomendable (100 %), noviembre de 2026", "codigo_enlace": "el repositorio de la redacción",
         "letra": "Letra", "iconos": "Iconos", "traduccion": "",
         "idioma": "Idioma", "secciones_nav": "Secciones", "rss": "RSS",
         "nombre_corto": "Diario IA", "instalar": "Instalar la app",
@@ -95,7 +95,7 @@ IDIOMAS = {
             "reportajes": "Cada domingo, un tema de la semana tratado a fondo: lo que se habló en los grupos, lo que dicen las empresas, las administraciones y los organismos implicados, el marco en España y lo que puede hacer un docente.",
             "breves": "Las noticias que se cuentan en una o dos frases: temas de los grupos que no dan para una pieza entera. Cada breve lleva el enlace a su fuente y a la conversación donde salió, y se puede compartir por separado.",
             "vineta": "Cada día, Tiza y Algoritmo comentan con humor una noticia del número. El guion lo escribe una inteligencia artificial y otra elige el mejor de cinco, o ninguno si ninguno tiene gracia.",
-            "videos": "Vídeos cortos del diario y de sus comunidades. Cada domingo, «La semana en vídeo» repasa lo más destacado de los números de la semana. Los hace un programa con los textos y los dibujos del diario; son sin voz, con música compuesta también por programa, distinta en cada vídeo.",
+            "videos": "Vídeos cortos del diario y de sus comunidades. Cada domingo, «La semana en vídeo» repasa la semana día a día, con lo más destacado de cada número. Los hace un programa con los textos y los dibujos del diario; son sin voz, con música compuesta también por programa, distinta en cada vídeo.",
         },
         "videos": "Vídeos", "semana_video": "La semana en vídeo", "en_pantalla": "Lo que aparece en pantalla",
         "en_instagram": "Verlo en Instagram", "instagram": "Instagram", "sin_videos": "Todavía no hay vídeos.",
@@ -127,7 +127,7 @@ IDIOMAS = {
                 "El traductor prepara la edición en catalán, y el portavoz escribe el mensaje que recibirá cada grupo.",
                 "Un programa monta la web con todo lo anterior y la publica a las 6:55. A las 7:00, el bot de los grupos publica el aviso en cada uno de ellos.",
             ],
-            "proceso_pie": "Cuando un paso falla o una revisión no da algo por bueno, esa parte se queda fuera y el número sale igual. La persona que supervisa la redacción recibe entonces un aviso para revisarlo.",
+            "proceso_pie": "Cuando un paso falla o una revisión no da algo por bueno, esa parte se queda fuera y el número sale igual. No hay ningún día sin número: si falla la redacción entera, sale con un artículo de reserva, escrito y revisado otro día, y las noticias de los grupos de ese día salen al siguiente; si el servidor de la redacción no ha publicado a las 9:10, un vigilante que funciona fuera de él saca el número con esa reserva. La persona que supervisa la redacción recibe un aviso en cada caso.",
             "equipo_titulo": "El equipo",
             "organigrama_alt": "Organigrama de la redacción, en el que los agentes de IA van en cajas rellenas y los mensajes y lo publicado, solo con contorno: cada día, los mensajes de los grupos pasan del redactor al revisor, y los documentos de la Biblioteca digital y los recursos del repositorio, del documentalista al revisor. Del revisor salen dos caminos: el guionista y el juez de humor preparan la viñeta, y el ilustrador dibuja lo que explica cada noticia, con el revisor de dibujos, que le devuelve lo que no se ve bien. Todo acaba en el traductor, y el número sale a las 7:00 con un aviso del portavoz para cada grupo. Los domingos, el jefe de reportajes, el reportero y el verificador preparan el reportaje, que pasa también por el ilustrador, el revisor de dibujos y el traductor y sale dentro del número.",
             "equipo": [
@@ -189,7 +189,7 @@ IDIOMAS = {
         "no_existe": "Aquesta pàgina no existeix",
         "no_existe_txt": "Pot ser que l'enllaç estigui mal escrit o que la peça s'hagi retirat. La portada d'avui i l'hemeroteca continuen aquí.",
         "redactado": "Redactat amb IA a partir de les converses dels grups. Cada dada es comprova a la seva font original, enllaçada al final de cada peça; les opinions dels membres no s'atribueixen a ningú.",
-        "licencia": "Textos i il·lustracions amb llicència", "deed": "deed.ca", "vcer": "Avaluació VCER: Recomanable (100 %), novembre de 2026", "codigo_enlace": "repositori de la redacció",
+        "licencia": "Textos i il·lustracions amb llicència", "deed": "deed.ca", "reserva_aviso": "Avui no han pogut sortir les notícies dels grups d'ahir per una fallada de la redacció del diari. Surten demà, juntament amb les d'avui; mentrestant, un recurs del fons del repositori.", "vcer": "Avaluació VCER: Recomanable (100 %), novembre de 2026", "codigo_enlace": "repositori de la redacció",
         "letra": "Lletra", "iconos": "Icones",
         "traduccion": "Traducció automàtica amb IA de l'edició en castellà (Diario de IA Educativa), sense revisió professional.",
         "idioma": "Idioma", "secciones_nav": "Seccions", "rss": "RSS",
@@ -209,7 +209,7 @@ IDIOMAS = {
             "reportajes": "Cada diumenge, un tema de la setmana tractat a fons: el que es va parlar als grups, el que diuen les empreses, les administracions i els organismes implicats, el marc a Espanya i el que pot fer un docent.",
             "breves": "Les notícies que s'expliquen en una o dues frases: temes dels grups que no donen per a una peça sencera. Cada breu porta l'enllaç a la font i a la conversa on va sortir, i es pot compartir per separat.",
             "vineta": "Cada dia, Guix i Algorisme comenten amb humor una notícia del número. El guió l'escriu una intel·ligència artificial i una altra tria el millor de cinc, o cap si cap no té gràcia.",
-            "videos": "Vídeos curts del diari i de les seves comunitats. Cada diumenge, «La setmana en vídeo» repassa el més destacat dels números de la setmana. Els fa un programa amb els textos i els dibuixos del diari; són sense veu, amb música composta també per programa, diferent en cada vídeo.",
+            "videos": "Vídeos curts del diari i de les seves comunitats. Cada diumenge, «La setmana en vídeo» repassa la setmana dia a dia, amb el més destacat de cada número. Els fa un programa amb els textos i els dibuixos del diari; són sense veu, amb música composta també per programa, diferent en cada vídeo.",
         },
         "videos": "Vídeos", "semana_video": "La setmana en vídeo", "en_pantalla": "El que apareix a la pantalla",
         "en_instagram": "Mira'l a Instagram", "instagram": "Instagram", "sin_videos": "Encara no hi ha vídeos.",
@@ -241,7 +241,7 @@ IDIOMAS = {
                 "El traductor prepara l'edició en català, i el portaveu escriu el missatge que rebrà cada grup.",
                 "Un programa munta el web amb tot l'anterior i el publica a les 6.55. A les 7.00, el bot dels grups publica l'avís a cadascun.",
             ],
-            "proceso_pie": "Quan un pas falla o una revisió no dona alguna cosa per bona, aquella part es queda fora i el número surt igualment. La persona que supervisa la redacció rep llavors un avís per revisar-ho.",
+            "proceso_pie": "Quan un pas falla o una revisió no dona alguna cosa per bona, aquella part es queda fora i el número surt igualment. No hi ha cap dia sense número: si falla la redacció sencera, surt amb un article de reserva, escrit i revisat un altre dia, i les notícies dels grups d'aquell dia surten l'endemà; si el servidor de la redacció no ha publicat a les 9.10, un vigilant que funciona fora d'ell treu el número amb aquesta reserva. La persona que supervisa la redacció rep un avís en cada cas.",
             "equipo_titulo": "L'equip",
             "organigrama_alt": "Organigrama de la redacció, en què els agents d'IA van en caixes plenes i els missatges i el que es publica, només amb contorn: cada dia, els missatges dels grups passen del redactor al revisor, i els documents de la Biblioteca digital i els recursos del repositori, del documentalista al revisor. Del revisor surten dos camins: el guionista i el jutge d'humor preparen la vinyeta, i l'il·lustrador dibuixa el que explica cada notícia, amb el revisor de dibuixos, que li torna el que no es veu bé. Tot acaba al traductor, i el número surt a les 7.00 amb un avís del portaveu per a cada grup. Els diumenges, el cap de reportatges, el reporter i el verificador preparen el reportatge, que passa també per l'il·lustrador, el revisor de dibuixos i el traductor i surt dins del número.",
             "equipo": [
@@ -428,7 +428,7 @@ def cargar():
         f = RAIZ / "ediciones" / nombre
         d = json.loads(con_traduccion("ediciones", nombre).read_text()) if f.exists() else {}
         if not (d.get("hay_edicion") and d.get("piezas")):
-            d = {"fecha": nombre[:-5], "hay_edicion": True, "piezas": [], "breves": []}
+            d = {"fecha": nombre[:-5], "hay_edicion": True, "piezas": [], "breves": [], "reserva": d.get("reserva")}
         if (RAIZ / "biblioteca" / nombre).exists():   # los artículos de la Biblioteca digital (ADR 0006)
             bib = json.loads(con_traduccion("biblioteca", nombre).read_text()).get("piezas", [])
             for x in bib:   # todos llevan dibujo: salen como destacados, marque lo que marque el agente
@@ -886,6 +886,14 @@ def bloque_vineta(prof, eds, fecha, en_archivo=False):
 </section>"""
 
 
+def franja_reserva(d):
+    """El día que la redacción falló y el número salió con una pieza de reserva (ADR 0021): qué ha
+    pasado y que lo de ayer sale mañana. Solo si fue un fallo; un día sin nada que contar, nada."""
+    if d.get("reserva") not in ("fallo", True):
+        return ""
+    return f'<p class="aviso-reserva" role="note">{L["reserva_aviso"]}</p>'
+
+
 def franja_editorial(prof, d):
     """«Desde la redacción»: a todo el ancho bajo la barra de secciones, el día que la hay (el número 1)."""
     ed = d.get("editorial")
@@ -941,6 +949,7 @@ def pagina_portada(prof, ruta, eds, piezas, breves, fecha, cuenta, es_portada, n
     return cabeza(titulo, prof, L["lema"], ruta, portada=es_portada) + f"""<body class="pag-portada">
 {cabecera(prof, ruta, fecha, cuenta, es_portada, nav, h1=True if es_portada else "dia", activa="portada" if es_portada else None)}
 <main class="portada">
+{franja_reserva(dia)}
 {franja_editorial(prof, dia)}
 {franja_reportaje(prof, rep) if arriba else ""}
 {cuerpo_portada(prof, piezas, breves, es_portada, bloque_vineta(prof, eds, fecha) + bloque_semana_video(prof, eds, fecha) + ("" if arriba else franja_reportaje(prof, rep)))}

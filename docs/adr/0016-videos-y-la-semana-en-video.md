@@ -17,11 +17,18 @@ compuesta por programa, que gustó a los dos. Juanjo también pidió que la mús
 Recomendado y aceptado por Juanjo el 05-11-2026 («hazlo así»):
 
 - **«La semana en vídeo», cada domingo.** La noche del sábado, después de la traducción,
-  `scripts/reel-semana.sh` lanza un agente (Sonnet, paso 19, `encargos/reel.md`) que elige de 4 a
-  6 piezas de los números de la semana y escribe, en castellano y catalán, un golpe, un titular
+  `scripts/reel-semana.sh` lanza un agente (Sonnet, paso 19, `encargos/reel.md`) que elige las
+  piezas de la semana y escribe, en castellano y catalán, un golpe, un titular
   corto y un dato por pieza, una descripción para la web y el texto para Instagram. Después
   `scripts/reel-semana.py` monta el vídeo **sin IA**: página animada con los dibujos y los colores
-  del diario → fotogramas con Chromium de Playwright → MP4 con ffmpeg. Si un texto no cabe, el
+  del diario → fotogramas con Chromium de Playwright → MP4 con ffmpeg.
+- **Un resumen de verdad, día a día** (05-11-2026, Juanjo: «si hablamos de un resumen, tiene que
+  serlo de verdad, no trozos sueltos; en cuanto a la duración se puede alargar»). Al principio
+  eran de 4 a 6 piezas, unos 40 s. Ahora va como mínimo una pieza de cada número de la semana,
+  la más interesante de ese día, y hasta 10 en total si algún día tuvo varias; en orden de días y
+  con el día en que salió cada una («Lunes 2») en su cabecera, delante del grupo (que se quita
+  si no cabe). `reel-semana.py` rechaza el guion si falta algún número y el agente lo rehace.
+  Cada pieza dura tres compases: con 7 piezas, de 48 a 62 s según el tempo; con 10, de 65 a 83 s. Si un texto no cabe, el
   agente lo rehace una vez; si sigue sin caber, esa semana no hay reel y el número sale igual.
 - **Música distinta en cada vídeo** (`scripts/musica.py`, numpy, sin licencias de terceros): cada
   vídeo combina tempo, tonalidad, modo, progresión, patrón de batería, timbre y arpegio; la
@@ -29,8 +36,8 @@ Recomendado y aceptado por Juanjo el 05-11-2026 («hazlo así»):
   estilo guardado en cada `videos/*.json` y el del primer reel), y tempo, tonalidad y batería
   cambian respecto al anterior.
 - **En la web, alojados en el propio sitio y no incrustados desde Instagram**, que metería los
-  rastreadores de Meta. Versión de 720 × 1280 (unos 1,3 MB por vídeo e idioma, unos 140 MB al año
-  con los dos idiomas). `videos/<id>.json` guarda el título, la descripción, lo que dice en
+  rastreadores de Meta. Versión de 720 × 1280 (unos 1,3 MB por cada 40 s de vídeo e idioma: de
+  1,6 a 2,7 MB por vídeo semanal, y de 170 a 280 MB al año con los dos idiomas). `videos/<id>.json` guarda el título, la descripción, lo que dice en
   pantalla (para quien no puede ver el vídeo), los archivos por idioma, el enlace de Instagram y
   el estilo de la música; `generar.py` copia `videos/*.mp4|jpg` al sitio.
   - Página **«Vídeos»** (`videos.html`), con todos, cada uno con su ancla para compartirlo,
@@ -71,8 +78,8 @@ Recomendado y aceptado por Juanjo el 05-11-2026 («hazlo así»):
 
 ## Riesgos y limitaciones
 
-- El agente podría elegir piezas poco representativas: el encargo pide variedad de secciones y
-  grupos, y Juanjo lo verá el domingo.
+- El agente podría elegir, de cada día, una pieza poco representativa: el encargo pide la que
+  más interesa a un docente cualquiera, y Juanjo lo verá el domingo.
 - Si Instagram tarda más de 10 minutos en procesar el vídeo, no se publica y se avisa.
 
 ## Validación

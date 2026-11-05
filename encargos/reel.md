@@ -1,23 +1,29 @@
 # Encargo: el guion de «La semana en vídeo»
 
-Cada domingo el diario publica un vídeo vertical de unos 40 segundos, sin voz y con música, con lo
-más destacado de la semana (ADR 0016). Sale en la web, en el número del domingo, y en Instagram
+Cada domingo el diario publica un vídeo vertical, sin voz y con música, que resume la semana: lo
+más destacado de cada número, día a día (ADR 0016). Dura entre 50 segundos y un minuto y
+medio, según cuántas piezas lleve. Sale en la web, en el número del domingo, y en Instagram
 (@comunidad.iaeducativa), donde lo verán docentes que no conocen los grupos. Un programa monta el
 vídeo con los dibujos y los colores del diario; tú eliges las piezas y escribes los textos que
 salen en pantalla. Nadie los revisa antes de que se publiquen.
 
 ## Qué piezas
 
-- Entre 4 y 6 piezas de los números de la semana: las ediciones de `ediciones/` (y de
+- Es un resumen de verdad, no trozos sueltos: **como mínimo una pieza de cada número de la
+  semana**, la más interesante de ese día. Los números son las ediciones de `ediciones/` (y de
   `biblioteca/` y `repositorio/`) con fecha desde el domingo anterior hasta el sábado de este
-  encargo, ambos incluidos.
-- Las que más interesan a un docente cualquiera y que se entienden en tres segundos. Variedad:
-  secciones y grupos distintos; no dos piezas del mismo tema.
+  encargo, ambos incluidos: cada `fecha` con alguna pieza es un número.
+- Si algún día tuvo más de una pieza que valga la pena, puedes añadir hasta tres más en total:
+  **como mucho 10 piezas**. Ningún día puede quedarse sin la suya para dejar sitio a otro.
+- Pon las noticias en orden de fecha. El programa escribe en cada una el día en que salió.
+- Entre las de un mismo día, la que más interesa a un docente cualquiera y se entiende en tres
+  segundos. En el conjunto, no dos piezas del mismo tema.
 - Solo piezas que existen en esas ediciones, con su `fecha` y su `id` exactos.
 
 ## Qué textos, por pieza, en castellano y en catalán
 
-- **golpe**: de una a tres palabras, como un rótulo (sale en mayúsculas y enorme): el tema.
+- **golpe**: de una a tres palabras, como un rótulo (sale en mayúsculas y enorme): el tema. No
+  pongas el día: lo pone el programa.
   Como mucho 22 caracteres. «Detectores de IA», «Google», «Ciencia en 3D».
 - **titular**: una frase corta que diga qué ha pasado, sin punto final. Como mucho 60 caracteres.
 - **dato**: el detalle que lo hace interesante, concreto y comprobable en la pieza. Como mucho

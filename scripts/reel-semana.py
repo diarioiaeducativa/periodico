@@ -5,8 +5,9 @@
     scripts/reel-semana.py AAAA-MM-DD [--prueba]
 
 AAAA-MM-DD es la fecha de las conversaciones del sábado, la del número que sale el domingo. Lee el
-guion que escribe el agente (reels/<fecha>.json: de 4 a 6 piezas de la semana con su golpe, su
-titular corto y su dato, en castellano y catalán, y el texto para Instagram) y hace, sin IA:
+guion que escribe el agente (reels/<fecha>.json: como mínimo una pieza de cada número de la semana y
+como mucho MAX_PIEZAS, con su golpe, su titular corto y su dato, en castellano y catalán, y el texto
+para Instagram) y hace, sin IA, un vídeo con las piezas en orden y el día en que salió cada una:
 
 - videos/<domingo>-semana-<es|ca>.mp4 (720 × 1280) y su portada .jpg, para la web, y
   videos/<domingo>-semana.json con lo que dice en pantalla y el estilo de la música;
@@ -38,6 +39,7 @@ import vineta  # noqa: E402
 FPS = 30
 ANCHO, ALTO = 1080, 1920
 C_INTRO, C_NOT, C_CIERRE = 2, 3, 2
+MAX_PIEZAS = 10    # una por número de la semana (7) y hasta tres más de los días con más (05-11-2026)
 e = html.escape
 TXT = {
     "es": {"la": "la", "semana": "semana", "sub": "Lo más destacado del Diario de IA Educativa",
@@ -77,6 +79,12 @@ def etiqueta_semana(publica, codigo):
     return f"{ini.day} {m(ini)} – {fin.day} {m(fin)} {fin.year}"
 
 
+def dia_de(fecha, codigo):
+    """El día en que salió el número de esas conversaciones, como lo ve el lector: «Lunes 2»."""
+    d = datetime.date.fromisoformat(generar.publicacion(fecha))
+    return f'{generar.IDIOMAS[codigo]["dias"][d.weekday()].capitalize()} {d.day}'
+
+
 def pagina(codigo, guion, piezas, estilo, semana):
     generar.L = generar.IDIOMAS[codigo]
     L, T = generar.L, TXT[codigo]
@@ -92,7 +100,7 @@ def pagina(codigo, guion, piezas, estilo, semana):
         grupo = generar.GRUPOS.get(p.get("grupo"), (p.get("grupo") or "",))[0]
         bloques.append(f"""<section class="noticia sec-{e(p.get("seccion") or "")}" id="n{k}">
   <div class="banda"></div>
-  <div class="cab"><span class="chip">{generar.icono(p.get("seccion"))} {e(L["secciones"].get(p.get("seccion"), ""))}</span><span class="grupo">{e(grupo)}</span></div>
+  <div class="cab"><span class="chip">{generar.icono(p.get("seccion"))} {e(L["secciones"].get(p.get("seccion"), ""))}</span><span class="grupo"><b class="dia">{e(dia_de(d["fecha"], codigo))}</b><span class="g-nombre"> · {e(grupo)}</span></span></div>
   <h2 class="golpe">{palabras(g["golpe"][codigo])}</h2>
   <p class="titular-v">{palabras(g["titular"][codigo])}</p>
   <figure class="ilu tarjeta">{og.dibujo(d, p)}</figure>
@@ -124,6 +132,7 @@ html,body{{margin:0;width:{ANCHO}px;height:{ALTO}px;overflow:hidden;background:v
 .chip{{display:inline-flex;align-items:center;gap:12px;padding:10px 24px 10px 18px;background:rgba(255,255,255,.18);border:2px solid rgba(255,255,255,.7);font-size:32px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap}}
 .chip .ico{{width:36px;height:36px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}}
 .grupo{{font-size:34px;font-style:italic;white-space:nowrap}}
+.grupo .dia{{font-style:normal;font-weight:800;letter-spacing:.02em}}
 .golpe{{position:absolute;left:64px;right:150px;top:300px;margin:0;color:#fff;font-size:150px;line-height:.92;font-weight:800;letter-spacing:-.03em;text-transform:uppercase;transform-origin:left top;font-variation-settings:"opsz" 72}}
 .titular-v{{position:absolute;left:64px;right:150px;top:760px;margin:0;font-size:80px;line-height:1.04;font-weight:800;letter-spacing:-.015em;text-wrap:balance;font-variation-settings:"opsz" 72}}
 .tarjeta{{position:absolute;left:90px;right:170px;top:1040px;height:440px;margin:0;padding:24px;background:var(--sec-tinte,var(--papel-2));border-radius:14px;box-shadow:0 20px 50px rgba(0,0,0,.12);display:flex;align-items:center;justify-content:center;overflow:hidden}}
@@ -168,6 +177,8 @@ $$('.noticia').forEach(n => {{ n.style.visibility = 'visible';
   ajusta(g, 150, 70, () => anchos(g) && g.offsetHeight <= parseFloat(g.style.fontSize) * 1.95);
   ajusta(t, 80, 50, () => anchos(t) && t.offsetTop + t.offsetHeight <= 1010);
   ajusta(d, 46, 32, () => d.offsetTop + d.offsetHeight <= 1700);
+  // Si la cabecera no cabe, se queda el día y se quita el nombre del grupo
+  if (c.scrollWidth > c.clientWidth + 1) {{ const gn = $('.g-nombre', n); if (gn) gn.remove(); }}
   if (c.scrollWidth > c.clientWidth + 1) window.desbordes.push('cabecera: ' + c.textContent.trim());
   n.style.visibility = ''; }});
 const sg = $('.semana-g'); if (sg.scrollWidth > {ANCHO} - 52) {{ let fs = 240; while (sg.scrollWidth > {ANCHO} - 80 && fs > 150) {{ fs -= 6; sg.style.fontSize = fs + 'px'; }} }}
@@ -221,9 +232,17 @@ document.fonts.ready.then(montar);
 </script></body></html>"""
 
 
-def validar(guion, eds):
-    if not 4 <= len(guion.get("noticias", [])) <= 6:
-        raise ValueError("el guion ha de tener de 4 a 6 noticias")
+def validar(guion, eds, fecha):
+    """Un resumen de verdad: al menos una pieza de cada número de la semana, en orden de días."""
+    desde = (datetime.date.fromisoformat(fecha) - datetime.timedelta(days=6)).isoformat()
+    dias = sorted({d["fecha"] for d in eds if desde <= d["fecha"] <= fecha and d["piezas"]})
+    noticias = guion.get("noticias", [])
+    if not len(dias) <= len(noticias) <= MAX_PIEZAS:
+        raise ValueError(f"el guion ha de tener de {len(dias)} a {MAX_PIEZAS} noticias: una por número de la semana como mínimo")
+    faltan = [x for x in dias if x not in {g.get("fecha") for g in noticias}]
+    if faltan:
+        raise ValueError("falta una pieza de cada uno de estos números: " + ", ".join(faltan))
+    noticias.sort(key=lambda g: g.get("fecha", ""))   # en orden de días; dentro de un día, como las eligió
     por_id = {(d["fecha"], p["id"]): (d, p) for d in eds for p in d["piezas"]}
     piezas = []
     for g in guion["noticias"]:
@@ -254,7 +273,7 @@ def main():
     generar.L = generar.IDIOMAS["es"]
     eds = generar.cargar()
     guion = json.loads((RAIZ / "reels" / f"{fecha}.json").read_text())
-    piezas = validar(guion, eds)
+    piezas = validar(guion, eds, fecha)
     vid = f"{publica}-semana"
     previo = RAIZ / "videos" / f"{vid}.json"
     estilo = json.loads(previo.read_text())["estilo"] if previo.exists() else \
@@ -324,7 +343,7 @@ def main():
         "titulo": {c: f'{TXT[c]["titulo"]}: {etiqueta_semana(publica, c)}' for c in ("es", "ca")},
         "descripcion": guion.get("descripcion") or {c: TXT[c]["sub"] for c in ("es", "ca")},
         "pantalla": {c: [f'{TXT[c]["la"].capitalize()} {TXT[c]["semana"]}. {TXT[c]["sub"]}. {etiqueta_semana(publica, c)}.']
-                     + [f'{g["golpe"][c]}. {g["titular"][c]}. {g["dato"][c]}' for g in guion["noticias"]]
+                     + [f'{dia_de(g["fecha"], c)}. {g["golpe"][c]}. {g["titular"][c]}. {g["dato"][c]}' for g in guion["noticias"]]
                      + [f'{TXT[c]["todo"]}. diarioiaeducativa.github.io. {TXT[c]["hora"]}.'] for c in ("es", "ca")},
         "archivos": {c: {"video": f"{vid}-{c}.mp4", "poster": f"{vid}-{c}.jpg"} for c in ("es", "ca")},
         "piezas": [{"fecha": g["fecha"], "id": g["id"]} for g in guion["noticias"]],

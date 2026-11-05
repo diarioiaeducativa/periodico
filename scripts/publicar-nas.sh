@@ -36,7 +36,10 @@ rsync -a --delete --exclude .git --exclude README.md --exclude LICENSE --exclude
 git -C "$SITIO" add -A
 if ! git -C "$SITIO" diff --cached --quiet; then
   git -C "$SITIO" commit -qm "Número del $PUBLICA" &&
-  git -C "$SITIO" notes --ref=ia add -f -m "$NOTA" HEAD &&
+  git -C "$SITIO" notes --ref=ia add -f -m "$NOTA" HEAD || { log "ERROR: no se pudo preparar el commit del sitio"; exit 1; }
+fi
+# Se sube también lo que un intento anterior dejó sin subir (reintentos de reloj.sh, ADR 0021)
+if [ -n "$(git -C "$SITIO" rev-list '@{u}..HEAD' 2>/dev/null)" ]; then
   git -C "$SITIO" push -q && git -C "$SITIO" push -q origin refs/notes/ia ||
     { log "ERROR: no se pudo subir el sitio"; exit 1; }
   log "sitio publicado: $(git -C "$SITIO" log --oneline -1)"
@@ -57,12 +60,15 @@ else
 fi
 
 # Lo escrito por los agentes, al repositorio de la redacción (los mensajes de dias/ no se suben).
-git add -A og/numeros videos reels ediciones ediciones-ca ilustraciones ilustraciones-ca vinetas vinetas-ca avisos publicado.txt $(ls -d reportajes reportajes-ca biblioteca biblioteca-ca repositorio repositorio-ca 2>/dev/null)
+git add -A og/numeros videos reels ediciones ediciones-ca ilustraciones ilustraciones-ca vinetas vinetas-ca avisos publicado.txt $(ls -d reportajes reportajes-ca biblioteca biblioteca-ca repositorio repositorio-ca reserva 2>/dev/null)
 if ! git diff --cached --quiet; then
-  # Si desde el portátil se ha subido código mientras tanto, se coloca encima antes de subir.
-  # La nota va después del rebase, que cambia el identificador del commit.
-  git commit -qm "Número del $PUBLICA" && git pull -q --rebase &&
-  git notes --ref=ia add -f -m "$NOTA" HEAD && git push -q && git push -q origin refs/notes/ia ||
+  git commit -qm "Número del $PUBLICA" || log "AVISO: no se pudo preparar el commit de la redacción"
+fi
+# Si desde el portátil se ha subido código mientras tanto, se coloca encima antes de subir. La nota
+# va después del rebase, que cambia el identificador del commit. Sube también lo que un intento
+# anterior dejó sin subir.
+if [ -n "$(git rev-list '@{u}..HEAD' 2>/dev/null)" ]; then
+  git pull -q --rebase && git notes --ref=ia add -f -m "$NOTA" HEAD && git push -q && git push -q origin refs/notes/ia ||
     log "AVISO: no se pudo subir la redacción a GitHub"
 fi
 touch "estado/$FECHA.publicado"

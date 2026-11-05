@@ -4,8 +4,11 @@
 #
 #   desde la 1:00   preparar el número con las conversaciones de ayer (scripts/noche.sh),
 #                   dos intentos como mucho
-#   a las 6:30      si no está listo, avisar a Juanjo por Telegram
-#   desde las 6:55  publicarlo (scripts/publicar-nas.sh); si se prepara tarde, en cuanto esté
+#   plan B          si los dos intentos fallan, o a las 6:30 si aún no está, para la redacción y
+#                   saca el número con una pieza de reserva (scripts/reserva.py, ADR 0021), y avisa
+#   desde las 6:55  publicarlo (scripts/publicar-nas.sh); si se prepara tarde, en cuanto esté;
+#                   si falla, otra vez cada 10 minutos hasta las 9:00 (ADR 0021)
+#   desde las 8:00  si faltan piezas de reserva, escribir una (scripts/reserva.sh)
 #   desde las 7:05  publicarlo en Instagram (scripts/instagram.py publicar), un solo intento (ADR 0015)
 #   a las 12:00     renovar el permiso de Instagram si tiene más de 7 días y comprobar que vale
 #   el domingo, desde las 12:00, publicar en Instagram «La semana en vídeo» (ADR 0016), un solo intento
@@ -26,22 +29,52 @@ while true; do
     if [ "$intentos" -lt 2 ]; then
       echo $((intentos + 1)) > "$E.intentos"
       touch "$E.en-marcha"
-      ( timeout 5h scripts/noche.sh "$F"; rm -f "$E.en-marcha" ) &
+      # En un grupo de procesos propio (setsid), para poder pararlo entero con sus agentes; en
+      # en-marcha queda su número
+      ( setsid timeout 5h scripts/noche.sh "$F" & echo $! > "$E.en-marcha"; wait $!; rm -f "$E.en-marcha" ) &
     fi
   fi
-  if [ "$m" -ge 390 ] && [ ! -e "$E.listo" ] && [ ! -e "$E.sin-numero" ] && [ ! -e "$E.avisado" ]; then
+  # Plan B (ADR 0021): no puede haber ningún día sin número. Si los dos intentos han fallado, o a
+  # las 6:30 si aún no está, se para la redacción y sale lo que haya o una pieza de reserva.
+  intentos=$(cat "$E.intentos" 2>/dev/null || echo 0)
+  if [ "$m" -ge 60 ] && [ ! -e "$E.listo" ] && [ ! -e "$E.sin-numero" ] && [ ! -e "$E.avisado" ] \
+     && { [ "$m" -ge 390 ] || { [ "$intentos" -ge 2 ] && [ ! -e "$E.en-marcha" ]; }; }; then
     touch "$E.avisado"
-    avisar "El número de hoy no está listo a las 6:30 ($(cat "$E.intentos" 2>/dev/null || echo 0) intentos). Registro: /volume1/docker/diario-ia-educativa/repo/registro/$F.log"
+    if [ -e "$E.en-marcha" ]; then
+      pg=$(cat "$E.en-marcha")
+      [ -n "$pg" ] && { kill -TERM -- "-$pg" 2>/dev/null; sleep 10; kill -KILL -- "-$pg" 2>/dev/null; }
+      rm -f "$E.en-marcha"
+    fi
+    python3 scripts/reserva.py usar "$F" fallo >> "registro/$F.log" 2>&1
+    case $? in
+      0) touch "$E.listo"
+         avisar "La redacción no ha podido preparar el número de hoy ($intentos intentos): sale con una pieza de reserva, y las noticias de ayer salen mañana. Registro: /volume1/docker/diario-ia-educativa/repo/registro/$F.log" ;;
+      4) touch "$E.listo"
+         avisar "La redacción se ha atascado después del repaso ($intentos intentos): el número sale con lo que estaba hecho. Registro: /volume1/docker/diario-ia-educativa/repo/registro/$F.log" ;;
+      *) avisar "Hoy no hay número: la redacción ha fallado ($intentos intentos) y no queda ninguna pieza de reserva. Registro: /volume1/docker/diario-ia-educativa/repo/registro/$F.log" ;;
+    esac
   fi
-  if [ "$m" -ge 415 ] && [ -e "$E.listo" ] && [ ! -e "$E.publicado" ] && [ ! -e "$E.publicando" ]; then
+  # Publicar: a las 6:55 y, si falla, cada 10 minutos hasta las 9:00 (ADR 0021)
+  if [ "$m" -ge 415 ] && [ -e "$E.listo" ] && [ ! -e "$E.publicado" ] && [ ! -e "$E.publicando" ] \
+     && [ "$m" -ge $(( $(cat "$E.publicar-fallo" 2>/dev/null || echo -100) + 10 )) ]; then
     touch "$E.publicando"
     if scripts/publicar-nas.sh "$F"; then
-      [ -e "$E.avisado" ] && avisar "Ya está: el número de hoy se ha publicado, con retraso."
+      [ -e "$E.publicar-fallo" ] && avisar "Ya está: el número de hoy se ha publicado, con retraso."
+    elif [ "$m" -ge 540 ]; then
+      avisar "No se ha podido publicar el número de hoy: lo he intentado desde las 6:55 hasta las 9:00. Queda a mano. Registro: /volume1/docker/diario-ia-educativa/repo/registro/$F.log"
+      touch "$E.publicado"
     else
-      avisar "No se ha podido publicar el número de hoy. Registro: /volume1/docker/diario-ia-educativa/repo/registro/$F.log"
-      touch "$E.publicado"   # un solo intento automático: el resto, a mano
+      [ -e "$E.publicar-fallo" ] || avisar "No se ha podido publicar el número de hoy a su hora: lo reintento cada 10 minutos hasta las 9:00. Registro: /volume1/docker/diario-ia-educativa/repo/registro/$F.log"
+      echo "$m" > "$E.publicar-fallo"
     fi
     rm -f "$E.publicando"
+  fi
+  # La reserva (ADR 0021): con el número ya publicado, una pieza más si faltan. Una vez al día.
+  R=estado/reserva-$(date +%F)
+  if [ "$m" -ge 480 ] && [ -e "$E.publicado" ] && [ ! -e "$R" ]; then
+    touch "$R"
+    ( scripts/reserva.sh >/dev/null 2>&1
+      [ "$(python3 scripts/reserva.py cuantas)" -gt 0 ] || avisar "No queda ninguna pieza de reserva del diario y hoy no se ha podido escribir otra. Registro: /volume1/docker/diario-ia-educativa/repo/registro/reserva-$(date +%F).log" ) &
   fi
   # Instagram (ADR 0015): solo si el número salió y hay permiso guardado. Un intento: si falla, a mano.
   if [ "$m" -ge 425 ] && [ -e "$E.publicado" ] && [ -d "instagram/$F" ] && [ -e "$HOME/.config/diario-instagram.json" ] \

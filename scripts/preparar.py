@@ -6,9 +6,12 @@
 
 Lee <datos>/<grupo>/mensajes.jsonl y temas.json (los que guarda el Bot de IA Educativa) y
 escribe <salida>/<fecha>.md con los mensajes de ese día y, como contexto, los del anterior.
+Con RECUPERA=1 (el número del día anterior salió con la reserva, ADR 0021), los del anterior no
+son contexto sino noticia, como los del día: así no se pierde ninguno.
 Sin IA: solo ordena. Termina con código 3 si el día no tiene ningún mensaje en ningún grupo.
 """
 import datetime
+import os
 import json
 import pathlib
 import sys
@@ -53,8 +56,13 @@ def main():
             hoy = [m for m in msgs[g] if m["fecha"].startswith(dia)]
             prev = [m for m in msgs[g] if m["fecha"].startswith(ant)]
             total += len(hoy)
-            partes.append(f"\n## Grupo {nom} ({url}) — clave {g}\n\n### Contexto: día anterior ({ant}), "
-                          f"{len(prev)} mensajes (solo para entender hilos; no es noticia de hoy)\n")
+            if os.environ.get("RECUPERA") == "1":
+                total += len(prev)
+                partes.append(f"\n## Grupo {nom} ({url}) — clave {g}\n\n### RECUPERADO: día anterior ({ant}), "
+                              f"{len(prev)} mensajes (su número salió con la reserva: es noticia como los de hoy)\n")
+            else:
+                partes.append(f"\n## Grupo {nom} ({url}) — clave {g}\n\n### Contexto: día anterior ({ant}), "
+                              f"{len(prev)} mensajes (solo para entender hilos; no es noticia de hoy)\n")
             partes += [fmt(m) for m in prev]
             partes.append(f"\n### DÍA {dia}: {len(hoy)} mensajes\n")
             partes += [fmt(m) for m in hoy]

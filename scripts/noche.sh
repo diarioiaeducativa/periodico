@@ -56,12 +56,17 @@ agente() {
 json_ok() { python3 -c 'import json,sys; json.load(open(sys.argv[1]))' "$1" 2>/dev/null; }
 
 # Un día sin piezas de la redacción: si entró un documento en la Biblioteca digital (ADR 0006) o
-# toca un recurso del repositorio (ADR 0008), eso es el número del día. Si no, no hay número.
+# toca un recurso del repositorio (ADR 0008), eso es el número del día. Si tampoco sale nada de
+# ahí, una pieza de reserva (ADR 0021): no puede haber ningún día sin número.
 solo_anexos() {
   local hay=0
   python3 scripts/publicado.py >> "$REG" 2>&1
   bash scripts/biblioteca.sh "$FECHA" && hay=1
   bash scripts/repositorio.sh "$FECHA" && hay=1
+  if [ $hay = 0 ] && python3 scripts/reserva.py usar "$FECHA" relleno >> "$REG" 2>&1; then
+    log "sin piezas propias: sale la pieza de reserva"
+    hay=1
+  fi
   if [ $hay = 1 ]; then
     agente "$SONNET" 6-avisos 20
     revisar_dibujos_ca
@@ -71,6 +76,8 @@ solo_anexos() {
     log "listo: número del $PUBLICA, sin piezas de la redacción"
     exit 0
   fi
+  log "ERROR: ni piezas, ni repositorio, ni reserva: hoy no hay número"
+  avisar-juanjo --de "Diario de IA Educativa" "Hoy no hay número: no había nada que contar, no ha salido nada del repositorio y no queda ninguna pieza de reserva. Registro: /volume1/docker/diario-ia-educativa/repo/registro/$FECHA.log" >> "$REG" 2>&1
   touch "estado/$FECHA.sin-numero"
   exit 0
 }
@@ -96,7 +103,11 @@ if git ls-files --error-unmatch "ediciones/$FECHA.json" >/dev/null 2>&1 && [ "${
 fi
 rm -f "estado/$FECHA.listo" "estado/$FECHA.sin-numero"
 
-python3 scripts/preparar.py "$DATOS" dias "$FECHA" >> "$REG" 2>&1
+# Si el número de ayer salió con la reserva porque la redacción falló, sus conversaciones se cuentan hoy (ADR 0021)
+ANT=$(date -d "$FECHA - 1 day" +%F)
+RECUPERA=$(python3 -c 'import json,sys; print(1 if json.load(open(sys.argv[1])).get("reserva") in ("fallo", True) else 0)' "ediciones/$ANT.json" 2>/dev/null || echo 0)
+[ "$RECUPERA" = 1 ] && log "el número de ayer salió con la reserva: hoy se cuentan también sus conversaciones"
+RECUPERA=$RECUPERA python3 scripts/preparar.py "$DATOS" dias "$FECHA" >> "$REG" 2>&1
 case $? in
   0) ;;
   3) log "ningún mensaje en ningún grupo"

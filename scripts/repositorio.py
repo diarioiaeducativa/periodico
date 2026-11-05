@@ -117,7 +117,8 @@ def contados():
                  [json.dumps(b, ensure_ascii=False) for b in d.get("breves", [])]
         for t in textos:
             hechos.update(norm(u) for u in re.findall(r"https?://[^\s\"')\]]+", t))
-    for f in sorted((RAIZ / "repositorio").glob("*.json")):
+    # También lo que espera en la reserva (ADR 0021): ni sale otra vez del fondo ni se repite
+    for f in sorted((RAIZ / "repositorio").glob("*.json")) + sorted((RAIZ / "reserva").glob("*/repositorio.json")):
         d = json.loads(f.read_text())
         for p in d.get("piezas", []):
             hechos.update(norm(x.get("url")) for x in p.get("recursos", []))

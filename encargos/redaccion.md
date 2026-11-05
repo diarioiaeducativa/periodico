@@ -15,6 +15,11 @@ Lo que escribes se publica a las 7:00 sin que nadie lo revise antes: el repaso e
 del día anterior (solo para entender hilos; lo del día anterior no es noticia salvo que
 el día FECHA aporte algo nuevo).
 
+Si el bloque del día anterior se titula **«RECUPERADO»**, el número de ese día salió con una
+pieza de reserva porque la redacción falló, y sus conversaciones no se contaron: son noticia
+igual que las del día FECHA. Cuenta los dos días en este número; la fecha de las piezas sigue
+siendo la de hoy.
+
 ## Qué es noticia
 
 - Lo que interesa a alguien de fuera: herramientas o modelos nuevos y su utilidad en el

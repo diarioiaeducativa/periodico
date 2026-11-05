@@ -1,0 +1,39 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+# El vigilante de fuera de casa (ADR 0021): si a partir de las 9:10 de Madrid el número de hoy no
+# está en la web, lo saca con una pieza de reserva (scripts/vigilante.sh). Las horas van en UTC:
+# 7:10 y 8:10 UTC son las 9:10 en verano y en invierno; la otra pasada, una hora después, comprueba
+# que ya está o lo intenta otra vez. El script no hace nada fuera de 9:10-12:00 de Madrid.
+name: Vigilante del número de hoy
+
+on:
+  schedule:
+    - cron: "10 7,8,9 * * *"
+  workflow_dispatch:
+    inputs:
+      simular:
+        description: "Simular: montar el número con la reserva sin subir nada ni avisar"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: vigilante
+  cancel-in-progress: false
+
+jobs:
+  vigilar:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Pagefind
+        run: pip install --break-system-packages 'pagefind[bin]==1.6.0'
+      - name: Comprobar el número de hoy y, si falta, sacarlo con la reserva
+        env:
+          SIMULAR: ${{ github.event_name == 'workflow_dispatch' && inputs.simular && '1' || '0' }}
+          SITIO_KEY: ${{ secrets.SITIO_KEY }}
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CHAT: ${{ secrets.TELEGRAM_CHAT }}
+        run: bash scripts/vigilante.sh
