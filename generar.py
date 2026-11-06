@@ -342,7 +342,7 @@ def romano(n):
 
 
 def anyo_edicion(iso_publicacion):
-    """«Año I» cuenta desde el año del número 1, como en la cabecera clásica de un periódico."""
+    """«Año I» cuenta desde el año del número 1, como en la cabecera clásica de un periódico (en inglés, «Vol. I»)."""
     primero = datetime.date.fromisoformat(publicacion(LANZAMIENTO)).year
     return romano(datetime.date.fromisoformat(iso_publicacion).year - primero + 1)
 

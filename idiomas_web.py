@@ -245,7 +245,7 @@ EN = {
               "September", "October", "November", "December"],
     "secciones": {"herramientas": "Tools", "vibecoding": "Vibe coding", "multimedia": "Multimedia",
                   "debates": "Debates", "novedades": "Official news", "biblioteca": "Library"},
-    "actualizado": "Updated on", "num": "No.", "numero_largo": "Issue", "anyo": "Year",
+    "actualizado": "Updated on", "num": "No.", "numero_largo": "Issue", "anyo": "Vol.",
     "tema": "Switch between light and dark theme", "navegacion": "Navigation",
     "quees": "The newsroom", "portada": "Front page", "volver": "Back to the front page",
     "dia_ant": "Previous day", "dia_sig": "Next day",
