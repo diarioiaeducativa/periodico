@@ -119,7 +119,10 @@ def tiza(cx, mira, expr, postura):
     piernas = f'<path class="t" d="M-9 {abajo} L-11 {SUELO} L-19 {SUELO} M9 {abajo} L11 {SUELO} L19 {SUELO}"/>'
     br, mano = brazos(postura, arriba + 70, medio, "t")
     rostro = f'<g transform="translate(2 {arriba + 34})">{cara(expr, "cara", "fcara", 2.6)}</g>'
-    g = f'{piernas}{cuerpo}{vetas}{polvo}{rostro}{br}'
+    # El brazo que cruza el cuerpo (pensar, sostener): en tema oscuro la tinta es clara como la tiza y no se
+    # veía; va sobre un borde del color del papel, como el de Algoritmo (06-11-2026). En tema claro no se nota.
+    borde = br.replace('class="t"', 'class="a-borde"') if postura in ("pensar", "sostener") else ""
+    g = f'{piernas}{cuerpo}{vetas}{polvo}{rostro}{borde}{br}'
     return envolver(cx, mira, g), mano_abs(cx, mira, mano)
 
 
