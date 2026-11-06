@@ -423,7 +423,9 @@ def publicar_reel(fecha):
     pie = (f"Cada noticia, completa y con sus fuentes, en el enlace del perfil.\n\n"
            f"Vídeo y música hechos por programa a partir del diario, redactado con IA a partir de lo que se "
            f"habla en los grupos de Telegram {GRUPOS_TXT}.\n\n{ETIQUETAS}")
-    texto_ig = f"La semana en vídeo · {publica[8:10].lstrip('0')}/{publica[5:7].lstrip('0')}/{publica[:4]}\n\n{propio}\n\n{pie}"
+    dom = RAIZ / "dominical" / f"{fecha}.json"   # con reportaje, es «El dominical» (ADR 0027)
+    titulo = "El dominical" if dom.exists() and json.loads(dom.read_text()).get("reportaje") else "La semana en vídeo"
+    texto_ig = f"{titulo} · {publica[8:10].lstrip('0')}/{publica[5:7].lstrip('0')}/{publica[:4]}\n\n{propio}\n\n{pie}"
     c = credenciales()
     tok, uid = c["token"], c["usuario_id"]
     subir_rama(f"reel-{fecha}", origen)

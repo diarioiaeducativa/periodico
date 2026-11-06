@@ -35,14 +35,27 @@ salen en pantalla. Nadie los revisa antes de que se publiquen.
   («adimen artifiziala», AA) e inglés británico. Los mismos topes de caracteres en todos. Los nombres
   propios de productos y grupos no se traducen. Las claves de idioma son `es`, `ca`, `gl`, `eu` y `en`.
 
+## El reportaje del domingo (el dominical)
+
+El vídeo del domingo es el **dominical**: la semana y, al final, el reportaje del domingo
+(ADR 0027). Si existe `reportajes/<fecha del sábado>.json` (y sus traducciones en
+`reportajes-ca/`, `reportajes-gl/`, `reportajes-eu/` y `reportajes-en/`), escribe además
+**reportaje**, con su golpe, su titular y su dato en los cinco idiomas, con los mismos topes de
+caracteres: el tema del reportaje, lo que cuenta y su conclusión más útil para un docente. Todo
+sale del reportaje. El programa lo pone al final, con su infografía y el rótulo «Reportaje».
+
 ## Además
 
 - **descripcion** (en los cinco idiomas): una o dos frases que resuman el vídeo para la web, entre 80 y 240
   caracteres.
-- **instagram**: el texto que acompaña al vídeo en Instagram, en castellano: de dos a cuatro
-  frases que cuenten lo de la semana para quien no conoce los grupos. Entre 150 y 600 caracteres.
+- **instagram**: el texto que acompaña al vídeo en Instagram y en LinkedIn, en castellano: de dos a
+  cuatro frases que cuenten lo de la semana y, si lo hay, el reportaje, para quien no conoce los grupos. Entre 150 y 600 caracteres.
   Impersonal, sin saludo, sin enlaces, sin etiquetas (#), sin emojis ni exclamaciones: el
   programa añade el aviso de IA, la remisión al perfil y las etiquetas.
+- **redes**: el texto que acompaña al vídeo en X y en Bluesky, en castellano, de 120 a 220
+  caracteres. Empieza por «El dominical del Diario de IA Educativa:» y dice en una frase lo de la
+  semana y, si lo hay, de qué trata el reportaje. Impersonal, sin enlaces (el programa añade el del
+  número del domingo), sin etiquetas, sin emojis ni exclamaciones.
 - Tono informativo, nunca publicitario. Lenguaje inclusivo natural.
 
 ## Salida
@@ -56,6 +69,9 @@ salen en pantalla. Nadie los revisa antes de que se publiquen.
    "golpe": {"es": "Google", "ca": "Google", "gl": "Google", "eu": "Google", "en": "Google"},
    "titular": {"es": "IA apagada por defecto en las cuentas escolares", "ca": "IA apagada per defecte als comptes escolars", "gl": "…", "eu": "…", "en": "AI switched off by default in school accounts"},
    "dato": {"es": "Cada centro decide qué activa, producto a producto", "ca": "Cada centre decideix què activa, producte a producte", "gl": "…", "eu": "…", "en": "…"}}],
+ "reportaje": {"golpe": {"es": "…", "ca": "…", "gl": "…", "eu": "…", "en": "…"},
+               "titular": {"es": "…", …}, "dato": {"es": "…", …}},
  "descripcion": {"es": "…", "ca": "…", "gl": "…", "eu": "…", "en": "…"},
+ "redes": "El dominical del Diario de IA Educativa: …",
  "instagram": "…"}
 ```

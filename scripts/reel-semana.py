@@ -44,21 +44,21 @@ e = html.escape
 TXT = {
     "es": {"la": "la", "semana": "semana", "sub": "Lo más destacado del Diario de IA Educativa",
            "todo": "Cada noticia, completa y con sus fuentes", "hora": "Cada mañana a las 7:00",
-           "titulo": "La semana en vídeo", "hud": "La semana"},
+           "titulo": "La semana en vídeo", "hud": "La semana", "rep": "Reportaje"},
     "ca": {"la": "la", "semana": "setmana", "sub": "El més destacat del Diari d'IA Educativa",
            "todo": "Cada notícia, completa i amb les fonts", "hora": "Cada matí a les 7:00",
-           "titulo": "La setmana en vídeo", "hud": "La setmana"},
+           "titulo": "La setmana en vídeo", "hud": "La setmana", "rep": "Reportatge"},
     # Gallego, euskera e inglés desde el 08-11-2026 (ADR 0026): si el guion no trae sus textos, ese
     # idioma enseña el vídeo en castellano, como antes
     "gl": {"la": "a", "semana": "semana", "sub": "O máis destacado do Diario de IA Educativa",
            "todo": "Cada noticia, completa e coas súas fontes", "hora": "Cada mañá ás 7:00",
-           "titulo": "A semana en vídeo", "hud": "A semana"},
+           "titulo": "A semana en vídeo", "hud": "A semana", "rep": "Reportaxe"},
     "eu": {"la": "", "semana": "astea", "sub": "Hezkuntzako AA Egunkariaren nabarmenena",
            "todo": "Berri bakoitza, osorik eta bere iturriekin", "hora": "Goizero 7:00etan",
-           "titulo": "Astea bideoan", "hud": "Astea"},
+           "titulo": "Astea bideoan", "hud": "Astea", "rep": "Erreportajea"},
     "en": {"la": "the", "semana": "week", "sub": "The highlights of Educational AI Daily",
            "todo": "Every story, in full and with its sources", "hora": "Every morning at 7:00 (Spain)",
-           "titulo": "The week on video", "hud": "The week"},
+           "titulo": "The week on video", "hud": "The week", "rep": "Feature"},
 }
 OBLIGATORIOS = ("es", "ca")   # sin estos textos el guion no vale; los demás idiomas, si están completos
 
@@ -110,9 +110,12 @@ def pagina(codigo, guion, piezas, estilo, semana):
     bloques = []
     for k, (g, (d, p)) in enumerate(zip(guion["noticias"], piezas)):
         grupo = generar.GRUPOS.get(p.get("grupo"), (p.get("grupo") or "",))[0]
-        bloques.append(f"""<section class="noticia sec-{e(p.get("seccion") or "")}" id="n{k}">
+        sec = p.get("seccion") or ""
+        rotulo = T["rep"] if sec == "reportaje" else L["secciones"].get(sec, "")   # el reportaje del domingo, al final
+        nombre_g = f'<span class="g-nombre"> · {e(grupo)}</span>' if grupo else ""
+        bloques.append(f"""<section class="noticia sec-{e(sec)}" id="n{k}">
   <div class="banda"></div>
-  <div class="cab"><span class="chip">{generar.icono(p.get("seccion"))} {e(L["secciones"].get(p.get("seccion"), ""))}</span><span class="grupo"><b class="dia">{e(dia_de(d["fecha"], codigo))}</b><span class="g-nombre"> · {e(grupo)}</span></span></div>
+  <div class="cab"><span class="chip">{generar.icono(sec)} {e(rotulo)}</span><span class="grupo"><b class="dia">{e(dia_de(d["fecha"], codigo))}</b>{nombre_g}</span></div>
   <h2 class="golpe">{palabras(g["golpe"][codigo])}</h2>
   <p class="titular-v">{palabras(g["titular"][codigo])}</p>
   <figure class="ilu tarjeta">{og.dibujo(d, p)}</figure>
@@ -269,6 +272,20 @@ def validar(guion, eds, fecha):
     return piezas
 
 
+def reportaje_del_domingo(guion, eds, fecha):
+    """El dominical (ADR 0027): si el número del domingo trae reportaje y el guion sus textos, el
+    reportaje cierra el vídeo como una noticia más, con su infografía. Si faltan, el vídeo sale sin él."""
+    d = next((x for x in eds if x["fecha"] == fecha), None)
+    r, g = (d or {}).get("reportaje"), guion.get("reportaje")
+    if not (r and g):
+        return None
+    if not all((g.get(k) or {}).get(c, "").strip() for k in ("golpe", "titular", "dato") for c in OBLIGATORIOS):
+        print("reel-semana: el guion no trae los textos del reportaje en castellano y catalán; el vídeo sale sin él",
+              file=sys.stderr)
+        return None
+    return d, dict(r, seccion="reportaje")
+
+
 def idiomas_del_guion(guion):
     """Castellano y catalán siempre; gallego, euskera e inglés si el guion trae todos sus textos."""
     return [c for c in TXT if c in OBLIGATORIOS or (
@@ -293,6 +310,10 @@ def main():
     eds = generar.cargar()
     guion = json.loads((RAIZ / "reels" / f"{fecha}.json").read_text())
     piezas = validar(guion, eds, fecha)
+    rep = reportaje_del_domingo(guion, eds, fecha)
+    if rep:
+        guion["noticias"].append(dict(guion["reportaje"], fecha=fecha, id=rep[1]["id"]))
+        piezas.append(rep)
     idiomas = idiomas_del_guion(guion)
     vid = f"{publica}-semana"
     previo = RAIZ / "videos" / f"{vid}.json"
@@ -379,7 +400,32 @@ def main():
         if viejo.get("instagram"):
             meta["instagram"] = viejo["instagram"]
     previo.write_text(json.dumps(meta, ensure_ascii=False, indent=2) + "\n")
+    dominical(fecha, publica, guion, bool(rep))
     print(f"reel-semana: {vid} ({round(total)} s, {estilo['tempo']} ppm, {estilo['tonica']} {estilo['modo']}, {estilo['progresion']})")
+
+
+LIMITE_CORTO = 300   # Bluesky cuenta el enlace entero; en X pesa 23 (ADR 0027)
+
+
+def dominical(fecha, publica, guion, con_reportaje):
+    """Lo que publican X, Bluesky y LinkedIn el domingo a las 12:00 (ADR 0027): el vídeo en castellano
+    con el texto del guionista y un enlace al número del domingo, que reúne el reportaje y el vídeo. Lo
+    publica scripts/redes/dominical.sh desde el contenedor del boletín, que tiene las sesiones."""
+    url = f"{generar.BASE}{fecha}/"
+    cola = f"\n👉 El número del domingo: {url}"
+    corto = (guion.get("redes") or "").strip() or generar.IDIOMAS["es"]["descripciones"]["videos"].split(". ")[0] + "."
+    while len(corto) + len(cola) > LIMITE_CORTO and ". " in corto:   # se acorta por frases enteras
+        corto = corto.rsplit(". ", 1)[0] + "."
+    if len(corto) + len(cola) > LIMITE_CORTO:
+        corto = corto[:LIMITE_CORTO - len(cola) - 1].rsplit(" ", 1)[0] + "…"
+    largo = (guion.get("instagram") or corto).strip()
+    (RAIZ / "dominical").mkdir(exist_ok=True)
+    (RAIZ / "dominical" / f"{fecha}.json").write_text(json.dumps({
+        "fecha": fecha, "publica": publica, "hora": "12:00", "reportaje": con_reportaje,
+        "corto": corto + cola, "largo": largo + "\n" + cola,
+        "video": f"instagram/reel-{fecha}/reel.mp4",
+    }, ensure_ascii=False, indent=2) + "\n")
+    print(f"reel-semana: textos del dominical en dominical/{fecha}.json ({len(corto + cola)} caracteres el corto)")
 
 
 if __name__ == "__main__":
