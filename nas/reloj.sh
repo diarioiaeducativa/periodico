@@ -66,6 +66,8 @@ while true; do
         # El domingo, también el texto del dominical que sale a las 12:00 en las redes (ADR 0027)
         dom=""
         [ -f "dominical/$F.json" ] && dom=" · Redes del dominical, a las 12:00: $(python3 -c 'import json,sys; print(json.load(open(sys.argv[1]))["corto"])' "dominical/$F.json" 2>/dev/null)"
+        # Y cuál de los dos reportajes eligió el juez, si había uno de reserva (ADR 0028)
+        [ -f "reportajes-borrador/$F-eleccion.json" ] && dom="$dom · Reportaje: $(python3 -c 'import json,sys; d=json.load(open(sys.argv[1])); print(("el de reserva" if d.get("elegido") == "reserva" else "el nuevo") + ", porque " + d.get("motivo", "").rstrip(".") + ".")' "reportajes-borrador/$F-eleccion.json" 2>/dev/null)"
         avisar "El número de hoy ya se puede revisar, tal como saldrá a las 6:55 (desde la red de casa): ${VISTA_PREVIA:-http://192.168.1.113:8770/} · en catalán: ${VISTA_PREVIA:-http://192.168.1.113:8770/}ca/ · Si hay que cambiar algo, dímelo antes desde el portátil.$dom"
       else
         avisar "No se ha podido montar la vista previa del número de hoy; sale igual a las 6:55. Registro: /volume1/docker/diario-ia-educativa/repo/registro/$F.log"

@@ -104,5 +104,28 @@ json_ok "reportajes/$FECHA.json" || { log "el ilustrador estropeó el JSON del r
 # Uno de reserva no tiene número ni página donde mirar su infografía: se mira con el programa el
 # domingo en que salga (noche.sh), y si falla sale sin ella
 [ "${RESERVA:-0}" = 1 ] || revisar_dibujos "$(python3 -c 'import json,sys; print(json.load(open(sys.argv[1]))["id"])' "reportajes/$FECHA.json")"
+# 11b. Si hay uno de reserva, el juez de reportajes elige el mejor de los dos (ADR 0028). Si gana el de
+# reserva, se publica ese y el nuevo se guarda aparte, sin traducir; si no, el de reserva sigue guardado.
+if [ "${RESERVA:-0}" != 1 ] && cand=$(python3 scripts/reserva_reportaje.py candidato 2>>"$REG") && [ -n "$cand" ]; then
+  rm -f "reportajes-borrador/$FECHA-eleccion.json"
+  agente "$OPUS" 11b-reportaje-eleccion 20 "El de reserva: $cand/reportajes.json (su infografía, en $cand/ilustraciones/)."
+  elegido=$(python3 -c 'import json,sys; print(json.load(open(sys.argv[1])).get("elegido",""))' "reportajes-borrador/$FECHA-eleccion.json" 2>/dev/null)
+  log "juez de reportajes: ${elegido:-sin decisión (gana el nuevo)}"
+  if [ "$elegido" = reserva ]; then
+    rid=$(python3 -c 'import json,sys; print(json.load(open(sys.argv[1]))["id"])' "reportajes/$FECHA.json")
+    mv -f "reportajes/$FECHA.json" "reportajes-borrador/$FECHA-descartado.json"
+    for f in ilustraciones/"$FECHA-$rid".svg; do [ -e "$f" ] && mv -f "$f" "reportajes-borrador/$FECHA-descartado-$rid.svg"; done
+    if python3 scripts/reserva_reportaje.py usar "$FECHA" >> "$REG" 2>&1; then
+      # Su infografía no se pudo mirar en su página al escribirla: ahora sí, con revisor y una vuelta
+      revisar_dibujos "$(python3 -c 'import json,sys; print(json.load(open(sys.argv[1]))["id"])' "reportajes/$FECHA.json")"
+      log "reportaje listo (el de reserva): $(python3 -c 'import json,sys; print(json.load(open(sys.argv[1]))["titular"])' "reportajes/$FECHA.json")"
+      exit 0
+    fi
+    # Si al final no se pudo poner el de reserva, vuelve el nuevo
+    log "no se pudo poner el de reserva: sale el nuevo"
+    mv -f "reportajes-borrador/$FECHA-descartado.json" "reportajes/$FECHA.json"
+    [ -e "reportajes-borrador/$FECHA-descartado-$rid.svg" ] && mv -f "reportajes-borrador/$FECHA-descartado-$rid.svg" "ilustraciones/$FECHA-$rid.svg"
+  fi
+fi
 traducir 11-reportaje-traduccion reportaje 40
 log "reportaje listo: $(python3 -c 'import json,sys; print(json.load(open(sys.argv[1]))["titular"])' "reportajes/$FECHA.json")"

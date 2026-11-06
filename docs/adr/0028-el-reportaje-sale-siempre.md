@@ -22,6 +22,13 @@ gustaría que pasados 6 meses saliese un artículo ya caduco». No se actualizab
   caduque en un mes. Lo usa noche.sh si el del sábado no sale, y `reserva.py usar` (plan B de las 6:30 y
   vigilante de GitHub) si el número del domingo se queda sin reportaje. Su infografía se mira con el
   programa el domingo en que sale, porque al escribirla no tiene página. Se avisa a Juanjo.
+- **El mejor de los dos** (Juanjo, 06-11-2026, al ver el primero de reserva: «que alguien decida si usar
+  el que se haga nuevo o este, el mejor se publica»): si el sábado hay reportaje nuevo y uno de reserva
+  vigente, un juez de reportajes (Opus, paso 11b, que no ha escrito ninguno) los compara por interés y
+  utilidad para un docente, rigor, escritura, actualidad y que no repita tema; en caso de duda, el nuevo.
+  Si gana el de reserva, se publica ese (su infografía se revisa entonces en su página, con revisor) y el
+  nuevo queda en `reportajes-borrador/FECHA-descartado.json`, sin traducir; a la mañana siguiente se
+  escribe otro de reserva. La elección y su motivo van en el aviso de las 5:00 del domingo.
 - **Caducidad de las reservas**: una pieza de reserva sin usar se retira a los 60 días; el reportaje,
   a las 4 semanas. Lo hace `reserva.sh` cada mañana, que después escribe lo que falte (una pieza o el
   reportaje). Lo retirado queda en `reserva/retiradas/` y `reserva/reportajes/retirados/`, con el motivo.

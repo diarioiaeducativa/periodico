@@ -7,7 +7,10 @@
     scripts/reserva_reportaje.py clave           una clave libre para escribir el siguiente
     scripts/reserva_reportaje.py guardar CLAVE   pasa a reserva/reportajes/CLAVE/ lo que reportaje.sh escribió con esa clave
     scripts/reserva_reportaje.py caducar         retira los que pasan de CADUCA días (se escribirá otro)
+    scripts/reserva_reportaje.py candidato       la carpeta del que se usaría ahora (vigente y con sus fuentes vivas), o nada
     scripts/reserva_reportaje.py usar AAAA-MM-DD pone uno en el número del domingo de ese sábado, si no tiene reportaje
+
+El sábado, si hay reportaje nuevo y uno de reserva, un juez elige el mejor (reportaje.sh, paso 11b, ADR 0028).
 
 Un reportaje de reserva lo escribe reportaje.sh con RESERVA=1, con el mismo jefe de reportajes,
 reportero, verificador, ilustrador y traductores que cada sábado, sobre un tema que no caduque en
@@ -129,6 +132,17 @@ def vigente(d):
     return len(malas) * 5 <= len(urls), f"{len(malas)} de {len(urls)} fuentes no responden"
 
 
+def candidato():
+    """El que usaría `usar` ahora: el más antiguo vigente cuyas fuentes respondan (los que no, se retiran)."""
+    caducar()
+    for d in listos():
+        ok, motivo = vigente(d)
+        if ok:
+            return d
+        retirar(d, motivo)
+    return None
+
+
 def usar(fecha):
     """fecha: el sábado (la del número que sale el domingo)."""
     actual = RAIZ / "reportajes" / f"{fecha}.json"
@@ -138,12 +152,8 @@ def usar(fecha):
             return 4
     except (OSError, ValueError):
         pass
-    caducar()
-    for d in listos():
-        ok, motivo = vigente(d)
-        if not ok:
-            retirar(d, motivo)
-            continue
+    d = candidato()
+    if d:
         clave = d.name
         for f in d.glob("reportajes*.json"):
             r = json.loads(f.read_text().replace(clave, fecha))
@@ -175,6 +185,9 @@ def main():
         sys.exit(guardar(sys.argv[2]))
     elif orden == "caducar":
         caducar()
+    elif orden == "candidato":
+        d = candidato()
+        print(d.relative_to(RAIZ) if d else "")
     elif orden == "usar":
         sys.exit(usar(sys.argv[2]))
     else:
