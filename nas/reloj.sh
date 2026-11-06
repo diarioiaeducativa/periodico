@@ -6,6 +6,8 @@
 #                   dos intentos como mucho
 #   plan B          si los dos intentos fallan, o a las 6:30 si aún no está, para la redacción y
 #                   saca el número con una pieza de reserva (scripts/reserva.py, ADR 0021), y avisa
+#   desde las 5:00  montar la vista previa del número y mandar a Juanjo el enlace para revisarlo
+#                   antes de que salga (ADR 0025); si aún no está, decírselo y mandarlo al estar
 #   desde las 6:55  publicarlo (scripts/publicar-nas.sh); si se prepara tarde, en cuanto esté;
 #                   si falla, otra vez cada 10 minutos hasta las 9:00 (ADR 0021)
 #   desde las 8:00  si faltan piezas de reserva, escribir una (scripts/reserva.sh)
@@ -53,6 +55,22 @@ while true; do
          avisar "La redacción se ha atascado después del repaso ($intentos intentos): el número sale con lo que estaba hecho. Registro: /volume1/docker/diario-ia-educativa/repo/registro/$F.log" ;;
       *) avisar "Hoy no hay número: la redacción ha fallado ($intentos intentos) y no queda ninguna pieza de reserva. Registro: /volume1/docker/diario-ia-educativa/repo/registro/$F.log" ;;
     esac
+  fi
+  # La vista previa (ADR 0025): desde las 5:00 y hasta que se publica, el número tal como saldrá,
+  # en la red de casa (servicio vista-previa de compose.yml). Si a las 5:00 aún no está, se dice una vez.
+  if [ "$m" -ge 300 ] && [ "$m" -lt 415 ] && [ ! -e "$E.publicado" ] && [ ! -e "$E.vista-previa" ]; then
+    if [ -e "$E.listo" ]; then
+      touch "$E.vista-previa"
+      if python3 generar.py >> "registro/$F.log" 2>&1; then
+        python3 -m pagefind --site sitio >> "registro/$F.log" 2>&1
+        avisar "El número de hoy ya se puede revisar, tal como saldrá a las 6:55 (desde la red de casa): ${VISTA_PREVIA:-http://192.168.1.113:8770/} · en catalán: ${VISTA_PREVIA:-http://192.168.1.113:8770/}ca/ · Si hay que cambiar algo, dímelo antes desde el portátil."
+      else
+        avisar "No se ha podido montar la vista previa del número de hoy; sale igual a las 6:55. Registro: /volume1/docker/diario-ia-educativa/repo/registro/$F.log"
+      fi
+    elif [ ! -e "$E.vista-previa-espera" ] && [ ! -e "$E.sin-numero" ]; then
+      touch "$E.vista-previa-espera"
+      avisar "El número de hoy aún no está listo para revisar: la redacción sigue trabajando. Te mando el enlace en cuanto esté; si a las 6:30 no ha acabado, sale con lo que haya o con una pieza de reserva."
+    fi
   fi
   # Publicar: a las 6:55 y, si falla, cada 10 minutos hasta las 9:00 (ADR 0021)
   if [ "$m" -ge 415 ] && [ -e "$E.listo" ] && [ ! -e "$E.publicado" ] && [ ! -e "$E.publicando" ] \

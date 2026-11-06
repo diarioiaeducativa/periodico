@@ -37,3 +37,17 @@ services:
       # El aviso a Juanjo por Telegram, el mismo de los demás contenedores.
       - ../boletin-semanal/home/.local/bin/avisar-juanjo:/usr/local/bin/avisar-juanjo:ro
       - ../boletin-semanal/home/.config/avisar-juanjo:/home/jjdeharo/.config/avisar-juanjo
+
+  # La vista previa del número (ADR 0025): el sitio que monta generar.py, solo para la red de casa.
+  # reloj.sh lo rehace a las 5:00 y avisa a Juanjo con el enlace. Solo lectura; sin agentes.
+  vista-previa:
+    image: diario-ia-educativa:local
+    container_name: diario-ia-educativa-vista-previa
+    restart: unless-stopped
+    user: "1000:10"
+    entrypoint: ["python3", "-m", "http.server", "8080", "--directory", "/proyecto/sitio"]
+    ports:
+      - "192.168.1.113:8770:8080"
+    mem_limit: 64m
+    volumes:
+      - ./repo:/proyecto:ro
