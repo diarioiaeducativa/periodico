@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 716 738">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 716 866">
   <!-- Convención: caja rellena = agente de IA; solo contorno = lo que entra (mensajes) y lo que se publica -->
   <!-- Los grupos -->
   <path class="t" d="M18 112 h56 a8 8 0 0 1 8 8 v22 a8 8 0 0 1 -8 8 h-40 l-10 10 v-10 h-6 a8 8 0 0 1 -8 -8 v-22 a8 8 0 0 1 8 -8 z"/>
@@ -79,11 +79,30 @@
   <path class="t" d="M384 464 h20 M384 474 h20 M384 484 h14"/><path class="a" d="M410 478 L418 486 L434 466"/>
   <text class="lbl" x="408" y="524" text-anchor="middle">Verificador</text>
   <path class="t" d="M408 448 V414 H222 V336 H234 M226 329 L234 336 L226 343"/>
-  <path class="t" d="M522 382 V430 M515 422 L522 430 L529 422"/>
+  <path class="t" d="M522 382 V404 M515 396 L522 404 L529 396"/>
+  <!-- Juez de reportajes: si hay uno de reserva, elige el mejor de los dos (ADR 0028) -->
+  <rect class="t fa" x="482" y="410" width="80" height="52" rx="8"/>
+  <path class="t" d="M522 422 V452 M512 452 H532 M502 427 H542"/>
+  <path class="a" d="M502 427 L496 441 M502 427 L508 441 M542 427 L536 441 M542 427 L548 441 M495 441 h14 a7 5 0 0 1 -14 0 z M535 441 h14 a7 5 0 0 1 -14 0 z"/>
+  <text class="lbl" x="522" y="484" text-anchor="middle">Juez de</text>
+  <text class="lbl" x="522" y="504" text-anchor="middle">reportajes</text>
+  <path class="t" d="M522 512 V534 M515 526 L522 534 L529 526"/>
+  <g transform="translate(0 104)">
   <rect class="t" x="482" y="436" width="92" height="82" rx="6"/>
   <path class="t" d="M494 452 h68 M494 460 h68 M494 474 h68 M494 484 h68 M494 494 h68 M494 504 h40"/>
   <text class="lbl" x="528" y="540" text-anchor="middle">Reportaje</text>
-  <path class="t" d="M576 470 H590 V346 H604 M596 339 L604 346 L596 353"/>
+  </g>
+  <path class="t" d="M576 574 H590 V346 H604 M596 339 L604 346 L596 353"/>
+  <path class="t" d="M528 654 V684 M521 676 L528 684 L535 676"/>
+  <!-- El dominical: el vídeo y el reportaje, en las redes sociales a las 12:00 (ADR 0027) -->
+  <path class="t" d="M590 574 V700 H604 M596 693 L604 700 L596 707"/>
+  <rect class="t" x="610" y="650" width="92" height="100" rx="6"/>
+  <path class="t" d="M650 681 L662 674 M650 691 L662 698"/>
+  <circle class="a" cx="667" cy="671" r="6"/><circle class="a" cx="645" cy="686" r="6"/><circle class="a" cx="667" cy="701" r="6"/>
+  <text class="lbl" x="656" y="736" text-anchor="middle">12:00</text>
+  <text class="lbl" x="656" y="772" text-anchor="middle">Redes</text>
+  <text class="lbl" x="656" y="792" text-anchor="middle">sociales</text>
+  <g transform="translate(0 128)">
   <!-- «La semana en vídeo»: el guionista de vídeo, con los números de la semana; sale en el número del domingo -->
   <path class="t" d="M146 568 h48 v40 M140 574 h48 v40"/>
   <rect class="t" x="134" y="580" width="48" height="40" rx="3"/>
@@ -99,11 +118,14 @@
   <rect class="t" x="508" y="562" width="40" height="70" rx="6"/>
   <path class="t" d="M522 586 L539 597 L522 608 Z"/>
   <text class="lbl" x="528" y="654" text-anchor="middle">Vídeo</text>
-  <path class="t" d="M550 598 H590 V470"/>
+  <path class="t" d="M550 598 H590 V446"/>
+  </g>
   <!-- Leyenda -->
+  <g transform="translate(0 128)">
   <path class="t" d="M14 690 H702"/>
   <rect class="t fa" x="124" y="704" width="34" height="24" rx="6"/>
   <text class="lbl" x="168" y="722">Agente de IA</text>
   <rect class="t" x="330" y="704" width="34" height="24" rx="6"/>
   <text class="lbl" x="374" y="722">Lo que entra y lo que se publica</text>
+  </g>
 </svg>
