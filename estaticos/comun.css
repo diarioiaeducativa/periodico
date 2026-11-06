@@ -231,6 +231,12 @@ img, svg { max-width: 100%; }
 .vineta .nota { fill: var(--m-vineta); stroke: var(--tinta-2); stroke-width: 1.2; }
 .vineta .ventana { fill: var(--t-herramientas); stroke: var(--tinta-2); stroke-width: 1.8; }
 .vineta .luna { fill: var(--m-vineta); stroke: none; }
+.vineta .lomo-a { fill: var(--m-biblioteca); stroke: var(--tinta-2); stroke-width: 1.2; }
+.vineta .lomo-b { fill: var(--m-debates); stroke: var(--tinta-2); stroke-width: 1.2; }
+.vineta .lomo-c { fill: var(--m-novedades); stroke: var(--tinta-2); stroke-width: 1.2; }
+.vineta .pantalla { fill: var(--t-herramientas); stroke: var(--tinta-2); stroke-width: 2.2; }
+.vineta .cuadro { fill: var(--papel); stroke: var(--tinta-2); stroke-width: 1.2; }
+.vineta .apagada { fill: var(--tinta-2); stroke: var(--tinta-2); stroke-width: 1.2; opacity: 0.55; }
 .vineta .fr { fill: var(--rojo); }
 .vineta .r { fill: none; stroke: var(--rojo); stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
 .vineta .rubor { fill: none; stroke: var(--rojo); stroke-width: 1.8; stroke-linecap: round; opacity: 0.75; }

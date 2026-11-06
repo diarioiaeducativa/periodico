@@ -59,7 +59,27 @@ Cada guion es un JSON:
 - `objeto`: pizarra, portatil o reloj (al fondo, en el centro), examenes o papeles
   (un montón en el suelo, en el centro); libro, movil, notificaciones (el móvil que no
   para), folio o taza (en la mano de quien tenga la postura «sostener»).
-- `escenario` (opcional, por viñeta): aula (pizarra y pupitres), sala_profes (corcho
-  con notas y cafetera), fotocopiadora, claustro (la mesa larga tapa las piernas) o
-  casa_noche (ventana con luna, sofá y lámpara). Un escenario sitúa la escena: úsalo
-  cuando ayude al chiste, y no lo cambies sin motivo entre viñetas de la misma tira.
+- `escenario` (por viñeta): aula (pizarra y pupitres), sala_profes (corcho con notas y
+  cafetera), fotocopiadora, claustro (la mesa larga tapa las piernas), casa_noche
+  (ventana con luna, sofá y lámpara), biblioteca (estanterías de libros a los lados),
+  despacho (el de dirección: archivadores, persiana y archivador de cajones) o
+  videollamada (la pantalla de una formación o reunión en línea, con un mosaico de
+  caras, una con la cámara apagada). Un escenario sitúa la escena: elige el que mejor
+  sirva al chiste, y no lo cambies sin motivo entre viñetas de la misma tira.
+
+## La variedad
+
+El diario sale cada día y la tira no puede parecer siempre la misma. Antes de escribir,
+lee el resumen de las viñetas de los tres números anteriores (te dicen dónde está):
+
+- **Escenario:** no repitas ninguno de los que salieron en esos tres números, salvo que
+  la noticia ocurra justo allí (un claustro, una formación en línea); en ese caso, dilo
+  en la idea. Sin escenario solo si el objeto del centro ya sitúa la escena, y nunca dos
+  números seguidos.
+- **Caras:** usa todo el repertorio. «Contento» es el recurso fácil: cada personaje
+  cambia de cara cuando cambia lo que siente, y las caras más repetidas en los números
+  anteriores, solo si el chiste las pide.
+- **Objeto:** no repitas el del número anterior si la noticia no lo pide.
+
+La variedad no salva un chiste flojo: primero la gracia, y entre dos ideas igual de buenas,
+la que varía.

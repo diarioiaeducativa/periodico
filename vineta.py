@@ -20,7 +20,7 @@ EXPRESIONES = ["neutral", "contento", "sorprendido", "preocupado", "orgulloso", 
 POSTURAS = ["abajo", "senalar", "arriba", "pensar", "encoger", "sostener"]
 OBJETOS = ["pizarra", "portatil", "reloj", "examenes", "papeles", "libro", "movil", "folio", "taza", "notificaciones"]
 DE_FONDO = {"pizarra", "portatil", "reloj", "examenes", "papeles"}   # van en el centro; los demás, en la mano de quien «sostiene»
-ESCENARIOS = ["aula", "sala_profes", "fotocopiadora", "claustro", "casa_noche"]
+ESCENARIOS = ["aula", "sala_profes", "fotocopiadora", "claustro", "casa_noche", "biblioteca", "despacho", "videollamada"]
 
 
 def e(t):
@@ -220,7 +220,52 @@ def escenario(nombre):
                 '<path class="fondo" d="M64 152 L64 218 M22 185 L106 185"/><circle class="luna" cx="44" cy="168" r="8"/>'
                 '<path class="mueble" d="M60 332 L60 264 Q60 248 78 248 L322 248 Q340 248 340 264 L340 332 Z"/>'
                 '<path class="fondo" d="M48 300 L352 300 M372 332 L372 196 M356 196 L388 196 L380 170 L364 170 Z"/>')
+    if nombre == "biblioteca":   # dos estanterías llenas de libros, a los lados
+        return _estanteria(6) + _estanteria(330)
+    if nombre == "despacho":   # el de dirección: archivadores, ventana con persiana y archivador de cajones
+        lomos = "".join(f'<rect class="lomo-{"abc"[i % 3]}" x="{12 + i * 12}" y="174" width="11" height="40" rx="1"/>'
+                        f'<circle class="fondo" cx="{17.5 + i * 12}" cy="204" r="2.4"/>' for i in range(5))
+        lamas = "".join(f'M152 {158 + 8 * i} L248 {158 + 8 * i} ' for i in range(7))
+        return (f'<path class="fondo" d="M8 214 L76 214"/>{lomos}'
+                '<rect class="ventana" x="150" y="150" width="100" height="64" rx="2"/>'
+                f'<path class="fondo" d="{lamas}M256 152 L256 196"/><circle class="fondo" cx="256" cy="199" r="2.5"/>'
+                '<rect class="mueble" x="336" y="226" width="54" height="106" rx="2"/>'
+                '<path class="fondo" d="M336 261 L390 261 M336 296 L390 296 M356 244 L370 244 M356 279 L370 279 M356 314 L370 314"/>'
+                '<path class="mueble" d="M352 226 L355 210 L371 210 L374 226 Z"/>'
+                '<path class="fondo" d="M363 210 Q356 196 348 194 M363 210 Q366 194 376 190 M363 210 L362 196"/>')
+    if nombre == "videollamada":   # la pantalla de una formación en línea: mosaico de caras, una con la cámara apagada
+        teselas = []
+        for fila in range(2):
+            for col in range(3):
+                x, y = 145 + col * 39, 152 + fila * 39
+                if (fila, col) == (1, 2):
+                    teselas.append(f'<rect class="apagada" x="{x}" y="{y}" width="34" height="34" rx="2"/>')
+                    continue
+                teselas.append(f'<rect class="cuadro" x="{x}" y="{y}" width="34" height="34" rx="2"/>'
+                               f'<circle class="fondo" cx="{x + 17}" cy="{y + 14}" r="5"/>'
+                               f'<path class="fondo" d="M{x + 7} {y + 32} Q{x + 17} {y + 17} {x + 27} {y + 32}"/>')
+                if (fila, col) == (0, 1):   # el micrófono silenciado
+                    teselas.append(f'<path class="r" d="M{x + 25} {y + 4} L{x + 31} {y + 10}"/>')
+        return ('<rect class="pantalla" x="140" y="146" width="122" height="88" rx="4"/>' + "".join(teselas)
+                + '<path class="fondo" d="M190 234 L186 246 M212 234 L216 246"/>')
     return ""
+
+
+def _estanteria(x0):
+    """Una estantería de 64 px de ancho con tres baldas de libros de alturas distintas."""
+    anchos = [7, 9, 6, 8, 10, 7, 8]
+    altos = [34, 30, 36, 28, 33, 31, 35]
+    partes = [f'<rect class="mueble" x="{x0}" y="158" width="64" height="174" rx="2"/>']
+    for k, balda in enumerate((200, 244, 288)):
+        x = x0 + 5
+        for i in range(7):
+            j = (i + k * 3) % 7
+            if x + anchos[j] > x0 + 59:
+                break
+            partes.append(f'<rect class="lomo-{"abc"[(i + k) % 3]}" x="{x}" y="{balda - altos[j]}" width="{anchos[j]}" height="{altos[j]}" rx="1"/>')
+            x += anchos[j] + 1
+        partes.append(f'<path class="fondo" d="M{x0} {balda} L{x0 + 64} {balda}"/>')
+    return "".join(partes)
 
 
 def delante(nombre):
@@ -378,9 +423,93 @@ def tira(guion):
     return "".join(f'<div class="vineta-panel">{panel(v, i + 1)}</div>' for i, v in enumerate(guion.get("vinetas", [])[:3]))
 
 
+# ---------- Variedad: lo que salió en los números anteriores ----------
+
+def anteriores(fecha, n=3, carpeta="vinetas"):
+    """Los guiones de las n viñetas publicadas antes de `fecha`, del más reciente al más antiguo."""
+    import json
+    from pathlib import Path
+    out = []
+    for f in sorted(Path(carpeta).glob("20??-??-??.json"), reverse=True):
+        if f.stem >= fecha:
+            continue
+        try:
+            g = ((json.loads(f.read_text()).get("elegida") or {}).get("guion")) or {}
+        except (OSError, ValueError):
+            continue
+        if g.get("vinetas"):
+            out.append((f.stem, g["vinetas"][:3]))
+        if len(out) == n:
+            break
+    return out
+
+
+def usados(fecha):
+    """Escenarios de los tres números anteriores (None = sin escenario) y si el anterior fue sin escenario."""
+    previos = anteriores(fecha)
+    escs = {v.get("escenario") for _, vs in previos for v in vs}
+    sin_ayer = bool(previos) and all(not v.get("escenario") for v in previos[0][1])
+    return escs, sin_ayer
+
+
+def recientes(fecha):
+    """Resumen para el guionista y el juez (ADR 0024)."""
+    from collections import Counter
+    previos = anteriores(fecha)
+    if not previos:
+        return "No hay viñetas anteriores: puedes usar todo el repertorio.\n"
+    lineas = [f"# Lo que salió en las viñetas de los {len(previos)} números anteriores a {fecha}", ""]
+    caras = {"tiza": Counter(), "algoritmo": Counter()}
+    objetos = Counter()
+    for dia, vs in previos:
+        escs = ", ".join(dict.fromkeys(v.get("escenario") or "sin escenario" for v in vs))
+        obj = ", ".join(dict.fromkeys(v.get("objeto") for v in vs if v.get("objeto"))) or "ninguno"
+        lineas.append(f"- {dia}: escenario {escs}; objetos {obj}")
+        for v in vs:
+            for q in caras:
+                if v.get(q, {}).get("expresion"):
+                    caras[q][v[q]["expresion"]] += 1
+            if v.get("objeto"):
+                objetos[v["objeto"]] += 1
+    escs, sin_ayer = usados(fecha)
+    libres = [e for e in ESCENARIOS if e not in escs]
+    lineas += ["", "**Escenarios que no puedes usar hoy** (salvo que la noticia ocurra justo allí): "
+               + ", ".join(e for e in ESCENARIOS if e in escs),
+               "**Escenarios libres:** " + ", ".join(libres)]
+    if sin_ayer:
+        lineas.append("**El número anterior salió sin escenario: hoy la tira lleva escenario.**")
+    for q, nombre in (("tiza", "Tiza"), ("algoritmo", "Algoritmo")):
+        mas = ", ".join(f"{e} ({k})" for e, k in caras[q].most_common(3))
+        lineas.append(f"Caras más repetidas de {nombre}: {mas}")
+    sin_usar = [e for e in EXPRESIONES if not caras["tiza"][e] and not caras["algoritmo"][e]]
+    lineas.append("Caras que no han salido: " + (", ".join(sin_usar) or "ninguna"))
+    if objetos:
+        lineas.append("Objetos que han salido: " + ", ".join(f"{o} ({k})" for o, k in objetos.most_common()))
+    return "\n".join(lineas) + "\n"
+
+
+def repite(fecha, guion):
+    """Avisos de variedad de la viñeta elegida, para el registro de noche.sh."""
+    escs, sin_ayer = usados(fecha)
+    vs = guion.get("vinetas", [])[:3]
+    propios = {v.get("escenario") for v in vs if v.get("escenario")}
+    avisos = [f"repite el escenario {e} de los tres números anteriores" for e in sorted(propios & escs)]
+    if not propios and sin_ayer:
+        avisos.append("sale sin escenario dos números seguidos")
+    return avisos
+
+
 if __name__ == "__main__":
     import json
     import sys
+    if sys.argv[1] == "--recientes":   # vineta.py --recientes FECHA: el resumen de variedad, en Markdown
+        print(recientes(sys.argv[2]), end="")
+        sys.exit(0)
+    if sys.argv[1] == "--repite":   # vineta.py --repite FECHA vinetas/FECHA.json: sale con 1 si repite
+        d = json.load(open(sys.argv[3]))
+        avisos = repite(sys.argv[2], ((d.get("elegida") or {}).get("guion")) or {})
+        print("; ".join(avisos))
+        sys.exit(1 if avisos else 0)
     if sys.argv[1] == "--comprobar":   # vineta.py --comprobar vinetas/FECHA.json: sale con 1 si algo no cabe
         d = json.load(open(sys.argv[2]))
         fallos = comprobar(((d.get("elegida") or {}).get("guion") or {}) if "elegida" in d else d)

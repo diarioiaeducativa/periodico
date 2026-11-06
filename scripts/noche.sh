@@ -153,7 +153,10 @@ fi
 # Lo publicado, con las piezas de hoy: la Biblioteca, el Repositorio y el reportaje las enlazan (encargos/enlaces.md)
 python3 scripts/publicado.py >> "$REG" 2>&1
 
-# 2. Ilustraciones y guiones, a la vez.
+# 2. Ilustraciones y guiones, a la vez. Antes, lo que salió en las viñetas de los tres números
+# anteriores, para que el guionista y el juez no repitan escenario ni caras (ADR 0024).
+mkdir -p vinetas/recientes
+python3 vineta.py --recientes "$FECHA" > "vinetas/recientes/$FECHA.md" 2>>"$REG"
 agente "$SONNET" 2-ilustraciones 40 & p1=$!
 agente "$OPUS" 3-guiones 40 & p2=$!
 wait $p1 $p2
@@ -165,6 +168,7 @@ if json_ok "vinetas/candidatas/$FECHA.json"; then
   agente "$OPUS" 4-juez 30
   json_ok "vinetas/$FECHA.json" || { log "el juez no dejó una viñeta válida: sale sin ella"; rm -f "vinetas/$FECHA.json"; }
   comprobar_vineta "vinetas/$FECHA.json"
+  [ -e "vinetas/$FECHA.json" ] && { m=$(python3 vineta.py --repite "$FECHA" "vinetas/$FECHA.json") || log "variedad de la viñeta: $m"; }
 else
   log "no hay guiones válidos: sale sin viñeta"
 fi

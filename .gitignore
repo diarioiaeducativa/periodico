@@ -10,6 +10,8 @@ __pycache__/
 vinetas/candidatas-a/
 vinetas/candidatas-b/
 vinetas/jurado/
+# El resumen de las viñetas anteriores que leen el guionista y el juez: se rehace cada noche (ADR 0024)
+vinetas/recientes/
 semanas/
 reportajes-borrador/
 revision/
