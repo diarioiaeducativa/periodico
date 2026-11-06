@@ -35,7 +35,7 @@ agente() {   # el mismo de noche.sh, con un añadido opcional al encargo: sin te
   local modelo=$1 paso=$2 minutos=$3 extra=${4:-} salida
   extra=${extra//\{FECHA\}/$FECHA}
   log "empieza $paso ($modelo)"
-  salida=$({ sed -e "s/{FECHA}/$FECHA/g" -e "s/{PUBLICA}/$PUBLICA/g" "encargos/pasos/$paso.md"; [ -n "$extra" ] && printf '\n%s\n' "$extra"; } \
+  salida=$({ sed -e "s/{FECHA}/$FECHA/g" -e "s/{PUBLICA}/$PUBLICA/g" "encargos/pasos/$paso.md"; if [ -n "$extra" ]; then printf '\n%s\n' "$extra"; fi; } \
     | timeout "$((minutos * 60))" claude -p --model "$modelo" \
         --permission-mode acceptEdits --allowedTools WebFetch WebSearch \
         --disallowedTools "Bash" "Read(//home/**)" "Read(//proc/**)" "Read(//sitio/**)" "Read(//etc/**)" \
