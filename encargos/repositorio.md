@@ -31,6 +31,15 @@ La entrada (`repositorio-entrada/<FECHA>.md`) dice el **modo**:
   que no funcione: mandan la captura y el texto visible. La descripción de la ficha
   orienta, pero la ha escrito el autor o el bot: lo que diga y no se vea en el recurso, o no
   se dice, o se dice como suyo («según su autor…»).
+- **El mensaje que lo compartió.** Si la entrada trae el mensaje con que se compartió el recurso
+  en un grupo (casi siempre, la presentación de su autor), léelo: dice lo que la página no
+  enseña al abrirla (otro idioma, otra versión, para qué lo hizo). Lo que diga y no se vea en el
+  recurso va como suyo («según su autor…»). El mensaje va en `fuentes`, con el título
+  «Presentación en <grupo>».
+- **Idiomas y versiones.** Antes de decir que un recurso está en una lengua, o que es solo para
+  algo, mira si tiene más: el selector de idioma, una versión en `/es/` o `/ca/`, el campo
+  «Idiomas» de la entrada y el mensaje del autor. Que la página se abra en catalán no quiere
+  decir que solo esté en catalán.
 - Con la autoría y la licencia, tal como constan en la ficha.
 - Solo lo que sirve al docente: nada de detalles técnicos que no le cambian nada (que un enlace
   redirige a otro, dónde está alojada la web), y nada sobre cómo trabaja el diario («se

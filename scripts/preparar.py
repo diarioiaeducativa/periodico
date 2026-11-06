@@ -40,7 +40,11 @@ def cargar(base):
 def fmt(m):
     r = f" (responde a #{m['responde_a']})" if m.get("responde_a") else ""
     imagen = f"\n[imagen: {m['imagen']}]" if m.get("imagen") else ""
-    return f"#{m['id']} · {m['fecha'][11:16]} · tema «{m['tema_nombre']}» · {m['autor']}{r}\n{(m.get('texto') or '').strip()}{imagen}\n"
+    # La vista previa del enlace: muchas veces es el único sitio del mensaje donde está la dirección
+    w = m.get("web") or {}
+    web = (f"\n[enlace: {w['url']}" + (f" · «{w['titulo']}»" if w.get("titulo") else "") +
+           (f" · {w['descripcion']}" if w.get("descripcion") else "") + "]") if w.get("url") else ""
+    return f"#{m['id']} · {m['fecha'][11:16]} · tema «{m['tema_nombre']}» · {m['autor']}{r}\n{(m.get('texto') or '').strip()}{web}{imagen}\n"
 
 
 def main():

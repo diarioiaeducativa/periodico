@@ -214,6 +214,38 @@ def capturar(recursos, fecha):
     return recursos
 
 
+GRUPOS_TG = {"vce": "Vibe Coding Educativo", "chatgpt": "ChatGPT-IA-edu", "edumedia": "EduMedia-IAG"}
+
+
+def presentaciones(base, recursos):
+    """Los mensajes de los grupos que comparten cada recurso (por su enlace, en el texto o en la vista
+    previa): casi siempre, la presentación de su autor, que dice lo que la página no enseña de entrada
+    (otro idioma, otra versión). Los más antiguos primero, como mucho dos por recurso."""
+    claves = {}
+    for r in recursos:
+        for u in (r["url"], r.get("destino"), r.get("direccion_final")):
+            if u and norm(u):
+                claves.setdefault(norm(u), r["id"])
+    hallados = {}
+    for g, nombre in GRUPOS_TG.items():
+        try:
+            lineas = (base / g / "mensajes.jsonl").read_text().splitlines()
+        except OSError:
+            continue
+        for linea in lineas:
+            try:
+                m = json.loads(linea)
+            except ValueError:
+                continue
+            urls = re.findall(r"https?://[^\s)\]>»\"']+", m.get("texto") or "") + [(m.get("web") or {}).get("url") or ""]
+            for u in {norm(u.rstrip(".,;:")) for u in urls if u}:
+                if u in claves:
+                    hallados.setdefault(claves[u], []).append(dict(m, grupo_nombre=nombre))
+    for rid, ms in hallados.items():
+        hallados[rid] = sorted({m["enlace"]: m for m in ms}.values(), key=lambda m: m["fecha"])[:2]
+    return hallados
+
+
 def preparar(r, usados):
     base = ficha_corta(r["titulo"])
     rid, n = base, 2
@@ -284,6 +316,7 @@ def main():
     if not abren:
         print("repositorio: ninguno de los elegidos abre")
         sys.exit(3)
+    grupos = presentaciones(base, abren)
     rotulo = {"dia": "Nuevo en el repositorio", "semana": "La semana del repositorio", "fondo": "Del fondo del repositorio"}[modo]
     que = {"dia": f"{len(abren)} recurso(s) de la cola: un artículo por cada uno.",
            "semana": f"los {len(abren)} recursos que quedan en la cola: una sola pieza con todos." if len(abren) > 1 else
@@ -313,6 +346,9 @@ def main():
             partes.append("- Enlaces de la página a código o licencia: " + ", ".join(r["enlaces"]))
         partes.append(f"\n### Descripción de la ficha\n\n{r['descripcion']}\n")
         partes.append(f"### Texto que se ve al abrir la página (título: «{r.get('titulo_pagina', '')}»)\n\n{r.get('texto_visible', '')}\n")
+        for m in grupos.get(r["id"], []):
+            partes.append(f"### Mensaje que lo compartió en {m['grupo_nombre']} ({m['fecha'][:10]}, {m['autor']}; {m['enlace']})\n\n"
+                          f"{(m.get('texto') or '').strip()[:4000]}\n")
     (out / f"{fecha}.md").write_text("\n".join(partes) + "\n")
     print(f"repositorio: {len(abren)} recurso(s) para el {fecha}, modo {modo} ({', '.join(r['id'] for r in abren)})")
 

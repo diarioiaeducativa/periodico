@@ -75,6 +75,9 @@ siendo la de hoy.
   página de ayuda o el blog oficial de quien lo hace). En `descartado`, di qué buscaste.
 - Una línea `[imagen: …]` es la descripción, hecha por una IA, de la imagen que acompañaba al
   mensaje: dice de qué trata la imagen, pero lo que cuente se comprueba como lo demás.
+- Una línea `[enlace: …]` es la vista previa del enlace que compartió el mensaje: su dirección,
+  su título y su descripción. Es el enlace del mensaje aunque no esté escrito en el texto; la
+  descripción es la de la página y se comprueba abriéndola.
 - En `comprobado` anota, para cada pieza, qué comprobaste y dónde.
 
 ## Estilo
