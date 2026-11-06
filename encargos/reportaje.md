@@ -8,7 +8,10 @@ en los tres grupos (ChatGPT-IA-edu, Vibe Coding Educativo y EduMedia-IAG).
 grupos. Las piezas diarias cuentan lo que se dijo; el reportaje explica el asunto entero:
 qué es, por qué importa en un centro educativo, qué dicen quienes tienen algo que decir y
 qué puede hacer un docente. Se publica sin que nadie lo revise antes: la comprobación del
-revisor es la única revisión. Si la semana no da para un reportaje digno, no lo hay.
+revisor es la única revisión. **El reportaje sale siempre** (Juanjo, 06-11-2026: «el reportaje no puede
+faltar, siempre estará»): si la semana va floja, el tema puede venir de las semanas anteriores, si
+sigue vivo, o de un documento de la Biblioteca digital (`biblioteca/*.json`) que merezca explicarse a
+fondo y no haya tenido reportaje.
 
 ## Entrada
 

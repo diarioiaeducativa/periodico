@@ -6,11 +6,14 @@
     scripts/reserva.py faltan              cuántas faltan para tener OBJETIVO listas
     scripts/reserva.py clave               una clave libre para escribir la siguiente
     scripts/reserva.py guardar CLAVE       pasa a reserva/CLAVE/ lo que repositorio.sh escribió con esa clave
+    scripts/reserva.py caducar             retira las que pasan de CADUCA días (se escribirán otras)
     scripts/reserva.py usar AAAA-MM-DD [fallo|relleno]
                                            pone una pieza de reserva en el número de esas conversaciones
 
-Una pieza de reserva es un artículo del fondo del Repositorio de VCE («Del fondo del repositorio»):
-no caduca. La escribe repositorio.sh, con su documentalista, su revisor y su traductor, con una
+Una pieza de reserva es un artículo del fondo del Repositorio de VCE («Del fondo del repositorio»).
+Puede caducar (el recurso cambia de dirección, desaparece o pasa a ser de pago): a los CADUCA días
+sin usarse se retira y se escribe otra, y antes de usarla se comprueba que el recurso sigue
+respondiendo (ADR 0028). La escribe repositorio.sh, con su documentalista, su revisor y su traductor, con una
 clave de fecha provisional (2099-01-NN) que no choca con ningún número; aquí se guarda en
 reserva/CLAVE/ con su captura. Usarla no necesita IA: se cambia la clave por la fecha del día en
 el JSON y en el nombre de la captura, se pasa a repositorio/ y se marca la edición con
@@ -32,21 +35,57 @@ import sys
 RAIZ = pathlib.Path(__file__).resolve().parent.parent
 RESERVA = RAIZ / "reserva"
 OBJETIVO = 3          # piezas de reserva que tiene que haber siempre listas
+CADUCA = 60           # días sin usarse: se retira y se escribe otra (Juanjo, 06-11-2026)
 TRADUCCIONES = ("ca", "gl", "eu", "en")   # los idiomas a los que se traduce (scripts/idiomas.py, ADR 0026)
 PREFIJO = "2099-01-"  # las claves provisionales: una fecha que nunca será un número
 
 
+def escrita(d):
+    """La fecha en que se escribió (escrita.txt; si falta, la del archivo)."""
+    try:
+        return datetime.date.fromisoformat((d / "escrita.txt").read_text().strip())
+    except (OSError, ValueError):
+        return datetime.date.fromtimestamp((d / "repositorio.json").stat().st_mtime)
+
+
 def listas():
-    """Las reservas con alguna pieza, la más antigua primero."""
+    """Las reservas vigentes con alguna pieza, la más antigua primero."""
     out = []
+    hoy = datetime.date.today()
     for d in sorted(RESERVA.glob(PREFIJO + "*")):
         f = d / "repositorio.json"
         try:
-            if json.loads(f.read_text()).get("piezas"):
+            if json.loads(f.read_text()).get("piezas") and (hoy - escrita(d)).days <= CADUCA:
                 out.append(d)
         except (OSError, ValueError):
             pass
     return out
+
+
+def retirar(d, motivo):
+    viejo = RESERVA / "retiradas" / d.name
+    viejo.parent.mkdir(exist_ok=True)
+    shutil.rmtree(viejo, ignore_errors=True)
+    shutil.move(str(d), viejo)
+    (viejo / "motivo.txt").write_text(f"{datetime.date.today().isoformat()}: {motivo}\n")
+    print(f"reserva: {d.name} retirada ({motivo})")
+
+
+def caducar():
+    hoy = datetime.date.today()
+    for d in sorted(RESERVA.glob(PREFIJO + "*")):
+        if (d / "repositorio.json").exists() and (hoy - escrita(d)).days > CADUCA:
+            retirar(d, f"escrita el {escrita(d)}, pasa de {CADUCA} días")
+
+
+def vigente(d):
+    """Que cada recurso siga respondiendo en su dirección (sin IA, para que el plan B sea rápido)."""
+    import reserva_reportaje   # noqa: E402 — la misma comprobación de enlaces
+    for p in json.loads((d / "repositorio.json").read_text()).get("piezas", []):
+        for r in p.get("recursos", []):
+            if r.get("url") and not reserva_reportaje.responde(r["url"]):
+                return False, f"{r['url']} no responde"
+    return True, ""
 
 
 def clave_libre():
@@ -68,6 +107,7 @@ def guardar(clave):
         f = RAIZ / origen / f"{clave}.json"
         if f.exists():
             shutil.move(str(f), dest / nombre)
+    (dest / "escrita.txt").write_text(datetime.date.today().isoformat() + "\n")
     for f in (RAIZ / "repositorio" / "capturas").glob(f"{clave}-*.jpg"):
         (dest / "capturas").mkdir(exist_ok=True)
         shutil.move(str(f), dest / "capturas" / f.name)
@@ -130,11 +170,17 @@ def usar(fecha, motivo="fallo"):
         avisos(fecha, False)
         print(f"reserva: el número del {fecha} ya tiene piezas; no hace falta la reserva")
         return 4
-    hay = listas()
-    if not hay:
+    caducar()
+    r = None
+    for d in listas():
+        ok, motivo = vigente(d)
+        if ok:
+            r = d
+            break
+        retirar(d, motivo)
+    if r is None:
         print("reserva: no queda ninguna pieza de reserva", file=sys.stderr)
         return 3
-    r = hay[0]
     clave = r.name
     nuevas = []
     for nombre, destino in [("repositorio.json", "repositorio")] + [(f"repositorio-{c}.json", f"repositorio-{c}") for c in TRADUCCIONES]:
@@ -170,6 +216,8 @@ def main():
     orden = sys.argv[1] if len(sys.argv) > 1 else ""
     if orden == "cuantas":
         print(len(listas()))
+    elif orden == "caducar":
+        caducar()
     elif orden == "faltan":
         print(max(0, OBJETIVO - len(listas())))
     elif orden == "clave":
@@ -177,7 +225,13 @@ def main():
     elif orden == "guardar" and len(sys.argv) == 3:
         sys.exit(guardar(sys.argv[2]))
     elif orden == "usar" and len(sys.argv) in (3, 4) and (sys.argv[3:] or ["fallo"])[0] in ("fallo", "relleno"):
-        sys.exit(usar(sys.argv[2], (sys.argv[3:] or ["fallo"])[0]))
+        codigo = usar(sys.argv[2], (sys.argv[3:] or ["fallo"])[0])
+        # El sábado, el número del domingo lleva siempre reportaje: si la noche no llegó a hacerlo,
+        # el de reserva (ADR 0028). No cambia lo que se responde sobre las piezas.
+        if datetime.date.fromisoformat(sys.argv[2]).weekday() == 5:
+            import reserva_reportaje   # noqa: E402
+            reserva_reportaje.usar(sys.argv[2])
+        sys.exit(codigo)
     else:
         print(__doc__, file=sys.stderr)
         sys.exit(1)

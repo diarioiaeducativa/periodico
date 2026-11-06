@@ -28,5 +28,7 @@
 | [0024](0024-variedad-de-la-vineta.md) | Variedad de la viñeta: memoria de los números anteriores y tres escenarios nuevos |
 | [0025](0025-vista-previa-a-las-cinco.md) | Vista previa del número a las 5:00, en la red de casa |
 | [0026](0026-cinco-idiomas.md) | Cinco idiomas: gallego, euskera e inglés, además del castellano y el catalán |
+| [0027](0027-el-dominical.md) | El dominical: la semana en vídeo con el reportaje, en todas las redes |
+| [0028](0028-el-reportaje-sale-siempre.md) | El reportaje sale siempre, y las reservas caducan |
 
 Plantilla: [0000-plantilla.md](0000-plantilla.md). Para crear uno: `nuevo-adr "Título"`.
