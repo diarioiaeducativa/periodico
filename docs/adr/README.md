@@ -27,5 +27,6 @@
 | [0023](0023-siempre-hay-vineta.md) | Siempre hay viñeta: el juez elige el mejor guion aunque no llegue al 7 |
 | [0024](0024-variedad-de-la-vineta.md) | Variedad de la viñeta: memoria de los números anteriores y tres escenarios nuevos |
 | [0025](0025-vista-previa-a-las-cinco.md) | Vista previa del número a las 5:00, en la red de casa |
+| [0026](0026-cinco-idiomas.md) | Cinco idiomas: gallego, euskera e inglés, además del castellano y el catalán |
 
 Plantilla: [0000-plantilla.md](0000-plantilla.md). Para crear uno: `nuevo-adr "Título"`.

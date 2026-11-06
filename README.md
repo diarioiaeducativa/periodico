@@ -2,7 +2,8 @@
 
 El código y la redacción del [Diario de IA Educativa](https://diarioiaeducativa.github.io/):
 cada noche, ocho agentes de IA leen lo que se ha hablado en tres comunidades docentes de
-Telegram y preparan el número que sale a las 7:00, en castellano y en catalán, con su
+Telegram y preparan el número que sale a las 7:00 en castellano, traducido al catalán, gallego,
+euskera e inglés ([ADR 0026](docs/adr/0026-cinco-idiomas.md)), con su
 viñeta de Tiza y Algoritmo. La noche del sábado, cinco agentes más preparan el
 reportaje del domingo ([ADR 0004](docs/adr/0004-reportaje-del-domingo.md)). El sitio generado se publica en
 [diarioiaeducativa.github.io](https://github.com/diarioiaeducativa/diarioiaeducativa.github.io).
@@ -14,7 +15,8 @@ reportaje del domingo ([ADR 0004](docs/adr/0004-reportaje-del-domingo.md)). El s
 - `scripts/reel-semana.sh` y `scripts/reel-semana.py`: «La semana en vídeo», el reel del domingo, con música de `scripts/musica.py` distinta cada vez; los vídeos de la web, en `videos/` ([ADR 0016](docs/adr/0016-videos-y-la-semana-en-video.md)).
 - `scripts/instagram.py`: el carrusel diario en Instagram (@comunidad.iaeducativa): imágenes, publicación y renovación del permiso ([ADR 0015](docs/adr/0015-el-numero-en-instagram.md)).
 - `lucide/iconos.txt`: los iconos de Lucide que el ilustrador puede usar en sus dibujos, preparados por `scripts/lucide.py` ([ADR 0014](docs/adr/0014-iconos-de-lucide-rotulos-en-la-descripcion-y-dibujos-ampliables.md)).
-- `ediciones/`, `ilustraciones/`, `vinetas/` (y sus versiones `-ca`) y `avisos/`: lo que ha escrito la redacción.
+- `ediciones/`, `ilustraciones/`, `vinetas/` (y sus versiones `-ca`, `-gl`, `-eu` y `-en`) y `avisos/`: lo que ha escrito la redacción.
+- `idiomas_web.py`: los textos de la web en gallego, euskera e inglés; `scripts/idiomas.py`, `scripts/traducir.sh` y `scripts/traducir-dia.sh`: las traducciones de cada noche, su comprobación y la de un día ya publicado ([ADR 0026](docs/adr/0026-cinco-idiomas.md)).
 - `publicar.sh`: publicar a mano desde el portátil.
 - `reserva/`, `scripts/reserva.sh` y `scripts/reserva.py`: las piezas de reserva para que no haya ningún día sin número, y `scripts/vigilante.sh` con `.github/workflows/vigilante.yml`, el vigilante que saca el número desde GitHub si el NAS no lo ha publicado ([ADR 0021](docs/adr/0021-ningun-dia-sin-numero.md)).
 
