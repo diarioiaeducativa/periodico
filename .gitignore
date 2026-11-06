@@ -22,3 +22,4 @@ repositorio-entrada/
 # Las imágenes del carrusel de Instagram: se rehacen con scripts/instagram.py y viven un día en la rama instagram del sitio (ADR 0015)
 instagram/
 indice/
+encargos/pasos/_*.md

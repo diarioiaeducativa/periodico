@@ -11,7 +11,8 @@
 #   2. ilustrador (Sonnet)  ‖  guionista (Opus, cinco guiones); después, el revisor de dibujos
 #      (un programa que los mira en la página y Sonnet), con una vuelta al ilustrador (ADR 0005)
 #   3. juez de humor (Opus) → vinetas/FECHA.json
-#   4. traductor (Sonnet)  ‖  avisos (Sonnet) → avisos/PUBLICA.json
+#   4. traductor (Sonnet, una vez por idioma: catalán, gallego, euskera e inglés, ADR 0026)  ‖  avisos
+#      (Sonnet) → avisos/PUBLICA.json
 # El sábado, después, el guionista del reel de la semana (Sonnet) y el vídeo (scripts/reel-semana.sh, ADR 0016).
 # Si FECHA es sábado, entre el 3 y el 4 va el reportaje del domingo (scripts/reportaje.sh, cinco
 # agentes más, ADR 0004): los avisos del domingo ya lo pueden anunciar. Si no sale, el número sale igual.
@@ -89,7 +90,8 @@ solo_anexos() {
   touch "estado/$FECHA.sin-numero"
   exit 0
 }
-. scripts/dibujos.sh   # revisar_dibujos y revisar_dibujos_ca (ADR 0005)
+. scripts/dibujos.sh   # revisar_dibujos y revisar_dibujos_traducidos (ADR 0005)
+. scripts/traducir.sh   # traducir (ADR 0026)
 
 log "=== número del $PUBLICA, con las conversaciones del $FECHA"
 # Lo que se haya cambiado desde el portátil (encargos, generador) llega solo antes de empezar.
@@ -179,26 +181,25 @@ if [ "$(date -d "$FECHA" +%u)" = 6 ] || [ "${REPORTAJE:-0}" = 1 ]; then
   case $? in
     0) ;;
     2) avisar-juanjo --de "Diario de IA Educativa" "El número del domingo sale sin reportaje: $(grep 'sin reportaje: ' "$REG" | tail -1 | sed 's/.*sin reportaje: //'). Registro: /volume1/docker/diario-ia-educativa/repo/registro/$FECHA.log" >/dev/null 2>&1 || true ;;
-    *) log "el reportaje falló de forma inesperada: sale sin él"; rm -f "reportajes/$FECHA.json" "reportajes-ca/$FECHA.json" ;;
+    *) log "el reportaje falló de forma inesperada: sale sin él"; rm -f reportajes/"$FECHA".json $(traducidos reportajes) ;;
   esac
 fi
 
 # 3 ter. La Biblioteca digital: un artículo por cada documento que entró hoy (ADR 0006). Nunca impide el número.
 bash scripts/biblioteca.sh "$FECHA"
-[ $? -le 2 ] || { log "la biblioteca falló de forma inesperada: sale sin ella"; rm -f "biblioteca/$FECHA.json" "biblioteca-ca/$FECHA.json"; }
+[ $? -le 2 ] || { log "la biblioteca falló de forma inesperada: sale sin ella"; rm -f biblioteca/"$FECHA".json $(traducidos biblioteca); }
 
 # 3 quater. El repositorio de Vibe Coding Educativo, si el número se queda corto o es viernes (ADR 0008). Nunca impide el número.
 bash scripts/repositorio.sh "$FECHA"
-[ $? -le 2 ] || { log "el repositorio falló de forma inesperada: sale sin él"; rm -f "repositorio/$FECHA.json" "repositorio-ca/$FECHA.json"; }
+[ $? -le 2 ] || { log "el repositorio falló de forma inesperada: sale sin él"; rm -f repositorio/"$FECHA".json $(traducidos repositorio); }
 
 # 4. Traducción y avisos, a la vez.
-agente "$SONNET" 5-traduccion 50 & p1=$!
+traducir 5-traduccion edicion 50 & p1=$!
 agente "$SONNET" 6-avisos 20 & p2=$!
 wait $p1 $p2
-for f in "ediciones-ca/$FECHA.json" "vinetas-ca/$FECHA.json"; do
-  [ -e "$f" ] && ! json_ok "$f" && { log "traducción inválida, se usa el castellano: $f"; rm -f "$f"; }
+for c in $TRADUCCIONES; do
+  comprobar_vineta "vinetas-$c/$FECHA.json"
 done
-comprobar_vineta "vinetas-ca/$FECHA.json"
 if ! python3 -c '
 import json, sys
 d = json.load(open(sys.argv[1]))["avisos"]
@@ -211,7 +212,11 @@ for a in d.values():   # saludo y de dos a tres puntos (ADR 0010)
 fi
 
 # 4 bis. Los dibujos traducidos, solo con el programa: el que falle, en castellano.
-revisar_dibujos_ca
+revisar_dibujos_traducidos
+# Lo que se quitó de alguna traducción esta noche, en un solo aviso (ADR 0026): esa edición sale con el castellano
+if [ -s "registro/$FECHA-traduccion.txt" ]; then
+  avisar-juanjo --de "Diario de IA Educativa" "Alguna traducción del número de hoy no ha pasado la comprobación y esa parte sale en castellano: $(sort -u "registro/$FECHA-traduccion.txt" | tr '\n' ' ')Registro: /volume1/docker/diario-ia-educativa/repo/registro/$FECHA.log" >/dev/null 2>&1 || true
+fi
 
 # 4 ter. El sábado, «La semana en vídeo» para el número del domingo (ADR 0016). Nunca impide el número.
 reel_semana() {

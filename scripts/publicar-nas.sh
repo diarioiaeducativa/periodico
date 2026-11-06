@@ -61,7 +61,10 @@ fi
 
 # Lo escrito por los agentes, al repositorio de la redacción (los mensajes de dias/ no se suben).
 # Solo las carpetas que existen: si falta una, git add no añade nada y la redacción no se guarda.
-git add -A $(ls -d og/numeros videos reels ediciones ediciones-ca ilustraciones ilustraciones-ca vinetas vinetas-ca avisos publicado.txt reportajes reportajes-ca biblioteca biblioteca-ca repositorio repositorio-ca reserva 2>/dev/null) >> "$REG" 2>&1 ||
+# Las carpetas traducidas, una por idioma (ADR 0026); las de borradores no se suben (.gitignore).
+TRAD=$(for c in $(python3 scripts/idiomas.py lista); do printf ' %s-%s' ediciones "$c" ilustraciones "$c" vinetas "$c" reportajes "$c" biblioteca "$c" repositorio "$c"; done)
+# shellcheck disable=SC2086
+git add -A $(ls -d og/numeros videos reels ediciones ilustraciones vinetas avisos publicado.txt reportajes biblioteca repositorio reserva $TRAD 2>/dev/null) >> "$REG" 2>&1 ||
   log "AVISO: no se pudo preparar lo escrito por la redacción para subirlo"
 if ! git diff --cached --quiet; then
   git commit -qm "Número del $PUBLICA" || log "AVISO: no se pudo preparar el commit de la redacción"

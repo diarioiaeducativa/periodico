@@ -77,7 +77,7 @@ git -C /tmp/sitio commit -qm "Número del $HOY, con la pieza de reserva (vigilan
 unset GIT_SSH_COMMAND
 
 # La redacción: lo que ha cambiado la reserva, para que el NAS no lo rehaga y mañana recupere el día
-git add -A ediciones repositorio repositorio-ca reserva avisos publicado.txt
+git add -A ediciones repositorio $(ls -d repositorio-ca repositorio-gl repositorio-eu repositorio-en 2>/dev/null) reserva avisos publicado.txt   # ADR 0026
 git commit -qm "Número del $HOY, con la pieza de reserva (vigilante, ADR 0021)" && git push -q ||
   echo "vigilante: AVISO: no se pudo subir la redacción"
 avisar "A las $(date +%H:%M) el número de hoy ($HOY) no estaba en la web: lo he publicado con una pieza de reserva. Los grupos no reciben aviso, porque el bot está en el NAS. Mira si el NAS está encendido o por qué no publicó."

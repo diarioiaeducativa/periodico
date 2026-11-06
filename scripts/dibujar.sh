@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # SPDX-License-Identifier: AGPL-3.0-or-later
 # Dibuja las piezas de un número que se quedaron sin dibujo (o las que se indiquen), con la
-# misma revisión que cada noche (ADR 0005), y las traduce al catalán. Sirve para los números
+# misma revisión que cada noche (ADR 0005), y las traduce a cada idioma (ADR 0026). Sirve para los números
 # anteriores al 03-11-2026, cuando solo se dibujaban las piezas de importancia 1 y 2, y para
 # volver a intentar un dibujo retirado. Después, publicar-nas.sh lo sube con el número siguiente.
 #
@@ -30,7 +30,8 @@ agente() {   # el mismo de noche.sh, con {IDS}: sin terminal y sin leer fuera de
   log "acaba $paso (código $codigo)"
   return $codigo
 }
-. scripts/dibujos.sh   # revisar_dibujos y revisar_dibujos_ca
+. scripts/dibujos.sh   # revisar_dibujos y revisar_dibujos_traducidos
+. scripts/traducir.sh   # traducir y traducidos (ADR 0026)
 
 if [ $# -gt 0 ]; then
   ids="$*"
@@ -55,11 +56,15 @@ revisar_dibujos $ids
 hechos=$(for id in $ids; do [ -e "ilustraciones/$FECHA-$id.svg" ] && printf '%s ' "$id"; done)
 [ -n "$hechos" ] || { log "ningún dibujo ha pasado la revisión"; exit 0; }
 IDS=$(echo "$hechos" | sed 's/ *$//; s/ /, /g')
-if [ -e "ediciones-ca/$FECHA.json" ]; then
-  cp "ediciones-ca/$FECHA.json" "registro/$FECHA-antes-ca.json"
-  agente "$SONNET" 2e-ilustraciones-traduccion 20
-  python3 -c 'import json,sys; json.load(open(sys.argv[1]))' "ediciones-ca/$FECHA.json" 2>/dev/null \
-    || { log "la traducción estropeó ediciones-ca: se deja como estaba"; cp "registro/$FECHA-antes-ca.json" "ediciones-ca/$FECHA.json"; }
-  revisar_dibujos_ca
-fi
+for c in $TRADUCCIONES; do   # los dibujos, también en cada idioma que tenga ya su edición (ADR 0026)
+  [ -e "ediciones-$c/$FECHA.json" ] || continue
+  cp "ediciones-$c/$FECHA.json" "registro/$FECHA-antes-$c.json"
+  python3 scripts/idiomas.py encargo 2e-ilustraciones-traduccion "$c" > "encargos/pasos/_2e-$c.md"
+  agente "$SONNET" "_2e-$c" 20
+  rm -f "encargos/pasos/_2e-$c.md"
+  python3 -c 'import json,sys; json.load(open(sys.argv[1]))' "ediciones-$c/$FECHA.json" 2>/dev/null \
+    || { log "la traducción estropeó ediciones-$c: se deja como estaba"; cp "registro/$FECHA-antes-$c.json" "ediciones-$c/$FECHA.json"; }
+  python3 scripts/idiomas.py comprobar dibujos "$FECHA" "$c" >> "$REG" 2>&1
+done
+revisar_dibujos_traducidos
 log "dibujos del $FECHA hechos: $hechos"

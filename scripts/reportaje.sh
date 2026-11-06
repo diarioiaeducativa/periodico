@@ -9,7 +9,7 @@
 #   7. jefe de reportajes (Opus) → elige el tema: reportajes-borrador/FECHA-tema.json
 #   8. reportero (Opus) → investiga y escribe: reportajes-borrador/FECHA.json
 #   9. verificador (Sonnet, no ha escrito nada) → reportajes/FECHA.json
-#  10. ilustrador (Sonnet) → la infografía;  11. traductor (Sonnet) → reportajes-ca/
+#  10. ilustrador (Sonnet) → la infografía;  11. traductor (Sonnet, uno por idioma) → reportajes-XX/ (ADR 0026)
 # Sin verificación no hay reportaje, y el número del domingo sale igual: este guion nunca
 # impide que salga. Sale con 0 si hay reportaje y con 2 si no (noche.sh lo apunta y avisa).
 set -uo pipefail
@@ -21,7 +21,7 @@ PUBLICA=$(date -d "$FECHA + 1 day" +%F)
 DATOS="${DATOS_BOT:-/bot-datos}"
 SONNET="${MODELO_SONNET:-claude-sonnet-5-5}"
 OPUS="${MODELO_OPUS:-claude-opus-5-5}"
-mkdir -p registro reportajes reportajes-borrador reportajes-ca semanas
+mkdir -p registro reportajes reportajes-borrador semanas
 REG="registro/$FECHA.log"
 
 log() { printf '%s  %s\n' "$(date '+%F %T')" "$*" | tee -a "$REG"; }
@@ -42,12 +42,13 @@ agente() {   # el mismo de noche.sh: sin terminal y sin leer fuera de la redacci
 
 json_ok() { python3 -c 'import json,sys; json.load(open(sys.argv[1]))' "$1" 2>/dev/null; }
 . scripts/dibujos.sh   # revisar_dibujos (ADR 0005)
+. scripts/traducir.sh   # traducir y traducidos (ADR 0026)
 hay() { python3 -c 'import json,sys; sys.exit(0 if json.load(open(sys.argv[1])).get("hay_reportaje") else 1)' "$1" 2>/dev/null; }
-sin() { log "sin reportaje: $*"; rm -f "reportajes/$FECHA.json" "reportajes-ca/$FECHA.json"; exit 2; }
+sin() { log "sin reportaje: $*"; rm -f reportajes/"$FECHA".json $(traducidos reportajes); exit 2; }
 
 log "=== reportaje del domingo $PUBLICA, con la semana que acaba el $FECHA"
 python3 scripts/semana.py "$DATOS" semanas "$FECHA" >> "$REG" 2>&1 || sin "la semana no tiene mensajes o no se pudieron leer"
-rm -f "reportajes-borrador/$FECHA-tema.json" "reportajes-borrador/$FECHA.json" "reportajes/$FECHA.json" "reportajes-ca/$FECHA.json"
+rm -f "reportajes-borrador/$FECHA-tema.json" "reportajes-borrador/$FECHA.json" "reportajes/$FECHA.json" $(traducidos reportajes)
 
 agente "$OPUS" 7-reportaje-tema 20
 json_ok "reportajes-borrador/$FECHA-tema.json" || sin "el jefe de reportajes no dejó el tema"
@@ -70,6 +71,5 @@ hay "reportajes/$FECHA.json" || sin "el verificador no lo da por bueno: $(python
 agente "$SONNET" 10-reportaje-ilustracion 30
 json_ok "reportajes/$FECHA.json" || sin "el ilustrador estropeó el JSON del reportaje"
 revisar_dibujos "$(python3 -c 'import json,sys; print(json.load(open(sys.argv[1]))["id"])' "reportajes/$FECHA.json")"
-agente "$SONNET" 11-reportaje-traduccion 40
-[ -e "reportajes-ca/$FECHA.json" ] && ! json_ok "reportajes-ca/$FECHA.json" && { log "traducción inválida, se usa el castellano"; rm -f "reportajes-ca/$FECHA.json"; }
+traducir 11-reportaje-traduccion reportaje 40
 log "reportaje listo: $(python3 -c 'import json,sys; print(json.load(open(sys.argv[1]))["titular"])' "reportajes/$FECHA.json")"

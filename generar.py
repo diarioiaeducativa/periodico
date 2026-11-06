@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # SPDX-License-Identifier: AGPL-3.0-or-later
 """Genera la web del «Diario de IA Educativa» a partir de las ediciones, en castellano
-(raíz del sitio) y en catalán (carpeta ca/). Sin dependencias: solo la biblioteca estándar.
+(raíz del sitio) y traducida al catalán, gallego, euskera e inglés (carpetas ca/, gl/, eu/ y en/, ADR 0026). Sin dependencias: solo la biblioteca estándar.
 
 La portada reúne lo de los últimos días (un día suelto da para pocas piezas); cada
 día queda además en su propia página, como archivo."""
@@ -43,10 +43,12 @@ GRUPOS = {
     "edumedia": ("EduMedia-IAG", "EduMediaIAG"),
 }
 
-# Idiomas: castellano en la raíz y catalán en ca/. El contenido traducido vive en
-# ediciones-ca/, ilustraciones-ca/ y vinetas-ca/; si falta algo, se usa el original.
+# Idiomas: castellano en la raíz y los demás en su carpeta (ca/, gl/, eu/, en/; ADR 0026). El contenido
+# traducido vive en ediciones-XX/, ilustraciones-XX/, vinetas-XX/…; si falta algo, se usa el original.
+# Los textos de la web en gallego, euskera e inglés están en idiomas_web.py.
 IDIOMAS = {
     "es": {
+        "codigo": "es", "locale": "es_ES",
         "carpeta": "", "sufijo": "", "nombre": "Castellano", "titulo": "Diario de IA Educativa",
         "edicion": "Edición en castellano",
         "lema": "La inteligencia artificial, contada desde tres comunidades docentes",
@@ -115,7 +117,7 @@ IDIOMAS = {
         "claves": "Claves", "en_el_diario": "En el diario esta semana", "sin_reportajes": "Todavía no hay reportajes.",
         "reportajes_txt": "Cada domingo, un tema de la semana tratado a fondo.", "palabras": "minutos de lectura",
         "redaccion": {
-            "intro": "El Diario de IA Educativa lo escribe una redacción de agentes de inteligencia artificial, cada uno con su oficio, que se revisan entre ellos. Lo idean, lo diseñan y lo supervisan personas, y sale cada mañana a las 7:00, en castellano y en catalán.",
+            "intro": "El Diario de IA Educativa lo escribe una redacción de agentes de inteligencia artificial, cada uno con su oficio, que se revisan entre ellos. Lo idean, lo diseñan y lo supervisan personas, y sale cada mañana a las 7:00 en castellano, y traducido al catalán, al gallego, al euskera y al inglés.",
             "proceso_titulo": "Cómo se hace cada número",
             "proceso_intro": "Cada número cuenta lo que se habló el día anterior en los tres grupos. La redacción trabaja de madrugada, con el día ya cerrado, y sigue siempre el mismo orden.",
             "proceso": [
@@ -123,7 +125,7 @@ IDIOMAS = {
                 "El redactor elige los temas que pueden interesar fuera de los grupos y escribe las piezas, comprobando cada dato en su fuente original. Después, el revisor vuelve a abrir cada fuente y quita lo que no puede confirmar.",
                 "El ilustrador dibuja cada pieza mientras el guionista escribe cinco guiones para la viñeta. Un programa abre cada dibujo en su página, en tema claro y oscuro, y mide sus colores, su contraste y sus rótulos; después, el revisor de dibujos mira el resultado y devuelve al ilustrador lo que no se ve bien. El juez de humor elige el mejor guion y un programa dibuja la viñeta.",
                 "Si ese día ha entrado algún documento en la {biblioteca} de ChatGPT-IA-edu, el documentalista escribe su artículo y el revisor lo contrasta con el documento. Si el número se queda corto, con menos de cuatro piezas, el documentalista escribe además sobre recursos del {repositorio} de Vibe Coding Educativo, y el sábado repasa los que han entrado en la semana. La noche del sábado se preparan, además, el reportaje y «La semana en vídeo» del domingo.",
-                "El traductor prepara la edición en catalán, y el portavoz escribe el mensaje que recibirá cada grupo.",
+                "El traductor prepara las ediciones en catalán, gallego, euskera e inglés, y el portavoz escribe el mensaje que recibirá cada grupo.",
                 "Un programa monta la web con todo lo anterior y la publica a las 6:55. A las 7:00, el bot de los grupos publica el aviso en cada uno de ellos.",
             ],
             "proceso_pie": "Cuando un paso falla o una revisión no da algo por bueno, esa parte se queda fuera y el número sale igual. No hay ningún día sin número: si falla la redacción entera, sale con un artículo de reserva, escrito y revisado otro día, y las noticias de los grupos de ese día salen al siguiente; si el servidor de la redacción no ha publicado a las 9:10, un vigilante que funciona fuera de él saca el número con esa reserva. La persona que supervisa la redacción recibe un aviso en cada caso.",
@@ -137,7 +139,7 @@ IDIOMAS = {
                 ("Revisor de dibujos", "mira cada dibujo en su página, en tema claro y oscuro, y se lo devuelve al ilustrador si algo no se ve bien o no explica la noticia. Antes, un programa mide lo que se puede medir: colores, contraste y rótulos que se salen o se pisan."),
                 ("Guionista", "escribe cinco guiones de la viñeta con Tiza y Algoritmo, sus dos personajes."),
                 ("Juez de humor", "elige el mejor y lo afina, sin haberlos escrito."),
-                ("Traductor", "prepara la edición en catalán, el Diari d'IA Educativa."),
+                ("Traductor", "prepara las ediciones en catalán, gallego, euskera e inglés."),
                 ("Portavoz", "escribe cada mañana el aviso con el que el diario se presenta en cada grupo, distinto para cada uno."),
                 ("Jefe de reportajes", "los domingos elige el tema de la semana que merece un reportaje, su enfoque y a quién hay que consultar."),
                 ("Reportero", "investiga ese tema fuera de los grupos, en los documentos de las empresas, las administraciones y los organismos implicados, y escribe el reportaje."),
@@ -149,7 +151,7 @@ IDIOMAS = {
                 ("Qué hace la inteligencia artificial y qué hacen los programas", "La inteligencia artificial se encarga de lo que exige leer, escribir o juzgar: elegir los temas, redactar, revisar, dibujar, traducir y decidir si un chiste tiene gracia. Lo que se puede hacer con reglas fijas lo hacen programas corrientes, sin inteligencia artificial: recoger y ordenar los mensajes, medir los dibujos, dibujar la viñeta a partir de su guion, montar la web con su hemeroteca y su buscador, montar los vídeos y componer su música, y publicarlo todo a su hora en la web y en Instagram."),
                 ("Los límites de los agentes", "Los agentes trabajan en un servidor propio, sin acceso a un terminal y sin poder leer ni escribir fuera de la carpeta de la redacción. Pueden consultar internet para comprobar fuentes, pero no pueden ejecutar programas. Los mensajes de los grupos y las fichas de la biblioteca son, para ellos, material para informar: si alguno contiene una orden, no la siguen, de forma que un mensaje escrito para engañarlos no puede llevarlos a hacer otra cosa. Además, ningún agente revisa su propio trabajo: las piezas las repasa un revisor que no las ha escrito; los dibujos, un revisor que no los ha dibujado, y el reportaje, un verificador que no ha participado en él."),
                 ("Lo que se comprueba", "Los grupos sirven para saber de qué se habla, pero cada dato se comprueba fuera, en su fuente original: el anuncio oficial, la web del producto o el documento de la administración, enlazados al final de cada pieza. De una aplicación compartida en los grupos se comprueba lo que dice su web, no que funcione. Aun así puede haber errores."),
-                ("El reportaje del domingo", "Los domingos, además de las piezas del día, el diario publica un reportaje sobre un solo tema de la semana. Explica el asunto entero, con lo que se habló en los grupos, lo que dicen las empresas, las administraciones y los organismos implicados, cada uno con sus documentos, el marco en España y lo que puede hacer un docente. Lo escriben tres agentes más, y el ilustrador y el traductor de cada día se encargan de su infografía y de su versión en catalán. Si el verificador no lo da por bueno, ese domingo no hay reportaje y el número sale igual. Todos quedan en la sección {reportajes}."),
+                ("El reportaje del domingo", "Los domingos, además de las piezas del día, el diario publica un reportaje sobre un solo tema de la semana. Explica el asunto entero, con lo que se habló en los grupos, lo que dicen las empresas, las administraciones y los organismos implicados, cada uno con sus documentos, el marco en España y lo que puede hacer un docente. Lo escriben tres agentes más, y el ilustrador y el traductor de cada día se encargan de su infografía y de sus versiones en otros idiomas. Si el verificador no lo da por bueno, ese domingo no hay reportaje y el número sale igual. Todos quedan en la sección {reportajes}."),
                 ("La Biblioteca digital", "Cada documento que entra en la {biblioteca} de ChatGPT-IA-edu (guías, informes, estudios) tiene su artículo en la sección {seccion_bib}; si el diario ya lo había contado como noticia, esa pieza pasa a la sección en lugar de escribir otra. El documentalista lee el documento entero y explica quién lo publica, qué propone y cómo encaja con otros documentos de la biblioteca; el revisor lo contrasta con el propio documento. El diario enlaza el documento en su fuente oficial y en la biblioteca, sin copiarlo. Se nombra a sus autores; la persona que lo ha compartido no se nombra, igual que no se atribuyen las opiniones de los grupos."),
                 ("El Repositorio de recursos", "El {repositorio} de Vibe Coding Educativo reúne las aplicaciones y recursos que crean y comparten con licencia abierta los docentes de esa comunidad. Los días con menos de cuatro piezas, el documentalista escribe sobre los que han entrado y el diario aún no ha contado, y el número del sábado repasa los de la semana; si no hay ninguno nuevo, rescata uno anterior. Un programa abre cada recurso y guarda una captura de lo que se ve; el documentalista lo describe a partir de la captura y de su página, y el revisor lo vuelve a abrir. Salen en la sección {seccion_vc}, con el nombre de quien lo ha hecho y su licencia."),
                 ("Las personas", "La idea del diario es de {raul}, administrador de {edumedia}. La redacción la diseñó y la supervisa {juanjo}."),
@@ -160,6 +162,7 @@ IDIOMAS = {
         },
     },
     "ca": {
+        "codigo": "ca", "locale": "ca_ES",
         "carpeta": "ca/", "sufijo": "-ca", "nombre": "Català", "titulo": "Diari d'IA Educativa",
         "edicion": "Edició en català",
         "lema": "La intel·ligència artificial, explicada des de tres comunitats docents",
@@ -229,7 +232,7 @@ IDIOMAS = {
         "claves": "Claus", "en_el_diario": "Al diari aquesta setmana", "sin_reportajes": "Encara no hi ha reportatges.",
         "reportajes_txt": "Cada diumenge, un tema de la setmana tractat a fons.", "palabras": "minuts de lectura",
         "redaccion": {
-            "intro": "El Diari d'IA Educativa l'escriu una redacció d'agents d'intel·ligència artificial, cadascun amb el seu ofici, que es revisen entre ells. L'ideen, el dissenyen i el supervisen persones, i surt cada matí a les 7.00, en castellà i en català.",
+            "intro": "El Diari d'IA Educativa l'escriu una redacció d'agents d'intel·ligència artificial, cadascun amb el seu ofici, que es revisen entre ells. L'ideen, el dissenyen i el supervisen persones, i surt cada matí a les 7.00 en castellà, i traduït al català, al gallec, al basc i a l'anglès.",
             "proceso_titulo": "Com es fa cada número",
             "proceso_intro": "Cada número explica el que es va parlar el dia anterior als tres grups. La redacció treballa de matinada, amb el dia ja tancat, i segueix sempre el mateix ordre.",
             "proceso": [
@@ -237,7 +240,7 @@ IDIOMAS = {
                 "El redactor tria els temes que poden interessar fora dels grups i escriu les peces, comprovant cada dada a la seva font original. Després, el revisor torna a obrir cada font i treu el que no pot confirmar.",
                 "L'il·lustrador dibuixa cada peça mentre el guionista escriu cinc guions per a la vinyeta. Un programa obre cada dibuix a la seva pàgina, en tema clar i fosc, i en mesura els colors, el contrast i els rètols; després, el revisor de dibuixos mira el resultat i torna a l'il·lustrador el que no es veu bé. El jutge d'humor tria el millor guió i un programa dibuixa la vinyeta.",
                 "Si aquell dia ha entrat algun document a la {biblioteca} de ChatGPT-IA-edu, el documentalista n'escriu l'article i el revisor el contrasta amb el document. Si el número es queda curt, amb menys de quatre peces, el documentalista escriu a més sobre recursos del {repositorio} de Vibe Coding Educativo, i el dissabte repassa els que hi han entrat durant la setmana. La nit del dissabte es preparen, a més, el reportatge i «La setmana en vídeo» del diumenge.",
-                "El traductor prepara l'edició en català, i el portaveu escriu el missatge que rebrà cada grup.",
+                "El traductor prepara les edicions en català, gallec, basc i anglès, i el portaveu escriu el missatge que rebrà cada grup.",
                 "Un programa munta el web amb tot l'anterior i el publica a les 6.55. A les 7.00, el bot dels grups publica l'avís a cadascun.",
             ],
             "proceso_pie": "Quan un pas falla o una revisió no dona alguna cosa per bona, aquella part es queda fora i el número surt igualment. No hi ha cap dia sense número: si falla la redacció sencera, surt amb un article de reserva, escrit i revisat un altre dia, i les notícies dels grups d'aquell dia surten l'endemà; si el servidor de la redacció no ha publicat a les 9.10, un vigilant que funciona fora d'ell treu el número amb aquesta reserva. La persona que supervisa la redacció rep un avís en cada cas.",
@@ -263,7 +266,7 @@ IDIOMAS = {
                 ("Què fa la intel·ligència artificial i què fan els programes", "La intel·ligència artificial s'encarrega del que demana llegir, escriure o jutjar: triar els temes, redactar, revisar, dibuixar, traduir i decidir si un acudit té gràcia. El que es pot fer amb regles fixes ho fan programes corrents, sense intel·ligència artificial: recollir i ordenar els missatges, mesurar els dibuixos, dibuixar la vinyeta a partir del guió, muntar el web amb l'hemeroteca i el cercador, muntar els vídeos i compondre'n la música, i publicar-ho tot a l'hora al web i a Instagram."),
                 ("Els límits dels agents", "Els agents treballen en un servidor propi, sense accés a un terminal i sense poder llegir ni escriure fora de la carpeta de la redacció. Poden consultar internet per comprovar fonts, però no poden executar programes. Els missatges dels grups i les fitxes de la biblioteca són, per a ells, material per informar: si n'hi ha cap que contingui una ordre, no la segueixen, de manera que un missatge escrit per enganyar-los no els pot portar a fer una altra cosa. A més, cap agent no revisa la seva pròpia feina: les peces les repassa un revisor que no les ha escrites; els dibuixos, un revisor que no els ha dibuixat, i el reportatge, un verificador que no hi ha participat."),
                 ("El que es comprova", "Els grups serveixen per saber de què es parla, però cada dada es comprova fora, a la seva font original: l'anunci oficial, el web del producte o el document de l'administració, enllaçats al final de cada peça. D'una aplicació compartida als grups es comprova el que diu el seu web, no que funcioni. Tot i així hi pot haver errors. Aquesta edició és una traducció automàtica de la castellana, sense revisió professional."),
-                ("El reportatge del diumenge", "Els diumenges, a més de les peces del dia, el diari publica un reportatge sobre un sol tema de la setmana. Explica l'assumpte sencer, amb el que es va parlar als grups, el que diuen les empreses, les administracions i els organismes implicats, cadascun amb els seus documents, el marc a Espanya i el que pot fer un docent. L'escriuen tres agents més, i l'il·lustrador i el traductor de cada dia se n'encarreguen de la infografia i de la versió en català. Si el verificador no el dona per bo, aquell diumenge no hi ha reportatge i el número surt igualment. Tots queden a la secció {reportajes}."),
+                ("El reportatge del diumenge", "Els diumenges, a més de les peces del dia, el diari publica un reportatge sobre un sol tema de la setmana. Explica l'assumpte sencer, amb el que es va parlar als grups, el que diuen les empreses, les administracions i els organismes implicats, cadascun amb els seus documents, el marc a Espanya i el que pot fer un docent. L'escriuen tres agents més, i l'il·lustrador i el traductor de cada dia se n'encarreguen de la infografia i de les versions en altres llengües. Si el verificador no el dona per bo, aquell diumenge no hi ha reportatge i el número surt igualment. Tots queden a la secció {reportajes}."),
                 ("La Biblioteca digital", "Cada document que entra a la {biblioteca} de ChatGPT-IA-edu (guies, informes, estudis) té el seu article a la secció {seccion_bib}; si el diari ja l'havia explicat com a notícia, aquella peça passa a la secció en lloc d'escriure'n una altra. El documentalista llegeix el document sencer i explica qui el publica, què proposa i com encaixa amb altres documents de la biblioteca; el revisor el contrasta amb el mateix document. El diari enllaça el document a la font oficial i a la biblioteca, sense copiar-lo. S'anomenen els autors; la persona que l'ha compartit no s'anomena, igual que no s'atribueixen les opinions dels grups."),
                 ("El Repositori de recursos", "El {repositorio} de Vibe Coding Educativo reuneix les aplicacions i els recursos que creen i comparteixen amb llicència oberta els docents d'aquesta comunitat. Els dies amb menys de quatre peces, el documentalista escriu sobre els que hi han entrat i que el diari encara no ha explicat, i el número del dissabte repassa els de la setmana; si no n'hi ha cap de nou, en rescata un d'anterior. Un programa obre cada recurs i en guarda una captura del que es veu; el documentalista el descriu a partir de la captura i de la seva pàgina, i el revisor el torna a obrir. Surten a la secció {seccion_vc}, amb el nom de qui l'ha fet i la seva llicència."),
                 ("Les persones", "La idea del diari és de {raul}, administrador d'{edumedia}. La redacció la va dissenyar i la supervisa {juanjo}."),
@@ -274,6 +277,8 @@ IDIOMAS = {
         },
     },
 }
+from idiomas_web import GL, EU, EN   # noqa: E402
+IDIOMAS.update({"gl": GL, "eu": EU, "en": EN})
 L = IDIOMAS["es"]   # idioma de la pasada en curso
 
 # Iconos de Lucide (ISC): wrench, code, clapperboard, messages-square, landmark, library; zap (breves), file-text (reportaje), pen-tool (viñeta), circle-play (vídeo)
@@ -300,15 +305,25 @@ WEB_JUANJO = "https://bilateria.org"
 WEB_RAUL = "https://raultorres-ia.github.io/apps/raul-torres-ai-portfolio/"
 
 def de_mes(mes):
-    """«de octubre» en castellano; en catalán, «d'octubre» ante vocal."""
-    if L is IDIOMAS["ca"] and mes[0] in "aeiou":
+    """«de octubre» en castellano y gallego; en catalán, «d'octubre» ante vocal."""
+    if L["codigo"] == "ca" and mes[0] in "aeiou":
         return f"d'{mes}"
     return f"de {mes}"
 
 
+def mayus(t):
+    """La primera letra en mayúscula, sin tocar las demás (str.capitalize pone «november» en inglés)."""
+    return t[:1].upper() + t[1:]
+
+
 def fecha_larga(iso):
     d = datetime.date.fromisoformat(iso)
-    return f"{L['dias'][d.weekday()]}, {d.day} {de_mes(L['meses'][d.month - 1])} de {d.year}"
+    dia, mes = L["dias"][d.weekday()], L["meses"][d.month - 1]
+    if L["codigo"] == "en":
+        return f"{dia}, {d.day} {mes} {d.year}"
+    if L["codigo"] == "eu":   # «2026ko azaroaren 6a, ostirala»
+        return f"{d.year}ko {mes}ren {d.day}a, {dia}"
+    return f"{dia}, {d.day} {de_mes(mes)} de {d.year}"
 
 
 def publicacion(iso):
@@ -334,12 +349,22 @@ def anyo_edicion(iso_publicacion):
 
 def mes_largo(iso):
     d = datetime.date.fromisoformat(iso)
-    return f"{L['meses'][d.month - 1].capitalize()} de {d.year}"
+    mes = L["meses"][d.month - 1]
+    if L["codigo"] == "en":
+        return f"{mes} {d.year}"
+    if L["codigo"] == "eu":
+        return f"{d.year}ko {mes}"
+    return f"{mayus(mes)} de {d.year}"
 
 
 def fecha_corta(iso):
     d = datetime.date.fromisoformat(iso)
-    return f"{d.day} {de_mes(L['meses'][d.month - 1])}"
+    mes = L["meses"][d.month - 1]
+    if L["codigo"] == "en":
+        return f"{d.day} {mes}"
+    if L["codigo"] == "eu":
+        return f"{mes}ren {d.day}a"
+    return f"{d.day} {de_mes(mes)}"
 
 
 def e(t):
@@ -484,7 +509,7 @@ def seleccion_portada(eds):
 
 
 def recursos(prof):
-    """Las hojas de estilo y la letra están en la raíz del sitio, compartidas por los dos idiomas."""
+    """Las hojas de estilo y la letra están en la raíz del sitio, compartidas por todos los idiomas."""
     return prof + ("../" if L["carpeta"] else "")
 
 
@@ -495,23 +520,32 @@ def imagen_og(ruta, codigo):
     """La portada y la página de cada día enseñan la imagen de su número (ADR 0010); lo demás, la genérica."""
     m = re.fullmatch(r"(\d{4}-\d{2}-\d{2})/", ruta)
     fecha = m.group(1) if m else (ULTIMA if ruta == "" else None)
-    if fecha and (RAIZ / "og" / "numeros" / f"{fecha}-{codigo}.png").exists():
-        return f"{BASE}og/{fecha}-{codigo}.png"
-    return f"{BASE}og-{codigo}.png"
+    if fecha:
+        for c in (codigo, "es"):   # sin imagen del número en ese idioma, la del castellano
+            if (RAIZ / "og" / "numeros" / f"{fecha}-{c}.png").exists():
+                return f"{BASE}og/{fecha}-{c}.png"
+    return f"{BASE}og-{codigo if (RAIZ / 'estaticos' / f'og-{codigo}.png').exists() else 'es'}.png"
 
 
 def cabeza(titulo, prof, descripcion, ruta, portada=False):
-    codigo = "ca" if L["carpeta"] else "es"
+    codigo = L["codigo"]
     r = recursos(prof)
-    otro = "es" if codigo == "ca" else "ca"
-    # En la portada, quien llega sin haber elegido idioma va al del sistema; lo elegido se recuerda
+    # En la portada, quien llega sin haber elegido idioma va al de su navegador; lo elegido se recuerda.
+    # Los robots de los buscadores no se redirigen: indexan cada edición en su dirección (ADR 0026).
     salto = ""
     if portada:
-        if codigo == "es":   # al catalán, si se eligió o si el sistema está en catalán y no se eligió nada
-            cond = "var g=localStorage.getItem('sala.idioma');if(g==='ca'||(!g&&(navigator.language||'').slice(0,2)==='ca'))"
-        else:                # al castellano, solo si se eligió: un enlace a la edición catalana se respeta
-            cond = "if(localStorage.getItem('sala.idioma')==='es')"
-        salto = f"<script>try{{{cond}location.replace('{href_idioma(prof, ruta, otro)}');}}catch(_){{}}</script>"
+        destinos = ",".join(f"{c}:'{href_idioma(prof, ruta, c)}'" for c in IDIOMAS if c != codigo)
+        if codigo == "es":
+            cond = ("var g=localStorage.getItem('sala.idioma'),n=(navigator.language||'').slice(0,2).toLowerCase(),"
+                    "bot=/bot|crawl|spider|slurp|inspection|lighthouse|preview|facebookexternalhit/i.test(navigator.userAgent),"
+                    "d=g||(bot?null:n);")
+        else:   # un enlace a otra edición se respeta: solo cambia si se eligió otro idioma
+            cond = "var d=localStorage.getItem('sala.idioma');"
+        salto = f"<script>try{{var D={{{destinos}}};{cond}if(d&&D[d])location.replace(D[d]);}}catch(_){{}}</script>"
+    alternas = "".join(f'<link rel="alternate" hreflang="{c}" href="{e(BASE + d["carpeta"] + ruta)}">\n'
+                       for c, d in IDIOMAS.items() if ruta != "404.html")
+    if ruta != "404.html":
+        alternas += f'<link rel="alternate" hreflang="x-default" href="{e(BASE + ruta)}">\n'
     return f"""<!doctype html>
 <html lang="{codigo}">
 <head>
@@ -519,8 +553,7 @@ def cabeza(titulo, prof, descripcion, ruta, portada=False):
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{e(titulo)}</title>
 <meta name="description" content="{e(descripcion)}">
-<link rel="alternate" hreflang="{otro}" href="{href_idioma(prof, ruta, otro)}">
-<link rel="alternate" type="application/rss+xml" title="{e(L["titulo"])}" href="{prof}feed.xml">
+{alternas}<link rel="alternate" type="application/rss+xml" title="{e(L["titulo"])}" href="{prof}feed.xml">
 <meta property="og:type" content="{"website" if portada else "article"}">
 <meta property="og:site_name" content="{e(L["titulo"])}">
 <meta property="og:title" content="{e(titulo)}">
@@ -528,7 +561,7 @@ def cabeza(titulo, prof, descripcion, ruta, portada=False):
 <meta property="og:url" content="{e(BASE + L["carpeta"] + ruta)}">
 <meta property="og:image" content="{e(imagen_og(ruta, codigo))}">
 <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
-<meta property="og:locale" content="{"ca_ES" if codigo == "ca" else "es_ES"}">
+<meta property="og:locale" content="{L["locale"]}">
 <meta name="twitter:card" content="summary_large_image">
 <script>try{{var t=localStorage.getItem('sala.tema');if(t)document.documentElement.dataset.theme=t;}}catch(_){{}}</script>
 {salto}
@@ -552,21 +585,28 @@ def version_estatico(nombre):
 
 
 def href_idioma(prof, ruta, destino):
-    """La misma página en el otro idioma."""
-    if ruta == "404.html":   # solo hay una, en la raíz: la otra edición lleva a su portada
-        return "/ca/" if destino == "ca" else "/"
-    if destino == "ca":
-        return f"{prof}ca/{ruta}"
-    return f"{prof}../{ruta}"
+    """La misma página en otro idioma."""
+    if ruta == "404.html":   # solo hay una, en la raíz: las otras ediciones llevan a su portada
+        return "/" + IDIOMAS[destino]["carpeta"]
+    return f"{recursos(prof)}{IDIOMAS[destino]['carpeta']}{ruta}" or "./"
+
+
+ICONO_IDIOMAS = ('<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/>'
+                 '<path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/></svg>')   # languages (Lucide)
 
 
 def selector_idioma(prof, ruta):
-    """Como en un periódico: un enlace a la otra edición, con su nombre en su idioma."""
-    codigo = "ca" if L["carpeta"] else "es"
-    otro = "es" if codigo == "ca" else "ca"
-    d = IDIOMAS[otro]
-    return (f'<a class="edicion" href="{href_idioma(prof, ruta, otro)}" lang="{otro}" hreflang="{otro}" '
-            f'data-idioma="{otro}"><span class="largo">{d["edicion"]}</span><span class="corto">{d["nombre"]}</span></a>')
+    """Un botón con el idioma en uso que despliega los cinco, cada uno en su lengua y con una marca en el
+    actual. Cada opción lleva a la misma página en ese idioma: son enlaces, y los buscadores los siguen."""
+    yo = L["codigo"]
+    actual = ' aria-current="true"'
+    items = "".join(
+        f'<li><a href="{href_idioma(prof, ruta, c)}" lang="{c}" hreflang="{c}" data-idioma="{c}"'
+        f'{actual if c == yo else ""}>{d["nombre"]}</a></li>' for c, d in IDIOMAS.items())
+    rotulo = f'{L["idioma"]}: {L["nombre"]}'
+    return (f'<span class="idiomas"><button type="button" class="idioma-boton" aria-expanded="false" aria-controls="menu-idiomas" '
+            f'title="{rotulo}" aria-label="{rotulo}">{ICONO_IDIOMAS}<span class="idioma-cod" aria-hidden="true">{yo.upper()}</span></button>'
+            f'<ul class="idioma-menu" id="menu-idiomas" hidden>{items}</ul></span>')
 
 
 def boton_tema():
@@ -587,6 +627,14 @@ SCRIPT_TEMA = """<script>
   document.querySelectorAll('[data-idioma]').forEach(function(a){
     a.addEventListener('click',function(){try{localStorage.setItem('sala.idioma',a.dataset.idioma);}catch(_){}});
   });
+  // El menú de idiomas (ADR 0026): se abre al pulsar el botón y se cierra al pulsar fuera o con Escape
+  var bi=document.querySelector('.idioma-boton'), mi=document.getElementById('menu-idiomas');
+  if(bi&&mi){
+    function idiomas(abre){mi.hidden=!abre; bi.setAttribute('aria-expanded',abre?'true':'false'); if(abre){var a=mi.querySelector('[aria-current]')||mi.querySelector('a'); a&&a.focus();}}
+    bi.addEventListener('click',function(ev){ev.stopPropagation(); idiomas(mi.hidden);});
+    document.addEventListener('click',function(ev){if(!mi.hidden&&!mi.contains(ev.target))idiomas(false);});
+    document.addEventListener('keydown',function(ev){if(ev.key==='Escape'&&!mi.hidden){idiomas(false);bi.focus();}});
+  }
   // En el móvil las secciones se deslizan: la sección abierta, a la vista
   var lista=document.querySelector('.secciones-lista'), activa=lista&&lista.querySelector('[aria-current]');
   if(activa&&lista.scrollWidth>lista.clientWidth) lista.scrollLeft=activa.offsetLeft-(lista.clientWidth-activa.offsetWidth)/2;
@@ -665,7 +713,7 @@ def url_vcer():
 def pie(prof, eds, actual):
     marca = ' aria-current="page"'
     archivo = "".join(
-        f'<li><a href="{prof}{d["fecha"]}/"{marca if d["fecha"] == actual else ""}>{fecha_larga(publicacion(d["fecha"])).capitalize()}</a></li>'
+        f'<li><a href="{prof}{d["fecha"]}/"{marca if d["fecha"] == actual else ""}>{mayus(fecha_larga(publicacion(d["fecha"])))}</a></li>'
         for d in list(reversed(eds))[:DIAS_PIE])
     grupos = "".join(f'<li>{enlace("https://t.me/" + a, n)}: <span class="pie-grupo-desc">{L["grupos_desc"][k]}</span></li>'
                      for k, (n, a) in GRUPOS.items())
@@ -713,8 +761,8 @@ def cabecera(prof, ruta, fecha, cuenta, es_portada, nav="", h1=True, activa=None
     sale = publicacion(fecha)
     if h1 == "dia":
         nombre += f'<span class="solo-lector">, {fecha_larga(sale)}</span>'
-    cuando = f'<time datetime="{sale}">{fecha_larga(sale).capitalize()}</time>'
-    numero = (f'<span class="edicion-num"><span class="anyo">{L["anyo"]} {anyo_edicion(sale)}</span>'
+    cuando = f'<time datetime="{sale}">{mayus(fecha_larga(sale))}</time>'
+    numero = (f'<span class="edicion-num"><span class="anyo">{(anyo_edicion(sale) + ". " + L["anyo"]) if L["codigo"] == "eu" else (L["anyo"] + " " + anyo_edicion(sale))}</span>'
               f'<span class="numero"><span class="solo-lector">{L["numero_largo"]} </span><span aria-hidden="true">{L["num"]}&nbsp;</span><b>{cuenta}</b></span></span>')
     return f"""<header class="cabecera">
   <div class="cabecera-fila">
@@ -1196,12 +1244,12 @@ def cargar_videos():
 
 def texto_video(v, campo):
     x = v.get(campo, {})
-    return x.get("ca" if L["carpeta"] else "es") or x.get("es")
+    return x.get(L["codigo"]) or x.get("es")
 
 
 def bloque_video(prof, v, titulo_h="h2", enlace_propio=True, titulo=None):
     """Un vídeo vertical, sin reproducción automática, con su portada y lo que dice en pantalla."""
-    codigo = "ca" if L["carpeta"] else "es"
+    codigo = L["codigo"]
     arch = v["archivos"].get(codigo) or v["archivos"]["es"]
     otro_idioma = codigo not in v["archivos"]
     ruta = f'{recursos(prof)}videos/'
@@ -1225,11 +1273,21 @@ def fechas_semana(publicado):
     """«Del 2 al 8 de noviembre»: los números de lunes a domingo que repasa el vídeo."""
     fin = datetime.date.fromisoformat(publicado)
     ini = fin - datetime.timedelta(days=6)
-    mes = lambda d: de_mes(L["meses"][d.month - 1])  # noqa: E731
-    vocal = lambda n: bool(L["carpeta"]) and n in (1, 11)  # noqa: E731   en catalán, «de l'1», «a l'11»
+    c = L["codigo"]
+    nombre = lambda d: L["meses"][d.month - 1]  # noqa: E731
+    mes = lambda d: de_mes(nombre(d))  # noqa: E731
+    mismo = ini.month == fin.month
+    if c == "en":
+        return f"{ini.day}–{fin.day} {nombre(fin)}" if mismo else f"{ini.day} {nombre(ini)} – {fin.day} {nombre(fin)}"
+    if c == "eu":
+        return (f"{mayus(nombre(fin))}ren {ini.day}–{fin.day}" if mismo
+                else f"{mayus(nombre(ini))}ren {ini.day} – {nombre(fin)}ren {fin.day}")
+    if c == "gl":
+        return f"Do {ini.day} ao {fin.day} {mes(fin)}" if mismo else f"Do {ini.day} {mes(ini)} ao {fin.day} {mes(fin)}"
+    vocal = lambda n: c == "ca" and n in (1, 11)  # noqa: E731   en catalán, «de l'1», «a l'11»
     del_ = "De l'" if vocal(ini.day) else "Del "
     al_ = "a l'" if vocal(fin.day) else "al "
-    if ini.month == fin.month:
+    if mismo:
         return f"{del_}{ini.day} {al_}{fin.day} {mes(fin)}"
     return f"{del_}{ini.day} {mes(ini)} {al_}{fin.day} {mes(fin)}"
 
@@ -1240,7 +1298,7 @@ def bloque_semana_video(prof, eds, fecha):
     v = next((x for x in cargar_videos() if x.get("tipo") == "semana" and x.get("dia") == fecha), None)
     if not v:
         return ""
-    codigo = "ca" if L["carpeta"] else "es"
+    codigo = L["codigo"]
     arch = v["archivos"].get(codigo) or v["archivos"]["es"]
     ruta = f'{recursos(prof)}videos/'
     por_id = {(d["fecha"], p["id"]): p for d in eds for p in d["piezas"]}
@@ -1375,7 +1433,7 @@ def pagina_hemeroteca(eds):
             num = f' <span class="num">· {L["num"]}&nbsp;{d["numero"]}</span>' if d["numero"] else ""
             abre = d["reportaje"]["titular"] if d.get("reportaje") else d["piezas"][0]["titular"]
             marca = f'<span class="rep">{L["reportaje"]}</span>' if d.get("reportaje") else ""
-            items.append(f'<li><a href="{d["fecha"]}/">{fecha_larga(sale).capitalize()}</a>{num}'
+            items.append(f'<li><a href="{d["fecha"]}/">{mayus(fecha_larga(sale))}</a>{num}'
                          f'<span class="abre">{marca}{e(abre)}</span></li>')
         bloques.append(f'<h2>{mes_largo(dias[0][1])}</h2><ul>{"".join(items)}</ul>')
     return cabeza(f'{L["hemeroteca"]} | {L["titulo"]}', "", L["hemeroteca_txt"], "archivo.html") + f"""<body class="pag-seccion">
@@ -1393,8 +1451,9 @@ def pagina_hemeroteca(eds):
 
 def pagina_404(eds):
     """La página de GitHub Pages para lo que no existe, con rutas absolutas porque se sirve en cualquier nivel.
-    En castellano, con la línea en catalán debajo: GitHub solo admite una."""
-    ca = IDIOMAS["ca"]
+    En castellano, con una línea en cada otro idioma debajo: GitHub solo admite una."""
+    otros = "".join(f'<p class="{c}" lang="{c}">{d["no_existe"]}. <a href="/{d["carpeta"]}">{d["portada"]}</a> · '
+                    f'<a href="/{d["carpeta"]}archivo.html">{d["hemeroteca"]}</a></p>\n' for c, d in IDIOMAS.items() if c != "es")
     html_ = cabeza(f'{L["no_existe"]} | {L["titulo"]}', "/", L["no_existe_txt"], "404.html")
     return html_ + f"""<body class="pag-que-es">
 {cabecera("/", "404.html", eds[-1]["fecha"], eds[-1]["numero"], False, h1=False)}
@@ -1402,8 +1461,7 @@ def pagina_404(eds):
 <h1 class="titular">{L["no_existe"]}</h1>
 <p>{L["no_existe_txt"]}</p>
 <p><a href="/">{L["portada"]}</a> · <a href="/archivo.html">{L["hemeroteca"]}</a></p>
-<p class="ca" lang="ca">{ca["no_existe"]}. <a href="/ca/">{ca["portada"]}</a> · <a href="/ca/archivo.html">{ca["hemeroteca"]}</a></p>
-</main>
+{otros}</main>
 {pie("/", eds, None)}
 {SCRIPT_TEMA}
 </body>
@@ -1411,22 +1469,27 @@ def pagina_404(eds):
 
 
 def sitemap(eds):
-    """Todas las páginas de los dos idiomas, con la fecha de su último cambio."""
-    urls = []
+    """Todas las páginas de todos los idiomas, con la fecha de su último cambio y, en cada una, sus
+    versiones en los otros idiomas (xhtml:link), como pide Google para un sitio multilingüe (ADR 0026)."""
+    rutas = []
     ultima = publicacion(eds[-1]["fecha"])
-    for codigo, idioma in IDIOMAS.items():
-        base = BASE + idioma["carpeta"]
-        for ruta in ["", "redaccion.html", "vineta.html", "reportajes.html", "breves.html", "archivo.html", "videos.html"] + [f"{c}.html" for c in ORDEN_SECCIONES]:
-            urls.append((base + ruta, ultima))
-        for d in eds:
-            sale = publicacion(d["fecha"])
-            urls.append((f'{base}{d["fecha"]}/', sale))
-            for p in d["piezas"] + [d[k] for k in ("editorial", "reportaje") if d.get(k)]:
-                urls.append((f'{base}{d["fecha"]}/{p["id"]}.html', sale))
-            for b in d.get("breves", []):
-                urls.append((base + ruta_breve(b), sale))
-    cuerpo = "".join(f"  <url><loc>{e(u)}</loc><lastmod>{f}</lastmod></url>\n" for u, f in urls)
-    return f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{cuerpo}</urlset>\n'
+    for ruta in ["", "redaccion.html", "vineta.html", "reportajes.html", "breves.html", "archivo.html", "videos.html"] + [f"{c}.html" for c in ORDEN_SECCIONES]:
+        rutas.append((ruta, ultima))
+    for d in eds:
+        sale = publicacion(d["fecha"])
+        rutas.append((f'{d["fecha"]}/', sale))
+        for p in d["piezas"] + [d[k] for k in ("editorial", "reportaje") if d.get(k)]:
+            rutas.append((f'{d["fecha"]}/{p["id"]}.html', sale))
+        for b in d.get("breves", []):
+            rutas.append((ruta_breve(b), sale))
+    cuerpo = []
+    for ruta, f in rutas:
+        alternas = "".join(f'<xhtml:link rel="alternate" hreflang="{c}" href="{e(BASE + x["carpeta"] + ruta)}"/>'
+                           for c, x in IDIOMAS.items()) + f'<xhtml:link rel="alternate" hreflang="x-default" href="{e(BASE + ruta)}"/>'
+        for x in IDIOMAS.values():
+            cuerpo.append(f"  <url><loc>{e(BASE + x['carpeta'] + ruta)}</loc><lastmod>{f}</lastmod>{alternas}</url>\n")
+    return ('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" '
+            f'xmlns:xhtml="http://www.w3.org/1999/xhtml">\n{"".join(cuerpo)}</urlset>\n')
 
 
 SCRIPT_BUSCAR = """<script type="module">
@@ -1522,7 +1585,7 @@ def pagina_breves(eds):
     for d in reversed(eds):
         if d.get("breves"):
             sale = publicacion(d["fecha"])
-            bloques.append(f'<h2><a href="{d["fecha"]}/">{fecha_larga(sale).capitalize()}</a></h2>'
+            bloques.append(f'<h2><a href="{d["fecha"]}/">{mayus(fecha_larga(sale))}</a></h2>'
                            f'<div class="lista-breves">{bloque_breves(d["breves"], False, en_bloque=True)}</div>')
     return cabeza(f'{L["breves"]} | {L["titulo"]}', "", L["descripciones"]["breves"], "breves.html") + f"""<body class="pag-seccion">
 {cabecera("", "breves.html", eds[-1]["fecha"], eds[-1]["numero"], True, h1=False)}
@@ -1580,7 +1643,7 @@ def rss(eds):
     <category>{e(L["breves"])}</category>
     <description>{e(texto_plano(b["texto"]))}</description>
   </item>""")
-    codigo = "ca" if L["carpeta"] else "es"
+    codigo = L["codigo"]
     return f"""<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
@@ -1602,7 +1665,7 @@ def manifiesto():
     return json.dumps({
         "id": raiz, "start_url": raiz, "scope": raiz,
         "name": L["titulo"], "short_name": L["nombre_corto"], "description": L["lema"],
-        "lang": "ca" if L["carpeta"] else "es", "dir": "ltr",
+        "lang": L["codigo"], "dir": "ltr",
         "display": "standalone", "background_color": "#16181d", "theme_color": "#16181d",
         "icons": [
             {"src": "/icono-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
@@ -1710,7 +1773,8 @@ def main():
     if (RAIZ / "repositorio" / "capturas").exists():   # las capturas de los recursos, para los dos idiomas (ADR 0008)
         shutil.copytree(RAIZ / "repositorio" / "capturas", SITIO / "capturas", dirs_exist_ok=True)
     # Sin restos de piezas retiradas ni de la maqueta descartada
-    for viejo in [SITIO / "diario", SITIO / "revista", SITIO / "revista.css", SITIO / "ca"] + \
+    for viejo in [SITIO / "diario", SITIO / "revista", SITIO / "revista.css"] + \
+            [SITIO / d["carpeta"] for d in IDIOMAS.values() if d["carpeta"]] + \
             [p for p in SITIO.iterdir() if re.fullmatch(r"\d{4}-\d{2}-\d{2}", p.name)]:
         if viejo.is_dir():
             shutil.rmtree(viejo)

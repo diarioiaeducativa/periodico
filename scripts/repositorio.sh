@@ -11,7 +11,7 @@
 # cada recurso y guarda su captura. Después, tres agentes:
 #  16. documentalista (Sonnet) → repositorio-borrador/FECHA.json
 #  17. revisor (Sonnet, no ha escrito nada) → repositorio/FECHA.json
-#  18. traductor (Sonnet) → repositorio-ca/FECHA.json
+#  18. traductor (Sonnet, uno por idioma) → repositorio-XX/FECHA.json (ADR 0026)
 # Sin ilustrador: la imagen es la captura del propio recurso. Nunca impide el número. Sale con 0
 # si hay artículos y con 2 si no.
 set -uo pipefail
@@ -21,7 +21,7 @@ cd "$RAIZ"
 FECHA="$1"; shift
 DATOS="${DATOS_BOT:-/bot-datos}"
 SONNET="${MODELO_SONNET:-claude-sonnet-5-5}"
-mkdir -p registro repositorio repositorio-borrador repositorio-ca repositorio-entrada
+mkdir -p registro repositorio repositorio-borrador repositorio-entrada
 REG="registro/$FECHA.log"
 
 log() { printf '%s  %s\n' "$(date '+%F %T')" "$*" | tee -a "$REG"; }
@@ -41,6 +41,7 @@ agente() {   # el mismo de noche.sh: sin terminal y sin leer fuera de la redacci
 }
 
 json_ok() { python3 -c 'import json,sys; json.load(open(sys.argv[1]))' "$1" 2>/dev/null; }
+. scripts/traducir.sh   # traducir y traducidos (ADR 0026)
 piezas() { python3 -c 'import json,sys; print(" ".join(p["id"] for p in json.load(open(sys.argv[1])).get("piezas", [])))' "$1" 2>/dev/null; }
 
 # Lo que el programa descarta (lo que sigue sin abrir el sábado) sale de la cola aunque no haya artículo
@@ -69,7 +70,7 @@ case $? in
 esac
 log "=== repositorio: $(grep '^repositorio: ' "$REG" | tail -1 | sed 's/^repositorio: //')"
 trap descartes EXIT
-rm -f "repositorio-borrador/$FECHA.json" "repositorio/$FECHA.json" "repositorio-ca/$FECHA.json"
+rm -f "repositorio-borrador/$FECHA.json" "repositorio/$FECHA.json" $(traducidos repositorio)
 
 for intento in 1 2; do
   agente "$SONNET" 16-repositorio-articulos 40
@@ -104,6 +105,5 @@ for f in pathlib.Path("repositorio/capturas").glob(f"{fecha}-*.jpg"):
     if f.name not in usadas:
         f.unlink()
 PY
-agente "$SONNET" 18-repositorio-traduccion 40
-[ -e "repositorio-ca/$FECHA.json" ] && ! json_ok "repositorio-ca/$FECHA.json" && { log "traducción inválida, se usa el castellano"; rm -f "repositorio-ca/$FECHA.json"; }
+traducir 18-repositorio-traduccion repositorio 40
 log "repositorio listo: $ids"

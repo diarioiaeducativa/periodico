@@ -32,6 +32,7 @@ import sys
 RAIZ = pathlib.Path(__file__).resolve().parent.parent
 RESERVA = RAIZ / "reserva"
 OBJETIVO = 3          # piezas de reserva que tiene que haber siempre listas
+TRADUCCIONES = ("ca", "gl", "eu", "en")   # los idiomas a los que se traduce (scripts/idiomas.py, ADR 0026)
 PREFIJO = "2099-01-"  # las claves provisionales: una fecha que nunca será un número
 
 
@@ -63,7 +64,7 @@ def guardar(clave):
     repositorio.py no vuelva a proponerlo (cuenta todo reserva/ como ya contado)."""
     dest = RESERVA / clave
     dest.mkdir(parents=True, exist_ok=True)
-    for origen, nombre in (("repositorio", "repositorio.json"), ("repositorio-ca", "repositorio-ca.json")):
+    for origen, nombre in [("repositorio", "repositorio.json")] + [(f"repositorio-{c}", f"repositorio-{c}.json") for c in TRADUCCIONES]:
         f = RAIZ / origen / f"{clave}.json"
         if f.exists():
             shutil.move(str(f), dest / nombre)
@@ -136,7 +137,7 @@ def usar(fecha, motivo="fallo"):
     r = hay[0]
     clave = r.name
     nuevas = []
-    for nombre, destino in (("repositorio.json", "repositorio"), ("repositorio-ca.json", "repositorio-ca")):
+    for nombre, destino in [("repositorio.json", "repositorio")] + [(f"repositorio-{c}.json", f"repositorio-{c}") for c in TRADUCCIONES]:
         f = r / nombre
         if not f.exists():
             continue

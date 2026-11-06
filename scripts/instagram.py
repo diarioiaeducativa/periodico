@@ -157,7 +157,7 @@ def portada(d, piezas):
         f'<li class="sec-{e(p.get("seccion") or "")}"><span class="s">{e(L["secciones"].get(p.get("seccion"), ""))}</span>'
         f'<span class="t" data-min="32">{e(p["titular"])}</span></li>' for p in piezas)
     return cabeza() + f"""<div class="ig">
-<p class="cuando"><b>{e(L["num"])} {d["numero"]}</b> · {e(generar.fecha_larga(sale).capitalize())}</p>
+<p class="cuando"><b>{e(L["num"])} {d["numero"]}</b> · {e(generar.mayus(generar.fecha_larga(sale)))}</p>
 <p class="mancheta">{e(L["titulo"])}</p>
 <div class="filete"></div>
 <ul class="hoy">{items}</ul>
@@ -225,7 +225,7 @@ def texto(d, piezas, hay_vineta):
     avisos/<publicación>.json) o, si falta, los titulares; y siempre la cabecera y el pie fijos."""
     L = generar.L
     sale = generar.publicacion(d["fecha"])
-    cab = f'{L["titulo"]} · {L["num"]} {d["numero"]} · {generar.fecha_larga(sale).capitalize()}'
+    cab = f'{L["titulo"]} · {L["num"]} {d["numero"]} · {generar.mayus(generar.fecha_larga(sale))}'
     propio = ""
     f = RAIZ / "avisos" / f"{sale}.json"
     if f.exists():

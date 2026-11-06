@@ -47,7 +47,7 @@ def pagina(d, p):
     e = html.escape
     sale = generar.publicacion(d["fecha"])
     seccion = L["secciones"].get(p.get("seccion"), "")
-    return f"""<!doctype html><html lang="{"ca" if L["carpeta"] else "es"}" data-theme="light"><head><meta charset="utf-8">
+    return f"""<!doctype html><html lang="{L["codigo"]}" data-theme="light"><head><meta charset="utf-8">
 <link rel="stylesheet" href="{EST}/fuentes.css"><link rel="stylesheet" href="{EST}/comun.css"><link rel="stylesheet" href="{EST}/diario.css">
 <style>
 html,body{{margin:0;width:1200px;height:630px;overflow:hidden;background:#fbfbf9;color:#16181d}}
@@ -68,7 +68,7 @@ html,body{{margin:0;width:1200px;height:630px;overflow:hidden;background:#fbfbf9
 <div class="izq">
   <p class="mancheta">{e(L["titulo"])}</p>
   <div class="filete"></div>
-  <p class="cuando"><b>{e(L["num"])} {d["numero"]}</b> · {e(generar.fecha_larga(sale).capitalize())}</p>
+  <p class="cuando"><b>{e(L["num"])} {d["numero"]}</b> · {e(generar.mayus(generar.fecha_larga(sale)))}</p>
   <p class="seccion">{e(seccion)}</p>
   <h1 class="titular">{e(p["titular"])}</h1>
 </div>

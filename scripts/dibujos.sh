@@ -51,7 +51,9 @@ revisar_dibujos() {
   mkdir -p "revision/$FECHA/retirados"
   for id in $malos; do
     mv -f "ilustraciones/$FECHA-$id.svg" "revision/$FECHA/retirados/es-$FECHA-$id.svg" 2>/dev/null
-    mv -f "ilustraciones-ca/$FECHA-$id.svg" "revision/$FECHA/retirados/ca-$FECHA-$id.svg" 2>/dev/null
+    for f in ilustraciones-*/"$FECHA-$id.svg"; do   # sus traducciones, también (ADR 0026)
+      [ -e "$f" ] && mv -f "$f" "revision/$FECHA/retirados/${f%%/*}-$FECHA-$id.svg"
+    done
     retirados="$retirados $id"
   done
   log "sin dibujo, porque sigue mal tras rehacerlo:$retirados"
@@ -59,15 +61,17 @@ revisar_dibujos() {
   python3 generar.py >> "$REG" 2>&1
 }
 
-revisar_dibujos_ca() {
-  local id
+revisar_dibujos_traducidos() {   # cada idioma, solo con el programa: el dibujo que falle sale en castellano
+  local id c
   python3 generar.py >> "$REG" 2>&1 || return 0
-  python3 scripts/revisar-dibujos.py "$FECHA" ca >> "$REG" 2>&1
-  [ $? = 4 ] || return 0
-  for id in $(python3 -c 'import json,sys; print(" ".join(x["id"] for x in json.load(open(sys.argv[1]))["dibujos"] if x.get("problemas")))' "revision/$FECHA/ca.json"); do
-    mkdir -p "revision/$FECHA/retirados"
-    mv -f "ilustraciones-ca/$FECHA-$id.svg" "revision/$FECHA/retirados/ca-$FECHA-$id.svg"
-    log "el dibujo catalán de $id falla la revisión: la página catalana usa el castellano"
+  for c in ${TRADUCCIONES:-ca}; do
+    python3 scripts/revisar-dibujos.py "$FECHA" "$c" >> "$REG" 2>&1
+    [ $? = 4 ] || continue
+    for id in $(python3 -c 'import json,sys; print(" ".join(x["id"] for x in json.load(open(sys.argv[1]))["dibujos"] if x.get("problemas")))' "revision/$FECHA/$c.json"); do
+      mkdir -p "revision/$FECHA/retirados"
+      mv -f "ilustraciones-$c/$FECHA-$id.svg" "revision/$FECHA/retirados/$c-$FECHA-$id.svg"
+      log "el dibujo en $c de $id falla la revisión: esa página usa el castellano"
+    done
   done
   python3 generar.py >> "$REG" 2>&1
 }

@@ -77,8 +77,8 @@ MEDIR = """(fig) => {
 
 def dibujos(fecha, idioma):
     """Las piezas del día que tienen dibujo: id, titular y página."""
-    sufijo = "-ca" if idioma == "ca" else ""
-    carpeta = "ca/" if idioma == "ca" else ""
+    sufijo = "" if idioma == "es" else f"-{idioma}"
+    carpeta = "" if idioma == "es" else f"{idioma}/"
     piezas = []
     ed = RAIZ / "ediciones" / f"{fecha}.json"
     if ed.exists():
