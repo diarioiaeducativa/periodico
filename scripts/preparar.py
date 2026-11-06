@@ -43,7 +43,7 @@ def fmt(m):
     # La vista previa del enlace: muchas veces es el único sitio del mensaje donde está la dirección
     w = m.get("web") or {}
     web = (f"\n[enlace: {w['url']}" + (f" · «{w['titulo']}»" if w.get("titulo") else "") +
-           (f" · {w['descripcion']}" if w.get("descripcion") else "") + "]") if w.get("url") else ""
+           (f" · {' '.join(w['descripcion'].split())}" if w.get("descripcion") else "") + "]") if w.get("url") else ""
     return f"#{m['id']} · {m['fecha'][11:16]} · tema «{m['tema_nombre']}» · {m['autor']}{r}\n{(m.get('texto') or '').strip()}{web}{imagen}\n"
 
 
