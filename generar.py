@@ -827,8 +827,10 @@ def cuerpo_portada(prof, piezas, breves, mostrar_fecha, tira=""):
     p0, resto = piezas[0], piezas[1:]
     hoy = [b for b in breves if b["fecha"] == p0["fecha"]] if mostrar_fecha else []
     breves = [b for b in breves if b not in hoy]
-    # Como mucho tres destacadas con dibujo (las más recientes): la portada tiene que caber sin un scroll interminable
-    destacadas = [p for p in resto if p.get("importancia", 3) <= 2 and p.get("seccion") != "biblioteca"][:3]
+    # Como mucho tres destacadas con dibujo (las más recientes): la portada tiene que caber sin un scroll interminable.
+    # En la portada, solo del último número: lo de días anteriores no se cuela entre lo de hoy, va a su sección
+    destacadas = [p for p in resto if p.get("importancia", 3) <= 2 and p.get("seccion") != "biblioteca"
+                  and (not mostrar_fecha or p["fecha"] == p0["fecha"])][:3]
     demas = [p for p in resto if p not in destacadas]
     # En la portada, todo lo de hoy va arriba: lo que no cabe entre las destacadas, también los
     # artículos de la Biblioteca, justo debajo en «Más del día»; los bloques, para los días anteriores
