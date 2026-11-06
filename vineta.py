@@ -82,8 +82,9 @@ def cara(expr, clase, ojo_clase, ojo_r):
 
 # ---------- Brazos (mirando a la derecha; se reflejan si el personaje mira a la izquierda) ----------
 
-def brazos(postura, hombro_y, medio, clase):
-    """Devuelve (trazos, punto de la mano delantera) para la postura."""
+def brazos(postura, hombro_y, medio, clase, barbilla=18):
+    """Devuelve (trazos, punto de la mano delantera) para la postura. `barbilla`: cuánto sube la mano
+    al pensar desde el hombro hasta la barbilla."""
     L, R, y = -medio, medio, hombro_y
     caido_izq = f"M{L} {y} Q{L - 10} {y + 20} {L - 8} {y + 38}"
     caido_der = f"M{R} {y} Q{R + 10} {y + 20} {R + 8} {y + 38}"
@@ -94,7 +95,7 @@ def brazos(postura, hombro_y, medio, clase):
     elif postura == "arriba":
         d = f"M{L} {y - 2} L{L - 16} {y - 32} M{R} {y - 2} L{R + 16} {y - 32}"
     elif postura == "pensar":
-        d = f"{caido_izq} M{R} {y} Q{R + 10} {y - 8} {R - 12} {y - 18}"
+        d = f"{caido_izq} M{R} {y} Q{R + 10} {y - barbilla * 4 / 9} {R - 12} {y - barbilla}"
     elif postura == "encoger":
         d = f"M{L} {y + 2} L{L - 14} {y - 4} L{L - 18} {y - 14} M{R} {y + 2} L{R + 14} {y - 4} L{R + 18} {y - 14}"
     elif postura == "sostener":
@@ -131,7 +132,8 @@ def algoritmo(cx, mira, expr, postura):
     parpadeo = ""
     if expr == "cargando":
         parpadeo = f'<path class="a" d="M{-medio - 10} {arriba + 6} L{-medio - 18} {arriba - 2} M0 {arriba - 10} L0 {arriba - 20} M{medio + 10} {arriba + 6} L{medio + 18} {arriba - 2}"/>'
-    br, mano = brazos(postura, arriba + 50, medio, "a")
+    # Al pensar, la mano a la barbilla y no al ojo (06-11-2026): el hombro está más cerca de la cara que en Tiza
+    br, mano = brazos(postura, arriba + 50, medio, "a", barbilla=6)
     ojos = f'<circle class="ojo" cx="-9" cy="0" r="7"/><circle class="ojo" cx="9" cy="0" r="7"/>' if expr not in ("orgulloso", "agotado", "riendo") else ""
     if expr == "harto":   # el párpado del cursor, del mismo azul, tapa medio ojo
         ojos += '<rect class="fz" x="-17" y="-8" width="16" height="7"/><rect class="fz" x="1" y="-8" width="16" height="7"/>'
@@ -140,7 +142,9 @@ def algoritmo(cx, mira, expr, postura):
     if expr == "cargando":   # los puntos de «cargando» van en la boca, sobre el azul
         rostro = rostro.replace('class="fpupila" cx="-7" cy="16"', 'class="fsp" cx="-7" cy="16"').replace(
             'class="fpupila" cx="0" cy="16"', 'class="fsp" cx="0" cy="16"').replace('class="fpupila" cx="7" cy="16"', 'class="fsp" cx="7" cy="16"')
-    g = f'{flota}{cuerpo}{parpadeo}{rostro}{br}'
+    # El brazo que cruza el cuerpo azul (pensar, sostener), sobre un borde del color del papel para que se vea (06-11-2026)
+    borde = br.replace('class="a"', 'class="a-borde"') if postura in ("pensar", "sostener") else ""
+    g = f'{flota}{cuerpo}{parpadeo}{rostro}{borde}{br}'
     return envolver(cx, mira, g), mano_abs(cx, mira, mano)
 
 

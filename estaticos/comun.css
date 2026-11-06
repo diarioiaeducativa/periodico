@@ -146,6 +146,8 @@ img, svg { max-width: 100%; }
 .vineta .t, .vineta .a { fill: none; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
 .vineta .t { stroke: var(--tinta); }
 .vineta .a { stroke: var(--azul); }
+/* El brazo de Algoritmo lleva debajo un borde del color del papel, para que se vea sobre su cuerpo azul */
+.vineta .a-borde { fill: none; stroke: var(--papel); stroke-width: 7; stroke-linecap: round; stroke-linejoin: round; }
 .vineta .fino { stroke-width: 1.6; }
 .vineta .discontinuo { stroke-dasharray: 4 5; stroke-width: 2; }
 .vineta .fa { fill: var(--ilu-relleno); }
