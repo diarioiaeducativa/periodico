@@ -53,6 +53,14 @@ agente() {
   return $codigo
 }
 
+# Las viñetas en que habla primero el de la derecha van con los globos en escalera (vineta.py). Si con
+# esos textos no caben, salen lado a lado, como antes: los textos no se acortan. Solo se anota.
+comprobar_vineta() {
+  [ -e "$1" ] || return 0
+  local m
+  m=$(python3 vineta.py --comprobar "$1") || log "viñeta con los globos lado a lado en $1: $(echo "$m" | tr '\n' ' ')"
+}
+
 json_ok() { python3 -c 'import json,sys; json.load(open(sys.argv[1]))' "$1" 2>/dev/null; }
 
 # Un día sin piezas de la redacción: si entró un documento en la Biblioteca digital (ADR 0006) o
@@ -156,6 +164,7 @@ revisar_dibujos
 if json_ok "vinetas/candidatas/$FECHA.json"; then
   agente "$OPUS" 4-juez 30
   json_ok "vinetas/$FECHA.json" || { log "el juez no dejó una viñeta válida: sale sin ella"; rm -f "vinetas/$FECHA.json"; }
+  comprobar_vineta "vinetas/$FECHA.json"
 else
   log "no hay guiones válidos: sale sin viñeta"
 fi
@@ -185,6 +194,7 @@ wait $p1 $p2
 for f in "ediciones-ca/$FECHA.json" "vinetas-ca/$FECHA.json"; do
   [ -e "$f" ] && ! json_ok "$f" && { log "traducción inválida, se usa el castellano: $f"; rm -f "$f"; }
 done
+comprobar_vineta "vinetas-ca/$FECHA.json"
 if ! python3 -c '
 import json, sys
 d = json.load(open(sys.argv[1]))["avisos"]

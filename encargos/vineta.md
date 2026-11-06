@@ -28,6 +28,9 @@ escribir el guion.
   el tópico de la IA que nos va a sustituir o dominar; juegos de palabras fáciles;
   explicar el chiste. La ironía va dirigida a la tecnología y a lo que nos pasa con ella.
 - Breve: como mucho 90 caracteres por bocadillo y dos bocadillos por viñeta.
+- **El orden de los globos.** Se lee de izquierda a derecha. Si en una viñeta con dos
+  bocadillos habla primero quien está a la derecha, el programa pone su globo arriba y el otro
+  entero debajo, para que se lean en orden. Los personajes no cambian de lado de una viñeta a otra.
 - Castellano, natural, sin emojis.
 
 ## Formato

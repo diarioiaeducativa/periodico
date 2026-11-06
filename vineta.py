@@ -155,7 +155,10 @@ def mano_abs(cx, mira, mano):
     return (cx + x if mira == "derecha" else cx - x, y)
 
 
-CABEZA = {q: SUELO - (SUELO - y) * ESCALA for q, y in {"tiza": SUELO - 162, "algoritmo": SUELO - 30 - 86 - 6}.items()}
+# La escena entera (suelo, decorado y personajes) baja BAJA px dentro del marco (06-11-2026): deja más
+# sitio arriba para los globos sin achicar a nadie ni acortar los textos. Debajo del suelo quedan 8 px.
+BAJA = 18
+CABEZA = {q: BAJA + SUELO - (SUELO - y) * ESCALA for q, y in {"tiza": SUELO - 162, "algoritmo": SUELO - 30 - 86 - 6}.items()}
 
 
 # ---------- Objetos ----------
@@ -251,7 +254,7 @@ def bocadillo(texto, cx, punta, tipo="habla", y0=12, ancho=172):
         forma = f'<rect class="globo" x="{x0}" y="{y0}" width="{ancho}" height="{alto}" rx="{min(alto / 2, 26)}"/>'
         cola = "".join(f'<circle class="globo" cx="{base + (px - base) * f}" cy="{y0 + alto + (py - y0 - alto) * f}" r="{r}"/>'
                        for f, r in ((0.35, 6), (0.7, 3.5)))
-        return forma + cola + texto_svg
+        return forma + cola + texto_svg, alto
     forma = f'<rect class="globo" x="{x0}" y="{y0}" width="{ancho}" height="{alto}" rx="14"/>'
     cola = (f'<path class="globo-cola" d="M{base - 9} {y0 + alto - 1} L{px} {py} L{base + 9} {y0 + alto - 1}"/>')
     return forma + cola + texto_svg, alto
@@ -264,10 +267,58 @@ def cartela(texto):
 
 # ---------- Viñeta y tira ----------
 
+# Cuando habla primero el de la derecha, los globos van en escalera (06-11-2026): se lee de izquierda
+# a derecha antes que de arriba abajo, y un globo solo un poco más alto no basta para marcar el orden.
+# El primero, arriba y hacia la derecha; el segundo, entero debajo y a la izquierda, sin que su borde
+# llegue a la cola del primero. Los personajes no se mueven.
+ESC_ARRIBA, ESC_ABAJO, ESC_HUECO, ESC_MARGEN = 300, 256, 6, 6
+
+
+def escalera(globos, pos):
+    return len(globos) == 2 and pos[globos[0]["quien"]] > pos[globos[1]["quien"]]
+
+
+def alto_globo(texto, ancho):
+    return 18 + 20 * len(lineas(texto, int((ancho - 10) / 9)))
+
+
+def punta_de(quien, pos):
+    return (pos[quien] + (6 if pos[quien] < 200 else -6), CABEZA[quien])
+
+
+def globos_escalera(globos, pos, y):
+    a, b = globos
+    arriba, _ = bocadillo(a.get("texto", ""), ANCHO - 8 - ESC_ARRIBA / 2, punta_de(a["quien"], pos), a.get("tipo", "habla"), y, ESC_ARRIBA)
+    y2 = y + alto_globo(a.get("texto", ""), ESC_ARRIBA) + ESC_HUECO
+    abajo, _ = bocadillo(b.get("texto", ""), 8 + ESC_ABAJO / 2, punta_de(b["quien"], pos), b.get("tipo", "habla"), y2, ESC_ABAJO)
+    return [arriba, abajo]
+
+
+def no_cabe(v):
+    """Si una viñeta en escalera no cabe: el globo de abajo taparía la cabeza de quien habla. Devuelve
+    el motivo, o None. Entonces los globos van lado a lado: los textos no se acortan."""
+    pos = {q: {"izquierda": 108, "centro": 200, "derecha": 292}.get((v.get(q) or {}).get("lugar"), 108 if q == "tiza" else 292)
+           for q in ("tiza", "algoritmo") if v.get(q)}
+    globos = [b for b in v.get("bocadillos", []) if b.get("quien") in pos][:2]
+    if not escalera(globos, pos):
+        return None
+    y = 44 if v.get("cartela") else 12
+    a, b = globos
+    fondo = y + alto_globo(a.get("texto", ""), ESC_ARRIBA) + ESC_HUECO + alto_globo(b.get("texto", ""), ESC_ABAJO)
+    limite = CABEZA[b["quien"]] - ESC_MARGEN
+    if fondo <= limite:
+        return None
+    return f"habla primero quien está a la derecha, pero uno encima del otro los globos no caben (sobran {fondo - limite:.0f} px)"
+
+
+def comprobar(guion):
+    return [f"Viñeta {i + 1}: {m}" for i, v in enumerate(guion.get("vinetas", [])[:3]) if (m := no_cabe(v))]
+
+
 def panel(v, n):
     """Una viñeta. `v`: {"cartela"?, "tiza": {...}, "algoritmo": {...}, "objeto"?, "bocadillos": [...]}."""
-    partes = [f'<rect class="marco" x="1.5" y="1.5" width="{ANCHO - 3}" height="{ALTO - 3}" rx="4"/>',
-              f'<path class="t fino" d="M14 {SUELO} L{ANCHO - 14} {SUELO}"/>']
+    marco = f'<rect class="marco" x="1.5" y="1.5" width="{ANCHO - 3}" height="{ALTO - 3}" rx="4"/>'
+    partes = [f'<path class="t fino" d="M14 {SUELO} L{ANCHO - 14} {SUELO}"/>']
     partes.append(escenario(v.get("escenario")))
     obj = v.get("objeto")
     if obj in DE_FONDO:
@@ -292,12 +343,20 @@ def panel(v, n):
     if obj and obj not in DE_FONDO and manos:
         quien = v.get("lleva") if v.get("lleva") in manos else next(iter(manos))
         partes.append(objeto(obj, *manos[quien]))
+    partes = [marco, f'<g transform="translate(0 {BAJA})">{"".join(partes)}</g>']
     y = 12
     if v.get("cartela"):
         partes.append(cartela(v["cartela"]))
         y = 44
     globos = [b for b in v.get("bocadillos", []) if b.get("quien") in pos][:2]
-    for orden, b in enumerate(globos):
+    # Si la escalera no cabe (lo publicado antes del 06-11-2026, o un ajuste que no bastó), los globos
+    # van como antes: mejor un orden dudoso que un globo encima de la cabeza
+    if escalera(globos, pos) and not no_cabe(v):
+        partes += globos_escalera(globos, pos, y)
+        globos_iter = []
+    else:
+        globos_iter = globos
+    for orden, b in enumerate(globos_iter):
         # Se lee de arriba abajo: el segundo bocadillo, un poco más bajo que el primero
         y_globo = y + (30 if orden == 1 else 0)
         quien = b["quien"]
@@ -307,8 +366,7 @@ def panel(v, n):
         punta = (pos[quien] + (6 if pos[quien] < 200 else -6), CABEZA[quien])
         # Si habla una sola persona, el globo se ensancha: menos líneas y no baja hasta las cabezas
         ancho = 172 if len(globos) == 2 else 236
-        r = bocadillo(b.get("texto", ""), x, punta, b.get("tipo", "habla"), y_globo, ancho)
-        partes.append(r[0] if isinstance(r, tuple) else r)
+        partes.append(bocadillo(b.get("texto", ""), x, punta, b.get("tipo", "habla"), y_globo, ancho)[0])
     desc = " ".join(f'{"Tiza" if b["quien"] == "tiza" else "Algoritmo"}{" piensa" if b.get("tipo") == "piensa" else ""}: «{b.get("texto", "")}».' for b in globos)
     if v.get("cartela"):
         desc = f'{v["cartela"]}. {desc}'
@@ -323,5 +381,10 @@ def tira(guion):
 if __name__ == "__main__":
     import json
     import sys
+    if sys.argv[1] == "--comprobar":   # vineta.py --comprobar vinetas/FECHA.json: sale con 1 si algo no cabe
+        d = json.load(open(sys.argv[2]))
+        fallos = comprobar(((d.get("elegida") or {}).get("guion") or {}) if "elegida" in d else d)
+        print("\n".join(fallos))
+        sys.exit(1 if fallos else 0)
     g = json.load(open(sys.argv[1]))
     print(tira(g))

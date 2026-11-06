@@ -23,5 +23,6 @@
 | [0019](0019-codigo-de-la-redaccion-publico.md) | El código de la redacción, público y con historial nuevo |
 | [0020](0020-evaluacion-vcer-en-el-pie.md) | La evaluación VCER, en el pie |
 | [0021](0021-ningun-dia-sin-numero.md) | Ningún día sin número: reserva, vigilante, recuperación y reintentos de publicación |
+| [0022](0022-orden-de-los-globos-de-la-vineta.md) | El orden de los globos de la viñeta: escalera y escena más baja |
 
 Plantilla: [0000-plantilla.md](0000-plantilla.md). Para crear uno: `nuevo-adr "Título"`.
