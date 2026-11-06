@@ -34,5 +34,6 @@ dice desde el portátil, en una sesión con el agente.
 
 ## Validación
 
-Servicio levantado en el NAS y portada abierta desde el portátil en la red de casa; aviso de
-prueba recibido. La primera vista previa de verdad, el 07-11-2026 a las 5:00.
+Servicio levantado en el NAS el 06-11-2026; portada en castellano y en catalán servidas desde el
+portátil en la red de casa (200). El aviso usa el mismo `avisar-juanjo` que los demás avisos del
+reloj. La primera vista previa de verdad, el 07-11-2026 a las 5:00: comprobar que llegó.
