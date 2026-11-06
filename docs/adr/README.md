@@ -24,5 +24,6 @@
 | [0020](0020-evaluacion-vcer-en-el-pie.md) | La evaluación VCER, en el pie |
 | [0021](0021-ningun-dia-sin-numero.md) | Ningún día sin número: reserva, vigilante, recuperación y reintentos de publicación |
 | [0022](0022-orden-de-los-globos-de-la-vineta.md) | El orden de los globos de la viñeta: escalera y escena más baja |
+| [0023](0023-siempre-hay-vineta.md) | Siempre hay viñeta: el juez elige el mejor guion aunque no llegue al 7 |
 
 Plantilla: [0000-plantilla.md](0000-plantilla.md). Para crear uno: `nuevo-adr "Título"`.

@@ -121,7 +121,7 @@ IDIOMAS = {
             "proceso": [
                 "A la 1:00, un programa recoge los mensajes del día en los tres grupos y los ordena por grupo y por tema. En este paso no interviene la inteligencia artificial.",
                 "El redactor elige los temas que pueden interesar fuera de los grupos y escribe las piezas, comprobando cada dato en su fuente original. Después, el revisor vuelve a abrir cada fuente y quita lo que no puede confirmar.",
-                "El ilustrador dibuja cada pieza mientras el guionista escribe cinco guiones para la viñeta. Un programa abre cada dibujo en su página, en tema claro y oscuro, y mide sus colores, su contraste y sus rótulos; después, el revisor de dibujos mira el resultado y devuelve al ilustrador lo que no se ve bien. El juez de humor elige el mejor guion, o ninguno, y un programa dibuja la viñeta.",
+                "El ilustrador dibuja cada pieza mientras el guionista escribe cinco guiones para la viñeta. Un programa abre cada dibujo en su página, en tema claro y oscuro, y mide sus colores, su contraste y sus rótulos; después, el revisor de dibujos mira el resultado y devuelve al ilustrador lo que no se ve bien. El juez de humor elige el mejor guion y un programa dibuja la viñeta.",
                 "Si ese día ha entrado algún documento en la {biblioteca} de ChatGPT-IA-edu, el documentalista escribe su artículo y el revisor lo contrasta con el documento. Si el número se queda corto, con menos de cuatro piezas, el documentalista escribe además sobre recursos del {repositorio} de Vibe Coding Educativo, y el sábado repasa los que han entrado en la semana. La noche del sábado se preparan, además, el reportaje y «La semana en vídeo» del domingo.",
                 "El traductor prepara la edición en catalán, y el portavoz escribe el mensaje que recibirá cada grupo.",
                 "Un programa monta la web con todo lo anterior y la publica a las 6:55. A las 7:00, el bot de los grupos publica el aviso en cada uno de ellos.",
@@ -136,7 +136,7 @@ IDIOMAS = {
                 ("Ilustrador", "dibuja lo que explica cada noticia y, los domingos, la infografía del reportaje."),
                 ("Revisor de dibujos", "mira cada dibujo en su página, en tema claro y oscuro, y se lo devuelve al ilustrador si algo no se ve bien o no explica la noticia. Antes, un programa mide lo que se puede medir: colores, contraste y rótulos que se salen o se pisan."),
                 ("Guionista", "escribe cinco guiones de la viñeta con Tiza y Algoritmo, sus dos personajes."),
-                ("Juez de humor", "elige el mejor, sin haberlos escrito, o ninguno si no tiene gracia."),
+                ("Juez de humor", "elige el mejor y lo afina, sin haberlos escrito."),
                 ("Traductor", "prepara la edición en catalán, el Diari d'IA Educativa."),
                 ("Portavoz", "escribe cada mañana el aviso con el que el diario se presenta en cada grupo, distinto para cada uno."),
                 ("Jefe de reportajes", "los domingos elige el tema de la semana que merece un reportaje, su enfoque y a quién hay que consultar."),
@@ -235,7 +235,7 @@ IDIOMAS = {
             "proceso": [
                 "A la 1.00, un programa recull els missatges del dia dels tres grups i els ordena per grup i per tema. En aquest pas no hi intervé la intel·ligència artificial.",
                 "El redactor tria els temes que poden interessar fora dels grups i escriu les peces, comprovant cada dada a la seva font original. Després, el revisor torna a obrir cada font i treu el que no pot confirmar.",
-                "L'il·lustrador dibuixa cada peça mentre el guionista escriu cinc guions per a la vinyeta. Un programa obre cada dibuix a la seva pàgina, en tema clar i fosc, i en mesura els colors, el contrast i els rètols; després, el revisor de dibuixos mira el resultat i torna a l'il·lustrador el que no es veu bé. El jutge d'humor tria el millor guió, o cap, i un programa dibuixa la vinyeta.",
+                "L'il·lustrador dibuixa cada peça mentre el guionista escriu cinc guions per a la vinyeta. Un programa obre cada dibuix a la seva pàgina, en tema clar i fosc, i en mesura els colors, el contrast i els rètols; després, el revisor de dibuixos mira el resultat i torna a l'il·lustrador el que no es veu bé. El jutge d'humor tria el millor guió i un programa dibuixa la vinyeta.",
                 "Si aquell dia ha entrat algun document a la {biblioteca} de ChatGPT-IA-edu, el documentalista n'escriu l'article i el revisor el contrasta amb el document. Si el número es queda curt, amb menys de quatre peces, el documentalista escriu a més sobre recursos del {repositorio} de Vibe Coding Educativo, i el dissabte repassa els que hi han entrat durant la setmana. La nit del dissabte es preparen, a més, el reportatge i «La setmana en vídeo» del diumenge.",
                 "El traductor prepara l'edició en català, i el portaveu escriu el missatge que rebrà cada grup.",
                 "Un programa munta el web amb tot l'anterior i el publica a les 6.55. A les 7.00, el bot dels grups publica l'avís a cadascun.",
@@ -250,7 +250,7 @@ IDIOMAS = {
                 ("Il·lustrador", "dibuixa el que explica cada notícia i, els diumenges, la infografia del reportatge."),
                 ("Revisor de dibuixos", "mira cada dibuix a la seva pàgina, en tema clar i fosc, i el torna a l'il·lustrador si alguna cosa no es veu bé o no explica la notícia. Abans, un programa mesura el que es pot mesurar: colors, contrast i rètols que surten del dibuix o es trepitgen."),
                 ("Guionista", "escriu cinc guions de la vinyeta amb Guix i Algorisme, els seus dos personatges."),
-                ("Jutge d'humor", "tria el millor, sense haver-los escrit, o cap si no fa gràcia."),
+                ("Jutge d'humor", "tria el millor i l'afina, sense haver-los escrit."),
                 ("Traductor", "prepara aquesta edició en català a partir de la castellana, el Diario de IA Educativa."),
                 ("Portaveu", "escriu cada matí l'avís amb què el diari es presenta a cada grup, diferent per a cadascun."),
                 ("Cap de reportatges", "els diumenges tria el tema de la setmana que mereix un reportatge, el seu enfocament i a qui cal consultar."),
@@ -875,7 +875,7 @@ def cuerpo_portada(prof, piezas, breves, mostrar_fecha, tira=""):
 
 
 def bloque_vineta(prof, eds, fecha, en_archivo=False):
-    """La tira del día, si la hay: el juez puede dejar un día sin viñeta si ninguna tiene gracia."""
+    """La tira del día, si la hay: solo falta si fallan los guiones o el juez, o si los cinco incumplen las prohibiciones."""
     f = con_traduccion("vinetas", f"{fecha}.json")
     if not f.exists():
         return ""
