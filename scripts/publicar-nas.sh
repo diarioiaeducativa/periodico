@@ -25,6 +25,12 @@ python3 scripts/og-numero.py >> "$REG" 2>&1 || log "AVISO: no se pudo hacer la i
 python3 scripts/avisos-cabecera.py "$FECHA" >> "$REG" 2>&1 || log "AVISO: los avisos salen sin la cabecera del número"
 # Las imágenes del carrusel de Instagram (ADR 0015); las publica reloj.sh a las 7:05. Si fallan, ese día no hay carrusel.
 python3 scripts/instagram.py imagenes "$FECHA" >> "$REG" 2>&1 || log "AVISO: no se pudieron hacer las imágenes de Instagram; hoy no habrá carrusel"
+# Las cifras de los grupos que deja el Bot de IA Educativa una vez por semana (ADR 0029): las nuevas, al
+# repositorio, para que el diagrama de «La redacción» y el pie salgan también desde GitHub.
+mkdir -p comunidades
+for f in /bot-datos/comunidades/????-??-??.json; do
+  [ -f "$f" ] && [ ! -e "comunidades/${f##*/}" ] && cp "$f" comunidades/ && log "comunidades: cifras del ${f##*/}"
+done
 python3 generar.py >> "$REG" 2>&1 || { log "ERROR: el generador falla"; exit 1; }
 # El índice del buscador (ADR 0007). Si falla, el sitio sale igual con el índice anterior.
 python3 -m pagefind --site sitio >> "$REG" 2>&1 || log "AVISO: no se pudo rehacer el índice del buscador; queda el anterior"
@@ -64,7 +70,7 @@ fi
 # Las carpetas traducidas, una por idioma (ADR 0026); las de borradores no se suben (.gitignore).
 TRAD=$(for c in $(python3 scripts/idiomas.py lista); do printf ' %s-%s' ediciones "$c" ilustraciones "$c" vinetas "$c" reportajes "$c" biblioteca "$c" repositorio "$c"; done)
 # shellcheck disable=SC2086
-git add -A $(ls -d og/numeros videos reels ediciones ilustraciones vinetas avisos publicado.txt reportajes biblioteca repositorio reserva $TRAD 2>/dev/null) >> "$REG" 2>&1 ||
+git add -A $(ls -d og/numeros videos reels ediciones ilustraciones vinetas avisos publicado.txt reportajes biblioteca repositorio reserva comunidades $TRAD 2>/dev/null) >> "$REG" 2>&1 ||
   log "AVISO: no se pudo preparar lo escrito por la redacción para subirlo"
 if ! git diff --cached --quiet; then
   git commit -qm "Número del $PUBLICA" || log "AVISO: no se pudo preparar el commit de la redacción"

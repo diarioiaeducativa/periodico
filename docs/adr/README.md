@@ -30,5 +30,6 @@
 | [0026](0026-cinco-idiomas.md) | Cinco idiomas: gallego, euskera e inglés, además del castellano y el catalán |
 | [0027](0027-el-dominical.md) | El dominical: la semana en vídeo con el reportaje, en todas las redes |
 | [0028](0028-el-reportaje-sale-siempre.md) | El reportaje sale siempre, y las reservas caducan |
+| [0029](0029-las-comunidades-en-tres-circulos.md) | Las comunidades, en tres círculos |
 
 Plantilla: [0000-plantilla.md](0000-plantilla.md). Para crear uno: `nuevo-adr "Título"`.

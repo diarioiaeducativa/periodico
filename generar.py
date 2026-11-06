@@ -725,6 +725,7 @@ def pie(prof, eds, actual):
     <h2>{L["unete"]}</h2>
     <p>{L["unete_txt"]}</p>
     <ul class="pie-grupos">{grupos}</ul>
+    {pie_comunidades(prof)}
     <p class="pie-rss"><a href="{prof}redaccion.html">{L["quees"]}</a> · <a href="{prof}videos.html">{L["videos"]}</a> · {enlace(INSTAGRAM, L["instagram"])} · <a href="{prof}feed.xml">{L["rss"]}</a><span class="instalar-app" hidden> · <button type="button" class="instalar" title="{e(L["instalar_titulo"])}">{L["instalar"]}</button></span></p>
     <p class="instalar-ios" hidden>{L["instalar_ios"]}</p>
   </div>
@@ -1343,6 +1344,143 @@ def pagina_videos(eds):
 </html>"""
 
 
+# «Las comunidades» en «La redacción»: quién está en cada grupo y en varios a la vez, con las cifras que
+# deja el Bot de IA Educativa en comunidades/AAAA-MM-DD.json (la última). Tres círculos iguales: con
+# tres no se pueden ajustar a la vez todas las áreas a sus cifras, y las zonas pequeñas no se leerían.
+# Cada cifra, en el centro de su zona (calculado: la media de sus puntos, con la cifra centrada en altura).
+TXT_COMUNIDADES = {
+    "es": {"pie": "{n} personas en tres comunidades", "personas": "miembros", "total": "personas distintas", "fecha": "a {f}",
+           "nota": "{fecha}.",
+           "alt": "Diagrama de los tres grupos de Telegram del diario, con tres círculos que se cruzan. ChatGPT-IA-edu tiene {chatgpt} miembros; Vibe Coding Educativo, {vce}, y EduMedia-IAG, {edumedia}. Solo en ChatGPT-IA-edu están {s_chatgpt}; solo en Vibe Coding Educativo, {s_vce}, y solo en EduMedia-IAG, {s_edumedia}. En ChatGPT-IA-edu y Vibe Coding Educativo, sin EduMedia-IAG, {chatgpt_vce}; en ChatGPT-IA-edu y EduMedia-IAG, sin Vibe Coding Educativo, {chatgpt_edumedia}; en Vibe Coding Educativo y EduMedia-IAG, sin ChatGPT-IA-edu, {vce_edumedia}, y en los tres, {tres}. En total, {total} personas distintas, a {f}."},
+    "ca": {"pie": "{n} persones en tres comunitats", "personas": "membres", "total": "persones diferents", "fecha": "a {f}",
+           "nota": "{fecha}.",
+           "alt": "Diagrama dels tres grups de Telegram del diari, amb tres cercles que s'encreuen. ChatGPT-IA-edu té {chatgpt} membres; Vibe Coding Educativo, {vce}, i EduMedia-IAG, {edumedia}. Només a ChatGPT-IA-edu n'hi ha {s_chatgpt}; només a Vibe Coding Educativo, {s_vce}, i només a EduMedia-IAG, {s_edumedia}. A ChatGPT-IA-edu i Vibe Coding Educativo, sense EduMedia-IAG, {chatgpt_vce}; a ChatGPT-IA-edu i EduMedia-IAG, sense Vibe Coding Educativo, {chatgpt_edumedia}; a Vibe Coding Educativo i EduMedia-IAG, sense ChatGPT-IA-edu, {vce_edumedia}, i als tres, {tres}. En total, {total} persones diferents, a {f}."},
+    "gl": {"pie": "{n} persoas en tres comunidades", "personas": "membros", "total": "persoas distintas", "fecha": "a {f}",
+           "nota": "{fecha}.",
+           "alt": "Diagrama dos tres grupos de Telegram do diario, con tres círculos que se cruzan. ChatGPT-IA-edu ten {chatgpt} membros; Vibe Coding Educativo, {vce}, e EduMedia-IAG, {edumedia}. Só en ChatGPT-IA-edu están {s_chatgpt}; só en Vibe Coding Educativo, {s_vce}, e só en EduMedia-IAG, {s_edumedia}. En ChatGPT-IA-edu e Vibe Coding Educativo, sen EduMedia-IAG, {chatgpt_vce}; en ChatGPT-IA-edu e EduMedia-IAG, sen Vibe Coding Educativo, {chatgpt_edumedia}; en Vibe Coding Educativo e EduMedia-IAG, sen ChatGPT-IA-edu, {vce_edumedia}, e nos tres, {tres}. En total, {total} persoas distintas, a {f}."},
+    "eu": {"pie": "{n} pertsona hiru komunitatetan", "personas": "kide", "total": "pertsona desberdin", "fecha": "{f}n",
+           "nota": "{fecha}.",
+           "alt": "Egunkariaren Telegrameko hiru taldeen diagrama, elkar gurutzatzen diren hiru zirkulurekin. ChatGPT-IA-edu taldeak {chatgpt} kide ditu; Vibe Coding Educativo taldeak, {vce}, eta EduMedia-IAG taldeak, {edumedia}. ChatGPT-IA-edu taldean soilik {s_chatgpt} daude; Vibe Coding Educativo taldean soilik, {s_vce}, eta EduMedia-IAG taldean soilik, {s_edumedia}. ChatGPT-IA-edu eta Vibe Coding Educativo taldeetan, EduMedia-IAG gabe, {chatgpt_vce}; ChatGPT-IA-edu eta EduMedia-IAG taldeetan, Vibe Coding Educativo gabe, {chatgpt_edumedia}; Vibe Coding Educativo eta EduMedia-IAG taldeetan, ChatGPT-IA-edu gabe, {vce_edumedia}, eta hiruretan, {tres}. Guztira, {total} pertsona desberdin, {f}."},
+    "en": {"pie": "{n} people in three communities", "personas": "members", "total": "different people", "fecha": "as of {f}",
+           "nota": "{fecha}.",
+           "alt": "Diagram of the paper's three Telegram groups, with three overlapping circles. ChatGPT-IA-edu has {chatgpt} members; Vibe Coding Educativo, {vce}; and EduMedia-IAG, {edumedia}. Only in ChatGPT-IA-edu: {s_chatgpt}; only in Vibe Coding Educativo: {s_vce}; only in EduMedia-IAG: {s_edumedia}. In ChatGPT-IA-edu and Vibe Coding Educativo but not EduMedia-IAG: {chatgpt_vce}; in ChatGPT-IA-edu and EduMedia-IAG but not Vibe Coding Educativo: {chatgpt_edumedia}; in Vibe Coding Educativo and EduMedia-IAG but not ChatGPT-IA-edu: {vce_edumedia}; in all three: {tres}. In total, {total} different people, as of {f}."},
+}
+
+
+def cifra(n):
+    """4061 sin punto (RAE e IEC: hasta cuatro cifras, sin separador); de cinco en adelante, espacio fino. En inglés, coma."""
+    if L["codigo"] == "en":
+        return f"{n:,}"
+    return str(n) if n < 10000 else f"{n:,}".replace(",", " ")
+
+
+def fecha_dia(iso):
+    """«6 de noviembre de 2026», sin el día de la semana."""
+    d = datetime.date.fromisoformat(iso)
+    if L["codigo"] == "en":
+        return f"{d.day} {L['meses'][d.month - 1]} {d.year}"
+    if L["codigo"] == "eu":
+        return f"{d.year}ko {L['meses'][d.month - 1]}ren {d.day}a"
+    return f"{fecha_corta(iso)} de {d.year}"
+
+
+MESES_ABREV = {"es": "ene feb mar abr may jun jul ago sept oct nov dic", "ca": "gen. febr. març abr. maig juny jul. ag. set. oct. nov. des.",
+               "gl": "xan feb mar abr maio xuño xul ago set out nov dec", "eu": "urt. ots. mar. api. mai. eka. uzt. abu. ira. urr. aza. abe.",
+               "en": "Jan Feb Mar Apr May Jun Jul Aug Sept Oct Nov Dec"}
+
+
+def fecha_abrev(iso):
+    """«6 nov. 2026» (en euskera, «2026 aza. 6»; en inglés, «6 Nov 2026»)."""
+    d = datetime.date.fromisoformat(iso)
+    mes = MESES_ABREV[L["codigo"]].split()[d.month - 1]
+    if L["codigo"] in ("es", "gl"):
+        mes += "."
+    if L["codigo"] == "eu":
+        return f"{d.year} {mes} {d.day}"
+    return f"{d.day} {mes} {d.year}"
+
+
+def comunidades_datos():
+    """Las últimas cifras de los grupos (comunidades/AAAA-MM-DD.json), o None si aún no hay."""
+    archivos = sorted((RAIZ / "comunidades").glob("????-??-??.json"))
+    return json.loads(archivos[-1].read_text()) if archivos else None
+
+
+def emblema():
+    """Los tres círculos sin cifras: el emblema de las comunidades del diario, para el pie."""
+    return ('<svg class="emblema" viewBox="0 0 64 60" aria-hidden="true">'
+            '<circle class="venn venn-chatgpt" cx="24" cy="22" r="17"/><circle class="venn venn-vce" cx="40" cy="22" r="17"/>'
+            '<circle class="venn venn-edumedia" cx="32" cy="36" r="17"/></svg>')
+
+
+def pie_comunidades(prof):
+    """En el pie, bajo los grupos: el emblema y el total de personas, que lleva al diagrama de «La redacción»."""
+    c = comunidades_datos()
+    if not c:
+        return ""
+    texto = TXT_COMUNIDADES[L["codigo"]]["pie"].format(n=cifra(c["total"]))
+    return f'<p class="pie-comunidades"><a href="{prof}redaccion.html#comunidades">{emblema()}<span>{texto}</span></a></p>'
+
+
+GIRO_COMUNIDADES = 30   # grados: así el nombre de EduMedia-IAG no cae encima del total
+
+
+def comunidades_figura(giro=None):
+    """El diagrama de los tres grupos con sus cifras, o nada si aún no hay cifras. Se dibuja derecho
+    (ChatGPT-IA-edu y Vibe Coding Educativo arriba, EduMedia-IAG abajo) y se gira entero alrededor de su
+    centro; los textos siguen horizontales y cada nombre va por fuera de su círculo, en su dirección."""
+    import math
+    c = comunidades_datos()
+    if not c:
+        return ""
+    T, g, z = TXT_COMUNIDADES[L["codigo"]], c["grupos"], c["zonas"]
+    f = T["fecha"].format(f=fecha_dia(c["fecha"]))
+    n = lambda k: cifra(z[k])
+    alt = T["alt"].format(chatgpt=cifra(g["chatgpt"]), vce=cifra(g["vce"]), edumedia=cifra(g["edumedia"]),
+                          s_chatgpt=n("chatgpt"), s_vce=n("vce"), s_edumedia=n("edumedia"), chatgpt_vce=n("chatgpt+vce"),
+                          chatgpt_edumedia=n("chatgpt+edumedia"), vce_edumedia=n("vce+edumedia"), tres=n("tres"),
+                          total=cifra(c["total"]), f=f)
+    a = math.radians(GIRO_COMUNIDADES if giro is None else giro)
+    cx0, cy0, R = 300, 820 / 3, 150          # centro del conjunto (el de los tres centros) y radio
+    def gira(x, y):
+        dx, dy = x - cx0, y - cy0
+        return cx0 + dx * math.cos(a) - dy * math.sin(a), cy0 + dx * math.sin(a) + dy * math.cos(a)
+    # Vibe Coding Educativo, el nombre más largo, arriba (centrado, no sobresale); ChatGPT-IA-edu, a la derecha
+    centros = {k: gira(x, y) for k, (x, y) in {"vce": (225, 230), "chatgpt": (375, 230), "edumedia": (300, 360)}.items()}
+    # El centro de cada zona (la media de sus puntos, calculada con el dibujo derecho)
+    zonas = {"vce": (164, 195), "chatgpt": (436, 195), "edumedia": (300, 431), "chatgpt+vce": (300, 168),
+             "vce+edumedia": (208, 327), "chatgpt+edumedia": (392, 327), "tres": (300, 274)}
+    partes, xs, ys = [], [], []
+    for k, (x, y) in centros.items():
+        partes.append(f'<circle class="venn venn-{k}" cx="{x:.0f}" cy="{y:.0f}" r="{R}"/>')
+        xs += [x - R, x + R]; ys += [y - R, y + R]
+    for k, (x, y) in zonas.items():
+        x, y = gira(x, y)
+        cl = "num num-tres" if k == "tres" else "num"
+        partes.append(f'<text class="{cl}" x="{x:.0f}" y="{y + (13 if k == "tres" else 12):.0f}" text-anchor="middle">{n(k)}</text>')
+    for k, (x, y) in centros.items():
+        d = math.hypot(x - cx0, y - cy0); ux, uy = (x - cx0) / d, (y - cy0) / d
+        px, py = cx0 + ux * (d + R + 16), cy0 + uy * (d + R + 16)
+        lineas = [(GRUPOS[k][0], f"lbl nom-{k}"), (f"{cifra(g[k])} {T['personas']}", "lbl")]
+        ancho = max(len(t) for t, _ in lineas) * 14   # ancho de una letra a 28 px, medido (11,9 a 14,8): por lo alto
+        anc = "start" if ux > 0.55 else "end" if ux < -0.55 else "middle"   # arriba y abajo, centrado
+        y1 = py + 28 if uy > 0.5 else py - 48 if uy < -0.5 else py - 4
+        for i, (t, cl) in enumerate(lineas):
+            partes.append(f'<text class="{cl}" x="{px:.0f}" y="{y1 + 32 * i:.0f}" text-anchor="{anc}">{t}</text>')
+        x0 = px if anc == "start" else px - ancho if anc == "end" else px - ancho / 2
+        xs += [x0, x0 + ancho]; ys += [y1 - 24, y1 + 40]
+    total = f"{T['total']} ({fecha_abrev(c['fecha'])})"
+    mx, ancho_t = (min(xs) + max(xs)) / 2, len(total) * 11.8
+    yt = max(ys) + 66
+    partes.append(f'<text class="total" x="{mx:.0f}" y="{yt:.0f}" text-anchor="middle">{cifra(c["total"])}</text>')
+    partes.append(f'<text class="lbl" x="{mx:.0f}" y="{yt + 38:.0f}" text-anchor="middle">{total}</text>')
+    x0, x1 = min(min(xs), mx - ancho_t / 2) - 10, max(max(xs), mx + ancho_t / 2) + 10
+    y0, y1 = min(ys) - 10, yt + 52
+    svg = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="{x0:.0f} {y0:.0f} {x1 - x0:.0f} {y1 - y0:.0f}" role="img" aria-label="{e(alt)}">\n  '
+           + "\n  ".join(partes) + "\n</svg>")
+    return f'<figure class="ilu comunidades">{boton_ampliar(svg, e(alt))}</figure>'
+
+
 def pagina_redaccion(eds):
     """«La redacción»: quién hace el diario, empezando por el equipo de agentes y su organigrama."""
     R = L["redaccion"]
@@ -1363,7 +1501,10 @@ def pagina_redaccion(eds):
         organigrama = ilustracion(pres["fecha"], pres["editorial"], ampliable=True)
     equipo = "".join(f"<li><strong>{rol}</strong>: {texto}</li>" for rol, texto in R["equipo"])
     pasos = "".join(f"<li>{x.format(**grupos)}</li>" for x in R["proceso"])
-    resto = "".join(f"<h2>{t}</h2><p>{x.format(**grupos)}</p>" for t, x in R["secciones"])
+    # El diagrama de los grupos, tras la sección que los presenta (la que nombra a {chatgpt})
+    venn = comunidades_figura()
+    resto = "".join((f'<h2 id="comunidades">{t}</h2>{venn}' if "{chatgpt}" in x else f"<h2>{t}</h2>") + f"<p>{x.format(**grupos)}</p>"
+                    for t, x in R["secciones"])
     enlace_pres = f'<p class="presentacion"><a href="{d_href(pres)}">{L["presentacion"]}</a></p>' if pres else ""
     cab = cabecera("", "redaccion.html", eds[-1]["fecha"], eds[-1]["numero"], True, h1=False, activa="redaccion")
     return cabeza(f'{L["quees"]} | {L["titulo"]}', "", R["intro"], "redaccion.html") + f"""<body class="pag-que-es">
