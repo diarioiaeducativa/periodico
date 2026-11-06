@@ -62,6 +62,10 @@ hizo así: las secciones del diario van por temas.
   web; el revisor vuelve a abrirla y quita lo que no se ve en el recurso. En el artículo, la
   captura se amplía al pulsarla, sobre la propia página y con la X arriba a la derecha. Las
   capturas que el revisor no usa se borran.
+- **El mensaje que lo compartió.** La entrada lleva también los mensajes de los grupos que
+  enlazan el recurso, en el texto o en la vista previa (como mucho dos, los más antiguos): casi
+  siempre, la presentación de su autor. El documentalista lo usa como fuente, citado en `fuentes`,
+  y lo que diga y no se vea va como suyo.
 - **Agentes**: documentalista, revisor y traductor (Sonnet 5.5, pasos 16 a 18), sin ilustrador.
   Criterios en `encargos/repositorio.md`. Se nombra a la autora o el autor como crédito, también
   a Juanjo de Haro, igual que en el resto del diario (ADR 0018).
@@ -141,3 +145,10 @@ Lo que salió en las pruebas y se corrigió:
 - En la pieza de la semana, las capturas a todo el ancho hacían una página de casi 10.000 píxeles:
   ahora van al lado de su texto en pantallas anchas.
 - El traductor tradujo «Vibe Coding Educativo», que es un nombre propio.
+- La pieza de Fil i compte (06-11-2026) decía que los problemas estaban «en catalán»: la página se
+  abre en catalán y su descripción lo dice, pero tiene versión en castellano (`/es/`) con todos los
+  problemas y el solucionario, y el autor lo decía en su mensaje («Funciona en català i en
+  castellà»), que nadie leyó. Además, la redacción la había descartado por «no incluir enlace»: el
+  enlace iba en la vista previa, que `preparar.py` no copiaba. Ahora la copia (línea
+  `[enlace: …]`), la entrada del documentalista trae el mensaje y los encargos piden mirar
+  idiomas y versiones antes de decir que algo está en una lengua o es solo para algo.
