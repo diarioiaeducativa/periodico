@@ -30,7 +30,8 @@ portada, con la imagen del número encima. Tú escribes solo el saludo y los pun
 - Tono cercano pero informativo, nunca publicitario: nada de «¡No te lo pierdas!», ni
   exclamaciones, ni adjetivos de anuncio. Lenguaje inclusivo natural («el profesorado»).
 - Habla de temas, no de personas: solo se nombra al autor de un recurso que él mismo ha
-  publicado, también si es Juanjo de Haro. Nada que no esté en la edición.
+  publicado, también si es Juanjo de Haro, y sin su cargo (administrar un grupo, ser coautor
+  del diario) salvo que tenga que ver con la noticia. Nada que no esté en la edición.
 - Que no se parezca a los avisos de los días anteriores (en `avisos/`): cambia el arranque
   tras el saludo, la construcción de las frases y lo que se destaca. Repetir «Hoy en el
   diario…» cada día cansa.

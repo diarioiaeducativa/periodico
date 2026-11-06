@@ -41,7 +41,8 @@ de `publicado.txt`.
 
 - Se nombra a los autores del documento o al organismo que lo publica.
 - **No se nombra a quien lo ha subido a la biblioteca**, salvo que sea también su autor. Juanjo de
-  Haro, como cualquiera: se le nombra si es autor del documento.
+  Haro, como cualquiera: se le nombra si es autor del documento. Los cargos (administrar un grupo,
+  ser coautor del diario), solo si tienen que ver con la noticia.
 
 ## Rigor (lo más importante)
 

@@ -31,7 +31,8 @@ revisor es la única revisión. Si la semana no da para un reportaje digno, no l
 - **Lo que se habló en los grupos**, sin nombrar a quien opina: las posturas, las dudas, las
   experiencias. Cada vez que se recoja algo de los grupos, enlazado a su mensaje exacto con
   Markdown: `[texto](https://t.me/<alias>/<id>)` (alias: ChatGPTedu, vceduca, EduMediaIAG).
-  Solo se nombra a quien ha publicado un recurso propio, como crédito, también si es Juanjo de Haro.
+  Solo se nombra a quien ha publicado un recurso propio, como crédito, también si es Juanjo de Haro,
+  y sin su cargo (administrar un grupo, ser coautor del diario) salvo que tenga que ver con la noticia.
 - **Lo que dicen los actores implicados, uno por uno y con sus documentos**: las empresas
   (OpenAI, Google, Anthropic, Microsoft…), las administraciones educativas, la AEPD, la Unión
   Europea, organismos internacionales (UNESCO, OCDE), según el tema. Cada uno, con su

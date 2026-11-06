@@ -49,8 +49,10 @@ siendo la de hoy.
 - Las piezas hablan de **temas, no de personas**. No nombres a quien opina o pregunta.
 - Excepción: el autor de un recurso que él mismo ha publicado (una aplicación, una guía,
   un documento) se cita como crédito («creada por …»), con el nombre tal como aparece.
-- Juanjo de Haro (administrador) se trata como cualquiera: si el recurso es suyo, se le nombra
-  como crédito igual que a los demás.
+- **Los cargos, solo si tienen que ver con la noticia** (administrar un grupo, ser coautor del
+  diario): se nombran si la noticia trata de eso, por ejemplo un cambio de normas del grupo. Si no,
+  la persona es un docente más, sin cargo en el titular ni en el texto. Juanjo de Haro y Raül
+  Torres, como cualquiera: si el recurso es suyo, se les nombra como crédito igual que a los demás.
 
 ## Rigor (lo más importante)
 
