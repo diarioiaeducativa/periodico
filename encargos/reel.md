@@ -20,7 +20,7 @@ salen en pantalla. Nadie los revisa antes de que se publiquen.
   segundos. En el conjunto, no dos piezas del mismo tema.
 - Solo piezas que existen en esas ediciones, con su `fecha` y su `id` exactos.
 
-## Qué textos, por pieza, en castellano y en catalán
+## Qué textos, por pieza, en castellano, catalán, gallego, euskera e inglés
 
 - **golpe**: de una a tres palabras, como un rótulo (sale en mayúsculas y enorme): el tema. No
   pongas el día: lo pone el programa.
@@ -31,11 +31,13 @@ salen en pantalla. Nadie los revisa antes de que se publiquen.
 - Todo sale de la pieza: nada que no diga ella. Habla de temas, no de personas (se nombra solo
   al autor de un recurso que él mismo ha publicado, también si es Juanjo de Haro, y sin su cargo
   salvo que tenga que ver con la noticia).
-- El catalán, natural y correcto, no calcado. Los nombres propios de productos y grupos no se traducen.
+- Cada idioma, natural y correcto, no calcado: catalán del IEC, gallego normativo, euskera batua
+  («adimen artifiziala», AA) e inglés británico. Los mismos topes de caracteres en todos. Los nombres
+  propios de productos y grupos no se traducen. Las claves de idioma son `es`, `ca`, `gl`, `eu` y `en`.
 
 ## Además
 
-- **descripcion** (es y ca): una o dos frases que resuman el vídeo para la web, entre 80 y 240
+- **descripcion** (en los cinco idiomas): una o dos frases que resuman el vídeo para la web, entre 80 y 240
   caracteres.
 - **instagram**: el texto que acompaña al vídeo en Instagram, en castellano: de dos a cuatro
   frases que cuenten lo de la semana para quien no conoce los grupos. Entre 150 y 600 caracteres.
@@ -51,9 +53,9 @@ salen en pantalla. Nadie los revisa antes de que se publiquen.
 {"fecha": "2026-11-07",
  "noticias": [
   {"fecha": "2026-11-03", "id": "google-ia-cuentas-escolares",
-   "golpe": {"es": "Google", "ca": "Google"},
-   "titular": {"es": "IA apagada por defecto en las cuentas escolares", "ca": "IA apagada per defecte als comptes escolars"},
-   "dato": {"es": "Cada centro decide qué activa, producto a producto", "ca": "Cada centre decideix què activa, producte a producte"}}],
- "descripcion": {"es": "…", "ca": "…"},
+   "golpe": {"es": "Google", "ca": "Google", "gl": "Google", "eu": "Google", "en": "Google"},
+   "titular": {"es": "IA apagada por defecto en las cuentas escolares", "ca": "IA apagada per defecte als comptes escolars", "gl": "…", "eu": "…", "en": "AI switched off by default in school accounts"},
+   "dato": {"es": "Cada centro decide qué activa, producto a producto", "ca": "Cada centre decideix què activa, producte a producte", "gl": "…", "eu": "…", "en": "…"}}],
+ "descripcion": {"es": "…", "ca": "…", "gl": "…", "eu": "…", "en": "…"},
  "instagram": "…"}
 ```

@@ -44,11 +44,23 @@ e = html.escape
 TXT = {
     "es": {"la": "la", "semana": "semana", "sub": "Lo más destacado del Diario de IA Educativa",
            "todo": "Cada noticia, completa y con sus fuentes", "hora": "Cada mañana a las 7:00",
-           "titulo": "La semana en vídeo", "del": "Del {a} al {b}"},
+           "titulo": "La semana en vídeo", "hud": "La semana"},
     "ca": {"la": "la", "semana": "setmana", "sub": "El més destacat del Diari d'IA Educativa",
            "todo": "Cada notícia, completa i amb les fonts", "hora": "Cada matí a les 7:00",
-           "titulo": "La setmana en vídeo", "del": "Del {a} al {b}"},
+           "titulo": "La setmana en vídeo", "hud": "La setmana"},
+    # Gallego, euskera e inglés desde el 08-11-2026 (ADR 0026): si el guion no trae sus textos, ese
+    # idioma enseña el vídeo en castellano, como antes
+    "gl": {"la": "a", "semana": "semana", "sub": "O máis destacado do Diario de IA Educativa",
+           "todo": "Cada noticia, completa e coas súas fontes", "hora": "Cada mañá ás 7:00",
+           "titulo": "A semana en vídeo", "hud": "A semana"},
+    "eu": {"la": "", "semana": "astea", "sub": "Hezkuntzako AA Egunkariaren nabarmenena",
+           "todo": "Berri bakoitza, osorik eta bere iturriekin", "hora": "Goizero 7:00etan",
+           "titulo": "Astea bideoan", "hud": "Astea"},
+    "en": {"la": "the", "semana": "week", "sub": "The highlights of Educational AI Daily",
+           "todo": "Every story, in full and with its sources", "hora": "Every morning at 7:00 (Spain)",
+           "titulo": "The week on video", "hud": "The week"},
 }
+OBLIGATORIOS = ("es", "ca")   # sin estos textos el guion no vale; los demás idiomas, si están completos
 
 
 def _og():
@@ -147,7 +159,7 @@ html,body{{margin:0;width:{ANCHO}px;height:{ALTO}px;overflow:hidden;background:v
 .cierre .hora{{position:absolute;left:0;right:0;top:1250px;margin:0;font-size:44px;font-style:italic;color:var(--tinta-2)}}
 .cierre .franjas{{top:1420px;height:120px}}
 </style></head><body>
-<div class="hud" id="hud"><span>{e(L["titulo"])}</span><span>{e(T["titulo"].split(" en ")[0])}</span></div>
+<div class="hud" id="hud"><span>{e(L["titulo"])}</span><span>{e(T["hud"])}</span></div>
 <div class="barras" id="barras">{"".join("<b><i></i></b>" for _ in range(n))}</div>
 <section class="intro" id="intro">
   <div class="franjas">{franjas}</div>
@@ -250,11 +262,18 @@ def validar(guion, eds, fecha):
         if not dp:
             raise ValueError(f'no existe la pieza {g.get("fecha")}/{g.get("id")}')
         for campo in ("golpe", "titular", "dato"):
-            for c in ("es", "ca"):
+            for c in OBLIGATORIOS:
                 if not (g.get(campo) or {}).get(c, "").strip():
                     raise ValueError(f'falta {campo}.{c} en {g["id"]}')
         piezas.append(dp)
     return piezas
+
+
+def idiomas_del_guion(guion):
+    """Castellano y catalán siempre; gallego, euskera e inglés si el guion trae todos sus textos."""
+    return [c for c in TXT if c in OBLIGATORIOS or (
+        all((g.get(k) or {}).get(c, "").strip() for g in guion.get("noticias", []) for k in ("golpe", "titular", "dato"))
+        and (guion.get("descripcion") or {}).get(c, "").strip())]
 
 
 def estilos_usados():
@@ -274,6 +293,7 @@ def main():
     eds = generar.cargar()
     guion = json.loads((RAIZ / "reels" / f"{fecha}.json").read_text())
     piezas = validar(guion, eds, fecha)
+    idiomas = idiomas_del_guion(guion)
     vid = f"{publica}-semana"
     previo = RAIZ / "videos" / f"{vid}.json"
     estilo = json.loads(previo.read_text())["estilo"] if previo.exists() else \
@@ -283,7 +303,7 @@ def main():
     with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
         tmp = pathlib.Path(tmp)
         nav = pw.chromium.launch()
-        for codigo in ("es", "ca"):
+        for codigo in list(idiomas):
             semana = etiqueta_semana(publica, codigo)
             total, h = pagina(codigo, guion, piezas, estilo, semana)
             f = tmp / f"{codigo}.html"
@@ -292,6 +312,11 @@ def main():
             pag.goto(f.as_uri())
             pag.wait_for_function("window.irA !== undefined")
             malos = pag.evaluate("window.desbordes")
+            if malos and codigo not in OBLIGATORIOS:   # ese idioma enseñará el vídeo en castellano
+                print(f"reel-semana: no cabe ({codigo}), sale sin ese idioma: {malos}", file=sys.stderr)
+                idiomas.remove(codigo)
+                pag.close()
+                continue
             if malos:
                 print(f"reel-semana: no cabe ({codigo}): {malos}", file=sys.stderr)
                 sys.exit(2)
@@ -340,12 +365,12 @@ def main():
                             "-vf", "scale=720:-2", "-q:v", "4", str(RAIZ / "videos" / f"{vid}-{codigo}.jpg")], check=True)
     meta = {
         "id": vid, "tipo": "semana", "publicado": publica, "dia": fecha, "duracion": round(total),
-        "titulo": {c: f'{TXT[c]["titulo"]}: {etiqueta_semana(publica, c)}' for c in ("es", "ca")},
-        "descripcion": guion.get("descripcion") or {c: TXT[c]["sub"] for c in ("es", "ca")},
-        "pantalla": {c: [f'{TXT[c]["la"].capitalize()} {TXT[c]["semana"]}. {TXT[c]["sub"]}. {etiqueta_semana(publica, c)}.']
+        "titulo": {c: f'{TXT[c]["titulo"]}: {etiqueta_semana(publica, c)}' for c in idiomas},
+        "descripcion": {c: (guion.get("descripcion") or {}).get(c) or TXT[c]["sub"] for c in idiomas},
+        "pantalla": {c: [generar.mayus(f'{TXT[c]["la"]} {TXT[c]["semana"]}'.strip()) + f'. {TXT[c]["sub"]}. {etiqueta_semana(publica, c)}.']
                      + [f'{dia_de(g["fecha"], c)}. {g["golpe"][c]}. {g["titular"][c]}. {g["dato"][c]}' for g in guion["noticias"]]
-                     + [f'{TXT[c]["todo"]}. diarioiaeducativa.github.io. {TXT[c]["hora"]}.'] for c in ("es", "ca")},
-        "archivos": {c: {"video": f"{vid}-{c}.mp4", "poster": f"{vid}-{c}.jpg"} for c in ("es", "ca")},
+                     + [f'{TXT[c]["todo"]}. diarioiaeducativa.github.io. {TXT[c]["hora"]}.'] for c in idiomas},
+        "archivos": {c: {"video": f"{vid}-{c}.mp4", "poster": f"{vid}-{c}.jpg"} for c in idiomas},
         "piezas": [{"fecha": g["fecha"], "id": g["id"]} for g in guion["noticias"]],
         "estilo": estilo,
     }
