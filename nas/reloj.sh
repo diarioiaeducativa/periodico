@@ -13,7 +13,7 @@
 #   desde las 8:00  si faltan piezas de reserva, escribir una (scripts/reserva.sh)
 #   desde las 7:05  publicarlo en Instagram (scripts/instagram.py publicar), un solo intento (ADR 0015)
 #   a las 12:00     renovar el permiso de Instagram si tiene más de 7 días y comprobar que vale
-#   el domingo, desde las 12:00, publicar en Instagram «La semana en vídeo» (ADR 0016), un solo intento
+#   el domingo, desde las 9:00, publicar en Instagram «La semana en vídeo» (ADR 0016 y 0027), un solo intento
 #
 # Todo lo que decide se apunta en estado/, así que reiniciar el contenedor no repite nada.
 set -u
@@ -63,9 +63,9 @@ while true; do
       touch "$E.vista-previa"
       if python3 generar.py >> "registro/$F.log" 2>&1; then
         python3 -m pagefind --site sitio >> "registro/$F.log" 2>&1
-        # El domingo, también el texto del dominical que sale a las 12:00 en las redes (ADR 0027)
+        # El domingo, también el texto del dominical que sale a las 9:00 en las redes (ADR 0027)
         dom=""
-        [ -f "dominical/$F.json" ] && dom=" · Redes del dominical, a las 12:00: $(python3 -c 'import json,sys; print(json.load(open(sys.argv[1]))["corto"])' "dominical/$F.json" 2>/dev/null)"
+        [ -f "dominical/$F.json" ] && dom=" · Redes del dominical, a las 9:00: $(python3 -c 'import json,sys; print(json.load(open(sys.argv[1]))["corto"])' "dominical/$F.json" 2>/dev/null)"
         # Y cuál de los dos reportajes eligió el juez, si había uno de reserva (ADR 0028)
         [ -f "reportajes-borrador/$F-eleccion.json" ] && dom="$dom · Reportaje: $(python3 -c 'import json,sys; d=json.load(open(sys.argv[1])); print(("el de reserva" if d.get("elegido") == "reserva" else "el nuevo") + ", porque " + d.get("motivo", "").rstrip(".") + ".")' "reportajes-borrador/$F-eleccion.json" 2>/dev/null)"
         avisar "El número de hoy ya se puede revisar, tal como saldrá a las 6:55 (desde la red de casa): ${VISTA_PREVIA:-http://192.168.1.113:8770/} · en catalán: ${VISTA_PREVIA:-http://192.168.1.113:8770/}ca/ · Si hay que cambiar algo, dímelo antes desde el portátil.$dom"
@@ -107,8 +107,8 @@ while true; do
       avisar "No se ha podido publicar el número de hoy en Instagram. Registro: /volume1/docker/diario-ia-educativa/repo/registro/$F.log"
     fi
   fi
-  # El reel de la semana (ADR 0016): el domingo a mediodía, separado del carrusel de las 7:05
-  if [ "$(date +%u)" = 7 ] && [ "$m" -ge 720 ] && [ -e "instagram/reel-$F/reel.mp4" ] && [ -e "$HOME/.config/diario-instagram.json" ] \
+  # El reel de la semana (ADR 0016 y 0027): el domingo a las 9:00, con el dominical en las demás redes
+  if [ "$(date +%u)" = 7 ] && [ "$m" -ge 540 ] && [ -e "instagram/reel-$F/reel.mp4" ] && [ -e "$HOME/.config/diario-instagram.json" ] \
      && [ ! -e "$E.instagram-reel" ] && [ ! -e "$E.instagram-reel-intento" ]; then
     touch "$E.instagram-reel-intento"
     if ! python3 scripts/instagram.py reel "$F" >> "registro/$F.log" 2>&1; then

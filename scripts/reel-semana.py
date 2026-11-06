@@ -408,7 +408,7 @@ LIMITE_CORTO = 300   # Bluesky cuenta el enlace entero; en X pesa 23 (ADR 0027)
 
 
 def dominical(fecha, publica, guion, con_reportaje):
-    """Lo que publican X, Bluesky y LinkedIn el domingo a las 12:00 (ADR 0027): el vídeo en castellano
+    """Lo que publican X, Bluesky y LinkedIn el domingo a las 9:00 (ADR 0027): el vídeo en castellano
     con el texto del guionista y un enlace al número del domingo, que reúne el reportaje y el vídeo. Lo
     publica scripts/redes/dominical.sh desde el contenedor del boletín, que tiene las sesiones."""
     url = f"{generar.BASE}{fecha}/"
@@ -421,7 +421,7 @@ def dominical(fecha, publica, guion, con_reportaje):
     largo = (guion.get("instagram") or corto).strip()
     (RAIZ / "dominical").mkdir(exist_ok=True)
     (RAIZ / "dominical" / f"{fecha}.json").write_text(json.dumps({
-        "fecha": fecha, "publica": publica, "hora": "12:00", "reportaje": con_reportaje,
+        "fecha": fecha, "publica": publica, "hora": "9:00", "reportaje": con_reportaje,
         "corto": corto + cola, "largo": largo + "\n" + cola,
         "video": f"instagram/reel-{fecha}/reel.mp4",
     }, ensure_ascii=False, indent=2) + "\n")

@@ -16,7 +16,7 @@ mezclados.
   «Reportaje», su titular, su conclusión y su infografía). El guionista del vídeo escribe esos textos en
   los cinco idiomas (`encargos/reel.md`); el reportaje ya está hecho cuando se monta el vídeo, la misma
   madrugada del domingo. Si no hay reportaje o faltan sus textos, el vídeo sale sin esa escena.
-- **Una publicación por red, el domingo a las 12:00**, con el vídeo en castellano y un solo enlace, al
+- **Una publicación por red, el domingo a las 9:00**, con el vídeo en castellano y un solo enlace, al
   número del domingo, que reúne el reportaje y el vídeo:
   - Instagram: el reel, como hasta ahora (`scripts/instagram.py reel`), titulado «El dominical» cuando
     lleva reportaje.
@@ -26,14 +26,18 @@ mezclados.
 - **Quién publica en X, Bluesky y LinkedIn**: el contenedor del boletín semanal, que tiene las sesiones
   y los programas (los mismos del boletín de los lunes). `reel-semana.py` deja `dominical/<sábado>.json`
   con los textos y la ruta del vídeo; `scripts/redes/dominical.sh` (de este repositorio, montado allí en
-  `/diario` solo para leer) lo publica desde las 12:00, con dos intentos por red y aviso si una falla
+  `/diario` solo para leer) lo publica desde las 9:00, con dos intentos por red y aviso si una falla
   (ADR 0007 del boletín). LinkedIn reutiliza `7-linkedin.py` del boletín por medio de
   `scripts/redes/dominical_linkedin.py`.
+- **A las 9:00, no a mediodía** (06-11-2026, Juanjo: «las 12 es demasiado tarde, mejor las 9»): el
+  reel de Instagram se adelanta también, para que las cuatro redes salgan juntas. La hora está en el
+  campo `hora` de `dominical/<sábado>.json`, que `dominical.sh` lee; `reloj.sh` publica el reel desde
+  la misma hora.
 - **Revisión**: el aviso de las 5:00 del domingo (ADR 0025) trae también el texto de las redes.
 
 ## Alternativas descartadas
 
-- Dos publicaciones (reportaje a las 9:00 con su infografía y vídeo a las 12:00): más ruido; Juanjo
+- Dos publicaciones (reportaje por la mañana con su infografía y vídeo a mediodía): más ruido; Juanjo
   prefirió una sola.
 - Un carrusel del reportaje en Instagram: queda dentro del vídeo.
 

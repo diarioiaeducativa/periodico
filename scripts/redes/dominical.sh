@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # SPDX-License-Identifier: AGPL-3.0-or-later
-# El dominical en X, Bluesky y LinkedIn (ADR 0027): el domingo a las 12:00, el vídeo de la semana con
+# El dominical en X, Bluesky y LinkedIn (ADR 0027): el domingo a las 9:00, el vídeo de la semana con
 # el reportaje y el texto que dejó reel-semana.py en dominical/<sábado>.json. Instagram lo publica el
 # propio diario (scripts/instagram.py reel).
 #

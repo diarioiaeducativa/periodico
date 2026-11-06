@@ -54,7 +54,7 @@ Recomendado y aceptado por Juanjo el 05-11-2026 («hazlo así»):
     página «Vídeos» es una galería de tarjetas (vídeo, título, fecha y descripción). Juanjo,
     05-11-2026: la primera versión, con la lista desplegada junto a cada vídeo, «esto es horrible». Si un vídeo no tiene versión en el idioma de la página, va el
     castellano y se dice.
-- **En Instagram**, solo la versión castellana (1080 × 1920), el domingo desde las 12:00, separada
+- **En Instagram**, solo la versión castellana (1080 × 1920), el domingo desde las 9:00 (al principio, desde las 12:00; ADR 0027), separada
   del carrusel de las 7:05 (`instagram.py reel`, ADR 0015). Un solo intento; su enlace se guarda en
   el JSON del vídeo y aparece en la web con la siguiente publicación.
 
