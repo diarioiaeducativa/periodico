@@ -1,0 +1,114 @@
+{
+  "fecha": "2026-11-05",
+  "candidatas": [
+    {
+      "pieza": "gemini-google-sites",
+      "idea": "La exportación «con un clic» exige tener Sites activado y permiso para crear sitios, y el clic acaba como punto del orden del día del claustro.",
+      "guion": {"vinetas": [
+        {"escenario": "aula",
+         "tiza": {"expresion": "contento", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "contento", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+         "objeto": "portatil",
+         "bocadillos": [{"quien": "algoritmo", "texto": "¡Tu app interactiva, publicada en Google Sites con un clic!", "tipo": "habla"},
+                        {"quien": "tiza", "texto": "Un clic. Eso me gusta.", "tipo": "habla"}]},
+        {"escenario": "aula",
+         "tiza": {"expresion": "preocupado", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "neutral", "postura": "encoger", "lugar": "derecha", "mira": "izquierda"},
+         "objeto": "portatil",
+         "bocadillos": [{"quien": "algoritmo", "texto": "Solo necesitas tener Sites activado y permiso para crear sitios.", "tipo": "habla"}]},
+        {"escenario": "claustro",
+         "tiza": {"expresion": "harto", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "cargando", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+         "objeto": "folio", "lleva": "tiza",
+         "bocadillos": [{"quien": "tiza", "texto": "Punto catorce del orden del día: el clic.", "tipo": "habla"}]}
+      ]}
+    },
+    {
+      "pieza": "gemini-google-sites",
+      "idea": "Tiza quiere meter la app en la web de clase que ya tiene; Algoritmo, servicial, le crea un sitio nuevo cada vez.",
+      "guion": {"vinetas": [
+        {"escenario": "aula",
+         "tiza": {"expresion": "neutral", "postura": "senalar", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "contento", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+         "objeto": "portatil",
+         "bocadillos": [{"quien": "tiza", "texto": "Quiero poner esta app en la web de clase que ya tengo.", "tipo": "habla"},
+                        {"quien": "algoritmo", "texto": "¡Un clic y listo!", "tipo": "habla"}]},
+        {"escenario": "aula",
+         "tiza": {"expresion": "pensativo", "postura": "pensar", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "orgulloso", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+         "objeto": "portatil",
+         "bocadillos": [{"quien": "algoritmo", "texto": "Hecho: te he creado un sitio nuevo.", "tipo": "habla"},
+                        {"quien": "tiza", "texto": "Nuevo no. En el mío.", "tipo": "habla"}]},
+        {"escenario": "aula",
+         "tiza": {"expresion": "harto", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "contento", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+         "objeto": "portatil",
+         "bocadillos": [{"quien": "algoritmo", "texto": "¡Hecho otra vez! Ya tienes tres.", "tipo": "habla"}]}
+      ]}
+    },
+    {
+      "pieza": "gemini-omni-1-2-flash",
+      "idea": "Tiza pregunta si el modelo de vídeo se podrá usar en Europa y Algoritmo, que no lo sabe, le ofrece ponerle Europa de fondo.",
+      "guion": {"vinetas": [
+        {"escenario": "sala_profes",
+         "tiza": {"expresion": "pensativo", "postura": "pensar", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "contento", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+         "objeto": "portatil",
+         "bocadillos": [{"quien": "algoritmo", "texto": "¡Ya hago vídeos de hasta 15 segundos y los retoco turno a turno!", "tipo": "habla"},
+                        {"quien": "tiza", "texto": "¿Y se podrá usar en Europa?", "tipo": "habla"}]},
+        {"escenario": "sala_profes",
+         "tiza": {"expresion": "harto", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "orgulloso", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+         "objeto": "portatil",
+         "bocadillos": [{"quien": "algoritmo", "texto": "Le cambio el fondo, la luz, la relación de aspecto...", "tipo": "habla"},
+                        {"quien": "tiza", "texto": "Europa.", "tipo": "habla"}]},
+        {"escenario": "sala_profes",
+         "tiza": {"expresion": "harto", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "pensativo", "postura": "encoger", "lugar": "derecha", "mira": "izquierda"},
+         "objeto": "portatil",
+         "bocadillos": [{"quien": "algoritmo", "texto": "¿Te vale si le pongo Europa de fondo?", "tipo": "habla"}]}
+      ]}
+    },
+    {
+      "pieza": "mechsimulator",
+      "idea": "Más de 150 simuladores hechos, según el grupo, por un solo profesor; Tiza, de noche y ante su montón de exámenes, solo se pregunta cuándo corrige.",
+      "guion": {"vinetas": [
+        {"escenario": "sala_profes",
+         "tiza": {"expresion": "sorprendido", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "contento", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+         "objeto": "taza", "lleva": "tiza",
+         "bocadillos": [{"quien": "algoritmo", "texto": "Más de 150 simuladores gratis: mecánica, fluidos, electricidad...", "tipo": "habla"},
+                        {"quien": "tiza", "texto": "¿Y quién los ha hecho?", "tipo": "habla"}]},
+        {"escenario": "sala_profes",
+         "tiza": {"expresion": "sorprendido", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "neutral", "postura": "encoger", "lugar": "derecha", "mira": "izquierda"},
+         "objeto": "taza", "lleva": "tiza",
+         "bocadillos": [{"quien": "algoritmo", "texto": "La web no lo dice. En el grupo cuentan que un solo profesor.", "tipo": "habla"}]},
+        {"escenario": "casa_noche",
+         "tiza": {"expresion": "agotado", "postura": "pensar", "lugar": "centro", "mira": "derecha"},
+         "objeto": "examenes",
+         "bocadillos": [{"quien": "tiza", "texto": "¿Y cuándo corrige?", "tipo": "piensa"}]}
+      ]}
+    },
+    {
+      "pieza": "breve",
+      "idea": "El modelo de vídeo siguió los cinco planos grabados en VR casi cuadro a cuadro y añadió uno que nadie grabó: «Ese es el casi».",
+      "guion": {"vinetas": [
+        {"tiza": {"expresion": "contento", "postura": "senalar", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "contento", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+         "objeto": "portatil",
+         "bocadillos": [{"quien": "tiza", "texto": "Te paso cinco planos grabados en VR. Síguelos como referencia.", "tipo": "habla"},
+                        {"quien": "algoritmo", "texto": "¡A la orden!", "tipo": "habla"}]},
+        {"tiza": {"expresion": "pensativo", "postura": "pensar", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "orgulloso", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+         "objeto": "portatil",
+         "bocadillos": [{"quien": "algoritmo", "texto": "Listo: tus cortes, casi cuadro a cuadro.", "tipo": "habla"},
+                        {"quien": "tiza", "texto": "¿Y este plano? Yo no lo grabé.", "tipo": "habla"}]},
+        {"tiza": {"expresion": "harto", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "orgulloso", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+         "objeto": "portatil",
+         "bocadillos": [{"quien": "algoritmo", "texto": "Ese es el «casi».", "tipo": "habla"}]}
+      ]}
+    }
+  ]
+}

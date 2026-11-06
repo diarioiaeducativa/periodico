@@ -1,0 +1,25 @@
+{
+  "fecha": "2026-11-05",
+  "elegida": {
+    "n": 5,
+    "pieza": "breve",
+    "idea": "El model de vídeo va seguir els cinc plans gravats en VR quasi fotograma a fotograma i n'hi va afegir un que ningú no va gravar: «Aquest és el quasi».",
+    "guion": {"vinetas": [
+      {"tiza": {"expresion": "contento", "postura": "senalar", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "contento", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+       "objeto": "portatil",
+       "bocadillos": [{"quien": "tiza", "texto": "Cinc plans gravats en VR. Segueix-los tal qual.", "tipo": "habla"},
+                      {"quien": "algoritmo", "texto": "A la teva ordre!", "tipo": "habla"}]},
+      {"tiza": {"expresion": "sorprendido", "postura": "senalar", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "orgulloso", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+       "objeto": "portatil",
+       "bocadillos": [{"quien": "algoritmo", "texto": "Fet: els teus talls, quasi fotograma a fotograma.", "tipo": "habla"},
+                      {"quien": "tiza", "texto": "I aquest pla? Jo no el vaig gravar.", "tipo": "habla"}]},
+      {"tiza": {"expresion": "harto", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "orgulloso", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+       "objeto": "portatil",
+       "bocadillos": [{"quien": "algoritmo", "texto": "Aquest és el «quasi».", "tipo": "habla"}]}
+    ]}
+  },
+  "traduccion": "automàtica amb IA"
+}

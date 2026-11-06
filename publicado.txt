@@ -60,3 +60,11 @@
 - breve: Raül Torres compartió en EduMedia-IAG un paseo en modo videojuego por Girona hecho con Cla
 - pieza:2026-11-04/rompecabezas-tecnica-jigsaw (repositorio) Una herramienta forma al azar los grupos base y de expertos de la técnica Jigsaw — recursos con artículo: Rompecabezas – Técnica Jigsaw (https://jigsawcoop.github.io/)
 - pieza:2026-11-04/edutictac-blocs (repositorio) Un editor de programación por bloques, basado en TurboWarp y compatible con Scratch, para aprender a programar — recursos con artículo: EduTicTac Blocs (https://blocs.edutictac.es/)
+
+## 2026-11-05 (publicado el viernes 6 de noviembre de 2026)
+- pieza:2026-11-05/gemini-google-sites (herramientas) Gemini permite exportar con un clic sus aplicaciones interactivas a un sitio de Google Sites
+- pieza:2026-11-05/mechsimulator (vibecoding) MechSimulator reúne simuladores gratuitos de ingeniería mecánica que se usan en el navegador
+- pieza:2026-11-05/gemini-omni-1-2-flash (multimedia) Google presenta Gemini Omni 1.2 Flash, que genera y edita vídeos de hasta 15 segundos
+- breve: La página de XTEC sobre IA enlaza como documento de orientaciones el de 2024, con la nota 
+- breve: OpenAI presentó Images 2.6, que según su anuncio acelera la generación de imágenes, permit
+- breve: Raül Torres, autor de [la cámara virtual para Blender que el diario contó](pieza:2026-11-0

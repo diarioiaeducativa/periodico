@@ -1,0 +1,33 @@
+{
+  "fecha": "2026-11-06",
+  "avisos": {
+    "chatgpt": {
+      "saludo": "Buenos días. Viernes con Gemini, Google Sites y una página oficial de Cataluña.",
+      "puntos": [
+        "Gemini permite exportar con un clic una aplicación interactiva a un borrador privado de Google Sites; en el grupo se debatió cuánto aporta frente a compartirla desde el lienzo",
+        "La página de XTEC sobre IA sigue enlazando las orientaciones de 2024 y anota una actualización prevista para diciembre de 2026",
+        "Un simulador gratuito de ingeniería mecánica, con más de 150 prácticas en el navegador, puede servir de banco de actividades en tecnología y FP"
+      ]
+    },
+    "vce": {
+      "saludo": "Buenos días. Del repositorio llega un banco de problemas de matemáticas para imprimir.",
+      "puntos": [
+        "Fil i compte, de Aarón Fortuño, ofrece 252 problemas en catalán que se filtran por nivel, dificultad y contenidos para montar fichas con solucionario, sin registro",
+        "MechSimulator reúne más de 150 simuladores de mecánica, materiales o electricidad que se abren sin instalar nada, un ejemplo del alcance de un proyecto individual",
+        "Una aplicación interactiva creada en Gemini puede pasar a ser un sitio de Google Sites, aunque siempre como sitio nuevo según quienes la probaron"
+      ]
+    },
+    "edumedia": {
+      "saludo": "Buenos días. Vídeo e imagen con IA estrenan versiones nuevas.",
+      "puntos": [
+        "Gemini Omni 1.2 Flash genera y edita clips de hasta 15 segundos y deja retocar fondo, luz o formato turno a turno, con un 30 % menos de coste por segundo",
+        "Images 2.6, de OpenAI, promete generar imágenes más deprisa, crear GIF dentro de ChatGPT y editar mejor; la descripción oficial es lo único que se pudo leer",
+        "La viñeta de Tiza y Algoritmo parte de cinco planos grabados en realidad virtual que sirven de guion de cámara a un modelo de vídeo"
+      ]
+    }
+  },
+  "instagram": "El número de hoy recorre novedades de IA aplicada a la educación. Google permite convertir una aplicación creada con Gemini en un sitio web, y su nuevo modelo de vídeo alarga los clips hasta quince segundos. También se repasa un banco gratuito de problemas de matemáticas en catalán para imprimir fichas con solucionario y una colección de simuladores de ingeniería que funcionan en el navegador.",
+  "titulo": "Diario de IA Educativa · Núm. 5",
+  "fecha_texto": "Viernes, 6 de noviembre de 2026",
+  "url": "https://diarioiaeducativa.github.io/?n=5"
+}

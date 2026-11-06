@@ -1,0 +1,47 @@
+{
+  "fecha": "2026-11-05",
+  "piezas": [
+    {
+      "id": "fil-i-compte",
+      "seccion": "vibecoding",
+      "repositorio": "dia",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Nuevo en el repositorio",
+      "titular": "Fil i compte permite preparar fichas imprimibles de problemas de matemáticas en catalán, con solucionario",
+      "entradilla": "Un banco de 252 problemas permite al profesorado de primaria y de los primeros cursos de ESO elegir enunciados, ordenarlos e imprimir la ficha o guardarla en PDF.",
+      "cuerpo": [
+        "«Fil i compte» es una herramienta web creada por Aarón Fortuño y publicada con licencia MIT. Reúne, según la página, 252 problemas de matemáticas redactados en catalán, pensados para el ciclo medio y el ciclo superior de primaria y para el inicio de la ESO. El recurso se abre en el navegador, y la página no pide registro ni cuenta.",
+        "El profesorado puede filtrar el banco por nivel orientativo, por dificultad (accesible, intermedia o de reto) y por contenidos: suma y resta, multiplicación y división, operaciones combinadas, paréntesis, fracciones, porcentajes, decimales, potencias, raíces, proporcionalidad directa e inversa o cálculo estimativo. Cada contenido puede marcarse como permitido, obligatorio o excluido. También hay una categoría de razonamiento y una de «datos para despistar», con enunciados que incluyen información que no hace falta para resolverlos. Quien prefiera no elegir puede pedir una propuesta automática de ficha, y es posible buscar por texto o por el código de cada problema.",
+        "Cada problema se muestra con su código, su nivel, su dificultad y sus etiquetas de contenido; por ejemplo, el de las manzanas del huerto escolar es de ciclo medio y dificultad baja. Una vez elegidos los problemas, se ordenan y se decide el número de páginas (1, 2, 4 o 6) y de problemas por página. También se escoge el tipo de zona de trabajo: punteada, cuadriculada o con líneas. La ficha se imprime y, según la ficha del repositorio, también puede guardarse en PDF. La página permite alternar entre los ejercicios y el solucionario, que se imprime aparte. Las plantillas pueden guardarse en el navegador, de modo que el docente puede reutilizar una selección en ese mismo equipo.",
+        "En clase puede servir para preparar con rapidez hojas de práctica adaptadas a distintos grupos o niveles de dificultad dentro de una misma aula, o para tareas de repaso con la solución a mano. La interfaz está en catalán y ofrece también castellano. El código está publicado en GitHub, y la página recoge que usa analítica de visitas sin datos personales, que puede desactivarse."
+      ],
+      "recursos": [
+        {
+          "id": "fil-i-compte",
+          "titulo": "Fil i compte",
+          "autoria": "Aarón Fortuño",
+          "url": "https://filicompte.ortogra.fi/",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://filicompte.ortogra.fi/",
+          "licencia": "MIT",
+          "captura": "2026-11-05-fil-i-compte.jpg",
+          "captura_alt": "Pantalla del banco de problemas con filtros de nivel, dificultad y contenidos a la izquierda y tarjetas de problemas en catalán a la derecha.",
+          "texto": []
+        }
+      ],
+      "fuentes": [
+        {"titulo": "Fil i compte", "url": "https://filicompte.ortogra.fi/"},
+        {"titulo": "Código de Fil i compte en GitHub", "url": "https://github.com/aaronFortuno/fil-i-compte"}
+      ],
+      "comprobado": "Se miró la captura (banco de problemas con filtros, tarjetas P0001 a P0009 en catalán, selección de problemas, botón de imprimir, selector de idioma, plantillas) y se leyó el texto visible de la página. WebFetch de la web confirmó solucionario alternable con los ejercicios, impresión (sin mención de PDF, que consta solo en la ficha), plantillas guardadas en el navegador, idiomas catalán y castellano, sin cuenta y analítica desactivable. El repositorio de GitHub confirma la licencia MIT y el castellano. No se comprobó el PDF ni el solucionario generado. Sin publicaciones previas relacionadas en publicado.txt."
+    }
+  ],
+  "descartado": [],
+  "repaso": [
+    "Número de páginas: «de una a seis» pasa a «1, 2, 4 o 6», como ofrece la página.",
+    "PDF: se mantiene como dicho por la ficha, porque la página solo habla de imprimir.",
+    "Solucionario: confirmado en la página (alterna ejercicios y solucionario, que se imprime aparte); se quita «según la ficha» y se describe.",
+    "Idioma: confirmado en la página que ofrece castellano; se quita la atribución a la ficha.",
+    "Plantillas: se precisa que quedan en el navegador donde se guardan."
+  ]
+}

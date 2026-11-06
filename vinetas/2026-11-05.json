@@ -1,0 +1,33 @@
+{
+  "fecha": "2026-11-05",
+  "elegida": {
+    "n": 5,
+    "pieza": "breve",
+    "idea": "El modelo de vídeo siguió los cinco planos grabados en VR casi cuadro a cuadro y añadió uno que nadie grabó: «Ese es el casi».",
+    "guion": {"vinetas": [
+      {"tiza": {"expresion": "contento", "postura": "senalar", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "contento", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+       "objeto": "portatil",
+       "bocadillos": [{"quien": "tiza", "texto": "Cinco planos grabados en VR. Síguelos tal cual.", "tipo": "habla"},
+                      {"quien": "algoritmo", "texto": "¡A la orden!", "tipo": "habla"}]},
+      {"tiza": {"expresion": "sorprendido", "postura": "senalar", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "orgulloso", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+       "objeto": "portatil",
+       "bocadillos": [{"quien": "algoritmo", "texto": "Listo: tus cortes, casi cuadro a cuadro.", "tipo": "habla"},
+                      {"quien": "tiza", "texto": "¿Y este plano? Yo no lo grabé.", "tipo": "habla"}]},
+      {"tiza": {"expresion": "harto", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "orgulloso", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+       "objeto": "portatil",
+       "bocadillos": [{"quien": "algoritmo", "texto": "Ese es el «casi».", "tipo": "habla"}]}
+    ]}
+  },
+  "motivo": "Es el único remate que sorprende de verdad: convierte el «casi cuadro a cuadro» de la noticia en la excusa de la IA para colar un plano inventado, en tres palabras y con la seguridad satisfecha de Algoritmo. Se ciñe al breve (cinco planos en VR como referencia, cortes seguidos casi cuadro a cuadro, planos añadidos no grabados) y la ironía apunta al modelo, no al autor. La 1 y la 3 son correctas pero su remate es previsible o se ve venir desde la viñeta 2; la 2 es clara pero de manual; la 4 no tiene gracia suficiente y su remate roza la insinuación sobre el autor del recurso.",
+  "retoques": "Viñeta 1: «Te paso cinco planos grabados en VR. Síguelos como referencia.» pasa a «Cinco planos grabados en VR. Síguelos tal cual.» (más corto, y el «tal cual» prepara el «casi»). Viñeta 2: Tiza pasa de pensativo/pensar a sorprendido/senalar, señalando el plano intruso en el portátil. Sin escenario, como el original: el portátil en el centro basta. Bocadillos: 47, 11, 40, 30 y 17 caracteres; ninguno pasa de 90.",
+  "puntuaciones": [
+    {"n": 1, "pieza": "gemini-google-sites", "gracia": 6, "claridad": 7, "remate": 6, "prohibiciones": "respeta", "nota": "Datos correctos (Sites activado y permiso para crear sitios). La escalada al claustro tiene gracia burocrática, pero el salto de «permiso» a «punto catorce» no se entiende sin pensarlo y el remate es algo previsible. Además, la nota oficial dice que no hay controles nuevos para administradores, aunque el chiste no lo contradice."},
+    {"n": 2, "pieza": "gemini-google-sites", "gracia": 6, "claridad": 8, "remate": 6, "prohibiciones": "respeta", "nota": "Se basa en el testimonio de los miembros (siempre crea un sitio nuevo), atribuido como tal en la pieza: no se inventa nada. Muy clara, pero es el chiste de manual de la IA servicial que no escucha, y «ya tienes tres» se ve venir desde la viñeta 2."},
+    {"n": 3, "pieza": "gemini-omni-1-2-flash", "gracia": 6, "claridad": 7, "remate": 6, "prohibiciones": "respeta", "nota": "Datos correctos (15 s, retoque turno a turno, fondo, luz, relación de aspecto; disponibilidad en Europa no comprobada). La evasiva tiene su punto, pero la viñeta 2 ya hace el mismo malentendido y el remate solo lo repite."},
+    {"n": 4, "pieza": "mechsimulator", "gracia": 4, "claridad": 6, "remate": 4, "prohibiciones": "respeta, por poco", "nota": "Datos bien atribuidos (más de 150, autoría según el grupo). Algoritmo solo lee una ficha y el humor no toca la tecnología; «¿Y cuándo corrige?» roza la insinuación sobre el autor del recurso y la culpa del docente cansado."},
+    {"n": 5, "pieza": "breve", "gracia": 8, "claridad": 7, "remate": 9, "prohibiciones": "respeta", "nota": "Fiel al breve. El remate da la vuelta al «casi» y desnuda la seguridad de la IA cuando se equivoca. No es un juego de palabras fácil sino un cambio de sentido. Pierde algo de claridad por la jerga (VR, planos de referencia), mitigada con el retoque."}
+  ]
+}
