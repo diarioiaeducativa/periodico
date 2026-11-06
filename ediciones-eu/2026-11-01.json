@@ -1,0 +1,134 @@
+{
+  "fecha": "2026-11-01",
+  "hay_edicion": true,
+  "motivo": "Domingo tranquilo, con un debate de fondo en el grupo general a raíz de un reportaje sobre detectores de IA, una aplicación escolar compartida y una guía para familias; la sincronización entre equipos, ya tratada el 30, queda en un breve.",
+  "piezas": [
+    {
+      "id": "detectores-caza-brujas",
+      "seccion": "debates",
+      "importancia": 1,
+      "grupo": "chatgpt",
+      "antetitulo": "AA detektagailuak",
+      "titular": "Argitaletxe-sektoreak «sorginen ehiza» baten aurka ohartarazi du, AAz idatzitako testuen detektagailuengatik",
+      "entradilla": "La Vanguardia egunkariko erreportaje batek AA erabiltzeaz egindako salaketak jasotzen ditu, denborarekin elkarren aurka doazen detektagailuetan oinarrituak. Eztabaida hezkuntzara iritsi da: nola egiaztatu egiletza jazarri gabe.",
+      "cuerpo": [
+        "[Azaroaren 1ean La Vanguardian argitaratutako erreportaje batek](https://www.lavanguardia.com/cultura/20261101/11672707/escrito-inteligencia-artificial-nuevo-delirio-editorial-detectores-pangram-almadia.html) azaltzen du nola hasi diren argitaletxeak eta literatur agentziak eskuizkribuak AA detektagailuetatik pasatzen, Pangram bezalakoetatik. Sektoreko hainbat lagunek «paranoia» eta «sorginen ehiza» aipatzen dituzte: AArik erabili ez dutela dioten egileak salatuak dira eta ez dakite nola frogatu, eta testu baten bertsioen historia gordetzeko aholkuak zabaltzen ari dira, egiletza frogatu beharko balitz. Erreportajeak, gainera, Mexikoko argitaletxe batek saritutako nobela bati buruzko kasu berri bat aipatzen du, eta tresna horiek «ez direla akatsik gabeak» adierazten du: aurreko probetan AAren arrastoak eman zituzten 1969ko eta 1946ko bi nobelak giza-lan gisa agertzen dira orain detektagailu berarekin, egunkariak berak egindako egiaztapenaren arabera.",
+        "Taldean, solasaldiak gaia ikasleen ebaluaziora eraman zuen. Jarrera batek dio arazoa susmo orokortua dela: detektagailuak batzuetan asmatzen du eta besteetan ez, beraz, egiaztapena pertsona ezagutzean oinarritu beharko litzateke, egiletza gai bereko beste formatu eta testuinguru batzuekin triangelatzean eta sinatzen duenak aurkezten duena idatz zezakeen baloratzean, erreportajeak berak egileari elkarrizketa bat egitea proposatzean planteatzen duen bezala.",
+        "Beste jarrera batek azpimarratzen du, zaintzen hasi aurretik, esparru bat finkatu behar dela: AA baimentzen den, zertarako erabilerak onartzen diren, zer detektagailurekin eta zer metrikarekin, eta salatuak zer ebidentzia aurkez ditzakeen. Arau argirik gabe, ohartarazten du, susmoak ez du mugarik; eta konfiantza du denborarekin AAk eta giza sorkuntzak bakoitzak bere tokia aurkituko duela. Adostasuna egon zen AAren onartutako erabilerak eta helburua argitu behar direla."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Escrito con IA: el nuevo delirio editorial (La Vanguardia, 2026-11-01) (gaztelaniaz)",
+          "url": "https://www.lavanguardia.com/cultura/20261101/11672707/escrito-inteligencia-artificial-nuevo-delirio-editorial-detectores-pangram-almadia.html"
+        }
+      ],
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 53814
+      },
+      "comprobado": "Leído el reportaje de La Vanguardia (de pago; texto recuperado de la página): paranoia y caza de brujas, historiales de versiones, Pangram, prueba con dos novelas de 1946 y 1969 con resultado distinto una semana después, entrevista como comprobación (Joan Tarrida). Las posturas del grupo salen de los mensajes #53815-#53826 y #53821-#53826 y #53835-#53836. Se omite una afirmación del grupo sobre una firma previa de la autora, que el reportaje no recoge.",
+      "ilustracion": "Balanza con un informe de detector en un platillo (con un signo de interrogación) y, en el otro, tres pesos: conversación con la persona, otros textos y contextos sobre el mismo tema, y reglas claras de uso. Debajo, una lupa sobre un texto con la etiqueta «indicio, no prueba».",
+      "ilustracion_alt": "Balantza bat, ontzi batean «Detektagailua» duela, galdera-marka batez markatutako AA detektagailu baten txostena, eta bestean, «Elkarrizketa eta arauak», pertsonarekin egindako elkarrizketa eta erabilera-arau argi batzuk; behean, lupa bat eta «Zantzua, ez froga» lelo-azala."
+    },
+    {
+      "id": "la-teva-veu",
+      "seccion": "vibecoding",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Eskola-aplikazioa",
+      "titular": "Kataluniako eskola batek ikasleen autoebaluaziorako eta irakasleen balorazioa egiteko aplikazio bat partekatu du",
+      "entradilla": "Felip Sarrocak Escola Ramon Pontentzat sortutako «La teva veu» aplikazioak PDF txostenak sortzen ditu familientzat eta irakasleentzat.",
+      "cuerpo": [
+        "«La teva veu» Escola Ramon Pont-eko (lehen hezkuntzako 3. mailatik DBHko 4.era) web aplikazio bat da, Felip Sarrocak AAren laguntzaz sortua. Bi atal ditu, bereiz aktibatzen direnak. «Em miro» atalean ikasleek beren burua ebaluatzen dute ebaluazio bakoitzean, beren etaparako egokitutako galderekin, eta tutoreak «Així em veig» banakako txostena sortzen du familiarentzat. «Et veig…» atalean ikasleek irakasle bakoitza baloratzen dute; irakasle batek «Així et veiem» txosten agregatua soilik jasotzen du gutxienez 15 erantzun badaude, eta bere autoebaluazioarekin alderatzen du.",
+        "Zentroko domeinuko kontuak soilik sartzen dira, erroldan sartuta badaude, eta administrazioak galderak eta testuak edita ditzake eta Clickedu-ko datuak inportatu. Bere orriaren arabera, aplikazioak badabil, baina oraindik ez da inolako bilketarik ireki, eta txostenak PDF edo paper formatuan ematen dira, posta bidezko bidalketa zain baitago.",
+        "Egileak oinarri gisa partekatzen du, beste zentro batzuek berea sor dezaten: Google Workspace propioa, Neon datu-base bat, GitHub Pages eta garapen-tresnak behar dira, eta dokumentazioak prozesua azaltzen du. CC BY-NC-SA 4.0 lizentziarekin banatzen da, zentroaren logotiporik gabe. Interesa duten irakasleentzat, ikasleei ahotsa emateko adibide bat da, anonimotasun-bermeekin eta gutxieneko erantzun kopuru batekin."
+      ],
+      "fuentes": [
+        {
+          "titulo": "La teva veu (Escola Ramon Pont, Felip Sarroca) (katalanez)",
+          "url": "https://felipsarroca.github.io/util-apps/LaTevaVeu/"
+        }
+      ],
+      "mensaje": {
+        "grupo": "vce",
+        "id": 14474
+      },
+      "comprobado": "Abierta la web de la aplicación (enlace corto ja.cat/tensveu, que redirige): apartados, 15 respuestas mínimas, cuentas @ramonpont.cat, requisitos, licencia, autoría y estado a 1-11-2026. La cita de LOMLOE y Decreto 175/2022 es del autor en el grupo y no se ha verificado, por eso no se recoge.",
+      "ilustracion": null,
+      "ilustracion_alt": "Figura-talde bat, «Ikasleak», inbutu batetik pasatzen da, «15» zifrarekin eta «Gutxieneko erantzunak» lelo-azalarekin, eta barrak eta erreferentzia-lerro bat dituen txosten batera iristen da, «Irakasleen txostena»."
+    },
+    {
+      "id": "familias-deberes-ia",
+      "seccion": "debates",
+      "importancia": 3,
+      "grupo": "chatgpt",
+      "antetitulo": "Familientzako gida",
+      "titular": "Argitalpen batek familiak gidatzen ditu AAk etxeko lanak egiten dituenean",
+      "entradilla": "Chema Falcók proba sinple bat eta arau komun bat proposatzen ditu, ikasteko AA erabiltzea eta ikaskuntza hari delegatzea bereizteko.",
+      "cuerpo": [
+        "«Familias con inteligencia» seriean, Chema Falcók «¿Termina los deberes en diez minutos?» argitaratu du, familientzat. Kasu fikziozko batetik abiatzen da: Espainiara iritsi berri den ikasle bat, AA gaztelania ikasteko erabiltzen hasi eta ia ataza guztien ebazpen osoa eskatzen amaitzen duena, irakasleak bere mailarekin bat ez datorren idazlan bat detektatu arte.",
+        "Proposamena proba sinple bat da, ikasleak bere hitzekin azal dezala zer ebatzi zuen, zergatik aukeratu zuen aukeratu zuena eta zer ikasi zuen, eta arau komun bat: lehenik pentsatu, gero galdetu eta, AAk erantzutean, egiaztatu, birformulatu eta erabilera adierazi. Akusazio zuzenak saihestea aholkatzen du, eta ikastetxearekin harremanetan jartzea, irakasgai bakoitzean baimendutako erabilerak ezagutzeko."
+      ],
+      "fuentes": [
+        {
+          "titulo": "¿Termina los deberes en diez minutos? (Chema Falcó, «Familias con inteligencia») (gaztelaniaz)",
+          "url": "https://profechef.substack.com/p/termina-los-deberes-en-diez-minutos"
+        }
+      ],
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 53859
+      },
+      "comprobado": "Abierto el enlace corto compartido, que lleva a la publicación en Substack (1-11-2026): autoría, caso, prueba, regla y consejos coinciden con la pieza.",
+      "ilustracion": null,
+      "ilustracion_alt": "Gezien bidez lotutako hiru urrats, «Pentsatu», arkatz batekin; «Galdetu», testu-globo batekin, eta «Egiaztatu», egiaztapen-marka batekin, eta azpian ikasle bat etxeko lanen orri bat azaltzen, «Zure hitzekin»."
+    }
+  ],
+  "breves": [
+    {
+      "texto": "rclone-k Google Drive-rako erabiltzen duen sarbide partekatuko bezeroak funtzionatzeari utziko dio 2026an, bere dokumentazioaren arabera. Berezko bat sortzea, partekatutako kontsulta-muga ere saihesten duena, derrigorrezkotzat jotzen da jada.",
+      "url": "https://rclone.org/drive/#making-your-own-client-id",
+      "grupo": "vce",
+      "mensaje": {
+        "grupo": "vce",
+        "id": 14480
+      }
+    },
+    {
+      "texto": "UVic-UCC unibertsitateak Lleidan antolatu zuen, beste erakunde batzuekin batera, irakaskuntza-jardueraren osotasunari eta AAri buruzko jardunaldi bat. Unibertsitatearen albisteak ez ditu ondorio zehatzik jasotzen.",
+      "url": "https://apunt.uvic.cat/la-uvic-ucc-coorganitza-i-participa-en-una-trobada-a-lleida-per-abordar-lus-de-la-intelligencia",
+      "grupo": "chatgpt",
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 53843
+      }
+    }
+  ],
+  "descartado": [
+    "Webserie y flujo con MCP del 31: ya publicado.",
+    "Sincronización multidispositivo con Git y rclone: tratada el 30; solo se aprovecha la novedad de rclone en un breve.",
+    "Bot del repositorio y /misrecursos: administración interna.",
+    "Película y debate sobre el caso del terrorista identificado por su escritura: la fuente (FBI) no pudo abrirse.",
+    "Mazinger Z en Three.js y comentarios sobre Mistral: sin contenido comprobable."
+  ],
+  "repaso": [
+    "Pieza de detectores: corregida la prueba de las dos novelas (1969 y 1946) para ajustarla a lo que dice el reportaje; suavizado el cierre del debate y eliminado el párrafo final, que era una conclusión propia no recogida en la fuente.",
+    "Pieza de detectores: el mensaje enlazado pasa del #53812 (solo una imagen sin texto) al #53814, que contiene el enlace del reportaje.",
+    "Pieza de familias: eliminada la frase sobre replantear las tareas de evaluación, que no aparece en la publicación (solo en el mensaje del grupo); quitada la mención a tutorías.",
+    "Breve de rclone: mensaje corregido al #14480, donde empieza el hilo (el #14487 muestra ese mismo mensaje).",
+    "Breve de la UVic: sustituida la afirmación de que las conclusiones no se han publicado (dicho solo en el grupo) por lo que sí dice la noticia: no recoge conclusiones concretas.",
+    "La teva veu y rclone verificados contra su web y su documentación; La Vanguardia no pudo abrirse con WebFetch y se leyó por curl. No se pudo abrir la página del FBI, por lo que no se usa."
+  ],
+  "editorial": {
+    "id": "desde-la-redaccion",
+    "antetitulo": "Erredakziotik",
+    "titular": "Adimen artifizialeko agenteen erredakzio batek idatzitako egunkaria",
+    "entradilla": "Diario de IA Educativa-k goizero kontatzen du hiru irakasle-komunitateetan hitz egiten dena. Adimen artifizialeko (AA) zazpi agentek osatutako talde batek idazten du, bakoitzak bere lanbidearekin, eta pertsonek zuzentzen dute.",
+    "cuerpo": [
+      "Gauero, eguna ixten denean, erredakzioa martxan jartzen da. **Erredaktore** batek [ChatGPT-IA-edu](https://t.me/ChatGPTedu), [Vibe Coding Educativo](https://t.me/vceduca) eta [EduMedia-IAG](https://t.me/EduMediaIAG) taldeetako elkarrizketak irakurtzen ditu, taldeetan ez dagoenari interesatu dakiokeena aukeratzen du eta piezak idazten ditu, datu bakoitza jatorrizko iturrian egiaztatuz. **Berrikusle** batek, ezer idatzi ez duenak, iturri horiek berriz irekitzen ditu eta baieztatu ezin duena kentzen du. **Ilustratzaile** batek albiste nagusi bakoitzak azaltzen duena marrazten du.",
+      "Binetak bere talde propioa du: **gidoilari** batek bost txiste idazten ditu eta **umore-epaile** batek, horiek idatzi ez dituenak, onena aukeratzen du, edo bat ere ez, graziarik ez badute. **Itzultzaile** batek katalanezko edizioa prestatzen du, Diari d'IA Educativa, eta beste agente batek goizero taldeetan jartzen den oharra idazten du.",
+      "Horrela lan egiten dute, taldean eta elkar berrikusiz, agente bakar batek akats gehiago egiten baititu elkar zuzentzen duen erredakzio batek baino. Hala ere, akatsak izan daitezke: bat ikusten baduzu, edo zurea den zerbait ez dela agertzea nahiago baduzu, esan iezaiezu zure taldea administratzen dutenei. Egunkariaren ideia [Raül Torres](https://raultorres-ia.github.io/apps/raul-torres-ai-portfolio/)-ena da; erredakzioa [Juan José de Haro](https://bilateria.org)-k diseinatu zuen eta berak gainbegiratzen du."
+    ],
+    "ilustracion_alt": "Erredakzioaren organigrama: «Taldeak»-en mezuek «Erredaktorea» eta «Berrikuslea» zeharkatzen dituzte; handik «Ilustratzailea», «Gidoia eta epailea» (umore-epailearen «7» nota duen testu-globo bat) eta «Itzultzailea» ateratzen dira, gaztelaniatik («ES») euskarara («EU») pasatzen dena; guztia «7:00»ko egunkarira eta taldeetako «Oharrak»-era iristen da."
+  }
+}

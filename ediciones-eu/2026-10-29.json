@@ -1,0 +1,52 @@
+{
+  "fecha": "2026-10-29",
+  "hay_edicion": true,
+  "motivo": "Día flojo en volumen (16 mensajes, ninguno en ChatGPT-IA-edu): un único tema nuevo aprovechable, un recurso de dictados con voces sintéticas abiertas; el resto fue administración de los grupos o repetición del 28.",
+  "piezas": [
+    {
+      "id": "dictados-voz-gallego",
+      "seccion": "vibecoding",
+      "importancia": 1,
+      "grupo": "vce",
+      "antetitulo": "Diktaketak ahotsarekin",
+      "titular": "EDUmind-ek diktaketak eskaintzen ditu galizieraz eta gaztelaniaz, kode irekiko ahots sintetikoekin",
+      "entradilla": "Luis Vilela Acuñak sortutako web aplikazio doakoak galizierazko eta gaztelaniazko diktaketak biltzen ditu lehen hezkuntzako seigarren mailarako, lizentzia irekiko ahots sintetikoekin.",
+      "cuerpo": [
+        "EDUmind-ek (dictados.edumind.es), Luis Vilela Acuñak sortuak, lau diktaketa eskaintzen ditu lehen hezkuntzako 6. mailarako: bi galizieraz eta bi gaztelaniaz. Hizkuntza, maila, gai, etiketa eta testu motaren araberako iragazkiak ditu, bilatzailea, bi orriko arau-txartela eta arau-koaderno metagarria, biak PDF eta ODT formatuetan.",
+        "Narrazioa sintetikoa da. Galizierazko ahotsa, Brais, Proxecto Nós ekimenekoa da (Universidade de Santiago de Compostela) eta aHoTTS-ekin sortu da (HiTZ, UPV/EHU); gaztelaniazkoa, Alejandro, aHoTTS-ekoa da hura ere. Webgunearen arabera, testuak, fitxak eta audioak CC BY-SA 4.0 lizentziarekin argitaratzen dira, programa AGPL-3.0-or-later edo EUPL-1.2 lizentziarekin eta ahots-ereduak Apache 2.0 lizentziarekin.",
+        "Egileak lanean ari den baliabide gisa aurkeztu zuen: oraindik forma eman behar diola eta gaztelaniazko bertsioa hobetu daitekeela adierazi zuen."
+      ],
+      "fuentes": [
+        {
+          "titulo": "EDUmind, galizierazko eta gaztelaniazko diktaketak (gaztelaniaz)",
+          "url": "https://dictados.edumind.es"
+        }
+      ],
+      "comprobado": "Abierta la web de EDUmind: autoría, número de dictados (dos por lengua), filtros, tarjeta y cuaderno de reglas en PDF y ODT, voces y licencias tal como figuran en ella. El estado de la versión en castellano procede del propio autor en el grupo.",
+      "ilustracion": "Esquema de un dictado en tres pasos: texto en la pantalla del aula, una onda de sonido que sale de una voz sintética con dos etiquetas (gallego y castellano) y una hoja de reglas imprimible; debajo, tres sellos de licencia abierta.",
+      "ilustracion_alt": "Dikteta baten eskema: ikasgelako pantailako testu bat ahots sintetiko batera igarotzen da, soinu-uhin batez irudikatua, «Galiziera» eta «Gaztelania» etiketekin, eta inprimatzeko moduko arau-orri batera; azpian, lizentzia irekiko hiru zigilu testuentzat, programarentzat eta ahots-ereduentzat.",
+      "mensaje": {
+        "grupo": "vce",
+        "id": 14374
+      }
+    }
+  ],
+  "breves": [],
+  "descartado": [
+    "Aviso del bot sobre la revisión del repositorio de recursos: administración interna de los grupos.",
+    "Informe generado con Claude sobre el estado de las aplicaciones del repositorio: asunto interno de los grupos.",
+    "Pregunta sobre la diferencia entre vibe coding e IA agéntica: sin respuestas en el día, no hay contenido que contrastar.",
+    "Enlace de Threads en EduMedia-IAG sin texto: no se puede identificar el contenido.",
+    "Mensajes de moderación sobre contenido no deseado: administración interna.",
+    "Recordatorio de GitHub Education para docentes y anuncio de un nuevo modelo de Google: son del día anterior y sin novedad el día 29.",
+    "Aplicación Plec de dictados en catalán: presentada el día anterior y no localizada en fuentes públicas.",
+    "Prompt de lecciones 3D (Every Joule) y comentarios sobre three.js y Google AI Studio: tema ya publicado el 28, sin novedad comprobable."
+  ],
+  "repaso": [
+    "Eliminada la pieza «lecciones-3d»: repetía el prompt de lecciones 3D y Every Joule ya publicados el 28; los matices del día 29 (three.js, Google AI Studio) no aportan noticia y uno era «dato no comprobado».",
+    "EDUmind, ascendida a importancia 1 al desaparecer la pieza de portada; añadida ilustración.",
+    "EDUmind: corregido «cada idioma incluye cuatro dictados» (son cuatro en total, dos por lengua).",
+    "EDUmind: quitado lo de «preparar, proyectar, imprimir y corregir» y «presentación proyectable», que la web no confirma.",
+    "EDUmind: quitada la remisión a otra aplicación de dictados y la frase editorial «muestra una vía abierta»; quitada la fuente de la Xunta (decía que el Proxecto Nós lo impulsaron la Xunta y la USC, no solo la USC)."
+  ]
+}

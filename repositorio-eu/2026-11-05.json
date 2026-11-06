@@ -1,0 +1,57 @@
+{
+  "fecha": "2026-11-05",
+  "piezas": [
+    {
+      "id": "fil-i-compte",
+      "seccion": "vibecoding",
+      "repositorio": "dia",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Berria biltegian",
+      "titular": "Fil i compte tresnarekin, matematika-problemen fitxa inprimagarriak prestatu daitezke katalanez eta gaztelaniaz, soluzioekin",
+      "entradilla": "252 problemako banku batek aukera ematen die Lehen Hezkuntzako eta DBHko lehen mailetako irakasleei enuntziatuak aukeratzeko, ordenatzeko eta fitxa inprimatzeko edo PDF gisa gordetzeko.",
+      "cuerpo": [
+        "«Fil i compte» Aarón Fortuñok sortutako web-tresna bat da, MIT lizentziarekin argitaratua. Orriaren arabera, 252 matematika-problema biltzen ditu, katalanez eta gaztelaniaz, Lehen Hezkuntzako erdi-zikloarentzat eta goi-zikloarentzat eta DBHko hasierarako pentsatuak. Baliabidea nabigatzailean irekitzen da, eta orriak ez du izen-ematerik ez konturik eskatzen.",
+        "Irakasleek bankua iragazi dezakete orientazio-mailaren, zailtasunaren (eskuragarria, tartekoa edo erronka) eta edukien arabera: batuketa eta kenketa, biderketa eta zatiketa, eragiketa konbinatuak, parentesiak, zatikiak, ehunekoak, hamartarrak, berreturak, erroak, proportzionaltasun zuzena eta alderantzizkoa edo kalkulu estimatiboa. Eduki bakoitza onartutzat, derrigorrezkotzat edo baztertutzat marka daiteke. Arrazoinamenduaren kategoria bat ere badago, eta «datuak nahasteko» beste bat, ebazteko beharrezkoa ez den informazioa duten enuntziatuekin. Aukeratu nahi ez duenak fitxa-proposamen automatiko bat eskatu dezake, eta testuaren bidez edo problema bakoitzaren kodearen bidez bilatu daiteke.",
+        "Problema bakoitza bere kodearekin, mailarekin, zailtasunarekin eta eduki-etiketekin erakusten da; adibidez, eskola-baratzeko sagarrena erdi-zikloko problema da, eta zailtasun txikikoa. Problemak aukeratu ondoren, ordenatu egiten dira eta orrien kopurua (1, 2, 4 edo 6) eta orri bakoitzeko problema kopurua erabakitzen dira. Lan-eremu mota ere aukeratzen da: puntuduna, koadrikulatua edo lerrodunak. Fitxa inprimatu egiten da, eta, biltegiko fitxaren arabera, PDF gisa ere gorde daiteke. Orriak ariketen eta soluzioen artean txandakatzeko aukera ematen du, eta soluzioak bereiz inprimatzen dira. Txantiloiak nabigatzailean gorde daitezke, beraz irakasleak aukeraketa bat berrerabil dezake ekipo horretan bertan.",
+        "Ikasgelan, azkar prestatzeko balio dezake gela berean talde edo zailtasun-maila ezberdinetara egokitutako praktika-fitxak egiteko, edo soluzioa eskura duten berrikuspen-lanetarako. Problemak, soluzioak eta interfazea katalanez eta gaztelaniaz daude. Kodea GitHub-en argitaratuta dago, eta orriak dio bisiten analitika erabiltzen duela, datu pertsonalik gabe, eta desaktibatu daitekeela."
+      ],
+      "recursos": [
+        {
+          "id": "fil-i-compte",
+          "titulo": "Fil i compte",
+          "autoria": "Aarón Fortuño",
+          "url": "https://filicompte.ortogra.fi/",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://filicompte.ortogra.fi/",
+          "licencia": "MIT",
+          "captura": "2026-11-05-fil-i-compte.jpg",
+          "captura_alt": "Problema-bankuaren pantaila: ezkerrean maila, zailtasun eta edukien iragazkiak, eta eskuinean katalanezko problema-txartelak.",
+          "texto": []
+        }
+      ],
+      "fuentes": [
+        {
+          "titulo": "Fil i compte (katalanez eta gaztelaniaz)",
+          "url": "https://filicompte.ortogra.fi/"
+        },
+        {
+          "titulo": "Fil i compteren kodea GitHub-en (ingelesez)",
+          "url": "https://github.com/aaronFortuno/fil-i-compte"
+        },
+        {
+          "titulo": "Aurkezpena Vibe Coding Educativon (gaztelaniaz)",
+          "url": "https://t.me/vceduca/7674/14651"
+        }
+      ],
+      "comprobado": "Se miró la captura (banco de problemas con filtros, tarjetas P0001 a P0009 en catalán, selección de problemas, botón de imprimir, selector de idioma, plantillas) y se leyó el texto visible de la página. WebFetch de la web confirmó solucionario alternable con los ejercicios, impresión (sin mención de PDF, que consta solo en la ficha), plantillas guardadas en el navegador, idiomas catalán y castellano, sin cuenta y analítica desactivable. El repositorio de GitHub confirma la licencia MIT y el castellano. No se comprobó el PDF ni el solucionario generado. Sin publicaciones previas relacionadas en publicado.txt."
+    }
+  ],
+  "descartado": [],
+  "repaso": [
+    "Número de páginas: «de una a seis» pasa a «1, 2, 4 o 6», como ofrece la página.",
+    "PDF: se mantiene como dicho por la ficha, porque la página solo habla de imprimir.",
+    "Solucionario: confirmado en la página (alterna ejercicios y solucionario, que se imprime aparte); se quita «según la ficha» y se describe.",
+    "Idioma: confirmado en la página que ofrece castellano; se quita la atribución a la ficha.",
+    "Plantillas: se precisa que quedan en el navegador donde se guardan."
+  ]
+}

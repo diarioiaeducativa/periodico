@@ -1,0 +1,90 @@
+{
+  "fecha": "2026-10-29",
+  "elegida": {
+    "n": 3,
+    "pieza": "dictados-voz-gallego",
+    "idea": "La voz sintética dicta la misma frase 38 veces con igual ilusión y se ofrece a añadir un suspiro «para dar realismo».",
+    "guion": {
+      "vinetas": [
+        {
+          "cartela": "Dictation, 10:15",
+          "tiza": {
+            "expresion": "neutral",
+            "postura": "abajo",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "contento",
+            "postura": "abajo",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "bocadillos": [
+            {
+              "quien": "algoritmo",
+              "texto": "“The cat is sleeping.” First time.",
+              "tipo": "habla"
+            },
+            {
+              "quien": "tiza",
+              "texto": "Again, please.",
+              "tipo": "habla"
+            }
+          ],
+          "escenario": "aula"
+        },
+        {
+          "tiza": {
+            "expresion": "agotado",
+            "postura": "abajo",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "contento",
+            "postura": "arriba",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "bocadillos": [
+            {
+              "quien": "algoritmo",
+              "texto": "“The cat is sleeping.” Time 38. Just as excited.",
+              "tipo": "habla"
+            }
+          ],
+          "escenario": "aula"
+        },
+        {
+          "tiza": {
+            "expresion": "harto",
+            "postura": "abajo",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "neutral",
+            "postura": "abajo",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "bocadillos": [
+            {
+              "quien": "algoritmo",
+              "texto": "Shall I add a sigh?",
+              "tipo": "habla"
+            },
+            {
+              "quien": "tiza",
+              "texto": "Yes. It adds realism.",
+              "tipo": "habla"
+            }
+          ],
+          "escenario": "aula"
+        }
+      ]
+    }
+  },
+  "traduccion": "automatic AI translation"
+}

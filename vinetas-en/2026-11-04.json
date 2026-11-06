@@ -1,0 +1,27 @@
+{
+  "fecha": "2026-11-04",
+  "elegida": {
+    "n": 1,
+    "pieza": "camara-virtual-blender",
+    "idea": "Tiza graba el travelling caminando de verdad y todas las tomas acaban, sin querer, en la cafetera.",
+    "guion": {"vinetas": [
+      {"escenario": "sala_profes",
+       "tiza": {"expresion": "contento", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "sorprendido", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+       "objeto": "movil", "lleva": "tiza",
+       "bocadillos": [{"quien": "tiza", "texto": "Today I'm not writing the tracking shot in a prompt: I'm recording it by walking.", "tipo": "habla"}]},
+      {"escenario": "sala_profes",
+       "tiza": {"expresion": "orgulloso", "postura": "sostener", "lugar": "centro", "mira": "derecha"},
+       "algoritmo": {"expresion": "contento", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+       "objeto": "movil", "lleva": "tiza",
+       "bocadillos": [{"quien": "tiza", "texto": "I hit REC, walk, and Blender copies the camera.", "tipo": "habla"},
+                      {"quien": "algoritmo", "texto": "Real movement, no guesswork!", "tipo": "habla"}]},
+      {"escenario": "sala_profes",
+       "tiza": {"expresion": "avergonzado", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "pensativo", "postura": "pensar", "lugar": "derecha", "mira": "izquierda"},
+       "objeto": "movil", "lleva": "tiza",
+       "bocadillos": [{"quien": "algoritmo", "texto": "Lovely. Why do all three takes end at the coffee machine?", "tipo": "habla"}]}
+    ]}
+  },
+  "traduccion": "automatic AI translation"
+}

@@ -1,0 +1,127 @@
+{
+  "fecha": "2026-11-03",
+  "hay_edicion": true,
+  "motivo": "Día centrado en el anuncio de Google sobre la IA y el buscador en cuentas escolares, con un debate largo en ChatGPT-IA-edu, y una actividad de Física compartida en Vibe Coding Educativo.",
+  "piezas": [
+    {
+      "id": "google-ia-cuentas-escolares",
+      "seccion": "debates",
+      "importancia": 1,
+      "grupo": "chatgpt",
+      "antetitulo": "Google eta ikasgelak",
+      "titular": "Irakasleek eztabaidatzen dute Googlek ikastetxeetako kontuetan AA eta bilatzailea lehenespenez desaktibatzeko egindako iragarpena",
+      "entradilla": "Googlek iragarri du Gemini eta AAdun bilaketa desaktibatuta egongo direla lehen eta bigarren hezkuntzako ikasleen kontuetan, administratzaileek aktibatu arte. Taldeetan, albisteak eztabaida ireki zuen ikastetxe batean nork erabakitzen duen AAren erabilera.",
+      "cuerpo": [
+        "Engadget-ek, Googleko hezkuntza-presidenteordea eta zuzendari nagusia den Chris Phillips aipatuz, jakinarazi duenez, konpainiak azaroaren 3an iragarri zuen Gemini, Gemini Notebook, Gemini Classroomen eta Google Search lehen eta bigarren hezkuntzako (K-12) ikastetxeetako kontuetan desaktibatuta egongo direla, administrazio-langileek esplizituki aktibatu arte. Googlek hedabide horri argitu zion produktu bakoitza bereizita gaitu daitekeela eta ez dela dena edo ezer ez aukera bat. Kontrol berriak hurrengo hilabeteetan zabalduko dira.",
+        "Albistea taldera sare sozialetako bertsio alarmista gisa iritsi zen lehenik («AA debekatzen duten ikastetxeek Google Search galduko dute»). Komentatu zutenek egiaztatzeko eskatu zuten, eta gero Engadget-en argibidea partekatu zen. Hedabide horren arabera, AA blokeatzen duen ikastetxe bateko ikasleek ez dute Searchrako sarbiderik izango, eta beren ikastetxearen mezu bat ikusiko dute hala adierazten duena.",
+        "Eztabaidan hainbat jarrera azaldu ziren. Batek ondo ikusten du AA ikastetxearen erabakia izatea eta, ikastetxeak hala erabakitzen badu, erabat itzaltzea, beste AA txat batzuk ez onartzearekin koherentea delako. Beste batek beldur da informaziorako sarbidea AA onartzearen mende jarriko dela, eta gogorarazten du sarbide hori eskubidea dela. Hirugarren batek digitalizazio-koordinatzaileak Googleren eskaintzaren eta adingabeekiko zuhurtziaren artean kokatzen ditu, eta Kataluniako Hezkuntza Departamentuaren orientabide berrien zain dago. Irakasleek ikasleek idazten dutena gainbegira dezaten ere eskatu zen, eta lehenago irakasleak eta familiak prestatzea defendatu zen, presarik gabe.",
+        "Hezkuntza Departamentuaren AAren erabilerari buruzko orientabideak 2026ko irailean argitaratu ziren, eta egunkariak [Liburutegia atalean aztertu zituen](pieza:2026-11-02/cat-orientacions-ia), nahiz eta XTECeko proiektuaren orriak oraindik «garapenean» aurkezten dituen."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Engadget: Google says that students in schools that ban AI won't have access to Search (ingelesez)",
+          "url": "https://www.engadget.com/2305432/google-says-that-students-in-schools-that-ban-ai-wont-have-access-to-search/"
+        },
+        {
+          "titulo": "Orientacions per a l'ús de la IA en educació (XTEC) (katalanez)",
+          "url": "https://projectes.xtec.cat/ia/orientacions-per-lus-de-la-ia-en-educacio/"
+        }
+      ],
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 53933
+      },
+      "comprobado": "Engadget (WebFetch, repasado): fecha 3-11-2026, autoría de Kris Holt, Chris Phillips como vicepresidente y director general de educación de Google, desactivado por defecto en cuentas K-12, habilitación por producto, mensaje del centro sin acceso a Search si se bloquea la IA, despliegue en los próximos meses. XTEC (WebFetch): documento «en desenvolupament», previsto septiembre-octubre del curso 2026-27; la página no menciona a menores de 14 años, por lo que se ha quitado esa referencia. No hay entrada original de Google localizada (WebSearch), la información se atribuye a Engadget. Mensaje de Telegram 53933 comprobado: es el que abre el tema. Las posturas son lo dicho en el grupo y no se han verificado.",
+      "ilustracion": "Esquema de un interruptor general con cuatro palancas individuales (Gemini, Gemini Notebook, Gemini en Classroom, Búsqueda) que el centro puede activar o dejar apagadas una a una, frente a un único interruptor de todo o nada tachado.",
+      "ilustracion_alt": "Ezkerrean, dena edo ezer ez motako etengailu orokor bat, aspa gorri batez gurutzatua; eskuinean, lau etengailu bereizi (Gemini, Notebook, Classroom eta Bilaketa), bi urdinez piztuta eta bi itzalita.",
+      "correccion": "2026ko azaroaren 4an zuzendua: aurreko bertsio batek Generalitataren orientabideak argitaratu gabe zeudela esaten zuen, XTECeko orriak dioen bezala, baina orri hori zaharkituta dago."
+    },
+    {
+      "id": "misiones-orbitales",
+      "seccion": "vibecoding",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Komunitatearen baliabidea",
+      "titular": "Jarduera gamifikatu batek Batxilergoko 2. mailako eremu grabitatorioa bederatzi misio orbitaletara eramaten du",
+      "entradilla": "El profe de la bata-ren «Misiones orbitales» jarduerak ikasleei astronauta bat sortzea eta bederatzi misio ebaztea proposatzen die, simulagailu interaktiboekin. Praktika-bertsioak nabigatzailean funtzionatzen du, konturik gabe.",
+      "cuerpo": [
+        "«Misiones orbitales» Batxilergoko 2. mailako Fisikako jarduera da, eremu grabitatorioari buruzkoa, El profe de la batak sortua. Ikasleek beren astronauta sortzen dute eta bederatzi misio osatzen dituzte; bakoitzerako simulagailu interaktiboak kontsultatzen dituzte, eta haietatik lortzen dituzte abiadura orbitalak eta ihes-abiadurak kalkulatzeko, Keplerren legeak aplikatzeko, energia orbitala aurkitzeko edo izar baten masa ondorioztatzeko datuak.",
+        "Bi bertsio daude. Praktikakoak zuzenean nabigatzailean funtzionatzen du, konturik gabe eta saiakera mugagabeekin, nahiz eta ez dagoen kalifikatzeko pentsatuta. Ikasgelakoa Google Apps Script bidez instalatzen da, Google Workspace kontuak erabiltzen ditu, misio bakoitzeko saiakera bakarra onartzen du, aurrerapena irakasleen kalkulu-orri batean gordetzen du eta proiektatzeko aginte-panel bat dauka. Puntuazioa izarretan adierazten da, egindako errorearen arabera: % 5etik beherakoa bada, guztiak lortzen dira.",
+        "Proiektua CC BY-NC-SA 4.0 lizentziarekin banatzen da."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Misiones orbitales (web bertsioa) (gaztelaniaz)",
+          "url": "https://elprofedelabata.github.io/misiones-orbitales/"
+        },
+        {
+          "titulo": "Misiones orbitales, biltegia eta gida (gaztelaniaz)",
+          "url": "https://github.com/elprofedelabata/misiones-orbitales"
+        }
+      ],
+      "mensaje": {
+        "grupo": "vce",
+        "id": 14590
+      },
+      "comprobado": "Repositorio de GitHub (WebFetch, repasado): descripción, nueve misiones, dos versiones, práctica sin cuentas e intentos ilimitados, versión de clase con Apps Script, hoja y panel, estrellas (error <5 % = todas), autoría y licencia CC BY-NC-SA 4.0. La demo carga (modo práctica, contador de 18 estrellas) pero no muestra autoría ni licencia. Se han quitado lo no confirmado en la fuente: nombres concretos de los simuladores, «tercera ley» de Kepler, «datos nuevos en cada intento», «mismo código y puntúan igual». Mensaje de Telegram 14590 comprobado.",
+      "ilustracion": null,
+      "ilustracion_alt": "Planeta bat, bederatzi puntu dituen elipse orbital urdin batez inguratua, misio bakoitzeko bat («9 misio»), eta eskuinean, % 5 baino errore txikiagoarekin lortzen diren hiru izar («Errorea < % 5»)."
+    },
+    {
+      "id": "pulso-demografico",
+      "seccion": "vibecoding",
+      "importancia": 3,
+      "grupo": "chatgpt",
+      "antetitulo": "Komunitatearen baliabidea",
+      "titular": "Geografia irakasle batek Geminirekin munduko jaiotza eta heriotzen kontagailu bat sortu du",
+      "entradilla": "Ricardo Chao Prietoren «Pulso Demográfico Mundial en Tiempo Real» aplikazioak, benetako erritmoan, herrialde bakoitzeko jaiotzak eta heriotzak simulatzen ditu, NBEk 2026rako egindako biztanleria-proiekzioetan oinarrituta.",
+      "cuerpo": [
+        "Ricardo Chao Prieto Geografia eta Historiako irakasleak aplikazioa [Geografiando blogeko sarrera batean](https://geografiaagustinos.blogspot.com/2013/10/cuanta-gente-nace-y-muere-al-dia-en-el.html) txertatu du, Leongo Agustindarren DBHko 3. mailako Geografia blogean, eta Geminirekin egindakoa zela esanez partekatu zuen taldean. Munduko biztanleria 8.326 milioi inguru dela kalkulatuta abiatzen da, eta jaiotzak gehitzen doa, segundoko 4,2 inguruko batez bestekoarekin, eta heriotzak, segundoko 2 inguru.",
+        "Ez dira benetako erregistroak, herrialde bakoitzaren tasekin egindako simulazio estatistiko bat baizik, aplikazioak berak adierazten duenez. Saioan zehar metatutako hazkunde garbia erakusten du, kontinenteen arabera iragazteko, abiadura bost edo hogei aldiz biderkatzeko eta pausatzeko aukera ematen du, eta mapa bat eta herrialdeko taula bat ditu, biztanleria, natalitatea eta hilkortasunarekin. Blogeko sarreran eguneroko zifrak eta munduko ugalkortasunaren jaitsierari buruzko grafiko bat gehitzen dira. Ikasgelarako, idatzita irudikatzeko zaila den zifra batzuk ikusgai egiten ditu."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Geografiando: ¿Cuánta gente nace y muere al día en el mundo? (gaztelaniaz)",
+          "url": "https://geografiaagustinos.blogspot.com/2013/10/cuanta-gente-nace-y-muere-al-dia-en-el.html"
+        }
+      ],
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 53995
+      },
+      "comprobado": "04-11-2026, a mano: abierta la entrada del blog (vuelta a publicar el 3-11-2026, aunque la dirección conserva 2013/10) y la aplicación incrustada; cifras, controles y la nota de simulación, leídos en la propia aplicación. Juanjo probó que funciona. La había descartado la redacción por la fecha de la dirección.",
+      "ilustracion": "Un globo terráqueo esquemático con dos contadores a los lados, uno de nacimientos (+) y otro de defunciones (−), y una flecha hacia arriba con el crecimiento neto",
+      "ilustracion_alt": "Lurreko globo bat erdian, jaiotzen kontagailu bat ezkerrean, plus urdin batekin markatua, eta heriotzen beste bat eskuinean, minus batekin, eta gezi gorri bat gorantz, hazkunde garbia adierazten duena."
+    }
+  ],
+  "breves": [
+    {
+      "texto": "EduMedia-IAG taldean MotionVideoren skill-ak nola erabili azaldu zen: skill-a AAn instalatzen da, deitu egiten zaio eta sortu nahi den bideoaren datuekin ematen zaio jarraibidea. Webeko adibide-bideo bakoitzak bere prompt-a dauka, [azaroaren 3ko piezak](pieza:2026-11-02/motionvideo-skills) kontatu zuen bezala.",
+      "url": "https://motionvideo.xyz/en",
+      "grupo": "edumedia",
+      "mensaje": {"grupo": "edumedia", "id": 12040}
+    },
+    {
+      "texto": "Estatu Batuetan, Los Angelesko eskola-barrutiak [irailean blokeatu zuen](https://laist.com/brief/news/education/lausd-students-barred-artificial-intelligence-tools) ikasleek AA sortzailea beren gailuetan erabiltzeko aukera, eta FCCk [E-Rate laguntzak berrikusten ditu](https://www.chalkbeat.org/2026/09/23/e-rate-school-internet-subsidies-threatened-in-screen-time-backlash/), eskolen konexiorako, pantaila-denborari buruzko polemikaren erdian. Taldean [Googleren iragarpenaren](pieza:2026-11-03/google-ia-cuentas-escolares) testuinguru gisa partekatu ziren.",
+      "url": null,
+      "grupo": "chatgpt",
+      "mensaje": {"grupo": "chatgpt", "id": 53963}
+    }
+  ],
+  "descartado": [
+    "Beca de residencia de Anthropic (EduMedia-IAG): fuera del tema del grupo, su propia moderación lo indicó y la fuente es un agregador no oficial.",
+    "Mensaje de OpenAI sobre pestañas Chat y Work y aviso de cambios de tokens en diciembre: sin fuente comprobable y comentario breve.",
+    "Informe del MIT, infografías en HTML/SVG, agentes de consola con datos del alumnado, motionvideo y cursor IA de Mollick: ya publicados el 2-11.",
+    "Anuncio del diario (nuevas secciones), /misrecursos y bot: administración interna.",
+    "Documento del MIT en la Biblioteca digital: tiene su propia sección."
+  ],
+  "repaso": [
+    "Google: cargo de Chris Phillips precisado (vicepresidente y director general de educación) y «totalmente desactivado» pasa a «desactivado» (no es cita literal verificada).",
+    "Google: el aviso al alumnado se ajusta a Engadget (sin acceso a Search y mensaje del centro).",
+    "Google: quitada la referencia a las orientaciones que desaconsejan la IA a menores de 14 años y la de Google «para todas las edades», no confirmadas en fuentes.",
+    "Misiones orbitales: quitados simuladores concretos, «tercera ley de Kepler», «energía necesaria para cambiar de órbita», «datos nuevos en cada intento» y «mismo código y puntúan igual», que la fuente no recoge; añadido «intentos ilimitados» en la práctica.",
+    "Actualizado el campo comprobado en ambas piezas.",
+    "04-11-2026, a mano: corregido el último párrafo de google-ia-cuentas-escolares (la XTEC estaba desactualizada) y añadidos dos breves.",
+    "04-11-2026, a mano: añadida la pieza pulso-demografico, descartada por error por la fecha de su dirección."
+  ]
+}

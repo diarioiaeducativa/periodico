@@ -1,0 +1,81 @@
+{
+  "fecha": "2026-10-28",
+  "elegida": {
+    "n": 6,
+    "pieza": "gemini4carbon",
+    "idea": "La IA nueva llegará «lo antes posible», y Tiza descubre que ese plazo también le sirve para los exámenes.",
+    "guion": {
+      "vinetas": [
+        {
+          "tiza": {
+            "expresion": "contento",
+            "postura": "abajo",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "contento",
+            "postura": "arriba",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "bocadillos": [
+            {
+              "quien": "algoritmo",
+              "texto": "The most capable model ever has been released!",
+              "tipo": "habla"
+            },
+            {
+              "quien": "tiza",
+              "texto": "Can I try it in class?",
+              "tipo": "habla"
+            }
+          ],
+          "escenario": "sala_profes",
+          "objeto": "reloj"
+        },
+        {
+          "tiza": {
+            "expresion": "harto",
+            "postura": "pensar",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "neutral",
+            "postura": "encoger",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "bocadillos": [
+            {
+              "quien": "algoritmo",
+              "texto": "For now, cybersecurity experts only. Everyone else: “as soon as possible”.",
+              "tipo": "habla"
+            }
+          ],
+          "escenario": "sala_profes"
+        },
+        {
+          "cartela": "That afternoon, in class",
+          "tiza": {
+            "expresion": "orgulloso",
+            "postura": "senalar",
+            "lugar": "centro",
+            "mira": "derecha"
+          },
+          "bocadillos": [
+            {
+              "quien": "tiza",
+              "texto": "Marked exams? As soon as possible.",
+              "tipo": "habla"
+            }
+          ],
+          "escenario": "aula",
+          "objeto": "examenes"
+        }
+      ]
+    }
+  },
+  "traduccion": "automatic AI translation"
+}

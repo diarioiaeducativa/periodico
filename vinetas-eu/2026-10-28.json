@@ -1,0 +1,81 @@
+{
+  "fecha": "2026-10-28",
+  "elegida": {
+    "n": 6,
+    "pieza": "gemini4carbon",
+    "idea": "La IA nueva llegará «lo antes posible», y Tiza descubre que ese plazo también le sirve para los exámenes.",
+    "guion": {
+      "vinetas": [
+        {
+          "tiza": {
+            "expresion": "contento",
+            "postura": "abajo",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "contento",
+            "postura": "arriba",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "bocadillos": [
+            {
+              "quien": "algoritmo",
+              "texto": "Historiako eredurik gaitzena atera da!",
+              "tipo": "habla"
+            },
+            {
+              "quien": "tiza",
+              "texto": "Klasean probatu dezaket?",
+              "tipo": "habla"
+            }
+          ],
+          "escenario": "sala_profes",
+          "objeto": "reloj"
+        },
+        {
+          "tiza": {
+            "expresion": "harto",
+            "postura": "pensar",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "neutral",
+            "postura": "encoger",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "bocadillos": [
+            {
+              "quien": "algoritmo",
+              "texto": "Oraingoz, zibersegurtasuneko adituentzat bakarrik. Gainerakoentzat, «ahalik eta azkarren».",
+              "tipo": "habla"
+            }
+          ],
+          "escenario": "sala_profes"
+        },
+        {
+          "cartela": "Arratsalde hartan, klasean",
+          "tiza": {
+            "expresion": "orgulloso",
+            "postura": "senalar",
+            "lugar": "centro",
+            "mira": "derecha"
+          },
+          "bocadillos": [
+            {
+              "quien": "tiza",
+              "texto": "Zuzendutako azterketak? Ahalik eta azkarren.",
+              "tipo": "habla"
+            }
+          ],
+          "escenario": "aula",
+          "objeto": "examenes"
+        }
+      ]
+    }
+  },
+  "traduccion": "itzulpen automatikoa AArekin"
+}

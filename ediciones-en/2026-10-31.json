@@ -1,0 +1,118 @@
+{
+  "fecha": "2026-10-31",
+  "hay_edicion": true,
+  "motivo": "Sábado con pocos debates de fondo (el grupo general de IA no tuvo mensajes) pero con una webserie audiovisual y dos aplicaciones educativas compartidas; la sincronización de herramientas entre equipos, ya tratada el 30, se reduce a un breve.",
+  "piezas": [
+    {
+      "id": "webserie-never-sleep-again",
+      "seccion": "multimedia",
+      "importancia": 1,
+      "grupo": "edumedia",
+      "antetitulo": "AI audiovisual",
+      "titular": "An AI-made horror web series documents its workflow step by step",
+      "entradilla": "“Never Sleep Again”, seven episodes released between 25 and 31 October, explains on its website how it combines Blender, Claude, a video generator and DaVinci Resolve.",
+      "cuerpo": [
+        "“Never Sleep Again” is a seven-episode horror web series created by Raül Torres with AI tools under human direction. Six episodes run between 29 and 42 seconds, and the finale, released on Halloween night, lasts 2 minutes and 8 seconds. They were published daily from 25 to 31 October on YouTube, Instagram, LinkedIn, TikTok and X.",
+        "The most useful part for teachers interested in audiovisual work is that the series’ page details the method. The house where the story takes place is modelled in 3D with Blender, so every shot is filmed from a camera placed in a coherent space. For each camera movement, a grey reference clip with no visual style is generated and handed to a video generator (Seedance 2.5, in Dreamina) along with scene images and instructions. Claude, connected to Blender and Dreamina, helps prepare the references and write those instructions. Each result is checked against the plan and regenerated with tighter references if necessary.",
+        "Editing and colour correction are done in DaVinci Resolve Studio, and Fusion is used to add, as separate layers, the phone’s video-player interface and a night-camera finish. The author told the group that he has completely changed the way he works with Claude’s connectors (MCP), which lets him handle Blender and DaVinci Resolve at a level he could not reach before."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Never Sleep Again (website for the series and its workflow)",
+          "url": "https://raultorres-ia.github.io/apps/never_sleep_again/"
+        }
+      ],
+      "comprobado": "Abierta la web de la serie: siete episodios, seis de 29 a 42 s y el final de 2:08, publicación diaria del 25 al 31 de octubre en cinco redes, autoría de Raül Torres y flujo (Blender, clips grises, Seedance 2.5 en Dreamina, Claude conectado a Blender y a Dreamina, revisión, DaVinci Resolve Studio y Fusion). El comentario sobre los MCP es lo dicho por el autor en el grupo.",
+      "ilustracion": "Esquema horizontal en cinco pasos con iconos sencillos: casa en 3D (Blender) -> clip de referencia gris -> generación de vídeo con instrucciones -> revisión y regeneración (flecha de vuelta atrás) -> montaje y color. Una línea inferior indica dónde interviene la persona.",
+      "ilustracion_alt": "Horizontal diagram in five steps: “3D house”, a house modelled in 3D; “Reference”, a grey clip showing the camera path; “AI video”, the video generation; “Review”, with an arrow looping back; and “Editing”, a timeline; below, a human figure connected to every step.",
+      "mensaje": {
+        "grupo": "edumedia",
+        "id": 11957
+      }
+    },
+    {
+      "id": "mapa-potencial-gravitatorio",
+      "seccion": "vibecoding",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Physics with AI",
+      "titular": "An interactive lab guides Year 13 students through gravitational potential",
+      "entradilla": "The app “Mapa de potencial gravitatorio”, shared by teacher Antonio González, includes a nine-step teaching guide and calculates the work done between two points.",
+      "cuerpo": [
+        "“Mapa de potencial gravitatorio” (Gravitational Potential Map) is a Spanish-language web resource for Year 13 (2.º de Bachillerato) Physics. It lets users place up to four point masses and view the potential V (in J/kg) as a two-dimensional colour map, with optional equipotential lines, or as a three-dimensional relief with exaggerated depth so it can be seen clearly; the page makes clear that this is a graphical metaphor and not a real deformation of space.",
+        "It also includes an A → B experiment: two points and a test mass are chosen, and the app shows the potential at each point, the potential energies, their change and the work done by the gravitational force. Users can reverse the route and try another path to check that the work does not depend on the path taken.",
+        "Its author explained in the group that this time he added a teaching guide so that users are guided along rather than having to discover what to do, and that he finds it very useful for explaining complex concepts visually. The page gives no authorship or licence."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Mapa de potencial gravitatorio (in Spanish)",
+          "url": "https://onio72.github.io/iesmajuelo/bach/fi2/t01/mapa_potencial/"
+        }
+      ],
+      "comprobado": "Abierta la aplicación: versión 1.0, hasta cuatro masas, mapa 2D con equipotenciales, relieve 3D, experimento A→B con masa de prueba, «invertir» y «otra trayectoria», guía de nueve pasos, español; la página no muestra autoría ni licencia. La autoría y el uso en clase son lo que el propio Antonio González escribió en el grupo.",
+      "ilustracion": null,
+      "ilustracion_alt": "On the left, equal-potential curves around a mass with two points, A and B, joined by two different paths; on the right, the same potential as a funnel seen from the side, with A and B at two heights and a red arrow labelled “Same work”: the work is the same along any path.",
+      "mensaje": {
+        "grupo": "vce",
+        "id": 14424
+      }
+    },
+    {
+      "id": "teclado-espanol",
+      "seccion": "vibecoding",
+      "importancia": 3,
+      "grupo": "vce",
+      "antetitulo": "Typing practice",
+      "titular": "An interactive activity teaches how to type the symbols on the Spanish keyboard",
+      "entradilla": "The exercise, shared by Toni Magraner, trains symbols, accents and shortcuts with a test mode and a training mode.",
+      "cuerpo": [
+        "Toni Magraner has shared a web activity for learning to type on the Spanish keyboard. It asks students to type symbols such as @, #, €, ñ, ç and accented vowels, as well as numbers and shortcuts such as copy, cut, paste and undo.",
+        "It offers a “Ponte a prueba” (Test yourself) mode, with a hint if students are unsure (for example, the key combination for the at sign), and a training mode with an on-screen virtual keyboard. At the end it shows a report with accuracy, number of keys, errors, average time and the symbols worth reviewing, and it comes with an infographic of Spanish keyboard symbols. The content is listed under a CC BY-SA 4.0 licence and the code under GNU AGPL v3."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Reto: símbolos del teclado (interactivo) (in Spanish)",
+          "url": "https://amagraneronline.github.io/mrd-26/ud01/actividades/reto2_simbolos_teclado_interactivo.html"
+        }
+      ],
+      "comprobado": "Abierta la actividad: símbolos, atajos, modo de prueba con pistas (p. ej. AltGr + 2 para la arroba), modo de entrenamiento con teclado virtual, informe final, infografía y licencias (CC BY-SA 4.0 contenido, AGPL v3 código). La página no indica autoría; el nombre procede del mensaje con que se compartió en el grupo.",
+      "ilustracion": null,
+      "ilustracion_alt": "At the top, two rows of a keyboard with the 2 key and the AltGr key highlighted in blue; below, the combination AltGr plus 2, with a red equals sign, giving the @ symbol as the result.",
+      "mensaje": {
+        "grupo": "vce",
+        "id": 14466
+      }
+    }
+  ],
+  "breves": [
+    {
+      "texto": "Syncing folders is not the same as backing up, a thread about Syncthing reminded members. INCIBE recommends the 3-2-1 rule: three copies, on two different media, with one of them off-site.",
+      "url": "https://www.incibe.es/ciudadania/blog/definiendo-mi-estrategia-de-copias-de-seguridad",
+      "grupo": "vce",
+      "mensaje": {
+        "grupo": "vce",
+        "id": 14401
+      }
+    }
+  ],
+  "descartado": [
+    "Resumen semanal de aplicaciones del bot de los grupos y avisos sobre el bot: administración interna.",
+    "Encuesta de actualización de DigCompEdu y debate sobre Eductia: son del 30 de octubre, no del día.",
+    "Enlace a una aplicación de Ethan Mollick compartida solo con enlace a X: sin fuente original verificable ni contenido explicado.",
+    "Conversación sobre un prototipo del laboratorio de Mazinger Z en Three.js (derechos y resultados dispares entre asistentes): anécdota sin utilidad contrastable.",
+    "Felicitaciones, bromas y charla sobre Halloween: no son noticia.",
+    "Sincronización de skills (hilo del 30 continuado): tema ya publicado; solo lo nuevo en un breve.",
+    "EduTicTac Blocs y Llibres (Samuel Soriano): webs sin contenido verificable.",
+    "Libro 3D con Mistral y Antigravity: valoración y material no comprobables."
+  ],
+  "repaso": [
+    "Webserie: duraciones y redes corregidas con la web («unos 30 segundos» pasa a 29-42 s; el final, 2:08; añadidas las plataformas); añadido Fusion.",
+    "Webserie: quitada la frase sobre otra persona que trabaja con Codex, Claude, Blender y Unreal y la conclusión de que el flujo «se está extendiendo»: opinión sin respaldo.",
+    "Mapa de potencial: quitado «creada con IA» (nadie lo dijo; el enlace llevaba un parámetro de ChatGPT, que no prueba nada) y la mención al bot de recursos (administración interna).",
+    "Mapa de potencial: añadidos detalles verificados (masa de prueba, otra trayectoria, guía de nueve pasos) y la aclaración de la página sobre el relieve 3D.",
+    "Eliminada la pieza de sincronización de skills entre ordenadores: tema publicado el 30; lo nuevo del día (regla 3-2-1) pasa a un breve. También contaba el sistema personal del administrador del grupo.",
+    "Eliminada la pieza de EduTicTac Blocs y Llibres: las dos webs no cargan contenido y todo lo demás era no confirmado; no se publica.",
+    "Teclado: quitados los «filtros por tipo de carácter» (no confirmados) y «ha creado» sustituido por «ha compartido», pues la página no indica autoría.",
+    "Breves: sustituidos por uno sobre la regla 3-2-1, con fuente (INCIBE y documentación de Syncthing). Quitado el de Mistral (valoración sin contrastar, material no comprobable) y el de agentes limitados a carpetas (descripción de una configuración personal, no verificable)."
+  ]
+}

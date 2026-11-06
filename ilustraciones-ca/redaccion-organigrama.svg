@@ -46,9 +46,12 @@
   <text class="lbl" x="408" y="394" text-anchor="middle">dibuixos</text>
   <path class="t" d="M450 326 L476 326 M468 319 L476 326 L468 333"/>
   <rect class="t fa" x="482" y="300" width="80" height="52" rx="8"/>
-  <text class="ft" x="500" y="332" font-family="Newsreader, Georgia, serif" font-size="16" font-weight="700" text-anchor="middle">ES</text>
-  <path class="a" d="M513 326 L527 326 M522 321 L527 326 L522 331"/>
-  <text class="ft" x="545" y="332" font-family="Newsreader, Georgia, serif" font-size="16" font-weight="700" text-anchor="middle">CA</text>
+  <text class="ft" x="496" y="331" font-family="Newsreader, Georgia, serif" font-size="15" font-weight="700" text-anchor="middle">ES</text>
+  <path class="a" d="M507 326 L517 326 M513 322 L517 326 L513 330"/>
+  <text class="ft" x="531" y="321" font-family="Newsreader, Georgia, serif" font-size="10.5" font-weight="700" text-anchor="middle">CA</text>
+  <text class="ft" x="551" y="321" font-family="Newsreader, Georgia, serif" font-size="10.5" font-weight="700" text-anchor="middle">GL</text>
+  <text class="ft" x="531" y="337" font-family="Newsreader, Georgia, serif" font-size="10.5" font-weight="700" text-anchor="middle">EU</text>
+  <text class="ft" x="551" y="337" font-family="Newsreader, Georgia, serif" font-size="10.5" font-weight="700" text-anchor="middle">EN</text>
   <text class="lbl" x="522" y="374" text-anchor="middle">Traductor</text>
   <!-- El número de las 7:00 y el portavoz -->
   <path class="t" d="M564 326 L604 326 M596 319 L604 326 L596 333"/>

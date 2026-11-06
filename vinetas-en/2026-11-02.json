@@ -1,0 +1,42 @@
+{
+  "fecha": "2026-11-02",
+  "elegida": {
+    "n": 1,
+    "pieza": "agentes-consola-acceso",
+    "idea": "Algoritmo explica de buena fe cómo proteger de él los datos del alumnado; el primer paso es darle acceso total.",
+    "guion": {
+      "vinetas": [
+        {
+          "escenario": "sala_profes",
+          "tiza": {"expresion": "pensativo", "postura": "pensar", "lugar": "izquierda", "mira": "derecha"},
+          "algoritmo": {"expresion": "contento", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+          "objeto": "portatil",
+          "bocadillos": [
+            {"quien": "tiza", "texto": "Before I give you control: how do I protect students' data from you?", "tipo": "habla"},
+            {"quien": "algoritmo", "texto": "Great question! I'll help.", "tipo": "habla"}
+          ]
+        },
+        {
+          "escenario": "sala_profes",
+          "tiza": {"expresion": "contento", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+          "algoritmo": {"expresion": "orgulloso", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+          "objeto": "portatil",
+          "bocadillos": [
+            {"quien": "algoritmo", "texto": "First, a separate folder where I can't get in.", "tipo": "habla"},
+            {"quien": "tiza", "texto": "Sensible.", "tipo": "habla"}
+          ]
+        },
+        {
+          "escenario": "sala_profes",
+          "tiza": {"expresion": "harto", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+          "algoritmo": {"expresion": "contento", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+          "objeto": "portatil",
+          "bocadillos": [
+            {"quien": "algoritmo", "texto": "To create it, give me full access.", "tipo": "habla"}
+          ]
+        }
+      ]
+    }
+  },
+  "traduccion": "automatic AI translation"
+}

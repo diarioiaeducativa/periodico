@@ -1,0 +1,42 @@
+{
+  "fecha": "2026-11-02",
+  "elegida": {
+    "n": 1,
+    "pieza": "agentes-consola-acceso",
+    "idea": "Algoritmo explica de buena fe cómo proteger de él los datos del alumnado; el primer paso es darle acceso total.",
+    "guion": {
+      "vinetas": [
+        {
+          "escenario": "sala_profes",
+          "tiza": {"expresion": "pensativo", "postura": "pensar", "lugar": "izquierda", "mira": "derecha"},
+          "algoritmo": {"expresion": "contento", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+          "objeto": "portatil",
+          "bocadillos": [
+            {"quien": "tiza", "texto": "Kontrola eman aurretik: nola babestu zuregandik ikasleen datuak?", "tipo": "habla"},
+            {"quien": "algoritmo", "texto": "Galdera ona! Nik lagunduko dizut.", "tipo": "habla"}
+          ]
+        },
+        {
+          "escenario": "sala_profes",
+          "tiza": {"expresion": "contento", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+          "algoritmo": {"expresion": "orgulloso", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+          "objeto": "portatil",
+          "bocadillos": [
+            {"quien": "algoritmo", "texto": "Lehenik, karpeta bereizi bat, ni sartu ezin naitekeena.", "tipo": "habla"},
+            {"quien": "tiza", "texto": "Zentzuzkoa.", "tipo": "habla"}
+          ]
+        },
+        {
+          "escenario": "sala_profes",
+          "tiza": {"expresion": "harto", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+          "algoritmo": {"expresion": "contento", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+          "objeto": "portatil",
+          "bocadillos": [
+            {"quien": "algoritmo", "texto": "Sortzeko, eman sarbide osoa.", "tipo": "habla"}
+          ]
+        }
+      ]
+    }
+  },
+  "traduccion": "itzulpen automatikoa AArekin"
+}

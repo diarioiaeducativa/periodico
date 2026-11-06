@@ -1,0 +1,79 @@
+{
+  "fecha": "2026-11-03",
+  "piezas": [
+    {
+      "id": "laboratori-de-formulacio",
+      "seccion": "vibecoding",
+      "repositorio": "dia",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Novo no repositorio",
+      "titular": "Un laboratorio en catalán permite practicar a formulación inorgánica con preguntas, pistas e retos",
+      "entradilla": "«Laboratori de formulació», creada por Felip Sarroca i Gil, ofrece exercicios de nomenclatura inorgánica para Secundaria e Bacharelato, con tres modos de traballo e marcador de progreso.",
+      "cuerpo": [
+        "«Laboratori de formulació» é unha aplicación web para aprender e practicar a formulación e a nomenclatura dos compostos inorgánicos. Segundo a ficha do repositorio, segue as recomendacións da IUPAC de 2005 e diríxese a alumnado de Educación Secundaria Obrigatoria e de Bacharelato, na área de Ciencia e Tecnoloxía. Está integramente en catalán, e no pé de páxina consta que a creou Felip Sarroca con asistencia da intelixencia artificial.",
+        "Ao abrila vese unha cabeceira con tres modos: «Aprèn», «Practica» e «Repte». No modo de práctica, que é o que mostra a captura, aparece unha pregunta de opción múltiple con catro respostas, por exemplo a fórmula do sulfuro de bario, coa etiqueta da familia («sal binària») e o nivel («fàcil»). Debaixo hai botóns para pedir unha pista ou mostrar a solución. Pódese filtrar por nivel (fácil, medio e Bacharelato) e por familia de compostos, e o panel lateral permite elixir o tipo de actividade: mestura de todas, construír compostos unindo ións ata que a carga total sexa cero, pasar do nome á fórmula, da fórmula ao nome, elixir entre catro opcións ou clasificar un composto na súa familia.",
+        "Un contador de intentos, acertos e racha acompaña cada sesión. A páxina indica que o progreso se garda só no navegador e ofrece unha táboa de ións. Segundo a ficha, inclúe ademais un modo proxector pensado para o encerado dixital, que non se aprecia na captura.",
+        "Para o profesorado, o recurso pode servir como práctica autónoma do alumnado ou como actividade de repaso proxectada na aula. Ábrese desde o navegador e non mostra ningunha pantalla de acceso nin de pagamento. Quen dea clase en castelán debe ter en conta que todo o texto, tanto o das preguntas como o das axudas, está en catalán.",
+        "A obra compártese con licenza CC BY-NC-SA 4.0, que permite adaptala con atribución, sen uso comercial e compartindo as obras derivadas coa mesma licenza."
+      ],
+      "recursos": [
+        {
+          "id": "laboratori-de-formulacio",
+          "titulo": "Laboratori de formulació",
+          "autoria": "Felip Sarroca i Gil",
+          "url": "https://ja.cat/formulacio",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://ja.cat/formulacio",
+          "licencia": "CC BY-NC-SA 4.0",
+          "captura": "2026-11-03-laboratori-de-formulacio.jpg",
+          "captura_alt": "Pantalla do modo Practica coa pregunta «Quina és la fórmula de: sulfur de bari» e catro opcións (BaS, Ba2S2, BaCl2, PbCl2), botóns de pista e solución, e á dereita a lista de tipos de actividade.",
+          "texto": []
+        }
+      ],
+      "fuentes": [
+        {"titulo": "Laboratori de formulació (en catalán)", "url": "https://ja.cat/formulacio"}
+      ],
+      "comprobado": "Se miró la captura (modo Practica, pregunta de opción múltiple, filtros, tipos de actividad, contadores y pie con autoría y licencia). WebFetch siguió la redirección y devolvió el texto de la página: modos Aprèn, Practica y Repte, tabla de iones, contadores, progreso guardado solo en el navegador; no menciona cuenta ni modo proyector. La referencia a la IUPAC 2005 y el modo proyector proceden de la ficha y se atribuyen a ella."
+    },
+    {
+      "id": "foqo-formulacion-quimica-organica",
+      "seccion": "vibecoding",
+      "repositorio": "dia",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Novo no repositorio",
+      "titular": "FoQo xera tests de formulación orgánica e dá o nome dunha estrutura debuxada",
+      "entradilla": "A aplicación de FiQuiPedia permite practicar a nomenclatura de química orgánica con tests configurables e unha ferramenta que pasa da fórmula ao nome.",
+      "cuerpo": [
+        "FoQo, «Formulación Química Orgánica», é unha aplicación web de FiQuiPedia para practicar a nomenclatura dos compostos orgánicos. A ficha do repositorio sitúaa en Secundaria, Bacharelato e Universidade, dentro de Ciencia e Tecnoloxía, e está en español. É unha páxina sen rexistro aparente: ao abrila mostra directamente tres accesos, sen formulario de entrada.",
+        "A pantalla de inicio ofrece tres botóns: «Tests», «F → N» e «Panel». Segundo a descrición da ficha, os tests piden nomear un composto a partir da súa fórmula ou formular un nome dado, e o panel permite configurar o tipo de exercicio: cadeas, dobres e triplos enlaces, radicais, ramificacións, grupos funcionais e ciclos. A ferramenta «F → N» serve, sempre segundo a ficha, para obter o nome e as propiedades dunha fórmula ou dunha estrutura debuxada no editor. Na páxina vese a paleta de enlaces e grupos funcionais (-OH, -COOH, -NH₂, -NO₂ e outros) que se utiliza para construír as moléculas, e cítanse as bibliotecas JSME e 3Dmol.js, coas que se traballa o editor e a visualización de moléculas.",
+        "A ficha indica que admite varias representacións (semidesenvolvida, esqueletal, de esquema rectangular e en 3D) e que se poden consultar tanto a nomenclatura IUPAC de 2013, co nome preferente (PIN), como a de 1993. Para o profesorado, a ficha sinala que pode usarse na aula, para tarefas ou como práctica autónoma, con exportación a PDF e como paquete SCORM para Moodle. Estas funcións proceden da descrición da ficha; a captura só mostra a pantalla de inicio.",
+        "A obra consta con dobre licenza: AGPL v3 para o código e CC BY-SA 4.0 para os contidos. A páxina enlaza co código en GitLab e coas bibliotecas que utiliza."
+      ],
+      "recursos": [
+        {
+          "id": "foqo-formulacion-quimica-organica",
+          "titulo": "FoQo - Formulación Química Orgánica",
+          "autoria": "FiQuiPedia",
+          "url": "https://foqo.fiquipedia.es/",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://foqo.fiquipedia.es/",
+          "licencia": "AGPL v3 (código) · CC BY-SA 4.0 (contidos)",
+          "captura": "2026-11-03-foqo-formulacion-quimica-organica.jpg",
+          "captura_alt": "Pantalla de inicio titulada «Formulación Química» cos botóns Tests, F → N e Panel, logotipos de IUPAC e CAS, ligazóns a bibliotecas e unha fila de grupos funcionais.",
+          "texto": []
+        }
+      ],
+      "fuentes": [
+        {"titulo": "FoQo - Formulación Química Orgánica (en castelán)", "url": "https://foqo.fiquipedia.es/"},
+        {"titulo": "Código de FoQo en GitLab (en castelán)", "url": "https://gitlab.com/fiquipedia/foqo/-/blob/main/README.md"}
+      ],
+      "comprobado": "Se miró la captura (pantalla de inicio con Tests, F → N y Panel, sin pedir cuenta) y se abrió la web con WebFetch: tests de fórmula, herramienta F → N, panel de configuración, exportación a PDF, mención de SCORM, bibliotecas y licencias; no dice si hay cuenta. No se pudo ver ningún test ni el editor en funcionamiento: lo relativo a representaciones 3D, nomenclaturas y uso en clase procede de la ficha. La página de GitLab solo cargó con su título (README de FoQo), sin contenido legible."
+    }
+  ],
+  "descartado": [],
+  "repaso": [
+    "Laboratori de formulació: quitado «no pide cuenta ni pago» (no consta; solo se ve que no hay pantalla de acceso); el modo proyector pasa a atribuirse a la ficha (la página no lo muestra); quitado «los nombres de los compuestos» y condensado para ajustarse a las 350 palabras.",
+    "FoQo: quitado «con su documentación» respecto al enlace de GitLab (no se pudo leer el README); ajustado «comprobado».",
+    "Título, autoría, licencia, fichas, capturas y captura_alt coinciden con la entrada; sin enlaces a lo ya publicado (nada relacionado en publicado.txt); no se nombra a Juanjo de Haro; ningún recurso descartado."
+  ]
+}

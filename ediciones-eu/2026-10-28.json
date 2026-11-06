@@ -1,0 +1,127 @@
+{
+  "fecha": "2026-10-28",
+  "hay_edicion": true,
+  "motivo": "Día de poca conversación (20 mensajes con contenido), con un anuncio de modelo, una aplicación educativa compartida y un recurso 3D que da pie a probar prompts; edición modesta.",
+  "piezas": [
+    {
+      "id": "gemini4carbon",
+      "seccion": "novedades",
+      "importancia": 1,
+      "grupo": "chatgpt",
+      "antetitulo": "Googleren eredu berria",
+      "titular": "Googlek Gemini 4 Carbon aurkeztu du, oraingoz zibersegurtasuneko adituentzat bakarrik",
+      "entradilla": "Google DeepMindek bere muga-eredu berria iragarri du, eta oraingoz defentsa informatikoko profesional talde txiki batek bakarrik erabiltzen du. Publiko orokorrarentzat ez dago daturik.",
+      "cuerpo": [
+        "Google DeepMindek 2026ko urriaren 28an iragarri zuen Gemini 4 Carbon, orain arteko eredurik gaitzena dela dio, eta bi aste lehenago kaleratutako Gemini 4 Argonen oinordekoa. Konpainiaren arabera, aste horretan bertan hasiko da eskuragarri egoten zibersegurtasunaren defentsan diharduten pertsona sorta txiki batentzat, eta pixkanaka zabalduko da konfiantzazko bazkide gehiagora Fairwind programaren bidez.",
+        "Garatzaileentzako, enpresentzako eta publiko orokorrarentzako sarbidea «ahalik eta azkarren» iritsiko da, Googleren arabera, baina iragarpenak ez du datarik ematen. Beraz, irakasleentzat, oraingoz, datorrenaren berri bat da, ez ikasgelan erabil daitekeen tresna bat. Taldean hori bera nabarmendu zuten: oraingoz iragarpena baino ez da.",
+        "Googlek ereduari hobekuntzak egozten dizkio programazioan, urrats anitzeko zereginetan eta web-garapenean, eta aurrerapenik handiena zibersegurtasunean dago. Emaitzen artean, Artificial Analysis Intelligence Index v5.0 indizean lehen postua (59 puntu) eta Argonekin alderatuta kode seguruaren sorkuntzan bikoitza baino gehiagoko arrakasta daude. Enpresak berak argitaratutako emaitzak dira, eta kontsultatutakoan ez dago independenteki egiaztatuta.",
+        "APIaren prezioak, orokorrean eskuragarri dagoenean, 2 dolar izango dira sarrerako milioi token bakoitzeko eta 10 irteerakoetan sarrera-aldian, eta 4 eta 20 dolar ondoren. Iragarpenak ez du erabilera hezitzailerik aipatzen."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Introducing Gemini 4 Carbon (Google, ingelesez)",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/"
+        }
+      ],
+      "comprobado": "Leído el anuncio oficial en blog.google: fecha 28-10-2026, acceso inicial restringido a un subconjunto de defensores en ciberseguridad, ampliación gradual por el programa Fairwind, Argon lanzado «hace dos semanas», cifras de benchmarks (índice v5.0, 59 puntos; más del doble de éxito en código seguro) y precios introductorio y posterior. Las cifras son autodeclaradas por Google. El enlace de X del grupo no se pudo abrir.",
+      "ilustracion": "Esquema de escalera de acceso en tres peldaños: 'Ahora: defensa en ciberseguridad', 'Después: socios de confianza (Fairwind)', 'Más adelante, sin fecha: desarrolladoras, empresas y público', con el tercero en trazo discontinuo y un candado abierto a medias.",
+      "ilustracion_alt": "Hiru mailako eskailera, ezkerretik eskuinera igotzen dena: lehenengoak, pertsona gutxi batzuekin, zibersegurtasunaren defentsa adierazten du; bigarrenak, pertsona gehiagorekin, konfiantzazko bazkideak; hirugarrenak, marra etenez eta giltzarrapo erdi irekiarekin, «datarik gabe» markatuta dago.",
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 53763
+      }
+    },
+    {
+      "id": "plec-dictados",
+      "seccion": "vibecoding",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Baliabidea katalanez",
+      "titular": "Plecek katalanezko dikatu tolesgarriak sortzen ditu, audioarekin, ikasleek beren burua zuzen dezaten",
+      "entradilla": "Aplikazio ireki batek ikasgelan dikta daitezkeen hitz- edo pseudohitz-zerrendak sortzen ditu, orri tolestu batean inprimatzeko, ikasleek beren erantzunak zuzen ditzaten.",
+      "cuerpo": [
+        "Plec, proiektuaren webgunearen arabera Aarón Fortuñok sortua, katalanezko ortografia lantzeko baliabide irekia da (MIT lizentzia). Irakasleek hitz-dikatuen edo pseudohitz-dikatuen artean aukeratzen dute, 8tik 24 elementura, gutxi gorabeherako mailarekin (erdi-zikloa, goi-zikloa edo institutua) eta ortografia-zailtasunaren araberako iragazkiekin. Aurkezpenak 3.300 hitz inguruko katalogoa aipatzen du.",
+        "Emaitza PDF moduan inprimatzen da, hirurenetan edo folioaren laurdenean tolestuta, soluzioa ezkutuan gera dadin: irakasleak dikta egiten du, ikasleek idatzi egiten dute eta gero orria zabaltzen dute beren burua zuzentzeko. Dikatu bakoitzak kode bat du, zerrenda bera berreskuratzeko aukera ematen duena, hitz berberekin eta ordena berean, beste gailu batetik.",
+        "Hitzak entzun daitezke, eta horrek ikasgelan edo etxean zeregin autonomo gisa erabiltzeko aukera ematen du. Audioa katalan zentralean eta valentzieraz dago; mallorcera etenda dago, transkripzio fonetikoa berrikusten ari diren bitartean.",
+        "Aplikazioak ez du konturik behar, eta ez ditu dikatuak zerbitzari batean gordetzen. Osorik katalanez dago."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Plec · Dictats per desplegar (katalanez)",
+          "url": "https://plec.ortogra.fi/ca/"
+        }
+      ],
+      "comprobado": "Abierta la web de la aplicación (plec.ortogra.fi/ca): autoría (Aarón Fortuño), opciones de 8 a 24 palabras, niveles, plegado en tercios o cuarto, código para recuperar la lista, audio central y valenciano con mallorquín en pausa, sin cuentas ni almacenamiento en servidor, licencia MIT, sitio en catalán. La cifra de unas 3.300 palabras procede de la presentación de la aplicación en el grupo; la web no da el total.",
+      "ilustracion": null,
+      "ilustracion_alt": "Hiru uneko eskema: «Dikatzen da», bozgorailu batekin; «Idazten da», orri tolestu batekin, non ikasleek erantzunak idazten dituzten soluzioa ezkutuan dagoela, eta «Zuzentzen da», orria zabalduta, erantzunak soluzioaren ondoan eta asmatze- eta akats-markekin.",
+      "mensaje": {
+        "grupo": "vce",
+        "id": 14314
+      }
+    },
+    {
+      "id": "everyjoule-prompt",
+      "seccion": "vibecoding",
+      "importancia": 3,
+      "grupo": "vce",
+      "antetitulo": "3D liburuak",
+      "titular": "«Every Joule»-n inspiratutako 3D ikasgai interaktiboak sortzeko prompt bat",
+      "entradilla": "Taldeetako kide batek prompt luze bat partekatu du, AA batek energiari buruzko fisika-liburu baten estiloko 3D ikasgai interaktiboa sor dezan.",
+      "cuerpo": [
+        "«Every Joule» energiari buruzko 3D liburu interaktiboa da, iamtechartist.com webgunean argitaratua. Bere orriaren arabera, GCSE eta IGCSE mailetako (Erresuma Batuko bigarren hezkuntza) hamar fisika-ikasgai biltzen ditu; haietan erantzuna aurreikusi, probatu eta egiaztatu egiten da hegal bat altxatuta, eta ikasgaia osatzean zigilu bat lortzen da. Irakasleentzako oharrak ditu, eta nabigatzailean grafikoen azelerazioa behar du. Webguneak ez du egile zehatzik ez lizentziarik adierazten.",
+        "Estilo hori beste gai batzuekin errepikatzeko, ingelesezko prompt bat partekatu zen, eredu bati Three.js duen HTML fitxategi bakarra eskatzen diona. Liburuaren metafora, aurreikusi-behatu-probatu-azaldu-zigilua fluxua, alboko hegal bat formula edo kodearekin eta gaztelaniazko interfazea eskatzen ditu. Hutsune bat du, «[TEMA AQUÍ]», non gaia jartzen den, adibidez fotosintesia edo Newtonen legeak.",
+        "Partekatu zuenak Claude-rekin eta ordainpeko beste eredu batzuekin probatzea eta emaitzak argitaratzea proposatu zuen. Egunaren mezuetan oraindik ez zen emaitzarik argitaratu. AArekin sortutako edozein baliabidetan bezala, komeni da eduki zientifikoa eta irisgarritasuna berrikustea ikasgelara eraman aurretik."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Every Joule (Techartist, ingelesez)",
+          "url": "https://iamtechartist.com/every-joule/"
+        }
+      ],
+      "comprobado": "Abierta la página de Every Joule: diez lecciones, GCSE/IGCSE, secuencia predecir-probar-solapa-sello, notas docentes, requisito de aceleración gráfica, sin autoría ni licencia. No se ejecutó el prompt ni se comprobó que produzca resultados equivalentes; solo se describe su contenido tal como se compartió.",
+      "ilustracion": null,
+      "ilustracion_alt": "Hiru urratsen eskema: «Prompt», gaiarentzako hutsune etena duen orri bat; «3D liburua», hegal altxatu bat duen liburu irekia, erantzuna ikusten uzten duena, eta «Zigilua», ikasgaia osatzean egiaztatze-marka batekin.",
+      "mensaje": {
+        "grupo": "vce",
+        "id": 14347
+      }
+    }
+  ],
+  "breves": [
+    {
+      "texto": "AEPDk urriaren 27an dekalogo bat argitaratu zuen AAren laguntzaileak eta agenteak erabiltzen dituztenentzat. Agenteak prestatzea eta pertsonak onartzea gomendatzen du, baimen zehatzekin eta bidali, partekatu edo ordaindu aurretik berrespenarekin.",
+      "url": "https://www.aepd.es/prensa-y-comunicacion/notas-de-prensa/la-aepd-publica-un-decalogo-para-delegar-tareas-en-asistentes",
+      "grupo": "chatgpt",
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 53752
+      }
+    },
+    {
+      "texto": "GitHubeko dokumentazioaren arabera, GitHub Educationen egiaztatutako irakasleek doan erabil dezakete Copilot Pro, eta egokitasuna hilero berrebaluatzen da.",
+      "url": "https://docs.github.com/es/copilot/how-tos/copilot-on-github/set-up-copilot/enable-copilot/set-up-for-teachers-and-os-maintainers",
+      "grupo": "vce",
+      "mensaje": {
+        "grupo": "vce",
+        "id": 14352
+      }
+    }
+  ],
+  "descartado": [
+    "Recorte del uso gratuito de OpenCode (consulta de un miembro): no confirmado en fuentes oficiales; solo hay informes dispersos y no se encontró anuncio de recorte.",
+    "Vídeo de YouTube sobre Claude «reinventándose»: no se pudo saber de qué trata; sin fuente verificable.",
+    "Ampliación del bot de los grupos y /misrecursos: administración interna, excluida.",
+    "Laboratori de formulació y Reactius i sobrants (Felip Sarroca): publicados el 27 de octubre, no son noticia del 28.",
+    "Enlace a un tuit de la AEPD (28 de octubre): no se pudo abrir; se cubre el decálogo en un breve a partir de la fuente oficial.",
+    "Mensajes sobre límites de uso o reseteo y charla trivial: quejas personales o sin contenido."
+  ],
+  "repaso": [
+    "Gemini 4 Carbon: reescrito el campo «comprobado» a lo realmente verificado en el anuncio de Google (se citaba un contraste con Android Authority que no se pudo repetir). El cuerpo era correcto.",
+    "Plec: titular sin la expresión confusa «modelo oculto».",
+    "Plec: eliminado el alias de Telegram «xosqox» (identificación deducida); la autoría se da solo como figura en la web.",
+    "Plec: quitadas las cifras exactas «3.299 palabras y 96 pseudopalabras» (la web no las da; queda «cerca de 3.300» atribuido a la presentación).",
+    "Plec: quitados el plan de ampliar al castellano, la petición de voces y los «niveles como propuesta editorial», que no constan en la fuente pública; quitado «gratuito» (la web dice abierto).",
+    "Every Joule: quitada la descripción de «dibujos de tinta» y «color como flujo de energía», que la página no confirma (venía del prompt, no de la fuente); añadido el requisito de aceleración gráfica.",
+    "Breve de GitHub Education: quitado «correo institucional y documentos», que esa página no dice."
+  ]
+}

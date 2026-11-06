@@ -1,0 +1,89 @@
+{
+  "fecha": "2026-10-31",
+  "elegida": {
+    "n": 8,
+    "pieza": "webserie-never-sleep-again",
+    "idea": "La serie de terror de Halloween llega a su gran momento y el monstruo resulta ser un asistente servicial.",
+    "guion": {
+      "vinetas": [
+        {
+          "cartela": "Halloween night",
+          "tiza": {
+            "expresion": "neutral",
+            "postura": "sostener",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "orgulloso",
+            "postura": "abajo",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "objeto": "taza",
+          "lleva": "tiza",
+          "bocadillos": [
+            {
+              "quien": "algoritmo",
+              "texto": "I've made you a horror series. Watch out for the monster.",
+              "tipo": "habla"
+            },
+            {
+              "quien": "tiza",
+              "texto": "Let's see if it's scary.",
+              "tipo": "habla"
+            }
+          ],
+          "escenario": "casa_noche"
+        },
+        {
+          "tiza": {
+            "expresion": "sorprendido",
+            "postura": "sostener",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "contento",
+            "postura": "abajo",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "objeto": "taza",
+          "lleva": "tiza",
+          "bocadillos": [
+            {
+              "quien": "algoritmo",
+              "texto": "A dark house. A door creaks. And suddenly...",
+              "tipo": "habla"
+            }
+          ],
+          "escenario": "casa_noche"
+        },
+        {
+          "tiza": {
+            "expresion": "riendo",
+            "postura": "encoger",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "contento",
+            "postura": "arriba",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "bocadillos": [
+            {
+              "quien": "algoritmo",
+              "texto": "“Hello, I'm the monster. How can I help you today?”",
+              "tipo": "habla"
+            }
+          ],
+          "escenario": "casa_noche"
+        }
+      ]
+    }
+  },
+  "traduccion": "automatic AI translation"
+}

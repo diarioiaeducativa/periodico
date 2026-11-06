@@ -1,0 +1,25 @@
+{
+  "fecha": "2026-11-05",
+  "elegida": {
+    "n": 5,
+    "pieza": "breve",
+    "idea": "El modelo de vídeo siguió los cinco planos grabados en VR casi cuadro a cuadro y añadió uno que nadie grabó: «Ese es el casi».",
+    "guion": {"vinetas": [
+      {"tiza": {"expresion": "contento", "postura": "senalar", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "contento", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+       "objeto": "portatil",
+       "bocadillos": [{"quien": "tiza", "texto": "Five shots recorded in VR. Follow them exactly.", "tipo": "habla"},
+                      {"quien": "algoritmo", "texto": "Yes, boss!", "tipo": "habla"}]},
+      {"tiza": {"expresion": "sorprendido", "postura": "senalar", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "orgulloso", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+       "objeto": "portatil",
+       "bocadillos": [{"quien": "algoritmo", "texto": "Done: your cuts, almost frame by frame.", "tipo": "habla"},
+                      {"quien": "tiza", "texto": "And this shot? I never recorded it.", "tipo": "habla"}]},
+      {"tiza": {"expresion": "harto", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "orgulloso", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+       "objeto": "portatil",
+       "bocadillos": [{"quien": "algoritmo", "texto": "That's the “almost”.", "tipo": "habla"}]}
+    ]}
+  },
+  "traduccion": "automatic AI translation"
+}

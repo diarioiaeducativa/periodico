@@ -1,0 +1,95 @@
+{
+  "fecha": "2026-11-01",
+  "elegida": {
+    "n": 1,
+    "pieza": "detectores-caza-brujas",
+    "idea": "El detector marca como IA una novela de 1946, y la fecha, lejos de exculparla, la hace más sospechosa.",
+    "guion": {
+      "vinetas": [
+        {
+          "escenario": "sala_profes",
+          "tiza": {
+            "expresion": "neutral",
+            "postura": "sostener",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "contento",
+            "postura": "abajo",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "objeto": "libro",
+          "lleva": "tiza",
+          "bocadillos": [
+            {
+              "quien": "tiza",
+              "texto": "Pasa ezazu nobela hau AA detektagailutik.",
+              "tipo": "habla"
+            },
+            {
+              "quien": "algoritmo",
+              "texto": "Berehala!",
+              "tipo": "habla"
+            }
+          ]
+        },
+        {
+          "escenario": "sala_profes",
+          "tiza": {
+            "expresion": "sorprendido",
+            "postura": "sostener",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "orgulloso",
+            "postura": "senalar",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "objeto": "libro",
+          "lleva": "tiza",
+          "bocadillos": [
+            {
+              "quien": "algoritmo",
+              "texto": "AAren arrastoak. Kasu argiegia.",
+              "tipo": "habla"
+            },
+            {
+              "quien": "tiza",
+              "texto": "1946koa da.",
+              "tipo": "habla"
+            }
+          ]
+        },
+        {
+          "escenario": "sala_profes",
+          "tiza": {
+            "expresion": "harto",
+            "postura": "sostener",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "pensativo",
+            "postura": "pensar",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "objeto": "libro",
+          "lleva": "tiza",
+          "bocadillos": [
+            {
+              "quien": "algoritmo",
+              "texto": "Okerrago oraindik: laurogei urte disimulatzen.",
+              "tipo": "habla"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "traduccion": "itzulpen automatikoa AArekin"
+}

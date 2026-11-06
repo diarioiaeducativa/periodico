@@ -1,0 +1,86 @@
+{
+  "fecha": "2026-11-04",
+  "piezas": [
+    {
+      "id": "rompecabezas-tecnica-jigsaw",
+      "seccion": "vibecoding",
+      "repositorio": "dia",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "New in the repository",
+      "titular": "A tool randomly forms the home and expert groups for the Jigsaw technique",
+      "entradilla": "“Rompecabezas – Técnica Jigsaw” takes a list of students and subtopics and splits them into balanced groups. It opens in the browser and is available in five languages.",
+      "cuerpo": [
+        "“Rompecabezas – Técnica Jigsaw” is a tool for organising jigsaw cooperative learning in the classroom. In this technique, each student becomes an expert in one part of the topic, then shares it with their group, and everyone needs the others to complete the whole. The app takes care of the heaviest part for teachers: forming the groups.",
+        "The start screen has two panels. On the left, you type the students’ names, one per line, or click “Cargar ejemplo” to try the tool with sample data. On the right, you choose the number of subtopics, which matches the number of members in each home group, give each one a name (the screenshot shows four, each in a different colour) and, if you wish, enter the general topic, for example “El aparato digestivo”. When you click “Formar grupos”, the tool assigns students at random, with the subtopics spread evenly.",
+        "According to the listing, when the number of students does not divide exactly, the extras are handled as co-experts. The listing adds that the app guides the three phases of the technique (home groups, expert groups and return to the home group) with prompts, a timer and a printable view. Once the groups are formed, the app also shows steps numbered 1 to 3 and a ten-minute timer with start and stop buttons.",
+        "The listing classifies it as a creation tool for Primary, Secondary, Upper Secondary, Vocational Training, University and Teacher Training, and for any subject, since it helps organise the class and does not depend on any particular content. The interface can be switched between Spanish, Catalan, Galician, Basque and English. It is used directly in the browser, and the start screen does not ask for an account.",
+        "It was created by Juanjo de Haro. The code is distributed under the AGPL-3.0 licence, and the page links to a channel for reporting errors and making suggestions."
+      ],
+      "recursos": [
+        {
+          "id": "rompecabezas-tecnica-jigsaw",
+          "titulo": "Rompecabezas – Técnica Jigsaw",
+          "autoria": "Juanjo de Haro",
+          "url": "https://jigsawcoop.github.io/",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://jigsawcoop.github.io/",
+          "licencia": "AGPL-3.0",
+          "captura": "2026-11-04-rompecabezas-tecnica-jigsaw.jpg",
+          "captura_alt": "Start screen with a box for typing students’ names, four colour-coded subtopics, a general topic field and the “Formar grupos” button.",
+          "texto": []
+        }
+      ],
+      "fuentes": [
+        {
+          "titulo": "Rompecabezas – Técnica Jigsaw (in Spanish)",
+          "url": "https://jigsawcoop.github.io/"
+        }
+      ],
+      "comprobado": "Revisado: se miró la captura (formulario de alumnado y subtemas, botón «Formar grupos», selector de cinco lenguas, licencia AGPLv3 en el pie), el texto visible y la página con WebFetch (cinco idiomas, pasos 1-3, temporizador de 10:00, enlace de errores). No se pudo ver el resultado de formar grupos ni la vista imprimible: esas funciones, y el reparto de sobrantes como co-expertos, constan solo en la ficha y se atribuyen a ella. Autoría de la ficha sin nombrar, como exige el encargo. Sin enlaces a lo publicado.",
+      "repaso": []
+    },
+    {
+      "id": "edutictac-blocs",
+      "seccion": "vibecoding",
+      "repositorio": "dia",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "New in the repository",
+      "titular": "A block-based programming editor, built on TurboWarp and compatible with Scratch, for learning to code",
+      "entradilla": "EduTicTac Blocs is a visual programming environment compatible with Scratch projects and with classroom templates; according to its website, it has no advertising or trackers.",
+      "cuerpo": [
+        "EduTicTac Blocs is a free, open block-based visual programming environment designed for education. According to its own page, it is compatible with Scratch .sb3 projects, is based on TurboWarp and carries no advertising or trackers. It also makes clear that it is not affiliated with Scratch, its team, the Scratch Foundation or TurboWarp. The listing places it in Primary, Secondary and Teacher Training, in the areas of Science and Technology and Logical-Mathematical Thinking, with an interface in Catalan and English.",
+        "When you open the website, an example project ready to run appears without asking for an account, with a “Ver dentro” button to switch to the block editor: at the top, the Ajustes, Archivo, Editar, Complementos and Avanzado menus, and the “Inicio” and “Entrar” buttons; in the centre, the stage with green flag, pause and stop controls. A notice invites users to click the green flag, type their name when the character Bloc asks for it and then click on it. Below, the “Empieza con una plantilla” button announces twenty ready-made projects, each with its own teaching sheet, and “Explora la galería” gives access to more examples.",
+        "For teachers, the appeal is that it allows them to introduce computational thinking with Scratch’s block logic and bring ready-made projects into class as a starting point. According to the listing, students can create projects with blocks, costumes, drawings and extensions, and there is an artificial intelligence assistant to generate them, though what its use requires is not detailed.",
+        "The listing also notes that it can be self-hosted using Docker, so a school or its IT coordinator can deploy it on their own server. The resource is listed as created by Samuel Soriano and its source code is published under the GPL v3 licence, with links in the footer to the privacy information and to the TurboWarp credits."
+      ],
+      "recursos": [
+        {
+          "id": "edutictac-blocs",
+          "titulo": "EduTicTac Blocs",
+          "autoria": "Samuel Soriano",
+          "url": "https://blocs.edutictac.es/",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://blocs.edutictac.es/",
+          "licencia": "GPL v3",
+          "captura": "2026-11-04-edutictac-blocs.jpg",
+          "captura_alt": "Example project with the “Ver dentro” button and the stage with its flag, pause and stop controls, a green start notice and the “Empieza con una plantilla” and “Explora la galería” buttons.",
+          "texto": []
+        }
+      ],
+      "fuentes": [
+        {
+          "titulo": "EduTicTac Blocs (in Catalan)",
+          "url": "https://blocs.edutictac.es/"
+        }
+      ],
+      "comprobado": "Revisado: se miró la captura (editor con menús, escenario, aviso de inicio, botones de plantillas y galería) y el texto visible de la página. WebFetch solo devolvió un mensaje de error de la aplicación (necesita JavaScript); mandan la captura y el texto visible. No se probaron las plantillas, la galería, el asistente de IA ni el despliegue con Docker: constan solo en la ficha o en la propia página y se atribuyen a ellas. Sin enlaces a lo publicado (nada afín en publicado.txt)."
+    }
+  ],
+  "descartado": [],
+  "repaso": [
+    "Jigsaw: sin cambios de texto; autoría de la ficha (Juanjo de Haro) no nombrada y `autoria` vacío; licencia, enlaces, captura y alt confirmados; funciones solo de la ficha ya atribuidas a ella.",
+    "EduTicTac Blocs: titular y entradilla ya no afirman «sin publicidad»/«sin rastreadores» como hecho propio (es lo que dice su web).",
+    "EduTicTac Blocs: quitadas frases sobre lo que no se pudo comprobar («no se pudo comprobar en la captura», «no se ha verificado»), que hablan del método del diario; el asistente de IA y Docker quedan atribuidos a la ficha.",
+    "Actualizado `comprobado` en ambas piezas."
+  ]
+}

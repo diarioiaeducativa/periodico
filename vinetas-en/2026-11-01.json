@@ -1,0 +1,95 @@
+{
+  "fecha": "2026-11-01",
+  "elegida": {
+    "n": 1,
+    "pieza": "detectores-caza-brujas",
+    "idea": "El detector marca como IA una novela de 1946, y la fecha, lejos de exculparla, la hace más sospechosa.",
+    "guion": {
+      "vinetas": [
+        {
+          "escenario": "sala_profes",
+          "tiza": {
+            "expresion": "neutral",
+            "postura": "sostener",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "contento",
+            "postura": "abajo",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "objeto": "libro",
+          "lleva": "tiza",
+          "bocadillos": [
+            {
+              "quien": "tiza",
+              "texto": "Run this novel through the AI detector.",
+              "tipo": "habla"
+            },
+            {
+              "quien": "algoritmo",
+              "texto": "Right away!",
+              "tipo": "habla"
+            }
+          ]
+        },
+        {
+          "escenario": "sala_profes",
+          "tiza": {
+            "expresion": "sorprendido",
+            "postura": "sostener",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "orgulloso",
+            "postura": "senalar",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "objeto": "libro",
+          "lleva": "tiza",
+          "bocadillos": [
+            {
+              "quien": "algoritmo",
+              "texto": "Traces of AI. Clear-cut case.",
+              "tipo": "habla"
+            },
+            {
+              "quien": "tiza",
+              "texto": "It's from 1946.",
+              "tipo": "habla"
+            }
+          ]
+        },
+        {
+          "escenario": "sala_profes",
+          "tiza": {
+            "expresion": "harto",
+            "postura": "sostener",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "pensativo",
+            "postura": "pensar",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "objeto": "libro",
+          "lleva": "tiza",
+          "bocadillos": [
+            {
+              "quien": "algoritmo",
+              "texto": "That makes it worse: eighty years of hiding it.",
+              "tipo": "habla"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "traduccion": "automatic AI translation"
+}

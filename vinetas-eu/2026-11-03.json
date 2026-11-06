@@ -1,0 +1,42 @@
+{
+  "fecha": "2026-11-03",
+  "elegida": {
+    "n": 2,
+    "pieza": "google-ia-cuentas-escolares",
+    "idea": "Algoritmo redacta el aviso de que la IA está bloqueada y no puede evitar ofrecerse a resumirlo.",
+    "guion": {
+      "vinetas": [
+        {
+          "escenario": "sala_profes",
+          "tiza": {"expresion": "neutral", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+          "algoritmo": {"expresion": "contento", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+          "objeto": "portatil",
+          "bocadillos": [
+            {"quien": "tiza", "texto": "Ikastetxeak AA blokeatzen badu, ikasleek ikastetxearen oharra ikusiko dute.", "tipo": "habla"},
+            {"quien": "algoritmo", "texto": "Nik idatziko dut!", "tipo": "habla"}
+          ]
+        },
+        {
+          "escenario": "sala_profes",
+          "tiza": {"expresion": "contento", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+          "algoritmo": {"expresion": "orgulloso", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+          "objeto": "portatil",
+          "bocadillos": [
+            {"quien": "algoritmo", "texto": "«Zure ikastetxeak AA desaktibatu du.»", "tipo": "habla"},
+            {"quien": "tiza", "texto": "Argi eta laburra.", "tipo": "habla"}
+          ]
+        },
+        {
+          "escenario": "sala_profes",
+          "tiza": {"expresion": "harto", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+          "algoritmo": {"expresion": "contento", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+          "objeto": "portatil",
+          "bocadillos": [
+            {"quien": "algoritmo", "texto": "«Laburbildu dezadan?»", "tipo": "habla"}
+          ]
+        }
+      ]
+    }
+  },
+  "traduccion": "itzulpen automatikoa AArekin"
+}

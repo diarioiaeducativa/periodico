@@ -1,0 +1,100 @@
+{
+  "fecha": "2026-11-04",
+  "hay_edicion": true,
+  "motivo": "Día flojo en ChatGPT-IA-edu (solo el aviso del bot sobre el tema de Google ya publicado, sin novedad); algo más en EduMedia-IAG (cámara virtual para Blender) y en Vibe Coding Educativo (lecciones 3D de ciencias).",
+  "piezas": [
+    {
+      "id": "camara-virtual-blender",
+      "seccion": "multimedia",
+      "importancia": 1,
+      "grupo": "edumedia",
+      "antetitulo": "AArekin zinema egitea",
+      "titular": "Tresna batek mugikorra eta errealitate birtualeko betaurrekoak Blenderrerako kamera birtual bihurtzen ditu",
+      "entradilla": "Raül Torresek azaldu du Clauderen laguntzaz sistema bat egin duela Blenderren benetako kamera-mugimenduak grabatzeko eta, ondoren, AAren bideo-sortzaile bat gidatzeko.",
+      "cuerpo": [
+        "Raül Torresek kontatu du Clauderekin tresna bat sortu duela 3D eszenetako kamera kontrolatzeko, promptaren testuaren menpe soilik egon gabe. Mugikorrerako bertsioa WebXR bidezko web orri batek osatzen du, telefonoaren posizioa eta biraketa irakurtzen dituena, eta Blenderrentzako Python plugin batek, eszenako kamera denbora errealean mugitzen duenak. REC sakatu eta gelan zehar ibiltzean, Blenderrek gako-fotogramak grabatzen ditu; mugikorraren pantailan kamerak ikusten duena ikusten da.",
+        "Ondoren, haren kontakizunaren arabera, grabazioa gelditu, MP4 bat esportatu eta bideo hori Seedance 2.5 bideo-sortzailearen kamera-erreferentzia gisa erabiltzen da. Seedance 2.5en web orri ofizialak baieztatzen du modeloak erreferentziazko bideo bat har dezakeela kamera-mugimenduaren gida gisa.",
+        "Bigarren bertsio batek metodo bera Meta Quest 3 betaurrekoetara eramaten du: Quest Link eta Blenderrek berak dakarren VR Scene Inspection (OpenXR) plugina erabiliz, grabatzen duenak kamera birtual bat darama aginduan, aktibagailuak grabazioa hasi eta gelditzen du, eta joystickei esker travellingak eta panoramikak egin daitezke. Egileak adierazten du oraindik xehetasun batzuk doitu behar dituela, esaterako ezkerreko aginduaren abiadura.",
+        "Ikus-entzunezkoen edo plastikako gelarako, ideiak garrantzia du kuadroaren eta mugimenduaren kontrola ikasleei itzultzen dielako: eszenatokia eraikitzen da, kamera non joango den erabakitzen da, eta AA gero material hori eraldatzeko erabiltzen da. Egileak bere lan-metodoaren adibide gisa jartzen du bere seriea, «Never Sleep Again», [egunkariak azaroaren 1ean kontatu zuena](pieza:2026-10-31/webserie-never-sleep-again). Deskribatutako tresnak garapen pertsonalak dira eta, oraingoz, taldeak bere pantaila-argazkiak, proba-bideoak eta azalpena baino ez ditu."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Jatorrizko mezua EduMedia-IAG taldean (gaztelaniaz)",
+          "url": "https://t.me/EduMediaIAG/12067"
+        },
+        {
+          "titulo": "Blender: VR Scene Inspection pluginaren eskuliburua (gaztelaniaz)",
+          "url": "https://docs.blender.org/manual/es/latest/addons/vr_scene_inspection.html"
+        },
+        {
+          "titulo": "ByteDance Seed: Seedance 2.5 (ingelesez)",
+          "url": "https://seed.bytedance.com/en/seedance2_5"
+        }
+      ],
+      "mensaje": {
+        "grupo": "edumedia",
+        "id": 12067
+      },
+      "comprobado": "Contrastado con los mensajes #12067-#12108 del grupo (WebFetch del #12067 en Telegram: es de Raül Torres, 4 nov). No hay página pública de la herramienta. El manual de Blender: el enlace del borrador daba 404; la dirección corregida abre el manual (Blender 5.2) con la página VR Scene Inspection, y la búsqueda confirma que es un complemento oficial incluido en Blender, basado en OpenXR y con seguimiento de mandos; Quest Link no aparece en el manual y se atribuye al autor. Seedance 2.5 no confirmado en fuente oficial (solo guías de terceros sobre Seedance 2.0, que sí admite vídeo de referencia de cámara): se mantiene como afirmación del autor. Se quitó la frase que atribuía al mismo autor la webserie, porque no se ha verificado.",
+      "ilustracion": "Esquema en tres pasos de izquierda a derecha: un móvil o unas gafas de realidad virtual que se mueven por una habitación, una escena 3D de Blender con una cámara que sigue ese movimiento dibujada como trayectoria punteada, y un fotograma de vídeo final generado por IA a partir del recorrido.",
+      "ilustracion_alt": "Eskema hiru urratsetan, ezkerretik eskuinera: puntu gorri bat eta REC errotulua dituen mugikor bat, «Mugikorra edo betaurrekoak» errotuluaren azpian; gezi bat 3D kubo batera, kamera bat duena puntuz osatutako ibilbidearen amaieran, «Blenderreko eszena» errotuluaren azpian; eta beste gezi bat paisaia bat duen bideo-fotograma batera, «AAren bideoa» errotuluaren azpian."
+    },
+    {
+      "id": "tongjiang-lab-3d",
+      "seccion": "vibecoding",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Zientzia 3Dn",
+      "titular": "Proiektu ireki batek 3D zientzia-ikasgai interaktiboak eskaintzen ditu, 54, batxilergorako, txineraz",
+      "entradilla": "Tongjiang Labek fisika, kimika, biologia eta geografiako ikasgaiak biltzen ditu konexiorik gabe funtzionatzen duten HTML fitxategietan; taldean, AArekin egin ahalko denaren adibide gisa aipatu zen.",
+      "cuerpo": [
+        "Vibe Coding Educativo taldean Tongjiang Lab (铜匠实验室) partekatu zen, batxilergorako 3D zientzia-ikasgaien biltegi ireki bat. Bere dokumentazioaren arabera, 54 ikasgai ditu: 10 fisikakoak, 25 kimikakoak, 5 biologiakoak eta 14 geografiakoak. Bakoitza gutxi gorabehera 1 MBko HTML fitxategi bakar bat da, konexiorik gabe funtzionatzen duena; beraz, proiektore batean edo arbel digital batean erabil daiteke.",
+        "Ikasgai bakoitzak 3D eszena bat aurkezten du, zuzeneko kontrol-panel batekin, galdera gidari batekin eta irakasleentzako urratsez urratseko ibilbide batekin. Linean ireki daitezke, banan-banan edo zip batean deskargatu, eta beste web batean txertatu iframe baten bidez. Ikasgaiek Txinako curriculuma eta People's Education Press argitaletxearen testu-liburuak jarraitzen dituzte, nahiz eta proiektuak argitzen duen ez duela harekin loturarik.",
+        "Interfazea txineraz dago; proiektuak adierazten du beste hizkuntza batzuk aurreikusita daudela. Lizentzia CC BY-NC 4.0 da, kreditua emanda eta erabilera komertzialik gabe partekatzea eta egokitzea baimentzen duena. Egilea Tongjiang gisa agertzen da.",
+        "Taldean partekatu zuenak hurrengo hilabeteetan AArekin egin ahalko denaren erakusgarri gisa aurkezten du, eta simulazioetako bat ingelesera itzuli du bere webgunean. Gaztelania hiztuneko irakasleentzat interesa bikoitza da: berez osatutako 3D ikasgai baten eredua eta berrerabilgarria den oinarri bat, lizentzia errespetatzen bada."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Tongjiang Lab (GitHub biltegia) (ingelesez)",
+          "url": "https://github.com/smithjohn78390/tongjiang-lab"
+        },
+        {
+          "titulo": "Tongjiang Lab (ikasgaien webgunea) (txineraz)",
+          "url": "https://lab.tongjiang.app"
+        }
+      ],
+      "mensaje": {
+        "grupo": "vce",
+        "id": 14628
+      },
+      "comprobado": "Abiertos el repositorio de GitHub y lab.tongjiang.app: 54 lecciones (10 física, 25 química, 5 biología, 14 geografía), HTML autocontenido de ~1 MB que funciona sin conexión, zip/descarga individual/iframe, CC BY-NC 4.0 (three.js bajo MIT), interfaz en chino con otros idiomas previstos, currículo nacional y libros PEP 2019 sin afiliación, autor Tongjiang. Abierta eduvers.org/en/simulations: solo una simulación figura en inglés, el resto bajo «Chinese». Mensaje #14628 abierto en Telegram: coincide.",
+      "ilustracion": null,
+      "ilustracion_alt": "Lau zatitan banatutako barra bat, zabalera proportzionaleko zatiak dituena, «54 ikasgai» errotuluaren azpian; zati bakoitzaren gainean ikono bat: atomo bat «Fisika» gainean, matraze bat «Kimika» gainean (zatirik luzeena, urdinez), ADN-helize bat «Biologia» gainean (laburrena) eta lurreko globo bat «Geografia» gainean."
+    }
+  ],
+  "breves": [
+    {
+      "texto": "Raül Torresek EduMedia-IAG taldean Gironan zehar videojokoaren moduko ibilbide bat partekatu zuen, Clauderekin egina, benetako mapatik hartutako lekuekin eta Paleolitotik 2026ra bitarteko denboran bidaiatzeko aukerarekin. Webetik exekutatzen da eta ez dago esteka publikorik.",
+      "url": null,
+      "grupo": "edumedia",
+      "mensaje": {
+        "grupo": "edumedia",
+        "id": 12049
+      }
+    }
+  ],
+  "descartado": [
+    "Anuncio de Google sobre IA en cuentas escolares (ChatGPT-IA-edu): ya publicado el 3 de noviembre; hoy solo el aviso del bot, sin datos nuevos. ChatGPT-IA-edu no tiene nada más publicable el día 4.",
+    "Agenda Docente y sus AgendApps (VCE): busqué la app en WebSearch (revisor, de nuevo) y no hay fuente oficial ni ficha; solo un vídeo de TikTok. Sin comprobar.",
+    "Fil i compte, banco de problemas de mates en catalán (VCE): buscado de nuevo sin resultados y el mensaje no incluye enlace. Sin comprobar.",
+    "Misiones orbitales (VCE): ya publicado el 3 de noviembre.",
+    "Mensaje publicitario en chino, saludos, bromas, comandos del bot y mensajes del bot: no son noticia."
+  ],
+  "repaso": [
+    "Blender: el enlace del manual daba 404; sustituido por la dirección vigente (addons/vr_scene_inspection.html). La fuente «Mensaje original» apuntaba a #12069; ahora a #12067, el mensaje inicial.",
+    "Quitada la frase que atribuía al autor la webserie «Never Sleep Again» del 31 de octubre (no verificado); se mantiene el enlace a esa pieza como ejemplo que él mismo cita.",
+    "Seedance 2.5 sigue como afirmación del autor: solo hay fuentes de terceros sobre Seedance 2.0.",
+    "Tongjiang Lab: todos los datos confirmados en el repositorio y en lab.tongjiang.app; sin cambios en el texto.",
+    "Breve de Girona y descartes (Agenda Docente, Fil i compte, Google): revisados, sin cambios. ChatGPT-IA-edu queda sin pieza porque no hay nada nuevo."
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "fecha": "2026-10-29",
+  "elegida": {
+    "n": 3,
+    "pieza": "dictados-voz-gallego",
+    "idea": "La voz sintética dicta la misma frase 38 veces con igual ilusión y se ofrece a añadir un suspiro «para dar realismo».",
+    "guion": {
+      "vinetas": [
+        {
+          "cartela": "Ditado, 10:15",
+          "tiza": {
+            "expresion": "neutral",
+            "postura": "abajo",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "contento",
+            "postura": "abajo",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "bocadillos": [
+            {
+              "quien": "algoritmo",
+              "texto": "«O gato dorme.» Primeira vez.",
+              "tipo": "habla"
+            },
+            {
+              "quien": "tiza",
+              "texto": "Outra vez, por favor.",
+              "tipo": "habla"
+            }
+          ],
+          "escenario": "aula"
+        },
+        {
+          "tiza": {
+            "expresion": "agotado",
+            "postura": "abajo",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "contento",
+            "postura": "arriba",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "bocadillos": [
+            {
+              "quien": "algoritmo",
+              "texto": "«O gato dorme.» Vez 38. Igual de ilusionado.",
+              "tipo": "habla"
+            }
+          ],
+          "escenario": "aula"
+        },
+        {
+          "tiza": {
+            "expresion": "harto",
+            "postura": "abajo",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "neutral",
+            "postura": "abajo",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "bocadillos": [
+            {
+              "quien": "algoritmo",
+              "texto": "Engádolle un suspiro?",
+              "tipo": "habla"
+            },
+            {
+              "quien": "tiza",
+              "texto": "Si. Dá realismo.",
+              "tipo": "habla"
+            }
+          ],
+          "escenario": "aula"
+        }
+      ]
+    }
+  },
+  "traduccion": "automática con IA"
+}

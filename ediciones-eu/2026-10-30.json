@@ -1,0 +1,124 @@
+{
+  "fecha": "2026-10-30",
+  "hay_edicion": true,
+  "motivo": "Día flojo a normal: ChatGPT-IA-edu y Vibe Coding Educativo dieron tres temas con sustancia (un asistente de pago para docentes de Cataluña, la actualización europea de DigCompEdu y la sincronización de skills entre equipos); EduMedia-IAG no tuvo mensajes.",
+  "piezas": [
+    {
+      "id": "eductia",
+      "seccion": "herramientas",
+      "importancia": 1,
+      "grupo": "chatgpt",
+      "antetitulo": "Irakasleentzako laguntzaileak",
+      "titular": "Eductia-k ordainpeko AA eskaintzen du Katalunian irakasleek materialak prestatzeko",
+      "entradilla": "Zerbitzuak Kataluniako araudiarekin bat datozen ikaskuntza-egoerak, jarduerak eta ebaluazio-tresnak sortzen ditu, eta zalantza pizten du: zer eskaintzen du helburu orokorreko AA batek ez duena?",
+      "cuerpo": [
+        "Eductia Kataluniako irakasleentzat eta ikastetxeentzat pentsatutako adimen artifizialeko laguntzailea da. Bere webgunearen arabera, ikaskuntza-egoerak, jarduerak, ebaluazio-tresnak, banakako laguntza-planak eta ikaskuntza-helburuak sortzen ditu, LOMLOErekin eta Kataluniako dekretuekin bat etorriz. Interfazea katalanez dago eta emaitzak PDF edo Word formatuan deskarga daitezke.",
+        "Ordainpekoa da, zazpi eguneko proba doakoarekin. Argitaratutako planak hauek dira: Oinarrizkoa (6 euro hilean, 5.000 kreditu), Aurreratua (10 euro, 10.000 kreditu) eta Premium (13 euro, 20.000 kreditu), ikastetxeentzako deskontuekin. Webguneak dioenez, ez da ikasleak identifikatzen dituen daturik eskatzen ez gordetzen, irakasleak idazten duena ez da inolako eredu entrenatzeko erabiltzen, eta irakasle bakoitzak bere datuak kontsultatu eta ezabatu ditzake.",
+        "Pribatutasun-politikak adierazten duenez, edukiak OpenAIren eta Anthropicen AA sortzailearekin sortzen dira, eta bi enpresa horiek tratamenduaren arduradun gisa aritzen dira. Kontsultatutako orrietako batek ere ez du zehazten zein herrialdetan prozesatzen diren datuak; Europar Batasunetik kanpoko transferentziak justifikatu behar dituzten ikastetxeentzat garrantzitsua den alderdia da.",
+        "Eztabaidan, iritzi nagusia izan zen eredu orokorrak direla, API bidez konektatuak, murrizketak eta dokumentazio ona dituen geruza propio baten azpian, eta ia ez dutela eskaintzen laguntzaile estandar on batekin lor ezin daitekeenik. Nitxo bat badagoela ere aipatu zen: denbora edo ezagutza gutxi duten irakasleek, beren kabuz argibide landuak eraikitzeko, prest dagoen tresna hobetsi dezakete."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Eductia (zerbitzuaren webgunea) (katalanez)",
+          "url": "https://eductia.com/"
+        },
+        {
+          "titulo": "Eductia: pribatutasuna (katalanez)",
+          "url": "https://eductia.com/privacitat"
+        }
+      ],
+      "comprobado": "Precios, prueba de 7 días, funciones, afirmaciones sobre datos y entrenamiento: leídos en eductia.com. Proveedores OpenAI y Anthropic: confirmados en eductia.com/privacitat (la portada y las FAQ no los nombran). Ubicación del procesamiento: no figura en ninguna de las páginas consultadas; se dice así. Comprobado de nuevo: precios, prueba de 7 días, funciones, proveedores (la política dice que actúan como encargados del tratamiento) y ausencia del país de procesamiento de los proveedores de IA.",
+      "ilustracion": "Esquema en capas: arriba el docente con una interfaz web; en medio una capa 'Eductia' (instrucciones, plantillas LOMLOE, asistentes encadenados); abajo, por API, los modelos de dos proveedores externos. Una flecha de datos y un interrogante sobre el país donde se procesan.",
+      "ilustracion_alt": "Hiru geruzako eskema: goian, «Irakaslea», web-leiho baten aurrean dagoen pertsona bat; erdian, «Eductia», zerbitzuaren geruza propioa, dokumentuekin eta elkarri lotutako urratsekin; behean, bi eredu-hornitzaile, «OpenAI» eta «Anthropic», marra etenez lotuak, eta marra hori galdera-ikur gorri batean amaitzen da, «Zein herrialde?», datuak zein herrialdetan prozesatzen diren adierazteko.",
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 53778
+      }
+    },
+    {
+      "id": "digcompedu",
+      "seccion": "novedades",
+      "importancia": 2,
+      "grupo": "chatgpt",
+      "antetitulo": "Irakasleen gaitasun digitala",
+      "titular": "Europako Batzordeak DigCompEdu eguneratu du, AA eta ongizate digitala txertatzeko",
+      "entradilla": "Irakasleen gaitasun digitalaren Europako esparrua berrikusten ari dira; azken bertsioa 2027ko udaberrirako espero da, eta irakasleei kontsultak egingo zaizkie.",
+      "cuerpo": [
+        "Europako Batzordeak 2026ko maiatzean abiarazi zuen DigCompEdu eguneratzeko lana; irakasleen gaitasun digitalaren erreferentzia-esparrua da. Azken bertsioa 2027ko udaberrirako espero da, Ikerketa Zentro Bateratuaren (JRC) arabera.",
+        "Zirriborroak sei gaitasun-eremuak mantentzen ditu eta protagonismo handiagoa ematen die irakasleen erabakitzeko ahalmenari eta irizpide profesionalari. AA alfabetatzea esparru osoan txertatzen da, sistema sortzaileen mugak eta noiz komeni den horiek erabiltzea barne. Ongizate digitala zeharkako gaia da, ongizate eta jasangarritasunerako ardatz propio batekin, lan-karga, pantaila-denbora eta deskonektatzeko eskubidea hartzen dituena.",
+        "Prozesuak irakasleekin eta beste interesdunekin egindako kontsulta-tailerrak eta inkestak barne hartzen ditu; kontsultatutako web-orri ofizialek ez dute horien datarik argitaratzen."
+      ],
+      "fuentes": [
+        {
+          "titulo": "DigCompEdu (Ikerketa Zentro Bateratua, Europako Batzordea) (ingelesez)",
+          "url": "https://joint-research-centre.ec.europa.eu/DigCompEdu_en"
+        },
+        {
+          "titulo": "Update of the DigCompEdu framework underway (School Education Gateway) (ingelesez)",
+          "url": "https://school-education.ec.europa.eu/en/discover/news/update-digcompedu-framework-underway"
+        }
+      ],
+      "comprobado": "Lanzamiento en mayo de 2026, versión final en primavera de 2027, seis áreas, IA y bienestar transversales: leídos en la página del JRC; talleres y encuestas, en School Education Gateway (noticia del 4 de mayo de 2026). El enlace de la encuesta difundido en el grupo redirige a una página de error y ninguna fuente oficial da el plazo, por lo que no se cita.",
+      "ilustracion": null,
+      "ilustracion_alt": "Sei zirkulu erdigune baten inguruan, «Irizpidea», irakasleen irizpidea, eta marra etenezko eraztun batez inguratuak, «AA guztietan», AA esparru osoan presente dagoela adierazteko; eskuinean, «Ongizatea», hiru ikonoko ardatz bat: erloju bat, pantaila bat eta itzaltzeko botoi bat.",
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 53776
+      }
+    },
+    {
+      "id": "skills-sincronizar",
+      "seccion": "vibecoding",
+      "importancia": 3,
+      "grupo": "vce",
+      "antetitulo": "Agenteekin lan egitea",
+      "titular": "Irakasleek konparatzen dute nola eduki skill eta proiektu berberak hainbat ordenagailutan",
+      "entradilla": "AA laguntzaileekin hainbat ekipotan programatzen dutenek hiru ikuspegi deskribatzen dituzte: Git biltegia, etengabeko sinkronizazioa eta hodeiko karpeta partekatua.",
+      "cuerpo": [
+        "Ordenagailu batean baino gehiagotan programazio-laguntzaileekin lan egiten dutenek arazo praktiko bat dute: skillak (berrerabil daitezkeen argibideak), konfigurazioa eta proiektuak berdin mantentzea. Taldean hainbat irtenbide alderatu ziren.",
+        "Lehenak, laguntzaileak berak iradokitakoak, gauzak bereiztea proposatzen du: proiektuak GitHubeko biltegi pribatu batean, saio bakoitzean igoera eta deskarga eginez, eta konfigurazioa Syncthing bezalako sinkronizazio-tresna batekin. Syncthing kode irekikoa da eta, bere webgunearen arabera, ez du zerbitzari zentralik erabiltzen: datuak erabiltzailearen ekipoetan geratzen dira. Parte-hartzaile batek ohartarazi zuen ispilu-sinkronizazioak ezabaketak ere hedatzen dituela, beraz ez dela babeskopia baten ordezkoa, eta GitHub hobeto egokitzen dela kopia gisa sinkronizazio gisa baino.",
+        "Beste bi ikuspegiek Google Drive-ko karpeta batetik abiatzen dira, skillak, MCP zerbitzarien konfigurazioa eta komando-lerroko tresnak dituena; ekipo berri batean laguntzailea irekitzean, karpeta hori berrikusteko eta bere konfigurazioa eguneratzeko eskatzen zaio. Horietako batek skill-indize bat gehitzen du dokumentazioarekin eta proiektuko hautatzaile batekin, beharrezkoak soilik instalatzeko, sinkronizazio automatikorik gabe. Zalantza planteatu zuenaren behin-behineko ondorioa izan zen proiektuak zentralizatzea eta skillen hobekuntzak eskuz pasatzea."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Syncthing (ingelesez)",
+          "url": "https://syncthing.net/"
+        }
+      ],
+      "comprobado": "Solo se verificó en syncthing.net que es de código abierto y sin servidor central. El comportamiento de los borrados y la sincronización en un sentido son afirmaciones de participantes y no se comprobaron en la documentación. Los flujos con Drive son descripciones de uso personal, no verificables.",
+      "ilustracion": null,
+      "ilustracion_alt": "Bi ordenagailu, bakoitza skill-karpeta batekin, hiru bidez lotuak: goian, «Git», biltegi bat irudikatzen duen puntu-kate bat; erdian, «Syncthing», etengabeko sinkronizazioaren joan-etorriko bi gezi, eta behean, «Hodeia», karpeta partekatu bat.",
+      "mensaje": {
+        "grupo": "vce",
+        "id": 14401
+      }
+    }
+  ],
+  "breves": [
+    {
+      "texto": "Taldean bereizi zen vibe coding-a, hau da, baliabide digitalak AArekin eta hizkuntza naturalean sortzea, eta AA agentikoa, helburuak modu autonomoan lortzen dituena. Erabilera arruntean emandako azalpena da, ez definizio ofiziala.",
+      "url": null,
+      "grupo": "vce",
+      "mensaje": {
+        "grupo": "vce",
+        "id": 14388
+      }
+    }
+  ],
+  "descartado": [
+    "Batalla de prompts (plataforma para aprender a diseñar prompts): la web no ofreció contenido verificable y era presentación del propio creador al unirse al grupo.",
+    "Humor y herramienta Dextop para sincronizar tablet y PC: respuesta puntual a una consulta personal, sin tema general comprobado.",
+    "Informe de estado del repositorio, bot de IA Educativa y mensajes de moderación: administración interna de los grupos.",
+    "Debate sobre three.js y gemelos digitales: del día anterior, sin novedades el 30.",
+    "Exploradores de la Naturaleza (videojuego de DAmp): la página no muestra contenido verificable.",
+    "Dictados en gallego: publicados el 29."
+  ],
+  "repaso": [
+    "DigCompEdu: quitados la encuesta abierta «hasta el 8 de noviembre» y el aviso de «no confirmado»: no se puede confirmar (el enlace falla) y un periódico no publica ese tipo de dato.",
+    "DigCompEdu: «autonomía» sustituido por «capacidad de decisión y criterio profesional» (la fuente habla de agency y judgement); entradilla sin la petición de opinión.",
+    "Skills: sin cambios de contenido; esta pieza se mantiene como única sobre el tema (el 31 se retira su repetición).",
+    "Quitado el breve «Exploradores de la Naturaleza»: la página solo muestra el título y un botón; contenido y licencia no se pudieron comprobar y no se publica un recurso sin confirmar.",
+    "Breve de vibe coding: quitada la atribución a «un miembro».",
+    "Eductia: sin cambios en el cuerpo; todas las cifras y afirmaciones coinciden con la web y la política de privacidad."
+  ]
+}

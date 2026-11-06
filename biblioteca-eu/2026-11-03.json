@@ -1,0 +1,67 @@
+{
+ "fecha": "2026-11-03",
+ "piezas": [
+  {
+   "id": "mit-comite-ia",
+   "seccion": "biblioteca",
+   "importancia": 2,
+   "grupo": "chatgpt",
+   "antetitulo": "MITen txostena",
+   "titular": "MITeko batzorde batek helburuak, ebaluazioa eta presentziazko komunitatea birdiseinatzea eskatzen du, AAk idatzizko ia edozein lan ebazten duen honetan",
+   "entradilla": "Massachusetts Institute of Technology-ko ad hoc batzordeak zortzi printzipio eta hainbat gomendio proposatzen ditu unibertsitate-irakaskuntza AA sortzailera egokitzeko.",
+   "cuerpo": [
+    "Dokumentua Massachusetts Institute of Technology-ko (MIT) Ad Hoc Committee on AI Use in Teaching, Learning, and Research Training batzordearen azken txostena da. Erakundearen zuzendaritzak 2026ko urtarrilean agindu zuen, AA sortzailearen egungo erabilera aztertzeko, irakaskuntzan eta ebaluazioan berrikuntzak identifikatzeko eta erabilera-politika bat proposatzeko. 2026ko abuztuaren 13koa da, eta Eric Klopferrek eta Sam Maddenek batera zuzentzen dute; batzordean gradu eta graduondoko ikasleak, eskola guztietako irakasleria eta liburutegiak eta Teaching and Learning Lab bezalako unitateetako langileak daude. Erakunde-dokumentu bat da, MITeko komunitateari zuzendua.",
+    "Batzordeak ondorioztatzen du kontua arau bat idaztea baino sakonagoa dela: unibertsitate-prestakuntzaren egiturari, zentzuari eta balioari eragiten diola. Txostenaren arabera, AAk gradu-mailako idatzizko ia edozein zereginentzat erantzun zentzuzkoak eman ditzake, eta ohartarazten du: «This is not a moment for patches and duct tape.» Emandako datuen artean, 2025eko udazkeneko teknologia-inkestan, erantzun zuten ikasleen bi herenak baino gehiagok uste zuten AA garrantzitsua izango dela beren ibilbidean, baina %25ek bakarrik zioen MITek behar bezala prestatzen duela hura erabiltzeko.",
+    "Zortzi printzipioak hauek dira: xumea izatea, ausarta izatea, pertsonak erdigunean jartzea, ikaskuntzaren alde egitea, asmoz irakastea, irtenbide bakarrik ez dagoela aitortzea, automatizatu beharrean areagotzea, eta gelatik eta campusetik haratago pentsatzea. Laugarrenak ahalegin emankorraz eta irakasleen eta ikasleen arteko gizarte-kontratu berri batez hitz egiten du; zazpigarrenak, txostenaren hitzetan, AA erabiltzeko eskatzen du «to augment and enhance curiosity, creativity, and learning, not automate them». Bosgarrenak, AA onartu ala debekatu behar den galdetu beharrean, ikaskuntzaren helburua lehenik definitzea proposatzen du.",
+    "Gomendioak hiru blokeetan biltzen dira. Lehenengoak, hezkuntza-prozesuei buruzkoak, ikasgai bakoitzeko helburuak berrikusteko eskatzen du, eta ahozko azterketak, seihilekoko portfolioak edo gelatik kanpoko lanak erabiltzeko, gelan elkarrizketarekin lagunduta, bai eta proiektuen bidezko ikaskuntza eta presentziazko ikaskuntza soziala indartzeko ere. Ikasgai bakoitzean AA politika justifikatu bat eskatzen du, formatu estandarrarekin eta jarraibide argi eta koherenteekin. AAren detektagailuetan konfiantza ez jartzea gomendatzen du, fidagarritasun gutxikotzat jotzen baititu, eta egungo blokeo-nabigatzaileak akastunak eta zaintzatik hurbilekoak direla azaltzen du, nahiz eta aztertzea gomendatzen duen; bertsioen historia eta etapaz etapako feedbacka nahiago ditu. Bigarren blokeak, komunitateari eta egoitza-esperientziari buruzkoak, irakasleriak bere AA-erabilera aitor dezala gomendatzen du, ikasleen harrera-saioetatik erabilera eraginkor, arduratsu eta etikoa irakats dadila, eta tesi guztiek AA nola erabili zen azaltzen duen adierazpen bat izan dezatela, inoiz egilekide gisa agertu gabe.",
+    "Hirugarren blokeak laguntza-egiturak proposatzen ditu: AAren eta hezkuntzaren gaineko batzorde iraunkor bat, eskolako edo sailko AA arduradunak, bekadunak eta ezarpen-talde bat, pilotuetarako funts bat, irakasleriarentzako etengabeko prestakuntza eta laguntza, eta erabilera, parte-hartze eta emaitzen neurketak. Teknologiarako sarbide ekitatiboa ere jasotzen du, komunitatea eredu-hornitzaile bakar bati lotuko ez dion plataforma bat, eta kostuen eta ingurumen-eraginaren jarraipena. Neurri hauek unibertsitate zehatz baten baliabideen mende daude.",
+    "Txosten hau gaiaren aldetik lotuta dago liburutegiko beste dokumentu batzuekin: AAren aroko ebaluazioarekin, [Responsible Assessment in the AI Era](https://t.me/ChatGPTedu/21753/50953) bezala, edo osotasun akademikoarekin, [A Comprehensive Academic Integrity (CAI) Framework: An Overview](https://t.me/ChatGPTedu/21753/41875) bezala. Diarioak ez du haien edukia txosten honekin alderatu. Irakasle batentzat, probetxu handiena transferitu daitezkeen ideiek dute: ikaskuntza-helburuetatik abiatzea zer onartzen den erabaki aurretik, ikasgai bakoitzean AAren zer erabilera onargarri diren eta zergatik adieraztea, eta ebaluazioa dibertsifikatzea ahozko edo prozesuko osagaiekin. Komeni da hezkuntza-prozesuei buruzko blokearekin hastea, gelatik hurbilenekoarekin. Muga gisa, testuingurua ikerketa-unibertsitate zehatz batena da, eta, beraz, beste maila edo ikastetxe batzuetara eramateko egokitzapena behar da."
+   ],
+   "documento": {
+    "titulo": "Report of MIT's Ad Hoc Committee on AI Use in Teaching, Learning, and Research Training",
+    "autoria": "Ad Hoc Committee on AI Use in Teaching, Learning, and Research Training, Massachusetts Institute of Technology (zuzendarikideak: Eric Klopfer eta Sam Madden)",
+    "anyo": "2026",
+    "idioma": "ingelesa",
+    "licencia": "ez da adierazten",
+    "url": "https://aiandeducation.mit.edu/report/"
+   },
+   "fuentes": [
+    {
+     "titulo": "Report of MIT's Ad Hoc Committee on AI Use in Teaching, Learning, and Research Training (web-bertsioa) (ingelesez)",
+     "url": "https://aiandeducation.mit.edu/report/"
+    },
+    {
+     "titulo": "AI and Education at MIT (batzordearen orria) (ingelesez)",
+     "url": "https://aiandeducation.mit.edu/"
+    },
+    {
+     "titulo": "Responsible Assessment in the AI Era (liburutegia) (ingelesez)",
+     "url": "https://t.me/ChatGPTedu/21753/50953"
+    },
+    {
+     "titulo": "A Comprehensive Academic Integrity (CAI) Framework: An Overview (liburutegia) (ingelesez)",
+     "url": "https://t.me/ChatGPTedu/21753/41875"
+    }
+   ],
+   "mensaje": {
+    "grupo": "chatgpt",
+    "id": 53925
+   },
+   "comprobado": "La entrada solo trae la ficha, sin texto del PDF. El revisor leyó con WebFetch la versión web oficial del informe (aiandeducation.mit.edu/report/) y la página del comité (aiandeducation.mit.edu), y contrastó punto por punto fecha, copresidentes, encargo de enero de 2026, composición del comité, los ocho principios, las recomendaciones de los tres bloques, los datos de la encuesta y las dos citas en inglés, que constan literalmente en las secciones 2.2 y 2.7. WebFetch devuelve resúmenes automáticos, no el texto íntegro. La licencia no figura en la página. De los dos documentos de la biblioteca enlazados solo se conoce el título (existen en la lista de la entrada); la relación se limita al tema.",
+   "ilustracion_alt": "Zortzi printzipioko goiko barra bat eta hortik hiru zutaberako hiru gezi: hezkuntza-prozesuak (ahozko azterketa, portfolioa), komunitatea (pertsona-talde bat) eta laguntza-egiturak (organigrama eta tresnak).",
+   "ilustracion": "Esquema en tres columnas con los tres bloques de recomendaciones (procesos educativos, personas y comunidad, estructuras y herramientas), cada una con tres o cuatro acciones clave, sobre una barra superior con los ocho principios.",
+   "repaso": [
+    "Entradilla: quitada la afirmación de que se intenta «mantenerla fuera del aula», que el informe no dice.",
+    "Párrafo 1: quitado que el informe se presente como llamada a la acción para otras instituciones (es una llamada dirigida al MIT).",
+    "Párrafo 2: quitada la atribución de las «indicaciones confusas» a la encuesta (son opiniones del alumnado, no de ese dato).",
+    "Párrafo 3: precisado que el esfuerzo productivo y el contrato social son del cuarto principio y la cita del séptimo; el contrato social va sin comillas; el quinto principio se ajusta a lo que dice el informe.",
+    "Párrafo 4: detectores y navegadores de bloqueo matizados (el informe recomienda estudiar los segundos); ejemplos de evaluación, formato estándar y declaración de uso de IA ajustados a las secciones 3.1 y 3.2.",
+    "Párrafo 5: quitado que el informe se declare «provisional» (no lo dice); «muchos recursos» sustituido por una formulación comprobable.",
+    "Párrafo 6: la frase sobre la relación con otros documentos queda como mera coincidencia temática, sin comparación.",
+    "Extensión: el cuerpo pasaba de 700 palabras; recortado a unas 640.",
+    "Citas literales, fecha, copresidentes, cifras y mensaje 53925 confirmados; no se nombra a quien lo subió."
+   ]
+  }
+ ],
+ "descartado": []
+}

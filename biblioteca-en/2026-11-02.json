@@ -1,0 +1,229 @@
+{
+ "fecha": "2026-11-02",
+ "piezas": [
+  {
+   "id": "unesco-edad-ia",
+   "seccion": "biblioteca",
+   "importancia": 2,
+   "grupo": "chatgpt",
+   "antetitulo": "Report published by UNESCO",
+   "titular": "A report for UNESCO proposes replacing “at what age?” with “for what purpose and on what evidence?” when using AI in the classroom",
+   "entradilla": "Sonia Livingstone and three co-authors argue that there is no single right age for using AI in education and call for decisions based on child development and clear educational aims.",
+   "cuerpo": [
+    "“Is there a right age for AI in education? Deciding whether AI is age-appropriate and why” is a research report by Sonia Livingstone, Kim R. Sylwander, Sandra El Gemayel and Ayça Atabey, published by UNESCO in 2026. Livingstone, professor of Social Psychology in the Department of Media and Communications at the London School of Economics, presented it at UNESCO’s Digital Learning Week and published a summary on the Media@LSE blog on 22 September 2026. According to that summary, the text was prepared to support policy briefs on the governance of AI in education. It should be noted that this article relies on the author’s summary and on the library entry, because the full text could not be opened in UNESCO’s repository.",
+    "The thesis is that there is no single right age, because child development varies and depends on context. Hence the proposal to change the question “at what age?” to “for what purpose, under what conditions and on what evidence?”, a formulation also found in the library entry. Livingstone calls for decisions to start from child development and clear educational aims; without them, she warns, education ministries risk making decisions without foundation. She also distinguishes between teaching about AI, that is, AI literacy, which she considers a priority from an early age, and using AI to teach, an area in which she argues there is little evidence. As a starting point in the face of that uncertainty, she writes that “the precautionary principle is a reasonable starting point”.",
+    "The summary offers a few data points. The UN’s Independent International Scientific Panel on AI looked for evidence on the effects of AI on society, including education, and found little on the benefits and more on the risks. In the Rights.AI research, carried out in Kenya, Brazil, India and Thailand, children used AI, often unsupervised, to find information, create, have fun and ask for advice. In the United States, 73% of teenagers said they had never talked to a teacher about what AI is and how it works. The author also mentions privacy risks and unannounced changes to the tools schools use, and notes that there are age restrictions in places such as Norway, New York and California.",
+    "In the library, the document sits alongside others that approach children and AI from different angles. The World Economic Forum report on child safety and well-being ([our article](https://t.me/ChatGPTedu/21753/53435)) agrees that age alone is not enough as a criterion, although it is aimed mainly at those who design and deploy systems. According to the entry for the message itself, the text was presented at UNESCO’s Digital Learning Week, where other documents were published, among them “The Algorithm in the Room” ([in the library](https://t.me/ChatGPTedu/21753/52272)).",
+    "For teachers, the value lies in the change of question rather than in a rule: before introducing a tool, it is worth knowing what educational purpose it serves, what evidence supports it and whether it is a matter of teaching about AI or teaching with it. The limit is that, by its own thesis, it offers no threshold that can simply be applied in a school’s rules. As a first read, the Media@LSE summary is short and links to the full report."
+   ],
+   "documento": {
+    "titulo": "Is there a right age for AI in education? Deciding whether AI is age-appropriate and why",
+    "autoria": "Sonia Livingstone, Kim R. Sylwander, Sandra El Gemayel and Ayça Atabey",
+    "anyo": "2026",
+    "idioma": "English",
+    "licencia": "not stated",
+    "url": "https://unesdoc.unesco.org/ark:/48223/pf0000399343"
+   },
+   "fuentes": [
+    {
+     "titulo": "Is there a right age for AI in education? (UNESCO, UNESDOC)",
+     "url": "https://unesdoc.unesco.org/ark:/48223/pf0000399343"
+    },
+    {
+     "titulo": "Is there a right age for AI in education? (Media@LSE, 22 September 2026)",
+     "url": "https://blogs.lse.ac.uk/medialse/2026/09/22/is-there-a-right-age-for-ai-in-education/"
+    },
+    {
+     "titulo": "Library message 53435 (WEF report)",
+     "url": "https://t.me/ChatGPTedu/21753/53435"
+    },
+    {
+     "titulo": "Library message 52272 (The Algorithm in the Room)",
+     "url": "https://t.me/ChatGPTedu/21753/52272"
+    }
+   ],
+   "mensaje": {
+    "grupo": "chatgpt",
+    "id": 53434
+   },
+   "comprobado": "NO se leyó el documento en la fuente oficial: unesdoc.unesco.org devolvió 403 a WebFetch en el repaso y la búsqueda no dio otra copia oficial. Se leyó con WebFetch el resumen de Livingstone en Media@LSE (22-09-2026), que cita autoría y enlace oficial; de él proceden la tesis, el panel de la ONU, Rights.AI (Kenia, Brasil, India, Tailandia), el 73 % y la cita sobre el principio de precaución. Del repaso se retiró lo que solo constaba en prensa secundaria o no figuraba en el resumen (aviso de «posición no oficial», recomendaciones detalladas, evidencia concentrada en el Norte Global, edades y comparaciones por países). El mensaje 52272 no se pudo abrir (solo cabecera de Telegram); su vínculo con la Digital Learning Week se toma de la ficha del mensaje 53434. Licencia y páginas sin confirmar.",
+   "ilustracion": "Esquema con una pregunta tachada («¿a qué edad?») que da paso a tres preguntas en columna: ¿para qué?, ¿bajo qué condiciones?, ¿con qué evidencia?; debajo, una balanza entre «enseñar sobre IA» y «usar IA para enseñar».",
+   "ilustracion_alt": "A box with the question “At what age?” crossed out in red and an arrow towards three items in a column (“Purpose?”, “Conditions”, “Evidence”); below, “About / with AI”, a balance with a book in one pan and a screen in the other."
+  },
+  {
+   "id": "wef-infancia-ia",
+   "seccion": "biblioteca",
+   "importancia": 2,
+   "grupo": "chatgpt",
+   "antetitulo": "World Economic Forum report",
+   "titular": "The World Economic Forum sets out seven practices to make AI safe for children without shutting them out of learning",
+   "entradilla": "A September 2026 document from the Global Coalition for Digital Safety takes children’s well-being, and not merely the absence of incidents, as its goal, and proposes practices for those who design AI and incentives to ensure they are followed.",
+   "cuerpo": [
+    "“Children’s Safety and Well-Being in the Age of AI: Best Practices and Incentives” is a World Economic Forum (WEF) white paper dated September 2026. It stems from the Global Coalition for Digital Safety, a Forum initiative, and the foreword is signed by Agustina Callegari, head of technology governance initiatives, and Cathy Li, head of the Centre for AI Excellence. The disclaimer explains that the conclusions are the product of a collaborative process and do not necessarily represent the views of the Forum or its members, and that generative AI tools were used to support drafting, with review by the authors.",
+    "It is not a classroom guide. It is aimed at those who shape children’s experience of AI: developers and model providers, app stores, regulators, families and also educators. It defines a “child” as anyone under 18, in line with the Convention on the Rights of the Child, and warns that this is a legal category and not a developmental profile. Hence its central thesis: there is no model that fits every case (“There is no one-size-fits-all model”), and the response cannot be reduced to blanket bans or age barriers.",
+    "The document argues that age alone does not make a service safe. Age verification is useful for applying differentiated safeguards, but it does not determine maturity, moderation or redress for harm. Nor does it accept that broad restrictions are free of cost: they can block benefits, reduce opportunities to acquire skills and push children towards less controlled services. It also points out that generative and agentic AI change the nature of the interaction, because they can sustain continuous exchanges, remember, personalise and act autonomously, and that humanlike language can lead minors to overestimate the system’s understanding or care.",
+    "The seven practices it proposes for organisations are: design for safety, age and development; encourage beneficial use while preserving one’s own judgement and human relationships; prevent harmful content, conduct and interactions, including child sexual exploitation and AI-mediated manipulation; protect privacy, dignity and informed understanding; strengthen learning, resilience and critical thinking; establish accountability, human oversight and continuous improvement; and promote inclusion, child participation and shared responsibility. Among the controls it mentions for minors are reducing, pausing or switching off an AI feature, declining memory or the reuse of conversations, and asking for a different explanation.",
+    "For education, its idea of learning is of particular interest: exposure does not create competence, and the use of AI “should not systematically displace the effort, feedback, discussion, play and social learning through which children build durable knowledge and skills”. It also argues that the test of a tool is relational: whether it helps the young person return to people, activities and decisions with more confidence, or whether its design prioritises itself as the preferred relationship.",
+    "The third part, on incentives, is what sets the document apart. It starts from the premise that protection will not be implemented consistently if it is costly or unprofitable, and proposes a portfolio of measures: comparable safety reports, procurement and distribution requirements, financial and insurance signals, shared testing infrastructure, stronger government capacity, safe channels for responsible disclosure and internal accountability tied to measurable outcomes for children. The authors acknowledge that this is a shared foundation and not a closed technical standard, and that the evidence on medium- and long-term effects is still limited.",
+    "In the library it is thematically related to the report for UNESCO on the right age for AI ([our article](https://t.me/ChatGPTedu/21753/53434)) and to the narrative review “Inteligencia artificial y derechos del niño” (“Artificial intelligence and children’s rights”) ([in the library](https://t.me/ChatGPTedu/21753/52981)). A teacher or school leadership team can use it as a checklist of criteria when evaluating or procuring tools: what controls students have, what data is kept, what happens when something goes wrong. It is best to start with the introduction and the first chapter (pages 5 to 10), which define the aim and the challenges, and continue with the section on learning and critical thinking in the second (page 16)."
+   ],
+   "documento": {
+    "titulo": "Children's Safety and Well-Being in the Age of AI: Best Practices and Incentives",
+    "autoria": "World Economic Forum (Global Coalition for Digital Safety)",
+    "anyo": "2026",
+    "idioma": "English",
+    "licencia": "© 2026 World Economic Forum. All rights reserved",
+    "url": "https://reports.weforum.org/docs/WEF_Childrens_Safety_and_WellBeing_in_the_Age_of_AI_2026.pdf"
+   },
+   "fuentes": [
+    {
+     "titulo": "Children's Safety and Well-Being in the Age of AI: Best Practices and Incentives (PDF, WEF)",
+     "url": "https://reports.weforum.org/docs/WEF_Childrens_Safety_and_WellBeing_in_the_Age_of_AI_2026.pdf"
+    },
+    {
+     "titulo": "Publication page at the WEF",
+     "url": "https://www.weforum.org/publications/childrens-safety-and-well-being-in-the-age-of-ai-best-practices-and-incentives/"
+    },
+    {
+     "titulo": "Library message 53434",
+     "url": "https://t.me/ChatGPTedu/21753/53434"
+    },
+    {
+     "titulo": "Library message 52981",
+     "url": "https://t.me/ChatGPTedu/21753/52981"
+    }
+   ],
+   "mensaje": {
+    "grupo": "chatgpt",
+    "id": 53435
+   },
+   "comprobado": "En el repaso se abrió con WebFetch el PDF oficial en reports.weforum.org y se leyeron las páginas 1-12 y 16-22 (portada, índice, aviso legal, prólogo, resumen ejecutivo, introducción, capítulo 1 completo, inicio del 2, apartados 2.5 a 2.7, capítulo 3 y conclusión). Se confirmaron autoría, fecha, firmantes del prólogo, definición de niño, las siete prácticas, la lista de incentivos, las capacidades de control (p. 7), los límites de las prohibiciones y de la verificación de edad (p. 8), el carácter relacional de la prueba (p. 7), el reconocimiento de base compartida (p. 3) y las dos citas literales (pp. 5 y 6). No se leyeron las páginas 13-15. La página de la publicación en weforum.org devolvió 403 en el repaso. Licencia: solo el aviso de copyright de la página 2. El mensaje 52981 existe en la lista de la biblioteca; su contenido no se abrió.",
+   "ilustracion": "Esquema en tres niveles: arriba un objetivo («bienestar infantil»), en medio siete casillas con las prácticas, y abajo una base con los siete incentivos (informes comparables, contratación, finanzas y seguros, pruebas compartidas, capacidad pública, divulgación segura, responsabilidad interna).",
+   "ilustracion_alt": "A schematic temple: the pediment reads “Child well-being”; below it, “Seven practices”, seven columns, and resting on a slab, “Seven incentives”, seven blocks with icons (report, contract, coin, flask, public building, padlock and cycle) holding it up."
+  },
+  {
+   "id": "cat-orientacions-ia",
+   "seccion": "biblioteca",
+   "importancia": 3,
+   "grupo": "chatgpt",
+   "antetitulo": "Official Catalan guide",
+   "titular": "Catalonia sets out 45 guidelines on which uses of AI to promote and which to limit in schools",
+   "entradilla": "The Department of Education and Vocational Training publishes a guide in September 2026 that advises against autonomous use of general-purpose AI by under-14s, grading with AI and AI-text detectors.",
+   "cuerpo": [
+    "The Department of Education and Vocational Training of the Generalitat de Catalunya published in September 2026, as a first edition, the *Orientacions per a l’ús de la intel·ligència artificial als centres educatius* (guidelines for the use of artificial intelligence in schools), drawn up by its Directorate-General for Curriculum and Vocational Development. It updates the 2024 document *La intel·ligència artificial en l’educació*. It was written by an internal working group between April and June 2026 and reviewed by a group of experts from the administration, universities, the inspectorate, data protection, school leadership and teaching. It runs to about seventy pages. The text itself states that AI models were used to review drafts and to write the examples in an annex.",
+    "The guide starts from the premise that students already use AI to study and do homework. In its words, the question is “not whether AI should enter classrooms or not, but how we want it to enter”. It justifies its caution with five reasons: AI solves a good part of the activities, AI-text detectors do not offer sufficient guarantees (especially outside English), general-purpose AI is not designed for learning, the available evidence is limited but points to risks if it is used without guidance, and there is no European public AI of reference, while US legislation (CLOUD Act, FISA) casts doubt on the real protection of data.",
+    "At its core are 45 numbered guidelines (OIA-01 to OIA-45), organised by area: school, teachers, educational services, support staff and families. Students under 14 should not use general-purpose AI autonomously; if it is used in class, the teacher operates it. Between 14 and 18, family authorisation is recommended, even though the legal basis is the public-interest mission, and direct interaction by students is placed from the second term of the third year of ESO (compulsory secondary education) onwards. It also asks for training and persistent memory to be switched off, agentic AI to be avoided, no personal data to be entered, and each school to approve a framework for use with a register of tools.",
+    "The pedagogical part is the most useful for the classroom. It asks teachers to keep the lead, verify what AI generates, declare their own use on a common scale and design activities that require interpretation and a personal position. In assessment, AI must not grade or determine the level of attainment, as this is considered a high-risk use under the European AI Act; it may help to create instruments, mark unambiguous answers or detect common errors using pseudonymised data. On detectors it concludes that they are inadvisable: “the best detectors are still people”.",
+    "Within the library, the text draws on frameworks already covered: [DigComp 3.0](https://t.me/ChatGPTedu/21753/42900), the [UNESCO competency framework for teachers](https://t.me/ChatGPTedu/21753/36905) and the [department’s own document on teachers’ digital competence in AI](https://t.me/ChatGPTedu/21753/44426), whose basic stage it requires as a precondition. It cites the 2024 INTEF guide as state-level guidance; the library has its [version 2](https://t.me/ChatGPTedu/21753/52295). The age of use is also the subject of the document on [whether there is a right age for using AI in education](https://t.me/ChatGPTedu/21753/53434). The guide [Tecnologies educatives al servei de l’aprenentatge: Educació bàsica](https://t.me/ChatGPTedu/21753/53646), published the same month, cites it in its bibliography.",
+    "It should be read with its limits in mind: these are guidelines, not rules, and each school must adapt them; several sections refer to external pages that are not in the PDF; and the text admits that the evidence is limited and the technology changes quickly. What can be transferred outside Catalonia are the criteria, not the procedures. A good starting point is annexes 1 to 3, one-page infographics with general guidelines, for students and for families, and then guidelines OIA-28 and OIA-36 to OIA-38 on pedagogical use and assessment. Annex 4 offers four analogies (basketball, dance, rap, video games) to explain why learning is still worthwhile."
+   ],
+   "documento": {
+    "titulo": "Orientacions per a l’ús de la intel·ligència artificial als centres educatius",
+    "autoria": "Generalitat de Catalunya, Departament d’Educació i Formació Professional (Direcció General de Currículum i Desenvolupament Professional)",
+    "anyo": "2026",
+    "idioma": "Catalan",
+    "licencia": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "url": ""
+   },
+   "fuentes": [
+    {
+     "titulo": "Orientacions per a l’ús de la intel·ligència artificial als centres educatius (library message, in Catalan)",
+     "url": "https://t.me/ChatGPTedu/21753/53605"
+    },
+    {
+     "titulo": "DigComp 3.0 (library)",
+     "url": "https://t.me/ChatGPTedu/21753/42900"
+    },
+    {
+     "titulo": "AI Competency Framework for Teachers (library)",
+     "url": "https://t.me/ChatGPTedu/21753/36905"
+    },
+    {
+     "titulo": "Teachers’ digital competence in AI (library, in Catalan)",
+     "url": "https://t.me/ChatGPTedu/21753/44426"
+    },
+    {
+     "titulo": "Guide on the use of AI in education, v.2 (library, in Spanish)",
+     "url": "https://t.me/ChatGPTedu/21753/52295"
+    },
+    {
+     "titulo": "Is there a right age for children and adolescents to use AI in education? (library, in Spanish)",
+     "url": "https://t.me/ChatGPTedu/21753/53434"
+    },
+    {
+     "titulo": "Tecnologies educatives al servei de l’aprenentatge: Educació bàsica (library, in Catalan)",
+     "url": "https://t.me/ChatGPTedu/21753/53646"
+    }
+   ],
+   "mensaje": {
+    "grupo": "chatgpt",
+    "id": 53605
+   },
+   "comprobado": "Revisión: releído el texto completo del PDF tal como consta en la biblioteca (portada, sumario, OIA-01 a OIA-45, glosario, referencias y anexos 1 a 5) y contrastadas con él las cifras, fechas, autoría, licencia y las dos citas, que son literales. Fuente oficial: hdl.handle.net/20.500.12694/7879 redirige a repositori.educacio.gencat.cat, que devuelve «Access Denied», y WebSearch no localiza la edición de 2026 (solo la de 2024); documento.url queda vacío. Los enlaces a otros documentos de la biblioteca existen en la lista de la entrada y sus títulos coinciden; no se leyeron esos documentos, por lo que solo se afirma lo que consta en las referencias de este texto (cita la guía del INTEF de 2024, no la v.2) y la coincidencia de tema con el de la edad.",
+   "ilustracion": "Esquema en tres franjas de edad: menores de 14 años (la IA general la opera el docente, el alumnado observa), de 14 a 18 años con autorización familiar recomendada y actividades directas desde el segundo trimestre de 3.º de ESO, y debajo un semáforo de usos en evaluación: permitido (crear instrumentos, corregir respuestas cerradas), prohibido (calificar, detectores).",
+   "ilustracion_alt": "Diagram in two columns: on the left, “Under 14”, a teacher operates the screen while students look on; on the right, “14 to 18”, a student uses the screen with a family authorisation form. Below, uses in assessment: “Permitted”, creating instruments and marking closed answers, and “Prohibited”, grading and using detectors.",
+   "repaso": [
+    "Anexos 1 a 3: el borrador decía «para docentes, alumnado y familias»; el anexo 1 es de orientaciones generales, no solo para docentes. Corregido.",
+    "Relación con el INTEF: el borrador decía que «comparte tema» con la guía v.2 sin base; el texto solo cita la edición de 2024 como orientación estatal. Reformulado, y la relación con el documento de la edad se limita al tema.",
+    "Actualizado `comprobado` (fuente oficial inaccesible; url vacía confirmada). El resto (autoría, fechas, cifras, citas, enlaces, sin nombrar a quien lo subió) verificado sin cambios."
+   ]
+  },
+  {
+   "id": "cat-tecnologies-educatives",
+   "seccion": "biblioteca",
+   "importancia": 2,
+   "grupo": "chatgpt",
+   "antetitulo": "Official Catalan guide",
+   "titular": "Catalonia offers criteria for deciding when a technology adds value in primary and ESO, and places AI in the fourth year",
+   "entradilla": "The Department of Education’s guide puts technology at the service of learning, with decision tables, progression by cycle, digital well-being and criteria for selecting resources.",
+   "cuerpo": [
+    "The Department of Education and Vocational Training of the Generalitat de Catalunya published in September 2026, as a first edition, *Tecnologies educatives al servei de l’aprenentatge: Educació bàsica* (educational technologies at the service of learning: basic education), prepared by its Directorate-General for Curriculum and Vocational Development. It runs to about thirty pages in Catalan under a CC BY 4.0 licence and is aimed at teaching teams in primary and ESO (compulsory secondary education). It is not an AI guide: it is a general framework for the pedagogical use of technology, set in the context of the Pla de digitalització responsable (responsible digitalisation plan) and the Catalan curriculum (Decree 175/2022). AI is dealt with mainly in one section, the one devoted to the fourth year of ESO.",
+    "The starting point is that digital competence is transversal: “Digital competence is a transversal competence that contributes to the attainment of all competences”. The guide breaks it down into five specific competences: information literacy, content creation, online participation and collaboration, safe, healthy and responsible use, and development of digital solutions. It insists that they are not independent blocks, and gives the example of an investigation that can activate critical searching, writing a report, collaborative work, citing sources and data protection all at once.",
+    "The most useful part is the table of pedagogical criteria, which turns nine criteria into decision questions: what learning is to be promoted, what the technology makes possible that would be difficult, less rich or less inclusive without it, whether it makes the process visible and not just the product, how it supports collaboration, what barriers to access it reduces, what risks and screen time need to be managed, and what evidence will show what has been learnt. A second table describes eight learning processes (researching, representing thinking, creating, collaborating, personalising, programming, documenting, taking part as a digital citizen) and the value technology adds to each. The conclusion sums it up: “The fundamental criterion is to use technology with educational quality.”",
+    "Progression by stage is gradual. In the first cycle of primary, use should be occasional, guided and brief, and throughout the stage it should not replace reading, handwriting, arithmetic, conversation or play; in the sixth year, specific attention is called for at the end of the stage. In ESO, real, interdisciplinary problems are set, and the guide states that the greatest degree of autonomy requires one device per student, in continuity with the model in the sixth year of primary. Each stage has a table with the degree of autonomy and sample digital practices.",
+    "In the fourth year of ESO the guide says that students can already begin to use AI tools “in accordance with the guidelines” of the department, with teacher mediation. It advises using it after students have thought through or produced a first draft, and not when it would replace the process, when evidence of independent work is needed or when students lack the prior knowledge to validate the answers. This is almost the same wording as the [Orientacions per a l’ús de la intel·ligència artificial als centres educatius](https://t.me/ChatGPTedu/21753/53605), which the bibliography cites and which also set the threshold at 14 and the second term of the third year of ESO. The text also draws on [DigComp 3.0](https://t.me/ChatGPTedu/21753/42900) for digital well-being.",
+    "The digital well-being section starts from the definition of the Council of the European Union and proposes seven dimensions (physical, cognitive, emotional, social, safety, inclusion and equity, and empowerment), each with actions for the school and the teacher. It closes with eight criteria for selecting resources, such as pedagogical relevance, accessibility, security and privacy, or quality of content. As for limits, it is general guidance: it provides no data or studies, does not recommend specific tools and leaves detailed agreements to each school. For a teacher, it is useful for using the criteria and selection tables as a checklist in a cycle meeting, and section 4.2.2 if they work with the fourth year of ESO."
+   ],
+   "documento": {
+    "titulo": "Tecnologies educatives al servei de l’aprenentatge: Educació bàsica",
+    "autoria": "Generalitat de Catalunya, Departament d’Educació i Formació Professional (Direcció General de Currículum i Desenvolupament Professional)",
+    "anyo": "2026",
+    "idioma": "Catalan",
+    "licencia": "Creative Commons Attribution 4.0 (CC BY 4.0)",
+    "url": ""
+   },
+   "fuentes": [
+    {
+     "titulo": "Tecnologies educatives al servei de l’aprenentatge: Educació bàsica (library message, in Catalan)",
+     "url": "https://t.me/ChatGPTedu/21753/53646"
+    },
+    {
+     "titulo": "Orientacions per a l’ús de la intel·ligència artificial als centres educatius (library, in Catalan)",
+     "url": "https://t.me/ChatGPTedu/21753/53605"
+    },
+    {
+     "titulo": "DigComp 3.0 (library)",
+     "url": "https://t.me/ChatGPTedu/21753/42900"
+    }
+   ],
+   "mensaje": {
+    "grupo": "chatgpt",
+    "id": 53646
+   },
+   "comprobado": "Revisión: releído el texto completo del PDF tal como consta en la biblioteca (sumario, secciones 1 a 7 y bibliografía) y contrastadas las cifras (5 competencias, 9 criterios, 8 procesos, 7 dimensiones, 8 criterios de selección), las tres citas (literales) y el contenido de 4.2.2. Fuente oficial: no la localiza WebSearch y el repositorio del departamento devuelve «Access Denied»; documento.url queda vacío. Los enlaces a la biblioteca existen en la lista de la entrada; no se leyó DigComp 3.0, la relación se apoya en que este texto lo cita. La comparación con la otra guía se hizo con los dos textos de la entrada (la bibliografía de esta cita las Orientacions de 2026).",
+   "ilustracion": "Esquema de escalera con cinco peldaños de autonomía creciente (1.º-2.º, 3.º-4.º, 5.º-6.º de primaria, 1.º-3.º de ESO, 4.º de ESO) y, a un lado, el filtro de decisión: finalidad, valor añadido, proceso, colaboración, inclusión, seguridad y evidencias, con la IA señalada solo en el último peldaño.",
+   "ilustracion_alt": "A funnel with “Seven criteria” for decision-making sends an arrow towards a staircase of five steps, “Growing autonomy” for students; only the top step is highlighted: “AI in year 4” of ESO.",
+   "repaso": [
+    "Titular y párrafo inicial: «con la IA reservada a 4.º» / «la IA ocupa solo un apartado» eran más tajantes que el texto, que también menciona el uso responsable de la IA en la ESO en general (4.2). Suavizados.",
+    "«Dirigidas a equipos docentes y directivos»: el texto solo nombra a los equipos docentes. Corregido.",
+    "Actualizado `comprobado`. El resto (cifras, citas, enlaces, sin nombrar a quien lo subió) verificado sin cambios."
+   ]
+  }
+ ],
+ "descartado": [
+  "Mensaje 53420 (Inteligencia Artificial Generativa en la Educación Superior, Espinoza-Mina y Colina-Vargas): la página del editor solo muestra el título y un «Manuscrito 123.pdf», sin autores, año, licencia ni datos; la búsqueda no localiza el estudio. Todas las cifras (474 estudiantes, 88,1 %, 78 %) proceden únicamente de la publicación del grupo y no se pueden contrastar con la fuente, así que no hay base para un artículo.",
+  "Mensaje 53421 (Manual urgente sobre IA en el aula, Ferrarelli y Corvalán, CESDI-UNSAM): la entrada solo trae un enlace a Google Drive, que no es fuente oficial, y la ficha no describe el contenido. La búsqueda solo confirma título y autoría por una publicación en LinkedIn. Sin acceso al texto ni a la página del CESDI-UNSAM, no se puede explicar qué propone.",
+  "Mensaje 53605 (Orientacions per a l'ús de la intel·ligència artificial als centres educatius, Generalitat de Catalunya): no se encontró el documento en su fuente oficial; la búsqueda solo devuelve la guía de 2024 y menciones a una actualización prevista. Con el índice y la ficha de la entrada no se alcanza un artículo que diga algo más que la ficha. Pendiente de localizar el PDF en educacio.gencat.cat.",
+  "Mensaje 53646 (Tecnologies educatives al servei de l'aprenentatge: Educació bàsica, Generalitat de Catalunya): no se pudo abrir la fuente oficial (el repositorio devolvió acceso denegado) y las noticias del Departament hablan de «Tecnologies digitals al servei de l'aprenentatge», con otra fecha y sin confirmar que sea el mismo texto. La entrada solo aporta el índice y la introducción. Sin la fuente no hay artículo digno; pendiente de localizar."
+ ]
+}
