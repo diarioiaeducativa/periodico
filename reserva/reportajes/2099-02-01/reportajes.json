@@ -35,7 +35,7 @@
     {
       "ladillo": "Lo que recomiendan las guías",
       "parrafos": [
-        "Cataluña tendría el criterio más detallado, aunque no se ha podido contrastar en una web oficial. Según la [reseña del diario en su Biblioteca](pieza:2026-11-02/cat-orientacions-ia), hecha sobre el documento compartido en la Biblioteca digital, las *Orientacions per a l’ús de la intel·ligència artificial als centres educatius* se publicaron en septiembre de 2026 y establecen que el alumnado menor de 14 años no debería usar IA de propósito general de forma autónoma: si se trabaja con ella, la maneja el docente. Entre los 14 y los 18 años recomiendan la autorización de las familias aunque la base jurídica sea la misión de interés público, y sitúan la interacción directa del alumnado a partir del segundo trimestre de 3.º de ESO. La [página del proyecto en la XTEC](https://projectes.xtec.cat/ia/orientacions-per-lus-de-la-ia-en-educacio/) todavía presentaba el documento como «en desenvolupament» a 6 de noviembre de 2026.",
+        "Cataluña tiene el criterio más detallado. Sus *Orientacions per a l’ús de la intel·ligència artificial als centres educatius*, que el Departament d’Educació i Formació Professional publicó en septiembre de 2026 ([reseña del diario en su Biblioteca](pieza:2026-11-02/cat-orientacions-ia)), establecen que el alumnado menor de 14 años no debería usar IA de propósito general de forma autónoma: si se trabaja con ella, la maneja el docente. Entre los 14 y los 18 años recomiendan la autorización de las familias aunque la base jurídica sea la misión de interés público, y sitúan la interacción directa del alumnado a partir del segundo trimestre de 3.º de ESO.",
         "La [guía del Gobierno Vasco sobre el uso de la IA en educación](https://www.euskadi.eus/contenidos/documentacion/inn_doc_adi_artif/es_def/adjuntos/Guia-uso-de-IA-en-educacion_Euskadi.pdf) indica en su introducción que el límite de edad para usar chatbots es de 13 años, de modo que los menores de esa edad no pueden usarlos. Canarias no fija edades, pero sus [recomendaciones del 13 de enero de 2026](https://www3.gobiernodecanarias.org/medusa/ecoescuela/ia/2026/01/13/recomendacionesusoia/) presentan, como herramientas de IA del entorno educativo de Google, Gemini para el profesorado y NotebookLM para profesorado y alumnado. Para este reportaje no se han podido revisar las guías del resto de comunidades.",
         "En el ámbito estatal, la [Guía sobre el uso de la inteligencia artificial en el ámbito educativo](https://intef.es/wp-content/uploads/2026/09/ACTUALIZACION-GUIA-DE-LA-IA-DEF-1-SEPT-2026-Publicable-v5-2.pdf) del INTEF, versión 2.0, [publicada el 8 de septiembre de 2026](https://intef.es/Noticias/nueva-version-de-la-guia-sobre-el-uso-de-la-inteligencia-artificial-en-el-ambito-educativo/), pide priorizar las herramientas autorizadas o validadas por las administraciones educativas y reforzar la alfabetización en IA del alumnado."
       ]
@@ -65,39 +65,125 @@
     "La UNESCO y el Foro Económico Mundial coinciden en que la edad, por sí sola, no basta: importan la finalidad, las condiciones y la evidencia."
   ],
   "relacionadas": [
-    {"fecha": "2026-11-03", "id": "google-ia-cuentas-escolares"}
+    {
+      "fecha": "2026-11-03",
+      "id": "google-ia-cuentas-escolares"
+    }
   ],
   "fuentes": [
-    {"titulo": "Condiciones de uso de Europa (OpenAI)", "url": "https://openai.com/policies/eu-terms-of-use/"},
-    {"titulo": "¿Es ChatGPT seguro para todas las edades? (OpenAI, centro de ayuda)", "url": "https://help.openai.com/es-es/articles/8313401-es-chatgpt-seguro-para-todas-las-edades"},
-    {"titulo": "Requisitos de edad para gestionar una cuenta de Google (Google, centro de ayuda)", "url": "https://support.google.com/accounts/answer/1350409?hl=es"},
-    {"titulo": "Qué necesitas para iniciar sesión en las aplicaciones de Gemini (Google)", "url": "https://support.google.com/gemini/answer/13278668?hl=es"},
-    {"titulo": "Guiar la experiencia de tu hijo/a con las aplicaciones de Gemini (Google)", "url": "https://support.google.com/gemini/answer/16109150?hl=es"},
-    {"titulo": "Gestionar tu plan de IA de Google desde las aplicaciones de Gemini (Google)", "url": "https://support.google.com/gemini/answer/14517446?hl=es"},
-    {"titulo": "Guía de inicio rápido de Gemini y Gemini Notebook para Education (Google Workspace, 28-10-2026)", "url": "https://knowledge.workspace.google.com/admin/getting-started/editions/quickstart-guide-to-gemini-and-gemini-notebook-for-education?hl=es"},
-    {"titulo": "Controlar el acceso a los servicios de Google por edad (Google Workspace)", "url": "https://knowledge.workspace.google.com/admin/getting-started/editions/control-access-to-google-services-by-age?hl=es"},
-    {"titulo": "Condiciones de uso de Microsoft Copilot para particulares (Microsoft, 18-08-2026)", "url": "https://www.microsoft.com/es-es/microsoft-copilot/for-individuals/termsofuse"},
-    {"titulo": "Microsoft 365 Copilot Chat for students 13+ (Microsoft Education Blog, agosto de 2025)", "url": "https://techcommunity.microsoft.com/blog/educationblog/microsoft-365-copilot-chat-for-students-13/4440370"},
-    {"titulo": "Consumer Terms of Service (Anthropic, 8-10-2025)", "url": "https://www.anthropic.com/legal/consumer-terms"},
-    {"titulo": "Ley Orgánica 3/2018, de Protección de Datos Personales y garantía de los derechos digitales, artículo 7 (BOE)", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673#a7"},
-    {"titulo": "¿Cuál es la edad para que los menores puedan prestar consentimiento para tratar sus datos personales? (AEPD)", "url": "https://www.aepd.es/preguntas-frecuentes/10-menores-y-educacion/FAQ-1001-cual-es-la-edad-para-que-los-menores-puedan-prestar-consentimiento-para-tratar-sus-datos-personales"},
-    {"titulo": "¿Pueden los centros educativos impartir clases y realizar exámenes online sin el consentimiento de los interesados? (AEPD)", "url": "https://www.aepd.es/preguntas-frecuentes/10-menores-y-educacion/FAQ-1009-pueden-los-centros-educativos-impartir-clases-y-realizar-examenes-online-sin-el-consentimiento-de-los-interesados"},
-    {"titulo": "Proyecto de Ley Orgánica para la protección de las personas menores de edad en los entornos digitales (BOCG, Congreso, 121/000052)", "url": "https://www.congreso.es/public_oficiales/L15/CONG/BOCG/A/BOCG-15-A-52-1.PDF"},
-    {"titulo": "Ficha de tramitación del proyecto 121/000052 (Congreso de los Diputados)", "url": "https://www.congreso.es/es/proyectos-de-ley?p_p_id=iniciativas&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_iniciativas_mode=mostrarDetalle&_iniciativas_legislatura=XV&_iniciativas_id=121%2F000052"},
-    {"titulo": "Reglamento (UE) 2024/1689 de Inteligencia Artificial (DOUE, en el BOE)", "url": "https://www.boe.es/buscar/doc.php?id=DOUE-L-2024-81079"},
-    {"titulo": "Ley de IA: marco regulador (Comisión Europea, actualizada el 19-10-2026)", "url": "https://digital-strategy.ec.europa.eu/es/policies/regulatory-framework-ai"},
-    {"titulo": "Orientacions per a l’ús de la intel·ligència artificial als centres educatius (Generalitat de Catalunya, 2026; documento en la Biblioteca digital, sin fuente oficial localizada)", "url": "https://t.me/ChatGPTedu/21753/53605"},
-    {"titulo": "Orientacions per a l’ús de la IA en educació (XTEC, Departament d’Educació)", "url": "https://projectes.xtec.cat/ia/orientacions-per-lus-de-la-ia-en-educacio/"},
-    {"titulo": "Guía para el uso de las inteligencias artificiales en el ámbito educativo (Departamento de Educación del Gobierno Vasco)", "url": "https://www.euskadi.eus/contenidos/documentacion/inn_doc_adi_artif/es_def/adjuntos/Guia-uso-de-IA-en-educacion_Euskadi.pdf"},
-    {"titulo": "Recomendaciones de uso de la IA (Consejería de Educación del Gobierno de Canarias, 13-01-2026)", "url": "https://www3.gobiernodecanarias.org/medusa/ecoescuela/ia/2026/01/13/recomendacionesusoia/"},
-    {"titulo": "Guía sobre el uso de la inteligencia artificial en el ámbito educativo, versión 2.0 (INTEF, septiembre de 2026)", "url": "https://intef.es/wp-content/uploads/2026/09/ACTUALIZACION-GUIA-DE-LA-IA-DEF-1-SEPT-2026-Publicable-v5-2.pdf"},
-    {"titulo": "Nueva versión de la «Guía sobre el uso de la inteligencia artificial en el ámbito educativo» (INTEF, 08-09-2026)", "url": "https://intef.es/Noticias/nueva-version-de-la-guia-sobre-el-uso-de-la-inteligencia-artificial-en-el-ambito-educativo/"},
-    {"titulo": "UNESCO: Governments must quickly regulate Generative AI in schools (UNESCO, 07-09-2023)", "url": "https://www.unesco.org/en/articles/unesco-governments-must-quickly-regulate-generative-ai-schools"},
-    {"titulo": "Is there a right age for AI in education? (Sonia Livingstone, Media@LSE, 22-09-2026)", "url": "https://blogs.lse.ac.uk/medialse/2026/09/22/is-there-a-right-age-for-ai-in-education/"},
-    {"titulo": "Children's Safety and Well-Being in the Age of AI: Best Practices and Incentives (Foro Económico Mundial, septiembre de 2026)", "url": "https://reports.weforum.org/docs/WEF_Childrens_Safety_and_WellBeing_in_the_Age_of_AI_2026.pdf"},
-    {"titulo": "Google says that students in schools that ban AI won't have access to Search (Engadget, 03-11-2026)", "url": "https://www.engadget.com/2305432/google-says-that-students-in-schools-that-ban-ai-wont-have-access-to-search/"}
+    {
+      "titulo": "Condiciones de uso de Europa (OpenAI)",
+      "url": "https://openai.com/policies/eu-terms-of-use/"
+    },
+    {
+      "titulo": "¿Es ChatGPT seguro para todas las edades? (OpenAI, centro de ayuda)",
+      "url": "https://help.openai.com/es-es/articles/8313401-es-chatgpt-seguro-para-todas-las-edades"
+    },
+    {
+      "titulo": "Requisitos de edad para gestionar una cuenta de Google (Google, centro de ayuda)",
+      "url": "https://support.google.com/accounts/answer/1350409?hl=es"
+    },
+    {
+      "titulo": "Qué necesitas para iniciar sesión en las aplicaciones de Gemini (Google)",
+      "url": "https://support.google.com/gemini/answer/13278668?hl=es"
+    },
+    {
+      "titulo": "Guiar la experiencia de tu hijo/a con las aplicaciones de Gemini (Google)",
+      "url": "https://support.google.com/gemini/answer/16109150?hl=es"
+    },
+    {
+      "titulo": "Gestionar tu plan de IA de Google desde las aplicaciones de Gemini (Google)",
+      "url": "https://support.google.com/gemini/answer/14517446?hl=es"
+    },
+    {
+      "titulo": "Guía de inicio rápido de Gemini y Gemini Notebook para Education (Google Workspace, 28-10-2026)",
+      "url": "https://knowledge.workspace.google.com/admin/getting-started/editions/quickstart-guide-to-gemini-and-gemini-notebook-for-education?hl=es"
+    },
+    {
+      "titulo": "Controlar el acceso a los servicios de Google por edad (Google Workspace)",
+      "url": "https://knowledge.workspace.google.com/admin/getting-started/editions/control-access-to-google-services-by-age?hl=es"
+    },
+    {
+      "titulo": "Condiciones de uso de Microsoft Copilot para particulares (Microsoft, 18-08-2026)",
+      "url": "https://www.microsoft.com/es-es/microsoft-copilot/for-individuals/termsofuse"
+    },
+    {
+      "titulo": "Microsoft 365 Copilot Chat for students 13+ (Microsoft Education Blog, agosto de 2025)",
+      "url": "https://techcommunity.microsoft.com/blog/educationblog/microsoft-365-copilot-chat-for-students-13/4440370"
+    },
+    {
+      "titulo": "Consumer Terms of Service (Anthropic, 8-10-2025)",
+      "url": "https://www.anthropic.com/legal/consumer-terms"
+    },
+    {
+      "titulo": "Ley Orgánica 3/2018, de Protección de Datos Personales y garantía de los derechos digitales, artículo 7 (BOE)",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673#a7"
+    },
+    {
+      "titulo": "¿Cuál es la edad para que los menores puedan prestar consentimiento para tratar sus datos personales? (AEPD)",
+      "url": "https://www.aepd.es/preguntas-frecuentes/10-menores-y-educacion/FAQ-1001-cual-es-la-edad-para-que-los-menores-puedan-prestar-consentimiento-para-tratar-sus-datos-personales"
+    },
+    {
+      "titulo": "¿Pueden los centros educativos impartir clases y realizar exámenes online sin el consentimiento de los interesados? (AEPD)",
+      "url": "https://www.aepd.es/preguntas-frecuentes/10-menores-y-educacion/FAQ-1009-pueden-los-centros-educativos-impartir-clases-y-realizar-examenes-online-sin-el-consentimiento-de-los-interesados"
+    },
+    {
+      "titulo": "Proyecto de Ley Orgánica para la protección de las personas menores de edad en los entornos digitales (BOCG, Congreso, 121/000052)",
+      "url": "https://www.congreso.es/public_oficiales/L15/CONG/BOCG/A/BOCG-15-A-52-1.PDF"
+    },
+    {
+      "titulo": "Ficha de tramitación del proyecto 121/000052 (Congreso de los Diputados)",
+      "url": "https://www.congreso.es/es/proyectos-de-ley?p_p_id=iniciativas&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_iniciativas_mode=mostrarDetalle&_iniciativas_legislatura=XV&_iniciativas_id=121%2F000052"
+    },
+    {
+      "titulo": "Reglamento (UE) 2024/1689 de Inteligencia Artificial (DOUE, en el BOE)",
+      "url": "https://www.boe.es/buscar/doc.php?id=DOUE-L-2024-81079"
+    },
+    {
+      "titulo": "Ley de IA: marco regulador (Comisión Europea, actualizada el 19-10-2026)",
+      "url": "https://digital-strategy.ec.europa.eu/es/policies/regulatory-framework-ai"
+    },
+    {
+      "titulo": "Orientacions per a l’ús de la intel·ligència artificial als centres educatius (Generalitat de Catalunya, 2026)",
+      "url": "https://t.me/ChatGPTedu/21753/53605"
+    },
+    {
+      "titulo": "Guía para el uso de las inteligencias artificiales en el ámbito educativo (Departamento de Educación del Gobierno Vasco)",
+      "url": "https://www.euskadi.eus/contenidos/documentacion/inn_doc_adi_artif/es_def/adjuntos/Guia-uso-de-IA-en-educacion_Euskadi.pdf"
+    },
+    {
+      "titulo": "Recomendaciones de uso de la IA (Consejería de Educación del Gobierno de Canarias, 13-01-2026)",
+      "url": "https://www3.gobiernodecanarias.org/medusa/ecoescuela/ia/2026/01/13/recomendacionesusoia/"
+    },
+    {
+      "titulo": "Guía sobre el uso de la inteligencia artificial en el ámbito educativo, versión 2.0 (INTEF, septiembre de 2026)",
+      "url": "https://intef.es/wp-content/uploads/2026/09/ACTUALIZACION-GUIA-DE-LA-IA-DEF-1-SEPT-2026-Publicable-v5-2.pdf"
+    },
+    {
+      "titulo": "Nueva versión de la «Guía sobre el uso de la inteligencia artificial en el ámbito educativo» (INTEF, 08-09-2026)",
+      "url": "https://intef.es/Noticias/nueva-version-de-la-guia-sobre-el-uso-de-la-inteligencia-artificial-en-el-ambito-educativo/"
+    },
+    {
+      "titulo": "UNESCO: Governments must quickly regulate Generative AI in schools (UNESCO, 07-09-2023)",
+      "url": "https://www.unesco.org/en/articles/unesco-governments-must-quickly-regulate-generative-ai-schools"
+    },
+    {
+      "titulo": "Is there a right age for AI in education? (Sonia Livingstone, Media@LSE, 22-09-2026)",
+      "url": "https://blogs.lse.ac.uk/medialse/2026/09/22/is-there-a-right-age-for-ai-in-education/"
+    },
+    {
+      "titulo": "Children's Safety and Well-Being in the Age of AI: Best Practices and Incentives (Foro Económico Mundial, septiembre de 2026)",
+      "url": "https://reports.weforum.org/docs/WEF_Childrens_Safety_and_WellBeing_in_the_Age_of_AI_2026.pdf"
+    },
+    {
+      "titulo": "Google says that students in schools that ban AI won't have access to Search (Engadget, 03-11-2026)",
+      "url": "https://www.engadget.com/2305432/google-says-that-students-in-schools-that-ban-ai-wont-have-access-to-search/"
+    }
   ],
-  "mensaje": {"grupo": "chatgpt", "id": 53933},
+  "mensaje": {
+    "grupo": "chatgpt",
+    "id": 53933
+  },
   "comprobado": "Verificador, 6-11-2026. Abiertos con WebFetch y confirmados: Google (cuenta propia en España, 14 años; Gemini 13 años o edad del país; no disponible en cuentas supervisadas del EEE; plan de pago en el EEE, mayor de 18; Workspace for Education, «Disponible para todos», acceso por el administrador, políticas más estrictas para menores de 18, sin entrenamiento, actualizada 2026-10-28; menores por defecto en primaria y secundaria sin Gemini en Classroom para crear o editar); Microsoft (Copilot particulares, 18-08-2026, 13 años o más según país, «Si eres menor de 18 años, podríamos desactivar o limitar algunas funciones»; blog de educación 6-08-2025, 13+, datos no usados para entrenar modelos fundacionales); Anthropic (18 años, 8-10-2025); AEPD FAQ 1001 (14 años, patria potestad) y FAQ 1009 (sin consentimiento en enseñanza reglada, misión de interés público, DA 23.ª LOE, DPD, medios del centro); ficha del Congreso (presentado 27-03-2025, caducado, 06-10-2026); Comisión Europea (alfabetización 2-2-2025; anexo III al 2-12-2027); Reglamento de IA (considerandos 29 y 56 en el BOE; artículo 5 y anexo III no leídos); Engadget (3-11-2026, desactivado por defecto en K-12, «in the coming months»); Canarias (13-01-2026; Gemini profesorado, NotebookLM profesorado y alumnado; sin edades); noticia del INTEF (8-09-2026, versión 2.0, alfabetización del alumnado); UNESCO 2023 (edad mínima 13); Media@LSE (autoras, variabilidad, ministerios, sobre/con IA, principio de precaución, 73 % sin muestra); XTEC («En desenvolupament», sin edades). Disolución de las Cortes: RD 806/2026 publicado en el BOE de 6-10-2026 (WebSearch). Mensaje 53933 (ChatGPTedu): existe, del 3-11-2026; es el que la pieza publicada 2026-11-03/google-ia-cuentas-escolares da como origen del tema (el mensaje es un reenvío con un enlace; no se citan mensajes de grupos en el cuerpo). NO confirmado en la página abierta: OpenAI (403 en WebFetch; las condiciones europeas y la indicación del centro de ayuda se confirman solo con los extractos oficiales que devuelve WebSearch, por eso la indicación sobre menores de 13 se da como paráfrasis y no como cita literal); el artículo del proyecto de ley que eleva a 16 años (el PDF no se pudo leer; consta en extractos de WebSearch del Ministerio de Justicia); Euskadi (PDF ilegible con WebFetch; WebSearch extrae de la introducción que el límite para chatbots es 13 años, no la frase literal anterior, que se quitó, ni lo que dice de 14 a 18); INTEF (PDF ilegible; se quitó la remisión a los 14 años, que ni la noticia ni ningún extracto confirmó; la prioridad a herramientas autorizadas o validadas consta en el reportaje verificado 2026-10-31); WEF (PDF ilegible con WebFetch; el contenido procede de la pieza verificada de la Biblioteca 2026-11-02/wef-infancia-ia, que leyó el PDF); Cataluña (sin fuente oficial localizada; WebSearch no encuentra la edición de 2026; el contenido procede de la reseña verificada 2026-11-02/cat-orientacions-ia, que leyó el texto del PDF compartido en el mensaje 53605, y se presenta como no contrastado). Enlaces pieza: las tres claves están en publicado.txt y las piezas tratan lo que se dice (debate sobre Google, orientaciones catalanas, informe UNESCO sobre la edad).",
   "ilustracion": "Infografía en tres franjas horizontales, una por regla, sobre una regla graduada de 0 a 18 años. Franja 1, «Condiciones de las empresas»: marcas en 13 (OpenAI, Microsoft, Gemini personal), 18 (Anthropic) y un tramo sombreado «todas las edades, solo con cuenta del centro» para Gemini en Workspace for Education. Franja 2, «Ley de protección de datos»: una línea en 14 años, «consentimiento propio», con la nota «en el centro, la base es la función educativa». Franja 3, «Guías educativas»: Cataluña, menos de 14 «lo maneja el docente» y de 14 a 18 «con autorización»; Euskadi, sin chatbots antes de 13. Al pie, tres preguntas que sustituyen a «¿qué edad?»: ¿para qué?, ¿con qué cuenta?, ¿quién la maneja?",
   "ilustracion_alt": "Infografía sobre una regla de edades de 0 a 18 años, con marcas en 13, 14 y 18. Primera franja, «Empresas»: una banda que cubre todas las edades, rotulada «Centro», para Gemini en cuentas educativas, y una línea desde los 13 años (OpenAI, Microsoft) hasta los 18 (Anthropic). Segunda franja, «Ley de datos»: una balanza y una línea que cambia en los 14 años, edad del consentimiento propio. Tercera franja, «Guías»: dos líneas, una con el paso de los 14 años y otra que empieza en los 13, con una cruz roja antes de esa edad. Al pie, el recuadro «¿Para qué? ¿Con qué cuenta? ¿Quién la maneja?».",
@@ -112,6 +198,7 @@
     "INTEF: quitada la remisión al umbral de 14 años (no confirmada); se mantiene la prioridad a herramientas autorizadas o validadas y la alfabetización.",
     "Consejo del DPD: «es la interlocutora» pasa a «puede asesorar», como dice la AEPD.",
     "Relacionadas: quitada familias-deberes-ia (existe, pero trata de deberes con IA, no de la edad).",
-    "Actualizado `comprobado`. WEF sin cambios, pero no reabierto por el verificador (PDF ilegible); se apoya en la pieza de la Biblioteca."
+    "Actualizado `comprobado`. WEF sin cambios, pero no reabierto por el verificador (PDF ilegible); se apoya en la pieza de la Biblioteca.",
+    "06-11-2026, revisión manual: Cataluña, sin condicional ni la nota de la XTEC; las Orientacions están publicadas (septiembre de 2026) y la página del proyecto en la XTEC está desactualizada: manda el documento publicado. Quitada la XTEC de las fuentes."
   ]
 }

@@ -35,7 +35,7 @@
     {
       "ladillo": "Gidek gomendatzen dutena",
       "parrafos": [
-        "Katalunia litzateke irizpiderik zehatzena duena, nahiz eta ezin izan den webgune ofizial batean kontrastatu. [Egunkariaren Liburutegiko aipamenaren](pieza:2026-11-02/cat-orientacions-ia) arabera, Liburutegi digitalean partekatutako dokumentuan oinarrituta egina, *Orientacions per a l’ús de la intel·ligència artificial als centres educatius* 2026ko irailean argitaratu ziren, eta ezartzen dute 14 urtetik beherako ikasleek ez luketela helburu orokorreko AA modu autonomoan erabili behar: harekin lan egiten bada, irakasleak maneiatzen du. 14 eta 18 urte artean familien baimena gomendatzen dute, nahiz eta oinarri juridikoa interes publikoko eginkizuna izan, eta ikasleen zuzeneko elkarrekintza DBHko 3. mailako bigarren hiruhilekotik aurrera kokatzen dute. [XTECeko proiektuaren orriak](https://projectes.xtec.cat/ia/orientacions-per-lus-de-la-ia-en-educacio/) dokumentua «en desenvolupament» gisa aurkezten zuen oraindik 2026ko azaroaren 6an.",
+        "Kataluniak du irizpiderik zehatzena. Bere *Orientacions per a l’ús de la intel·ligència artificial als centres educatius* agiriek, Departament d’Educació i Formació Professionalek 2026ko irailean argitaratuek ([egunkariaren Liburutegiko aipamena](pieza:2026-11-02/cat-orientacions-ia)), ezartzen dute 14 urtetik beherako ikasleek ez luketela helburu orokorreko AA modu autonomoan erabili behar: harekin lan egiten bada, irakasleak maneiatzen du. 14 eta 18 urte artean familien baimena gomendatzen dute, nahiz eta oinarri juridikoa interes publikoko eginkizuna izan, eta ikasleen zuzeneko elkarrekintza DBHko 3. mailako bigarren hiruhilekotik aurrera kokatzen dute.",
         "[Eusko Jaurlaritzaren hezkuntzan AA erabiltzeko gidak](https://www.euskadi.eus/contenidos/documentacion/inn_doc_adi_artif/es_def/adjuntos/Guia-uso-de-IA-en-educacion_Euskadi.pdf) sarreran adierazten du txatbotak erabiltzeko adin-muga 13 urtekoa dela, beraz adin horretatik beherakoek ezin dituztela erabili. Kanariek ez dituzte adinak ezartzen, baina [2026ko urtarrilaren 13ko gomendioek](https://www3.gobiernodecanarias.org/medusa/ecoescuela/ia/2026/01/13/recomendacionesusoia/) hezkuntza-ingurunean Googleren AA tresna gisa aurkezten dituzte Gemini irakasleentzat eta NotebookLM irakasle eta ikasleentzat. Erreportaje honetarako ezin izan dira gainerako erkidegoetako gidak berrikusi.",
         "Estatu mailan, INTEFen [Hezkuntza-eremuan adimen artifiziala erabiltzeko gidak](https://intef.es/wp-content/uploads/2026/09/ACTUALIZACION-GUIA-DE-LA-IA-DEF-1-SEPT-2026-Publicable-v5-2.pdf), 2.0 bertsioak, [2026ko irailaren 8an argitaratuak](https://intef.es/Noticias/nueva-version-de-la-guia-sobre-el-uso-de-la-inteligencia-artificial-en-el-ambito-educativo/), hezkuntza-administrazioek baimendu edo baliozkotutako tresnak lehenesteko eta ikasleen AA alfabetatzea indartzeko eskatzen du."
       ]
@@ -65,39 +65,125 @@
     "UNESCOk eta Munduko Ekonomia Foroak bat datoz: adinak, bakarrik, ez du aski; helburuak, baldintzek eta frogek axola dute."
   ],
   "relacionadas": [
-    {"fecha": "2026-11-03", "id": "google-ia-cuentas-escolares"}
+    {
+      "fecha": "2026-11-03",
+      "id": "google-ia-cuentas-escolares"
+    }
   ],
   "fuentes": [
-    {"titulo": "Condiciones de uso de Europa (OpenAI) (gaztelaniaz)", "url": "https://openai.com/policies/eu-terms-of-use/"},
-    {"titulo": "¿Es ChatGPT seguro para todas las edades? (OpenAI, laguntza-zentroa) (gaztelaniaz)", "url": "https://help.openai.com/es-es/articles/8313401-es-chatgpt-seguro-para-todas-las-edades"},
-    {"titulo": "Requisitos de edad para gestionar una cuenta de Google (Google, laguntza-zentroa) (gaztelaniaz)", "url": "https://support.google.com/accounts/answer/1350409?hl=es"},
-    {"titulo": "Qué necesitas para iniciar sesión en las aplicaciones de Gemini (Google) (gaztelaniaz)", "url": "https://support.google.com/gemini/answer/13278668?hl=es"},
-    {"titulo": "Guiar la experiencia de tu hijo/a con las aplicaciones de Gemini (Google) (gaztelaniaz)", "url": "https://support.google.com/gemini/answer/16109150?hl=es"},
-    {"titulo": "Gestionar tu plan de IA de Google desde las aplicaciones de Gemini (Google) (gaztelaniaz)", "url": "https://support.google.com/gemini/answer/14517446?hl=es"},
-    {"titulo": "Guía de inicio rápido de Gemini y Gemini Notebook para Education (Google Workspace, 2026-10-28) (gaztelaniaz)", "url": "https://knowledge.workspace.google.com/admin/getting-started/editions/quickstart-guide-to-gemini-and-gemini-notebook-for-education?hl=es"},
-    {"titulo": "Controlar el acceso a los servicios de Google por edad (Google Workspace) (gaztelaniaz)", "url": "https://knowledge.workspace.google.com/admin/getting-started/editions/control-access-to-google-services-by-age?hl=es"},
-    {"titulo": "Condiciones de uso de Microsoft Copilot para particulares (Microsoft, 2026-08-18) (gaztelaniaz)", "url": "https://www.microsoft.com/es-es/microsoft-copilot/for-individuals/termsofuse"},
-    {"titulo": "Microsoft 365 Copilot Chat for students 13+ (Microsoft Education Blog, 2025eko abuztua) (ingelesez)", "url": "https://techcommunity.microsoft.com/blog/educationblog/microsoft-365-copilot-chat-for-students-13/4440370"},
-    {"titulo": "Consumer Terms of Service (Anthropic, 2025-10-08) (ingelesez)", "url": "https://www.anthropic.com/legal/consumer-terms"},
-    {"titulo": "Ley Orgánica 3/2018, de Protección de Datos Personales y garantía de los derechos digitales, 7. artikulua (BOE) (gaztelaniaz)", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673#a7"},
-    {"titulo": "¿Cuál es la edad para que los menores puedan prestar consentimiento para tratar sus datos personales? (AEPD) (gaztelaniaz)", "url": "https://www.aepd.es/preguntas-frecuentes/10-menores-y-educacion/FAQ-1001-cual-es-la-edad-para-que-los-menores-puedan-prestar-consentimiento-para-tratar-sus-datos-personales"},
-    {"titulo": "¿Pueden los centros educativos impartir clases y realizar exámenes online sin el consentimiento de los interesados? (AEPD) (gaztelaniaz)", "url": "https://www.aepd.es/preguntas-frecuentes/10-menores-y-educacion/FAQ-1009-pueden-los-centros-educativos-impartir-clases-y-realizar-examenes-online-sin-el-consentimiento-de-los-interesados"},
-    {"titulo": "Proyecto de Ley Orgánica para la protección de las personas menores de edad en los entornos digitales (BOCG, Kongresua, 121/000052) (gaztelaniaz)", "url": "https://www.congreso.es/public_oficiales/L15/CONG/BOCG/A/BOCG-15-A-52-1.PDF"},
-    {"titulo": "Ficha de tramitación del proyecto 121/000052 (Diputatuen Kongresua) (gaztelaniaz)", "url": "https://www.congreso.es/es/proyectos-de-ley?p_p_id=iniciativas&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_iniciativas_mode=mostrarDetalle&_iniciativas_legislatura=XV&_iniciativas_id=121%2F000052"},
-    {"titulo": "Reglamento (UE) 2024/1689 de Inteligencia Artificial (DOUE, BOEn) (gaztelaniaz)", "url": "https://www.boe.es/buscar/doc.php?id=DOUE-L-2024-81079"},
-    {"titulo": "Ley de IA: marco regulador (Europako Batzordea, 2026-10-19an eguneratua) (gaztelaniaz)", "url": "https://digital-strategy.ec.europa.eu/es/policies/regulatory-framework-ai"},
-    {"titulo": "Orientacions per a l’ús de la intel·ligència artificial als centres educatius (Kataluniako Generalitatea, 2026; Liburutegi digitaleko dokumentua, iturri ofizialik aurkitu gabe) (katalanez)", "url": "https://t.me/ChatGPTedu/21753/53605"},
-    {"titulo": "Orientacions per a l’ús de la IA en educació (XTEC, Departament d’Educació) (katalanez)", "url": "https://projectes.xtec.cat/ia/orientacions-per-lus-de-la-ia-en-educacio/"},
-    {"titulo": "Guía para el uso de las inteligencias artificiales en el ámbito educativo (Eusko Jaurlaritzako Hezkuntza Saila) (gaztelaniaz)", "url": "https://www.euskadi.eus/contenidos/documentacion/inn_doc_adi_artif/es_def/adjuntos/Guia-uso-de-IA-en-educacion_Euskadi.pdf"},
-    {"titulo": "Recomendaciones de uso de la IA (Kanarietako Gobernuaren Hezkuntza Kontseilaritza, 2026-01-13) (gaztelaniaz)", "url": "https://www3.gobiernodecanarias.org/medusa/ecoescuela/ia/2026/01/13/recomendacionesusoia/"},
-    {"titulo": "Guía sobre el uso de la inteligencia artificial en el ámbito educativo, 2.0 bertsioa (INTEF, 2026ko iraila) (gaztelaniaz)", "url": "https://intef.es/wp-content/uploads/2026/09/ACTUALIZACION-GUIA-DE-LA-IA-DEF-1-SEPT-2026-Publicable-v5-2.pdf"},
-    {"titulo": "Nueva versión de la «Guía sobre el uso de la inteligencia artificial en el ámbito educativo» (INTEF, 2026-09-08) (gaztelaniaz)", "url": "https://intef.es/Noticias/nueva-version-de-la-guia-sobre-el-uso-de-la-inteligencia-artificial-en-el-ambito-educativo/"},
-    {"titulo": "UNESCO: Governments must quickly regulate Generative AI in schools (UNESCO, 2023-09-07) (ingelesez)", "url": "https://www.unesco.org/en/articles/unesco-governments-must-quickly-regulate-generative-ai-schools"},
-    {"titulo": "Is there a right age for AI in education? (Sonia Livingstone, Media@LSE, 2026-09-22) (ingelesez)", "url": "https://blogs.lse.ac.uk/medialse/2026/09/22/is-there-a-right-age-for-ai-in-education/"},
-    {"titulo": "Children's Safety and Well-Being in the Age of AI: Best Practices and Incentives (Munduko Ekonomia Foroa, 2026ko iraila) (ingelesez)", "url": "https://reports.weforum.org/docs/WEF_Childrens_Safety_and_WellBeing_in_the_Age_of_AI_2026.pdf"},
-    {"titulo": "Google says that students in schools that ban AI won't have access to Search (Engadget, 2026-11-03) (ingelesez)", "url": "https://www.engadget.com/2305432/google-says-that-students-in-schools-that-ban-ai-wont-have-access-to-search/"}
+    {
+      "titulo": "Condiciones de uso de Europa (OpenAI) (gaztelaniaz)",
+      "url": "https://openai.com/policies/eu-terms-of-use/"
+    },
+    {
+      "titulo": "¿Es ChatGPT seguro para todas las edades? (OpenAI, laguntza-zentroa) (gaztelaniaz)",
+      "url": "https://help.openai.com/es-es/articles/8313401-es-chatgpt-seguro-para-todas-las-edades"
+    },
+    {
+      "titulo": "Requisitos de edad para gestionar una cuenta de Google (Google, laguntza-zentroa) (gaztelaniaz)",
+      "url": "https://support.google.com/accounts/answer/1350409?hl=es"
+    },
+    {
+      "titulo": "Qué necesitas para iniciar sesión en las aplicaciones de Gemini (Google) (gaztelaniaz)",
+      "url": "https://support.google.com/gemini/answer/13278668?hl=es"
+    },
+    {
+      "titulo": "Guiar la experiencia de tu hijo/a con las aplicaciones de Gemini (Google) (gaztelaniaz)",
+      "url": "https://support.google.com/gemini/answer/16109150?hl=es"
+    },
+    {
+      "titulo": "Gestionar tu plan de IA de Google desde las aplicaciones de Gemini (Google) (gaztelaniaz)",
+      "url": "https://support.google.com/gemini/answer/14517446?hl=es"
+    },
+    {
+      "titulo": "Guía de inicio rápido de Gemini y Gemini Notebook para Education (Google Workspace, 2026-10-28) (gaztelaniaz)",
+      "url": "https://knowledge.workspace.google.com/admin/getting-started/editions/quickstart-guide-to-gemini-and-gemini-notebook-for-education?hl=es"
+    },
+    {
+      "titulo": "Controlar el acceso a los servicios de Google por edad (Google Workspace) (gaztelaniaz)",
+      "url": "https://knowledge.workspace.google.com/admin/getting-started/editions/control-access-to-google-services-by-age?hl=es"
+    },
+    {
+      "titulo": "Condiciones de uso de Microsoft Copilot para particulares (Microsoft, 2026-08-18) (gaztelaniaz)",
+      "url": "https://www.microsoft.com/es-es/microsoft-copilot/for-individuals/termsofuse"
+    },
+    {
+      "titulo": "Microsoft 365 Copilot Chat for students 13+ (Microsoft Education Blog, 2025eko abuztua) (ingelesez)",
+      "url": "https://techcommunity.microsoft.com/blog/educationblog/microsoft-365-copilot-chat-for-students-13/4440370"
+    },
+    {
+      "titulo": "Consumer Terms of Service (Anthropic, 2025-10-08) (ingelesez)",
+      "url": "https://www.anthropic.com/legal/consumer-terms"
+    },
+    {
+      "titulo": "Ley Orgánica 3/2018, de Protección de Datos Personales y garantía de los derechos digitales, 7. artikulua (BOE) (gaztelaniaz)",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673#a7"
+    },
+    {
+      "titulo": "¿Cuál es la edad para que los menores puedan prestar consentimiento para tratar sus datos personales? (AEPD) (gaztelaniaz)",
+      "url": "https://www.aepd.es/preguntas-frecuentes/10-menores-y-educacion/FAQ-1001-cual-es-la-edad-para-que-los-menores-puedan-prestar-consentimiento-para-tratar-sus-datos-personales"
+    },
+    {
+      "titulo": "¿Pueden los centros educativos impartir clases y realizar exámenes online sin el consentimiento de los interesados? (AEPD) (gaztelaniaz)",
+      "url": "https://www.aepd.es/preguntas-frecuentes/10-menores-y-educacion/FAQ-1009-pueden-los-centros-educativos-impartir-clases-y-realizar-examenes-online-sin-el-consentimiento-de-los-interesados"
+    },
+    {
+      "titulo": "Proyecto de Ley Orgánica para la protección de las personas menores de edad en los entornos digitales (BOCG, Kongresua, 121/000052) (gaztelaniaz)",
+      "url": "https://www.congreso.es/public_oficiales/L15/CONG/BOCG/A/BOCG-15-A-52-1.PDF"
+    },
+    {
+      "titulo": "Ficha de tramitación del proyecto 121/000052 (Diputatuen Kongresua) (gaztelaniaz)",
+      "url": "https://www.congreso.es/es/proyectos-de-ley?p_p_id=iniciativas&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_iniciativas_mode=mostrarDetalle&_iniciativas_legislatura=XV&_iniciativas_id=121%2F000052"
+    },
+    {
+      "titulo": "Reglamento (UE) 2024/1689 de Inteligencia Artificial (DOUE, BOEn) (gaztelaniaz)",
+      "url": "https://www.boe.es/buscar/doc.php?id=DOUE-L-2024-81079"
+    },
+    {
+      "titulo": "Ley de IA: marco regulador (Europako Batzordea, 2026-10-19an eguneratua) (gaztelaniaz)",
+      "url": "https://digital-strategy.ec.europa.eu/es/policies/regulatory-framework-ai"
+    },
+    {
+      "titulo": "Orientacions per a l’ús de la intel·ligència artificial als centres educatius (Kataluniako Generalitatea, 2026) (katalanez)",
+      "url": "https://t.me/ChatGPTedu/21753/53605"
+    },
+    {
+      "titulo": "Guía para el uso de las inteligencias artificiales en el ámbito educativo (Eusko Jaurlaritzako Hezkuntza Saila) (gaztelaniaz)",
+      "url": "https://www.euskadi.eus/contenidos/documentacion/inn_doc_adi_artif/es_def/adjuntos/Guia-uso-de-IA-en-educacion_Euskadi.pdf"
+    },
+    {
+      "titulo": "Recomendaciones de uso de la IA (Kanarietako Gobernuaren Hezkuntza Kontseilaritza, 2026-01-13) (gaztelaniaz)",
+      "url": "https://www3.gobiernodecanarias.org/medusa/ecoescuela/ia/2026/01/13/recomendacionesusoia/"
+    },
+    {
+      "titulo": "Guía sobre el uso de la inteligencia artificial en el ámbito educativo, 2.0 bertsioa (INTEF, 2026ko iraila) (gaztelaniaz)",
+      "url": "https://intef.es/wp-content/uploads/2026/09/ACTUALIZACION-GUIA-DE-LA-IA-DEF-1-SEPT-2026-Publicable-v5-2.pdf"
+    },
+    {
+      "titulo": "Nueva versión de la «Guía sobre el uso de la inteligencia artificial en el ámbito educativo» (INTEF, 2026-09-08) (gaztelaniaz)",
+      "url": "https://intef.es/Noticias/nueva-version-de-la-guia-sobre-el-uso-de-la-inteligencia-artificial-en-el-ambito-educativo/"
+    },
+    {
+      "titulo": "UNESCO: Governments must quickly regulate Generative AI in schools (UNESCO, 2023-09-07) (ingelesez)",
+      "url": "https://www.unesco.org/en/articles/unesco-governments-must-quickly-regulate-generative-ai-schools"
+    },
+    {
+      "titulo": "Is there a right age for AI in education? (Sonia Livingstone, Media@LSE, 2026-09-22) (ingelesez)",
+      "url": "https://blogs.lse.ac.uk/medialse/2026/09/22/is-there-a-right-age-for-ai-in-education/"
+    },
+    {
+      "titulo": "Children's Safety and Well-Being in the Age of AI: Best Practices and Incentives (Munduko Ekonomia Foroa, 2026ko iraila) (ingelesez)",
+      "url": "https://reports.weforum.org/docs/WEF_Childrens_Safety_and_WellBeing_in_the_Age_of_AI_2026.pdf"
+    },
+    {
+      "titulo": "Google says that students in schools that ban AI won't have access to Search (Engadget, 2026-11-03) (ingelesez)",
+      "url": "https://www.engadget.com/2305432/google-says-that-students-in-schools-that-ban-ai-wont-have-access-to-search/"
+    }
   ],
-  "mensaje": {"grupo": "chatgpt", "id": 53933},
+  "mensaje": {
+    "grupo": "chatgpt",
+    "id": 53933
+  },
   "comprobado": "Verificador, 6-11-2026 (véase reportajes/2099-02-01.json); traducción al euskera sin cambios de contenido. No se han encontrado versiones oficiales en euskera de las fuentes (Google Help devuelve la página en castellano; la guía de Euskadi en euskera da 404).",
   "ilustracion": "Infografía en tres franjas horizontales, una por regla, sobre una regla graduada de 0 a 18 años. Franja 1, «Condiciones de las empresas»: marcas en 13 (OpenAI, Microsoft, Gemini personal), 18 (Anthropic) y un tramo sombreado «todas las edades, solo con cuenta del centro» para Gemini en Workspace for Education. Franja 2, «Ley de protección de datos»: una línea en 14 años, «consentimiento propio», con la nota «en el centro, la base es la función educativa». Franja 3, «Guías educativas»: Cataluña, menos de 14 «lo maneja el docente» y de 14 a 18 «con autorización»; Euskadi, sin chatbots antes de 13. Al pie, tres preguntas que sustituyen a «¿qué edad?»: ¿para qué?, ¿con qué cuenta?, ¿quién la maneja?",
   "ilustracion_alt": "Adinen erregela baten gaineko infografia, 0tik 18 urtera, 13, 14 eta 18 urteetan markekin. Lehen zerrenda, «Enpresak»: adin guztiak estaltzen dituen banda bat, «Ikastetxea» izenekoa, hezkuntza-kontuetako Geminirentzat, eta 13 urtetik (OpenAI, Microsoft) 18ra (Anthropic) doan lerro bat. Bigarren zerrenda, «Datuen legea»: balantza bat eta 14 urtetan aldatzen den lerro bat, norberaren adostasunaren adina. Hirugarren zerrenda, «Gidak»: bi lerro, bata 14 urteko urratsarekin eta bestea 13tik hasten dena, adin hori baino lehen gurutze gorri batekin. Behealdean, «Zertarako? Zer konturekin? Nork maneiatzen du?» koadroa.",
