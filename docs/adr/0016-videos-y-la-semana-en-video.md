@@ -43,9 +43,11 @@ Recomendado y aceptado por Juanjo el 05-11-2026 («hazlo así»):
   - Página **«Vídeos»** (`videos.html`), con todos, cada uno con su ancla para compartirlo,
     enlazada desde el pie junto a un enlace sencillo a la cuenta de Instagram.
   - Bloque **«La semana en vídeo»** en la portada del número del domingo, tras la viñeta.
-  - El reel de la comunidad, en **«La redacción»**, tras la entradilla.
+  - Los demás vídeos, como el reel de la comunidad, solo en «Vídeos». Hasta el 06-11-2026 el
+    de la comunidad iba también en «La redacción», tras la entradilla; Juanjo pidió quitarlo de
+    allí («no me gusta ahí… que se quede en la sección de vídeos solamente»).
   - Sin reproducción automática, con portada, `playsinline` y la lista de lo que aparece en
-    pantalla siempre plegada. En el bloque del domingo y en «La redacción», en pantalla ancha,
+    pantalla siempre plegada. En el bloque del domingo, en pantalla ancha,
     el vídeo alineado a la izquierda y su texto al lado; en el móvil, uno debajo de otro. La
     página «Vídeos» es una galería de tarjetas (vídeo, título, fecha y descripción). Juanjo,
     05-11-2026: la primera versión, con la lista desplegada junto a cada vídeo, «esto es horrible». Si un vídeo no tiene versión en el idioma de la página, va el

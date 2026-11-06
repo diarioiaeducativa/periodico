@@ -100,7 +100,6 @@ IDIOMAS = {
         "videos": "Vídeos", "semana_video": "La semana en vídeo", "en_pantalla": "Lo que aparece en pantalla",
         "en_instagram": "Verlo en Instagram", "instagram": "Instagram", "sin_videos": "Todavía no hay vídeos.",
         "video_idioma": "Vídeo en castellano.", "video_enlace": "Enlace a este vídeo",
-        "video_comunidad": "Cómo encaja el diario con los grupos y sus boletines, en un vídeo de 40 segundos:",
         "todos_videos": "Todos los vídeos",
         "biblioteca_enlace": "Biblioteca digital", "el_documento": "El documento", "doc_titulo": "Título", "doc_autoria": "Autoría",
         "doc_anyo": "Año", "doc_idioma": "Idioma", "doc_licencia": "Licencia", "doc_leer": "Leer el documento en su fuente oficial",
@@ -214,7 +213,6 @@ IDIOMAS = {
         "videos": "Vídeos", "semana_video": "La setmana en vídeo", "en_pantalla": "El que apareix a la pantalla",
         "en_instagram": "Mira'l a Instagram", "instagram": "Instagram", "sin_videos": "Encara no hi ha vídeos.",
         "video_idioma": "Vídeo en castellà.", "video_enlace": "Enllaç a aquest vídeo",
-        "video_comunidad": "Com encaixa el diari amb els grups i els seus butlletins, en un vídeo de 40 segons:",
         "todos_videos": "Tots els vídeos",
         "biblioteca_enlace": "Biblioteca digital", "el_documento": "El document", "doc_titulo": "Títol", "doc_autoria": "Autoria",
         "doc_anyo": "Any", "doc_idioma": "Idioma", "doc_licencia": "Llicència", "doc_leer": "Llegeix el document a la font oficial",
@@ -1300,14 +1298,11 @@ def pagina_redaccion(eds):
     resto = "".join(f"<h2>{t}</h2><p>{x.format(**grupos)}</p>" for t, x in R["secciones"])
     enlace_pres = f'<p class="presentacion"><a href="{d_href(pres)}">{L["presentacion"]}</a></p>' if pres else ""
     cab = cabecera("", "redaccion.html", eds[-1]["fecha"], eds[-1]["numero"], True, h1=False, activa="redaccion")
-    vc = next((v for v in cargar_videos() if v.get("tipo") == "comunidad"), None)
-    video_comunidad = f'<p>{L["video_comunidad"]}</p>{bloque_video("", vc, titulo_h="h2")}' if vc else ""
     return cabeza(f'{L["quees"]} | {L["titulo"]}', "", R["intro"], "redaccion.html") + f"""<body class="pag-que-es">
 {cab}
 <main class="articulo que-es redaccion">
 <h1 class="titular">{L["quees"]}</h1>
 <p class="entradilla">{R["intro"]}</p>
-{video_comunidad}
 {organigrama}
 <h2>{R["proceso_titulo"]}</h2>
 <p>{R["proceso_intro"]}</p>
