@@ -39,13 +39,18 @@ gasto nuevo; cada idioma añade los mismos pasos cada noche.
   válidos. Lo que no pasa se quita, esa parte sale en castellano en ese idioma, y noche.sh avisa a
   Juanjo en un solo mensaje. Los dibujos traducidos pasan además por `revisar-dibujos.py`, como los
   catalanes.
+- **«La semana en vídeo» en los cinco idiomas** desde el domingo 08-11-2026 (Juanjo, 06-11: «sí,
+  hazlo para el domingo»): el guionista escribe los textos de pantalla en los cinco idiomas en el mismo
+  encargo (`encargos/reel.md`), y `reel-semana.py` monta un vídeo por idioma. Castellano y catalán son
+  obligatorios; un idioma al que le falten textos, o cuyos textos no quepan, sale ese domingo con el
+  vídeo en castellano. Instagram sigue con el castellano. Cuesta tiempo de CPU del NAS la noche del
+  sábado y unos 1,4 MB por idioma y semana en el sitio (unos 220 MB más al año; GitHub Pages admite 1 GB).
 - **Lo ya publicado, traducido también** con `scripts/traducir-dia.sh FECHA [idiomas]`, que sirve
   igual para añadir un idioma en el futuro o rehacer una traducción quitada.
 - **Créditos**: el pie de cada edición traducida dice que es una traducción automática con IA de la
   castellana, sin revisión profesional. Juanjo revisa a las 5:00 el castellano y el catalán (ADR 0025).
 - **Fuera de alcance**: los avisos de los grupos e Instagram siguen en castellano, porque los grupos
-  son en castellano; «La semana en vídeo» sigue en castellano y catalán, y en los otros idiomas se
-  enseña el castellano con la nota «Vídeo en castellano». La imagen genérica para redes de las
+  son en castellano. La imagen genérica para redes de las
   páginas que no son un número usa la castellana hasta que haya una por idioma.
 
 ## Alternativas descartadas
