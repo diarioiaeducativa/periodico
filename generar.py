@@ -831,6 +831,10 @@ def cuerpo_portada(prof, piezas, breves, mostrar_fecha, tira=""):
     # En la portada, solo del último número: lo de días anteriores no se cuela entre lo de hoy, va a su sección
     destacadas = [p for p in resto if p.get("importancia", 3) <= 2 and p.get("seccion") != "biblioteca"
                   and (not mostrar_fecha or p["fecha"] == p0["fecha"])][:3]
+    # Si quedan huecos, los ocupan las demás piezas de hoy aunque sean menores: así no queda una suelta debajo
+    if mostrar_fecha:
+        destacadas += [p for p in resto if p not in destacadas and p["fecha"] == p0["fecha"]
+                       and p.get("seccion") != "biblioteca"][:3 - len(destacadas)]
     demas = [p for p in resto if p not in destacadas]
     # En la portada, todo lo de hoy va arriba: lo que no cabe entre las destacadas, también los
     # artículos de la Biblioteca, justo debajo en «Más del día»; los bloques, para los días anteriores
