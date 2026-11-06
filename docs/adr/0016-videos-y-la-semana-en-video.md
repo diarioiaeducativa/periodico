@@ -43,6 +43,8 @@ Recomendado y aceptado por Juanjo el 05-11-2026 («hazlo así»):
   - Página **«Vídeos»** (`videos.html`), con todos, cada uno con su ancla para compartirlo,
     enlazada desde el pie junto a un enlace sencillo a la cuenta de Instagram.
   - Bloque **«La semana en vídeo»** en la portada del número del domingo, tras la viñeta.
+  - En «La redacción», el guionista de vídeo figura en el equipo, en el organigrama (franja de
+    los domingos: números de la semana → guionista de vídeo → vídeo) y en el proceso (06-11-2026).
   - Los demás vídeos, como el reel de la comunidad, solo en «Vídeos». Hasta el 06-11-2026 el
     de la comunidad iba también en «La redacción», tras la entradilla; Juanjo pidió quitarlo de
     allí («no me gusta ahí… que se quede en la sección de vídeos solamente»).
