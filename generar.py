@@ -62,7 +62,7 @@ IDIOMAS = {
         "quees": "La redacción", "portada": "Portada", "volver": "Volver a la portada",
         "dia_ant": "Día anterior", "dia_sig": "Día siguiente",
         "leer_conv": "Lee la conversación original en", "tema_en": "Tema tratado en",
-        "comprobado": "Comprobado en", "fuente": "Fuente", "conversacion": "Conversación",
+        "comprobado": "Comprobado en", "fuente": "Fuente", "conversacion": "Conversación", "comentarios": "Comentarios", "comentarios_aviso": "Para comentar hace falta una {cuenta}. Los comentarios son públicos y se guardan en GitHub.", "comentarios_cuenta": "cuenta gratuita de GitHub",
         "breves": "Breves", "breves_antes": "Breves anteriores", "vineta": "La viñeta", "vineta_titulo": "La viñeta de Tiza y Algoritmo", "y": "y",
         "a_partir": "A partir de",
         "a_partir_dia": "A partir de las noticias del día.",
@@ -177,7 +177,7 @@ IDIOMAS = {
         "quees": "La redacció", "portada": "Portada", "volver": "Torna a la portada",
         "dia_ant": "Dia anterior", "dia_sig": "Dia següent",
         "leer_conv": "Llegeix la conversa original a", "tema_en": "Tema tractat a",
-        "comprobado": "Comprovat a", "fuente": "Font", "conversacion": "Conversa",
+        "comprobado": "Comprovat a", "fuente": "Font", "conversacion": "Conversa", "comentarios": "Comentaris", "comentarios_aviso": "Per comentar cal un {cuenta}. Els comentaris són públics i es desen a GitHub.", "comentarios_cuenta": "compte gratuït de GitHub",
         "breves": "Breus", "breves_antes": "Breus anteriors", "vineta": "La vinyeta", "vineta_titulo": "La vinyeta de Guix i Algorisme", "y": "i",
         "a_partir": "A partir de",
         "a_partir_dia": "A partir de les notícies del dia.",
@@ -619,6 +619,38 @@ def selector_idioma(prof, ruta):
     return (f'<span class="idiomas"><button type="button" class="idioma-boton" aria-expanded="false" aria-controls="menu-idiomas" '
             f'title="{rotulo}" aria-label="{rotulo}">{ICONO_IDIOMAS}<span class="idioma-cod" aria-hidden="true">{yo.upper()}</span></button>'
             f'<ul class="idioma-menu" id="menu-idiomas" hidden>{items}</ul></span>')
+
+
+# Comentarios (ADR 0030): giscus guarda cada hilo en las Discussions del repositorio del sitio, sin
+# servidor propio. El hilo es de la pieza, no de la página: el mismo en los cinco idiomas.
+GISCUS = {"repo": "diarioiaeducativa/diarioiaeducativa.github.io", "repo-id": "R_kgDOVfWo0w",
+          "category": "Comentarios", "category-id": "DIC_kwDOVfWo084DKlp3"}
+GISCUS_IDIOMA = {"es": "es", "ca": "ca", "gl": "es", "eu": "eu", "en": "en"}   # giscus no tiene gallego
+
+
+def comentarios(ruta):
+    """El bloque de comentarios de una pieza. `ruta` es la de la pieza sin idioma (AAAA-MM-DD/id.html)."""
+    datos = dict(GISCUS, mapping="specific", term=ruta.removesuffix(".html"), strict="1",
+                 **{"reactions-enabled": "0", "emit-metadata": "0", "input-position": "top",
+                    "lang": GISCUS_IDIOMA.get(L["codigo"], "en"), "loading": "lazy"})
+    attrs = "".join(f's.setAttribute("data-{k}",{json.dumps(v)});' for k, v in datos.items())
+    aviso = L["comentarios_aviso"].format(cuenta=enlace("https://github.com/signup", L["comentarios_cuenta"]))
+    return f"""<section class="comentarios" data-pagefind-ignore aria-labelledby="t-comentarios">
+    <h2 id="t-comentarios">{L["comentarios"]}</h2>
+    <p class="comentarios-aviso">{aviso}</p>
+    <div class="comentarios-caja"></div>
+    <script>
+    (function(){{
+      var raiz=document.documentElement, caja=document.currentScript.previousElementSibling;
+      function tema(){{var t=raiz.dataset.theme; return (t? t==='dark' : matchMedia('(prefers-color-scheme: dark)').matches)?'transparent_dark':'light';}}
+      var s=document.createElement('script'); s.src='https://giscus.app/client.js'; s.async=true; s.crossOrigin='anonymous';
+      {attrs}s.setAttribute('data-theme',tema()); caja.appendChild(s);
+      // Al cambiar el tema del diario, también el de los comentarios
+      new MutationObserver(function(){{var f=document.querySelector('iframe.giscus-frame');
+        if(f) f.contentWindow.postMessage({{giscus:{{setConfig:{{theme:tema()}}}}}},'https://giscus.app');}}).observe(raiz,{{attributes:true,attributeFilter:['data-theme']}});
+    }})();
+    </script>
+  </section>"""
 
 
 def boton_tema():
@@ -1116,6 +1148,7 @@ def articulo(prof, ruta, d, p, eds):
   </article>
   {otras}
   {mas_piezas(prof, eds, p)}
+  {comentarios(ruta)}
   <p class="volver"><a href="{prof}">{L["volver"]}</a></p>
 </main>
 {pie(prof, eds, d["fecha"])}
@@ -1217,6 +1250,7 @@ def articulo_reportaje(prof, ruta, d, r, eds):
     {comprobado}
   </article>
   {relacionadas}
+  {comentarios(ruta)}
   <p class="volver"><a href="{prof}">{L["volver"]}</a></p>
 </main>
 {pie(prof, eds, d["fecha"])}
@@ -1283,6 +1317,7 @@ def pagina_breve(prof, d, b, eds):
     {compartir}
   </article>
   {mas_piezas(prof, eds, {"id": "", "fecha": "", "seccion": None})}
+  {comentarios(ruta_breve(b))}
   <p class="volver"><a href="{prof}">{L["volver"]}</a></p>
 </main>
 {pie(prof, eds, d["fecha"])}

@@ -57,6 +57,10 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
   con `docker exec`. Los iconos de Lucide son un recurso, no una plantilla:
   vigilar que los dibujos no se uniformicen. Al probar un redibujo, quitar
   antes `ilustracion_alt`, o el ilustrador calca lo que describe.
+- **Comentarios** (ADR 0030): giscus, en las Discussions del repositorio del
+  sitio (categoría «Comentarios»); un hilo por pieza, el mismo en los cinco
+  idiomas. Se moderan desde GitHub. Si se renombra la categoría, cambiar
+  `GISCUS` en `generar.py`.
 - **Buscador** (ADR 0007): Pagefind, tras `generar.py`, solo en los
   `<article>` con `data-pagefind-body`.
 - **Vídeos** (ADR 0016 y 0027): «La semana en vídeo» la noche del sábado
