@@ -46,7 +46,7 @@ Aprobado ese mismo día («sí a todo, hazlo»), junto con el resumen semanal d�
   la noche siguiente `noche.sh` ve la marca y pide a `preparar.py` (`RECUPERA=1`) los mensajes de
   ese día como noticia, no como contexto; el encargo de la redacción lo explica. Así el resumen
   de la semana tiene también su pieza ese día.
-- **Publicar, hasta las 9:00**: si `publicar-nas.sh` falla a las 6:55, `reloj.sh` lo repite cada
+- **Publicar, hasta las 9:00**: si `publicar-nas.sh` falla a las 6:50, `reloj.sh` lo repite cada
   10 minutos hasta las 9:00 y avisa una vez al primer fallo y otra al final. `publicar-nas.sh`
   sube también lo que un intento anterior dejó sin subir (antes, un commit hecho y no subido se
   quedaba así). El bot publica los avisos de los grupos en cuanto llegan, hasta las 12:00

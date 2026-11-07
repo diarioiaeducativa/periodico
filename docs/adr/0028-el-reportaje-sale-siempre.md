@@ -29,6 +29,11 @@ gustaría que pasados 6 meses saliese un artículo ya caduco». No se actualizab
   Si gana el de reserva, se publica ese (su infografía se revisa entonces en su página, con revisor) y el
   nuevo queda en `reportajes-borrador/FECHA-descartado.json`, sin traducir; a la mañana siguiente se
   escribe otro de reserva. La elección y su motivo van en el aviso de las 5:00 del domingo.
+- **Publicar el de reserva a propósito** (Juanjo, 07-11-2026, al ampliar el de reserva con todas las
+  comunidades autónomas: «He decidido publicar el reportaje de reserva este domingo»): si existe
+  `estado/FECHA.reportaje-reserva` (FECHA, el sábado), `noche.sh` no escribe reportaje nuevo y sigue el
+  mismo camino que cuando el reportaje falla: pone el de reserva, revisa su infografía en su página y
+  continúa con el vídeo y las redes. El archivo se crea a mano en el NAS y vale solo para ese sábado.
 - **Caducidad de las reservas**: una pieza de reserva sin usar se retira a los 60 días; el reportaje,
   a las 4 semanas. Lo hace `reserva.sh` cada mañana, que después escribe lo que falte (una pieza o el
   reportaje). Lo retirado queda en `reserva/retiradas/` y `reserva/reportajes/retirados/`, con el motivo.

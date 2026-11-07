@@ -177,8 +177,14 @@ fi
 
 # 3 bis. El reportaje del domingo, si la semana acaba hoy (sábado). Nunca impide el número.
 if [ "$(date -d "$FECHA" +%u)" = 6 ] || [ "${REPORTAJE:-0}" = 1 ]; then
-  bash scripts/reportaje.sh "$FECHA"
-  codigo=$?
+  if [ -e "estado/$FECHA.reportaje-reserva" ]; then   # decisión de la redacción: sale el de reserva (ADR 0028)
+    log "reportaje: se ha pedido publicar el de reserva; no se escribe uno nuevo"
+    log "sin reportaje: se ha pedido publicar el de reserva"
+    codigo=2
+  else
+    bash scripts/reportaje.sh "$FECHA"
+    codigo=$?
+  fi
   if [ "$codigo" != 0 ]; then   # el reportaje sale siempre (ADR 0028): si no ha podido ser, el de reserva
     [ "$codigo" = 2 ] || { log "el reportaje falló de forma inesperada"; rm -f reportajes/"$FECHA".json $(traducidos reportajes); }
     porque=$(grep 'sin reportaje: ' "$REG" | tail -1 | sed 's/.*sin reportaje: //')
@@ -194,7 +200,11 @@ if [ "$(date -d "$FECHA" +%u)" = 6 ] || [ "${REPORTAJE:-0}" = 1 ]; then
         done
         log "la infografía del reportaje de reserva falla la revisión: sale sin ella"
       fi
-      avisar-juanjo --de "Diario de IA Educativa" "El reportaje de esta semana no ha podido salir (${porque:-fallo inesperado}): el domingo sale con el reportaje de reserva, y mañana se escribe otro de reserva. Registro: /volume1/docker/diario-ia-educativa/repo/registro/$FECHA.log" >/dev/null 2>&1 || true
+      if [ -e "estado/$FECHA.reportaje-reserva" ]; then
+        avisar-juanjo --de "Diario de IA Educativa" "Como pediste, el domingo sale con el reportaje de reserva, y mañana se escribe otro de reserva. Registro: /volume1/docker/diario-ia-educativa/repo/registro/$FECHA.log" >/dev/null 2>&1 || true
+      else
+        avisar-juanjo --de "Diario de IA Educativa" "El reportaje de esta semana no ha podido salir (${porque:-fallo inesperado}): el domingo sale con el reportaje de reserva, y mañana se escribe otro de reserva. Registro: /volume1/docker/diario-ia-educativa/repo/registro/$FECHA.log" >/dev/null 2>&1 || true
+      fi
     else
       avisar-juanjo --de "Diario de IA Educativa" "El número del domingo sale sin reportaje: no ha podido salir (${porque:-fallo inesperado}) y no queda ningún reportaje de reserva que valga. Registro: /volume1/docker/diario-ia-educativa/repo/registro/$FECHA.log" >/dev/null 2>&1 || true
     fi

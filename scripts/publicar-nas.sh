@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 # Publica el número preparado por noche.sh: regenera el sitio, lo sube a GitHub Pages, guarda
 # en el repositorio de la redacción lo que han escrito los agentes y deja los avisos de los
-# grupos donde los recoge el bot. Lo lanza reloj.sh a las 6:55, para que el sitio ya esté
+# grupos donde los recoge el bot. Lo lanza reloj.sh a las 6:50, para que el sitio ya esté
 # en línea cuando el bot avise a las 7:00.
 #
 #   scripts/publicar-nas.sh [AAAA-MM-DD]   (la fecha de las conversaciones; por defecto, ayer)

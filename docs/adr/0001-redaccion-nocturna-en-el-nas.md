@@ -17,8 +17,11 @@ avisos que encuentra en `datos/diario/<fecha>.json` (ADR 0025 del bot).
   contenedores con agente: no añade ningún pago.
 - `nas/reloj.sh` mira cada cinco minutos qué toca: desde la 1:00, `scripts/noche.sh`
   prepara el número con las conversaciones de ayer (dos intentos como mucho); a las 6:30,
-  si no está, avisa a Juanjo por Telegram; desde las 6:55, `scripts/publicar-nas.sh` lo
-  publica, para que el sitio ya esté en línea cuando el bot avisa a las 7:00. Lo decidido
+  si no está, avisa a Juanjo por Telegram; desde las 6:50, `scripts/publicar-nas.sh` lo
+  publica, para que el sitio ya esté en línea cuando el bot avisa a las 7:00. Hasta el
+  07-11-2026 era a las 6:55: ese día el NAS subió el número a las 6:56 y a las 6:57 GitHub Pages
+  aún estaba desplegando, con las páginas nuevas en 404; Juanjo pidió adelantarlo («10 minutos en
+  lugar de 5, por si github va lento»). Lo decidido
   queda en `estado/`, así que un reinicio no repite nada; y si `estado/` se pierde (al
   restaurar en otra máquina), un número cuya edición ya está en GitHub no se rehace.
 - Los siete agentes de la redacción, con los encargos de `encargos/` y el modelo fijado por

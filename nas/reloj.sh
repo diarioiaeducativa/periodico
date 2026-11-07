@@ -8,7 +8,7 @@
 #                   saca el número con una pieza de reserva (scripts/reserva.py, ADR 0021), y avisa
 #   desde las 5:00  montar la vista previa del número y mandar a Juanjo el enlace para revisarlo
 #                   antes de que salga (ADR 0025); si aún no está, decírselo y mandarlo al estar
-#   desde las 6:55  publicarlo (scripts/publicar-nas.sh); si se prepara tarde, en cuanto esté;
+#   desde las 6:50  publicarlo (scripts/publicar-nas.sh); si se prepara tarde, en cuanto esté;
 #                   si falla, otra vez cada 10 minutos hasta las 9:00 (ADR 0021)
 #   desde las 8:00  si faltan piezas de reserva, escribir una (scripts/reserva.sh)
 #   desde las 7:05  publicarlo en Instagram (scripts/instagram.py publicar), un solo intento (ADR 0015)
@@ -58,7 +58,7 @@ while true; do
   fi
   # La vista previa (ADR 0025): desde las 5:00 y hasta que se publica, el número tal como saldrá,
   # en la red de casa (servicio vista-previa de compose.yml). Si a las 5:00 aún no está, se dice una vez.
-  if [ "$m" -ge 300 ] && [ "$m" -lt 415 ] && [ ! -e "$E.publicado" ] && [ ! -e "$E.vista-previa" ]; then
+  if [ "$m" -ge 300 ] && [ "$m" -lt 410 ] && [ ! -e "$E.publicado" ] && [ ! -e "$E.vista-previa" ]; then
     if [ -e "$E.listo" ]; then
       touch "$E.vista-previa"
       if python3 generar.py >> "registro/$F.log" 2>&1; then
@@ -68,23 +68,23 @@ while true; do
         [ -f "dominical/$F.json" ] && dom=" · Redes del dominical, a las 9:00: $(python3 -c 'import json,sys; print(json.load(open(sys.argv[1]))["corto"])' "dominical/$F.json" 2>/dev/null)"
         # Y cuál de los dos reportajes eligió el juez, si había uno de reserva (ADR 0028)
         [ -f "reportajes-borrador/$F-eleccion.json" ] && dom="$dom · Reportaje: $(python3 -c 'import json,sys; d=json.load(open(sys.argv[1])); print(("el de reserva" if d.get("elegido") == "reserva" else "el nuevo") + ", porque " + d.get("motivo", "").rstrip(".") + ".")' "reportajes-borrador/$F-eleccion.json" 2>/dev/null)"
-        avisar "El número de hoy ya se puede revisar, tal como saldrá a las 6:55 (desde la red de casa): ${VISTA_PREVIA:-http://192.168.1.113:8770/} · en catalán: ${VISTA_PREVIA:-http://192.168.1.113:8770/}ca/ · Si hay que cambiar algo, dímelo antes desde el portátil.$dom"
+        avisar "El número de hoy ya se puede revisar, tal como saldrá a las 6:50 (desde la red de casa): ${VISTA_PREVIA:-http://192.168.1.113:8770/} · en catalán: ${VISTA_PREVIA:-http://192.168.1.113:8770/}ca/ · Si hay que cambiar algo, dímelo antes desde el portátil.$dom"
       else
-        avisar "No se ha podido montar la vista previa del número de hoy; sale igual a las 6:55. Registro: /volume1/docker/diario-ia-educativa/repo/registro/$F.log"
+        avisar "No se ha podido montar la vista previa del número de hoy; sale igual a las 6:50. Registro: /volume1/docker/diario-ia-educativa/repo/registro/$F.log"
       fi
     elif [ ! -e "$E.vista-previa-espera" ] && [ ! -e "$E.sin-numero" ]; then
       touch "$E.vista-previa-espera"
       avisar "El número de hoy aún no está listo para revisar: la redacción sigue trabajando. Te mando el enlace en cuanto esté; si a las 6:30 no ha acabado, sale con lo que haya o con una pieza de reserva."
     fi
   fi
-  # Publicar: a las 6:55 y, si falla, cada 10 minutos hasta las 9:00 (ADR 0021)
-  if [ "$m" -ge 415 ] && [ -e "$E.listo" ] && [ ! -e "$E.publicado" ] && [ ! -e "$E.publicando" ] \
+  # Publicar: a las 6:50 y, si falla, cada 10 minutos hasta las 9:00 (ADR 0021)
+  if [ "$m" -ge 410 ] && [ -e "$E.listo" ] && [ ! -e "$E.publicado" ] && [ ! -e "$E.publicando" ] \
      && [ "$m" -ge $(( $(cat "$E.publicar-fallo" 2>/dev/null || echo -100) + 10 )) ]; then
     touch "$E.publicando"
     if scripts/publicar-nas.sh "$F"; then
       [ -e "$E.publicar-fallo" ] && avisar "Ya está: el número de hoy se ha publicado, con retraso."
     elif [ "$m" -ge 540 ]; then
-      avisar "No se ha podido publicar el número de hoy: lo he intentado desde las 6:55 hasta las 9:00. Queda a mano. Registro: /volume1/docker/diario-ia-educativa/repo/registro/$F.log"
+      avisar "No se ha podido publicar el número de hoy: lo he intentado desde las 6:50 hasta las 9:00. Queda a mano. Registro: /volume1/docker/diario-ia-educativa/repo/registro/$F.log"
       touch "$E.publicado"
     else
       [ -e "$E.publicar-fallo" ] || avisar "No se ha podido publicar el número de hoy a su hora: lo reintento cada 10 minutos hasta las 9:00. Registro: /volume1/docker/diario-ia-educativa/repo/registro/$F.log"

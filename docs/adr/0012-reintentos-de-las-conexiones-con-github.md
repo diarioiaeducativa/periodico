@@ -9,7 +9,7 @@ and Issues», githubstatus.com), más o menos la mitad de las conexiones SSH se 
 «Permission denied (publickey)» aunque la clave fuera la buena. En Temps a Montflorit, que
 publica con un solo intento por pasada, la web se quedó de 10:32 a 12:07 sin subir.
 
-El diario está más expuesto: `publicar-nas.sh` se lanza una sola vez, a las 6:55, y necesita
+El diario está más expuesto: `publicar-nas.sh` se lanza una sola vez, a las 6:50, y necesita
 tres conexiones seguidas (traer el sitio, subirlo y subir la redacción). Si falla la de subir el
 sitio, no sale el número ni el bot recibe los avisos de las 7:00, y el reloj no lo reintenta:
 avisa a Juanjo y queda para hacerlo a mano. Con la mitad de las conexiones rechazadas, solo una
