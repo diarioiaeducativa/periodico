@@ -11,7 +11,7 @@
    "ladillo": "Tres reglas que se confunden",
    "parrafos": [
     "Cuando un docente se pregunta si su alumnado puede usar un asistente de inteligencia artificial, suele buscar un número. Pero conviven al menos tres reglas de origen distinto. La primera es la edad mínima que fija cada empresa en sus condiciones de uso, un contrato entre la empresa y quien abre la cuenta. La segunda es la edad a partir de la cual un menor puede consentir por sí mismo que se traten sus datos, que la ley española sitúa en los 14 años. La tercera son las recomendaciones de las administraciones educativas, que orientan qué se considera prudente en un aula.",
-    "Las tres responden a preguntas distintas y no coinciden. Que un servicio admita cuentas desde los 13 años no significa que sea adecuado para un grupo de primero de ESO, ni que el centro pueda pedir al alumnado que se dé de alta en él. Y que un alumno haya cumplido 14 no aclara si la herramienta tiene una finalidad educativa. **Lo decisivo no es solo la edad del alumnado, sino quién abre la cuenta, quién maneja la herramienta y para qué se usa.**"
+    "Las tres responden a preguntas distintas y no coinciden. Que un servicio admita cuentas desde los 13 años no significa que sea adecuado para un grupo de primero de ESO, ni que el centro pueda pedir al alumnado que se dé de alta en él. Y que un alumno haya cumplido 14 no aclara si la herramienta tiene una finalidad educativa. **Además de la edad del alumnado, cuenta quién abre la cuenta, quién maneja la herramienta y para qué se usa.**"
    ]
   },
   {
@@ -36,13 +36,119 @@
    "ladillo": "Lo que dicen las administraciones educativas",
    "parrafos": [
     "Cada comunidad autónoma decide cómo se usa la inteligencia artificial en sus centros, y a 7 de noviembre de 2026 no hay un criterio común. Algunas han publicado un documento propio, otras lo resuelven con la configuración de sus plataformas y varias todavía no han dicho nada.",
-    "Cataluña tiene el criterio más detallado. Sus *Orientacions per a l’ús de la intel·ligència artificial als centres educatius*, que el Departament d’Educació i Formació Professional publicó en septiembre de 2026 y después retiró de su web ([reseña del diario en su Biblioteca](pieza:2026-11-02/cat-orientacions-ia)), establecen que el alumnado menor de 14 años no debería usar IA de propósito general de forma autónoma: si se trabaja con ella, la maneja el docente. Entre los 14 y los 18 años no hace falta el consentimiento de las familias, porque la base jurídica es la misión de interés público, pero recomiendan recoger su autorización como garantía, obligatoria cuando las condiciones de la herramienta la exigen, y sitúan la interacción directa del alumnado a partir del segundo trimestre de 3.º de ESO.",
+    "Cataluña tiene el criterio más detallado. Sus *Orientacions per a l’ús de la intel·ligència artificial als centres educatius*, que el Departament d’Educació i Formació Professional publicó en septiembre de 2026 y después retiró de su web ([reseña del diario en su Biblioteca](pieza:2026-11-02/cat-orientacions-ia)), establecen que el alumnado menor de 14 años no debería usar IA de propósito general de forma autónoma: en primaria y en el primer ciclo de ESO, si se trabaja con ella, la maneja el docente, aunque admiten herramientas diseñadas para el entorno educativo que cumplan ciertos requisitos. Entre los 14 y los 18 años no hace falta, con carácter general, el consentimiento de las familias, porque la base jurídica es la misión de interés público, pero recomiendan recoger su autorización como garantía, y puede ser necesaria porque algunas herramientas la exigen en sus condiciones; con esa autorización, sitúan la interacción directa del alumnado a partir del segundo trimestre de 3.º de ESO.",
     "La [guía del Departamento de Educación del Gobierno Vasco](https://www.euskadi.eus/contenidos/documentacion/inn_doc_adi_artif/es_def/adjuntos/Guia-uso-de-IA-en-educacion_Euskadi.pdf), de 2025, no permite los chatbots a menores de 13 años ni en 1.º y 2.º de ESO; desde 3.º, los admite «solo cuando se considere necesario y bajo una rigurosa supervisión». Entre los 14 y los 18 años recomienda usarlos sin registro, porque con registro haría falta la autorización de las familias.",
-    "En la Región de Murcia, una [orden de septiembre de 2025](https://www.borm.es/services/anuncio/ano/2025/numero/4232/pdf?id=838315) no permite el acceso directo y autónomo del alumnado a herramientas de IA hasta 3.º de ESO, y desde ese curso siempre con la supervisión del profesorado; las familias deben recibir información, sin que se pida su autorización. En la Comunidad de Madrid, la [Política de uso aceptable de la IA](https://www.educa2.madrid.org/web/educamadrid/principal/files/1cff6bb2-8b91-48fc-ae7b-a3d3b62d1d84/Convenios/Documentos%20comunes/Politica%20de%20uso%20aceptable%20de%20la%20IA%20en%20centros%20educativos.pdf), una propuesta de la Consejería de Digitalización fechada el 25 de septiembre de 2026, reserva la IA de las cuentas educativas al profesorado: el alumnado la usa guiado por el docente y sin cuenta propia, y cuando la base legal sea el consentimiento, por debajo de los 14 años firma la familia.",
-    "Otras administraciones lo resuelven con sus plataformas y sus instrucciones. Andalucía tiene [desactivados Gemini y NotebookLM para el alumnado](https://www.juntadeandalucia.es/educacion/eaprendizaje/wp-content/uploads/2026/10/261028_Guia-de-Buenas-Practicas_Google_v08.pdf) en las cuentas de Google de sus centros, y Canarias abre [NotebookLM al alumnado y reserva Gemini al profesorado](https://www3.gobiernodecanarias.org/medusa/ecoescuela/gsuite/principio-uso-ia/). La Comunitat Valenciana solo admite con el alumnado [las aplicaciones autorizadas en su catálogo AppsEdu](https://portal.edu.gva.es/cefire/wp-content/uploads/sites/1992/2026/09/Guia_accions_formatives_IA_PAF_2026-2027_VAL.pdf) y pide no obligarle a crear cuentas. Extremadura establece en su [Instrucción 6/2026](https://www.educarex.es/pub/cont/com/0061/documentos/Instrucci%C3%B3n_6_2026_USO_DISPOSITIVOS_DIGITALES%28F%29.pdf) que las actividades con equipos del centro no necesitan una autorización familiar específica y que el alumnado declare cuándo usa la IA. Asturias prohíbe introducir datos del alumnado en herramientas que la Consejería no haya autorizado ([circular de inicio de curso](https://www.educastur.es/documents/34868/38433/Anexo_F_PROTECCION_DATOSPERSONALES_CPUBLICOS.pdf/c639b6d8-b281-8274-f2cf-5d11b8631cca)).",
-    "Aragón, Illes Balears, Cantabria, Castilla y León, Castilla-La Mancha, Navarra y La Rioja no tienen todavía un documento propio sobre IA en los centros; La Rioja [publica en su web la guía del INTEF](https://www.larioja.org/edu-proteccion-datos/es/novedades/guia-uso-inteligencia-artificial). Galicia lo regulará en su Ley de educación digital, cuyo [anteproyecto](https://transparencia.xunta.gal/tema/informacion-de-relevancia-xuridica/normativa-en-tramitacion/en-prazo-de-envio-de-suxestions/-/nt/0825/anteproxecto-lei-educacion-dixital-galicia) está en el Parlamento. En Ceuta y Melilla, cuyos centros gestiona el Ministerio, las instrucciones del curso no tratan la IA.",
-    "En el ámbito estatal, la [Guía sobre el uso de la inteligencia artificial en el ámbito educativo](https://intef.es/wp-content/uploads/2026/09/ACTUALIZACION-GUIA-DE-LA-IA-DEF-1-SEPT-2026-Publicable-v5-2.pdf) del INTEF, versión 2.0, [publicada el 8 de septiembre de 2026](https://intef.es/Noticias/nueva-version-de-la-guia-sobre-el-uso-de-la-inteligencia-artificial-en-el-ambito-educativo/), no fija una edad. Recuerda que por debajo de los 14 años cualquier registro requiere el consentimiento de las familias, pide que en Secundaria el uso esté mediado por el docente y que se prioricen las herramientas autorizadas o validadas por las administraciones educativas."
-   ]
+    "En la Región de Murcia, una [orden de septiembre de 2025](https://www.borm.es/services/anuncio/ano/2025/numero/4232/pdf?id=838315) no permite hasta 3.º de ESO actividades con acceso directo a herramientas de IA que recojan datos personales o requieran interacción autónoma: antes de ese curso, solo un uso guiado de aplicaciones adaptadas a la edad, y desde él, siempre con la supervisión del profesorado. Las familias deben recibir información, y la orden no exige su autorización. En la Comunidad de Madrid, la [Política de uso aceptable de la IA](https://www.educa2.madrid.org/web/educamadrid/principal/files/1cff6bb2-8b91-48fc-ae7b-a3d3b62d1d84/Convenios/Documentos%20comunes/Politica%20de%20uso%20aceptable%20de%20la%20IA%20en%20centros%20educativos.pdf), una propuesta de la Consejería de Digitalización firmada el 25 de septiembre de 2026 que entrará en vigor cuando se apruebe, reserva el uso de la IA al profesorado y a los equipos directivos; cuando la base legal sea el consentimiento, por debajo de los 14 años firma la familia. Las [directrices de Google Workspace](https://www.educa2.madrid.org/web/educamadrid/principal/files/1cff6bb2-8b91-48fc-ae7b-a3d3b62d1d84/Convenios/Google/Directrices%20de%20Uso%20de%20los%20Servicios%20de%20GWS.pdf) de la misma Consejería precisan que el alumnado solo usa Gemini guiado por el docente y sin sus propias credenciales.",
+    "Otras administraciones lo resuelven con sus plataformas y sus instrucciones. Andalucía tiene [desactivados Gemini y NotebookLM para el alumnado](https://www.juntadeandalucia.es/educacion/eaprendizaje/wp-content/uploads/2026/10/261028_Guia-de-Buenas-Practicas_Google_v08.pdf) en las cuentas de Google de sus centros, y Canarias [abre NotebookLM al alumnado y reserva Gemini al profesorado](https://www3.gobiernodecanarias.org/medusa/ecoescuela/gsuite/2025/12/22/recomendaciones-de-uso-de-la-ia-en-el-g-suite-educativo/). En la Comunitat Valenciana, la [guía para planificar la formación del profesorado en IA](https://portal.edu.gva.es/cefire/wp-content/uploads/sites/1992/2026/09/Guia_accions_formatives_IA_PAF_2026-2027_VAL.pdf) recuerda que con el alumnado solo pueden usarse las aplicaciones autorizadas en el catálogo AppsEdu y que no se le debe pedir que cree cuentas en servicios externos no autorizados. Extremadura, en su [Instrucción 6/2026](https://www.educarex.es/pub/cont/com/0061/documentos/Instrucci%C3%B3n_6_2026_USO_DISPOSITIVOS_DIGITALES%28F%29.pdf) sobre dispositivos digitales, establece que las actividades con equipos del centro no requieren autorización familiar específica y que el alumnado declare cuándo usa la IA si la actividad lo establece. Asturias prohíbe introducir datos del alumnado en herramientas de IA que la Consejería no haya autorizado ([circular de inicio de curso](https://www.educastur.es/documents/34868/38433/Anexo_F_PROTECCION_DATOSPERSONALES_CPUBLICOS.pdf/c639b6d8-b281-8274-f2cf-5d11b8631cca)).",
+    "Aragón, Illes Balears, Cantabria, Castilla y León, Castilla-La Mancha, Navarra y La Rioja no tienen todavía un documento propio sobre IA en los centros; Castilla y León anunció en octubre una guía de recomendaciones que aún no ha publicado, y La Rioja [publica en su web la guía del INTEF](https://www.larioja.org/edu-proteccion-datos/es/novedades/guia-uso-inteligencia-artificial). Galicia lo regulará en su Ley de educación digital, cuyo [texto](https://transparencia.xunta.gal/tema/informacion-de-relevancia-xuridica/normativa-en-tramitacion/en-prazo-de-envio-de-suxestions/-/nt/0825/anteproxecto-lei-educacion-dixital-galicia) se tramita como proyecto en el Parlamento desde septiembre. En Ceuta y Melilla, cuyos centros gestiona el Ministerio, las instrucciones del curso no tratan la IA.",
+    "En el ámbito estatal, la [Guía sobre el uso de la inteligencia artificial en el ámbito educativo](https://intef.es/wp-content/uploads/2026/09/ACTUALIZACION-GUIA-DE-LA-IA-DEF-1-SEPT-2026-Publicable-v5-2.pdf) del INTEF, versión 2.0, [publicada el 8 de septiembre de 2026](https://intef.es/Noticias/nueva-version-de-la-guia-sobre-el-uso-de-la-inteligencia-artificial-en-el-ambito-educativo/), no fija una edad. Recuerda que por debajo de los 14 años cualquier registro requiere el consentimiento de las familias, propone actividades que requieran la mediación del profesorado y pide que con el alumnado se usen solo herramientas validadas por la administración o autorizadas por la dirección del centro."
+   ],
+   "tabla": {
+    "titulo": "Qué dice cada administración educativa, a 7 de noviembre de 2026",
+    "columnas": [
+     "Administración",
+     "Edad y familias",
+     "Documento"
+    ],
+    "filas": [
+     [
+      "Andalucía",
+      "Gemini y NotebookLM, desactivados para el alumnado. No fija edad ni pide autorización para la IA.",
+      "[Guía de Google Workspace, v08 (2026)](https://www.juntadeandalucia.es/educacion/eaprendizaje/wp-content/uploads/2026/10/261028_Guia-de-Buenas-Practicas_Google_v08.pdf)"
+     ],
+     [
+      "Aragón",
+      "Sin documento propio.",
+      "—"
+     ],
+     [
+      "Asturias",
+      "No se pueden introducir datos del alumnado en herramientas de IA no autorizadas por la Consejería. No trata la edad.",
+      "[Circular de inicio de curso, anexo F (2026)](https://www.educastur.es/documents/34868/38433/Anexo_F_PROTECCION_DATOSPERSONALES_CPUBLICOS.pdf/c639b6d8-b281-8274-f2cf-5d11b8631cca)"
+     ],
+     [
+      "Illes Balears",
+      "Sin documento propio.",
+      "—"
+     ],
+     [
+      "Canarias",
+      "NotebookLM, abierto al alumnado; Gemini, solo para el profesorado. No fija edad.",
+      "[Recomendaciones de uso de la IA (2025)](https://www3.gobiernodecanarias.org/medusa/ecoescuela/gsuite/2025/12/22/recomendaciones-de-uso-de-la-ia-en-el-g-suite-educativo/)"
+     ],
+     [
+      "Cantabria",
+      "Sin documento propio.",
+      "—"
+     ],
+     [
+      "Castilla y León",
+      "Sin documento propio; ha anunciado una guía.",
+      "—"
+     ],
+     [
+      "Castilla-La Mancha",
+      "Sin documento propio.",
+      "—"
+     ],
+     [
+      "Cataluña",
+      "Menores de 14: sin uso autónomo de la IA de propósito general. De 14 a 18: sin consentimiento con carácter general; autorización recomendada.",
+      "*Orientacions* (2026), retiradas de la web ([copia](https://t.me/ChatGPTedu/21753/53605))"
+     ],
+     [
+      "Comunitat Valenciana",
+      "Con el alumnado, solo aplicaciones del catálogo AppsEdu; no pedirle que cree cuentas en servicios no autorizados.",
+      "[Guía del CEFIRE (2026)](https://portal.edu.gva.es/cefire/wp-content/uploads/sites/1992/2026/09/Guia_accions_formatives_IA_PAF_2026-2027_VAL.pdf)"
+     ],
+     [
+      "Extremadura",
+      "Con equipos del centro, sin autorización familiar específica; el alumnado declara el uso de la IA.",
+      "[Instrucción 6/2026](https://www.educarex.es/pub/cont/com/0061/documentos/Instrucci%C3%B3n_6_2026_USO_DISPOSITIVOS_DIGITALES%28F%29.pdf)"
+     ],
+     [
+      "Galicia",
+      "Lo regulará su Ley de educación digital, en tramitación en el Parlamento.",
+      "[Proyecto de ley](https://transparencia.xunta.gal/tema/informacion-de-relevancia-xuridica/normativa-en-tramitacion/en-prazo-de-envio-de-suxestions/-/nt/0825/anteproxecto-lei-educacion-dixital-galicia)"
+     ],
+     [
+      "Comunidad de Madrid",
+      "IA solo para el profesorado; el alumnado, guiado y sin credenciales propias. Menores de 14: firma la familia si la base es el consentimiento.",
+      "[Política de uso aceptable (propuesta, 2026)](https://www.educa2.madrid.org/web/educamadrid/principal/files/1cff6bb2-8b91-48fc-ae7b-a3d3b62d1d84/Convenios/Documentos%20comunes/Politica%20de%20uso%20aceptable%20de%20la%20IA%20en%20centros%20educativos.pdf)"
+     ],
+     [
+      "Región de Murcia",
+      "Hasta 3.º de ESO, solo uso guiado; después, siempre supervisado. Hay que informar a las familias.",
+      "[Orden de 8-9-2025](https://www.borm.es/services/anuncio/ano/2025/numero/4232/pdf?id=838315)"
+     ],
+     [
+      "Navarra",
+      "Sin documento propio.",
+      "—"
+     ],
+     [
+      "País Vasco",
+      "Chatbots, no antes de los 13 años ni en 1.º y 2.º de ESO. De 14 a 18: sin registro o con autorización familiar.",
+      "[Guía del Departamento de Educación (2025)](https://www.euskadi.eus/contenidos/documentacion/inn_doc_adi_artif/es_def/adjuntos/Guia-uso-de-IA-en-educacion_Euskadi.pdf)"
+     ],
+     [
+      "La Rioja",
+      "Sin documento propio; publica la guía del INTEF.",
+      "[Página de la Consejería](https://www.larioja.org/edu-proteccion-datos/es/novedades/guia-uso-inteligencia-artificial)"
+     ],
+     [
+      "Ceuta y Melilla",
+      "Las instrucciones del Ministerio no tratan la IA.",
+      "—"
+     ],
+     [
+      "Estatal (INTEF)",
+      "No fija edad. Menores de 14: cualquier registro, con consentimiento de las familias. Con el alumnado, solo herramientas validadas o autorizadas.",
+      "[Guía 2.0 (2026)](https://intef.es/wp-content/uploads/2026/09/ACTUALIZACION-GUIA-DE-LA-IA-DEF-1-SEPT-2026-Publicable-v5-2.pdf)"
+     ]
+    ],
+    "nota": "**En una comunidad que no ha publicado nada** rige lo mismo que en el resto de España: hay que informar a las familias de qué herramienta se usa, con qué cuenta y para qué; con las herramientas que facilita el centro o la administración no hace falta su consentimiento, porque el tratamiento se basa en la función educativa, pero sí la autorización cuando las condiciones de la herramienta la exigen; y la guía del INTEF sirve de referencia."
+   }
   },
   {
    "ladillo": "Más allá del número",
@@ -189,12 +295,16 @@
    "url": "https://www.educa2.madrid.org/web/educamadrid/principal/files/1cff6bb2-8b91-48fc-ae7b-a3d3b62d1d84/Convenios/Documentos%20comunes/Politica%20de%20uso%20aceptable%20de%20la%20IA%20en%20centros%20educativos.pdf"
   },
   {
+   "titulo": "Directrices de uso de Google Workspace for Education y herramientas de IA (Comunidad de Madrid, 09-07-2026)",
+   "url": "https://www.educa2.madrid.org/web/educamadrid/principal/files/1cff6bb2-8b91-48fc-ae7b-a3d3b62d1d84/Convenios/Google/Directrices%20de%20Uso%20de%20los%20Servicios%20de%20GWS.pdf"
+  },
+  {
    "titulo": "Guía de buenas prácticas para el uso de Google Workspace for Education y la protección de datos, v08 (Junta de Andalucía, 28-10-2026)",
    "url": "https://www.juntadeandalucia.es/educacion/eaprendizaje/wp-content/uploads/2026/10/261028_Guia-de-Buenas-Practicas_Google_v08.pdf"
   },
   {
-   "titulo": "Principios de uso de la inteligencia artificial en el entorno educativo (Gobierno de Canarias)",
-   "url": "https://www3.gobiernodecanarias.org/medusa/ecoescuela/gsuite/principio-uso-ia/"
+   "titulo": "Recomendaciones de uso de la IA en el G Suite educativo (Gobierno de Canarias, 22-12-2025)",
+   "url": "https://www3.gobiernodecanarias.org/medusa/ecoescuela/gsuite/2025/12/22/recomendaciones-de-uso-de-la-ia-en-el-g-suite-educativo/"
   },
   {
    "titulo": "Guia d'ajuda a la planificació d'accions formatives sobre intel·ligència artificial. PAF 2026-2027 (CEFIRE, Generalitat Valenciana) (en valenciano)",
@@ -238,6 +348,7 @@
   "Actualizado `comprobado`. WEF sin cambios, pero no reabierto por el verificador (PDF ilegible); se apoya en la pieza de la Biblioteca.",
   "06-11-2026, revisión manual: Cataluña, sin condicional ni la nota de la XTEC; las Orientacions están publicadas (septiembre de 2026) y la página del proyecto en la XTEC está desactualizada: manda el documento publicado. Quitada la XTEC de las fuentes.",
   "07-11-2026, revisión manual: Cataluña, entre 14 y 18 años no hace falta el consentimiento (misión de interés público), autorización recomendada y obligatoria si la herramienta la exige (OIA-02); informar a las familias es un deber, no solo buena práctica; añadido que el Departament retiró el documento de su web.",
-  "07-11-2026, revisión manual: apartado de las administraciones educativas rehecho con las diecisiete comunidades, Ceuta y Melilla y el INTEF, con cada documento oficial abierto y las citas comprobadas; título e infografía ajustados."
+  "07-11-2026, revisión manual: apartado de las administraciones educativas rehecho con las diecisiete comunidades, Ceuta y Melilla y el INTEF, con cada documento oficial abierto y las citas comprobadas; título e infografía ajustados.",
+  "07-11-2026, verificación independiente (dos agentes): corregidos Cataluña (herramientas educativas para menores de 14; autorización «puede ser necesaria»; 3.º de ESO con autorización), Murcia (uso guiado antes de 3.º), Madrid (propuesta sin aprobar; lo del alumnado sale de las directrices de Google Workspace), Canarias (enlace), Comunitat Valenciana, Extremadura, Galicia (proyecto de ley) e INTEF (mediación y herramientas validadas)."
  ]
 }
