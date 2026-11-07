@@ -1106,6 +1106,31 @@ def articulo(prof, ruta, d, p, eds):
 </html>"""
 
 
+VACIO = ' class="vacio"'
+
+
+def tabla(tb):
+    """Una tabla de consulta dentro de un apartado del reportaje: {"titulo", "columnas", "filas", "nota"}.
+    En el móvil cada fila se ve como una ficha, con el nombre de la columna delante (diario.css)."""
+    if not tb or not tb.get("filas"):
+        return ""
+    cols = tb.get("columnas", [])
+    cab = "".join(f'<th scope="col">{e(c)}</th>' for c in cols)
+    filas = "".join("<tr>" + "".join(
+        (f'<th scope="row">{md(x)}</th>' if j == 0 else f'<td data-col="{e(cols[j]) if j < len(cols) else ""}"{VACIO if x.strip() in ("—", "-", "") else ""}>{md(x)}</td>')
+        for j, x in enumerate(f)) + "</tr>" for f in tb["filas"])
+    titulo = f'<caption>{md(tb["titulo"])}</caption>' if tb.get("titulo") else ""
+    nota = f'<p class="tabla-nota">{md(tb["nota"])}</p>' if tb.get("nota") else ""
+    return f'<figure class="tabla"><table>{titulo}<thead><tr>{cab}</tr></thead><tbody>{filas}</tbody></table>{nota}</figure>'
+
+
+def texto_tabla(tb):
+    """Lo que la tabla aporta al buscador."""
+    if not tb:
+        return []
+    return [tb.get("titulo", ""), tb.get("nota", "")] + [x for f in tb.get("filas", []) for x in f]
+
+
 def articulo_reportaje(prof, ruta, d, r, eds):
     """El reportaje: apartados con ladillo, las claves al lado y, al final, las piezas de la semana."""
     apartados = []
@@ -1113,7 +1138,7 @@ def articulo_reportaje(prof, ruta, d, r, eds):
         pars = a.get("parrafos", [])
         cap = ' class="capitular"' if i == 0 and pars and pars[0][:1].isalpha() else ""
         texto = "".join(f"<p{cap if j == 0 else ''}>{md(x)}</p>" for j, x in enumerate(pars))
-        apartados.append((f'<h2 class="ladillo">{e(a["ladillo"])}</h2>' if a.get("ladillo") else "") + texto)
+        apartados.append((f'<h2 class="ladillo">{e(a["ladillo"])}</h2>' if a.get("ladillo") else "") + texto + tabla(a.get("tabla")))
         if i == 0 and r.get("claves"):
             claves = "".join(f"<li>{md(c)}</li>" for c in r["claves"])
             apartados.append(f'<aside class="claves" aria-labelledby="claves-{e(r["id"])}"><h2 id="claves-{e(r["id"])}">{L["claves"]}</h2><ul>{claves}</ul></aside>')
@@ -1845,7 +1870,7 @@ def indice_bot(eds):
                   fuentes=[{"titulo": "", "url": b["url"]}] if b.get("url") else []), [b.get("texto", "")])
         if d.get("reportaje"):
             r = d["reportaje"]
-            parrafos = [t for a in r.get("apartados", []) for t in [a.get("ladillo", "")] + a.get("parrafos", [])]
+            parrafos = [t for a in r.get("apartados", []) for t in [a.get("ladillo", "")] + a.get("parrafos", []) + texto_tabla(a.get("tabla"))]
             poner(d, "reportaje", f'{d["fecha"]}/{r["id"]}.html', r, parrafos + r.get("claves", []))
         if d.get("editorial"):
             ed = d["editorial"]

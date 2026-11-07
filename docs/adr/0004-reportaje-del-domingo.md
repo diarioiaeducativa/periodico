@@ -16,6 +16,12 @@ lunes, con la semana de lunes a domingo.
   sábado). La semana son los siete días que acaban en ese sábado. Entre 1.200 y 1.800
   palabras, en apartados con ladillo, un recuadro de claves y la lista de piezas del diario
   relacionadas. Criterios y forma, en `encargos/reportaje.md`.
+- **Tabla de consulta** (07-11-2026): un apartado puede llevar `"tabla": {"titulo", "columnas",
+  "filas", "nota"}`, que `generar.py` pinta tras sus párrafos como tabla y, en el móvil, como una
+  ficha por fila; su texto entra en el buscador. Nació con el reportaje sobre la edad para usar IA
+  en clase, para que cada docente encuentre su comunidad (Juanjo: «una tabla o similar por
+  comunidades que el profesor pueda tomar como referencia, especialmente si su comunidad no dice
+  nada»). Los agentes no la escriben todavía: se añade a mano cuando el tema lo pide.
 - **Cinco agentes más, en serie** (`scripts/reportaje.sh`): el jefe de reportajes (Opus 5.5)
   elige tema y enfoque; el reportero (Opus 5.5) investiga fuera de los grupos y escribe; el
   verificador (Sonnet 5.5), que no ha escrito nada, abre cada fuente y quita lo que no puede
