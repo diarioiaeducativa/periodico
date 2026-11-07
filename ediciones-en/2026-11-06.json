@@ -159,10 +159,27 @@
       "ilustracion_alt": "Chart with two bars: the short one, labelled “360p”, has “1 credit/s” above it and the tall one, labelled “720p”, has “3 credits/s”. On the right, a film clapperboard and, beneath some coins, the label “50 a day”."
     }
   ],
-  "breves": [],
+  "breves": [
+    {
+      "texto": "Luis Vilela Acuña released the open-source code of Liga de Valores, his app for school Physical Education leagues in which fair play, refereeing and the stands also score, with an installer to run it on the school's own network without an external server. He presents it in [an article in the Revista Española de Educación Física y Deportes](https://doi.org/10.55166/reefd.v440i3.4552).",
+      "url": "https://github.com/edumind-es/liga-de-valores",
+      "grupo": "vce",
+      "mensaje": {
+        "grupo": "vce",
+        "id": 14722
+      }
+    },
+    {
+      "texto": "Antigravity, Google's agent-based programming environment, has run cloud projects managed from the browser since version 2.29 (3 November), instead of on the user's own computer; according to its changelog, it is rolling out to Google AI Pro and Ultra subscribers.",
+      "url": "https://antigravity.google/docs/changelog",
+      "grupo": "vce",
+      "mensaje": {
+        "grupo": "vce",
+        "id": 14729
+      }
+    }
+  ],
   "descartado": [
-    "Liga de Valores (aplicación de Educación Física, artículo en ResearchGate): ResearchGate no carga; la búsqueda web (título, revista, GitHub) no encontró el artículo, la revista ni el repositorio; sin fuente comprobable, se descarta.",
-    "Antigravity con interfaz web (Remote Control) y su disponibilidad en cuentas XTEC: el blog oficial de Google es del 21 de agosto de 2026, no es novedad de hoy, y ni el blog ni la documentación mencionan Workspace, proyectos en la nube ni cuentas XTEC; sin confirmar, se descarta.",
     "Retirada del documento catalán por orden «de arriba»: referencia de oídas en el grupo, sin fuente; el diario ya recogió la situación de la página de XTEC.",
     "Gemini a Google Sites: ya publicado el 5 de noviembre; los comentarios del día anterior no añaden nada nuevo.",
     "Prueba con Blender y un modelo blanco (Gemini Omni 1.2 Flash como renderizador): solo un enlace a X sin original comprobable; no es noticia propia.",
@@ -174,6 +191,7 @@
     "EDUmind MiClase: las funciones nuevas (adaptaciones, refuerzos, competencias clave, PDF de Galicia) pasan a ser «según el autor» porque el repositorio no las recoge.",
     "Añadida pieza corta de EduMedia-IAG sobre los créditos de Omni 1.2 Flash en Flow, con la ayuda oficial de Google, enlazando la pieza de Omni ya publicada; el borrador dejaba al grupo sin pieza.",
     "Descartados corregidos: Antigravity Remote Control es de agosto y no consta lo de XTEC; Liga de Valores buscado sin resultado.",
-    "Comprobados sin cambios: debate de familias (XTEC, enlace a cat-orientacions-ia) y timbre musical."
+    "Comprobados sin cambios: debate de familias (XTEC, enlace a cat-orientacions-ia) y timbre musical.",
+    "Añadidos a mano el 07-11-2026, tras comprobar sus fuentes: el breve de Liga de Valores (artículo en la REEFD, DOI 10.55166/reefd.v440i3.4552, y código con instalador en GitHub desde el 05-11) y el de Antigravity 2.29 (registro de cambios oficial, 03-11; lo de las cuentas XTEC sigue sin fuente y no sale)."
   ]
 }
