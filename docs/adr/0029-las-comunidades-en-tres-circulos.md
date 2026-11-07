@@ -7,7 +7,7 @@ Fecha: 2026-11-06 · Estado: aceptado
 Juanjo pidió tres círculos, uno por grupo, con los miembros de solo cada grupo, los de dos en dos, los de
 los tres y el total de personas distintas: «esto sería informativo pero sería también una especie de
 logotipo» (06-11-2026). Las cifras las cuenta el Bot de IA Educativa, administrador de los tres grupos
-(ADR 0032 del repositorio del bot): una vez por semana deja `datos/comunidades/AAAA-MM-DD.json`, solo cifras.
+(ADR 0032 del repositorio del bot): cada día deja `datos/comunidades/AAAA-MM-DD.json` (hasta el 07-11-2026, cada semana), solo cifras.
 
 ## Decisión
 
