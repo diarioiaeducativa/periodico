@@ -9,9 +9,9 @@
       "grupo": "vce",
       "antetitulo": "La semana del repositorio",
       "titular": "Una subasta de frases, una guía de vibe coding responsable, química, música y libros ilustrados, nuevos en el repositorio",
-      "entradilla": "El Repositorio de recursos de Vibe Coding Educativo suma seis recursos: dos de Juanjo de Haro, uno de Felip Sarroca, uno de FiQuiPedia y dos de Samuel Soriano.",
+      "entradilla": "Desde el 27 de octubre, el Repositorio de recursos de Vibe Coding Educativo suma dieciséis recursos: diez ya tuvieron su artículo en el diario y seis se presentan aquí, dos de Juanjo de Haro, uno de Felip Sarroca, uno de FiQuiPedia y dos de Samuel Soriano.",
       "cuerpo": [
-        "Esta semana entran en el repositorio seis recursos de licencia abierta: una dinámica de debate, una guía para publicar con responsabilidad lo que se crea con IA, dos aplicaciones de formulación y estequiometría en química, un conjunto de juegos de música y un taller de libros ilustrados. Se abren en el navegador y, salvo lo que se indica en cada uno, sin cuenta. Los recursos de una misma persona van juntos."
+        "Se presentan aquí seis recursos de licencia abierta que el diario aún no había contado: una dinámica de debate, una guía para publicar con responsabilidad lo que se crea con IA, dos aplicaciones de formulación y estequiometría en química, un conjunto de juegos de música y un taller de libros ilustrados. Se abren en el navegador y, salvo lo que se indica en cada uno, sin cuenta. Los recursos de una misma persona van juntos."
       ],
       "recursos": [
         {
@@ -94,19 +94,124 @@
         }
       ],
       "fuentes": [
-        {"titulo": "Subasta de frases", "url": "https://jjdeharo.github.io/subasta_frases/"},
-        {"titulo": "Vibe coding responsable", "url": "https://vibe-coding-educativo.github.io/vibe-responsable"},
-        {"titulo": "Presentación en ChatGPT-IA-edu", "url": "https://t.me/ChatGPTedu/53002"},
-        {"titulo": "Presentación en EduMedia-IAG", "url": "https://t.me/EduMediaIAG/11534"},
-        {"titulo": "Reactius i sobrants", "url": "https://ja.cat/reactius"},
-        {"titulo": "Presentación en Vibe Coding Educativo (Reactius i sobrants)", "url": "https://t.me/vceduca/7674/14292"},
-        {"titulo": "FoQa – Formulación Química Inorgánica", "url": "https://foqa.fiquipedia.es/"},
-        {"titulo": "Presentación en Vibe Coding Educativo (FoQa)", "url": "https://t.me/vceduca/7674/12792"},
-        {"titulo": "EduMúsic", "url": "https://edumusic.edutictac.es/"},
-        {"titulo": "EduTicTac Llibres", "url": "https://llibres.edutictac.es/"},
-        {"titulo": "Presentación en Vibe Coding Educativo (EduTicTac Llibres)", "url": "https://t.me/vceduca/7674/14465"}
+        {
+          "titulo": "Subasta de frases",
+          "url": "https://jjdeharo.github.io/subasta_frases/"
+        },
+        {
+          "titulo": "Vibe coding responsable",
+          "url": "https://vibe-coding-educativo.github.io/vibe-responsable"
+        },
+        {
+          "titulo": "Presentación en ChatGPT-IA-edu",
+          "url": "https://t.me/ChatGPTedu/53002"
+        },
+        {
+          "titulo": "Presentación en EduMedia-IAG",
+          "url": "https://t.me/EduMediaIAG/11534"
+        },
+        {
+          "titulo": "Reactius i sobrants",
+          "url": "https://ja.cat/reactius"
+        },
+        {
+          "titulo": "Presentación en Vibe Coding Educativo (Reactius i sobrants)",
+          "url": "https://t.me/vceduca/7674/14292"
+        },
+        {
+          "titulo": "FoQa – Formulación Química Inorgánica",
+          "url": "https://foqa.fiquipedia.es/"
+        },
+        {
+          "titulo": "Presentación en Vibe Coding Educativo (FoQa)",
+          "url": "https://t.me/vceduca/7674/12792"
+        },
+        {
+          "titulo": "EduMúsic",
+          "url": "https://edumusic.edutictac.es/"
+        },
+        {
+          "titulo": "EduTicTac Llibres",
+          "url": "https://llibres.edutictac.es/"
+        },
+        {
+          "titulo": "Presentación en Vibe Coding Educativo (EduTicTac Llibres)",
+          "url": "https://t.me/vceduca/7674/14465"
+        }
       ],
-      "comprobado": "Revisión: vistas las seis capturas y comparadas con la entrada (títulos, autoría, licencias, fichas, archivos). Con WebFetch: Subasta de frases (modos, sin registro, seis idiomas), la guía en /es/ (cinco idiomas, PDF, rúbrica VCER, instrucciones para la IA), FoQa (tests, fórmula→nombres, panel, botones PDF y estado SCORM), EduMúsic (catálogo de actividades, niveles). Reactius, Llibres y la portada de la guía devolvieron poco o nada con WebFetch: mandan la captura y el texto visible. Reactius: visibles los modos, niveles, pista, solución y marcador; glosario, masas atómicas, progreso en el navegador y modo proyector solo en la ficha y el mensaje del autor. Llibres: no se ve eXeLearning, plantillas, .elpx, banco común ni PIN (ficha). EduMúsic: Primaria e instalación como PWA, solo de la ficha. Comprobado que la pieza 2026-11-04/edutictac-blocs existe en publicado.txt y es de Samuel Soriano, y que 2026-11-03/foqo-formulacion-quimica-organica existe y trata de FoQo. Lo de la herramienta (DeepSeek, Moodle) y la guía abierta a sugerencias es del mensaje de su autor."
+      "comprobado": "Revisión: vistas las seis capturas y comparadas con la entrada (títulos, autoría, licencias, fichas, archivos). Con WebFetch: Subasta de frases (modos, sin registro, seis idiomas), la guía en /es/ (cinco idiomas, PDF, rúbrica VCER, instrucciones para la IA), FoQa (tests, fórmula→nombres, panel, botones PDF y estado SCORM), EduMúsic (catálogo de actividades, niveles). Reactius, Llibres y la portada de la guía devolvieron poco o nada con WebFetch: mandan la captura y el texto visible. Reactius: visibles los modos, niveles, pista, solución y marcador; glosario, masas atómicas, progreso en el navegador y modo proyector solo en la ficha y el mensaje del autor. Llibres: no se ve eXeLearning, plantillas, .elpx, banco común ni PIN (ficha). EduMúsic: Primaria e instalación como PWA, solo de la ficha. Comprobado que la pieza 2026-11-04/edutictac-blocs existe en publicado.txt y es de Samuel Soriano, y que 2026-11-03/foqo-formulacion-quimica-organica existe y trata de FoQo. Lo de la herramienta (DeepSeek, Moodle) y la guía abierta a sugerencias es del mensaje de su autor.",
+      "ya_contados": [
+        {
+          "fecha": "2026-11-04",
+          "id": "rompecabezas-tecnica-jigsaw",
+          "titulo": "Rompecabezas – Técnica Jigsaw",
+          "autoria": "Juanjo de Haro",
+          "url": "https://jigsawcoop.github.io/"
+        },
+        {
+          "fecha": "2026-11-03",
+          "id": "laboratori-de-formulacio",
+          "titulo": "Laboratori de formulació",
+          "autoria": "Felip Sarroca i Gil",
+          "url": "https://ja.cat/formulacio"
+        },
+        {
+          "fecha": "2026-10-28",
+          "id": "plec-dictados",
+          "titulo": "Plec · Dictats per desplegar",
+          "autoria": "Aarón Fortuño",
+          "url": "https://plec.ortogra.fi/ca/"
+        },
+        {
+          "fecha": "2026-11-03",
+          "id": "foqo-formulacion-quimica-organica",
+          "titulo": "FoQo - Formulación Química Orgánica",
+          "autoria": "FiQuiPedia",
+          "url": "https://foqo.fiquipedia.es/"
+        },
+        {
+          "fecha": "2026-10-31",
+          "id": "mapa-potencial-gravitatorio",
+          "titulo": "Mapa de potencial gravitatorio",
+          "autoria": "Antonio González",
+          "url": "https://onio72.github.io/iesmajuelo/bach/fi2/t01/mapa_potencial/?v=20261031-3&utm_source=chatgpt.com"
+        },
+        {
+          "fecha": "2026-11-04",
+          "id": "edutictac-blocs",
+          "titulo": "EduTicTac Blocs",
+          "autoria": "Samuel Soriano",
+          "url": "https://blocs.edutictac.es/"
+        },
+        {
+          "fecha": "2026-10-31",
+          "id": "teclado-espanol",
+          "titulo": "Práctica de Teclado Español (ES)",
+          "autoria": "Toni Magraner",
+          "url": "https://amagraneronline.github.io/mrd-26/ud01/actividades/reto2_simbolos_teclado_interactivo.html"
+        },
+        {
+          "fecha": "2026-11-01",
+          "id": "la-teva-veu",
+          "titulo": "La teva veu",
+          "autoria": "Felip Sarroca i Gil",
+          "url": "http://ja.cat/tensveu"
+        },
+        {
+          "fecha": "2026-11-03",
+          "id": "misiones-orbitales",
+          "titulo": "Misiones orbitales",
+          "autoria": "El profe de la bata",
+          "url": "https://github.com/elprofedelabata/misiones-orbitales"
+        },
+        {
+          "fecha": "2026-11-05",
+          "id": "fil-i-compte",
+          "titulo": "Fil i compte",
+          "autoria": "Aarón Fortuño",
+          "url": "https://filicompte.ortogra.fi/"
+        }
+      ]
     }
   ],
   "descartado": [],

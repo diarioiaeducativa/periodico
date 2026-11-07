@@ -50,6 +50,21 @@ hizo así: las secciones del diario van por temas.
   todo lo que queda en la cola, agrupado por autor, con 80 a 120 palabras y una captura por
   recurso: «La semana del repositorio». Una tanda de varios recursos de una persona se queda en
   un bloque, y nada espera más de una semana.
+- **Un resumen de la semana entera** (07-11-2026, Juanjo: «¿y los programas que ya estaban
+  comentados durante la semana?»). La semana va de sábado a viernes (la primera, desde el 27-10).
+  Lo que entró en ella y ya tuvo su artículo, del documentalista o del redactor, no se describe
+  otra vez: `repositorio.py` lo busca en `ediciones/` y `repositorio/` (`ya_contados` en la
+  entrada), `repositorio.sh` lo copia a la pieza tras el repaso y `generar.py` lo pone al final,
+  en «Ya contados en el diario», con la fecha y el enlace a cada artículo. La entradilla da el
+  total de la semana y cuántos se presentan en la pieza. Si la cola está vacía pero en la semana
+  entró algo, la pieza sale igual, sin recursos propios. La traducción no toca esa lista: se lee
+  del original.
+- **Qué es, dicho por el programa.** Bajo la entradilla, una línea fija en los cinco idiomas dice
+  que cada sábado el diario repasa lo que ha entrado en el Repositorio de recursos y qué es ese
+  repositorio, con su enlace. El agente no lo repite.
+- **Una serie dentro de Vibe coding.** Las semanas se quedan en su sección, sin página propia, que
+  repetiría lo de la sección. Cada una lleva al final «Otras semanas del repositorio», y el
+  antetítulo de las anteriores enlaza la última.
 - **El fondo.** Un día flojo con la cola vacía, el programa elige al azar (con la fecha como
   semilla) tres recursos anteriores al 27-10 que no tengan un aviso pendiente de la revisión del
   repositorio (ADR 0013 del bot), con licencia declarada, también por turnos de autor, y que no sean un GPT, un Gem o un

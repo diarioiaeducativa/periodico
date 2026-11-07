@@ -9,7 +9,9 @@ misma que lee su web. Cada recurso que entra desde DESDE va a una cola; sale de 
 diario ya lo ha contado (en una pieza del redactor o en un artículo del repositorio) o cuando se
 descarta. Cada noche decide qué toca, sin IA:
 
-- viernes (el número del sábado): todo lo que queda en la cola, en una sola pieza («semana»);
+- viernes (el número del sábado): todo lo que queda en la cola, en una sola pieza («semana»), con
+  la lista de lo que entró en la semana y ya tuvo su artículo, para que la pieza resuma la semana
+  entera sin repetirlo;
 - otro día con menos de UMBRAL piezas (las del redactor y las de la Biblioteca): hasta MAX_DIA
   recursos de la cola, el más antiguo primero y nunca dos de la misma persona («dia»);
 - un día flojo con la cola vacía: tres candidatos del fondo del repositorio, para que el
@@ -127,6 +129,51 @@ def contados():
                 hechos.add(norm(x["url"]))
     hechos.discard("")
     return hechos
+
+
+def donde_contados():
+    """Por dirección normalizada, dónde lo contó el diario: el artículo del repositorio antes que una
+    noticia del redactor, y entre noticias, la primera. {"fecha", "id"} o {"fecha", "breve": n}."""
+    sitio = {}
+    for f in sorted((RAIZ / "ediciones").glob("*.json")):
+        d = json.loads(f.read_text())
+        if not (d.get("hay_edicion") and d.get("piezas")):
+            continue
+        for p in d["piezas"]:
+            for u in re.findall(r"https?://[^\s\"')\]]+", json.dumps(p, ensure_ascii=False)):
+                sitio.setdefault(norm(u), {"fecha": f.stem, "id": p["id"]})
+        for i, b in enumerate(d.get("breves", []), 1):
+            for u in re.findall(r"https?://[^\s\"')\]]+", json.dumps(b, ensure_ascii=False)):
+                sitio.setdefault(norm(u), {"fecha": f.stem, "breve": i})
+    for f in sorted((RAIZ / "repositorio").glob("*.json")):
+        for p in json.loads(f.read_text()).get("piezas", []):
+            for x in p.get("recursos", []):
+                sitio[norm(x.get("url"))] = {"fecha": f.stem, "id": p["id"]}
+    sitio.pop("", None)
+    return sitio
+
+
+def inicio_semana(fecha):
+    """La semana del repositorio va del día siguiente al de la anterior hasta fecha (de sábado a
+    viernes); la primera, desde DESDE."""
+    previas = [f.stem for f in (RAIZ / "repositorio").glob("*.json") if f.stem < fecha and
+               any(p.get("repositorio") == "semana" for p in json.loads(f.read_text()).get("piezas", []))]
+    if not previas:
+        return DESDE
+    return (datetime.date.fromisoformat(max(previas)) + datetime.timedelta(days=1)).isoformat()
+
+
+def contados_semana(fecha, todos, hechos):
+    """Lo que entró en el repositorio esta semana y el diario ya contó: la pieza del sábado lo lista
+    con el enlace a su artículo, sin volver a describirlo. Lo descartado no sale."""
+    desde, sitio, ya = inicio_semana(fecha), donde_contados(), []
+    for r in sorted(todos, key=lambda r: r["alta"]):
+        if not (r["alta"] and desde <= r["alta"] <= fecha and ya_contado(r, hechos)):
+            continue
+        donde = sitio.get(norm(r["url"])) or sitio.get(norm(r.get("destino") or ""))
+        if donde:
+            ya.append(dict(donde, titulo=r["titulo"], autoria=r["autor"], url=r["url"]))
+    return ya
 
 
 def turnos():
@@ -257,20 +304,24 @@ def preparar(r, usados):
 
 
 def elegir(fecha, base, pedidos):
+    """Devuelve el modo, los recursos que hay que contar y, el viernes, lo ya contado en la semana."""
     todos = hoja()
     hechos = contados()
     if pedidos:
         p = {norm(u) for u in pedidos}
-        return "dia", [r for r in todos if norm(r["url"]) in p]
+        return "dia", [r for r in todos if norm(r["url"]) in p], []
     cola = sorted((r for r in todos if r["alta"] and DESDE <= r["alta"] <= fecha and not ya_contado(r, hechos)),
                   key=lambda r: r["alta"])
     flojo = piezas_del_dia(fecha) < UMBRAL
+    viernes = datetime.date.fromisoformat(fecha).isoweekday() == VIERNES
+    ya = contados_semana(fecha, todos, hechos) if viernes or os.environ.get("REPOSITORIO_MODO") == "semana" else []
+    # El sábado sale la pieza aunque la cola esté vacía, si en la semana entró algo: es el resumen
     modo = os.environ.get("REPOSITORIO_MODO") or (
-        "semana" if datetime.date.fromisoformat(fecha).isoweekday() == VIERNES and cola else
+        "semana" if viernes and (cola or ya) else
         "dia" if flojo and cola else "fondo" if flojo else "")
     print(f"repositorio: {len(cola)} en la cola, {piezas_del_dia(fecha)} pieza(s) en el número, modo {modo or 'ninguno'}")
     if modo == "semana":
-        return modo, cola
+        return modo, cola, ya
     if modo == "dia":
         hueco = max(1, min(MAX_DIA, UMBRAL - piezas_del_dia(fecha)))
         elegidos, autores = [], set()
@@ -281,7 +332,7 @@ def elegir(fecha, base, pedidos):
                 autores.add(r["autor"].lower())
             if len(elegidos) == hueco:
                 break
-        return modo, elegidos
+        return modo, elegidos, []
     if modo == "fondo":
         avisos = con_aviso(base)
         fondo = [r for r in todos if r["alta"] and r["alta"] < DESDE and norm(r["url"]) not in hechos
@@ -291,17 +342,17 @@ def elegir(fecha, base, pedidos):
         fondo.sort(key=lambda r: turno.get(r["autor"].strip().lower(), ""))
         # La dirección final cuenta también: hay fichas con acortador (ja.cat) y avisos guardados con la final
         buenos = [r for r in fondo[:CANDIDATOS_FONDO * 4] if not ya_contado(r, hechos) and norm(r["destino"]) not in avisos]
-        return modo, buenos[:CANDIDATOS_FONDO * 2]   # el doble, por si alguno no abre
-    return "", []
+        return modo, buenos[:CANDIDATOS_FONDO * 2], []   # el doble, por si alguno no abre
+    return "", [], []
 
 
 def main():
     base, out, fecha = pathlib.Path(sys.argv[1]), pathlib.Path(sys.argv[2]), sys.argv[3]
-    modo, elegidos = elegir(fecha, base, sys.argv[4:])
-    if not elegidos:
+    modo, elegidos, ya = elegir(fecha, base, sys.argv[4:])
+    if not elegidos and not ya:
         sys.exit(3)
     usados = set()
-    recursos = capturar([preparar(r, usados) for r in elegidos], fecha)
+    recursos = capturar([preparar(r, usados) for r in elegidos], fecha) if elegidos else []
     abren = [r for r in recursos if r["abre"]]
     no_abren = [r for r in recursos if not r["abre"]]
     for r in no_abren:
@@ -311,21 +362,33 @@ def main():
     # El sábado, lo que sigue sin abrir sale de la cola: se descarta con su motivo
     descartes = [{"url": r["url"], "motivo": f"no abre: {r.get('error') or r.get('estado_http')}"} for r in no_abren] if modo == "semana" else []
     out.mkdir(parents=True, exist_ok=True)
-    (out / f"{fecha}.json").write_text(json.dumps({"fecha": fecha, "modo": modo, "recursos": abren, "descartes": descartes},
-                                                  ensure_ascii=False, indent=1))
-    if not abren:
+    (out / f"{fecha}.json").write_text(json.dumps({"fecha": fecha, "modo": modo, "recursos": abren, "descartes": descartes,
+                                                   "ya_contados": ya}, ensure_ascii=False, indent=1))
+    if not abren and not ya:
         print("repositorio: ninguno de los elegidos abre")
         sys.exit(3)
     grupos = presentaciones(base, abren)
     rotulo = {"dia": "Nuevo en el repositorio", "semana": "La semana del repositorio", "fondo": "Del fondo del repositorio"}[modo]
     que = {"dia": f"{len(abren)} recurso(s) de la cola: un artículo por cada uno.",
-           "semana": f"los {len(abren)} recursos que quedan en la cola: una sola pieza con todos." if len(abren) > 1 else
+           "semana": (f"los {len(abren)} recursos que quedan en la cola: una sola pieza con todos." if len(abren) > 1 else
+                      "el único recurso que queda en la cola: una sola pieza, la de la semana." if abren else
+                      "no queda ningún recurso por contar: una pieza breve, sin `recursos`, que resume la semana.")
+                     if ya else
+                     f"los {len(abren)} recursos que quedan en la cola: una sola pieza con todos." if len(abren) > 1 else
                      "el único recurso que queda en la cola: un artículo, como un día flojo.",
            "fondo": f"{len(abren)} candidatos del fondo del repositorio: elige uno y escribe su artículo."}[modo]
     partes = [f"# Repositorio de recursos de Vibe Coding Educativo · para el número con fecha {fecha}\n",
-              f"- Modo: **{modo if not (modo == 'semana' and len(abren) == 1) else 'dia'}** — {que}",
+              f"- Modo: **{'dia' if modo == 'semana' and len(abren) == 1 and not ya else modo}** — {que}",
               f"- Antetítulo de la pieza: «{rotulo}»",
               f"- Web del repositorio: {WEB}\n"]
+    if ya:
+        partes.append(f"## Ya contados esta semana ({len(ya)})\n\n"
+                      f"Esta semana (desde el {inicio_semana(fecha)}) han entrado en el repositorio {len(ya) + len(abren)} recursos: "
+                      f"{len(abren)} se presentan en esta pieza y {len(ya)} ya tuvieron su artículo en el diario. Estos "
+                      f"{len(ya)} no se describen otra vez: el programa añade al final de la pieza su lista, con el enlace a su "
+                      "artículo. La entradilla da el total de la semana y cuántos se presentan aquí.\n")
+        partes += [f"- «{x['titulo']}», de {x['autoria']} (artículo del {x['fecha']})" for x in ya]
+        partes.append("")
     for r in abren:
         partes.append(f"\n## Recurso «{r['titulo']}» (id `{r['id']}`)\n")
         for etiqueta, clave in (("Autoría (tal como figura en la ficha)", "autor"), ("Enlace", "url"), ("Ficha en el repositorio", "ficha"),

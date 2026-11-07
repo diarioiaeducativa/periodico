@@ -9,9 +9,9 @@
       "grupo": "vce",
       "antetitulo": "A semana do repositorio",
       "titular": "Unha poxa de frases, unha guía de vibe coding responsable, química, música e libros ilustrados, novos no repositorio",
-      "entradilla": "O Repositorio de recursos de Vibe Coding Educativo suma seis recursos: dous de Juanjo de Haro, un de Felip Sarroca, un de FiQuiPedia e dous de Samuel Soriano.",
+      "entradilla": "Desde o 27 de outubro, o Repositorio de recursos de Vibe Coding Educativo suma dezaseis recursos: dez xa tiveron o seu artigo no diario e seis preséntanse aquí, dous de Juanjo de Haro, un de Felip Sarroca, un de FiQuiPedia e dous de Samuel Soriano.",
       "cuerpo": [
-        "Esta semana entran no repositorio seis recursos de licenza aberta: unha dinámica de debate, unha guía para publicar con responsabilidade o que se crea con IA, dúas aplicacións de formulación e estequiometría en química, un conxunto de xogos de música e un taller de libros ilustrados. Ábrense no navegador e, salvo o que se indica en cada un, sen conta. Os recursos dunha mesma persoa van xuntos."
+        "Preséntanse aquí seis recursos de licenza aberta que o diario aínda non contara: unha dinámica de debate, unha guía para publicar con responsabilidade o que se crea con IA, dúas aplicacións de formulación e estequiometría en química, un conxunto de xogos de música e un taller de libros ilustrados. Ábrense no navegador e, salvo o que se indica en cada un, sen conta. Os recursos dunha mesma persoa van xuntos."
       ],
       "recursos": [
         {
@@ -94,17 +94,50 @@
         }
       ],
       "fuentes": [
-        {"titulo": "Subasta de frases", "url": "https://jjdeharo.github.io/subasta_frases/"},
-        {"titulo": "Vibe coding responsable", "url": "https://vibe-coding-educativo.github.io/vibe-responsable"},
-        {"titulo": "Presentación en ChatGPT-IA-edu (en castelán)", "url": "https://t.me/ChatGPTedu/53002"},
-        {"titulo": "Presentación en EduMedia-IAG (en castelán)", "url": "https://t.me/EduMediaIAG/11534"},
-        {"titulo": "Reactius i sobrants", "url": "https://ja.cat/reactius"},
-        {"titulo": "Presentación en Vibe Coding Educativo (Reactius i sobrants) (en castelán)", "url": "https://t.me/vceduca/7674/14292"},
-        {"titulo": "FoQa – Formulación Química Inorgánica", "url": "https://foqa.fiquipedia.es/"},
-        {"titulo": "Presentación en Vibe Coding Educativo (FoQa) (en castelán)", "url": "https://t.me/vceduca/7674/12792"},
-        {"titulo": "EduMúsic", "url": "https://edumusic.edutictac.es/"},
-        {"titulo": "EduTicTac Llibres", "url": "https://llibres.edutictac.es/"},
-        {"titulo": "Presentación en Vibe Coding Educativo (EduTicTac Llibres) (en castelán)", "url": "https://t.me/vceduca/7674/14465"}
+        {
+          "titulo": "Subasta de frases",
+          "url": "https://jjdeharo.github.io/subasta_frases/"
+        },
+        {
+          "titulo": "Vibe coding responsable",
+          "url": "https://vibe-coding-educativo.github.io/vibe-responsable"
+        },
+        {
+          "titulo": "Presentación en ChatGPT-IA-edu (en castelán)",
+          "url": "https://t.me/ChatGPTedu/53002"
+        },
+        {
+          "titulo": "Presentación en EduMedia-IAG (en castelán)",
+          "url": "https://t.me/EduMediaIAG/11534"
+        },
+        {
+          "titulo": "Reactius i sobrants",
+          "url": "https://ja.cat/reactius"
+        },
+        {
+          "titulo": "Presentación en Vibe Coding Educativo (Reactius i sobrants) (en castelán)",
+          "url": "https://t.me/vceduca/7674/14292"
+        },
+        {
+          "titulo": "FoQa – Formulación Química Inorgánica",
+          "url": "https://foqa.fiquipedia.es/"
+        },
+        {
+          "titulo": "Presentación en Vibe Coding Educativo (FoQa) (en castelán)",
+          "url": "https://t.me/vceduca/7674/12792"
+        },
+        {
+          "titulo": "EduMúsic",
+          "url": "https://edumusic.edutictac.es/"
+        },
+        {
+          "titulo": "EduTicTac Llibres",
+          "url": "https://llibres.edutictac.es/"
+        },
+        {
+          "titulo": "Presentación en Vibe Coding Educativo (EduTicTac Llibres) (en castelán)",
+          "url": "https://t.me/vceduca/7674/14465"
+        }
       ],
       "comprobado": "Revisión: vistas las seis capturas y comparadas con la entrada (títulos, autoría, licencias, fichas, archivos). Con WebFetch: Subasta de frases (modos, sin registro, seis idiomas), la guía en /es/ (cinco idiomas, PDF, rúbrica VCER, instrucciones para la IA), FoQa (tests, fórmula→nombres, panel, botones PDF y estado SCORM), EduMúsic (catálogo de actividades, niveles). Reactius, Llibres y la portada de la guía devolvieron poco o nada con WebFetch: mandan la captura y el texto visible. Reactius: visibles los modos, niveles, pista, solución y marcador; glosario, masas atómicas, progreso en el navegador y modo proyector solo en la ficha y el mensaje del autor. Llibres: no se ve eXeLearning, plantillas, .elpx, banco común ni PIN (ficha). EduMúsic: Primaria e instalación como PWA, solo de la ficha. Comprobado que la pieza 2026-11-04/edutictac-blocs existe en publicado.txt y es de Samuel Soriano, y que 2026-11-03/foqo-formulacion-quimica-organica existe y trata de FoQo. Lo de la herramienta (DeepSeek, Moodle) y la guía abierta a sugerencias es del mensaje de su autor."
     }

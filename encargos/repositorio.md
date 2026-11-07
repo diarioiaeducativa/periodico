@@ -10,8 +10,15 @@ la única revisión.
 La entrada (`repositorio-entrada/<FECHA>.md`) dice el **modo**:
 
 - **dia**: un artículo por cada recurso de la entrada. Antetítulo «Nuevo en el repositorio».
-- **semana**: el número del sábado repasa lo que ha entrado en la semana y aún no ha contado el
-  diario. **Una sola pieza** con todos los recursos. Antetítulo «La semana del repositorio».
+- **semana**: el número del sábado resume la semana del repositorio. **Una sola pieza** con
+  todos los recursos que aún no ha contado el diario. Antetítulo «La semana del repositorio».
+  Lo que entró en la semana y ya tuvo su artículo viene en la entrada, en «Ya contados esta
+  semana»: no lo describas otra vez, porque el programa añade al final de la pieza su lista con
+  el enlace a cada artículo. La entradilla da el total de la semana y cuántos se presentan aquí
+  («El Repositorio de recursos de Vibe Coding Educativo suma esta semana nueve recursos: cuatro
+  se presentan aquí y cinco ya tuvieron su artículo»). Si no queda ninguno por contar, la pieza
+  va sin `recursos`: titular, entradilla y un párrafo breve que resume la semana a partir de esa
+  lista.
 - **fondo**: un día con poco que contar y sin recursos nuevos. La entrada trae varios recursos
   antiguos del repositorio: **elige uno**, el que más pueda servir hoy a un docente y funcione
   bien, y escribe su artículo. Antetítulo «Del fondo del repositorio». Los demás no se
@@ -88,7 +95,9 @@ de `publicado.txt`.
   mapa del potencial gravitatorio, nuevos en el repositorio»).
 - **dia** y **fondo**: entre 250 y 350 palabras de cuerpo, en párrafos de 3 a 5 frases.
 - **semana**: `cuerpo` con un solo párrafo breve de presentación (2 o 3 frases: cuántos
-  recursos, de qué tratan); cada recurso, en su `texto`, con 80 a 120 palabras.
+  recursos, de qué tratan); cada recurso, en su `texto`, con 80 a 120 palabras. No expliques qué
+  es el repositorio ni que la pieza sale cada sábado: lo dice una línea fija que pone el programa
+  bajo la entradilla.
 
 ## Salida
 

@@ -95,6 +95,21 @@ for intento in 1 2; do
 done
 ids=$(piezas "repositorio/$FECHA.json")
 [ -n "$ids" ] || { log "repositorio: el revisor no da ningún artículo por bueno"; exit 2; }
+# Lo ya contado en la semana lo pone el programa, no el agente: la pieza del sábado lo lista con el
+# enlace a su artículo (ADR 0008)
+python3 - "$FECHA" <<'PY'
+import json, pathlib, sys
+fecha = sys.argv[1]
+ent = pathlib.Path(f"repositorio-entrada/{fecha}.json")
+ya = json.loads(ent.read_text()).get("ya_contados", []) if ent.exists() else []
+if ya:
+    f = pathlib.Path(f"repositorio/{fecha}.json")
+    d = json.loads(f.read_text())
+    for p in d.get("piezas", []):
+        if p.get("repositorio") == "semana":
+            p["ya_contados"] = ya
+    f.write_text(json.dumps(d, ensure_ascii=False, indent=1))
+PY
 # Las capturas que no se usan no se publican ni se guardan
 python3 - "$FECHA" <<'PY'
 import json, pathlib, sys

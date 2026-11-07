@@ -9,9 +9,9 @@
       "grupo": "vce",
       "antetitulo": "Biltegiaren astea",
       "titular": "Esaldien enkante bat, vibe coding arduratsuaren gida bat, kimika, musika eta liburu ilustratuak, berriak biltegian",
-      "entradilla": "Vibe Coding Educativoren Baliabideen biltegiak sei baliabide berri ditu: bi Juanjo de Harorenak, bat Felip Sarrocarena, bat FiQuiPediarena eta bi Samuel Sorianorenak.",
+      "entradilla": "Urriaren 27tik, Vibe Coding Educativoren Baliabideen biltegiak hamasei baliabide berri ditu: hamarrek dagoeneko izan dute beren artikulua egunkarian, eta sei hemen aurkezten dira: bi Juanjo de Harorenak, bat Felip Sarrocarena, bat FiQuiPediarena eta bi Samuel Sorianorenak.",
       "cuerpo": [
-        "Aste honetan lizentzia irekiko sei baliabide sartu dira biltegian: eztabaida-dinamika bat, AArekin sortutakoa arduraz argitaratzeko gida bat, kimikako formulazio- eta estekiometria-aplikazio bi, musika-jolasen multzo bat eta liburu ilustratuen tailer bat. Nabigatzailean irekitzen dira, eta, bakoitzean adierazten denaz gain, konturik gabe. Pertsona beraren baliabideak elkarrekin doaz."
+        "Hemen aurkezten dira egunkariak oraindik kontatu ez zituen lizentzia irekiko sei baliabide: eztabaida-dinamika bat, AArekin sortutakoa arduraz argitaratzeko gida bat, kimikako formulazio- eta estekiometria-aplikazio bi, musika-jolasen multzo bat eta liburu ilustratuen tailer bat. Nabigatzailean irekitzen dira, eta, bakoitzean adierazten denaz gain, konturik gabe. Pertsona beraren baliabideak elkarrekin doaz."
       ],
       "recursos": [
         {
@@ -94,17 +94,50 @@
         }
       ],
       "fuentes": [
-        {"titulo": "Subasta de frases", "url": "https://jjdeharo.github.io/subasta_frases/"},
-        {"titulo": "Vibe coding responsable (gaztelaniaz)", "url": "https://vibe-coding-educativo.github.io/vibe-responsable"},
-        {"titulo": "Aurkezpena ChatGPT-IA-edun (gaztelaniaz)", "url": "https://t.me/ChatGPTedu/53002"},
-        {"titulo": "Aurkezpena EduMedia-IAGn (gaztelaniaz)", "url": "https://t.me/EduMediaIAG/11534"},
-        {"titulo": "Reactius i sobrants (katalanez)", "url": "https://ja.cat/reactius"},
-        {"titulo": "Aurkezpena Vibe Coding Educativon (Reactius i sobrants) (gaztelaniaz)", "url": "https://t.me/vceduca/7674/14292"},
-        {"titulo": "FoQa – Formulación Química Inorgánica (gaztelaniaz)", "url": "https://foqa.fiquipedia.es/"},
-        {"titulo": "Aurkezpena Vibe Coding Educativon (FoQa) (gaztelaniaz)", "url": "https://t.me/vceduca/7674/12792"},
-        {"titulo": "EduMúsic (valentzieraz, gaztelaniaz eta ingelesez)", "url": "https://edumusic.edutictac.es/"},
-        {"titulo": "EduTicTac Llibres (gaztelaniaz)", "url": "https://llibres.edutictac.es/"},
-        {"titulo": "Aurkezpena Vibe Coding Educativon (EduTicTac Llibres) (gaztelaniaz)", "url": "https://t.me/vceduca/7674/14465"}
+        {
+          "titulo": "Subasta de frases",
+          "url": "https://jjdeharo.github.io/subasta_frases/"
+        },
+        {
+          "titulo": "Vibe coding responsable (gaztelaniaz)",
+          "url": "https://vibe-coding-educativo.github.io/vibe-responsable"
+        },
+        {
+          "titulo": "Aurkezpena ChatGPT-IA-edun (gaztelaniaz)",
+          "url": "https://t.me/ChatGPTedu/53002"
+        },
+        {
+          "titulo": "Aurkezpena EduMedia-IAGn (gaztelaniaz)",
+          "url": "https://t.me/EduMediaIAG/11534"
+        },
+        {
+          "titulo": "Reactius i sobrants (katalanez)",
+          "url": "https://ja.cat/reactius"
+        },
+        {
+          "titulo": "Aurkezpena Vibe Coding Educativon (Reactius i sobrants) (gaztelaniaz)",
+          "url": "https://t.me/vceduca/7674/14292"
+        },
+        {
+          "titulo": "FoQa – Formulación Química Inorgánica (gaztelaniaz)",
+          "url": "https://foqa.fiquipedia.es/"
+        },
+        {
+          "titulo": "Aurkezpena Vibe Coding Educativon (FoQa) (gaztelaniaz)",
+          "url": "https://t.me/vceduca/7674/12792"
+        },
+        {
+          "titulo": "EduMúsic (valentzieraz, gaztelaniaz eta ingelesez)",
+          "url": "https://edumusic.edutictac.es/"
+        },
+        {
+          "titulo": "EduTicTac Llibres (gaztelaniaz)",
+          "url": "https://llibres.edutictac.es/"
+        },
+        {
+          "titulo": "Aurkezpena Vibe Coding Educativon (EduTicTac Llibres) (gaztelaniaz)",
+          "url": "https://t.me/vceduca/7674/14465"
+        }
       ],
       "comprobado": "Revisión: vistas las seis capturas y comparadas con la entrada (títulos, autoría, licencias, fichas, archivos). Con WebFetch: Subasta de frases (modos, sin registro, seis idiomas), la guía en /es/ (cinco idiomas, PDF, rúbrica VCER, instrucciones para la IA), FoQa (tests, fórmula→nombres, panel, botones PDF y estado SCORM), EduMúsic (catálogo de actividades, niveles). Reactius, Llibres y la portada de la guía devolvieron poco o nada con WebFetch: mandan la captura y el texto visible. Reactius: visibles los modos, niveles, pista, solución y marcador; glosario, masas atómicas, progreso en el navegador y modo proyector solo en la ficha y el mensaje del autor. Llibres: no se ve eXeLearning, plantillas, .elpx, banco común ni PIN (ficha). EduMúsic: Primaria e instalación como PWA, solo de la ficha. Comprobado que la pieza 2026-11-04/edutictac-blocs existe en publicado.txt y es de Samuel Soriano, y que 2026-11-03/foqo-formulacion-quimica-organica existe y trata de FoQo. Lo de la herramienta (DeepSeek, Moodle) y la guía abierta a sugerencias es del mensaje de su autor."
     }

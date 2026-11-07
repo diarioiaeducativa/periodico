@@ -71,7 +71,7 @@ GL = {
     "resultados_1": "1 resultado", "resultados_n": "{n} resultados", "sin_resultados": "Non hai nada publicado con esas palabras.",
     "todas": "Todas", "mas_resultados": "Máis resultados", "buscando": "Buscando…", "sin_buscador": "O buscador non puido cargarse.",
     "reportaje": "A reportaxe do domingo", "reportajes": "Reportaxes", "leer_reportaje": "Ler a reportaxe",
-    "claves": "Claves", "en_el_diario": "No diario esta semana", "sin_reportajes": "Aínda non hai reportaxes.",
+    "claves": "Claves", "en_el_diario": "No diario esta semana", "semana_repo": "Cada sábado, o diario repasa os recursos que entraron durante a semana no {repositorio} de Vibe Coding Educativo, a colección de aplicacións e materiais con licenza aberta que crea e comparte o profesorado desa comunidade.", "ya_contados": "Xa contados no diario", "otras_semanas": "Outras semanas do repositorio", "sin_reportajes": "Aínda non hai reportaxes.",
     "reportajes_txt": "Cada domingo, un tema da semana tratado a fondo.", "palabras": "minutos de lectura",
     "redaccion": {
         "intro": "O Diario de IA Educativa escríbeo unha redacción de axentes de intelixencia artificial, cada un co seu oficio, que se revisan entre eles. Idéano, deséñano e supervísano persoas, e sae cada mañá ás 7:00 en castelán, e traducido ao catalán, ao galego, ao éuscaro e ao inglés.",
@@ -188,7 +188,7 @@ EU = {
     "resultados_1": "Emaitza 1", "resultados_n": "{n} emaitza", "sin_resultados": "Ez dago hitz horiekin argitaratutako ezer.",
     "todas": "Guztiak", "mas_resultados": "Emaitza gehiago", "buscando": "Bilatzen…", "sin_buscador": "Ezin izan da bilatzailea kargatu.",
     "reportaje": "Igandeko erreportajea", "reportajes": "Erreportajeak", "leer_reportaje": "Irakurri erreportajea",
-    "claves": "Gakoak", "en_el_diario": "Egunkarian aste honetan", "sin_reportajes": "Oraindik ez dago erreportajerik.",
+    "claves": "Gakoak", "en_el_diario": "Egunkarian aste honetan", "semana_repo": "Vibe Coding Educativoren {repositorio} komunitate horretako irakasleek sortu eta lizentzia irekiarekin partekatzen dituzten aplikazio eta materialen bilduma da. Larunbatero, egunkariak astean zehar bertan sartu diren baliabideak errepasatzen ditu.", "ya_contados": "Egunkarian lehendik kontatuak", "otras_semanas": "Biltegiaren beste asteak", "sin_reportajes": "Oraindik ez dago erreportajerik.",
     "reportajes_txt": "Igandero, asteko gai bat sakon landua.", "palabras": "minutuko irakurketa",
     "redaccion": {
         "intro": "Hezkuntzako AA Egunkaria adimen artifizialeko agenteen erredakzio batek idazten du, bakoitza bere ofizioarekin, eta elkar berrikusten dute. Pertsonek asmatu, diseinatu eta gainbegiratzen dute, eta goizero 7:00etan argitaratzen da gaztelaniaz, eta katalanera, galegora, euskarara eta ingelesera itzulita.",
@@ -305,7 +305,7 @@ EN = {
     "resultados_1": "1 result", "resultados_n": "{n} results", "sin_resultados": "Nothing has been published with those words.",
     "todas": "All", "mas_resultados": "More results", "buscando": "Searching…", "sin_buscador": "The search could not be loaded.",
     "reportaje": "The Sunday feature", "reportajes": "Features", "leer_reportaje": "Read the feature",
-    "claves": "Key points", "en_el_diario": "In the paper this week", "sin_reportajes": "There are no features yet.",
+    "claves": "Key points", "en_el_diario": "In the paper this week", "semana_repo": "Every Saturday, the paper reviews the resources added during the week to the Vibe Coding Educativo {repositorio}, the collection of openly licensed apps and materials created and shared by teachers in that community.", "ya_contados": "Already covered in the paper", "otras_semanas": "Other weeks of the repository", "sin_reportajes": "There are no features yet.",
     "reportajes_txt": "Every Sunday, one topic of the week in depth.", "palabras": "minute read",
     "redaccion": {
         "intro": "Educational AI Daily is written by a newsroom of artificial intelligence agents, each with its own job, which review one another. It is conceived, designed and supervised by people, and comes out every morning at 7:00 (Spanish time) in Spanish, and translated into Catalan, Galician, Basque and English.",

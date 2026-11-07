@@ -114,7 +114,7 @@ IDIOMAS = {
         "resultados_1": "1 resultado", "resultados_n": "{n} resultados", "sin_resultados": "No hay nada publicado con esas palabras.",
         "todas": "Todas", "mas_resultados": "Más resultados", "buscando": "Buscando…", "sin_buscador": "El buscador no ha podido cargarse.",
         "reportaje": "El reportaje del domingo", "reportajes": "Reportajes", "leer_reportaje": "Leer el reportaje",
-        "claves": "Claves", "en_el_diario": "En el diario esta semana", "sin_reportajes": "Todavía no hay reportajes.",
+        "claves": "Claves", "en_el_diario": "En el diario esta semana", "semana_repo": "Cada sábado, el diario repasa los recursos que han entrado durante la semana en el {repositorio} de Vibe Coding Educativo, la colección de aplicaciones y materiales con licencia abierta que crea y comparte el profesorado de esa comunidad.", "ya_contados": "Ya contados en el diario", "otras_semanas": "Otras semanas del repositorio", "sin_reportajes": "Todavía no hay reportajes.",
         "reportajes_txt": "Cada domingo, un tema de la semana tratado a fondo.", "palabras": "minutos de lectura",
         "redaccion": {
             "intro": "El Diario de IA Educativa lo escribe una redacción de agentes de inteligencia artificial, cada uno con su oficio, que se revisan entre ellos. Lo idean, lo diseñan y lo supervisan personas, y sale cada mañana a las 7:00 en castellano, y traducido al catalán, al gallego, al euskera y al inglés.",
@@ -230,7 +230,7 @@ IDIOMAS = {
         "resultados_1": "1 resultat", "resultados_n": "{n} resultats", "sin_resultados": "No hi ha res publicat amb aquestes paraules.",
         "todas": "Totes", "mas_resultados": "Més resultats", "buscando": "Cercant…", "sin_buscador": "El cercador no s'ha pogut carregar.",
         "reportaje": "El reportatge del diumenge", "reportajes": "Reportatges", "leer_reportaje": "Llegeix el reportatge",
-        "claves": "Claus", "en_el_diario": "Al diari aquesta setmana", "sin_reportajes": "Encara no hi ha reportatges.",
+        "claves": "Claus", "en_el_diario": "Al diari aquesta setmana", "semana_repo": "Cada dissabte, el diari repassa els recursos que han entrat durant la setmana al {repositorio} de Vibe Coding Educativo, la col·lecció d'aplicacions i materials amb llicència oberta que crea i comparteix el professorat d'aquesta comunitat.", "ya_contados": "Ja explicats al diari", "otras_semanas": "Altres setmanes del repositori", "sin_reportajes": "Encara no hi ha reportatges.",
         "reportajes_txt": "Cada diumenge, un tema de la setmana tractat a fons.", "palabras": "minuts de lectura",
         "redaccion": {
             "intro": "El Diari d'IA Educativa l'escriu una redacció d'agents d'intel·ligència artificial, cadascun amb el seu ofici, que es revisen entre ells. L'ideen, el dissenyen i el supervisen persones, i surt cada matí a les 7.00 en castellà, i traduït al català, al gallec, al basc i a l'anglès.",
@@ -463,6 +463,12 @@ def cargar():
             d["piezas"] = d["piezas"] + bib
         if (RAIZ / "repositorio" / nombre).exists():   # los recursos del Repositorio de VCE (ADR 0008)
             rep_ = json.loads(con_traduccion("repositorio", nombre).read_text()).get("piezas", [])
+            # La lista de lo ya contado en la semana la pone el programa en el original, no se traduce
+            ya = {x["id"]: x["ya_contados"] for x in json.loads((RAIZ / "repositorio" / nombre).read_text()).get("piezas", [])
+                  if x.get("ya_contados")}
+            for x in rep_:
+                if x["id"] in ya:
+                    x["ya_contados"] = ya[x["id"]]
             for x in rep_:   # con captura, salen como destacados
                 x["importancia"] = 2 if any(r.get("captura") for r in x.get("recursos", [])) else 3
             d["piezas"] = d["piezas"] + rep_
@@ -486,6 +492,9 @@ def cargar():
             p = por_id.get((y.get("fecha"), y.get("id")))
             if p and y.get("mensaje"):
                 p["biblioteca"] = y["mensaje"]
+    global ULTIMA_SEMANA   # la última «Semana del repositorio»: a ella lleva el antetítulo de las demás
+    semanas = [p for d in eds for p in d["piezas"] if p.get("repositorio") == "semana"]
+    ULTIMA_SEMANA = semanas[-1] if semanas else None
     n = 0
     for d in eds:   # cada día con piezas desde el lanzamiento es un número del diario
         if d["fecha"] >= LANZAMIENTO:
@@ -516,6 +525,7 @@ def recursos(prof):
 
 
 ULTIMA = None   # fecha del último número, para la imagen de vista previa de la portada
+ULTIMA_SEMANA = None   # la última pieza «La semana del repositorio» (ADR 0008)
 
 
 def imagen_og(ruta, codigo):
@@ -806,8 +816,12 @@ def rotulos(p, mostrar_fecha, prof="", sin_seccion=False):
     rotulo = f'<a href="{prof}{sec}.html">{icono(sec)} {nombre}</a>' if sec in L["secciones"] else nombre
     if sin_seccion:   # en la página de la sección, el nombre ya está en el título
         rotulo = ""
+    ante = e(p.get("antetitulo"))
+    u = ULTIMA_SEMANA
+    if p.get("repositorio") == "semana" and u and (u["fecha"], u["id"]) != (p.get("fecha"), p.get("id")):
+        ante = f'<a href="{href(prof, u)}">{ante}</a>'   # es una serie: lleva a la última
     return f"""<p class="seccion"><span>{rotulo}</span>{fecha}</p>
-  <p class="antetitulo">{e(p.get("antetitulo"))}</p>"""
+  <p class="antetitulo">{ante}</p>"""
 
 
 def pieza(prof, p, clase, nivel, con_ilu, mostrar_fecha, sin_seccion=False, relleno=False):
@@ -1082,6 +1096,7 @@ def articulo(prof, ruta, d, p, eds):
         ficha_doc = ficha_recurso(p["id"], recs[0])
     elif recs:           # la semana del repositorio: un apartado por recurso, con su captura
         bloques = "".join(bloque_recurso(prof, p["id"], r) for r in recs)
+    serie, ya_contados, otras = semana_repositorio(prof, p, eds)
     return cabeza(f'{p["titular"]} | {L["titulo"]}', prof, p.get("entradilla", ""), ruta) + f"""<body class="pag-articulo">
 {cabecera(prof, ruta, d["fecha"], d["numero"], False, h1=False)}
 <main class="articulo">
@@ -1089,14 +1104,17 @@ def articulo(prof, ruta, d, p, eds):
     {rotulos(p, True, prof)}
     <h1 class="titular">{e(p["titular"])}</h1>
     <p class="entradilla">{e(p.get("entradilla"))}</p>
+    {serie}
     {"" if len(p.get("recursos") or []) > 1 else ilustracion(d["fecha"], p, prof, ampliable=True)}
     {ficha_doc}
     <div class="cuerpo">{cuerpo}{bloques}</div>
+    {ya_contados}
     {f'<p class="correccion">{md(p["correccion"])}</p>' if p.get("correccion") else ""}
     {origen(p)}
     {compartir}
     {comprobado}
   </article>
+  {otras}
   {mas_piezas(prof, eds, p)}
   <p class="volver"><a href="{prof}">{L["volver"]}</a></p>
 </main>
@@ -1104,6 +1122,36 @@ def articulo(prof, ruta, d, p, eds):
 {SCRIPT_TEMA}
 </body>
 </html>"""
+
+
+def semana_repositorio(prof, p, eds):
+    """Lo propio de «La semana del repositorio» (ADR 0008): la línea fija que dice qué es, la lista de
+    lo que entró en la semana y ya tuvo su artículo, y las demás semanas. Vacío en las demás piezas."""
+    if p.get("repositorio") != "semana":
+        return "", "", ""
+    serie = f'<p class="serie">{L["semana_repo"].format(repositorio=enlace(REPOSITORIO, L["repositorio_enlace"]))}</p>'
+    por_id = {(x["fecha"], x["id"]): x for dd in eds for x in dd["piezas"]}
+    items = []
+    for y in sorted(p.get("ya_contados") or [], key=lambda y: (y.get("fecha", ""), y.get("breve", 0))):
+        if y.get("breve"):
+            destino = f'{prof}{e(y["fecha"])}/breve-{int(y["breve"])}.html'
+        elif (y.get("fecha"), y.get("id")) in por_id:
+            destino = href(prof, por_id[(y["fecha"], y["id"])])
+        else:
+            continue
+        autoria = f' · {e(y["autoria"])}' if y.get("autoria") else ""
+        items.append(f'<li><span class="fecha-pieza">{fecha_corta(publicacion(y["fecha"]))}</span>'
+                     f'<a href="{destino}">{e(y["titulo"])}</a>{autoria}</li>')
+    ya = (f'<section class="mas sec-vibecoding" data-pagefind-ignore aria-labelledby="ya-{e(p["id"])}"><h2 id="ya-{e(p["id"])}">{L["ya_contados"]}</h2>'
+          f'<ul>{"".join(items)}</ul></section>') if items else ""
+    demas = [x for dd in reversed(eds) for x in dd["piezas"]
+             if x.get("repositorio") == "semana" and (x["fecha"], x["id"]) != (p["fecha"], p["id"])]
+    otras = ""
+    if demas:
+        lis = "".join(f'<li><span class="fecha-pieza">{fecha_corta(publicacion(x["fecha"]))}</span>'
+                      f'<a href="{href(prof, x)}">{e(x["titular"])}</a></li>' for x in demas)
+        otras = f'<aside class="mas sec-vibecoding" aria-labelledby="t-semanas"><h2 id="t-semanas">{L["otras_semanas"]}</h2><ul>{lis}</ul></aside>'
+    return serie, ya, otras
 
 
 VACIO = ' class="vacio"'

@@ -51,7 +51,7 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
 - **Biblioteca** (ADR 0006): `scripts/biblioteca.sh FECHA [ids]`.
 - **Repositorio de VCE** (ADR 0008 y 0018): `scripts/repositorio.sh FECHA
   [urls]`; la cola se calcula cada noche; los viernes, «La semana del
-  repositorio»; con la cola vacía, el fondo. El umbral (`UMBRAL=4`) es
+  repositorio», con la lista de lo ya contado en la semana; con la cola vacía, el fondo. El umbral (`UMBRAL=4`) es
   provisional.
 - **Dibujos** (ADR 0009 y 0014): `scripts/dibujar.sh FECHA [ids]`, en el NAS
   con `docker exec`. Los iconos de Lucide son un recurso, no una plantilla:
