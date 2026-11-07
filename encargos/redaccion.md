@@ -24,8 +24,8 @@ siendo la de hoy.
 
 - Lo que interesa a alguien de fuera: herramientas o modelos nuevos y su utilidad en el
   aula, debates con argumentos (privacidad, evaluación, normativa…), aplicaciones y
-  recursos que han hecho y compartido miembros de los grupos, novedades oficiales
-  (administraciones, AEPD, empresas) comentadas en los grupos.
+  recursos que han hecho y compartido miembros de los grupos, anuncios de instituciones y empresas
+  (administraciones, AEPD, empresas) comentados en los grupos.
 - **No** es noticia (aquí): los documentos del tema «Biblioteca digital» de ChatGPT-IA-edu, que
   tienen su propia sección y su propio artículo (ADR 0006).
 - **No** es noticia: la administración interna de los grupos (normas, el bot de los
