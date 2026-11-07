@@ -920,7 +920,8 @@ def cuerpo_portada(prof, piezas, breves, mostrar_fecha, tira=""):
     """Como en un periódico: la apertura a todo el ancho, una fila de destacadas con dibujo,
     la viñeta y, debajo, un bloque por sección con su título a la izquierda (al estilo de
     The Guardian). Las secciones sin piezas no salen. En la portada, los breves del último número
-    van arriba, tras las destacadas, como lo demás de hoy; los de días anteriores cierran abajo."""
+    van arriba, tras las destacadas, como lo demás de hoy; los de días anteriores cierran abajo, con el
+    rótulo «Breves anteriores» aunque el último número no traiga ninguno."""
     p0, resto = piezas[0], piezas[1:]
     hoy = [b for b in breves if b["fecha"] == p0["fecha"]] if mostrar_fecha else []
     breves = [b for b in breves if b not in hoy]
@@ -965,7 +966,7 @@ def cuerpo_portada(prof, piezas, breves, mostrar_fecha, tira=""):
     if sueltas or breves:
         lista = "".join(pieza(prof, p, "menor", 3, False, mostrar_fecha) for p in sueltas) + bloque_breves(breves, mostrar_fecha, en_bloque=True)
         html_ += f"""<section class="bloque sec-breves" aria-labelledby="b-breves">
-  <h2 id="b-breves" class="bloque-titulo"><a href="{prof}breves.html">{icono("breves")} {L["breves_antes"] if mostrar_fecha and hoy else L["breves"]}</a></h2>
+  <h2 id="b-breves" class="bloque-titulo"><a href="{prof}breves.html">{icono("breves")} {L["breves_antes"] if mostrar_fecha else L["breves"]}</a></h2>
   <div class="bloque-piezas" style="--n:{min(len(sueltas) + (len(breves) if breves else 0), 3)}">{lista}</div>
 </section>"""
     return html_
