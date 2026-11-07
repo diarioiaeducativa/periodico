@@ -29,7 +29,8 @@ no se abre al público (trabaja solo, sin que nadie se conecte a él).
   tiene. Tema `light` o `transparent_dark` según el del diario, y cambia al momento con el botón de tema
   (un `MutationObserver` sobre `data-theme` manda `setConfig` al iframe).
 - **Aviso de cada comentario**, a Juanjo y a Raül Torres (lo pidió Juanjo, 07-11-2026), el mismo mensaje
-  por el Bot de IA Educativa: pieza, autor, el principio del texto y enlaces a la pieza y al comentario en
+  por el Bot de IA Educativa: pieza, autor, el texto entero (en varios mensajes si pasa de 3.000
+  caracteres) y enlaces a la pieza y al comentario en
   GitHub. A nadie se le avisa de lo que escribe él (`jjdeharo`, `raultorres-ia`). Lo manda una acción de
   GitHub del repositorio del sitio (`.github/workflows/avisar-comentario.yml`, evento
   `discussion_comment`), con los secretos `BOT_IAEDUCATIVA_TOKEN`, `JUANJO_CHAT` y `RAUL_CHAT` de ese
