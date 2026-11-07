@@ -113,6 +113,17 @@ def main():
                 pag.evaluate(AJUSTE)
                 pag.screenshot(path=str(destino))
                 hechas += 1
+                if codigo == "es":   # la de cada grupo, para su aviso (los avisos van en castellano)
+                    for g in generar.GRUPOS:
+                        p = generar.pieza_de_grupo(d, g)
+                        if not p or p is apertura(d):
+                            continue
+                        h.write_text(pagina(d, p))
+                        pag.goto(h.as_uri())
+                        pag.evaluate("document.fonts.ready")
+                        pag.evaluate(AJUSTE)
+                        pag.screenshot(path=str(SALIDA / f'{d["fecha"]}-es-{g}.png'))
+                        hechas += 1
         nav.close()
     print(f"og-numero: {hechas} imagen(es)")
 

@@ -29,6 +29,13 @@ Recomendado y aceptado por Juanjo el 04-11-2026:
   cortos (Juanjo, 07-11-2026, al ver el aviso del número 6: «tiene un gran espacio en blanco»; de
   tres variantes eligió la del titular grande pegado a la fecha). Probado con los seis primeros
   números en castellano, euskera e inglés.
+- **Una imagen por grupo** (07-11-2026): además de la del número, `og-numero.py` hace para cada grupo
+  la de su primera pieza (`og/numeros/<fecha>-es-<grupo>.png`, sin contar la Biblioteca), salvo que
+  sea la misma que abre el número; `generar.py` escribe la página de entrada `n/<número>-<grupo>.html`,
+  que solo lleva esa imagen y redirige al instante a la portada del número, y `avisos-cabecera.py`
+  pone ese enlace en el aviso del grupo (el bot lo usa desde su 1.9.1, ADR 0029). Un grupo sin pieza
+  propia ese día lleva el enlace general. Juanjo: «yo pensaba que cada una tenía la suya»; eligió que
+  la página lleve a la portada y no a la pieza.
 - **El enlace del aviso lleva el número** (`https://diarioiaeducativa.github.io/?n=3`, puesto por
   `scripts/avisos-cabecera.py` junto con el título y la fecha): es la misma portada, pero Telegram
   la trata como una dirección nueva y lee la imagen del día. El bot pide la vista previa grande y

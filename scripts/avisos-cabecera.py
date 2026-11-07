@@ -31,6 +31,12 @@ def main():
     avisos.update(titulo=f'{generar.L["titulo"]} · {generar.L["num"]} {d["numero"]}',
                   fecha_texto=generar.fecha_larga(publica).capitalize(),
                   url=f'{generar.BASE}?n={d["numero"]}')
+    # Cada grupo, su página de entrada con su imagen (n/<número>-<grupo>.html), si ese día la tiene;
+    # si no, el aviso lleva el enlace general de arriba (ADR 0010).
+    for g, aviso in (avisos.get("avisos") or {}).items():
+        if isinstance(aviso, dict) and (RAIZ / "og" / "numeros" / f"{fecha}-es-{g}.png").exists() \
+                and generar.pieza_de_grupo(d, g):
+            aviso["url"] = f'{generar.BASE}n/{d["numero"]}-{g}.html'
     f.write_text(json.dumps(avisos, ensure_ascii=False, indent=2) + "\n")
     print(f"avisos-cabecera: número {d['numero']}")
 

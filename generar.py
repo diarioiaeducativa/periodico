@@ -1956,8 +1956,50 @@ def main():
                 shutil.copy(f, SITIO / "videos" / f.name)
     if (RAIZ / "og" / "numeros").exists():   # la imagen de vista previa de cada número (ADR 0010)
         shutil.copytree(RAIZ / "og" / "numeros", SITIO / "og", dirs_exist_ok=True)
+    entradas_grupos()
     for codigo in IDIOMAS:
         generar_idioma(codigo)
+
+
+def pieza_de_grupo(d, grupo):
+    """La pieza que da imagen al aviso de un grupo: la primera de sus conversaciones que no es de la
+    Biblioteca (ADR 0010). Si ese día el grupo no tiene ninguna, None: el aviso lleva la del número."""
+    return next((p for p in d["piezas"] if p.get("grupo") == grupo and p.get("seccion") != "biblioteca"), None)
+
+
+def entradas_grupos():
+    """Una página de entrada por número y grupo (n/<número>-<grupo>.html): solo lleva la imagen de
+    vista previa de ese grupo y lleva al lector a la portada del número. Así Telegram enseña en cada
+    grupo una imagen distinta, aunque los tres avisos abran la misma portada (ADR 0010)."""
+    global L
+    L = IDIOMAS["es"]   # los avisos van en castellano en los tres grupos
+    shutil.rmtree(SITIO / "n", ignore_errors=True)
+    for d in cargar():
+        if not d.get("numero"):
+            continue
+        for g in GRUPOS:
+            p = pieza_de_grupo(d, g)
+            if not p or not (RAIZ / "og" / "numeros" / f'{d["fecha"]}-es-{g}.png').exists():
+                continue
+            (SITIO / "n").mkdir(exist_ok=True)
+            destino = f'../?n={d["numero"]}'
+            titulo = f'{L["titulo"]} · {L["num"]} {d["numero"]}'
+            (SITIO / "n" / f'{d["numero"]}-{g}.html').write_text(f"""<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<title>{e(titulo)}</title>
+<meta name="robots" content="noindex">
+<link rel="canonical" href="{BASE}?n={d["numero"]}">
+<meta property="og:type" content="website"><meta property="og:site_name" content="{e(L["titulo"])}">
+<meta property="og:title" content="{e(titulo)}">
+<meta property="og:description" content="{e(p["titular"])}">
+<meta property="og:url" content="{BASE}n/{d["numero"]}-{g}.html">
+<meta property="og:image" content="{BASE}og/{d["fecha"]}-es-{g}.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta http-equiv="refresh" content="0; url={destino}">
+<script>location.replace("{destino}")</script>
+</head><body><p><a href="{destino}">{e(titulo)}</a></p></body></html>
+""")
 
 
 if __name__ == "__main__":
