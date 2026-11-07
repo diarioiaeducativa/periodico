@@ -37,7 +37,7 @@ python3 -m pagefind --site sitio >> "$REG" 2>&1 || log "AVISO: no se pudo rehace
 
 # El sitio: lo generado, sin tocar lo que solo vive en su repositorio.
 git -C "$SITIO" pull -q --ff-only >> "$REG" 2>&1 || { log "ERROR: no se pudo actualizar $SITIO"; exit 1; }
-rsync -a --delete --exclude .git --exclude README.md --exclude LICENSE --exclude LICENSE-CODIGO \
+rsync -a --delete --exclude .git --exclude .github --exclude README.md --exclude LICENSE --exclude LICENSE-CODIGO \
   --exclude .nojekyll --exclude fuentes/OFL.txt sitio/ "$SITIO/"
 git -C "$SITIO" add -A
 if ! git -C "$SITIO" diff --cached --quiet; then

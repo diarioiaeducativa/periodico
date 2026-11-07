@@ -66,7 +66,7 @@ if [ "$SIMULAR" = 1 ]; then   # se comprueban las credenciales sin subir nada ni
   [ -n "${TELEGRAM_TOKEN:-}" ] && curl -s --max-time 30 "https://api.telegram.org/bot$TELEGRAM_TOKEN/getMe" | grep -o '"ok":[a-z]*' | sed 's/^/vigilante (simulación): bot de avisos /'
   exit 0
 fi
-rsync -a --delete --exclude .git --exclude README.md --exclude LICENSE --exclude LICENSE-CODIGO \
+rsync -a --delete --exclude .git --exclude .github --exclude README.md --exclude LICENSE --exclude LICENSE-CODIGO \
   --exclude .nojekyll --exclude fuentes/OFL.txt sitio/ /tmp/sitio/
 git config --global user.name "Diario de IA Educativa (vigilante)"
 git config --global user.email "diarioiaeducativa@users.noreply.github.com"

@@ -7,7 +7,7 @@ AQUI=$(cd "$(dirname "$0")" && pwd)
 SITIO_REPO=${SITIO_REPO:-$HOME/Documentos/github/diarioiaeducativa.github.io}
 python3 "$AQUI/generar.py"
 python3 -m pagefind --site "$AQUI/sitio" >/dev/null   # el índice del buscador (ADR 0007)
-rsync -a --delete --exclude .git --exclude README.md --exclude LICENSE --exclude LICENSE-CODIGO \
+rsync -a --delete --exclude .git --exclude .github --exclude README.md --exclude LICENSE --exclude LICENSE-CODIGO \
   --exclude .nojekyll --exclude fuentes/OFL.txt "$AQUI/sitio/" "$SITIO_REPO/"
 cd "$SITIO_REPO"
 git add -A
