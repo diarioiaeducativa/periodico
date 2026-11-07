@@ -23,7 +23,12 @@ Recomendado y aceptado por Juanjo el 04-11-2026:
 - **Cada número tiene su imagen de vista previa** (`scripts/og-numero.py`): la mancheta, el
   número, la fecha, la sección y el titular de la pieza que abre la portada, con su dibujo. Se
   guarda en `og/numeros/<fecha>-<es|ca>.png`; `generar.py` la copia a `sitio/og/` y la pone en la
-  portada y en la página de ese día. Las demás páginas siguen con la genérica.
+  portada y en la página de ese día. Las demás páginas siguen con la genérica. El titular ajusta su
+  tamaño a la columna (de 34 a 66 px; casi siempre unos 50) para que no quede hueco entre la fecha y
+  la sección: con un tamaño fijo de 40 px quedaba un espacio en blanco grande con los titulares
+  cortos (Juanjo, 07-11-2026, al ver el aviso del número 6: «tiene un gran espacio en blanco»; de
+  tres variantes eligió la del titular grande pegado a la fecha). Probado con los seis primeros
+  números en castellano, euskera e inglés.
 - **El enlace del aviso lleva el número** (`https://diarioiaeducativa.github.io/?n=3`, puesto por
   `scripts/avisos-cabecera.py` junto con el título y la fecha): es la misma portada, pero Telegram
   la trata como una dirección nueva y lee la imagen del día. El bot pide la vista previa grande y

@@ -58,8 +58,8 @@ html,body{{margin:0;width:1200px;height:630px;overflow:hidden;background:#fbfbf9
 .cuando{{font-family:Newsreader;font-style:italic;font-size:27px;color:#4f5562;margin:0}}
 .cuando b{{font-style:normal;color:#c42b1c}}
 .seccion{{margin:auto 0 10px;font-family:Newsreader;font-weight:700;font-size:22px;letter-spacing:.06em;text-transform:uppercase;color:var(--sec,#1d3fa6)}}
-.titular{{font-family:Newsreader;font-weight:700;font-size:40px;line-height:1.1;letter-spacing:-.01em;margin:0;
-  display:-webkit-box;-webkit-line-clamp:5;-webkit-box-orient:vertical;overflow:hidden;font-variation-settings:"opsz" 48}}
+.titular{{font-family:Newsreader;font-weight:700;font-size:46px;line-height:1.1;letter-spacing:-.01em;margin:0;
+  display:-webkit-box;-webkit-line-clamp:7;-webkit-box-orient:vertical;overflow:hidden;font-variation-settings:"opsz" 48}}
 .der{{align-self:center;display:flex;align-items:center;justify-content:center;background:var(--papel-2);padding:18px;box-sizing:border-box;margin:0;max-height:526px}}
 .der svg,.der img{{width:100%;height:auto;max-height:100%}}
 .der svg.ico{{width:55%;color:var(--sec,#1d3fa6)}}
@@ -74,6 +74,20 @@ html,body{{margin:0;width:1200px;height:630px;overflow:hidden;background:#fbfbf9
 </div>
 <figure class="der ilu">{dibujo(d, p)}</figure>
 </div></body></html>"""
+
+
+# El titular llena la columna (Juanjo, 07-11-2026: sin huecos entre la fecha y la sección, ningún día):
+# crece desde 46 px mientras quepa entero y, si no cabe, baja hasta 34 px.
+AJUSTE = """() => {
+  const t = document.querySelector('.titular');
+  const cabe = () => t.getBoundingClientRect().bottom <= 630 - 52 && t.scrollHeight <= t.clientHeight + 1;
+  let s = 46;
+  t.style.fontSize = s + 'px';
+  while (!cabe() && s > 34) { s -= 2; t.style.fontSize = s + 'px'; }
+  while (s < 66) { t.style.fontSize = (s + 2) + 'px'; if (!cabe()) { t.style.fontSize = s + 'px'; break; } s += 2; }
+  const sec = document.querySelector('.seccion'), hueco = sec.getBoundingClientRect().top - document.querySelector('.cuando').getBoundingClientRect().bottom;
+  return [s, Math.round(hueco)];
+}"""
 
 
 def main():
@@ -96,6 +110,7 @@ def main():
                 h.write_text(pagina(d, apertura(d)))
                 pag.goto(h.as_uri())
                 pag.evaluate("document.fonts.ready")
+                pag.evaluate(AJUSTE)
                 pag.screenshot(path=str(destino))
                 hechas += 1
         nav.close()
