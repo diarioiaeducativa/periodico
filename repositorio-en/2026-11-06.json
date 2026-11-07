@@ -1,0 +1,120 @@
+{
+  "fecha": "2026-11-06",
+  "piezas": [
+    {
+      "id": "semana-del-repositorio",
+      "seccion": "vibecoding",
+      "repositorio": "semana",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "The repository's week",
+      "titular": "An auction of phrases, a guide to responsible vibe coding, chemistry, music and illustrated books: new in the repository",
+      "entradilla": "The Vibe Coding Educativo resource repository adds six resources: two by Juanjo de Haro, one by Felip Sarroca, one by FiQuiPedia and two by Samuel Soriano.",
+      "cuerpo": [
+        "This week six openly licensed resources join the repository: a debate activity, a guide to publishing responsibly what is created with AI, two chemistry apps for formulation and stoichiometry, a set of music games and an illustrated-books workshop. They open in the browser and, except where noted for each one, require no account. Resources by the same person are grouped together."
+      ],
+      "recursos": [
+        {
+          "id": "subasta-de-frases",
+          "titulo": "Subasta de frases",
+          "autoria": "Juanjo de Haro",
+          "url": "https://jjdeharo.github.io/subasta_frases/",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://jjdeharo.github.io/subasta_frases/",
+          "licencia": "AGPL v3 (code) · CC BY-SA 4.0 (content)",
+          "captura": "2026-11-06-subasta-de-frases.jpg",
+          "captura_alt": "Home page of Subasta de frases, with the buttons “Crear una actividad” and “Unirse a una sesión” and three cards: Conocimiento, Valores y prioridades, Roles y conceptos.",
+          "texto": [
+            "Juanjo de Haro has created a participatory activity in which the teacher prepares an auction and students join with a session code to bid on phrases. It has three modes: “Conocimiento”, where students bid on the statements they consider correct and defend their decision; “Valores y prioridades”, which shares a limited budget among the ideas that matter most to the group; and “Roles y conceptos”, where a correct match earns points and a wrong one loses them. The page states that it requires no registration and that the data is ephemeral. It is available in six languages, including Spanish, Catalan, Galician and Basque. AGPL v3 licence for the code and CC BY-SA 4.0 for the content."
+          ]
+        },
+        {
+          "id": "vibe-coding-responsable",
+          "titulo": "Vibe coding responsable",
+          "autoria": "Juanjo de Haro",
+          "url": "https://vibe-coding-educativo.github.io/vibe-responsable",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://vibe-coding-educativo.github.io/vibe-responsable",
+          "licencia": "AGPL-3.0 (code); CC-BY-SA-4.0 (content)",
+          "captura": "2026-11-06-vibe-coding-responsable.jpg",
+          "captura_alt": "“Presentación” page of the guide Vibe coding responsable, with an infographic of ten recommendations on the right and the three steps to get started.",
+          "texto": [
+            "Juanjo de Haro publishes a non-technical guide for teachers who share materials created with AI through vibe coding. According to its introduction, it grew out of materials that circulate without a licence or that send students' data to external services, and it proposes ten recommendations: correct content, data protection, accessibility, attribution, a declaration of AI use and an open licence, among others. It includes an infographic, an animation, downloadable instructions to give to the AI when creating, and a rubric (VCER) for evaluating a resource. It can be read on the web, there is a PDF version and it is available in five languages. According to its author, it is open to suggestions."
+          ]
+        },
+        {
+          "id": "reactius-i-sobrants",
+          "titulo": "Reactius i sobrants",
+          "autoria": "Felip Sarroca i Gil",
+          "url": "https://ja.cat/reactius",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://ja.cat/reactius",
+          "licencia": "CC BY-NC-SA 4.0",
+          "captura": "2026-11-06-reactius-i-sobrants.jpg",
+          "captura_alt": "Chemistry lab in Catalan with a reaction of methane and oxygen drawn with molecular models and boxes to enter the products and the leftover reactants.",
+          "texto": [
+            "Felip Sarroca i Gil has created, with AI assistance, an interactive laboratory in Catalan for understanding the limiting reactant, the excess reactant and leftovers; according to its author, it is designed for lower and upper secondary. It has three modes: “Aprèn”, “Practica” and “Repte”. In practice mode, students see the reaction with molecular models, count how many products form and how many reactants are left over, and can ask for a hint or the solution. It offers several types of activity, three difficulty levels and a scoreboard of attempts, correct answers and streak. According to the listing, it also includes a glossary, atomic masses, progress saved in the browser and a projector mode for the interactive whiteboard. CC BY-NC-SA 4.0 licence."
+          ]
+        },
+        {
+          "id": "foqa-formulacion-quimica-inorganica",
+          "titulo": "FoQa – Formulación Química Inorgánica",
+          "autoria": "FiQuiPedia",
+          "url": "https://foqa.fiquipedia.es/",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://foqa.fiquipedia.es/",
+          "licencia": "AGPL v3 (code) · CC BY-SA 4.0 (content)",
+          "captura": "2026-11-06-foqa-formulacion-quimica-inorganica.jpg",
+          "captura_alt": "Home page of FoQa Inorgánica with three buttons, “Tests”, “F → N” and “Panel”, and the list of compound families.",
+          "texto": [
+            "FiQuiPedia presents FoQa, a Spanish-language app for practising inorganic formulation and nomenclature according to the IUPAC 2005 rules. It generates tests on binary compounds, hydroxides, peroxides, oxoacids, oxysalts, acid salts, homoatomic species and ions, and offers a converter from formula to possible names. In the panel, families and rules are chosen, such as strictness with accents, and it can be exported to PDF; according to the listing, to SCORM as well. According to its author, it was made with DeepSeek and is designed to work as a Moodle activity and report the grade to the gradebook. The newspaper has already covered its counterpart for [organic formulation, FoQo](pieza:2026-11-03/foqo-formulacion-quimica-organica). AGPL v3 and CC BY-SA 4.0 licence."
+          ]
+        },
+        {
+          "id": "edumusic",
+          "titulo": "EduMúsic",
+          "autoria": "Samuel Soriano",
+          "url": "https://edumusic.edutictac.es/",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://edumusic.edutictac.es/",
+          "licencia": "MIT",
+          "captura": "2026-11-06-edumusic.jpg",
+          "captura_alt": "Home page of EduMúsic in Valencian, with a level selector and game cards such as Atrapa Notes, Memory d'Instruments and Paraules Musicals Secretes.",
+          "texto": [
+            "In EduMúsic, Samuel Soriano brings together a collection of music activities, listed in the entry as being for primary school, with an interface in Valencian and a language selector that also offers Spanish and English. They can be filtered by level (beginner, intermediate, advanced) and by tags. It includes games for catching notes on the stave, an instrument memory game, time-signature puzzles, rhythmic and melodic dictations, timbre recognition, a two-octave keyboard and rankings saved on the device itself. It also links to external resources, such as JClic or EduHoot. According to the listing, it is a progressive web app that can be installed. MIT licence."
+          ]
+        },
+        {
+          "id": "edutictac-llibres",
+          "titulo": "EduTicTac Llibres",
+          "autoria": "Samuel Soriano",
+          "url": "https://llibres.edutictac.es/",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://llibres.edutictac.es/",
+          "licencia": "AGPL v3",
+          "captura": "2026-11-06-edutictac-llibres.jpg",
+          "captura_alt": "Home page of EduTicTac Llibres with the slogan “Tu próxima historia empieza aquí”, the buttons “Crear un libro” and “Abrir un libro” and a book cover.",
+          "texto": [
+            "Samuel Soriano is also behind EduTicTac Llibres, a workshop for creating illustrated books and comics with text, images and drawings, with the page in Spanish. The page lets users create or open a book without signing in; books are saved in the browser, so it is advisable to download a copy. It comes with a sample story and comic in Valencian. According to the listing, it uses eXeLearning and templates, is designed for primary, secondary and teacher training, and books are downloaded as .elpx files and can be published in a shared bank with a teacher account; students sign in with a class code and PIN, and their teacher approves the books. The same person created the [block editor EduTicTac Blocs](pieza:2026-11-04/edutictac-blocs). AGPL v3 licence."
+          ]
+        }
+      ],
+      "fuentes": [
+        {"titulo": "Subasta de frases", "url": "https://jjdeharo.github.io/subasta_frases/"},
+        {"titulo": "Vibe coding responsable", "url": "https://vibe-coding-educativo.github.io/vibe-responsable"},
+        {"titulo": "Presentation on ChatGPT-IA-edu (in Spanish)", "url": "https://t.me/ChatGPTedu/53002"},
+        {"titulo": "Presentation on EduMedia-IAG (in Spanish)", "url": "https://t.me/EduMediaIAG/11534"},
+        {"titulo": "Reactius i sobrants (in Catalan)", "url": "https://ja.cat/reactius"},
+        {"titulo": "Presentation on Vibe Coding Educativo (Reactius i sobrants) (in Spanish)", "url": "https://t.me/vceduca/7674/14292"},
+        {"titulo": "FoQa – Formulación Química Inorgánica (in Spanish)", "url": "https://foqa.fiquipedia.es/"},
+        {"titulo": "Presentation on Vibe Coding Educativo (FoQa) (in Spanish)", "url": "https://t.me/vceduca/7674/12792"},
+        {"titulo": "EduMúsic", "url": "https://edumusic.edutictac.es/"},
+        {"titulo": "EduTicTac Llibres (in Spanish)", "url": "https://llibres.edutictac.es/"},
+        {"titulo": "Presentation on Vibe Coding Educativo (EduTicTac Llibres) (in Spanish)", "url": "https://t.me/vceduca/7674/14465"}
+      ],
+      "comprobado": "Revisión: vistas las seis capturas y comparadas con la entrada (títulos, autoría, licencias, fichas, archivos). Con WebFetch: Subasta de frases (modos, sin registro, seis idiomas), la guía en /es/ (cinco idiomas, PDF, rúbrica VCER, instrucciones para la IA), FoQa (tests, fórmula→nombres, panel, botones PDF y estado SCORM), EduMúsic (catálogo de actividades, niveles). Reactius, Llibres y la portada de la guía devolvieron poco o nada con WebFetch: mandan la captura y el texto visible. Reactius: visibles los modos, niveles, pista, solución y marcador; glosario, masas atómicas, progreso en el navegador y modo proyector solo en la ficha y el mensaje del autor. Llibres: no se ve eXeLearning, plantillas, .elpx, banco común ni PIN (ficha). EduMúsic: Primaria e instalación como PWA, solo de la ficha. Comprobado que la pieza 2026-11-04/edutictac-blocs existe en publicado.txt y es de Samuel Soriano, y que 2026-11-03/foqo-formulacion-quimica-organica existe y trata de FoQo. Lo de la herramienta (DeepSeek, Moodle) y la guía abierta a sugerencias es del mensaje de su autor."
+    }
+  ],
+  "descartado": [],
+  "repaso": [
+    "Reactius i sobrants: «Secundaria y Bachillerato» pasa a «según su autor»; glosario, masas atómicas y progreso en el navegador pasan a «según la ficha» junto al modo proyector (no se ven rotulados en la captura); se añade lo que sí se ve (tres niveles, marcador de intentos, aciertos y racha).",
+    "FoQa: la exportación a SCORM pasa a «según la ficha» (se ve PDF, no SCORM funcionando).",
+    "EduMúsic: «para Primaria» atribuido a la ficha (la página no lo dice).",
+    "EduTicTac Llibres: eXeLearning, plantillas y niveles (Primaria, Secundaria, formación del profesorado) atribuidos a la ficha; se indica que la página está en castellano con ejemplos en valenciano.",
+    "Comprobados sin cambios: titulos, autorías, licencias, fichas y capturas con la entrada, los textos alternativos, las fuentes y los dos enlaces a lo ya publicado (claves en publicado.txt y temas coincidentes); extensiones del modo semana."
+  ]
+}

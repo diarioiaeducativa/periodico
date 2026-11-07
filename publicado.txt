@@ -55,7 +55,7 @@
 - pieza:2026-11-03/foqo-formulacion-quimica-organica (repositorio) FoQo genera tests de formulación orgánica y da el nombre de una estructura dibujada — recursos con artículo: FoQo - Formulación Química Orgánica (https://foqo.fiquipedia.es/)
 
 ## 2026-11-04 (publicado el jueves 5 de noviembre de 2026)
-- pieza:2026-11-04/camara-virtual-blender (multimedia) El administrador de EduMedia-IAG convierte el móvil y las gafas de realidad virtual en una cámara virtual para Blender
+- pieza:2026-11-04/camara-virtual-blender (multimedia) Una herramienta convierte el móvil y las gafas de realidad virtual en una cámara virtual para Blender
 - pieza:2026-11-04/tongjiang-lab-3d (vibecoding) Un proyecto abierto ofrece 54 lecciones interactivas en 3D de ciencias para secundaria superior, en chino
 - breve: Raül Torres compartió en EduMedia-IAG un paseo en modo videojuego por Girona hecho con Cla
 - pieza:2026-11-04/rompecabezas-tecnica-jigsaw (repositorio) Una herramienta forma al azar los grupos base y de expertos de la técnica Jigsaw — recursos con artículo: Rompecabezas – Técnica Jigsaw (https://jigsawcoop.github.io/)
@@ -68,3 +68,11 @@
 - breve: La página de XTEC sobre IA enlaza como documento de orientaciones el de 2024, con la nota 
 - breve: OpenAI presentó Images 2.6, que según su anuncio acelera la generación de imágenes, permit
 - breve: Raül Torres, autor de [la cámara virtual para Blender que el diario contó](pieza:2026-11-0
+- pieza:2026-11-05/fil-i-compte (repositorio) Fil i compte permite preparar fichas imprimibles de problemas de matemáticas en catalán y en castellano, con solucionario — recursos con artículo: Fil i compte (https://filicompte.ortogra.fi/)
+
+## 2026-11-06 (publicado el sábado 7 de noviembre de 2026)
+- pieza:2026-11-06/autorizacion-familias-ia (debates) Docentes debaten si hace falta la autorización de las familias para usar herramientas de IA con el alumnado
+- pieza:2026-11-06/anthropic-abuso-modelos (novedades) Anthropic prohíbe en su política de uso el maltrato sostenido y gratuito a sus modelos
+- pieza:2026-11-06/timbre-musical-escolar (vibecoding) Un docente sustituye la sirena del centro por un timbre musical que se gestiona desde una hoja de cálculo
+- pieza:2026-11-06/edumind-miclase-sincronizacion (vibecoding) EDUmind MiClase, un cuaderno del profesorado de código abierto, guarda los datos en el dispositivo y sincroniza sin servidor propio
+- pieza:2026-11-06/omni-1-2-flash-creditos-flow (multimedia) Google Flow cobra en créditos por segundo los vídeos de Gemini Omni 1.2 Flash

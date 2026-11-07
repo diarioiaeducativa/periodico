@@ -1,0 +1,30 @@
+{
+  "fecha": "2026-11-06",
+  "elegida": {
+    "n": 1,
+    "pieza": "autorizacion-familias-ia",
+    "idea": "En el aula: falta una autorización, Algoritmo se queda sin clase y la clase de alfabetización en IA trata de él; protesta con total seguridad justo cuando Tiza explica que la IA se equivoca con total seguridad.",
+    "guion": {"vinetas": [
+      {"escenario": "aula",
+       "tiza": {"expresion": "neutral", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "sorprendido", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+       "objeto": "folio", "lleva": "tiza",
+       "bocadillos": [
+         {"quien": "tiza", "texto": "One authorisation is missing. You're not coming to class today.", "tipo": "habla"},
+         {"quien": "algoritmo", "texto": "Over just one? All the others said yes!", "tipo": "habla"}]},
+      {"escenario": "aula",
+       "tiza": {"expresion": "neutral", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "preocupado", "postura": "pensar", "lugar": "derecha", "mira": "izquierda"},
+       "bocadillos": [
+         {"quien": "algoritmo", "texto": "And what will you do today without me?", "tipo": "habla"},
+         {"quien": "tiza", "texto": "Study you.", "tipo": "habla"}]},
+      {"escenario": "aula",
+       "tiza": {"expresion": "orgulloso", "postura": "senalar", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "enfadado", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+       "bocadillos": [
+         {"quien": "tiza", "texto": "Lesson one: AI is confidently wrong.", "tipo": "habla"},
+         {"quien": "algoritmo", "texto": "That is categorically false!", "tipo": "habla"}]}
+    ]}
+  },
+  "traduccion": "automatic AI translation"
+}

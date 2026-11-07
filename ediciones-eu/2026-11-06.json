@@ -1,0 +1,179 @@
+{
+  "fecha": "2026-11-06",
+  "hay_edicion": true,
+  "motivo": "Día normal: un debate con argumentos en ChatGPT-IA-edu, una novedad de Anthropic, dos aplicaciones de docentes en Vibe Coding Educativo y, en EduMedia-IAG, la continuación de Gemini Omni 1.2 Flash con los créditos que consume en Flow, ya comprobados en la ayuda oficial.",
+  "piezas": [
+    {
+      "id": "autorizacion-familias-ia",
+      "seccion": "debates",
+      "importancia": 1,
+      "grupo": "chatgpt",
+      "antetitulo": "Familiak eta ikastetxeak",
+      "titular": "Irakasleek eztabaidatzen dute ikasleekin AA erabiltzeko familien baimena behar den",
+      "entradilla": "Ikastetxe batek mugatuta dauka AA sortzailea ikasleekin, familia batzuek ez dutelako baimendu; beste jarrera batzuen arabera, informatzea nahikoa da. Araudia argia da: familiei jakinarazi behar zaie, baina 14 eta 18 urte artean ez da haien adostasunik behar, tresnak eskatzen ez badu behintzat.",
+      "cuerpo": [
+        "ChatGPT-IA-edu taldeko elkarrizketa batek ikastetxeetan maiz agertzen den zalantza ireki zuen berriro: ikasleekin AA erabiltzeko familien baimena behar den ala ez. Hainbat jarrera azaldu ziren.",
+        "Lehenengoa zuhurtzia da. Talde-gela batean familia bakar batek ere baimentzen ez badu, lehenespenez tresna ez litzateke talde horrekin erabili behar, ikasleen artean desberdintasunik ez sortzeko. Horrela aplikatu duen ikastetxe batean, AA sortzailea ez dago ikasleentzat gaituta eta AAren alfabetatzea lantzen da hura erabili gabe, irakasleak ikasturtean zehar prestatzen diren bitartean eta klaustroak bere estrategia amaieran erabakitzea aurreikusten duen bitartean.",
+        "Bigarrenak dio, tresna hezkuntza-administrazioak baimentzen duenean (adibidez Gemini edo Copilot), ez dagoela baimenik eskatu beharrik, Moodle bezalako plataforma bat erabiltzeko eskatzen ez den bezala. Familiei informatzea nahikoa litzateke, ahal bada argitaratutako frogagiriarekin, eta garrantzitsuena Eskola Kontseiluaren, zuzendaritzaren eta klaustroaren babesa izango litzateke.",
+        "Hirugarren esku-hartze batek gogorarazi zuen [XTECen plataforma bakoitzaren gutxieneko adinei buruzko orriak](https://projectes.xtec.cat/ia/edats-minimes-per-plataforma-dia/), 2026ko uztailaren 14an eguneratuak, adierazten duela plataforma gehienek gurasoen baimena eskatzen dutela 14 eta 18 urte artean, eta, beraz, praktikan eskatu egin behar dela. Erantzunez, [Departament d’Educacióren orientazioak, egunkariak azaroaren 3an kontatu zituenak](pieza:2026-11-02/cat-orientacions-ia), aipatu ziren. Irakurketa hori albiste ontzat hartu zen taldean, ikastetxeei ematen dien maniobra-tarteagatik, nahiz eta, onartu zen bezala, klaustroetako eztabaida saihesten ez duen. Zalantza bat planteatu zen: baimena behar ote den dokumentu hori Departamenten webgunean agertzen ez den bitartean.",
+        "Erantzuna ez dago dokumentu horren mende. **Irakaskuntzan, ikasleen datuen tratamendua interes publikoko eginkizunean oinarritzen da, ez adostasunean.** Hala ezartzen dute [Datuak Babesteko Erregelamendu Orokorrak](https://www.boe.es/buscar/doc.php?id=DOUE-L-2016-80807) 6.1.e artikuluan eta [Hezkuntzari buruzko Lege Organikoaren hogeita hirugarren xedapen gehigarriak](https://www.boe.es/buscar/act.php?id=BOE-A-2006-7899#davigesimotercera), LOMLOEren idazketan, zeinak ikastetxeei hezkuntza-eginkizunerako behar dituzten ikasleen datuak tratatzeko aukera ematen dien, eta hala azaltzen du [Datuak Babesteko Espainiako Agentziak](https://www.aepd.es/preguntas-frecuentes/10-menores-y-educacion/FAQ-1009-pueden-los-centros-educativos-impartir-clases-y-realizar-examenes-online-sin-el-consentimiento-de-los-interesados). Espainia osoan balio du; [Orientacions](https://t.me/ChatGPTedu/21753/53605) agiriek Katalunian AAri aplikatzen diote (OIA-02).",
+        "Hortik jarraibide argiak ateratzen dira. **Familiei jakinarazi behar zaie** zer tresna erabiltzen den, zer konturekin eta zertarako. Ez da haien adostasunik behar 14 eta 18 urte bitarteko ikasleek ikastetxeak edo hezkuntza-administrazioak eskaintzen dituen tresnak erabiltzeko, nahiz eta Orientacions agiriek baimena berme gisa biltzea gomendatzen duten eta 5. eranskinean eredu bat eskaintzen duten. **Baimena derrigorrezkoa da tresnak bere baldintzetan eskatzen duenean**, adibidez ikasleek kontu pertsonal bat ireki behar badute 18 urtetik beherakoei gurasoen baimena eskatzen dien zerbitzu batean. 14 urtetik beherako ikasleentzat, Orientacions agiriek ezartzen dute ez dutela helburu orokorreko AA beren kabuz erabili behar, irakasleak baizik (OIA-01 eta OIA-23); beste erkidego batzuek irizpide desberdinak finkatzen dituzte, eta egunkariak igandeko erreportajean errepasatuko ditu.",
+        "Familia bat aurka badago, bere erabakiak bere seme-alabari eragiten dio, ez taldeari. Erregelamenduak aurka egiteko eskubidea aitortzen du (21. artikulua), Orientacions agiriek OIA-16an jasotzen dutena, eta haien baimen-ereduak dagoeneko aurreikusten ditu jarduera alternatibo baliokideak oraindik adina ez duten ikasleentzat, kasu honetan ere balio duen irtenbidea. Tresna talde osoarekin erabiltzeari uztea ikastetxearen erabaki pedagogikoa da, ez lege-betebeharra.",
+        "*Erredakzioaren oharra: atal honetako beste artikulu batzuek ez bezala, honek ez du elkarrizketa laburbiltzera mugatzen; araudiari buruzko paragrafoak eskuzko berrikuspen batean gehitu ziren.*"
+      ],
+      "fuentes": [
+        {
+          "titulo": "XTEC: Edat mínima per utilitzar la IA, per plataforma (katalanez)",
+          "url": "https://projectes.xtec.cat/ia/edats-minimes-per-plataforma-dia/"
+        },
+        {
+          "titulo": "Orientacions per a l’ús de la intel·ligència artificial als centres educatius (Generalitat de Catalunya, 2026) (katalanez)",
+          "url": "https://t.me/ChatGPTedu/21753/53605"
+        },
+        {
+          "titulo": "2016/679 (EB) Erregelamendua, Datuak Babesteko Erregelamendu Orokorra (BOE, gaztelaniaz)",
+          "url": "https://www.boe.es/buscar/doc.php?id=DOUE-L-2016-80807"
+        },
+        {
+          "titulo": "Hezkuntzari buruzko 2/2006 Lege Organikoa, hogeita hirugarren xedapen gehigarria (BOE, gaztelaniaz)",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-7899#davigesimotercera"
+        },
+        {
+          "titulo": "¿Pueden los centros educativos impartir clases y realizar exámenes online sin el consentimiento de los interesados? (AEPD, gaztelaniaz)",
+          "url": "https://www.aepd.es/preguntas-frecuentes/10-menores-y-educacion/FAQ-1009-pueden-los-centros-educativos-impartir-clases-y-realizar-examenes-online-sin-el-consentimiento-de-los-interesados"
+        }
+      ],
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 54027
+      },
+      "comprobado": "Revisor: abierta la página de XTEC (projectes.xtec.cat/ia/edats-minimes-per-plataforma-dia/): referencia de 14 años, autorización parental entre 14 y 18 en la mayoría de plataformas, menores de 14 posibles con autorización si la plataforma lo permite, actualizada el 14/07/2026. Mensaje 54027 comprobado en Telegram (centro sin IAG para el alumnado, formación y debate a final de curso). Lo que dice la guía catalana coincide con la pieza ya publicada (biblioteca 2026-11-02, cat-orientacions-ia: autorización recomendada de 14 a 18, menores de 14), y el enlace está en publicado.txt y trata de ese documento. Las posturas del grupo son opiniones, no hechos jurídicos: no se ha comprobado la normativa y se presentan como posturas, sin nombres.",
+      "ilustracion": "Esquema de decisión en tres columnas (informar, pedir autorización recomendada, no usar si alguna familia dice no) con las franjas de edad menor de 14, de 14 a 18 y las condiciones de la plataforma como filtro común.",
+      "ilustracion_alt": "Bi paneleko infografia. Ezkerrean, «14 urtetik behera», arbel batekin eta «Katalunian, AA irakasleak erabiltzen du» errotuluarekin. Eskuinean, «14-18 urte», lau errenkadarekin: megafono bat, «Informatu: beti»; balantza bat, «Adostasuna: ez da behar»; egiaztapen-marka duen dokumentu bat, «Baimena: Kataluniak gomendatzen du»; eta arkatza duen dokumentu bat, «Derrigorrezkoa tresnak eskatzen badu». Behean, pertsona marratu bat duen zerrenda: «Familia bat aurka badago, bere seme-alabari bakarrik eragiten dio»."
+    },
+    {
+      "id": "anthropic-abuso-modelos",
+      "seccion": "novedades",
+      "importancia": 3,
+      "grupo": "chatgpt",
+      "antetitulo": "Erabilera-politika",
+      "titular": "Anthropicek bere erabilera-politikan debekatu du bere ereduei etengabeko eta debaldeko tratu txarra ematea",
+      "entradilla": "2026ko urriaren 8an argitaratutako eguneratzea azaroaren 12an jarriko da indarrean eta muturreko kasuetan soilik aplikatuko da.",
+      "cuerpo": [
+        "Anthropicek bere erabilera-politikan debekua gehitu du bere ereduekiko jokabide iraingarri edo krudela, etengabea eta beharrezkoa ez dena izateko. Iragarpenaren arabera, muturreko kasuetan soilik aplikatuko da, krudelkeria errepikatuarekin eta itxurazko helbururik gabe, eta ez ditu estaltzen ohiko frustrazioa, desadostasuna, gai sortzaile ilunak, ez eta ereduei buruzko probak edo ikerketa ere.",
+        "Iragarpenak dio Claudek dagoeneko duen gaitasunak, Claude.ai eta Claude Code-n erabiltzaile iraingarri iraunkorrekin gutxitan izaten diren elkarrizketak amaitutzat emateko, aplikazio-mekanismo nagusi izaten jarraituko duela. Eguneratzeak beste aldaketa batzuk ere baditu, hala nola jarduera engainagarriari buruzko atal bat eta hauteskunde-atalaren berridazketa. ChatGPT-IA-edu taldean neurria zuhurtzia-printzipio gisa interpretatu zen, enpresak bere ereduek sufritzen dutela onartu gabe; irakurketa hori taldeko iruzkinarena da, iragarpenak ez baitu gaia garatzen. Tresna hauek erabiltzen dituzten irakasleei interesatzen zaie, erabilera-baldintzen aldaketa baita."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Anthropic: erabilera-politikaren eguneratzea (ingelesez)",
+          "url": "https://www.anthropic.com/news/2026-usage-policy-update"
+        }
+      ],
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 54033
+      },
+      "comprobado": "Revisor: abierto el anuncio oficial de Anthropic: publicación el 8 de octubre de 2026, entrada en vigor el 12 de noviembre, alcance (casos extremos), exclusiones, finalización de conversaciones como principal mecanismo y otros cambios (actividad engañosa, elecciones). El texto no menciona un principio de prudencia ni sufrimiento de los modelos: esa interpretación se atribuye solo al comentario del grupo (mensaje 54033 comprobado en Telegram). Quitada la frase sobre alumnado de 18 años o más, que el anuncio no menciona.",
+      "ilustracion": null,
+      "ilustracion_alt": "Marra gorri batek erdibitutako barra horizontal bat. Ezkerrean, «Baimenduta» errotuluarekin, hiru elkarrizketa-globo: bi «Frustrazioa» eta «Desadostasuna» errotuluekin. Marraren eskuinean, «Krudelkeria errepikatua» errotuluko globo urdin bat eta, azpian, «Azaroaren 12tik» errotuluko egutegi bat."
+    },
+    {
+      "id": "timbre-musical-escolar",
+      "seccion": "vibecoding",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Komunitatearen aplikazioa",
+      "titular": "Irakasle batek ikastetxeko sirena kalkulu-orri batetik kudeatzen den txirrin musikal batekin ordezkatu du",
+      "entradilla": "David Cordonesek kontatu du, AA sortzailearen laguntzarekin, Raspberry Pi batekin eskola-txirrina muntatu zuela eta klaustroak Google Sheets-etik aldatzen duela.",
+      "cuerpo": [
+        "David Cordonesek sortutako eskola-txirrin musikalak sirena irakasleek berek aukeratzen dituzten melodiekin ordezkatzen du. Egilearen arabera, proba-aldi baten ondoren egunero funtzionatzen du bere ikastetxean.",
+        "Muntaia xumea da: Raspberry Pi bat kable bidez sarera eta eskolako megafoniara konektatuta. Google Sheets kalkulu-orri batek, goitibeherako menuekin, arduradunei ordu edo jolas-ordu bakoitzean zer abesti jotzen den aukeratzen uzten die. Abestiak sare lokaleko karpeta partekatu batera arrastatzen diren MP3 fitxategiak dira.",
+        "Logika Python script batek ebazten du, minuturo egutegia kontsultatzen duena eta internetek huts egiten badu kopia lokala erabiltzen duena, eta Google Apps Script zubi batek, MP3 berri bat agertzen denean goitibeherakoak eguneratzen dituenak. Egilearen arabera, AAk scripta eta atzeko planoko zerbitzuak diseinatzen, zubia idazten eta baimen, audio eta sareko arazoak ebazten lagundu zuen.",
+        "Egileak eskemak, kodea eta gida teknikoa partekatzea eskaintzen dio erreplikatu nahi duenari. Oraingoz, deskribapena haren mezutik dator: ez dago proiektuaren orri publikorik eta ezin izan da funtzionamendua egiaztatu."
+      ],
+      "fuentes": [
+        {
+          "titulo": "David Cordonesen mezua Vibe Coding Educativo taldean (gaztelaniaz)",
+          "url": "https://t.me/vceduca/14717"
+        }
+      ],
+      "mensaje": {
+        "grupo": "vce",
+        "id": 14717
+      },
+      "comprobado": "Revisor: abierto el mensaje 14717 en Telegram (embed): coincide con la pieza (Raspberry Pi, Sheets con desplegables, carpeta Samba, script cada minuto con caché, Apps Script, papel de la IA, oferta de compartir). Es el único origen: no hay web ni repositorio público; todo se atribuye al autor. No se ha verificado el funcionamiento.",
+      "ilustracion": null,
+      "ilustracion_alt": "Ezkerretik eskuinera doan eskema: «Kalkulu-orria» errotuluko kalkulu-orri bat, «Raspberry Pi» errotuluko txip baterako gezi bat eta «Megafonia» errotuluko bozgorailu baterako beste gezi bat. Txiparen azpian, «MP3 karpeta» errotuluko musika-fitxategi bat eta Raspberry Pirantz gora doan gezi bat."
+    },
+    {
+      "id": "edumind-miclase-sincronizacion",
+      "seccion": "vibecoding",
+      "importancia": 3,
+      "grupo": "vce",
+      "antetitulo": "Komunitatearen aplikazioa",
+      "titular": "EDUmind MiClase, kode irekiko irakasleen koadernoak, datuak gailuan gordetzen ditu eta zerbitzari propiorik gabe sinkronizatzen du",
+      "entradilla": "Egileak taldean azaldu zuen nola sinkronizatzen dituen bi gailu eta zer funtzio gehitu dituela dioen LOMLOEren arabera ebaluatzeko.",
+      "cuerpo": [
+        "EDUmind MiClase Luis Vilela Acuñak sortutako kode irekiko irakasleen koadernoa da, irizpide eta tresnaren araberako ebaluazioarekin, LOMLOEren arabera. Bere biltegiak adierazten du ikasleen datuak ez direla irakaslearen gailutik ateratzen eta konexiorik gabe funtzionatzen duela. AGPL-3.0 edo EUPL-1.2 lizentziapean dago. EDUmind [egunkariak urriaren 30ean kontatu zituen galizierazko eta gaztelaniazko diktatuak](pieza:2026-10-29/dictados-voz-gallego) sortu dituen ekimen bera da.",
+        "Firebaserekin nola sinkronizatu galdetuta, egileak beste bide bat azaldu zuen: wifi-sare bereko gailuen arteko lotura zuzena, zerbitzaririk edo kanpoko zerbitzurik gabe. Biltegiak baieztatzen du sinkronizazioa WebRTC bidez egin daitekeela, tarteko zerbitzaririk gabe, edo zerbitzariak ireki ezin dituen gutun-azal zifratuen bidez. Egileak gehitzen du bidali aurretik pasahitza alderatzen dela, berriena ez dela zaharrarekin gainidazten eta argazki- eta bideo-ebidentziak bereizita eskatzen direla memoria agortu ez dadin; xehetasun hauek haren mezutik datoz.",
+        "Egilearen arabera, gainera, egokitzapen kurrikularren eta indartze-neurrien ebaluazioa, gako-konpetentzien eta jarduteko deskriptoreen azterketa eta Galiziako PDF programazioen tokiko azterketa gehitu ditu; biltegiak ez du xehetasunik ematen eta ez da egiaztatu. Bere aplikazioak programatzen dituenarentzat, datuen babeserako arriskuak murrizteko adibide bat da."
+      ],
+      "fuentes": [
+        {
+          "titulo": "EDUmind MiClase GitHuben (gaztelaniaz)",
+          "url": "https://github.com/edumind-es/edumind-miclase"
+        }
+      ],
+      "mensaje": {
+        "grupo": "vce",
+        "id": 14719
+      },
+      "comprobado": "Revisor: abierto el repositorio en GitHub: descripción, autoría (Luis Vilela Acuña), licencia doble, datos en el dispositivo, sincronización por WebRTC o sobres cifrados, funcionamiento sin conexión. No aparecen adaptaciones curriculares, refuerzos, competencias clave ni análisis de PDF de Galicia: se atribuyen al autor (mensajes 14719 y 14721; 14719 comprobado en Telegram). No hay web propia localizada, por eso se enlaza el repositorio. El enlace a la pieza de dictados está en publicado.txt y esa pieza atribuye EDUmind al mismo autor.",
+      "ilustracion": null,
+      "ilustracion_alt": "«Eramangarria» errotuluko ordenagailu eramangarri bat eta «Mugikorra» errotuluko mugikor bat, «Wifi bera» errotuluko wifi-ikurra duen norabide bikoitzeko gezi batez lotuak. Azpian, trazu etenez marraztutako eta gurutze gorri batez marratutako zerbitzari bat, «Zerbitzaririk gabe» errotuluarekin."
+    },
+    {
+      "id": "omni-1-2-flash-creditos-flow",
+      "seccion": "multimedia",
+      "importancia": 3,
+      "grupo": "edumedia",
+      "antetitulo": "AArekin bideoa",
+      "titular": "Google Flow-k segundoko kredituetan kobratzen ditu Gemini Omni 1.2 Flash-en bideoak",
+      "entradilla": "Flow-ren laguntza ofizialak xehetasunez azaltzen du ereduarekin klipak sortu eta editatzeak zenbat balio duen; taldean komentatu zutenez, aplikazioan aukeratzeko moduan dago dagoeneko.",
+      "cuerpo": [
+        "[Gemini Omni 1.2 Flash-en aurkezpenaren ondoren, egunkariak azaroaren 6an kontatu zuena](pieza:2026-11-05/gemini-omni-1-2-flash), EduMedia-IAG taldean komentatu zen Google Flow-k Omni 1.1 edo Omni 1.2 aukeratzen uzten duela eta sorkuntza bakoitzak kredituak gastatzen dituela.",
+        "Flow-ren laguntza ofizialaren arabera, 10 segundora arteko bideoak sortzeak edo editatzeak segundoko kreditu 1 balio du 360p-n eta 3 720p-n, eta erabiltzaile guztientzat dago irekita. 15 segundora arteko klipak Google AI Plus, Pro eta Ultra planetarako gordetzen dira, 10 segundotik gorako segundo bakoitzeko kostu handiagoarekin. Harpidetzarik gabe egunean 50 kreditu daude, pilatzen ez direnak, eta harpidetzarekin hilean 200 (Plus) eta 25.000 (Ultra, 200 dolarrekoa) artean. Googlek kostuak alda daitezkeela ohartarazten du."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Google Flow-ren laguntza: kredituak kudeatu (gaztelaniaz)",
+          "url": "https://support.google.com/flow/answer/16526234"
+        }
+      ],
+      "mensaje": {
+        "grupo": "edumedia",
+        "id": 12136
+      },
+      "comprobado": "Revisor: abierta la ayuda oficial de Flow (support.google.com/flow/answer/16526234): tabla de créditos de Omni Flash 1.2 por segundo y resolución, 15 s solo en Plus/Pro/Ultra, 50 créditos diarios sin suscripción y créditos mensuales por plan. Mensaje 12136 comprobado en Telegram (Flow en Google Play con Omni 1.1 y 1.2). El enlace a la pieza de Omni está en publicado.txt y trata del mismo modelo. No se ha probado en Flow; el draft lo había descartado por fuentes secundarias, la oficial sí existe.",
+      "ilustracion": null,
+      "ilustracion_alt": "Bi barrako grafikoa: baxuak, «360p» errotuluarekin, «kreditu 1/s» darama gainean, eta altuak, «720p» errotuluarekin, «3 kreditu/s». Eskuinean, zinema-klaketa bat eta, txanpon batzuen azpian, «egunean 50» errotulua."
+    }
+  ],
+  "breves": [],
+  "descartado": [
+    "Liga de Valores (aplicación de Educación Física, artículo en ResearchGate): ResearchGate no carga; la búsqueda web (título, revista, GitHub) no encontró el artículo, la revista ni el repositorio; sin fuente comprobable, se descarta.",
+    "Antigravity con interfaz web (Remote Control) y su disponibilidad en cuentas XTEC: el blog oficial de Google es del 21 de agosto de 2026, no es novedad de hoy, y ni el blog ni la documentación mencionan Workspace, proyectos en la nube ni cuentas XTEC; sin confirmar, se descarta.",
+    "Retirada del documento catalán por orden «de arriba»: referencia de oídas en el grupo, sin fuente; el diario ya recogió la situación de la página de XTEC.",
+    "Gemini a Google Sites: ya publicado el 5 de noviembre; los comentarios del día anterior no añaden nada nuevo.",
+    "Prueba con Blender y un modelo blanco (Gemini Omni 1.2 Flash como renderizador): solo un enlace a X sin original comprobable; no es noticia propia.",
+    "Gemelo digital 3D de envasado con Gemini (EduMedia-IAG): imagen sin fuente ni enlace a la aplicación; no comprobable.",
+    "Instagram de la comunidad, bots de moderación, aviso del repositorio semanal: administración interna."
+  ],
+  "repaso": [
+    "Anthropic: quitada la frase sobre alumnado de 18 años o más (el anuncio no la dice) y atribuida al grupo la lectura de «principio de prudencia», que el anuncio no recoge; añadido que el anuncio incluye otros cambios.",
+    "EDUmind MiClase: las funciones nuevas (adaptaciones, refuerzos, competencias clave, PDF de Galicia) pasan a ser «según el autor» porque el repositorio no las recoge.",
+    "Añadida pieza corta de EduMedia-IAG sobre los créditos de Omni 1.2 Flash en Flow, con la ayuda oficial de Google, enlazando la pieza de Omni ya publicada; el borrador dejaba al grupo sin pieza.",
+    "Descartados corregidos: Antigravity Remote Control es de agosto y no consta lo de XTEC; Liga de Valores buscado sin resultado.",
+    "Comprobados sin cambios: debate de familias (XTEC, enlace a cat-orientacions-ia) y timbre musical."
+  ]
+}

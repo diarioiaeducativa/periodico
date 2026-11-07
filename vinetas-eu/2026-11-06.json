@@ -1,0 +1,30 @@
+{
+  "fecha": "2026-11-06",
+  "elegida": {
+    "n": 1,
+    "pieza": "autorizacion-familias-ia",
+    "idea": "En el aula: falta una autorización, Algoritmo se queda sin clase y la clase de alfabetización en IA trata de él; protesta con total seguridad justo cuando Tiza explica que la IA se equivoca con total seguridad.",
+    "guion": {"vinetas": [
+      {"escenario": "aula",
+       "tiza": {"expresion": "neutral", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "sorprendido", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+       "objeto": "folio", "lleva": "tiza",
+       "bocadillos": [
+         {"quien": "tiza", "texto": "Baimen bat falta da. Gaur ez zara klasera sartuko.", "tipo": "habla"},
+         {"quien": "algoritmo", "texto": "Bakar batengatik? Besteek baietz diote!", "tipo": "habla"}]},
+      {"escenario": "aula",
+       "tiza": {"expresion": "neutral", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "preocupado", "postura": "pensar", "lugar": "derecha", "mira": "izquierda"},
+       "bocadillos": [
+         {"quien": "algoritmo", "texto": "Eta zer egingo duzue gaur nik gabe?", "tipo": "habla"},
+         {"quien": "tiza", "texto": "Zu aztertu.", "tipo": "habla"}]},
+      {"escenario": "aula",
+       "tiza": {"expresion": "orgulloso", "postura": "senalar", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "enfadado", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+       "bocadillos": [
+         {"quien": "tiza", "texto": "Lehen lezioa: AAk erabateko ziurtasunez huts egiten du.", "tipo": "habla"},
+         {"quien": "algoritmo", "texto": "Hori erabat gezurra da!", "tipo": "habla"}]}
+    ]}
+  },
+  "traduccion": "itzulpen automatikoa AArekin"
+}

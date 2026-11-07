@@ -1,0 +1,179 @@
+{
+  "fecha": "2026-11-06",
+  "hay_edicion": true,
+  "motivo": "Día normal: un debate con argumentos en ChatGPT-IA-edu, una novedad de Anthropic, dos aplicaciones de docentes en Vibe Coding Educativo y, en EduMedia-IAG, la continuación de Gemini Omni 1.2 Flash con los créditos que consume en Flow, ya comprobados en la ayuda oficial.",
+  "piezas": [
+    {
+      "id": "autorizacion-familias-ia",
+      "seccion": "debates",
+      "importancia": 1,
+      "grupo": "chatgpt",
+      "antetitulo": "Families and schools",
+      "titular": "Teachers debate whether families’ authorisation is needed to use AI with students",
+      "entradilla": "One school has limited generative AI with its students because some families did not authorise it; other views hold that simply informing them is enough. The rules are clear: families must be informed, but between 14 and 18 their consent is not needed unless the tool requires it.",
+      "cuerpo": [
+        "A conversation in ChatGPT-IA-edu reopened a common question in schools: whether using AI with students requires families’ permission. Several positions were put forward.",
+        "The first is caution. If even one family in a class group does not give authorisation, the tool should by default not be used with that group, so as not to create differences between students. In a school that has applied it this way, generative AI is not enabled for students and AI literacy is taught without using it, while teachers train during the school year and the staff meeting is expected to decide its strategy at the end.",
+        "The second holds that, when the tool is authorised by the education authority (for example Gemini or Copilot), there is no need to ask for permission, just as none is asked for using a platform such as Moodle. It would be enough to inform families, preferably with a published record, and what would matter is the backing of the School Council, the head teacher and the staff.",
+        "A third contribution pointed out that the [XTEC page on minimum ages by platform](https://projectes.xtec.cat/ia/edats-minimes-per-plataforma-dia/), updated on 14 July 2026, says that most platforms ask for parental authorisation between 14 and 18, so in practice it has to be requested. In reply, [the guidance from the Departament d’Educació, which the paper reported on 3 November](pieza:2026-11-02/cat-orientacions-ia), was cited. That reading was welcomed in the group as good news because of the leeway it gives schools, although, as was acknowledged, it does not end the argument in staff meetings. The question was raised of whether authorisation is needed while that document does not appear on the Departament’s website.",
+        "The answer does not depend on that document. **In education, the processing of students’ data is based on the public-interest mission, not on consent.** This is laid down in Article 6(1)(e) of the [General Data Protection Regulation](https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng) and in the [twenty-third additional provision of Spain’s Organic Law on Education](https://www.boe.es/buscar/act.php?id=BOE-A-2006-7899#davigesimotercera), as amended by the LOMLOE, which allows schools to process the student data they need for their educational function, and explained by the [Spanish Data Protection Agency](https://www.aepd.es/preguntas-frecuentes/10-menores-y-educacion/FAQ-1009-pueden-los-centros-educativos-impartir-clases-y-realizar-examenes-online-sin-el-consentimiento-de-los-interesados) (in Spanish). It applies throughout Spain; the [Orientacions](https://t.me/ChatGPTedu/21753/53605) apply it to AI in Catalonia (OIA-02).",
+        "Clear guidelines follow from this. **Families must be informed** about which tool is used, with which account and for what. Their consent is not needed for students aged 14 to 18 to use the tools provided by the school or the education authority, although the Orientacions recommend collecting authorisation as a safeguard and offer a template in their annex 5. **Authorisation is compulsory when the tool’s terms require it**, for example if students have to open a personal account with a service that asks for parental permission for under-18s. For students under 14, the Orientacions state that they should not use general-purpose AI on their own, but that the teacher should operate it (OIA-01 and OIA-23); other regions set different criteria, which the paper will review in this Sunday’s report.",
+        "If a family objects, its decision affects its own child, not the group. The Regulation recognises the right to object (Article 21), which the Orientacions include in OIA-16, and their authorisation template already provides equivalent alternative activities for students who are not yet old enough, a solution that also works in this case. Stopping using the tool with the whole group is a teaching decision by the school, not a legal obligation.",
+        "*Editor’s note: unlike other articles in this section, this one does not just summarise the conversation; the paragraphs on the rules were added in a manual review.*"
+      ],
+      "fuentes": [
+        {
+          "titulo": "XTEC: Minimum age to use AI, by platform (in Catalan)",
+          "url": "https://projectes.xtec.cat/ia/edats-minimes-per-plataforma-dia/"
+        },
+        {
+          "titulo": "Orientacions per a l’ús de la intel·ligència artificial als centres educatius (Generalitat de Catalunya, 2026) (in Catalan)",
+          "url": "https://t.me/ChatGPTedu/21753/53605"
+        },
+        {
+          "titulo": "Regulation (EU) 2016/679, General Data Protection Regulation (EUR-Lex)",
+          "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng"
+        },
+        {
+          "titulo": "Organic Law 2/2006 on Education, twenty-third additional provision (BOE, in Spanish)",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-7899#davigesimotercera"
+        },
+        {
+          "titulo": "¿Pueden los centros educativos impartir clases y realizar exámenes online sin el consentimiento de los interesados? (AEPD, in Spanish)",
+          "url": "https://www.aepd.es/preguntas-frecuentes/10-menores-y-educacion/FAQ-1009-pueden-los-centros-educativos-impartir-clases-y-realizar-examenes-online-sin-el-consentimiento-de-los-interesados"
+        }
+      ],
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 54027
+      },
+      "comprobado": "Revisor: abierta la página de XTEC (projectes.xtec.cat/ia/edats-minimes-per-plataforma-dia/): referencia de 14 años, autorización parental entre 14 y 18 en la mayoría de plataformas, menores de 14 posibles con autorización si la plataforma lo permite, actualizada el 14/07/2026. Mensaje 54027 comprobado en Telegram (centro sin IAG para el alumnado, formación y debate a final de curso). Lo que dice la guía catalana coincide con la pieza ya publicada (biblioteca 2026-11-02, cat-orientacions-ia: autorización recomendada de 14 a 18, menores de 14), y el enlace está en publicado.txt y trata de ese documento. Las posturas del grupo son opiniones, no hechos jurídicos: no se ha comprobado la normativa y se presentan como posturas, sin nombres.",
+      "ilustracion": "Esquema de decisión en tres columnas (informar, pedir autorización recomendada, no usar si alguna familia dice no) con las franjas de edad menor de 14, de 14 a 18 y las condiciones de la plataforma como filtro común.",
+      "ilustracion_alt": "Infographic in two panels. On the left, “Under 14”, with a whiteboard and the label “In Catalonia, the teacher operates the AI”. On the right, “14 to 18”, with four rows: a megaphone, “Inform: always”; a pair of scales, “Consent: not needed”; a document with a tick, “Authorisation: advised in Catalonia”; and a document with a pencil, “Compulsory if the tool requires it”. Below, a band with a crossed-out person: “If a family objects, it only affects their child”."
+    },
+    {
+      "id": "anthropic-abuso-modelos",
+      "seccion": "novedades",
+      "importancia": 3,
+      "grupo": "chatgpt",
+      "antetitulo": "Usage policy",
+      "titular": "Anthropic bans sustained, gratuitous abuse of its models in its usage policy",
+      "entradilla": "The update, published on 8 October 2026, takes effect on 12 November and will be enforced only in extreme cases.",
+      "cuerpo": [
+        "Anthropic has added to its usage policy a ban on sustained, unnecessary abusive or cruel behaviour towards its models. According to the announcement, it will be enforced only in extreme cases, involving repeated cruelty with no apparent purpose, and it does not cover everyday frustration, disagreement, dark creative themes, or testing and research on the models.",
+        "The announcement says that Claude’s existing ability to end rare conversations with persistently abusive users on Claude.ai and Claude Code will remain the main enforcement mechanism. The update includes other changes, such as a section on deceptive activity and a rewording of the elections section. In ChatGPT-IA-edu the measure was read as a principle of caution, with no admission by the company that its models suffer; that reading comes from the group’s comments, because the announcement does not develop the question. It matters to teachers who use these tools, because it is a change to the terms of use."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Anthropic: usage policy update",
+          "url": "https://www.anthropic.com/news/2026-usage-policy-update"
+        }
+      ],
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 54033
+      },
+      "comprobado": "Revisor: abierto el anuncio oficial de Anthropic: publicación el 8 de octubre de 2026, entrada en vigor el 12 de noviembre, alcance (casos extremos), exclusiones, finalización de conversaciones como principal mecanismo y otros cambios (actividad engañosa, elecciones). El texto no menciona un principio de prudencia ni sufrimiento de los modelos: esa interpretación se atribuye solo al comentario del grupo (mensaje 54033 comprobado en Telegram). Quitada la frase sobre alumnado de 18 años o más, que el anuncio no menciona.",
+      "ilustracion": null,
+      "ilustracion_alt": "A horizontal bar divided by a red line. On the left, labelled “Allowed”, three speech bubbles: two labelled “Frustration” and “Disagreement”. To the right of the line, a blue speech bubble labelled “Repeated cruelty” and, below it, a calendar labelled “From 12 Nov”."
+    },
+    {
+      "id": "timbre-musical-escolar",
+      "seccion": "vibecoding",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Community app",
+      "titular": "A teacher replaces the school siren with a musical bell managed from a spreadsheet",
+      "entradilla": "David Cordones says that, with the help of generative AI, he built a school bell on a Raspberry Pi that staff change from Google Sheets.",
+      "cuerpo": [
+        "The school musical bell, created by David Cordones, replaces the siren with melodies chosen by the teachers themselves. According to its author, it already runs daily at his school after a trial period.",
+        "The setup is modest: a Raspberry Pi connected by cable to the network and to the school’s public address system. A Google Sheets spreadsheet with drop-down menus lets those in charge choose which song plays at each period or break. The songs are MP3 files that are dragged into a shared folder on the local network.",
+        "The logic is handled by a Python script, which checks the calendar every minute and uses a local copy if the internet goes down, and a Google Apps Script bridge that updates the drop-down menus when a new MP3 appears. According to its author, AI helped to design the script and the background services, to write the bridge and to solve problems with permissions, audio and the network.",
+        "The author offers to share diagrams, code and a technical guide with anyone who wants to replicate it. For now the description comes from his message: there is no public project page and it has not been possible to check that it works."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Message from David Cordones in Vibe Coding Educativo (in Spanish)",
+          "url": "https://t.me/vceduca/14717"
+        }
+      ],
+      "mensaje": {
+        "grupo": "vce",
+        "id": 14717
+      },
+      "comprobado": "Revisor: abierto el mensaje 14717 en Telegram (embed): coincide con la pieza (Raspberry Pi, Sheets con desplegables, carpeta Samba, script cada minuto con caché, Apps Script, papel de la IA, oferta de compartir). Es el único origen: no hay web ni repositorio público; todo se atribuye al autor. No se ha verificado el funcionamiento.",
+      "ilustracion": null,
+      "ilustracion_alt": "Diagram from left to right: a spreadsheet labelled “Spreadsheet”, an arrow to a chip labelled “Raspberry Pi” and another arrow to a loudspeaker labelled “PA system”. Below the chip, a music file labelled “MP3 folder” and an arrow pointing up to the Raspberry Pi."
+    },
+    {
+      "id": "edumind-miclase-sincronizacion",
+      "seccion": "vibecoding",
+      "importancia": 3,
+      "grupo": "vce",
+      "antetitulo": "Community app",
+      "titular": "EDUmind MiClase, an open-source teacher’s notebook, keeps data on the device and syncs without its own server",
+      "entradilla": "Its author explained in the group how it syncs two devices and which features he says he has added to assess under the LOMLOE.",
+      "cuerpo": [
+        "EDUmind MiClase is an open-source teacher’s notebook, created by Luis Vilela Acuña, with assessment by criterion and instrument under the LOMLOE. Its repository states that students’ data never leaves the teacher’s device and that it works offline. It is licensed under AGPL-3.0 or EUPL-1.2. EDUmind is the same initiative behind [the Galician and Spanish dictation tools that the paper reported on 30 October](pieza:2026-10-29/dictados-voz-gallego).",
+        "Faced with a question about how to sync with Firebase, its author explained another route: a direct link between devices on the same wifi network, with no servers or external services. The repository confirms that syncing can be done over WebRTC, with no intermediate server, or through encrypted envelopes that the server cannot open. The author adds that the password is compared before anything is sent, that newer data is not overwritten by older, and that photo and video evidence is requested separately so as not to exhaust memory; these details come from his message.",
+        "According to the author, he has also added assessment of curricular adaptations and support measures, analysis of key competences and operational descriptors, and local analysis of Galician teaching plans in PDF; the repository does not detail this and it has not been checked. For those who code their own apps, it is an example of how to reduce data-protection risks."
+      ],
+      "fuentes": [
+        {
+          "titulo": "EDUmind MiClase on GitHub",
+          "url": "https://github.com/edumind-es/edumind-miclase"
+        }
+      ],
+      "mensaje": {
+        "grupo": "vce",
+        "id": 14719
+      },
+      "comprobado": "Revisor: abierto el repositorio en GitHub: descripción, autoría (Luis Vilela Acuña), licencia doble, datos en el dispositivo, sincronización por WebRTC o sobres cifrados, funcionamiento sin conexión. No aparecen adaptaciones curriculares, refuerzos, competencias clave ni análisis de PDF de Galicia: se atribuyen al autor (mensajes 14719 y 14721; 14719 comprobado en Telegram). No hay web propia localizada, por eso se enlaza el repositorio. El enlace a la pieza de dictados está en publicado.txt y esa pieza atribuye EDUmind al mismo autor.",
+      "ilustracion": null,
+      "ilustracion_alt": "A laptop labelled “Laptop” and a mobile phone labelled “Phone”, joined by a two-way arrow with a wifi symbol and the label “Same wifi”. Below, a server drawn with a dashed line and crossed out with a red cross, labelled “No server”."
+    },
+    {
+      "id": "omni-1-2-flash-creditos-flow",
+      "seccion": "multimedia",
+      "importancia": 3,
+      "grupo": "edumedia",
+      "antetitulo": "AI video",
+      "titular": "Google Flow charges credits per second for Gemini Omni 1.2 Flash videos",
+      "entradilla": "Flow’s official help page sets out the cost of generating and editing clips with the model, which can already be chosen in the app, according to comments in the group.",
+      "cuerpo": [
+        "Following the unveiling of [Gemini Omni 1.2 Flash, which the paper reported on 6 November](pieza:2026-11-05/gemini-omni-1-2-flash), it was noted in EduMedia-IAG that Google Flow lets users choose Omni 1.1 or Omni 1.2 and that each generation uses credits.",
+        "According to Flow’s official help page, generating or editing videos of up to 10 seconds costs 1 credit per second at 360p and 3 at 720p, and is open to all users. Clips of up to 15 seconds are reserved for Google AI Plus, Pro and Ultra plans, at a higher cost for each second beyond 10. Without a subscription there are 50 daily credits that do not roll over, and with a subscription between 200 (Plus) and 25,000 (the $200 Ultra plan) a month. Google warns that costs may change."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Google Flow Help: manage your credits",
+          "url": "https://support.google.com/flow/answer/16526234"
+        }
+      ],
+      "mensaje": {
+        "grupo": "edumedia",
+        "id": 12136
+      },
+      "comprobado": "Revisor: abierta la ayuda oficial de Flow (support.google.com/flow/answer/16526234): tabla de créditos de Omni Flash 1.2 por segundo y resolución, 15 s solo en Plus/Pro/Ultra, 50 créditos diarios sin suscripción y créditos mensuales por plan. Mensaje 12136 comprobado en Telegram (Flow en Google Play con Omni 1.1 y 1.2). El enlace a la pieza de Omni está en publicado.txt y trata del mismo modelo. No se ha probado en Flow; el draft lo había descartado por fuentes secundarias, la oficial sí existe.",
+      "ilustracion": null,
+      "ilustracion_alt": "Chart with two bars: the short one, labelled “360p”, has “1 credit/s” above it and the tall one, labelled “720p”, has “3 credits/s”. On the right, a film clapperboard and, beneath some coins, the label “50 a day”."
+    }
+  ],
+  "breves": [],
+  "descartado": [
+    "Liga de Valores (aplicación de Educación Física, artículo en ResearchGate): ResearchGate no carga; la búsqueda web (título, revista, GitHub) no encontró el artículo, la revista ni el repositorio; sin fuente comprobable, se descarta.",
+    "Antigravity con interfaz web (Remote Control) y su disponibilidad en cuentas XTEC: el blog oficial de Google es del 21 de agosto de 2026, no es novedad de hoy, y ni el blog ni la documentación mencionan Workspace, proyectos en la nube ni cuentas XTEC; sin confirmar, se descarta.",
+    "Retirada del documento catalán por orden «de arriba»: referencia de oídas en el grupo, sin fuente; el diario ya recogió la situación de la página de XTEC.",
+    "Gemini a Google Sites: ya publicado el 5 de noviembre; los comentarios del día anterior no añaden nada nuevo.",
+    "Prueba con Blender y un modelo blanco (Gemini Omni 1.2 Flash como renderizador): solo un enlace a X sin original comprobable; no es noticia propia.",
+    "Gemelo digital 3D de envasado con Gemini (EduMedia-IAG): imagen sin fuente ni enlace a la aplicación; no comprobable.",
+    "Instagram de la comunidad, bots de moderación, aviso del repositorio semanal: administración interna."
+  ],
+  "repaso": [
+    "Anthropic: quitada la frase sobre alumnado de 18 años o más (el anuncio no la dice) y atribuida al grupo la lectura de «principio de prudencia», que el anuncio no recoge; añadido que el anuncio incluye otros cambios.",
+    "EDUmind MiClase: las funciones nuevas (adaptaciones, refuerzos, competencias clave, PDF de Galicia) pasan a ser «según el autor» porque el repositorio no las recoge.",
+    "Añadida pieza corta de EduMedia-IAG sobre los créditos de Omni 1.2 Flash en Flow, con la ayuda oficial de Google, enlazando la pieza de Omni ya publicada; el borrador dejaba al grupo sin pieza.",
+    "Descartados corregidos: Antigravity Remote Control es de agosto y no consta lo de XTEC; Liga de Valores buscado sin resultado.",
+    "Comprobados sin cambios: debate de familias (XTEC, enlace a cat-orientacions-ia) y timbre musical."
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "fecha": "2026-11-06",
+  "elegida": {
+    "n": 1,
+    "pieza": "autorizacion-familias-ia",
+    "idea": "En el aula: falta una autorización, Algoritmo se queda sin clase y la clase de alfabetización en IA trata de él; protesta con total seguridad justo cuando Tiza explica que la IA se equivoca con total seguridad.",
+    "guion": {"vinetas": [
+      {"escenario": "aula",
+       "tiza": {"expresion": "neutral", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "sorprendido", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+       "objeto": "folio", "lleva": "tiza",
+       "bocadillos": [
+         {"quien": "tiza", "texto": "Falta una autorización. Hoy no entras en clase.", "tipo": "habla"},
+         {"quien": "algoritmo", "texto": "¿Por una sola? ¡Las demás dicen que sí!", "tipo": "habla"}]},
+      {"escenario": "aula",
+       "tiza": {"expresion": "neutral", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "preocupado", "postura": "pensar", "lugar": "derecha", "mira": "izquierda"},
+       "bocadillos": [
+         {"quien": "algoritmo", "texto": "¿Y qué vais a hacer hoy sin mí?", "tipo": "habla"},
+         {"quien": "tiza", "texto": "Estudiarte.", "tipo": "habla"}]},
+      {"escenario": "aula",
+       "tiza": {"expresion": "orgulloso", "postura": "senalar", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "enfadado", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+       "bocadillos": [
+         {"quien": "tiza", "texto": "Lección uno: la IA se equivoca con total seguridad.", "tipo": "habla"},
+         {"quien": "algoritmo", "texto": "¡Eso es rotundamente falso!", "tipo": "habla"}]}
+    ]}
+  },
+  "motivo": "La 1 es la única con un remate que se demuestra solo: Algoritmo niega con total seguridad que la IA se equivoque con total seguridad, sin que nadie lo explique. Se entiende sin haber leído la noticia, y se ajusta a ella: si una familia no autoriza, la IA no se usa con el grupo y la alfabetización en IA se trabaja sin usarla. «Estudiarte» es un buen giro intermedio. Gracia 8: no hace falta afinarla a fondo. La 4 («Por si acaso, tú menos») y la 2 («¿Te la paso a tabla?») son las siguientes, pero la 4 cierra con una réplica más previsible y la 2 se apoya en una viñeta 3 que explica («Leí la letra pequeña»). La 3 y la 5 tienen el remate más flojo y la 5 lo explica.",
+  "retoques": "Bocadillo de Algoritmo en la viñeta 1 recortado («¿Por una sola? ¡Las demás dicen que sí!»), por ritmo. Viñeta 2: Tiza pasa de pensativo y encogida a neutral con los brazos abajo; el «Estudiarte.» seco tiene más retranca que una duda. Variedad: el aula no salió en los tres números anteriores (sala_profes, sala_profes y sin escenario) y la noticia trata del uso en clase; lleva escenario, como pide el encargo porque el número anterior salió sin él. No usa las caras más repetidas: contento no sale y orgulloso solo lo pone Tiza al final. El objeto es un folio y no repite el portátil del número anterior. Ningún bocadillo pasa de 90 caracteres (el más largo tiene 51).",
+  "puntuaciones": [
+    {"n": 1, "pieza": "autorizacion-familias-ia", "gracia": 8, "claridad": 8, "remate": 8, "respeta_prohibiciones": true, "nota": "Remate autodemostrativo y limpio; datos fieles a la noticia (una sola familia basta, alfabetización sin usar la IA)."},
+    {"n": 2, "pieza": "anthropic-abuso-modelos", "gracia": 6, "claridad": 7, "remate": 7, "respeta_prohibiciones": true, "nota": "Datos correctos (12 de noviembre, la frustración habitual no cuenta) y no nombra a la empresa. El «¿Te la paso a tabla?» funciona, pero «Leí la letra pequeña» explica y la viñeta 2 va cargada."},
+    {"n": 3, "pieza": "timbre-musical-escolar", "gracia": 5, "claridad": 6, "remate": 5, "respeta_prohibiciones": true, "nota": "Datos fieles (copia local, Raspberry por cable, hoja de cálculo). La viñeta 2 es una ficha técnica y el contraste con Algoritmo cargando es tenue; sin leer la noticia cuesta."},
+    {"n": 4, "pieza": "edumind-miclase-sincronizacion", "gracia": 7, "claridad": 7, "remate": 7, "respeta_prohibiciones": true, "nota": "Fiel (sincronización por la wifi sin servidor). Buena réplica final, pero la tira repite la pregunta de Algoritmo dos veces y el remate se ve venir."},
+    {"n": 5, "pieza": "omni-1-2-flash-creditos-flow", "gracia": 6, "claridad": 7, "remate": 5, "respeta_prohibiciones": true, "nota": "Cifras correctas (50 al día sin suscripción, 3 por segundo a 720p, no se acumulan). El paralelo con el cupo de fotocopias es reconocible, pero «Me siento en casa» lo remata explicándolo."}
+  ]
+}

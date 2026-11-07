@@ -1,0 +1,120 @@
+{
+  "fecha": "2026-11-06",
+  "piezas": [
+    {
+      "id": "semana-del-repositorio",
+      "seccion": "vibecoding",
+      "repositorio": "semana",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Biltegiaren astea",
+      "titular": "Esaldien enkante bat, vibe coding arduratsuaren gida bat, kimika, musika eta liburu ilustratuak, berriak biltegian",
+      "entradilla": "Vibe Coding Educativoren Baliabideen biltegiak sei baliabide berri ditu: bi Juanjo de Harorenak, bat Felip Sarrocarena, bat FiQuiPediarena eta bi Samuel Sorianorenak.",
+      "cuerpo": [
+        "Aste honetan lizentzia irekiko sei baliabide sartu dira biltegian: eztabaida-dinamika bat, AArekin sortutakoa arduraz argitaratzeko gida bat, kimikako formulazio- eta estekiometria-aplikazio bi, musika-jolasen multzo bat eta liburu ilustratuen tailer bat. Nabigatzailean irekitzen dira, eta, bakoitzean adierazten denaz gain, konturik gabe. Pertsona beraren baliabideak elkarrekin doaz."
+      ],
+      "recursos": [
+        {
+          "id": "subasta-de-frases",
+          "titulo": "Subasta de frases",
+          "autoria": "Juanjo de Haro",
+          "url": "https://jjdeharo.github.io/subasta_frases/",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://jjdeharo.github.io/subasta_frases/",
+          "licencia": "AGPL v3 (kodea) · CC BY-SA 4.0 (edukiak)",
+          "captura": "2026-11-06-subasta-de-frases.jpg",
+          "captura_alt": "Subasta de frasesen hasierako orria, «Crear una actividad» eta «Unirse a una sesión» botoiekin eta hiru txartelekin: Conocimiento, Valores y prioridades, Roles y conceptos.",
+          "texto": [
+            "Juanjo de Harok dinamika parte-hartzaile bat sortu du: irakasleak enkante bat prestatzen du, eta ikasleak saio-kode batekin batzen dira esaldien alde pujatzera. Hiru modu ditu: «Conocimiento», zeinetan zuzentzat jotzen diren baieztapenen alde pujatzen den eta erabakia defendatzen den; «Valores y prioridades», zeinak aurrekontu mugatu bat banatzen duen taldearentzat garrantzitsuenak diren ideien artean; eta «Roles y conceptos», zeinetan parekatzea asmatzeak puntuak gehitzen dituen eta oker egiteak kentzen dituen. Orriak adierazten duenez, ez du erregistrorik behar eta datuak iragankorrak dira. Sei hizkuntzatan eskaintzen da, horien artean gaztelania, katalana, galegoa eta euskara. AGPL v3 lizentzia kodearentzat eta CC BY-SA 4.0 edukientzat."
+          ]
+        },
+        {
+          "id": "vibe-coding-responsable",
+          "titulo": "Vibe coding responsable",
+          "autoria": "Juanjo de Haro",
+          "url": "https://vibe-coding-educativo.github.io/vibe-responsable",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://vibe-coding-educativo.github.io/vibe-responsable",
+          "licencia": "AGPL-3.0 (kodea); CC-BY-SA-4.0 (edukiak)",
+          "captura": "2026-11-06-vibe-coding-responsable.jpg",
+          "captura_alt": "Vibe coding responsable gidaren «Presentación» orria, eskuinean hamar gomendioko infografia bat eta hasteko hiru urratsak dituela.",
+          "texto": [
+            "Juanjo de Harok gida ez-tekniko bat argitaratu du vibe coding bidez AArekin sortutako materialak partekatzen dituzten irakasleentzat. Aurkezpenaren arabera, lizentziarik gabe zirkulatzen duten edo ikasleen datuak kanpoko zerbitzuetara bidaltzen dituzten materialetatik sortu da, eta hamar gomendio proposatzen ditu: eduki zuzena, datuen babesa, irisgarritasuna, egiletza aitortzea, AA erabili dela adieraztea eta lizentzia librea, besteak beste. Infografia bat, animazio bat, sortzean AAri emateko deskargatu daitezkeen jarraibideak eta baliabide bat ebaluatzeko errubrika bat (VCER) ditu. Webean irakurtzen da, PDF bertsioa dago eta bost hizkuntzatan eskaintzen da. Egilearen esanetan, iradokizunei irekita dago."
+          ]
+        },
+        {
+          "id": "reactius-i-sobrants",
+          "titulo": "Reactius i sobrants",
+          "autoria": "Felip Sarroca i Gil",
+          "url": "https://ja.cat/reactius",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://ja.cat/reactius",
+          "licencia": "CC BY-NC-SA 4.0",
+          "captura": "2026-11-06-reactius-i-sobrants.jpg",
+          "captura_alt": "Kimika-laborategia katalanez, metanoaren eta oxigenoaren erreakzio bat eredu molekularrekin marraztuta eta produktuak eta soberako erreaktiboak adierazteko laukiekin.",
+          "texto": [
+            "Felip Sarroca i Gilek, AAren laguntzaz, laborategi interaktibo bat sortu du katalanez erreaktibo mugatzailea, soberakinezko erreaktiboa eta soberakinak ulertzeko; egilearen esanetan, Derrigorrezko Bigarren Hezkuntzarako eta Batxilergorako pentsatua dago. Hiru modu ditu: «Aprèn», «Practica» eta «Repte». Praktikan, ikasleak erreakzioa eredu molekularrekin ikusten du, zenbat produktu sortzen diren eta zenbat erreaktibo gelditzen diren soberan zenbatzen du, eta pista bat edo soluzioa eska ditzake. Jarduera mota ugari, hiru zailtasun-maila eta saiakeren, asmatzeen eta bolada onaren markagailu bat eskaintzen ditu. Fitxaren arabera, glosarioa, masa atomikoak, nabigatzailean gordetako aurrerapena eta arbel digitalerako proiektore-modu bat ere baditu. CC BY-NC-SA 4.0 lizentzia."
+          ]
+        },
+        {
+          "id": "foqa-formulacion-quimica-inorganica",
+          "titulo": "FoQa – Formulación Química Inorgánica",
+          "autoria": "FiQuiPedia",
+          "url": "https://foqa.fiquipedia.es/",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://foqa.fiquipedia.es/",
+          "licencia": "AGPL v3 (kodea) · CC BY-SA 4.0 (edukiak)",
+          "captura": "2026-11-06-foqa-formulacion-quimica-inorganica.jpg",
+          "captura_alt": "FoQa Inorgánicaren hasierako orria, «Tests», «F → N» eta «Panel» hiru botoiekin eta konposatu-familien zerrendarekin.",
+          "texto": [
+            "FiQuiPediak FoQa aurkeztu du, IUPAC 2005 arauen araberako formulazio eta nomenklatura ez-organikoa praktikatzeko gaztelaniazko aplikazio bat. Bitarrei, hidroxidoei, peroxidoei, oxazidoei, oxisalei, gatz azidoei, homoatomikoei eta ioiei buruzko testak sortzen ditu, eta formulatik izen posibleetara bihurtzeko tresna bat eskaintzen du. Panelean familiak eta arauak aukeratzen dira, esaterako azentuekiko zorroztasuna, eta PDFra esporta daiteke; fitxaren arabera, SCORMera ere bai. Egilearen esanetan, DeepSeekekin egin zen, eta Moodle-n jarduera gisa funtzionatzeko eta nota kalifikazio-liburuan islatzeko pentsatua dago. Egunkariak jada kontatu zuen haren baliokidea [formulazio organikorako, FoQo](pieza:2026-11-03/foqo-formulacion-quimica-organica). AGPL v3 eta CC BY-SA 4.0 lizentziak."
+          ]
+        },
+        {
+          "id": "edumusic",
+          "titulo": "EduMúsic",
+          "autoria": "Samuel Soriano",
+          "url": "https://edumusic.edutictac.es/",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://edumusic.edutictac.es/",
+          "licencia": "MIT",
+          "captura": "2026-11-06-edumusic.jpg",
+          "captura_alt": "EduMúsicen azala valentziera, maila-hautatzailearekin eta jolas-txartelekin, hala nola Atrapa Notes, Memory d'Instruments eta Paraules Musicals Secretes.",
+          "texto": [
+            "Samuel Sorianok EduMúsic-en musika-jardueren bilduma bat batu du, fitxaren arabera Lehen Hezkuntzarako, valentzieraz dagoen interfazearekin eta gaztelania eta ingelesa ere eskaintzen dituen hizkuntza-hautatzailearekin. Maila (hasierakoa, ertaina, aurreratua) eta etiketa bidez iragazten dira. Pentagraman notak harrapatzeko jolasak, instrumentuen memory-jokoa, konpas-puzzleak, erritmo- eta melodia-diktaketak, tinbreen ezagutza, bi zortzidunako teklatu bat eta gailuan bertan gordetako sailkapenak ditu. Kanpoko baliabideetarako loturak ere baditu, hala nola JClic edo EduHoot. Fitxaren arabera, instala daitekeen web-aplikazio progresibo bat da. MIT lizentzia."
+          ]
+        },
+        {
+          "id": "edutictac-llibres",
+          "titulo": "EduTicTac Llibres",
+          "autoria": "Samuel Soriano",
+          "url": "https://llibres.edutictac.es/",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://llibres.edutictac.es/",
+          "licencia": "AGPL v3",
+          "captura": "2026-11-06-edutictac-llibres.jpg",
+          "captura_alt": "EduTicTac Llibresen hasierako orria, «Tu próxima historia empieza aquí» goiburuarekin, «Crear un libro» eta «Abrir un libro» botoiekin eta liburu baten azalarekin.",
+          "texto": [
+            "Samuel Sorianok EduTicTac Llibres ere sinatzen du, testuekin, irudiekin eta marrazkiekin liburu ilustratuak eta komikiak sortzeko tailer bat, orria gaztelaniaz duena. Orriak liburu bat sortzea edo irekitzea eskaintzen du sartu gabe; liburuak nabigatzailean gordetzen dira eta komeni da kopia bat deskargatzea. Ipuin bat eta komiki bat ditu adibide gisa, valentzieraz. Fitxaren arabera, eXeLearning eta txantiloiak erabiltzen ditu, Lehen Hezkuntzarako, Bigarren Hezkuntzarako eta irakasleen prestakuntzarako pentsatua dago, eta liburuak .elpx formatuan deskargatzen dira eta banku komun batean argitara daitezke irakaslearen kontuarekin; ikasleak gelako kode eta PIN batekin sartzen dira, eta irakasleak onartzen ditu. Pertsona berak sortu zuen [EduTicTac Blocs bloke-editorea](pieza:2026-11-04/edutictac-blocs). AGPL v3 lizentzia."
+          ]
+        }
+      ],
+      "fuentes": [
+        {"titulo": "Subasta de frases", "url": "https://jjdeharo.github.io/subasta_frases/"},
+        {"titulo": "Vibe coding responsable (gaztelaniaz)", "url": "https://vibe-coding-educativo.github.io/vibe-responsable"},
+        {"titulo": "Aurkezpena ChatGPT-IA-edun (gaztelaniaz)", "url": "https://t.me/ChatGPTedu/53002"},
+        {"titulo": "Aurkezpena EduMedia-IAGn (gaztelaniaz)", "url": "https://t.me/EduMediaIAG/11534"},
+        {"titulo": "Reactius i sobrants (katalanez)", "url": "https://ja.cat/reactius"},
+        {"titulo": "Aurkezpena Vibe Coding Educativon (Reactius i sobrants) (gaztelaniaz)", "url": "https://t.me/vceduca/7674/14292"},
+        {"titulo": "FoQa – Formulación Química Inorgánica (gaztelaniaz)", "url": "https://foqa.fiquipedia.es/"},
+        {"titulo": "Aurkezpena Vibe Coding Educativon (FoQa) (gaztelaniaz)", "url": "https://t.me/vceduca/7674/12792"},
+        {"titulo": "EduMúsic (valentzieraz, gaztelaniaz eta ingelesez)", "url": "https://edumusic.edutictac.es/"},
+        {"titulo": "EduTicTac Llibres (gaztelaniaz)", "url": "https://llibres.edutictac.es/"},
+        {"titulo": "Aurkezpena Vibe Coding Educativon (EduTicTac Llibres) (gaztelaniaz)", "url": "https://t.me/vceduca/7674/14465"}
+      ],
+      "comprobado": "Revisión: vistas las seis capturas y comparadas con la entrada (títulos, autoría, licencias, fichas, archivos). Con WebFetch: Subasta de frases (modos, sin registro, seis idiomas), la guía en /es/ (cinco idiomas, PDF, rúbrica VCER, instrucciones para la IA), FoQa (tests, fórmula→nombres, panel, botones PDF y estado SCORM), EduMúsic (catálogo de actividades, niveles). Reactius, Llibres y la portada de la guía devolvieron poco o nada con WebFetch: mandan la captura y el texto visible. Reactius: visibles los modos, niveles, pista, solución y marcador; glosario, masas atómicas, progreso en el navegador y modo proyector solo en la ficha y el mensaje del autor. Llibres: no se ve eXeLearning, plantillas, .elpx, banco común ni PIN (ficha). EduMúsic: Primaria e instalación como PWA, solo de la ficha. Comprobado que la pieza 2026-11-04/edutictac-blocs existe en publicado.txt y es de Samuel Soriano, y que 2026-11-03/foqo-formulacion-quimica-organica existe y trata de FoQo. Lo de la herramienta (DeepSeek, Moodle) y la guía abierta a sugerencias es del mensaje de su autor."
+    }
+  ],
+  "descartado": [],
+  "repaso": [
+    "Reactius i sobrants: «Secundaria y Bachillerato» pasa a «según su autor»; glosario, masas atómicas y progreso en el navegador pasan a «según la ficha» junto al modo proyector (no se ven rotulados en la captura); se añade lo que sí se ve (tres niveles, marcador de intentos, aciertos y racha).",
+    "FoQa: la exportación a SCORM pasa a «según la ficha» (se ve PDF, no SCORM funcionando).",
+    "EduMúsic: «para Primaria» atribuido a la ficha (la página no lo dice).",
+    "EduTicTac Llibres: eXeLearning, plantillas y niveles (Primaria, Secundaria, formación del profesorado) atribuidos a la ficha; se indica que la página está en castellano con ejemplos en valenciano.",
+    "Comprobados sin cambios: titulos, autorías, licencias, fichas y capturas con la entrada, los textos alternativos, las fuentes y los dos enlaces a lo ya publicado (claves en publicado.txt y temas coincidentes); extensiones del modo semana."
+  ]
+}

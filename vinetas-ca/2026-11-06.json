@@ -1,0 +1,30 @@
+{
+  "fecha": "2026-11-06",
+  "elegida": {
+    "n": 1,
+    "pieza": "autorizacion-familias-ia",
+    "idea": "A l'aula: falta una autorització, Algorisme es queda sense classe i la classe d'alfabetització en IA tracta d'ell; protesta amb tota seguretat just quan Guix explica que la IA s'equivoca amb tota seguretat.",
+    "guion": {"vinetas": [
+      {"escenario": "aula",
+       "tiza": {"expresion": "neutral", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "sorprendido", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+       "objeto": "folio", "lleva": "tiza",
+       "bocadillos": [
+         {"quien": "tiza", "texto": "Falta una autorització. Avui no entres a classe.", "tipo": "habla"},
+         {"quien": "algoritmo", "texto": "Per una sola? Les altres diuen que sí!", "tipo": "habla"}]},
+      {"escenario": "aula",
+       "tiza": {"expresion": "neutral", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "preocupado", "postura": "pensar", "lugar": "derecha", "mira": "izquierda"},
+       "bocadillos": [
+         {"quien": "algoritmo", "texto": "I què fareu avui sense mi?", "tipo": "habla"},
+         {"quien": "tiza", "texto": "Estudiar-te.", "tipo": "habla"}]},
+      {"escenario": "aula",
+       "tiza": {"expresion": "orgulloso", "postura": "senalar", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "enfadado", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+       "bocadillos": [
+         {"quien": "tiza", "texto": "Lliçó u: la IA s'equivoca amb tota seguretat.", "tipo": "habla"},
+         {"quien": "algoritmo", "texto": "Això és rotundament fals!", "tipo": "habla"}]}
+    ]}
+  },
+  "traduccion": "automàtica amb IA"
+}

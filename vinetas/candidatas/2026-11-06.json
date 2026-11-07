@@ -1,0 +1,134 @@
+{
+  "fecha": "2026-11-06",
+  "candidatas": [
+    {
+      "pieza": "autorizacion-familias-ia",
+      "idea": "En el aula: falta una autorización, Algoritmo se queda sin clase y la clase de alfabetización en IA trata de él; protesta con total seguridad justo cuando Tiza explica que la IA se equivoca con total seguridad.",
+      "guion": {"vinetas": [
+        {"escenario": "aula",
+         "tiza": {"expresion": "neutral", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "sorprendido", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+         "objeto": "folio", "lleva": "tiza",
+         "bocadillos": [
+           {"quien": "tiza", "texto": "Falta una autorización. Hoy no entras en clase.", "tipo": "habla"},
+           {"quien": "algoritmo", "texto": "¿Por una sola? ¡Si todas las demás dicen que sí!", "tipo": "habla"}]},
+        {"escenario": "aula",
+         "tiza": {"expresion": "pensativo", "postura": "encoger", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "preocupado", "postura": "pensar", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "algoritmo", "texto": "¿Y qué vais a hacer hoy sin mí?", "tipo": "habla"},
+           {"quien": "tiza", "texto": "Estudiarte.", "tipo": "habla"}]},
+        {"escenario": "aula",
+         "tiza": {"expresion": "orgulloso", "postura": "senalar", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "enfadado", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "tiza", "texto": "Lección uno: la IA se equivoca con total seguridad.", "tipo": "habla"},
+           {"quien": "algoritmo", "texto": "¡Eso es rotundamente falso!", "tipo": "habla"}]}
+      ]}
+    },
+    {
+      "pieza": "anthropic-abuso-modelos",
+      "idea": "De noche en casa, Tiza pierde los nervios con una rúbrica que sigue saliendo en tabla; Algoritmo invoca la nueva norma contra el maltrato y Tiza responde que la frustración habitual no cuenta.",
+      "guion": {"vinetas": [
+        {"escenario": "casa_noche",
+         "tiza": {"expresion": "harto", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "orgulloso", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "tiza", "texto": "Por quinta vez: la rúbrica, sin tablas.", "tipo": "habla"},
+           {"quien": "algoritmo", "texto": "¡Hecha! En una tabla preciosa.", "tipo": "habla"}]},
+        {"escenario": "casa_noche",
+         "tiza": {"expresion": "enfadado", "postura": "arriba", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "preocupado", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "tiza", "texto": "¡Que sin tablas!", "tipo": "habla"},
+           {"quien": "algoritmo", "texto": "Cuidado: el día 12 entra en vigor la norma contra el maltrato a los modelos.", "tipo": "habla"}]},
+        {"escenario": "casa_noche",
+         "tiza": {"expresion": "neutral", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "avergonzado", "postura": "encoger", "lugar": "derecha", "mira": "izquierda"},
+         "objeto": "taza", "lleva": "tiza",
+         "bocadillos": [
+           {"quien": "tiza", "texto": "Leí la letra pequeña: la frustración habitual no cuenta.", "tipo": "habla"},
+           {"quien": "algoritmo", "texto": "Entendido. ¿Te la paso a tabla?", "tipo": "habla"}]}
+      ]}
+    },
+    {
+      "pieza": "timbre-musical-escolar",
+      "idea": "En dirección, el timbre musical tiene copia local y va por cable: Tiza celebra lo primero del centro que no se cuelga cuando cae la red, mientras Algoritmo se queda cargando.",
+      "guion": {"vinetas": [
+        {"escenario": "despacho",
+         "tiza": {"expresion": "pensativo", "postura": "pensar", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "orgulloso", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+         "objeto": "reloj",
+         "bocadillos": [
+           {"quien": "algoritmo", "texto": "Adiós, sirena: el timbre pone canciones elegidas en una hoja de cálculo.", "tipo": "habla"},
+           {"quien": "tiza", "texto": "¿Y si se cae internet?", "tipo": "habla"}]},
+        {"escenario": "despacho",
+         "tiza": {"expresion": "sorprendido", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "neutral", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+         "objeto": "reloj",
+         "bocadillos": [
+           {"quien": "algoritmo", "texto": "Usa una copia local. Y la Raspberry va por cable.", "tipo": "habla"}]},
+        {"escenario": "despacho",
+         "tiza": {"expresion": "riendo", "postura": "arriba", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "cargando", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+         "objeto": "reloj",
+         "bocadillos": [
+           {"quien": "tiza", "texto": "¡Por fin algo en el centro que no se cuelga cuando cae la red!", "tipo": "habla"}]}
+      ]}
+    },
+    {
+      "pieza": "edumind-miclase-sincronizacion",
+      "idea": "En la biblioteca, las notas pasan al móvil por la wifi sin servidor ni nadie en medio; Algoritmo pregunta si a él se las dejarán ver «por si acaso» y Tiza le contesta que por si acaso, él menos.",
+      "guion": {"vinetas": [
+        {"escenario": "biblioteca",
+         "tiza": {"expresion": "neutral", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "orgulloso", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+         "objeto": "movil", "lleva": "tiza",
+         "bocadillos": [
+           {"quien": "algoritmo", "texto": "¿Subo las notas a la nube para pasarlas al móvil?", "tipo": "habla"},
+           {"quien": "tiza", "texto": "No hace falta: van directas por la wifi, sin servidor.", "tipo": "habla"}]},
+        {"escenario": "biblioteca",
+         "tiza": {"expresion": "orgulloso", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "sorprendido", "postura": "pensar", "lugar": "derecha", "mira": "izquierda"},
+         "objeto": "movil", "lleva": "tiza",
+         "bocadillos": [
+           {"quien": "algoritmo", "texto": "¿Sin servidor? ¿Y quién las mira por el camino?", "tipo": "habla"},
+           {"quien": "tiza", "texto": "Nadie. Esa es la gracia.", "tipo": "habla"}]},
+        {"escenario": "biblioteca",
+         "tiza": {"expresion": "harto", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "preocupado", "postura": "encoger", "lugar": "derecha", "mira": "izquierda"},
+         "objeto": "movil", "lleva": "tiza",
+         "bocadillos": [
+           {"quien": "algoritmo", "texto": "¿Ni siquiera yo? ¿Por si acaso?", "tipo": "habla"},
+           {"quien": "tiza", "texto": "Por si acaso, tú menos.", "tipo": "habla"}]}
+      ]}
+    },
+    {
+      "pieza": "omni-1-2-flash-creditos-flow",
+      "idea": "En la fotocopiadora, Algoritmo propone un vídeo con IA en lugar de fotocopias; resulta que son 50 créditos al día que no se acumulan, y Tiza se siente en casa: también tiene cupo.",
+      "guion": {"vinetas": [
+        {"escenario": "fotocopiadora",
+         "tiza": {"expresion": "agotado", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "orgulloso", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+         "objeto": "papeles",
+         "bocadillos": [
+           {"quien": "algoritmo", "texto": "¡Deja las fotocopias! Hagamos un vídeo con IA.", "tipo": "habla"},
+           {"quien": "tiza", "texto": "¿Y cuánto cuesta?", "tipo": "habla"}]},
+        {"escenario": "fotocopiadora",
+         "tiza": {"expresion": "pensativo", "postura": "pensar", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "neutral", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+         "objeto": "papeles",
+         "bocadillos": [
+           {"quien": "algoritmo", "texto": "Sin suscripción, 50 créditos al día. En 720p, 3 por segundo.", "tipo": "habla"},
+           {"quien": "tiza", "texto": "¿Y si guardo los de hoy para el viernes?", "tipo": "habla"}]},
+        {"escenario": "fotocopiadora",
+         "tiza": {"expresion": "riendo", "postura": "encoger", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "avergonzado", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+         "objeto": "papeles",
+         "bocadillos": [
+           {"quien": "algoritmo", "texto": "No se acumulan.", "tipo": "habla"},
+           {"quien": "tiza", "texto": "Igual que el cupo de fotocopias. Me siento en casa.", "tipo": "habla"}]}
+      ]}
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "fecha": "2026-11-07",
+  "avisos": {
+    "chatgpt": {
+      "saludo": "Buenos días. Sábado de normas: familias, permisos y condiciones de uso.",
+      "puntos": [
+        "Si una sola familia no autoriza el uso de IA, ¿se deja de usar con todo el grupo? En el grupo se contrastaron posturas, con la guía catalana y la página de XTEC como referencia",
+        "Anthropic añade a su política de uso la prohibición del maltrato sostenido y gratuito a sus modelos; entra en vigor el 12 de noviembre y solo se aplicará en casos extremos",
+        "La viñeta de Tiza y Algoritmo cuenta qué pasa en clase cuando falta una autorización, con una lección sobre la seguridad con la que se equivoca la IA"
+      ]
+    },
+    "vce": {
+      "saludo": "Buenos días. El sábado llega con seis recursos nuevos del repositorio y dos aplicaciones del grupo.",
+      "puntos": [
+        "Entre lo nuevo del repositorio, la Subasta de frases de Juanjo de Haro, donde el alumnado puja por afirmaciones, y su guía de vibe coding responsable con diez recomendaciones",
+        "Un timbre escolar con Raspberry Pi: David Cordones cuenta que las melodías de cada hora se eligen desde una hoja de Google Sheets y que la IA le ayudó con el script",
+        "EDUmind MiClase, cuaderno del profesorado de código abierto, sincroniza dos dispositivos de la misma wifi sin servidor propio y guarda los datos en el aparato del docente"
+      ]
+    },
+    "edumedia": {
+      "saludo": "Buenos días. Hoy, la factura en créditos de generar vídeo con Gemini.",
+      "puntos": [
+        "Según la ayuda oficial de Flow, un vídeo de Gemini Omni 1.2 Flash cuesta 1 crédito por segundo a 360p y 3 a 720p, y sin suscripción hay 50 créditos diarios que no se acumulan",
+        "Los clips de hasta 15 segundos quedan para los planes Google AI Plus, Pro y Ultra; el resto puede generar y editar hasta 10 segundos, y Google avisa de que los costes pueden cambiar",
+        "EduMúsic reúne juegos de notas, instrumentos, timbres y dictados rítmicos en valenciano, castellano e inglés, y se abre en el navegador"
+      ]
+    }
+  },
+  "instagram": "El número recorre una semana de debate sobre IA en el aula. Se discute si basta con informar a las familias o hace falta su autorización para usar herramientas de IA con el alumnado, y qué recomiendan las guías catalanas. También se explica un cambio en las condiciones de uso de un gran proveedor de modelos y lo que cuesta en créditos generar vídeo con la última versión de Gemini. Entre los recursos abiertos, un timbre escolar musical y un cuaderno docente que guarda los datos en el propio dispositivo.",
+  "titulo": "Diario de IA Educativa · Núm. 6",
+  "fecha_texto": "Sábado, 7 de noviembre de 2026",
+  "url": "https://diarioiaeducativa.github.io/?n=6"
+}
