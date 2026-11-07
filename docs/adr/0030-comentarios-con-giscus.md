@@ -28,6 +28,13 @@ no se abre al público (trabaja solo, sin que nadie se conecte a él).
 - **Idioma y tema**: giscus en el idioma de la edición; el gallego, en castellano, porque giscus no lo
   tiene. Tema `light` o `transparent_dark` según el del diario, y cambia al momento con el botón de tema
   (un `MutationObserver` sobre `data-theme` manda `setConfig` al iframe).
+- **Aviso de cada comentario**, a Juanjo y a Raül Torres (lo pidió Juanjo, 07-11-2026), el mismo mensaje
+  por el Bot de IA Educativa: pieza, autor, el principio del texto y enlaces a la pieza y al comentario en
+  GitHub. A nadie se le avisa de lo que escribe él (`jjdeharo`, `raultorres-ia`). Lo manda una acción de
+  GitHub del repositorio del sitio (`.github/workflows/avisar-comentario.yml`, evento
+  `discussion_comment`), con los secretos `BOT_IAEDUCATIVA_TOKEN`, `JUANJO_CHAT` y `RAUL_CHAT` de ese
+  repositorio. La publicación diaria sincroniza el sitio sin tocar `.github/` (`--exclude .github` en
+  `publicar-nas.sh`, `publicar.sh` y `vigilante.sh`), o la borraría.
 - **Configuración**: `GISCUS` y `comentarios()` en `generar.py`; textos en `comentarios`,
   `comentarios_aviso` y `comentarios_cuenta` de cada idioma; estilo en `diario.css`.
 
@@ -53,6 +60,9 @@ no se abre al público (trabaja solo, sin que nadie se conecte a él).
 - Sin gallego en giscus.
 
 ## Validación
+
+Aviso: hilo de prueba con un comentario; la acción tardó unos 10 s desde el comentario hasta el
+mensaje. El mensaje para Raül, probado desviado a Juanjo; el hilo de prueba, borrado.
 
 Chromium, Firefox y WebKit, en el ordenador y en el móvil (Pixel 7 e iPhone 15), tema claro y oscuro:
 sin errores de JavaScript ni desbordamiento; el único 404 es el de giscus preguntando por un hilo que aún

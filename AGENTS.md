@@ -60,7 +60,9 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
 - **Comentarios** (ADR 0030): giscus, en las Discussions del repositorio del
   sitio (categoría «Comentarios»); un hilo por pieza, el mismo en los cinco
   idiomas. Se moderan desde GitHub. Si se renombra la categoría, cambiar
-  `GISCUS` en `generar.py`.
+  `GISCUS` en `generar.py`. El aviso de cada comentario (a Juanjo y a Raül,
+  por el Bot de IA Educativa) es una acción del repositorio del sitio: por eso
+  la publicación no toca `.github/`.
 - **Buscador** (ADR 0007): Pagefind, tras `generar.py`, solo en los
   `<article>` con `data-pagefind-body`.
 - **Vídeos** (ADR 0016 y 0027): «La semana en vídeo» la noche del sábado
