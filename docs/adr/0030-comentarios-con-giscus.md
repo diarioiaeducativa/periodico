@@ -33,7 +33,10 @@ no se abre al público (trabaja solo, sin que nadie se conecte a él).
   caracteres) y enlaces a la pieza y al comentario en
   GitHub. A nadie se le avisa de lo que escribe él (`jjdeharo`, `raultorres-ia`). Lo manda una acción de
   GitHub del repositorio del sitio (`.github/workflows/avisar-comentario.yml`, evento
-  `discussion_comment`), con los secretos `BOT_IAEDUCATIVA_TOKEN`, `JUANJO_CHAT` y `RAUL_CHAT` de ese
+  `discussion_comment`, y el programa en `.github/avisar-comentario.py`). El Markdown llega con formato:
+  el programa pide a GitHub el comentario ya convertido a HTML (`bodyHTML`) y se queda con lo que Telegram
+  muestra (negrita, cursiva, tachado, enlaces, código y citas; listas con viñeta, imágenes como enlace);
+  sin ese HTML, o si Telegram lo rechaza, va el texto tal cual. Usa los secretos `BOT_IAEDUCATIVA_TOKEN`, `JUANJO_CHAT` y `RAUL_CHAT` de ese
   repositorio. La publicación diaria sincroniza el sitio sin tocar `.github/` (`--exclude .github` en
   `publicar-nas.sh`, `publicar.sh` y `vigilante.sh`), o la borraría.
 - **Configuración**: `GISCUS` y `comentarios()` en `generar.py`; textos en `comentarios`,
@@ -63,7 +66,10 @@ no se abre al público (trabaja solo, sin que nadie se conecte a él).
 ## Validación
 
 Aviso: hilo de prueba con un comentario; la acción tardó unos 10 s desde el comentario hasta el
-mensaje. El mensaje para Raül, probado desviado a Juanjo; el hilo de prueba, borrado.
+mensaje. El mensaje para Raül, probado desviado a Juanjo; el hilo de prueba, borrado. Formato: un comentario real
+con títulos, negrita, cursiva, tachado, enlaces, cita, listas numeradas y anidadas, tareas, código,
+tabla, imagen, mención y emoji, convertido y aceptado por Telegram; un comentario de 16.000 caracteres,
+partido en cinco mensajes sin romper el formato; prueba completa desde GitHub en 10 s.
 
 Chromium, Firefox y WebKit, en el ordenador y en el móvil (Pixel 7 e iPhone 15), tema claro y oscuro:
 sin errores de JavaScript ni desbordamiento; el único 404 es el de giscus preguntando por un hilo que aún
