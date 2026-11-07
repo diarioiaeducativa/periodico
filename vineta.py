@@ -114,7 +114,9 @@ def tiza(cx, mira, expr, postura):
     cuerpo = (f'<path class="tz" d="M{-medio} {abajo - 10} L{-medio} {arriba + 12} Q{-medio} {arriba + 2} {-medio + 8} {arriba + 4} '
               f'L{-6} {arriba} L{2} {arriba + 5} L{9} {arriba + 1} L{medio - 4} {arriba + 6} Q{medio} {arriba + 6} {medio} {arriba + 14} '
               f'L{medio} {abajo - 10} Q{medio} {abajo} {medio - 10} {abajo} L{-medio + 10} {abajo} Q{-medio} {abajo} {-medio} {abajo - 10} Z"/>')
-    vetas = f'<path class="t fino" d="M{-medio + 6} {arriba + 40} L{-medio + 6} {arriba + 70} M{medio - 7} {arriba + 90} L{medio - 7} {arriba + 104}"/>'
+    # Las vetas, en el cuerpo y lejos de la cara (Juanjo, 07-11-2026: la que bajaba junto a la cara no le
+    # gustaba), y del color oscuro del contorno, para que se vean también en tema oscuro
+    vetas = f'<path class="cara" style="stroke-width:1.6" d="M{-medio + 6} {arriba + 96} L{-medio + 6} {arriba + 120} M{medio - 7} {arriba + 84} L{medio - 7} {arriba + 98}"/>'
     polvo = f'<circle class="ft polvo" cx="-14" cy="{arriba - 8}" r="1.4"/><circle class="ft polvo" cx="4" cy="{arriba - 13}" r="1.1"/><circle class="ft polvo" cx="15" cy="{arriba - 6}" r="1.3"/>'
     piernas = f'<path class="t" d="M-9 {abajo} L-11 {SUELO} L-19 {SUELO} M9 {abajo} L11 {SUELO} L19 {SUELO}"/>'
     br, mano = brazos(postura, arriba + 70, medio, "t")
