@@ -354,7 +354,10 @@ def esperar_url(url, minutos=10, tipo="image/jpeg"):
     while time.time() < fin:
         try:
             with urllib.request.urlopen(urllib.request.Request(url, method="HEAD"), timeout=30) as r:
-                if r.status == 200 and r.headers.get("Content-Type", "").startswith(tipo):
+                # raw.githubusercontent.com sirve los .mp4 como application/octet-stream
+                recibido = r.headers.get("Content-Type", "")
+                if r.status == 200 and (recibido.startswith(tipo)
+                                        or (tipo == "video/mp4" and recibido.startswith("application/octet-stream"))):
                     return
         except urllib.error.URLError:
             pass
