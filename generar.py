@@ -1038,13 +1038,14 @@ def cuerpo_portada(prof, piezas, breves, mostrar_fecha, tira=""):
     return html_
 
 
-def bloque_vineta(prof, eds, fecha, en_archivo=False):
-    """La tira del día, si la hay: solo falta si fallan los guiones o el juez, o si los cinco incumplen las prohibiciones."""
+def bloque_vineta(prof, eds, fecha, en_archivo=False, pieza=None):
+    """La tira del día, si la hay: solo falta si fallan los guiones o el juez, o si los cinco incumplen las prohibiciones.
+    Con `pieza`, la de esa noticia, debajo de su artículo: solo si trata de ella, y sin «A partir de…»."""
     f = con_traduccion("vinetas", f"{fecha}.json")
     if not f.exists():
         return ""
     elegida = json.loads(f.read_text()).get("elegida")
-    if not elegida:
+    if not elegida or (pieza and elegida.get("pieza") != pieza):
         return ""
     d = next((x for x in eds if x["fecha"] == fecha), None)
     p = next((x for x in (d or {}).get("piezas", []) if x["id"] == elegida.get("pieza")), None)
@@ -1052,7 +1053,7 @@ def bloque_vineta(prof, eds, fecha, en_archivo=False):
     return f"""<section class="vineta sec-vineta" aria-labelledby="t-vineta-{fecha}">
   <h2 id="t-vineta-{fecha}" class="vineta-titulo"><span>{"" if en_archivo else f'<a href="{prof}vineta.html">{icono("vineta")} {L["vineta_titulo"]}</a>'}</span> <span class="fecha-pieza">{fecha_corta(publicacion(fecha))}</span></h2>
   <div class="tira">{vineta.tira(elegida["guion"])}</div>
-  <p class="vineta-origen">{origen_txt}</p>
+  {"" if pieza else f'<p class="vineta-origen">{origen_txt}</p>'}
 </section>"""
 
 
@@ -1213,6 +1214,7 @@ def articulo(prof, ruta, d, p, eds):
     {comprobado}
   </article>
   {plantilla}
+  {bloque_vineta(prof, eds, d["fecha"], pieza=p["id"])}
   {otras}
   {mas_piezas(prof, eds, p)}
   {comentarios(ruta)}
