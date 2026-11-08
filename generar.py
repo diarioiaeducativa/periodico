@@ -1812,8 +1812,8 @@ def bloque_notebook(sem, m):
     if not m:
         domingo = lunes_de(sem) + datetime.timedelta(days=6)
         if datetime.date.today() <= domingo + datetime.timedelta(days=2):
-            return f'<p class="nb-pendiente">{icono("video")} {L["nb_pendiente"]}</p>{anteriores}'
-        return anteriores
+            return f'<p class="nb-pendiente">{icono("video")} {L["nb_pendiente"]}</p>{anteriores.replace("nb-anteriores", "nb-anteriores suelta", 1)}'
+        return anteriores.replace("nb-anteriores", "nb-anteriores suelta", 1)
     fichas = []
     for g, (nombre, _) in GRUPOS.items():
         x = m.get(g) or {}
@@ -1840,7 +1840,7 @@ def bloque_notebook(sem, m):
   <p class="nb-enlaces">{" · ".join(enlaces)}</p>
 </article>""")
     if not fichas:
-        return anteriores
+        return anteriores.replace("nb-anteriores", "nb-anteriores suelta", 1)
     es = f' {L["nb_es"]}' if L["nb_es"] else ""
     return f"""<section class="notebook" aria-labelledby="t-nb">
   <h2 id="t-nb">{icono("video")} {L["nb_h"]}</h2>
