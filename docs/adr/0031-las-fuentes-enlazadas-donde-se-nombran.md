@@ -55,4 +55,8 @@ pero también debería estar aquí, lo mismo para el resto de artículos».
 
 - Número del 8 de noviembre: las 6 fuentes que faltaban, enlazadas en los cinco idiomas antes de
   publicarse; comprobado en la vista previa (ADR 0025).
-- Lo anterior: RESULTADO.
+- Lo anterior, del 28 de octubre al 7 de noviembre y la reserva: 236 enlaces nuevos (46 en cada
+  idioma y 3 más en la reserva, que solo está en castellano y catalán), ninguna propuesta
+  rechazada por el programa. Las fuentes que el texto no nombra quedaron solo al pie. Dos piezas
+  en que el agente enlazó en unos idiomas y no en otros se igualaron a mano. Revisados uno a uno
+  los textos de enlace en castellano; comprobado en la vista previa que `generar.py` los convierte.
