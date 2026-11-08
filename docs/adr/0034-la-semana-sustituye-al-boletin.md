@@ -23,6 +23,9 @@ desde el lunes 9 de noviembre de 2026 ya no saliera el boletín de siempre.
   y el vídeo de NotebookLM de cada grupo; y los números de la semana con la pieza que abrió cada uno. Un
   selector filtra por grupo y lo deja en la dirección (`?grupo=chatgpt|vce|edumedia`), para enlazar desde
   cada grupo lo suyo. Lo que no nace de un grupo (el reportaje) solo sale en «Todos».
+- **Enlace fijo a la última semana**: `semana/` a secas (también con `?grupo=`) lleva a la última semana
+  que ya tiene el pódcast y el vídeo, o a la más reciente si aún no hay ninguna. Es el que dan las webs de
+  los boletines antiguos, que no pueden saber cuál es la última.
 - **La semana es la de los mensajes**, de lunes a domingo (ISO 8601): la misma que cubren el pódcast y el
   vídeo, que el boletín hace con la conversación completa de cada grupo. La cierra el número del lunes, que
   sale cuando llegan las piezas de NotebookLM. «La semana en vídeo» del diario no va en esta página: repasa

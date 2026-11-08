@@ -2769,6 +2769,18 @@ def generar_idioma(codigo):
     for i, sem in enumerate(sems):   # la semana y el mes (ADR 0034)
         escribir(base / "semana" / sem / "index.html",
                  pagina_semana(eds, sem, sems[i - 1] if i else None, sems[i + 1] if i + 1 < len(sems) else None))
+    # /semana/ a secas lleva a la última semana con el pódcast y el vídeo de los grupos (o a la más
+    # reciente, si aún no hay ninguna), con el grupo que se pida: es el enlace fijo que dan las webs de
+    # los boletines antiguos (ADR 0034).
+    if sems:
+        destino = next((s for s in reversed(sems) if cargar_multimedia(s)), sems[-1])
+        escribir(base / "semana" / "index.html", f"""<!doctype html>
+<html lang="{L["codigo"]}"><head><meta charset="utf-8"><title>{L["hemeroteca"]} | {L["titulo"]}</title>
+<meta name="robots" content="noindex"><meta http-equiv="refresh" content="0; url={destino}/">
+<link rel="canonical" href="{BASE}{L["carpeta"]}semana/{destino}/">
+<script>location.replace("{destino}/" + location.search + location.hash);</script></head>
+<body><p><a href="{destino}/">{rango_semana(destino)}</a></p></body></html>
+""")
     meses = meses_y_semanas(eds)
     claves = list(meses)
     for i, mes in enumerate(claves):
