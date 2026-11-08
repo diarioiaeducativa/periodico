@@ -14,6 +14,8 @@
 #   desde las 7:05  publicarlo en Instagram (scripts/instagram.py publicar), un solo intento (ADR 0015)
 #   a las 12:00     renovar el permiso de Instagram si tiene más de 7 días y comprobar que vale
 #   el domingo, desde las 9:00, publicar en Instagram «La semana en vídeo» (ADR 0016 y 0027), un solo intento
+#   cuando llega   el pódcast y el vídeo de la semana del boletín (multimedia/*.json), con el número del día ya
+#                  publicado, volver a publicar solo la web (scripts/publicar-web.sh, ADR 0034)
 #
 # Todo lo que decide se apunta en estado/, así que reiniciar el contenedor no repite nada.
 set -u
@@ -121,6 +123,24 @@ while true; do
     if ! { python3 scripts/instagram.py renovar && python3 scripts/instagram.py comprobar; } >> "registro/instagram-permiso.log" 2>&1; then
       avisar "El permiso de Instagram del diario falla al renovarlo o comprobarlo; mañana no se publicará el carrusel si no se arregla. Registro: /volume1/docker/diario-ia-educativa/repo/registro/instagram-permiso.log"
     fi
+  fi
+  # El pódcast y el vídeo de la semana (ADR 0034): cuando el boletín deja o cambia un multimedia/*.json, se
+  # publica otra vez solo la web. Nunca mientras se prepara o se publica el número: con el de hoy ya fuera.
+  if [ -e "$E.publicado" ] && [ ! -e "$E.publicando" ] && [ ! -e estado/multimedia.publicando ] \
+     && ls multimedia/*.json >/dev/null 2>&1 \
+     && { [ ! -e estado/multimedia.publicado ] || [ -n "$(find multimedia -name '*.json' -newer estado/multimedia.publicado)" ]; } \
+     && [ "$(date +%s)" -ge $(( $(cat estado/multimedia.fallo 2>/dev/null || echo 0) + 1800 )) ]; then
+    touch estado/multimedia.publicando
+    marca=$(mktemp -p estado)   # la hora de antes de empezar: lo que llegue mientras tanto se publica en la siguiente vuelta
+    if scripts/publicar-web.sh; then
+      mv "$marca" estado/multimedia.publicado
+      rm -f estado/multimedia.fallo
+    else
+      rm -f "$marca"
+      [ -e estado/multimedia.fallo ] || avisar "No se ha podido publicar en la web el pódcast y el vídeo de la semana; lo reintento cada media hora. Registro: /volume1/docker/diario-ia-educativa/repo/registro/multimedia.log"
+      date +%s > estado/multimedia.fallo
+    fi
+    rm -f estado/multimedia.publicando
   fi
   sleep 300
 done

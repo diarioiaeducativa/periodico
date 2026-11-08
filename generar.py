@@ -72,7 +72,9 @@ IDIOMAS = {
                         "edumedia": "creación de audio, vídeo e imagen con IA generativa para el aula."},
         "unete_txt": "El Diario de IA Educativa cuenta lo que se habla en tres grupos abiertos de Telegram donde docentes comparten lo que prueban con la inteligencia artificial. Las conversaciones se pueden leer sin entrar; para participar, basta con unirse.",
         "archivo": "Archivo por días",
-        "anyo": "Año", "hemeroteca": "Hemeroteca", "hemeroteca_txt": "Todos los números, por meses.",
+        "anyo": "Año", "hemeroteca": "Hemeroteca", "hemeroteca_txt": "Todos los números, por meses y semanas.",
+        # La semana y el mes (ADR 0034)
+        "semana": "La semana", "semana_txt": "Todo lo que contó el diario de lo que se habló en los grupos esa semana, por secciones, con el pódcast y el vídeo de cada grupo. Elige un grupo para ver solo lo suyo.", "semana_actual": "La semana, de un vistazo", "grupo_filtro": "Ver lo de un grupo", "grupo_todos": "Todos", "sin_grupo": "Este grupo no tiene piezas esta semana.", "nb_h": "El pódcast y el vídeo de la semana", "nb_txt": "Cada lunes, NotebookLM, de Google, prepara un pódcast y un vídeo de cada grupo con su conversación completa de la semana, también lo que el diario no ha contado. Un agente de IA los contrasta con la conversación antes de publicarlos.", "nb_es": "", "nb_pendiente": "El pódcast y el vídeo de cada grupo se añaden aquí el lunes por la mañana.", "nb_video": "Vídeo", "nb_ver": "Reproducir el vídeo de {g}", "nb_youtube": "Verlo en YouTube", "nb_podcast": "Pódcast", "nb_archive": "Escucharlo en Internet Archive", "numeros_semana": "Los números de la semana", "sem_ant": "Semana anterior", "sem_sig": "Semana siguiente", "todo_mes": "Todo el mes", "mes": "El mes", "mes_txt": "Las semanas del mes, con la pieza que abrió cada número.", "mes_ant": "Mes anterior", "mes_sig": "Mes siguiente", "ver_semana": "La semana entera, por secciones", "con_nb": "Con el pódcast y el vídeo de cada grupo", "boletines_h": "Boletines semanales anteriores", "boletines_txt": "Hasta noviembre de 2026, cada grupo tenía su propio boletín semanal. Siguen en su web:",
         "todos_numeros": "Hemeroteca: todos los números",
         "compartir": "Compartir", "copiado": "Enlace copiado", "compartir_breve": "Compartir este breve", "mas_en": "Más en", "mas_diario": "Más en el diario",
         "no_existe": "Esta página no existe",
@@ -188,7 +190,9 @@ IDIOMAS = {
                         "edumedia": "creació d'àudio, vídeo i imatge amb IA generativa per a l'aula."},
         "unete_txt": "El Diari d'IA Educativa explica el que es parla en tres grups oberts de Telegram on docents comparteixen el que proven amb la intel·ligència artificial. Les converses es poden llegir sense entrar-hi; per participar-hi, n'hi ha prou d'unir-s'hi.",
         "archivo": "Arxiu per dies",
-        "anyo": "Any", "hemeroteca": "Hemeroteca", "hemeroteca_txt": "Tots els números, per mesos.",
+        "anyo": "Any", "hemeroteca": "Hemeroteca", "hemeroteca_txt": "Tots els números, per mesos i setmanes.",
+        # La semana y el mes (ADR 0034)
+        "semana": "La setmana", "semana_txt": "Tot el que va explicar el diari del que es va parlar als grups aquella setmana, per seccions, amb el pòdcast i el vídeo de cada grup. Tria un grup per veure només el seu.", "semana_actual": "La setmana, d'un cop d'ull", "grupo_filtro": "Veure el d'un grup", "grupo_todos": "Tots", "sin_grupo": "Aquest grup no té peces aquesta setmana.", "nb_h": "El pòdcast i el vídeo de la setmana", "nb_txt": "Cada dilluns, NotebookLM, de Google, prepara un pòdcast i un vídeo de cada grup amb tota la seva conversa de la setmana, també el que el diari no ha explicat. Un agent d'IA els contrasta amb la conversa abans de publicar-los.", "nb_es": "Són en castellà.", "nb_pendiente": "El pòdcast i el vídeo de cada grup s'afegeixen aquí dilluns al matí.", "nb_video": "Vídeo", "nb_ver": "Reproduir el vídeo de {g}", "nb_youtube": "Mira'l a YouTube", "nb_podcast": "Pòdcast", "nb_archive": "Escolta'l a Internet Archive", "numeros_semana": "Els números de la setmana", "sem_ant": "Setmana anterior", "sem_sig": "Setmana següent", "todo_mes": "Tot el mes", "mes": "El mes", "mes_txt": "Les setmanes del mes, amb la peça que va obrir cada número.", "mes_ant": "Mes anterior", "mes_sig": "Mes següent", "ver_semana": "Tota la setmana, per seccions", "con_nb": "Amb el pòdcast i el vídeo de cada grup", "boletines_h": "Butlletins setmanals anteriors", "boletines_txt": "Fins al novembre de 2026, cada grup tenia el seu propi butlletí setmanal. Continuen al seu web:",
         "todos_numeros": "Hemeroteca: tots els números",
         "compartir": "Comparteix", "copiado": "Enllaç copiat", "compartir_breve": "Comparteix aquest breu", "mas_en": "Més a", "mas_diario": "Més al diari",
         "no_existe": "Aquesta pàgina no existeix",
@@ -833,6 +837,7 @@ def pie(prof, eds, actual):
   <nav class="pie-archivo" aria-label="{L["archivo"]}">
     <h2>{L["archivo"]}</h2>
     <ul>{archivo}</ul>
+    <p class="pie-hemeroteca"><a href="{prof}semana/{semana_de(eds[-1]["fecha"])}/">{L["semana_actual"]}</a></p>
     <p class="pie-hemeroteca"><a href="{prof}archivo.html">{L["todos_numeros"]}</a></p>
   </nav>
   <div class="pie-creditos">
@@ -1731,28 +1736,280 @@ def pagina_seccion(eds, clave):
 </html>"""
 
 
-def pagina_hemeroteca(eds):
-    """Todos los números por meses, del más reciente al más antiguo, cada uno con su apertura."""
-    meses = {}
-    for d in reversed(eds):
+# --- La semana y el mes (ADR 0034) -------------------------------------------------------------------
+# La hemeroteca se agrupa por semanas ISO, de lunes a domingo, según el día de los mensajes (d["fecha"]):
+# es la misma semana que cubren el pódcast y el vídeo de NotebookLM de cada grupo, que deja el proceso del
+# boletín en multimedia/AAAA-WW.json. Una semana es del mes en que cae su jueves, como manda la ISO 8601,
+# así ninguna sale en dos meses.
+BOLETINES = {   # los boletines semanales que el diario sustituye, en su web de siempre (ADR 0034)
+    "chatgpt": "https://chatgpt-ia-edu.github.io/boletin/",
+    "vce": "https://vibe-coding-educativo.github.io/boletin/",
+    # "edumedia": el de Raül Torres, cuando se sepa dónde está publicado
+}
+ICONOS["semana"] = ('<path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/>'
+                    '<path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/><path d="M8 18h.01"/><path d="M12 18h.01"/><path d="M16 18h.01"/>')   # calendar-days
+
+
+def semana_de(fecha):
+    y, w, _ = datetime.date.fromisoformat(fecha).isocalendar()
+    return f"{y}-{w:02d}"
+
+
+def lunes_de(sem):
+    y, w = map(int, sem.split("-"))
+    return datetime.date.fromisocalendar(y, w, 1)
+
+
+def mes_de(sem):
+    return (lunes_de(sem) + datetime.timedelta(days=3)).isoformat()[:7]
+
+
+def por_semanas(eds):
+    """{semana: [días]}, de la más antigua a la más reciente."""
+    sems = {}
+    for d in eds:
+        sems.setdefault(semana_de(d["fecha"]), []).append(d)
+    return sems
+
+
+def rango_semana(sem):
+    """«Del 2 al 8 de noviembre»: los días de los mensajes."""
+    return fechas_semana((lunes_de(sem) + datetime.timedelta(days=6)).isoformat())
+
+
+def numeros(ds):
+    ns = [d["numero"] for d in ds if d.get("numero")]
+    if not ns:
+        return ""
+    return f'{L["num"]}&nbsp;{ns[0]}' + (f"–{ns[-1]}" if len(ns) > 1 else "")
+
+
+def cargar_multimedia(sem):
+    """El pódcast y el vídeo de NotebookLM de cada grupo, si el boletín ya los ha dejado."""
+    f = RAIZ / "multimedia" / f"{sem}.json"
+    try:
+        return json.loads(f.read_text()).get("grupos") or {}
+    except (OSError, ValueError):
+        return {}
+
+
+def id_youtube(url):
+    m = re.search(r"(?:youtu\.be/|[?&]v=|/embed/|/shorts/)([\w-]{11})", url or "")
+    return m.group(1) if m else None
+
+
+def grupo_pieza(x):
+    return x.get("grupo") or (x.get("mensaje") or {}).get("grupo") or ""
+
+
+def bloque_notebook(sem, m):
+    """Pódcast y vídeo de NotebookLM de cada grupo. El vídeo no se carga hasta que se pulsa (youtube-nocookie):
+    abrir la página no avisa a YouTube. El audio, sin precarga."""
+    if not m:
+        domingo = lunes_de(sem) + datetime.timedelta(days=6)
+        if datetime.date.today() <= domingo + datetime.timedelta(days=2):
+            return f'<p class="nb-pendiente">{icono("video")} {L["nb_pendiente"]}</p>'
+        return ""
+    fichas = []
+    for g, (nombre, _) in GRUPOS.items():
+        x = m.get(g) or {}
+        if not (x.get("video") or x.get("podcast") or x.get("podcast_mp3")):
+            continue
+        vid = id_youtube(x.get("video"))
+        video = ""
+        if vid:
+            video = (f'<div class="nb-video"><button type="button" class="nb-play" data-yt="{e(vid)}" '
+                     f'aria-label="{e(L["nb_ver"].format(g=nombre))}">{PLAY}<span>{L["nb_video"]}</span></button></div>')
+        resumen = f'<p class="nb-resumen">{e(x["resumen"])}</p>' if x.get("resumen") else ""
+        audio = ""
+        if x.get("podcast_mp3"):
+            audio = (f'<p class="nb-rotulo">{L["nb_podcast"]}</p>'
+                     f'<audio controls preload="none" src="{e(x["podcast_mp3"])}"></audio>')
+        enlaces = []
+        if x.get("video"):
+            enlaces.append(enlace(x["video"], L["nb_youtube"]))
+        if x.get("podcast"):
+            enlaces.append(enlace(x["podcast"], L["nb_archive"]))
+        fichas.append(f"""<article class="nb-grupo" data-grupo="{g}">
+  <h3>{e(nombre)}</h3>
+  {video}{resumen}{audio}
+  <p class="nb-enlaces">{" · ".join(enlaces)}</p>
+</article>""")
+    if not fichas:
+        return ""
+    es = f' {L["nb_es"]}' if L["nb_es"] else ""
+    return f"""<section class="notebook" aria-labelledby="t-nb">
+  <h2 id="t-nb">{icono("video")} {L["nb_h"]}</h2>
+  <p class="nb-txt">{L["nb_txt"]}{es}</p>
+  <div class="nb-grupos">{"".join(fichas)}</div>
+</section>"""
+
+
+SCRIPT_SEMANA = """<script>
+(function(){
+  var bs=document.querySelectorAll('.filtro-grupo button'),vacio=document.querySelector('.sin-grupo'),G=['chatgpt','vce','edumedia'];
+  function poner(v,guardar){
+    if(G.indexOf(v)<0)v='';
+    bs.forEach(function(b){b.setAttribute('aria-pressed',b.dataset.g===v?'true':'false');});
+    document.querySelectorAll('[data-grupo]').forEach(function(x){x.hidden=!!v&&x.dataset.grupo!==v;});
+    document.querySelectorAll('.semana-seccion,.notebook').forEach(function(s){s.hidden=!s.querySelector('[data-grupo]:not([hidden])');});
+    if(vacio)vacio.hidden=!v||!!document.querySelector('.semana-seccion:not([hidden])');
+    if(guardar){try{var u=new URL(location.href);if(v)u.searchParams.set('grupo',v);else u.searchParams.delete('grupo');history.replaceState(null,'',u);}catch(_){}}
+  }
+  bs.forEach(function(b){b.addEventListener('click',function(){poner(b.dataset.g,true);});});
+  var g='';try{g=new URLSearchParams(location.search).get('grupo')||'';}catch(_){}
+  poner(g,false);
+  document.querySelectorAll('.nb-play').forEach(function(b){b.addEventListener('click',function(){
+    var f=document.createElement('iframe');
+    f.src='https://www.youtube-nocookie.com/embed/'+b.dataset.yt+'?autoplay=1&rel=0';
+    f.title=b.getAttribute('aria-label');f.allow='autoplay; encrypted-media; picture-in-picture; fullscreen';f.allowFullscreen=true;
+    b.parentNode.replaceChild(f,b);
+  });});
+})();
+</script>"""
+
+
+def item_semana(prof, x, sale):
+    return (f'<li data-grupo="{grupo_pieza(x)}"><span class="fecha-pieza">{fecha_corta(sale)}</span> '
+            f'<a href="{prof}{x["fecha"]}/{e(x["id"])}.html">{e(x["titular"])}</a></li>')
+
+
+def dias_lista(prof, ds):
+    items = []
+    for d in reversed(ds):
         sale = publicacion(d["fecha"])
-        meses.setdefault(sale[:7], []).append((d, sale))
+        num = f' <span class="num">· {L["num"]}&nbsp;{d["numero"]}</span>' if d["numero"] else ""
+        abre = d["reportaje"] if d.get("reportaje") else d["piezas"][0]
+        marca = f'<span class="rep">{L["reportaje"]}</span>' if d.get("reportaje") else ""
+        items.append(f'<li><a href="{prof}{d["fecha"]}/">{mayus(fecha_larga(sale))}</a>{num}'
+                     f'<span class="abre">{marca}<a href="{prof}{d["fecha"]}/{e(abre["id"])}.html">{e(abre["titular"])}</a></span></li>')
+    return f'<ul class="dias">{"".join(items)}</ul>'
+
+
+def pagina_semana(eds, sem, anterior, siguiente):
+    prof = "../../"
+    ruta = f"semana/{sem}/"
+    ds = por_semanas(eds)[sem]
+    rango = rango_semana(sem)
+    m = cargar_multimedia(sem)
+    secciones = []
+    for c in ORDEN_SECCIONES:
+        xs = [x for d in ds for x in d["piezas"] if x.get("seccion") == c]
+        if xs:
+            items = "".join(item_semana(prof, x, publicacion(x["fecha"])) for x in xs)
+            secciones.append(f'<section class="semana-seccion sec-{c}"><h2><a href="{prof}{c}.html">{icono(c)} {L["secciones"][c]}</a></h2>'
+                             f'<ul class="semana-lista">{items}</ul></section>')
+    breves = [b for d in ds for b in d.get("breves", [])]
+    if breves:
+        items = "".join(f'<li data-grupo="{grupo_pieza(b)}"><span class="fecha-pieza">{fecha_corta(publicacion(b["fecha"]))}</span> '
+                        f'<a href="{prof}{ruta_breve(b)}">{e(titulo_breve(b))}</a></li>' for b in breves)
+        secciones.append(f'<section class="semana-seccion sec-breves"><h2><a href="{prof}breves.html">{icono("breves")} {L["breves"]}</a></h2>'
+                         f'<ul class="semana-lista">{items}</ul></section>')
+    # El reportaje, como una línea más, delante de las secciones. «La semana en vídeo» no va aquí: repasa los
+    # números de lunes a domingo, no los mensajes, y está en el número del domingo y en Vídeos.
+    reps = [d["reportaje"] for d in ds if d.get("reportaje")]
+    if reps:
+        items = "".join(item_semana(prof, r, publicacion(r["fecha"])) for r in reps)
+        secciones.insert(0, f'<section class="semana-seccion sec-reportaje"><h2><a href="{prof}reportajes.html">{icono("reportaje")} {L["reportajes"]}</a></h2>'
+                            f'<ul class="semana-lista">{items}</ul></section>')
+    botones = [("", L["grupo_todos"])] + [(g, n) for g, (n, _) in GRUPOS.items()]
+    filtro = "".join(f'<button type="button" data-g="{g}" aria-pressed="{"true" if not g else "false"}">{e(n)}</button>' for g, n in botones)
+    nav = []
+    if anterior:
+        nav.append(f'<a href="{prof}semana/{anterior}/">← {L["sem_ant"]}</a>')
+    nav.append(f'<a href="{prof}mes/{mes_de(sem)}/">{L["todo_mes"]}</a>')
+    if siguiente:
+        nav.append(f'<a href="{prof}semana/{siguiente}/">{L["sem_sig"]} →</a>')
+    nums = numeros(ds)
+    titulo = f'{L["semana"]}: {rango} | {L["titulo"]}'
+    return cabeza(titulo, prof, L["semana_txt"], ruta) + f"""<body class="pag-seccion">
+{cabecera(prof, ruta, eds[-1]["fecha"], eds[-1]["numero"], True, h1=False)}
+<main class="portada semana-pag">
+<p class="seccion semana-rotulo"><span>{icono("semana")} {L["semana"]}</span> <span class="fecha-pieza">{lunes_de(sem).year}{" · " + nums if nums else ""}</span></p>
+<h1 class="titulo-seccion">{rango}</h1>
+<p class="descripcion-seccion">{L["semana_txt"]}</p>
+<nav class="semana-nav" aria-label="{L["navegacion"]}">{" · ".join(nav)}</nav>
+<div class="filtro-grupo" role="group" aria-label="{e(L["grupo_filtro"])}">{filtro}</div>
+{bloque_notebook(sem, m)}
+{"".join(secciones)}
+<p class="sin-grupo vacio" hidden>{L["sin_grupo"]}</p>
+<section class="semana-dias"><h2>{L["numeros_semana"]}</h2>{dias_lista(prof, ds)}</section>
+</main>
+{pie(prof, eds, None)}
+{SCRIPT_TEMA}
+{SCRIPT_SEMANA}
+</body>
+</html>"""
+
+
+def pagina_mes(eds, mes, sems, anterior, siguiente):
+    prof = "../../"
+    ruta = f"mes/{mes}/"
+    porsem = por_semanas(eds)
     bloques = []
-    for clave, dias in meses.items():
-        items = []
-        for d, sale in dias:
-            num = f' <span class="num">· {L["num"]}&nbsp;{d["numero"]}</span>' if d["numero"] else ""
-            abre = d["reportaje"]["titular"] if d.get("reportaje") else d["piezas"][0]["titular"]
-            marca = f'<span class="rep">{L["reportaje"]}</span>' if d.get("reportaje") else ""
-            items.append(f'<li><a href="{d["fecha"]}/">{mayus(fecha_larga(sale))}</a>{num}'
-                         f'<span class="abre">{marca}{e(abre)}</span></li>')
-        bloques.append(f'<h2>{mes_largo(dias[0][1])}</h2><ul>{"".join(items)}</ul>')
+    for sem in reversed(sems):
+        ds = porsem[sem]
+        nb = f'<p class="con-nb">{icono("video")} {L["con_nb"]}</p>' if cargar_multimedia(sem) else ""
+        nums = numeros(ds)
+        bloques.append(f'<section class="mes-semana"><h2><a href="{prof}semana/{sem}/">{rango_semana(sem)}</a>'
+                       f'{f" <span class=num>· {nums}</span>" if nums else ""}</h2>{nb}{dias_lista(prof, ds)}'
+                       f'<p class="leer"><a href="{prof}semana/{sem}/">{L["ver_semana"]}</a></p></section>')
+    nav = []
+    if anterior:
+        nav.append(f'<a href="{prof}mes/{anterior}/">← {L["mes_ant"]}</a>')
+    nav.append(f'<a href="{prof}archivo.html">{L["hemeroteca"]}</a>')
+    if siguiente:
+        nav.append(f'<a href="{prof}mes/{siguiente}/">{L["mes_sig"]} →</a>')
+    nombre = mes_largo(mes + "-01")
+    return cabeza(f'{nombre} | {L["titulo"]}', prof, L["mes_txt"], ruta) + f"""<body class="pag-seccion">
+{cabecera(prof, ruta, eds[-1]["fecha"], eds[-1]["numero"], True, h1=False)}
+<main class="portada hemeroteca mes-pag">
+<p class="seccion semana-rotulo"><span>{icono("semana")} {L["mes"]}</span></p>
+<h1 class="titulo-seccion">{nombre}</h1>
+<p class="descripcion-seccion">{L["mes_txt"]}</p>
+<nav class="semana-nav" aria-label="{L["navegacion"]}">{" · ".join(nav)}</nav>
+{"".join(bloques)}
+</main>
+{pie(prof, eds, None)}
+{SCRIPT_TEMA}
+</body>
+</html>"""
+
+
+def meses_y_semanas(eds):
+    """{mes: [semanas]}, en orden."""
+    meses = {}
+    for sem in por_semanas(eds):
+        meses.setdefault(mes_de(sem), []).append(sem)
+    return meses
+
+
+def pagina_hemeroteca(eds):
+    """Todos los números por meses y semanas, del más reciente al más antiguo (ADR 0034): cada semana, plegada,
+    con sus días y la pieza que abrió cada uno; la más reciente, abierta."""
+    porsem = por_semanas(eds)
+    bloques = []
+    primera = True
+    for mes, sems in reversed(list(meses_y_semanas(eds).items())):
+        semanas_html = []
+        for sem in reversed(sems):
+            ds = porsem[sem]
+            nums = numeros(ds)
+            nb = f' <span class="con-nb" title="{e(L["con_nb"])}">{icono("video")}<span class="solo-lector">{L["con_nb"]}</span></span>' if cargar_multimedia(sem) else ""
+            semanas_html.append(f'<details class="hem-semana"{" open" if primera else ""}><summary><span class="rango">{rango_semana(sem)}</span>'
+                                f'{f" <span class=num>· {nums}</span>" if nums else ""}{nb}</summary>'
+                                f'<p class="leer"><a href="semana/{sem}/">{L["ver_semana"]}</a></p>{dias_lista("", ds)}</details>')
+            primera = False
+        bloques.append(f'<h2><a href="mes/{mes}/">{mes_largo(mes + "-01")}</a></h2>{"".join(semanas_html)}')
+    bols = "".join(f'<li>{enlace(u, GRUPOS[g][0])}</li>' for g, u in BOLETINES.items())
+    boletines = f'<section class="hem-boletines"><h2>{L["boletines_h"]}</h2><p>{L["boletines_txt"]}</p><ul>{bols}</ul></section>' if bols else ""
     return cabeza(f'{L["hemeroteca"]} | {L["titulo"]}', "", L["hemeroteca_txt"], "archivo.html") + f"""<body class="pag-seccion">
 {cabecera("", "archivo.html", eds[-1]["fecha"], eds[-1]["numero"], True, h1=False)}
 <main class="portada hemeroteca">
 <h1 class="titulo-seccion">{L["hemeroteca"]}</h1>
 <p class="vineta-sub-pagina">{L["hemeroteca_txt"]}</p>
 {"".join(bloques)}
+{boletines}
 </main>
 {pie("", eds, None)}
 {SCRIPT_TEMA}
@@ -1786,6 +2043,10 @@ def sitemap(eds):
     ultima = publicacion(eds[-1]["fecha"])
     for ruta in ["", "redaccion.html", "vineta.html", "reportajes.html", "breves.html", "archivo.html", "videos.html", "para-tu-web.html"] + [f"{c}.html" for c in ORDEN_SECCIONES]:
         rutas.append((ruta, ultima))
+    for sem, ds in por_semanas(eds).items():   # la semana y el mes (ADR 0034)
+        rutas.append((f"semana/{sem}/", publicacion(ds[-1]["fecha"])))
+    for mes, sems in meses_y_semanas(eds).items():
+        rutas.append((f"mes/{mes}/", publicacion(por_semanas(eds)[sems[-1]][-1]["fecha"])))
     for d in eds:
         sale = publicacion(d["fecha"])
         rutas.append((f'{d["fecha"]}/', sale))
@@ -2502,6 +2763,17 @@ def generar_idioma(codigo):
     escribir(base / "breves.html", pagina_breves(eds))
     escribir(base / "buscar.html", pagina_buscar(eds))
     escribir(base / "archivo.html", pagina_hemeroteca(eds))
+    shutil.rmtree(base / "semana", ignore_errors=True)
+    shutil.rmtree(base / "mes", ignore_errors=True)
+    sems = list(por_semanas(eds))
+    for i, sem in enumerate(sems):   # la semana y el mes (ADR 0034)
+        escribir(base / "semana" / sem / "index.html",
+                 pagina_semana(eds, sem, sems[i - 1] if i else None, sems[i + 1] if i + 1 < len(sems) else None))
+    meses = meses_y_semanas(eds)
+    claves = list(meses)
+    for i, mes in enumerate(claves):
+        escribir(base / "mes" / mes / "index.html",
+                 pagina_mes(eds, mes, meses[mes], claves[i - 1] if i else None, claves[i + 1] if i + 1 < len(claves) else None))
     publicar_canales(base, eds)   # RSS y datos para el widget (ADR 0032)
     escribir(base / "insertar.html", pagina_insertar())
     escribir(base / "para-tu-web.html", pagina_para_tu_web(eds))

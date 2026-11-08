@@ -35,5 +35,6 @@
 | [0031](0031-las-fuentes-enlazadas-donde-se-nombran.md) | Las fuentes, enlazadas donde se nombran |
 | [0032](0032-para-tu-web.md) | Para tu web: widget, canales RSS y piezas republicables |
 | [0033](0033-contador-de-visitas.md) | Contador de visitas sin datos de quien lee |
+| [0034](0034-la-semana-sustituye-al-boletin.md) | La semana y el mes, con el pódcast y el vídeo de cada grupo, en lugar del boletín semanal |
 
 Plantilla: [0000-plantilla.md](0000-plantilla.md). Para crear uno: `nuevo-adr "Título"`.
