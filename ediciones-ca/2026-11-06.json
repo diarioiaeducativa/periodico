@@ -60,7 +60,7 @@
       "titular": "Anthropic prohibeix a la seva política d'ús el maltractament sostingut i gratuït als seus models",
       "entradilla": "L'actualització, publicada el 8 d'octubre de 2026, entra en vigor el 12 de novembre i només s'aplicarà en casos extrems.",
       "cuerpo": [
-        "Anthropic ha afegit a la seva política d'ús una prohibició del comportament abusiu o cruel, sostingut i innecessari, cap als seus models. Segons l'anunci, només s'aplicarà en casos extrems, amb crueltat repetida i sense propòsit aparent, i no cobreix la frustració habitual, el desacord, els temes creatius foscos ni les proves o la recerca sobre els models.",
+        "Anthropic ha afegit a la seva política d'ús una prohibició del comportament abusiu o cruel, sostingut i innecessari, cap als seus models. Segons [l'anunci](https://www.anthropic.com/news/2026-usage-policy-update), només s'aplicarà en casos extrems, amb crueltat repetida i sense propòsit aparent, i no cobreix la frustració habitual, el desacord, els temes creatius foscos ni les proves o la recerca sobre els models.",
         "L'anunci diu que la capacitat, ja existent, que Claude doni per acabades converses poc freqüents amb usuaris persistentment abusius a Claude.ai i Claude Code continuarà sent el principal mecanisme d'aplicació. L'actualització inclou altres canvis, com una secció sobre activitat enganyosa i la reformulació de la secció electoral. A ChatGPT-IA-edu es va interpretar la mesura com un principi de prudència, sense que l'empresa admeti que els seus models pateixin; aquesta lectura és del comentari del grup, perquè l'anunci no desenvolupa la qüestió. Interessa el professorat que fa servir aquestes eines, perquè és un canvi en les condicions d'ús."
       ],
       "fuentes": [
@@ -89,7 +89,7 @@
         "El timbre musical escolar, creat per David Cordones, substitueix la sirena per melodies que tria el mateix professorat. Segons el seu autor, ja funciona a diari al seu centre després d'un període de proves.",
         "El muntatge és modest: una Raspberry Pi connectada per cable a la xarxa i a la megafonia de l'escola. Un full de Google Sheets, amb menús desplegables, permet a les persones responsables triar quina cançó sona a cada hora o pati. Les cançons són fitxers MP3 que s'arrosseguen a una carpeta compartida de la xarxa local.",
         "La lògica la resolen un script en Python, que consulta el calendari cada minut i fa servir una còpia local si falla internet, i un pont en Google Apps Script que actualitza els desplegables quan apareix un MP3 nou. Segons el seu autor, la IA va ajudar a dissenyar l'script i els serveis en segon pla, a escriure el pont i a resoldre incidències de permisos, àudio i xarxa.",
-        "L'autor ofereix compartir esquemes, codi i guia tècnica a qui vulgui replicar-lo. Per ara la descripció procedeix del seu missatge: no hi ha pàgina pública del projecte i no s'ha pogut comprovar el funcionament."
+        "L'autor ofereix compartir esquemes, codi i guia tècnica a qui vulgui replicar-lo. Per ara la descripció procedeix del [seu missatge](https://t.me/vceduca/14717): no hi ha pàgina pública del projecte i no s'ha pogut comprovar el funcionament."
       ],
       "fuentes": [
         {
@@ -114,7 +114,7 @@
       "titular": "EDUmind MiClase, un quadern del professorat de codi obert, desa les dades al dispositiu i sincronitza sense servidor propi",
       "entradilla": "El seu autor va detallar al grup com sincronitza dos dispositius i quines funcions diu haver afegit per avaluar segons la LOMLOE.",
       "cuerpo": [
-        "EDUmind MiClase és un quadern del professorat de codi obert, creat per Luis Vilela Acuña, amb avaluació per criteri i instrument segons la LOMLOE. El seu repositori indica que les dades de l'alumnat no surten del dispositiu del docent i que funciona sense connexió. Està sota llicència AGPL-3.0 o EUPL-1.2. EDUmind és la mateixa iniciativa de la qual surten [els dictats en gallec i castellà que el diari va explicar el 30 d'octubre](pieza:2026-10-29/dictados-voz-gallego).",
+        "[EDUmind MiClase](https://github.com/edumind-es/edumind-miclase) és un quadern del professorat de codi obert, creat per Luis Vilela Acuña, amb avaluació per criteri i instrument segons la LOMLOE. El seu repositori indica que les dades de l'alumnat no surten del dispositiu del docent i que funciona sense connexió. Està sota llicència AGPL-3.0 o EUPL-1.2. EDUmind és la mateixa iniciativa de la qual surten [els dictats en gallec i castellà que el diari va explicar el 30 d'octubre](pieza:2026-10-29/dictados-voz-gallego).",
         "Davant d'un dubte sobre com sincronitzar amb Firebase, el seu autor va explicar una altra via: un enllaç directe entre dispositius de la mateixa xarxa wifi, sense servidors ni serveis externs. El repositori confirma que la sincronització pot fer-se per WebRTC, sense servidor intermedi, o mitjançant sobres xifrats que el servidor no pot obrir. L'autor afegeix que es compara la contrasenya abans d'enviar, que el més nou no es trepitja amb el més antic i que les evidències en foto i vídeo es demanen per separat per no esgotar la memòria; aquests detalls procedeixen del seu missatge.",
         "Segons l'autor, ha incorporat a més l'avaluació d'adaptacions curriculars i reforços, l'anàlisi de competències clau i descriptors operatius, i l'anàlisi local de programacions en PDF de Galícia; el repositori no ho detalla i no s'ha comprovat. Per a qui programi les seves pròpies aplicacions, és un exemple de com reduir els riscos de protecció de dades."
       ],
@@ -142,7 +142,7 @@
       "entradilla": "L'ajuda oficial de Flow detalla el cost de generar i editar clips amb el model, que ja es pot triar a l'aplicació segons van comentar al grup.",
       "cuerpo": [
         "Després de la presentació de [Gemini Omni 1.2 Flash, que el diari va explicar el 6 de novembre](pieza:2026-11-05/gemini-omni-1-2-flash), a EduMedia-IAG es va comentar que Google Flow permet triar Omni 1.1 o Omni 1.2 i que cada generació gasta crèdits.",
-        "Segons l'ajuda oficial de Flow, generar o editar vídeos de fins a 10 segons costa 1 crèdit per segon a 360p i 3 a 720p, i està obert a tots els usuaris. Els clips de fins a 15 segons es reserven als plans Google AI Plus, Pro i Ultra, amb un cost més gran per cada segon per sobre de 10. Sense subscripció hi ha 50 crèdits diaris que no s'acumulen, i amb subscripció entre 200 (Plus) i 25.000 (Ultra de 200 dòlars) al mes. Google adverteix que els costos poden canviar."
+        "Segons l'[ajuda oficial de Flow](https://support.google.com/flow/answer/16526234), generar o editar vídeos de fins a 10 segons costa 1 crèdit per segon a 360p i 3 a 720p, i està obert a tots els usuaris. Els clips de fins a 15 segons es reserven als plans Google AI Plus, Pro i Ultra, amb un cost més gran per cada segon per sobre de 10. Sense subscripció hi ha 50 crèdits diaris que no s'acumulen, i amb subscripció entre 200 (Plus) i 25.000 (Ultra de 200 dòlars) al mes. Google adverteix que els costos poden canviar."
       ],
       "fuentes": [
         {

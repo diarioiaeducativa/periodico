@@ -1,0 +1,32 @@
+{
+  "fecha": "2026-11-07",
+  "elegida": {
+    "n": 2,
+    "pieza": "memoria-agentes-ia",
+    "idea": "Junto a la fotocopiadora, Algoritmo trae de su repaso nocturno una propuesta para el perfil de Tiza: «Dice que lo revisará luego. Nunca lo revisa». Como los cambios del perfil necesitan su aprobación, Algoritmo ya sabe cuándo llegará.",
+    "guion": {"vinetas": [
+      {"cartela": "A primeira hora",
+       "escenario": "fotocopiadora",
+       "tiza": {"expresion": "agotado", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "orgulloso", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+       "objeto": "taza", "lleva": "tiza",
+       "bocadillos": [
+         {"quien": "algoritmo", "texto": "Onte á noite fixen o meu repaso. Traio unha proposta para o teu perfil.", "tipo": "habla"},
+         {"quien": "tiza", "texto": "A ver.", "tipo": "habla"}]},
+      {"escenario": "fotocopiadora",
+       "tiza": {"expresion": "pensativo", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "neutral", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+       "objeto": "taza", "lleva": "tiza",
+       "bocadillos": [
+         {"quien": "algoritmo", "texto": "Engadir: «Di que o revisará despois. Nunca o revisa».", "tipo": "habla"}]},
+      {"escenario": "fotocopiadora",
+       "tiza": {"expresion": "avergonzado", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "harto", "postura": "encoger", "lugar": "derecha", "mira": "izquierda"},
+       "objeto": "taza", "lleva": "tiza",
+       "bocadillos": [
+         {"quien": "tiza", "texto": "Os cambios no meu perfil necesitan a miña aprobación.", "tipo": "habla"},
+         {"quien": "algoritmo", "texto": "Xa. Xa o revisarás despois.", "tipo": "habla"}]}
+    ]}
+  },
+  "traduccion": "automática con IA"
+}

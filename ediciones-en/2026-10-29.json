@@ -12,7 +12,7 @@
       "titular": "EDUmind offers Galician and Spanish dictations with open-source synthetic voices",
       "entradilla": "A free web app created by Luis Vilela Acuña gathers dictations in Galician and Spanish for the final year of primary school, with openly licensed synthetic voices.",
       "cuerpo": [
-        "EDUmind (dictados.edumind.es), created by Luis Vilela Acuña, offers four dictations for Year 6 of primary school, two in Galician and two in Spanish. It includes filters by language, year, topic, tag and text type, a search tool, a two-page rules card and a cumulative rules notebook, both as PDF and ODT.",
+        "[EDUmind](https://dictados.edumind.es) (dictados.edumind.es), created by Luis Vilela Acuña, offers four dictations for Year 6 of primary school, two in Galician and two in Spanish. It includes filters by language, year, topic, tag and text type, a search tool, a two-page rules card and a cumulative rules notebook, both as PDF and ODT.",
         "The narration is synthetic. The Galician voice, Brais, comes from the Proxecto Nós (University of Santiago de Compostela) and was generated with aHoTTS (HiTZ, UPV/EHU); the Spanish one, Alejandro, is also from aHoTTS. According to the page, the texts, worksheets and audio are published under a CC BY-SA 4.0 licence, the software under AGPL-3.0-or-later or EUPL-1.2 and the voice models under Apache 2.0.",
         "Its author presented the resource as work in progress: he said he still has to polish it and that the Spanish version could be improved."
       ],

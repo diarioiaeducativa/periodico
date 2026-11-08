@@ -18,9 +18,15 @@
         "Para el profesorado, la idea práctica es saber cuándo conviene una infografía editable y accesible, y cuándo una imagen generada."
       ],
       "fuentes": [
-        {"titulo": "Lucide, biblioteca de iconos de código abierto (licencia ISC)", "url": "https://lucide.dev/"}
+        {
+          "titulo": "Lucide, biblioteca de iconos de código abierto (licencia ISC)",
+          "url": "https://lucide.dev/"
+        }
       ],
-      "mensaje": {"grupo": "vce", "id": 14501},
+      "mensaje": {
+        "grupo": "vce",
+        "id": 14501
+      },
       "comprobado": "Lucide (lucide.dev), abierta por el revisor: indica «Released under the ISC License»; en el grupo se dijo MIT y no se recoge. Mensaje 14501 de t.me/vceduca verificado: trata de imágenes SVG con formas e iconos. Las ventajas y recomendaciones son opinión expresada en el grupo y se presentan como tal; no se abrió el capítulo académico ni la documentación de Bootstrap enlazados allí. Titular corregido: es la recomendación de un miembro, no de «docentes».",
       "ilustracion": "Esquema de dos caminos desde una idea: a la izquierda una imagen generada (un bloque opaco, sin texto leíble ni modo oscuro); a la derecha una infografía HTML/SVG hecha de formas e iconos, con etiquetas de «texto legible por lector de pantalla», «modo claro/oscuro» y «exportable a PNG».",
       "ilustracion_alt": "Esquema en el que una «Idea» se bifurca en dos caminos: uno acaba en un bloque opaco tachado, la «Imagen generada», y otro en una infografía de formas e iconos, «HTML y SVG», de la que salen dos ventajas: «Lector de pantalla» y «Claro y oscuro»."
@@ -34,14 +40,20 @@
       "titular": "El MIT publica un informe que pide replantear enseñanza y evaluación ante la IA",
       "entradilla": "El comité creado por el MIT para estudiar el uso de la IA en docencia, aprendizaje y formación en investigación recomienda procesos educativos adaptados a la IA y revisar evaluaciones y normas.",
       "cuerpo": [
-        "En ChatGPT-IA-edu se compartió el informe del Comité Ad Hoc del MIT sobre el uso de la IA en la enseñanza, el aprendizaje y la formación en investigación. Según la página institucional del MIT, el comité recibió su encargo en enero de 2026 y su informe final se difundió el 25 de agosto de 2026.",
+        "En ChatGPT-IA-edu se compartió el informe del Comité Ad Hoc del MIT sobre el uso de la IA en la enseñanza, el aprendizaje y la formación en investigación. Según la [página institucional del MIT](https://orgchart.mit.edu/node/1587), el comité recibió su encargo en enero de 2026 y su informe final se difundió el 25 de agosto de 2026.",
         "El texto propone actuaciones inmediatas y a más largo plazo en tres líneas: crear procesos educativos conscientes de la IA, lo que supone revisar qué debe aprender el alumnado y cómo alcanzarlo, con cambios en las evaluaciones y en las normas; mantener en el centro a las personas, la comunidad y la experiencia presencial en el campus; y dotarse de procesos, equipos y herramientas para una mejora continua, dado el ritmo de cambio de la IA. La institución indica además que el profesorado recibirá orientaciones para redactar sus normas sobre IA.",
         "Para el profesorado de otros niveles es una referencia de cómo una gran universidad aborda la cuestión: revisando la evaluación y las normas en lugar de limitarse a prohibir."
       ],
       "fuentes": [
-        {"titulo": "MIT: comunicado sobre el informe del Comité Ad Hoc sobre IA", "url": "https://orgchart.mit.edu/node/1587"}
+        {
+          "titulo": "MIT: comunicado sobre el informe del Comité Ad Hoc sobre IA",
+          "url": "https://orgchart.mit.edu/node/1587"
+        }
       ],
-      "mensaje": {"grupo": "chatgpt", "id": 53877},
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 53877
+      },
       "comprobado": "Página del MIT (orgchart.mit.edu/node/1587), abierta por el revisor: informe final del 25 de agosto de 2026, comité encargado en enero de 2026, las tres líneas de recomendación y las orientaciones al profesorado para sus normas. Mensaje 53877 de t.me/ChatGPTedu verificado. Se quitó la afirmación de que se recomienda fijar reglas por asignatura y departamento, que la página no recoge, y se ajustó el titular de la fuente. El PDF del informe no se leyó.",
       "ilustracion": null,
       "ilustracion_alt": "Un «Informe» del que parten tres ramas, cada una con su icono: una hoja con una marca, «Evaluación y normas»; dos personas, «Personas y campus», y dos flechas en círculo, «Mejora continua»."
@@ -60,7 +72,10 @@
         "Una tercera intervención apunta que, si el alumnado va a vivir en un mundo con IA, ya debería prepararse para él, y adelanta el interés por un enfoque de «ingeniería agéntica ética» desde la perspectiva educativa. Una de las intervenciones recoge además un dilema: usar la IA para crear contenidos y a la vez limitarla en las tareas del alumnado."
       ],
       "fuentes": [],
-      "mensaje": {"grupo": "chatgpt", "id": 53855},
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 53855
+      },
       "comprobado": "Pieza de opinión: recoge posturas expresadas en el grupo (mensajes 53855, 53865, 53871, 53873, 53874), sin nombres y sin afirmaciones sobre productos, cifras ni normas. Mensaje 53855 de t.me/ChatGPTedu verificado. Titular y entradilla corregidos: no hubo división de posturas, sino matices sobre un mismo planteamiento. No se incluyen las comparaciones con experiencias de otros países, no contrastadas.",
       "ilustracion": null,
       "ilustracion_alt": "A la izquierda, «Fuente»: un docente transmite información con flechas hacia tres estudiantes; a la derecha, «Diseñador y guía»: otro docente con una interrogante diseña un recorrido de etapas que lleva a una bandera con el rótulo «Juicio crítico»."
@@ -79,7 +94,10 @@
         "También se señaló que el agente puede limitarse a una carpeta concreta en lugar de a todo el dispositivo, y se anunció que habrá un texto actualizado sobre las tres formas de usar la IA: web, aplicación de escritorio y consola."
       ],
       "fuentes": [],
-      "mensaje": {"grupo": "vce", "id": 14542},
+      "mensaje": {
+        "grupo": "vce",
+        "id": 14542
+      },
       "comprobado": "Consejos y experiencia relatados en el grupo (mensajes 14542, 14544-14546), sin afirmaciones técnicas sobre un producto concreto; contrastados con el texto del chat. Mensaje 14542 de t.me/vceduca verificado: es la pregunta sobre dar control a una consola. No se enlaza el artículo mencionado porque no se ha abierto.",
       "ilustracion": null,
       "ilustracion_alt": "Una ventana de terminal, el agente, tiene una flecha hacia una carpeta de trabajo dentro de un equipo, mientras su camino hacia la carpeta de datos del alumnado, con un candado, queda cortado por una cruz roja."
@@ -98,9 +116,15 @@
         "Para el profesorado, el interés está en disponer de ejemplos con su prompt para producir vídeos breves de presentación o de apoyo a una explicación."
       ],
       "fuentes": [
-        {"titulo": "MotionVideo", "url": "https://motionvideo.xyz/en"}
+        {
+          "titulo": "MotionVideo",
+          "url": "https://motionvideo.xyz/en"
+        }
       ],
-      "mensaje": {"grupo": "edumedia", "id": 11986},
+      "mensaje": {
+        "grupo": "edumedia",
+        "id": 11986
+      },
       "comprobado": "Página de motionvideo.xyz, abierta por el revisor: vídeos con su prompt, técnicas, skills para agentes, enlace a GitHub y categorías (Kinetic type, Charts, Diagrams, Particles, Music, entre otras). Mensaje 11986 de t.me/EduMediaIAG verificado. La prueba con Gemini es un relato del grupo y se presenta como tal.",
       "ilustracion": null,
       "ilustracion_alt": "Tres cuadros enlazados por flechas: un prompt escrito, una skill con forma de ventana de terminal y un vídeo con botón de reproducción y una trayectoria de movimiento roja debajo."
@@ -111,7 +135,10 @@
       "texto": "La web del nuevo libro de Ethan Mollick incluye un «cursor con IA» que acompaña la lectura y puede desactivarse. En el grupo se valoró como idea para la divulgación.",
       "url": "https://co-existence.ai/",
       "grupo": "vce",
-      "mensaje": {"grupo": "vce", "id": 14536}
+      "mensaje": {
+        "grupo": "vce",
+        "id": 14536
+      }
     }
   ],
   "descartado": [

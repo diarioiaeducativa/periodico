@@ -11,7 +11,7 @@
       "titular": "Katalanezko laborategi batek formulazio ez-organikoa praktikatzeko aukera ematen du, galderekin, aztarnekin eta erronkekin",
       "entradilla": "Felip Sarroca i Gilek sortutako «Laboratori de formulació» tresnak nomenklatura ez-organikoko ariketak eskaintzen ditu Derrigorrezko Bigarren Hezkuntzarako eta Batxilergorako, hiru lan-modurekin eta aurrerapen-markagailuarekin.",
       "cuerpo": [
-        "«Laboratori de formulació» konposatu ez-organikoen formulazioa eta nomenklatura ikasi eta praktikatzeko web-aplikazio bat da. Biltegiko fitxaren arabera, IUPACen 2005eko gomendioei jarraitzen die eta Derrigorrezko Bigarren Hezkuntzako eta Batxilergoko ikasleei zuzenduta dago, Zientzia eta Teknologia arloan. Erabat katalanez dago, eta orri-oinean adierazten da Felip Sarrocak sortu duela adimen artifizialaren (AA) laguntzaz.",
+        "«[Laboratori de formulació](https://ja.cat/formulacio)» konposatu ez-organikoen formulazioa eta nomenklatura ikasi eta praktikatzeko web-aplikazio bat da. Biltegiko fitxaren arabera, IUPACen 2005eko gomendioei jarraitzen die eta Derrigorrezko Bigarren Hezkuntzako eta Batxilergoko ikasleei zuzenduta dago, Zientzia eta Teknologia arloan. Erabat katalanez dago, eta orri-oinean adierazten da Felip Sarrocak sortu duela adimen artifizialaren (AA) laguntzaz.",
         "Irekitzean, hiru modu dituen goiburu bat ikusten da: «Aprèn», «Practica» eta «Repte». Praktika moduan, pantaila-argazkian ageri dena, aukera anitzeko galdera bat agertzen da, lau erantzunekin, adibidez bario sulfuroaren formula, familiaren etiketarekin («sal binària») eta mailarekin («fàcil»). Azpian, aztarna bat eskatzeko edo ebazpena erakusteko botoiak daude. Mailaren arabera (erraza, ertaina eta Batxilergoa) eta konposatu-familiaren arabera iragazi daiteke, eta alboko panelak jarduera mota aukeratzen uzten du: guztien nahasketa, ioiak elkartuz konposatuak eraikitzea karga osoa zero izan arte, izenetik formulara pasatzea, formulatik izenera pasatzea, lau aukeren artean hautatzea edo konposatu bat bere familian sailkatzea.",
         "Saio bakoitzarekin batera saiakeren, asmatzeen eta bolada onaren kontagailu bat doa. Orriak dio aurrerapena nabigatzailean bakarrik gordetzen dela, eta ioien taula bat eskaintzen du. Fitxaren arabera, proiektagailu modu bat ere badu, arbel digitalerako pentsatua, pantaila-argazkian nabaritzen ez dena.",
         "Irakasleentzat, baliabidea ikasleen praktika autonomorako erabil daiteke edo ikasgelan proiektatutako errepaso-jarduera gisa. Nabigatzailetik irekitzen da, eta ez du sarbide- edo ordainketa-pantailarik erakusten. Gaztelaniaz ematen duenak kontuan izan behar du testu guztia, bai galderena bai laguntzena, katalanez dagoela.",
@@ -31,7 +31,10 @@
         }
       ],
       "fuentes": [
-        {"titulo": "Laboratori de formulació (katalanez)", "url": "https://ja.cat/formulacio"}
+        {
+          "titulo": "Laboratori de formulació (katalanez)",
+          "url": "https://ja.cat/formulacio"
+        }
       ],
       "comprobado": "Se miró la captura (modo Practica, pregunta de opción múltiple, filtros, tipos de actividad, contadores y pie con autoría y licencia). WebFetch siguió la redirección y devolvió el texto de la página: modos Aprèn, Practica y Repte, tabla de iones, contadores, progreso guardado solo en el navegador; no menciona cuenta ni modo proyector. La referencia a la IUPAC 2005 y el modo proyector proceden de la ficha y se atribuyen a ella."
     },
@@ -45,10 +48,10 @@
       "titular": "FoQok formulazio organikoko testak sortzen ditu eta marraztutako egitura baten izena ematen du",
       "entradilla": "FiQuiPediaren aplikazioak kimika organikoaren nomenklatura praktikatzeko aukera ematen du, test konfiguragarriekin eta formulatik izenera pasatzen den tresna batekin.",
       "cuerpo": [
-        "FoQo, «Formulación Química Orgánica», FiQuiPediaren web-aplikazio bat da, konposatu organikoen nomenklatura praktikatzeko. Biltegiko fitxak Derrigorrezko Bigarren Hezkuntzan, Batxilergoan eta Unibertsitatean kokatzen du, Zientzia eta Teknologia arloan, eta gaztelaniaz dago. Itxuraz izen-ematerik gabeko orria da: irekitzean zuzenean hiru sarbide erakusten ditu, sarrera-formulariorik gabe.",
+        "[FoQo](https://foqo.fiquipedia.es/), «Formulación Química Orgánica», FiQuiPediaren web-aplikazio bat da, konposatu organikoen nomenklatura praktikatzeko. Biltegiko fitxak Derrigorrezko Bigarren Hezkuntzan, Batxilergoan eta Unibertsitatean kokatzen du, Zientzia eta Teknologia arloan, eta gaztelaniaz dago. Itxuraz izen-ematerik gabeko orria da: irekitzean zuzenean hiru sarbide erakusten ditu, sarrera-formulariorik gabe.",
         "Hasierako pantailak hiru botoi ditu: «Tests», «F → N» eta «Panel». Fitxaren deskribapenaren arabera, testek konposatu bati izena jartzeko eskatzen dute formulatik abiatuta, edo emandako izen bat formulatzeko, eta panelak ariketa mota konfiguratzeko aukera ematen du: kateak, lotura bikoitz eta hirukoitzak, erradikalak, adarrak, talde funtzionalak eta zikloak. «F → N» tresna, beti ere fitxaren arabera, formula baten edo editorean marraztutako egitura baten izena eta propietateak lortzeko balio du. Orrian molekulak eraikitzeko erabiltzen den lotura eta talde funtzionalen paleta ikusten da (-OH, -COOH, -NH₂, -NO₂ eta beste batzuk), eta JSME eta 3Dmol.js liburutegiak aipatzen dira, editorea eta molekulen bistaratzea haiekin lantzen baitira.",
         "Fitxak adierazten du hainbat irudikapen onartzen dituela (erdi-garatua, eskeletikoa, eskema angeluzuzenekoa eta 3D) eta 2013ko IUPAC nomenklatura, izen hobetsiarekin (PIN), zein 1993koa kontsulta daitezkeela. Irakasleentzat, fitxak dioenez, klasean, lanetarako edo praktika autonomo gisa erabil daiteke, PDFra esportatuz eta Moodlerako SCORM pakete gisa. Funtzio horiek fitxaren deskribapenetik datoz; pantaila-argazkiak hasierako pantaila bakarrik erakusten du.",
-        "Lanak lizentzia bikoitza du: AGPL v3 kodearentzat eta CC BY-SA 4.0 edukientzat. Orriak GitLab-eko kodera eta erabiltzen dituen liburutegietara daramaten estekak ditu."
+        "Lanak lizentzia bikoitza du: AGPL v3 kodearentzat eta CC BY-SA 4.0 edukientzat. Orriak [GitLab](https://gitlab.com/fiquipedia/foqo/-/blob/main/README.md)-eko kodera eta erabiltzen dituen liburutegietara daramaten estekak ditu."
       ],
       "recursos": [
         {
@@ -64,8 +67,14 @@
         }
       ],
       "fuentes": [
-        {"titulo": "FoQo - Formulación Química Orgánica (gaztelaniaz)", "url": "https://foqo.fiquipedia.es/"},
-        {"titulo": "Código de FoQo en GitLab (gaztelaniaz)", "url": "https://gitlab.com/fiquipedia/foqo/-/blob/main/README.md"}
+        {
+          "titulo": "FoQo - Formulación Química Orgánica (gaztelaniaz)",
+          "url": "https://foqo.fiquipedia.es/"
+        },
+        {
+          "titulo": "Código de FoQo en GitLab (gaztelaniaz)",
+          "url": "https://gitlab.com/fiquipedia/foqo/-/blob/main/README.md"
+        }
       ],
       "comprobado": "Se miró la captura (pantalla de inicio con Tests, F → N y Panel, sin pedir cuenta) y se abrió la web con WebFetch: tests de fórmula, herramienta F → N, panel de configuración, exportación a PDF, mención de SCORM, bibliotecas y licencias; no dice si hay cuenta. No se pudo ver ningún test ni el editor en funcionamiento: lo relativo a representaciones 3D, nomenclaturas y uso en clase procede de la ficha. La página de GitLab solo cargó con su título (README de FoQo), sin contenido legible."
     }
@@ -74,6 +83,6 @@
   "repaso": [
     "Laboratori de formulació: quitado «no pide cuenta ni pago» (no consta; solo se ve que no hay pantalla de acceso); el modo proyector pasa a atribuirse a la ficha (la página no lo muestra); quitado «los nombres de los compuestos» y condensado para ajustarse a las 350 palabras.",
     "FoQo: quitado «con su documentación» respecto al enlace de GitLab (no se pudo leer el README); ajustado «comprobado».",
-    "Título, autoría, licencia, fichas, capturas y captura_alt coinciden con la entrada; sin enlaces a lo ya publicado (nada relacionado en publicado.txt); no se nombra a Juanjo de Haro; ningún recurso descartado."
+    "Título, autoría, licencia, fichas, capturas y captura_alt coinciden con la entrada; sin enlaces a lo ya publicado (nada relacionado en publicado.txt); no se nombra a Juan José de Haro; ningún recurso descartado."
   ]
 }

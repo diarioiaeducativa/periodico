@@ -11,7 +11,7 @@
       "titular": "Una colección de tutoriales enseña a guardar, ordenar y publicar el código que genera la IA",
       "entradilla": "Pablo G. Guízar reúne ocho tutoriales para quien ya tiene código creado por un asistente de IA y debe saber qué hacer con él: Git, GitHub, refactorización, módulos, React y despliegue.",
       "cuerpo": [
-        "La colección, titulada «Asistente de Código IA» al abrirla, ha sido creada por Pablo G. Guízar con ayuda de Gemini, según consta en la ficha del repositorio. Se abre en el navegador y tiene el aspecto de un editor de código en tema oscuro: a la izquierda, la lista de tutoriales; en el centro, la zona de trabajo; a la derecha, un panel de instrucciones; y abajo, una línea de comandos. Al entrar no hay ningún tutorial seleccionado, y el panel lo indica con un mensaje en inglés («No tutorial selected»).",
+        "La colección, titulada «[Asistente de Código IA](https://pablogguizar.github.io/vibe-tutorial/)» al abrirla, ha sido creada por Pablo G. Guízar con ayuda de Gemini, según consta en la ficha del repositorio. Se abre en el navegador y tiene el aspecto de un editor de código en tema oscuro: a la izquierda, la lista de tutoriales; en el centro, la zona de trabajo; a la derecha, un panel de instrucciones; y abajo, una línea de comandos. Al entrar no hay ningún tutorial seleccionado, y el panel lo indica con un mensaje en inglés («No tutorial selected»).",
         "La lista contiene ocho tutoriales. Los tres primeros tratan del control de versiones: guardar con Git el código inicial que escribe la IA, clonar un repositorio de GitHub y subir a GitHub los cambios hechos en un proyecto clonado. Siguen tres sobre ordenar el código: refactorizarlo («La IA es rápida, pero no siempre ordenada», dice la presentación), separar los datos de la lógica mediante JSON para reutilizarlo y dividir un script grande de JavaScript en módulos con import/export. Los dos últimos se refieren a aplicaciones React generadas por IA: instalar sus dependencias y ejecutarlas, y publicarlas en la web.",
         "Para el profesorado que crea sus propios recursos con inteligencia artificial, la colección puede servir como ruta de autoformación en lo que viene después de obtener el código: conservarlo, mejorarlo y ponerlo en línea para compartirlo. La ficha lo sitúa en los niveles de universidad, formación de adultos o autoaprendizaje y formación del profesorado, lo describe como una colección de tutoriales interactivos para principiantes y lo marca en español e inglés. En lo que se ve al abrirla, las explicaciones están en español.",
         "La captura solo muestra el entorno sin ningún tutorial abierto y el comienzo de la lista, de modo que el desarrollo de cada tutorial y el modo de realizar los ejercicios no se han podido comprobar. En la página no aparece ninguna petición de cuenta ni de pago. La obra figura con licencia Creative Commons BY (Reconocimiento)."
@@ -30,7 +30,10 @@
         }
       ],
       "fuentes": [
-        {"titulo": "Colección de tutoriales para aprender a gestionar el código generado con IA", "url": "https://pablogguizar.github.io/vibe-tutorial/"}
+        {
+          "titulo": "Colección de tutoriales para aprender a gestionar el código generado con IA",
+          "url": "https://pablogguizar.github.io/vibe-tutorial/"
+        }
       ],
       "comprobado": "Se miró la captura de la página (comienzo de la lista de tutoriales en la columna izquierda, de la que caben cuatro; panel «Instrucciones» con «No tutorial selected»; línea de comandos) y el texto visible, que enumera los ocho tutoriales. WebFetch devolvió solo el título «IDE Simulator», sin más contenido, por lo que no se ha usado. No se pudo abrir ningún tutorial, así que no se afirma nada sobre su funcionamiento más allá de la ficha, que se atribuye como tal."
     }

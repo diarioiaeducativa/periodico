@@ -1,0 +1,32 @@
+{
+  "fecha": "2026-11-07",
+  "elegida": {
+    "n": 2,
+    "pieza": "memoria-agentes-ia",
+    "idea": "By the photocopier, Algorithm brings a proposal from its overnight review for Chalk's profile: “Says he'll review it later. Never does”. Since changes to the profile need his approval, Algorithm already knows when it will arrive.",
+    "guion": {"vinetas": [
+      {"cartela": "First thing in the morning",
+       "escenario": "fotocopiadora",
+       "tiza": {"expresion": "agotado", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "orgulloso", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+       "objeto": "taza", "lleva": "tiza",
+       "bocadillos": [
+         {"quien": "algoritmo", "texto": "I did my review last night. I've got a proposal for your profile.", "tipo": "habla"},
+         {"quien": "tiza", "texto": "Go on.", "tipo": "habla"}]},
+      {"escenario": "fotocopiadora",
+       "tiza": {"expresion": "pensativo", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "neutral", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+       "objeto": "taza", "lleva": "tiza",
+       "bocadillos": [
+         {"quien": "algoritmo", "texto": "Add: “Says he'll review it later. Never does”.", "tipo": "habla"}]},
+      {"escenario": "fotocopiadora",
+       "tiza": {"expresion": "avergonzado", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "harto", "postura": "encoger", "lugar": "derecha", "mira": "izquierda"},
+       "objeto": "taza", "lleva": "tiza",
+       "bocadillos": [
+         {"quien": "tiza", "texto": "Changes to my profile need my approval.", "tipo": "habla"},
+         {"quien": "algoritmo", "texto": "Right. You'll review it later.", "tipo": "habla"}]}
+    ]}
+  },
+  "traduccion": "automatic AI translation"
+}

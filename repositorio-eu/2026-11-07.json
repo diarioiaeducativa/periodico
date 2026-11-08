@@ -1,0 +1,49 @@
+{
+  "fecha": "2026-11-07",
+  "piezas": [
+    {
+      "id": "itinerancias",
+      "seccion": "vibecoding",
+      "repositorio": "dia",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Berria biltegian",
+      "titular": "Kalkulagailu batek Valentziako Generalitateko hainbat ikastetxetan ibiltari diren irakasleen lanaldia banatzen du",
+      "entradilla": "José Luis Miralles Bonok sortutako Itinerancias-ek kalkulatzen du nola banatzen diren osagarri-orduak destino bat partekatzen duen irakasle baten ikastetxeen artean, ikastetxe bakoitzean ematen dituen lectivo-orduen arabera. Nabigatzailean irekitzen da, gaztelaniaz eta valentziaz, eta kalkulu bera duen Excel orri bat ere eskaintzen du.",
+      "cuerpo": [
+        "[Itinerancias](https://jlmirallesb.github.io/itinerancias/) Valentziako Generalitateko ikastetxe bat baino gehiagotan lan egiten duten zuzendaritza-taldeentzat eta irakasleentzat pentsatutako tresna bat da. Bere helburua da pertsona ibiltariaren lanaldia ikastetxe horien artean banatzea, alde guztiek berrikus dezaketen kalkulu esplizitu batekin. José Luis Miralles Bonok sortu du, Clauderen laguntzarekin, eta biltegian dago kodearentzat AGPL v3 lizentziarekin; orriak berak adierazten du edukiak CC BY-SA 4.0 direla.",
+        "Aplikazioa bost fitxatan antolatuta dago: Tablas, Consulta, Calculadora, Negociar eta Normativa. Lehenengoan, irekitzean ikusten denean, banaketa-modu biak azaltzen dira. Proportzionalak osagarri-orduak ikastetxe bakoitzean ematen diren lectivo-orduen arabera esleitzen ditu, minutura, 18 lectivo-aldiko oinarri baten gainean. Blokekakoak osagarri horiek ordu osoetara biribiltzen ditu eta aldea beste partida batean konpentsatzen du, eta horrela guztizkoa ez da aldatzen eta partiden artean minutu gutxi batzuk baino ez dira aldatzen. Horrez gain, bien arteko konparaketa bat eta xehetasun-gida bat daude; gida errenkadaz errenkada alda daiteke eta nabigatzailean bakarrik gordetzen da.",
+        "Hautatzaile batek aukeratzen uzten du lectivo-ordu gehigarri bakoitzeko zenbat osagarri-ordu kentzen diren, 19 edo 20 lectivo-aldirekin ere: 2, 1 edo 0. Orriak gogorarazten du ikasturte hasierako ebazpenak dioela «gehienez bi osagarri-ordu lectivo-aldi bakoitzeko».",
+        "Bere fitxaren arabera, negoziazio-fitxak ikastetxeei banaketa adostea ahalbidetzen die partekatzen diren estekien bidez. Orriak dioenez, idazten den ezer ez da nabigatzailetik ateratzen, pertsona bakoitzak bidaltzea erabakitzen dituen estekiak izan ezik.",
+        "Konturik gabe eta ezer instalatu gabe erabiltzen da, eta «Descargar Excel» botoiak kalkulu bera duen orria eskaintzen du. Modu argia eta iluna ditu. Bere egileak ohartarazten du zuzendaritza-taldeentzako laguntza-tresna bat dela eta ez Valentziako Generalitateko aplikazio ofizial bat."
+      ],
+      "recursos": [
+        {
+          "id": "itinerancias",
+          "titulo": "Itinerancias",
+          "autoria": "José Luis Miralles Bono",
+          "url": "https://jlmirallesb.github.io/itinerancias/",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://jlmirallesb.github.io/itinerancias/",
+          "licencia": "AGPL v3",
+          "captura": "2026-11-07-itinerancias.jpg",
+          "captura_alt": "Itinerancias-en «Tablas» fitxa, osagarri-orduen hautatzailearekin eta banaketa proportzionalari eta blokekakoari buruzko atal zabalgarriekin.",
+          "texto": []
+        }
+      ],
+      "fuentes": [
+        {
+          "titulo": "Itinerancias (gaztelaniaz)",
+          "url": "https://jlmirallesb.github.io/itinerancias/"
+        }
+      ],
+      "comprobado": "Revisor: captura vista con Read (pestaña Tablas, versión 1.0.3, botones de Excel, tema y idioma Castellano/Valencià, cinco pestañas, apartados de reparto) y texto visible de la entrada contrastado. WebFetch solo devolvió el título (la página requiere JavaScript). Las pestañas Consulta, Calculadora, Negociar y Normativa no se ven en la captura; lo de negociar por enlaces se atribuye a la ficha. Autoría, licencia, ficha, captura e idiomas (Español, Català) coinciden con la entrada. Sin enlaces a lo ya publicado: nada relacionado en publicado.txt."
+    }
+  ],
+  "descartado": [],
+  "repaso": [
+    "Entradilla: lo que calcula es el reparto de horas complementarias según las lectivas de cada centro, no «cuántas horas lectivas y complementarias corresponden a cada centro».",
+    "Quitada la frase sobre cómo se hizo la revisión («En esta revisión solo se ha visto la primera pestaña…»), que no es del artículo; lo de negociar sigue como «según su ficha».",
+    "«otra categoría» pasa a «otra partida», más fiel a la página; quitada la valoración final («punto de partida concreto») y ajustada la extensión al encargo.",
+    "Comprobados sin cambios: título, autoría, licencia, ficha, captura, captura_alt e idiomas."
+  ]
+}

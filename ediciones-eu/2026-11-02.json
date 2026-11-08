@@ -18,9 +18,15 @@
         "Irakasleentzat, ideia praktikoa da jakitea noiz komeni den infografia editagarri eta irisgarri bat, eta noiz sortutako irudi bat."
       ],
       "fuentes": [
-        {"titulo": "Lucide, kode irekiko ikono-liburutegia (ISC lizentzia) (ingelesez)", "url": "https://lucide.dev/"}
+        {
+          "titulo": "Lucide, kode irekiko ikono-liburutegia (ISC lizentzia) (ingelesez)",
+          "url": "https://lucide.dev/"
+        }
       ],
-      "mensaje": {"grupo": "vce", "id": 14501},
+      "mensaje": {
+        "grupo": "vce",
+        "id": 14501
+      },
       "comprobado": "Lucide (lucide.dev), abierta por el revisor: indica «Released under the ISC License»; en el grupo se dijo MIT y no se recoge. Mensaje 14501 de t.me/vceduca verificado: trata de imágenes SVG con formas e iconos. Las ventajas y recomendaciones son opinión expresada en el grupo y se presentan como tal; no se abrió el capítulo académico ni la documentación de Bootstrap enlazados allí. Titular corregido: es la recomendación de un miembro, no de «docentes».",
       "ilustracion": "Esquema de dos caminos desde una idea: a la izquierda una imagen generada (un bloque opaco, sin texto leíble ni modo oscuro); a la derecha una infografía HTML/SVG hecha de formas e iconos, con etiquetas de «texto legible por lector de pantalla», «modo claro/oscuro» y «exportable a PNG».",
       "ilustracion_alt": "Eskema batean, «Ideia» bat bi bidetan bifurkatzen da: batek bloke opaku marratu batean amaitzen da, «Sortutako irudia», eta besteak formez eta ikonoz egindako infografia batean, «HTML eta SVG», non bi abantaila ateratzen diren: «Pantaila-irakurlea» eta «Argia eta iluna»."
@@ -34,14 +40,20 @@
       "titular": "MITek txosten bat argitaratu du, AAren aurrean irakaskuntza eta ebaluazioa birplanteatzeko eskatzen duena",
       "entradilla": "MITek irakaskuntzan, ikaskuntzan eta ikerketa-prestakuntzan AAren erabilera aztertzeko sortutako batzordeak AAra egokitutako hezkuntza-prozesuak gomendatzen ditu, eta ebaluazioak eta arauak berrikustea.",
       "cuerpo": [
-        "ChatGPT-IA-edu taldean MITeko Ad Hoc Batzordearen txostena partekatu zen, irakaskuntzan, ikaskuntzan eta ikerketa-prestakuntzan AAren erabilerari buruzkoa. MITen orri instituzionalaren arabera, batzordeak 2026ko urtarrilean jaso zuen agindua, eta behin betiko txostena 2026ko abuztuaren 25ean zabaldu zen.",
+        "ChatGPT-IA-edu taldean MITeko Ad Hoc Batzordearen txostena partekatu zen, irakaskuntzan, ikaskuntzan eta ikerketa-prestakuntzan AAren erabilerari buruzkoa. [MITen orri instituzionalaren](https://orgchart.mit.edu/node/1587) arabera, batzordeak 2026ko urtarrilean jaso zuen agindua, eta behin betiko txostena 2026ko abuztuaren 25ean zabaldu zen.",
         "Testuak berehalako jarduerak eta epe luzeagokoak proposatzen ditu hiru ildotan: AAz jabetutako hezkuntza-prozesuak sortzea, hau da, ikasleek zer ikasi behar duten eta nola lortu berrikustea, ebaluazioetan eta arauetan aldaketekin; pertsonak, komunitatea eta campuseko aurrez aurreko esperientzia erdigunean mantentzea; eta etengabe hobetzeko prozesuak, taldeak eta tresnak izatea, AAren aldaketa-erritmoa kontuan hartuta. Erakundeak adierazten du, gainera, irakasleek orientabideak jasoko dituztela AAri buruzko arauak idazteko.",
         "Beste mailetako irakasleentzat, erreferentzia bat da unibertsitate handi batek gaia nola jorratzen duen ikusteko: ebaluazioa eta arauak berrikusiz, debekatzera mugatu gabe."
       ],
       "fuentes": [
-        {"titulo": "MIT: AAri buruzko Ad Hoc Batzordearen txostenaren oharra (ingelesez)", "url": "https://orgchart.mit.edu/node/1587"}
+        {
+          "titulo": "MIT: AAri buruzko Ad Hoc Batzordearen txostenaren oharra (ingelesez)",
+          "url": "https://orgchart.mit.edu/node/1587"
+        }
       ],
-      "mensaje": {"grupo": "chatgpt", "id": 53877},
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 53877
+      },
       "comprobado": "Página del MIT (orgchart.mit.edu/node/1587), abierta por el revisor: informe final del 25 de agosto de 2026, comité encargado en enero de 2026, las tres líneas de recomendación y las orientaciones al profesorado para sus normas. Mensaje 53877 de t.me/ChatGPTedu verificado. Se quitó la afirmación de que se recomienda fijar reglas por asignatura y departamento, que la página no recoge, y se ajustó el titular de la fuente. El PDF del informe no se leyó.",
       "ilustracion": null,
       "ilustracion_alt": "«Txosten» bat, hiru adar dituena, bakoitza bere ikonoarekin: markadun orri bat, «Ebaluazioa eta arauak»; bi pertsona, «Pertsonak eta campusa», eta zirkuluan doazen bi gezi, «Etengabeko hobekuntza»."
@@ -60,7 +72,10 @@
         "Hirugarren esku-hartze batek adierazten du, ikasleek AAdun munduan biziko badira, dagoeneko haren aurrean prestatu beharko liratekeela, eta «ingeniaritza agentiko etikoaren» ikuspegiarekiko interesa aurreratzen du, hezkuntzaren ikuspegitik. Esku-hartzeetako batek, gainera, dilema bat jasotzen du: AA edukiak sortzeko erabiltzea eta, aldi berean, ikasleen lanetan mugatzea."
       ],
       "fuentes": [],
-      "mensaje": {"grupo": "chatgpt", "id": 53855},
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 53855
+      },
       "comprobado": "Pieza de opinión: recoge posturas expresadas en el grupo (mensajes 53855, 53865, 53871, 53873, 53874), sin nombres y sin afirmaciones sobre productos, cifras ni normas. Mensaje 53855 de t.me/ChatGPTedu verificado. Titular y entradilla corregidos: no hubo división de posturas, sino matices sobre un mismo planteamiento. No se incluyen las comparaciones con experiencias de otros países, no contrastadas.",
       "ilustracion": null,
       "ilustracion_alt": "Ezkerrean, «Iturria»: irakasle batek informazioa transmititzen du hiru ikasleri gezien bidez; eskuinean, «Diseinatzailea eta gida»: beste irakasle batek, galdera-ikur batekin, etapez osatutako ibilbide bat diseinatzen du, «Iritzi kritikoa» idatzita duen bandera batera eramaten duena."
@@ -79,7 +94,10 @@
         "Adierazi zen, halaber, agentea karpeta jakin batera mugatu daitekeela gailu osora mugatu beharrean, eta iragarri zen AA erabiltzeko hiru moduei buruzko testu eguneratu bat egongo dela: weba, mahaigaineko aplikazioa eta kontsola."
       ],
       "fuentes": [],
-      "mensaje": {"grupo": "vce", "id": 14542},
+      "mensaje": {
+        "grupo": "vce",
+        "id": 14542
+      },
       "comprobado": "Consejos y experiencia relatados en el grupo (mensajes 14542, 14544-14546), sin afirmaciones técnicas sobre un producto concreto; contrastados con el texto del chat. Mensaje 14542 de t.me/vceduca verificado: es la pregunta sobre dar control a una consola. No se enlaza el artículo mencionado porque no se ha abierto.",
       "ilustracion": null,
       "ilustracion_alt": "Terminal-leiho batek, agenteak, gezi bat du ekipo baten barruko lan-karpeta batera, eta ikasleen datuen karpetarako bidea, giltzarrapo batekin, gurutze gorri batek mozten du."
@@ -98,9 +116,15 @@
         "Irakasleentzat, interesa dago prompt-a duten adibideak izatean, aurkezpen-bideo laburrak edo azalpen bat laguntzekoak ekoizteko."
       ],
       "fuentes": [
-        {"titulo": "MotionVideo (ingelesez)", "url": "https://motionvideo.xyz/en"}
+        {
+          "titulo": "MotionVideo (ingelesez)",
+          "url": "https://motionvideo.xyz/en"
+        }
       ],
-      "mensaje": {"grupo": "edumedia", "id": 11986},
+      "mensaje": {
+        "grupo": "edumedia",
+        "id": 11986
+      },
       "comprobado": "Página de motionvideo.xyz, abierta por el revisor: vídeos con su prompt, técnicas, skills para agentes, enlace a GitHub y categorías (Kinetic type, Charts, Diagrams, Particles, Music, entre otras). Mensaje 11986 de t.me/EduMediaIAG verificado. La prueba con Gemini es un relato del grupo y se presenta como tal.",
       "ilustracion": null,
       "ilustracion_alt": "Gezien bidez lotutako hiru koadro: idatzitako prompt bat, terminal-leiho itxurako skill bat eta erreproduzitzeko botoia duen bideo bat, azpian mugimendu-ibilbide gorri batekin."
@@ -111,7 +135,10 @@
       "texto": "Ethan Mollick-en liburu berriaren webguneak «AAdun kurtsore» bat dauka, irakurketa laguntzen duena eta desaktiba daitekeena. Taldean dibulgaziorako ideia gisa baloratu zen.",
       "url": "https://co-existence.ai/",
       "grupo": "vce",
-      "mensaje": {"grupo": "vce", "id": 14536}
+      "mensaje": {
+        "grupo": "vce",
+        "id": 14536
+      }
     }
   ],
   "descartado": [

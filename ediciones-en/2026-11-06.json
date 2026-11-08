@@ -60,7 +60,7 @@
       "titular": "Anthropic bans sustained, gratuitous abuse of its models in its usage policy",
       "entradilla": "The update, published on 8 October 2026, takes effect on 12 November and will be enforced only in extreme cases.",
       "cuerpo": [
-        "Anthropic has added to its usage policy a ban on sustained, unnecessary abusive or cruel behaviour towards its models. According to the announcement, it will be enforced only in extreme cases, involving repeated cruelty with no apparent purpose, and it does not cover everyday frustration, disagreement, dark creative themes, or testing and research on the models.",
+        "Anthropic has added to its usage policy a ban on sustained, unnecessary abusive or cruel behaviour towards its models. According to [the announcement](https://www.anthropic.com/news/2026-usage-policy-update), it will be enforced only in extreme cases, involving repeated cruelty with no apparent purpose, and it does not cover everyday frustration, disagreement, dark creative themes, or testing and research on the models.",
         "The announcement says that Claude’s existing ability to end rare conversations with persistently abusive users on Claude.ai and Claude Code will remain the main enforcement mechanism. The update includes other changes, such as a section on deceptive activity and a rewording of the elections section. In ChatGPT-IA-edu the measure was read as a principle of caution, with no admission by the company that its models suffer; that reading comes from the group’s comments, because the announcement does not develop the question. It matters to teachers who use these tools, because it is a change to the terms of use."
       ],
       "fuentes": [
@@ -89,7 +89,7 @@
         "The school musical bell, created by David Cordones, replaces the siren with melodies chosen by the teachers themselves. According to its author, it already runs daily at his school after a trial period.",
         "The setup is modest: a Raspberry Pi connected by cable to the network and to the school’s public address system. A Google Sheets spreadsheet with drop-down menus lets those in charge choose which song plays at each period or break. The songs are MP3 files that are dragged into a shared folder on the local network.",
         "The logic is handled by a Python script, which checks the calendar every minute and uses a local copy if the internet goes down, and a Google Apps Script bridge that updates the drop-down menus when a new MP3 appears. According to its author, AI helped to design the script and the background services, to write the bridge and to solve problems with permissions, audio and the network.",
-        "The author offers to share diagrams, code and a technical guide with anyone who wants to replicate it. For now the description comes from his message: there is no public project page and it has not been possible to check that it works."
+        "The author offers to share diagrams, code and a technical guide with anyone who wants to replicate it. For now the description comes from [his message](https://t.me/vceduca/14717): there is no public project page and it has not been possible to check that it works."
       ],
       "fuentes": [
         {
@@ -114,7 +114,7 @@
       "titular": "EDUmind MiClase, an open-source teacher’s notebook, keeps data on the device and syncs without its own server",
       "entradilla": "Its author explained in the group how it syncs two devices and which features he says he has added to assess under the LOMLOE.",
       "cuerpo": [
-        "EDUmind MiClase is an open-source teacher’s notebook, created by Luis Vilela Acuña, with assessment by criterion and instrument under the LOMLOE. Its repository states that students’ data never leaves the teacher’s device and that it works offline. It is licensed under AGPL-3.0 or EUPL-1.2. EDUmind is the same initiative behind [the Galician and Spanish dictation tools that the paper reported on 30 October](pieza:2026-10-29/dictados-voz-gallego).",
+        "[EDUmind MiClase](https://github.com/edumind-es/edumind-miclase) is an open-source teacher’s notebook, created by Luis Vilela Acuña, with assessment by criterion and instrument under the LOMLOE. Its repository states that students’ data never leaves the teacher’s device and that it works offline. It is licensed under AGPL-3.0 or EUPL-1.2. EDUmind is the same initiative behind [the Galician and Spanish dictation tools that the paper reported on 30 October](pieza:2026-10-29/dictados-voz-gallego).",
         "Faced with a question about how to sync with Firebase, its author explained another route: a direct link between devices on the same wifi network, with no servers or external services. The repository confirms that syncing can be done over WebRTC, with no intermediate server, or through encrypted envelopes that the server cannot open. The author adds that the password is compared before anything is sent, that newer data is not overwritten by older, and that photo and video evidence is requested separately so as not to exhaust memory; these details come from his message.",
         "According to the author, he has also added assessment of curricular adaptations and support measures, analysis of key competences and operational descriptors, and local analysis of Galician teaching plans in PDF; the repository does not detail this and it has not been checked. For those who code their own apps, it is an example of how to reduce data-protection risks."
       ],
@@ -142,7 +142,7 @@
       "entradilla": "Flow’s official help page sets out the cost of generating and editing clips with the model, which can already be chosen in the app, according to comments in the group.",
       "cuerpo": [
         "Following the unveiling of [Gemini Omni 1.2 Flash, which the paper reported on 6 November](pieza:2026-11-05/gemini-omni-1-2-flash), it was noted in EduMedia-IAG that Google Flow lets users choose Omni 1.1 or Omni 1.2 and that each generation uses credits.",
-        "According to Flow’s official help page, generating or editing videos of up to 10 seconds costs 1 credit per second at 360p and 3 at 720p, and is open to all users. Clips of up to 15 seconds are reserved for Google AI Plus, Pro and Ultra plans, at a higher cost for each second beyond 10. Without a subscription there are 50 daily credits that do not roll over, and with a subscription between 200 (Plus) and 25,000 (the $200 Ultra plan) a month. Google warns that costs may change."
+        "According to [Flow’s official help page](https://support.google.com/flow/answer/16526234), generating or editing videos of up to 10 seconds costs 1 credit per second at 360p and 3 at 720p, and is open to all users. Clips of up to 15 seconds are reserved for Google AI Plus, Pro and Ultra plans, at a higher cost for each second beyond 10. Without a subscription there are 50 daily credits that do not roll over, and with a subscription between 200 (Plus) and 25,000 (the $200 Ultra plan) a month. Google warns that costs may change."
       ],
       "fuentes": [
         {

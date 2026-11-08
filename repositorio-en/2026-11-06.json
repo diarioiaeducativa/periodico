@@ -9,7 +9,7 @@
       "grupo": "vce",
       "antetitulo": "The repository's week",
       "titular": "An auction of phrases, a guide to responsible vibe coding, chemistry, music and illustrated books: new in the repository",
-      "entradilla": "Since 27 October, the Vibe Coding Educativo resource repository has added sixteen resources: ten have already had their own article in the paper and six are presented here, two by Juanjo de Haro, one by Felip Sarroca, one by FiQuiPedia and two by Samuel Soriano.",
+      "entradilla": "Since 27 October, the Vibe Coding Educativo resource repository has added sixteen resources: ten have already had their own article in the paper and six are presented here, two by Juan José de Haro, one by Felip Sarroca, one by FiQuiPedia and two by Samuel Soriano.",
       "cuerpo": [
         "Presented here are six openly licensed resources the paper had not yet covered: a debate activity, a guide to publishing responsibly what is created with AI, two chemistry apps for formulation and stoichiometry, a set of music games and an illustrated-books workshop. They open in the browser and, except where noted for each one, require no account. Resources by the same person are grouped together."
       ],
@@ -17,27 +17,27 @@
         {
           "id": "subasta-de-frases",
           "titulo": "Subasta de frases",
-          "autoria": "Juanjo de Haro",
+          "autoria": "Juan José de Haro",
           "url": "https://jjdeharo.github.io/subasta_frases/",
           "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://jjdeharo.github.io/subasta_frases/",
           "licencia": "AGPL v3 (code) · CC BY-SA 4.0 (content)",
           "captura": "2026-11-06-subasta-de-frases.jpg",
           "captura_alt": "Home page of Subasta de frases, with the buttons “Crear una actividad” and “Unirse a una sesión” and three cards: Conocimiento, Valores y prioridades, Roles y conceptos.",
           "texto": [
-            "Juanjo de Haro has created a participatory activity in which the teacher prepares an auction and students join with a session code to bid on phrases. It has three modes: “Conocimiento”, where students bid on the statements they consider correct and defend their decision; “Valores y prioridades”, which shares a limited budget among the ideas that matter most to the group; and “Roles y conceptos”, where a correct match earns points and a wrong one loses them. The page states that it requires no registration and that the data is ephemeral. It is available in six languages, including Spanish, Catalan, Galician and Basque. AGPL v3 licence for the code and CC BY-SA 4.0 for the content."
+            "Juan José de Haro has created a participatory activity in which the teacher prepares an auction and students join with a session code to bid on phrases. It has three modes: “Conocimiento”, where students bid on the statements they consider correct and defend their decision; “Valores y prioridades”, which shares a limited budget among the ideas that matter most to the group; and “Roles y conceptos”, where a correct match earns points and a wrong one loses them. The page states that it requires no registration and that the data is ephemeral. It is available in six languages, including Spanish, Catalan, Galician and Basque. AGPL v3 licence for the code and CC BY-SA 4.0 for the content."
           ]
         },
         {
           "id": "vibe-coding-responsable",
           "titulo": "Vibe coding responsable",
-          "autoria": "Juanjo de Haro",
+          "autoria": "Juan José de Haro",
           "url": "https://vibe-coding-educativo.github.io/vibe-responsable",
           "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://vibe-coding-educativo.github.io/vibe-responsable",
           "licencia": "AGPL-3.0 (code); CC-BY-SA-4.0 (content)",
           "captura": "2026-11-06-vibe-coding-responsable.jpg",
           "captura_alt": "“Presentación” page of the guide Vibe coding responsable, with an infographic of ten recommendations on the right and the three steps to get started.",
           "texto": [
-            "Juanjo de Haro publishes a non-technical guide for teachers who share materials created with AI through vibe coding. According to its introduction, it grew out of materials that circulate without a licence or that send students' data to external services, and it proposes ten recommendations: correct content, data protection, accessibility, attribution, a declaration of AI use and an open licence, among others. It includes an infographic, an animation, downloadable instructions to give to the AI when creating, and a rubric (VCER) for evaluating a resource. It can be read on the web, there is a PDF version and it is available in five languages. According to its author, it is open to suggestions."
+            "Juan José de Haro publishes a non-technical guide for teachers who share materials created with AI through vibe coding. According to its introduction, it grew out of materials that circulate without a licence or that send students' data to external services, and it proposes ten recommendations: correct content, data protection, accessibility, attribution, a declaration of AI use and an open licence, among others. It includes an infographic, an animation, downloadable instructions to give to the AI when creating, and a rubric (VCER) for evaluating a resource. It can be read on the web, there is a PDF version and it is available in five languages. According to its author, it is open to suggestions."
           ]
         },
         {

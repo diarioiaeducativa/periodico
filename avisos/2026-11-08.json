@@ -1,0 +1,33 @@
+{
+  "fecha": "2026-11-08",
+  "avisos": {
+    "chatgpt": {
+      "saludo": "Buenos días. Domingo de reportaje y de memoria para agentes.",
+      "puntos": [
+        "El reportaje del domingo explica a qué edad puede el alumnado usar IA: las empresas, la ley y las administraciones educativas fijan edades distintas y a menudo se confunden",
+        "Anthropic ordena la memoria de un agente de IA en cuatro capas, con un repaso periódico que revisa lo guardado, y un docente del grupo ha adaptado su sistema a esa idea",
+        "Ese mismo artículo avisa de los límites: las conversaciones guardadas contienen información sensible y el repaso puede equivocarse, así que los cambios los aprueba una persona"
+      ]
+    },
+    "vce": {
+      "saludo": "Buenos días. El domingo trae reportaje y tres aplicaciones para el aula.",
+      "puntos": [
+        "Reportaje del domingo sobre la edad para usar IA en clase: qué fijan las empresas, la ley de protección de datos y cada comunidad autónoma, y cómo decidir con qué cuenta trabajar",
+        "Itinerancias, de José Luis Miralles Bono, reparte la jornada del profesorado que comparte destino entre varios centros valencianos y ofrece una hoja de Excel con el mismo cálculo",
+        "Holmio, de Dani García, plantea cada día un caso de detectives cuyo culpable es uno de los 118 elementos químicos, y Incluxat adapta al conservatorio las orientaciones de los informes psicopedagógicos"
+      ],
+      "url": "https://diarioiaeducativa.github.io/n/7-vce.html"
+    },
+    "edumedia": {
+      "saludo": "Buenos días. Para este domingo, un reportaje y un juego con diseño propio.",
+      "puntos": [
+        "El reportaje del domingo se pregunta desde qué edad puede el alumnado usar herramientas de IA, y compara lo que dicen las empresas, la ley y las administraciones educativas",
+        "Holmio convierte la tabla periódica en un juego diario de detectives, con modo claro y oscuro, archivo de casos anteriores y la opción de compartir el resultado como imagen"
+      ]
+    }
+  },
+  "instagram": "El número dominical dedica su reportaje a una duda frecuente en las aulas: a qué edad puede el alumnado usar inteligencia artificial. Explica que las condiciones de cada empresa, la ley de protección de datos y las administraciones educativas fijan edades distintas, y propone preguntarse también para qué se usa, con qué cuenta y quién maneja la herramienta. Se suman una propuesta de Anthropic para dar memoria a los agentes de IA y varias aplicaciones educativas abiertas, entre ellas un juego diario de química y una calculadora para repartir la jornada docente.",
+  "titulo": "Diario de IA Educativa · Núm. 7",
+  "fecha_texto": "Domingo, 8 de noviembre de 2026",
+  "url": "https://diarioiaeducativa.github.io/?n=7"
+}

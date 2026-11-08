@@ -12,7 +12,7 @@
       "titular": "An AI-made horror web series documents its workflow step by step",
       "entradilla": "“Never Sleep Again”, seven episodes released between 25 and 31 October, explains on its website how it combines Blender, Claude, a video generator and DaVinci Resolve.",
       "cuerpo": [
-        "“Never Sleep Again” is a seven-episode horror web series created by Raül Torres with AI tools under human direction. Six episodes run between 29 and 42 seconds, and the finale, released on Halloween night, lasts 2 minutes and 8 seconds. They were published daily from 25 to 31 October on YouTube, Instagram, LinkedIn, TikTok and X.",
+        "“[Never Sleep Again](https://raultorres-ia.github.io/apps/never_sleep_again/)” is a seven-episode horror web series created by Raül Torres with AI tools under human direction. Six episodes run between 29 and 42 seconds, and the finale, released on Halloween night, lasts 2 minutes and 8 seconds. They were published daily from 25 to 31 October on YouTube, Instagram, LinkedIn, TikTok and X.",
         "The most useful part for teachers interested in audiovisual work is that the series’ page details the method. The house where the story takes place is modelled in 3D with Blender, so every shot is filmed from a camera placed in a coherent space. For each camera movement, a grey reference clip with no visual style is generated and handed to a video generator (Seedance 2.5, in Dreamina) along with scene images and instructions. Claude, connected to Blender and Dreamina, helps prepare the references and write those instructions. Each result is checked against the plan and regenerated with tighter references if necessary.",
         "Editing and colour correction are done in DaVinci Resolve Studio, and Fusion is used to add, as separate layers, the phone’s video-player interface and a night-camera finish. The author told the group that he has completely changed the way he works with Claude’s connectors (MCP), which lets him handle Blender and DaVinci Resolve at a level he could not reach before."
       ],
@@ -39,7 +39,7 @@
       "titular": "An interactive lab guides Year 13 students through gravitational potential",
       "entradilla": "The app “Mapa de potencial gravitatorio”, shared by teacher Antonio González, includes a nine-step teaching guide and calculates the work done between two points.",
       "cuerpo": [
-        "“Mapa de potencial gravitatorio” (Gravitational Potential Map) is a Spanish-language web resource for Year 13 (2.º de Bachillerato) Physics. It lets users place up to four point masses and view the potential V (in J/kg) as a two-dimensional colour map, with optional equipotential lines, or as a three-dimensional relief with exaggerated depth so it can be seen clearly; the page makes clear that this is a graphical metaphor and not a real deformation of space.",
+        "[“Mapa de potencial gravitatorio”](https://onio72.github.io/iesmajuelo/bach/fi2/t01/mapa_potencial/) (Gravitational Potential Map) is a Spanish-language web resource for Year 13 (2.º de Bachillerato) Physics. It lets users place up to four point masses and view the potential V (in J/kg) as a two-dimensional colour map, with optional equipotential lines, or as a three-dimensional relief with exaggerated depth so it can be seen clearly; the page makes clear that this is a graphical metaphor and not a real deformation of space.",
         "It also includes an A → B experiment: two points and a test mass are chosen, and the app shows the potential at each point, the potential energies, their change and the work done by the gravitational force. Users can reverse the route and try another path to check that the work does not depend on the path taken.",
         "Its author explained in the group that this time he added a teaching guide so that users are guided along rather than having to discover what to do, and that he finds it very useful for explaining complex concepts visually. The page gives no authorship or licence."
       ],
@@ -66,7 +66,7 @@
       "titular": "An interactive activity teaches how to type the symbols on the Spanish keyboard",
       "entradilla": "The exercise, shared by Toni Magraner, trains symbols, accents and shortcuts with a test mode and a training mode.",
       "cuerpo": [
-        "Toni Magraner has shared a web activity for learning to type on the Spanish keyboard. It asks students to type symbols such as @, #, €, ñ, ç and accented vowels, as well as numbers and shortcuts such as copy, cut, paste and undo.",
+        "Toni Magraner has shared [a web activity for learning to type on the Spanish keyboard](https://amagraneronline.github.io/mrd-26/ud01/actividades/reto2_simbolos_teclado_interactivo.html). It asks students to type symbols such as @, #, €, ñ, ç and accented vowels, as well as numbers and shortcuts such as copy, cut, paste and undo.",
         "It offers a “Ponte a prueba” (Test yourself) mode, with a hint if students are unsure (for example, the key combination for the at sign), and a training mode with an on-screen virtual keyboard. At the end it shows a report with accuracy, number of keys, errors, average time and the symbols worth reviewing, and it comes with an infographic of Spanish keyboard symbols. The content is listed under a CC BY-SA 4.0 licence and the code under GNU AGPL v3."
       ],
       "fuentes": [

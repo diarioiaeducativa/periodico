@@ -9,7 +9,7 @@
       "grupo": "vce",
       "antetitulo": "La semana del repositorio",
       "titular": "Una subasta de frases, una guía de vibe coding responsable, química, música y libros ilustrados, nuevos en el repositorio",
-      "entradilla": "Desde el 27 de octubre, el Repositorio de recursos de Vibe Coding Educativo suma dieciséis recursos: diez ya tuvieron su artículo en el diario y seis se presentan aquí, dos de Juanjo de Haro, uno de Felip Sarroca, uno de FiQuiPedia y dos de Samuel Soriano.",
+      "entradilla": "Desde el 27 de octubre, el Repositorio de recursos de Vibe Coding Educativo suma dieciséis recursos: diez ya tuvieron su artículo en el diario y seis se presentan aquí, dos de Juan José de Haro, uno de Felip Sarroca, uno de FiQuiPedia y dos de Samuel Soriano.",
       "cuerpo": [
         "Se presentan aquí seis recursos de licencia abierta que el diario aún no había contado: una dinámica de debate, una guía para publicar con responsabilidad lo que se crea con IA, dos aplicaciones de formulación y estequiometría en química, un conjunto de juegos de música y un taller de libros ilustrados. Se abren en el navegador y, salvo lo que se indica en cada uno, sin cuenta. Los recursos de una misma persona van juntos."
       ],
@@ -17,27 +17,27 @@
         {
           "id": "subasta-de-frases",
           "titulo": "Subasta de frases",
-          "autoria": "Juanjo de Haro",
+          "autoria": "Juan José de Haro",
           "url": "https://jjdeharo.github.io/subasta_frases/",
           "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://jjdeharo.github.io/subasta_frases/",
           "licencia": "AGPL v3 (código) · CC BY-SA 4.0 (contenidos)",
           "captura": "2026-11-06-subasta-de-frases.jpg",
           "captura_alt": "Página de inicio de Subasta de frases, con los botones «Crear una actividad» y «Unirse a una sesión» y tres tarjetas: Conocimiento, Valores y prioridades, Roles y conceptos.",
           "texto": [
-            "Juanjo de Haro ha creado una dinámica participativa en la que el profesorado prepara una subasta y el alumnado se une con un código de sesión para pujar por frases. Tiene tres modos: «Conocimiento», donde se puja por las afirmaciones que se consideran correctas y se defiende la decisión; «Valores y prioridades», que reparte un presupuesto limitado entre las ideas que más importan al grupo; y «Roles y conceptos», donde acertar la correspondencia suma puntos y equivocarse resta. La página indica que no requiere registro y que los datos son efímeros. Se ofrece en seis idiomas, entre ellos castellano, catalán, gallego y euskera. Licencia AGPL v3 para el código y CC BY-SA 4.0 para los contenidos."
+            "Juan José de Haro ha creado una dinámica participativa en la que el profesorado prepara una subasta y el alumnado se une con un código de sesión para pujar por frases. Tiene tres modos: «Conocimiento», donde se puja por las afirmaciones que se consideran correctas y se defiende la decisión; «Valores y prioridades», que reparte un presupuesto limitado entre las ideas que más importan al grupo; y «Roles y conceptos», donde acertar la correspondencia suma puntos y equivocarse resta. La página indica que no requiere registro y que los datos son efímeros. Se ofrece en seis idiomas, entre ellos castellano, catalán, gallego y euskera. Licencia AGPL v3 para el código y CC BY-SA 4.0 para los contenidos."
           ]
         },
         {
           "id": "vibe-coding-responsable",
           "titulo": "Vibe coding responsable",
-          "autoria": "Juanjo de Haro",
+          "autoria": "Juan José de Haro",
           "url": "https://vibe-coding-educativo.github.io/vibe-responsable",
           "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://vibe-coding-educativo.github.io/vibe-responsable",
           "licencia": "AGPL-3.0 (código); CC-BY-SA-4.0 (contenidos)",
           "captura": "2026-11-06-vibe-coding-responsable.jpg",
           "captura_alt": "Página «Presentación» de la guía Vibe coding responsable, con una infografía de diez recomendaciones a la derecha y los tres pasos para empezar.",
           "texto": [
-            "Juanjo de Haro publica una guía no técnica para docentes que comparten materiales creados con IA mediante vibe coding. Según su presentación, nace de materiales que circulan sin licencia o que envían datos del alumnado a servicios externos, y propone diez recomendaciones: contenido correcto, protección de datos, accesibilidad, atribución, declaración del uso de IA y licencia libre, entre otras. Incluye una infografía, una animación, instrucciones descargables para dárselas a la IA al crear y una rúbrica (VCER) para evaluar un recurso. Se lee en la web, hay versión en PDF y está en cinco idiomas. Según su autor, está abierta a sugerencias."
+            "Juan José de Haro publica una guía no técnica para docentes que comparten materiales creados con IA mediante vibe coding. Según su presentación, nace de materiales que circulan sin licencia o que envían datos del alumnado a servicios externos, y propone diez recomendaciones: contenido correcto, protección de datos, accesibilidad, atribución, declaración del uso de IA y licencia libre, entre otras. Incluye una infografía, una animación, instrucciones descargables para dárselas a la IA al crear y una rúbrica (VCER) para evaluar un recurso. Se lee en la web, hay versión en PDF y está en cinco idiomas. Según su autor, está abierta a sugerencias."
           ]
         },
         {
@@ -145,7 +145,7 @@
           "fecha": "2026-11-04",
           "id": "rompecabezas-tecnica-jigsaw",
           "titulo": "Rompecabezas – Técnica Jigsaw",
-          "autoria": "Juanjo de Haro",
+          "autoria": "Juan José de Haro",
           "url": "https://jigsawcoop.github.io/"
         },
         {

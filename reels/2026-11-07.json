@@ -1,0 +1,75 @@
+{
+  "fecha": "2026-11-07",
+  "noticias": [
+    {
+      "fecha": "2026-11-01",
+      "id": "detectores-caza-brujas",
+      "golpe": {"es": "Detectores de IA", "ca": "Detectors d'IA", "gl": "Detectores de IA", "eu": "AA detektagailuak", "en": "AI detectors"},
+      "titular": {"es": "Los detectores de IA alimentan una «caza de brujas»", "ca": "Els detectors d'IA alimenten una «cacera de bruixes»", "gl": "Os detectores de IA alimentan unha «caza de bruxas»", "eu": "AA detektagailuek «sorgin-ehiza» elikatzen dute", "en": "AI detectors fuel a “witch hunt”"},
+      "dato": {"es": "Dos novelas antiguas, con rastros de IA en una prueba y humanas en otra", "ca": "Dues novel·les antigues, amb rastres d'IA en una prova i humanes en una altra", "gl": "Dúas novelas antigas, con rastros de IA nunha proba e humanas noutra", "eu": "Bi eleberri zahar: batean AAren arrastoak, bestean giza-testu", "en": "Two old novels showed AI traces in one test and read as human in another"}
+    },
+    {
+      "fecha": "2026-11-02",
+      "id": "infografias-svg-html",
+      "golpe": {"es": "Infografías en SVG", "ca": "Infografies en SVG", "gl": "Infografías en SVG", "eu": "SVG infografiak", "en": "SVG infographics"},
+      "titular": {"es": "Un docente recomienda infografías en HTML y SVG con IA", "ca": "Un docent recomana infografies en HTML i SVG amb IA", "gl": "Un docente recomenda infografías en HTML e SVG con IA", "eu": "Irakasle batek HTML eta SVG infografiak gomendatzen ditu", "en": "A teacher recommends HTML and SVG infographics from AI"},
+      "dato": {"es": "Un lector de pantalla lee su texto y se adaptan al modo claro y oscuro", "ca": "Un lector de pantalla en llegeix el text i s'adapten al mode clar i fosc", "gl": "Un lector de pantalla le o seu texto e adáptanse ao modo claro e escuro", "eu": "Pantaila-irakurgailuak testua irakur dezake; modu argian eta ilunean egokitzen dira", "en": "Screen readers can read their text, and they adapt to light and dark modes"}
+    },
+    {
+      "fecha": "2026-11-03",
+      "id": "google-ia-cuentas-escolares",
+      "golpe": {"es": "Google", "ca": "Google", "gl": "Google", "eu": "Google", "en": "Google"},
+      "titular": {"es": "IA y buscador, apagados por defecto en cuentas escolares", "ca": "IA i cercador, apagats per defecte als comptes escolars", "gl": "IA e buscador, apagados por defecto nas contas escolares", "eu": "AA eta bilatzailea, ezgaituta ikastetxeko kontuetan", "en": "AI and search switched off by default in school accounts"},
+      "dato": {"es": "Cada producto puede activarse por separado cuando el centro lo decida", "ca": "Cada producte es pot activar per separat quan el centre ho decideixi", "gl": "Cada produto pode activarse por separado cando o centro o decida", "eu": "Produktu bakoitza bereizita aktiba daiteke ikastetxeak erabakitzen duenean", "en": "Each product can be switched on separately once the school decides"}
+    },
+    {
+      "fecha": "2026-11-04",
+      "id": "tongjiang-lab-3d",
+      "golpe": {"es": "Ciencia en 3D", "ca": "Ciència en 3D", "gl": "Ciencia en 3D", "eu": "Zientzia 3D formatuan", "en": "Science in 3D"},
+      "titular": {"es": "54 lecciones de ciencias en 3D, abiertas y sin conexión", "ca": "54 lliçons de ciències en 3D, obertes i sense connexió", "gl": "54 leccións de ciencias en 3D, abertas e sen conexión", "eu": "54 zientzia-ikasgai 3D, irekiak eta konexiorik gabe", "en": "54 open 3D science lessons that work offline"},
+      "dato": {"es": "Física, química, biología y geografía, en chino y con licencia CC BY-NC 4.0", "ca": "Física, química, biologia i geografia, en xinès i amb llicència CC BY-NC 4.0", "gl": "Física, química, bioloxía e xeografía, en chinés e con licenza CC BY-NC 4.0", "eu": "Fisika, kimika, biologia eta geografia, txineraz eta CC BY-NC 4.0 lizentziarekin", "en": "Physics, chemistry, biology and geography, in Chinese, under CC BY-NC 4.0"}
+    },
+    {
+      "fecha": "2026-11-05",
+      "id": "gemini-google-sites",
+      "golpe": {"es": "Gemini y Sites", "ca": "Gemini i Sites", "gl": "Gemini e Sites", "eu": "Gemini eta Sites", "en": "Gemini and Sites"},
+      "titular": {"es": "Gemini exporta sus apps a Google Sites con un clic", "ca": "Gemini exporta les apps a Google Sites amb un clic", "gl": "Gemini exporta as súas apps a Google Sites cun clic", "eu": "Gemini-ren aplikazioak Google Sitesera klik batean", "en": "Gemini exports its apps to Google Sites in one click"},
+      "dato": {"es": "Se abre como borrador privado, editable y compartible como cualquier sitio", "ca": "S'obre com a esborrany privat, editable i compartible com qualsevol lloc", "gl": "Ábrese como borrador privado, editable e compartible como calquera sitio", "eu": "Zirriborro pribatu gisa irekitzen da, editagarria eta partekatzeko modukoa", "en": "It opens as a private draft, editable and shareable like any other site"}
+    },
+    {
+      "fecha": "2026-11-05",
+      "id": "gemini-omni-1-2-flash",
+      "golpe": {"es": "Gemini Omni", "ca": "Gemini Omni", "gl": "Gemini Omni", "eu": "Gemini Omni", "en": "Gemini Omni"},
+      "titular": {"es": "Gemini Omni 1.2 Flash crea y edita vídeos de hasta 15 s", "ca": "Gemini Omni 1.2 Flash crea i edita vídeos de fins a 15 s", "gl": "Gemini Omni 1.2 Flash crea e edita vídeos de ata 15 s", "eu": "Gemini Omni 1.2 Flash-ek 15 s-ko bideoak sortzen ditu", "en": "Gemini Omni 1.2 Flash creates and edits videos up to 15 s"},
+      "dato": {"es": "Clips refinables turno a turno; 0,07 $/s en 720p, con marca SynthID", "ca": "Clips que es refinen torn a torn; 0,07 $/s en 720p, amb marca SynthID", "gl": "Clips refinables turno a turno; 0,07 $/s en 720p, con marca SynthID", "eu": "Klipak txanda batean beste batera fintzen dira; 0,07 $/s 720p-n, SynthID marka", "en": "Clips refined turn by turn; $0.07 a second at 720p, with SynthID mark"}
+    },
+    {
+      "fecha": "2026-11-06",
+      "id": "timbre-musical-escolar",
+      "golpe": {"es": "Timbre musical", "ca": "Timbre musical", "gl": "Timbre musical", "eu": "Txirrin musikala", "en": "Musical bell"},
+      "titular": {"es": "Un timbre musical escolar, gestionado con Google Sheets", "ca": "Un timbre musical escolar, gestionat amb Google Sheets", "gl": "Un timbre musical escolar, xestionado con Google Sheets", "eu": "Eskola-txirrin musikala, Google Sheets bidez kudeatua", "en": "A musical school bell managed from Google Sheets"},
+      "dato": {"es": "Una Raspberry Pi reproduce los MP3 que el claustro elige en la hoja", "ca": "Una Raspberry Pi reprodueix els MP3 que el claustre tria al full de càlcul", "gl": "Unha Raspberry Pi reproduce os MP3 que o claustro elixe na folla", "eu": "Raspberry Pi batek klaustroak kalkulu-orrian aukeratutako MP3ak jotzen ditu", "en": "A Raspberry Pi plays the MP3s that staff pick in the spreadsheet"}
+    },
+    {
+      "fecha": "2026-11-07",
+      "id": "holmio-juego-quimica",
+      "golpe": {"es": "Holmio", "ca": "Holmio", "gl": "Holmio", "eu": "Holmio", "en": "Holmio"},
+      "titular": {"es": "La tabla periódica, convertida en juego de detectives", "ca": "La taula periòdica, convertida en joc de detectius", "gl": "A táboa periódica, convertida en xogo de detectives", "eu": "Taula periodikoa detektibe-joko bihurtu da", "en": "The periodic table, turned into a detective game"},
+      "dato": {"es": "Un caso al día con 118 sospechosos y seis acusaciones para acertar", "ca": "Un cas al dia amb 118 sospitosos i sis acusacions per encertar", "gl": "Un caso ao día con 118 sospeitosos e seis acusacións para acertar", "eu": "Egunero kasu bat: 118 susmagarri eta sei salaketa asmatzeko", "en": "A daily case with 118 suspects and six accusations to get it right"}
+    }
+  ],
+  "reportaje": {
+    "golpe": {"es": "Edad e IA", "ca": "Edat i IA", "gl": "Idade e IA", "eu": "Adina eta AA", "en": "Age and AI"},
+    "titular": {"es": "Tres reglas distintas fijan la edad para usar IA en clase", "ca": "Tres regles diferents fixen l'edat per usar IA a classe", "gl": "Tres regras distintas fixan a idade para usar IA na aula", "eu": "Hiru arau desberdinek finkatzen dute AA erabiltzeko adina", "en": "Three different rules set the age for using AI in class"},
+    "dato": {"es": "Empresas, ley y administraciones: importan la cuenta, la finalidad y quién la maneja", "ca": "Empreses, llei i administracions: importen el compte, la finalitat i qui l'usa", "gl": "Empresas, lei e administracións: importan a conta, a finalidade e quen a maneja", "eu": "Kontuak, helburuak eta nork erabiltzen duenak axola dute, ez adinak bakarrik", "en": "Companies, law, authorities: account, purpose and who operates it all matter"}
+  },
+  "descripcion": {
+    "es": "La semana del 1 al 7 de noviembre en ocho piezas, de los detectores de IA a un juego de química, y al final el reportaje sobre la edad para usar IA en clase.",
+    "ca": "La setmana de l'1 al 7 de novembre en vuit peces, dels detectors d'IA a un joc de química, i al final el reportatge sobre l'edat per usar IA a classe.",
+    "gl": "A semana do 1 ao 7 de novembro en oito pezas, dos detectores de IA a un xogo de química, e ao final a reportaxe sobre a idade para usar IA na aula.",
+    "eu": "Azaroaren 1etik 7ra bitarteko astea zortzi pietan, AA detektagailuetatik kimika-joko batera, eta amaieran ikasgelan AA erabiltzeko adinari buruzko erreportajea.",
+    "en": "The week of 1 to 7 November in eight pieces, from AI detectors to a chemistry game, and finally the report on the age for using AI in class."
+  },
+  "redes": "El dominical del Diario de IA Educativa: de los detectores de IA a la IA apagada en las cuentas escolares de Google, y un reportaje sobre la edad para usar IA en clase.",
+  "instagram": "La semana en ocho piezas: el debate sobre los detectores de IA y la «caza de brujas», Google desactivando por defecto la IA en las cuentas escolares, Gemini exportando aplicaciones a Google Sites, un timbre escolar musical con Raspberry Pi y un juego diario de química. Además, el reportaje del domingo explica por qué la edad para usar IA en clase depende de tres reglas distintas: las de las empresas, la ley y las administraciones educativas. Un resumen para quien no conoce los grupos."
+}

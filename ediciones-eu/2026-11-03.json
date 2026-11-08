@@ -12,10 +12,10 @@
       "titular": "Irakasleek eztabaidatzen dute Googlek ikastetxeetako kontuetan AA eta bilatzailea lehenespenez desaktibatzeko egindako iragarpena",
       "entradilla": "Googlek iragarri du Gemini eta AAdun bilaketa desaktibatuta egongo direla lehen eta bigarren hezkuntzako ikasleen kontuetan, administratzaileek aktibatu arte. Taldeetan, albisteak eztabaida ireki zuen ikastetxe batean nork erabakitzen duen AAren erabilera.",
       "cuerpo": [
-        "Engadget-ek, Googleko hezkuntza-presidenteordea eta zuzendari nagusia den Chris Phillips aipatuz, jakinarazi duenez, konpainiak azaroaren 3an iragarri zuen Gemini, Gemini Notebook, Gemini Classroomen eta Google Search lehen eta bigarren hezkuntzako (K-12) ikastetxeetako kontuetan desaktibatuta egongo direla, administrazio-langileek esplizituki aktibatu arte. Googlek hedabide horri argitu zion produktu bakoitza bereizita gaitu daitekeela eta ez dela dena edo ezer ez aukera bat. Kontrol berriak hurrengo hilabeteetan zabalduko dira.",
+        "[Engadget](https://www.engadget.com/2305432/google-says-that-students-in-schools-that-ban-ai-wont-have-access-to-search/)-ek, Googleko hezkuntza-presidenteordea eta zuzendari nagusia den Chris Phillips aipatuz, jakinarazi duenez, konpainiak azaroaren 3an iragarri zuen Gemini, Gemini Notebook, Gemini Classroomen eta Google Search lehen eta bigarren hezkuntzako (K-12) ikastetxeetako kontuetan desaktibatuta egongo direla, administrazio-langileek esplizituki aktibatu arte. Googlek hedabide horri argitu zion produktu bakoitza bereizita gaitu daitekeela eta ez dela dena edo ezer ez aukera bat. Kontrol berriak hurrengo hilabeteetan zabalduko dira.",
         "Albistea taldera sare sozialetako bertsio alarmista gisa iritsi zen lehenik («AA debekatzen duten ikastetxeek Google Search galduko dute»). Komentatu zutenek egiaztatzeko eskatu zuten, eta gero Engadget-en argibidea partekatu zen. Hedabide horren arabera, AA blokeatzen duen ikastetxe bateko ikasleek ez dute Searchrako sarbiderik izango, eta beren ikastetxearen mezu bat ikusiko dute hala adierazten duena.",
         "Eztabaidan hainbat jarrera azaldu ziren. Batek ondo ikusten du AA ikastetxearen erabakia izatea eta, ikastetxeak hala erabakitzen badu, erabat itzaltzea, beste AA txat batzuk ez onartzearekin koherentea delako. Beste batek beldur da informaziorako sarbidea AA onartzearen mende jarriko dela, eta gogorarazten du sarbide hori eskubidea dela. Hirugarren batek digitalizazio-koordinatzaileak Googleren eskaintzaren eta adingabeekiko zuhurtziaren artean kokatzen ditu, eta Kataluniako Hezkuntza Departamentuaren orientabide berrien zain dago. Irakasleek ikasleek idazten dutena gainbegira dezaten ere eskatu zen, eta lehenago irakasleak eta familiak prestatzea defendatu zen, presarik gabe.",
-        "Hezkuntza Departamentuaren AAren erabilerari buruzko orientabideak 2026ko irailean argitaratu ziren, eta egunkariak [Liburutegia atalean aztertu zituen](pieza:2026-11-02/cat-orientacions-ia), nahiz eta XTECeko proiektuaren orriak oraindik «garapenean» aurkezten dituen."
+        "Hezkuntza Departamentuaren AAren erabilerari buruzko orientabideak 2026ko irailean argitaratu ziren, eta egunkariak [Liburutegia atalean aztertu zituen](pieza:2026-11-02/cat-orientacions-ia), nahiz eta [XTEC](https://projectes.xtec.cat/ia/orientacions-per-lus-de-la-ia-en-educacio/)eko proiektuaren orriak oraindik «garapenean» aurkezten dituen."
       ],
       "fuentes": [
         {
@@ -45,7 +45,7 @@
       "titular": "Jarduera gamifikatu batek Batxilergoko 2. mailako eremu grabitatorioa bederatzi misio orbitaletara eramaten du",
       "entradilla": "El profe de la bata-ren «Misiones orbitales» jarduerak ikasleei astronauta bat sortzea eta bederatzi misio ebaztea proposatzen die, simulagailu interaktiboekin. Praktika-bertsioak nabigatzailean funtzionatzen du, konturik gabe.",
       "cuerpo": [
-        "«Misiones orbitales» Batxilergoko 2. mailako Fisikako jarduera da, eremu grabitatorioari buruzkoa, El profe de la batak sortua. Ikasleek beren astronauta sortzen dute eta bederatzi misio osatzen dituzte; bakoitzerako simulagailu interaktiboak kontsultatzen dituzte, eta haietatik lortzen dituzte abiadura orbitalak eta ihes-abiadurak kalkulatzeko, Keplerren legeak aplikatzeko, energia orbitala aurkitzeko edo izar baten masa ondorioztatzeko datuak.",
+        "«[Misiones orbitales](https://elprofedelabata.github.io/misiones-orbitales/)» Batxilergoko 2. mailako Fisikako jarduera da, eremu grabitatorioari buruzkoa, El profe de la batak sortua. Ikasleek beren astronauta sortzen dute eta bederatzi misio osatzen dituzte; bakoitzerako simulagailu interaktiboak kontsultatzen dituzte, eta haietatik lortzen dituzte abiadura orbitalak eta ihes-abiadurak kalkulatzeko, Keplerren legeak aplikatzeko, energia orbitala aurkitzeko edo izar baten masa ondorioztatzeko datuak.",
         "Bi bertsio daude. Praktikakoak zuzenean nabigatzailean funtzionatzen du, konturik gabe eta saiakera mugagabeekin, nahiz eta ez dagoen kalifikatzeko pentsatuta. Ikasgelakoa Google Apps Script bidez instalatzen da, Google Workspace kontuak erabiltzen ditu, misio bakoitzeko saiakera bakarra onartzen du, aurrerapena irakasleen kalkulu-orri batean gordetzen du eta proiektatzeko aginte-panel bat dauka. Puntuazioa izarretan adierazten da, egindako errorearen arabera: % 5etik beherakoa bada, guztiak lortzen dira.",
         "Proiektua CC BY-NC-SA 4.0 lizentziarekin banatzen da."
       ],
@@ -99,13 +99,19 @@
       "texto": "EduMedia-IAG taldean MotionVideoren skill-ak nola erabili azaldu zen: skill-a AAn instalatzen da, deitu egiten zaio eta sortu nahi den bideoaren datuekin ematen zaio jarraibidea. Webeko adibide-bideo bakoitzak bere prompt-a dauka, [azaroaren 3ko piezak](pieza:2026-11-02/motionvideo-skills) kontatu zuen bezala.",
       "url": "https://motionvideo.xyz/en",
       "grupo": "edumedia",
-      "mensaje": {"grupo": "edumedia", "id": 12040}
+      "mensaje": {
+        "grupo": "edumedia",
+        "id": 12040
+      }
     },
     {
       "texto": "Estatu Batuetan, Los Angelesko eskola-barrutiak [irailean blokeatu zuen](https://laist.com/brief/news/education/lausd-students-barred-artificial-intelligence-tools) ikasleek AA sortzailea beren gailuetan erabiltzeko aukera, eta FCCk [E-Rate laguntzak berrikusten ditu](https://www.chalkbeat.org/2026/09/23/e-rate-school-internet-subsidies-threatened-in-screen-time-backlash/), eskolen konexiorako, pantaila-denborari buruzko polemikaren erdian. Taldean [Googleren iragarpenaren](pieza:2026-11-03/google-ia-cuentas-escolares) testuinguru gisa partekatu ziren.",
       "url": null,
       "grupo": "chatgpt",
-      "mensaje": {"grupo": "chatgpt", "id": 53963}
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 53963
+      }
     }
   ],
   "descartado": [

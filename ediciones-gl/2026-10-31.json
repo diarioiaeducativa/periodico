@@ -12,7 +12,7 @@
       "titular": "Unha serie web de terror feita con IA documenta paso a paso o seu fluxo de traballo",
       "entradilla": "«Never Sleep Again», sete episodios publicados entre o 25 e o 31 de outubro, explica na súa web como combina Blender, Claude, un xerador de vídeo e DaVinci Resolve.",
       "cuerpo": [
-        "«Never Sleep Again» é unha serie web de terror de sete episodios, creada por Raül Torres con ferramentas de IA baixo dirección humana. Seis episodios duran entre 29 e 42 segundos e o final, estreado na noite de Halloween, 2 minutos e 8 segundos. Publicáronse cada día do 25 ao 31 de outubro en YouTube, Instagram, LinkedIn, TikTok e X.",
+        "«[Never Sleep Again](https://raultorres-ia.github.io/apps/never_sleep_again/)» é unha serie web de terror de sete episodios, creada por Raül Torres con ferramentas de IA baixo dirección humana. Seis episodios duran entre 29 e 42 segundos e o final, estreado na noite de Halloween, 2 minutos e 8 segundos. Publicáronse cada día do 25 ao 31 de outubro en YouTube, Instagram, LinkedIn, TikTok e X.",
         "O máis útil para o profesorado interesado no audiovisual é que a páxina da serie detalla o método. A casa onde transcorre a historia modélase en 3D con Blender, de modo que todos os planos se rodan desde unha cámara colocada nun espazo coherente. De cada movemento de cámara xérase un clip de referencia gris, sen aspecto visual, que se lle entrega a un xerador de vídeo (Seedance 2.5, en Dreamina) xunto con imaxes de escena e instrucións. Claude, conectado a Blender e a Dreamina, axuda a preparar as referencias e a redactar esas instrucións. Cada resultado revísase fronte ao plan e volve xerarse con referencias máis axustadas se fai falta.",
         "A montaxe e a corrección de cor fanse en DaVinci Resolve Studio, e con Fusion engádense, como capas independentes, a interface do reprodutor do móbil e un acabado de cámara nocturna. O autor comentou no grupo que cambiou por completo a súa maneira de traballar cos conectores (MCP) de Claude, o que lle permite manexar Blender e DaVinci Resolve a un nivel que antes non alcanzaba."
       ],
@@ -39,7 +39,7 @@
       "titular": "Un laboratorio interactivo guía o alumnado de 2.º de Bacharelato polo potencial gravitatorio",
       "entradilla": "A aplicación «Mapa de potencial gravitatorio», compartida polo profesor Antonio González, inclúe unha guía didáctica de nove pasos e calcula o traballo entre dous puntos.",
       "cuerpo": [
-        "«Mapa de potencial gravitatorio» é un recurso web en castelán para Física de 2.º de Bacharelato. Permite colocar ata catro masas puntuais e observar o potencial V (en J/kg) como mapa de cor en dúas dimensións, con curvas equipotenciais opcionais, ou como relevo tridimensional coa profundidade esaxerada para que se aprecie; a páxina aclara que é unha metáfora gráfica e non unha deformación real do espazo.",
+        "«[Mapa de potencial gravitatorio](https://onio72.github.io/iesmajuelo/bach/fi2/t01/mapa_potencial/)» é un recurso web en castelán para Física de 2.º de Bacharelato. Permite colocar ata catro masas puntuais e observar o potencial V (en J/kg) como mapa de cor en dúas dimensións, con curvas equipotenciais opcionais, ou como relevo tridimensional coa profundidade esaxerada para que se aprecie; a páxina aclara que é unha metáfora gráfica e non unha deformación real do espazo.",
         "Inclúe ademais un experimento A → B: escóllense dous puntos e unha masa de proba, e a aplicación mostra o potencial en cada punto, as enerxías potenciais, a súa variación e o traballo da forza gravitatoria. Permite inverter o percorrido e probar outra traxectoria para comprobar que o traballo non depende do camiño.",
         "O seu autor explicou no grupo que esta vez engadiu unha guía didáctica para que quen a use vaia sendo guiado en lugar de descubrir que facer, e que lle resulta moi útil para explicar visualmente conceptos complexos. A páxina non indica autoría nin licenza."
       ],
@@ -66,7 +66,7 @@
       "titular": "Unha actividade interactiva ensina a escribir os símbolos do teclado español",
       "entradilla": "A práctica, compartida por Toni Magraner, adestra símbolos, acentos e atallos cun modo de proba e outro de adestramento.",
       "cuerpo": [
-        "Toni Magraner compartiu unha actividade web para aprender a escribir co teclado español. Pide teclear símbolos como @, #, €, a ñ, a ç e as vogais acentuadas, ademais de números e atallos como copiar, cortar, pegar e desfacer.",
+        "Toni Magraner compartiu [unha actividade web para aprender a escribir co teclado español](https://amagraneronline.github.io/mrd-26/ud01/actividades/reto2_simbolos_teclado_interactivo.html). Pide teclear símbolos como @, #, €, a ñ, a ç e as vogais acentuadas, ademais de números e atallos como copiar, cortar, pegar e desfacer.",
         "Ofrece un modo «Ponte a proba», con pista se hai dúbida (por exemplo, a combinación para o arroba), e un modo de adestramento con teclado virtual en pantalla. Ao terminar mostra un informe con precisión, número de teclas, erros, tempo medio e os símbolos que convén repasar, e vai acompañada dunha infografía cos símbolos do teclado español. O contido figura con licenza CC BY-SA 4.0 e o código con GNU AGPL v3."
       ],
       "fuentes": [

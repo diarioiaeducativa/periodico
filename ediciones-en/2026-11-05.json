@@ -12,14 +12,20 @@
       "titular": "Gemini lets users export their interactive apps to a Google Sites site with one click",
       "entradilla": "Google has made it possible to publish an interactive app created in the Gemini app as a Google Sites site. The group discussed how useful it really is for teachers.",
       "cuerpo": [
-        "According to the official Google Workspace Updates blog, on 19 October 2026, anyone who has created an interactive app in the Gemini app can export it to Google Sites with one click. The app opens in a private draft site, remains interactive and can be edited, published and shared like any other site.",
+        "According to the official [Google Workspace Updates](https://workspaceupdates.googleblog.com/2026/10/publish-interactive-apps-from-gemini-app-to-Google-Sites.html) blog, on 19 October 2026, anyone who has created an interactive app in the Gemini app can export it to Google Sites with one click. The app opens in a private draft site, remains interactive and can be edited, published and shared like any other site.",
         "The feature is available on web, Android and iOS for Workspace accounts, individual subscribers and personal accounts with access to Gemini. Google says it adds no new controls for administrators: Google Sites must be turned on and users must be able to create sites, and exported sites follow the organisation’s Sites and Drive policies. The rollout covers both Rapid Release and Scheduled Release domains.",
         "In the group, one member who tried it explained that it always generates a new site, with no way of adding the app to an existing one, and that sharing directly from the Gemini canvas was already possible. Another member saw it as a resource that brings the idea within reach of beginners without technical knowledge, although it falls short for more experienced users. These points come from members’ own tests, not from the official note, which mentions no functional limitations."
       ],
       "fuentes": [
-        {"titulo": "Publish interactive apps from the Gemini app to Google Sites (Google Workspace Updates)", "url": "https://workspaceupdates.googleblog.com/2026/10/publish-interactive-apps-from-gemini-app-to-Google-Sites.html"}
+        {
+          "titulo": "Publish interactive apps from the Gemini app to Google Sites (Google Workspace Updates)",
+          "url": "https://workspaceupdates.googleblog.com/2026/10/publish-interactive-apps-from-gemini-app-to-Google-Sites.html"
+        }
       ],
-      "mensaje": {"grupo": "chatgpt", "id": 54006},
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 54006
+      },
       "comprobado": "Revisor: abierta de nuevo la nota del blog Workspace Updates: fecha 19-oct-2026, exportación con un clic a borrador de sitio privado, web/Android/iOS, tipos de cuenta, sin controles nuevos de administración, requisitos de Sites y políticas de Sites/Drive, dominios Rapid y Scheduled Release. Mensaje de Telegram 54006 (enlace a la publicación de Google España sobre esta función) corresponde al tema. Lo del sitio nuevo y la comparación con el lienzo es testimonio de miembros, no verificado y atribuido como tal. Nada en publicado.txt lo contradice.",
       "ilustracion": "Esquema de tres pasos: una burbuja de Gemini con una aplicación interactiva, una flecha con la etiqueta «un clic» y un borrador de sitio de Google Sites en privado; una segunda flecha tachada hacia un sitio ya existente.",
       "ilustracion_alt": "Diagram: a speech bubble labelled “Gemini” leads, via an arrow labelled “One click”, to a web page with a padlock labelled “Private draft”; a second dashed arrow, crossed out in red, points to a dashed box labelled “Existing site”."
@@ -33,13 +39,19 @@
       "titular": "MechSimulator brings together free mechanical engineering simulators that run in the browser",
       "entradilla": "A group member highlighted this website of 2D and 3D simulations as an example of what one person can achieve.",
       "cuerpo": [
-        "MechSimulator is a free platform, with no installation, of interactive simulators for technical education. It covers virtual lab tests, measuring instruments, mechanics, mechanisms, strength of materials, thermal and fluid systems, electricity, workshop, calculators, basic sciences and mathematics, with more than 150 simulators.",
+        "[MechSimulator](https://mechsimulator.com/) is a free platform, with no installation, of interactive simulators for technical education. It covers virtual lab tests, measuring instruments, mechanics, mechanisms, strength of materials, thermal and fluid systems, electricity, workshop, calculators, basic sciences and mathematics, with more than 150 simulators.",
         "In the group it was presented as the work of a single teacher. The website does not name its author or say whether AI was used to build it, and its content is in English, so both points remain unconfirmed. For technology and vocational training teachers it can serve as a bank of activities, and for those who code with AI, as a reference for what is possible."
       ],
       "fuentes": [
-        {"titulo": "MechSimulator", "url": "https://mechsimulator.com/"}
+        {
+          "titulo": "MechSimulator",
+          "url": "https://mechsimulator.com/"
+        }
       ],
-      "mensaje": {"grupo": "vce", "id": 14667},
+      "mensaje": {
+        "grupo": "vce",
+        "id": 14667
+      },
       "comprobado": "Revisor: abierta la web: gratuita, en el navegador y sin instalación, 11 áreas, solo inglés, sin autor ni mención de IA. La cifra de simuladores no es coherente (el texto dice 169, la descripción de la página 159 y los recuentos por categoría no cuadran), por eso se dice «más de 150». Que lo haya hecho un solo profesor es lo dicho en el grupo; no figura en la web. Mensaje 14667 de vceduca corresponde al tema.",
       "ilustracion": null,
       "ilustracion_alt": "A browser window with a cogwheel, a ruler and a spanner, and a bending curve beneath them, labelled “In the browser”; an arrow leads to a grid of dots, one highlighted in blue, labelled “150+”."
@@ -53,13 +65,19 @@
       "titular": "Google unveils Gemini Omni 1.2 Flash, which generates and edits videos of up to 15 seconds",
       "entradilla": "The new version of Google’s video model extends clip length and allows clips to be refined over several turns. The announcement was shared in EduMedia-IAG.",
       "cuerpo": [
-        "According to Google’s blog, on 5 November 2026, Gemini Omni 1.2 Flash generates and edits videos of up to 15 seconds (10 in Omni 1.1), with a duration that can be set between 3 and 15 seconds. It lets users refine the same clip turn by turn, for example by changing the background, lighting or aspect ratio, without generating it again. It costs $0.07 per second at 720p, 30% less than the previous version, and outputs carry a SynthID watermark.",
+        "According to [Google’s blog](https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/), on 5 November 2026, Gemini Omni 1.2 Flash generates and edits videos of up to 15 seconds (10 in Omni 1.1), with a duration that can be set between 3 and 15 seconds. It lets users refine the same clip turn by turn, for example by changing the background, lighting or aspect ratio, without generating it again. It costs $0.07 per second at 720p, 30% less than the previous version, and outputs carry a SynthID watermark.",
         "It is available in the Gemini API (Google AI Studio), in Gemini for enterprise and in Google Vids, where 15-second clips carry no extra cost. In the Gemini app, 15-second video is rolling out to Google AI Ultra subscribers. The group asked whether it will be usable in Europe; this could not be checked."
       ],
       "fuentes": [
-        {"titulo": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips (Google)", "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/"}
+        {
+          "titulo": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips (Google)",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/"
+        }
       ],
-      "mensaje": {"grupo": "edumedia", "id": 12121},
+      "mensaje": {
+        "grupo": "edumedia",
+        "id": 12121
+      },
       "comprobado": "Revisor: abierto el blog oficial de Google: fecha 5-nov-2026, 15 s frente a 10 s, 3-15 s, edición conversacional, 0,07 $/s en 720p y 30 % menos, SynthID, disponibilidad en API/AI Studio, empresas, Vids y app de Gemini para Ultra. La disponibilidad en Europa no consta y se dice como no comprobada. El borrador lo había descartado por no hallarlo; WebSearch lo encuentra como Omni 1.2 Flash.",
       "ilustracion": null,
       "ilustracion_alt": "Two bars compare duration: “Omni 1.1: 10 s” and, longer, “Omni 1.2: 15 s”. Below, three video cameras joined by arrows labelled “Turn by turn” show the clip being refined step by step, and a tag labelled “SynthID” marks the output."
@@ -70,19 +88,28 @@
       "texto": "The XTEC page on AI links to the 2024 document as its guidance, with the note “Actualització prevista: des.26” (update expected: December 2026), and does not include the [45 guidelines from Catalonia that the paper reported](pieza:2026-11-02/cat-orientacions-ia).",
       "url": "https://projectes.xtec.cat/ia/",
       "grupo": "chatgpt",
-      "mensaje": {"grupo": "chatgpt", "id": 54005}
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 54005
+      }
     },
     {
       "texto": "OpenAI unveiled Images 2.6, which, according to its announcement, speeds up image generation, allows GIFs to be created in ChatGPT and improves editing. It was shared in EduMedia-IAG; OpenAI’s page would not load, so the official description was read from its preview.",
       "url": "https://openai.com/index/introducing-images-2-6/",
       "grupo": "edumedia",
-      "mensaje": {"grupo": "edumedia", "id": 12113}
+      "mensaje": {
+        "grupo": "edumedia",
+        "id": 12113
+      }
     },
     {
       "texto": "Raül Torres, author of [the virtual camera for Blender that the paper reported](pieza:2026-11-04/camara-virtual-blender), posted an example made with his VirtuCam tool and a Meta Quest 3 headset: five shots recorded in VR served as the camera reference for Seedance 2.5. According to him, the model followed the cuts almost frame by frame, although it added shots that were never recorded.",
       "url": "https://www.linkedin.com/posts/raul-torres-ia_dreaminacpp-blender-b3d-ugcPost-7524227521698185216-Ki3j/",
       "grupo": "edumedia",
-      "mensaje": {"grupo": "edumedia", "id": 12127}
+      "mensaje": {
+        "grupo": "edumedia",
+        "id": 12127
+      }
     }
   ],
   "descartado": [

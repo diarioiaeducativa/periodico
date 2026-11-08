@@ -11,17 +11,17 @@
       "titular": "Tresna batek ausaz osatzen ditu Jigsaw teknikaren oinarri-taldeak eta aditu-taldeak",
       "entradilla": "«Rompecabezas – Técnica Jigsaw» tresnak ikasleen zerrenda eta azpigaiak jasotzen ditu, eta taldeak modu orekatuan banatzen ditu. Nabigatzailean irekitzen da eta bost hizkuntzatan dago eskuragarri.",
       "cuerpo": [
-        "«Rompecabezas – Técnica Jigsaw» ikaskuntza kooperatiboa puzzle moduan ikasgelan antolatzeko tresna bat da. Teknika horretan, ikasle bakoitza gaiaren zati bateko aditu bihurtzen da, gero bere taldearekin partekatzen du, eta guztiek behar dituzte besteak multzoa osatzeko. Aplikazioak irakaslearentzako atalik astunena egiten du: taldeak osatzea.",
+        "«[Rompecabezas – Técnica Jigsaw](https://jigsawcoop.github.io/)» ikaskuntza kooperatiboa puzzle moduan ikasgelan antolatzeko tresna bat da. Teknika horretan, ikasle bakoitza gaiaren zati bateko aditu bihurtzen da, gero bere taldearekin partekatzen du, eta guztiek behar dituzte besteak multzoa osatzeko. Aplikazioak irakaslearentzako atalik astunena egiten du: taldeak osatzea.",
         "Hasierako pantailak bi panel ditu. Ezkerrekoan ikasleen izenak idazten dira, bat lerroko, edo «Cargar ejemplo» sakatzen da tresna lagin-datuekin probatzeko. Eskuinekoan azpigaien kopurua aukeratzen da, oinarri-talde bakoitzeko kideen kopuruarekin bat datorrena, bakoitzari izena jartzen zaio (pantaila-argazkian lau ageri dira, bakoitza kolore ezberdinekoa) eta, nahi bada, gai orokorra adierazten da, adibidez «Digestio-aparatua». «Formar grupos» sakatzean, tresnak ikasleak ausaz banatzen ditu, eta azpigaiak modu orekatuan banatuta geratzen dira.",
         "Fitxaren arabera, ikasle kopurua zehazki egokitzen ez denean, soberakinak aditu-kide gisa kudeatzen dira. Fitxak gaineratzen du aplikazioak teknikaren hiru faseak (oinarri-taldeak, aditu-taldeak eta oinarri-taldera itzultzea) gidatzen dituela, jarraibideekin, tenporizadore batekin eta inprimatzeko ikuspegi batekin. Taldeak osatu ondoren, aplikazioak, gainera, 1etik 3ra zenbakitutako urratsak eta hasteko eta gelditzeko botoiak dituen hamar minutuko tenporizadore bat erakusten ditu.",
         "Fitxak sorkuntza-tresna gisa sailkatzen du Lehen Hezkuntzarako, Derrigorrezko Bigarren Hezkuntzarako, Batxilergorako, Lanbide Heziketarako, Unibertsitaterako eta Irakasleen prestakuntzarako, eta edozein irakasgairako, ikasgela antolatzeko balio duelako eta ez delako inolako edukiren menpe. Interfazea gaztelaniara, katalanera, galegora, euskarara eta ingelesera alda daiteke. Nabigatzailean zuzenean erabiltzen da, eta hasierako pantailak ez du konturik eskatzen.",
-        "Juanjo de Harok sortu du. Kodea AGPL-3.0 lizentziarekin banatzen da, eta orriak akatsak eta iradokizunak jakinarazteko kanal baten esteka ematen du."
+        "Juan José de Harok sortu du. Kodea AGPL-3.0 lizentziarekin banatzen da, eta orriak akatsak eta iradokizunak jakinarazteko kanal baten esteka ematen du."
       ],
       "recursos": [
         {
           "id": "rompecabezas-tecnica-jigsaw",
           "titulo": "Rompecabezas – Técnica Jigsaw",
-          "autoria": "Juanjo de Haro",
+          "autoria": "Juan José de Haro",
           "url": "https://jigsawcoop.github.io/",
           "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://jigsawcoop.github.io/",
           "licencia": "AGPL-3.0",
@@ -49,7 +49,7 @@
       "titular": "TurboWarp-en oinarritutako eta Scratch-ekin bateragarria den bloke bidezko programazio-editore bat, programatzen ikasteko",
       "entradilla": "EduTicTac Blocs Scratch proiektuekin eta ikasgelarako txantiloiekin bateragarria den programazio bisualeko ingurune bat da; bere webgunearen arabera, publizitaterik eta aztarnaririk gabea.",
       "cuerpo": [
-        "EduTicTac Blocs hezkuntzarako pentsatutako bloke bidezko programazio bisualeko ingurune librea da. Bere orriaren arabera, Scratch-en .sb3 proiektuekin bateragarria da, TurboWarp-en oinarritzen da eta ez du publizitaterik ez aztarnaririk. Argitzen du, halaber, ez dagoela Scratch-ekin, haren taldearekin, Scratch Foundation-ekin ez TurboWarp-ekin lotuta. Fitxak Lehen Hezkuntzan, Derrigorrezko Bigarren Hezkuntzan eta Irakasleen prestakuntzan kokatzen du, Zientzia eta Teknologia eta Pentsamendu Logiko-Matematikoa arloetan, eta interfazea katalanez eta ingelesez dauka.",
+        "[EduTicTac Blocs](https://blocs.edutictac.es/) hezkuntzarako pentsatutako bloke bidezko programazio bisualeko ingurune librea da. Bere orriaren arabera, Scratch-en .sb3 proiektuekin bateragarria da, TurboWarp-en oinarritzen da eta ez du publizitaterik ez aztarnaririk. Argitzen du, halaber, ez dagoela Scratch-ekin, haren taldearekin, Scratch Foundation-ekin ez TurboWarp-ekin lotuta. Fitxak Lehen Hezkuntzan, Derrigorrezko Bigarren Hezkuntzan eta Irakasleen prestakuntzan kokatzen du, Zientzia eta Teknologia eta Pentsamendu Logiko-Matematikoa arloetan, eta interfazea katalanez eta ingelesez dauka.",
         "Webgunea irekitzean, konturik eskatu gabe, exekutatzeko prest dagoen adibide-proiektu bat agertzen da, «Ver dentro» botoiarekin bloke-editorera pasatzeko: goian, Ajustes, Archivo, Editar, Complementos eta Avanzado menuak, eta «Inicio» eta «Entrar» botoiak; erdian, eszenatokia, bandera berdearen, pausaren eta geldiketaren kontrolekin. Ohar batek bandera berdea sakatzera, Bloc pertsonaiak galdetzen duenean izena idaztera eta, ondoren, haren gainean klik egitera gonbidatzen du. Behean, «Empieza con una plantilla» botoiak hogei proiektu prest iragartzen ditu, bakoitza bere irakaskuntza-fitxarekin, eta «Explora la galería» botoiak adibide gehiagorako sarbidea ematen du.",
         "Irakaslearentzat, interesa da pentsamendu konputazionala Scratch-en bloke-logikarekin sartzeko aukera ematen duela, eta eginda dauden proiektuak abiapuntu gisa ikasgelara eramatekoa. Fitxaren arabera, ikasleek proiektuak sor ditzakete blokeekin, jantziekin, marrazkiekin eta luzapenekin, eta adimen artifizialeko (AA) laguntzaile bat dago horiek sortzeko; ez da zehazten zer eskatzen duen haren erabilerak.",
         "Fitxak adierazten du, gainera, Docker bidez autoostatatu daitekeela, beraz ikastetxe batek edo bertako informatika-arduradunak bere zerbitzarian zabal dezake. Baliabidea Samuel Sorianok sortutakotzat agertzen da, eta iturburu-kodea GPL v3 lizentziarekin argitaratzen da; oinean, pribatutasunari buruzko informaziorako eta TurboWarp-en kredituetarako estekak daude."
@@ -78,7 +78,7 @@
   ],
   "descartado": [],
   "repaso": [
-    "Jigsaw: sin cambios de texto; autoría de la ficha (Juanjo de Haro) no nombrada y `autoria` vacío; licencia, enlaces, captura y alt confirmados; funciones solo de la ficha ya atribuidas a ella.",
+    "Jigsaw: sin cambios de texto; autoría de la ficha (Juan José de Haro) no nombrada y `autoria` vacío; licencia, enlaces, captura y alt confirmados; funciones solo de la ficha ya atribuidas a ella.",
     "EduTicTac Blocs: titular y entradilla ya no afirman «sin publicidad»/«sin rastreadores» como hecho propio (es lo que dice su web).",
     "EduTicTac Blocs: quitadas frases sobre lo que no se pudo comprobar («no se pudo comprobar en la captura», «no se ha verificado»), que hablan del método del diario; el asistente de IA y Docker quedan atribuidos a la ficha.",
     "Actualizado `comprobado` en ambas piezas."

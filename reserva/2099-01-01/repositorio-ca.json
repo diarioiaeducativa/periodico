@@ -11,7 +11,7 @@
       "titular": "Un editor web permet dissenyar cromos col·leccionables de fauna i flora per a l'aula",
       "entradilla": "El Generador de Cromos Eco-Duel, creat per David Cordones, ofereix un formulari per compondre targetes amb dades d'animals i plantes, amb una col·lecció per curs, des d'1r de Primària fins a 2n de Batxillerat.",
       "cuerpo": [
-        "El Generador de Cromos Eco-Duel és un editor que s'obre al navegador i mostra, a l'esquerra, un formulari i, a la dreta, el cromo que es va component. Segons la fitxa del repositori, està pensat per crear material didàctic en forma de targetes col·leccionables, resumir conceptes o avaluar coneixements de manera lúdica. La fitxa el situa entre Primària i formació del professorat, i el seu autor és David Cordones.",
+        "El [Generador de Cromos Eco-Duel](https://elcordones.github.io/generador_cromos/) és un editor que s'obre al navegador i mostra, a l'esquerra, un formulari i, a la dreta, el cromo que es va component. Segons la fitxa del repositori, està pensat per crear material didàctic en forma de targetes col·leccionables, resumir conceptes o avaluar coneixements de manera lúdica. La fitxa el situa entre Primària i formació del professorat, i el seu autor és David Cordones.",
         "El formulari demana el tipus de cromo (fauna o flora), el nom, un grup o subtítol (mamífer, ocell, rèptil, amfibi, peix, insecte i altres, en el cas de la fauna) i una imatge que es puja des del dispositiu. Després es fixen valors com la mida i la velocitat amb lliscadors, el nivell tròfic (de productor a superpredador), la raresa, la dieta, l'hàbitat, l'activitat (diürna, nocturna…) i una dada curiosa. Cada cromo s'assigna a més a una col·lecció, que pot ser un curs, d'1r de Primària a 2n de Batxillerat i FP Bàsica, o una opció personalitzada, i porta un número.",
         "A classe, l'eina es presta que l'alumnat elabori els seus propis cromos després d'investigar una espècie, o que el professorat prepari una col·lecció per a un joc de comparació de característiques a Ciències Naturals. La interfície es pot canviar entre català, castellà i anglès, i l'exemple que mostra en obrir-la, un senglar, és en català. Sota el cromo hi ha dos botons, «Descarregar» i «Copiar»; la pàgina no indica en quin format es descarrega ni què es copia.",
         "En obrir la pàgina no es veu cap registre ni inici de sessió. El peu indica que el codi té llicència AGPL v3 i els continguts, CC BY-SA 4.0, cosa que coincideix amb la llicència declarada a la fitxa."
@@ -30,11 +30,16 @@
         }
       ],
       "fuentes": [
-        {"titulo": "Generador de Cromos Eco-Duel", "url": "https://elcordones.github.io/generador_cromos/"}
+        {
+          "titulo": "Generador de Cromos Eco-Duel",
+          "url": "https://elcordones.github.io/generador_cromos/"
+        }
       ],
       "comprobado": "Repaso: se miró la captura (editor con cromo de ejemplo «Senglar», botones Descarregar y Copiar, selector CA, pie con autoría y licencias) y el texto visible de la entrada, y se abrió la web con WebFetch, que confirmó los campos del formulario, los botones, los idiomas CA/ES/EN, la ausencia de registro visible y las licencias del pie. Título, autoría, licencia, ficha y archivo de la captura coinciden con la entrada. No se ha probado la descarga ni la copia. No hay enlaces a lo ya publicado. Los otros dos candidatos no se han elegido y no se descartan."
     }
   ],
   "descartado": [],
-  "repaso": ["sin cambios"]
+  "repaso": [
+    "sin cambios"
+  ]
 }

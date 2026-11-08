@@ -1,0 +1,361 @@
+{
+  "fecha": "2026-11-07",
+  "hay_reportaje": true,
+  "motivo": "Reportaje de reserva, sin mensajes de la semana, sobre un asunto de fondo que no caduca en un mes: a qué edad puede usar IA el alumnado. Es el hilo común de tres documentos de la Biblioteca digital que no han tenido reportaje (el informe para la UNESCO de Livingstone y otras autoras, el white paper del Foro Económico Mundial sobre infancia e IA y las Orientacions catalanas de 2026) y del debate que abrió en ChatGPT-IA-edu el anuncio de Google sobre la IA desactivada por defecto en cuentas escolares. Tiene actores (empresas con edades mínimas distintas, AEPD, INTEF, comunidades autónomas, UNESCO, WEF, UE), normativa (artículo 7 de la LOPDGDD, Reglamento europeo de IA, el proyecto de ley que elevaba la edad a 16 años y que ha caducado) y consecuencias prácticas para cualquier docente de primaria o ESO. El reportaje anterior (agentes de IA y datos del alumnado) solo rozó el tema. Las condiciones de las empresas, que cambian, van fechadas.",
+  "id": "edad-ia-aula-tres-reglas",
+  "antetitulo": "AA eta adina ikasgelan",
+  "titular": "Ikasgelan AA erabiltzeko adina hiru arau desberdinen araberakoa da: enpresenak, legearenak eta hezkuntza-administrazioenak",
+  "entradilla": "Zerbitzu bakoitzaren erabilera-baldintzek, datuen babesaren legeak eta hezkuntza-administrazio batzuek adin desberdinak ezartzen dituzte adimen artifiziala erabiltzeko, eta askotan nahasten dira. Erreportaje honek azaltzen du zer dioen bakoitzak 2026ko azaroaren 6an, zergatik eskatzen duen ikerketak adinari buruzko galdera helburuari buruzkoaren ordez aldatzea, eta nola erabaki dezakeen lehen hezkuntzako edo DBHko irakasle batek zer tresna erabili, zer konturekin eta nork maneiatzen duen.",
+  "apartados": [
+    {
+      "ladillo": "Nahasten diren hiru arau",
+      "parrafos": [
+        "Irakasle batek bere ikasleek adimen artifizialeko laguntzaile bat erabil dezaketen galdetzen duenean, zenbaki bat bilatu ohi du. Baina jatorri desberdineko hiru arau bizi dira batera, gutxienez. Lehenengoa enpresa bakoitzak bere erabilera-baldintzetan ezartzen duen gutxieneko adina da, hau da, enpresaren eta kontua irekitzen duenaren arteko kontratua. Bigarrena adingabe batek bere datuak tratatzeko berak baimena emateko behar den adina da, eta Espainiako legeak 14 urtetan finkatzen du. Hirugarrena hezkuntza-administrazioen gomendioak dira, gela batean zer den zuhurra orientatzen dutenak.",
+        "Hirurek galdera desberdinei erantzuten diete, eta ez datoz bat. Zerbitzu batek 13 urtetik aurrera onartzeak ez du esan nahi DBHko lehen mailako talde batentzat egokia denik, ezta ikastetxeak ikasleei bertan alta emateko eska diezaiekeenik ere. Eta ikasle batek 14 urte betetzeak ez du argitzen tresnak hezkuntza-helburua duen. **Ikasleen adinaz gain, garrantzitsua da nork irekitzen duen kontua, nork erabiltzen duen tresna eta zertarako.**"
+      ]
+    },
+    {
+      "ladillo": "Enpresek ezartzen dutena",
+      "parrafos": [
+        "2026ko azaroaren 6an, [OpenAIren Europarako erabilera-baldintzek](https://openai.com/policies/eu-terms-of-use/) gutxienez 13 urte izatea eskatzen dute, edo herrialdeak adostasuna emateko eskatzen duen gutxieneko adina, eta 18 urtetik beherakoei gurasoaren edo tutore legalaren baimena eskatzen diete. Bere [laguntza-zentroak](https://help.openai.com/es-es/articles/8313401-es-chatgpt-seguro-para-todas-las-edades) ikasgelarako pentsatutako argibide bat gehitzen du: ChatGPT hezkuntza-helburuekin 13 urtetik beherakoekin erabiltzen bada, tresnarekiko zuzeneko elkarrekintza heldu batek egin behar du.",
+        "Googlek bi mundu bereizten ditu. Kontu pertsonalarekin, bere laguntzaren arabera Espainian [gutxienez 14 urte izan behar dira Google kontu propioa kudeatzeko](https://support.google.com/accounts/answer/1350409?hl=es); Geminiren aplikazioek [13 urte edo herrialde bakoitzak ezartzen duen adina](https://support.google.com/gemini/answer/13278668?hl=es) eskatzen dute, baina [ez daude eskuragarri Family Linkekin gainbegiratutako kontuetan](https://support.google.com/gemini/answer/16109150?hl=es) Europako Esparru Ekonomikoan, eta [ordainpeko AA plan bat](https://support.google.com/gemini/answer/14517446?hl=es) Europako Esparru Ekonomikoan erabiltzeko 18 urtetik gorakoa izan behar da. Google Workspace for Education kontuarekin, aldiz, [ikastetxeentzako gidak](https://knowledge.workspace.google.com/admin/getting-started/editions/quickstart-guide-to-gemini-and-gemini-notebook-for-education?hl=es), 2026ko urriaren 28an eguneratutakoak, Gemini eta Gemini Notebook adin guztietarako eskuragarri aurkezten ditu, administratzaileak kudeatutako sarbidearekin, 18 urtetik beherakoentzat iragazkiak zorrotzagoekin eta ereduak entrenatzeko erabiltzen ez diren datuekin.",
+        "Kontu horietan, [adinaren araberako sarbide-kontrolaren orriaren](https://knowledge.workspace.google.com/admin/getting-started/editions/control-access-to-google-services-by-age?hl=es) arabera, lehen eta bigarren hezkuntzan administratzaileak 18 urtetik gorako gisa identifikatu ez duenak esperientzia mugatua jasotzen du: adibidez, ezin du Gemini erabili Classroomen edukia sortzeko edo editatzeko. Gainera, [Engadgeten](https://www.engadget.com/2305432/google-says-that-students-in-schools-that-ban-ai-wont-have-access-to-search/) arabera, Googlek iragarri zuen Gemini eta bilaketa desaktibatuta egongo direla lehen eta bigarren hezkuntzako kontuetan ikastetxeak aktibatu arte, «hurrengo hilabeteetan» zabalduko dela esanez; egunkariak [iragarpen horrek ikastetxe batean nork erabakitzen duenari buruz ireki zuen eztabaida](pieza:2026-11-03/google-ia-cuentas-escolares) kontatu zuen.",
+        "Microsoftek [Copilot norbanakoentzako baldintzetan](https://www.microsoft.com/es-es/microsoft-copilot/for-individuals/termsofuse), 2026ko abuztuaren 18tik aplikagarriak direnetan, 13 urteko gutxienekoa ezartzen du, herrialde bakoitzeko legeriaren arabera handiagoa izan daitekeena, eta ohartarazten du 18 urtetik beherakoentzat funtzioak desaktibatu edo mugatu ditzakeela. Ikastetxeentzat, bere hezkuntza-blogak 2025eko abuztuan [Microsoft 365 Copilot Chat 13 urte edo gehiagoko ikasleentzat](https://techcommunity.microsoft.com/blog/educationblog/microsoft-365-copilot-chat-for-students-13/4440370) iragarri zuen, administratzaileek kudeatuta eta datuak oinarrizko ereduak entrenatzeko erabili gabe. Anthropic da murriztaileena: [Claude kontsumitzaileentzako baldintzek](https://www.anthropic.com/legal/consumer-terms), 2025eko urriaren 8tik indarrean daudenek, gutxienez 18 urte izatea eskatzen dute."
+      ]
+    },
+    {
+      "ladillo": "Legea: hamalau urte eta hezkuntza-funtzioa",
+      "parrafos": [
+        "[Datu Pertsonalak Babesteko Lege Organikoaren 7. artikuluak](https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673#a7) ezartzen du adingabe baten datuen tratamendua bere adostasunean oinarritu daitekeela soilik hamalau urte baino gehiago dituenean; hortik behera, legezkoa da bakar-bakarrik guraso-ahalaren edo tutoretzaren titularraren adostasunarekin, [Datuak Babesteko Espainiako Agentziak](https://www.aepd.es/preguntas-frecuentes/10-menores-y-educacion/FAQ-1001-cual-es-la-edad-para-que-los-menores-puedan-prestar-consentimiento-para-tratar-sus-datos-personales) gogorarazten duenez. Ikasle batek bere kabuz zerbitzu komertzial bat irekitzen duenean kontuan hartzen den adina da.",
+        "Eskolan, ordea, adostasuna ez da oinarri ohikoa. AEPDk azaltzen du derrigorrezko irakaskuntzan hezkuntza-funtzioari lotutako tratamendurako [ez dela beharrezkoa ikasleen ez familien adostasuna](https://www.aepd.es/preguntas-frecuentes/10-menores-y-educacion/FAQ-1009-pueden-los-centros-educativos-impartir-clases-y-realizar-examenes-online-sin-el-consentimiento-de-los-interesados), Hezkuntzaren Lege Organikoan aurreikusitako interes publikoko eginkizun bati erantzuten diolako. Plataformak ikastetxeak edo administrazioak aukeratzen ditu, datuak babesteko ordezkariaren aholkuarekin, eta irakasleek hauek jartzen dituzten bitartekoak erabili behar dituzte. Aldea argia da: ez da gauza bera hezkuntza-administrazioak kontratatutako tresna bat erabiltzea eta 12 urteko ikasle bati zerbitzu komertzial batean izena emateko eskatzea.",
+        "14 urteko adin hori alda zitekeen. [Adingabeak ingurune digitaletan babesteko Lege Organikoaren Proiektuak](https://www.congreso.es/public_oficiales/L15/CONG/BOCG/A/BOCG-15-A-52-1.PDF), 2025eko martxoan aurkeztutakoak, 16 urtera igotzea aurreikusten zuen. [Kongresuko fitxaren](https://www.congreso.es/es/proyectos-de-ley?p_p_id=iniciativas&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_iniciativas_mode=mostrarDetalle&_iniciativas_legislatura=XV&_iniciativas_id=121%2F000052) arabera, 2026ko azaroaren 6an kontsultatua, ekimena iraungita dago 2026ko urriaren 6az geroztik, Gorteak desegin ziren egunetik. Beraz, indarrean dagoen adina 14 urtekoa da oraindik.",
+        "Europako esparruak bi pieza gehitzen ditu. [AA Erregelamenduak](https://www.boe.es/buscar/doc.php?id=DOUE-L-2024-81079) adinetik eratorritako ahultasunak ustiatzen dituzten sistemak debekatzen ditu, eta arrisku handikotzat jotzen ditu hezkuntzan sarbidea erabakitzeko edo emaitzak ebaluatzeko erabiltzen direnak. [Europako Batzordearen](https://digital-strategy.ec.europa.eu/es/policies/regulatory-framework-ai) arabera, AAren alfabetatze-betebeharra 2025eko otsailaren 2tik aplikatzen da, eta III. eranskineko arrisku handiko betebeharrak 2027ko abenduaren 2ra arte atzeratu dira."
+      ]
+    },
+    {
+      "ladillo": "Hezkuntza-administrazioek diotena",
+      "parrafos": [
+        "Autonomia-erkidego bakoitzak erabakitzen du nola erabiltzen den adimen artifiziala bere ikastetxeetan, eta 2026ko azaroaren 7an ez dago irizpide komunik. Batzuek dokumentu propioa argitaratu dute, beste batzuek beren plataformen konfigurazioarekin konpontzen dute, eta hainbatek oraindik ez dute ezer esan.",
+        "Kataluniak du irizpiderik zehatzena. Bere *[Orientacions per a l’ús de la intel·ligència artificial als centres educatius](https://t.me/ChatGPTedu/21753/53605)* agiriek, Departament d’Educació i Formació Professionalek 2026ko irailean argitaratu eta gero bere webgunetik kendutakoek ([egunkariaren Liburutegiko aipamena](pieza:2026-11-02/cat-orientacions-ia)), ezartzen dute 14 urtetik beherako ikasleek ez luketela helburu orokorreko AA modu autonomoan erabili behar: Lehen Hezkuntzan eta DBHko lehen zikloan, harekin lan egiten bada, irakasleak erabiltzen du, nahiz eta hezkuntza-ingurunerako diseinatutako eta baldintza batzuk betetzen dituzten tresnak onartzen dituzten. 14 eta 18 urte artean, oro har, ez da familien adostasunik behar, oinarri juridikoa interes publikoko eginkizuna delako, baina haien baimena berme gisa biltzea gomendatzen dute, eta beharrezkoa izan daiteke tresna batzuek beren baldintzetan eskatzen dutelako; baimen horrekin, ikasleen zuzeneko elkarrekintza DBHko 3. mailako bigarren hiruhilekotik aurrera kokatzen dute.",
+        "[Eusko Jaurlaritzako Hezkuntza Sailaren gidak](https://www.euskadi.eus/contenidos/documentacion/inn_doc_adi_artif/es_def/adjuntos/Guia-uso-de-IA-en-educacion_Euskadi.pdf), 2025ekoak, ez ditu txatbotak baimentzen 13 urtetik beherakoentzat, ezta DBHko 1. eta 2. mailetan ere; 3. mailatik aurrera, beharrezkoa denean eta gainbegiratze zorrotzarekin bakarrik onartzen ditu. 14 eta 18 urte artean, erregistrorik gabe erabiltzea gomendatzen du, erregistroarekin familien baimena beharko litzatekeelako.",
+        "Murtziako Eskualdean, [2025eko iraileko agindu batek](https://www.borm.es/services/anuncio/ano/2025/numero/4232/pdf?id=838315) ez ditu baimentzen DBHko 3. mailara arte datu pertsonalak biltzen dituzten edo elkarrekintza autonomoa eskatzen duten AA tresnetara zuzeneko sarbidea dakarten jarduerak: ikasturte horren aurretik, adinera egokitutako aplikazioen erabilera gidatua bakarrik, eta hortik aurrera, beti irakasleen gainbegiratzearekin. Familiek informazioa jaso behar dute, eta aginduak ez du haien baimenik eskatzen. Madrilgo Erkidegoan, [Política de uso aceptable de la IA](https://www.educa2.madrid.org/web/educamadrid/principal/files/1cff6bb2-8b91-48fc-ae7b-a3d3b62d1d84/Convenios/Documentos%20comunes/Politica%20de%20uso%20aceptable%20de%20la%20IA%20en%20centros%20educativos.pdf) agiriak, Digitalizazio Kontseilaritzak 2026ko irailaren 25ean sinatutako eta onartzen denean indarrean jarriko den proposamenak, irakasleentzat eta zuzendaritza-taldeentzat gordetzen du AAren erabilera; oinarri legala adostasuna denean, 14 urtetik behera familiak sinatzen du. Kontseilaritza bereko [Google Workspace jarraibideek](https://www.educa2.madrid.org/web/educamadrid/principal/files/1cff6bb2-8b91-48fc-ae7b-a3d3b62d1d84/Convenios/Google/Directrices%20de%20Uso%20de%20los%20Servicios%20de%20GWS.pdf) zehazten dute ikasleek Gemini irakasleak gidatuta eta beren kredentzialik gabe bakarrik erabiltzen dutela.",
+        "Beste administrazio batzuek beren plataformekin eta jarraibideekin konpontzen dute. Andaluziak [Gemini eta NotebookLM desaktibatuta ditu ikasleentzat](https://www.juntadeandalucia.es/educacion/eaprendizaje/wp-content/uploads/2026/10/261028_Guia-de-Buenas-Practicas_Google_v08.pdf) bere ikastetxeetako Google kontuetan, eta Kanariak [NotebookLM ikasleei irekitzen die eta Gemini irakasleentzat gordetzen du](https://www3.gobiernodecanarias.org/medusa/ecoescuela/gsuite/2025/12/22/recomendaciones-de-uso-de-la-ia-en-el-g-suite-educativo/). Valentziako Erkidegoan, [irakasleen AA prestakuntza planifikatzeko gidak](https://portal.edu.gva.es/cefire/wp-content/uploads/sites/1992/2026/09/Guia_accions_formatives_IA_PAF_2026-2027_VAL.pdf) gogorarazten du ikasleekin AppsEdu katalogoan baimendutako aplikazioak bakarrik erabil daitezkeela eta ez zaiela eskatu behar baimendu gabeko kanpoko zerbitzuetan konturik sortzeko. Extremadurak, gailu digitalei buruzko [Instrucción 6/2026](https://www.educarex.es/pub/cont/com/0061/documentos/Instrucci%C3%B3n_6_2026_USO_DISPOSITIVOS_DIGITALES%28F%29.pdf) agirian, ezartzen du ikastetxeko ekipoekin egindako jarduerek ez dutela familiaren baimen berezirik behar eta ikasleek AA noiz erabiltzen duten adierazi behar dutela, jarduerak hala ezartzen badu. Asturiasek debekatu egiten du ikasleen datuak Kontseilaritzak baimendu ez dituen AA tresnetan sartzea ([ikasturte-hasierako zirkularra](https://www.educastur.es/documents/34868/38433/Anexo_F_PROTECCION_DATOSPERSONALES_CPUBLICOS.pdf/c639b6d8-b281-8274-f2cf-5d11b8631cca)).",
+        "Aragoik, Balear Uharteek, Kantabriak, Gaztela eta Leonek, Gaztela-Mantxak, Nafarroak eta Errioxak ez dute oraindik dokumentu propiorik AAri buruz ikastetxeetan; Gaztela eta Leonek urrian gomendio-gida bat iragarri zuen, oraindik argitaratu ez duena, eta Errioxak [INTEFen gida argitaratzen du bere webgunean](https://www.larioja.org/edu-proteccion-datos/es/novedades/guia-uso-inteligencia-artificial). Galiziak bere Hezkuntza Digitalaren Legean arautuko du, eta haren [testua](https://transparencia.xunta.gal/tema/informacion-de-relevancia-xuridica/normativa-en-tramitacion/en-prazo-de-envio-de-suxestions/-/nt/0825/anteproxecto-lei-educacion-dixital-galicia) lege-proiektu gisa izapidetzen ari da Parlamentuan irailetik. Ceutan eta Melillan, Ministerioak kudeatzen dituen ikastetxeetan, ikasturteko jarraibideek ez dute AA jorratzen.",
+        "Estatu mailan, INTEFen [Guía sobre el uso de la inteligencia artificial en el ámbito educativo](https://intef.es/wp-content/uploads/2026/09/ACTUALIZACION-GUIA-DE-LA-IA-DEF-1-SEPT-2026-Publicable-v5-2.pdf), 2.0 bertsioa, [2026ko irailaren 8an argitaratua](https://intef.es/Noticias/nueva-version-de-la-guia-sobre-el-uso-de-la-inteligencia-artificial-en-el-ambito-educativo/), ez du adinik finkatzen. Gogorarazten du 14 urtetik behera edozein erregistrok familien adostasuna behar duela, irakasleen bitartekaritza eskatzen duten jarduerak proposatzen ditu, eta ikasleekin administrazioak baliozkotutako edo ikastetxeko zuzendaritzak baimendutako tresnak bakarrik erabiltzea eskatzen du."
+      ],
+      "tabla": {
+        "titulo": "Hezkuntza-administrazio bakoitzak zer dioen, 2026ko azaroaren 7an",
+        "columnas": [
+          "Administrazioa",
+          "Adina",
+          "Familien baimena",
+          "Dokumentua"
+        ],
+        "filas": [
+          [
+            "Andaluzia",
+            "Ez du adinik finkatzen. Gemini eta NotebookLM, desaktibatuta ikasleentzat.",
+            "Ez du eskatzen AArako.",
+            "[Google Workspace gida, v08 (2026)](https://www.juntadeandalucia.es/educacion/eaprendizaje/wp-content/uploads/2026/10/261028_Guia-de-Buenas-Practicas_Google_v08.pdf)"
+          ],
+          [
+            "Aragoi",
+            "Dokumentu propiorik gabe.",
+            "Arau orokorra (ikus oharra)",
+            "—"
+          ],
+          [
+            "Asturias",
+            "Ez du adina jorratzen. Ezin dira ikasleen datuak sartu Kontseilaritzak baimendu ez dituen AA tresnetan.",
+            "Ez du jorratzen: arau orokorra (ikus oharra)",
+            "[Ikasturte-hasierako zirkularra, F eranskina (2026)](https://www.educastur.es/documents/34868/38433/Anexo_F_PROTECCION_DATOSPERSONALES_CPUBLICOS.pdf/c639b6d8-b281-8274-f2cf-5d11b8631cca)"
+          ],
+          [
+            "Balear Uharteak",
+            "Dokumentu propiorik gabe.",
+            "Arau orokorra (ikus oharra)",
+            "—"
+          ],
+          [
+            "Kanariak",
+            "Ez du adinik finkatzen. NotebookLM, ikasleentzat irekia; Gemini, irakasleentzat bakarrik.",
+            "Ez du jorratzen: arau orokorra (ikus oharra)",
+            "[AA erabiltzeko gomendioak (2025)](https://www3.gobiernodecanarias.org/medusa/ecoescuela/gsuite/2025/12/22/recomendaciones-de-uso-de-la-ia-en-el-g-suite-educativo/)"
+          ],
+          [
+            "Kantabria",
+            "Dokumentu propiorik gabe.",
+            "Arau orokorra (ikus oharra)",
+            "—"
+          ],
+          [
+            "Gaztela eta Leon",
+            "Dokumentu propiorik gabe; gida bat iragarri du.",
+            "Arau orokorra (ikus oharra)",
+            "—"
+          ],
+          [
+            "Gaztela-Mantxa",
+            "Dokumentu propiorik gabe.",
+            "Arau orokorra (ikus oharra)",
+            "—"
+          ],
+          [
+            "Katalunia",
+            "14 urtetik behera: helburu orokorreko AAren erabilera autonomorik ez. Erabilera zuzena DBHko 3. mailako 2. hiruhilekotik aurrera.",
+            "14-18: oro har, ez da behar; gomendatua, eta beharrezkoa tresnak eskatzen badu.",
+            "*Orientacions* (2026), webgunetik kenduak ([kopia](https://t.me/ChatGPTedu/21753/53605))"
+          ],
+          [
+            "Valentziako Erkidegoa",
+            "Ez du adinik finkatzen. Ikasleekin, AppsEdu katalogoko aplikazioak bakarrik; ez eskatu baimendu gabeko zerbitzuetan konturik sortzeko.",
+            "AppsEdu-n aplikazio bakoitzaren fitxak adierazten duena.",
+            "[CEFIREren gida (2026)](https://portal.edu.gva.es/cefire/wp-content/uploads/sites/1992/2026/09/Guia_accions_formatives_IA_PAF_2026-2027_VAL.pdf)"
+          ],
+          [
+            "Extremadura",
+            "Ez du adinik finkatzen. Ikasleek AAren erabilera adierazten dute.",
+            "Ikastetxeko ekipoekin, ez da baimen berezirik behar.",
+            "[Instrucción 6/2026](https://www.educarex.es/pub/cont/com/0061/documentos/Instrucci%C3%B3n_6_2026_USO_DISPOSITIVOS_DIGITALES%28F%29.pdf)"
+          ],
+          [
+            "Galizia",
+            "Hezkuntza Digitalaren Legeak arautuko du, Parlamentuan izapidetzen ari dena.",
+            "Lege horren zain.",
+            "[Lege-proiektua](https://transparencia.xunta.gal/tema/informacion-de-relevancia-xuridica/normativa-en-tramitacion/en-prazo-de-envio-de-suxestions/-/nt/0825/anteproxecto-lei-educacion-dixital-galicia)"
+          ],
+          [
+            "Madrilgo Erkidegoa",
+            "AA irakasleentzat bakarrik; ikasleak, gidatuta eta kredentzial propiorik gabe.",
+            "14 urtetik behera: familiak sinatzen du oinarria adostasuna bada.",
+            "[Erabilera onargarriaren politika (proposamena, 2026)](https://www.educa2.madrid.org/web/educamadrid/principal/files/1cff6bb2-8b91-48fc-ae7b-a3d3b62d1d84/Convenios/Documentos%20comunes/Politica%20de%20uso%20aceptable%20de%20la%20IA%20en%20centros%20educativos.pdf)"
+          ],
+          [
+            "Murtziako Eskualdea",
+            "DBHko 3. mailara arte, erabilera gidatua bakarrik; gero, beti gainbegiratuta.",
+            "Ez du eskatzen; familiei jakinarazi behar zaie.",
+            "[2025-9-8ko agindua](https://www.borm.es/services/anuncio/ano/2025/numero/4232/pdf?id=838315)"
+          ],
+          [
+            "Nafarroa",
+            "Dokumentu propiorik gabe.",
+            "Arau orokorra (ikus oharra)",
+            "—"
+          ],
+          [
+            "Euskadi",
+            "Txatbotak, ez 13 urte baino lehen, ezta DBHko 1. eta 2. mailetan ere; 3. mailatik aurrera, beharrezkoa denean bakarrik eta gainbegiratuta.",
+            "14-18: beharrezkoa tresnak erregistroa eskatzen badu (erregistrorik gabe erabiltzea gomendatzen du).",
+            "[Hezkuntza Sailaren gida (2025)](https://www.euskadi.eus/contenidos/documentacion/inn_doc_adi_artif/es_def/adjuntos/Guia-uso-de-IA-en-educacion_Euskadi.pdf)"
+          ],
+          [
+            "Errioxa",
+            "Dokumentu propiorik gabe; INTEFen gida argitaratzen du.",
+            "INTEFek bezala.",
+            "[Kontseilaritzaren orria](https://www.larioja.org/edu-proteccion-datos/es/novedades/guia-uso-inteligencia-artificial)"
+          ],
+          [
+            "Ceuta eta Melilla",
+            "Ministerioaren jarraibideek ez dute AA jorratzen.",
+            "Arau orokorra (ikus oharra)",
+            "—"
+          ],
+          [
+            "Estatua (INTEF)",
+            "Ez du adinik finkatzen. Ikasleekin, baliozkotutako edo baimendutako tresnak bakarrik.",
+            "14 urtetik behera: beharrezkoa edozein erregistrotarako.",
+            "[2.0 gida (2026)](https://intef.es/wp-content/uploads/2026/09/ACTUALIZACION-GUIA-DE-LA-IA-DEF-1-SEPT-2026-Publicable-v5-2.pdf)"
+          ]
+        ],
+        "nota": "**Administrazioak ezer argitaratu ez duen edo baimena jorratzen ez duen lekuetan, Espainia osoko arau orokorra aplikatzen da.** Ikastetxeak edo administrazioak eskaintzen dituen tresnekin ez da familien adostasunik behar, tratamendua hezkuntza-eginkizunean oinarritzen delako, baina familiei jakinarazi behar zaie zer tresna erabiltzen den, zer konturekin eta zertarako. Jarduerak ikaslea erregistratzera behartzen badu edo adostasunean oinarritzen bada, 14 urtetik behera familiak ematen du baimena, eta 14 urtetik aurrera ikasleak berak eman dezake. Gainera, familiaren baimena behar da tresnaren baldintzek eskatzen dutenean: OpenAIk, adibidez, 18 urte arte eskatzen du. [INTEFen gida](https://intef.es/wp-content/uploads/2026/09/ACTUALIZACION-GUIA-DE-LA-IA-DEF-1-SEPT-2026-Publicable-v5-2.pdf) erreferentzia gisa balia daiteke: irakasleek bideratutako jarduerak proposatzen ditu, eta administrazioak baliozkotutako edo ikastetxeko zuzendaritzak baimendutako tresnak bakarrik."
+      }
+    },
+    {
+      "ladillo": "Zenbakitik harago",
+      "parrafos": [
+        "UNESCOk zifra bat jarri zuen 2023an: hezkuntzan AA sortzaileari buruzko gidak [13 urteko gutxieneko adina proposatzen zuen](https://www.unesco.org/en/articles/unesco-governments-must-quickly-regulate-generative-ai-schools) tresna horiek ikasgelan erabiltzeko. Hiru urte geroago, UNESCOk berak argitaratutako ikerketa-txosten batek, Sonia Livingstonek, Kim R. Sylwanderrek, Sandra El Gemayelek eta Ayça Atabeyk sinatuak, ez dagoela adin zuzenik defendatzen du, eta egunkariak [Liburutegian azaldu zuen](pieza:2026-11-02/unesco-edad-ia). [Media@LSE blogeko laburpenean](https://blogs.lse.ac.uk/medialse/2026/09/22/is-there-a-right-age-for-ai-in-education/), Livingstonek azaltzen du garapenaren zientziak gaur egun aldakortasuna eta testuingurua arau gisa ikusten dituela, eta haurren garapena eta hezkuntza-helburu argiak kontuan hartu gabe ministerioek oinarririk gabe erabakitzeko arriskua dutela.",
+        "Txostenak, gainera, AAri buruz ikasleak hezitzea, goiz hasi behar duen alfabetatzea, eta AA hezitzeko erabiltzea bereiztea proposatzen du, azken honetan onuren froga urriak baitira. Horregatik Livingstonek zuhurtasun-printzipioa «abiapuntu zentzuzko» gisa hartzen du. Common Sense Mediari ere aipu egiten dio: Estatu Batuetako nerabeen % 73k dio inoiz ez duela irakasle batekin hitz egin AA zer den eta nola funtzionatzen duen. Laburpenak ez du laginaren tamainarik ematen.",
+        "[Munduko Ekonomia Foroak](https://reports.weforum.org/docs/WEF_Childrens_Safety_and_WellBeing_in_the_Age_of_AI_2026.pdf), 2026ko irailean argitaratutako white paper batean, debeku zabalen aurkako ikuspegia ekartzen du. Defendatzen du adin-egiaztapena babes-neurri bereizietarako baliagarria dela, baina ez duela heldutasuna zehazten ez eta moderazioa edo kalte baten konponketa bermatzen, eta murrizketa orokorrek onurak blokea ditzaketela eta haurrak gutxiago kontrolatutako zerbitzuetara bultza ditzaketela. Bi jarrerek funtsa partekatzen dute: adinak, bakarrik, ez du tresna bat segurua ez erabilgarria egiten."
+      ]
+    },
+    {
+      "ladillo": "Zer egin dezake irakasle batek",
+      "parrafos": [
+        "14 urtetik beherako ikasleekin, aukerarik zuhurrena eta iritzia eman duten administrazioek eskatzen dutenarekin koherenteena bitartekaritzadun erabilera da: irakasleak tresna maneiatzen du bere ikastetxeko kontuarekin, proiektatu eta komentatu egiten du, eta ikasleek erantzunak aztertu, kontrastatu eta eztabaidatzen dituzte datu pertsonalik sartu gabe. Horrela AA alfabetatzea lehen hezkuntzatik landu daiteke, adibidez txatbot baten akatsak egiaztatuz edo bere erantzuna liburu batekin alderatuz, adingabe batek ere konturik ireki gabe.",
+        "Ikasleek tresna zuzenean erabiliko dutenean, komeni da administrazioak eskaintzen duen hezkuntza-kontuarekin izatea eta ez kontu pertsonal batekin, ikastetxeko administratzaileak gaitu duela eta zer mugarekin egiaztatu ondoren. **Adingabe batek irekitako kontu pertsonala ikastetxearen babesetik kanpo geratzen da, eta adostasunaren eta enpresaren baldintzen mende dago.** Tresna zehatz bati buruz zalantzarik badago, hezkuntza-administrazioko datuak babesteko ordezkariak aholka dezake.",
+        "Familiei jakinarazi behar zaie zer tresna erabiltzen den, zer konturekin eta zertarako, legeak beti bere adostasuna eskatzen ez badu ere. Jarduera bakoitzaren aurretik ikerketak planteatzen dituen galderak lagungarri dira: zer hezkuntza-helburu du, zer frogak babesten duen eta AAri buruz ala AArekin ikasten den. Eta komeni da noizean behin zerbitzuen baldintzak berrikustea, maiz aldatzen baitira."
+      ]
+    }
+  ],
+  "claves": [
+    "Hiru adin desberdin bizi dira batera: zerbitzu bakoitzaren baldintzena, datuak tratatzeko adostasunarena (Espainian 14 urte) eta hezkuntza-administrazio batzuek finkatzen dutena.",
+    "2026ko azaroaren 6an, OpenAIk eta Microsoftek gutxienez 13 urte eskatzen dituzte, Anthropicek 18, eta Googlek Gemini adin guztietarako irekitzen du ikastetxeak kudeatutako hezkuntza-kontuetan soilik.",
+    "Derrigorrezko irakaskuntzan datuen tratamendua hezkuntza-funtzioan oinarritzen da, ez adostasunean, ikastetxeko edo administrazioko tresnak erabiltzen diren bitartean.",
+    "Erkidego bakoitzak erabakitzen du: gutxi batzuek adinak edo baldintzak finkatzen dituzte, beste batzuek beren plataformekin konpontzen dute, eta zazpik ez dute dokumentu propiorik.",
+    "Adostasun-adina 16 urtera igotzen zuen lege-proiektua iraungi egin zen 2026ko urrian Gorteak desegin zirenean.",
+    "UNESCOk eta Munduko Ekonomia Foroak bat datoz: adinak, bakarrik, ez du aski; helburuak, baldintzek eta frogek axola dute."
+  ],
+  "relacionadas": [
+    {
+      "fecha": "2026-11-03",
+      "id": "google-ia-cuentas-escolares"
+    }
+  ],
+  "fuentes": [
+    {
+      "titulo": "Condiciones de uso de Europa (OpenAI) (gaztelaniaz)",
+      "url": "https://openai.com/policies/eu-terms-of-use/"
+    },
+    {
+      "titulo": "¿Es ChatGPT seguro para todas las edades? (OpenAI, laguntza-zentroa) (gaztelaniaz)",
+      "url": "https://help.openai.com/es-es/articles/8313401-es-chatgpt-seguro-para-todas-las-edades"
+    },
+    {
+      "titulo": "Requisitos de edad para gestionar una cuenta de Google (Google, laguntza-zentroa) (gaztelaniaz)",
+      "url": "https://support.google.com/accounts/answer/1350409?hl=es"
+    },
+    {
+      "titulo": "Qué necesitas para iniciar sesión en las aplicaciones de Gemini (Google) (gaztelaniaz)",
+      "url": "https://support.google.com/gemini/answer/13278668?hl=es"
+    },
+    {
+      "titulo": "Guiar la experiencia de tu hijo/a con las aplicaciones de Gemini (Google) (gaztelaniaz)",
+      "url": "https://support.google.com/gemini/answer/16109150?hl=es"
+    },
+    {
+      "titulo": "Gestionar tu plan de IA de Google desde las aplicaciones de Gemini (Google) (gaztelaniaz)",
+      "url": "https://support.google.com/gemini/answer/14517446?hl=es"
+    },
+    {
+      "titulo": "Guía de inicio rápido de Gemini y Gemini Notebook para Education (Google Workspace, 2026-10-28) (gaztelaniaz)",
+      "url": "https://knowledge.workspace.google.com/admin/getting-started/editions/quickstart-guide-to-gemini-and-gemini-notebook-for-education?hl=es"
+    },
+    {
+      "titulo": "Controlar el acceso a los servicios de Google por edad (Google Workspace) (gaztelaniaz)",
+      "url": "https://knowledge.workspace.google.com/admin/getting-started/editions/control-access-to-google-services-by-age?hl=es"
+    },
+    {
+      "titulo": "Condiciones de uso de Microsoft Copilot para particulares (Microsoft, 2026-08-18) (gaztelaniaz)",
+      "url": "https://www.microsoft.com/es-es/microsoft-copilot/for-individuals/termsofuse"
+    },
+    {
+      "titulo": "Microsoft 365 Copilot Chat for students 13+ (Microsoft Education Blog, 2025eko abuztua) (ingelesez)",
+      "url": "https://techcommunity.microsoft.com/blog/educationblog/microsoft-365-copilot-chat-for-students-13/4440370"
+    },
+    {
+      "titulo": "Consumer Terms of Service (Anthropic, 2025-10-08) (ingelesez)",
+      "url": "https://www.anthropic.com/legal/consumer-terms"
+    },
+    {
+      "titulo": "Ley Orgánica 3/2018, de Protección de Datos Personales y garantía de los derechos digitales, 7. artikulua (BOE) (gaztelaniaz)",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673#a7"
+    },
+    {
+      "titulo": "¿Cuál es la edad para que los menores puedan prestar consentimiento para tratar sus datos personales? (AEPD) (gaztelaniaz)",
+      "url": "https://www.aepd.es/preguntas-frecuentes/10-menores-y-educacion/FAQ-1001-cual-es-la-edad-para-que-los-menores-puedan-prestar-consentimiento-para-tratar-sus-datos-personales"
+    },
+    {
+      "titulo": "¿Pueden los centros educativos impartir clases y realizar exámenes online sin el consentimiento de los interesados? (AEPD) (gaztelaniaz)",
+      "url": "https://www.aepd.es/preguntas-frecuentes/10-menores-y-educacion/FAQ-1009-pueden-los-centros-educativos-impartir-clases-y-realizar-examenes-online-sin-el-consentimiento-de-los-interesados"
+    },
+    {
+      "titulo": "Proyecto de Ley Orgánica para la protección de las personas menores de edad en los entornos digitales (BOCG, Kongresua, 121/000052) (gaztelaniaz)",
+      "url": "https://www.congreso.es/public_oficiales/L15/CONG/BOCG/A/BOCG-15-A-52-1.PDF"
+    },
+    {
+      "titulo": "Ficha de tramitación del proyecto 121/000052 (Diputatuen Kongresua) (gaztelaniaz)",
+      "url": "https://www.congreso.es/es/proyectos-de-ley?p_p_id=iniciativas&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_iniciativas_mode=mostrarDetalle&_iniciativas_legislatura=XV&_iniciativas_id=121%2F000052"
+    },
+    {
+      "titulo": "Reglamento (UE) 2024/1689 de Inteligencia Artificial (DOUE, BOEn) (gaztelaniaz)",
+      "url": "https://www.boe.es/buscar/doc.php?id=DOUE-L-2024-81079"
+    },
+    {
+      "titulo": "Ley de IA: marco regulador (Europako Batzordea, 2026-10-19an eguneratua) (gaztelaniaz)",
+      "url": "https://digital-strategy.ec.europa.eu/es/policies/regulatory-framework-ai"
+    },
+    {
+      "titulo": "Orientacions per a l’ús de la intel·ligència artificial als centres educatius (Kataluniako Generalitatea, 2026) (katalanez)",
+      "url": "https://t.me/ChatGPTedu/21753/53605"
+    },
+    {
+      "titulo": "Guía para el uso de las inteligencias artificiales en el ámbito educativo (Eusko Jaurlaritzako Hezkuntza Saila) (gaztelaniaz)",
+      "url": "https://www.euskadi.eus/contenidos/documentacion/inn_doc_adi_artif/es_def/adjuntos/Guia-uso-de-IA-en-educacion_Euskadi.pdf"
+    },
+    {
+      "titulo": "Guía sobre el uso de la inteligencia artificial en el ámbito educativo, 2.0 bertsioa (INTEF, 2026ko iraila) (gaztelaniaz)",
+      "url": "https://intef.es/wp-content/uploads/2026/09/ACTUALIZACION-GUIA-DE-LA-IA-DEF-1-SEPT-2026-Publicable-v5-2.pdf"
+    },
+    {
+      "titulo": "Nueva versión de la «Guía sobre el uso de la inteligencia artificial en el ámbito educativo» (INTEF, 2026-09-08) (gaztelaniaz)",
+      "url": "https://intef.es/Noticias/nueva-version-de-la-guia-sobre-el-uso-de-la-inteligencia-artificial-en-el-ambito-educativo/"
+    },
+    {
+      "titulo": "UNESCO: Governments must quickly regulate Generative AI in schools (UNESCO, 2023-09-07) (ingelesez)",
+      "url": "https://www.unesco.org/en/articles/unesco-governments-must-quickly-regulate-generative-ai-schools"
+    },
+    {
+      "titulo": "Is there a right age for AI in education? (Sonia Livingstone, Media@LSE, 2026-09-22) (ingelesez)",
+      "url": "https://blogs.lse.ac.uk/medialse/2026/09/22/is-there-a-right-age-for-ai-in-education/"
+    },
+    {
+      "titulo": "Children's Safety and Well-Being in the Age of AI: Best Practices and Incentives (Munduko Ekonomia Foroa, 2026ko iraila) (ingelesez)",
+      "url": "https://reports.weforum.org/docs/WEF_Childrens_Safety_and_WellBeing_in_the_Age_of_AI_2026.pdf"
+    },
+    {
+      "titulo": "Google says that students in schools that ban AI won't have access to Search (Engadget, 2026-11-03) (ingelesez)",
+      "url": "https://www.engadget.com/2305432/google-says-that-students-in-schools-that-ban-ai-wont-have-access-to-search/"
+    },
+    {
+      "titulo": "Orden de 8 de septiembre de 2025 de la Consejería de Educación y Formación Profesional de la Región de Murcia (BORM) (gaztelaniaz)",
+      "url": "https://www.borm.es/services/anuncio/ano/2025/numero/4232/pdf?id=838315"
+    },
+    {
+      "titulo": "Política de uso aceptable de la IA en los centros educativos de la Comunidad de Madrid (Consejería de Digitalización, 25-09-2026) (gaztelaniaz)",
+      "url": "https://www.educa2.madrid.org/web/educamadrid/principal/files/1cff6bb2-8b91-48fc-ae7b-a3d3b62d1d84/Convenios/Documentos%20comunes/Politica%20de%20uso%20aceptable%20de%20la%20IA%20en%20centros%20educativos.pdf"
+    },
+    {
+      "titulo": "Directrices de uso de Google Workspace for Education y herramientas de IA (Madrilgo Erkidegoa, 2026-07-09) (gaztelaniaz)",
+      "url": "https://www.educa2.madrid.org/web/educamadrid/principal/files/1cff6bb2-8b91-48fc-ae7b-a3d3b62d1d84/Convenios/Google/Directrices%20de%20Uso%20de%20los%20Servicios%20de%20GWS.pdf"
+    },
+    {
+      "titulo": "Guía de buenas prácticas para el uso de Google Workspace for Education y la protección de datos, v08 (Junta de Andalucía, 28-10-2026) (gaztelaniaz)",
+      "url": "https://www.juntadeandalucia.es/educacion/eaprendizaje/wp-content/uploads/2026/10/261028_Guia-de-Buenas-Practicas_Google_v08.pdf"
+    },
+    {
+      "titulo": "Recomendaciones de uso de la IA en el G Suite educativo (Kanarietako Gobernua, 2025-12-22) (gaztelaniaz)",
+      "url": "https://www3.gobiernodecanarias.org/medusa/ecoescuela/gsuite/2025/12/22/recomendaciones-de-uso-de-la-ia-en-el-g-suite-educativo/"
+    },
+    {
+      "titulo": "Guia d'ajuda a la planificació d'accions formatives sobre intel·ligència artificial. PAF 2026-2027 (CEFIRE, Generalitat Valenciana) (valentzieraz)",
+      "url": "https://portal.edu.gva.es/cefire/wp-content/uploads/sites/1992/2026/09/Guia_accions_formatives_IA_PAF_2026-2027_VAL.pdf"
+    },
+    {
+      "titulo": "Instrucción n.º 6/2026 sobre el uso de teléfonos móviles y otros dispositivos digitales (Junta de Extremadura, 20-08-2026) (gaztelaniaz)",
+      "url": "https://www.educarex.es/pub/cont/com/0061/documentos/Instrucci%C3%B3n_6_2026_USO_DISPOSITIVOS_DIGITALES%28F%29.pdf"
+    },
+    {
+      "titulo": "Circular de inicio de curso 2026-2027, anexo F: protección de datos personales (Principado de Asturias) (gaztelaniaz)",
+      "url": "https://www.educastur.es/documents/34868/38433/Anexo_F_PROTECCION_DATOSPERSONALES_CPUBLICOS.pdf/c639b6d8-b281-8274-f2cf-5d11b8631cca"
+    },
+    {
+      "titulo": "Anteproxecto de Lei de educación dixital de Galicia (Xunta de Galicia) (galizieraz)",
+      "url": "https://transparencia.xunta.gal/tema/informacion-de-relevancia-xuridica/normativa-en-tramitacion/en-prazo-de-envio-de-suxestions/-/nt/0825/anteproxecto-lei-educacion-dixital-galicia"
+    },
+    {
+      "titulo": "Guía para el uso de la inteligencia artificial en el ámbito educativo (Educación y protección de datos, Gobierno de La Rioja) (gaztelaniaz)",
+      "url": "https://www.larioja.org/edu-proteccion-datos/es/novedades/guia-uso-inteligencia-artificial"
+    }
+  ],
+  "mensaje": {
+    "grupo": "chatgpt",
+    "id": 53933
+  },
+  "comprobado": "Verificador, 6-11-2026 (véase reportajes/2026-11-07.json); traducción al euskera sin cambios de contenido. No se han encontrado versiones oficiales en euskera de las fuentes (Google Help devuelve la página en castellano; la guía de Euskadi en euskera da 404).",
+  "ilustracion": "Infografía en tres franjas horizontales, una por regla, sobre una regla graduada de 0 a 18 años. Franja 1, «Condiciones de las empresas»: marcas en 13 (OpenAI, Microsoft, Gemini personal), 18 (Anthropic) y un tramo sombreado «todas las edades, solo con cuenta del centro» para Gemini en Workspace for Education. Franja 2, «Ley de protección de datos»: una línea en 14 años, «consentimiento propio», con la nota «en el centro, la base es la función educativa». Franja 3, «Guías educativas»: Cataluña, menos de 14 «lo maneja el docente» y de 14 a 18 «con autorización»; Euskadi, sin chatbots antes de 13. Al pie, tres preguntas que sustituyen a «¿qué edad?»: ¿para qué?, ¿con qué cuenta?, ¿quién la maneja?",
+  "ilustracion_alt": "0tik 18 urtera bitarteko adin-erregela bati buruzko infografia, 13, 14 eta 18an markekin, hiru bloketan. «Enpresak»: «OpenAI eta Microsoft: 13tik aurrera», 13tik 18ra lerro batekin; «Anthropic: 18tik aurrera», 18an puntu batekin; eta «Gemini ikastetxearen kontuarekin: adin guztiak», 0tik 18ra barra batekin. «Datuen legea»: «Norberaren adostasuna: 14tik aurrera», 14ra arte lerro etena eta hortik aurrera jarraitua; eta «Ikastetxean, adostasunik gabe: hezkuntza-eginkizuna», 0tik 18ra barra batekin. «Hezkuntza-administrazio batzuk»: «Katalunia: AA irakasleak erabiltzen du», 14ra arteko lerro gorri batekin, eta «14tik aurrera: informatu, baimena gomendagarria», 14tik aurrerako lerro batekin; eta «Euskadi: txatbotak 13tik aurrera», 13 baino lehen gurutze batekin eta hortik aurrera lerro batekin; eta «Murtzia: sarbide autonomoa DBHko 3. mailatik», 14ra arte lerro etena eta hortik aurrera jarraitua. Oinean, «Zertarako? Zer konturekin? Nork maneiatzen du?».",
+  "repaso": [
+    "Traducción del reportaje en castellano 2026-11-07; el repaso del original se aplica igual."
+  ],
+  "reserva": "escrito el 2026-11-06 como reportaje de reserva (2099-02-01)"
+}

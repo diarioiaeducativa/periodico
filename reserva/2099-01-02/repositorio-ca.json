@@ -11,7 +11,7 @@
       "titular": "Una guia interactiva perquè l'alumnat calculi el MCD i el mcm descomponent en factors primers",
       "entradilla": "«MCD · mcm» proposa arrossegar factors primers per arribar al màxim comú divisor i al mínim comú múltiple. S'obre al navegador, sense compte, i està en català.",
       "cuerpo": [
-        "«MCD · mcm – Guia visual» és una aplicació web creada per Felip Sarroca, amb l'assistència de la intel·ligència artificial, per treballar el màxim comú divisor (MCD) i el mínim comú múltiple (mcm). Segons la fitxa del repositori, està pensada per a Primària i Secundària, en l'àrea de pensament logicomatemàtic, i la seva interfície i els seus textos són en català.",
+        "«[MCD · mcm – Guia visual](https://ja.cat/mcd)» és una aplicació web creada per Felip Sarroca, amb l'assistència de la intel·ligència artificial, per treballar el màxim comú divisor (MCD) i el mínim comú múltiple (mcm). Segons la fitxa del repositori, està pensada per a Primària i Secundària, en l'àrea de pensament logicomatemàtic, i la seva interfície i els seus textos són en català.",
         "Segons la seva fitxa, l'aplicació no es limita a donar el resultat: guia el procés perquè sigui l'alumne qui arribi a la solució. A la pantalla inicial s'introdueixen dos, tres o quatre nombres enters positius i es prem «Comença». A partir d'aquí, la feina consisteix a arrossegar nombres primers des d'un tauler de botons fins a la casella corresponent per descompondre cada nombre; repetir un factor serveix per indicar un quadrat, un cub, etc. La pàgina recorda que el MCD usa els factors comuns amb el menor exponent i el mcm, tots els factors amb el major. Un botó, «Comprova i calcula», comprova la feina i calcula el resultat.",
         "Hi ha tres modes, que es trien a la part superior. En el «Mode lliure», l'alumnat introdueix els nombres que vulgui i recorre el procediment. A «Pràctica» es tria una dificultat (fàcil, mitjana o difícil) o un conjunt nou de nombres. A «Problemes», la fitxa indica que es plantegen problemes contextualitzats; es demana un problema nou, es tria si es calcula el MCD o el mcm i es comença la resolució.",
         "A classe pot servir per introduir la descomposició factorial amb la projecció a la pissarra digital, perquè l'alumnat practiqui al seu ritme amb ordinador o tauleta, o per reforçar l'aplicació d'ambdós conceptes a situacions quotidianes. Com que és en català, és especialment útil en aules d'aquesta llengua; en d'altres pot requerir una breu explicació del vocabulari dels botons.",
@@ -31,7 +31,10 @@
         }
       ],
       "fuentes": [
-        {"titulo": "MCD · mcm – Guia visual", "url": "https://ja.cat/mcd"}
+        {
+          "titulo": "MCD · mcm – Guia visual",
+          "url": "https://ja.cat/mcd"
+        }
       ],
       "comprobado": "Revisado: vista la captura de MCD · mcm (tres pestañas, dos casillas, «+ Afegeix nombre», «Comença», créditos y licencia CC BY-NC-SA 4.0) y abierta con WebFetch la web (ja.cat/mcd redirige a la web de la aplicación): confirma los tres modos, la entrada de 2 a 4 números, el arrastre de primos a casillas, las potencias por repetición, «Comprova i calcula», las dificultades Fàcil/Mitjana/Difícil, «Nou problema» con elección de MCD o mcm; sin cuenta ni servicio externo. No se pudo probar el funcionamiento interactivo completo; los problemas contextualizados constan en la ficha y se atribuyen a ella. Los otros dos candidatos (KineGraphIA, Terra Viva) no se eligieron y no se descartan."
     }

@@ -1,0 +1,49 @@
+{
+  "fecha": "2026-11-07",
+  "piezas": [
+    {
+      "id": "itinerancias",
+      "seccion": "vibecoding",
+      "repositorio": "dia",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "New in the repository",
+      "titular": "A calculator splits the working week of peripatetic teachers across several schools in the Valencian Community",
+      "entradilla": "Itinerancias, created by José Luis Miralles Bono, calculates how the non-teaching hours are divided among the schools of a teacher who is shared between them, according to the teaching hours they give in each one. It opens in the browser, in Spanish and Valencian, and also offers an Excel spreadsheet with the same calculation.",
+      "cuerpo": [
+        "[Itinerancias](https://jlmirallesb.github.io/itinerancias/) is a tool designed for school leadership teams and teachers who work in more than one school in the Valencian Community. Its aim is to split the working week of the peripatetic teacher across those schools using an explicit calculation that all parties can check. It was created by José Luis Miralles Bono, with the help of Claude, and is listed in the Vibe Coding Educativo resource repository with an AGPL v3 licence for the code; the page itself states that the content is CC BY-SA 4.0.",
+        "The application is organised into five tabs: Tablas (Tables), Consulta (Query), Calculadora (Calculator), Negociar (Negotiate) and Normativa (Regulations). The first, which is the one you see on opening it, explains the two methods of allocation. The proportional method assigns non-teaching hours in line with the teaching hours given in each school, to the minute, on a basis of 18 teaching periods. The block method rounds those non-teaching hours to whole hours and offsets the difference in another item, so that the total does not change and only a few minutes vary between items. There is also a comparison of the two and a breakdown guide, which can be edited row by row and is saved only in the browser.",
+        "A selector lets users choose how many non-teaching hours are deducted for each additional teaching hour, also with 19 or 20 teaching periods: 2, 1 or 0. The page points out that the start-of-year resolution speaks of «a maximum of two non-teaching hours for each teaching period».",
+        "According to its entry, the negotiation tab allows schools to agree the allocation through links that can be shared. The page states that nothing typed leaves the browser, except for the links that each person chooses to send.",
+        "It is used without an account and without installing anything, and the «Descargar Excel» (Download Excel) button offers the spreadsheet with the same calculation. It has light and dark modes. Its author warns that it is a support tool for leadership teams and not an official application of the Generalitat Valenciana."
+      ],
+      "recursos": [
+        {
+          "id": "itinerancias",
+          "titulo": "Itinerancias",
+          "autoria": "José Luis Miralles Bono",
+          "url": "https://jlmirallesb.github.io/itinerancias/",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://jlmirallesb.github.io/itinerancias/",
+          "licencia": "AGPL v3",
+          "captura": "2026-11-07-itinerancias.jpg",
+          "captura_alt": "The «Tablas» tab of Itinerancias, with a selector for non-teaching hours and expandable sections on proportional and block allocation.",
+          "texto": []
+        }
+      ],
+      "fuentes": [
+        {
+          "titulo": "Itinerancias (in Spanish)",
+          "url": "https://jlmirallesb.github.io/itinerancias/"
+        }
+      ],
+      "comprobado": "Revisor: captura vista con Read (pestaña Tablas, versión 1.0.3, botones de Excel, tema y idioma Castellano/Valencià, cinco pestañas, apartados de reparto) y texto visible de la entrada contrastado. WebFetch solo devolvió el título (la página requiere JavaScript). Las pestañas Consulta, Calculadora, Negociar y Normativa no se ven en la captura; lo de negociar por enlaces se atribuye a la ficha. Autoría, licencia, ficha, captura e idiomas (Español, Català) coinciden con la entrada. Sin enlaces a lo ya publicado: nada relacionado en publicado.txt."
+    }
+  ],
+  "descartado": [],
+  "repaso": [
+    "Entradilla: lo que calcula es el reparto de horas complementarias según las lectivas de cada centro, no «cuántas horas lectivas y complementarias corresponden a cada centro».",
+    "Quitada la frase sobre cómo se hizo la revisión («En esta revisión solo se ha visto la primera pestaña…»), que no es del artículo; lo de negociar sigue como «según su ficha».",
+    "«otra categoría» pasa a «otra partida», más fiel a la página; quitada la valoración final («punto de partida concreto») y ajustada la extensión al encargo.",
+    "Comprobados sin cambios: título, autoría, licencia, ficha, captura, captura_alt e idiomas."
+  ]
+}

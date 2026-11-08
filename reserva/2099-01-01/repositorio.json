@@ -11,7 +11,7 @@
       "titular": "Un editor web permite diseñar cromos coleccionables de fauna y flora para el aula",
       "entradilla": "El Generador de Cromos Eco-Duel, creado por David Cordones, ofrece un formulario para componer tarjetas con datos de animales y plantas, con una colección por curso, desde 1.º de Primaria hasta 2.º de Bachillerato.",
       "cuerpo": [
-        "El Generador de Cromos Eco-Duel es un editor que se abre en el navegador y muestra, a la izquierda, un formulario y, a la derecha, el cromo que se va componiendo. Según la ficha del repositorio, está pensado para crear material didáctico en forma de tarjetas coleccionables, resumir conceptos o evaluar conocimientos de manera lúdica. La ficha lo sitúa entre Primaria y formación del profesorado, y su autor es David Cordones.",
+        "El [Generador de Cromos Eco-Duel](https://elcordones.github.io/generador_cromos/) es un editor que se abre en el navegador y muestra, a la izquierda, un formulario y, a la derecha, el cromo que se va componiendo. Según la ficha del repositorio, está pensado para crear material didáctico en forma de tarjetas coleccionables, resumir conceptos o evaluar conocimientos de manera lúdica. La ficha lo sitúa entre Primaria y formación del profesorado, y su autor es David Cordones.",
         "El formulario pide el tipo de cromo (fauna o flora), el nombre, un grupo o subtítulo (mamífero, ave, reptil, anfibio, pez, insecto y otros, en el caso de la fauna) y una imagen que se sube desde el dispositivo. Después se fijan valores como tamaño y velocidad con deslizadores, el nivel trófico (de productor a superdepredador), la rareza, la dieta, el hábitat, la actividad (diurna, nocturna…) y un dato curioso. Cada cromo se asigna además a una colección, que puede ser un curso, de 1.º de Primaria a 2.º de Bachillerato y FP Básica, o una opción personalizada, y lleva un número.",
         "En clase, la herramienta se presta a que el alumnado elabore sus propios cromos tras investigar una especie, o a que el profesorado prepare una colección para un juego de comparación de características en Ciencias Naturales. La interfaz se puede cambiar entre catalán, castellano e inglés, y el ejemplo que muestra al abrirla, un jabalí, está en catalán. Bajo el cromo hay dos botones, «Descarregar» y «Copiar»; la página no indica en qué formato se descarga ni qué se copia.",
         "Al abrir la página no se ve ningún registro ni inicio de sesión. El pie indica que el código tiene licencia AGPL v3 y los contenidos, CC BY-SA 4.0, lo que coincide con la licencia declarada en la ficha."
@@ -30,11 +30,16 @@
         }
       ],
       "fuentes": [
-        {"titulo": "Generador de Cromos Eco-Duel", "url": "https://elcordones.github.io/generador_cromos/"}
+        {
+          "titulo": "Generador de Cromos Eco-Duel",
+          "url": "https://elcordones.github.io/generador_cromos/"
+        }
       ],
       "comprobado": "Repaso: se miró la captura (editor con cromo de ejemplo «Senglar», botones Descarregar y Copiar, selector CA, pie con autoría y licencias) y el texto visible de la entrada, y se abrió la web con WebFetch, que confirmó los campos del formulario, los botones, los idiomas CA/ES/EN, la ausencia de registro visible y las licencias del pie. Título, autoría, licencia, ficha y archivo de la captura coinciden con la entrada. No se ha probado la descarga ni la copia. No hay enlaces a lo ya publicado. Los otros dos candidatos no se han elegido y no se descartan."
     }
   ],
   "descartado": [],
-  "repaso": ["sin cambios"]
+  "repaso": [
+    "sin cambios"
+  ]
 }

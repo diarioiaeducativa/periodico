@@ -9,7 +9,7 @@
       "grupo": "vce",
       "antetitulo": "Biltegiaren astea",
       "titular": "Esaldien enkante bat, vibe coding arduratsuaren gida bat, kimika, musika eta liburu ilustratuak, berriak biltegian",
-      "entradilla": "Urriaren 27tik, Vibe Coding Educativoren Baliabideen biltegiak hamasei baliabide berri ditu: hamarrek dagoeneko izan dute beren artikulua egunkarian, eta sei hemen aurkezten dira: bi Juanjo de Harorenak, bat Felip Sarrocarena, bat FiQuiPediarena eta bi Samuel Sorianorenak.",
+      "entradilla": "Urriaren 27tik, Vibe Coding Educativoren Baliabideen biltegiak hamasei baliabide berri ditu: hamarrek dagoeneko izan dute beren artikulua egunkarian, eta sei hemen aurkezten dira: bi Juan José de Harorenak, bat Felip Sarrocarena, bat FiQuiPediarena eta bi Samuel Sorianorenak.",
       "cuerpo": [
         "Hemen aurkezten dira egunkariak oraindik kontatu ez zituen lizentzia irekiko sei baliabide: eztabaida-dinamika bat, AArekin sortutakoa arduraz argitaratzeko gida bat, kimikako formulazio- eta estekiometria-aplikazio bi, musika-jolasen multzo bat eta liburu ilustratuen tailer bat. Nabigatzailean irekitzen dira, eta, bakoitzean adierazten denaz gain, konturik gabe. Pertsona beraren baliabideak elkarrekin doaz."
       ],
@@ -17,27 +17,27 @@
         {
           "id": "subasta-de-frases",
           "titulo": "Subasta de frases",
-          "autoria": "Juanjo de Haro",
+          "autoria": "Juan José de Haro",
           "url": "https://jjdeharo.github.io/subasta_frases/",
           "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://jjdeharo.github.io/subasta_frases/",
           "licencia": "AGPL v3 (kodea) · CC BY-SA 4.0 (edukiak)",
           "captura": "2026-11-06-subasta-de-frases.jpg",
           "captura_alt": "Subasta de frasesen hasierako orria, «Crear una actividad» eta «Unirse a una sesión» botoiekin eta hiru txartelekin: Conocimiento, Valores y prioridades, Roles y conceptos.",
           "texto": [
-            "Juanjo de Harok dinamika parte-hartzaile bat sortu du: irakasleak enkante bat prestatzen du, eta ikasleak saio-kode batekin batzen dira esaldien alde pujatzera. Hiru modu ditu: «Conocimiento», zeinetan zuzentzat jotzen diren baieztapenen alde pujatzen den eta erabakia defendatzen den; «Valores y prioridades», zeinak aurrekontu mugatu bat banatzen duen taldearentzat garrantzitsuenak diren ideien artean; eta «Roles y conceptos», zeinetan parekatzea asmatzeak puntuak gehitzen dituen eta oker egiteak kentzen dituen. Orriak adierazten duenez, ez du erregistrorik behar eta datuak iragankorrak dira. Sei hizkuntzatan eskaintzen da, horien artean gaztelania, katalana, galegoa eta euskara. AGPL v3 lizentzia kodearentzat eta CC BY-SA 4.0 edukientzat."
+            "Juan José de Harok dinamika parte-hartzaile bat sortu du: irakasleak enkante bat prestatzen du, eta ikasleak saio-kode batekin batzen dira esaldien alde pujatzera. Hiru modu ditu: «Conocimiento», zeinetan zuzentzat jotzen diren baieztapenen alde pujatzen den eta erabakia defendatzen den; «Valores y prioridades», zeinak aurrekontu mugatu bat banatzen duen taldearentzat garrantzitsuenak diren ideien artean; eta «Roles y conceptos», zeinetan parekatzea asmatzeak puntuak gehitzen dituen eta oker egiteak kentzen dituen. Orriak adierazten duenez, ez du erregistrorik behar eta datuak iragankorrak dira. Sei hizkuntzatan eskaintzen da, horien artean gaztelania, katalana, galegoa eta euskara. AGPL v3 lizentzia kodearentzat eta CC BY-SA 4.0 edukientzat."
           ]
         },
         {
           "id": "vibe-coding-responsable",
           "titulo": "Vibe coding responsable",
-          "autoria": "Juanjo de Haro",
+          "autoria": "Juan José de Haro",
           "url": "https://vibe-coding-educativo.github.io/vibe-responsable",
           "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://vibe-coding-educativo.github.io/vibe-responsable",
           "licencia": "AGPL-3.0 (kodea); CC-BY-SA-4.0 (edukiak)",
           "captura": "2026-11-06-vibe-coding-responsable.jpg",
           "captura_alt": "Vibe coding responsable gidaren «Presentación» orria, eskuinean hamar gomendioko infografia bat eta hasteko hiru urratsak dituela.",
           "texto": [
-            "Juanjo de Harok gida ez-tekniko bat argitaratu du vibe coding bidez AArekin sortutako materialak partekatzen dituzten irakasleentzat. Aurkezpenaren arabera, lizentziarik gabe zirkulatzen duten edo ikasleen datuak kanpoko zerbitzuetara bidaltzen dituzten materialetatik sortu da, eta hamar gomendio proposatzen ditu: eduki zuzena, datuen babesa, irisgarritasuna, egiletza aitortzea, AA erabili dela adieraztea eta lizentzia librea, besteak beste. Infografia bat, animazio bat, sortzean AAri emateko deskargatu daitezkeen jarraibideak eta baliabide bat ebaluatzeko errubrika bat (VCER) ditu. Webean irakurtzen da, PDF bertsioa dago eta bost hizkuntzatan eskaintzen da. Egilearen esanetan, iradokizunei irekita dago."
+            "Juan José de Harok gida ez-tekniko bat argitaratu du vibe coding bidez AArekin sortutako materialak partekatzen dituzten irakasleentzat. Aurkezpenaren arabera, lizentziarik gabe zirkulatzen duten edo ikasleen datuak kanpoko zerbitzuetara bidaltzen dituzten materialetatik sortu da, eta hamar gomendio proposatzen ditu: eduki zuzena, datuen babesa, irisgarritasuna, egiletza aitortzea, AA erabili dela adieraztea eta lizentzia librea, besteak beste. Infografia bat, animazio bat, sortzean AAri emateko deskargatu daitezkeen jarraibideak eta baliabide bat ebaluatzeko errubrika bat (VCER) ditu. Webean irakurtzen da, PDF bertsioa dago eta bost hizkuntzatan eskaintzen da. Egilearen esanetan, iradokizunei irekita dago."
           ]
         },
         {

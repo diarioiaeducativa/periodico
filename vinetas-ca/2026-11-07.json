@@ -1,0 +1,32 @@
+{
+  "fecha": "2026-11-07",
+  "elegida": {
+    "n": 2,
+    "pieza": "memoria-agentes-ia",
+    "idea": "Al costat de la fotocopiadora, Algorisme porta de la seva revisió nocturna una proposta per al perfil de Guix: «Diu que ho revisarà després. Mai no ho revisa». Com que els canvis del perfil necessiten la seva aprovació, Algorisme ja sap quan arribarà.",
+    "guion": {"vinetas": [
+      {"cartela": "A primera hora",
+       "escenario": "fotocopiadora",
+       "tiza": {"expresion": "agotado", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "orgulloso", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+       "objeto": "taza", "lleva": "tiza",
+       "bocadillos": [
+         {"quien": "algoritmo", "texto": "Anit vaig fer la meva revisió. Porto una proposta per al teu perfil.", "tipo": "habla"},
+         {"quien": "tiza", "texto": "A veure.", "tipo": "habla"}]},
+      {"escenario": "fotocopiadora",
+       "tiza": {"expresion": "pensativo", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "neutral", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+       "objeto": "taza", "lleva": "tiza",
+       "bocadillos": [
+         {"quien": "algoritmo", "texto": "Afegir: «Diu que ho revisarà després. Mai no ho revisa».", "tipo": "habla"}]},
+      {"escenario": "fotocopiadora",
+       "tiza": {"expresion": "avergonzado", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "harto", "postura": "encoger", "lugar": "derecha", "mira": "izquierda"},
+       "objeto": "taza", "lleva": "tiza",
+       "bocadillos": [
+         {"quien": "tiza", "texto": "Els canvis en el meu perfil necessiten la meva aprovació.", "tipo": "habla"},
+         {"quien": "algoritmo", "texto": "Ja. Ho revisaràs després.", "tipo": "habla"}]}
+    ]}
+  },
+  "traduccion": "automàtica amb IA"
+}

@@ -1,0 +1,127 @@
+{
+  "fecha": "2026-11-07",
+  "candidatas": [
+    {
+      "pieza": "memoria-agentes-ia",
+      "idea": "Domingo por la noche, Tiza corrige exámenes en casa y Algoritmo presume de su repaso nocturno: revisar lo hecho, corregir errores y preparar lo de mañana; Tiza ya tiene nombre para eso: domingo.",
+      "guion": {"vinetas": [
+        {"cartela": "Domingo, 23:40",
+         "escenario": "casa_noche",
+         "tiza": {"expresion": "agotado", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "orgulloso", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+         "objeto": "examenes",
+         "bocadillos": [
+           {"quien": "algoritmo", "texto": "Me voy a dormir. De noche repaso lo del día: lo llaman «dreaming».", "tipo": "habla"}]},
+        {"escenario": "casa_noche",
+         "tiza": {"expresion": "pensativo", "postura": "pensar", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "neutral", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+         "objeto": "examenes",
+         "bocadillos": [
+           {"quien": "algoritmo", "texto": "Reviso lo que hice, corrijo errores y preparo lo de mañana.", "tipo": "habla"}]},
+        {"escenario": "casa_noche",
+         "tiza": {"expresion": "harto", "postura": "encoger", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "sorprendido", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+         "objeto": "examenes",
+         "bocadillos": [
+           {"quien": "tiza", "texto": "Qué bonito. Yo a eso lo llamo domingo.", "tipo": "habla"}]}
+      ]}
+    },
+    {
+      "pieza": "memoria-agentes-ia",
+      "idea": "En dirección, Algoritmo trae de su repaso nocturno una propuesta para el perfil de Tiza, «dice que lo revisará luego»; como el cambio necesita su aprobación, Algoritmo ya sabe cuándo llegará.",
+      "guion": {"vinetas": [
+        {"escenario": "despacho",
+         "tiza": {"expresion": "neutral", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "orgulloso", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+         "objeto": "taza", "lleva": "tiza",
+         "bocadillos": [
+           {"quien": "algoritmo", "texto": "Anoche hice mi repaso. Te traigo una propuesta para tu perfil.", "tipo": "habla"},
+           {"quien": "tiza", "texto": "A ver.", "tipo": "habla"}]},
+        {"escenario": "despacho",
+         "tiza": {"expresion": "pensativo", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "neutral", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+         "objeto": "taza", "lleva": "tiza",
+         "bocadillos": [
+           {"quien": "algoritmo", "texto": "Añadir: «Dice que lo revisará luego. No lo revisa».", "tipo": "habla"}]},
+        {"escenario": "despacho",
+         "tiza": {"expresion": "avergonzado", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "harto", "postura": "encoger", "lugar": "derecha", "mira": "izquierda"},
+         "objeto": "taza", "lleva": "tiza",
+         "bocadillos": [
+           {"quien": "tiza", "texto": "Los cambios del perfil necesitan mi aprobación.", "tipo": "habla"},
+           {"quien": "algoritmo", "texto": "Ya. Lo revisarás luego.", "tipo": "habla"}]}
+      ]}
+    },
+    {
+      "pieza": "memoria-agentes-ia",
+      "idea": "En pleno claustro, Algoritmo anuncia que ahora guarda las conversaciones; Tiza le pide borrar lo que le ha susurrado, y se borra de las transcripciones... pero ya estaba en las notas y en la wiki.",
+      "guion": {"vinetas": [
+        {"escenario": "claustro",
+         "tiza": {"expresion": "neutral", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "orgulloso", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "algoritmo", "texto": "Novedad: ahora guardo nuestras conversaciones para recordarlas.", "tipo": "habla"},
+           {"quien": "tiza", "texto": "¿También lo que te he dicho durante este claustro?", "tipo": "habla"}]},
+        {"escenario": "claustro",
+         "tiza": {"expresion": "preocupado", "postura": "senalar", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "cargando", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "tiza", "texto": "Bórralo. Ahora mismo.", "tipo": "habla"},
+           {"quien": "algoritmo", "texto": "Borrado de las transcripciones.", "tipo": "habla"}]},
+        {"escenario": "claustro",
+         "tiza": {"expresion": "avergonzado", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "orgulloso", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "algoritmo", "texto": "Eso sí, ya lo había pasado a mis notas. Y a la wiki, con enlaces.", "tipo": "habla"}]}
+      ]}
+    },
+    {
+      "pieza": "holmio-juego-quimica",
+      "idea": "En la biblioteca, Algoritmo se lanza al caso del día de la tabla periódica y gasta las seis acusaciones en un segundo, en orden de número atómico y sin leer el informe.",
+      "guion": {"vinetas": [
+        {"escenario": "biblioteca",
+         "tiza": {"expresion": "neutral", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "orgulloso", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+         "objeto": "libro", "lleva": "tiza",
+         "bocadillos": [
+           {"quien": "tiza", "texto": "Caso del día: 118 sospechosos, seis acusaciones. Primero, el informe.", "tipo": "habla"},
+           {"quien": "algoritmo", "texto": "¡Déjame a mí!", "tipo": "habla"}]},
+        {"escenario": "biblioteca",
+         "tiza": {"expresion": "sorprendido", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "riendo", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+         "objeto": "libro", "lleva": "tiza",
+         "bocadillos": [
+           {"quien": "algoritmo", "texto": "¡Hidrógeno! ¡Helio! ¡Litio! ¡Berilio! ¡Boro! ¡Carbono!", "tipo": "habla"}]},
+        {"escenario": "biblioteca",
+         "tiza": {"expresion": "harto", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "orgulloso", "postura": "encoger", "lugar": "derecha", "mira": "izquierda"},
+         "objeto": "libro", "lleva": "tiza",
+         "bocadillos": [
+           {"quien": "tiza", "texto": "¿Has leído el informe?", "tipo": "habla"},
+           {"quien": "algoritmo", "texto": "No hacía falta: iba por número atómico. Es un método.", "tipo": "habla"}]}
+      ]}
+    },
+    {
+      "pieza": "incluxat-conservatorio",
+      "idea": "En una formación en línea, Tiza hace a Algoritmo la pregunta de control antes de fiarse de él para el conservatorio, y él responde como en un centro ordinario: veinticinco alumnos y los de apoyo en primera fila.",
+      "guion": {"vinetas": [
+        {"escenario": "videollamada",
+         "tiza": {"expresion": "pensativo", "postura": "pensar", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "orgulloso", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "algoritmo", "texto": "Ya sé adaptar los informes psicopedagógicos al conservatorio.", "tipo": "habla"},
+           {"quien": "tiza", "texto": "Antes de fiarme, una pregunta de control.", "tipo": "habla"}]},
+        {"escenario": "videollamada",
+         "tiza": {"expresion": "neutral", "postura": "senalar", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "cargando", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "tiza", "texto": "¿Cuántos alumnos hay en una clase de instrumento?", "tipo": "habla"}]},
+        {"escenario": "videollamada",
+         "tiza": {"expresion": "harto", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "orgulloso", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "algoritmo", "texto": "¡Unos veinticinco! A los que necesitan apoyo, en primera fila.", "tipo": "habla"}]}
+      ]}
+    }
+  ]
+}

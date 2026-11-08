@@ -11,17 +11,17 @@
       "titular": "Una herramienta forma al azar los grupos base y de expertos de la técnica Jigsaw",
       "entradilla": "«Rompecabezas – Técnica Jigsaw» recibe la lista del alumnado y los subtemas y reparte los grupos de forma equilibrada. Se abre en el navegador y está disponible en cinco lenguas.",
       "cuerpo": [
-        "«Rompecabezas – Técnica Jigsaw» es una herramienta para organizar en el aula el aprendizaje cooperativo en puzle. En esta técnica, cada estudiante se convierte en experto en una parte del tema, la comparte después con su grupo y todo el mundo necesita a los demás para completar el conjunto. La aplicación se ocupa de la parte más pesada para el docente: formar los grupos.",
+        "«[Rompecabezas – Técnica Jigsaw](https://jigsawcoop.github.io/)» es una herramienta para organizar en el aula el aprendizaje cooperativo en puzle. En esta técnica, cada estudiante se convierte en experto en una parte del tema, la comparte después con su grupo y todo el mundo necesita a los demás para completar el conjunto. La aplicación se ocupa de la parte más pesada para el docente: formar los grupos.",
         "La pantalla de inicio tiene dos paneles. En el de la izquierda se escribe el nombre del alumnado, uno por línea, o se pulsa «Cargar ejemplo» para probar la herramienta con datos de muestra. En el de la derecha se elige el número de subtemas, que coincide con el de miembros de cada grupo base, se pone nombre a cada uno (la captura muestra cuatro, con un color distinto) y, si se desea, se indica el tema general, por ejemplo «El aparato digestivo». Al pulsar «Formar grupos», la herramienta reparte al alumnado de forma aleatoria y con los subtemas distribuidos de manera equilibrada.",
         "Según la ficha, cuando el número de estudiantes no encaja exactamente, los sobrantes se gestionan como co-expertos. La ficha añade que la aplicación guía las tres fases de la técnica (grupos base, grupos de expertos y vuelta al grupo base) con indicaciones, un temporizador y una vista imprimible. Tras formar los grupos, la aplicación muestra además los pasos numerados del 1 al 3 y un temporizador de diez minutos con botones de inicio y parada.",
         "La ficha la clasifica como herramienta de creación para Primaria, Secundaria, Bachillerato, Formación Profesional, Universidad y Formación del profesorado, y para cualquier materia, ya que sirve para organizar la clase y no depende de ningún contenido. La interfaz se puede cambiar entre castellano, catalán, gallego, euskera e inglés. Se usa directamente en el navegador, sin que la pantalla de inicio pida cuenta alguna.",
-        "La ha creado Juanjo de Haro. El código se distribuye con licencia AGPL-3.0, y la página enlaza un canal para comunicar errores y sugerencias."
+        "La ha creado Juan José de Haro. El código se distribuye con licencia AGPL-3.0, y la página enlaza un canal para comunicar errores y sugerencias."
       ],
       "recursos": [
         {
           "id": "rompecabezas-tecnica-jigsaw",
           "titulo": "Rompecabezas – Técnica Jigsaw",
-          "autoria": "Juanjo de Haro",
+          "autoria": "Juan José de Haro",
           "url": "https://jigsawcoop.github.io/",
           "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://jigsawcoop.github.io/",
           "licencia": "AGPL-3.0",
@@ -49,7 +49,7 @@
       "titular": "Un editor de programación por bloques, basado en TurboWarp y compatible con Scratch, para aprender a programar",
       "entradilla": "EduTicTac Blocs es un entorno de programación visual compatible con proyectos de Scratch y con plantillas para el aula; según su web, sin publicidad ni rastreadores.",
       "cuerpo": [
-        "EduTicTac Blocs es un entorno libre de programación visual por bloques pensado para la educación. Según su propia página, es compatible con los proyectos .sb3 de Scratch, se basa en TurboWarp y no lleva publicidad ni rastreadores. Aclara también que no está afiliado a Scratch, a su equipo, a la Scratch Foundation ni a TurboWarp. La ficha lo sitúa en Primaria, Secundaria y Formación del profesorado, en las áreas de Ciencia y Tecnología y Pensamiento Lógico-Matemático, y con interfaz en catalán e inglés.",
+        "[EduTicTac Blocs](https://blocs.edutictac.es/) es un entorno libre de programación visual por bloques pensado para la educación. Según su propia página, es compatible con los proyectos .sb3 de Scratch, se basa en TurboWarp y no lleva publicidad ni rastreadores. Aclara también que no está afiliado a Scratch, a su equipo, a la Scratch Foundation ni a TurboWarp. La ficha lo sitúa en Primaria, Secundaria y Formación del profesorado, en las áreas de Ciencia y Tecnología y Pensamiento Lógico-Matemático, y con interfaz en catalán e inglés.",
         "Al abrir la web aparece, sin pedir cuenta, un proyecto de ejemplo listo para ejecutar, con el botón «Ver dentro» para pasar al editor de bloques: arriba, los menús Ajustes, Archivo, Editar, Complementos y Avanzado, y los botones «Inicio» y «Entrar»; en el centro, el escenario con los controles de bandera verde, pausa y parada. Un aviso invita a pulsar la bandera verde, escribir el nombre cuando el personaje Bloc lo pregunte y después hacer clic sobre él. Debajo, el botón «Empieza con una plantilla» anuncia veinte proyectos preparados, cada uno con su ficha docente, y «Explora la galería» da acceso a más ejemplos.",
         "Para un docente, el interés está en que permite introducir el pensamiento computacional con la lógica de bloques de Scratch y llevar a clase proyectos ya hechos como punto de partida. Según la ficha, el alumnado puede crear proyectos con bloques, disfraces, dibujos y extensiones, y hay un asistente de inteligencia artificial para generarlos, del que no se detalla qué exige su uso.",
         "La ficha señala además que se puede autoalojar mediante Docker, de modo que un centro o su responsable informático pueden desplegarlo en su propio servidor. El recurso figura como creado por Samuel Soriano y su código fuente se publica con licencia GPL v3, con enlaces en el pie a la información sobre privacidad y a los créditos de TurboWarp."
@@ -78,7 +78,7 @@
   ],
   "descartado": [],
   "repaso": [
-    "Jigsaw: sin cambios de texto; autoría de la ficha (Juanjo de Haro) no nombrada y `autoria` vacío; licencia, enlaces, captura y alt confirmados; funciones solo de la ficha ya atribuidas a ella.",
+    "Jigsaw: sin cambios de texto; autoría de la ficha (Juan José de Haro) no nombrada y `autoria` vacío; licencia, enlaces, captura y alt confirmados; funciones solo de la ficha ya atribuidas a ella.",
     "EduTicTac Blocs: titular y entradilla ya no afirman «sin publicidad»/«sin rastreadores» como hecho propio (es lo que dice su web).",
     "EduTicTac Blocs: quitadas frases sobre lo que no se pudo comprobar («no se pudo comprobar en la captura», «no se ha verificado»), que hablan del método del diario; el asistente de IA y Docker quedan atribuidos a la ficha.",
     "Actualizado `comprobado` en ambas piezas."

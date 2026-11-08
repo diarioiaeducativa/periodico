@@ -1,0 +1,108 @@
+{
+  "fecha": "2026-11-07",
+  "hay_edicion": true,
+  "motivo": "An ordinary, quiet day: the most-discussed topics (families' authorisation, Anthropic's policy, the school bell, EDUmind MiClase, Omni credits in Flow, the repository) had already been published. What remains is an Anthropic announcement discussed with an article of its own in ChatGPT-IA-edu and two new applications in Vibe Coding Educativo. EduMedia-IAG only had the bot's notice about a topic already published: no piece from that group.",
+  "piezas": [
+    {
+      "id": "memoria-agentes-ia",
+      "seccion": "herramientas",
+      "importancia": 1,
+      "grupo": "chatgpt",
+      "antetitulo": "AI agents",
+      "titular": "Anthropic proposes organising AI agents' memory into four layers with a periodic review",
+      "entradilla": "An Anthropic research text describes how to give an agent memory between sessions, and a teacher in the group has adapted their own system to that idea and explains it in an article with instructions.",
+      "cuerpo": [
+        "AI agents for the computer, such as Claude Code, remember nothing from one session to the next unless they are given some way of doing so. On 6 November Anthropic published “[The components of agent memory](https://www.anthropic.com/research/components-of-agent-memory)”, which arranges that memory into four layers: transcripts, a searchable record of what the agent has done; memory notes, which the agent writes during sessions; representations, ordered structures built from the notes, such as a wiki of linked pages; and injected context, a small layer loaded at the start of each session that must be kept short because overly long instructions reduce how well the agent follows them.",
+        "The text adds an offline review, which it calls “dreaming”: the agent goes over its transcripts to cross-check the notes, correct errors, build representations and decide what is preloaded in future sessions. The authors warn that this review consumes computing power and should be focused on what is likely to change.",
+        "Juan José de Haro, author of the blog Bilateria, has adapted his personal system to this structure and explains it in the article “[Agentes de IA que aprenden mientras duermen](https://educacion.bilateria.org/agentes-de-ia-que-aprenden-mientras-duermen)” (AI agents that learn while they sleep), published on 7 November. He proposes a short profile, agent notes with an index, a project wiki with decision logs and the saved conversations as raw material, with a daily review that only writes a proposal: the agent checks each point before applying it and changes to the profile require the person’s approval. It includes a prompt for asking the agent itself to set the system up.",
+        "The article points out limits that matter to anyone weighing it up for a school: saved conversations contain sensitive information, the review can make mistakes, and each tool’s memory is not shared with the others. On what student data an agent should be able to see and remember, [the paper has already published a report](pieza:2026-10-31/agentes-ia-permisos-datos-alumnado)."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Anthropic: The components of agent memory",
+          "url": "https://www.anthropic.com/research/components-of-agent-memory"
+        },
+        {
+          "titulo": "Bilateria: Agentes de IA que aprenden mientras duermen (in Spanish)",
+          "url": "https://educacion.bilateria.org/agentes-de-ia-que-aprenden-mientras-duermen"
+        }
+      ],
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 54068
+      },
+      "comprobado": "Reviewer: opened Anthropic’s text (dated 6 November 2026, the four layers, the “dreaming” review and its definition, computing cost and warning about long instructions). Opened the Bilateria article (author, date 7 November, four layers, daily review that only writes a proposal, profile approval, limits, prompt for the agent). Checked message t.me/ChatGPTedu/54068. The key pieza:2026-10-31/agentes-ia-permisos-datos-alumnado is in publicado.txt and deals with the permissions and data an agent can see and remember. The system has not been tested.",
+      "ilustracion": "Diagram of four stacked layers (profile, notes, wiki, conversations) with a curved night-time arrow, beneath a moon, rising from the conversations towards the profile as a periodic review.",
+      "ilustracion_alt": "Four stacked layers, from top to bottom labelled “Profile”, “Notes”, “Wiki” and “Conversations”, and a curved blue arrow rising from the conversations to the profile, next to a moon labelled “Night review”."
+    },
+    {
+      "id": "holmio-juego-quimica",
+      "seccion": "vibecoding",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Community app",
+      "titular": "Holmio turns the periodic table into a daily detective game",
+      "entradilla": "Each day brings a new case with 118 suspects, the chemical elements, and six accusations to find the culprit; according to its author, no registration is required.",
+      "cuerpo": [
+        "[Holmio](https://holmio.elprofedelabata.es/) is a daily deduction game, in the style of Wordle but with a noir setting, for reviewing the elements of the periodic table. You read the case report, accuse an element and, if you are wrong, choose a clue to keep investigating. You have six accusations to find the culprit.",
+        "Besides the case of the day, the website offers an archive for playing earlier cases and free practice with a random element that does not count towards the archive. It has light and dark modes and lets you share your result as an image.",
+        "It was presented in Vibe Coding Educativo by Dani García, who explains that he made it with Claude Code in HTML, CSS and JavaScript, with no frameworks or server of its own, and publishes it on GitHub Pages; the website is signed by El profe de la bata. According to its author, the most work went into the content: a case for each of the 118 elements with data checked against sources. He asks users to tell him about bugs or ideas for the classroom. [Another activity by El profe de la bata, on the gravitational field, has already appeared in the paper](pieza:2026-11-03/misiones-orbitales)."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Holmio · El elemento culpable del día (in Spanish)",
+          "url": "https://holmio.elprofedelabata.es/"
+        }
+      ],
+      "mensaje": {
+        "grupo": "vce",
+        "id": 14749
+      },
+      "comprobado": "Reviewer: opened the Holmio website (118 elements, six accusations, case of the day, archive, free practice, light and dark modes, image for sharing; signed by El profe de la bata). Checked message t.me/vceduca/14749. The points about Claude Code, the technologies, GitHub Pages, the absence of registration and the verified data are what its author says and have not been verified. The relationship between Dani García and the website’s signature is taken from the message. The key pieza:2026-11-03/misiones-orbitales is in publicado.txt, also by El profe de la bata. The accuracy of the cases has not been checked.",
+      "ilustracion": null,
+      "ilustracion_alt": "A grid of squares imitating the periodic table, with the label “Case of the day” above and “118 elements” below; a blue magnifying glass points at one square. On the right, six circles, one with a red cross, labelled “6 accusations”."
+    },
+    {
+      "id": "incluxat-conservatorio",
+      "seccion": "vibecoding",
+      "importancia": 3,
+      "grupo": "vce",
+      "antetitulo": "Community app",
+      "titular": "Incluxat brings the guidance from educational psychology reports to the conservatoire",
+      "entradilla": "An AI assistant adapts to music education guidance designed for mainstream schools, with its supporting documentation published so it can be reviewed.",
+      "cuerpo": [
+        "The guidance in educational psychology reports is usually written for compulsory education, whereas in a conservatoire instrument lessons are one-to-one and assessment takes the form of performances. [Incluxat](https://jlmirallesb.github.io/incluxat/proyecto/), created by José Luis Miralles Bono, is an assistant that translates that guidance into the conservatoire context.",
+        "It is offered as a Copilot agent of the Generalitat Valenciana, for staff in its schools, and as a Gemini Gem in a public version. It includes a knowledge base in Spanish and Valencian with Valencian regulations, support measures and examples by subject, instructions for setting it up yourself and a public repository. The website recommends testing the assistant with a control question before relying on it and not entering students’ personal data. The author is looking for conservatoires to try it and report problems.",
+        "Miralles Bono also shared other materials and apps of his in the group, including tools for conservatoire timetables."
+      ],
+      "fuentes": [
+        {
+          "titulo": "incluxat · el proyecto (in Spanish)",
+          "url": "https://jlmirallesb.github.io/incluxat/proyecto/"
+        }
+      ],
+      "mensaje": {
+        "grupo": "vce",
+        "id": 14759
+      },
+      "comprobado": "Reviewer: opened the project website and the main page (author, Copilot GVA and Gemini Gem, knowledge base in Spanish and Valencian with regulations, support measures and examples by subject, public repository on GitHub, setup instructions, control question, warning about personal data, search for conservatoires). Checked message t.me/vceduca/14759. The assistant has not been tested nor the accuracy of its answers evaluated. The last sentence relies on the group’s messages (#14763 to #14772) and the other apps have not been opened.",
+      "ilustracion": null,
+      "ilustracion_alt": "A document labelled “Report”, an arrow to a chat bubble labelled “Assistant” and another arrow to a piano labelled “Conservatoire”."
+    }
+  ],
+  "breves": [],
+  "descartado": [
+    "Families’ authorisation, Anthropic’s policy, the school bell, EDUmind MiClase, Omni credits in Flow and repository news: already published (publicado.txt); the day’s messages only carried the bot’s notices.",
+    "Chrome extension to hide the search engine’s AI answer and a comment about a future option in Google’s Vault console: no link or name of the extension; the reviewer looked for official confirmation of an administrator control and found only secondary and contradictory coverage, with no official Google page; the general topic is already in the 3 November piece.",
+    "Antigravity with a remote-control web interface: it arrives only via a link to X (not opened, returns a 402 error); the reviewer looked for the announcement and the feature dates from August 2026, and the Antigravity topic is already in publicado.txt.",
+    "EDUmind’s guide “Vibe coding responsable para el aula”, published as a Claude artifact: the reviewer opened the link and no readable content loads, so it cannot be checked; the topic overlaps with the guide already covered in the repository’s week.",
+    "EduMedia-IAG: the only message of the day is the bot’s notice with content already published."
+  ],
+  "repaso": [
+    "Main piece: removed “making use of downtime” and “merging duplicates” (not stated by Anthropic’s source) and the analogy with the brain attributed to Anthropic; the review is now described as the source defines it.",
+    "Main piece: “notes by topic” replaced by “agent notes with an index”, as the Bilateria article says.",
+    "Holmio: the standfirst attributes to its author that no registration is required (the website does not say so).",
+    "Incluxat: “examples by specialism” changed to “examples by subject”, as the guide says.",
+    "Discarded list expanded with what the reviewer searched for (Vault and extension, Antigravity, EDUmind guide). pieza: links checked in publicado.txt. No piece from EduMedia-IAG: there is nothing publishable."
+  ]
+}

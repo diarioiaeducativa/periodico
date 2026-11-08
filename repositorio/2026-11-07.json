@@ -1,0 +1,49 @@
+{
+  "fecha": "2026-11-07",
+  "piezas": [
+    {
+      "id": "itinerancias",
+      "seccion": "vibecoding",
+      "repositorio": "dia",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Nuevo en el repositorio",
+      "titular": "Una calculadora reparte la jornada del profesorado itinerante entre varios centros de la Generalitat Valenciana",
+      "entradilla": "Itinerancias, creada por José Luis Miralles Bono, calcula cómo se reparten las horas complementarias entre los centros de un docente que comparte destino, según las horas lectivas que da en cada uno. Se abre en el navegador, en castellano y en valenciano, y ofrece también una hoja de Excel con el mismo cálculo.",
+      "cuerpo": [
+        "[Itinerancias](https://jlmirallesb.github.io/itinerancias/) es una herramienta pensada para equipos directivos y docentes que trabajan en más de un centro de la Generalitat Valenciana. Su objetivo es repartir la jornada de la persona itinerante entre esos centros con un cálculo explícito, que todas las partes puedan revisar. La ha creado José Luis Miralles Bono, con ayuda de Claude, y consta en el repositorio con licencia AGPL v3 para el código; la propia página indica que los contenidos son CC BY-SA 4.0.",
+        "La aplicación se organiza en cinco pestañas: Tablas, Consulta, Calculadora, Negociar y Normativa. En la primera, la que se ve al abrirla, se explican los dos modos de reparto. El proporcional asigna las horas complementarias en función de las lectivas que se dan en cada centro, al minuto, sobre una base de 18 periodos lectivos. El de bloques redondea esas complementarias a horas enteras y compensa la diferencia en otra partida, de modo que el total no cambia y solo varían unos minutos entre partidas. Hay además una comparativa entre ambos y una guía de desglose, que se puede modificar fila a fila y se guarda solo en el navegador.",
+        "Un selector permite elegir cuántas horas complementarias se restan por cada lectiva de más, también con 19 o 20 periodos lectivos: 2, 1 o 0. La página recuerda que la resolución de inicio de curso habla de «como máximo dos horas complementarias por cada periodo lectivo».",
+        "Según su ficha, la pestaña de negociación permite que los centros pacten el reparto mediante enlaces que se comparten. La página afirma que nada de lo que se escribe sale del navegador, salvo los enlaces que cada persona decida enviar.",
+        "Se usa sin cuenta y sin instalar nada, y el botón «Descargar Excel» ofrece la hoja con el mismo cálculo. Tiene modo claro y oscuro. Su autor advierte de que es una herramienta de apoyo para equipos directivos y no una aplicación oficial de la Generalitat Valenciana."
+      ],
+      "recursos": [
+        {
+          "id": "itinerancias",
+          "titulo": "Itinerancias",
+          "autoria": "José Luis Miralles Bono",
+          "url": "https://jlmirallesb.github.io/itinerancias/",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://jlmirallesb.github.io/itinerancias/",
+          "licencia": "AGPL v3",
+          "captura": "2026-11-07-itinerancias.jpg",
+          "captura_alt": "Pestaña «Tablas» de Itinerancias, con selector de horas complementarias y apartados desplegables sobre el reparto proporcional y por bloques.",
+          "texto": []
+        }
+      ],
+      "fuentes": [
+        {
+          "titulo": "Itinerancias",
+          "url": "https://jlmirallesb.github.io/itinerancias/"
+        }
+      ],
+      "comprobado": "Revisor: captura vista con Read (pestaña Tablas, versión 1.0.3, botones de Excel, tema y idioma Castellano/Valencià, cinco pestañas, apartados de reparto) y texto visible de la entrada contrastado. WebFetch solo devolvió el título (la página requiere JavaScript). Las pestañas Consulta, Calculadora, Negociar y Normativa no se ven en la captura; lo de negociar por enlaces se atribuye a la ficha. Autoría, licencia, ficha, captura e idiomas (Español, Català) coinciden con la entrada. Sin enlaces a lo ya publicado: nada relacionado en publicado.txt."
+    }
+  ],
+  "descartado": [],
+  "repaso": [
+    "Entradilla: lo que calcula es el reparto de horas complementarias según las lectivas de cada centro, no «cuántas horas lectivas y complementarias corresponden a cada centro».",
+    "Quitada la frase sobre cómo se hizo la revisión («En esta revisión solo se ha visto la primera pestaña…»), que no es del artículo; lo de negociar sigue como «según su ficha».",
+    "«otra categoría» pasa a «otra partida», más fiel a la página; quitada la valoración final («punto de partida concreto») y ajustada la extensión al encargo.",
+    "Comprobados sin cambios: título, autoría, licencia, ficha, captura, captura_alt e idiomas."
+  ]
+}

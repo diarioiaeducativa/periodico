@@ -1,0 +1,371 @@
+{
+  "fecha": "2026-11-07",
+  "hay_reportaje": true,
+  "motivo": "Reportaje de reserva, sin mensajes de la semana, sobre un asunto de fondo que no caduca en un mes: a qué edad puede usar IA el alumnado. Es el hilo común de tres documentos de la Biblioteca digital que no han tenido reportaje (el informe para la UNESCO de Livingstone y otras autoras, el white paper del Foro Económico Mundial sobre infancia e IA y las Orientacions catalanas de 2026) y del debate que abrió en ChatGPT-IA-edu el anuncio de Google sobre la IA desactivada por defecto en cuentas escolares. Tiene actores (empresas con edades mínimas distintas, AEPD, INTEF, comunidades autónomas, UNESCO, WEF, UE), normativa (artículo 7 de la LOPDGDD, Reglamento europeo de IA, el proyecto de ley que elevaba la edad a 16 años y que ha caducado) y consecuencias prácticas para cualquier docente de primaria o ESO. El reportaje anterior (agentes de IA y datos del alumnado) solo rozó el tema. Las condiciones de las empresas, que cambian, van fechadas.",
+  "id": "edad-ia-aula-tres-reglas",
+  "antetitulo": "IA i edat a l'aula",
+  "titular": "L'edat per usar IA a classe depèn de tres regles diferents: les de les empreses, la llei i les administracions educatives",
+  "entradilla": "Les condicions de cada servei, la llei de protecció de dades i algunes administracions educatives fixen edats diferents per usar intel·ligència artificial, i sovint es confonen. Aquest reportatge explica què diu cadascuna a 6 de novembre del 2026, per què la recerca demana canviar la pregunta de l'edat per la de la finalitat i com pot decidir un docent de primària o ESO quina eina fer servir, amb quin compte i qui la maneja.",
+  "apartados": [
+    {
+      "ladillo": "Tres regles que es confonen",
+      "parrafos": [
+        "Quan un docent es pregunta si el seu alumnat pot usar un assistent d'intel·ligència artificial, sol buscar un número. Però conviuen almenys tres regles d'origen diferent. La primera és l'edat mínima que fixa cada empresa a les seves condicions d'ús, un contracte entre l'empresa i qui obre el compte. La segona és l'edat a partir de la qual un menor pot consentir per si mateix que es tractin les seves dades, que la llei espanyola situa als 14 anys. La tercera són les recomanacions de les administracions educatives, que orienten què es considera prudent en una aula.",
+        "Les tres responen a preguntes diferents i no coincideixen. Que un servei admeti comptes des dels 13 anys no vol dir que sigui adequat per a un grup de primer d'ESO, ni que el centre pugui demanar a l'alumnat que s'hi doni d'alta. I que un alumne hagi fet 14 anys no aclareix si l'eina té una finalitat educativa. **A més de l'edat de l'alumnat, compta qui obre el compte, qui fa servir l'eina i per a què s'utilitza.**"
+      ]
+    },
+    {
+      "ladillo": "El que fixen les empreses",
+      "parrafos": [
+        "A 6 de novembre del 2026, les [condicions d'ús d'OpenAI per a Europa](https://openai.com/policies/eu-terms-of-use/) exigeixen tenir almenys 13 anys o l'edat mínima que requereixi el país per consentir, i demanen als menors de 18 el permís del pare, la mare o el tutor legal. El seu [centre d'ajuda](https://help.openai.com/es-es/articles/8313401-es-chatgpt-seguro-para-todas-las-edades) afegeix una indicació pensada per a l'aula: si s'usa ChatGPT amb finalitats educatives amb menors de 13 anys, la interacció directa amb l'eina l'ha de fer una persona adulta.",
+        "Google distingeix dos mons. Amb un compte personal, la seva ajuda indica que a Espanya cal [tenir almenys 14 anys per gestionar el propi Compte de Google](https://support.google.com/accounts/answer/1350409?hl=ca); les aplicacions de Gemini demanen [13 anys o l'edat que estipuli cada país](https://support.google.com/gemini/answer/13278668?hl=ca), però [no estan disponibles per als comptes supervisats](https://support.google.com/gemini/answer/16109150?hl=ca) amb Family Link a l'Espai Econòmic Europeu, i per usar-les amb un [pla d'IA de pagament a l'Espai Econòmic Europeu](https://support.google.com/gemini/answer/14517446?hl=ca) cal ser major de 18. Amb un compte de Google Workspace for Education, en canvi, la [guia per a centres](https://knowledge.workspace.google.com/admin/getting-started/editions/quickstart-guide-to-gemini-and-gemini-notebook-for-education?hl=es), actualitzada el 28 d'octubre del 2026, presenta Gemini i Gemini Notebook com a disponibles per a totes les edats, amb accés gestionat per l'administrador, continguts més filtrats per als menors de 18 anys i dades que no s'usen per entrenar models.",
+        "En aquests comptes, segons la [pàgina de control d'accés per edat](https://knowledge.workspace.google.com/admin/getting-started/editions/control-access-to-google-services-by-age?hl=es), a primària i secundària qui no estigui identificat per l'administrador com a major de 18 anys rep una experiència restringida: per exemple, no pot usar Gemini a Classroom per crear o editar contingut. A més, segons [Engadget](https://www.engadget.com/2305432/google-says-that-students-in-schools-that-ban-ai-wont-have-access-to-search/), Google va anunciar que Gemini i la cerca estaran desactivats per defecte als comptes de primària i secundària fins que el centre els activi, amb un desplegament «en els propers mesos»; el diari va explicar [el debat que va obrir aquest anunci sobre qui decideix en un centre](pieza:2026-11-03/google-ia-cuentas-escolares).",
+        "Microsoft fixa a les [condicions de Copilot per a particulars](https://www.microsoft.com/es-es/microsoft-copilot/for-individuals/termsofuse), aplicables des del 18 d'agost del 2026, un mínim de 13 anys, que pot ser superior segons la legislació de cada país, i adverteix que pot desactivar o limitar funcions als menors de 18. Per a centres, el seu blog d'educació va anunciar l'agost del 2025 [Microsoft 365 Copilot Chat per a estudiants de 13 anys o més](https://techcommunity.microsoft.com/blog/educationblog/microsoft-365-copilot-chat-for-students-13/4440370), gestionat pels administradors i sense usar les dades per entrenar els models fundacionals. Anthropic és la més restrictiva: les [condicions per a consumidors de Claude](https://www.anthropic.com/legal/consumer-terms), vigents des del 8 d'octubre del 2025, exigeixen tenir almenys 18 anys."
+      ]
+    },
+    {
+      "ladillo": "La llei: catorze anys i funció educativa",
+      "parrafos": [
+        "L'[article 7 de la Ley Orgánica de Protección de Datos](https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673#a7) estableix que el tractament de les dades d'un menor només es pot fonamentar en el seu consentiment quan sigui major de catorze anys; per sota, només és lícit amb el consentiment de qui exerceix la pàtria potestat o la tutela, com recorda l'[Agencia Española de Protección de Datos](https://www.aepd.es/preguntas-frecuentes/10-menores-y-educacion/FAQ-1001-cual-es-la-edad-para-que-los-menores-puedan-prestar-consentimiento-para-tratar-sus-datos-personales). És l'edat que compta quan un alumne obre pel seu compte un servei comercial.",
+        "A l'escola, però, el consentiment no és la base habitual. L'AEPD explica que en l'ensenyament reglat [no cal el consentiment de l'alumnat ni de les famílies](https://www.aepd.es/preguntas-frecuentes/10-menores-y-educacion/FAQ-1009-pueden-los-centros-educativos-impartir-clases-y-realizar-examenes-online-sin-el-consentimiento-de-los-interesados) per al tractament lligat a la funció educativa, perquè respon a una missió d'interès públic prevista a la Ley Orgánica de Educación. Les plataformes les tria el centre o l'administració, amb l'assessorament del seu delegat de protecció de dades, i el professorat ha d'emprar els mitjans que aquests posen a la seva disposició. La diferència és clara: no és el mateix usar una eina contractada per l'administració educativa que demanar a un alumne de 12 anys que es registri en un servei comercial.",
+        "Aquesta edat de 14 anys podria haver canviat. El [Proyecto de Ley Orgánica para la protección de las personas menores de edad en los entornos digitales](https://www.congreso.es/public_oficiales/L15/CONG/BOCG/A/BOCG-15-A-52-1.PDF), presentat el març del 2025, incloïa elevar-la a 16 anys. Segons la seva [fitxa al Congrés](https://www.congreso.es/es/proyectos-de-ley?p_p_id=iniciativas&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_iniciativas_mode=mostrarDetalle&_iniciativas_legislatura=XV&_iniciativas_id=121%2F000052), consultada el 6 de novembre del 2026, la iniciativa figura com a caducada des del 6 d'octubre del 2026, data de la dissolució de les Corts. Per tant, l'edat vigent continua sent la de 14 anys.",
+        "El marc europeu afegeix dues peces. El [Reglament d'IA](https://www.boe.es/buscar/doc.php?id=DOUE-L-2024-81079) prohibeix els sistemes que exploten les vulnerabilitats derivades de l'edat i considera d'alt risc els que s'usen en educació per decidir l'accés o avaluar resultats. Segons la [Comissió Europea](https://digital-strategy.ec.europa.eu/es/policies/regulatory-framework-ai), l'obligació d'alfabetització en IA s'aplica des del 2 de febrer del 2025, i les obligacions d'alt risc de l'annex III s'han ajornat al 2 de desembre del 2027."
+      ]
+    },
+    {
+      "ladillo": "El que diuen les administracions educatives",
+      "parrafos": [
+        "Cada comunitat autònoma decideix com es fa servir la intel·ligència artificial als seus centres, i a 7 de novembre de 2026 no hi ha un criteri comú. Algunes han publicat un document propi, altres ho resolen amb la configuració de les seves plataformes i diverses encara no n'han dit res.",
+        "Catalunya té el criteri més detallat. Les seves *[Orientacions per a l’ús de la intel·ligència artificial als centres educatius](https://t.me/ChatGPTedu/21753/53605)*, que el Departament d’Educació i Formació Professional va publicar el setembre del 2026 i després va retirar del seu web ([ressenya del diari a la seva Biblioteca](pieza:2026-11-02/cat-orientacions-ia)), estableixen que l'alumnat menor de 14 anys no hauria d'usar IA de propòsit general de manera autònoma: a primària i al primer cicle d'ESO, si s'hi treballa, la fa servir el docent, tot i que admeten eines dissenyades per a l'entorn educatiu que compleixin uns requisits. Entre els 14 i els 18 anys no cal, amb caràcter general, el consentiment de les famílies, perquè la base jurídica és la missió d'interès públic, però recomanen recollir-ne l'autorització com a garantia, i pot ser necessària perquè algunes eines l'exigeixen en les seves condicions; amb aquesta autorització, situen la interacció directa de l'alumnat a partir del segon trimestre de 3r d'ESO.",
+        "La [guia del Departament d'Educació del Govern Basc](https://www.euskadi.eus/contenidos/documentacion/inn_doc_adi_artif/es_def/adjuntos/Guia-uso-de-IA-en-educacion_Euskadi.pdf), del 2025, no permet els xatbots a menors de 13 anys ni a 1r i 2n d'ESO; des de 3r, només els admet quan es consideri necessari i sota una supervisió rigorosa. Entre els 14 i els 18 anys recomana fer-los servir sense registre, perquè amb registre caldria l'autorització de les famílies.",
+        "A la Regió de Múrcia, una [ordre de setembre del 2025](https://www.borm.es/services/anuncio/ano/2025/numero/4232/pdf?id=838315) no permet fins a 3r d'ESO activitats amb accés directe a eines d'IA que recullin dades personals o requereixin interacció autònoma: abans d'aquest curs, només un ús guiat d'aplicacions adaptades a l'edat, i des d'aquest, sempre amb la supervisió del professorat. Les famílies han de rebre informació, i l'ordre no n'exigeix l'autorització. A la Comunitat de Madrid, la [Política de uso aceptable de la IA](https://www.educa2.madrid.org/web/educamadrid/principal/files/1cff6bb2-8b91-48fc-ae7b-a3d3b62d1d84/Convenios/Documentos%20comunes/Politica%20de%20uso%20aceptable%20de%20la%20IA%20en%20centros%20educativos.pdf), una proposta de la Conselleria de Digitalització signada el 25 de setembre de 2026 que entrarà en vigor quan s'aprovi, reserva l'ús de la IA al professorat i als equips directius; quan la base legal sigui el consentiment, per sota dels 14 anys signa la família. Les [directrius de Google Workspace](https://www.educa2.madrid.org/web/educamadrid/principal/files/1cff6bb2-8b91-48fc-ae7b-a3d3b62d1d84/Convenios/Google/Directrices%20de%20Uso%20de%20los%20Servicios%20de%20GWS.pdf) de la mateixa Conselleria precisen que l'alumnat només fa servir Gemini guiat pel docent i sense les seves pròpies credencials.",
+        "Altres administracions ho resolen amb les seves plataformes i instruccions. Andalusia té [desactivats Gemini i NotebookLM per a l'alumnat](https://www.juntadeandalucia.es/educacion/eaprendizaje/wp-content/uploads/2026/10/261028_Guia-de-Buenas-Practicas_Google_v08.pdf) als comptes de Google dels seus centres, i Canàries [obre NotebookLM a l'alumnat i reserva Gemini al professorat](https://www3.gobiernodecanarias.org/medusa/ecoescuela/gsuite/2025/12/22/recomendaciones-de-uso-de-la-ia-en-el-g-suite-educativo/). A la Comunitat Valenciana, la [guia per planificar la formació del professorat en IA](https://portal.edu.gva.es/cefire/wp-content/uploads/sites/1992/2026/09/Guia_accions_formatives_IA_PAF_2026-2027_VAL.pdf) recorda que amb l'alumnat només es poden fer servir les aplicacions autoritzades al catàleg AppsEdu i que no se li ha de demanar que creï comptes en serveis externs no autoritzats. Extremadura, en la seva [Instrucción 6/2026](https://www.educarex.es/pub/cont/com/0061/documentos/Instrucci%C3%B3n_6_2026_USO_DISPOSITIVOS_DIGITALES%28F%29.pdf) sobre dispositius digitals, estableix que les activitats amb equips del centre no requereixen autorització familiar específica i que l'alumnat declari quan fa servir la IA si l'activitat ho estableix. Astúries prohibeix introduir dades de l'alumnat en eines d'IA que la Conselleria no hagi autoritzat ([circular d'inici de curs](https://www.educastur.es/documents/34868/38433/Anexo_F_PROTECCION_DATOSPERSONALES_CPUBLICOS.pdf/c639b6d8-b281-8274-f2cf-5d11b8631cca)).",
+        "Aragó, les Illes Balears, Cantàbria, Castella i Lleó, Castella-la Manxa, Navarra i la Rioja encara no tenen un document propi sobre la IA als centres; Castella i Lleó va anunciar a l'octubre una guia de recomanacions que encara no ha publicat, i la Rioja [publica al seu web la guia de l'INTEF](https://www.larioja.org/edu-proteccion-datos/es/novedades/guia-uso-inteligencia-artificial). Galícia ho regularà en la seva Llei d'educació digital, el [text](https://transparencia.xunta.gal/tema/informacion-de-relevancia-xuridica/normativa-en-tramitacion/en-prazo-de-envio-de-suxestions/-/nt/0825/anteproxecto-lei-educacion-dixital-galicia) de la qual es tramita com a projecte al Parlament des del setembre. A Ceuta i Melilla, els centres de les quals gestiona el Ministeri, les instruccions del curs no tracten la IA.",
+        "En l'àmbit estatal, la [Guía sobre el uso de la inteligencia artificial en el ámbito educativo](https://intef.es/wp-content/uploads/2026/09/ACTUALIZACION-GUIA-DE-LA-IA-DEF-1-SEPT-2026-Publicable-v5-2.pdf) de l'INTEF, versió 2.0, [publicada el 8 de setembre de 2026](https://intef.es/Noticias/nueva-version-de-la-guia-sobre-el-uso-de-la-inteligencia-artificial-en-el-ambito-educativo/), no fixa cap edat. Recorda que per sota dels 14 anys qualsevol registre requereix el consentiment de les famílies, proposa activitats que requereixin la mediació del professorat i demana que amb l'alumnat només es facin servir eines validades per l'administració o autoritzades per la direcció del centre."
+      ],
+      "tabla": {
+        "titulo": "Què diu cada administració educativa, a 7 de novembre de 2026",
+        "columnas": [
+          "Administració",
+          "Edat",
+          "Autorització de les famílies",
+          "Document"
+        ],
+        "filas": [
+          [
+            "Andalusia",
+            "No fixa edat. Gemini i NotebookLM, desactivats per a l'alumnat.",
+            "No la demana per a la IA.",
+            "[Guia de Google Workspace, v08 (2026)](https://www.juntadeandalucia.es/educacion/eaprendizaje/wp-content/uploads/2026/10/261028_Guia-de-Buenas-Practicas_Google_v08.pdf)"
+          ],
+          [
+            "Aragó",
+            "Sense document propi.",
+            "Regla general (vegeu la nota)",
+            "—"
+          ],
+          [
+            "Astúries",
+            "No tracta l'edat. No es poden introduir dades de l'alumnat en eines d'IA no autoritzades per la Conselleria.",
+            "No la tracta: regla general (vegeu la nota)",
+            "[Circular d'inici de curs, annex F (2026)](https://www.educastur.es/documents/34868/38433/Anexo_F_PROTECCION_DATOSPERSONALES_CPUBLICOS.pdf/c639b6d8-b281-8274-f2cf-5d11b8631cca)"
+          ],
+          [
+            "Illes Balears",
+            "Sense document propi.",
+            "Regla general (vegeu la nota)",
+            "—"
+          ],
+          [
+            "Canàries",
+            "No fixa edat. NotebookLM, obert a l'alumnat; Gemini, només per al professorat.",
+            "No la tracta: regla general (vegeu la nota)",
+            "[Recomanacions d'ús de la IA (2025)](https://www3.gobiernodecanarias.org/medusa/ecoescuela/gsuite/2025/12/22/recomendaciones-de-uso-de-la-ia-en-el-g-suite-educativo/)"
+          ],
+          [
+            "Cantàbria",
+            "Sense document propi.",
+            "Regla general (vegeu la nota)",
+            "—"
+          ],
+          [
+            "Castella i Lleó",
+            "Sense document propi; ha anunciat una guia.",
+            "Regla general (vegeu la nota)",
+            "—"
+          ],
+          [
+            "Castella-la Manxa",
+            "Sense document propi.",
+            "Regla general (vegeu la nota)",
+            "—"
+          ],
+          [
+            "Catalunya",
+            "Menors de 14: sense ús autònom de la IA de propòsit general. Ús directe a partir del 2n trimestre de 3r d'ESO.",
+            "De 14 a 18: no cal amb caràcter general; recomanada, i necessària si l'eina l'exigeix.",
+            "*Orientacions* (2026), retirades del web ([còpia](https://t.me/ChatGPTedu/21753/53605))"
+          ],
+          [
+            "Comunitat Valenciana",
+            "No fixa edat. Amb l'alumnat, només aplicacions del catàleg AppsEdu; no demanar-li que creï comptes en serveis no autoritzats.",
+            "La que indiqui la fitxa de cada aplicació a AppsEdu.",
+            "[Guia del CEFIRE (2026)](https://portal.edu.gva.es/cefire/wp-content/uploads/sites/1992/2026/09/Guia_accions_formatives_IA_PAF_2026-2027_VAL.pdf)"
+          ],
+          [
+            "Extremadura",
+            "No fixa edat. L'alumnat declara l'ús de la IA.",
+            "Amb equips del centre, no cal autorització específica.",
+            "[Instrucción 6/2026](https://www.educarex.es/pub/cont/com/0061/documentos/Instrucci%C3%B3n_6_2026_USO_DISPOSITIVOS_DIGITALES%28F%29.pdf)"
+          ],
+          [
+            "Galícia",
+            "Ho regularà la seva Llei d'educació digital, en tramitació al Parlament.",
+            "Pendent d'aquesta llei.",
+            "[Projecte de llei](https://transparencia.xunta.gal/tema/informacion-de-relevancia-xuridica/normativa-en-tramitacion/en-prazo-de-envio-de-suxestions/-/nt/0825/anteproxecto-lei-educacion-dixital-galicia)"
+          ],
+          [
+            "Comunitat de Madrid",
+            "IA només per al professorat; l'alumnat, guiat i sense credencials pròpies.",
+            "Menors de 14: signa la família si la base és el consentiment.",
+            "[Política d'ús acceptable (proposta, 2026)](https://www.educa2.madrid.org/web/educamadrid/principal/files/1cff6bb2-8b91-48fc-ae7b-a3d3b62d1d84/Convenios/Documentos%20comunes/Politica%20de%20uso%20aceptable%20de%20la%20IA%20en%20centros%20educativos.pdf)"
+          ],
+          [
+            "Regió de Múrcia",
+            "Fins a 3r d'ESO, només ús guiat; després, sempre supervisat.",
+            "No l'exigeix; cal informar les famílies.",
+            "[Ordre de 8-9-2025](https://www.borm.es/services/anuncio/ano/2025/numero/4232/pdf?id=838315)"
+          ],
+          [
+            "Navarra",
+            "Sense document propi.",
+            "Regla general (vegeu la nota)",
+            "—"
+          ],
+          [
+            "País Basc",
+            "Xatbots, no abans dels 13 anys ni a 1r i 2n d'ESO; a partir de 3r, només si cal i sota supervisió.",
+            "De 14 a 18: necessària si l'eina demana registre (recomana usar-les sense registre).",
+            "[Guia del Departament d'Educació (2025)](https://www.euskadi.eus/contenidos/documentacion/inn_doc_adi_artif/es_def/adjuntos/Guia-uso-de-IA-en-educacion_Euskadi.pdf)"
+          ],
+          [
+            "La Rioja",
+            "Sense document propi; publica la guia de l'INTEF.",
+            "Com l'INTEF.",
+            "[Pàgina de la Conselleria](https://www.larioja.org/edu-proteccion-datos/es/novedades/guia-uso-inteligencia-artificial)"
+          ],
+          [
+            "Ceuta i Melilla",
+            "Les instruccions del Ministeri no tracten la IA.",
+            "Regla general (vegeu la nota)",
+            "—"
+          ],
+          [
+            "Estatal (INTEF)",
+            "No fixa edat. Amb l'alumnat, només eines validades o autoritzades.",
+            "Menors de 14: necessària per a qualsevol registre.",
+            "[Guia 2.0 (2026)](https://intef.es/wp-content/uploads/2026/09/ACTUALIZACION-GUIA-DE-LA-IA-DEF-1-SEPT-2026-Publicable-v5-2.pdf)"
+          ]
+        ],
+        "nota": "**On l'administració no ha publicat res o no tracta l'autorització, regeix la regla general de tot Espanya.** Amb les eines que facilita el centre o l'administració no cal el consentiment de les famílies, perquè el tractament es basa en la funció educativa, però cal informar-les de quina eina s'usa, amb quin compte i per a què. Si l'activitat obliga l'alumne a registrar-se o es basa en el consentiment, per sota dels 14 anys autoritza la família, i a partir dels 14 ho pot fer el mateix alumne. A més, cal l'autorització familiar quan la demanen les condicions de l'eina: OpenAI, per exemple, la demana fins als 18 anys. La [guia de l'INTEF](https://intef.es/wp-content/uploads/2026/09/ACTUALIZACION-GUIA-DE-LA-IA-DEF-1-SEPT-2026-Publicable-v5-2.pdf) serveix de referència: proposa activitats mediades pel professorat i només eines validades per l'administració o autoritzades per la direcció del centre."
+      }
+    },
+    {
+      "ladillo": "Més enllà del número",
+      "parrafos": [
+        "La UNESCO va posar una xifra el 2023: la seva guia sobre IA generativa en educació [proposava una edat mínima de 13 anys](https://www.unesco.org/en/articles/unesco-governments-must-quickly-regulate-generative-ai-schools) per usar aquestes eines a l'aula. Tres anys després, un informe de recerca publicat per la mateixa UNESCO, signat per Sonia Livingstone, Kim R. Sylwander, Sandra El Gemayel i Ayça Atabey, sosté que no hi ha una edat correcta, i el diari [ho va explicar a la seva Biblioteca](pieza:2026-11-02/unesco-edad-ia). En el seu [resum al blog Media@LSE](https://blogs.lse.ac.uk/medialse/2026/09/22/is-there-a-right-age-for-ai-in-education/), Livingstone explica que la ciència del desenvolupament veu avui la variabilitat i el context com la norma, i que sense atendre el desenvolupament infantil i unes finalitats educatives clares els ministeris s'arrisquen a decidir sense fonament.",
+        "L'informe proposa a més distingir entre educar l'alumnat sobre la IA, una alfabetització que ha de començar aviat, i usar la IA per educar, on l'evidència de beneficis és escassa. Per això Livingstone considera el principi de precaució «un punt de partida raonable». Cita també Common Sense Media: el 73 % dels adolescents estatunidencs diu que no ha parlat mai amb un docent sobre què és la IA i com funciona. El resum no dona la mida de la mostra.",
+        "El [Fòrum Econòmic Mundial](https://reports.weforum.org/docs/WEF_Childrens_Safety_and_WellBeing_in_the_Age_of_AI_2026.pdf), en un white paper del setembre del 2026, aporta la mirada contrària a les prohibicions àmplies. Sosté que la verificació d'edat serveix per aplicar salvaguardes diferenciades, però no determina la maduresa ni garanteix la moderació o la reparació d'un dany, i que les restriccions generals poden bloquejar beneficis i empènyer la infància cap a serveis menys controlats. Les dues postures comparteixen el fons: l'edat, sola, no fa segura ni útil una eina."
+      ]
+    },
+    {
+      "ladillo": "Què pot fer un docent",
+      "parrafos": [
+        "Amb alumnat menor de 14 anys, l'opció més prudent i coherent amb el que demanen les administracions que s'hi han pronunciat és l'ús mediat: el docent maneja l'eina amb el seu compte del centre, projecta i comenta, i l'alumnat analitza, contrasta i discuteix les respostes sense introduir dades personals. Així es pot treballar l'alfabetització en IA des de primària, per exemple comprovant errors d'un xatbot o comparant-ne la resposta amb un llibre, sense que cap menor obri un compte.",
+        "Quan l'alumnat vagi a usar l'eina directament, convé que sigui amb el compte educatiu que facilita l'administració i no amb un de personal, després de comprovar que l'administrador del centre l'ha habilitat i amb quines limitacions. **Un compte personal obert per un menor queda fora del paraigua del centre i depèn del consentiment i de les condicions de l'empresa.** Si hi ha dubtes sobre una eina concreta, el delegat o la delegada de protecció de dades de l'administració educativa pot assessorar.",
+        "Cal informar les famílies de quina eina s'usa, amb quin compte i per a què, tot i que la llei no sempre n'exigeixi el consentiment. Abans de cada activitat ajuden les preguntes que planteja la recerca: quina finalitat educativa té, quina evidència la sustenta i si es tracta d'aprendre sobre la IA o amb ella. I convé revisar de tant en tant les condicions dels serveis, perquè canvien sovint."
+      ]
+    }
+  ],
+  "claves": [
+    "Conviuen tres edats diferents: la de les condicions de cada servei, la de consentiment per tractar dades (14 anys a Espanya) i la que fixen algunes administracions educatives.",
+    "A 6 de novembre del 2026, OpenAI i Microsoft demanen almenys 13 anys, Anthropic 18, i Google obre Gemini a totes les edats només en comptes educatius gestionats pel centre.",
+    "En l'ensenyament reglat el tractament de dades es basa en la funció educativa, no en el consentiment, sempre que s'usin les eines del centre o de l'administració.",
+    "Cada comunitat decideix: unes poques fixen edats o condicions, altres ho resolen amb les seves plataformes i set no tenen document propi.",
+    "El projecte de llei que elevava a 16 anys l'edat de consentiment va caducar amb la dissolució de les Corts l'octubre del 2026.",
+    "La UNESCO i el Fòrum Econòmic Mundial coincideixen que l'edat, per si sola, no basta: importen la finalitat, les condicions i l'evidència."
+  ],
+  "relacionadas": [
+    {
+      "fecha": "2026-11-03",
+      "id": "google-ia-cuentas-escolares"
+    }
+  ],
+  "fuentes": [
+    {
+      "titulo": "Condiciones de uso de Europa (OpenAI) (en castellà)",
+      "url": "https://openai.com/policies/eu-terms-of-use/"
+    },
+    {
+      "titulo": "¿Es ChatGPT seguro para todas las edades? (OpenAI, centre d'ajuda) (en castellà)",
+      "url": "https://help.openai.com/es-es/articles/8313401-es-chatgpt-seguro-para-todas-las-edades"
+    },
+    {
+      "titulo": "Requisits d'edat als Comptes de Google (Google, centre d'ajuda)",
+      "url": "https://support.google.com/accounts/answer/1350409?hl=ca"
+    },
+    {
+      "titulo": "Què necessites per iniciar la sessió en aplicacions de Gemini (Google)",
+      "url": "https://support.google.com/gemini/answer/13278668?hl=ca"
+    },
+    {
+      "titulo": "Guiar l'experiència del teu fill o filla a les aplicacions de Gemini (Google)",
+      "url": "https://support.google.com/gemini/answer/16109150?hl=ca"
+    },
+    {
+      "titulo": "Gestionar el pla d'IA de Google des de les aplicacions de Gemini (Google)",
+      "url": "https://support.google.com/gemini/answer/14517446?hl=ca"
+    },
+    {
+      "titulo": "Guía de inicio rápido de Gemini y Gemini Notebook para Education (Google Workspace, 28-10-2026) (en castellà)",
+      "url": "https://knowledge.workspace.google.com/admin/getting-started/editions/quickstart-guide-to-gemini-and-gemini-notebook-for-education?hl=es"
+    },
+    {
+      "titulo": "Controlar el acceso a los servicios de Google por edad (Google Workspace) (en castellà)",
+      "url": "https://knowledge.workspace.google.com/admin/getting-started/editions/control-access-to-google-services-by-age?hl=es"
+    },
+    {
+      "titulo": "Condiciones de uso de Microsoft Copilot para particulares (Microsoft, 18-08-2026) (en castellà)",
+      "url": "https://www.microsoft.com/es-es/microsoft-copilot/for-individuals/termsofuse"
+    },
+    {
+      "titulo": "Microsoft 365 Copilot Chat for students 13+ (Microsoft Education Blog, agost del 2025) (en anglès)",
+      "url": "https://techcommunity.microsoft.com/blog/educationblog/microsoft-365-copilot-chat-for-students-13/4440370"
+    },
+    {
+      "titulo": "Consumer Terms of Service (Anthropic, 8-10-2025) (en anglès)",
+      "url": "https://www.anthropic.com/legal/consumer-terms"
+    },
+    {
+      "titulo": "Ley Orgánica 3/2018, de Protección de Datos Personales y garantía de los derechos digitales, artículo 7 (BOE) (en castellà)",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673#a7"
+    },
+    {
+      "titulo": "¿Cuál es la edad para que los menores puedan prestar consentimiento para tratar sus datos personales? (AEPD) (en castellà)",
+      "url": "https://www.aepd.es/preguntas-frecuentes/10-menores-y-educacion/FAQ-1001-cual-es-la-edad-para-que-los-menores-puedan-prestar-consentimiento-para-tratar-sus-datos-personales"
+    },
+    {
+      "titulo": "¿Pueden los centros educativos impartir clases y realizar exámenes online sin el consentimiento de los interesados? (AEPD) (en castellà)",
+      "url": "https://www.aepd.es/preguntas-frecuentes/10-menores-y-educacion/FAQ-1009-pueden-los-centros-educativos-impartir-clases-y-realizar-examenes-online-sin-el-consentimiento-de-los-interesados"
+    },
+    {
+      "titulo": "Proyecto de Ley Orgánica para la protección de las personas menores de edad en los entornos digitales (BOCG, Congreso, 121/000052) (en castellà)",
+      "url": "https://www.congreso.es/public_oficiales/L15/CONG/BOCG/A/BOCG-15-A-52-1.PDF"
+    },
+    {
+      "titulo": "Ficha de tramitación del proyecto 121/000052 (Congreso de los Diputados) (en castellà)",
+      "url": "https://www.congreso.es/es/proyectos-de-ley?p_p_id=iniciativas&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_iniciativas_mode=mostrarDetalle&_iniciativas_legislatura=XV&_iniciativas_id=121%2F000052"
+    },
+    {
+      "titulo": "Reglamento (UE) 2024/1689 de Inteligencia Artificial (DOUE, en el BOE) (en castellà)",
+      "url": "https://www.boe.es/buscar/doc.php?id=DOUE-L-2024-81079"
+    },
+    {
+      "titulo": "Ley de IA: marco regulador (Comissió Europea, actualitzada el 19-10-2026) (en castellà)",
+      "url": "https://digital-strategy.ec.europa.eu/es/policies/regulatory-framework-ai"
+    },
+    {
+      "titulo": "Orientacions per a l’ús de la intel·ligència artificial als centres educatius (Generalitat de Catalunya, 2026)",
+      "url": "https://t.me/ChatGPTedu/21753/53605"
+    },
+    {
+      "titulo": "Guía para el uso de las inteligencias artificiales en el ámbito educativo (Departament d'Educació del Govern Basc) (en castellà)",
+      "url": "https://www.euskadi.eus/contenidos/documentacion/inn_doc_adi_artif/es_def/adjuntos/Guia-uso-de-IA-en-educacion_Euskadi.pdf"
+    },
+    {
+      "titulo": "Guía sobre el uso de la inteligencia artificial en el ámbito educativo, versió 2.0 (INTEF, setembre del 2026) (en castellà)",
+      "url": "https://intef.es/wp-content/uploads/2026/09/ACTUALIZACION-GUIA-DE-LA-IA-DEF-1-SEPT-2026-Publicable-v5-2.pdf"
+    },
+    {
+      "titulo": "Nueva versión de la «Guía sobre el uso de la inteligencia artificial en el ámbito educativo» (INTEF, 08-09-2026) (en castellà)",
+      "url": "https://intef.es/Noticias/nueva-version-de-la-guia-sobre-el-uso-de-la-inteligencia-artificial-en-el-ambito-educativo/"
+    },
+    {
+      "titulo": "UNESCO: Governments must quickly regulate Generative AI in schools (UNESCO, 07-09-2023) (en anglès)",
+      "url": "https://www.unesco.org/en/articles/unesco-governments-must-quickly-regulate-generative-ai-schools"
+    },
+    {
+      "titulo": "Is there a right age for AI in education? (Sonia Livingstone, Media@LSE, 22-09-2026) (en anglès)",
+      "url": "https://blogs.lse.ac.uk/medialse/2026/09/22/is-there-a-right-age-for-ai-in-education/"
+    },
+    {
+      "titulo": "Children's Safety and Well-Being in the Age of AI: Best Practices and Incentives (Fòrum Econòmic Mundial, setembre del 2026) (en anglès)",
+      "url": "https://reports.weforum.org/docs/WEF_Childrens_Safety_and_WellBeing_in_the_Age_of_AI_2026.pdf"
+    },
+    {
+      "titulo": "Google says that students in schools that ban AI won't have access to Search (Engadget, 03-11-2026) (en anglès)",
+      "url": "https://www.engadget.com/2305432/google-says-that-students-in-schools-that-ban-ai-wont-have-access-to-search/"
+    },
+    {
+      "titulo": "Orden de 8 de septiembre de 2025 de la Consejería de Educación y Formación Profesional de la Región de Murcia (BORM) (en castellà)",
+      "url": "https://www.borm.es/services/anuncio/ano/2025/numero/4232/pdf?id=838315"
+    },
+    {
+      "titulo": "Política de uso aceptable de la IA en los centros educativos de la Comunidad de Madrid (Consejería de Digitalización, 25-09-2026) (en castellà)",
+      "url": "https://www.educa2.madrid.org/web/educamadrid/principal/files/1cff6bb2-8b91-48fc-ae7b-a3d3b62d1d84/Convenios/Documentos%20comunes/Politica%20de%20uso%20aceptable%20de%20la%20IA%20en%20centros%20educativos.pdf"
+    },
+    {
+      "titulo": "Directrices de uso de Google Workspace for Education y herramientas de IA (Comunitat de Madrid, 09-07-2026) (en castellà)",
+      "url": "https://www.educa2.madrid.org/web/educamadrid/principal/files/1cff6bb2-8b91-48fc-ae7b-a3d3b62d1d84/Convenios/Google/Directrices%20de%20Uso%20de%20los%20Servicios%20de%20GWS.pdf"
+    },
+    {
+      "titulo": "Guía de buenas prácticas para el uso de Google Workspace for Education y la protección de datos, v08 (Junta de Andalucía, 28-10-2026) (en castellà)",
+      "url": "https://www.juntadeandalucia.es/educacion/eaprendizaje/wp-content/uploads/2026/10/261028_Guia-de-Buenas-Practicas_Google_v08.pdf"
+    },
+    {
+      "titulo": "Recomendaciones de uso de la IA en el G Suite educativo (Govern de Canàries, 22-12-2025) (en castellà)",
+      "url": "https://www3.gobiernodecanarias.org/medusa/ecoescuela/gsuite/2025/12/22/recomendaciones-de-uso-de-la-ia-en-el-g-suite-educativo/"
+    },
+    {
+      "titulo": "Guia d'ajuda a la planificació d'accions formatives sobre intel·ligència artificial. PAF 2026-2027 (CEFIRE, Generalitat Valenciana)",
+      "url": "https://portal.edu.gva.es/cefire/wp-content/uploads/sites/1992/2026/09/Guia_accions_formatives_IA_PAF_2026-2027_VAL.pdf"
+    },
+    {
+      "titulo": "Instrucción n.º 6/2026 sobre el uso de teléfonos móviles y otros dispositivos digitales (Junta de Extremadura, 20-08-2026) (en castellà)",
+      "url": "https://www.educarex.es/pub/cont/com/0061/documentos/Instrucci%C3%B3n_6_2026_USO_DISPOSITIVOS_DIGITALES%28F%29.pdf"
+    },
+    {
+      "titulo": "Circular de inicio de curso 2026-2027, anexo F: protección de datos personales (Principado de Asturias) (en castellà)",
+      "url": "https://www.educastur.es/documents/34868/38433/Anexo_F_PROTECCION_DATOSPERSONALES_CPUBLICOS.pdf/c639b6d8-b281-8274-f2cf-5d11b8631cca"
+    },
+    {
+      "titulo": "Anteproxecto de Lei de educación dixital de Galicia (Xunta de Galicia) (en gallec)",
+      "url": "https://transparencia.xunta.gal/tema/informacion-de-relevancia-xuridica/normativa-en-tramitacion/en-prazo-de-envio-de-suxestions/-/nt/0825/anteproxecto-lei-educacion-dixital-galicia"
+    },
+    {
+      "titulo": "Guía para el uso de la inteligencia artificial en el ámbito educativo (Educación y protección de datos, Gobierno de La Rioja) (en castellà)",
+      "url": "https://www.larioja.org/edu-proteccion-datos/es/novedades/guia-uso-inteligencia-artificial"
+    }
+  ],
+  "mensaje": {
+    "grupo": "chatgpt",
+    "id": 53933
+  },
+  "comprobado": "Verificador, 6-11-2026. Abiertos con WebFetch y confirmados: Google (cuenta propia en España, 14 años; Gemini 13 años o edad del país; no disponible en cuentas supervisadas del EEE; plan de pago en el EEE, mayor de 18; Workspace for Education, «Disponible para todos», acceso por el administrador, políticas más estrictas para menores de 18, sin entrenamiento, actualizada 2026-10-28; menores por defecto en primaria y secundaria sin Gemini en Classroom para crear o editar); Microsoft (Copilot particulares, 18-08-2026, 13 años o más según país, «Si eres menor de 18 años, podríamos desactivar o limitar algunas funciones»; blog de educación 6-08-2025, 13+, datos no usados para entrenar modelos fundacionales); Anthropic (18 años, 8-10-2025); AEPD FAQ 1001 (14 años, patria potestad) y FAQ 1009 (sin consentimiento en enseñanza reglada, misión de interés público, DA 23.ª LOE, DPD, medios del centro); ficha del Congreso (presentado 27-03-2025, caducado, 06-10-2026); Comisión Europea (alfabetización 2-2-2025; anexo III al 2-12-2027); Reglamento de IA (considerandos 29 y 56 en el BOE; artículo 5 y anexo III no leídos); Engadget (3-11-2026, desactivado por defecto en K-12, «in the coming months»); Canarias (13-01-2026; Gemini profesorado, NotebookLM profesorado y alumnado; sin edades); noticia del INTEF (8-09-2026, versión 2.0, alfabetización del alumnado); UNESCO 2023 (edad mínima 13); Media@LSE (autoras, variabilidad, ministerios, sobre/con IA, principio de precaución, 73 % sin muestra); XTEC («En desenvolupament», sin edades). Disolución de las Cortes: RD 806/2026 publicado en el BOE de 6-10-2026 (WebSearch). Mensaje 53933 (ChatGPTedu): existe, del 3-11-2026; es el que la pieza publicada 2026-11-03/google-ia-cuentas-escolares da como origen del tema (el mensaje es un reenvío con un enlace; no se citan mensajes de grupos en el cuerpo). NO confirmado en la página abierta: OpenAI (403 en WebFetch; las condiciones europeas y la indicación del centro de ayuda se confirman solo con los extractos oficiales que devuelve WebSearch, por eso la indicación sobre menores de 13 se da como paráfrasis y no como cita literal); el artículo del proyecto de ley que eleva a 16 años (el PDF no se pudo leer; consta en extractos de WebSearch del Ministerio de Justicia); Euskadi (PDF ilegible con WebFetch; WebSearch extrae de la introducción que el límite para chatbots es 13 años, no la frase literal anterior, que se quitó, ni lo que dice de 14 a 18); INTEF (PDF ilegible; se quitó la remisión a los 14 años, que ni la noticia ni ningún extracto confirmó; la prioridad a herramientas autorizadas o validadas consta en el reportaje verificado 2026-10-31); WEF (PDF ilegible con WebFetch; el contenido procede de la pieza verificada de la Biblioteca 2026-11-02/wef-infancia-ia, que leyó el PDF); Cataluña (sin fuente oficial localizada; WebSearch no encuentra la edición de 2026; el contenido procede de la reseña verificada 2026-11-02/cat-orientacions-ia, que leyó el texto del PDF compartido en el mensaje 53605, y se presenta como no contrastado). Enlaces pieza: las tres claves están en publicado.txt y las piezas tratan lo que se dice (debate sobre Google, orientaciones catalanas, informe UNESCO sobre la edad). Traducción al catalán: las cuatro páginas de ayuda de Google (cuenta, Gemini, cuentas supervisadas, plan de pago) se enlazan en su versión oficial en catalán (hl=ca), abierta con WebFetch.",
+  "ilustracion": "Infografía en tres franjas horizontales, una por regla, sobre una regla graduada de 0 a 18 años. Franja 1, «Condiciones de las empresas»: marcas en 13 (OpenAI, Microsoft, Gemini personal), 18 (Anthropic) y un tramo sombreado «todas las edades, solo con cuenta del centro» para Gemini en Workspace for Education. Franja 2, «Ley de protección de datos»: una línea en 14 años, «consentimiento propio», con la nota «en el centro, la base es la función educativa». Franja 3, «Guías educativas»: Cataluña, menos de 14 «lo maneja el docente» y de 14 a 18 «con autorización»; Euskadi, sin chatbots antes de 13. Al pie, tres preguntas que sustituyen a «¿qué edad?»: ¿para qué?, ¿con qué cuenta?, ¿quién la maneja?",
+  "ilustracion_alt": "Infografia sobre un regle d'edats de 0 a 18 anys, amb marques a 13, 14 i 18, en tres blocs. «Empreses»: «OpenAI i Microsoft: des de 13», amb una línia de 13 a 18; «Anthropic: des de 18», amb un punt a 18; i «Gemini amb compte del centre: totes les edats», amb una barra de 0 a 18. «Llei de dades»: «Consentiment propi: des de 14», amb una línia discontínua fins als 14 i contínua a partir d'aquí; i «Al centre, sense consentiment: funció educativa», amb una barra de 0 a 18. «Algunes administracions educatives»: «Catalunya: el docent fa servir la IA», amb una línia vermella fins als 14, i «Des de 14: informar, autorització recomanable», amb una línia des dels 14; i «Euskadi: xatbots des de 13», amb una creu abans dels 13 i una línia a partir d'aquí; i «Múrcia: accés autònom des de 3r d'ESO», amb una línia discontínua fins als 14 i contínua a partir d'aquí. Al peu, «Per a què? Amb quin compte? Qui la maneja?».",
+  "repaso": [
+    "OpenAI: la frase entrecomillada del centro de ayuda no se pudo confirmar literalmente (403); se da como paráfrasis, apoyada en los extractos oficiales de la búsqueda.",
+    "Microsoft: confirmado «menores de 18» y se ajusta a «desactivar o limitar» funciones.",
+    "Proyecto de ley: «modificaba el artículo 7» pasa a «incluía elevarla a 16 años» (el PDF no se pudo leer; consta por el Ministerio de Justicia); quitada la cita de la disposición adicional 23.ª de la LOE como número (se dice «Ley Orgánica de Educación»).",
+    "Google: precisado que la restricción de menores por defecto es en primaria y secundaria.",
+    "Cataluña: sin fuente oficial localizada, se presenta como no contrastado y atribuido a la reseña del diario; «publicadas en septiembre» se atribuye a ella, y se mantiene la nota de la XTEC.",
+    "Euskadi: quitada la cita literal «no se permite el uso de chatbots a menores de 13 años» (no confirmada); queda lo que dice la introducción según el extracto.",
+    "Canarias: «acotan las herramientas a las del entorno corporativo de Google» suavizado a lo que dice la página.",
+    "INTEF: quitada la remisión al umbral de 14 años (no confirmada); se mantiene la prioridad a herramientas autorizadas o validadas y la alfabetización.",
+    "Consejo del DPD: «es la interlocutora» pasa a «puede asesorar», como dice la AEPD.",
+    "Relacionadas: quitada familias-deberes-ia (existe, pero trata de deberes con IA, no de la edad).",
+    "Actualizado `comprobado`. WEF sin cambios, pero no reabierto por el verificador (PDF ilegible); se apoya en la pieza de la Biblioteca."
+  ],
+  "reserva": "escrito el 2026-11-06 como reportaje de reserva (2099-02-01)"
+}

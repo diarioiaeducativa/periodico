@@ -1,229 +1,229 @@
 {
- "fecha": "2026-11-02",
- "piezas": [
-  {
-   "id": "unesco-edad-ia",
-   "seccion": "biblioteca",
-   "importancia": 2,
-   "grupo": "chatgpt",
-   "antetitulo": "UNESCOk argitaratutako txostena",
-   "titular": "UNESCOrentzako txosten batek proposatzen du gelan AA erabiltzean «zer adinetan?» galderaren ordez «zertarako eta zer ebidentziarekin?» galdetzea",
-   "entradilla": "Sonia Livingstonek eta hiru egilekidek diote ez dagoela hezkuntzan AA erabiltzeko adin zuzen bakarrik, eta haurren garapenaren eta helburu hezitzaile argien arabera erabakitzeko eskatzen dute.",
-   "cuerpo": [
-    "«Is there a right age for AI in education? Deciding whether AI is age-appropriate and why» ikerketa-txostena da, Sonia Livingstonek, Kim R. Sylwanderrek, Sandra El Gemayelek eta Ayça Atabeyk sinatua eta UNESCOk 2026an argitaratua. Livingstonek, London School of Economicseko Hedabide eta Komunikazio Sailean Psikologia Soziala irakasten duenak, UNESCOren Digital Learning Weekean aurkeztu zuen, eta laburpen bat argitaratu zuen Media@LSE blogean 2026ko irailaren 22an. Laburpen horren arabera, testua hezkuntzako AAren gobernantzari buruzko politika-oharrak lantzen laguntzeko prestatu zen. Kontuan izan behar da artikulu hau egilearen laburpenean eta liburutegiko fitxan oinarritzen dela, testu osoa ezin izan baita UNESCOren biltegian ireki.",
-    "Tesia da ez dagoela adin zuzen bakarrik, haurren garapena aldakorra delako eta testuinguruaren araberakoa delako. Hortik dator «zer adinetan?» galdera «zertarako, zer baldintzatan eta zer ebidentziarekin?» galderaz ordezkatzeko proposamena, liburutegiko fitxak ere jasotzen duen formulazioa. Livingstonek eskatzen du erabakiak haurren garapenean eta helburu hezitzaile argietan oinarritzeko; hala ez bada, ohartarazten du, hezkuntza-ministerioek oinarririk gabeko erabakiak hartzeko arriskua dutela. Bereizketa bat ere egiten du: AAri buruz irakastea, hau da, AA-alfabetatzea, goiz-goizetik lehentasunezkotzat jotzen duena, eta AA irakasteko erabiltzea, eta eremu horretan ebidentzia gutxi dagoela dio. Ziurgabetasun horren aurrean abiapuntu gisa, hau idazten du: «arretazko printzipioa abiapuntu zentzuzkoa da».",
-    "Laburpenak datu batzuk ematen ditu. NBEren AAri buruzko nazioarteko zientzia-panel independenteak AAk gizartean, hezkuntzan barne, dituen ondorioei buruzko ebidentzia bilatu zuen, eta onuren gaineko gutxi aurkitu zuen eta arriskuei buruzko gehiago. Kenian, Brasilen, Indian eta Thailandian egindako Rights.AI ikerketan, haur-nerabeek AA erabiltzen zuten, maiz gainbegiratu gabe, informatzeko, sortzeko, dibertitzeko eta aholku eskatzeko. Estatu Batuetan, nerabeen %73k esan zuen ez zuela inoiz irakasle batekin hitz egin AA zer den eta nola funtzionatzen duen. Egileak pribatutasun-arriskuak ere aipatzen ditu, baita ikastetxeek erabiltzen dituzten tresnetan oharrik gabe egiten diren aldaketak ere, eta gogorarazten du adin-murrizketak daudela Norvegian, New Yorken edo Kalifornian bezalako lekuetan.",
-    "Liburutegian, dokumentu hau haurtzaroa eta AA ikuspegi desberdinetatik jorratzen dituzten beste batzuekin batera dago. Munduko Ekonomia Foroaren haurren segurtasun eta ongizateari buruzko txostenak ([bere artikulua](https://t.me/ChatGPTedu/21753/53435)) bat egiten du adina bera ez dela irizpide nahikoa, nahiz eta batez ere sistemak diseinatu eta zabaltzen dituztenei zuzenduta egon. Mezuaren beraren fitxaren arabera, testua UNESCOren Digital Learning Weekean aurkeztu zen, eta han beste dokumentu batzuk ere argitaratu ziren, tartean «The Algorithm in the Room» ([liburutegian](https://t.me/ChatGPTedu/21753/52272)).",
-    "Irakasle batentzat, balioa arau batean baino galderaren aldaketan dago: tresna bat sartu aurretik, komeni da jakitea zer helburu hezitzaile duen, zer ebidentziak babesten duen eta AAri buruz irakastea ala AArekin irakastea den kontua. Muga da, bere tesia dela eta, ez duela ikastetxeko erregelamendu batean zuzenean aplika daitekeen langarik ematen. Hasierako irakurgai gisa, Media@LSEko laburpena laburra da eta txosten osora esteka du."
-   ],
-   "documento": {
-    "titulo": "Is there a right age for AI in education? Deciding whether AI is age-appropriate and why",
-    "autoria": "Sonia Livingstone, Kim R. Sylwander, Sandra El Gemayel eta Ayça Atabey",
-    "anyo": "2026",
-    "idioma": "ingelesa",
-    "licencia": "ez da adierazten",
-    "url": "https://unesdoc.unesco.org/ark:/48223/pf0000399343"
-   },
-   "fuentes": [
+  "fecha": "2026-11-02",
+  "piezas": [
     {
-     "titulo": "Is there a right age for AI in education? (UNESCO, UNESDOC) (ingelesez)",
-     "url": "https://unesdoc.unesco.org/ark:/48223/pf0000399343"
+      "id": "unesco-edad-ia",
+      "seccion": "biblioteca",
+      "importancia": 2,
+      "grupo": "chatgpt",
+      "antetitulo": "UNESCOk argitaratutako txostena",
+      "titular": "UNESCOrentzako txosten batek proposatzen du gelan AA erabiltzean «zer adinetan?» galderaren ordez «zertarako eta zer ebidentziarekin?» galdetzea",
+      "entradilla": "Sonia Livingstonek eta hiru egilekidek diote ez dagoela hezkuntzan AA erabiltzeko adin zuzen bakarrik, eta haurren garapenaren eta helburu hezitzaile argien arabera erabakitzeko eskatzen dute.",
+      "cuerpo": [
+        "«[Is there a right age for AI in education? Deciding whether AI is age-appropriate and why](https://unesdoc.unesco.org/ark:/48223/pf0000399343)» ikerketa-txostena da, Sonia Livingstonek, Kim R. Sylwanderrek, Sandra El Gemayelek eta Ayça Atabeyk sinatua eta UNESCOk 2026an argitaratua. Livingstonek, London School of Economicseko Hedabide eta Komunikazio Sailean Psikologia Soziala irakasten duenak, UNESCOren Digital Learning Weekean aurkeztu zuen, eta laburpen bat argitaratu zuen [Media@LSE](https://blogs.lse.ac.uk/medialse/2026/09/22/is-there-a-right-age-for-ai-in-education/) blogean 2026ko irailaren 22an. Laburpen horren arabera, testua hezkuntzako AAren gobernantzari buruzko politika-oharrak lantzen laguntzeko prestatu zen. Kontuan izan behar da artikulu hau egilearen laburpenean eta liburutegiko fitxan oinarritzen dela, testu osoa ezin izan baita UNESCOren biltegian ireki.",
+        "Tesia da ez dagoela adin zuzen bakarrik, haurren garapena aldakorra delako eta testuinguruaren araberakoa delako. Hortik dator «zer adinetan?» galdera «zertarako, zer baldintzatan eta zer ebidentziarekin?» galderaz ordezkatzeko proposamena, liburutegiko fitxak ere jasotzen duen formulazioa. Livingstonek eskatzen du erabakiak haurren garapenean eta helburu hezitzaile argietan oinarritzeko; hala ez bada, ohartarazten du, hezkuntza-ministerioek oinarririk gabeko erabakiak hartzeko arriskua dutela. Bereizketa bat ere egiten du: AAri buruz irakastea, hau da, AA-alfabetatzea, goiz-goizetik lehentasunezkotzat jotzen duena, eta AA irakasteko erabiltzea, eta eremu horretan ebidentzia gutxi dagoela dio. Ziurgabetasun horren aurrean abiapuntu gisa, hau idazten du: «arretazko printzipioa abiapuntu zentzuzkoa da».",
+        "Laburpenak datu batzuk ematen ditu. NBEren AAri buruzko nazioarteko zientzia-panel independenteak AAk gizartean, hezkuntzan barne, dituen ondorioei buruzko ebidentzia bilatu zuen, eta onuren gaineko gutxi aurkitu zuen eta arriskuei buruzko gehiago. Kenian, Brasilen, Indian eta Thailandian egindako Rights.AI ikerketan, haur-nerabeek AA erabiltzen zuten, maiz gainbegiratu gabe, informatzeko, sortzeko, dibertitzeko eta aholku eskatzeko. Estatu Batuetan, nerabeen %73k esan zuen ez zuela inoiz irakasle batekin hitz egin AA zer den eta nola funtzionatzen duen. Egileak pribatutasun-arriskuak ere aipatzen ditu, baita ikastetxeek erabiltzen dituzten tresnetan oharrik gabe egiten diren aldaketak ere, eta gogorarazten du adin-murrizketak daudela Norvegian, New Yorken edo Kalifornian bezalako lekuetan.",
+        "Liburutegian, dokumentu hau haurtzaroa eta AA ikuspegi desberdinetatik jorratzen dituzten beste batzuekin batera dago. Munduko Ekonomia Foroaren haurren segurtasun eta ongizateari buruzko txostenak ([bere artikulua](https://t.me/ChatGPTedu/21753/53435)) bat egiten du adina bera ez dela irizpide nahikoa, nahiz eta batez ere sistemak diseinatu eta zabaltzen dituztenei zuzenduta egon. Mezuaren beraren fitxaren arabera, testua UNESCOren Digital Learning Weekean aurkeztu zen, eta han beste dokumentu batzuk ere argitaratu ziren, tartean «The Algorithm in the Room» ([liburutegian](https://t.me/ChatGPTedu/21753/52272)).",
+        "Irakasle batentzat, balioa arau batean baino galderaren aldaketan dago: tresna bat sartu aurretik, komeni da jakitea zer helburu hezitzaile duen, zer ebidentziak babesten duen eta AAri buruz irakastea ala AArekin irakastea den kontua. Muga da, bere tesia dela eta, ez duela ikastetxeko erregelamendu batean zuzenean aplika daitekeen langarik ematen. Hasierako irakurgai gisa, Media@LSEko laburpena laburra da eta txosten osora esteka du."
+      ],
+      "documento": {
+        "titulo": "Is there a right age for AI in education? Deciding whether AI is age-appropriate and why",
+        "autoria": "Sonia Livingstone, Kim R. Sylwander, Sandra El Gemayel eta Ayça Atabey",
+        "anyo": "2026",
+        "idioma": "ingelesa",
+        "licencia": "ez da adierazten",
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000399343"
+      },
+      "fuentes": [
+        {
+          "titulo": "Is there a right age for AI in education? (UNESCO, UNESDOC) (ingelesez)",
+          "url": "https://unesdoc.unesco.org/ark:/48223/pf0000399343"
+        },
+        {
+          "titulo": "Is there a right age for AI in education? (Media@LSE, 2026ko irailaren 22a) (ingelesez)",
+          "url": "https://blogs.lse.ac.uk/medialse/2026/09/22/is-there-a-right-age-for-ai-in-education/"
+        },
+        {
+          "titulo": "Liburutegiko 53435 mezua (WEFen txostena) (gaztelaniaz)",
+          "url": "https://t.me/ChatGPTedu/21753/53435"
+        },
+        {
+          "titulo": "Liburutegiko 52272 mezua (The Algorithm in the Room) (gaztelaniaz)",
+          "url": "https://t.me/ChatGPTedu/21753/52272"
+        }
+      ],
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 53434
+      },
+      "comprobado": "NO se leyó el documento en la fuente oficial: unesdoc.unesco.org devolvió 403 a WebFetch en el repaso y la búsqueda no dio otra copia oficial. Se leyó con WebFetch el resumen de Livingstone en Media@LSE (22-09-2026), que cita autoría y enlace oficial; de él proceden la tesis, el panel de la ONU, Rights.AI (Kenia, Brasil, India, Tailandia), el 73 % y la cita sobre el principio de precaución. Del repaso se retiró lo que solo constaba en prensa secundaria o no figuraba en el resumen (aviso de «posición no oficial», recomendaciones detalladas, evidencia concentrada en el Norte Global, edades y comparaciones por países). El mensaje 52272 no se pudo abrir (solo cabecera de Telegram); su vínculo con la Digital Learning Week se toma de la ficha del mensaje 53434. Licencia y páginas sin confirmar.",
+      "ilustracion": "Esquema con una pregunta tachada («¿a qué edad?») que da paso a tres preguntas en columna: ¿para qué?, ¿bajo qué condiciones?, ¿con qué evidencia?; debajo, una balanza entre «enseñar sobre IA» y «usar IA para enseñar».",
+      "ilustracion_alt": "Laukizuzen bat, «Zein adinetan?» galdera gorriz marratuta duena, eta gezi bat zutabe batean jarritako hiru galderetara («Zertarako?», «Baldintzak», «Ebidentzia»); azpian, «AAri buruz / AArekin», balantza bat, plater batean liburu bat eta bestean pantaila bat dituena."
     },
     {
-     "titulo": "Is there a right age for AI in education? (Media@LSE, 2026ko irailaren 22a) (ingelesez)",
-     "url": "https://blogs.lse.ac.uk/medialse/2026/09/22/is-there-a-right-age-for-ai-in-education/"
+      "id": "wef-infancia-ia",
+      "seccion": "biblioteca",
+      "importancia": 2,
+      "grupo": "chatgpt",
+      "antetitulo": "Munduko Ekonomia Foroaren txostena",
+      "titular": "Munduko Ekonomia Foroak zazpi praktika finkatzen ditu AA haurrentzat segurua izan dadin, ikaskuntzarako sarbidea itxi gabe",
+      "entradilla": "Global Coalition for Digital Safety erakundearen 2026ko irailaren dokumentu batek haurren ongizatea hartzen du helburutzat, eta ez soilik gorabeherarik eza, eta AA diseinatzen dutenentzako praktikak eta betetzeko pizgarriak proposatzen ditu.",
+      "cuerpo": [
+        "«[Children's Safety and Well-Being in the Age of AI: Best Practices and Incentives](https://reports.weforum.org/docs/WEF_Childrens_Safety_and_WellBeing_in_the_Age_of_AI_2026.pdf)» Munduko Ekonomia Foroaren (WEF) white paper bat da, 2026ko irailekoa. Global Coalition for Digital Safety ekimenetik sortu da, Foroaren beraren ekimena, eta hitzaurrea Agustina Callegarik, teknologia-gobernantzako ekimenen arduradunak, eta Cathy Lik, AA Bikaintasun Zentroko zuzendariak, sinatzen dute. Lege-oharrak argitzen du ondorioak prozesu kolaboratibo baten emaitza direla eta ez dutela zertan Foroaren edo bere kideen iritzia adierazi, eta AA sortzailearen tresnak idazketan laguntza gisa erabili zirela, egileek berrikusita.",
+        "Ez da gelarako gida bat. Haurren AA-esperientzia moldatzen dutenei zuzenduta dago: ereduen garatzaile eta hornitzaileei, aplikazio-denden arduradunei, arautzaileei, familiei eta baita hezitzaileei ere. «Haur» definitzen du 18 urtetik beherako edozein pertsona gisa, Haurren Eskubideei buruzko Konbentzioaren arabera, eta ohartarazten du lege-kategoria bat dela eta ez garapen-profil bat. Hortik dator bere funtsezko tesia: ez dago kasu guztietarako baliozko eredurik («There is no one-size-fits-all model»), eta erantzuna ezin da debeku orokorretara ez adin-hesietara mugatu.",
+        "Dokumentuak dio adinak, berez, ez duela zerbitzu bat seguru bihurtzen. Adina egiaztatzea baliagarria da salbaguardia bereizituak aplikatzeko, baina ez du heldutasuna, moderazioa ez kalteen konponketa zehazten. Ez du onartzen, gainera, murrizketa zabalak doakoak direnik: onurak blokea ditzakete, trebetasunak eskuratzeko aukerak murriztu eta haurrak kontrol gutxiagoko zerbitzuetara bultza ditzakete. Adierazten du, halaber, AA sortzaileak eta agentikoak elkarrekintzaren izaera aldatzen dutela, trukaketa jarraituak izan ditzaketelako, gogoratu, pertsonalizatu eta autonomiaz jardun dezaketelako, eta hizkuntza giza-itxurakoak adin txikikoak sistemaren ulermena edo zaintza gaindimentsionatzera eraman ditzakeela.",
+        "Erakundeentzat proposatzen dituen zazpi praktikak hauek dira: segurtasunerako, adinerako eta garapenerako diseinatzea; erabilera onuragarria sustatzea, norberaren iritzia eta giza harremanak zainduz; eduki, jokabide eta elkarrekintza kaltegarriak prebenitzea, haurren esplotazio sexuala eta AAk bideratutako manipulazioa barne; pribatutasuna, duintasuna eta ulermen informatua babestea; ikaskuntza, erresilientzia eta pentsamendu kritikoa indartzea; erantzukizuna, giza gainbegiratzea eta etengabeko hobekuntza ezartzea; eta inklusioa, haurren parte-hartzea eta erantzukizun partekatua sustatzea. Adin txikikoentzat aipatzen dituen kontrol-gaitasunen artean daude AA-funtzio bat murriztea, pausatzea edo desaktibatzea, memoria edo elkarrizketen berrerabilpena baztertzea eta beste azalpen bat eskatzea.",
+        "Hezkuntza-esparruarentzat bereziki interesgarria da bere ikaskuntza-ideia: esposizioak ez du konpetentziarik sortzen, eta AAren erabilerak «should not systematically displace the effort, feedback, discussion, play and social learning through which children build durable knowledge and skills», hau da, ez luke sistematikoki ordezkatu behar haurrek ezagutza eta trebetasun iraunkorrak eraikitzen dituzten ahalegina, feedbacka, eztabaida, jolasa eta ikaskuntza soziala. Planteatzen du, halaber, tresna baten froga erlazionala dela: adin txikikoari pertsonetara, jardueretara eta erabakietara konfiantza handiagoz itzultzen laguntzen dion, edo bere diseinuak berari lehentasuna ematen dion harreman hobetsi gisa.",
+        "Pizgarriei buruzko hirugarren zatia da dokumentua bereizten duena. Abiapuntua da babesa ez dela modu iraunkorrean ezarriko garestia edo errentagarritasun gutxikoa bada, eta neurri-sorta bat proposatzen du: segurtasun-txosten konparagarriak, kontratazio- eta banaketa-baldintzak, finantza- eta aseguru-seinaleak, proba-azpiegitura partekatua, gobernuen gaitasunaren indartzea, ezagutarazpen arduratsurako bide seguruak eta haurrengan neurtu daitezkeen emaitzei lotutako barne-erantzukizuna. Egileek aitortzen dute oinarri partekatu bat dela eta ez estandar tekniko itxi bat, eta epe ertain eta luzerako ondorioei buruzko ebidentzia mugatua dela oraindik.",
+        "Liburutegian, gaiaren aldetik lotura du AA erabiltzeko adin egokiari buruzko UNESCOrentzako txostenarekin ([bere artikulua](https://t.me/ChatGPTedu/21753/53434)) eta «Adimen artifiziala eta haurraren eskubideak» berrikuspen narratiboarekin ([liburutegian](https://t.me/ChatGPTedu/21753/52981)). Irakasle batek edo zuzendaritza-talde batek irizpide-zerrenda gisa erabil dezake tresnak ebaluatu edo kontratatzean: zer kontrol dituzte ikasleek, zer datu gordetzen diren, zer gertatzen den zerbaitek huts egiten duenean. Komeni da sarreratik eta lehen kapitulutik hastea (5.etik 10. orrira), helburua eta erronkak definitzen dituztenak, eta bigarrenaren ikaskuntzari eta pentsamendu kritikoari buruzko atalarekin jarraitzea (16. orria)."
+      ],
+      "documento": {
+        "titulo": "Children's Safety and Well-Being in the Age of AI: Best Practices and Incentives",
+        "autoria": "World Economic Forum (Global Coalition for Digital Safety)",
+        "anyo": "2026",
+        "idioma": "ingelesa",
+        "licencia": "© 2026 World Economic Forum. Eskubide guztiak erreserbatuta",
+        "url": "https://reports.weforum.org/docs/WEF_Childrens_Safety_and_WellBeing_in_the_Age_of_AI_2026.pdf"
+      },
+      "fuentes": [
+        {
+          "titulo": "Children's Safety and Well-Being in the Age of AI: Best Practices and Incentives (PDF, WEF) (ingelesez)",
+          "url": "https://reports.weforum.org/docs/WEF_Childrens_Safety_and_WellBeing_in_the_Age_of_AI_2026.pdf"
+        },
+        {
+          "titulo": "Argitalpenaren orria WEFen (ingelesez)",
+          "url": "https://www.weforum.org/publications/childrens-safety-and-well-being-in-the-age-of-ai-best-practices-and-incentives/"
+        },
+        {
+          "titulo": "Liburutegiko 53434 mezua (gaztelaniaz)",
+          "url": "https://t.me/ChatGPTedu/21753/53434"
+        },
+        {
+          "titulo": "Liburutegiko 52981 mezua (gaztelaniaz)",
+          "url": "https://t.me/ChatGPTedu/21753/52981"
+        }
+      ],
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 53435
+      },
+      "comprobado": "En el repaso se abrió con WebFetch el PDF oficial en reports.weforum.org y se leyeron las páginas 1-12 y 16-22 (portada, índice, aviso legal, prólogo, resumen ejecutivo, introducción, capítulo 1 completo, inicio del 2, apartados 2.5 a 2.7, capítulo 3 y conclusión). Se confirmaron autoría, fecha, firmantes del prólogo, definición de niño, las siete prácticas, la lista de incentivos, las capacidades de control (p. 7), los límites de las prohibiciones y de la verificación de edad (p. 8), el carácter relacional de la prueba (p. 7), el reconocimiento de base compartida (p. 3) y las dos citas literales (pp. 5 y 6). No se leyeron las páginas 13-15. La página de la publicación en weforum.org devolvió 403 en el repaso. Licencia: solo el aviso de copyright de la página 2. El mensaje 52981 existe en la lista de la biblioteca; su contenido no se abrió.",
+      "ilustracion": "Esquema en tres niveles: arriba un objetivo («bienestar infantil»), en medio siete casillas con las prácticas, y abajo una base con los siete incentivos (informes comparables, contratación, finanzas y seguros, pruebas compartidas, capacidad pública, divulgación segura, responsabilidad interna).",
+      "ilustracion_alt": "Tenplu eskematiko bat: frontoiak «Haurren ongizatea» darama; azpian, «Zazpi praktika», zazpi zutabe, eta lauza baten gainean, «Zazpi pizgarri», ikonoak dituzten zazpi bloke (txostena, kontratua, txanpona, matraza, eraikin publikoa, giltzarrapoa eta zikloa) eutsi egiten diotenak."
     },
     {
-     "titulo": "Liburutegiko 53435 mezua (WEFen txostena) (gaztelaniaz)",
-     "url": "https://t.me/ChatGPTedu/21753/53435"
+      "id": "cat-orientacions-ia",
+      "seccion": "biblioteca",
+      "importancia": 3,
+      "grupo": "chatgpt",
+      "antetitulo": "Kataluniako gida ofiziala",
+      "titular": "Kataluniak 45 orientaziotan finkatzen du ikastetxeetan AAren zer erabilera sustatu eta zeintzuk mugatu",
+      "entradilla": "Departament d’Educació i Formació Professional-ek 2026ko irailean gida bat argitaratu du, 14 urtetik beherakoek AA orokorra modu autonomoan erabiltzea, AAz kalifikatzea eta sortutako testuaren detektagailuak desaholkatzen dituena.",
+      "cuerpo": [
+        "Kataluniako Generalitateko Departament d’Educació i Formació Professional-ek 2026ko irailean argitaratu zituen, lehen edizioan, *[Orientacions per a l’ús de la intel·ligència artificial als centres educatius](https://t.me/ChatGPTedu/21753/53605)* (Adimen artifizialaren erabilerarako orientabideak ikastetxeetan), Direcció General de Currículum i Desenvolupament Professional zuzendaritza nagusiak landuak. 2024ko *La intel·ligència artificial en l’educació* dokumentua eguneratzen du. Barne-lantalde batek idatzi zuen 2026ko apiriletik ekainera bitartean, eta administrazioko, unibertsitateko, ikuskaritzako, datu-babeseko, ikastetxeetako zuzendaritzetako eta irakaskuntzako adituen talde batek berrikusi zuen. Hirurogeita hamar orrialde inguru ditu. Testuak berak adierazten du AA ereduak erabili zirela zirriborroak berrikusteko eta eranskin bateko adibideak idazteko.",
+        "Gidak abiapuntutzat hartzen du ikasleek dagoeneko AA erabiltzen dutela ikasteko eta etxeko lanak egiteko. Bere hitzetan, kontua da «ez da AA gelara sartu behar den ala ez, baizik eta nola nahi dugun sartzea». Bere zuhurtzia bost arrazoirekin justifikatzen du: AAk jardueren zati handi bat ebazten du, sortutako testuaren detektagailuek ez dute bermerik nahikoa ematen (batez ere ingelesez kanpo), AA orokorra ez dago ikasteko pentsatuta, eskuragarri dagoen ebidentzia mugatua da baina arriskuak adierazten ditu gidarik gabe erabiltzen bada, eta ez dago erreferentziazko Europako AA publikorik, eta Estatu Batuetako legediak (CLOUD Act, FISA) zalantzan jartzen du datuen benetako babesa.",
+        "Muina 45 orientazio zenbakitu dira (OIA-01etik OIA-45era), eremuka: ikastetxea, irakasleak, hezkuntza-zerbitzuak, laguntza-langileak eta familiak. 14 urtetik beherako ikasleek ez lukete helburu orokorreko AA modu autonomoan erabili behar; harekin lan egiten bada, irakasleak maneiatzen du. 14 eta 18 urte artean ez da familien adostasunik behar, oinarri juridikoa interes publikoko eginkizuna delako, baina haien baimena berme gisa biltzea gomendatzen da, derrigorrezkoa tresnaren baldintzek eskatzen dutenean, eta ikasleen zuzeneko elkarrekintza DBHko 3. mailako bigarren hiruhilekotik aurrera kokatzen da. Era berean, entrenamendua eta memoria iraunkorra desaktibatzeko, AA agentikoa saihesteko, datu pertsonalik ez sartzeko eta ikastetxe bakoitzean erabilera-esparru bat onartzeko, tresnen erregistroarekin, eskatzen da.",
+        "Alde pedagogikoa da gelarako erabilgarriena. Irakasleari eskatzen dio lidergoa mantentzeko, AAk sortzen duena egiaztatzeko, bere erabilera neurri komun batekin aitortzeko eta interpretazioa eta posizio pertsonala eskatzen duten jarduerak diseinatzeko. Ebaluazioan, AAk ez luke kalifikatu behar ez lorpen-maila zehaztu, Europako AA Erregelamenduaren arabera arrisku handiko erabilera delakoan; bai, ordea, tresnak sortzen, erantzun anbiguorik gabekoak zuzentzen edo akats arruntak detektatzen lagun dezake, datu pseudonimizatuekin. Detektagailuei buruz ondorioztatzen du desaholkagarriak direla: «detektagailurik onenak pertsonak izaten jarraitzen dute».",
+        "Liburutegiaren barruan, testua dagoeneko bildutako esparruetan oinarritzen da: [DigComp 3.0](https://t.me/ChatGPTedu/21753/42900), [UNESCOren irakasleentzako konpetentzia-esparrua](https://t.me/ChatGPTedu/21753/36905) eta [departamentuaren beraren irakasleen AA-konpetentzia digitalari buruzko dokumentua](https://t.me/ChatGPTedu/21753/44426), zeinaren oinarrizko etapa aurrebaldintza gisa eskatzen duen. Estatuko orientabide gisa INTEFen 2024ko gida aipatzen du; liburutegiak bere [2. bertsioa](https://t.me/ChatGPTedu/21753/52295) jasotzen du. Erabilera-adina [hezkuntzan AA erabiltzeko adin egokirik ba al dagoen](https://t.me/ChatGPTedu/21753/53434) dokumentuaren gaia ere bada. [Tecnologies educatives al servei de l’aprenentatge: Educació bàsica](https://t.me/ChatGPTedu/21753/53646) gidak, hilabete berean argitaratuak, bere bibliografian aipatzen du.",
+        "Bere mugekin irakurri behar da: orientabideak dira, ez arauak, eta ikastetxe bakoitzak egokitu behar ditu; atal batzuek PDFan ez dauden kanpoko orrietara bidaltzen dute; eta testuak onartzen du ebidentzia mugatua dela eta teknologia azkar aldatzen dela. Kataluniatik kanpo transferigarria irizpideak dira, ez izapideak. Abiapuntu on bat 1etik 3ra bitarteko eranskinak dira, orrialde bateko infografiak, orientabide orokorrekin, ikasleentzat eta familientzat, eta ondoren erabilera pedagogikoari eta ebaluazioari buruzko OIA-28 eta OIA-36tik OIA-38ra bitarteko orientabideak. 4. eranskinak lau analogia ematen ditu (saskibaloia, dantza, rapa, bideojokoa) ikasteak zergatik merezi duen jarraitzen azaltzeko."
+      ],
+      "documento": {
+        "titulo": "Orientacions per a l’ús de la intel·ligència artificial als centres educatius",
+        "autoria": "Generalitat de Catalunya, Departament d’Educació i Formació Professional (Direcció General de Currículum i Desenvolupament Professional)",
+        "anyo": "2026",
+        "idioma": "katalana",
+        "licencia": "Creative Commons Aitortu 4.0 Nazioartekoa (CC BY 4.0)",
+        "url": ""
+      },
+      "fuentes": [
+        {
+          "titulo": "Orientacions per a l’ús de la intel·ligència artificial als centres educatius (liburutegiko mezua) (katalanez)",
+          "url": "https://t.me/ChatGPTedu/21753/53605"
+        },
+        {
+          "titulo": "DigComp 3.0 (liburutegia) (ingelesez)",
+          "url": "https://t.me/ChatGPTedu/21753/42900"
+        },
+        {
+          "titulo": "AI Competency Framework for Teachers (liburutegia) (ingelesez)",
+          "url": "https://t.me/ChatGPTedu/21753/36905"
+        },
+        {
+          "titulo": "Competència digital docent en IA (liburutegia) (katalanez)",
+          "url": "https://t.me/ChatGPTedu/21753/44426"
+        },
+        {
+          "titulo": "Guía sobre el uso de la IA en el ámbito educativo v.2 (liburutegia) (gaztelaniaz)",
+          "url": "https://t.me/ChatGPTedu/21753/52295"
+        },
+        {
+          "titulo": "¿Existe una edad adecuada para que niñas, niños y adolescentes utilicen IA en la educación? (liburutegia) (gaztelaniaz)",
+          "url": "https://t.me/ChatGPTedu/21753/53434"
+        },
+        {
+          "titulo": "Tecnologies educatives al servei de l’aprenentatge: Educació bàsica (liburutegia) (katalanez)",
+          "url": "https://t.me/ChatGPTedu/21753/53646"
+        }
+      ],
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 53605
+      },
+      "comprobado": "Revisión: releído el texto completo del PDF tal como consta en la biblioteca (portada, sumario, OIA-01 a OIA-45, glosario, referencias y anexos 1 a 5) y contrastadas con él las cifras, fechas, autoría, licencia y las dos citas, que son literales. Fuente oficial: hdl.handle.net/20.500.12694/7879 redirige a repositori.educacio.gencat.cat, que devuelve «Access Denied», y WebSearch no localiza la edición de 2026 (solo la de 2024); documento.url queda vacío. Los enlaces a otros documentos de la biblioteca existen en la lista de la entrada y sus títulos coinciden; no se leyeron esos documentos, por lo que solo se afirma lo que consta en las referencias de este texto (cita la guía del INTEF de 2024, no la v.2) y la coincidencia de tema con el de la edad.",
+      "ilustracion": "Esquema en tres franjas de edad: menores de 14 años (la IA general la opera el docente, el alumnado observa), de 14 a 18 años con autorización familiar recomendada y actividades directas desde el segundo trimestre de 3.º de ESO, y debajo un semáforo de usos en evaluación: permitido (crear instrumentos, corregir respuestas cerradas), prohibido (calificar, detectores).",
+      "ilustracion_alt": "Bi zutabeko eskema: ezkerrean, «14 baino gutxiago», irakasle batek pantaila maneiatzen du eta ikasleek behatzen dute; eskuinean, «14tik 18ra», ikasleak pantaila erabiltzen du familiaren baimen-dokumentu batekin. Azpian, ebaluazioko erabilerak: «Baimendua», tresnak sortzea eta erantzun itxiak zuzentzea, eta «Debekatua», kalifikatzea eta detektagailuak erabiltzea.",
+      "repaso": [
+        "Anexos 1 a 3: el borrador decía «para docentes, alumnado y familias»; el anexo 1 es de orientaciones generales, no solo para docentes. Corregido.",
+        "Relación con el INTEF: el borrador decía que «comparte tema» con la guía v.2 sin base; el texto solo cita la edición de 2024 como orientación estatal. Reformulado, y la relación con el documento de la edad se limita al tema.",
+        "Actualizado `comprobado` (fuente oficial inaccesible; url vacía confirmada). El resto (autoría, fechas, cifras, citas, enlaces, sin nombrar a quien lo subió) verificado sin cambios."
+      ]
     },
     {
-     "titulo": "Liburutegiko 52272 mezua (The Algorithm in the Room) (gaztelaniaz)",
-     "url": "https://t.me/ChatGPTedu/21753/52272"
+      "id": "cat-tecnologies-educatives",
+      "seccion": "biblioteca",
+      "importancia": 2,
+      "grupo": "chatgpt",
+      "antetitulo": "Kataluniako gida ofiziala",
+      "titular": "Kataluniak irizpideak ematen ditu teknologiak noiz ematen duen balioa erabakitzeko lehen hezkuntzan eta DBHn, eta AA 4. mailan kokatzen du",
+      "entradilla": "Departament d’Educació-ren gidak teknologia ikaskuntzaren zerbitzuan jartzen du, erabaki-taulekin, zikloz zikloko progresioarekin, ongizate digitalarekin eta baliabideak hautatzeko irizpideekin.",
+      "cuerpo": [
+        "Kataluniako Generalitateko Departament d’Educació i Formació Professional-ek 2026ko irailean argitaratu zuen, lehen edizioan, *[Tecnologies educatives al servei de l’aprenentatge: Educació bàsica](https://t.me/ChatGPTedu/21753/53646)* (Teknologia hezitzaileak ikaskuntzaren zerbitzuan: oinarrizko hezkuntza), Direcció General de Currículum i Desenvolupament Professional zuzendaritza nagusiak landua. Hogeita hamar orrialde inguru dira, katalanez, CC BY 4.0 lizentziarekin, lehen hezkuntzako eta DBHko irakasle-taldeei zuzenduak. Ez da AAri buruzko gida bat: teknologiaren erabilera pedagogikoari buruzko esparru orokor bat da, Pla de digitalització responsable-aren eta Kataluniako curriculumaren (175/2022 Dekretua) testuinguruan. AA batez ere atal batean jorratzen da, DBHko 4. mailari eskainitakoan.",
+        "Abiapuntua da konpetentzia digitala zeharkakoa dela: «konpetentzia digitala zeharkako konpetentzia da, konpetentzia guztiak lortzen laguntzen duena». Gidak bost konpetentzia espezifikotan banatzen du: informazio-alfabetatzea, edukien sorkuntza, lineako parte-hartzea eta lankidetza, erabilera segurua, osasungarria eta arduratsua, eta irtenbide digitalen garapena. Azpimarratzen du ez direla bloke independenteak, eta adibide gisa ikerketa bat jartzen du, aldi berean bilaketa kritikoa, txosten baten egitea, lankidetza-lana, iturrien aipamena eta datuen babesa aktiba ditzakeena.",
+        "Aprobetxagarriena irizpide pedagogikoen taula da, bederatzi irizpide erabaki-galdera bihurtzen dituena: zer ikaskuntza sustatu nahi den, teknologiak zer egitea ahalbidetzen duen hori gabe zaila, aberastasun gutxiagokoa edo inklusiboagoa litzatekeena, prozesua ere ikusten uzten duen eta ez soilik produktua, lankidetza nola errazten duen, sarbide-zer oztopo murrizten dituen, zer arrisku eta erabilera-denbora kudeatu behar diren eta zer ebidentziak erakutsiko duen ikasitakoa. Bigarren taula batek zortzi ikaskuntza-prozesu deskribatzen ditu (ikertu, pentsamendua irudikatu, sortu, lankidetzan aritu, pertsonalizatu, programatu, dokumentatu, herritar digital gisa parte hartu) eta teknologiak bakoitzari ematen dion balioa. Ondorioak honela laburbiltzen du: «Oinarrizko irizpidea teknologia kalitate hezitzailearekin erabiltzea da.»",
+        "Etapen araberako progresioa mailakakoa da. Lehen hezkuntzako lehen zikloan erabilera puntuala, gidatua eta laburra izan behar da, eta etapa osoan ez luke ordezkatu behar irakurketa, eskuz idaztea, kalkulua, elkarrizketa edo jolasa; seigarren mailan, etaparen amaierari arreta berezia eskatzen zaio. DBHn benetako arazo diziplinartekoak planteatzen dira, eta autonomia-maila handienak ikasle bakoitzeko ekipo bat behar duela adierazten da, lehen hezkuntzako 6. mailako ereduarekin jarraituz. Etapa bakoitzak autonomia-mailaren eta praktika digitalen adibideen taula bat du.",
+        "DBHko 4. mailan gidak dio ikasleek dagoeneko AA-tresnetan hasi daitezkeela departamentuaren «orientabideen arabera», irakaslearen bitartekaritzarekin. Aholkatzen du ikasleek lehen ekoizpen bat pentsatu edo landu ondoren erabiltzea, eta ez prozesua ordezkatzen duenean, lan autonomoaren ebidentziak behar direnean edo erantzunak baliozkotzeko aurretiazko ezagutzarik falta denean. Ia berdin formulatuta dago [Orientacions per a l’ús de la intel·ligència artificial als centres educatius](https://t.me/ChatGPTedu/21753/53605) dokumentuan, zeina bibliografiak aipatzen baitu eta, gainera, 14 urteko atalasea eta DBHko 3. mailako bigarren hiruhilekoa finkatzen baititu. Testua [DigComp 3.0](https://t.me/ChatGPTedu/21753/42900)n ere oinarritzen da ongizate digitalerako.",
+        "Ongizate digitalaren atala Europar Batasuneko Kontseiluaren definizioan oinarritzen da eta zazpi dimentsio proposatzen ditu (fisikoa, kognitiboa, emozionala, soziala, segurtasuna, inklusioa eta ekitatea, eta ahalduntzea), bakoitza ikastetxearentzako eta irakaslearentzako ekintzekin. Baliabideak hautatzeko zortzi irizpiderekin amaitzen da, hala nola egokitasun pedagogikoa, irisgarritasuna, segurtasuna eta pribatutasuna edo edukien kalitatea. Mugatzat, orientabide orokor bat da: ez du daturik ez ikerketarik ematen, ez du tresna zehatzik gomendatzen eta xehetasunezko akordioak ikastetxe bakoitzaren esku uzten ditu. Irakasle batentzat, irizpide- eta hautaketa-taulak ziklo-bilera batean egiaztapen-zerrenda gisa erabiltzeko balio du, eta 4.2.2 atala, DBHko 4. mailarekin lan egiten badu."
+      ],
+      "documento": {
+        "titulo": "Tecnologies educatives al servei de l’aprenentatge: Educació bàsica",
+        "autoria": "Generalitat de Catalunya, Departament d’Educació i Formació Professional (Direcció General de Currículum i Desenvolupament Professional)",
+        "anyo": "2026",
+        "idioma": "katalana",
+        "licencia": "Creative Commons Aitortu 4.0 (CC BY 4.0)",
+        "url": ""
+      },
+      "fuentes": [
+        {
+          "titulo": "Tecnologies educatives al servei de l’aprenentatge: Educació bàsica (liburutegiko mezua) (katalanez)",
+          "url": "https://t.me/ChatGPTedu/21753/53646"
+        },
+        {
+          "titulo": "Orientacions per a l’ús de la intel·ligència artificial als centres educatius (liburutegia) (katalanez)",
+          "url": "https://t.me/ChatGPTedu/21753/53605"
+        },
+        {
+          "titulo": "DigComp 3.0 (liburutegia) (ingelesez)",
+          "url": "https://t.me/ChatGPTedu/21753/42900"
+        }
+      ],
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 53646
+      },
+      "comprobado": "Revisión: releído el texto completo del PDF tal como consta en la biblioteca (sumario, secciones 1 a 7 y bibliografía) y contrastadas las cifras (5 competencias, 9 criterios, 8 procesos, 7 dimensiones, 8 criterios de selección), las tres citas (literales) y el contenido de 4.2.2. Fuente oficial: no la localiza WebSearch y el repositorio del departamento devuelve «Access Denied»; documento.url queda vacío. Los enlaces a la biblioteca existen en la lista de la entrada; no se leyó DigComp 3.0, la relación se apoya en que este texto lo cita. La comparación con la otra guía se hizo con los dos textos de la entrada (la bibliografía de esta cita las Orientacions de 2026).",
+      "ilustracion": "Esquema de escalera con cinco peldaños de autonomía creciente (1.º-2.º, 3.º-4.º, 5.º-6.º de primaria, 1.º-3.º de ESO, 4.º de ESO) y, a un lado, el filtro de decisión: finalidad, valor añadido, proceso, colaboración, inclusión, seguridad y evidencias, con la IA señalada solo en el último peldaño.",
+      "ilustracion_alt": "«Zazpi irizpide» erabaki-iragazkia duen inbutu batek gezi bat ateratzen du bost mailako eskailera batera, ikasleen «Autonomia gero eta handiagoa»; azken maila bakarrik dago nabarmenduta: DBHko «AA 4.ean».",
+      "repaso": [
+        "Titular y párrafo inicial: «con la IA reservada a 4.º» / «la IA ocupa solo un apartado» eran más tajantes que el texto, que también menciona el uso responsable de la IA en la ESO en general (4.2). Suavizados.",
+        "«Dirigidas a equipos docentes y directivos»: el texto solo nombra a los equipos docentes. Corregido.",
+        "Actualizado `comprobado`. El resto (cifras, citas, enlaces, sin nombrar a quien lo subió) verificado sin cambios."
+      ]
     }
-   ],
-   "mensaje": {
-    "grupo": "chatgpt",
-    "id": 53434
-   },
-   "comprobado": "NO se leyó el documento en la fuente oficial: unesdoc.unesco.org devolvió 403 a WebFetch en el repaso y la búsqueda no dio otra copia oficial. Se leyó con WebFetch el resumen de Livingstone en Media@LSE (22-09-2026), que cita autoría y enlace oficial; de él proceden la tesis, el panel de la ONU, Rights.AI (Kenia, Brasil, India, Tailandia), el 73 % y la cita sobre el principio de precaución. Del repaso se retiró lo que solo constaba en prensa secundaria o no figuraba en el resumen (aviso de «posición no oficial», recomendaciones detalladas, evidencia concentrada en el Norte Global, edades y comparaciones por países). El mensaje 52272 no se pudo abrir (solo cabecera de Telegram); su vínculo con la Digital Learning Week se toma de la ficha del mensaje 53434. Licencia y páginas sin confirmar.",
-   "ilustracion": "Esquema con una pregunta tachada («¿a qué edad?») que da paso a tres preguntas en columna: ¿para qué?, ¿bajo qué condiciones?, ¿con qué evidencia?; debajo, una balanza entre «enseñar sobre IA» y «usar IA para enseñar».",
-   "ilustracion_alt": "Laukizuzen bat, «Zein adinetan?» galdera gorriz marratuta duena, eta gezi bat zutabe batean jarritako hiru galderetara («Zertarako?», «Baldintzak», «Ebidentzia»); azpian, «AAri buruz / AArekin», balantza bat, plater batean liburu bat eta bestean pantaila bat dituena."
-  },
-  {
-   "id": "wef-infancia-ia",
-   "seccion": "biblioteca",
-   "importancia": 2,
-   "grupo": "chatgpt",
-   "antetitulo": "Munduko Ekonomia Foroaren txostena",
-   "titular": "Munduko Ekonomia Foroak zazpi praktika finkatzen ditu AA haurrentzat segurua izan dadin, ikaskuntzarako sarbidea itxi gabe",
-   "entradilla": "Global Coalition for Digital Safety erakundearen 2026ko irailaren dokumentu batek haurren ongizatea hartzen du helburutzat, eta ez soilik gorabeherarik eza, eta AA diseinatzen dutenentzako praktikak eta betetzeko pizgarriak proposatzen ditu.",
-   "cuerpo": [
-    "«Children's Safety and Well-Being in the Age of AI: Best Practices and Incentives» Munduko Ekonomia Foroaren (WEF) white paper bat da, 2026ko irailekoa. Global Coalition for Digital Safety ekimenetik sortu da, Foroaren beraren ekimena, eta hitzaurrea Agustina Callegarik, teknologia-gobernantzako ekimenen arduradunak, eta Cathy Lik, AA Bikaintasun Zentroko zuzendariak, sinatzen dute. Lege-oharrak argitzen du ondorioak prozesu kolaboratibo baten emaitza direla eta ez dutela zertan Foroaren edo bere kideen iritzia adierazi, eta AA sortzailearen tresnak idazketan laguntza gisa erabili zirela, egileek berrikusita.",
-    "Ez da gelarako gida bat. Haurren AA-esperientzia moldatzen dutenei zuzenduta dago: ereduen garatzaile eta hornitzaileei, aplikazio-denden arduradunei, arautzaileei, familiei eta baita hezitzaileei ere. «Haur» definitzen du 18 urtetik beherako edozein pertsona gisa, Haurren Eskubideei buruzko Konbentzioaren arabera, eta ohartarazten du lege-kategoria bat dela eta ez garapen-profil bat. Hortik dator bere funtsezko tesia: ez dago kasu guztietarako baliozko eredurik («There is no one-size-fits-all model»), eta erantzuna ezin da debeku orokorretara ez adin-hesietara mugatu.",
-    "Dokumentuak dio adinak, berez, ez duela zerbitzu bat seguru bihurtzen. Adina egiaztatzea baliagarria da salbaguardia bereizituak aplikatzeko, baina ez du heldutasuna, moderazioa ez kalteen konponketa zehazten. Ez du onartzen, gainera, murrizketa zabalak doakoak direnik: onurak blokea ditzakete, trebetasunak eskuratzeko aukerak murriztu eta haurrak kontrol gutxiagoko zerbitzuetara bultza ditzakete. Adierazten du, halaber, AA sortzaileak eta agentikoak elkarrekintzaren izaera aldatzen dutela, trukaketa jarraituak izan ditzaketelako, gogoratu, pertsonalizatu eta autonomiaz jardun dezaketelako, eta hizkuntza giza-itxurakoak adin txikikoak sistemaren ulermena edo zaintza gaindimentsionatzera eraman ditzakeela.",
-    "Erakundeentzat proposatzen dituen zazpi praktikak hauek dira: segurtasunerako, adinerako eta garapenerako diseinatzea; erabilera onuragarria sustatzea, norberaren iritzia eta giza harremanak zainduz; eduki, jokabide eta elkarrekintza kaltegarriak prebenitzea, haurren esplotazio sexuala eta AAk bideratutako manipulazioa barne; pribatutasuna, duintasuna eta ulermen informatua babestea; ikaskuntza, erresilientzia eta pentsamendu kritikoa indartzea; erantzukizuna, giza gainbegiratzea eta etengabeko hobekuntza ezartzea; eta inklusioa, haurren parte-hartzea eta erantzukizun partekatua sustatzea. Adin txikikoentzat aipatzen dituen kontrol-gaitasunen artean daude AA-funtzio bat murriztea, pausatzea edo desaktibatzea, memoria edo elkarrizketen berrerabilpena baztertzea eta beste azalpen bat eskatzea.",
-    "Hezkuntza-esparruarentzat bereziki interesgarria da bere ikaskuntza-ideia: esposizioak ez du konpetentziarik sortzen, eta AAren erabilerak «should not systematically displace the effort, feedback, discussion, play and social learning through which children build durable knowledge and skills», hau da, ez luke sistematikoki ordezkatu behar haurrek ezagutza eta trebetasun iraunkorrak eraikitzen dituzten ahalegina, feedbacka, eztabaida, jolasa eta ikaskuntza soziala. Planteatzen du, halaber, tresna baten froga erlazionala dela: adin txikikoari pertsonetara, jardueretara eta erabakietara konfiantza handiagoz itzultzen laguntzen dion, edo bere diseinuak berari lehentasuna ematen dion harreman hobetsi gisa.",
-    "Pizgarriei buruzko hirugarren zatia da dokumentua bereizten duena. Abiapuntua da babesa ez dela modu iraunkorrean ezarriko garestia edo errentagarritasun gutxikoa bada, eta neurri-sorta bat proposatzen du: segurtasun-txosten konparagarriak, kontratazio- eta banaketa-baldintzak, finantza- eta aseguru-seinaleak, proba-azpiegitura partekatua, gobernuen gaitasunaren indartzea, ezagutarazpen arduratsurako bide seguruak eta haurrengan neurtu daitezkeen emaitzei lotutako barne-erantzukizuna. Egileek aitortzen dute oinarri partekatu bat dela eta ez estandar tekniko itxi bat, eta epe ertain eta luzerako ondorioei buruzko ebidentzia mugatua dela oraindik.",
-    "Liburutegian, gaiaren aldetik lotura du AA erabiltzeko adin egokiari buruzko UNESCOrentzako txostenarekin ([bere artikulua](https://t.me/ChatGPTedu/21753/53434)) eta «Adimen artifiziala eta haurraren eskubideak» berrikuspen narratiboarekin ([liburutegian](https://t.me/ChatGPTedu/21753/52981)). Irakasle batek edo zuzendaritza-talde batek irizpide-zerrenda gisa erabil dezake tresnak ebaluatu edo kontratatzean: zer kontrol dituzte ikasleek, zer datu gordetzen diren, zer gertatzen den zerbaitek huts egiten duenean. Komeni da sarreratik eta lehen kapitulutik hastea (5.etik 10. orrira), helburua eta erronkak definitzen dituztenak, eta bigarrenaren ikaskuntzari eta pentsamendu kritikoari buruzko atalarekin jarraitzea (16. orria)."
-   ],
-   "documento": {
-    "titulo": "Children's Safety and Well-Being in the Age of AI: Best Practices and Incentives",
-    "autoria": "World Economic Forum (Global Coalition for Digital Safety)",
-    "anyo": "2026",
-    "idioma": "ingelesa",
-    "licencia": "© 2026 World Economic Forum. Eskubide guztiak erreserbatuta",
-    "url": "https://reports.weforum.org/docs/WEF_Childrens_Safety_and_WellBeing_in_the_Age_of_AI_2026.pdf"
-   },
-   "fuentes": [
-    {
-     "titulo": "Children's Safety and Well-Being in the Age of AI: Best Practices and Incentives (PDF, WEF) (ingelesez)",
-     "url": "https://reports.weforum.org/docs/WEF_Childrens_Safety_and_WellBeing_in_the_Age_of_AI_2026.pdf"
-    },
-    {
-     "titulo": "Argitalpenaren orria WEFen (ingelesez)",
-     "url": "https://www.weforum.org/publications/childrens-safety-and-well-being-in-the-age-of-ai-best-practices-and-incentives/"
-    },
-    {
-     "titulo": "Liburutegiko 53434 mezua (gaztelaniaz)",
-     "url": "https://t.me/ChatGPTedu/21753/53434"
-    },
-    {
-     "titulo": "Liburutegiko 52981 mezua (gaztelaniaz)",
-     "url": "https://t.me/ChatGPTedu/21753/52981"
-    }
-   ],
-   "mensaje": {
-    "grupo": "chatgpt",
-    "id": 53435
-   },
-   "comprobado": "En el repaso se abrió con WebFetch el PDF oficial en reports.weforum.org y se leyeron las páginas 1-12 y 16-22 (portada, índice, aviso legal, prólogo, resumen ejecutivo, introducción, capítulo 1 completo, inicio del 2, apartados 2.5 a 2.7, capítulo 3 y conclusión). Se confirmaron autoría, fecha, firmantes del prólogo, definición de niño, las siete prácticas, la lista de incentivos, las capacidades de control (p. 7), los límites de las prohibiciones y de la verificación de edad (p. 8), el carácter relacional de la prueba (p. 7), el reconocimiento de base compartida (p. 3) y las dos citas literales (pp. 5 y 6). No se leyeron las páginas 13-15. La página de la publicación en weforum.org devolvió 403 en el repaso. Licencia: solo el aviso de copyright de la página 2. El mensaje 52981 existe en la lista de la biblioteca; su contenido no se abrió.",
-   "ilustracion": "Esquema en tres niveles: arriba un objetivo («bienestar infantil»), en medio siete casillas con las prácticas, y abajo una base con los siete incentivos (informes comparables, contratación, finanzas y seguros, pruebas compartidas, capacidad pública, divulgación segura, responsabilidad interna).",
-   "ilustracion_alt": "Tenplu eskematiko bat: frontoiak «Haurren ongizatea» darama; azpian, «Zazpi praktika», zazpi zutabe, eta lauza baten gainean, «Zazpi pizgarri», ikonoak dituzten zazpi bloke (txostena, kontratua, txanpona, matraza, eraikin publikoa, giltzarrapoa eta zikloa) eutsi egiten diotenak."
-  },
-  {
-   "id": "cat-orientacions-ia",
-   "seccion": "biblioteca",
-   "importancia": 3,
-   "grupo": "chatgpt",
-   "antetitulo": "Kataluniako gida ofiziala",
-   "titular": "Kataluniak 45 orientaziotan finkatzen du ikastetxeetan AAren zer erabilera sustatu eta zeintzuk mugatu",
-   "entradilla": "Departament d’Educació i Formació Professional-ek 2026ko irailean gida bat argitaratu du, 14 urtetik beherakoek AA orokorra modu autonomoan erabiltzea, AAz kalifikatzea eta sortutako testuaren detektagailuak desaholkatzen dituena.",
-   "cuerpo": [
-    "Kataluniako Generalitateko Departament d’Educació i Formació Professional-ek 2026ko irailean argitaratu zituen, lehen edizioan, *Orientacions per a l’ús de la intel·ligència artificial als centres educatius* (Adimen artifizialaren erabilerarako orientabideak ikastetxeetan), Direcció General de Currículum i Desenvolupament Professional zuzendaritza nagusiak landuak. 2024ko *La intel·ligència artificial en l’educació* dokumentua eguneratzen du. Barne-lantalde batek idatzi zuen 2026ko apiriletik ekainera bitartean, eta administrazioko, unibertsitateko, ikuskaritzako, datu-babeseko, ikastetxeetako zuzendaritzetako eta irakaskuntzako adituen talde batek berrikusi zuen. Hirurogeita hamar orrialde inguru ditu. Testuak berak adierazten du AA ereduak erabili zirela zirriborroak berrikusteko eta eranskin bateko adibideak idazteko.",
-    "Gidak abiapuntutzat hartzen du ikasleek dagoeneko AA erabiltzen dutela ikasteko eta etxeko lanak egiteko. Bere hitzetan, kontua da «ez da AA gelara sartu behar den ala ez, baizik eta nola nahi dugun sartzea». Bere zuhurtzia bost arrazoirekin justifikatzen du: AAk jardueren zati handi bat ebazten du, sortutako testuaren detektagailuek ez dute bermerik nahikoa ematen (batez ere ingelesez kanpo), AA orokorra ez dago ikasteko pentsatuta, eskuragarri dagoen ebidentzia mugatua da baina arriskuak adierazten ditu gidarik gabe erabiltzen bada, eta ez dago erreferentziazko Europako AA publikorik, eta Estatu Batuetako legediak (CLOUD Act, FISA) zalantzan jartzen du datuen benetako babesa.",
-    "Muina 45 orientazio zenbakitu dira (OIA-01etik OIA-45era), eremuka: ikastetxea, irakasleak, hezkuntza-zerbitzuak, laguntza-langileak eta familiak. 14 urtetik beherako ikasleek ez lukete helburu orokorreko AA modu autonomoan erabili behar; harekin lan egiten bada, irakasleak maneiatzen du. 14 eta 18 urte artean ez da familien adostasunik behar, oinarri juridikoa interes publikoko eginkizuna delako, baina haien baimena berme gisa biltzea gomendatzen da, derrigorrezkoa tresnaren baldintzek eskatzen dutenean, eta ikasleen zuzeneko elkarrekintza DBHko 3. mailako bigarren hiruhilekotik aurrera kokatzen da. Era berean, entrenamendua eta memoria iraunkorra desaktibatzeko, AA agentikoa saihesteko, datu pertsonalik ez sartzeko eta ikastetxe bakoitzean erabilera-esparru bat onartzeko, tresnen erregistroarekin, eskatzen da.",
-    "Alde pedagogikoa da gelarako erabilgarriena. Irakasleari eskatzen dio lidergoa mantentzeko, AAk sortzen duena egiaztatzeko, bere erabilera neurri komun batekin aitortzeko eta interpretazioa eta posizio pertsonala eskatzen duten jarduerak diseinatzeko. Ebaluazioan, AAk ez luke kalifikatu behar ez lorpen-maila zehaztu, Europako AA Erregelamenduaren arabera arrisku handiko erabilera delakoan; bai, ordea, tresnak sortzen, erantzun anbiguorik gabekoak zuzentzen edo akats arruntak detektatzen lagun dezake, datu pseudonimizatuekin. Detektagailuei buruz ondorioztatzen du desaholkagarriak direla: «detektagailurik onenak pertsonak izaten jarraitzen dute».",
-    "Liburutegiaren barruan, testua dagoeneko bildutako esparruetan oinarritzen da: [DigComp 3.0](https://t.me/ChatGPTedu/21753/42900), [UNESCOren irakasleentzako konpetentzia-esparrua](https://t.me/ChatGPTedu/21753/36905) eta [departamentuaren beraren irakasleen AA-konpetentzia digitalari buruzko dokumentua](https://t.me/ChatGPTedu/21753/44426), zeinaren oinarrizko etapa aurrebaldintza gisa eskatzen duen. Estatuko orientabide gisa INTEFen 2024ko gida aipatzen du; liburutegiak bere [2. bertsioa](https://t.me/ChatGPTedu/21753/52295) jasotzen du. Erabilera-adina [hezkuntzan AA erabiltzeko adin egokirik ba al dagoen](https://t.me/ChatGPTedu/21753/53434) dokumentuaren gaia ere bada. [Tecnologies educatives al servei de l’aprenentatge: Educació bàsica](https://t.me/ChatGPTedu/21753/53646) gidak, hilabete berean argitaratuak, bere bibliografian aipatzen du.",
-    "Bere mugekin irakurri behar da: orientabideak dira, ez arauak, eta ikastetxe bakoitzak egokitu behar ditu; atal batzuek PDFan ez dauden kanpoko orrietara bidaltzen dute; eta testuak onartzen du ebidentzia mugatua dela eta teknologia azkar aldatzen dela. Kataluniatik kanpo transferigarria irizpideak dira, ez izapideak. Abiapuntu on bat 1etik 3ra bitarteko eranskinak dira, orrialde bateko infografiak, orientabide orokorrekin, ikasleentzat eta familientzat, eta ondoren erabilera pedagogikoari eta ebaluazioari buruzko OIA-28 eta OIA-36tik OIA-38ra bitarteko orientabideak. 4. eranskinak lau analogia ematen ditu (saskibaloia, dantza, rapa, bideojokoa) ikasteak zergatik merezi duen jarraitzen azaltzeko."
-   ],
-   "documento": {
-    "titulo": "Orientacions per a l’ús de la intel·ligència artificial als centres educatius",
-    "autoria": "Generalitat de Catalunya, Departament d’Educació i Formació Professional (Direcció General de Currículum i Desenvolupament Professional)",
-    "anyo": "2026",
-    "idioma": "katalana",
-    "licencia": "Creative Commons Aitortu 4.0 Nazioartekoa (CC BY 4.0)",
-    "url": ""
-   },
-   "fuentes": [
-    {
-     "titulo": "Orientacions per a l’ús de la intel·ligència artificial als centres educatius (liburutegiko mezua) (katalanez)",
-     "url": "https://t.me/ChatGPTedu/21753/53605"
-    },
-    {
-     "titulo": "DigComp 3.0 (liburutegia) (ingelesez)",
-     "url": "https://t.me/ChatGPTedu/21753/42900"
-    },
-    {
-     "titulo": "AI Competency Framework for Teachers (liburutegia) (ingelesez)",
-     "url": "https://t.me/ChatGPTedu/21753/36905"
-    },
-    {
-     "titulo": "Competència digital docent en IA (liburutegia) (katalanez)",
-     "url": "https://t.me/ChatGPTedu/21753/44426"
-    },
-    {
-     "titulo": "Guía sobre el uso de la IA en el ámbito educativo v.2 (liburutegia) (gaztelaniaz)",
-     "url": "https://t.me/ChatGPTedu/21753/52295"
-    },
-    {
-     "titulo": "¿Existe una edad adecuada para que niñas, niños y adolescentes utilicen IA en la educación? (liburutegia) (gaztelaniaz)",
-     "url": "https://t.me/ChatGPTedu/21753/53434"
-    },
-    {
-     "titulo": "Tecnologies educatives al servei de l’aprenentatge: Educació bàsica (liburutegia) (katalanez)",
-     "url": "https://t.me/ChatGPTedu/21753/53646"
-    }
-   ],
-   "mensaje": {
-    "grupo": "chatgpt",
-    "id": 53605
-   },
-   "comprobado": "Revisión: releído el texto completo del PDF tal como consta en la biblioteca (portada, sumario, OIA-01 a OIA-45, glosario, referencias y anexos 1 a 5) y contrastadas con él las cifras, fechas, autoría, licencia y las dos citas, que son literales. Fuente oficial: hdl.handle.net/20.500.12694/7879 redirige a repositori.educacio.gencat.cat, que devuelve «Access Denied», y WebSearch no localiza la edición de 2026 (solo la de 2024); documento.url queda vacío. Los enlaces a otros documentos de la biblioteca existen en la lista de la entrada y sus títulos coinciden; no se leyeron esos documentos, por lo que solo se afirma lo que consta en las referencias de este texto (cita la guía del INTEF de 2024, no la v.2) y la coincidencia de tema con el de la edad.",
-   "ilustracion": "Esquema en tres franjas de edad: menores de 14 años (la IA general la opera el docente, el alumnado observa), de 14 a 18 años con autorización familiar recomendada y actividades directas desde el segundo trimestre de 3.º de ESO, y debajo un semáforo de usos en evaluación: permitido (crear instrumentos, corregir respuestas cerradas), prohibido (calificar, detectores).",
-   "ilustracion_alt": "Bi zutabeko eskema: ezkerrean, «14 baino gutxiago», irakasle batek pantaila maneiatzen du eta ikasleek behatzen dute; eskuinean, «14tik 18ra», ikasleak pantaila erabiltzen du familiaren baimen-dokumentu batekin. Azpian, ebaluazioko erabilerak: «Baimendua», tresnak sortzea eta erantzun itxiak zuzentzea, eta «Debekatua», kalifikatzea eta detektagailuak erabiltzea.",
-   "repaso": [
-    "Anexos 1 a 3: el borrador decía «para docentes, alumnado y familias»; el anexo 1 es de orientaciones generales, no solo para docentes. Corregido.",
-    "Relación con el INTEF: el borrador decía que «comparte tema» con la guía v.2 sin base; el texto solo cita la edición de 2024 como orientación estatal. Reformulado, y la relación con el documento de la edad se limita al tema.",
-    "Actualizado `comprobado` (fuente oficial inaccesible; url vacía confirmada). El resto (autoría, fechas, cifras, citas, enlaces, sin nombrar a quien lo subió) verificado sin cambios."
-   ]
-  },
-  {
-   "id": "cat-tecnologies-educatives",
-   "seccion": "biblioteca",
-   "importancia": 2,
-   "grupo": "chatgpt",
-   "antetitulo": "Kataluniako gida ofiziala",
-   "titular": "Kataluniak irizpideak ematen ditu teknologiak noiz ematen duen balioa erabakitzeko lehen hezkuntzan eta DBHn, eta AA 4. mailan kokatzen du",
-   "entradilla": "Departament d’Educació-ren gidak teknologia ikaskuntzaren zerbitzuan jartzen du, erabaki-taulekin, zikloz zikloko progresioarekin, ongizate digitalarekin eta baliabideak hautatzeko irizpideekin.",
-   "cuerpo": [
-    "Kataluniako Generalitateko Departament d’Educació i Formació Professional-ek 2026ko irailean argitaratu zuen, lehen edizioan, *Tecnologies educatives al servei de l’aprenentatge: Educació bàsica* (Teknologia hezitzaileak ikaskuntzaren zerbitzuan: oinarrizko hezkuntza), Direcció General de Currículum i Desenvolupament Professional zuzendaritza nagusiak landua. Hogeita hamar orrialde inguru dira, katalanez, CC BY 4.0 lizentziarekin, lehen hezkuntzako eta DBHko irakasle-taldeei zuzenduak. Ez da AAri buruzko gida bat: teknologiaren erabilera pedagogikoari buruzko esparru orokor bat da, Pla de digitalització responsable-aren eta Kataluniako curriculumaren (175/2022 Dekretua) testuinguruan. AA batez ere atal batean jorratzen da, DBHko 4. mailari eskainitakoan.",
-    "Abiapuntua da konpetentzia digitala zeharkakoa dela: «konpetentzia digitala zeharkako konpetentzia da, konpetentzia guztiak lortzen laguntzen duena». Gidak bost konpetentzia espezifikotan banatzen du: informazio-alfabetatzea, edukien sorkuntza, lineako parte-hartzea eta lankidetza, erabilera segurua, osasungarria eta arduratsua, eta irtenbide digitalen garapena. Azpimarratzen du ez direla bloke independenteak, eta adibide gisa ikerketa bat jartzen du, aldi berean bilaketa kritikoa, txosten baten egitea, lankidetza-lana, iturrien aipamena eta datuen babesa aktiba ditzakeena.",
-    "Aprobetxagarriena irizpide pedagogikoen taula da, bederatzi irizpide erabaki-galdera bihurtzen dituena: zer ikaskuntza sustatu nahi den, teknologiak zer egitea ahalbidetzen duen hori gabe zaila, aberastasun gutxiagokoa edo inklusiboagoa litzatekeena, prozesua ere ikusten uzten duen eta ez soilik produktua, lankidetza nola errazten duen, sarbide-zer oztopo murrizten dituen, zer arrisku eta erabilera-denbora kudeatu behar diren eta zer ebidentziak erakutsiko duen ikasitakoa. Bigarren taula batek zortzi ikaskuntza-prozesu deskribatzen ditu (ikertu, pentsamendua irudikatu, sortu, lankidetzan aritu, pertsonalizatu, programatu, dokumentatu, herritar digital gisa parte hartu) eta teknologiak bakoitzari ematen dion balioa. Ondorioak honela laburbiltzen du: «Oinarrizko irizpidea teknologia kalitate hezitzailearekin erabiltzea da.»",
-    "Etapen araberako progresioa mailakakoa da. Lehen hezkuntzako lehen zikloan erabilera puntuala, gidatua eta laburra izan behar da, eta etapa osoan ez luke ordezkatu behar irakurketa, eskuz idaztea, kalkulua, elkarrizketa edo jolasa; seigarren mailan, etaparen amaierari arreta berezia eskatzen zaio. DBHn benetako arazo diziplinartekoak planteatzen dira, eta autonomia-maila handienak ikasle bakoitzeko ekipo bat behar duela adierazten da, lehen hezkuntzako 6. mailako ereduarekin jarraituz. Etapa bakoitzak autonomia-mailaren eta praktika digitalen adibideen taula bat du.",
-    "DBHko 4. mailan gidak dio ikasleek dagoeneko AA-tresnetan hasi daitezkeela departamentuaren «orientabideen arabera», irakaslearen bitartekaritzarekin. Aholkatzen du ikasleek lehen ekoizpen bat pentsatu edo landu ondoren erabiltzea, eta ez prozesua ordezkatzen duenean, lan autonomoaren ebidentziak behar direnean edo erantzunak baliozkotzeko aurretiazko ezagutzarik falta denean. Ia berdin formulatuta dago [Orientacions per a l’ús de la intel·ligència artificial als centres educatius](https://t.me/ChatGPTedu/21753/53605) dokumentuan, zeina bibliografiak aipatzen baitu eta, gainera, 14 urteko atalasea eta DBHko 3. mailako bigarren hiruhilekoa finkatzen baititu. Testua [DigComp 3.0](https://t.me/ChatGPTedu/21753/42900)n ere oinarritzen da ongizate digitalerako.",
-    "Ongizate digitalaren atala Europar Batasuneko Kontseiluaren definizioan oinarritzen da eta zazpi dimentsio proposatzen ditu (fisikoa, kognitiboa, emozionala, soziala, segurtasuna, inklusioa eta ekitatea, eta ahalduntzea), bakoitza ikastetxearentzako eta irakaslearentzako ekintzekin. Baliabideak hautatzeko zortzi irizpiderekin amaitzen da, hala nola egokitasun pedagogikoa, irisgarritasuna, segurtasuna eta pribatutasuna edo edukien kalitatea. Mugatzat, orientabide orokor bat da: ez du daturik ez ikerketarik ematen, ez du tresna zehatzik gomendatzen eta xehetasunezko akordioak ikastetxe bakoitzaren esku uzten ditu. Irakasle batentzat, irizpide- eta hautaketa-taulak ziklo-bilera batean egiaztapen-zerrenda gisa erabiltzeko balio du, eta 4.2.2 atala, DBHko 4. mailarekin lan egiten badu."
-   ],
-   "documento": {
-    "titulo": "Tecnologies educatives al servei de l’aprenentatge: Educació bàsica",
-    "autoria": "Generalitat de Catalunya, Departament d’Educació i Formació Professional (Direcció General de Currículum i Desenvolupament Professional)",
-    "anyo": "2026",
-    "idioma": "katalana",
-    "licencia": "Creative Commons Aitortu 4.0 (CC BY 4.0)",
-    "url": ""
-   },
-   "fuentes": [
-    {
-     "titulo": "Tecnologies educatives al servei de l’aprenentatge: Educació bàsica (liburutegiko mezua) (katalanez)",
-     "url": "https://t.me/ChatGPTedu/21753/53646"
-    },
-    {
-     "titulo": "Orientacions per a l’ús de la intel·ligència artificial als centres educatius (liburutegia) (katalanez)",
-     "url": "https://t.me/ChatGPTedu/21753/53605"
-    },
-    {
-     "titulo": "DigComp 3.0 (liburutegia) (ingelesez)",
-     "url": "https://t.me/ChatGPTedu/21753/42900"
-    }
-   ],
-   "mensaje": {
-    "grupo": "chatgpt",
-    "id": 53646
-   },
-   "comprobado": "Revisión: releído el texto completo del PDF tal como consta en la biblioteca (sumario, secciones 1 a 7 y bibliografía) y contrastadas las cifras (5 competencias, 9 criterios, 8 procesos, 7 dimensiones, 8 criterios de selección), las tres citas (literales) y el contenido de 4.2.2. Fuente oficial: no la localiza WebSearch y el repositorio del departamento devuelve «Access Denied»; documento.url queda vacío. Los enlaces a la biblioteca existen en la lista de la entrada; no se leyó DigComp 3.0, la relación se apoya en que este texto lo cita. La comparación con la otra guía se hizo con los dos textos de la entrada (la bibliografía de esta cita las Orientacions de 2026).",
-   "ilustracion": "Esquema de escalera con cinco peldaños de autonomía creciente (1.º-2.º, 3.º-4.º, 5.º-6.º de primaria, 1.º-3.º de ESO, 4.º de ESO) y, a un lado, el filtro de decisión: finalidad, valor añadido, proceso, colaboración, inclusión, seguridad y evidencias, con la IA señalada solo en el último peldaño.",
-   "ilustracion_alt": "«Zazpi irizpide» erabaki-iragazkia duen inbutu batek gezi bat ateratzen du bost mailako eskailera batera, ikasleen «Autonomia gero eta handiagoa»; azken maila bakarrik dago nabarmenduta: DBHko «AA 4.ean».",
-   "repaso": [
-    "Titular y párrafo inicial: «con la IA reservada a 4.º» / «la IA ocupa solo un apartado» eran más tajantes que el texto, que también menciona el uso responsable de la IA en la ESO en general (4.2). Suavizados.",
-    "«Dirigidas a equipos docentes y directivos»: el texto solo nombra a los equipos docentes. Corregido.",
-    "Actualizado `comprobado`. El resto (cifras, citas, enlaces, sin nombrar a quien lo subió) verificado sin cambios."
-   ]
-  }
- ],
- "descartado": [
-  "Mensaje 53420 (Inteligencia Artificial Generativa en la Educación Superior, Espinoza-Mina y Colina-Vargas): la página del editor solo muestra el título y un «Manuscrito 123.pdf», sin autores, año, licencia ni datos; la búsqueda no localiza el estudio. Todas las cifras (474 estudiantes, 88,1 %, 78 %) proceden únicamente de la publicación del grupo y no se pueden contrastar con la fuente, así que no hay base para un artículo.",
-  "Mensaje 53421 (Manual urgente sobre IA en el aula, Ferrarelli y Corvalán, CESDI-UNSAM): la entrada solo trae un enlace a Google Drive, que no es fuente oficial, y la ficha no describe el contenido. La búsqueda solo confirma título y autoría por una publicación en LinkedIn. Sin acceso al texto ni a la página del CESDI-UNSAM, no se puede explicar qué propone.",
-  "Mensaje 53605 (Orientacions per a l'ús de la intel·ligència artificial als centres educatius, Generalitat de Catalunya): no se encontró el documento en su fuente oficial; la búsqueda solo devuelve la guía de 2024 y menciones a una actualización prevista. Con el índice y la ficha de la entrada no se alcanza un artículo que diga algo más que la ficha. Pendiente de localizar el PDF en educacio.gencat.cat.",
-  "Mensaje 53646 (Tecnologies educatives al servei de l'aprenentatge: Educació bàsica, Generalitat de Catalunya): no se pudo abrir la fuente oficial (el repositorio devolvió acceso denegado) y las noticias del Departament hablan de «Tecnologies digitals al servei de l'aprenentatge», con otra fecha y sin confirmar que sea el mismo texto. La entrada solo aporta el índice y la introducción. Sin la fuente no hay artículo digno; pendiente de localizar."
- ]
+  ],
+  "descartado": [
+    "Mensaje 53420 (Inteligencia Artificial Generativa en la Educación Superior, Espinoza-Mina y Colina-Vargas): la página del editor solo muestra el título y un «Manuscrito 123.pdf», sin autores, año, licencia ni datos; la búsqueda no localiza el estudio. Todas las cifras (474 estudiantes, 88,1 %, 78 %) proceden únicamente de la publicación del grupo y no se pueden contrastar con la fuente, así que no hay base para un artículo.",
+    "Mensaje 53421 (Manual urgente sobre IA en el aula, Ferrarelli y Corvalán, CESDI-UNSAM): la entrada solo trae un enlace a Google Drive, que no es fuente oficial, y la ficha no describe el contenido. La búsqueda solo confirma título y autoría por una publicación en LinkedIn. Sin acceso al texto ni a la página del CESDI-UNSAM, no se puede explicar qué propone.",
+    "Mensaje 53605 (Orientacions per a l'ús de la intel·ligència artificial als centres educatius, Generalitat de Catalunya): no se encontró el documento en su fuente oficial; la búsqueda solo devuelve la guía de 2024 y menciones a una actualización prevista. Con el índice y la ficha de la entrada no se alcanza un artículo que diga algo más que la ficha. Pendiente de localizar el PDF en educacio.gencat.cat.",
+    "Mensaje 53646 (Tecnologies educatives al servei de l'aprenentatge: Educació bàsica, Generalitat de Catalunya): no se pudo abrir la fuente oficial (el repositorio devolvió acceso denegado) y las noticias del Departament hablan de «Tecnologies digitals al servei de l'aprenentatge», con otra fecha y sin confirmar que sea el mismo texto. La entrada solo aporta el índice y la introducción. Sin la fuente no hay artículo digno; pendiente de localizar."
+  ]
 }

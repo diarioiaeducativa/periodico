@@ -12,7 +12,7 @@
       "titular": "Una websèrie de terror feta amb IA documenta pas a pas el seu flux de treball",
       "entradilla": "«Never Sleep Again», set episodis publicats entre el 25 i el 31 d'octubre, explica al seu web com combina Blender, Claude, un generador de vídeo i DaVinci Resolve.",
       "cuerpo": [
-        "«Never Sleep Again» és una websèrie de terror de set episodis, creada per Raül Torres amb eines d'IA sota direcció humana. Sis episodis duren entre 29 i 42 segons i el final, estrenat la nit de Halloween, 2 minuts i 8 segons. Es van publicar cada dia del 25 al 31 d'octubre a YouTube, Instagram, LinkedIn, TikTok i X.",
+        "«[Never Sleep Again](https://raultorres-ia.github.io/apps/never_sleep_again/)» és una websèrie de terror de set episodis, creada per Raül Torres amb eines d'IA sota direcció humana. Sis episodis duren entre 29 i 42 segons i el final, estrenat la nit de Halloween, 2 minuts i 8 segons. Es van publicar cada dia del 25 al 31 d'octubre a YouTube, Instagram, LinkedIn, TikTok i X.",
         "El més útil per al professorat interessat en l'audiovisual és que la pàgina de la sèrie detalla el mètode. La casa on transcorre la història es modela en 3D amb Blender, de manera que tots els plans es roden des d'una càmera col·locada en un espai coherent. De cada moviment de càmera es genera un clip de referència gris, sense aspecte visual, que es lliura a un generador de vídeo (Seedance 2.5, a Dreamina) juntament amb imatges d'escena i instruccions. Claude, connectat a Blender i a Dreamina, ajuda a preparar les referències i a redactar aquestes instruccions. Cada resultat es revisa davant del pla i es torna a generar amb referències més ajustades si cal.",
         "El muntatge i la correcció de color es fan a DaVinci Resolve Studio, i amb Fusion s'afegeixen, com a capes independents, la interfície del reproductor del mòbil i un acabat de càmera nocturna. L'autor va comentar al grup que ha canviat per complet la seva manera de treballar amb els connectors (MCP) de Claude, cosa que li permet manejar Blender i DaVinci Resolve a un nivell que abans no assolia."
       ],
@@ -39,7 +39,7 @@
       "titular": "Un laboratori interactiu guia l'alumnat de 2n de Batxillerat pel potencial gravitatori",
       "entradilla": "L'aplicació «Mapa de potencial gravitatorio», compartida pel professor Antonio González, inclou una guia didàctica de nou passos i calcula el treball entre dos punts.",
       "cuerpo": [
-        "«Mapa de potencial gravitatorio» és un recurs web en castellà per a Física de 2n de Batxillerat. Permet col·locar fins a quatre masses puntuals i observar el potencial V (en J/kg) com a mapa de color en dues dimensions, amb corbes equipotencials opcionals, o com a relleu tridimensional amb la profunditat exagerada perquè s'apreciï; la pàgina aclareix que és una metàfora gràfica i no una deformació real de l'espai.",
+        "«[Mapa de potencial gravitatorio](https://onio72.github.io/iesmajuelo/bach/fi2/t01/mapa_potencial/)» és un recurs web en castellà per a Física de 2n de Batxillerat. Permet col·locar fins a quatre masses puntuals i observar el potencial V (en J/kg) com a mapa de color en dues dimensions, amb corbes equipotencials opcionals, o com a relleu tridimensional amb la profunditat exagerada perquè s'apreciï; la pàgina aclareix que és una metàfora gràfica i no una deformació real de l'espai.",
         "Inclou també un experiment A → B: es trien dos punts i una massa de prova, i l'aplicació mostra el potencial a cada punt, les energies potencials, la seva variació i el treball de la força gravitatòria. Permet invertir el recorregut i provar una altra trajectòria per comprovar que el treball no depèn del camí.",
         "El seu autor va explicar al grup que aquesta vegada hi va afegir una guia didàctica perquè qui la faci servir sigui guiat en lloc de descobrir què ha de fer, i que li resulta molt útil per explicar visualment conceptes complexos. La pàgina no indica autoria ni llicència."
       ],
@@ -66,7 +66,7 @@
       "titular": "Una activitat interactiva ensenya a escriure els símbols del teclat espanyol",
       "entradilla": "La pràctica, compartida per Toni Magraner, entrena símbols, accents i dreceres amb un mode de prova i un altre d'entrenament.",
       "cuerpo": [
-        "Toni Magraner ha compartit una activitat web per aprendre a escriure amb el teclat espanyol. Demana teclejar símbols com @, #, €, la ñ, la ç i les vocals accentuades, a més de números i dreceres com copiar, retallar, enganxar i desfer.",
+        "Toni Magraner ha compartit [una activitat web per aprendre a escriure amb el teclat espanyol](https://amagraneronline.github.io/mrd-26/ud01/actividades/reto2_simbolos_teclado_interactivo.html). Demana teclejar símbols com @, #, €, la ñ, la ç i les vocals accentuades, a més de números i dreceres com copiar, retallar, enganxar i desfer.",
         "Ofereix un mode «Posa't a prova», amb pista si es dubta (per exemple, la combinació per a l'arrova), i un mode d'entrenament amb teclat virtual en pantalla. En acabar mostra un informe amb precisió, nombre de tecles, errors, temps mitjà i els símbols que convé repassar, i s'acompanya d'una infografia amb els símbols del teclat espanyol. El contingut figura amb llicència CC BY-SA 4.0 i el codi amb GNU AGPL v3."
       ],
       "fuentes": [

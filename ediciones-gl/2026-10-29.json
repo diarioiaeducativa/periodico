@@ -12,7 +12,7 @@
       "titular": "EDUmind ofrece ditados en galego e castelán con voces sintéticas de código aberto",
       "entradilla": "Unha aplicación web gratuíta, creada por Luis Vilela Acuña, reúne ditados en galego e castelán para sexto de primaria, con voces sintéticas de licenza aberta.",
       "cuerpo": [
-        "EDUmind (dictados.edumind.es), creada por Luis Vilela Acuña, ofrece catro ditados para 6.º de primaria, dous en galego e dous en castelán. Inclúe filtros por lingua, curso, tema, etiqueta e tipo de texto, un buscador, unha tarxeta de regras de dúas páxinas e un caderno de regras acumulativo, ambos en PDF e ODT.",
+        "[EDUmind](https://dictados.edumind.es) (dictados.edumind.es), creada por Luis Vilela Acuña, ofrece catro ditados para 6.º de primaria, dous en galego e dous en castelán. Inclúe filtros por lingua, curso, tema, etiqueta e tipo de texto, un buscador, unha tarxeta de regras de dúas páxinas e un caderno de regras acumulativo, ambos en PDF e ODT.",
         "A narración é sintética. A voz galega, Brais, procede do Proxecto Nós (Universidade de Santiago de Compostela) e xerouse con aHoTTS (HiTZ, UPV/EHU); a castelá, Alejandro, tamén é de aHoTTS. Segundo a páxina, os textos, fichas e audios publícanse con licenza CC BY-SA 4.0, o programa con AGPL-3.0-or-later ou EUPL-1.2 e os modelos de voz con Apache 2.0.",
         "O seu autor presentou o recurso como un traballo en curso: indicou que aínda ten que darlle forma e que a versión en castelán é mellorable."
       ],

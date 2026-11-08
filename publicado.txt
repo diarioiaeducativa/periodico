@@ -79,3 +79,8 @@
 - breve: Luis Vilela Acuña publicó el código abierto de Liga de Valores, su aplicación de ligas esc
 - breve: Antigravity, el entorno de programación con agentes de Google, ejecuta desde su versión 2.
 - pieza:2026-11-06/semana-del-repositorio (repositorio) Una subasta de frases, una guía de vibe coding responsable, química, música y libros ilustrados, nuevos en el repositorio — recursos con artículo: Subasta de frases (https://jjdeharo.github.io/subasta_frases/); Vibe coding responsable (https://vibe-coding-educativo.github.io/vibe-responsable); Reactius i sobrants (https://ja.cat/reactius); FoQa – Formulación Química Inorgánica (https://foqa.fiquipedia.es/); EduMúsic (https://edumusic.edutictac.es/); EduTicTac Llibres (https://llibres.edutictac.es/)
+
+## 2026-11-07 (publicado el domingo 8 de noviembre de 2026)
+- pieza:2026-11-07/memoria-agentes-ia (herramientas) Anthropic propone organizar la memoria de los agentes de IA en cuatro capas con un repaso periódico
+- pieza:2026-11-07/holmio-juego-quimica (vibecoding) Holmio convierte la tabla periódica en un juego diario de detectives
+- pieza:2026-11-07/incluxat-conservatorio (vibecoding) Incluxat traslada al conservatorio las orientaciones de los informes psicopedagógicos

@@ -1,0 +1,40 @@
+{
+  "fecha": "2026-11-07",
+  "elegida": {
+    "n": 2,
+    "pieza": "memoria-agentes-ia",
+    "idea": "Junto a la fotocopiadora, Algoritmo trae de su repaso nocturno una propuesta para el perfil de Tiza: «Dice que lo revisará luego. Nunca lo revisa». Como los cambios del perfil necesitan su aprobación, Algoritmo ya sabe cuándo llegará.",
+    "guion": {"vinetas": [
+      {"cartela": "A primera hora",
+       "escenario": "fotocopiadora",
+       "tiza": {"expresion": "agotado", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "orgulloso", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+       "objeto": "taza", "lleva": "tiza",
+       "bocadillos": [
+         {"quien": "algoritmo", "texto": "Anoche hice mi repaso. Traigo una propuesta para tu perfil.", "tipo": "habla"},
+         {"quien": "tiza", "texto": "A ver.", "tipo": "habla"}]},
+      {"escenario": "fotocopiadora",
+       "tiza": {"expresion": "pensativo", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "neutral", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+       "objeto": "taza", "lleva": "tiza",
+       "bocadillos": [
+         {"quien": "algoritmo", "texto": "Añadir: «Dice que lo revisará luego. Nunca lo revisa».", "tipo": "habla"}]},
+      {"escenario": "fotocopiadora",
+       "tiza": {"expresion": "avergonzado", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "harto", "postura": "encoger", "lugar": "derecha", "mira": "izquierda"},
+       "objeto": "taza", "lleva": "tiza",
+       "bocadillos": [
+         {"quien": "tiza", "texto": "Los cambios en mi perfil necesitan mi aprobación.", "tipo": "habla"},
+         {"quien": "algoritmo", "texto": "Ya. Lo revisarás luego.", "tipo": "habla"}]}
+    ]}
+  },
+  "motivo": "La 2 tiene el remate más sorprendente y económico: la propia regla de la noticia (el repaso solo propone y el perfil requiere aprobación) se vuelve contra Tiza, y el «Lo revisarás luego» cierra el círculo sin explicarse. Todo lo que dice es fiel a la pieza. La 1 es clara y simpática, pero «la IA descansa y la docente trabaja el domingo» es un remate previsible. La 3 se enreda (no se sabe qué le ha susurrado Tiza) y la 4 se queda en una enumeración con un remate tibio. La 5 se descarta: el chiste consiste en que el asistente que «ya sabe adaptar los informes al conservatorio» falla la pregunta de control, y eso es reírse del recurso concreto de un autor con nombre (Incluxat). La gracia de la elegida llega a 7; se ha afinado el texto igualmente.",
+  "retoques": "Escenario: el despacho de dirección no tenía motivo en el chiste; pasa a la fotocopiadora (libre en los tres números anteriores), el sitio de las cosas que se dejan para luego, con cartela «A primera hora» para que el «anoche» encaje. Caras: Tiza deja «neutral» (de las más repetidas) en la viñeta 1 y pasa a «agotado», que no ha salido; se mantiene el «orgulloso» de Algoritmo en la 1 porque el chiste lo pide (presume de su repaso). Objeto: taza, distinto del folio del número anterior. Texto: «Te traigo» pasa a «Traigo», «No lo revisa» a «Nunca lo revisa» y «Los cambios del perfil» a «Los cambios en mi perfil». Ningún bocadillo pasa de 90 caracteres (el más largo, 59).",
+  "puntuaciones": [
+    {"n": 1, "pieza": "memoria-agentes-ia", "gracia": 6, "claridad": 9, "remate": 6, "prohibiciones": "respeta", "nota": "Clara y reconocible, pero el remate (el docente ya hace ese repaso en domingo) se ve venir."},
+    {"n": 2, "pieza": "memoria-agentes-ia", "gracia": 7, "claridad": 7, "remate": 8, "prohibiciones": "respeta", "nota": "Bucle bien cerrado con un dato real de la noticia; el escenario original no aportaba nada."},
+    {"n": 3, "pieza": "memoria-agentes-ia", "gracia": 5, "claridad": 5, "remate": 6, "prohibiciones": "respeta", "nota": "Las capas de memoria están bien usadas, pero falta saber qué quiere borrar Tiza y el remate necesita conocer las capas."},
+    {"n": 4, "pieza": "holmio-juego-quimica", "gracia": 5, "claridad": 7, "remate": 5, "prohibiciones": "respeta", "nota": "La enumeración de elementos es el chiste entero; «Es un método» remata flojo."},
+    {"n": 5, "pieza": "incluxat-conservatorio", "gracia": 6, "claridad": 7, "remate": 6, "prohibiciones": "descartada", "nota": "La burla recae sobre el asistente concreto de un autor con nombre, que se presenta fallando su propia pregunta de control."}
+  ]
+}

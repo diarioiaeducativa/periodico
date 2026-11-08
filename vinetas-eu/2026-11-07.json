@@ -1,0 +1,32 @@
+{
+  "fecha": "2026-11-07",
+  "elegida": {
+    "n": 2,
+    "pieza": "memoria-agentes-ia",
+    "idea": "Junto a la fotocopiadora, Algoritmo trae de su repaso nocturno una propuesta para el perfil de Tiza: «Dice que lo revisará luego. Nunca lo revisa». Como los cambios del perfil necesitan su aprobación, Algoritmo ya sabe cuándo llegará.",
+    "guion": {"vinetas": [
+      {"cartela": "Goizean goizetik",
+       "escenario": "fotocopiadora",
+       "tiza": {"expresion": "agotado", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "orgulloso", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+       "objeto": "taza", "lleva": "tiza",
+       "bocadillos": [
+         {"quien": "algoritmo", "texto": "Bart nire errepasoa egin nuen. Zure profilerako proposamen bat dakart.", "tipo": "habla"},
+         {"quien": "tiza", "texto": "Ikus dezagun.", "tipo": "habla"}]},
+      {"escenario": "fotocopiadora",
+       "tiza": {"expresion": "pensativo", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "neutral", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+       "objeto": "taza", "lleva": "tiza",
+       "bocadillos": [
+         {"quien": "algoritmo", "texto": "Gehitu: «Gero berrikusiko duela dio. Ez du inoiz berrikusten».", "tipo": "habla"}]},
+      {"escenario": "fotocopiadora",
+       "tiza": {"expresion": "avergonzado", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "harto", "postura": "encoger", "lugar": "derecha", "mira": "izquierda"},
+       "objeto": "taza", "lleva": "tiza",
+       "bocadillos": [
+         {"quien": "tiza", "texto": "Nire profilaren aldaketek nire onespena behar dute.", "tipo": "habla"},
+         {"quien": "algoritmo", "texto": "Bai, noski. Gero berrikusiko duzu.", "tipo": "habla"}]}
+    ]}
+  },
+  "traduccion": "itzulpen automatikoa AArekin"
+}

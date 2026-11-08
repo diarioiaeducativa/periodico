@@ -12,7 +12,7 @@
       "titular": "EDUmind ofereix dictats en gallec i castellà amb veus sintètiques de codi obert",
       "entradilla": "Una aplicació web gratuïta, creada per Luis Vilela Acuña, reuneix dictats en gallec i castellà per a sisè de primària, amb veus sintètiques de llicència oberta.",
       "cuerpo": [
-        "EDUmind (dictados.edumind.es), creada per Luis Vilela Acuña, ofereix quatre dictats per a 6.º de primària, dos en gallec i dos en castellà. Inclou filtres per llengua, curs, tema, etiqueta i tipus de text, un cercador, una targeta de regles de dues pàgines i un quadern de regles acumulatiu, tots dos en PDF i ODT.",
+        "[EDUmind](https://dictados.edumind.es) (dictados.edumind.es), creada per Luis Vilela Acuña, ofereix quatre dictats per a 6.º de primària, dos en gallec i dos en castellà. Inclou filtres per llengua, curs, tema, etiqueta i tipus de text, un cercador, una targeta de regles de dues pàgines i un quadern de regles acumulatiu, tots dos en PDF i ODT.",
         "La narració és sintètica. La veu gallega, Brais, procedeix del Proxecto Nós (Universidade de Santiago de Compostela) i s'ha generat amb aHoTTS (HiTZ, UPV/EHU); la castellana, Alejandro, també és d'aHoTTS. Segons la pàgina, els textos, fitxes i àudios es publiquen amb llicència CC BY-SA 4.0, el programa amb AGPL-3.0-or-later o EUPL-1.2 i els models de veu amb Apache 2.0.",
         "El seu autor va presentar el recurs com un treball en curs: va indicar que encara l'ha de polir i que la versió en castellà és millorable."
       ],
