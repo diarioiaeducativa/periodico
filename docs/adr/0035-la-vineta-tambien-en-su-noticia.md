@@ -19,12 +19,18 @@ de la viñeta».
   «A partir de…», que remitiría a la propia página.
 - Fuera del `<article>`, así que el buscador no mezcla los diálogos de la tira con el texto de la noticia.
 - En los cinco idiomas y en todo lo ya publicado, porque la web se rehace entera.
-- Una viñeta que trata de un breve sin decir cuál (`"pieza": "breve"`, como la publicada el 6 de noviembre, `vinetas/2026-11-05.json`) no sale
-  en ninguna noticia: no hay forma segura de saber de cuál es.
+- **En vertical**, con los recuadros uno debajo de otro como en el móvil (26rem como mucho, centrada), en
+  todas las pantallas: en fila, en la columna de 44rem del artículo, los bocadillos se leían mal. Se probó
+  también a sacarla de la columna con el ancho de la portada; Juanjo prefirió la vertical.
+- **Las viñetas de un breve** dicen cuál con `"pieza": "breve-N"` (N, su posición en la lista de breves,
+  desde 1; `encargos/pasos/3-guiones.md`), salen debajo de ese breve y su «A partir de…» de la portada
+  enlaza a él. La única anterior a la norma, la publicada el 6 de noviembre (`vinetas*/2026-11-05.json`,
+  del tercer breve, el de VirtuCam), se corrigió a mano en los cinco idiomas; una que diga solo `"breve"`
+  sigue sin salir en ninguna página y su portada dice «A partir de las noticias del día».
 
 ## Validación
 
 Generado en una copia aparte: la tira sale en las diez noticias de las que trata una viñeta (publicadas
-del 29 de octubre al 8 de noviembre, salvo la del 6, que era de un breve), en los cinco idiomas. Probado con `probar-web` en
+del 29 de octubre al 8 de noviembre, salvo la del 6, que sale debajo de su breve), en los cinco idiomas. Probado con `probar-web` en
 Firefox y Chromium, escritorio y móvil, claro y oscuro: se ve igual que en la portada y sin errores propios
 (los únicos, 404 de giscus en una noticia sin comentarios todavía, que es lo normal).

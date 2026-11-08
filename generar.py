@@ -1049,7 +1049,14 @@ def bloque_vineta(prof, eds, fecha, en_archivo=False, pieza=None):
         return ""
     d = next((x for x in eds if x["fecha"] == fecha), None)
     p = next((x for x in (d or {}).get("piezas", []) if x["id"] == elegida.get("pieza")), None)
-    origen_txt = f'{L["a_partir"]} <a href="{href(prof, p)}">{e(p["titular"])}</a>.' if p else L["a_partir_dia"]
+    # La de un breve lo dice con su número («breve-3», ADR 0035); las antiguas, solo «breve»
+    b = next((x for x in (d or {}).get("breves", []) if f'breve-{x.get("n")}' == elegida.get("pieza")), None)
+    if p:
+        origen_txt = f'{L["a_partir"]} <a href="{href(prof, p)}">{e(p["titular"])}</a>.'
+    elif b:
+        origen_txt = f'{L["a_partir"]} <a href="{prof}{ruta_breve(b)}">{e(titulo_breve(b))}</a>.'
+    else:
+        origen_txt = L["a_partir_dia"]
     return f"""<section class="vineta sec-vineta" aria-labelledby="t-vineta-{fecha}">
   <h2 id="t-vineta-{fecha}" class="vineta-titulo"><span>{"" if en_archivo else f'<a href="{prof}vineta.html">{icono("vineta")} {L["vineta_titulo"]}</a>'}</span> <span class="fecha-pieza">{fecha_corta(publicacion(fecha))}</span></h2>
   <div class="tira">{vineta.tira(elegida["guion"])}</div>
@@ -1385,6 +1392,7 @@ def pagina_breve(prof, d, b, eds):
     <p class="breve-enlaces">{" · ".join(enl)}</p>
     {compartir}
   </article>
+  {bloque_vineta(prof, eds, d["fecha"], pieza=f'breve-{b["n"]}')}
   {mas_piezas(prof, eds, {"id": "", "fecha": "", "seccion": None})}
   {comentarios(ruta_breve(b))}
   <p class="volver"><a href="{prof}">{L["volver"]}</a></p>
