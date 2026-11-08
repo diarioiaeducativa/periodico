@@ -804,7 +804,7 @@ def pie(prof, eds, actual):
     <p>{L["unete_txt"]}</p>
     <ul class="pie-grupos">{grupos}</ul>
     {pie_comunidades(prof)}
-    <p class="pie-rss"><a href="{prof}redaccion.html">{L["quees"]}</a> · <a href="{prof}videos.html">{L["videos"]}</a> · {enlace(INSTAGRAM, L["instagram"])} · <a href="{prof}para-tu-web.html">{L["ptw"]}</a> · <a href="{prof}feed.xml">{L["rss"]}</a><span class="instalar-app" hidden> · <button type="button" class="instalar" title="{e(L["instalar_titulo"])}">{L["instalar"]}</button></span></p>
+    <p class="pie-rss"><a href="{prof}redaccion.html">{L["quees"]}</a> · <a href="{prof}videos.html">{L["videos"]}</a> · {enlace(INSTAGRAM, L["instagram"])} · <a href="{prof}para-tu-web.html">{L["ptw_titulo"]}</a> · <a href="{prof}feed.xml">{L["rss"]}</a><span class="instalar-app" hidden> · <button type="button" class="instalar" title="{e(L["instalar_titulo"])}">{L["instalar"]}</button></span></p>
     <p class="instalar-ios" hidden>{L["instalar_ios"]}</p>
   </div>
   <nav class="pie-archivo" aria-label="{L["archivo"]}">
@@ -2356,10 +2356,10 @@ def pagina_para_tu_web(eds):
     bases = json.dumps({c: BASE + d["carpeta"] for c, d in IDIOMAS.items()})
     titulos = json.dumps({c: d["titulo"] for c, d in IDIOMAS.items()}, ensure_ascii=False)
     script = SCRIPT_PTW.replace("__BASES__", bases).replace("__TITULO__", titulos)
-    return cabeza(f'{L["ptw"]} | {L["titulo"]}', "", L["ptw_txt"], "para-tu-web.html") + f"""<body class="pag-seccion">
+    return cabeza(L["ptw_titulo"], "", L["ptw_txt"], "para-tu-web.html") + f"""<body class="pag-seccion">
 {cabecera("", "para-tu-web.html", eds[-1]["fecha"], eds[-1]["numero"], True, h1=False)}
 <main class="portada pagina-ptw">
-<h1 class="titulo-seccion">{ICONO_LLEVAR} {L["ptw"]}</h1>
+<h1 class="titulo-seccion">{ICONO_LLEVAR} {L["ptw_titulo"]}</h1>
 <p class="descripcion-seccion">{L["ptw_txt"]}</p>
 <section class="ptw-widget" aria-labelledby="ptw-w">
 <h2 id="ptw-w">{L["ptw_widget_h"]}</h2>

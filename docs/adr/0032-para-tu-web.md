@@ -14,7 +14,7 @@ completos, un widget para incrustar y un botón para republicar una pieza entera
 
 ## Decisión
 
-- **Página «Para tu web»** (`para-tu-web.html`, en los cinco idiomas, enlazada desde el pie): el
+- **Página «Inserta el Diario de IA Educativa en tu web»** (nombre elegido por Juanjo el 08-11-2026; `para-tu-web.html`, en los cinco idiomas, enlazada desde el pie): el
   configurador del widget a la vista, con vista previa en vivo y el código para copiar; plegados debajo,
   la tarjeta de una pieza, los canales RSS y las condiciones para republicar.
 - **Widget** (`insertar.html`, uno por idioma): una página sin cabecera ni pie, pensada para un

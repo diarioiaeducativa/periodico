@@ -6,7 +6,7 @@ sin revisión profesional, como el resto de la web en esos idiomas."""
 
 TEXTOS = {
     "es": {
-        "ptw": "Para tu web",
+        "ptw_titulo": "Inserta el Diario de IA Educativa en tu web",
         "ptw_txt": "El diario se puede llevar a un blog, a la web del centro, a un aula virtual o a un lector de noticias. Es gratuito, sin registro y sin cookies, y los textos tienen licencia CC BY-SA 4.0.",
         "ptw_widget_h": "Los titulares en tu web",
         "ptw_widget_txt": "Una ventana con las últimas noticias del diario, que se pone al día sola cada mañana. Elige qué quieres mostrar, mira cómo queda y copia el código.",
@@ -42,7 +42,7 @@ TEXTOS = {
         "rep_fuentes": "Fuentes",
     },
     "ca": {
-        "ptw": "Per al teu web",
+        "ptw_titulo": "Insereix el Diari d'IA Educativa al teu web",
         "ptw_txt": "El diari es pot portar a un blog, al web del centre, a una aula virtual o a un lector de notícies. És gratuït, sense registre i sense galetes, i els textos tenen llicència CC BY-SA 4.0.",
         "ptw_widget_h": "Els titulars al teu web",
         "ptw_widget_txt": "Una finestra amb les últimes notícies del diari, que s'actualitza sola cada matí. Tria què vols mostrar, mira com queda i copia el codi.",
@@ -78,7 +78,7 @@ TEXTOS = {
         "rep_fuentes": "Fonts",
     },
     "gl": {
-        "ptw": "Para a túa web",
+        "ptw_titulo": "Insire o Diario de IA Educativa na túa web",
         "ptw_txt": "O diario pódese levar a un blog, á web do centro, a unha aula virtual ou a un lector de noticias. É gratuíto, sen rexistro e sen cookies, e os textos teñen licenza CC BY-SA 4.0.",
         "ptw_widget_h": "Os titulares na túa web",
         "ptw_widget_txt": "Unha xanela coas últimas noticias do diario, que se actualiza soa cada mañá. Escolle que queres amosar, mira como queda e copia o código.",
@@ -114,7 +114,7 @@ TEXTOS = {
         "rep_fuentes": "Fontes",
     },
     "eu": {
-        "ptw": "Zure webgunerako",
+        "ptw_titulo": "Txertatu Hezkuntzako AA Egunkaria zure webgunean",
         "ptw_txt": "Egunkaria blog batera, ikastetxearen webgunera, ikasgela birtual batera edo albiste-irakurgailu batera eraman daiteke. Doakoa da, erregistrorik eta cookierik gabe, eta testuek CC BY-SA 4.0 lizentzia dute.",
         "ptw_widget_h": "Izenburuak zure webgunean",
         "ptw_widget_txt": "Egunkariaren azken albisteak dituen leiho bat, goizero bere kabuz eguneratzen dena. Aukeratu zer erakutsi nahi duzun, begiratu nola geratzen den eta kopiatu kodea.",
@@ -150,7 +150,7 @@ TEXTOS = {
         "rep_fuentes": "Iturriak",
     },
     "en": {
-        "ptw": "For your website",
+        "ptw_titulo": "Embed Educational AI Daily on your website",
         "ptw_txt": "The newspaper can be taken to a blog, a school website, a virtual classroom or a news reader. It is free, with no sign-up and no cookies, and the texts are licensed under CC BY-SA 4.0.",
         "ptw_widget_h": "The headlines on your website",
         "ptw_widget_txt": "A window with the latest news from the newspaper, which updates itself every morning. Choose what to show, see how it looks and copy the code.",
