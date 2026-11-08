@@ -10,6 +10,7 @@ El documentalista ha dejado los artículos sobre recursos del Repositorio de Vib
 - Quita lo no confirmado: una frase, un párrafo, un recurso de la pieza de la semana o el artículo entero (pásalo a `descartado`, con su `url` y el motivo).
 - En la pieza de la semana, las cifras de la entradilla (el total de la semana, los que se presentan en la pieza y los ya contados) tienen que cuadrar con la entrada y con los recursos que quedan tras el repaso. La pieza de la semana sale también sin `recursos` si no quedaba ninguno por contar: no la descartes por eso.
 
+- Las fuentes nombradas en el texto (encargos/enlaces.md): que cada una esté enlazada en su primera mención, con su nombre como texto del enlace; si falta, enlázala.
 - Los enlaces a lo ya publicado (`pieza:AAAA-MM-DD/id`, encargos/enlaces.md): que la clave esté en publicado.txt y que la pieza enlazada trate de verdad lo mismo; si no, quita el enlace y deja el texto.
 
 Corrige lo justo, sin reescribir lo que está bien, y escribe la versión final en repositorio/{FECHA}.json, con la misma forma y un campo "repaso": la lista de cambios (o «sin cambios»). Actualiza `comprobado`.

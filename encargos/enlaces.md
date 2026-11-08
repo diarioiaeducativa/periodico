@@ -1,8 +1,22 @@
-# Encargo común: enlazar lo que el diario ya ha publicado
+# Encargo común: enlaces en el texto
 
 Vale para todo el que escribe en el diario (redacción, Biblioteca, Repositorio y reportaje) y
-para quien lo revisa. A medida que el diario crece, cada vez más temas continúan algo ya
-publicado: el lector tiene que poder ir a ello.
+para quien lo revisa. Quien lee un nombre tiene que poder ir a él ahí mismo, sin bajar hasta las
+fuentes del pie.
+
+## Las fuentes, donde se nombran
+
+- **Lo que se nombra se enlaza donde se nombra**: la primera vez que el texto menciona un
+  documento, artículo, herramienta, web o anuncio que está en `fuentes`, va enlazado ahí, con su
+  nombre como texto del enlace: `lo explica en el artículo «[Agentes de IA que aprenden mientras
+  duermen](https://educacion.bilateria.org/agentes-de-ia-que-aprenden-mientras-duermen)»`.
+- Solo la primera mención, y una vez cada fuente. Lo que el texto no nombra no se enlaza.
+- `fuentes` sigue al pie con todas, también las enlazadas en el texto.
+
+## Lo que el diario ya ha publicado
+
+A medida que el diario crece, cada vez más temas continúan algo ya publicado: el lector tiene
+que poder ir a ello.
 
 - **Lo ya publicado está en `publicado.txt`**, cada pieza con su clave: `pieza:AAAA-MM-DD/id`.
 - **Enlaza lo que está claramente relacionado**: la pieza que contó el mismo producto, documento,

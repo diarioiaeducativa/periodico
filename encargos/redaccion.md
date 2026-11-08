@@ -60,6 +60,8 @@ siendo la de hoy.
   en la fuente original** con WebSearch/WebFetch: el anuncio oficial, la página del
   producto, el documento de la administración. Un enlace a X o a un vídeo del grupo no
   basta: busca el original.
+- **Cada fuente que el texto nombra va enlazada en su primera mención**, además de en `fuentes`
+  (`encargos/enlaces.md`).
 - En `fuentes`, enlaces a la fuente original (oficial), en castellano o catalán si
   existe esa versión. Para una aplicación de un miembro, el enlace a su web (no al
   repositorio, salvo que no tenga otra), y di quién la hace.

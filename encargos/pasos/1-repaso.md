@@ -5,6 +5,7 @@ El redactor ha dejado su borrador en ediciones-borrador/{FECHA}.json, escrito co
 - Abre con WebFetch cada URL de `fuentes` y de los enlaces del cuerpo y de los breves, y comprueba que dice lo que la pieza afirma: nombres, cifras, fechas, precios, licencias, funciones. Si una fuente no carga, busca otra oficial con WebSearch; si no la hay, quita la afirmación.
 - Compara cada pieza con los mensajes de dias/{FECHA}.md: que nada esté tergiversado ni atribuido a quien no lo dijo, y que las posturas de un debate no lleven nombre.
 - Solo se nombra al autor de un recurso que él mismo ha publicado, también si es Juanjo de Haro.
+- Las fuentes nombradas en el texto (encargos/enlaces.md): que cada una esté enlazada en su primera mención, con su nombre como texto del enlace; si falta, enlázala.
 - Los enlaces a lo ya publicado (`pieza:AAAA-MM-DD/id`, encargos/enlaces.md): que la clave esté en publicado.txt y que la pieza enlazada trate de verdad lo mismo; si no, quita el enlace y deja el texto. Si una pieza repite algo ya publicado sin novedad, quítala; si la novedad es pequeña, déjala en un breve que enlace la anterior.
 - Si el borrador descarta algo por su enlace (antiguo, de otro sitio), abre el enlace: la fecha de una dirección no es la de su contenido.
 - Si una pieza da por cierto lo que dice una página oficial, mira que no lo contradiga algo ya publicado en el diario (publicado.txt): una página puede estar desactualizada.

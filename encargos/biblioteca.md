@@ -103,4 +103,5 @@ de `publicado.txt`.
 
 - Una pieza por documento de la entrada, en el mismo orden, salvo los que van a `ya_contado`.
 - `mensaje`: el id del mensaje del documento en la biblioteca, tal como lo da la entrada.
-- `fuentes`: el documento oficial primero y todo lo demás que cites.
+- `fuentes`: el documento oficial primero y todo lo demás que cites. Lo que el texto nombra, enlazado también
+  en su primera mención (`encargos/enlaces.md`).

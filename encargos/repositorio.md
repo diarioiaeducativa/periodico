@@ -137,4 +137,5 @@ de `publicado.txt`.
 - **semana**: una sola pieza con todos los recursos en `recursos`, agrupados por autoría.
 - **fondo**: una sola pieza, con el recurso elegido.
 - `fuentes`: la web de cada recurso primero y todo lo demás que cites. La ficha del
-  repositorio ya la enlaza el diario: no hace falta repetirla.
+  repositorio ya la enlaza el diario: no hace falta repetirla. Lo que el texto nombra, enlazado también
+  en su primera mención (`encargos/enlaces.md`).

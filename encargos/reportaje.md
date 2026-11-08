@@ -98,4 +98,5 @@ de `publicado.txt`.
 
 - `mensaje`: el mensaje donde arrancó la conversación principal sobre el tema.
 - `relacionadas`: solo piezas que existan en `ediciones/` (comprueba `fecha` e `id`).
-- `fuentes`: todas las fuentes externas del cuerpo, también las citadas de pasada.
+- `fuentes`: todas las fuentes externas del cuerpo, también las citadas de pasada. Lo que el texto nombra, enlazado también
+  en su primera mención (`encargos/enlaces.md`).

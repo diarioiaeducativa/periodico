@@ -9,6 +9,7 @@ El documentalista ha dejado los artículos de la Biblioteca digital en bibliotec
 - Quita lo no confirmado: una frase, un párrafo o el artículo entero (pásalo a `descartado` con el motivo).
 - Cada entrada de `ya_contado`: comprueba, abriendo las fuentes de esa pieza (en la lista de la entrada), que trataba de verdad este mismo documento. Si no es así, pásala a `descartado` con el motivo «no estaba contado: necesita artículo», y no la dejes en `ya_contado`.
 
+- Las fuentes nombradas en el texto (encargos/enlaces.md): que cada una esté enlazada en su primera mención, con su nombre como texto del enlace; si falta, enlázala.
 - Los enlaces a lo ya publicado (`pieza:AAAA-MM-DD/id`, encargos/enlaces.md): que la clave esté en publicado.txt y que la pieza enlazada trate de verdad lo mismo; si no, quita el enlace y deja el texto.
 
 Corrige lo justo, sin reescribir lo que está bien, y escribe la versión final en biblioteca/{FECHA}.json, con la misma forma y un campo "repaso": la lista de cambios (o «sin cambios»). Actualiza `comprobado`.

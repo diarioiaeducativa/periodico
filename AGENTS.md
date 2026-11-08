@@ -63,6 +63,10 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
   `GISCUS` en `generar.py`. El aviso de cada comentario (a Juanjo y a Raül,
   por el Bot de IA Educativa) es una acción del repositorio del sitio: por eso
   la publicación no toca `.github/`.
+- **Enlaces en el texto** (ADR 0011 y 0031): lo ya publicado y cada fuente
+  nombrada, en su primera mención (`encargos/enlaces.md`). Para enlazar las
+  fuentes de piezas ya escritas, `scripts/enlazar-fuentes.py`, que no deja
+  cambiar ni un carácter del texto.
 - **Buscador** (ADR 0007): Pagefind, tras `generar.py`, solo en los
   `<article>` con `data-pagefind-body`.
 - **Vídeos** (ADR 0016 y 0027): «La semana en vídeo» la noche del sábado

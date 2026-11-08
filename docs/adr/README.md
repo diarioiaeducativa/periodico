@@ -32,5 +32,6 @@
 | [0028](0028-el-reportaje-sale-siempre.md) | El reportaje sale siempre, y las reservas caducan |
 | [0029](0029-las-comunidades-en-tres-circulos.md) | Las comunidades, en tres círculos |
 | [0030](0030-comentarios-con-giscus.md) | Comentarios con giscus, en las Discussions de GitHub |
+| [0031](0031-las-fuentes-enlazadas-donde-se-nombran.md) | Las fuentes, enlazadas donde se nombran |
 
 Plantilla: [0000-plantilla.md](0000-plantilla.md). Para crear uno: `nuevo-adr "Título"`.

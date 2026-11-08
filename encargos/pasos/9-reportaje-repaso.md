@@ -9,6 +9,7 @@ El reportero ha dejado el reportaje en reportajes-borrador/{FECHA}.json, escrito
 - Mira el conjunto: que el titular y la entradilla digan lo que el cuerpo sostiene, que no sea un resumen de la semana, que las claves salgan del texto y que la extensión esté entre 1.200 y 1.800 palabras.
 - Quita lo no confirmado: una frase, un párrafo o un apartado entero si hace falta. Si lo que queda no se sostiene, "hay_reportaje": false con el motivo.
 
+- Las fuentes nombradas en el texto (encargos/enlaces.md): que cada una esté enlazada en su primera mención, con su nombre como texto del enlace; si falta, enlázala.
 - Los enlaces a lo ya publicado (`pieza:AAAA-MM-DD/id`, encargos/enlaces.md): que la clave esté en publicado.txt y que la pieza enlazada trate de verdad lo mismo; si no, quita el enlace y deja el texto.
 
 Corrige lo justo, sin reescribir lo que está bien, y escribe la versión final en reportajes/{FECHA}.json, con la misma forma y un campo "repaso": la lista de cambios (o «sin cambios»). Actualiza `comprobado` con lo que has comprobado tú.
