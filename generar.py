@@ -72,7 +72,7 @@ IDIOMAS = {
                         "edumedia": "creación de audio, vídeo e imagen con IA generativa para el aula."},
         "unete_txt": "El Diario de IA Educativa cuenta lo que se habla en tres grupos abiertos de Telegram donde docentes comparten lo que prueban con la inteligencia artificial. Las conversaciones se pueden leer sin entrar; para participar, basta con unirse.",
         "archivo": "Archivo por días",
-        "anyo": "Año", "hemeroteca": "Hemeroteca", "hemeroteca_txt": "Todos los números, por meses y semanas.", "nb_anteriores": "Boletines anteriores",
+        "anyo": "Año", "hemeroteca": "Hemeroteca", "hemeroteca_txt": "Todos los números, por meses y semanas.", "nb_anteriores": "Boletines anteriores", "semana_n": "Semana {n}",
         # La semana y el mes (ADR 0034)
         "semana": "La semana", "semana_txt": "Todo lo que contó el diario de lo que se habló en los grupos esa semana, por secciones, con el pódcast y el vídeo de cada grupo. Elige un grupo para ver solo lo suyo.", "semana_actual": "La semana, de un vistazo", "grupo_filtro": "Ver lo de un grupo", "grupo_todos": "Todos", "sin_grupo": "Este grupo no tiene piezas esta semana.", "nb_h": "El pódcast y el vídeo de la semana", "nb_txt": "Cada lunes, NotebookLM, de Google, prepara un pódcast y un vídeo de cada grupo con su conversación completa de la semana, también lo que el diario no ha contado. Un agente de IA los contrasta con la conversación antes de publicarlos.", "nb_es": "", "nb_pendiente": "El pódcast y el vídeo de cada grupo se añaden aquí el lunes por la mañana.", "nb_video": "Vídeo", "nb_ver": "Reproducir el vídeo de {g}", "nb_youtube": "Verlo en YouTube", "nb_podcast": "Pódcast", "nb_archive": "Escucharlo en Internet Archive", "numeros_semana": "Los números de la semana", "sem_ant": "Semana anterior", "sem_sig": "Semana siguiente", "todo_mes": "Todo el mes", "mes": "El mes", "mes_txt": "Las semanas del mes, con la pieza que abrió cada número.", "mes_ant": "Mes anterior", "mes_sig": "Mes siguiente", "ver_semana": "La semana entera, por secciones", "con_nb": "Con el pódcast y el vídeo de cada grupo", "boletines_h": "Boletines semanales anteriores", "boletines_txt": "Hasta noviembre de 2026, cada grupo tenía su propio boletín semanal. Siguen en su web:",
         "todos_numeros": "Hemeroteca: todos los números",
@@ -190,7 +190,7 @@ IDIOMAS = {
                         "edumedia": "creació d'àudio, vídeo i imatge amb IA generativa per a l'aula."},
         "unete_txt": "El Diari d'IA Educativa explica el que es parla en tres grups oberts de Telegram on docents comparteixen el que proven amb la intel·ligència artificial. Les converses es poden llegir sense entrar-hi; per participar-hi, n'hi ha prou d'unir-s'hi.",
         "archivo": "Arxiu per dies",
-        "anyo": "Any", "hemeroteca": "Hemeroteca", "hemeroteca_txt": "Tots els números, per mesos i setmanes.", "nb_anteriores": "Butlletins anteriors",
+        "anyo": "Any", "hemeroteca": "Hemeroteca", "hemeroteca_txt": "Tots els números, per mesos i setmanes.", "nb_anteriores": "Butlletins anteriors", "semana_n": "Setmana {n}",
         # La semana y el mes (ADR 0034)
         "semana": "La setmana", "semana_txt": "Tot el que va explicar el diari del que es va parlar als grups aquella setmana, per seccions, amb el pòdcast i el vídeo de cada grup. Tria un grup per veure només el seu.", "semana_actual": "La setmana, d'un cop d'ull", "grupo_filtro": "Veure el d'un grup", "grupo_todos": "Tots", "sin_grupo": "Aquest grup no té peces aquesta setmana.", "nb_h": "El pòdcast i el vídeo de la setmana", "nb_txt": "Cada dilluns, NotebookLM, de Google, prepara un pòdcast i un vídeo de cada grup amb tota la seva conversa de la setmana, també el que el diari no ha explicat. Un agent d'IA els contrasta amb la conversa abans de publicar-los.", "nb_es": "Són en castellà.", "nb_pendiente": "El pòdcast i el vídeo de cada grup s'afegeixen aquí dilluns al matí.", "nb_video": "Vídeo", "nb_ver": "Reproduir el vídeo de {g}", "nb_youtube": "Mira'l a YouTube", "nb_podcast": "Pòdcast", "nb_archive": "Escolta'l a Internet Archive", "numeros_semana": "Els números de la setmana", "sem_ant": "Setmana anterior", "sem_sig": "Setmana següent", "todo_mes": "Tot el mes", "mes": "El mes", "mes_txt": "Les setmanes del mes, amb la peça que va obrir cada número.", "mes_ant": "Mes anterior", "mes_sig": "Mes següent", "ver_semana": "Tota la setmana, per seccions", "con_nb": "Amb el pòdcast i el vídeo de cada grup", "boletines_h": "Butlletins setmanals anteriors", "boletines_txt": "Fins al novembre de 2026, cada grup tenia el seu propi butlletí setmanal. Continuen al seu web:",
         "todos_numeros": "Hemeroteca: tots els números",
@@ -1772,6 +1772,15 @@ def por_semanas(eds):
     return sems
 
 
+def titulo_semana(sem):
+    """«Semana 45: del 2 al 8 de noviembre»: el número ISO de la semana, el mismo que llevan los vídeos y
+    los pódcast de NotebookLM y los boletines de antes, y sus días."""
+    r = rango_semana(sem)
+    if L["codigo"] in ("es", "ca", "gl", "eu"):
+        r = r[0].lower() + r[1:]
+    return f'{L["semana_n"].format(n=int(sem.split("-")[1]))}: {r}'
+
+
 def rango_semana(sem):
     """«Del 2 al 8 de noviembre»: los días de los mensajes."""
     return fechas_semana((lunes_de(sem) + datetime.timedelta(days=6)).isoformat())
@@ -1895,7 +1904,7 @@ def pagina_semana(eds, sem, anterior, siguiente):
     prof = "../../"
     ruta = f"semana/{sem}/"
     ds = por_semanas(eds)[sem]
-    rango = rango_semana(sem)
+    rango = titulo_semana(sem)
     m = cargar_multimedia(sem)
     secciones = []
     for c in ORDEN_SECCIONES:
@@ -1926,7 +1935,7 @@ def pagina_semana(eds, sem, anterior, siguiente):
     if siguiente:
         nav.append(f'<a href="{prof}semana/{siguiente}/">{L["sem_sig"]} →</a>')
     nums = numeros(ds)
-    titulo = f'{L["semana"]}: {rango} | {L["titulo"]}'
+    titulo = f'{rango} | {L["titulo"]}'
     return cabeza(titulo, prof, L["semana_txt"], ruta) + f"""<body class="pag-seccion">
 {cabecera(prof, ruta, eds[-1]["fecha"], eds[-1]["numero"], True, h1=False)}
 <main class="portada semana-pag">
@@ -1956,7 +1965,7 @@ def pagina_mes(eds, mes, sems, anterior, siguiente):
         ds = porsem[sem]
         nb = f'<p class="con-nb">{icono("video")} {L["con_nb"]}</p>' if cargar_multimedia(sem) else ""
         nums = numeros(ds)
-        bloques.append(f'<section class="mes-semana"><h2><a href="{prof}semana/{sem}/">{rango_semana(sem)}</a>'
+        bloques.append(f'<section class="mes-semana"><h2><a href="{prof}semana/{sem}/">{titulo_semana(sem)}</a>'
                        f'{f" <span class=num>· {nums}</span>" if nums else ""}</h2>{nb}{dias_lista(prof, ds)}'
                        f'<p class="leer"><a href="{prof}semana/{sem}/">{L["ver_semana"]}</a></p></section>')
     nav = []
@@ -2001,7 +2010,7 @@ def pagina_hemeroteca(eds):
             ds = porsem[sem]
             nums = numeros(ds)
             nb = f' <span class="con-nb" title="{e(L["con_nb"])}">{icono("video")}<span class="solo-lector">{L["con_nb"]}</span></span>' if cargar_multimedia(sem) else ""
-            semanas_html.append(f'<details class="hem-semana"{" open" if primera else ""}><summary><span class="rango">{rango_semana(sem)}</span>'
+            semanas_html.append(f'<details class="hem-semana"{" open" if primera else ""}><summary><span class="rango">{titulo_semana(sem)}</span>'
                                 f'{f" <span class=num>· {nums}</span>" if nums else ""}{nb}</summary>'
                                 f'<p class="leer"><a href="semana/{sem}/">{L["ver_semana"]}</a></p>{dias_lista("", ds)}</details>')
             primera = False
@@ -2784,7 +2793,7 @@ def generar_idioma(codigo):
 <meta name="robots" content="noindex"><meta http-equiv="refresh" content="0; url={destino}/">
 <link rel="canonical" href="{BASE}{L["carpeta"]}semana/{destino}/">
 <script>location.replace("{destino}/" + location.search + location.hash);</script></head>
-<body><p><a href="{destino}/">{rango_semana(destino)}</a></p></body></html>
+<body><p><a href="{destino}/">{titulo_semana(destino)}</a></p></body></html>
 """)
     meses = meses_y_semanas(eds)
     claves = list(meses)
