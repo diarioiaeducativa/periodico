@@ -32,7 +32,15 @@ guardado en el navegador y de 25 meses para los datos.
 - **No se cuentan** los robots (por el agente de usuario, en el navegador y en el servidor), los
   navegadores automatizados (`navigator.webdriver`, también las pruebas con Playwright), la portada que
   salta a otro idioma (`window.SALTO`) ni los navegadores marcados con `?nocontar=1` (`?nocontar=0`
-  lo deshace), para que los autores no cuenten sus propias visitas. El widget para otras webs
+  lo deshace), para que los autores no cuenten sus propias visitas. La marca la pone el panel: la
+  primera vez que un autor lo abre en un navegador, salta a `redaccion.html?nocontar=1&volver=1` del
+  diario, que guarda la marca y vuelve al panel (`?marcado=1`), y el panel recuerda que ese navegador
+  ya está marcado. Hace falta el salto porque una web no puede escribir en la memoria de otra, ni
+  desde un marco, que los navegadores separan. La vuelta es fija, al panel, para que nadie use el
+  salto para llevar a otra web; se salta desde una página sin cambio de idioma, para que la portada
+  no se adelante, y si el navegador no deja guardar nada no se salta, para no entrar en un bucle.
+  Juanjo pidió que fuera automático y sin enlace manual (08-11-2026). Los navegadores en los que
+  los autores leen el diario sin abrir nunca el panel siguen contando. El widget para otras webs
   (`insertar.html`, ADR 0032) no lleva contador: se ve dentro de webs ajenas.
 - **El servidor es el hosting de IONOS** (`https://bilateria.org/app/diario-ia-educativa/`, código en
   `ionos/estadisticas/`): siempre encendido y sin abrir la red de casa a los lectores. `contar.php`
@@ -63,7 +71,8 @@ guardado en el navegador y de 25 meses para los datos.
 
 - Lógica del navegador probada en Chromium, Firefox y WebKit, en escritorio y en móvil: primera página
   (visita y apertura), segunda página (solo apertura), recarga (nada), vuelta tras 31 minutos (visita
-  nueva), `?nocontar=1` y `?nocontar=0`, y portada que salta (nada).
+  nueva), `?nocontar=1` y `?nocontar=0`, y portada que salta (nada). El salto de ida y vuelta desde
+  el panel, comprobado en la web publicada.
 - Envío real desde los tres navegadores con origen `diarioiaeducativa.github.io`: 204 y suma guardada.
   Sin el origen del diario no se guarda nada; `config.php` sale vacío y `data/` da 403.
 - Panel comprobado con contraseña y sin ella (401), en escritorio y en móvil, con tema claro y oscuro.

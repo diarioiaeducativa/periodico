@@ -83,7 +83,8 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
 - **Contador de visitas** (ADR 0033): `CONTADOR` en `generar.py` y `ionos/estadisticas/`, desplegado
   a mano en `app/diario-ia-educativa/` del hosting (`config.php`, con las contraseñas, solo allí; no
   sobrescribirlo). Panel privado en <https://bilateria.org/app/diario-ia-educativa/>. Para probar sin
-  contar, Playwright ya no cuenta; a mano, `?nocontar=1`.
+  contar, Playwright ya no cuenta; a mano, `?nocontar=1`. El panel marca solo los navegadores de los autores
+  (salto con `volver=1`): publicar el sitio antes que un cambio del panel que dependa de él.
 - **Cinco idiomas** (ADR 0026): `/ca/`, `/gl/`, `/eu/` y `/en/`;
   traducción nocturna (`scripts/traducir.sh`) y de un día ya publicado
   (`scripts/traducir-dia.sh FECHA [idiomas]`, en una copia fuera de `/home`).

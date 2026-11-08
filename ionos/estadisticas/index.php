@@ -161,6 +161,20 @@ if (isset($_GET['datos'])) {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <title>Visitas del diario</title>
+<?php if ($yo): ?>
+<script>
+// Cada navegador desde el que entran los autores queda marcado en el diario para no contar sus visitas:
+// salto de ida y vuelta, una sola vez por navegador (ADR 0033)
+try {
+  var q = new URLSearchParams(location.search);
+  if (q.get('marcado') === '1') { localStorage.setItem('diario.marcado', '1'); history.replaceState(null, '', location.pathname); }
+  else if (!localStorage.getItem('diario.marcado')) {
+    localStorage.setItem('diario.prueba', '1'); localStorage.removeItem('diario.prueba');   // sin memoria, no salta: no habría vuelta atrás
+    location.replace('https://diarioiaeducativa.github.io/redaccion.html?nocontar=1&volver=1');
+  }
+} catch (_) {}
+</script>
+<?php endif; ?>
 <style>
 :root { --fondo:#f6f4ef; --papel:#fff; --tinta:#1c1d21; --tinta-2:#5d6068; --linea:#dedad0; --acento:#b3261e; --barra:#2f5d8a; }
 @media (prefers-color-scheme: dark) { :root { --fondo:#16181d; --papel:#1f2229; --tinta:#eceae4; --tinta-2:#a3a6ad; --linea:#363a44; --acento:#ff7a6e; --barra:#7fb0e0; } }
@@ -226,7 +240,7 @@ form.entrar button { margin-top:1rem; font:inherit; font-weight:600; padding:.55
   </div>
   <p class="idiomas" id="idiomas"></p>
   <div class="caja" style="margin-top:.6rem"><table><tbody id="top"></tbody></table></div>
-  <p class="aviso" style="margin-top:1rem">Cada página suma una vez por visita. Sin cookies ni datos de quien lee: solo sumas por hora, que se borran a los 25 meses. Para no contar tus propias visitas, abre una vez <a href="https://diarioiaeducativa.github.io/?nocontar=1" target="_blank" rel="noopener">el diario con esta dirección</a> en cada navegador que uses (<a href="https://diarioiaeducativa.github.io/?nocontar=0" target="_blank" rel="noopener">volver a contar</a>).</p>
+  <p class="aviso" style="margin-top:1rem">Cada página suma una vez por visita. Sin cookies ni datos de quien lee: solo sumas por hora, que se borran a los 25 meses. Las visitas desde los navegadores en los que habéis abierto este panel no cuentan.</p>
 </main>
 <script>
 (function(){
