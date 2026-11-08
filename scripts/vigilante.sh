@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # SPDX-License-Identifier: AGPL-3.0-or-later
-# El vigilante de fuera de casa (ADR 0021): lo lanza GitHub Actions (.github/workflows/vigilante.yml)
-# por la mañana. Si a partir de las 9:10 de Madrid el número de hoy no está en la web (el NAS está
+# El vigilante de fuera de casa (ADR 0021): lo lanza GitHub Actions (.github/workflows/vigilante.yml),
+# por su horario y desde el hosting de IONOS (ionos/lanzar-vigilante.sh). Si a partir de las 9:10 de Madrid el número de hoy no está en la web (el NAS está
 # caído o no ha podido publicar, y ya ha dejado de reintentar a las 9:00), lo saca con una pieza de
 # reserva, lo publica y avisa a Juanjo. Sin IA: la reserva ya está escrita y repasada.
 #
@@ -30,14 +30,22 @@ avisar() {
     --data-urlencode "chat_id=$TELEGRAM_CHAT" --data-urlencode "text=Diario de IA Educativa · vigilante de GitHub: $1"
 }
 
-if [ "$SIMULAR" != 1 ] && { [ "$m" -lt 550 ] || [ "$m" -ge 720 ]; }; then
-  echo "vigilante: son las $(date +%H:%M) en Madrid; solo actúa de 9:10 a 12:00"
+# Desde las 9:10, cuando el NAS ya ha dejado de reintentar, y hasta el final del día: GitHub retrasa
+# horas su horario (el 06 y el 07-11-2026 entró a las 15:57 y a las 14:56), y mejor tarde que sin número
+if [ "$SIMULAR" != 1 ] && [ "$m" -lt 550 ]; then
+  echo "vigilante: son las $(date +%H:%M) en Madrid; solo actúa desde las 9:10"
   exit 0
 fi
 portada=$(curl -s --max-time 60 "$WEB") || { echo "vigilante: no se puede leer la web; no se hace nada"; exit 1; }
 sale=$(printf '%s' "$portada" | grep -o '<time datetime="[0-9-]*">' | head -1 | grep -o '[0-9]\{4\}-[0-9-]*')
 if [ "$sale" = "$HOY" ] && [ "$SIMULAR" != 1 ]; then
   echo "vigilante: el número de hoy ($HOY) ya está en la web"
+  exit 0
+fi
+# Ya en el repositorio: el NAS o una pasada anterior lo han publicado (el sitio se sube antes que la
+# redacción) y GitHub Pages aún no lo sirve. Pasa cuando se juntan la pasada de IONOS y la de GitHub.
+if [ -e "ediciones/$F.json" ] && [ "$SIMULAR" != 1 ]; then
+  echo "vigilante: el número de hoy ya está en el repositorio (ediciones/$F.json); la web se está actualizando"
   exit 0
 fi
 echo "vigilante: en la web, el número del ${sale:-?}; falta el de hoy ($HOY), con las conversaciones del $F"

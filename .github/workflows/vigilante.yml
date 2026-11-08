@@ -1,13 +1,15 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 # El vigilante de fuera de casa (ADR 0021): si a partir de las 9:10 de Madrid el número de hoy no
-# está en la web, lo saca con una pieza de reserva (scripts/vigilante.sh). Las horas van en UTC:
-# 7:10 y 8:10 UTC son las 9:10 en verano y en invierno; la otra pasada, una hora después, comprueba
-# que ya está o lo intenta otra vez. El script no hace nada fuera de 9:10-12:00 de Madrid.
+# está en la web, lo saca con una pieza de reserva (scripts/vigilante.sh). GitHub retrasa horas o se
+# salta las pasadas programadas, así que hay una cada hora (en UTC, de las 7 a las 21, en un minuto
+# poco concurrido) y, sobre todo, lo lanza a su hora el hosting de IONOS (ionos/lanzar-vigilante.sh)
+# por workflow_dispatch con simular=false. El script no hace nada antes de las 9:10 de Madrid ni si
+# el número ya está en la web.
 name: Vigilante del número de hoy
 
 on:
   schedule:
-    - cron: "10 7,8,9 * * *"
+    - cron: "23 7-21 * * *"
   workflow_dispatch:
     inputs:
       simular:

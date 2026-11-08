@@ -73,6 +73,10 @@ despliegue, que son secretas y se crean de nuevo. En una máquina con Docker:
 5. `docker compose up -d`. No hace falta copiar `estado/`: un número cuya edición ya está en
    GitHub no se vuelve a preparar ni a publicar.
 
+El lanzador del vigilante (ADR 0021) no corre en el NAS sino en un hosting con cron:
+`ionos/lanzar-vigilante.sh` explica en su cabecera la carpeta, el token de GitHub de grano fino
+(solo «Actions: Read and write» en este repositorio) y las líneas del crontab.
+
 Para preparar o rehacer un día a mano:
 `docker exec diario-ia-educativa /proyecto/scripts/noche.sh AAAA-MM-DD` (con `-e REHACER=1`
 si ese número ya se publicó) y después `scripts/publicar-nas.sh AAAA-MM-DD`.

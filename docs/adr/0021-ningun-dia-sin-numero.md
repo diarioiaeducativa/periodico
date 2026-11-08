@@ -1,6 +1,6 @@
 # 21. Ningún día sin número: reserva, vigilante, recuperación y reintentos de publicación
 
-Fecha: 2026-11-05 · Estado: aceptado
+Fecha: 2026-11-05 · Estado: aceptado · Revisado: 2026-11-08 (el vigilante, todo el día y lanzado desde IONOS)
 
 ## Contexto
 
@@ -37,10 +37,23 @@ Aprobado ese mismo día («sí a todo, hazlo»), junto con el resumen semanal d�
     («fallo»): para la redacción (se lanza con `setsid`, así que se para entera, con sus agentes),
     usa la reserva y avisa a Juanjo;
   - en el **vigilante de fuera de casa** (`.github/workflows/vigilante.yml` y
-    `scripts/vigilante.sh`, en GitHub Actions, gratis en un repositorio público): de 9:10 a 12:00
-    de Madrid mira si el número de hoy está en la web; si no está, lo saca con la reserva, lo
+    `scripts/vigilante.sh`, en GitHub Actions, gratis en un repositorio público): desde las 9:10
+    de Madrid y hasta el final del día mira si el número de hoy está en la web; si no está, lo saca con la reserva, lo
     publica con su propia clave de despliegue del sitio y avisa a Juanjo por Telegram. Los grupos
-    no reciben aviso ese día: el bot está en el NAS.
+    no reciben aviso ese día: el bot está en el NAS. Si el número ya está en el repositorio
+    (`ediciones/FECHA.json`) pero GitHub Pages aún no lo sirve, no hace nada: el sitio se sube
+    antes que la redacción, así que eso solo pasa si alguien acaba de publicarlo.
+  - **quién lanza el vigilante** (revisado el 08-11-2026): GitHub Actions retrasa horas, o se
+    salta, las pasadas programadas. Del horario original (tres pasadas, a las 9:10, 10:10 y 11:10)
+    solo hizo una al día, a las 15:57 el 06-11 y a las 14:56 el 07-11, fuera de la ventana de
+    entonces (9:10-12:00), así que con el NAS caído no habría salido número ni aviso. Por eso lo
+    lanza a su hora el hosting de IONOS (`ionos/lanzar-vigilante.sh`, con el cron del hosting a las
+    9:12, 10:12, 12:12 y 16:12): mira la web y, si falta el número, pide a GitHub la ejecución
+    (`workflow_dispatch` con `simular=false`) con un token de grano fino que solo puede lanzar
+    flujos de este repositorio; si GitHub no la acepta, avisa a Juanjo. Cada mañana a las 8:40
+    comprueba que el token sirve y avisa a 30, 14, 7, 3 y 1 días de que caduque. El horario de
+    GitHub se queda de respaldo, cada hora de las 7:23 a las 21:23 UTC, en un minuto poco
+    concurrido.
 - **Nada se pierde**: el número de reserva por fallo lo dice en la portada y en la página del día
   («Hoy no han podido salir las noticias de los grupos de ayer por un fallo de la redacción…»), y
   la noche siguiente `noche.sh` ve la marca y pide a `preparar.py` (`RECUPERA=1`) los mensajes de
@@ -58,16 +71,25 @@ Aprobado ese mismo día («sí a todo, hazlo»), junto con el resumen semanal d�
 
 - **Un número hecho por programa con los mensajes del día, sin IA**: rompería lo que promete el
   diario (cada dato comprobado en su fuente, las opiniones sin nombre).
-- **El vigilante en el hosting de IONOS**: la web y el código ya están en GitHub, y así no gasta
-  espacio del hosting. Funciona igual cuando falla la casa.
+- **El vigilante entero en el hosting de IONOS**: la web y el código ya están en GitHub, y así no
+  gasta espacio del hosting. Funciona igual cuando falla la casa. IONOS solo lo lanza: un script de
+  pocas líneas, sin copia de la redacción.
+- **Solo el horario de GitHub, con más pasadas**: sigue dependiendo de una cola que GitHub no
+  garantiza; se queda como respaldo del lanzador de IONOS.
+- **El vigilante solo hasta las 12:00**: un número a media tarde es mejor que ninguno, y después de
+  las 9:00 el NAS ya no intenta publicar, así que no pueden chocar.
 - **El vigilante antes de las 9:10**: llegaría antes los días de NAS caído, pero podría publicar a
   la vez que el NAS cuando este solo está reintentando.
 
 ## Consecuencias
 
 - El NAS escribe una pieza de reserva más al día mientras falten: unos 3 minutos de agentes.
-- Un día con el NAS caído, el número sale hacia las 9:10-9:40 (el horario de GitHub Actions se
-  retrasa a veces) y sin aviso en los grupos.
+- Un día con el NAS caído, el número sale hacia las 9:15, lanzado desde IONOS (si IONOS también
+  falla, cuando pase el horario de GitHub, que puede ser por la tarde), y sin aviso en los grupos.
+- El token de IONOS caduca y hay que renovarlo: el propio lanzador avisa antes. Se crea en GitHub
+  (Settings › Developer settings › Fine-grained tokens), con dueño `diarioiaeducativa`, solo el
+  repositorio `periodico` y solo «Actions: Read and write», y se deja en
+  `~/.diario-vigilante/token` del hosting.
 - La reserva vive en el repositorio público: su artículo se puede leer en GitHub antes de salir.
 
 ## Evidencia
@@ -85,7 +107,10 @@ Aprobado ese mismo día («sí a todo, hazlo»), junto con el resumen semanal d�
   a las 9:00 y se arregla a mano.
 - Si se agotan las reservas (tres fallos seguidos sin poder escribir otra), no hay número: avisa
   el NAS o el vigilante.
-- El vigilante necesita tres secretos en GitHub (la clave del sitio y el bot de avisos de Juanjo).
+- El vigilante necesita tres secretos en GitHub (la clave del sitio y el bot de avisos de Juanjo), y
+  el lanzador de IONOS, el token y una copia del `config.json` del bot de avisos, en una carpeta
+  que su `.htaccess` no deja servir (comprobado: HTTP 403).
+- Si IONOS y GitHub fallan a la vez el mismo día, no sale número.
 
 ## Validación
 
@@ -98,3 +123,7 @@ Aprobado ese mismo día («sí a todo, hazlo»), junto con el resumen semanal d�
   perdido un número): monta el número con la reserva, genera el sitio y el buscador, descarga el
   repositorio del sitio con su clave, `push --dry-run` sin error y el bot de avisos responde
   (`getMe`), sin subir ni enviar nada (ejecución 42084398936).
+- 08-11-2026: historial de ejecuciones del vigilante (`gh run list`): solo una pasada programada al
+  día, a las 15:57 y a las 14:56, que terminaron con «solo actúa de 9:10 a 12:00». En IONOS,
+  `lanzar-vigilante.sh --probar` con el número en la web y con `HOY_PRUEBA` (el camino de cuando
+  falta), y `--comprobar` sin token avisa.
