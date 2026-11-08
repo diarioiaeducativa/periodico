@@ -126,4 +126,8 @@ Aprobado ese mismo día («sí a todo, hazlo»), junto con el resumen semanal d�
 - 08-11-2026: historial de ejecuciones del vigilante (`gh run list`): solo una pasada programada al
   día, a las 15:57 y a las 14:56, que terminaron con «solo actúa de 9:10 a 12:00». En IONOS,
   `lanzar-vigilante.sh --probar` con el número en la web y con `HOY_PRUEBA` (el camino de cuando
-  falta), y `--comprobar` sin token avisa.
+  falta), y `--comprobar` sin token avisa. Con el token (caduca el 09-11-2027), `--comprobar` lo da
+  por válido, y dos lanzamientos desde IONOS por `workflow_dispatch` (HTTP 204): con `simular=true`
+  monta el número con la reserva sin subir nada (ejecución 42472300877), y con `simular=false` y
+  el número ya en la web termina en «ya está en la web», sin tocar nada. Cron del hosting
+  instalado ese día.
