@@ -25,6 +25,15 @@ Aprobado ese mismo día («sí a todo, hazlo»), junto con el resumen semanal d�
   (`2099-01-NN`) y guardados con su captura y su traducción. Cada mañana, con el número ya
   publicado, `reloj.sh` escribe una más si faltan (una por día) y la sube a GitHub. Lo que está en
   la reserva cuenta como ya contado en `repositorio.py`, para que no salga dos veces.
+- **También del fondo de la Biblioteca digital** (08-11-2026, Juanjo: «¿por qué no se añaden también de
+  la biblioteca digital?»; se recomendó alternarlas y lo aprobó). `reserva.py siguiente` elige la fuente
+  con menos piezas en la reserva (a la par, la biblioteca) y `reserva.sh` la escribe con
+  `BIBLIOTECA_MODO=fondo biblioteca.sh` (documentalista, revisor, ilustrador y traductores):
+  `biblioteca.py` propone tres documentos que entraron hace más de una semana y el diario no ha
+  contado, el documentalista elige uno **que siga vigente** (última versión, ni retirado ni superado,
+  lo que también comprueba el revisor) y lo escribe con el antetítulo «Del fondo de la biblioteca»; los
+  descartados se apuntan para no volver a proponerlos. Se guarda con sus dibujos en `reserva/CLAVE/`, y
+  usarlo los pasa a `biblioteca/` e `ilustraciones*/` con la fecha del número.
 - **Usar la reserva no necesita IA**: `reserva.py usar FECHA fallo|relleno` cambia la clave por la
   fecha en el JSON y en el nombre de la captura, la pasa a `repositorio/` y marca la edición con
   `"reserva"`. Si faltan los avisos de los grupos, los escribe sin IA con los titulares del número.

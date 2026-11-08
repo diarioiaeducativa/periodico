@@ -9,7 +9,8 @@
 # semanas (scripts/reserva.py y scripts/reserva_reportaje.py). Después escribe lo que falte, una cosa
 # cada vez:
 # - una pieza: un artículo del fondo del Repositorio de VCE con repositorio.sh (documentalista,
-#   revisor y traductores), con una clave provisional, guardado en reserva/;
+#   revisor y traductores) o del fondo de la Biblioteca digital con biblioteca.sh (documentalista,
+#   revisor, ilustrador y traductores), alternándolos, con una clave provisional, guardado en reserva/;
 # - el reportaje de reserva: con reportaje.sh y RESERVA=1 (jefe de reportajes, reportero,
 #   verificador, ilustrador y traductores), sobre un tema que no caduque, guardado en reserva/reportajes/.
 # Y lo sube a GitHub para que también pueda usarlo el vigilante de fuera de casa (.github/workflows/vigilante.yml).
@@ -28,9 +29,15 @@ codigo=0
 faltan=$(python3 scripts/reserva.py faltan)
 if [ "$faltan" -gt 0 ]; then
   CLAVE=$(python3 scripts/reserva.py clave)
-  log "reserva: faltan $faltan piezas; se escribe una con la clave $CLAVE"
-  REPOSITORIO_MODO=fondo bash scripts/repositorio.sh "$CLAVE" >> "$REG" 2>&1
-  python3 scripts/reserva.py guardar "$CLAVE" >> "$REG" 2>&1 || codigo=1
+  # Del repositorio o de la biblioteca, la que tenga menos en la reserva (se alternan)
+  FUENTE=$(python3 scripts/reserva.py siguiente)
+  log "reserva: faltan $faltan piezas; se escribe una del fondo de $FUENTE con la clave $CLAVE"
+  if [ "$FUENTE" = biblioteca ]; then
+    BIBLIOTECA_MODO=fondo bash scripts/biblioteca.sh "$CLAVE" >> "$REG" 2>&1
+  else
+    REPOSITORIO_MODO=fondo bash scripts/repositorio.sh "$CLAVE" >> "$REG" 2>&1
+  fi
+  python3 scripts/reserva.py guardar "$CLAVE" "$FUENTE" >> "$REG" 2>&1 || codigo=1
   cat "registro/$CLAVE.log" >> "$REG" 2>/dev/null; rm -f "registro/$CLAVE.log"
 else
   log "reserva: piezas completas"

@@ -3,6 +3,11 @@
 """Prepara la entrada del documentalista: los documentos nuevos de la Biblioteca digital (ADR 0006).
 
     biblioteca.py <carpeta de datos del bot> <carpeta de salida> <AAAA-MM-DD> [id ...]
+    biblioteca.py <carpeta de datos del bot> <carpeta de salida> <clave> fondo
+
+Con «fondo» prepara una pieza de reserva (ADR 0021): CANDIDATOS_FONDO documentos de la biblioteca
+que el diario no ha contado, para que el documentalista elija uno que siga vigente y escriba
+«Del fondo de la biblioteca».
 
 La Biblioteca digital es el tema «Biblioteca digital» de ChatGPT-IA-edu. Cada documento es un
 mensaje raíz del tema (no una respuesta) con un archivo o con una ficha de texto; la ficha puede
@@ -22,6 +27,8 @@ ALIAS = "ChatGPTedu"
 MINIMO = 300              # caracteres de texto para que una entrada sin archivo cuente como documento
 RAIZ = pathlib.Path(__file__).resolve().parent.parent
 DIAS_RECIENTES = 30       # piezas del diario con las que se compara cada documento nuevo
+CANDIDATOS_FONDO = 3      # documentos que se proponen para una pieza de reserva
+DIAS_FONDO = 7            # lo que entró en la última semana no es fondo: lo cuenta el día
 
 
 def entradas(base):
@@ -62,6 +69,24 @@ def articulos():
     return hechos
 
 
+def en_reserva():
+    """Los documentos que ya esperan en la reserva, o que ya se propusieron para ella y se descartaron
+    (también en la retirada): no se vuelven a proponer."""
+    import re
+    ids = set()
+    for f in list((RAIZ / "reserva").glob("*/biblioteca.json")) + list((RAIZ / "reserva" / "retiradas").glob("*/biblioteca.json")) \
+            + list((RAIZ / "biblioteca").glob("*.json")):
+        try:
+            d = json.loads(f.read_text())
+        except (OSError, ValueError):
+            continue
+        for p in d.get("piezas", []) + d.get("ya_contado", []):
+            ids.add((p.get("mensaje") or {}).get("id"))
+        for x in d.get("descartado", []):
+            ids.update(int(n) for n in re.findall(r"mensaje (\d+)", str(x)))
+    return ids
+
+
 def recientes(fecha):
     """Las piezas del diario de los últimos días, con sus fuentes, para reconocer un documento ya contado."""
     import datetime
@@ -79,14 +104,33 @@ def recientes(fecha):
 
 def main():
     base, out, fecha = pathlib.Path(sys.argv[1]), pathlib.Path(sys.argv[2]), sys.argv[3]
-    pedidos = {int(x) for x in sys.argv[4:]}
+    fondo = sys.argv[4:] == ["fondo"]
+    pedidos = set() if fondo else {int(x) for x in sys.argv[4:]}
     todas = entradas(base)
     hechos = articulos()
-    nuevas = [e for e in todas if (e["id"] in pedidos if pedidos else e["fecha"].startswith(fecha))]
-    if not pedidos:
+    if fondo:
+        import datetime
+        import random
+        limite = (datetime.date.today() - datetime.timedelta(days=DIAS_FONDO)).isoformat()
+        fuera = set(hechos) | en_reserva()
+        nuevas = [e for e in todas if e["id"] not in fuera and e["fecha"][:10] <= limite]
+        # Lo más reciente tiene más posibilidades de seguir vigente; un poco de azar para variar
+        nuevas.sort(key=lambda e: e["fecha"], reverse=True)
+        nuevas = nuevas[:CANDIDATOS_FONDO * 3]
+        random.Random(fecha).shuffle(nuevas)
+        nuevas = nuevas[:CANDIDATOS_FONDO]
+    else:
+        nuevas = [e for e in todas if (e["id"] in pedidos if pedidos else e["fecha"].startswith(fecha))]
+    if not pedidos and not fondo:
         nuevas = [e for e in nuevas if e["id"] not in hechos]
     out.mkdir(parents=True, exist_ok=True)
     partes = [f"# Biblioteca digital de ChatGPT-IA-edu · documentos para el {fecha}\n"]
+    if fondo:
+        partes.append("## Del fondo de la biblioteca: pieza de reserva\n\n"
+                      f"Estos {len(nuevas)} documentos son candidatos del fondo de la biblioteca: entraron hace tiempo y el "
+                      "diario no los ha contado. **Elige uno solo**, el que siga vigente (lee el apartado «Del fondo de la "
+                      "biblioteca» de encargos/biblioteca.md), y escribe su artículo. Los demás van a `descartado`, cada "
+                      "uno empezando por «mensaje <id>:» y con el motivo.\n")
     for e in nuevas:
         partes.append(f"\n## Documento del mensaje {e['id']}\n")
         partes.append(f"- Entró en la biblioteca: {e['fecha'][:10]}")

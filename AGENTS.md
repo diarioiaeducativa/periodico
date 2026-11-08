@@ -25,7 +25,7 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
 ## Lo que no se puede olvidar
 
 - **Siempre sale un número** (ADR 0021 y 0028): si fallan los dos intentos,
-  la reserva (`reserva/`, que `reserva.sh` repone cada mañana; las piezas
+  la reserva (`reserva/`, del fondo del repositorio y de la biblioteca, alternados; que `reserva.sh` repone cada mañana; las piezas
   caducan a los 60 días y los reportajes a los 28) y reintentos cada 10
   minutos hasta las 9:00. El vigilante de GitHub Actions
   (`.github/workflows/vigilante.yml`) lo comprueba desde las 9:10 hasta el final del día; lo lanza

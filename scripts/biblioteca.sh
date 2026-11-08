@@ -5,6 +5,7 @@
 # documentos anteriores, que salen con el número de FECHA:
 #
 #   scripts/biblioteca.sh AAAA-MM-DD [id del mensaje ...]
+#   BIBLIOTECA_MODO=fondo scripts/biblioteca.sh 2099-01-NN     una pieza de reserva (lo hace reserva.sh)
 #
 # Cuatro agentes, uno detrás de otro:
 #  12. documentalista (Sonnet) → lee cada documento en su fuente oficial: biblioteca-borrador/FECHA.json
@@ -46,6 +47,8 @@ contados() { python3 -c 'import json,sys; print(" ".join(str((y.get("mensaje") o
 . scripts/dibujos.sh   # revisar_dibujos (ADR 0005)
 . scripts/traducir.sh   # traducir y traducidos (ADR 0026)
 
+# BIBLIOTECA_MODO=fondo: una pieza de reserva del fondo de la biblioteca (ADR 0021), con clave provisional
+if [ "${BIBLIOTECA_MODO:-}" = fondo ]; then set -- fondo; fi
 python3 scripts/biblioteca.py "$DATOS" biblioteca-entrada "$FECHA" "$@" >> "$REG" 2>&1
 case $? in
   0) ;;
@@ -54,7 +57,7 @@ case $? in
 esac
 log "=== biblioteca: $(tail -1 "$REG" | sed 's/^biblioteca: //')"
 # A mano, con documentos concretos, se añaden a los artículos que ya tenga ese día (al final se juntan)
-if [ $# -gt 0 ] && [ -e "biblioteca/$FECHA.json" ]; then
+if [ $# -gt 0 ] && [ "$1" != fondo ] && [ -e "biblioteca/$FECHA.json" ]; then
   mv -f "biblioteca/$FECHA.json" "biblioteca-borrador/$FECHA-anterior.json"
   for c in $TRADUCCIONES; do
     [ -e "biblioteca-$c/$FECHA.json" ] && mv -f "biblioteca-$c/$FECHA.json" "biblioteca-borrador/$FECHA-anterior-$c.json"

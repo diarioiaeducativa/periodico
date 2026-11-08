@@ -31,6 +31,24 @@ contó, y esa pieza pasa a la sección Biblioteca con el enlace al documento. Qu
 tema no basta: tiene que ser el mismo documento (otro informe del mismo organismo, o una versión
 nueva, sí lleva artículo, que explica qué cambia).
 
+## Del fondo de la biblioteca (pieza de reserva)
+
+Cuando la entrada lo dice, no trae documentos de hoy sino candidatos del fondo: documentos que
+entraron hace tiempo y el diario no ha contado. El artículo se guarda en la reserva y sale el día
+que la redacción no pueda preparar el número (ADR 0021), así que tiene que valer igual dentro de
+semanas.
+
+- **Elige uno solo, y que siga vigente.** Antes de escribir, comprueba en internet que es la
+  última versión (si el organismo ha publicado una edición nueva, una actualización o un documento
+  que lo sustituye, no vale), que no se ha retirado y que lo que propone no ha quedado superado
+  (una guía sobre una herramienta que ya no existe, un informe cuyas cifras ya se han renovado).
+  Si ninguno vale, no hay artículo: los tres a `descartado`.
+- **Los demás candidatos, a `descartado`**, cada uno empezando por «mensaje <id>:» y con el motivo
+  («mensaje 21890: hay una versión de 2026 que lo sustituye»). Así no se vuelven a proponer.
+- **Antetítulo «Del fondo de la biblioteca»**, siempre. El artículo no lo presenta como novedad ni
+  dice «hoy» o «esta semana»: dice cuándo se publicó el documento y por qué sigue siendo útil.
+- Lo demás, como cualquier artículo de la biblioteca.
+
 ## Lo ya publicado
 
 Enlaza en el texto lo que el diario ya ha publicado y está claramente relacionado (la misma

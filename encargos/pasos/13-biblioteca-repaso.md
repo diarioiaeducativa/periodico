@@ -6,6 +6,7 @@ El documentalista ha dejado los artículos de la Biblioteca digital en bibliotec
 - Abre cada otra URL de `fuentes` y del cuerpo.
 - Comprueba que los enlaces a otros documentos de la biblioteca existen en la lista de la entrada y que la relación que se cuenta es cierta.
 - Que no se nombre a quien subió el documento (solo a sus autores, también si es Juan José de Haro), que el `mensaje` sea el del documento y que la extensión esté entre 400 y 700 palabras.
+- Si la entrada es del fondo de la biblioteca (pieza de reserva), comprueba también que el documento elegido sigue vigente, como dice el apartado «Del fondo de la biblioteca» del encargo: que es la última versión, que no se ha retirado ni ha quedado superado. Si no, pásalo a `descartado` con «mensaje <id>:» y el motivo.
 - Quita lo no confirmado: una frase, un párrafo o el artículo entero (pásalo a `descartado` con el motivo).
 - Cada entrada de `ya_contado`: comprueba, abriendo las fuentes de esa pieza (en la lista de la entrada), que trataba de verdad este mismo documento. Si no es así, pásala a `descartado` con el motivo «no estaba contado: necesita artículo», y no la dejes en `ya_contado`.
 
