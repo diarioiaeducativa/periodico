@@ -50,8 +50,11 @@ Aprobado ese mismo día («sí a todo, hazlo»), junto con el resumen semanal d�
     lanza a su hora el hosting de IONOS (`ionos/lanzar-vigilante.sh`, con el cron del hosting a las
     9:12, 10:12, 12:12 y 16:12): mira la web y, si falta el número, pide a GitHub la ejecución
     (`workflow_dispatch` con `simular=false`) con un token de grano fino que solo puede lanzar
-    flujos de este repositorio; si GitHub no la acepta, avisa a Juanjo. Cada mañana a las 8:40
-    comprueba que el token sirve y avisa a 30, 14, 7, 3 y 1 días de que caduque. El horario de
+    flujos de este repositorio; si GitHub no la acepta, avisa a Juanjo. El token no caduca (la
+    organización lo permite desde el 08-11-2026, por decisión de Juanjo: con un permiso tan pequeño,
+    la caducidad solo añade el riesgo de que el lanzador se pare por una renovación olvidada). Cada
+    mañana a las 8:40 comprueba que el token sirve, y si un día tuviera fecha, avisaría a 30, 14, 7,
+    3 y 1 días de que caduque. El horario de
     GitHub se queda de respaldo, cada hora de las 7:23 a las 21:23 UTC, en un minuto poco
     concurrido.
 - **Nada se pierde**: el número de reserva por fallo lo dice en la portada y en la página del día
@@ -86,10 +89,10 @@ Aprobado ese mismo día («sí a todo, hazlo»), junto con el resumen semanal d�
 - El NAS escribe una pieza de reserva más al día mientras falten: unos 3 minutos de agentes.
 - Un día con el NAS caído, el número sale hacia las 9:15, lanzado desde IONOS (si IONOS también
   falla, cuando pase el horario de GitHub, que puede ser por la tarde), y sin aviso en los grupos.
-- El token de IONOS caduca y hay que renovarlo: el propio lanzador avisa antes. Se crea en GitHub
-  (Settings › Developer settings › Fine-grained tokens), con dueño `diarioiaeducativa`, solo el
-  repositorio `periodico` y solo «Actions: Read and write», y se deja en
-  `~/.diario-vigilante/token` del hosting.
+- El token de IONOS no caduca. Si hay que rehacerlo, se crea en GitHub (Settings › Developer
+  settings › Fine-grained tokens), con dueño `diarioiaeducativa`, solo el repositorio `periodico`,
+  solo «Actions: Read and write» y sin caducidad, y se deja en `~/.diario-vigilante/token` del
+  hosting.
 - La reserva vive en el repositorio público: su artículo se puede leer en GitHub antes de salir.
 
 ## Evidencia
@@ -126,8 +129,9 @@ Aprobado ese mismo día («sí a todo, hazlo»), junto con el resumen semanal d�
 - 08-11-2026: historial de ejecuciones del vigilante (`gh run list`): solo una pasada programada al
   día, a las 15:57 y a las 14:56, que terminaron con «solo actúa de 9:10 a 12:00». En IONOS,
   `lanzar-vigilante.sh --probar` con el número en la web y con `HOY_PRUEBA` (el camino de cuando
-  falta), y `--comprobar` sin token avisa. Con el token (caduca el 09-11-2027), `--comprobar` lo da
-  por válido, y dos lanzamientos desde IONOS por `workflow_dispatch` (HTTP 204): con `simular=true`
+  falta), y `--comprobar` sin token avisa. Con el token, `--comprobar` lo da por válido (primero con
+  caducidad de un año y después, regenerado, «sin caducidad»), y dos lanzamientos desde IONOS por `workflow_dispatch` (HTTP 204): con `simular=true`
   monta el número con la reserva sin subir nada (ejecución 42472300877), y con `simular=false` y
-  el número ya en la web termina en «ya está en la web», sin tocar nada. Cron del hosting
+  el número ya en la web termina en «ya está en la web», sin tocar nada (también con el token
+  regenerado). Cron del hosting
   instalado ese día.
