@@ -1,0 +1,70 @@
+# 33. Contador de visitas sin datos de quien lee
+
+Fecha: 2026-11-08 · Estado: aceptado
+
+## Contexto
+
+El diario no tenía ninguna forma de saber cuánta gente lo lee: GitHub Pages no da visitas y sus
+estadísticas de tráfico solo cuentan las del repositorio. Raül Torres propuso un contador «aunque sea
+interno» (08-11-2026), y Juanjo lo aceptó con dos condiciones: que no recoja datos de ningún tipo y que
+sirva para ver qué páginas se leen más y cuántas visitas recibe el diario, no cuántas personas distintas.
+Él mismo propuso cómo: que el navegador lleve la cuenta de lo que ha visto y que una visita vuelva a
+contar tras un rato sin actividad. Quiso además las cifras al momento, en una página privada para los
+dos autores.
+
+Contar personas distintas exige reconocerlas (una marca guardada o la IP), y eso se descartó. Para lo
+que sí se cuenta, la guía de la AEPD [*Uso de cookies para herramientas de medición de
+audiencia*](https://www.aepd.es/guias/guia-cookies-analiticas-externas.pdf) (enero de 2024) exime de
+consentimiento la medición que hace el propio editor, solo para estadísticas anónimas, sin ceder datos
+a terceros, página por página y agregada, informando de ello, con una vida máxima de 13 meses para lo
+guardado en el navegador y de 25 meses para los datos.
+
+## Decisión
+
+- **El navegador lleva la cuenta** (`CONTADOR` en `generar.py`, en la cabecera de todas las páginas
+  salvo la 404). Guarda en `localStorage` (`diario.visita`) la hora de la última página abierta y la
+  lista de las ya contadas. Si han pasado más de 30 minutos sin abrir ninguna, empieza una visita
+  nueva y la lista se vacía. Cada página que no está en la lista suma una apertura. Las pestañas
+  comparten la cuenta. Juanjo propuso entre media hora y una hora; se tomaron 30 minutos, la medida
+  habitual de una sesión, para que las cifras se puedan comparar con otras webs.
+- **Al servidor solo llega la suma**: con `navigator.sendBeacon`, la ruta de la página, si empieza una
+  visita y el título, para mostrarlo en el panel. Nada de IP, navegador ni identificador.
+- **No se cuentan** los robots (por el agente de usuario, en el navegador y en el servidor), los
+  navegadores automatizados (`navigator.webdriver`, también las pruebas con Playwright), la portada que
+  salta a otro idioma (`window.SALTO`) ni los navegadores marcados con `?nocontar=1` (`?nocontar=0`
+  lo deshace), para que los autores no cuenten sus propias visitas. El widget para otras webs
+  (`insertar.html`, ADR 0032) no lleva contador: se ve dentro de webs ajenas.
+- **El servidor es el hosting de IONOS** (`https://bilateria.org/app/diario-ia-educativa/`, código en
+  `ionos/estadisticas/`): siempre encendido y sin abrir la red de casa a los lectores. `contar.php`
+  solo acepta peticiones cuyo origen es el diario, y valida la ruta. Guarda un archivo por día UTC
+  (`data/AAAA-MM-DD.json`) con las sumas por hora: visitas y aperturas de cada página. Por hora y en
+  UTC para que el panel reparta los días en hora de España sin que el cambio de hora los descuadre. El
+  archivo se lee y se escribe dentro de un mismo bloqueo, para que dos visitas a la vez no se pisen.
+  Al empezar cada día se borran los archivos de más de 25 meses. `data/` no se puede leer desde la web.
+- **El panel** (`index.php`) pide usuario y contraseña, uno para cada autor (`config.php`, solo en el
+  hosting, con `password_hash`), para poder quitar el acceso a uno sin cambiar el del otro. La sesión
+  es una cookie firmada de 90 días, solo para ellos. Muestra las visitas de hoy, de 7 y de 30 días; la
+  gráfica de visitas por día de los últimos 30 (desde el primer día con datos); y las páginas más
+  abiertas y el reparto por idioma en el periodo elegido. Se pone al día cada minuto mientras está a
+  la vista.
+- **Se dice en «La redacción»**, en los cinco idiomas: qué se cuenta, que no hay cookies ni datos de
+  quien lee, cuánto se guarda y quién lo ve.
+
+## Consecuencias
+
+- Una persona que lee el diario por la mañana y vuelve por la tarde son dos visitas; quien borra los
+  datos del navegador o usa una ventana privada vuelve a contar. Son visitas, no personas.
+- Quien bloquea el `localStorage` no se cuenta.
+- Las cifras empiezan el 08-11-2026; no hay datos anteriores.
+- Al conectarse al contador, el navegador del lector se conecta al hosting, que ve su IP como la ve
+  GitHub Pages al servir el diario; el contador no la guarda.
+
+## Validación
+
+- Lógica del navegador probada en Chromium, Firefox y WebKit, en escritorio y en móvil: primera página
+  (visita y apertura), segunda página (solo apertura), recarga (nada), vuelta tras 31 minutos (visita
+  nueva), `?nocontar=1` y `?nocontar=0`, y portada que salta (nada).
+- Envío real desde los tres navegadores con origen `diarioiaeducativa.github.io`: 204 y suma guardada.
+  Sin el origen del diario no se guarda nada; `config.php` sale vacío y `data/` da 403.
+- Panel comprobado con contraseña y sin ella (401), en escritorio y en móvil, con tema claro y oscuro.
+  Los datos de prueba se borraron.

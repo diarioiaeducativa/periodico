@@ -157,6 +157,7 @@ IDIOMAS = {
                 ("El Repositorio de recursos", "El {repositorio} de Vibe Coding Educativo reúne las aplicaciones y recursos que crean y comparten con licencia abierta los docentes de esa comunidad. Los días con menos de cuatro piezas, el documentalista escribe sobre los que han entrado y el diario aún no ha contado, y el número del sábado repasa los de la semana; si no hay ninguno nuevo, rescata uno anterior. Un programa abre cada recurso y guarda una captura de lo que se ve; el documentalista lo describe a partir de la captura y de su página, y el revisor lo vuelve a abrir. Salen en la sección {seccion_vc}, con el nombre de quien lo ha hecho y su licencia."),
                 ("Las personas", "La idea del diario es de {raul}, administrador de {edumedia}. La redacción la diseñó y la supervisa {juanjo}."),
                 ("El código", "Los programas que preparan y montan el diario y el encargo de cada agente son públicos, en {codigo}, con licencia AGPL v3, y cada decisión está explicada en sus registros de decisiones (ADR). Los mensajes de los grupos no están en él."),
+                ("Las visitas", "El diario cuenta cuántas visitas recibe y cuántas veces se abre cada página, para saber si llega a quien lo lee. No usa cookies ni guarda nada de quien lo lee: su navegador recuerda qué páginas ya ha contado, para no contarlas dos veces en la misma visita, y al servidor de los autores solo le llega la suma. Las cifras se guardan por horas durante 25 meses como máximo, y solo las ven las dos personas que hacen el diario."),
                 ("Las comunidades", "{chatgpt}, sobre inteligencia artificial en educación; {vce}, de docentes que programan sus propias aplicaciones con IA, y {edumedia}, sobre IA generativa para crear audio, vídeo e imagen. Las tres son abiertas: cada pieza enlaza a la conversación donde nació, que se puede leer sin entrar."),
                 ("Si participas en los grupos", "Las opiniones no se atribuyen a nadie: solo se nombra a la persona que ha publicado un recurso propio. Si aparece algo tuyo y prefieres que no salga, o ves un error, díselo a las personas que administran tu grupo y se retirará o se corregirá."),
             ],
@@ -273,6 +274,7 @@ IDIOMAS = {
                 ("El Repositori de recursos", "El {repositorio} de Vibe Coding Educativo reuneix les aplicacions i els recursos que creen i comparteixen amb llicència oberta els docents d'aquesta comunitat. Els dies amb menys de quatre peces, el documentalista escriu sobre els que hi han entrat i que el diari encara no ha explicat, i el número del dissabte repassa els de la setmana; si no n'hi ha cap de nou, en rescata un d'anterior. Un programa obre cada recurs i en guarda una captura del que es veu; el documentalista el descriu a partir de la captura i de la seva pàgina, i el revisor el torna a obrir. Surten a la secció {seccion_vc}, amb el nom de qui l'ha fet i la seva llicència."),
                 ("Les persones", "La idea del diari és de {raul}, administrador d'{edumedia}. La redacció la va dissenyar i la supervisa {juanjo}."),
                 ("El codi", "Els programes que preparen i munten el diari i l'encàrrec de cada agent són públics, al {codigo}, amb llicència AGPL v3, i cada decisió s'explica als seus registres de decisions (ADR). Els missatges dels grups no hi són."),
+                ("Les visites", "El diari compta quantes visites rep i quantes vegades s'obre cada pàgina, per saber si arriba a qui el llegeix. No fa servir galetes ni desa res de qui el llegeix: el seu navegador recorda quines pàgines ja ha comptat, per no comptar-les dues vegades en la mateixa visita, i al servidor dels autors només hi arriba la suma. Les xifres es desen per hores durant 25 mesos com a màxim, i només les veuen les dues persones que fan el diari."),
                 ("Les comunitats", "{chatgpt}, sobre intel·ligència artificial en educació; {vce}, de docents que programen les seves pròpies aplicacions amb IA, i {edumedia}, sobre IA generativa per crear àudio, vídeo i imatge. Totes tres són obertes: cada peça enllaça amb la conversa on va néixer, que es pot llegir sense entrar-hi."),
                 ("Si participes als grups", "Les opinions no s'atribueixen a ningú: només s'anomena la persona que ha publicat un recurs propi. Si hi apareix alguna cosa teva i prefereixes que no surti, o hi veus un error, digues-ho a les persones que administren el teu grup i es retirarà o es corregirà."),
             ],
@@ -542,6 +544,23 @@ def imagen_og(ruta, codigo):
     return f"{BASE}og-{codigo if (RAIZ / 'estaticos' / f'og-{codigo}.png').exists() else 'es'}.png"
 
 
+# Contador de visitas (ADR 0033): el navegador recuerda qué páginas ha contado en la visita en curso, que
+# acaba tras 30 minutos sin abrir ninguna; al servidor (bilateria.org) solo le llega la suma: la página,
+# si empieza una visita y el título. Sin cookies ni datos de quien lee. No cuenta los robots, los
+# navegadores automatizados, la portada que salta a otro idioma ni los navegadores marcados con
+# ?nocontar=1 (?nocontar=0 lo deshace). El widget para otras webs (insertar.html) no lleva contador.
+CONTADOR = """<script>try{(function(){
+var q=new URLSearchParams(location.search),k='diario.nocontar';
+if(q.get('nocontar')==='1')localStorage.setItem(k,'1');else if(q.get('nocontar')==='0')localStorage.removeItem(k);
+if(window.SALTO||navigator.webdriver||localStorage.getItem(k)||/bot|crawl|spider|slurp|preview|lighthouse|headless/i.test(navigator.userAgent))return;
+var v=JSON.parse(localStorage.getItem('diario.visita')||'null'),ahora=Date.now(),p=location.pathname,nueva=!v||!(ahora-v.t<18e5);
+if(nueva)v={t:ahora,p:[]};
+var cuenta=v.p.indexOf(p)<0;v.t=ahora;if(cuenta)v.p.push(p);
+localStorage.setItem('diario.visita',JSON.stringify(v));
+if(nueva||cuenta)navigator.sendBeacon('https://bilateria.org/app/diario-ia-educativa/contar.php',new URLSearchParams({p:cuenta?p:'',n:nueva?'1':'0',t:document.title}));
+})();}catch(_){}</script>"""
+
+
 def cabeza(titulo, prof, descripcion, ruta, portada=False):
     codigo = L["codigo"]
     r = recursos(prof)
@@ -556,7 +575,7 @@ def cabeza(titulo, prof, descripcion, ruta, portada=False):
                     "d=g||(bot?null:n);")
         else:   # un enlace a otra edición se respeta: solo cambia si se eligió otro idioma
             cond = "var d=localStorage.getItem('sala.idioma');"
-        salto = f"<script>try{{var D={{{destinos}}};{cond}if(d&&D[d])location.replace(D[d]);}}catch(_){{}}</script>"
+        salto = f"<script>try{{var D={{{destinos}}};{cond}if(d&&D[d]){{window.SALTO=1;location.replace(D[d]);}}}}catch(_){{}}</script>"
     alternas = "".join(f'<link rel="alternate" hreflang="{c}" href="{e(BASE + d["carpeta"] + ruta)}">\n'
                        for c, d in IDIOMAS.items() if ruta != "404.html")
     if ruta != "404.html":
@@ -580,6 +599,7 @@ def cabeza(titulo, prof, descripcion, ruta, portada=False):
 <meta name="twitter:card" content="summary_large_image">
 <script>try{{var t=localStorage.getItem('sala.tema');if(t)document.documentElement.dataset.theme=t;}}catch(_){{}}</script>
 {salto}
+{CONTADOR if ruta != "404.html" else ""}
 <link rel="icon" href="{r}favicon.svg" type="image/svg+xml">
 <link rel="icon" href="{r}favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="{r}apple-touch-icon.png">

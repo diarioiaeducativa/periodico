@@ -24,3 +24,6 @@ instagram/
 indice/
 encargos/pasos/_*.md
 dominical/
+# Contador de visitas (ADR 0033): las contraseñas y los datos, solo en el hosting
+ionos/estadisticas/config.php
+ionos/estadisticas/data/*.json

@@ -80,6 +80,10 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
   iframe), `noticias*.json`, `datos/AAAA-MM.json`, `feed-*.xml` e `ilustraciones/*.svg` en cada idioma,
   y el botón de cada pieza con su `<template id="republicar">`. Los nombres de archivos y parámetros no
   se cambian: hay widgets pegados en otras webs.
+- **Contador de visitas** (ADR 0033): `CONTADOR` en `generar.py` y `ionos/estadisticas/`, desplegado
+  a mano en `app/diario-ia-educativa/` del hosting (`config.php`, con las contraseñas, solo allí; no
+  sobrescribirlo). Panel privado en <https://bilateria.org/app/diario-ia-educativa/>. Para probar sin
+  contar, Playwright ya no cuenta; a mano, `?nocontar=1`.
 - **Cinco idiomas** (ADR 0026): `/ca/`, `/gl/`, `/eu/` y `/en/`;
   traducción nocturna (`scripts/traducir.sh`) y de un día ya publicado
   (`scripts/traducir-dia.sh FECHA [idiomas]`, en una copia fuera de `/home`).
