@@ -54,9 +54,10 @@ desde el lunes 9 de noviembre de 2026 ya no saliera el boletín de siempre.
 
 ## Consecuencias
 
-- El boletín deja de redactar el resumen escrito, de llenar las hojas de cálculo y de publicar en redes;
-  sigue exportando la semana, generando y revisando el pódcast y el vídeo de los tres grupos y subiéndolos a
-  YouTube e Internet Archive (ADR del repositorio `boletin-semanal`).
+- El boletín deja de redactar el resumen escrito y de llenar las hojas de cálculo; sigue exportando la
+  semana, generando y revisando el pódcast y el vídeo de los tres grupos, subiéndolos a YouTube e Internet
+  Archive y avisando los lunes en Telegram y, con el vídeo de cada grupo y el enlace a su semana, en X,
+  Bluesky y LinkedIn (ADR 0009 a 0011 del repositorio `boletin-semanal`).
 - El contenedor del diario necesita reiniciarse para leer el bloque nuevo de `nas/reloj.sh`.
 
 ## Validación
