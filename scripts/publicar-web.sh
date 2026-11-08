@@ -39,7 +39,7 @@ if ! git diff --cached --quiet; then
   git commit -qm "Pódcast y vídeo de la semana" || log "AVISO: no se pudo preparar el commit de la redacción"
 fi
 if [ -n "$(git rev-list '@{u}..HEAD' 2>/dev/null)" ]; then
-  git pull -q --rebase && git notes --ref=ia add -f -m "$NOTA" HEAD && git push -q && git push -q origin refs/notes/ia ||
+  git pull -q --rebase --autostash && git notes --ref=ia add -f -m "$NOTA" HEAD && git push -q && git push -q origin refs/notes/ia ||
     log "AVISO: no se pudo subir la redacción a GitHub"
 fi
 log "web publicada con el pódcast y el vídeo de la semana"
