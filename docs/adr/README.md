@@ -33,5 +33,6 @@
 | [0029](0029-las-comunidades-en-tres-circulos.md) | Las comunidades, en tres círculos |
 | [0030](0030-comentarios-con-giscus.md) | Comentarios con giscus, en las Discussions de GitHub |
 | [0031](0031-las-fuentes-enlazadas-donde-se-nombran.md) | Las fuentes, enlazadas donde se nombran |
+| [0032](0032-para-tu-web.md) | Para tu web: widget, canales RSS y piezas republicables |
 
 Plantilla: [0000-plantilla.md](0000-plantilla.md). Para crear uno: `nuevo-adr "Título"`.

@@ -281,6 +281,9 @@ IDIOMAS = {
 }
 from idiomas_web import GL, EU, EN   # noqa: E402
 IDIOMAS.update({"gl": GL, "eu": EU, "en": EN})
+from textos_para_tu_web import TEXTOS as TEXTOS_PTW   # noqa: E402  (ADR 0032)
+for _c, _t in TEXTOS_PTW.items():
+    IDIOMAS[_c].update(_t)
 L = IDIOMAS["es"]   # idioma de la pasada en curso
 
 # Iconos de Lucide (ISC): wrench, code, clapperboard, messages-square, landmark, library; zap (breves), file-text (reportaje), pen-tool (viñeta), circle-play (vídeo)
@@ -729,8 +732,41 @@ SCRIPT_TEMA = """<script>
     addEventListener('appinstalled',function(){inst.hidden=true;});
     if(ios&&(/iP(hone|ad|od)/.test(navigator.userAgent)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1))) ios.hidden=false;
   }
+  // «Para tu web» (ADR 0032): el botón despliega sus opciones y se cierra al pulsar fuera o con Escape
+  var bl=document.querySelector('.llevar-boton'), ml=document.getElementById('menu-llevar');
+  function cerrarLlevar(){ if(ml&&!ml.hidden){ml.hidden=true; bl.setAttribute('aria-expanded','false');} }
+  if(bl&&ml){
+    bl.addEventListener('click',function(ev){ev.stopPropagation(); var abre=ml.hidden; ml.hidden=!abre; bl.setAttribute('aria-expanded',abre?'true':'false'); if(abre) ml.querySelector('.llevar-op').focus();});
+    document.addEventListener('click',function(ev){if(!ml.hidden&&!ml.contains(ev.target)&&!bl.contains(ev.target))cerrarLlevar();});
+    document.addEventListener('keydown',function(ev){if(ev.key==='Escape'&&!ml.hidden){cerrarLlevar();bl.focus();}});
+  }
+  // Copiar sin pedir nada a mano: el portapapeles del navegador o, si no lo deja (sin HTTPS), un campo
+  // oculto. La pieza entera se copia con formato, para el editor de un blog, y como código, para un bloque HTML.
+  function copiar(texto, html){
+    if(navigator.clipboard&&window.isSecureContext){
+      if(html&&window.ClipboardItem&&navigator.clipboard.write)
+        return navigator.clipboard.write([new ClipboardItem({'text/html':new Blob([html],{type:'text/html'}),'text/plain':new Blob([texto],{type:'text/plain'})})])
+          .catch(function(){return navigator.clipboard.writeText(texto);});
+      return navigator.clipboard.writeText(texto);
+    }
+    return new Promise(function(ok,mal){
+      var t=document.createElement('textarea'); t.value=texto; t.setAttribute('readonly',''); t.style.position='fixed'; t.style.top='0'; t.style.opacity='0';
+      document.body.append(t); t.select(); try{document.execCommand('copy')?ok():mal();}catch(x){mal(x);} t.remove();
+    });
+  }
+  document.querySelectorAll('[data-copiar],[data-plantilla],[data-desde]').forEach(function(b){
+    b.addEventListener('click',function(){
+      var texto=b.dataset.copiar, html=null, r=b.querySelector('span'), antes=r.textContent;
+      if(b.dataset.plantilla){html=document.getElementById(b.dataset.plantilla).innerHTML.trim(); texto=html;}
+      if(b.dataset.desde) texto=document.getElementById(b.dataset.desde).value;
+      copiar(texto,html).then(function(){
+        r.textContent=b.dataset.hecho; b.classList.add('hecho');
+        setTimeout(function(){r.textContent=antes; b.classList.remove('hecho'); if(b.closest('.llevar-menu')) cerrarLlevar();},1600);
+      },function(){});
+    });
+  });
   // Compartir: el menú del dispositivo; si no lo hay, se copia el enlace
-  document.querySelectorAll('.compartir').forEach(function(b){
+  document.querySelectorAll('.compartir:not(.copiar):not(.llevar-boton)').forEach(function(b){
     b.addEventListener('click',function(){
       var url=b.dataset.url||location.href, datos={title:b.dataset.titulo||document.title,url:url}, r=b.querySelector('span');
       if(navigator.share){navigator.share(datos).catch(function(){});return;}
@@ -768,7 +804,7 @@ def pie(prof, eds, actual):
     <p>{L["unete_txt"]}</p>
     <ul class="pie-grupos">{grupos}</ul>
     {pie_comunidades(prof)}
-    <p class="pie-rss"><a href="{prof}redaccion.html">{L["quees"]}</a> · <a href="{prof}videos.html">{L["videos"]}</a> · {enlace(INSTAGRAM, L["instagram"])} · <a href="{prof}feed.xml">{L["rss"]}</a><span class="instalar-app" hidden> · <button type="button" class="instalar" title="{e(L["instalar_titulo"])}">{L["instalar"]}</button></span></p>
+    <p class="pie-rss"><a href="{prof}redaccion.html">{L["quees"]}</a> · <a href="{prof}videos.html">{L["videos"]}</a> · {enlace(INSTAGRAM, L["instagram"])} · <a href="{prof}para-tu-web.html">{L["ptw"]}</a> · <a href="{prof}feed.xml">{L["rss"]}</a><span class="instalar-app" hidden> · <button type="button" class="instalar" title="{e(L["instalar_titulo"])}">{L["instalar"]}</button></span></p>
     <p class="instalar-ios" hidden>{L["instalar_ios"]}</p>
   </div>
   <nav class="pie-archivo" aria-label="{L["archivo"]}">
@@ -1114,8 +1150,7 @@ def articulo(prof, ruta, d, p, eds):
     fuentes = "".join(f'<li>{enlace(f["url"], e(f["titulo"]))}</li>' for f in p.get("fuentes", []))
     comprobado = (f'<section class="comprobado" data-pagefind-ignore aria-labelledby="comp-{e(p["id"])}"><h2 id="comp-{e(p["id"])}">'
                   f'{L["comprobado"]}</h2><ul>{fuentes}</ul></section>') if fuentes else ""
-    compartir = (f'<p class="acciones" data-pagefind-ignore><button type="button" class="compartir" data-copiado="{e(L["copiado"])}">'
-                 f'{COMPARTIR}<span>{L["compartir"]}</span></button></p>')
+    compartir, plantilla = acciones(d["fecha"], p, ruta, d, eds, llevar=bool(p.get("seccion")))
     doc = p.get("documento") or {}
     ficha_doc = ""
     if doc:
@@ -1147,6 +1182,7 @@ def articulo(prof, ruta, d, p, eds):
     {compartir}
     {comprobado}
   </article>
+  {plantilla}
   {otras}
   {mas_piezas(prof, eds, p)}
   {comentarios(ruta)}
@@ -1234,8 +1270,7 @@ def articulo_reportaje(prof, ruta, d, r, eds):
         items = "".join(f'<li><span class="fecha-pieza">{fecha_corta(publicacion(x["fecha"]))}</span>'
                         f'<a href="{href(prof, x)}">{e(x["titular"])}</a></li>' for x in rel)
         relacionadas = f'<aside class="mas sec-reportaje" aria-labelledby="t-rel"><h2 id="t-rel">{L["en_el_diario"]}</h2><ul>{items}</ul></aside>'
-    compartir = (f'<p class="acciones" data-pagefind-ignore><button type="button" class="compartir" data-copiado="{e(L["copiado"])}">'
-                 f'{COMPARTIR}<span>{L["compartir"]}</span></button></p>')
+    compartir, plantilla = acciones(d["fecha"], r, ruta, d, eds, reportaje=True)
     return cabeza(f'{r["titular"]} | {L["titulo"]}', prof, r.get("entradilla", ""), ruta) + f"""<body class="pag-articulo">
 {cabecera(prof, ruta, d["fecha"], d["numero"], False, h1=False)}
 <main class="articulo reportaje">
@@ -1250,6 +1285,7 @@ def articulo_reportaje(prof, ruta, d, r, eds):
     {compartir}
     {comprobado}
   </article>
+  {plantilla}
   {relacionadas}
   {comentarios(ruta)}
   <p class="volver"><a href="{prof}">{L["volver"]}</a></p>
@@ -1725,7 +1761,7 @@ def sitemap(eds):
     versiones en los otros idiomas (xhtml:link), como pide Google para un sitio multilingüe (ADR 0026)."""
     rutas = []
     ultima = publicacion(eds[-1]["fecha"])
-    for ruta in ["", "redaccion.html", "vineta.html", "reportajes.html", "breves.html", "archivo.html", "videos.html"] + [f"{c}.html" for c in ORDEN_SECCIONES]:
+    for ruta in ["", "redaccion.html", "vineta.html", "reportajes.html", "breves.html", "archivo.html", "videos.html", "para-tu-web.html"] + [f"{c}.html" for c in ORDEN_SECCIONES]:
         rutas.append((ruta, ultima))
     for d in eds:
         sale = publicacion(d["fecha"])
@@ -1867,47 +1903,498 @@ def pagina_vinetas(eds):
 </html>"""
 
 
-def rss(eds):
-    """RSS 2.0 con las piezas, de la más reciente a la más antigua. Fechas en UTC."""
+# ---------------------------------------------------------------------------------------------------
+# Para tu web (ADR 0032): canales RSS, datos abiertos, el widget que se incrusta en otra web, su
+# configurador y el botón de cada pieza, que copia su tarjeta o la pieza entera para republicarla.
+# ---------------------------------------------------------------------------------------------------
+
+LICENCIA_URL = "https://creativecommons.org/licenses/by-sa/4.0/"
+ICONO_LLEVAR = '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg>'   # code-xml
+ICONO_LISTA = '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h.01"/><path d="M3 12h.01"/><path d="M3 19h.01"/><path d="M8 5h13"/><path d="M8 12h13"/><path d="M8 19h13"/></svg>'   # list
+ICONO_TARJETAS = '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg>'   # layout-grid
+ICONO_RSS = '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg>'   # rss
+ICONO_COPIAR = '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>'   # copy
+TOPE_FEED = 100        # piezas del canal general; los de sección y grupo, TOPE_FILTRO
+TOPE_FILTRO = 50
+TOPE_NOTICIAS = 50     # piezas de cada noticias*.json que lee el widget (enseña 20 como mucho)
+ALTO_TARJETA = 500     # alto del iframe de la tarjeta de una pieza; el dibujo se encoge si falta sitio
+# Filtros del widget y de los canales: las secciones, el reportaje y los breves; y los tres grupos
+CLAVES_FILTRO = ORDEN_SECCIONES + ["reportaje", "breves"]
+
+# Los colores del tema claro de cada sección (comun.css), para el dibujo suelto que se ve fuera del
+# diario: con <img> no le llegan las variables de la página. Dentro del widget, mandan las variables.
+COLOR_SUELTO = {
+    "herramientas": ("#1c3faa", "#e6ebf8", "#c9d4f2"), "debates": ("#b04f0c", "#fbeadb", "#f3cdaa"),
+    "vibecoding": ("#1d7547", "#e2f1e8", "#bfe0cc"), "novedades": ("#6a3d9e", "#eee6f7", "#d8c6ee"),
+    "multimedia": ("#a8206f", "#fae4f0", "#f2bedb"), "reportaje": ("#1c3faa", "#eef1fa", "#dfe5f7"),
+    "biblioteca": ("#0b6e79", "#e0f2f3", "#b7e1e5"),
+}
+SUELTO_BASE = {"--ilu-tinta": "#16181d", "--ilu-rojo": "#c8202c", "--c-herramientas": "#1c3faa",
+               "--c-comunidad": "#1d7547", "--c-multimedia": "#a8206f"}
+
+
+def estilo_suelto(seccion):
+    """Las reglas de los dibujos de comun.css (.ilu .t, .ilu .fa…), para el <style> del dibujo suelto:
+    con la clase propia del dibujo y cada variable con el color claro de su sección como reserva."""
+    c, tinte, medio = COLOR_SUELTO.get(seccion, ("#1c3faa", "#f1f2f4", "#dfe5f7"))
+    reserva = dict(SUELTO_BASE, **{"--ilu-azul": c, "--ilu-relleno": medio})
+    reglas = re.findall(r"^\.ilu ((?:g)?\.[\w-]+) \{([^}]*)\}", (RAIZ / "estaticos" / "comun.css").read_text(), re.M)
+    css = "".join(f".ilu-d {sel}{{{cuerpo.strip()}}}" for sel, cuerpo in reglas)
+    css = re.sub(r"var\((--[\w-]+)\)", lambda m: f"var({m.group(1)},{reserva[m.group(1)]})" if m.group(1) in reserva else m.group(0), css)
+    return f"svg.ilu-d{{background:var(--sec-tinte,{tinte})}}" + css
+
+
+def dibujo_suelto(fecha, x, seccion):
+    """El dibujo de una pieza como archivo propio (ilustraciones/AAAA-MM-DD-id.svg en cada idioma), con
+    sus colores dentro: lo usan el RSS, la pieza republicada y el widget."""
+    f = con_traduccion("ilustraciones", f"{fecha}-{x['id']}.svg")
+    if not f.exists():
+        return
+    svg = re.sub(r"<\?xml.*?\?>", "", f.read_text()).strip()
+    svg = re.sub(r"<svg\b", '<svg class="ilu-d"', svg, count=1)
+    svg = re.sub(r"(<svg\b[^>]*>)", lambda m: m.group(1) + f"<style>{estilo_suelto(seccion)}</style>", svg, count=1)
+    escribir(SITIO / L["carpeta"] / "ilustraciones" / f.name, svg + "\n")
+
+
+def imagen_pieza(fecha, x):
+    """La dirección pública del dibujo de una pieza (o de la captura de su recurso) y su descripción."""
+    if con_traduccion("ilustraciones", f"{fecha}-{x['id']}.svg").exists():
+        return f'{BASE}{L["carpeta"]}ilustraciones/{fecha}-{x["id"]}.svg', x.get("ilustracion_alt") or x["titular"]
+    r = next((r for r in x.get("recursos", []) if r.get("captura")), None)
+    if r:
+        return f'{BASE}capturas/{pathlib.Path(r["captura"]).name}', r.get("captura_alt") or r.get("titulo", "")
+    return None, None
+
+
+def fecha_con_anyo(iso):
+    """«8 de noviembre de 2026», sin el día de la semana, en el idioma de la página."""
+    d = datetime.date.fromisoformat(iso)
+    mes = L["meses"][d.month - 1]
+    if L["codigo"] == "en":
+        return f"{d.day} {mes} {d.year}"
+    if L["codigo"] == "eu":
+        return f"{d.year}ko {mes}ren {d.day}a"
+    return f"{d.day} {de_mes(mes)} de {d.year}"
+
+
+def grupo_de(x):
+    g = (x.get("mensaje") or {}).get("grupo") or x.get("grupo")
+    return g if g in GRUPOS else None
+
+
+def ficha_datos(d, x, tipo):
+    """Una pieza, un reportaje o un breve, tal como lo leen los canales RSS y el widget."""
+    sale = publicacion(d["fecha"])
+    if tipo == "breve":
+        ruta, pid, sec = ruta_breve(x), f'{d["fecha"]}/breve-{x["n"]}', "breves"
+        titular, entradilla, img, alt = titulo_breve(x), texto_plano(x.get("texto", "")), None, None
+        nombre = L["breves"]
+    else:
+        ruta, pid = f'{d["fecha"]}/{x["id"]}.html', f'{d["fecha"]}/{x["id"]}'
+        sec = "reportaje" if tipo == "reportaje" else x.get("seccion", "")
+        titular, entradilla = texto_plano(x["titular"]), texto_plano(x.get("entradilla", ""))
+        img, alt = imagen_pieza(d["fecha"], x)
+        nombre = L["reportaje"] if tipo == "reportaje" else L["secciones"].get(sec, "")
+    return {"id": pid, "tipo": tipo, "seccion": sec, "seccion_nombre": nombre,
+            "biblioteca": sec == "biblioteca" or bool(x.get("biblioteca")), "grupo": grupo_de(x),
+            "antetitulo": texto_plano(x.get("antetitulo", "")), "titular": titular, "entradilla": entradilla,
+            "sale": sale, "sale_texto": fecha_corta(sale), "url": BASE + L["carpeta"] + ruta,
+            "imagen": img, "imagen_alt": alt}
+
+
+def todas_las_fichas(eds):
+    """De la más reciente a la más antigua; dentro de cada número, el reportaje, las piezas y los breves."""
+    fichas = []
+    for d in reversed(eds):
+        if d.get("reportaje"):
+            fichas.append(ficha_datos(d, d["reportaje"], "reportaje"))
+        fichas += [ficha_datos(d, p, "pieza") for p in d["piezas"]]
+        fichas += [ficha_datos(d, b, "breve") for b in d.get("breves", [])]
+    return fichas
+
+
+def filtrar(fichas, clave):
+    """Las de una sección (la Biblioteca incluye las noticias sobre sus documentos), del reportaje, de
+    los breves o de un grupo."""
+    if clave in GRUPOS:
+        return [f for f in fichas if f["grupo"] == clave]
+    if clave == "biblioteca":
+        return [f for f in fichas if f["biblioteca"]]
+    return [f for f in fichas if f["seccion"] == clave]
+
+
+def nombre_filtro(clave):
+    if clave in GRUPOS:
+        return GRUPOS[clave][0]
+    return {"reportaje": L["reportajes"], "breves": L["breves"]}.get(clave) or L["secciones"][clave]
+
+
+def archivo_feed(clave=None):
+    """feed.xml para todo el diario; feed-<sección>.xml, feed-reportajes.xml, feed-breves.xml y
+    feed-<grupo>.xml para cada parte."""
+    return "feed.xml" if not clave else f'feed-{"reportajes" if clave == "reportaje" else clave}.xml'
+
+
+def rss(fichas, clave=None):
+    """RSS 2.0, de lo más reciente a lo más antiguo, con el dibujo de cada pieza. Fechas en UTC."""
     base = BASE + L["carpeta"]
     items = []
-    for d in reversed(eds):
+    for f in fichas:
         # Las 7:00 de Madrid del día de publicación, pasadas a UTC (el cambio de hora no la mueve)
-        cuando = datetime.datetime.combine(datetime.date.fromisoformat(publicacion(d["fecha"])), datetime.time(7),
+        cuando = datetime.datetime.combine(datetime.date.fromisoformat(f["sale"]), datetime.time(7),
                                            ZoneInfo("Europe/Madrid")).astimezone(datetime.timezone.utc)
-        for p in ([d["reportaje"]] if d.get("reportaje") else []) + d["piezas"]:
-            url = f'{base}{p["fecha"]}/{p["id"]}.html'
-            items.append(f"""  <item>
-    <title>{e(p["titular"])}</title>
-    <link>{e(url)}</link>
-    <guid isPermaLink="true">{e(url)}</guid>
+        media = ""
+        if f["imagen"]:
+            tipo = "image/svg+xml" if f["imagen"].endswith(".svg") else "image/png"
+            media = (f'\n    <media:content url="{e(f["imagen"])}" medium="image" type="{tipo}">'
+                     f'<media:description>{e(f["imagen_alt"])}</media:description></media:content>')
+        items.append(f"""  <item>
+    <title>{e(f["titular"])}</title>
+    <link>{e(f["url"])}</link>
+    <guid isPermaLink="true">{e(f["url"])}</guid>
     <pubDate>{format_datetime(cuando)}</pubDate>
-    <category>{e(L["reportaje"] if p.get("reportaje") else L["secciones"].get(p.get("seccion"), ""))}</category>
-    <description>{e(p.get("entradilla"))}</description>
+    <category>{e(f["seccion_nombre"])}</category>
+    <description>{e(f["entradilla"])}</description>{media}
   </item>""")
-        for b in d.get("breves", []):   # los breves, con su propia página
-            url = base + ruta_breve(b)
-            items.append(f"""  <item>
-    <title>{e(titulo_breve(b))}</title>
-    <link>{e(url)}</link>
-    <guid isPermaLink="true">{e(url)}</guid>
-    <pubDate>{format_datetime(cuando)}</pubDate>
-    <category>{e(L["breves"])}</category>
-    <description>{e(texto_plano(b["texto"]))}</description>
-  </item>""")
-    codigo = L["codigo"]
+    titulo = L["titulo"] + (f" · {nombre_filtro(clave)}" if clave else "")
+    anyo = datetime.date.today().year
     return f"""<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
 <channel>
-  <title>{e(L["titulo"])}</title>
+  <title>{e(titulo)}</title>
   <link>{e(base)}</link>
-  <atom:link href="{e(base)}feed.xml" rel="self" type="application/rss+xml"/>
+  <atom:link href="{e(base + archivo_feed(clave))}" rel="self" type="application/rss+xml"/>
   <description>{e(L["lema"])}</description>
-  <language>{codigo}</language>
+  <language>{L["codigo"]}</language>
+  <copyright>© {anyo} Juan José de Haro, Raül Torres. CC BY-SA 4.0 ({LICENCIA_URL})</copyright>
+  <image><url>{BASE}icono-192.png</url><title>{e(titulo)}</title><link>{e(base)}</link></image>
 {chr(10).join(items)}
 </channel>
 </rss>
 """
+
+
+def datos_json(fichas, que):
+    return json.dumps({"diario": L["titulo"], "url": BASE + L["carpeta"], "idioma": L["codigo"],
+                       "licencia": "CC BY-SA 4.0", "licencia_url": LICENCIA_URL, "que": que,
+                       "noticias": fichas}, ensure_ascii=False, separators=(",", ":")) + "\n"
+
+
+def publicar_canales(base, eds):
+    """Los canales RSS y los datos que lee el widget: noticias.json (todo), noticias-<filtro>.json y
+    datos/AAAA-MM.json con todo lo de un mes, para la tarjeta de una pieza concreta."""
+    fichas = todas_las_fichas(eds)
+    escribir(base / "feed.xml", rss(fichas[:TOPE_FEED]))
+    escribir(base / "noticias.json", datos_json(fichas[:TOPE_NOTICIAS], "todo"))
+    for clave in CLAVES_FILTRO + list(GRUPOS):
+        parte = filtrar(fichas, clave)
+        escribir(base / archivo_feed(clave), rss(parte[:TOPE_FILTRO], clave))
+        escribir(base / f"noticias-{clave}.json", datos_json(parte[:TOPE_NOTICIAS], clave))
+    shutil.rmtree(base / "datos", ignore_errors=True)
+    meses = {}
+    for f in fichas:
+        meses.setdefault(f["id"][:7], []).append(f)
+    for mes, lista in meses.items():
+        escribir(base / "datos" / f"{mes}.json", datos_json(lista, mes))
+
+
+def url_widget(**params):
+    q = urllib.parse.urlencode({k: v for k, v in params.items() if v}, safe="/")
+    return f'{BASE}{L["carpeta"]}insertar.html' + (f"?{q}" if q else "")
+
+
+def codigo_tarjeta(fecha, x):
+    """El código que pega quien quiere la tarjeta de una pieza en su web."""
+    src = url_widget(pieza=fecha + "/" + x["id"])
+    return (f'<iframe src="{e(src)}" title="{e(L["titulo"])}: {e(texto_plano(x["titular"]))}" '
+            f'width="100%" height="{ALTO_TARJETA}" style="border:0;max-width:640px" loading="lazy"></iframe>')
+
+
+def absoluto(html_, url):
+    """Los enlaces y las imágenes, con la dirección completa: el texto se pega en otra web."""
+    return re.sub(r'\b(href|src)="([^"]*)"', lambda m: f'{m.group(1)}="{e(urllib.parse.urljoin(url, html.unescape(m.group(2))))}"', html_)
+
+
+def republicable(d, x, ruta, eds, reportaje=False):
+    """La pieza entera, lista para pegar en otra web, con los créditos y la licencia al final (CC BY-SA)."""
+    url = BASE + L["carpeta"] + ruta
+    partes = [f'<p><em>{e(x["antetitulo"])}</em></p>'] if x.get("antetitulo") else []
+    partes.append(f'<h2>{e(x["titular"])}</h2>')
+    if x.get("entradilla"):
+        partes.append(f'<p><strong>{e(x["entradilla"])}</strong></p>')
+    img, alt = imagen_pieza(d["fecha"], x)
+    if img:
+        partes.append(f'<figure><img src="{e(img)}" alt="{e(alt)}" width="600" style="max-width:100%;height:auto"></figure>')
+    if reportaje:
+        for a in x.get("apartados", []):
+            if a.get("ladillo"):
+                partes.append(f'<h3>{e(a["ladillo"])}</h3>')
+            partes += [f"<p>{md(t)}</p>" for t in a.get("parrafos", [])]
+            # La tabla se desplaza dentro de su marco: en un móvil no ensancha la página ajena
+            partes.append(tabla(a.get("tabla")).replace('<figure class="tabla">', '<figure style="overflow-x:auto;margin:1em 0">'))
+        if x.get("claves"):
+            partes.append(f'<h3>{L["claves"]}</h3><ul>{"".join(f"<li>{md(c)}</li>" for c in x["claves"])}</ul>')
+    else:
+        partes += [f"<p>{md(enlaces_biblioteca('../', t, eds))}</p>" for t in x.get("cuerpo", [])]
+        for r in x.get("recursos") or []:   # los recursos del repositorio, sin su captura ampliable
+            titulo = enlace(r["url"], e(r["titulo"])) if r.get("url") else e(r["titulo"])
+            datos = " · ".join(e(v) for v in (r.get("autoria"), r.get("licencia")) if v)
+            partes.append(f'<h3>{titulo}</h3>' + (f"<p><em>{datos}</em></p>" if datos else "")
+                          + "".join(f"<p>{md(t)}</p>" for t in r.get("texto", [])))
+    if x.get("correccion"):
+        partes.append(f'<p><em>{md(x["correccion"])}</em></p>')
+    fuentes = [f for f in x.get("fuentes", []) if f.get("url")]
+    if fuentes:
+        partes.append(f'<p>{L["rep_fuentes"]}: ' + ", ".join(enlace(f["url"], e(f["titulo"] or f["url"])) for f in fuentes) + ".</p>")
+    partes.append(origen(dict(x, grupo=grupo_de(x))))
+    diario = enlace(url, L["titulo"])
+    creditos = [L["rep_original"].format(diario=diario, fecha=fecha_con_anyo(publicacion(d["fecha"]))),
+                L["rep_derechos"].format(anyo=publicacion(d["fecha"])[:4], licencia=enlace(LICENCIA_URL + L["deed"], "CC BY-SA 4.0")),
+                L["rep_redactado"]] + ([L["traduccion"]] if L["traduccion"] else [])
+    partes.append(f'<p><small>{" ".join(creditos)}</small></p>')
+    return absoluto("\n".join(p for p in partes if p), url)
+
+
+def acciones(fecha, x, ruta, d, eds, reportaje=False, llevar=True):
+    """Compartir y «Para tu web»: un botón que despliega la tarjeta para incrustar, la pieza entera para
+    republicarla y la página con el resto de opciones. El texto republicable va en un <template>, fuera
+    del <article>, para que el buscador no lo cuente dos veces."""
+    prof = "../"
+    llevar = llevar and (f'<span class="llevar"><button type="button" class="compartir llevar-boton" aria-expanded="false" aria-controls="menu-llevar" '
+              f'title="{e(L["llevar"])}">{ICONO_LLEVAR}<span>{L["llevar"]}</span></button>'
+              f'<span class="llevar-menu" id="menu-llevar" hidden>'
+              f'<button type="button" class="llevar-op" data-copiar="{e(codigo_tarjeta(fecha, x))}" data-hecho="{e(L["llevar_copiado"])}">'
+              f'<b>{L["llevar_tarjeta"]}</b><span>{L["llevar_tarjeta_desc"]}</span></button>'
+              f'<button type="button" class="llevar-op" data-plantilla="republicar" data-hecho="{e(L["llevar_copiado"])}">'
+              f'<b>{L["llevar_completa"]}</b><span>{L["llevar_completa_desc"]}</span></button>'
+              f'<a class="llevar-op llevar-mas" href="{prof}para-tu-web.html">{L["llevar_mas"]}</a></span></span>')
+    if not llevar:   # el editorial no entra en el widget ni en los canales: solo se comparte
+        llevar = ""
+    botones = (f'<div class="acciones" data-pagefind-ignore><button type="button" class="compartir" data-copiado="{e(L["copiado"])}">'
+               f'{COMPARTIR}<span>{L["compartir"]}</span></button>{llevar}</div>')
+    if not llevar:
+        return botones, ""
+    plantilla = f'<template id="republicar">{republicable(d, x, ruta, eds, reportaje)}</template>'
+    return botones, plantilla
+
+
+SCRIPT_WIDGET = """<script>
+(function(){
+  var T=__TEXTOS__, CLAVES=__CLAVES__, GR=__GRUPOS__;
+  var q=new URLSearchParams(location.search), sec=q.get('seccion')||'', gr=q.get('grupo')||'', pieza=q.get('pieza')||'';
+  if(CLAVES.indexOf(sec)<0) sec=''; if(!GR[gr]) gr='';
+  if(!/^\\d{4}-\\d{2}-\\d{2}\\/[\\w-]+$/.test(pieza)) pieza='';
+  var n=Math.min(20,Math.max(1,parseInt(q.get('n'),10)||5)), estilo=q.get('estilo')==='tarjetas'?'tarjetas':'lista';
+  var caja=document.getElementById('contenido'), mas=document.getElementById('mas'), filtro=document.getElementById('filtro');
+  function el(t,c,x){var e=document.createElement(t); if(c)e.className=c; if(x!=null)e.textContent=x; return e;}
+  function enlace(it,c){var a=el('a',c,it.titular); a.href=it.url; a.target='_blank'; a.rel='noopener'; return a;}
+  function rotulo(it){var p=el('p','seccion'); p.append(el('span','',it.seccion_nombre),' ',el('span','fecha-pieza',it.sale_texto)); return p;}
+  function dibujo(it){
+    var f=el('figure','ilu'); if(!it.imagen){f.hidden=true; return f;}
+    if(!/\\.svg$/.test(it.imagen)){var i=el('img'); i.src=it.imagen; i.alt=it.imagen_alt||''; f.append(i); return f;}
+    // El dibujo, dentro de la página: así toma los colores del tema, también en oscuro
+    fetch(it.imagen).then(function(r){if(!r.ok)throw 0; return r.text();}).then(function(t){
+      var s=new DOMParser().parseFromString(t,'image/svg+xml').documentElement;
+      if(s.nodeName!=='svg')throw 0;
+      s.querySelectorAll('script,foreignObject').forEach(function(x){x.remove();});
+      s.setAttribute('role','img'); s.setAttribute('aria-label',it.imagen_alt||it.titular);
+      f.append(document.importNode(s,true));
+    }).catch(function(){f.hidden=true;});
+    return f;
+  }
+  function pinta(lista){
+    caja.replaceChildren();
+    if(pieza){
+      var it=lista.find(function(x){return x.id===pieza;});
+      if(!it){caja.append(el('p','w-aviso',T.w_sin)); return;}
+      document.title=T.titulo+': '+it.titular;
+      var a=el('article','w-pieza sec-'+it.seccion); a.append(dibujo(it),rotulo(it));
+      if(it.antetitulo) a.append(el('p','antetitulo',it.antetitulo));
+      var h=el('h2','w-titular'); h.append(enlace(it)); a.append(h);
+      if(it.entradilla) a.append(el('p','w-entradilla',it.entradilla));
+      caja.append(a); mas.href=it.url; mas.textContent=T.w_leer+' →'; return;
+    }
+    if(sec) lista=lista.filter(function(x){return sec==='biblioteca'?x.biblioteca:x.seccion===sec;});
+    if(gr) lista=lista.filter(function(x){return x.grupo===gr;});
+    lista=lista.slice(0,n);
+    if(!lista.length){caja.append(el('p','w-aviso',T.w_sin)); return;}
+    var ol=el('ol',estilo==='tarjetas'?'w-tarjetas':'w-lista');
+    lista.forEach(function(it){
+      var li=el('li','sec-'+it.seccion);
+      if(estilo==='tarjetas') li.append(dibujo(it));
+      var tx=el('div','w-texto'); tx.append(rotulo(it)); var h=el('h2','w-titular'); h.append(enlace(it)); tx.append(h);
+      if(estilo==='tarjetas'&&it.entradilla) tx.append(el('p','w-entradilla',it.entradilla));
+      li.append(tx); ol.append(li);
+    });
+    caja.append(ol);
+  }
+  var nombres=[]; if(sec) nombres.push(T.filtros[sec]); if(gr) nombres.push(GR[gr]);
+  filtro.textContent=pieza?'':nombres.join(' · ');
+  var origen=pieza?'datos/'+pieza.slice(0,7)+'.json':sec?'noticias-'+sec+'.json':gr?'noticias-'+gr+'.json':'noticias.json';
+  fetch(origen).then(function(r){if(!r.ok)throw 0; return r.json();}).then(function(d){pinta(d.noticias||[]);})
+    .catch(function(){caja.replaceChildren(el('p','w-aviso',T.w_error));});
+})();
+</script>"""
+
+CSS_WIDGET = """
+html, body { height: 100%; }
+body.w { margin: 0; background: transparent; font-size: 1rem; line-height: 1.4; }
+.w-caja { box-sizing: border-box; height: 100%; display: flex; flex-direction: column; background: var(--papel);
+  border: 1px solid var(--filete); border-radius: 8px; overflow: hidden; }
+.w-cab { display: flex; align-items: baseline; justify-content: space-between; gap: .6rem; flex-wrap: wrap;
+  padding: .55rem .9rem .45rem; border-bottom: 3px double var(--tinta); }
+.w-h1 { margin: 0; font-size: 1rem; line-height: 1.3; }
+.w-marca { font-weight: 700; font-size: 1.15rem; color: var(--tinta); text-decoration: none; font-variation-settings: "opsz" 48; }
+.w-filtro { font-style: italic; color: var(--tinta-2); font-size: .9rem; }
+.w-contenido { flex: 1; min-height: 0; overflow: auto; padding: 0 .9rem; display: flex; flex-direction: column; }
+.w-pie { padding: .45rem .9rem .55rem; border-top: 1px solid var(--filete); font-size: .92rem; }
+.w-pie a, .w-titular a { color: var(--tinta); }
+.w-titular { font-size: 1.05rem; line-height: 1.3; margin: .1rem 0 0; font-weight: 600; }
+.w-titular a { text-decoration: none; }
+.w-titular a:hover, .w-titular a:focus-visible { text-decoration: underline; }
+.seccion { margin: 0; font-size: .82rem; font-weight: 600; display: flex; gap: .4rem; flex-wrap: wrap; }
+.fecha-pieza { color: var(--tinta-2); font-weight: 400; font-style: italic; }
+.w-lista, .w-tarjetas { list-style: none; margin: 0; padding: 0; }
+.w-lista li { padding: .6rem 0 .6rem .7rem; border-left: 3px solid var(--sec, var(--tinta)); margin: .55rem 0; }
+.w-tarjetas li { display: grid; grid-template-columns: minmax(6rem, 34%) 1fr; gap: .8rem; align-items: start;
+  padding: .7rem 0; border-bottom: 1px solid var(--filete); }
+.w-tarjetas li:last-child { border-bottom: 0; }
+.w-tarjetas .ilu { margin: 0; padding: .3rem; border-radius: 4px; }
+.w-tarjetas .ilu[hidden] + .w-texto { grid-column: 1 / -1; }
+.w-entradilla { margin: .3rem 0 0; color: var(--tinta-2); font-size: .92rem;
+  display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.w-pieza { flex: 1; min-height: 0; display: flex; flex-direction: column; padding: .8rem 0; }
+.w-pieza .ilu { position: relative; flex: 1 1 0; min-height: 7rem; margin: 0 0 .7rem; border-radius: 4px; }
+/* El dibujo llena el sitio que deja el texto, sin deformarse: con poco alto, se encoge */
+.w-pieza .ilu svg, .w-pieza .ilu img { position: absolute; inset: .5rem; width: calc(100% - 1rem); height: calc(100% - 1rem); object-fit: contain; }
+.w-pieza .antetitulo { margin: .3rem 0 0; font-style: italic; color: var(--tinta-2); font-size: .95rem; }
+.w-pieza .w-titular { font-size: 1.3rem; }
+.w-pieza .w-entradilla { -webkit-line-clamp: 4; font-size: 1rem; }
+.w-aviso { color: var(--tinta-2); font-style: italic; }
+.ilu img { display: block; width: 100%; height: auto; }
+@media (max-width: 22rem) { .w-tarjetas li { grid-template-columns: 1fr; } }
+"""
+
+
+def pagina_insertar():
+    """El widget (ADR 0032): una página sin cabecera ni pie del diario, para un iframe en otra web. Lee
+    noticias*.json o datos/AAAA-MM.json del mismo idioma; sin cookies ni contadores."""
+    textos = {k: L[k] for k in ("w_sin", "w_error", "w_leer", "w_mas", "titulo")}
+    textos["filtros"] = {c: nombre_filtro(c) for c in CLAVES_FILTRO}
+    script = (SCRIPT_WIDGET.replace("__TEXTOS__", json.dumps(textos, ensure_ascii=False))
+              .replace("__CLAVES__", json.dumps(CLAVES_FILTRO)).replace("__GRUPOS__", json.dumps({k: v[0] for k, v in GRUPOS.items()}, ensure_ascii=False)))
+    r = recursos("")
+    return f"""<!doctype html>
+<html lang="{L["codigo"]}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{e(L["titulo"])}</title>
+<meta name="robots" content="noindex">
+<script>try{{var t=new URLSearchParams(location.search).get('tema');if(t==='claro')document.documentElement.dataset.theme='light';else if(t==='oscuro')document.documentElement.dataset.theme='dark';}}catch(_){{}}</script>
+<link rel="stylesheet" href="{r}fuentes.css?v={version_estatico("fuentes.css")}">
+<link rel="stylesheet" href="{r}comun.css?v={version_estatico("comun.css")}">
+<style>{CSS_WIDGET}</style>
+</head>
+<body class="w">
+<div class="w-caja">
+<header class="w-cab"><h1 class="w-h1"><a class="w-marca" href="{BASE}{L["carpeta"]}" target="_blank" rel="noopener">{L["titulo"]}</a></h1><span class="w-filtro" id="filtro"></span></header>
+<main class="w-contenido" id="contenido" aria-live="polite"></main>
+<footer class="w-pie"><a id="mas" href="{BASE}{L["carpeta"]}" target="_blank" rel="noopener">{L["w_mas"]} →</a></footer>
+</div>
+{script}
+</body>
+</html>"""
+
+
+SCRIPT_PTW = """<script>
+(function(){
+  var B=__BASES__, f=document.getElementById('ptw-form'), vista=document.getElementById('ptw-iframe'), cod=document.getElementById('ptw-codigo'),
+      alto=document.getElementById('ptw-alto'), tocado=false, espera=null, TITULO=__TITULO__;
+  function v(n){var x=f.elements[n]; return x?x.value:'';}
+  function altoSolo(){var n=Math.min(20,Math.max(1,parseInt(v('n'),10)||5)); return v('estilo')==='tarjetas'? 100+n*175 : 100+n*105;}
+  function url(){
+    var p=new URLSearchParams();
+    ['seccion','grupo'].forEach(function(k){if(v(k))p.set(k,v(k));});
+    if(v('n')&&v('n')!=='5')p.set('n',v('n')); if(v('estilo')==='tarjetas')p.set('estilo','tarjetas');
+    if(v('tema')!=='auto')p.set('tema',v('tema'));
+    var s=p.toString(); return B[v('idioma')]+'insertar.html'+(s?'?'+s:'');
+  }
+  function pinta(){
+    if(!tocado) alto.value=altoSolo();
+    var u=url(), h=Math.max(150,parseInt(alto.value,10)||400);
+    cod.value='<iframe src="'+u.replace(/&/g,'&amp;')+'" title="'+TITULO[v('idioma')]+'" width="100%" height="'+h+'" style="border:0;max-width:640px" loading="lazy"></iframe>';
+    clearTimeout(espera); espera=setTimeout(function(){ if(vista.getAttribute('src')!==u) vista.src=u; vista.height=h; },250);
+  }
+  alto.addEventListener('input',function(){tocado=true;});
+  f.addEventListener('input',pinta); f.addEventListener('change',pinta);
+  f.addEventListener('submit',function(ev){ev.preventDefault();});
+  pinta();
+})();
+</script>"""
+
+
+def pagina_para_tu_web(eds):
+    """Cómo llevarse el diario a otra web (ADR 0032): el configurador del widget, con su vista previa y el
+    código; y, plegados, la tarjeta de una pieza, los canales RSS y las condiciones para republicar."""
+    opciones = f'<option value="">{L["ptw_todas"]}</option>' + "".join(f'<option value="{c}">{e(nombre_filtro(c))}</option>' for c in CLAVES_FILTRO)
+    grupos = f'<option value="">{L["ptw_todos"]}</option>' + "".join(f'<option value="{k}">{e(n)}</option>' for k, (n, _) in GRUPOS.items())
+    idiomas = "".join(f'<option value="{c}"{" selected" if c == L["codigo"] else ""} lang="{c}">{d["nombre"]}</option>' for c, d in IDIOMAS.items())
+
+    def radios(nombre, valores):
+        return "".join(f'<label><input type="radio" name="{nombre}" value="{val}"{" checked" if i == 0 else ""}> {rot}</label>'
+                       for i, (val, rot) in enumerate(valores))
+    copiar = lambda texto, rot, hecho: (f'<button type="button" class="compartir copiar" data-copiar="{e(texto)}" data-hecho="{e(hecho)}">'
+                                        f'{ICONO_COPIAR}<span>{rot}</span></button>')
+    canal = lambda clave: (f'<li><span class="nombre">{ICONO_RSS} {e(nombre_filtro(clave) if clave else L["ptw_rss_todo"])}</span>'
+                           f'<code>{BASE}{L["carpeta"]}{archivo_feed(clave)}</code>'
+                           f'{copiar(BASE + L["carpeta"] + archivo_feed(clave), L["ptw_copiar_dir"], L["ptw_dir_copiada"])}</li>')
+    canales = (f'<ul class="ptw-canales">{canal(None)}</ul><h3>{L["ptw_secciones"]}</h3><ul class="ptw-canales">{"".join(canal(c) for c in CLAVES_FILTRO)}</ul>'
+               f'<h3>{L["ptw_grupos"]}</h3><ul class="ptw-canales">{"".join(canal(g) for g in GRUPOS)}</ul>')
+    condiciones = "".join(f"<li>{t}</li>" for t in L["ptw_repub_lista"])
+    licencia = enlace(LICENCIA_URL + L["deed"], "CC BY-SA 4.0")
+    bases = json.dumps({c: BASE + d["carpeta"] for c, d in IDIOMAS.items()})
+    titulos = json.dumps({c: d["titulo"] for c, d in IDIOMAS.items()}, ensure_ascii=False)
+    script = SCRIPT_PTW.replace("__BASES__", bases).replace("__TITULO__", titulos)
+    return cabeza(f'{L["ptw"]} | {L["titulo"]}', "", L["ptw_txt"], "para-tu-web.html") + f"""<body class="pag-seccion">
+{cabecera("", "para-tu-web.html", eds[-1]["fecha"], eds[-1]["numero"], True, h1=False)}
+<main class="portada pagina-ptw">
+<h1 class="titulo-seccion">{ICONO_LLEVAR} {L["ptw"]}</h1>
+<p class="descripcion-seccion">{L["ptw_txt"]}</p>
+<section class="ptw-widget" aria-labelledby="ptw-w">
+<h2 id="ptw-w">{L["ptw_widget_h"]}</h2>
+<p>{L["ptw_widget_txt"]}</p>
+<div class="ptw-rejilla">
+<form id="ptw-form" class="ptw-form">
+  <div class="ptw-campo"><label for="ptw-seccion">{L["ptw_noticias"]}</label><select id="ptw-seccion" name="seccion">{opciones}</select></div>
+  <div class="ptw-campo"><label for="ptw-grupo">{L["ptw_grupo"]}</label><select id="ptw-grupo" name="grupo">{grupos}</select></div>
+  <div class="ptw-campo"><label for="ptw-n">{L["ptw_cuantas"]}</label><input id="ptw-n" name="n" type="number" min="1" max="20" value="5" inputmode="numeric"></div>
+  <div class="ptw-campo"><label for="ptw-idioma">{L["idioma"]}</label><select id="ptw-idioma" name="idioma">{idiomas}</select></div>
+  <fieldset class="ptw-campo"><legend>{L["ptw_aspecto"]}</legend><div class="ptw-opciones">{radios("estilo", [("lista", ICONO_LISTA + " " + L["ptw_lista"]), ("tarjetas", ICONO_TARJETAS + " " + L["ptw_tarjetas"])])}</div></fieldset>
+  <fieldset class="ptw-campo"><legend>{L["ptw_tema"]}</legend><div class="ptw-opciones">{radios("tema", [("auto", L["ptw_tema_auto"]), ("claro", L["ptw_claro"]), ("oscuro", L["ptw_oscuro"])])}</div></fieldset>
+  <div class="ptw-campo"><label for="ptw-alto">{L["ptw_alto"]}</label><input id="ptw-alto" name="alto" type="number" min="150" max="3000" step="10" value="625" inputmode="numeric"></div>
+</form>
+<div class="ptw-resultado">
+  <h3>{L["ptw_vista"]}</h3>
+  <div class="ptw-vista"><iframe id="ptw-iframe" title="{e(L["ptw_vista"])}" width="100%" height="625"></iframe></div>
+</div>
+</div>
+<div class="ptw-codigo">
+  <label for="ptw-codigo"><b>{L["ptw_codigo"]}</b></label>
+  <textarea id="ptw-codigo" rows="3" readonly spellcheck="false"></textarea>
+  <p><button type="button" class="compartir copiar" data-desde="ptw-codigo" data-hecho="{e(L["ptw_copiado"])}">{ICONO_COPIAR}<span>{L["ptw_copiar"]}</span></button></p>
+  <p class="ptw-nota">{L["ptw_donde"]}</p>
+</div>
+</section>
+<details class="ptw-mas" id="noticia"><summary>{L["ptw_pieza_h"]}</summary><p>{L["ptw_pieza_txt"]}</p></details>
+<details class="ptw-mas" id="rss"><summary>{L["ptw_rss_h"]}</summary><p>{L["ptw_rss_txt"]}</p>{canales}</details>
+<details class="ptw-mas" id="republicar"><summary>{L["ptw_repub_h"]}</summary><p>{L["ptw_repub_txt"].format(licencia=licencia)}</p><ul>{condiciones}</ul><p>{L["ptw_repub_retirar"]}</p></details>
+</main>
+{pie("", eds, None)}
+{SCRIPT_TEMA}
+{script}
+</body>
+</html>"""
 
 
 def manifiesto():
@@ -1992,7 +2479,15 @@ def generar_idioma(codigo):
     escribir(base / "breves.html", pagina_breves(eds))
     escribir(base / "buscar.html", pagina_buscar(eds))
     escribir(base / "archivo.html", pagina_hemeroteca(eds))
-    escribir(base / "feed.xml", rss(eds))
+    publicar_canales(base, eds)   # RSS y datos para el widget (ADR 0032)
+    escribir(base / "insertar.html", pagina_insertar())
+    escribir(base / "para-tu-web.html", pagina_para_tu_web(eds))
+    shutil.rmtree(base / "ilustraciones", ignore_errors=True)   # los dibujos sueltos, sin restos de piezas retiradas
+    for d in eds:
+        for x in d["piezas"]:
+            dibujo_suelto(d["fecha"], x, x.get("seccion", ""))
+        if d.get("reportaje"):
+            dibujo_suelto(d["fecha"], d["reportaje"], "reportaje")
     escribir(base / "manifest.webmanifest", manifiesto())
     if codigo == "es":
         escribir(RAIZ / "indice" / "diario.json", indice_bot(eds))   # para el bot, no se publica (ADR 0017)

@@ -76,6 +76,10 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
   música distinta cada vez; el dominical sale el domingo a las 9:00 en
   Instagram, X, Bluesky y LinkedIn desde el contenedor del boletín
   (`scripts/redes/dominical.sh`; probar con `--comprobar`).
+- **Para tu web** (ADR 0032): `para-tu-web.html` (configurador), `insertar.html` (el widget, para un
+  iframe), `noticias*.json`, `datos/AAAA-MM.json`, `feed-*.xml` e `ilustraciones/*.svg` en cada idioma,
+  y el botón de cada pieza con su `<template id="republicar">`. Los nombres de archivos y parámetros no
+  se cambian: hay widgets pegados en otras webs.
 - **Cinco idiomas** (ADR 0026): `/ca/`, `/gl/`, `/eu/` y `/en/`;
   traducción nocturna (`scripts/traducir.sh`) y de un día ya publicado
   (`scripts/traducir-dia.sh FECHA [idiomas]`, en una copia fuera de `/home`).
