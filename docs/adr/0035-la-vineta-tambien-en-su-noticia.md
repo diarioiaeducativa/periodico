@@ -19,12 +19,12 @@ de la viñeta».
   «A partir de…», que remitiría a la propia página.
 - Fuera del `<article>`, así que el buscador no mezcla los diálogos de la tira con el texto de la noticia.
 - En los cinco idiomas y en todo lo ya publicado, porque la web se rehace entera.
-- Una viñeta que trata de un breve sin decir cuál (`"pieza": "breve"`, como la del 5 de noviembre) no sale
+- Una viñeta que trata de un breve sin decir cuál (`"pieza": "breve"`, como la publicada el 6 de noviembre, `vinetas/2026-11-05.json`) no sale
   en ninguna noticia: no hay forma segura de saber de cuál es.
 
 ## Validación
 
-Generado en una copia aparte: la tira sale en las diez noticias de las que trata una viñeta (del 28 de
-octubre al 7 de noviembre, salvo el 5, que era de un breve), en los cinco idiomas. Probado con `probar-web` en
+Generado en una copia aparte: la tira sale en las diez noticias de las que trata una viñeta (publicadas
+del 29 de octubre al 8 de noviembre, salvo la del 6, que era de un breve), en los cinco idiomas. Probado con `probar-web` en
 Firefox y Chromium, escritorio y móvil, claro y oscuro: se ve igual que en la portada y sin errores propios
 (los únicos, 404 de giscus en una noticia sin comentarios todavía, que es lo normal).
