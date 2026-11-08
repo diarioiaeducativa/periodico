@@ -332,7 +332,10 @@ def subir_rama(fecha, origen=None):
         (pathlib.Path(tmp) / "README.md").write_text(
             "Imágenes del carrusel de Instagram del día. Se rehace cada mañana; no es parte del sitio.\n")
         g("add", "-A")
-        g("commit", "-qm", f"Carrusel de Instagram del número del {generar.publicacion(fecha)}")
+        # El reel sube con la carpeta `reel-<sábado>`: la fecha va sin el prefijo.
+        dia = fecha.removeprefix("reel-")
+        que = "Reel de la semana" if fecha != dia else "Carrusel de Instagram del número"
+        g("commit", "-qm", f"{que} del {generar.publicacion(dia)}")
         # La misma clave de despliegue que usa el clon del sitio (/sitio en el NAS), si lo hay
         ssh = subprocess.run(["git", "-C", os.environ.get("SITIO_REPO", "/sitio"), "config", "--get", "core.sshCommand"],
                              capture_output=True, text=True).stdout.strip()
