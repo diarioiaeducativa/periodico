@@ -516,6 +516,7 @@ a.llevar-op.llevar-mas { border-top: 1px solid var(--filete); margin-top: 0.2rem
 .notebook h2 { margin: 0 0 0.3rem; font-size: 1.3rem; color: var(--azul); }
 .nb-txt { margin: 0 0 1rem; color: var(--tinta-2); font-size: 0.98rem; line-height: 1.5; }
 .nb-grupos { display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: 1.2rem 1.6rem; }
+.nb-grupo { max-width: 40rem; }
 .nb-grupo h3 { margin: 0 0 0.5rem; font-size: 1.1rem; }
 .nb-video { aspect-ratio: 16 / 9; background: #16181d; margin: 0 0 0.6rem; }
 .nb-video iframe { width: 100%; height: 100%; border: 0; display: block; }
