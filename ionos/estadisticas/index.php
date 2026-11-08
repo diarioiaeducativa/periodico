@@ -15,7 +15,9 @@ $MADRID = new DateTimeZone('Europe/Madrid');
 $UTC = new DateTimeZone('UTC');
 
 function firma(string $usuario, int $caduca): string {
-    return hash_hmac('sha256', $usuario . '|' . $caduca, (string) (config()['secreto'] ?? ''));
+    // Con la contraseña dentro: al cambiarla, se cierran las sesiones abiertas en otros navegadores
+    $clave = (string) (config()['usuarios'][$usuario] ?? '');
+    return hash_hmac('sha256', $usuario . '|' . $caduca, (string) (config()['secreto'] ?? '') . $clave);
 }
 
 function usuario_actual(): ?string {
@@ -51,6 +53,36 @@ if (isset($_GET['salir'])) {
     exit;
 }
 $yo = usuario_actual();
+
+// Cambiar la propia contraseña: se reescribe config.php con el nuevo hash
+$cambio = isset($_GET['clave']) && $yo;
+$cambio_error = '';
+if ($cambio && ($_SERVER['REQUEST_METHOD'] ?? '') === 'POST' && isset($_POST['actual'])) {
+    $nueva = (string) ($_POST['nueva'] ?? '');
+    if (!password_verify((string) $_POST['actual'], config()['usuarios'][$yo])) {
+        usleep(800000);
+        $cambio_error = 'La contraseña actual no es correcta.';
+    } elseif (mb_strlen($nueva) < 8) {
+        $cambio_error = 'La nueva contraseña tiene que tener al menos 8 caracteres.';
+    } elseif ($nueva !== (string) ($_POST['repite'] ?? '')) {
+        $cambio_error = 'Las dos contraseñas nuevas no coinciden.';
+    } else {
+        $c = config();
+        $c['usuarios'][$yo] = password_hash($nueva, PASSWORD_DEFAULT);
+        $f = __DIR__ . '/config.php';
+        $tmp = $f . '.tmp';
+        if (file_put_contents($tmp, "<?php\nreturn " . var_export($c, true) . ";\n", LOCK_EX) !== false && chmod($tmp, 0604) && rename($tmp, $f)) {
+            if (function_exists('opcache_invalidate')) {
+                opcache_invalidate($f, true);
+            }
+            $GLOBALS['config_nueva'] = $c;
+            abrir_sesion($yo);
+            header('Location: ' . rtrim(dirname($_SERVER['SCRIPT_NAME']), '/') . '/?cambiada=1');
+            exit;
+        }
+        $cambio_error = 'No se ha podido guardar. Inténtalo otra vez.';
+    }
+}
 
 /** Las sumas entre dos días de Madrid (incluidos), repartidas por día de Madrid. */
 function recoger(DateTimeImmutable $desde, DateTimeImmutable $hasta): array {
@@ -220,11 +252,27 @@ form.entrar button { margin-top:1rem; font:inherit; font-weight:600; padding:.55
   <input id="clave" name="clave" type="password" autocomplete="current-password" required>
   <button type="submit">Entrar</button>
 </form>
+<?php elseif ($cambio): ?>
+<form class="entrar" method="post" action="?clave">
+  <h1>Cambiar contraseña</h1>
+  <p class="aviso">Usuario: <?= htmlspecialchars($yo) ?>. Al cambiarla se cierra la sesión en los demás navegadores.</p>
+  <?php if ($cambio_error): ?><p class="error"><?= htmlspecialchars($cambio_error) ?></p><?php endif; ?>
+  <input type="text" name="usuario_oculto" value="<?= htmlspecialchars($yo) ?>" autocomplete="username" hidden>
+  <label for="actual">Contraseña actual</label>
+  <input id="actual" name="actual" type="password" autocomplete="current-password" required>
+  <label for="nueva">Nueva contraseña</label>
+  <input id="nueva" name="nueva" type="password" autocomplete="new-password" minlength="8" required>
+  <label for="repite">Repite la nueva</label>
+  <input id="repite" name="repite" type="password" autocomplete="new-password" minlength="8" required>
+  <button type="submit">Guardar</button>
+  <p class="aviso" style="margin-top:1rem"><a href="./">Volver sin cambiarla</a></p>
+</form>
 <?php else: ?>
 <main>
   <header>
     <h1>Visitas del <a href="https://diarioiaeducativa.github.io/" target="_blank" rel="noopener">Diario de IA Educativa</a></h1>
-    <p class="aviso">Al día a las <span id="hora">…</span> · <a href="?salir">Salir</a></p>
+    <p class="aviso">Al día a las <span id="hora">…</span> · <a href="?clave">Cambiar contraseña</a> · <a href="?salir">Salir</a></p>
+    <?php if (isset($_GET['cambiada'])): ?><p class="aviso" role="status">Contraseña cambiada.</p><?php endif; ?>
   </header>
   <p class="aviso">Una visita es una persona que entra en el diario; si vuelve tras 30 minutos sin abrir ninguna página, cuenta otra vez. Los días van en hora de España.</p>
   <div class="cifras">

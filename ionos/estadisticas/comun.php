@@ -11,6 +11,9 @@ const MAX_PAGINAS_DIA = 5000;      // tope de páginas distintas por día, contr
 
 function config(): array {
     static $c = null;
+    if (isset($GLOBALS['config_nueva'])) {   // recién cambiada una contraseña (index.php)
+        return $GLOBALS['config_nueva'];
+    }
     if ($c === null) {
         $c = is_file(__DIR__ . '/config.php') ? require __DIR__ . '/config.php' : [];
     }

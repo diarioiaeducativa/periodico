@@ -52,7 +52,10 @@ guardado en el navegador y de 25 meses para los datos.
   Al empezar cada día se borran los archivos de más de 25 meses. `data/` no se puede leer desde la web.
 - **El panel** (`index.php`) pide usuario y contraseña, uno para cada autor (`config.php`, solo en el
   hosting, con `password_hash`), para poder quitar el acceso a uno sin cambiar el del otro. La sesión
-  es una cookie firmada de 90 días, solo para ellos. Muestra las visitas de hoy, de 7 y de 30 días; la
+  es una cookie firmada de 90 días, solo para ellos. Cada uno cambia su contraseña desde el panel
+  («Cambiar contraseña», a petición de Juanjo el 08-11-2026), que reescribe `config.php`; la firma
+  de la sesión incluye la contraseña, así que al cambiarla se cierran las sesiones de los demás
+  navegadores. Muestra las visitas de hoy, de 7 y de 30 días; la
   gráfica de visitas por día de los últimos 30 (desde el primer día con datos); y las páginas más
   abiertas y el reparto por idioma en el periodo elegido. Se pone al día cada minuto mientras está a
   la vista.
