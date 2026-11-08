@@ -37,7 +37,18 @@ if [ "$faltan" -gt 0 ]; then
   else
     REPOSITORIO_MODO=fondo bash scripts/repositorio.sh "$CLAVE" >> "$REG" 2>&1
   fi
-  python3 scripts/reserva.py guardar "$CLAVE" "$FUENTE" >> "$REG" 2>&1 || codigo=1
+  if ! python3 scripts/reserva.py guardar "$CLAVE" "$FUENTE" >> "$REG" 2>&1; then
+    cat "registro/$CLAVE.log" >> "$REG" 2>/dev/null; rm -f "registro/$CLAVE.log"
+    if [ "$FUENTE" = biblioteca ]; then
+      # La biblioteca no ha dado pieza (ningún candidato vigente o legible): ese día, una del repositorio
+      CLAVE=$(python3 scripts/reserva.py clave)
+      log "reserva: la biblioteca no ha dado pieza; se escribe una del fondo del repositorio con la clave $CLAVE"
+      REPOSITORIO_MODO=fondo bash scripts/repositorio.sh "$CLAVE" >> "$REG" 2>&1
+      python3 scripts/reserva.py guardar "$CLAVE" repositorio >> "$REG" 2>&1 || codigo=1
+    else
+      codigo=1
+    fi
+  fi
   cat "registro/$CLAVE.log" >> "$REG" 2>/dev/null; rm -f "registro/$CLAVE.log"
 else
   log "reserva: piezas completas"

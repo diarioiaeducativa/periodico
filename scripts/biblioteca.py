@@ -113,7 +113,11 @@ def main():
         import random
         limite = (datetime.date.today() - datetime.timedelta(days=DIAS_FONDO)).isoformat()
         fuera = set(hechos) | en_reserva()
-        nuevas = [e for e in todas if e["id"] not in fuera and e["fecha"][:10] <= limite]
+        # Solo lo que se puede leer entero: un PDF con su texto completo (el bot lo va recuperando de
+        # los anteriores a octubre de 2026, su ADR 0026) o un enlace con su ficha, que se lee en la
+        # fuente. Un PDF del que solo hay las primeras páginas espera a tener el texto entero.
+        nuevas = [e for e in todas if e["id"] not in fuera and e["fecha"][:10] <= limite
+                  and (e["entero"] or not e["archivo"])]
         # Lo más reciente tiene más posibilidades de seguir vigente; un poco de azar para variar
         nuevas.sort(key=lambda e: e["fecha"], reverse=True)
         nuevas = nuevas[:CANDIDATOS_FONDO * 3]

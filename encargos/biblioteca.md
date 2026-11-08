@@ -44,7 +44,8 @@ semanas.
   (una guía sobre una herramienta que ya no existe, un informe cuyas cifras ya se han renovado).
   Si ninguno vale, no hay artículo: los tres a `descartado`.
 - **Los demás candidatos, a `descartado`**, cada uno empezando por «mensaje <id>:» y con el motivo
-  («mensaje 21890: hay una versión de 2026 que lo sustituye»). Así no se vuelven a proponer.
+  («mensaje 21890: hay una versión de 2026 que lo sustituye»). Así no se vuelven a proponer. Los
+  candidatos traen el texto completo del PDF o son enlaces con su ficha: léelos enteros.
 - **Antetítulo «Del fondo de la biblioteca»**, siempre. El artículo no lo presenta como novedad ni
   dice «hoy» o «esta semana»: dice cuándo se publicó el documento y por qué sigue siendo útil.
 - Lo demás, como cualquier artículo de la biblioteca.
