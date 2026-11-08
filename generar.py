@@ -72,7 +72,7 @@ IDIOMAS = {
                         "edumedia": "creación de audio, vídeo e imagen con IA generativa para el aula."},
         "unete_txt": "El Diario de IA Educativa cuenta lo que se habla en tres grupos abiertos de Telegram donde docentes comparten lo que prueban con la inteligencia artificial. Las conversaciones se pueden leer sin entrar; para participar, basta con unirse.",
         "archivo": "Archivo por días",
-        "anyo": "Año", "hemeroteca": "Hemeroteca", "hemeroteca_txt": "Todos los números, por meses y semanas.",
+        "anyo": "Año", "hemeroteca": "Hemeroteca", "hemeroteca_txt": "Todos los números, por meses y semanas.", "nb_anteriores": "Boletines anteriores",
         # La semana y el mes (ADR 0034)
         "semana": "La semana", "semana_txt": "Todo lo que contó el diario de lo que se habló en los grupos esa semana, por secciones, con el pódcast y el vídeo de cada grupo. Elige un grupo para ver solo lo suyo.", "semana_actual": "La semana, de un vistazo", "grupo_filtro": "Ver lo de un grupo", "grupo_todos": "Todos", "sin_grupo": "Este grupo no tiene piezas esta semana.", "nb_h": "El pódcast y el vídeo de la semana", "nb_txt": "Cada lunes, NotebookLM, de Google, prepara un pódcast y un vídeo de cada grupo con su conversación completa de la semana, también lo que el diario no ha contado. Un agente de IA los contrasta con la conversación antes de publicarlos.", "nb_es": "", "nb_pendiente": "El pódcast y el vídeo de cada grupo se añaden aquí el lunes por la mañana.", "nb_video": "Vídeo", "nb_ver": "Reproducir el vídeo de {g}", "nb_youtube": "Verlo en YouTube", "nb_podcast": "Pódcast", "nb_archive": "Escucharlo en Internet Archive", "numeros_semana": "Los números de la semana", "sem_ant": "Semana anterior", "sem_sig": "Semana siguiente", "todo_mes": "Todo el mes", "mes": "El mes", "mes_txt": "Las semanas del mes, con la pieza que abrió cada número.", "mes_ant": "Mes anterior", "mes_sig": "Mes siguiente", "ver_semana": "La semana entera, por secciones", "con_nb": "Con el pódcast y el vídeo de cada grupo", "boletines_h": "Boletines semanales anteriores", "boletines_txt": "Hasta noviembre de 2026, cada grupo tenía su propio boletín semanal. Siguen en su web:",
         "todos_numeros": "Hemeroteca: todos los números",
@@ -190,7 +190,7 @@ IDIOMAS = {
                         "edumedia": "creació d'àudio, vídeo i imatge amb IA generativa per a l'aula."},
         "unete_txt": "El Diari d'IA Educativa explica el que es parla en tres grups oberts de Telegram on docents comparteixen el que proven amb la intel·ligència artificial. Les converses es poden llegir sense entrar-hi; per participar-hi, n'hi ha prou d'unir-s'hi.",
         "archivo": "Arxiu per dies",
-        "anyo": "Any", "hemeroteca": "Hemeroteca", "hemeroteca_txt": "Tots els números, per mesos i setmanes.",
+        "anyo": "Any", "hemeroteca": "Hemeroteca", "hemeroteca_txt": "Tots els números, per mesos i setmanes.", "nb_anteriores": "Butlletins anteriors",
         # La semana y el mes (ADR 0034)
         "semana": "La setmana", "semana_txt": "Tot el que va explicar el diari del que es va parlar als grups aquella setmana, per seccions, amb el pòdcast i el vídeo de cada grup. Tria un grup per veure només el seu.", "semana_actual": "La setmana, d'un cop d'ull", "grupo_filtro": "Veure el d'un grup", "grupo_todos": "Tots", "sin_grupo": "Aquest grup no té peces aquesta setmana.", "nb_h": "El pòdcast i el vídeo de la setmana", "nb_txt": "Cada dilluns, NotebookLM, de Google, prepara un pòdcast i un vídeo de cada grup amb tota la seva conversa de la setmana, també el que el diari no ha explicat. Un agent d'IA els contrasta amb la conversa abans de publicar-los.", "nb_es": "Són en castellà.", "nb_pendiente": "El pòdcast i el vídeo de cada grup s'afegeixen aquí dilluns al matí.", "nb_video": "Vídeo", "nb_ver": "Reproduir el vídeo de {g}", "nb_youtube": "Mira'l a YouTube", "nb_podcast": "Pòdcast", "nb_archive": "Escolta'l a Internet Archive", "numeros_semana": "Els números de la setmana", "sem_ant": "Setmana anterior", "sem_sig": "Setmana següent", "todo_mes": "Tot el mes", "mes": "El mes", "mes_txt": "Les setmanes del mes, amb la peça que va obrir cada número.", "mes_ant": "Mes anterior", "mes_sig": "Mes següent", "ver_semana": "Tota la setmana, per seccions", "con_nb": "Amb el pòdcast i el vídeo de cada grup", "boletines_h": "Butlletins setmanals anteriors", "boletines_txt": "Fins al novembre de 2026, cada grup tenia el seu propi butlletí setmanal. Continuen al seu web:",
         "todos_numeros": "Hemeroteca: tots els números",
@@ -1805,11 +1805,15 @@ def grupo_pieza(x):
 def bloque_notebook(sem, m):
     """Pódcast y vídeo de NotebookLM de cada grupo. El vídeo no se carga hasta que se pulsa (youtube-nocookie):
     abrir la página no avisa a YouTube. El audio, sin precarga."""
+    # Los boletines semanales de antes (ADR 0034): cada grupo, el suyo; el filtro deja solo el elegido
+    anteriores = (f'<p class="nb-anteriores">{L["nb_anteriores"]}: '
+                  + "".join(f'<span data-grupo="{g}">{enlace(u, GRUPOS[g][0])}</span>' for g, u in BOLETINES.items())
+                  + "</p>")
     if not m:
         domingo = lunes_de(sem) + datetime.timedelta(days=6)
         if datetime.date.today() <= domingo + datetime.timedelta(days=2):
-            return f'<p class="nb-pendiente">{icono("video")} {L["nb_pendiente"]}</p>'
-        return ""
+            return f'<p class="nb-pendiente">{icono("video")} {L["nb_pendiente"]}</p>{anteriores}'
+        return anteriores
     fichas = []
     for g, (nombre, _) in GRUPOS.items():
         x = m.get(g) or {}
@@ -1836,12 +1840,13 @@ def bloque_notebook(sem, m):
   <p class="nb-enlaces">{" · ".join(enlaces)}</p>
 </article>""")
     if not fichas:
-        return ""
+        return anteriores
     es = f' {L["nb_es"]}' if L["nb_es"] else ""
     return f"""<section class="notebook" aria-labelledby="t-nb">
   <h2 id="t-nb">{icono("video")} {L["nb_h"]}</h2>
   <p class="nb-txt">{L["nb_txt"]}{es}</p>
   <div class="nb-grupos">{"".join(fichas)}</div>
+  {anteriores}
 </section>"""
 
 
