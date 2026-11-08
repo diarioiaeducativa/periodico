@@ -51,8 +51,9 @@ siendo la de hoy.
   un documento) se cita como crédito («creada por …»), con el nombre tal como aparece.
 - **Los cargos, solo si tienen que ver con la noticia** (administrar un grupo, ser coautor del
   diario): se nombran si la noticia trata de eso, por ejemplo un cambio de normas del grupo. Si no,
-  la persona es un docente más, sin cargo en el titular ni en el texto. Juanjo de Haro y Raül
+  la persona es un docente más, sin cargo en el titular ni en el texto. Juan José de Haro y Raül
   Torres, como cualquiera: si el recurso es suyo, se les nombra como crédito igual que a los demás.
+  En el diario, «Juan José de Haro», aunque en los grupos firme «Juanjo».
 
 ## Rigor (lo más importante)
 

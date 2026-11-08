@@ -69,8 +69,9 @@ de `publicado.txt`.
 ## Personas
 
 - Se nombra a la autora o el autor del recurso, como crédito («creada por …»), con el nombre
-  tal como figura en la ficha. **Juanjo de Haro, como cualquiera**: si el recurso es suyo, se le
-  nombra y `autoria` lleva su nombre igual que la de los demás. Los cargos (administrar un grupo,
+  tal como figura en la ficha. **Juan José de Haro, como cualquiera**: si el recurso es suyo, se le
+  nombra y `autoria` lleva su nombre igual que la de los demás. En el diario es «Juan José de
+  Haro», también en `autoria`, aunque la ficha diga «Juanjo». Los cargos (administrar un grupo,
   ser coautor del diario), solo si tienen que ver con la noticia.
 - En modo **semana**, los recursos de una misma persona van juntos y seguidos, y la pieza
   puede decirlo («Felip Sarroca suma esta semana tres aplicaciones de química…»).

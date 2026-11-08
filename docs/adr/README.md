@@ -19,7 +19,7 @@
 | [0015](0015-el-numero-en-instagram.md) | El número de cada día en Instagram, como carrusel |
 | [0016](0016-videos-y-la-semana-en-video.md) | Vídeos en el diario y «La semana en vídeo» cada domingo |
 | [0017](0017-indice-de-lo-publicado-para-el-bot.md) | Índice de lo publicado para el Bot de IA Educativa |
-| [0018](0018-juanjo-nombrado-como-cualquier-autor.md) | Juanjo de Haro, nombrado como cualquier autor |
+| [0018](0018-juanjo-nombrado-como-cualquier-autor.md) | Juan José de Haro, nombrado como cualquier autor |
 | [0019](0019-codigo-de-la-redaccion-publico.md) | El código de la redacción, público y con historial nuevo |
 | [0020](0020-evaluacion-vcer-en-el-pie.md) | La evaluación VCER, en el pie |
 | [0021](0021-ningun-dia-sin-numero.md) | Ningún día sin número: reserva, vigilante, recuperación y reintentos de publicación |

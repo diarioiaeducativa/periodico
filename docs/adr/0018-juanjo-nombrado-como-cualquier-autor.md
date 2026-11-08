@@ -1,4 +1,4 @@
-# 18. Juanjo de Haro, nombrado como cualquier autor
+# 18. Juan José de Haro, nombrado como cualquier autor
 
 Fecha: 2026-11-05 · Estado: aceptado
 
@@ -14,8 +14,13 @@ añade mi nombre y que no vuelva a pasar».
 
 ## Decisión
 
-- Juanjo de Haro se nombra como crédito igual que cualquier otro autor, con el nombre que figura
-  en la ficha o en el documento («Juanjo de Haro» en el repositorio). La regla común no cambia:
+- Juan José de Haro se nombra como crédito igual que cualquier otro autor.
+- **En el diario, «Juan José de Haro»**, aunque en los grupos y en su ficha del repositorio firme
+  «Juanjo» (08-11-2026, Juanjo: «Juanjo es más informal y lo uso para firmar en las redes; Juan
+  José es más formal y lo uso para firmar artículos o cosas más serias»). Así lo dicen los
+  encargos de redacción, Biblioteca, Repositorio y reportaje y sus repasos; los avisos de Telegram
+  y el guion de los vídeos, que van a las redes, siguen con «Juanjo». Lo publicado hasta el 08-11
+  se corrigió en los cinco idiomas, también la `autoria` de sus recursos. La regla común no cambia:
   solo se nombra a quien ha hecho un recurso, nunca a quien opina o pregunta ni a quien sube un
   documento ajeno.
 - Cambiado en todos los encargos que lo excluían: `redaccion.md`, `repositorio.md`,

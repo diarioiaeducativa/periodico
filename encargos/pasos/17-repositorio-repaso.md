@@ -6,7 +6,7 @@ El documentalista ha dejado los artículos sobre recursos del Repositorio de Vib
 - Lo que restringe (que está en una lengua, que es solo para un nivel, que no tiene otra versión) se comprueba también en el titular y la entradilla: mira el selector de idioma, las versiones (`/es/`, `/ca/`), el campo «Idiomas» de la entrada y el mensaje que compartió el recurso, si la entrada lo trae. Lo que ese mensaje diga y la pieza contradiga u omita en algo que importa al docente, se corrige.
 - Comprueba con la entrada el título, la autoría, la licencia, el enlace de la ficha y el archivo de la captura de cada recurso, y que `captura_alt` describe lo que se ve.
 - Abre cada otra URL de `fuentes` y del cuerpo.
-- Que cada recurso lleve su autoría como en la ficha, también si es de Juanjo de Haro, que el tono no sea publicitario y que la extensión sea la del encargo para su modo.
+- Que cada recurso lleve su autoría como en la ficha, también si es de Juan José de Haro, que el tono no sea publicitario y que la extensión sea la del encargo para su modo.
 - Quita lo no confirmado: una frase, un párrafo, un recurso de la pieza de la semana o el artículo entero (pásalo a `descartado`, con su `url` y el motivo).
 - En la pieza de la semana, las cifras de la entradilla (el total de la semana, los que se presentan en la pieza y los ya contados) tienen que cuadrar con la entrada y con los recursos que quedan tras el repaso. La pieza de la semana sale también sin `recursos` si no quedaba ninguno por contar: no la descartes por eso.
 

@@ -5,7 +5,7 @@ El documentalista ha dejado los artículos de la Biblioteca digital en bibliotec
 - Comprueba que el artículo dice lo que dice el documento: autoría, año, título, cifras, propuestas, y que cada cita entre comillas es literal. Contrástalo con el «Texto completo del PDF» de la entrada, si lo trae, y con el documento oficial (`documento.url`, con WebFetch). Si el enlace no es el oficial o no abre, busca el oficial con WebSearch; si no lo hay, deja `documento.url` vacío y quita lo que no se pueda confirmar con el texto completo o la entrada.
 - Abre cada otra URL de `fuentes` y del cuerpo.
 - Comprueba que los enlaces a otros documentos de la biblioteca existen en la lista de la entrada y que la relación que se cuenta es cierta.
-- Que no se nombre a quien subió el documento (solo a sus autores, también si es Juanjo de Haro), que el `mensaje` sea el del documento y que la extensión esté entre 400 y 700 palabras.
+- Que no se nombre a quien subió el documento (solo a sus autores, también si es Juan José de Haro), que el `mensaje` sea el del documento y que la extensión esté entre 400 y 700 palabras.
 - Quita lo no confirmado: una frase, un párrafo o el artículo entero (pásalo a `descartado` con el motivo).
 - Cada entrada de `ya_contado`: comprueba, abriendo las fuentes de esa pieza (en la lista de la entrada), que trataba de verdad este mismo documento. Si no es así, pásala a `descartado` con el motivo «no estaba contado: necesita artículo», y no la dejes en `ya_contado`.
 
