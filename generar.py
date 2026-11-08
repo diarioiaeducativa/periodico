@@ -2184,7 +2184,7 @@ SCRIPT_WIDGET = """<script>
   var q=new URLSearchParams(location.search), sec=q.get('seccion')||'', gr=q.get('grupo')||'', pieza=q.get('pieza')||'';
   if(CLAVES.indexOf(sec)<0) sec=''; if(!GR[gr]) gr='';
   if(!/^\\d{4}-\\d{2}-\\d{2}\\/[\\w-]+$/.test(pieza)) pieza='';
-  var n=Math.min(20,Math.max(1,parseInt(q.get('n'),10)||5)), estilo=q.get('estilo')==='tarjetas'?'tarjetas':'lista';
+  var n=Math.min(20,Math.max(1,parseInt(q.get('n'),10)||5)), estilo=q.get('estilo')==='lista'?'lista':'tarjetas';   // por defecto, tarjetas con dibujo
   var caja=document.getElementById('contenido'), mas=document.getElementById('mas'), filtro=document.getElementById('filtro');
   function el(t,c,x){var e=document.createElement(t); if(c)e.className=c; if(x!=null)e.textContent=x; return e;}
   function enlace(it,c){var a=el('a',c,it.titular); a.href=it.url; a.target='_blank'; a.rel='noopener'; return a;}
@@ -2316,7 +2316,7 @@ SCRIPT_PTW = """<script>
   function url(){
     var p=new URLSearchParams();
     ['seccion','grupo'].forEach(function(k){if(v(k))p.set(k,v(k));});
-    if(v('n')&&v('n')!=='5')p.set('n',v('n')); if(v('estilo')==='tarjetas')p.set('estilo','tarjetas');
+    if(v('n')&&v('n')!=='5')p.set('n',v('n')); if(v('estilo')==='lista')p.set('estilo','lista');
     if(v('tema')!=='auto')p.set('tema',v('tema'));
     var s=p.toString(); return B[v('idioma')]+'insertar.html'+(s?'?'+s:'');
   }
@@ -2370,13 +2370,13 @@ def pagina_para_tu_web(eds):
   <div class="ptw-campo"><label for="ptw-grupo">{L["ptw_grupo"]}</label><select id="ptw-grupo" name="grupo">{grupos}</select></div>
   <div class="ptw-campo"><label for="ptw-n">{L["ptw_cuantas"]}</label><input id="ptw-n" name="n" type="number" min="1" max="20" value="5" inputmode="numeric"></div>
   <div class="ptw-campo"><label for="ptw-idioma">{L["idioma"]}</label><select id="ptw-idioma" name="idioma">{idiomas}</select></div>
-  <fieldset class="ptw-campo"><legend>{L["ptw_aspecto"]}</legend><div class="ptw-opciones">{radios("estilo", [("lista", ICONO_LISTA + " " + L["ptw_lista"]), ("tarjetas", ICONO_TARJETAS + " " + L["ptw_tarjetas"])])}</div></fieldset>
+  <fieldset class="ptw-campo"><legend>{L["ptw_aspecto"]}</legend><div class="ptw-opciones">{radios("estilo", [("tarjetas", ICONO_TARJETAS + " " + L["ptw_tarjetas"]), ("lista", ICONO_LISTA + " " + L["ptw_lista"])])}</div></fieldset>
   <fieldset class="ptw-campo"><legend>{L["ptw_tema"]}</legend><div class="ptw-opciones">{radios("tema", [("auto", L["ptw_tema_auto"]), ("claro", L["ptw_claro"]), ("oscuro", L["ptw_oscuro"])])}</div></fieldset>
-  <div class="ptw-campo"><label for="ptw-alto">{L["ptw_alto"]}</label><input id="ptw-alto" name="alto" type="number" min="150" max="3000" step="10" value="625" inputmode="numeric"></div>
+  <div class="ptw-campo"><label for="ptw-alto">{L["ptw_alto"]}</label><input id="ptw-alto" name="alto" type="number" min="150" max="3000" step="10" value="975" inputmode="numeric"></div>
 </form>
 <div class="ptw-resultado">
   <h3>{L["ptw_vista"]}</h3>
-  <div class="ptw-vista"><iframe id="ptw-iframe" title="{e(L["ptw_vista"])}" width="100%" height="625"></iframe></div>
+  <div class="ptw-vista"><iframe id="ptw-iframe" title="{e(L["ptw_vista"])}" width="100%" height="975"></iframe></div>
 </div>
 </div>
 <div class="ptw-codigo">

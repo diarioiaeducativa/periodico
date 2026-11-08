@@ -19,7 +19,7 @@ completos, un widget para incrustar y un botón para republicar una pieza entera
   la tarjeta de una pieza, los canales RSS y las condiciones para republicar.
 - **Widget** (`insertar.html`, uno por idioma): una página sin cabecera ni pie, pensada para un
   `<iframe>`. Todo va en la dirección: `seccion` (una sección, `reportaje` o `breves`), `grupo`
-  (`chatgpt`, `vce`, `edumedia`), `n` (1 a 20), `estilo` (`lista` o `tarjetas`), `tema` (`claro`,
+  (`chatgpt`, `vce`, `edumedia`), `n` (1 a 20), `estilo` (`tarjetas` con dibujo, por defecto desde el 08-11-2026 a petición de Juanjo, o `lista`), `tema` (`claro`,
   `oscuro`; sin él, el del sistema de quien mira) y `pieza=AAAA-MM-DD/id` para la tarjeta de una sola
   pieza. Los enlaces se abren en otra pestaña. Lee `noticias.json` o `noticias-<filtro>.json` (las 50
   últimas) y, para una pieza, `datos/AAAA-MM.json` (todo lo de ese mes). Sin cookies ni contadores.
