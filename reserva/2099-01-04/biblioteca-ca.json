@@ -1,0 +1,55 @@
+{
+  "fecha": "2099-01-04",
+  "piezas": [
+    {
+      "id": "intef-guia-ia-v2",
+      "seccion": "biblioteca",
+      "importancia": 2,
+      "grupo": "chatgpt",
+      "antetitulo": "Del fons de la biblioteca",
+      "titular": "L'INTEF actualitza la seva guia d'IA en educació amb deu principis ètics i un pla per fases perquè els centres la incorporin",
+      "entradilla": "La versió 2.0 de la guia del Ministeri d'Educació, publicada el setembre del 2026, ordena l'ús de la IA en tres perfils (alumnat, professorat i centre) i hi afegeix annexos llestos per a l'aula.",
+      "cuerpo": [
+        "La [Guía sobre el uso de la inteligencia artificial en el ámbito educativo](https://intef.es/Noticias/nueva-version-de-la-guia-sobre-el-uso-de-la-inteligencia-artificial-en-el-ambito-educativo/) la publica l'Instituto Nacional de Tecnologías Educativas y de Formación del Profesorado (INTEF), del Ministeri d'Educació, Formació Professional i Esports. La versió 2.0 és del setembre del 2026 i actualitza la primera edició, del 2024. S'adreça a tres perfils: l'alumnat, el professorat i els centres. Està en castellà, té més de cent pàgines i la seva llicència és Creative Commons Reconeixement-CompartirIgual 4.0. Continua sent útil perquè és el document de referència de l'administració educativa estatal.",
+        "El seu punt de partida és que «la qüestió central no ha de ser, doncs, si s'utilitza o no la IA, sinó com, per a què i en quines condicions». Situa l'alfabetització en IA en quatre àmbits (interactuar, crear, gestionar i modelar), presos del marc que l'OCDE i la Comissió Europea van publicar el 2026, [el que també es va compartir a la biblioteca](https://t.me/ChatGPTedu/21753/49714) amb el títol «Cómo preparar a los alumnos para la era de la IA». Per a cada perfil inclou una taula de desafiaments amb mesures preventives. En l'alumnat hi figuren l'externalització cognitiva i la «il·lusió de competència»; entre les mesures, tasques que facin visible el procés, defenses orals i pràctica sense IA en les fases inicials de l'aprenentatge.",
+        "Per al professorat, la guia recorda que el Reglament europeu d'IA classifica com d'alt risc els sistemes destinats a avaluar resultats de l'aprenentatge: no prohibeix avaluar amb IA, però imposa obligacions a qui la desplega. Distingeix entre qualificar i oferir retroalimentació contínua, i esmenta els esborranys de retroalimentació que el docent supervisa. Quan l'alumnat té autonomia, proposa l'autoavaluació guiada amb rúbriques dissenyades pel docent. En protecció de dades recorda que la llei espanyola només permet basar el tractament en el propi consentiment a partir dels 14 anys.",
+        "Per al centre, proposa integrar la IA en el Plan Digital de Centro i no com una suma d'iniciatives aïllades del professorat, en set fases: comissió de coordinació, anàlisi de la situació de partida, revisió de la normativa, objectius, línies d'actuació, implantació progressiva i seguiment i revisió. Recomana prioritzar les eines posades a disposició o autoritzades per les administracions educatives, informar les famílies i vigilar l'aparició de dependències i l'impacte en l'equitat i el benestar digital. El reglament que cita és el [Reglament (UE) 2024/1689](https://t.me/ChatGPTedu/21753/34057), també present a la biblioteca.",
+        "Entre les novetats hi ha la secció ètica, amb deu principis (enfocament centrat en la persona, integritat acadèmica, igualtat d'oportunitats, supervisió humana, finalitat educativa, transparència, privadesa, ús responsable, benestar i sostenibilitat, i reflexió i anticipació). Cadascun porta una bona pràctica i una pràctica a revisar; per exemple, avaluar una tasca sense saber quina part va generar la IA. Una altra novetat és l'apartat ambiental, que recull dades d'altres fonts: segons la guia, una consulta a una IA generativa consumeix deu vegades més electricitat que una cerca tradicional i entre deu i cinquanta preguntes equivalen a mig litre d'aigua. Són xifres d'estudis que enumera en les seves referències; no les verifica pel seu compte.",
+        "Els límits són els d'una guia institucional: no aporta dades pròpies sobre resultats a l'aula, el seu marc legal és l'espanyol i l'europeu, i moltes recomanacions són generals. El document indica que algunes il·lustracions es van elaborar amb ChatGPT i que es van usar ChatGPT i Gemini com a suport lingüístic, amb l'aprovació final dels continguts a càrrec de l'INTEF. A la biblioteca hi ha també la [versió 3.0 de les Orientaciones de l'INTEF sobre eines digitals i protecció de dades](https://t.me/ChatGPTedu/21753/50331), del mateix organisme i centrada en un tema que aquesta guia tracta només en part.",
+        "Per a un docent, el més aprofitable és al final. L'annex 1 proposa situacions d'aprenentatge per etapa, competència clau i àmbit de l'alfabetització en IA. L'annex 2 és un model de declaració d'ús d'IA per a l'alumnat, i l'annex 3, un qüestionari de reflexió de deu preguntes per conèixer-ne el punt de partida. Per començar, convé llegir la taula de desafiaments del perfil que correspongui, passar als deu principis i, en un equip directiu, a les set fases de la secció 2.3.2."
+      ],
+      "documento": {
+        "titulo": "Guía sobre el uso de la inteligencia artificial en el ámbito educativo (versión 2.0)",
+        "autoria": "INTEF, Ministerio de Educación, Formación Profesional y Deportes",
+        "anyo": "2026",
+        "idioma": "castellà",
+        "licencia": "Creative Commons Reconeixement-CompartirIgual 4.0 (CC BY-SA 4.0)",
+        "url": "https://intef.es/Noticias/nueva-version-de-la-guia-sobre-el-uso-de-la-inteligencia-artificial-en-el-ambito-educativo/"
+      },
+      "fuentes": [
+        {"titulo": "INTEF: Nueva versión de la «Guía sobre el uso de la inteligencia artificial en el ámbito educativo» (en castellà)", "url": "https://intef.es/Noticias/nueva-version-de-la-guia-sobre-el-uso-de-la-inteligencia-artificial-en-el-ambito-educativo/"},
+        {"titulo": "Code INTEF: Actualización de la guía (versión 2) (en castellà)", "url": "https://code.intef.es/noticias/guia-sobre-el-uso-de-la-inteligencia-artificial-en-el-ambito-educativo-version-2/"},
+        {"titulo": "OCDE i Comissió Europea: Cómo preparar a los alumnos para la era de la IA (a la biblioteca) (en castellà)", "url": "https://t.me/ChatGPTedu/21753/49714"},
+        {"titulo": "Reglament (UE) 2024/1689 (a la biblioteca)", "url": "https://t.me/ChatGPTedu/21753/34057"},
+        {"titulo": "INTEF: Orientaciones sobre herramientas digitales y protección de datos, v3.0 (a la biblioteca) (en castellà)", "url": "https://t.me/ChatGPTedu/21753/50331"}
+      ],
+      "mensaje": {"grupo": "chatgpt", "id": 52295},
+      "comprobado": "Revisor: contrastado con el texto completo del PDF de la entrada (cita literal, desafíos y medidas de la tabla 1, Reglamento y alto riesgo, edad de 14 años, siete fases de 2.3.2, diez principios con buena práctica y práctica a revisar, cifras ambientales, anexos 1 a 3, nota final sobre ChatGPT y Gemini, primera versión de 2024). La noticia oficial del INTEF (intef.es, 8 de septiembre de 2026) confirma versión 2.0, septiembre de 2026, novedades y licencia CC BY-SA; su enlace de descarga (run.gob.es) lleva a un PDF del INTEF cuyo número de páginas no se pudo contrastar con el de la entrada, por eso el enlace del documento es la noticia oficial. Las cifras ambientales y la edad de 14 años son las que da la guía, sin comprobar en sus fuentes. Los títulos de los tres documentos de la biblioteca enlazados figuran en la lista de la entrada (el de la OCDE/Comisión Europea es la referencia que cita la guía); no se abrieron esos documentos. No hay piezas publicadas sobre esta guía en publicado.txt. Vigencia: sin edición posterior encontrada.",
+      "ilustracion": "Esquema en tres columnas (alumnado, profesorado, centro) sobre una base común con los cuatro ámbitos de la alfabetización en IA (interactuar, crear, gestionar, modelar); sobre la columna del centro, una escalera de siete peldaños que acaba en un círculo de revisión.",
+      "ilustracion_alt": "Tres targetes amb una figura humana, rotulades «Alumnat», «Professorat» i «Centre», recolzades en una base rotulada «Quatre àmbits»; sobre la targeta del centre puja una escala de set graons rotulada «Set fases» que acaba en un cercle amb una fletxa de revisió.",
+      "repaso": [
+        "Quitado «adopta como marco el Reglamento europeo de IA» (el texto lo trata como contexto normativo, no como marco adoptado).",
+        "Quitado «etapas no universitarias» (no confirmado en el texto) y «unas 114 páginas», sustituido por «más de cien páginas».",
+        "«Delegación ciega» no es un desafío de la tabla: se quita de la lista de desafíos del alumnado; añadida la medida de práctica sin IA en fases iniciales, que sí figura en la tabla.",
+        "Orientaciones v3.0: se quita que «se ocupa en detalle» del tema de datos (solo consta su título en la entrada); se deja la relación comprobable.",
+        "Precisado que el priorizar herramientas es de las puestas a disposición o autorizadas por las administraciones educativas, y que las cifras ambientales son «según la guía».",
+        "Recortado el cuerpo a menos de 700 palabras (quitado «aprender para, con y sobre la IA», que no se pudo confirmar, y duplicidades)."
+      ]
+    }
+  ],
+  "ya_contado": [],
+  "descartado": [
+    "mensaje 52135: no elegido, porque solo se escribe un artículo de reserva. Es el libro de Fadel et al. (2025), «Educación para la era de la inteligencia artificial», del que la biblioteca ya trae otra entrada con el mismo título del 23 de julio de 2025 (mensaje 34253); es un enlace con ficha y no se comprobó su vigencia en la fuente oficial, así que puede volver a proponerse si se aclara el duplicado.",
+    "mensaje 52876: no elegido, porque solo se escribe un artículo de reserva. Es el libro «Evaluar con inteligencia», de Chema Falcó Boudet (2026); en internet no se halló una fuente oficial que confirmara su edición ni su vigencia, y no se leyó su texto completo."
+  ]
+}

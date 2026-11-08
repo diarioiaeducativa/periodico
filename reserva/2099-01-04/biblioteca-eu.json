@@ -1,0 +1,55 @@
+{
+  "fecha": "2099-01-04",
+  "piezas": [
+    {
+      "id": "intef-guia-ia-v2",
+      "seccion": "biblioteca",
+      "importancia": 2,
+      "grupo": "chatgpt",
+      "antetitulo": "Liburutegiaren funtsetik",
+      "titular": "INTEFek eguneratu du hezkuntzako AAri buruzko gida: hamar printzipio etiko eta ikastetxeek txertatzeko fasekako plan bat",
+      "entradilla": "Hezkuntza Ministerioaren gidaren 2.0 bertsioak, 2026ko irailean argitaratuak, AAren erabilera hiru profiletan antolatzen du (ikasleak, irakasleak eta ikastetxea) eta gelarako prest dauden eranskinak gehitzen ditu.",
+      "cuerpo": [
+        "[Adimen artifizialaren erabilerari buruzko gida hezkuntza-eremuan](https://intef.es/Noticias/nueva-version-de-la-guia-sobre-el-uso-de-la-inteligencia-artificial-en-el-ambito-educativo/) Hezkuntza, Lanbide Heziketa eta Kirol Ministerioko Hezkuntza Teknologien eta Irakasleen Prestakuntzarako Institutu Nazionalak (INTEF) argitaratzen du. 2.0 bertsioa 2026ko irailekoa da eta 2024ko lehen edizioa eguneratzen du. Hiru profili zuzenduta dago: ikasleak, irakasleak eta ikastetxeak. Gaztelaniaz dago, ehun orrialde baino gehiago ditu eta Creative Commons Aitortu-PartekatuBerdin 4.0 lizentziapean dago. Erabilgarria izaten jarraitzen du, estatuko hezkuntza-administrazioaren erreferentziazko dokumentua baita.",
+        "Abiapuntua hau da: «Funtsezko gaia, beraz, ez da AA erabili ala ez, baizik eta nola, zertarako eta zer baldintzatan erabili». AAren alfabetatzea lau eremutan kokatzen du (elkarrekintzan aritzea, sortzea, kudeatzea eta modelatzea), OCDEk eta Europako Batzordeak 2026an argitaratutako esparrutik hartuak; [liburutegian ere partekatu zen](https://t.me/ChatGPTedu/21753/49714) «Nola prestatu ikasleak AAren aroa(ra)ko» izenburuarekin. Profil bakoitzerako erronken taula bat dauka, prebentzio-neurriekin. Ikasleen kasuan, kognizioaren kanpo-esleipena eta «gaitasun-ilusioa» agertzen dira; neurrien artean, prozesua ikusgai egiten duten zereginak, ahozko defentsak eta ikaskuntzaren hasierako faseetan AArik gabeko praktika.",
+        "Irakasleentzat, gidak gogorarazten du Europako AA Erregelamenduak arrisku handikotzat sailkatzen dituela ikaskuntza-emaitzak ebaluatzeko diren sistemak: ez du AArekin ebaluatzea debekatzen, baina hura ezartzen duenari betebeharrak ezartzen dizkio. Kalifikatzearen eta etengabeko feedbacka ematearen artean bereizten du, eta irakasleak gainbegiratzen dituen feedback-zirriborroak aipatzen ditu. Ikasleek autonomia dutenean, irakasleak diseinatutako errubrikekin gidatutako autoebaluazioa proposatzen du. Datu-babesari dagokionez, gogorarazten du Espainiako legeak 14 urtetik aurrera bakarrik onartzen duela tratamendua berariazko baimenean oinarritzea.",
+        "Ikastetxearentzat, AA Ikastetxeko Plan Digitalean integratzea proposatzen du, irakasleen ekimen isolatuen batura gisa utzi gabe, zazpi fasetan: koordinazio-batzordea, hasierako egoeraren azterketa, araudiaren berrikuspena, helburuak, jarduketa-ildoak, ezarpen progresiboa eta jarraipena eta berrikuspena. Hezkuntza-administrazioek eskura jarritako edo baimendutako tresnak lehenesteko, familiei informazioa emateko eta mendekotasunak agertzen diren eta ekitatean zein ongizate digitalean eraginik duen zaintzeko gomendatzen du. Aipatzen duen erregelamendua [(EB) 2024/1689 Erregelamendua](https://t.me/ChatGPTedu/21753/34057) da, hau ere liburutegian dagoena.",
+        "Berrikuntzen artean etika atala dago, hamar printziporekin (pertsonan zentratutako ikuspegia, osotasun akademikoa, aukera-berdintasuna, giza gainbegiratzea, hezkuntza-helburua, gardentasuna, pribatutasuna, erabilera arduratsua, ongizatea eta jasangarritasuna, eta hausnarketa eta aurreikuspena). Bakoitzak praktika on bat eta berrikusi beharreko praktika bat dakartza; adibidez, zeregin bat ebaluatzea zein zati sortu zuen AAk jakin gabe. Beste berrikuntza bat ingurumen-atala da, beste iturri batzuetako datuak biltzen dituena: gidaren arabera, AA sortzaile bati egindako kontsulta batek bilaketa tradizional batek baino hamar aldiz elektrizitate gehiago kontsumitzen du, eta hamar eta berrogeita hamar galdera artean erdi litro ura dira. Erreferentzietan zerrendatzen dituen azterlanen zifrak dira; ez ditu bere kabuz egiaztatzen.",
+        "Gida instituzional baten mugak ditu: ez du gelako emaitzei buruzko datu propiorik ematen, bere lege-esparrua Espainiakoa eta Europakoa da, eta gomendio asko orokorrak dira. Dokumentuak adierazten du ilustrazio batzuk ChatGPTrekin egin zirela eta ChatGPT eta Gemini hizkuntza-laguntza gisa erabili zirela, edukien azken onarpena INTEFek eginda. Liburutegian ere badago erakunde beraren [INTEFen Tresna digitalei eta datu-babesari buruzko orientabideen 3.0 bertsioa](https://t.me/ChatGPTedu/21753/50331), gida honek zati batean bakarrik jorratzen duen gai batean zentratua.",
+        "Irakasle batentzat, onuragarriena amaieran dago. 1. eranskinak ikaskuntza-egoerak proposatzen ditu etapaka, oinarrizko gaitasunka eta AAren alfabetatzearen eremuka. 2. eranskina ikasleentzako AA erabiltzeko adierazpen-eredu bat da, eta 3. eranskina, hausnarketa-galdetegi bat, hamar galderakoa, ikasleen abiapuntua ezagutzeko. Hasteko, komeni da dagokion profilaren erronken taula irakurtzea, hamar printzipioetara pasatzea eta, zuzendaritza-talde batean, 2.3.2 ataleko zazpi faseetara."
+      ],
+      "documento": {
+        "titulo": "Guía sobre el uso de la inteligencia artificial en el ámbito educativo (versión 2.0)",
+        "autoria": "INTEF, Ministerio de Educación, Formación Profesional y Deportes",
+        "anyo": "2026",
+        "idioma": "gaztelania",
+        "licencia": "Creative Commons Aitortu-PartekatuBerdin 4.0 (CC BY-SA 4.0)",
+        "url": "https://intef.es/Noticias/nueva-version-de-la-guia-sobre-el-uso-de-la-inteligencia-artificial-en-el-ambito-educativo/"
+      },
+      "fuentes": [
+        {"titulo": "INTEF: «Adimen artifizialaren erabilerari buruzko gida hezkuntza-eremuan» gidaren bertsio berria (gaztelaniaz)", "url": "https://intef.es/Noticias/nueva-version-de-la-guia-sobre-el-uso-de-la-inteligencia-artificial-en-el-ambito-educativo/"},
+        {"titulo": "Code INTEF: Gidaren eguneratzea (2. bertsioa) (gaztelaniaz)", "url": "https://code.intef.es/noticias/guia-sobre-el-uso-de-la-inteligencia-artificial-en-el-ambito-educativo-version-2/"},
+        {"titulo": "OCDE eta Europako Batzordea: Nola prestatu ikasleak AAren aroa(ra)ko (liburutegian) (gaztelaniaz)", "url": "https://t.me/ChatGPTedu/21753/49714"},
+        {"titulo": "(EB) 2024/1689 Erregelamendua (liburutegian) (gaztelaniaz)", "url": "https://t.me/ChatGPTedu/21753/34057"},
+        {"titulo": "INTEF: Tresna digitalei eta datu-babesari buruzko orientabideak, 3.0 bertsioa (liburutegian) (gaztelaniaz)", "url": "https://t.me/ChatGPTedu/21753/50331"}
+      ],
+      "mensaje": {"grupo": "chatgpt", "id": 52295},
+      "comprobado": "Revisor: contrastado con el texto completo del PDF de la entrada (cita literal, desafíos y medidas de la tabla 1, Reglamento y alto riesgo, edad de 14 años, siete fases de 2.3.2, diez principios con buena práctica y práctica a revisar, cifras ambientales, anexos 1 a 3, nota final sobre ChatGPT y Gemini, primera versión de 2024). La noticia oficial del INTEF (intef.es, 8 de septiembre de 2026) confirma versión 2.0, septiembre de 2026, novedades y licencia CC BY-SA; su enlace de descarga (run.gob.es) lleva a un PDF del INTEF cuyo número de páginas no se pudo contrastar con el de la entrada, por eso el enlace del documento es la noticia oficial. Las cifras ambientales y la edad de 14 años son las que da la guía, sin comprobar en sus fuentes. Los títulos de los tres documentos de la biblioteca enlazados figuran en la lista de la entrada (el de la OCDE/Comisión Europea es la referencia que cita la guía); no se abrieron esos documentos. No hay piezas publicadas sobre esta guía en publicado.txt. Vigencia: sin edición posterior encontrada.",
+      "ilustracion": "Esquema en tres columnas (alumnado, profesorado, centro) sobre una base común con los cuatro ámbitos de la alfabetización en IA (interactuar, crear, gestionar, modelar); sobre la columna del centro, una escalera de siete peldaños que acaba en un círculo de revisión.",
+      "ilustracion_alt": "Giza figura bat duten hiru txartel, «Ikasleak», «Irakasleak» eta «Ikastetxea» izenekoak, «Lau eremu» izeneko oinarri baten gainean; ikastetxearen txartelaren gainean, «Zazpi fase» izeneko zazpi mailako eskailera bat igotzen da, berrikuspen-gezi bat duen zirkulu batean amaitzen dena.",
+      "repaso": [
+        "Quitado «adopta como marco el Reglamento europeo de IA» (el texto lo trata como contexto normativo, no como marco adoptado).",
+        "Quitado «etapas no universitarias» (no confirmado en el texto) y «unas 114 páginas», sustituido por «más de cien páginas».",
+        "«Delegación ciega» no es un desafío de la tabla: se quita de la lista de desafíos del alumnado; añadida la medida de práctica sin IA en fases iniciales, que sí figura en la tabla.",
+        "Orientaciones v3.0: se quita que «se ocupa en detalle» del tema de datos (solo consta su título en la entrada); se deja la relación comprobable.",
+        "Precisado que el priorizar herramientas es de las puestas a disposición o autorizadas por las administraciones educativas, y que las cifras ambientales son «según la guía».",
+        "Recortado el cuerpo a menos de 700 palabras (quitado «aprender para, con y sobre la IA», que no se pudo confirmar, y duplicidades)."
+      ]
+    }
+  ],
+  "ya_contado": [],
+  "descartado": [
+    "mensaje 52135: no elegido, porque solo se escribe un artículo de reserva. Es el libro de Fadel et al. (2025), «Educación para la era de la inteligencia artificial», del que la biblioteca ya trae otra entrada con el mismo título del 23 de julio de 2025 (mensaje 34253); es un enlace con ficha y no se comprobó su vigencia en la fuente oficial, así que puede volver a proponerse si se aclara el duplicado.",
+    "mensaje 52876: no elegido, porque solo se escribe un artículo de reserva. Es el libro «Evaluar con inteligencia», de Chema Falcó Boudet (2026); en internet no se halló una fuente oficial que confirmara su edición ni su vigencia, y no se leyó su texto completo."
+  ]
+}
