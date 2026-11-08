@@ -30,8 +30,8 @@ desde el lunes 9 de noviembre de 2026 ya no saliera el boletín de siempre.
 - **Página de cada mes** (`mes/AAAA-MM/`), con sus semanas y la pieza que abrió cada número. Una semana es
   del mes en que cae su jueves, como manda la ISO 8601, para que no salga en dos meses.
 - **Hemeroteca** por meses y semanas, con los días de cada semana plegados (la más reciente, abierta) y, al
-  final, los boletines semanales anteriores en su web. El de EduMedia-IAG se añadirá cuando se sepa dónde
-  está publicado (`BOLETINES` en `generar.py`). Los enlaces a cada número no cambian.
+  final, los boletines semanales anteriores de los tres grupos en su web (`BOLETINES` en `generar.py`). Los
+  enlaces a cada número no cambian.
 - **El contrato con el boletín**: `multimedia/AAAA-WW.json` (formato en `multimedia/LEEME.md`). El vídeo
   no se carga hasta que se pulsa, desde youtube-nocookie, para que abrir la página no avise a YouTube; el
   audio, sin precarga. En los otros idiomas se dice que están en castellano.
