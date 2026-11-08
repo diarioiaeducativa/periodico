@@ -39,7 +39,8 @@ guardado en el navegador y de 25 meses para los datos.
   desde un marco, que los navegadores separan. La vuelta es fija, al panel, para que nadie use el
   salto para llevar a otra web; se salta desde una página sin cambio de idioma, para que la portada
   no se adelante, y si el navegador no deja guardar nada no se salta, para no entrar en un bucle.
-  Juanjo pidió que fuera automático y sin enlace manual (08-11-2026). Los navegadores en los que
+  Juanjo pidió que fuera automático (08-11-2026), y que el pie del panel conservara el enlace manual
+  para marcar a mano otro navegador. Los navegadores en los que
   los autores leen el diario sin abrir nunca el panel siguen contando. El widget para otras webs
   (`insertar.html`, ADR 0032) no lleva contador: se ve dentro de webs ajenas.
 - **El servidor es el hosting de IONOS** (`https://bilateria.org/app/diario-ia-educativa/`, código en

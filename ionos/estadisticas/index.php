@@ -240,7 +240,7 @@ form.entrar button { margin-top:1rem; font:inherit; font-weight:600; padding:.55
   </div>
   <p class="idiomas" id="idiomas"></p>
   <div class="caja" style="margin-top:.6rem"><table><tbody id="top"></tbody></table></div>
-  <p class="aviso" style="margin-top:1rem">Cada página suma una vez por visita. Sin cookies ni datos de quien lee: solo sumas por hora, que se borran a los 25 meses. Las visitas desde los navegadores en los que habéis abierto este panel no cuentan.</p>
+  <p class="aviso" style="margin-top:1rem">Cada página suma una vez por visita. Sin cookies ni datos de quien lee: solo sumas por hora, que se borran a los 25 meses. Las visitas desde los navegadores en los que habéis abierto este panel no cuentan. Para que tampoco cuente otro navegador, abre allí una vez <a href="https://diarioiaeducativa.github.io/redaccion.html?nocontar=1" target="_blank" rel="noopener">el diario con esta dirección</a> (<a href="https://diarioiaeducativa.github.io/redaccion.html?nocontar=0" target="_blank" rel="noopener">volver a contar</a>).</p>
 </main>
 <script>
 (function(){
