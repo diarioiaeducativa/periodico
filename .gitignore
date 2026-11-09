@@ -27,3 +27,5 @@ dominical/
 # Contador de visitas (ADR 0033): las contraseñas y los datos, solo en el hosting
 ionos/estadisticas/config.php
 ionos/estadisticas/data/*.json
+# Los vídeos van a Internet Archive (ADR 0037); en el NAS se queda el del domingo para el dominical
+videos/*.mp4
