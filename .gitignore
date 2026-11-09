@@ -32,3 +32,6 @@ videos/*.mp4
 # El comentario de la semana (ADR 0038): la entrada y el borrador se rehacen cada vez
 comentario-semana-entrada/
 comentario-semana-borrador/
+# «Hace un año» (ADR 0040): la entrada y el borrador se rehacen cada noche
+hace-un-ano-entrada/
+hace-un-ano-borrador/

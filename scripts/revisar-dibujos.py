@@ -87,6 +87,9 @@ def dibujos(fecha, idioma):
     bib = RAIZ / "biblioteca" / f"{fecha}.json"   # los artículos de la Biblioteca digital (ADR 0006)
     if bib.exists():
         piezas += json.loads(bib.read_text()).get("piezas", [])
+    hu = RAIZ / "hace-un-ano" / f"{fecha}.json"   # «Hace un año» (ADR 0040)
+    if hu.exists():
+        piezas += json.loads(hu.read_text()).get("piezas", [])
     rep = RAIZ / "reportajes" / f"{fecha}.json"
     if rep.exists():
         r = json.loads(rep.read_text())

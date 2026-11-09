@@ -95,6 +95,10 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
   `mes/AAAA-MM/` y la hemeroteca por semanas. El boletín deja el pódcast y el vídeo de cada grupo en
   `multimedia/AAAA-WW.json` (formato en su `LEEME.md`) y `reloj.sh` vuelve a publicar solo la web con
   `scripts/publicar-web.sh`, con el número del día ya publicado.
+- **Hace un año** (ADR 0040): `scripts/hace-un-ano.sh FECHA`, cada noche: los mensajes del mismo día
+  del año anterior al de publicación (±1 día), una pieza en `hace-un-ano/` de 150 a 250 palabras, sin
+  repetir tema del último mes, con un díptico «Entonces / Ahora»; en la portada, un recuadro a todo el
+  ancho con lo de hoy; sección sin entrada en el menú (`SECCIONES_FUERA`), con enlace en el pie.
 - **Comentario de la semana** (ADR 0038): `scripts/comentario-semana.sh AAAA-WW`, que lanza `noche.sh`
   la noche del domingo (o con `COMENTARIO=1`): uno general y uno por grupo en `comentario-semana/`,
   de 150 a 250 palabras; `scripts/comentario_semana.py comprobar` dice si vale.

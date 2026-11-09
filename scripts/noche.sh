@@ -14,6 +14,7 @@
 #   4. traductor (Sonnet, una vez por idioma: catalán, gallego, euskera e inglés, ADR 0026)  ‖  avisos
 #      (Sonnet) → avisos/PUBLICA.json
 # El sábado, después, el guionista del reel de la semana (Sonnet) y el vídeo (scripts/reel-semana.sh, ADR 0016).
+# Cada noche, entre el 3 y el 4, «Hace un año» (scripts/hace-un-ano.sh, tres agentes más, ADR 0040).
 # Si FECHA es domingo, entre el 3 y el 4 va el comentario de la semana (scripts/comentario-semana.sh, tres
 # agentes más, ADR 0038), para la página semana/AAAA-WW/.
 # Si FECHA es sábado, entre el 3 y el 4 va el reportaje del domingo (scripts/reportaje.sh, cinco
@@ -220,6 +221,11 @@ bash scripts/biblioteca.sh "$FECHA"
 # 3 quater. El repositorio de Vibe Coding Educativo, si el número se queda corto o es viernes (ADR 0008). Nunca impide el número.
 bash scripts/repositorio.sh "$FECHA"
 [ $? -le 2 ] || { log "el repositorio falló de forma inesperada: sale sin él"; rm -f repositorio/"$FECHA".json $(traducidos repositorio); }
+
+# 3 quinquies (antes). «Hace un año» (ADR 0040): lo que se hablaba en los grupos el mismo día del año anterior.
+# Nunca impide el número.
+bash scripts/hace-un-ano.sh "$FECHA"
+[ $? -le 2 ] || { log "«Hace un año» falló de forma inesperada: sale sin él"; rm -f hace-un-ano/"$FECHA".json $(traducidos hace-un-ano); }
 
 # 3 quinquies. El domingo cierra la semana de los mensajes: el comentario de la semana para su página (ADR 0038).
 # Nunca impide el número.

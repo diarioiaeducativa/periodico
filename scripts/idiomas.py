@@ -7,7 +7,7 @@ traductor y la comprobación de lo traducido, sin IA.
     scripts/idiomas.py encargo PASO IDIOMA            el encargo encargos/pasos/PASO.md para ese idioma
     scripts/idiomas.py comprobar TIPO FECHA IDIOMA    comprueba lo traducido; quita lo que no vale
 
-TIPO: edicion (edición, viñeta y dibujos), dibujos, biblioteca, repositorio, reportaje o comentario-semana
+TIPO: edicion (edición, viñeta y dibujos), dibujos, biblioteca, repositorio, reportaje, hace-un-ano o comentario-semana
 (con la semana AAAA-WW en lugar de la fecha). Lo que se
 quita deja la página de ese idioma con el castellano, como cuando falta una traducción. Sale con 1
 si ha quitado algo, y lo dice en una línea."""
@@ -177,6 +177,8 @@ def comprobar(tipo, fecha, c):
                 salida.append(f"reportajes-{c}/{fecha}.json quitado: " + "; ".join(malos))
         return salida
     if tipo in ("biblioteca", "repositorio"):
+        return comprobar_json(tipo, fecha, c) + comprobar_dibujos(fecha, c)
+    if tipo == "hace-un-ano":   # ADR 0040
         return comprobar_json(tipo, fecha, c) + comprobar_dibujos(fecha, c)
     if tipo == "comentario-semana":   # aquí «fecha» es la semana, AAAA-WW (ADR 0038)
         from comentario_semana import traduccion

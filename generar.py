@@ -29,6 +29,8 @@ MAQUETA = "diario"
 # Dirección pública del sitio, para los enlaces absolutos del RSS y de la vista previa al compartir
 BASE = os.environ.get("PERIODICO_BASE", "https://diarioiaeducativa.github.io/")
 ORDEN_SECCIONES = ["herramientas", "vibecoding", "multimedia", "debates", "novedades", "biblioteca"]
+SECCIONES_FUERA = ["hace-un-ano"]   # con su página, pero sin entrada en el menú: se llega desde el número y el pie (ADR 0040)
+TODAS_SECCIONES = ORDEN_SECCIONES + SECCIONES_FUERA
 BIBLIOTECA_PORTADA = 3   # artículos de la Biblioteca en la portada, aparte de MAX_PIEZAS (ADR 0006)
 TEMA_BIBLIOTECA = "https://t.me/ChatGPTedu/21753"
 REPOSITORIO = "https://vibe-coding-educativo.github.io/app_edu/"   # el Repositorio de recursos de VCE (ADR 0008)
@@ -56,7 +58,7 @@ IDIOMAS = {
         "meses": ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto",
                   "septiembre", "octubre", "noviembre", "diciembre"],
         "secciones": {"herramientas": "Herramientas", "vibecoding": "Vibe coding", "multimedia": "Multimedia",
-                      "debates": "Debates", "novedades": "Instituciones y empresas", "biblioteca": "Biblioteca"},
+                      "debates": "Debates", "novedades": "Instituciones y empresas", "biblioteca": "Biblioteca", "hace-un-ano": "Hace un año"},
         "actualizado": "Actualizado el", "num": "Núm.", "numero_largo": "Número",
         "tema": "Cambiar entre tema claro y oscuro", "navegacion": "Navegación",
         "quees": "La redacción", "portada": "Portada", "volver": "Volver a la portada",
@@ -90,6 +92,7 @@ IDIOMAS = {
         "leer_presentacion": "Leer la presentación", "presentacion": "Cómo se hace este diario: la presentación del número 1",
         "sin_vinetas": "Todavía no hay viñetas.",
         "descripciones": {
+            "hace-un-ano": "Cada día, algo que se hablaba en los grupos el mismo día del año anterior, contado desde hoy: lo que ha cambiado, lo que ya no existe y lo que el tiempo ha resuelto.",
             "herramientas": "Asistentes, servicios y modelos de inteligencia artificial de los que se habla en los grupos, explicados desde su uso docente: qué ofrecen, en qué condiciones y para qué puede servir cada uno en clase.",
             "vibecoding": "Aplicaciones que el profesorado crea describiéndolas a una inteligencia artificial, sin necesidad de saber programar, y lo que se aprende en los grupos para hacerlas: instrucciones para generar recursos, agentes de programación y soluciones a problemas habituales. Cada aplicación se presenta con el nombre de su autor o autora, y las que entran en el {repositorio} de Vibe Coding Educativo tienen aquí su artículo.",
             "multimedia": "Audio, vídeo e imagen con inteligencia artificial generativa: las herramientas para crear voces, ilustraciones y vídeos, y los flujos de trabajo que comparten los grupos para producir material educativo.",
@@ -115,7 +118,7 @@ IDIOMAS = {
         "buscar_txt": "Busca en todo lo publicado en el diario: piezas, breves, artículos de la Biblioteca y reportajes, en castellano. Encuentra también las formas de una misma palabra: «evaluar» encuentra «evaluación».",
         "resultados_1": "1 resultado", "resultados_n": "{n} resultados", "sin_resultados": "No hay nada publicado con esas palabras.",
         "todas": "Todas", "mas_resultados": "Más resultados", "buscando": "Buscando…", "sin_buscador": "El buscador no ha podido cargarse.",
-        "reportaje": "El reportaje del domingo", "reportajes": "Reportajes", "leer_reportaje": "Leer el reportaje",
+        "reportaje": "El reportaje del domingo", "reportajes": "Reportajes", "leer_reportaje": "Leer el reportaje", "leer_hace_un_ano": "Leer cómo ha cambiado",
         "claves": "Claves", "en_el_diario": "En el diario esta semana", "semana_repo": "Cada sábado, el diario repasa los recursos que han entrado durante la semana en el {repositorio} de Vibe Coding Educativo, la colección de aplicaciones y materiales con licencia abierta que crea y comparte el profesorado de esa comunidad.", "ya_contados": "Ya contados en el diario", "otras_semanas": "Otras semanas del repositorio", "sin_reportajes": "Todavía no hay reportajes.",
         "reportajes_txt": "Cada domingo, un tema de la semana tratado a fondo.", "palabras": "minutos de lectura",
         "redaccion": {
@@ -148,8 +151,10 @@ IDIOMAS = {
                 ("Verificador", "no ha escrito nada: abre cada fuente del reportaje y quita lo que no puede confirmar."),
                 ("Juez de reportajes", "cuando hay un reportaje de reserva, compara el nuevo con él sin haber escrito ninguno de los dos y elige el mejor para publicarlo."),
                 ("Guionista de vídeo", "los sábados por la noche elige lo más destacado de la semana, como mínimo una pieza de cada número, y escribe los textos de «La semana en vídeo» en los cinco idiomas, con el reportaje del domingo como última escena, y el texto que lo acompaña en las redes. Un programa comprueba que no falte ningún día y que los textos quepan, y monta el vídeo con los dibujos del diario."),
+                ("Cronista", "cada noche busca en los mensajes de los grupos de hace un año justo un tema que muestre cuánto ha cambiado todo, comprueba en internet cómo está hoy y escribe «Hace un año»; otro verificador lo contrasta con los mensajes y las fuentes."),
+                ("Comentarista", "la noche del domingo escribe lo más importante de la semana, uno general y uno de cada grupo, para la página de la semana; un revisor lo contrasta con cada pieza."),
             ],
-            "equipo_pie": "Son agentes de Claude, el modelo de inteligencia artificial de Anthropic, y trabajan con Claude Code. Claude Opus 5.5 escribe y juzga la viñeta y prepara el reportaje (guionista, juez de humor, jefe de reportajes, reportero y juez de reportajes), y Claude Sonnet 5.5 hace el resto. Ocho trabajan cada noche; el documentalista se suma cuando entra un documento en la Biblioteca digital o toca escribir sobre el repositorio, y la noche del sábado hay cuatro más: tres para el reportaje del domingo y uno para «La semana en vídeo», y un quinto, el juez de reportajes, cuando hay uno de reserva.",
+            "equipo_pie": "Son agentes de Claude, el modelo de inteligencia artificial de Anthropic, y trabajan con Claude Code. Claude Opus 5.5 escribe y juzga la viñeta, prepara el reportaje y escribe «Hace un año» y el comentario de la semana (guionista, juez de humor, jefe de reportajes, reportero, juez de reportajes, cronista y comentarista), y Claude Sonnet 5.5 hace el resto. Diez trabajan cada noche; el documentalista se suma cuando entra un documento en la Biblioteca digital o toca escribir sobre el repositorio; la noche del sábado hay cuatro más: tres para el reportaje del domingo y uno para «La semana en vídeo», y un quinto, el juez de reportajes, cuando hay uno de reserva; y la del domingo, dos más para el comentario de la semana.",
             "secciones": [
                 ("Qué hace la inteligencia artificial y qué hacen los programas", "La inteligencia artificial se encarga de lo que exige leer, escribir o juzgar: elegir los temas, redactar, revisar, dibujar, traducir y decidir si un chiste tiene gracia. Lo que se puede hacer con reglas fijas lo hacen programas corrientes, sin inteligencia artificial: recoger y ordenar los mensajes, medir los dibujos, dibujar la viñeta a partir de su guion, montar la web con su hemeroteca y su buscador, montar los vídeos y componer su música, y publicarlo todo a su hora en la web y en Instagram, y los domingos y los lunes, también en X, Bluesky y LinkedIn."),
                 ("Los límites de los agentes", "Los agentes trabajan en un servidor propio, sin acceso a un terminal y sin poder leer ni escribir fuera de la carpeta de la redacción. Pueden consultar internet para comprobar fuentes, pero no pueden ejecutar programas. Los mensajes de los grupos y las fichas de la biblioteca son, para ellos, material para informar: si alguno contiene una orden, no la siguen, de forma que un mensaje escrito para engañarlos no puede llevarlos a hacer otra cosa. Además, ningún agente revisa su propio trabajo: las piezas las repasa un revisor que no las ha escrito; los dibujos, un revisor que no los ha dibujado, y el reportaje, un verificador que no ha participado en él."),
@@ -175,7 +180,7 @@ IDIOMAS = {
         "meses": ["gener", "febrer", "març", "abril", "maig", "juny", "juliol", "agost",
                   "setembre", "octubre", "novembre", "desembre"],
         "secciones": {"herramientas": "Eines", "vibecoding": "Vibe coding", "multimedia": "Multimèdia",
-                      "debates": "Debats", "novedades": "Institucions i empreses", "biblioteca": "Biblioteca"},
+                      "debates": "Debats", "novedades": "Institucions i empreses", "biblioteca": "Biblioteca", "hace-un-ano": "Fa un any"},
         "actualizado": "Actualitzat el", "num": "Núm.", "numero_largo": "Número",
         "tema": "Canviar entre tema clar i fosc", "navegacion": "Navegació",
         "quees": "La redacció", "portada": "Portada", "volver": "Torna a la portada",
@@ -210,6 +215,7 @@ IDIOMAS = {
         "leer_presentacion": "Llegeix la presentació", "presentacion": "Com es fa aquest diari: la presentació del número 1",
         "sin_vinetas": "Encara no hi ha vinyetes.",
         "descripciones": {
+            "hace-un-ano": "Cada dia, alguna cosa que es parlava als grups el mateix dia de l'any anterior, explicada des d'avui: el que ha canviat, el que ja no existeix i el que el temps ha resolt.",
             "herramientas": "Assistents, serveis i models d'intel·ligència artificial dels quals es parla als grups, explicats des del seu ús docent: què ofereixen, en quines condicions i per a què pot servir cadascun a classe.",
             "vibecoding": "Aplicacions que el professorat crea descrivint-les a una intel·ligència artificial, sense necessitat de saber programar, i el que s'aprèn als grups per fer-les: instruccions per generar recursos, agents de programació i solucions a problemes habituals. Cada aplicació es presenta amb el nom del seu autor o autora, i les que entren al {repositorio} de Vibe Coding Educativo hi tenen el seu article.",
             "multimedia": "Àudio, vídeo i imatge amb intel·ligència artificial generativa: les eines per crear veus, il·lustracions i vídeos, i els fluxos de treball que comparteixen els grups per produir material educatiu.",
@@ -235,7 +241,7 @@ IDIOMAS = {
         "buscar_txt": "Cerca en tot el que s'ha publicat al diari: peces, breus, articles de la Biblioteca i reportatges, en català. Troba també les formes d'una mateixa paraula: «avaluar» troba «avaluació».",
         "resultados_1": "1 resultat", "resultados_n": "{n} resultats", "sin_resultados": "No hi ha res publicat amb aquestes paraules.",
         "todas": "Totes", "mas_resultados": "Més resultats", "buscando": "Cercant…", "sin_buscador": "El cercador no s'ha pogut carregar.",
-        "reportaje": "El reportatge del diumenge", "reportajes": "Reportatges", "leer_reportaje": "Llegeix el reportatge",
+        "reportaje": "El reportatge del diumenge", "reportajes": "Reportatges", "leer_reportaje": "Llegeix el reportatge", "leer_hace_un_ano": "Llegeix com ha canviat",
         "claves": "Claus", "en_el_diario": "Al diari aquesta setmana", "semana_repo": "Cada dissabte, el diari repassa els recursos que han entrat durant la setmana al {repositorio} de Vibe Coding Educativo, la col·lecció d'aplicacions i materials amb llicència oberta que crea i comparteix el professorat d'aquesta comunitat.", "ya_contados": "Ja explicats al diari", "otras_semanas": "Altres setmanes del repositori", "sin_reportajes": "Encara no hi ha reportatges.",
         "reportajes_txt": "Cada diumenge, un tema de la setmana tractat a fons.", "palabras": "minuts de lectura",
         "redaccion": {
@@ -268,8 +274,10 @@ IDIOMAS = {
                 ("Verificador", "no ha escrit res: obre cada font del reportatge i treu el que no pot confirmar."),
                 ("Jutge de reportatges", "quan hi ha un reportatge de reserva, compara el nou amb aquell sense haver escrit cap dels dos i tria el millor per publicar-lo."),
                 ("Guionista de vídeo", "els dissabtes a la nit tria el més destacat de la setmana, com a mínim una peça de cada número, i escriu els textos de «La setmana en vídeo» en les cinc llengües, amb el reportatge del diumenge com a darrera escena, i el text que l'acompanya a les xarxes. Un programa comprova que no hi falti cap dia i que els textos hi càpiguen, i munta el vídeo amb els dibuixos del diari."),
+                ("Cronista", "cada nit busca als missatges dels grups de fa just un any un tema que mostri quant ha canviat tot, comprova a internet com està avui i escriu «Fa un any»; un altre verificador el contrasta amb els missatges i les fonts."),
+                ("Comentarista", "la nit del diumenge escriu el més important de la setmana, un de general i un de cada grup, per a la pàgina de la setmana; un revisor el contrasta amb cada peça."),
             ],
-            "equipo_pie": "Són agents de Claude, el model d'intel·ligència artificial d'Anthropic, i treballen amb Claude Code. Claude Opus 5.5 escriu i jutja la vinyeta i prepara el reportatge (guionista, jutge d'humor, cap de reportatges, reporter i jutge de reportatges), i Claude Sonnet 5.5 fa la resta. Cada nit en treballen vuit; el documentalista s'hi suma quan entra un document a la Biblioteca digital o toca escriure sobre el repositori, i la nit del dissabte n'hi ha quatre més: tres per al reportatge del diumenge i un per a «La setmana en vídeo», i un cinquè, el jutge de reportatges, quan n'hi ha un de reserva.",
+            "equipo_pie": "Són agents de Claude, el model d'intel·ligència artificial d'Anthropic, i treballen amb Claude Code. Claude Opus 5.5 escriu i jutja la vinyeta, prepara el reportatge i escriu «Fa un any» i el comentari de la setmana (guionista, jutge d'humor, cap de reportatges, reporter, jutge de reportatges, cronista i comentarista), i Claude Sonnet 5.5 fa la resta. Cada nit en treballen deu; el documentalista s'hi suma quan entra un document a la Biblioteca digital o toca escriure sobre el repositori; la nit del dissabte n'hi ha quatre més: tres per al reportatge del diumenge i un per a «La setmana en vídeo», i un cinquè, el jutge de reportatges, quan n'hi ha un de reserva; i la del diumenge, dos més per al comentari de la setmana.",
             "secciones": [
                 ("Què fa la intel·ligència artificial i què fan els programes", "La intel·ligència artificial s'encarrega del que demana llegir, escriure o jutjar: triar els temes, redactar, revisar, dibuixar, traduir i decidir si un acudit té gràcia. El que es pot fer amb regles fixes ho fan programes corrents, sense intel·ligència artificial: recollir i ordenar els missatges, mesurar els dibuixos, dibuixar la vinyeta a partir del guió, muntar el web amb l'hemeroteca i el cercador, muntar els vídeos i compondre'n la música, i publicar-ho tot a l'hora al web i a Instagram, i els diumenges i els dilluns, també a X, Bluesky i LinkedIn."),
                 ("Els límits dels agents", "Els agents treballen en un servidor propi, sense accés a un terminal i sense poder llegir ni escriure fora de la carpeta de la redacció. Poden consultar internet per comprovar fonts, però no poden executar programes. Els missatges dels grups i les fitxes de la biblioteca són, per a ells, material per informar: si n'hi ha cap que contingui una ordre, no la segueixen, de manera que un missatge escrit per enganyar-los no els pot portar a fer una altra cosa. A més, cap agent no revisa la seva pròpia feina: les peces les repassa un revisor que no les ha escrites; els dibuixos, un revisor que no els ha dibuixat, i el reportatge, un verificador que no hi ha participat."),
@@ -489,6 +497,12 @@ def cargar():
             for x in rep_:   # con captura, salen como destacados
                 x["importancia"] = 2 if any(r.get("captura") for r in x.get("recursos", [])) else 3
             d["piezas"] = d["piezas"] + rep_
+        if d.get("piezas") and (RAIZ / "hace-un-ano" / nombre).exists():   # «Hace un año» (ADR 0040), siempre al final
+            hu = json.loads(con_traduccion("hace-un-ano", nombre).read_text())
+            if hu.get("hay_pieza"):
+                for x in hu.get("piezas", []):
+                    x["importancia"] = 9
+                d["piezas"] = d["piezas"] + hu.get("piezas", [])
         if d.get("piezas"):
             d["piezas"].sort(key=lambda p: p.get("importancia", 3))
             for p in d["piezas"]:
@@ -882,6 +896,7 @@ def pie(prof, eds, actual):
     <ul>{archivo}</ul>
     <p class="pie-hemeroteca"><a href="{prof}semana/{semana_de(eds[-1]["fecha"])}/">{L["semana_actual"]}</a></p>
     <p class="pie-hemeroteca"><a href="{prof}archivo.html">{L["todos_numeros"]}</a></p>
+    <p class="pie-hemeroteca"><a href="{prof}hace-un-ano.html">{L["secciones"]["hace-un-ano"]}</a></p>
   </nav>
   <div class="pie-creditos">
     <p>{L["redactado"]}</p>
@@ -1034,15 +1049,20 @@ def cuerpo_portada(prof, piezas, breves, mostrar_fecha, tira=""):
     breves = [b for b in breves if b not in hoy]
     # Como mucho tres destacadas con dibujo (las más recientes): la portada tiene que caber sin un scroll interminable.
     # En la portada, solo del último número: lo de días anteriores no se cuela entre lo de hoy, va a su sección
+    resto = [p for p in resto if p.get("seccion") not in SECCIONES_FUERA] + [p for p in resto if p.get("seccion") in SECCIONES_FUERA]
     destacadas = [p for p in resto if p.get("importancia", 3) <= 2 and p.get("seccion") != "biblioteca"
                   and (not mostrar_fecha or p["fecha"] == p0["fecha"])][:3]
     # Si quedan huecos, los ocupan las demás piezas de hoy aunque sean menores: así no queda una suelta debajo
     if mostrar_fecha:
         destacadas += [p for p in resto if p not in destacadas and p["fecha"] == p0["fecha"]
-                       and p.get("seccion") != "biblioteca"][:3 - len(destacadas)]
+                       and p.get("seccion") not in ["biblioteca"] + SECCIONES_FUERA][:3 - len(destacadas)]
     demas = [p for p in resto if p not in destacadas]
     # En la portada, todo lo de hoy va arriba: lo que no cabe entre las destacadas, también los
     # artículos de la Biblioteca, justo debajo en «Más del día»; los bloques, para los días anteriores
+    # «Hace un año» (ADR 0040), con lo de hoy pero fuera de las filas: en su franja a todo el ancho, para que no
+    # deje una fila de tres columnas con una sola pieza. Los de días anteriores no salen en la portada.
+    hace_un_ano = next((p for p in demas if p.get("seccion") in SECCIONES_FUERA and p["fecha"] == p0["fecha"]), None)
+    demas = [p for p in demas if p.get("seccion") not in SECCIONES_FUERA]
     mas_hoy = [p for p in demas if p["fecha"] == p0["fecha"]] if mostrar_fecha else []
     demas = [p for p in demas if p not in mas_hoy]
     html_ = pieza(prof, p0, "principal", 2, True, mostrar_fecha)
@@ -1054,6 +1074,7 @@ def cuerpo_portada(prof, piezas, breves, mostrar_fecha, tira=""):
         # Sin título: cada pieza lleva su sección, y van en las columnas de las destacadas
         lista = "".join(pieza(prof, p, "menor", 3, False, mostrar_fecha) for p in mas_hoy)
         html_ += f'<div class="fila fila-menores mas-dia" style="--n:3">{lista}</div>'
+    html_ += franja_hace_un_ano(prof, hace_un_ano)
     if hoy:
         html_ += f"""<section class="bloque sec-breves breves-dia" aria-labelledby="b-breves-dia">
   <h2 id="b-breves-dia" class="bloque-titulo"><a href="{prof}breves.html">{icono("breves")} {L["breves"]}</a></h2>
@@ -1069,7 +1090,7 @@ def cuerpo_portada(prof, piezas, breves, mostrar_fecha, tira=""):
   <h2 id="b-{clave}" class="bloque-titulo"><a href="{prof}{clave}.html">{icono(clave)} {L["secciones"][clave]}</a></h2>
   <div class="bloque-piezas" style="--n:{min(len(de_seccion), 3)}">{lista}</div>
 </section>"""
-    sueltas = [p for p in demas if p.get("seccion") not in ORDEN_SECCIONES]
+    sueltas = [p for p in demas if p.get("seccion") not in TODAS_SECCIONES]
     if sueltas or breves:
         lista = "".join(pieza(prof, p, "menor", 3, False, mostrar_fecha) for p in sueltas) + bloque_breves(breves, mostrar_fecha, en_bloque=True)
         html_ += f"""<section class="bloque sec-breves" aria-labelledby="b-breves">
@@ -1148,6 +1169,25 @@ def franja_reportaje(prof, r):
     <p class="leer"><a href="{href(prof, r)}">{L["leer_reportaje"]}</a></p>
   </div>
   {ilustracion(r["fecha"], r)}
+</section>"""
+
+
+def franja_hace_un_ano(prof, p):
+    """«Hace un año» (ADR 0040): un recuadro a todo el ancho con lo de hoy, como el de una columna fija en un
+    periódico de papel: el díptico «Entonces / Ahora» a un lado y el texto al otro. Siempre llena el ancho, tenga
+    el número una pieza o tres; sin dibujo, el texto ocupa todo el recuadro."""
+    if not p:
+        return ""
+    ilu = ilustracion(p["fecha"], p)
+    return f"""<section class="editorial hace-un-ano-franja sec-hace-un-ano{"" if ilu else " sin-ilu"}" aria-labelledby="hu-{e(p["id"])}">
+  {ilu}
+  <div class="texto">
+    <p class="seccion"><span><a href="{prof}hace-un-ano.html">{icono("hace-un-ano")} {L["secciones"]["hace-un-ano"]}</a></span> <span class="fecha-pieza">{fecha_corta(publicacion(p["fecha"]))}</span></p>
+    <p class="antetitulo">{e(p.get("antetitulo", ""))}</p>
+    <h2 id="hu-{e(p["id"])}" class="titular"><a href="{href(prof, p)}">{e(p["titular"])}</a></h2>
+    <p class="entradilla">{e(p["entradilla"])}</p>
+    <p class="leer"><a href="{href(prof, p)}">{L["leer_hace_un_ano"]}</a></p>
+  </div>
 </section>"""
 
 
@@ -1942,6 +1982,7 @@ def bloque_notebook(sem, m):
 </section>"""
 
 
+ICONOS["hace-un-ano"] = ('<path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M12 7v5l4 2"/>')   # rotate-ccw-clock (ADR 0040)
 ICONOS["comentario"] = ('<path d="M14 14a2 2 0 0 0 2-2V8h-2"/><path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"/>'
                         '<path d="M8 14a2 2 0 0 0 2-2V8H8"/>')   # message-square-quote
 
@@ -2177,7 +2218,7 @@ def sitemap(eds):
     versiones en los otros idiomas (xhtml:link), como pide Google para un sitio multilingüe (ADR 0026)."""
     rutas = []
     ultima = publicacion(eds[-1]["fecha"])
-    for ruta in ["", "redaccion.html", "vineta.html", "reportajes.html", "breves.html", "archivo.html", "videos.html", "para-tu-web.html"] + [f"{c}.html" for c in ORDEN_SECCIONES]:
+    for ruta in ["", "redaccion.html", "vineta.html", "reportajes.html", "breves.html", "archivo.html", "videos.html", "para-tu-web.html"] + [f"{c}.html" for c in TODAS_SECCIONES]:
         rutas.append((ruta, ultima))
     for sem, ds in por_semanas(eds).items():   # la semana y el mes (ADR 0034)
         rutas.append((f"semana/{sem}/", publicacion(ds[-1]["fecha"])))
@@ -2339,7 +2380,7 @@ TOPE_FILTRO = 50
 TOPE_NOTICIAS = 50     # piezas de cada noticias*.json que lee el widget (enseña 20 como mucho)
 ALTO_TARJETA = 500     # alto del iframe de la tarjeta de una pieza; el dibujo se encoge si falta sitio
 # Filtros del widget y de los canales: las secciones, el reportaje y los breves; y los tres grupos
-CLAVES_FILTRO = ORDEN_SECCIONES + ["reportaje", "breves"]
+CLAVES_FILTRO = TODAS_SECCIONES + ["reportaje", "breves"]
 
 # Los colores del tema claro de cada sección (comun.css), para el dibujo suelto que se ve fuera del
 # diario: con <img> no le llegan las variables de la página. Dentro del widget, mandan las variables.
@@ -2347,7 +2388,7 @@ COLOR_SUELTO = {
     "herramientas": ("#1c3faa", "#e6ebf8", "#c9d4f2"), "debates": ("#b04f0c", "#fbeadb", "#f3cdaa"),
     "vibecoding": ("#1d7547", "#e2f1e8", "#bfe0cc"), "novedades": ("#6a3d9e", "#eee6f7", "#d8c6ee"),
     "multimedia": ("#a8206f", "#fae4f0", "#f2bedb"), "reportaje": ("#1c3faa", "#eef1fa", "#dfe5f7"),
-    "biblioteca": ("#0b6e79", "#e0f2f3", "#b7e1e5"),
+    "biblioteca": ("#0b6e79", "#e0f2f3", "#b7e1e5"), "hace-un-ano": ("#7a4f2a", "#f6ede3", "#e8d3bd"),
 }
 SUELTO_BASE = {"--ilu-tinta": "#16181d", "--ilu-rojo": "#c8202c", "--c-herramientas": "#1c3faa",
                "--c-comunidad": "#1d7547", "--c-multimedia": "#a8206f"}
@@ -2889,7 +2930,7 @@ def generar_idioma(codigo):
     escribir(base / "redaccion.html", pagina_redaccion(eds))
     escribir(base / "que-es.html", redireccion("redaccion.html"))
     escribir(base / "comunidad.html", redireccion("vibecoding.html"))   # la sección retirada el 01-11-2026
-    for clave in ORDEN_SECCIONES:
+    for clave in TODAS_SECCIONES:
         escribir(base / f"{clave}.html", pagina_seccion(eds, clave))
     escribir(base / "vineta.html", pagina_vinetas(eds))
     escribir(base / "videos.html", pagina_videos(eds))
@@ -2987,7 +3028,7 @@ def main():
 def pieza_de_grupo(d, grupo):
     """La pieza que da imagen al aviso de un grupo: la primera de sus conversaciones que no es de la
     Biblioteca (ADR 0010). Si ese día el grupo no tiene ninguna, None: el aviso lleva la del número."""
-    return next((p for p in d["piezas"] if p.get("grupo") == grupo and p.get("seccion") != "biblioteca"), None)
+    return next((p for p in d["piezas"] if p.get("grupo") == grupo and p.get("seccion") not in ["biblioteca"] + SECCIONES_FUERA), None)
 
 
 def entradas_grupos():

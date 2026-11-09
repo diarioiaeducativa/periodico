@@ -2,7 +2,7 @@ Trabajas en la carpeta actual, la de la redacción del «Diario de IA Educativa�
 
 Un programa ya ha abierto cada dibujo del día en su página, en tema claro y oscuro, y ha medido lo que se puede medir (rellenos negros, formas sin clase, rótulos fuera del dibujo o pisados, contraste). Su resultado está en revision/{FECHA}/es.json: para cada dibujo, `id`, `titular`, `svg`, `capturas` (las dos imágenes, clara y oscura) y `problemas`.
 
-Mira con Read las dos capturas de cada dibujo y lee su pieza (en ediciones/{FECHA}.json, en biblioteca/{FECHA}.json o, si es el reportaje, en reportajes/{FECHA}.json) y los criterios de encargos/ilustraciones.md. Juzga lo que el programa no puede medir:
+Mira con Read las dos capturas de cada dibujo y lee su pieza (en ediciones/{FECHA}.json, en biblioteca/{FECHA}.json, en hace-un-ano/{FECHA}.json o, si es el reportaje, en reportajes/{FECHA}.json) y los criterios de encargos/ilustraciones.md. Juzga lo que el programa no puede medir:
 
 - Se ve bien en los dos temas: nada tapado, ninguna zona que se convierta en una mancha, los rótulos se leen.
 - Rótulos que tocan o cruzan trazos de forma que cuesta leerlos; flechas o líneas que no llegan a donde apuntan; partes cortadas por el borde.
