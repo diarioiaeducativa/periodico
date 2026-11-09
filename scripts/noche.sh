@@ -14,6 +14,8 @@
 #   4. traductor (Sonnet, una vez por idioma: catalán, gallego, euskera e inglés, ADR 0026)  ‖  avisos
 #      (Sonnet) → avisos/PUBLICA.json
 # El sábado, después, el guionista del reel de la semana (Sonnet) y el vídeo (scripts/reel-semana.sh, ADR 0016).
+# Si FECHA es domingo, entre el 3 y el 4 va el comentario de la semana (scripts/comentario-semana.sh, tres
+# agentes más, ADR 0038), para la página semana/AAAA-WW/.
 # Si FECHA es sábado, entre el 3 y el 4 va el reportaje del domingo (scripts/reportaje.sh, cinco
 # agentes más, ADR 0004): los avisos del domingo ya lo pueden anunciar. Si no sale, el número sale igual.
 # Si ese día entró algún documento en la Biblioteca digital de ChatGPT-IA-edu, después va su artículo
@@ -218,6 +220,13 @@ bash scripts/biblioteca.sh "$FECHA"
 # 3 quater. El repositorio de Vibe Coding Educativo, si el número se queda corto o es viernes (ADR 0008). Nunca impide el número.
 bash scripts/repositorio.sh "$FECHA"
 [ $? -le 2 ] || { log "el repositorio falló de forma inesperada: sale sin él"; rm -f repositorio/"$FECHA".json $(traducidos repositorio); }
+
+# 3 quinquies. El domingo cierra la semana de los mensajes: el comentario de la semana para su página (ADR 0038).
+# Nunca impide el número.
+if [ "$(date -d "$FECHA" +%u)" = 7 ] || [ "${COMENTARIO:-0}" = 1 ]; then
+  bash scripts/comentario-semana.sh "$(date -d "$FECHA" +%G-%V)"
+  [ $? -le 2 ] || log "el comentario de la semana falló de forma inesperada: la semana sale sin él"
+fi
 
 # 4. Traducción y avisos, a la vez.
 traducir 5-traduccion edicion 50 & p1=$!

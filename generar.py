@@ -74,7 +74,7 @@ IDIOMAS = {
         "archivo": "Archivo por días",
         "anyo": "Año", "hemeroteca": "Hemeroteca", "hemeroteca_txt": "Todos los números, por meses y semanas.", "nb_anteriores": "Boletines anteriores", "semana_n": "Semana {n}",
         # La semana y el mes (ADR 0034)
-        "semana": "La semana", "semana_txt": "Todo lo que contó el diario de lo que se habló en los grupos esa semana, por secciones, con el pódcast y el vídeo de cada grupo. Elige un grupo para ver solo lo suyo.", "semana_actual": "La semana, de un vistazo", "grupo_filtro": "Ver lo de un grupo", "grupo_todos": "Todos", "sin_grupo": "Este grupo no tiene piezas esta semana.", "nb_h": "El pódcast y el vídeo de la semana", "nb_txt": "Cada lunes, NotebookLM, de Google, prepara un pódcast y un vídeo de cada grupo con su conversación completa de la semana, también lo que el diario no ha contado. Un agente de IA los contrasta con la conversación antes de publicarlos.", "nb_es": "", "nb_pendiente": "El pódcast y el vídeo de cada grupo se añaden aquí el lunes por la mañana.", "nb_video": "Vídeo", "nb_ver": "Reproducir el vídeo de {g}", "nb_youtube": "Verlo en YouTube", "nb_podcast": "Pódcast", "nb_archive": "Escucharlo en Internet Archive", "numeros_semana": "Los números de la semana", "sem_ant": "Semana anterior", "sem_sig": "Semana siguiente", "todo_mes": "Todo el mes", "mes": "El mes", "mes_txt": "Las semanas del mes, con la pieza que abrió cada número.", "mes_ant": "Mes anterior", "mes_sig": "Mes siguiente", "ver_semana": "La semana entera, por secciones", "con_nb": "Con el pódcast y el vídeo de cada grupo", "boletines_h": "Boletines semanales anteriores", "boletines_txt": "Hasta noviembre de 2026, cada grupo tenía su propio boletín semanal. Siguen en su web:",
+        "semana": "La semana", "semana_txt": "Todo lo que contó el diario de lo que se habló en los grupos esa semana, por secciones, con el pódcast y el vídeo de cada grupo. Elige un grupo para ver solo lo suyo.", "semana_actual": "La semana, de un vistazo", "grupo_filtro": "Ver lo de un grupo", "grupo_todos": "Todos", "sin_grupo": "Este grupo no tiene piezas esta semana.", "nb_h": "El pódcast y el vídeo de la semana", "nb_txt": "Cada lunes, NotebookLM, de Google, prepara un pódcast y un vídeo de cada grupo con su conversación completa de la semana, también lo que el diario no ha contado. Un agente de IA los contrasta con la conversación antes de publicarlos.", "nb_es": "", "nb_pendiente": "El pódcast y el vídeo de cada grupo se añaden aquí el lunes por la mañana.", "nb_video": "Vídeo", "nb_ver": "Reproducir el vídeo de {g}", "nb_youtube": "Verlo en YouTube", "nb_podcast": "Pódcast", "nb_archive": "Escucharlo en Internet Archive", "cs_h": "Lo más importante de la semana", "cs_h_g": "Lo más importante de la semana en {g}", "cs_nota": "Lo escribe un agente de IA con lo que contó el diario esa semana, y otro lo contrasta con cada pieza antes de publicarlo.", "numeros_semana": "Los números de la semana", "sem_ant": "Semana anterior", "sem_sig": "Semana siguiente", "todo_mes": "Todo el mes", "mes": "El mes", "mes_txt": "Las semanas del mes, con la pieza que abrió cada número.", "mes_ant": "Mes anterior", "mes_sig": "Mes siguiente", "ver_semana": "La semana entera, por secciones", "con_nb": "Con el pódcast y el vídeo de cada grupo", "boletines_h": "Boletines semanales anteriores", "boletines_txt": "Hasta noviembre de 2026, cada grupo tenía su propio boletín semanal. Siguen en su web:",
         "todos_numeros": "Hemeroteca: todos los números",
         "compartir": "Compartir", "copiado": "Enlace copiado", "compartir_breve": "Compartir este breve", "mas_en": "Más en", "mas_diario": "Más en el diario",
         "no_existe": "Esta página no existe",
@@ -193,7 +193,7 @@ IDIOMAS = {
         "archivo": "Arxiu per dies",
         "anyo": "Any", "hemeroteca": "Hemeroteca", "hemeroteca_txt": "Tots els números, per mesos i setmanes.", "nb_anteriores": "Butlletins anteriors", "semana_n": "Setmana {n}",
         # La semana y el mes (ADR 0034)
-        "semana": "La setmana", "semana_txt": "Tot el que va explicar el diari del que es va parlar als grups aquella setmana, per seccions, amb el pòdcast i el vídeo de cada grup. Tria un grup per veure només el seu.", "semana_actual": "La setmana, d'un cop d'ull", "grupo_filtro": "Veure el d'un grup", "grupo_todos": "Tots", "sin_grupo": "Aquest grup no té peces aquesta setmana.", "nb_h": "El pòdcast i el vídeo de la setmana", "nb_txt": "Cada dilluns, NotebookLM, de Google, prepara un pòdcast i un vídeo de cada grup amb tota la seva conversa de la setmana, també el que el diari no ha explicat. Un agent d'IA els contrasta amb la conversa abans de publicar-los.", "nb_es": "Són en castellà.", "nb_pendiente": "El pòdcast i el vídeo de cada grup s'afegeixen aquí dilluns al matí.", "nb_video": "Vídeo", "nb_ver": "Reproduir el vídeo de {g}", "nb_youtube": "Mira'l a YouTube", "nb_podcast": "Pòdcast", "nb_archive": "Escolta'l a Internet Archive", "numeros_semana": "Els números de la setmana", "sem_ant": "Setmana anterior", "sem_sig": "Setmana següent", "todo_mes": "Tot el mes", "mes": "El mes", "mes_txt": "Les setmanes del mes, amb la peça que va obrir cada número.", "mes_ant": "Mes anterior", "mes_sig": "Mes següent", "ver_semana": "Tota la setmana, per seccions", "con_nb": "Amb el pòdcast i el vídeo de cada grup", "boletines_h": "Butlletins setmanals anteriors", "boletines_txt": "Fins al novembre de 2026, cada grup tenia el seu propi butlletí setmanal. Continuen al seu web:",
+        "semana": "La setmana", "semana_txt": "Tot el que va explicar el diari del que es va parlar als grups aquella setmana, per seccions, amb el pòdcast i el vídeo de cada grup. Tria un grup per veure només el seu.", "semana_actual": "La setmana, d'un cop d'ull", "grupo_filtro": "Veure el d'un grup", "grupo_todos": "Tots", "sin_grupo": "Aquest grup no té peces aquesta setmana.", "nb_h": "El pòdcast i el vídeo de la setmana", "nb_txt": "Cada dilluns, NotebookLM, de Google, prepara un pòdcast i un vídeo de cada grup amb tota la seva conversa de la setmana, també el que el diari no ha explicat. Un agent d'IA els contrasta amb la conversa abans de publicar-los.", "nb_es": "Són en castellà.", "nb_pendiente": "El pòdcast i el vídeo de cada grup s'afegeixen aquí dilluns al matí.", "nb_video": "Vídeo", "nb_ver": "Reproduir el vídeo de {g}", "nb_youtube": "Mira'l a YouTube", "nb_podcast": "Pòdcast", "nb_archive": "Escolta'l a Internet Archive", "cs_h": "El més important de la setmana", "cs_h_g": "El més important de la setmana a {g}", "cs_nota": "L'escriu un agent d'IA amb el que va explicar el diari aquella setmana, i un altre el contrasta amb cada peça abans de publicar-lo.", "numeros_semana": "Els números de la setmana", "sem_ant": "Setmana anterior", "sem_sig": "Setmana següent", "todo_mes": "Tot el mes", "mes": "El mes", "mes_txt": "Les setmanes del mes, amb la peça que va obrir cada número.", "mes_ant": "Mes anterior", "mes_sig": "Mes següent", "ver_semana": "Tota la setmana, per seccions", "con_nb": "Amb el pòdcast i el vídeo de cada grup", "boletines_h": "Butlletins setmanals anteriors", "boletines_txt": "Fins al novembre de 2026, cada grup tenia el seu propi butlletí setmanal. Continuen al seu web:",
         "todos_numeros": "Hemeroteca: tots els números",
         "compartir": "Comparteix", "copiado": "Enllaç copiat", "compartir_breve": "Comparteix aquest breu", "mas_en": "Més a", "mas_diario": "Més al diari",
         "no_existe": "Aquesta pàgina no existeix",
@@ -1899,6 +1899,41 @@ def bloque_notebook(sem, m):
 </section>"""
 
 
+ICONOS["comentario"] = ('<path d="M14 14a2 2 0 0 0 2-2V8h-2"/><path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"/>'
+                        '<path d="M8 14a2 2 0 0 0 2-2V8H8"/>')   # message-square-quote
+
+
+def bloque_comentario(sem):
+    """Los comentarios de la semana (ADR 0038): lo más importante de lo que contó el diario, debajo del pódcast
+    y el vídeo. El general se ve con «Todos»; el de cada grupo, al elegir ese grupo (SCRIPT_SEMANA). Sin
+    comentario, no sale nada."""
+    f = con_traduccion("comentario-semana", f"{sem}.json")
+    try:
+        c = json.loads(f.read_text())
+    except (OSError, ValueError):
+        return ""
+    if not c.get("hay_comentario"):
+        return ""
+
+    def uno(b, rotulo, atributos):
+        if not (b and b.get("parrafos")):
+            return ""
+        pars = "".join(f"<p>{md(x)}</p>" for x in b["parrafos"])
+        return (f'<article{atributos}><h2>{icono("comentario")} {e(rotulo)}</h2>'
+                f'<h3>{e(b.get("titulo", ""))}</h3>{pars}</article>')
+
+    # El rótulo dice de quién es: «Lo más importante de la semana» con todos, «… en ChatGPT-IA-edu» con un grupo
+    articulos = uno(c.get("general"), L["cs_h"], ' class="cs-general"') + "".join(
+        uno((c.get("grupos") or {}).get(g), L["cs_h_g"].format(g=nombre), f' class="cs-grupo" data-cs="{g}" hidden')
+        for g, (nombre, _) in GRUPOS.items())
+    if not articulos:
+        return ""
+    return f"""<section class="comentario-semana">
+  {articulos}
+  <p class="cs-nota">{L["cs_nota"]}</p>
+</section>"""
+
+
 SCRIPT_SEMANA = """<script>
 (function(){
   var bs=document.querySelectorAll('.filtro-grupo button'),vacio=document.querySelector('.sin-grupo'),G=['chatgpt','vce','edumedia'];
@@ -1908,6 +1943,9 @@ SCRIPT_SEMANA = """<script>
     document.querySelectorAll('[data-grupo]').forEach(function(x){x.hidden=!!v&&x.dataset.grupo!==v;});
     document.querySelectorAll('.semana-seccion,.notebook').forEach(function(s){s.hidden=!s.querySelector('[data-grupo]:not([hidden])');});
     if(vacio)vacio.hidden=!v||!!document.querySelector('.semana-seccion:not([hidden])');
+    document.querySelectorAll('.cs-general').forEach(function(x){x.hidden=!!v;});
+    document.querySelectorAll('.cs-grupo').forEach(function(x){x.hidden=x.dataset.cs!==v;});
+    document.querySelectorAll('.comentario-semana').forEach(function(s){s.hidden=!s.querySelector('article:not([hidden])');});
     if(guardar){try{var u=new URL(location.href);if(v)u.searchParams.set('grupo',v);else u.searchParams.delete('grupo');history.replaceState(null,'',u);}catch(_){}}
   }
   bs.forEach(function(b){b.addEventListener('click',function(){poner(b.dataset.g,true);});});
@@ -1985,6 +2023,7 @@ def pagina_semana(eds, sem, anterior, siguiente):
 <nav class="semana-nav" aria-label="{L["navegacion"]}">{" · ".join(nav)}</nav>
 <div class="filtro-grupo" role="group" aria-label="{e(L["grupo_filtro"])}">{filtro}</div>
 {bloque_notebook(sem, m)}
+{bloque_comentario(sem)}
 {"".join(secciones)}
 <p class="sin-grupo vacio" hidden>{L["sin_grupo"]}</p>
 <section class="semana-dias"><h2>{L["numeros_semana"]}</h2>{dias_lista(prof, ds)}</section>

@@ -91,6 +91,9 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
   `mes/AAAA-MM/` y la hemeroteca por semanas. El boletín deja el pódcast y el vídeo de cada grupo en
   `multimedia/AAAA-WW.json` (formato en su `LEEME.md`) y `reloj.sh` vuelve a publicar solo la web con
   `scripts/publicar-web.sh`, con el número del día ya publicado.
+- **Comentario de la semana** (ADR 0038): `scripts/comentario-semana.sh AAAA-WW`, que lanza `noche.sh`
+  la noche del domingo (o con `COMENTARIO=1`): uno general y uno por grupo en `comentario-semana/`,
+  de 150 a 250 palabras; `scripts/comentario_semana.py comprobar` dice si vale.
 - **Cinco idiomas** (ADR 0026): `/ca/`, `/gl/`, `/eu/` y `/en/`;
   traducción nocturna (`scripts/traducir.sh`) y de un día ya publicado
   (`scripts/traducir-dia.sh FECHA [idiomas]`, en una copia fuera de `/home`).

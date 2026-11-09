@@ -1,0 +1,48 @@
+{"semana": "2026-45", "hay_comentario": true,
+ "general": {
+  "titulo": "The week clarified who decides on AI in the classroom",
+  "parrafos": [
+   "The question of who authorises the use of AI with students ran through the week. [Sunday's feature on age](pieza:2026-11-07/edad-ia-aula-tres-reglas) separates three rules that are often confused (each service's terms, the data protection law and what education authorities lay down) and explains why research calls for swapping the question of age for the question of purpose. It fits with [the debate on authorisation from families](pieza:2026-11-06/autorizacion-familias-ia): the rules require schools to inform them, but between the ages of 14 and 18 their consent is not needed, unless the tool demands it.",
+   "Catalonia set out its position with [45 guidelines for schools](pieza:2026-11-02/cat-orientacions-ia), which advise against autonomous use of general-purpose AI by under-14s, against grading with AI and against AI-text detectors. The week's last issue returned to those detectors: [their percentage does not prove that a student has copied](pieza:2026-11-08/detector-ia-no-es-prueba), and it is best to back it up with evidence of the process.",
+   "In Vibe Coding Educativo, resources made by teachers for specific needs kept arriving, from chemical formulation to school organisation, and [the repository week](pieza:2026-11-06/semana-del-repositorio) gathers those added since the end of October. In EduMedia-IAG, Google introduced [Gemini Omni 1.2 Flash](pieza:2026-11-05/gemini-omni-1-2-flash), which generates and edits videos of up to 15 seconds and lets users refine them over several turns."
+  ],
+  "piezas": ["2026-11-07/edad-ia-aula-tres-reglas", "2026-11-06/autorizacion-familias-ia", "2026-11-02/cat-orientacions-ia", "2026-11-08/detector-ia-no-es-prueba", "2026-11-06/semana-del-repositorio", "2026-11-05/gemini-omni-1-2-flash"]
+ },
+ "grupos": {
+  "chatgpt": {
+   "titulo": "Assessment, school accounts and children were the focus of the week",
+   "parrafos": [
+    "Two pieces followed the same work: [MIT's report on AI in teaching](pieza:2026-11-02/informe-mit-ia) calls for rethinking teaching and assessment, and [the detailed reading by its committee](pieza:2026-11-03/mit-comite-ia) sets out eight principles for a university where AI can already complete almost any written assignment. For teachers at other levels, it is a reference for how a major university reviews assessment and rules instead of simply banning.",
+    "[Google's announcement that Gemini and AI search will be switched off by default](pieza:2026-11-03/google-ia-cuentas-escolares) in primary and secondary students' accounts leaves activation in the hands of administrators, and it sparked a discussion in the group about who decides on the use of AI in a school. Google clarified that each product can be enabled separately.",
+    "On children, [the World Economic Forum](pieza:2026-11-02/wef-infancia-ia) sets out seven practices to make AI safe without closing off boys' and girls' access to learning; it is aimed mainly at those who design and deploy these systems, but it can serve a school as a list of criteria when evaluating tools.",
+    "For those working with agents, [Anthropic's proposal to organise their memory in four layers](pieza:2026-11-07/memoria-agentes-ia) arrived with an adaptation by a teacher in the group, explained in an article with instructions that they later extended so that different agents can share common knowledge. The article warns that saved conversations contain sensitive information."
+   ],
+   "piezas": ["2026-11-02/informe-mit-ia", "2026-11-03/mit-comite-ia", "2026-11-03/google-ia-cuentas-escolares", "2026-11-02/wef-infancia-ia", "2026-11-07/memoria-agentes-ia"]
+  },
+  "vce": {
+   "titulo": "This week's resources look to the classroom and school management",
+   "parrafos": [
+    "Before the resources, a warning: [giving a command-line agent full access to a computer](pieza:2026-11-02/agentes-consola-acceso) requires deciding what information stays out of its reach, starting with student data, and the agent can be restricted to a specific folder.",
+    "To illustrate concepts, [a member of the group recommends](pieza:2026-11-02/infografias-svg-html) asking AI for infographics as an HTML page with SVG shapes and icons, and keeping generated images for when the teaching objective requires them; among the advantages they cite, that they are editable and accessible to screen readers.",
+    "In chemistry, two tools for practising formulation coincided: [a Catalan-language inorganic formulation lab](pieza:2026-11-03/laboratori-de-formulacio), by Felip Sarroca i Gil, with questions, hints and challenges, and [FoQo, by FiQuiPedia](pieza:2026-11-03/foqo-formulacion-quimica-organica), which generates organic nomenclature tests and gives the name of a drawn structure. For any subject, [a tool for the Jigsaw technique](pieza:2026-11-04/rompecabezas-tecnica-jigsaw) assigns base groups and expert groups randomly and in a balanced way from the class list; it opens in the browser and is available in five languages.",
+    "And for organisation, José Luis Miralles Bono created [a calculator for itinerant teachers](pieza:2026-11-07/itinerancias) in the Valencian Community, which divides non-teaching hours among the schools they share according to the teaching hours they give at each."
+   ],
+   "piezas": ["2026-11-02/agentes-consola-acceso", "2026-11-02/infografias-svg-html", "2026-11-03/laboratori-de-formulacio", "2026-11-03/foqo-formulacion-quimica-organica", "2026-11-04/rompecabezas-tecnica-jigsaw", "2026-11-07/itinerancias"]
+  },
+  "edumedia": {
+   "titulo": "Virtual reality enters the shoot for AI video",
+   "parrafos": [
+    "The week's thread was set by Raül Torres. First he described [a virtual camera for Blender](pieza:2026-11-04/camara-virtual-blender) that turns a phone or VR headset into an instrument for recording real camera movements, and on Sunday he shared a preview of [“Buzz”](pieza:2026-11-08/buzz-cortometraje-vr), a short film whose shots are directed with a headset on sets created in Blender and which is finished with AI. Together they show a workflow in which the person decides the framing and the AI then generates the images.",
+    "On the model [Gemini Omni 1.2 Flash](pieza:2026-11-05/gemini-omni-1-2-flash), the Diario also detailed [how much it costs in credits within Flow](pieza:2026-11-06/omni-1-2-flash-creditos-flow): generating or editing videos of up to 10 seconds costs 1 credit per second at 360p and 3 at 720p, 15-second clips are reserved for Google AI Plus, Pro and Ultra plans, and without a subscription there are 50 daily credits that do not accumulate.",
+    "For those working with agents, [MotionVideo](pieza:2026-11-02/motionvideo-skills) brings together motion graphics videos with their prompts and skills that teach a coding agent to do motion design."
+   ],
+   "piezas": ["2026-11-04/camara-virtual-blender", "2026-11-08/buzz-cortometraje-vr", "2026-11-05/gemini-omni-1-2-flash", "2026-11-06/omni-1-2-flash-creditos-flow", "2026-11-02/motionvideo-skills"]
+  }
+ },
+ "repaso": [
+  "General: el párrafo de los grupos pasa de la cámara virtual de Blender a Gemini Omni 1.2 Flash, para que el comentario de EduMedia-IAG no repita al general; el resto, sin cambios (afirmaciones y enlaces comprobados contra sus piezas).",
+  "ChatGPT-IA-edu: quitado el enlace a unesco-edad-ia, que repetía lo que el general ya cuenta del reportaje (cambiar la pregunta de la edad por la de la finalidad); quitada la frase «plantea la pregunta de qué se evalúa…», que no está en las piezas del MIT, y sustituida por lo que dice la pieza para otros niveles; añadidos «cada producto puede habilitarse por separado» (Google), el uso del documento del Foro Económico Mundial como lista de criterios y su destinatario, y la advertencia de información sensible del artículo sobre la memoria de agentes. Título ajustado.",
+  "Vibe Coding Educativo: añadida la pieza infografias-svg-html (importancia 1 del 2 de noviembre, de la que no había nada) y dos detalles de agentes-consola-acceso; quitado el enlace a calendari-planificador-de-curso para no pasar de seis enlaces (queda itinerancias, del mismo autor) y los cuatro párrafos se mantienen al juntar química y Jigsaw.",
+  "EduMedia-IAG: la cámara virtual y «Buzz» se mantienen, pero «el modelo de vídeo lo sigue» pasa a «la IA genera después las imágenes» (la pieza de «Buzz» no nombra el modelo); Omni 1.2 Flash y su coste en Flow se unen en un párrafo con las cifras de la pieza de créditos en vez de repetir lo dicho en el general; MotionVideo, sin cambios.",
+  "Comprobados sin cambios: autoría y datos de MIT, Google, Cataluña, detectores, autorización de las familias, reportaje, FoQo, laboratorio de formulación, Jigsaw, Itinerancias, semana del repositorio, cámara virtual, «Buzz» y MotionVideo; todas las claves están en la entrada y las de cada grupo son de ese grupo."
+ ]}

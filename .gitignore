@@ -29,3 +29,6 @@ ionos/estadisticas/config.php
 ionos/estadisticas/data/*.json
 # Los vídeos van a Internet Archive (ADR 0037); en el NAS se queda el del domingo para el dominical
 videos/*.mp4
+# El comentario de la semana (ADR 0038): la entrada y el borrador se rehacen cada vez
+comentario-semana-entrada/
+comentario-semana-borrador/

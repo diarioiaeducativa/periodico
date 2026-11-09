@@ -34,7 +34,7 @@ if [ -n "$(git -C "$SITIO" rev-list '@{u}..HEAD' 2>/dev/null)" ]; then
 fi
 
 # El archivo del boletín, al repositorio de la redacción, para que viaje con él
-git add multimedia >> "$REG" 2>&1
+git add -A multimedia $(ls -d comentario-semana comentario-semana-?? 2>/dev/null) >> "$REG" 2>&1
 if ! git diff --cached --quiet; then
   git commit -qm "Pódcast y vídeo de la semana" || log "AVISO: no se pudo preparar el commit de la redacción"
 fi

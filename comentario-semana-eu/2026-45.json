@@ -1,0 +1,48 @@
+{"semana": "2026-45", "hay_comentario": true,
+ "general": {
+  "titulo": "Astean argitu da nork erabakitzen duen AAren erabilera gelan",
+  "parrafos": [
+   "Ikasleekin adimen artifiziala (AA) erabiltzeko nork baimentzen duen galderak zeharkatu zuen astea. [Igandeko erreportajeak adinari buruz](pieza:2026-11-07/edad-ia-aula-tres-reglas) maiz nahasten diren hiru arau bereizten ditu: zerbitzu bakoitzaren baldintzak, datuen babesaren legea eta hezkuntza-administrazioek ezartzen dutena; eta azaltzen du zergatik eskatzen duen ikerketak adinaren galdera helburuarenarekin ordezkatzeko. [Familien baimenaren inguruko eztabaidarekin](pieza:2026-11-06/autorizacion-familias-ia) bat dator: araudiak familiei informazioa ematera behartzen du, baina 14 eta 18 urte artean ez da haien adostasunik behar, tresnak eskatzen ez badu behintzat.",
+   "Katalunian bere jarrera zehaztu zuen [ikastetxeentzako 45 orientabiderekin](pieza:2026-11-02/cat-orientacions-ia), zeinek 14 urtetik beherakoek AA orokorra modu autonomoan erabiltzea, AAren bidezko kalifikazioa eta sortutako testuaren detektagailuak ez gomendatzen baitituzte. Asteko azken zenbakiak detektagailu horietara itzuli zen: [haien ehunekoak ez du frogatzen ikasle batek kopiatu duenik](pieza:2026-11-08/detector-ia-no-es-prueba), eta komeni da prozesuaren ebidentziekin osatzea.",
+   "Vibe Coding Educativon irakasleek behar zehatzetarako egindako baliabideak iristen jarraitu zuten, kimikaren formulaziotik ikastetxearen antolaketara arte, eta [biltegiaren asteak](pieza:2026-11-06/semana-del-repositorio) urri amaieratik gehitu direnak jasotzen ditu. EduMedia-IAGn, Googlek [Gemini Omni 1.2 Flash](pieza:2026-11-05/gemini-omni-1-2-flash) aurkeztu zuen, 15 segundoraino bideoak sortu eta editatzen dituena eta hainbat txandatan fintzeko aukera ematen duena."
+  ],
+  "piezas": ["2026-11-07/edad-ia-aula-tres-reglas", "2026-11-06/autorizacion-familias-ia", "2026-11-02/cat-orientacions-ia", "2026-11-08/detector-ia-no-es-prueba", "2026-11-06/semana-del-repositorio", "2026-11-05/gemini-omni-1-2-flash"]
+ },
+ "grupos": {
+  "chatgpt": {
+   "titulo": "Ebaluazioa, ikastetxeetako kontuak eta haurtzaroa izan ziren asteko ardatzak",
+   "parrafos": [
+    "Bi piezak lan bera jarraitu zuten: [MITen AAri buruzko txostenak irakaskuntza](pieza:2026-11-02/informe-mit-ia) eta ebaluazioa birplanteatzeko eskatzen du, eta [bere batzordearen irakurketa zehatzak](pieza:2026-11-03/mit-comite-ia) zortzi printzipio zehazten ditu, AAk ia edozein lan idatzi ebazten duen unibertsitate baterako. Beste mailetako irakasleentzat, erreferentzia da unibertsitate handi batek ebaluazioa eta arauak nola berrikusten dituen, debekatzera mugatu gabe.",
+    "[Googlek Gemini eta AAren bidezko bilaketa lehenespenez desaktibatzeko egin duen iragarpenak](pieza:2026-11-03/google-ia-cuentas-escolares) lehen eta bigarren hezkuntzako ikasleen kontuetan, aktibazioa administratzaileen esku uzten du, eta taldean eztabaida piztu zuen ikastetxe batean AAren erabilera nork erabakitzen duen jakiteko. Googlek argitu zuen produktu bakoitza bereizita gaitu daitekeela.",
+    "Haurtzaroari dagokionez, [Munduko Ekonomia Foroak](pieza:2026-11-02/wef-infancia-ia) zazpi jardunbide ezartzen ditu AA segurua izan dadin, haurrei ikasteko sarbidea itxi gabe; batez ere sistema horiek diseinatu eta ezartzen dituztenei zuzenduta dago, baina ikastetxe batek irizpide-zerrenda gisa erabil dezake tresnak ebaluatzean.",
+    "Agenteekin lan egiten dutenentzat, [Anthropicek bere memoria lau geruzatan antolatzeko egindako proposamena](pieza:2026-11-07/memoria-agentes-ia) taldeko irakasle batek egindako egokitzapenarekin iritsi zen, argibideak dituen artikulu batean azalduta; geroago zabaldu zuen, agente desberdinek ezagutza komun bat partekatu ahal izan dezaten. Artikuluak ohartarazten du gordetako elkarrizketek informazio sentikorra dutela."
+   ],
+   "piezas": ["2026-11-02/informe-mit-ia", "2026-11-03/mit-comite-ia", "2026-11-03/google-ia-cuentas-escolares", "2026-11-02/wef-infancia-ia", "2026-11-07/memoria-agentes-ia"]
+  },
+  "vce": {
+   "titulo": "Asteko baliabideek gelara eta ikastetxearen kudeaketara begiratzen dute",
+   "parrafos": [
+    "Baliabideen aurretik, ohartarazpen bat: [kontsola-agente bati ekipo baterako sarbide osoa emateak](pieza:2026-11-02/agentes-consola-acceso) erabaki beharra dakar zer informazio geratzen den bere eskuragarritasunetik kanpo, ikasleen datuetatik hasita, eta agentea karpeta zehatz batera mugatu daiteke.",
+    "Kontzeptuak ilustratzeko, [taldeko kide batek gomendatzen du](pieza:2026-11-02/infografias-svg-html) AAri infografiak HTML orri gisa eskatzea, SVG formekin eta ikonoekin, eta sortutako irudiak helburu didaktikoak eskatzen duenerako gordetzea; aipatzen dituen abantailen artean, editagarriak eta pantaila-irakurleentzat irisgarriak izatea.",
+    "Kimikan, bi tresna bat etorri ziren formulazioa praktikatzeko: Felip Sarroca i Gilen [formulazio ez-organikoko laborategi katalanak](pieza:2026-11-03/laboratori-de-formulacio), galderekin, aztarnekin eta erronkekin, eta [FiQuiPediaren FoQok](pieza:2026-11-03/foqo-formulacion-quimica-organica), nomenklatura organikoko testak sortzen dituena eta marraztutako egitura baten izena ematen duena. Edozein ikasgairako, [Jigsaw teknikarako tresna batek](pieza:2026-11-04/rompecabezas-tecnica-jigsaw) oinarri-taldeak eta aditu-taldeak ausaz eta modu orekatuan banatzen ditu ikasleen zerrendatik abiatuta; nabigatzailean irekitzen da eta bost hizkuntzatan dago.",
+    "Eta antolaketarako, José Luis Miralles Bonok [irakasle ibiltarientzako kalkulagailu bat](pieza:2026-11-07/itinerancias) sinatu zuen Valentziako Erkidegorako, zeinak ordu osagarriak banatzen dituen partekatzen dituen ikastetxeen artean, ikastetxe bakoitzean ematen dituen lektiboen arabera."
+   ],
+   "piezas": ["2026-11-02/agentes-consola-acceso", "2026-11-02/infografias-svg-html", "2026-11-03/laboratori-de-formulacio", "2026-11-03/foqo-formulacion-quimica-organica", "2026-11-04/rompecabezas-tecnica-jigsaw", "2026-11-07/itinerancias"]
+  },
+  "edumedia": {
+   "titulo": "Errealitate birtuala AAren bideoaren grabaketan sartzen da",
+   "parrafos": [
+    "Asteko ildoa Raül Torresek markatu zuen. Lehenik [Blenderrerako kamera birtual bat](pieza:2026-11-04/camara-virtual-blender) deskribatu zuen, mugikorra edo errealitate birtualeko betaurrekoak benetako kamera-mugimenduak grabatzeko tresna bihurtzen dituena, eta igandean [«Buzz»](pieza:2026-11-08/buzz-cortometraje-vr) aurreratu zuen, Blenderren sortutako dekoratuen gainean betaurrekoekin planoak zuzentzen dituen eta AArekin amaitzen den film laburra. Elkarrekin, pertsonak planoa erabakitzen duen eta AAk gero irudiak sortzen dituen fluxu bat erakusten dute.",
+    "[Gemini Omni 1.2 Flash](pieza:2026-11-05/gemini-omni-1-2-flash) ereduari buruz, egunkariak [Flow-n kreditutan zenbat kostatzen den](pieza:2026-11-06/omni-1-2-flash-creditos-flow) ere zehaztu zuen: 10 segundoraino bideoak sortzeak edo editatzeak segundoko kreditu 1 balio du 360p-n eta 3 720p-n; 15 segundoko klipak Google AI Plus, Pro eta Ultra planetarako gordeta daude, eta harpidetzarik gabe egunean 50 kreditu daude, metatzen ez direnak.",
+    "Agenteekin lan egiten dutenentzat, [MotionVideo](pieza:2026-11-02/motionvideo-skills)-k motion graphics bideoak biltzen ditu, beren prompt-ekin eta programazio-agente bati mugimendu-diseinua egiten irakasten dioten skill-ekin."
+   ],
+   "piezas": ["2026-11-04/camara-virtual-blender", "2026-11-08/buzz-cortometraje-vr", "2026-11-05/gemini-omni-1-2-flash", "2026-11-06/omni-1-2-flash-creditos-flow", "2026-11-02/motionvideo-skills"]
+  }
+ },
+ "repaso": [
+  "General: el párrafo de los grupos pasa de la cámara virtual de Blender a Gemini Omni 1.2 Flash, para que el comentario de EduMedia-IAG no repita al general; el resto, sin cambios (afirmaciones y enlaces comprobados contra sus piezas).",
+  "ChatGPT-IA-edu: quitado el enlace a unesco-edad-ia, que repetía lo que el general ya cuenta del reportaje (cambiar la pregunta de la edad por la de la finalidad); quitada la frase «plantea la pregunta de qué se evalúa…», que no está en las piezas del MIT, y sustituida por lo que dice la pieza para otros niveles; añadidos «cada producto puede habilitarse por separado» (Google), el uso del documento del Foro Económico Mundial como lista de criterios y su destinatario, y la advertencia de información sensible del artículo sobre la memoria de agentes. Título ajustado.",
+  "Vibe Coding Educativo: añadida la pieza infografias-svg-html (importancia 1 del 2 de noviembre, de la que no había nada) y dos detalles de agentes-consola-acceso; quitado el enlace a calendari-planificador-de-curso para no pasar de seis enlaces (queda itinerancias, del mismo autor) y los cuatro párrafos se mantienen al juntar química y Jigsaw.",
+  "EduMedia-IAG: la cámara virtual y «Buzz» se mantienen, pero «el modelo de vídeo lo sigue» pasa a «la IA genera después las imágenes» (la pieza de «Buzz» no nombra el modelo); Omni 1.2 Flash y su coste en Flow se unen en un párrafo con las cifras de la pieza de créditos en vez de repetir lo dicho en el general; MotionVideo, sin cambios.",
+  "Comprobados sin cambios: autoría y datos de MIT, Google, Cataluña, detectores, autorización de las familias, reportaje, FoQo, laboratorio de formulación, Jigsaw, Itinerancias, semana del repositorio, cámara virtual, «Buzz» y MotionVideo; todas las claves están en la entrada y las de cada grupo son de ese grupo."
+ ]}
