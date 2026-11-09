@@ -62,8 +62,8 @@ mediana fue de 38 mensajes diarios entre los tres grupos; solo 2 días no tuvier
 
 - Tres agentes más cada noche (redactor, verificador e ilustrador, unos 15 minutos en la prueba), sin coste
   nuevo, más la revisión del dibujo y la traducción.
-- El organigrama de «La redacción» (un dibujo) aún no lleva ni al cronista ni al comentarista de la semana;
-  el texto del equipo, sí.
+- «La redacción» presenta al cronista en el texto del equipo y en el organigrama, con su fila propia que
+  sale de los grupos y entra en la franja compartida del ilustrador, el revisor de dibujos y el traductor.
 
 ## Validación
 

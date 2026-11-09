@@ -41,7 +41,7 @@ desde el lunes 9 de noviembre de 2026 ya no saliera el boletín de siempre.
 - **Publicación**: cuando aparece o cambia ese archivo, con el número del día ya publicado, `nas/reloj.sh`
   vuelve a publicar solo la web (`scripts/publicar-web.sh`), sin avisos ni Instagram, y guarda el archivo en
   el repositorio; si falla, avisa una vez y lo reintenta cada media hora.
-- En el pie, junto a la hemeroteca, «La semana, de un vistazo» lleva a la semana en curso.
+- En el pie, junto a la hemeroteca, «Resumen semanal» lleva a la semana en curso.
 
 ## Alternativas descartadas
 

@@ -45,6 +45,8 @@ pódcast, con una longitud mínima, y que fuera uno por grupo, con uno general s
 
 - Tres agentes más la noche del domingo (unos cinco minutos en la prueba), sin coste nuevo.
 - Las semanas anteriores a la 45 no tienen comentario: la página sale como antes.
+- «La redacción» presenta al comentarista en el texto del equipo y en el organigrama, en una fila que sale
+  de los números de la semana y pasa por el revisor y el traductor hasta el resumen semanal.
 
 ## Validación
 
