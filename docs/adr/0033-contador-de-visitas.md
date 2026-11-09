@@ -92,7 +92,7 @@ veinticinco meses» (garantía 3, p. 4).
   de España esté donde esté quien mira. Las cifras van sobre todas las barras si caben; si no, solo
   sobre la más alta y la última.
 - **Se dice en «La redacción»**, en los cinco idiomas: qué se cuenta, que no hay cookies ni datos de
-  quien lee, cuánto se guarda (la cuenta de la visita en el navegador, 13 meses; las cifras, 25 meses, con la guía de la AEPD
+  quien lee, cuánto se guarda (la cuenta de la visita en el navegador, 13 meses; las cifras, 25 meses, y después solo el total de cada año, con la guía de la AEPD
   enlazada, solo en castellano) y quién lo ve.
 
 ## Consecuencias
