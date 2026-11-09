@@ -30,15 +30,16 @@ veinticinco meses» (garantía 3, p. 4).
   nueva y la lista se vacía. Cada página que no está en la lista suma una apertura. Las pestañas
   comparten la cuenta. Juanjo propuso entre media hora y una hora; se tomaron 30 minutos, la medida
   habitual de una sesión, para que las cifras se puedan comparar con otras webs.
-- **Lo guardado en el navegador caduca a los 13 meses** de guardarse por primera vez, la duración que
-  pone de ejemplo la AEPD (garantía 2), y las visitas nuevas no lo alargan (`CADUCIDAD` en `generar.py`,
-  el primer script de cada página, añadido el 09-11-2026). `diario.desde` apunta cuándo se guardó lo
-  primero (la visita, el tema o el idioma); pasados 13 meses se borran `diario.visita`, `sala.tema`,
-  `sala.idioma` y la propia fecha, y se empieza de cero. Si en ese momento hay una visita en curso, se
-  conserva, para no contarla dos veces: el recuento no cambia. Se eligió esta forma y no borrar la
-  visita a los 30 minutos porque una página web no puede borrar nada mientras no está abierta: lo de
-  la última visita se quedaría igualmente hasta la siguiente. La marca de los autores
-  (`diario.nocontar`) no caduca: solo está en sus navegadores y la quitan ellos.
+- **La cuenta de la visita caduca a los 13 meses** de guardarse por primera vez, la duración que pone
+  de ejemplo la AEPD (garantía 2), y las visitas nuevas no la alargan (`CADUCIDAD` en `generar.py`, el
+  primer script de cada página, añadido el 09-11-2026). `diario.desde` apunta cuándo se guardó;
+  pasados 13 meses se borran `diario.visita` y la propia fecha, y se empieza de cero. Si en ese momento
+  hay una visita en curso, se conserva, para no contarla dos veces: el recuento no cambia. Se eligió
+  esta forma y no borrar la visita a los 30 minutos porque una página web no puede borrar nada mientras
+  no está abierta: lo de la última visita se quedaría igualmente hasta la siguiente. **El tema y el
+  idioma no caducan**: son preferencias de quien lee, y la guía solo pide la caducidad para la medición
+  (el mismo día se probó a hacerlos caducar también, y Juanjo lo descartó). Tampoco la marca de los
+  autores (`diario.nocontar`): solo está en sus navegadores y la quitan ellos.
 - **Al servidor solo llega la suma**: con `navigator.sendBeacon`, la ruta de la página, si empieza una
   visita y el título, para mostrarlo en el panel. Nada de IP, navegador ni identificador.
 - **No se cuentan** los robots (por el agente de usuario, en el navegador y en el servidor), los
@@ -72,7 +73,7 @@ veinticinco meses» (garantía 3, p. 4).
   abiertas y el reparto por idioma en el periodo elegido. Se pone al día cada minuto mientras está a
   la vista.
 - **Se dice en «La redacción»**, en los cinco idiomas: qué se cuenta, que no hay cookies ni datos de
-  quien lee, cuánto se guarda (en el navegador, 13 meses; las cifras, 25 meses, con la guía de la AEPD
+  quien lee, cuánto se guarda (la cuenta de la visita en el navegador, 13 meses; las cifras, 25 meses, con la guía de la AEPD
   enlazada, solo en castellano) y quién lo ve.
 
 ## Consecuencias
@@ -90,9 +91,10 @@ veinticinco meses» (garantía 3, p. 4).
   (visita y apertura), segunda página (solo apertura), recarga (nada), vuelta tras 31 minutos (visita
   nueva), `?nocontar=1` y `?nocontar=0`, y portada que salta (nada). El salto de ida y vuelta desde
   el panel, comprobado en la web publicada.
-- Caducidad (09-11-2026), en Chromium, Firefox y WebKit: la primera página guarda la fecha; una visita
-  nueva no la cambia; pasados 13 meses se borran el tema, el idioma y la visita y se empieza de cero; si
-  pasan en mitad de una visita, no cuenta otra; elegir el tema con el botón también guarda la fecha.
+- Caducidad (09-11-2026), en Chromium, Firefox y WebKit, en escritorio y en móvil, en local y en la web
+  publicada: la primera página guarda la fecha; una visita nueva no la cambia; pasados 13 meses se borra
+  la visita y se empieza de cero, y el tema y el idioma elegidos siguen; si pasan en mitad de una visita,
+  no cuenta otra; elegir el tema no guarda ninguna fecha.
 - Envío real desde los tres navegadores con origen `diarioiaeducativa.github.io`: 204 y suma guardada.
   Sin el origen del diario no se guarda nada; `config.php` sale vacío y `data/` da 403.
 - Panel comprobado con contraseña y sin ella (401), en escritorio y en móvil, con tema claro y oscuro.

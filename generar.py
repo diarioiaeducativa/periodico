@@ -160,7 +160,7 @@ IDIOMAS = {
                 ("El Repositorio de recursos", "El {repositorio} de Vibe Coding Educativo reúne las aplicaciones y recursos que crean y comparten con licencia abierta los docentes de esa comunidad. Los días con menos de cuatro piezas, el documentalista escribe sobre los que han entrado y el diario aún no ha contado, y el número del sábado repasa los de la semana; si no hay ninguno nuevo, rescata uno anterior. Un programa abre cada recurso y guarda una captura de lo que se ve; el documentalista lo describe a partir de la captura y de su página, y el revisor lo vuelve a abrir. Salen en la sección {seccion_vc}, con el nombre de quien lo ha hecho y su licencia."),
                 ("Las personas", "La idea del diario es de {raul}, administrador de {edumedia}. La redacción la diseñó y la supervisa {juanjo}."),
                 ("El código", "Los programas que preparan y montan el diario y el encargo de cada agente son públicos, en {codigo}, con licencia AGPL v3, y cada decisión está explicada en sus registros de decisiones (ADR). Los mensajes de los grupos no están en él."),
-                ("Las visitas", "El diario cuenta cuántas visitas recibe y cuántas veces se abre cada página, para saber si llega a quien lo lee. No usa cookies ni guarda nada de quien lo lee: su navegador recuerda qué páginas ya ha contado, para no contarlas dos veces en la misma visita, y al servidor de los autores solo le llega la suma. Lo que guarda el navegador, también el tema y el idioma elegidos, se borra a los 13 meses, la duración que pone de ejemplo la {aepd} en su guía sobre medición de audiencia, y las visitas nuevas no lo alargan. Las cifras se guardan por horas durante 25 meses como máximo, el plazo de esa misma guía, y solo las ven las dos personas que hacen el diario."),
+                ("Las visitas", "El diario cuenta cuántas visitas recibe y cuántas veces se abre cada página, para saber si llega a quien lo lee. No usa cookies ni guarda nada de quien lo lee: su navegador recuerda qué páginas ya ha contado, para no contarlas dos veces en la misma visita, y al servidor de los autores solo le llega la suma. Lo que el navegador recuerda para el contador se borra a los 13 meses, la duración que pone de ejemplo la {aepd} en su guía sobre medición de audiencia, y las visitas nuevas no lo alargan; el tema y el idioma que se eligen se recuerdan sin caducar. Las cifras se guardan por horas durante 25 meses como máximo, el plazo de esa misma guía, y solo las ven las dos personas que hacen el diario."),
                 ("Las comunidades", "{chatgpt}, sobre inteligencia artificial en educación; {vce}, de docentes que programan sus propias aplicaciones con IA, y {edumedia}, sobre IA generativa para crear audio, vídeo e imagen. Las tres son abiertas: cada pieza enlaza a la conversación donde nació, que se puede leer sin entrar."),
                 ("Si participas en los grupos", "Las opiniones no se atribuyen a nadie: solo se nombra a la persona que ha publicado un recurso propio. Si aparece algo tuyo y prefieres que no salga, o ves un error, díselo a las personas que administran tu grupo y se retirará o se corregirá."),
             ],
@@ -280,7 +280,7 @@ IDIOMAS = {
                 ("El Repositori de recursos", "El {repositorio} de Vibe Coding Educativo reuneix les aplicacions i els recursos que creen i comparteixen amb llicència oberta els docents d'aquesta comunitat. Els dies amb menys de quatre peces, el documentalista escriu sobre els que hi han entrat i que el diari encara no ha explicat, i el número del dissabte repassa els de la setmana; si no n'hi ha cap de nou, en rescata un d'anterior. Un programa obre cada recurs i en guarda una captura del que es veu; el documentalista el descriu a partir de la captura i de la seva pàgina, i el revisor el torna a obrir. Surten a la secció {seccion_vc}, amb el nom de qui l'ha fet i la seva llicència."),
                 ("Les persones", "La idea del diari és de {raul}, administrador d'{edumedia}. La redacció la va dissenyar i la supervisa {juanjo}."),
                 ("El codi", "Els programes que preparen i munten el diari i l'encàrrec de cada agent són públics, al {codigo}, amb llicència AGPL v3, i cada decisió s'explica als seus registres de decisions (ADR). Els missatges dels grups no hi són."),
-                ("Les visites", "El diari compta quantes visites rep i quantes vegades s'obre cada pàgina, per saber si arriba a qui el llegeix. No fa servir galetes ni desa res de qui el llegeix: el seu navegador recorda quines pàgines ja ha comptat, per no comptar-les dues vegades en la mateixa visita, i al servidor dels autors només hi arriba la suma. El que desa el navegador, també el tema i l'idioma triats, s'esborra al cap de 13 mesos, la durada que posa d'exemple l'{aepd} a la seva guia sobre mesurament d'audiència, i les visites noves no l'allarguen. Les xifres es desen per hores durant 25 mesos com a màxim, el termini d'aquesta mateixa guia, i només les veuen les dues persones que fan el diari."),
+                ("Les visites", "El diari compta quantes visites rep i quantes vegades s'obre cada pàgina, per saber si arriba a qui el llegeix. No fa servir galetes ni desa res de qui el llegeix: el seu navegador recorda quines pàgines ja ha comptat, per no comptar-les dues vegades en la mateixa visita, i al servidor dels autors només hi arriba la suma. El que el navegador recorda per al comptador s'esborra al cap de 13 mesos, la durada que posa d'exemple l'{aepd} a la seva guia sobre mesurament d'audiència, i les visites noves no l'allarguen; el tema i l'idioma triats es recorden sense caducar. Les xifres es desen per hores durant 25 mesos com a màxim, el termini d'aquesta mateixa guia, i només les veuen les dues persones que fan el diari."),
                 ("Les comunitats", "{chatgpt}, sobre intel·ligència artificial en educació; {vce}, de docents que programen les seves pròpies aplicacions amb IA, i {edumedia}, sobre IA generativa per crear àudio, vídeo i imatge. Totes tres són obertes: cada peça enllaça amb la conversa on va néixer, que es pot llegir sense entrar-hi."),
                 ("Si participes als grups", "Les opinions no s'atribueixen a ningú: només s'anomena la persona que ha publicat un recurs propi. Si hi apareix alguna cosa teva i prefereixes que no surti, o hi veus un error, digues-ho a les persones que administren el teu grup i es retirarà o es corregirà."),
             ],
@@ -570,25 +570,21 @@ if(nueva||cuenta)navigator.sendBeacon('https://bilateria.org/app/diario-ia-educa
 })();}catch(_){}</script>"""
 
 
-# Lo que el diario guarda en el navegador (el tema, el idioma y la visita en curso) caduca a los 13 meses
-# de guardarse por primera vez, la duración que pone de ejemplo la AEPD, y lo esencial: las visitas nuevas
-# no lo renuevan (ADR 0033). AEPD (2024), «Uso de cookies para herramientas de medición de audiencia»,
-# ap. III.A, garantía 2, p. 4 (https://www.aepd.es/guias/guia-cookies-analiticas-externas.pdf).
-# «diario.desde» guarda esa fecha y, pasada, se borra todo y se empieza de cero. Si en ese momento hay
-# una visita en curso, se conserva, para no contarla dos veces. Es el primer script de
-# la cabecera, antes de leer el tema o el idioma. La marca de los autores («diario.nocontar») no entra:
-# solo está en sus navegadores y la quitan ellos con ?nocontar=0.
+# La cuenta de la visita del contador («diario.visita») caduca a los 13 meses de guardarse por primera
+# vez, la duración que pone de ejemplo la AEPD, y lo esencial: las visitas nuevas no la renuevan (ADR 0033).
+# AEPD (2024), «Uso de cookies para herramientas de medición de audiencia», ap. III.A, garantía 2, p. 4
+# (https://www.aepd.es/guias/guia-cookies-analiticas-externas.pdf). «diario.desde» guarda esa fecha y,
+# pasada, se borra la cuenta y se empieza de cero; si en ese momento hay una visita en curso, se conserva,
+# para no contarla dos veces. El tema y el idioma son preferencias de quien lee y no caducan: la guía solo
+# pide la caducidad para la medición. Tampoco la marca de los autores («diario.nocontar»), que solo está
+# en sus navegadores y quitan ellos con ?nocontar=0. Va en el primer script de la cabecera, con el tema.
 AEPD_MEDICION = "https://www.aepd.es/guias/guia-cookies-analiticas-externas.pdf"   # solo en castellano
 CADUCIDAD = """<script>try{(function(){
-var s=localStorage,k=['sala.tema','sala.idioma','diario.visita'],c=+s.getItem('diario.desde'),ahora=Date.now();
-if(c&&ahora-c>%d){var v=JSON.parse(s.getItem('diario.visita')||'null');k.forEach(function(x){s.removeItem(x);});s.removeItem('diario.desde');c=0;
+var s=localStorage,c=+s.getItem('diario.desde'),ahora=Date.now();
+if(c&&ahora-c>%d){var v=JSON.parse(s.getItem('diario.visita')||'null');s.removeItem('diario.visita');s.removeItem('diario.desde');c=0;
 if(v&&ahora-v.t<18e5)s.setItem('diario.visita',JSON.stringify(v));}
-if(!c&&k.some(function(x){return s.getItem(x)!==null;}))s.setItem('diario.desde',ahora);
+if(!c&&s.getItem('diario.visita')!==null)s.setItem('diario.desde',ahora);
 var t=s.getItem('sala.tema');if(t)document.documentElement.dataset.theme=t;})();}catch(_){}</script>""" % (395 * 86400000)
-# Quien guarda algo por primera vez apunta también la fecha, por si no abre otra página.
-DESDE = "if(!localStorage.getItem('diario.desde'))localStorage.setItem('diario.desde',Date.now());"
-
-
 def cabeza(titulo, prof, descripcion, ruta, portada=False):
     codigo = L["codigo"]
     r = recursos(prof)
@@ -717,10 +713,10 @@ SCRIPT_TEMA = """<script>
   sistema.addEventListener('change',function(){try{if(!localStorage.getItem('sala.tema')){delete raiz.dataset.theme;pinta();}}catch(_){pinta();}});
   document.getElementById('tema').addEventListener('click',function(){
     var nuevo = oscuro()?'light':'dark'; raiz.dataset.theme=nuevo;
-    try{ if((nuevo==='dark')===sistema.matches) localStorage.removeItem('sala.tema'); else{localStorage.setItem('sala.tema',nuevo);""" + DESDE + """}}catch(_){}
+    try{ if((nuevo==='dark')===sistema.matches) localStorage.removeItem('sala.tema'); else localStorage.setItem('sala.tema',nuevo);}catch(_){}
   });
   document.querySelectorAll('[data-idioma]').forEach(function(a){
-    a.addEventListener('click',function(){try{localStorage.setItem('sala.idioma',a.dataset.idioma);""" + DESDE + """}catch(_){}});
+    a.addEventListener('click',function(){try{localStorage.setItem('sala.idioma',a.dataset.idioma);}catch(_){}});
   });
   // El menú de idiomas (ADR 0026): se abre al pulsar el botón y se cierra al pulsar fuera o con Escape
   var bi=document.querySelector('.idioma-boton'), mi=document.getElementById('menu-idiomas');
