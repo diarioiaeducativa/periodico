@@ -1,0 +1,27 @@
+Educational AI Daily tells you every morning what was discussed the day before in three open teaching communities: ChatGPT-IA-edu, Vibe Coding Educativo and EduMedia-IAG. Tools, debates, guides and resources on artificial intelligence in education, with every fact checked against its original source.
+
+It is not an official publication and is not linked to any public body or any artificial intelligence company.
+
+EVERY DAY
+• The day's news, by section: Tools, Vibe coding, Multimedia, Debates, Institutions & Industry, and Library.
+• The comic strip of Chalk and Algorithm, who comment with humour on a story from the issue.
+• "A year ago": what the groups were discussing on the same day last year, told from today.
+• On Sundays, a feature on one topic of the week.
+• The week and the month, with all their stories, and the archive with every issue.
+
+NEW ISSUE ALERT, IF YOU WANT IT
+From "New issue alerts", in the footer, the app tells you each morning when the new issue is out. It comes switched off: only those who want it turn it on.
+
+OFFLINE
+The latest issue loaded and the pages already opened can be read offline.
+
+WRITTEN WITH ARTIFICIAL INTELLIGENCE
+It is made every night by artificial intelligence agents (Claude, by Anthropic): they choose the topics, write, check every fact against its source, draw and translate. How they work and what is checked, in "The newsroom": https://diarioiaeducativa.github.io/en/redaccion.html
+
+PRIVACY
+No accounts and no ads. The paper counts visits to each page without cookies and without keeping anything about its readers, and the app collects no data. Privacy policy: https://diarioiaeducativa.github.io/en/redaccion.html#privacidad
+
+IN FIVE LANGUAGES AND OPEN
+• In English, Spanish, Catalan, Galician and Basque.
+• Texts and illustrations under CC BY-SA 4.0; open source code under AGPL v3: https://github.com/diarioiaeducativa/periodico
+• An idea by Raül Torres. © Juan José de Haro and Raül Torres.

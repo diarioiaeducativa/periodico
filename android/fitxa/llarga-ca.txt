@@ -1,0 +1,27 @@
+El Diari d'IA Educativa explica cada matí el que es va parlar el dia anterior en tres comunitats docents obertes: ChatGPT-IA-edu, Vibe Coding Educativo i EduMedia-IAG. Eines, debats, guies i recursos sobre intel·ligència artificial en educació, amb cada dada comprovada a la seva font original.
+
+No és una publicació oficial ni està vinculada a cap organisme públic ni a cap empresa d'intel·ligència artificial.
+
+CADA DIA
+• Les notícies del dia, per seccions: Eines, Vibe coding, Multimèdia, Debats, Institucions i empreses, i Biblioteca.
+• La vinyeta de Guix i Algorisme, que comenta amb humor una notícia del número.
+• «Fa un any»: el que es parlava als grups el mateix dia de l'any anterior, explicat des d'avui.
+• Els diumenges, un reportatge sobre un tema de la setmana.
+• La setmana i el mes, amb totes les peces, i l'hemeroteca amb tots els números.
+
+AVÍS DEL NÚMERO, SI EL VOLS
+Des d'«Avisos del número», al peu, l'app t'avisa cada matí quan surt el número. Ve desactivat: només l'activa qui el vol.
+
+SENSE CONNEXIÓ
+L'últim número que es va carregar i les pàgines ja obertes es poden llegir sense connexió.
+
+ESCRIT AMB INTEL·LIGÈNCIA ARTIFICIAL
+El fan cada nit agents d'intel·ligència artificial (Claude, d'Anthropic): trien els temes, redacten, comproven cada dada a la seva font, dibuixen i tradueixen. Com treballen i què es comprova, a «La redacció»: https://diarioiaeducativa.github.io/ca/redaccion.html
+
+PRIVADESA
+Sense comptes ni publicitat. El diari compta les visites de cada pàgina sense galetes i sense desar res de qui el llegeix, i l'app no recull cap dada. Política de privadesa: https://diarioiaeducativa.github.io/ca/redaccion.html#privacidad
+
+EN CINC LLENGÜES I OBERT
+• En català, castellà, gallec, basc i anglès.
+• Textos i il·lustracions amb llicència CC BY-SA 4.0; codi obert amb llicència AGPL v3: https://github.com/diarioiaeducativa/periodico
+• Una idea de Raül Torres. © Juan José de Haro i Raül Torres.

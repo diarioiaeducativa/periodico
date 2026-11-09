@@ -1,0 +1,27 @@
+Hezkuntzako AA Egunkariak goizero kontatzen du aurreko egunean zer esan zen hiru irakasle-komunitate irekitan: ChatGPT-IA-edu, Vibe Coding Educativo eta EduMedia-IAG. Hezkuntzako adimen artifizialari buruzko tresnak, eztabaidak, gidak eta baliabideak, datu bakoitza jatorrizko iturrian egiaztatuta.
+
+Ez da argitalpen ofiziala, eta ez dago lotuta ez erakunde publikoekin ez adimen artifizialeko enpresekin.
+
+EGUNERO
+• Eguneko berriak, ataletan: Tresnak, Vibe coding, Multimedia, Eztabaidak, Erakundeak eta enpresak, eta Liburutegia.
+• Klarion eta Algoritmoren bineta, zenbakiko berri bat umorez iruzkintzen duena.
+• «Duela urtebete»: aurreko urteko egun berean taldeetan esaten zena, gaurtik kontatua.
+• Igandeetan, asteko gai bati buruzko erreportajea.
+• Astea eta hilabetea, beren pieza guztiekin, eta hemeroteka, zenbaki guztiekin.
+
+ZENBAKIAREN ABISUA, NAHI BADUZU
+Orri-oineko «Zenbakiaren abisuak» aukeratik, aplikazioak goizero abisatzen dizu zenbakia ateratzen denean. Desaktibatuta dator: nahi duenak bakarrik aktibatzen du.
+
+KONEXIORIK GABE
+Kargatu zen azken zenbakia eta lehendik irekitako orriak konexiorik gabe irakur daitezke.
+
+ADIMEN ARTIFIZIALAREKIN IDATZIA
+Gauero adimen artifizialeko agenteek egiten dute (Claude, Anthropicena): gaiak aukeratzen dituzte, idazten dute, datu bakoitza bere iturrian egiaztatzen dute, marrazten eta itzultzen dute. Nola lan egiten duten eta zer egiaztatzen den, «Erredakzioa» atalean: https://diarioiaeducativa.github.io/eu/redaccion.html
+
+PRIBATUTASUNA
+Konturik eta publizitaterik gabe. Egunkariak orri bakoitzaren bisitak zenbatzen ditu cookierik gabe eta irakurleari buruzko ezer gorde gabe, eta aplikazioak ez du daturik biltzen. Pribatutasun-politika: https://diarioiaeducativa.github.io/eu/redaccion.html#privacidad
+
+BOST HIZKUNTZATAN ETA IREKIA
+• Euskaraz, gaztelaniaz, katalanez, galegoz eta ingelesez.
+• Testuak eta irudiak CC BY-SA 4.0 lizentziarekin; kode irekia AGPL v3 lizentziarekin: https://github.com/diarioiaeducativa/periodico
+• Raül Torresen ideia bat. © Juan José de Haro eta Raül Torres.

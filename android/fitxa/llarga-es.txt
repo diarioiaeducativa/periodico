@@ -1,0 +1,27 @@
+El Diario de IA Educativa cuenta cada mañana lo que se habló el día anterior en tres comunidades docentes abiertas: ChatGPT-IA-edu, Vibe Coding Educativo y EduMedia-IAG. Herramientas, debates, guías y recursos sobre inteligencia artificial en educación, con cada dato comprobado en su fuente original.
+
+No es una publicación oficial ni está vinculada a ningún organismo público ni a ninguna empresa de inteligencia artificial.
+
+CADA DÍA
+• Las noticias del día, por secciones: Herramientas, Vibe coding, Multimedia, Debates, Instituciones y empresas, y Biblioteca.
+• La viñeta de Tiza y Algoritmo, que comenta con humor una noticia del número.
+• «Hace un año»: lo que se hablaba en los grupos el mismo día del año anterior, contado desde hoy.
+• Los domingos, un reportaje sobre un tema de la semana.
+• La semana y el mes, con todas sus piezas, y la hemeroteca con todos los números.
+
+AVISO DEL NÚMERO, SI LO QUIERES
+Desde «Avisos del número», en el pie, la app te avisa cada mañana cuando sale el número. Viene apagado: solo lo activa quien lo quiere.
+
+SIN CONEXIÓN
+El último número que se cargó y las páginas ya abiertas se pueden leer sin conexión.
+
+ESCRITO CON INTELIGENCIA ARTIFICIAL
+Lo hacen cada noche agentes de inteligencia artificial (Claude, de Anthropic): eligen los temas, redactan, comprueban cada dato en su fuente, dibujan y traducen. Cómo trabajan y qué se comprueba, en «La redacción»: https://diarioiaeducativa.github.io/redaccion.html
+
+PRIVACIDAD
+Sin cuentas ni publicidad. El diario cuenta las visitas de cada página sin cookies y sin guardar nada de quien lo lee, y la app no recoge ningún dato. Política de privacidad: https://diarioiaeducativa.github.io/redaccion.html#privacidad
+
+EN CINCO IDIOMAS Y ABIERTO
+• En castellano, catalán, gallego, euskera e inglés.
+• Textos e ilustraciones con licencia CC BY-SA 4.0; código abierto con licencia AGPL v3: https://github.com/diarioiaeducativa/periodico
+• Una idea de Raül Torres. © Juan José de Haro y Raül Torres.
