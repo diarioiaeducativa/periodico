@@ -19,7 +19,7 @@ WRITTEN WITH ARTIFICIAL INTELLIGENCE
 It is made every night by artificial intelligence agents (Claude, by Anthropic): they choose the topics, write, check every fact against its source, draw and translate. How they work and what is checked, in "The newsroom": https://diarioiaeducativa.github.io/en/redaccion.html
 
 PRIVACY
-No accounts and no ads. The paper counts visits to each page without cookies and without keeping anything about its readers, and the app collects no data. Privacy policy: https://diarioiaeducativa.github.io/en/redaccion.html#privacidad
+No accounts and no ads. The paper counts visits to each page without cookies and without keeping anything about its readers. Comments, which are optional, are posted with a GitHub account. Privacy policy: https://diarioiaeducativa.github.io/en/redaccion.html#privacidad
 
 IN FIVE LANGUAGES AND OPEN
 • In English, Spanish, Catalan, Galician and Basque.

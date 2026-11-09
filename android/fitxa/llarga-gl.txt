@@ -19,7 +19,7 @@ ESCRITO CON INTELIXENCIA ARTIFICIAL
 Fano cada noite axentes de intelixencia artificial (Claude, de Anthropic): escollen os temas, redactan, comproban cada dato na súa fonte, debuxan e traducen. Como traballan e que se comproba, en «A redacción»: https://diarioiaeducativa.github.io/gl/redaccion.html
 
 PRIVACIDADE
-Sen contas nin publicidade. O diario conta as visitas de cada páxina sen cookies e sen gardar nada de quen o le, e a app non recolle ningún dato. Política de privacidade: https://diarioiaeducativa.github.io/gl/redaccion.html#privacidad
+Sen contas nin publicidade. O diario conta as visitas de cada páxina sen cookies e sen gardar nada de quen o le. Os comentarios, opcionais, publícanse cunha conta de GitHub. Política de privacidade: https://diarioiaeducativa.github.io/gl/redaccion.html#privacidad
 
 EN CINCO LINGUAS E ABERTO
 • En galego, castelán, catalán, éuscaro e inglés.

@@ -19,7 +19,7 @@ ESCRIT AMB INTEL·LIGÈNCIA ARTIFICIAL
 El fan cada nit agents d'intel·ligència artificial (Claude, d'Anthropic): trien els temes, redacten, comproven cada dada a la seva font, dibuixen i tradueixen. Com treballen i què es comprova, a «La redacció»: https://diarioiaeducativa.github.io/ca/redaccion.html
 
 PRIVADESA
-Sense comptes ni publicitat. El diari compta les visites de cada pàgina sense galetes i sense desar res de qui el llegeix, i l'app no recull cap dada. Política de privadesa: https://diarioiaeducativa.github.io/ca/redaccion.html#privacidad
+Sense comptes ni publicitat. El diari compta les visites de cada pàgina sense galetes i sense desar res de qui el llegeix. Els comentaris, opcionals, es publiquen amb un compte de GitHub. Política de privadesa: https://diarioiaeducativa.github.io/ca/redaccion.html#privacidad
 
 EN CINC LLENGÜES I OBERT
 • En català, castellà, gallec, basc i anglès.

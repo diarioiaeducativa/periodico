@@ -19,7 +19,7 @@ ADIMEN ARTIFIZIALAREKIN IDATZIA
 Gauero adimen artifizialeko agenteek egiten dute (Claude, Anthropicena): gaiak aukeratzen dituzte, idazten dute, datu bakoitza bere iturrian egiaztatzen dute, marrazten eta itzultzen dute. Nola lan egiten duten eta zer egiaztatzen den, «Erredakzioa» atalean: https://diarioiaeducativa.github.io/eu/redaccion.html
 
 PRIBATUTASUNA
-Konturik eta publizitaterik gabe. Egunkariak orri bakoitzaren bisitak zenbatzen ditu cookierik gabe eta irakurleari buruzko ezer gorde gabe, eta aplikazioak ez du daturik biltzen. Pribatutasun-politika: https://diarioiaeducativa.github.io/eu/redaccion.html#privacidad
+Konturik eta publizitaterik gabe. Egunkariak orri bakoitzaren bisitak zenbatzen ditu cookierik gabe eta irakurleari buruzko ezer gorde gabe. Iruzkinak, aukerakoak, GitHub kontu batekin argitaratzen dira. Pribatutasun-politika: https://diarioiaeducativa.github.io/eu/redaccion.html#privacidad
 
 BOST HIZKUNTZATAN ETA IREKIA
 • Euskaraz, gaztelaniaz, katalanez, galegoz eta ingelesez.
