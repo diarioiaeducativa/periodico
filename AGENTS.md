@@ -106,6 +106,11 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
 - **Comentario de la semana** (ADR 0038): `scripts/comentario-semana.sh AAAA-WW`, que lanza `noche.sh`
   la noche del domingo (o con `COMENTARIO=1`): uno general y uno por grupo en `comentario-semana/`,
   de 150 a 250 palabras; `scripts/comentario_semana.py comprobar` dice si vale.
+- **App de Android y lectura sin conexión** (ADR 0042): `estaticos/sw.js` (primero la red; sin ella,
+  lo guardado y `sin-conexion.html`); si cambia lo que guarda, subir `CACHE`. La app es una TWA en
+  `android/` (`construeix.sh`, con la clave en `~/.config/diario-ia-educativa/android/`), vinculada por
+  `estaticos/.well-known/assetlinks.json`, que no se borra. La política de privacidad de la ficha es
+  `redaccion.html#privacidad`: si se cambia ese apartado, que siga diciendo lo que guarda el dispositivo.
 - **Cinco idiomas** (ADR 0026): `/ca/`, `/gl/`, `/eu/` y `/en/`;
   traducción nocturna (`scripts/traducir.sh`) y de un día ya publicado
   (`scripts/traducir-dia.sh FECHA [idiomas]`, en una copia fuera de `/home`).

@@ -79,6 +79,8 @@ IDIOMAS = {
         "todos_numeros": "Hemeroteca: todos los números",
         "compartir": "Compartir", "copiado": "Enlace copiado", "compartir_breve": "Compartir este breve", "mas_en": "Más en", "mas_diario": "Más en el diario",
         "no_existe": "Esta página no existe",
+        "sin_conexion": "Sin conexión",
+        "sin_conexion_txt": "Esta página no está guardada en este dispositivo. Sin conexión se pueden leer las páginas que ya se han abierto y el último número que se cargó en la portada.",
         "no_existe_txt": "Puede que el enlace esté mal escrito o que la pieza se haya retirado. La portada de hoy y la hemeroteca siguen ahí.",
         "redactado": "Redactado con IA a partir de las conversaciones de los grupos. Cada dato se comprueba en su fuente original, enlazada al final de cada pieza; las opiniones de los miembros no se atribuyen a nadie.",
         "licencia": "Textos e ilustraciones con licencia", "deed": "deed.es", "reserva_aviso": "Hoy no han podido salir las noticias de los grupos de ayer por un fallo de la redacción del diario. Salen mañana, junto con las de hoy; mientras tanto, un recurso del fondo del repositorio.", "vcer": "Evaluación VCER: Recomendable (100 %), noviembre de 2026", "codigo_enlace": "el repositorio de la redacción",
@@ -166,7 +168,7 @@ IDIOMAS = {
                 ("El Repositorio de recursos", "El {repositorio} de Vibe Coding Educativo reúne las aplicaciones y recursos que crean y comparten con licencia abierta los docentes de esa comunidad. Los días con menos de cuatro piezas, el documentalista escribe sobre los que han entrado y el diario aún no ha contado, y el número del sábado repasa los de la semana; si no hay ninguno nuevo, rescata uno anterior. Un programa abre cada recurso y guarda una captura de lo que se ve; el documentalista lo describe a partir de la captura y de su página, y el revisor lo vuelve a abrir. Salen en la sección {seccion_vc}, con el nombre de quien lo ha hecho y su licencia."),
                 ("Las personas", "La idea del diario es de {raul}, administrador de {edumedia}. La redacción la diseñó y la supervisa {juanjo}."),
                 ("El código", "Los programas que preparan y montan el diario y el encargo de cada agente son públicos, en {codigo}, con licencia AGPL v3, y cada decisión está explicada en sus registros de decisiones (ADR). Los mensajes de los grupos no están en él."),
-                ("Las visitas", "El diario cuenta cuántas visitas recibe y cuántas veces se abre cada página, para saber si llega a quien lo lee. No usa cookies ni guarda nada de quien lo lee: su navegador recuerda qué páginas ya ha contado, para no contarlas dos veces en la misma visita, y al servidor de los autores solo le llega la suma. Lo que el navegador recuerda para el contador se borra a los 13 meses, la duración que pone de ejemplo la {aepd} en su guía sobre medición de audiencia, y las visitas nuevas no lo alargan; el tema y el idioma que se eligen se recuerdan sin caducar. Las cifras se guardan por horas durante 25 meses como máximo, el plazo de esa misma guía; después queda solo el total de cada año. Solo las ven las dos personas que hacen el diario."),
+                ("Las visitas", "El diario cuenta cuántas visitas recibe y cuántas veces se abre cada página, para saber si llega a quien lo lee. No usa cookies ni guarda nada de quien lo lee: su navegador recuerda qué páginas ya ha contado, para no contarlas dos veces en la misma visita, y al servidor de los autores solo le llega la suma. Lo que el navegador recuerda para el contador se borra a los 13 meses, la duración que pone de ejemplo la {aepd} en su guía sobre medición de audiencia, y las visitas nuevas no lo alargan; el tema y el idioma que se eligen se recuerdan sin caducar. Las cifras se guardan por horas durante 25 meses como máximo, el plazo de esa misma guía; después queda solo el total de cada año. Solo las ven las dos personas que hacen el diario. Para poder leerlo sin conexión, el navegador guarda en el propio dispositivo una copia de las páginas abiertas y del último número; esa copia no sale de él. La app de Android es esta misma web y no recoge nada más."),
                 ("Las comunidades", "{chatgpt}, sobre inteligencia artificial en educación; {vce}, de docentes que programan sus propias aplicaciones con IA, y {edumedia}, sobre IA generativa para crear audio, vídeo e imagen. Las tres son abiertas: cada pieza enlaza a la conversación donde nació, que se puede leer sin entrar."),
                 ("Si participas en los grupos", "Las opiniones no se atribuyen a nadie: solo se nombra a la persona que ha publicado un recurso propio. Si aparece algo tuyo y prefieres que no salga, o ves un error, díselo a las personas que administran tu grupo y se retirará o se corregirá."),
             ],
@@ -203,6 +205,8 @@ IDIOMAS = {
         "todos_numeros": "Hemeroteca: tots els números",
         "compartir": "Comparteix", "copiado": "Enllaç copiat", "compartir_breve": "Comparteix aquest breu", "mas_en": "Més a", "mas_diario": "Més al diari",
         "no_existe": "Aquesta pàgina no existeix",
+        "sin_conexion": "Sense connexió",
+        "sin_conexion_txt": "Aquesta pàgina no està desada en aquest dispositiu. Sense connexió es poden llegir les pàgines que ja s'han obert i l'últim número que es va carregar a la portada.",
         "no_existe_txt": "Pot ser que l'enllaç estigui mal escrit o que la peça s'hagi retirat. La portada d'avui i l'hemeroteca continuen aquí.",
         "redactado": "Redactat amb IA a partir de les converses dels grups. Cada dada es comprova a la seva font original, enllaçada al final de cada peça; les opinions dels membres no s'atribueixen a ningú.",
         "licencia": "Textos i il·lustracions amb llicència", "deed": "deed.ca", "reserva_aviso": "Avui no han pogut sortir les notícies dels grups d'ahir per una fallada de la redacció del diari. Surten demà, juntament amb les d'avui; mentrestant, un recurs del fons del repositori.", "vcer": "Avaluació VCER: Recomanable (100 %), novembre de 2026", "codigo_enlace": "repositori de la redacció",
@@ -291,7 +295,7 @@ IDIOMAS = {
                 ("El Repositori de recursos", "El {repositorio} de Vibe Coding Educativo reuneix les aplicacions i els recursos que creen i comparteixen amb llicència oberta els docents d'aquesta comunitat. Els dies amb menys de quatre peces, el documentalista escriu sobre els que hi han entrat i que el diari encara no ha explicat, i el número del dissabte repassa els de la setmana; si no n'hi ha cap de nou, en rescata un d'anterior. Un programa obre cada recurs i en guarda una captura del que es veu; el documentalista el descriu a partir de la captura i de la seva pàgina, i el revisor el torna a obrir. Surten a la secció {seccion_vc}, amb el nom de qui l'ha fet i la seva llicència."),
                 ("Les persones", "La idea del diari és de {raul}, administrador d'{edumedia}. La redacció la va dissenyar i la supervisa {juanjo}."),
                 ("El codi", "Els programes que preparen i munten el diari i l'encàrrec de cada agent són públics, al {codigo}, amb llicència AGPL v3, i cada decisió s'explica als seus registres de decisions (ADR). Els missatges dels grups no hi són."),
-                ("Les visites", "El diari compta quantes visites rep i quantes vegades s'obre cada pàgina, per saber si arriba a qui el llegeix. No fa servir galetes ni desa res de qui el llegeix: el seu navegador recorda quines pàgines ja ha comptat, per no comptar-les dues vegades en la mateixa visita, i al servidor dels autors només hi arriba la suma. El que el navegador recorda per al comptador s'esborra al cap de 13 mesos, la durada que posa d'exemple l'{aepd} a la seva guia sobre mesurament d'audiència, i les visites noves no l'allarguen; el tema i l'idioma triats es recorden sense caducar. Les xifres es desen per hores durant 25 mesos com a màxim, el termini d'aquesta mateixa guia; després només en queda el total de cada any. Només les veuen les dues persones que fan el diari."),
+                ("Les visites", "El diari compta quantes visites rep i quantes vegades s'obre cada pàgina, per saber si arriba a qui el llegeix. No fa servir galetes ni desa res de qui el llegeix: el seu navegador recorda quines pàgines ja ha comptat, per no comptar-les dues vegades en la mateixa visita, i al servidor dels autors només hi arriba la suma. El que el navegador recorda per al comptador s'esborra al cap de 13 mesos, la durada que posa d'exemple l'{aepd} a la seva guia sobre mesurament d'audiència, i les visites noves no l'allarguen; el tema i l'idioma triats es recorden sense caducar. Les xifres es desen per hores durant 25 mesos com a màxim, el termini d'aquesta mateixa guia; després només en queda el total de cada any. Només les veuen les dues persones que fan el diari. Per poder-lo llegir sense connexió, el navegador desa al mateix dispositiu una còpia de les pàgines obertes i de l'últim número; aquesta còpia no en surt. L'app d'Android és aquest mateix web i no recull res més."),
                 ("Les comunitats", "{chatgpt}, sobre intel·ligència artificial en educació; {vce}, de docents que programen les seves pròpies aplicacions amb IA, i {edumedia}, sobre IA generativa per crear àudio, vídeo i imatge. Totes tres són obertes: cada peça enllaça amb la conversa on va néixer, que es pot llegir sense entrar-hi."),
                 ("Si participes als grups", "Les opinions no s'atribueixen a ningú: només s'anomena la persona que ha publicat un recurs propi. Si hi apareix alguna cosa teva i prefereixes que no surti, o hi veus un error, digues-ho a les persones que administren el teu grup i es retirarà o es corregirà."),
             ],
@@ -673,7 +677,7 @@ def cabeza(titulo, prof, descripcion, ruta, portada=False, datos=None):
 <meta name="twitter:card" content="summary_large_image">
 {CADUCIDAD}
 {salto}
-{CONTADOR if ruta != "404.html" else ""}
+{CONTADOR if ruta not in ("404.html", "sin-conexion.html") else ""}
 <link rel="icon" href="{r}favicon.svg" type="image/svg+xml">
 <link rel="icon" href="{r}favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="{r}apple-touch-icon.png">
@@ -869,6 +873,9 @@ SCRIPT_TEMA = """<script>
     addEventListener('appinstalled',function(){inst.hidden=true;});
     if(ios&&(/iP(hone|ad|od)/.test(navigator.userAgent)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1))) ios.hidden=false;
   }
+  // Lectura sin conexión (ADR 0042): el service worker guarda lo que se abre y el último número. Solo en
+  // el propio diario, no dentro del marco de otra web.
+  if('serviceWorker' in navigator&&window.top===window) navigator.serviceWorker.register('/sw.js').catch(function(){});
   // «Para tu web» (ADR 0032): el botón despliega sus opciones y se cierra al pulsar fuera o con Escape
   var bl=document.querySelector('.llevar-boton'), ml=document.getElementById('menu-llevar');
   function cerrarLlevar(){ if(ml&&!ml.hidden){ml.hidden=true; bl.setAttribute('aria-expanded','false');} }
@@ -1954,7 +1961,9 @@ def pagina_redaccion(eds):
     pasos = "".join(f"<li>{x.format(**grupos)}</li>" for x in R["proceso"])
     # El diagrama de los grupos, tras la sección que los presenta (la que nombra a {chatgpt})
     venn = comunidades_figura()
-    resto = "".join((f'<h2 id="comunidades">{t}</h2>{venn}' if "{chatgpt}" in x else f"<h2>{t}</h2>") + f"<p>{x.format(**grupos)}</p>"
+    # La de las visitas es también la política de privacidad que enlaza la ficha de Google Play (ADR 0042)
+    resto = "".join((f'<h2 id="comunidades">{t}</h2>{venn}' if "{chatgpt}" in x else
+                     f'<h2 id="privacidad">{t}</h2>' if "{aepd}" in x else f"<h2>{t}</h2>") + f"<p>{x.format(**grupos)}</p>"
                     for t, x in R["secciones"])
     enlace_pres = f'<p class="presentacion"><a href="{d_href(pres)}">{L["presentacion"]}</a></p>' if pres else ""
     cab = cabecera("", "redaccion.html", eds[-1]["fecha"], eds[-1]["numero"], True, h1=False, activa="redaccion")
@@ -2365,6 +2374,29 @@ def pagina_404(eds):
 <p><a href="/">{L["portada"]}</a> · <a href="/archivo.html">{L["hemeroteca"]}</a></p>
 {otros}</main>
 {pie("/", eds, None)}
+{SCRIPT_TEMA}
+</body>
+</html>"""
+
+
+def pagina_sin_conexion():
+    """Lo que enseña el service worker sin conexión cuando la página pedida no está guardada (ADR 0042), una
+    por idioma. Rutas absolutas, porque sale en lugar de cualquier página; sin fecha ni número, porque se
+    guarda al instalar y puede tener semanas. No cuenta visitas ni se indexa."""
+    portada = "/" + L["carpeta"]
+    html_ = cabeza(f'{L["sin_conexion"]} | {L["titulo"]}', portada, L["sin_conexion_txt"], "sin-conexion.html")
+    html_ = html_.replace("<head>\n", '<head>\n<meta name="robots" content="noindex">\n', 1)
+    return html_ + f"""<body class="pag-que-es">
+<header class="cabecera">
+  <div class="cabecera-fila"><span></span><span></span><span class="controles">{boton_tema()}</span></div>
+  <p class="mancheta"><a href="{portada}">{L["titulo"]}</a></p>
+  <p class="lema">{L["lema"]}</p>
+</header>
+<main class="articulo no-existe">
+<h1 class="titular">{L["sin_conexion"]}</h1>
+<p>{L["sin_conexion_txt"]}</p>
+<p><a href="{portada}">{L["portada"]}</a></p>
+</main>
 {SCRIPT_TEMA}
 </body>
 </html>"""
@@ -3015,7 +3047,8 @@ def pagina_para_tu_web(eds):
 
 def manifiesto():
     """La ficha que permite instalar el diario como app desde el navegador (ADR 0013), una por idioma:
-    la instalada desde /ca/ se abre en catalán. Sin service worker ni avisos: siempre se lee lo publicado."""
+    la instalada desde /ca/ se abre en catalán. Sin avisos; el service worker (estaticos/sw.js, ADR 0042) solo
+    sirve lo guardado cuando no hay conexión, así que con conexión siempre se lee lo publicado."""
     raiz = "/" + L["carpeta"]
     return json.dumps({
         "id": raiz, "start_url": raiz, "scope": raiz,
@@ -3129,6 +3162,7 @@ def generar_idioma(codigo):
         if d.get("reportaje"):
             dibujo_suelto(d["fecha"], d["reportaje"], "reportaje")
     escribir(base / "manifest.webmanifest", manifiesto())
+    escribir(base / "sin-conexion.html", pagina_sin_conexion())
     if codigo == "es":
         escribir(RAIZ / "indice" / "diario.json", indice_bot(eds))   # para el bot, no se publica (ADR 0017)
         escribir(SITIO / "404.html", pagina_404(eds))

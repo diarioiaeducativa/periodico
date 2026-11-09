@@ -35,3 +35,11 @@ comentario-semana-borrador/
 # «Hace un año» (ADR 0040): la entrada y el borrador se rehacen cada noche
 hace-un-ano-entrada/
 hace-un-ano-borrador/
+# La app de Android (ADR 0042): lo que compila Bubblewrap y el enlace a la clave, que vive fuera
+android/upload.jks
+android/*.apk
+android/*.aab
+android/*.idsig
+android/build/
+android/app/build/
+android/.gradle/

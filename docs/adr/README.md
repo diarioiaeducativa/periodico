@@ -43,5 +43,6 @@
 | [0039](0039-preparado-para-los-buscadores.md) | Preparado para los buscadores |
 | [0040](0040-hace-un-ano.md) | «Hace un año»: lo que se hablaba el mismo día del año anterior, contado desde hoy |
 | [0041](0041-portada-sin-huecos.md) | La portada, sin huecos: cada bloque de sección, con sus tres piezas más recientes |
+| [0042](0042-app-de-android-y-lectura-sin-conexion.md) | App de Android en Google Play y lectura sin conexión |
 
 Plantilla: [0000-plantilla.md](0000-plantilla.md). Para crear uno: `nuevo-adr "Título"`.

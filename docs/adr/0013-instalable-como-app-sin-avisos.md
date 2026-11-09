@@ -1,6 +1,6 @@
 # 13. El diario se puede instalar como app, sin avisos
 
-Fecha: 2026-11-04 · Estado: aceptado
+Fecha: 2026-11-04 · Estado: aceptado; el service worker y la app de Google Play, sustituidos por el ADR 0042
 
 ## Contexto
 
@@ -40,6 +40,8 @@ instalable **sin aviso** («sin aviso entonces»): el número ya se anuncia cada
   del navegador. Con la app ya instalada no sale nada.
 - **Sin service worker**: Chrome ya no lo exige para instalar, y sin él la app siempre
   enseña lo publicado, sin copias guardadas que haya que invalidar.
+  *Desde el 09-11-2026 hay service worker (ADR 0042), para leer sin conexión y para la app de
+  Google Play; con conexión sigue enseñando siempre lo publicado.*
 - **Sin avisos**: ni Web Push ni sincronización periódica.
 
 ## Alternativas descartadas
