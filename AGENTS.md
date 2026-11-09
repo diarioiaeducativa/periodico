@@ -90,7 +90,7 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
 - **Buscadores** (ADR 0039): `robots.txt`, la dirección canónica de cada página y los datos
   estructurados de cada pieza salen de `generar.py` (`cabeza()`, `datos_noticia()`). El diario está en
   Google Search Console, con la cuenta de Juanjo: `estaticos/google0f64171555c8a8ac.html` lo verifica y no
-  se borra. Una página nueva que deba indexarse pasa por `cabeza()` y entra en `sitemap()`.
+  se borra; de esa verificación depende también la de Bing Webmaster Tools. Una página nueva que deba indexarse pasa por `cabeza()` y entra en `sitemap()`.
 - **La semana y el mes** (ADR 0034): `semana/AAAA-WW/` (semana de los mensajes, selector `?grupo=`),
   `mes/AAAA-MM/` y la hemeroteca por semanas. El boletín deja el pódcast y el vídeo de cada grupo en
   `multimedia/AAAA-WW.json` (formato en su `LEEME.md`) y `reloj.sh` vuelve a publicar solo la web con

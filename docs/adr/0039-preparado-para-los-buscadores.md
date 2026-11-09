@@ -50,7 +50,11 @@ otras webs, lo primero era lo que más pesaba. Juanjo aprobó hacer las tres.
 - Los buscadores encuentran el mapa del sitio por dos vías (`robots.txt` y Search Console), pero el mapa
   es una sugerencia: Google decide qué indexa y cuándo.
 - Una página nueva que deba indexarse tiene que pasar por `cabeza()` y entrar en `sitemap()`.
-- El alta en Bing no se ha hecho: exige otra cuenta.
+- El diario está también en Bing Webmaster Tools (09-11-2026), importado desde Search Console con su
+  mapa del sitio, entrando con la misma cuenta de Google: Bing lo da por verificado porque lo está en
+  Google y, para comprobarlo de vez en cuando, tiene permiso de solo lectura sobre Search Console. No
+  añade ningún archivo ni código a las páginas. Si se quita ese permiso o el diario deja de estar
+  verificado en Search Console, Bing pierde la verificación.
 
 ## Evidencia
 
