@@ -251,6 +251,8 @@ reel_semana() {
   fi
 }
 reel_semana
+# Lo que no llegó a Internet Archive otra noche se vuelve a probar (ADR 0037); sin pendientes, no hace nada.
+python3 scripts/subir-videos.py --minutos 15 >> "$REG" 2>&1 || log "AVISO: queda algún vídeo sin subir a Internet Archive"
 
 # 5. Que el sitio se genere con todo esto antes de darlo por listo.
 if ! python3 generar.py >> "$REG" 2>&1; then

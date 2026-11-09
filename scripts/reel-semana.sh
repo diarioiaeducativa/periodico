@@ -6,7 +6,7 @@
 #   scripts/reel-semana.sh AAAA-MM-DD      (la fecha del sábado)
 #
 # 19. guionista del reel (Sonnet) → reels/FECHA.json; después scripts/reel-semana.py monta el
-# vídeo sin IA (web: videos/; Instagram: instagram/reel-FECHA/). Si el guion no vale o un texto no
+# vídeo sin IA (web: videos/, y el vídeo a Internet Archive, ADR 0037; Instagram: instagram/reel-FECHA/). Si el guion no vale o un texto no
 # cabe, el agente lo rehace una vez. Nunca impide el número. Sale con 0 si hay vídeo y con 2 si no.
 set -uo pipefail
 
@@ -38,7 +38,13 @@ agente "$SONNET" 19-reel-guion 20
 for intento in 1 2; do
   error=$(python3 scripts/reel-semana.py "$FECHA" 2>&1 >>"$REG")
   codigo=$?
-  [ $codigo = 0 ] && { log "reel de la semana hecho"; exit 0; }
+  if [ $codigo = 0 ]; then
+    log "reel de la semana hecho"
+    # A Internet Archive antes de generar el número, para que el vídeo no entre en el repositorio del
+    # sitio (ADR 0037). Si archive.org falla, la web sirve la copia local y se reintenta cada noche.
+    python3 scripts/subir-videos.py --minutos 90 >> "$REG" 2>&1 || log "AVISO: el vídeo no ha llegado a Internet Archive; esta semana va en el sitio"
+    exit 0
+  fi
   printf '%s\n' "$error" >> "$REG"
   [ $intento = 2 ] && break
   log "el reel no sale ($error): el guionista lo rehace una vez"

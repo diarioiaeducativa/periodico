@@ -35,11 +35,12 @@ Recomendado y aceptado por Juanjo el 05-11-2026 («hazlo así»):
   combinación de tempo, tonalidad, modo y progresión no se repite nunca (se comprueba contra el
   estilo guardado en cada `videos/*.json` y el del primer reel), y tempo, tonalidad y batería
   cambian respecto al anterior.
-- **En la web, alojados en el propio sitio y no incrustados desde Instagram**, que metería los
+- **En la web, alojados por el diario y no incrustados desde Instagram**, que metería los
   rastreadores de Meta. Versión de 720 × 1280 (unos 1,3 MB por cada 40 s de vídeo e idioma: de
   1,6 a 2,7 MB por vídeo semanal, y de 170 a 280 MB al año con los dos idiomas). `videos/<id>.json` guarda el título, la descripción, lo que dice en
   pantalla (para quien no puede ver el vídeo), los archivos por idioma, el enlace de Instagram y
-  el estilo de la música; `generar.py` copia `videos/*.mp4|jpg` al sitio.
+  el estilo de la música. Desde el 9 de noviembre los vídeos van en Internet Archive y en el sitio,
+  solo las portadas (ADR 0037).
   - Página **«Vídeos»** (`videos.html`), con todos, cada uno con su ancla para compartirlo,
     enlazada desde el pie junto a un enlace sencillo a la cuenta de Instagram.
   - Bloque **«La semana en vídeo»** en la portada del número del domingo, tras la viñeta.
@@ -70,7 +71,7 @@ Recomendado y aceptado por Juanjo el 05-11-2026 («hazlo así»):
 
 - Unos 5 minutos de CPU en el portátil por vídeo con los dos idiomas (en el NAS, más), la noche
   del sábado.
-- El repositorio del sitio crece unos 2,7 MB por semana; revisar hacia 2028 si pasa de 500 MB.
+- El repositorio del sitio ya no crece con los vídeos, que van en Internet Archive (ADR 0037).
 - La imagen del contenedor necesita numpy (Dockerfile).
 
 ## Evidencia

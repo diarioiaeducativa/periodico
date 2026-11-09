@@ -34,8 +34,12 @@
     ]
   },
   "archivos": {
-    "es": {"video": "2026-11-05-comunidad-es.mp4", "poster": "2026-11-05-comunidad-es.jpg"}
+    "es": {
+      "video": "2026-11-05-comunidad-es.mp4",
+      "poster": "2026-11-05-comunidad-es.jpg"
+    }
   },
   "instagram": "https://www.instagram.com/reel/DfWeeynpc7L/",
-  "musica": "compuesta por programa con el prototipo de scripts/musica.py, 120 ppm, la menor"
+  "musica": "compuesta por programa con el prototipo de scripts/musica.py, 120 ppm, la menor",
+  "archive": "diarioiaeducativa_2026"
 }

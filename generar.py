@@ -1421,13 +1421,23 @@ INSTAGRAM = "https://www.instagram.com/comunidad.iaeducativa/"
 
 def cargar_videos():
     """Los vídeos del diario (videos/*.json, ADR 0016), del más reciente al más antiguo. Cada uno
-    tiene su vídeo y su portada por idioma; si falta el del idioma, va el castellano y se dice."""
+    tiene su vídeo y su portada por idioma; si falta el del idioma, va el castellano y se dice.
+    El vídeo de los que ya están en Internet Archive («archive» en el JSON, ADR 0037) no hace falta
+    en local; la portada, sí."""
     vs = []
     for f in sorted((RAIZ / "videos").glob("*.json")):
         v = json.loads(f.read_text())
-        if all((RAIZ / "videos" / x).exists() for x in v["archivos"]["es"].values()):
+        es = v["archivos"]["es"]
+        if (RAIZ / "videos" / es["poster"]).exists() and (v.get("archive") or (RAIZ / "videos" / es["video"]).exists()):
             vs.append(v)
     return sorted(vs, key=lambda v: v["publicado"], reverse=True)
+
+
+def url_video(prof, v, arch):
+    """De Internet Archive si ya está allí (ADR 0037); si no, la copia del sitio."""
+    if v.get("archive"):
+        return f'https://archive.org/download/{e(v["archive"])}/{e(arch["video"])}'
+    return f'{recursos(prof)}videos/{e(arch["video"])}'
 
 
 def texto_video(v, campo):
@@ -1448,7 +1458,7 @@ def bloque_video(prof, v, titulo_h="h2", enlace_propio=True, titulo=None):
     return f"""<figure class="video" id="{e(v["id"])}">
   <{titulo_h} class="video-titulo">{e(titulo or texto_video(v, "titulo"))}</{titulo_h}>
   <video controls preload="none" playsinline poster="{ruta}{e(arch["poster"])}" width="720" height="1280">
-    <source src="{ruta}{e(arch["video"])}" type="video/mp4">
+    <source src="{url_video(prof, v, arch)}" type="video/mp4">
   </video>
   <figcaption><p>{e(texto_video(v, "descripcion"))}{idioma}</p>
   <p class="video-meta">{fecha_corta(v["publicado"])}{ig}{propio}</p>
@@ -1500,7 +1510,7 @@ def bloque_semana_video(prof, eds, fecha):
     ig = f' · {enlace(v["instagram"], L["en_instagram"])}' if v.get("instagram") else ""
     return f"""<section class="editorial semana-franja" id="{e(v["id"])}" aria-labelledby="t-semana-{fecha}">
   <video controls preload="none" playsinline poster="{ruta}{e(arch["poster"])}" width="720" height="1280" aria-describedby="d-semana-{fecha}">
-    <source src="{ruta}{e(arch["video"])}" type="video/mp4">
+    <source src="{url_video(prof, v, arch)}" type="video/mp4">
   </video>
   <div class="texto">
     <p class="seccion"><span><a href="{prof}videos.html">{icono("video")} {L["semana_video"]}</a></span> <span class="fecha-pieza">{v.get("duracion", "")} s</span></p>
@@ -2863,10 +2873,11 @@ def main():
         elif viejo.exists():
             viejo.unlink()
     shutil.rmtree(SITIO / "videos", ignore_errors=True)
-    if (RAIZ / "videos").exists():   # los vídeos y sus portadas, para los dos idiomas (ADR 0016)
+    if (RAIZ / "videos").exists():   # las portadas y los vídeos que aún no están en Internet Archive (ADR 0016 y 0037)
         (SITIO / "videos").mkdir()
+        en_archive = {a["video"] for v in cargar_videos() if v.get("archive") for a in v["archivos"].values()}
         for f in (RAIZ / "videos").iterdir():
-            if f.suffix in (".mp4", ".jpg"):
+            if f.suffix == ".jpg" or (f.suffix == ".mp4" and f.name not in en_archive):
                 shutil.copy(f, SITIO / "videos" / f.name)
     if (RAIZ / "og" / "numeros").exists():   # la imagen de vista previa de cada número (ADR 0010)
         shutil.copytree(RAIZ / "og" / "numeros", SITIO / "og", dirs_exist_ok=True)

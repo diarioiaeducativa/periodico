@@ -75,7 +75,9 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
   (`scripts/reel-semana.sh`), como mínimo una pieza de cada número y con
   música distinta cada vez; el dominical sale el domingo a las 9:00 en
   Instagram, X, Bluesky y LinkedIn desde el contenedor del boletín
-  (`scripts/redes/dominical.sh`; probar con `--comprobar`).
+  (`scripts/redes/dominical.sh`; probar con `--comprobar`). Los `.mp4` van a Internet Archive
+  (`diarioiaeducativa_<año>`, ADR 0037) con `scripts/subir-videos.py`, que marca `archive` en su JSON
+  tras comprobar la descarga; no se suben a los repositorios.
 - **Para tu web** (ADR 0032): `para-tu-web.html` (configurador), `insertar.html` (el widget, para un
   iframe), `noticias*.json`, `datos/AAAA-MM.json`, `feed-*.xml` e `ilustraciones/*.svg` en cada idioma,
   y el botón de cada pieza con su `<template id="republicar">`. Los nombres de archivos y parámetros no

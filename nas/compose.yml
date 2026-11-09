@@ -37,6 +37,8 @@ services:
       # El aviso a Juanjo por Telegram, el mismo de los demás contenedores.
       - ../boletin-semanal/home/.local/bin/avisar-juanjo:/usr/local/bin/avisar-juanjo:ro
       - ../boletin-semanal/home/.config/avisar-juanjo:/home/jjdeharo/.config/avisar-juanjo
+      # Las claves de Internet Archive del boletín, solo para leer: los vídeos van allí (ADR 0037).
+      - ../boletin-semanal/home/.config/internetarchive:/home/jjdeharo/.config/internetarchive:ro
 
   # La vista previa del número (ADR 0025): el sitio que monta generar.py, solo para la red de casa.
   # reloj.sh lo rehace a las 5:00 y avisa a Juanjo con el enlace. Solo lectura; sin agentes.
