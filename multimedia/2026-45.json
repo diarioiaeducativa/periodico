@@ -13,6 +13,8 @@
   },
   "edumedia": {
    "video": "https://www.youtube.com/watch?v=FPNP9FA2jxM",
+   "podcast": "https://archive.org/details/edumedia_2026",
+   "podcast_mp3": "https://archive.org/download/edumedia_2026/edumedia_audio2026-45.mp3",
    "resumen": "El vídeo repasa 120 mensajes de 9 participantes de EduMedia-IAG. Se detiene en los experimentos de Raül Torres: una web que recorre Girona en distintas épocas y un flujo que convierte los movimientos de unas gafas de realidad virtual en una cámara de Blender, usada como referencia para Seedance 2.5. Sigue con la web de motion graphics que compartió Josep R Cerdà, los límites de vídeo de Omni 1.2 Flash y el Diario de IA Educativa."
   }
  }
