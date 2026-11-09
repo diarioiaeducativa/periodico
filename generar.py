@@ -611,14 +611,16 @@ if(nueva||cuenta)navigator.sendBeacon('https://bilateria.org/app/diario-ia-educa
 # pasada, se borra la cuenta y se empieza de cero; si en ese momento hay una visita en curso, se conserva,
 # para no contarla dos veces. El tema y el idioma son preferencias de quien lee y no caducan: la guía solo
 # pide la caducidad para la medición. Tampoco la marca de los autores («diario.nocontar»), que solo está
-# en sus navegadores y quitan ellos con ?nocontar=0. Va en el primer script de la cabecera, con el tema.
+# en sus navegadores y quitan ellos con ?nocontar=0. Va en el primer script de la cabecera, con el tema y con la
+# marca de la app de Android, que tiene que ponerse antes de que la portada salte de idioma (ADR 0043).
 AEPD_MEDICION = "https://www.aepd.es/guias/guia-cookies-analiticas-externas.pdf"   # solo en castellano
 CADUCIDAD = """<script>try{(function(){
 var s=localStorage,c=+s.getItem('diario.desde'),ahora=Date.now();
 if(c&&ahora-c>%d){var v=JSON.parse(s.getItem('diario.visita')||'null');s.removeItem('diario.visita');s.removeItem('diario.desde');c=0;
 if(v&&ahora-v.t<18e5)s.setItem('diario.visita',JSON.stringify(v));}
 if(!c&&s.getItem('diario.visita')!==null)s.setItem('diario.desde',ahora);
-var t=s.getItem('sala.tema');if(t)document.documentElement.dataset.theme=t;})();}catch(_){}</script>""" % (395 * 86400000)
+var t=s.getItem('sala.tema');if(t)document.documentElement.dataset.theme=t;
+if(/^android-app:\\/\\/io\\.github\\.diarioiaeducativa/.test(document.referrer))sessionStorage.setItem('diario.app','1');})();}catch(_){}</script>""" % (395 * 86400000)
 def datos_noticia(titular, ruta, fecha, imagen=None):
     """Los datos estructurados de una pieza, para los buscadores (schema.org, ADR 0039): qué es, cuándo
     salió y quién la firma. La firma es la redacción, con su página, donde se cuenta cómo se hace; sin
@@ -888,9 +890,9 @@ SCRIPT_TEMA = """<script>
   // Los avisos del número (ADR 0043) son de la app de Android: el enlace sale solo dentro de ella, que se
   // reconoce porque la abre con su nombre como referencia. En la sesión, no para siempre: la app comparte
   // la memoria del sitio con Chrome, y en Chrome el enlace no haría nada.
+  // La marca la pone CADUCIDAD, el primer script de la cabecera, antes de que la portada salte de idioma.
   var av=document.querySelector('.avisos-app');
-  if(av){try{if(/^android-app:\/\/io\.github\.diarioiaeducativa/.test(document.referrer))sessionStorage.setItem('diario.app','1');
-    if(sessionStorage.getItem('diario.app'))av.hidden=false;}catch(_){}}
+  if(av){try{if(sessionStorage.getItem('diario.app'))av.hidden=false;}catch(_){}}
   // «Para tu web» (ADR 0032): el botón despliega sus opciones y se cierra al pulsar fuera o con Escape
   var bl=document.querySelector('.llevar-boton'), ml=document.getElementById('menu-llevar');
   function cerrarLlevar(){ if(ml&&!ml.hidden){ml.hidden=true; bl.setAttribute('aria-expanded','false');} }
