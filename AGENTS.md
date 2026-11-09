@@ -43,6 +43,8 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
   GitHub ofrece «Compare & pull request»; no se fusiona nunca.
 - **Sin huecos** (ADR 0041): ninguna composición puede dejar espacios vacíos con ninguna cantidad de
   piezas; se comprueba con pocas y con muchas. En la portada, cada sección enseña sus tres más recientes.
+  Antes de enseñar o publicar un cambio de maqueta, `scripts/revisar-maqueta.js` con `probar-web -s` en
+  todas las páginas, idiomas y anchuras (cómo, en su cabecera): tiene que salir sin avisos.
 - **Lectura automática bloqueada a propósito** (UNESCO en la Biblioteca): no
   se salta.
 

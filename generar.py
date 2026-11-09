@@ -64,7 +64,7 @@ IDIOMAS = {
         "dia_ant": "Día anterior", "dia_sig": "Día siguiente",
         "leer_conv": "Lee la conversación original en", "tema_en": "Tema tratado en",
         "comprobado": "Comprobado en", "fuente": "Fuente", "conversacion": "Conversación", "comentarios": "Comentarios", "comentarios_aviso": "Para comentar hace falta una {cuenta}. Los comentarios son públicos y se guardan en GitHub.", "comentarios_cuenta": "cuenta gratuita de GitHub",
-        "breves": "Breves", "breves_antes": "Breves anteriores", "vineta": "La viñeta", "vineta_titulo": "La viñeta de Tiza y Algoritmo", "y": "y",
+        "breves": "Breves", "breves_antes": "Breves anteriores", "mas_numero": "Más en este número", "vineta": "La viñeta", "vineta_titulo": "La viñeta de Tiza y Algoritmo", "y": "y",
         "a_partir": "A partir de",
         "a_partir_dia": "A partir de las noticias del día.",
         "unete": "Únete a la conversación",
@@ -72,7 +72,7 @@ IDIOMAS = {
                         "vce": "creación de recursos digitales educativos usando el lenguaje natural.",
                         "edumedia": "creación de audio, vídeo e imagen con IA generativa para el aula."},
         "unete_txt": "El Diario de IA Educativa cuenta lo que se habla en tres grupos abiertos de Telegram donde docentes comparten lo que prueban con la inteligencia artificial. Las conversaciones se pueden leer sin entrar; para participar, basta con unirse.",
-        "archivo": "Archivo por días",
+        "archivo": "Archivo por días", "pie_archivo": "Archivo", "pie_diario": "El diario", "este_numero": "este número",
         "anyo": "Año", "hemeroteca": "Hemeroteca", "hemeroteca_txt": "Todos los números, por meses y semanas.", "nb_anteriores": "Boletines anteriores", "semana_n": "Semana {n}",
         # La semana y el mes (ADR 0034)
         "semana": "La semana", "semana_txt": "Todo lo que contó el diario de lo que se habló en los grupos esa semana, por secciones, con el pódcast y el vídeo de cada grupo. Elige un grupo para ver solo lo suyo.", "semana_actual": "La semana, de un vistazo", "grupo_filtro": "Ver lo de un grupo", "grupo_todos": "Todos", "sin_grupo": "Este grupo no tiene piezas esta semana.", "nb_h": "El pódcast y el vídeo de la semana", "nb_txt": "Cada lunes, NotebookLM, de Google, prepara un pódcast y un vídeo de cada grupo con su conversación completa de la semana, también lo que el diario no ha contado. Un agente de IA los contrasta con la conversación antes de publicarlos.", "nb_es": "", "nb_pendiente": "El pódcast y el vídeo de cada grupo se añaden aquí el lunes por la mañana.", "nb_video": "Vídeo", "nb_ver": "Reproducir el vídeo de {g}", "nb_youtube": "Verlo en YouTube", "nb_podcast": "Pódcast", "nb_archive": "Escucharlo en Internet Archive", "cs_h": "Lo más importante de la semana", "cs_h_g": "Lo más importante de la semana en {g}", "cs_nota": "Lo escribe un agente de IA con lo que contó el diario esa semana, y otro lo contrasta con cada pieza antes de publicarlo.", "numeros_semana": "Los números de la semana", "sem_ant": "Semana anterior", "sem_sig": "Semana siguiente", "todo_mes": "Todo el mes", "mes": "El mes", "mes_txt": "Las semanas del mes, con la pieza que abrió cada número.", "mes_ant": "Mes anterior", "mes_sig": "Mes siguiente", "ver_semana": "La semana entera, por secciones", "con_nb": "Con el pódcast y el vídeo de cada grupo", "boletines_h": "Boletines semanales anteriores", "boletines_txt": "Hasta noviembre de 2026, cada grupo tenía su propio boletín semanal. Siguen en su web:",
@@ -188,7 +188,7 @@ IDIOMAS = {
         "dia_ant": "Dia anterior", "dia_sig": "Dia següent",
         "leer_conv": "Llegeix la conversa original a", "tema_en": "Tema tractat a",
         "comprobado": "Comprovat a", "fuente": "Font", "conversacion": "Conversa", "comentarios": "Comentaris", "comentarios_aviso": "Per comentar cal un {cuenta}. Els comentaris són públics i es desen a GitHub.", "comentarios_cuenta": "compte gratuït de GitHub",
-        "breves": "Breus", "breves_antes": "Breus anteriors", "vineta": "La vinyeta", "vineta_titulo": "La vinyeta de Guix i Algorisme", "y": "i",
+        "breves": "Breus", "breves_antes": "Breus anteriors", "mas_numero": "Més en aquest número", "vineta": "La vinyeta", "vineta_titulo": "La vinyeta de Guix i Algorisme", "y": "i",
         "a_partir": "A partir de",
         "a_partir_dia": "A partir de les notícies del dia.",
         "unete": "Uneix-te a la conversa",
@@ -196,7 +196,7 @@ IDIOMAS = {
                         "vce": "creació de recursos digitals educatius fent servir el llenguatge natural.",
                         "edumedia": "creació d'àudio, vídeo i imatge amb IA generativa per a l'aula."},
         "unete_txt": "El Diari d'IA Educativa explica el que es parla en tres grups oberts de Telegram on docents comparteixen el que proven amb la intel·ligència artificial. Les converses es poden llegir sense entrar-hi; per participar-hi, n'hi ha prou d'unir-s'hi.",
-        "archivo": "Arxiu per dies",
+        "archivo": "Arxiu per dies", "pie_archivo": "Arxiu", "pie_diario": "El diari", "este_numero": "aquest número",
         "anyo": "Any", "hemeroteca": "Hemeroteca", "hemeroteca_txt": "Tots els números, per mesos i setmanes.", "nb_anteriores": "Butlletins anteriors", "semana_n": "Setmana {n}",
         # La semana y el mes (ADR 0034)
         "semana": "La setmana", "semana_txt": "Tot el que va explicar el diari del que es va parlar als grups aquella setmana, per seccions, amb el pòdcast i el vídeo de cada grup. Tria un grup per veure només el seu.", "semana_actual": "La setmana, d'un cop d'ull", "grupo_filtro": "Veure el d'un grup", "grupo_todos": "Tots", "sin_grupo": "Aquest grup no té peces aquesta setmana.", "nb_h": "El pòdcast i el vídeo de la setmana", "nb_txt": "Cada dilluns, NotebookLM, de Google, prepara un pòdcast i un vídeo de cada grup amb tota la seva conversa de la setmana, també el que el diari no ha explicat. Un agent d'IA els contrasta amb la conversa abans de publicar-los.", "nb_es": "Són en castellà.", "nb_pendiente": "El pòdcast i el vídeo de cada grup s'afegeixen aquí dilluns al matí.", "nb_video": "Vídeo", "nb_ver": "Reproduir el vídeo de {g}", "nb_youtube": "Mira'l a YouTube", "nb_podcast": "Pòdcast", "nb_archive": "Escolta'l a Internet Archive", "cs_h": "El més important de la setmana", "cs_h_g": "El més important de la setmana a {g}", "cs_nota": "L'escriu un agent d'IA amb el que va explicar el diari aquella setmana, i un altre el contrasta amb cada peça abans de publicar-lo.", "numeros_semana": "Els números de la setmana", "sem_ant": "Setmana anterior", "sem_sig": "Setmana següent", "todo_mes": "Tot el mes", "mes": "El mes", "mes_txt": "Les setmanes del mes, amb la peça que va obrir cada número.", "mes_ant": "Mes anterior", "mes_sig": "Mes següent", "ver_semana": "Tota la setmana, per seccions", "con_nb": "Amb el pòdcast i el vídeo de cada grup", "boletines_h": "Butlletins setmanals anteriors", "boletines_txt": "Fins al novembre de 2026, cada grup tenia el seu propi butlletí setmanal. Continuen al seu web:",
@@ -754,6 +754,49 @@ def boton_tema():
     return f'<button type="button" class="tema" id="tema" title="{L["tema"]}" aria-label="{L["tema"]}">{LUNA}{SOL}</button>'
 
 
+SCRIPT_FILAS = """<script>
+/* Que ninguna fila de piezas deje blancos (ADR 0041). En cada fila, cada pieza puede enseñar de su entradilla
+   entre dos líneas y la entradilla entera; se busca la altura a la que pueden acabar todas (la de la pieza que
+   antes se queda sin texto) y cada una enseña las líneas que caben hasta ahí. La entradilla entera está en el
+   artículo. Se rehace al cambiar el ancho. En una sola columna (el móvil) no se toca nada. */
+(function(){
+  var SEL='.fila-destacadas,.mas-dia,.alt-b,.alt-a,.fila-seccion,.fila-breves-hu,.nb-grupos',ENT='.entradilla,.nb-resumen';
+  function fondo(el){var m=el.getBoundingClientRect().top,w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT),n,r,i,rs;
+    while((n=w.nextNode())){if(!n.textContent.trim())continue;r=document.createRange();r.selectNodeContents(n);rs=r.getClientRects();for(i=0;i<rs.length;i++)m=Math.max(m,rs[i].bottom);}
+    el.querySelectorAll('figure').forEach(function(f){m=Math.max(m,f.getBoundingClientRect().bottom);});return m;}
+  function suelta(e){e.style.display='block';e.style.webkitLineClamp='unset';e.style.lineClamp='none';e.style.overflow='visible';e.style.webkitBoxOrient='';}
+  function recorta(e,l){e.style.display='-webkit-box';e.style.webkitBoxOrient='vertical';e.style.webkitLineClamp=l;e.style.lineClamp=l;e.style.overflow='hidden';}
+  function igualar(){
+    document.querySelectorAll(SEL).forEach(function(g){
+      var hijos=[].slice.call(g.children).filter(function(c){return c.offsetParent;});
+      hijos.forEach(function(c){c.querySelectorAll(ENT).forEach(suelta);});
+      if(hijos.length<2||getComputedStyle(g).gridTemplateColumns.split(' ').length<2)return;
+      var filas={};hijos.forEach(function(c){var k=Math.round(c.getBoundingClientRect().top/8);(filas[k]=filas[k]||[]).push(c);});
+      Object.keys(filas).forEach(function(k){var f=filas[k];if(f.length<2)return;
+        var d=f.map(function(c){var es=c.querySelectorAll(ENT),e=es[es.length-1],b=fondo(c);
+          if(!e||!e.textContent.trim())return {c:c,min:b,max:b};
+          var lh=parseFloat(getComputedStyle(e).lineHeight)||24,n=Math.max(1,Math.round(e.getBoundingClientRect().height/lh));
+          /* cada línea que se quita sube el final de la pieza una línea, haya lo que haya debajo (los enlaces) */
+          return {c:c,e:e,lh:lh,n:n,b:b,min:b-(n-Math.min(2,n))*lh,max:b};});
+        var meta=Math.min.apply(null,d.map(function(x){return x.max;})),suelo=Math.max.apply(null,d.map(function(x){return x.min;}));
+        if(meta<suelo)meta=suelo;
+        d.forEach(function(x){if(!x.e)return;var l=x.n-Math.ceil((x.b-meta-3)/x.lh);l=Math.max(Math.min(2,x.n),Math.min(x.n,l));if(l<x.n)recorta(x.e,l);});
+      });
+      /* En la disposición A, lo que quede lo absorbe el dibujo de la pieza grande: entre un tercio y algo más de
+         la mitad de su ancho de alto */
+      if(g.classList.contains('alt-a')){var gr=g.querySelector('.alt-grande'),li=g.querySelector('.alt-lista'),il=gr&&gr.querySelector('.ilu');
+        if(il&&li){il.style.height='';il.style.aspectRatio='';var dif=fondo(li)-fondo(gr),h=il.getBoundingClientRect().height,w=il.getBoundingClientRect().width;
+          var nh=Math.max(w/3.2,Math.min(w*0.6,h+dif));if(Math.abs(nh-h)>2){il.style.aspectRatio='auto';il.style.height=nh+'px';}}}
+    });
+  }
+  var t;function luego(){clearTimeout(t);t=setTimeout(igualar,120);}
+  if(document.fonts&&document.fonts.ready)document.fonts.ready.then(igualar);else window.addEventListener('load',igualar);
+  window.addEventListener('load',igualar);window.addEventListener('resize',luego);
+  document.addEventListener('click',function(e){if(e.target.closest&&e.target.closest('.filtro-grupo'))luego();});   /* la semana: al elegir un grupo cambian las filas */
+})();
+</script>"""
+
+
 SCRIPT_TEMA = """<script>
 (function(){
   var raiz=document.documentElement, sistema=matchMedia('(prefers-color-scheme: dark)');
@@ -885,10 +928,18 @@ def url_vcer():
 
 
 def pie(prof, eds, actual):
-    marca = ' aria-current="page"'
+    """El pie, como el de un periódico (09-11-2026): tres columnas iguales, cada una con su título y su lista
+    (los grupos, el archivo y el diario, con los créditos en letra pequeña bajo sus enlaces, para que las tres
+    columnas tengan una altura parecida). El número que se está viendo se marca con una franja de color y
+    «(este número)», no con negrita."""
     archivo = "".join(
-        f'<li><a href="{prof}{d["fecha"]}/"{marca if d["fecha"] == actual else ""}>{mayus(fecha_larga(publicacion(d["fecha"])))}</a></li>'
+        (f'<li class="pie-actual"><a href="{prof}{d["fecha"]}/" aria-current="page">{mayus(fecha_larga(publicacion(d["fecha"])))}</a>'
+         f' <span class="pie-este">({L["este_numero"]})</span></li>') if d["fecha"] == actual else
+        f'<li><a href="{prof}{d["fecha"]}/">{mayus(fecha_larga(publicacion(d["fecha"])))}</a></li>'
         for d in list(reversed(eds))[:DIAS_PIE])
+    mirar = (f'<li><a href="{prof}semana/{semana_de(eds[-1]["fecha"])}/">{L["semana_actual"]}</a></li>'
+             f'<li><a href="{prof}archivo.html">{L["todos_numeros"]}</a></li>'
+             f'<li><a href="{prof}hace-un-ano.html">{L["secciones"]["hace-un-ano"]}</a></li>')
     grupos = "".join(f'<li>{enlace("https://t.me/" + a, n)}: <span class="pie-grupo-desc">{L["grupos_desc"][k]}</span></li>'
                      for k, (n, a) in GRUPOS.items())
     trad = f'<p>{L["traduccion"]}</p>' if L["traduccion"] else ""
@@ -898,23 +949,31 @@ def pie(prof, eds, actual):
     <p>{L["unete_txt"]}</p>
     <ul class="pie-grupos">{grupos}</ul>
     {pie_comunidades(prof)}
-    <p class="pie-rss"><a href="{prof}redaccion.html">{L["quees"]}</a> · <a href="{prof}videos.html">{L["videos"]}</a> · {enlace(INSTAGRAM, L["instagram"])} · <a href="{prof}para-tu-web.html">{L["ptw_titulo"]}</a> · <a href="{prof}feed.xml">{L["rss"]}</a><span class="instalar-app" hidden> · <button type="button" class="instalar" title="{e(L["instalar_titulo"])}">{L["instalar"]}</button></span></p>
-    <p class="instalar-ios" hidden>{L["instalar_ios"]}</p>
   </div>
   <nav class="pie-archivo" aria-label="{L["archivo"]}">
-    <h2>{L["archivo"]}</h2>
-    <ul>{archivo}</ul>
-    <p class="pie-hemeroteca"><a href="{prof}semana/{semana_de(eds[-1]["fecha"])}/">{L["semana_actual"]}</a></p>
-    <p class="pie-hemeroteca"><a href="{prof}archivo.html">{L["todos_numeros"]}</a></p>
-    <p class="pie-hemeroteca"><a href="{prof}hace-un-ano.html">{L["secciones"]["hace-un-ano"]}</a></p>
+    <h2>{L["pie_archivo"]}</h2>
+    <ul class="pie-lista">{archivo}</ul>
+    <ul class="pie-lista pie-mirar">{mirar}</ul>
   </nav>
-  <div class="pie-creditos">
+  <nav class="pie-diario" aria-label="{L["pie_diario"]}">
+    <h2>{L["pie_diario"]}</h2>
+    <ul class="pie-lista">
+      <li><a href="{prof}redaccion.html">{L["quees"]}</a></li>
+      <li><a href="{prof}videos.html">{L["videos"]}</a></li>
+      <li>{enlace(INSTAGRAM, L["instagram"])}</li>
+      <li><a href="{prof}para-tu-web.html">{L["ptw_titulo"]}</a></li>
+      <li><a href="{prof}feed.xml">{L["rss"]}</a></li>
+      <li class="instalar-app" hidden><button type="button" class="instalar" title="{e(L["instalar_titulo"])}">{L["instalar"]}</button></li>
+    </ul>
+    <p class="instalar-ios" hidden>{L["instalar_ios"]}</p>
+    <div class="pie-creditos">
     <p>{L["redactado"]}</p>
     {trad}
     <p>© {datetime.date.fromisoformat(eds[-1]["fecha"]).year} {enlace(WEB_JUANJO, "Juan José de Haro")} {L["y"]} {enlace(WEB_RAUL, "Raül Torres")}. {L["licencia"]} {enlace("https://creativecommons.org/licenses/by-sa/4.0/" + L["deed"], "CC BY-SA 4.0")}.</p>
     <p>{L["letra"]} {enlace("https://github.com/productiontype/Newsreader", "Newsreader")} (Production Type, <a href="{prof}fuentes/OFL.txt">OFL</a>). {L["iconos"]} {enlace("https://lucide.dev", "Lucide")} (<a href="{prof}LICENSE-LUCIDE.txt">ISC</a>).</p>
     <p>{enlace(url_vcer(), L["vcer"])}.</p>
-  </div>
+    </div>
+  </nav>
 </footer>"""
 
 
@@ -992,6 +1051,8 @@ def rotulos(p, mostrar_fecha, prof="", sin_seccion=False):
     u = ULTIMA_SEMANA
     if p.get("repositorio") == "semana" and u and (u["fecha"], u["id"]) != (p.get("fecha"), p.get("id")):
         ante = f'<a href="{href(prof, u)}">{ante}</a>'   # es una serie: lleva a la última
+    if not rotulo:   # sin el nombre de la sección, la fecha va en la línea del antetítulo: sola dejaba un hueco encima del titular
+        return f'<p class="antetitulo con-fecha">{fecha}{ante}</p>'
     return f"""<p class="seccion"><span>{rotulo}</span>{fecha}</p>
   <p class="antetitulo">{ante}</p>"""
 
@@ -1056,6 +1117,28 @@ def bloque_breves(breves, mostrar_fecha, en_bloque=False):
     return f'<aside class="breves" aria-labelledby="t-breves"><h2 id="t-breves">{L["breves"]}</h2><ul>{"".join(items)}</ul></aside>'
 
 
+def titulares_parejos(ps, por_linea=34):
+    """Si los titulares de tres piezas ocupan en una columna de la fila de tres un número de líneas parecido
+    (como mucho una de diferencia): con más, la fila de tres deja un blanco y va mejor la otra disposición."""
+    lineas = [-(-len(p.get("titular", "")) // por_linea) for p in ps]
+    return max(lineas) - min(lineas) <= 1
+
+
+def bloque_alterno(prof, ps, apertura, mostrar_fecha):
+    """Las tres piezas del bloque de una sección en la portada, alternando dos disposiciones de una sección a la
+    siguiente, como en los diarios de papel y en The Guardian (ADR 0041): con `apertura`, la más reciente con más
+    cuerpo y su entradilla entera, y las otras dos al lado, solo con miniatura y titular; si no, las tres en fila
+    con una miniatura del mismo tamaño y la entradilla recortada a la misma altura. Así las filas no dejan blancos
+    debajo de las piezas cortas. Un filete vertical separa las columnas."""
+    if apertura:
+        grande = pieza(prof, ps[0], "menor alt-grande", 3, True, mostrar_fecha, sin_seccion=True, relleno=True)
+        pequenas = "".join(pieza(prof, p, "menor alt-compacta", 3, True, mostrar_fecha, sin_seccion=True, relleno=True)
+                           for p in ps[1:])
+        return f'<div class="bloque-piezas alt-a">{grande}<div class="alt-lista">{pequenas}</div></div>'
+    fila = "".join(pieza(prof, p, "menor alt-fila", 3, True, mostrar_fecha, sin_seccion=True, relleno=True) for p in ps)
+    return f'<div class="bloque-piezas alt-b" style="--n:3">{fila}</div>'
+
+
 def cuerpo_portada(prof, piezas, breves, mostrar_fecha, tira=""):
     """Como en un periódico: la apertura a todo el ancho, una fila de destacadas con dibujo,
     la viñeta y, debajo, un bloque por sección con su título a la izquierda (al estilo de
@@ -1092,29 +1175,56 @@ def cuerpo_portada(prof, piezas, breves, mostrar_fecha, tira=""):
         # Sin título: cada pieza lleva su sección, y van en las columnas de las destacadas
         lista = "".join(pieza(prof, p, "menor", 3, False, mostrar_fecha) for p in mas_hoy)
         html_ += f'<div class="fila fila-menores mas-dia" style="--n:3">{lista}</div>'
-    html_ += franja_hace_un_ano(prof, hace_un_ano)
+    # En la portada, los breves del día y «Hace un año» van juntos tras las piezas de hoy; en la página de un
+    # número, al final, con los breves del número (ADR 0040)
+    breves_dia = ""
     if hoy:
-        html_ += f"""<section class="bloque sec-breves breves-dia" aria-labelledby="b-breves-dia">
+        n = min(len(hoy), 2 if hace_un_ano else 3)
+        breves_dia = f"""<section class="bloque sec-breves breves-dia" aria-labelledby="b-breves-dia">
   <h2 id="b-breves-dia" class="bloque-titulo"><a href="{prof}breves.html">{icono("breves")} {L["breves"]}</a></h2>
-  <div class="bloque-piezas" style="--n:{min(len(hoy), 3)}">{bloque_breves(hoy, mostrar_fecha, en_bloque=True)}</div>
+  <div class="bloque-piezas" style="--n:{n}">{bloque_breves(hoy, mostrar_fecha, en_bloque=True)}</div>
 </section>"""
+    if mostrar_fecha:
+        html_ += breves_y_hace_un_ano(prof, breves_dia, hace_un_ano)
     html_ += tira
+    # En la página de un número, cada sección suele tener una sola pieza: con su nombre encima dejaría media fila
+    # vacía. Lo que no va destacado, en un solo bloque en columnas, cada pieza con su sección (ADR 0041).
+    if not mostrar_fecha:
+        resto_num = [p for c in ORDEN_SECCIONES for p in demas if p.get("seccion") == c]
+        if resto_num:
+            lista = "".join(pieza(prof, p, "menor", 3, False, mostrar_fecha) for p in resto_num)
+            html_ += f"""<section class="bloque bloque-columnas" aria-labelledby="b-mas-numero">
+  <h2 id="b-mas-numero" class="bloque-titulo">{L["mas_numero"]}</h2>
+  <div class="bloque-piezas" style="--n:{min(len(resto_num), 3)}">{lista}</div>
+</section>"""
+        demas = [p for p in demas if p not in resto_num]
+    visibles, ultima = 0, None
     for clave in ORDEN_SECCIONES:
         de_seccion = [p for p in demas if p.get("seccion") == clave]
         if not de_seccion:
             continue
+        visibles += 1
         lista = "".join(pieza(prof, p, "menor", 3, False, mostrar_fecha, sin_seccion=True) for p in de_seccion)
+        if mostrar_fecha and len(de_seccion) == POR_SECCION:
+            # Alternando: tras una de tres en fila, una con apertura; tras una con apertura, tres en fila si sus
+            # titulares son parejos
+            apertura = ultima != "a" or not titulares_parejos(de_seccion)
+            ultima = "a" if apertura else "b"
+            lista = bloque_alterno(prof, de_seccion, apertura, mostrar_fecha)
         html_ += f"""<section class="bloque sec-{clave}" aria-labelledby="b-{clave}">
   <h2 id="b-{clave}" class="bloque-titulo"><a href="{prof}{clave}.html">{icono(clave)} {L["secciones"][clave]}</a></h2>
-  <div class="bloque-piezas" style="--n:{min(len(de_seccion), 3)}">{lista}</div>
+  {lista if lista.startswith('<div class="bloque-piezas') else f'<div class="bloque-piezas" style="--n:{min(len(de_seccion), 3)}">{lista}</div>'}
 </section>"""
     sueltas = [p for p in demas if p.get("seccion") not in TODAS_SECCIONES]
+    final = ""
     if sueltas or breves:
+        hu_aqui = hace_un_ano if not mostrar_fecha else None
         lista = "".join(pieza(prof, p, "menor", 3, False, mostrar_fecha) for p in sueltas) + bloque_breves(breves, mostrar_fecha, en_bloque=True)
-        html_ += f"""<section class="bloque sec-breves" aria-labelledby="b-breves">
+        final = f"""<section class="bloque sec-breves" aria-labelledby="b-breves">
   <h2 id="b-breves" class="bloque-titulo"><a href="{prof}breves.html">{icono("breves")} {L["breves_antes"] if mostrar_fecha else L["breves"]}</a></h2>
-  <div class="bloque-piezas" style="--n:{min(len(sueltas) + (len(breves) if breves else 0), 3)}">{lista}</div>
+  <div class="bloque-piezas" style="--n:{min(len(sueltas) + (len(breves) if breves else 0), 2 if hu_aqui else 3)}">{lista}</div>
 </section>"""
+    html_ += final if mostrar_fecha else breves_y_hace_un_ano(prof, final, hace_un_ano)
     return html_
 
 
@@ -1175,16 +1285,17 @@ def minutos_lectura(r):
 
 
 def franja_reportaje(prof, r):
-    """El reportaje del domingo: a todo el ancho, como la franja editorial, con su infografía."""
+    """El reportaje del domingo: a todo el ancho, como la franja editorial, con su infografía. El tiempo de lectura,
+    junto al enlace: en el rótulo no cabía en el móvil y dejaba la fecha sola en una línea."""
     if not r:
         return ""
     return f"""<section class="editorial reportaje-franja" aria-labelledby="rep-{e(r["id"])}">
   <div class="texto">
-    <p class="seccion"><span><a href="{prof}reportajes.html">{icono("reportaje")} {L["reportaje"]}</a></span> <span class="fecha-pieza">{fecha_corta(publicacion(r["fecha"]))} · {minutos_lectura(r)} {L["palabras"]}</span></p>
+    <p class="seccion"><span><a href="{prof}reportajes.html">{icono("reportaje")} {L["reportaje"]}</a></span> <span class="fecha-pieza">{fecha_corta(publicacion(r["fecha"]))}</span></p>
     <p class="antetitulo">{e(r["antetitulo"])}</p>
     <h2 id="rep-{e(r["id"])}" class="titular"><a href="{href(prof, r)}">{e(r["titular"])}</a></h2>
     <p class="entradilla">{e(r["entradilla"])}</p>
-    <p class="leer"><a href="{href(prof, r)}">{L["leer_reportaje"]}</a></p>
+    <p class="leer"><a href="{href(prof, r)}">{L["leer_reportaje"]}</a> <span class="fecha-pieza">· {minutos_lectura(r)} {L["palabras"]}</span></p>
   </div>
   {ilustracion(r["fecha"], r)}
 </section>"""
@@ -1207,6 +1318,29 @@ def franja_hace_un_ano(prof, p):
     <p class="leer"><a href="{href(prof, p)}">{L["leer_hace_un_ano"]}</a></p>
   </div>
 </section>"""
+
+
+def recuadro_hace_un_ano(prof, p):
+    """«Hace un año» en pequeño, en un recuadro sepia junto a los breves (ADR 0040): el rótulo arriba y el díptico
+    en miniatura, a un lado del titular y la entradilla, para que el recuadro no doble en altura a los breves. Sola, a todo el ancho, se veía demasiado grande para una pieza de memoria."""
+    return f"""<section class="hace-un-ano-recuadro sec-hace-un-ano" aria-labelledby="hu-{e(p["id"])}">
+  <p class="seccion"><span><a href="{prof}hace-un-ano.html">{icono("hace-un-ano")} {L["secciones"]["hace-un-ano"]}</a></span> <span class="fecha-pieza">{fecha_rotulo(p)}</span></p>
+  {ilustracion(p["fecha"], p)}
+  <p class="antetitulo">{e(p.get("antetitulo", ""))}</p>
+  <h2 id="hu-{e(p["id"])}" class="titular"><a href="{href(prof, p)}">{e(p["titular"])}</a></h2>
+  <p class="entradilla">{e(p["entradilla"])}</p>
+  <p class="leer"><a href="{href(prof, p)}">{L["leer_hace_un_ano"]}</a></p>
+</section>"""
+
+
+def breves_y_hace_un_ano(prof, breves_html, hu):
+    """Los breves y «Hace un año», en una fila de dos recuadros del mismo alto: los breves en dos tercios y la
+    memoria en el otro. Sin breves, «Hace un año» en su franja ancha; sin «Hace un año», los breves solos."""
+    if not hu:
+        return breves_html
+    if not breves_html:
+        return franja_hace_un_ano(prof, hu)
+    return f'<div class="fila-breves-hu">{breves_html}{recuadro_hace_un_ano(prof, hu)}</div>'
 
 
 def reportaje_reciente(eds, fecha):
@@ -1247,6 +1381,7 @@ def pagina_portada(prof, ruta, eds, piezas, breves, fecha, cuenta, es_portada, n
 </main>
 {pie(prof, eds, None if es_portada else fecha)}
 {SCRIPT_TEMA}
+{SCRIPT_FILAS}
 </body>
 </html>"""
 
@@ -1429,10 +1564,11 @@ def articulo_reportaje(prof, ruta, d, r, eds):
 {cabecera(prof, ruta, d["fecha"], d["numero"], False, h1=False)}
 <main class="articulo reportaje">
   <article class="sec-reportaje"{indexado("reportaje", L["reportajes"], d["fecha"])}>
-    <p class="seccion"><span><a href="{prof}reportajes.html">{icono("reportaje")} {L["reportaje"]}</a></span> <span class="fecha-pieza">{fecha_corta(publicacion(r["fecha"]))} · {minutos_lectura(r)} {L["palabras"]}</span></p>
+    <p class="seccion"><span><a href="{prof}reportajes.html">{icono("reportaje")} {L["reportaje"]}</a></span> <span class="fecha-pieza">{fecha_corta(publicacion(r["fecha"]))}</span></p>
     <p class="antetitulo">{e(r.get("antetitulo"))}</p>
     <h1 class="titular">{e(r["titular"])}</h1>
     <p class="entradilla">{e(r.get("entradilla"))}</p>
+    <p class="lectura fecha-pieza">{minutos_lectura(r)} {L["palabras"]}</p>
     {ilustracion(d["fecha"], r, prof, ampliable=True)}
     <div class="cuerpo">{"".join(apartados)}</div>
     {origen(dict(r, grupo=(r.get("mensaje") or {}).get("grupo")))}
@@ -1874,6 +2010,7 @@ def pagina_seccion(eds, clave):
 </main>
 {pie("", eds, None)}
 {SCRIPT_TEMA}
+{SCRIPT_FILAS}
 </body>
 </html>"""
 
@@ -2134,6 +2271,7 @@ def pagina_semana(eds, sem, anterior, siguiente):
 {pie(prof, eds, None)}
 {SCRIPT_TEMA}
 {SCRIPT_SEMANA}
+{SCRIPT_FILAS}
 </body>
 </html>"""
 

@@ -37,10 +37,12 @@ mediana fue de 38 mensajes diarios entre los tres grupos; solo 2 días no tuvier
 - **Un dibujo, siempre un díptico «Entonces / Ahora»**: la fecha de entonces a la izquierda y «Hoy» a la
   derecha, con lo concreto de la pieza en cada mitad. Lo hace el ilustrador con la revisión de dibujos de
   siempre (ADR 0005); si no pasa, la pieza sale sin dibujo.
-- **En la portada y en el número, con lo de hoy, en un recuadro a todo el ancho** tras las piezas del día y
-  antes de los breves, como la columna fija de un periódico de papel: el díptico a un lado y el texto al
-  otro (en el móvil, uno encima del otro). Siempre llena el ancho: en la fila de «Más del día» quedaba casi
-  siempre sola, con dos tercios vacíos. Los de días anteriores no salen en la portada. Color sepia, de foto
+- **En la portada, con lo de hoy, junto a los breves**: una fila de dos recuadros del mismo alto, los breves en
+  dos tercios y «Hace un año» en el otro, en sepia, con el díptico en miniatura junto al titular. Sola a todo el
+  ancho se veía demasiado grande para una pieza de memoria, y en la fila de «Más del día» quedaba casi siempre
+  sola, con dos tercios vacíos. Sin breves, sale en una franja ancha, con el díptico a un lado y el texto al
+  otro; en la página de un número, al final, con los breves del número. Los de días anteriores no salen en la
+  portada. Color sepia, de foto
   antigua, e icono de reloj con la flecha hacia atrás (Lucide `rotate-ccw-clock`).
 - No va en la página de la semana (ADR 0034), que es de lo que se habló esa semana, ni en el comentario de la
   semana (ADR 0038).
