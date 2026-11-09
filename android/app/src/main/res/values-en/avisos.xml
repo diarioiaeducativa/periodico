@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Los avisos del número (ADR 0043) -->
+<resources>
+  <string name="avisos_canal">Today\'s issue</string>
+  <string name="avisos_canal_desc">One alert each morning, when the new issue is out.</string>
+  <string name="avisos_titulo">Issue %1$d is out</string>
+  <string name="avisos_dialogo">New issue alerts</string>
+  <string name="avisos_texto">The app can tell you each morning when the new issue is out. It checks around 7:00, Spanish mainland time, and, if it is not out yet, every 15 minutes until 9:30; Android may delay it a few minutes to save battery. To do this, your phone only checks the paper\'s website: it sends nothing to anyone.</string>
+  <string name="avisos_texto_activos">Alerts are on: each morning, when the new issue is out, you get a notification. It checks around 7:00, Spanish mainland time, and, if it is not out yet, every 15 minutes until 9:30.</string>
+  <string name="avisos_activar">Turn on</string>
+  <string name="avisos_desactivar">Turn off</string>
+  <string name="avisos_ahora_no">Not now</string>
+  <string name="avisos_cerrar">Close</string>
+  <string name="avisos_activados">Alerts on</string>
+  <string name="avisos_desactivados">Alerts off</string>
+  <string name="avisos_sin_permiso">Without permission to show notifications, the app cannot alert you. You can allow it in Android settings.</string>
+  <string name="avisos_ajustes">Open settings</string>
+</resources>

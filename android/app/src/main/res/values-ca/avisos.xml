@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Los avisos del número (ADR 0043) -->
+<resources>
+  <string name="avisos_canal">Número del dia</string>
+  <string name="avisos_canal_desc">Un avís cada matí, quan surt el número.</string>
+  <string name="avisos_titulo">Ja és aquí el número %1$d</string>
+  <string name="avisos_dialogo">Avisos del número</string>
+  <string name="avisos_texto">L\'app et pot avisar cada matí quan surt el número. Ho mira cap a les 7:00, hora peninsular, i, si encara no hi és, cada 15 minuts fins a les 9:30; Android ho pot endarrerir uns minuts per estalviar bateria. Per fer-ho, el mòbil només consulta el web del diari: no envia res a ningú.</string>
+  <string name="avisos_texto_activos">Els avisos estan activats: cada matí, quan surt el número, arriba una notificació. Ho mira cap a les 7:00, hora peninsular, i, si encara no hi és, cada 15 minuts fins a les 9:30.</string>
+  <string name="avisos_activar">Activa</string>
+  <string name="avisos_desactivar">Desactiva</string>
+  <string name="avisos_ahora_no">Ara no</string>
+  <string name="avisos_cerrar">Tanca</string>
+  <string name="avisos_activados">Avisos activats</string>
+  <string name="avisos_desactivados">Avisos desactivats</string>
+  <string name="avisos_sin_permiso">Sense permís per mostrar notificacions, l\'app no pot avisar. Es pot donar a la configuració d\'Android.</string>
+  <string name="avisos_ajustes">Obre la configuració</string>
+</resources>

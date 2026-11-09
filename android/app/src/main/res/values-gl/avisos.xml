@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Los avisos del número (ADR 0043) -->
+<resources>
+  <string name="avisos_canal">Número do día</string>
+  <string name="avisos_canal_desc">Un aviso cada mañá, cando sae o número.</string>
+  <string name="avisos_titulo">Xa está o número %1$d</string>
+  <string name="avisos_dialogo">Avisos do número</string>
+  <string name="avisos_texto">A app pode avisarte cada mañá cando sae o número. Mírao arredor das 7:00, hora peninsular, e, se aínda non está, cada 15 minutos ata as 9:30; Android pode atrasalo uns minutos para aforrar batería. Para iso, o móbil só consulta a web do diario: non envía nada a ninguén.</string>
+  <string name="avisos_texto_activos">Os avisos están activados: cada mañá, cando sae o número, chega unha notificación. Mírao arredor das 7:00, hora peninsular, e, se aínda non está, cada 15 minutos ata as 9:30.</string>
+  <string name="avisos_activar">Activar</string>
+  <string name="avisos_desactivar">Desactivar</string>
+  <string name="avisos_ahora_no">Agora non</string>
+  <string name="avisos_cerrar">Pechar</string>
+  <string name="avisos_activados">Avisos activados</string>
+  <string name="avisos_desactivados">Avisos desactivados</string>
+  <string name="avisos_sin_permiso">Sen permiso para mostrar notificacións, a app non pode avisar. Pódese dar nos axustes de Android.</string>
+  <string name="avisos_ajustes">Abrir axustes</string>
+</resources>

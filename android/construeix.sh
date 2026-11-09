@@ -10,6 +10,8 @@ CLAVE="${CLAVE_ANDROID:-$HOME/.config/diario-ia-educativa/android}"
 [ -f "$CLAVE/upload.jks" ] && [ -f "$CLAVE/clau.env" ] || { echo "Falta la clave en $CLAVE" >&2; exit 1; }
 ln -sf "$CLAVE/upload.jks" upload.jks
 set -a; . "$CLAVE/clau.env"; set +a
+# Los avisos del número (ADR 0043), que Bubblewrap no conoce
+python3 avisos/aplicar.py
 BUBBLEWRAP="${BUBBLEWRAP:-$(command -v bubblewrap || echo "$HOME/.npm-global/bin/bubblewrap")}"
 "$BUBBLEWRAP" build --skipPwaValidation
 ls -l app-release-bundle.aab app-release-signed.apk

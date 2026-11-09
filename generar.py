@@ -86,7 +86,7 @@ IDIOMAS = {
         "licencia": "Textos e ilustraciones con licencia", "deed": "deed.es", "reserva_aviso": "Hoy no han podido salir las noticias de los grupos de ayer por un fallo de la redacción del diario. Salen mañana, junto con las de hoy; mientras tanto, un recurso del fondo del repositorio.", "vcer": "Evaluación VCER: Recomendable (100 %), noviembre de 2026", "codigo_enlace": "el repositorio de la redacción",
         "letra": "Letra", "iconos": "Iconos", "traduccion": "",
         "idioma": "Idioma", "secciones_nav": "Secciones", "rss": "RSS",
-        "nombre_corto": "Diario IA", "instalar": "Instalar la app",
+        "nombre_corto": "Diario IA", "instalar": "Instalar la app", "avisos_app": "Avisos del número", "avisos_app_titulo": "Elige si la app te avisa cada mañana cuando sale el número",
         "instalar_titulo": "Instala el diario en este dispositivo y ábrelo desde su icono, como una app",
         "instalar_ios": "En el iPhone o el iPad, el diario se puede tener como una app: añádelo a la pantalla de inicio desde el botón de compartir del navegador.",
         "sin_piezas": "Todavía no hay piezas en esta sección.",
@@ -213,7 +213,7 @@ IDIOMAS = {
         "letra": "Lletra", "iconos": "Icones",
         "traduccion": "Traducció automàtica amb IA de l'edició en castellà (Diario de IA Educativa), sense revisió professional.",
         "idioma": "Idioma", "secciones_nav": "Seccions", "rss": "RSS",
-        "nombre_corto": "Diari IA", "instalar": "Instal·la l'app",
+        "nombre_corto": "Diari IA", "instalar": "Instal·la l'app", "avisos_app": "Avisos del número", "avisos_app_titulo": "Tria si l'app t'avisa cada matí quan surt el número",
         "instalar_titulo": "Instal·la el diari en aquest dispositiu i obre'l des de la seva icona, com una app",
         "instalar_ios": "A l'iPhone o l'iPad, el diari es pot tenir com una app: afegeix-lo a la pantalla d'inici des del botó de compartir del navegador.",
         "sin_piezas": "Encara no hi ha peces en aquesta secció.",
@@ -875,7 +875,22 @@ SCRIPT_TEMA = """<script>
   }
   // Lectura sin conexión (ADR 0042): el service worker guarda lo que se abre y el último número. Solo en
   // el propio diario, no dentro del marco de otra web.
-  if('serviceWorker' in navigator&&window.top===window) navigator.serviceWorker.register('/sw.js').catch(function(){});
+  // La primera vez, la página se ha cargado sin él: le pasa lo cargado para que lo guarde con el último número.
+  if('serviceWorker' in navigator&&window.top===window){
+    var sinControl=!navigator.serviceWorker.controller;
+    navigator.serviceWorker.register('/sw.js').then(function(){return navigator.serviceWorker.ready;}).then(function(r){
+      if(!sinControl||!r.active)return;
+      var u=[location.href].concat(performance.getEntriesByType('resource').map(function(x){return x.name;})
+        .filter(function(n){return n.indexOf(location.origin+'/')===0;}));
+      r.active.postMessage({guardar:u});
+    }).catch(function(){});
+  }
+  // Los avisos del número (ADR 0043) son de la app de Android: el enlace sale solo dentro de ella, que se
+  // reconoce porque la abre con su nombre como referencia. En la sesión, no para siempre: la app comparte
+  // la memoria del sitio con Chrome, y en Chrome el enlace no haría nada.
+  var av=document.querySelector('.avisos-app');
+  if(av){try{if(/^android-app:\/\/io\.github\.diarioiaeducativa/.test(document.referrer))sessionStorage.setItem('diario.app','1');
+    if(sessionStorage.getItem('diario.app'))av.hidden=false;}catch(_){}}
   // «Para tu web» (ADR 0032): el botón despliega sus opciones y se cierra al pulsar fuera o con Escape
   var bl=document.querySelector('.llevar-boton'), ml=document.getElementById('menu-llevar');
   function cerrarLlevar(){ if(ml&&!ml.hidden){ml.hidden=true; bl.setAttribute('aria-expanded','false');} }
@@ -971,6 +986,7 @@ def pie(prof, eds, actual):
       <li><a href="{prof}para-tu-web.html">{L["ptw_titulo"]}</a></li>
       <li><a href="{prof}feed.xml">{L["rss"]}</a></li>
       <li class="instalar-app" hidden><button type="button" class="instalar" title="{e(L["instalar_titulo"])}">{L["instalar"]}</button></li>
+      <li class="avisos-app" hidden><a href="intent://avisos?idioma={L["codigo"]}#Intent;scheme=diarioia;package=io.github.diarioiaeducativa;end" title="{e(L["avisos_app_titulo"])}">{L["avisos_app"]}</a></li>
     </ul>
     <p class="instalar-ios" hidden>{L["instalar_ios"]}</p>
     <div class="pie-creditos">
@@ -3105,6 +3121,11 @@ def escribir(ruta, texto):
     ruta.write_text(texto)
 
 
+# Lo que mira cada mañana la app de Android para avisar del número (ADR 0043): el último, el día en que
+# sale (hora de Madrid) y, en cada idioma, su portada y el titular de la primera pieza
+ULTIMO = {}
+
+
 def generar_idioma(codigo):
     global L, ULTIMA
     L = IDIOMAS[codigo]
@@ -3163,6 +3184,11 @@ def generar_idioma(codigo):
             dibujo_suelto(d["fecha"], d["reportaje"], "reportaje")
     escribir(base / "manifest.webmanifest", manifiesto())
     escribir(base / "sin-conexion.html", pagina_sin_conexion())
+    ultimo = eds[-1]
+    ULTIMO[codigo] = {"url": BASE + L["carpeta"], "titulo": L["titulo"],
+                      "titular": texto_plano(ultimo["piezas"][0].get("titular", "")) if ultimo["piezas"] else ""}
+    if codigo == "es":
+        ULTIMO.update(numero=ultimo["numero"], sale=publicacion(ultimo["fecha"]))
     if codigo == "es":
         escribir(RAIZ / "indice" / "diario.json", indice_bot(eds))   # para el bot, no se publica (ADR 0017)
         escribir(SITIO / "404.html", pagina_404(eds))
@@ -3215,6 +3241,8 @@ def main():
     entradas_grupos()
     for codigo in IDIOMAS:
         generar_idioma(codigo)
+    escribir(SITIO / "ultimo.json", json.dumps({"numero": ULTIMO.pop("numero"), "sale": ULTIMO.pop("sale"),
+                                                "idiomas": ULTIMO}, ensure_ascii=False, indent=1) + "\n")
 
 
 def pieza_de_grupo(d, grupo):

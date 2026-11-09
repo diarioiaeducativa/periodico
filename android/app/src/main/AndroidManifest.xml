@@ -30,6 +30,10 @@
 
     
 
+    <!-- avisos del número (ADR 0043) -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
     <application
         android:name="Application"
         android:allowBackup="true"
@@ -188,5 +192,24 @@
         
 
         
+        <!-- avisos del número (ADR 0043) -->
+        <activity android:name=".AvisosActivity"
+            android:exported="true"
+            android:excludeFromRecents="true"
+            android:noHistory="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="diarioia" android:host="avisos"/>
+            </intent-filter>
+        </activity>
+        <receiver android:name=".ComprobarNumero" android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+        </receiver>
     </application>
 </manifest>
