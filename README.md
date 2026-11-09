@@ -58,7 +58,8 @@ despliegue, que son secretas y se crean de nuevo. En una máquina con Docker:
    de la que parte la del diario.
 2. Crear la carpeta del diario, con `home/.ssh` dentro, y copiar en ella `nas/compose.yml` y
    `nas/Dockerfile`. En `compose.yml`, ajustar las rutas de fuera de la carpeta (el token de
-   Claude, los datos del Bot de IA Educativa y el avisador) si no están en el mismo sitio.
+   Claude, los datos del Bot de IA Educativa, el avisador y las claves de Internet Archive del
+   boletín, ADR 0037) si no están en el mismo sitio.
 3. Generar las dos claves (`ssh-keygen -t ed25519 -N "" -f home/.ssh/periodico` y lo mismo con
    `sitio`) y darlas de alta con permiso de escritura, como *deploy keys*, en
    `diarioiaeducativa/periodico` y `diarioiaeducativa/diarioiaeducativa.github.io`. Quitar las
