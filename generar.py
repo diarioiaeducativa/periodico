@@ -171,6 +171,7 @@ IDIOMAS = {
                 ("Las visitas", "El diario cuenta cuántas visitas recibe y cuántas veces se abre cada página, para saber si llega a quien lo lee. No usa cookies ni guarda nada de quien lo lee: su navegador recuerda qué páginas ya ha contado, para no contarlas dos veces en la misma visita, y al servidor de los autores solo le llega la suma. Lo que el navegador recuerda para el contador se borra a los 13 meses, la duración que pone de ejemplo la {aepd} en su guía sobre medición de audiencia, y las visitas nuevas no lo alargan; el tema y el idioma que se eligen se recuerdan sin caducar. Las cifras se guardan por horas durante 25 meses como máximo, el plazo de esa misma guía; después queda solo el total de cada año. Solo las ven las dos personas que hacen el diario. Para poder leerlo sin conexión, el navegador guarda en el propio dispositivo una copia de las páginas abiertas y del último número; esa copia no sale de él. La app de Android es esta misma web y no recoge nada más."),
                 ("Las comunidades", "{chatgpt}, sobre inteligencia artificial en educación; {vce}, de docentes que programan sus propias aplicaciones con IA, y {edumedia}, sobre IA generativa para crear audio, vídeo e imagen. Las tres son abiertas: cada pieza enlaza a la conversación donde nació, que se puede leer sin entrar."),
                 ("Si participas en los grupos", "Las opiniones no se atribuyen a nadie: solo se nombra a la persona que ha publicado un recurso propio. Si aparece algo tuyo y prefieres que no salga, o ves un error, díselo a las personas que administran tu grupo y se retirará o se corregirá."),
+                ("Contacto", "Para avisar de un error, pedir que se retire algo o hacer cualquier consulta, se puede abrir una incidencia en {incidencias} o escribir a las personas que administran cada grupo."),
             ],
         },
     },
@@ -298,6 +299,7 @@ IDIOMAS = {
                 ("Les visites", "El diari compta quantes visites rep i quantes vegades s'obre cada pàgina, per saber si arriba a qui el llegeix. No fa servir galetes ni desa res de qui el llegeix: el seu navegador recorda quines pàgines ja ha comptat, per no comptar-les dues vegades en la mateixa visita, i al servidor dels autors només hi arriba la suma. El que el navegador recorda per al comptador s'esborra al cap de 13 mesos, la durada que posa d'exemple l'{aepd} a la seva guia sobre mesurament d'audiència, i les visites noves no l'allarguen; el tema i l'idioma triats es recorden sense caducar. Les xifres es desen per hores durant 25 mesos com a màxim, el termini d'aquesta mateixa guia; després només en queda el total de cada any. Només les veuen les dues persones que fan el diari. Per poder-lo llegir sense connexió, el navegador desa al mateix dispositiu una còpia de les pàgines obertes i de l'últim número; aquesta còpia no en surt. L'app d'Android és aquest mateix web i no recull res més."),
                 ("Les comunitats", "{chatgpt}, sobre intel·ligència artificial en educació; {vce}, de docents que programen les seves pròpies aplicacions amb IA, i {edumedia}, sobre IA generativa per crear àudio, vídeo i imatge. Totes tres són obertes: cada peça enllaça amb la conversa on va néixer, que es pot llegir sense entrar-hi."),
                 ("Si participes als grups", "Les opinions no s'atribueixen a ningú: només s'anomena la persona que ha publicat un recurs propi. Si hi apareix alguna cosa teva i prefereixes que no surti, o hi veus un error, digues-ho a les persones que administren el teu grup i es retirarà o es corregirà."),
+                ("Contacte", "Per avisar d'un error, demanar que es retiri alguna cosa o fer qualsevol consulta, es pot obrir una incidència a {incidencias} o escriure a les persones que administren cada grup."),
             ],
         },
     },
@@ -1963,6 +1965,7 @@ def pagina_redaccion(eds):
                   biblioteca=enlace(TEMA_BIBLIOTECA, L["biblioteca_enlace"]), seccion_bib=f'<a href="biblioteca.html">{L["secciones"]["biblioteca"]}</a>',
                   repositorio=enlace(REPOSITORIO, L["repositorio_enlace"]), seccion_vc=f'<a href="vibecoding.html">{L["secciones"]["vibecoding"]}</a>',
                   codigo=enlace(CODIGO, L["codigo_enlace"]),
+                  incidencias=enlace("https://github.com/diarioiaeducativa/periodico/issues", "GitHub"),
                   pagina_semana=f'<a href="semana/">{R["pagina_semana"]}</a>',
                   hemeroteca=f'<a href="archivo.html">{L["hemeroteca"]}</a>',
                   hace_un_ano=f'<a href="hace-un-ano.html">{L["secciones"]["hace-un-ano"]}</a>')
@@ -1981,7 +1984,8 @@ def pagina_redaccion(eds):
     venn = comunidades_figura()
     # La de las visitas es también la política de privacidad que enlaza la ficha de Google Play (ADR 0042)
     resto = "".join((f'<h2 id="comunidades">{t}</h2>{venn}' if "{chatgpt}" in x else
-                     f'<h2 id="privacidad">{t}</h2>' if "{aepd}" in x else f"<h2>{t}</h2>") + f"<p>{x.format(**grupos)}</p>"
+                     f'<h2 id="privacidad">{t}</h2>' if "{aepd}" in x else
+                     f'<h2 id="contacto">{t}</h2>' if "{incidencias}" in x else f"<h2>{t}</h2>") + f"<p>{x.format(**grupos)}</p>"
                     for t, x in R["secciones"])
     enlace_pres = f'<p class="presentacion"><a href="{d_href(pres)}">{L["presentacion"]}</a></p>' if pres else ""
     cab = cabecera("", "redaccion.html", eds[-1]["fecha"], eds[-1]["numero"], True, h1=False, activa="redaccion")
