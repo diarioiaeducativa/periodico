@@ -24,6 +24,7 @@ de la viñeta».
   también a sacarla de la columna con el ancho de la portada; Juanjo prefirió la vertical.
   Desde el 9 de noviembre, en el ordenador, con las noticias en columnas (ADR 0044), la noticia ocupa el
   ancho de la portada y la viñeta va en fila, como allí; en una columna y en el móvil, sigue en vertical.
+  Juanjo lo dio por bueno al verlo publicado: «se arregla el tema de las viñetas, que ya no salen en vertical».
 - **Las viñetas de un breve** dicen cuál con `"pieza": "breve-N"` (N, su posición en la lista de breves,
   desde 1; `encargos/pasos/3-guiones.md`), salen debajo de ese breve y su «A partir de…» de la portada
   enlaza a él. La única anterior a la norma, la publicada el 6 de noviembre (`vinetas*/2026-11-05.json`,
