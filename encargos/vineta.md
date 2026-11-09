@@ -28,6 +28,9 @@ escribir el guion.
   el tópico de la IA que nos va a sustituir o dominar; juegos de palabras fáciles;
   explicar el chiste. La ironía va dirigida a la tecnología y a lo que nos pasa con ella.
 - Breve: como mucho 90 caracteres por bocadillo y dos bocadillos por viñeta.
+- **El rótulo de la primera viñeta, siempre.** Una frase que sitúa a quien lee: dónde están
+  y de qué va, sin contar ni adelantar el chiste. Por ejemplo: «De noche, en casa, dándole
+  vueltas a los detectores de IA.» Como mucho 55 caracteres, para que quepa en una línea.
 - **El orden de los globos.** Se lee de izquierda a derecha. Si en una viñeta con dos
   bocadillos habla primero quien está a la derecha, el programa pone su globo arriba y el otro
   entero debajo, para que se lean en orden. Los personajes no cambian de lado de una viñeta a otra.
@@ -39,7 +42,7 @@ Cada guion es un JSON:
 
 ```json
 {"vinetas": [
-  {"cartela": "texto opcional de situación, p. ej. «Lunes, 8:00»",
+  {"cartela": "el rótulo que sitúa la escena: obligatorio en la viñeta 1; en las otras, opcional (p. ej. «Al día siguiente»)",
    "tiza": {"expresion": "…", "postura": "…", "lugar": "izquierda|centro|derecha", "mira": "derecha|izquierda"},
    "algoritmo": {"expresion": "…", "postura": "…", "lugar": "…", "mira": "…"},
    "objeto": "opcional",

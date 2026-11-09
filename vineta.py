@@ -314,9 +314,16 @@ def bocadillo(texto, cx, punta, tipo="habla", y0=12, ancho=172):
     return forma + cola + texto_svg, alto
 
 
+# El rótulo va en una sola línea: hasta ROTULO_MAX caracteres cabe con su letra (probado el 09-11-2026 con
+# 58). Los encargos piden 55; si uno se pasa, se estrecha hasta el ancho del recuadro en vez de salirse
+# por la derecha, y la comprobación lo apunta en el registro.
+ROTULO_MAX = 58
+
+
 def cartela(texto):
+    ajuste = f' textLength="{ANCHO - 24}" lengthAdjust="spacingAndGlyphs"' if len(texto) > ROTULO_MAX else ""
     return (f'<rect class="cartela" x="0" y="0" width="{ANCHO}" height="34"/>'
-            f'<text class="cartela-texto" x="12" y="23">{e(texto)}</text>')
+            f'<text class="cartela-texto" x="12" y="23"{ajuste}>{e(texto)}</text>')
 
 
 # ---------- Viñeta y tira ----------
@@ -366,7 +373,13 @@ def no_cabe(v):
 
 
 def comprobar(guion):
-    return [f"Viñeta {i + 1}: {m}" for i, v in enumerate(guion.get("vinetas", [])[:3]) if (m := no_cabe(v))]
+    vs = guion.get("vinetas", [])[:3]
+    fallos = [f"Viñeta {i + 1}: {m}" for i, v in enumerate(vs) if (m := no_cabe(v))]
+    if vs and not (vs[0].get("cartela") or "").strip():
+        fallos.append("Viñeta 1: sin el rótulo que sitúa la escena")
+    fallos += [f"Viñeta {i + 1}: el rótulo pasa de {ROTULO_MAX} caracteres y se estrecha para caber"
+               for i, v in enumerate(vs) if len(v.get("cartela") or "") > ROTULO_MAX]
+    return fallos
 
 
 def panel(v, n):
@@ -519,7 +532,7 @@ if __name__ == "__main__":
         avisos = repite(sys.argv[2], ((d.get("elegida") or {}).get("guion")) or {})
         print("; ".join(avisos))
         sys.exit(1 if avisos else 0)
-    if sys.argv[1] == "--comprobar":   # vineta.py --comprobar vinetas/FECHA.json: sale con 1 si algo no cabe
+    if sys.argv[1] == "--comprobar":   # vineta.py --comprobar vinetas/FECHA.json: sale con 1 si algo no cabe o falta el rótulo
         d = json.load(open(sys.argv[2]))
         fallos = comprobar(((d.get("elegida") or {}).get("guion") or {}) if "elegida" in d else d)
         print("\n".join(fallos))

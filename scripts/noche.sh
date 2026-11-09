@@ -59,7 +59,7 @@ agente() {
 comprobar_vineta() {
   [ -e "$1" ] || return 0
   local m
-  m=$(python3 vineta.py --comprobar "$1") || log "viñeta con los globos lado a lado en $1: $(echo "$m" | tr '\n' ' ')"
+  m=$(python3 vineta.py --comprobar "$1") || log "comprobación de la viñeta en $1: $(echo "$m" | tr '\n' ' ')"
 }
 
 json_ok() { python3 -c 'import json,sys; json.load(open(sys.argv[1]))' "$1" 2>/dev/null; }

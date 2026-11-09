@@ -37,5 +37,6 @@
 | [0033](0033-contador-de-visitas.md) | Contador de visitas sin datos de quien lee |
 | [0034](0034-la-semana-sustituye-al-boletin.md) | La semana y el mes, con el pódcast y el vídeo de cada grupo, en lugar del boletín semanal |
 | [0035](0035-la-vineta-tambien-en-su-noticia.md) | La viñeta, también debajo de la noticia de la que trata |
+| [0036](0036-rotulo-que-situa-la-vineta.md) | Un rótulo en la primera viñeta que sitúa la escena |
 
 Plantilla: [0000-plantilla.md](0000-plantilla.md). Para crear uno: `nuevo-adr "Título"`.
