@@ -77,7 +77,7 @@ IDIOMAS = {
         # La semana y el mes (ADR 0034)
         "semana": "La semana", "semana_txt": "Todo lo que contó el diario de lo que se habló en los grupos esa semana, por secciones, con el pódcast y el vídeo de cada grupo. Elige un grupo para ver solo lo suyo.", "semana_actual": "Resumen semanal", "grupo_filtro": "Ver lo de un grupo", "grupo_todos": "Todos", "sin_grupo": "Este grupo no tiene piezas esta semana.", "nb_h": "El pódcast y el vídeo de la semana", "nb_txt": "Cada lunes, NotebookLM, de Google, prepara un pódcast y un vídeo de cada grupo con su conversación completa de la semana, también lo que el diario no ha contado. Un agente de IA los contrasta con la conversación antes de publicarlos.", "nb_es": "", "nb_pendiente": "El pódcast y el vídeo de cada grupo se añaden aquí el lunes por la mañana.", "nb_video": "Vídeo", "nb_ver": "Reproducir el vídeo de {g}", "nb_youtube": "Verlo en YouTube", "nb_podcast": "Pódcast", "nb_archive": "Escucharlo en Internet Archive", "cs_h": "Lo más importante de la semana", "cs_h_g": "Lo más importante de la semana en {g}", "cs_nota": "Lo escribe un agente de IA con lo que contó el diario esa semana, y otro lo contrasta con cada pieza antes de publicarlo.", "numeros_semana": "Los números de la semana", "sem_ant": "Semana anterior", "sem_sig": "Semana siguiente", "todo_mes": "Todo el mes", "mes": "El mes", "mes_txt": "Las semanas del mes, con la pieza que abrió cada número.", "mes_ant": "Mes anterior", "mes_sig": "Mes siguiente", "ver_semana": "La semana entera, por secciones", "con_nb": "Con el pódcast y el vídeo de cada grupo", "boletines_h": "Boletines semanales anteriores", "boletines_txt": "Hasta noviembre de 2026, cada grupo tenía su propio boletín semanal. Siguen en su web:",
         "todos_numeros": "Hemeroteca: todos los números",
-        "compartir": "Compartir", "copiado": "Enlace copiado", "compartir_breve": "Compartir este breve", "mas_en": "Más en", "mas_diario": "Más en el diario",
+        "compartir": "Compartir", "copiado": "Enlace copiado", "una_columna": "Una columna", "columnas": "Columnas", "una_columna_t": "Leer las noticias en una sola columna", "columnas_t": "Leer las noticias en columnas, como en un periódico", "compartir_breve": "Compartir este breve", "mas_en": "Más en", "mas_diario": "Más en el diario",
         "no_existe": "Esta página no existe",
         "sin_conexion": "Sin conexión",
         "sin_conexion_txt": "Esta página no está guardada en este dispositivo. Sin conexión se pueden leer las páginas que ya se han abierto y el último número que se cargó en la portada.",
@@ -168,7 +168,7 @@ IDIOMAS = {
                 ("El Repositorio de recursos", "El {repositorio} de Vibe Coding Educativo reúne las aplicaciones y recursos que crean y comparten con licencia abierta los docentes de esa comunidad. Los días con menos de cuatro piezas, el documentalista escribe sobre los que han entrado y el diario aún no ha contado, y el número del sábado repasa los de la semana; si no hay ninguno nuevo, rescata uno anterior. Un programa abre cada recurso y guarda una captura de lo que se ve; el documentalista lo describe a partir de la captura y de su página, y el revisor lo vuelve a abrir. Salen en la sección {seccion_vc}, con el nombre de quien lo ha hecho y su licencia."),
                 ("Las personas", "La idea del diario es de {raul}, administrador de {edumedia}. La redacción la diseñó y la supervisa {juanjo}."),
                 ("El código", "Los programas que preparan y montan el diario y el encargo de cada agente son públicos, en {codigo}, con licencia AGPL v3, y cada decisión está explicada en sus registros de decisiones (ADR). Los mensajes de los grupos no están en él."),
-                ("Las visitas", "El diario cuenta cuántas visitas recibe y cuántas veces se abre cada página, para saber si llega a quien lo lee. No usa cookies ni guarda nada de quien lo lee: su navegador recuerda qué páginas ya ha contado, para no contarlas dos veces en la misma visita, y al servidor de los autores solo le llega la suma. Lo que el navegador recuerda para el contador se borra a los 13 meses, la duración que pone de ejemplo la {aepd} en su guía sobre medición de audiencia, y las visitas nuevas no lo alargan; el tema y el idioma que se eligen se recuerdan sin caducar. Las cifras se guardan por horas durante 25 meses como máximo, el plazo de esa misma guía; después queda solo el total de cada año. Solo las ven las dos personas que hacen el diario. Para poder leerlo sin conexión, el navegador guarda en el propio dispositivo una copia de las páginas abiertas y del último número; esa copia no sale de él. La app de Android es esta misma web y no recoge nada más. Los comentarios se publican con giscus en las Discussions de GitHub: para comentar hace falta una cuenta de GitHub, y GitHub guarda el comentario y el nombre de usuario con su propia política de privacidad. Quien no comenta no envía nada."),
+                ("Las visitas", "El diario cuenta cuántas visitas recibe y cuántas veces se abre cada página, para saber si llega a quien lo lee. No usa cookies ni guarda nada de quien lo lee: su navegador recuerda qué páginas ya ha contado, para no contarlas dos veces en la misma visita, y al servidor de los autores solo le llega la suma. Lo que el navegador recuerda para el contador se borra a los 13 meses, la duración que pone de ejemplo la {aepd} en su guía sobre medición de audiencia, y las visitas nuevas no lo alargan; el tema, el idioma y la lectura en columnas o en una columna que se eligen se recuerdan sin caducar. Las cifras se guardan por horas durante 25 meses como máximo, el plazo de esa misma guía; después queda solo el total de cada año. Solo las ven las dos personas que hacen el diario. Para poder leerlo sin conexión, el navegador guarda en el propio dispositivo una copia de las páginas abiertas y del último número; esa copia no sale de él. La app de Android es esta misma web y no recoge nada más. Los comentarios se publican con giscus en las Discussions de GitHub: para comentar hace falta una cuenta de GitHub, y GitHub guarda el comentario y el nombre de usuario con su propia política de privacidad. Quien no comenta no envía nada."),
                 ("Las comunidades", "{chatgpt}, sobre inteligencia artificial en educación; {vce}, de docentes que programan sus propias aplicaciones con IA, y {edumedia}, sobre IA generativa para crear audio, vídeo e imagen. Las tres son abiertas: cada pieza enlaza a la conversación donde nació, que se puede leer sin entrar."),
                 ("Si participas en los grupos", "Las opiniones no se atribuyen a nadie: solo se nombra a la persona que ha publicado un recurso propio. Si aparece algo tuyo y prefieres que no salga, o ves un error, díselo a las personas que administran tu grupo y se retirará o se corregirá."),
                 ("Contacto", "Para avisar de un error, pedir que se retire algo o hacer cualquier consulta, se puede escribir a {correo}, abrir una incidencia en {incidencias} o escribir a las personas que administran cada grupo."),
@@ -204,7 +204,7 @@ IDIOMAS = {
         # La semana y el mes (ADR 0034)
         "semana": "La setmana", "semana_txt": "Tot el que va explicar el diari del que es va parlar als grups aquella setmana, per seccions, amb el pòdcast i el vídeo de cada grup. Tria un grup per veure només el seu.", "semana_actual": "Resum setmanal", "grupo_filtro": "Veure el d'un grup", "grupo_todos": "Tots", "sin_grupo": "Aquest grup no té peces aquesta setmana.", "nb_h": "El pòdcast i el vídeo de la setmana", "nb_txt": "Cada dilluns, NotebookLM, de Google, prepara un pòdcast i un vídeo de cada grup amb tota la seva conversa de la setmana, també el que el diari no ha explicat. Un agent d'IA els contrasta amb la conversa abans de publicar-los.", "nb_es": "Són en castellà.", "nb_pendiente": "El pòdcast i el vídeo de cada grup s'afegeixen aquí dilluns al matí.", "nb_video": "Vídeo", "nb_ver": "Reproduir el vídeo de {g}", "nb_youtube": "Mira'l a YouTube", "nb_podcast": "Pòdcast", "nb_archive": "Escolta'l a Internet Archive", "cs_h": "El més important de la setmana", "cs_h_g": "El més important de la setmana a {g}", "cs_nota": "L'escriu un agent d'IA amb el que va explicar el diari aquella setmana, i un altre el contrasta amb cada peça abans de publicar-lo.", "numeros_semana": "Els números de la setmana", "sem_ant": "Setmana anterior", "sem_sig": "Setmana següent", "todo_mes": "Tot el mes", "mes": "El mes", "mes_txt": "Les setmanes del mes, amb la peça que va obrir cada número.", "mes_ant": "Mes anterior", "mes_sig": "Mes següent", "ver_semana": "Tota la setmana, per seccions", "con_nb": "Amb el pòdcast i el vídeo de cada grup", "boletines_h": "Butlletins setmanals anteriors", "boletines_txt": "Fins al novembre de 2026, cada grup tenia el seu propi butlletí setmanal. Continuen al seu web:",
         "todos_numeros": "Hemeroteca: tots els números",
-        "compartir": "Comparteix", "copiado": "Enllaç copiat", "compartir_breve": "Comparteix aquest breu", "mas_en": "Més a", "mas_diario": "Més al diari",
+        "compartir": "Comparteix", "copiado": "Enllaç copiat", "una_columna": "Una columna", "columnas": "Columnes", "una_columna_t": "Llegir les notícies en una sola columna", "columnas_t": "Llegir les notícies en columnes, com en un diari", "compartir_breve": "Comparteix aquest breu", "mas_en": "Més a", "mas_diario": "Més al diari",
         "no_existe": "Aquesta pàgina no existeix",
         "sin_conexion": "Sense connexió",
         "sin_conexion_txt": "Aquesta pàgina no està desada en aquest dispositiu. Sense connexió es poden llegir les pàgines que ja s'han obert i l'últim número que es va carregar a la portada.",
@@ -296,7 +296,7 @@ IDIOMAS = {
                 ("El Repositori de recursos", "El {repositorio} de Vibe Coding Educativo reuneix les aplicacions i els recursos que creen i comparteixen amb llicència oberta els docents d'aquesta comunitat. Els dies amb menys de quatre peces, el documentalista escriu sobre els que hi han entrat i que el diari encara no ha explicat, i el número del dissabte repassa els de la setmana; si no n'hi ha cap de nou, en rescata un d'anterior. Un programa obre cada recurs i en guarda una captura del que es veu; el documentalista el descriu a partir de la captura i de la seva pàgina, i el revisor el torna a obrir. Surten a la secció {seccion_vc}, amb el nom de qui l'ha fet i la seva llicència."),
                 ("Les persones", "La idea del diari és de {raul}, administrador d'{edumedia}. La redacció la va dissenyar i la supervisa {juanjo}."),
                 ("El codi", "Els programes que preparen i munten el diari i l'encàrrec de cada agent són públics, al {codigo}, amb llicència AGPL v3, i cada decisió s'explica als seus registres de decisions (ADR). Els missatges dels grups no hi són."),
-                ("Les visites", "El diari compta quantes visites rep i quantes vegades s'obre cada pàgina, per saber si arriba a qui el llegeix. No fa servir galetes ni desa res de qui el llegeix: el seu navegador recorda quines pàgines ja ha comptat, per no comptar-les dues vegades en la mateixa visita, i al servidor dels autors només hi arriba la suma. El que el navegador recorda per al comptador s'esborra al cap de 13 mesos, la durada que posa d'exemple l'{aepd} a la seva guia sobre mesurament d'audiència, i les visites noves no l'allarguen; el tema i l'idioma triats es recorden sense caducar. Les xifres es desen per hores durant 25 mesos com a màxim, el termini d'aquesta mateixa guia; després només en queda el total de cada any. Només les veuen les dues persones que fan el diari. Per poder-lo llegir sense connexió, el navegador desa al mateix dispositiu una còpia de les pàgines obertes i de l'últim número; aquesta còpia no en surt. L'app d'Android és aquest mateix web i no recull res més. Els comentaris es publiquen amb giscus a les Discussions de GitHub: per comentar cal un compte de GitHub, i GitHub desa el comentari i el nom d'usuari amb la seva pròpia política de privadesa. Qui no comenta no envia res."),
+                ("Les visites", "El diari compta quantes visites rep i quantes vegades s'obre cada pàgina, per saber si arriba a qui el llegeix. No fa servir galetes ni desa res de qui el llegeix: el seu navegador recorda quines pàgines ja ha comptat, per no comptar-les dues vegades en la mateixa visita, i al servidor dels autors només hi arriba la suma. El que el navegador recorda per al comptador s'esborra al cap de 13 mesos, la durada que posa d'exemple l'{aepd} a la seva guia sobre mesurament d'audiència, i les visites noves no l'allarguen; el tema, l'idioma i la lectura en columnes o en una columna triats es recorden sense caducar. Les xifres es desen per hores durant 25 mesos com a màxim, el termini d'aquesta mateixa guia; després només en queda el total de cada any. Només les veuen les dues persones que fan el diari. Per poder-lo llegir sense connexió, el navegador desa al mateix dispositiu una còpia de les pàgines obertes i de l'últim número; aquesta còpia no en surt. L'app d'Android és aquest mateix web i no recull res més. Els comentaris es publiquen amb giscus a les Discussions de GitHub: per comentar cal un compte de GitHub, i GitHub desa el comentari i el nom d'usuari amb la seva pròpia política de privadesa. Qui no comenta no envia res."),
                 ("Les comunitats", "{chatgpt}, sobre intel·ligència artificial en educació; {vce}, de docents que programen les seves pròpies aplicacions amb IA, i {edumedia}, sobre IA generativa per crear àudio, vídeo i imatge. Totes tres són obertes: cada peça enllaça amb la conversa on va néixer, que es pot llegir sense entrar-hi."),
                 ("Si participes als grups", "Les opinions no s'atribueixen a ningú: només s'anomena la persona que ha publicat un recurs propi. Si hi apareix alguna cosa teva i prefereixes que no surti, o hi veus un error, digues-ho a les persones que administren el teu grup i es retirarà o es corregirà."),
                 ("Contacte", "Per avisar d'un error, demanar que es retiri alguna cosa o fer qualsevol consulta, es pot escriure a {correo}, obrir una incidència a {incidencias} o escriure a les persones que administren cada grup."),
@@ -324,6 +324,9 @@ ICONOS = {
     "video": '<path d="M9 9.003a1 1 0 0 1 1.517-.859l4.997 2.997a1 1 0 0 1 0 1.718l-4.997 2.997A1 1 0 0 1 9 14.996z"/><circle cx="12" cy="12" r="10"/>',
     "vineta": '<path d="M15.707 21.293a1 1 0 0 1-1.414 0l-1.586-1.586a1 1 0 0 1 0-1.414l5.586-5.586a1 1 0 0 1 1.414 0l1.586 1.586a1 1 0 0 1 0 1.414z"/><path d="m18 13-1.375-6.874a1 1 0 0 0-.746-.776L3.235 2.028a1 1 0 0 0-1.207 1.207L5.35 15.879a1 1 0 0 0 .776.746L13 18"/><path d="m2.3 2.3 7.286 7.286"/><circle cx="11" cy="11" r="2"/>',
 }
+# Lucide (ISC): text-align-justify (una columna) y columns-3 (columnas), para el botón de lectura (ADR 0044)
+UNA_COLUMNA = '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18"/><path d="M3 12h18"/><path d="M3 19h18"/></svg>'
+COLUMNAS = '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M9 3v18"/><path d="M15 3v18"/></svg>'
 COMPARTIR = '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" x2="15.42" y1="13.51" y2="17.49"/><line x1="15.41" x2="8.59" y1="6.51" y2="10.49"/></svg>'   # share-2
 PLAY = '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 9.003a1 1 0 0 1 1.517-.859l4.997 2.997a1 1 0 0 1 0 1.718l-4.997 2.997A1 1 0 0 1 9 14.996z"/><circle cx="12" cy="12" r="10"/></svg>'   # circle-play: la página de vídeos (ADR 0016)
 LUPA = '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>'   # search
@@ -680,6 +683,7 @@ def cabeza(titulo, prof, descripcion, ruta, portada=False, datos=None):
 <meta property="og:locale" content="{L["locale"]}">
 <meta name="twitter:card" content="summary_large_image">
 {CADUCIDAD}
+<script>try{{if(localStorage.getItem('diario.columnas')==='una')document.documentElement.classList.add('una-columna');}}catch(_){{}}</script>
 {salto}
 {CONTADOR if ruta not in ("404.html", "sin-conexion.html") else ""}
 <link rel="icon" href="{r}favicon.svg" type="image/svg+xml">
@@ -815,6 +819,12 @@ SCRIPT_TEMA = """<script>
   document.getElementById('tema').addEventListener('click',function(){
     var nuevo = oscuro()?'light':'dark'; raiz.dataset.theme=nuevo;
     try{ if((nuevo==='dark')===sistema.matches) localStorage.removeItem('sala.tema'); else localStorage.setItem('sala.tema',nuevo);}catch(_){}
+  });
+  // Columnas o una columna (ADR 0044): se recuerda en el dispositivo para todas las noticias
+  var bc=document.querySelector('.columnas-boton');
+  if(bc) bc.addEventListener('click',function(){
+    var una=raiz.classList.toggle('una-columna');
+    try{ if(una) localStorage.setItem('diario.columnas','una'); else localStorage.removeItem('diario.columnas');}catch(_){}
   });
   document.querySelectorAll('[data-idioma]').forEach(function(a){
     a.addEventListener('click',function(){try{localStorage.setItem('sala.idioma',a.dataset.idioma);}catch(_){}});
@@ -1067,9 +1077,19 @@ def fecha_rotulo(p):
     return fecha_corta(publicacion(p["fecha"]))
 
 
-def rotulos(p, mostrar_fecha, prof="", sin_seccion=False):
+def boton_columnas():
+    """Columnas o una columna (ADR 0044): solo en el ordenador (diario.css lo esconde en lo demás); el rótulo
+    que se ve depende de la clase de <html>, que pone la cabeza antes de pintar, y lo recuerda SCRIPT_TEMA."""
+    return (f'<button type="button" class="columnas-boton" data-pagefind-ignore>'
+            f'<span class="a-una" title="{e(L["una_columna_t"])}">{UNA_COLUMNA}{e(L["una_columna"])}</span>'
+            f'<span class="a-columnas" title="{e(L["columnas_t"])}">{COLUMNAS}{e(L["columnas"])}</span></button>')
+
+
+def rotulos(p, mostrar_fecha, prof="", sin_seccion=False, boton=""):
     sec = p.get("seccion", "")
     fecha = f' <span class="fecha-pieza">{fecha_rotulo(p)}</span>' if mostrar_fecha else ""
+    if boton:
+        fecha = f' <span class="seccion-dcha">{boton}{fecha}</span>'
     nombre = L["secciones"].get(sec, "")
     rotulo = f'<a href="{prof}{sec}.html">{icono(sec)} {nombre}</a>' if sec in L["secciones"] else nombre
     if sin_seccion:   # en la página de la sección, el nombre ya está en el título
@@ -1082,6 +1102,12 @@ def rotulos(p, mostrar_fecha, prof="", sin_seccion=False):
         return f'<p class="antetitulo con-fecha">{fecha}{ante}</p>'
     return f"""<p class="seccion"><span>{rotulo}</span>{fecha}</p>
   <p class="antetitulo">{ante}</p>"""
+
+
+def cabeza_pieza(texto, ilu):
+    """La cabeza de una noticia (ADR 0044): en el ordenador, titular y entradilla junto al dibujo."""
+    return f'<div class="cabeza-pieza"><div class="cabeza-texto">{texto}</div>{ilu}</div>'
+
 
 
 def pieza(prof, p, clase, nivel, con_ilu, mostrar_fecha, sin_seccion=False, relleno=False):
@@ -1478,16 +1504,21 @@ def articulo(prof, ruta, d, p, eds):
     elif recs:           # la semana del repositorio: un apartado por recurso, con su captura
         bloques = "".join(bloque_recurso(prof, p["id"], r) for r in recs)
     serie, ya_contados, otras = semana_repositorio(prof, p, eds)
+    rot = rotulos(p, True, prof, boton=boton_columnas())
+    linea, _, ante = rot.partition("\n  ")   # la línea de la sección, fuera de la cabeza; el antetítulo, dentro
+    if not ante:   # sin sección: la línea del antetítulo lleva la fecha y el botón
+        linea, ante = "", rot
+    cab = cabeza_pieza(f"""{ante}
+    <h1 class="titular">{e(p["titular"])}</h1>
+    <p class="entradilla">{e(p.get("entradilla"))}</p>
+    {serie}""", "" if len(p.get("recursos") or []) > 1 else ilustracion(d["fecha"], p, prof, ampliable=True))
     return cabeza(f'{p["titular"]} | {L["titulo"]}', prof, p.get("entradilla", ""), ruta,
                   datos=datos_noticia(p["titular"], ruta, d["fecha"], imagen_pieza(d["fecha"], p)[0])) + f"""<body class="pag-articulo">
 {cabecera(prof, ruta, d["fecha"], d["numero"], False, h1=False)}
-<main class="articulo">
+<main class="articulo en-columnas">
   <article{f' class="sec-{e(p["seccion"])}"' if p.get("seccion") else ""}{indexado(p.get("seccion") or "editorial", L["secciones"].get(p.get("seccion"), L["quees"]), d["fecha"])}>
-    {rotulos(p, True, prof)}
-    <h1 class="titular">{e(p["titular"])}</h1>
-    <p class="entradilla">{e(p.get("entradilla"))}</p>
-    {serie}
-    {"" if len(p.get("recursos") or []) > 1 else ilustracion(d["fecha"], p, prof, ampliable=True)}
+    {linea}
+    {cab}
     {ficha_doc}
     <div class="cuerpo">{cuerpo}{bloques}</div>
     {ya_contados}
@@ -1586,17 +1617,17 @@ def articulo_reportaje(prof, ruta, d, r, eds):
                         f'<a href="{href(prof, x)}">{e(x["titular"])}</a></li>' for x in rel)
         relacionadas = f'<aside class="mas sec-reportaje" aria-labelledby="t-rel"><h2 id="t-rel">{L["en_el_diario"]}</h2><ul>{items}</ul></aside>'
     compartir, plantilla = acciones(d["fecha"], r, ruta, d, eds, reportaje=True)
+    cab = cabeza_pieza(f"""<p class="antetitulo">{e(r.get("antetitulo"))}</p>
+    <h1 class="titular">{e(r["titular"])}</h1>
+    <p class="entradilla">{e(r.get("entradilla"))}</p>
+    <p class="lectura fecha-pieza">{minutos_lectura(r)} {L["palabras"]}</p>""", ilustracion(d["fecha"], r, prof, ampliable=True))
     return cabeza(f'{r["titular"]} | {L["titulo"]}', prof, r.get("entradilla", ""), ruta,
                   datos=datos_noticia(r["titular"], ruta, d["fecha"], imagen_pieza(d["fecha"], r)[0])) + f"""<body class="pag-articulo">
 {cabecera(prof, ruta, d["fecha"], d["numero"], False, h1=False)}
-<main class="articulo reportaje">
+<main class="articulo reportaje en-columnas">
   <article class="sec-reportaje"{indexado("reportaje", L["reportajes"], d["fecha"])}>
-    <p class="seccion"><span><a href="{prof}reportajes.html">{icono("reportaje")} {L["reportaje"]}</a></span> <span class="fecha-pieza">{fecha_corta(publicacion(r["fecha"]))}</span></p>
-    <p class="antetitulo">{e(r.get("antetitulo"))}</p>
-    <h1 class="titular">{e(r["titular"])}</h1>
-    <p class="entradilla">{e(r.get("entradilla"))}</p>
-    <p class="lectura fecha-pieza">{minutos_lectura(r)} {L["palabras"]}</p>
-    {ilustracion(d["fecha"], r, prof, ampliable=True)}
+    <p class="seccion"><span><a href="{prof}reportajes.html">{icono("reportaje")} {L["reportaje"]}</a></span> <span class="seccion-dcha">{boton_columnas()} <span class="fecha-pieza">{fecha_corta(publicacion(r["fecha"]))}</span></span></p>
+    {cab}
     <div class="cuerpo">{"".join(apartados)}</div>
     {origen(dict(r, grupo=(r.get("mensaje") or {}).get("grupo")))}
     {compartir}

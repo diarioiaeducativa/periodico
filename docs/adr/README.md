@@ -45,5 +45,6 @@
 | [0041](0041-portada-sin-huecos.md) | La portada, sin huecos: cada bloque de sección, con sus tres piezas más recientes |
 | [0042](0042-app-de-android-y-lectura-sin-conexion.md) | App de Android en Google Play y lectura sin conexión |
 | [0043](0043-avisos-del-numero-en-la-app.md) | Avisos del número en la app de Android, sin servidor |
+| [0044](0044-noticias-en-columnas.md) | Las noticias, en columnas de periódico en el ordenador |
 
 Plantilla: [0000-plantilla.md](0000-plantilla.md). Para crear uno: `nuevo-adr "Título"`.

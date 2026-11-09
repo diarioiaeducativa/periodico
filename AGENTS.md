@@ -73,6 +73,10 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
   nombrada, en su primera mención (`encargos/enlaces.md`). Para enlazar las
   fuentes de piezas ya escritas, `scripts/enlazar-fuentes.py`, que no deja
   cambiar ni un carácter del texto.
+- **Noticias en columnas** (ADR 0044): en el ordenador, las noticias y el reportaje (`en-columnas`) van en
+  columnas de periódico, con el botón «Una columna» en la línea de la sección; las reglas, al final de
+  `estaticos/diario.css`. Lo que tenga que cortar las columnas (un bloque nuevo dentro de `.cuerpo`) se
+  añade a su lista de `column-span: all`.
 - **Buscador** (ADR 0007): Pagefind, tras `generar.py`, solo en los
   `<article>` con `data-pagefind-body`.
 - **Vídeos** (ADR 0016 y 0027): «La semana en vídeo» la noche del sábado
