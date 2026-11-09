@@ -26,6 +26,11 @@ que el juez lo quitara cuando la primera frase ya situara la escena; Juanjo pref
   de dejar que se corte (`vineta.cartela`), y `vineta.py --comprobar` lo apunta en el registro, igual que
   un rótulo que falta.
 - Las tiras ya publicadas se quedan como salieron.
+- **Una línea, no encima de la tira.** Juanjo planteó escribirlo encima de las tres viñetas para tener más
+  sitio, pero solo ganaría ancho en el ordenador: en el móvil y bajo la noticia van una debajo de otra, y en
+  Instagram cada viñeta es una imagen. Se queda en una línea dentro de la primera viñeta; si el juez tiene
+  que recortar rótulos a menudo, se pasará a dos líneas dentro de ella (unos 110 caracteres), bajando sus
+  globos.
 
 ## Validación
 
