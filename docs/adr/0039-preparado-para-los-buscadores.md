@@ -73,8 +73,9 @@ otras webs, lo primero era lo que más pesaba. Juanjo aprobó hacer las tres.
 - Web generada en local (09-11-2026): 508 páginas con una sola canónica, igual a su dirección; sin
   canónica, solo la 404 y `insertar.html` (que lleva `noindex`); 345 `NewsArticle` con JSON válido,
   fecha en UTC y la misma dirección que su canónica (260 con dibujo); un `WebSite` en la portada.
-- Sin errores de JavaScript en una pieza y en la portada, en Chromium, Firefox y WebKit, en móvil, y
-  la pieza también en escritorio.
+- En la web publicada, una pieza y la portada en Chromium, Firefox y WebKit, en escritorio y en móvil:
+  sin errores propios ni desbordamiento. En Chromium, la pieza anota un 404 de giscus, que es lo que
+  responde su servicio cuando la pieza aún no tiene hilo de comentarios (ADR 0030).
 - En la web publicada: `robots.txt` y el archivo de verificación responden, las piezas llevan su
   canónica y su `NewsArticle`, y `sitemap.xml` se descarga como XML válido con sus 495 direcciones.
   Search Console dio la propiedad por verificada y el mapa por enviado.
