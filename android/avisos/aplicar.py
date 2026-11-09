@@ -16,10 +16,9 @@ APP = AQUI.parent / "app" / "src" / "main"
 PAQUETE = APP / "java" / "io" / "github" / "diarioiaeducativa"
 MARCA = "<!-- avisos del número (ADR 0043) -->"
 
-PERMISOS = f"""    {MARCA}
-    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
-"""
+# Una TWA no pide internet, porque quien navega es Chrome; la comprobación del número sí lo necesita
+PERMISOS = ["android.permission.INTERNET", "android.permission.POST_NOTIFICATIONS",
+            "android.permission.RECEIVE_BOOT_COMPLETED"]
 
 PIEZAS = f"""        {MARCA}
         <activity android:name=".AvisosActivity"
@@ -53,11 +52,13 @@ def main():
 
     manifiesto = APP / "AndroidManifest.xml"
     m = manifiesto.read_text()
-    if MARCA not in m:
-        assert m.count("    <application") == 1 and m.count("    </application>") == 1, "el manifiesto ha cambiado de forma"
-        m = m.replace("    <application", PERMISOS + "\n    <application", 1)
+    assert m.count("    <application") == 1 and m.count("    </application>") == 1, "el manifiesto ha cambiado de forma"
+    for permiso in PERMISOS:   # uno a uno, por si el manifiesto ya trae alguno
+        if f'android:name="{permiso}"' not in m:
+            m = m.replace("    <application", f'    <uses-permission android:name="{permiso}"/>   {MARCA}\n    <application', 1)
+    if MARCA + "\n        <activity" not in m and ".AvisosActivity" not in m:
         m = m.replace("    </application>", PIEZAS + "    </application>", 1)
-        manifiesto.write_text(m)
+    manifiesto.write_text(m)
 
     # Al abrir la app, los avisos se vuelven a programar: Android los borra si se fuerza su cierre
     aplicacion = PAQUETE / "Application.java"

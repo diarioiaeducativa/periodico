@@ -111,6 +111,10 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
   `android/` (`construeix.sh`, con la clave en `~/.config/diario-ia-educativa/android/`), vinculada por
   `estaticos/.well-known/assetlinks.json`, que no se borra. La política de privacidad de la ficha es
   `redaccion.html#privacidad`: si se cambia ese apartado, que siga diciendo lo que guarda el dispositivo.
+- **Avisos del número** (ADR 0043): la app mira `ultimo.json` (no se renombra: hay apps que lo leen) hacia
+  las 7:00 y cada 15 minutos hasta las 9:30. Su código está en `android/avisos/` y lo engancha `aplicar.py`
+  (lo lanza `construeix.sh`), porque `bubblewrap update` lo borra del manifiesto. Para probar, el emulador
+  `prueba-twa` (`ANDROID_AVD_HOME=~/.config/.android/avd`), sin ventana; el registro, `adb logcat -s Avisos`.
 - **Cinco idiomas** (ADR 0026): `/ca/`, `/gl/`, `/eu/` y `/en/`;
   traducción nocturna (`scripts/traducir.sh`) y de un día ya publicado
   (`scripts/traducir-dia.sh FECHA [idiomas]`, en una copia fuera de `/home`).

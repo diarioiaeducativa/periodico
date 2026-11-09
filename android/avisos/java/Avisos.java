@@ -14,6 +14,7 @@ import android.content.pm.PackageManager;
 import android.content.res.Configuration;
 import android.net.Uri;
 import android.os.Build;
+import android.util.Log;
 
 import org.json.JSONObject;
 
@@ -43,7 +44,7 @@ final class Avisos {
     static final TimeZone MADRID = TimeZone.getTimeZone("Europe/Madrid");
     static final List<String> IDIOMAS = Arrays.asList("es", "ca", "gl", "eu", "en");
     static final int HORA = 7, FIN_HORA = 9, FIN_MINUTO = 30;   // la primera, a las 7:00; la última, a las 9:30
-    static final long REINTENTO = 15 * 60 * 1000L;
+    static final long REINTENTO = 15 * 60 * 1000L, VENTANA = 10 * 60 * 1000L;
     private static final String CANAL = "numero";
 
     private Avisos() {}
@@ -97,13 +98,21 @@ final class Avisos {
         return k.getTimeInMillis();
     }
 
-    private static PendingIntent pendiente(Context c) {
+    private static PendingIntent pendiente(Context c, int cual) {
         Intent i = new Intent(c, ComprobarNumero.class);
-        return PendingIntent.getBroadcast(c, 0, i, PendingIntent.FLAG_IMMUTABLE | PendingIntent.FLAG_UPDATE_CURRENT);
+        return PendingIntent.getBroadcast(c, cual, i, PendingIntent.FLAG_IMMUTABLE | PendingIntent.FLAG_UPDATE_CURRENT);
     }
 
+    /**
+     * Dos alarmas para la misma hora, y la primera que suena mira: una con ventana de 10 minutos, la
+     * más estrecha que admite Android sin alarma exacta, que suena a su hora con el móvil en uso o
+     * cargando, y otra que suena también con el móvil en reposo profundo, aunque Android puede
+     * retrasarla hasta una hora (dumpsys alarm, 09-11-2026). La segunda ya no repite el aviso.
+     */
     static void programar(Context c, long cuando) {
-        c.getSystemService(AlarmManager.class).setAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, cuando, pendiente(c));
+        AlarmManager am = c.getSystemService(AlarmManager.class);
+        am.setWindow(AlarmManager.RTC_WAKEUP, cuando, VENTANA, pendiente(c, 0));
+        am.setAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, cuando, pendiente(c, 2));
         prefs(c).edit().putLong("proxima", cuando).apply();
     }
 
@@ -122,13 +131,16 @@ final class Avisos {
     static void encender(Context c) {
         SharedPreferences.Editor e = prefs(c).edit().putBoolean("activos", true);
         if (System.currentTimeMillis() >= hora(0, HORA, 0)) e.putString("avisado", hoy());
+        else e.remove("avisado");   // antes de las 7:00 no se ha avisado de nada hoy (salvo con el reloj cambiado)
         e.apply();
         programarSiguiente(c);
     }
 
     static void apagar(Context c) {
         prefs(c).edit().putBoolean("activos", false).apply();
-        c.getSystemService(AlarmManager.class).cancel(pendiente(c));
+        AlarmManager am = c.getSystemService(AlarmManager.class);
+        am.cancel(pendiente(c, 0));
+        am.cancel(pendiente(c, 2));
     }
 
     /** Al abrir la app o al encender el móvil: las alarmas no sobreviven a un reinicio ni a una actualización. */
@@ -150,8 +162,9 @@ final class Avisos {
                 programar(c, hora(1, HORA, 0));
                 return;
             }
-        } catch (Exception sinRed) {
+        } catch (Exception fallo) {
             // sin conexión o la web no responde: se vuelve a mirar como si aún no hubiera salido
+            Log.w("Avisos", "no se pudo comprobar el número", fallo);
         }
         long siguiente = System.currentTimeMillis() + REINTENTO;
         programar(c, siguiente <= hora(0, FIN_HORA, FIN_MINUTO) ? siguiente : hora(1, HORA, 0));
