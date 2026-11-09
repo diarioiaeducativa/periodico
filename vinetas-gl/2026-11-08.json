@@ -1,0 +1,88 @@
+{
+  "fecha": "2026-11-08",
+  "elegida": {
+    "n": 2,
+    "pieza": "detector-ia-no-es-prueba",
+    "idea": "De noite na casa, Xiz lembra que o que vale é o proceso (borradores, versións, datas) e Algoritmo, servizal, presenta a súa novidade: agora tamén xera os borradores, para demostrar que non o escribiu el.",
+    "guion": {
+      "vinetas": [
+        {
+          "escenario": "casa_noche",
+          "tiza": {
+            "expresion": "pensativo",
+            "postura": "pensar",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "sorprendido",
+            "postura": "abajo",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "objeto": "papeles",
+          "bocadillos": [
+            {
+              "quien": "tiza",
+              "texto": "Unha porcentaxe non proba nada. O que vale é o proceso: borradores, versións, datas.",
+              "tipo": "habla"
+            }
+          ],
+          "cartela": "De noite, na casa, dándolle voltas aos detectores de IA."
+        },
+        {
+          "escenario": "casa_noche",
+          "tiza": {
+            "expresion": "neutral",
+            "postura": "abajo",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "contento",
+            "postura": "arriba",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "objeto": "papeles",
+          "bocadillos": [
+            {
+              "quien": "algoritmo",
+              "texto": "Novidade! Agora tamén xero os borradores. Tres versións, con tachaduras.",
+              "tipo": "habla"
+            }
+          ]
+        },
+        {
+          "escenario": "casa_noche",
+          "tiza": {
+            "expresion": "harto",
+            "postura": "abajo",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "neutral",
+            "postura": "senalar",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "objeto": "papeles",
+          "bocadillos": [
+            {
+              "quien": "tiza",
+              "texto": "E iso para que?",
+              "tipo": "habla"
+            },
+            {
+              "quien": "algoritmo",
+              "texto": "Para demostrar que non o escribín eu.",
+              "tipo": "habla"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "traduccion": "automática con IA"
+}

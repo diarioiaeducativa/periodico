@@ -1,0 +1,48 @@
+{
+  "fecha": "2026-11-08",
+  "piezas": [
+    {
+      "id": "calendari-planificador-de-curso",
+      "seccion": "vibecoding",
+      "repositorio": "dia",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Berria biltegian",
+      "titular": "Planifikatzaile batek ikasturteko egutegia muntatzeko aukera ematen du, Valentziako Erkidegoko egutegi ofizialetik abiatuta edo hutsetik",
+      "entradilla": "José Luis Miralles Bonok Clauderen laguntzarekin sortutako Calendari-k ikastetxe baten eskola-egutegia nabigatzailetik muntatzeko aukera ematen du, Valentziako egutegi ofizialetik abiatuta edo hutsetik.",
+      "cuerpo": [
+        "[Calendari — Planificador de curso](https://jlmirallesb.github.io/calendari-planificador/) José Luis Miralles Bonok sortutako web-aplikazio bat da; berak aurkezten du Clauderen laguntzarekin diseinatua dela. Biltegiko fitxaren arabera, musika- eta dantza-kontserbatorio baten eskola- eta akademia-egutegirako pentsatuta dago, eta irakasleen prestakuntzarako eta irakaskuntzaren antolakuntzarako sormen-tresna gisa sailkatzen da.",
+        "Irekitzean, orriak lau bide eskaintzen ditu: Valentziako Erkidegoko egutegi ofizialarekin hastea, zeinak ikasturtea sortzen duen jaiegunekin eta oporrekin, udalerriaren eta irakaskuntzaren arabera; egutegi huts bat sortzea, ikasturtea, jaiegunak, hiruhilekoak eta profilak definituz; lehenago JSON fitxategi batean gordetako bat inportatzea; edo argitaratutako egutegiak arakatzea, zeintzuk harpidetu edo editore propiora kopiatu daitezkeen. Fitxak gaineratzen du eskola-egunak, hiruhilekoak eta ebaluazio-mugarriak kudeatzen dituela.",
+        "Zuzendaritza-talde edo departamentu batentzat, erabilgarritasuna dagoeneko eraikita dagoen egutegi batetik abiatzean eta hura egokitzean datza, irailero hutsetik altxatu beharrean. Fitxaren arabera, emaitza PDFra eta .ics formatura atera daiteke, eta mugikorreko egutegitik harpidetu daiteke, irakasleek aldaketak beren agendan ikus ditzaten.",
+        "Nabigatzailean erabiltzen da, hasierako pantailak konturik edo ordainketarik eskatu gabe, eta interfazea gaztelaniaz eta valentziaz dago, hizkuntza-hautatzaile batekin eta modu ilun batekin. Fitxaren arabera, ikastetxe batek bere kopia propioa izan dezake. [Iturburu-kodea GitHuben dago](https://github.com/jlmirallesb/calendari-planificador), AGPL v3 lizentziapean, eta edukiak CC BY-SA 4.0 lizentziapean.",
+        "Egile berak [Generalitate Valentzianoko hainbat ikastetxetan ibiltari diren irakasleen lanaldia banatzen duen kalkulagailu bat](pieza:2026-11-07/itinerancias) ere ekarri zuen egunkarira."
+      ],
+      "recursos": [
+        {
+          "id": "calendari-planificador-de-curso",
+          "titulo": "Calendari — Planificador de curso",
+          "autoria": "José Luis Miralles Bono",
+          "url": "https://jlmirallesb.github.io/calendari-planificador/",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://jlmirallesb.github.io/calendari-planificador/",
+          "licencia": "AGPL v3",
+          "captura": "2026-11-08-calendari-planificador-de-curso.jpg",
+          "captura_alt": "Calendari-ren hasierako pantaila, lau txartelekin: Valentziako Erkidegoko egutegi ofiziala, egutegi berri bat sortzea, fitxategi batetik inportatzea eta argitaratutako egutegiak ikustea.",
+          "texto": []
+        }
+      ],
+      "fuentes": [
+        {"titulo": "Calendari — Planificador de curso (gaztelaniaz)", "url": "https://jlmirallesb.github.io/calendari-planificador/"},
+        {"titulo": "Iturburu-kodea GitHuben (ingelesez)", "url": "https://github.com/jlmirallesb/calendari-planificador"}
+      ],
+      "comprobado": "Captura vista con Read: pantalla de inicio v0.9.1 con las cuatro opciones, selector ES/VA, modo oscuro y pie con licencias. Texto visible leído. WebFetch de la web solo devolvió el título (la app necesita JavaScript). Página de GitHub abierta: confirma castellano y valenciano, licencias AGPL v3 y CC BY-SA 4.0, perfiles, impresión preparada para guardar como PDF y feeds .ics por perfil; no menciona un botón de PDF, así que PDF/.ics/suscripción constan como dicho por la ficha. Itinerancias: mismo autor y clave pieza:2026-11-07/itinerancias en publicado.txt, comprobados."
+    }
+  ],
+  "descartado": [],
+  "repaso": [
+    "Titular: quitado «con los festivos… y lo exporta a PDF o al móvil»; la exportación no se ve en la captura y solo la afirma la ficha.",
+    "Cuerpo: quitada la frase sobre lo que «no se ha podido comprobar en la captura» (cómo trabaja el diario) y la salida a PDF/.ics queda como dicha por la ficha.",
+    "Quitada «La versión vista es la 0.9.1» (sin utilidad para el docente).",
+    "Enlaces: el nombre del recurso y el código fuente de GitHub, enlazados en su primera mención.",
+    "Comprobados sin cambios: autoría, licencia, ficha, captura y captura_alt, idiomas ES/VA, enlace a pieza:2026-11-07/itinerancias (mismo autor, clave en publicado.txt)."
+  ]
+}

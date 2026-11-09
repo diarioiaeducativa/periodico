@@ -1,0 +1,123 @@
+{
+  "fecha": "2026-11-08",
+  "candidatas": [
+    {
+      "pieza": "detector-ia-no-es-prueba",
+      "idea": "En dirección, Tiza aplica al detector lo que propone la entrada: que explique oralmente cómo ha llegado a su 87 %; Algoritmo lo piensa y responde «88 %».",
+      "guion": {"vinetas": [
+        {"escenario": "despacho",
+         "tiza": {"expresion": "preocupado", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "neutral", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+         "objeto": "papeles",
+         "bocadillos": [
+           {"quien": "algoritmo", "texto": "Trabajo de historia: 87 % de probabilidad de IA.", "tipo": "habla"},
+           {"quien": "tiza", "texto": "Un porcentaje no es una prueba. Primero, explicación oral.", "tipo": "habla"}]},
+        {"escenario": "despacho",
+         "tiza": {"expresion": "pensativo", "postura": "pensar", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "cargando", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+         "objeto": "papeles",
+         "bocadillos": [
+           {"quien": "tiza", "texto": "La tuya. Explícame cómo has llegado al 87 %.", "tipo": "habla"}]},
+        {"escenario": "despacho",
+         "tiza": {"expresion": "harto", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "contento", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+         "objeto": "papeles",
+         "bocadillos": [
+           {"quien": "algoritmo", "texto": "88 %.", "tipo": "habla"}]}
+      ]}
+    },
+    {
+      "pieza": "detector-ia-no-es-prueba",
+      "idea": "De noche en casa, Tiza recuerda que lo que vale es el proceso (borradores, versiones, fechas) y Algoritmo, servicial, presenta su novedad: ya genera también los borradores, para demostrar que no lo ha escrito él.",
+      "guion": {"vinetas": [
+        {"escenario": "casa_noche",
+         "tiza": {"expresion": "pensativo", "postura": "pensar", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "sorprendido", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+         "objeto": "papeles",
+         "bocadillos": [
+           {"quien": "tiza", "texto": "Un porcentaje no prueba nada. Vale el proceso: borradores, versiones, fechas.", "tipo": "habla"}]},
+        {"escenario": "casa_noche",
+         "tiza": {"expresion": "neutral", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "contento", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+         "objeto": "papeles",
+         "bocadillos": [
+           {"quien": "algoritmo", "texto": "¡Novedad! Ya genero también los borradores. Tres versiones, con tachones.", "tipo": "habla"}]},
+        {"escenario": "casa_noche",
+         "tiza": {"expresion": "harto", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "neutral", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+         "objeto": "papeles",
+         "bocadillos": [
+           {"quien": "tiza", "texto": "¿Y eso para qué?", "tipo": "habla"},
+           {"quien": "algoritmo", "texto": "Para demostrar que no lo he escrito yo.", "tipo": "habla"}]}
+      ]}
+    },
+    {
+      "pieza": "detector-ia-no-es-prueba",
+      "idea": "En el claustro que discute el protocolo, Tiza prueba el detector con un texto: «3 %, escrito por un humano sin duda»; era el resumen que le hizo Algoritmo esa mañana (el detector se equivoca en los dos sentidos).",
+      "guion": {"vinetas": [
+        {"escenario": "claustro",
+         "tiza": {"expresion": "neutral", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "cargando", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+         "objeto": "folio", "lleva": "tiza",
+         "bocadillos": [
+           {"quien": "tiza", "texto": "Antes de aprobar el protocolo, pasa el detector por este texto.", "tipo": "habla"}]},
+        {"escenario": "claustro",
+         "tiza": {"expresion": "pensativo", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "contento", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+         "objeto": "folio", "lleva": "tiza",
+         "bocadillos": [
+           {"quien": "algoritmo", "texto": "3 % de probabilidad de IA. Lo ha escrito un humano, sin duda.", "tipo": "habla"}]},
+        {"escenario": "claustro",
+         "tiza": {"expresion": "riendo", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "avergonzado", "postura": "encoger", "lugar": "derecha", "mira": "izquierda"},
+         "objeto": "folio", "lleva": "tiza",
+         "bocadillos": [
+           {"quien": "tiza", "texto": "Es el resumen que me hiciste esta mañana.", "tipo": "habla"}]}
+      ]}
+    },
+    {
+      "pieza": "buzz-cortometraje-vr",
+      "idea": "En una formación en línea (la videollamada es parte del chiste), Algoritmo presume de rodar dentro de la escena agachándose e inclinándose; Tiza también se agacha y se inclina en cada videollamada: por el tendedero.",
+      "guion": {"vinetas": [
+        {"escenario": "videollamada",
+         "tiza": {"expresion": "pensativo", "postura": "pensar", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "contento", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "algoritmo", "texto": "Con gafas de realidad virtual entro en la escena: me agacho, me inclino...", "tipo": "habla"}]},
+        {"escenario": "videollamada",
+         "tiza": {"expresion": "neutral", "postura": "senalar", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "sorprendido", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "tiza", "texto": "Yo también dirijo mis planos. En cada videollamada me agacho y me inclino.", "tipo": "habla"},
+           {"quien": "algoritmo", "texto": "¿Por la puesta en escena?", "tipo": "habla"}]},
+        {"escenario": "videollamada",
+         "tiza": {"expresion": "avergonzado", "postura": "encoger", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "pensativo", "postura": "pensar", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "tiza", "texto": "Por el tendedero.", "tipo": "habla"}]}
+      ]}
+    },
+    {
+      "pieza": "breve-2",
+      "idea": "En la sala de profes, Algoritmo anuncia que varios agentes compartirán un conocimiento común que todos pueden aumentar; Tiza, orgullosa, señala el corcho: lo tienen desde hace años. Aumentarlo, lo aumentan todos; leerlo, nadie.",
+      "guion": {"vinetas": [
+        {"escenario": "sala_profes",
+         "tiza": {"expresion": "pensativo", "postura": "pensar", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "contento", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "algoritmo", "texto": "Gran idea: varios agentes con un conocimiento común que todos podemos aumentar.", "tipo": "habla"}]},
+        {"escenario": "sala_profes",
+         "tiza": {"expresion": "orgulloso", "postura": "senalar", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "sorprendido", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "tiza", "texto": "Aquí lo inventamos hace años. Ahí lo tienes: el corcho.", "tipo": "habla"}]},
+        {"escenario": "sala_profes",
+         "tiza": {"expresion": "avergonzado", "postura": "encoger", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "pensativo", "postura": "pensar", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "algoritmo", "texto": "¿Y funciona?", "tipo": "habla"},
+           {"quien": "tiza", "texto": "Aumentarlo, lo aumentamos todos. Leerlo, nadie.", "tipo": "habla"}]}
+      ]}
+    }
+  ]
+}

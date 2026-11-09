@@ -1,0 +1,76 @@
+{
+  "fecha": "2026-11-08",
+  "hay_edicion": true,
+  "motivo": "Día flojo: la mayor parte de la conversación giró en torno a temas ya publicados (memoria de agentes, reportaje de edad, Holmio, Incluxat). Quedan una entrada nueva sobre detectores de IA, un adelanto de cortometraje rodado en realidad virtual y dos breves. Vibe Coding Educativo solo tuvo avisos del bot y mensajes de cortesía sobre lo ya publicado: sin pieza de ese grupo.",
+  "piezas": [
+    {
+      "id": "detector-ia-no-es-prueba",
+      "seccion": "debates",
+      "importancia": 1,
+      "grupo": "chatgpt",
+      "antetitulo": "AA detektagailuak",
+      "titular": "AA detektagailu batek emandako ehuneko batek ikaslearekin elkarrizketa irekitzen du, baina ez du frogatzen kopiatu duenik",
+      "entradilla": "«Familias con inteligencia» blogeko sarrera batek galdetzen du zer egin detektagailu batek markatzen duenean berak idatzi duela dioen ikasle baten lana, eta ehunekoa prozesuaren ebidentziekin osatzea proposatzen du.",
+      "cuerpo": [
+        "Chema Falcó-k azaroaren 8an argitaratu zuen «[La máquina dice que copió. Él dice que lo redactó](https://profechef.substack.com/p/la-maquina-dice-que-copio-el-dice)», «Por qué un porcentaje no es una prueba» azpititulua duela. Egoera errealetan oinarritutako kasu fikziozko batetik abiatzen da: 15 urteko ikasle bat, bere ikastetxeak historiako lan batean AA erabiltzea leporatzen diona, detektagailu batek % 87ko probabilitatea esleitu diolako. Ikasleak berak idatzi zuela dio eta zirriborroak gordetzen ditu, nahiz eta amaieran zuzentzaile bat erabili duela aitortzen duen.",
+        "Sarreraren arabera, detektagailu batek zantzu bat ematen du, ez froga bat, eta bi norabideetan akats dezake. Ondorioa atera aurretik, ikaslearen azalpena entzutea proposatzen du, ontzat eman edo baztertu gabe, eta egiaztatzea: ahozko azalpen batek edo ariketaren zati bat errepikatzeak ikasitakoa egiaztatzen laguntzen du. Prozesuaren ebidentzia gisa zirriborroak, bertsioak, datak eta oharrak aipatzen ditu, eta familiak tutoretzarekin bildu ahal izatea gomendatzen du, ehunekoak zer esan nahi duen eta ikastetxeak zer protokolo aplikatzen duen jakiteko. Gainera, akusazio bidegabe batek antsietatea eta motibazio-galera eragin ditzakeela ohartarazten du.",
+        "Testuak UNESCOren hezkuntzako AA sortzaileari buruzko gidan eta AAren Europako Erregelamenduan oinarritzen da, eta biek bat egiten dute tresna automatikoek esandakoa pertsona batek berrikusi eta interpretatu behar duela. Gai beraren inguruan, [egunkariak kontatu zuen argitaletxe-sektoreak detektagailuei buruz egindako abisua](pieza:2026-11-01/detectores-caza-brujas), «sorgin-ehizaz» hitz egin zuena."
+      ],
+      "fuentes": [
+        {"titulo": "Chema Falcó: La máquina dice que copió. Él dice que lo redactó (gaztelaniaz)", "url": "https://profechef.substack.com/p/la-maquina-dice-que-copio-el-dice"}
+      ],
+      "mensaje": {"grupo": "chatgpt", "id": 54129},
+      "comprobado": "Abierta la entrada de Substack (el enlace buff.ly redirige a ella): autor, fecha 8 de noviembre de 2026, caso ficticio del alumno de 15 años y 87 %, borradores y corrector al final, ideas sobre evidencias de proceso, reunión con tutoría, ansiedad y desmotivación, y referencias a UNESCO y Reglamento Europeo de IA (solo se dice que la entrada los cita; no se han abierto). Comprobado el mensaje de Telegram 54129. La clave de la pieza anterior está en publicado.txt y trata de detectores.",
+      "ilustracion": "Una balanza: en un platillo un porcentaje de detector (87 %) y en el otro borradores, historial de versiones y una explicación oral; el platillo de las evidencias pesa más y una lupa recuerda que la decisión la toma una persona.",
+      "ilustracion_alt": "Eskuinera makurtutako balantza bat: ezkerreko plater arinagoan, «Detektorea % 87» errotulua duen txartel bat; eskuinekoan, astunagoan, beste bat «Zirriborroak», «Bertsioak» eta «Ahozko azalpena» errotuluekin. Bi plateren artean, lupa bat eta «Pertsona batek erabakitzen du» errotulua."
+    },
+    {
+      "id": "buzz-cortometraje-vr",
+      "seccion": "multimedia",
+      "importancia": 2,
+      "grupo": "edumedia",
+      "antetitulo": "AA bidezko zinema",
+      "titular": "Film labur bat errealitate birtualaren barruan errodatzen da eta AArekin amaitzen da",
+      "entradilla": "Raül Torresek «Buzz» film laburraren aurrerapen bat partekatu du; haren planoak errealitate birtualeko betaurrekoekin zuzentzen ditu, Blenderren sortutako dekoratuetan.",
+      "cuerpo": [
+        "Raül Torresek LinkedIn-en partekatu du «Buzz» bere film labur berriaren aurrerapen bat. Kontatzen duenez, dekoratuak Blenderren eraikitzen ditu eta, Meta Quest 3 betaurrekoak jarrita, eszena bakoitzean sartu eta kamera mugitzen du barruan egongo balitz bezala: makurtzen da, okertzen da eta pertsonaiei jarraitzen die, teklaturik eta saguik gabe.",
+        "Aurretiazko plano horiek oinarri gisa balio dute, gero azken irudiak AArekin sortzeko. Egilearen arabera, zuzendaritza, erritmoa eta kamera-mugimenduak fase horretatik ateratzen dira, eta espazioa eta distantzia barrutik sentitzeak aldatu egiten du eszenaratzea pentsatzeko modua. Partekatutakoa aurrerapen bat baino ez da: kolore-zuzenketa, soinu-diseinua eta muntaia falta dira."
+      ],
+      "fuentes": [
+        {"titulo": "Raül Torres LinkedIn-en: «Buzz»-en aurrerapena (ingelesez)", "url": "https://www.linkedin.com/posts/raul-torres-ia_buzz-shortfilm-aifilmmaking-ugcPost-7525290884553183233-UCtd/"}
+      ],
+      "mensaje": {"grupo": "edumedia", "id": 12144},
+      "comprobado": "Abierta la publicación de LinkedIn (y comparada con la vista previa del mensaje): Blender, Meta Quest 3, cámara en la mano sin teclado ni ratón, planos base para imágenes finales con IA y trabajo pendiente (color, sonido, montaje). La fecha no aparece en la página. Comprobado el mensaje de Telegram 12144. La herramienta de IA concreta no se nombra en el cuerpo. Se ha quitado la frase final sobre el aula de audiovisual, que era una valoración de la redacción.",
+      "ilustracion": null,
+      "ilustracion_alt": "Hiru urratsetako eskema bat, geziz lotuta: 3D dekorazio bat «Blender dekorazioa» errotuluarekin, errealitate birtualeko betaurreko batzuk «Kamera VR-n» errotuluarekin eta klaketa bat «Amaiera AArekin» errotuluarekin. Azpian, marra etenezko koadro batean, falta dena: «Kolorea, soinua, muntaia»."
+    }
+  ],
+  "breves": [
+    {
+      "texto": "BBCk AA duten jostailuak probatu ditu haur txikientzat: pelutxe batek «I can't help with killing you» erantzun zuen galdera bat gaizki interpretatu ondoren. Britainia Handiko parlamentariek dendei eskatzen diete jostailu horiek Black Friday baino lehen kentzeko.",
+      "url": "https://www.bbc.com/news/articles/c6x2w4ej245ko",
+      "grupo": "chatgpt",
+      "mensaje": {"grupo": "chatgpt", "id": 54074}
+    },
+    {
+      "texto": "Juan José de Haro-k bere artikulua zabaldu du, agente desberdinek (Claude Code, Codex, Antigravity) guztiek handitu dezaketen ezagutza komun bat partekatzeko ideiarekin, [egunkariak lau geruzatako memoriari buruz kontatu zuen bezala](pieza:2026-11-07/memoria-agentes-ia). Ordenagailuan instalatutako agenteekin soilik funtzionatzen du, ez web bertsioekin.",
+      "url": "https://educacion.bilateria.org/agentes-de-ia-que-aprenden-mientras-duermen",
+      "grupo": "chatgpt",
+      "mensaje": {"grupo": "chatgpt", "id": 54075}
+    }
+  ],
+  "descartado": [
+    "Reportaje de edad para usar IA, memoria de agentes, Holmio, Incluxat, Itinerancias: ya publicados el 8 de noviembre.",
+    "Fecha del 26 de diciembre para desbloquear formaciones en Cataluña: revisada la página de XTEC (projectes.xtec.cat/ia): solo muestra «Actualització prevista: des.26» en una guía y dos formaciones con inscripción cerrada; no confirma ese día ni el desbloqueo; no se publica.",
+    "Aplicaciones de José Luis Miralles y guía de vibe coding responsable de Luis (7 de noviembre por la tarde): del día anterior, sin novedad hoy; la guía solo tiene un enlace a un artefacto de Claude.",
+    "Extensión de Chrome para ocultar respuestas de IA en buscadores: del día anterior y sin nombre de la extensión.",
+    "Peticiones de formación, saludos, mensajes del bot antiuserbots y avisos del bot: administración o conversación sin noticia."
+  ],
+  "repaso": [
+    "Breve de la BBC: no se pudo abrir el artículo; según una reseña de la prueba, la frase fue una mala interpretación de una pregunta y no «sin que se le preguntara». Reescrito sin esa afirmación.",
+    "Breve de la memoria: «Juanjo de Haro» pasa a «Juan José de Haro»; contenido comprobado en el artículo (actualización del 8 de noviembre).",
+    "Pieza del cortometraje: quitada la frase final sobre el aula, que era opinión de la redacción; `comprobado` ajustado.",
+    "Pieza de detectores: comprobada contra la entrada original; añadidos detalles a `comprobado`.",
+    "XTEC: comprobada la página; el descarte del 26 de diciembre se mantiene."
+  ]
+}

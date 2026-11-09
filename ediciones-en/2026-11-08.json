@@ -1,0 +1,76 @@
+{
+  "fecha": "2026-11-08",
+  "hay_edicion": true,
+  "motivo": "A quiet day: most of the conversation revolved around topics already published (agent memory, the age report, Holmio, Incluxat). What remains is one new item on AI detectors, a preview of a short film shot in virtual reality, and two brief items. Vibe Coding Educativo only had bot notices and courtesy messages about topics already published: no piece from that group.",
+  "piezas": [
+    {
+      "id": "detector-ia-no-es-prueba",
+      "seccion": "debates",
+      "importancia": 1,
+      "grupo": "chatgpt",
+      "antetitulo": "AI detectors",
+      "titular": "An AI detector's percentage opens a conversation with the student, but does not prove they copied",
+      "entradilla": "A post on the blog “Familias con inteligencia” asks what to do when a detector flags the work of a student who says they wrote it themselves, and suggests backing the percentage up with evidence of the process.",
+      "cuerpo": [
+        "Chema Falcó published “[La máquina dice que copió. Él dice que lo redactó](https://profechef.substack.com/p/la-maquina-dice-que-copio-el-dice)” (The machine says he copied. He says he wrote it) on 8 November, with the subtitle “Why a percentage is not proof”. It starts from a fictional case based on real situations: a 15-year-old student whose school accuses him of using AI in a history assignment because a detector gives it an 87% probability. He says he wrote it and still has his drafts, although he admits he used a spelling and grammar checker at the end.",
+        "The post argues that a detector provides an indication, not proof, and that it can be wrong in both directions. Before reaching a conclusion, it suggests listening to the student's explanation without either accepting or dismissing it, and then checking it: an oral explanation or redoing part of the exercise helps to verify what has been learned. As evidence of the process it cites drafts, versions, dates and notes, and it recommends that families be able to meet the form tutor to find out what the percentage means and what protocol the school applies. It also warns that an unfair accusation can cause anxiety and demotivation.",
+        "The text draws on UNESCO's guidance on generative AI in education and on the European AI Act, which agree that a person must review and interpret what automated tools say. On the same subject, [the paper reported the publishing sector's warning about detectors](pieza:2026-11-01/detectores-caza-brujas), which spoke of a “witch hunt”."
+      ],
+      "fuentes": [
+        {"titulo": "Chema Falcó: La máquina dice que copió. Él dice que lo redactó (in Spanish)", "url": "https://profechef.substack.com/p/la-maquina-dice-que-copio-el-dice"}
+      ],
+      "mensaje": {"grupo": "chatgpt", "id": 54129},
+      "comprobado": "Opened the Substack post (the buff.ly link redirects to it): author, date of 8 November 2026, the fictional case of the 15-year-old student and the 87%, drafts and a checker used at the end, ideas on evidence of the process, meeting with the form tutor, anxiety and demotivation, and references to UNESCO and the European AI Act (the post is only said to cite them; they have not been opened). Checked Telegram message 54129. The key of the previous piece is in publicado.txt and deals with detectors.",
+      "ilustracion": "A set of scales: on one pan a detector percentage (87%) and on the other drafts, version history and an oral explanation; the pan of evidence weighs more and a magnifying glass is a reminder that the decision is made by a person.",
+      "ilustracion_alt": "A set of scales tipped to the right: on the lighter left pan, a card labelled “Detector 87%”; on the heavier right pan, another labelled “Drafts”, “Versions” and “Oral explanation”. Between the two pans, a magnifying glass and the label “A person decides”."
+    },
+    {
+      "id": "buzz-cortometraje-vr",
+      "seccion": "multimedia",
+      "importancia": 2,
+      "grupo": "edumedia",
+      "antetitulo": "Film with AI",
+      "titular": "A short film is shot inside virtual reality and finished with AI",
+      "entradilla": "Raül Torres shares a preview of “Buzz”, a short film whose shots he directs with a virtual reality headset on sets created in Blender.",
+      "cuerpo": [
+        "Raül Torres has shared on LinkedIn a preview of “Buzz”, his new short film. He says he builds the sets in Blender and, wearing a Meta Quest 3 headset, steps into each scene and moves the camera as if he were inside it: he crouches, leans and follows the characters, with no keyboard or mouse.",
+        "These preliminary shots serve as the basis for generating the final images with AI afterwards. According to the author, the direction, pacing and camera movements come out of that phase, and feeling the space and distance from the inside changes how staging is thought about. What has been shared is only a preview: colour correction, sound design and editing are still to come."
+      ],
+      "fuentes": [
+        {"titulo": "Raül Torres on LinkedIn: preview of “Buzz” (in Spanish)", "url": "https://www.linkedin.com/posts/raul-torres-ia_buzz-shortfilm-aifilmmaking-ugcPost-7525290884553183233-UCtd/"}
+      ],
+      "mensaje": {"grupo": "edumedia", "id": 12144},
+      "comprobado": "Opened the LinkedIn post (and compared it with the message preview): Blender, Meta Quest 3, hand-held camera with no keyboard or mouse, preliminary shots as the basis for final AI images, and outstanding work (colour, sound, editing). The date does not appear on the page. Checked Telegram message 12144. The specific AI tool is not named in the body. The closing sentence about the audiovisual classroom has been removed, as it was the newsroom's own judgement.",
+      "ilustracion": null,
+      "ilustracion_alt": "A diagram in three steps joined by arrows: a 3D set labelled “Set in Blender”, a virtual reality headset labelled “Camera in VR” and a clapperboard labelled “Final with AI”. Below, in a dashed box, what is still to come: “Colour, sound, editing”."
+    }
+  ],
+  "breves": [
+    {
+      "texto": "The BBC tested AI toys for young children: one of the soft toys replied “I can't help with killing you” after misunderstanding a question. British MPs are asking retailers to withdraw these toys before Black Friday.",
+      "url": "https://www.bbc.com/news/articles/c6x2w4ej245ko",
+      "grupo": "chatgpt",
+      "mensaje": {"grupo": "chatgpt", "id": 54074}
+    },
+    {
+      "texto": "Juan José de Haro has expanded his article with the idea that different agents (Claude Code, Codex, Antigravity) can share a common body of knowledge that all of them can add to, as [the paper reported on four-layer memory](pieza:2026-11-07/memoria-agentes-ia). It only works with agents installed on the computer, not with web versions.",
+      "url": "https://educacion.bilateria.org/agentes-de-ia-que-aprenden-mientras-duermen",
+      "grupo": "chatgpt",
+      "mensaje": {"grupo": "chatgpt", "id": 54075}
+    }
+  ],
+  "descartado": [
+    "Age report for using AI, agent memory, Holmio, Incluxat, Itinerancias: already published on 8 November.",
+    "The 26 December date for unlocking training in Catalonia: XTEC page (projectes.xtec.cat/ia) checked: it only shows “Actualització prevista: des.26” in one guide and two trainings with registration closed; it does not confirm that day or the unlocking; not published.",
+    "José Luis Miralles's applications and Luis's responsible vibe coding guide (7 November, afternoon): from the previous day, nothing new today; the guide only has a link to a Claude artefact.",
+    "Chrome extension to hide AI answers in search engines: from the previous day and without the extension's name.",
+    "Training requests, greetings, anti-userbot bot messages and bot notices: administration or conversation with no news."
+  ],
+  "repaso": [
+    "BBC brief: the article could not be opened; according to a review of the test, the phrase was a misinterpretation of a question and not said “without being asked”. Rewritten without that claim.",
+    "Memory brief: “Juanjo de Haro” becomes “Juan José de Haro”; content checked in the article (update of 8 November).",
+    "Short film piece: closing sentence about the classroom removed, as it was the newsroom's opinion; `comprobado` adjusted.",
+    "Detectors piece: checked against the original post; details added to `comprobado`.",
+    "XTEC: page checked; the discarding of the 26 December date stands."
+  ]
+}

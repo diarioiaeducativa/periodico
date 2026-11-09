@@ -1,0 +1,34 @@
+{
+  "fecha": "2026-11-09",
+  "avisos": {
+    "chatgpt": {
+      "saludo": "Buenos días. Arrancamos la semana con un debate sobre detectores.",
+      "puntos": [
+        "Un porcentaje de un detector de IA no prueba que un alumno haya copiado: una entrada propone escucharle y reunir borradores, versiones y una explicación oral antes de decidir",
+        "La BBC probó juguetes con IA para niños pequeños y uno de los peluches soltó una frase inquietante tras malinterpretar una pregunta; en el Reino Unido se pide retirarlos antes del Black Friday",
+        "La viñeta de Tiza y Algoritmo pide al detector que explique cómo llegó a su 87 %, y el resultado es más bien un 88 %"
+      ]
+    },
+    "vce": {
+      "saludo": "Buenos días. Para el lunes, un recurso nuevo del repositorio.",
+      "puntos": [
+        "Calendari, de José Luis Miralles Bono, ayuda a montar el calendario escolar de un centro desde el navegador, partiendo del oficial valenciano o de uno en blanco, con salida a PDF y al móvil",
+        "Se puede suscribir desde la agenda del móvil, tiene interfaz en castellano y valenciano, y su código está en GitHub con licencia AGPL v3 por si algún centro quiere su propia copia"
+      ],
+      "url": "https://diarioiaeducativa.github.io/n/8-vce.html"
+    },
+    "edumedia": {
+      "saludo": "Buenos días. Hoy, cine hecho dentro de la realidad virtual.",
+      "puntos": [
+        "El cortometraje «Buzz» se dirige con unas gafas Meta Quest 3 dentro de decorados de Blender, y esos planos previos sirven de base para generar con IA las imágenes finales",
+        "Lo compartido es un adelanto: aún faltan la corrección de color, el diseño de sonido y el montaje, pero la cámara ya se mueve como si se rodara dentro de la escena",
+        "Un porcentaje de un detector de IA no basta para acusar de copia a un alumno; hacen falta borradores, versiones y una conversación con la persona que escribió el trabajo"
+      ],
+      "url": "https://diarioiaeducativa.github.io/n/8-edumedia.html"
+    }
+  },
+  "instagram": "El número de este lunes trata sobre qué hacer cuando un detector de IA marca el trabajo de un alumno: un porcentaje es solo un indicio, y conviene escuchar al estudiante y revisar borradores, versiones y una explicación oral antes de decidir. También cuenta cómo se está rodando un cortometraje dentro de la realidad virtual, con la cámara movida con unas gafas y las imágenes finales generadas con IA, y presenta un planificador de calendario escolar abierto, creado con ayuda de Claude.",
+  "titulo": "Diario de IA Educativa · Núm. 8",
+  "fecha_texto": "Lunes, 9 de noviembre de 2026",
+  "url": "https://diarioiaeducativa.github.io/?n=8"
+}

@@ -1,0 +1,76 @@
+{
+  "fecha": "2026-11-08",
+  "hay_edicion": true,
+  "motivo": "Día flojo: la mayor parte de la conversación giró en torno a temas ya publicados (memoria de agentes, reportaje de edad, Holmio, Incluxat). Quedan una entrada nueva sobre detectores de IA, un adelanto de cortometraje rodado en realidad virtual y dos breves. Vibe Coding Educativo solo tuvo avisos del bot y mensajes de cortesía sobre lo ya publicado: sin pieza de ese grupo.",
+  "piezas": [
+    {
+      "id": "detector-ia-no-es-prueba",
+      "seccion": "debates",
+      "importancia": 1,
+      "grupo": "chatgpt",
+      "antetitulo": "Detectores de IA",
+      "titular": "Un porcentaje de un detector de IA abre una conversación con el alumno, pero no prueba que haya copiado",
+      "entradilla": "Una entrada del blog «Familias con inteligencia» plantea qué hacer cuando un detector marca el trabajo de un alumno que asegura haberlo escrito él, y propone acompañar el porcentaje con evidencias del proceso.",
+      "cuerpo": [
+        "Chema Falcó publicó el 8 de noviembre «[La máquina dice que copió. Él dice que lo redactó](https://profechef.substack.com/p/la-maquina-dice-que-copio-el-dice)», con el subtítulo «Por qué un porcentaje no es una prueba». Parte de un caso ficticio basado en situaciones reales: un alumno de 15 años al que su centro acusa de usar IA en un trabajo de historia porque un detector le asigna un 87 % de probabilidad. Él afirma que lo escribió y conserva borradores, aunque reconoce que usó un corrector al final.",
+        "La entrada sostiene que un detector da un indicio, no una prueba, y que puede equivocarse en los dos sentidos. Antes de concluir propone escuchar la explicación del alumno sin darla por buena ni descartarla, y verificarla: una explicación oral o repetir parte del ejercicio ayuda a comprobar lo aprendido. Como evidencias de proceso cita los borradores, las versiones, las fechas y las anotaciones, y recomienda que la familia pueda reunirse con la tutoría para saber qué significa el porcentaje y qué protocolo aplica el centro. Advierte además de que una acusación injusta puede causar ansiedad y desmotivación.",
+        "El texto se apoya en la guía de la UNESCO sobre IA generativa en educación y en el Reglamento Europeo de IA, que coinciden en que una persona debe revisar e interpretar lo que digan las herramientas automáticas. Sobre el mismo asunto, [el diario contó la advertencia del sector editorial ante los detectores](pieza:2026-11-01/detectores-caza-brujas), que habló de una «caza de brujas»."
+      ],
+      "fuentes": [
+        {"titulo": "Chema Falcó: La máquina dice que copió. Él dice que lo redactó", "url": "https://profechef.substack.com/p/la-maquina-dice-que-copio-el-dice"}
+      ],
+      "mensaje": {"grupo": "chatgpt", "id": 54129},
+      "comprobado": "Abierta la entrada de Substack (el enlace buff.ly redirige a ella): autor, fecha 8 de noviembre de 2026, caso ficticio del alumno de 15 años y 87 %, borradores y corrector al final, ideas sobre evidencias de proceso, reunión con tutoría, ansiedad y desmotivación, y referencias a UNESCO y Reglamento Europeo de IA (solo se dice que la entrada los cita; no se han abierto). Comprobado el mensaje de Telegram 54129. La clave de la pieza anterior está en publicado.txt y trata de detectores.",
+      "ilustracion": "Una balanza: en un platillo un porcentaje de detector (87 %) y en el otro borradores, historial de versiones y una explicación oral; el platillo de las evidencias pesa más y una lupa recuerda que la decisión la toma una persona.",
+      "ilustracion_alt": "Una balanza inclinada hacia la derecha: en el platillo izquierdo, más ligero, una tarjeta con el rótulo «Detector 87 %»; en el derecho, más pesado, otra con los rótulos «Borradores», «Versiones» y «Explicación oral». Entre los dos platillos, una lupa y el rótulo «Decide una persona»."
+    },
+    {
+      "id": "buzz-cortometraje-vr",
+      "seccion": "multimedia",
+      "importancia": 2,
+      "grupo": "edumedia",
+      "antetitulo": "Cine con IA",
+      "titular": "Un cortometraje se rueda dentro de la realidad virtual y se termina con IA",
+      "entradilla": "Raül Torres comparte un adelanto de «Buzz», un cortometraje cuyos planos dirige con unas gafas de realidad virtual sobre decorados creados en Blender.",
+      "cuerpo": [
+        "Raül Torres ha compartido en LinkedIn un adelanto de «Buzz», su nuevo cortometraje. Cuenta que construye los decorados en Blender y, con unas gafas Meta Quest 3 puestas, entra en cada escena y mueve la cámara como si estuviera dentro: se agacha, se inclina y sigue a los personajes, sin teclado ni ratón.",
+        "Esos planos previos sirven de base para generar después las imágenes finales con IA. Según el autor, la dirección, el ritmo y los movimientos de cámara salen de esa fase, y sentir el espacio y la distancia desde dentro cambia cómo se piensa la puesta en escena. Lo compartido es solo un avance: faltan la corrección de color, el diseño de sonido y el montaje."
+      ],
+      "fuentes": [
+        {"titulo": "Raül Torres en LinkedIn: adelanto de «Buzz»", "url": "https://www.linkedin.com/posts/raul-torres-ia_buzz-shortfilm-aifilmmaking-ugcPost-7525290884553183233-UCtd/"}
+      ],
+      "mensaje": {"grupo": "edumedia", "id": 12144},
+      "comprobado": "Abierta la publicación de LinkedIn (y comparada con la vista previa del mensaje): Blender, Meta Quest 3, cámara en la mano sin teclado ni ratón, planos base para imágenes finales con IA y trabajo pendiente (color, sonido, montaje). La fecha no aparece en la página. Comprobado el mensaje de Telegram 12144. La herramienta de IA concreta no se nombra en el cuerpo. Se ha quitado la frase final sobre el aula de audiovisual, que era una valoración de la redacción.",
+      "ilustracion": null,
+      "ilustracion_alt": "Esquema en tres pasos unidos por flechas: un decorado en 3D con el rótulo «Decorado en Blender», unas gafas de realidad virtual con el rótulo «Cámara en VR» y una claqueta con el rótulo «Final con IA». Debajo, en un recuadro de trazos, lo que falta: «Color, sonido, montaje»."
+    }
+  ],
+  "breves": [
+    {
+      "texto": "La BBC probó juguetes con IA para niños pequeños: uno de los peluches respondió «I can't help with killing you» tras malinterpretar una pregunta. Parlamentarios británicos piden a los comercios retirar estos juguetes antes del Black Friday.",
+      "url": "https://www.bbc.com/news/articles/c6x2w4ej245ko",
+      "grupo": "chatgpt",
+      "mensaje": {"grupo": "chatgpt", "id": 54074}
+    },
+    {
+      "texto": "Juan José de Haro ha ampliado su artículo con la idea de que agentes distintos (Claude Code, Codex, Antigravity) compartan un conocimiento común que todos pueden aumentar, como [contó el diario sobre la memoria en cuatro capas](pieza:2026-11-07/memoria-agentes-ia). Solo funciona con agentes instalados en el ordenador, no con las versiones web.",
+      "url": "https://educacion.bilateria.org/agentes-de-ia-que-aprenden-mientras-duermen",
+      "grupo": "chatgpt",
+      "mensaje": {"grupo": "chatgpt", "id": 54075}
+    }
+  ],
+  "descartado": [
+    "Reportaje de edad para usar IA, memoria de agentes, Holmio, Incluxat, Itinerancias: ya publicados el 8 de noviembre.",
+    "Fecha del 26 de diciembre para desbloquear formaciones en Cataluña: revisada la página de XTEC (projectes.xtec.cat/ia): solo muestra «Actualització prevista: des.26» en una guía y dos formaciones con inscripción cerrada; no confirma ese día ni el desbloqueo; no se publica.",
+    "Aplicaciones de José Luis Miralles y guía de vibe coding responsable de Luis (7 de noviembre por la tarde): del día anterior, sin novedad hoy; la guía solo tiene un enlace a un artefacto de Claude.",
+    "Extensión de Chrome para ocultar respuestas de IA en buscadores: del día anterior y sin nombre de la extensión.",
+    "Peticiones de formación, saludos, mensajes del bot antiuserbots y avisos del bot: administración o conversación sin noticia."
+  ],
+  "repaso": [
+    "Breve de la BBC: no se pudo abrir el artículo; según una reseña de la prueba, la frase fue una mala interpretación de una pregunta y no «sin que se le preguntara». Reescrito sin esa afirmación.",
+    "Breve de la memoria: «Juanjo de Haro» pasa a «Juan José de Haro»; contenido comprobado en el artículo (actualización del 8 de noviembre).",
+    "Pieza del cortometraje: quitada la frase final sobre el aula, que era opinión de la redacción; `comprobado` ajustado.",
+    "Pieza de detectores: comprobada contra la entrada original; añadidos detalles a `comprobado`.",
+    "XTEC: comprobada la página; el descarte del 26 de diciembre se mantiene."
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "fecha": "2026-11-08",
+  "elegida": {
+    "n": 2,
+    "pieza": "detector-ia-no-es-prueba",
+    "idea": "De noche en casa, Tiza recuerda que lo que vale es el proceso (borradores, versiones, fechas) y Algoritmo, servicial, presenta su novedad: ya genera también los borradores, para demostrar que no lo ha escrito él.",
+    "guion": {
+      "vinetas": [
+        {
+          "escenario": "casa_noche",
+          "tiza": {
+            "expresion": "pensativo",
+            "postura": "pensar",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "sorprendido",
+            "postura": "abajo",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "objeto": "papeles",
+          "bocadillos": [
+            {
+              "quien": "tiza",
+              "texto": "Un porcentaje no prueba nada. Vale el proceso: borradores, versiones, fechas.",
+              "tipo": "habla"
+            }
+          ],
+          "cartela": "De noche, en casa, dándole vueltas a los detectores de IA."
+        },
+        {
+          "escenario": "casa_noche",
+          "tiza": {
+            "expresion": "neutral",
+            "postura": "abajo",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "contento",
+            "postura": "arriba",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "objeto": "papeles",
+          "bocadillos": [
+            {
+              "quien": "algoritmo",
+              "texto": "¡Novedad! Ya genero también los borradores. Tres versiones, con tachones.",
+              "tipo": "habla"
+            }
+          ]
+        },
+        {
+          "escenario": "casa_noche",
+          "tiza": {
+            "expresion": "harto",
+            "postura": "abajo",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "neutral",
+            "postura": "senalar",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "objeto": "papeles",
+          "bocadillos": [
+            {
+              "quien": "tiza",
+              "texto": "¿Y eso para qué?",
+              "tipo": "habla"
+            },
+            {
+              "quien": "algoritmo",
+              "texto": "Para demostrar que no lo he escrito yo.",
+              "tipo": "habla"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "motivo": "La 1 es la única con un remate seco y sorprendente que nace de la noticia: la entrada pide explicación oral para verificar, y el detector, puesto a explicarse, solo sabe subir el número. Se entiende sin leer la pieza, la ironía va a la herramienta y usa solo datos de la entrada (trabajo de historia, 87 %, explicación oral). Gracia 8: no hace falta afinarla a fondo. La 2 (borradores generados) es ingeniosa pero el remate es enrevesado; la 3 (falso negativo del 3 %) es correcta pero previsible; la 4 (tendedero) apenas toca la noticia y el remate es oscuro; la 5 (corcho) es simpática pero se ríe del claustro más que de la tecnología, y su remate es un tópico.",
+  "retoques": "Viñeta 2: «La tuya. Explícame cómo has llegado al 87 %» pasa a «La tuya. ¿Cómo has llegado al 87 %?», más corto; Tiza señala a Algoritmo (postura senalar en vez de pensar) para que se vea a quién pide la explicación. Variedad: el despacho está libre (los tres números anteriores fueron fotocopiadora, aula y sin escenario) y sirve, porque la acusación la gestiona el centro; los papeles no repiten la taza del número anterior. Se evita «orgulloso», la cara más repetida de Algoritmo, y entra «cargando», que no ha salido; «neutral» de Tiza no se usa. Ningún bocadillo pasa de 90 caracteres (el más largo, 58).",
+  "puntuaciones": [
+    {
+      "n": 1,
+      "pieza": "detector-ia-no-es-prueba",
+      "gracia": 8,
+      "claridad": 8,
+      "remate": 9,
+      "prohibiciones": "respeta"
+    },
+    {
+      "n": 2,
+      "pieza": "detector-ia-no-es-prueba",
+      "gracia": 6,
+      "claridad": 6,
+      "remate": 6,
+      "prohibiciones": "respeta"
+    },
+    {
+      "n": 3,
+      "pieza": "detector-ia-no-es-prueba",
+      "gracia": 5,
+      "claridad": 8,
+      "remate": 5,
+      "prohibiciones": "respeta"
+    },
+    {
+      "n": 4,
+      "pieza": "buzz-cortometraje-vr",
+      "gracia": 4,
+      "claridad": 4,
+      "remate": 4,
+      "prohibiciones": "respeta"
+    },
+    {
+      "n": 5,
+      "pieza": "breve-2",
+      "gracia": 5,
+      "claridad": 7,
+      "remate": 5,
+      "prohibiciones": "respeta (al límite: la ironía cae sobre el claustro, no sobre la tecnología)"
+    }
+  ],
+  "cambio_manual": "Elegido a mano el guion 2 en lugar del 1 que propuso el juez de humor, y añadido el rótulo de la primera viñeta (09-11-2026, ADR 0036)."
+}

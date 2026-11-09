@@ -1,0 +1,48 @@
+{
+  "fecha": "2026-11-08",
+  "piezas": [
+    {
+      "id": "calendari-planificador-de-curso",
+      "seccion": "vibecoding",
+      "repositorio": "dia",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "New in the repository",
+      "titular": "A planner lets schools build the school-year calendar from the official Valencian Community one or from scratch",
+      "entradilla": "Calendari, created by José Luis Miralles Bono with the help of Claude, lets a school build its academic calendar in the browser, starting from the official Valencian one or from scratch.",
+      "cuerpo": [
+        "[Calendari — Planificador de curso](https://jlmirallesb.github.io/calendari-planificador/) is a web application created by José Luis Miralles Bono, who presents it as designed with the help of Claude. According to its entry in the repository, it is intended for the school and academic calendar of a music and dance conservatoire, and is classified as a creation tool for teacher training and for teaching organisation.",
+        "On opening it, the page offers four routes: start with the official calendar of the Valencian Community, which generates the school year with the public holidays and breaks according to the municipality and the type of course; create a blank calendar, defining the school year, holidays, terms and profiles; import one previously saved as a JSON file; or browse the published calendars, which can be subscribed to or copied into one's own editor. The entry adds that it manages teaching days, terms and assessment milestones.",
+        "For a leadership team or a department, its usefulness lies in starting from a calendar that is already built and adjusting it, rather than putting one together every September. According to the entry, the result can be exported to PDF and .ics, and can be subscribed to from a mobile phone's calendar, so that teachers see the changes in their own diary.",
+        "It is used in the browser, with no account or payment requested on the home screen, and the interface is in Spanish and Valencian, with a language selector and a dark mode. According to the entry, a school can have its own copy. The [source code is on GitHub](https://github.com/jlmirallesb/calendari-planificador) under an AGPL v3 licence, and the content under CC BY-SA 4.0.",
+        "The same author has already appeared in the Diario with [a calculator that splits the working week of peripatetic teachers](pieza:2026-11-07/itinerancias) across several schools of the Generalitat Valenciana."
+      ],
+      "recursos": [
+        {
+          "id": "calendari-planificador-de-curso",
+          "titulo": "Calendari — Planificador de curso",
+          "autoria": "José Luis Miralles Bono",
+          "url": "https://jlmirallesb.github.io/calendari-planificador/",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://jlmirallesb.github.io/calendari-planificador/",
+          "licencia": "AGPL v3",
+          "captura": "2026-11-08-calendari-planificador-de-curso.jpg",
+          "captura_alt": "Home screen of Calendari with four cards: official calendar of the Valencian Community, create a new calendar, import from a file and view published calendars.",
+          "texto": []
+        }
+      ],
+      "fuentes": [
+        {"titulo": "Calendari — Planificador de curso (in Spanish)", "url": "https://jlmirallesb.github.io/calendari-planificador/"},
+        {"titulo": "Source code on GitHub", "url": "https://github.com/jlmirallesb/calendari-planificador"}
+      ],
+      "comprobado": "Captura vista con Read: pantalla de inicio v0.9.1 con las cuatro opciones, selector ES/VA, modo oscuro y pie con licencias. Texto visible leído. WebFetch de la web solo devolvió el título (la app necesita JavaScript). Página de GitHub abierta: confirma castellano y valenciano, licencias AGPL v3 y CC BY-SA 4.0, perfiles, impresión preparada para guardar como PDF y feeds .ics por perfil; no menciona un botón de PDF, así que PDF/.ics/suscripción constan como dicho por la ficha. Itinerancias: mismo autor y clave pieza:2026-11-07/itinerancias en publicado.txt, comprobados."
+    }
+  ],
+  "descartado": [],
+  "repaso": [
+    "Titular: quitado «con los festivos… y lo exporta a PDF o al móvil»; la exportación no se ve en la captura y solo la afirma la ficha.",
+    "Cuerpo: quitada la frase sobre lo que «no se ha podido comprobar en la captura» (cómo trabaja el diario) y la salida a PDF/.ics queda como dicha por la ficha.",
+    "Quitada «La versión vista es la 0.9.1» (sin utilidad para el docente).",
+    "Enlaces: el nombre del recurso y el código fuente de GitHub, enlazados en su primera mención.",
+    "Comprobados sin cambios: autoría, licencia, ficha, captura y captura_alt, idiomas ES/VA, enlace a pieza:2026-11-07/itinerancias (mismo autor, clave en publicado.txt)."
+  ]
+}

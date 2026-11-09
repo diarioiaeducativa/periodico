@@ -1,0 +1,88 @@
+{
+  "fecha": "2026-11-08",
+  "elegida": {
+    "n": 2,
+    "pieza": "detector-ia-no-es-prueba",
+    "idea": "De nit a casa, Guix recorda que el que compta és el procés (esborranys, versions, dates) i Algorisme, servicial, presenta la seva novetat: ara també genera els esborranys, per demostrar que no ho ha escrit ell.",
+    "guion": {
+      "vinetas": [
+        {
+          "escenario": "casa_noche",
+          "tiza": {
+            "expresion": "pensativo",
+            "postura": "pensar",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "sorprendido",
+            "postura": "abajo",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "objeto": "papeles",
+          "bocadillos": [
+            {
+              "quien": "tiza",
+              "texto": "Un percentatge no prova res. Compta el procés: esborranys, versions, dates.",
+              "tipo": "habla"
+            }
+          ],
+          "cartela": "De nit, a casa, donant voltes als detectors d'IA."
+        },
+        {
+          "escenario": "casa_noche",
+          "tiza": {
+            "expresion": "neutral",
+            "postura": "abajo",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "contento",
+            "postura": "arriba",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "objeto": "papeles",
+          "bocadillos": [
+            {
+              "quien": "algoritmo",
+              "texto": "Novetat! Ara també genero els esborranys. Tres versions, amb ratllades.",
+              "tipo": "habla"
+            }
+          ]
+        },
+        {
+          "escenario": "casa_noche",
+          "tiza": {
+            "expresion": "harto",
+            "postura": "abajo",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "neutral",
+            "postura": "senalar",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "objeto": "papeles",
+          "bocadillos": [
+            {
+              "quien": "tiza",
+              "texto": "I això per a què?",
+              "tipo": "habla"
+            },
+            {
+              "quien": "algoritmo",
+              "texto": "Per demostrar que no ho he escrit jo.",
+              "tipo": "habla"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "traduccion": "automàtica amb IA"
+}

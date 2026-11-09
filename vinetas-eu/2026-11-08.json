@@ -1,0 +1,88 @@
+{
+  "fecha": "2026-11-08",
+  "elegida": {
+    "n": 2,
+    "pieza": "detector-ia-no-es-prueba",
+    "idea": "Gauez etxean, Klariok gogorarazten du prozesuak balio duela (zirriborroak, bertsioak, datak), eta Algoritmok, zerbitzari, bere berritasuna aurkezten du: orain zirriborroak ere sortzen ditu, berak idatzi ez duela frogatzeko.",
+    "guion": {
+      "vinetas": [
+        {
+          "escenario": "casa_noche",
+          "tiza": {
+            "expresion": "pensativo",
+            "postura": "pensar",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "sorprendido",
+            "postura": "abajo",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "objeto": "papeles",
+          "bocadillos": [
+            {
+              "quien": "tiza",
+              "texto": "Ehuneko batek ez du ezer frogatzen. Prozesuak balio du: zirriborroak, bertsioak, datak.",
+              "tipo": "habla"
+            }
+          ],
+          "cartela": "Gauez, etxean, AA detektagailuei buruz pentsatzen."
+        },
+        {
+          "escenario": "casa_noche",
+          "tiza": {
+            "expresion": "neutral",
+            "postura": "abajo",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "contento",
+            "postura": "arriba",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "objeto": "papeles",
+          "bocadillos": [
+            {
+              "quien": "algoritmo",
+              "texto": "Berritasuna! Orain zirriborroak ere sortzen ditut. Hiru bertsio, marratuta.",
+              "tipo": "habla"
+            }
+          ]
+        },
+        {
+          "escenario": "casa_noche",
+          "tiza": {
+            "expresion": "harto",
+            "postura": "abajo",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "neutral",
+            "postura": "senalar",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "objeto": "papeles",
+          "bocadillos": [
+            {
+              "quien": "tiza",
+              "texto": "Eta hori zertarako?",
+              "tipo": "habla"
+            },
+            {
+              "quien": "algoritmo",
+              "texto": "Nik idatzi ez dudala frogatzeko.",
+              "tipo": "habla"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "traduccion": "itzulpen automatikoa AArekin"
+}

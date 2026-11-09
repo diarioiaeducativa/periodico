@@ -1,0 +1,88 @@
+{
+  "fecha": "2026-11-08",
+  "elegida": {
+    "n": 2,
+    "pieza": "detector-ia-no-es-prueba",
+    "idea": "At home at night, Chalk recalls that what counts is the process (drafts, versions, dates), and Algorithm, ever helpful, presents its new feature: it now generates the drafts too, to prove it didn't write it.",
+    "guion": {
+      "vinetas": [
+        {
+          "escenario": "casa_noche",
+          "tiza": {
+            "expresion": "pensativo",
+            "postura": "pensar",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "sorprendido",
+            "postura": "abajo",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "objeto": "papeles",
+          "bocadillos": [
+            {
+              "quien": "tiza",
+              "texto": "A percentage proves nothing. The process is what counts: drafts, versions, dates.",
+              "tipo": "habla"
+            }
+          ],
+          "cartela": "At home at night, mulling over AI detectors."
+        },
+        {
+          "escenario": "casa_noche",
+          "tiza": {
+            "expresion": "neutral",
+            "postura": "abajo",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "contento",
+            "postura": "arriba",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "objeto": "papeles",
+          "bocadillos": [
+            {
+              "quien": "algoritmo",
+              "texto": "New feature! Now I generate the drafts too. Three versions, with crossings-out.",
+              "tipo": "habla"
+            }
+          ]
+        },
+        {
+          "escenario": "casa_noche",
+          "tiza": {
+            "expresion": "harto",
+            "postura": "abajo",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "neutral",
+            "postura": "senalar",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "objeto": "papeles",
+          "bocadillos": [
+            {
+              "quien": "tiza",
+              "texto": "And what's that for?",
+              "tipo": "habla"
+            },
+            {
+              "quien": "algoritmo",
+              "texto": "To prove I didn't write it.",
+              "tipo": "habla"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "traduccion": "automatic AI translation"
+}
