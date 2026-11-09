@@ -1158,6 +1158,18 @@ def reportaje_reciente(eds, fecha):
     return next((d["reportaje"] for d in reversed(eds) if desde <= d["fecha"] <= fecha and d.get("reportaje")), None)
 
 
+def descripcion_dia(dia, piezas):
+    """Lo que trae un número, para los buscadores y para la vista previa al compartirlo: los titulares
+    de sus piezas principales, con el reportaje delante si lo tiene. Hasta tres, enteros, sin pasar de
+    300 caracteres (ADR 0039)."""
+    elegidos = []
+    for x in (([dia["reportaje"]] if dia.get("reportaje") else []) + list(piezas))[:3]:
+        if elegidos and len(" · ".join(elegidos + [x["titular"]])) > 300:
+            break
+        elegidos.append(x["titular"])
+    return " · ".join(elegidos) or L["lema"]
+
+
 def pagina_portada(prof, ruta, eds, piezas, breves, fecha, cuenta, es_portada, nav=""):
     titulo = L["titulo"] if es_portada else f'{L["titulo"]}, {fecha_larga(publicacion(fecha))}'
     dia = next((x for x in eds if x["fecha"] == fecha), {})
@@ -1165,7 +1177,9 @@ def pagina_portada(prof, ruta, eds, piezas, breves, fecha, cuenta, es_portada, n
     # los demás días, después de la viñeta, que es del número de hoy (ADR 0004)
     rep = reportaje_reciente(eds, fecha) if es_portada else dia.get("reportaje")
     arriba = bool(rep) and rep["fecha"] == fecha
-    return cabeza(titulo, prof, L["lema"], ruta, portada=es_portada) + f"""<body class="pag-portada">
+    # La portada se describe con el lema del diario; la página de cada día, con lo que trae ese número
+    descripcion = L["lema"] if es_portada else descripcion_dia(dia, piezas)
+    return cabeza(titulo, prof, descripcion, ruta, portada=es_portada) + f"""<body class="pag-portada">
 {cabecera(prof, ruta, fecha, cuenta, es_portada, nav, h1=True if es_portada else "dia", activa="portada" if es_portada else None)}
 <main class="portada">
 {franja_reserva(dia)}

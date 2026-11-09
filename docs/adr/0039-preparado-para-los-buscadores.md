@@ -25,6 +25,10 @@ otras webs, lo primero era lo que más pesaba. Juanjo aprobó hacer las tres.
   redacción, como organización, con la dirección de «La redacción», donde se cuenta cómo se hace el
   diario y quién lo dirige. No se pone fecha de modificación, porque no se lleva. La portada de la raíz
   lleva además un `WebSite` con el nombre del diario.
+- **La página de cada día se describe con lo que trae** (`descripcion_dia()`): los titulares de sus
+  piezas principales, con el reportaje delante si lo tiene; hasta tres, enteros y sin pasar de 300
+  caracteres. Antes las 60 repetían el lema de la portada, y en un buscador no se distinguía un número
+  de otro. Es también el texto de la vista previa al compartir el número. La portada sigue con el lema.
 - **Google Search Console**: el diario está dado de alta como propiedad de prefijo de URL, verificada
   con el archivo `estaticos/google0f64171555c8a8ac.html`, que tiene que seguir publicado (si se borra,
   se pierde la verificación), y con `sitemap.xml` enviado. La cuenta es la de Juanjo. Search Console no
@@ -73,6 +77,8 @@ otras webs, lo primero era lo que más pesaba. Juanjo aprobó hacer las tres.
 - Web generada en local (09-11-2026): 508 páginas con una sola canónica, igual a su dirección; sin
   canónica, solo la 404 y `insertar.html` (que lleva `noindex`); 345 `NewsArticle` con JSON válido,
   fecha en UTC y la misma dirección que su canónica (260 con dibujo); un `WebSite` en la portada.
+- Descripción de cada día: 12 días por idioma, las 12 distintas en los cinco idiomas, de 79 a 299
+  caracteres, y ninguna con el lema.
 - En la web publicada, una pieza y la portada en Chromium, Firefox y WebKit, en escritorio y en móvil:
   sin errores propios ni desbordamiento. En Chromium, la pieza anota un 404 de giscus, que es lo que
   responde su servicio cuando la pieza aún no tiene hilo de comentarios (ADR 0030).
