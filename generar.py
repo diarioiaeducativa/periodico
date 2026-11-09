@@ -22,8 +22,8 @@ import vineta
 RAIZ = pathlib.Path(__file__).resolve().parent
 SITIO = RAIZ / "sitio"
 NOMBRE = "Diario de IA Educativa"     # en castellano; cada idioma lleva el suyo en IDIOMAS
-DIAS_PORTADA = 7        # la portada reúne lo de esta última semana…
-MAX_PIEZAS = 10         # …hasta este número de piezas
+DIAS_PORTADA = 7        # los breves y el reportaje de la portada, de esta última semana
+POR_SECCION = 3         # piezas de días anteriores en el bloque de cada sección de la portada: una fila entera
 MAX_BREVES = 3
 MAQUETA = "diario"
 # Dirección pública del sitio, para los enlaces absolutos del RSS y de la vista previa al compartir
@@ -31,7 +31,6 @@ BASE = os.environ.get("PERIODICO_BASE", "https://diarioiaeducativa.github.io/")
 ORDEN_SECCIONES = ["herramientas", "vibecoding", "multimedia", "debates", "novedades", "biblioteca"]
 SECCIONES_FUERA = ["hace-un-ano"]   # con su página, pero sin entrada en el menú: se llega desde el número y el pie (ADR 0040)
 TODAS_SECCIONES = ORDEN_SECCIONES + SECCIONES_FUERA
-BIBLIOTECA_PORTADA = 3   # artículos de la Biblioteca en la portada, aparte de MAX_PIEZAS (ADR 0006)
 TEMA_BIBLIOTECA = "https://t.me/ChatGPTedu/21753"
 REPOSITORIO = "https://vibe-coding-educativo.github.io/app_edu/"   # el Repositorio de recursos de VCE (ADR 0008)
 CODIGO = "https://github.com/diarioiaeducativa/periodico"   # el código de la redacción, público (ADR 0019)
@@ -541,14 +540,21 @@ def cargar():
 
 
 def seleccion_portada(eds):
-    """Lo de los últimos días: lo más reciente delante y, dentro de cada día, por importancia.
-    Abre la pieza principal del último día."""
+    """Todo lo del último número, que abre la portada, y, para el bloque de cada sección, sus tres piezas más
+    recientes de días anteriores, retrocediendo lo que haga falta: así ningún bloque queda con huecos salvo que
+    la sección no tenga más piezas. Antes había un tope de 10 para toda la portada, y con lo de hoy y ayer
+    los bloques de las demás secciones se quedaban con una pieza y dos huecos (09-11-2026)."""
     ultima = datetime.date.fromisoformat(eds[-1]["fecha"])
     desde = (ultima - datetime.timedelta(days=DIAS_PORTADA - 1)).isoformat()
     recientes = [d for d in reversed(eds) if d["fecha"] >= desde]
-    todas = [p for d in recientes for p in d["piezas"]]
-    piezas = [p for p in todas if p.get("seccion") != "biblioteca"][:MAX_PIEZAS]
-    piezas += [p for p in todas if p.get("seccion") == "biblioteca"][:BIBLIOTECA_PORTADA]
+    hoy = eds[-1]["piezas"]
+    piezas = [p for p in hoy if p.get("seccion") != "biblioteca"] + [p for p in hoy if p.get("seccion") == "biblioteca"]
+    por_seccion = {}
+    for d in reversed(eds[:-1]):   # del día más reciente al más antiguo; dentro de cada día, por importancia
+        for p in d["piezas"]:
+            if p.get("seccion") in ORDEN_SECCIONES and len(por_seccion.setdefault(p["seccion"], [])) < POR_SECCION:
+                por_seccion[p["seccion"]].append(p)
+    piezas += [p for c in ORDEN_SECCIONES for p in por_seccion.get(c, [])]
     # Los del último número, todos (van arriba); de los días anteriores, como mucho MAX_BREVES
     breves = recientes[0].get("breves", []) + [b for d in recientes[1:] for b in d.get("breves", [])][:MAX_BREVES]
     return piezas, breves

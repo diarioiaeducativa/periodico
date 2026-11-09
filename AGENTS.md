@@ -41,6 +41,8 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
   (ADR 0028).
 - **La rama `instagram` del sitio se rehace cada día con push forzado**:
   GitHub ofrece «Compare & pull request»; no se fusiona nunca.
+- **Sin huecos** (ADR 0041): ninguna composición puede dejar espacios vacíos con ninguna cantidad de
+  piezas; se comprueba con pocas y con muchas. En la portada, cada sección enseña sus tres más recientes.
 - **Lectura automática bloqueada a propósito** (UNESCO en la Biblioteca): no
   se salta.
 

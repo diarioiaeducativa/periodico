@@ -48,8 +48,9 @@ diario que dedique un artículo a cada documento nuevo.
   documento llevan a ella. Un número con solo documentos ya contados no anuncia nada de la
   Biblioteca. Recomendado y aceptado por Juanjo, que aceptó también dejar publicado el artículo del
   número 3, más completo que la noticia, en lugar de retirarlo.
-- **En la portada, aparte**: hasta 3 artículos de la Biblioteca de los últimos siete días, en su
-  bloque, sin restar sitio a las piezas del día (`BIBLIOTECA_PORTADA`). La página de la sección
+- **En la portada, aparte**: los 3 artículos más recientes de la Biblioteca, en su bloque, sin restar
+  sitio a las piezas del día, como cada sección desde el ADR 0041 (antes, de los últimos siete días con su
+  propio tope, `BIBLIOTECA_PORTADA`). La página de la sección
   presenta la biblioteca y enlaza al tema del grupo.
 - **Lo anterior**: no se recuperan las 177 entradas. Se intentaron las 6 de octubre de 2026
   (se le propusieron «unas 5, de septiembre y octubre»; contadas bien, eran 12 en dos meses, y
