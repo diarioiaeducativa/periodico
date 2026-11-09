@@ -40,5 +40,6 @@
 | [0036](0036-rotulo-que-situa-la-vineta.md) | Un rótulo en la primera viñeta que sitúa la escena |
 | [0037](0037-videos-en-internet-archive.md) | Los vídeos, en Internet Archive |
 | [0038](0038-comentario-de-la-semana.md) | El comentario de la semana, uno general y uno de cada grupo |
+| [0039](0039-preparado-para-los-buscadores.md) | Preparado para los buscadores |
 
 Plantilla: [0000-plantilla.md](0000-plantilla.md). Para crear uno: `nuevo-adr "Título"`.

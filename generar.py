@@ -344,6 +344,12 @@ def publicacion(iso):
     return (datetime.date.fromisoformat(iso) + datetime.timedelta(days=1)).isoformat()
 
 
+def hora_de_salida(sale):
+    """Las 7:00 de Madrid del día de publicación, pasadas a UTC (el cambio de hora no la mueve)."""
+    return datetime.datetime.combine(datetime.date.fromisoformat(sale), datetime.time(7),
+                                     ZoneInfo("Europe/Madrid")).astimezone(datetime.timezone.utc)
+
+
 def romano(n):
     r, resto = "", n
     for v, s in [(1000, "M"), (900, "CM"), (500, "D"), (400, "CD"), (100, "C"), (90, "XC"), (50, "L"), (40, "XL"),
@@ -585,7 +591,20 @@ if(c&&ahora-c>%d){var v=JSON.parse(s.getItem('diario.visita')||'null');s.removeI
 if(v&&ahora-v.t<18e5)s.setItem('diario.visita',JSON.stringify(v));}
 if(!c&&s.getItem('diario.visita')!==null)s.setItem('diario.desde',ahora);
 var t=s.getItem('sala.tema');if(t)document.documentElement.dataset.theme=t;})();}catch(_){}</script>""" % (395 * 86400000)
-def cabeza(titulo, prof, descripcion, ruta, portada=False):
+def datos_noticia(titular, ruta, fecha, imagen=None):
+    """Los datos estructurados de una pieza, para los buscadores (schema.org, ADR 0039): qué es, cuándo
+    salió y quién la firma. La firma es la redacción, con su página, donde se cuenta cómo se hace; sin
+    fecha de modificación, que no se lleva."""
+    redaccion = {"@type": "Organization", "name": L["titulo"], "url": BASE + L["carpeta"] + "redaccion.html"}
+    d = {"@context": "https://schema.org", "@type": "NewsArticle", "headline": titular,
+         "datePublished": hora_de_salida(publicacion(fecha)).isoformat(), "inLanguage": L["codigo"],
+         "mainEntityOfPage": BASE + L["carpeta"] + ruta, "author": redaccion, "publisher": redaccion}
+    if imagen:
+        d["image"] = [imagen]
+    return d
+
+
+def cabeza(titulo, prof, descripcion, ruta, portada=False, datos=None):
     codigo = L["codigo"]
     r = recursos(prof)
     # En la portada, quien llega sin haber elegido idioma va al de su navegador; lo elegido se recuerda.
@@ -604,6 +623,13 @@ def cabeza(titulo, prof, descripcion, ruta, portada=False):
                        for c, d in IDIOMAS.items() if ruta != "404.html")
     if ruta != "404.html":
         alternas += f'<link rel="alternate" hreflang="x-default" href="{e(BASE + ruta)}">\n'
+    # Cada página dice cuál es su dirección, para que las que llegan con parámetros (?grupo=, ?nocontar=)
+    # no cuenten como páginas distintas; cada idioma, la suya (ADR 0039)
+    canonica = f'<link rel="canonical" href="{e(BASE + L["carpeta"] + ruta)}">\n' if ruta != "404.html" else ""
+    if portada and codigo == "es" and ruta == "":   # el nombre del sitio, que Google toma de la portada de la raíz
+        datos = {"@context": "https://schema.org", "@type": "WebSite", "name": L["titulo"], "url": BASE}
+    ld = ('<script type="application/ld+json">' + json.dumps(datos, ensure_ascii=False).replace("</", "<\\/")
+          + "</script>\n") if datos else ""
     return f"""<!doctype html>
 <html lang="{codigo}">
 <head>
@@ -611,7 +637,7 @@ def cabeza(titulo, prof, descripcion, ruta, portada=False):
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{e(titulo)}</title>
 <meta name="description" content="{e(descripcion)}">
-{alternas}<link rel="alternate" type="application/rss+xml" title="{e(L["titulo"])}" href="{prof}feed.xml">
+{canonica}{alternas}{ld}<link rel="alternate" type="application/rss+xml" title="{e(L["titulo"])}" href="{prof}feed.xml">
 <meta property="og:type" content="{"website" if portada else "article"}">
 <meta property="og:site_name" content="{e(L["titulo"])}">
 <meta property="og:title" content="{e(titulo)}">
@@ -1218,7 +1244,8 @@ def articulo(prof, ruta, d, p, eds):
     elif recs:           # la semana del repositorio: un apartado por recurso, con su captura
         bloques = "".join(bloque_recurso(prof, p["id"], r) for r in recs)
     serie, ya_contados, otras = semana_repositorio(prof, p, eds)
-    return cabeza(f'{p["titular"]} | {L["titulo"]}', prof, p.get("entradilla", ""), ruta) + f"""<body class="pag-articulo">
+    return cabeza(f'{p["titular"]} | {L["titulo"]}', prof, p.get("entradilla", ""), ruta,
+                  datos=datos_noticia(p["titular"], ruta, d["fecha"], imagen_pieza(d["fecha"], p)[0])) + f"""<body class="pag-articulo">
 {cabecera(prof, ruta, d["fecha"], d["numero"], False, h1=False)}
 <main class="articulo">
   <article{f' class="sec-{e(p["seccion"])}"' if p.get("seccion") else ""}{indexado(p.get("seccion") or "editorial", L["secciones"].get(p.get("seccion"), L["quees"]), d["fecha"])}>
@@ -1325,7 +1352,8 @@ def articulo_reportaje(prof, ruta, d, r, eds):
                         f'<a href="{href(prof, x)}">{e(x["titular"])}</a></li>' for x in rel)
         relacionadas = f'<aside class="mas sec-reportaje" aria-labelledby="t-rel"><h2 id="t-rel">{L["en_el_diario"]}</h2><ul>{items}</ul></aside>'
     compartir, plantilla = acciones(d["fecha"], r, ruta, d, eds, reportaje=True)
-    return cabeza(f'{r["titular"]} | {L["titulo"]}', prof, r.get("entradilla", ""), ruta) + f"""<body class="pag-articulo">
+    return cabeza(f'{r["titular"]} | {L["titulo"]}', prof, r.get("entradilla", ""), ruta,
+                  datos=datos_noticia(r["titular"], ruta, d["fecha"], imagen_pieza(d["fecha"], r)[0])) + f"""<body class="pag-articulo">
 {cabecera(prof, ruta, d["fecha"], d["numero"], False, h1=False)}
 <main class="articulo reportaje">
   <article class="sec-reportaje"{indexado("reportaje", L["reportajes"], d["fecha"])}>
@@ -1397,7 +1425,8 @@ def pagina_breve(prof, d, b, eds):
     compartir = (f'<p class="acciones" data-pagefind-ignore><button type="button" class="compartir" data-copiado="{e(L["copiado"])}">'
                  f'{COMPARTIR}<span>{L["compartir"]}</span></button></p>')
     titulo = titulo_breve(b)
-    return cabeza(f'{titulo} | {L["titulo"]}', prof, texto_plano(b["texto"]), ruta_breve(b)) + f"""<body class="pag-articulo">
+    return cabeza(f'{titulo} | {L["titulo"]}', prof, texto_plano(b["texto"]), ruta_breve(b),
+                  datos=datos_noticia(titulo, ruta_breve(b), d["fecha"])) + f"""<body class="pag-articulo">
 {cabecera(prof, ruta_breve(b), d["fecha"], d["numero"], False, h1=False)}
 <main class="articulo breve-pagina">
   <article{indexado("breves", L["breves"], d["fecha"])}>
@@ -2417,9 +2446,7 @@ def rss(fichas, clave=None):
     base = BASE + L["carpeta"]
     items = []
     for f in fichas:
-        # Las 7:00 de Madrid del día de publicación, pasadas a UTC (el cambio de hora no la mueve)
-        cuando = datetime.datetime.combine(datetime.date.fromisoformat(f["sale"]), datetime.time(7),
-                                           ZoneInfo("Europe/Madrid")).astimezone(datetime.timezone.utc)
+        cuando = hora_de_salida(f["sale"])
         media = ""
         if f["imagen"]:
             tipo = "image/svg+xml" if f["imagen"].endswith(".svg") else "image/png"
@@ -2893,6 +2920,8 @@ def generar_idioma(codigo):
         escribir(RAIZ / "indice" / "diario.json", indice_bot(eds))   # para el bot, no se publica (ADR 0017)
         escribir(SITIO / "404.html", pagina_404(eds))
         escribir(SITIO / "sitemap.xml", sitemap(eds))
+        # Sin vetos: solo dice a los buscadores dónde está el mapa del sitio (ADR 0039)
+        escribir(SITIO / "robots.txt", f"User-agent: *\nAllow: /\n\nSitemap: {BASE}sitemap.xml\n")
     for i, d in enumerate(eds):
         dia = base / d["fecha"]
         escribir(dia / "index.html",
