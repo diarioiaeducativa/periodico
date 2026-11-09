@@ -62,16 +62,35 @@ veinticinco meses» (garantía 3, p. 4).
   (`data/AAAA-MM-DD.json`) con las sumas por hora: visitas y aperturas de cada página. Por hora y en
   UTC para que el panel reparta los días en hora de España sin que el cambio de hora los descuadre. El
   archivo se lee y se escribe dentro de un mismo bloqueo, para que dos visitas a la vez no se pisen.
-  Al empezar cada día se borran los archivos de más de 25 meses. `data/` no se puede leer desde la web.
+  `data/` no se puede leer desde la web.
+- **Pasados 25 meses queda solo el total de cada año** (09-11-2026; Juanjo pidió guardar «las visitas
+  totales anuales, no el detalle»). Con la primera visita de cada día (UTC), `mantenimiento()` suma a
+  `data/totales.json` los días ya cerrados, por día y por año de España, y borra los archivos de más
+  de 25 meses: de lo borrado queda el total de visitas y de páginas abiertas de su año, que no caduca.
+  La garantía 3 de la guía limita a 25 meses «la información recopilada»; el total de un año es la
+  estadística agregada que la medición produce, sin páginas ni horas. La guía no habla expresamente
+  de los totales que se derivan de lo recogido: es la lectura que se hace aquí. Cada día se suma una
+  sola vez: hasta qué día se ha sumado se guarda en el mismo archivo que las sumas, que se sustituye
+  de golpe. Se suma hasta anteayer, por si una petición rezagada aún escribe en el de ayer; ayer y
+  hoy se leen del detalle. Si `totales.json` no se entiende, no se suma ni se borra nada, para no
+  perder los años: hay que repararlo a mano. Los totales por día sirven además para que el panel no
+  tenga que leer cientos de archivos.
 - **El panel** (`index.php`) pide usuario y contraseña, uno para cada autor (`config.php`, solo en el
   hosting, con `password_hash`), para poder quitar el acceso a uno sin cambiar el del otro. La sesión
   es una cookie firmada de 90 días, solo para ellos. Cada uno cambia su contraseña desde el panel
   («Cambiar contraseña», a petición de Juanjo el 08-11-2026), que reescribe `config.php`; la firma
   de la sesión incluye la contraseña, así que al cambiarla se cierran las sesiones de los demás
   navegadores. Muestra las visitas de hoy, de 7 y de 30 días; la
-  gráfica de visitas por día de los últimos 30 (desde el primer día con datos); y las páginas más
-  abiertas y el reparto por idioma en el periodo elegido. Se pone al día cada minuto mientras está a
-  la vista.
+  gráfica de visitas; y las páginas más abiertas y el reparto por idioma en el periodo elegido. Se
+  pone al día cada minuto mientras está a la vista.
+- **La gráfica se elige por horas, días, semanas, meses o años** (09-11-2026, a petición de Juanjo):
+  las últimas 24 horas, los últimos 30 días, las últimas 12 semanas (de lunes a domingo, con el
+  número de semana que usa el diario), los últimos 24 meses (los que están enteros dentro de los 25
+  que se guardan) y todos los años; siempre desde el primer periodo con datos. Encima, el total de
+  visitas y de páginas abiertas de lo que se ve; debajo, el detalle de la barra que se señala con el
+  ratón o con el dedo y, si no se señala ninguna, el de la más reciente. Las fechas se pintan en hora
+  de España esté donde esté quien mira. Las cifras van sobre todas las barras si caben; si no, solo
+  sobre la más alta y la última.
 - **Se dice en «La redacción»**, en los cinco idiomas: qué se cuenta, que no hay cookies ni datos de
   quien lee, cuánto se guarda (la cuenta de la visita en el navegador, 13 meses; las cifras, 25 meses, con la guía de la AEPD
   enlazada, solo en castellano) y quién lo ve.
@@ -99,3 +118,11 @@ veinticinco meses» (garantía 3, p. 4).
   Sin el origen del diario no se guarda nada; `config.php` sale vacío y `data/` da 403.
 - Panel comprobado con contraseña y sin ella (401), en escritorio y en móvil, con tema claro y oscuro.
   Los datos de prueba se borraron.
+- Totales y gráfica (09-11-2026), en una copia local con dos años y medio de datos simulados (892
+  días, 63.337 visitas): tras el mantenimiento quedan los 762 días de los últimos 25 meses, los
+  totales de cada año son los mismos que antes de borrar, también el de 2024, cuyo detalle se borra en
+  parte; una segunda pasada no cambia nada; una visita nueva sube el año en uno; con `totales.json`
+  estropeado no se toca nada. Las cinco vistas, en Chromium, Firefox y WebKit, en escritorio, móvil y
+  tableta, con tema claro y oscuro: sin errores, sin desbordamiento y sin rótulos que se pisen o se
+  salgan. En el hosting (PHP 8.4), el mantenimiento escribe `totales.json`, que da 403 desde la web,
+  y las cinco series devuelven las mismas sumas que el detalle de los dos días que hay.
