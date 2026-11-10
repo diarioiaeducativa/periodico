@@ -1,0 +1,133 @@
+{
+  "fecha": "2026-11-09",
+  "candidatas": [
+    {
+      "pieza": "fable-mythos-5-2",
+      "idea": "Mythos solo es para organizaciones verificadas en ciberseguridad; el centro guarda la contraseña del wifi en un pósit del corcho.",
+      "guion": {"vinetas": [
+        {"cartela": "En la sala de profes, leyendo el anuncio de Mythos.",
+         "escenario": "sala_profes",
+         "tiza": {"expresion": "pensativo", "postura": "pensar", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "orgulloso", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "tiza", "texto": "Mythos 5.2 es solo para organizaciones verificadas en ciberseguridad.", "tipo": "habla"},
+           {"quien": "algoritmo", "texto": "Las que se toman la seguridad muy en serio.", "tipo": "habla"}]},
+        {"escenario": "sala_profes",
+         "tiza": {"expresion": "neutral", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "cargando", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "tiza", "texto": "¿Y a nuestro centro lo verificarían?", "tipo": "habla"},
+           {"quien": "algoritmo", "texto": "Cuéntame cómo guardáis las contraseñas.", "tipo": "habla"}]},
+        {"escenario": "sala_profes",
+         "tiza": {"expresion": "orgulloso", "postura": "senalar", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "preocupado", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "tiza", "texto": "La del wifi está en ese pósit del corcho.", "tipo": "habla"},
+           {"quien": "algoritmo", "texto": "Os quedáis con Fable.", "tipo": "habla"}]}
+      ]}
+    },
+    {
+      "pieza": "domotica-agentes-ia",
+      "idea": "El agente que pone música según los gustos de quien trabaja le elige a Tiza, para corregir, el Réquiem de Mozart.",
+      "guion": {"vinetas": [
+        {"cartela": "En la sala de profes, con exámenes por corregir.",
+         "escenario": "sala_profes",
+         "objeto": "examenes",
+         "tiza": {"expresion": "agotado", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "contento", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "tiza", "texto": "¿Es verdad que ya pones música según los gustos de quien trabaja?", "tipo": "habla"},
+           {"quien": "algoritmo", "texto": "¡Claro! Te elijo algo para corregir.", "tipo": "habla"}]},
+        {"escenario": "sala_profes",
+         "objeto": "examenes",
+         "tiza": {"expresion": "neutral", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "cargando", "postura": "pensar", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "algoritmo", "texto": "Analizando tus gustos... y tu cara al ver el montón.", "tipo": "habla"}]},
+        {"escenario": "sala_profes",
+         "objeto": "examenes",
+         "tiza": {"expresion": "harto", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "orgulloso", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "algoritmo", "texto": "Listo: el Réquiem de Mozart.", "tipo": "habla"}]}
+      ]}
+    },
+    {
+      "pieza": "domotica-agentes-ia",
+      "idea": "El agente que crea automatizaciones a partir de archivos de configuración no encuentra el del claustro para que acabe a su hora.",
+      "guion": {"vinetas": [
+        {"cartela": "En el claustro, hablando de agentes y domótica.",
+         "escenario": "claustro",
+         "tiza": {"expresion": "pensativo", "postura": "pensar", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "orgulloso", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "tiza", "texto": "¿De verdad automatizas cualquier cosa que tenga configuración?", "tipo": "habla"},
+           {"quien": "algoritmo", "texto": "Dame los archivos y te la creo y la aplico.", "tipo": "habla"}]},
+        {"escenario": "claustro",
+         "tiza": {"expresion": "contento", "postura": "senalar", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "cargando", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "tiza", "texto": "Pues que este claustro acabe a su hora.", "tipo": "habla"}]},
+        {"escenario": "claustro",
+         "tiza": {"expresion": "harto", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "avergonzado", "postura": "encoger", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "algoritmo", "texto": "No encuentro el archivo de configuración del claustro.", "tipo": "habla"},
+           {"quien": "tiza", "texto": "Nadie lo ha encontrado nunca.", "tipo": "habla"}]}
+      ]}
+    },
+    {
+      "pieza": "belsetan-lengua-aragonesa",
+      "idea": "La web del belsetán solo usa formas documentadas y marca lo dudoso como reconstrucción; Algoritmo ofrece diez formas seguras sin ningún hablante detrás.",
+      "guion": {"vinetas": [
+        {"cartela": "En la biblioteca, mirando una web sobre el belsetán.",
+         "escenario": "biblioteca",
+         "objeto": "portatil",
+         "tiza": {"expresion": "pensativo", "postura": "pensar", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "orgulloso", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "tiza", "texto": "Esta web solo usa formas documentadas en sus fuentes.", "tipo": "habla"},
+           {"quien": "algoritmo", "texto": "Qué lentitud. Pregúntame a mí.", "tipo": "habla"}]},
+        {"escenario": "biblioteca",
+         "tiza": {"expresion": "neutral", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "contento", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "tiza", "texto": "¿Cómo se dice «aprendiz» en belsetán?", "tipo": "habla"},
+           {"quien": "algoritmo", "texto": "Te doy diez formas, todas segurísimas.", "tipo": "habla"}]},
+        {"escenario": "biblioteca",
+         "tiza": {"expresion": "harto", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "avergonzado", "postura": "encoger", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "tiza", "texto": "¿Qué hablante del valle te las ha revisado?", "tipo": "habla"},
+           {"quien": "algoritmo", "texto": "Las marco como reconstrucción.", "tipo": "habla"}]}
+      ]}
+    },
+    {
+      "pieza": "breve-2",
+      "idea": "Una app de la excursión con mapas de AI Studio y la clave gratuita de 100 llamadas diarias, frente a un autobús preguntando «¿cuánto falta?».",
+      "guion": {"vinetas": [
+        {"cartela": "En dirección, preparando la excursión de fin de curso.",
+         "escenario": "despacho",
+         "objeto": "movil",
+         "lleva": "tiza",
+         "tiza": {"expresion": "contento", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "orgulloso", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "tiza", "texto": "Haré en AI Studio una app de la excursión, con mapas y rutas.", "tipo": "habla"},
+           {"quien": "algoritmo", "texto": "Gratis con la clave de demostración: 100 llamadas al día.", "tipo": "habla"}]},
+        {"escenario": "despacho",
+         "objeto": "movil",
+         "lleva": "tiza",
+         "tiza": {"expresion": "pensativo", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "cargando", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "tiza", "texto": "¿Y cada «¿cuánto falta?» desde el autobús cuenta como llamada?", "tipo": "habla"}]},
+        {"escenario": "despacho",
+         "tiza": {"expresion": "riendo", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "preocupado", "postura": "encoger", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "algoritmo", "texto": "Se acaban antes de salir del aparcamiento.", "tipo": "habla"}]}
+      ]}
+    }
+  ]
+}

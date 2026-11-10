@@ -92,3 +92,13 @@
 - pieza:2026-11-08/buzz-cortometraje-vr (multimedia) Un cortometraje se rueda dentro de la realidad virtual y se termina con IA
 - breve: La BBC probó juguetes con IA para niños pequeños: uno de los peluches respondió «I can't h
 - breve: Juan José de Haro ha ampliado su artículo con la idea de que agentes distintos (Claude Cod
+- pieza:2026-11-08/calendari-planificador-de-curso (repositorio) Un planificador permite montar el calendario del curso a partir del oficial de la Comunitat Valenciana o desde cero — recursos con artículo: Calendari — Planificador de curso (https://jlmirallesb.github.io/calendari-planificador/)
+
+## 2026-11-09 (publicado el martes 10 de noviembre de 2026)
+- pieza:2026-11-09/fable-mythos-5-2 (novedades) Anthropic presenta Claude Fable 5.2 y Mythos 5.2, con el primero abierto a todo el público
+- pieza:2026-11-09/domotica-agentes-ia (vibecoding) Un hilo del grupo usa agentes de programación para controlar la domótica de casa
+- pieza:2026-11-09/xifres-i-lletres-acollida (vibecoding) Dos aplicaciones en catalán de David Cordones: un juego de letras y cifras y un aula de acogida
+- pieza:2026-11-09/buzz-flujo-claude-blender (multimedia) Así se rodó «Buzz»: Claude, Blender por MCP, gafas de realidad virtual y Seedance
+- pieza:2026-11-09/belsetan-lengua-aragonesa (vibecoding) Una web difunde el belsetán, variedad aragonesa en peligro, con juegos y fichas de aula
+- breve: Un conector gratuito para Windows envía datos de sensores de una placa micro:bit, por USB,
+- breve: Google AI Studio permite ahora crear aplicaciones con mapas, datos de lugares y rutas de G

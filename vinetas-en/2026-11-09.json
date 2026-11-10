@@ -1,0 +1,30 @@
+{
+  "fecha": "2026-11-09",
+  "elegida": {
+    "n": 1,
+    "pieza": "fable-mythos-5-2",
+    "idea": "Mythos is only for organisations verified in cybersecurity; the school keeps the wifi password on a sticky note on the corkboard.",
+    "guion": {"vinetas": [
+      {"cartela": "In the staff room, reading the Mythos announcement.",
+       "escenario": "sala_profes",
+       "tiza": {"expresion": "sorprendido", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "orgulloso", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+       "bocadillos": [
+         {"quien": "tiza", "texto": "Mythos 5.2 is only for organisations verified in cybersecurity.", "tipo": "habla"},
+         {"quien": "algoritmo", "texto": "The ones that take security seriously.", "tipo": "habla"}]},
+      {"escenario": "sala_profes",
+       "tiza": {"expresion": "contento", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "cargando", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+       "bocadillos": [
+         {"quien": "tiza", "texto": "Would they verify our school?", "tipo": "habla"},
+         {"quien": "algoritmo", "texto": "Tell me how you store your passwords.", "tipo": "habla"}]},
+      {"escenario": "sala_profes",
+       "tiza": {"expresion": "orgulloso", "postura": "senalar", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "preocupado", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+       "bocadillos": [
+         {"quien": "tiza", "texto": "The wifi one's on that sticky note on the corkboard.", "tipo": "habla"},
+         {"quien": "algoritmo", "texto": "You're sticking with Fable.", "tipo": "habla"}]}
+    ]}
+  },
+  "traduccion": "automatic AI translation"
+}

@@ -1,0 +1,144 @@
+{
+  "fecha": "2026-11-09",
+  "hay_edicion": true,
+  "motivo": "Día normal: un anuncio de modelos comentado en los grupos, aplicaciones de la comunidad y un hilo sobre agentes y domótica. Detectores, juguetes de la BBC y memoria compartida de agentes ya estaban publicados.",
+  "piezas": [
+    {
+      "id": "fable-mythos-5-2",
+      "seccion": "novedades",
+      "importancia": 1,
+      "grupo": "vce",
+      "antetitulo": "Anthropic, modelos",
+      "titular": "Anthropic presenta Claude Fable 5.2 e Mythos 5.2, co primeiro aberto a todo o público",
+      "entradilla": "A empresa anuncia dúas versións dun mesmo modelo: Fable 5.2, con salvagardas e dispoñible para todos, e Mythos 5.2, só para organizacións verificadas.",
+      "cuerpo": [
+        "Anthropic anunciou o 9 de novembro [Claude Fable 5.2 e Claude Mythos 5.2](https://www.anthropic.com/claude-fable-and-mythos-5-2), que describe como os seus modelos máis capaces para traballo técnico ambicioso e aberto. Varios membros dos grupos compartiron o anuncio e un deles comentou que xa o tiña dispoñible na aplicación de Claude.",
+        "Segundo a empresa, son dúas versións dun mesmo modelo. Fable 5.2 inclúe salvagardas contra usos indebidos en ciberseguridade e bioloxía e está dispoñible para todos os usuarios, tamén nos servizos na nube de Amazon, Google e Microsoft; na API chámase `claude-fable-5-2`. Mythos 5.2 ten menos salvagardas e resérvase a organizacións que superen os seus programas de verificación en ciberseguridade ou ciencias da vida.",
+        "Anthropic afirma que xeran resultados ata un 30 % máis rápido que as versións 5.1, que superan a Opus 5.5 en case todas as capacidades que avaliou e que, en probas iniciais, os clasificadores de seguridade bloquean un 55 % menos que con Fable 5.1. Son cifras da propia empresa, sen contraste independente. O prezo estándar indicado é de 8 dólares por millón de tokens de entrada e 40 por millón de saída.",
+        "Para o profesorado que programa con axentes, a novidade práctica é que o modelo máis potente da compañía queda ao seu alcance. Na conversa mencionouse unha proba aberta ata o día 16; o anuncio non dá esa data, só fala dunha promoción de lanzamento «esta semana» con uso adicional de Fable para subscritores de pago elixibles, así que o prazo non se puido confirmar."
+      ],
+      "fuentes": [
+        {"titulo": "Anthropic: Introducing Claude Fable 5.2 and Claude Mythos 5.2 (en inglés)", "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2"}
+      ],
+      "mensaje": {"grupo": "vce", "id": 14814},
+      "comprobado": "Revisor: abierta la página oficial de Anthropic. Confirmados fecha (9 de noviembre de 2026), Fable abierto a todos y también en AWS, Google Cloud y Azure, Mythos para organizaciones verificadas, identificador claude-fable-5-2, precios 8/40 dólares, hasta un 30 % más rápido y superior a Opus 5.5 en casi todo lo evaluado. Corregido: la cifra del 55 % es de bloqueos de clasificadores de seguridad en pruebas iniciales, no de «consultas legítimas»; Mythos tiene «menos» salvaguardas, no ninguna. Quitado «con un coste superior» (no consta). El día 16 no aparece: solo una promoción «esta semana». Mensaje 14814 abierto en Telegram: comparte el anuncio.",
+      "ilustracion": "Esquema de un tronco común que se bifurca en dos ramas: una con una compuerta de seguridad abierta a una multitud (Fable 5.2) y otra con una puerta con credencial para unas pocas organizaciones (Mythos 5.2).",
+      "ilustracion_alt": "Esquema dun tronco, «Claude 5.2», que se bifurca en dúas ramas: «Fable 5.2», que leva a un grupo de persoas co rótulo «Todo o público», e «Mythos 5.2», que leva a unha porta pechada con cadeado co rótulo «Verificadas»."
+    },
+    {
+      "id": "domotica-agentes-ia",
+      "seccion": "vibecoding",
+      "importancia": 2,
+      "grupo": "chatgpt",
+      "antetitulo": "Axentes na casa",
+      "titular": "Un fío do grupo usa axentes de programación para controlar a domótica da casa",
+      "entradilla": "Un fío do grupo recolle usos de axentes como Claude Code ou Antigravity para manexar televisión, música e a configuración de Home Assistant, co control da privacidade como condición.",
+      "cuerpo": [
+        "A conversa partiu dunha pregunta: se alguén conectara un axente de IA como Claude Code aos aparellos intelixentes do fogar. Quen a formulou contou que o axente pode controlar a televisión, escribir nela, mandarlle mensaxes falados e manexar Spotify para poñer música acorde cos gustos de quen traballa.",
+        "Outro membro explicou un uso máis avanzado: ten toda a domótica (luces, persianas, aire acondicionado, ventiladores, televisión) en Home Assistant, instalado nunha máquina virtual dun NAS. Deulle a [Antigravity](https://developers.googleblog.com/build-with-google-antigravity-our-new-agentic-development-platform/), o contorno de axentes de Google, acceso ás carpetas de configuración e contrólao mediante MCP. Onde antes programaba cada automatización a man, agora pídellas ao axente desde a consola, que as crea e as aplica, e tamén lle consulta o estado dun dispositivo, as temperaturas medias dunha habitación ou un erro.",
+        "Como condición, asegurou que ningún dato sensible, como claves ou contrasinais de acceso, se comparte co modelo. Outra persoa do grupo contou que, tras ler o fío, deixou un miniordenador preparado como servidor doméstico e que Home Assistant será o seguinte.",
+        "Son testemuños de uso persoal, non unha guía contrastada; o interese para o profesorado está en que o mesmo método de pedirlle ao axente configuracións serve para calquera sistema que se xestione con arquivos de configuración. Sobre dar acceso a un axente sen perder o control dos datos, o diario xa tratou [os permisos dun axente de consola](pieza:2026-11-02/agentes-consola-acceso)."
+      ],
+      "fuentes": [
+        {"titulo": "Conversa en ChatGPT-IA-edu (mensaxe inicial)", "url": "https://t.me/ChatGPTedu/54146"},
+        {"titulo": "Google: Build with Google Antigravity (en inglés)", "url": "https://developers.googleblog.com/build-with-google-antigravity-our-new-agentic-development-platform/"}
+      ],
+      "mensaje": {"grupo": "chatgpt", "id": 54146},
+      "comprobado": "Revisor: contrastado con los mensajes 54146-54162 (nada atribuido de más; sin nombres). Mensaje 54146 abierto en Telegram. Antigravity descrito como plataforma de desarrollo con agentes de Google según su blog oficial (enlazado en su primera mención). Cambiado «docente» por «miembro» (no consta la profesión) y el titular, que generalizaba. Clave pieza:2026-11-02/agentes-consola-acceso presente en publicado.txt y del mismo tema (permisos de agentes de consola). Nada afirmado sobre Home Assistant más allá del relato.",
+      "ilustracion": null,
+      "ilustracion_alt": "Esquema no que un recadro, «Axente», apunta a un documento de código co rótulo «Configuración», que apunta a unha casa co rótulo «Home Assistant»; abaixo, un cadeado vermello co rótulo «Sen claves»."
+    },
+    {
+      "id": "xifres-i-lletres-acollida",
+      "seccion": "vibecoding",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Apps da comunidade",
+      "titular": "Dúas aplicacións en catalán de David Cordones: un xogo de letras e cifras e unha aula de acollida",
+      "entradilla": "Xifres i Lletres adestra léxico e cálculo mental por idades; Aula d'Acollida Digital ofrece apoio lingüístico inicial.",
+      "cuerpo": [
+        "David Cordones creou [Xifres i Lletres](https://elcordones.github.io/xifres-i-lletres/), un xogo en catalán inspirado no concurso «Cifras y Letras». Ten dúas probas: formar a palabra válida máis longa con unhas letras dadas e chegar a un número obxectivo combinando operacións con unhas cifras. Ofrece catro niveis, de 6 a 8 anos, de 9 a 11, de 12 a 15 e de 16 en diante, e funciona no navegador.",
+        "Tamén publicou [Aula d'Acollida Digital](https://elcordones.github.io/acollida/), pensada como apoio lingüístico inicial para o alumnado recén chegado. Segundo o aviso do grupo inclúe vocabulario con audio, caderno de seguimento e funcionamento sen conexión; a páxina consultada non detalla esas funcións, así que non se puideron confirmar.",
+        "Ambas as dúas aplicacións indican que o código está baixo licenza AGPL v3 e os contidos baixo CC BY-SA 4.0, o que permite a outros centros adaptalas."
+      ],
+      "fuentes": [
+        {"titulo": "Xifres i Lletres (en catalán)", "url": "https://elcordones.github.io/xifres-i-lletres/"},
+        {"titulo": "Aula d'Acollida Digital (en catalán)", "url": "https://elcordones.github.io/acollida/"}
+      ],
+      "mensaje": {"grupo": "vce", "id": 14803},
+      "comprobado": "Revisor: abiertas ambas webs. Xifres i Lletres: autoría de David Cordones, dos pruebas, cuatro niveles por edades, navegador, AGPL v3 y CC BY-SA 4.0 confirmados. Aula d'Acollida: autoría, finalidad («Suport lingüístic inicial») y licencias confirmadas; audio, cuaderno y sin conexión no figuran en la página y quedan como no confirmados. Mensaje 14803 abierto en Telegram: corresponde.",
+      "ilustracion": null,
+      "ilustracion_alt": "Dous paneis: á esquerda, unha calculadora e tres caselas co rótulo «Xifres i Lletres»; á dereita, unha icona de tradución co rótulo «Aula d'Acollida»; debaixo, un recadro de trazos descontinuos co rótulo «Código aberto»."
+    },
+    {
+      "id": "buzz-flujo-claude-blender",
+      "seccion": "multimedia",
+      "importancia": 3,
+      "grupo": "edumedia",
+      "antetitulo": "Fluxo de traballo",
+      "titular": "Así se rodou «Buzz»: Claude, Blender por MCP, lentes de realidade virtual e Seedance",
+      "entradilla": "O seu director detalla o proceso do curtametraxe que o diario contou onte, e avisa de que é caro en créditos.",
+      "cuerpo": [
+        "Tras presentarse [o curtametraxe rodado en realidade virtual](pieza:2026-11-08/buzz-cortometraje-vr), alguén do grupo pediu que se explicase o fluxo de traballo. Raül Torres, o seu director, resumiuno en catro pasos: unha aplicación, creada con Claude, para entrar en Blender cos lentes e gravar os movementos de cámara; a conexión de Claude con Blender mediante MCP para crear escenarios, personaxes e animacións; a rodaxe cos lentes; e o paso dos vídeos de Blender a Seedance 2.5 para convertelos nas escenas finais.",
+        "Advertiu de que ese último paso é caro porque consome moitos créditos. Na súa [publicación sobre «Buzz»](https://www.linkedin.com/posts/raul-torres-ia_buzz-shortfilm-aifilmmaking-ugcPost-7525290884553183233-UCtd/) enumera tamén Magnific e DaVinci Resolve entre as ferramentas."
+      ],
+      "fuentes": [
+        {"titulo": "Publicación de Raül Torres sobre «Buzz» en LinkedIn (en inglés)", "url": "https://www.linkedin.com/posts/raul-torres-ia_buzz-shortfilm-aifilmmaking-ugcPost-7525290884553183233-UCtd/"}
+      ],
+      "mensaje": {"grupo": "edumedia", "id": 12153},
+      "comprobado": "Revisor: pasos contrastados con los mensajes 12154-12157 del propio autor; mensaje 12153 abierto en Telegram (la pregunta sobre el flujo). Herramientas de la lista (Blender, Quest 3, Seedance 2.5, Magnific, DaVinci Resolve) y descripción de la publicación, de la vista previa del enlace del mensaje 12150; LinkedIn no se abre desde aquí. Clave pieza:2026-11-08/buzz-cortometraje-vr en publicado.txt y del mismo cortometraje. Ajustada la redacción: «hecho todo con Claude» no equivale a que el paso de Seedance lo sea.",
+      "ilustracion": null,
+      "ilustracion_alt": "Catro pasos en fila unidos por frechas: un documento de código co rótulo «App con Claude», un cubo 3D con «Blender e MCP», uns lentes con «Rodaxe en RV» e unha claqueta con «Seedance»; unha frecha vermella sinala este último co rótulo «Caro en créditos»."
+    },
+    {
+      "id": "belsetan-lengua-aragonesa",
+      "seccion": "vibecoding",
+      "importancia": 3,
+      "grupo": "vce",
+      "antetitulo": "Web da comunidade",
+      "titular": "Unha web difunde o belsetán, variedade aragonesa en perigo, con xogos e fichas de aula",
+      "entradilla": "«El aprendiz del pastor» reúne historia, textos, xogos e materiais didácticos sobre a lingua do val de Bielsa.",
+      "cuerpo": [
+        "Sandra Fortanet publicou, aínda en proceso, [Belsetán · El aprendiz del pastor](https://sanforbel.github.io/belsetan/), unha web sobre a variedade aragonesa que se fala no val de Bielsa (Huesca). Inclúe apartados sobre o val, a historia do seu estudo desde 1944, textos de tradición oral e cartas en verso, un xogo diario de palabras, un cuestionario gramatical e oito fichas didácticas imprimibles con solucionario. O vocabulario figura como «próximamente».",
+        "O proxecto afirma que só usa formas documentadas nas súas fontes, sinala como reconstrución calquera proposta pendente de revisión por un falante, e segue a ortografía da Academia Aragonesa de la Lengua. Ofrece ademais unha vía para que falantes e familiares do val colaboren."
+      ],
+      "fuentes": [
+        {"titulo": "Belsetán · El aprendiz del pastor (en castelán)", "url": "https://sanforbel.github.io/belsetan/"}
+      ],
+      "mensaje": {"grupo": "vce", "id": 14815},
+      "comprobado": "Revisor: abierta la web. Confirmados autoría (@sanforbel; nombre por el mensaje 14815, abierto en Telegram), secciones, juegos, ocho fichas con solucionario, vocabulario «próximamente», ortografía de la Academia Aragonesa de la Lengua, 1944 (primera encuesta en Bielsa) y sección Colabora. Los textos de cartas en verso y el cuestionario gramatical no los he comprobado en detalle en las subpáginas.",
+      "ilustracion": null,
+      "ilustracion_alt": "Unha montaña co rótulo «Val de Bielsa» leva a un libro aberto co rótulo «Belsetán», do que saen dúas frechas: unha a uns dados co rótulo «Xogos» e outra a un documento co rótulo «Fichas»."
+    }
+  ],
+  "breves": [
+    {
+      "texto": "Un conector gratuíto para Windows envía datos de sensores dunha placa micro:bit, por USB, á plataforma ThingSpeak, útil para estacións meteorolóxicas ou hortas con gráficas.",
+      "url": "https://apps.microsoft.com/detail/9n7v4d4qmjc3?hl=ca-ES&gl=ES",
+      "grupo": "vce",
+      "mensaje": {"grupo": "vce", "id": 14805}
+    },
+    {
+      "texto": "Google AI Studio permite agora crear aplicacións con mapas, datos de lugares e rutas de Google Maps Platform sen saír da ferramenta; coa clave de demostración, gratuíta e sen facturación, o límite é de 100 chamadas diarias por API.",
+      "url": "https://developers.google.com/maps/ai/ai-studio",
+      "grupo": "edumedia",
+      "mensaje": {"grupo": "edumedia", "id": 12159}
+    }
+  ],
+  "descartado": [
+    "Trabajador con exención por «motivos religiosos» para no usar IA: la web de La Razón no se pudo abrir y no se encontró la resolución; no se publica sin fuente comprobada, y el grupo solo reaccionó con comentarios.",
+    "Formación docente bloqueada hasta el 26 de diciembre y documento de orientaciones de Catalunya: trámite de un solo centro, la web citada no se comprobó.",
+    "Detectores de IA, juguetes de la BBC, memoria compartida de agentes y Calendari: ya publicados (8 y 9 de noviembre).",
+    "Familias con inteligencia (detector que marca un trabajo): mismo tema que la pieza ya publicada de detectores.",
+    "Valoración de Fable 5.2 por Ethan Mollick en X: no accesible; se usa solo el anuncio oficial.",
+    "Flow como app en el móvil (EduMedia): comentario suelto sin fuente ni detalle; no se buscó más allá del grupo."
+  ],
+  "repaso": [
+    "Fable/Mythos: el 55 % es de bloqueos de clasificadores de seguridad (pruebas iniciales), no de «consultas legítimas»; Mythos tiene «menos» salvaguardas, no ninguna; quitado «con un coste superior» (sin fuente); el plazo del día 16 se matiza con la promoción «esta semana» del anuncio.",
+    "Domótica: «docente» pasa a «miembro» (no consta) y el titular deja de generalizar; Antigravity enlazado a su blog oficial en la primera mención.",
+    "Buzz: ajustada la frase que atribuía los cuatro pasos a Claude.",
+    "Xifres i Lletres: «en su pie» pasa a la forma genérica (las licencias constan en la web).",
+    "Nuevo breve de EduMedia (Google AI Studio con Google Maps Platform) con la documentación oficial de Google, que el borrador no había buscado.",
+    "Comprobados los mensajes de cada pieza y las claves pieza: en publicado.txt; sin otros cambios."
+  ]
+}

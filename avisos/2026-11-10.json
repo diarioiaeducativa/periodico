@@ -1,0 +1,35 @@
+{
+  "fecha": "2026-11-10",
+  "avisos": {
+    "chatgpt": {
+      "saludo": "Buenos días. Martes de modelos nuevos y de agentes en casa.",
+      "puntos": [
+        "Anthropic presenta Fable 5.2, abierto a todo el público, y Mythos 5.2, reservado a organizaciones verificadas en ciberseguridad o ciencias de la vida; las cifras de mejora son de la propia empresa",
+        "Un hilo del grupo cuenta cómo se pide a un agente de programación que configure Home Assistant, la domótica de casa, con una condición: ninguna clave ni contraseña llega al modelo",
+        "En la viñeta, Tiza lee el anuncio de Mythos y descubre dónde guarda su centro la contraseña del wifi"
+      ],
+      "url": "https://diarioiaeducativa.github.io/n/9-chatgpt.html"
+    },
+    "vce": {
+      "saludo": "Buenos días. Hoy hay modelo nuevo y dos aplicaciones en catalán.",
+      "puntos": [
+        "Claude Fable 5.2 llega a todos los usuarios, también desde los servicios en la nube de Amazon, Google y Microsoft, con el identificador claude-fable-5-2 y un precio de 8 y 40 dólares por millón de tokens",
+        "Xifres i Lletres, de David Cordones, adapta el concurso de letras y cifras a cuatro franjas de edad, y su Aula d'Acollida Digital ofrece apoyo lingüístico inicial; ambas tienen licencia abierta",
+        "Una web sobre el belsetán, variedad aragonesa del valle de Bielsa, reúne textos, juegos y ocho fichas imprimibles con solucionario, y todavía está en construcción"
+      ]
+    },
+    "edumedia": {
+      "saludo": "Buenos días. Para empezar, el detrás de cámaras de «Buzz».",
+      "puntos": [
+        "El director de «Buzz» detalla su flujo: una app hecha con Claude para grabar la cámara en Blender con gafas, Claude conectado a Blender por MCP y Seedance 2.5 para las escenas finales",
+        "Ese último paso es el caro, porque consume muchos créditos, y el rodaje también pasa por Magnific y DaVinci Resolve",
+        "Google AI Studio permite crear aplicaciones con mapas, lugares y rutas de Google Maps Platform; con la clave de demostración, gratuita, el límite es de 100 llamadas diarias por API"
+      ],
+      "url": "https://diarioiaeducativa.github.io/n/9-edumedia.html"
+    }
+  },
+  "instagram": "El número de este martes repasa el anuncio de Claude Fable 5.2, un modelo de IA abierto a todo el público, y de Mythos 5.2, reservado a organizaciones verificadas, con la advertencia de que las mejoras son datos de la propia empresa. También recoge el uso de agentes de programación para configurar la domótica de una casa sin compartir claves, el proceso de un cortometraje rodado con realidad virtual y varias aplicaciones educativas abiertas, entre ellas un juego de letras y cifras en catalán y una web para difundir una lengua aragonesa.",
+  "titulo": "Diario de IA Educativa · Núm. 9",
+  "fecha_texto": "Martes, 10 de noviembre de 2026",
+  "url": "https://diarioiaeducativa.github.io/?n=9"
+}

@@ -1,0 +1,39 @@
+{
+  "fecha": "2026-11-09",
+  "elegida": {
+    "n": 1,
+    "pieza": "fable-mythos-5-2",
+    "idea": "Mythos só é para organizacións verificadas en ciberseguridade; o centro garda o contrasinal da wifi nun pósit do corcho.",
+    "guion": {"vinetas": [
+      {"cartela": "Na sala do profesorado, lendo o anuncio de Mythos.",
+       "escenario": "sala_profes",
+       "tiza": {"expresion": "sorprendido", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "orgulloso", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+       "bocadillos": [
+         {"quien": "tiza", "texto": "Mythos 5.2 é só para organizacións verificadas en ciberseguridade.", "tipo": "habla"},
+         {"quien": "algoritmo", "texto": "As que se toman a seguridade en serio.", "tipo": "habla"}]},
+      {"escenario": "sala_profes",
+       "tiza": {"expresion": "contento", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "cargando", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+       "bocadillos": [
+         {"quien": "tiza", "texto": "E ao noso centro verificaríano?", "tipo": "habla"},
+         {"quien": "algoritmo", "texto": "Cóntame como gardades os contrasinais.", "tipo": "habla"}]},
+      {"escenario": "sala_profes",
+       "tiza": {"expresion": "orgulloso", "postura": "senalar", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "preocupado", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+       "bocadillos": [
+         {"quien": "tiza", "texto": "O da wifi, nese pósit do corcho.", "tipo": "habla"},
+         {"quien": "algoritmo", "texto": "Quedades con Fable.", "tipo": "habla"}]}
+    ]}
+  },
+  "motivo": "Es el único remate que sorprende de verdad y en cuatro palabras: el orgullo de Tiza señalando el pósit del corcho choca con la verificación en ciberseguridad, y «Os quedáis con Fable» cierra sin explicar nada. Lo reconoce cualquier docente y se ríe de lo que nos pasa con la seguridad, no de nadie. Los datos (Mythos solo para organizaciones verificadas en ciberseguridad; Fable para todos) están en la noticia. Gracia 7: no hace falta afinarlo más a fondo. El 5 (AI Studio y el «¿cuánto falta?») es buena idea y queda segundo, pero su remate es más previsible; el del Réquiem, el del claustro y el del belsetán son correctos pero menos sorprendentes, y el del claustro remata explicándolo («Nadie lo ha encontrado nunca»).",
+  "retoques": "Escenario: sala_profes está libre (en los tres números anteriores salieron casa_noche, fotocopiadora y aula) y su corcho sirve al chiste, así que se mantiene. Caras: Tiza pasa de «pensativo» (con «pensar») a «sorprendido» (con «abajo») en la viñeta 1 y de «neutral» a «contento» en la 2, porque son sus caras más repetidas y el chiste no las pide; las de Algoritmo («orgulloso», «cargando», «preocupado») no están entre las repetidas y se quedan. Texto: «muy en serio» pasa a «en serio» y «La del wifi está en ese pósit» a «La del wifi, en ese pósit», para mejorar el ritmo. El rótulo («En la sala de profes, leyendo el anuncio de Mythos.», 51 caracteres) sitúa sin adelantar el chiste y se mantiene. Ningún bocadillo pasa de 90 caracteres (el más largo, 69).",
+  "puntuaciones": [
+    {"n": 1, "pieza": "fable-mythos-5-2", "gracia": 7, "claridad": 8, "remate": 8, "prohibiciones": "respeta"},
+    {"n": 2, "pieza": "domotica-agentes-ia", "gracia": 6, "claridad": 7, "remate": 6, "prohibiciones": "respeta"},
+    {"n": 3, "pieza": "domotica-agentes-ia", "gracia": 5, "claridad": 6, "remate": 5, "prohibiciones": "respeta"},
+    {"n": 4, "pieza": "belsetan-lengua-aragonesa", "gracia": 5, "claridad": 6, "remate": 6, "prohibiciones": "respeta"},
+    {"n": 5, "pieza": "breve-2", "gracia": 6, "claridad": 7, "remate": 6, "prohibiciones": "respeta"}
+  ],
+  "traduccion": "automática con IA"
+}

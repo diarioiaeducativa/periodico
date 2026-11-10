@@ -1,0 +1,41 @@
+{
+  "fecha": "2026-11-09",
+  "elegida": {
+    "n": 1,
+    "pieza": "fable-mythos-5-2",
+    "idea": "Mythos només és per a organitzacions verificades en ciberseguretat; el centre guarda la contrasenya del wifi en un pòsit del suro.",
+    "guion": {
+      "vinetas": [
+        {
+          "cartela": "A la sala del professorat, llegint l'anunci de Mythos.",
+          "escenario": "sala_profes",
+          "tiza": {"expresion": "sorprendido", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+          "algoritmo": {"expresion": "orgulloso", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+          "bocadillos": [
+            {"quien": "tiza", "texto": "Mythos 5.2 és només per a organitzacions verificades en ciberseguretat.", "tipo": "habla"},
+            {"quien": "algoritmo", "texto": "Les que es prenen la seguretat de debò.", "tipo": "habla"}
+          ]
+        },
+        {
+          "escenario": "sala_profes",
+          "tiza": {"expresion": "contento", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+          "algoritmo": {"expresion": "cargando", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+          "bocadillos": [
+            {"quien": "tiza", "texto": "I el nostre centre el verificarien?", "tipo": "habla"},
+            {"quien": "algoritmo", "texto": "Explica'm com deseu les contrasenyes.", "tipo": "habla"}
+          ]
+        },
+        {
+          "escenario": "sala_profes",
+          "tiza": {"expresion": "orgulloso", "postura": "senalar", "lugar": "izquierda", "mira": "derecha"},
+          "algoritmo": {"expresion": "preocupado", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+          "bocadillos": [
+            {"quien": "tiza", "texto": "La del wifi, en aquell pòsit del suro.", "tipo": "habla"},
+            {"quien": "algoritmo", "texto": "Us quedeu amb Fable.", "tipo": "habla"}
+          ]
+        }
+      ]
+    }
+  },
+  "traduccion": "automàtica amb IA"
+}

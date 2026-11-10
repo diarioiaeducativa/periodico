@@ -1,0 +1,41 @@
+{
+  "fecha": "2026-11-09",
+  "elegida": {
+    "n": 1,
+    "pieza": "fable-mythos-5-2",
+    "idea": "Mythos zibersegurtasunean egiaztatutako erakundeentzat soilik da; ikastetxeak wifiaren pasahitza zorko-oharrean gordetzen du, kortxoan.",
+    "guion": {
+      "vinetas": [
+        {
+          "cartela": "Irakasleen gelan, Mythosen iragarpena irakurtzen.",
+          "escenario": "sala_profes",
+          "tiza": {"expresion": "sorprendido", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+          "algoritmo": {"expresion": "orgulloso", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+          "bocadillos": [
+            {"quien": "tiza", "texto": "Mythos 5.2 zibersegurtasunean egiaztatutako erakundeentzat soilik da.", "tipo": "habla"},
+            {"quien": "algoritmo", "texto": "Segurtasuna serioski hartzen dutenentzat.", "tipo": "habla"}
+          ]
+        },
+        {
+          "escenario": "sala_profes",
+          "tiza": {"expresion": "contento", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+          "algoritmo": {"expresion": "cargando", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+          "bocadillos": [
+            {"quien": "tiza", "texto": "Eta gure ikastetxea egiaztatuko lukete?", "tipo": "habla"},
+            {"quien": "algoritmo", "texto": "Kontatu nola gordetzen dituzuen pasahitzak.", "tipo": "habla"}
+          ]
+        },
+        {
+          "escenario": "sala_profes",
+          "tiza": {"expresion": "orgulloso", "postura": "senalar", "lugar": "izquierda", "mira": "derecha"},
+          "algoritmo": {"expresion": "preocupado", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+          "bocadillos": [
+            {"quien": "tiza", "texto": "Wifiarena, kortxoko zorko-ohar horretan.", "tipo": "habla"},
+            {"quien": "algoritmo", "texto": "Fablerekin gelditzen zarete.", "tipo": "habla"}
+          ]
+        }
+      ]
+    }
+  },
+  "traduccion": "itzulpen automatikoa AArekin"
+}

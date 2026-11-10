@@ -1,0 +1,19 @@
+{
+  "fecha": "2026-11-10",
+  "fuente": "Bot de IA Educativa, administrador de los tres grupos; sin bots ni cuentas borradas",
+  "grupos": {
+    "chatgpt": 4065,
+    "vce": 1833,
+    "edumedia": 789
+  },
+  "zonas": {
+    "chatgpt": 3066,
+    "vce": 888,
+    "edumedia": 174,
+    "chatgpt+vce": 475,
+    "chatgpt+edumedia": 145,
+    "vce+edumedia": 91,
+    "tres": 379
+  },
+  "total": 5218
+}

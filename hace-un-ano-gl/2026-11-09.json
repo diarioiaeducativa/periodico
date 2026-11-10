@@ -1,0 +1,26 @@
+{"fecha": "2026-11-09", "hay_pieza": true,
+ "piezas": [{"id": "kimi-modelo-abierto-gigantes",
+             "seccion": "hace-un-ano", "importancia": 3,
+             "grupo": "chatgpt", "fecha_original": "2025-11-10",
+             "antetitulo": "Modelos abertos",
+             "titular": "O modelo aberto que poñía «en xaque» os xigantes: un ano despois, Kimi é case tres veces maior e aínda vai por detrás",
+             "entradilla": "En novembro de 2025 compartíase que un modelo chinés de pesos abertos, Kimi K2 Thinking, superaba GPT-5 nalgunhas probas. Hoxe Kimi K3, da mesma familia, é case tres veces maior, pero o seu fabricante admite que non alcanza os mellores modelos pechados.",
+             "cuerpo": [
+               "O 10 de novembro de 2025, en ChatGPT-IA-edu, circulaba un [artigo de WWWhatsnew](https://wwwhatsnew.com/2025/11/09/kimi-k2-thinking-el-modelo-abierto-chino-que-pone-en-jaque-a-los-gigantes-de-la-ia/) cun titular rotundo: Kimi K2 Thinking, da chinesa Moonshot AI, «pon en xaque os xigantes da IA». Recén presentado, tiña un billón de parámetros, publicábase con licenza MIT modificada e, segundo as [probas da propia empresa](https://huggingface.co/moonshotai/Kimi-K2-Thinking), superaba GPT-5 e Claude Sonnet 4.5 en buscas con ferramentas. Que un modelo aberto se medise cos de OpenAI, Google ou Anthropic parecía unha sorpresa.",
+               "En xullo de 2026 Moonshot presentou [Kimi K3](https://www.kimi.com/blog/kimi-k3), con 2,8 billóns de parámetros e un contexto dun millón de tokens; os pesos chegaron a [Hugging Face](https://huggingface.co/moonshotai/Kimi-K3) o 27 de xullo. Pero o propio anuncio recoñece que o seu rendemento xeral segue por detrás do de Claude Fable 5 e GPT 5.6 Sol.",
+               "Tamén cambiou o de aberto: K3 ten licenza propia, e quen o ofreza como servizo con máis de 20 millóns de dólares de ingresos ao ano necesita un acordo con Moonshot, segundo [VentureBeat](https://venturebeat.com/technology/kimi-k3s-full-weights-are-here-but-theyre-open-with-a-caveat-what-enterprises-should-know). Un ano despois, que un modelo aberto se mida cos pechados xa non é noticia; que os alcance, aínda non."
+             ],
+             "fuentes": [
+               {"titulo": "Kimi K3 (blog técnico de Moonshot AI) (en inglés)", "url": "https://www.kimi.com/blog/kimi-k3"},
+               {"titulo": "moonshotai/Kimi-K3 (Hugging Face) (en inglés)", "url": "https://huggingface.co/moonshotai/Kimi-K3"},
+               {"titulo": "Kimi K3's full weights are here, but they're open with a caveat (VentureBeat) (en inglés)", "url": "https://venturebeat.com/technology/kimi-k3s-full-weights-are-here-but-theyre-open-with-a-caveat-what-enterprises-should-know"},
+               {"titulo": "moonshotai/Kimi-K2-Thinking (Hugging Face) (en inglés)", "url": "https://huggingface.co/moonshotai/Kimi-K2-Thinking"}
+             ],
+             "ilustracion_alt": "Díptico partido por unha liña vertical. Á esquerda, «Nov. 2025»: unha barra curta co rótulo «1 billón» e, baixo o rótulo «Pechados» cun cadeado, unha barra de modelos pechados máis curta que a de Kimi. Á dereita, «Hoxe»: unha barra azul moito máis longa co rótulo «2,8 billóns» e, xunto a un cadeado, unha barra de modelos pechados máis longa que a de Kimi, que queda por detrás.",
+             "mensaje": {"grupo": "chatgpt", "id": 41890},
+             "comprobado": "Verificador: mensaje #41890 de ChatGPT-IA-edu abierto en t.me/ChatGPTedu/41890: es el enlace al artículo de WWWhatsnew sobre Kimi K2 Thinking (Telegram lo muestra a las 23:04 del 9/11 por la zona horaria; la entrada dice 00:04 del 10/11); el artículo existe (9/11/2025). Ficha de Hugging Face de Kimi-K2-Thinking: 1T parámetros, licencia MIT modificada, BrowseComp con herramientas 60,2 frente a 54,9 (GPT-5 High) y 24,1 (Sonnet 4.5); HLE con herramientas 44,9 frente a 41,7 y 32,0 (algunas cifras re-medidas por Moonshot); sin herramientas en HLE GPT-5 puntúa más, por eso se dice «en búsquedas con herramientas». Blog de Kimi K3: 2,8 billones, contexto de 1M, pesos «by July 27, 2026», rendimiento general «still trails» los modelos propietarios más potentes y brecha frente a Claude Fable 5 y GPT 5.6 Sol. Ficha de Hugging Face de K3: 2,8T (104B activos), «Kimi K3 License», 1.048.576 tokens. VentureBeat: pesos completos el 27/7/2026; cláusula 2: acuerdo para quien ofrezca el modelo como servicio con más de 20 millones de dólares en cualquier periodo de 12 meses. Prensa (WebSearch): presentación de K3 el 16-17 de julio de 2026. Existe también Kimi K3.1 (sin fuente oficial consultada): no se dice que K3 sea el último. Versiones intermedias no mencionadas por falta de fuente oficial. Sin piezas sobre Kimi o Moonshot en publicado.txt; no repite NotebookLM, Veo ni artefactos de Claude. Sin enlaces pieza: en el cuerpo. Cuenta: unas 235 palabras con la entradilla.",
+             "repaso": [
+               "Entradilla: «su sucesor» pasa a «de la misma familia» (hay un Kimi K3.1, así que K3 no es el último).",
+               "Cuerpo, párrafo 2: quitada la mención a K2.5, K2.6 y una versión para programar (sin fuente oficial ni fechas); «julio de 2026» confirmado por prensa (16-17 de julio).",
+               "Resto sin cambios: mensaje, cifras de Hugging Face, datos de K3 y cláusula de licencia verificados."
+             ]}]}
