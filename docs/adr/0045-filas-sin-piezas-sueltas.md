@@ -77,4 +77,8 @@ los bloques A y en «Hace un año».
 Variantes del número del 10-11-2026 con 1 a 10 piezas, generadas con `generar.py`: portada, Vibe coding, Debates
 y la página del número en Chromium y Firefox a 1366, 1100, 960, 900, 840, 800, 700, 640 y 390 px; y portada (en
 castellano, catalán e inglés), Vibe coding, Breves y «La redacción» con los dispositivos de `probar-web`
-(escritorio, tableta y móvil) en Chromium, Firefox y WebKit. Resultado al final de esta sección.
+(escritorio, tableta y móvil) en Chromium, Firefox y WebKit: sin ningún aviso. Con el código anterior, las mismas
+variantes daban filas incompletas en «Más del día» y en las páginas de sección, y fechas solas entre 840 y 960 px.
+El clic en los dibujos de la portada (apertura, destacadas, bloques A y B y reportaje) lleva al artículo de su
+titular en Chromium, Firefox y WebKit, en escritorio y móvil. La vista previa del NAS, regenerada con este código,
+pasa `revisar-anchos.js` sin avisos en la portada, el artículo de «Hace un año» y Vibe coding.
