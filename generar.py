@@ -1030,10 +1030,15 @@ def pie(prof, eds, actual):
 </footer>"""
 
 
-def barra_secciones(prof, activa):
-    """La barra de secciones bajo la mancheta, como en un periódico; «La redacción» cierra la barra, también en el móvil."""
+FLECHA_ANT = '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m12 8-4 4 4 4"/><path d="M16 12H8"/></svg>'   # circle-arrow-left
+
+
+def barra_secciones(prof, activa, ant=""):
+    """La barra de secciones bajo la mancheta, como en un periódico; «La redacción» cierra la barra, también en el móvil.
+    En la portada, `ant` (el número anterior) va como una flecha delante de «Portada», sin una línea propia."""
     marca = ' aria-current="page"'
-    enlaces = [f'<a href="{prof or "./"}"{marca if activa == "portada" else ""}>{L["portada"]}</a>']
+    enlaces = [f'<a class="dia-ant" href="{ant}" title="{L["dia_ant"]}" aria-label="{L["dia_ant"]}">{FLECHA_ANT}</a>'] if ant else []
+    enlaces += [f'<a href="{prof or "./"}"{marca if activa == "portada" else ""}>{L["portada"]}</a>']
     enlaces += [f'<a class="sec-{c}" href="{prof}{c}.html"{marca if c == activa else ""}>{L["secciones"][c]}</a>' for c in ORDEN_SECCIONES]
     enlaces.append(f'<a class="sec-reportaje" href="{prof}reportajes.html"{marca if activa == "reportajes" else ""}>{L["reportajes"]}</a>')
     enlaces.append(f'<a class="sec-vineta" href="{prof}vineta.html"{marca if activa == "vineta" else ""}>{L["vineta"]}</a>')
@@ -1041,7 +1046,7 @@ def barra_secciones(prof, activa):
     return f'<nav class="secciones" aria-label="{L["secciones_nav"]}"><div class="secciones-lista">{"".join(enlaces)}{quees}</div></nav>'
 
 
-def cabecera(prof, ruta, fecha, cuenta, es_portada, nav="", h1=True, activa=None):
+def cabecera(prof, ruta, fecha, cuenta, es_portada, nav="", h1=True, activa=None, ant=""):
     """`cuenta` es el número de la edición, rodeado a mano con el bolígrafo rojo, como en un periódico.
     Con h1="dia" (la página de un número de la hemeroteca), la mancheta es el h1 de la página, con el
     enlace a la portada y la fecha solo para el lector de pantalla: se ve igual que con un <p>."""
@@ -1061,7 +1066,7 @@ def cabecera(prof, ruta, fecha, cuenta, es_portada, nav="", h1=True, activa=None
   </div>
   <{etiqueta} class="mancheta">{nombre}</{etiqueta}>
   <p class="lema">{L["lema"]}</p>
-  {barra_secciones(prof, activa)}
+  {barra_secciones(prof, activa, ant)}
   {f'<nav class="navegacion" aria-label="{L["navegacion"]}">{nav}</nav>' if nav else ""}
 </header>"""
 
@@ -1462,7 +1467,7 @@ def descripcion_dia(dia, piezas):
     return " · ".join(elegidos) or L["lema"]
 
 
-def pagina_portada(prof, ruta, eds, piezas, breves, fecha, cuenta, es_portada, nav=""):
+def pagina_portada(prof, ruta, eds, piezas, breves, fecha, cuenta, es_portada, nav="", ant=""):
     titulo = L["titulo"] if es_portada else f'{L["titulo"]}, {fecha_larga(publicacion(fecha))}'
     dia = next((x for x in eds if x["fecha"] == fecha), {})
     # En la portada, el de la semana; en la página de un día, solo el suyo. Arriba el día que sale;
@@ -1472,7 +1477,7 @@ def pagina_portada(prof, ruta, eds, piezas, breves, fecha, cuenta, es_portada, n
     # La portada se describe con el lema del diario; la página de cada día, con lo que trae ese número
     descripcion = L["lema"] if es_portada else descripcion_dia(dia, piezas)
     return cabeza(titulo, prof, descripcion, ruta, portada=es_portada) + f"""<body class="pag-portada">
-{cabecera(prof, ruta, fecha, cuenta, es_portada, nav, h1=True if es_portada else "dia", activa="portada" if es_portada else None)}
+{cabecera(prof, ruta, fecha, cuenta, es_portada, nav, h1=True if es_portada else "dia", activa="portada" if es_portada else None, ant=ant)}
 <main class="portada">
 {franja_reserva(dia)}
 {franja_editorial(prof, dia)}
@@ -3228,7 +3233,7 @@ def generar_idioma(codigo):
     piezas, breves = seleccion_portada(eds)
     escribir(base / "index.html",
              pagina_portada("", "", eds, piezas, breves, eds[-1]["fecha"], eds[-1]["numero"], True,
-                            nav_dia("", eds, len(eds) - 1)))   # en la portada, solo «Día anterior»
+                            ant=f'{eds[-2]["fecha"]}/' if len(eds) > 1 else ""))   # «Día anterior», flecha ante «Portada»
     escribir(base / "redaccion.html", pagina_redaccion(eds))
     escribir(base / "que-es.html", redireccion("redaccion.html"))
     escribir(base / "comunidad.html", redireccion("vibecoding.html"))   # la sección retirada el 01-11-2026
