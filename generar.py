@@ -64,7 +64,7 @@ IDIOMAS = {
         "dia_ant": "Día anterior", "dia_sig": "Día siguiente",
         "leer_conv": "Lee la conversación original en", "tema_en": "Tema tratado en",
         "comprobado": "Comprobado en", "fuente": "Fuente", "conversacion": "Conversación", "comentarios": "Comentarios", "comentarios_aviso": "Para comentar hace falta una {cuenta}. Los comentarios son públicos y se guardan en GitHub.", "comentarios_cuenta": "cuenta gratuita de GitHub",
-        "breves": "Breves", "breves_antes": "Breves anteriores", "mas_numero": "Más en este número", "vineta": "La viñeta", "vineta_titulo": "La viñeta de Tiza y Algoritmo", "y": "y",
+        "breves": "Breves", "breves_antes": "Breves anteriores", "vineta": "La viñeta", "vineta_titulo": "La viñeta de Tiza y Algoritmo", "y": "y",
         "a_partir": "A partir de",
         "a_partir_dia": "A partir de las noticias del día.",
         "unete": "Únete a la conversación",
@@ -191,7 +191,7 @@ IDIOMAS = {
         "dia_ant": "Dia anterior", "dia_sig": "Dia següent",
         "leer_conv": "Llegeix la conversa original a", "tema_en": "Tema tractat a",
         "comprobado": "Comprovat a", "fuente": "Font", "conversacion": "Conversa", "comentarios": "Comentaris", "comentarios_aviso": "Per comentar cal un {cuenta}. Els comentaris són públics i es desen a GitHub.", "comentarios_cuenta": "compte gratuït de GitHub",
-        "breves": "Breus", "breves_antes": "Breus anteriors", "mas_numero": "Més en aquest número", "vineta": "La vinyeta", "vineta_titulo": "La vinyeta de Guix i Algorisme", "y": "i",
+        "breves": "Breus", "breves_antes": "Breus anteriors", "vineta": "La vinyeta", "vineta_titulo": "La vinyeta de Guix i Algorisme", "y": "i",
         "a_partir": "A partir de",
         "a_partir_dia": "A partir de les notícies del dia.",
         "unete": "Uneix-te a la conversa",
@@ -1260,10 +1260,10 @@ def cuerpo_portada(prof, piezas, breves, mostrar_fecha, tira=""):
     resto = [p for p in resto if p.get("seccion") not in SECCIONES_FUERA] + [p for p in resto if p.get("seccion") in SECCIONES_FUERA]
     destacadas = [p for p in resto if p.get("importancia", 3) <= 2 and p.get("seccion") != "biblioteca"
                   and (not mostrar_fecha or p["fecha"] == p0["fecha"])][:3]
-    # Si quedan huecos, los ocupan las demás piezas de hoy aunque sean menores: así no queda una suelta debajo
-    if mostrar_fecha:
-        destacadas += [p for p in resto if p not in destacadas and p["fecha"] == p0["fecha"]
-                       and p.get("seccion") not in ["biblioteca"] + SECCIONES_FUERA][:3 - len(destacadas)]
+    # Si quedan huecos, los ocupan las demás piezas de hoy aunque sean menores: así no queda una suelta debajo.
+    # La página de un número se compone igual que la parte de arriba de la portada (ADR 0045)
+    destacadas += [p for p in resto if p not in destacadas and p["fecha"] == p0["fecha"]
+                   and p.get("seccion") not in ["biblioteca"] + SECCIONES_FUERA][:3 - len(destacadas)]
     demas = [p for p in resto if p not in destacadas]
     # En la portada, todo lo de hoy va arriba: lo que no cabe entre las destacadas, también los
     # artículos de la Biblioteca, justo debajo en «Más del día»; los bloques, para los días anteriores
@@ -1271,7 +1271,7 @@ def cuerpo_portada(prof, piezas, breves, mostrar_fecha, tira=""):
     # deje una fila de tres columnas con una sola pieza. Los de días anteriores no salen en la portada.
     hace_un_ano = next((p for p in demas if p.get("seccion") in SECCIONES_FUERA and p["fecha"] == p0["fecha"]), None)
     demas = [p for p in demas if p.get("seccion") not in SECCIONES_FUERA]
-    mas_hoy = [p for p in demas if p["fecha"] == p0["fecha"]] if mostrar_fecha else []
+    mas_hoy = [p for p in demas if p["fecha"] == p0["fecha"]]
     demas = [p for p in demas if p not in mas_hoy]
     # Una sola pieza de más no se queda sola en una fila de tres (ADR 0045): sube a las destacadas, con su dibujo,
     # y las destacadas se reparten en filas (cuatro, en dos filas de dos)
@@ -1295,17 +1295,6 @@ def cuerpo_portada(prof, piezas, breves, mostrar_fecha, tira=""):
     if mostrar_fecha:
         html_ += breves_y_hace_un_ano(prof, breves_dia, hace_un_ano)
     html_ += tira
-    # En la página de un número, cada sección suele tener una sola pieza: con su nombre encima dejaría media fila
-    # vacía. Lo que no va destacado, en un solo bloque en columnas, cada pieza con su sección (ADR 0041).
-    if not mostrar_fecha:
-        resto_num = [p for c in ORDEN_SECCIONES for p in demas if p.get("seccion") == c]
-        if resto_num:
-            lista = "".join(pieza(prof, p, "menor", 3, False, mostrar_fecha) for p in resto_num)
-            html_ += f"""<section class="bloque bloque-columnas" aria-labelledby="b-mas-numero">
-  <h2 id="b-mas-numero" class="bloque-titulo">{L["mas_numero"]}</h2>
-  <div class="bloque-piezas" style="--n:{min(len(resto_num), 3)}">{lista}</div>
-</section>"""
-        demas = [p for p in demas if p not in resto_num]
     visibles, ultima = 0, None
     for clave in ORDEN_SECCIONES:
         de_seccion = [p for p in demas if p.get("seccion") == clave]

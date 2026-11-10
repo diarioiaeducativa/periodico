@@ -41,6 +41,11 @@ los bloques A y en «Hace un año».
   el script de la portada, sin envolver el dibujo en un enlace: la maqueta cuenta con que el dibujo cuelga
   directamente de la pieza, y el teclado y el lector de pantalla ya entran por el titular sin un enlace
   repetido. Con Ctrl, Mayúsculas o la rueda, en otra pestaña. En el artículo, el dibujo se sigue ampliando.
+- **La página de cada número se compone como la parte de arriba de la portada**: la apertura, las demás piezas
+  con su dibujo hasta tres (las menores suben a rellenar, y una sola de más también sube) y, si hay más, «Más del
+  día» justo debajo; después, la viñeta y los breves. Antes, las de importancia 3 iban sin dibujo en «Más en este
+  número», tras la viñeta, aunque hubiera sitio arriba: las mismas noticias salían de una forma en la portada y de
+  otra en su número (Juanjo: «por qué se pone aparte y no en la sección superior con el resto de artículos?»).
 - **«Día anterior» y «Día siguiente» son dos flechas** (`circle-arrow-left` y `circle-arrow-right`, con su rótulo
   emergente y para el lector de pantalla) delante de «Portada», en la barra de secciones, como los botones de atrás y
   adelante del navegador, en vez de ocupar una línea propia debajo. Van en la portada (solo la de atrás) y en la página

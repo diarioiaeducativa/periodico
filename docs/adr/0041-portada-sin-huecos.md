@@ -42,8 +42,9 @@ una sección a otra), y a partir de lo que Juanjo fue señalando en la vista pre
   título). El tiempo de lectura del reportaje, fuera del rótulo, que en el móvil no lo dejaba caber.
 - **Los breves, con el título encima y en columnas** que se reparten solas; cada breve entero en su columna
   (partido, Firefox dejaba sus enlaces sueltos arriba de la siguiente y Chrome no lo partía).
-- **En la página de cada número**, lo no destacado en un solo bloque, «Más en este número», en columnas, cada
-  pieza con su sección: un bloque por sección tenía casi siempre una sola pieza.
+- **En la página de cada número**, lo no destacado iba en un solo bloque, «Más en este número», en columnas, cada
+  pieza con su sección: un bloque por sección tenía casi siempre una sola pieza. Sustituido por el ADR 0045: la
+  página de un número se compone como la parte de arriba de la portada.
 - **En la tableta**, las filas de tres y las destacadas, en una columna con la miniatura a la izquierda: las
   columnas eran tan estrechas que los titulares cambiaban mucho de largo. **En el móvil**, como antes: una
   columna, sin miniaturas en los bloques y con la entradilla entera.
