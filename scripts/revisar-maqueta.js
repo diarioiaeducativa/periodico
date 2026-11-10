@@ -13,6 +13,8 @@
 //   tamaños      fechas de distinto tamaño en la misma página
 //   columna      un título de bloque al lado de sus piezas con una columna vacía debajo
 //   pegados      dos bloques seguidos con menos de 12 px entre ellos
+//   cabecera     el titular o la entradilla de una pieza sin dibujo deja vacía la derecha (> 250 px)
+//   incompleta   la última fila de una rejilla de piezas deja columnas vacías a la derecha (> 90 px)
 module.exports = async (page) => {
   const r = await page.evaluate(() => {
     const fallos = [];
@@ -20,16 +22,26 @@ module.exports = async (page) => {
     const nombre = el => (el.closest('section[class*="sec-"], section, article')?.className || el.tagName).toString().slice(0, 40);
     const fondoTexto = el => { let m = el.getBoundingClientRect().top; const w = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
       while (w.nextNode()) { const n = w.currentNode; if (!n.textContent.trim() || !vis(n.parentElement)) continue; const rg = document.createRange(); rg.selectNodeContents(n);
-        for (const x of rg.getClientRects()) m = Math.max(m, x.bottom); }
+        // Lo que recorta una entradilla recortada (line-clamp) no se ve: cuenta solo hasta su borde
+        let tope = Infinity; for (let a = n.parentElement; a && a !== el.parentElement; a = a.parentElement) if (getComputedStyle(a).overflow !== 'visible') tope = Math.min(tope, a.getBoundingClientRect().bottom);
+        for (const x of rg.getClientRects()) m = Math.max(m, Math.min(x.bottom, tope)); }
       for (const f of el.querySelectorAll('figure, img, svg')) if (vis(f)) m = Math.max(m, f.getBoundingClientRect().bottom);
       return m; };
     // Huecos en filas: hijos de una rejilla agrupados por su línea superior
     for (const g of document.querySelectorAll('main *')) {
       const s = getComputedStyle(g);
-      if (s.display !== 'grid' || g.children.length < 2 || !vis(g)) continue;
+      if (s.display !== 'grid' || !g.children.length || !vis(g)) continue;
       if (g.closest('.ilu, svg, .vineta, figure')) continue;
       const filas = {};
       for (const c of g.children) { if (!vis(c)) continue; const t = Math.round(c.getBoundingClientRect().top / 8); (filas[t] = filas[t] || []).push(c); }
+      // Fila incompleta: la última fila de piezas no llega al borde derecho de la rejilla (columnas vacías)
+      const piezas = [...g.children].filter(c => vis(c) && /^(ARTICLE|SECTION|ASIDE)$/.test(c.tagName));
+      if (piezas.length && piezas.length === [...g.children].filter(vis).length) {
+        const ult = Object.values(filas).at(-1).filter(c => piezas.includes(c));
+        const dcha = Math.max(...ult.map(c => c.getBoundingClientRect().right));
+        const falta = g.getBoundingClientRect().right - dcha;
+        if (falta > 90) fallos.push(`fila incompleta (${ult.length} de ${getComputedStyle(g).gridTemplateColumns.split(' ').length} columnas, ${Math.round(falta)} px vacíos) en ${nombre(g)} (${g.className.toString().slice(0, 30)})`);
+      }
       for (const fila of Object.values(filas)) {
         if (fila.length < 2) continue;
         const fondos = fila.map(fondoTexto); const d = Math.max(...fondos) - Math.min(...fondos);
@@ -63,6 +75,16 @@ module.exports = async (page) => {
       for (let i = 1; i < hs.length; i++) {
         const d = hs[i].getBoundingClientRect().top - hs[i - 1].getBoundingClientRect().bottom;
         if (d < 12 && hs[i].getBoundingClientRect().left < hs[i - 1].getBoundingClientRect().right) fallos.push(`pegados (${Math.round(d)} px): ${nombre(hs[i - 1])} y ${nombre(hs[i])}`);
+      }
+    }
+    // Cabecera de una pieza sin dibujo que no llena el ancho de la página
+    for (const c of document.querySelectorAll('.cabeza-pieza')) {
+      if (!vis(c) || c.querySelector(':scope > .ilu')) continue;
+      for (const t of c.querySelectorAll('.titular, .entradilla')) {
+        if (!vis(t) || getComputedStyle(t).columnCount !== 'auto') continue;
+        const rg = document.createRange(); rg.selectNodeContents(t); const anchos = [...rg.getClientRects()].map(x => x.right);
+        const falta = c.getBoundingClientRect().right - Math.max(...anchos);
+        if (anchos.length > 1 && falta > 250) fallos.push(`cabecera sin dibujo con ${Math.round(falta)} px vacíos a la derecha (${t.className})`);
       }
     }
     // Título de bloque al lado de sus piezas

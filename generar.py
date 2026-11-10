@@ -773,8 +773,10 @@ SCRIPT_FILAS = """<script>
    artículo. Se rehace al cambiar el ancho. En una sola columna (el móvil) no se toca nada. */
 (function(){
   var SEL='.fila-destacadas,.mas-dia,.alt-b,.alt-a,.fila-seccion,.fila-breves-hu,.nb-grupos',ENT='.entradilla,.nb-resumen';
-  function fondo(el){var m=el.getBoundingClientRect().top,w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT),n,r,i,rs;
-    while((n=w.nextNode())){if(!n.textContent.trim())continue;r=document.createRange();r.selectNodeContents(n);rs=r.getClientRects();for(i=0;i<rs.length;i++)m=Math.max(m,rs[i].bottom);}
+  /* Hasta dónde llega lo visible de una pieza: lo que oculta una entradilla recortada no cuenta (ADR 0045) */
+  function fondo(el){var m=el.getBoundingClientRect().top,w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT),n,r,i,rs,a,tope;
+    while((n=w.nextNode())){if(!n.textContent.trim())continue;tope=Infinity;for(a=n.parentElement;a&&a!==el.parentElement;a=a.parentElement)if(getComputedStyle(a).overflow!=='visible')tope=Math.min(tope,a.getBoundingClientRect().bottom);
+      r=document.createRange();r.selectNodeContents(n);rs=r.getClientRects();for(i=0;i<rs.length;i++)m=Math.max(m,Math.min(rs[i].bottom,tope));}
     el.querySelectorAll('figure').forEach(function(f){m=Math.max(m,f.getBoundingClientRect().bottom);});return m;}
   function suelta(e){e.style.display='block';e.style.webkitLineClamp='unset';e.style.lineClamp='none';e.style.overflow='visible';e.style.webkitBoxOrient='';}
   function recorta(e,l){e.style.display='-webkit-box';e.style.webkitBoxOrient='vertical';e.style.webkitLineClamp=l;e.style.lineClamp=l;e.style.overflow='hidden';}
@@ -798,13 +800,27 @@ SCRIPT_FILAS = """<script>
          la mitad de su ancho de alto */
       if(g.classList.contains('alt-a')){var gr=g.querySelector('.alt-grande'),li=g.querySelector('.alt-lista'),il=gr&&gr.querySelector('.ilu');
         if(il&&li){il.style.height='';il.style.aspectRatio='';var dif=fondo(li)-fondo(gr),h=il.getBoundingClientRect().height,w=il.getBoundingClientRect().width;
-          var nh=Math.max(w/3.2,Math.min(w*0.6,h+dif));if(Math.abs(nh-h)>2){il.style.aspectRatio='auto';il.style.height=nh+'px';}}}
+          var nh=Math.max(w/3.2,Math.min(w*0.6,h+dif));if(Math.abs(nh-h)>2){il.style.aspectRatio='auto';il.style.height=nh+'px';}
+          /* Si el dibujo ya está en su tope y la lista sigue más larga, sus entradillas se recortan línea a línea
+             (como mucho hasta dos), de la última pieza a la primera (ADR 0045) */
+          var es=[].slice.call(li.querySelectorAll('.entradilla')).reverse(),q;
+          for(q=0;q<es.length;q++){var e=es[q],lh=parseFloat(getComputedStyle(e).lineHeight)||24,n=Math.round(e.getBoundingClientRect().height/lh);
+            while(n>2&&fondo(li)-fondo(gr)>lh/2){n--;recorta(e,n);}}}}
     });
   }
   var t;function luego(){clearTimeout(t);t=setTimeout(igualar,120);}
   if(document.fonts&&document.fonts.ready)document.fonts.ready.then(igualar);else window.addEventListener('load',igualar);
   window.addEventListener('load',igualar);window.addEventListener('resize',luego);
   document.addEventListener('click',function(e){if(e.target.closest&&e.target.closest('.filtro-grupo'))luego();});   /* la semana: al elegir un grupo cambian las filas */
+})();
+/* El dibujo de una pieza lleva a su artículo, como el titular (ADR 0045). Con Ctrl, Mayúsculas o la rueda, en otra
+   pestaña. El teclado y el lector de pantalla entran por el titular, sin un enlace repetido. */
+(function(){
+  function destino(e){var f=e.target.closest&&e.target.closest('main.portada .pieza .ilu');if(!f||f.querySelector('.ampliar'))return null;
+    var a=f.closest('.pieza').querySelector('.titular a');return a&&a.href;}
+  document.addEventListener('click',function(e){var h=destino(e);if(!h)return;
+    if(e.ctrlKey||e.metaKey||e.shiftKey)window.open(h,'_blank');else location.href=h;});
+  document.addEventListener('auxclick',function(e){var h=destino(e);if(h&&e.button===1)window.open(h,'_blank');});
 })();
 </script>"""
 
@@ -1177,6 +1193,36 @@ def titulares_parejos(ps, por_linea=34):
     return max(lineas) - min(lineas) <= 1
 
 
+def sin_viuda(t):
+    """Las dos últimas palabras del titular de un artículo, unidas por un espacio que no se parte: así la última
+    no se queda sola en su línea en los navegadores sin `text-wrap: pretty` (Firefox) (ADR 0045)."""
+    a, sep, b = t.rpartition(" ")
+    return f"{a}\u00a0{b}" if sep and len(b) < 12 else t
+
+
+def reparto(n):
+    """Las filas en que se reparten n piezas de una rejilla de tres columnas sin dejar huecos (ADR 0045): filas de
+    tres y, al final, de dos; nunca una pieza sola salvo que solo haya una. 4 → 2+2, 5 → 3+2, 7 → 3+2+2."""
+    if n <= 3:
+        return [n] if n else []
+    if n % 3 == 0:
+        return [3] * (n // 3)
+    if n % 3 == 2:
+        return [3] * (n // 3) + [2]
+    return [3] * (n // 3 - 1) + [2, 2]
+
+
+def en_filas(htmls, clase):
+    """Las piezas ya compuestas, en filas seguidas según `reparto`, cada una con sus columnas."""
+    html_, i = "", 0
+    for k, t in enumerate(reparto(len(htmls))):
+        sola = " sola" if t == 1 else ""
+        sigue = " fila-sigue" if k else ""
+        html_ += f'<div class="fila {clase}{sola}{sigue}" style="--n:{t}">{"".join(htmls[i:i + t])}</div>'
+        i += t
+    return html_
+
+
 def bloque_alterno(prof, ps, apertura, mostrar_fecha):
     """Las tres piezas del bloque de una sección en la portada, alternando dos disposiciones de una sección a la
     siguiente, como en los diarios de papel y en The Guardian (ADR 0041): con `apertura`, la más reciente con más
@@ -1219,15 +1265,16 @@ def cuerpo_portada(prof, piezas, breves, mostrar_fecha, tira=""):
     demas = [p for p in demas if p.get("seccion") not in SECCIONES_FUERA]
     mas_hoy = [p for p in demas if p["fecha"] == p0["fecha"]] if mostrar_fecha else []
     demas = [p for p in demas if p not in mas_hoy]
+    # Una sola pieza de más no se queda sola en una fila de tres (ADR 0045): sube a las destacadas, con su dibujo,
+    # y las destacadas se reparten en filas (cuatro, en dos filas de dos)
+    if len(mas_hoy) == 1:
+        destacadas.append(mas_hoy.pop())
     html_ = pieza(prof, p0, "principal", 2, True, mostrar_fecha)
     if destacadas:
-        filas = "".join(pieza(prof, p, "destacada", 2, True, mostrar_fecha) for p in destacadas)
-        sola = " sola" if len(destacadas) == 1 else ""
-        html_ += f'<div class="fila fila-destacadas{sola}" style="--n:{min(len(destacadas), 3)}">{filas}</div>'
+        html_ += en_filas([pieza(prof, p, "destacada", 2, True, mostrar_fecha, relleno=True) for p in destacadas], "fila-destacadas")
     if mas_hoy:
         # Sin título: cada pieza lleva su sección, y van en las columnas de las destacadas
-        lista = "".join(pieza(prof, p, "menor", 3, False, mostrar_fecha) for p in mas_hoy)
-        html_ += f'<div class="fila fila-menores mas-dia" style="--n:3">{lista}</div>'
+        html_ += en_filas([pieza(prof, p, "menor", 3, False, mostrar_fecha) for p in mas_hoy], "fila-menores mas-dia")
     # En la portada, los breves del día y «Hace un año» van juntos tras las piezas de hoy; en la página de un
     # número, al final, con los breves del número (ADR 0040)
     breves_dia = ""
@@ -1509,7 +1556,7 @@ def articulo(prof, ruta, d, p, eds):
     if not ante:   # sin sección: la línea del antetítulo lleva la fecha y el botón
         linea, ante = "", rot
     cab = cabeza_pieza(f"""{ante}
-    <h1 class="titular">{e(p["titular"])}</h1>
+    <h1 class="titular">{sin_viuda(e(p["titular"]))}</h1>
     <p class="entradilla">{e(p.get("entradilla"))}</p>
     {serie}""", "" if len(p.get("recursos") or []) > 1 else ilustracion(d["fecha"], p, prof, ampliable=True))
     return cabeza(f'{p["titular"]} | {L["titulo"]}', prof, p.get("entradilla", ""), ruta,
@@ -1618,7 +1665,7 @@ def articulo_reportaje(prof, ruta, d, r, eds):
         relacionadas = f'<aside class="mas sec-reportaje" aria-labelledby="t-rel"><h2 id="t-rel">{L["en_el_diario"]}</h2><ul>{items}</ul></aside>'
     compartir, plantilla = acciones(d["fecha"], r, ruta, d, eds, reportaje=True)
     cab = cabeza_pieza(f"""<p class="antetitulo">{e(r.get("antetitulo"))}</p>
-    <h1 class="titular">{e(r["titular"])}</h1>
+    <h1 class="titular">{sin_viuda(e(r["titular"]))}</h1>
     <p class="entradilla">{e(r.get("entradilla"))}</p>
     <p class="lectura fecha-pieza">{minutos_lectura(r)} {L["palabras"]}</p>""", ilustracion(d["fecha"], r, prof, ampliable=True))
     return cabeza(f'{r["titular"]} | {L["titulo"]}', prof, r.get("entradilla", ""), ruta,
@@ -2065,8 +2112,7 @@ def pagina_seccion(eds, clave):
     todas = [p for d in reversed(eds) for p in d["piezas"]
              if p.get("seccion") == clave or (clave == "biblioteca" and p.get("biblioteca"))]
     if todas:
-        cuerpo = "".join(pieza("", p, "destacada", 2, True, True, sin_seccion=True, relleno=True) for p in todas)
-        cuerpo = f'<div class="fila fila-seccion" style="--n:3">{cuerpo}</div>'
+        cuerpo = en_filas([pieza("", p, "destacada", 2, True, True, sin_seccion=True, relleno=True) for p in todas], "fila-seccion")
     else:
         cuerpo = f'<p class="vacio">{L["sin_piezas"]}</p>'
     nombre = L["secciones"][clave]

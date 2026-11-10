@@ -46,5 +46,6 @@
 | [0042](0042-app-de-android-y-lectura-sin-conexion.md) | App de Android en Google Play y lectura sin conexión |
 | [0043](0043-avisos-del-numero-en-la-app.md) | Avisos del número en la app de Android, sin servidor |
 | [0044](0044-noticias-en-columnas.md) | Las noticias, en columnas de periódico en el ordenador |
+| [0045](0045-filas-sin-piezas-sueltas.md) | Filas sin piezas sueltas: reparto fijo según el número de piezas |
 
 Plantilla: [0000-plantilla.md](0000-plantilla.md). Para crear uno: `nuevo-adr "Título"`.
