@@ -813,11 +813,11 @@ SCRIPT_FILAS = """<script>
   window.addEventListener('load',igualar);window.addEventListener('resize',luego);
   document.addEventListener('click',function(e){if(e.target.closest&&e.target.closest('.filtro-grupo'))luego();});   /* la semana: al elegir un grupo cambian las filas */
 })();
-/* El dibujo de una pieza lleva a su artículo, como el titular (ADR 0045). Con Ctrl, Mayúsculas o la rueda, en otra
+/* El dibujo de una pieza, del reportaje o de «Hace un año» lleva a su artículo, como el titular (ADR 0045). Con Ctrl, Mayúsculas o la rueda, en otra
    pestaña. El teclado y el lector de pantalla entran por el titular, sin un enlace repetido. */
 (function(){
-  function destino(e){var f=e.target.closest&&e.target.closest('main.portada .pieza .ilu');if(!f||f.querySelector('.ampliar'))return null;
-    var a=f.closest('.pieza').querySelector('.titular a');return a&&a.href;}
+  function destino(e){var f=e.target.closest&&e.target.closest('main.portada .ilu'),c=f&&f.closest('.pieza, .editorial');
+    if(!c||f.querySelector('.ampliar'))return null;var a=c.querySelector('.titular a');return a&&a.href;}
   document.addEventListener('click',function(e){var h=destino(e);if(!h)return;
     if(e.ctrlKey||e.metaKey||e.shiftKey)window.open(h,'_blank');else location.href=h;});
   document.addEventListener('auxclick',function(e){var h=destino(e);if(h&&e.button===1)window.open(h,'_blank');});

@@ -36,7 +36,7 @@ los bloques A y en «Hace un año».
   «Hace un año», uno debajo del otro. Se quita la regla que pasaba las filas a dos columnas por debajo de 60 rem.
 - **En el bloque A**, si el dibujo grande ya está en su tope y la lista sigue más larga, sus entradillas se
   recortan línea a línea, como mucho hasta dos.
-- **El dibujo de una pieza de la portada lleva a su artículo**, como el titular (Juanjo: «cuando se hace clic en
+- **El dibujo de una pieza de la portada lleva a su artículo** (también el del reportaje y el de «Hace un año»), como el titular (Juanjo: «cuando se hace clic en
   las imágenes de la portada no pasa nada… el comportamiento que se espera es entrar a leer el artículo»). Lo hace
   el script de la portada, sin envolver el dibujo en un enlace: la maqueta cuenta con que el dibujo cuelga
   directamente de la pieza, y el teclado y el lector de pantalla ya entran por el titular sin un enlace

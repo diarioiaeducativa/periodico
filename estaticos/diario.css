@@ -85,7 +85,7 @@
 /* Las filas que siguen a otra del mismo grupo (ADR 0045), separadas solo por un filete fino */
 .fila.fila-sigue { border-top-width: 1px; border-top-color: var(--filete); margin-top: 1.4rem; }
 /* El dibujo de una pieza lleva a su artículo (ADR 0045) */
-main.portada .pieza .ilu { cursor: pointer; }
+main.portada :is(.pieza, .editorial) .ilu { cursor: pointer; }
 .destacada .ilu { margin: 0 0 0.9rem; background: var(--papel-2); padding: 0.6rem; }
 /* En una fila, todos los dibujos del mismo alto aunque su lienzo no tenga la misma proporción (el del reportaje
    es más alto) */
