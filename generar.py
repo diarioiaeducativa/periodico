@@ -1031,13 +1031,17 @@ def pie(prof, eds, actual):
 
 
 FLECHA_ANT = '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m12 8-4 4 4 4"/><path d="M16 12H8"/></svg>'   # circle-arrow-left
+FLECHA_SIG = '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m12 16 4-4-4-4"/><path d="M8 12h8"/></svg>'   # circle-arrow-right
 
 
-def barra_secciones(prof, activa, ant=""):
+def barra_secciones(prof, activa, ant="", sig=""):
     """La barra de secciones bajo la mancheta, como en un periódico; «La redacción» cierra la barra, también en el móvil.
-    En la portada, `ant` (el número anterior) va como una flecha delante de «Portada», sin una línea propia."""
+    El número anterior (`ant`) y el siguiente (`sig`), en la portada y en la página de cada número, van como flechas
+    delante de «Portada», como los botones de atrás y adelante del navegador, sin una línea propia (ADR 0045)."""
     marca = ' aria-current="page"'
     enlaces = [f'<a class="dia-ant" href="{ant}" title="{L["dia_ant"]}" aria-label="{L["dia_ant"]}">{FLECHA_ANT}</a>'] if ant else []
+    if sig:
+        enlaces.append(f'<a class="dia-sig" href="{sig}" title="{L["dia_sig"]}" aria-label="{L["dia_sig"]}">{FLECHA_SIG}</a>')
     enlaces += [f'<a href="{prof or "./"}"{marca if activa == "portada" else ""}>{L["portada"]}</a>']
     enlaces += [f'<a class="sec-{c}" href="{prof}{c}.html"{marca if c == activa else ""}>{L["secciones"][c]}</a>' for c in ORDEN_SECCIONES]
     enlaces.append(f'<a class="sec-reportaje" href="{prof}reportajes.html"{marca if activa == "reportajes" else ""}>{L["reportajes"]}</a>')
@@ -1046,7 +1050,7 @@ def barra_secciones(prof, activa, ant=""):
     return f'<nav class="secciones" aria-label="{L["secciones_nav"]}"><div class="secciones-lista">{"".join(enlaces)}{quees}</div></nav>'
 
 
-def cabecera(prof, ruta, fecha, cuenta, es_portada, nav="", h1=True, activa=None, ant=""):
+def cabecera(prof, ruta, fecha, cuenta, es_portada, h1=True, activa=None, ant="", sig=""):
     """`cuenta` es el número de la edición, rodeado a mano con el bolígrafo rojo, como en un periódico.
     Con h1="dia" (la página de un número de la hemeroteca), la mancheta es el h1 de la página, con el
     enlace a la portada y la fecha solo para el lector de pantalla: se ve igual que con un <p>."""
@@ -1066,8 +1070,7 @@ def cabecera(prof, ruta, fecha, cuenta, es_portada, nav="", h1=True, activa=None
   </div>
   <{etiqueta} class="mancheta">{nombre}</{etiqueta}>
   <p class="lema">{L["lema"]}</p>
-  {barra_secciones(prof, activa, ant)}
-  {f'<nav class="navegacion" aria-label="{L["navegacion"]}">{nav}</nav>' if nav else ""}
+  {barra_secciones(prof, activa, ant, sig)}
 </header>"""
 
 
@@ -1467,7 +1470,7 @@ def descripcion_dia(dia, piezas):
     return " · ".join(elegidos) or L["lema"]
 
 
-def pagina_portada(prof, ruta, eds, piezas, breves, fecha, cuenta, es_portada, nav="", ant=""):
+def pagina_portada(prof, ruta, eds, piezas, breves, fecha, cuenta, es_portada, ant="", sig=""):
     titulo = L["titulo"] if es_portada else f'{L["titulo"]}, {fecha_larga(publicacion(fecha))}'
     dia = next((x for x in eds if x["fecha"] == fecha), {})
     # En la portada, el de la semana; en la página de un día, solo el suyo. Arriba el día que sale;
@@ -1477,7 +1480,7 @@ def pagina_portada(prof, ruta, eds, piezas, breves, fecha, cuenta, es_portada, n
     # La portada se describe con el lema del diario; la página de cada día, con lo que trae ese número
     descripcion = L["lema"] if es_portada else descripcion_dia(dia, piezas)
     return cabeza(titulo, prof, descripcion, ruta, portada=es_portada) + f"""<body class="pag-portada">
-{cabecera(prof, ruta, fecha, cuenta, es_portada, nav, h1=True if es_portada else "dia", activa="portada" if es_portada else None, ant=ant)}
+{cabecera(prof, ruta, fecha, cuenta, es_portada, h1=True if es_portada else "dia", activa="portada" if es_portada else None, ant=ant, sig=sig)}
 <main class="portada">
 {franja_reserva(dia)}
 {franja_editorial(prof, dia)}
@@ -1763,15 +1766,6 @@ def pagina_breve(prof, d, b, eds):
 {SCRIPT_TEMA}
 </body>
 </html>"""
-
-
-def nav_dia(prof, eds, i):
-    partes = []
-    if i > 0:
-        partes.append(f'<a class="ant" href="{prof}{eds[i - 1]["fecha"]}/">{L["dia_ant"]}</a>')
-    if i + 1 < len(eds):
-        partes.append(f'<a class="sig" href="{prof}{eds[i + 1]["fecha"]}/">{L["dia_sig"]}</a>')
-    return "".join(partes)
 
 
 def d_href(d):
@@ -3294,7 +3288,8 @@ def generar_idioma(codigo):
         dia = base / d["fecha"]
         escribir(dia / "index.html",
                  pagina_portada("../", f'{d["fecha"]}/', eds, d["piezas"], d.get("breves", []), d["fecha"],
-                                d["numero"], False, nav_dia("../", eds, i)))
+                                d["numero"], False, ant=f'../{eds[i - 1]["fecha"]}/' if i else "",
+                                sig=f'../{eds[i + 1]["fecha"]}/' if i + 1 < len(eds) else ""))
         for p in d["piezas"]:
             escribir(dia / f'{p["id"]}.html', articulo("../", f'{d["fecha"]}/{p["id"]}.html', d, p, eds))
         for b in d.get("breves", []):
