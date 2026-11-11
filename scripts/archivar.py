@@ -71,7 +71,10 @@ def guardar(url):
         log(f"fallo de red con {url}: {e}")
         return "fallo"
     if codigo in (301, 302) and "/web/" in destino:
-        log(f"guardada {url} → {destino}")
+        # La redirección lleva la última página que vio el navegador de Internet Archive: en la portada
+        # de la raíz, la del idioma al que salta (el suyo es el inglés), aunque lo guardado es la raíz.
+        captura = re.search(r"/web/(\d{14})", destino)
+        log(f"guardada {url} (captura {captura.group(1) if captura else destino})")
         return "ok"
     if codigo == 429:
         return "lento"
