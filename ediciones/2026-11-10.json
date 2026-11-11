@@ -9,7 +9,7 @@
       "importancia": 1,
       "grupo": "edumedia",
       "antetitulo": "Vídeo educativo con IA",
-      "titular": "Un docente pide a Fable 5.2 una animación narrada sobre la fotosíntesis y la recibe en 45 minutos",
+      "titular": "Una sola frase basta para que Fable 5.2 prepare una animación de la fotosíntesis para bachillerato",
       "entradilla": "Con un solo prompt, el modelo preparó un vídeo cuadrado con voz natural pensado para bachillerato. El autor lo considera aceptable para clase y habla de una nueva vía para crear materiales.",
       "cuerpo": [
         "Un miembro del grupo probó [Claude Fable 5.2](pieza:2026-11-09/fable-mythos-5-2), el modelo que Anthropic abrió el 9 de noviembre a todo el público, con un encargo de aula: «Hazme una animación con voz natural explicando el proceso de la fotosíntesis», con imágenes «extremadamente detalladas y fieles a la realidad científica», una narración que entienda un alumno de bachillerato, buena entonación y formato cuadrado.",

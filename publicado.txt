@@ -104,7 +104,7 @@
 - breve: Google AI Studio permite ahora crear aplicaciones con mapas, datos de lugares y rutas de G
 
 ## 2026-11-10 (publicado el miércoles 11 de noviembre de 2026)
-- pieza:2026-11-10/fable-animacion-fotosintesis (multimedia) Un docente pide a Fable 5.2 una animación narrada sobre la fotosíntesis y la recibe en 45 minutos
+- pieza:2026-11-10/fable-animacion-fotosintesis (multimedia) Una sola frase basta para que Fable 5.2 prepare una animación de la fotosíntesis para bachillerato
 - pieza:2026-11-10/edugems-eduprompts (herramientas) EduGems pasa a llamarse EduPrompts porque Google sustituye los Gems por Skills
 - pieza:2026-11-10/pentagrama-maestro (vibecoding) Una aplicación para clase de música propone colocar en el pentagrama las notas de una partitura
 - breve: Quien mantiene un agente de Claude Code en el NAS de casa cuenta que corre como servicio c
