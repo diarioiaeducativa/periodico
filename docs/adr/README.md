@@ -51,5 +51,6 @@
 | [0047](0047-la-redaccion-en-columnas.md) | «La redacción», en columnas como las noticias |
 | [0048](0048-iconos-con-el-dibujo-de-la-vista-previa.md) | Los iconos, con el dibujo de la imagen de vista previa |
 | [0049](0049-tiza-y-algoritmo-en-la-cabecera.md) | Tiza y Algoritmo, en las orejas de la cabecera |
+| [0050](0050-las-paginas-que-acumulan-por-meses.md) | Las páginas que acumulan, con lo reciente y el resto por meses |
 
 Plantilla: [0000-plantilla.md](0000-plantilla.md). Para crear uno: `nuevo-adr "Título"`.

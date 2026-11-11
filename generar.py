@@ -80,7 +80,7 @@ IDIOMAS = {
         "archivo": "Archivo por días", "pie_archivo": "Archivo", "pie_diario": "El diario", "este_numero": "este número",
         "anyo": "Año", "hemeroteca": "Hemeroteca", "hemeroteca_txt": "Todos los números, por meses y semanas.", "nb_anteriores": "Boletines anteriores", "semana_n": "Semana {n}",
         # La semana y el mes (ADR 0034)
-        "semana": "La semana", "semana_txt": "Todo lo que contó el diario de lo que se habló en los grupos esa semana, por secciones, con el pódcast y el vídeo de cada grupo. Elige un grupo para ver solo lo suyo.", "semana_actual": "Resumen semanal", "grupo_filtro": "Ver lo de un grupo", "grupo_todos": "Todos", "sin_grupo": "Este grupo no tiene piezas esta semana.", "nb_h": "El pódcast y el vídeo de la semana", "nb_txt": "Cada lunes, NotebookLM, de Google, prepara un pódcast y un vídeo de cada grupo con su conversación completa de la semana, también lo que el diario no ha contado. Un agente de IA los contrasta con la conversación antes de publicarlos.", "nb_es": "", "nb_pendiente": "El pódcast y el vídeo de cada grupo se añaden aquí el lunes por la mañana.", "nb_video": "Vídeo", "nb_ver": "Reproducir el vídeo de {g}", "nb_youtube": "Verlo en YouTube", "nb_podcast": "Pódcast", "nb_archive": "Escucharlo en Internet Archive", "cs_h": "Lo más importante de la semana", "cs_h_g": "Lo más importante de la semana en {g}", "cs_nota": "Lo escribe un agente de IA con lo que contó el diario esa semana, y otro lo contrasta con cada pieza antes de publicarlo.", "numeros_semana": "Los números de la semana", "sem_ant": "Semana anterior", "sem_sig": "Semana siguiente", "todo_mes": "Todo el mes", "mes": "El mes", "mes_txt": "Las semanas del mes, con la pieza que abrió cada número.", "mes_ant": "Mes anterior", "mes_sig": "Mes siguiente", "ver_semana": "La semana entera, por secciones", "con_nb": "Con el pódcast y el vídeo de cada grupo", "boletines_h": "Boletines semanales anteriores", "boletines_txt": "Hasta noviembre de 2026, cada grupo tenía su propio boletín semanal. Siguen en su web:",
+        "semana": "La semana", "semana_txt": "Todo lo que contó el diario de lo que se habló en los grupos esa semana, por secciones, con el pódcast y el vídeo de cada grupo. Elige un grupo para ver solo lo suyo.", "semana_actual": "Resumen semanal", "grupo_filtro": "Ver lo de un grupo", "grupo_todos": "Todos", "sin_grupo": "Este grupo no tiene piezas esta semana.", "nb_h": "El pódcast y el vídeo de la semana", "nb_txt": "Cada lunes, NotebookLM, de Google, prepara un pódcast y un vídeo de cada grupo con su conversación completa de la semana, también lo que el diario no ha contado. Un agente de IA los contrasta con la conversación antes de publicarlos.", "nb_es": "", "nb_pendiente": "El pódcast y el vídeo de cada grupo se añaden aquí el lunes por la mañana.", "nb_video": "Vídeo", "nb_ver": "Reproducir el vídeo de {g}", "nb_youtube": "Verlo en YouTube", "nb_podcast": "Pódcast", "nb_archive": "Escucharlo en Internet Archive", "cs_h": "Lo más importante de la semana", "cs_h_g": "Lo más importante de la semana en {g}", "cs_nota": "Lo escribe un agente de IA con lo que contó el diario esa semana, y otro lo contrasta con cada pieza antes de publicarlo.", "numeros_semana": "Los números de la semana", "sem_ant": "Semana anterior", "sem_sig": "Semana siguiente", "todo_mes": "Todo el mes", "mes": "El mes", "mes_txt": "Las semanas del mes, con la pieza que abrió cada número.", "mes_ant": "Mes anterior", "mes_sig": "Mes siguiente", "por_meses": "Por meses", "ver_semana": "La semana entera, por secciones", "con_nb": "Con el pódcast y el vídeo de cada grupo", "boletines_h": "Boletines semanales anteriores", "boletines_txt": "Hasta noviembre de 2026, cada grupo tenía su propio boletín semanal. Siguen en su web:",
         "todos_numeros": "Hemeroteca: todos los números",
         "compartir": "Compartir", "copiado": "Enlace copiado", "una_columna": "Una columna", "columnas": "Columnas", "una_columna_t": "Leer las noticias en una sola columna", "columnas_t": "Leer las noticias en columnas, como en un periódico", "compartir_breve": "Compartir este breve", "mas_en": "Más en", "mas_diario": "Más en el diario",
         "no_existe": "Esta página no existe",
@@ -207,7 +207,7 @@ IDIOMAS = {
         "archivo": "Arxiu per dies", "pie_archivo": "Arxiu", "pie_diario": "El diari", "este_numero": "aquest número",
         "anyo": "Any", "hemeroteca": "Hemeroteca", "hemeroteca_txt": "Tots els números, per mesos i setmanes.", "nb_anteriores": "Butlletins anteriors", "semana_n": "Setmana {n}",
         # La semana y el mes (ADR 0034)
-        "semana": "La setmana", "semana_txt": "Tot el que va explicar el diari del que es va parlar als grups aquella setmana, per seccions, amb el pòdcast i el vídeo de cada grup. Tria un grup per veure només el seu.", "semana_actual": "Resum setmanal", "grupo_filtro": "Veure el d'un grup", "grupo_todos": "Tots", "sin_grupo": "Aquest grup no té peces aquesta setmana.", "nb_h": "El pòdcast i el vídeo de la setmana", "nb_txt": "Cada dilluns, NotebookLM, de Google, prepara un pòdcast i un vídeo de cada grup amb tota la seva conversa de la setmana, també el que el diari no ha explicat. Un agent d'IA els contrasta amb la conversa abans de publicar-los.", "nb_es": "Són en castellà.", "nb_pendiente": "El pòdcast i el vídeo de cada grup s'afegeixen aquí dilluns al matí.", "nb_video": "Vídeo", "nb_ver": "Reproduir el vídeo de {g}", "nb_youtube": "Mira'l a YouTube", "nb_podcast": "Pòdcast", "nb_archive": "Escolta'l a Internet Archive", "cs_h": "El més important de la setmana", "cs_h_g": "El més important de la setmana a {g}", "cs_nota": "L'escriu un agent d'IA amb el que va explicar el diari aquella setmana, i un altre el contrasta amb cada peça abans de publicar-lo.", "numeros_semana": "Els números de la setmana", "sem_ant": "Setmana anterior", "sem_sig": "Setmana següent", "todo_mes": "Tot el mes", "mes": "El mes", "mes_txt": "Les setmanes del mes, amb la peça que va obrir cada número.", "mes_ant": "Mes anterior", "mes_sig": "Mes següent", "ver_semana": "Tota la setmana, per seccions", "con_nb": "Amb el pòdcast i el vídeo de cada grup", "boletines_h": "Butlletins setmanals anteriors", "boletines_txt": "Fins al novembre de 2026, cada grup tenia el seu propi butlletí setmanal. Continuen al seu web:",
+        "semana": "La setmana", "semana_txt": "Tot el que va explicar el diari del que es va parlar als grups aquella setmana, per seccions, amb el pòdcast i el vídeo de cada grup. Tria un grup per veure només el seu.", "semana_actual": "Resum setmanal", "grupo_filtro": "Veure el d'un grup", "grupo_todos": "Tots", "sin_grupo": "Aquest grup no té peces aquesta setmana.", "nb_h": "El pòdcast i el vídeo de la setmana", "nb_txt": "Cada dilluns, NotebookLM, de Google, prepara un pòdcast i un vídeo de cada grup amb tota la seva conversa de la setmana, també el que el diari no ha explicat. Un agent d'IA els contrasta amb la conversa abans de publicar-los.", "nb_es": "Són en castellà.", "nb_pendiente": "El pòdcast i el vídeo de cada grup s'afegeixen aquí dilluns al matí.", "nb_video": "Vídeo", "nb_ver": "Reproduir el vídeo de {g}", "nb_youtube": "Mira'l a YouTube", "nb_podcast": "Pòdcast", "nb_archive": "Escolta'l a Internet Archive", "cs_h": "El més important de la setmana", "cs_h_g": "El més important de la setmana a {g}", "cs_nota": "L'escriu un agent d'IA amb el que va explicar el diari aquella setmana, i un altre el contrasta amb cada peça abans de publicar-lo.", "numeros_semana": "Els números de la setmana", "sem_ant": "Setmana anterior", "sem_sig": "Setmana següent", "todo_mes": "Tot el mes", "mes": "El mes", "mes_txt": "Les setmanes del mes, amb la peça que va obrir cada número.", "mes_ant": "Mes anterior", "mes_sig": "Mes següent", "por_meses": "Per mesos", "ver_semana": "Tota la setmana, per seccions", "con_nb": "Amb el pòdcast i el vídeo de cada grup", "boletines_h": "Butlletins setmanals anteriors", "boletines_txt": "Fins al novembre de 2026, cada grup tenia el seu propi butlletí setmanal. Continuen al seu web:",
         "todos_numeros": "Hemeroteca: tots els números",
         "compartir": "Comparteix", "copiado": "Enllaç copiat", "una_columna": "Una columna", "columnas": "Columnes", "una_columna_t": "Llegir les notícies en una sola columna", "columnas_t": "Llegir les notícies en columnes, com en un diari", "compartir_breve": "Comparteix aquest breu", "mas_en": "Més a", "mas_diario": "Més al diari",
         "no_existe": "Aquesta pàgina no existeix",
@@ -1029,7 +1029,7 @@ def pie(prof, eds, actual):
     <p>{L["redactado"]}</p>
     {trad}
     <p>© {datetime.date.fromisoformat(eds[-1]["fecha"]).year} {enlace(WEB_JUANJO, "Juan José de Haro")} {L["y"]} {enlace(WEB_RAUL, "Raül Torres")}. {L["licencia"]} {enlace("https://creativecommons.org/licenses/by-sa/4.0/" + L["deed"], "CC BY-SA 4.0")}.</p>
-    <p>{L["letra"]} {enlace("https://github.com/productiontype/Newsreader", "Newsreader")} (Production Type, <a href="{prof}fuentes/OFL.txt">OFL</a>). {L["iconos"]} {enlace("https://lucide.dev", "Lucide")} (<a href="{prof}LICENSE-LUCIDE.txt">ISC</a>).</p>
+    <p>{L["letra"]} {enlace("https://github.com/productiontype/Newsreader", "Newsreader")} (Production Type, <a href="{prof}{"../" if L["carpeta"] else ""}fuentes/OFL.txt">OFL</a>). {L["iconos"]} {enlace("https://lucide.dev", "Lucide")} (<a href="{prof}{"../" if L["carpeta"] else ""}LICENSE-LUCIDE.txt">ISC</a>).</p>
     <p>{enlace(url_vcer(), L["vcer"])}.</p>
     </div>
   </nav>
@@ -1724,20 +1724,8 @@ def articulo_reportaje(prof, ruta, d, r, eds):
 </html>"""
 
 
-def pagina_reportajes(eds):
-    reps = [d["reportaje"] for d in reversed(eds) if d.get("reportaje")]
-    cuerpo = "".join(franja_reportaje("", r) for r in reps) or f'<p class="vacio">{L["sin_reportajes"]}</p>'
-    return cabeza(f'{L["reportajes"]} | {L["titulo"]}', "", L["descripciones"]["reportajes"], "reportajes.html") + f"""<body class="pag-seccion">
-{cabecera("", "reportajes.html", eds[-1]["fecha"], eds[-1]["numero"], True, h1=False, activa="reportajes")}
-<main class="portada">
-<h1 class="titulo-seccion sec-reportaje">{icono("reportaje")} {L["reportajes"]}</h1>
-<p class="descripcion-seccion">{descripcion("reportajes")}</p>
-{cuerpo}
-</main>
-{pie("", eds, None)}
-{SCRIPT_TEMA}
-</body>
-</html>"""
+def pagina_reportajes(eds, mes=None):
+    return pagina_lista(eds, lista_reportajes(eds), mes)
 
 
 MAS_PIEZAS = 3
@@ -2148,26 +2136,8 @@ def descripcion(clave):
     return L["descripciones"][clave].format(enlace=enlace(TEMA_BIBLIOTECA, L["biblioteca_enlace"]), repositorio=enlace(REPOSITORIO, L["repositorio_enlace"]))
 
 
-def pagina_seccion(eds, clave):
-    todas = [p for d in reversed(eds) for p in d["piezas"]
-             if p.get("seccion") == clave or (clave == "biblioteca" and p.get("biblioteca"))]
-    if todas:
-        cuerpo = en_filas([pieza("", p, "destacada", 2, True, True, sin_seccion=True, relleno=True) for p in todas], "fila-seccion")
-    else:
-        cuerpo = f'<p class="vacio">{L["sin_piezas"]}</p>'
-    nombre = L["secciones"][clave]
-    return cabeza(f'{nombre} | {L["titulo"]}', "", L["descripciones"][clave].format(enlace=L["biblioteca_enlace"], repositorio=L["repositorio_enlace"]), f"{clave}.html") + f"""<body class="pag-seccion">
-{cabecera("", f"{clave}.html", eds[-1]["fecha"], eds[-1]["numero"], True, h1=False, activa=clave)}
-<main class="portada">
-<h1 class="titulo-seccion sec-{clave}">{icono(clave)} {nombre}</h1>
-<p class="descripcion-seccion">{descripcion(clave)}</p>
-{cuerpo}
-</main>
-{pie("", eds, None)}
-{SCRIPT_TEMA}
-{SCRIPT_FILAS}
-</body>
-</html>"""
+def pagina_seccion(eds, clave, mes=None):
+    return pagina_lista(eds, lista_seccion(eds, clave), mes)
 
 
 # --- La semana y el mes (ADR 0034) -------------------------------------------------------------------
@@ -2559,6 +2529,11 @@ def sitemap(eds):
         rutas.append((f"semana/{sem}/", publicacion(ds[-1]["fecha"])))
     for mes, sems in meses_y_semanas(eds).items():
         rutas.append((f"mes/{mes}/", publicacion(por_semanas(eds)[sems[-1]][-1]["fecha"])))
+    for cfg in listas(eds):   # los meses de las páginas que acumulan (ADR 0050)
+        if len(cfg["items"]) > cfg["n"]:
+            for m in meses_lista(cfg):
+                ult = max(publicacion(cfg["fecha"](x)) for x in cfg["items"] if mes_pub(cfg["fecha"](x)) == m)
+                rutas.append((f'{cfg["carpeta"]}/{m}.html', ult))
     for d in eds:
         sale = publicacion(d["fecha"])
         rutas.append((f'{d["fecha"]}/', sale))
@@ -2663,40 +2638,115 @@ def pagina_buscar(eds):
 </html>"""
 
 
-def pagina_breves(eds):
+# --- Las páginas que acumulan (ADR 0050) ---------------------------------------------------------------
+# Las secciones, «Breves», «Reportajes» y «La viñeta» enseñan lo más reciente y, al pie, los meses anteriores;
+# cada mes, en su página (`<carpeta>/AAAA-MM.html`), con todo lo que salió ese mes. El mes es el de la fecha
+# de publicación, la que ve el lector junto a cada pieza. Así ninguna página crece sin fin.
+RECIENTES = {"seccion": 12, "reportajes": 4, "breves": 7, "vineta": 7}
+
+
+def mes_pub(fecha):
+    return publicacion(fecha)[:7]
+
+
+def lista_seccion(eds, clave):
+    todas = [p for d in reversed(eds) for p in d["piezas"]
+             if p.get("seccion") == clave or (clave == "biblioteca" and p.get("biblioteca"))]
+    nombre = L["secciones"][clave]
+    return {"carpeta": clave, "pagina": f"{clave}.html", "nombre": nombre, "icono": icono(clave), "clase": f"sec-{clave}",
+            "activa": clave, "meta": L["descripciones"][clave].format(enlace=L["biblioteca_enlace"], repositorio=L["repositorio_enlace"]),
+            "descripcion": descripcion(clave), "items": todas, "fecha": lambda p: p["fecha"], "n": RECIENTES["seccion"],
+            "pintar": lambda prof, ps: en_filas([pieza(prof, p, "destacada", 2, True, True, sin_seccion=True, relleno=True) for p in ps], "fila-seccion"),
+            "vacio": L["sin_piezas"], "main": "portada", "scripts": SCRIPT_FILAS}
+
+
+def lista_reportajes(eds):
+    reps = [d["reportaje"] for d in reversed(eds) if d.get("reportaje")]
+    return {"carpeta": "reportajes", "pagina": "reportajes.html", "nombre": L["reportajes"], "icono": icono("reportaje"),
+            "clase": "sec-reportaje", "activa": "reportajes", "meta": L["descripciones"]["reportajes"],
+            "descripcion": descripcion("reportajes"), "items": reps, "fecha": lambda r: r["fecha"], "n": RECIENTES["reportajes"],
+            "pintar": lambda prof, rs: "".join(franja_reportaje(prof, r) for r in rs),
+            "vacio": L["sin_reportajes"], "main": "portada", "scripts": ""}
+
+
+def lista_breves(eds):
     """Todos los breves, del más reciente al más antiguo, agrupados por el día en que salieron."""
-    bloques = []
-    for d in reversed(eds):
-        if d.get("breves"):
-            sale = publicacion(d["fecha"])
-            bloques.append(f'<h2><a href="{d["fecha"]}/">{mayus(fecha_larga(sale))}</a></h2>'
-                           f'<div class="lista-breves">{bloque_breves(d["breves"], False, en_bloque=True)}</div>')
-    return cabeza(f'{L["breves"]} | {L["titulo"]}', "", L["descripciones"]["breves"], "breves.html") + f"""<body class="pag-seccion">
-{cabecera("", "breves.html", eds[-1]["fecha"], eds[-1]["numero"], True, h1=False)}
-<main class="portada pagina-breves">
-<h1 class="titulo-seccion sec-breves">{icono("breves")} {L["breves"]}</h1>
-<p class="descripcion-seccion">{descripcion("breves")}</p>
-{"".join(bloques)}
+    def pintar(prof, ds):
+        return "".join(f'<h2><a href="{prof}{d["fecha"]}/">{mayus(fecha_larga(publicacion(d["fecha"])))}</a></h2>'
+                       f'<div class="lista-breves">{bloque_breves(d["breves"], False, en_bloque=True)}</div>' for d in ds)
+    return {"carpeta": "breves", "pagina": "breves.html", "nombre": L["breves"], "icono": icono("breves"), "clase": "sec-breves",
+            "activa": None, "meta": L["descripciones"]["breves"], "descripcion": descripcion("breves"),
+            "items": [d for d in reversed(eds) if d.get("breves")], "fecha": lambda d: d["fecha"], "n": RECIENTES["breves"],
+            "pintar": pintar, "vacio": "", "main": "portada pagina-breves", "scripts": ""}
+
+
+def lista_vinetas(eds):
+    """Las viñetas, de la más reciente a la más antigua; solo los días que la tienen."""
+    dias = [d["fecha"] for d in reversed(eds) if bloque_vineta("", eds, d["fecha"], en_archivo=True)]
+    return {"carpeta": "vineta", "pagina": "vineta.html", "nombre": L["vineta_titulo"], "icono": icono("vineta"), "clase": "sec-vineta",
+            "activa": "vineta", "meta": L["lema"], "descripcion": descripcion("vineta"), "items": dias, "fecha": lambda f: f,
+            "n": RECIENTES["vineta"], "pintar": lambda prof, fs: "".join(bloque_vineta(prof, eds, f, en_archivo=True) for f in fs),
+            "vacio": L["sin_vinetas"], "main": "portada", "scripts": ""}
+
+
+def listas(eds):
+    """Todas las páginas que acumulan, para escribirlas con sus meses y ponerlas en el mapa del sitio."""
+    return [lista_seccion(eds, c) for c in TODAS_SECCIONES] + [lista_reportajes(eds), lista_breves(eds), lista_vinetas(eds)]
+
+
+def meses_lista(cfg):
+    """Los meses con algo, del más reciente al más antiguo."""
+    return sorted({mes_pub(cfg["fecha"](x)) for x in cfg["items"]}, reverse=True)
+
+
+def pagina_lista(eds, cfg, mes=None):
+    """La página de una sección (o de los breves, los reportajes o las viñetas) o, con `mes`, la de uno de sus meses."""
+    meses = meses_lista(cfg)
+    if mes is None:
+        prof, ruta = "", cfg["pagina"]
+        items = cfg["items"][:cfg["n"]]
+        cuerpo = cfg["pintar"](prof, items) if items else (f'<p class="vacio">{cfg["vacio"]}</p>' if cfg["vacio"] else "")
+        if len(cfg["items"]) > cfg["n"]:
+            enlaces = " · ".join(f'<a href="{cfg["carpeta"]}/{m}.html">{mes_largo(m + "-01")}</a>' for m in meses)
+            cuerpo += (f'<nav class="archivo-meses" aria-labelledby="t-meses"><h2 id="t-meses">{L["por_meses"]}</h2>'
+                       f'<p>{enlaces}</p></nav>')
+        titulo, encabezado = f'{cfg["nombre"]} | {L["titulo"]}', (
+            f'<h1 class="titulo-seccion {cfg["clase"]}">{cfg["icono"]} {cfg["nombre"]}</h1>\n'
+            f'<p class="descripcion-seccion">{cfg["descripcion"]}</p>')
+    else:
+        prof, ruta = "../", f'{cfg["carpeta"]}/{mes}.html'
+        cuerpo = cfg["pintar"](prof, [x for x in cfg["items"] if mes_pub(cfg["fecha"](x)) == mes])
+        i = meses.index(mes)
+        nav = []
+        if i + 1 < len(meses):
+            nav.append(f'<a href="{meses[i + 1]}.html">← {L["mes_ant"]}</a>')
+        nav.append(f'<a href="../{cfg["pagina"]}">{cfg["nombre"]}</a>')
+        if i > 0:
+            nav.append(f'<a href="{meses[i - 1]}.html">{L["mes_sig"]} →</a>')
+        nombre_mes = mes_largo(mes + "-01")
+        titulo, encabezado = f'{cfg["nombre"]} · {nombre_mes} | {L["titulo"]}', (
+            f'<p class="seccion semana-rotulo {cfg["clase"]}"><a href="../{cfg["pagina"]}">{cfg["icono"]} {cfg["nombre"]}</a></p>\n'
+            f'<h1 class="titulo-seccion">{nombre_mes}</h1>\n'
+            f'<nav class="semana-nav" aria-label="{L["navegacion"]}">{" · ".join(nav)}</nav>')
+    return cabeza(titulo, prof, cfg["meta"], ruta) + f"""<body class="pag-seccion">
+{cabecera(prof, ruta, eds[-1]["fecha"], eds[-1]["numero"], True, h1=False, activa=cfg["activa"])}
+<main class="{cfg["main"]}">
+{encabezado}
+{cuerpo}
 </main>
-{pie("", eds, None)}
+{pie(prof, eds, None)}
 {SCRIPT_TEMA}
+{cfg["scripts"]}
 </body>
 </html>"""
 
 
-def pagina_vinetas(eds):
-    tiras = "".join(bloque_vineta("", eds, d["fecha"], en_archivo=True) for d in reversed(eds))
-    return cabeza(f'{L["vineta_titulo"]} | {L["titulo"]}', "", L["lema"], "vineta.html") + f"""<body class="pag-seccion">
-{cabecera("", "vineta.html", eds[-1]["fecha"], eds[-1]["numero"], True, h1=False, activa="vineta")}
-<main class="portada">
-<h1 class="titulo-seccion sec-vineta">{icono("vineta")} {L["vineta_titulo"]}</h1>
-<p class="descripcion-seccion">{descripcion("vineta")}</p>
-{tiras or f'<p class="vacio">{L["sin_vinetas"]}</p>'}
-</main>
-{pie("", eds, None)}
-{SCRIPT_TEMA}
-</body>
-</html>"""
+def pagina_breves(eds, mes=None):
+    return pagina_lista(eds, lista_breves(eds), mes)
+
+
+def pagina_vinetas(eds, mes=None):
+    return pagina_lista(eds, lista_vinetas(eds), mes)
 
 
 # ---------------------------------------------------------------------------------------------------
@@ -3278,6 +3328,10 @@ def generar_idioma(codigo):
     escribir(base / "videos.html", pagina_videos(eds))
     escribir(base / "reportajes.html", pagina_reportajes(eds))
     escribir(base / "breves.html", pagina_breves(eds))
+    for cfg in listas(eds):   # cada mes de las páginas que acumulan (ADR 0050)
+        if len(cfg["items"]) > cfg["n"]:
+            for m in meses_lista(cfg):
+                escribir(base / cfg["carpeta"] / f"{m}.html", pagina_lista(eds, cfg, m))
     escribir(base / "buscar.html", pagina_buscar(eds))
     escribir(base / "archivo.html", pagina_hemeroteca(eds))
     shutil.rmtree(base / "semana", ignore_errors=True)
