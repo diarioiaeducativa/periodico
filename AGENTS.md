@@ -102,6 +102,9 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
   estructurados de cada pieza salen de `generar.py` (`cabeza()`, `datos_noticia()`). El diario está en
   Google Search Console, con la cuenta de Juanjo: `estaticos/google0f64171555c8a8ac.html` lo verifica y no
   se borra; de esa verificación depende también la de Bing Webmaster Tools. Una página nueva que deba indexarse pasa por `cabeza()` y entra en `sitemap()`.
+- **Wayback Machine** (ADR 0046): `publicar-nas.sh` lanza en segundo plano `scripts/archivar.py FECHA`, que
+  pide a Internet Archive (Save Page Now, sin cuenta) la portada, el día y cada pieza en los cinco idiomas,
+  una cada 20 s; registro en `registro/archivo.log`. Para un día ya publicado, a mano con la misma orden.
 - **La semana y el mes** (ADR 0034): `semana/AAAA-WW/` (semana de los mensajes, selector `?grupo=`),
   `mes/AAAA-MM/` y la hemeroteca por semanas. El boletín deja el pódcast y el vídeo de cada grupo en
   `multimedia/AAAA-WW.json` (formato en su `LEEME.md`) y `reloj.sh` vuelve a publicar solo la web con

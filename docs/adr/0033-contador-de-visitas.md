@@ -44,7 +44,8 @@ veinticinco meses» (garantía 3, p. 4).
   visita y el título, para mostrarlo en el panel. Nada de IP, navegador ni identificador.
 - **No se cuentan** los robots (por el agente de usuario, en el navegador y en el servidor), los
   navegadores automatizados (`navigator.webdriver`, también las pruebas con Playwright), la portada que
-  salta a otro idioma (`window.SALTO`) ni los navegadores marcados con `?nocontar=1` (`?nocontar=0`
+  salta a otro idioma (`window.SALTO`), lo que se abre fuera de `diarioiaeducativa.github.io` (las copias de la
+  Wayback Machine, ADR 0046, y la vista previa de casa) ni los navegadores marcados con `?nocontar=1` (`?nocontar=0`
   lo deshace), para que los autores no cuenten sus propias visitas. La marca la pone el panel: la
   primera vez que un autor lo abre en un navegador, salta a `redaccion.html?nocontar=1&volver=1` del
   diario, que guarda la marca y vuelve al panel (`?marcado=1`), y el panel recuerda que ese navegador

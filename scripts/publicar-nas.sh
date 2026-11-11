@@ -65,6 +65,10 @@ else
   log "sin avisos para el $PUBLICA: el bot no anunciará el número"
 fi
 
+# El número, a la Wayback Machine (ADR 0046): en segundo plano, para no retrasar nada; el script espera a
+# que GitHub Pages lo despliegue y deja su registro en registro/archivo.log.
+nohup python3 scripts/archivar.py "$FECHA" >> registro/archivo.log 2>&1 &
+
 # Lo escrito por los agentes, al repositorio de la redacción (los mensajes de dias/ no se suben).
 # Solo las carpetas que existen: si falta una, git add no añade nada y la redacción no se guarda.
 # Las carpetas traducidas, una por idioma (ADR 0026); las de borradores no se suben (.gitignore).

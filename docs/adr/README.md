@@ -47,5 +47,6 @@
 | [0043](0043-avisos-del-numero-en-la-app.md) | Avisos del número en la app de Android, sin servidor |
 | [0044](0044-noticias-en-columnas.md) | Las noticias, en columnas de periódico en el ordenador |
 | [0045](0045-filas-sin-piezas-sueltas.md) | Filas sin piezas sueltas: reparto fijo según el número de piezas |
+| [0046](0046-el-numero-en-la-wayback-machine.md) | Cada número, en la Wayback Machine |
 
 Plantilla: [0000-plantilla.md](0000-plantilla.md). Para crear uno: `nuevo-adr "Título"`.

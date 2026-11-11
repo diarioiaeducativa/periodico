@@ -595,12 +595,13 @@ def imagen_og(ruta, codigo):
 # navegadores automatizados, la portada que salta a otro idioma ni los navegadores marcados con
 # ?nocontar=1 (?nocontar=0 lo deshace). El panel marca así, con un salto de ida y vuelta, cada navegador
 # desde el que entran los autores (volver=1; la vuelta es fija, al panel). El widget para otras webs
-# (insertar.html) no lleva contador.
+# (insertar.html) no lleva contador. Solo cuenta en la dirección del diario: ni las copias de la Wayback
+# Machine (ADR 0046) ni la vista previa de casa.
 CONTADOR = """<script>try{(function(){
 var q=new URLSearchParams(location.search),k='diario.nocontar';
 if(q.get('nocontar')==='1')localStorage.setItem(k,'1');else if(q.get('nocontar')==='0')localStorage.removeItem(k);
 if(q.get('volver')==='1'){location.replace('https://bilateria.org/app/diario-ia-educativa/?marcado=1');return;}
-if(window.SALTO||navigator.webdriver||localStorage.getItem(k)||/bot|crawl|spider|slurp|preview|lighthouse|headless/i.test(navigator.userAgent))return;
+if(location.hostname!=='diarioiaeducativa.github.io'||window.SALTO||navigator.webdriver||localStorage.getItem(k)||/bot|crawl|spider|slurp|preview|lighthouse|headless/i.test(navigator.userAgent))return;
 var v=JSON.parse(localStorage.getItem('diario.visita')||'null'),ahora=Date.now(),p=location.pathname,nueva=!v||!(ahora-v.t<18e5);
 if(nueva)v={t:ahora,p:[]};
 var cuenta=v.p.indexOf(p)<0;v.t=ahora;if(cuenta)v.p.push(p);
