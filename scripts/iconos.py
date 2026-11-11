@@ -1,7 +1,8 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 """Los iconos del diario (ADR 0048): Tiza y Algoritmo cogidos de la mano, el dibujo de la imagen
 de vista previa (vineta.py) sobre el papel del diario, con los trazos engrosados para que se lea en pequeño.
-La pestaña del navegador sigue con favicon.svg, más sencillo, que se reconoce mejor a 16 px.
+La pestaña del navegador lleva una versión simplificada del mismo dibujo, estaticos/favicon.svg, hecha a
+mano (sin piernas, polvo ni rayas, con los trazos más gruesos), de la que sale aquí favicon-32.png.
 
     python3 scripts/iconos.py
 
@@ -65,6 +66,8 @@ SALIDAS = {
 }
 
 if __name__ == "__main__":
+    subprocess.run(["rsvg-convert", "-w", "32", "-h", "32", str(RAIZ / "estaticos/favicon.svg"),
+                    "-o", str(RAIZ / "estaticos/favicon-32.png")], check=True)
     with tempfile.TemporaryDirectory() as tmp:
         for ruta, (lado, svg) in SALIDAS.items():
             fuente = Path(tmp) / "icono.svg"
