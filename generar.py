@@ -30,6 +30,11 @@ MAQUETA = "diario"
 BASE = os.environ.get("PERIODICO_BASE", "https://diarioiaeducativa.github.io/")
 ORDEN_SECCIONES = ["herramientas", "vibecoding", "multimedia", "debates", "novedades", "biblioteca"]
 SECCIONES_FUERA = ["hace-un-ano"]   # con su página, pero sin entrada en el menú: se llega desde el número y el pie (ADR 0040)
+# «La redacción» en columnas (ADR 0047): los apartados de `secciones`, por su posición, en bloques por tema:
+# cómo trabajan los agentes; las secciones del diario; quién lo lee y quién lo hace. El último empieza por las
+# comunidades, con su diagrama arriba de la primera columna: en medio, al no poder partirse, dejaba un hueco
+# al pie de la última. Mismo orden en los cinco idiomas.
+BLOQUES_REDACCION = ((0, 1, 2), (3, 4, 5, 6, 7), (11, 12, 8, 9, 10, 13))
 TODAS_SECCIONES = ORDEN_SECCIONES + SECCIONES_FUERA
 TEMA_BIBLIOTECA = "https://t.me/ChatGPTedu/21753"
 REPOSITORIO = "https://vibe-coding-educativo.github.io/app_edu/"   # el Repositorio de recursos de VCE (ADR 0008)
@@ -2057,25 +2062,41 @@ def pagina_redaccion(eds):
     # El diagrama de los grupos, tras la sección que los presenta (la que nombra a {chatgpt})
     venn = comunidades_figura()
     # La de las visitas es también la política de privacidad que enlaza la ficha de Google Play (ADR 0042)
-    resto = "".join((f'<h2 id="comunidades">{t}</h2>{venn}' if "{chatgpt}" in x else
-                     f'<h2 id="privacidad">{t}</h2>' if "{aepd}" in x else
-                     f'<h2 id="contacto">{t}</h2>' if "{incidencias}" in x else f"<h2>{t}</h2>") + f"<p>{x.format(**grupos)}</p>"
-                    for t, x in R["secciones"])
+    apartados = [(f'<h2 id="comunidades">{t}</h2>{venn}' if "{chatgpt}" in x else
+                  f'<h2 id="privacidad">{t}</h2>' if "{aepd}" in x else
+                  f'<h2 id="contacto">{t}</h2>' if "{incidencias}" in x else f"<h2>{t}</h2>") + f"<p>{x.format(**grupos)}</p>"
+                 for t, x in R["secciones"]]
+    # En el ordenador, en columnas como las noticias (ADR 0047): los apartados van en bloques por tema (cómo
+    # trabajan los agentes, las secciones del diario, quién lo lee y quién lo hace), cada uno a lo ancho y con
+    # el texto en columnas, para que ningún bloque pase de una pantalla ni un apartado corto quede repartido
+    # en tres columnas de una línea. En una columna y en el móvil, todo sigue una detrás de otro.
+    usados = {i for bloque in BLOQUES_REDACCION for i in bloque}
+    bloques = [list(b) for b in BLOQUES_REDACCION] + [[i for i in range(len(apartados)) if i not in usados]]
+    resto = "".join(f'<section class="red-bloque">{"".join(apartados[i] for i in b if i < len(apartados))}</section>'
+                    for b in bloques if any(i < len(apartados) for i in b))
     enlace_pres = f'<p class="presentacion"><a href="{d_href(pres)}">{L["presentacion"]}</a></p>' if pres else ""
     cab = cabecera("", "redaccion.html", eds[-1]["fecha"], eds[-1]["numero"], True, h1=False, activa="redaccion")
+    cabeza_red = cabeza_pieza(f"""<p class="antetitulo con-fecha"><span class="seccion-dcha">{boton_columnas()}</span></p>
+<h1 class="titular">{L["quees"]}</h1>
+<p class="entradilla">{R["intro"]}</p>""", "")
     return cabeza(f'{L["quees"]} | {L["titulo"]}', "", R["intro"], "redaccion.html") + f"""<body class="pag-que-es">
 {cab}
-<main class="articulo que-es redaccion">
-<h1 class="titular">{L["quees"]}</h1>
-<p class="entradilla">{R["intro"]}</p>
+<main class="articulo que-es redaccion en-columnas">
+{cabeza_red}
+<section class="red-proceso">
 {organigrama}
+<div class="red-texto">
 <h2>{R["proceso_titulo"]}</h2>
 <p>{R["proceso_intro"]}</p>
 <ol class="proceso">{pasos}</ol>
 <p>{R["proceso_pie"]}</p>
+</div>
+</section>
+<section class="red-bloque">
 <h2>{R["equipo_titulo"]}</h2>
 <ul class="equipo">{equipo}</ul>
 <p>{R["equipo_pie"]}</p>
+</section>
 {resto}
 {enlace_pres}
 <p class="volver"><a href="./">{L["volver"]}</a></p>
