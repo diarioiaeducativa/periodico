@@ -1,0 +1,140 @@
+{
+  "fecha": "2026-11-10",
+  "hay_edicion": true,
+  "motivo": "Día normal, dominado por las primeras pruebas con Claude Fable 5.2 (ya publicado el modelo). Salen tres piezas, una por grupo, y tres breves; los anuncios de Claude Whiteboards/Sheets/Data, la guía del INTEF y la apertura de Gemini 4 Carbon no se pudieron confirmar en fuente oficial.",
+  "piezas": [
+    {
+      "id": "fable-animacion-fotosintesis",
+      "seccion": "multimedia",
+      "importancia": 1,
+      "grupo": "edumedia",
+      "antetitulo": "AArekin egindako hezkuntza-bideoa",
+      "titular": "Irakasle batek fotosintesiari buruzko animazio narratu bat eskatu dio Fable 5.2ri, eta 45 minutuan jaso du",
+      "entradilla": "Prompt bakar batekin, ereduak batxilergorako pentsatutako bideo karratu bat prestatu zuen, ahots natural batekin. Egileak gelan erabiltzeko egokitzat jo du, eta materialak sortzeko bide berri bati buruz hitz egin du.",
+      "cuerpo": [
+        "Taldeko kide batek [Claude Fable 5.2](pieza:2026-11-09/fable-mythos-5-2) probatu zuen, Anthropicek azaroaren 9an jende guztiarentzat ireki zuen eredua, ikasgelako eskaera batekin: «Egidazu animazio bat, ahots naturalarekin, fotosintesiaren prozesua azaltzen duena», irudi «oso zehatzak eta errealitate zientifikoari leialak» izan zitzan, batxilergoko ikasle batek uler zezakeen narrazioa, intonazio ona eta formatu karratua.",
+        "Haren kontakizunaren arabera, ereduak 45 bat minutu behar izan zituen bideoa entregatzeko. Ahotsa Geminiren doako ahots bat izan zen, nahiz eta lan guztia Claudek egin zuen. Probatu zuenak azaltzen duenez, emaitza ordenagailuan instalatuta dagoenaren araberakoa da (ahotsak, letra-tipoak, musika-programak), eta horregatik agenteari behar zuena instalatzeko baimena eman zion.",
+        "Esperimentua Clauderen kontsola-bertsioarekin egin zen, ordenagailua bere kabuz erabil dezakeena; web bertsioan, esan zuenez, dezente zailagoa da, ezin baititu fitxategi lokalak manipulatu. Berrikusi ondoren, egileak «onargarria baino hobea» iritzi zion batxilergoko klaseetarako.",
+        "Erabileran zenbat kostatzen den ikusteko dago: taldean komentatu zen Fablek baliabide asko kontsumitzen dituela, eta enpresak ordainpeko harpidedunei [erabilera-mugaren bat eta hiru arteko berrezarpen](https://www.anthropic.com/claude-fable-and-mythos-5-2) eman dizkie, planaren eta harpidetzaren antzinatasunaren arabera."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Claude Fable 5.2 eta Mythos 5.2 (Anthropic) (ingelesez)",
+          "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2"
+        }
+      ],
+      "mensaje": {
+        "grupo": "edumedia",
+        "id": 12178
+      },
+      "comprobado": "Página oficial de Anthropic abierta: Fable 5.2 disponible el 9 de noviembre para todos los usuarios y de uno a tres reinicios de uso según antigüedad, esta semana. Mensajes del grupo contrastados con Telegram (#12178). El experimento (prompt, 45 minutos, voz de Gemini, consola frente a web, valoración) es el relato del propio autor; no se ha visto el vídeo.",
+      "ilustracion": "Esquema de una cadena de montaje: un prompt de una frase entra a la izquierda, pasa por un agente de consola (guion, imágenes, voz, subtítulos) y sale a la derecha una pantalla cuadrada con una hoja y rayos de sol, con un reloj de 45 minutos.",
+      "ilustracion_alt": "Ezkerretik eskuinera doan eskema bat: «Prompt bat» errotulua duen mezu-burbuila bat «Kontsola» errotulua duen kontsola-sinboloko laukizuzen batera doa, eta hau «Bideo karratua» errotulua duen hosto bat duen pantaila karratu batera; goian, «45 min» errotulua duen erloju gorri bat."
+    },
+    {
+      "id": "edugems-eduprompts",
+      "seccion": "herramientas",
+      "importancia": 2,
+      "grupo": "chatgpt",
+      "antetitulo": "Prompt-baliabideak",
+      "titular": "EduGemsek EduPrompts izena hartuko du, Googlek Gemak Skills-ekin ordezkatzen dituelako",
+      "entradilla": "Ikastetxeentzako 174 prompt biltzen dituen gunea izenez eta helbidez aldatzen da. Promptak AAren beste edozein tresnatan kopiatzen jarraitu ahal izango dira.",
+      "cuerpo": [
+        "Eric Curtsek, duela urtebete inguru EduGems izenarekin abiarazi zuen eskoletarako prompt-gunearen sortzaileak, [azaroaren 9an iragarri zuen izen-aldaketa](https://www.controlaltachieve.com/2026/11/eduprompts.html): EduPrompts izango da. Helbide berria, [eduprompts.ai](https://www.eduprompts.ai/), aktibo dago jada, eta zaharra, edugems.ai, denbora batez martxan jarraituko du birbideratu aurretik.",
+        "Arrazoia da Googlek Gemak kentzen dituela Skills-en alde: gaur egungo Gemak Skills bihurtuko dira eta eskuragarri jarraituko dute Googlek bertan behera utzi arte, 2027ko udan, egilearen arabera. Izen berriak, azaltzen duenez, hobeto deskribatzen du guneak eskaintzen duena.",
+        "Aurreikusitako berrikuntzen artean daude Gemini Notebookentzako prompt-bertsioak, ikasleei esleitzeko modukoak ere, eta prompt gehiago, iradokizunak bidaltzeko aukerarekin. Edozein prompt kopiatu eta AAren beste tresna batzuetan itsats daiteke.",
+        "Taldeko kide batek uste du bere prompt-bilduma zentzua galdu duela eta «elkarrizketa on bat beti hobea dela» laguntzailearekin."
+      ],
+      "fuentes": [
+        {
+          "titulo": "From EduGems to EduPrompts (Control Alt Achieve) (ingelesez)",
+          "url": "https://www.controlaltachieve.com/2026/11/eduprompts.html"
+        },
+        {
+          "titulo": "EduPrompts (ingelesez)",
+          "url": "https://www.eduprompts.ai/"
+        }
+      ],
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 54180
+      },
+      "comprobado": "Abierta la entrada del blog de Eric Curts (9 de noviembre de 2026): cambio de nombre, nueva dirección, retirada de los Gems por las Skills en verano de 2027, cuadernos de Gemini y 174 prompts. Mensaje #54180 contrastado en Telegram. No se ha contrastado con un anuncio de Google sobre la sustitución de los Gems; se atribuye al autor.",
+      "ilustracion": null,
+      "ilustracion_alt": "Goian, «EduGems» errotulua duen laukizuzen batek «EduPrompts» errotulua duen beste bat seinalatzen du; behean, «Gems» laukizuzen batek gezi gorri batekin «Skills» errotulua duen beste batera eramaten du, eta eskuinean «Kopiatu» errotulua duen kopiatzeko ikono bat."
+    },
+    {
+      "id": "pentagrama-maestro",
+      "seccion": "vibecoding",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Komunitatearen aplikazioa",
+      "titular": "Musika-klaserako aplikazio batek partitura bateko notak pentagraman jartzea proposatzen du",
+      "entradilla": "Iñaki Fernándezek sortutako Pentagrama Maestro-k nota bakoitza jotzen du, eta hiru maila eta mugarik gabeko partidak eskaintzen ditu.",
+      "cuerpo": [
+        "Iñaki Fernándezek taldean [Pentagrama Maestro](https://sites.google.com/rmsantaisabel.com/pentagrama-maestro/inicio) partekatu du, musika-irakasleentzat prestatu duen aplikazio bat. Ariketa honetan datza: partitura batean agertzen diren notak pentagraman jartzea.",
+        "Egileak dioenez, nota bakoitza gehitzean haren soinua entzuten da, eta pentagrama osoa ebazten denean partitura osoa entzuteko botoi bat agertzen da. Zailtasun-hiru maila daude eta partidak infinituak dira; beraz, ikasleek ariketa errepika dezakete materiala agortu gabe.",
+        "Aplikazioa Google Sites gune batean argitaratzen da. Saiorik hasi gabe irekitako orriak ez du aplikazioaren edukia erakusten; beraz, haren funtzionamendua egileak kontatzen duen bezala deskribatzen da."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Pentagrama Maestro (Iñaki Fernández) (gaztelaniaz)",
+          "url": "https://sites.google.com/rmsantaisabel.com/pentagrama-maestro/inicio"
+        }
+      ],
+      "mensaje": {
+        "grupo": "vce",
+        "id": 14837
+      },
+      "comprobado": "Mensaje #14837 contrastado en Telegram (autor, niveles, partidas infinitas, sonido). La página de Google Sites no muestra el contenido de la aplicación al abrirla sin sesión: funciones tal como las cuenta el autor; no se han podido probar.",
+      "ilustracion": null,
+      "ilustracion_alt": "Gora doazen lau notako pentagrama bat, «Pentagrama» errotulua duena, eta gezi bat «Entzun» errotulua duen bozgorailu batera; behean, altuera gero eta handiagoko hiru barra, «3 maila» errotulua dutenak."
+    }
+  ],
+  "breves": [
+    {
+      "texto": "Etxeko NAS batean Claude Code agente bat duen batek kontatzen du zerbitzu gisa dabilela, administratzaile-baimenekin, eta datuak ezabatu, diskoei ekin edo ateak ireki aurretik galdetu egiten duela. [Agenteekin domotikari buruzko hariaren](pieza:2026-11-09/domotica-agentes-ia) jarraipena da.",
+      "url": null,
+      "grupo": "chatgpt",
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 54185
+      }
+    },
+    {
+      "texto": "Albacetean azaroaren 5ean eta 6an egin zen Hezkuntza Digitalizazioaren Kongresu Nazionalaren webguneak hitzaldien emankizunerako sarbidea eskaintzen du, taldearen arabera.",
+      "url": "https://cndigitalizacion.intef.es/",
+      "grupo": "chatgpt",
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 54196
+      }
+    },
+    {
+      "texto": "Anthropicek Fable barne hartzen duten planei erabilera-mugaren bat eta hiru arteko berrezarpen ematen dizkie, harpidetzaren antzinatasunaren arabera, 2027ko martxoaren 8ra arte erabiltzeko; Prok bat du, azaroaren 16ra arte bakarrik. Eredua [Fable 5.2](pieza:2026-11-09/fable-mythos-5-2) da.",
+      "url": "https://support.claude.com/en/articles/17506494-claude-fable-5-2-launch-offers",
+      "grupo": "vce",
+      "mensaje": {
+        "grupo": "vce",
+        "id": 14821
+      }
+    }
+  ],
+  "descartado": [
+    "Claude Whiteboards, Sheets y Data (edumedia): buscado en anthropic.com/news y con WebSearch (dos veces); no hay anuncio oficial confirmable.",
+    "Guía del INTEF «Orientaciones para la integración de la IA en los centros educativos» (chatgpt): X da 402 y la búsqueda solo halla la guía de uso de la IA v2.0 de septiembre de 2026 y otras orientaciones de formación docente; no se puede confirmar el título ni la fecha.",
+    "Gemini 4 Carbon en la app para el plan Ultra (chatgpt, edumedia): la búsqueda sigue sin hallar confirmación oficial (las fuentes secundarias lo dan solo para socios y ciberdefensa, con Argon como el disponible); el modelo ya salió publicado el 28 de octubre.",
+    "Animación de la célula hecha con Fable 5.2 y cuaderno de Leonardo da Vinci (edumedia): solo enlaces a X, sin fuente accesible.",
+    "Ponencia «IA en el aula: de usuarios a creadores» (chatgpt): solo un enlace a X no verificable; no aparece en la web del congreso.",
+    "Artículo de The New Yorker sobre la búsqueda digital: enlace sin comentario del grupo.",
+    "Noticia de La Razón sobre la exención por motivos religiosos (día anterior): chiste, sin debate con argumentos.",
+    "App de iniciación al prompting (vce) y enlace a Gemini sin descripción: el primero lleva a una reunión de Zoom, el segundo no tiene contenido verificable.",
+    "Pregunta sobre cuánto rinde Opus 5.5 con la suscripción básica (vce): sin respuestas."
+  ],
+  "repaso": [
+    "Fable: quitada la frase «La prueba coincide con los ejemplos que Anthropic ha difundido…», no comprobable (solo enlaces a X).",
+    "Breve del congreso: la web confirma fechas y lugar y ofrece retransmisión, pero no que las ponencias estén grabadas; redactado como lo dice el grupo.",
+    "Enlaces pieza: fable-mythos-5-2 y domotica-agentes-ia están en publicado.txt y tratan lo mismo.",
+    "Comprobados Anthropic, blog de Eric Curts, web del congreso y mensajes en Telegram; el resto sin cambios."
+  ]
+}

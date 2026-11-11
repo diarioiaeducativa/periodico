@@ -1,0 +1,34 @@
+{
+  "fecha": "2026-11-11",
+  "avisos": {
+    "chatgpt": {
+      "saludo": "Buenos días. Cambio de nombre en un sitio de prompts y límites de uso en el aula.",
+      "puntos": [
+        "EduGems pasa a llamarse EduPrompts porque Google sustituye los Gems por Skills; los 174 prompts del sitio se pueden copiar en cualquier otra herramienta de IA",
+        "Una viñeta de Tiza y Algoritmo parte del vídeo de la fotosíntesis hecho con Fable 5.2 y de los reinicios del límite de uso que da Anthropic",
+        "La web del Congreso Nacional de Digitalización Educativa, celebrado en Albacete, ofrece acceso a la retransmisión de las ponencias, según el grupo"
+      ],
+      "url": "https://diarioiaeducativa.github.io/n/10-chatgpt.html"
+    },
+    "vce": {
+      "saludo": "Buenos días. Dos aplicaciones para centros de música y un dato sobre el uso de Fable.",
+      "puntos": [
+        "Tribunator, de José Luis Miralles Bono, organiza tribunales, aulas y horarios de las pruebas de acceso de un conservatorio y comprueba que no haya conflictos antes de publicar",
+        "Pentagrama Maestro, de Iñaki Fernández, propone colocar en el pentagrama las notas de una partitura; suena cada nota y hay tres niveles y partidas sin límite",
+        "Anthropic da a los planes con Fable entre uno y tres reinicios del límite de uso, según la antigüedad de la suscripción, que pueden usarse hasta el 8 de marzo de 2027"
+      ],
+      "url": "https://diarioiaeducativa.github.io/n/10-vce.html"
+    },
+    "edumedia": {
+      "saludo": "Buenos días. Una animación sobre la fotosíntesis, pedida con una sola frase.",
+      "puntos": [
+        "Un docente pidió a Fable 5.2 una animación narrada sobre la fotosíntesis para bachillerato y el modelo la entregó en unos 45 minutos, con una voz gratuita de Gemini",
+        "El experimento se hizo con la versión de consola de Claude, que maneja el ordenador por su cuenta; en la versión web, cuenta el autor, resulta bastante más complicado"
+      ]
+    }
+  },
+  "instagram": "El número de este miércoles reúne una prueba con un modelo de IA al que se le pidió una animación narrada sobre la fotosíntesis para bachillerato, que tardó unos 45 minutos en entregarla. También cuenta que un sitio con 174 prompts para centros educativos cambia de nombre porque Google sustituye los Gems por Skills, y presenta dos aplicaciones abiertas para el ámbito musical: una que organiza tribunales y horarios de pruebas de acceso a un conservatorio y otra para practicar la colocación de notas en el pentagrama.",
+  "titulo": "Diario de IA Educativa · Núm. 10",
+  "fecha_texto": "Miércoles, 11 de noviembre de 2026",
+  "url": "https://diarioiaeducativa.github.io/?n=10"
+}

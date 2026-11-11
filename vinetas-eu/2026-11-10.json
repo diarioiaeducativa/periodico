@@ -1,0 +1,33 @@
+{
+  "fecha": "2026-11-10",
+  "elegida": {
+    "n": 1,
+    "pieza": "fable-animacion-fotosintesis",
+    "idea": "Fotosintesiaren bideoaren ondoren, Algoritmok asteko erabilera-muga agortu du eta berrezarpenaren zain dago; Klarionen kasuan, inork ez du berrezartzen: erdi-erdi geratzen zaio ekainera arte.",
+    "guion": {"vinetas": [
+      {"cartela": "Gelan, fotosintesiaren bideoa estreinatzen.",
+       "escenario": "aula",
+       "objeto": "portatil",
+       "tiza": {"expresion": "sorprendido", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "contento", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+       "bocadillos": [
+         {"quien": "tiza", "texto": "Ahots naturala eta guzti! Onargarria baino hobea.", "tipo": "habla"},
+         {"quien": "algoritmo", "texto": "Prompt bakar bat eta 45 minutu.", "tipo": "habla"}]},
+      {"escenario": "aula",
+       "objeto": "portatil",
+       "tiza": {"expresion": "neutral", "postura": "senalar", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "avergonzado", "postura": "encoger", "lugar": "derecha", "mira": "izquierda"},
+       "bocadillos": [
+         {"quien": "tiza", "texto": "Orain zelula-arnasketari buruzko bat.", "tipo": "habla"},
+         {"quien": "algoritmo", "texto": "Erabilera-muga agortu dut. Berrezarpenaren zain.", "tipo": "habla"}]},
+      {"escenario": "aula",
+       "objeto": "portatil",
+       "tiza": {"expresion": "agotado", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "pensativo", "postura": "pensar", "lugar": "derecha", "mira": "izquierda"},
+       "bocadillos": [
+         {"quien": "algoritmo", "texto": "Eta zuri zenbat berrezarpen ematen dizkizute?", "tipo": "habla"},
+         {"quien": "tiza", "texto": "Bat ere ez. Erdi-erdi geratzen zait ekainera arte.", "tipo": "habla"}]}
+    ]}
+  },
+  "traduccion": "itzulpen automatikoa AArekin"
+}

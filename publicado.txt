@@ -102,3 +102,11 @@
 - pieza:2026-11-09/belsetan-lengua-aragonesa (vibecoding) Una web difunde el belsetán, variedad aragonesa en peligro, con juegos y fichas de aula
 - breve: Un conector gratuito para Windows envía datos de sensores de una placa micro:bit, por USB,
 - breve: Google AI Studio permite ahora crear aplicaciones con mapas, datos de lugares y rutas de G
+
+## 2026-11-10 (publicado el miércoles 11 de noviembre de 2026)
+- pieza:2026-11-10/fable-animacion-fotosintesis (multimedia) Un docente pide a Fable 5.2 una animación narrada sobre la fotosíntesis y la recibe en 45 minutos
+- pieza:2026-11-10/edugems-eduprompts (herramientas) EduGems pasa a llamarse EduPrompts porque Google sustituye los Gems por Skills
+- pieza:2026-11-10/pentagrama-maestro (vibecoding) Una aplicación para clase de música propone colocar en el pentagrama las notas de una partitura
+- breve: Quien mantiene un agente de Claude Code en el NAS de casa cuenta que corre como servicio c
+- breve: La web del Congreso Nacional de Digitalización Educativa, celebrado en Albacete el 5 y 6 d
+- breve: Anthropic da a los planes que incluyen Fable entre uno y tres reinicios del límite de uso 

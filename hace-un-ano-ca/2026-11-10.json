@@ -1,0 +1,24 @@
+{"fecha": "2026-11-10", "hay_pieza": true,
+ "piezas": [{"id": "latex-gemini-google-docs",
+             "seccion": "hace-un-ano", "importancia": 3,
+             "grupo": "chatgpt", "fecha_original": "2025-11-11",
+             "antetitulo": "Matemàtiques amb IA",
+             "ilustracion_alt": "Díptic partit per una línia vertical. A l'esquerra, «Nov. 2025»: una pàgina de Google Docs amb la fórmula convertida en claus de codi, rotulada «Codi». A la dreta, «Avui»: la mateixa pàgina amb el mateix «Codi», i una fletxa blava cap a una peça de trencaclosques blava rotulada «Complement», el remei que continua sent necessari.",
+             "titular": "Les fórmules de Gemini arribaven a Google Docs com a codi; un any després, Docs continua sense entendre LaTeX",
+             "entradilla": "Al novembre de 2025, Gemini ja escrivia i editava fórmules en LaTeX, però en dur-les a Google Docs arribaven com a codi. Un any després, el processador de Google continua sense llegir LaTeX i el remei és el mateix: un complement o un editor a part.",
+             "cuerpo": [
+               "L'11 de novembre de 2025, a ChatGPT-IA-edu, se celebraven les [novetats de LaTeX a Gemini](https://workspaceupdates.googleblog.com/2025/10/new-latex-features-in-gemini-app.html), anunciades el 27 d'octubre: copiar fórmules, editar-les a Canvas i generar PDF. Però en exportar a Google Docs les fórmules no es convertien, i en copiar-les sortien en text pla. Ja ho preguntava professorat de Matemàtiques de secundària. Aquell mateix dia, Juanjo de Haro presentava EdiMarkWeb, un editor de Markdown que passava LaTeX a DOCX, ODT o HTML.",
+               "Un any després, el problema continua on era. L'[ajuda de Google Docs](https://support.google.com/docs/answer/160749?hl=es) explica les equacions des del menú Insereix i amb dreceres de barra inversa, sense esmentar LaTeX. Al gener de 2026, [Eric Curts](https://www.controlaltachieve.com/2026/01/export-math.html) comprovava que l'exportació de Gemini continuava deixant el codi a la vista i recomanava un complement. I la fitxa d'un altre, [MathInk](https://workspace.google.com/marketplace/app/mathink_for_docs_and_slides/539374951798), actualitzada el 30 d'octubre de 2026, ho diu sense embuts: Docs i Presentacions no admeten LaTeX de manera nativa.",
+               "L'editor sí que ha canviat: avui es diu [EdiMarkdown](https://edimarkdown.github.io/), té versió d'escriptori i un editor de fórmules propi. Que l'apanyo d'aleshores continuï sent la solució també diu quant ha avançat cada cosa."
+             ],
+             "fuentes": [
+               {"titulo": "New LaTeX features in the Gemini app (Google Workspace Updates, 27 d'octubre de 2025) (en anglès)", "url": "https://workspaceupdates.googleblog.com/2025/10/new-latex-features-in-gemini-app.html"},
+               {"titulo": "Usar ecuaciones en un documento (Ayuda de Documentos de Google) (en castellà)", "url": "https://support.google.com/docs/answer/160749?hl=es"},
+               {"titulo": "Export math from Gemini to Google Docs (Control Alt Achieve, 28 de gener de 2026) (en anglès)", "url": "https://www.controlaltachieve.com/2026/01/export-math.html"},
+               {"titulo": "MathInk for Docs and Slides (Google Workspace Marketplace) (en anglès)", "url": "https://workspace.google.com/marketplace/app/mathink_for_docs_and_slides/539374951798"},
+               {"titulo": "EdiMarkdown", "url": "https://edimarkdown.github.io/"}
+             ],
+             "mensaje": {"grupo": "chatgpt", "id": 41929},
+             "comprobado": "Verificador, contra la entrada: mensajes #41929-#41958 de ChatGPT-IA-edu del 11/11/2025 (novedades de LaTeX, queja por la exportación a Docs y el texto plano al copiar #41935 y #41937, pregunta de docentes de secundaria #41938, EdiMarkWeb #41940 y #41958). Telegram embed de #41929 y #41940: son esos mensajes, del 11/11/2025. Workspace Updates (WebFetch): 27/10/2025; PDF, edición en Canvas con fx, copia del código sin renderizar; no nombra Google Docs. Ayuda de Docs 160749 (WebFetch): ecuaciones desde Insertar > Símbolos > Ecuación y atajos con barra invertida; no menciona LaTeX. Control Alt Achieve (WebFetch): 28/01/2026, copiar y «Export to Docs» dejan código; recomienda Auto-LaTeX Equations. Ficha de MathInk (WebFetch): Docs y Slides no admiten LaTeX de forma nativa, actualizada el 30/10/2026; WebSearch sin anuncio oficial de soporte nativo. edimarkweb.github.io (WebFetch): «Ahora está en edimarkdown.github.io»; allí, EdiMarkdown de Juan José de Haro, escritorio v3.5.5 y editor de fórmulas EdiCuaTeX. Nada en publicado.txt sobre el tema; no repite NotebookLM, Veo, artefactos de Claude ni Kimi. 232 palabras con la entradilla.",
+             "repaso": ["Corregido: la ficha de MathInk se presentaba como «uno de ellos» (el complemento que recomienda Curts); Curts recomienda Auto-LaTeX Equations, así que ahora dice «la ficha de otro»."]
+            }]}

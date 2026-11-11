@@ -1,0 +1,140 @@
+{
+  "fecha": "2026-11-10",
+  "hay_edicion": true,
+  "motivo": "A normal day, dominated by the first trials of Claude Fable 5.2 (the model was already covered). Three pieces, one per group, and three briefs; the announcements of Claude Whiteboards/Sheets/Data, the INTEF guide and the opening of Gemini 4 Carbon could not be confirmed from an official source.",
+  "piezas": [
+    {
+      "id": "fable-animacion-fotosintesis",
+      "seccion": "multimedia",
+      "importancia": 1,
+      "grupo": "edumedia",
+      "antetitulo": "Educational video with AI",
+      "titular": "A teacher asks Fable 5.2 for a narrated animation on photosynthesis and gets it in 45 minutes",
+      "entradilla": "With a single prompt, the model produced a square video with a natural voice aimed at sixth-form students. The author considers it good enough for class and speaks of a new way to create materials.",
+      "cuerpo": [
+        "A member of the group tested [Claude Fable 5.2](pieza:2026-11-09/fable-mythos-5-2), the model Anthropic opened to the general public on 9 November, with a classroom brief: “Make me an animation with a natural voice explaining the process of photosynthesis”, with images that are “extremely detailed and faithful to the science”, a narration that a sixth-form student can follow, good intonation and a square format.",
+        "According to their account, the model took about 45 minutes to deliver the video. For the voice they used a free Gemini voice, although all the work was done by Claude. The person who tried it explains that the result depends on what is installed on the computer (voices, fonts, music software) and that is why they gave the agent permission to install whatever it needed.",
+        "The experiment was carried out with the console version of Claude, which can operate the computer on its own; in the web version, they said, it is considerably more complicated because it cannot manipulate local files. After reviewing it, the author judged it “more than acceptable” for sixth-form classes.",
+        "It remains to be seen how much it costs to use: the group commented that Fable consumes a lot of resources, and the company has given paid subscribers [between one and three usage-limit resets](https://www.anthropic.com/claude-fable-and-mythos-5-2), depending on the plan and how long they have subscribed."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Claude Fable 5.2 and Mythos 5.2 (Anthropic)",
+          "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2"
+        }
+      ],
+      "mensaje": {
+        "grupo": "edumedia",
+        "id": 12178
+      },
+      "comprobado": "Anthropic's official page opened: Fable 5.2 available on 9 November to all users and one to three usage resets depending on seniority, this week. Group messages checked against Telegram (#12178). The experiment (prompt, 45 minutes, Gemini voice, console versus web, assessment) is the author's own account; the video has not been seen.",
+      "ilustracion": "A diagram of an assembly line: a one-sentence prompt enters on the left, passes through a console agent (script, images, voice, subtitles) and comes out on the right as a square screen with a leaf and sun rays, with a 45-minute clock.",
+      "ilustracion_alt": "A diagram from left to right: a message bubble labelled “One prompt” leads to a box with the console symbol labelled “Console”, which leads to a square screen with a leaf labelled “Square video”; above, a red clock labelled “45 min”."
+    },
+    {
+      "id": "edugems-eduprompts",
+      "seccion": "herramientas",
+      "importancia": 2,
+      "grupo": "chatgpt",
+      "antetitulo": "Prompt resources",
+      "titular": "EduGems becomes EduPrompts because Google is replacing Gems with Skills",
+      "entradilla": "The site with 174 prompts for schools changes its name and address. The prompts can still be copied into any other AI tool.",
+      "cuerpo": [
+        "Eric Curts, creator of the prompt site for schools that he launched about a year ago as EduGems, [announced on 9 November its change of name](https://www.controlaltachieve.com/2026/11/eduprompts.html) to EduPrompts. The new address, [eduprompts.ai](https://www.eduprompts.ai/), is already live, and the old one, edugems.ai, will keep working for a while before redirecting.",
+        "The reason is that Google is retiring Gems in favour of Skills: current Gems will be converted into Skills and will remain available until Google discontinues them in summer 2027, according to the author. The new name, he explains, better describes what the site offers.",
+        "Planned additions include versions of the prompts for Gemini Notebook, which can also be assigned to students, and more prompts, with the option to submit suggestions. Any prompt can be copied and pasted into other AI tools.",
+        "A member of the group said that their own collection of prompts has lost its point and that “a good conversation is always better” with the assistant."
+      ],
+      "fuentes": [
+        {
+          "titulo": "From EduGems to EduPrompts (Control Alt Achieve)",
+          "url": "https://www.controlaltachieve.com/2026/11/eduprompts.html"
+        },
+        {
+          "titulo": "EduPrompts",
+          "url": "https://www.eduprompts.ai/"
+        }
+      ],
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 54180
+      },
+      "comprobado": "Eric Curts's blog post (9 November 2026) opened: change of name, new address, retirement of Gems in favour of Skills in summer 2027, Gemini notebooks and 174 prompts. Message #54180 checked on Telegram. It has not been checked against a Google announcement about replacing Gems; it is attributed to the author.",
+      "ilustracion": null,
+      "ilustracion_alt": "At the top, a box labelled “EduGems” points to another labelled “EduPrompts”; below, a box “Gems” leads with a red arrow to another labelled “Skills”, and on the right a copy icon labelled “Copy”."
+    },
+    {
+      "id": "pentagrama-maestro",
+      "seccion": "vibecoding",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Community app",
+      "titular": "A music-class app asks students to place the notes of a score on the stave",
+      "entradilla": "Pentagrama Maestro, created by Iñaki Fernández, plays note by note and offers three levels and unlimited games.",
+      "cuerpo": [
+        "Iñaki Fernández has shared in the group [Pentagrama Maestro](https://sites.google.com/rmsantaisabel.com/pentagrama-maestro/inicio), an app he prepared for music teachers. The exercise consists of placing on the stave the notes that appear in a score.",
+        "According to its author, each note plays its sound as it is added and, once the whole stave is solved, a button appears to listen to the entire score. There are three difficulty levels and the games are endless, so students can repeat the exercise without running out of material.",
+        "The app is published on a Google Sites page. The page, opened without signing in, does not show the app's content, so its operation is described as its author tells it."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Pentagrama Maestro (Iñaki Fernández) (in Spanish)",
+          "url": "https://sites.google.com/rmsantaisabel.com/pentagrama-maestro/inicio"
+        }
+      ],
+      "mensaje": {
+        "grupo": "vce",
+        "id": 14837
+      },
+      "comprobado": "Message #14837 checked on Telegram (author, levels, endless games, sound). The Google Sites page does not show the app's content when opened without signing in: features as described by the author; they could not be tested.",
+      "ilustracion": null,
+      "ilustracion_alt": "A stave with four rising notes, labelled “Stave”, and an arrow leading to a loudspeaker labelled “Listen”; below, three bars of increasing height labelled “3 levels”."
+    }
+  ],
+  "breves": [
+    {
+      "texto": "Someone who runs a Claude Code agent on their home NAS says it runs as a service with administrator permissions, and that it asks before deleting data, touching disks or opening ports. It continues [the thread on home automation with agents](pieza:2026-11-09/domotica-agentes-ia).",
+      "url": null,
+      "grupo": "chatgpt",
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 54185
+      }
+    },
+    {
+      "texto": "The website of the National Congress on Digitalisation in Education, held in Albacete on 5 and 6 November, offers access to the broadcast of the talks, according to the group. (In Spanish.)",
+      "url": "https://cndigitalizacion.intef.es/",
+      "grupo": "chatgpt",
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 54196
+      }
+    },
+    {
+      "texto": "Anthropic is giving plans that include Fable between one and three usage-limit resets, depending on the length of the subscription, which can be used until 8 March 2027; Pro gets one, only until 16 November. The model is [Fable 5.2](pieza:2026-11-09/fable-mythos-5-2).",
+      "url": "https://support.claude.com/en/articles/17506494-claude-fable-5-2-launch-offers",
+      "grupo": "vce",
+      "mensaje": {
+        "grupo": "vce",
+        "id": 14821
+      }
+    }
+  ],
+  "descartado": [
+    "Claude Whiteboards, Sheets and Data (edumedia): searched on anthropic.com/news and with WebSearch (twice); no official announcement can be confirmed.",
+    "INTEF guide “Guidelines for integrating AI in schools” (chatgpt): X returns 402 and the search only finds the AI usage guide v2.0 from September 2026 and other teacher-training guidelines; the title and date cannot be confirmed.",
+    "Gemini 4 Carbon in the app for the Ultra plan (chatgpt, edumedia): the search still finds no official confirmation (secondary sources give it only for partners and cyberdefence, with Argon as the available one); the model was already covered on 28 October.",
+    "Cell animation made with Fable 5.2 and Leonardo da Vinci's notebook (edumedia): only links to X, no accessible source.",
+    "Talk “AI in the classroom: from users to creators” (chatgpt): only a link to X that cannot be verified; it does not appear on the congress website.",
+    "The New Yorker article on digital search: a link with no comment from the group.",
+    "La Razón news item on the religious exemption (previous day): a joke, with no reasoned debate.",
+    "Prompting starter app (vce) and a link to Gemini with no description: the first leads to a Zoom meeting, the second has no verifiable content.",
+    "Question about how far Opus 5.5 goes on the basic subscription (vce): no replies."
+  ],
+  "repaso": [
+    "Fable: removed the sentence “The test matches the examples Anthropic has shared…”, which cannot be checked (only links to X).",
+    "Congress brief: the website confirms dates and place and offers a broadcast, but not that the talks are recorded; worded as the group puts it.",
+    "Piece links: fable-mythos-5-2 and domotica-agentes-ia are in publicado.txt and deal with the same subject.",
+    "Anthropic, Eric Curts's blog, the congress website and Telegram messages checked; the rest unchanged."
+  ]
+}

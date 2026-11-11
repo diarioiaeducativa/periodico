@@ -1,0 +1,48 @@
+{
+  "fecha": "2026-11-10",
+  "piezas": [
+    {
+      "id": "tribunator",
+      "seccion": "vibecoding",
+      "repositorio": "dia",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "New in the repository",
+      "titular": "Tribunator organises panels, rooms and timetables for a conservatoire's entrance exams",
+      "entradilla": "José Luis Miralles Bono has created, with the help of Claude, a tool that plans who sits on each panel, in which room and at what time they examine, and checks for clashes before anything is published.",
+      "cuerpo": [
+        "Tribunator is a web application for managing examining panels, rooms and timetables in educational institutions. According to its entry, it is designed for organising the entrance exams of a conservatoire: who sits on each panel, in which room and at what time they examine, which parts of the exam they cover, and what happens when a panel member has students taking the exam. It was created by José Luis Miralles Bono, who states on the page itself that he designed it with the help of Claude.",
+        "On opening it, the page offers three routes: start from scratch, import data or load a demonstration example. The work is divided into tabs: Space, Time, Templates, Panels and Verification. According to the [project's source code repository](https://github.com/JLMirallesB/tribunator), Space is where the floor plans of the sites and their rooms are designed, Time is where the days and slots of the exams are planned, Templates defines the structure of each exam, and Panels sets the members, roles and timetables. The same repository adds that the preloaded templates are based on an order from the Valencian Community and that candidates can be loaded from Excel or CSV.",
+        "The verification tab, according to the repository, checks the active solution and sorts what it finds into errors, such as room or member clashes, and warnings; the entry mentions 16 automatic checks. It also generates five types of PDF for publication: panels, daily planning, floor plans, posters for each room and a directory. The header has buttons to undo and redo, and another for versions.",
+        "As for use, it works in the browser, with no server or account. According to the project's repository, the data is stored in the browser, so it is advisable to export it as JSON from time to time. It can also be downloaded as a single HTML file that works offline; the web version, however, needs a connection to import Excel files and generate the PDFs. The interface is in Spanish, Valencian and English.",
+        "For teachers, it is of interest to anyone who coordinates panels for entrance exams, competitive recruitment exams or tests in a school, and also to anyone who wants to see how a management tool of this kind can be built with AI. The code is published under an AGPL v3 licence and the content under CC BY-SA 4.0, so other schools can adapt it."
+      ],
+      "recursos": [
+        {
+          "id": "tribunator",
+          "titulo": "Tribunator",
+          "autoria": "José Luis Miralles Bono",
+          "url": "https://jlmirallesb.github.io/tribunator/",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://jlmirallesb.github.io/tribunator/",
+          "licencia": "AGPL v3",
+          "captura": "2026-11-10-tribunator.jpg",
+          "captura_alt": "Tribunator welcome screen with the tabs Home, Space, Time, Templates, Panels and Verification, and the buttons Start from scratch, Import data and Load example.",
+          "texto": []
+        }
+      ],
+      "fuentes": [
+        {"titulo": "Tribunator", "url": "https://jlmirallesb.github.io/tribunator/"},
+        {"titulo": "Tribunator on GitHub", "url": "https://github.com/JLMirallesB/tribunator"}
+      ],
+      "comprobado": "Captura vista: pantalla de inicio de Tribunator v1.2.15 con pestañas, botones deshacer/rehacer, Cargar ejemplo, Versiones, selector ES/VA/EN, los tres botones de inicio y pie con autoría y licencias. WebFetch de la web solo devolvió el título (necesita JavaScript). WebFetch de GitHub (v1.2.14): funciones por pestaña, PDF, Excel/CSV, plantillas de la Comunitat Valenciana, archivo HTML sin conexión (la versión web necesita red para Excel y PDF), LocalStorage, idiomas y licencias; no menciona un número de 16 comprobaciones, así que esa cifra va atribuida a la ficha. Idiomas de la entrada: español, catalán e inglés, coherente. Sin mensaje de presentación en la entrada. Sin enlaces a lo ya publicado (nada relacionado en publicado.txt).",
+      "repaso": [
+        "Detalles de las pestañas (sedes, planos, franjas, miembros) y de errores/avisos atribuidos al repositorio de código, no dichos como vistos en la web.",
+        "Enlazado «repositorio de código del proyecto» en su primera mención.",
+        "«Apartado de versiones» corregido a botón de versiones (se ve en la cabecera).",
+        "Añadido que la versión web necesita conexión para Excel y PDF y solo el HTML descargado funciona sin ella (dato del repositorio, útil al docente).",
+        "Autoría, licencia, enlace, ficha y captura comprobados con la entrada; sin cambios."
+      ]
+    }
+  ],
+  "descartado": []
+}

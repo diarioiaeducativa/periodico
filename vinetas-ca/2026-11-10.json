@@ -1,0 +1,33 @@
+{
+  "fecha": "2026-11-10",
+  "elegida": {
+    "n": 1,
+    "pieza": "fable-animacion-fotosintesis",
+    "idea": "Després del vídeo de la fotosíntesi, Algorisme ha gastat el límit d'ús de la setmana i espera el reinici; a Guix no la reinicia ningú: li queda mitja barra fins al juny.",
+    "guion": {"vinetas": [
+      {"cartela": "A l'aula, estrenant el vídeo de la fotosíntesi.",
+       "escenario": "aula",
+       "objeto": "portatil",
+       "tiza": {"expresion": "sorprendido", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "contento", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+       "bocadillos": [
+         {"quien": "tiza", "texto": "Veu natural i tot! Més que acceptable.", "tipo": "habla"},
+         {"quien": "algoritmo", "texto": "Un sol prompt i 45 minuts.", "tipo": "habla"}]},
+      {"escenario": "aula",
+       "objeto": "portatil",
+       "tiza": {"expresion": "neutral", "postura": "senalar", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "avergonzado", "postura": "encoger", "lugar": "derecha", "mira": "izquierda"},
+       "bocadillos": [
+         {"quien": "tiza", "texto": "Doncs ara un de la respiració cel·lular.", "tipo": "habla"},
+         {"quien": "algoritmo", "texto": "He gastat el límit d'ús. Espero el reinici.", "tipo": "habla"}]},
+      {"escenario": "aula",
+       "objeto": "portatil",
+       "tiza": {"expresion": "agotado", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "pensativo", "postura": "pensar", "lugar": "derecha", "mira": "izquierda"},
+       "bocadillos": [
+         {"quien": "algoritmo", "texto": "I a tu quants reinicis te'n donen?", "tipo": "habla"},
+         {"quien": "tiza", "texto": "Cap. Em queda mitja barra fins al juny.", "tipo": "habla"}]}
+    ]}
+  },
+  "traduccion": "automàtica amb IA"
+}

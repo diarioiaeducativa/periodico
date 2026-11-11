@@ -1,0 +1,33 @@
+{
+  "fecha": "2026-11-10",
+  "elegida": {
+    "n": 1,
+    "pieza": "fable-animacion-fotosintesis",
+    "idea": "After the photosynthesis video, Algorithm has used up the week's usage limit and is waiting for it to reset; nobody resets Chalk: she has half a bar left until June.",
+    "guion": {"vinetas": [
+      {"cartela": "In the classroom, premiering the photosynthesis video.",
+       "escenario": "aula",
+       "objeto": "portatil",
+       "tiza": {"expresion": "sorprendido", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "contento", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+       "bocadillos": [
+         {"quien": "tiza", "texto": "A natural voice and everything! More than acceptable.", "tipo": "habla"},
+         {"quien": "algoritmo", "texto": "One prompt and 45 minutes.", "tipo": "habla"}]},
+      {"escenario": "aula",
+       "objeto": "portatil",
+       "tiza": {"expresion": "neutral", "postura": "senalar", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "avergonzado", "postura": "encoger", "lugar": "derecha", "mira": "izquierda"},
+       "bocadillos": [
+         {"quien": "tiza", "texto": "Right, now one on cellular respiration.", "tipo": "habla"},
+         {"quien": "algoritmo", "texto": "I've used up my usage limit. Waiting for the reset.", "tipo": "habla"}]},
+      {"escenario": "aula",
+       "objeto": "portatil",
+       "tiza": {"expresion": "agotado", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "pensativo", "postura": "pensar", "lugar": "derecha", "mira": "izquierda"},
+       "bocadillos": [
+         {"quien": "algoritmo", "texto": "And how many resets do you get?", "tipo": "habla"},
+         {"quien": "tiza", "texto": "None. I've got half a bar left until June.", "tipo": "habla"}]}
+    ]}
+  },
+  "traduccion": "automatic AI translation"
+}

@@ -1,0 +1,48 @@
+{
+  "fecha": "2026-11-10",
+  "piezas": [
+    {
+      "id": "tribunator",
+      "seccion": "vibecoding",
+      "repositorio": "dia",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Novo no repositorio",
+      "titular": "Tribunator organiza tribunais, aulas e horarios das probas de acceso dun conservatorio",
+      "entradilla": "José Luis Miralles Bono creou, coa axuda de Claude, unha ferramenta que planifica quen forma cada tribunal, en que aula e a que hora examina, e comproba que non haxa conflitos antes de publicar.",
+      "cuerpo": [
+        "Tribunator é unha aplicación web para xestionar tribunais, aulas e horarios en centros educativos. Segundo a súa ficha, está pensada para organizar as probas de acceso dun conservatorio: quen forma cada tribunal, en que aula e a que hora examina, que partes da proba cobre e que ocorre cando un membro ten alumnado que se presenta. Está creada por José Luis Miralles Bono, que indica na propia páxina que a deseñou coa axuda de Claude.",
+        "Ao abrila, a páxina ofrece tres camiños: comezar desde cero, importar datos ou cargar un exemplo de demostración. O traballo repártese en lapelas: Espacio, Tiempo, Plantillas, Tribunales e Verificación. Segundo o [repositorio de código do proxecto](https://github.com/JLMirallesB/tribunator), en Espacio deséñanse os planos das sedes coas súas aulas, en Tiempo planifícanse os días e as franxas das probas, en Plantillas defínese a estrutura de cada proba e en Tribunales fíxanse os membros, os roles e os horarios. Ese mesmo repositorio engade que as plantillas precargadas se basean nunha orde da Comunitat Valenciana e que os candidatos se poden cargar desde Excel ou CSV.",
+        "A lapela de verificación, segundo o repositorio, revisa a solución activa e clasifica o que atopa en erros, como conflitos de aula ou de membro, e avisos; a ficha fala de 16 comprobacións automáticas. Tamén xera cinco tipos de PDF para publicar: tribunais, planning diario, planos, carteis por aula e directorio. Na cabeceira hai botóns para desfacer e refacer, e outro de versións.",
+        "En canto ao uso, funciona no navegador, sen servidor nin conta. Segundo o repositorio do proxecto, os datos gárdanse no navegador, polo que convén exportalos de cando en cando como JSON. Tamén se pode descargar como un único ficheiro HTML que funciona sen conexión; a versión web, en cambio, precisa conexión para importar Excel e xerar os PDF. A interface está en castelán, valenciano e inglés.",
+        "Para o profesorado, o interese está en quen coordina tribunais de probas de acceso, oposicións ou exames nun centro, e tamén en quen queira ver como se formula unha ferramenta de xestión deste tipo creada con IA. O código publícase con licenza AGPL v3 e os contidos con CC BY-SA 4.0, de modo que outros centros poden adaptala."
+      ],
+      "recursos": [
+        {
+          "id": "tribunator",
+          "titulo": "Tribunator",
+          "autoria": "José Luis Miralles Bono",
+          "url": "https://jlmirallesb.github.io/tribunator/",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://jlmirallesb.github.io/tribunator/",
+          "licencia": "AGPL v3",
+          "captura": "2026-11-10-tribunator.jpg",
+          "captura_alt": "Pantalla de benvida de Tribunator coas lapelas Inicio, Espacio, Tiempo, Plantillas, Tribunales e Verificación, e os botóns Empezar de cero, Importar datos e Cargar ejemplo.",
+          "texto": []
+        }
+      ],
+      "fuentes": [
+        {"titulo": "Tribunator", "url": "https://jlmirallesb.github.io/tribunator/"},
+        {"titulo": "Tribunator en GitHub (en castelán)", "url": "https://github.com/JLMirallesB/tribunator"}
+      ],
+      "comprobado": "Captura vista: pantalla de inicio de Tribunator v1.2.15 con pestañas, botones deshacer/rehacer, Cargar ejemplo, Versiones, selector ES/VA/EN, los tres botones de inicio y pie con autoría y licencias. WebFetch de la web solo devolvió el título (necesita JavaScript). WebFetch de GitHub (v1.2.14): funciones por pestaña, PDF, Excel/CSV, plantillas de la Comunitat Valenciana, archivo HTML sin conexión (la versión web necesita red para Excel y PDF), LocalStorage, idiomas y licencias; no menciona un número de 16 comprobaciones, así que esa cifra va atribuida a la ficha. Idiomas de la entrada: español, catalán e inglés, coherente. Sin mensaje de presentación en la entrada. Sin enlaces a lo ya publicado (nada relacionado en publicado.txt).",
+      "repaso": [
+        "Detalles de las pestañas (sedes, planos, franjas, miembros) y de errores/avisos atribuidos al repositorio de código, no dichos como vistos en la web.",
+        "Enlazado «repositorio de código del proyecto» en su primera mención.",
+        "«Apartado de versiones» corregido a botón de versiones (se ve en la cabecera).",
+        "Añadido que la versión web necesita conexión para Excel y PDF y solo el HTML descargado funciona sin ella (dato del repositorio, útil al docente).",
+        "Autoría, licencia, enlace, ficha y captura comprobados con la entrada; sin cambios."
+      ]
+    }
+  ],
+  "descartado": []
+}

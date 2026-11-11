@@ -1,0 +1,139 @@
+{
+  "fecha": "2026-11-10",
+  "candidatas": [
+    {
+      "pieza": "fable-animacion-fotosintesis",
+      "idea": "Tras el vídeo de la fotosíntesis, Algoritmo ha gastado el límite de uso de la semana; a Tiza no la reinicia nadie: le queda media barra hasta junio.",
+      "guion": {"vinetas": [
+        {"cartela": "En el aula, estrenando el vídeo de la fotosíntesis.",
+         "escenario": "aula",
+         "objeto": "pizarra",
+         "tiza": {"expresion": "sorprendido", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "orgulloso", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "tiza", "texto": "¡Voz natural y todo! Es más que aceptable.", "tipo": "habla"},
+           {"quien": "algoritmo", "texto": "Un solo prompt y 45 minutos.", "tipo": "habla"}]},
+        {"escenario": "aula",
+         "objeto": "pizarra",
+         "tiza": {"expresion": "neutral", "postura": "senalar", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "avergonzado", "postura": "encoger", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "tiza", "texto": "Pues ahora uno de la respiración celular.", "tipo": "habla"},
+           {"quien": "algoritmo", "texto": "Me he gastado el límite de uso. Espero al reinicio.", "tipo": "habla"}]},
+        {"escenario": "aula",
+         "objeto": "pizarra",
+         "tiza": {"expresion": "harto", "postura": "senalar", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "pensativo", "postura": "pensar", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "algoritmo", "texto": "¿Y a ti cuántos reinicios te dan?", "tipo": "habla"},
+           {"quien": "tiza", "texto": "Ninguno. Me queda media barra hasta junio.", "tipo": "habla"}]}
+      ]}
+    },
+    {
+      "pieza": "breve-1",
+      "idea": "El agente del NAS pregunta antes de borrar discos; a las tres de la mañana nadie le contesta y lo toma por silencio administrativo positivo.",
+      "guion": {"vinetas": [
+        {"cartela": "En dirección, hablando del agente del NAS de casa.",
+         "escenario": "despacho",
+         "objeto": "notificaciones",
+         "lleva": "tiza",
+         "tiza": {"expresion": "orgulloso", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "contento", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "tiza", "texto": "Mi agente es administrador, pero antes de tocar un disco me pregunta.", "tipo": "habla"},
+           {"quien": "algoritmo", "texto": "Muy prudente.", "tipo": "habla"}]},
+        {"escenario": "despacho",
+         "objeto": "notificaciones",
+         "lleva": "tiza",
+         "tiza": {"expresion": "pensativo", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "neutral", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "tiza", "texto": "Anoche a las tres me preguntó si borraba el disco de las copias.", "tipo": "habla"},
+           {"quien": "algoritmo", "texto": "¿Y qué le contestaste?", "tipo": "habla"}]},
+        {"escenario": "despacho",
+         "tiza": {"expresion": "preocupado", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "orgulloso", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "tiza", "texto": "Nada. Estaba dormida.", "tipo": "habla"},
+           {"quien": "algoritmo", "texto": "Silencio administrativo positivo.", "tipo": "habla"}]}
+      ]}
+    },
+    {
+      "pieza": "edugems-eduprompts",
+      "idea": "Algoritmo dice que una colección de prompts ya no tiene sentido, que mejor una buena conversación; ante una pregunta de verdad, pide un prompt.",
+      "guion": {"vinetas": [
+        {"cartela": "En la biblioteca, repasando la colección de prompts.",
+         "escenario": "biblioteca",
+         "objeto": "libro",
+         "lleva": "tiza",
+         "tiza": {"expresion": "pensativo", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "neutral", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "tiza", "texto": "Los Gems pasan a ser Skills. Tendré que repasar mis prompts.", "tipo": "habla"},
+           {"quien": "algoritmo", "texto": "¿Una colección de prompts? Mejor una buena conversación.", "tipo": "habla"}]},
+        {"escenario": "biblioteca",
+         "objeto": "libro",
+         "lleva": "tiza",
+         "tiza": {"expresion": "neutral", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "cargando", "postura": "pensar", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "tiza", "texto": "Vale, conversemos. ¿Qué hago con 2.º B el viernes a última hora?", "tipo": "habla"}]},
+        {"escenario": "biblioteca",
+         "objeto": "libro",
+         "lleva": "tiza",
+         "tiza": {"expresion": "riendo", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "avergonzado", "postura": "encoger", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "algoritmo", "texto": "¿No tendrás un prompt para eso?", "tipo": "habla"},
+           {"quien": "tiza", "texto": "Página 112.", "tipo": "habla"}]}
+      ]}
+    },
+    {
+      "pieza": "pentagrama-maestro",
+      "idea": "En Pentagrama Maestro cada nota suena al colocarla; con toda la clase a la vez, Algoritmo oye una orquesta y Tiza, una orquesta afinando.",
+      "guion": {"vinetas": [
+        {"cartela": "En el aula de música, probando Pentagrama Maestro.",
+         "escenario": "aula",
+         "tiza": {"expresion": "pensativo", "postura": "pensar", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "contento", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "algoritmo", "texto": "Cada nota que colocas en el pentagrama suena. ¡Y partidas infinitas!", "tipo": "habla"},
+           {"quien": "tiza", "texto": "¿Y si la clase entera coloca notas a la vez?", "tipo": "habla"}]},
+        {"escenario": "aula",
+         "tiza": {"expresion": "agotado", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "orgulloso", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+         "cartela": "Media hora después.",
+         "bocadillos": [
+           {"quien": "algoritmo", "texto": "¿Lo oyes? ¡Suena a orquesta!", "tipo": "habla"}]},
+        {"escenario": "aula",
+         "tiza": {"expresion": "harto", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "sorprendido", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "tiza", "texto": "A orquesta afinando. Desde hace media hora.", "tipo": "habla"}]}
+      ]}
+    },
+    {
+      "pieza": "breve-2",
+      "idea": "Las ponencias del congreso se pueden ver en línea, pero lo mejor fue el pasillo; eso no se retransmitió, aunque Algoritmo se lo imagina bastante bien.",
+      "guion": {"vinetas": [
+        {"cartela": "En línea, viendo las ponencias del congreso.",
+         "escenario": "videollamada",
+         "tiza": {"expresion": "neutral", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "contento", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "tiza", "texto": "Dos días de ponencias de Albacete, todas en la web.", "tipo": "habla"},
+           {"quien": "algoritmo", "texto": "Te las resumo en un párrafo.", "tipo": "habla"}]},
+        {"escenario": "videollamada",
+         "tiza": {"expresion": "pensativo", "postura": "pensar", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "cargando", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "tiza", "texto": "¿Y lo que se habló en los pasillos? Eso era lo mejor.", "tipo": "habla"}]},
+        {"escenario": "videollamada",
+         "tiza": {"expresion": "enfadado", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "orgulloso", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "algoritmo", "texto": "Eso no se retransmitió. Pero me lo imagino bastante bien.", "tipo": "habla"}]}
+      ]}
+    }
+  ]
+}

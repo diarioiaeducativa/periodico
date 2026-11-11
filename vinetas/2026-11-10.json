@@ -1,0 +1,41 @@
+{
+  "fecha": "2026-11-10",
+  "elegida": {
+    "n": 1,
+    "pieza": "fable-animacion-fotosintesis",
+    "idea": "Tras el vídeo de la fotosíntesis, Algoritmo ha gastado el límite de uso de la semana y espera su reinicio; a Tiza no la reinicia nadie: le queda media barra hasta junio.",
+    "guion": {"vinetas": [
+      {"cartela": "En el aula, estrenando el vídeo de la fotosíntesis.",
+       "escenario": "aula",
+       "objeto": "portatil",
+       "tiza": {"expresion": "sorprendido", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "contento", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+       "bocadillos": [
+         {"quien": "tiza", "texto": "¡Voz natural y todo! Más que aceptable.", "tipo": "habla"},
+         {"quien": "algoritmo", "texto": "Un solo prompt y 45 minutos.", "tipo": "habla"}]},
+      {"escenario": "aula",
+       "objeto": "portatil",
+       "tiza": {"expresion": "neutral", "postura": "senalar", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "avergonzado", "postura": "encoger", "lugar": "derecha", "mira": "izquierda"},
+       "bocadillos": [
+         {"quien": "tiza", "texto": "Pues ahora uno de la respiración celular.", "tipo": "habla"},
+         {"quien": "algoritmo", "texto": "He gastado el límite de uso. Espero al reinicio.", "tipo": "habla"}]},
+      {"escenario": "aula",
+       "objeto": "portatil",
+       "tiza": {"expresion": "agotado", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "pensativo", "postura": "pensar", "lugar": "derecha", "mira": "izquierda"},
+       "bocadillos": [
+         {"quien": "algoritmo", "texto": "¿Y a ti cuántos reinicios te dan?", "tipo": "habla"},
+         {"quien": "tiza", "texto": "Ninguno. Me queda media barra hasta junio.", "tipo": "habla"}]}
+    ]}
+  },
+  "motivo": "La 1 es la más redonda: nace de un dato real de la noticia (los reinicios del límite de uso que Anthropic da esta semana), el contraste entre la máquina que se recarga y la docente que aguanta el curso entero lo reconoce cualquiera, y el remate es corto y se apoya en el propio dibujo de Tiza, la tiza gastada. La 2 tiene un buen remate (silencio administrativo positivo), pero da la vuelta a la noticia (el agente pregunta precisamente para no hacer eso), lo saca del NAS de casa al despacho sin motivo y deja a la IA borrando copias de madrugada, cerca de lo amenazante. La 3 se ríe, de rebote, de la opinión de un miembro del grupo citada en la pieza, y su remate («Página 112») es flojo. La 4 es reconocible pero previsible. La 5 da por grabadas «todas» las ponencias, cosa que la edición no confirma (solo el acceso a la retransmisión), y su remate es tibio. La gracia de la elegida llega a 7, así que solo se afina.",
+  "retoques": "Texto: «Es más que aceptable» queda en «Más que aceptable» y «Me he gastado el límite» en «He gastado el límite». Escenario: el aula está libre (los tres números anteriores fueron sala_profes, casa_noche y fotocopiadora) y es donde se estrena el vídeo, así que se mantiene. Objeto: el portátil en lugar de la pizarra, que el aula ya trae, para que se vea dónde está el vídeo. Caras: Algoritmo pasa de orgulloso (la más repetida) a contento en la primera viñeta; Tiza remata agotada (ojeras) y con los brazos abajo en vez de harta señalando, para que la cara diga lo de la media barra. El rótulo de la primera viñeta (50 caracteres) sitúa la escena sin adelantar el chiste: se mantiene. Ningún bocadillo pasa de 90 caracteres.",
+  "puntuaciones": [
+    {"n": 1, "pieza": "fable-animacion-fotosintesis", "gracia": 7, "claridad": 8, "remate": 8, "prohibiciones": "respeta"},
+    {"n": 2, "pieza": "breve-1", "gracia": 7, "claridad": 6, "remate": 8, "prohibiciones": "respeta (aunque invierte lo que cuenta el breve)"},
+    {"n": 3, "pieza": "edugems-eduprompts", "gracia": 5, "claridad": 6, "remate": 5, "prohibiciones": "descartado: se burla de la opinión de un miembro del grupo citada en la pieza"},
+    {"n": 4, "pieza": "pentagrama-maestro", "gracia": 6, "claridad": 7, "remate": 6, "prohibiciones": "respeta"},
+    {"n": 5, "pieza": "breve-2", "gracia": 4, "claridad": 6, "remate": 4, "prohibiciones": "respeta, pero inventa que todas las ponencias están en la web"}
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "fecha": "2026-11-10",
+  "piezas": [
+    {
+      "id": "tribunator",
+      "seccion": "vibecoding",
+      "repositorio": "dia",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Berria biltegian",
+      "titular": "Tribunator-ek kontserbatorio baten sarbide-probetako epaimahaiak, gelak eta ordutegiak antolatzen ditu",
+      "entradilla": "José Luis Miralles Bonok Clauderen laguntzarekin tresna bat sortu du, zeinak epaimahai bakoitza nork osatzen duen, zein gelatan eta zer ordutan egiten duen azterketa planifikatzen duen, eta argitaratu aurretik gatazkarik ez dagoela egiaztatzen duen.",
+      "cuerpo": [
+        "Tribunator ikastetxeetan epaimahaiak, gelak eta ordutegiak kudeatzeko web-aplikazio bat da. Bere fitxaren arabera, kontserbatorio baten sarbide-probak antolatzeko pentsatuta dago: nork osatzen duen epaimahai bakoitza, zein gelatan eta zer ordutan egiten duen azterketa, probaren zein atal hartzen dituen eta zer gertatzen den kide batek probara aurkezten den ikasleak dituenean. José Luis Miralles Bonok sortu du, eta orrian bertan adierazten du Clauderen laguntzarekin diseinatu duela.",
+        "Irekitzean, orriak hiru bide eskaintzen ditu: hutsetik hastea, datuak inportatzea edo demostrazio-adibide bat kargatzea. Lana fitxatan banatzen da: Espacio, Tiempo, Plantillas, Tribunales eta Verificación. [Proiektuaren kode-biltegiaren](https://github.com/JLMirallesB/tribunator) arabera, Espacio fitxan egoitzen planoak diseinatzen dira, gelekin batera; Tiempo fitxan probetako egunak eta tarteak planifikatzen dira; Plantillas fitxan proba bakoitzaren egitura definitzen da, eta Tribunales fitxan kideak, rolak eta ordutegiak finkatzen dira. Biltegi horrek gaineratzen du aurrekargatutako txantiloiak Valentziako Erkidegoko agindu batean oinarritzen direla eta hautagaiak Excel edo CSV fitxategietatik kargatu daitezkeela.",
+        "Egiaztapen-fitxak, biltegiaren arabera, irtenbide aktiboa berrikusten du eta aurkitzen duena sailkatzen du: akatsak, hala nola gela- edo kide-gatazkak, eta oharrak; fitxak 16 egiaztapen automatikoz hitz egiten du. Argitaratzeko bost PDF mota ere sortzen ditu: epaimahaiak, eguneroko planning-a, planoak, gela bakoitzerako kartelak eta direktorioa. Goiburuan desegin eta berregiteko botoiak daude, baita bertsioen botoi bat ere.",
+        "Erabilerari dagokionez, nabigatzailean funtzionatzen du, zerbitzaririk edo konturik gabe. Proiektuaren biltegiaren arabera, datuak nabigatzailean gordetzen dira; beraz, komeni da noizean behin JSON gisa esportatzea. HTML fitxategi bakar gisa ere deskargatu daiteke, konexiorik gabe funtzionatzen duena; web-bertsioak, ordea, konexioa behar du Excel inportatzeko eta PDFak sortzeko. Interfazea gaztelaniaz, valentziaz eta ingelesez dago.",
+        "Irakasleentzat, interesgarria da sarbide-probetako, oposizioetako edo ikastetxe bateko azterketetako epaimahaiak koordinatzen dituenarentzat, baita adimen artifizialarekin sortutako kudeaketa-tresna bat nola planteatzen den ikusi nahi duenarentzat ere. Kodea AGPL v3 lizentziapean argitaratzen da eta edukiak CC BY-SA 4.0 lizentziapean, beraz beste ikastetxe batzuek egoki dezakete."
+      ],
+      "recursos": [
+        {
+          "id": "tribunator",
+          "titulo": "Tribunator",
+          "autoria": "José Luis Miralles Bono",
+          "url": "https://jlmirallesb.github.io/tribunator/",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://jlmirallesb.github.io/tribunator/",
+          "licencia": "AGPL v3",
+          "captura": "2026-11-10-tribunator.jpg",
+          "captura_alt": "Tribunator-en ongietorri-pantaila, Inicio, Espacio, Tiempo, Plantillas, Tribunales eta Verificación fitxekin, eta Empezar de cero, Importar datos eta Cargar ejemplo botoiekin.",
+          "texto": []
+        }
+      ],
+      "fuentes": [
+        {"titulo": "Tribunator (gaztelaniaz)", "url": "https://jlmirallesb.github.io/tribunator/"},
+        {"titulo": "Tribunator GitHuben (ingelesez)", "url": "https://github.com/JLMirallesB/tribunator"}
+      ],
+      "comprobado": "Captura vista: pantalla de inicio de Tribunator v1.2.15 con pestañas, botones deshacer/rehacer, Cargar ejemplo, Versiones, selector ES/VA/EN, los tres botones de inicio y pie con autoría y licencias. WebFetch de la web solo devolvió el título (necesita JavaScript). WebFetch de GitHub (v1.2.14): funciones por pestaña, PDF, Excel/CSV, plantillas de la Comunitat Valenciana, archivo HTML sin conexión (la versión web necesita red para Excel y PDF), LocalStorage, idiomas y licencias; no menciona un número de 16 comprobaciones, así que esa cifra va atribuida a la ficha. Idiomas de la entrada: español, catalán e inglés, coherente. Sin mensaje de presentación en la entrada. Sin enlaces a lo ya publicado (nada relacionado en publicado.txt).",
+      "repaso": [
+        "Detalles de las pestañas (sedes, planos, franjas, miembros) y de errores/avisos atribuidos al repositorio de código, no dichos como vistos en la web.",
+        "Enlazado «repositorio de código del proyecto» en su primera mención.",
+        "«Apartado de versiones» corregido a botón de versiones (se ve en la cabecera).",
+        "Añadido que la versión web necesita conexión para Excel y PDF y solo el HTML descargado funciona sin ella (dato del repositorio, útil al docente).",
+        "Autoría, licencia, enlace, ficha y captura comprobados con la entrada; sin cambios."
+      ]
+    }
+  ],
+  "descartado": []
+}
