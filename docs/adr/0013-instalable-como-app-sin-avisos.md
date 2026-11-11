@@ -32,6 +32,8 @@ instalable **sin aviso** («sin aviso entonces»): el número ya se anuncia cada
   si así lo eligió quien la usa o si su sistema está en catalán.
 - Los iconos salen de `estaticos/favicon.svg` (Tiza y Algoritmo) con `rsvg-convert`; el
   adaptable, del mismo dibujo al 78 % sobre fondo entero.
+  *Desde el 11-11-2026, los de la app salen de `scripts/iconos.py`, con el dibujo de la imagen de vista
+  previa (ADR 0048); la pestaña sigue con `favicon.svg`.*
 - **Un enlace «Instalar la app» en el pie**, junto a «La redacción» y «RSS», que solo
   aparece donde el navegador deja instalar con un toque (evento `beforeinstallprompt`:
   Chrome y Edge, en el móvil y el ordenador). Se evita así la barra que Chrome pondría sola
