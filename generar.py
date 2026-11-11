@@ -69,7 +69,7 @@ IDIOMAS = {
         "dia_ant": "Día anterior", "dia_sig": "Día siguiente",
         "leer_conv": "Lee la conversación original en", "tema_en": "Tema tratado en",
         "comprobado": "Comprobado en", "fuente": "Fuente", "conversacion": "Conversación", "comentarios": "Comentarios", "comentarios_aviso": "Para comentar hace falta una {cuenta}. Los comentarios son públicos y se guardan en GitHub.", "comentarios_cuenta": "cuenta gratuita de GitHub",
-        "breves": "Breves", "breves_antes": "Breves anteriores", "vineta": "La viñeta", "vineta_titulo": "La viñeta de Tiza y Algoritmo", "y": "y",
+        "breves": "Breves", "breves_antes": "Breves anteriores", "vineta": "La viñeta", "vineta_titulo": "La viñeta de Tiza y Algoritmo", "nombre_tiza": "Tiza", "nombre_algoritmo": "Algoritmo", "y": "y",
         "a_partir": "A partir de",
         "a_partir_dia": "A partir de las noticias del día.",
         "unete": "Únete a la conversación",
@@ -196,7 +196,7 @@ IDIOMAS = {
         "dia_ant": "Dia anterior", "dia_sig": "Dia següent",
         "leer_conv": "Llegeix la conversa original a", "tema_en": "Tema tractat a",
         "comprobado": "Comprovat a", "fuente": "Font", "conversacion": "Conversa", "comentarios": "Comentaris", "comentarios_aviso": "Per comentar cal un {cuenta}. Els comentaris són públics i es desen a GitHub.", "comentarios_cuenta": "compte gratuït de GitHub",
-        "breves": "Breus", "breves_antes": "Breus anteriors", "vineta": "La vinyeta", "vineta_titulo": "La vinyeta de Guix i Algorisme", "y": "i",
+        "breves": "Breus", "breves_antes": "Breus anteriors", "vineta": "La vinyeta", "vineta_titulo": "La vinyeta de Guix i Algorisme", "nombre_tiza": "Guix", "nombre_algoritmo": "Algorisme", "y": "i",
         "a_partir": "A partir de",
         "a_partir_dia": "A partir de les notícies del dia.",
         "unete": "Uneix-te a la conversa",
@@ -1056,12 +1056,41 @@ def barra_secciones(prof, activa, ant="", sig=""):
     return f'<nav class="secciones" aria-label="{L["secciones_nav"]}"><div class="secciones-lista">{"".join(enlaces)}{quees}</div></nav>'
 
 
+# Tiza y Algoritmo en las orejas de la cabecera (ADR 0049), con las formas de la viñeta (vineta.py) y sus
+# mismas clases de color, para que sigan el tema. Tiza, con los brazos caídos; Algoritmo, con los dos en alto.
+TIZA_OREJA = (
+    '<path class="t" d="M-9 314 L-11 332 L-19 332 M9 314 L11 332 L19 332"/>'
+    '<path class="tz" d="M-21 304 L-21 194 Q-21 184 -13 186 L-6 182 L2 187 L9 183 L17 188 Q21 188 21 196 L21 304 Q21 314 11 314 L-11 314 Q-21 314 -21 304 Z"/>'
+    '<path class="cara veta" d="M-15 278 L-15 302 M14 266 L14 280"/>'
+    '<circle class="ft polvo" cx="-14" cy="174" r="1.4"/><circle class="ft polvo" cx="4" cy="169" r="1.1"/><circle class="ft polvo" cx="15" cy="176" r="1.3"/>'
+    '<g transform="translate(2 216)"><circle class="fcara" cx="-9" cy="0" r="2.6"/><circle class="fcara" cx="9" cy="0" r="2.6"/><path class="cara" d="M-8 12 Q0 21 8 12"/></g>'
+    '<path class="t" d="M-21 252 Q-31 272 -29 290 M21 252 Q31 272 29 290"/>')
+ALGORITMO_OREJA = (
+    '<path class="a discontinuo" d="M-18 314 L18 314 M-10 323 L10 323"/>'
+    '<rect class="fz" x="-28" y="216" width="56" height="86" rx="7"/>'
+    '<g transform="translate(2 244)"><circle class="ojo" cx="-9" cy="0" r="7"/><circle class="ojo" cx="9" cy="0" r="7"/>'
+    '<circle class="fpupila" cx="-9" cy="0" r="3"/><circle class="fpupila" cx="9" cy="0" r="3"/><path class="sp" d="M-8 13 Q0 22 8 13"/></g>'
+    '<path class="a" d="M-28 264 L-44 234 M28 264 L44 234"/>')
+
+
+def orejas(prof):
+    """Los dos personajes a los lados de la cabecera, de pie sobre el filete doble: Tiza a la izquierda y
+    Algoritmo a la derecha, como en la viñeta (ADR 0022). Cada uno dice su nombre al pasar por encima y lleva
+    a «La viñeta», donde salen cada día."""
+    def una(lado, nombre, caja, dibujo):
+        x, y, w, h = caja
+        return (f'<a class="oreja oreja-{lado}" href="{prof}vineta.html" title="{nombre}" aria-label="{nombre}: {L["vineta"]}">'
+                f'<svg viewBox="{x} {y} {w} {h}" width="{w}" height="{h}" aria-hidden="true" focusable="false">{dibujo}</svg></a>')
+    return (f'<div class="orejas">{una("izq", L["nombre_tiza"], (-36, 162, 72, 172), TIZA_OREJA)}'
+            f'{una("der", L["nombre_algoritmo"], (-50, 162, 100, 172), ALGORITMO_OREJA)}</div>')
+
+
 def cabecera(prof, ruta, fecha, cuenta, es_portada, h1=True, activa=None, ant="", sig=""):
     """`cuenta` es el número de la edición, rodeado a mano con el bolígrafo rojo, como en un periódico.
     Con h1="dia" (la página de un número de la hemeroteca), la mancheta es el h1 de la página, con el
     enlace a la portada y la fecha solo para el lector de pantalla: se ve igual que con un <p>."""
     etiqueta = "h1" if h1 else "p"
-    nombre = L["titulo"] if h1 is True else f'<a href="{prof}">{L["titulo"]}</a>'
+    nombre = L["titulo"] if h1 is True else f'<a href="{prof or "./"}">{L["titulo"]}</a>'
     sale = publicacion(fecha)
     if h1 == "dia":
         nombre += f'<span class="solo-lector">, {fecha_larga(sale)}</span>'
@@ -1076,6 +1105,7 @@ def cabecera(prof, ruta, fecha, cuenta, es_portada, h1=True, activa=None, ant=""
   </div>
   <{etiqueta} class="mancheta">{nombre}</{etiqueta}>
   <p class="lema">{L["lema"]}</p>
+  {orejas(prof)}
   {barra_secciones(prof, activa, ant, sig)}
 </header>"""
 
@@ -1582,7 +1612,7 @@ def articulo(prof, ruta, d, p, eds):
   {otras}
   {mas_piezas(prof, eds, p)}
   {comentarios(ruta)}
-  <p class="volver"><a href="{prof}">{L["volver"]}</a></p>
+  <p class="volver"><a href="{prof or "./"}">{L["volver"]}</a></p>
 </main>
 {pie(prof, eds, d["fecha"])}
 {SCRIPT_TEMA}
@@ -1686,7 +1716,7 @@ def articulo_reportaje(prof, ruta, d, r, eds):
   {plantilla}
   {relacionadas}
   {comentarios(ruta)}
-  <p class="volver"><a href="{prof}">{L["volver"]}</a></p>
+  <p class="volver"><a href="{prof or "./"}">{L["volver"]}</a></p>
 </main>
 {pie(prof, eds, d["fecha"])}
 {SCRIPT_TEMA}
@@ -1755,7 +1785,7 @@ def pagina_breve(prof, d, b, eds):
   {bloque_vineta(prof, eds, d["fecha"], pieza=f'breve-{b["n"]}')}
   {mas_piezas(prof, eds, {"id": "", "fecha": "", "seccion": None})}
   {comentarios(ruta_breve(b))}
-  <p class="volver"><a href="{prof}">{L["volver"]}</a></p>
+  <p class="volver"><a href="{prof or "./"}">{L["volver"]}</a></p>
 </main>
 {pie(prof, eds, d["fecha"])}
 {SCRIPT_TEMA}
