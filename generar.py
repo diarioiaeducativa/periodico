@@ -65,6 +65,7 @@ IDIOMAS = {
                       "debates": "Debates", "novedades": "Instituciones y empresas", "biblioteca": "Biblioteca", "hace-un-ano": "Hace un año"},
         "actualizado": "Actualizado el", "num": "Núm.", "numero_largo": "Número",
         "tema": "Cambiar entre tema claro y oscuro", "navegacion": "Navegación",
+        "contacto": {"titulo": "Contacto", "enlace": "página de contacto", "txt": "Para avisar de un error, pedir que se retire algo o hacer cualquier consulta sobre el diario o su app.", "correo": "Correo", "otras": "También se puede abrir una incidencia en {incidencias} o escribir a las personas que administran cada grupo."},
         "quees": "La redacción", "portada": "Portada", "volver": "Volver a la portada",
         "dia_ant": "Día anterior", "dia_sig": "Día siguiente",
         "leer_conv": "Lee la conversación original en", "tema_en": "Tema tratado en",
@@ -176,7 +177,7 @@ IDIOMAS = {
                 ("Las visitas", "El diario cuenta cuántas visitas recibe y cuántas veces se abre cada página, para saber si llega a quien lo lee. No usa cookies ni guarda nada de quien lo lee: su navegador recuerda qué páginas ya ha contado, para no contarlas dos veces en la misma visita, y al servidor de los autores solo le llega la suma. Lo que el navegador recuerda para el contador se borra a los 13 meses, la duración que pone de ejemplo la {aepd} en su guía sobre medición de audiencia, y las visitas nuevas no lo alargan; el tema, el idioma y la lectura en columnas o en una columna que se eligen se recuerdan sin caducar. Las cifras se guardan por horas durante 25 meses como máximo, el plazo de esa misma guía; después queda solo el total de cada año. Solo las ven las dos personas que hacen el diario. Para poder leerlo sin conexión, el navegador guarda en el propio dispositivo una copia de las páginas abiertas y del último número; esa copia no sale de él. La app de Android es esta misma web y no recoge nada más. Los comentarios se publican con giscus en las Discussions de GitHub: para comentar hace falta una cuenta de GitHub, y GitHub guarda el comentario y el nombre de usuario con su propia política de privacidad. Quien no comenta no envía nada."),
                 ("Las comunidades", "{chatgpt}, sobre inteligencia artificial en educación; {vce}, de docentes que programan sus propias aplicaciones con IA, y {edumedia}, sobre IA generativa para crear audio, vídeo e imagen. Las tres son abiertas: cada pieza enlaza a la conversación donde nació, que se puede leer sin entrar."),
                 ("Si participas en los grupos", "Las opiniones no se atribuyen a nadie: solo se nombra a la persona que ha publicado un recurso propio. Si aparece algo tuyo y prefieres que no salga, o ves un error, díselo a las personas que administran tu grupo y se retirará o se corregirá."),
-                ("Contacto", "Para avisar de un error, pedir que se retire algo o hacer cualquier consulta, se puede escribir a {correo}, abrir una incidencia en {incidencias} o escribir a las personas que administran cada grupo."),
+                ("Contacto", "El correo y las demás vías para avisar de un error, pedir que se retire algo o hacer cualquier consulta están en la {pagina_contacto}."),
             ],
         },
     },
@@ -192,6 +193,7 @@ IDIOMAS = {
                       "debates": "Debats", "novedades": "Institucions i empreses", "biblioteca": "Biblioteca", "hace-un-ano": "Fa un any"},
         "actualizado": "Actualitzat el", "num": "Núm.", "numero_largo": "Número",
         "tema": "Canviar entre tema clar i fosc", "navegacion": "Navegació",
+        "contacto": {"titulo": "Contacte", "enlace": "pàgina de contacte", "txt": "Per avisar d'un error, demanar que es retiri alguna cosa o fer qualsevol consulta sobre el diari o la seva app.", "correo": "Correu", "otras": "També es pot obrir una incidència a {incidencias} o escriure a les persones que administren cada grup."},
         "quees": "La redacció", "portada": "Portada", "volver": "Torna a la portada",
         "dia_ant": "Dia anterior", "dia_sig": "Dia següent",
         "leer_conv": "Llegeix la conversa original a", "tema_en": "Tema tractat a",
@@ -304,7 +306,7 @@ IDIOMAS = {
                 ("Les visites", "El diari compta quantes visites rep i quantes vegades s'obre cada pàgina, per saber si arriba a qui el llegeix. No fa servir galetes ni desa res de qui el llegeix: el seu navegador recorda quines pàgines ja ha comptat, per no comptar-les dues vegades en la mateixa visita, i al servidor dels autors només hi arriba la suma. El que el navegador recorda per al comptador s'esborra al cap de 13 mesos, la durada que posa d'exemple l'{aepd} a la seva guia sobre mesurament d'audiència, i les visites noves no l'allarguen; el tema, l'idioma i la lectura en columnes o en una columna triats es recorden sense caducar. Les xifres es desen per hores durant 25 mesos com a màxim, el termini d'aquesta mateixa guia; després només en queda el total de cada any. Només les veuen les dues persones que fan el diari. Per poder-lo llegir sense connexió, el navegador desa al mateix dispositiu una còpia de les pàgines obertes i de l'últim número; aquesta còpia no en surt. L'app d'Android és aquest mateix web i no recull res més. Els comentaris es publiquen amb giscus a les Discussions de GitHub: per comentar cal un compte de GitHub, i GitHub desa el comentari i el nom d'usuari amb la seva pròpia política de privadesa. Qui no comenta no envia res."),
                 ("Les comunitats", "{chatgpt}, sobre intel·ligència artificial en educació; {vce}, de docents que programen les seves pròpies aplicacions amb IA, i {edumedia}, sobre IA generativa per crear àudio, vídeo i imatge. Totes tres són obertes: cada peça enllaça amb la conversa on va néixer, que es pot llegir sense entrar-hi."),
                 ("Si participes als grups", "Les opinions no s'atribueixen a ningú: només s'anomena la persona que ha publicat un recurs propi. Si hi apareix alguna cosa teva i prefereixes que no surti, o hi veus un error, digues-ho a les persones que administren el teu grup i es retirarà o es corregirà."),
-                ("Contacte", "Per avisar d'un error, demanar que es retiri alguna cosa o fer qualsevol consulta, es pot escriure a {correo}, obrir una incidència a {incidencias} o escriure a les persones que administren cada grup."),
+                ("Contacte", "El correu i les altres vies per avisar d'un error, demanar que es retiri alguna cosa o fer qualsevol consulta són a la {pagina_contacto}."),
             ],
         },
     },
@@ -1017,6 +1019,7 @@ def pie(prof, eds, actual):
     <h2>{L["pie_diario"]}</h2>
     <ul class="pie-lista">
       <li><a href="{prof}redaccion.html">{L["quees"]}</a></li>
+      <li><a href="{prof}contacto.html">{L["contacto"]["titulo"]}</a></li>
       <li><a href="{prof}videos.html">{L["videos"]}</a></li>
       <li>{enlace(INSTAGRAM, L["instagram"])}</li>
       <li><a href="{prof}para-tu-web.html">{L["ptw_titulo"]}</a></li>
@@ -2058,11 +2061,8 @@ def pagina_redaccion(eds):
                   biblioteca=enlace(TEMA_BIBLIOTECA, L["biblioteca_enlace"]), seccion_bib=f'<a href="biblioteca.html">{L["secciones"]["biblioteca"]}</a>',
                   repositorio=enlace(REPOSITORIO, L["repositorio_enlace"]), seccion_vc=f'<a href="vibecoding.html">{L["secciones"]["vibecoding"]}</a>',
                   codigo=enlace(CODIGO, L["codigo_enlace"]),
-                  incidencias=enlace("https://github.com/diarioiaeducativa/periodico/issues", "GitHub"),
-                  # El correo del contacto del desarrollador en Google Play, que la ficha ya publica; en entidades
-                  # HTML, que se leen igual y lo esconden de los recolectores más simples (ADR 0042)
-                  correo='<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;' + "".join(f"&#{ord(ch)};" for ch in CORREO_CONTACTO) + '">'
-                         + "".join(f"&#{ord(ch)};" for ch in CORREO_CONTACTO) + "</a>",
+                  # El contacto tiene página propia (ADR 0051); aquí queda un apartado breve que lleva a ella
+                  pagina_contacto=f'<a href="contacto.html">{L["contacto"]["enlace"]}</a>',
                   pagina_semana=f'<a href="semana/">{R["pagina_semana"]}</a>',
                   hemeroteca=f'<a href="archivo.html">{L["hemeroteca"]}</a>',
                   hace_un_ano=f'<a href="hace-un-ano.html">{L["secciones"]["hace-un-ano"]}</a>')
@@ -2082,7 +2082,7 @@ def pagina_redaccion(eds):
     # La de las visitas es también la política de privacidad que enlaza la ficha de Google Play (ADR 0042)
     apartados = [(f'<h2 id="comunidades">{t}</h2>{venn}' if "{chatgpt}" in x else
                   f'<h2 id="privacidad">{t}</h2>' if "{aepd}" in x else
-                  f'<h2 id="contacto">{t}</h2>' if "{incidencias}" in x else f"<h2>{t}</h2>") + f"<p>{x.format(**grupos)}</p>"
+                  f'<h2 id="contacto">{t}</h2>' if "{pagina_contacto}" in x else f"<h2>{t}</h2>") + f"<p>{x.format(**grupos)}</p>"
                  for t, x in R["secciones"]]
     # En el ordenador, en columnas como las noticias (ADR 0047): los apartados van en bloques por tema (cómo
     # trabajan los agentes, las secciones del diario, quién lo lee y quién lo hace), cada uno a lo ancho y con
@@ -2117,6 +2117,34 @@ def pagina_redaccion(eds):
 </section>
 {resto}
 {enlace_pres}
+<p class="volver"><a href="./">{L["volver"]}</a></p>
+</main>
+{pie("", eds, None)}
+{SCRIPT_TEMA}
+</body>
+</html>"""
+
+
+ICONO_CORREO = ('<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/>'
+                '<rect x="2" y="4" width="20" height="16" rx="2"/></svg>')   # mail
+
+
+def pagina_contacto(eds):
+    """La página de contacto (ADR 0051): el correo a la vista y las otras vías. Página propia y con enlace en
+    el pie de todas las demás, como pide Google Play a una app de noticias: como apartado de «La redacción»,
+    el revisor no la encontró. Su dirección es la de la declaración de noticias de la ficha: no se renombra."""
+    C = L["contacto"]
+    # El correo del contacto del desarrollador en Google Play, que la ficha ya publica; en entidades HTML,
+    # que se leen igual y lo esconden de los recolectores más simples (ADR 0042)
+    correo = "".join(f"&#{ord(ch)};" for ch in CORREO_CONTACTO)
+    otras = C["otras"].format(incidencias=enlace("https://github.com/diarioiaeducativa/periodico/issues", "GitHub"))
+    return cabeza(f'{C["titulo"]} | {L["titulo"]}', "", C["txt"], "contacto.html") + f"""<body class="pag-que-es">
+{cabecera("", "contacto.html", eds[-1]["fecha"], eds[-1]["numero"], True, h1=False)}
+<main class="articulo que-es contacto">
+<h1 class="titular">{C["titulo"]}</h1>
+<p class="entradilla">{C["txt"]}</p>
+<p class="contacto-correo">{ICONO_CORREO}<span class="contacto-rotulo">{C["correo"]}</span> <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;{correo}">{correo}</a></p>
+<p>{otras}</p>
 <p class="volver"><a href="./">{L["volver"]}</a></p>
 </main>
 {pie("", eds, None)}
@@ -2523,7 +2551,7 @@ def sitemap(eds):
     versiones en los otros idiomas (xhtml:link), como pide Google para un sitio multilingüe (ADR 0026)."""
     rutas = []
     ultima = publicacion(eds[-1]["fecha"])
-    for ruta in ["", "redaccion.html", "vineta.html", "reportajes.html", "breves.html", "archivo.html", "videos.html", "para-tu-web.html"] + [f"{c}.html" for c in TODAS_SECCIONES]:
+    for ruta in ["", "redaccion.html", "contacto.html", "vineta.html", "reportajes.html", "breves.html", "archivo.html", "videos.html", "para-tu-web.html"] + [f"{c}.html" for c in TODAS_SECCIONES]:
         rutas.append((ruta, ultima))
     for sem, ds in por_semanas(eds).items():   # la semana y el mes (ADR 0034)
         rutas.append((f"semana/{sem}/", publicacion(ds[-1]["fecha"])))
@@ -3320,6 +3348,7 @@ def generar_idioma(codigo):
              pagina_portada("", "", eds, piezas, breves, eds[-1]["fecha"], eds[-1]["numero"], True,
                             ant=f'{eds[-2]["fecha"]}/' if len(eds) > 1 else ""))   # «Día anterior», flecha ante «Portada»
     escribir(base / "redaccion.html", pagina_redaccion(eds))
+    escribir(base / "contacto.html", pagina_contacto(eds))
     escribir(base / "que-es.html", redireccion("redaccion.html"))
     escribir(base / "comunidad.html", redireccion("vibecoding.html"))   # la sección retirada el 01-11-2026
     for clave in TODAS_SECCIONES:
