@@ -55,7 +55,9 @@ tienda (web y correo) y la declaración de noticias, que apuntaba a ese apartado
 
 ## Riesgos y limitaciones
 
-- Que Google lo acepte no está comprobado hasta que revise el reenvío.
+- Que Google lo acepte no está comprobado: la app se reenvió a revisión el 12-11-2026, con la página ya
+  publicada, la dirección nueva en la declaración de noticias y la versión 1.0.1 (ADR 0048); la revisión
+  suele tardar hasta siete días.
 - El correo va en entidades HTML (ADR 0042): se lee igual, pero un recolector que las interprete lo obtiene.
 
 ## Validación
