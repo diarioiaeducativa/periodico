@@ -1,0 +1,32 @@
+{
+  "fecha": "2026-11-11",
+  "elegida": {
+    "n": 5,
+    "pieza": "polvo-eres-corto",
+    "idea": "Algoritmok Tizari «Polvo eres» erakusten dio, sofa azpiko hauts-munstrotxoei eta aspiragailu bati buruzko beldur-parodia; tiza batentzat, hori dokumental bat da.",
+    "guion": {"vinetas": [
+      {"cartela": "Liburutegian, AArekin egindako film labur bat ikusten.",
+       "escenario": "biblioteca",
+       "objeto": "movil",
+       "lleva": "algoritmo",
+       "tiza": {"expresion": "contento", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "orgulloso", "postura": "sostener", "lugar": "derecha", "mira": "izquierda"},
+       "bocadillos": [
+         {"quien": "algoritmo", "texto": "«Polvo eres»: sofa azpiko hauts-munstrotxoak eta zaintza egiten duen aspiragailu bat.", "tipo": "habla"},
+         {"quien": "tiza", "texto": "Beldurrezkoa?", "tipo": "habla"}]},
+      {"escenario": "biblioteca",
+       "objeto": "movil",
+       "lleva": "algoritmo",
+       "tiza": {"expresion": "pensativo", "postura": "pensar", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "riendo", "postura": "sostener", "lugar": "derecha", "mira": "izquierda"},
+       "bocadillos": [
+         {"quien": "algoritmo", "texto": "Beldur-gozoa: parodia bat da.", "tipo": "habla"}]},
+      {"escenario": "biblioteca",
+       "tiza": {"expresion": "preocupado", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "sorprendido", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+       "bocadillos": [
+         {"quien": "tiza", "texto": "Tiza batentzat, hori dokumental bat da.", "tipo": "habla"}]}
+    ]}
+  },
+  "traduccion": "itzulpen automatikoa AArekin"
+}

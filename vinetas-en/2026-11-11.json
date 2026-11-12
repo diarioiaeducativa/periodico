@@ -1,0 +1,32 @@
+{
+  "fecha": "2026-11-11",
+  "elegida": {
+    "n": 5,
+    "pieza": "polvo-eres-corto",
+    "idea": "Algorithm shows Chalk “Polvo eres”, a spoof horror film with little dust monsters and a vacuum cleaner; for a piece of chalk, that's a documentary.",
+    "guion": {"vinetas": [
+      {"cartela": "In the library, watching an AI-made short.",
+       "escenario": "biblioteca",
+       "objeto": "movil",
+       "lleva": "algoritmo",
+       "tiza": {"expresion": "contento", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "orgulloso", "postura": "sostener", "lugar": "derecha", "mira": "izquierda"},
+       "bocadillos": [
+         {"quien": "algoritmo", "texto": "“Polvo eres”: little dust monsters under a sofa and a vacuum cleaner on patrol.", "tipo": "habla"},
+         {"quien": "tiza", "texto": "Horror?", "tipo": "habla"}]},
+      {"escenario": "biblioteca",
+       "objeto": "movil",
+       "lleva": "algoritmo",
+       "tiza": {"expresion": "pensativo", "postura": "pensar", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "riendo", "postura": "sostener", "lugar": "derecha", "mira": "izquierda"},
+       "bocadillos": [
+         {"quien": "algoritmo", "texto": "Cute horror: it's a spoof.", "tipo": "habla"}]},
+      {"escenario": "biblioteca",
+       "tiza": {"expresion": "preocupado", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "sorprendido", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+       "bocadillos": [
+         {"quien": "tiza", "texto": "For a piece of chalk, that's a documentary.", "tipo": "habla"}]}
+    ]}
+  },
+  "traduccion": "automatic AI translation"
+}

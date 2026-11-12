@@ -1,0 +1,41 @@
+{
+  "fecha": "2026-11-11",
+  "elegida": {
+    "n": 5,
+    "pieza": "polvo-eres-corto",
+    "idea": "Algoritmo móstralle a Xiz «Polvo eres», unha parodia de terror con monstriños de po e unha aspiradora; para unha xiz, iso é un documental.",
+    "guion": {"vinetas": [
+      {"cartela": "Na biblioteca, vendo un curto feito con IA.",
+       "escenario": "biblioteca",
+       "objeto": "movil",
+       "lleva": "algoritmo",
+       "tiza": {"expresion": "contento", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "orgulloso", "postura": "sostener", "lugar": "derecha", "mira": "izquierda"},
+       "bocadillos": [
+         {"quien": "algoritmo", "texto": "«Polvo eres»: monstriños de po baixo un sofá e unha aspiradora que patrulla.", "tipo": "habla"},
+         {"quien": "tiza", "texto": "De terror?", "tipo": "habla"}]},
+      {"escenario": "biblioteca",
+       "objeto": "movil",
+       "lleva": "algoritmo",
+       "tiza": {"expresion": "pensativo", "postura": "pensar", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "riendo", "postura": "sostener", "lugar": "derecha", "mira": "izquierda"},
+       "bocadillos": [
+         {"quien": "algoritmo", "texto": "Terror simpático: é unha parodia.", "tipo": "habla"}]},
+      {"escenario": "biblioteca",
+       "tiza": {"expresion": "preocupado", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "sorprendido", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+       "bocadillos": [
+         {"quien": "tiza", "texto": "Para unha xiz, iso é un documental.", "tipo": "habla"}]}
+    ]}
+  },
+  "motivo": "Es el remate más sorprendente y corto de los cinco: Tiza, hecha de polvo, ve en la parodia su propia película de miedo, y se entiende sin haber leído la noticia. No explica nada y no se ríe del autor del corto: la broma es sobre Tiza. Los datos (monstruitos bajo un sofá, aspirador que patrulla, parodia de terror simpático) coinciden con la pieza. La 2 (fotocopiadora) tiene un buen golpe en «El núcleo.», pero la tercera viñeta lo explica («es de mapa de bits»); la 1 tiene un remate previsible; la 3 se entiende con esfuerzo y la 4 roza reírse del docente que no vio su vídeo entero y exagera («nadie lo vio»). Gracia 7: no hace falta afinarla a fondo.",
+  "retoques": "Rótulo: «En la biblioteca, viendo un corto en el móvil» pasa a «En la biblioteca, viendo un corto hecho con IA» (47 caracteres), que sitúa mejor de qué va sin adelantar el chiste. Viñeta 2: «¡Terror simpático! Es una parodia.» queda en «Terror simpático: es una parodia.». Variedad: la biblioteca no salió en los tres números anteriores y el móvil no repite objeto (el anterior fue portátil); se mantienen. Caras: Algoritmo pasa de «contento» (la más repetida suya) a «orgulloso» en la viñeta 1, y Tiza de «neutral» (de las más repetidas) a «contento». Todos los bocadillos por debajo de 90 caracteres (el más largo, 77).",
+  "puntuaciones": [
+    {"n": 1, "pieza": "prompt-propiedad-codigo-fable", "gracia": 6, "claridad": 7, "remate": 5, "prohibiciones": "respeta", "nota": "Datos correctos (70 % de tokens, pruebas y documentación no pedidas). El remate «La factura es tuya» se ve venir desde la pregunta anterior."},
+    {"n": 2, "pieza": "svg-celula-tres-modelos", "gracia": 7, "claridad": 7, "remate": 5, "prohibiciones": "respeta", "nota": "Buen contraste herramienta-aula y buen golpe en «El núcleo.», pero lo gasta en la viñeta 2 y la 3 explica el chiste con el mapa de bits."},
+    {"n": 3, "pieza": "svg-celula-tres-modelos", "gracia": 5, "claridad": 5, "remate": 5, "prohibiciones": "respeta", "nota": "Hay que reconstruir qué «dijeron lo mismo»; la formación en línea no sale de la noticia."},
+    {"n": 4, "pieza": "respiracion-celular-revisor", "gracia": 6, "claridad": 6, "remate": 6, "prohibiciones": "respeta", "nota": "Idea ingeniosa, pero «Nadie lo vio entero» exagera la noticia (fue el autor quien no lo vio) y el chiste roza reírse de él."},
+    {"n": 5, "pieza": "polvo-eres-corto", "gracia": 7, "claridad": 8, "remate": 8, "prohibiciones": "respeta", "nota": "Remate breve y sorprendente, propio del personaje; la viñeta 2 es algo de relleno."}
+  ],
+  "traduccion": "automática con IA"
+}

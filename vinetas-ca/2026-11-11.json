@@ -1,0 +1,32 @@
+{
+  "fecha": "2026-11-11",
+  "elegida": {
+    "n": 5,
+    "pieza": "polvo-eres-corto",
+    "idea": "Algorisme ensenya a Guix «Polvo eres», una paròdia de terror amb monstrets de pols i una aspiradora; per a una guix, això és un documental.",
+    "guion": {"vinetas": [
+      {"cartela": "A la biblioteca, veient un curt fet amb IA.",
+       "escenario": "biblioteca",
+       "objeto": "movil",
+       "lleva": "algoritmo",
+       "tiza": {"expresion": "contento", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "orgulloso", "postura": "sostener", "lugar": "derecha", "mira": "izquierda"},
+       "bocadillos": [
+         {"quien": "algoritmo", "texto": "«Polvo eres»: monstrets de pols sota un sofà i una aspiradora que patrulla.", "tipo": "habla"},
+         {"quien": "tiza", "texto": "De terror?", "tipo": "habla"}]},
+      {"escenario": "biblioteca",
+       "objeto": "movil",
+       "lleva": "algoritmo",
+       "tiza": {"expresion": "pensativo", "postura": "pensar", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "riendo", "postura": "sostener", "lugar": "derecha", "mira": "izquierda"},
+       "bocadillos": [
+         {"quien": "algoritmo", "texto": "Terror simpàtic: és una paròdia.", "tipo": "habla"}]},
+      {"escenario": "biblioteca",
+       "tiza": {"expresion": "preocupado", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "sorprendido", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+       "bocadillos": [
+         {"quien": "tiza", "texto": "Per a una guix, això és un documental.", "tipo": "habla"}]}
+    ]}
+  },
+  "traduccion": "automàtica amb IA"
+}

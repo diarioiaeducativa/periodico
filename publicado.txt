@@ -109,4 +109,12 @@
 - pieza:2026-11-10/pentagrama-maestro (vibecoding) Una aplicación para clase de música propone colocar en el pentagrama las notas de una partitura
 - breve: Quien mantiene un agente de Claude Code en el NAS de casa cuenta que corre como servicio c
 - breve: La web del Congreso Nacional de Digitalización Educativa, celebrado en Albacete el 5 y 6 d
-- breve: Anthropic da a los planes que incluyen Fable entre uno y tres reinicios del límite de uso 
+- breve: Anthropic da a los planes que incluyen Fable entre uno y tres reinicios del límite de uso,
+- pieza:2026-11-10/tribunator (repositorio) Tribunator organiza tribunales, aulas y horarios de las pruebas de acceso de un conservatorio — recursos con artículo: Tribunator (https://jlmirallesb.github.io/tribunator/)
+
+## 2026-11-11 (publicado el jueves 12 de noviembre de 2026)
+- pieza:2026-11-11/svg-celula-tres-modelos (multimedia) Una prueba con tres modelos sugiere que dibujar en SVG evita errores en las láminas de ciencias
+- pieza:2026-11-11/prompt-propiedad-codigo-fable (vibecoding) Anthropic recomienda decir a Fable 5.2 que el código es suyo si se quiere que lo reorganice
+- pieza:2026-11-11/respiracion-celular-revisor (multimedia) Un segundo vídeo con Fable 5.2 añade un agente que revisa el contenido científico antes de generarlo
+- pieza:2026-11-11/polvo-eres-corto (multimedia) «Polvo eres», un corto de animación stop-motion hecho con IA generativa
+- pieza:2026-11-11/eduvers-simulaciones (vibecoding) Eduvers reúne simulaciones interactivas de Física y Química y prepara laboratorios virtuales en 3D

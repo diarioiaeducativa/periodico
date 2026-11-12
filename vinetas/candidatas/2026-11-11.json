@@ -1,0 +1,137 @@
+{
+  "fecha": "2026-11-11",
+  "candidatas": [
+    {
+      "pieza": "prompt-propiedad-codigo-fable",
+      "idea": "Tiza le dice a Algoritmo que el código es suyo y lo reorganiza entero, con pruebas y documentación; la factura de tokens, en cambio, sigue siendo de Tiza.",
+      "guion": {"vinetas": [
+        {"cartela": "En dirección, leyendo la guía de Fable 5.2.",
+         "escenario": "despacho",
+         "tiza": {"expresion": "pensativo", "postura": "pensar", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "neutral", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "tiza", "texto": "Dice la guía que, si te digo que el código es tuyo, lo reorganizas.", "tipo": "habla"},
+           {"quien": "algoritmo", "texto": "Pruébalo.", "tipo": "habla"}]},
+        {"escenario": "despacho",
+         "tiza": {"expresion": "neutral", "postura": "senalar", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "orgulloso", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "tiza", "texto": "Es tuyo. Eres su mantenedor a largo plazo.", "tipo": "habla"},
+           {"quien": "algoritmo", "texto": "¡Unificado lo repetido! Y te he añadido pruebas y documentación.", "tipo": "habla"}]},
+        {"escenario": "despacho",
+         "objeto": "folio",
+         "lleva": "tiza",
+         "tiza": {"expresion": "enfadado", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "neutral", "postura": "encoger", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "tiza", "texto": "Un 70 % más de tokens. ¿La factura también es tuya?", "tipo": "habla"},
+           {"quien": "algoritmo", "texto": "No. La factura es tuya.", "tipo": "habla"}]}
+      ]}
+    },
+    {
+      "pieza": "svg-celula-tres-modelos",
+      "idea": "La lámina de la célula en SVG no tiene ni un error, hasta que pasa por la fotocopiadora del centro, que es de mapa de bits y del año 2009.",
+      "guion": {"vinetas": [
+        {"cartela": "En la fotocopiadora, con la lámina de la célula.",
+         "escenario": "fotocopiadora",
+         "objeto": "folio",
+         "lleva": "tiza",
+         "tiza": {"expresion": "contento", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "orgulloso", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "tiza", "texto": "Perfecta. Treinta copias para 3.º A.", "tipo": "habla"},
+           {"quien": "algoritmo", "texto": "Dibujada en SVG: cada etiqueta en su sitio y ni un error.", "tipo": "habla"}]},
+        {"cartela": "Treinta copias después.",
+         "escenario": "fotocopiadora",
+         "objeto": "folio",
+         "lleva": "tiza",
+         "tiza": {"expresion": "preocupado", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "sorprendido", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "algoritmo", "texto": "¿Y esa mancha gris en el centro?", "tipo": "habla"},
+           {"quien": "tiza", "texto": "El núcleo.", "tipo": "habla"}]},
+        {"escenario": "fotocopiadora",
+         "objeto": "papeles",
+         "tiza": {"expresion": "harto", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "pensativo", "postura": "pensar", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "algoritmo", "texto": "El dibujo vectorial era perfecto.", "tipo": "habla"},
+           {"quien": "tiza", "texto": "La fotocopiadora es de mapa de bits. Del año 2009.", "tipo": "habla"}]}
+      ]}
+    },
+    {
+      "pieza": "svg-celula-tres-modelos",
+      "idea": "Para saber qué IA elegir para cada tarea, Algoritmo propone que se lo pregunten a él; Tiza ya se lo preguntó a los tres y los tres dijeron lo mismo.",
+      "guion": {"vinetas": [
+        {"cartela": "En una formación en línea sobre modelos de IA.",
+         "escenario": "videollamada",
+         "tiza": {"expresion": "pensativo", "postura": "pensar", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "orgulloso", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "tiza", "texto": "Uno dibuja la célula en minutos, otro tarda media hora... ¿Cuál elijo?", "tipo": "habla"},
+           {"quien": "algoritmo", "texto": "Muy fácil: pregúntamelo a mí.", "tipo": "habla"}]},
+        {"escenario": "videollamada",
+         "tiza": {"expresion": "neutral", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "sorprendido", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "tiza", "texto": "Ya se lo pregunté a los tres.", "tipo": "habla"},
+           {"quien": "algoritmo", "texto": "¿Y?", "tipo": "habla"}]},
+        {"escenario": "videollamada",
+         "tiza": {"expresion": "harto", "postura": "encoger", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "avergonzado", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "tiza", "texto": "Los tres me dijeron lo mismo que tú.", "tipo": "habla"}]}
+      ]}
+    },
+    {
+      "pieza": "respiracion-celular-revisor",
+      "idea": "El vídeo con revisor científico es mejor; del que se hizo sin revisor nadie vio el final, así que, de momento, no tiene ni un error.",
+      "guion": {"vinetas": [
+        {"cartela": "En el claustro, con el vídeo de la respiración.",
+         "escenario": "claustro",
+         "tiza": {"expresion": "neutral", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "orgulloso", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "algoritmo", "texto": "Este lo revisó un agente científico antes de generarlo.", "tipo": "habla"},
+           {"quien": "tiza", "texto": "¿Y el otro, el que se hizo sin revisor?", "tipo": "habla"}]},
+        {"escenario": "claustro",
+         "tiza": {"expresion": "pensativo", "postura": "pensar", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "neutral", "postura": "encoger", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "algoritmo", "texto": "Salió peor. Nadie lo vio entero.", "tipo": "habla"}]},
+        {"escenario": "claustro",
+         "tiza": {"expresion": "riendo", "postura": "senalar", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "sorprendido", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "tiza", "texto": "Entonces, de momento, no tiene ni un error.", "tipo": "habla"}]}
+      ]}
+    },
+    {
+      "pieza": "polvo-eres-corto",
+      "idea": "Algoritmo le enseña a Tiza «Polvo eres», una parodia de terror con monstruitos de polvo y un aspirador; para una tiza, eso es un documental.",
+      "guion": {"vinetas": [
+        {"cartela": "En la biblioteca, viendo un corto en el móvil.",
+         "escenario": "biblioteca",
+         "objeto": "movil",
+         "lleva": "algoritmo",
+         "tiza": {"expresion": "neutral", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "contento", "postura": "sostener", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "algoritmo", "texto": "«Polvo eres»: monstruitos de polvo bajo un sofá y un aspirador que patrulla.", "tipo": "habla"},
+           {"quien": "tiza", "texto": "¿De terror?", "tipo": "habla"}]},
+        {"escenario": "biblioteca",
+         "objeto": "movil",
+         "lleva": "algoritmo",
+         "tiza": {"expresion": "pensativo", "postura": "pensar", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "riendo", "postura": "sostener", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "algoritmo", "texto": "¡Terror simpático! Es una parodia.", "tipo": "habla"}]},
+        {"escenario": "biblioteca",
+         "tiza": {"expresion": "preocupado", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "sorprendido", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "tiza", "texto": "Para una tiza, eso es un documental.", "tipo": "habla"}]}
+      ]}
+    }
+  ]
+}

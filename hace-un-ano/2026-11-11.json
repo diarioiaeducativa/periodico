@@ -1,0 +1,20 @@
+{"fecha": "2026-11-11", "hay_pieza": true,
+ "piezas": [{"id": "gpt-5-1-llegada-retirada",
+             "seccion": "hace-un-ano", "importancia": 3,
+             "grupo": "chatgpt", "fecha_original": "2025-11-12",
+             "antetitulo": "Modelos de lenguaje",
+             "titular": "GPT-5.1 llegó a ChatGPT entre asombro por su rapidez y no cumplió cuatro meses en él",
+             "entradilla": "En noviembre de 2025 sorprendía lo deprisa que llegaba GPT-5.1, el modelo «más conversacional» de OpenAI. El 11 de marzo de 2026 ya había desaparecido de ChatGPT.",
+             "cuerpo": [
+               "El 12 de noviembre de 2025, en ChatGPT-IA-edu, se compartió el anuncio de OpenAI: GPT-5.1 llegaba esa semana a todos los usuarios de ChatGPT, más listo, más fiable y más conversacional. La reacción fue de asombro por la rapidez del despliegue.",
+               "Un mes después, el 11 de diciembre, salió [GPT-5.2](https://en.wikipedia.org/wiki/GPT-5.2), y el 5 de marzo de 2026, GPT-5.4. Seis días más tarde, según la [página de OpenAI sobre los modelos retirados](https://help.openai.com/en/articles/20001051-retiring-gpt-4o-and-other-chatgpt-models), GPT-5.1 Instant, Thinking y Pro dejaron ChatGPT, y sus conversaciones y GPT personalizados pasaron a GPT-5.3 Instant y GPT-5.4 Thinking o Pro. Solo siguen en la API.",
+               "Para el aula, la lección va más allá de un nombre: un GPT personalizado o unas instrucciones afinadas para cierto tono pueden quedar ligados a un modelo que, en unos meses, ya no está. Lo que hace un año era la novedad de la semana es hoy una línea en una lista de retiradas."
+             ],
+             "fuentes": [
+               {"titulo": "OpenAI: Retiring GPT-4o and other ChatGPT models", "url": "https://help.openai.com/en/articles/20001051-retiring-gpt-4o-and-other-chatgpt-models"},
+               {"titulo": "Wikipedia: GPT-5.2", "url": "https://en.wikipedia.org/wiki/GPT-5.2"}
+             ],
+             "ilustracion_alt": "Díptico dividido por una línea vertical. A la izquierda, rotulado «Nov. 2025», una burbuja de chat con líneas de texto y el rótulo «GPT-5.1». A la derecha, rotulado «Hoy», la misma burbuja pero discontinua y en azul, con el rótulo «GPT-5.1» tachado y debajo «Retirado».",
+             "mensaje": {"grupo": "chatgpt", "id": 42028},
+             "comprobado": "Mensaje 42028 de ChatGPT-IA-edu comprobado en t.me (12-11-2025, tuit de OpenAI «GPT-5.1 in ChatGPT is rolling out to all users this week»); el comentario «Ya llegó. Tremenda rapidez» es el 42029. Salida de GPT-5.1 el 12-11-2025: Wikipedia GPT-5.1. GPT-5.2 (11-12-2025) y GPT-5.4 (5-3-2026): Wikipedia GPT-5.2. Retirada de ChatGPT el 11-03-2026 de GPT-5.1 Instant, Thinking y Pro, paso a GPT-5.3 Instant y GPT-5.4 Thinking/Pro y permanencia en la API: página de ayuda de OpenAI 20001051 y notas de versión, vistas por búsqueda (la página da 403 a WebFetch). No se afirma cuál es hoy el modelo por defecto de ChatGPT. publicado.txt no tiene ninguna pieza sobre GPT-5.1. El tema no está en «Ya contado» del último mes.",
+             "repaso": ["Titular: «entre elogios a su rapidez» pasa a «entre asombro por su rapidez»: en el grupo solo hubo un comentario de sorpresa, no elogios.", "Recorte de 278 a unas 181 palabras (entradilla incluida): quitado el párrafo del día siguiente y la frase de «velocidad», y entrecomillado «mucho más conversacional» (era traducción de «a lot more conversational»), ahora sin comillas.", "Resto verificado sin cambios: mensaje, fechas, retirada, sustitutos y API."]}]}

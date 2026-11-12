@@ -1,0 +1,20 @@
+{"fecha": "2026-11-11", "hay_pieza": true,
+ "piezas": [{"id": "gpt-5-1-llegada-retirada",
+             "seccion": "hace-un-ano", "importancia": 3,
+             "grupo": "chatgpt", "fecha_original": "2025-11-12",
+             "antetitulo": "Hizkuntza-ereduak",
+             "titular": "GPT-5.1 ChatGPT-era bere azkarrak harriturik iritsi zen, eta ez zuen lau hilabete bete bertan",
+             "entradilla": "2025eko azaroan, GPT-5.1 zeinen azkar iritsi zen harritzen zuen, OpenAIren eredu «elkarrizketazaleena». 2026ko martxoaren 11n, ChatGPT-tik desagertuta zegoen jada.",
+             "cuerpo": [
+               "2025eko azaroaren 12an, ChatGPT-IA-edu taldean, OpenAIren iragarpena partekatu zen: GPT-5.1 aste hartan bertan iristen zen ChatGPT-ren erabiltzaile guztiengana, hobeto moldatua, fidagarriagoa eta elkarrizketazaleagoa. Erreakzioa hedapenaren azkartasunak eragindako harridura izan zen.",
+               "Hilabete geroago, abenduaren 11n, [GPT-5.2](https://en.wikipedia.org/wiki/GPT-5.2) atera zen, eta 2026ko martxoaren 5ean, GPT-5.4. Sei egun geroago, [OpenAIren eredu erretiratuen orriaren](https://help.openai.com/en/articles/20001051-retiring-gpt-4o-and-other-chatgpt-models) arabera, GPT-5.1 Instant, Thinking eta Pro ChatGPT-tik atera ziren, eta haien elkarrizketak eta GPT pertsonalizatuak GPT-5.3 Instant eta GPT-5.4 Thinking edo Prora pasatu ziren. APIan bakarrik jarraitzen dute.",
+               "Gelarako, ikasgaia izen batetik harago doa: ton jakin baterako doitutako GPT pertsonalizatu bat edo argibideak, hilabete batzuk barru jada existitzen ez den eredu bati lotuta gera daitezke. Duela urtebete aste hartako berrikuntza zena, gaur erretiratuen zerrenda bateko lerro bat besterik ez da."
+             ],
+             "fuentes": [
+               {"titulo": "OpenAI: Retiring GPT-4o and other ChatGPT models (ingelesez)", "url": "https://help.openai.com/en/articles/20001051-retiring-gpt-4o-and-other-chatgpt-models"},
+               {"titulo": "Wikipedia: GPT-5.2 (ingelesez)", "url": "https://en.wikipedia.org/wiki/GPT-5.2"}
+             ],
+             "ilustracion_alt": "Diptikoa, lerro bertikal batez erdibitua. Ezkerrean, «2025 aza.» errotulatuta, testu-lerroak dituen txat-bunbuila bat eta «GPT-5.1» errotulua. Eskuinean, «Gaur» errotulatuta, bunbuila bera baina etena eta urdina, «GPT-5.1» errotulua marratuta eta azpian «Erretiratua».",
+             "mensaje": {"grupo": "chatgpt", "id": 42028},
+             "comprobado": "Mensaje 42028 de ChatGPT-IA-edu comprobado en t.me (12-11-2025, tuit de OpenAI «GPT-5.1 in ChatGPT is rolling out to all users this week»); el comentario «Ya llegó. Tremenda rapidez» es el 42029. Salida de GPT-5.1 el 12-11-2025: Wikipedia GPT-5.1. GPT-5.2 (11-12-2025) y GPT-5.4 (5-3-2026): Wikipedia GPT-5.2. Retirada de ChatGPT el 11-03-2026 de GPT-5.1 Instant, Thinking y Pro, paso a GPT-5.3 Instant y GPT-5.4 Thinking/Pro y permanencia en la API: página de ayuda de OpenAI 20001051 y notas de versión, vistas por búsqueda (la página da 403 a WebFetch). No se afirma cuál es hoy el modelo por defecto de ChatGPT. publicado.txt no tiene ninguna pieza sobre GPT-5.1. El tema no está en «Ya contado» del último mes.",
+             "repaso": ["Titular: «entre elogios a su rapidez» pasa a «entre asombro por su rapidez»: en el grupo solo hubo un comentario de sorpresa, no elogios.", "Recorte de 278 a unas 181 palabras (entradilla incluida): quitado el párrafo del día siguiente y la frase de «velocidad», y entrecomillado «mucho más conversacional» (era traducción de «a lot more conversational»), ahora sin comillas.", "Resto verificado sin cambios: mensaje, fechas, retirada, sustitutos y API."]}]}

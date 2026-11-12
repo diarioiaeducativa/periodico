@@ -1,0 +1,134 @@
+{
+  "fecha": "2026-11-11",
+  "hay_edicion": true,
+  "motivo": "Día normal: pruebas de dibujo científico y vídeo educativo con Fable 5.2, una pauta de Anthropic para programar con el modelo, un corto y un sitio de simulaciones compartidos por miembros. Se descartan rumores sin fuente y temas ya publicados.",
+  "piezas": [
+    {
+      "id": "svg-celula-tres-modelos",
+      "seccion": "multimedia",
+      "importancia": 1,
+      "grupo": "edumedia",
+      "antetitulo": "Dibujo científico",
+      "titular": "Una prueba con tres modelos sugiere que dibujar en SVG evita errores en las láminas de ciencias",
+      "entradilla": "Un docente pidió a tres modelos avanzados una lámina de la célula animal. Ninguno cometió errores de contenido, y atribuye la fiabilidad al formato vectorial.",
+      "cuerpo": [
+        "En el grupo se comparó el resultado de pedir a Claude Fable 5.2, a un modelo de OpenAI y a otro de Google una lámina didáctica de una célula animal en formato SVG, el de dibujo vectorial. Según quien hizo la prueba, los tres entregaron un esquema con las etiquetas correctas; el de Claude terminó en pocos minutos, el de ChatGPT poco después y el de Gemini tardó cerca de media hora.",
+        "La explicación que se ofreció es que, en un dibujo vectorial, el propio modelo de lenguaje escribe el dibujo y aprovecha todo lo que sabe del tema. Los generadores de imágenes de mapa de bits, en cambio, reciben una descripción y la pasan a otro modelo con menos conocimiento, y ahí aparecen los fallos. Es una hipótesis del autor, que afirma estar convencido de ella y que aún tiene que probarla con otros modelos; no es un resultado contrastado.",
+        "Valoró mejor el estilo sobrio y claro de Claude, mientras que los otros dos le parecieron peores como ilustración: en uno se solapaban elementos y no se distinguía adónde iban las flechas. En el debate posterior se apuntó que lo difícil hoy es saber qué herramienta elegir para cada tarea, y otro miembro contó que ya pide a la IA que las imágenes de sus presentaciones sean SVG. Es la línea que ya recogió el diario sobre [crear infografías en HTML y SVG](pieza:2026-11-02/infografias-svg-html).",
+        "Para el aula, la pauta práctica que se desprende es pedir en SVG los esquemas donde importa la exactitud, y revisarlos igualmente antes de usarlos."
+      ],
+      "fuentes": [
+        {"titulo": "Mensaje del grupo EduMedia-IAG con la explicación del SVG", "url": "https://t.me/EduMediaIAG/12186"},
+        {"titulo": "Mensaje con las tres láminas comparadas", "url": "https://t.me/EduMediaIAG/12194"}
+      ],
+      "mensaje": {"grupo": "edumedia", "id": 12186},
+      "comprobado": "Abierto el mensaje 12186 (embed de Telegram): la explicación coincide con lo que se cuenta. Contrastado con los mensajes del día (12194-12199, 12187). No hay fuente externa: se presenta como prueba y opinión de un miembro, con la hipótesis marcada como tal. No se han podido abrir las imágenes originales; las descripciones de las tres láminas coinciden con lo dicho. Clave pieza:2026-11-02/infografias-svg-html presente en publicado.txt y sobre el mismo tema (infografías en SVG).",
+      "ilustracion": "Esquema de dos caminos: a la izquierda, un modelo de lenguaje que escribe directamente el código de un dibujo vectorial; a la derecha, un modelo de lenguaje que pasa una descripción a un generador de imágenes aparte. Ambos terminan en una célula animal, y solo el primero lleva una marca de verificación.",
+      "ilustracion_alt": "Esquema de dos caminos que parten de «Modelo»: uno pasa por «Código SVG» y llega a una célula animal con una marca de verificación; el otro pasa por «Generador» y llega a otra célula sin marca."
+    },
+    {
+      "id": "prompt-propiedad-codigo-fable",
+      "seccion": "vibecoding",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Programar con Fable",
+      "titular": "Anthropic recomienda decir a Fable 5.2 que el código es suyo si se quiere que lo reorganice",
+      "entradilla": "La guía de Anthropic para Fable 5.2 explica que el modelo se comporta distinto según quién figure como dueño del código, con un coste en tokens.",
+      "cuerpo": [
+        "Un hilo del grupo compartió un [artículo de Xataka](https://www.xataka.com/robotica-e-ia/anthropic-ha-descubierto-que-mi-madre-sabia-cuidas-mejor-cosas-cuando-crees-que-tuyas-a-su-ia-le-pasa-codigo) sobre una pauta de la [guía de Anthropic para pedir cosas a Claude Fable 5.2](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-fable-5-2): el modelo presta mucha atención a quién es el dueño del código en el que trabaja.",
+        "Según la guía, en pruebas de la empresa con tareas de programación pequeñas, si el mensaje no dice nada del dueño, o presenta el código como de otra persona, el modelo tiende a añadir sobre lo existente aunque duplique código. Si se le indica que es el responsable y mantenedor a largo plazo, unifica el código repetido en una función común en torno al 75 % de las ejecuciones, frente a menos del 10 % sin esa frase. Las cifras son de la propia empresa.",
+        "La guía también avisa del precio: los tokens de salida subieron entre un 70 % y un 80 %, el modelo hizo cambios que nadie había pedido (sobre todo pruebas y documentación) y a veces alteró el comportamiento de alguna función. Por eso recomienda no usar la frase cuando el código es de la persona usuaria y se quiere tocar lo mínimo, y revisar el resumen de cambios, que puede omitir modificaciones pequeñas.",
+        "Para quien programa aplicaciones educativas con agentes, la utilidad es decidir, según el caso, si se quiere un asistente que respete la estructura existente o uno que la mejore."
+      ],
+      "fuentes": [
+        {"titulo": "Prompting Claude Fable 5.2 (Anthropic)", "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-fable-5-2"},
+        {"titulo": "Artículo de Xataka", "url": "https://www.xataka.com/robotica-e-ia/anthropic-ha-descubierto-que-mi-madre-sabia-cuidas-mejor-cosas-cuando-crees-que-tuyas-a-su-ia-le-pasa-codigo"}
+      ],
+      "mensaje": {"grupo": "vce", "id": 14844},
+      "comprobado": "Abierta la guía oficial de Anthropic, sección «Say who owns the code»: cifras (menos del 10 % y alrededor del 75 %), aumento de tokens del 70-80 %, cambios no pedidos (pruebas y documentación), alteración de una función, resumen que omite cambios pequeños y recomendación de omitir la frase, todo coincide. Xataka abierto: resume lo mismo y cita «la mitad» de los intentos, cifra distinta; manda la guía oficial. Mensaje 14844 comprobado en Telegram.",
+      "ilustracion": null,
+      "ilustracion_alt": "Dos columnas: a la izquierda, dos bloques de código idénticos y los rótulos «Añade» y «Menos del 10 %»; a la derecha, un icono de fusión sobre un solo bloque de código y los rótulos «Unifica» y «75 %»."
+    },
+    {
+      "id": "respiracion-celular-revisor",
+      "seccion": "multimedia",
+      "importancia": 2,
+      "grupo": "chatgpt",
+      "antetitulo": "Vídeo educativo",
+      "titular": "Un segundo vídeo con Fable 5.2 añade un agente que revisa el contenido científico antes de generarlo",
+      "entradilla": "Tras la animación de la fotosíntesis, el mismo docente ha hecho una sobre la respiración celular con un agente revisor, y ha traducido la primera al catalán.",
+      "cuerpo": [
+        "Después de [la animación de la fotosíntesis que Fable 5.2 preparó a partir de una sola frase](pieza:2026-11-10/fable-animacion-fotosintesis), su autor ha publicado otra sobre la respiración celular. Esta vez pidió que un agente revisor científico comprobara el texto antes de pasarlo a audio y las imágenes antes de renderizar el vídeo, para evitar errores. Los vídeos de respiración celular están hechos con la versión de consola de Claude Code.",
+        "Contó además que hizo con Opus 5.5 otro vídeo del mismo tema, sin revisor, cuya calidad le pareció muy inferior; ni siquiera lo vio entero, así que no sabe si contiene errores. La comparación no está controlada, porque cambian a la vez el modelo y el revisor.",
+        "Por otro lado, tradujo al catalán el vídeo de la fotosíntesis. La voz, de Gemini, le parece menos buena que la castellana y con algún fallo pequeño, aunque el resultado general es muy bueno.",
+        "Quien quiera hacer lo mismo tiene aquí dos ideas prácticas: incluir un paso de revisión de contenido antes de producir, y probar la traducción como una vía para reutilizar el material en otra lengua."
+      ],
+      "fuentes": [
+        {"titulo": "Mensaje del grupo ChatGPT-IA-edu con el vídeo de la respiración celular", "url": "https://t.me/ChatGPTedu/54256"},
+        {"titulo": "Mensaje del grupo EduMedia-IAG sobre la traducción al catalán", "url": "https://t.me/EduMediaIAG/12193"}
+      ],
+      "mensaje": {"grupo": "chatgpt", "id": 54256},
+      "comprobado": "Abierto el mensaje 54256 en Telegram: coincide (vídeo de la respiración celular, agente revisor de texto e imágenes). Contrastado con los mensajes 12211-12213 y 12193. No se han podido ver los vídeos. Se han quitado los nombres de los modelos de voz, que no se pueden contrastar. Enlace a la pieza anterior presente en publicado.txt y sobre el mismo vídeo de la fotosíntesis. Corregido «ambos vídeos»: la consola se refiere a los dos de respiración celular.",
+      "ilustracion": null,
+      "ilustracion_alt": "Cadena de cinco pasos con flechas, con los rótulos «Texto», «Revisor», «Imágenes», «Revisor» y «Vídeo», y una lupa en cada paso de revisión."
+    },
+    {
+      "id": "polvo-eres-corto",
+      "seccion": "multimedia",
+      "importancia": 3,
+      "grupo": "edumedia",
+      "antetitulo": "Cine con IA",
+      "titular": "«Polvo eres», un corto de animación stop-motion hecho con IA generativa",
+      "entradilla": "Un miembro del grupo ha compartido su primer cortometraje, una parodia de terror simpático hecha con IA generativa.",
+      "cuerpo": [
+        "[«Polvo eres»](https://youtu.be/5U8z-PfXz6w), de Orestes G. Villanueva, es un cortometraje de unos dos minutos y medio que parodia el cine de terror con una colonia de monstruitos de polvo que viven bajo un sofá y un aspirador que patrulla de noche.",
+        "Según la descripción del vídeo, está hecho con Google Flow (imagen y vídeo con Veo 3.1 y Nano Banana), con música de Flow Music, voces y efectos generados con IA, y guion y montaje con asistencia de Claude. Incluye un aviso de que todo el contenido es generado y lleva marcas SynthID. Tiene subtítulos en español e inglés.",
+        "Puede servir de ejemplo de proyecto de alumnado o de cine de animación en el aula, con la transparencia sobre el uso de IA que muestra el propio vídeo."
+      ],
+      "fuentes": [
+        {"titulo": "«Polvo eres» en YouTube", "url": "https://youtu.be/5U8z-PfXz6w"}
+      ],
+      "mensaje": {"grupo": "edumedia", "id": 12206},
+      "comprobado": "YouTube solo permitió confirmar el título y que es un cortometraje de animación stop-motion (terror simpático); autoría, herramientas, duración y subtítulos proceden de la descripción del vídeo tal como la reproduce el mensaje del grupo (vista previa del enlace), sin poder contrastarlos. Mensaje 12206 comprobado en Telegram. Titular cambiado para no atribuir las herramientas a Google sin confirmarlo.",
+      "ilustracion": null,
+      "ilustracion_alt": "Tres fotogramas seguidos de un corto stop-motion en los que un monstruito de polvo avanza de izquierda a derecha; rótulos: «Stop-motion», «Monstruitos de polvo» y «Generado con IA»."
+    },
+    {
+      "id": "eduvers-simulaciones",
+      "seccion": "vibecoding",
+      "importancia": 3,
+      "grupo": "vce",
+      "antetitulo": "Recurso de la comunidad",
+      "titular": "Eduvers reúne simulaciones interactivas de Física y Química y prepara laboratorios virtuales en 3D",
+      "entradilla": "Su autor, Juan José de Haro, va añadiendo simulaciones a su web y anuncia que enlazará laboratorios en 3D en las próximas semanas.",
+      "cuerpo": [
+        "El apartado de [simulaciones de Física y Química de Eduvers](https://eduvers.org/es/fisica-quimica/simulaciones/), creado por Juan José de Haro, ofrece 19 simulaciones, entre otras caída libre, plano inclinado, tiro parabólico, ley de Hooke, ondas, óptica geométrica, la curva de calentamiento en 3D y las estaciones en Física, e isótopos, ley de los gases ideales y volumetría en Química. Se pueden filtrar por área y tema.",
+        "Su autor explica en el grupo de Vibe Coding Educativo que las hace con ayuda de los modelos de IA y que irá publicando más en las próximas semanas, con laboratorios virtuales en 3D. Advierte de que ahora mismo hay errores que irá corrigiendo y completando.",
+        "Otro miembro del grupo respondió con una colección propia de recursos para bachillerato, y el autor añadió que se puede pedir a la IA una práctica interactiva en 3D de lo que se hace en el laboratorio."
+      ],
+      "fuentes": [
+        {"titulo": "Simulaciones de Física y Química (Eduvers)", "url": "https://eduvers.org/es/fisica-quimica/simulaciones/"}
+      ],
+      "mensaje": {"grupo": "vce", "id": 14858},
+      "comprobado": "Abierta la página: 19 simulaciones, con las áreas y filtros por área y tema descritos; la lista del borrador decía «rampa», que en la página es «Plano inclinado» (corregido). La página no indica autor ni licencia; la autoría (Juan José de Haro) y los planes salen del mensaje 14858, comprobado en Telegram, donde figura como autor.",
+      "ilustracion": null,
+      "ilustracion_alt": "Tres tarjetas bajo el rótulo «19 simulaciones»: la trayectoria parabólica de una bola, «Física»; un matraz, «Química»; y un cubo en 3D, «Laboratorio 3D»."
+    }
+  ],
+  "breves": [],
+  "descartado": [
+    "Rumor de que Opus 5.5 se ha «rebajado» para vender planes superiores: el propio comentarista lo da por posiblemente falso y no hay fuente; buscado solo en el hilo.",
+    "X-Ray Mirror (espejo de rayos X con Fable 5.2) y su auditoría: la fuente es una publicación de X que no se pudo abrir y la auditoría es un texto pegado sin enlace; no confirmado.",
+    "Reloj EDUmind: lo anunció el bot del grupo y corresponde a la sección de recursos del repositorio, no a la redacción.",
+    "Guía del INTEF de orientaciones sobre IA en los centros, Gemini 4 Carbon para planes Ultra y Claude Whiteboards/Sheets/Data: aparecieron el día anterior y solo se enlazaban a X; no son noticia de hoy.",
+    "Conversaciones sobre libros de texto frente a suscripciones a IA, nostalgia de series de dibujos y modelo Kimi: opiniones sin contenido informativo.",
+    "Mensajes de «Mente productiva» (vídeo de Facebook sobre laminadoras): spam ajeno a la IA."
+  ],
+  "repaso": [
+    "Eduvers: añadido el crédito de su autor, Juan José de Haro (el recurso es suyo), y corregida la lista («plano inclinado», 19 simulaciones).",
+    "Respiración celular: quitados los nombres de los modelos de voz, no contrastables; corregido «ambos vídeos» (la consola se refiere a los dos de respiración).",
+    "Xataka enlazado en su primera mención en la pieza de la guía de Fable.",
+    "Polvo eres: titular sin atribuir las herramientas a Google, no confirmado.",
+    "SVG: «otros miembros» pasa a «otro miembro» (solo uno lo dijo)."
+  ]
+}

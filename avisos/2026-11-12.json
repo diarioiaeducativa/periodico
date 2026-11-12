@@ -1,0 +1,34 @@
+{
+  "fecha": "2026-11-12",
+  "avisos": {
+    "chatgpt": {
+      "saludo": "Buenos días. Vídeos con revisión científica y una pauta para programar con Fable.",
+      "puntos": [
+        "Tras la fotosíntesis, la respiración celular: un docente añadió un agente que revisa el texto y las imágenes antes de generar el vídeo, y tradujo el primero al catalán",
+        "Anthropic aconseja decir a Fable 5.2 que el código es del usuario y que lo mantendrá si se quiere que unifique lo repetido, aunque eso cuesta más tokens",
+        "Tres modelos recibieron el encargo de dibujar en SVG una célula animal y ninguno cometió errores de contenido; el autor de la prueba lo atribuye al formato vectorial"
+      ],
+      "url": "https://diarioiaeducativa.github.io/n/11-chatgpt.html"
+    },
+    "vce": {
+      "saludo": "Buenos días. Una guía de Anthropic y simulaciones de Física y Química.",
+      "puntos": [
+        "Según la guía de Anthropic, Fable 5.2 reorganiza mejor el código cuando se le dice que es su responsable a largo plazo, con cerca del 75 % frente a menos del 10 %, y a un mayor coste",
+        "Eduvers, de Juan José de Haro, reúne 19 simulaciones de Física y Química, como el tiro parabólico o la ley de los gases, y prepara laboratorios virtuales en 3D para las próximas semanas"
+      ],
+      "url": "https://diarioiaeducativa.github.io/n/11-vce.html"
+    },
+    "edumedia": {
+      "saludo": "Buenos días. Dibujo vectorial, un corto de monstruitos y vídeos con revisor.",
+      "puntos": [
+        "Pedir láminas científicas en SVG podría evitar errores: tres modelos dibujaron bien una célula animal, aunque la explicación es solo una hipótesis que aún hay que probar",
+        "«Polvo eres» es un corto de animación stop-motion hecho con IA generativa, una parodia de terror simpático con monstruitos de polvo bajo un sofá, y una viñeta de Tiza y Algoritmo parte de él",
+        "Una animación sobre la respiración celular pasó por un agente revisor antes de generarse, y su autor tradujo al catalán la de la fotosíntesis"
+      ]
+    }
+  },
+  "instagram": "Este número reúne varias pruebas con IA para el aula de ciencias. Un docente comparó tres modelos al pedirles una lámina de la célula animal en formato vectorial y otro añadió un paso de revisión científica antes de generar un vídeo sobre la respiración celular. También se repasa una pauta de Anthropic sobre cómo pedir a su modelo que reorganice código, con su coste, y un sitio de simulaciones interactivas de Física y Química.",
+  "titulo": "Diario de IA Educativa · Núm. 11",
+  "fecha_texto": "Jueves, 12 de noviembre de 2026",
+  "url": "https://diarioiaeducativa.github.io/?n=11"
+}
