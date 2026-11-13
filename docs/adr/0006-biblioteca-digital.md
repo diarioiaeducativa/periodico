@@ -48,6 +48,16 @@ diario que dedique un artículo a cada documento nuevo.
   documento llevan a ella. Un número con solo documentos ya contados no anuncia nada de la
   Biblioteca. Recomendado y aceptado por Juanjo, que aceptó también dejar publicado el artículo del
   número 3, más completo que la noticia, en lugar de retirarlo.
+- **Contado es leído** (13-11-2026). El informe de la Office for Students entró en la biblioteca
+  como ficha y como PDF de 48 páginas, y el documentalista los dio por contados porque la pieza de
+  Debates del mismo número citaba la página de la OfS. Pero esa pieza se escribió con la página de
+  presentación y un artículo de Unite.AI, sin abrir el PDF, que además incluye el informe «Making AI
+  work for students»: el documento que se había subido no estaba contado. Ahora la entrada lleva,
+  junto a cada pieza reciente, lo que leyó quien la escribió (su campo `comprobado`), y un documento
+  solo va a `ya_contado` si la pieza leyó el documento en sí y entero; si no, lleva su artículo,
+  centrado en lo que la pieza no dijo y enlazado a ella. El revisor lo comprueba. Dos entradas del
+  mismo día que son el mismo documento (ficha y PDF) dan un solo artículo, con el mensaje del PDF;
+  la otra va a `descartado`. Recomendado y aceptado por Juanjo.
 - **En la portada, aparte**: los 3 artículos más recientes de la Biblioteca, en su bloque, sin restar
   sitio a las piezas del día, como cada sección desde el ADR 0041 (antes, de los últimos siete días con su
   propio tope, `BIBLIOTECA_PORTADA`). La página de la sección
