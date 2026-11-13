@@ -34,6 +34,9 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
 - **Publicar la web a mano sin repetir avisos**: en el contenedor,
   `generar.py`, Pagefind, `rsync` a `/sitio` y commit con push. Nunca
   `publicar-nas.sh`, que copia los avisos al bot.
+- **La nota del modelo se añade después de `git pull`, no antes**: la copia de trabajo descarga las notas
+  (`refs/notes/*`) pisando las locales, así que una nota puesta antes de actualizar se pierde sin aviso. El
+  orden es el de `publicar-nas.sh`: `git pull --rebase`, la nota, `git push` y `git push origin refs/notes/ia`.
 - **Cambiar un número antes de que salga**: editar
   `ediciones|vinetas(-ca)/FECHA.json` en el NAS y `docker exec
   diario-ia-educativa python3 /proyecto/generar.py`.
