@@ -12,8 +12,9 @@ descarta. Cada noche decide qué toca, sin IA:
 - viernes (el número del sábado): todo lo que queda en la cola, en una sola pieza («semana»), con
   la lista de lo que entró en la semana y ya tuvo su artículo, para que la pieza resuma la semana
   entera sin repetirlo;
-- otro día con menos de UMBRAL piezas (las del redactor y las de la Biblioteca): hasta MAX_DIA
-  recursos de la cola, el más antiguo primero y nunca dos de la misma persona («dia»);
+- cualquier otro día con algo en la cola: hasta MAX_DIA recursos, por turnos de autor y el más
+  antiguo primero, nunca dos de la misma persona («dia»; hasta el 13-11-2026, solo los días con
+  menos de UMBRAL piezas);
 - un día flojo con la cola vacía: tres candidatos del fondo del repositorio, para que el
   documentalista elija uno («fondo»).
 
@@ -42,7 +43,7 @@ CSV = ("https://docs.google.com/spreadsheets/d/e/2PACX-1vSj_hltRI4Q0QolINWJVcKxC
 WEB = "https://vibe-coding-educativo.github.io/app_edu/"
 DESDE = "2026-10-27"      # el día que el bot empezó a dar las altas: lo anterior es el fondo
 UMBRAL = 4                # un número con menos piezas que estas es un día flojo (3 hasta el 04-11-2026)
-MAX_DIA = 2               # recursos de la cola que se cuentan como mucho en un día flojo
+MAX_DIA = 2               # recursos de la cola que se cuentan como mucho cada día (desde el 13-11-2026, también los días llenos)
 CANDIDATOS_FONDO = 3
 VIERNES = 5
 # Lo que no se puede ver sin cuenta ni es una web: no va al fondo
@@ -318,12 +319,12 @@ def elegir(fecha, base, pedidos):
     # El sábado sale la pieza aunque la cola esté vacía, si en la semana entró algo: es el resumen
     modo = os.environ.get("REPOSITORIO_MODO") or (
         "semana" if viernes and (cola or ya) else
-        "dia" if flojo and cola else "fondo" if flojo else "")
+        "dia" if cola else "fondo" if flojo else "")
     print(f"repositorio: {len(cola)} en la cola, {piezas_del_dia(fecha)} pieza(s) en el número, modo {modo or 'ninguno'}")
     if modo == "semana":
         return modo, cola, ya
     if modo == "dia":
-        hueco = max(1, min(MAX_DIA, UMBRAL - piezas_del_dia(fecha)))
+        hueco = MAX_DIA   # cada día, los que se pueda hasta MAX_DIA, para que la cola vaya al día (ADR 0008)
         elegidos, autores = [], set()
         turno = turnos()   # por turnos de autor y, dentro, por antigüedad
         for r in sorted(cola, key=lambda r: (turno.get(r["autor"].strip().lower(), ""), r["alta"])):

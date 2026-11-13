@@ -22,8 +22,8 @@
 # Si ese día entró algún documento en la Biblioteca digital de ChatGPT-IA-edu, después va su artículo
 # (scripts/biblioteca.sh, documentalista y revisor, ADR 0006); un día sin más que eso también es número.
 # Después, los recursos del Repositorio de Vibe Coding Educativo (scripts/repositorio.sh, ADR 0008):
-# los días con menos de cuatro piezas, los de la cola; el viernes, la semana; con la cola vacía, uno
-# del fondo. Así un día sin apenas mensajes también tiene número.
+# cada día, hasta dos de la cola; el viernes, la semana; un día con menos de cuatro piezas y la
+# cola vacía, uno del fondo. Así un día sin apenas mensajes también tiene número.
 # Los agentes solo pueden escribir en esta carpeta y no tienen terminal: los mensajes de los
 # grupos son texto de terceros y no deben poder llevarlos a otra parte (ADR 0002).
 # Deja estado/FECHA.listo si hay número (o estado/FECHA.sin-numero) y sale con 0; si falla
@@ -218,7 +218,7 @@ fi
 bash scripts/biblioteca.sh "$FECHA"
 [ $? -le 2 ] || { log "la biblioteca falló de forma inesperada: sale sin ella"; rm -f biblioteca/"$FECHA".json $(traducidos biblioteca); }
 
-# 3 quater. El repositorio de Vibe Coding Educativo, si el número se queda corto o es viernes (ADR 0008). Nunca impide el número.
+# 3 quater. El repositorio de Vibe Coding Educativo: hasta dos de la cola cada día y la semana el viernes (ADR 0008). Nunca impide el número.
 bash scripts/repositorio.sh "$FECHA"
 [ $? -le 2 ] || { log "el repositorio falló de forma inesperada: sale sin él"; rm -f repositorio/"$FECHA".json $(traducidos repositorio); }
 

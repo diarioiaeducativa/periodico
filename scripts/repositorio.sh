@@ -6,8 +6,8 @@
 #
 #   scripts/repositorio.sh AAAA-MM-DD [url ...]
 #
-# Un programa (scripts/repositorio.py) decide qué toca: los días flojos, recursos de la cola; el
-# viernes, la semana entera para el número del sábado; con la cola vacía, uno del fondo. Abre
+# Un programa (scripts/repositorio.py) decide qué toca: cada día, hasta dos recursos de la cola; el
+# viernes, la semana entera para el número del sábado; un día flojo con la cola vacía, uno del fondo. Abre
 # cada recurso y guarda su captura. Después, tres agentes:
 #  16. documentalista (Sonnet) → repositorio-borrador/FECHA.json
 #  17. revisor (Sonnet, no ha escrito nada) → repositorio/FECHA.json

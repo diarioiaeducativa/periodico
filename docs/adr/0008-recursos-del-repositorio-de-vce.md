@@ -1,4 +1,4 @@
-# 8. Los recursos del Repositorio de VCE, en Vibe coding: una cola para los días flojos y el sábado
+# 8. Los recursos del Repositorio de VCE, en Vibe coding: una cola, dos al día y el sábado
 
 Fecha: 2026-11-03 · Estado: aceptado
 
@@ -41,8 +41,14 @@ hizo así: las secciones del diario van por temas.
   pieza del redactor o en un artículo del repositorio, o cuando se descarta. Es una cola sin
   estado guardado: `scripts/repositorio.py` la calcula cada noche comparando la hoja con las
   direcciones que aparecen en `ediciones/` y `repositorio/`.
-- **Días flojos.** Si el número tiene menos de 4 piezas (3 hasta el 04-11-2026), contando las de la Biblioteca, el
-  documentalista escribe sobre las que falten, como mucho 2: de la más antigua a la más nueva y
+- **Cada día, dos de la cola** (desde el 13-11-2026). Cada número lleva hasta 2 recursos de la cola,
+  aunque el redactor haya llenado el día. Antes solo entraban los días flojos (menos de 4 piezas, 3
+  hasta el 04-11-2026), y en los 16 primeros números el redactor sacó de 1 a 6 piezas, unas 3,4 de
+  media, sin descartar nunca nada por falta de sitio (ninguno de 97 descartes): lo que limita es lo
+  comprobable, no el tope. Con eso la cola se acumulaba para el sábado (15 recursos la segunda
+  semana), cuando entran unos 2 al día: con 2 diarios va al día y cada recurso sale uno o dos días
+  después de subirse. Lo pidió Juanjo. El programa los elige de la más
+  antigua a la más nueva y
   nunca dos de la misma persona el mismo día, por turnos de autor: va antes quien lleva más tiempo
   sin un recurso con artículo y, dentro, el más antiguo, para que nadie acapare el espacio. Es un artículo de 250 a 350 palabras con la
   captura del recurso, con el antetítulo «Nuevo en el repositorio».

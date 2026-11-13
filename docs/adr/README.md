@@ -9,7 +9,7 @@
 | [0005](0005-revision-de-dibujos.md) | Revisión de los dibujos en su página |
 | [0006](0006-biblioteca-digital.md) | La sección Biblioteca: un artículo por documento de la Biblioteca digital |
 | [0007](0007-buscador.md) | El buscador: Pagefind, en el navegador y sin servidor |
-| [0008](0008-recursos-del-repositorio-de-vce.md) | Los recursos del Repositorio de VCE, en Vibe coding: una cola para los días flojos y el sábado |
+| [0008](0008-recursos-del-repositorio-de-vce.md) | Los recursos del Repositorio de VCE, en Vibe coding: una cola, dos al día y el sábado |
 | [0009](0009-un-dibujo-por-pieza-y-tarjetas-iguales.md) | Un dibujo para cada pieza y tarjetas iguales en las páginas de sección |
 | [0010](0010-avisos-con-formato-e-imagen-del-numero.md) | Avisos con formato y una imagen de vista previa para cada número |
 | [0011](0011-enlaces-a-lo-ya-publicado.md) | Enlaces a lo ya publicado, continuaciones como breves y una pieza por grupo |
