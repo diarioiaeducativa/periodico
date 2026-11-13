@@ -2557,9 +2557,8 @@ def calendario(eds):
             sem = semana_de((lunes + datetime.timedelta(days=i)).isoformat())
             if sem in porsem:
                 n = int(sem.split("-")[1])
-                nb = f'<span class="cal-nb">{icono("video")}</span>' if cargar_multimedia(sem) else ""
-                titulo = L["cal_resumen"].format(n=n) + (f' · {L["con_nb"]}' if nb else "")
-                resumen = f'<td class="cal-sem"><a href="semana/{sem}/" title="{e(titulo)}" aria-label="{e(titulo)}">{n}{nb}</a></td>'
+                titulo = L["cal_resumen"].format(n=n)
+                resumen = f'<td class="cal-sem"><a href="semana/{sem}/" title="{e(titulo)}" aria-label="{e(titulo)}">{n}</a></td>'
             else:
                 resumen = '<td class="cal-sem"></td>'
             filas += f'<tr>{"".join(celdas[i:i + 7])}{resumen}</tr>'

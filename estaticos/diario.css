@@ -768,7 +768,6 @@ a.llevar-op.llevar-mas { border-top: 1px solid var(--filete); margin-top: 0.2rem
 .cal-mes th.cal-sem-h { width: 2.3rem; color: var(--azul); }
 .cal-mes td.cal-sem a { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.1rem; height: 100%; color: var(--azul); font-size: 0.9rem; font-style: italic; font-weight: 600; text-decoration: none; }
 .cal-mes td.cal-sem a:hover { text-decoration: underline; }
-.cal-nb .ico { width: 0.8rem; height: 0.8rem; }
 .cal-mes td.hoy { position: relative; }
 .cal-mes td.hoy::after {
   content: ""; position: absolute; inset: -0.3rem -0.35rem;
