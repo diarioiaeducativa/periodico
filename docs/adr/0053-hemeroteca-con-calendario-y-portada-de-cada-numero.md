@@ -26,7 +26,9 @@ además la portada de cada número y que se viera, en un portátil, el calendari
 - **Sin huecos** (ADR 0041) **y sin cortar la portada**: si los titulares son pocos, la portada se hace más
   pequeña, entera, hasta acabar con ellos, sin bajar de 14 rem de alto (un día de uno o dos titulares deja algo
   de aire bajo el texto); si son muchos, siguen por debajo de ella. Primero se recortaba, y Juanjo lo corrigió:
-  «la imagen no debe salir cortada». En pantalla ancha, el calendario acompaña al bajar (`sticky`), y
+  «la imagen no debe salir cortada». En pantalla ancha, un número más corto que la columna del calendario ocupa lo mismo que ella
+  (el marco acaba con el calendario) y la portada crece hasta llenarlo, sin pasar de casi la mitad del ancho del
+  marco; solo un día de un titular deja algo de aire. En pantalla ancha, el calendario acompaña al bajar (`sticky`), y
   `scripts/revisar-maqueta.js` no cuenta como hueco una columna fija así.
 - **Una columna con el resumen de cada semana**: el número de la semana, enlazado a su página (ADR 0034). Es la
   semana que cuentan los números de esa fila (los de martes a domingo cuentan los días de lunes a sábado de esa

@@ -2637,7 +2637,14 @@ SCRIPT_CALENDARIO = """<script>
   // Sin huecos (ADR 0041) y sin cortar la portada (Juanjo, 13-11-2026): si los titulares son más altos que ella,
   // siguen por debajo; si son más bajos, la portada se hace más pequeña, entera, hasta acabar con ellos, sin bajar
   // de MINIMO para que se siga viendo (un día de uno o dos titulares deja algo de aire bajo el texto).
-  const estrecho = matchMedia('(max-width: 36rem)'), MINIMO = 14;   // rem
+  // En pantalla ancha, un número corto ocupa lo mismo que la columna del calendario: el marco acaba con ella y la
+  // portada crece hasta llenarlo (Juanjo, 13-11-2026).
+  const estrecho = matchMedia('(max-width: 36rem)'), ancho = matchMedia('(min-width: 64rem)'), MINIMO = 14;   // rem
+  function alto_columna() {
+    const col = cal.querySelector('.hem-col'), cs = getComputedStyle(detalle);
+    const suma = [...col.children].reduce((s, x) => { const c = getComputedStyle(x); return s + x.offsetHeight + parseFloat(c.marginTop) + parseFloat(c.marginBottom); }, 0);
+    return suma - parseFloat(cs.paddingTop) - parseFloat(cs.paddingBottom) - parseFloat(cs.borderTopWidth) - parseFloat(cs.borderBottomWidth);
+  }
   function ajusta() {
     detalle.classList.remove('envuelve'); detalle.style.gridTemplateColumns = '';
     const img = detalle.querySelector('.cal-portada img'), tx = detalle.querySelector('.cal-texto');
@@ -2645,9 +2652,11 @@ SCRIPT_CALENDARIO = """<script>
     const r = img.getAttribute('height') / img.getAttribute('width');
     const rem = parseFloat(getComputedStyle(document.documentElement).fontSize);
     const natural = detalle.querySelector('.cal-portada').getBoundingClientRect().width * r;
-    if (tx.offsetHeight > natural + 24) { detalle.classList.add('envuelve'); return; }
-    for (let i = 0; i < 3; i++) {   // al estrecharse la portada, los titulares ganan ancho y bajan de alto
-      const alto = Math.min(natural, Math.max(tx.offsetHeight, MINIMO * rem));
+    // En pantalla ancha, la portada puede crecer hasta casi la mitad del ancho del marco (los titulares necesitan sitio)
+    const tope = ancho.matches ? 0.45 * detalle.clientWidth * r : natural;
+    if (tx.offsetHeight > tope + 24) { detalle.classList.add('envuelve'); return; }
+    for (let i = 0; i < 4; i++) {   // al cambiar el ancho de la portada, el de los titulares cambia su alto
+      const alto = Math.min(tope, Math.max(tx.offsetHeight, MINIMO * rem, ancho.matches ? alto_columna() : 0));
       detalle.style.gridTemplateColumns = `${Math.round(alto / r)}px minmax(0, 1fr)`;
     }
   }
