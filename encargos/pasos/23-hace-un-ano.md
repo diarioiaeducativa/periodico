@@ -20,7 +20,7 @@ Lo que digas de hoy hay que comprobarlo: abre con WebFetch las páginas oficiale
 - **Entre 150 y 250 palabras contando la entradilla**, en dos a cuatro párrafos de cuerpo. El programa no publica una fuera de esa medida.
 - Primero lo de entonces, con la fecha («El 10 de noviembre de 2025, en Vibe Coding Educativo…») y lo que se decía, preguntaba o se daba por hecho; después, cómo está hoy y qué ha cambiado. Con un punto de nostalgia, sin sensiblería ni burla de lo que se pensaba entonces.
 - Estilo del diario (`encargos/redaccion.md`, apartado «Estilo»): castellano, formal, informativo, nunca publicitario, sin emojis. Temas, no personas: no nombres a quien opinaba o preguntaba; el autor de un recurso propio, sí, como crédito. Las fuentes nombradas, enlazadas en su primera mención (`encargos/enlaces.md`).
-- El titular cuenta el contraste («Hace un año…» no hace falta: lo dice la sección).
+- El titular cuenta el contraste («Hace un año…» no hace falta: lo dice la sección) y no pasa de 90 caracteres, contando los espacios.
 
 ## Salida
 

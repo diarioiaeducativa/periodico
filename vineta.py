@@ -447,7 +447,13 @@ def panel(v, n, textos=None):
         quien = tx.get(b["quien"], b["quien"])
         if b.get("tipo") == "piensa":
             quien += " (" + tx["pensando"] + ")"
-        dichos.append(quien + ": «" + frase(b.get("texto")) + "»")
+        abre, cierra = tx.get("comillas", "«»")   # en inglés, las suyas (ADR 0059)
+        dicho = frase(b.get("texto"))
+        # Las comillas de dentro, de segundo nivel: “…” dentro de «…» y ‘…’ dentro de “…”
+        dentro = {"«": "“", "»": "”"} if abre == "«" else {"“": "‘", "”": "’"}
+        for de, a in dentro.items():
+            dicho = dicho.replace(de, a)
+        dichos.append(quien + ": " + abre + dicho + cierra)
     desc = " ".join(dichos)
     if v.get("cartela"):
         desc = frase(v["cartela"]) + " " + desc

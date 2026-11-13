@@ -287,7 +287,7 @@
       "url": "https://intef.es/wp-content/uploads/2026/09/ACTUALIZACION-GUIA-DE-LA-IA-DEF-1-SEPT-2026-Publicable-v5-2.pdf"
     },
     {
-      "titulo": "Nueva versión de la «Guía sobre el uso de la inteligencia artificial en el ámbito educativo» (INTEF, 08-09-2026) (in Spanish)",
+      "titulo": "Nueva versión de la “Guía sobre el uso de la inteligencia artificial en el ámbito educativo” (INTEF, 08-09-2026) (in Spanish)",
       "url": "https://intef.es/Noticias/nueva-version-de-la-guia-sobre-el-uso-de-la-inteligencia-artificial-en-el-ambito-educativo/"
     },
     {
@@ -352,7 +352,7 @@
     "id": 53933
   },
   "comprobado": "Verificador, 6-11-2026. Traducción al inglés de reportajes/2026-11-07.json; las URL en inglés de Google (cuenta, Gemini, plan de IA), Microsoft (en-gb) y Comisión Europea se abrieron con WebFetch y coinciden con lo afirmado. OpenAI (403), BOE, AEPD, Congreso, Euskadi, INTEF, Canarias y las dos páginas de Google Workspace se mantienen en castellano (la versión inglesa de Workspace difiere en fecha y detalle).",
-  "ilustracion": "Infografía en tres franjas horizontales, una por regla, sobre una regla graduada de 0 a 18 años. Franja 1, «Condiciones de las empresas»: marcas en 13 (OpenAI, Microsoft, Gemini personal), 18 (Anthropic) y un tramo sombreado «todas las edades, solo con cuenta del centro» para Gemini en Workspace for Education. Franja 2, «Ley de protección de datos»: una línea en 14 años, «consentimiento propio», con la nota «en el centro, la base es la función educativa». Franja 3, «Guías educativas»: Cataluña, menos de 14 «lo maneja el docente» y de 14 a 18 «con autorización»; Euskadi, sin chatbots antes de 13. Al pie, tres preguntas que sustituyen a «¿qué edad?»: ¿para qué?, ¿con qué cuenta?, ¿quién la maneja?",
+  "ilustracion": "Infografía en tres franjas horizontales, una por regla, sobre una regla graduada de 0 a 18 años. Franja 1, “Condiciones de las empresas”: marcas en 13 (OpenAI, Microsoft, Gemini personal), 18 (Anthropic) y un tramo sombreado “todas las edades, solo con cuenta del centro” para Gemini en Workspace for Education. Franja 2, “Ley de protección de datos”: una línea en 14 años, “consentimiento propio”, con la nota “en el centro, la base es la función educativa”. Franja 3, “Guías educativas”: Cataluña, menos de 14 “lo maneja el docente” y de 14 a 18 “con autorización”; Euskadi, sin chatbots antes de 13. Al pie, tres preguntas que sustituyen a “¿qué edad?”: ¿para qué?, ¿con qué cuenta?, ¿quién la maneja?",
   "ilustracion_alt": "Infographic on an age ruler from 0 to 18, with marks at 13, 14 and 18, in three blocks. “Companies”: “OpenAI and Microsoft: from 13”, with a line from 13 to 18; “Anthropic: from 18”, with a dot at 18; and “Gemini with a school account: all ages”, with a bar from 0 to 18. “Data law”: “Own consent: from 14”, with a dashed line up to 14 and a solid one after it; and “At school, no consent needed: educational function”, with a bar from 0 to 18. “Some education authorities”: “Catalonia: the teacher operates the AI”, with a red line up to 14, and “From 14: inform, authorisation advisable”, with a line from 14; and “Basque Country: chatbots from 13”, with a cross before 13 and a line after it; and “Murcia: autonomous access from Year 3 of ESO”, with a dashed line up to 14 and a solid one after it. At the foot, “What for? Which account? Who operates it?”.",
   "repaso": [
     "Traducción: sin cambios de fondo respecto al castellano."

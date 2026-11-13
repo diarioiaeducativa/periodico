@@ -94,6 +94,7 @@ de `publicado.txt`.
 - Titular claro, con verbo, que diga qué permite hacer el recurso (no solo su nombre). En modo
   semana, el titular resume lo de la semana («Formulación química, dictados en catalán y un
   mapa del potencial gravitatorio, nuevos en el repositorio»).
+  El titular no pasa de 90 caracteres, contando los espacios: lo que no quepa va al antetítulo o a la entradilla.
 - **dia** y **fondo**: entre 250 y 350 palabras de cuerpo, en párrafos de 3 a 5 frases.
 - **semana**: `cuerpo` con un solo párrafo breve de presentación (2 o 3 frases: cuántos
   recursos, de qué tratan); cada recurso, en su `texto`, con 80 a 120 palabras. No expliques qué

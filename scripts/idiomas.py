@@ -40,7 +40,7 @@ IDIOMAS = {
         "REPOSITORIO": "«Vibe Coding Educativoren Baliabideen biltegia»",
     },
     "en": {
-        "LENGUA": "inglés", "NORMA": "inglés británico, natural, periodístico; «teachers», «students»; el diario se llama a sí mismo «the paper», nunca «the diary»; lo que en origen se dijo en inglés se copia de la fuente, no se retraduce",
+        "LENGUA": "inglés", "NORMA": "inglés británico, natural, periodístico; «teachers», «students»; el diario se llama a sí mismo «the paper», nunca «the diary»; lo que en origen se dijo en inglés se copia de la fuente, no se retraduce; las comillas son las inglesas (“ ”), nunca las españolas (« »), y el porcentaje va pegado a la cifra (25%)",
         "MARCAS": "«(in Spanish)» o «(in Catalan)»", "PERSONAJES": "Chalk and Algorithm", "NOTA": "automatic AI translation",
         "ANTETITULOS": "«New in the repository», «The repository's week» o «From the repository's back catalogue»",
         "REPOSITORIO": "«the Vibe Coding Educativo resource repository»",

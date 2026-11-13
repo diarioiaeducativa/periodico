@@ -161,7 +161,7 @@ TEXTOS = {
         "ptw_copiar": "Copy the code", "ptw_copiado": "Code copied",
         "ptw_donde": "Paste the code wherever your platform lets you insert HTML: in WordPress, in a custom HTML block; in Blogger, in an HTML gadget; in Google Sites, with the embed code option; in Moodle and eXeLearning, in the code view of the text editor. If it gets cut off or leaves empty space, change the height.",
         "ptw_pieza_h": "A single story",
-        "ptw_pieza_txt": "At the end of each story, the «For your website» button copies the code for its card, with the drawing, the headline and the summary, or the whole story to republish it.",
+        "ptw_pieza_txt": "At the end of each story, the “For your website” button copies the code for its card, with the drawing, the headline and the summary, or the whole story to republish it.",
         "ptw_rss_h": "RSS feeds",
         "ptw_rss_txt": "An RSS feed announces each new story. It lets you follow the newspaper in a news reader (Feedly, Inoreader, Thunderbird…) and show it on other websites: WordPress has an RSS block, Blogger a feed gadget and Moodle a remote RSS feeds block. There is one for the whole newspaper and one for each section and each group.",
         "ptw_rss_todo": "The whole newspaper", "ptw_secciones": "By section", "ptw_grupos": "By group",
@@ -169,7 +169,7 @@ TEXTOS = {
         "ptw_repub_h": "Republishing a whole story",
         "ptw_repub_txt": "The newspaper's texts and drawings are licensed under {licencia}: they can be copied to another website, including whole stories, on these conditions:",
         "ptw_repub_lista": [
-            "Credit the newspaper and link to the original story. The «For your website» button on each story writes this at the end for you.",
+            "Credit the newspaper and link to the original story. The “For your website” button on each story writes this at the end for you.",
             "If you change anything, say so.",
             "Publish your version under the same licence.",
         ],

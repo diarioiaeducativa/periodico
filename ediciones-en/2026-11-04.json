@@ -67,7 +67,7 @@
         "grupo": "vce",
         "id": 14628
       },
-      "comprobado": "Abiertos el repositorio de GitHub y lab.tongjiang.app: 54 lecciones (10 física, 25 química, 5 biología, 14 geografía), HTML autocontenido de ~1 MB que funciona sin conexión, zip/descarga individual/iframe, CC BY-NC 4.0 (three.js bajo MIT), interfaz en chino con otros idiomas previstos, currículo nacional y libros PEP 2019 sin afiliación, autor Tongjiang. Abierta eduvers.org/en/simulations: solo una simulación figura en inglés, el resto bajo «Chinese». Mensaje #14628 abierto en Telegram: coincide.",
+      "comprobado": "Abiertos el repositorio de GitHub y lab.tongjiang.app: 54 lecciones (10 física, 25 química, 5 biología, 14 geografía), HTML autocontenido de ~1 MB que funciona sin conexión, zip/descarga individual/iframe, CC BY-NC 4.0 (three.js bajo MIT), interfaz en chino con otros idiomas previstos, currículo nacional y libros PEP 2019 sin afiliación, autor Tongjiang. Abierta eduvers.org/en/simulations: solo una simulación figura en inglés, el resto bajo “Chinese”. Mensaje #14628 abierto en Telegram: coincide.",
       "ilustracion": null,
       "ilustracion_alt": "A bar divided into four sections of proportional width, under the label “54 lessons”; above each section an icon: an atom over “Physics”, a flask over “Chemistry” (the longest section, in blue), a DNA helix over “Biology” (the shortest) and a globe over “Geography”.",
       "correccion": "Update on 13 November 2026: the project’s repository and website are no longer available. Copies remain on the Internet Archive’s Wayback Machine: [the repository](https://web.archive.org/web/20261102164409/https://github.com/smithjohn78390/tongjiang-lab) and [the lessons website](https://web.archive.org/web/20261030005733/https://lab.tongjiang.app/).",
@@ -93,8 +93,8 @@
     "Mensaje publicitario en chino, saludos, bromas, comandos del bot y mensajes del bot: no son noticia."
   ],
   "repaso": [
-    "Blender: el enlace del manual daba 404; sustituido por la dirección vigente (addons/vr_scene_inspection.html). La fuente «Mensaje original» apuntaba a #12069; ahora a #12067, el mensaje inicial.",
-    "Quitada la frase que atribuía al autor la webserie «Never Sleep Again» del 31 de octubre (no verificado); se mantiene el enlace a esa pieza como ejemplo que él mismo cita.",
+    "Blender: el enlace del manual daba 404; sustituido por la dirección vigente (addons/vr_scene_inspection.html). La fuente “Mensaje original” apuntaba a #12069; ahora a #12067, el mensaje inicial.",
+    "Quitada la frase que atribuía al autor la webserie “Never Sleep Again” del 31 de octubre (no verificado); se mantiene el enlace a esa pieza como ejemplo que él mismo cita.",
     "Seedance 2.5 sigue como afirmación del autor: solo hay fuentes de terceros sobre Seedance 2.0.",
     "Tongjiang Lab: todos los datos confirmados en el repositorio y en lab.tongjiang.app; sin cambios en el texto.",
     "Breve de Girona y descartes (Agenda Docente, Fil i compte, Google): revisados, sin cambios. ChatGPT-IA-edu queda sin pieza porque no hay nada nuevo."

@@ -63,7 +63,7 @@ IDIOMAS = {
                   "septiembre", "octubre", "noviembre", "diciembre"],
         "secciones": {"herramientas": "Herramientas", "vibecoding": "Vibe coding", "multimedia": "Multimedia",
                       "debates": "Debates", "novedades": "Instituciones y empresas", "biblioteca": "Biblioteca", "hace-un-ano": "Hace un año"},
-        "actualizado": "Actualizado el", "num": "Núm.", "numero_largo": "Número",
+        "num_prueba": "Número de prueba", "actualizado": "Actualizado el", "num": "Núm.", "numero_largo": "Número",
         "tema": "Cambiar entre tema claro y oscuro", "navegacion": "Navegación",
         "contacto": {"titulo": "Contacto", "enlace": "página de contacto", "txt": "Para avisar de un error, pedir que se retire algo o hacer cualquier consulta sobre el diario o su app.", "correo": "Correo", "otras": "También se puede abrir una incidencia en {incidencias} o escribir a las personas que administran cada grupo."},
         "quees": "La redacción", "portada": "Portada", "volver": "Volver a la portada",
@@ -84,7 +84,7 @@ IDIOMAS = {
         # La semana y el mes (ADR 0034)
         "semana": "La semana", "semana_txt": "Todo lo que contó el diario de lo que se habló en los grupos esa semana, por secciones, con el pódcast y el vídeo de cada grupo. Elige un grupo para ver solo lo suyo.", "semana_actual": "Resumen semanal", "grupo_filtro": "Ver lo de un grupo", "grupo_todos": "Todos", "sin_grupo": "Este grupo no tiene piezas esta semana.", "nb_h": "El pódcast y el vídeo de la semana", "nb_txt": "Cada lunes, NotebookLM, de Google, prepara un pódcast y un vídeo de cada grupo con su conversación completa de la semana, también lo que el diario no ha contado. Un agente de IA los contrasta con la conversación antes de publicarlos.", "nb_es": "", "nb_pendiente": "El pódcast y el vídeo de cada grupo se añaden aquí el lunes por la mañana.", "nb_video": "Vídeo", "nb_ver": "Reproducir el vídeo de {g}", "nb_youtube": "Verlo en YouTube", "nb_podcast": "Pódcast", "nb_archive": "Escucharlo en Internet Archive", "cs_h": "Lo más importante de la semana", "cs_h_g": "Lo más importante de la semana en {g}", "cs_nota": "Lo escribe un agente de IA con lo que contó el diario esa semana, y otro lo contrasta con cada pieza antes de publicarlo.", "numeros_semana": "Los números de la semana", "sem_ant": "Semana anterior", "sem_sig": "Semana siguiente", "todo_mes": "Todo el mes", "mes": "El mes", "mes_txt": "Las semanas del mes, con la pieza que abrió cada número.", "mes_ant": "Mes anterior", "mes_sig": "Mes siguiente", "por_meses": "Por meses", "ver_semana": "La semana entera, por secciones", "con_nb": "Con el pódcast y el vídeo de cada grupo", 
         "todos_numeros": "Hemeroteca: todos los números",
-        "compartir": "Compartir", "copiado": "Enlace copiado", "una_columna": "Una columna", "columnas": "Columnas", "una_columna_t": "Leer las noticias en una sola columna", "columnas_t": "Leer las noticias en columnas, como en un periódico", "compartir_breve": "Compartir este breve", "mas_en": "Más en", "mas_diario": "Más en el diario",
+        "saltar": "Saltar al contenido", "compartir": "Compartir", "copiado": "Enlace copiado", "una_columna": "Una columna", "columnas": "Columnas", "una_columna_t": "Leer las noticias en una sola columna", "columnas_t": "Leer las noticias en columnas, como en un periódico", "compartir_breve": "Compartir este breve", "mas_en": "Más en", "mas_diario": "Más en el diario",
         "no_existe": "Esta página no existe",
         "sin_conexion": "Sin conexión",
         "sin_conexion_txt": "Esta página no está guardada en este dispositivo. Sin conexión se pueden leer las páginas que ya se han abierto y el último número que se cargó en la portada.",
@@ -132,7 +132,7 @@ IDIOMAS = {
         "redaccion": {
             "intro": "El Diario de IA Educativa lo escribe una redacción de agentes de inteligencia artificial, cada uno con su oficio, que se revisan entre ellos. Lo idean, lo diseñan y lo supervisan personas, y sale cada mañana a las 7:00 en castellano, y traducido al catalán, al gallego, al euskera y al inglés.",
             "proceso_titulo": "Cómo se hace cada número", "pagina_semana": "página",
-            "proceso_intro": "Cada número cuenta lo que se habló el día anterior en los tres grupos. La redacción trabaja de madrugada, con el día ya cerrado, y sigue siempre el mismo orden.",
+            "proceso_intro": "Cada número cuenta lo que se habló el día anterior en los tres grupos. Por eso su dirección y las de sus piezas llevan la fecha de ese día, la anterior a la de la cabecera. La redacción trabaja de madrugada, con el día ya cerrado, y sigue siempre el mismo orden.",
             "proceso": [
                 "A la 1:00, un programa recoge los mensajes del día en los tres grupos y los ordena por grupo y por tema. En este paso no interviene la inteligencia artificial.",
                 "El redactor elige los temas que pueden interesar fuera de los grupos y escribe las piezas, comprobando cada dato en su fuente original. Después, el revisor vuelve a abrir cada fuente y quita lo que no puede confirmar.",
@@ -193,7 +193,7 @@ IDIOMAS = {
                   "setembre", "octubre", "novembre", "desembre"],
         "secciones": {"herramientas": "Eines", "vibecoding": "Vibe coding", "multimedia": "Multimèdia",
                       "debates": "Debats", "novedades": "Institucions i empreses", "biblioteca": "Biblioteca", "hace-un-ano": "Fa un any"},
-        "actualizado": "Actualitzat el", "num": "Núm.", "numero_largo": "Número",
+        "num_prueba": "Número de prova", "actualizado": "Actualitzat el", "num": "Núm.", "numero_largo": "Número",
         "tema": "Canviar entre tema clar i fosc", "navegacion": "Navegació",
         "contacto": {"titulo": "Contacte", "enlace": "pàgina de contacte", "txt": "Per avisar d'un error, demanar que es retiri alguna cosa o fer qualsevol consulta sobre el diari o la seva app.", "correo": "Correu", "otras": "També es pot obrir una incidència a {incidencias} o escriure a les persones que administren cada grup."},
         "quees": "La redacció", "portada": "Portada", "volver": "Torna a la portada",
@@ -214,7 +214,7 @@ IDIOMAS = {
         # La semana y el mes (ADR 0034)
         "semana": "La setmana", "semana_txt": "Tot el que va explicar el diari del que es va parlar als grups aquella setmana, per seccions, amb el pòdcast i el vídeo de cada grup. Tria un grup per veure només el seu.", "semana_actual": "Resum setmanal", "grupo_filtro": "Veure el d'un grup", "grupo_todos": "Tots", "sin_grupo": "Aquest grup no té peces aquesta setmana.", "nb_h": "El pòdcast i el vídeo de la setmana", "nb_txt": "Cada dilluns, NotebookLM, de Google, prepara un pòdcast i un vídeo de cada grup amb tota la seva conversa de la setmana, també el que el diari no ha explicat. Un agent d'IA els contrasta amb la conversa abans de publicar-los.", "nb_es": "Són en castellà.", "nb_pendiente": "El pòdcast i el vídeo de cada grup s'afegeixen aquí dilluns al matí.", "nb_video": "Vídeo", "nb_ver": "Reproduir el vídeo de {g}", "nb_youtube": "Mira'l a YouTube", "nb_podcast": "Pòdcast", "nb_archive": "Escolta'l a Internet Archive", "cs_h": "El més important de la setmana", "cs_h_g": "El més important de la setmana a {g}", "cs_nota": "L'escriu un agent d'IA amb el que va explicar el diari aquella setmana, i un altre el contrasta amb cada peça abans de publicar-lo.", "numeros_semana": "Els números de la setmana", "sem_ant": "Setmana anterior", "sem_sig": "Setmana següent", "todo_mes": "Tot el mes", "mes": "El mes", "mes_txt": "Les setmanes del mes, amb la peça que va obrir cada número.", "mes_ant": "Mes anterior", "mes_sig": "Mes següent", "por_meses": "Per mesos", "ver_semana": "Tota la setmana, per seccions", "con_nb": "Amb el pòdcast i el vídeo de cada grup", 
         "todos_numeros": "Hemeroteca: tots els números",
-        "compartir": "Comparteix", "copiado": "Enllaç copiat", "una_columna": "Una columna", "columnas": "Columnes", "una_columna_t": "Llegir les notícies en una sola columna", "columnas_t": "Llegir les notícies en columnes, com en un diari", "compartir_breve": "Comparteix aquest breu", "mas_en": "Més a", "mas_diario": "Més al diari",
+        "saltar": "Salta al contingut", "compartir": "Comparteix", "copiado": "Enllaç copiat", "una_columna": "Una columna", "columnas": "Columnes", "una_columna_t": "Llegir les notícies en una sola columna", "columnas_t": "Llegir les notícies en columnes, com en un diari", "compartir_breve": "Comparteix aquest breu", "mas_en": "Més a", "mas_diario": "Més al diari",
         "no_existe": "Aquesta pàgina no existeix",
         "sin_conexion": "Sense connexió",
         "sin_conexion_txt": "Aquesta pàgina no està desada en aquest dispositiu. Sense connexió es poden llegir les pàgines que ja s'han obert i l'últim número que es va carregar a la portada.",
@@ -263,7 +263,7 @@ IDIOMAS = {
         "redaccion": {
             "intro": "El Diari d'IA Educativa l'escriu una redacció d'agents d'intel·ligència artificial, cadascun amb el seu ofici, que es revisen entre ells. L'ideen, el dissenyen i el supervisen persones, i surt cada matí a les 7.00 en castellà, i traduït al català, al gallec, al basc i a l'anglès.",
             "proceso_titulo": "Com es fa cada número", "pagina_semana": "pàgina",
-            "proceso_intro": "Cada número explica el que es va parlar el dia anterior als tres grups. La redacció treballa de matinada, amb el dia ja tancat, i segueix sempre el mateix ordre.",
+            "proceso_intro": "Cada número explica el que es va parlar el dia anterior als tres grups. Per això la seva adreça i les de les seves peces porten la data d'aquell dia, l'anterior a la de la capçalera. La redacció treballa de matinada, amb el dia ja tancat, i segueix sempre el mateix ordre.",
             "proceso": [
                 "A la 1.00, un programa recull els missatges del dia dels tres grups i els ordena per grup i per tema. En aquest pas no hi intervé la intel·ligència artificial.",
                 "El redactor tria els temes que poden interessar fora dels grups i escriu les peces, comprovant cada dada a la seva font original. Després, el revisor torna a obrir cada font i treu el que no pot confirmar.",
@@ -653,7 +653,10 @@ def datos_noticia(titular, ruta, fecha, imagen=None, corregido=None):
          "datePublished": hora_de_salida(publicacion(fecha)).isoformat(), "inLanguage": L["codigo"],
          "mainEntityOfPage": BASE + L["carpeta"] + ruta, "author": redaccion, "publisher": redaccion}
     if imagen:
-        d["image"] = [imagen]
+        # Google no admite un dibujo vectorial como imagen de una noticia: si la pieza tiene su imagen de vista
+        # previa en PNG (la del titular con su dibujo, ADR 0010), va esa; si no, el dibujo o la captura (ADR 0059)
+        png = imagen_og(ruta, L["codigo"])
+        d["image"] = [png if imagen.endswith(".svg") and "/og/piezas/" in png else imagen]
     if corregido:
         d["dateModified"] = corregido
     return d
@@ -963,6 +966,12 @@ SCRIPT_TEMA = """<script>
   }
   // Copiar sin pedir nada a mano: el portapapeles del navegador o, si no lo deja (sin HTTPS), un campo
   // oculto. La pieza entera se copia con formato, para el editor de un blog, y como código, para un bloque HTML.
+  // Lo copiado se dice también a quien no ve el botón: una región viva, fuera de la vista (ADR 0059)
+  function anuncia(t){
+    var v=document.getElementById('aviso-lector');
+    if(!v){v=document.createElement('p'); v.id='aviso-lector'; v.className='solo-lector'; v.setAttribute('role','status'); document.body.appendChild(v);}
+    v.textContent=''; setTimeout(function(){v.textContent=t;},60);
+  }
   function copiar(texto, html){
     if(navigator.clipboard&&window.isSecureContext){
       if(html&&window.ClipboardItem&&navigator.clipboard.write)
@@ -981,7 +990,7 @@ SCRIPT_TEMA = """<script>
       if(b.dataset.plantilla){html=document.getElementById(b.dataset.plantilla).innerHTML.trim(); texto=html;}
       if(b.dataset.desde) texto=document.getElementById(b.dataset.desde).value;
       copiar(texto,html).then(function(){
-        r.textContent=b.dataset.hecho; b.classList.add('hecho');
+        r.textContent=b.dataset.hecho; b.classList.add('hecho'); anuncia(b.dataset.hecho);
         setTimeout(function(){r.textContent=antes; b.classList.remove('hecho'); if(b.closest('.llevar-menu')) cerrarLlevar();},1600);
       },function(){});
     });
@@ -1001,7 +1010,7 @@ SCRIPT_TEMA = """<script>
       var url=b.dataset.url||location.href, datos={title:b.dataset.titulo||document.title,url:url}, r=b.querySelector('span');
       if(navigator.share){navigator.share(datos).catch(function(){});return;}
       if(navigator.clipboard){navigator.clipboard.writeText(url).then(function(){
-        var antes=r.textContent; r.textContent=b.dataset.copiado; b.classList.add('hecho'); b.disabled=true;
+        var antes=r.textContent; r.textContent=b.dataset.copiado; b.classList.add('hecho'); b.disabled=true; anuncia(b.dataset.copiado);
         setTimeout(function(){r.textContent=antes;b.classList.remove('hecho');b.disabled=false;},1800);
       });}
     });
@@ -1142,7 +1151,8 @@ def cabecera(prof, ruta, fecha, cuenta, es_portada, h1=True, activa=None, ant=""
     cuando = f'<time datetime="{sale}">{mayus(fecha_larga(sale))}</time>'
     numero = (f'<span class="edicion-num"><span class="anyo">{(anyo_edicion(sale) + ". " + L["anyo"]) if L["codigo"] == "eu" else (L["anyo"] + " " + anyo_edicion(sale))}</span>'
               f'<span class="numero"><span class="solo-lector">{L["numero_largo"]} </span><span aria-hidden="true">{L["num"]}&nbsp;</span><b>{cuenta}</b></span></span>')
-    return f"""<header class="cabecera">
+    return f"""<a class="saltar" href="#contenido">{L["saltar"]}</a>
+<header class="cabecera">
   <div class="cabecera-fila">
     <span class="cuando">{cuando}</span>
     {numero if cuenta else '<span></span>'}
@@ -1192,7 +1202,7 @@ def boton_columnas():
 
 def rotulos(p, mostrar_fecha, prof="", sin_seccion=False, boton=""):
     sec = p.get("seccion", "")
-    fecha = f' <span class="fecha-pieza">{fecha_rotulo(p)}</span>' if mostrar_fecha else ""
+    fecha = f' <span class="fecha-pieza" data-pagefind-ignore>{fecha_rotulo(p)}</span>' if mostrar_fecha else ""
     if boton:
         fecha = f' <span class="seccion-dcha">{boton}{fecha}</span>'
     nombre = L["secciones"].get(sec, "")
@@ -1429,7 +1439,7 @@ def bloque_vineta(prof, eds, fecha, en_archivo=False, pieza=None):
         origen_txt = L["a_partir_dia"]
     return f"""<section class="vineta sec-vineta" aria-labelledby="t-vineta-{fecha}">
   <h2 id="t-vineta-{fecha}" class="vineta-titulo"><span>{"" if en_archivo else f'<a href="{prof}vineta.html">{icono("vineta")} {L["vineta_titulo"]}</a>'}</span> <span class="fecha-pieza">{fecha_corta(publicacion(fecha))}</span></h2>
-  <div class="tira">{vineta.tira(elegida["guion"], {"panel": L["vin_panel"], "tiza": L["nombre_tiza"], "algoritmo": L["nombre_algoritmo"], "pensando": L["vin_pensando"]})}</div>
+  <div class="tira">{vineta.tira(elegida["guion"], {"panel": L["vin_panel"], "tiza": L["nombre_tiza"], "algoritmo": L["nombre_algoritmo"], "pensando": L["vin_pensando"], "comillas": "“”" if L["codigo"] == "en" else "«»"})}</div>
   {"" if pieza else f'<p class="vineta-origen">{origen_txt}</p>'}
 </section>"""
 
@@ -2610,7 +2620,7 @@ def datos_dia(d, medidas):
     """Lo que el calendario cuenta de un número: su fecha de cabecera, el número y su portada en miniatura."""
     foto = f'{d["fecha"]}-{L["codigo"]}.jpg'
     ancho, alto = medidas.get(foto, [0, 0])
-    return {"fecha": mayus(fecha_larga(publicacion(d["fecha"]))), "num": f'{L["num"]} {d["numero"]}' if d.get("numero") else "",
+    return {"fecha": mayus(fecha_larga(publicacion(d["fecha"]))), "num": f'{L["num"]} {d["numero"]}' if d.get("numero") else L["num_prueba"],
             "numero": f'{d["fecha"]}/', "portada": f'{recursos("")}portadas/{foto}' if alto else "", "ancho": str(ancho), "alto": str(alto),
             "papel": f'{d["fecha"]}/papel.html?imprimir=1'}
 
@@ -3686,6 +3696,9 @@ def indice_bot(eds):
 
 def escribir(ruta, texto):
     ruta.parent.mkdir(parents=True, exist_ok=True)
+    # El destino de «Saltar al contenido» (ADR 0059): el <main> de la página, que puede recibir el foco
+    if 'class="saltar"' in texto and 'id="contenido"' not in texto:
+        texto = texto.replace('<main class="', '<main id="contenido" tabindex="-1" class="', 1)
     ruta.write_text(texto)
 
 

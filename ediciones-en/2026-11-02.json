@@ -27,8 +27,8 @@
         "grupo": "vce",
         "id": 14501
       },
-      "comprobado": "Lucide (lucide.dev), abierta por el revisor: indica «Released under the ISC License»; en el grupo se dijo MIT y no se recoge. Mensaje 14501 de t.me/vceduca verificado: trata de imágenes SVG con formas e iconos. Las ventajas y recomendaciones son opinión expresada en el grupo y se presentan como tal; no se abrió el capítulo académico ni la documentación de Bootstrap enlazados allí. Titular corregido: es la recomendación de un miembro, no de «docentes».",
-      "ilustracion": "Esquema de dos caminos desde una idea: a la izquierda una imagen generada (un bloque opaco, sin texto leíble ni modo oscuro); a la derecha una infografía HTML/SVG hecha de formas e iconos, con etiquetas de «texto legible por lector de pantalla», «modo claro/oscuro» y «exportable a PNG».",
+      "comprobado": "Lucide (lucide.dev), abierta por el revisor: indica “Released under the ISC License”; en el grupo se dijo MIT y no se recoge. Mensaje 14501 de t.me/vceduca verificado: trata de imágenes SVG con formas e iconos. Las ventajas y recomendaciones son opinión expresada en el grupo y se presentan como tal; no se abrió el capítulo académico ni la documentación de Bootstrap enlazados allí. Titular corregido: es la recomendación de un miembro, no de “docentes”.",
+      "ilustracion": "Esquema de dos caminos desde una idea: a la izquierda una imagen generada (un bloque opaco, sin texto leíble ni modo oscuro); a la derecha una infografía HTML/SVG hecha de formas e iconos, con etiquetas de “texto legible por lector de pantalla”, “modo claro/oscuro” y “exportable a PNG”.",
       "ilustracion_alt": "Diagram in which an “Idea” splits into two paths: one ends in a crossed-out opaque block, the “Generated image”, and the other in an infographic of shapes and icons, “HTML and SVG”, from which two advantages branch off: “Screen reader” and “Light and dark”."
     },
     {
@@ -145,14 +145,14 @@
     "Mensajes de bienvenida del Diario y charla sobre cómo se hace (administración del propio diario).",
     "Prueba combinada de las pestañas Chat y Work de ChatGPT: no se localizó el anuncio oficial de la prueba.",
     "Aviso sobre tokens de Codex y Work en diciembre: un solo mensaje sin fuente comprobable.",
-    "Debate sobre los detectores y la «caza de brujas»: tema ya publicado el 1 de noviembre; las objeciones de hoy no añaden hechos nuevos.",
+    "Debate sobre los detectores y la “caza de brujas”: tema ya publicado el 1 de noviembre; las objeciones de hoy no añaden hechos nuevos.",
     "Resúmenes semanales, boletín de EduMedia-IAG, mensajes del bot de antiusuarios y ráfaga de flechas: administración de los grupos.",
     "Jornada de la UVic en Lleida y publicación para familias: ya publicadas."
   ],
   "repaso": [
-    "Infografías: titular de «Docentes recomiendan» a «Un docente recomienda» (era un solo miembro); «según esta opinión» en la ventaja de los componentes plegables.",
-    "MIT: quitada la afirmación, no recogida por la fuente, de que se recomienda que cada docente y departamento fije cuándo se puede usar la IA, y la conclusión sobre «reglas por materia»; ajustados «encargo» y las líneas de actuación a lo que dice la página; título de la fuente neutralizado.",
-    "Papel docente: titular y entradilla ya no hablan de debate «dividido» (las intervenciones coinciden); «jornada universitaria» a «jornada sobre IA y educación»; el dilema se presenta como recogido en una intervención.",
+    "Infografías: titular de “Docentes recomiendan” a “Un docente recomienda” (era un solo miembro); “según esta opinión” en la ventaja de los componentes plegables.",
+    "MIT: quitada la afirmación, no recogida por la fuente, de que se recomienda que cada docente y departamento fije cuándo se puede usar la IA, y la conclusión sobre “reglas por materia”; ajustados “encargo” y las líneas de actuación a lo que dice la página; título de la fuente neutralizado.",
+    "Papel docente: titular y entradilla ya no hablan de debate “dividido” (las intervenciones coinciden); “jornada universitaria” a “jornada sobre IA y educación”; el dilema se presenta como recogido en una intervención.",
     "Agentes de consola, MotionVideo y breve de Mollick: sin cambios de contenido, comprobados contra sus fuentes y mensajes."
   ]
 }

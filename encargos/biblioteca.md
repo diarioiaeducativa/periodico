@@ -95,6 +95,7 @@ de `publicado.txt`.
   inclusivo pero natural.
 - Titular claro, con verbo, que diga qué aporta el documento (no solo su título). Antetítulo de
   2-5 palabras con el tipo de documento («Guía oficial», «Informe de la UNESCO»).
+  El titular no pasa de 90 caracteres, contando los espacios: lo que no quepa va al antetítulo o a la entradilla.
 - Entre 400 y 700 palabras de cuerpo, en párrafos de 3 a 6 frases.
 - Documentos en catalán u otra lengua: se describen en castellano y se respeta su título.
 

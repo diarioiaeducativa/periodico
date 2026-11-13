@@ -269,6 +269,10 @@ reel_semana
 # Lo que no llegó a Internet Archive otra noche se vuelve a probar (ADR 0037); sin pendientes, no hace nada.
 python3 scripts/subir-videos.py --minutos 15 >> "$REG" 2>&1 || log "AVISO: queda algún vídeo sin subir a Internet Archive"
 
+# Las erratas que siguen una regla fija («y» ante «i», comillas españolas en inglés) las corrige un programa,
+# sin IA, y avisa en el registro de los titulares de más de 90 caracteres (ADR 0059). No impide que el número salga.
+python3 scripts/corregir-erratas.py --dia "$FECHA" >> "$REG" 2>&1 || true
+
 # 5. Que el sitio se genere con todo esto antes de darlo por listo.
 if ! python3 generar.py >> "$REG" 2>&1; then
   log "ERROR: el generador falla con la edición nueva"

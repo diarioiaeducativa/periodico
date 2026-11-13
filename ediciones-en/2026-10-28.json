@@ -23,7 +23,7 @@
           "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/"
         }
       ],
-      "comprobado": "Leído el anuncio oficial en blog.google: fecha 28-10-2026, acceso inicial restringido a un subconjunto de defensores en ciberseguridad, ampliación gradual por el programa Fairwind, Argon lanzado «hace dos semanas», cifras de benchmarks (índice v5.0, 59 puntos; más del doble de éxito en código seguro) y precios introductorio y posterior. Las cifras son autodeclaradas por Google. El enlace de X del grupo no se pudo abrir.",
+      "comprobado": "Leído el anuncio oficial en blog.google: fecha 28-10-2026, acceso inicial restringido a un subconjunto de defensores en ciberseguridad, ampliación gradual por el programa Fairwind, Argon lanzado “hace dos semanas”, cifras de benchmarks (índice v5.0, 59 puntos; más del doble de éxito en código seguro) y precios introductorio y posterior. Las cifras son autodeclaradas por Google. El enlace de X del grupo no se pudo abrir.",
       "ilustracion": "Esquema de escalera de acceso en tres peldaños: 'Ahora: defensa en ciberseguridad', 'Después: socios de confianza (Fairwind)', 'Más adelante, sin fecha: desarrolladoras, empresas y público', con el tercero en trazo discontinuo y un candado abierto a medias.",
       "ilustracion_alt": "A staircase of three steps rising from left to right: the first, with a few people, is cybersecurity defence; the second, with more people, is trusted partners; the third, dashed and with a half-open padlock, is marked “no date”.",
       "mensaje": {
@@ -109,19 +109,19 @@
   ],
   "descartado": [
     "Recorte del uso gratuito de OpenCode (consulta de un miembro): no confirmado en fuentes oficiales; solo hay informes dispersos y no se encontró anuncio de recorte.",
-    "Vídeo de YouTube sobre Claude «reinventándose»: no se pudo saber de qué trata; sin fuente verificable.",
+    "Vídeo de YouTube sobre Claude “reinventándose”: no se pudo saber de qué trata; sin fuente verificable.",
     "Ampliación del bot de los grupos y /misrecursos: administración interna, excluida.",
     "Laboratori de formulació y Reactius i sobrants (Felip Sarroca): publicados el 27 de octubre, no son noticia del 28.",
     "Enlace a un tuit de la AEPD (28 de octubre): no se pudo abrir; se cubre el decálogo en un breve a partir de la fuente oficial.",
     "Mensajes sobre límites de uso o reseteo y charla trivial: quejas personales o sin contenido."
   ],
   "repaso": [
-    "Gemini 4 Carbon: reescrito el campo «comprobado» a lo realmente verificado en el anuncio de Google (se citaba un contraste con Android Authority que no se pudo repetir). El cuerpo era correcto.",
-    "Plec: titular sin la expresión confusa «modelo oculto».",
-    "Plec: eliminado el alias de Telegram «xosqox» (identificación deducida); la autoría se da solo como figura en la web.",
-    "Plec: quitadas las cifras exactas «3.299 palabras y 96 pseudopalabras» (la web no las da; queda «cerca de 3.300» atribuido a la presentación).",
-    "Plec: quitados el plan de ampliar al castellano, la petición de voces y los «niveles como propuesta editorial», que no constan en la fuente pública; quitado «gratuito» (la web dice abierto).",
-    "Every Joule: quitada la descripción de «dibujos de tinta» y «color como flujo de energía», que la página no confirma (venía del prompt, no de la fuente); añadido el requisito de aceleración gráfica.",
-    "Breve de GitHub Education: quitado «correo institucional y documentos», que esa página no dice."
+    "Gemini 4 Carbon: reescrito el campo “comprobado” a lo realmente verificado en el anuncio de Google (se citaba un contraste con Android Authority que no se pudo repetir). El cuerpo era correcto.",
+    "Plec: titular sin la expresión confusa “modelo oculto”.",
+    "Plec: eliminado el alias de Telegram “xosqox” (identificación deducida); la autoría se da solo como figura en la web.",
+    "Plec: quitadas las cifras exactas “3.299 palabras y 96 pseudopalabras” (la web no las da; queda “cerca de 3.300” atribuido a la presentación).",
+    "Plec: quitados el plan de ampliar al castellano, la petición de voces y los “niveles como propuesta editorial”, que no constan en la fuente pública; quitado “gratuito” (la web dice abierto).",
+    "Every Joule: quitada la descripción de “dibujos de tinta” y “color como flujo de energía”, que la página no confirma (venía del prompt, no de la fuente); añadido el requisito de aceleración gráfica.",
+    "Breve de GitHub Education: quitado “correo institucional y documentos”, que esa página no dice."
   ]
 }

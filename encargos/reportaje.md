@@ -66,6 +66,7 @@ fondo y no haya tenido reportaje.
   publicitario ni alarmista. Sin emojis. Lenguaje inclusivo pero natural.
 - Titular claro, con verbo, sin preguntas. Antetítulo de 2-5 palabras. Entradilla de dos o
   tres frases que diga de qué va y qué se lleva el lector.
+  El titular no pasa de 90 caracteres, contando los espacios: lo que no quepa va al antetítulo o a la entradilla.
 - Entre 1.200 y 1.800 palabras de cuerpo, en 4 a 6 apartados con ladillo (un sustantivo o
   una frase corta, sin imitar preguntas frecuentes). Párrafos de 3 a 6 frases.
 - Negritas con mesura: dos o tres ideas en todo el reportaje.

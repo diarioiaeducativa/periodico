@@ -151,6 +151,13 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
   colado en las ediciones traducidas (`registro/FECHA-idiomas.txt`); un aviso falso se arregla en sus listas
   (`PROPIOS`, `SOLO_ES`, `FUERTES`). Los miércoles, `scripts/revisar-enlaces.py --avisar` busca enlaces caídos
   (`registro/enlaces.log`, estado en `estado/enlaces.json`).
+- **Erratas de regla fija y titulares largos** (ADR 0059): cada noche, antes de generar, `scripts/corregir-erratas.py
+  --dia FECHA` corrige sin IA «y» ante «i», «o» ante «o» y, en inglés, las comillas españolas, y avisa en el
+  registro de los titulares de más de 90 caracteres (el tope está en los encargos). Una regla nueva se añade
+  allí y se prueba con `--mirar`; sin `--dia` repasa todo lo escrito.
+- **Saltar al contenido** (ADR 0059): lo pone `cabecera()`, y `escribir()` marca el `<main>` como destino; una
+  página nueva con cabecera lo lleva sola. Las fuentes de «Comprobado en» van en rejilla, no con `columns`, y la
+  tabla de un reportaje corta las columnas al imprimir: no volver atrás sin probar Firefox, Safari y el papel.
 - **Contacto** (ADR 0051): `contacto.html`, con el correo (`CORREO_CONTACTO`) y enlace en el pie de todas las
   páginas; es la dirección de la declaración de noticias de Google Play: no se renombra ni se quita del pie.
 - **Hemeroteca** (ADR 0053): un calendario por la fecha de cabecera, con el número elegido a la derecha (sus

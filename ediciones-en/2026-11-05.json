@@ -27,7 +27,7 @@
         "id": 54006
       },
       "comprobado": "Revisor: abierta de nuevo la nota del blog Workspace Updates: fecha 19-oct-2026, exportación con un clic a borrador de sitio privado, web/Android/iOS, tipos de cuenta, sin controles nuevos de administración, requisitos de Sites y políticas de Sites/Drive, dominios Rapid y Scheduled Release. Mensaje de Telegram 54006 (enlace a la publicación de Google España sobre esta función) corresponde al tema. Lo del sitio nuevo y la comparación con el lienzo es testimonio de miembros, no verificado y atribuido como tal. Nada en publicado.txt lo contradice.",
-      "ilustracion": "Esquema de tres pasos: una burbuja de Gemini con una aplicación interactiva, una flecha con la etiqueta «un clic» y un borrador de sitio de Google Sites en privado; una segunda flecha tachada hacia un sitio ya existente.",
+      "ilustracion": "Esquema de tres pasos: una burbuja de Gemini con una aplicación interactiva, una flecha con la etiqueta “un clic” y un borrador de sitio de Google Sites en privado; una segunda flecha tachada hacia un sitio ya existente.",
       "ilustracion_alt": "Diagram: a speech bubble labelled “Gemini” leads, via an arrow labelled “One click”, to a web page with a padlock labelled “Private draft”; a second dashed arrow, crossed out in red, points to a dashed box labelled “Existing site”."
     },
     {
@@ -56,7 +56,7 @@
         "grupo": "vce",
         "id": 14667
       },
-      "comprobado": "Revisor: abierta la web: gratuita, en el navegador y sin instalación, 11 áreas, solo inglés, sin autor ni mención de IA. La cifra de simuladores no es coherente (el texto dice 169, la descripción de la página 159 y los recuentos por categoría no cuadran), por eso se dice «más de 150». Que lo haya hecho un solo profesor es lo dicho en el grupo; no figura en la web. Mensaje 14667 de vceduca corresponde al tema.",
+      "comprobado": "Revisor: abierta la web: gratuita, en el navegador y sin instalación, 11 áreas, solo inglés, sin autor ni mención de IA. La cifra de simuladores no es coherente (el texto dice 169, la descripción de la página 159 y los recuentos por categoría no cuadran), por eso se dice “más de 150”. Que lo haya hecho un solo profesor es lo dicho en el grupo; no figura en la web. Mensaje 14667 de vceduca corresponde al tema.",
       "ilustracion": null,
       "ilustracion_alt": "A browser window with a cogwheel, a ruler and a spanner, and a bending curve beneath them, labelled “In the browser”; an arrow leads to a grid of dots, one highlighted in blue, labelled “150+”.",
       "correccion": "Corrected on 13 November 2026: an earlier version said that the website does not name its author; it does so on its “About” page. It has been added that it is funded by advertising.",
@@ -126,9 +126,9 @@
   ],
   "repaso": [
     "Gemini y Google Sites: sin cambios; contrastada con la nota oficial y los mensajes.",
-    "MechSimulator: cifra de simuladores cambiada de 169 a «más de 150» porque la propia web es incoherente (159/169); categorías ajustadas a las de la web.",
+    "MechSimulator: cifra de simuladores cambiada de 169 a “más de 150” porque la propia web es incoherente (159/169); categorías ajustadas a las de la web.",
     "Añadida pieza corta de EduMedia-IAG sobre Gemini Omni 1.2 Flash: el borrador la descartó como no confirmada, pero existe y está en el blog oficial de Google.",
-    "Breve de XTEC: precisado que la página enlaza el documento de 2024 como orientaciones; la nota «des.26» está confirmada. Se omite lo del enlace retirado y el cambio de octubre a diciembre (no comprobable).",
+    "Breve de XTEC: precisado que la página enlaza el documento de 2024 como orientaciones; la nota “des.26” está confirmada. Se omite lo del enlace retirado y el cambio de octubre a diciembre (no comprobable).",
     "Nuevos breves: Images 2.6 (existe; el anuncio de OpenAI da 403, solo se ha visto su descripción) y ejemplo en VR de VirtuCam con Seedance 2.5, comprobado en el post de LinkedIn del autor, con enlace a lo ya publicado.",
     "Corregidos descartados: Images 2.6 y Omni 1.2 ya no figuran como no confirmados; el motivo de Fil i compte era erróneo (sí hay web)."
   ]

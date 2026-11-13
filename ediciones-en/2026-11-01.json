@@ -27,7 +27,7 @@
         "id": 53814
       },
       "comprobado": "Leído el reportaje de La Vanguardia (de pago; texto recuperado de la página): paranoia y caza de brujas, historiales de versiones, Pangram, prueba con dos novelas de 1946 y 1969 con resultado distinto una semana después, entrevista como comprobación (Joan Tarrida). Las posturas del grupo salen de los mensajes #53815-#53826 y #53821-#53826 y #53835-#53836. Se omite una afirmación del grupo sobre una firma previa de la autora, que el reportaje no recoge.",
-      "ilustracion": "Balanza con un informe de detector en un platillo (con un signo de interrogación) y, en el otro, tres pesos: conversación con la persona, otros textos y contextos sobre el mismo tema, y reglas claras de uso. Debajo, una lupa sobre un texto con la etiqueta «indicio, no prueba».",
+      "ilustracion": "Balanza con un informe de detector en un platillo (con un signo de interrogación) y, en el otro, tres pesos: conversación con la persona, otros textos y contextos sobre el mismo tema, y reglas claras de uso. Debajo, una lupa sobre un texto con la etiqueta “indicio, no prueba”.",
       "ilustracion_alt": "Scales weighing, in one pan, “Detector”, an AI detector report marked with a question mark, and in the other, “Conversation and rules”, a conversation with the person and clear rules of use; below, a magnifying glass and the label “Indication, not proof”."
     },
     {
@@ -121,6 +121,8 @@
   ],
   "editorial": {
     "id": "desde-la-redaccion",
+    "correccion": "Note added on 13 November 2026: this introduction describes the newsroom as it was on 2 November. Today's newsroom, with more roles and in five languages, is explained in [The newsroom](https://diarioiaeducativa.github.io/en/redaccion.html).",
+    "corregido": "2026-11-13",
     "antetitulo": "From the newsroom",
     "titular": "A daily written by a newsroom of AI agents",
     "entradilla": "Diario de IA Educativa tells you every morning what is being discussed in three teaching communities. It is written by a team of seven artificial intelligence agents, each with its own job, and directed by people.",

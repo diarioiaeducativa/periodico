@@ -37,8 +37,8 @@
       "comprobado": "Captura vista: pantalla de inicio de Tribunator v1.2.15 con pestañas, botones deshacer/rehacer, Cargar ejemplo, Versiones, selector ES/VA/EN, los tres botones de inicio y pie con autoría y licencias. WebFetch de la web solo devolvió el título (necesita JavaScript). WebFetch de GitHub (v1.2.14): funciones por pestaña, PDF, Excel/CSV, plantillas de la Comunitat Valenciana, archivo HTML sin conexión (la versión web necesita red para Excel y PDF), LocalStorage, idiomas y licencias; no menciona un número de 16 comprobaciones, así que esa cifra va atribuida a la ficha. Idiomas de la entrada: español, catalán e inglés, coherente. Sin mensaje de presentación en la entrada. Sin enlaces a lo ya publicado (nada relacionado en publicado.txt).",
       "repaso": [
         "Detalles de las pestañas (sedes, planos, franjas, miembros) y de errores/avisos atribuidos al repositorio de código, no dichos como vistos en la web.",
-        "Enlazado «repositorio de código del proyecto» en su primera mención.",
-        "«Apartado de versiones» corregido a botón de versiones (se ve en la cabecera).",
+        "Enlazado “repositorio de código del proyecto” en su primera mención.",
+        "“Apartado de versiones” corregido a botón de versiones (se ve en la cabecera).",
         "Añadido que la versión web necesita conexión para Excel y PDF y solo el HTML descargado funciona sin ella (dato del repositorio, útil al docente).",
         "Autoría, licencia, enlace, ficha y captura comprobados con la entrada; sin cambios."
       ]

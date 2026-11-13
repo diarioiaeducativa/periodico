@@ -36,7 +36,7 @@
           "url": "https://jigsawcoop.github.io/"
         }
       ],
-      "comprobado": "Revisado: se miró la captura (formulario de alumnado y subtemas, botón «Formar grupos», selector de cinco lenguas, licencia AGPLv3 en el pie), el texto visible y la página con WebFetch (cinco idiomas, pasos 1-3, temporizador de 10:00, enlace de errores). No se pudo ver el resultado de formar grupos ni la vista imprimible: esas funciones, y el reparto de sobrantes como co-expertos, constan solo en la ficha y se atribuyen a ella. Autoría de la ficha sin nombrar, como exige el encargo. Sin enlaces a lo publicado.",
+      "comprobado": "Revisado: se miró la captura (formulario de alumnado y subtemas, botón “Formar grupos”, selector de cinco lenguas, licencia AGPLv3 en el pie), el texto visible y la página con WebFetch (cinco idiomas, pasos 1-3, temporizador de 10:00, enlace de errores). No se pudo ver el resultado de formar grupos ni la vista imprimible: esas funciones, y el reparto de sobrantes como co-expertos, constan solo en la ficha y se atribuyen a ella. Autoría de la ficha sin nombrar, como exige el encargo. Sin enlaces a lo publicado.",
       "repaso": []
     },
     {
@@ -79,8 +79,8 @@
   "descartado": [],
   "repaso": [
     "Jigsaw: sin cambios de texto; autoría de la ficha (Juan José de Haro) no nombrada y `autoria` vacío; licencia, enlaces, captura y alt confirmados; funciones solo de la ficha ya atribuidas a ella.",
-    "EduTicTac Blocs: titular y entradilla ya no afirman «sin publicidad»/«sin rastreadores» como hecho propio (es lo que dice su web).",
-    "EduTicTac Blocs: quitadas frases sobre lo que no se pudo comprobar («no se pudo comprobar en la captura», «no se ha verificado»), que hablan del método del diario; el asistente de IA y Docker quedan atribuidos a la ficha.",
+    "EduTicTac Blocs: titular y entradilla ya no afirman “sin publicidad”/“sin rastreadores” como hecho propio (es lo que dice su web).",
+    "EduTicTac Blocs: quitadas frases sobre lo que no se pudo comprobar (“no se pudo comprobar en la captura”, “no se ha verificado”), que hablan del método del diario; el asistente de IA y Docker quedan atribuidos a la ficha.",
     "Actualizado `comprobado` en ambas piezas."
   ]
 }

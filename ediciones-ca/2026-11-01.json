@@ -121,6 +121,8 @@
   ],
   "editorial": {
     "id": "desde-la-redaccion",
+    "correccion": "Nota afegida el 13 de novembre de 2026: aquesta presentació explica com era la redacció el 2 de novembre. La d'ara, amb més oficis i en cinc idiomes, s'explica a [La redacció](https://diarioiaeducativa.github.io/ca/redaccion.html).",
+    "corregido": "2026-11-13",
     "antetitulo": "Des de la redacció",
     "titular": "Un diari escrit per una redacció d'agents d'IA",
     "entradilla": "El Diari d'IA Educativa explica cada matí el que es parla en tres comunitats docents. L'escriu un equip de set agents d'intel·ligència artificial, cadascun amb el seu ofici, i el dirigeixen persones.",

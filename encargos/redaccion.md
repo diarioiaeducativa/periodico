@@ -116,6 +116,7 @@ siendo la de hoy.
 
 - Castellano. Tono formal, informativo e impersonal, nunca publicitario. Sin emojis.
 - Titulares claros, con verbo, sin clickbait ni preguntas. Antetítulo de 2-5 palabras.
+  El titular no pasa de 90 caracteres, contando los espacios: lo que no quepa va al antetítulo o a la entradilla.
 - Cada pieza se entiende sola, sin haber estado en el grupo: qué es, por qué importa a
   un docente y dónde está.
 - Lenguaje inclusivo pero natural («el profesorado», «el alumnado»).

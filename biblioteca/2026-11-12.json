@@ -49,7 +49,7 @@
    "seccion": "biblioteca",
    "importancia": 2,
    "grupo": "chatgpt",
-   "antetitulo": "Guía y informe del regulador",
+   "antetitulo": "Guía e informe del regulador",
    "titular": "El regulador universitario inglés aclara qué prácticas con IA encajan en sus condiciones de calidad y publica el estudio en que se apoya",
    "entradilla": "La Office for Students y Advance HE reúnen un informe de 48 páginas, basado en más de 300 estudiantes y docentes, y una guía que traduce sus hallazgos a las condiciones B1, B2 y B4 de registro.",
    "cuerpo": [
@@ -87,7 +87,7 @@
     "grupo": "chatgpt",
     "id": 54310
    },
-   "comprobado": "Revisor: contrastado con el texto completo del PDF de la entrada (guía y informe; cifras, citas, casos de Bath y Kent, apartados 53-55, B1/B2/B4). Abiertas en el sitio de la OfS la guía (11 de noviembre de 2026, Advance HE), la página del informe (OfS 2026.56, más de 300 participantes) y la guía de prácticas eficaces (B1, B2, B4, cita sobre detectores, «lower award»): coinciden. La web de la guía no declara licencia (© todos los derechos); la OGL v3.0 es la que consta en el PDF de la biblioteca. No abierto el PDF original ni los estudios del HEPI (94 % y 53 % son cifras del informe). La pieza ofs-evaluacion-sin-ia solo leyó la página de presentación y una noticia, no el documento: no cuenta como ya contado.",
+   "comprobado": "Revisor: contrastado con el texto completo del PDF de la entrada (guía e informe; cifras, citas, casos de Bath y Kent, apartados 53-55, B1/B2/B4). Abiertas en el sitio de la OfS la guía (11 de noviembre de 2026, Advance HE), la página del informe (OfS 2026.56, más de 300 participantes) y la guía de prácticas eficaces (B1, B2, B4, cita sobre detectores, «lower award»): coinciden. La web de la guía no declara licencia (© todos los derechos); la OGL v3.0 es la que consta en el PDF de la biblioteca. No abierto el PDF original ni los estudios del HEPI (94 % y 53 % son cifras del informe). La pieza ofs-evaluacion-sin-ia solo leyó la página de presentación y una noticia, no el documento: no cuenta como ya contado.",
    "ilustracion_alt": "Esquema de izquierda a derecha: un documento rotulado «Informe» lleva a un libro abierto rotulado «Guía B1 B2 B4», que se bifurca en dos carriles de evaluación: un candado cerrado rotulado «Cerrado» y un candado abierto rotulado «Abierto».",
    "ilustracion": "Esquema de tres capas: arriba, el informe con sus capítulos (enseñanza, evaluación, alfabetización, estrategia); en medio, la guía con las condiciones B1, B2 y B4; abajo, dos carriles de evaluación, uno cerrado sin IA y otro abierto con IA permitida.",
    "repaso": [
