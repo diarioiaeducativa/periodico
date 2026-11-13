@@ -67,7 +67,7 @@ IDIOMAS = {
         "tema": "Cambiar entre tema claro y oscuro", "navegacion": "Navegación",
         "contacto": {"titulo": "Contacto", "enlace": "página de contacto", "txt": "Para avisar de un error, pedir que se retire algo o hacer cualquier consulta sobre el diario o su app.", "correo": "Correo", "otras": "También se puede abrir una incidencia en {incidencias} o escribir a las personas que administran cada grupo."},
         "quees": "La redacción", "portada": "Portada", "volver": "Volver a la portada",
-        "dia_ant": "Día anterior", "dia_sig": "Día siguiente", "hoy": "Hoy", "hoy_titulo": "La portada del número de hoy", "este_numero": "La portada de este número",
+        "dia_ant": "Día anterior", "dia_sig": "Día siguiente", "hoy": "Hoy", "hoy_titulo": "La portada del número de hoy", "este_numero": "La portada de este número", "imprimir": "Imprimir", "papel": "Edición en papel", "papel_imprimir": "Imprimir o guardar en PDF", "papel_volver": "Volver al número", "papel_web": "Esta pieza, con sus enlaces, en la web", "papel_sumario": "En este número", "papel_consejo": "En el diálogo de imprimir, elige «Guardar como PDF» para tenerla en un archivo.", "papel_titulo": "Edición en papel del número {n}",
         "leer_conv": "Lee la conversación original en", "tema_en": "Tema tratado en",
         "comprobado": "Comprobado en", "fuente": "Fuente", "conversacion": "Conversación", "comentarios": "Comentarios", "comentarios_aviso": "Para comentar hace falta una {cuenta}. Los comentarios son públicos y se guardan en GitHub.", "comentarios_cuenta": "cuenta gratuita de GitHub",
         "breves": "Breves", "breves_antes": "Breves anteriores", "vineta": "La viñeta", "vineta_titulo": "La viñeta de Tiza y Algoritmo", "nombre_tiza": "Tiza", "nombre_algoritmo": "Algoritmo", "y": "y",
@@ -196,7 +196,7 @@ IDIOMAS = {
         "tema": "Canviar entre tema clar i fosc", "navegacion": "Navegació",
         "contacto": {"titulo": "Contacte", "enlace": "pàgina de contacte", "txt": "Per avisar d'un error, demanar que es retiri alguna cosa o fer qualsevol consulta sobre el diari o la seva app.", "correo": "Correu", "otras": "També es pot obrir una incidència a {incidencias} o escriure a les persones que administren cada grup."},
         "quees": "La redacció", "portada": "Portada", "volver": "Torna a la portada",
-        "dia_ant": "Dia anterior", "dia_sig": "Dia següent", "hoy": "Avui", "hoy_titulo": "La portada del número d'avui", "este_numero": "La portada d'aquest número",
+        "dia_ant": "Dia anterior", "dia_sig": "Dia següent", "hoy": "Avui", "hoy_titulo": "La portada del número d'avui", "este_numero": "La portada d'aquest número", "imprimir": "Imprimeix", "papel": "Edició en paper", "papel_imprimir": "Imprimeix o desa en PDF", "papel_volver": "Torna al número", "papel_web": "Aquesta peça, amb els enllaços, al web", "papel_sumario": "En aquest número", "papel_consejo": "Al diàleg d'imprimir, tria «Desa com a PDF» per tenir-la en un fitxer.", "papel_titulo": "Edició en paper del número {n}",
         "leer_conv": "Llegeix la conversa original a", "tema_en": "Tema tractat a",
         "comprobado": "Comprovat a", "fuente": "Font", "conversacion": "Conversa", "comentarios": "Comentaris", "comentarios_aviso": "Per comentar cal un {cuenta}. Els comentaris són públics i es desen a GitHub.", "comentarios_cuenta": "compte gratuït de GitHub",
         "breves": "Breus", "breves_antes": "Breus anteriors", "vineta": "La vinyeta", "vineta_titulo": "La vinyeta de Guix i Algorisme", "nombre_tiza": "Guix", "nombre_algoritmo": "Algorisme", "y": "i",
@@ -969,7 +969,16 @@ SCRIPT_TEMA = """<script>
     });
   });
   // Compartir: el menú del dispositivo; si no lo hay, se copia el enlace
-  document.querySelectorAll('.compartir:not(.copiar):not(.llevar-boton)').forEach(function(b){
+  // Imprimir (ADR 0054): el diálogo del navegador, con la maqueta de papel; antes, todas las imágenes cargadas
+  function imprimir(){
+    var im=[].slice.call(document.querySelectorAll('img[loading="lazy"]'));
+    im.forEach(function(i){i.loading='eager';});
+    Promise.all(im.map(function(i){return i.complete?0:new Promise(function(r){i.onload=i.onerror=r;});})).then(function(){print();});
+  }
+  document.querySelectorAll('button.imprimir').forEach(function(b){b.addEventListener('click',imprimir);});
+  if(new URLSearchParams(location.search).get('imprimir')==='1'&&document.body.classList.contains('pag-papel'))
+    addEventListener('load',function(){(document.fonts?document.fonts.ready:Promise.resolve()).then(imprimir);});
+  document.querySelectorAll('.compartir:not(.copiar):not(.llevar-boton):not(.imprimir)').forEach(function(b){
     b.addEventListener('click',function(){
       var url=b.dataset.url||location.href, datos={title:b.dataset.titulo||document.title,url:url}, r=b.querySelector('span');
       if(navigator.share){navigator.share(datos).catch(function(){});return;}
@@ -1103,7 +1112,7 @@ def orejas(prof):
             f'{una("der", L["nombre_algoritmo"], (-50, 162, 100, 172), ALGORITMO_OREJA)}</div>')
 
 
-def cabecera(prof, ruta, fecha, cuenta, es_portada, h1=True, activa=None, ant="", sig="", dia=None):
+def cabecera(prof, ruta, fecha, cuenta, es_portada, h1=True, activa=None, ant="", sig="", dia=None, papel=""):
     """`cuenta` es el número de la edición, rodeado a mano con el bolígrafo rojo, como en un periódico.
     Con h1="dia" (la página de un número de la hemeroteca), la mancheta es el h1 de la página, con el
     enlace a la portada y la fecha solo para el lector de pantalla: se ve igual que con un <p>."""
@@ -1119,7 +1128,7 @@ def cabecera(prof, ruta, fecha, cuenta, es_portada, h1=True, activa=None, ant=""
   <div class="cabecera-fila">
     <span class="cuando">{cuando}</span>
     {numero if cuenta else '<span></span>'}
-    <span class="controles"><a class="ico-video" href="{prof}videos.html" title="{L["videos"]}" aria-label="{L["videos"]}">{PLAY}</a><a class="lupa" href="{prof}buscar.html" title="{L["buscar_etiqueta"]}" aria-label="{L["buscar_etiqueta"]}">{LUPA}<span class="lupa-rotulo">{L["buscar"]}</span></a>{selector_idioma(prof, ruta)}{boton_tema()}</span>
+    <span class="controles">{f'<a class="ico-papel" href="{papel}" title="{L["papel"]}" aria-label="{L["papel"]}">{IMPRESORA}</a>' if papel else ""}<a class="ico-video" href="{prof}videos.html" title="{L["videos"]}" aria-label="{L["videos"]}">{PLAY}</a><a class="lupa" href="{prof}buscar.html" title="{L["buscar_etiqueta"]}" aria-label="{L["buscar_etiqueta"]}">{LUPA}<span class="lupa-rotulo">{L["buscar"]}</span></a>{selector_idioma(prof, ruta)}{boton_tema()}</span>
   </div>
   <{etiqueta} class="mancheta">{nombre}</{etiqueta}>
   <p class="lema">{L["lema"]}</p>
@@ -1523,7 +1532,8 @@ def pagina_portada(prof, ruta, eds, piezas, breves, fecha, cuenta, es_portada, a
     # La portada se describe con el lema del diario; la página de cada día, con lo que trae ese número
     descripcion = L["lema"] if es_portada else descripcion_dia(dia, piezas)
     return cabeza(titulo, prof, descripcion, ruta, portada=es_portada) + f"""<body class="pag-portada">
-{cabecera(prof, ruta, fecha, cuenta, es_portada, h1=True if es_portada else "dia", activa="portada" if es_portada else "dia", ant=ant, sig=sig, dia=None if es_portada else dia)}
+{cabecera(prof, ruta, fecha, cuenta, es_portada, h1=True if es_portada else "dia", activa="portada" if es_portada else "dia", ant=ant, sig=sig, dia=None if es_portada else dia,
+          papel=f'{prof}{fecha}/papel.html?imprimir=1' if dia.get("piezas") else "")}
 <main class="portada">
 {franja_reserva(dia)}
 {franja_editorial(prof, dia)}
@@ -1615,10 +1625,11 @@ def articulo(prof, ruta, d, p, eds):
 {cabecera(prof, ruta, d["fecha"], d["numero"], False, h1=False, dia=d)}
 <main class="articulo en-columnas">
   <article{f' class="sec-{e(p["seccion"])}"' if p.get("seccion") else ""}{indexado(p.get("seccion") or "editorial", L["secciones"].get(p.get("seccion"), L["quees"]), d["fecha"])}>
+    {qr_papel(ruta)}
     {linea}
     {cab}
     {ficha_doc}
-    <div class="cuerpo">{cuerpo}{bloques}</div>
+    <div class="cuerpo">{cuerpo}{bloques}{cola_papel(ruta, origen(p), comprobado)}</div>
     {ya_contados}
     {f'<p class="correccion">{md(p["correccion"])}</p>' if p.get("correccion") else ""}
     {origen(p)}
@@ -1633,6 +1644,54 @@ def articulo(prof, ruta, d, p, eds):
   <p class="volver"><a href="{prof or "./"}">{L["volver"]}</a></p>
 </main>
 {pie(prof, eds, d["fecha"])}
+{SCRIPT_TEMA}
+</body>
+</html>"""
+
+
+def articulo_suelto(pagina, pid):
+    """La pieza de una página de artículo, para la edición en papel: solo el <article>, sin los botones ni lo que
+    la marca para el buscador (la edición en papel no se indexa: repetiría cada pieza)."""
+    i = pagina.index("<article", pagina.index("<main"))
+    a = pagina[i:pagina.index("</article>", i) + len("</article>")]
+    a = re.sub(r'<div class="acciones".*?</div>', "", a, count=1, flags=re.S)
+    a = re.sub(r' data-pagefind-(?:body|ignore|filter="[^"]*"|sort="[^"]*"|meta="[^"]*")', "", a)
+    a = re.sub(r'<span hidden></span>', "", a).replace(' loading="lazy"', "")
+    return a.replace("<article", f'<article id="p-{pid}"', 1)
+
+
+def pagina_papel(d, eds):
+    """La edición en papel de un número (ADR 0054): el sumario, todas sus piezas enteras con su QR, la viñeta y los
+    breves, con la maqueta de imprimir. No se guarda ningún PDF: lo hace el navegador de quien la pide (con
+    ?imprimir=1, el diálogo se abre solo)."""
+    prof, ruta = "../", f'{d["fecha"]}/papel.html'
+    piezas = []
+    if d.get("editorial"):
+        ed = dict(d["editorial"], fecha=d["fecha"])
+        piezas.append((ed, L["quees"], articulo(prof, f'{d["fecha"]}/{ed["id"]}.html', d, ed, eds)))
+    if d.get("reportaje"):
+        r = d["reportaje"]
+        piezas.append((r, L["reportaje"], articulo_reportaje(prof, f'{d["fecha"]}/{r["id"]}.html', d, r, eds)))
+    orden = [x for x in d["piezas"] if x.get("seccion") not in SECCIONES_FUERA] + [x for x in d["piezas"] if x.get("seccion") in SECCIONES_FUERA]
+    for x in orden:
+        piezas.append((x, L["secciones"].get(x.get("seccion"), ""), articulo(prof, f'{d["fecha"]}/{x["id"]}.html', d, x, eds)))
+    grupos = {}
+    for x, nombre, _ in piezas:
+        grupos.setdefault(nombre, []).append(f'<li><a href="#p-{e(x["id"])}">{e(x["titular"])}</a></li>')
+    sumario = "".join(f'<li><span class="seccion">{e(n)}</span><ul>{"".join(xs)}</ul></li>' for n, xs in grupos.items())
+    cuerpo = "\n".join(articulo_suelto(html_, x["id"]) for x, _, html_ in piezas)
+    titulo = L["papel_titulo"].format(n=d["numero"]) if d.get("numero") else L["papel"]
+    cab = cabeza(f'{titulo} | {L["titulo"]}', prof, descripcion_dia(d, d["piezas"]), ruta)
+    cab = cab.replace("<head>\n", '<head>\n<meta name="robots" content="noindex">\n', 1)
+    return cab + f"""<body class="pag-papel">
+{cabecera(prof, ruta, d["fecha"], d["numero"], False, h1=False, dia=d)}
+<main class="articulo papel en-columnas">
+<div class="papel-barra"><a href="./">{L["papel_volver"]}</a><button type="button" class="compartir imprimir">{IMPRESORA}<span>{L["papel_imprimir"]}</span></button><p>{L["papel_consejo"]}</p></div>
+<nav class="papel-sumario" aria-labelledby="t-sumario"><h2 id="t-sumario">{L["papel_sumario"]}</h2><ul>{sumario}</ul></nav>
+{cuerpo}
+{bloque_vineta(prof, eds, d["fecha"])}
+{bloque_breves(d.get("breves", []), False)}
+</main>
 {SCRIPT_TEMA}
 </body>
 </html>"""
@@ -1724,9 +1783,10 @@ def articulo_reportaje(prof, ruta, d, r, eds):
 {cabecera(prof, ruta, d["fecha"], d["numero"], False, h1=False, dia=d)}
 <main class="articulo reportaje en-columnas">
   <article class="sec-reportaje"{indexado("reportaje", L["reportajes"], d["fecha"])}>
+    {qr_papel(ruta)}
     <p class="seccion"><span><a href="{prof}reportajes.html">{icono("reportaje")} {L["reportaje"]}</a></span> <span class="seccion-dcha">{boton_columnas()} <span class="fecha-pieza">{fecha_corta(publicacion(r["fecha"]))}</span></span></p>
     {cab}
-    <div class="cuerpo">{"".join(apartados)}</div>
+    <div class="cuerpo">{"".join(apartados)}{cola_papel(ruta, origen(dict(r, grupo=(r.get("mensaje") or {}).get("grupo"))), comprobado)}</div>
     {origen(dict(r, grupo=(r.get("mensaje") or {}).get("grupo")))}
     {compartir}
     {comprobado}
@@ -2505,7 +2565,8 @@ def datos_dia(d, medidas):
     foto = f'{d["fecha"]}-{L["codigo"]}.jpg'
     ancho, alto = medidas.get(foto, [0, 0])
     return {"fecha": mayus(fecha_larga(publicacion(d["fecha"]))), "num": f'{L["num"]} {d["numero"]}' if d.get("numero") else "",
-            "numero": f'{d["fecha"]}/', "portada": f'{recursos("")}portadas/{foto}' if alto else "", "ancho": str(ancho), "alto": str(alto)}
+            "numero": f'{d["fecha"]}/', "portada": f'{recursos("")}portadas/{foto}' if alto else "", "ancho": str(ancho), "alto": str(alto),
+            "papel": f'{d["fecha"]}/papel.html?imprimir=1'}
 
 
 def piezas_dia(d):
@@ -2529,7 +2590,8 @@ def detalle_dia(x, grupos):
     secs = "".join(f'<p class="cal-sec sec-{c}">{e(L["secciones"].get(c, c))}</p><ul>'
                    + "".join(f'<li><a href="{e(u)}">{e(tit)}</a></li>' for tit, u in xs) + "</ul>" for c, xs in grupos.items())
     # La fecha y el número, enlazados al número: es su título (Juanjo, 13-11-2026, en lugar de «Leer el número»)
-    return f'{foto}<div class="cal-texto"><p class="cal-fecha"><a href="{e(x["numero"])}">{e(x["fecha"])}{num}</a></p>{secs}</div>'
+    papel = f'<a class="cal-papel" href="{e(x["papel"])}" title="{e(L["papel"])}">{IMPRESORA}<span>{L["papel"]}</span></a>'
+    return f'{foto}<div class="cal-texto"><p class="cal-fecha"><a href="{e(x["numero"])}">{e(x["fecha"])}{num}</a>{papel}</p>{secs}</div>'
 
 
 def calendario(eds, cabeza=""):
@@ -2577,7 +2639,8 @@ def calendario(eds, cabeza=""):
                       f'<caption class="solo-lector">{L["calendario"]}: {mes_largo(m + "-01")}</caption>'
                       f'<thead><tr>{cabeza_tabla}</tr></thead><tbody>{filas}</tbody></table>')
     opciones = "".join(f'<option value="{m}"{" selected" if m == meses[-1] else ""}>{mes_largo(m + "-01")}</option>' for m in reversed(meses))
-    textos = json.dumps({"portada": L["cal_portada"], "ampliar": L["ampliar"], "cerrar": L["cerrar"]}, ensure_ascii=False)
+    textos = json.dumps({"portada": L["cal_portada"], "ampliar": L["ampliar"], "cerrar": L["cerrar"], "papel": L["papel"], "impresora": IMPRESORA},
+                        ensure_ascii=False)
     # A la izquierda, el título, el buscador y el calendario; a la derecha, desde arriba, el número elegido
     return (f'<div class="calendario" data-textos="{e(textos)}"><div class="hem-col">{cabeza}'
             f'<div class="cal-izq" role="group" aria-label="{L["calendario"]}"><div class="cal-nav"><button type="button" class="cal-ant" title="{L["cal_anterior"]}" aria-label="{L["cal_anterior"]}">{CHEVRON_IZQ}</button>'
@@ -2619,7 +2682,9 @@ SCRIPT_CALENDARIO = """<script>
     const texto = document.createElement('div'); texto.className = 'cal-texto';
     const titulo = enlace(d.numero, d.fecha);
     if (d.num) { const n = document.createElement('span'); n.className = 'num'; n.textContent = ' · ' + d.num; titulo.append(n); }
-    texto.append(p('cal-fecha', titulo));
+    const papel = enlace(d.papel, ''); papel.className = 'cal-papel'; papel.title = T.papel; papel.innerHTML = T.impresora;
+    const rot = document.createElement('span'); rot.textContent = T.papel; papel.append(rot);
+    texto.append(p('cal-fecha', titulo, papel));
     const secs = new Map();
     for (const n of ns || []) {
       if (!secs.has(n.seccion)) secs.set(n.seccion, { nombre: n.seccion_nombre, xs: [] });
@@ -2994,6 +3059,34 @@ def pagina_vinetas(eds, mes=None):
 # ---------------------------------------------------------------------------------------------------
 
 LICENCIA_URL = "https://creativecommons.org/licenses/by-sa/4.0/"
+IMPRESORA = ('<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/>'
+             '<path d="M6 9V3a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v6"/><rect x="6" y="14" width="12" height="8" rx="1"/></svg>')   # printer (Lucide)
+
+
+def qr_svg(url):
+    """El QR de una dirección, en SVG, para el papel (ADR 0054). Con segno (BSD-3-Clause, en el Dockerfile); sin él, nada."""
+    try:
+        import segno
+    except ImportError:
+        return ""
+    return segno.make(url, error="m").svg_inline(scale=1, border=0, dark="#000").replace("<svg ", '<svg class="qr" aria-hidden="true" ', 1)
+
+
+def cola_papel(ruta, origen_html, comprobado_html):
+    """Solo en papel, al final del texto y dentro de sus columnas: el enlace a la conversación, las fuentes con su
+    dirección y el QR de la pieza, porque en el papel no se pueden pulsar los enlaces. Fuera de las columnas, las
+    fuentes se quedaban solas en una página casi vacía."""
+    comprobado_html = comprobado_html.replace('id="comp-', 'id="papel-comp-').replace('aria-labelledby="comp-', 'aria-labelledby="papel-comp-')
+    return f'<div class="solo-papel cola-papel" data-pagefind-ignore>{origen_html}{comprobado_html}</div>'
+
+
+def qr_papel(ruta):
+    """Solo en papel, arriba a la derecha de cada pieza, junto al título: su QR y su dirección. Al final del texto,
+    el reparto de las columnas lo mandaba a veces solo a una página nueva."""
+    url = BASE + L["carpeta"] + ruta
+    return f'<div class="solo-papel papel-qr" data-pagefind-ignore>{qr_svg(url)}<p>{L["papel_web"]}:<br><span>{e(url)}</span></p></div>'
+
+
 ICONO_LLEVAR = '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg>'   # code-xml
 ICONO_LISTA = '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h.01"/><path d="M3 12h.01"/><path d="M3 19h.01"/><path d="M8 5h13"/><path d="M8 12h13"/><path d="M8 19h13"/></svg>'   # list
 ICONO_TARJETAS = '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg>'   # layout-grid
@@ -3254,7 +3347,8 @@ def acciones(fecha, x, ruta, d, eds, reportaje=False, llevar=True):
     if not llevar:   # el editorial no entra en el widget ni en los canales: solo se comparte
         llevar = ""
     botones = (f'<div class="acciones" data-pagefind-ignore><button type="button" class="compartir" data-copiado="{e(L["copiado"])}">'
-               f'{COMPARTIR}<span>{L["compartir"]}</span></button>{llevar}</div>')
+               f'{COMPARTIR}<span>{L["compartir"]}</span></button>'
+               f'<button type="button" class="compartir imprimir">{IMPRESORA}<span>{L["imprimir"]}</span></button>{llevar}</div>')
     if not llevar:
         return botones, ""
     plantilla = f'<template id="republicar">{republicable(d, x, ruta, eds, reportaje)}</template>'
@@ -3635,6 +3729,8 @@ def generar_idioma(codigo):
         if d.get("editorial"):
             ed = dict(d["editorial"], fecha=d["fecha"])
             escribir(dia / f'{ed["id"]}.html', articulo("../", f'{d["fecha"]}/{ed["id"]}.html', d, ed, eds))
+        if d["piezas"]:
+            escribir(dia / "papel.html", pagina_papel(d, eds))
     print(f"{codigo}: {len(eds)} días, {sum(len(d['piezas']) for d in eds)} piezas; portada con {len(piezas)} piezas y {len(breves)} breves")
 
 
