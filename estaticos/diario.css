@@ -793,6 +793,25 @@ a.llevar-op.llevar-mas { border-top: 1px solid var(--filete); margin-top: 0.2rem
   .cal-portada img { max-height: none; }
 }
 .hem-lista h2:first-child { margin-top: 0.4rem; }
+/* En pantalla ancha, el calendario a la izquierda y el número elegido a la derecha, a la vista los dos sin bajar
+   (Juanjo, 13-11-2026). El calendario acompaña al bajar si los titulares del día son muchos. */
+@media (min-width: 64rem) {
+  .hemeroteca.hem-ancha { max-width: 72rem; }
+  .hem-ancha > :not(.calendario, .hem-buscar) { max-width: 44rem; }
+  .calendario { display: grid; grid-template-columns: 22rem minmax(0, 1fr); align-items: start; }
+  .cal-izq { position: sticky; top: 1rem; padding-right: 1.6rem; }
+  .cal-detalle { margin-top: 0; padding: 0 0 0 1.6rem; border-top: 0; border-left: 1px solid var(--filete); min-height: 100%; }
+}
+/* Variante B, solo para la vista previa (?variante=b): a la izquierda el calendario y los titulares; a la derecha la
+   portada en grande, recortada para acabar a la vez que la columna de la izquierda. */
+@media (min-width: 64rem) {
+  .calendario.variante-b { grid-template-columns: 24rem minmax(0, 1fr); grid-template-areas: "izq foto" "texto foto"; grid-template-rows: auto 1fr; }
+  .variante-b .cal-izq { grid-area: izq; position: static; padding-right: 0; }
+  .variante-b .cal-detalle { display: contents; }
+  .variante-b .cal-texto { grid-area: texto; margin-top: 0.9rem; padding-top: 0.9rem; border-top: 1px solid var(--filete); }
+  .variante-b .cal-portada { grid-area: foto; align-self: stretch; width: auto; min-height: 0; margin: 0 0 0 1.8rem; float: none; contain: size; }
+  .variante-b .cal-portada img { height: auto; max-height: 100%; }
+}
 @media (max-width: 30rem) {
   .calendario { padding: 0.7rem 0.6rem 0.8rem; }
   .cal-mes { border-spacing: 0.2rem; }

@@ -23,8 +23,8 @@ sys.path.insert(0, str(RAIZ))
 import generar  # noqa: E402
 
 SALIDA = RAIZ / "portadas"
-ANCHO = 480        # la miniatura se ve a unos 300 px: así queda nítida en pantallas de alta densidad
-CALIDAD = 60       # sin perder la letra del titular principal; unos 55 KB
+ANCHO = 720        # a la derecha de la hemeroteca se ve a unos 700 px; en pequeño, nítida en alta densidad
+CALIDAD = 55
 
 
 class Callado(http.server.SimpleHTTPRequestHandler):

@@ -2549,10 +2549,10 @@ def calendario(eds):
     opciones = "".join(f'<option value="{m}"{" selected" if m == meses[-1] else ""}>{mes_largo(m + "-01")}</option>' for m in reversed(meses))
     textos = json.dumps({"portada": L["cal_portada"]}, ensure_ascii=False)
     return (f'<section class="calendario" aria-label="{L["calendario"]}" data-textos="{e(textos)}">'
-            f'<div class="cal-nav"><button type="button" class="cal-ant" title="{L["cal_anterior"]}" aria-label="{L["cal_anterior"]}">{CHEVRON_IZQ}</button>'
+            f'<div class="cal-izq"><div class="cal-nav"><button type="button" class="cal-ant" title="{L["cal_anterior"]}" aria-label="{L["cal_anterior"]}">{CHEVRON_IZQ}</button>'
             f'<select class="cal-elegir" aria-label="{L["cal_elegir"]}">{opciones}</select>'
             f'<button type="button" class="cal-sig" title="{L["cal_siguiente"]}" aria-label="{L["cal_siguiente"]}">{CHEVRON_DER}</button></div>'
-            f'{"".join(tablas)}<div class="cal-detalle" aria-live="polite">{detalle_dia(datos_dia(por_dia[ultimo], medidas), piezas_dia(por_dia[ultimo]))}</div></section>')
+            f'{"".join(tablas)}</div><div class="cal-detalle" aria-live="polite">{detalle_dia(datos_dia(por_dia[ultimo], medidas), piezas_dia(por_dia[ultimo]))}</div></section>')
 
 
 SCRIPT_CALENDARIO = """<script>
@@ -2605,10 +2605,12 @@ SCRIPT_CALENDARIO = """<script>
   // Sin huecos (ADR 0041): si los titulares no caben al lado de la portada, siguen por debajo de ella; si son
   // pocos, la portada se recorta por abajo (CSS) para acabar a la vez que ellos.
   const estrecho = matchMedia('(max-width: 36rem)');
+  const ancho = matchMedia('(min-width: 64rem)');
+  if (new URLSearchParams(location.search).get('variante') === 'b') cal.classList.add('variante-b');   // solo para la vista previa
   function ajusta() {
     detalle.classList.remove('envuelve');
     const img = detalle.querySelector('.cal-portada img'), tx = detalle.querySelector('.cal-texto');
-    if (!img || !tx || estrecho.matches) return;
+    if (!img || !tx || estrecho.matches || (cal.classList.contains('variante-b') && ancho.matches)) return;
     const natural = img.getBoundingClientRect().width * img.getAttribute('height') / img.getAttribute('width');
     if (tx.offsetHeight > natural + 24) detalle.classList.add('envuelve');
   }
@@ -2676,7 +2678,7 @@ def pagina_hemeroteca(eds):
     boletines = f'<section class="hem-boletines"><h2>{L["boletines_h"]}</h2><p>{L["boletines_txt"]}</p><ul>{bols}</ul></section>' if bols else ""
     return cabeza(f'{L["hemeroteca"]} | {L["titulo"]}', "", L["hemeroteca_txt"], "archivo.html") + f"""<body class="pag-seccion">
 {cabecera("", "archivo.html", eds[-1]["fecha"], eds[-1]["numero"], True, h1=False)}
-<main class="portada hemeroteca">
+<main class="portada hemeroteca hem-ancha">
 <h1 class="titulo-seccion">{L["hemeroteca"]}</h1>
 <p class="vineta-sub-pagina">{L["hemeroteca_txt"]}</p>
 {"".join(bloques)}
