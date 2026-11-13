@@ -23,8 +23,10 @@ además la portada de cada número y que se viera, en un portátil, el calendari
   cabecera a la viñeta, tal como se ve en un ordenador. Pulsada, se amplía en el visor del resto de imágenes
   del diario, a lo ancho (900 px) y bajando dentro de él, porque ajustada a la pantalla quedaba tan pequeña
   como la miniatura.
-- **Sin huecos** (ADR 0041): si los titulares son pocos, la portada se recorta por abajo para acabar con ellos;
-  si son muchos, siguen por debajo de ella. En pantalla ancha, el calendario acompaña al bajar (`sticky`), y
+- **Sin huecos** (ADR 0041) **y sin cortar la portada**: si los titulares son pocos, la portada se hace más
+  pequeña, entera, hasta acabar con ellos, sin bajar de 14 rem de alto (un día de uno o dos titulares deja algo
+  de aire bajo el texto); si son muchos, siguen por debajo de ella. Primero se recortaba, y Juanjo lo corrigió:
+  «la imagen no debe salir cortada». En pantalla ancha, el calendario acompaña al bajar (`sticky`), y
   `scripts/revisar-maqueta.js` no cuenta como hueco una columna fija así.
 - **Una columna con el resumen de cada semana**: el número de la semana, enlazado a su página (ADR 0034). Es la
   semana que cuentan los números de esa fila (los de martes a domingo cuentan los días de lunes a sábado de esa
