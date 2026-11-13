@@ -21,13 +21,13 @@ RAIZ = pathlib.Path(__file__).resolve().parent.parent
 
 IDIOMAS = {
     "ca": {
-        "LENGUA": "catalán", "NORMA": "estándar del IEC, natural, periodístico; «el professorat», «l'alumnat»",
+        "LENGUA": "catalán", "NORMA": "estándar del IEC, natural, periodístico; «el professorat», «l'alumnat»; «soc», sin tilde; las etapas educativas, en minúscula («primària», «batxillerat»); la entradilla es «l'entradeta»",
         "MARCAS": "«(en castellà)» o «(en anglès)»", "PERSONAJES": "Guix i Algorisme", "NOTA": "automàtica amb IA",
         "ANTETITULOS": "«Nou al repositori», «La setmana del repositori» o «Del fons del repositori»",
         "REPOSITORIO": "«el Repositori de recursos de Vibe Coding Educativo»",
     },
     "gl": {
-        "LENGUA": "gallego", "NORMA": "normativa de la Real Academia Galega, natural, periodístico; «o profesorado», «o alumnado»",
+        "LENGUA": "gallego", "NORMA": "normativa de la Real Academia Galega, natural, periodístico; «o profesorado», «o alumnado»; cuida el género («o xiz») y evita castellanismos («encerado», no «pizarra»; «relatorios», no «ponencias»)",
         "MARCAS": "«(en castelán)» o «(en inglés)»", "PERSONAJES": "Xiz e Algoritmo", "NOTA": "automática con IA",
         "ANTETITULOS": "«Novo no repositorio», «A semana do repositorio» o «Do fondo do repositorio»",
         "REPOSITORIO": "«o Repositorio de recursos de Vibe Coding Educativo»",
@@ -40,7 +40,7 @@ IDIOMAS = {
         "REPOSITORIO": "«Vibe Coding Educativoren Baliabideen biltegia»",
     },
     "en": {
-        "LENGUA": "inglés", "NORMA": "inglés británico, natural, periodístico; «teachers», «students»",
+        "LENGUA": "inglés", "NORMA": "inglés británico, natural, periodístico; «teachers», «students»; el diario se llama a sí mismo «the paper», nunca «the diary»; lo que en origen se dijo en inglés se copia de la fuente, no se retraduce",
         "MARCAS": "«(in Spanish)» o «(in Catalan)»", "PERSONAJES": "Chalk and Algorithm", "NOTA": "automatic AI translation",
         "ANTETITULOS": "«New in the repository», «The repository's week» o «From the repository's back catalogue»",
         "REPOSITORIO": "«the Vibe Coding Educativo resource repository»",

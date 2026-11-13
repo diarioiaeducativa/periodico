@@ -9,21 +9,33 @@
       "importancia": 1,
       "grupo": "vce",
       "antetitulo": "Anthropic, modelos",
-      "titular": "Anthropic presenta Claude Fable 5.2 y Mythos 5.2, con el primero abierto a todo el público",
-      "entradilla": "La empresa anuncia dos versiones de un mismo modelo: Fable 5.2, con salvaguardas y disponible para todos, y Mythos 5.2, solo para organizaciones verificadas.",
+      "titular": "Anthropic presenta Claude Fable 5.2 y Mythos 5.2, el segundo solo para organizaciones verificadas",
+      "entradilla": "La empresa anuncia dos versiones de un mismo modelo: Fable 5.2, con salvaguardas y sin verificación previa, y Mythos 5.2, solo para organizaciones verificadas.",
       "cuerpo": [
         "Anthropic anunció el 9 de noviembre [Claude Fable 5.2 y Claude Mythos 5.2](https://www.anthropic.com/claude-fable-and-mythos-5-2), que describe como sus modelos más capaces para trabajo técnico ambicioso y abierto. Varios miembros de los grupos compartieron el anuncio y uno de ellos comentó que ya lo tenía disponible en la aplicación de Claude.",
-        "Según la empresa, son dos versiones de un mismo modelo. Fable 5.2 incluye salvaguardas contra usos indebidos en ciberseguridad y biología y está disponible para todos los usuarios, también en los servicios en la nube de Amazon, Google y Microsoft; en la API se llama `claude-fable-5-2`. Mythos 5.2 tiene menos salvaguardas y se reserva a organizaciones que pasen sus programas de verificación en ciberseguridad o ciencias de la vida.",
+        "Según la empresa, son dos versiones de un mismo modelo. Fable 5.2 incluye salvaguardas contra usos indebidos en ciberseguridad y biología y, según el anuncio, está disponible para todos los usuarios, también en los servicios en la nube de Amazon, Google y Microsoft; en la API se llama `claude-fable-5-2`. Mythos 5.2 tiene menos salvaguardas y se reserva a organizaciones que pasen sus programas de verificación en ciberseguridad o ciencias de la vida.",
         "Anthropic afirma que generan resultados hasta un 30 % más rápido que las versiones 5.1, que superan a Opus 5.5 en casi todas las capacidades que ha evaluado y que, en pruebas iniciales, los clasificadores de seguridad bloquean un 55 % menos que con Fable 5.1. Son cifras de la propia empresa, sin contraste independiente. El precio estándar indicado es de 8 dólares por millón de tokens de entrada y 40 por millón de salida.",
-        "Para el profesorado que programa con agentes, la novedad práctica es que el modelo más potente de la compañía queda a su alcance. En la conversación se mencionó una prueba abierta hasta el día 16; el anuncio no da esa fecha, solo habla de una promoción de lanzamiento «esta semana» con uso adicional de Fable para suscriptores de pago elegibles, así que el plazo no se ha podido confirmar."
+        "Para el profesorado que programa con agentes, la novedad práctica es que el modelo más potente de la compañía queda al alcance de los planes de pago, aunque Anthropic recomienda empezar por Opus 5.5 y pasar a Fable solo cuando la tarea lo exija. En la conversación se mencionó una prueba abierta hasta el día 16, y la [ayuda de Anthropic](https://support.claude.com/en/articles/17506494) lo confirma: en el plan Pro y en los puestos estándar de Team, Fable va incluido del 9 al 16 de noviembre de 2026, hasta la mitad del límite semanal; las ofertas de lanzamiento no alcanzan al plan gratuito."
       ],
       "fuentes": [
-        {"titulo": "Anthropic: Introducing Claude Fable 5.2 and Claude Mythos 5.2", "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2"}
+        {
+          "titulo": "Anthropic: Introducing Claude Fable 5.2 and Claude Mythos 5.2",
+          "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2"
+        },
+        {
+          "titulo": "Ayuda de Claude: ofertas de lanzamiento de Fable 5.2",
+          "url": "https://support.claude.com/en/articles/17506494"
+        }
       ],
-      "mensaje": {"grupo": "vce", "id": 14814},
+      "mensaje": {
+        "grupo": "vce",
+        "id": 14814
+      },
       "comprobado": "Revisor: abierta la página oficial de Anthropic. Confirmados fecha (9 de noviembre de 2026), Fable abierto a todos y también en AWS, Google Cloud y Azure, Mythos para organizaciones verificadas, identificador claude-fable-5-2, precios 8/40 dólares, hasta un 30 % más rápido y superior a Opus 5.5 en casi todo lo evaluado. Corregido: la cifra del 55 % es de bloqueos de clasificadores de seguridad en pruebas iniciales, no de «consultas legítimas»; Mythos tiene «menos» salvaguardas, no ninguna. Quitado «con un coste superior» (no consta). El día 16 no aparece: solo una promoción «esta semana». Mensaje 14814 abierto en Telegram: comparte el anuncio.",
       "ilustracion": "Esquema de un tronco común que se bifurca en dos ramas: una con una compuerta de seguridad abierta a una multitud (Fable 5.2) y otra con una puerta con credencial para unas pocas organizaciones (Mythos 5.2).",
-      "ilustracion_alt": "Esquema de un tronco, «Claude 5.2», que se bifurca en dos ramas: «Fable 5.2», que lleva a un grupo de personas con el rótulo «Todo el público», y «Mythos 5.2», que lleva a una puerta cerrada con candado con el rótulo «Verificadas»."
+      "ilustracion_alt": "Esquema de un tronco, «Claude 5.2», que se bifurca en dos ramas: «Fable 5.2», que lleva a un grupo de personas con el rótulo «Sin verificación», y «Mythos 5.2», que lleva a una puerta cerrada con candado con el rótulo «Verificadas».",
+      "correccion": "Corregido el 13 de noviembre de 2026: el titular y la entradilla daban Fable 5.2 por abierto a todo el público; las ofertas de lanzamiento no alcanzan al plan gratuito y en el plan Pro va incluido solo hasta el 16 de noviembre. Se ha añadido ese plazo, que la ayuda de Anthropic confirma, y que la empresa recomienda empezar por Opus 5.5.",
+      "corregido": "2026-11-13"
     },
     {
       "id": "domotica-agentes-ia",
@@ -40,10 +52,19 @@
         "Son testimonios de uso personal, no una guía contrastada; el interés para el profesorado está en que el mismo método de pedir al agente configuraciones sirve para cualquier sistema que se gestione con archivos de configuración. Sobre dar acceso a un agente sin perder el control de los datos, el diario ya trató [los permisos de un agente de consola](pieza:2026-11-02/agentes-consola-acceso)."
       ],
       "fuentes": [
-        {"titulo": "Conversación en ChatGPT-IA-edu (mensaje inicial)", "url": "https://t.me/ChatGPTedu/54146"},
-        {"titulo": "Google: Build with Google Antigravity", "url": "https://developers.googleblog.com/build-with-google-antigravity-our-new-agentic-development-platform/"}
+        {
+          "titulo": "Conversación en ChatGPT-IA-edu (mensaje inicial)",
+          "url": "https://t.me/ChatGPTedu/54146"
+        },
+        {
+          "titulo": "Google: Build with Google Antigravity",
+          "url": "https://developers.googleblog.com/build-with-google-antigravity-our-new-agentic-development-platform/"
+        }
       ],
-      "mensaje": {"grupo": "chatgpt", "id": 54146},
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 54146
+      },
       "comprobado": "Revisor: contrastado con los mensajes 54146-54162 (nada atribuido de más; sin nombres). Mensaje 54146 abierto en Telegram. Antigravity descrito como plataforma de desarrollo con agentes de Google según su blog oficial (enlazado en su primera mención). Cambiado «docente» por «miembro» (no consta la profesión) y el titular, que generalizaba. Clave pieza:2026-11-02/agentes-consola-acceso presente en publicado.txt y del mismo tema (permisos de agentes de consola). Nada afirmado sobre Home Assistant más allá del relato.",
       "ilustracion": null,
       "ilustracion_alt": "Esquema en el que un recuadro, «Agente», apunta a un documento de código con el rótulo «Configuración», que apunta a una casa con el rótulo «Home Assistant»; abajo, un candado rojo con el rótulo «Sin claves»."
@@ -62,10 +83,19 @@
         "Ambas aplicaciones indican que el código está bajo licencia AGPL v3 y los contenidos bajo CC BY-SA 4.0, lo que permite a otros centros adaptarlas."
       ],
       "fuentes": [
-        {"titulo": "Xifres i Lletres", "url": "https://elcordones.github.io/xifres-i-lletres/"},
-        {"titulo": "Aula d'Acollida Digital", "url": "https://elcordones.github.io/acollida/"}
+        {
+          "titulo": "Xifres i Lletres",
+          "url": "https://elcordones.github.io/xifres-i-lletres/"
+        },
+        {
+          "titulo": "Aula d'Acollida Digital",
+          "url": "https://elcordones.github.io/acollida/"
+        }
       ],
-      "mensaje": {"grupo": "vce", "id": 14803},
+      "mensaje": {
+        "grupo": "vce",
+        "id": 14803
+      },
       "comprobado": "Revisor: abiertas ambas webs. Xifres i Lletres: autoría de David Cordones, dos pruebas, cuatro niveles por edades, navegador, AGPL v3 y CC BY-SA 4.0 confirmados. Aula d'Acollida: autoría, finalidad («Suport lingüístic inicial») y licencias confirmadas; audio, cuaderno y sin conexión no figuran en la página y quedan como no confirmados. Mensaje 14803 abierto en Telegram: corresponde.",
       "ilustracion": null,
       "ilustracion_alt": "Dos paneles: a la izquierda, una calculadora y tres casillas con el rótulo «Xifres i Lletres»; a la derecha, un icono de traducción con el rótulo «Aula d'Acollida»; debajo, un recuadro de trazos discontinuos con el rótulo «Código abierto»."
@@ -83,9 +113,15 @@
         "Advirtió de que ese último paso es caro porque consume muchos créditos. En su [publicación sobre «Buzz»](https://www.linkedin.com/posts/raul-torres-ia_buzz-shortfilm-aifilmmaking-ugcPost-7525290884553183233-UCtd/) enumera también Magnific y DaVinci Resolve entre las herramientas."
       ],
       "fuentes": [
-        {"titulo": "Publicación de Raül Torres sobre «Buzz» en LinkedIn", "url": "https://www.linkedin.com/posts/raul-torres-ia_buzz-shortfilm-aifilmmaking-ugcPost-7525290884553183233-UCtd/"}
+        {
+          "titulo": "Publicación de Raül Torres sobre «Buzz» en LinkedIn",
+          "url": "https://www.linkedin.com/posts/raul-torres-ia_buzz-shortfilm-aifilmmaking-ugcPost-7525290884553183233-UCtd/"
+        }
       ],
-      "mensaje": {"grupo": "edumedia", "id": 12153},
+      "mensaje": {
+        "grupo": "edumedia",
+        "id": 12153
+      },
       "comprobado": "Revisor: pasos contrastados con los mensajes 12154-12157 del propio autor; mensaje 12153 abierto en Telegram (la pregunta sobre el flujo). Herramientas de la lista (Blender, Quest 3, Seedance 2.5, Magnific, DaVinci Resolve) y descripción de la publicación, de la vista previa del enlace del mensaje 12150; LinkedIn no se abre desde aquí. Clave pieza:2026-11-08/buzz-cortometraje-vr en publicado.txt y del mismo cortometraje. Ajustada la redacción: «hecho todo con Claude» no equivale a que el paso de Seedance lo sea.",
       "ilustracion": null,
       "ilustracion_alt": "Cuatro pasos en fila unidos por flechas: un documento de código con el rótulo «App con Claude», un cubo 3D con «Blender y MCP», unas gafas con «Rodaje en VR» y una claqueta con «Seedance»; una flecha roja señala este último con el rótulo «Caro en créditos»."
@@ -103,9 +139,15 @@
         "El proyecto afirma que solo usa formas documentadas en sus fuentes, señala como reconstrucción cualquier propuesta pendiente de revisión por un hablante, y sigue la ortografía de la Academia Aragonesa de la Lengua. Ofrece además una vía para que hablantes y familiares del valle colaboren."
       ],
       "fuentes": [
-        {"titulo": "Belsetán · El aprendiz del pastor", "url": "https://sanforbel.github.io/belsetan/"}
+        {
+          "titulo": "Belsetán · El aprendiz del pastor",
+          "url": "https://sanforbel.github.io/belsetan/"
+        }
       ],
-      "mensaje": {"grupo": "vce", "id": 14815},
+      "mensaje": {
+        "grupo": "vce",
+        "id": 14815
+      },
       "comprobado": "Revisor: abierta la web. Confirmados autoría (@sanforbel; nombre por el mensaje 14815, abierto en Telegram), secciones, juegos, ocho fichas con solucionario, vocabulario «próximamente», ortografía de la Academia Aragonesa de la Lengua, 1944 (primera encuesta en Bielsa) y sección Colabora. Los textos de cartas en verso y el cuestionario gramatical no los he comprobado en detalle en las subpáginas.",
       "ilustracion": null,
       "ilustracion_alt": "Una montaña con el rótulo «Valle de Bielsa» lleva a un libro abierto con el rótulo «Belsetán», del que salen dos flechas: una a unos dados con el rótulo «Juegos» y otra a un documento con el rótulo «Fichas»."
@@ -116,13 +158,19 @@
       "texto": "Un conector gratuito para Windows envía datos de sensores de una placa micro:bit, por USB, a la plataforma ThingSpeak, útil para estaciones meteorológicas o huertos con gráficas.",
       "url": "https://apps.microsoft.com/detail/9n7v4d4qmjc3?hl=ca-ES&gl=ES",
       "grupo": "vce",
-      "mensaje": {"grupo": "vce", "id": 14805}
+      "mensaje": {
+        "grupo": "vce",
+        "id": 14805
+      }
     },
     {
       "texto": "Google AI Studio permite ahora crear aplicaciones con mapas, datos de lugares y rutas de Google Maps Platform sin salir de la herramienta; con la clave de demostración, gratuita y sin facturación, el límite es de 100 llamadas diarias por API.",
       "url": "https://developers.google.com/maps/ai/ai-studio",
       "grupo": "edumedia",
-      "mensaje": {"grupo": "edumedia", "id": 12159}
+      "mensaje": {
+        "grupo": "edumedia",
+        "id": 12159
+      }
     }
   ],
   "descartado": [

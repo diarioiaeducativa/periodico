@@ -83,6 +83,13 @@ lee el resumen de las viñetas de los tres números anteriores (te dicen dónde 
   cambia de cara cuando cambia lo que siente, y las caras más repetidas en los números
   anteriores, solo si el chiste las pide.
 - **Objeto:** no repitas el del número anterior si la noticia no lo pide.
+- **El molde del chiste:** tampoco puede ser siempre el mismo. El más gastado es que Algoritmo
+  remate con literalidad o exceso de celo y Tiza acabe harta. El resumen dice quién dijo la
+  última frase y con qué cara acabó cada uno en los números anteriores: si los dos últimos
+  remates fueron del mismo personaje, hoy remata el otro o el remate es mudo. Hay más moldes:
+  que el chasco se lo lleve Algoritmo, que Tiza sea la que se pasa de lista, que los dos acaben
+  de acuerdo contra un tercero que no sale (la burocracia, la plataforma), que el giro esté en
+  el objeto o en el rótulo de la tercera viñeta.
 
 La variedad no salva un chiste flojo: primero la gracia, y entre dos ideas igual de buenas,
 la que varía.

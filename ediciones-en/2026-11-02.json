@@ -12,7 +12,7 @@
       "titular": "A teacher recommends building infographics in HTML and SVG rather than as generated images",
       "entradilla": "A member of Vibe Coding Educativo argues that, to illustrate concepts, AI should generate SVG shapes and icons in an HTML page, with generated images kept for when they are pedagogically necessary.",
       "cuerpo": [
-        "The proposal came up in a discussion of using vector illustrations instead of AI-generated images. Its author recommends asking AI to build the infographic as an HTML page with SVG shapes and a single family of icons, checking it thoroughly and, if needed, exporting it to PNG afterwards.",
+        "The proposal came up in a discussion of this paper’s illustrations, which are drawn in SVG rather than generated as images. Its author recommends asking AI to build the infographic as an HTML page with SVG shapes and a single family of icons, checking it thoroughly and, if needed, exporting it to PNG afterwards.",
         "The advantages listed include sharpness; control for whoever creates it; consistency across resources, which makes it possible to set a shared “style book”; accessibility, because a screen reader can read the text of an HTML infographic but not that of an image without a description; and automatic adaptation to light and dark modes. HTML also supports collapsible components that reveal information in stages, which, in this view, helps avoid cognitive overload and adds a degree of interactivity.",
         "Members also advised steering clear of infographics overloaded with decorative elements, generating images only when the teaching objective requires it, and always crediting the chosen icon family. [Lucide](https://lucide.dev/), mentioned in the group, is an open-source set of SVG icons released under the ISC licence.",
         "For teachers, the practical takeaway is knowing when an editable, accessible infographic is the better choice and when a generated image is."
@@ -37,7 +37,7 @@
       "importancia": 2,
       "grupo": "chatgpt",
       "antetitulo": "Higher education",
-      "titular": "MIT report calls for rethinking teaching and assessment in the age of AI",
+      "titular": "An MIT report, from August, calls for rethinking teaching and assessment in the age of AI",
       "entradilla": "The committee set up by MIT to study the use of AI in teaching, learning and research training recommends AI-aware educational processes and a review of assessments and policies.",
       "cuerpo": [
         "The report of MIT’s Ad Hoc Committee on the use of AI in teaching, learning and research training was shared in ChatGPT-IA-edu. According to [MIT’s institutional page](https://orgchart.mit.edu/node/1587), the committee was commissioned in January 2026 and its final report was released on 25 August 2026.",
@@ -89,7 +89,7 @@
       "titular": "Giving a command-line agent full access means protecting students’ data",
       "entradilla": "An experienced teacher explained what an AI agent with full control of a computer can do and what information should be kept out of its reach.",
       "cuerpo": [
-        "Asked what to consider before giving a command-line agent control of a computer, one member replied that with full access it can move and delete files, change settings, and install or uninstall programs. That capability is what makes it so versatile: in one case described, the agent built a complete project on a NAS from scratch and unaided, including obtaining a GitHub key to upload it.",
+        "Asked what to consider before giving a command-line agent control of a computer, one member replied that with full access it can move and delete files, change settings, and install or uninstall programs. That capability is what makes it so versatile: in the case described, the agent built from scratch on a NAS the system that produces this paper, including obtaining a GitHub key to publish it.",
         "The main caution concerns data. Students’ data is especially well protected and should not reach AI servers without knowing exactly what is being done and without the necessary permissions. Bank accounts and highly sensitive personal information are best kept separate. According to the person explaining, the agent itself can advise on how to protect that data from itself.",
         "It was also noted that the agent can be restricted to a specific folder rather than the whole device, and an updated text was announced on the three ways of using AI: web, desktop app and command line."
       ],

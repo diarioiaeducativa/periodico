@@ -4,8 +4,8 @@ La Biblioteca digital es el tema de ChatGPT-IA-edu donde los miembros dejan docu
 IA y educación: guías de las administraciones, informes de organismos, estudios, libros. Cada
 documento llega con una ficha (referencia, resumen, palabras clave, licencia). El diario dedica
 a cada documento nuevo un artículo en su sección «Biblioteca», para profesorado y personas
-interesadas que **no están** en el grupo. Se publica sin que nadie lo revise antes: el repaso es
-la única revisión.
+interesadas que **no están** en el grupo. El repaso es la única comprobación de cada dato contra su fuente:
+escribe como si nadie más fuera a revisarlo.
 
 ## Qué es el artículo (y qué no)
 

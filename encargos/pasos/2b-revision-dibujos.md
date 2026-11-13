@@ -6,7 +6,7 @@ Mira con Read las dos capturas de cada dibujo y lee su pieza (en ediciones/{FECH
 
 - Se ve bien en los dos temas: nada tapado, ninguna zona que se convierta en una mancha, los rótulos se leen.
 - Rótulos que tocan o cruzan trazos de forma que cuesta leerlos; flechas o líneas que no llegan a donde apuntan; partes cortadas por el borde.
-- Explica lo que dice la pieza y no le contradice; no es solo decorativo; nada de robots ni cerebros.
+- Explica lo que dice la pieza y no le contradice: las cifras y los recuentos de los rótulos («Siete criterios») son los del texto; no es solo decorativo; nada de robots ni cerebros.
 - Lo que representa un objeto real (una pantalla, un teclado, un documento) se reconoce y mantiene sus proporciones.
 
 Solo pides rehacer por errores de bulto, no por gusto: un dibujo correcto pero mejorable está bien. Los `problemas` del programa ya obligan a rehacer; no hace falta repetirlos, pero sí explicar qué hay que cambiar en el SVG para resolverlos si lo ves.

@@ -40,12 +40,16 @@
       "entradilla": "Taldeko kide batek 2Dko eta 3Dko simulazioen web hau nabarmendu zuen, pertsona bakar batek lor dezakeenaren adibide gisa.",
       "cuerpo": [
         "[MechSimulator](https://mechsimulator.com/) hezkuntza teknikorako simulatzaile interaktiboen plataforma doakoa da, instalaziorik gabea. Laborategi birtualeko probak, neurketa-tresnak, mekanika, mekanismoak, materialen erresistentzia, termika eta fluidoak, elektrizitatea, tailerra, kalkulagailuak, oinarrizko zientziak eta matematika biltzen ditu, 150 simulatzaile baino gehiagorekin.",
-        "Taldean irakasle bakar baten lan gisa aurkeztu zen. Webak ez du egilea izendatzen, ez eta AA erabili den adierazten ere, eta edukia ingelesez dago; beraz, bi datuak baieztatu gabe geratzen dira. Teknologiako eta lanbide heziketako irakasleentzat jarduera-banku gisa balio dezake, eta AArekin programatzen duenarentzat, lor daitekeen irismenaren erreferentzia gisa."
+        "Taldean irakasle bakar baten lan gisa aurkeztu zen, eta webak berresten du: bere [«About» orriaren](https://mechsimulator.com/about/) arabera, Naseel Ibnu Azeezek sortu eta berrikusten du, ingeniaritza mekanikoko irakasleak, eta erakusten dituen iragarkiekin mantentzen da doakoa. Ez du adierazten AA erabili den, eta edukia ingelesez dago. Teknologiako eta lanbide heziketako irakasleentzat jarduera-banku gisa balio dezake, eta AArekin programatzen duenarentzat, lor daitekeen irismenaren erreferentzia gisa."
       ],
       "fuentes": [
         {
           "titulo": "MechSimulator (ingelesez)",
           "url": "https://mechsimulator.com/"
+        },
+        {
+          "titulo": "MechSimulator: About (ingelesez)",
+          "url": "https://mechsimulator.com/about/"
         }
       ],
       "mensaje": {
@@ -54,7 +58,9 @@
       },
       "comprobado": "Revisor: abierta la web: gratuita, en el navegador y sin instalación, 11 áreas, solo inglés, sin autor ni mención de IA. La cifra de simuladores no es coherente (el texto dice 169, la descripción de la página 159 y los recuentos por categoría no cuadran), por eso se dice «más de 150». Que lo haya hecho un solo profesor es lo dicho en el grupo; no figura en la web. Mensaje 14667 de vceduca corresponde al tema.",
       "ilustracion": null,
-      "ilustracion_alt": "Nabigatzaile-leiho bat engranaje, erregela eta giltza batekin, eta flexio-kurba bat azpian, «Nabigatzailean» errotuluarekin; gezi batek puntuz osatutako koadrikula batera darama, puntu bat urdinez nabarmenduta, «150 baino gehiago» errotuluarekin."
+      "ilustracion_alt": "Nabigatzaile-leiho bat engranaje, erregela eta giltza batekin, eta flexio-kurba bat azpian, «Nabigatzailean» errotuluarekin; gezi batek puntuz osatutako koadrikula batera darama, puntu bat urdinez nabarmenduta, «150 baino gehiago» errotuluarekin.",
+      "correccion": "2026ko azaroaren 13an zuzendua: aurreko bertsio batek esaten zuen webak ez duela egilea izendatzen; «About» orrian izendatzen du. Iragarkiekin finantzatzen dela gehitu da.",
+      "corregido": "2026-11-13"
     },
     {
       "id": "gemini-omni-1-2-flash",

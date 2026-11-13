@@ -12,7 +12,7 @@
       "titular": "Un docente recomenda crear infografías en HTML e SVG antes que como imaxes xeradas",
       "entradilla": "Un membro de Vibe Coding Educativo defende que, para ilustrar conceptos, convén que a IA xere formas SVG e iconas nunha páxina HTML e que as imaxes xeradas queden para cando sexan pedagoxicamente necesarias.",
       "cuerpo": [
-        "A proposta xurdiu ao comentar o uso de ilustracións vectoriais en lugar de imaxes xeradas por IA. Quen a formula recomenda pedirlle á IA que constrúa a infografía como páxina HTML con formas SVG e unha familia de iconas, revisala a fondo e, se fai falta, exportala despois a PNG.",
+        "A proposta xurdiu ao comentar as ilustracións deste diario, que se debuxan en SVG en lugar de xerarse como imaxes. Quen a formula recomenda pedirlle á IA que constrúa a infografía como páxina HTML con formas SVG e unha familia de iconas, revisala a fondo e, se fai falta, exportala despois a PNG.",
         "Entre as vantaxes que se enumeraron figuran a nitidez, o control por parte de quen a crea, a coherencia entre recursos (que permite fixar un «libro de estilo» común), a accesibilidade, porque un lector de pantalla pode ler o texto dunha infografía en HTML pero non o dunha imaxe sen descrición, e a adaptación automática aos modos claro e escuro. Ademais, o formato HTML admite compoñentes pregables que mostran a información por partes, o que, segundo esta opinión, axuda a evitar a sobrecarga cognitiva e engade certa interactividade.",
         "Tamén se aconsellou fuxir das infografías moi recargadas de elementos decorativos, xerar imaxes só cando o requira o obxectivo didáctico e citar sempre a familia de iconas escollida. [Lucide](https://lucide.dev/), citada no grupo, é un conxunto de iconas SVG de código aberto publicado con licenza ISC.",
         "Para o profesorado, a idea práctica é saber cando convén unha infografía editable e accesible, e cando unha imaxe xerada."
@@ -37,7 +37,7 @@
       "importancia": 2,
       "grupo": "chatgpt",
       "antetitulo": "Educación superior",
-      "titular": "O MIT publica un informe que pide replantear ensino e avaliación ante a IA",
+      "titular": "Un informe do MIT, de agosto, pide replantear ensino e avaliación ante a IA",
       "entradilla": "O comité creado polo MIT para estudar o uso da IA en docencia, aprendizaxe e formación en investigación recomenda procesos educativos adaptados á IA e revisar avaliacións e normas.",
       "cuerpo": [
         "En ChatGPT-IA-edu compartiuse o informe do Comité Ad Hoc do MIT sobre o uso da IA no ensino, a aprendizaxe e a formación en investigación. Segundo a [páxina institucional do MIT](https://orgchart.mit.edu/node/1587), o comité recibiu o seu encargo en xaneiro de 2026 e o seu informe final difundiuse o 25 de agosto de 2026.",
@@ -89,7 +89,7 @@
       "titular": "Dar acceso total a un axente de consola esixe protexer os datos do alumnado",
       "entradilla": "Un docente con experiencia explicou que pode facer un axente de IA con control completo dun equipo e que información convén manter fóra do seu alcance.",
       "cuerpo": [
-        "Á pregunta de que ter en conta antes de darlle a un axente de consola o control dun ordenador, respondeuse que con acceso total pode mover e borrar arquivos, cambiar a configuración e instalar ou desinstalar programas. Esa capacidade é a que dá tanto xogo: nun caso relatado, o axente montou desde cero e sen axuda un proxecto completo nun NAS, incluída a obtención dunha clave en GitHub para subilo.",
+        "Á pregunta de que ter en conta antes de darlle a un axente de consola o control dun ordenador, respondeuse que con acceso total pode mover e borrar arquivos, cambiar a configuración e instalar ou desinstalar programas. Esa capacidade é a que dá tanto xogo: no caso relatado, o axente montou desde cero nun NAS o sistema que produce este diario, incluída a obtención dunha clave en GitHub para publicalo.",
         "A cautela principal afecta aos datos. Os do alumnado están especialmente protexidos e non deben chegar aos servidores da IA sen saber ben que se fai e sen os permisos necesarios. As contas bancarias e a información persoal moi sensible convén mantelas separadas. Segundo a persoa que o explicou, o propio axente pode orientar sobre como protexer eses datos fronte a si mesmo.",
         "Tamén se sinalou que o axente pode limitarse a un cartafol concreto en lugar de a todo o dispositivo, e anunciouse que haberá un texto actualizado sobre as tres formas de usar a IA: web, aplicación de escritorio e consola."
       ],

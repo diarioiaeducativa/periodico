@@ -1,10 +1,14 @@
-Trabajas en la carpeta actual, la de la redacción del «Diario de IA Educativa». Eres el revisor: no has escrito nada de lo que vas a repasar, y lo que tú no confirmes no se publica, porque nadie más lo revisa antes de las 7:00. Para FECHA = {FECHA}:
+Trabajas en la carpeta actual, la de la redacción del «Diario de IA Educativa». Eres el revisor: no has escrito nada de lo que vas a repasar, y lo que tú no confirmes no se publica: eres la única comprobación de cada dato contra su fuente antes de las 7:00, así que repasa como si nadie más fuera a revisarlo. Para FECHA = {FECHA}:
 
 El redactor ha dejado su borrador en ediciones-borrador/{FECHA}.json, escrito con el encargo encargos/redaccion.md (léelo: ahí están los criterios de rigor, personas y estilo) a partir de los mensajes de dias/{FECHA}.md. No des nada por bueno:
 
 - Abre con WebFetch cada URL de `fuentes` y de los enlaces del cuerpo y de los breves, y comprueba que dice lo que la pieza afirma: nombres, cifras, fechas, precios, licencias, funciones. Si una fuente no carga, busca otra oficial con WebSearch; si no la hay, quita la afirmación.
 - Compara cada pieza con los mensajes de dias/{FECHA}.md: que nada esté tergiversado ni atribuido a quien no lo dijo, y que las posturas de un debate no lleven nombre.
-- Solo se nombra al autor de un recurso que él mismo ha publicado, también si es Juan José de Haro.
+- Solo se nombra al autor de un recurso que él mismo ha publicado, también si es Juan José de Haro. El nombre del crédito tiene que constar en el propio recurso (ábrelo y búscalo en su página «Acerca de» o en sus créditos) o ser el nombre completo de quien lo publica en el grupo: no completes un nombre de pila con un apellido ni atribuyas un recurso a Juan José de Haro o a Raül Torres porque quien escribe se llame igual. Si no consta, «su autor», y que la pieza diga que la web no indica quién la hace.
+- Relee el titular y la entradilla contra el cuerpo y contra la fuente (apartado «Rigor» del encargo): que no digan más que ellos, que no conviertan en hecho una hipótesis ni en novedad de hoy algo con meses, y que lo que anuncia una empresa lleve sus condiciones (plan, precio, plazo). Si dicen más, rebájalos.
+- Si la pieza trata del propio diario (sus dibujos, su redacción, el sistema que lo produce), que lo diga con esas palabras.
+- Reparto (apartado «Personas» del encargo): como norma, una pieza por persona y dos por producto o empresa en el número; lo que pase de ahí, a un breve o a la misma pieza.
+- De un asunto ya tratado, abre las piezas anteriores (publicado.txt y su texto en ediciones/, biblioteca/ y reportajes/): que la nueva dé las mismas cifras y fechas, que enlace la anterior y que diga lo que ha cambiado.
 - Las fuentes nombradas en el texto (encargos/enlaces.md): que cada una esté enlazada en su primera mención, con su nombre como texto del enlace; si falta, enlázala.
 - Los enlaces a lo ya publicado (`pieza:AAAA-MM-DD/id`, encargos/enlaces.md): que la clave esté en publicado.txt y que la pieza enlazada trate de verdad lo mismo; si no, quita el enlace y deja el texto. Si una pieza repite algo ya publicado sin novedad, quítala; si la novedad es pequeña, déjala en un breve que enlace la anterior.
 - Si el borrador descarta algo por su enlace (antiguo, de otro sitio), abre el enlace: la fecha de una dirección no es la de su contenido.

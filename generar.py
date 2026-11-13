@@ -34,7 +34,7 @@ SECCIONES_FUERA = ["hace-un-ano"]   # con su página, pero sin entrada en el men
 # cómo trabajan los agentes; las secciones del diario; quién lo lee y quién lo hace. El último empieza por las
 # comunidades, con su diagrama arriba de la primera columna: en medio, al no poder partirse, dejaba un hueco
 # al pie de la última. Mismo orden en los cinco idiomas.
-BLOQUES_REDACCION = ((0, 1, 2), (3, 4, 5, 6, 7), (11, 12, 8, 9, 10, 13))
+BLOQUES_REDACCION = ((0, 1, 2, 14), (3, 4, 5, 6, 7), (11, 12, 8, 9, 10, 13))
 TODAS_SECCIONES = ORDEN_SECCIONES + SECCIONES_FUERA
 TEMA_BIBLIOTECA = "https://t.me/ChatGPTedu/21753"
 REPOSITORIO = "https://vibe-coding-educativo.github.io/app_edu/"   # el Repositorio de recursos de VCE (ADR 0008)
@@ -89,7 +89,7 @@ IDIOMAS = {
         "sin_conexion": "Sin conexión",
         "sin_conexion_txt": "Esta página no está guardada en este dispositivo. Sin conexión se pueden leer las páginas que ya se han abierto y el último número que se cargó en la portada.",
         "no_existe_txt": "Puede que el enlace esté mal escrito o que la pieza se haya retirado. La portada de hoy y la hemeroteca siguen ahí.",
-        "redactado": "Redactado con IA a partir de las conversaciones de los grupos. Cada dato se comprueba en su fuente original, enlazada al final de cada pieza; las opiniones de los miembros no se atribuyen a nadie.",
+        "redactado": "Redactado con IA a partir de las conversaciones de los grupos y revisado por una persona antes de salir. Cada dato se comprueba en su fuente original, enlazada al final de cada pieza; las opiniones de los miembros no se atribuyen a nadie.",
         "licencia": "Textos e ilustraciones con licencia", "deed": "deed.es", "reserva_aviso": "Hoy no han podido salir las noticias de los grupos de ayer por un fallo de la redacción del diario. Salen mañana, junto con las de hoy; mientras tanto, un recurso del fondo del repositorio.", "vcer": "Evaluación VCER: Recomendable (100 %), noviembre de 2026", "codigo_enlace": "el repositorio de la redacción",
         "letra": "Letra", "iconos": "Iconos", "traduccion": "",
         "idioma": "Idioma", "secciones_nav": "Secciones", "rss": "RSS",
@@ -173,12 +173,13 @@ IDIOMAS = {
                 ("La semana", "Cada semana tiene su {pagina_semana}, con todas las piezas por secciones y los números que la forman, y cada mes tiene la suya; la {hemeroteca} se recorre por meses y semanas. Los lunes por la mañana se añaden a la semana un pódcast y un vídeo de cada grupo, que prepara NotebookLM, de Google, con la conversación completa de la semana, también lo que el diario no ha contado. Un agente de IA que no los ha hecho los contrasta con la conversación, y el que tiene errores de bulto se vuelve a generar. Se avisa en cada grupo y el vídeo sale también en X, Bluesky y LinkedIn. Debajo va lo más importante de la semana: un comentario general y uno de cada grupo, que escribe un agente de IA la noche del domingo con lo que contó el diario y que otro contrasta con cada pieza."),
                 ("La Biblioteca digital", "Cada documento que entra en la {biblioteca} de ChatGPT-IA-edu (guías, informes, estudios) tiene su artículo en la sección {seccion_bib}; si el diario ya lo había contado como noticia, esa pieza pasa a la sección en lugar de escribir otra. El documentalista lee el documento entero y explica quién lo publica, qué propone y cómo encaja con otros documentos de la biblioteca; el revisor lo contrasta con el propio documento. El diario enlaza el documento en su fuente oficial y en la biblioteca, sin copiarlo. Se nombra a sus autores; la persona que lo ha compartido no se nombra, igual que no se atribuyen las opiniones de los grupos."),
                 ("El Repositorio de recursos", "El {repositorio} de Vibe Coding Educativo reúne las aplicaciones y recursos que crean y comparten con licencia abierta los docentes de esa comunidad. Cada día, el documentalista escribe sobre hasta dos de los que han entrado y el diario aún no ha contado, y el número del sábado repasa los de la semana; si no hay ninguno nuevo y el número se queda corto, rescata uno anterior. Un programa abre cada recurso y guarda una captura de lo que se ve; el documentalista lo describe a partir de la captura y de su página, y el revisor lo vuelve a abrir. Salen en la sección {seccion_vc}, con el nombre de quien lo ha hecho y su licencia."),
-                ("Las personas", "La idea del diario es de {raul}, administrador de {edumedia}. La redacción la diseñó y la supervisa {juanjo}."),
+                ("Las personas", "La idea del diario es de {raul}, administrador de {edumedia}. La redacción la diseñó y la mantiene {juanjo}, que revisa cada número antes de que salga y responde de lo publicado. Los dos participan en los grupos que el diario cuenta: cuando publican un recurso se les nombra como a cualquiera, y cuando una pieza trata del propio diario, lo dice. El diario no tiene publicidad ni patrocinio."),
                 ("El código", "Los programas que preparan y montan el diario y el encargo de cada agente son públicos, en {codigo}, con licencia AGPL v3, y cada decisión está explicada en sus registros de decisiones (ADR). Los mensajes de los grupos no están en él."),
                 ("Las visitas", "El diario cuenta cuántas visitas recibe y cuántas veces se abre cada página, para saber si llega a quien lo lee. No usa cookies ni guarda nada de quien lo lee: su navegador recuerda qué páginas ya ha contado, para no contarlas dos veces en la misma visita, y al servidor de los autores solo le llega la suma. Lo que el navegador recuerda para el contador se borra a los 13 meses, la duración que pone de ejemplo la {aepd} en su guía sobre medición de audiencia, y las visitas nuevas no lo alargan; el tema, el idioma y la lectura en columnas o en una columna que se eligen se recuerdan sin caducar. Las cifras se guardan por horas durante 25 meses como máximo, el plazo de esa misma guía; después queda solo el total de cada año. Solo las ven las dos personas que hacen el diario. Para poder leerlo sin conexión, el navegador guarda en el propio dispositivo una copia de las páginas abiertas y del último número; esa copia no sale de él. La app de Android es esta misma web y no recoge nada más. Los comentarios se publican con giscus en las Discussions de GitHub: para comentar hace falta una cuenta de GitHub, y GitHub guarda el comentario y el nombre de usuario con su propia política de privacidad. Quien no comenta no envía nada."),
                 ("Las comunidades", "{chatgpt}, sobre inteligencia artificial en educación; {vce}, de docentes que programan sus propias aplicaciones con IA, y {edumedia}, sobre IA generativa para crear audio, vídeo e imagen. Las tres son abiertas: cada pieza enlaza a la conversación donde nació, que se puede leer sin entrar."),
                 ("Si participas en los grupos", "Las opiniones no se atribuyen a nadie: solo se nombra a la persona que ha publicado un recurso propio. Si aparece algo tuyo y prefieres que no salga, o ves un error, díselo a las personas que administran tu grupo y se retirará o se corregirá."),
                 ("Contacto", "El correo y las demás vías para avisar de un error, pedir que se retire algo o hacer cualquier consulta están en la {pagina_contacto}."),
+                ("Las correcciones", "Cuando se corrige un dato publicado, la pieza lo dice al final, con la fecha y lo que cambió; una errata que no cambia el sentido se corrige sin nota. Los avisos de error llegan por la {contacto_enlace}."),
             ],
         },
     },
@@ -218,7 +219,7 @@ IDIOMAS = {
         "sin_conexion": "Sense connexió",
         "sin_conexion_txt": "Aquesta pàgina no està desada en aquest dispositiu. Sense connexió es poden llegir les pàgines que ja s'han obert i l'últim número que es va carregar a la portada.",
         "no_existe_txt": "Pot ser que l'enllaç estigui mal escrit o que la peça s'hagi retirat. La portada d'avui i l'hemeroteca continuen aquí.",
-        "redactado": "Redactat amb IA a partir de les converses dels grups. Cada dada es comprova a la seva font original, enllaçada al final de cada peça; les opinions dels membres no s'atribueixen a ningú.",
+        "redactado": "Redactat amb IA a partir de les converses dels grups i revisat per una persona abans de sortir. Cada dada es comprova a la seva font original, enllaçada al final de cada peça; les opinions dels membres no s'atribueixen a ningú.",
         "licencia": "Textos i il·lustracions amb llicència", "deed": "deed.ca", "reserva_aviso": "Avui no han pogut sortir les notícies dels grups d'ahir per una fallada de la redacció del diari. Surten demà, juntament amb les d'avui; mentrestant, un recurs del fons del repositori.", "vcer": "Avaluació VCER: Recomanable (100 %), novembre de 2026", "codigo_enlace": "repositori de la redacció",
         "letra": "Lletra", "iconos": "Icones",
         "traduccion": "Traducció automàtica amb IA de l'edició en castellà (Diario de IA Educativa), sense revisió professional.",
@@ -303,12 +304,13 @@ IDIOMAS = {
                 ("La setmana", "Cada setmana té la seva {pagina_semana}, amb totes les peces per seccions i els números que la formen, i cada mes té la seva; l'{hemeroteca} es recorre per mesos i setmanes. Els dilluns al matí s'afegeixen a la setmana un pòdcast i un vídeo de cada grup, que prepara NotebookLM, de Google, amb tota la conversa de la setmana, també el que el diari no ha explicat. Un agent d'IA que no els ha fet els contrasta amb la conversa, i el que té errors greus es torna a generar. S'avisa a cada grup i el vídeo surt també a X, Bluesky i LinkedIn. Són en castellà. A sota hi ha el més important de la setmana: un comentari general i un de cada grup, que escriu un agent d'IA la nit del diumenge amb el que va explicar el diari i que un altre contrasta amb cada peça."),
                 ("La Biblioteca digital", "Cada document que entra a la {biblioteca} de ChatGPT-IA-edu (guies, informes, estudis) té el seu article a la secció {seccion_bib}; si el diari ja l'havia explicat com a notícia, aquella peça passa a la secció en lloc d'escriure'n una altra. El documentalista llegeix el document sencer i explica qui el publica, què proposa i com encaixa amb altres documents de la biblioteca; el revisor el contrasta amb el mateix document. El diari enllaça el document a la font oficial i a la biblioteca, sense copiar-lo. S'anomenen els autors; la persona que l'ha compartit no s'anomena, igual que no s'atribueixen les opinions dels grups."),
                 ("El Repositori de recursos", "El {repositorio} de Vibe Coding Educativo reuneix les aplicacions i els recursos que creen i comparteixen amb llicència oberta els docents d'aquesta comunitat. Cada dia, el documentalista escriu sobre fins a dos dels que hi han entrat i que el diari encara no ha explicat, i el número del dissabte repassa els de la setmana; si no n'hi ha cap de nou i el número es queda curt, en rescata un d'anterior. Un programa obre cada recurs i en guarda una captura del que es veu; el documentalista el descriu a partir de la captura i de la seva pàgina, i el revisor el torna a obrir. Surten a la secció {seccion_vc}, amb el nom de qui l'ha fet i la seva llicència."),
-                ("Les persones", "La idea del diari és de {raul}, administrador d'{edumedia}. La redacció la va dissenyar i la supervisa {juanjo}."),
+                ("Les persones", "La idea del diari és de {raul}, administrador d'{edumedia}. La redacció la va dissenyar i la manté {juanjo}, que revisa cada número abans que surti i respon del que s'hi publica. Tots dos participen en els grups que el diari explica: quan publiquen un recurs se'ls anomena com a qualsevol altra persona, i quan una peça tracta del mateix diari, ho diu. El diari no té publicitat ni patrocini."),
                 ("El codi", "Els programes que preparen i munten el diari i l'encàrrec de cada agent són públics, al {codigo}, amb llicència AGPL v3, i cada decisió s'explica als seus registres de decisions (ADR). Els missatges dels grups no hi són."),
                 ("Les visites", "El diari compta quantes visites rep i quantes vegades s'obre cada pàgina, per saber si arriba a qui el llegeix. No fa servir galetes ni desa res de qui el llegeix: el seu navegador recorda quines pàgines ja ha comptat, per no comptar-les dues vegades en la mateixa visita, i al servidor dels autors només hi arriba la suma. El que el navegador recorda per al comptador s'esborra al cap de 13 mesos, la durada que posa d'exemple l'{aepd} a la seva guia sobre mesurament d'audiència, i les visites noves no l'allarguen; el tema, l'idioma i la lectura en columnes o en una columna triats es recorden sense caducar. Les xifres es desen per hores durant 25 mesos com a màxim, el termini d'aquesta mateixa guia; després només en queda el total de cada any. Només les veuen les dues persones que fan el diari. Per poder-lo llegir sense connexió, el navegador desa al mateix dispositiu una còpia de les pàgines obertes i de l'últim número; aquesta còpia no en surt. L'app d'Android és aquest mateix web i no recull res més. Els comentaris es publiquen amb giscus a les Discussions de GitHub: per comentar cal un compte de GitHub, i GitHub desa el comentari i el nom d'usuari amb la seva pròpia política de privadesa. Qui no comenta no envia res."),
                 ("Les comunitats", "{chatgpt}, sobre intel·ligència artificial en educació; {vce}, de docents que programen les seves pròpies aplicacions amb IA, i {edumedia}, sobre IA generativa per crear àudio, vídeo i imatge. Totes tres són obertes: cada peça enllaça amb la conversa on va néixer, que es pot llegir sense entrar-hi."),
                 ("Si participes als grups", "Les opinions no s'atribueixen a ningú: només s'anomena la persona que ha publicat un recurs propi. Si hi apareix alguna cosa teva i prefereixes que no surti, o hi veus un error, digues-ho a les persones que administren el teu grup i es retirarà o es corregirà."),
                 ("Contacte", "El correu i les altres vies per avisar d'un error, demanar que es retiri alguna cosa o fer qualsevol consulta són a la {pagina_contacto}."),
+                ("Les correccions", "Quan es corregeix una dada publicada, la peça ho diu al final, amb la data i el que ha canviat; una errada que no canvia el sentit es corregeix sense nota. Els avisos d'error arriben per la {contacto_enlace}."),
             ],
         },
     },
@@ -636,16 +638,18 @@ if(v&&ahora-v.t<18e5)s.setItem('diario.visita',JSON.stringify(v));}
 if(!c&&s.getItem('diario.visita')!==null)s.setItem('diario.desde',ahora);
 var t=s.getItem('sala.tema');if(t)document.documentElement.dataset.theme=t;
 if(/^android-app:\\/\\/io\\.github\\.diarioiaeducativa/.test(document.referrer))sessionStorage.setItem('diario.app','1');})();}catch(_){}</script>""" % (395 * 86400000)
-def datos_noticia(titular, ruta, fecha, imagen=None):
+def datos_noticia(titular, ruta, fecha, imagen=None, corregido=None):
     """Los datos estructurados de una pieza, para los buscadores (schema.org, ADR 0039): qué es, cuándo
-    salió y quién la firma. La firma es la redacción, con su página, donde se cuenta cómo se hace; sin
-    fecha de modificación, que no se lleva."""
+    salió y quién la firma. La firma es la redacción, con su página, donde se cuenta cómo se hace. La
+    fecha de modificación solo va en las piezas con nota de corrección (`corregido`, el día en que se corrigió)."""
     redaccion = {"@type": "Organization", "name": L["titulo"], "url": BASE + L["carpeta"] + "redaccion.html"}
     d = {"@context": "https://schema.org", "@type": "NewsArticle", "headline": titular,
          "datePublished": hora_de_salida(publicacion(fecha)).isoformat(), "inLanguage": L["codigo"],
          "mainEntityOfPage": BASE + L["carpeta"] + ruta, "author": redaccion, "publisher": redaccion}
     if imagen:
         d["image"] = [imagen]
+    if corregido:
+        d["dateModified"] = corregido
     return d
 
 
@@ -1268,7 +1272,9 @@ def sin_viuda(t):
     """Las dos últimas palabras del titular de un artículo, unidas por un espacio que no se parte: así la última
     no se queda sola en su línea en los navegadores sin `text-wrap: pretty` (Firefox) (ADR 0045)."""
     a, sep, b = t.rpartition(" ")
-    return f"{a}\u00a0{b}" if sep and len(b) < 12 else t
+    # Solo si las dos juntas caben en una línea del móvil: unidas, dos palabras largas («organizaciones
+    # verificadas») no caben y el navegador parte la última por una letra
+    return f"{a}\u00a0{b}" if sep and len(b) < 12 and len(a.rpartition(" ")[2]) + 1 + len(b) <= 18 else t
 
 
 def reparto(n):
@@ -1621,7 +1627,7 @@ def articulo(prof, ruta, d, p, eds):
     <p class="entradilla">{e(p.get("entradilla"))}</p>
     {serie}""", "" if len(p.get("recursos") or []) > 1 else ilustracion(d["fecha"], p, prof, ampliable=True))
     return cabeza(f'{p["titular"]} | {L["titulo"]}', prof, p.get("entradilla", ""), ruta,
-                  datos=datos_noticia(p["titular"], ruta, d["fecha"], imagen_pieza(d["fecha"], p)[0])) + f"""<body class="pag-articulo">
+                  datos=datos_noticia(p["titular"], ruta, d["fecha"], imagen_pieza(d["fecha"], p)[0], p.get("corregido"))) + f"""<body class="pag-articulo">
 {cabecera(prof, ruta, d["fecha"], d["numero"], False, h1=False, dia=d)}
 <main class="articulo en-columnas">
   <article{f' class="sec-{e(p["seccion"])}"' if p.get("seccion") else ""}{indexado(p.get("seccion") or "editorial", L["secciones"].get(p.get("seccion"), L["quees"]), d["fecha"])}>
@@ -1779,7 +1785,7 @@ def articulo_reportaje(prof, ruta, d, r, eds):
     <p class="entradilla">{e(r.get("entradilla"))}</p>
     <p class="lectura fecha-pieza">{minutos_lectura(r)} {L["palabras"]}</p>""", ilustracion(d["fecha"], r, prof, ampliable=True))
     return cabeza(f'{r["titular"]} | {L["titulo"]}', prof, r.get("entradilla", ""), ruta,
-                  datos=datos_noticia(r["titular"], ruta, d["fecha"], imagen_pieza(d["fecha"], r)[0])) + f"""<body class="pag-articulo">
+                  datos=datos_noticia(r["titular"], ruta, d["fecha"], imagen_pieza(d["fecha"], r)[0], r.get("corregido"))) + f"""<body class="pag-articulo">
 {cabecera(prof, ruta, d["fecha"], d["numero"], False, h1=False, dia=d)}
 <main class="articulo reportaje en-columnas">
   <article class="sec-reportaje"{indexado("reportaje", L["reportajes"], d["fecha"])}>
@@ -1787,6 +1793,7 @@ def articulo_reportaje(prof, ruta, d, r, eds):
     <p class="seccion"><span><a href="{prof}reportajes.html">{icono("reportaje")} {L["reportaje"]}</a></span> <span class="seccion-dcha">{boton_columnas()} <span class="fecha-pieza">{fecha_corta(publicacion(r["fecha"]))}</span></span></p>
     {cab}
     <div class="cuerpo">{"".join(apartados)}{cola_papel(ruta, origen(dict(r, grupo=(r.get("mensaje") or {}).get("grupo"))), comprobado)}</div>
+    {f'<p class="correccion">{md(r["correccion"])}</p>' if r.get("correccion") else ""}
     {origen(dict(r, grupo=(r.get("mensaje") or {}).get("grupo")))}
     {compartir}
     {comprobado}
@@ -2138,6 +2145,8 @@ def pagina_redaccion(eds):
                   codigo=enlace(CODIGO, L["codigo_enlace"]),
                   # El contacto tiene página propia (ADR 0051); aquí queda un apartado breve que lleva a ella
                   pagina_contacto=f'<a href="contacto.html">{L["contacto"]["enlace"]}</a>',
+                  # El mismo enlace para el apartado de las correcciones, sin repetir el ancla «contacto»
+                  contacto_enlace=f'<a href="contacto.html">{L["contacto"]["enlace"]}</a>',
                   pagina_semana=f'<a href="semana/">{R["pagina_semana"]}</a>',
                   hemeroteca=f'<a href="archivo.html">{L["hemeroteca"]}</a>',
                   hace_un_ano=f'<a href="hace-un-ano.html">{L["secciones"]["hace-un-ano"]}</a>')

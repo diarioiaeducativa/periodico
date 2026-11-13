@@ -1,17 +1,42 @@
-{"fecha": "2026-11-08", "hay_pieza": true,
- "piezas": [{"id": "artefactos-claude-almacenamiento",
-             "seccion": "hace-un-ano", "importancia": 3,
-             "grupo": "vce", "fecha_original": "2025-11-09",
-             "ilustracion_alt": "Díptic. A l'esquerra, «Nov. 2025»: una aplicació amb barres de vots, una base de dades amb un cadenat i el rètol «Només publicat». A la dreta, «Avui»: la mateixa aplicació, amb la base de dades marcada amb un senyal de visat i el rètol «Sense publicar».",
-             "antetitulo": "Aplicacions amb memòria",
-             "titular": "Un núvol de vots amb «backend» en un sol prompt: avui els artefactes nous de Claude desen dades sense publicar-se",
-             "entradilla": "El novembre de 2025, un núvol de paraules fet amb Claude desava els vots de tothom amb un sol prompt. Avui els artefactes nous desen dades sense necessitat de publicar-los.",
-             "cuerpo": [
-               "El 9 de novembre de 2025, a Vibe Coding Educativo, es provava una aplicació creada amb Claude: un núvol amb els països des dels quals se seguia el grup, que havia de mostrar en temps real els vots de tothom. Se celebrava haver obtingut un «backend» amb un prompt, i van arribar de seguida les preguntes: on es guardaven les dades i com impedir votar diverses vegades. Preguntat, el mateix Claude va parlar d'un magatzem intern, window.storage, amb 5 MB per clau.",
-               "Avui l'[ajuda oficial d'Anthropic sobre els artefactes](https://support.claude.com/en/articles/17153992-what-are-artifacts) documenta aquest emmagatzematge. Qui construeix l'aplicació decideix quines dades són personals, privades de cada usuari, i quines compartides, visibles per a tothom; la primera vegada que algú fa servir el compartit, Claude l'avisa. El límit és de 20 MB per artefacte, només text, als plans de pagament. El que ha canviat és la publicació: en els artefactes creats abans del 16 de setembre de 2026 l'emmagatzematge només funciona després de publicar-los, i despublicar-los esborra les dades; els nous desen sense publicar.",
-               "A més, aquestes aplicacions poden cridar Claude: cada usuari entra amb el seu compte i el consum va a càrrec del seu pla, no del de qui les va crear."
-             ],
-             "fuentes": [{"titulo": "What are artifacts? (Ajuda de Claude) (en anglès)", "url": "https://support.claude.com/en/articles/17153992-what-are-artifacts"}],
-             "mensaje": {"grupo": "vce", "id": 6453},
-             "comprobado": "Mensajes #6453 (embed de t.me/vceduca/6453: app de nube de países con Claude, votos en tiempo real, 9/11/2025) y #6456 (t.me/vceduca/6456: window.storage y 5Mb, dicho por Claude según el grupo; #6455 pregunta dónde se guardan y que permite votar más de una vez). Ayuda oficial de Claude (support.claude.com/en/articles/17153992), consultada el 2026-11-09: almacenamiento personal/compartido y aviso al usar el compartido, 20 MB por artefacto y solo texto, planes Pro, Max, Ultra, Team y Enterprise; artefactos heredados (anteriores al 16 de septiembre de 2026) guardan solo tras publicar y despublicar borra los datos, los nuevos no necesitan publicar; el consumo de Claude va al plan de cada usuario. El almacenamiento personal/compartido ya existía desde octubre de 2025 según fuentes secundarias, por eso no se presenta como novedad. Lo de 5 MB por clave es lo dicho en el grupo, no un dato oficial. Sin pieza relacionada en publicado.txt. No repite NotebookLM ni Veo (2026-11-06 y 11-07).",
-             "repaso": ["Titular y entradilla: se quita que los artefactos «separan hoy» datos personales y compartidos, porque esa distinción ya existía desde octubre de 2025; el cambio verificado es que los artefactos nuevos (desde el 16 de septiembre de 2026) guardan sin publicar.", "Se quita «sin distinguir de quién» y «sin límite» del titular y la entradilla: el mensaje solo dice que permitía votar más de una vez.", "Segundo párrafo: se aclara qué es documentación y qué es cambio; se añade que despublicar borra los datos.", "Se retira la frase final «Lo que entonces se averiguaba probando hoy está documentado»; el tercer párrafo se acorta.", "Mensajes, enlace y cifras de la ayuda confirmados; sin nombres de personas."]}]}
+{
+ "fecha": "2026-11-08",
+ "hay_pieza": true,
+ "piezas": [
+  {
+   "id": "artefactos-claude-almacenamiento",
+   "seccion": "hace-un-ano",
+   "importancia": 3,
+   "grupo": "vce",
+   "fecha_original": "2025-11-09",
+   "ilustracion_alt": "Díptic. A l'esquerra, «Nov. 2025»: una aplicació amb barres de vots, una base de dades amb un cadenat i el rètol «Només publicat». A la dreta, «Avui»: la mateixa aplicació, amb la base de dades marcada amb un senyal de visat i el rètol «Sense publicar».",
+   "antetitulo": "Aplicacions amb memòria",
+   "titular": "Un núvol de vots amb «backend» en un sol prompt: avui els artefactes nous de Claude desen dades sense publicar-se",
+   "entradilla": "El novembre de 2025, un núvol de paraules fet amb Claude desava els vots de tothom amb un sol prompt. Avui els artefactes nous desen dades sense necessitat de publicar-los.",
+   "cuerpo": [
+    "El 9 de novembre de 2025, a Vibe Coding Educativo, es provava una aplicació creada amb Claude: un núvol amb els països des dels quals se seguia el grup, que havia de mostrar en temps real els vots de tothom. Se celebrava haver obtingut un «backend» amb un prompt, i van arribar de seguida les preguntes: on es guardaven les dades i com impedir votar diverses vegades. Preguntat, el mateix Claude va parlar d'un magatzem intern, window.storage, amb 5 MB per clau.",
+    "Avui l'[ajuda oficial d'Anthropic sobre els artefactes](https://support.claude.com/en/articles/17153992-what-are-artifacts) documenta aquest emmagatzematge. Qui construeix l'aplicació decideix quines dades són personals, privades de cada usuari, i quines compartides, visibles per a tothom; la primera vegada que algú fa servir el compartit, Claude l'avisa. Als artefactes nous, el límit és de 100 MB i 25.000 registres per artefacte; en els creats abans del 16 de setembre de 2026, de 20 MB i només text. Està disponible als plans de pagament. També ha canviat la publicació: en els antics l'emmagatzematge només funciona després de publicar-los, i despublicar-los esborra les dades; els nous desen sense publicar.",
+    "A més, aquestes aplicacions poden cridar Claude: cada usuari entra amb el seu compte i el consum va a càrrec del seu pla, no del de qui les va crear."
+   ],
+   "fuentes": [
+    {
+     "titulo": "What are artifacts? (Ajuda de Claude) (en anglès)",
+     "url": "https://support.claude.com/en/articles/17153992-what-are-artifacts"
+    }
+   ],
+   "mensaje": {
+    "grupo": "vce",
+    "id": 6453
+   },
+   "comprobado": "Mensajes #6453 (embed de t.me/vceduca/6453: app de nube de países con Claude, votos en tiempo real, 9/11/2025) y #6456 (t.me/vceduca/6456: window.storage y 5Mb, dicho por Claude según el grupo; #6455 pregunta dónde se guardan y que permite votar más de una vez). Ayuda oficial de Claude (support.claude.com/en/articles/17153992), consultada el 2026-11-09: almacenamiento personal/compartido y aviso al usar el compartido, 20 MB por artefacto y solo texto, planes Pro, Max, Ultra, Team y Enterprise; artefactos heredados (anteriores al 16 de septiembre de 2026) guardan solo tras publicar y despublicar borra los datos, los nuevos no necesitan publicar; el consumo de Claude va al plan de cada usuario. El almacenamiento personal/compartido ya existía desde octubre de 2025 según fuentes secundarias, por eso no se presenta como novedad. Lo de 5 MB por clave es lo dicho en el grupo, no un dato oficial. Sin pieza relacionada en publicado.txt. No repite NotebookLM ni Veo (2026-11-06 y 11-07).",
+   "repaso": [
+    "Titular y entradilla: se quita que los artefactos «separan hoy» datos personales y compartidos, porque esa distinción ya existía desde octubre de 2025; el cambio verificado es que los artefactos nuevos (desde el 16 de septiembre de 2026) guardan sin publicar.",
+    "Se quita «sin distinguir de quién» y «sin límite» del titular y la entradilla: el mensaje solo dice que permitía votar más de una vez.",
+    "Segundo párrafo: se aclara qué es documentación y qué es cambio; se añade que despublicar borra los datos.",
+    "Se retira la frase final «Lo que entonces se averiguaba probando hoy está documentado»; el tercer párrafo se acorta.",
+    "Mensajes, enlace y cifras de la ayuda confirmados; sin nombres de personas."
+   ],
+   "correccion": "Corregit el 13 de novembre de 2026: una versió anterior donava per a tots els artefactes el límit de 20 MB i només text, que és el dels creats abans del 16 de setembre de 2026.",
+   "corregido": "2026-11-13"
+  }
+ ]
+}

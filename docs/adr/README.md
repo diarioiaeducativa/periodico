@@ -56,5 +56,6 @@
 | [0052](0052-aviso-privado-a-quien-sale-en-el-numero.md) | Aviso privado a quien ha aportado algo que sale en el número |
 | [0053](0053-hemeroteca-con-calendario-y-portada-de-cada-numero.md) | La hemeroteca, un calendario con la portada y los titulares de cada número |
 | [0054](0054-edicion-en-papel.md) | Edición en papel: cada pieza y cada número, impresos desde el navegador |
+| [0055](0055-correcciones-a-la-vista-y-quien-responde.md) | Correcciones a la vista, quién responde y reglas de mesa de edición |
 
 Plantilla: [0000-plantilla.md](0000-plantilla.md). Para crear uno: `nuevo-adr "Título"`.

@@ -483,10 +483,18 @@ def recientes(fecha):
     lineas = [f"# Lo que salió en las viñetas de los {len(previos)} números anteriores a {fecha}", ""]
     caras = {"tiza": Counter(), "algoritmo": Counter()}
     objetos = Counter()
+    remates = []   # quién dijo la última frase de cada tira, de la más reciente a la más antigua
     for dia, vs in previos:
         escs = ", ".join(dict.fromkeys(v.get("escenario") or "sin escenario" for v in vs))
         obj = ", ".join(dict.fromkeys(v.get("objeto") for v in vs if v.get("objeto"))) or "ninguno"
-        lineas.append(f"- {dia}: escenario {escs}; objetos {obj}")
+        ult = vs[-1] if vs else {}
+        globos = ult.get("bocadillos") or []
+        quien = globos[-1].get("quien") if globos else None
+        remates.append(quien)
+        fin = ", ".join(f'{n} {ult[q]["expresion"]}' for q, n in (("tiza", "Tiza"), ("algoritmo", "Algoritmo"))
+                        if ult.get(q, {}).get("expresion"))
+        remate = {"tiza": "Tiza", "algoritmo": "Algoritmo"}.get(quien, "nadie (remate mudo)")
+        lineas.append(f"- {dia}: escenario {escs}; objetos {obj}; última frase de {remate}; acaban: {fin or 'sin cara'}")
         for v in vs:
             for q in caras:
                 if v.get(q, {}).get("expresion"):
@@ -505,6 +513,9 @@ def recientes(fecha):
         lineas.append(f"Caras más repetidas de {nombre}: {mas}")
     sin_usar = [e for e in EXPRESIONES if not caras["tiza"][e] and not caras["algoritmo"][e]]
     lineas.append("Caras que no han salido: " + (", ".join(sin_usar) or "ninguna"))
+    if len(remates) >= 2 and remates[0] and remates[0] == remates[1]:
+        nombre, otro = ("Algoritmo", "Tiza") if remates[0] == "algoritmo" else ("Tiza", "Algoritmo")
+        lineas.append(f"**{nombre} ha dicho la última frase en los dos números anteriores: hoy remata {otro} o el remate es mudo.**")
     if objetos:
         lineas.append("Objetos que han salido: " + ", ".join(f"{o} ({k})" for o, k in objetos.most_common()))
     return "\n".join(lineas) + "\n"

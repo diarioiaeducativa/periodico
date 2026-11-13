@@ -12,7 +12,7 @@
       "titular": "Irakasle batek infografiak HTMLn eta SVGn sortzea gomendatzen du, irudi sortuen ordez",
       "entradilla": "Vibe Coding Educativo taldeko kide batek defendatzen du kontzeptuak ilustratzeko komeni dela AAk SVG formak eta ikonoak sor ditzala HTML orri batean, eta sortutako irudiak pedagogikoki beharrezkoak direnerako uztea.",
       "cuerpo": [
-        "Proposamena AAk sortutako irudien ordez ilustrazio bektorialak erabiltzeari buruz komentatzean sortu zen. Plantea duenak gomendatzen du AAri eskatzea infografia HTML orri gisa eraikitzeko, SVG formekin eta ikono-familia batekin, sakon berrikusteko eta, behar izanez gero, gero PNG formatuan esportatzeko.",
+        "Proposamena egunkari honetako ilustrazioei buruz komentatzean sortu zen, irudi gisa sortu beharrean SVGn marrazten baitira. Plantea duenak gomendatzen du AAri eskatzea infografia HTML orri gisa eraikitzeko, SVG formekin eta ikono-familia batekin, sakon berrikusteko eta, behar izanez gero, gero PNG formatuan esportatzeko.",
         "Zerrendatutako abantailen artean daude garbitasuna, sortzailearen kontrola, baliabideen arteko koherentzia (horri esker «estilo-liburu» komun bat finkatu daiteke), irisgarritasuna, pantaila-irakurle batek HTML infografia baten testua irakur dezakeelako baina deskribapenik gabeko irudi batena ez, eta modu argi eta ilunetara automatikoki egokitzea. Gainera, HTML formatuak osagai tolesgarriak onartzen ditu, informazioa zatika erakusten dutenak; iritzi horren arabera, horrek karga kognitiboa saihesten laguntzen du eta interaktibitate apur bat gehitzen du.",
         "Gomendatu zen, halaber, apaingarri gehiegiz betetako infografiak saihestea, irudiak helburu didaktikoak eskatzen duenean soilik sortzea eta aukeratutako ikono-familia beti aipatzea. Taldean aipatutako [Lucide](https://lucide.dev/) kode irekiko SVG ikonoen multzo bat da, ISC lizentziarekin argitaratua.",
         "Irakasleentzat, ideia praktikoa da jakitea noiz komeni den infografia editagarri eta irisgarri bat, eta noiz sortutako irudi bat."
@@ -37,7 +37,7 @@
       "importancia": 2,
       "grupo": "chatgpt",
       "antetitulo": "Unibertsitate-hezkuntza",
-      "titular": "MITek txosten bat argitaratu du, AAren aurrean irakaskuntza eta ebaluazioa birplanteatzeko eskatzen duena",
+      "titular": "MITeko txosten batek, abuztukoak, AAren aurrean irakaskuntza eta ebaluazioa birplanteatzeko eskatzen du",
       "entradilla": "MITek irakaskuntzan, ikaskuntzan eta ikerketa-prestakuntzan AAren erabilera aztertzeko sortutako batzordeak AAra egokitutako hezkuntza-prozesuak gomendatzen ditu, eta ebaluazioak eta arauak berrikustea.",
       "cuerpo": [
         "ChatGPT-IA-edu taldean MITeko Ad Hoc Batzordearen txostena partekatu zen, irakaskuntzan, ikaskuntzan eta ikerketa-prestakuntzan AAren erabilerari buruzkoa. [MITen orri instituzionalaren](https://orgchart.mit.edu/node/1587) arabera, batzordeak 2026ko urtarrilean jaso zuen agindua, eta behin betiko txostena 2026ko abuztuaren 25ean zabaldu zen.",
@@ -89,7 +89,7 @@
       "titular": "Kontsola-agente bati sarbide osoa emateak ikasleen datuak babestea eskatzen du",
       "entradilla": "Esperientzia duen irakasle batek azaldu zuen zer egin dezakeen AA agente batek ekipo baten kontrol osoarekin eta zer informazio komeni den bere eskumenetik kanpo uztea.",
       "cuerpo": [
-        "Kontsola-agente bati ordenagailu baten kontrola eman aurretik zer hartu behar den kontuan galdetuta, erantzun zen sarbide osoarekin fitxategiak mugitu eta ezabatu ditzakeela, konfigurazioa aldatu eta programak instalatu edo desinstalatu. Gaitasun horrek ematen du horrenbesteko jokoa: kontatutako kasu batean, agenteak proiektu oso bat muntatu zuen hutsetik eta inoren laguntzarik gabe NAS batean, GitHuben gako bat lortzea barne, proiektua igotzeko.",
+        "Kontsola-agente bati ordenagailu baten kontrola eman aurretik zer hartu behar den kontuan galdetuta, erantzun zen sarbide osoarekin fitxategiak mugitu eta ezabatu ditzakeela, konfigurazioa aldatu eta programak instalatu edo desinstalatu. Gaitasun horrek ematen du horrenbesteko jokoa: kontatutako kasuan, agenteak egunkari hau sortzen duen sistema muntatu zuen hutsetik NAS batean, GitHuben gako bat lortzea barne, argitaratzeko.",
         "Kontuan hartu beharreko ardura nagusia datuei dagokie. Ikasleenak bereziki babestuta daude, eta ez lukete AAren zerbitzarietara iritsi behar, zer egiten ari den ondo jakin gabe eta beharrezko baimenik gabe. Banku-kontuak eta oso sentikorra den informazio pertsonala bereizita mantentzea komeni da. Azaldu zuenaren arabera, agenteak berak orienta dezake datu horiek bere buruaren aurka nola babestu.",
         "Adierazi zen, halaber, agentea karpeta jakin batera mugatu daitekeela gailu osora mugatu beharrean, eta iragarri zen AA erabiltzeko hiru moduei buruzko testu eguneratu bat egongo dela: weba, mahaigaineko aplikazioa eta kontsola."
       ],

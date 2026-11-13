@@ -50,6 +50,14 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
   intermedias: tiene que salir sin avisos.
 - **Lectura automática bloqueada a propósito** (UNESCO en la Biblioteca): no
   se salta.
+- **Corregir una pieza publicada** (ADR 0055): el cambio va en los cinco idiomas a la vez
+  (`ediciones`, `biblioteca`, `hace-un-ano` o `reportajes`, y sus `-ca`, `-gl`, `-eu`, `-en`), con la nota en
+  `correccion` («Corregido el…», «Actualización del…» o «Nota añadida el…») y el día en `corregido`
+  (`AAAA-MM-DD`). Si cambia un rótulo del dibujo, también el SVG de cada idioma y su `ilustracion_alt`. Antes,
+  comprobar el dato en su fuente: un aviso de error también puede estar equivocado. Lo que añadió la revisión
+  manual (una «Nota de la redacción» lo dice) no se toca sin preguntar.
+- **Lo que afirma «La redacción» obliga** (ADR 0055): una persona revisa cada número antes de que salga y
+  responde de lo publicado; no hay publicidad; cuando una pieza trata del propio diario, lo dice.
 
 ## Piezas
 

@@ -12,7 +12,7 @@
       "titular": "Un docent recomana crear infografies en HTML i SVG abans que com a imatges generades",
       "entradilla": "Un membre de Vibe Coding Educativo defensa que, per il·lustrar conceptes, convé que la IA generi formes SVG i icones en una pàgina HTML i que les imatges generades quedin per a quan siguin pedagògicament necessàries.",
       "cuerpo": [
-        "La proposta va sorgir en comentar l'ús d'il·lustracions vectorials en lloc d'imatges generades per IA. Qui la planteja recomana demanar a la IA que construeixi la infografia com a pàgina HTML amb formes SVG i una família d'icones, revisar-la a fons i, si cal, exportar-la després a PNG.",
+        "La proposta va sorgir en comentar les il·lustracions d'aquest diari, que es dibuixen en SVG en lloc de generar-se com a imatges. Qui la planteja recomana demanar a la IA que construeixi la infografia com a pàgina HTML amb formes SVG i una família d'icones, revisar-la a fons i, si cal, exportar-la després a PNG.",
         "Entre els avantatges que es van enumerar hi figuren la nitidesa, el control per part de qui la crea, la coherència entre recursos (que permet fixar un «llibre d'estil» comú), l'accessibilitat, perquè un lector de pantalla pot llegir el text d'una infografia en HTML però no el d'una imatge sense descripció, i l'adaptació automàtica als modes clar i fosc. A més, el format HTML admet components plegables que mostren la informació per parts, cosa que, segons aquesta opinió, ajuda a evitar la sobrecàrrega cognitiva i hi afegeix una certa interactivitat.",
         "També es va aconsellar fugir de les infografies molt carregades d'elements decoratius, generar imatges només quan ho requereixi l'objectiu didàctic i citar sempre la família d'icones triada. [Lucide](https://lucide.dev/), citada al grup, és un conjunt d'icones SVG de codi obert publicat amb llicència ISC.",
         "Per al professorat, la idea pràctica és saber quan convé una infografia editable i accessible, i quan una imatge generada."
@@ -37,7 +37,7 @@
       "importancia": 2,
       "grupo": "chatgpt",
       "antetitulo": "Educació superior",
-      "titular": "El MIT publica un informe que demana replantejar l'ensenyament i l'avaluació davant la IA",
+      "titular": "Un informe del MIT, d'agost, demana replantejar l'ensenyament i l'avaluació davant la IA",
       "entradilla": "El comitè creat pel MIT per estudiar l'ús de la IA en docència, aprenentatge i formació en recerca recomana processos educatius adaptats a la IA i revisar avaluacions i normes.",
       "cuerpo": [
         "A ChatGPT-IA-edu es va compartir l'informe del Comitè Ad Hoc del MIT sobre l'ús de la IA en l'ensenyament, l'aprenentatge i la formació en recerca. Segons la [pàgina institucional del MIT](https://orgchart.mit.edu/node/1587), el comitè va rebre l'encàrrec el gener del 2026 i el seu informe final es va difondre el 25 d'agost del 2026.",
@@ -89,7 +89,7 @@
       "titular": "Donar accés total a un agent de consola exigeix protegir les dades de l'alumnat",
       "entradilla": "Un docent amb experiència va explicar què pot fer un agent d'IA amb control complet d'un equip i quina informació convé mantenir fora del seu abast.",
       "cuerpo": [
-        "A la pregunta de què cal tenir en compte abans de donar a un agent de consola el control d'un ordinador, es va respondre que amb accés total pot moure i esborrar fitxers, canviar la configuració i instal·lar o desinstal·lar programes. Aquesta capacitat és el que li dona tant de joc: en un cas relatat, l'agent va muntar des de zero i sense ajuda un projecte complet en un NAS, inclosa l'obtenció d'una clau a GitHub per pujar-lo.",
+        "A la pregunta de què cal tenir en compte abans de donar a un agent de consola el control d'un ordinador, es va respondre que amb accés total pot moure i esborrar fitxers, canviar la configuració i instal·lar o desinstal·lar programes. Aquesta capacitat és el que li dona tant de joc: en el cas relatat, l'agent va muntar des de zero en un NAS el sistema que produeix aquest diari, inclosa l'obtenció d'una clau a GitHub per publicar-lo.",
         "La cautela principal afecta les dades. Les de l'alumnat estan especialment protegides i no han d'arribar als servidors de la IA sense saber bé què es fa i sense els permisos necessaris. Els comptes bancaris i la informació personal molt sensible convé mantenir-los separats. Segons la persona que ho va explicar, el mateix agent pot orientar sobre com protegir aquestes dades davant d'ell mateix.",
         "També es va assenyalar que l'agent es pot limitar a una carpeta concreta en lloc de a tot el dispositiu, i es va anunciar que hi haurà un text actualitzat sobre les tres maneres d'usar la IA: web, aplicació d'escriptori i consola."
       ],

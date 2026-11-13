@@ -10,7 +10,7 @@
       "grupo": "chatgpt",
       "antetitulo": "Google and the classroom",
       "titular": "Teachers debate Google’s announcement that switches off AI and search by default in school accounts",
-      "entradilla": "Google has announced that Gemini and AI-powered search will be switched off in primary and secondary school student accounts until administrators turn them on. In the groups, the news sparked a discussion about who decides how AI is used in a school.",
+      "entradilla": "Google has announced that Gemini and Google Search will be switched off in primary and secondary school student accounts until administrators turn them on. In the groups, the news sparked a discussion about who decides how AI is used in a school.",
       "cuerpo": [
         "According to [Engadget](https://www.engadget.com/2305432/google-says-that-students-in-schools-that-ban-ai-wont-have-access-to-search/), which cites Chris Phillips, Google’s vice-president and general manager for education, the company announced on 3 November that access to Gemini, Gemini Notebook, Gemini in Classroom and Google Search will be switched off in primary and secondary (K-12) school accounts until administrators explicitly turn it on. Google clarified to the outlet that each product can be enabled separately and that it is not an all-or-nothing option. The new controls will roll out over the coming months.",
         "The news reached the group first as an alarmist social-media version (“schools that ban AI will lose Google Search”). Members asked for it to be checked, and Engadget’s clarification was then shared. According to the same outlet, students at a school that blocks AI will not have access to Search and will see a message from their school saying so.",
@@ -34,7 +34,8 @@
       "comprobado": "Engadget (WebFetch, repasado): fecha 3-11-2026, autoría de Kris Holt, Chris Phillips como vicepresidente y director general de educación de Google, desactivado por defecto en cuentas K-12, habilitación por producto, mensaje del centro sin acceso a Search si se bloquea la IA, despliegue en los próximos meses. XTEC (WebFetch): documento «en desenvolupament», previsto septiembre-octubre del curso 2026-27; la página no menciona a menores de 14 años, por lo que se ha quitado esa referencia. No hay entrada original de Google localizada (WebSearch), la información se atribuye a Engadget. Mensaje de Telegram 53933 comprobado: es el que abre el tema. Las posturas son lo dicho en el grupo y no se han verificado.",
       "ilustracion": "Esquema de un interruptor general con cuatro palancas individuales (Gemini, Gemini Notebook, Gemini en Classroom, Búsqueda) que el centro puede activar o dejar apagadas una a una, frente a un único interruptor de todo o nada tachado.",
       "ilustracion_alt": "On the left, an all-or-nothing master switch crossed out with a red X; on the right, four individual switches (Gemini, Notebook, Classroom and Search), two switched on in blue and two off.",
-      "correccion": "Corrected on 4 November 2026: an earlier version stated that the Generalitat’s guidance had not been published, as the XTEC page says; that page is out of date."
+      "correccion": "Corrected on 4 November 2026: an earlier version stated that the Generalitat’s guidance had not been published, as the XTEC page says; that page is out of date. Corrected on 13 November 2026: the standfirst said “AI-powered search” where the source refers to Google Search. Update on the same date: the official link from which the guidance was downloaded ceased to exist in early November, as reported in the group, and the XTEC page still describes it as “under development”.",
+      "corregido": "2026-11-13"
     },
     {
       "id": "misiones-orbitales",

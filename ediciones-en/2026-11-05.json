@@ -40,12 +40,16 @@
       "entradilla": "A group member highlighted this website of 2D and 3D simulations as an example of what one person can achieve.",
       "cuerpo": [
         "[MechSimulator](https://mechsimulator.com/) is a free platform, with no installation, of interactive simulators for technical education. It covers virtual lab tests, measuring instruments, mechanics, mechanisms, strength of materials, thermal and fluid systems, electricity, workshop, calculators, basic sciences and mathematics, with more than 150 simulators.",
-        "In the group it was presented as the work of a single teacher. The website does not name its author or say whether AI was used to build it, and its content is in English, so both points remain unconfirmed. For technology and vocational training teachers it can serve as a bank of activities, and for those who code with AI, as a reference for what is possible."
+        "In the group it was presented as the work of a single teacher, and the website confirms this: according to its [“About” page](https://mechsimulator.com/about/), it was created and is reviewed by Naseel Ibnu Azeez, a mechanical engineering teacher, and it is kept free through the advertising it displays. It does not say whether AI was used to build it, and its content is in English. For technology and vocational training teachers it can serve as a bank of activities, and for those who code with AI, as a reference for what is possible."
       ],
       "fuentes": [
         {
           "titulo": "MechSimulator",
           "url": "https://mechsimulator.com/"
+        },
+        {
+          "titulo": "MechSimulator: About",
+          "url": "https://mechsimulator.com/about/"
         }
       ],
       "mensaje": {
@@ -54,7 +58,9 @@
       },
       "comprobado": "Revisor: abierta la web: gratuita, en el navegador y sin instalación, 11 áreas, solo inglés, sin autor ni mención de IA. La cifra de simuladores no es coherente (el texto dice 169, la descripción de la página 159 y los recuentos por categoría no cuadran), por eso se dice «más de 150». Que lo haya hecho un solo profesor es lo dicho en el grupo; no figura en la web. Mensaje 14667 de vceduca corresponde al tema.",
       "ilustracion": null,
-      "ilustracion_alt": "A browser window with a cogwheel, a ruler and a spanner, and a bending curve beneath them, labelled “In the browser”; an arrow leads to a grid of dots, one highlighted in blue, labelled “150+”."
+      "ilustracion_alt": "A browser window with a cogwheel, a ruler and a spanner, and a bending curve beneath them, labelled “In the browser”; an arrow leads to a grid of dots, one highlighted in blue, labelled “150+”.",
+      "correccion": "Corrected on 13 November 2026: an earlier version said that the website does not name its author; it does so on its “About” page. It has been added that it is funded by advertising.",
+      "corregido": "2026-11-13"
     },
     {
       "id": "gemini-omni-1-2-flash",

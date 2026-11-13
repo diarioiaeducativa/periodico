@@ -9,7 +9,7 @@
       "importancia": 1,
       "grupo": "edumedia",
       "antetitulo": "Debuxo científico",
-      "titular": "Unha proba con tres modelos suxire que debuxar en SVG evita erros nas láminas de ciencias",
+      "titular": "Tres modelos debuxan en SVG unha lámina da célula animal sen erros de contido",
       "entradilla": "Un docente pediu a tres modelos avanzados unha lámina da célula animal. Ningún cometeu erros de contido, e atribúe a fiabilidade ao formato vectorial.",
       "cuerpo": [
         "No grupo comparouse o resultado de pedir a Claude Fable 5.2, a un modelo de OpenAI e a outro de Google unha lámina didáctica dunha célula animal en formato SVG, o de debuxo vectorial. Segundo quen fixo a proba, os tres entregaron un esquema coas etiquetas correctas; o de Claude rematou en poucos minutos, o de ChatGPT pouco despois e o de Gemini tardou preto de media hora.",
@@ -18,13 +18,24 @@
         "Para a aula, a pauta práctica que se desprende é pedir en SVG os esquemas onde importa a exactitude, e revisalos igualmente antes de usalos."
       ],
       "fuentes": [
-        {"titulo": "Mensaxe do grupo EduMedia-IAG coa explicación do SVG (en castelán)", "url": "https://t.me/EduMediaIAG/12186"},
-        {"titulo": "Mensaxe coas tres láminas comparadas (en castelán)", "url": "https://t.me/EduMediaIAG/12194"}
+        {
+          "titulo": "Mensaxe do grupo EduMedia-IAG coa explicación do SVG (en castelán)",
+          "url": "https://t.me/EduMediaIAG/12186"
+        },
+        {
+          "titulo": "Mensaxe coas tres láminas comparadas (en castelán)",
+          "url": "https://t.me/EduMediaIAG/12194"
+        }
       ],
-      "mensaje": {"grupo": "edumedia", "id": 12186},
+      "mensaje": {
+        "grupo": "edumedia",
+        "id": 12186
+      },
       "comprobado": "Abierto el mensaje 12186 (embed de Telegram): la explicación coincide con lo que se cuenta. Contrastado con los mensajes del día (12194-12199, 12187). No hay fuente externa: se presenta como prueba y opinión de un miembro, con la hipótesis marcada como tal. No se han podido abrir las imágenes originales; las descripciones de las tres láminas coinciden con lo dicho. Clave pieza:2026-11-02/infografias-svg-html presente en publicado.txt y sobre el mismo tema (infografías en SVG).",
       "ilustracion": "Esquema de dos caminos: a la izquierda, un modelo de lenguaje que escribe directamente el código de un dibujo vectorial; a la derecha, un modelo de lenguaje que pasa una descripción a un generador de imágenes aparte. Ambos terminan en una célula animal, y solo el primero lleva una marca de verificación.",
-      "ilustracion_alt": "Esquema de dous camiños que parten de «Modelo»: un pasa por «Código SVG» e chega a unha célula animal cunha marca de verificación; o outro pasa polo «Xerador» e chega a outra célula sen marca."
+      "ilustracion_alt": "Esquema de dous camiños que parten de «Modelo»: un pasa por «Código SVG» e chega a unha célula animal cunha marca de verificación; o outro pasa polo «Xerador» e chega a outra célula sen marca.",
+      "correccion": "Corrixido o 13 de novembro de 2026: o titular anterior dicía que a proba suxire que debuxar en SVG evita erros; non se comparou con láminas feitas doutra forma, e esa relación é unha hipótese do autor.",
+      "corregido": "2026-11-13"
     },
     {
       "id": "prompt-propiedad-codigo-fable",
@@ -41,10 +52,19 @@
         "Para quen programa aplicacións educativas con axentes, a utilidade é decidir, segundo o caso, se se quere un asistente que respecte a estrutura existente ou un que a mellore."
       ],
       "fuentes": [
-        {"titulo": "Prompting Claude Fable 5.2 (Anthropic) (en inglés)", "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-fable-5-2"},
-        {"titulo": "Artigo de Xataka (en castelán)", "url": "https://www.xataka.com/robotica-e-ia/anthropic-ha-descubierto-que-mi-madre-sabia-cuidas-mejor-cosas-cuando-crees-que-tuyas-a-su-ia-le-pasa-codigo"}
+        {
+          "titulo": "Prompting Claude Fable 5.2 (Anthropic) (en inglés)",
+          "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-fable-5-2"
+        },
+        {
+          "titulo": "Artigo de Xataka (en castelán)",
+          "url": "https://www.xataka.com/robotica-e-ia/anthropic-ha-descubierto-que-mi-madre-sabia-cuidas-mejor-cosas-cuando-crees-que-tuyas-a-su-ia-le-pasa-codigo"
+        }
       ],
-      "mensaje": {"grupo": "vce", "id": 14844},
+      "mensaje": {
+        "grupo": "vce",
+        "id": 14844
+      },
       "comprobado": "Abierta la guía oficial de Anthropic, sección «Say who owns the code»: cifras (menos del 10 % y alrededor del 75 %), aumento de tokens del 70-80 %, cambios no pedidos (pruebas y documentación), alteración de una función, resumen que omite cambios pequeños y recomendación de omitir la frase, todo coincide. Xataka abierto: resume lo mismo y cita «la mitad» de los intentos, cifra distinta; manda la guía oficial. Mensaje 14844 comprobado en Telegram.",
       "ilustracion": null,
       "ilustracion_alt": "Dúas columnas: á esquerda, dous bloques de código idénticos e os rótulos «Engade» e «Menos do 10 %»; á dereita, unha icona de fusión sobre un só bloque de código e os rótulos «Unifica» e «75 %»."
@@ -58,16 +78,25 @@
       "titular": "Un segundo vídeo con Fable 5.2 engade un axente que revisa o contido científico antes de xeralo",
       "entradilla": "Tras a animación da fotosíntese, o mesmo docente fixo unha sobre a respiración celular cun axente revisor, e traduciu a primeira ao catalán.",
       "cuerpo": [
-        "Despois de [a animación da fotosíntese que Fable 5.2 preparou a partir dunha soa frase](pieza:2026-11-10/fable-animacion-fotosintesis), o seu autor publicou outra sobre a respiración celular. Esta vez pediu que un axente revisor científico comprobase o texto antes de pasalo a audio e as imaxes antes de renderizar o vídeo, para evitar erros. Os vídeos de respiración celular están feitos coa versión de consola de Claude Code.",
+        "Despois de [a animación da fotosíntese que Fable 5.2 preparou a partir dun só prompt](pieza:2026-11-10/fable-animacion-fotosintesis), o seu autor publicou outra sobre a respiración celular. Esta vez pediu que un axente revisor científico comprobase o texto antes de pasalo a audio e as imaxes antes de renderizar o vídeo, para evitar erros. Os vídeos de respiración celular están feitos coa versión de consola de Claude Code.",
         "Contou ademais que fixo con Opus 5.5 outro vídeo do mesmo tema, sen revisor, cuxa calidade lle pareceu moi inferior; nin sequera o viu enteiro, así que non sabe se contén erros. A comparación non está controlada, porque cambian á vez o modelo e o revisor.",
         "Por outra banda, traduciu ao catalán o vídeo da fotosíntese. A voz, de Gemini, parécelle menos boa ca a castelá e con algún fallo pequeno, aínda que o resultado xeral é moi bo.",
         "Quen queira facer o mesmo ten aquí dúas ideas prácticas: incluír un paso de revisión de contido antes de producir, e probar a tradución como unha vía para reutilizar o material noutra lingua."
       ],
       "fuentes": [
-        {"titulo": "Mensaxe do grupo ChatGPT-IA-edu co vídeo da respiración celular (en castelán)", "url": "https://t.me/ChatGPTedu/54256"},
-        {"titulo": "Mensaxe do grupo EduMedia-IAG sobre a tradución ao catalán (en castelán)", "url": "https://t.me/EduMediaIAG/12193"}
+        {
+          "titulo": "Mensaxe do grupo ChatGPT-IA-edu co vídeo da respiración celular (en castelán)",
+          "url": "https://t.me/ChatGPTedu/54256"
+        },
+        {
+          "titulo": "Mensaxe do grupo EduMedia-IAG sobre a tradución ao catalán (en castelán)",
+          "url": "https://t.me/EduMediaIAG/12193"
+        }
       ],
-      "mensaje": {"grupo": "chatgpt", "id": 54256},
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 54256
+      },
       "comprobado": "Abierto el mensaje 54256 en Telegram: coincide (vídeo de la respiración celular, agente revisor de texto e imágenes). Contrastado con los mensajes 12211-12213 y 12193. No se han podido ver los vídeos. Se han quitado los nombres de los modelos de voz, que no se pueden contrastar. Enlace a la pieza anterior presente en publicado.txt y sobre el mismo vídeo de la fotosíntesis. Corregido «ambos vídeos»: la consola se refiere a los dos de respiración celular.",
       "ilustracion": null,
       "ilustracion_alt": "Cadea de cinco pasos con frechas, cos rótulos «Texto», «Revisor», «Imaxes», «Revisor» e «Vídeo», e unha lupa en cada paso de revisión."
@@ -86,9 +115,15 @@
         "Pode servir de exemplo de proxecto do alumnado ou de cine de animación na aula, coa transparencia sobre o uso de IA que mostra o propio vídeo."
       ],
       "fuentes": [
-        {"titulo": "«Polvo eres» en YouTube (en castelán)", "url": "https://youtu.be/5U8z-PfXz6w"}
+        {
+          "titulo": "«Polvo eres» en YouTube (en castelán)",
+          "url": "https://youtu.be/5U8z-PfXz6w"
+        }
       ],
-      "mensaje": {"grupo": "edumedia", "id": 12206},
+      "mensaje": {
+        "grupo": "edumedia",
+        "id": 12206
+      },
       "comprobado": "YouTube solo permitió confirmar el título y que es un cortometraje de animación stop-motion (terror simpático); autoría, herramientas, duración y subtítulos proceden de la descripción del vídeo tal como la reproduce el mensaje del grupo (vista previa del enlace), sin poder contrastarlos. Mensaje 12206 comprobado en Telegram. Titular cambiado para no atribuir las herramientas a Google sin confirmarlo.",
       "ilustracion": null,
       "ilustracion_alt": "Tres fotogramas seguidos dun curto stop-motion nos que un monstriño de po avanza de esquerda a dereita; rótulos: «Stop-motion», «Monstriños de po» e «Xerado con IA»."
@@ -100,19 +135,27 @@
       "grupo": "vce",
       "antetitulo": "Recurso da comunidade",
       "titular": "Eduvers reúne simulacións interactivas de Física e Química e prepara laboratorios virtuais en 3D",
-      "entradilla": "O seu autor, Juan José de Haro, vai engadindo simulacións á súa web e anuncia que enlazará laboratorios en 3D nas próximas semanas.",
+      "entradilla": "O seu autor vai engadindo simulacións á web e anuncia que enlazará laboratorios en 3D nas próximas semanas.",
       "cuerpo": [
-        "O apartado de [simulacións de Física e Química de Eduvers](https://eduvers.org/es/fisica-quimica/simulaciones/), creado por Juan José de Haro, ofrece 19 simulacións, entre outras caída libre, plano inclinado, tiro parabólico, lei de Hooke, ondas, óptica xeométrica, a curva de quecemento en 3D e as estacións en Física, e isótopos, lei dos gases ideais e volumetría en Química. Pódense filtrar por área e tema.",
+        "O apartado de [simulacións de Física e Química de Eduvers](https://eduvers.org/es/fisica-quimica/simulaciones/) ofrece 19 simulacións, entre outras caída libre, plano inclinado, tiro parabólico, lei de Hooke, ondas, óptica xeométrica, a curva de quecemento en 3D e as estacións en Física, e isótopos, lei dos gases ideais e volumetría en Química. Pódense filtrar por área e tema.",
         "O seu autor explica no grupo de Vibe Coding Educativo que as fai coa axuda dos modelos de IA e que irá publicando máis nas próximas semanas, con laboratorios virtuais en 3D. Advirte de que agora mesmo hai erros que irá corrixindo e completando.",
         "Outro membro do grupo respondeu cunha colección propia de recursos para bacharelato, e o autor engadiu que se lle pode pedir á IA unha práctica interactiva en 3D do que se fai no laboratorio."
       ],
       "fuentes": [
-        {"titulo": "Simulacións de Física e Química (Eduvers) (en castelán)", "url": "https://eduvers.org/es/fisica-quimica/simulaciones/"}
+        {
+          "titulo": "Simulacións de Física e Química (Eduvers) (en castelán)",
+          "url": "https://eduvers.org/es/fisica-quimica/simulaciones/"
+        }
       ],
-      "mensaje": {"grupo": "vce", "id": 14858},
+      "mensaje": {
+        "grupo": "vce",
+        "id": 14858
+      },
       "comprobado": "Abierta la página: 19 simulaciones, con las áreas y filtros por área y tema descritos; la lista del borrador decía «rampa», que en la página es «Plano inclinado» (corregido). La página no indica autor ni licencia; la autoría (Juan José de Haro) y los planes salen del mensaje 14858, comprobado en Telegram, donde figura como autor.",
       "ilustracion": null,
-      "ilustracion_alt": "Tres tarxetas baixo o rótulo «19 simulacións»: a traxectoria parabólica dunha bola, «Física»; un matraz, «Química»; e un cubo en 3D, «Laboratorio 3D»."
+      "ilustracion_alt": "Tres tarxetas baixo o rótulo «19 simulacións»: a traxectoria parabólica dunha bola, «Física»; un matraz, «Química»; e un cubo en 3D, «Laboratorio 3D».",
+      "correccion": "Corrixido o 13 de novembro de 2026: unha versión anterior atribuía Eduvers a Juan José de Haro, que non é o seu autor. A web non indica quen a fai.",
+      "corregido": "2026-11-13"
     }
   ],
   "breves": [],

@@ -9,10 +9,10 @@
       "importancia": 1,
       "grupo": "edumedia",
       "antetitulo": "Educational video with AI",
-      "titular": "A single sentence is enough for Fable 5.2 to produce a photosynthesis animation for sixth-form students",
+      "titular": "A single prompt is enough for Fable 5.2 to produce a photosynthesis animation for sixth-form students",
       "entradilla": "With a single prompt, the model produced a square video with a natural voice aimed at sixth-form students. The author considers it good enough for class and speaks of a new way to create materials.",
       "cuerpo": [
-        "A member of the group tested [Claude Fable 5.2](pieza:2026-11-09/fable-mythos-5-2), the model Anthropic opened to the general public on 9 November, with a classroom brief: “Make me an animation with a natural voice explaining the process of photosynthesis”, with images that are “extremely detailed and faithful to the science”, a narration that a sixth-form student can follow, good intonation and a square format.",
+        "A member of the group tested [Claude Fable 5.2](pieza:2026-11-09/fable-mythos-5-2), the model Anthropic presented on 9 November, with a classroom brief: “Make me an animation with a natural voice explaining the process of photosynthesis”, with images that are “extremely detailed and faithful to the science”, a narration that a sixth-form student can follow, good intonation and a square format.",
         "According to their account, the model took about 45 minutes to deliver the video. For the voice they used a free Gemini voice, although all the work was done by Claude. The person who tried it explains that the result depends on what is installed on the computer (voices, fonts, music software) and that is why they gave the agent permission to install whatever it needed.",
         "The experiment was carried out with the console version of Claude, which can operate the computer on its own; in the web version, they said, it is considerably more complicated because it cannot manipulate local files. After reviewing it, the author judged it “more than acceptable” for sixth-form classes.",
         "It remains to be seen how much it costs to use: the group commented that Fable consumes a lot of resources, and the company has given paid subscribers [between one and three usage-limit resets](https://www.anthropic.com/claude-fable-and-mythos-5-2), depending on the plan and how long they have subscribed."
@@ -29,7 +29,9 @@
       },
       "comprobado": "Anthropic's official page opened: Fable 5.2 available on 9 November to all users and one to three usage resets depending on seniority, this week. Group messages checked against Telegram (#12178). The experiment (prompt, 45 minutes, Gemini voice, console versus web, assessment) is the author's own account; the video has not been seen.",
       "ilustracion": "A diagram of an assembly line: a one-sentence prompt enters on the left, passes through a console agent (script, images, voice, subtitles) and comes out on the right as a square screen with a leaf and sun rays, with a 45-minute clock.",
-      "ilustracion_alt": "A diagram from left to right: a message bubble labelled “One prompt” leads to a box with the console symbol labelled “Console”, which leads to a square screen with a leaf labelled “Square video”; above, a red clock labelled “45 min”."
+      "ilustracion_alt": "A diagram from left to right: a message bubble labelled “One prompt” leads to a box with the console symbol labelled “Console”, which leads to a square screen with a leaf labelled “Square video”; above, a red clock labelled “45 min”.",
+      "correccion": "Corrected on 13 November 2026: the headline said “a single sentence”; the brief had several.",
+      "corregido": "2026-11-13"
     },
     {
       "id": "edugems-eduprompts",

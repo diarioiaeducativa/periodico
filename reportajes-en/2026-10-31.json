@@ -65,24 +65,69 @@
     "The same agent should not read content from strangers, access sensitive data and act on its own all at once."
   ],
   "relacionadas": [
-    {"fecha": "2026-10-30", "id": "eductia"},
-    {"fecha": "2026-10-30", "id": "skills-sincronizar"},
-    {"fecha": "2026-10-31", "id": "webserie-never-sleep-again"}
+    {
+      "fecha": "2026-10-30",
+      "id": "eductia"
+    },
+    {
+      "fecha": "2026-10-30",
+      "id": "skills-sincronizar"
+    },
+    {
+      "fecha": "2026-10-31",
+      "id": "webserie-never-sleep-again"
+    }
   ],
   "fuentes": [
-    {"titulo": "Asistentes y agentes de IA: decálogo para personas usuarias (AEPD, 27-10-2026) (in Spanish)", "url": "https://www.aepd.es/guias/decalogo-usuarios-asistentes-agentes-ia.pdf"},
-    {"titulo": "La AEPD publica un decálogo para delegar tareas en asistentes y agentes de IA (press release, AEPD) (in Spanish)", "url": "https://www.aepd.es/prensa-y-comunicacion/notas-de-prensa/la-aepd-publica-un-decalogo-para-delegar-tareas-en-asistentes"},
-    {"titulo": "Inteligencia artificial agéntica desde la perspectiva de protección de datos, v1.2 (AEPD, February 2026) (in Spanish)", "url": "https://www.aepd.es/guias/orientaciones-ia-agentica.pdf"},
-    {"titulo": "Get started with Claude Cowork (Anthropic, help centre)", "url": "https://support.claude.com/articles/13345190"},
-    {"titulo": "Enterprise data protection in Microsoft Copilot and Microsoft Copilot Chat (Microsoft Learn)", "url": "https://learn.microsoft.com/en-us/copilot/microsoft-365/enterprise-data-protection"},
-    {"titulo": "Google Workspace with Gemini FAQ for Education (Google)", "url": "https://knowledge.workspace.google.com/admin/generative-ai/workspace-with-gemini/gemini-for-google-workspace-faq-education"},
-    {"titulo": "Suppressing misalignment monitoring alerts and disabling misalignment monitoring (OpenAI, updated 20-10-2026)", "url": "https://alignment.openai.com/misalignment-reports/suppressing-misalignment-monitoring-alerts-and-disabling-misalignment-monitoring/"},
-    {"titulo": "AI Act: regulatory framework (European Commission)", "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai"},
-    {"titulo": "Guía sobre el uso de la inteligencia artificial en el ámbito educativo, version 2.0 (INTEF, September 2026) (in Spanish)", "url": "https://intef.es/wp-content/uploads/2026/09/ACTUALIZACION-GUIA-DE-LA-IA-DEF-1-SEPT-2026-Publicable-v5-2.pdf"},
-    {"titulo": "Orientaciones sobre el uso de herramientas digitales en el ámbito educativo desde la perspectiva de la protección de datos (INTEF) (in Spanish)", "url": "https://intef.es/Noticias/orientaciones-sobre-el-uso-de-herramientas-digitales/"},
-    {"titulo": "Recomendaciones de uso de la IA (Consejería de Educación, Government of the Canary Islands, 13-01-2026) (in Spanish)", "url": "https://www3.gobiernodecanarias.org/medusa/ecoescuela/ia/2026/01/13/recomendacionesusoia/"}
+    {
+      "titulo": "Asistentes y agentes de IA: decálogo para personas usuarias (AEPD, 27-10-2026) (in Spanish)",
+      "url": "https://www.aepd.es/guias/decalogo-usuarios-asistentes-agentes-ia.pdf"
+    },
+    {
+      "titulo": "La AEPD publica un decálogo para delegar tareas en asistentes y agentes de IA (press release, AEPD) (in Spanish)",
+      "url": "https://www.aepd.es/prensa-y-comunicacion/notas-de-prensa/la-aepd-publica-un-decalogo-para-delegar-tareas-en-asistentes"
+    },
+    {
+      "titulo": "Inteligencia artificial agéntica desde la perspectiva de protección de datos, v1.2 (AEPD, February 2026) (in Spanish)",
+      "url": "https://www.aepd.es/guias/orientaciones-ia-agentica.pdf"
+    },
+    {
+      "titulo": "Get started with Claude Cowork (Anthropic, help centre)",
+      "url": "https://support.claude.com/articles/13345190"
+    },
+    {
+      "titulo": "Enterprise data protection in Microsoft Copilot and Microsoft Copilot Chat (Microsoft Learn)",
+      "url": "https://learn.microsoft.com/en-us/copilot/microsoft-365/enterprise-data-protection"
+    },
+    {
+      "titulo": "Google Workspace with Gemini FAQ for Education (Google)",
+      "url": "https://knowledge.workspace.google.com/admin/generative-ai/workspace-with-gemini/gemini-for-google-workspace-faq-education"
+    },
+    {
+      "titulo": "Suppressing misalignment monitoring alerts and disabling misalignment monitoring (OpenAI, updated 20-10-2026)",
+      "url": "https://alignment.openai.com/misalignment-reports/suppressing-misalignment-monitoring-alerts-and-disabling-misalignment-monitoring/"
+    },
+    {
+      "titulo": "AI Act: regulatory framework (European Commission)",
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai"
+    },
+    {
+      "titulo": "Guía sobre el uso de la inteligencia artificial en el ámbito educativo, version 2.0 (INTEF, September 2026) (in Spanish)",
+      "url": "https://intef.es/wp-content/uploads/2026/09/ACTUALIZACION-GUIA-DE-LA-IA-DEF-1-SEPT-2026-Publicable-v5-2.pdf"
+    },
+    {
+      "titulo": "Orientaciones sobre el uso de herramientas digitales en el ámbito educativo desde la perspectiva de la protección de datos (INTEF) (in Spanish)",
+      "url": "https://intef.es/Noticias/orientaciones-sobre-el-uso-de-herramientas-digitales/"
+    },
+    {
+      "titulo": "Recomendaciones de uso de la IA (Consejería de Educación, Government of the Canary Islands, 13-01-2026) (in Spanish)",
+      "url": "https://www3.gobiernodecanarias.org/medusa/ecoescuela/ia/2026/01/13/recomendacionesusoia/"
+    }
   ],
-  "mensaje": {"grupo": "vce", "id": 14428},
+  "mensaje": {
+    "grupo": "vce",
+    "id": 14428
+  },
   "comprobado": "Comprobado por el verificador el 2026-11-03 abriendo cada fuente (véase reportajes/2026-10-31.json). Traducción al inglés: enlaces de la Comisión Europea y de Microsoft Learn sustituidos por sus versiones oficiales en inglés (en/en-us), comprobadas el 2026-11-06; el resto no tiene versión inglesa verificada.",
   "ilustracion": "Diagrama de la «regla de 2» de la AEPD adaptado a un docente: tres círculos que se cruzan, rotulados «Lee contenido de desconocidos» (correos, webs, PDF), «Accede a datos sensibles» (notas, informes del alumnado) y «Actúa solo» (envía, comparte, borra). En el centro, donde coinciden los tres, una señal roja de «riesgo inaceptable» con el ejemplo «responder solo los correos de las familias». En cada intersección de dos, la salvaguarda que corresponde: «pedir confirmación», «sin datos personales», «solo lectura». Al pie, una tira con las cinco preguntas del decálogo: qué puede ver, qué puede recordar, qué puede hacer, dónde envía los datos, a quién más afecta.",
   "ilustracion_alt": "Three overlapping circles, “Reads others’ content”, “Sensitive data” and “Acts alone”; in the overlaps of two, the safeguards “Read-only”, “No names” and “Ask for confirmation”, and in the centre, where all three meet, a red cross marked “Unacceptable risk”; at the bottom, a strip of five icons (eye, notebook, cursor, envelope and two people) for the AEPD’s five questions before delegating.",
@@ -93,5 +138,7 @@
     "Quitado el párrafo sobre el agente «Skynet» (blog de elhacker.net y Symantec) y su fuente, por ser tangencial y para ajustar la extensión; se recortan frases de otros párrafos (Canarias, orientaciones de febrero, usos en los grupos).",
     "Relacionadas: se quita 2026-11-02/agentes-consola-acceso, posterior a la semana; las demás existen en ediciones/.",
     "El resto de citas, cifras, fechas y mensajes de los grupos coincide con las fuentes."
-  ]
+  ],
+  "correccion": "Note added on 13 November 2026: both authors of the paper took part in the Vibe Coding Educativo exchange covered in this report.",
+  "corregido": "2026-11-13"
 }

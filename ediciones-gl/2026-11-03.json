@@ -10,7 +10,7 @@
       "grupo": "chatgpt",
       "antetitulo": "Google e as aulas",
       "titular": "Docentes debaten o anuncio de Google que desactiva por defecto a IA e o buscador nas contas escolares",
-      "entradilla": "Google anunciou que Gemini e a busca con IA estarán desactivados nas contas do alumnado de primaria e secundaria ata que os administradores os activen. Nos grupos, a noticia abriu unha discusión sobre quen decide o uso da IA nun centro.",
+      "entradilla": "Google anunciou que Gemini e o buscador de Google estarán desactivados nas contas do alumnado de primaria e secundaria ata que os administradores os activen. Nos grupos, a noticia abriu unha discusión sobre quen decide o uso da IA nun centro.",
       "cuerpo": [
         "Segundo [Engadget](https://www.engadget.com/2305432/google-says-that-students-in-schools-that-ban-ai-wont-have-access-to-search/), que cita a Chris Phillips, vicepresidente e director xeral de educación de Google, a compañía anunciou o 3 de novembro que o acceso a Gemini, Gemini Notebook, Gemini en Classroom e Google Search estará desactivado nas contas escolares de primaria e secundaria (K-12) ata que o persoal administrador o active de forma explícita. Google aclarou a ese medio que cada produto pode habilitarse por separado e que non é unha opción de todo ou nada. Os novos controis despregaranse nos próximos meses.",
         "A noticia chegou ao grupo primeiro como unha versión alarmista das redes sociais («os centros que prohiban a IA perderán Google Search»). Quen a comentou pediu contrastala e despois compartiuse a aclaración de Engadget. Segundo o mesmo medio, o alumnado dun centro que bloquee a IA non terá acceso a Search e verá unha mensaxe do seu centro que llo indique.",
@@ -34,7 +34,8 @@
       "comprobado": "Engadget (WebFetch, repasado): fecha 3-11-2026, autoría de Kris Holt, Chris Phillips como vicepresidente y director general de educación de Google, desactivado por defecto en cuentas K-12, habilitación por producto, mensaje del centro sin acceso a Search si se bloquea la IA, despliegue en los próximos meses. XTEC (WebFetch): documento «en desenvolupament», previsto septiembre-octubre del curso 2026-27; la página no menciona a menores de 14 años, por lo que se ha quitado esa referencia. No hay entrada original de Google localizada (WebSearch), la información se atribuye a Engadget. Mensaje de Telegram 53933 comprobado: es el que abre el tema. Las posturas son lo dicho en el grupo y no se han verificado.",
       "ilustracion": "Esquema de un interruptor general con cuatro palancas individuales (Gemini, Gemini Notebook, Gemini en Classroom, Búsqueda) que el centro puede activar o dejar apagadas una a una, frente a un único interruptor de todo o nada tachado.",
       "ilustracion_alt": "Á esquerda, un interruptor xeral de todo ou nada riscado cun aspa vermella; á dereita, catro interruptores individuais (Gemini, Notebook, Classroom e Busca), dous acesos en azul e dous apagados.",
-      "correccion": "Corrixido o 4 de novembro de 2026: unha versión anterior daba as orientacións da Generalitat por non publicadas, como di a páxina da XTEC, que está desactualizada."
+      "correccion": "Corrixido o 4 de novembro de 2026: unha versión anterior daba as orientacións da Generalitat por non publicadas, como di a páxina da XTEC, que está desactualizada. Corrixido o 13 de novembro de 2026: a entrada dicía «a busca con IA» onde a fonte fala do buscador de Google. Actualización da mesma data: a ligazón oficial da que se descargaron as orientacións deixou de existir a comezos de novembro, segundo se contou no grupo, e a páxina da XTEC aínda as dá por «en desenvolvemento».",
+      "corregido": "2026-11-13"
     },
     {
       "id": "misiones-orbitales",

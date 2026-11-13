@@ -9,10 +9,10 @@
       "importancia": 1,
       "grupo": "edumedia",
       "antetitulo": "AArekin egindako hezkuntza-bideoa",
-      "titular": "Esaldi bakar bat nahikoa da Fable 5.2k batxilergorako fotosintesiari buruzko animazio bat presta dezan",
+      "titular": "Prompt bakar bat nahikoa da Fable 5.2k batxilergorako fotosintesiari buruzko animazio bat presta dezan",
       "entradilla": "Prompt bakar batekin, ereduak batxilergorako pentsatutako bideo karratu bat prestatu zuen, ahots natural batekin. Egileak gelan erabiltzeko egokitzat jo du, eta materialak sortzeko bide berri bati buruz hitz egin du.",
       "cuerpo": [
-        "Taldeko kide batek [Claude Fable 5.2](pieza:2026-11-09/fable-mythos-5-2) probatu zuen, Anthropicek azaroaren 9an jende guztiarentzat ireki zuen eredua, ikasgelako eskaera batekin: «Egidazu animazio bat, ahots naturalarekin, fotosintesiaren prozesua azaltzen duena», irudi «oso zehatzak eta errealitate zientifikoari leialak» izan zitzan, batxilergoko ikasle batek uler zezakeen narrazioa, intonazio ona eta formatu karratua.",
+        "Taldeko kide batek [Claude Fable 5.2](pieza:2026-11-09/fable-mythos-5-2) probatu zuen, Anthropicek azaroaren 9an aurkeztu zuen eredua, ikasgelako eskaera batekin: «Egidazu animazio bat, ahots naturalarekin, fotosintesiaren prozesua azaltzen duena», irudi «oso zehatzak eta errealitate zientifikoari leialak» izan zitzan, batxilergoko ikasle batek uler zezakeen narrazioa, intonazio ona eta formatu karratua.",
         "Haren kontakizunaren arabera, ereduak 45 bat minutu behar izan zituen bideoa entregatzeko. Ahotsa Geminiren doako ahots bat izan zen, nahiz eta lan guztia Claudek egin zuen. Probatu zuenak azaltzen duenez, emaitza ordenagailuan instalatuta dagoenaren araberakoa da (ahotsak, letra-tipoak, musika-programak), eta horregatik agenteari behar zuena instalatzeko baimena eman zion.",
         "Esperimentua Clauderen kontsola-bertsioarekin egin zen, ordenagailua bere kabuz erabil dezakeena; web bertsioan, esan zuenez, dezente zailagoa da, ezin baititu fitxategi lokalak manipulatu. Berrikusi ondoren, egileak «onargarria baino hobea» iritzi zion batxilergoko klaseetarako.",
         "Erabileran zenbat kostatzen den ikusteko dago: taldean komentatu zen Fablek baliabide asko kontsumitzen dituela, eta enpresak ordainpeko harpidedunei [erabilera-mugaren bat eta hiru arteko berrezarpen](https://www.anthropic.com/claude-fable-and-mythos-5-2) eman dizkie, planaren eta harpidetzaren antzinatasunaren arabera."
@@ -29,7 +29,9 @@
       },
       "comprobado": "Página oficial de Anthropic abierta: Fable 5.2 disponible el 9 de noviembre para todos los usuarios y de uno a tres reinicios de uso según antigüedad, esta semana. Mensajes del grupo contrastados con Telegram (#12178). El experimento (prompt, 45 minutos, voz de Gemini, consola frente a web, valoración) es el relato del propio autor; no se ha visto el vídeo.",
       "ilustracion": "Esquema de una cadena de montaje: un prompt de una frase entra a la izquierda, pasa por un agente de consola (guion, imágenes, voz, subtítulos) y sale a la derecha una pantalla cuadrada con una hoja y rayos de sol, con un reloj de 45 minutos.",
-      "ilustracion_alt": "Ezkerretik eskuinera doan eskema bat: «Prompt bat» errotulua duen mezu-burbuila bat «Kontsola» errotulua duen kontsola-sinboloko laukizuzen batera doa, eta hau «Bideo karratua» errotulua duen hosto bat duen pantaila karratu batera; goian, «45 min» errotulua duen erloju gorri bat."
+      "ilustracion_alt": "Ezkerretik eskuinera doan eskema bat: «Prompt bat» errotulua duen mezu-burbuila bat «Kontsola» errotulua duen kontsola-sinboloko laukizuzen batera doa, eta hau «Bideo karratua» errotulua duen hosto bat duen pantaila karratu batera; goian, «45 min» errotulua duen erloju gorri bat.",
+      "correccion": "2026ko azaroaren 13an zuzendua: titularrak «esaldi bakar bat» zioen; eskaerak hainbat zituen.",
+      "corregido": "2026-11-13"
     },
     {
       "id": "edugems-eduprompts",

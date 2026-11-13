@@ -40,12 +40,16 @@
       "entradilla": "Un membre del grup va destacar aquest web de simulacions 2D i 3D com a exemple del que pot aconseguir una sola persona.",
       "cuerpo": [
         "[MechSimulator](https://mechsimulator.com/) és una plataforma gratuïta, sense instal·lació, de simuladors interactius per a l'educació tècnica. Cobreix proves de laboratori virtual, instruments de mesura, mecànica, mecanismes, resistència de materials, termodinàmica i fluids, electricitat, taller, calculadores, ciències bàsiques i matemàtiques, amb més de 150 simuladors.",
-        "Al grup es va presentar com a obra d'un únic professor. El web no en nomena l'autor, ni indica si s'ha fet servir IA per fer-lo, i el contingut és en anglès, de manera que ambdues dades queden sense confirmar. Per al professorat de tecnologia i formació professional pot servir com a banc d'activitats, i per a qui programa amb IA, com a referència de l'abast possible."
+        "Al grup es va presentar com a obra d'un únic professor, i el web ho confirma: segons la [pàgina «About»](https://mechsimulator.com/about/), l'ha creat i el revisa Naseel Ibnu Azeez, professor d'enginyeria mecànica, i es manté gratuït amb la publicitat que mostra. No indica si s'ha fet servir IA per fer-lo, i el contingut és en anglès. Per al professorat de tecnologia i formació professional pot servir com a banc d'activitats, i per a qui programa amb IA, com a referència de l'abast possible."
       ],
       "fuentes": [
         {
           "titulo": "MechSimulator (en anglès)",
           "url": "https://mechsimulator.com/"
+        },
+        {
+          "titulo": "MechSimulator: About (en anglès)",
+          "url": "https://mechsimulator.com/about/"
         }
       ],
       "mensaje": {
@@ -54,7 +58,9 @@
       },
       "comprobado": "Revisor: abierta la web: gratuita, en el navegador y sin instalación, 11 áreas, solo inglés, sin autor ni mención de IA. La cifra de simuladores no es coherente (el texto dice 169, la descripción de la página 159 y los recuentos por categoría no cuadran), por eso se dice «más de 150». Que lo haya hecho un solo profesor es lo dicho en el grupo; no figura en la web. Mensaje 14667 de vceduca corresponde al tema.",
       "ilustracion": null,
-      "ilustracion_alt": "Una finestra de navegador amb un engranatge, una regla i una clau, i una corba de flexió a sota, amb el rètol «Al navegador»; una fletxa porta a una quadrícula de punts, un d'ells destacat en blau, amb el rètol «Més de 150»."
+      "ilustracion_alt": "Una finestra de navegador amb un engranatge, una regla i una clau, i una corba de flexió a sota, amb el rètol «Al navegador»; una fletxa porta a una quadrícula de punts, un d'ells destacat en blau, amb el rètol «Més de 150».",
+      "correccion": "Corregit el 13 de novembre de 2026: una versió anterior deia que el web no n'anomena l'autor; l'anomena a la seva pàgina «About». S'ha afegit que es finança amb publicitat.",
+      "corregido": "2026-11-13"
     },
     {
       "id": "gemini-omni-1-2-flash",

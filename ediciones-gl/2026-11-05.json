@@ -40,12 +40,16 @@
       "entradilla": "Un membro do grupo destacou esta web de simulacións 2D e 3D como exemplo do que pode lograr unha soa persoa.",
       "cuerpo": [
         "[MechSimulator](https://mechsimulator.com/) é unha plataforma gratuíta, sen instalación, de simuladores interactivos para educación técnica. Cobre probas de laboratorio virtual, instrumentos de medición, mecánica, mecanismos, resistencia de materiais, termia e fluídos, electricidade, taller, calculadoras, ciencias básicas e matemáticas, con máis de 150 simuladores.",
-        "No grupo presentouse como obra dun único profesor. A web non nomea o seu autor, nin indica se se usou IA para facela, e o seu contido está en inglés, de modo que ambos os datos quedan sen confirmar. Para o profesorado de tecnoloxía e formación profesional pode servir como banco de actividades, e para quen programa con IA, como referencia do alcance posible."
+        "No grupo presentouse como obra dun único profesor, e a web confírmao: segundo a súa [páxina «About»](https://mechsimulator.com/about/), creouna e revísaa Naseel Ibnu Azeez, profesor de enxeñaría mecánica, e mantense gratuíta coa publicidade que mostra. Non indica se se usou IA para facela, e o seu contido está en inglés. Para o profesorado de tecnoloxía e formación profesional pode servir como banco de actividades, e para quen programa con IA, como referencia do alcance posible."
       ],
       "fuentes": [
         {
           "titulo": "MechSimulator (en inglés)",
           "url": "https://mechsimulator.com/"
+        },
+        {
+          "titulo": "MechSimulator: About (en inglés)",
+          "url": "https://mechsimulator.com/about/"
         }
       ],
       "mensaje": {
@@ -54,7 +58,9 @@
       },
       "comprobado": "Revisor: abierta la web: gratuita, en el navegador y sin instalación, 11 áreas, solo inglés, sin autor ni mención de IA. La cifra de simuladores no es coherente (el texto dice 169, la descripción de la página 159 y los recuentos por categoría no cuadran), por eso se dice «más de 150». Que lo haya hecho un solo profesor es lo dicho en el grupo; no figura en la web. Mensaje 14667 de vceduca corresponde al tema.",
       "ilustracion": null,
-      "ilustracion_alt": "Unha xanela de navegador cunha engrenaxe, unha regra e unha chave, e unha curva de flexión debaixo, co rótulo «No navegador»; unha frecha leva a unha cuadrícula de puntos, un deles destacado en azul, co rótulo «Máis de 150»."
+      "ilustracion_alt": "Unha xanela de navegador cunha engrenaxe, unha regra e unha chave, e unha curva de flexión debaixo, co rótulo «No navegador»; unha frecha leva a unha cuadrícula de puntos, un deles destacado en azul, co rótulo «Máis de 150».",
+      "correccion": "Corrixido o 13 de novembro de 2026: unha versión anterior dicía que a web non nomea o seu autor; nómeao na súa páxina «About». Engadiuse que se financia con publicidade.",
+      "corregido": "2026-11-13"
     },
     {
       "id": "gemini-omni-1-2-flash",

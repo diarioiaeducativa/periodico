@@ -9,10 +9,10 @@
       "importancia": 1,
       "grupo": "edumedia",
       "antetitulo": "Vídeo educatiu amb IA",
-      "titular": "N'hi ha prou amb una sola frase perquè Fable 5.2 prepari una animació de la fotosíntesi per a batxillerat",
+      "titular": "N'hi ha prou amb un sol prompt perquè Fable 5.2 prepari una animació de la fotosíntesi per a batxillerat",
       "entradilla": "Amb un sol prompt, el model va preparar un vídeo quadrat amb veu natural pensat per a batxillerat. L'autor el considera acceptable per a classe i parla d'una nova via per crear materials.",
       "cuerpo": [
-        "Un membre del grup va provar [Claude Fable 5.2](pieza:2026-11-09/fable-mythos-5-2), el model que Anthropic va obrir el 9 de novembre a tot el públic, amb un encàrrec d'aula: «Fes-me una animació amb veu natural explicant el procés de la fotosíntesi», amb imatges «extremadament detallades i fidels a la realitat científica», una narració que entengui un alumne de batxillerat, bona entonació i format quadrat.",
+        "Un membre del grup va provar [Claude Fable 5.2](pieza:2026-11-09/fable-mythos-5-2), el model que Anthropic va presentar el 9 de novembre, amb un encàrrec d'aula: «Fes-me una animació amb veu natural explicant el procés de la fotosíntesi», amb imatges «extremadament detallades i fidels a la realitat científica», una narració que entengui un alumne de batxillerat, bona entonació i format quadrat.",
         "Segons el seu relat, el model va trigar uns 45 minuts a lliurar el vídeo. Per a la veu va fer servir una veu gratuïta de Gemini, tot i que tota la feina la va fer Claude. Qui ho va provar explica que el resultat depèn del que hi hagi instal·lat a l'ordinador (veus, tipografies, programes de música) i que per això va donar permís a l'agent perquè instal·lés el que necessités.",
         "L'experiment es va fer amb la versió de consola de Claude, que pot manejar l'ordinador per compte propi; a la versió web, va comentar, és bastant més complicat perquè no pot manipular els arxius locals. Després de revisar-lo, l'autor el va jutjar «més que acceptable» per a classes de batxillerat.",
         "Queda per veure quant costa en ús: al grup es va comentar que Fable consumeix molts recursos, i l'empresa ha donat als subscriptors de pagament [entre un i tres reinicis del límit d'ús](https://www.anthropic.com/claude-fable-and-mythos-5-2), segons el pla i l'antiguitat de la subscripció."
@@ -29,7 +29,9 @@
       },
       "comprobado": "Página oficial de Anthropic abierta: Fable 5.2 disponible el 9 de noviembre para todos los usuarios y de uno a tres reinicios de uso según antigüedad, esta semana. Mensajes del grupo contrastados con Telegram (#12178). El experimento (prompt, 45 minutos, voz de Gemini, consola frente a web, valoración) es el relato del propio autor; no se ha visto el vídeo.",
       "ilustracion": "Esquema de una cadena de montaje: un prompt de una frase entra a la izquierda, pasa por un agente de consola (guion, imágenes, voz, subtítulos) y sale a la derecha una pantalla cuadrada con una hoja y rayos de sol, con un reloj de 45 minutos.",
-      "ilustracion_alt": "Esquema d'esquerra a dreta: una bafarada de missatge amb el rètol «Un prompt» porta a un requadre amb el símbol de la consola i el rètol «Consola», que porta a una pantalla quadrada amb una fulla i el rètol «Vídeo quadrat»; a dalt, un rellotge vermell amb el rètol «45 min»."
+      "ilustracion_alt": "Esquema d'esquerra a dreta: una bafarada de missatge amb el rètol «Un prompt» porta a un requadre amb el símbol de la consola i el rètol «Consola», que porta a una pantalla quadrada amb una fulla i el rètol «Vídeo quadrat»; a dalt, un rellotge vermell amb el rètol «45 min».",
+      "correccion": "Corregit el 13 de novembre de 2026: el titular deia «una sola frase»; l'encàrrec en tenia diverses.",
+      "corregido": "2026-11-13"
     },
     {
       "id": "edugems-eduprompts",

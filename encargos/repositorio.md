@@ -4,8 +4,8 @@ El [Repositorio de recursos](https://vibe-coding-educativo.github.io/app_edu/) d
 Educativo reúne las aplicaciones y recursos educativos digitales que el profesorado de esa
 comunidad crea, casi siempre con ayuda de la inteligencia artificial, y comparte con licencia
 abierta. El diario los cuenta en su sección «Vibe coding», para profesorado y personas
-interesadas que **no están** en el grupo. Se publica sin que nadie lo revise antes: el repaso es
-la única revisión.
+interesadas que **no están** en el grupo. El repaso es la única comprobación de cada dato contra su fuente:
+escribe como si nadie más fuera a revisarlo.
 
 La entrada (`repositorio-entrada/<FECHA>.md`) dice el **modo**:
 

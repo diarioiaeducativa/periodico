@@ -1,16 +1,41 @@
-{"fecha": "2026-11-08", "hay_pieza": true,
- "piezas": [{"id": "artefactos-claude-almacenamiento",
-             "seccion": "hace-un-ano", "importancia": 3,
-             "grupo": "vce", "fecha_original": "2025-11-09",
-             "antetitulo": "Apps with memory",
-             "titular": "A word cloud with a “backend” in a single prompt: today Claude’s new artifacts save data without being published",
-             "entradilla": "In November 2025, a word cloud built with Claude stored everyone’s votes from a single prompt. Today the new artifacts save data without needing to be published.",
-             "cuerpo": [
-               "On 9 November 2025, in Vibe Coding Educativo, an app built with Claude was being tested: a cloud of the countries from which members followed the group, which was meant to show everyone’s votes in real time. The group celebrated getting a “backend” from one prompt, and the questions came quickly: where was the data stored, and how could people be stopped from voting more than once? When asked, Claude itself spoke of an internal store, window.storage, with 5 MB per key.",
-               "Today [Anthropic’s official help page on artifacts](https://support.claude.com/en/articles/17153992-what-are-artifacts) documents that storage. Whoever builds the app decides which data is personal, private to each user, and which is shared, visible to everyone; the first time someone uses the shared kind, Claude warns them. The limit is 20 MB per artifact, text only, on paid plans. What has changed is publishing: in artifacts created before 16 September 2026, storage only works once they are published, and unpublishing them deletes the data; new ones save without being published.",
-               "These apps can also call Claude: each user signs in with their own account and the usage is charged to their plan, not to that of whoever created the app."
-             ],
-             "fuentes": [{"titulo": "What are artifacts? (Claude Help Center) (in Spanish)", "url": "https://support.claude.com/en/articles/17153992-what-are-artifacts"}],
-             "mensaje": {"grupo": "vce", "id": 6453},
-             "comprobado": "Mensajes #6453 (embed de t.me/vceduca/6453: app de nube de países con Claude, votos en tiempo real, 9/11/2025) y #6456 (t.me/vceduca/6456: window.storage y 5Mb, dicho por Claude según el grupo; #6455 pregunta dónde se guardan y que permite votar más de una vez). Ayuda oficial de Claude (support.claude.com/en/articles/17153992), consultada el 2026-11-09: almacenamiento personal/compartido y aviso al usar el compartido, 20 MB por artefacto y solo texto, planes Pro, Max, Ultra, Team y Enterprise; artefactos heredados (anteriores al 16 de septiembre de 2026) guardan solo tras publicar y despublicar borra los datos, los nuevos no necesitan publicar; el consumo de Claude va al plan de cada usuario. El almacenamiento personal/compartido ya existía desde octubre de 2025 según fuentes secundarias, por eso no se presenta como novedad. Lo de 5 MB por clave es lo dicho en el grupo, no un dato oficial. Sin pieza relacionada en publicado.txt. No repite NotebookLM ni Veo (2026-11-06 y 11-07).",
-             "repaso": ["Titular y entradilla: se quita que los artefactos «separan hoy» datos personales y compartidos, porque esa distinción ya existía desde octubre de 2025; el cambio verificado es que los artefactos nuevos (desde el 16 de septiembre de 2026) guardan sin publicar.", "Se quita «sin distinguir de quién» y «sin límite» del titular y la entradilla: el mensaje solo dice que permitía votar más de una vez.", "Segundo párrafo: se aclara qué es documentación y qué es cambio; se añade que despublicar borra los datos.", "Se retira la frase final «Lo que entonces se averiguaba probando hoy está documentado»; el tercer párrafo se acorta.", "Mensajes, enlace y cifras de la ayuda confirmados; sin nombres de personas."]}]}
+{
+ "fecha": "2026-11-08",
+ "hay_pieza": true,
+ "piezas": [
+  {
+   "id": "artefactos-claude-almacenamiento",
+   "seccion": "hace-un-ano",
+   "importancia": 3,
+   "grupo": "vce",
+   "fecha_original": "2025-11-09",
+   "antetitulo": "Apps with memory",
+   "titular": "A word cloud with a “backend” in a single prompt: today Claude’s new artifacts save data without being published",
+   "entradilla": "In November 2025, a word cloud built with Claude stored everyone’s votes from a single prompt. Today the new artifacts save data without needing to be published.",
+   "cuerpo": [
+    "On 9 November 2025, in Vibe Coding Educativo, an app built with Claude was being tested: a cloud of the countries from which members followed the group, which was meant to show everyone’s votes in real time. The group celebrated getting a “backend” from one prompt, and the questions came quickly: where was the data stored, and how could people be stopped from voting more than once? When asked, Claude itself spoke of an internal store, window.storage, with 5 MB per key.",
+    "Today [Anthropic’s official help page on artifacts](https://support.claude.com/en/articles/17153992-what-are-artifacts) documents that storage. Whoever builds the app decides which data is personal, private to each user, and which is shared, visible to everyone; the first time someone uses the shared kind, Claude warns them. In new artifacts, the limit is 100 MB and 25,000 records per artifact; in those created before 16 September 2026, 20 MB and text only. It is available on paid plans. Publishing has also changed: in the older ones, storage only works once they are published, and unpublishing them deletes the data; new ones save without being published.",
+    "These apps can also call Claude: each user signs in with their own account and the usage is charged to their plan, not to that of whoever created the app."
+   ],
+   "fuentes": [
+    {
+     "titulo": "What are artifacts? (Claude Help Center) (in Spanish)",
+     "url": "https://support.claude.com/en/articles/17153992-what-are-artifacts"
+    }
+   ],
+   "mensaje": {
+    "grupo": "vce",
+    "id": 6453
+   },
+   "comprobado": "Mensajes #6453 (embed de t.me/vceduca/6453: app de nube de países con Claude, votos en tiempo real, 9/11/2025) y #6456 (t.me/vceduca/6456: window.storage y 5Mb, dicho por Claude según el grupo; #6455 pregunta dónde se guardan y que permite votar más de una vez). Ayuda oficial de Claude (support.claude.com/en/articles/17153992), consultada el 2026-11-09: almacenamiento personal/compartido y aviso al usar el compartido, 20 MB por artefacto y solo texto, planes Pro, Max, Ultra, Team y Enterprise; artefactos heredados (anteriores al 16 de septiembre de 2026) guardan solo tras publicar y despublicar borra los datos, los nuevos no necesitan publicar; el consumo de Claude va al plan de cada usuario. El almacenamiento personal/compartido ya existía desde octubre de 2025 según fuentes secundarias, por eso no se presenta como novedad. Lo de 5 MB por clave es lo dicho en el grupo, no un dato oficial. Sin pieza relacionada en publicado.txt. No repite NotebookLM ni Veo (2026-11-06 y 11-07).",
+   "repaso": [
+    "Titular y entradilla: se quita que los artefactos «separan hoy» datos personales y compartidos, porque esa distinción ya existía desde octubre de 2025; el cambio verificado es que los artefactos nuevos (desde el 16 de septiembre de 2026) guardan sin publicar.",
+    "Se quita «sin distinguir de quién» y «sin límite» del titular y la entradilla: el mensaje solo dice que permitía votar más de una vez.",
+    "Segundo párrafo: se aclara qué es documentación y qué es cambio; se añade que despublicar borra los datos.",
+    "Se retira la frase final «Lo que entonces se averiguaba probando hoy está documentado»; el tercer párrafo se acorta.",
+    "Mensajes, enlace y cifras de la ayuda confirmados; sin nombres de personas."
+   ],
+   "correccion": "Corrected on 13 November 2026: an earlier version gave the limit of 20 MB and text only for all artifacts; that is the limit for those created before 16 September 2026.",
+   "corregido": "2026-11-13"
+  }
+ ]
+}

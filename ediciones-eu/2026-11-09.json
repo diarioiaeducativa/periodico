@@ -9,21 +9,33 @@
       "importancia": 1,
       "grupo": "vce",
       "antetitulo": "Anthropic, ereduak",
-      "titular": "Anthropicek Claude Fable 5.2 eta Mythos 5.2 aurkeztu ditu, lehenengoa jende guztiarentzat irekita",
-      "entradilla": "Enpresak eredu beraren bi bertsio iragarri ditu: Fable 5.2, babesneurriekin eta guztientzat eskuragarri, eta Mythos 5.2, erakunde egiaztatuentzat soilik.",
+      "titular": "Anthropicek Claude Fable 5.2 eta Mythos 5.2 aurkeztu ditu, azken hori erakunde egiaztatuentzat soilik",
+      "entradilla": "Enpresak eredu beraren bi bertsio iragarri ditu: Fable 5.2, babesneurriekin eta aurretiazko egiaztapenik gabe, eta Mythos 5.2, erakunde egiaztatuentzat soilik.",
       "cuerpo": [
         "Anthropicek azaroaren 9an iragarri zituen [Claude Fable 5.2 eta Claude Mythos 5.2](https://www.anthropic.com/claude-fable-and-mythos-5-2), lan tekniko handinahi eta irekietarako bere eredurik gaitzenak direla dioela. Taldeetako hainbat kidek iragarpena partekatu zuten, eta horietako batek esan zuen jada Claude aplikazioan eskuragarri zuela.",
-        "Enpresaren arabera, eredu beraren bi bertsio dira. Fable 5.2k zibersegurtasunean eta biologian gehiegikeriak saihesteko babesneurriak ditu eta erabiltzaile guztientzat dago eskuragarri, baita Amazon, Google eta Microsofteko hodei-zerbitzuetan ere; APIan `claude-fable-5-2` du izena. Mythos 5.2k babesneurri gutxiago ditu eta zibersegurtasunean edo bizi-zientzietan egiaztapen-programak gainditzen dituzten erakundeentzat gordeta dago.",
+        "Enpresaren arabera, eredu beraren bi bertsio dira. Fable 5.2k zibersegurtasunean eta biologian gehiegikeriak saihesteko babesneurriak ditu eta, iragarpenaren arabera, erabiltzaile guztientzat dago eskuragarri, baita Amazon, Google eta Microsofteko hodei-zerbitzuetan ere; APIan `claude-fable-5-2` du izena. Mythos 5.2k babesneurri gutxiago ditu eta zibersegurtasunean edo bizi-zientzietan egiaztapen-programak gainditzen dituzten erakundeentzat gordeta dago.",
         "Anthropicek dio emaitzak % 30 arte azkarrago sortzen dituztela 5.1 bertsioek baino, ebaluatu dituen ia gaitasun guztietan Opus 5.5 gainditzen dutela eta, hasierako probetan, segurtasun-sailkatzaileek Fable 5.1ek baino % 55 gutxiago blokeatzen dutela. Enpresaren beraren zifrak dira, kanpoko kontrasterik gabe. Adierazitako prezio estandarra 8 dolar da sarrerako milioi bat tokeneko eta 40 irteerako milioi bakoitzeko.",
-        "Agenteekin programatzen duten irakasleentzat, nobedade praktikoa da konpainiaren eredurik indartsuena eskura geratzen dela. Elkarrizketan 16ra arte irekita zegoen proba bat aipatu zen; iragarpenak ez du data hori ematen, «aste honetan» abian jarritako sustapen bat baino ez du aipatzen, ordainpeko harpidedun hautagarrientzat Fablen erabilera gehigarriarekin, eta, beraz, epea ezin izan da berretsi."
+        "Agenteekin programatzen duten irakasleentzat, nobedade praktikoa da konpainiaren eredurik indartsuena eskura geratzen dela ordainpeko planetan, nahiz eta Anthropicek Opus 5.5ekin hastea gomendatzen duen eta Fablera lanak eskatzen duenean soilik pasatzea. Elkarrizketan 16ra arte irekita zegoen proba bat aipatu zen, eta [Anthropicen laguntzak](https://support.claude.com/en/articles/17506494) berresten du: Pro planean eta Team planeko eserleku estandarretan, Fable barne dago 2026ko azaroaren 9tik 16ra, asteko mugaren erdiraino; abiarazteko eskaintzek ez dute doako plana hartzen."
       ],
       "fuentes": [
-        {"titulo": "Anthropic: Introducing Claude Fable 5.2 and Claude Mythos 5.2 (ingelesez)", "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2"}
+        {
+          "titulo": "Anthropic: Introducing Claude Fable 5.2 and Claude Mythos 5.2 (ingelesez)",
+          "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2"
+        },
+        {
+          "titulo": "Claudeko laguntza: Fable 5.2ren abiarazteko eskaintzak (ingelesez)",
+          "url": "https://support.claude.com/en/articles/17506494"
+        }
       ],
-      "mensaje": {"grupo": "vce", "id": 14814},
+      "mensaje": {
+        "grupo": "vce",
+        "id": 14814
+      },
       "comprobado": "Revisor: abierta la página oficial de Anthropic. Confirmados fecha (9 de noviembre de 2026), Fable abierto a todos y también en AWS, Google Cloud y Azure, Mythos para organizaciones verificadas, identificador claude-fable-5-2, precios 8/40 dólares, hasta un 30 % más rápido y superior a Opus 5.5 en casi todo lo evaluado. Corregido: la cifra del 55 % es de bloqueos de clasificadores de seguridad en pruebas iniciales, no de «consultas legítimas»; Mythos tiene «menos» salvaguardas, no ninguna. Quitado «con un coste superior» (no consta). El día 16 no aparece: solo una promoción «esta semana». Mensaje 14814 abierto en Telegram: comparte el anuncio.",
       "ilustracion": "Esquema de un tronco común que se bifurca en dos ramas: una con una compuerta de seguridad abierta a una multitud (Fable 5.2) y otra con una puerta con credencial para unas pocas organizaciones (Mythos 5.2).",
-      "ilustracion_alt": "Enborra baten eskema bat, «Claude 5.2», bi adarretan banatzen dena: «Fable 5.2», «Jende guztiarentzat» errotulua duen pertsona-talde batera daramana, eta «Mythos 5.2», «Egiaztatuak» errotulua duen ate itxi eta giltzarrapodun batera daramana."
+      "ilustracion_alt": "Enborra baten eskema bat, «Claude 5.2», bi adarretan banatzen dena: «Fable 5.2», «Egiaztapenik gabe» errotulua duen pertsona-talde batera daramana, eta «Mythos 5.2», «Egiaztatuak» errotulua duen ate itxi eta giltzarrapodun batera daramana.",
+      "correccion": "2026ko azaroaren 13an zuzendua: titularrak eta sarrerak Fable 5.2 jende guztiarentzat irekita zegoela esaten zuten; abiarazteko eskaintzek ez dute doako plana hartzen, eta Pro planean azaroaren 16ra arte soilik dago barne. Epe hori gehitu da, Anthropicen laguntzak berresten duena, baita enpresak Opus 5.5ekin hastea gomendatzen duela ere.",
+      "corregido": "2026-11-13"
     },
     {
       "id": "domotica-agentes-ia",
@@ -40,10 +52,19 @@
         "Erabilera pertsonaleko lekukotasunak dira, ez gida kontrastatu bat; irakasleentzako intereskoena da agenteari konfigurazioak eskatzeko metodo bera konfigurazio-fitxategiekin kudeatzen den edozein sistematarako balio duela. Datuen kontrola galdu gabe agente bati sarbidea ematearen gainean, egunkariak [kontsolako agente baten baimenak](pieza:2026-11-02/agentes-consola-acceso) jorratu zituen."
       ],
       "fuentes": [
-        {"titulo": "Elkarrizketa ChatGPT-IA-edu taldean (hasierako mezua) (gaztelaniaz)", "url": "https://t.me/ChatGPTedu/54146"},
-        {"titulo": "Google: Build with Google Antigravity (ingelesez)", "url": "https://developers.googleblog.com/build-with-google-antigravity-our-new-agentic-development-platform/"}
+        {
+          "titulo": "Elkarrizketa ChatGPT-IA-edu taldean (hasierako mezua) (gaztelaniaz)",
+          "url": "https://t.me/ChatGPTedu/54146"
+        },
+        {
+          "titulo": "Google: Build with Google Antigravity (ingelesez)",
+          "url": "https://developers.googleblog.com/build-with-google-antigravity-our-new-agentic-development-platform/"
+        }
       ],
-      "mensaje": {"grupo": "chatgpt", "id": 54146},
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 54146
+      },
       "comprobado": "Revisor: contrastado con los mensajes 54146-54162 (nada atribuido de más; sin nombres). Mensaje 54146 abierto en Telegram. Antigravity descrito como plataforma de desarrollo con agentes de Google según su blog oficial (enlazado en su primera mención). Cambiado «docente» por «miembro» (no consta la profesión) y el titular, que generalizaba. Clave pieza:2026-11-02/agentes-consola-acceso presente en publicado.txt y del mismo tema (permisos de agentes de consola). Nada afirmado sobre Home Assistant más allá del relato.",
       "ilustracion": null,
       "ilustracion_alt": "Eskema bat, non «Agentea» koadro batek «Konfigurazioa» errotulua duen kode-dokumentu bat seinalatzen duen, eta honek «Home Assistant» errotulua duen etxe bat; behean, giltzarrapo gorri bat, «Gakorik gabe» errotuluarekin."
@@ -62,10 +83,19 @@
         "Bi aplikazioek adierazten dute kodea AGPL v3 lizentziapean dagoela eta edukiak CC BY-SA 4.0pean, eta horrek beste ikastetxe batzuei egokitzeko aukera ematen die."
       ],
       "fuentes": [
-        {"titulo": "Xifres i Lletres (katalanez)", "url": "https://elcordones.github.io/xifres-i-lletres/"},
-        {"titulo": "Aula d'Acollida Digital (katalanez)", "url": "https://elcordones.github.io/acollida/"}
+        {
+          "titulo": "Xifres i Lletres (katalanez)",
+          "url": "https://elcordones.github.io/xifres-i-lletres/"
+        },
+        {
+          "titulo": "Aula d'Acollida Digital (katalanez)",
+          "url": "https://elcordones.github.io/acollida/"
+        }
       ],
-      "mensaje": {"grupo": "vce", "id": 14803},
+      "mensaje": {
+        "grupo": "vce",
+        "id": 14803
+      },
       "comprobado": "Revisor: abiertas ambas webs. Xifres i Lletres: autoría de David Cordones, dos pruebas, cuatro niveles por edades, navegador, AGPL v3 y CC BY-SA 4.0 confirmados. Aula d'Acollida: autoría, finalidad («Suport lingüístic inicial») y licencias confirmadas; audio, cuaderno y sin conexión no figuran en la página y quedan como no confirmados. Mensaje 14803 abierto en Telegram: corresponde.",
       "ilustracion": null,
       "ilustracion_alt": "Bi panel: ezkerrean, kalkulagailu bat eta hiru kutxa, «Xifres i Lletres» errotuluarekin; eskuinean, itzulpen-ikono bat, «Aula d'Acollida» errotuluarekin; azpian, marra etenezko koadro bat, «Kode irekia» errotuluarekin."
@@ -83,9 +113,15 @@
         "Azken urrats hori garestia dela ohartarazi zuen, kreditu asko kontsumitzen dituelako. [«Buzz»-i buruzko argitalpenean](https://www.linkedin.com/posts/raul-torres-ia_buzz-shortfilm-aifilmmaking-ugcPost-7525290884553183233-UCtd/) Magnific eta DaVinci Resolve ere zerrendatzen ditu tresnen artean."
       ],
       "fuentes": [
-        {"titulo": "Raül Torresen argitalpena LinkedIn-en «Buzz»-i buruz (ingelesez)", "url": "https://www.linkedin.com/posts/raul-torres-ia_buzz-shortfilm-aifilmmaking-ugcPost-7525290884553183233-UCtd/"}
+        {
+          "titulo": "Raül Torresen argitalpena LinkedIn-en «Buzz»-i buruz (ingelesez)",
+          "url": "https://www.linkedin.com/posts/raul-torres-ia_buzz-shortfilm-aifilmmaking-ugcPost-7525290884553183233-UCtd/"
+        }
       ],
-      "mensaje": {"grupo": "edumedia", "id": 12153},
+      "mensaje": {
+        "grupo": "edumedia",
+        "id": 12153
+      },
       "comprobado": "Revisor: pasos contrastados con los mensajes 12154-12157 del propio autor; mensaje 12153 abierto en Telegram (la pregunta sobre el flujo). Herramientas de la lista (Blender, Quest 3, Seedance 2.5, Magnific, DaVinci Resolve) y descripción de la publicación, de la vista previa del enlace del mensaje 12150; LinkedIn no se abre desde aquí. Clave pieza:2026-11-08/buzz-cortometraje-vr en publicado.txt y del mismo cortometraje. Ajustada la redacción: «hecho todo con Claude» no equivale a que el paso de Seedance lo sea.",
       "ilustracion": null,
       "ilustracion_alt": "Lau urrats lerro batean, geziz lotuta: kode-dokumentu bat «Claude bidezko app-a» errotuluarekin, 3D kubo bat «Blender eta MCP» errotuluarekin, betaurreko batzuk «BIn errodatzea» errotuluarekin eta klaketa bat «Seedance» errotuluarekin; gezi gorri batek azken hori seinalatzen du, «Kreditu asko» errotuluarekin."
@@ -103,9 +139,15 @@
         "Proiektuak dio bere iturrietan dokumentatutako formak soilik erabiltzen dituela, hiztunak berrikusi behar duen edozein proposamen berreraiketa gisa markatzen duela, eta Aragoiko Hizkuntzaren Akademiaren ortografia jarraitzen duela. Gainera, haraneko hiztunek eta senideek lankidetzan aritzeko bide bat eskaintzen du."
       ],
       "fuentes": [
-        {"titulo": "Belsetán · El aprendiz del pastor (gaztelaniaz)", "url": "https://sanforbel.github.io/belsetan/"}
+        {
+          "titulo": "Belsetán · El aprendiz del pastor (gaztelaniaz)",
+          "url": "https://sanforbel.github.io/belsetan/"
+        }
       ],
-      "mensaje": {"grupo": "vce", "id": 14815},
+      "mensaje": {
+        "grupo": "vce",
+        "id": 14815
+      },
       "comprobado": "Revisor: abierta la web. Confirmados autoría (@sanforbel; nombre por el mensaje 14815, abierto en Telegram), secciones, juegos, ocho fichas con solucionario, vocabulario «próximamente», ortografía de la Academia Aragonesa de la Lengua, 1944 (primera encuesta en Bielsa) y sección Colabora. Los textos de cartas en verso y el cuestionario gramatical no los he comprobado en detalle en las subpáginas.",
       "ilustracion": null,
       "ilustracion_alt": "«Bielsako harana» errotulua duen mendi batek «Belsetán» errotulua duen liburu ireki batera darama, eta honetatik bi gezi irteten dira: bat «Jokoak» errotulua duten dado batzuetara eta bestea «Fitxak» errotulua duen dokumentu batera."
@@ -116,13 +158,19 @@
       "texto": "Windowserako konektore doako batek micro:bit plaka baten sentsoreen datuak USB bidez ThingSpeak plataformara bidaltzen ditu; erabilgarria da eguraldi-estazioetarako edo grafikoak dituzten baratzetarako.",
       "url": "https://apps.microsoft.com/detail/9n7v4d4qmjc3?hl=ca-ES&gl=ES",
       "grupo": "vce",
-      "mensaje": {"grupo": "vce", "id": 14805}
+      "mensaje": {
+        "grupo": "vce",
+        "id": 14805
+      }
     },
     {
       "texto": "Google AI Studiok orain Google Maps Platformeko mapak, lekuen datuak eta ibilbideak dituzten aplikazioak sortzea ahalbidetzen du tresnatik atera gabe; demo-gakoarekin, doakoa eta fakturaziorik gabekoa, muga API bakoitzeko 100 dei da egunean.",
       "url": "https://developers.google.com/maps/ai/ai-studio",
       "grupo": "edumedia",
-      "mensaje": {"grupo": "edumedia", "id": 12159}
+      "mensaje": {
+        "grupo": "edumedia",
+        "id": 12159
+      }
     }
   ],
   "descartado": [

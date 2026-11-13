@@ -7,8 +7,8 @@ en los tres grupos (ChatGPT-IA-edu, Vibe Coding Educativo y EduMedia-IAG).
 **No es un resumen de la semana**: eso ya lo hace cada lunes el boletín semanal de los
 grupos. Las piezas diarias cuentan lo que se dijo; el reportaje explica el asunto entero:
 qué es, por qué importa en un centro educativo, qué dicen quienes tienen algo que decir y
-qué puede hacer un docente. Se publica sin que nadie lo revise antes: la comprobación del
-revisor es la única revisión. **El reportaje sale siempre** (Juanjo, 06-11-2026: «el reportaje no puede
+qué puede hacer un docente. La comprobación del verificador es la única de cada dato contra su
+fuente: escribe como si nadie más fuera a revisarlo. **El reportaje sale siempre** (Juanjo, 06-11-2026: «el reportaje no puede
 faltar, siempre estará»): si la semana va floja, el tema puede venir de las semanas anteriores, si
 sigue vivo, o de un documento de la Biblioteca digital (`biblioteca/*.json`) que merezca explicarse a
 fondo y no haya tenido reportaje.
@@ -36,6 +36,10 @@ fondo y no haya tenido reportaje.
   Markdown: `[texto](https://t.me/<alias>/<id>)` (alias: ChatGPTedu, vceduca, EduMediaIAG).
   Solo se nombra a quien ha publicado un recurso propio, como crédito, también si es Juan José de Haro (así, no «Juanjo»),
   y sin su cargo (administrar un grupo, ser coautor del diario) salvo que tenga que ver con la noticia.
+  Si las posturas que recoges son sobre todo de los autores del diario (Juan José de Haro y Raül
+  Torres), dilo en el texto sin atribuirles la opinión («en este intercambio participaron los
+  autores de este diario») y busca otras voces en los grupos. Y no cierres dando la razón a una
+  de las posturas del grupo: lo que dice un organismo se cuenta como lo que dice ese organismo.
 - **Lo que dicen los actores implicados, uno por uno y con sus documentos**: las empresas
   (OpenAI, Google, Anthropic, Microsoft…), las administraciones educativas, la AEPD, la Unión
   Europea, organismos internacionales (UNESCO, OCDE), según el tema. Cada uno, con su
