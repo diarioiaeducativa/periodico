@@ -67,7 +67,7 @@ IDIOMAS = {
         "tema": "Cambiar entre tema claro y oscuro", "navegacion": "Navegación",
         "contacto": {"titulo": "Contacto", "enlace": "página de contacto", "txt": "Para avisar de un error, pedir que se retire algo o hacer cualquier consulta sobre el diario o su app.", "correo": "Correo", "otras": "También se puede abrir una incidencia en {incidencias} o escribir a las personas que administran cada grupo."},
         "quees": "La redacción", "portada": "Portada", "volver": "Volver a la portada",
-        "dia_ant": "Día anterior", "dia_sig": "Día siguiente", "hoy": "Hoy", "hoy_titulo": "La portada del número de hoy", "este_numero": "La portada de este número", "imprimir": "Imprimir", "papel": "Edición en papel", "papel_imprimir": "Imprimir o guardar en PDF", "papel_volver": "Volver al número", "papel_web": "Esta pieza, con sus enlaces, en la web", "papel_sumario": "En este número", "papel_consejo": "En el diálogo de imprimir, elige «Guardar como PDF» para tenerla en un archivo.", "papel_titulo": "Edición en papel del número {n}",
+        "dia_ant": "Día anterior", "dia_sig": "Día siguiente", "hoy": "Hoy", "hoy_titulo": "La portada del número de hoy", "este_numero": "La portada de este número", "imprimir": "Imprimir", "papel": "Edición en papel", "papel_imprimir": "Imprimir o guardar en PDF", "papel_volver": "Volver al número", "papel_sumario": "En este número", "papel_consejo": "En el diálogo de imprimir, elige «Guardar como PDF» para tenerla en un archivo.", "papel_titulo": "Edición en papel del número {n}",
         "leer_conv": "Lee la conversación original en", "tema_en": "Tema tratado en",
         "comprobado": "Comprobado en", "fuente": "Fuente", "conversacion": "Conversación", "comentarios": "Comentarios", "comentarios_aviso": "Para comentar hace falta una {cuenta}. Los comentarios son públicos y se guardan en GitHub.", "comentarios_cuenta": "cuenta gratuita de GitHub",
         "breves": "Breves", "breves_antes": "Breves anteriores", "vineta": "La viñeta", "vineta_titulo": "La viñeta de Tiza y Algoritmo", "nombre_tiza": "Tiza", "nombre_algoritmo": "Algoritmo", "y": "y",
@@ -196,7 +196,7 @@ IDIOMAS = {
         "tema": "Canviar entre tema clar i fosc", "navegacion": "Navegació",
         "contacto": {"titulo": "Contacte", "enlace": "pàgina de contacte", "txt": "Per avisar d'un error, demanar que es retiri alguna cosa o fer qualsevol consulta sobre el diari o la seva app.", "correo": "Correu", "otras": "També es pot obrir una incidència a {incidencias} o escriure a les persones que administren cada grup."},
         "quees": "La redacció", "portada": "Portada", "volver": "Torna a la portada",
-        "dia_ant": "Dia anterior", "dia_sig": "Dia següent", "hoy": "Avui", "hoy_titulo": "La portada del número d'avui", "este_numero": "La portada d'aquest número", "imprimir": "Imprimeix", "papel": "Edició en paper", "papel_imprimir": "Imprimeix o desa en PDF", "papel_volver": "Torna al número", "papel_web": "Aquesta peça, amb els enllaços, al web", "papel_sumario": "En aquest número", "papel_consejo": "Al diàleg d'imprimir, tria «Desa com a PDF» per tenir-la en un fitxer.", "papel_titulo": "Edició en paper del número {n}",
+        "dia_ant": "Dia anterior", "dia_sig": "Dia següent", "hoy": "Avui", "hoy_titulo": "La portada del número d'avui", "este_numero": "La portada d'aquest número", "imprimir": "Imprimeix", "papel": "Edició en paper", "papel_imprimir": "Imprimeix o desa en PDF", "papel_volver": "Torna al número", "papel_sumario": "En aquest número", "papel_consejo": "Al diàleg d'imprimir, tria «Desa com a PDF» per tenir-la en un fitxer.", "papel_titulo": "Edició en paper del número {n}",
         "leer_conv": "Llegeix la conversa original a", "tema_en": "Tema tractat a",
         "comprobado": "Comprovat a", "fuente": "Font", "conversacion": "Conversa", "comentarios": "Comentaris", "comentarios_aviso": "Per comentar cal un {cuenta}. Els comentaris són públics i es desen a GitHub.", "comentarios_cuenta": "compte gratuït de GitHub",
         "breves": "Breus", "breves_antes": "Breus anteriors", "vineta": "La vinyeta", "vineta_titulo": "La vinyeta de Guix i Algorisme", "nombre_tiza": "Guix", "nombre_algoritmo": "Algorisme", "y": "i",
@@ -3085,7 +3085,7 @@ def qr_papel(ruta):
     """Solo en papel, arriba a la derecha de cada pieza, junto al título: su QR y su dirección. Al final del texto,
     el reparto de las columnas lo mandaba a veces solo a una página nueva."""
     url = BASE + L["carpeta"] + ruta
-    return f'<div class="solo-papel papel-qr" data-pagefind-ignore>{qr_svg(url)}<p>{L["papel_web"]}:<br><span>{e(url)}</span></p></div>'
+    return f'<div class="solo-papel papel-qr" data-pagefind-ignore>{qr_svg(url)}<p><span>{e(url)}</span></p></div>'
 
 
 ICONO_LLEVAR = '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg>'   # code-xml
