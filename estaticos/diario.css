@@ -822,11 +822,6 @@ p.con-nb { margin: 0 0 0.3rem; }
 .mes-semana { margin-top: 1.6rem; }
 .mes-semana h2 { margin: 0 0 0.3rem; }
 .mes-semana h2 .num { font-size: 1rem; font-weight: 400; }
-.hem-boletines { margin-top: 2.4rem; padding-top: 1rem; border-top: 3px solid var(--tinta); }
-.hem-boletines h2 { margin-top: 0; }
-.hem-boletines p { margin: 0 0 0.4rem; color: var(--tinta-2); }
-.hem-boletines li { border-top: 0; padding: 0.2rem 0; }
-.hem-boletines ul { list-style: disc; padding-left: 1.2rem; }
 
 /* Noticias en columnas (ADR 0044). En el ordenador (desde 60rem, el corte de la portada), la noticia ocupa
    todo el ancho: titular y entradilla junto al dibujo, como la principal de la portada, y el texto en
