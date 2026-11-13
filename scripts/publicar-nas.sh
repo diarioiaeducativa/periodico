@@ -23,6 +23,8 @@ log() { printf '%s  %s\n' "$(date '+%F %T')" "$*" | tee -a "$REG"; }
 # sale con la imagen genérica y el bot publica los avisos sin cabecera.
 python3 scripts/og-numero.py >> "$REG" 2>&1 || log "AVISO: no se pudo hacer la imagen del número; queda la genérica"
 python3 scripts/avisos-cabecera.py "$FECHA" >> "$REG" 2>&1 || log "AVISO: los avisos salen sin la cabecera del número"
+# Y a quién avisa el bot por privado: quien ha aportado algo que sale en el número (ADR 0052)
+python3 scripts/avisos-personas.py "$FECHA" >> "$REG" 2>&1 || log "AVISO: hoy el bot no avisará por privado a quien sale en el número"
 # Las imágenes del carrusel de Instagram (ADR 0015); las publica reloj.sh a las 7:05. Si fallan, ese día no hay carrusel.
 python3 scripts/instagram.py imagenes "$FECHA" >> "$REG" 2>&1 || log "AVISO: no se pudieron hacer las imágenes de Instagram; hoy no habrá carrusel"
 # Las cifras de los grupos que deja el Bot de IA Educativa una vez por semana (ADR 0029): las nuevas, al

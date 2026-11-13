@@ -124,6 +124,8 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
   `redaccion.html#privacidad`: si se cambia ese apartado, que siga diciendo lo que guarda el dispositivo.
 - **Contacto** (ADR 0051): `contacto.html`, con el correo (`CORREO_CONTACTO`) y enlace en el pie de todas las
   páginas; es la dirección de la declaración de noticias de Google Play: no se renombra ni se quita del pie.
+- **Aviso privado a quien sale en el número** (ADR 0052): `scripts/avisos-personas.py` añade `personas` a los
+  avisos (quién aportó cada pieza, con los datos del bot) y el bot les escribe por privado a las 7:00.
 - **Avisos del número** (ADR 0043): la app mira `ultimo.json` (no se renombra: hay apps que lo leen) hacia
   las 7:00 y cada 15 minutos hasta las 9:30. Su código está en `android/avisos/` y lo engancha `aplicar.py`
   (lo lanza `construeix.sh`), porque `bubblewrap update` lo borra del manifiesto. Para probar, el emulador

@@ -53,5 +53,6 @@
 | [0049](0049-tiza-y-algoritmo-en-la-cabecera.md) | Tiza y Algoritmo, en las orejas de la cabecera |
 | [0050](0050-las-paginas-que-acumulan-por-meses.md) | Las páginas que acumulan, con lo reciente y el resto por meses |
 | [0051](0051-pagina-de-contacto-propia-enlazada-desde-el-pie.md) | Página de contacto propia, enlazada desde el pie |
+| [0052](0052-aviso-privado-a-quien-sale-en-el-numero.md) | Aviso privado a quien ha aportado algo que sale en el número |
 
 Plantilla: [0000-plantilla.md](0000-plantilla.md). Para crear uno: `nuevo-adr "Título"`.
