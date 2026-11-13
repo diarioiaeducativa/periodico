@@ -2184,7 +2184,8 @@ BOLETINES = {   # los boletines semanales que el diario sustituye, en su web de 
     "vce": "https://vibe-coding-educativo.github.io/boletin/",
     "edumedia": "https://edumedia-iag.github.io/boletin_semanal/",   # el que hacía Raül Torres
 }
-ICONOS["hemeroteca"] = '<rect width="20" height="5" x="2" y="3" rx="1"/><path d="M4 8v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8"/><path d="M10 12h4"/>'   # archive (ADR 0053)
+ICONOS["hemeroteca"] = ('<rect width="8" height="18" x="3" y="3" rx="1"/><path d="M7 3v18"/>'
+                        '<path d="M20.4 18.9c.2.5-.1 1.1-.6 1.3l-1.9.7c-.5.2-1.1-.1-1.3-.6L11.1 5.1c-.2-.5.1-1.1.6-1.3l1.9-.7c.5-.2 1.1.1 1.3.6Z"/>')   # library-big (ADR 0053)
 ICONOS["semana"] = ('<path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/>'
                     '<path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/><path d="M8 18h.01"/><path d="M12 18h.01"/><path d="M16 18h.01"/>')   # calendar-days
 
@@ -2672,11 +2673,11 @@ def pagina_hemeroteca(eds):
     buscador = (f'<form class="buscador hem-buscar" role="search" action="buscar.html">'
                 f'<label class="solo-lector" for="q">{L["buscar_etiqueta"]}</label>'
                 f'<span class="campo">{LUPA}<input id="q" name="q" type="search" autocomplete="off" placeholder="{e(L["buscar_numeros"])}"></span></form>')
-    bloques = [buscador + calendario(eds)]
+    bloques = [calendario(eds)]
     return cabeza(f'{L["hemeroteca"]} | {L["titulo"]}', "", L["hemeroteca_txt"], "archivo.html") + f"""<body class="pag-seccion">
 {cabecera("", "archivo.html", eds[-1]["fecha"], eds[-1]["numero"], True, h1=False)}
 <main class="portada hemeroteca hem-ancha">
-<h1 class="titulo-seccion">{icono("hemeroteca")} {L["hemeroteca"]}</h1>
+<div class="hem-cabeza"><h1 class="titulo-seccion">{icono("hemeroteca")} {L["hemeroteca"]}</h1>{buscador}</div>
 {"".join(bloques)}
 </main>
 {pie("", eds, None)}

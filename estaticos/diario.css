@@ -744,21 +744,26 @@ a.llevar-op.llevar-mas { border-top: 1px solid var(--filete); margin-top: 0.2rem
 .hem-semana ul { padding-left: 1rem; margin-bottom: 0.8rem; }
 /* El calendario de la hemeroteca (ADR 0053): un mes cada vez, por la fecha de cabecera de cada número; el día
    elegido, en azul, con su número y la pieza que lo abrió debajo; hoy, rodeado con el bolígrafo rojo. */
-.hem-buscar { margin: 1.2rem 0 1rem; }
+/* Todo lo posible a la vista sin bajar (Juanjo, 13-11-2026): el buscador en la línea del título, el calendario
+   y los titulares compactos y la portada algo más estrecha */
+.portada.hem-ancha { padding-top: 0.8rem; }
+.hem-cabeza { margin-bottom: 0.8rem; }
+.hem-cabeza .titulo-seccion { margin: 0 0 0.6rem; line-height: 1.1; }
+.hem-buscar { margin: 0; }
 .hem-buscar .campo { max-width: none; }
 /* El gris, solo en el calendario; el día elegido va sobre el papel, como el resto del diario (Juanjo, 13-11-2026) */
 .calendario { margin: 0 0 1.4rem; }
-.cal-izq { padding: 0.9rem 1rem 1rem; border: 1px solid var(--filete); border-radius: 8px; background: var(--papel-2); }
-.cal-nav { display: flex; align-items: center; justify-content: space-between; gap: 0.6rem; margin-bottom: 0.5rem; }
-.cal-nav button { flex: none; display: inline-grid; place-items: center; width: 2.6rem; height: 2.6rem; padding: 0; border: 1px solid var(--filete); border-radius: 999px; background: var(--papel); color: var(--tinta); cursor: pointer; }
+.cal-izq { padding: 0.7rem 0.8rem 0.8rem; border: 1px solid var(--filete); border-radius: 8px; background: var(--papel-2); }
+.cal-nav { display: flex; align-items: center; justify-content: space-between; gap: 0.6rem; margin-bottom: 0.3rem; }
+.cal-nav button { flex: none; display: inline-grid; place-items: center; width: 2.2rem; height: 2.2rem; padding: 0; border: 1px solid var(--filete); border-radius: 999px; background: var(--papel); color: var(--tinta); cursor: pointer; }
 .cal-nav button:hover:not(:disabled) { border-color: var(--azul); color: var(--azul); }
 .cal-nav button:disabled { opacity: 0.35; cursor: default; }
 .cal-nav .ico { width: 1.25rem; height: 1.25rem; }
-.cal-elegir { min-width: 0; padding: 0.4rem 1rem; border: 1px solid var(--filete); border-radius: 999px; background: var(--papel); color: var(--tinta); font: inherit; font-weight: 700; font-size: 1.1rem; text-align: center; cursor: pointer; }
-.cal-mes { width: 100%; table-layout: fixed; border-collapse: separate; border-spacing: 0.3rem; }
-.cal-mes th { padding: 0.2rem 0; color: var(--tinta-2); font-size: 0.85rem; font-weight: 600; }
+.cal-elegir { min-width: 0; padding: 0.25rem 0.9rem; border: 1px solid var(--filete); border-radius: 999px; background: var(--papel); color: var(--tinta); font: inherit; font-weight: 700; font-size: 1.05rem; text-align: center; cursor: pointer; }
+.cal-mes { width: 100%; table-layout: fixed; border-collapse: separate; border-spacing: 0.25rem 0.2rem; }
+.cal-mes th { padding: 0.1rem 0; color: var(--tinta-2); font-size: 0.85rem; font-weight: 600; }
 .cal-mes abbr { text-decoration: none; }
-.cal-mes td { height: 2.7rem; padding: 0; text-align: center; }
+.cal-mes td { height: 2.2rem; padding: 0; text-align: center; }
 .cal-mes td > a, .cal-mes td > span { display: grid; place-items: center; height: 100%; border-radius: 6px; font-variant-numeric: tabular-nums; }
 .cal-mes td > span { color: var(--tinta-2); opacity: 0.5; }
 .cal-mes td > a { border: 1px solid var(--filete); background: var(--papel); color: var(--azul); font-weight: 700; text-decoration: none; }
@@ -777,15 +782,15 @@ a.llevar-op.llevar-mas { border-top: 1px solid var(--filete); margin-top: 0.2rem
   pointer-events: none;
 }
 /* El número elegido, en su marco, como el calendario pero sobre el papel (Juanjo, 13-11-2026) */
-.cal-detalle { display: grid; grid-template-columns: 15rem minmax(0, 1fr); gap: 0.4rem 1.3rem; align-items: start; margin-top: 1.1rem; padding: 1rem 1.1rem 1.1rem; border: 1px solid var(--filete); border-radius: 8px; }
+.cal-detalle { display: grid; grid-template-columns: 13rem minmax(0, 1fr); gap: 0.4rem 1.2rem; align-items: start; margin-top: 1rem; padding: 0.8rem 1rem 0.9rem; border: 1px solid var(--filete); border-radius: 8px; }
 .cal-detalle > .cal-texto:only-child { grid-column: 1 / -1; }
 /* La portada no cuenta para la altura de la fila (contain): la marcan los titulares, y si son pocos la portada se
    recorta por abajo; si son muchos, el script la deja flotando y los titulares siguen por debajo. */
-.cal-portada { display: block; align-self: stretch; min-height: 11rem; line-height: 0; contain: size; }
+.cal-portada { display: block; align-self: stretch; min-height: 6rem; line-height: 0; contain: size; }
 .cal-portada img { width: 100%; height: auto; max-height: 100%; object-fit: cover; object-position: top; border: 1px solid var(--filete); border-radius: 3px; background: #fbfbf9; box-shadow: 0 2px 8px rgb(0 0 0 / 0.12); }
 .cal-detalle.envuelve { display: block; }
 .cal-detalle.envuelve::after { content: ""; display: block; clear: both; }
-.cal-detalle.envuelve .cal-portada { float: left; width: 15rem; min-height: 0; margin: 0.2rem 1.3rem 0.6rem 0; contain: none; }
+.cal-detalle.envuelve .cal-portada { float: left; width: 13rem; min-height: 0; margin: 0.2rem 1.3rem 0.6rem 0; contain: none; }
 .cal-detalle.envuelve .cal-portada img { max-height: none; }
 .cal-portada .ampliar { display: block; width: 100%; height: 100%; padding: 0; border: 0; background: none; line-height: 0; cursor: zoom-in; }
 .cal-portada .ampliar:hover img { border-color: var(--azul); }
@@ -794,9 +799,9 @@ a.llevar-op.llevar-mas { border-top: 1px solid var(--filete); margin-top: 0.2rem
 .cal-fecha a { color: var(--tinta); text-decoration: none; }
 .cal-fecha a:hover { color: var(--azul); text-decoration: underline; }
 .cal-fecha .num { color: var(--tinta-2); font-weight: 400; font-style: italic; }
-.cal-sec { margin-top: 0.8rem !important; color: var(--sec, var(--azul)); font-size: 0.88rem; font-weight: 600; }
+.cal-sec { margin-top: 0.5rem !important; color: var(--sec, var(--azul)); font-size: 0.88rem; font-weight: 600; }
 .hemeroteca .cal-texto ul { margin: 0.15rem 0 0; }
-.hemeroteca .cal-texto li { padding: 0.3rem 0; border-top: 0; line-height: 1.3; }
+.hemeroteca .cal-texto li { padding: 0.15rem 0; border-top: 0; font-size: 0.95rem; line-height: 1.28; }
 .hemeroteca .cal-texto li a { font-weight: 500; }
 @media (max-width: 36rem) {
   .cal-detalle { grid-template-columns: 1fr; padding: 0.8rem 0.7rem 0.9rem; }
@@ -807,7 +812,10 @@ a.llevar-op.llevar-mas { border-top: 1px solid var(--filete); margin-top: 0.2rem
    (Juanjo, 13-11-2026). El calendario acompaña al bajar si los titulares del día son muchos. */
 @media (min-width: 64rem) {
   .hemeroteca.hem-ancha { max-width: 72rem; }
-  .hem-ancha > :not(.calendario, .hem-buscar) { max-width: 44rem; }
+  .hem-ancha > :not(.calendario, .hem-cabeza) { max-width: 44rem; }
+  .hem-cabeza { display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
+  .hem-cabeza .titulo-seccion { margin: 0; }
+  .hem-cabeza .hem-buscar { flex: 0 1 30rem; }
   .calendario { display: grid; grid-template-columns: 22rem minmax(0, 1fr); align-items: start; }
   .cal-izq { position: sticky; top: 1rem; }
   .cal-detalle { margin: 0 0 0 1.8rem; }
@@ -815,7 +823,7 @@ a.llevar-op.llevar-mas { border-top: 1px solid var(--filete); margin-top: 0.2rem
 @media (max-width: 30rem) {
   .cal-izq { padding: 0.7rem 0.6rem 0.8rem; }
   .cal-mes { border-spacing: 0.2rem; }
-  .cal-mes td { height: 2.5rem; }
+  .cal-mes td { height: 2.2rem; }
 }
 .con-nb { color: var(--azul); font-weight: 400; font-size: 0.95rem; }
 p.con-nb { margin: 0 0 0.3rem; }
