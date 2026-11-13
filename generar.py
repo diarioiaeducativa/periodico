@@ -3069,7 +3069,8 @@ def qr_svg(url):
         import segno
     except ImportError:
         return ""
-    return segno.make(url, error="m").svg_inline(scale=1, border=0, dark="#000").replace("<svg ", '<svg class="qr" aria-hidden="true" ', 1)
+    # Sin medidas fijas y con viewBox, para que el dibujo llene la caja que le da la hoja de estilos
+    return segno.make(url, error="m").svg_inline(border=0, dark="#000", omitsize=True, svgclass="qr").replace("<svg ", '<svg aria-hidden="true" ', 1)
 
 
 def cola_papel(ruta, origen_html, comprobado_html):
