@@ -2637,7 +2637,6 @@ SCRIPT_CALENDARIO = """<script>
   function ver(m, guardar) {
     if (!meses.includes(m)) m = meses[meses.length - 1];
     tablas.forEach(t => { t.hidden = t.dataset.mes !== m; });
-    document.querySelectorAll('.hem-lista').forEach(s => { s.hidden = s.dataset.mes !== m; });
     elegir.value = m;
     const i = meses.indexOf(m); ant.disabled = i === 0; sig.disabled = i === meses.length - 1;
     const dias = cal.querySelectorAll(`.cal-mes[data-mes="${m}"] a[data-dia]`);
@@ -2667,32 +2666,13 @@ SCRIPT_CALENDARIO = """<script>
 
 
 def pagina_hemeroteca(eds):
-    """Todos los números (ADR 0034 y 0053): el buscador, el calendario del mes y, debajo, sus semanas, plegadas,
-    con sus días y la pieza que abrió cada uno; la más reciente, abierta. El mes de las semanas es el de la
-    fecha de cabecera de sus números, el del calendario: una semana a caballo de dos meses sale en los dos."""
-    porsem = por_semanas(eds)
-    meses = {}
-    for sem, ds in porsem.items():
-        for m in sorted({publicacion(d["fecha"])[:7] for d in ds}):
-            meses.setdefault(m, []).append(sem)
-    con_pagina = set(meses_y_semanas(eds))
-    bloques = []
-    for mes in sorted(meses, reverse=True):
-        semanas_html = []
-        for n, sem in enumerate(reversed(meses[mes])):
-            ds = porsem[sem]
-            nums = numeros(ds)
-            nb = f' <span class="con-nb" title="{e(L["con_nb"])}">{icono("video")}<span class="solo-lector">{L["con_nb"]}</span></span>' if cargar_multimedia(sem) else ""
-            semanas_html.append(f'<details class="hem-semana"{" open" if n == 0 else ""}><summary><span class="rango">{titulo_semana(sem)}</span>'
-                                f'{f" <span class=num>· {nums}</span>" if nums else ""}{nb}</summary>'
-                                f'<p class="leer"><a href="semana/{sem}/">{L["ver_semana"]}</a></p>{dias_lista("", ds)}</details>')
-        nombre = mes_largo(mes + "-01")
-        titulo = f'<a href="mes/{mes}/">{nombre}</a>' if mes in con_pagina else nombre
-        bloques.append(f'<section class="hem-lista" data-mes="{mes}"><h2>{titulo}</h2>{"".join(semanas_html)}</section>')
+    """Todos los números (ADR 0034 y 0053): el buscador y el calendario, con el número del día elegido y el resumen
+    de cada semana. La lista de semanas que había debajo se quitó: lo da el calendario (Juanjo, 13-11-2026); las
+    páginas de cada mes siguen enlazadas desde las de cada semana."""
     buscador = (f'<form class="buscador hem-buscar" role="search" action="buscar.html">'
                 f'<label class="solo-lector" for="q">{L["buscar_etiqueta"]}</label>'
                 f'<span class="campo">{LUPA}<input id="q" name="q" type="search" autocomplete="off" placeholder="{e(L["buscar_numeros"])}"></span></form>')
-    bloques.insert(0, buscador + calendario(eds))
+    bloques = [buscador + calendario(eds)]
     bols = "".join(f'<li>{enlace(u, GRUPOS[g][0])}</li>' for g, u in BOLETINES.items())
     boletines = f'<section class="hem-boletines"><h2>{L["boletines_h"]}</h2><p>{L["boletines_txt"]}</p><ul>{bols}</ul></section>' if bols else ""
     return cabeza(f'{L["hemeroteca"]} | {L["titulo"]}', "", L["hemeroteca_txt"], "archivo.html") + f"""<body class="pag-seccion">

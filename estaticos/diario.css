@@ -803,7 +803,6 @@ a.llevar-op.llevar-mas { border-top: 1px solid var(--filete); margin-top: 0.2rem
   .cal-portada, .cal-detalle.envuelve .cal-portada { float: none; width: min(100%, 17rem); min-height: 0; margin: 0 auto 0.4rem; contain: none; }
   .cal-portada img { max-height: none; }
 }
-.hem-lista h2:first-child { margin-top: 0.4rem; }
 /* En pantalla ancha, el calendario a la izquierda y el número elegido a la derecha, a la vista los dos sin bajar
    (Juanjo, 13-11-2026). El calendario acompaña al bajar si los titulares del día son muchos. */
 @media (min-width: 64rem) {
