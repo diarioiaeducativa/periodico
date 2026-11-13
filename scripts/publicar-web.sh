@@ -25,8 +25,10 @@ bash scripts/multimedia-traducir.sh > /dev/null 2>> "$REG" || log "AVISO: algún
 python3 generar.py >> "$REG" 2>&1 || { log "ERROR: el generador falla"; exit 1; }
 python3 -m pagefind --site sitio >> "$REG" 2>&1 || log "AVISO: no se pudo rehacer el índice del buscador; queda el anterior"
 
-git -C "$SITIO" pull -q --ff-only >> "$REG" 2>&1 || { log "ERROR: no se pudo actualizar $SITIO"; exit 1; }
-rsync -a --delete --exclude .git --exclude .github --exclude README.md --exclude LICENSE --exclude LICENSE-CODIGO \
+# --rebase: la copia de los comentarios (ADR 0030) sube sola al sitio y puede ir por delante de un intento
+# anterior que no llegó a subir; la nota del modelo sigue a su commit
+git -c notes.rewriteRef=refs/notes/ia -C "$SITIO" pull -q --rebase >> "$REG" 2>&1 || { log "ERROR: no se pudo actualizar $SITIO"; exit 1; }
+rsync -a --delete --exclude .git --exclude .github --exclude /comentarios/ --exclude README.md --exclude LICENSE --exclude LICENSE-CODIGO \
   --exclude .nojekyll --exclude fuentes/OFL.txt sitio/ "$SITIO/"
 git -C "$SITIO" add -A
 if ! git -C "$SITIO" diff --cached --quiet; then
@@ -34,7 +36,9 @@ if ! git -C "$SITIO" diff --cached --quiet; then
   git -C "$SITIO" notes --ref=ia add -f -m "$NOTA" HEAD || { log "ERROR: no se pudo preparar el commit del sitio"; exit 1; }
 fi
 if [ -n "$(git -C "$SITIO" rev-list '@{u}..HEAD' 2>/dev/null)" ]; then
-  git -C "$SITIO" push -q && git -C "$SITIO" push -q origin refs/notes/ia || { log "ERROR: no se pudo subir el sitio"; exit 1; }
+  # Si entretanto ha subido la copia de los comentarios, se pone encima y se vuelve a intentar
+  { git -C "$SITIO" push -q || { git -c notes.rewriteRef=refs/notes/ia -C "$SITIO" pull -q --rebase && git -C "$SITIO" push -q; }; } &&
+    git -C "$SITIO" push -q origin refs/notes/ia || { log "ERROR: no se pudo subir el sitio"; exit 1; }
   log "sitio publicado: $(git -C "$SITIO" log --oneline -1)"
 fi
 

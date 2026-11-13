@@ -74,13 +74,13 @@ if [ "$SIMULAR" = 1 ]; then   # se comprueban las credenciales sin subir nada ni
   [ -n "${TELEGRAM_TOKEN:-}" ] && curl -s --max-time 30 "https://api.telegram.org/bot$TELEGRAM_TOKEN/getMe" | grep -o '"ok":[a-z]*' | sed 's/^/vigilante (simulación): bot de avisos /'
   exit 0
 fi
-rsync -a --delete --exclude .git --exclude .github --exclude README.md --exclude LICENSE --exclude LICENSE-CODIGO \
+rsync -a --delete --exclude .git --exclude .github --exclude /comentarios/ --exclude README.md --exclude LICENSE --exclude LICENSE-CODIGO \
   --exclude .nojekyll --exclude fuentes/OFL.txt sitio/ /tmp/sitio/
 git config --global user.name "Diario de IA Educativa (vigilante)"
 git config --global user.email "diarioiaeducativa@users.noreply.github.com"
 git -C /tmp/sitio add -A
 git -C /tmp/sitio commit -qm "Número del $HOY, con la pieza de reserva (vigilante, ADR 0021)" &&
-  git -C /tmp/sitio push -q ||
+  { git -C /tmp/sitio push -q || { git -C /tmp/sitio pull -q --rebase && git -C /tmp/sitio push -q; }; } ||   # la copia de los comentarios (ADR 0030) puede subir entretanto
   { avisar "Hoy ($HOY) no hay número en la web y no puedo subir el sitio con la reserva: queda a mano."; exit 1; }
 unset GIT_SSH_COMMAND
 
