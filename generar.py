@@ -2490,7 +2490,7 @@ def datos_dia(d, medidas):
     foto = f'{d["fecha"]}-{L["codigo"]}.jpg'
     ancho, alto = medidas.get(foto, [0, 0])
     return {"fecha": mayus(fecha_larga(publicacion(d["fecha"]))), "num": f'{L["num"]} {d["numero"]}' if d.get("numero") else "",
-            "numero": f'{d["fecha"]}/', "portada": f"portadas/{foto}" if alto else "", "ancho": str(ancho), "alto": str(alto)}
+            "numero": f'{d["fecha"]}/', "portada": f'{recursos("")}portadas/{foto}' if alto else "", "ancho": str(ancho), "alto": str(alto)}
 
 
 def piezas_dia(d):
@@ -2600,7 +2600,19 @@ SCRIPT_CALENDARIO = """<script>
     texto.append(p('leer', enlace(d.numero, leer)));
     hijos.push(texto);
     detalle.replaceChildren(...hijos);
+    ajusta();
   }
+  // Sin huecos (ADR 0041): si los titulares no caben al lado de la portada, siguen por debajo de ella; si son
+  // pocos, la portada se recorta por abajo (CSS) para acabar a la vez que ellos.
+  const estrecho = matchMedia('(max-width: 36rem)');
+  function ajusta() {
+    detalle.classList.remove('envuelve');
+    const img = detalle.querySelector('.cal-portada img'), tx = detalle.querySelector('.cal-texto');
+    if (!img || !tx || estrecho.matches) return;
+    const natural = img.getBoundingClientRect().width * img.getAttribute('height') / img.getAttribute('width');
+    if (tx.offsetHeight > natural + 24) detalle.classList.add('envuelve');
+  }
+  let espera; addEventListener('resize', () => { clearTimeout(espera); espera = setTimeout(ajusta, 150); });
   function ver(m, guardar) {
     if (!meses.includes(m)) m = meses[meses.length - 1];
     tablas.forEach(t => { t.hidden = t.dataset.mes !== m; });
