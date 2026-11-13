@@ -41,13 +41,39 @@ no se abre al público (trabaja solo, sin que nadie se conecte a él).
   `publicar-nas.sh`, `publicar.sh` y `vigilante.sh`), o la borraría.
 - **Configuración**: `GISCUS` y `comentarios()` en `generar.py`; textos en `comentarios`,
   `comentarios_aviso` y `comentarios_cuenta` de cada idioma; estilo en `diario.css`.
-- **Se cargan solo al pulsar «Ver los comentarios»** (13-11-2026, aprobado por Juanjo entre las medidas del
-  examen del diario, ADR 0055). Hasta entonces, cada pieza cargaba `giscus.app/client.js` al abrirse, así que
-  todo lector se conectaba a un tercero, y la página de privacidad decía «Quien no comenta no envía nada»,
-  que no era cierto. Ahora la sección muestra el aviso y un botón; el programa de giscus se pide al pulsarlo.
-  La frase de privacidad dice eso mismo en los cinco idiomas. Comprobado en Chromium, Firefox y WebKit de
-  móvil: ninguna petición fuera del diario antes de pulsar; después, `giscus.app` y `github.githubassets.com`.
-  Lo que se pierde: no se ve cuántos comentarios hay sin pulsar (el 13-11 no había ninguno en ninguna pieza).
+- **Lo ya comentado se lee sin pulsar nada, de una copia en el propio sitio; giscus, solo para escribir**
+  (13-11-2026). El primer arreglo de la privacidad (aprobado por Juanjo entre las medidas del examen del diario,
+  ADR 0055) cargaba giscus solo al pulsar «Ver los comentarios»: así ningún lector se conectaba a un tercero
+  (antes, cada pieza pedía `giscus.app/client.js` al abrirse y la página de privacidad decía «Quien no comenta
+  no envía nada», que no era cierto), pero había que pulsar sin saber si había algo. Juanjo: «Eso no es
+  práctico». Ahora:
+  - Una acción del repositorio del sitio (`.github/workflows/copiar-comentarios.yml`, programa en
+    `.github/copiar-comentarios.py`) lee de GitHub todos los hilos de la categoría y deja uno por pieza en
+    `comentarios/AAAA-MM-DD/id.json`, con autor, enlace a su perfil, fecha (UTC), enlace al comentario y
+    texto. Se lanza con cada comentario creado, editado o borrado, con cada hilo borrado o movido, a mano y
+    cada hora (lo que se oculta al moderar no avisa: tarda como mucho una hora en desaparecer de la copia).
+    Siempre lo rehace todo; si entretanto ha subido el número, vuelve a empezar sobre lo nuevo (cinco intentos).
+  - El texto es el HTML que da GitHub, pasado por una lista cerrada de etiquetas de texto: sin atributos salvo
+    el destino de los enlaces (solo `http`, `https` y `mailto`), sin scripts, estilos ni SVG, y sin imágenes,
+    que quedan como enlace, para que leer no cargue nada de fuera. Sin avatares. Un comentario ocultado no
+    sale; uno borrado, solo si tiene respuestas («Comentario borrado»), para no dejarlas sueltas.
+  - La pieza pide su archivo al propio diario y, si lo hay, enseña los comentarios con sus respuestas encima
+    del aviso y del botón, que ahora dice «Comentar» (en los cinco idiomas). Si aún no hay comentarios, la
+    petición da 404 y solo queda el botón. Al pulsarlo se carga giscus como antes y la copia se oculta, porque
+    giscus enseña el hilo entero. La fecha, con las mismas reglas que el resto del diario (`fecha_corta` y
+    `fecha_con_anyo`, el año solo si no es el actual) y la hora local: el euskera no está en todos los navegadores.
+  - La publicación no toca `comentarios/` (`--exclude /comentarios/` en `publicar-nas.sh`, `publicar-web.sh`,
+    `publicar.sh` y `vigilante.sh`). Como la acción puede subir al sitio mientras sale el número, esos scripts
+    actualizan con `pull --rebase` (la nota del modelo sigue a su commit con `notes.rewriteRef`) y, si la
+    subida falla, se ponen encima y lo intentan otra vez.
+  - La frase de privacidad lo dice en los cinco idiomas: los comentarios se leen de una copia del diario y
+    giscus se carga solo al pulsar «Comentar».
+  Validación: el programa, con una respuesta de GitHub guardada que incluía enlaces `javascript:`, atributos
+  `onclick`, `<script>`, SVG, una imagen de `camo`, casillas, emoji, un comentario ocultado y otro borrado con y
+  sin respuestas. La página, con dos comentarios y una respuesta simulados, en Chromium, Firefox y WebKit, en el
+  ordenador (1280 px) y en el móvil (360 px), tema claro y oscuro, en castellano, catalán y euskera: sin errores
+  de JavaScript ni desbordamiento y ninguna petición fuera del diario antes de pulsar; después, `giscus.app` y
+  `github.githubassets.com`, y la copia oculta.
 
 ## Alternativas descartadas
 
@@ -60,7 +86,11 @@ no se abre al público (trabaja solo, sin que nadie se conecte a él).
 ## Consecuencias
 
 - Moderación desde GitHub: ocultar, borrar o bloquear en la Discussion de cada pieza.
-- Cada página pide `giscus.app` al llegar al recuadro: es la única petición a un tercero del diario.
+- Leer los comentarios no conecta con nadie de fuera; `giscus.app` se pide solo al pulsar «Comentar», y es la
+  única petición a un tercero del diario.
+- Lo que se comenta tarda en salir en la copia lo que tardan la acción y GitHub Pages (un par de minutos); en
+  giscus sale al momento.
+- giscus da como mucho 100 comentarios por hilo y 100 respuestas por comentario en una consulta: la copia, igual.
 - Si se renombra la categoría, hay que cambiar `GISCUS["category"]` (giscus la busca por nombre).
 
 ## Riesgos y limitaciones
