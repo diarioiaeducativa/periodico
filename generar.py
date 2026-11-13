@@ -80,6 +80,7 @@ IDIOMAS = {
         "unete_txt": "El Diario de IA Educativa cuenta lo que se habla en tres grupos abiertos de Telegram donde docentes comparten lo que prueban con la inteligencia artificial. Las conversaciones se pueden leer sin entrar; para participar, basta con unirse.",
         "archivo": "Archivo por días", "pie_archivo": "Archivo", "pie_diario": "El diario", "este_numero": "este número",
         "anyo": "Año", "hemeroteca": "Hemeroteca", "hemeroteca_txt": "Todos los números, por meses y semanas.", "nb_anteriores": "Boletines anteriores", "semana_n": "Semana {n}",
+        "dias_cortos": ["lu", "ma", "mi", "ju", "vi", "sá", "do"], "calendario": "Calendario de los números", "cal_anterior": "Mes anterior", "cal_siguiente": "Mes siguiente", "cal_elegir": "Elige el mes", "cal_leer": "Leer el número", "buscar_numeros": "Busca en todos los números",
         # La semana y el mes (ADR 0034)
         "semana": "La semana", "semana_txt": "Todo lo que contó el diario de lo que se habló en los grupos esa semana, por secciones, con el pódcast y el vídeo de cada grupo. Elige un grupo para ver solo lo suyo.", "semana_actual": "Resumen semanal", "grupo_filtro": "Ver lo de un grupo", "grupo_todos": "Todos", "sin_grupo": "Este grupo no tiene piezas esta semana.", "nb_h": "El pódcast y el vídeo de la semana", "nb_txt": "Cada lunes, NotebookLM, de Google, prepara un pódcast y un vídeo de cada grupo con su conversación completa de la semana, también lo que el diario no ha contado. Un agente de IA los contrasta con la conversación antes de publicarlos.", "nb_es": "", "nb_pendiente": "El pódcast y el vídeo de cada grupo se añaden aquí el lunes por la mañana.", "nb_video": "Vídeo", "nb_ver": "Reproducir el vídeo de {g}", "nb_youtube": "Verlo en YouTube", "nb_podcast": "Pódcast", "nb_archive": "Escucharlo en Internet Archive", "cs_h": "Lo más importante de la semana", "cs_h_g": "Lo más importante de la semana en {g}", "cs_nota": "Lo escribe un agente de IA con lo que contó el diario esa semana, y otro lo contrasta con cada pieza antes de publicarlo.", "numeros_semana": "Los números de la semana", "sem_ant": "Semana anterior", "sem_sig": "Semana siguiente", "todo_mes": "Todo el mes", "mes": "El mes", "mes_txt": "Las semanas del mes, con la pieza que abrió cada número.", "mes_ant": "Mes anterior", "mes_sig": "Mes siguiente", "por_meses": "Por meses", "ver_semana": "La semana entera, por secciones", "con_nb": "Con el pódcast y el vídeo de cada grupo", "boletines_h": "Boletines semanales anteriores", "boletines_txt": "Hasta noviembre de 2026, cada grupo tenía su propio boletín semanal. Siguen en su web:",
         "todos_numeros": "Hemeroteca: todos los números",
@@ -208,6 +209,7 @@ IDIOMAS = {
         "unete_txt": "El Diari d'IA Educativa explica el que es parla en tres grups oberts de Telegram on docents comparteixen el que proven amb la intel·ligència artificial. Les converses es poden llegir sense entrar-hi; per participar-hi, n'hi ha prou d'unir-s'hi.",
         "archivo": "Arxiu per dies", "pie_archivo": "Arxiu", "pie_diario": "El diari", "este_numero": "aquest número",
         "anyo": "Any", "hemeroteca": "Hemeroteca", "hemeroteca_txt": "Tots els números, per mesos i setmanes.", "nb_anteriores": "Butlletins anteriors", "semana_n": "Setmana {n}",
+        "dias_cortos": ["dl", "dt", "dc", "dj", "dv", "ds", "dg"], "calendario": "Calendari dels números", "cal_anterior": "Mes anterior", "cal_siguiente": "Mes següent", "cal_elegir": "Tria el mes", "cal_leer": "Llegeix el número", "buscar_numeros": "Cerca a tots els números",
         # La semana y el mes (ADR 0034)
         "semana": "La setmana", "semana_txt": "Tot el que va explicar el diari del que es va parlar als grups aquella setmana, per seccions, amb el pòdcast i el vídeo de cada grup. Tria un grup per veure només el seu.", "semana_actual": "Resum setmanal", "grupo_filtro": "Veure el d'un grup", "grupo_todos": "Tots", "sin_grupo": "Aquest grup no té peces aquesta setmana.", "nb_h": "El pòdcast i el vídeo de la setmana", "nb_txt": "Cada dilluns, NotebookLM, de Google, prepara un pòdcast i un vídeo de cada grup amb tota la seva conversa de la setmana, també el que el diari no ha explicat. Un agent d'IA els contrasta amb la conversa abans de publicar-los.", "nb_es": "Són en castellà.", "nb_pendiente": "El pòdcast i el vídeo de cada grup s'afegeixen aquí dilluns al matí.", "nb_video": "Vídeo", "nb_ver": "Reproduir el vídeo de {g}", "nb_youtube": "Mira'l a YouTube", "nb_podcast": "Pòdcast", "nb_archive": "Escolta'l a Internet Archive", "cs_h": "El més important de la setmana", "cs_h_g": "El més important de la setmana a {g}", "cs_nota": "L'escriu un agent d'IA amb el que va explicar el diari aquella setmana, i un altre el contrasta amb cada peça abans de publicar-lo.", "numeros_semana": "Els números de la setmana", "sem_ant": "Setmana anterior", "sem_sig": "Setmana següent", "todo_mes": "Tot el mes", "mes": "El mes", "mes_txt": "Les setmanes del mes, amb la peça que va obrir cada número.", "mes_ant": "Mes anterior", "mes_sig": "Mes següent", "por_meses": "Per mesos", "ver_semana": "Tota la setmana, per seccions", "con_nb": "Amb el pòdcast i el vídeo de cada grup", "boletines_h": "Butlletins setmanals anteriors", "boletines_txt": "Fins al novembre de 2026, cada grup tenia el seu propi butlletí setmanal. Continuen al seu web:",
         "todos_numeros": "Hemeroteca: tots els números",
@@ -2471,23 +2473,144 @@ def meses_y_semanas(eds):
     return meses
 
 
+CHEVRON_IZQ = '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>'   # chevron-left
+CHEVRON_DER = '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>'    # chevron-right
+
+
+def datos_dia(d):
+    """Lo que el calendario cuenta de un número: su fecha de cabecera, el número y la pieza que lo abrió."""
+    sale = publicacion(d["fecha"])
+    abre = d["reportaje"] if d.get("reportaje") else d["piezas"][0]
+    return {"fecha": mayus(fecha_larga(sale)), "num": f'{L["num"]} {d["numero"]}' if d.get("numero") else "",
+            "rep": L["reportaje"] if d.get("reportaje") else "", "titular": abre["titular"],
+            "pieza": f'{d["fecha"]}/{abre["id"]}.html', "numero": f'{d["fecha"]}/'}
+
+
+def detalle_dia(x):
+    """El recuadro bajo el calendario con el día elegido (lo rehace el script con los mismos elementos)."""
+    rep = f'<span class="rep">{e(x["rep"])}</span>' if x["rep"] else ""
+    num = f' <span class="num">· {e(x["num"])}</span>' if x["num"] else ""
+    return (f'<p class="cal-fecha">{e(x["fecha"])}{num}</p>'
+            f'<p class="cal-abre">{rep}<a href="{e(x["pieza"])}">{e(x["titular"])}</a></p>'
+            f'<p class="leer"><a href="{e(x["numero"])}">{L["cal_leer"]}</a></p>')
+
+
+def calendario(eds):
+    """Un calendario por mes, por la fecha de cabecera de cada número, que es la que recuerda quien lo leyó
+    (ADR 0053): cada día con número enlaza a él. Sale visible el último mes; el script cambia de mes."""
+    por_dia = {publicacion(d["fecha"]): d for d in eds}
+    meses = sorted({k[:7] for k in por_dia})
+    ultimo = max(por_dia)
+    cabeza_tabla = "".join(f'<th scope="col"><abbr title="{L["dias"][i]}">{L["dias_cortos"][i]}</abbr></th>' for i in range(7))
+    tablas = []
+    for m in meses:
+        y, mo = map(int, m.split("-"))
+        dia = datetime.date(y, mo, 1)
+        celdas = ['<td class="vacio"></td>'] * dia.weekday()
+        while dia.month == mo:
+            iso = dia.isoformat()
+            d = por_dia.get(iso)
+            if d:
+                x = datos_dia(d)
+                etiqueta = f'{x["fecha"]}' + (f', {x["num"]}' if x["num"] else "") + f': {x["titular"]}'
+                datos = " ".join(f'data-{k}="{e(v)}"' for k, v in x.items())
+                celdas.append(f'<td><a href="{x["numero"]}" data-dia="{iso}" {datos} aria-label="{e(etiqueta)}"'
+                              f'{" class=elegido" if iso == ultimo else ""}>{dia.day}</a></td>')
+            else:
+                celdas.append(f'<td><span data-dia="{iso}">{dia.day}</span></td>')
+            dia += datetime.timedelta(days=1)
+        celdas += ['<td class="vacio"></td>'] * (-len(celdas) % 7)
+        filas = "".join(f'<tr>{"".join(celdas[i:i + 7])}</tr>' for i in range(0, len(celdas), 7))
+        tablas.append(f'<table class="cal-mes" data-mes="{m}"{"" if m == meses[-1] else " hidden"}>'
+                      f'<caption class="solo-lector">{L["calendario"]}: {mes_largo(m + "-01")}</caption>'
+                      f'<thead><tr>{cabeza_tabla}</tr></thead><tbody>{filas}</tbody></table>')
+    opciones = "".join(f'<option value="{m}"{" selected" if m == meses[-1] else ""}>{mes_largo(m + "-01")}</option>' for m in reversed(meses))
+    return (f'<section class="calendario" aria-label="{L["calendario"]}">'
+            f'<div class="cal-nav"><button type="button" class="cal-ant" title="{L["cal_anterior"]}" aria-label="{L["cal_anterior"]}">{CHEVRON_IZQ}</button>'
+            f'<select class="cal-elegir" aria-label="{L["cal_elegir"]}">{opciones}</select>'
+            f'<button type="button" class="cal-sig" title="{L["cal_siguiente"]}" aria-label="{L["cal_siguiente"]}">{CHEVRON_DER}</button></div>'
+            f'{"".join(tablas)}<div class="cal-detalle" aria-live="polite">{detalle_dia(datos_dia(por_dia[ultimo]))}</div></section>')
+
+
+SCRIPT_CALENDARIO = """<script>
+(() => {
+  const cal = document.querySelector('.calendario'); if (!cal) return;
+  const tablas = [...cal.querySelectorAll('.cal-mes')], meses = tablas.map(t => t.dataset.mes);
+  const elegir = cal.querySelector('.cal-elegir'), ant = cal.querySelector('.cal-ant'), sig = cal.querySelector('.cal-sig');
+  const detalle = cal.querySelector('.cal-detalle'), leer = detalle.querySelector('.leer a').textContent;
+  function p(clase, ...hijos) { const x = document.createElement('p'); x.className = clase; x.append(...hijos); return x; }
+  function enlace(href, texto) { const a = document.createElement('a'); a.href = href; a.textContent = texto; return a; }
+  function marca(a) {   // el día elegido: su fecha, su número y la pieza que lo abrió
+    cal.querySelectorAll('.cal-mes a.elegido').forEach(x => x.classList.remove('elegido'));
+    a.classList.add('elegido');
+    const d = a.dataset, fecha = p('cal-fecha', d.fecha);
+    if (d.num) { const n = document.createElement('span'); n.className = 'num'; n.textContent = ' · ' + d.num; fecha.append(n); }
+    const abre = p('cal-abre');
+    if (d.rep) { const r = document.createElement('span'); r.className = 'rep'; r.textContent = d.rep; abre.append(r); }
+    abre.append(enlace(d.pieza, d.titular));
+    detalle.replaceChildren(fecha, abre, p('leer', enlace(d.numero, leer)));
+  }
+  function ver(m, guardar) {
+    if (!meses.includes(m)) m = meses[meses.length - 1];
+    tablas.forEach(t => { t.hidden = t.dataset.mes !== m; });
+    document.querySelectorAll('.hem-lista').forEach(s => { s.hidden = s.dataset.mes !== m; });
+    elegir.value = m;
+    const i = meses.indexOf(m); ant.disabled = i === 0; sig.disabled = i === meses.length - 1;
+    const dias = cal.querySelectorAll(`.cal-mes[data-mes="${m}"] a`);
+    if (dias.length) marca(dias[dias.length - 1]);
+    if (guardar) {   // el mes queda en la dirección, para compartirlo tal cual
+      const u = new URL(location.href);
+      i === meses.length - 1 ? u.searchParams.delete('mes') : u.searchParams.set('mes', m);
+      history.replaceState(null, '', u);
+    }
+  }
+  elegir.addEventListener('change', () => ver(elegir.value, true));
+  ant.addEventListener('click', () => ver(meses[meses.indexOf(elegir.value) - 1], true));
+  sig.addEventListener('click', () => ver(meses[meses.indexOf(elegir.value) + 1], true));
+  // En el móvil no hay ratón: el primer toque enseña el día y el segundo lo abre. Si ya estaba elegido se mira al
+  // empezar el toque, porque el foco y el ratón simulado lo eligen antes de que llegue el clic.
+  let toque = null;
+  cal.querySelectorAll('.cal-mes a').forEach(a => {
+    a.addEventListener('pointerdown', ev => { toque = ev.pointerType === 'touch' ? { a, ya: a.classList.contains('elegido') } : null; });
+    a.addEventListener('mouseenter', () => marca(a));
+    a.addEventListener('focus', () => marca(a));
+    a.addEventListener('click', ev => { if (toque && toque.a === a && !toque.ya) { ev.preventDefault(); marca(a); } toque = null; });
+  });
+  const h = new Date(), hoy = `${h.getFullYear()}-${String(h.getMonth() + 1).padStart(2, '0')}-${String(h.getDate()).padStart(2, '0')}`;
+  const celda = cal.querySelector(`[data-dia="${hoy}"]`);
+  if (celda) { celda.closest('td').classList.add('hoy'); celda.setAttribute('aria-current', 'date'); }
+  ver(new URLSearchParams(location.search).get('mes'), false);
+})();
+</script>"""
+
+
 def pagina_hemeroteca(eds):
-    """Todos los números por meses y semanas, del más reciente al más antiguo (ADR 0034): cada semana, plegada,
-    con sus días y la pieza que abrió cada uno; la más reciente, abierta."""
+    """Todos los números (ADR 0034 y 0053): el buscador, el calendario del mes y, debajo, sus semanas, plegadas,
+    con sus días y la pieza que abrió cada uno; la más reciente, abierta. El mes de las semanas es el de la
+    fecha de cabecera de sus números, el del calendario: una semana a caballo de dos meses sale en los dos."""
     porsem = por_semanas(eds)
+    meses = {}
+    for sem, ds in porsem.items():
+        for m in sorted({publicacion(d["fecha"])[:7] for d in ds}):
+            meses.setdefault(m, []).append(sem)
+    con_pagina = set(meses_y_semanas(eds))
     bloques = []
-    primera = True
-    for mes, sems in reversed(list(meses_y_semanas(eds).items())):
+    for mes in sorted(meses, reverse=True):
         semanas_html = []
-        for sem in reversed(sems):
+        for n, sem in enumerate(reversed(meses[mes])):
             ds = porsem[sem]
             nums = numeros(ds)
             nb = f' <span class="con-nb" title="{e(L["con_nb"])}">{icono("video")}<span class="solo-lector">{L["con_nb"]}</span></span>' if cargar_multimedia(sem) else ""
-            semanas_html.append(f'<details class="hem-semana"{" open" if primera else ""}><summary><span class="rango">{titulo_semana(sem)}</span>'
+            semanas_html.append(f'<details class="hem-semana"{" open" if n == 0 else ""}><summary><span class="rango">{titulo_semana(sem)}</span>'
                                 f'{f" <span class=num>· {nums}</span>" if nums else ""}{nb}</summary>'
                                 f'<p class="leer"><a href="semana/{sem}/">{L["ver_semana"]}</a></p>{dias_lista("", ds)}</details>')
-            primera = False
-        bloques.append(f'<h2><a href="mes/{mes}/">{mes_largo(mes + "-01")}</a></h2>{"".join(semanas_html)}')
+        nombre = mes_largo(mes + "-01")
+        titulo = f'<a href="mes/{mes}/">{nombre}</a>' if mes in con_pagina else nombre
+        bloques.append(f'<section class="hem-lista" data-mes="{mes}"><h2>{titulo}</h2>{"".join(semanas_html)}</section>')
+    buscador = (f'<form class="buscador hem-buscar" role="search" action="buscar.html">'
+                f'<label class="solo-lector" for="q">{L["buscar_etiqueta"]}</label>'
+                f'<span class="campo">{LUPA}<input id="q" name="q" type="search" autocomplete="off" placeholder="{e(L["buscar_numeros"])}"></span></form>')
+    bloques.insert(0, buscador + calendario(eds))
     bols = "".join(f'<li>{enlace(u, GRUPOS[g][0])}</li>' for g, u in BOLETINES.items())
     boletines = f'<section class="hem-boletines"><h2>{L["boletines_h"]}</h2><p>{L["boletines_txt"]}</p><ul>{bols}</ul></section>' if bols else ""
     return cabeza(f'{L["hemeroteca"]} | {L["titulo"]}', "", L["hemeroteca_txt"], "archivo.html") + f"""<body class="pag-seccion">
@@ -2500,6 +2623,7 @@ def pagina_hemeroteca(eds):
 </main>
 {pie("", eds, None)}
 {SCRIPT_TEMA}
+{SCRIPT_CALENDARIO}
 </body>
 </html>"""
 

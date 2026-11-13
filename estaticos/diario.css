@@ -739,6 +739,50 @@ a.llevar-op.llevar-mas { border-top: 1px solid var(--filete); margin-top: 0.2rem
 .hem-semana .leer, .mes-semana .leer { margin: 0 0 0.4rem; }
 .hem-semana .leer a, .mes-semana .leer a { color: var(--azul); font-weight: 600; }
 .hem-semana ul { padding-left: 1rem; margin-bottom: 0.8rem; }
+/* El calendario de la hemeroteca (ADR 0053): un mes cada vez, por la fecha de cabecera de cada número; el día
+   elegido, en azul, con su número y la pieza que lo abrió debajo; hoy, rodeado con el bolígrafo rojo. */
+.hem-buscar { margin: 1.2rem 0 1rem; }
+.hem-buscar .campo { max-width: none; }
+.calendario { margin: 0 0 1.4rem; padding: 0.9rem 1rem 1rem; border: 1px solid var(--filete); border-radius: 8px; background: var(--papel-2); }
+.cal-nav { display: flex; align-items: center; justify-content: space-between; gap: 0.6rem; margin-bottom: 0.5rem; }
+.cal-nav button { flex: none; display: inline-grid; place-items: center; width: 2.6rem; height: 2.6rem; padding: 0; border: 1px solid var(--filete); border-radius: 999px; background: var(--papel); color: var(--tinta); cursor: pointer; }
+.cal-nav button:hover:not(:disabled) { border-color: var(--azul); color: var(--azul); }
+.cal-nav button:disabled { opacity: 0.35; cursor: default; }
+.cal-nav .ico { width: 1.25rem; height: 1.25rem; }
+.cal-elegir { min-width: 0; padding: 0.4rem 1rem; border: 1px solid var(--filete); border-radius: 999px; background: var(--papel); color: var(--tinta); font: inherit; font-weight: 700; font-size: 1.1rem; text-align: center; cursor: pointer; }
+.cal-mes { width: 100%; table-layout: fixed; border-collapse: separate; border-spacing: 0.3rem; }
+.cal-mes th { padding: 0.2rem 0; color: var(--tinta-2); font-size: 0.85rem; font-weight: 600; }
+.cal-mes abbr { text-decoration: none; }
+.cal-mes td { height: 2.7rem; padding: 0; text-align: center; }
+.cal-mes td > a, .cal-mes td > span { display: grid; place-items: center; height: 100%; border-radius: 6px; font-variant-numeric: tabular-nums; }
+.cal-mes td > span { color: var(--tinta-2); opacity: 0.5; }
+.cal-mes td > a { border: 1px solid var(--filete); background: var(--papel); color: var(--azul); font-weight: 700; text-decoration: none; }
+.cal-mes td > a:hover, .cal-mes td > a.elegido { border-color: var(--azul); background: var(--azul); color: var(--papel); }
+.cal-mes td.hoy { position: relative; }
+.cal-mes td.hoy::after {
+  content: ""; position: absolute; inset: -0.3rem -0.35rem;
+  background: var(--rojo);
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 50' preserveAspectRatio='none'%3E%3Cpath d='M70 6C40 3 8 10 6 25s30 21 58 20 52-6 51-21S88 3 52 8' fill='none' stroke='black' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center / 100% 100%;
+          mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 50' preserveAspectRatio='none'%3E%3Cpath d='M70 6C40 3 8 10 6 25s30 21 58 20 52-6 51-21S88 3 52 8' fill='none' stroke='black' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center / 100% 100%;
+  pointer-events: none;
+}
+.cal-detalle { margin-top: 0.6rem; padding-top: 0.7rem; border-top: 1px solid var(--filete); }
+.cal-detalle p { margin: 0; }
+.cal-fecha { font-weight: 700; }
+.cal-fecha .num { color: var(--tinta-2); font-weight: 400; font-style: italic; }
+.cal-abre { margin-top: 0.2rem !important; }
+.cal-abre a { color: var(--tinta); text-decoration: none; }
+.cal-abre a:hover { text-decoration: underline; }
+.cal-abre .rep { margin-right: 0.4rem; color: var(--azul); font-weight: 600; }
+.cal-abre .rep::after { content: " ·"; }
+.cal-detalle .leer { margin-top: 0.45rem; }
+.cal-detalle .leer a { color: var(--azul); font-weight: 600; }
+.hem-lista h2:first-child { margin-top: 0.4rem; }
+@media (max-width: 30rem) {
+  .calendario { padding: 0.7rem 0.6rem 0.8rem; }
+  .cal-mes { border-spacing: 0.2rem; }
+  .cal-mes td { height: 2.5rem; }
+}
 .con-nb { color: var(--azul); font-weight: 400; font-size: 0.95rem; }
 p.con-nb { margin: 0 0 0.3rem; }
 .mes-semana { margin-top: 1.6rem; }
