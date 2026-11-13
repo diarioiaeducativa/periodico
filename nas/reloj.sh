@@ -14,6 +14,8 @@
 #   desde las 7:05  publicarlo en Instagram (scripts/instagram.py publicar), un solo intento (ADR 0015)
 #   a las 12:00     renovar el permiso de Instagram si tiene más de 7 días y comprobar que vale
 #   el domingo, desde las 9:00, publicar en Instagram «La semana en vídeo» (ADR 0016 y 0027), un solo intento
+#   cada 2 minutos copiar los comentarios de giscus al sitio, para leerlos sin pulsar nada (scripts/copiar-comentarios.sh,
+#                  ADR 0030), en un bucle aparte
 #   cuando llega   el pódcast y el vídeo de la semana del boletín (multimedia/*.json), con el número del día ya
 #                  publicado, volver a publicar solo la web (scripts/publicar-web.sh, ADR 0034)
 #
@@ -23,6 +25,9 @@ cd /proyecto
 
 avisar() { avisar-juanjo --de "Diario de IA Educativa" "$1" >/dev/null 2>&1 || true; }
 minutos() { echo $(( 10#$(date +%H) * 60 + 10#$(date +%M) )); }
+
+# La copia de los comentarios (ADR 0030), aparte: no espera a la vuelta de cinco minutos ni la retrasa
+( while true; do scripts/copiar-comentarios.sh; sleep 120; done ) &
 
 while true; do
   F=$(date -d yesterday +%F)

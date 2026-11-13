@@ -47,19 +47,23 @@ no se abre al público (trabaja solo, sin que nadie se conecte a él).
   (antes, cada pieza pedía `giscus.app/client.js` al abrirse y la página de privacidad decía «Quien no comenta
   no envía nada», que no era cierto), pero había que pulsar sin saber si había algo. Juanjo: «Eso no es
   práctico». Ahora:
-  - Una acción del repositorio del sitio (`.github/workflows/copiar-comentarios.yml`, programa en
-    `.github/copiar-comentarios.py`) lee de GitHub todos los hilos de la categoría y deja uno por pieza en
-    `comentarios/AAAA-MM-DD/id.json`, con autor, enlace a su perfil, fecha (UTC), enlace al comentario y
-    texto. Se lanza con cada comentario creado, editado o borrado, con cada hilo borrado o movido, a mano y
-    cada hora (lo que se oculta al moderar no avisa: tarda como mucho una hora en desaparecer de la copia).
-    Siempre lo rehace todo; si entretanto ha subido el número, vuelve a empezar sobre lo nuevo (cinco intentos).
-    Lo que sube con `GITHUB_TOKEN` no despliega la web («Commits pushed by a GitHub Actions workflow that uses
-    the `GITHUB_TOKEN` do not trigger a GitHub Pages build», documentación de GitHub Pages, comprobado el
-    13-11-2026): tras subir, el flujo pide el despliegue a la API (`POST /repos/…/pages/builds`, permiso
-    `pages: write`).
-    Las claves de despliegue del NAS no pueden subir flujos de GitHub Actions («refusing to allow an OAuth App to
-    create or update workflow»): el `.yml` se guarda aquí, en `flujos-sitio/`, y se copia al sitio desde el portátil,
-    con la cuenta de Juanjo. Cambiarlo es cambiarlo en los dos sitios.
+  - El NAS hace la copia cada dos minutos (`scripts/copiar-comentarios.sh`, en un bucle aparte de
+    `nas/reloj.sh`; el programa, `scripts/copiar-comentarios.py`): lee de GitHub todos los hilos de la categoría
+    y deja uno por pieza en `comentarios/AAAA-MM-DD/id.json` del sitio, con autor, enlace a su perfil, fecha
+    (UTC), enlace al comentario y texto. Siempre lo rehace todo, así que lo editado, borrado u ocultado al
+    moderar también cambia en la copia. Trabaja en un clon propio y parcial del sitio (`~/comentarios-sitio`,
+    solo `comentarios/`), para no cruzarse con `/sitio`, y sube solo si algo ha cambiado; si entretanto ha
+    salido el número, se pone encima (cinco intentos). Si falla, avisa a Juanjo una vez y otra al volver a
+    funcionar (`estado/comentarios.fallo`, `registro/comentarios.log`). Lee con un token de grano fino de
+    Juanjo (`~/.config/diario-comentarios/github`, copia del de `API_GitHub_diario-vigilante.txt`: solo da
+    escritura en las Actions de `periodico`, y para leer las Discussions, que son públicas, basta). Cada vuelta
+    es una consulta GraphQL de unos 16 puntos (30 hilos por página, 50 comentarios por hilo y 30 respuestas por
+    comentario), unos 500 a la hora de los 5.000 que da GitHub.
+    Por qué no es una acción de GitHub, que se lanzaría con cada comentario: lo que sube una acción con
+    `GITHUB_TOKEN` no despliega la web («Commits pushed by a GitHub Actions workflow that uses the
+    `GITHUB_TOKEN` do not trigger a GitHub Pages build», documentación de GitHub Pages), y las claves de
+    despliegue del NAS no pueden subir flujos («refusing to allow an OAuth App to create or update workflow»),
+    así que habría dependido del portátil. Lo que sube el NAS con su clave sí despliega la web.
   - El texto es el HTML que da GitHub, pasado por una lista cerrada de etiquetas de texto: sin atributos salvo
     el destino de los enlaces (solo `http`, `https` y `mailto`), sin scripts, estilos ni SVG, y sin imágenes,
     que quedan como enlace, para que leer no cargue nada de fuera. Sin avatares. Un comentario ocultado no
@@ -70,7 +74,7 @@ no se abre al público (trabaja solo, sin que nadie se conecte a él).
     giscus enseña el hilo entero. La fecha, con las mismas reglas que el resto del diario (`fecha_corta` y
     `fecha_con_anyo`, el año solo si no es el actual) y la hora local: el euskera no está en todos los navegadores.
   - La publicación no toca `comentarios/` (`--exclude /comentarios/` en `publicar-nas.sh`, `publicar-web.sh`,
-    `publicar.sh` y `vigilante.sh`). Como la acción puede subir al sitio mientras sale el número, esos scripts
+    `publicar.sh` y `vigilante.sh`). Como la copia del NAS puede subir al sitio mientras sale el número, esos scripts
     actualizan con `pull --rebase` (la nota del modelo sigue a su commit con `notes.rewriteRef`) y, si la
     subida falla, se ponen encima y lo intentan otra vez.
   - La frase de privacidad lo dice en los cinco idiomas: los comentarios se leen de una copia del diario y
@@ -95,9 +99,9 @@ no se abre al público (trabaja solo, sin que nadie se conecte a él).
 - Moderación desde GitHub: ocultar, borrar o bloquear en la Discussion de cada pieza.
 - Leer los comentarios no conecta con nadie de fuera; `giscus.app` se pide solo al pulsar «Comentar», y es la
   única petición a un tercero del diario.
-- Lo que se comenta tarda en salir en la copia lo que tardan la acción y GitHub Pages (un par de minutos); en
-  giscus sale al momento.
-- giscus da como mucho 100 comentarios por hilo y 100 respuestas por comentario en una consulta: la copia, igual.
+- Lo que se comenta tarda en salir en la copia hasta dos minutos, más lo que tarda GitHub Pages en desplegar;
+  en giscus sale al momento. Con el NAS apagado no se copia nada nuevo, pero giscus lo enseña igual.
+- La copia lleva como mucho 50 comentarios por pieza y 30 respuestas por comentario; giscus, el hilo entero.
 - Si se renombra la categoría, hay que cambiar `GISCUS["category"]` (giscus la busca por nombre).
 
 ## Riesgos y limitaciones
