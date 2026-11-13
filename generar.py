@@ -2572,8 +2572,8 @@ SCRIPT_CALENDARIO = """<script>
     return meses_datos[mes].then(d => d ? d.noticias.filter(n => n.tipo !== 'breve' && n.seccion !== 'hace-un-ano' && n.id.startsWith(numero)) : null);
   }
   async function marca(a) {   // el día elegido: su portada, su fecha y número y sus titulares por secciones
-    cal.querySelectorAll('.cal-mes a.elegido').forEach(x => x.classList.remove('elegido'));
-    a.classList.add('elegido');
+    cal.querySelectorAll('.cal-mes a.elegido').forEach(x => { x.classList.remove('elegido'); x.setAttribute('aria-pressed', 'false'); });
+    a.classList.add('elegido'); a.setAttribute('aria-pressed', 'true');
     const d = a.dataset, esta = ++vuelta;
     const ns = await piezas(d.numero);
     if (esta !== vuelta) return;   // ya se ha elegido otro día
@@ -2630,14 +2630,12 @@ SCRIPT_CALENDARIO = """<script>
   elegir.addEventListener('change', () => ver(elegir.value, true));
   ant.addEventListener('click', () => ver(meses[meses.indexOf(elegir.value) - 1], true));
   sig.addEventListener('click', () => ver(meses[meses.indexOf(elegir.value) + 1], true));
-  // En el móvil no hay ratón: el primer toque enseña el día y el segundo lo abre. Si ya estaba elegido se mira al
-  // empezar el toque, porque el foco y el ratón simulado lo eligen antes de que llegue el clic.
-  let toque = null;
+  // Un clic (o un toque) elige el día y lo enseña debajo, sin abrirlo: el número se abre desde su portada o desde
+  // «Leer el número» (Juanjo, 13-11-2026: pasar el ratón no puede cambiarlo). Sin script, el enlace abre el número.
   cal.querySelectorAll('.cal-mes a').forEach(a => {
-    a.addEventListener('pointerdown', ev => { toque = ev.pointerType === 'touch' ? { a, ya: a.classList.contains('elegido') } : null; });
-    a.addEventListener('mouseenter', () => marca(a));
-    a.addEventListener('focus', () => marca(a));
-    a.addEventListener('click', ev => { if (toque && toque.a === a && !toque.ya) { ev.preventDefault(); marca(a); } toque = null; });
+    a.setAttribute('role', 'button'); a.setAttribute('aria-pressed', String(a.classList.contains('elegido')));
+    a.addEventListener('click', ev => { ev.preventDefault(); marca(a); });
+    a.addEventListener('keydown', ev => { if (ev.key === ' ') { ev.preventDefault(); marca(a); } });
   });
   const h = new Date(), hoy = `${h.getFullYear()}-${String(h.getMonth() + 1).padStart(2, '0')}-${String(h.getDate()).padStart(2, '0')}`;
   const celda = cal.querySelector(`[data-dia="${hoy}"]`);

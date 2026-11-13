@@ -757,7 +757,8 @@ a.llevar-op.llevar-mas { border-top: 1px solid var(--filete); margin-top: 0.2rem
 .cal-mes td > a, .cal-mes td > span { display: grid; place-items: center; height: 100%; border-radius: 6px; font-variant-numeric: tabular-nums; }
 .cal-mes td > span { color: var(--tinta-2); opacity: 0.5; }
 .cal-mes td > a { border: 1px solid var(--filete); background: var(--papel); color: var(--azul); font-weight: 700; text-decoration: none; }
-.cal-mes td > a:hover, .cal-mes td > a.elegido { border-color: var(--azul); background: var(--azul); color: var(--papel); }
+.cal-mes td > a:hover { border-color: var(--azul); }
+.cal-mes td > a.elegido { border-color: var(--azul); background: var(--azul); color: var(--papel); }
 .cal-mes td.hoy { position: relative; }
 .cal-mes td.hoy::after {
   content: ""; position: absolute; inset: -0.3rem -0.35rem;
