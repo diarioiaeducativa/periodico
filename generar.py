@@ -67,7 +67,7 @@ IDIOMAS = {
         "tema": "Cambiar entre tema claro y oscuro", "navegacion": "Navegación",
         "contacto": {"titulo": "Contacto", "enlace": "página de contacto", "txt": "Para avisar de un error, pedir que se retire algo o hacer cualquier consulta sobre el diario o su app.", "correo": "Correo", "otras": "También se puede abrir una incidencia en {incidencias} o escribir a las personas que administran cada grupo."},
         "quees": "La redacción", "portada": "Portada", "volver": "Volver a la portada",
-        "dia_ant": "Día anterior", "dia_sig": "Día siguiente",
+        "dia_ant": "Día anterior", "dia_sig": "Día siguiente", "hoy": "Hoy", "hoy_titulo": "La portada del número de hoy", "este_numero": "La portada de este número",
         "leer_conv": "Lee la conversación original en", "tema_en": "Tema tratado en",
         "comprobado": "Comprobado en", "fuente": "Fuente", "conversacion": "Conversación", "comentarios": "Comentarios", "comentarios_aviso": "Para comentar hace falta una {cuenta}. Los comentarios son públicos y se guardan en GitHub.", "comentarios_cuenta": "cuenta gratuita de GitHub",
         "breves": "Breves", "breves_antes": "Breves anteriores", "vineta": "La viñeta", "vineta_titulo": "La viñeta de Tiza y Algoritmo", "nombre_tiza": "Tiza", "nombre_algoritmo": "Algoritmo", "y": "y",
@@ -196,7 +196,7 @@ IDIOMAS = {
         "tema": "Canviar entre tema clar i fosc", "navegacion": "Navegació",
         "contacto": {"titulo": "Contacte", "enlace": "pàgina de contacte", "txt": "Per avisar d'un error, demanar que es retiri alguna cosa o fer qualsevol consulta sobre el diari o la seva app.", "correo": "Correu", "otras": "També es pot obrir una incidència a {incidencias} o escriure a les persones que administren cada grup."},
         "quees": "La redacció", "portada": "Portada", "volver": "Torna a la portada",
-        "dia_ant": "Dia anterior", "dia_sig": "Dia següent",
+        "dia_ant": "Dia anterior", "dia_sig": "Dia següent", "hoy": "Avui", "hoy_titulo": "La portada del número d'avui", "este_numero": "La portada d'aquest número",
         "leer_conv": "Llegeix la conversa original a", "tema_en": "Tema tractat a",
         "comprobado": "Comprovat a", "fuente": "Font", "conversacion": "Conversa", "comentarios": "Comentaris", "comentarios_aviso": "Per comentar cal un {cuenta}. Els comentaris són públics i es desen a GitHub.", "comentarios_cuenta": "compte gratuït de GitHub",
         "breves": "Breus", "breves_antes": "Breus anteriors", "vineta": "La vinyeta", "vineta_titulo": "La vinyeta de Guix i Algorisme", "nombre_tiza": "Guix", "nombre_algoritmo": "Algorisme", "y": "i",
@@ -1049,15 +1049,24 @@ FLECHA_ANT = '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx
 FLECHA_SIG = '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m12 16 4-4-4-4"/><path d="M8 12h8"/></svg>'   # circle-arrow-right
 
 
-def barra_secciones(prof, activa, ant="", sig=""):
+def barra_secciones(prof, activa, ant="", sig="", dia=None):
     """La barra de secciones bajo la mancheta, como en un periódico; «La redacción» cierra la barra, también en el móvil.
     El número anterior (`ant`) y el siguiente (`sig`), en la portada y en la página de cada número, van como flechas
-    delante de «Portada», como los botones de atrás y adelante del navegador, sin una línea propia (ADR 0045)."""
+    delante de «Portada», como los botones de atrás y adelante del navegador, sin una línea propia (ADR 0045).
+    En las páginas de un número anterior (`dia`: su portada y sus piezas), el menú empieza por ese número, que lleva a
+    su portada, entre las flechas, y «Hoy», a la del número de hoy, en lugar de «Portada», que no dice de qué día
+    es (Juanjo, 13-11-2026)."""
     marca = ' aria-current="page"'
-    enlaces = [f'<a class="dia-ant" href="{ant}" title="{L["dia_ant"]}" aria-label="{L["dia_ant"]}">{FLECHA_ANT}</a>'] if ant else []
-    if sig:
-        enlaces.append(f'<a class="dia-sig" href="{sig}" title="{L["dia_sig"]}" aria-label="{L["dia_sig"]}">{FLECHA_SIG}</a>')
-    enlaces += [f'<a href="{prof or "./"}"{marca if activa == "portada" else ""}>{L["portada"]}</a>']
+    flecha_ant = f'<a class="dia-ant" href="{ant}" title="{L["dia_ant"]}" aria-label="{L["dia_ant"]}">{FLECHA_ANT}</a>' if ant else ""
+    flecha_sig = f'<a class="dia-sig" href="{sig}" title="{L["dia_sig"]}" aria-label="{L["dia_sig"]}">{FLECHA_SIG}</a>' if sig else ""
+    if dia:
+        rotulo = f'{L["num"]}&nbsp;{dia["numero"]}' if dia.get("numero") else fecha_corta(publicacion(dia["fecha"]))
+        enlaces = [flecha_ant, f'<a class="este-numero" href="{prof}{dia["fecha"]}/" title="{e(L["este_numero"])}"'
+                               f'{marca if activa == "dia" else ""}>{rotulo}</a>', flecha_sig,
+                   f'<a href="{prof or "./"}" title="{e(L["hoy_titulo"])}">{L["hoy"]}</a>']
+    else:
+        enlaces = [flecha_ant, flecha_sig, f'<a href="{prof or "./"}"{marca if activa == "portada" else ""}>{L["portada"]}</a>']
+    enlaces = [x for x in enlaces if x]
     enlaces += [f'<a class="sec-{c}" href="{prof}{c}.html"{marca if c == activa else ""}>{L["secciones"][c]}</a>' for c in ORDEN_SECCIONES]
     enlaces.append(f'<a class="sec-reportaje" href="{prof}reportajes.html"{marca if activa == "reportajes" else ""}>{L["reportajes"]}</a>')
     enlaces.append(f'<a class="sec-vineta" href="{prof}vineta.html"{marca if activa == "vineta" else ""}>{L["vineta"]}</a>')
@@ -1094,7 +1103,7 @@ def orejas(prof):
             f'{una("der", L["nombre_algoritmo"], (-50, 162, 100, 172), ALGORITMO_OREJA)}</div>')
 
 
-def cabecera(prof, ruta, fecha, cuenta, es_portada, h1=True, activa=None, ant="", sig=""):
+def cabecera(prof, ruta, fecha, cuenta, es_portada, h1=True, activa=None, ant="", sig="", dia=None):
     """`cuenta` es el número de la edición, rodeado a mano con el bolígrafo rojo, como en un periódico.
     Con h1="dia" (la página de un número de la hemeroteca), la mancheta es el h1 de la página, con el
     enlace a la portada y la fecha solo para el lector de pantalla: se ve igual que con un <p>."""
@@ -1115,7 +1124,7 @@ def cabecera(prof, ruta, fecha, cuenta, es_portada, h1=True, activa=None, ant=""
   <{etiqueta} class="mancheta">{nombre}</{etiqueta}>
   <p class="lema">{L["lema"]}</p>
   {orejas(prof)}
-  {barra_secciones(prof, activa, ant, sig)}
+  {barra_secciones(prof, activa, ant, sig, dia if dia and dia.get("fecha") != ULTIMA else None)}
 </header>"""
 
 
@@ -1514,7 +1523,7 @@ def pagina_portada(prof, ruta, eds, piezas, breves, fecha, cuenta, es_portada, a
     # La portada se describe con el lema del diario; la página de cada día, con lo que trae ese número
     descripcion = L["lema"] if es_portada else descripcion_dia(dia, piezas)
     return cabeza(titulo, prof, descripcion, ruta, portada=es_portada) + f"""<body class="pag-portada">
-{cabecera(prof, ruta, fecha, cuenta, es_portada, h1=True if es_portada else "dia", activa="portada" if es_portada else None, ant=ant, sig=sig)}
+{cabecera(prof, ruta, fecha, cuenta, es_portada, h1=True if es_portada else "dia", activa="portada" if es_portada else "dia", ant=ant, sig=sig, dia=None if es_portada else dia)}
 <main class="portada">
 {franja_reserva(dia)}
 {franja_editorial(prof, dia)}
@@ -1603,7 +1612,7 @@ def articulo(prof, ruta, d, p, eds):
     {serie}""", "" if len(p.get("recursos") or []) > 1 else ilustracion(d["fecha"], p, prof, ampliable=True))
     return cabeza(f'{p["titular"]} | {L["titulo"]}', prof, p.get("entradilla", ""), ruta,
                   datos=datos_noticia(p["titular"], ruta, d["fecha"], imagen_pieza(d["fecha"], p)[0])) + f"""<body class="pag-articulo">
-{cabecera(prof, ruta, d["fecha"], d["numero"], False, h1=False)}
+{cabecera(prof, ruta, d["fecha"], d["numero"], False, h1=False, dia=d)}
 <main class="articulo en-columnas">
   <article{f' class="sec-{e(p["seccion"])}"' if p.get("seccion") else ""}{indexado(p.get("seccion") or "editorial", L["secciones"].get(p.get("seccion"), L["quees"]), d["fecha"])}>
     {linea}
@@ -1712,7 +1721,7 @@ def articulo_reportaje(prof, ruta, d, r, eds):
     <p class="lectura fecha-pieza">{minutos_lectura(r)} {L["palabras"]}</p>""", ilustracion(d["fecha"], r, prof, ampliable=True))
     return cabeza(f'{r["titular"]} | {L["titulo"]}', prof, r.get("entradilla", ""), ruta,
                   datos=datos_noticia(r["titular"], ruta, d["fecha"], imagen_pieza(d["fecha"], r)[0])) + f"""<body class="pag-articulo">
-{cabecera(prof, ruta, d["fecha"], d["numero"], False, h1=False)}
+{cabecera(prof, ruta, d["fecha"], d["numero"], False, h1=False, dia=d)}
 <main class="articulo reportaje en-columnas">
   <article class="sec-reportaje"{indexado("reportaje", L["reportajes"], d["fecha"])}>
     <p class="seccion"><span><a href="{prof}reportajes.html">{icono("reportaje")} {L["reportaje"]}</a></span> <span class="seccion-dcha">{boton_columnas()} <span class="fecha-pieza">{fecha_corta(publicacion(r["fecha"]))}</span></span></p>
@@ -1770,7 +1779,7 @@ def pagina_breve(prof, d, b, eds):
     titulo = titulo_breve(b)
     return cabeza(f'{titulo} | {L["titulo"]}', prof, texto_plano(b["texto"]), ruta_breve(b),
                   datos=datos_noticia(titulo, ruta_breve(b), d["fecha"])) + f"""<body class="pag-articulo">
-{cabecera(prof, ruta_breve(b), d["fecha"], d["numero"], False, h1=False)}
+{cabecera(prof, ruta_breve(b), d["fecha"], d["numero"], False, h1=False, dia=d)}
 <main class="articulo breve-pagina">
   <article{indexado("breves", L["breves"], d["fecha"])}>
     <p class="seccion"><span><a href="{prof}breves.html">{icono("breves")} {L["breves"]}</a></span> <span class="fecha-pieza">{fecha_corta(publicacion(b["fecha"]))}</span></p>

@@ -750,7 +750,8 @@ a.llevar-op.llevar-mas { border-top: 1px solid var(--filete); margin-top: 0.2rem
 .hem-cabeza { margin-bottom: 0.8rem; }
 .hem-cabeza .titulo-seccion { margin: 0 0 0.6rem; line-height: 1.1; }
 .hem-buscar { margin: 0; }
-.hem-buscar .campo { max-width: none; }
+.hem-buscar .campo { max-width: none; padding: 0.3rem 0.85rem; }
+.hem-buscar input { font-size: 1rem; }
 /* El gris, solo en el calendario; el día elegido va sobre el papel, como el resto del diario (Juanjo, 13-11-2026) */
 .calendario { margin: 0 0 1.4rem; }
 .cal-izq { padding: 0.7rem 0.8rem 0.8rem; border: 1px solid var(--filete); border-radius: 8px; background: var(--papel-2); }
