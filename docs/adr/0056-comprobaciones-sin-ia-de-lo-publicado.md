@@ -36,7 +36,8 @@ Dos programas corrientes, sin IA, que no impiden nunca que el número salga:
   la nota con la copia archivada no vuelve a avisar.
 - **Los resúmenes de los vídeos de la semana se marcan como castellano** en las ediciones traducidas
   (`lang="es"` y una línea que lo dice), en vez de pasar por traducidos: los escribe el boletín en
-  castellano, como el vídeo y el pódcast.
+  castellano, como el vídeo y el pódcast. Desde el ADR 0057 se traducen, y la marca queda solo para
+  mientras falta la traducción.
 
 ## Alternativas descartadas
 
@@ -49,7 +50,8 @@ Dos programas corrientes, sin IA, que no impiden nunca que el número salga:
 - **Comprobar los enlaces cada día**: en dos semanas cayeron 2 de 155. Una vez por semana basta y molesta
   menos a los servidores.
 - **Traducir cada lunes los resúmenes de los vídeos**: llegan con el boletín, fuera de la redacción
-  nocturna; hacerlo pide un paso nuevo con un agente los lunes por la mañana. Queda como posibilidad.
+  nocturna; hacerlo pide un paso nuevo con un agente los lunes por la mañana. Quedó como posibilidad y se
+  hizo el mismo día (ADR 0057).
 
 ## Consecuencias
 

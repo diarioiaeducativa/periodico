@@ -2336,6 +2336,18 @@ def cargar_multimedia(sem):
         return {}
 
 
+def resumen_traducido(sem, g, original):
+    """El resumen del vídeo de un grupo en la lengua de la edición (ADR 0057), si está traducido y la traducción
+    salió del texto de ahora: el boletín puede cambiar el resumen después, y la anterior ya no vale."""
+    if not L["sufijo"]:
+        return None
+    try:
+        x = json.loads((RAIZ / f"multimedia{L['sufijo']}" / f"{sem}.json").read_text())["grupos"][g]
+    except (OSError, ValueError, KeyError, TypeError):
+        return None
+    return (x.get("resumen") or None) if isinstance(x, dict) and x.get("origen") == original.strip() else None
+
+
 def id_youtube(url):
     m = re.search(r"(?:youtu\.be/|[?&]v=|/embed/|/shorts/)([\w-]{11})", url or "")
     return m.group(1) if m else None
@@ -2367,13 +2379,15 @@ def bloque_notebook(sem, m):
         if vid:
             video = (f'<div class="nb-video"><button type="button" class="nb-play" data-yt="{e(vid)}" '
                      f'aria-label="{e(L["nb_ver"].format(g=nombre))}">{PLAY}<span>{L["nb_video"]}</span></button></div>')
-        # El resumen lo escribe el boletín en castellano, como el vídeo y el pódcast: en las otras ediciones
-        # se marca como castellano (para los lectores de pantalla) y se dice, en vez de pasar por traducido
+        # El resumen lo escribe el boletín en castellano, como el vídeo y el pódcast, y se traduce aparte
+        # (ADR 0057). Mientras falta la traducción, en las otras ediciones se marca como castellano (para los
+        # lectores de pantalla) y se dice, en vez de pasar por traducido
         resumen = ""
         if x.get("resumen"):
-            ajeno = L["codigo"] != "es"
+            trad = resumen_traducido(sem, g, x["resumen"])
+            ajeno = L["codigo"] != "es" and not trad
             lang = ' lang="es"' if ajeno else ""
-            resumen = (f'<p class="nb-resumen"{lang}>{e(x["resumen"])}</p>'
+            resumen = (f'<p class="nb-resumen"{lang}>{e(trad or x["resumen"])}</p>'
                        + (f'<p class="nb-idioma">{L["nb_castellano"]}</p>' if ajeno else ""))
         audio = ""
         if x.get("podcast_mp3"):

@@ -11,11 +11,16 @@ RAIZ="$(cd "$(dirname "$(readlink -f "$0")")/.." && pwd)"
 cd "$RAIZ"
 SITIO="${SITIO_REPO:-/sitio}"
 REG="registro/multimedia.log"
-# Lo hace un programa, sin IA: la nota lo dice para que nadie busque un modelo
-NOTA="Sin IA: scripts/publicar-web.sh, con el pódcast y el vídeo que deja el boletín semanal"
+# Lo hace un programa, sin IA, salvo la traducción del resumen de cada vídeo: la nota lo dice para que nadie
+# busque otro modelo
+NOTA="scripts/publicar-web.sh, con el pódcast y el vídeo que deja el boletín semanal. Sin IA, salvo la traducción del resumen de cada vídeo: Claude Sonnet 5.5 (claude-sonnet-5-5) · Claude Code, en el NAS"
 mkdir -p registro
 
 log() { printf '%s  %s\n' "$(date '+%F %T')" "$*" | tee -a "$REG"; }
+
+# El resumen de cada vídeo, a las otras lenguas (ADR 0057). Si alguna no sale, su edición lo enseña en
+# castellano y lo dice: no impide publicar.
+bash scripts/multimedia-traducir.sh >> "$REG" 2>&1 || log "AVISO: algún resumen de los vídeos de la semana sale en castellano en las ediciones traducidas"
 
 python3 generar.py >> "$REG" 2>&1 || { log "ERROR: el generador falla"; exit 1; }
 python3 -m pagefind --site sitio >> "$REG" 2>&1 || log "AVISO: no se pudo rehacer el índice del buscador; queda el anterior"
@@ -34,7 +39,7 @@ if [ -n "$(git -C "$SITIO" rev-list '@{u}..HEAD' 2>/dev/null)" ]; then
 fi
 
 # El archivo del boletín, al repositorio de la redacción, para que viaje con él
-git add -A multimedia $(ls -d comentario-semana comentario-semana-?? 2>/dev/null) >> "$REG" 2>&1
+git add -A multimedia $(ls -d multimedia-?? comentario-semana comentario-semana-?? 2>/dev/null) >> "$REG" 2>&1
 if ! git diff --cached --quiet; then
   git commit -qm "Pódcast y vídeo de la semana" || log "AVISO: no se pudo preparar el commit de la redacción"
 fi

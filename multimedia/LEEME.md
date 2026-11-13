@@ -20,4 +20,7 @@ Aquí deja el proceso del boletín semanal (contenedor `boletin-semanal` del NAS
 
 Las claves de los grupos son las de `GRUPOS` en `generar.py`. Cualquier grupo o campo puede faltar: sale
 lo que haya. La semana va de lunes a domingo según el día de los mensajes, como las páginas `semana/AAAA-WW/`.
+El `resumen` se traduce a las otras lenguas en `multimedia-XX/AAAA-WW.json` (ADR 0057) cada vez que este
+archivo llega o cambia; si el resumen cambia, la traducción anterior deja de usarse hasta que se rehace.
+
 Conviene escribir el archivo de una vez (a uno temporal y luego `mv`), para que nunca se lea a medias.

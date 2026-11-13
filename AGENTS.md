@@ -130,6 +130,10 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
 - **Comentario de la semana** (ADR 0038): `scripts/comentario-semana.sh AAAA-WW`, que lanza `noche.sh`
   la noche del domingo (o con `COMENTARIO=1`): uno general y uno por grupo en `comentario-semana/`,
   de 150 a 250 palabras; `scripts/comentario_semana.py comprobar` dice si vale.
+- **Resumen del vídeo semanal, traducido** (ADR 0057): cuando el boletín deja o cambia `multimedia/AAAA-WW.json`,
+  `publicar-web.sh` lanza antes `scripts/multimedia-traducir.sh`, que traduce el resumen de cada grupo a
+  `multimedia-XX/` (un agente por idioma) solo si falta o si el resumen ha cambiado; `scripts/multimedia.py
+  pendientes` dice qué falta. Sin traducción al día, esa edición lo enseña en castellano y lo dice.
 - **App de Android y lectura sin conexión** (ADR 0042): `estaticos/sw.js` (primero la red; sin ella,
   lo guardado y `sin-conexion.html`); si cambia lo que guarda, subir `CACHE`. La app es una TWA en
   `android/` (`construeix.sh`, con la clave en `~/.config/diario-ia-educativa/android/`), vinculada por

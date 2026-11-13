@@ -81,7 +81,7 @@ nohup python3 scripts/archivar.py "$FECHA" >> registro/archivo.log 2>&1 &
 # Lo escrito por los agentes, al repositorio de la redacción (los mensajes de dias/ no se suben).
 # Solo las carpetas que existen: si falta una, git add no añade nada y la redacción no se guarda.
 # Las carpetas traducidas, una por idioma (ADR 0026); las de borradores no se suben (.gitignore).
-TRAD=$(for c in $(python3 scripts/idiomas.py lista); do printf ' %s-%s' ediciones "$c" ilustraciones "$c" vinetas "$c" reportajes "$c" biblioteca "$c" repositorio "$c" comentario-semana "$c" hace-un-ano "$c"; done)
+TRAD=$(for c in $(python3 scripts/idiomas.py lista); do printf ' %s-%s' ediciones "$c" ilustraciones "$c" vinetas "$c" reportajes "$c" biblioteca "$c" repositorio "$c" comentario-semana "$c" hace-un-ano "$c" multimedia "$c"; done)
 # shellcheck disable=SC2086
 git add -A $(ls -d og/numeros og/piezas portadas videos reels multimedia ediciones ilustraciones vinetas avisos publicado.txt reportajes biblioteca repositorio reserva comunidades comentario-semana hace-un-ano $TRAD 2>/dev/null) >> "$REG" 2>&1 ||
   log "AVISO: no se pudo preparar lo escrito por la redacción para subirlo"
