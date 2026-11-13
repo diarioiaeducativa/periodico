@@ -78,6 +78,8 @@
 .secciones :is(.dia-ant, .dia-sig) { margin-right: -1.25rem; padding-right: 0.4rem; color: var(--tinta-2); font-weight: 400; }
 .secciones :is(.dia-ant, .dia-sig):hover, .secciones :is(.dia-ant, .dia-sig):focus-visible { color: var(--tinta); }
 .secciones :is(.dia-ant, .dia-sig) .ico { width: 1.05em; height: 1.05em; vertical-align: -0.17em; }
+/* En un número anterior, «‹ Núm. 9 ›»: la flecha siguiente, pegada al número como la anterior */
+.secciones .este-numero + .dia-sig { margin: 0 0 0 -1.25rem; padding: 0 0 0 0.4rem; }
 .secciones .quees { margin-left: auto; font-weight: 400; font-style: italic; color: var(--tinta-2); }
 
 /* Rótulos de las piezas */
@@ -747,8 +749,8 @@ a.llevar-op.llevar-mas { border-top: 1px solid var(--filete); margin-top: 0.2rem
 /* Todo lo posible a la vista sin bajar (Juanjo, 13-11-2026): el buscador en la línea del título, el calendario
    y los titulares compactos y la portada algo más estrecha */
 .portada.hem-ancha { padding-top: 0.8rem; }
-.hem-cabeza { margin-bottom: 0.8rem; }
-.hem-cabeza .titulo-seccion { margin: 0 0 0.6rem; line-height: 1.1; }
+.hem-col .titulo-seccion { margin: 0 0 0.6rem; line-height: 1.1; }
+.hem-col .hem-buscar { margin: 0 0 0.8rem; }
 .hem-buscar { margin: 0; }
 .hem-buscar .campo { max-width: none; padding: 0.3rem 0.85rem; }
 .hem-buscar input { font-size: 1rem; }
@@ -813,11 +815,9 @@ a.llevar-op.llevar-mas { border-top: 1px solid var(--filete); margin-top: 0.2rem
    (Juanjo, 13-11-2026). El calendario acompaña al bajar si los titulares del día son muchos. */
 @media (min-width: 64rem) {
   .hemeroteca.hem-ancha { max-width: 72rem; }
-  .hem-ancha > :not(.calendario, .hem-cabeza) { max-width: 44rem; }
-  .hem-cabeza { display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
-  .hem-cabeza .titulo-seccion { margin: 0; }
-  .hem-cabeza .hem-buscar { flex: 0 1 30rem; }
+  .hem-ancha > :not(.calendario) { max-width: 44rem; }
   .calendario { display: grid; grid-template-columns: 22rem minmax(0, 1fr); align-items: start; }
+  .hem-col { align-self: stretch; }
   .cal-izq { position: sticky; top: 1rem; }
   .cal-detalle { margin: 0 0 0 1.8rem; }
 }

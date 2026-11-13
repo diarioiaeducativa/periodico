@@ -2532,7 +2532,7 @@ def detalle_dia(x, grupos):
     return f'{foto}<div class="cal-texto"><p class="cal-fecha"><a href="{e(x["numero"])}">{e(x["fecha"])}{num}</a></p>{secs}</div>'
 
 
-def calendario(eds):
+def calendario(eds, cabeza=""):
     """Un calendario por mes, por la fecha de cabecera de cada número, que es la que recuerda quien lo leyó
     (ADR 0053): cada día con número enlaza a él. Sale visible el último mes; el script cambia de mes."""
     por_dia = {publicacion(d["fecha"]): d for d in eds}
@@ -2578,11 +2578,12 @@ def calendario(eds):
                       f'<thead><tr>{cabeza_tabla}</tr></thead><tbody>{filas}</tbody></table>')
     opciones = "".join(f'<option value="{m}"{" selected" if m == meses[-1] else ""}>{mes_largo(m + "-01")}</option>' for m in reversed(meses))
     textos = json.dumps({"portada": L["cal_portada"], "ampliar": L["ampliar"], "cerrar": L["cerrar"]}, ensure_ascii=False)
-    return (f'<section class="calendario" aria-label="{L["calendario"]}" data-textos="{e(textos)}">'
-            f'<div class="cal-izq"><div class="cal-nav"><button type="button" class="cal-ant" title="{L["cal_anterior"]}" aria-label="{L["cal_anterior"]}">{CHEVRON_IZQ}</button>'
+    # A la izquierda, el título, el buscador y el calendario; a la derecha, desde arriba, el número elegido
+    return (f'<div class="calendario" data-textos="{e(textos)}"><div class="hem-col">{cabeza}'
+            f'<div class="cal-izq" role="group" aria-label="{L["calendario"]}"><div class="cal-nav"><button type="button" class="cal-ant" title="{L["cal_anterior"]}" aria-label="{L["cal_anterior"]}">{CHEVRON_IZQ}</button>'
             f'<select class="cal-elegir" aria-label="{L["cal_elegir"]}">{opciones}</select>'
             f'<button type="button" class="cal-sig" title="{L["cal_siguiente"]}" aria-label="{L["cal_siguiente"]}">{CHEVRON_DER}</button></div>'
-            f'{"".join(tablas)}</div><div class="cal-detalle" aria-live="polite">{detalle_dia(datos_dia(por_dia[ultimo], medidas), piezas_dia(por_dia[ultimo]))}</div></section>')
+            f'{"".join(tablas)}</div></div><div class="cal-detalle" aria-live="polite">{detalle_dia(datos_dia(por_dia[ultimo], medidas), piezas_dia(por_dia[ultimo]))}</div></div>')
 
 
 SCRIPT_CALENDARIO = """<script>
@@ -2682,11 +2683,10 @@ def pagina_hemeroteca(eds):
     buscador = (f'<form class="buscador hem-buscar" role="search" action="buscar.html">'
                 f'<label class="solo-lector" for="q">{L["buscar_etiqueta"]}</label>'
                 f'<span class="campo">{LUPA}<input id="q" name="q" type="search" autocomplete="off" placeholder="{e(L["buscar_numeros"])}"></span></form>')
-    bloques = [calendario(eds)]
+    bloques = [calendario(eds, f'<h1 class="titulo-seccion">{icono("hemeroteca")} {L["hemeroteca"]}</h1>{buscador}')]
     return cabeza(f'{L["hemeroteca"]} | {L["titulo"]}', "", L["hemeroteca_txt"], "archivo.html") + f"""<body class="pag-seccion">
 {cabecera("", "archivo.html", eds[-1]["fecha"], eds[-1]["numero"], True, h1=False)}
 <main class="portada hemeroteca hem-ancha">
-<div class="hem-cabeza"><h1 class="titulo-seccion">{icono("hemeroteca")} {L["hemeroteca"]}</h1>{buscador}</div>
 {"".join(bloques)}
 </main>
 {pie("", eds, None)}
