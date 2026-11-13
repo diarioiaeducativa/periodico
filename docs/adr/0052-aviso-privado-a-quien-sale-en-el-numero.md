@@ -24,7 +24,7 @@ mencionarlas en el aviso de cada grupo.
     (titular, entradilla o cuerpo), es decir, si es el autor del recurso. A quien opina o pregunta el
     diario no lo nombra, así que no se le avisa. También el autor que nombra un anuncio de alta del bot.
   - «Hace un año» no avisa: cuenta lo que pasó entonces.
-- **Un mensaje por persona y día**, con todas sus piezas, y un botón para no recibirlos más (ADR del bot).
+- **Un mensaje por persona y día**, con todas sus piezas, y un botón para no recibirlos más (ADR 0036 del bot).
 - **Solo a quien ha hablado alguna vez con el bot**: Telegram no deja a un bot escribir primero a nadie.
   Quien sube documentos o da de alta recursos ya lo ha hecho, por privado con el bot.
 
