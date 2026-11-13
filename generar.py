@@ -80,7 +80,7 @@ IDIOMAS = {
         "unete_txt": "El Diario de IA Educativa cuenta lo que se habla en tres grupos abiertos de Telegram donde docentes comparten lo que prueban con la inteligencia artificial. Las conversaciones se pueden leer sin entrar; para participar, basta con unirse.",
         "archivo": "Archivo por días", "pie_archivo": "Archivo", "pie_diario": "El diario", "este_numero": "este número",
         "anyo": "Año", "hemeroteca": "Hemeroteca", "hemeroteca_txt": "Todos los números, por meses y semanas.", "nb_anteriores": "Boletines anteriores", "semana_n": "Semana {n}",
-        "dias_cortos": ["lu", "ma", "mi", "ju", "vi", "sá", "do"], "calendario": "Calendario de los números", "cal_anterior": "Mes anterior", "cal_siguiente": "Mes siguiente", "cal_elegir": "Elige el mes", "cal_leer": "Leer el número", "buscar_numeros": "Busca en todos los números", "cal_portada": "Portada: {fecha}",
+        "dias_cortos": ["L", "M", "X", "J", "V", "S", "D"], "calendario": "Calendario de los números", "cal_anterior": "Mes anterior", "cal_siguiente": "Mes siguiente", "cal_elegir": "Elige el mes", "cal_leer": "Leer el número", "buscar_numeros": "Busca en todos los números", "cal_portada": "Portada: {fecha}", "cal_resumenes": "Resumen de cada semana", "cal_resumen": "Resumen de la semana {n}",
         # La semana y el mes (ADR 0034)
         "semana": "La semana", "semana_txt": "Todo lo que contó el diario de lo que se habló en los grupos esa semana, por secciones, con el pódcast y el vídeo de cada grupo. Elige un grupo para ver solo lo suyo.", "semana_actual": "Resumen semanal", "grupo_filtro": "Ver lo de un grupo", "grupo_todos": "Todos", "sin_grupo": "Este grupo no tiene piezas esta semana.", "nb_h": "El pódcast y el vídeo de la semana", "nb_txt": "Cada lunes, NotebookLM, de Google, prepara un pódcast y un vídeo de cada grupo con su conversación completa de la semana, también lo que el diario no ha contado. Un agente de IA los contrasta con la conversación antes de publicarlos.", "nb_es": "", "nb_pendiente": "El pódcast y el vídeo de cada grupo se añaden aquí el lunes por la mañana.", "nb_video": "Vídeo", "nb_ver": "Reproducir el vídeo de {g}", "nb_youtube": "Verlo en YouTube", "nb_podcast": "Pódcast", "nb_archive": "Escucharlo en Internet Archive", "cs_h": "Lo más importante de la semana", "cs_h_g": "Lo más importante de la semana en {g}", "cs_nota": "Lo escribe un agente de IA con lo que contó el diario esa semana, y otro lo contrasta con cada pieza antes de publicarlo.", "numeros_semana": "Los números de la semana", "sem_ant": "Semana anterior", "sem_sig": "Semana siguiente", "todo_mes": "Todo el mes", "mes": "El mes", "mes_txt": "Las semanas del mes, con la pieza que abrió cada número.", "mes_ant": "Mes anterior", "mes_sig": "Mes siguiente", "por_meses": "Por meses", "ver_semana": "La semana entera, por secciones", "con_nb": "Con el pódcast y el vídeo de cada grupo", "boletines_h": "Boletines semanales anteriores", "boletines_txt": "Hasta noviembre de 2026, cada grupo tenía su propio boletín semanal. Siguen en su web:",
         "todos_numeros": "Hemeroteca: todos los números",
@@ -209,7 +209,7 @@ IDIOMAS = {
         "unete_txt": "El Diari d'IA Educativa explica el que es parla en tres grups oberts de Telegram on docents comparteixen el que proven amb la intel·ligència artificial. Les converses es poden llegir sense entrar-hi; per participar-hi, n'hi ha prou d'unir-s'hi.",
         "archivo": "Arxiu per dies", "pie_archivo": "Arxiu", "pie_diario": "El diari", "este_numero": "aquest número",
         "anyo": "Any", "hemeroteca": "Hemeroteca", "hemeroteca_txt": "Tots els números, per mesos i setmanes.", "nb_anteriores": "Butlletins anteriors", "semana_n": "Setmana {n}",
-        "dias_cortos": ["dl", "dt", "dc", "dj", "dv", "ds", "dg"], "calendario": "Calendari dels números", "cal_anterior": "Mes anterior", "cal_siguiente": "Mes següent", "cal_elegir": "Tria el mes", "cal_leer": "Llegeix el número", "buscar_numeros": "Cerca a tots els números", "cal_portada": "Portada: {fecha}",
+        "dias_cortos": ["dl.", "dt.", "dc.", "dj.", "dv.", "ds.", "dg."], "calendario": "Calendari dels números", "cal_anterior": "Mes anterior", "cal_siguiente": "Mes següent", "cal_elegir": "Tria el mes", "cal_leer": "Llegeix el número", "buscar_numeros": "Cerca a tots els números", "cal_portada": "Portada: {fecha}", "cal_resumenes": "Resum de cada setmana", "cal_resumen": "Resum de la setmana {n}",
         # La semana y el mes (ADR 0034)
         "semana": "La setmana", "semana_txt": "Tot el que va explicar el diari del que es va parlar als grups aquella setmana, per seccions, amb el pòdcast i el vídeo de cada grup. Tria un grup per veure només el seu.", "semana_actual": "Resum setmanal", "grupo_filtro": "Veure el d'un grup", "grupo_todos": "Tots", "sin_grupo": "Aquest grup no té peces aquesta setmana.", "nb_h": "El pòdcast i el vídeo de la setmana", "nb_txt": "Cada dilluns, NotebookLM, de Google, prepara un pòdcast i un vídeo de cada grup amb tota la seva conversa de la setmana, també el que el diari no ha explicat. Un agent d'IA els contrasta amb la conversa abans de publicar-los.", "nb_es": "Són en castellà.", "nb_pendiente": "El pòdcast i el vídeo de cada grup s'afegeixen aquí dilluns al matí.", "nb_video": "Vídeo", "nb_ver": "Reproduir el vídeo de {g}", "nb_youtube": "Mira'l a YouTube", "nb_podcast": "Pòdcast", "nb_archive": "Escolta'l a Internet Archive", "cs_h": "El més important de la setmana", "cs_h_g": "El més important de la setmana a {g}", "cs_nota": "L'escriu un agent d'IA amb el que va explicar el diari aquella setmana, i un altre el contrasta amb cada peça abans de publicar-lo.", "numeros_semana": "Els números de la setmana", "sem_ant": "Setmana anterior", "sem_sig": "Setmana següent", "todo_mes": "Tot el mes", "mes": "El mes", "mes_txt": "Les setmanes del mes, amb la peça que va obrir cada número.", "mes_ant": "Mes anterior", "mes_sig": "Mes següent", "por_meses": "Per mesos", "ver_semana": "Tota la setmana, per seccions", "con_nb": "Amb el pòdcast i el vídeo de cada grup", "boletines_h": "Butlletins setmanals anteriors", "boletines_txt": "Fins al novembre de 2026, cada grup tenia el seu propi butlletí setmanal. Continuen al seu web:",
         "todos_numeros": "Hemeroteca: tots els números",
@@ -2528,7 +2528,9 @@ def calendario(eds):
     medidas = medidas_portadas()
     meses = sorted({k[:7] for k in por_dia})
     ultimo = max(por_dia)
-    cabeza_tabla = "".join(f'<th scope="col"><abbr title="{L["dias"][i]}">{L["dias_cortos"][i]}</abbr></th>' for i in range(7))
+    cabeza_tabla = "".join(f'<th scope="col"><abbr title="{L["dias"][i]}">{L["dias_cortos"][i]}</abbr></th>' for i in range(7)) \
+        + f'<th scope="col" class="cal-sem-h" title="{L["cal_resumenes"]}"><span class="solo-lector">{L["cal_resumenes"]}</span>{icono("semana")}</th>'
+    porsem = por_semanas(eds)
     tablas = []
     for m in meses:
         y, mo = map(int, m.split("-"))
@@ -2547,7 +2549,20 @@ def calendario(eds):
                 celdas.append(f'<td><span data-dia="{iso}">{dia.day}</span></td>')
             dia += datetime.timedelta(days=1)
         celdas += ['<td class="vacio"></td>'] * (-len(celdas) % 7)
-        filas = "".join(f'<tr>{"".join(celdas[i:i + 7])}</tr>' for i in range(0, len(celdas), 7))
+        # Cada fila, con el resumen de la semana que cuentan sus números: los de martes a domingo cuentan los días
+        # de lunes a sábado de la semana de esa fila (el del lunes es el último de la anterior)
+        lunes = datetime.date(y, mo, 1) - datetime.timedelta(days=datetime.date(y, mo, 1).weekday())
+        filas = ""
+        for i in range(0, len(celdas), 7):
+            sem = semana_de((lunes + datetime.timedelta(days=i)).isoformat())
+            if sem in porsem:
+                n = int(sem.split("-")[1])
+                nb = f'<span class="cal-nb">{icono("video")}</span>' if cargar_multimedia(sem) else ""
+                titulo = L["cal_resumen"].format(n=n) + (f' · {L["con_nb"]}' if nb else "")
+                resumen = f'<td class="cal-sem"><a href="semana/{sem}/" title="{e(titulo)}" aria-label="{e(titulo)}">{n}{nb}</a></td>'
+            else:
+                resumen = '<td class="cal-sem"></td>'
+            filas += f'<tr>{"".join(celdas[i:i + 7])}{resumen}</tr>'
         tablas.append(f'<table class="cal-mes" data-mes="{m}"{"" if m == meses[-1] else " hidden"}>'
                       f'<caption class="solo-lector">{L["calendario"]}: {mes_largo(m + "-01")}</caption>'
                       f'<thead><tr>{cabeza_tabla}</tr></thead><tbody>{filas}</tbody></table>')
@@ -2626,7 +2641,7 @@ SCRIPT_CALENDARIO = """<script>
     document.querySelectorAll('.hem-lista').forEach(s => { s.hidden = s.dataset.mes !== m; });
     elegir.value = m;
     const i = meses.indexOf(m); ant.disabled = i === 0; sig.disabled = i === meses.length - 1;
-    const dias = cal.querySelectorAll(`.cal-mes[data-mes="${m}"] a`);
+    const dias = cal.querySelectorAll(`.cal-mes[data-mes="${m}"] a[data-dia]`);
     if (dias.length) marca(dias[dias.length - 1]);
     if (guardar) {   // el mes queda en la dirección, para compartirlo tal cual
       const u = new URL(location.href);
@@ -2639,7 +2654,7 @@ SCRIPT_CALENDARIO = """<script>
   sig.addEventListener('click', () => ver(meses[meses.indexOf(elegir.value) + 1], true));
   // Un clic (o un toque) elige el día y lo enseña debajo, sin abrirlo: el número se abre desde su portada o desde
   // «Leer el número» (Juanjo, 13-11-2026: pasar el ratón no puede cambiarlo). Sin script, el enlace abre el número.
-  cal.querySelectorAll('.cal-mes a').forEach(a => {
+  cal.querySelectorAll('.cal-mes a[data-dia]').forEach(a => {
     a.setAttribute('role', 'button'); a.setAttribute('aria-pressed', String(a.classList.contains('elegido')));
     a.addEventListener('click', ev => { ev.preventDefault(); marca(a); });
     a.addEventListener('keydown', ev => { if (ev.key === ' ') { ev.preventDefault(); marca(a); } });
@@ -2685,7 +2700,6 @@ def pagina_hemeroteca(eds):
 {cabecera("", "archivo.html", eds[-1]["fecha"], eds[-1]["numero"], True, h1=False)}
 <main class="portada hemeroteca hem-ancha">
 <h1 class="titulo-seccion">{L["hemeroteca"]}</h1>
-<p class="vineta-sub-pagina">{L["hemeroteca_txt"]}</p>
 {"".join(bloques)}
 {boletines}
 </main>
