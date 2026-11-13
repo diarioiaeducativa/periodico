@@ -53,6 +53,9 @@ no se abre al público (trabaja solo, sin que nadie se conecte a él).
     texto. Se lanza con cada comentario creado, editado o borrado, con cada hilo borrado o movido, a mano y
     cada hora (lo que se oculta al moderar no avisa: tarda como mucho una hora en desaparecer de la copia).
     Siempre lo rehace todo; si entretanto ha subido el número, vuelve a empezar sobre lo nuevo (cinco intentos).
+    Las claves de despliegue del NAS no pueden subir flujos de GitHub Actions («refusing to allow an OAuth App to
+    create or update workflow»): el `.yml` se guarda aquí, en `flujos-sitio/`, y se copia al sitio desde el portátil,
+    con la cuenta de Juanjo. Cambiarlo es cambiarlo en los dos sitios.
   - El texto es el HTML que da GitHub, pasado por una lista cerrada de etiquetas de texto: sin atributos salvo
     el destino de los enlaces (solo `http`, `https` y `mailto`), sin scripts, estilos ni SVG, y sin imágenes,
     que quedan como enlace, para que leer no cargue nada de fuera. Sin avatares. Un comentario ocultado no
