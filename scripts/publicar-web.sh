@@ -20,7 +20,7 @@ log() { printf '%s  %s\n' "$(date '+%F %T')" "$*" | tee -a "$REG"; }
 
 # El resumen de cada vídeo, a las otras lenguas (ADR 0057). Si alguna no sale, su edición lo enseña en
 # castellano y lo dice: no impide publicar.
-bash scripts/multimedia-traducir.sh >> "$REG" 2>&1 || log "AVISO: algún resumen de los vídeos de la semana sale en castellano en las ediciones traducidas"
+bash scripts/multimedia-traducir.sh > /dev/null 2>> "$REG" || log "AVISO: algún resumen de los vídeos de la semana sale en castellano en las ediciones traducidas"
 
 python3 generar.py >> "$REG" 2>&1 || { log "ERROR: el generador falla"; exit 1; }
 python3 -m pagefind --site sitio >> "$REG" 2>&1 || log "AVISO: no se pudo rehacer el índice del buscador; queda el anterior"

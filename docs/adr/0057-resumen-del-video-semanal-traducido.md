@@ -72,3 +72,12 @@ Juanjo, 13-11-2026, sabiendo que el vídeo y el pódcast seguirán en castellano
 
 ## Validación
 
+- Sin IA, con una traducción de pega: la comprobación la da por buena y apunta `origen`; al cambiar una
+  cifra del resumen en castellano, ese grupo vuelve al castellano con su aviso y la semana vuelve a estar
+  pendiente; una traducción con el castellano copiado o sin un grupo se quita.
+- En el NAS, el 13-11-2026, con la semana 2026-45: `publicar-web.sh` tradujo los tres resúmenes a los cuatro
+  idiomas y publicó la web en 1 minuto y 45 segundos; `multimedia.py pendientes` no deja nada. Comprobado
+  en la web pública que las cuatro ediciones enseñan el resumen en su lengua, sin la línea de aviso.
+- Leídas las doce traducciones: dos errores de sentido, corregidos a mano («sociolingüística» traducida al
+  gallego como «socioloxía da linguaxe»; en inglés, «exporting Gemini to Google Sites» por exportar desde
+  Gemini). El encargo pide desde entonces no cambiar un término por otro parecido.
