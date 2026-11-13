@@ -940,7 +940,7 @@ p.con-nb { margin: 0 0 0.3rem; }
   @page { size: A4; margin: 14mm 13mm 15mm; }
   html, body { background: #fff !important; }
   body { font-size: 10pt; }
-  .secciones, .controles, .orejas, .lema, .acciones, .mas, .comentarios, .volver, .pie, .columnas-boton, .papel-barra,
+  .secciones, .controles, .orejas, .lema, .acciones, .mas, .comentarios, .volver, .pie, .columnas-boton, .papel-barra, .breves button, .breve button,
   .seccion-dcha .columnas-boton, .serie-nav, .llevar-menu { display: none !important; }
   .solo-papel { display: flex !important; }
   .cabecera, .articulo, main { width: auto !important; max-width: none !important; margin: 0 !important; padding: 0 !important; }
@@ -983,4 +983,6 @@ p.con-nb { margin: 0 0 0.3rem; }
     margin: 0 !important; padding: 0 !important; font-weight: inherit !important; color: inherit !important; }
   .papel > article { break-before: auto; }
   .vineta { margin-top: 6mm; }
+  /* En papel, la tira en fila, como en la portada: la página no llega al ancho en que la pantalla la pone así */
+  .vineta .tira, .articulo > .vineta .tira { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; max-width: none !important; gap: 3mm; }
 }
