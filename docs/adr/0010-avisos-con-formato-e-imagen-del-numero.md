@@ -42,6 +42,18 @@ Recomendado y aceptado por Juanjo el 04-11-2026:
   encima del texto.
 - `publicar-nas.sh` hace la imagen y la cabecera antes de generar el sitio. Si alguna falla, el
   sitio sale con la imagen genérica y el aviso sin cabecera, pero sale.
+- **Una imagen por pieza, en los cinco idiomas** (13-11-2026, aprobado por Juanjo entre las medidas del
+  examen del diario, ADR 0055): al compartir una noticia salía siempre la imagen genérica y todas se veían
+  iguales. `og-numero.py` hace además `og/piezas/<idioma>/<fecha>-<id>.png` de cada pieza del número y del
+  reportaje, con la misma maqueta (mancheta, número, fecha, sección, titular y dibujo). `generar.py` las copia
+  a `sitio/og/piezas/` y pone en la página de cada pieza la de su idioma; si la pieza aún no está traducida
+  (su titular es el del castellano) no se hace, y la página lleva la del castellano.
+- **Las de las piezas se aligeran con Pillow** (13-11-2026; Juanjo: «hazlo con librería»): reducidas a una
+  paleta de 64 colores, sin tramado, pesan un tercio y no se nota, porque son tinta sobre papel y un dibujo
+  de colores planos. La que lleva una captura de pantalla (los recursos del repositorio) se queda en 256
+  colores, porque tiene degradados. Sin aligerar, los cinco idiomas eran unos 2 MB al día en el repositorio
+  del sitio, que GitHub Pages limita a 1 GB publicado. Pillow va en el `Dockerfile`; si falta, las imágenes
+  salen igual, sin aligerar. Las del número (`og/numeros/`) no se tocan.
 
 ## Alternativas descartadas
 
@@ -76,3 +88,7 @@ Recomendado y aceptado por Juanjo el 04-11-2026:
 - Pruebas del bot (`pruebas/test_diario_grupos.py`): formato nuevo, signos escapados, aviso sin
   cabecera y formato anterior.
 - Un aviso de prueba enviado por el bot solo a Juanjo, antes del primer número con el formato.
+- Imágenes de las piezas (13-11-2026): hechas las 355 de lo ya publicado (71 piezas en cinco idiomas), 9,4 MB
+  en total y 27,7 kB de media, frente a 78 kB sin aligerar; la mayor, con captura de pantalla, 72 kB. Vistas
+  en castellano, euskera e inglés, con dibujo y con captura. La misma reducción, probada en el contenedor
+  con Pillow 12.3.0, da el mismo archivo que en el portátil.

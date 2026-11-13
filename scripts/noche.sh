@@ -274,5 +274,17 @@ if ! python3 generar.py >> "$REG" 2>&1; then
   log "ERROR: el generador falla con la edición nueva"
   exit 1
 fi
+# Castellano que se haya colado en las ediciones traducidas, fuera de lo que traduce el traductor (ADR 0056).
+# Lo mira un programa, sin IA, en el sitio recién generado; no impide que el número salga.
+if ! python3 scripts/revisar-idiomas.py --dia "$FECHA" > "registro/$FECHA-idiomas.txt" 2>>"$REG"; then
+  log "AVISO: queda castellano en las ediciones traducidas: $(wc -l < "registro/$FECHA-idiomas.txt") textos (registro/$FECHA-idiomas.txt)"
+  avisar-juanjo --de "Diario de IA Educativa" "En las ediciones traducidas del número de hoy quedan $(wc -l < "registro/$FECHA-idiomas.txt") textos en castellano. El primero: $(head -1 "registro/$FECHA-idiomas.txt" | cut -f1-3 | cut -c1-220). Lista: /volume1/docker/diario-ia-educativa/repo/registro/$FECHA-idiomas.txt" >> "$REG" 2>&1 || true
+fi
 touch "estado/$FECHA.listo"
 log "listo: número del $PUBLICA preparado"
+
+# Una vez por semana, los enlaces caídos de lo ya publicado (ADR 0056): un programa, sin IA, que va despacio
+# y en segundo plano, con el número ya listo; avisa de los que llevan dos semanas seguidas caídos.
+if [ "$(date +%u)" = 3 ]; then
+  nohup python3 scripts/revisar-enlaces.py --avisar >> registro/enlaces.log 2>&1 &
+fi

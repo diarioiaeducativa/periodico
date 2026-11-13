@@ -69,8 +69,8 @@ IDIOMAS = {
         "quees": "La redacción", "portada": "Portada", "volver": "Volver a la portada",
         "dia_ant": "Día anterior", "dia_sig": "Día siguiente", "hoy": "Hoy", "hoy_titulo": "La portada del número de hoy", "este_numero": "La portada de este número", "imprimir": "Imprimir", "papel": "Edición en papel", "papel_imprimir": "Imprimir o guardar en PDF", "papel_volver": "Volver al número", "papel_sumario": "En este número", "papel_consejo": "En el diálogo de imprimir, elige «Guardar como PDF» para tenerla en un archivo.", "papel_titulo": "Edición en papel del número {n}",
         "leer_conv": "Lee la conversación original en", "tema_en": "Tema tratado en",
-        "comprobado": "Comprobado en", "fuente": "Fuente", "conversacion": "Conversación", "comentarios": "Comentarios", "comentarios_aviso": "Para comentar hace falta una {cuenta}. Los comentarios son públicos y se guardan en GitHub.", "comentarios_cuenta": "cuenta gratuita de GitHub",
-        "breves": "Breves", "breves_antes": "Breves anteriores", "vineta": "La viñeta", "vineta_titulo": "La viñeta de Tiza y Algoritmo", "nombre_tiza": "Tiza", "nombre_algoritmo": "Algoritmo", "y": "y",
+        "comprobado": "Comprobado en", "fuente": "Fuente", "conversacion": "Conversación", "comentarios": "Comentarios", "comentarios_aviso": "Para comentar hace falta una {cuenta}. Los comentarios son públicos y se guardan en GitHub.", "comentarios_cuenta": "cuenta gratuita de GitHub", "comentarios_ver": "Ver los comentarios",
+        "breves": "Breves", "breves_antes": "Breves anteriores", "vineta": "La viñeta", "vineta_titulo": "La viñeta de Tiza y Algoritmo", "nombre_tiza": "Tiza", "nombre_algoritmo": "Algoritmo", "vin_panel": "Viñeta", "vin_pensando": "pensando", "y": "y",
         "a_partir": "A partir de",
         "a_partir_dia": "A partir de las noticias del día.",
         "unete": "Únete a la conversación",
@@ -114,7 +114,7 @@ IDIOMAS = {
         },
         "videos": "Vídeos", "semana_video": "La semana en vídeo", "en_pantalla": "Lo que aparece en pantalla",
         "en_instagram": "Verlo en Instagram", "instagram": "Instagram", "sin_videos": "Todavía no hay vídeos.",
-        "video_idioma": "Vídeo en castellano.", "video_enlace": "Enlace a este vídeo",
+        "video_idioma": "Vídeo en castellano.", "nb_castellano": "", "video_enlace": "Enlace a este vídeo",
         "todos_videos": "Todos los vídeos",
         "biblioteca_enlace": "Biblioteca digital", "el_documento": "El documento", "doc_titulo": "Título", "doc_autoria": "Autoría",
         "doc_anyo": "Año", "doc_idioma": "Idioma", "doc_licencia": "Licencia", "doc_leer": "Leer el documento en su fuente oficial",
@@ -175,7 +175,7 @@ IDIOMAS = {
                 ("El Repositorio de recursos", "El {repositorio} de Vibe Coding Educativo reúne las aplicaciones y recursos que crean y comparten con licencia abierta los docentes de esa comunidad. Cada día, el documentalista escribe sobre hasta dos de los que han entrado y el diario aún no ha contado, y el número del sábado repasa los de la semana; si no hay ninguno nuevo y el número se queda corto, rescata uno anterior. Un programa abre cada recurso y guarda una captura de lo que se ve; el documentalista lo describe a partir de la captura y de su página, y el revisor lo vuelve a abrir. Salen en la sección {seccion_vc}, con el nombre de quien lo ha hecho y su licencia."),
                 ("Las personas", "La idea del diario es de {raul}, administrador de {edumedia}. La redacción la diseñó y la mantiene {juanjo}, que revisa cada número antes de que salga y responde de lo publicado. Los dos participan en los grupos que el diario cuenta: cuando publican un recurso se les nombra como a cualquiera, y cuando una pieza trata del propio diario, lo dice. El diario no tiene publicidad ni patrocinio."),
                 ("El código", "Los programas que preparan y montan el diario y el encargo de cada agente son públicos, en {codigo}, con licencia AGPL v3, y cada decisión está explicada en sus registros de decisiones (ADR). Los mensajes de los grupos no están en él."),
-                ("Las visitas", "El diario cuenta cuántas visitas recibe y cuántas veces se abre cada página, para saber si llega a quien lo lee. No usa cookies ni guarda nada de quien lo lee: su navegador recuerda qué páginas ya ha contado, para no contarlas dos veces en la misma visita, y al servidor de los autores solo le llega la suma. Lo que el navegador recuerda para el contador se borra a los 13 meses, la duración que pone de ejemplo la {aepd} en su guía sobre medición de audiencia, y las visitas nuevas no lo alargan; el tema, el idioma y la lectura en columnas o en una columna que se eligen se recuerdan sin caducar. Las cifras se guardan por horas durante 25 meses como máximo, el plazo de esa misma guía; después queda solo el total de cada año. Solo las ven las dos personas que hacen el diario. Para poder leerlo sin conexión, el navegador guarda en el propio dispositivo una copia de las páginas abiertas y del último número; esa copia no sale de él. La app de Android es esta misma web y no recoge nada más. Los comentarios se publican con giscus en las Discussions de GitHub: para comentar hace falta una cuenta de GitHub, y GitHub guarda el comentario y el nombre de usuario con su propia política de privacidad. Quien no comenta no envía nada."),
+                ("Las visitas", "El diario cuenta cuántas visitas recibe y cuántas veces se abre cada página, para saber si llega a quien lo lee. No usa cookies ni guarda nada de quien lo lee: su navegador recuerda qué páginas ya ha contado, para no contarlas dos veces en la misma visita, y al servidor de los autores solo le llega la suma. Lo que el navegador recuerda para el contador se borra a los 13 meses, la duración que pone de ejemplo la {aepd} en su guía sobre medición de audiencia, y las visitas nuevas no lo alargan; el tema, el idioma y la lectura en columnas o en una columna que se eligen se recuerdan sin caducar. Las cifras se guardan por horas durante 25 meses como máximo, el plazo de esa misma guía; después queda solo el total de cada año. Solo las ven las dos personas que hacen el diario. Para poder leerlo sin conexión, el navegador guarda en el propio dispositivo una copia de las páginas abiertas y del último número; esa copia no sale de él. La app de Android es esta misma web y no recoge nada más. Los comentarios se publican con giscus en las Discussions de GitHub y solo se cargan al pulsar «Ver los comentarios»: hasta entonces la página no se conecta con giscus ni con GitHub. Para comentar hace falta una cuenta de GitHub, y GitHub guarda el comentario y el nombre de usuario con su propia política de privacidad."),
                 ("Las comunidades", "{chatgpt}, sobre inteligencia artificial en educación; {vce}, de docentes que programan sus propias aplicaciones con IA, y {edumedia}, sobre IA generativa para crear audio, vídeo e imagen. Las tres son abiertas: cada pieza enlaza a la conversación donde nació, que se puede leer sin entrar."),
                 ("Si participas en los grupos", "Las opiniones no se atribuyen a nadie: solo se nombra a la persona que ha publicado un recurso propio. Si aparece algo tuyo y prefieres que no salga, o ves un error, díselo a las personas que administran tu grupo y se retirará o se corregirá."),
                 ("Contacto", "El correo y las demás vías para avisar de un error, pedir que se retire algo o hacer cualquier consulta están en la {pagina_contacto}."),
@@ -199,8 +199,8 @@ IDIOMAS = {
         "quees": "La redacció", "portada": "Portada", "volver": "Torna a la portada",
         "dia_ant": "Dia anterior", "dia_sig": "Dia següent", "hoy": "Avui", "hoy_titulo": "La portada del número d'avui", "este_numero": "La portada d'aquest número", "imprimir": "Imprimeix", "papel": "Edició en paper", "papel_imprimir": "Imprimeix o desa en PDF", "papel_volver": "Torna al número", "papel_sumario": "En aquest número", "papel_consejo": "Al diàleg d'imprimir, tria «Desa com a PDF» per tenir-la en un fitxer.", "papel_titulo": "Edició en paper del número {n}",
         "leer_conv": "Llegeix la conversa original a", "tema_en": "Tema tractat a",
-        "comprobado": "Comprovat a", "fuente": "Font", "conversacion": "Conversa", "comentarios": "Comentaris", "comentarios_aviso": "Per comentar cal un {cuenta}. Els comentaris són públics i es desen a GitHub.", "comentarios_cuenta": "compte gratuït de GitHub",
-        "breves": "Breus", "breves_antes": "Breus anteriors", "vineta": "La vinyeta", "vineta_titulo": "La vinyeta de Guix i Algorisme", "nombre_tiza": "Guix", "nombre_algoritmo": "Algorisme", "y": "i",
+        "comprobado": "Comprovat a", "fuente": "Font", "conversacion": "Conversa", "comentarios": "Comentaris", "comentarios_aviso": "Per comentar cal un {cuenta}. Els comentaris són públics i es desen a GitHub.", "comentarios_cuenta": "compte gratuït de GitHub", "comentarios_ver": "Mostra els comentaris",
+        "breves": "Breus", "breves_antes": "Breus anteriors", "vineta": "La vinyeta", "vineta_titulo": "La vinyeta de Guix i Algorisme", "nombre_tiza": "Guix", "nombre_algoritmo": "Algorisme", "vin_panel": "Vinyeta", "vin_pensando": "pensant", "y": "i",
         "a_partir": "A partir de",
         "a_partir_dia": "A partir de les notícies del dia.",
         "unete": "Uneix-te a la conversa",
@@ -245,7 +245,7 @@ IDIOMAS = {
         },
         "videos": "Vídeos", "semana_video": "La setmana en vídeo", "en_pantalla": "El que apareix a la pantalla",
         "en_instagram": "Mira'l a Instagram", "instagram": "Instagram", "sin_videos": "Encara no hi ha vídeos.",
-        "video_idioma": "Vídeo en castellà.", "video_enlace": "Enllaç a aquest vídeo",
+        "video_idioma": "Vídeo en castellà.", "nb_castellano": "Resum, vídeo i pòdcast en castellà.", "video_enlace": "Enllaç a aquest vídeo",
         "todos_videos": "Tots els vídeos",
         "biblioteca_enlace": "Biblioteca digital", "el_documento": "El document", "doc_titulo": "Títol", "doc_autoria": "Autoria",
         "doc_anyo": "Any", "doc_idioma": "Idioma", "doc_licencia": "Llicència", "doc_leer": "Llegeix el document a la font oficial",
@@ -306,7 +306,7 @@ IDIOMAS = {
                 ("El Repositori de recursos", "El {repositorio} de Vibe Coding Educativo reuneix les aplicacions i els recursos que creen i comparteixen amb llicència oberta els docents d'aquesta comunitat. Cada dia, el documentalista escriu sobre fins a dos dels que hi han entrat i que el diari encara no ha explicat, i el número del dissabte repassa els de la setmana; si no n'hi ha cap de nou i el número es queda curt, en rescata un d'anterior. Un programa obre cada recurs i en guarda una captura del que es veu; el documentalista el descriu a partir de la captura i de la seva pàgina, i el revisor el torna a obrir. Surten a la secció {seccion_vc}, amb el nom de qui l'ha fet i la seva llicència."),
                 ("Les persones", "La idea del diari és de {raul}, administrador d'{edumedia}. La redacció la va dissenyar i la manté {juanjo}, que revisa cada número abans que surti i respon del que s'hi publica. Tots dos participen en els grups que el diari explica: quan publiquen un recurs se'ls anomena com a qualsevol altra persona, i quan una peça tracta del mateix diari, ho diu. El diari no té publicitat ni patrocini."),
                 ("El codi", "Els programes que preparen i munten el diari i l'encàrrec de cada agent són públics, al {codigo}, amb llicència AGPL v3, i cada decisió s'explica als seus registres de decisions (ADR). Els missatges dels grups no hi són."),
-                ("Les visites", "El diari compta quantes visites rep i quantes vegades s'obre cada pàgina, per saber si arriba a qui el llegeix. No fa servir galetes ni desa res de qui el llegeix: el seu navegador recorda quines pàgines ja ha comptat, per no comptar-les dues vegades en la mateixa visita, i al servidor dels autors només hi arriba la suma. El que el navegador recorda per al comptador s'esborra al cap de 13 mesos, la durada que posa d'exemple l'{aepd} a la seva guia sobre mesurament d'audiència, i les visites noves no l'allarguen; el tema, l'idioma i la lectura en columnes o en una columna triats es recorden sense caducar. Les xifres es desen per hores durant 25 mesos com a màxim, el termini d'aquesta mateixa guia; després només en queda el total de cada any. Només les veuen les dues persones que fan el diari. Per poder-lo llegir sense connexió, el navegador desa al mateix dispositiu una còpia de les pàgines obertes i de l'últim número; aquesta còpia no en surt. L'app d'Android és aquest mateix web i no recull res més. Els comentaris es publiquen amb giscus a les Discussions de GitHub: per comentar cal un compte de GitHub, i GitHub desa el comentari i el nom d'usuari amb la seva pròpia política de privadesa. Qui no comenta no envia res."),
+                ("Les visites", "El diari compta quantes visites rep i quantes vegades s'obre cada pàgina, per saber si arriba a qui el llegeix. No fa servir galetes ni desa res de qui el llegeix: el seu navegador recorda quines pàgines ja ha comptat, per no comptar-les dues vegades en la mateixa visita, i al servidor dels autors només hi arriba la suma. El que el navegador recorda per al comptador s'esborra al cap de 13 mesos, la durada que posa d'exemple l'{aepd} a la seva guia sobre mesurament d'audiència, i les visites noves no l'allarguen; el tema, l'idioma i la lectura en columnes o en una columna triats es recorden sense caducar. Les xifres es desen per hores durant 25 mesos com a màxim, el termini d'aquesta mateixa guia; després només en queda el total de cada any. Només les veuen les dues persones que fan el diari. Per poder-lo llegir sense connexió, el navegador desa al mateix dispositiu una còpia de les pàgines obertes i de l'últim número; aquesta còpia no en surt. L'app d'Android és aquest mateix web i no recull res més. Els comentaris es publiquen amb giscus a les Discussions de GitHub i només es carreguen en prémer «Mostra els comentaris»: fins aleshores la pàgina no es connecta amb giscus ni amb GitHub. Per comentar cal un compte de GitHub, i GitHub desa el comentari i el nom d'usuari amb la seva pròpia política de privadesa."),
                 ("Les comunitats", "{chatgpt}, sobre intel·ligència artificial en educació; {vce}, de docents que programen les seves pròpies aplicacions amb IA, i {edumedia}, sobre IA generativa per crear àudio, vídeo i imatge. Totes tres són obertes: cada peça enllaça amb la conversa on va néixer, que es pot llegir sense entrar-hi."),
                 ("Si participes als grups", "Les opinions no s'atribueixen a ningú: només s'anomena la persona que ha publicat un recurs propi. Si hi apareix alguna cosa teva i prefereixes que no surti, o hi veus un error, digues-ho a les persones que administren el teu grup i es retirarà o es corregirà."),
                 ("Contacte", "El correu i les altres vies per avisar d'un error, demanar que es retiri alguna cosa o fer qualsevol consulta són a la {pagina_contacto}."),
@@ -590,7 +590,13 @@ ULTIMA_SEMANA = None   # la última pieza «La semana del repositorio» (ADR 000
 
 
 def imagen_og(ruta, codigo):
-    """La portada y la página de cada día enseñan la imagen de su número (ADR 0010); lo demás, la genérica."""
+    """La portada y la página de cada día enseñan la imagen de su número (ADR 0010); cada pieza, la suya, con su
+    titular y su dibujo, en su idioma; lo demás, la genérica."""
+    m = re.fullmatch(r"(\d{4}-\d{2}-\d{2})/([^/]+)\.html", ruta)
+    if m:
+        for c in (codigo, "es"):   # sin imagen de la pieza en ese idioma, la del castellano
+            if (RAIZ / "og" / "piezas" / c / f"{m.group(1)}-{m.group(2)}.png").exists():
+                return f"{BASE}og/piezas/{c}/{m.group(1)}-{m.group(2)}.png"
     m = re.fullmatch(r"(\d{4}-\d{2}-\d{2})/", ruta)
     fecha = m.group(1) if m else (ULTIMA if ruta == "" else None)
     if fecha:
@@ -726,6 +732,8 @@ def href_idioma(prof, ruta, destino):
     return f"{recursos(prof)}{IDIOMAS[destino]['carpeta']}{ruta}" or "./"
 
 
+ICONO_COMENTARIOS = ('<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202'
+                     'A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"/></svg>')   # message-square (Lucide)
 ICONO_IDIOMAS = ('<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/>'
                  '<path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/></svg>')   # languages (Lucide)
 
@@ -739,9 +747,9 @@ def selector_idioma(prof, ruta):
         f'<li><a href="{href_idioma(prof, ruta, c)}" lang="{c}" hreflang="{c}" data-idioma="{c}"'
         f'{actual if c == yo else ""}>{d["nombre"]}</a></li>' for c, d in IDIOMAS.items())
     rotulo = f'{L["idioma"]}: {L["nombre"]}'
-    return (f'<span class="idiomas"><button type="button" class="idioma-boton" aria-expanded="false" aria-controls="menu-idiomas" '
+    return (f'<div class="idiomas"><button type="button" class="idioma-boton" aria-expanded="false" aria-controls="menu-idiomas" '
             f'title="{rotulo}" aria-label="{rotulo}">{ICONO_IDIOMAS}<span class="idioma-cod" aria-hidden="true">{yo.upper()}</span></button>'
-            f'<ul class="idioma-menu" id="menu-idiomas" hidden>{items}</ul></span>')
+            f'<ul class="idioma-menu" id="menu-idiomas" hidden>{items}</ul></div>')
 
 
 # Comentarios (ADR 0030): giscus guarda cada hilo en las Discussions del repositorio del sitio, sin
@@ -758,19 +766,25 @@ def comentarios(ruta):
                     "lang": GISCUS_IDIOMA.get(L["codigo"], "en"), "loading": "lazy"})
     attrs = "".join(f's.setAttribute("data-{k}",{json.dumps(v)});' for k, v in datos.items())
     aviso = L["comentarios_aviso"].format(cuenta=enlace("https://github.com/signup", L["comentarios_cuenta"]))
+    # Los comentarios se cargan solo al pulsar el botón (ADR 0030): hasta entonces la página no se conecta
+    # con giscus ni con GitHub, y quien solo lee no envía nada a nadie
     return f"""<section class="comentarios" data-pagefind-ignore aria-labelledby="t-comentarios">
     <h2 id="t-comentarios">{L["comentarios"]}</h2>
     <p class="comentarios-aviso">{aviso}</p>
-    <div class="comentarios-caja"></div>
+    <p class="comentarios-abrir"><button type="button" class="compartir comentarios-ver">{ICONO_COMENTARIOS}<span>{L["comentarios_ver"]}</span></button></p>
+    <div class="comentarios-caja" hidden></div>
     <script>
     (function(){{
-      var raiz=document.documentElement, caja=document.currentScript.previousElementSibling;
+      var raiz=document.documentElement, caja=document.currentScript.previousElementSibling, abrir=caja.previousElementSibling;
       function tema(){{var t=raiz.dataset.theme; return (t? t==='dark' : matchMedia('(prefers-color-scheme: dark)').matches)?'transparent_dark':'light';}}
-      var s=document.createElement('script'); s.src='https://giscus.app/client.js'; s.async=true; s.crossOrigin='anonymous';
-      {attrs}s.setAttribute('data-theme',tema()); caja.appendChild(s);
-      // Al cambiar el tema del diario, también el de los comentarios
-      new MutationObserver(function(){{var f=document.querySelector('iframe.giscus-frame');
-        if(f) f.contentWindow.postMessage({{giscus:{{setConfig:{{theme:tema()}}}}}},'https://giscus.app');}}).observe(raiz,{{attributes:true,attributeFilter:['data-theme']}});
+      abrir.querySelector('button').addEventListener('click',function(){{
+        abrir.hidden=true; caja.hidden=false;
+        var s=document.createElement('script'); s.src='https://giscus.app/client.js'; s.async=true; s.crossOrigin='anonymous';
+        {attrs}s.setAttribute('data-theme',tema()); caja.appendChild(s);
+        // Al cambiar el tema del diario, también el de los comentarios
+        new MutationObserver(function(){{var f=document.querySelector('iframe.giscus-frame');
+          if(f) f.contentWindow.postMessage({{giscus:{{setConfig:{{theme:tema()}}}}}},'https://giscus.app');}}).observe(raiz,{{attributes:true,attributeFilter:['data-theme']}});
+      }});
     }})();
     </script>
   </section>"""
@@ -982,7 +996,7 @@ SCRIPT_TEMA = """<script>
   document.querySelectorAll('button.imprimir').forEach(function(b){b.addEventListener('click',imprimir);});
   if(new URLSearchParams(location.search).get('imprimir')==='1'&&document.body.classList.contains('pag-papel'))
     addEventListener('load',function(){(document.fonts?document.fonts.ready:Promise.resolve()).then(imprimir);});
-  document.querySelectorAll('.compartir:not(.copiar):not(.llevar-boton):not(.imprimir)').forEach(function(b){
+  document.querySelectorAll('.compartir:not(.copiar):not(.llevar-boton):not(.imprimir):not(.comentarios-ver)').forEach(function(b){
     b.addEventListener('click',function(){
       var url=b.dataset.url||location.href, datos={title:b.dataset.titulo||document.title,url:url}, r=b.querySelector('span');
       if(navigator.share){navigator.share(datos).catch(function(){});return;}
@@ -1132,7 +1146,7 @@ def cabecera(prof, ruta, fecha, cuenta, es_portada, h1=True, activa=None, ant=""
   <div class="cabecera-fila">
     <span class="cuando">{cuando}</span>
     {numero if cuenta else '<span></span>'}
-    <span class="controles">{f'<a class="ico-papel" href="{papel}" title="{L["papel"]}" aria-label="{L["papel"]}">{IMPRESORA}</a>' if papel else ""}<a class="ico-video" href="{prof}videos.html" title="{L["videos"]}" aria-label="{L["videos"]}">{PLAY}</a><a class="lupa" href="{prof}buscar.html" title="{L["buscar_etiqueta"]}" aria-label="{L["buscar_etiqueta"]}">{LUPA}<span class="lupa-rotulo">{L["buscar"]}</span></a>{selector_idioma(prof, ruta)}{boton_tema()}</span>
+    <div class="controles">{f'<a class="ico-papel" href="{papel}" title="{L["papel"]}" aria-label="{L["papel"]}">{IMPRESORA}</a>' if papel else ""}<a class="ico-video" href="{prof}videos.html" title="{L["videos"]}" aria-label="{L["videos"]}">{PLAY}</a><a class="lupa" href="{prof}buscar.html" title="{L["buscar_etiqueta"]}" aria-label="{L["buscar_etiqueta"]}">{LUPA}<span class="lupa-rotulo">{L["buscar"]}</span></a>{selector_idioma(prof, ruta)}{boton_tema()}</div>
   </div>
   <{etiqueta} class="mancheta">{nombre}</{etiqueta}>
   <p class="lema">{L["lema"]}</p>
@@ -1415,7 +1429,7 @@ def bloque_vineta(prof, eds, fecha, en_archivo=False, pieza=None):
         origen_txt = L["a_partir_dia"]
     return f"""<section class="vineta sec-vineta" aria-labelledby="t-vineta-{fecha}">
   <h2 id="t-vineta-{fecha}" class="vineta-titulo"><span>{"" if en_archivo else f'<a href="{prof}vineta.html">{icono("vineta")} {L["vineta_titulo"]}</a>'}</span> <span class="fecha-pieza">{fecha_corta(publicacion(fecha))}</span></h2>
-  <div class="tira">{vineta.tira(elegida["guion"])}</div>
+  <div class="tira">{vineta.tira(elegida["guion"], {"panel": L["vin_panel"], "tiza": L["nombre_tiza"], "algoritmo": L["nombre_algoritmo"], "pensando": L["vin_pensando"]})}</div>
   {"" if pieza else f'<p class="vineta-origen">{origen_txt}</p>'}
 </section>"""
 
@@ -1553,14 +1567,15 @@ def pagina_portada(prof, ruta, eds, piezas, breves, fecha, cuenta, es_portada, a
 </html>"""
 
 
-def enlaces_biblioteca(prof, texto, eds):
-    """Un enlace a un documento de la Biblioteca digital lleva a su artículo del diario, si lo tiene."""
+def enlaces_biblioteca(prof, texto, eds, propia=None):
+    """Un enlace a un documento de la Biblioteca digital lleva a su artículo del diario, si lo tiene. En el
+    artículo del propio documento (`propia`) se queda como está: llevaría a la página en que ya se está."""
     articulos = {int((x.get("mensaje") or {}).get("id") or 0): x for dd in eds for x in dd["piezas"] if x.get("seccion") == "biblioteca"}
     articulos.update({int(x["biblioteca"].get("id") or 0): x for dd in eds for x in dd["piezas"]
                       if x.get("biblioteca") and int(x["biblioteca"].get("id") or 0) not in articulos})
     def cambia(m):
         x = articulos.get(int(m.group(2)))
-        return f"]({href(prof, x)})" if x else m.group(0)
+        return f"]({href(prof, x)})" if x and x is not propia else m.group(0)
     return re.sub(r"\]\((https://t\.me/ChatGPTedu/21753/(\d+))\)", cambia, texto)
 
 
@@ -1596,7 +1611,7 @@ def bloque_recurso(prof, pid, r):
 
 
 def articulo(prof, ruta, d, p, eds):
-    parrafos = [enlaces_biblioteca(prof, x, eds) for x in p.get("cuerpo", [])]
+    parrafos = [enlaces_biblioteca(prof, x, eds, p) for x in p.get("cuerpo", [])]
     # La capitular solo cuando el primer párrafo empieza por letra: con comillas o cifras queda rara
     cap = ' class="capitular"' if parrafos and parrafos[0][:1].isalpha() else ""
     cuerpo = "".join(f"<p{cap if i == 0 else ''}>{md(x)}</p>" for i, x in enumerate(parrafos))
@@ -1697,6 +1712,7 @@ def pagina_papel(d, eds):
 {cuerpo}
 {bloque_vineta(prof, eds, d["fecha"])}
 {bloque_breves(d.get("breves", []), False)}
+<p class="solo-papel papel-creditos papel-creditos-final">{creditos_papel(ruta)}</p>
 </main>
 {SCRIPT_TEMA}
 </body>
@@ -2000,19 +2016,19 @@ def pagina_videos(eds):
 TXT_COMUNIDADES = {
     "es": {"pie": "{n} personas en tres comunidades", "personas": "miembros", "total": "personas distintas", "fecha": "a {f}",
            "nota": "{fecha}.",
-           "alt": "Diagrama de los tres grupos de Telegram del diario, con tres círculos que se cruzan. ChatGPT-IA-edu tiene {chatgpt} miembros; Vibe Coding Educativo, {vce}, y EduMedia-IAG, {edumedia}. Solo en ChatGPT-IA-edu están {s_chatgpt}; solo en Vibe Coding Educativo, {s_vce}, y solo en EduMedia-IAG, {s_edumedia}. En ChatGPT-IA-edu y Vibe Coding Educativo, sin EduMedia-IAG, {chatgpt_vce}; en ChatGPT-IA-edu y EduMedia-IAG, sin Vibe Coding Educativo, {chatgpt_edumedia}; en Vibe Coding Educativo y EduMedia-IAG, sin ChatGPT-IA-edu, {vce_edumedia}, y en los tres, {tres}. En total, {total} personas distintas, a {f}."},
+           "alt": "Diagrama de los tres grupos de Telegram del diario, con tres círculos que se cruzan. ChatGPT-IA-edu tiene {chatgpt} miembros; Vibe Coding Educativo, {vce}, y EduMedia-IAG, {edumedia}. Solo en ChatGPT-IA-edu están {s_chatgpt}; solo en Vibe Coding Educativo, {s_vce}, y solo en EduMedia-IAG, {s_edumedia}. En ChatGPT-IA-edu y Vibe Coding Educativo, sin EduMedia-IAG, {chatgpt_vce}; en ChatGPT-IA-edu y EduMedia-IAG, sin Vibe Coding Educativo, {chatgpt_edumedia}; en Vibe Coding Educativo y EduMedia-IAG, sin ChatGPT-IA-edu, {vce_edumedia}, y en los tres, {tres}. En total, {total} personas distintas, {f}."},
     "ca": {"pie": "{n} persones en tres comunitats", "personas": "membres", "total": "persones diferents", "fecha": "a {f}",
            "nota": "{fecha}.",
-           "alt": "Diagrama dels tres grups de Telegram del diari, amb tres cercles que s'encreuen. ChatGPT-IA-edu té {chatgpt} membres; Vibe Coding Educativo, {vce}, i EduMedia-IAG, {edumedia}. Només a ChatGPT-IA-edu n'hi ha {s_chatgpt}; només a Vibe Coding Educativo, {s_vce}, i només a EduMedia-IAG, {s_edumedia}. A ChatGPT-IA-edu i Vibe Coding Educativo, sense EduMedia-IAG, {chatgpt_vce}; a ChatGPT-IA-edu i EduMedia-IAG, sense Vibe Coding Educativo, {chatgpt_edumedia}; a Vibe Coding Educativo i EduMedia-IAG, sense ChatGPT-IA-edu, {vce_edumedia}, i als tres, {tres}. En total, {total} persones diferents, a {f}."},
+           "alt": "Diagrama dels tres grups de Telegram del diari, amb tres cercles que s'encreuen. ChatGPT-IA-edu té {chatgpt} membres; Vibe Coding Educativo, {vce}, i EduMedia-IAG, {edumedia}. Només a ChatGPT-IA-edu n'hi ha {s_chatgpt}; només a Vibe Coding Educativo, {s_vce}, i només a EduMedia-IAG, {s_edumedia}. A ChatGPT-IA-edu i Vibe Coding Educativo, sense EduMedia-IAG, {chatgpt_vce}; a ChatGPT-IA-edu i EduMedia-IAG, sense Vibe Coding Educativo, {chatgpt_edumedia}; a Vibe Coding Educativo i EduMedia-IAG, sense ChatGPT-IA-edu, {vce_edumedia}, i als tres, {tres}. En total, {total} persones diferents, {f}."},
     "gl": {"pie": "{n} persoas en tres comunidades", "personas": "membros", "total": "persoas distintas", "fecha": "a {f}",
            "nota": "{fecha}.",
-           "alt": "Diagrama dos tres grupos de Telegram do diario, con tres círculos que se cruzan. ChatGPT-IA-edu ten {chatgpt} membros; Vibe Coding Educativo, {vce}, e EduMedia-IAG, {edumedia}. Só en ChatGPT-IA-edu están {s_chatgpt}; só en Vibe Coding Educativo, {s_vce}, e só en EduMedia-IAG, {s_edumedia}. En ChatGPT-IA-edu e Vibe Coding Educativo, sen EduMedia-IAG, {chatgpt_vce}; en ChatGPT-IA-edu e EduMedia-IAG, sen Vibe Coding Educativo, {chatgpt_edumedia}; en Vibe Coding Educativo e EduMedia-IAG, sen ChatGPT-IA-edu, {vce_edumedia}, e nos tres, {tres}. En total, {total} persoas distintas, a {f}."},
+           "alt": "Diagrama dos tres grupos de Telegram do diario, con tres círculos que se cruzan. ChatGPT-IA-edu ten {chatgpt} membros; Vibe Coding Educativo, {vce}, e EduMedia-IAG, {edumedia}. Só en ChatGPT-IA-edu están {s_chatgpt}; só en Vibe Coding Educativo, {s_vce}, e só en EduMedia-IAG, {s_edumedia}. En ChatGPT-IA-edu e Vibe Coding Educativo, sen EduMedia-IAG, {chatgpt_vce}; en ChatGPT-IA-edu e EduMedia-IAG, sen Vibe Coding Educativo, {chatgpt_edumedia}; en Vibe Coding Educativo e EduMedia-IAG, sen ChatGPT-IA-edu, {vce_edumedia}, e nos tres, {tres}. En total, {total} persoas distintas, {f}."},
     "eu": {"pie": "{n} pertsona hiru komunitatetan", "personas": "kide", "total": "pertsona desberdin", "fecha": "{f}n",
            "nota": "{fecha}.",
            "alt": "Egunkariaren Telegrameko hiru taldeen diagrama, elkar gurutzatzen diren hiru zirkulurekin. ChatGPT-IA-edu taldeak {chatgpt} kide ditu; Vibe Coding Educativo taldeak, {vce}, eta EduMedia-IAG taldeak, {edumedia}. ChatGPT-IA-edu taldean soilik {s_chatgpt} daude; Vibe Coding Educativo taldean soilik, {s_vce}, eta EduMedia-IAG taldean soilik, {s_edumedia}. ChatGPT-IA-edu eta Vibe Coding Educativo taldeetan, EduMedia-IAG gabe, {chatgpt_vce}; ChatGPT-IA-edu eta EduMedia-IAG taldeetan, Vibe Coding Educativo gabe, {chatgpt_edumedia}; Vibe Coding Educativo eta EduMedia-IAG taldeetan, ChatGPT-IA-edu gabe, {vce_edumedia}, eta hiruretan, {tres}. Guztira, {total} pertsona desberdin, {f}."},
     "en": {"pie": "{n} people in three communities", "personas": "members", "total": "different people", "fecha": "as of {f}",
            "nota": "{fecha}.",
-           "alt": "Diagram of the paper's three Telegram groups, with three overlapping circles. ChatGPT-IA-edu has {chatgpt} members; Vibe Coding Educativo, {vce}; and EduMedia-IAG, {edumedia}. Only in ChatGPT-IA-edu: {s_chatgpt}; only in Vibe Coding Educativo: {s_vce}; only in EduMedia-IAG: {s_edumedia}. In ChatGPT-IA-edu and Vibe Coding Educativo but not EduMedia-IAG: {chatgpt_vce}; in ChatGPT-IA-edu and EduMedia-IAG but not Vibe Coding Educativo: {chatgpt_edumedia}; in Vibe Coding Educativo and EduMedia-IAG but not ChatGPT-IA-edu: {vce_edumedia}; in all three: {tres}. In total, {total} different people, as of {f}."},
+           "alt": "Diagram of the paper's three Telegram groups, with three overlapping circles. ChatGPT-IA-edu has {chatgpt} members; Vibe Coding Educativo, {vce}; and EduMedia-IAG, {edumedia}. Only in ChatGPT-IA-edu: {s_chatgpt}; only in Vibe Coding Educativo: {s_vce}; only in EduMedia-IAG: {s_edumedia}. In ChatGPT-IA-edu and Vibe Coding Educativo but not EduMedia-IAG: {chatgpt_vce}; in ChatGPT-IA-edu and EduMedia-IAG but not Vibe Coding Educativo: {chatgpt_edumedia}; in Vibe Coding Educativo and EduMedia-IAG but not ChatGPT-IA-edu: {vce_edumedia}; in all three: {tres}. In total, {total} different people, {f}."},
 }
 
 
@@ -2351,7 +2367,14 @@ def bloque_notebook(sem, m):
         if vid:
             video = (f'<div class="nb-video"><button type="button" class="nb-play" data-yt="{e(vid)}" '
                      f'aria-label="{e(L["nb_ver"].format(g=nombre))}">{PLAY}<span>{L["nb_video"]}</span></button></div>')
-        resumen = f'<p class="nb-resumen">{e(x["resumen"])}</p>' if x.get("resumen") else ""
+        # El resumen lo escribe el boletín en castellano, como el vídeo y el pódcast: en las otras ediciones
+        # se marca como castellano (para los lectores de pantalla) y se dice, en vez de pasar por traducido
+        resumen = ""
+        if x.get("resumen"):
+            ajeno = L["codigo"] != "es"
+            lang = ' lang="es"' if ajeno else ""
+            resumen = (f'<p class="nb-resumen"{lang}>{e(x["resumen"])}</p>'
+                       + (f'<p class="nb-idioma">{L["nb_castellano"]}</p>' if ajeno else ""))
         audio = ""
         if x.get("podcast_mp3"):
             audio = (f'<p class="nb-rotulo">{L["nb_podcast"]}</p>'
@@ -3087,7 +3110,15 @@ def cola_papel(ruta, origen_html, comprobado_html):
     dirección y el QR de la pieza, porque en el papel no se pueden pulsar los enlaces. Fuera de las columnas, las
     fuentes se quedaban solas en una página casi vacía."""
     comprobado_html = comprobado_html.replace('id="comp-', 'id="papel-comp-').replace('aria-labelledby="comp-', 'aria-labelledby="papel-comp-')
-    return f'<div class="solo-papel cola-papel" data-pagefind-ignore>{origen_html}{comprobado_html}</div>'
+    return f'<div class="solo-papel cola-papel" data-pagefind-ignore>{origen_html}{comprobado_html}<p class="papel-creditos">{creditos_papel(ruta)}</p></div>'
+
+
+def creditos_papel(ruta):
+    """Lo que dice el pie de la web y en el papel no se imprime: que lo redacta una IA y lo revisa una persona,
+    que la edición es una traducción automática, de quién es y con qué licencia (ADR 0054 y 0055)."""
+    anyo = ruta[:4] if ruta[:4].isdigit() else str(datetime.date.today().year)
+    trad = f' {L["traduccion"]}' if L["traduccion"] else ""
+    return f'{L["redactado"]}{trad} © {anyo} Juan José de Haro {L["y"]} Raül Torres. {L["licencia"]} CC BY-SA 4.0.'
 
 
 def qr_papel(ruta):
@@ -3321,7 +3352,7 @@ def republicable(d, x, ruta, eds, reportaje=False):
         if x.get("claves"):
             partes.append(f'<h3>{L["claves"]}</h3><ul>{"".join(f"<li>{md(c)}</li>" for c in x["claves"])}</ul>')
     else:
-        partes += [f"<p>{md(enlaces_biblioteca('../', t, eds))}</p>" for t in x.get("cuerpo", [])]
+        partes += [f"<p>{md(enlaces_biblioteca('../', t, eds, x))}</p>" for t in x.get("cuerpo", [])]
         for r in x.get("recursos") or []:   # los recursos del repositorio, sin su captura ampliable
             titulo = enlace(r["url"], e(r["titulo"])) if r.get("url") else e(r["titulo"])
             datos = " · ".join(e(v) for v in (r.get("autoria"), r.get("licencia")) if v)
@@ -3769,6 +3800,8 @@ def main():
                 shutil.copy(f, SITIO / "videos" / f.name)
     if (RAIZ / "og" / "numeros").exists():   # la imagen de vista previa de cada número (ADR 0010)
         shutil.copytree(RAIZ / "og" / "numeros", SITIO / "og", dirs_exist_ok=True)
+    if (RAIZ / "og" / "piezas").exists():    # y la de cada pieza
+        shutil.copytree(RAIZ / "og" / "piezas", SITIO / "og" / "piezas", dirs_exist_ok=True)
     if (RAIZ / "portadas").exists():   # la portada de cada número para la hemeroteca (ADR 0053)
         shutil.copytree(RAIZ / "portadas", SITIO / "portadas", dirs_exist_ok=True, ignore=shutil.ignore_patterns("*.json"))
     entradas_grupos()

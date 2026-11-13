@@ -5,11 +5,17 @@
   "duracion": 37,
   "titulo": {
     "es": "Así encaja todo: los grupos, el bot, los boletines y el diario",
-    "ca": "Com encaixa tot: els grups, el bot, els butlletins i el diari"
+    "ca": "Com encaixa tot: els grups, el bot, els butlletins i el diari",
+    "gl": "Así encaixa todo: os grupos, o bot, os boletíns e o diario",
+    "eu": "Horrela lotzen da dena: taldeak, bota, buletinak eta egunkaria",
+    "en": "How it all fits together: the groups, the bot, the newsletters and the paper"
   },
   "descripcion": {
     "es": "Un mapa que se dibuja pieza a pieza: de ChatGPT-IA-edu nacieron Vibe Coding Educativo y EduMedia-IAG, un bot busca en los tres grupos, cada semana sale un boletín de cada uno y cada mañana, este diario. Cifras de miembros del 5 de noviembre de 2026.",
-    "ca": "Un mapa que es dibuixa peça a peça: de ChatGPT-IA-edu van néixer Vibe Coding Educativo i EduMedia-IAG, un bot cerca als tres grups, cada setmana surt un butlletí de cadascun i cada matí, aquest diari. Xifres de membres del 5 de novembre de 2026."
+    "ca": "Un mapa que es dibuixa peça a peça: de ChatGPT-IA-edu van néixer Vibe Coding Educativo i EduMedia-IAG, un bot cerca als tres grups, cada setmana surt un butlletí de cadascun i cada matí, aquest diari. Xifres de membres del 5 de novembre de 2026.",
+    "gl": "Un mapa que se debuxa peza a peza: de ChatGPT-IA-edu naceron Vibe Coding Educativo e EduMedia-IAG, un bot busca nos tres grupos, cada semana sae un boletín de cada un e cada mañá, este diario. Cifras de membros do 5 de novembro de 2026.",
+    "eu": "Piezaz pieza marrazten den mapa bat: ChatGPT-IA-edu taldetik sortu ziren Vibe Coding Educativo eta EduMedia-IAG, bot batek hiru taldeetan bilatzen du, astero talde bakoitzaren buletin bat ateratzen da eta goizero, egunkari hau. Kide kopuruak 2026ko azaroaren 5ekoak dira.",
+    "en": "A map drawn piece by piece: Vibe Coding Educativo and EduMedia-IAG grew out of ChatGPT-IA-edu, a bot searches all three groups, each one has a weekly newsletter and, every morning, this paper. Membership figures as of 5 November 2026."
   },
   "pantalla": {
     "es": [
@@ -31,6 +37,36 @@
       "Cada setmana, els butlletins: resum, pòdcast, vídeo i infografia de cada grup.",
       "Cada matí, a les 7:00, el Diario de IA Educativa: el que es parla als grups, comprovat i explicat.",
       "@comunidad.iaeducativa. I ara, tot això també aquí: el millor dels grups, el diari i els butlletins. t.me/ChatGPTedu"
+    ],
+    "gl": [
+      "Comunidad de IA Educativa. Así encaixa todo.",
+      "A orixe: ChatGPT-IA-edu. Máis de 4.000 docentes falando de IA desde 2023.",
+      "De aí naceu Vibe Coding Educativo. Máis de 1.800 docentes que crean aplicacións educativas con IA.",
+      "E sumouse EduMedia-IAG. Case 800 docentes creando imaxe, audio e vídeo con IA.",
+      "Un bot para os tres grupos: Bot de IA Educativa. Atopa o que se dixo, coa ligazón á mensaxe.",
+      "Cada semana, os boletíns: resumo, podcast, vídeo e infografía de cada grupo.",
+      "Cada mañá, ás 7:00, o Diario de IA Educativa: o que se fala nos grupos, comprobado e contado.",
+      "@comunidad.iaeducativa. E agora, todo isto tamén aquí: o mellor dos grupos, o diario e os boletíns. t.me/ChatGPTedu"
+    ],
+    "eu": [
+      "Comunidad de IA Educativa. Horrela lotzen da dena.",
+      "Jatorria: ChatGPT-IA-edu. 4.000 irakasle baino gehiago AAz hizketan 2023tik.",
+      "Hortik sortu zen Vibe Coding Educativo. 1.800 irakasle baino gehiago, AArekin hezkuntza-aplikazioak sortzen.",
+      "Eta EduMedia-IAG batu zen. Ia 800 irakasle, AArekin irudia, audioa eta bideoa sortzen.",
+      "Bot bat hiru taldeentzat: Bot de IA Educativa. Esandakoa aurkitzen du, mezuaren estekarekin.",
+      "Astero, buletinak: talde bakoitzaren laburpena, podcasta, bideoa eta infografia.",
+      "Goizero, 7:00etan, Diario de IA Educativa: taldeetan hitz egiten dena, egiaztatuta eta kontatuta.",
+      "@comunidad.iaeducativa. Eta orain, hau guztia hemen ere bai: taldeetako onena, egunkaria eta buletinak. t.me/ChatGPTedu"
+    ],
+    "en": [
+      "Comunidad de IA Educativa. How it all fits together.",
+      "The origin: ChatGPT-IA-edu. More than 4,000 teachers talking about AI since 2023.",
+      "Out of it came Vibe Coding Educativo. More than 1,800 teachers who build educational apps with AI.",
+      "And EduMedia-IAG joined in. Nearly 800 teachers creating images, audio and video with AI.",
+      "One bot for all three groups: Bot de IA Educativa. It finds what was said, with a link to the message.",
+      "Every week, the newsletters: a summary, podcast, video and infographic for each group.",
+      "Every morning, at 7:00, the Diario de IA Educativa: what is being discussed in the groups, checked and reported.",
+      "@comunidad.iaeducativa. And now, all of this here too: the best of the groups, the paper and the newsletters. t.me/ChatGPTedu"
     ]
   },
   "archivos": {

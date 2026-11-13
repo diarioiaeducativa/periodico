@@ -76,7 +76,9 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
   antes `ilustracion_alt`, o el ilustrador calca lo que describe.
 - **Comentarios** (ADR 0030): giscus, en las Discussions del repositorio del
   sitio (categoría «Comentarios»); un hilo por pieza, el mismo en los cinco
-  idiomas. Se moderan desde GitHub. Si se renombra la categoría, cambiar
+  idiomas. Se cargan solo al pulsar «Ver los comentarios»: antes, la página no
+  se conecta con nadie, y la política de privacidad lo dice; no volver a
+  cargarlos solos. Se moderan desde GitHub. Si se renombra la categoría, cambiar
   `GISCUS` en `generar.py`. El aviso de cada comentario (a Juanjo y a Raül,
   por el Bot de IA Educativa) es una acción del repositorio del sitio: por eso
   la publicación no toca `.github/`.
@@ -130,6 +132,14 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
   `android/` (`construeix.sh`, con la clave en `~/.config/diario-ia-educativa/android/`), vinculada por
   `estaticos/.well-known/assetlinks.json`, que no se borra. La política de privacidad de la ficha es
   `redaccion.html#privacidad`: si se cambia ese apartado, que siga diciendo lo que guarda el dispositivo.
+- **Imagen al compartir** (ADR 0010): la del número (`og/numeros/`) y la de cada pieza en cada idioma
+  (`og/piezas/<idioma>/<fecha>-<id>.png`, aligeradas con Pillow); las hace `scripts/og-numero.py` en
+  `publicar-nas.sh`. Tras corregir un titular en los cinco idiomas, `scripts/og-numero.py FECHA` rehace las de
+  ese día.
+- **Comprobaciones sin IA** (ADR 0056): cada noche, `scripts/revisar-idiomas.py --dia FECHA` busca castellano
+  colado en las ediciones traducidas (`registro/FECHA-idiomas.txt`); un aviso falso se arregla en sus listas
+  (`PROPIOS`, `SOLO_ES`, `FUERTES`). Los miércoles, `scripts/revisar-enlaces.py --avisar` busca enlaces caídos
+  (`registro/enlaces.log`, estado en `estado/enlaces.json`).
 - **Contacto** (ADR 0051): `contacto.html`, con el correo (`CORREO_CONTACTO`) y enlace en el pie de todas las
   páginas; es la dirección de la declaración de noticias de Google Play: no se renombra ni se quita del pie.
 - **Hemeroteca** (ADR 0053): un calendario por la fecha de cabecera, con el número elegido a la derecha (sus
@@ -138,7 +148,8 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
   al pasar el ratón. En las páginas de un número anterior, el menú lleva a su portada («‹ Núm. 9 ›») y a la de hoy.
 - **Edición en papel** (ADR 0054): botón «Imprimir» en cada pieza y `FECHA/papel.html` para el número entero; la
   maqueta, en el `@media print` de `estaticos/diario.css`. Lo que solo va en papel lleva `solo-papel` y no sale nunca
-  en pantalla. El QR lo dibuja segno (en el `Dockerfile`). No se guarda ningún PDF.
+  en pantalla. El QR lo dibuja segno (en el `Dockerfile`). No se guarda ningún PDF. El aviso de IA, de
+  traducción y la licencia van al final (`creditos_papel()`), porque el pie no se imprime.
 - **Aviso privado a quien sale en el número** (ADR 0052): `scripts/avisos-personas.py` añade `personas` a los
   avisos (quién aportó cada pieza, con los datos del bot) y el bot les escribe por privado a las 7:00.
 - **Avisos del número** (ADR 0043): la app mira `ultimo.json` (no se renombra: hay apps que lo leen) hacia

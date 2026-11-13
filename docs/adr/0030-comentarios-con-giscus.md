@@ -41,6 +41,13 @@ no se abre al público (trabaja solo, sin que nadie se conecte a él).
   `publicar-nas.sh`, `publicar.sh` y `vigilante.sh`), o la borraría.
 - **Configuración**: `GISCUS` y `comentarios()` en `generar.py`; textos en `comentarios`,
   `comentarios_aviso` y `comentarios_cuenta` de cada idioma; estilo en `diario.css`.
+- **Se cargan solo al pulsar «Ver los comentarios»** (13-11-2026, aprobado por Juanjo entre las medidas del
+  examen del diario, ADR 0055). Hasta entonces, cada pieza cargaba `giscus.app/client.js` al abrirse, así que
+  todo lector se conectaba a un tercero, y la página de privacidad decía «Quien no comenta no envía nada»,
+  que no era cierto. Ahora la sección muestra el aviso y un botón; el programa de giscus se pide al pulsarlo.
+  La frase de privacidad dice eso mismo en los cinco idiomas. Comprobado en Chromium, Firefox y WebKit de
+  móvil: ninguna petición fuera del diario antes de pulsar; después, `giscus.app` y `github.githubassets.com`.
+  Lo que se pierde: no se ve cuántos comentarios hay sin pulsar (el 13-11 no había ninguno en ninguna pieza).
 
 ## Alternativas descartadas
 

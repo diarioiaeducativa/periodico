@@ -382,7 +382,7 @@ def comprobar(guion):
     return fallos
 
 
-def panel(v, n):
+def panel(v, n, textos=None):
     """Una viñeta. `v`: {"cartela"?, "tiza": {...}, "algoritmo": {...}, "objeto"?, "bocadillos": [...]}."""
     marco = f'<rect class="marco" x="1.5" y="1.5" width="{ANCHO - 3}" height="{ALTO - 3}" rx="4"/>'
     partes = [f'<path class="t fino" d="M14 {SUELO} L{ANCHO - 14} {SUELO}"/>']
@@ -434,15 +434,32 @@ def panel(v, n):
         # Si habla una sola persona, el globo se ensancha: menos líneas y no baja hasta las cabezas
         ancho = 172 if len(globos) == 2 else 236
         partes.append(bocadillo(b.get("texto", ""), x, punta, b.get("tipo", "habla"), y_globo, ancho)[0])
-    desc = " ".join(f'{"Tiza" if b["quien"] == "tiza" else "Algoritmo"}{" piensa" if b.get("tipo") == "piensa" else ""}: «{b.get("texto", "")}».' for b in globos)
+    # Lo que oye quien usa un lector de pantalla, en el idioma de la edición: `textos` trae cómo se dice
+    # «viñeta», el nombre de cada personaje y «pensando» (generar.py); sin él, en castellano
+    tx = textos or TEXTOS_ES
+
+    def frase(s):   # con su punto final, sin doblarlo si ya lo trae
+        s = (s or "").rstrip()
+        return s if s[-1:] in ".!?…" else s + "."
+
+    dichos = []
+    for b in globos:
+        quien = tx.get(b["quien"], b["quien"])
+        if b.get("tipo") == "piensa":
+            quien += " (" + tx["pensando"] + ")"
+        dichos.append(quien + ": «" + frase(b.get("texto")) + "»")
+    desc = " ".join(dichos)
     if v.get("cartela"):
-        desc = f'{v["cartela"]}. {desc}'
-    return (f'<svg class="panel" viewBox="0 0 {ANCHO} {ALTO}" role="img" aria-label="Viñeta {n}. {e(desc)}" '
+        desc = frase(v["cartela"]) + " " + desc
+    return (f'<svg class="panel" viewBox="0 0 {ANCHO} {ALTO}" role="img" aria-label="{e(tx["panel"])} {n}. {e(desc)}" '
             f'xmlns="http://www.w3.org/2000/svg">{"".join(partes)}</svg>')
 
 
-def tira(guion):
-    return "".join(f'<div class="vineta-panel">{panel(v, i + 1)}</div>' for i, v in enumerate(guion.get("vinetas", [])[:3]))
+TEXTOS_ES = {"panel": "Viñeta", "tiza": "Tiza", "algoritmo": "Algoritmo", "pensando": "pensando"}
+
+
+def tira(guion, textos=None):
+    return "".join(f'<div class="vineta-panel">{panel(v, i + 1, textos)}</div>' for i, v in enumerate(guion.get("vinetas", [])[:3]))
 
 
 # ---------- Variedad: lo que salió en los números anteriores ----------

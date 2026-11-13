@@ -28,6 +28,13 @@ admite GitHub Pages (1 GB por web).
   vacía); arriba a la derecha de cada pieza, un QR con su dirección y la dirección debajo. El QR lo dibuja segno
   (BSD-3-Clause, sin dependencias, en el `Dockerfile`) al montar el sitio, en SVG escalable; sin segno, la pieza
   sale sin QR. Lo que es solo de papel (`.solo-papel`) no sale nunca en pantalla.
+- **Lo que dice el pie de la web, también en el papel** (13-11-2026, ADR 0055): el pie no se imprime, así que
+  la edición en papel no decía que el texto lo redacta una IA y lo revisa una persona, ni que una edición
+  traducida es una traducción automática, ni de quién es ni su licencia. Ahora lo lleva al final (`creditos_papel()`):
+  en una pieza suelta, tras sus fuentes; en el número entero, una sola vez, al final.
+- **Los dibujos, con los colores del tema claro** aunque se esté leyendo en oscuro: con el tema oscuro elegido,
+  las secciones y los rellenos de los dibujos se imprimían con sus colores oscuros sobre papel blanco. Un
+  bloque `@media print` al final de `comun.css` repone los claros.
 
 ## Alternativas descartadas
 

@@ -47,7 +47,8 @@ sale del reportaje. El programa lo pone al final, con su infografía y el rótul
 ## Además
 
 - **descripcion** (en los cinco idiomas): una o dos frases que resuman el vídeo para la web, entre 80 y 240
-  caracteres.
+  caracteres. Si nombra los días de la semana, son los de los números (de lunes a domingo, los del título que
+  pone el programa: «2 – 8 nov»), no los de los mensajes, que van un día antes.
 - **instagram**: el texto que acompaña al vídeo en Instagram y en LinkedIn, en castellano: de dos a
   cuatro frases que cuenten lo de la semana y, si lo hay, el reportaje, para quien no conoce los grupos. Entre 150 y 600 caracteres.
   Impersonal, sin saludo, sin enlaces, sin etiquetas (#), sin emojis ni exclamaciones: el
