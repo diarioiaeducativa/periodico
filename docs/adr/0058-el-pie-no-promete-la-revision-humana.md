@@ -23,7 +23,8 @@ pie deja de ser cierta ese día. Y la vista previa nunca retiene el número: sin
 (ADR 0025).
 
 Juanjo preguntó qué se perdía quitándola (13-11-2026: «que pasa si lo eliminamos? el diario pierde
-rigurosidad?») y, vista la respuesta, lo encargó («haz el cambio»).
+rigurosidad?») y, vista la respuesta, lo encargó («haz el cambio»). La frase del ADR 0055 la había propuesto
+el agente, no él: «no me gustaba esa frase, la puse por tu recomendación, lo prefiero así».
 
 ## Decisión
 
