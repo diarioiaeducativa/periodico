@@ -34,6 +34,13 @@ for f in /bot-datos/comunidades/????-??-??.json; do
   [ -f "$f" ] && [ ! -e "comunidades/${f##*/}" ] && cp "$f" comunidades/ && log "comunidades: cifras del ${f##*/}"
 done
 python3 generar.py >> "$REG" 2>&1 || { log "ERROR: el generador falla"; exit 1; }
+# La portada del número en miniatura para la hemeroteca (ADR 0053): se captura del sitio ya montado y otra vuelta
+# del generador la pone en el calendario. Si falla, la hemeroteca sale con las anteriores.
+if python3 scripts/portadas.py >> "$REG" 2>&1; then
+  python3 generar.py >> "$REG" 2>&1 || { log "ERROR: el generador falla"; exit 1; }
+else
+  log "AVISO: no se pudo hacer la portada del número para la hemeroteca"
+fi
 # El índice del buscador (ADR 0007). Si falla, el sitio sale igual con el índice anterior.
 python3 -m pagefind --site sitio >> "$REG" 2>&1 || log "AVISO: no se pudo rehacer el índice del buscador; queda el anterior"
 
@@ -76,7 +83,7 @@ nohup python3 scripts/archivar.py "$FECHA" >> registro/archivo.log 2>&1 &
 # Las carpetas traducidas, una por idioma (ADR 0026); las de borradores no se suben (.gitignore).
 TRAD=$(for c in $(python3 scripts/idiomas.py lista); do printf ' %s-%s' ediciones "$c" ilustraciones "$c" vinetas "$c" reportajes "$c" biblioteca "$c" repositorio "$c" comentario-semana "$c" hace-un-ano "$c"; done)
 # shellcheck disable=SC2086
-git add -A $(ls -d og/numeros videos reels multimedia ediciones ilustraciones vinetas avisos publicado.txt reportajes biblioteca repositorio reserva comunidades comentario-semana hace-un-ano $TRAD 2>/dev/null) >> "$REG" 2>&1 ||
+git add -A $(ls -d og/numeros portadas videos reels multimedia ediciones ilustraciones vinetas avisos publicado.txt reportajes biblioteca repositorio reserva comunidades comentario-semana hace-un-ano $TRAD 2>/dev/null) >> "$REG" 2>&1 ||
   log "AVISO: no se pudo preparar lo escrito por la redacción para subirlo"
 if ! git diff --cached --quiet; then
   git commit -qm "Número del $PUBLICA" || log "AVISO: no se pudo preparar el commit de la redacción"

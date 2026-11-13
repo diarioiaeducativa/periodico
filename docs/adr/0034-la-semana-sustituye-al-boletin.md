@@ -34,7 +34,8 @@ desde el lunes 9 de noviembre de 2026 ya no saliera el boletín de siempre.
   del mes en que cae su jueves, como manda la ISO 8601, para que no salga en dos meses.
 - **Hemeroteca** por meses y semanas, con los días de cada semana plegados (la más reciente, abierta) y, al
   final, los boletines semanales anteriores de los tres grupos en su web (`BOLETINES` en `generar.py`). Los
-  enlaces a cada número no cambian.
+  enlaces a cada número no cambian. *Desde el 13-11-2026, la hemeroteca es un calendario (ADR 0053), con una
+  columna que enlaza el resumen de cada semana; los boletines anteriores siguen en cada página de semana.*
 - **El contrato con el boletín**: `multimedia/AAAA-WW.json` (formato en `multimedia/LEEME.md`). El vídeo
   no se carga hasta que se pulsa, desde youtube-nocookie, para que abrir la página no avise a YouTube; el
   audio, sin precarga. En los otros idiomas se dice que están en castellano.

@@ -6,7 +6,8 @@
 //   probar-web http://localhost:8767/ -n chromium,firefox -d escritorio,tableta,movil -s scripts/revisar-maqueta.js --sin-capturas
 //
 // Lo que mira:
-//   hueco        en una fila de piezas, la columna más corta acaba mucho antes que la más larga (> 90 px)
+//   hueco        en una fila de piezas, la columna más corta acaba mucho antes que la más larga (> 90 px);
+//                no cuenta una columna fija al bajar (sticky), como el calendario de la hemeroteca
 //   fecha sola   una fecha que ocupa ella sola su línea, encima de un titular o de un antetítulo
 //   solape       una fecha que pisa otro texto
 //   miniaturas   dibujos de una misma fila con distinta altura
@@ -42,8 +43,11 @@ module.exports = async (page) => {
         const falta = g.getBoundingClientRect().right - dcha;
         if (falta > 90) fallos.push(`fila incompleta (${ult.length} de ${getComputedStyle(g).gridTemplateColumns.split(' ').length} columnas, ${Math.round(falta)} px vacíos) en ${nombre(g)} (${g.className.toString().slice(0, 30)})`);
       }
+      // Una columna que acompaña al bajar (position: sticky, como el calendario de la hemeroteca) no deja hueco:
+      // a su lado se va leyendo la otra columna y la fija se mueve con ella (ADR 0053)
+      const fija = c => [c, ...c.querySelectorAll('*')].some(x => getComputedStyle(x).position === 'sticky');
       for (const fila of Object.values(filas)) {
-        if (fila.length < 2) continue;
+        if (fila.length < 2 || fila.some(fija)) continue;
         const fondos = fila.map(fondoTexto); const d = Math.max(...fondos) - Math.min(...fondos);
         if (d > 90) fallos.push(`hueco de ${Math.round(d)} px en ${nombre(g)} (${g.className.toString().slice(0, 30)})`);
         const ilus = fila.map(c => c.querySelector(':scope > .ilu, :scope > figure')).filter(x => x && vis(x)).map(x => Math.round(x.getBoundingClientRect().height));

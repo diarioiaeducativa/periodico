@@ -124,6 +124,10 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
   `redaccion.html#privacidad`: si se cambia ese apartado, que siga diciendo lo que guarda el dispositivo.
 - **Contacto** (ADR 0051): `contacto.html`, con el correo (`CORREO_CONTACTO`) y enlace en el pie de todas las
   páginas; es la dirección de la declaración de noticias de Google Play: no se renombra ni se quita del pie.
+- **Hemeroteca** (ADR 0053): un calendario por la fecha de cabecera, con el número elegido a la derecha (sus
+  titulares, de `datos/AAAA-MM.json`, y su portada en miniatura, que `scripts/portadas.py` captura en
+  `publicar-nas.sh` y se guarda en `portadas/`) y el resumen de cada semana. El día se elige con un clic, nunca
+  al pasar el ratón. En las páginas de un número anterior, el menú lleva a su portada («‹ Núm. 9 ›») y a la de hoy.
 - **Aviso privado a quien sale en el número** (ADR 0052): `scripts/avisos-personas.py` añade `personas` a los
   avisos (quién aportó cada pieza, con los datos del bot) y el bot les escribe por privado a las 7:00.
 - **Avisos del número** (ADR 0043): la app mira `ultimo.json` (no se renombra: hay apps que lo leen) hacia
