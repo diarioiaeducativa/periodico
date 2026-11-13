@@ -80,7 +80,7 @@ IDIOMAS = {
         "unete_txt": "El Diario de IA Educativa cuenta lo que se habla en tres grupos abiertos de Telegram donde docentes comparten lo que prueban con la inteligencia artificial. Las conversaciones se pueden leer sin entrar; para participar, basta con unirse.",
         "archivo": "Archivo por días", "pie_archivo": "Archivo", "pie_diario": "El diario", "este_numero": "este número",
         "anyo": "Año", "hemeroteca": "Hemeroteca", "hemeroteca_txt": "Todos los números, por meses y semanas.", "nb_anteriores": "Boletines anteriores", "semana_n": "Semana {n}",
-        "dias_cortos": ["L", "M", "X", "J", "V", "S", "D"], "calendario": "Calendario de los números", "cal_anterior": "Mes anterior", "cal_siguiente": "Mes siguiente", "cal_elegir": "Elige el mes", "cal_leer": "Leer el número", "buscar_numeros": "Busca en todos los números", "cal_portada": "Portada: {fecha}", "cal_resumenes": "Resumen de cada semana", "cal_resumen": "Resumen de la semana {n}",
+        "dias_cortos": ["L", "M", "X", "J", "V", "S", "D"], "calendario": "Calendario de los números", "cal_anterior": "Mes anterior", "cal_siguiente": "Mes siguiente", "cal_elegir": "Elige el mes", "buscar_numeros": "Busca en todos los números", "cal_portada": "Portada: {fecha}", "cal_resumenes": "Resumen de cada semana", "cal_resumen": "Resumen de la semana {n}",
         # La semana y el mes (ADR 0034)
         "semana": "La semana", "semana_txt": "Todo lo que contó el diario de lo que se habló en los grupos esa semana, por secciones, con el pódcast y el vídeo de cada grupo. Elige un grupo para ver solo lo suyo.", "semana_actual": "Resumen semanal", "grupo_filtro": "Ver lo de un grupo", "grupo_todos": "Todos", "sin_grupo": "Este grupo no tiene piezas esta semana.", "nb_h": "El pódcast y el vídeo de la semana", "nb_txt": "Cada lunes, NotebookLM, de Google, prepara un pódcast y un vídeo de cada grupo con su conversación completa de la semana, también lo que el diario no ha contado. Un agente de IA los contrasta con la conversación antes de publicarlos.", "nb_es": "", "nb_pendiente": "El pódcast y el vídeo de cada grupo se añaden aquí el lunes por la mañana.", "nb_video": "Vídeo", "nb_ver": "Reproducir el vídeo de {g}", "nb_youtube": "Verlo en YouTube", "nb_podcast": "Pódcast", "nb_archive": "Escucharlo en Internet Archive", "cs_h": "Lo más importante de la semana", "cs_h_g": "Lo más importante de la semana en {g}", "cs_nota": "Lo escribe un agente de IA con lo que contó el diario esa semana, y otro lo contrasta con cada pieza antes de publicarlo.", "numeros_semana": "Los números de la semana", "sem_ant": "Semana anterior", "sem_sig": "Semana siguiente", "todo_mes": "Todo el mes", "mes": "El mes", "mes_txt": "Las semanas del mes, con la pieza que abrió cada número.", "mes_ant": "Mes anterior", "mes_sig": "Mes siguiente", "por_meses": "Por meses", "ver_semana": "La semana entera, por secciones", "con_nb": "Con el pódcast y el vídeo de cada grupo", 
         "todos_numeros": "Hemeroteca: todos los números",
@@ -209,7 +209,7 @@ IDIOMAS = {
         "unete_txt": "El Diari d'IA Educativa explica el que es parla en tres grups oberts de Telegram on docents comparteixen el que proven amb la intel·ligència artificial. Les converses es poden llegir sense entrar-hi; per participar-hi, n'hi ha prou d'unir-s'hi.",
         "archivo": "Arxiu per dies", "pie_archivo": "Arxiu", "pie_diario": "El diari", "este_numero": "aquest número",
         "anyo": "Any", "hemeroteca": "Hemeroteca", "hemeroteca_txt": "Tots els números, per mesos i setmanes.", "nb_anteriores": "Butlletins anteriors", "semana_n": "Setmana {n}",
-        "dias_cortos": ["dl.", "dt.", "dc.", "dj.", "dv.", "ds.", "dg."], "calendario": "Calendari dels números", "cal_anterior": "Mes anterior", "cal_siguiente": "Mes següent", "cal_elegir": "Tria el mes", "cal_leer": "Llegeix el número", "buscar_numeros": "Cerca a tots els números", "cal_portada": "Portada: {fecha}", "cal_resumenes": "Resum de cada setmana", "cal_resumen": "Resum de la setmana {n}",
+        "dias_cortos": ["dl.", "dt.", "dc.", "dj.", "dv.", "ds.", "dg."], "calendario": "Calendari dels números", "cal_anterior": "Mes anterior", "cal_siguiente": "Mes següent", "cal_elegir": "Tria el mes", "buscar_numeros": "Cerca a tots els números", "cal_portada": "Portada: {fecha}", "cal_resumenes": "Resum de cada setmana", "cal_resumen": "Resum de la setmana {n}",
         # La semana y el mes (ADR 0034)
         "semana": "La setmana", "semana_txt": "Tot el que va explicar el diari del que es va parlar als grups aquella setmana, per seccions, amb el pòdcast i el vídeo de cada grup. Tria un grup per veure només el seu.", "semana_actual": "Resum setmanal", "grupo_filtro": "Veure el d'un grup", "grupo_todos": "Tots", "sin_grupo": "Aquest grup no té peces aquesta setmana.", "nb_h": "El pòdcast i el vídeo de la setmana", "nb_txt": "Cada dilluns, NotebookLM, de Google, prepara un pòdcast i un vídeo de cada grup amb tota la seva conversa de la setmana, també el que el diari no ha explicat. Un agent d'IA els contrasta amb la conversa abans de publicar-los.", "nb_es": "Són en castellà.", "nb_pendiente": "El pòdcast i el vídeo de cada grup s'afegeixen aquí dilluns al matí.", "nb_video": "Vídeo", "nb_ver": "Reproduir el vídeo de {g}", "nb_youtube": "Mira'l a YouTube", "nb_podcast": "Pòdcast", "nb_archive": "Escolta'l a Internet Archive", "cs_h": "El més important de la setmana", "cs_h_g": "El més important de la setmana a {g}", "cs_nota": "L'escriu un agent d'IA amb el que va explicar el diari aquella setmana, i un altre el contrasta amb cada peça abans de publicar-lo.", "numeros_semana": "Els números de la setmana", "sem_ant": "Setmana anterior", "sem_sig": "Setmana següent", "todo_mes": "Tot el mes", "mes": "El mes", "mes_txt": "Les setmanes del mes, amb la peça que va obrir cada número.", "mes_ant": "Mes anterior", "mes_sig": "Mes següent", "por_meses": "Per mesos", "ver_semana": "Tota la setmana, per seccions", "con_nb": "Amb el pòdcast i el vídeo de cada grup", 
         "todos_numeros": "Hemeroteca: tots els números",
@@ -2517,8 +2517,8 @@ def detalle_dia(x, grupos):
             + '</div>') if x["portada"] else ""
     secs = "".join(f'<p class="cal-sec sec-{c}">{e(L["secciones"].get(c, c))}</p><ul>'
                    + "".join(f'<li><a href="{e(u)}">{e(tit)}</a></li>' for tit, u in xs) + "</ul>" for c, xs in grupos.items())
-    return (f'{foto}<div class="cal-texto"><p class="cal-fecha">{e(x["fecha"])}{num}</p>{secs}'
-            f'<p class="leer"><a href="{e(x["numero"])}">{L["cal_leer"]}</a></p></div>')
+    # La fecha y el número, enlazados al número: es su título (Juanjo, 13-11-2026, en lugar de «Leer el número»)
+    return f'{foto}<div class="cal-texto"><p class="cal-fecha"><a href="{e(x["numero"])}">{e(x["fecha"])}{num}</a></p>{secs}</div>'
 
 
 def calendario(eds):
@@ -2579,7 +2579,7 @@ SCRIPT_CALENDARIO = """<script>
   const cal = document.querySelector('.calendario'); if (!cal) return;
   const tablas = [...cal.querySelectorAll('.cal-mes')], meses = tablas.map(t => t.dataset.mes);
   const elegir = cal.querySelector('.cal-elegir'), ant = cal.querySelector('.cal-ant'), sig = cal.querySelector('.cal-sig');
-  const detalle = cal.querySelector('.cal-detalle'), leer = detalle.querySelector('.leer a').textContent;
+  const detalle = cal.querySelector('.cal-detalle');
   const T = JSON.parse(cal.dataset.textos);
   function p(clase, ...hijos) { const x = document.createElement('p'); x.className = clase; x.append(...hijos); return x; }
   function enlace(href, texto) { const a = document.createElement('a'); a.href = href; a.textContent = texto; return a; }
@@ -2605,9 +2605,9 @@ SCRIPT_CALENDARIO = """<script>
       const f = document.createElement('div'); f.className = 'cal-portada'; f.append(b); hijos.push(f);
     }
     const texto = document.createElement('div'); texto.className = 'cal-texto';
-    const fecha = p('cal-fecha', d.fecha);
-    if (d.num) { const n = document.createElement('span'); n.className = 'num'; n.textContent = ' · ' + d.num; fecha.append(n); }
-    texto.append(fecha);
+    const titulo = enlace(d.numero, d.fecha);
+    if (d.num) { const n = document.createElement('span'); n.className = 'num'; n.textContent = ' · ' + d.num; titulo.append(n); }
+    texto.append(p('cal-fecha', titulo));
     const secs = new Map();
     for (const n of ns || []) {
       if (!secs.has(n.seccion)) secs.set(n.seccion, { nombre: n.seccion_nombre, xs: [] });
@@ -2618,7 +2618,6 @@ SCRIPT_CALENDARIO = """<script>
       for (const n of s.xs) { const li = document.createElement('li'); li.append(enlace(n.id + '.html', n.titular)); ul.append(li); }
       texto.append(p('cal-sec sec-' + c, s.nombre), ul);
     }
-    texto.append(p('leer', enlace(d.numero, leer)));
     hijos.push(texto);
     detalle.replaceChildren(...hijos);
     ajusta();
