@@ -61,8 +61,10 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
   (`AAAA-MM-DD`). Si cambia un rótulo del dibujo, también el SVG de cada idioma y su `ilustracion_alt`. Antes,
   comprobar el dato en su fuente: un aviso de error también puede estar equivocado. Lo que añadió la revisión
   manual (una «Nota de la redacción» lo dice) no se toca sin preguntar.
-- **Lo que afirma «La redacción» obliga** (ADR 0055): una persona revisa cada número antes de que salga y
-  responde de lo publicado; no hay publicidad; cuando una pieza trata del propio diario, lo dice.
+- **Lo que afirma «La redacción» obliga** (ADR 0055 y 0058): una persona responde de lo publicado; no hay
+  publicidad; cuando una pieza trata del propio diario, lo dice. El pie y «Las personas» ya no dicen que una
+  persona revisa cada número antes de que salga (Juanjo, 13-11-2026): la vista previa de las 5:00 sigue, pero
+  el diario no la promete. No volver a escribirlo sin que lo pida.
 
 ## Piezas
 

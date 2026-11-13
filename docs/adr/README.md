@@ -59,5 +59,6 @@
 | [0055](0055-correcciones-a-la-vista-y-quien-responde.md) | Correcciones a la vista, quién responde y reglas de mesa de edición |
 | [0056](0056-comprobaciones-sin-ia-de-lo-publicado.md) | Dos comprobaciones sin IA de lo publicado: castellano colado y enlaces caídos |
 | [0057](0057-resumen-del-video-semanal-traducido.md) | El resumen del vídeo semanal de cada grupo, traducido |
+| [0058](0058-el-pie-no-promete-la-revision-humana.md) | El pie no promete la revisión humana de cada número |
 
 Plantilla: [0000-plantilla.md](0000-plantilla.md). Para crear uno: `nuevo-adr "Título"`.

@@ -2,6 +2,10 @@
 
 Fecha: 2026-11-13 · Estado: aceptado
 
+> El [ADR 0058](0058-el-pie-no-promete-la-revision-humana.md), de la misma tarde, cambia dos textos de esta
+> decisión: el pie ya no dice que una persona revisa cada número antes de que salga, y «Las personas» dice
+> que quien mantiene la redacción la supervisa y responde de lo publicado. Lo demás sigue en vigor.
+
 ## Contexto
 
 El 13-11-2026 se examinó el diario entero (unas 110 piezas en castellano contra sus fuentes, las cuatro
