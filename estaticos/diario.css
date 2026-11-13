@@ -540,7 +540,7 @@ main.portada :is(.pieza, .editorial) .ilu { cursor: pointer; }
 body.con-visor { overflow: hidden; }
 /* Una imagen muy alta, como la portada de un número: a lo ancho, a su tamaño, y se baja dentro del visor */
 .visor.alta { display: block; overflow-y: auto; padding: 3.2rem 1rem 1.5rem; }
-.visor.alta img { display: block; width: min(100%, 720px); max-height: none; margin: 0 auto; }
+.visor.alta img { display: block; width: min(100%, 900px); max-height: none; margin: 0 auto; }
 
 /* Página de sección: la pieza sin dibujo lleva el icono de su sección en un recuadro de la misma proporción */
 .ilu.relleno { aspect-ratio: 380 / 223; display: grid; place-items: center; }
@@ -772,7 +772,8 @@ a.llevar-op.llevar-mas { border-top: 1px solid var(--filete); margin-top: 0.2rem
           mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 50' preserveAspectRatio='none'%3E%3Cpath d='M70 6C40 3 8 10 6 25s30 21 58 20 52-6 51-21S88 3 52 8' fill='none' stroke='black' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center / 100% 100%;
   pointer-events: none;
 }
-.cal-detalle { display: grid; grid-template-columns: 15rem minmax(0, 1fr); gap: 0.4rem 1.3rem; align-items: start; margin-top: 1.1rem; }
+/* El número elegido, en su marco, como el calendario pero sobre el papel (Juanjo, 13-11-2026) */
+.cal-detalle { display: grid; grid-template-columns: 15rem minmax(0, 1fr); gap: 0.4rem 1.3rem; align-items: start; margin-top: 1.1rem; padding: 1rem 1.1rem 1.1rem; border: 1px solid var(--filete); border-radius: 8px; }
 .cal-detalle > .cal-texto:only-child { grid-column: 1 / -1; }
 /* La portada no cuenta para la altura de la fila (contain): la marcan los titulares, y si son pocos la portada se
    recorta por abajo; si son muchos, el script la deja flotando y los titulares siguen por debajo. */
@@ -794,7 +795,7 @@ a.llevar-op.llevar-mas { border-top: 1px solid var(--filete); margin-top: 0.2rem
 .cal-detalle .leer { margin-top: 0.8rem; }
 .cal-detalle .leer a { color: var(--azul); font-weight: 600; }
 @media (max-width: 36rem) {
-  .cal-detalle { grid-template-columns: 1fr; }
+  .cal-detalle { grid-template-columns: 1fr; padding: 0.8rem 0.7rem 0.9rem; }
   .cal-portada, .cal-detalle.envuelve .cal-portada { float: none; width: min(100%, 17rem); min-height: 0; margin: 0 auto 0.4rem; contain: none; }
   .cal-portada img { max-height: none; }
 }
@@ -806,7 +807,7 @@ a.llevar-op.llevar-mas { border-top: 1px solid var(--filete); margin-top: 0.2rem
   .hem-ancha > :not(.calendario, .hem-buscar) { max-width: 44rem; }
   .calendario { display: grid; grid-template-columns: 22rem minmax(0, 1fr); align-items: start; }
   .cal-izq { position: sticky; top: 1rem; }
-  .cal-detalle { margin-top: 0; padding-left: 1.8rem; }
+  .cal-detalle { margin: 0 0 0 1.8rem; }
 }
 @media (max-width: 30rem) {
   .cal-izq { padding: 0.7rem 0.6rem 0.8rem; }

@@ -23,8 +23,8 @@ sys.path.insert(0, str(RAIZ))
 import generar  # noqa: E402
 
 SALIDA = RAIZ / "portadas"
-ANCHO = 720        # a la derecha de la hemeroteca se ve a unos 700 px; en pequeño, nítida en alta densidad
-CALIDAD = 55
+ANCHO = 900        # en el visor de la hemeroteca se ve a 900 px: la letra del texto, legible al ampliarla
+CALIDAD = 60
 
 
 class Callado(http.server.SimpleHTTPRequestHandler):
