@@ -538,6 +538,9 @@ main.portada :is(.pieza, .editorial) .ilu { cursor: pointer; }
 .visor .cerrar:hover, .visor .cerrar:focus-visible { background: rgb(255 255 255 / 0.28); outline: 2px solid #fff; outline-offset: 2px; }
 .visor .cerrar svg { width: 1.4rem; height: 1.4rem; fill: none; stroke: currentColor; stroke-width: 2.2; stroke-linecap: round; }
 body.con-visor { overflow: hidden; }
+/* Una imagen muy alta, como la portada de un número: a lo ancho, a su tamaño, y se baja dentro del visor */
+.visor.alta { display: block; overflow-y: auto; padding: 3.2rem 1rem 1.5rem; }
+.visor.alta img { display: block; width: min(100%, 720px); max-height: none; margin: 0 auto; }
 
 /* Página de sección: la pieza sin dibujo lleva el icono de su sección en un recuadro de la misma proporción */
 .ilu.relleno { aspect-ratio: 380 / 223; display: grid; place-items: center; }
@@ -743,7 +746,9 @@ a.llevar-op.llevar-mas { border-top: 1px solid var(--filete); margin-top: 0.2rem
    elegido, en azul, con su número y la pieza que lo abrió debajo; hoy, rodeado con el bolígrafo rojo. */
 .hem-buscar { margin: 1.2rem 0 1rem; }
 .hem-buscar .campo { max-width: none; }
-.calendario { margin: 0 0 1.4rem; padding: 0.9rem 1rem 1rem; border: 1px solid var(--filete); border-radius: 8px; background: var(--papel-2); }
+/* El gris, solo en el calendario; el día elegido va sobre el papel, como el resto del diario (Juanjo, 13-11-2026) */
+.calendario { margin: 0 0 1.4rem; }
+.cal-izq { padding: 0.9rem 1rem 1rem; border: 1px solid var(--filete); border-radius: 8px; background: var(--papel-2); }
 .cal-nav { display: flex; align-items: center; justify-content: space-between; gap: 0.6rem; margin-bottom: 0.5rem; }
 .cal-nav button { flex: none; display: inline-grid; place-items: center; width: 2.6rem; height: 2.6rem; padding: 0; border: 1px solid var(--filete); border-radius: 999px; background: var(--papel); color: var(--tinta); cursor: pointer; }
 .cal-nav button:hover:not(:disabled) { border-color: var(--azul); color: var(--azul); }
@@ -767,7 +772,7 @@ a.llevar-op.llevar-mas { border-top: 1px solid var(--filete); margin-top: 0.2rem
           mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 50' preserveAspectRatio='none'%3E%3Cpath d='M70 6C40 3 8 10 6 25s30 21 58 20 52-6 51-21S88 3 52 8' fill='none' stroke='black' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center / 100% 100%;
   pointer-events: none;
 }
-.cal-detalle { display: grid; grid-template-columns: 15rem minmax(0, 1fr); gap: 0.4rem 1.3rem; align-items: start; margin-top: 0.6rem; padding-top: 0.9rem; border-top: 1px solid var(--filete); }
+.cal-detalle { display: grid; grid-template-columns: 15rem minmax(0, 1fr); gap: 0.4rem 1.3rem; align-items: start; margin-top: 1.1rem; }
 .cal-detalle > .cal-texto:only-child { grid-column: 1 / -1; }
 /* La portada no cuenta para la altura de la fila (contain): la marcan los titulares, y si son pocos la portada se
    recorta por abajo; si son muchos, el script la deja flotando y los titulares siguen por debajo. */
@@ -777,7 +782,8 @@ a.llevar-op.llevar-mas { border-top: 1px solid var(--filete); margin-top: 0.2rem
 .cal-detalle.envuelve::after { content: ""; display: block; clear: both; }
 .cal-detalle.envuelve .cal-portada { float: left; width: 15rem; min-height: 0; margin: 0.2rem 1.3rem 0.6rem 0; contain: none; }
 .cal-detalle.envuelve .cal-portada img { max-height: none; }
-.cal-portada:hover img { border-color: var(--azul); }
+.cal-portada .ampliar { display: block; width: 100%; height: 100%; padding: 0; border: 0; background: none; line-height: 0; cursor: zoom-in; }
+.cal-portada .ampliar:hover img { border-color: var(--azul); }
 .cal-detalle p { margin: 0; }
 .cal-fecha { font-weight: 700; line-height: 1.3; }
 .cal-fecha .num { color: var(--tinta-2); font-weight: 400; font-style: italic; }
@@ -799,21 +805,11 @@ a.llevar-op.llevar-mas { border-top: 1px solid var(--filete); margin-top: 0.2rem
   .hemeroteca.hem-ancha { max-width: 72rem; }
   .hem-ancha > :not(.calendario, .hem-buscar) { max-width: 44rem; }
   .calendario { display: grid; grid-template-columns: 22rem minmax(0, 1fr); align-items: start; }
-  .cal-izq { position: sticky; top: 1rem; padding-right: 1.6rem; }
-  .cal-detalle { margin-top: 0; padding: 0 0 0 1.6rem; border-top: 0; border-left: 1px solid var(--filete); min-height: 100%; }
-}
-/* Variante B, solo para la vista previa (?variante=b): a la izquierda el calendario y los titulares; a la derecha la
-   portada en grande, recortada para acabar a la vez que la columna de la izquierda. */
-@media (min-width: 64rem) {
-  .calendario.variante-b { grid-template-columns: 24rem minmax(0, 1fr); grid-template-areas: "izq foto" "texto foto"; grid-template-rows: auto 1fr; }
-  .variante-b .cal-izq { grid-area: izq; position: static; padding-right: 0; }
-  .variante-b .cal-detalle { display: contents; }
-  .variante-b .cal-texto { grid-area: texto; margin-top: 0.9rem; padding-top: 0.9rem; border-top: 1px solid var(--filete); }
-  .variante-b .cal-portada { grid-area: foto; align-self: stretch; width: auto; min-height: 0; margin: 0 0 0 1.8rem; float: none; contain: size; }
-  .variante-b .cal-portada img { height: auto; max-height: 100%; }
+  .cal-izq { position: sticky; top: 1rem; }
+  .cal-detalle { margin-top: 0; padding-left: 1.8rem; }
 }
 @media (max-width: 30rem) {
-  .calendario { padding: 0.7rem 0.6rem 0.8rem; }
+  .cal-izq { padding: 0.7rem 0.6rem 0.8rem; }
   .cal-mes { border-spacing: 0.2rem; }
   .cal-mes td { height: 2.5rem; }
 }

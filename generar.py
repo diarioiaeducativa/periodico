@@ -866,12 +866,16 @@ SCRIPT_TEMA = """<script>
   // En el móvil las secciones se deslizan: la sección abierta, a la vista
   var lista=document.querySelector('.secciones-lista'), activa=lista&&lista.querySelector('[aria-current]');
   if(activa&&lista.scrollWidth>lista.clientWidth) lista.scrollLeft=activa.offsetLeft-(lista.clientWidth-activa.offsetWidth)/2;
-  // Ampliar una captura o un dibujo: sobre la propia página, al mayor tamaño que quepa, con la X arriba a la derecha
-  document.querySelectorAll('button.ampliar').forEach(function(b){
-    b.addEventListener('click',function(){
+  // Ampliar una captura o un dibujo: sobre la propia página, al mayor tamaño que quepa, con la X arriba a la derecha.
+  // Atiende a toda la página, también a las imágenes que se ponen después (la portada del día en la hemeroteca).
+  document.addEventListener('click',function(ev){
+    var b=ev.target.closest&&ev.target.closest('button.ampliar'); if(!b) return;
+    (function(){
       var img=b.querySelector('img'), dib=b.querySelector('svg'), v=document.createElement('div'), x=document.createElement('button'), g;
       v.className='visor'; v.setAttribute('role','dialog'); v.setAttribute('aria-modal','true');
-      if(img){ g=img.cloneNode(); v.setAttribute('aria-label',img.alt); }
+      if(img){ g=img.cloneNode(); v.setAttribute('aria-label',img.alt);
+        // Una imagen muy alta (la portada de un número) se abre a lo ancho y se baja dentro del visor
+        if(img.getAttribute('height')/img.getAttribute('width')>1.4) v.classList.add('alta'); }
       else {   // un dibujo: en su marco, con los colores de su sección y tan grande como quepa
         var sec=b.closest('[class*="sec-"]'), c=sec&&[].find.call(sec.classList,function(k){return k.indexOf('sec-')===0;}), vb=dib.viewBox.baseVal;
         if(c) v.classList.add(c);
@@ -899,7 +903,7 @@ SCRIPT_TEMA = """<script>
       function tecla(ev){if(ev.key==='Escape')fuera(); else if(ev.key==='Tab'){ev.preventDefault();x.focus();}}
       v.addEventListener('click',function(ev){if(!g.contains(ev.target))fuera();});
       document.addEventListener('keydown',tecla);
-    });
+    })();
   });
   // Instalar como app (ADR 0013): el enlace del pie sale solo donde el navegador deja instalar con un
   // toque (Chrome, Edge); en iPhone y iPad, cómo añadirlo a la pantalla de inicio. Instalada, nada.
@@ -2508,8 +2512,9 @@ def detalle_dia(x, grupos):
     """El recuadro bajo el calendario con el día elegido: la portada a la izquierda y sus titulares por secciones
     a la derecha. El script lo rehace con los mismos elementos."""
     num = f' <span class="num">· {e(x["num"])}</span>' if x["num"] else ""
-    foto = (f'<a class="cal-portada" href="{e(x["numero"])}"><img src="{e(x["portada"])}" width="{x["ancho"]}" height="{x["alto"]}" '
-            f'alt="{e(L["cal_portada"].format(fecha=x["fecha"]))}"></a>') if x["portada"] else ""
+    alt = e(L["cal_portada"].format(fecha=x["fecha"]))
+    foto = (f'<div class="cal-portada">' + boton_ampliar(f'<img src="{e(x["portada"])}" width="{x["ancho"]}" height="{x["alto"]}" alt="{alt}">', alt)
+            + '</div>') if x["portada"] else ""
     secs = "".join(f'<p class="cal-sec sec-{c}">{e(L["secciones"].get(c, c))}</p><ul>'
                    + "".join(f'<li><a href="{e(u)}">{e(tit)}</a></li>' for tit, u in xs) + "</ul>" for c, xs in grupos.items())
     return (f'{foto}<div class="cal-texto"><p class="cal-fecha">{e(x["fecha"])}{num}</p>{secs}'
@@ -2547,7 +2552,7 @@ def calendario(eds):
                       f'<caption class="solo-lector">{L["calendario"]}: {mes_largo(m + "-01")}</caption>'
                       f'<thead><tr>{cabeza_tabla}</tr></thead><tbody>{filas}</tbody></table>')
     opciones = "".join(f'<option value="{m}"{" selected" if m == meses[-1] else ""}>{mes_largo(m + "-01")}</option>' for m in reversed(meses))
-    textos = json.dumps({"portada": L["cal_portada"]}, ensure_ascii=False)
+    textos = json.dumps({"portada": L["cal_portada"], "ampliar": L["ampliar"], "cerrar": L["cerrar"]}, ensure_ascii=False)
     return (f'<section class="calendario" aria-label="{L["calendario"]}" data-textos="{e(textos)}">'
             f'<div class="cal-izq"><div class="cal-nav"><button type="button" class="cal-ant" title="{L["cal_anterior"]}" aria-label="{L["cal_anterior"]}">{CHEVRON_IZQ}</button>'
             f'<select class="cal-elegir" aria-label="{L["cal_elegir"]}">{opciones}</select>'
@@ -2581,7 +2586,9 @@ SCRIPT_CALENDARIO = """<script>
     if (d.portada) {
       const img = document.createElement('img'); img.src = d.portada; img.width = +d.ancho; img.height = +d.alto;
       img.alt = T.portada.replace('{fecha}', d.fecha);
-      const f = enlace(d.numero, ''); f.className = 'cal-portada'; f.append(img); hijos.push(f);
+      const b = document.createElement('button'); b.type = 'button'; b.className = 'ampliar';
+      b.title = T.ampliar; b.setAttribute('aria-label', T.ampliar + ': ' + img.alt); b.dataset.cerrar = T.cerrar; b.append(img);
+      const f = document.createElement('div'); f.className = 'cal-portada'; f.append(b); hijos.push(f);
     }
     const texto = document.createElement('div'); texto.className = 'cal-texto';
     const fecha = p('cal-fecha', d.fecha);
@@ -2605,12 +2612,10 @@ SCRIPT_CALENDARIO = """<script>
   // Sin huecos (ADR 0041): si los titulares no caben al lado de la portada, siguen por debajo de ella; si son
   // pocos, la portada se recorta por abajo (CSS) para acabar a la vez que ellos.
   const estrecho = matchMedia('(max-width: 36rem)');
-  const ancho = matchMedia('(min-width: 64rem)');
-  if (new URLSearchParams(location.search).get('variante') === 'b') cal.classList.add('variante-b');   // solo para la vista previa
   function ajusta() {
     detalle.classList.remove('envuelve');
     const img = detalle.querySelector('.cal-portada img'), tx = detalle.querySelector('.cal-texto');
-    if (!img || !tx || estrecho.matches || (cal.classList.contains('variante-b') && ancho.matches)) return;
+    if (!img || !tx || estrecho.matches) return;
     const natural = img.getBoundingClientRect().width * img.getAttribute('height') / img.getAttribute('width');
     if (tx.offsetHeight > natural + 24) detalle.classList.add('envuelve');
   }
