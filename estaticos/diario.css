@@ -916,7 +916,7 @@ p.con-nb { margin: 0 0 0.3rem; }
 /* Edición en papel (ADR 0054): cada pieza se imprime con su botón, y cada número entero desde su página
    «Edición en papel». No se guarda ningún PDF: lo hace el navegador. Papel blanco aunque la pantalla esté en
    tema oscuro (comun.css), sin navegación ni botones, sin piezas partidas y con la dirección de cada enlace. */
-.solo-papel { display: none; }
+.solo-papel { display: none !important; }   /* lo que solo va en papel no sale nunca en pantalla */
 .papel-barra { display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem 1.2rem; margin: 0 0 1.4rem; padding: 0.8rem 1rem; border: 1px solid var(--filete); border-radius: 8px; background: var(--papel-2); }
 .papel-barra p { flex: 1 1 100%; margin: 0; color: var(--tinta-2); font-size: 0.92rem; }
 .papel-barra .imprimir { margin-left: auto; }
@@ -929,7 +929,9 @@ p.con-nb { margin: 0 0 0.3rem; }
 .papel-sumario ul ul a { color: var(--tinta); text-decoration: none; }
 .papel > article + article { margin-top: 2.6rem; padding-top: 1.6rem; border-top: 3px double var(--tinta); }
 .papel > .breves { margin-top: 2rem; }
-.papel-qr { display: flex; align-items: center; gap: 4mm; font-size: 0.85rem; color: var(--tinta-2); }
+/* En la edición en papel, la tira en fila también en pantalla, como saldrá impresa; en el móvil, en vertical */
+@media (min-width: 40.01rem) { .papel > .vineta .tira { grid-template-columns: repeat(3, minmax(0, 1fr)); max-width: none; } }
+.papel-qr { align-items: center; gap: 4mm; font-size: 0.85rem; color: var(--tinta-2); }
 .papel-qr .qr { flex: none; width: 22mm; height: 22mm; }
 .papel-qr p { margin: 0; word-break: break-all; }
 .cal-fecha { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.2rem 0.9rem; }
