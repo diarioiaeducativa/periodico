@@ -53,6 +53,10 @@ no se abre al público (trabaja solo, sin que nadie se conecte a él).
     texto. Se lanza con cada comentario creado, editado o borrado, con cada hilo borrado o movido, a mano y
     cada hora (lo que se oculta al moderar no avisa: tarda como mucho una hora en desaparecer de la copia).
     Siempre lo rehace todo; si entretanto ha subido el número, vuelve a empezar sobre lo nuevo (cinco intentos).
+    Lo que sube con `GITHUB_TOKEN` no despliega la web («Commits pushed by a GitHub Actions workflow that uses
+    the `GITHUB_TOKEN` do not trigger a GitHub Pages build», documentación de GitHub Pages, comprobado el
+    13-11-2026): tras subir, el flujo pide el despliegue a la API (`POST /repos/…/pages/builds`, permiso
+    `pages: write`).
     Las claves de despliegue del NAS no pueden subir flujos de GitHub Actions («refusing to allow an OAuth App to
     create or update workflow»): el `.yml` se guarda aquí, en `flujos-sitio/`, y se copia al sitio desde el portátil,
     con la cuenta de Juanjo. Cambiarlo es cambiarlo en los dos sitios.

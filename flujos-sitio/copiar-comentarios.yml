@@ -20,6 +20,7 @@ on:
 permissions:
   contents: write       # para subir comentarios/
   discussions: read
+  pages: write          # para pedir el despliegue: lo que sube GITHUB_TOKEN no lo lanza solo
 
 # Una copia detrás de otra: dos comentarios seguidos no se pisan al subir
 concurrency:
@@ -38,6 +39,7 @@ jobs:
             comentarios
           fetch-depth: 1
       - name: Copiar y subir
+        id: copiar
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: |
@@ -50,7 +52,16 @@ jobs:
             git add -A .   # con el checkout parcial, solo hay .github, comentarios y la raíz
             if git diff --cached --quiet; then echo "Sin cambios"; exit 0; fi
             git commit -qm "Copia de los comentarios"
-            if git push -q origin HEAD:main; then echo "Subida"; exit 0; fi
+            if git push -q origin HEAD:main; then echo "Subida"; echo "subida=1" >> "$GITHUB_OUTPUT"; exit 0; fi
             sleep $((intento * 10))
           done
           exit 1
+      # «Commits pushed by a GitHub Actions workflow that uses the GITHUB_TOKEN do not trigger a GitHub Pages
+      # build» (documentación de GitHub Pages): se pide aparte, con el mismo efecto que un push
+      - name: Desplegar la web
+        if: steps.copiar.outputs.subida == '1'
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          curl -fsS -X POST -H "Authorization: Bearer $GITHUB_TOKEN" -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/${{ github.repository }}/pages/builds"
