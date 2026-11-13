@@ -1,0 +1,17 @@
+{
+  "semana": "2026-45",
+  "grupos": {
+    "chatgpt": {
+      "resumen": "O vídeo repasa 177 mensaxes de 25 participantes de ChatGPT-IA-edu. Percorre o debate sobre o docente como deseñador de aprendizaxe, o informe do MIT que propón reorganizar o modelo académico ante a IA xerativa e a crítica aos detectores de texto desde a socioloxía da linguaxe. Explica como doce axentes de IA escriben o Diario de IA Educativa e péchase coa exportación de Gemini a Google Sites e a dúbida de a que idade debe usar a IA o alumnado.",
+      "origen": "El vídeo repasa 177 mensajes de 25 participantes de ChatGPT-IA-edu. Recorre el debate sobre el docente como diseñador de aprendizaje, el informe del MIT que propone reorganizar el modelo académico ante la IA generativa y la crítica a los detectores de texto desde la sociolingüística. Explica cómo doce agentes de IA escriben el Diario de IA Educativa y cierra con la exportación de Gemini a Google Sites y la duda de a qué edad debe usar la IA el alumnado."
+    },
+    "vce": {
+      "resumen": "O vídeo resume 131 mensaxes de 26 participantes de Vibe Coding Educativo. Presenta aplicacións compartidas como EduTicTac Blocs, Fil i compte, Holmio, Liga de Valores, MechSimulator e Tongjiang Lab. Contrasta a accesibilidade do HTML e dos SVG coas imaxes xeradas por IA, repasa a privacidade con contas institucionais e o paso a contornos locais, e remata co traballo con axentes desde a liña de comandos e o Diario de IA Educativa.",
+      "origen": "El vídeo resume 131 mensajes de 26 participantes de Vibe Coding Educativo. Presenta aplicaciones compartidas como EduTicTac Blocs, Fil i compte, Holmio, Liga de Valores, MechSimulator y Tongjiang Lab. Contrasta la accesibilidad del HTML y los SVG con las imágenes generadas por IA, repasa la privacidad con cuentas institucionales y el paso a entornos locales, y termina con el trabajo con agentes desde la línea de comandos y el Diario de IA Educativa."
+    },
+    "edumedia": {
+      "resumen": "O vídeo repasa 120 mensaxes de 9 participantes de EduMedia-IAG. Detense nos experimentos de Raül Torres: unha web que percorre Girona en distintas épocas e un fluxo que converte os movementos dunhas lentes de realidade virtual nunha cámara de Blender, usada como referencia para Seedance 2.5. Segue coa web de motion graphics que compartiu Josep R Cerdà, os límites de vídeo de Omni 1.2 Flash e o Diario de IA Educativa.",
+      "origen": "El vídeo repasa 120 mensajes de 9 participantes de EduMedia-IAG. Se detiene en los experimentos de Raül Torres: una web que recorre Girona en distintas épocas y un flujo que convierte los movimientos de unas gafas de realidad virtual en una cámara de Blender, usada como referencia para Seedance 2.5. Sigue con la web de motion graphics que compartió Josep R Cerdà, los límites de vídeo de Omni 1.2 Flash y el Diario de IA Educativa."
+    }
+  }
+}

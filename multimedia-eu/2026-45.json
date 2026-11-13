@@ -1,0 +1,17 @@
+{
+  "semana": "2026-45",
+  "grupos": {
+    "chatgpt": {
+      "resumen": "Bideoak ChatGPT-IA-edu taldeko 25 parte-hartzaileren 177 mezu errepasatzen ditu. Irakaslea ikaskuntza-diseinatzaile gisa ikusteko eztabaida, MITen txostena (adimen artifizial sortzailearen aurrean eredu akademikoa berrantolatzea proposatzen duena) eta testu-detektagailuen aurkako kritika soziolinguistikatik jorratzen ditu. Hamabi AA agentek Hezkuntzako AA Egunkaria nola idazten duten azaltzen du, eta Gemini-tik Google Sites-era esportatzeari buruzkoarekin eta ikasleek zer adinetan erabili behar duten AA delakoaren zalantzarekin amaitzen da.",
+      "origen": "El vídeo repasa 177 mensajes de 25 participantes de ChatGPT-IA-edu. Recorre el debate sobre el docente como diseñador de aprendizaje, el informe del MIT que propone reorganizar el modelo académico ante la IA generativa y la crítica a los detectores de texto desde la sociolingüística. Explica cómo doce agentes de IA escriben el Diario de IA Educativa y cierra con la exportación de Gemini a Google Sites y la duda de a qué edad debe usar la IA el alumnado."
+    },
+    "vce": {
+      "resumen": "Bideoak Vibe Coding Educativo taldeko 26 parte-hartzaileren 131 mezu laburbiltzen ditu. Partekatutako aplikazioak aurkezten ditu, hala nola EduTicTac Blocs, Fil i compte, Holmio, Liga de Valores, MechSimulator eta Tongjiang Lab. HTMLren eta SVGen irisgarritasuna AAk sortutako irudiekin alderatzen du, erakundeetako kontuekin pribatutasuna eta ingurune lokaletarako jauzia errepasatzen ditu, eta agenteekin komando-lerrotik lan egitearekin eta Hezkuntzako AA Egunkariarekin amaitzen da.",
+      "origen": "El vídeo resume 131 mensajes de 26 participantes de Vibe Coding Educativo. Presenta aplicaciones compartidas como EduTicTac Blocs, Fil i compte, Holmio, Liga de Valores, MechSimulator y Tongjiang Lab. Contrasta la accesibilidad del HTML y los SVG con las imágenes generadas por IA, repasa la privacidad con cuentas institucionales y el paso a entornos locales, y termina con el trabajo con agentes desde la línea de comandos y el Diario de IA Educativa."
+    },
+    "edumedia": {
+      "resumen": "Bideoak EduMedia-IAG taldeko 9 parte-hartzaileren 120 mezu errepasatzen ditu. Raül Torresen esperimentuetan gelditzen da: Girona garai desberdinetan zeharkatzen duen web bat, eta errealitate birtualeko betaurreko batzuen mugimenduak Blender-eko kamera bihurtzen dituen fluxu bat, Seedance 2.5-erako erreferentzia gisa erabilia. Jarraian, Josep R Cerdàk partekatutako motion graphics webgunea, Omni 1.2 Flash-en bideo-mugak eta Hezkuntzako AA Egunkaria aipatzen ditu.",
+      "origen": "El vídeo repasa 120 mensajes de 9 participantes de EduMedia-IAG. Se detiene en los experimentos de Raül Torres: una web que recorre Girona en distintas épocas y un flujo que convierte los movimientos de unas gafas de realidad virtual en una cámara de Blender, usada como referencia para Seedance 2.5. Sigue con la web de motion graphics que compartió Josep R Cerdà, los límites de vídeo de Omni 1.2 Flash y el Diario de IA Educativa."
+    }
+  }
+}
