@@ -1,0 +1,31 @@
+{
+  "fecha": "2026-11-12",
+  "elegida": {
+    "n": 3,
+    "pieza": "ofs-evaluacion-sin-ia",
+    "idea": "Klarionek bere iruzkinekin frogatzen du erantzunen erregulartasuna neurtzen duen detektorea, eta «Ondo, baina garatu gehiago» urte askotako horrek AA posible gisa salatzen du.",
+    "guion": {"vinetas": [
+      {"cartela": "Zuzendaritzan, AA detektore bat probatzen.",
+       "escenario": "despacho",
+       "objeto": "papeles",
+       "tiza": {"expresion": "orgulloso", "postura": "senalar", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "neutral", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+       "bocadillos": [
+         {"quien": "algoritmo", "texto": "AA erantzunen abiaduraz eta erregulartasunaz detektatzen du.", "tipo": "habla"},
+         {"quien": "tiza", "texto": "Probatu nire iruzkinekin, idazlanetan jarritakoekin.", "tipo": "habla"}]},
+      {"escenario": "despacho",
+       "objeto": "papeles",
+       "tiza": {"expresion": "neutral", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "cargando", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+       "bocadillos": [
+         {"quien": "algoritmo", "texto": "Hogei ikastaroko iruzkinak aztertzen...", "tipo": "habla"}]},
+      {"escenario": "despacho",
+       "objeto": "papeles",
+       "tiza": {"expresion": "avergonzado", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "contento", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+       "bocadillos": [
+         {"quien": "algoritmo", "texto": "«Ondo, baina garatu gehiago», lau mila aldiz. AA posiblea.", "tipo": "habla"}]}
+    ]}
+  },
+  "traduccion": "itzulpen automatikoa AArekin"
+}

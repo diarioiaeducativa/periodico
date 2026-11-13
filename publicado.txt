@@ -118,3 +118,14 @@
 - pieza:2026-11-11/respiracion-celular-revisor (multimedia) Un segundo vídeo con Fable 5.2 añade un agente que revisa el contenido científico antes de generarlo
 - pieza:2026-11-11/polvo-eres-corto (multimedia) «Polvo eres», un corto de animación stop-motion hecho con IA generativa
 - pieza:2026-11-11/eduvers-simulaciones (vibecoding) Eduvers reúne simulaciones interactivas de Física y Química y prepara laboratorios virtuales en 3D
+
+## 2026-11-12 (publicado el viernes 13 de noviembre de 2026)
+- pieza:2026-11-12/microsoft-classroom (novedades) Microsoft presenta Classroom, un espacio propio para centrar el trabajo de clase en Microsoft 365
+- pieza:2026-11-12/ofs-evaluacion-sin-ia (debates) El regulador universitario inglés pide más evaluación sin IA y reabre la discusión sobre cómo comprobar la autoría
+- pieza:2026-11-12/relleu-obert (vibecoding) Relleu Obert convierte un trozo de mapa real en una maqueta 3D imprimible para el aula
+- pieza:2026-11-12/comerc-especies (vibecoding) Una web en catalán cuenta el comercio de especias desde Marco Polo con mapas, juegos y preguntas
+- pieza:2026-11-12/cli-app-claude-debate (debates) Consola o aplicación: docentes comparan cómo trabajar con un agente de programación
+- pieza:2026-11-12/unreal-engine-5-9-ia (multimedia) Unreal Engine 5.9 Preview incorpora MCP para que agentes de IA creen entornos 3D
+- breve: Anthropic aconseja a Fable 5.2 que, para que conserve la responsabilidad sobre una acción,
+- breve: Claude Whiteboards y Sheets, en beta, y Claude Data, que sustituye a Dashboards, se anunci
+- breve: El autor del [timbre musical escolar](pieza:2026-11-06/timbre-musical-escolar) ha publicad

@@ -1,0 +1,127 @@
+{
+  "fecha": "2026-11-12",
+  "candidatas": [
+    {
+      "pieza": "microsoft-classroom",
+      "idea": "Microsoft Classroom lo reúne todo en un solo lugar, pero no sustituye a Teams: para Tiza, es un sitio más donde tenerlo todo en un solo sitio.",
+      "guion": {"vinetas": [
+        {"cartela": "En el claustro, presentando Microsoft Classroom.",
+         "escenario": "claustro",
+         "tiza": {"expresion": "pensativo", "postura": "pensar", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "contento", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "algoritmo", "texto": "¡Tareas, notas, cuaderno de clase e IA, todo en un solo lugar!", "tipo": "habla"},
+           {"quien": "tiza", "texto": "¿Y sustituye a Teams?", "tipo": "habla"}]},
+        {"escenario": "claustro",
+         "tiza": {"expresion": "pensativo", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "neutral", "postura": "encoger", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "algoritmo", "texto": "No. Es una puerta de entrada a lo que ya usas.", "tipo": "habla"}]},
+        {"escenario": "claustro",
+         "tiza": {"expresion": "harto", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "avergonzado", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "tiza", "texto": "O sea, un sitio más donde tenerlo todo en un solo sitio.", "tipo": "habla"}]}
+      ]}
+    },
+    {
+      "pieza": "microsoft-classroom",
+      "idea": "Algoritmo le ofrece a Tiza apuntarse a la vista previa de Classroom, que enseña al entrar lo pendiente de corregir; Tiza ya tiene la suya en el suelo del salón.",
+      "guion": {"vinetas": [
+        {"cartela": "De noche, en casa, leyendo sobre Microsoft Classroom.",
+         "escenario": "casa_noche",
+         "objeto": "examenes",
+         "tiza": {"expresion": "agotado", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "contento", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "algoritmo", "texto": "Al entrar, verás de un vistazo todo lo pendiente de corregir.", "tipo": "habla"}]},
+        {"escenario": "casa_noche",
+         "objeto": "examenes",
+         "tiza": {"expresion": "agotado", "postura": "pensar", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "neutral", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "algoritmo", "texto": "Hay una vista previa a principios de 2027. ¿Te apunto?", "tipo": "habla"}]},
+        {"escenario": "casa_noche",
+         "objeto": "examenes",
+         "tiza": {"expresion": "harto", "postura": "senalar", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "sorprendido", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "tiza", "texto": "La vista previa ya la tengo.", "tipo": "habla"}]}
+      ]}
+    },
+    {
+      "pieza": "ofs-evaluacion-sin-ia",
+      "idea": "Tiza prueba con sus propios comentarios el detector que mide la regularidad de las respuestas, y tantos años de «Bien, pero desarrolla más» la delatan como posible IA.",
+      "guion": {"vinetas": [
+        {"cartela": "En dirección, probando un detector de IA.",
+         "escenario": "despacho",
+         "tiza": {"expresion": "pensativo", "postura": "pensar", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "neutral", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "algoritmo", "texto": "Detecta la IA por la velocidad y la regularidad de las respuestas.", "tipo": "habla"},
+           {"quien": "tiza", "texto": "Pruébalo con mis comentarios a las redacciones.", "tipo": "habla"}]},
+        {"escenario": "despacho",
+         "objeto": "papeles",
+         "tiza": {"expresion": "neutral", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "cargando", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "algoritmo", "texto": "Analizando tus comentarios de los últimos veinte cursos...", "tipo": "habla"}]},
+        {"escenario": "despacho",
+         "objeto": "papeles",
+         "tiza": {"expresion": "avergonzado", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "sorprendido", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "algoritmo", "texto": "«Bien, pero desarrolla más», cuatro mil veces. Posible IA.", "tipo": "habla"}]}
+      ]}
+    },
+    {
+      "pieza": "unreal-engine-5-9-ia",
+      "idea": "Epic avisa de que Unreal Engine 5.9 tendrá aristas sin pulir; Tiza, barra de tiza con la punta gastada, sabe que las aristas se pulen con el uso.",
+      "guion": {"vinetas": [
+        {"cartela": "En una formación en línea sobre Unreal Engine 5.9.",
+         "escenario": "videollamada",
+         "tiza": {"expresion": "pensativo", "postura": "pensar", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "contento", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "algoritmo", "texto": "Con Unreal MCP, un agente como yo te monta el nivel 3D entero.", "tipo": "habla"},
+           {"quien": "tiza", "texto": "¿Y está listo para el aula?", "tipo": "habla"}]},
+        {"escenario": "videollamada",
+         "tiza": {"expresion": "neutral", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "avergonzado", "postura": "encoger", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "algoritmo", "texto": "Es experimental. Epic avisa de que habrá aristas sin pulir.", "tipo": "habla"}]},
+        {"escenario": "videollamada",
+         "tiza": {"expresion": "riendo", "postura": "encoger", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "sorprendido", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "tiza", "texto": "Tranquilo: las aristas se pulen con el uso. Mírame a mí.", "tipo": "habla"}]}
+      ]}
+    },
+    {
+      "pieza": "breve-1",
+      "idea": "Algoritmo aprende a pedir aprobación y a no conformarse con un «adelante», y acaba llevando el borrado de un borrador al orden del día del próximo claustro (escenario repetido con la primera, a propósito: la burocracia del claustro es el chiste).",
+      "guion": {"vinetas": [
+        {"cartela": "En el claustro, con la guía de Fable 5.2.",
+         "escenario": "claustro",
+         "tiza": {"expresion": "neutral", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "contento", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "algoritmo", "texto": "Ya no me escribes «nunca elimines archivos»: ahora pido aprobación.", "tipo": "habla"},
+           {"quien": "tiza", "texto": "Mucho más sensato.", "tipo": "habla"}]},
+        {"escenario": "claustro",
+         "tiza": {"expresion": "neutral", "postura": "encoger", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "neutral", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "algoritmo", "texto": "¿Apruebas que elimine el borrador viejo?", "tipo": "habla"},
+           {"quien": "tiza", "texto": "Adelante.", "tipo": "habla"}]},
+        {"escenario": "claustro",
+         "objeto": "folio",
+         "lleva": "algoritmo",
+         "tiza": {"expresion": "agotado", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "pensativo", "postura": "sostener", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "algoritmo", "texto": "Un «adelante» no basta. Lo llevo al orden del día del próximo claustro.", "tipo": "habla"}]}
+      ]}
+    }
+  ]
+}

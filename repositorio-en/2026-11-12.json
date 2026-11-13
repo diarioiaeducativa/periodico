@@ -1,0 +1,83 @@
+{
+  "fecha": "2026-11-12",
+  "piezas": [
+    {
+      "id": "reloj-edumind",
+      "seccion": "vibecoding",
+      "repositorio": "dia",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "New in the repository",
+      "titular": "Reloj EDUmind brings together timers for the classroom, group work and independent study",
+      "entradilla": "Luis has created an installable web app with three timer modes, designed for managing time in class from nursery to vocational training.",
+      "cuerpo": [
+        "Reloj EDUmind is an installable web app (PWA) that brings together the timers a teacher usually needs in class. According to its entry, it works offline, with no accounts and no tracking: data is stored on the device itself and can be exported or imported as a .json file. It was created by Luis as part of the [EDUmind](pieza:2026-11-06/edumind-miclase-sincronizacion) initiative, whose other resources the diary has already covered, such as the [dictations with synthetic voices in Galician and Spanish](pieza:2026-10-29/dictados-voz-gallego).",
+        "The app is organised into three modes. Classroom mode offers a countdown that can be displayed as a disc that empties, as numbers or as a traffic light, as well as a stopwatch with laps and intervals of the Tabata, circuit or stations type, or custom ones. Groups mode lets you display from 2 to 8 timers at once; each group has a shape, a letter and a colour, so as not to depend on colour alone, and can run in free mode or by stations with automatic rotation. Self-management mode offers plans in phases, such as a pomodoro according to the stage, homework or studying a topic, or custom plans, with a wait between phases, a closing question, «How did it go?», and a local log.",
+        "The latter serves, according to its author, to help students learn to organise their own study and not just to let teachers control the time. The project's documentation states that there are different styles depending on the stage: a friendlier one for nursery and primary, with a typeface designed for legibility and words instead of numbers for nursery, and a more sober one for secondary, sixth form and vocational training. According to that documentation, all the styles include dark mode, high contrast and reduced motion, and the interface is in Galician, Spanish and English.",
+        "According to its documentation, it is used by opening the website in the browser, with no registration, and it can be installed to work without a network. The code is open source, under an AGPL v3 licence according to the entry (the repository also declares the EUPL-1.2 option), and is available on GitHub for anyone who wants to adapt it. For a teacher, it can be useful for displaying a countdown during a test, rotating groups through stations in cooperative work or giving students a guided study plan with breaks."
+      ],
+      "recursos": [
+        {
+          "id": "reloj-edumind",
+          "titulo": "Reloj EDUmind",
+          "autoria": "Luis",
+          "url": "https://reloj.edumind.es",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://github.com/edumind-es/reloj.git",
+          "licencia": "AGPL v3",
+          "captura": "",
+          "captura_alt": "",
+          "texto": []
+        }
+      ],
+      "fuentes": [
+        {"titulo": "Reloj EDUmind", "url": "https://reloj.edumind.es"},
+        {"titulo": "Reloj EDUmind code on GitHub", "url": "https://github.com/edumind-es/reloj"},
+        {"titulo": "Presentation in Vibe Coding Educativo (in Spanish)", "url": "https://t.me/vceduca/7674/14863"}
+      ],
+      "comprobado": "La captura de la entrada muestra la página de GitHub del repositorio (no se usa como captura); su README, visto en un navegador real, da la web reloj.edumind.es y describe modos, estilos, idiomas, licencia doble y funcionamiento local. WebFetch de reloj.edumind.es solo devolvió una cabecera de navegación (aplicación con JavaScript), así que no se pudo ver la aplicación funcionando; lo que se cuenta va atribuido a la ficha, al README y al mensaje del autor. Claves de pieza: las tres existen en publicado.txt y tratan de EDUmind. El titular ya no afirma «sin conexión ni cuentas»."
+    },
+    {
+      "id": "prelacion-admision-conservatorios-cv",
+      "seccion": "vibecoding",
+      "repositorio": "dia",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "New in the repository",
+      "titular": "A tool helps apply the order of priority in admissions to Valencian conservatoires",
+      "entradilla": "José Luis Miralles Bono has created a website with diagrams, an age calculator and Excel templates for applying Order 8/2026 in music and dance schools in the Valencian Community.",
+      "cuerpo": [
+        "«Prelación — Admisión Conservatorios CV» is a website created by José Luis Miralles Bono, with the help of Claude, to understand and apply the order of priority in admissions to elementary and professional music and dance courses in the Valencian Community. It is based on [Order 8/2026](https://jlmirallesb.github.io/legis_cpmdem/es/ley/orden-8-2026/) of 24 April, of the Regional Ministry of Education, Culture and Universities, and links to the regulation in the DOGV (the Valencian official gazette) and to a searchable version of the order. The author already has another tool for conservatoires in the repository, [Tribunator](pieza:2026-11-10/tribunator), which organises panels and timetables for entrance exams.",
+        "The page opens in the browser with no account and is in Spanish and Valencian, with a button to switch language and another for dark mode. A tab bar gives access to several views: Outline, Timeline, Step-by-step guide, Age, Reorientation, Definitions and Templates. On opening, the initial view shows four collapsible blocks: the first and second allocation of the ordinary call, the extraordinary call and vacancies during the school year, with buttons to expand or collapse them all.",
+        "According to the entry, the step-by-step guide works as a flow diagram of questions that ends by indicating the level and the ordering criterion that applies; there is also an age calculator, a tool for reorientation between years and specialisms, and definitions of the terms in the regulation. A prominent link in the header lets you download Excel templates for senior leadership teams: a register of applications, a vacancy publisher, a sheet for the Elementary allocation session and another for the waiting list.",
+        "According to the entry, it is aimed at the teaching and administrative staff of the schools that handle admissions, not at students. The page itself warns that it is a guidance tool and that the official regulations in force must always be consulted. The code is under an AGPL v3 licence and the content under CC BY-SA 4.0, and the source code is on GitHub. For senior leadership teams and school offices, it can save time when resolving cases of ranking applications, always checking them against the order."
+      ],
+      "recursos": [
+        {
+          "id": "prelacion-admision-conservatorios-cv",
+          "titulo": "Prelación — Admisión Conservatorios CV",
+          "autoria": "José Luis Miralles Bono",
+          "url": "https://jlmirallesb.github.io/prelacion/",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://jlmirallesb.github.io/prelacion/",
+          "licencia": "AGPL v3 (code) · CC BY-SA 4.0 (content)",
+          "captura": "2026-11-12-prelacion-admision-conservatorios-cv.jpg",
+          "captura_alt": "Page titled «Prelación de acceso a conservatorio», with a tab bar (Outline, Timeline, Step-by-step guide, Age, Reorientation, Definitions, Templates) and four collapsible blocks of allocations.",
+          "texto": []
+        }
+      ],
+      "fuentes": [
+        {"titulo": "Prelación — Admisión Conservatorios CV (in Spanish)", "url": "https://jlmirallesb.github.io/prelacion/"},
+        {"titulo": "Order 8/2026 (searchable version, Legis CPMDEM) (in Spanish)", "url": "https://jlmirallesb.github.io/legis_cpmdem/es/ley/orden-8-2026/"},
+        {"titulo": "Prelación source code", "url": "https://github.com/JLMirallesB/prelacion"}
+      ],
+      "comprobado": "Captura vista con Read: cabecera, selector «Valencià», modo oscuro, pestañas y cuatro bloques desplegables, aviso de herramienta orientativa, autoría y licencias. Texto visible y WebFetch confirman los enlaces a la orden y los cuatro Excel, sin cuenta. No se abrieron las pestañas (Guía, Edad, Reorientación), por lo que su funcionamiento y el público al que se dirige se atribuyen a la ficha. La entrada no trae mensaje de presentación. Clave pieza:2026-11-10/tribunator en publicado.txt, mismo autor y tema afín."
+    }
+  ],
+  "descartado": [],
+  "repaso": [
+    "Reloj EDUmind: quitado del titular «sin conexión ni cuentas», que solo consta en la ficha y no se pudo ver en la aplicación",
+    "Reloj EDUmind: atribuido a la documentación lo de estilos con modo oscuro/idiomas y la forma de uso (web, sin registro, instalable)",
+    "Prelación: enlazada en su primera mención la Orden 8/2026 y añadida a fuentes",
+    "Prelación: el público al que se destina se atribuye a la ficha",
+    "Autorías, licencias, fichas, captura y claves pieza: correctas"
+  ]
+}

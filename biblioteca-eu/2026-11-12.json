@@ -1,0 +1,115 @@
+{
+ "fecha": "2026-11-12",
+ "piezas": [
+  {
+   "id": "unesco-ia-decides",
+   "seccion": "biblioteca",
+   "importancia": 2,
+   "grupo": "chatgpt",
+   "antetitulo": "UNESCOren gida",
+   "titular": "UNESCOk bost unitate proposatzen ditu 13 eta 15 urte arteko ikasleek AAren erantzunak zalantzan jar ditzaten eta beraiek erabaki dezaten",
+   "entradilla": "«AI answers. You decide» UNESCOren hedabide- eta informazio-alfabetatzearen curriculumaren gida osagarria da, geletarako eztabaida eta jarduerekin, bereizita erabil daitezkeenak.",
+   "cuerpo": [
+    "UNESCOk 2026an argitaratu zuen «[AI answers. You decide: A companion guide to the UNESCO media and information literacy curriculum](https://t.me/ChatGPTedu/21753/54308)», Anne Leppäjärvik idatzitako gida. Leppäjärvi kazetaritzaren eta hedabide- eta informazio-alfabetatzearen finlandiar hezitzailea da, eta Adeline Hulinek eta Olivier Van Bockstaelek koordinatu dute, erakundearen taldekoak biak. Gidak berak ohartarazten du adierazitako ideiak egileenak direla eta ez dutela zertan UNESCO konprometitu. Ingelesez dago, sarbide irekian, CC-BY-SA 3.0 IGO lizentziarekin.",
+    "Irakasleentzat da, ez ikasleentzat, eta ez du ezagutza teknikorik eskatzen. UNESCOren «Media and Information Literate Citizens: Think Critically, Click Wisely!» curriculuma (bigarren edizioa, 2021) osatzen du, eta [UNESCOren AA gaitasun-esparrua irakasleentzat](https://t.me/ChatGPTedu/21753/36905), zeinaz gidak dioen dimentsio mediatikoaz eta informatiboaz arduratzen dela. Jarduerak, batez ere, 13 eta 15 urte arteko gazteentzat pentsatuta daude, adin txikiagoetara edo handiagoetara egokitzeko jarraibideekin. Atal bakoitza ikasgai independente gisa eman daiteke; beraz, ez da gida hasieratik amaierara jarraitu behar.",
+    "Haren hari nagusia «Orientazio-mapa» da, hiru geruzarekin: pertsona, AA sistemak, eta horiek eraikitzen, finantzatzen eta arautzen dituzten pertsonak eta erakundeak. Horrekin batera, unitate guztietan errepikatzen diren bost galdera proposatzen ditu: nork egin zuen, zer ebidentziak laguntzen du, zer sistemak moldatu zuen, norentzat komeni den hura sinestea edo partekatzea, eta zer egiaztatu behar dudan jardun aurretik. Lehen unitateak AAk egiten dituen lau gauza bereizten ditu (aurreikusi, sailkatu, pertsona baten inguruan erabaki eta edukia sortu) eta doako zerbitzu bat erabiltzean uzten diren datuak lantzen ditu. Bigarrenak AA edukien sortzaile eta aukeratzaile gisa kokatzen du, eta lau iturri motaren arteko kontrastea proposatzen du, erantzukizun editorialaren mailaren arabera.",
+    "Hirugarren unitatea chatbotak egunerokoan erabiltzetik hurbilen dagoena da. Azaltzen du hizkuntza-eredu batek testu sinesgarria aurreikusten duela ereduetatik abiatuta, jariotasuna ez dela zehaztasunaren sinonimoa, eta sintetizatutako erantzun batek ezkutatu egin ditzakeela bilatzaile batek erakusten dituen iturriak eta desadostasunak. «Fidatu, egiaztatu edo zalantzan jarri» katea eskaintzen du, jokoan dagoenaren arabera, norberak egiaztatzeko hiru galdera («ikasten ari naiz ala emaitza bat lortzen soilik?») eta lau urratseko ikerketa-begizta bat. Bere lan-araua da AAren erantzun bat arrasto gisa tratatzea, ez iturri gisa: gidak hitzez hitz dio «treat an AI-generated answer as a lead rather than a source». Chatbot batean laguntasuna bilatzen dutenentzako atal bat ere badu, eta kasu horretan elkarrizketa pribatu eta babesgarri bat gomendatzen du.",
+    "Laugarren eta bosgarren unitateak boterera, eskubideetara eta etorkizunera igarotzen dira. Sarbidetik harago doan desberdintasuna lantzen dute (hizkuntza, konputazioa, datuetan ordezkatutako ezagutza, kostua), algoritmoen kontu-ematea, AAren kostu energetikoa UNESCOren 2025eko ikerketaren zifrekin, gidak berak dioenez aldatuko direnak, eta garapen-hiru agertoki: enpresa gutxik erabakitzea, AA publikoa eta garatzaile txiki askoren eredua. Mariya Gabrielen hitzaurreak ikuspegia esaldi batean laburbiltzen du: «AI should not simply happen to us». Haren planteamenduetako bat da AA ez erabiltzea erabaki zilegi bat dela, baldin eta hura ulertzeari uko egitea esan nahi ez badu.",
+    "Mugak ditu, eta komeni da ezagutzea. Testu luzea da, ingelesez, ikuspegi internazionalarekin idatzia, eta aipatzen dituen adibideak eta lege-esparruak ez datoz beti bat Espainiako testuinguruarekin. Hainbat jarduerak proposatzen dute ikasleek AA tresna bat erabil dezatela, eta gidak gogorarazten du aurretik ikastetxearen politika eta zerbitzu bakoitzaren gutxieneko adina berrikusi behar direla; UNESCOren 2023ko gomendioa aipatzen du, erabilera autonomorako 13 urte ezartzekoa. Adinaren auzia diarioak jada jorratu zuen [UNESCOren adin egokiari buruzko txosten batekin](pieza:2026-11-02/unesco-edad-ia). Gidak, gainera, adierazten du jarduera gehienak egin daitezkeela irakasleak tresna pantaila partekatu batean erabiliz.",
+    "Irakasle batentzat, erabilgarriena bere ikasgaiari hobekien egokitzen zaion unitateko «Discussion Guide» eta «Try This» ataletatik hastea da. «Sort My Day» (egunaren AA erabilerak sailkatzea) edo «Ask the Three Questions» (hiru galdera chatbot baten erantzun bati aplikatzea eta bere iturrietako bat egiaztatzea) bezalako jarduerak saio bakarrean egin daitezke."
+   ],
+   "documento": {
+    "titulo": "AI answers. You decide: A companion guide to the UNESCO media and information literacy curriculum",
+    "autoria": "Anne Leppäjärvi (egilea); UNESCO",
+    "anyo": "2026",
+    "idioma": "ingelesa",
+    "licencia": "Creative Commons Aitortu-PartekatuBerdin 3.0 IGO (CC-BY-SA 3.0 IGO)",
+    "url": ""
+   },
+   "fuentes": [
+    {
+     "titulo": "AI answers. You decide (taldearen liburutegiko dokumentua) (ingelesez)",
+     "url": "https://t.me/ChatGPTedu/21753/54308"
+    },
+    {
+     "titulo": "AI competency framework for teachers (UNESCO), liburutegian (ingelesez)",
+     "url": "https://t.me/ChatGPTedu/21753/36905"
+    }
+   ],
+   "mensaje": {
+    "grupo": "chatgpt",
+    "id": 54308
+   },
+   "comprobado": "Leí el texto completo del PDF tal como está en la biblioteca (portada y créditos, prólogo, cómo usar la guía, mapa de orientación, unidades 1 a 5, glosario y tabla de síntesis) y contrasté con él autoría, coordinación, licencia, edades, las cinco preguntas, la cadena confiar/verificar/cuestionar, las tres preguntas de autocomprobación, el bucle de cuatro pasos, los tres escenarios, el apartado de compañía, las actividades citadas y las dos citas literales. No pude leerlo en la fuente oficial: el DOI del PDF (https://doi.org/10.58338/JXYO3928) devolvió un 404 y la página de la UNESCO probada también; una búsqueda web no halló la ficha oficial; por eso documento.url queda vacío y el artículo enlaza al documento en la biblioteca. No se ha leído el currículo ni el marco de competencias que cita; solo se afirma de ellos lo que la guía dice. Existencia de las claves: el mensaje 36905 está en la lista de la biblioteca (marco para docentes) y pieza:2026-11-02/unesco-edad-ia está en publicado.txt y trata de la edad para usar IA en el aula.",
+   "ilustracion": "Un esquema de tres anillos concéntricos rotulados «Tú», «Sistemas de IA» y «Personas e instituciones», con una flecha circular que une los dos primeros y una pregunta fuera del anillo exterior: «¿Dónde puedo opinar?». Debajo, cinco pequeñas casillas con las cinco preguntas de la guía.",
+   "ilustracion_alt": "Hiru zirkulu kontzentrikoko eskema: erdian «Zu», inguruan «AA sistemak» eta kanpoko eraztunean «Pertsonak eta erakundeak»; bi gezi kurbak lehen biak lotzen dituzte, eta gezi gorri batek kanpotik «Non eman dezaket iritzia?» galdera seinalatzen du. Azpian, «Bost galdera» izenburua eta bost kutxa, gidako galdera bakoitzeko bana."
+  },
+  {
+   "id": "ofs-ia-educacion-superior",
+   "seccion": "biblioteca",
+   "importancia": 2,
+   "grupo": "chatgpt",
+   "antetitulo": "Gida eta erregulatzailearen txostena",
+   "titular": "Ingalaterrako unibertsitate-erregulatzaileak argitu du AAren zein praktikak datozen bat bere kalitate-baldintzekin, eta oinarri duen azterlana argitaratu du",
+   "entradilla": "Office for Studentsek eta Advance HEk 48 orrialdeko txosten bat plazaratu dute, 300 ikasle eta irakasle baino gehiagorekin egina, eta bere aurkikuntzak erregistroko B1, B2 eta B4 baldintzetara ekartzen dituen gida bat.",
+   "cuerpo": [
+    "Office for Students (OfS) Ingalaterrako goi-mailako hezkuntzaren erregulatzailea da; Advance HE, berriz, 30 herrialde baino gehiagotan unibertsitate-irakaskuntzaren hobekuntza bultzatzen duen kideen erakundea. 2026ko azaroaren 11n elkarrekin argitaratu zuten [Artificial intelligence in higher education](https://www.officeforstudents.org.uk/for-providers/quality-and-standards/artificial-intelligence-in-higher-education/), bi zatiz osatua: ikerketa-txosten bat, [Making AI work for students](https://www.officeforstudents.org.uk/publications/making-ai-work-for-students-reflections-on-institutional-practice/), eta [jardun instituzional eraginkorren](https://www.officeforstudents.org.uk/for-providers/quality-and-standards/artificial-intelligence-in-higher-education/effective-institutional-practice/) webgune-gida bat. Batez ere Ingalaterrako unibertsitate eta ikastetxeei zuzenduta daude. Egunkariak lehen ere kontatu zuen [iragarpena eta zer eztabaida piztu zuen](pieza:2026-11-12/ofs-evaluacion-sin-ia); artikulu honek dokumentuek diotenean jartzen du arreta.",
+    "Txostena 2026ko ekainetik irailera egindako kontsultan oinarritzen da: 16 bilera, galdera irekien 64 erantzun eta 22 elkarrizketa, gutxienez 127 erakundetako 244 langile eta 91 ikasleren ahotsarekin. Egileek ohartarazten dute parte-hartzaileak borondatez eman zutela izena, eta, beraz, baliteke biztanleria osoa ordezkatu ez izana; halaber, ondorioak OfS eta Advance HEkoak direla, ez eskakizun arautzaileak.",
+    "Higher Education Policy Institute (HEPI) erakundearen inkestak aipatuta, txostenak dio 2025 amaieran ikasleen % 94k adierazten zuela AA sortzailea erabilia zuela ebaluagarriak diren lanetan, 2023 amaieran % 53k bezala. Erabilera baliotsuak jasotzen ditu, batez ere ezgaitasuna duten ikasleentzat edo lehen hizkuntza ingelesa ez dutenentzat, eta arrisku nagusi bat: irakurketa, arazoen ebazpena edo idazketa AAri uzteak ikasteko beharrezko ahalegin emankorra (productive struggle) saihestea ekar dezake.",
+    "Ebaluazioari buruzko kapitulua da azpimarratuena. Azaltzen du gainbegiratu gabeko zeregin asko ikasleak oso gutxi parte hartuta ere nota onarekin osa daitezkeela, eta erakunde askok baimendutako erabilerak sailkatzeko erabiltzen dituzten semaforoak (gorria, anbarra, berdea) zailak direla betearaztea probak diseinatzeko modua aldatzen ez bada. Detektagailuei dagokienez, ondorioztatzen du haien emaitza, gehienez ere, froga gehigarri bat izan behar dela; gidak, jokabide desegokiaren prozeduretan, ebidentzia-multzo orekatua eskatzen du, «placing disproportionate weight on the outputs of AI detection tools» egin gabe. Ebaluazio seguruak (aurrez aurreko azterketak, aurkezpenak, ahozko azterketak, zeregin praktikoak) defendatzen ditu, eta autentikotasun txikiagoa izan dezaketela onartzen du. Gaineratzen du: «AA erabiliz ebaluazio bat osatzea posible bada neurtu nahi diren ezagutzak eta trebetasunak izan gabe, ebaluazioa ordeztu egin behar da». Adibide gisa, Bath-eko Unibertsitateak 2026ko irailean bi «erreietara» igaro zen: bat itxia, AArako sarbiderik gabekoa, eta bestea irekia, erabiliko dela jakinik diseinatua.",
+    "Alfabetatzeari eta estrategiari dagokienez, txostenak ikusten du ikasleen prestakuntza irregularra dela, irakasleena sarritan hautazkoa eta parte-hartze urrikoa, eta erakunde askotan ikuspegiak irakasle jakin batzuen ekimenetik sortzen direla. Kent-eko Unibertsitateak, kasu-azterketa gisa, ChatGPT Edu plataforma eskaintzen du, alfabetatzean, erabilera arduratsuan eta datu-babesean aldez aurretiko prestakuntza nahitaezkoa duena, nahiz eta erabilera bera borondatezkoa den.",
+    "Gida da zati arautzailea. B1 (esperientzia akademikoa), B2 (laguntza) eta B4 (ebaluazioa) baldintzak ziurrenik betetzen dituzten praktiken adibideak eskaintzen ditu: AAz egindako materialen eta feedbackaren kalitatea berrikustea, ikasleei zein erabilera dauden baimenduta argi jakinaraztea eta sarbide-desberdintasunak arintzea. Argitzen du ez duela arau berririk ezarriko. Proposatzen duen etorkizuneko kalitate-sisteman, erakundeek beren ebaluazioek AAri aurre egiten diotela frogatzea espero du, eta zalantzak badaude, haien kalifikazioan ondorioa izan lezake.",
+    "Liburutegiko dokumentuen artean, [MITeko batzordearen txostenarekin](pieza:2026-11-03/mit-comite-ia) lotzen da, hark ere ebaluazioa birdiseinatzeko eskatzen baitu; hemen, ordea, jatorria erregulatzaile bat da, eta ardatza, araudia betetzea. Mugak: Ingalaterran zentratutako azterlan kualitatibo eta norberak hautatutakoa da. Edozein mailatako irakasle batentzat, erabilgarriena 2. kapitulua da, birdiseinu-aukerekin, eta erabilera-politikei buruzko 53tik 55era bitarteko atalak. Hasteko, webgune-gidarekin nahikoa da, minutu gutxitan irakurtzen baita."
+   ],
+   "documento": {
+    "titulo": "Artificial intelligence in higher education (guía) y Making AI work for students: reflections on institutional practice (informe, OfS 2026.56)",
+    "autoria": "Office for Students (con Advance HE, en el informe)",
+    "anyo": "2026",
+    "idioma": "ingelesa",
+    "licencia": "Open Government Licence v3.0",
+    "url": "https://www.officeforstudents.org.uk/for-providers/quality-and-standards/artificial-intelligence-in-higher-education/"
+   },
+   "fuentes": [
+    {
+     "titulo": "Artificial intelligence in higher education (OfS) (ingelesez)",
+     "url": "https://www.officeforstudents.org.uk/for-providers/quality-and-standards/artificial-intelligence-in-higher-education/"
+    },
+    {
+     "titulo": "Making AI work for students: reflections on institutional practice (ingelesez)",
+     "url": "https://www.officeforstudents.org.uk/publications/making-ai-work-for-students-reflections-on-institutional-practice/"
+    },
+    {
+     "titulo": "Effective institutional practice in AI (OfS) (ingelesez)",
+     "url": "https://www.officeforstudents.org.uk/for-providers/quality-and-standards/artificial-intelligence-in-higher-education/effective-institutional-practice/"
+    }
+   ],
+   "mensaje": {
+    "grupo": "chatgpt",
+    "id": 54310
+   },
+   "comprobado": "Revisor: contrastado con el texto completo del PDF de la entrada (guía y informe; cifras, citas, casos de Bath y Kent, apartados 53-55, B1/B2/B4). Abiertas en el sitio de la OfS la guía (11 de noviembre de 2026, Advance HE), la página del informe (OfS 2026.56, más de 300 participantes) y la guía de prácticas eficaces (B1, B2, B4, cita sobre detectores, «lower award»): coinciden. La web de la guía no declara licencia (© todos los derechos); la OGL v3.0 es la que consta en el PDF de la biblioteca. No abierto el PDF original ni los estudios del HEPI (94 % y 53 % son cifras del informe). La pieza ofs-evaluacion-sin-ia solo leyó la página de presentación y una noticia, no el documento: no cuenta como ya contado.",
+   "ilustracion_alt": "Ezkerretik eskuinera doan eskema bat: «Txostena» izeneko dokumentu batek «B1 B2 B4 gida» izeneko liburu ireki bat dakar, eta hau bi ebaluazio-erreitan banatzen da: «Itxia» izeneko giltzapo itxi bat eta «Irekia» izeneko giltzapo ireki bat.",
+   "ilustracion": "Esquema de tres capas: arriba, el informe con sus capítulos (enseñanza, evaluación, alfabetización, estrategia); en medio, la guía con las condiciones B1, B2 y B4; abajo, dos carriles de evaluación, uno cerrado sin IA y otro abierto con IA permitida.",
+   "repaso": [
+    "Cuerpo recortado de ~900 a ~650 palabras (el límite es 700): quitados detalles de la consulta, los costes de las evaluaciones seguras, la brecha de pago y las adaptaciones por discapacidad.",
+    "«esfuerzo productivo» ya no va entre comillas: la fuente dice «productive struggle» y era una traducción, no cita literal.",
+    "Los semáforos: la fuente no dice que sean «imposibles de verificar», sino difíciles de hacer cumplir; reformulado.",
+    "«Iniciativa de docentes concretos»: de «la mayoría» a «muchas instituciones» (el informe dice «at many institutions»).",
+    "Citas literales, cifras, autoría, fecha, enlaces oficiales, enlaces pieza:2026-11-12/ofs-evaluacion-sin-ia y pieza:2026-11-03/mit-comite-ia (ambos en publicado.txt y relacionados) y ausencia de quien subió el documento: correctos."
+   ]
+  }
+ ],
+ "ya_contado": [
+  {
+   "mensaje": {
+    "grupo": "chatgpt",
+    "id": 54292
+   },
+   "fecha": "2026-11-12",
+   "id": "ofs-evaluacion-sin-ia",
+   "titular": "Ingalaterrako unibertsitate-erregulatzaileak AArik gabeko ebaluazio gehiago eskatzen du eta egiletza nola egiaztatu behar den eztabaida berriro irekitzen du",
+   "motivo": "Es la misma página del Office for Students, «Artificial intelligence in higher education» (11 de noviembre de 2026), que es la primera fuente de la pieza."
+  }
+ ],
+ "descartado": []
+}

@@ -1,0 +1,169 @@
+{
+  "fecha": "2026-11-12",
+  "hay_edicion": true,
+  "motivo": "Día normal: ChatGPT-IA-edu con Microsoft Classroom y el aviso del regulador inglés sobre evaluación; Vibe Coding Educativo con dos recursos de aula y un debate sobre interfaces; EduMedia-IAG, flojo, con la vista previa de Unreal Engine 5.9.",
+  "piezas": [
+    {
+      "id": "microsoft-classroom",
+      "seccion": "novedades",
+      "importancia": 1,
+      "grupo": "chatgpt",
+      "antetitulo": "Microsoft Education",
+      "titular": "Microsoftek Classroom aurkeztu du, ikasgelako lana Microsoft 365en inguruan biltzeko espazio propioa",
+      "entradilla": "Microsoft Classroomek zereginak, kalifikazioak eta AA tresnak pantaila bakarrean biltzen ditu lehen hezkuntza, bigarren hezkuntza eta goi-mailako hezkuntzarako. 2027an iritsiko da, plan jakin batzuk dituzten ikastetxeentzat kostu gehigarririk gabe.",
+      "cuerpo": [
+        "Microsoftek [hezkuntzarako blogean](https://techcommunity.microsoft.com/blog/educationblog/introducing-microsoft-classroom-a-new-experience-built-for-teaching-and-learning/4571185) aurkeztu du Microsoft Classroom, Microsoft 365 Educationen barruko esperientzia independente bat irakasteko eta ikasteko. Enpresak «sarrerako ate» gisa deskribatzen du, irakasleek ezagutzen dituzten tresnetarako, eta argitzen du ez duela Teams for Education ordezkatzen.",
+        "Toki bakar batean biltzen ditu zereginak, ikasgelako lana, kalifikazioak, OneNoteko ikasgela-koadernoa, Learning Accelerators eta analisi-tresnak. Irakasleek, sartzean, zuzentzeko dagoen lana eta aste horretan amaitzen dena ikusten dute; ikasleek, berriz, hurrengoa, atzeratuta dagoena eta iruzkinekin itzuli zaiena. Gainera, ikasgela bakoitzak irakasleak pertsonaliza dezakeen hasiera partekatua du. Weban erabiliko da, eta mugikorrerako eta ordenagailurako aplikazioak izango dira.",
+        "AA funtzioak ditu: Teach, irakasleentzako AAz hornitutako planifikazio-espazioa, zereginen barruan erabil daitekeen ikaskuntza- eta ikasketa-agente bat, eta ikasleentzako ikaskuntza-jarduerak.",
+        "Microsoften arabera, kostu gehigarririk gabe sartuko da A1, A3, A5 eta A7 planetan 2027tik aurrera, eta A2 eta goragoko planetan etorkizuneko produktuetan 2028ko urtarrilatik. 2027ren hasieran aurrebista bat egitea aurreikusita dago, eta ikastetxeetako administratzaileak izena eman dezakete."
+      ],
+      "fuentes": [
+        {"titulo": "Introducing Microsoft Classroom: a new experience built for teaching and learning (Microsoft Community Hub) (ingelesez)", "url": "https://techcommunity.microsoft.com/blog/educationblog/introducing-microsoft-classroom-a-new-experience-built-for-teaching-and-learning/4571185"}
+      ],
+      "mensaje": {"grupo": "chatgpt", "id": 54284},
+      "comprobado": "Releído el anuncio oficial en el blog de educación de Microsoft: experiencia independiente, no sustituye a Teams, funciones, funciones de IA (Teach, agente de estudio y aprendizaje, actividades), web y apps, planes (A1, A3, A5, A7 en 2027; A2 y superiores en futuros productos desde enero de 2028) y vista previa a principios de 2027. Mensaje de Telegram confirmado. No contradice nada de publicado.txt.",
+      "ilustracion": "Esquema de un panel único del que salen cuatro flechas hacia tareas, calificaciones, cuaderno de clase y herramientas de IA, con una línea de tiempo que marca 2027 (vista previa y planes A1-A7) y enero de 2028 (planes A2 y superiores).",
+      "ilustracion_alt": "«Classroom» errotuluko panel bat, eta harengandik «Zereginak», «Notak», «Koadernoa» eta «AA» errotuluak dituzten lau laukirantz doazen lau gezi."
+    },
+    {
+      "id": "ofs-evaluacion-sin-ia",
+      "seccion": "debates",
+      "importancia": 2,
+      "grupo": "chatgpt",
+      "antetitulo": "Ebaluazioa",
+      "titular": "Ingalaterrako unibertsitate-erregulatzaileak AArik gabeko ebaluazio gehiago eskatzen du, eta egiletza nola egiaztatu berriro mahai gainean jarri du",
+      "entradilla": "Office for Studentsek formatu seguruak gomendatzen ditu, hala nola aurrez aurreko edo ahozko azterketak. Taldean zer detekta daitekeen eta zer ez eztabaidatu zen.",
+      "cuerpo": [
+        "Office for Students-ek (OfS), Ingalaterrako goi-mailako hezkuntzaren erregulatzaileak, azaroaren 11n argitaratu zuen [goi-mailako hezkuntzako adimen artifizialari buruzko orria](https://www.officeforstudents.org.uk/for-providers/quality-and-standards/artificial-intelligence-in-higher-education/), Advance HErekin batera egindako lan batekin. [Unite.AIren estaldurak](https://www.unite.ai/office-for-students-urges-ai-free-assessment-to-safeguard-degrees/) dioenez, ohartarazten du gainbegiratu gabeko zeregin asko gaur egun AArekin egin daitezkeela maila altuan eta ikasleak inplikazio gutxirekin, eta eskatzen du probek ikasleek dakitena eta egiten dakitena neurtzea, askotan AArik gabeko formatu seguruekin: aurrez aurreko azterketak, aurkezpenak, ahozko azterketak eta zeregin praktikoak. Txostenak onartzen du formatu horiek kostuak dituztela eta ikasleen zati bati, desgaitasuna dutenei, kalte egin diezaiekeela, eta ez du proposatzen AA hezkuntzatik kentzea.",
+        "Albisteak oinarrizko eztabaida bat eragin zuen taldean. Jarrera batek defendatzen du iraupen laburreko lerroko ikastaroek zentzua galdu dutela, nabigatzaile-luzapena duen laguntzaile batek bakarrik osa ditzakeelako. Beste batek gogorarazten du, taldean komentatu zenez, Moodlerako osagarri batzuek erantzunen abiaduraz edo erregulartasunaz AA detektatzen saiatzen direla, baina pertsona batek bezala idazten duten luzapenak ere badaudela, eta testua detektaezin bihurtzen duten jarraibideak. Handik bi ondorio datoz, elkarrekin bizi direnak: AA erabiltzea leporatzea ez dela bidea, eta ingurune elektroniko batean giza-parametro oro imita daitekeela pertsona batek egin badezake.",
+        "Estaldurak berak dioenez, txostenak ez ditu detektoreak fidagarritzat jotzen: giza berrikuspenak ez du ongi bereizten AAren testua, eta detektore baten irteera, gehienez ere, beste proba bat izan beharko litzateke, susmoak nota jaitsi gabe. Egunkariak jada kontatu zuen [detektoreei eta «sorginen ehizari»](pieza:2026-11-01/detectores-caza-brujas) buruzko eztabaida, eta nola [detektore baten ehunekoak ez duen frogatzen kopiatu denik](pieza:2026-11-08/detector-ia-no-es-prueba)."
+      ],
+      "fuentes": [
+        {"titulo": "Artificial intelligence in higher education (Office for Students) (ingelesez)", "url": "https://www.officeforstudents.org.uk/for-providers/quality-and-standards/artificial-intelligence-in-higher-education/"},
+        {"titulo": "Office for Students Urges AI-Free Assessment to Safeguard Degrees (Unite.AI) (ingelesez)", "url": "https://www.unite.ai/office-for-students-urges-ai-free-assessment-to-safeguard-degrees/"}
+      ],
+      "mensaje": {"grupo": "chatgpt", "id": 54288},
+      "comprobado": "Abierta la página de la OfS (proyecto con Advance HE, fecha 11 de noviembre ligada a la nota de prensa; no dice nada concreto sobre evaluación ni detectores) y el artículo de Unite.AI, de donde salen formatos seguros, costes, discapacidad, no retirar la IA y lo de los detectores, atribuidos a él. Las posturas sobre cursos en línea, complementos de Moodle y extensiones salen del hilo y no se han verificado en otra fuente (ahora dicho en el texto). Claves pieza: de publicado.txt, las dos existen y tratan de detectores. Mensaje de Telegram confirmado.",
+      "ilustracion": null,
+      "ilustracion_alt": "Bi erdiko eskema: ezkerrean, «Formatu seguruak» errotuluaren azpian, hiru ikono, «Ahozkoa» (mikrofono bat), «Aurkezpena» (arbel bat) eta «Praktika» (arkatz bat) errotuluekin; eskuinean, gorriz marratutako lupa bat, «Detektorea» errotuluarekin."
+    },
+    {
+      "id": "relleu-obert",
+      "seccion": "vibecoding",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Komunitatearen baliabidea",
+      "titular": "Relleu Obertek benetako mapa-zati bat ikasgelarako maketa 3D inprimagarri bihurtzen du",
+      "entradilla": "Doako kode irekiko proiektu batek leku bat aukeratzeko, haren erliebea nabigatzailean sortzeko eta 3Dn inprimatzeko esportatzeko aukera ematen du.",
+      "cuerpo": [
+        "[Relleu Obert](https://relleu.ortogra.fi/), «Geografia que pots tocar» leloarekin, benetako lekuen 3D maketak sortzeko, nabigatzailean ikusteko eta inprimatzeko aukera ematen du. Bere webgunearen arabera, Aarón Fortuñoren lana da, doakoa eta MIT lizentziadun kode irekikoa da, eta oraingoz interfazea katalanez bakarrik dago eskuragarri, beste lau hizkuntza zain daudela.",
+        "Helbide batetik edo koordenatu batzuetatik abiatzen da, eta tamaina aukeratzen da, erliebea bakarrik nahi den ala eredu osoa, eta bertikalaren gehiegizkotzea. Zuhaitzak, ibaiak, errepideak, bideak eta eraikinak gehi daitezke OpenStreetMapeko, Institut Cartogràfic i Geològic de Catalunyako (ICGC) eta Katastroko datuetatik, ibilbideak marraztu edo GPX fitxategi bat inportatu, eta zuloak utzi xaflak edo banderatxoak jartzeko. Ereduak 3MF edo STL formatuan esportatzen dira.",
+        "Egileak taldean kontatzen du AArekin egin duela eta sarearen kalkulua nabigatzailean egiten dela, zerbitzari batean daturik gorde gabe. Bere motibazioa da lehen hezkuntzako ikasleekin erliebea lantzean paperak zentzu gutxi izaten duela haientzat eta maketa ukitu ahal izateak esperientzia aberasten duela. Bere eskolan inprimatutako lehen prototipoaren argazkiak partekatzen ditu, itsaslabarrak dituen cala baten 10 × 10 cm-ko maketa, eta leku nabarmenen ereduen biltegi bereizi bat iragartzen du, xehetasun gehiagorekin."
+      ],
+      "fuentes": [
+        {"titulo": "Relleu Obert — Geografia que pots tocar (katalanez)", "url": "https://relleu.ortogra.fi/"}
+      ],
+      "mensaje": {"grupo": "vce", "id": 14965},
+      "comprobado": "Abierta la web de Relleu Obert: funciones, datos (OSM, ICGC, Catastro), GPX, huecos para chinchetas, STL/3MF, licencia MIT y autoría; solo el catalán está activo (los otros cuatro idiomas figuran como pendientes, aunque el mensaje del grupo los da por disponibles). Quitado «un archivo por material», no confirmado para 3MF. Uso de IA, prototipo, motivación y repositorio de modelos son lo que cuenta el autor en el grupo. Mensaje de Telegram confirmado.",
+      "ilustracion": null,
+      "ilustracion_alt": "Gezien bidez lotutako hiru urrats: «Mapa» errotuluko mapa bat, «Erliebea» errotuluko mendi bat eta «Maketa» errotuluko inprimagailu bat."
+    },
+    {
+      "id": "comerc-especies",
+      "seccion": "vibecoding",
+      "importancia": 3,
+      "grupo": "vce",
+      "antetitulo": "Komunitatearen baliabidea",
+      "titular": "Katalanezko webgune batek espezien merkataritza kontatzen du Marco Polotik hasita, mapekin, jokoekin eta galderekin",
+      "entradilla": "«El comerç de les espècies» webguneak bederatzi kapitulu interaktibo proposatzen ditu, bere egilearen arabera bigarren hezkuntzarako eta batxilergorako pentsatuak.",
+      "cuerpo": [
+        "[El comerç de les espècies](https://ja.cat/especies), taldearen arabera Felip Sarroca i Gilek sortua, galdera batetik abiatzen da: zergatik mugitu zituzten hain hazi txikiek ontziak, dirua eta inperioak. Marco Poloren bidaietatik gaur egunera arte egiten du ibilbidea bederatzi kapitulutan, bakoitza infografia, mapa eta jarduerekin, eta norberaren erantzuna argudiatzen den erronka batekin amaitzen da.",
+        "Webguneak kalkulagailuak, haize-mapak, merkatarien joko bat, berehalako zuzenketadun galderak, irakurketa erraztuko aukera bat eta glosario bat ditu. Aurrerapena nabigatzailean bakarrik gordetzen da. Egileak kontatzen du, diseinatu aurretik, Codexi eskatu ziola NotebookLMrekin MCP bidez konektatzeko koaderno bat sortzeko, iturriak biltzeko eta materialak sortzeko."
+      ],
+      "fuentes": [
+        {"titulo": "El comerç de les espècies (katalanez)", "url": "https://ja.cat/especies"}
+      ],
+      "mensaje": {"grupo": "vce", "id": 14959},
+      "comprobado": "Abierta la web (redirige a felipsarroca.github.io/web/Especies/): nueve capítulos, infografía, mapas y actividades, reto final, calculadoras, mapas de vientos, juego de mercaderes, preguntas con corrección inmediata, lectura fácil, glosario y progreso en el navegador. La web no nombra al autor ni el nivel: ambos salen del mensaje del grupo (ahora dicho así). El uso de Codex y NotebookLM es lo que cuenta el autor. Mensaje de Telegram confirmado.",
+      "ilustracion": null,
+      "ilustracion_alt": "Bederatzi punturekin egindako ibilbide bat, «Marco Polo» errotuluko ontzi batetik «Gaur» errotuluko globo lurrekora doana; gainean, «Bederatzi kapitulu» errotulua."
+    },
+    {
+      "id": "cli-app-claude-debate",
+      "seccion": "debates",
+      "importancia": 3,
+      "grupo": "vce",
+      "antetitulo": "Lan-fluxuak",
+      "titular": "Kontsola ala aplikazioa: irakasleek konparatzen dute programazio-agente batekin nola lan egin",
+      "entradilla": "Taldeak eztabaidatu zuen kontsolak aplikazio grafikoak baino askatasun handiagoa ematen duen, eta ondorioztatu zuen pertsona bakoitzaren eta zereginaren araberakoa dela.",
+      "cuerpo": [
+        "Claude eta beste programazio-agente batzuen erabiltzaileen arteko elkarrizketa batek lan egiteko bi modu aurrez aurre jarri zituen. Kontsola nahiago dutenek AArekiko komunikazio zuzen gisa deskribatzen dute, botoirik eta ikonorik tartean gabe, eta dokumentu pertsonalak antolatzeko eta memoria-sistema bat mantentzeko ere erabiltzen dute; web interfazea kontsulta azkarretarako gordetzen dute, batez ere mugikorretik.",
+        "Mahaigaineko aplikazioa nahiago dutenek argudiatzen dute gauza bera dela interfaze grafikoarekin, segundo batean abiatzen dela, proiektu berean txat batzuk aldi berean izatea ahalbidetzen duela, lasterbideak ordenatzen dituela eta kanpoko tresnak konektatzea errazten duela. Gehitzen dute, proiektuka eta txatka lan eginez gero, dena zerbitzuaren beraren memoriaren araberakoa dela. Norbaitek adierazi zuen hodeiko informazioarekin lan egiteak pribatutasunaren zalantza sortzen duela, eta beste pertsona batek erantzun zuen bere metodoak dokumentuak bere ordenagailuan gordetzen dituela, kopia zifratuekin.",
+        "Funtsezkoan adostasuna izan zen: weba, aplikazioa eta kontsola emaitza antzeko baterako hiru bide dira, eta kasu bakoitzerako tresna eta interfazea aukeratzen jakitea ikaskuntzaren parte da, taldeko pertsona batzuek AA alfabetatzearekin lotu zutena. Lehentasunen eta esperientzien trukaketa da, egiazta daitekeen daturik gabe."
+      ],
+      "fuentes": [],
+      "mensaje": {"grupo": "vce", "id": 14875},
+      "comprobado": "Contrastado con los mensajes del grupo (#14873-#14944 y #14912-#14963): las posturas coinciden y no llevan nombre. Pieza de opinión sin afirmaciones sobre productos, cifras ni normas. Mensaje de Telegram abierto: es del hilo.",
+      "ilustracion": null,
+      "ilustracion_alt": "«Weba», «Aplikazioa» eta «Kontsola» errotuluak dituzten hiru ikono, haien lerroak «Emaitza» errotuluko laukizuzen berean bat egiten dutenak."
+    },
+    {
+      "id": "unreal-engine-5-9-ia",
+      "seccion": "multimedia",
+      "importancia": 3,
+      "grupo": "edumedia",
+      "antetitulo": "Bideojokoak eta 3D",
+      "titular": "Unreal Engine 5.9 Previewk MCP gehitzen du AA agenteek 3D inguruneak sor ditzaten",
+      "entradilla": "Epic Gamesek motorraren aurrebertsio bat argitaratu du AA funtzioekin, guztiak esperimentalak.",
+      "cuerpo": [
+        "EduMedia-IAGen [Unreal Engine 5.9 MegaJam Previewren](https://forums.unrealengine.com/t/unreal-engine-5-9-megajam-preview/2852840) oharra partekatu zen, Epicek azaroaren 9an argitaratua, bere AI MegaJam-aren aurretik. Hezkuntzarako jokoak eta 3D inguruneak sortzen dituenarentzat interesgarria da.",
+        "Bertsioak Unreal MCP gehitzen du, AA agente batek editorea kontrolatzea ahalbidetzen duena (mailak sortu, profilatu, arazketa egin), «Unreal Assistant» panel bat, editorearen barruan Claude Code, Codex, Cursor edo OpenCode bezalako kanpoko agente batekin lan egiteko, eta Unreal Canvas, irudiak, 3D amaraunak eta bideoa norberaren gakoekin sortzeko tresna. Epicek dena esperimental gisa markatzen du eta «rough edges» (zorroztu gabeko ertzak) egongo direla ohartarazten du; proiektuaren kopia batean probatzea gomendatzen du."
+      ],
+      "fuentes": [
+        {"titulo": "Unreal Engine 5.9 MegaJam Preview (Epic Gamesen foroak) (ingelesez)", "url": "https://forums.unrealengine.com/t/unreal-engine-5-9-megajam-preview/2852840"}
+      ],
+      "mensaje": {"grupo": "edumedia", "id": 12223},
+      "comprobado": "Releída la publicación oficial de Epic en su foro: fecha del 9 de noviembre, Unreal MCP, Unreal Assistant, Unreal Canvas con claves propias, funciones experimentales, «rough edges» y recomendación de usar una copia; la MegaJam es del 12 al 15 de noviembre. El enlace compartido era de una web de noticias de videojuegos y no se usa. Mensaje de Telegram confirmado.",
+      "ilustracion": null,
+      "ilustracion_alt": "«Agentea» errotuluko kontsola bat eta «3D editorea» errotuluko kubo bat, «MCP» errotuluko puntu bikoitzeko gezi batez lotuak; kuboaren azpian, lerro hautsi gorri bat eta «Esperimentala» errotulua."
+    }
+  ],
+  "breves": [
+    {
+      "texto": "Anthropicek Fable 5.2ri aholkatzen dio, ekintza baten ardura gorde dezan, «eskatu onespena fitxategiak ezabatu aurretik» idaztea «ez ezabatu inoiz fitxategirik» idatzi ordez, eta agindu zehatzarekin erantzutea «aurrera» soil baten ordez. [Egunkariak kontatutako gidari](pieza:2026-11-11/prompt-propiedad-codigo-fable) jarraitzen dio.",
+      "url": "https://platform.claude.com/docs/es/build-with-claude/prompt-engineering/prompting-claude-fable-5-2",
+      "grupo": "vce",
+      "mensaje": {"grupo": "vce", "id": 14865}
+    },
+    {
+      "texto": "Claude Whiteboards eta Sheets, beta fasean, eta Dashboards ordezkatzen duen Claude Data azaroaren 10ean iragarri ziren, eta ordainpeko plan guztietan daude eskuragarri.",
+      "url": "https://claude.com/resources/articles/sheets-whiteboards-data",
+      "grupo": "chatgpt",
+      "mensaje": {"grupo": "chatgpt", "id": 54285}
+    },
+    {
+      "texto": "[Eskola-txirrinta musikalaren](pieza:2026-11-06/timbre-musical-escolar) egileak bere proiektua GitHuben argitaratu du: instalazio-gida, klaustrorako eskuliburua eta kodea, kodearentzat AGPL lizentziarekin eta dokumentaziorako CC BY-SA 4.0rekin.",
+      "url": "https://github.com/elCordones/timbre-musical-escolar",
+      "grupo": "vce",
+      "mensaje": {"grupo": "vce", "id": 14964}
+    }
+  ],
+  "descartado": [
+    "Gemini 4 Hydrogen (anuncio en X compartido en ChatGPT-IA-edu): buscado de nuevo; no hay anuncio oficial de Google en su blog, solo un blog que lo da por nombre en clave sin confirmar y los anuncios oficiales de Gemini 4 Argon y Carbon; no se puede verificar.",
+    "Paquete de Educación y Competencias de la Comisión Europea (correo reenviado por un docente): buscado; solo hay cobertura secundaria (presentado el 5 de noviembre) y no se pudo abrir la página oficial de la Comisión; queda sin confirmar.",
+    "GPT-Live y generación de imágenes (charla de DevDay compartida en vídeo): no se abrió contenido contrastable más allá del título.",
+    "Aplicación de permutas y sustituciones de horarios de un docente: sin enlace a la aplicación en el mensaje, no se puede comprobar.",
+    "Currículo de alfabetización mediática e informacional de la UNESCO y su guía, e informe de la OfS: documentos de la Biblioteca digital, que tienen su propio artículo.",
+    "Reloj EDUmind, guía de instalación de Liga de Valores y otros avisos del día anterior o de administración del bot: administración o ya del día anterior.",
+    "Entrevista a Raül Torres en la Xarxa territorial de Cultura Digital: autopromoción sin contenido noticioso verificable.",
+    "Mensajes sobre Opus 5.5 «recortado», rumores: el propio hilo dice que puede ser falso."
+  ],
+  "repaso": [
+    "Relleu Obert: la interfaz solo está en catalán (los otros cuatro idiomas figuran como pendientes en la web); quitado «un archivo por material», que la web no confirma para 3MF.",
+    "OfS: lo de los complementos de Moodle se presenta como lo comentado en el grupo, no como hecho comprobado.",
+    "El comerç de les espècies: el nivel educativo se atribuye a su autor (la web no lo dice) y el reto se describe como lo hace la web.",
+    "Breve de Fable 5.2: «mantenga el control» sustituido por «conserve la responsabilidad sobre una acción», como dice la guía; breve de Claude Data: «disponibles en todos los planes de pago».",
+    "Descartado: anotado qué se buscó de Gemini 4 Hydrogen y del paquete europeo; ninguno es publicable.",
+    "Resto (Microsoft Classroom, Unreal, claves pieza: y enlaces) comprobado sin cambios."
+  ]
+}

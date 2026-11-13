@@ -1,0 +1,106 @@
+{
+ "fecha": "2026-11-12",
+ "piezas": [
+  {
+   "id": "unesco-ia-decides",
+   "seccion": "biblioteca",
+   "importancia": 2,
+   "grupo": "chatgpt",
+   "antetitulo": "Guía de la UNESCO",
+   "titular": "La UNESCO propone cinco unidades para que el alumnado de 13 a 15 años cuestione las respuestas de la IA y decida por sí mismo",
+   "entradilla": "«AI answers. You decide» es una guía complementaria del currículo de alfabetización mediática e informacional de la UNESCO, con debates y actividades para el aula que se pueden usar por separado.",
+   "cuerpo": [
+    "La UNESCO publicó en 2026 «[AI answers. You decide: A companion guide to the UNESCO media and information literacy curriculum](https://t.me/ChatGPTedu/21753/54308)», una guía escrita por Anne Leppäjärvi, educadora finlandesa de periodismo y de alfabetización mediática e informacional, y coordinada por Adeline Hulin y Olivier Van Bockstael, del equipo de la organización. La propia guía advierte de que las ideas expresadas son las de sus autores y no comprometen necesariamente a la UNESCO. Está en inglés, en acceso abierto con licencia CC-BY-SA 3.0 IGO.",
+    "Va dirigida al profesorado, no al alumnado, y no exige conocimientos técnicos. Completa el currículo «Media and Information Literate Citizens: Think Critically, Click Wisely!» (segunda edición, 2021) y el [marco de competencias en IA para docentes de la UNESCO](https://t.me/ChatGPTedu/21753/36905), del que la guía dice que se ocupa de la dimensión mediática e informacional. Las actividades están pensadas sobre todo para jóvenes de 13 a 15 años, con indicaciones para adaptarlas a edades menores o mayores. Cada sección puede darse como lección independiente, de modo que no hay que seguir la guía de principio a fin.",
+    "Su hilo conductor es el «Mapa de orientación», con tres capas: la persona, los sistemas de IA y las personas e instituciones que los construyen, financian y regulan. Junto a él propone cinco preguntas que se repiten en todas las unidades: quién lo hizo, qué evidencia lo respalda, qué sistema lo moldeó, a quién le conviene que lo crea o lo comparta y qué debo verificar antes de actuar. La primera unidad distingue cuatro cosas que hace la IA (predecir, clasificar, decidir sobre una persona y generar contenido) y trata los datos que se ceden al usar un servicio gratuito. La segunda sitúa la IA como productora y como curadora de contenidos, y propone un contraste de cuatro tipos de fuente según su grado de responsabilidad editorial.",
+    "La tercera unidad es la más cercana al uso cotidiano de chatbots. Explica que un modelo de lenguaje predice texto verosímil a partir de patrones, que la fluidez no equivale a exactitud y que una respuesta sintetizada puede ocultar las fuentes y los desacuerdos que sí muestra un buscador. Ofrece la cadena «confiar, verificar o cuestionar» según lo que esté en juego, tres preguntas de autocomprobación («¿estoy aprendiendo o solo obteniendo un resultado?») y un bucle de investigación de cuatro pasos. Su regla de trabajo es tratar una respuesta de IA como una pista, no como una fuente: la guía dice textualmente «treat an AI-generated answer as a lead rather than a source». También dedica un apartado a quienes buscan compañía en un chatbot y recomienda en ese caso una conversación privada y de apoyo.",
+    "Las unidades cuarta y quinta pasan al poder, los derechos y el futuro. Tratan la desigualdad que va más allá del acceso (idioma, cómputo, conocimiento representado en los datos, coste), la rendición de cuentas de los algoritmos, el coste energético de la IA con cifras de investigación de la UNESCO de 2025 que, según la propia guía, cambiarán, y tres escenarios de desarrollo: pocas empresas deciden, IA pública y muchos desarrolladores pequeños. El prólogo de Mariya Gabriel resume el enfoque con una frase: «AI should not simply happen to us». Uno de sus planteamientos es que no usar la IA es una decisión legítima, siempre que no signifique renunciar a entenderla.",
+    "Tiene límites que conviene conocer. Es un texto extenso, en inglés, escrito con perspectiva internacional, y los ejemplos y marcos legales que cita no siempre se corresponden con el contexto español. Varias actividades proponen que el alumnado use una herramienta de IA, y la guía recuerda que hay que revisar antes la política del centro y la edad mínima de cada servicio; cita la recomendación de la UNESCO de 2023 de fijar los 13 años para el uso autónomo. La cuestión de la edad ya la abordó el diario con [un informe para la UNESCO sobre la edad adecuada](pieza:2026-11-02/unesco-edad-ia). La guía indica además que la mayoría de las actividades pueden hacerse con el docente manejando la herramienta en una pantalla compartida.",
+    "Para un docente, lo más útil es empezar por las secciones «Discussion Guide» y «Try This» de la unidad que mejor encaje con su materia. Actividades como «Sort My Day» (clasificar los usos de IA de la jornada) o «Ask the Three Questions» (aplicar tres preguntas a una respuesta de un chatbot y comprobar una de sus fuentes) caben en una sola sesión."
+   ],
+   "documento": {
+    "titulo": "AI answers. You decide: A companion guide to the UNESCO media and information literacy curriculum",
+    "autoria": "Anne Leppäjärvi (autora); UNESCO",
+    "anyo": "2026",
+    "idioma": "inglés",
+    "licencia": "Creative Commons Atribución-CompartirIgual 3.0 IGO (CC-BY-SA 3.0 IGO)",
+    "url": ""
+   },
+   "fuentes": [
+    {
+     "titulo": "AI answers. You decide (documento en la biblioteca del grupo)",
+     "url": "https://t.me/ChatGPTedu/21753/54308"
+    },
+    {
+     "titulo": "AI competency framework for teachers (UNESCO), en la biblioteca",
+     "url": "https://t.me/ChatGPTedu/21753/36905"
+    }
+   ],
+   "mensaje": {
+    "grupo": "chatgpt",
+    "id": 54308
+   },
+   "comprobado": "Leí el texto completo del PDF tal como está en la biblioteca (portada y créditos, prólogo, cómo usar la guía, mapa de orientación, unidades 1 a 5, glosario y tabla de síntesis) y contrasté con él autoría, coordinación, licencia, edades, las cinco preguntas, la cadena confiar/verificar/cuestionar, las tres preguntas de autocomprobación, el bucle de cuatro pasos, los tres escenarios, el apartado de compañía, las actividades citadas y las dos citas literales. No pude leerlo en la fuente oficial: el DOI del PDF (https://doi.org/10.58338/JXYO3928) devolvió un 404 y la página de la UNESCO probada también; una búsqueda web no halló la ficha oficial; por eso documento.url queda vacío y el artículo enlaza al documento en la biblioteca. No se ha leído el currículo ni el marco de competencias que cita; solo se afirma de ellos lo que la guía dice. Existencia de las claves: el mensaje 36905 está en la lista de la biblioteca (marco para docentes) y pieza:2026-11-02/unesco-edad-ia está en publicado.txt y trata de la edad para usar IA en el aula.",
+   "ilustracion": "Un esquema de tres anillos concéntricos rotulados «Tú», «Sistemas de IA» y «Personas e instituciones», con una flecha circular que une los dos primeros y una pregunta fuera del anillo exterior: «¿Dónde puedo opinar?». Debajo, cinco pequeñas casillas con las cinco preguntas de la guía.",
+   "ilustracion_alt": "Esquema de tres círculos concéntricos: en el centro «Tú», alrededor «Sistemas de IA» y en el anillo exterior «Personas e instituciones»; dos flechas curvas unen los dos primeros y una flecha roja señala desde fuera la pregunta «¿Dónde puedo opinar?». Debajo, el rótulo «Cinco preguntas» y cinco casillas, una por cada pregunta de la guía."
+  },
+  {
+   "id": "ofs-ia-educacion-superior",
+   "seccion": "biblioteca",
+   "importancia": 2,
+   "grupo": "chatgpt",
+   "antetitulo": "Guía y informe del regulador",
+   "titular": "El regulador universitario inglés aclara qué prácticas con IA encajan en sus condiciones de calidad y publica el estudio en que se apoya",
+   "entradilla": "La Office for Students y Advance HE reúnen un informe de 48 páginas, basado en más de 300 estudiantes y docentes, y una guía que traduce sus hallazgos a las condiciones B1, B2 y B4 de registro.",
+   "cuerpo": [
+    "La Office for Students (OfS) es el regulador de la educación superior en Inglaterra; Advance HE es una organización de miembros que apoya la mejora de la enseñanza universitaria en más de 30 países. El 11 de noviembre de 2026 publicaron juntas [Artificial intelligence in higher education](https://www.officeforstudents.org.uk/for-providers/quality-and-standards/artificial-intelligence-in-higher-education/), que consta de dos partes: un informe de investigación, [Making AI work for students](https://www.officeforstudents.org.uk/publications/making-ai-work-for-students-reflections-on-institutional-practice/), y una guía web de [prácticas institucionales eficaces](https://www.officeforstudents.org.uk/for-providers/quality-and-standards/artificial-intelligence-in-higher-education/effective-institutional-practice/). Van dirigidos sobre todo a universidades y colegios ingleses. El diario ya contó [el anuncio y la discusión que abrió](pieza:2026-11-12/ofs-evaluacion-sin-ia); este artículo se centra en lo que dicen los documentos.",
+    "El informe se basa en la consulta realizada entre junio y septiembre de 2026: 16 encuentros, 64 respuestas a preguntas abiertas y 22 entrevistas, con la voz de 244 miembros del personal y 91 estudiantes de al menos 127 instituciones. Sus autores advierten de que los participantes se apuntaron voluntariamente, por lo que pueden no representar a toda la población, y de que las conclusiones son de la OfS y Advance HE, no requisitos regulatorios.",
+    "Citando encuestas del Higher Education Policy Institute (HEPI), el informe señala que el 94 % del alumnado declaraba a finales de 2025 haber usado IA generativa en tareas evaluables, frente al 53 % de finales de 2023. Recoge usos valiosos, sobre todo para estudiantes con discapacidad o cuya primera lengua no es el inglés, y un riesgo central: descargar en la IA la lectura, la resolución de problemas o la redacción puede eludir el esfuerzo productivo (productive struggle) necesario para aprender.",
+    "El capítulo de evaluación es el más contundente. Describe que muchas tareas no supervisadas pueden completarse con buena nota con poca participación del estudiante, y que los semáforos (rojo, ámbar, verde) con que muchas instituciones clasifican los usos permitidos son difíciles de hacer cumplir si no cambia el diseño de las pruebas. Sobre los detectores, concluye que su resultado debe ser, como mucho, una prueba más; la guía pide en los procesos por conducta irregular un conjunto equilibrado de evidencias, sin «placing disproportionate weight on the outputs of AI detection tools». Defiende las evaluaciones seguras (exámenes presenciales, presentaciones, exámenes orales, tareas prácticas) y reconoce su posible menor autenticidad. Añade: «If it becomes possible to complete an assessment using AI without the knowledge and skills being tested, the assessment should be replaced.» Como ejemplo, la Universidad de Bath pasó en septiembre de 2026 a dos «carriles»: uno cerrado, sin acceso a la IA, y otro abierto, diseñado dando por hecho que se usará.",
+    "Sobre alfabetización y estrategia, el informe constata que la formación del alumnado es desigual, que la del profesorado suele ser optativa y con poca participación, y que en muchas instituciones los enfoques nacen de la iniciativa de docentes concretos. La Universidad de Kent, como estudio de caso, ofrece una plataforma ChatGPT Edu con formación previa obligatoria en alfabetización, uso responsable y protección de datos, aunque usarla es opcional.",
+    "La guía es la parte regulatoria. Ofrece ejemplos de prácticas que probablemente cumplen las condiciones B1 (experiencia académica), B2 (apoyo) y B4 (evaluación): revisar la calidad de los materiales y la retroalimentación elaborados con IA, informar con claridad al alumnado de qué usos se permiten y mitigar las diferencias de acceso. Aclara que no introducirá nuevas normas. En el futuro sistema de calidad que propone, espera que las instituciones demuestren que sus evaluaciones resisten a la IA, con posible consecuencia para su calificación si hay dudas.",
+    "Entre los documentos de la biblioteca, se relaciona con [el informe del comité del MIT](pieza:2026-11-03/mit-comite-ia), que también pide rediseñar la evaluación; aquí el origen es un regulador y el foco, el cumplimiento normativo. Límites: es un estudio cualitativo y autoseleccionado, centrado en Inglaterra. Para un docente de cualquier nivel, lo más útil es el capítulo 2, con las opciones de rediseño, y los apartados 53 a 55 sobre políticas de uso. Para empezar, basta la guía web, que se lee en pocos minutos."
+   ],
+   "documento": {
+    "titulo": "Artificial intelligence in higher education (guía) y Making AI work for students: reflections on institutional practice (informe, OfS 2026.56)",
+    "autoria": "Office for Students (con Advance HE, en el informe)",
+    "anyo": "2026",
+    "idioma": "inglés",
+    "licencia": "Open Government Licence v3.0",
+    "url": "https://www.officeforstudents.org.uk/for-providers/quality-and-standards/artificial-intelligence-in-higher-education/"
+   },
+   "fuentes": [
+    {
+     "titulo": "Artificial intelligence in higher education (OfS)",
+     "url": "https://www.officeforstudents.org.uk/for-providers/quality-and-standards/artificial-intelligence-in-higher-education/"
+    },
+    {
+     "titulo": "Making AI work for students: reflections on institutional practice",
+     "url": "https://www.officeforstudents.org.uk/publications/making-ai-work-for-students-reflections-on-institutional-practice/"
+    },
+    {
+     "titulo": "Effective institutional practice in AI (OfS)",
+     "url": "https://www.officeforstudents.org.uk/for-providers/quality-and-standards/artificial-intelligence-in-higher-education/effective-institutional-practice/"
+    }
+   ],
+   "mensaje": {
+    "grupo": "chatgpt",
+    "id": 54310
+   },
+   "comprobado": "Revisor: contrastado con el texto completo del PDF de la entrada (guía y informe; cifras, citas, casos de Bath y Kent, apartados 53-55, B1/B2/B4). Abiertas en el sitio de la OfS la guía (11 de noviembre de 2026, Advance HE), la página del informe (OfS 2026.56, más de 300 participantes) y la guía de prácticas eficaces (B1, B2, B4, cita sobre detectores, «lower award»): coinciden. La web de la guía no declara licencia (© todos los derechos); la OGL v3.0 es la que consta en el PDF de la biblioteca. No abierto el PDF original ni los estudios del HEPI (94 % y 53 % son cifras del informe). La pieza ofs-evaluacion-sin-ia solo leyó la página de presentación y una noticia, no el documento: no cuenta como ya contado.",
+   "ilustracion_alt": "Esquema de izquierda a derecha: un documento rotulado «Informe» lleva a un libro abierto rotulado «Guía B1 B2 B4», que se bifurca en dos carriles de evaluación: un candado cerrado rotulado «Cerrado» y un candado abierto rotulado «Abierto».",
+   "ilustracion": "Esquema de tres capas: arriba, el informe con sus capítulos (enseñanza, evaluación, alfabetización, estrategia); en medio, la guía con las condiciones B1, B2 y B4; abajo, dos carriles de evaluación, uno cerrado sin IA y otro abierto con IA permitida.",
+   "repaso": [
+    "Cuerpo recortado de ~900 a ~650 palabras (el límite es 700): quitados detalles de la consulta, los costes de las evaluaciones seguras, la brecha de pago y las adaptaciones por discapacidad.",
+    "«esfuerzo productivo» ya no va entre comillas: la fuente dice «productive struggle» y era una traducción, no cita literal.",
+    "Los semáforos: la fuente no dice que sean «imposibles de verificar», sino difíciles de hacer cumplir; reformulado.",
+    "«Iniciativa de docentes concretos»: de «la mayoría» a «muchas instituciones» (el informe dice «at many institutions»).",
+    "Citas literales, cifras, autoría, fecha, enlaces oficiales, enlaces pieza:2026-11-12/ofs-evaluacion-sin-ia y pieza:2026-11-03/mit-comite-ia (ambos en publicado.txt y relacionados) y ausencia de quien subió el documento: correctos."
+   ]
+  }
+ ],
+ "ya_contado": [],
+ "descartado": [
+  "mensaje 54292: es la ficha del mismo documento que el mensaje 54310 (Office for Students), que tiene artículo propio."
+ ]
+}

@@ -1,0 +1,31 @@
+{
+  "fecha": "2026-11-12",
+  "elegida": {
+    "n": 3,
+    "pieza": "ofs-evaluacion-sin-ia",
+    "idea": "Chalk tests the detector that measures the regularity of answers on her own comments, and so many years of “Good, but develop further” flag her as possible AI.",
+    "guion": {"vinetas": [
+      {"cartela": "In the head's office, testing an AI detector.",
+       "escenario": "despacho",
+       "objeto": "papeles",
+       "tiza": {"expresion": "orgulloso", "postura": "senalar", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "neutral", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+       "bocadillos": [
+         {"quien": "algoritmo", "texto": "It detects AI by the speed and regularity of the answers.", "tipo": "habla"},
+         {"quien": "tiza", "texto": "Try it on my comments on the essays.", "tipo": "habla"}]},
+      {"escenario": "despacho",
+       "objeto": "papeles",
+       "tiza": {"expresion": "neutral", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "cargando", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+       "bocadillos": [
+         {"quien": "algoritmo", "texto": "Analysing your comments from twenty years...", "tipo": "habla"}]},
+      {"escenario": "despacho",
+       "objeto": "papeles",
+       "tiza": {"expresion": "avergonzado", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "contento", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+       "bocadillos": [
+         {"quien": "algoritmo", "texto": "“Good, but develop further”, four thousand times. Possible AI.", "tipo": "habla"}]}
+    ]}
+  },
+  "traduccion": "automatic AI translation"
+}

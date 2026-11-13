@@ -1,0 +1,83 @@
+{
+  "fecha": "2026-11-12",
+  "piezas": [
+    {
+      "id": "reloj-edumind",
+      "seccion": "vibecoding",
+      "repositorio": "dia",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Berria biltegian",
+      "titular": "Reloj EDUmind-ek gelarako, taldeetarako eta ikasketa autonomorako tenporizadoreak biltzen ditu",
+      "entradilla": "Luisek instalatzeko modukoa den web-aplikazio bat sortu du, hiru tenporizadore-moduduna, Haur Hezkuntzatik Lanbide Heziketara bitarteko ikasgelan denbora kudeatzeko pentsatua.",
+      "cuerpo": [
+        "Reloj EDUmind instalatzeko modukoa den web-aplikazio bat (PWA) da, irakasle batek ikasgelan behar ohi dituen tenporizadoreak biltzen dituena. Fitxaren arabera, konexiorik, konturik eta jarraipenik gabe funtzionatzen du: datuak gailuan bertan gordetzen dira, eta .json fitxategi gisa esportatu edo inportatu daitezke. Luisek sortu du, [EDUmind](pieza:2026-11-06/edumind-miclase-sincronizacion) ekimenaren barruan; egunkariak ekimen horren beste baliabide batzuk kontatu ditu jada, hala nola [galegoz eta gaztelaniaz ahots sintetikoekin egindako diktatuak](pieza:2026-10-29/dictados-voz-gallego).",
+        "Aplikazioa hiru modutan antolatzen da. Ikasgela moduak atzerako kontaketa eskaintzen du, hustuz doan disko gisa, zenbakiekin edo semaforo gisa ager daitekeena; horrez gain, itzuliak dituen kronometro bat eta Tabata, zirkuitu edo geltoki motako tarteak, edo neurrira egindakoak. Taldeak moduak 2tik 8ra bitarteko tenporizadore aldi berean proiektatzeko aukera ematen du; talde bakoitzak forma, letra eta kolorea ditu, kolorearen mende bakarrik ez egoteko, eta modu librean edo geltokika, biraketa automatikoarekin, funtziona dezake. Autokudeaketa moduak faseka antolatutako planak proposatzen ditu, hala nola etaparen araberako pomodoroa, etxeko lanak edo gai bat aztertzea, edo plan propioak, faseen artean itxaronaldi batekin, «Zer moduz joan zaizu?» galderarekin ixten dena eta erregistro lokal batekin.",
+        "Azken horrek, egilearen esanetan, ikasleek beren ikasketa antolatzen ikas dezaten balio du, eta ez irakasleek denbora kontrolatzeko soilik. Proiektuaren dokumentazioaren arabera, etaparen araberako estilo desberdinak daude: bat lagunkoiagoa Haur eta Lehen Hezkuntzarako, irakurgarritasunerako pentsatutako tipografiarekin eta Haur Hezkuntzan zenbakien ordez hitzekin, eta bestea serioagoa Derrigorrezko Bigarren Hezkuntzarako, Batxilergorako eta Lanbide Heziketarako. Dokumentazio horren arabera, estilo guztiek modu iluna, kontraste altua eta mugimendu murriztua dituzte, eta interfazea galegoz, gaztelaniaz eta ingelesez dago.",
+        "Dokumentazioaren arabera, web-orria nabigatzailean irekita erabiltzen da, erregistratu gabe, eta sarerik gabe lan egiteko instalatu daiteke. Kodea irekia da, AGPL v3 lizentziarekin fitxaren arabera (biltegiak EUPL-1.2 aukera ere adierazten du), eta GitHuben dago, egokitu nahi duenarentzat. Irakasle batentzat, proba batean atzerako kontaketa proiektatzeko, lankidetza-lan batean taldeak geltokika biratzeko edo ikasleei etenaldiekin ikasteko plan gidatu bat emateko balio dezake."
+      ],
+      "recursos": [
+        {
+          "id": "reloj-edumind",
+          "titulo": "Reloj EDUmind",
+          "autoria": "Luis",
+          "url": "https://reloj.edumind.es",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://github.com/edumind-es/reloj.git",
+          "licencia": "AGPL v3",
+          "captura": "",
+          "captura_alt": "",
+          "texto": []
+        }
+      ],
+      "fuentes": [
+        {"titulo": "Reloj EDUmind (gaztelaniaz)", "url": "https://reloj.edumind.es"},
+        {"titulo": "Reloj EDUmind-en kodea GitHuben (ingelesez)", "url": "https://github.com/edumind-es/reloj"},
+        {"titulo": "Aurkezpena Vibe Coding Educativon (gaztelaniaz)", "url": "https://t.me/vceduca/7674/14863"}
+      ],
+      "comprobado": "La captura de la entrada muestra la página de GitHub del repositorio (no se usa como captura); su README, visto en un navegador real, da la web reloj.edumind.es y describe modos, estilos, idiomas, licencia doble y funcionamiento local. WebFetch de reloj.edumind.es solo devolvió una cabecera de navegación (aplicación con JavaScript), así que no se pudo ver la aplicación funcionando; lo que se cuenta va atribuido a la ficha, al README y al mensaje del autor. Claves de pieza: las tres existen en publicado.txt y tratan de EDUmind. El titular ya no afirma «sin conexión ni cuentas»."
+    },
+    {
+      "id": "prelacion-admision-conservatorios-cv",
+      "seccion": "vibecoding",
+      "repositorio": "dia",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Berria biltegian",
+      "titular": "Tresna batek Valentziako kontserbatorioetako onarpenean lehentasun-hurrenkera aplikatzen laguntzen du",
+      "entradilla": "José Luis Miralles Bonok eskemak, adin-kalkulagailua eta Excel ereduak dituen web-orri bat sortu du, Valentziako Erkidegoko musika- eta dantza-ikastetxeetan 8/2026 Agindua aplikatzeko.",
+      "cuerpo": [
+        "«Prelación — Admisión Conservatorios CV» José Luis Miralles Bonok Clauderen laguntzarekin sortutako web-orri bat da, Valentziako Erkidegoko Musika eta Dantzako oinarrizko eta lanbide-irakaskuntzetan onarpeneko lehentasun-hurrenkera ulertzeko eta aplikatzeko. Hezkuntza, Kultura eta Unibertsitate Kontseilaritzaren apirilaren 24ko [8/2026 Aginduan](https://jlmirallesb.github.io/legis_cpmdem/es/ley/orden-8-2026/) oinarritzen da, eta araurako esteka eskaintzen du DOGVn eta aginduaren kontsultagarri den bertsio batean. Egileak badu biltegian kontserbatorioetarako beste tresna bat, [Tribunator](pieza:2026-11-10/tribunator), sarbide-probetako epaimahaiak eta ordutegiak antolatzen dituena.",
+        "Orria nabigatzailean irekitzen da, konturik gabe, eta gaztelaniaz eta valentziaz dago, hizkuntza aldatzeko botoi batekin eta modu ilunerako beste batekin. Fitxa-barra batek hainbat ikuspegitara ematen du sarbidea: Esquema, Timeline, Guía paso a paso, Edad, Reorientación, Definiciones eta Modelos. Irekitzean, hasierako ikuspegiak lau bloke zabalgarri erakusten ditu: deialdi arruntaren lehen esleipena eta bigarren esleipena, ezohiko deialdia eta ikasturtean zeharreko hutsik geratutako plazak, guztiak zabaltzeko edo tolesteko botoiekin.",
+        "Fitxaren arabera, urratsez urratseko gidak fluxu-diagrama baten moduan funtzionatzen du, galderekin, eta amaieran dagokion mailari eta ordenatze-irizpideari buruzko adierazpena ematen du; horrez gain, adin-kalkulagailu bat dago, ikasturteen eta espezialitateen arteko berrorientazio-kontsulta bat, eta arauaren terminoen definizioak. Goiburuko esteka nabarmen batetik, zuzendaritza-taldeentzako Excel ereduak deskargatzen dira: eskaeren erregistroa, plaza hutsen argitaratzailea, Oinarrizkoaren esleipen-egintzarako orri bat eta itxaron-zerrendarako beste bat.",
+        "Fitxaren arabera, onarpenak kudeatzen dituzten ikastetxeetako irakasleentzat eta administrazio-langileentzat pentsatuta dago, ez ikasleentzat. Orriak berak ohartarazten du orientagarria den tresna bat dela eta beti indarrean dagoen arau ofiziala kontsultatu behar dela. Kodeak AGPL v3 lizentzia du eta edukiek CC BY-SA 4.0, eta iturburu-kodea GitHuben dago. Zuzendaritza-taldeentzat eta idazkaritzentzat, denbora aurrezteko balio dezake eskaeren ordenatze-kasuak ebaztean, betiere aginduarekin alderatuta."
+      ],
+      "recursos": [
+        {
+          "id": "prelacion-admision-conservatorios-cv",
+          "titulo": "Prelación — Admisión Conservatorios CV",
+          "autoria": "José Luis Miralles Bono",
+          "url": "https://jlmirallesb.github.io/prelacion/",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://jlmirallesb.github.io/prelacion/",
+          "licencia": "AGPL v3 (kodea) · CC BY-SA 4.0 (edukiak)",
+          "captura": "2026-11-12-prelacion-admision-conservatorios-cv.jpg",
+          "captura_alt": "«Prelación de acceso a conservatorio» izenburua duen orria, fitxa-barra batekin (Esquema, Timeline, Guía paso a paso, Edad, Reorientación, Definiciones, Modelos) eta esleipenen lau bloke zabalgarrirekin.",
+          "texto": []
+        }
+      ],
+      "fuentes": [
+        {"titulo": "Prelación — Admisión Conservatorios CV (gaztelaniaz)", "url": "https://jlmirallesb.github.io/prelacion/"},
+        {"titulo": "8/2026 Agindua (bertsio kontsultagarria, Legis CPMDEM) (gaztelaniaz)", "url": "https://jlmirallesb.github.io/legis_cpmdem/es/ley/orden-8-2026/"},
+        {"titulo": "Prelación-en iturburu-kodea (ingelesez)", "url": "https://github.com/JLMirallesB/prelacion"}
+      ],
+      "comprobado": "Captura vista con Read: cabecera, selector «Valencià», modo oscuro, pestañas y cuatro bloques desplegables, aviso de herramienta orientativa, autoría y licencias. Texto visible y WebFetch confirman los enlaces a la orden y los cuatro Excel, sin cuenta. No se abrieron las pestañas (Guía, Edad, Reorientación), por lo que su funcionamiento y el público al que se dirige se atribuyen a la ficha. La entrada no trae mensaje de presentación. Clave pieza:2026-11-10/tribunator en publicado.txt, mismo autor y tema afín."
+    }
+  ],
+  "descartado": [],
+  "repaso": [
+    "Reloj EDUmind: quitado del titular «sin conexión ni cuentas», que solo consta en la ficha y no se pudo ver en la aplicación",
+    "Reloj EDUmind: atribuido a la documentación lo de estilos con modo oscuro/idiomas y la forma de uso (web, sin registro, instalable)",
+    "Prelación: enlazada en su primera mención la Orden 8/2026 y añadida a fuentes",
+    "Prelación: el público al que se destina se atribuye a la ficha",
+    "Autorías, licencias, fichas, captura y claves pieza: correctas"
+  ]
+}

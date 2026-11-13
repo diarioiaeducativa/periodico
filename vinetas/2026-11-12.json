@@ -1,0 +1,39 @@
+{
+  "fecha": "2026-11-12",
+  "elegida": {
+    "n": 3,
+    "pieza": "ofs-evaluacion-sin-ia",
+    "idea": "Tiza prueba con sus propios comentarios el detector que mide la regularidad de las respuestas, y tantos años de «Bien, pero desarrolla más» la delatan como posible IA.",
+    "guion": {"vinetas": [
+      {"cartela": "En dirección, probando un detector de IA.",
+       "escenario": "despacho",
+       "objeto": "papeles",
+       "tiza": {"expresion": "orgulloso", "postura": "senalar", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "neutral", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+       "bocadillos": [
+         {"quien": "algoritmo", "texto": "Detecta la IA por la velocidad y la regularidad de las respuestas.", "tipo": "habla"},
+         {"quien": "tiza", "texto": "Pruébalo con mis comentarios a las redacciones.", "tipo": "habla"}]},
+      {"escenario": "despacho",
+       "objeto": "papeles",
+       "tiza": {"expresion": "neutral", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "cargando", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+       "bocadillos": [
+         {"quien": "algoritmo", "texto": "Analizando tus comentarios de veinte cursos...", "tipo": "habla"}]},
+      {"escenario": "despacho",
+       "objeto": "papeles",
+       "tiza": {"expresion": "avergonzado", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "contento", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+       "bocadillos": [
+         {"quien": "algoritmo", "texto": "«Bien, pero desarrolla más», cuatro mil veces. Posible IA.", "tipo": "habla"}]}
+    ]}
+  },
+  "motivo": "La única con un remate que sorprende y que cualquier docente reconoce: el detector que busca regularidad acaba señalando la letanía de corrección de toda la vida. La ironía apunta al detector (que confunde lo repetitivo con lo artificial, justo lo que discute la noticia) y no culpabiliza a nadie; se entiende sin haber leído la pieza. No inventa datos: lo de la velocidad y la regularidad sale tal cual del debate que recoge la noticia. Las demás se quedan cortas: la 1 tiene una buena frase final pero es casi un resumen de la noticia con retintín; la 2 depende de un doble sentido de «vista previa» que roza el juego de palabras fácil y se entiende tarde; la 4 es un juego de palabras con las aristas y la punta gastada de Tiza; la 5 tiene una idea graciosa (la aprobación convertida en burocracia) pero el planteamiento es técnico y el remate llega explicado. Gracia de 7,5: no hace falta afinarla a fondo.",
+  "retoques": "Escenario: se mantiene el despacho, libre en los tres números anteriores. Caras: Tiza pasaba de «pensativo» (de las más repetidas) a «orgulloso» en la primera viñeta, segura de que sus comentarios son humanos, lo que hace más sonora la caída a «avergonzado»; Algoritmo deja «sorprendido» (repetida y poco propia de quien da el veredicto con aplomo) por «contento», más fiel a su seguridad servicial. Objeto: los papeles (los comentarios analizados) ya desde la primera viñeta, para que el dibujo sostenga la escena; no repite el móvil del número anterior. Texto: «de los últimos veinte cursos» queda en «de veinte cursos». Rótulo revisado: sitúa dónde están y de qué va sin adelantar el chiste, 41 caracteres. Ningún bocadillo pasa de 90 caracteres (el más largo, 66).",
+  "puntuaciones": [
+    {"n": 1, "pieza": "microsoft-classroom", "gracia": 6, "claridad": 8, "remate": 6, "prohibiciones": "respeta", "nota": "Frase final con chispa («un sitio más donde tenerlo todo en un solo sitio»), pero las dos primeras viñetas recitan la nota de prensa y la cara avergonzada de Algoritmo no se justifica."},
+    {"n": 2, "pieza": "microsoft-classroom", "gracia": 5, "claridad": 5, "remate": 5, "prohibiciones": "respeta", "nota": "El remate depende del doble sentido de «vista previa», cerca del juego de palabras fácil, y cuesta ver que se refiere al montón de exámenes. Además, la vista previa es para los administradores del centro, no para que Algoritmo apunte a Tiza."},
+    {"n": 3, "pieza": "ofs-evaluacion-sin-ia", "gracia": 7.5, "claridad": 8, "remate": 8, "prohibiciones": "respeta", "nota": "Remate sorprendente y reconocible; la ironía va al detector. Elegida."},
+    {"n": 4, "pieza": "unreal-engine-5-9-ia", "gracia": 4, "claridad": 6, "remate": 4, "prohibiciones": "respeta, en el límite", "nota": "El remate es un juego de palabras con las aristas y la punta gastada de Tiza; «te monta el nivel 3D entero» exagera lo que dice la noticia."},
+    {"n": 5, "pieza": "breve-1", "gracia": 6, "claridad": 5, "remate": 6, "prohibiciones": "respeta", "nota": "La aprobación convertida en burocracia de claustro tiene gracia, pero el arranque es técnico, exige conocer la guía y el remate llega largo y explicado."}
+  ]
+}

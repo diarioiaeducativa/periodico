@@ -1,0 +1,31 @@
+{
+  "fecha": "2026-11-12",
+  "elegida": {
+    "n": 3,
+    "pieza": "ofs-evaluacion-sin-ia",
+    "idea": "Guix prova amb els seus propis comentaris el detector que mesura la regularitat de les respostes, i tants anys de «Bé, però desenvolupa més» la delaten com a possible IA.",
+    "guion": {"vinetas": [
+      {"cartela": "A direcció, provant un detector d'IA.",
+       "escenario": "despacho",
+       "objeto": "papeles",
+       "tiza": {"expresion": "orgulloso", "postura": "senalar", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "neutral", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+       "bocadillos": [
+         {"quien": "algoritmo", "texto": "Detecta la IA per la velocitat i la regularitat de les respostes.", "tipo": "habla"},
+         {"quien": "tiza", "texto": "Prova-ho amb els meus comentaris a les redaccions.", "tipo": "habla"}]},
+      {"escenario": "despacho",
+       "objeto": "papeles",
+       "tiza": {"expresion": "neutral", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "cargando", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+       "bocadillos": [
+         {"quien": "algoritmo", "texto": "Analitzant els teus comentaris de vint cursos...", "tipo": "habla"}]},
+      {"escenario": "despacho",
+       "objeto": "papeles",
+       "tiza": {"expresion": "avergonzado", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "contento", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+       "bocadillos": [
+         {"quien": "algoritmo", "texto": "«Bé, però desenvolupa més», quatre mil vegades. Possible IA.", "tipo": "habla"}]}
+    ]}
+  },
+  "traduccion": "automàtica amb IA"
+}

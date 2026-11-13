@@ -1,0 +1,169 @@
+{
+  "fecha": "2026-11-12",
+  "hay_edicion": true,
+  "motivo": "Día normal: ChatGPT-IA-edu con Microsoft Classroom y el aviso del regulador inglés sobre evaluación; Vibe Coding Educativo con dos recursos de aula y un debate sobre interfaces; EduMedia-IAG, flojo, con la vista previa de Unreal Engine 5.9.",
+  "piezas": [
+    {
+      "id": "microsoft-classroom",
+      "seccion": "novedades",
+      "importancia": 1,
+      "grupo": "chatgpt",
+      "antetitulo": "Microsoft Education",
+      "titular": "Microsoft presenta Classroom, un espacio propio para centrar el trabajo de clase en Microsoft 365",
+      "entradilla": "Microsoft Classroom reúne tareas, calificaciones y herramientas de IA en una sola pantalla para primaria, secundaria y educación superior. Llegará en 2027 sin coste adicional para centros con ciertos planes.",
+      "cuerpo": [
+        "Microsoft ha presentado en su [blog para educación](https://techcommunity.microsoft.com/blog/educationblog/introducing-microsoft-classroom-a-new-experience-built-for-teaching-and-learning/4571185) Microsoft Classroom, una experiencia independiente de Microsoft 365 Education para enseñar y aprender. La empresa la describe como una «puerta de entrada» a herramientas que el profesorado ya conoce, y aclara que no sustituye a Teams para Educación.",
+        "Reúne en un mismo lugar las tareas, el trabajo de clase, las calificaciones, el cuaderno de clase de OneNote, los Learning Accelerators y las herramientas de análisis. El profesorado ve al entrar el trabajo pendiente de corregir y lo que vence esa semana; el alumnado, lo próximo, lo atrasado y lo devuelto con comentarios. Cada clase tiene además un inicio compartido que el docente puede personalizar. Se usará en la web y habrá aplicaciones para móvil y ordenador.",
+        "Incluye funciones de IA: Teach, el espacio de planificación con IA para docentes, un agente de estudio y aprendizaje que se puede usar dentro de las tareas, y actividades de aprendizaje para el alumnado.",
+        "Según Microsoft, se incluirá sin coste adicional en los planes A1, A3, A5 y A7 a partir de 2027, y en A2 y superiores en los futuros productos desde enero de 2028. Está prevista una vista previa a principios de 2027, a la que pueden apuntarse los administradores de los centros."
+      ],
+      "fuentes": [
+        {"titulo": "Introducing Microsoft Classroom: a new experience built for teaching and learning (Microsoft Community Hub)", "url": "https://techcommunity.microsoft.com/blog/educationblog/introducing-microsoft-classroom-a-new-experience-built-for-teaching-and-learning/4571185"}
+      ],
+      "mensaje": {"grupo": "chatgpt", "id": 54284},
+      "comprobado": "Releído el anuncio oficial en el blog de educación de Microsoft: experiencia independiente, no sustituye a Teams, funciones, funciones de IA (Teach, agente de estudio y aprendizaje, actividades), web y apps, planes (A1, A3, A5, A7 en 2027; A2 y superiores en futuros productos desde enero de 2028) y vista previa a principios de 2027. Mensaje de Telegram confirmado. No contradice nada de publicado.txt.",
+      "ilustracion": "Esquema de un panel único del que salen cuatro flechas hacia tareas, calificaciones, cuaderno de clase y herramientas de IA, con una línea de tiempo que marca 2027 (vista previa y planes A1-A7) y enero de 2028 (planes A2 y superiores).",
+      "ilustracion_alt": "Un panel rotulado «Classroom» del que salen cuatro flechas hacia cuatro recuadros rotulados «Tareas», «Notas», «Cuaderno» e «IA»."
+    },
+    {
+      "id": "ofs-evaluacion-sin-ia",
+      "seccion": "debates",
+      "importancia": 2,
+      "grupo": "chatgpt",
+      "antetitulo": "Evaluación",
+      "titular": "El regulador universitario inglés pide más evaluación sin IA y reabre la discusión sobre cómo comprobar la autoría",
+      "entradilla": "La Office for Students recomienda formatos seguros como exámenes presenciales u orales. En el grupo se debatió qué se puede y qué no se puede detectar.",
+      "cuerpo": [
+        "La Office for Students (OfS), el regulador de la educación superior en Inglaterra, publicó el 11 de noviembre su [página sobre inteligencia artificial en la educación superior](https://www.officeforstudents.org.uk/for-providers/quality-and-standards/artificial-intelligence-in-higher-education/), con un trabajo hecho junto a Advance HE. Según la [cobertura de Unite.AI](https://www.unite.ai/office-for-students-urges-ai-free-assessment-to-safeguard-degrees/), advierte de que muchas tareas sin supervisión pueden hacerse hoy con IA con un nivel alto y poca implicación del estudiante, y pide que las pruebas midan lo que el alumnado sabe y sabe hacer, a menudo con formatos seguros y sin IA: exámenes presenciales, presentaciones, exámenes orales y tareas prácticas. El informe reconoce que esos formatos tienen costes y pueden perjudicar a parte del alumnado con discapacidad, y no propone sacar la IA de la educación.",
+        "La noticia llevó al grupo a una discusión de fondo. Una postura sostiene que los cursos en línea de corta duración han perdido sentido, porque un asistente con extensión de navegador puede completarlos solo. Otra recuerda que, según se comentó en el grupo, hay complementos para Moodle que intentan detectar IA por la velocidad o la regularidad de las respuestas, pero que también existen extensiones que escriben como una persona y instrucciones que hacen indetectable el texto. De ahí se llega a dos conclusiones que conviven: que acusar de usar IA no es el camino, y que, en un entorno electrónico, cualquier parámetro de lo humano puede imitarse si una persona puede hacerlo.",
+        "Según la propia cobertura, el informe tampoco ve fiables los detectores: la revisión humana no distingue bien el texto de IA y la salida de un detector debería ser, como mucho, una prueba más, sin que la sospecha baje una nota. El diario ya contó el debate sobre [los detectores y la «caza de brujas»](pieza:2026-11-01/detectores-caza-brujas) y cómo [un porcentaje de detector no prueba que haya copiado](pieza:2026-11-08/detector-ia-no-es-prueba)."
+      ],
+      "fuentes": [
+        {"titulo": "Artificial intelligence in higher education (Office for Students)", "url": "https://www.officeforstudents.org.uk/for-providers/quality-and-standards/artificial-intelligence-in-higher-education/"},
+        {"titulo": "Office for Students Urges AI-Free Assessment to Safeguard Degrees (Unite.AI)", "url": "https://www.unite.ai/office-for-students-urges-ai-free-assessment-to-safeguard-degrees/"}
+      ],
+      "mensaje": {"grupo": "chatgpt", "id": 54288},
+      "comprobado": "Abierta la página de la OfS (proyecto con Advance HE, fecha 11 de noviembre ligada a la nota de prensa; no dice nada concreto sobre evaluación ni detectores) y el artículo de Unite.AI, de donde salen formatos seguros, costes, discapacidad, no retirar la IA y lo de los detectores, atribuidos a él. Las posturas sobre cursos en línea, complementos de Moodle y extensiones salen del hilo y no se han verificado en otra fuente (ahora dicho en el texto). Claves pieza: de publicado.txt, las dos existen y tratan de detectores. Mensaje de Telegram confirmado.",
+      "ilustracion": null,
+      "ilustracion_alt": "Esquema en dos mitades: a la izquierda, bajo el rótulo «Formatos seguros», tres iconos rotulados «Oral» (un micrófono), «Presentación» (una pizarra) y «Práctica» (un lápiz); a la derecha, una lupa tachada en rojo con el rótulo «Detector»."
+    },
+    {
+      "id": "relleu-obert",
+      "seccion": "vibecoding",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Recurso de la comunidad",
+      "titular": "Relleu Obert convierte un trozo de mapa real en una maqueta 3D imprimible para el aula",
+      "entradilla": "Un proyecto gratuito y de código abierto permite elegir un lugar, generar su relieve en el navegador y exportarlo para imprimirlo en 3D.",
+      "cuerpo": [
+        "[Relleu Obert](https://relleu.ortogra.fi/), con el lema «Geografia que pots tocar», permite generar maquetas en 3D de lugares reales, verlas en el navegador e imprimirlas. Según su web, es obra de Aarón Fortuño, es gratuito y de código abierto con licencia MIT, y de momento la interfaz está disponible solo en catalán, con otros cuatro idiomas pendientes.",
+        "Se parte de una dirección o unas coordenadas y se elige el tamaño, si se quiere solo el relieve o el modelo completo, y la exageración vertical. Se pueden añadir árboles, ríos, carreteras, caminos y edificios a partir de datos de OpenStreetMap, el Institut Cartogràfic i Geològic de Catalunya (ICGC) y el Catastro, dibujar rutas o importar un archivo GPX, y dejar huecos para colocar chinchetas o banderines. Los modelos se exportan en 3MF o STL.",
+        "El autor cuenta en el grupo que lo ha hecho con IA y que el cálculo de la malla se hace en el navegador, sin guardar datos en un servidor. Lo motiva que, al trabajar el relieve con alumnado de primaria, el papel les resulta poco significativo y que poder tocar la maqueta enriquece la experiencia. Comparte fotos del primer prototipo impreso en su escuela, una maqueta de 10 × 10 cm de una cala con acantilados, y anuncia un repositorio aparte de modelos de lugares destacados con más detalle."
+      ],
+      "fuentes": [
+        {"titulo": "Relleu Obert — Geografia que pots tocar", "url": "https://relleu.ortogra.fi/"}
+      ],
+      "mensaje": {"grupo": "vce", "id": 14965},
+      "comprobado": "Abierta la web de Relleu Obert: funciones, datos (OSM, ICGC, Catastro), GPX, huecos para chinchetas, STL/3MF, licencia MIT y autoría; solo el catalán está activo (los otros cuatro idiomas figuran como pendientes, aunque el mensaje del grupo los da por disponibles). Quitado «un archivo por material», no confirmado para 3MF. Uso de IA, prototipo, motivación y repositorio de modelos son lo que cuenta el autor en el grupo. Mensaje de Telegram confirmado.",
+      "ilustracion": null,
+      "ilustracion_alt": "Tres pasos unidos por flechas: un mapa rotulado «Mapa», una montaña rotulada «Relieve» y una impresora rotulada «Maqueta»."
+    },
+    {
+      "id": "comerc-especies",
+      "seccion": "vibecoding",
+      "importancia": 3,
+      "grupo": "vce",
+      "antetitulo": "Recurso de la comunidad",
+      "titular": "Una web en catalán cuenta el comercio de especias desde Marco Polo con mapas, juegos y preguntas",
+      "entradilla": "«El comerç de les espècies» propone nueve capítulos interactivos, pensados según su autor para secundaria y bachillerato.",
+      "cuerpo": [
+        "[El comerç de les espècies](https://ja.cat/especies), creada según el grupo por Felip Sarroca i Gil, parte de una pregunta: por qué unas semillas tan pequeñas movieron barcos, dinero e imperios. Recorre desde los viajes de Marco Polo hasta la actualidad en nueve capítulos, cada uno con una infografía, mapas y actividades, y termina con un reto en el que se argumenta la propia respuesta.",
+        "La web incluye calculadoras, mapas de vientos, un juego de mercaderes, preguntas con corrección inmediata, una opción de lectura fácil y un glosario. El progreso se guarda solo en el navegador. El autor cuenta que, antes de diseñarla, pidió a Codex que se conectara a NotebookLM mediante MCP para crear un cuaderno, reunir fuentes y generar materiales."
+      ],
+      "fuentes": [
+        {"titulo": "El comerç de les espècies", "url": "https://ja.cat/especies"}
+      ],
+      "mensaje": {"grupo": "vce", "id": 14959},
+      "comprobado": "Abierta la web (redirige a felipsarroca.github.io/web/Especies/): nueve capítulos, infografía, mapas y actividades, reto final, calculadoras, mapas de vientos, juego de mercaderes, preguntas con corrección inmediata, lectura fácil, glosario y progreso en el navegador. La web no nombra al autor ni el nivel: ambos salen del mensaje del grupo (ahora dicho así). El uso de Codex y NotebookLM es lo que cuenta el autor. Mensaje de Telegram confirmado.",
+      "ilustracion": null,
+      "ilustracion_alt": "Una ruta con nueve puntos que va de un barco, con el rótulo «Marco Polo», a un globo terráqueo, con el rótulo «Hoy»; encima, el rótulo «Nueve capítulos»."
+    },
+    {
+      "id": "cli-app-claude-debate",
+      "seccion": "debates",
+      "importancia": 3,
+      "grupo": "vce",
+      "antetitulo": "Flujos de trabajo",
+      "titular": "Consola o aplicación: docentes comparan cómo trabajar con un agente de programación",
+      "entradilla": "El grupo discutió si la consola ofrece más libertad que la aplicación gráfica, y concluyó que depende de cada persona y de la tarea.",
+      "cuerpo": [
+        "Una conversación entre usuarios de Claude y otros agentes de programación enfrentó dos maneras de trabajar. Quienes prefieren la consola la describen como comunicación directa con la IA, sin botones ni iconos de por medio, y la usan incluso para organizar documentos personales y mantener un sistema de memoria; la interfaz web la reservan para consultas rápidas, sobre todo desde el móvil.",
+        "Quienes prefieren la aplicación de escritorio argumentan que es lo mismo con interfaz gráfica, que inicia en un segundo, permite varios chats a la vez en un mismo proyecto, ordena los atajos y facilita conectar herramientas externas. Añaden que, trabajando por proyectos y chats, todo depende de la memoria del propio servicio. Alguien señaló que trabajar con la información en la nube plantea la duda de la privacidad y otra persona respondió que su método guarda los documentos en su ordenador con copias cifradas.",
+        "Hubo acuerdo en lo esencial: web, aplicación y consola son tres caminos hacia un resultado parecido, y saber elegir la herramienta y la interfaz para cada caso es parte del aprendizaje, un aspecto que algunas personas del grupo vincularon con la alfabetización en IA. Es un intercambio de preferencias y experiencias, sin datos comprobables."
+      ],
+      "fuentes": [],
+      "mensaje": {"grupo": "vce", "id": 14875},
+      "comprobado": "Contrastado con los mensajes del grupo (#14873-#14944 y #14912-#14963): las posturas coinciden y no llevan nombre. Pieza de opinión sin afirmaciones sobre productos, cifras ni normas. Mensaje de Telegram abierto: es del hilo.",
+      "ilustracion": null,
+      "ilustracion_alt": "Tres iconos rotulados «Web», «Aplicación» y «Consola» cuyas líneas confluyen en un mismo recuadro rotulado «Resultado»."
+    },
+    {
+      "id": "unreal-engine-5-9-ia",
+      "seccion": "multimedia",
+      "importancia": 3,
+      "grupo": "edumedia",
+      "antetitulo": "Videojuegos y 3D",
+      "titular": "Unreal Engine 5.9 Preview incorpora MCP para que agentes de IA creen entornos 3D",
+      "entradilla": "Epic Games ha publicado una versión preliminar del motor con funciones de IA, todas experimentales.",
+      "cuerpo": [
+        "En EduMedia-IAG se compartió el aviso de [Unreal Engine 5.9 MegaJam Preview](https://forums.unrealengine.com/t/unreal-engine-5-9-megajam-preview/2852840), publicada por Epic el 9 de noviembre antes de su AI MegaJam. Es de interés para quien crea juegos y entornos 3D educativos.",
+        "La versión incorpora Unreal MCP, que permite a un agente de IA controlar el editor (crear niveles, perfilar, depurar), un panel «Unreal Assistant» para trabajar dentro del editor con un agente externo como Claude Code, Codex, Cursor u OpenCode, y Unreal Canvas, una herramienta para generar imágenes, mallas 3D y vídeo con claves propias. Epic marca todo como experimental y avisa de que habrá «rough edges» (aristas sin pulir); recomienda probarla sobre una copia del proyecto."
+      ],
+      "fuentes": [
+        {"titulo": "Unreal Engine 5.9 MegaJam Preview (foros de Epic Games)", "url": "https://forums.unrealengine.com/t/unreal-engine-5-9-megajam-preview/2852840"}
+      ],
+      "mensaje": {"grupo": "edumedia", "id": 12223},
+      "comprobado": "Releída la publicación oficial de Epic en su foro: fecha del 9 de noviembre, Unreal MCP, Unreal Assistant, Unreal Canvas con claves propias, funciones experimentales, «rough edges» y recomendación de usar una copia; la MegaJam es del 12 al 15 de noviembre. El enlace compartido era de una web de noticias de videojuegos y no se usa. Mensaje de Telegram confirmado.",
+      "ilustracion": null,
+      "ilustracion_alt": "Una consola rotulada «Agente» y un cubo rotulado «Editor 3D» unidos por una flecha de doble punta con el rótulo «MCP»; bajo el cubo, una línea quebrada roja y el rótulo «Experimental»."
+    }
+  ],
+  "breves": [
+    {
+      "texto": "Anthropic aconseja a Fable 5.2 que, para que conserve la responsabilidad sobre una acción, se escriba «pide aprobación antes de eliminar archivos» en lugar de «nunca elimines archivos», y que se responda con la orden concreta en vez de un simple «adelante». Sigue [la guía que el diario contó](pieza:2026-11-11/prompt-propiedad-codigo-fable).",
+      "url": "https://platform.claude.com/docs/es/build-with-claude/prompt-engineering/prompting-claude-fable-5-2",
+      "grupo": "vce",
+      "mensaje": {"grupo": "vce", "id": 14865}
+    },
+    {
+      "texto": "Claude Whiteboards y Sheets, en beta, y Claude Data, que sustituye a Dashboards, se anunciaron el 10 de noviembre y están disponibles en todos los planes de pago.",
+      "url": "https://claude.com/resources/articles/sheets-whiteboards-data",
+      "grupo": "chatgpt",
+      "mensaje": {"grupo": "chatgpt", "id": 54285}
+    },
+    {
+      "texto": "El autor del [timbre musical escolar](pieza:2026-11-06/timbre-musical-escolar) ha publicado su proyecto en GitHub: guía de instalación, manual para el claustro y código, con licencia AGPL para el código y CC BY-SA 4.0 para la documentación.",
+      "url": "https://github.com/elCordones/timbre-musical-escolar",
+      "grupo": "vce",
+      "mensaje": {"grupo": "vce", "id": 14964}
+    }
+  ],
+  "descartado": [
+    "Gemini 4 Hydrogen (anuncio en X compartido en ChatGPT-IA-edu): buscado de nuevo; no hay anuncio oficial de Google en su blog, solo un blog que lo da por nombre en clave sin confirmar y los anuncios oficiales de Gemini 4 Argon y Carbon; no se puede verificar.",
+    "Paquete de Educación y Competencias de la Comisión Europea (correo reenviado por un docente): buscado; solo hay cobertura secundaria (presentado el 5 de noviembre) y no se pudo abrir la página oficial de la Comisión; queda sin confirmar.",
+    "GPT-Live y generación de imágenes (charla de DevDay compartida en vídeo): no se abrió contenido contrastable más allá del título.",
+    "Aplicación de permutas y sustituciones de horarios de un docente: sin enlace a la aplicación en el mensaje, no se puede comprobar.",
+    "Currículo de alfabetización mediática e informacional de la UNESCO y su guía, e informe de la OfS: documentos de la Biblioteca digital, que tienen su propio artículo.",
+    "Reloj EDUmind, guía de instalación de Liga de Valores y otros avisos del día anterior o de administración del bot: administración o ya del día anterior.",
+    "Entrevista a Raül Torres en la Xarxa territorial de Cultura Digital: autopromoción sin contenido noticioso verificable.",
+    "Mensajes sobre Opus 5.5 «recortado», rumores: el propio hilo dice que puede ser falso."
+  ],
+  "repaso": [
+    "Relleu Obert: la interfaz solo está en catalán (los otros cuatro idiomas figuran como pendientes en la web); quitado «un archivo por material», que la web no confirma para 3MF.",
+    "OfS: lo de los complementos de Moodle se presenta como lo comentado en el grupo, no como hecho comprobado.",
+    "El comerç de les espècies: el nivel educativo se atribuye a su autor (la web no lo dice) y el reto se describe como lo hace la web.",
+    "Breve de Fable 5.2: «mantenga el control» sustituido por «conserve la responsabilidad sobre una acción», como dice la guía; breve de Claude Data: «disponibles en todos los planes de pago».",
+    "Descartado: anotado qué se buscó de Gemini 4 Hydrogen y del paquete europeo; ninguno es publicable.",
+    "Resto (Microsoft Classroom, Unreal, claves pieza: y enlaces) comprobado sin cambios."
+  ]
+}
