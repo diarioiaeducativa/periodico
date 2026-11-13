@@ -97,8 +97,11 @@ def recientes(fecha):
             continue
         for p in json.loads(f.read_text()).get("piezas", []):
             fuentes = " · ".join(x.get("url", "") for x in p.get("fuentes", []) if x.get("url"))
+            # Lo que leyó quien la escribió: un documento solo está contado si la pieza lo leyó (ADR 0006)
+            leido = " ".join(str(p.get("comprobado") or "").split())[:400]
             lineas.append(f"- fecha {f.stem}, id {p['id']} ({p.get('seccion')}): {p['titular']}"
-                          + (f" — fuentes: {fuentes}" if fuentes else ""))
+                          + (f" — fuentes: {fuentes}" if fuentes else "")
+                          + (f" — leído: {leido}" if leido else ""))
     return lineas
 
 

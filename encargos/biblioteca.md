@@ -31,6 +31,17 @@ contó, y esa pieza pasa a la sección Biblioteca con el enlace al documento. Qu
 tema no basta: tiene que ser el mismo documento (otro informe del mismo organismo, o una versión
 nueva, sí lleva artículo, que explica qué cambia).
 
+Y la pieza tiene que haber leído **el documento en sí**: lo dice su «leído» en la lista de piezas
+de la entrada. Si se escribió con la nota de prensa, una página de presentación o una noticia
+sobre él, el documento no está contado: lleva su artículo, centrado en lo que la pieza no dijo,
+enlaza a ella en una frase y no repite lo que ella ya contó. Si el documento contiene más de lo
+que la pieza trató (otro informe dentro del mismo PDF, apartados que no tocó), tampoco está
+contado.
+
+Si dos documentos del día son el mismo (el enlace a la ficha y el PDF, por ejemplo), un solo
+artículo, con el `mensaje` del que trae el texto completo; el otro va a `descartado`, empezando
+por «mensaje <id>:» y diciendo con qué mensaje se contó.
+
 ## Del fondo de la biblioteca (pieza de reserva)
 
 Cuando la entrada lo dice, no trae documentos de hoy sino candidatos del fondo: documentos que

@@ -8,7 +8,7 @@ El documentalista ha dejado los artículos de la Biblioteca digital en bibliotec
 - Que no se nombre a quien subió el documento (solo a sus autores, también si es Juan José de Haro), que el `mensaje` sea el del documento y que la extensión esté entre 400 y 700 palabras.
 - Si la entrada es del fondo de la biblioteca (pieza de reserva), comprueba también que el documento elegido sigue vigente, como dice el apartado «Del fondo de la biblioteca» del encargo: que es la última versión, que no se ha retirado ni ha quedado superado. Si no, pásalo a `descartado` con «mensaje <id>:» y el motivo.
 - Quita lo no confirmado: una frase, un párrafo o el artículo entero (pásalo a `descartado` con el motivo).
-- Cada entrada de `ya_contado`: comprueba, abriendo las fuentes de esa pieza (en la lista de la entrada), que trataba de verdad este mismo documento. Si no es así, pásala a `descartado` con el motivo «no estaba contado: necesita artículo», y no la dejes en `ya_contado`.
+- Cada entrada de `ya_contado`: comprueba, abriendo las fuentes de esa pieza (en la lista de la entrada), que trataba de verdad este mismo documento y que lo leyó entero (su «leído» en la entrada), no solo una nota o una noticia sobre él, como dice el encargo. Si no es así, pásala a `descartado` con el motivo «no estaba contado: necesita artículo», y no la dejes en `ya_contado`.
 
 - Las fuentes nombradas en el texto (encargos/enlaces.md): que cada una esté enlazada en su primera mención, con su nombre como texto del enlace; si falta, enlázala.
 - Los enlaces a lo ya publicado (`pieza:AAAA-MM-DD/id`, encargos/enlaces.md): que la clave esté en publicado.txt y que la pieza enlazada trate de verdad lo mismo; si no, quita el enlace y deja el texto.
