@@ -64,5 +64,7 @@
 | [0060](0060-la-marca-de-lo-comprobado-en-verde.md) | La marca de lo comprobado, en verde |
 | [0061](0061-un-buscador-de-lo-publicado-para-los-agentes.md) | Buscadores de lo publicado y de los mensajes para los agentes |
 | [0062](0062-meses-como-la-hemeroteca-y-buscador-de-cada-seccion.md) | Los meses, como la hemeroteca; el mes, como índice; un buscador en cada sección y miniaturas en los resultados |
+| [0063](0063-mapa-del-sitio-de-noticias.md) | Mapa del sitio de noticias |
+| [0064](0064-correo-de-contacto-propio-del-diario.md) | Correo de contacto propio del diario |
 
 Plantilla: [0000-plantilla.md](0000-plantilla.md). Para crear uno: `nuevo-adr "Título"`.

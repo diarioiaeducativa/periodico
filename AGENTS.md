@@ -136,6 +136,8 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
   estructurados de cada pieza salen de `generar.py` (`cabeza()`, `datos_noticia()`). El diario está en
   Google Search Console, con la cuenta de Juanjo: `estaticos/google0f64171555c8a8ac.html` lo verifica y no
   se borra; de esa verificación depende también la de Bing Webmaster Tools. Una página nueva que deba indexarse pasa por `cabeza()` y entra en `sitemap()`.
+  `sitemap-news.xml` (ADR 0063) lleva las piezas y breves de las últimas 48 horas en los cinco idiomas, para Google
+  Noticias: un tipo de pieza nuevo entra también en `noticias_recientes()`.
 - **Wayback Machine** (ADR 0046): `publicar-nas.sh` lanza en segundo plano `scripts/archivar.py FECHA`, que
   pide a Internet Archive (Save Page Now, sin cuenta) la portada, el día y cada pieza en los cinco idiomas,
   una cada 20 s; registro en `registro/archivo.log`. Para un día ya publicado, a mano con la misma orden.
@@ -174,7 +176,7 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
 - **Saltar al contenido** (ADR 0059): lo pone `cabecera()`, y `escribir()` marca el `<main>` como destino; una
   página nueva con cabecera lo lleva sola. Las fuentes de «Comprobado en» van en rejilla, no con `columns`, y la
   tabla de un reportaje corta las columnas al imprimir: no volver atrás sin probar Firefox, Safari y el papel.
-- **Contacto** (ADR 0051): `contacto.html`, con el correo (`CORREO_CONTACTO`) y enlace en el pie de todas las
+- **Contacto** (ADR 0051 y 0064): `contacto.html`, con el correo (`CORREO_CONTACTO`, un reenvío de IONOS) y enlace en el pie de todas las
   páginas; es la dirección de la declaración de noticias de Google Play: no se renombra ni se quita del pie.
 - **Hemeroteca** (ADR 0053): un calendario por la fecha de cabecera, con el número elegido a la derecha (sus
   titulares, de `datos/AAAA-MM.json`, y su portada en miniatura, que `scripts/portadas.py` captura en

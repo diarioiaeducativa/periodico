@@ -2193,7 +2193,7 @@ def comunidades_figura(giro=None):
     return f'<figure class="ilu comunidades">{boton_ampliar(svg, e(alt))}</figure>'
 
 
-CORREO_CONTACTO = "jjdeharo@gmail.com"   # el de contacto de la ficha de Google Play (ADR 0042)
+CORREO_CONTACTO = "diarioiaeducativa@bilateria.org"   # reenvío de IONOS al correo de Juanjo (ADR 0064)
 
 
 def pagina_redaccion(eds):
@@ -2946,6 +2946,43 @@ def sitemap(eds):
             cuerpo.append(f"  <url><loc>{e(BASE + x['carpeta'] + ruta)}</loc><lastmod>{f}</lastmod>{alternas}</url>\n")
     return ('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" '
             f'xmlns:xhtml="http://www.w3.org/1999/xhtml">\n{"".join(cuerpo)}</urlset>\n')
+
+# Mapa del sitio de noticias (ADR 0063): las piezas de los dos últimos días, en los cinco idiomas. Lo
+# llena generar_idioma() con cada idioma y lo escribe main() al final.
+NOTICIAS = []
+HORAS_NOTICIAS = 48   # Google pide solo lo publicado en los dos últimos días
+
+
+def noticias_recientes(eds, ahora=None):
+    """Las piezas, reportajes, presentaciones y breves que salieron en las últimas 48 horas, o que salen
+    en la publicación en curso (la web se genera a las 6:50 para salir a las 7:00), en el idioma de `L`."""
+    ahora = ahora or datetime.datetime.now(datetime.timezone.utc)
+    desde = ahora - datetime.timedelta(hours=HORAS_NOTICIAS)
+    salen = []
+    for d in eds:
+        sale = hora_de_salida(publicacion(d["fecha"]))
+        if sale <= desde or sale > ahora + datetime.timedelta(hours=24):
+            continue
+        for p in d["piezas"] + [d[k] for k in ("editorial", "reportaje") if d.get(k)]:
+            if p.get("titular"):
+                salen.append((f'{d["fecha"]}/{p["id"]}.html', sale, texto_plano(p["titular"])))
+        for b in d.get("breves", []):
+            salen.append((ruta_breve(b), sale, titulo_breve(b)))
+    return [(BASE + L["carpeta"] + ruta, L["codigo"], L["titulo"], sale.isoformat(), titular)
+            for ruta, sale, titular in salen]
+
+
+def sitemap_noticias(noticias):
+    """El formato de Google para los mapas de noticias: nombre del diario tal como firma sus piezas,
+    idioma, hora de salida y titular (como mucho 1000 entradas por mapa)."""
+    cuerpo = "".join(
+        f"  <url><loc>{e(loc)}</loc><news:news><news:publication><news:name>{e(nombre)}</news:name>"
+        f"<news:language>{idioma}</news:language></news:publication>"
+        f"<news:publication_date>{sale}</news:publication_date><news:title>{e(titular)}</news:title>"
+        f"</news:news></url>\n" for loc, idioma, nombre, sale, titular in noticias[:1000])
+    return ('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" '
+            f'xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">\n{cuerpo}</urlset>\n')
+
 
 
 SCRIPT_BUSCAR = """<script type="module">
@@ -3922,8 +3959,10 @@ def generar_idioma(codigo):
         escribir(RAIZ / "indice" / "diario.json", indice_bot(eds))   # para el bot, no se publica (ADR 0017)
         escribir(SITIO / "404.html", pagina_404(eds))
         escribir(SITIO / "sitemap.xml", sitemap(eds))
-        # Sin vetos: solo dice a los buscadores dónde está el mapa del sitio (ADR 0039)
-        escribir(SITIO / "robots.txt", f"User-agent: *\nAllow: /\n\nSitemap: {BASE}sitemap.xml\n")
+        # Sin vetos: solo dice a los buscadores dónde están los mapas del sitio (ADR 0039 y 0063)
+        escribir(SITIO / "robots.txt", f"User-agent: *\nAllow: /\n\nSitemap: {BASE}sitemap.xml\n"
+                                       f"Sitemap: {BASE}sitemap-news.xml\n")
+    NOTICIAS.extend(noticias_recientes(eds))
     for i, d in enumerate(eds):
         dia = base / d["fecha"]
         escribir(dia / "index.html",
@@ -3975,8 +4014,10 @@ def main():
     if (RAIZ / "portadas").exists():   # la portada de cada número para la hemeroteca (ADR 0053)
         shutil.copytree(RAIZ / "portadas", SITIO / "portadas", dirs_exist_ok=True, ignore=shutil.ignore_patterns("*.json"))
     entradas_grupos()
+    NOTICIAS.clear()
     for codigo in IDIOMAS:
         generar_idioma(codigo)
+    escribir(SITIO / "sitemap-news.xml", sitemap_noticias(NOTICIAS))   # ADR 0063
     escribir(SITIO / "ultimo.json", json.dumps({"numero": ULTIMO.pop("numero"), "sale": ULTIMO.pop("sale"),
                                                 "idiomas": ULTIMO}, ensure_ascii=False, indent=1) + "\n")
 

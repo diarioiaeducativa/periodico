@@ -37,8 +37,8 @@ tienda (web y correo) y la declaración de noticias, que apuntaba a ese apartado
 
 ## Consecuencias
 
-- Cualquier cambio de la dirección de contacto se hace en `CORREO_CONTACTO`, y es el mismo correo que el del
-  contacto de la ficha de Google Play (ADR 0042).
+- Cualquier cambio de la dirección de contacto se hace en `CORREO_CONTACTO`. Desde el 14-11-2026 es la propia
+  del diario, un reenvío de IONOS (ADR 0064).
 - Si la página cambia de nombre, hay que cambiar también la declaración de noticias en Play Console.
 - El pie tiene una línea más en la columna «El diario».
 
