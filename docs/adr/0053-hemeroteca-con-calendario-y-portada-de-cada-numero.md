@@ -71,3 +71,7 @@ además la portada de cada número y que se viera, en un portátil, el calendari
 Chromium, Firefox y WebKit, en ordenador, tableta y móvil, en los cinco idiomas y en tema claro y oscuro;
 `revisar-maqueta.js` y `revisar-anchos.js` sin avisos; los 16 días comprobados uno a uno, sin huecos en el
 recuadro del número; el visor y el menú de los días anteriores, probados con clic, toque y teclado.
+
+## Ampliación del 14-11-2026: la portada, también en los avisos de Telegram
+
+`scripts/avisos-cabecera.py` añade a los avisos de la mañana `imagen`, la dirección de la captura en castellano (`portadas/<fecha>-es.jpg`), y el bot la usa como imagen grande del aviso en los tres grupos (ADR 0037 del bot). Lo había propuesto Juanjo el 13-11 («mejora mucho con la portada completa, asi que no me importa que se repita imagen») y no se había hecho; el 14-11 los avisos salieron sin ella y se editaron con la portada.

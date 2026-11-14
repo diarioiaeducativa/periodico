@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 # SPDX-License-Identifier: AGPL-3.0-or-later
 """Añade a los avisos de la mañana la cabecera del número (ADR 0010): el título con el número,
-la fecha en letra y el enlace a la portada con una marca del número, para que Telegram no
-reutilice la vista previa del día anterior. El bot monta con eso el mensaje (su ADR 0029).
+la fecha en letra, el enlace a la portada con una marca del número, para que Telegram no
+reutilice la vista previa del día anterior, y la captura de la portada como imagen. El bot monta
+con eso el mensaje (sus ADR 0029 y 0037).
 
     scripts/avisos-cabecera.py AAAA-MM-DD   (la fecha de las conversaciones; los avisos son del día siguiente)
 
@@ -30,7 +31,10 @@ def main():
     avisos = json.loads(f.read_text())
     avisos.update(titulo=f'{generar.L["titulo"]} · {generar.L["num"]} {d["numero"]}',
                   fecha_texto=generar.fecha_larga(publica).capitalize(),
-                  url=f'{generar.BASE}?n={d["numero"]}')
+                  url=f'{generar.BASE}?n={d["numero"]}',
+                  # La portada del número como imagen del aviso, la misma en los tres grupos (ADR 0053; ADR 0037
+                  # del bot). La hace portadas.py justo después; el bot comprueba que ya está en la web.
+                  imagen=f'{generar.BASE}portadas/{fecha}-es.jpg')
     # Cada grupo, su página de entrada con su imagen (n/<número>-<grupo>.html), si ese día la tiene;
     # si no, el aviso lleva el enlace general de arriba (ADR 0010).
     for g, aviso in (avisos.get("avisos") or {}).items():
