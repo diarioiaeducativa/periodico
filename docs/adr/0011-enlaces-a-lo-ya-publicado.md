@@ -1,6 +1,6 @@
 # 11. Enlaces a lo ya publicado, continuaciones como breves y una pieza por grupo
 
-Fecha: 2026-11-04 · Estado: aceptado
+Fecha: 2026-11-04 (ampliado el 2026-11-14) · Estado: aceptado
 
 ## Contexto
 
@@ -39,6 +39,17 @@ ponerse enlaces a lo que está claramente relacionado».
   que el diario había contado algo «el 31 de octubre» y «el 2 de noviembre», cuando salió el 1 y
   el 3. `publicado.txt` pone ahora en el encabezado de cada día la fecha en que salió, y
   `encargos/enlaces.md` pide usar esa.
+- **Los nombres se buscan en el texto de todo lo publicado, no en los titulares** (14-11-2026). La pieza
+  «Atlas en xogo» del número del 13 decía que el diario había contado a su autor, Luis Vilela Acuña, «en un
+  breve», el único sitio de `publicado.txt` donde salía su nombre, porque estaba en el titular. El diario
+  ya había contado otras tres aplicaciones suyas (los dictados de EDUmind, MiClase y el Reloj EDUmind), con
+  su nombre solo en el cuerpo. Juanjo lo vio con el buscador de la web: «El redactor no debería usar el
+  buscador para localizar este tipo de datos?». El buscador (Pagefind) funciona en el navegador y los
+  agentes no pueden usarlo, pero sí buscar con Grep en el texto de `ediciones/`, `repositorio/`,
+  `biblioteca/`, `reportajes/` y `hace-un-ano/`. `encargos/enlaces.md` pide hacerlo antes de presentar a
+  una persona, herramienta, proyecto o sitio, y que lo que se diga de lo ya contado sea completo; el
+  revisor de la redacción (`encargos/pasos/1-repaso.md`) lo comprueba. La pieza se actualizó en los cinco
+  idiomas el mismo día.
 
 ## Alternativas descartadas
 

@@ -33,6 +33,12 @@ A medida que el diario crece, cada vez más temas continúan algo ya publicado: 
 que poder ir a ello.
 
 - **Lo ya publicado está en `publicado.txt`**, cada pieza con su clave: `pieza:AAAA-MM-DD/id`.
+- **`publicado.txt` solo tiene titulares: los nombres se buscan en el texto.** Antes de presentar a una
+  persona, una herramienta, un proyecto o un sitio web, busca su nombre (y sus variantes: el apellido solo,
+  el nombre del sitio) con Grep en el texto de todo lo publicado: `ediciones/`, `repositorio/`,
+  `biblioteca/`, `reportajes/` y `hace-un-ano/`. Lo que digas de lo que ya contó el diario tiene que ser
+  completo: si ha salido varias veces, se dice y se enlazan las piezas, como mucho tres; las demás se
+  resumen («además de…»). Nunca «lo contó en un breve» si también salió en otras piezas.
 - **Enlaza lo que está claramente relacionado**: la pieza que contó el mismo producto, documento,
   recurso, anuncio o debate, o de la que lo tuyo es continuación. Compartir un tema general
   («la IA en la evaluación») no basta.
