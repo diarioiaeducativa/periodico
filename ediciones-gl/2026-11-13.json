@@ -77,9 +77,11 @@
       "grupo": "vce",
       "antetitulo": "Aplicación da comunidade",
       "titular": "Atlas en xogo, un xogo de mapas en galego, súmase ás aplicacións de EDUmind",
+      "correccion": "Actualización do 14 de novembro de 2026: a versión anterior dicía que o diario só falara do seu autor nun breve; xa contara tamén outras tres aplicacións súas, que agora se ligan.",
+      "corregido": "2026-11-14",
       "entradilla": "Compartiuse en Vibe Coding Educativo unha nova aplicación de xeografía interactiva en galego. Non se puido comprobar a descrición completa dos seus modos de xogo.",
       "cuerpo": [
-        "[Atlas en xogo](https://edumind.es/contenido/htmls/Atlas%20en%20xogo.html) é unha aplicación web de mapas interactivos en galego, con zoom e unha vista 3D, aloxada no sitio EDUmind. O pé dese sitio atribúea a Luis Vilela Acuña, autor tamén de Liga de Valores, cuxo código aberto contou o diario nun breve.",
+        "[Atlas en xogo](https://edumind.es/contenido/htmls/Atlas%20en%20xogo.html) é unha aplicación web de mapas interactivos en galego, con zoom e unha vista 3D, aloxada no sitio EDUmind. O pé dese sitio atribúea a Luis Vilela Acuña, de quen o diario xa contou outras aplicacións de EDUmind, como [os ditados en galego e castelán](pieza:2026-10-29/dictados-voz-gallego), [o caderno MiClase](pieza:2026-11-06/edumind-miclase-sincronizacion) e o [Reloj EDUmind](pieza:2026-11-12/reloj-edumind), ademais do código aberto de Liga de Valores.",
         "Segundo a ficha que publicou o bot dos grupos, ofrece mapas de relevo, costas, ríos, mares, climas, países, capitais e vertentes de Europa e España, con varios modos de xogo, pistas e nomes agochados, e garda o progreso do alumnado; a interface cambia entre galego, castelán e inglés e diríxese a Primaria, Secundaria e Bacharelato. A páxina é dinámica e eses detalles non se puideron comprobar un a un."
       ],
       "fuentes": [

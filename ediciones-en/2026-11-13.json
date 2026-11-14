@@ -77,9 +77,11 @@
       "grupo": "vce",
       "antetitulo": "Community app",
       "titular": "Atlas en xogo, a map game in Galician, joins EDUmind’s apps",
+      "correccion": "Update on 14 November 2026: the previous version said the paper had covered its author only in a brief; it had also covered three other apps of his, which are now linked.",
+      "corregido": "2026-11-14",
       "entradilla": "A new interactive geography app in Galician has been shared in Vibe Coding Educativo. A full description of its game modes could not be checked.",
       "cuerpo": [
-        "[Atlas en xogo](https://edumind.es/contenido/htmls/Atlas%20en%20xogo.html) is a web app of interactive maps in Galician, with zoom and a 3D view, hosted on the EDUmind site. The footer of that site credits it to Luis Vilela Acuña, who is also the author of Liga de Valores, whose open-source code the paper covered in a brief.",
+        "[Atlas en xogo](https://edumind.es/contenido/htmls/Atlas%20en%20xogo.html) is a web app of interactive maps in Galician, with zoom and a 3D view, hosted on the EDUmind site. The footer of that site credits it to Luis Vilela Acuña, whose other EDUmind apps the paper has already covered, such as [the dictations in Galician and Spanish](pieza:2026-10-29/dictados-voz-gallego), [the MiClase teacher's notebook](pieza:2026-11-06/edumind-miclase-sincronizacion) and [Reloj EDUmind](pieza:2026-11-12/reloj-edumind), as well as the open-source code of Liga de Valores.",
         "According to the card published by the groups’ bot, it offers maps of relief, coasts, rivers, seas, climates, countries, capitals and drainage basins of Europe and Spain, with several game modes, hints and hidden names, and it saves students’ progress; the interface switches between Galician, Spanish and English and is aimed at Primary, Secondary and Sixth Form (Bachillerato). The page is dynamic and those details could not be checked one by one."
       ],
       "fuentes": [

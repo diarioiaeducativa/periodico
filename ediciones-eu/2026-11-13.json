@@ -77,9 +77,11 @@
       "grupo": "vce",
       "antetitulo": "Komunitatearen aplikazioa",
       "titular": "Atlas en xogo, galegoz egindako mapa-jolas bat, EDUminden aplikazioetara gehitu da",
+      "correccion": "2026ko azaroaren 14ko eguneratzea: aurreko bertsioak zioen diarioak labur batean bakarrik hitz egin zuela egileaz; lehendik ere kontatuak zituen haren beste hiru aplikazio, orain estekatuta daudenak.",
+      "corregido": "2026-11-14",
       "entradilla": "Galegoz egindako geografia interaktiboko aplikazio berri bat partekatu da Vibe Coding Educativo taldean. Bere jolas-moduen deskribapen osoa ezin izan da egiaztatu.",
       "cuerpo": [
-        "[Atlas en xogo](https://edumind.es/contenido/htmls/Atlas%20en%20xogo.html) galegoz egindako mapa interaktiboen web-aplikazio bat da, zooma eta 3D ikuspegi bat dituena, EDUmind gunean ostatatua. Gune horren oinak Luis Vilela Acuñari egozten dio, Liga de Valores-en egilea ere badena, zeinen kode irekia diarioak labur batean kontatu zuen.",
+        "[Atlas en xogo](https://edumind.es/contenido/htmls/Atlas%20en%20xogo.html) galegoz egindako mapa interaktiboen web-aplikazio bat da, zooma eta 3D ikuspegi bat dituena, EDUmind gunean ostatatua. Gune horren oinak Luis Vilela Acuñari egozten dio. Diarioak lehendik ere kontatu ditu haren EDUmind-eko beste aplikazio batzuk, hala nola [galegozko eta gaztelaniazko diktaketak](pieza:2026-10-29/dictados-voz-gallego), [MiClase koadernoa](pieza:2026-11-06/edumind-miclase-sincronizacion) eta [Reloj EDUmind](pieza:2026-11-12/reloj-edumind), baita Liga de Valores-en kode irekia ere.",
         "Taldeetako botak argitaratutako fitxaren arabera, Europako eta Espainiako erliebe-, kosta-, ibai-, itsaso-, klima-, herrialde-, hiriburu- eta isurialde-mapak eskaintzen ditu, jolas-modu ugarirekin, pistekin eta ezkutuko izenekin, eta ikasleen aurrerapena gordetzen du; interfazea galegoa, gaztelania eta ingelesa artean aldatzen da, eta Lehen Hezkuntza, Bigarren Hezkuntza eta Batxilergorako da. Orria dinamikoa da eta xehetasun horiek ezin izan dira banan-banan egiaztatu."
       ],
       "fuentes": [

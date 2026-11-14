@@ -77,9 +77,11 @@
       "grupo": "vce",
       "antetitulo": "Aplicació de la comunitat",
       "titular": "Atlas en xogo, un joc de mapes en gallec, se suma a les aplicacions d'EDUmind",
+      "correccion": "Actualització del 14 de novembre de 2026: la versió anterior deia que el diari havia parlat del seu autor només en un breu; ja havia explicat també tres aplicacions més seves, que ara s'enllacen.",
+      "corregido": "2026-11-14",
       "entradilla": "Una nova aplicació de geografia interactiva en gallec s'ha compartit a Vibe Coding Educativo. La descripció completa dels seus modes de joc no s'ha pogut comprovar.",
       "cuerpo": [
-        "[Atlas en xogo](https://edumind.es/contenido/htmls/Atlas%20en%20xogo.html) és una aplicació web de mapes interactius en gallec, amb zoom i una vista 3D, allotjada al lloc EDUmind. El peu d'aquest lloc l'atribueix a Luis Vilela Acuña, autor també de Liga de Valores, el codi obert de la qual va explicar el diari en un breu.",
+        "[Atlas en xogo](https://edumind.es/contenido/htmls/Atlas%20en%20xogo.html) és una aplicació web de mapes interactius en gallec, amb zoom i una vista 3D, allotjada al lloc EDUmind. El peu d'aquest lloc l'atribueix a Luis Vilela Acuña, de qui el diari ja ha explicat altres aplicacions d'EDUmind, com [els dictats en gallec i castellà](pieza:2026-10-29/dictados-voz-gallego), [el quadern MiClase](pieza:2026-11-06/edumind-miclase-sincronizacion) i el [Reloj EDUmind](pieza:2026-11-12/reloj-edumind), a més del codi obert de Liga de Valores.",
         "Segons la fitxa que va publicar el bot dels grups, ofereix mapes de relleu, costes, rius, mars, climes, països, capitals i vessants d'Europa i Espanya, amb diversos modes de joc, pistes i noms ocults, i desa el progrés de l'alumnat; la interfície canvia entre gallec, castellà i anglès i s'adreça a primària, secundària i batxillerat. La pàgina és dinàmica i aquests detalls no s'han pogut comprovar un per un."
       ],
       "fuentes": [
