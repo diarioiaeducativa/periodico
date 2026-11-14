@@ -37,7 +37,7 @@ agente() {   # el mismo de noche.sh, con un añadido opcional al encargo: sin te
   log "empieza $paso ($modelo)"
   salida=$({ sed -e "s/{FECHA}/$FECHA/g" -e "s/{PUBLICA}/$PUBLICA/g" "encargos/pasos/$paso.md"; if [ -n "$extra" ]; then printf '\n%s\n' "$extra"; fi; } \
     | timeout "$((minutos * 60))" claude -p --model "$modelo" \
-        --permission-mode acceptEdits --mcp-config scripts/buscar-mcp.json --allowedTools WebFetch WebSearch mcp__diario__buscar \
+        --permission-mode acceptEdits --mcp-config scripts/buscar-mcp.json --allowedTools WebFetch WebSearch mcp__diario \
         --disallowedTools "Bash" "Read(//home/**)" "Read(//proc/**)" "Read(//sitio/**)" "Read(//etc/**)" \
         --output-format text 2>>"$REG")
   local codigo=$?

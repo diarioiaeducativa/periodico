@@ -48,7 +48,7 @@ agente() {
   log "empieza $paso ($modelo)"
   salida=$(sed -e "s/{FECHA}/$FECHA/g" -e "s/{PUBLICA}/$PUBLICA/g" "encargos/pasos/$paso.md" \
     | timeout "$((minutos * 60))" claude -p --model "$modelo" \
-        --permission-mode acceptEdits --mcp-config scripts/buscar-mcp.json --allowedTools WebFetch WebSearch mcp__diario__buscar \
+        --permission-mode acceptEdits --mcp-config scripts/buscar-mcp.json --allowedTools WebFetch WebSearch mcp__diario \
         --disallowedTools "Bash" "Read(//home/**)" "Read(//proc/**)" "Read(//sitio/**)" "Read(//etc/**)" \
         --output-format text 2>>"$REG")
   local codigo=$?
@@ -121,7 +121,11 @@ ANT=$(date -d "$FECHA - 1 day" +%F)
 RECUPERA=$(python3 -c 'import json,sys; print(1 if json.load(open(sys.argv[1])).get("reserva") in ("fallo", True) else 0)' "ediciones/$ANT.json" 2>/dev/null || echo 0)
 [ "$RECUPERA" = 1 ] && log "el número de ayer salió con la reserva: hoy se cuentan también sus conversaciones"
 RECUPERA=$RECUPERA python3 scripts/preparar.py "$DATOS" dias "$FECHA" >> "$REG" 2>&1
-case $? in
+estado_preparar=$?
+# El índice de los mensajes de los grupos, entero (ADR 0061): recoge también los editados. Cada consulta añade
+# después los nuevos, así que si falla los agentes buscan igual en el de la noche anterior.
+DATOS_BOT="$DATOS" python3 scripts/buscar_mensajes.py --indexar >> "$REG" 2>&1 || log "AVISO: no se pudo rehacer el índice de los mensajes; queda el anterior"
+case $estado_preparar in
   0) ;;
   3) log "ningún mensaje en ningún grupo"
      # Sin conversaciones, el número puede ser solo del repositorio (ADR 0008)

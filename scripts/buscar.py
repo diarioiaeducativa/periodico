@@ -140,7 +140,7 @@ def variantes(termino, vocab):
     if r in vocab:
         return [r], []
     todas = {p: rr for rr, ps in vocab.items() for p in ps}
-    cerca = difflib.get_close_matches(plano(termino), list(todas), n=4, cutoff=0.8)
+    cerca = difflib.get_close_matches(plano(termino), list(todas), n=3, cutoff=0.85)
     return sorted({todas[p] for p in cerca}), cerca
 
 

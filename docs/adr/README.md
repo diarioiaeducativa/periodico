@@ -62,6 +62,6 @@
 | [0058](0058-el-pie-no-promete-la-revision-humana.md) | El pie no promete la revisión humana de cada número |
 | [0059](0059-arreglos-tras-la-revision-a-ciegas.md) | Arreglos tras la revisión a ciegas: erratas de regla fija, fuentes en rejilla, tabla impresa y salto al contenido |
 | [0060](0060-la-marca-de-lo-comprobado-en-verde.md) | La marca de lo comprobado, en verde |
-| [0061](0061-un-buscador-de-lo-publicado-para-los-agentes.md) | Un buscador de lo publicado para los agentes |
+| [0061](0061-un-buscador-de-lo-publicado-para-los-agentes.md) | Buscadores de lo publicado y de los mensajes para los agentes |
 
 Plantilla: [0000-plantilla.md](0000-plantilla.md). Para crear uno: `nuevo-adr "Título"`.

@@ -43,6 +43,11 @@ que poder ir a ello.
     resumen («además de…»). Nunca «lo contó en un breve» si también salió en otras piezas;
   - **antes de escribir sobre un tema**, con `parecidas` y el titular y la entradilla que piensas escribir:
     si sale una pieza que ya cuenta lo mismo, la tuya no se escribe o se queda en lo nuevo y la enlaza.
+- **Los mensajes de los grupos tienen también su buscador**: `mcp__diario__buscar_mensajes` busca en todo el
+  historial de los tres grupos, no solo en los mensajes que trae tu entrada, y `mcp__diario__contexto_mensaje`
+  enseña la conversación alrededor de un mensaje, con sus respuestas. Úsalos para saber si lo de hoy ya se
+  habló antes (y entonces no es nuevo: dilo), para citar el mensaje original exacto (el que lo dijo primero,
+  no el que lo repite) y para entender un hilo que empezó días atrás.
 - **Enlaza lo que está claramente relacionado**: la pieza que contó el mismo producto, documento,
   recurso, anuncio o debate, o de la que lo tuyo es continuación. Compartir un tema general
   («la IA en la evaluación») no basta.

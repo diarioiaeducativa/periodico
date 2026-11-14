@@ -19,6 +19,10 @@ fondo y no haya tenido reportaje.
   FECHA (el sábado).
 - `ediciones/*.json` de esos siete días: las piezas diarias ya publicadas sobre la semana.
 - `reportajes/*.json`: los reportajes anteriores, para no repetir tema.
+- Los buscadores del diario (`encargos/enlaces.md`): `mcp__diario__buscar` para lo publicado y
+  `mcp__diario__buscar_mensajes` y `mcp__diario__contexto_mensaje` para todo el historial de los grupos.
+  Un reportaje trata un tema a fondo: reúne lo que los grupos han dicho de él a lo largo de los meses, no
+  solo esa semana, y comprueba con `parecidas` que no repite un reportaje o una pieza anteriores.
 
 ## Cómo se elige el tema
 
