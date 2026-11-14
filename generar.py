@@ -82,7 +82,7 @@ IDIOMAS = {
         "anyo": "Año", "hemeroteca": "Hemeroteca", "hemeroteca_txt": "Todos los números, por meses y semanas.", "nb_anteriores": "Boletines anteriores", "semana_n": "Semana {n}",
         "dias_cortos": ["L", "M", "X", "J", "V", "S", "D"], "calendario": "Calendario de los números", "cal_anterior": "Mes anterior", "cal_siguiente": "Mes siguiente", "cal_elegir": "Elige el mes", "buscar_numeros": "Busca en todos los números", "cal_portada": "Portada: {fecha}", "cal_resumenes": "Resumen de cada semana", "cal_resumen": "Resumen de la semana {n}",
         # La semana y el mes (ADR 0034)
-        "semana": "La semana", "semana_txt": "Todo lo que contó el diario de lo que se habló en los grupos esa semana, por secciones, con el pódcast y el vídeo de cada grupo. Elige un grupo para ver solo lo suyo.", "semana_actual": "Resumen semanal", "grupo_filtro": "Ver lo de un grupo", "grupo_todos": "Todos", "sin_grupo": "Este grupo no tiene piezas esta semana.", "nb_h": "El pódcast y el vídeo de la semana", "nb_txt": "Cada lunes, NotebookLM, de Google, prepara un pódcast y un vídeo de cada grupo con su conversación completa de la semana, también lo que el diario no ha contado. Un agente de IA los contrasta con la conversación antes de publicarlos.", "nb_es": "", "nb_pendiente": "El pódcast y el vídeo de cada grupo se añaden aquí el lunes por la mañana.", "nb_video": "Vídeo", "nb_ver": "Reproducir el vídeo de {g}", "nb_youtube": "Verlo en YouTube", "nb_podcast": "Pódcast", "nb_archive": "Escucharlo en Internet Archive", "cs_h": "Lo más importante de la semana", "cs_h_g": "Lo más importante de la semana en {g}", "cs_nota": "Lo escribe un agente de IA con lo que contó el diario esa semana, y otro lo contrasta con cada pieza antes de publicarlo.", "numeros_semana": "Los números de la semana", "sem_ant": "Semana anterior", "sem_sig": "Semana siguiente", "todo_mes": "Todo el mes", "mes": "El mes", "mes_txt": "Las semanas del mes, con la pieza que abrió cada número.", "mes_ant": "Mes anterior", "mes_sig": "Mes siguiente", "por_meses": "Por meses", "ver_semana": "La semana entera, por secciones", "con_nb": "Con el pódcast y el vídeo de cada grupo", 
+        "semana": "La semana", "semana_txt": "Todo lo que contó el diario de lo que se habló en los grupos esa semana, por secciones, con el pódcast y el vídeo de cada grupo. Elige un grupo para ver solo lo suyo.", "semana_actual": "Resumen semanal", "grupo_filtro": "Ver lo de un grupo", "grupo_todos": "Todos", "sin_grupo": "Este grupo no tiene piezas esta semana.", "nb_h": "El pódcast y el vídeo de la semana", "nb_txt": "Cada lunes, NotebookLM, de Google, prepara un pódcast y un vídeo de cada grupo con su conversación completa de la semana, también lo que el diario no ha contado. Un agente de IA los contrasta con la conversación antes de publicarlos.", "nb_es": "", "nb_pendiente": "El pódcast y el vídeo de cada grupo se añaden aquí el lunes por la mañana.", "nb_video": "Vídeo", "nb_ver": "Reproducir el vídeo de {g}", "nb_youtube": "Verlo en YouTube", "nb_podcast": "Pódcast", "nb_archive": "Escucharlo en Internet Archive", "cs_h": "Lo más importante de la semana", "cs_h_g": "Lo más importante de la semana en {g}", "cs_nota": "Lo escribe un agente de IA con lo que contó el diario esa semana, y otro lo contrasta con cada pieza antes de publicarlo.", "numeros_semana": "Los números de la semana", "sem_ant": "Semana anterior", "sem_sig": "Semana siguiente", "todo_mes": "Todo el mes", "mes": "El mes", "mes_txt": "Las semanas del mes, con la pieza que abrió cada número.", "mes_ant": "Mes anterior", "mes_sig": "Mes siguiente", "por_meses": "Por meses", "anyo_ant": "Año anterior", "anyo_sig": "Año siguiente", "buscar_en": "Busca en {s}", "ver_semana": "La semana entera, por secciones", "con_nb": "Con el pódcast y el vídeo de cada grupo", 
         "todos_numeros": "Hemeroteca: todos los números",
         "saltar": "Saltar al contenido", "compartir": "Compartir", "copiado": "Enlace copiado", "una_columna": "Una columna", "columnas": "Columnas", "una_columna_t": "Leer las noticias en una sola columna", "columnas_t": "Leer las noticias en columnas, como en un periódico", "compartir_breve": "Compartir este breve", "mas_en": "Más en", "mas_diario": "Más en el diario",
         "no_existe": "Esta página no existe",
@@ -212,7 +212,7 @@ IDIOMAS = {
         "anyo": "Any", "hemeroteca": "Hemeroteca", "hemeroteca_txt": "Tots els números, per mesos i setmanes.", "nb_anteriores": "Butlletins anteriors", "semana_n": "Setmana {n}",
         "dias_cortos": ["dl.", "dt.", "dc.", "dj.", "dv.", "ds.", "dg."], "calendario": "Calendari dels números", "cal_anterior": "Mes anterior", "cal_siguiente": "Mes següent", "cal_elegir": "Tria el mes", "buscar_numeros": "Cerca a tots els números", "cal_portada": "Portada: {fecha}", "cal_resumenes": "Resum de cada setmana", "cal_resumen": "Resum de la setmana {n}",
         # La semana y el mes (ADR 0034)
-        "semana": "La setmana", "semana_txt": "Tot el que va explicar el diari del que es va parlar als grups aquella setmana, per seccions, amb el pòdcast i el vídeo de cada grup. Tria un grup per veure només el seu.", "semana_actual": "Resum setmanal", "grupo_filtro": "Veure el d'un grup", "grupo_todos": "Tots", "sin_grupo": "Aquest grup no té peces aquesta setmana.", "nb_h": "El pòdcast i el vídeo de la setmana", "nb_txt": "Cada dilluns, NotebookLM, de Google, prepara un pòdcast i un vídeo de cada grup amb tota la seva conversa de la setmana, també el que el diari no ha explicat. Un agent d'IA els contrasta amb la conversa abans de publicar-los.", "nb_es": "Són en castellà.", "nb_pendiente": "El pòdcast i el vídeo de cada grup s'afegeixen aquí dilluns al matí.", "nb_video": "Vídeo", "nb_ver": "Reproduir el vídeo de {g}", "nb_youtube": "Mira'l a YouTube", "nb_podcast": "Pòdcast", "nb_archive": "Escolta'l a Internet Archive", "cs_h": "El més important de la setmana", "cs_h_g": "El més important de la setmana a {g}", "cs_nota": "L'escriu un agent d'IA amb el que va explicar el diari aquella setmana, i un altre el contrasta amb cada peça abans de publicar-lo.", "numeros_semana": "Els números de la setmana", "sem_ant": "Setmana anterior", "sem_sig": "Setmana següent", "todo_mes": "Tot el mes", "mes": "El mes", "mes_txt": "Les setmanes del mes, amb la peça que va obrir cada número.", "mes_ant": "Mes anterior", "mes_sig": "Mes següent", "por_meses": "Per mesos", "ver_semana": "Tota la setmana, per seccions", "con_nb": "Amb el pòdcast i el vídeo de cada grup", 
+        "semana": "La setmana", "semana_txt": "Tot el que va explicar el diari del que es va parlar als grups aquella setmana, per seccions, amb el pòdcast i el vídeo de cada grup. Tria un grup per veure només el seu.", "semana_actual": "Resum setmanal", "grupo_filtro": "Veure el d'un grup", "grupo_todos": "Tots", "sin_grupo": "Aquest grup no té peces aquesta setmana.", "nb_h": "El pòdcast i el vídeo de la setmana", "nb_txt": "Cada dilluns, NotebookLM, de Google, prepara un pòdcast i un vídeo de cada grup amb tota la seva conversa de la setmana, també el que el diari no ha explicat. Un agent d'IA els contrasta amb la conversa abans de publicar-los.", "nb_es": "Són en castellà.", "nb_pendiente": "El pòdcast i el vídeo de cada grup s'afegeixen aquí dilluns al matí.", "nb_video": "Vídeo", "nb_ver": "Reproduir el vídeo de {g}", "nb_youtube": "Mira'l a YouTube", "nb_podcast": "Pòdcast", "nb_archive": "Escolta'l a Internet Archive", "cs_h": "El més important de la setmana", "cs_h_g": "El més important de la setmana a {g}", "cs_nota": "L'escriu un agent d'IA amb el que va explicar el diari aquella setmana, i un altre el contrasta amb cada peça abans de publicar-lo.", "numeros_semana": "Els números de la setmana", "sem_ant": "Setmana anterior", "sem_sig": "Setmana següent", "todo_mes": "Tot el mes", "mes": "El mes", "mes_txt": "Les setmanes del mes, amb la peça que va obrir cada número.", "mes_ant": "Mes anterior", "mes_sig": "Mes següent", "por_meses": "Per mesos", "anyo_ant": "Any anterior", "anyo_sig": "Any següent", "buscar_en": "Cerca a {s}", "ver_semana": "Tota la setmana, per seccions", "con_nb": "Amb el pòdcast i el vídeo de cada grup", 
         "todos_numeros": "Hemeroteca: tots els números",
         "saltar": "Salta al contingut", "compartir": "Comparteix", "copiado": "Enllaç copiat", "una_columna": "Una columna", "columnas": "Columnes", "una_columna_t": "Llegir les notícies en una sola columna", "columnas_t": "Llegir les notícies en columnes, com en un diari", "compartir_breve": "Comparteix aquest breu", "mas_en": "Més a", "mas_diario": "Més al diari",
         "no_existe": "Aquesta pàgina no existeix",
@@ -1199,15 +1199,16 @@ def origen(p):
     n, a = GRUPOS.get(p.get("grupo"), ("", ""))
     u = url_mensaje(p.get("mensaje"))
     if p.get("seccion") == "biblioteca" and u:
-        return f'<p class="origen">{enlace(u, L["en_biblioteca"])}</p>'
+        return f'<p class="origen" data-pagefind-ignore>{enlace(u, L["en_biblioteca"])}</p>'
+    # Los enlaces no son texto de la pieza: el buscador no los lee, o salen en los fragmentos (ADR 0062)
     if p.get("recursos"):   # un artículo del repositorio: no nace de una conversación
-        return f'<p class="origen">{enlace(REPOSITORIO, L["en_repositorio"])}</p>'
+        return f'<p class="origen" data-pagefind-ignore>{enlace(REPOSITORIO, L["en_repositorio"])}</p>'
     bib = url_mensaje(p.get("biblioteca"))   # una noticia sobre un documento que luego entró en la Biblioteca
     if u and bib:
-        return f'<p class="origen">{enlace(u, L["leer_conv"] + " " + n)} · {enlace(bib, L["en_biblioteca"])}</p>'
+        return f'<p class="origen" data-pagefind-ignore>{enlace(u, L["leer_conv"] + " " + n)} · {enlace(bib, L["en_biblioteca"])}</p>'
     if u:
-        return f'<p class="origen">{enlace(u, L["leer_conv"] + " " + n)}</p>'
-    return f'<p class="origen">{L["tema_en"]} {enlace("https://t.me/" + a, n)}</p>' if n else ""
+        return f'<p class="origen" data-pagefind-ignore>{enlace(u, L["leer_conv"] + " " + n)}</p>'
+    return f'<p class="origen" data-pagefind-ignore>{L["tema_en"]} {enlace("https://t.me/" + a, n)}</p>' if n else ""
 
 
 def fecha_rotulo(p):
@@ -1615,10 +1616,20 @@ def enlaces_biblioteca(prof, texto, eds, propia=None):
     return re.sub(r"\]\((https://t\.me/ChatGPTedu/21753/(\d+))\)", cambia, texto)
 
 
-def indexado(clave, nombre, fecha):
-    """Atributos de Pagefind: solo se indexa esto; con su sección como filtro, su fecha y su color."""
+def indexado(clave, nombre, fecha, imagen=None):
+    """Atributos de Pagefind: solo se indexa esto; con su sección como filtro, su fecha, su color y, si la tiene, la
+    imagen de su miniatura en los resultados (ADR 0062)."""
+    # Lo devuelto acaba en «</span», que cierra con el «>» que pone quien lo llama
+    img = f'<span hidden data-pagefind-meta="imagen:{e(imagen)}"></span>' if imagen else ""
     return (f' data-pagefind-body data-pagefind-filter="seccion:{e(nombre)}" data-pagefind-sort="fecha:{e(fecha)}"'
-            f' data-pagefind-meta="fecha:{e(fecha_corta(publicacion(fecha)))}"><span hidden data-pagefind-meta="clave:{e(clave)}"></span')
+            f' data-pagefind-meta="fecha:{e(fecha_corta(publicacion(fecha)))}">{img}<span hidden data-pagefind-meta="clave:{e(clave)}"></span')
+
+
+def imagen_buscador(fecha, x):
+    """La imagen de la miniatura en el buscador: el dibujo suelto de la pieza o la captura de su recurso, con la
+    dirección desde la raíz del sitio, para que valga también en una copia local."""
+    u = imagen_pieza(fecha, x)[0]
+    return u[len(BASE) - 1:] if u and u.startswith(BASE) else u
 
 
 def enlaces_recurso(r):
@@ -1632,7 +1643,7 @@ def ficha_recurso(pid, r):
     filas = "".join(f"<dt>{L[k]}</dt><dd>{e(r.get(c))}</dd>" for k, c in
                     (("rec_titulo", "titulo"), ("rec_autoria", "autoria"), ("rec_licencia", "licencia")) if r.get(c))
     return (f'<aside class="ficha-doc" aria-labelledby="rec-{e(pid)}"><h2 id="rec-{e(pid)}">{L["el_recurso"]}</h2>'
-            f'<dl>{filas}</dl><p class="doc-leer">{enlaces_recurso(r)}</p></aside>')
+            f'<dl>{filas}</dl><p class="doc-leer" data-pagefind-ignore>{enlaces_recurso(r)}</p></aside>')
 
 
 def bloque_recurso(prof, pid, r):
@@ -1643,7 +1654,7 @@ def bloque_recurso(prof, pid, r):
             f'<h2 id="r-{e(pid)}-{e(r.get("id", ""))}" class="ladillo">{titulo}</h2>'
             f'{f"<p class=recurso-datos>{datos}</p>" if datos else ""}'
             f'<div class="recurso-cuerpo">{captura(prof, r, ampliable=True) if r.get("captura") else ""}'
-            f'<div class="recurso-texto">{texto}<p class="recurso-enlaces">{enlaces_recurso(r)}</p></div></div></section>')
+            f'<div class="recurso-texto">{texto}<p class="recurso-enlaces" data-pagefind-ignore>{enlaces_recurso(r)}</p></div></div></section>')
 
 
 def articulo(prof, ruta, d, p, eds):
@@ -1660,7 +1671,7 @@ def articulo(prof, ruta, d, p, eds):
     if doc:
         filas = "".join(f"<dt>{L[k]}</dt><dd>{e(doc.get(c))}</dd>" for k, c in
                         (("doc_titulo", "titulo"), ("doc_autoria", "autoria"), ("doc_anyo", "anyo"), ("doc_idioma", "idioma"), ("doc_licencia", "licencia")) if doc.get(c))
-        leer = f'<p class="doc-leer">{enlace(doc["url"], L["doc_leer"])}</p>' if doc.get("url") else ""
+        leer = f'<p class="doc-leer" data-pagefind-ignore>{enlace(doc["url"], L["doc_leer"])}</p>' if doc.get("url") else ""
         ficha_doc = f'<aside class="ficha-doc" aria-labelledby="doc-{e(p["id"])}"><h2 id="doc-{e(p["id"])}">{L["el_documento"]}</h2><dl>{filas}</dl>{leer}</aside>'
     recs = p.get("recursos") or []
     bloques = ""
@@ -1681,7 +1692,7 @@ def articulo(prof, ruta, d, p, eds):
                   datos=datos_noticia(p["titular"], ruta, d["fecha"], imagen_pieza(d["fecha"], p)[0], p.get("corregido"))) + f"""<body class="pag-articulo">
 {cabecera(prof, ruta, d["fecha"], d["numero"], False, h1=False, dia=d)}
 <main class="articulo en-columnas">
-  <article{f' class="sec-{e(p["seccion"])}"' if p.get("seccion") else ""}{indexado(p.get("seccion") or "editorial", L["secciones"].get(p.get("seccion"), L["quees"]), d["fecha"])}>
+  <article{f' class="sec-{e(p["seccion"])}"' if p.get("seccion") else ""}{indexado(p.get("seccion") or "editorial", L["secciones"].get(p.get("seccion"), L["quees"]), d["fecha"], imagen_buscador(d["fecha"], p))}>
     {qr_papel(ruta)}
     {linea}
     {cab}
@@ -1840,7 +1851,7 @@ def articulo_reportaje(prof, ruta, d, r, eds):
                   datos=datos_noticia(r["titular"], ruta, d["fecha"], imagen_pieza(d["fecha"], r)[0], r.get("corregido"))) + f"""<body class="pag-articulo">
 {cabecera(prof, ruta, d["fecha"], d["numero"], False, h1=False, dia=d)}
 <main class="articulo reportaje en-columnas">
-  <article class="sec-reportaje"{indexado("reportaje", L["reportajes"], d["fecha"])}>
+  <article class="sec-reportaje"{indexado("reportaje", L["reportajes"], d["fecha"], imagen_buscador(d["fecha"], r))}>
     {qr_papel(ruta)}
     <p class="seccion"><span><a href="{prof}reportajes.html">{icono("reportaje")} {L["reportaje"]}</a></span> <span class="seccion-dcha">{boton_columnas()} <span class="fecha-pieza">{fecha_corta(publicacion(r["fecha"]))}</span></span></p>
     {cab}
@@ -2938,7 +2949,7 @@ def sitemap(eds):
 
 
 SCRIPT_BUSCAR = """<script type="module">
-const T = __TEXTOS__, POR_PAGINA = 10;
+const T = __TEXTOS__, ICONOS = __ICONOS__, POR_PAGINA = 10;
 const campo = document.getElementById('q'), estado = document.getElementById('estado'), lista = document.getElementById('resultados'),
       filtros = document.getElementById('filtros'), mas = document.getElementById('mas');
 let pf = null, seccion = null, actuales = [], mostrados = 0, vuelta = 0;
@@ -2976,7 +2987,18 @@ async function siguientes() {
     const h = document.createElement('h2'); h.className = 'titular';
     const a = document.createElement('a'); a.href = d.url; a.textContent = (d.meta && d.meta.title) || d.url; h.append(a);
     const x = document.createElement('p'); x.className = 'extracto'; x.innerHTML = d.excerpt;   // Pagefind lo da escapado, con <mark>
-    li.append(rot, h, x); lista.append(li);
+    // Puntos suspensivos donde el fragmento corta el texto: delante si no empieza al principio, detrás si no
+    // llega al final (Juanjo, 14-11-2026, ADR 0062)
+    const plano = s => (s || '').replace(/\\s+/g, ' ').trim(), todo = plano(d.content), trozo = plano(x.textContent);
+    if (trozo && !todo.startsWith(trozo)) x.prepend('…\\u00a0');   // sin partir: los puntos no quedan solos en su línea
+    if (trozo && !todo.endsWith(trozo)) x.append('\\u00a0…');
+    // Una miniatura pequeña bajo el titular, con el texto alrededor y el titular entero (ADR 0062): el dibujo de la
+    // pieza o la captura de su recurso; sin ella (los breves), el icono de la sección sobre su color
+    const fig = document.createElement('a'); fig.className = 'miniatura'; fig.href = d.url; fig.tabIndex = -1; fig.setAttribute('aria-hidden', 'true');
+    const img = d.meta && d.meta.imagen;
+    if (img) { const im = document.createElement('img'); im.src = img; im.alt = ''; im.loading = 'lazy'; im.decoding = 'async'; fig.append(im); }
+    else { fig.classList.add('sin-imagen'); fig.innerHTML = ICONOS[(d.meta && d.meta.clave) || ''] || ''; }
+    li.append(rot, h, fig, x); lista.append(li);
   }
   mostrados += tanda.length; mas.hidden = mostrados >= actuales.length;
 }
@@ -2992,7 +3014,9 @@ async function buscar() {
   estado.textContent = n === 0 ? T.sin_resultados : n === 1 ? T.resultados_1 : T.resultados_n.replace('{n}', n);
   pintaFiltros(r); await siguientes();
 }
-campo.addEventListener('input', () => { seccion = null; buscar(); });
+// La sección elegida se mantiene al escribir otra búsqueda, hasta pulsar «Todas»: quien llega desde el buscador de una
+// sección sigue buscando en ella (ADR 0062)
+campo.addEventListener('input', () => buscar());
 document.getElementById('buscador').addEventListener('submit', ev => { ev.preventDefault(); buscar(); });
 mas.addEventListener('click', siguientes);
 if (campo.value) buscar(); else campo.focus();
@@ -3002,7 +3026,9 @@ if (campo.value) buscar(); else campo.focus();
 def pagina_buscar(eds):
     """El buscador (ADR 0007): Pagefind en el navegador, sin servidor; busca en la lengua de la página."""
     textos = {k: L[k] for k in ("resultados_1", "resultados_n", "sin_resultados", "todas", "mas_resultados", "buscando", "sin_buscador")}
-    script = SCRIPT_BUSCAR.replace("__TEXTOS__", json.dumps(textos, ensure_ascii=False)).replace("__RUTA__", recursos("") or "./")
+    iconos = {c: icono(c) for c in TODAS_SECCIONES + ["reportaje", "breves"]}
+    script = (SCRIPT_BUSCAR.replace("__TEXTOS__", json.dumps(textos, ensure_ascii=False)).replace("__RUTA__", recursos("") or "./")
+              .replace("__ICONOS__", json.dumps(iconos, ensure_ascii=False)))
     return cabeza(f'{L["buscar"]} | {L["titulo"]}', "", L["buscar_txt"], "buscar.html") + f"""<body class="pag-seccion">
 {cabecera("", "buscar.html", eds[-1]["fecha"], eds[-1]["numero"], True, h1=False)}
 <main class="portada pagina-buscar">
@@ -3043,6 +3069,7 @@ def lista_seccion(eds, clave):
             "activa": clave, "meta": L["descripciones"][clave].format(enlace=L["biblioteca_enlace"], repositorio=L["repositorio_enlace"]),
             "descripcion": descripcion(clave), "items": todas, "fecha": lambda p: p["fecha"], "n": RECIENTES["seccion"],
             "pintar": lambda prof, ps: en_filas([pieza(prof, p, "destacada", 2, True, True, sin_seccion=True, relleno=True) for p in ps], "fila-seccion"),
+            "indice": indice_mes, "filtro": nombre,
             "vacio": L["sin_piezas"], "main": "portada", "scripts": SCRIPT_FILAS}
 
 
@@ -3052,6 +3079,7 @@ def lista_reportajes(eds):
             "clase": "sec-reportaje", "activa": "reportajes", "meta": L["descripciones"]["reportajes"],
             "descripcion": descripcion("reportajes"), "items": reps, "fecha": lambda r: r["fecha"], "n": RECIENTES["reportajes"],
             "pintar": lambda prof, rs: "".join(franja_reportaje(prof, r) for r in rs),
+            "indice": indice_mes, "filtro": L["reportajes"],
             "vacio": L["sin_reportajes"], "main": "portada", "scripts": ""}
 
 
@@ -3063,7 +3091,7 @@ def lista_breves(eds):
     return {"carpeta": "breves", "pagina": "breves.html", "nombre": L["breves"], "icono": icono("breves"), "clase": "sec-breves",
             "activa": None, "meta": L["descripciones"]["breves"], "descripcion": descripcion("breves"),
             "items": [d for d in reversed(eds) if d.get("breves")], "fecha": lambda d: d["fecha"], "n": RECIENTES["breves"],
-            "pintar": pintar, "vacio": "", "main": "portada pagina-breves", "scripts": ""}
+            "pintar": pintar, "filtro": L["breves"], "vacio": "", "main": "portada pagina-breves", "scripts": ""}
 
 
 def lista_vinetas(eds):
@@ -3085,44 +3113,131 @@ def meses_lista(cfg):
     return sorted({mes_pub(cfg["fecha"](x)) for x in cfg["items"]}, reverse=True)
 
 
+def indice_mes(prof, ps):
+    """La página de un mes como índice (ADR 0062): los titulares por días, del más reciente al más antiguo, con su
+    entradilla y sin dibujos, para recorrer un mes entero de un vistazo. El día es el de publicación, el que ve el
+    lector, y enlaza a su número."""
+    dias = {}
+    for p in ps:
+        dias.setdefault(publicacion(p["fecha"]), []).append(p)
+    bloques = []
+    for dia, xs in dias.items():
+        items = "".join(f'<li><h3 class="titular"><a href="{href(prof, p)}">{e(p["titular"])}</a></h3>'
+                        f'<p class="entradilla">{e(p.get("entradilla"))}</p></li>' for p in xs)
+        bloques.append(f'<section class="indice-dia"><h2><a href="{prof}{xs[0]["fecha"]}/">{mayus(fecha_larga(dia))}</a></h2>'
+                       f'<ul class="indice-mes">{items}</ul></section>')
+    return "".join(bloques)
+
+
+def buscador_lista(cfg, prof):
+    """Un buscador que busca solo en esta sección (ADR 0062): lleva al buscador del diario con la sección ya
+    elegida, que es el filtro que Pagefind tiene de cada pieza. Es un formulario corriente: va también sin script."""
+    if not cfg.get("filtro"):
+        return ""
+    rotulo = e(L["buscar_en"].format(s=cfg["filtro"]))
+    return (f'<form class="buscador lista-buscar" role="search" action="{prof}buscar.html">'
+            f'<label class="solo-lector" for="q">{rotulo}</label>'
+            f'<span class="campo">{LUPA}<input id="q" name="q" type="search" autocomplete="off" placeholder="{rotulo}"></span>'
+            f'<input type="hidden" name="seccion" value="{e(cfg["filtro"])}"></form>')
+
+
+def selector_meses(cfg, prof, actual=None):
+    """«Por meses» como el calendario de la hemeroteca (ADR 0062): un año cada vez, con flechas, y sus doce meses en
+    rejilla; los que tienen algo enlazan a su página y los demás van en gris. El que se está viendo, en azul; el
+    mes en curso, rodeado con el bolígrafo rojo (lo pone SCRIPT_MESES, con la fecha de quien lo mira). Sin script,
+    todos los años, uno debajo de otro."""
+    meses = set(meses_lista(cfg))
+    anyos = sorted({int(m[:4]) for m in meses})
+    anyos = list(range(anyos[0], anyos[-1] + 1))
+    visible = int(actual[:4]) if actual else anyos[-1]
+    abrev = [m + ("." if L["codigo"] in ("es", "gl") else "") for m in MESES_ABREV[L["codigo"]].split()]
+    bloques = []
+    for y in anyos:
+        celdas = []
+        for i in range(12):
+            m = f"{y}-{i + 1:02d}"
+            nombre = e(mes_largo(m + "-01"))
+            if m in meses:
+                elegido = ' class="elegido" aria-current="page"' if m == actual else ""
+                celdas.append(f'<li data-mes="{m}"><a href="{prof}{cfg["carpeta"]}/{m}.html" title="{nombre}" '
+                              f'aria-label="{nombre}"{elegido}>{e(abrev[i])}</a></li>')
+            else:
+                celdas.append(f'<li data-mes="{m}"><span><abbr title="{nombre}">{e(abrev[i])}</abbr></span></li>')
+        bloques.append(
+            f'<div class="meses-anyo" data-anyo="{y}"{"" if y == visible else " hidden"}><div class="cal-nav">'
+            f'<button type="button" class="cal-ant" title="{L["anyo_ant"]}" aria-label="{L["anyo_ant"]}" hidden>{CHEVRON_IZQ}</button>'
+            f'<p class="meses-titulo">{y}</p>'
+            f'<button type="button" class="cal-sig" title="{L["anyo_sig"]}" aria-label="{L["anyo_sig"]}" hidden>{CHEVRON_DER}</button></div>'
+            f'<ol class="meses-rejilla">{"".join(celdas)}</ol></div>')
+    return (f'<div class="selector-meses">{"".join(bloques)}</div>'
+            '<noscript><style>.meses-anyo[hidden]{display:block}</style></noscript>')
+
+
+SCRIPT_MESES = """<script>
+(() => {
+  // Un año cada vez, con flechas, como el mes en la hemeroteca (ADR 0062); el mes en curso, con el bolígrafo rojo
+  const h = new Date(), hoy = `${h.getFullYear()}-${String(h.getMonth() + 1).padStart(2, '0')}`;
+  document.querySelectorAll('.selector-meses').forEach(s => {
+    const bloques = [...s.querySelectorAll('.meses-anyo')];
+    function ver(i, foco) {
+      bloques.forEach((b, j) => { b.hidden = j !== i; });
+      const b = bloques[i].querySelector(foco);
+      (b.disabled ? bloques[i].querySelector(foco === '.cal-ant' ? '.cal-sig' : '.cal-ant') : b).focus();
+    }
+    bloques.forEach((b, i) => {
+      const ant = b.querySelector('.cal-ant'), sig = b.querySelector('.cal-sig');
+      ant.hidden = sig.hidden = false;
+      ant.disabled = i === 0; sig.disabled = i === bloques.length - 1;
+      ant.addEventListener('click', () => ver(i - 1, '.cal-ant'));
+      sig.addEventListener('click', () => ver(i + 1, '.cal-sig'));
+    });
+    const li = s.querySelector(`li[data-mes="${hoy}"]`);
+    if (li) li.classList.add('hoy');
+  });
+})();
+</script>"""
+
+
 def pagina_lista(eds, cfg, mes=None):
     """La página de una sección (o de los breves, los reportajes o las viñetas) o, con `mes`, la de uno de sus meses."""
-    meses = meses_lista(cfg)
+    hay_meses = len(cfg["items"]) > cfg["n"]
+    buscador = buscador_lista(cfg, "" if mes is None else "../")
     if mes is None:
         prof, ruta = "", cfg["pagina"]
         items = cfg["items"][:cfg["n"]]
         cuerpo = cfg["pintar"](prof, items) if items else (f'<p class="vacio">{cfg["vacio"]}</p>' if cfg["vacio"] else "")
-        if len(cfg["items"]) > cfg["n"]:
-            enlaces = " · ".join(f'<a href="{cfg["carpeta"]}/{m}.html">{mes_largo(m + "-01")}</a>' for m in meses)
+        if hay_meses:
             cuerpo += (f'<nav class="archivo-meses" aria-labelledby="t-meses"><h2 id="t-meses">{L["por_meses"]}</h2>'
-                       f'<p>{enlaces}</p></nav>')
+                       f'{selector_meses(cfg, prof)}</nav>')
         titulo, encabezado = f'{cfg["nombre"]} | {L["titulo"]}', (
             f'<h1 class="titulo-seccion {cfg["clase"]}">{cfg["icono"]} {cfg["nombre"]}</h1>\n'
-            f'<p class="descripcion-seccion">{cfg["descripcion"]}</p>')
+            f'<p class="descripcion-seccion">{cfg["descripcion"]}</p>\n{buscador}')
+        main = cfg["main"]
     else:
+        # Como la hemeroteca: a la izquierda, el título, el buscador y los meses; a la derecha, el mes
         prof, ruta = "../", f'{cfg["carpeta"]}/{mes}.html'
-        cuerpo = cfg["pintar"](prof, [x for x in cfg["items"] if mes_pub(cfg["fecha"](x)) == mes])
-        i = meses.index(mes)
-        nav = []
-        if i + 1 < len(meses):
-            nav.append(f'<a href="{meses[i + 1]}.html">← {L["mes_ant"]}</a>')
-        nav.append(f'<a href="../{cfg["pagina"]}">{cfg["nombre"]}</a>')
-        if i > 0:
-            nav.append(f'<a href="{meses[i - 1]}.html">{L["mes_sig"]} →</a>')
+        del_mes = [x for x in cfg["items"] if mes_pub(cfg["fecha"](x)) == mes]
         nombre_mes = mes_largo(mes + "-01")
-        titulo, encabezado = f'{cfg["nombre"]} · {nombre_mes} | {L["titulo"]}', (
-            f'<p class="seccion semana-rotulo {cfg["clase"]}"><a href="../{cfg["pagina"]}">{cfg["icono"]} {cfg["nombre"]}</a></p>\n'
-            f'<h1 class="titulo-seccion">{nombre_mes}</h1>\n'
-            f'<nav class="semana-nav" aria-label="{L["navegacion"]}">{" · ".join(nav)}</nav>')
+        titulo = f'{cfg["nombre"]} · {nombre_mes} | {L["titulo"]}'
+        izquierda = (f'<p class="seccion semana-rotulo {cfg["clase"]}"><a href="../{cfg["pagina"]}">{cfg["icono"]} {cfg["nombre"]}</a></p>\n'
+                     f'<h1 class="titulo-seccion">{nombre_mes}</h1>\n{buscador}'
+                     f'<nav class="mes-meses" aria-label="{L["por_meses"]}">{selector_meses(cfg, prof, mes)}</nav>')
+        if cfg.get("indice"):
+            encabezado, cuerpo = "", (f'<div class="mes-lista"><div class="mes-izq">{izquierda}</div>'
+                                      f'<div class="mes-indice">{cfg["indice"](prof, del_mes)}</div></div>')
+            main = f'{cfg["main"]} mes-ancha'
+        else:
+            encabezado, cuerpo, main = izquierda, cfg["pintar"](prof, del_mes), cfg["main"]
     return cabeza(titulo, prof, cfg["meta"], ruta) + f"""<body class="pag-seccion">
 {cabecera(prof, ruta, eds[-1]["fecha"], eds[-1]["numero"], True, h1=False, activa=cfg["activa"])}
-<main class="{cfg["main"]}">
+<main class="{main}">
 {encabezado}
 {cuerpo}
 </main>
 {pie(prof, eds, None)}
 {SCRIPT_TEMA}
 {cfg["scripts"]}
+{SCRIPT_MESES if hay_meses else ""}
 </body>
 </html>"""
 
@@ -3794,6 +3909,8 @@ def generar_idioma(codigo):
             dibujo_suelto(d["fecha"], x, x.get("seccion", ""))
         if d.get("reportaje"):
             dibujo_suelto(d["fecha"], d["reportaje"], "reportaje")
+        if d.get("editorial"):   # la presentación: su página y el buscador apuntan a este dibujo (ADR 0062)
+            dibujo_suelto(d["fecha"], d["editorial"], "")
     escribir(base / "manifest.webmanifest", manifiesto())
     escribir(base / "sin-conexion.html", pagina_sin_conexion())
     ultimo = eds[-1]

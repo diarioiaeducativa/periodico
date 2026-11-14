@@ -14,11 +14,13 @@ Se le propuso dejar en cada página lo reciente y el resto por meses, y pidió p
 - **Cada página enseña lo más reciente**: las 7 últimas viñetas, los breves de los 7 últimos números que los
   tienen, las 12 últimas piezas de cada sección (cuatro filas de tres) y los 4 últimos reportajes, un mes
   (`RECIENTES` en `generar.py`).
-- **Al pie, «Por meses»**: un enlace por cada mes con algo publicado, del más reciente al más antiguo, también el
-  mes en curso. Solo sale cuando hay más de lo que cabe en la página: mientras no, la página lo enseña todo.
+- **Al pie, «Por meses»**: cada mes con algo publicado, también el mes en curso, en un selector como el
+  calendario de la hemeroteca, un año cada vez (ADR 0062; antes, una línea con un enlace por mes). Solo sale
+  cuando hay más de lo que cabe en la página: mientras no, la página lo enseña todo.
 - **Cada mes, en su página** (`<carpeta>/AAAA-MM.html`: `vineta/`, `breves/`, `reportajes/` y una carpeta por
   sección), con todo lo que salió ese mes, la misma composición que la página principal y, arriba, el rótulo de
-  la página de la que cuelga y «← Mes anterior · nombre · Mes siguiente →», como los meses de la hemeroteca.
+  la página de la que cuelga y el mismo selector de meses. En las secciones y «Reportajes», el mes es un índice de
+  titulares por días, sin dibujos, con un buscador de la sección (ADR 0062).
 - **El mes es el de publicación**, el de la fecha que ve el lector junto a cada pieza, no el de las
   conversaciones: lo que cuenta el 31 de octubre sale el 1 de noviembre y va en noviembre.
 - Las páginas de mes entran en el mapa del sitio. Una sola función (`pagina_lista()`) hace las principales y

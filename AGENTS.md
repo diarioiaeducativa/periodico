@@ -180,6 +180,12 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
   titulares, de `datos/AAAA-MM.json`, y su portada en miniatura, que `scripts/portadas.py` captura en
   `publicar-nas.sh` y se guarda en `portadas/`) y el resumen de cada semana. El día se elige con un clic, nunca
   al pasar el ratón. En las páginas de un número anterior, el menú lleva a su portada («‹ Núm. 9 ›») y a la de hoy.
+- **Las páginas que acumulan** (ADR 0050 y 0062): las secciones, «Breves», «Reportajes» y «La viñeta» enseñan lo
+  reciente (`RECIENTES`) y, al pie, los meses en un selector como la hemeroteca (`selector_meses()`); la página de
+  un mes de una sección o de «Reportajes» es un índice de titulares (`indice_mes()`). Cada una lleva un buscador
+  de la sección (`buscador_lista()`), que abre `buscar.html` con la sección elegida: su valor es el nombre de la
+  sección en cada idioma, el filtro de Pagefind. La miniatura de cada resultado es la meta `imagen` que pone
+  `indexado()`; lo que devuelve `indexado()` acaba en `</span` y lo cierra quien lo llama.
 - **Edición en papel** (ADR 0054): botón «Imprimir» en cada pieza y `FECHA/papel.html` para el número entero; la
   maqueta, en el `@media print` de `estaticos/diario.css`. Lo que solo va en papel lleva `solo-papel` y no sale nunca
   en pantalla. El QR lo dibuja segno (en el `Dockerfile`). No se guarda ningún PDF. El aviso de IA, de

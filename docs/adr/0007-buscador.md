@@ -19,14 +19,16 @@ Juanjo pidió el buscador y aprobó la propuesta («hazlo y publícalo directame
   encuentra «evaluación»). `generar.py` sigue sin dependencias: el índice es un paso aparte en
   `publicar.sh` y `scripts/publicar-nas.sh`; si falla, el sitio sale igual con el índice anterior.
 - **Qué se indexa**: solo el `<article>` de cada pieza, artículo de la Biblioteca, reportaje,
-  presentación y breve (`data-pagefind-body`), sin compartir ni la lista de fuentes
-  (`data-pagefind-ignore`). Cada uno lleva su sección como filtro, su fecha como dato y como
+  presentación y breve (`data-pagefind-body`), sin compartir, la lista de fuentes ni los enlaces de origen
+  y de las fichas (`data-pagefind-ignore`; los enlaces, desde el ADR 0062). Cada uno lleva su sección como filtro, su fecha como dato y como
   orden, y la clave de su sección para el color. Las viñetas no tienen página propia y no se
   indexan.
 - **La página «Buscar»** (`buscar.html`, en las dos ediciones), con interfaz propia sobre la API
   de Pagefind para que siga la maqueta y el tema: campo, filtros por sección con su recuento,
   resultados de diez en diez con sección, fecha, titular y fragmento con las palabras marcadas.
   La búsqueda y la sección quedan en la dirección (`?q=…&seccion=…`), para compartirla.
+  La sección elegida se mantiene al escribir otra búsqueda, hasta pulsar «Todas»; cada resultado lleva una
+  miniatura bajo el titular, y cada sección, un buscador que abre este con ella elegida (ADR 0062).
 - **La lupa** (icono `search` de Lucide) va en la cabecera, junto al enlace a la otra edición y
   el botón del tema, con su misma forma. Para que los tres quepan en un móvil de 360 px, por
   debajo de 26 rem se acerca la separación y el enlace a la otra edición dice solo el nombre de
