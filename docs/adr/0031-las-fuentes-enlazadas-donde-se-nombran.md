@@ -1,6 +1,6 @@
 # 31. Las fuentes, enlazadas donde se nombran
 
-Fecha: 2026-11-08 · Estado: aceptado
+Fecha: 2026-11-08 (ampliado el 2026-11-14) · Estado: aceptado
 
 ## Contexto
 
@@ -12,11 +12,26 @@ enlazaba nada. En lo publicado hasta entonces, 66 de las 136 fuentes en castella
 al pie. Juanjo, 08-11-2026, ante el artículo de Bilateria sin enlace: «está bien que esté abajo
 pero también debería estar aquí, lo mismo para el resto de artículos».
 
+El 14-11-2026, en la vista previa del número del 13, la pieza sobre el INTEF en SIMO nombraba la
+actualización 2026 de su «Guía sobre el uso de la inteligencia artificial en el ámbito educativo»
+sin enlazarla y terminaba con «no se ha comprobado el contenido de las guías presentadas». Esa
+guía es la versión 2.0, que el INTEF publicó el 8 de septiembre y que estaba en la Biblioteca
+digital de ChatGPT-IA-edu desde el 9. La redacción solo había leído el programa de SIMO, y la
+sección Biblioteca del diario, que empieza el 2 de noviembre, no la tenía. Juanjo: «en la
+biblioteca tenemos esta guia, por que no lo pone? al menos poner el enlace a la guía en internet».
+
 ## Decisión
 
 - **Cada fuente que el texto nombra se enlaza en su primera mención**, con su nombre como texto
   del enlace; `fuentes` sigue al pie con todas. La norma está en `encargos/enlaces.md`, común a
   redacción, Biblioteca, Repositorio y reportaje, y cada encargo la recuerda junto a `fuentes`.
+- **Un documento que se nombra se busca y se enlaza** (añadido el 14-11-2026, propuesto por el
+  agente y aprobado por Juanjo): su página oficial en la primera mención y, si está en la
+  Biblioteca digital de ChatGPT-IA-edu, también su mensaje. Si aún no está publicado, se dice así.
+  Para que la redacción lo encuentre, `scripts/preparar.py` añade al final de su entrada la lista
+  de toda la Biblioteca digital (fecha, título y enlace de cada documento), con la misma lectura
+  que el documentalista (`entradas()` de `scripts/biblioteca.py`); los documentos sin ficha, de
+  2025, salen con el nombre del archivo.
 - **El revisor de cada sección lo comprueba** y enlaza lo que falte (pasos 1, 9, 13 y 17).
 - **Lo ya publicado se enlazó también**, en los cinco idiomas y en la reserva, con
   `scripts/enlazar-fuentes.py`: un agente propone dónde va cada enlace y el programa solo lo
@@ -44,7 +59,16 @@ pero también debería estar aquí, lo mismo para el resto de artículos».
 - Recuento de partida: `fuentes` cuyo `url` no aparece en el cuerpo, en `ediciones`,
   `biblioteca`, `reportajes` y `repositorio` del NAS el 08-11-2026.
 
+- Lista de la Biblioteca digital: `preparar.py` ejecutado en el contenedor del NAS con los
+  mensajes del 13-11-2026 dio 180 documentos, todos con título (62 con el nombre del archivo),
+  entre ellos la guía del INTEF (`https://t.me/ChatGPTedu/21753/52295`).
+
 ## Riesgos y limitaciones
+
+- La lista añade unos 15 KB a la entrada de la redacción, y crecerá con la biblioteca. Si un
+  día pesa demasiado, se puede recortar a los documentos de los últimos años.
+- Que la redacción busque la página oficial de un documento depende de su búsqueda en internet:
+  el repaso lo comprueba, pero un documento que no encuentren ninguno de los dos queda sin enlace.
 
 - Si el texto no nombra una fuente (una noticia que solo la usa para comprobar un dato), no se
   enlaza: queda al pie.
@@ -52,6 +76,10 @@ pero también debería estar aquí, lo mismo para el resto de artículos».
   cambia el texto, no que el enlace esté en el mejor sitio.
 
 ## Validación
+
+- 14-11-2026: la pieza del INTEF del número del 13, corregida a mano antes de salir en los cinco
+  idiomas (enlace a la guía, frase de la versión 2.0 con el mensaje de la Biblioteca digital y
+  fuente al pie); comprobado en la vista previa. La regla nueva se verá en los números siguientes.
 
 - Número del 8 de noviembre: las 6 fuentes que faltaban, enlazadas en los cinco idiomas antes de
   publicarse; comprobado en la vista previa (ADR 0025).

@@ -6,6 +6,8 @@
 
 Lee <datos>/<grupo>/mensajes.jsonl y temas.json (los que guarda el Bot de IA Educativa) y
 escribe <salida>/<fecha>.md con los mensajes de ese día y, como contexto, los del anterior.
+Al final, la lista de los documentos de la Biblioteca digital de ChatGPT-IA-edu, para enlazar el
+que una pieza nombre aunque llegara hace meses (encargos/enlaces.md).
 Con RECUPERA=1 (el número del día anterior salió con la reserva, ADR 0021), los del anterior no
 son contexto sino noticia, como los del día: así no se pierde ninguno.
 Sin IA: solo ordena. Termina con código 3 si el día no tiene ningún mensaje en ningún grupo.
@@ -15,6 +17,8 @@ import os
 import json
 import pathlib
 import sys
+
+from biblioteca import ALIAS, TEMA, entradas   # los documentos de la Biblioteca digital (ADR 0006)
 
 NOMBRES = {"chatgpt": ("ChatGPT-IA-edu", "https://t.me/ChatGPTedu"),
            "vce": ("Vibe Coding Educativo", "https://t.me/vceduca"),
@@ -47,6 +51,26 @@ def fmt(m):
     return f"#{m['id']} · {m['fecha'][11:16]} · tema «{m['tema_nombre']}» · {m['autor']}{r}\n{(m.get('texto') or '').strip()}{web}{imagen}\n"
 
 
+def biblioteca_digital(base):
+    """Los documentos de la Biblioteca digital: fecha, título y enlace al mensaje (ADR 0031)."""
+    try:
+        docs = entradas(base)
+    except OSError:
+        return ""   # sin la lista, la redacción sigue: solo pierde estos enlaces
+    # Sin ficha de texto, el nombre del archivo (los primeros documentos, de 2025, llegaron así)
+    archivos = {}
+    for linea in (base / "chatgpt" / "mensajes.jsonl").open():
+        m = json.loads(linea)
+        if str(m.get("tema")) == TEMA and m.get("archivo"):
+            archivos[str(m["id"])] = "archivo «" + str(m["archivo"]).rsplit(".", 1)[0].replace("_", " ") + "»"
+    lineas = [f"- {d['fecha'][:10]} · {d['titulo'] or archivos.get(str(d['id']), 'sin título')} · "
+              f"https://t.me/{ALIAS}/{TEMA}/{d['id']}"
+              for d in sorted(docs, key=lambda d: d["fecha"], reverse=True)]
+    return ("\n## Documentos de la Biblioteca digital de ChatGPT-IA-edu\n\n"
+            "No son noticia (tienen su sección). Si una pieza nombra uno de estos documentos, se enlaza "
+            "también su mensaje (encargos/enlaces.md). Del más reciente al más antiguo.\n\n" + "\n".join(lineas) + "\n")
+
+
 def main():
     base, out = pathlib.Path(sys.argv[1]), pathlib.Path(sys.argv[2])
     out.mkdir(parents=True, exist_ok=True)
@@ -70,6 +94,7 @@ def main():
             partes += [fmt(m) for m in prev]
             partes.append(f"\n### DÍA {dia}: {len(hoy)} mensajes\n")
             partes += [fmt(m) for m in hoy]
+        partes.append(biblioteca_digital(base))
         (out / f"{dia}.md").write_text("\n".join(partes))
         print(f"{dia}: {total} mensajes del día")
         vacio = vacio or total == 0

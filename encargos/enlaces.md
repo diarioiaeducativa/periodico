@@ -13,6 +13,20 @@ fuentes del pie.
 - Solo la primera mención, y una vez cada fuente. Lo que el texto no nombra no se enlaza.
 - `fuentes` sigue al pie con todas, también las enlazadas en el texto.
 
+## Los documentos que se nombran
+
+Un anuncio, una noticia o un mensaje que habla de un documento publicado (una guía, un informe,
+una norma) no basta: el lector quiere el documento.
+
+- **Se busca el documento y se enlaza su página oficial** en la primera mención, con su título
+  como texto del enlace, y va también a `fuentes`. Si no se ha podido leer, se dice, pero el
+  enlace va igual: el lector sí puede leerlo.
+- **Si está en la Biblioteca digital de ChatGPT-IA-edu**, se dice y se enlaza también su
+  mensaje: la redacción tiene la lista al final de su entrada, con la fecha y el enlace de cada uno.
+  Atención a las versiones: una guía actualizada es otro documento, con otra fecha.
+- Si el documento todavía no está publicado (se presenta ese día, se anuncia para más adelante),
+  se dice así, sin enlace inventado.
+
 ## Lo que el diario ya ha publicado
 
 A medida que el diario crece, cada vez más temas continúan algo ya publicado: el lector tiene
