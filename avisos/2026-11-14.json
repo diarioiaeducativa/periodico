@@ -1,0 +1,91 @@
+{
+  "fecha": "2026-11-14",
+  "avisos": {
+    "chatgpt": {
+      "saludo": "Buenos días. Un sábado con guías oficiales y simulaciones hechas por agentes.",
+      "puntos": [
+        "El INTEF tenía previsto presentar en SIMO, el 13 de noviembre, la actualización 2026 de su guía sobre IA en educación y unas orientaciones para integrarla en los centros",
+        "Wharton publica Primer, un sistema abierto en el que varios agentes entrevistan al docente y construyen una simulación; sus autores advierten de que no se ha evaluado en aulas",
+        "La viñeta de Tiza y Algoritmo sigue el rastro de esas orientaciones para alinear la IA con el proyecto educativo del centro"
+      ],
+      "url": "https://diarioiaeducativa.github.io/n/13-chatgpt.html"
+    },
+    "vce": {
+      "saludo": "Buenos días. Trece recursos nuevos del repositorio y un juego de mapas en gallego.",
+      "puntos": [
+        "La semana del repositorio suma 25 recursos, trece de ellos nuevos y de José Luis Miralles Bono: de la normativa y los horarios de conservatorio a simuladores de calidad educativa",
+        "Atlas en xogo, de Luis Vilela Acuña, es una aplicación de mapas interactivos en gallego con zoom y vista 3D; los modos de juego que cuenta su ficha no se han podido comprobar",
+        "Entre los nuevos, Strudel Notebook enseña música y programación con lecciones interactivas, y Tira y Afloja convierte un cuestionario de aula en un pulso entre equipos"
+      ],
+      "url": "https://diarioiaeducativa.github.io/n/13-vce.html"
+    },
+    "edumedia": {
+      "saludo": "Buenos días. Voz a texto, simulaciones con personajes y un relato sobre música.",
+      "puntos": [
+        "ElevenLabs presenta Scribe v3 para transcribir audio y afirma que reduce un 35 % los errores en español; son cifras suyas y el procesamiento es en Estados Unidos por defecto",
+        "Primer parte de una conversación con el docente para generar una simulación con personajes de IA para el alumnado, con informes tras cada sesión; es un prototipo con licencia MIT",
+        "El Último Acorde es un relato cyberpunk que se lee desplazándose por la página, ambientado en una ciudad sin música humana, y puede servir de punto de partida para un debate"
+      ]
+    }
+  },
+  "instagram": "Este número reúne novedades sobre cómo se usa la inteligencia artificial en las aulas. Un instituto estatal presentó en una feria educativa la actualización de su guía sobre IA y unas orientaciones para integrarla en los centros, y un laboratorio universitario publicó un sistema abierto que convierte una conversación con el docente en una simulación para el alumnado. Se suman un modelo de transcripción de voz que promete menos errores en español, un juego de mapas en gallego y trece recursos del repositorio de aplicaciones educativas, de la normativa de conservatorios a juegos de aula.",
+  "titulo": "Diario de IA Educativa · Núm. 13",
+  "fecha_texto": "Sábado, 14 de noviembre de 2026",
+  "url": "https://diarioiaeducativa.github.io/?n=13",
+  "personas": [
+    {
+      "id": 13416701,
+      "piezas": [
+        {
+          "es": {
+            "titular": "Normativa de conservatorios, indicadores y juegos de aula, nuevos en el repositorio",
+            "url": "https://diarioiaeducativa.github.io/2026-11-13/semana-del-repositorio.html"
+          },
+          "ca": {
+            "titular": "Normativa de conservatoris, indicadors i jocs d'aula, nous al repositori",
+            "url": "https://diarioiaeducativa.github.io/ca/2026-11-13/semana-del-repositorio.html"
+          },
+          "gl": {
+            "titular": "Normativa de conservatorios, indicadores e xogos de aula, novidades no repositorio",
+            "url": "https://diarioiaeducativa.github.io/gl/2026-11-13/semana-del-repositorio.html"
+          },
+          "eu": {
+            "titular": "Kontserbatorioetako araudia, adierazleak eta ikasgelako jolasak, berriak biltegian",
+            "url": "https://diarioiaeducativa.github.io/eu/2026-11-13/semana-del-repositorio.html"
+          },
+          "en": {
+            "titular": "Conservatoire regulations, indicators and classroom games, new in the repository",
+            "url": "https://diarioiaeducativa.github.io/en/2026-11-13/semana-del-repositorio.html"
+          }
+        }
+      ]
+    },
+    {
+      "id": 6244163484,
+      "piezas": [
+        {
+          "es": {
+            "titular": "Atlas en xogo, un juego de mapas en gallego, se suma a las aplicaciones de EDUmind",
+            "url": "https://diarioiaeducativa.github.io/2026-11-13/atlas-en-xogo.html"
+          },
+          "ca": {
+            "titular": "Atlas en xogo, un joc de mapes en gallec, se suma a les aplicacions d'EDUmind",
+            "url": "https://diarioiaeducativa.github.io/ca/2026-11-13/atlas-en-xogo.html"
+          },
+          "gl": {
+            "titular": "Atlas en xogo, un xogo de mapas en galego, súmase ás aplicacións de EDUmind",
+            "url": "https://diarioiaeducativa.github.io/gl/2026-11-13/atlas-en-xogo.html"
+          },
+          "eu": {
+            "titular": "Atlas en xogo, galegoz egindako mapa-jolas bat, EDUminden aplikazioetara gehitu da",
+            "url": "https://diarioiaeducativa.github.io/eu/2026-11-13/atlas-en-xogo.html"
+          },
+          "en": {
+            "titular": "Atlas en xogo, a map game in Galician, joins EDUmind’s apps",
+            "url": "https://diarioiaeducativa.github.io/en/2026-11-13/atlas-en-xogo.html"
+          }
+        }
+      ]
+    }
+  ]
+}

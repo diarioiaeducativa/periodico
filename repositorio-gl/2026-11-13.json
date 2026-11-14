@@ -1,0 +1,250 @@
+{
+  "fecha": "2026-11-13",
+  "piezas": [
+    {
+      "id": "semana-del-repositorio",
+      "seccion": "vibecoding",
+      "repositorio": "semana",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "A semana do repositorio",
+      "titular": "Normativa de conservatorios, indicadores e xogos de aula, novidades no repositorio",
+      "entradilla": "O Repositorio de recursos de Vibe Coding Educativo suma esta semana 25 recursos: 13 preséntanse aquí e 12 xa tiveron o seu artigo.",
+      "cuerpo": [
+        "José Luis Miralles Bono achega os trece recursos que quedaban por contar. Teñen un fío común na xestión dos conservatorios de música e danza (normativa, horarios, vagas, calendarios), e a eles súmanse simuladores sobre calidade educativa, material de educación musical e varios xogos e ferramentas de aula."
+      ],
+      "recursos": [
+        {
+          "id": "legis-cpmdem",
+          "titulo": "Legis CPMDEM",
+          "autoria": "José Luis Miralles Bono",
+          "url": "https://jlmirallesb.github.io/legis_cpmdem/",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://jlmirallesb.github.io/legis_cpmdem/",
+          "licencia": "AGPL v3",
+          "captura": "2026-11-13-legis-cpmdem.jpg",
+          "captura_alt": "Portada do catálogo Legis CPMDEM cun buscador, filtros de vixencia e categorías de normativa, e as primeiras fichas de decretos e ordes.",
+          "texto": [
+            "Legis CPMDEM é un catálogo web da lexislación dos conservatorios profesionais de música e danza e das escolas de música da Generalitat Valenciana. As normas, entre decretos, ordes, resolucións, circulares e guías, agrúpanse en 16 categorías, como currículo, acceso e admisión, avaliación, profesorado ou prevención de riscos laborais, e cada unha leva etiquetas de vixencia, ámbito (autonómico ou estatal) e temporalidade. Ten buscador e filtros por vixencia, ademais de apartados de documentos, órganos, cadernos e datos abertos. Ábrese no navegador, sen conta, en castelán e en valenciano."
+          ]
+        },
+        {
+          "id": "pdca-lab",
+          "titulo": "PDCA Lab",
+          "autoria": "José Luis Miralles Bono",
+          "url": "https://jlmirallesb.github.io/PDCA/",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://jlmirallesb.github.io/PDCA/",
+          "licencia": "AGPL v3",
+          "captura": "2026-11-13-pdca-lab.jpg",
+          "captura_alt": "Páxina de inicio de PDCA Lab con tres tarxetas de simuladores: Parasuraman, PDCA e PVCA.",
+          "texto": [
+            "PDCA Lab reúne simuladores para formar en mellora da calidade educativa. A páxina de inicio ofrece tres: a definición de calidade de servizo de Parasuraman, que se percorre frase a frase cunha animación do punto percibido, o esperado e a calidade; o ciclo PDCA (planificar, facer, verificar, actuar), cunha lectura guiada e tipoloxías de mal funcionamento; e o PVCA, cos seus fallos por ausencia. A páxina indica que cada un ten versión paso a paso e versión avanzada. Ábrese no navegador, sen conta, e ten selector de idioma (español, valenciano e inglés). Está pensado para a formación do profesorado e a universidade."
+          ]
+        },
+        {
+          "id": "indicadores-un-dato-no-decide-por-si-sol",
+          "titulo": "Indicadores: un dato no decide por sí solo",
+          "autoria": "José Luis Miralles Bono",
+          "url": "https://jlmirallesb.github.io/indicadores/",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://jlmirallesb.github.io/indicadores/",
+          "licencia": "AGPL v3 (código) · CC BY-SA 4.0 (contidos)",
+          "captura": "2026-11-13-indicadores-un-dato-no-decide-por-si-sol.jpg",
+          "captura_alt": "Inicio do módulo co título e un semáforo cos botóns verde, ámbar e vermello.",
+          "texto": [
+            "Este módulo interactivo ensina a distinguir entre un dato e un indicador. Parte da metáfora do semáforo e percorre oito bloques: o caso ámbar, o absentismo con límite e motivo axustables, un debate entre selección de entrada e valor engadido, cartas de input e output cunha lectura positiva e outra negativa, e o caso dunha optativa con poucos ou moitos matriculados. Péchase cunha lista de catro criterios para valorar se un indicador está listo para decidir. Úsase no navegador, sen conta, en castelán e valenciano, e serve na formación do profesorado e de equipos directivos."
+          ]
+        },
+        {
+          "id": "coordinacion-horaria",
+          "titulo": "Coordinación Horaria",
+          "autoria": "José Luis Miralles Bono",
+          "url": "https://github.com/JLMirallesB/CoordinacionHoraria",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://github.com/JLMirallesB/CoordinacionHoraria",
+          "licencia": "AGPL v3 (código) · CC BY-SA 4.0 (contidos)",
+          "captura": "",
+          "captura_alt": "",
+          "texto": [
+            "Coordinación Horaria axuda a coordinar os horarios do alumnado que cursa á vez ensinanzas de conservatorio e dun centro de educación xeral (CEIP ou IES). Non ten web pública: descárgase desde o seu repositorio, onde, segundo a súa documentación, se baixa da última versión publicada un único arquivo HTML que funciona sen conexión. Para gardar datos fai falta Chrome ou Edge; en Firefox e Safari só serve para consultar. Importa un Excel con centros, conservatorios e alumnado, calcula o desfase entre cursos equivalentes e garda os datos nun cartafol de traballo, con copias de seguridade. Segundo a súa documentación, ningún dato sae do ordenador; ao tratarse de datos de menores, convén gardalos onde o centro garda os demais."
+          ]
+        },
+        {
+          "id": "registro-de-vacantes-y-refuerzos",
+          "titulo": "Registro de vacantes y refuerzos",
+          "autoria": "José Luis Miralles Bono",
+          "url": "https://github.com/JLMirallesB/registro-vacantes-conservatorio",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://github.com/JLMirallesB/registro-vacantes-conservatorio",
+          "licencia": "AGPL v3 (código) · CC BY-SA 4.0 (contidos)",
+          "captura": "",
+          "captura_alt": "",
+          "texto": [
+            "É un modelo de Excel, sen macros, para que un conservatorio leve o rexistro das súas vagas horarias e dos reforzos: que ocos quedan libres, como se cobren e que se fai cos que non se cobren. Non ten web pública: descárgase desde o seu repositorio. Está construído sobre a Orde 8/2026 de admisión da Comunitat Valenciana, da que parte tamén a [ferramenta de prelación que o diario contou o 12 de novembro](pieza:2026-11-12/prelacion-admision-conservatorios-cv); os prazos e a orde de prelación son os valencianos. Ten follas de rexistro, un panel de resumo e seis informes imprimibles, con instrucións dentro do libro. Garda nomes e NIA do alumnado e, segundo a súa documentación, está pensado para un contorno protexido."
+          ]
+        },
+        {
+          "id": "contratiempo",
+          "titulo": "ContraTiempo",
+          "autoria": "José Luis Miralles Bono",
+          "url": "https://jlmirallesb.github.io/ContraTiempo/",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://jlmirallesb.github.io/ContraTiempo/",
+          "licencia": "AGPL v3",
+          "captura": "2026-11-13-contratiempo.jpg",
+          "captura_alt": "Pantalla baleira de ContraTiempo cun menú lateral de vistas e o aviso de que aínda non hai datos configurados.",
+          "texto": [
+            "ContraTiempo é un xestor de horarios para conservatorios de música, un traballo complicado polas clases individuais e o uso das aulas. Ábrese no navegador, sen conta, e, segundo a ficha, pódese instalar como aplicación web. Ao abrila está baleira: hai que dar de alta aulas, docentes e materias en Configuración. Despois ofrece unha vista xeral e vistas por aula, por docente e por materia, ademais de apartados de validacións e ferramentas e un selector de escenario, que por defecto mostra o horario principal. Indica a versión 0.2.0."
+          ]
+        },
+        {
+          "id": "fermata",
+          "titulo": "Fermata",
+          "autoria": "José Luis Miralles Bono",
+          "url": "https://jlmirallesb.github.io/fermata/",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://jlmirallesb.github.io/fermata/",
+          "licencia": "AGPL v3 (código) · CC BY-SA 4.0 (contidos)",
+          "captura": "2026-11-13-fermata.jpg",
+          "captura_alt": "Editor de texto á esquerda cun calendario de admisión e matrícula, e á dereita un calendario mensual de novembro de 2026 con lapelas Gantt, Timeline, Lista, Kanban e Agenda.",
+          "texto": [
+            "Fermata serve para organizar calendarios e planificacións escritos en texto con Markwhen. Ao abrila mostra á esquerda un editor cun exemplo, o calendario de admisión e matrícula de música e danza 2026/2027 (escrito en valenciano), e á dereita o mesmo contido como calendario, diagrama de Gantt, liña do tempo, lista, Kanban ou axenda. Segundo a ficha, ao premer nunha tarefa edítase nun formulario que actualiza o texto, impórtanse e expórtanse arquivos .mw e .md, expórtase a PDF e todo se garda no navegador, sen servidor. Está pensada para equipos directivos e profesorado, e non pide conta."
+          ]
+        },
+        {
+          "id": "strudel-notebook",
+          "titulo": "Strudel Notebook",
+          "autoria": "José Luis Miralles Bono",
+          "url": "https://jlmirallesb.github.io/strudel_notebook/",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://jlmirallesb.github.io/strudel_notebook/",
+          "licencia": "AGPL v3 (código) · CC BY-SA 4.0 (contidos)",
+          "captura": "2026-11-13-strudel-notebook.jpg",
+          "captura_alt": "Portada de Strudel Notebook co título «Composición algorítmica interactiva» e un editor con código musical e botóns de reproducir e parar.",
+          "texto": [
+            "Strudel Notebook é un manual interactivo para aprender a crear música con código, construído sobre Strudel, un contorno de live coding musical no navegador. Segundo a ficha, ten sete leccións (primeiros sons, ritmos, melodías, efectos, transformacións, mini-notation e síntese), cada unha cun editor onde se executa o código, modo guiado e cuestionarios con validación. A páxina engade visualizacións en tempo real (onda, espectro, piano roll, partitura), detección de notas e acordes, e exportación de audio e MIDI. Pódense importar leccións propias. Ensina á vez música e programación, e ábrese sen conta."
+          ]
+        },
+        {
+          "id": "piaget-y-el-aprendizaje-musical-perspect",
+          "titulo": "Piaget y el Aprendizaje Musical: Perspectiva Integradora",
+          "autoria": "José Luis Miralles Bono",
+          "url": "https://jlmirallesb.github.io/Piaget/",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://jlmirallesb.github.io/Piaget/",
+          "licencia": "AGPL v3",
+          "captura": "2026-11-13-piaget-y-el-aprendizaje-musical-perspect.jpg",
+          "captura_alt": "Panel cun menú lateral de seccións sobre Piaget e música e tres tarxetas cos documentos analizados.",
+          "texto": [
+            "Este panel interactivo sintetiza tres documentos sobre como se aplicou a teoría de Piaget á educación musical: Carmichael (2007) sobre a aprendizaxe pianística infantil, Esuola (2014) sobre o método Suzuki e Stadler Elmer (1996) sobre o desenvolvemento do canto. Segundo o propio panel, esa teoría foi malinterpretada en boa parte da investigación. Navégase por un menú lateral con dez seccións, entre elas os tres erros fundamentais, a diferenza entre música e matemática, o estudo empírico de dous nenos, os dez principios e un plan de acción. Está pensado para o profesorado de música, sobre todo na formación do profesorado e a universidade, e ábrese sen conta."
+          ]
+        },
+        {
+          "id": "el-ultimo-acorde",
+          "titulo": "El Último Acorde",
+          "autoria": "José Luis Miralles Bono",
+          "url": "https://jlmirallesb.github.io/el-ultimo-acorde/",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://jlmirallesb.github.io/el-ultimo-acorde/",
+          "licencia": "AGPL v3 (código) · CC BY-SA 4.0 (contidos)",
+          "captura": "2026-11-13-el-ultimo-acorde.jpg",
+          "captura_alt": "Pantalla de inicio escura co título «El Último Acorde» en cian e maxenta e os contadores 847 días sen música humana e 20,328 horas de escoita.",
+          "texto": [
+            "El Último Acorde é un relato de ciencia ficción cyberpunk que se le desprazándose pola páxina. Un narrador conta unha cidade onde a música xerada por IA e personalizada substituíu a humana: leva 847 días sen escoitar música feita por persoas. O texto, dividido en escenas, trata de algoritmos, uso de datos persoais, control cultural e o valor da imperfección na arte. Segundo a ficha, algunhas palabras destacadas abren fichas explicativas. Pode servir como lectura ou punto de partida dun debate sobre tecnoloxía, ética e cultura; a ficha sitúao en secundaria, bacharelato e universidade."
+          ]
+        },
+        {
+          "id": "tira-y-afloja",
+          "titulo": "Tira y Afloja",
+          "autoria": "José Luis Miralles Bono",
+          "url": "https://jlmirallesb.github.io/TugOfWar/",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://jlmirallesb.github.io/TugOfWar/",
+          "licencia": "AGPL v3 (código) · CC BY-SA 4.0 (contidos, salvo os bancos de preguntas)",
+          "captura": "2026-11-13-tira-y-afloja.jpg",
+          "captura_alt": "Ilustración de dous equipos, azul e vermello, tirando dunha corda sobre un prado, e debaixo os modos de xogo Individual e Equipo.",
+          "texto": [
+            "Tira y Afloja é un quiz de aula no que unha corda se despraza cara a un equipo ou outro segundo se acerta ou se falla. No modo individual xógase só contra o equipo vermello; no modo equipo, o docente crea unha sala e o alumnado entra cun código ou un QR. Admite bancos de preguntas en formato GIFT de Moodle, que se poden subir, e permite configurar o tempo, os fallos permitidos e o baralhado. Os bancos incluídos piden contrasinal, así que sen el hai que subir un propio. O modo equipo precisa unha clave gratuíta de Ably, un servizo alleo. Está en español, valenciano e inglés."
+          ]
+        },
+        {
+          "id": "bitacora-de-reflexion",
+          "titulo": "Bitácora de reflexión",
+          "autoria": "José Luis Miralles Bono",
+          "url": "https://jlmirallesb.github.io/bitacora/",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://jlmirallesb.github.io/bitacora/",
+          "licencia": "AGPL v3 (código) · CC BY-SA 4.0 (contidos, salvo os bancos de preguntas)",
+          "captura": "2026-11-13-bitacora-de-reflexion.jpg",
+          "captura_alt": "Portada verde co título «Bitácora de reflexión» e o botón «Abrir la bitácora».",
+          "texto": [
+            "Bitácora de reflexión é un motor de bancos de preguntas de reflexión organizadas en dimensións e subdimensións. Ábrese co botón «Abrir la bitácora». Segundo a ficha, a persoa elixe un banco, precargado ou subido en Markdown, percorre as preguntas, garda as que máis lle interpelan e engade notas por pregunta e un comentario global, cun modo foco para escribir con calma. A bitácora resultante expórtase a PDF ou JSON e pódese importar despois. Serve para a reflexión persoal e profesional, por exemplo a do profesorado. Úsase sen conta e está en español, valenciano e inglés."
+          ]
+        },
+        {
+          "id": "pesca-tipografica",
+          "titulo": "Pesca Tipográfica",
+          "autoria": "José Luis Miralles Bono",
+          "url": "https://jlmirallesb.github.io/pesca/",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://jlmirallesb.github.io/pesca/",
+          "licencia": "AGPL v3 (código) · CC BY-SA 4.0 (contidos, salvo os bancos precargados)",
+          "captura": "2026-11-13-pesca-tipografica.jpg",
+          "captura_alt": "Pantalla de configuración cun selector de banco de contidos, un campo de contrasinal e unha zona para subir un arquivo Markdown.",
+          "texto": [
+            "Pesca Tipográfica é un xogo no que o alumnado apresa peixes con texto nunha piscina e os clasifica en cubos segundo a súa categoría. O selector ofrece unha demo rápida e dous bancos marcados como privados, que piden contrasinal. Tamén se pode subir un banco propio en Markdown, cun formato estrito: unha liña ## para cada categoría e unha liña - para cada elemento, sen liñas baleiras nin duplicados. Segundo a ficha, ao rematar a partida mostra os resultados por cubo, que se poden exportar, e serve para repasar e clasificar contidos de calquera materia. Está en español, valenciano e inglés."
+          ]
+        }
+      ],
+      "fuentes": [
+        {"titulo": "Legis CPMDEM", "url": "https://jlmirallesb.github.io/legis_cpmdem/"},
+        {"titulo": "PDCA Lab", "url": "https://jlmirallesb.github.io/PDCA/"},
+        {"titulo": "Indicadores: un dato no decide por sí solo", "url": "https://jlmirallesb.github.io/indicadores/"},
+        {"titulo": "Coordinación Horaria (repositorio)", "url": "https://github.com/JLMirallesB/CoordinacionHoraria"},
+        {"titulo": "Registro de vacantes y refuerzos (repositorio)", "url": "https://github.com/JLMirallesB/registro-vacantes-conservatorio"},
+        {"titulo": "ContraTiempo", "url": "https://jlmirallesb.github.io/ContraTiempo/"},
+        {"titulo": "Fermata", "url": "https://jlmirallesb.github.io/fermata/"},
+        {"titulo": "Strudel Notebook", "url": "https://jlmirallesb.github.io/strudel_notebook/"},
+        {"titulo": "Piaget y el Aprendizaje Musical: Perspectiva Integradora", "url": "https://jlmirallesb.github.io/Piaget/"},
+        {"titulo": "El Último Acorde", "url": "https://jlmirallesb.github.io/el-ultimo-acorde/"},
+        {"titulo": "Tira y Afloja", "url": "https://jlmirallesb.github.io/TugOfWar/"},
+        {"titulo": "Bitácora de reflexión", "url": "https://jlmirallesb.github.io/bitacora/"},
+        {"titulo": "Pesca Tipográfica", "url": "https://jlmirallesb.github.io/pesca/"},
+        {"titulo": "Presentación en Vibe Coding Educativo: PDCA Lab (en castelán)", "url": "https://t.me/vceduca/7674/14761"},
+        {"titulo": "Presentación en Vibe Coding Educativo: Indicadores (en castelán)", "url": "https://t.me/vceduca/7674/14762"},
+        {"titulo": "Presentación en Vibe Coding Educativo: Coordinación Horaria (en castelán)", "url": "https://t.me/vceduca/7674/14763"},
+        {"titulo": "Presentación en Vibe Coding Educativo: Registro de vacantes y refuerzos (en castelán)", "url": "https://t.me/vceduca/7674/14764"},
+        {"titulo": "Presentación en Vibe Coding Educativo: ContraTiempo (en castelán)", "url": "https://t.me/vceduca/7674/14765"},
+        {"titulo": "Presentación en Vibe Coding Educativo: Fermata (en castelán)", "url": "https://t.me/vceduca/7674/14766"},
+        {"titulo": "Presentación en Vibe Coding Educativo: Strudel Notebook (en castelán)", "url": "https://t.me/vceduca/7674/14767"},
+        {"titulo": "Presentación en Vibe Coding Educativo: Piaget y el Aprendizaje Musical (en castelán)", "url": "https://t.me/vceduca/7674/14768"},
+        {"titulo": "Presentación en Vibe Coding Educativo: El Último Acorde (en castelán)", "url": "https://t.me/vceduca/7674/14769"},
+        {"titulo": "Presentación en Vibe Coding Educativo: Tira y Afloja (en castelán)", "url": "https://t.me/vceduca/7674/14770"},
+        {"titulo": "Presentación en Vibe Coding Educativo: Bitácora de reflexión (en castelán)", "url": "https://t.me/vceduca/7674/14771"},
+        {"titulo": "Presentación en Vibe Coding Educativo: Pesca Tipográfica (en castelán)", "url": "https://t.me/vceduca/7674/14772"}
+      ],
+      "comprobado": "Se miraron las capturas de Legis CPMDEM, PDCA Lab, Indicadores, ContraTiempo, Fermata, Strudel Notebook, Piaget, El Último Acorde, Tira y Afloja, Bitácora de reflexión y Pesca Tipográfica, y el texto visible de cada página, y se contrastaron con la ficha y el mensaje de presentación de cada una. Se abrió con WebFetch Tira y Afloja (modos, subida de GIFT, bancos incluidos tras contraseña, clave de Ably), Bitácora de reflexión (bancos precargados sin contraseña mencionada, tres idiomas), Strudel Notebook (descripción y herramientas; las lecciones no se listan en la portada, así que sus siete títulos son de la ficha) y los repositorios de GitHub de Coordinación Horaria (sin web en «About»; solo guarda datos en Chrome o Edge) y Registro de vacantes (sin web; datos personales en entorno protegido; plazos y prelación valencianos). Las direcciones de GitHub Pages de esos dos dieron 404. Legis CPMDEM se describe por la captura y el texto visible. No se abrieron las descargas ni se probó ninguna aplicación con datos. Lo que ficha y mensajes dicen y no se ve se atribuye a la ficha o a la documentación. Las cifras cuadran con la entrada: 25 en la semana (11 contados que lista el programa, más Reloj EDUmind, contado el 12 de noviembre) y 13 presentados.",
+      "repaso": [
+        "Enlace a lo ya publicado: la herramienta de prelación salió el 12 de noviembre (no el 13); texto corregido. La clave está en publicado.txt y la pieza trata de lo mismo.",
+        "Coordinación Horaria: se quita «se abre en Chrome o Edge» como si fuera lo único y se aclara que solo guarda datos en Chrome o Edge y en Firefox y Safari sirve para consultar; la descarga se atribuye a su documentación.",
+        "Registro de vacantes: se aclara que los plazos y el orden de prelación son los valencianos y que lo del entorno protegido es de su documentación; se quita «por qué» para no pasar de 120 palabras.",
+        "ContraTiempo: se quita «escenarios alternativos de horario» (solo se ve un selector de escenario) y «recurso aún joven».",
+        "Fermata: se indica que el ejemplo está en valenciano.",
+        "Strudel Notebook: las siete lecciones y su contenido se atribuyen a la ficha (la página no las lista).",
+        "Piaget: se añade que, según el propio panel, la teoría se ha malinterpretado.",
+        "El Último Acorde: los niveles se atribuyen a la ficha.",
+        "Tira y Afloja: se aclara que los bancos incluidos piden contraseña y que sin ella hay que subir uno propio.",
+        "Pesca Tipográfica: los resultados exportables y «cualquier materia» se atribuyen a la ficha.",
+        "Cifras de la entradilla (25 / 13 / 12) comprobadas: coinciden con la entrada (Reloj EDUmind, ya contado el 12 de noviembre, es el duodécimo contado y está en descartado).",
+        "Autoría, licencia, ficha, archivo de captura y captura_alt comprobados con la entrada: sin cambios."
+      ],
+      "ya_contados": [
+        {"fecha": "2026-11-07", "id": "itinerancias", "titulo": "Itinerancias", "autoria": "José Luis Miralles Bono", "url": "https://jlmirallesb.github.io/itinerancias/"},
+        {"fecha": "2026-11-08", "id": "calendari-planificador-de-curso", "titulo": "Calendari — Planificador de curso", "autoria": "José Luis Miralles Bono", "url": "https://jlmirallesb.github.io/calendari-planificador/"},
+        {"fecha": "2026-11-10", "id": "tribunator", "titulo": "Tribunator", "autoria": "José Luis Miralles Bono", "url": "https://jlmirallesb.github.io/tribunator/"},
+        {"fecha": "2026-11-12", "id": "prelacion-admision-conservatorios-cv", "titulo": "Prelación — Admisión Conservatorios CV", "autoria": "José Luis Miralles Bono", "url": "https://jlmirallesb.github.io/prelacion/"},
+        {"fecha": "2026-11-07", "id": "incluxat-conservatorio", "titulo": "incluxat", "autoria": "José Luis Miralles Bono", "url": "https://jlmirallesb.github.io/incluxat/proyecto/"},
+        {"fecha": "2026-11-09", "id": "xifres-i-lletres-acollida", "titulo": "Xifres i Lletres", "autoria": "David Cordones", "url": "https://ja.cat/xifres-i-lletres"},
+        {"fecha": "2026-11-09", "id": "xifres-i-lletres-acollida", "titulo": "Aula d'Acollida Digital", "autoria": "David Cordones", "url": "https://ja.cat/acollida-lexic"},
+        {"fecha": "2026-11-10", "id": "pentagrama-maestro", "titulo": "Pentagrama Maestro", "autoria": "Iñaki Fernández", "url": "https://sites.google.com/rmsantaisabel.com/pentagrama-maestro/inicio"},
+        {"fecha": "2026-11-12", "id": "comerc-especies", "titulo": "El comerç de les espècies", "autoria": "Felip Sarroca i Gil", "url": "https://ja.cat/especies"},
+        {"fecha": "2026-11-12", "id": "relleu-obert", "titulo": "Relleu Obert — Geografia que pots tocar", "autoria": "Aarón Fortuño", "url": "https://relleu.ortogra.fi/"},
+        {"fecha": "2026-11-13", "id": "atlas-en-xogo", "titulo": "Atlas en xogo", "autoria": "Luis Vilela Acuña", "url": "https://edumind.es/contenido/htmls/Atlas%20en%20xogo.html"}
+      ]
+    }
+  ],
+  "descartado": [
+    {
+      "url": "https://github.com/edumind-es/reloj.git",
+      "motivo": "Reloj EDUmind ya tuvo su artículo (pieza 2026-11-12/reloj-edumind, en publicado.txt) y por eso no se vuelve a describir; no figura entre los once «ya contados» de la entrada. Con él son 12 los ya contados."
+    }
+  ]
+}

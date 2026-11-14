@@ -1,0 +1,250 @@
+{
+  "fecha": "2026-11-13",
+  "piezas": [
+    {
+      "id": "semana-del-repositorio",
+      "seccion": "vibecoding",
+      "repositorio": "semana",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Biltegiaren astea",
+      "titular": "Kontserbatorioetako araudia, adierazleak eta ikasgelako jolasak, berriak biltegian",
+      "entradilla": "Vibe Coding Educativoren Baliabideen biltegiak 25 baliabide gehitu ditu aste honetan: 13 hemen aurkezten dira eta beste 12k artikulua izan zuten jada.",
+      "cuerpo": [
+        "José Luis Miralles Bonok kontatzeke zeuden hamahiru baliabideak ekarri ditu. Haien arteko haria musika- eta dantza-kontserbatorioen kudeaketa da (araudia, ordutegiak, plaza hutsak, egutegiak), eta horiei hezkuntza-kalitateari buruzko simulagailuak, musika-hezkuntzako materiala eta ikasgelarako hainbat jolas eta tresna gehitzen zaizkie."
+      ],
+      "recursos": [
+        {
+          "id": "legis-cpmdem",
+          "titulo": "Legis CPMDEM",
+          "autoria": "José Luis Miralles Bono",
+          "url": "https://jlmirallesb.github.io/legis_cpmdem/",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://jlmirallesb.github.io/legis_cpmdem/",
+          "licencia": "AGPL v3",
+          "captura": "2026-11-13-legis-cpmdem.jpg",
+          "captura_alt": "Legis CPMDEM katalogoaren hasierako orria, bilatzaile batekin, indarraldi-iragazkiekin eta araudi-kategoriekin, eta dekretu eta aginduen lehen fitxekin.",
+          "texto": [
+            "Legis CPMDEM Valentziako Generalitateko musika eta dantzako kontserbatorio profesionalen eta musika-eskolen legeriaren katalogo bat da, webean. Arauak (dekretuak, aginduak, ebazpenak, zirkularrak eta gidak) 16 kategoriatan biltzen dira, hala nola curriculuma, sarrera eta onarpena, ebaluazioa, irakasleak edo lan-arriskuen prebentzioa, eta bakoitzak indarraldiaren, eremuaren (autonomikoa edo estatukoa) eta aldizkakotasunaren etiketak ditu. Bilatzailea eta indarraldiaren araberako iragazkiak ditu, baita dokumentuen, organoen, koadernoen eta datu irekien atalak ere. Nabigatzailean irekitzen da, konturik gabe, gaztelaniaz eta valentziaz."
+          ]
+        },
+        {
+          "id": "pdca-lab",
+          "titulo": "PDCA Lab",
+          "autoria": "José Luis Miralles Bono",
+          "url": "https://jlmirallesb.github.io/PDCA/",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://jlmirallesb.github.io/PDCA/",
+          "licencia": "AGPL v3",
+          "captura": "2026-11-13-pdca-lab.jpg",
+          "captura_alt": "PDCA Lab-en hasierako orria, hiru simulagailu-txartelekin: Parasuraman, PDCA eta PVCA.",
+          "texto": [
+            "PDCA Lab-ek hezkuntza-kalitatea hobetzeko prestakuntzarako simulagailuak biltzen ditu. Hasierako orriak hiru eskaintzen ditu: Parasuramanen zerbitzu-kalitatearen definizioa, esaldiz esaldi egiten dena, hautemandako puntuaren, espero denaren eta kalitatearen animazio batekin; PDCA zikloa (planifikatu, egin, egiaztatu, jardun), irakurketa gidatuarekin eta funtzionamendu-akatsen tipologiekin; eta PVCA, absentziaren ondoriozko hutsegiteekin. Orriak adierazten duenez, bakoitzak urratsez urratseko bertsioa eta bertsio aurreratua ditu. Nabigatzailean irekitzen da, konturik gabe, eta hizkuntza-hautatzailea du (gaztelania, valentziera eta ingelesa). Irakasleen prestakuntzarako eta unibertsitaterako pentsatuta dago."
+          ]
+        },
+        {
+          "id": "indicadores-un-dato-no-decide-por-si-sol",
+          "titulo": "Indicadores: un dato no decide por sí solo",
+          "autoria": "José Luis Miralles Bono",
+          "url": "https://jlmirallesb.github.io/indicadores/",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://jlmirallesb.github.io/indicadores/",
+          "licencia": "AGPL v3 (kodea) · CC BY-SA 4.0 (edukiak)",
+          "captura": "2026-11-13-indicadores-un-dato-no-decide-por-si-sol.jpg",
+          "captura_alt": "Moduluaren hasiera, izenburuarekin eta semaforo batekin, botoi berde, anbar eta gorriekin.",
+          "texto": [
+            "Modulu elkarreragile honek datu bat eta adierazle bat bereizten irakasten du. Semaforoaren metaforatik abiatzen da eta zortzi blokeren bidez egiten du bidea: kasu anbarra, absentismoa langa eta arrazoi doigarriekin, sarrera-hautaketaren eta balio erantsiaren arteko eztabaida, input eta output kartak irakurketa positibo eta negatibo batekin, eta matrikula gutxi edo asko dituen aukerako irakasgai baten kasua. Adierazle bat erabakitzeko prest dagoen baloratzeko lau irizpideko zerrenda batekin amaitzen da. Nabigatzailean erabiltzen da, konturik gabe, gaztelaniaz eta valentziaz, eta irakasleen eta zuzendaritza-taldeen prestakuntzan balio du."
+          ]
+        },
+        {
+          "id": "coordinacion-horaria",
+          "titulo": "Coordinación Horaria",
+          "autoria": "José Luis Miralles Bono",
+          "url": "https://github.com/JLMirallesB/CoordinacionHoraria",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://github.com/JLMirallesB/CoordinacionHoraria",
+          "licencia": "AGPL v3 (kodea) · CC BY-SA 4.0 (edukiak)",
+          "captura": "",
+          "captura_alt": "",
+          "texto": [
+            "Coordinación Horaria-k kontserbatorioko eta hezkuntza orokorreko ikastetxeko (HHI edo DBH) irakaskuntzak aldi berean egiten dituzten ikasleen ordutegiak koordinatzen laguntzen du. Ez du webgune publikorik: bere biltegitik deskargatzen da, eta, dokumentazioaren arabera, argitaratutako azken bertsioan konexiorik gabe funtzionatzen duen HTML fitxategi bakarra jaisten da. Datuak gordetzeko Chrome edo Edge behar dira; Firefoxen eta Safarin kontsultatzeko bakarrik balio du. Ikastetxeekin, kontserbatorioekin eta ikasleekin Excel bat inportatzen du, baliokideak diren ikasturteen arteko desfasea kalkulatzen du eta datuak lan-karpeta batean gordetzen ditu, babeskopiekin. Dokumentazioaren arabera, ez da daturik ordenagailutik ateratzen; adingabekoen datuak direnez, komeni da ikastetxeak gainerakoak gordetzen dituen lekuan gordetzea."
+          ]
+        },
+        {
+          "id": "registro-de-vacantes-y-refuerzos",
+          "titulo": "Registro de vacantes y refuerzos",
+          "autoria": "José Luis Miralles Bono",
+          "url": "https://github.com/JLMirallesB/registro-vacantes-conservatorio",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://github.com/JLMirallesB/registro-vacantes-conservatorio",
+          "licencia": "AGPL v3 (kodea) · CC BY-SA 4.0 (edukiak)",
+          "captura": "",
+          "captura_alt": "",
+          "texto": [
+            "Excel txantiloi bat da, makrorik gabea, kontserbatorio batek ordutegi-plaza hutsen eta errefortzuen erregistroa eramateko: zer hutsune geratzen diren libre, nola betetzen diren eta betetzen ez direnekin zer egiten den. Ez du webgune publikorik: bere biltegitik deskargatzen da. Valentziako Erkidegoko onarpenaren 8/2026 Aginduan oinarrituta dago, eta agindu horretatik abiatzen da egunkariak azaroaren 12an kontatutako [lehentasun-hurrenkeraren tresna](pieza:2026-11-12/prelacion-admision-conservatorios-cv) ere; epeak eta lehentasun-hurrenkera valentziarrak dira. Erregistro-orriak, laburpen-panel bat eta inprimagarriak diren sei txosten ditu, jarraibideak liburuaren barruan daudela. Ikasleen izenak eta NIAk gordetzen ditu eta, dokumentazioaren arabera, ingurune babestu baterako pentsatuta dago."
+          ]
+        },
+        {
+          "id": "contratiempo",
+          "titulo": "ContraTiempo",
+          "autoria": "José Luis Miralles Bono",
+          "url": "https://jlmirallesb.github.io/ContraTiempo/",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://jlmirallesb.github.io/ContraTiempo/",
+          "licencia": "AGPL v3",
+          "captura": "2026-11-13-contratiempo.jpg",
+          "captura_alt": "ContraTiempo-ren pantaila hutsa, ikuspegien alboko menu batekin eta oraindik daturik konfiguratu gabe dagoela dioen oharrarekin.",
+          "texto": [
+            "ContraTiempo musika-kontserbatorioetarako ordutegi-kudeatzaile bat da, banakako klaseek eta gelen erabilerak lan zaila egiten dutelako. Nabigatzailean irekitzen da, konturik gabe, eta, fitxaren arabera, web-aplikazio gisa instala daiteke. Irekitzean hutsik dago: Konfigurazioan gelak, irakasleak eta irakasgaiak alta eman behar dira. Ondoren, ikuspegi orokor bat eta gelaka, irakaslekako eta irakasgaika ikuspegiak eskaintzen ditu, baita balioztatzeen eta tresnen atalak eta agertoki-hautatzaile bat ere, zeinak lehenespenez ordutegi nagusia erakusten duen. 0.2.0 bertsioa adierazten du."
+          ]
+        },
+        {
+          "id": "fermata",
+          "titulo": "Fermata",
+          "autoria": "José Luis Miralles Bono",
+          "url": "https://jlmirallesb.github.io/fermata/",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://jlmirallesb.github.io/fermata/",
+          "licencia": "AGPL v3 (kodea) · CC BY-SA 4.0 (edukiak)",
+          "captura": "2026-11-13-fermata.jpg",
+          "captura_alt": "Ezkerrean testu-editorea, onarpen- eta matrikula-egutegi batekin, eta eskuinean 2026ko azaroko hileko egutegi bat, Gantt, Timeline, Lista, Kanban eta Agenda fitxekin.",
+          "texto": [
+            "Fermata Markwhen-ekin testuan idatzitako egutegiak eta plangintzak antolatzeko balio du. Irekitzean, ezkerrean editore bat erakusten du adibide batekin, 2026/2027ko musika eta dantzako onarpen- eta matrikula-egutegiarekin (valentziaz idatzia), eta eskuinean eduki bera egutegi, Gantt diagrama, denbora-lerro, zerrenda, Kanban edo agenda gisa. Fitxaren arabera, zeregin bat sakatzean formulario batean editatzen da, eta formularioak testua eguneratzen du; .mw eta .md fitxategiak inportatu eta esportatu daitezke, PDFra esportatzen da eta dena nabigatzailean gordetzen da, zerbitzaririk gabe. Zuzendaritza-taldeentzat eta irakasleentzat pentsatuta dago, eta ez du konturik eskatzen."
+          ]
+        },
+        {
+          "id": "strudel-notebook",
+          "titulo": "Strudel Notebook",
+          "autoria": "José Luis Miralles Bono",
+          "url": "https://jlmirallesb.github.io/strudel_notebook/",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://jlmirallesb.github.io/strudel_notebook/",
+          "licencia": "AGPL v3 (kodea) · CC BY-SA 4.0 (edukiak)",
+          "captura": "2026-11-13-strudel-notebook.jpg",
+          "captura_alt": "Strudel Notebook-en azala, «Composición algorítmica interactiva» izenburuarekin eta musika-kodea duen editore batekin, erreproduzitzeko eta gelditzeko botoiekin.",
+          "texto": [
+            "Strudel Notebook kodearekin musika sortzen ikasteko eskuliburu elkarreragile bat da, Strudel-en gainean eraikia, nabigatzailean musikako live coding egiteko ingurune baten gainean. Fitxaren arabera, zazpi ikasgai ditu (lehen soinuak, erritmoak, melodiak, efektuak, eraldaketak, mini-notation eta sintesia), bakoitza kodea exekutatzen den editore batekin, modu gidatuarekin eta balioztatzea duten galdetegiekin. Orriak denbora errealeko bistaratzeak (uhina, espektroa, piano roll, partitura), nota eta akordeen detekzioa, eta audioa eta MIDIa esportatzea gehitzen ditu. Ikasgai propioak inporta daitezke. Aldi berean musika eta programazioa irakasten ditu, eta konturik gabe irekitzen da."
+          ]
+        },
+        {
+          "id": "piaget-y-el-aprendizaje-musical-perspect",
+          "titulo": "Piaget y el Aprendizaje Musical: Perspectiva Integradora",
+          "autoria": "José Luis Miralles Bono",
+          "url": "https://jlmirallesb.github.io/Piaget/",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://jlmirallesb.github.io/Piaget/",
+          "licencia": "AGPL v3",
+          "captura": "2026-11-13-piaget-y-el-aprendizaje-musical-perspect.jpg",
+          "captura_alt": "Panela, Piaget eta musikari buruzko ataletako alboko menu batekin eta aztertutako dokumentuak dituzten hiru txartelekin.",
+          "texto": [
+            "Panel elkarreragile honek Piageten teoria musika-hezkuntzan nola aplikatu den azaltzen duten hiru dokumentu laburbiltzen ditu: Carmichael (2007), haurren piano-ikaskuntzari buruzkoa; Esuola (2014), Suzuki metodoari buruzkoa; eta Stadler Elmer (1996), kantuaren garapenari buruzkoa. Panelak berak dioenez, teoria hori gaizki interpretatu da ikerketaren zati handi batean. Alboko menu batetik nabigatzen da, hamar atalekin; haien artean, hiru oinarrizko akatsak, musikaren eta matematikaren arteko aldea, bi haurren azterketa enpirikoa, hamar printzipioak eta ekintza-plan bat. Musika-irakasleentzat pentsatuta dago, batez ere irakasleen prestakuntzan eta unibertsitatean, eta konturik gabe irekitzen da."
+          ]
+        },
+        {
+          "id": "el-ultimo-acorde",
+          "titulo": "El Último Acorde",
+          "autoria": "José Luis Miralles Bono",
+          "url": "https://jlmirallesb.github.io/el-ultimo-acorde/",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://jlmirallesb.github.io/el-ultimo-acorde/",
+          "licencia": "AGPL v3 (kodea) · CC BY-SA 4.0 (edukiak)",
+          "captura": "2026-11-13-el-ultimo-acorde.jpg",
+          "captura_alt": "Hasierako pantaila iluna, «El Último Acorde» izenburua zian eta magentaz eta 847 egun giza musikarik gabe eta 20.328 entzute-ordu kontagailuekin.",
+          "texto": [
+            "El Último Acorde zientzia-fikziozko kontakizun cyberpunk bat da, orrian zehar mugituz irakurtzen dena. Narratzaile batek AAk sortutako eta pertsonalizatutako musikak gizakiarena ordezkatu duen hiri bat kontatzen du: 847 egun daramatza pertsonek egindako musikarik entzun gabe. Eszenatan banatutako testuak algoritmoei, datu pertsonalen erabilerari, kontrol kulturalari eta artean ezperfekzioak duen balioari buruz jarduten du. Fitxaren arabera, nabarmendutako hitz batzuek azalpen-fitxak irekitzen dituzte. Irakurgai gisa edo teknologiari, etikari eta kulturari buruzko eztabaida baten abiapuntu gisa balio dezake; fitxak Bigarren Hezkuntzan, Batxilergoan eta unibertsitatean kokatzen du."
+          ]
+        },
+        {
+          "id": "tira-y-afloja",
+          "titulo": "Tira y Afloja",
+          "autoria": "José Luis Miralles Bono",
+          "url": "https://jlmirallesb.github.io/TugOfWar/",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://jlmirallesb.github.io/TugOfWar/",
+          "licencia": "AGPL v3 (kodea) · CC BY-SA 4.0 (edukiak, galdera-bankuak izan ezik)",
+          "captura": "2026-11-13-tira-y-afloja.jpg",
+          "captura_alt": "Soro baten gainean sokatik tiraka ari diren bi talderen irudia, urdina eta gorria, eta azpian Banakakoa eta Taldekoa joko-moduak.",
+          "texto": [
+            "Tira y Afloja ikasgelako quiz bat da, non soka talde batera edo bestera mugitzen den asmatu edo huts egin arabera. Banakako moduan talde gorriaren aurka bakarrik jokatzen da; talde-moduan, irakasleak gela bat sortzen du eta ikasleak kode batekin edo QR batekin sartzen dira. Moodleren GIFT formatuko galdera-bankuak onartzen ditu, igo daitezkeenak, eta denbora, onartutako hutsegiteak eta nahasketa konfiguratzeko aukera ematen du. Barne dauden bankuek pasahitza eskatzen dute, beraz, hura gabe, bankua norberak igo behar du. Talde-moduak Ably-ren doako gako bat behar du, kanpoko zerbitzu bat. Gaztelaniaz, valentziaz eta ingelesez dago."
+          ]
+        },
+        {
+          "id": "bitacora-de-reflexion",
+          "titulo": "Bitácora de reflexión",
+          "autoria": "José Luis Miralles Bono",
+          "url": "https://jlmirallesb.github.io/bitacora/",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://jlmirallesb.github.io/bitacora/",
+          "licencia": "AGPL v3 (kodea) · CC BY-SA 4.0 (edukiak, galdera-bankuak izan ezik)",
+          "captura": "2026-11-13-bitacora-de-reflexion.jpg",
+          "captura_alt": "Azal berdea, «Bitácora de reflexión» izenburuarekin eta «Abrir la bitácora» botoiarekin.",
+          "texto": [
+            "Bitácora de reflexión dimentsioetan eta azpidimentsioetan antolatutako hausnarketa-galderen bankuetarako motor bat da. «Abrir la bitácora» botoiarekin irekitzen da. Fitxaren arabera, pertsonak banku bat aukeratzen du, aurrez kargatua edo Markdown formatuan igoa, galderak aztertzen ditu, gehien interpelatzen dutenak gordetzen ditu eta galdera bakoitzeko oharrak eta iruzkin orokor bat gehitzen ditu, lasai idazteko fokuko modu batekin. Sortutako bitakora PDFra edo JSONera esportatzen da eta geroago inporta daiteke. Hausnarketa pertsonalerako eta profesionalerako balio du, adibidez irakasleena. Konturik gabe erabiltzen da eta gaztelaniaz, valentziaz eta ingelesez dago."
+          ]
+        },
+        {
+          "id": "pesca-tipografica",
+          "titulo": "Pesca Tipográfica",
+          "autoria": "José Luis Miralles Bono",
+          "url": "https://jlmirallesb.github.io/pesca/",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://jlmirallesb.github.io/pesca/",
+          "licencia": "AGPL v3 (kodea) · CC BY-SA 4.0 (edukiak, aurrez kargatutako bankuak izan ezik)",
+          "captura": "2026-11-13-pesca-tipografica.jpg",
+          "captura_alt": "Konfigurazio-pantaila, eduki-banku hautatzaile batekin, pasahitz-eremu batekin eta Markdown fitxategi bat igotzeko eremu batekin.",
+          "texto": [
+            "Pesca Tipográfica ikasleek igerileku batean testuzko arrainak harrapatzen dituzten eta kategoriaren arabera ontzietan sailkatzen dituzten jolas bat da. Hautatzaileak demo azkar bat eta pribatu gisa markatutako bi banku eskaintzen ditu, pasahitza eskatzen dutenak. Banku propio bat ere igo daiteke, Markdown formatuan, formatu zorrotzarekin: ## lerro bat kategoria bakoitzeko eta - lerro bat elementu bakoitzeko, lerro hutsik eta bikoizkorik gabe. Fitxaren arabera, partida amaitzean emaitzak erakusten ditu ontziko, esporta daitezkeenak, eta edozein irakasgaitako edukiak errepasatzeko eta sailkatzeko balio du. Gaztelaniaz, valentziaz eta ingelesez dago."
+          ]
+        }
+      ],
+      "fuentes": [
+        {"titulo": "Legis CPMDEM (gaztelaniaz)", "url": "https://jlmirallesb.github.io/legis_cpmdem/"},
+        {"titulo": "PDCA Lab (gaztelaniaz)", "url": "https://jlmirallesb.github.io/PDCA/"},
+        {"titulo": "Indicadores: un dato no decide por sí solo (gaztelaniaz)", "url": "https://jlmirallesb.github.io/indicadores/"},
+        {"titulo": "Coordinación Horaria (biltegia, gaztelaniaz)", "url": "https://github.com/JLMirallesB/CoordinacionHoraria"},
+        {"titulo": "Registro de vacantes y refuerzos (biltegia, gaztelaniaz)", "url": "https://github.com/JLMirallesB/registro-vacantes-conservatorio"},
+        {"titulo": "ContraTiempo (gaztelaniaz)", "url": "https://jlmirallesb.github.io/ContraTiempo/"},
+        {"titulo": "Fermata (gaztelaniaz)", "url": "https://jlmirallesb.github.io/fermata/"},
+        {"titulo": "Strudel Notebook (gaztelaniaz)", "url": "https://jlmirallesb.github.io/strudel_notebook/"},
+        {"titulo": "Piaget y el Aprendizaje Musical: Perspectiva Integradora (gaztelaniaz)", "url": "https://jlmirallesb.github.io/Piaget/"},
+        {"titulo": "El Último Acorde (gaztelaniaz)", "url": "https://jlmirallesb.github.io/el-ultimo-acorde/"},
+        {"titulo": "Tira y Afloja (gaztelaniaz)", "url": "https://jlmirallesb.github.io/TugOfWar/"},
+        {"titulo": "Bitácora de reflexión (gaztelaniaz)", "url": "https://jlmirallesb.github.io/bitacora/"},
+        {"titulo": "Pesca Tipográfica (gaztelaniaz)", "url": "https://jlmirallesb.github.io/pesca/"},
+        {"titulo": "Aurkezpena Vibe Coding Educativon: PDCA Lab (gaztelaniaz)", "url": "https://t.me/vceduca/7674/14761"},
+        {"titulo": "Aurkezpena Vibe Coding Educativon: Indicadores (gaztelaniaz)", "url": "https://t.me/vceduca/7674/14762"},
+        {"titulo": "Aurkezpena Vibe Coding Educativon: Coordinación Horaria (gaztelaniaz)", "url": "https://t.me/vceduca/7674/14763"},
+        {"titulo": "Aurkezpena Vibe Coding Educativon: Registro de vacantes y refuerzos (gaztelaniaz)", "url": "https://t.me/vceduca/7674/14764"},
+        {"titulo": "Aurkezpena Vibe Coding Educativon: ContraTiempo (gaztelaniaz)", "url": "https://t.me/vceduca/7674/14765"},
+        {"titulo": "Aurkezpena Vibe Coding Educativon: Fermata (gaztelaniaz)", "url": "https://t.me/vceduca/7674/14766"},
+        {"titulo": "Aurkezpena Vibe Coding Educativon: Strudel Notebook (gaztelaniaz)", "url": "https://t.me/vceduca/7674/14767"},
+        {"titulo": "Aurkezpena Vibe Coding Educativon: Piaget y el Aprendizaje Musical (gaztelaniaz)", "url": "https://t.me/vceduca/7674/14768"},
+        {"titulo": "Aurkezpena Vibe Coding Educativon: El Último Acorde (gaztelaniaz)", "url": "https://t.me/vceduca/7674/14769"},
+        {"titulo": "Aurkezpena Vibe Coding Educativon: Tira y Afloja (gaztelaniaz)", "url": "https://t.me/vceduca/7674/14770"},
+        {"titulo": "Aurkezpena Vibe Coding Educativon: Bitácora de reflexión (gaztelaniaz)", "url": "https://t.me/vceduca/7674/14771"},
+        {"titulo": "Aurkezpena Vibe Coding Educativon: Pesca Tipográfica (gaztelaniaz)", "url": "https://t.me/vceduca/7674/14772"}
+      ],
+      "comprobado": "Se miraron las capturas de Legis CPMDEM, PDCA Lab, Indicadores, ContraTiempo, Fermata, Strudel Notebook, Piaget, El Último Acorde, Tira y Afloja, Bitácora de reflexión y Pesca Tipográfica, y el texto visible de cada página, y se contrastaron con la ficha y el mensaje de presentación de cada una. Se abrió con WebFetch Tira y Afloja (modos, subida de GIFT, bancos incluidos tras contraseña, clave de Ably), Bitácora de reflexión (bancos precargados sin contraseña mencionada, tres idiomas), Strudel Notebook (descripción y herramientas; las lecciones no se listan en la portada, así que sus siete títulos son de la ficha) y los repositorios de GitHub de Coordinación Horaria (sin web en «About»; solo guarda datos en Chrome o Edge) y Registro de vacantes (sin web; datos personales en entorno protegido; plazos y prelación valencianos). Las direcciones de GitHub Pages de esos dos dieron 404. Legis CPMDEM se describe por la captura y el texto visible. No se abrieron las descargas ni se probó ninguna aplicación con datos. Lo que ficha y mensajes dicen y no se ve se atribuye a la ficha o a la documentación. Las cifras cuadran con la entrada: 25 en la semana (11 contados que lista el programa, más Reloj EDUmind, contado el 12 de noviembre) y 13 presentados.",
+      "repaso": [
+        "Enlace a lo ya publicado: la herramienta de prelación salió el 12 de noviembre (no el 13); texto corregido. La clave está en publicado.txt y la pieza trata de lo mismo.",
+        "Coordinación Horaria: se quita «se abre en Chrome o Edge» como si fuera lo único y se aclara que solo guarda datos en Chrome o Edge y en Firefox y Safari sirve para consultar; la descarga se atribuye a su documentación.",
+        "Registro de vacantes: se aclara que los plazos y el orden de prelación son los valencianos y que lo del entorno protegido es de su documentación; se quita «por qué» para no pasar de 120 palabras.",
+        "ContraTiempo: se quita «escenarios alternativos de horario» (solo se ve un selector de escenario) y «recurso aún joven».",
+        "Fermata: se indica que el ejemplo está en valenciano.",
+        "Strudel Notebook: las siete lecciones y su contenido se atribuyen a la ficha (la página no las lista).",
+        "Piaget: se añade que, según el propio panel, la teoría se ha malinterpretado.",
+        "El Último Acorde: los niveles se atribuyen a la ficha.",
+        "Tira y Afloja: se aclara que los bancos incluidos piden contraseña y que sin ella hay que subir uno propio.",
+        "Pesca Tipográfica: los resultados exportables y «cualquier materia» se atribuyen a la ficha.",
+        "Cifras de la entradilla (25 / 13 / 12) comprobadas: coinciden con la entrada (Reloj EDUmind, ya contado el 12 de noviembre, es el duodécimo contado y está en descartado).",
+        "Autoría, licencia, ficha, archivo de captura y captura_alt comprobados con la entrada: sin cambios."
+      ],
+      "ya_contados": [
+        {"fecha": "2026-11-07", "id": "itinerancias", "titulo": "Itinerancias", "autoria": "José Luis Miralles Bono", "url": "https://jlmirallesb.github.io/itinerancias/"},
+        {"fecha": "2026-11-08", "id": "calendari-planificador-de-curso", "titulo": "Calendari — Planificador de curso", "autoria": "José Luis Miralles Bono", "url": "https://jlmirallesb.github.io/calendari-planificador/"},
+        {"fecha": "2026-11-10", "id": "tribunator", "titulo": "Tribunator", "autoria": "José Luis Miralles Bono", "url": "https://jlmirallesb.github.io/tribunator/"},
+        {"fecha": "2026-11-12", "id": "prelacion-admision-conservatorios-cv", "titulo": "Prelación — Admisión Conservatorios CV", "autoria": "José Luis Miralles Bono", "url": "https://jlmirallesb.github.io/prelacion/"},
+        {"fecha": "2026-11-07", "id": "incluxat-conservatorio", "titulo": "incluxat", "autoria": "José Luis Miralles Bono", "url": "https://jlmirallesb.github.io/incluxat/proyecto/"},
+        {"fecha": "2026-11-09", "id": "xifres-i-lletres-acollida", "titulo": "Xifres i Lletres", "autoria": "David Cordones", "url": "https://ja.cat/xifres-i-lletres"},
+        {"fecha": "2026-11-09", "id": "xifres-i-lletres-acollida", "titulo": "Aula d'Acollida Digital", "autoria": "David Cordones", "url": "https://ja.cat/acollida-lexic"},
+        {"fecha": "2026-11-10", "id": "pentagrama-maestro", "titulo": "Pentagrama Maestro", "autoria": "Iñaki Fernández", "url": "https://sites.google.com/rmsantaisabel.com/pentagrama-maestro/inicio"},
+        {"fecha": "2026-11-12", "id": "comerc-especies", "titulo": "El comerç de les espècies", "autoria": "Felip Sarroca i Gil", "url": "https://ja.cat/especies"},
+        {"fecha": "2026-11-12", "id": "relleu-obert", "titulo": "Relleu Obert — Geografia que pots tocar", "autoria": "Aarón Fortuño", "url": "https://relleu.ortogra.fi/"},
+        {"fecha": "2026-11-13", "id": "atlas-en-xogo", "titulo": "Atlas en xogo", "autoria": "Luis Vilela Acuña", "url": "https://edumind.es/contenido/htmls/Atlas%20en%20xogo.html"}
+      ]
+    }
+  ],
+  "descartado": [
+    {
+      "url": "https://github.com/edumind-es/reloj.git",
+      "motivo": "Reloj EDUmind ya tuvo su artículo (pieza 2026-11-12/reloj-edumind, en publicado.txt) y por eso no se vuelve a describir; no figura entre los once «ya contados» de la entrada. Con él son 12 los ya contados."
+    }
+  ]
+}

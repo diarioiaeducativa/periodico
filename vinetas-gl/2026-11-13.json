@@ -1,0 +1,86 @@
+{
+  "fecha": "2026-11-13",
+  "elegida": {
+    "n": 1,
+    "pieza": "elevenlabs-scribe-v3",
+    "idea": "Scribe v3 identifica en tempo real quen fala, e na acta do claustro deixa constancia do comentario que Xiz fixo en voz baixa.",
+    "guion": {
+      "vinetas": [
+        {
+          "cartela": "No claustro, con Scribe v3 levantando a acta.",
+          "escenario": "claustro",
+          "tiza": {
+            "expresion": "pensativo",
+            "postura": "pensar",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "orgulloso",
+            "postura": "arriba",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "bocadillos": [
+            {
+              "quien": "algoritmo",
+              "texto": "Agora distingo en tempo real quen fala.",
+              "tipo": "habla"
+            },
+            {
+              "quien": "tiza",
+              "texto": "Ideal para a acta.",
+              "tipo": "habla"
+            }
+          ]
+        },
+        {
+          "escenario": "claustro",
+          "tiza": {
+            "expresion": "harto",
+            "postura": "abajo",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "cargando",
+            "postura": "abajo",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "bocadillos": [
+            {
+              "quien": "tiza",
+              "texto": "(Baixiño) Isto podíase ter resolto cun correo.",
+              "tipo": "habla"
+            }
+          ]
+        },
+        {
+          "cartela": "Ao ler a acta.",
+          "escenario": "claustro",
+          "tiza": {
+            "expresion": "avergonzado",
+            "postura": "abajo",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "contento",
+            "postura": "senalar",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "bocadillos": [
+            {
+              "quien": "algoritmo",
+              "texto": "Punto 4. Xiz: «Isto podíase ter resolto cun correo».",
+              "tipo": "habla"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "traduccion": "automática con IA"
+}

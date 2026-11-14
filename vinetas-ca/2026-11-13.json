@@ -1,0 +1,86 @@
+{
+  "fecha": "2026-11-13",
+  "elegida": {
+    "n": 1,
+    "pieza": "elevenlabs-scribe-v3",
+    "idea": "Scribe v3 identifica en temps real qui parla, i a l'acta del claustre deixa constància del comentari que Guix va fer en veu baixa.",
+    "guion": {
+      "vinetas": [
+        {
+          "cartela": "Al claustre, amb Scribe v3 prenent l'acta.",
+          "escenario": "claustro",
+          "tiza": {
+            "expresion": "pensativo",
+            "postura": "pensar",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "orgulloso",
+            "postura": "arriba",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "bocadillos": [
+            {
+              "quien": "algoritmo",
+              "texto": "Ara distingeixo en temps real qui parla.",
+              "tipo": "habla"
+            },
+            {
+              "quien": "tiza",
+              "texto": "Ideal per a l'acta.",
+              "tipo": "habla"
+            }
+          ]
+        },
+        {
+          "escenario": "claustro",
+          "tiza": {
+            "expresion": "harto",
+            "postura": "abajo",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "cargando",
+            "postura": "abajo",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "bocadillos": [
+            {
+              "quien": "tiza",
+              "texto": "(Fluixet) Això es podia haver resolt amb un correu.",
+              "tipo": "habla"
+            }
+          ]
+        },
+        {
+          "cartela": "En llegir l'acta.",
+          "escenario": "claustro",
+          "tiza": {
+            "expresion": "avergonzado",
+            "postura": "abajo",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "contento",
+            "postura": "senalar",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "bocadillos": [
+            {
+              "quien": "algoritmo",
+              "texto": "Punt 4. Guix: «Això es podia haver resolt amb un correu».",
+              "tipo": "habla"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "traduccion": "automàtica amb IA"
+}

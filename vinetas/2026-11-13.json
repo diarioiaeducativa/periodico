@@ -1,0 +1,134 @@
+{
+  "fecha": "2026-11-13",
+  "elegida": {
+    "n": 1,
+    "pieza": "elevenlabs-scribe-v3",
+    "idea": "Scribe v3 identifica en tiempo real a quién habla, y en el acta del claustro deja constancia del comentario que Tiza hizo en voz baja.",
+    "guion": {
+      "vinetas": [
+        {
+          "cartela": "En el claustro, con Scribe v3 tomando el acta.",
+          "escenario": "claustro",
+          "tiza": {
+            "expresion": "pensativo",
+            "postura": "pensar",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "orgulloso",
+            "postura": "arriba",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "bocadillos": [
+            {
+              "quien": "algoritmo",
+              "texto": "Ahora distingo en tiempo real quién habla.",
+              "tipo": "habla"
+            },
+            {
+              "quien": "tiza",
+              "texto": "Ideal para el acta.",
+              "tipo": "habla"
+            }
+          ]
+        },
+        {
+          "escenario": "claustro",
+          "tiza": {
+            "expresion": "harto",
+            "postura": "abajo",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "cargando",
+            "postura": "abajo",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "bocadillos": [
+            {
+              "quien": "tiza",
+              "texto": "(Bajito) Esto se podía haber resuelto en un correo.",
+              "tipo": "habla"
+            }
+          ]
+        },
+        {
+          "cartela": "Al leer el acta.",
+          "escenario": "claustro",
+          "tiza": {
+            "expresion": "avergonzado",
+            "postura": "abajo",
+            "lugar": "izquierda",
+            "mira": "derecha"
+          },
+          "algoritmo": {
+            "expresion": "contento",
+            "postura": "senalar",
+            "lugar": "derecha",
+            "mira": "izquierda"
+          },
+          "bocadillos": [
+            {
+              "quien": "algoritmo",
+              "texto": "Punto 4. Tiza: «Esto se podía haber resuelto en un correo».",
+              "tipo": "habla"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "motivo": "Elegida por Juanjo el 14-11-2026 en lugar de la 3 (la fotocopiadora), que no se entendía: en el dibujo no se ve el documento calzando la máquina. La más graciosa y la más clara: cualquier docente reconoce el documento oficial que nadie consulta, el remate es sorprendente y corto, y la ironía va a la burocracia, no a nadie. Se ajusta a la noticia (la guía de orientaciones habla de alinear la IA con el proyecto educativo del centro). Gracia 8: no hace falta afinarla a fondo. La 1 (el acta del claustro) es buena pero se apoya en un chiste muy conocido y repite el molde y el final del número anterior (Algoritmo remata con literalidad, Tiza acaba avergonzada); la 2 tiene un buen remate mudo, pero tarda en llegar y roza reírse de lo que no sabe el alumnado; la 4 es amable pero floja; la 5 se apoya en un juego de palabras («Yo no cargo») y repite el portátil.",
+  "retoques": "Primer bocadillo acortado para que quepa («Incluso con tres o más» no cabía y mezclaba el directo con la grabación).",
+  "puntuaciones": [
+    {
+      "n": 1,
+      "pieza": "elevenlabs-scribe-v3",
+      "gracia": 7,
+      "claridad": 8,
+      "remate": 7,
+      "prohibiciones": "respeta",
+      "nota": "El «se podía resolver en un correo» es un chiste muy visto; molde gastado (literalidad de Algoritmo, Tiza avergonzada) y mismo final que el número anterior. «Incluso con tres o más» mezcla un poco la versión en directo con la grabada."
+    },
+    {
+      "n": 2,
+      "pieza": "primer-wharton",
+      "gracia": 6,
+      "claridad": 6,
+      "remate": 7,
+      "prohibiciones": "respeta",
+      "nota": "Bonito remate mudo con el chasco para Algoritmo, pero hace falta saber qué es Primer para entender la escena, y la lista sin fin de ideas erróneas del alumnado bordea reírse de él."
+    },
+    {
+      "n": 3,
+      "pieza": "intef-guias-ia-simo",
+      "gracia": 8,
+      "claridad": 9,
+      "remate": 8,
+      "prohibiciones": "respeta",
+      "nota": "Reconocible para cualquier docente, remate inesperado y corto; la ironía va a la burocracia."
+    },
+    {
+      "n": 4,
+      "pieza": "primer-wharton",
+      "gracia": 6,
+      "claridad": 7,
+      "remate": 6,
+      "prohibiciones": "respeta",
+      "nota": "Simpático y cálido, pero previsible; el remate se queda en la sonrisa."
+    },
+    {
+      "n": 5,
+      "pieza": "atlas-en-xogo",
+      "gracia": 4,
+      "claridad": 7,
+      "remate": 4,
+      "prohibiciones": "no respeta: juego de palabras fácil («Yo no cargo»)",
+      "nota": "Descartado. Además, el remate explica el chiste («Treinta cursos recitándolos») y repite el portátil del número 10."
+    }
+  ]
+}

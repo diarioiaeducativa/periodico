@@ -1,0 +1,109 @@
+{
+  "fecha": "2026-11-13",
+  "hay_edicion": true,
+  "motivo": "Día frouxo: case todo o do venres xa estaba publicado (números 11 e 12). ChatGPT-IA-edu achega o programa do INTEF en SIMO; EduMedia-IAG, Primer e Scribe v3; Vibe Coding Educativo, unha aplicación nova de xeografía (Atlas en xogo). O demais do día en VCE son avisos do bot e unha idea de divulgación en TikTok sen recurso que comprobar.",
+  "piezas": [
+    {
+      "id": "primer-wharton",
+      "seccion": "herramientas",
+      "importancia": 1,
+      "grupo": "edumedia",
+      "antetitulo": "Simulacións con axentes",
+      "titular": "Wharton publica Primer, un sistema aberto que converte unha conversa en simulación",
+      "entradilla": "Wharton Generative AI Labs ofrece un prototipo de código aberto no que un equipo de axentes entrevista o docente e constrúe unha simulación para o alumnado. Os seus autores advirten de que non se avaliou en aulas.",
+      "cuerpo": [
+        "Wharton Generative AI Labs, o laboratorio de IA xerativa da Universidade de Pensilvania, presentou [Primer](https://gail.wharton.upenn.edu/primer/), un sistema pensado para que o profesorado cree simulacións educativas sen programar. O anuncio compartiuse en EduMedia-IAG.",
+        "O proceso ten dúas fases. Na de deseño, un axente de admisión entrevista o docente, outro redacta un documento de deseño que o docente debe aprobar antes de que se constrúa nada, e outros xeran as instrucións das personaxes, as imaxes e a experiencia final. Na de execución, un axente mentor activa os coñecementos previos do alumnado e detecta ideas erróneas; un axente de práctica propón un xogo de rol ou unha actividade na que o estudante explica o aprendido; e un axente de retroalimentación fai de adestrador a partir da transcrición. Despois de cada sesión, o docente recibe informes individuais e do grupo.",
+        "Os seus catro principios de deseño son crear por conversa, deixar ao docente o papel de experto, incluír a ciencia da aprendizaxe nas instrucións de cada axente e publicar prompts, modelos e código para que se poidan inspeccionar e mellorar.",
+        "A propia páxina descríbeo como un prototipo experimental: non se avaliou como intervención de aprendizaxe en condicións de aula nin se revisou o seu cumprimento de normas de privacidade do alumnado como FERPA ou COPPA, e quen o use con estudantes asume esa revisión. A páxina non nomea a licenza, pero [o seu repositorio de GitHub](https://github.com/wharton-generative-ai-labs/primer) indica a licenza MIT. Hai ademais un [artigo técnico](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7696720), enlazado desde a páxina oficial."
+      ],
+      "fuentes": [
+        {"titulo": "Primer, Wharton Generative AI Labs (en inglés)", "url": "https://gail.wharton.upenn.edu/primer/"},
+        {"titulo": "Primer en GitHub (en inglés)", "url": "https://github.com/wharton-generative-ai-labs/primer"},
+        {"titulo": "Artigo técnico de Primer (SSRN) (en inglés)", "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7696720"}
+      ],
+      "mensaje": {"grupo": "edumedia", "id": 12242},
+      "comprobado": "Abierta la página oficial de Primer (gail.wharton.upenn.edu/primer): agentes de cada fase, aprobación del diseño, informes al docente, principios, advertencias de no evaluación y de privacidad, enlaces a GitHub y SSRN. Abierto el repositorio de GitHub: licencia MIT (la página oficial no la nombra). El artículo de SSRN no se pudo abrir (HTTP 403), solo se dice que lo enlaza la página oficial. El tuit original no se pudo abrir; el mensaje de Telegram solo trae su vista previa. Comprobado que el mensaje 12242 de EduMedia-IAG corresponde al tema.",
+      "ilustracion": "Esquema en dos fases: a la izquierda, un docente conversa con un agente que le entrevista y le devuelve un documento de diseño con un sello de «aprobado»; a la derecha, una simulación en la que una persona del alumnado dialoga con un personaje y, debajo, un informe que vuelve al docente.",
+      "ilustracion_alt": "Esquema en dous recadros: á esquerda, un docente co rótulo «Docente» entrega a súa conversa e recibe un documento cunha marca de aprobado, rotulado «Deseño»; á dereita, unha persoa do alumnado, rotulada «Alumno», dialoga cunha personaxe, rotulada «Personaxe»; debaixo, unha frecha vermella co rótulo «Informe» volve da simulación ao docente."
+    },
+    {
+      "id": "intef-guias-ia-simo",
+      "seccion": "novedades",
+      "importancia": 2,
+      "grupo": "chatgpt",
+      "antetitulo": "INTEF en SIMO",
+      "titular": "O INTEF presenta en SIMO o 13 de novembro a actualización 2026 da súa guía sobre IA",
+      "entradilla": "Segundo o programa do INTEF en SIMO EDUCACIÓN, ese día presentábanse a nova versión da súa guía sobre o uso da IA na educación e outra sobre como integrala nos centros.",
+      "cuerpo": [
+        "O Instituto Nacional de Tecnoloxías Educativas e de Formación do Profesorado (INTEF) dedicou dúas sesións do seu programa en SIMO EDUCACIÓN 2026 (IFEMA Madrid) á intelixencia artificial, segundo [o seu anuncio](https://intef.es/Noticias/intef-en-simo-2026/), que se compartiu en ChatGPT-IA-edu.",
+        "Ás 10:30, na sala 3, estaba prevista a presentación da actualización 2026 da [Guía sobre el uso de la inteligencia artificial en el ámbito educativo](https://intef.es/Noticias/nueva-version-de-la-guia-sobre-el-uso-de-la-inteligencia-artificial-en-el-ambito-educativo/), con atención á alfabetización en IA, a privacidade e o benestar dixital, e un caso de aula. É a versión 2.0, publicada en setembro, que tamén está na [Biblioteca dixital](https://t.me/ChatGPTedu/21753/52295) de ChatGPT-IA-edu. Ás 13:30, na mesma sala, a de «Orientaciones para la integración de la inteligencia artificial en los centros educativos», unha guía para aliñar a IA co proxecto educativo do centro, articulada en regulación, alfabetización e colaboración.",
+        "O anuncio só recolle o programa; non se comprobou o contido da segunda guía."
+      ],
+      "fuentes": [
+        {"titulo": "O INTEF en SIMO 2026 (en castelán)", "url": "https://intef.es/Noticias/intef-en-simo-2026/"},
+        {"titulo": "Nueva versión de la «Guía sobre el uso de la inteligencia artificial en el ámbito educativo» (en castelán)", "url": "https://intef.es/Noticias/nueva-version-de-la-guia-sobre-el-uso-de-la-inteligencia-artificial-en-el-ambito-educativo/"}
+      ],
+      "mensaje": {"grupo": "chatgpt", "id": 54344},
+      "comprobado": "Abierta la noticia del INTEF: fechas, horas, sala 3, títulos y resumen de las dos sesiones (sesión de las 10:30 descrita como presentación de las principales novedades de la guía, con un caso de aula). Las guías en sí no se han abierto, por eso el texto lo dice, y se redacta como programa, no como hecho cumplido. Comprobado en Telegram que el mensaje 54344 reenvía el anuncio del INTEF. No hay nada del INTEF en publicado.txt.",
+      "ilustracion": null,
+      "ilustracion_alt": "Liña do tempo baixo o rótulo «13 novembro» con dúas sesións: ás «10:30», un libro aberto co rótulo «Guía IA», e ás «13:30», un documento co rótulo «Centros»."
+    },
+    {
+      "id": "elevenlabs-scribe-v3",
+      "seccion": "multimedia",
+      "importancia": 3,
+      "grupo": "edumedia",
+      "antetitulo": "Voz a texto",
+      "titular": "Scribe v3 de ElevenLabs reduce, segundo a empresa, un 35 % os erros en español",
+      "entradilla": "Os novos modelos de voz a texto de ElevenLabs reducen os erros de palabras respecto a Scribe v2. As cifras son da propia empresa.",
+      "cuerpo": [
+        "ElevenLabs presentou o 10 de novembro no seu blog [Scribe v3 e Scribe v3 Live](https://elevenlabs.io/es/blog/scribe-v3), dous modelos de voz a texto: o primeiro para audio gravado e o segundo para audio en tempo real. A noticia compartiuse en EduMedia-IAG.",
+        "Segundo a empresa, Scribe v3 comete un 27 % menos de erros de palabras que Scribe v2 en 102 idiomas, e un 35 % menos en español. Scribe v3 Live reduce un 43 % os erros de palabras «semánticos» e un 31 % a taxa de erro de palabras estándar respecto a Scribe v2 Realtime, e é o primeiro da serie que identifica quen fala en tempo real. Na versión gravada, a empresa indica un 12 % menos de erros ao separar falantes e un 17 % menos con tres ou máis. Son medicións de ElevenLabs, non de terceiros.",
+        "Para a aula pode servir para transcribir clases, entrevistas ou gravacións do alumnado. Ambos modelos están dispoñibles na súa API e son os predeterminados da súa aplicación; o artigo non menciona prezos e, por defecto, o procesamento faise nos Estados Unidos, con contornos illados na UE só para clientes empresariais, un dato a ter en conta con voces do alumnado."
+      ],
+      "fuentes": [
+        {"titulo": "Presentamos Scribe v3 y v3 Live, ElevenLabs (en castelán)", "url": "https://elevenlabs.io/es/blog/scribe-v3"}
+      ],
+      "mensaje": {"grupo": "edumedia", "id": 12239},
+      "comprobado": "Abierto el artículo oficial de ElevenLabs (publicado el 10 de noviembre de 2026, actualizado el 13): 27 % en 102 idiomas, 35 % en español; en Live, 43 % en WER semántica y 31 % en WER estándar (la introducción solo cita el 43 %); diarización 12 % y 17 % en el modelo grabado; diarización en tiempo real por primera vez en la serie; disponibilidad en API y app; procesamiento en EE. UU. por defecto y UE solo en entornos aislados para empresas. Sin precios. El uso en el aula es una deducción de la redacción. Mensaje 12239 de EduMedia-IAG comprobado.",
+      "ilustracion": null,
+      "ilustracion_alt": "Á esquerda, unha onda de son rotulada «Voz» convértese nunha folla con liñas de texto rotulada «Texto»; á dereita, dúas columnas rotuladas «Scribe v2» e «Scribe v3», a segunda máis baixa, cunha frecha vermella cara abaixo e o rótulo «−35 %»."
+    },
+    {
+      "id": "atlas-en-xogo",
+      "seccion": "vibecoding",
+      "importancia": 3,
+      "grupo": "vce",
+      "antetitulo": "Aplicación da comunidade",
+      "titular": "Atlas en xogo, un xogo de mapas en galego, súmase ás aplicacións de EDUmind",
+      "entradilla": "Compartiuse en Vibe Coding Educativo unha nova aplicación de xeografía interactiva en galego. Non se puido comprobar a descrición completa dos seus modos de xogo.",
+      "cuerpo": [
+        "[Atlas en xogo](https://edumind.es/contenido/htmls/Atlas%20en%20xogo.html) é unha aplicación web de mapas interactivos en galego, con zoom e unha vista 3D, aloxada no sitio EDUmind. O pé dese sitio atribúea a Luis Vilela Acuña, autor tamén de Liga de Valores, cuxo código aberto contou o diario nun breve.",
+        "Segundo a ficha que publicou o bot dos grupos, ofrece mapas de relevo, costas, ríos, mares, climas, países, capitais e vertentes de Europa e España, con varios modos de xogo, pistas e nomes agochados, e garda o progreso do alumnado; a interface cambia entre galego, castelán e inglés e diríxese a Primaria, Secundaria e Bacharelato. A páxina é dinámica e eses detalles non se puideron comprobar un a un."
+      ],
+      "fuentes": [
+        {"titulo": "Atlas en xogo, EDUmind", "url": "https://edumind.es/contenido/htmls/Atlas%20en%20xogo.html"},
+        {"titulo": "EDUmind (en castelán)", "url": "https://edumind.es/"}
+      ],
+      "mensaje": {"grupo": "vce", "id": 14971},
+      "comprobado": "Abierta la página de Atlas en xogo: título en gallego, etiqueta 3D y controles de zoom; sin autor ni licencia en la propia página. Abierto edumind.es: pie «© 2026 EDUmind® — Luis Vilela Acuña». Modos, mapas, idiomas y guardado de progreso salen solo de la ficha del bot (mensaje 14971) y no se han podido verificar. Liga de Valores consta como breve en publicado.txt (sin clave, por eso no se enlaza).",
+      "ilustracion": null,
+      "ilustracion_alt": "Unha xanela de navegador cun mapa e o rótulo «Atlas en xogo»; á súa esquerda, unha lupa cun máis, rotulada «Zoom»; á súa dereita, un globo terráqueo co rótulo «Vista 3D»."
+    }
+  ],
+  "breves": [],
+  "descartado": [
+    "Paquete de Educación y Competencias de la Comisión Europea (reenvío de una consejería, 12 de noviembre por la tarde): es del día anterior y el día 13 no aporta nada nuevo.",
+    "Gemini 4 Hydrogen de Google (12 de noviembre por la noche): del día anterior; el día 13 no añade nada.",
+    "Idea de un docente de dar visibilidad en TikTok a aplicaciones del grupo (VCE): iniciativa personal sin recurso que comprobar.",
+    "Tuit de Pablo Felip sobre hojas de cálculo (EduMedia-IAG): sin contenido accesible ni noticia."
+  ],
+  "repaso": [
+    "Scribe v3: el 43 % de Live es de la tasa de error semántica (31 % la estándar), y el 12 %/17 % de diarización es del modelo grabado; corregido el texto y añadida la fecha de presentación (10 de noviembre).",
+    "Primer: la licencia sí consta, en GitHub (MIT); el texto y `comprobado` lo reflejan. El artículo de SSRN no se pudo abrir y se dice.",
+    "INTEF: el anuncio es un programa, no una crónica: titular, entradilla y cuerpo pasan de «presentó» a lo previsto y titular con la fecha; añadido que la sesión de las 10:30 incluye un caso de aula.",
+    "Añadida una pieza de VCE (Atlas en xogo, 13-11, omitida por el borrador): el grupo se quedaba sin pieza. Solo se afirma lo comprobado (título, 3D, zoom, autoría del pie de edumind.es); el resto, atribuido a la ficha del bot.",
+    "Mensajes 12242, 12239 y 54344 comprobados con Telegram."
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "fecha": "2026-11-13",
+  "candidatas": [
+    {
+      "pieza": "elevenlabs-scribe-v3",
+      "idea": "Scribe v3 identifica en tiempo real a quién habla, y en el acta del claustro deja constancia del comentario que Tiza hizo en voz baja.",
+      "guion": {"vinetas": [
+        {"cartela": "En el claustro, con Scribe v3 tomando el acta.",
+         "escenario": "claustro",
+         "tiza": {"expresion": "pensativo", "postura": "pensar", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "orgulloso", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "algoritmo", "texto": "Ahora identifico en tiempo real a quién habla. Incluso con tres o más.", "tipo": "habla"},
+           {"quien": "tiza", "texto": "Ideal para el acta.", "tipo": "habla"}]},
+        {"escenario": "claustro",
+         "tiza": {"expresion": "harto", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "cargando", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "tiza", "texto": "(Bajito) Esto se podía haber resuelto en un correo.", "tipo": "habla"}]},
+        {"cartela": "Al leer el acta.",
+         "escenario": "claustro",
+         "tiza": {"expresion": "avergonzado", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "contento", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "algoritmo", "texto": "Punto 4. Tiza: «Esto se podía haber resuelto en un correo».", "tipo": "habla"}]}
+      ]}
+    },
+    {
+      "pieza": "primer-wharton",
+      "idea": "El agente de Primer que entrevista al docente le pregunta a Tiza por las ideas erróneas de su alumnado, y a las tres de la mañana el agotado es él (remate mudo).",
+      "guion": {"vinetas": [
+        {"cartela": "De noche, en casa, creando una simulación con Primer.",
+         "escenario": "casa_noche",
+         "tiza": {"expresion": "pensativo", "postura": "pensar", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "contento", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "algoritmo", "texto": "Soy el agente que te entrevista. ¿Qué ideas erróneas trae tu alumnado?", "tipo": "habla"},
+           {"quien": "tiza", "texto": "¿Tienes un rato?", "tipo": "habla"}]},
+        {"cartela": "Una hora después.",
+         "escenario": "casa_noche",
+         "tiza": {"expresion": "riendo", "postura": "senalar", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "cargando", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "tiza", "texto": "...y eso solo en primero. Ahora vamos con segundo.", "tipo": "habla"}]},
+        {"cartela": "A las tres de la mañana.",
+         "escenario": "casa_noche",
+         "objeto": "taza",
+         "lleva": "tiza",
+         "tiza": {"expresion": "contento", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "agotado", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": []}
+      ]}
+    },
+    {
+      "pieza": "intef-guias-ia-simo",
+      "idea": "Las orientaciones del INTEF piden alinear la IA con el proyecto educativo del centro; Algoritmo lo busca por todas partes y Tiza sabe dónde está: calzando la fotocopiadora.",
+      "guion": {"vinetas": [
+        {"cartela": "Junto a la fotocopiadora, con la guía del INTEF.",
+         "escenario": "fotocopiadora",
+         "tiza": {"expresion": "neutral", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "contento", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "algoritmo", "texto": "Toca alinearme con el proyecto educativo del centro. ¿Me lo pasas?", "tipo": "habla"},
+           {"quien": "tiza", "texto": "Claro. Hay una copia por aquí.", "tipo": "habla"}]},
+        {"escenario": "fotocopiadora",
+         "tiza": {"expresion": "pensativo", "postura": "pensar", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "cargando", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "algoritmo", "texto": "¿En dirección? ¿En la nube? ¿En el corcho de la sala de profes?", "tipo": "habla"},
+           {"quien": "tiza", "texto": "Más cerca.", "tipo": "habla"}]},
+        {"escenario": "fotocopiadora",
+         "tiza": {"expresion": "neutral", "postura": "senalar", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "sorprendido", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "tiza", "texto": "Ahí. Calzando la fotocopiadora desde 2015.", "tipo": "habla"}]}
+      ]}
+    },
+    {
+      "pieza": "primer-wharton",
+      "idea": "Primer avisa de que no se ha evaluado en condiciones de aula, y Tiza le da la bienvenida al club: a ella tampoco la evaluaron antes de su primer septiembre.",
+      "guion": {"vinetas": [
+        {"cartela": "En una formación en línea sobre Primer.",
+         "escenario": "videollamada",
+         "tiza": {"expresion": "pensativo", "postura": "pensar", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "orgulloso", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "algoritmo", "texto": "Mis agentes te montan una simulación para tu grupo. Sin programar.", "tipo": "habla"},
+           {"quien": "tiza", "texto": "¿Y funciona en clase?", "tipo": "habla"}]},
+        {"escenario": "videollamada",
+         "tiza": {"expresion": "neutral", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "avergonzado", "postura": "encoger", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "algoritmo", "texto": "Es un prototipo. No se ha evaluado en condiciones de aula.", "tipo": "habla"}]},
+        {"escenario": "videollamada",
+         "tiza": {"expresion": "riendo", "postura": "encoger", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "sorprendido", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "tiza", "texto": "Bienvenido al club. A mí tampoco me evaluaron antes de mi primer septiembre.", "tipo": "habla"}]}
+      ]}
+    },
+    {
+      "pieza": "atlas-en-xogo",
+      "idea": "Algoritmo reta a Tiza con el mapa de ríos de Atlas en xogo, con zoom y vista 3D, y Tiza los recita todos antes de que el mapa termine de cargar.",
+      "guion": {"vinetas": [
+        {"cartela": "En la sala de profes, en la hora libre.",
+         "escenario": "sala_profes",
+         "objeto": "portatil",
+         "tiza": {"expresion": "neutral", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "contento", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "algoritmo", "texto": "Atlas en xogo: ríos de España, con zoom y vista 3D. ¿Te reto?", "tipo": "habla"},
+           {"quien": "tiza", "texto": "Venga.", "tipo": "habla"}]},
+        {"escenario": "sala_profes",
+         "objeto": "portatil",
+         "tiza": {"expresion": "orgulloso", "postura": "senalar", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "sorprendido", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "tiza", "texto": "Miño, Duero, Tajo, Guadiana, Guadalquivir, Ebro...", "tipo": "habla"},
+           {"quien": "algoritmo", "texto": "¡Espera, que aún carga el mapa!", "tipo": "habla"}]},
+        {"escenario": "sala_profes",
+         "objeto": "portatil",
+         "tiza": {"expresion": "contento", "postura": "encoger", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "avergonzado", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "tiza", "texto": "Yo no cargo, compañero. Treinta cursos recitándolos.", "tipo": "habla"}]}
+      ]}
+    }
+  ]
+}
