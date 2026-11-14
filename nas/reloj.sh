@@ -57,10 +57,10 @@ while true; do
     python3 scripts/reserva.py usar "$F" fallo >> "registro/$F.log" 2>&1
     case $? in
       0) touch "$E.listo"
-         avisar "La redacción no ha podido preparar el número de hoy ($intentos intentos): sale con una pieza de reserva, y las noticias de ayer salen mañana. Registro: /volume1/docker/diario-ia-educativa/repo/registro/$F.log" ;;
+         avisar "La redacción no ha podido preparar el número de hoy ($intentos intentos): sale con un artículo de reserva, y las noticias de ayer salen mañana. Registro: /volume1/docker/diario-ia-educativa/repo/registro/$F.log" ;;
       4) touch "$E.listo"
          avisar "La redacción se ha atascado después del repaso ($intentos intentos): el número sale con lo que estaba hecho. Registro: /volume1/docker/diario-ia-educativa/repo/registro/$F.log" ;;
-      *) avisar "Hoy no hay número: la redacción ha fallado ($intentos intentos) y no queda ninguna pieza de reserva. Registro: /volume1/docker/diario-ia-educativa/repo/registro/$F.log" ;;
+      *) avisar "Hoy no hay número: la redacción ha fallado ($intentos intentos) y no queda ningún artículo de reserva. Registro: /volume1/docker/diario-ia-educativa/repo/registro/$F.log" ;;
     esac
   fi
   # La vista previa (ADR 0025): desde las 5:00 y hasta que se publica, el número tal como saldrá,
@@ -81,7 +81,7 @@ while true; do
       fi
     elif [ ! -e "$E.vista-previa-espera" ] && [ ! -e "$E.sin-numero" ]; then
       touch "$E.vista-previa-espera"
-      avisar "El número de hoy aún no está listo para revisar: la redacción sigue trabajando. Te mando el enlace en cuanto esté; si a las 6:30 no ha acabado, sale con lo que haya o con una pieza de reserva."
+      avisar "El número de hoy aún no está listo para revisar: la redacción sigue trabajando. Te mando el enlace en cuanto esté; si a las 6:30 no ha acabado, sale con lo que haya o con un artículo de reserva."
     fi
   fi
   # Publicar: a las 6:50 y, si falla, cada 10 minutos hasta las 9:00 (ADR 0021)
@@ -104,7 +104,7 @@ while true; do
   if [ "$m" -ge 480 ] && [ -e "$E.publicado" ] && [ ! -e "$R" ]; then
     touch "$R"
     ( scripts/reserva.sh >/dev/null 2>&1
-      [ "$(python3 scripts/reserva.py cuantas)" -gt 0 ] || avisar "No queda ninguna pieza de reserva del diario y hoy no se ha podido escribir otra. Registro: /volume1/docker/diario-ia-educativa/repo/registro/reserva-$(date +%F).log" ) &
+      [ "$(python3 scripts/reserva.py cuantas)" -gt 0 ] || avisar "No queda ningún artículo de reserva del diario y hoy no se ha podido escribir otro. Registro: /volume1/docker/diario-ia-educativa/repo/registro/reserva-$(date +%F).log" ) &
   fi
   # Instagram (ADR 0015): solo si el número salió y hay permiso guardado. Un intento: si falla, a mano.
   if [ "$m" -ge 425 ] && [ -e "$E.publicado" ] && [ -d "instagram/$F" ] && [ -e "$HOME/.config/diario-instagram.json" ] \

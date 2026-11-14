@@ -53,7 +53,7 @@ echo "vigilante: en la web, el número del ${sale:-?}; falta el de hoy ($HOY), c
 python3 scripts/reserva.py usar "$F" fallo
 case $? in
   0|4) ;;
-  *) avisar "Hoy ($HOY) no hay número en la web a las $(date +%H:%M) y no queda ninguna pieza de reserva para sacarlo. Mira si el NAS está encendido."
+  *) avisar "Hoy ($HOY) no hay número en la web a las $(date +%H:%M) y no queda ningún artículo de reserva para sacarlo. Mira si el NAS está encendido."
      exit 1 ;;
 esac
 python3 scripts/publicado.py
@@ -88,4 +88,4 @@ unset GIT_SSH_COMMAND
 git add -A ediciones repositorio reserva avisos publicado.txt $(ls -d repositorio-?? reportajes reportajes-?? ilustraciones ilustraciones-?? 2>/dev/null)   # ADR 0026 y 0028
 git commit -qm "Número del $HOY, con la pieza de reserva (vigilante, ADR 0021)" && git push -q ||
   echo "vigilante: AVISO: no se pudo subir la redacción"
-avisar "A las $(date +%H:%M) el número de hoy ($HOY) no estaba en la web: lo he publicado con una pieza de reserva. Los grupos no reciben aviso, porque el bot está en el NAS. Mira si el NAS está encendido o por qué no publicó."
+avisar "A las $(date +%H:%M) el número de hoy ($HOY) no estaba en la web: lo he publicado con un artículo de reserva. Los grupos no reciben aviso, porque el bot está en el NAS. Mira si el NAS está encendido o por qué no publicó."
