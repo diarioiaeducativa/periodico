@@ -40,11 +40,17 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
 - **Cambiar un número antes de que salga**: editar
   `ediciones|vinetas(-ca)/FECHA.json` en el NAS y `docker exec
   diario-ia-educativa python3 /proyecto/generar.py`.
-  Si cambia algo que cuentan los avisos de Telegram (la viñeta, una pieza
-  de un punto), corregir también `avisos/<día de publicación>.json`: el
-  14-11-2026 se cambió la viñeta y el aviso de ChatGPT-IA-edu salió
-  hablando de la anterior. Ya publicado, el aviso se edita con el bot
-  (`editMessageText`, ADR 0037 del bot).
+  **Todo cambio antes de las 7:00 se comprueba en lo que se distribuye a
+  partir del número** (Juanjo, 14-11-2026: «cuando hagamos un cambio antes
+  de las 7 se debe comprobar si este cambio afecta a los mensajes que se van
+  a distribuir»): los avisos de los tres grupos (`avisos/<día de
+  publicación>.json`, que el bot publica a las 7:00), los privados a quien
+  sale en el número (su lista `personas`, con titulares), el carrusel de
+  Instagram de las 7:05 (`scripts/instagram.py imagenes`, que se rehace) y
+  la imagen al compartir de cada pieza si cambia un titular
+  (`scripts/og-numero.py FECHA`). El 14-11-2026 se cambió la viñeta y el
+  aviso de ChatGPT-IA-edu salió hablando de la anterior. Ya enviado, un
+  aviso se edita con el bot (`editMessageText`, ADR 0037 del bot).
 - **Reportaje de reserva a propósito**: crear `estado/<sábado>.reportaje-reserva`
   (ADR 0028).
 - **La rama `instagram` del sitio se rehace cada día con push forzado**:
