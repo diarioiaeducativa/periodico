@@ -61,5 +61,6 @@
 | [0057](0057-resumen-del-video-semanal-traducido.md) | El resumen del vídeo semanal de cada grupo, traducido |
 | [0058](0058-el-pie-no-promete-la-revision-humana.md) | El pie no promete la revisión humana de cada número |
 | [0059](0059-arreglos-tras-la-revision-a-ciegas.md) | Arreglos tras la revisión a ciegas: erratas de regla fija, fuentes en rejilla, tabla impresa y salto al contenido |
+| [0060](0060-la-marca-de-lo-comprobado-en-verde.md) | La marca de lo comprobado, en verde |
 
 Plantilla: [0000-plantilla.md](0000-plantilla.md). Para crear uno: `nuevo-adr "Título"`.
