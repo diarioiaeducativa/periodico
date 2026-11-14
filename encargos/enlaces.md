@@ -33,12 +33,16 @@ A medida que el diario crece, cada vez más temas continúan algo ya publicado: 
 que poder ir a ello.
 
 - **Lo ya publicado está en `publicado.txt`**, cada pieza con su clave: `pieza:AAAA-MM-DD/id`.
-- **`publicado.txt` solo tiene titulares: los nombres se buscan en el texto.** Antes de presentar a una
-  persona, una herramienta, un proyecto o un sitio web, busca su nombre (y sus variantes: el apellido solo,
-  el nombre del sitio) con Grep en el texto de todo lo publicado: `ediciones/`, `repositorio/`,
-  `biblioteca/`, `reportajes/` y `hace-un-ano/`. Lo que digas de lo que ya contó el diario tiene que ser
-  completo: si ha salido varias veces, se dice y se enlazan las piezas, como mucho tres; las demás se
-  resumen («además de…»). Nunca «lo contó en un breve» si también salió en otras piezas.
+- **`publicado.txt` solo tiene titulares: para saber qué se ha publicado, el buscador del diario.** Tienes
+  la herramienta `mcp__diario__buscar`, que busca en el texto entero de todo lo publicado (piezas, breves,
+  Biblioteca, Repositorio, reportajes y «Hace un año»), sin distinguir tildes ni mayúsculas y con las
+  variantes de cada palabra; si un nombre no sale, prueba con los parecidos. Úsala siempre:
+  - **antes de presentar a una persona, una herramienta, un proyecto o un sitio web**, con su nombre (y con
+    el apellido solo, o el nombre del sitio). Lo que digas de lo que ya contó el diario tiene que ser
+    completo: si ha salido varias veces, se dice y se enlazan las piezas, como mucho tres; las demás se
+    resumen («además de…»). Nunca «lo contó en un breve» si también salió en otras piezas;
+  - **antes de escribir sobre un tema**, con `parecidas` y el titular y la entradilla que piensas escribir:
+    si sale una pieza que ya cuenta lo mismo, la tuya no se escribe o se queda en lo nuevo y la enlaza.
 - **Enlaza lo que está claramente relacionado**: la pieza que contó el mismo producto, documento,
   recurso, anuncio o debate, o de la que lo tuyo es continuación. Compartir un tema general
   («la IA en la evaluación») no basta.

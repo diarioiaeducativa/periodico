@@ -8,7 +8,7 @@ FROM boletin-semanal:local
 USER root
 ENV PLAYWRIGHT_BROWSERS_PATH=/ms-playwright
 RUN apt-get update && apt-get install -y --no-install-recommends openssh-client rsync python3-pip \
-    && pip3 install --no-cache-dir --break-system-packages playwright==1.61.0 'pagefind[bin]==1.6.0' numpy==2.2.6 internetarchive==5.11.1 segno==1.6.6 pillow==12.3.0 \
+    && pip3 install --no-cache-dir --break-system-packages playwright==1.61.0 'pagefind[bin]==1.6.0' numpy==2.2.6 internetarchive==5.11.1 segno==1.6.6 pillow==12.3.0 snowballstemmer==3.0.1 \
     && python3 -m playwright install --with-deps --only-shell chromium \
     && chmod -R a+rX /ms-playwright \
     && rm -rf /var/lib/apt/lists/* /root/.cache

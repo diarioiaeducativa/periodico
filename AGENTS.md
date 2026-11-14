@@ -89,6 +89,10 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
   `GISCUS` en `generar.py`. El aviso de cada comentario (a Juanjo y a Raül,
   por el Bot de IA Educativa) es una acción del repositorio del sitio: por eso
   la publicación no toca `.github/`.
+- **Buscador de lo publicado para los agentes** (ADR 0061): `scripts/buscar.py` (también a mano: `python3 scripts/buscar.py
+  vilela`, `--parecidas "texto"`), que los agentes usan como herramienta `mcp__diario__buscar` por
+  `scripts/buscar-mcp.py`. Un agente nuevo que escriba o revise lleva `--mcp-config scripts/buscar-mcp.json` y ese
+  permiso; `Bash` sigue prohibido.
 - **Enlaces en el texto** (ADR 0011 y 0031): lo ya publicado y cada fuente
   nombrada, en su primera mención (`encargos/enlaces.md`). Para enlazar las
   fuentes de piezas ya escritas, `scripts/enlazar-fuentes.py`, que no deja

@@ -32,7 +32,7 @@ siendo la de hoy.
 - **No** es noticia: la administración interna de los grupos (normas, el bot de los
   grupos, revisiones del repositorio, avisos de moderación), saludos, bromas, quejas
   personales, problemas de facturación de alguien.
-- **Lo ya publicado** (`publicado.txt`) no se repite, pero lo nuevo de un tema ya publicado
+- **Lo ya publicado** (`publicado.txt` y, para buscar en el texto, la herramienta `mcp__diario__buscar`; cómo, en `encargos/enlaces.md`) no se repite, pero lo nuevo de un tema ya publicado
   (una respuesta a una duda, cómo se hace, un dato posterior) sale como breve, enlazando la pieza
   anterior. Cómo se enlaza, en `encargos/enlaces.md`: enlaza también, en cualquier pieza, lo ya
   publicado que esté claramente relacionado.
@@ -96,8 +96,8 @@ siendo la de hoy.
   corresponde cada una.
 - **Lo que no es de estos días lleva su fecha en el titular.** Un informe de agosto no «se
   publica» hoy: «Un informe de agosto…».
-- **Antes de escribir sobre un asunto ya tratado, lee las piezas anteriores** (`publicado.txt`
-  dice cuáles; su texto está en `ediciones/`, `biblioteca/` y `reportajes/`). La nueva da las
+- **Antes de escribir sobre un asunto ya tratado, lee las piezas anteriores** (`mcp__diario__buscar`
+  y `publicado.txt` dicen cuáles; su texto está en `ediciones/`, `biblioteca/` y `reportajes/`). La nueva da las
   mismas cifras y fechas, enlaza la anterior y, si un dato ha cambiado o la anterior ha quedado
   desfasada, lo dice con claridad.
 - **Antes de juzgar un enlace, ábrelo.** Una dirección no dice lo que hay en la página: un blog

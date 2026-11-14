@@ -45,9 +45,8 @@ ponerse enlaces a lo que está claramente relacionado».
   ya había contado otras tres aplicaciones suyas (los dictados de EDUmind, MiClase y el Reloj EDUmind), con
   su nombre solo en el cuerpo. Juanjo lo vio con el buscador de la web: «El redactor no debería usar el
   buscador para localizar este tipo de datos?». El buscador (Pagefind) funciona en el navegador y los
-  agentes no pueden usarlo, pero sí buscar con Grep en el texto de `ediciones/`, `repositorio/`,
-  `biblioteca/`, `reportajes/` y `hace-un-ano/`. `encargos/enlaces.md` pide hacerlo antes de presentar a
-  una persona, herramienta, proyecto o sitio, y que lo que se diga de lo ya contado sea completo; el
+  agentes no pueden usarlo; tienen desde ese día un buscador propio (ADR 0061). `encargos/enlaces.md` pide
+  usarlo antes de presentar a una persona, herramienta, proyecto o sitio, y que lo que se diga de lo ya contado sea completo; el
   revisor de la redacción (`encargos/pasos/1-repaso.md`) lo comprueba. La pieza se actualizó en los cinco
   idiomas el mismo día.
 

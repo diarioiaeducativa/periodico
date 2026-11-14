@@ -48,7 +48,7 @@ agente() {
   log "empieza $paso ($modelo)"
   salida=$(sed -e "s/{FECHA}/$FECHA/g" -e "s/{PUBLICA}/$PUBLICA/g" "encargos/pasos/$paso.md" \
     | timeout "$((minutos * 60))" claude -p --model "$modelo" \
-        --permission-mode acceptEdits --allowedTools WebFetch WebSearch \
+        --permission-mode acceptEdits --mcp-config scripts/buscar-mcp.json --allowedTools WebFetch WebSearch mcp__diario__buscar \
         --disallowedTools "Bash" "Read(//home/**)" "Read(//proc/**)" "Read(//sitio/**)" "Read(//etc/**)" \
         --output-format text 2>>"$REG")
   local codigo=$?

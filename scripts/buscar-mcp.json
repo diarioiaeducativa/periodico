@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "diario": {
+      "command": "python3",
+      "args": ["scripts/buscar-mcp.py"]
+    }
+  }
+}
