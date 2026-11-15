@@ -79,3 +79,15 @@ en 20 páginas (portada, secciones, números, la semana, un artículo, el report
 redacción, la hemeroteca y otros idiomas), en Chromium y Firefox, escritorio, tableta y móvil: sin ningún aviso.
 Al empezar daba 75: huecos de hasta 225 px, fechas solas, miniaturas de 334 y 369 px en la misma fila y la
 viñeta pegada al reportaje. La portada mide unos 7.070 px en el ordenador (4.950 antes de llenar los bloques).
+
+## Ajustes del 15-11-2026
+
+- **Breves y «Hace un año»**: con un solo breve, la fila invierte el reparto (`.breves-pocos`: un tercio para
+  los breves y dos para «Hace un año»). Medido a 1000-1366 px: con 2/1 quedaban 80-105 px vacíos bajo el breve;
+  con 1/2, como mucho 53. Juanjo descartó separarlos en dos franjas a todo el ancho («no me gusta así»).
+- **«La semana en vídeo»**: el vídeo crece hasta el alto del texto (entre 15 y 24rem, `semana()` en
+  `SCRIPT_FILAS`), y por debajo de 64rem el bloque va en una columna, porque el texto crece tanto que el vídeo no
+  llegaría.
+- **`scripts/revisar-maqueta.js`** cuenta ya los vídeos (antes medía el vídeo como si acabara en su borde de
+  arriba) y no cuenta el texto de un desplegable cerrado, al que Chrome da medidas. Las dos cosas hacían que
+  avisara de un hueco en «La semana en vídeo» mayor que el real.

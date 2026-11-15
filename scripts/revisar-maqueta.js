@@ -20,13 +20,18 @@ module.exports = async (page) => {
   const r = await page.evaluate(() => {
     const fallos = [];
     const vis = el => { const s = getComputedStyle(el); const b = el.getBoundingClientRect(); return s.display !== 'none' && s.visibility !== 'hidden' && b.width > 0 && b.height > 0; };
+    // Lo que está dentro de un desplegable cerrado no se ve, aunque el navegador le dé medidas (Chrome, con
+    // content-visibility): «Lo que aparece en pantalla» de «La semana en vídeo»
+    const plegado = el => !!el.closest('details:not([open]) > :not(summary)');
     const nombre = el => (el.closest('section[class*="sec-"], section, article')?.className || el.tagName).toString().slice(0, 40);
     const fondoTexto = el => { let m = el.getBoundingClientRect().top; const w = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
-      while (w.nextNode()) { const n = w.currentNode; if (!n.textContent.trim() || !vis(n.parentElement)) continue; const rg = document.createRange(); rg.selectNodeContents(n);
+      while (w.nextNode()) { const n = w.currentNode; if (!n.textContent.trim() || !vis(n.parentElement) || plegado(n.parentElement)) continue; const rg = document.createRange(); rg.selectNodeContents(n);
         // Lo que recorta una entradilla recortada (line-clamp) no se ve: cuenta solo hasta su borde
         let tope = Infinity; for (let a = n.parentElement; a && a !== el.parentElement; a = a.parentElement) if (getComputedStyle(a).overflow !== 'visible') tope = Math.min(tope, a.getBoundingClientRect().bottom);
         for (const x of rg.getClientRects()) m = Math.max(m, Math.min(x.bottom, tope)); }
-      for (const f of el.querySelectorAll('figure, img, svg')) if (vis(f)) m = Math.max(m, f.getBoundingClientRect().bottom);
+      // Lo que se ve sin texto también llega hasta donde acaba: dibujos, imágenes y vídeos, también si es el propio
+      // hijo de la rejilla (el vídeo de «La semana en vídeo»)
+      for (const f of [el, ...el.querySelectorAll('figure, img, svg, video')]) if (f.matches('figure, img, svg, video') && vis(f)) m = Math.max(m, f.getBoundingClientRect().bottom);
       return m; };
     // Huecos en filas: hijos de una rejilla agrupados por su línea superior
     for (const g of document.querySelectorAll('main *')) {
