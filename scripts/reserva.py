@@ -10,25 +10,27 @@
                                            pasa a reserva/CLAVE/ lo que repositorio.sh o biblioteca.sh escribió con esa clave
     scripts/reserva.py caducar             retira las que pasan de CADUCA días (se escribirán otras)
     scripts/reserva.py usar AAAA-MM-DD [fallo|relleno]
-                                           pone una pieza de reserva en el número de esas conversaciones
+                                           completa el número de esas conversaciones con el número de reserva
 
 Una pieza de reserva es un artículo del fondo del Repositorio de VCE («Del fondo del repositorio») o,
 desde el 08-11-2026, del fondo de la Biblioteca digital («Del fondo de la biblioteca»), que se
 alternan para que el día que se use no toque siempre una aplicación.
 Puede caducar (el recurso cambia de dirección, desaparece o pasa a ser de pago): a los CADUCA días
 sin usarse se retira y se escribe otra, y antes de usarla se comprueba que el recurso sigue
-respondiendo (ADR 0028). La escribe repositorio.sh, con su documentalista, su revisor y su traductor, con una
-clave de fecha provisional (2099-01-NN) que no choca con ningún número; aquí se guarda en
-reserva/CLAVE/ con su captura. Usarla no necesita IA: se cambia la clave por la fecha del día en
-el JSON y en el nombre de la captura, se pasa a repositorio/ y se marca la edición con
-"reserva": "fallo" o "relleno". Con «fallo» (la redacción no pudo preparar el número) la web lo
-dice y la noche siguiente recupera las conversaciones de ese día (noche.sh); con «relleno» (no
-había nada que contar y tampoco salió nada del repositorio) no hay nada que recuperar. Si el día
-ya tiene piezas (la redacción terminó pero se atascó después), no se añade nada. En los dos casos,
-si faltan los avisos de los grupos, se escriben aquí, sin IA.
+respondiendo (ADR 0028). La escribe repositorio.sh o biblioteca.sh, con su documentalista, su revisor y su
+traductor, con una clave de fecha provisional (2099-01-NN) que no choca con ningún número; aquí se guarda en
+reserva/CLAVE/ con su captura.
 
-«usar» sale con 0 si ha puesto la reserva, con 4 si el día ya tenía piezas (no hace falta) y con 3
-si no queda ninguna.
+El número de reserva (ADR 0068): las piezas de reserva, la viñeta de reserva (reserva_vineta.py), «Hace un año»
+escrito por adelantado (reserva_hace_un_ano.py) y el reportaje de reserva (reserva_reportaje.py). «usar» lo pone
+entero o por partes, sin IA: completa el número hasta MINIMO piezas con las de reserva (se cambia la clave por la
+fecha del día en el JSON y en el nombre de la captura) y, si le faltan, pone la viñeta y «Hace un año». Un número sin
+ninguna pieza propia se marca con "reserva": «fallo» (la redacción no pudo prepararlo: la web lo dice y la noche
+siguiente recupera las conversaciones de ese día, noche.sh) o «relleno» (no había nada que contar: no dice nada). Lo
+lanza noche.sh cada noche con «relleno», antes de traducir, y los planes B (reserva de las 6:30 y vigilante) con
+«fallo»; en estos, si faltan los avisos de los grupos, se escriben aquí, sin IA.
+
+«usar» sale con 0 si ha puesto algo, con 4 si no hacía falta nada y con 3 si el número se queda sin piezas.
 """
 import datetime
 import json
@@ -39,6 +41,7 @@ import sys
 RAIZ = pathlib.Path(__file__).resolve().parent.parent
 RESERVA = RAIZ / "reserva"
 OBJETIVO = 3          # piezas de reserva que tiene que haber siempre listas
+MINIMO = 3            # piezas que lleva como mínimo cada número: lo que falte, de la reserva (Juanjo, 15-11-2026)
 CADUCA = 60           # días sin usarse: se retira y se escribe otra (Juanjo, 06-11-2026)
 TRADUCCIONES = ("ca", "gl", "eu", "en")   # los idiomas a los que se traduce (scripts/idiomas.py, ADR 0026)
 PREFIJO = "2099-01-"  # las claves provisionales: una fecha que nunca será un número
@@ -229,25 +232,21 @@ def avisos(fecha, fallo):
                             ensure_ascii=False, indent=2) + "\n")
 
 
-def usar(fecha, motivo="fallo"):
-    if piezas_del_dia(fecha):
-        avisos(fecha, False)
-        print(f"reserva: el número del {fecha} ya tiene piezas; no hace falta la reserva")
-        return 4
+def poner_una(fecha):
+    """Añade al número de esas conversaciones la pieza de reserva vigente más antigua. Devuelve su clave, o
+    None si no queda ninguna. Las que ya no responden se retiran por el camino."""
     caducar()
     r = None
     for d in listas():
-        ok, motivo = vigente(d)
+        ok, porque = vigente(d)
         if ok:
             r = d
             break
-        retirar(d, motivo)
+        retirar(d, porque)
     if r is None:
-        print("reserva: no queda ninguna pieza de reserva", file=sys.stderr)
-        return 3
+        return None
     clave = r.name
     t = tipo(r)
-    nuevas = []
     for nombre, destino in [(f"{t}.json", t)] + [(f"{t}-{c}.json", f"{t}-{c}") for c in TRADUCCIONES]:
         f = r / nombre
         if not f.exists():
@@ -255,27 +254,56 @@ def usar(fecha, motivo="fallo"):
         d = json.loads(f.read_text().replace(clave, fecha))   # la fecha y el nombre de la captura
         d["fecha"] = fecha
         g = RAIZ / destino / f"{fecha}.json"
-        if g.exists():   # el día ya tenía un archivo (solo descartes): se le añaden las piezas
+        if g.exists():   # el día ya tenía un archivo (sus piezas o solo descartes): se le añaden las piezas
             viejo = json.loads(g.read_text())
             viejo["piezas"] = viejo.get("piezas", []) + d.get("piezas", [])
             d = viejo
         g.parent.mkdir(exist_ok=True)
         g.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "\n")
-        if destino == t:
-            nuevas = d.get("piezas", [])
     for f in (r / "capturas").glob("*.jpg"):
         (RAIZ / "repositorio" / "capturas").mkdir(parents=True, exist_ok=True)
         shutil.move(str(f), RAIZ / "repositorio" / "capturas" / f.name.replace(clave, fecha))
     mover_dibujos(clave, fecha, r, None)
-    ed = RAIZ / "ediciones" / f"{fecha}.json"
-    d = json.loads(ed.read_text()) if ed.exists() else {"fecha": fecha, "hay_edicion": False, "piezas": [], "breves": []}
-    d["reserva"] = motivo
-    d["motivo"] = (d.get("motivo") + " · " if d.get("motivo") else "") + f"número con la pieza de reserva {clave} ({motivo})"
-    ed.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "\n")
-    avisos(fecha, motivo == "fallo")
     shutil.rmtree(r)
-    print(f"reserva: el número del {fecha} sale con la reserva {clave}, de {t} ({', '.join(p['id'] for p in nuevas)}); quedan {len(listas())}")
-    return 0
+    return clave
+
+
+def usar(fecha, motivo="fallo"):
+    """El número de reserva (ADR 0068), entero o por partes: completa el número hasta MINIMO piezas con las de
+    reserva y, si le faltan, pone la viñeta y «Hace un año» de reserva. Un número sin ninguna pieza propia se
+    marca con `motivo` («fallo»: la web lo dice y la noche siguiente recupera ese día; «relleno»: no dice nada).
+    Sale con 0 si ha puesto algo, con 4 si no hacía falta nada y con 3 si el número se queda sin piezas."""
+    propias = piezas_del_dia(fecha)
+    puestas = []
+    while piezas_del_dia(fecha) < MINIMO:
+        clave = poner_una(fecha)
+        if not clave:
+            break
+        puestas.append(clave)
+    import reserva_vineta   # noqa: E402 — la viñeta y «Hace un año» de reserva, si al número le faltan
+    import reserva_hace_un_ano   # noqa: E402
+    otras = [x for x in (reserva_vineta.usar(fecha), reserva_hace_un_ano.usar(fecha)) if x]
+    if puestas:
+        ed = RAIZ / "ediciones" / f"{fecha}.json"
+        d = json.loads(ed.read_text()) if ed.exists() else {"fecha": fecha, "hay_edicion": False, "piezas": [], "breves": []}
+        if not propias:
+            d["reserva"] = motivo
+        d["piezas_reserva"] = d.get("piezas_reserva", []) + puestas
+        d["motivo"] = (d.get("motivo") + " · " if d.get("motivo") else "") + \
+            f"{len(puestas)} pieza(s) de reserva ({', '.join(puestas)}; {motivo if not propias else 'para completar'})"
+        ed.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "\n")
+    if motivo == "fallo":   # en los planes B no hay agente que escriba los avisos: se escriben aquí, sin IA
+        avisos(fecha, not propias)
+    hecho = puestas + otras
+    if hecho:
+        print(f"reserva: el número del {fecha} tenía {propias} pieza(s); se le ha puesto {', '.join(hecho)}; "
+              f"quedan {len(listas())} piezas de reserva")
+        return 0 if propias or puestas else 3
+    if not propias:
+        print("reserva: no queda ninguna pieza de reserva", file=sys.stderr)
+        return 3
+    print(f"reserva: el número del {fecha} ya tiene {propias} pieza(s); no hace falta la reserva")
+    return 4
 
 
 def main():

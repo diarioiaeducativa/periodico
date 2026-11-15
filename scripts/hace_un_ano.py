@@ -53,14 +53,17 @@ def entrada(base, fecha):
             partes += [fmt(m) for m in hoy]
     # Lo ya contado en «Hace un año» el último mes, para no repetir tema: en dos días seguidos se puede estar
     # hablando de lo mismo (en la prueba del 09-11-2026, dos piezas seguidas sobre Veo y Gemini Omni)
+    # Con los escritos por adelantado (ADR 0068), también los de fechas posteriores y los guardados en la reserva
     hoy = datetime.date.fromisoformat(fecha)
     ya = []
-    for f in sorted((RAIZ / SECCION).glob("*.json")):
+    archivos = [(f.stem, f) for f in (RAIZ / SECCION).glob("*.json")] + \
+               [(d.name, d / f"{SECCION}.json") for d in (RAIZ / "reserva" / SECCION).glob("20*")]
+    for dia, f in sorted(archivos):
         try:
-            if not 0 < (hoy - datetime.date.fromisoformat(f.stem)).days <= DIAS_SIN_REPETIR:
+            if dia == fecha or abs((hoy - datetime.date.fromisoformat(dia)).days) > DIAS_SIN_REPETIR:
                 continue
             for p in json.loads(f.read_text()).get("piezas") or []:
-                ya.append(f'- {f.stem}: {p.get("titular", "")} — {p.get("entradilla", "")}')
+                ya.append(f'- {dia}: {p.get("titular", "")} — {p.get("entradilla", "")}')
         except (ValueError, OSError):
             continue
     partes.insert(1, "\n# Ya contado en «Hace un año» el último mes: no repitas su tema ni su producto\n\n"

@@ -68,17 +68,19 @@ comprobar_vineta() {
 json_ok() { python3 -c 'import json,sys; json.load(open(sys.argv[1]))' "$1" 2>/dev/null; }
 
 # Un día sin piezas de la redacción: si entró un documento en la Biblioteca digital (ADR 0006) o
-# toca un recurso del repositorio (ADR 0008), eso es el número del día. Si tampoco sale nada de
-# ahí, una pieza de reserva (ADR 0021): no puede haber ningún día sin número.
+# toca un recurso del repositorio (ADR 0008), eso es el número del día, con su «Hace un año» (ADR 0040). Lo que
+# no llegue a tres piezas, y la viñeta, salen del número de reserva (ADR 0021 y 0068): no puede haber ningún
+# día sin número, y ninguno pobre.
 solo_anexos() {
   local hay=0
   python3 scripts/publicado.py >> "$REG" 2>&1
   bash scripts/biblioteca.sh "$FECHA" && hay=1
   bash scripts/repositorio.sh "$FECHA" && hay=1
-  if [ $hay = 0 ] && python3 scripts/reserva.py usar "$FECHA" relleno >> "$REG" 2>&1; then
-    log "sin piezas propias: sale la pieza de reserva"
-    hay=1
+  bash scripts/hace-un-ano.sh "$FECHA"
+  if python3 scripts/reserva.py usar "$FECHA" relleno >> "$REG" 2>&1; then
+    log "sin piezas de la redacción: el número se completa con la reserva"
   fi
+  [ "$(python3 -c 'import sys; sys.path.insert(0, "scripts"); import reserva; print(reserva.piezas_del_dia(sys.argv[1]))' "$FECHA")" -gt 0 ] && hay=1
   if [ $hay = 1 ]; then
     agente "$SONNET" 6-avisos 20
     revisar_dibujos_ca
@@ -248,6 +250,11 @@ if [ "$(date -d "$FECHA" +%u)" = 7 ] || [ "${COMENTARIO:-0}" = 1 ]; then
   bash scripts/comentario-semana.sh "$(date -d "$FECHA" +%G-%V)"
   [ $? -le 2 ] || log "el comentario de la semana falló de forma inesperada: la semana sale sin él"
 fi
+
+# 3 sexies (antes). El número de reserva, por partes (ADR 0068): si el número no llega a tres piezas, se completa
+# con las de reserva, y si le falta la viñeta o «Hace un año», los de reserva. Sin IA; no dice nada en la web.
+python3 scripts/reserva.py usar "$FECHA" relleno >> "$REG" 2>&1
+[ $? = 0 ] && log "número completado con la reserva: $(grep 'reserva: el número del' "$REG" | tail -1 | sed 's/.*se le ha puesto //')"
 
 # 3 sexies. Que no se atribuya a un autor del diario lo de otra persona con su mismo nombre (ADR 0066): la
 # comprobación, sin IA; si encuentra algo, un corrector lo mira antes de traducir la edición y escribir los

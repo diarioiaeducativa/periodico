@@ -64,11 +64,27 @@ else
   log "reserva: reportaje de reserva listo"
 fi
 
+# La viñeta de reserva (ADR 0068): una, si no queda ninguna vigente
+python3 scripts/reserva_vineta.py caducar >> "$REG" 2>&1
+if [ "$(python3 scripts/reserva_vineta.py faltan)" -gt 0 ]; then
+  log "reserva: falta la viñeta de reserva; se escribe"
+  bash scripts/vineta-reserva.sh >> "$REG" 2>&1 || codigo=1
+else
+  log "reserva: viñeta de reserva lista"
+fi
+
+# «Hace un año» por adelantado (ADR 0068): los de las próximas siete noches que falten, dos como mucho cada mañana
+python3 scripts/reserva_hace_un_ano.py caducar >> "$REG" 2>&1
+for F in $(python3 scripts/reserva_hace_un_ano.py pendientes 2); do
+  log "reserva: se escribe por adelantado «Hace un año» del $F"
+  ADELANTO=1 bash scripts/hace-un-ano.sh "$F" >> "$REG" 2>&1 || log "reserva: «Hace un año» del $F no ha salido; esa noche se escribe como siempre"
+done
+
 git add -A reserva
 if ! git diff --cached --quiet; then
   git commit -qm "Reserva: $(date +%F)" && git pull -q --rebase &&
   git notes --ref=ia add -f -m "Modelo: Claude Sonnet 5.5 (claude-sonnet-5-5) y Claude Opus 5.5 (claude-opus-5-5) · Claude Code, reserva en el NAS" HEAD &&
   git push -q && git push -q origin refs/notes/ia || log "AVISO: no se pudo subir la reserva a GitHub"
 fi
-log "reserva: $(python3 scripts/reserva.py cuantas) piezas y $(python3 scripts/reserva_reportaje.py cuantos) reportaje listos"
+log "reserva: $(python3 scripts/reserva.py cuantas) piezas, $(python3 scripts/reserva_reportaje.py cuantos) reportaje(s), $(python3 scripts/reserva_vineta.py cuantas) viñeta(s) y $(ls -d reserva/hace-un-ano/20* 2>/dev/null | wc -l) «Hace un año» listos"
 exit $codigo

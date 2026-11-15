@@ -1435,7 +1435,8 @@ def bloque_vineta(prof, eds, fecha, en_archivo=False, pieza=None):
     f = con_traduccion("vinetas", f"{fecha}.json")
     if not f.exists():
         return ""
-    elegida = json.loads(f.read_text()).get("elegida")
+    datos_vineta = json.loads(f.read_text())
+    elegida = datos_vineta.get("elegida")
     if not elegida or (pieza and elegida.get("pieza") != pieza):
         return ""
     d = next((x for x in eds if x["fecha"] == fecha), None)
@@ -1446,12 +1447,14 @@ def bloque_vineta(prof, eds, fecha, en_archivo=False, pieza=None):
         origen_txt = f'{L["a_partir"]} <a href="{href(prof, p)}">{e(p["titular"])}</a>.'
     elif b:
         origen_txt = f'{L["a_partir"]} <a href="{prof}{ruta_breve(b)}">{e(titulo_breve(b))}</a>.'
+    elif datos_vineta.get("reserva"):   # la de reserva no sale de ninguna noticia (ADR 0068): sin origen
+        origen_txt = ""
     else:
         origen_txt = L["a_partir_dia"]
     return f"""<section class="vineta sec-vineta" aria-labelledby="t-vineta-{fecha}">
   <h2 id="t-vineta-{fecha}" class="vineta-titulo"><span>{"" if en_archivo else f'<a href="{prof}vineta.html">{icono("vineta")} {L["vineta_titulo"]}</a>'}</span> <span class="fecha-pieza">{fecha_corta(publicacion(fecha))}</span></h2>
   <div class="tira">{vineta.tira(elegida["guion"], {"panel": L["vin_panel"], "tiza": L["nombre_tiza"], "algoritmo": L["nombre_algoritmo"], "pensando": L["vin_pensando"], "comillas": "“”" if L["codigo"] == "en" else "«»"})}</div>
-  {"" if pieza else f'<p class="vineta-origen">{origen_txt}</p>'}
+  {"" if pieza or not origen_txt else f'<p class="vineta-origen">{origen_txt}</p>'}
 </section>"""
 
 

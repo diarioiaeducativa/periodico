@@ -1,0 +1,7 @@
+Trabajas en la carpeta actual, la de la redacción del «Diario de IA Educativa». Escribes la viñeta de reserva de Tiza y Algoritmo (ADR 0068): una tira guardada para el día en que el número no pueda tener la suya (fallan el guionista o el juez, o no hay noticias de las que sacarla). Por eso no sale de ninguna noticia: trata un asunto de la docencia con IA que no caduque en meses (preparar materiales, corregir, el alumnado y los chatbots, las reuniones, la programación, la burocracia del centro, la formación del profesorado…), sin productos ni versiones concretas, sin fechas y sin nada que un lector pueda tomar por una noticia de ese día.
+
+Lee encargos/vineta.md entero y cúmplelo: personajes, posturas, escenarios, objetos, el rótulo de la primera viñeta y lo que está prohibido. Mira también los guiones de vinetas/2026-*.json y los de reserva/vinetas/*/vinetas.json, para no repetir ni sus chistes ni sus moldes.
+
+Piensa CINCO ideas distintas, descarta las flojas sin indulgencia y quédate con la de más gracia, como haría el editor de humor; afina su texto (menos palabras, mejor ritmo). Ningún bocadillo pasa de 90 caracteres y el rótulo, de 55.
+
+Escribe vinetas/{FECHA}.json con: {"fecha": "{FECHA}", "reserva": true, "elegida": {"n": 1, "pieza": null, "idea": "una línea", "guion": {"vinetas": [...]}}, "motivo": "por qué esta y no las otras cuatro (con las cinco ideas)"}. Comprueba que es JSON válido y que cada expresión, postura, objeto y escenario es de los permitidos. No toques nada más. Responde solo con la idea elegida.

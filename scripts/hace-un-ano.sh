@@ -4,6 +4,11 @@
 # hoy. Lo lanza noche.sh cada noche, cuando las piezas del día ya están; también a mano:
 #
 #   scripts/hace-un-ano.sh AAAA-MM-DD      (la fecha de las conversaciones del número, como noche.sh)
+#   ADELANTO=1 scripts/hace-un-ano.sh AAAA-MM-DD   (por adelantado, para reserva/hace-un-ano/; lo lanza reserva.sh)
+#
+# Por adelantado (ADR 0068): reserva.sh deja escritos los de los próximos siete días. La noche de cada número, si
+# el suyo está en reserva/hace-un-ano/, se pone en su sitio y solo se revisa su dibujo, que al escribirlo no tenía
+# página donde mirarlo; si no está, se escribe como siempre.
 #
 # Cuatro pasos: el redactor (Opus, que comprueba en internet cómo está hoy cada cosa) → hace-un-ano-borrador/;
 # el verificador (Sonnet, no ha escrito nada) → hace-un-ano/; el ilustrador (Sonnet), el díptico «Entonces /
@@ -45,7 +50,13 @@ json_ok() { python3 -c 'import json,sys; json.load(open(sys.argv[1]))' "$1" 2>/d
 sin() { log "sin «Hace un año»: $*"; rm -f "hace-un-ano/$FECHA.json" $(traducidos hace-un-ano); exit 2; }
 hay() { python3 -c 'import json,sys; sys.exit(0 if json.load(open(sys.argv[1])).get("hay_pieza") else 1)' "$1" 2>/dev/null; }
 
-log "=== «Hace un año» del número del $PUBLICA"
+log "=== «Hace un año» del número del $PUBLICA${ADELANTO:+ (por adelantado)}"
+if [ "${ADELANTO:-0}" != 1 ] && python3 scripts/reserva_hace_un_ano.py usar "$FECHA" >> "$REG" 2>&1; then
+  id=$(python3 -c 'import json,sys; print(json.load(open(sys.argv[1]))["piezas"][0]["id"])' "hace-un-ano/$FECHA.json")
+  [ -e "ilustraciones/$FECHA-$id.svg" ] && revisar_dibujos "$id"
+  log "«Hace un año» listo (escrito por adelantado): $(python3 -c 'import json,sys; print(json.load(open(sys.argv[1]))["piezas"][0]["titular"])' "hace-un-ano/$FECHA.json")"
+  exit 0
+fi
 python3 scripts/hace_un_ano.py entrada "$DATOS" "$FECHA" >> "$REG" 2>&1 || sin "no hay mensajes de hace un año"
 
 rm -f "hace-un-ano-borrador/$FECHA.json" "hace-un-ano/$FECHA.json" $(traducidos hace-un-ano)
@@ -75,7 +86,8 @@ id=$(python3 -c 'import json,sys; print(json.load(open(sys.argv[1]))["piezas"][0
 cp "hace-un-ano/$FECHA.json" "registro/$FECHA-hace-un-ano-antes.json"
 agente "$SONNET" 26-hace-un-ano-ilustracion 20
 if json_ok "hace-un-ano/$FECHA.json" && [ "$(python3 scripts/hace_un_ano.py comprobar "$FECHA" >/dev/null; echo $?)" = 0 ]; then
-  revisar_dibujos "$id"
+  # Por adelantado no hay página donde mirarlo: se revisa la noche en que sale
+  [ "${ADELANTO:-0}" = 1 ] || revisar_dibujos "$id"
 else
   log "el ilustrador estropeó la pieza: sale sin dibujo"
   cp "registro/$FECHA-hace-un-ano-antes.json" "hace-un-ano/$FECHA.json"
@@ -83,5 +95,6 @@ else
 fi
 
 traducir 25-hace-un-ano-traduccion hace-un-ano 15
-log "«Hace un año» listo: $(python3 -c 'import json,sys; print(json.load(open(sys.argv[1]))["piezas"][0]["titular"])' "hace-un-ano/$FECHA.json")"
+log "«Hace un año» listo${ADELANTO:+ (por adelantado)}: $(python3 -c 'import json,sys; print(json.load(open(sys.argv[1]))["piezas"][0]["titular"])' "hace-un-ano/$FECHA.json")"
+[ "${ADELANTO:-0}" = 1 ] && { python3 scripts/reserva_hace_un_ano.py guardar "$FECHA" >> "$REG" 2>&1 || exit 2; }
 exit 0
