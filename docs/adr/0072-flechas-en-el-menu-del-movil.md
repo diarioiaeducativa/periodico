@@ -26,4 +26,4 @@ activa quedaba fuera de la vista. Juanjo pidió algo en el margen derecho que ay
 
 - Chromium, Firefox y WebKit, en móvil y escritorio, tema claro y oscuro, con `scripts/revisar-maqueta.js` sin avisos
   (15-11-2026). En el WebKit de Linux que simula Safari, el degradado claro dibuja unas rayas muy tenues: sin
-  comprobar en un iPhone real. Juanjo lo probó en su móvil antes de publicarlo.
+  comprobar en un iPhone real. Se le mandó a Juanjo para verlo en el móvil antes de publicarlo.
