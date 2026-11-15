@@ -238,6 +238,23 @@ if [ "$(date -d "$FECHA" +%u)" = 7 ] || [ "${COMENTARIO:-0}" = 1 ]; then
   [ $? -le 2 ] || log "el comentario de la semana falló de forma inesperada: la semana sale sin él"
 fi
 
+# 3 sexies. Que no se atribuya a un autor del diario lo de otra persona con su mismo nombre (ADR 0066): la
+# comprobación, sin IA; si encuentra algo, un corrector lo mira antes de traducir la edición y escribir los
+# avisos, y lo que quede se le dice a Juanjo antes de la vista previa. Nunca impide el número.
+revisar_autoria() {   # revisar_autoria [corrige]
+  local f="registro/$FECHA-autoria.txt"
+  python3 scripts/revisar-autoria.py --dia "$FECHA" > "$f" 2>>"$REG"
+  [ $? = 4 ] || { rm -f "$f"; return 0; }
+  log "autoría dudosa: $(wc -l < "$f") caso(s), en $f"
+  if [ "$1" = corrige ]; then
+    agente "$SONNET" 28-autoria 15
+    python3 scripts/revisar-autoria.py --dia "$FECHA" > "$f" 2>>"$REG"
+    [ $? = 4 ] || { log "autoría: corregido"; rm -f "$f"; return 0; }
+  fi
+  avisar-juanjo --de "Diario de IA Educativa" "Puede que el número atribuya a un autor del diario algo que es de otra persona; míralo en la vista previa. Casos: /volume1/docker/diario-ia-educativa/repo/$f" >/dev/null 2>&1 || true
+}
+revisar_autoria corrige
+
 # 4. Traducción y avisos, a la vez.
 traducir 5-traduccion edicion 50 & p1=$!
 agente "$SONNET" 6-avisos 20 & p2=$!
@@ -255,6 +272,9 @@ for a in d.values():   # saludo y de dos a tres puntos (ADR 0010)
   log "avisos inválidos: se reintenta una vez"
   agente "$SONNET" 6-avisos 20
 fi
+
+# 4 bis (antes). La autoría, otra vez, con la edición traducida y los avisos: lo que salga, solo se avisa.
+revisar_autoria
 
 # 4 bis. Los dibujos traducidos, solo con el programa: el que falle, en castellano.
 revisar_dibujos_traducidos

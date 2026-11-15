@@ -38,7 +38,8 @@ fondo y no haya tenido reportaje.
 - **Lo que se habló en los grupos**, sin nombrar a quien opina: las posturas, las dudas, las
   experiencias. Cada vez que se recoja algo de los grupos, enlazado a su mensaje exacto con
   Markdown: `[texto](https://t.me/<alias>/<id>)` (alias: ChatGPTedu, vceduca, EduMediaIAG).
-  Solo se nombra a quien ha publicado un recurso propio, como crédito, también si es Juan José de Haro (así, no «Juanjo»),
+  Solo se nombra a quien ha publicado un recurso propio, como crédito, también si es Juan José de Haro (así, no «Juanjo»;
+  es solo quien lleva en el material la marca `[autor del diario: Juan José de Haro]`: otro «Juanjo» es otra persona),
   y sin su cargo (administrar un grupo, ser coautor del diario) salvo que tenga que ver con la noticia.
   Si las posturas que recoges son sobre todo de los autores del diario (Juan José de Haro y Raül
   Torres), dilo en el texto sin atribuirles la opinión («en este intercambio participaron los

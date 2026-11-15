@@ -67,5 +67,6 @@
 | [0063](0063-mapa-del-sitio-de-noticias.md) | Mapa del sitio de noticias |
 | [0064](0064-correo-de-contacto-propio-del-diario.md) | Correo de contacto propio del diario |
 | [0065](0065-la-redaccion-mas-breve-y-sin-detalles-tecnicos.md) | «La redacción», más breve y sin detalles técnicos |
+| [0066](0066-quien-es-quien-en-los-grupos.md) | Quién es quién en los grupos: por la cuenta, no por el nombre |
 
 Plantilla: [0000-plantilla.md](0000-plantilla.md). Para crear uno: `nuevo-adr "Título"`.

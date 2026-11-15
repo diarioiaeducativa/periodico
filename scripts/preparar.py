@@ -19,6 +19,7 @@ import pathlib
 import sys
 
 from biblioteca import ALIAS, TEMA, entradas   # los documentos de la Biblioteca digital (ADR 0006)
+from personas import Etiquetas   # quién escribe, sin confundir nombres iguales (ADR 0066)
 
 NOMBRES = {"chatgpt": ("ChatGPT-IA-edu", "https://t.me/ChatGPTedu"),
            "vce": ("Vibe Coding Educativo", "https://t.me/vceduca"),
@@ -38,6 +39,10 @@ def cargar(base):
             if d.exists():
                 m["imagen"] = d.read_text().strip()
             msgs[g].append(m)
+    etiqueta = Etiquetas([m for ms in msgs.values() for m in ms])
+    for ms in msgs.values():
+        for m in ms:
+            m["quien"] = etiqueta(m)
     return msgs
 
 
@@ -48,7 +53,7 @@ def fmt(m):
     w = m.get("web") or {}
     web = (f"\n[enlace: {w['url']}" + (f" · «{w['titulo']}»" if w.get("titulo") else "") +
            (f" · {' '.join(w['descripcion'].split())}" if w.get("descripcion") else "") + "]") if w.get("url") else ""
-    return f"#{m['id']} · {m['fecha'][11:16]} · tema «{m['tema_nombre']}» · {m['autor']}{r}\n{(m.get('texto') or '').strip()}{web}{imagen}\n"
+    return f"#{m['id']} · {m['fecha'][11:16]} · tema «{m['tema_nombre']}» · {m.get('quien', m['autor'])}{r}\n{(m.get('texto') or '').strip()}{web}{imagen}\n"
 
 
 def biblioteca_digital(base):

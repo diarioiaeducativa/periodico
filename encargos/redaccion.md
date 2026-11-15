@@ -54,7 +54,8 @@ siendo la de hoy.
   diario): se nombran si la noticia trata de eso, por ejemplo un cambio de normas del grupo. Si no,
   la persona es un docente más, sin cargo en el titular ni en el texto. Juan José de Haro y Raül
   Torres, como cualquiera: si el recurso es suyo, se les nombra como crédito igual que a los demás.
-  En el diario, «Juan José de Haro», aunque en los grupos firme «Juanjo».
+  En el diario, «Juan José de Haro», aunque en los grupos firme «Juanjo de Haro».
+- **Quién es quién lo dice la marca del material, no el nombre** (ADR 0066): Juan José de Haro y Raül Torres son solo los mensajes marcados `[autor del diario: …]`; otro «Juanjo» o «Raül» sin esa marca es otra persona (el 11-11-2026 se atribuyó a Juan José de Haro una web de otro miembro que firma «Juanjo»). Si dos cuentas comparten nombre visible, `[@usuario]` o `[cuenta N de «…»]` las distinguen: no mezcles lo que dicen. Las marcas no se publican.
 - **Un nombre de pila no identifica a nadie.** El crédito lleva el nombre que consta en el propio
   recurso (su web, su página «Acerca de», sus créditos) o el nombre completo de quien lo publica
   en el grupo. Si el mensaje solo va firmado con un nombre de pila y el recurso no nombra a su

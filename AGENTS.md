@@ -66,6 +66,11 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
   el hueco de `lista-videos` en `videos.html` mientras hay menos vídeos que columnas.
 - **Lectura automática bloqueada a propósito** (UNESCO en la Biblioteca): no
   se salta.
+- **Quién es quién, por la cuenta y no por el nombre** (ADR 0066): el material de los agentes marca a los
+  autores del diario (`[autor del diario: …]`) y a quien comparte nombre visible (`scripts/personas.py`); los
+  números de cuenta de los autores están solo en `~/.config/diario-autores.json` del contenedor, no aquí.
+  Otro «Juanjo» no es Juan José de Haro. `scripts/revisar-autoria.py --dia FECHA` (en `noche.sh`, con su
+  corrector `28-autoria`) busca lo que se les atribuye y es de otra cuenta; `--todo` lo pasa por todo lo publicado.
 - **Corregir una pieza publicada** (ADR 0055): el cambio va en los cinco idiomas a la vez
   (`ediciones`, `biblioteca`, `hace-un-ano` o `reportajes`, y sus `-ca`, `-gl`, `-eu`, `-en`), con la nota en
   `correccion` («Corregido el…», «Actualización del…» o «Nota añadida el…») y el día en `corregido`

@@ -30,6 +30,7 @@ import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from buscar import VACIAS, _raiz, consulta, marca, palabras, plano, raices   # noqa: E402
+from personas import de_carpeta   # noqa: E402  quién escribe, sin confundir nombres iguales (ADR 0066)
 
 RAIZ = pathlib.Path(__file__).resolve().parent.parent
 DATOS = pathlib.Path(os.environ.get("DATOS_BOT", "/bot-datos"))
@@ -68,6 +69,7 @@ def indexar(db, completo=False):
     if completo:
         db.executescript("DELETE FROM m; DELETE FROM t; DELETE FROM vocab; DELETE FROM estado;")
     nuevos = 0
+    etiqueta = None   # se calcula solo si algún grupo tiene mensajes nuevos: lee todo el historial
     for g in GRUPOS:
         f = DATOS / g / "mensajes.jsonl"
         if not f.exists():
@@ -77,6 +79,7 @@ def indexar(db, completo=False):
         if previo and previo[0] == st.st_size and previo[1] == st.st_mtime:
             continue
         temas = json.loads((DATOS / g / "temas.json").read_text()) if (DATOS / g / "temas.json").exists() else {}
+        etiqueta = etiqueta or de_carpeta(DATOS, GRUPOS)
         imagenes = DATOS / g / "imagenes"
         ya = {r[0] for r in db.execute("SELECT id FROM m WHERE grupo=?", (g,))}
         filas, vocab = [], set()
@@ -92,7 +95,7 @@ def indexar(db, completo=False):
             if not tx.strip():
                 continue
             tema = str(m.get("tema") or "1")
-            filas.append((g, mid, m.get("fecha", ""), tema, temas.get(tema, "General"), m.get("autor") or "",
+            filas.append((g, mid, m.get("fecha", ""), tema, temas.get(tema, "General"), etiqueta(m),
                           int(m["responde_a"]) if str(m.get("responde_a") or "").isdigit() else None, tx))
             vocab.update((_raiz(p), p) for p in palabras(tx))
         for fila in filas:

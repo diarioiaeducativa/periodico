@@ -37,6 +37,9 @@ import unicodedata
 import urllib.parse
 import urllib.request
 
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+from personas import Etiquetas   # noqa: E402  quién escribe, sin confundir nombres iguales (ADR 0066)
+
 RAIZ = pathlib.Path(__file__).resolve().parent.parent
 CSV = ("https://docs.google.com/spreadsheets/d/e/2PACX-1vSj_hltRI4Q0QolINWJVcKxCMMjfpdiCkKzSdgp9d8RlGTdU"
        "U1UIKvaj-TBSkq0JQGneDhfUkSQuFzy/pub?output=csv")
@@ -274,7 +277,7 @@ def presentaciones(base, recursos):
         for u in (r["url"], r.get("destino"), r.get("direccion_final")):
             if u and norm(u):
                 claves.setdefault(norm(u), r["id"])
-    hallados = {}
+    hallados, todos = {}, []
     for g, nombre in GRUPOS_TG.items():
         try:
             lineas = (base / g / "mensajes.jsonl").read_text().splitlines()
@@ -285,10 +288,15 @@ def presentaciones(base, recursos):
                 m = json.loads(linea)
             except ValueError:
                 continue
+            todos.append(m)
             urls = re.findall(r"https?://[^\s)\]>»\"']+", m.get("texto") or "") + [(m.get("web") or {}).get("url") or ""]
             for u in {norm(u.rstrip(".,;:")) for u in urls if u}:
                 if u in claves:
                     hallados.setdefault(claves[u], []).append(dict(m, grupo_nombre=nombre))
+    etiqueta = Etiquetas(todos)
+    for ms in hallados.values():
+        for m in ms:
+            m["quien"] = etiqueta(m)
     for rid, ms in hallados.items():
         hallados[rid] = sorted({m["enlace"]: m for m in ms}.values(), key=lambda m: m["fecha"])[:2]
     return hallados
@@ -411,7 +419,7 @@ def main():
         partes.append(f"\n### Descripción de la ficha\n\n{r['descripcion']}\n")
         partes.append(f"### Texto que se ve al abrir la página (título: «{r.get('titulo_pagina', '')}»)\n\n{r.get('texto_visible', '')}\n")
         for m in grupos.get(r["id"], []):
-            partes.append(f"### Mensaje que lo compartió en {m['grupo_nombre']} ({m['fecha'][:10]}, {m['autor']}; {m['enlace']})\n\n"
+            partes.append(f"### Mensaje que lo compartió en {m['grupo_nombre']} ({m['fecha'][:10]}, {m.get('quien', m['autor'])}; {m['enlace']})\n\n"
                           f"{(m.get('texto') or '').strip()[:4000]}\n")
     (out / f"{fecha}.md").write_text("\n".join(partes) + "\n")
     print(f"repositorio: {len(abren)} recurso(s) para el {fecha}, modo {modo} ({', '.join(r['id'] for r in abren)})")
