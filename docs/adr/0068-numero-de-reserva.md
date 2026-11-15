@@ -15,7 +15,8 @@ días flojos («sí»). En los 18 números del 28-10 al 14-11-2026, dos bajaron 
 ## Decisión
 
 - **Las partes del número de reserva**, siempre listas y escritas con antelación, en los cinco idiomas:
-  - las piezas de reserva (`scripts/reserva.py`, unas cuatro, caducan a los 60 días), como hasta ahora;
+  - las piezas de reserva (`scripts/reserva.py`, seis: dos números enteros, para que una caída del NAS de dos días
+    no la agote; antes, tres. Caducan a los 60 días);
   - una **viñeta de reserva** (`scripts/reserva_vineta.py`, `scripts/vineta-reserva.sh`, encargos `30-vineta-reserva`
     y `31-vineta-reserva-traduccion`): una tira sobre un asunto de la docencia con IA que no caduca, que no sale de
     ninguna noticia; lleva `"reserva": true` y la web no le pone «A partir de…». Caduca a los 60 días;

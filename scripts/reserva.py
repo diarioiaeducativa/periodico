@@ -40,7 +40,7 @@ import sys
 
 RAIZ = pathlib.Path(__file__).resolve().parent.parent
 RESERVA = RAIZ / "reserva"
-OBJETIVO = 3          # piezas de reserva que tiene que haber siempre listas
+OBJETIVO = 6          # piezas de reserva: dos números enteros (Juanjo, 15-11-2026; antes 3)
 MINIMO = 3            # piezas que lleva como mínimo cada número: lo que falte, de la reserva (Juanjo, 15-11-2026)
 CADUCA = 60           # días sin usarse: se retira y se escribe otra (Juanjo, 06-11-2026)
 TRADUCCIONES = ("ca", "gl", "eu", "en")   # los idiomas a los que se traduce (scripts/idiomas.py, ADR 0026)
