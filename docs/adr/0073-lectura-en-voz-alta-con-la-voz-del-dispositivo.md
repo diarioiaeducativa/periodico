@@ -43,7 +43,8 @@ propio, no recoge datos de quien lee (ADR 0033 y 0070) y se publica en GitHub Pa
 - **Audio generado en el NAS con Piper** (libre y gratis): voz igual en todas partes, pero sin voz gallega (sí
   castellano, catalán, euskera e inglés) y con cinco audios por artículo cada día, que en pocos meses pasan del límite
   de 1 GB de GitHub Pages; habría que guardarlos fuera (Internet Archive) y añadir un paso más que puede fallar cada
-  madrugada.
+  madrugada. Se le volvió a plantear como única forma de que se oiga en cualquier navegador, y lo descartó (15-11-2026:
+  «no me interesa generar los audios. lo dejamos así»).
 - **Aceptar las voces de red**: suenan mejor en Chrome de escritorio, pero mandan el texto y la conexión a Google o a
   Microsoft, contra lo que promete la página de privacidad.
 - **Teclas de atajo** (P para pausa…): ver arriba.
