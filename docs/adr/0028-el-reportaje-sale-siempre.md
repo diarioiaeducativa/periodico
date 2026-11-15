@@ -25,7 +25,10 @@ gustaría que pasados 6 meses saliese un artículo ya caduco». No se actualizab
 - **El mejor de los dos** (Juanjo, 06-11-2026, al ver el primero de reserva: «que alguien decida si usar
   el que se haga nuevo o este, el mejor se publica»): si el sábado hay reportaje nuevo y uno de reserva
   vigente, un juez de reportajes (Opus, paso 11b, que no ha escrito ninguno) los compara por interés y
-  utilidad para un docente, rigor, escritura, actualidad y que no repita tema; en caso de duda, el nuevo.
+  utilidad para un docente, rigor y escritura, en ese orden y de forma estricta (gana el mejor en interés;
+  si empatan, el rigor, y después la escritura; si empatan en todo, el nuevo). La actualidad no suma: solo
+  descarta el de reserva si algo suyo se ha quedado desfasado. Repetir un tema descarta solo si repite la
+  tesis. Un titular largo o una errata no deciden nada (15-11-2026, ver abajo).
   Si gana el de reserva, se publica ese (su infografía se revisa entonces en su página, con revisor) y el
   nuevo queda en `reportajes-borrador/FECHA-descartado.json`, sin traducir; a la mañana siguiente se
   escribe otro de reserva. La elección y su motivo van en el aviso de las 5:00 del domingo.
@@ -40,6 +43,14 @@ gustaría que pasados 6 meses saliese un artículo ya caduco». No se actualizab
 - **Comprobación antes de usarla**, sin IA para que el plan B sea rápido: de una pieza, que cada recurso
   responda en su dirección; del reportaje, que no falle más de una de cada cinco fuentes. Si no pasa, se
   retira y se usa la siguiente.
+
+- **Una sola idea, y el orden de los criterios obliga** (15-11-2026). Ese domingo el juez puntuó la reserva
+  (detectores de IA) por encima en interés (9 frente a 8) y en rigor (9 frente a 8), pero eligió el nuevo por
+  actualidad (10 frente a 5), por un titular de más de 90 caracteres y porque repetía «casi» la tesis de una
+  pieza. Juanjo vio el nuevo «algo caótico y de escaso interés»: juntaba cinco asuntos de la semana. Se cambió
+  a mano por el de reserva antes de publicar, y se decidió (Juanjo, «aplica los dos cambios»): el encargo del
+  reportaje pide una sola idea sostenida de principio a fin, dicha en el titular; el juez la valora dentro del
+  interés y aplica su orden de forma estricta. Con estas reglas, ese domingo habría salido el de reserva.
 
 ## Alternativas descartadas
 
