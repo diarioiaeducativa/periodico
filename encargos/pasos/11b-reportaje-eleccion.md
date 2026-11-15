@@ -11,7 +11,7 @@ Léelos enteros y elige el mejor para publicar este domingo, con estos criterios
 
 Gana el que puntúe más en el primero; si empatan, el rigor, y después la escritura. Si empatan en todo, el nuevo.
 - La actualidad no suma puntos: solo descarta el de reserva si algo suyo se ha quedado desfasado desde que se escribió.
-- Repetir un tema ya publicado (reportajes/ y las piezas de las últimas semanas) descarta un reportaje solo si repite su tesis, no si trata el mismo asunto desde otro lado.
+- Repetir la tesis de otro reportaje ya publicado (reportajes/) lo descarta. Si solo la comparte con una pieza breve de las últimas semanas, no: un reportaje puede desarrollar a fondo lo que una pieza anunció, y entonces debe enlazarla.
 - Lo que se arregla en un minuto (un titular largo, una errata) no decide nada.
 
 Escribe reportajes-borrador/{FECHA}-eleccion.json: {"elegido": "nuevo" | "reserva", "motivo": "una o dos frases, con lo que decide", "puntuaciones": {"nuevo": {"interes": 0-10, "rigor": 0-10, "escritura": 0-10}, "reserva": {…}}, "descartado": null | "nuevo" | "reserva", "por_que_descartado": "si uno queda fuera por desfase o por repetir tesis, cuál y por qué"}. No toques nada más. Responde con el elegido y el motivo en una línea.

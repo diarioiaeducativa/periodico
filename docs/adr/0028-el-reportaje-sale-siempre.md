@@ -27,8 +27,9 @@ gustaría que pasados 6 meses saliese un artículo ya caduco». No se actualizab
   vigente, un juez de reportajes (Opus, paso 11b, que no ha escrito ninguno) los compara por interés y
   utilidad para un docente, rigor y escritura, en ese orden y de forma estricta (gana el mejor en interés;
   si empatan, el rigor, y después la escritura; si empatan en todo, el nuevo). La actualidad no suma: solo
-  descarta el de reserva si algo suyo se ha quedado desfasado. Repetir un tema descarta solo si repite la
-  tesis. Un titular largo o una errata no deciden nada (15-11-2026, ver abajo).
+  descarta el de reserva si algo suyo se ha quedado desfasado. Repetir la tesis de otro reportaje lo descarta;
+  compartirla con una pieza breve, no (el reportaje la desarrolla y la enlaza). Un titular largo o una errata no
+  deciden nada (15-11-2026, ver abajo).
   Si gana el de reserva, se publica ese (su infografía se revisa entonces en su página, con revisor) y el
   nuevo queda en `reportajes-borrador/FECHA-descartado.json`, sin traducir; a la mañana siguiente se
   escribe otro de reserva. La elección y su motivo van en el aviso de las 5:00 del domingo.
@@ -50,8 +51,9 @@ gustaría que pasados 6 meses saliese un artículo ya caduco». No se actualizab
   pieza. Juanjo vio el nuevo «algo caótico y de escaso interés»: juntaba cinco asuntos de la semana. Se cambió
   a mano por el de reserva antes de publicar, y se decidió (Juanjo, «aplica los dos cambios»): el encargo del
   reportaje pide una sola idea sostenida de principio a fin, dicha en el titular; el juez la valora dentro del
-  interés y aplica su orden de forma estricta. Queda por ver cómo aplica el juez la regla de la tesis repetida:
-  la reserva de ese domingo desarrollaba a fondo la tesis de una pieza breve del 8-11.
+  interés y aplica su orden de forma estricta. Y como la reserva de ese domingo desarrollaba a fondo la tesis de
+  una pieza breve del 8-11, se precisó la regla de la repetición: descarta repetir la tesis de otro reportaje,
+  no la de una pieza breve, que el reportaje debe enlazar (Juanjo: «aplícalo»).
 
 ## Alternativas descartadas
 
