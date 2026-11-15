@@ -9,6 +9,7 @@
 #   scripts/vigilante.sh             lo que hace GitHub Actions
 #   SIMULAR=1 scripts/vigilante.sh   todo menos subir nada y avisar, aunque no sea la hora
 #   SIMULAR=1 FECHA=AAAA-MM-DD …     lo mismo, como si faltara el número de esas conversaciones
+#   TEMPRANO=1 scripts/vigilante.sh  desde las 7:30 (el NAS no responde desde fuera; lo pide el lanzador de IONOS)
 #
 # Necesita, en GitHub Actions: SITIO_KEY (clave de despliegue con escritura en el repositorio del
 # sitio) y TELEGRAM_TOKEN y TELEGRAM_CHAT (el bot «Agentes IA», para avisar a Juanjo).
@@ -32,9 +33,14 @@ avisar() {
 }
 
 # Desde las 9:10, cuando el NAS ya ha dejado de reintentar, y hasta el final del día: GitHub retrasa
-# horas su horario (el 06 y el 07-11-2026 entró a las 15:57 y a las 14:56), y mejor tarde que sin número
-if [ "$SIMULAR" != 1 ] && [ "$m" -lt 550 ]; then
-  echo "vigilante: son las $(date +%H:%M) en Madrid; solo actúa desde las 9:10"
+# horas su horario (el 06 y el 07-11-2026 entró a las 15:57 y a las 14:56), y mejor tarde que sin número.
+# Desde las 7:30 si lo lanza el lanzador de IONOS porque el NAS lleva media hora sin responder desde fuera
+# (TEMPRANO=1, ADR 0021): con el NAS caído no hay reintentos que pisar. Si vuelve tarde, publicar-nas.sh no pisa
+# lo que haya publicado este vigilante.
+desde=550
+[ "${TEMPRANO:-0}" = 1 ] && desde=450
+if [ "$SIMULAR" != 1 ] && [ "$m" -lt "$desde" ]; then
+  echo "vigilante: son las $(date +%H:%M) en Madrid; solo actúa desde las $((desde / 60)):$(printf '%02d' $((desde % 60)))"
   exit 0
 fi
 portada=$(curl -s --max-time 60 "$WEB") || { echo "vigilante: no se puede leer la web; no se hace nada"; exit 1; }

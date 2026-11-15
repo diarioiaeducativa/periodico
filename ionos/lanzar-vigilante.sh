@@ -6,9 +6,14 @@
 # simular=false), que lo saca con la reserva y avisa a Juanjo. Si GitHub no lo acepta, avisa él.
 #
 #   lanzar-vigilante.sh              mira la web y, si falta el número de hoy, lanza el vigilante
+#   lanzar-vigilante.sh --temprano   a las 7:32 y 8:12: solo si el NAS lleva media hora sin responder desde fuera
+#                                    (el latido de vigilancia-nas, ~/.vigilancia-nas/estado), lanza el vigilante para
+#                                    que actúe ya, sin esperar a las 9:10 (ADR 0021). Si el NAS responde, nada: lo más
+#                                    probable es que publique él, y se espera a la pasada de las 9:12
 #   lanzar-vigilante.sh --comprobar  el token sirve y no caduca pronto (avisa a 30, 14, 7, 3 y 1 días)
 #   lanzar-vigilante.sh --probar     lo mismo que sin opciones, sin lanzar nada ni avisar
 #   HOY_PRUEBA=2099-01-01 lanzar-vigilante.sh --probar   el camino de cuando falta el número
+#   PROBAR=1 ESTADO_LATIDO=/tmp/caido HOY_PRUEBA=2099-01-01 lanzar-vigilante.sh --temprano   el temprano, sin lanzar
 #
 # En sh, sin PHP (el php de esta shell es el 4.4.9). Vive en ~/.diario-vigilante/ con:
 #   token        token de GitHub de grano fino, solo con «Actions: read and write» en
@@ -18,6 +23,8 @@
 #
 # crontab (la hora del hosting es la de Madrid):
 #   12 9,10,12,16 * * * $HOME/.diario-vigilante/lanzar-vigilante.sh >>$HOME/.diario-vigilante/cron.log 2>&1
+#   32 7 * * *          $HOME/.diario-vigilante/lanzar-vigilante.sh --temprano >>$HOME/.diario-vigilante/cron.log 2>&1
+#   12 8 * * *          $HOME/.diario-vigilante/lanzar-vigilante.sh --temprano >>$HOME/.diario-vigilante/cron.log 2>&1
 #   40 8 * * *          $HOME/.diario-vigilante/lanzar-vigilante.sh --comprobar >>$HOME/.diario-vigilante/cron.log 2>&1
 set -u
 BASE=$(dirname "$0")
@@ -28,7 +35,7 @@ API="https://api.github.com/repos/diarioiaeducativa/periodico/actions/workflows/
 MODO="${1:-}"
 export TZ=Europe/Madrid
 HOY=$(date +%F)
-[ "$MODO" = --probar ] && HOY=${HOY_PRUEBA:-$HOY}
+{ [ "$MODO" = --probar ] || [ -n "${PROBAR:-}" ]; } && HOY=${HOY_PRUEBA:-$HOY}
 ahora() { date '+%F %T'; }
 
 leer() {   # leer <clave>: mismo formato que avisar-juanjo y latido.sh
@@ -65,6 +72,19 @@ if [ "$MODO" = --comprobar ]; then
   exit 0
 fi
 
+# Antes de las 9:10, solo con el NAS caído: el latido cuenta los fallos seguidos, uno cada diez minutos
+TEMPRANO=false
+if [ "$MODO" = --temprano ]; then
+  fallos=0
+  [ -f "${ESTADO_LATIDO:-$HOME/.vigilancia-nas/estado}" ] && read fallos _ < "${ESTADO_LATIDO:-$HOME/.vigilancia-nas/estado}"
+  if [ "${fallos:-0}" -lt 3 ]; then
+    echo "$(ahora) el NAS responde desde fuera (fallos seguidos: ${fallos:-0}): se espera a la pasada de las 9:12"
+    exit 0
+  fi
+  echo "$(ahora) el NAS lleva $((fallos * 10)) minutos sin responder desde fuera"
+  TEMPRANO=true
+fi
+
 portada=$(curl -s --max-time 60 "$WEB") || { echo "$(ahora) no se puede leer la web; no se hace nada"; exit 1; }
 sale=$(printf '%s' "$portada" | grep -o '<time datetime="[0-9-]*">' | head -1 | grep -o '[0-9]\{4\}-[0-9-]*')
 if [ "$sale" = "$HOY" ]; then
@@ -72,10 +92,10 @@ if [ "$sale" = "$HOY" ]; then
   exit 0
 fi
 echo "$(ahora) en la web, el número del ${sale:-?}; falta el de hoy ($HOY): se lanza el vigilante"
-[ "$MODO" = --probar ] && { echo "$(ahora) (prueba: no se lanza)"; exit 0; }
+[ "$MODO" = --probar ] || [ -n "${PROBAR:-}" ] && { echo "$(ahora) (prueba: no se lanza; temprano=$TEMPRANO)"; exit 0; }
 cod=$(curl -s -o /dev/null -w '%{http_code}' --max-time 30 -X POST \
   -H "Authorization: Bearer $TOKEN" -H "Accept: application/vnd.github+json" \
-  "$API/dispatches" -d '{"ref":"main","inputs":{"simular":"false"}}')
+  "$API/dispatches" -d '{"ref":"main","inputs":{"simular":"false","temprano":"'"$TEMPRANO"'"}}')
 if [ "$cod" = 204 ]; then
   echo "$(ahora) vigilante lanzado"
 else

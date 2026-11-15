@@ -79,6 +79,16 @@ Aprobado ese mismo día («sí a todo, hazlo»), junto con el resumen semanal d�
 - **El vigilante entra a las 9:10, después de que el NAS deje de reintentar**, para que nunca
   publiquen los dos a la vez.
 
+- **El vigilante, desde las 7:30 si el NAS está caído** (15-11-2026; Juanjo: «Las 9:10 para que actúe me parece
+  demasiado»). Esperaba a las 9:10 para no pisar los reintentos de publicación del NAS (cada 10 minutos hasta las 9:00).
+  Ahora el lanzador de IONOS pasa también a las 7:32 y a las 8:12 con `--temprano`: mira el latido de vigilancia-nas
+  (`~/.vigilancia-nas/estado`, un fallo cada diez minutos) y, solo si el NAS lleva media hora sin responder desde
+  fuera, lanza el vigilante con `temprano`, que actúa desde las 7:30. Si el NAS responde, se espera a las 9:12, porque
+  lo más probable es que publique él. Si el NAS vuelve después (se fue Internet en casa), `publicar-nas.sh` ve que el
+  número ya está en el repositorio y no lo pisa: guarda lo suyo en `git stash`, se queda con lo del vigilante y avisa;
+  la noche siguiente recupera las conversaciones del día, como en cualquier fallo. Probado con dos copias de un
+  repositorio: el NAS acaba con lo del vigilante, su número queda en el stash y no se toca nada más.
+
 ## Alternativas descartadas
 
 - **Un número hecho por programa con los mensajes del día, sin IA**: rompería lo que promete el

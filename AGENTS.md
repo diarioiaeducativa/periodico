@@ -31,7 +31,8 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
   la reserva (`reserva/`, del fondo del repositorio y de la biblioteca, alternados; que `reserva.sh` repone cada mañana; las piezas
   caducan a los 60 días y los reportajes a los 28) y reintentos cada 10
   minutos hasta las 9:00. El vigilante de GitHub Actions
-  (`.github/workflows/vigilante.yml`) lo comprueba desde las 9:10 hasta el final del día; lo lanza
+  (`.github/workflows/vigilante.yml`) lo comprueba desde las 9:10 (desde las 7:30 si el NAS no responde desde fuera,
+  y entonces `publicar-nas.sh` no pisa lo suyo si el NAS vuelve) hasta el final del día; lo lanza
   a su hora el hosting de IONOS (`ionos/lanzar-vigilante.sh`, en `~/.diario-vigilante/`), porque
   el horario de GitHub se retrasa horas. Cambiar ese script exige copiarlo allí.
 - **Publicar la web a mano sin repetir avisos**: en el contenedor,

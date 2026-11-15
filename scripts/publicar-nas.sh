@@ -19,6 +19,21 @@ NOTA="Modelo: Claude Sonnet 5.5 (claude-sonnet-5-5) y Claude Opus 5.5 (claude-op
 
 log() { printf '%s  %s\n' "$(date '+%F %T')" "$*" | tee -a "$REG"; }
 
+# Si el NAS vuelve tarde (se fue la luz o Internet en casa) y el vigilante de GitHub ya ha publicado este número
+# con la reserva (ADR 0021, desde las 7:30 si el NAS no respondía), no se pisa: lo que preparó la redacción se
+# guarda aparte (git stash) y la noche siguiente recupera las conversaciones de ese día, como en cualquier fallo.
+if git fetch -q origin 2>>"$REG" && git cat-file -e "@{u}:ediciones/$FECHA.json" 2>/dev/null \
+   && ! git cat-file -e "HEAD:ediciones/$FECHA.json" 2>/dev/null; then
+  log "el vigilante ya ha publicado el número del $PUBLICA con la reserva: no se pisa"
+  # shellcheck disable=SC2046
+  git stash push -q --include-untracked -m "número del $PUBLICA preparado en el NAS y no publicado (lo publicó el vigilante)" -- \
+    $(ls -d ediciones* repositorio* biblioteca* vinetas* hace-un-ano* reportajes* ilustraciones* avisos reserva publicado.txt 2>/dev/null) >> "$REG" 2>&1
+  git pull -q --rebase >> "$REG" 2>&1 || log "AVISO: no se pudo traer lo que publicó el vigilante"
+  touch "estado/$FECHA.publicado"
+  avisar-juanjo --de "Diario de IA Educativa" "El NAS ha vuelto, pero el vigilante de GitHub ya había publicado el número de hoy con la reserva: no lo piso. Las conversaciones de ayer salen mañana. Lo que preparó la redacción queda guardado (git stash). Registro: /volume1/docker/diario-ia-educativa/repo/$REG" >/dev/null 2>&1 || true
+  exit 0
+fi
+
 # La imagen de vista previa del número y la cabecera de los avisos (ADR 0010). Si fallan, el sitio
 # sale con la imagen genérica y el bot publica los avisos sin cabecera.
 python3 scripts/og-numero.py >> "$REG" 2>&1 || log "AVISO: no se pudo hacer la imagen del número; queda la genérica"
