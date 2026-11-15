@@ -85,7 +85,7 @@ IDIOMAS = {
         # La semana y el mes (ADR 0034)
         "semana": "La semana", "semana_txt": "Todo lo que publicó el diario de lo que se habló en los grupos esa semana, por secciones, con el pódcast y el vídeo de cada grupo. Elige un grupo para ver solo lo suyo.", "semana_actual": "Resumen semanal", "grupo_filtro": "Ver lo de un grupo", "grupo_todos": "Todos", "sin_grupo": "Este grupo no tiene artículos esta semana.", "nb_h": "El pódcast y el vídeo de la semana", "nb_txt": "Cada lunes, NotebookLM, de Google, prepara un pódcast y un vídeo de cada grupo con su conversación completa de la semana, también lo que no ha salido en el diario. Un agente de IA los contrasta con la conversación antes de publicarlos.", "nb_es": "", "nb_pendiente": "El pódcast y el vídeo de cada grupo se añaden aquí el lunes por la mañana.", "nb_video": "Vídeo", "nb_ver": "Reproducir el vídeo de {g}", "nb_youtube": "Verlo en YouTube", "nb_podcast": "Pódcast", "nb_archive": "Escucharlo en Internet Archive", "cs_h": "Lo más importante de la semana", "cs_h_g": "Lo más importante de la semana en {g}", "cs_nota": "Lo escribe un agente de IA con lo que publicó el diario esa semana, y otro lo contrasta con cada artículo antes de publicarlo.", "numeros_semana": "Los números de la semana", "sem_ant": "Semana anterior", "sem_sig": "Semana siguiente", "todo_mes": "Todo el mes", "mes": "El mes", "mes_txt": "Las semanas del mes, con el artículo que abrió cada número.", "mes_ant": "Mes anterior", "mes_sig": "Mes siguiente", "por_meses": "Por meses", "anyo_ant": "Año anterior", "anyo_sig": "Año siguiente", "buscar_en": "Busca en {s}", "ver_semana": "La semana entera, por secciones", "con_nb": "Con el pódcast y el vídeo de cada grupo", 
         "todos_numeros": "Hemeroteca: todos los números",
-        "saltar": "Saltar al contenido", "compartir": "Compartir", "copiado": "Enlace copiado", "una_columna": "Una columna", "columnas": "Columnas", "una_columna_t": "Leer las noticias en una sola columna", "escuchar": "Escuchar", "escuchar_t": "Leer el artículo en voz alta con una voz de tu dispositivo", "pausa": "Pausa", "seguir": "Seguir", "parar": "Parar", "lector": "Lectura en voz alta", "velocidad_t": "Velocidad de lectura", "columnas_t": "Leer las noticias en columnas, como en un periódico", "compartir_breve": "Compartir este breve", "mas_en": "Más en", "mas_diario": "Más en el diario",
+        "saltar": "Saltar al contenido", "compartir": "Compartir", "copiado": "Enlace copiado", "una_columna": "Una columna", "columnas": "Columnas", "una_columna_t": "Leer las noticias en una sola columna", "escuchar": "Escuchar", "escuchar_t": "Leer el artículo en voz alta con una voz de tu dispositivo", "pausa": "Pausa", "seguir": "Seguir", "parar": "Parar", "lector": "Lectura en voz alta", "velocidad_t": "Velocidad de lectura", "lector_estados": "Leyendo en voz alta|Lectura en pausa|Lectura parada", "columnas_t": "Leer las noticias en columnas, como en un periódico", "compartir_breve": "Compartir este breve", "mas_en": "Más en", "mas_diario": "Más en el diario",
         "no_existe": "Esta página no existe",
         "sin_conexion": "Sin conexión",
         "sin_conexion_txt": "Esta página no está guardada en este dispositivo. Sin conexión se pueden leer las páginas que ya se han abierto y el último número que se cargó en la portada.",
@@ -208,7 +208,7 @@ IDIOMAS = {
         # La semana y el mes (ADR 0034)
         "semana": "La setmana", "semana_txt": "Tot el que va publicar el diari del que es va parlar als grups aquella setmana, per seccions, amb el pòdcast i el vídeo de cada grup. Tria un grup per veure només el seu.", "semana_actual": "Resum setmanal", "grupo_filtro": "Veure el d'un grup", "grupo_todos": "Tots", "sin_grupo": "Aquest grup no té articles aquesta setmana.", "nb_h": "El pòdcast i el vídeo de la setmana", "nb_txt": "Cada dilluns, NotebookLM, de Google, prepara un pòdcast i un vídeo de cada grup amb tota la seva conversa de la setmana, també el que no ha sortit al diari. Un agent d'IA els contrasta amb la conversa abans de publicar-los.", "nb_es": "Són en castellà.", "nb_pendiente": "El pòdcast i el vídeo de cada grup s'afegeixen aquí dilluns al matí.", "nb_video": "Vídeo", "nb_ver": "Reproduir el vídeo de {g}", "nb_youtube": "Mira'l a YouTube", "nb_podcast": "Pòdcast", "nb_archive": "Escolta'l a Internet Archive", "cs_h": "El més important de la setmana", "cs_h_g": "El més important de la setmana a {g}", "cs_nota": "L'escriu un agent d'IA amb el que va publicar el diari aquella setmana, i un altre el contrasta amb cada article abans de publicar-lo.", "numeros_semana": "Els números de la setmana", "sem_ant": "Setmana anterior", "sem_sig": "Setmana següent", "todo_mes": "Tot el mes", "mes": "El mes", "mes_txt": "Les setmanes del mes, amb l'article que va obrir cada número.", "mes_ant": "Mes anterior", "mes_sig": "Mes següent", "por_meses": "Per mesos", "anyo_ant": "Any anterior", "anyo_sig": "Any següent", "buscar_en": "Cerca a {s}", "ver_semana": "Tota la setmana, per seccions", "con_nb": "Amb el pòdcast i el vídeo de cada grup", 
         "todos_numeros": "Hemeroteca: tots els números",
-        "saltar": "Salta al contingut", "compartir": "Comparteix", "copiado": "Enllaç copiat", "una_columna": "Una columna", "columnas": "Columnes", "una_columna_t": "Llegir les notícies en una sola columna", "escuchar": "Escolta", "escuchar_t": "Llegir l'article en veu alta amb una veu del teu dispositiu", "pausa": "Pausa", "seguir": "Continua", "parar": "Atura", "lector": "Lectura en veu alta", "velocidad_t": "Velocitat de lectura", "columnas_t": "Llegir les notícies en columnes, com en un diari", "compartir_breve": "Comparteix aquest breu", "mas_en": "Més a", "mas_diario": "Més al diari",
+        "saltar": "Salta al contingut", "compartir": "Comparteix", "copiado": "Enllaç copiat", "una_columna": "Una columna", "columnas": "Columnes", "una_columna_t": "Llegir les notícies en una sola columna", "escuchar": "Escolta", "escuchar_t": "Llegir l'article en veu alta amb una veu del teu dispositiu", "pausa": "Pausa", "seguir": "Continua", "parar": "Atura", "lector": "Lectura en veu alta", "velocidad_t": "Velocitat de lectura", "lector_estados": "S'està llegint en veu alta|Lectura en pausa|Lectura aturada", "columnas_t": "Llegir les notícies en columnes, com en un diari", "compartir_breve": "Comparteix aquest breu", "mas_en": "Més a", "mas_diario": "Més al diari",
         "no_existe": "Aquesta pàgina no existeix",
         "sin_conexion": "Sense connexió",
         "sin_conexion_txt": "Aquesta pàgina no està desada en aquest dispositiu. Sense connexió es poden llegir les pàgines que ja s'han obert i l'últim número que es va carregar a la portada.",
@@ -1314,7 +1314,7 @@ def boton_escuchar():
             f'data-escuchar="{e(L["escuchar"])}" data-pausa="{e(L["pausa"])}" data-seguir="{e(L["seguir"])}">'
             f'<span class="e-escuchar">{ALTAVOZ}</span><span class="e-pausa">{PAUSA}</span><span class="e-seguir">{SEGUIR}</span>'
             f'<span class="e-rotulo">{e(L["escuchar"])}</span></button>'
-            f'<span class="lector-barra" role="group" aria-label="{e(L["lector"])}" hidden data-pagefind-ignore>'
+            f'<span class="lector-barra" role="group" aria-label="{e(L["lector"])}" data-estados="{e(L["lector_estados"])}" hidden data-pagefind-ignore>'
             f'<button type="button" class="lector-pausa" data-pausa="{e(L["pausa"])}" data-seguir="{e(L["seguir"])}">'
             f'<span class="e-pausa">{PAUSA}</span><span class="e-seguir">{SEGUIR}</span><span class="e-rotulo">{e(L["pausa"])}</span></button>'
             f'{boton_velocidad()}<button type="button" class="lector-parar">{PARAR}<span>{e(L["parar"])}</span></button></span>')
@@ -1341,12 +1341,24 @@ SCRIPT_LECTOR = """<script>
       if(es){ bv.querySelector('.e-rotulo').textContent=o.textContent; bv.setAttribute('aria-label',bv.title+': '+o.textContent); }
     });
   }
+  // Lo que cambia se dice también a quien no ve los botones: una región viva, fuera de la vista
+  var estados=(barra.dataset.estados||'').split('|'), viva=document.createElement('span');
+  viva.className='solo-lector'; viva.setAttribute('role','status'); barra.parentNode.insertBefore(viva,barra);
+  function dice(t){ viva.textContent=''; setTimeout(function(){viva.textContent=t;},60); }
   function menuVel(abre){ mv.hidden=!abre; bv.setAttribute('aria-expanded',abre?'true':'false'); if(abre) mv.querySelector('[aria-checked="true"]').focus(); }
   pintaVel();
   bv.addEventListener('click',function(ev){ ev.stopPropagation(); menuVel(mv.hidden); });
+  // El menú se recorre con las flechas, Inicio y Fin, como cualquier menú; el tabulador lo cierra
+  mv.addEventListener('keydown',function(ev){
+    var os=[].slice.call(mv.querySelectorAll('[data-vel]')), k=os.indexOf(document.activeElement), n=-1;
+    if(ev.key==='ArrowDown') n=(k+1)%os.length; else if(ev.key==='ArrowUp') n=(k-1+os.length)%os.length;
+    else if(ev.key==='Home') n=0; else if(ev.key==='End') n=os.length-1;
+    else if(ev.key==='Tab'){ menuVel(false); return; }
+    if(n>=0){ ev.preventDefault(); os[n].focus(); }
+  });
   document.addEventListener('click',function(ev){ if(!mv.hidden&&!mv.contains(ev.target)) menuVel(false); });
   mv.querySelectorAll('[data-vel]').forEach(function(o){ o.addEventListener('click',function(){
-    vel=parseFloat(o.dataset.vel); pintaVel(); menuVel(false); bv.focus();
+    vel=parseFloat(o.dataset.vel); pintaVel(); menuVel(false); bv.focus(); dice(bv.getAttribute('aria-label'));
     try{ if(vel===1) localStorage.removeItem('diario.velocidad'); else localStorage.setItem('diario.velocidad',String(vel)); }catch(_){}
     if(estado==='leyendo'){ turno++; ss.cancel(); lee(); }
   }); });
@@ -1450,11 +1462,15 @@ SCRIPT_LECTOR = """<script>
     ss.speak(u);
   }
   // Pausar es callar y recordar la frase: pause() y resume() fallan en Chrome de Android
-  function empieza(){ if(!voz) return; if(estado==='parado'){trozos=trocea(); i=0;} estado='leyendo'; pinta(); turno++; ss.cancel(); lee(); }
-  function pausa(){ estado='pausa'; turno++; ss.cancel(); pinta(); }
-  function parar(){ estado='parado'; turno++; try{ss.cancel();}catch(_){} marca(null); trozos=null; i=0; menuVel(false); pinta(); }
+  function empieza(){ if(!voz) return; if(estado==='parado'){trozos=trocea(); i=0;} estado='leyendo'; pinta(); dice(estados[0]); turno++; ss.cancel(); lee(); }
+  function pausa(){ estado='pausa'; turno++; ss.cancel(); pinta(); dice(estados[1]); }
+  function parar(){
+    var enBarra=barra.contains(document.activeElement);
+    estado='parado'; turno++; try{ss.cancel();}catch(_){} marca(null); trozos=null; i=0; menuVel(false); pinta(); dice(estados[2]);
+    if(enBarra) b.focus({preventScroll:true});   // la barra se esconde: el foco vuelve a «Escuchar», sin mover la página
+  }
   function alterna(){ if(estado==='leyendo') pausa(); else empieza(); }
-  b.addEventListener('click',alterna); bp.addEventListener('click',alterna); bs.addEventListener('click',function(){parar(); b.focus();});
+  b.addEventListener('click',alterna); bp.addEventListener('click',alterna); bs.addEventListener('click',parar);
   document.addEventListener('keydown',function(ev){ if(ev.key!=='Escape') return; if(!mv.hidden){ menuVel(false); bv.focus(); } else if(estado!=='parado') parar(); });
   addEventListener('pagehide',function(){ try{ss.cancel();}catch(_){} });
 })();
