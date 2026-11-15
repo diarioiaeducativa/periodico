@@ -58,7 +58,9 @@ Cada guion es un JSON:
   enfadado, agotado (ojeras), riendo, avergonzado (rubor), harto (párpados a media
   asta), cargando (en Algoritmo: tres puntos de «procesando»; en Tiza, mejor no).
 - `postura`: abajo, senalar, arriba (brazos en alto), pensar (mano a la barbilla),
-  encoger (encogerse de hombros), sostener (lleva el objeto de mano).
+  encoger (encogerse de hombros), sostener (lleva el objeto de mano), cruzar (brazos
+  cruzados: escepticismo, paciencia que se acaba), cabeza (las manos a la cabeza: «¡madre
+  mía!», el chasco) o jarras (manos en la cintura: reñir, exigir, plantarse).
 - `objeto`: pizarra, portatil o reloj (al fondo, en el centro), examenes o papeles
   (un montón en el suelo, en el centro); libro, movil, notificaciones (el móvil que no
   para), folio o taza (en la mano de quien tenga la postura «sostener»).
@@ -82,6 +84,9 @@ lee el resumen de las viñetas de los tres números anteriores (te dicen dónde 
 - **Caras:** usa todo el repertorio. «Contento» es el recurso fácil: cada personaje
   cambia de cara cuando cambia lo que siente, y las caras más repetidas en los números
   anteriores, solo si el chiste las pide.
+- **Posturas:** lo mismo que las caras. «Abajo» es la postura de no pensar en el cuerpo: cada
+  personaje cambia de postura cuando cambia lo que hace o siente, y en un remate mudo la postura
+  dice tanto como la cara. Las más repetidas en los números anteriores, solo si el chiste las pide.
 - **Objeto:** no repitas el del número anterior si la noticia no lo pide.
 - **El molde del chiste:** tampoco puede ser siempre el mismo. El más gastado es que Algoritmo
   remate con literalidad o exceso de celo y Tiza acabe harta. El resumen dice quién dijo la

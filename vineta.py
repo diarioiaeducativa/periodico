@@ -17,7 +17,9 @@ ESCALA = 1.18   # tamaño de los personajes respecto al dibujo base
 
 EXPRESIONES = ["neutral", "contento", "sorprendido", "preocupado", "orgulloso", "pensativo", "enfadado", "cargando",
                "agotado", "riendo", "avergonzado", "harto"]
-POSTURAS = ["abajo", "senalar", "arriba", "pensar", "encoger", "sostener"]
+POSTURAS = ["abajo", "senalar", "arriba", "pensar", "encoger", "sostener", "cruzar", "cabeza", "jarras"]
+# Las que cruzan el cuerpo: van sobre un borde del color del papel para que se vean (06-11-2026)
+CRUZAN = ("pensar", "sostener", "cruzar", "cabeza")
 OBJETOS = ["pizarra", "portatil", "reloj", "examenes", "papeles", "libro", "movil", "folio", "taza", "notificaciones"]
 DE_FONDO = {"pizarra", "portatil", "reloj", "examenes", "papeles"}   # van en el centro; los demás, en la mano de quien «sostiene»
 ESCENARIOS = ["aula", "sala_profes", "fotocopiadora", "claustro", "casa_noche", "biblioteca", "despacho", "videollamada"]
@@ -82,9 +84,9 @@ def cara(expr, clase, ojo_clase, ojo_r):
 
 # ---------- Brazos (mirando a la derecha; se reflejan si el personaje mira a la izquierda) ----------
 
-def brazos(postura, hombro_y, medio, clase, barbilla=18):
+def brazos(postura, hombro_y, medio, clase, barbilla=18, cabeza=58):
     """Devuelve (trazos, punto de la mano delantera) para la postura. `barbilla`: cuánto sube la mano
-    al pensar desde el hombro hasta la barbilla."""
+    al pensar desde el hombro hasta la barbilla; `cabeza`, hasta los lados de la cabeza."""
     L, R, y = -medio, medio, hombro_y
     caido_izq = f"M{L} {y} Q{L - 10} {y + 20} {L - 8} {y + 38}"
     caido_der = f"M{R} {y} Q{R + 10} {y + 20} {R + 8} {y + 38}"
@@ -98,6 +100,15 @@ def brazos(postura, hombro_y, medio, clase, barbilla=18):
         d = f"{caido_izq} M{R} {y} Q{R + 10} {y - barbilla * 4 / 9} {R - 12} {y - barbilla}"
     elif postura == "encoger":
         d = f"M{L} {y + 2} L{L - 14} {y - 4} L{L - 18} {y - 14} M{R} {y + 2} L{R + 14} {y - 4} L{R + 18} {y - 14}"
+    elif postura == "cruzar":   # brazos cruzados: escepticismo, hartazgo (15-11-2026)
+        d = (f"M{L} {y} Q{L - 9} {y + 7} {L - 7} {y + 15} L{R + 4} {y + 10} "
+             f"M{R} {y} Q{R + 10} {y + 11} {R + 7} {y + 24} L{L - 4} {y + 20}")
+    elif postura == "cabeza":   # las manos a la cabeza: «¡madre mía!» (15-11-2026; una sola mano en la frente
+        # parecía un saludo militar o una visera, y taparse los ojos, una venda)
+        d = (f"M{L} {y} Q{L - 30} {y - cabeza * 0.35} {L + 1} {y - cabeza} M{R} {y} Q{R + 30} {y - cabeza * 0.35} {R - 1} {y - cabeza}")
+    elif postura == "jarras":   # manos en la cintura: reñir, exigir (15-11-2026)
+        d = (f"M{L} {y} Q{L - 14} {y + 3} {L - 16} {y + 15} Q{L - 11} {y + 26} {L + 2} {y + 29} "
+             f"M{R} {y} Q{R + 14} {y + 3} {R + 16} {y + 15} Q{R + 11} {y + 26} {R - 2} {y + 29}")
     elif postura == "sostener":
         d = f"M{L} {y + 2} Q{L + 6} {y + 18} {R + 18} {y + 14} M{R} {y + 2} L{R + 20} {y + 12}"
         mano = (R + 22, y + 10)
@@ -123,7 +134,7 @@ def tiza(cx, mira, expr, postura):
     rostro = f'<g transform="translate(2 {arriba + 34})">{cara(expr, "cara", "fcara", 2.6)}</g>'
     # El brazo que cruza el cuerpo (pensar, sostener): en tema oscuro la tinta es clara como la tiza y no se
     # veía; va sobre un borde del color del papel, como el de Algoritmo (06-11-2026). En tema claro no se nota.
-    borde = br.replace('class="t"', 'class="a-borde"') if postura in ("pensar", "sostener") else ""
+    borde = br.replace('class="t"', 'class="a-borde"') if postura in CRUZAN else ""
     g = f'{piernas}{cuerpo}{vetas}{polvo}{rostro}{borde}{br}'
     return envolver(cx, mira, g), mano_abs(cx, mira, mano)
 
@@ -138,7 +149,7 @@ def algoritmo(cx, mira, expr, postura):
     if expr == "cargando":
         parpadeo = f'<path class="a" d="M{-medio - 10} {arriba + 6} L{-medio - 18} {arriba - 2} M0 {arriba - 10} L0 {arriba - 20} M{medio + 10} {arriba + 6} L{medio + 18} {arriba - 2}"/>'
     # Al pensar, la mano a la barbilla y no al ojo (06-11-2026): el hombro está más cerca de la cara que en Tiza
-    br, mano = brazos(postura, arriba + 50, medio, "a", barbilla=6)
+    br, mano = brazos(postura, arriba + 50, medio, "a", barbilla=6, cabeza=44)
     ojos = f'<circle class="ojo" cx="-9" cy="0" r="7"/><circle class="ojo" cx="9" cy="0" r="7"/>' if expr not in ("orgulloso", "agotado", "riendo") else ""
     if expr == "harto":   # el párpado del cursor, del mismo azul, tapa medio ojo
         ojos += '<rect class="fz" x="-17" y="-8" width="16" height="7"/><rect class="fz" x="1" y="-8" width="16" height="7"/>'
@@ -148,7 +159,7 @@ def algoritmo(cx, mira, expr, postura):
         rostro = rostro.replace('class="fpupila" cx="-7" cy="16"', 'class="fsp" cx="-7" cy="16"').replace(
             'class="fpupila" cx="0" cy="16"', 'class="fsp" cx="0" cy="16"').replace('class="fpupila" cx="7" cy="16"', 'class="fsp" cx="7" cy="16"')
     # El brazo que cruza el cuerpo azul (pensar, sostener), sobre un borde del color del papel para que se vea (06-11-2026)
-    borde = br.replace('class="a"', 'class="a-borde"') if postura in ("pensar", "sostener") else ""
+    borde = br.replace('class="a"', 'class="a-borde"') if postura in CRUZAN else ""
     g = f'{flota}{cuerpo}{parpadeo}{rostro}{borde}{br}'
     return envolver(cx, mira, g), mano_abs(cx, mira, mano)
 
@@ -525,6 +536,7 @@ def recientes(fecha):
         return "No hay viñetas anteriores: puedes usar todo el repertorio.\n"
     lineas = [f"# Lo que salió en las viñetas de los {len(previos)} números anteriores a {fecha}", ""]
     caras = {"tiza": Counter(), "algoritmo": Counter()}
+    posturas = {"tiza": Counter(), "algoritmo": Counter()}
     objetos = Counter()
     remates = []   # quién dijo la última frase de cada tira, de la más reciente a la más antigua
     for dia, vs in previos:
@@ -542,6 +554,8 @@ def recientes(fecha):
             for q in caras:
                 if v.get(q, {}).get("expresion"):
                     caras[q][v[q]["expresion"]] += 1
+                if v.get(q):
+                    posturas[q][v[q].get("postura") if v[q].get("postura") in POSTURAS else "abajo"] += 1
             if v.get("objeto"):
                 objetos[v["objeto"]] += 1
     escs, sin_ayer = usados(fecha)
@@ -556,6 +570,10 @@ def recientes(fecha):
         lineas.append(f"Caras más repetidas de {nombre}: {mas}")
     sin_usar = [e for e in EXPRESIONES if not caras["tiza"][e] and not caras["algoritmo"][e]]
     lineas.append("Caras que no han salido: " + (", ".join(sin_usar) or "ninguna"))
+    for q, nombre in (("tiza", "Tiza"), ("algoritmo", "Algoritmo")):
+        mas = ", ".join(f"{p} ({k})" for p, k in posturas[q].most_common(3))
+        nunca = [p for p in POSTURAS if not posturas[q][p]]
+        lineas.append(f"Posturas más repetidas de {nombre}: {mas}; sin usar: " + (", ".join(nunca) or "ninguna"))
     if len(remates) >= 2 and remates[0] and remates[0] == remates[1]:
         nombre, otro = ("Algoritmo", "Tiza") if remates[0] == "algoritmo" else ("Tiza", "Algoritmo")
         lineas.append(f"**{nombre} ha dicho la última frase en los dos números anteriores: hoy remata {otro} o el remate es mudo.**")
