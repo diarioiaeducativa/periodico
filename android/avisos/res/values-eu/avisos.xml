@@ -5,8 +5,8 @@
   <string name="avisos_canal_desc">Abisu bat goizero, zenbakia ateratzen denean.</string>
   <string name="avisos_titulo">Hemen da %1$d. zenbakia</string>
   <string name="avisos_dialogo">Zenbakiaren abisuak</string>
-  <string name="avisos_texto">Aplikazioak goizero abisa zaitzake zenbakia ateratzen denean. 7:00 aldera begiratzen du, penintsulako orduan, eta, oraindik ez badago, 15 minuturo 9:30 arte; Androidek minutu batzuk atzera dezake bateria aurrezteko. Horretarako, mugikorrak egunkariaren webgunea baino ez du kontsultatzen: ez dio ezer bidaltzen inori.</string>
-  <string name="avisos_texto_activos">Abisuak aktibatuta daude: goizero, zenbakia ateratzen denean, jakinarazpen bat iristen da. 7:00 aldera begiratzen du, penintsulako orduan, eta, oraindik ez badago, 15 minuturo 9:30 arte.</string>
+  <string name="avisos_texto">Aplikazioak goizero abisa zaitzake, 7etan, zenbakia ateratzen denean. Ez da daturik bidaltzen: mugikorrak egunkariaren webgunean begiratzen du argitaratuta dagoen.</string>
+  <string name="avisos_texto_activos">Abisuak aktibatuta daude: goizero, 7etan, eguneko zenbakiaren jakinarazpena iristen da.</string>
   <string name="avisos_activar">Aktibatu</string>
   <string name="avisos_desactivar">Desaktibatu</string>
   <string name="avisos_ahora_no">Orain ez</string>
