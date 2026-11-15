@@ -7,7 +7,8 @@ cuando han salido «La semana en vídeo» en Instagram y el dominical en X, Blue
 
     scripts/informe-dia.py AAAA-MM-DD            escribe el informe (la fecha de las conversaciones, como noche.sh)
     scripts/informe-dia.py AAAA-MM-DD --listo    sale con 0 si ya se puede dar, 1 si aún falta algo
-    scripts/informe-dia.py AAAA-MM-DD --enviar   lo escribe y se lo manda a Juanjo por Telegram (avisar-juanjo)
+    scripts/informe-dia.py AAAA-MM-DD --enviar   lo escribe y lo deja para que el Bot de IA Educativa se lo mande a Juanjo
+                                                 (su ADR 0040); si no puede dejarlo, por avisar-juanjo
 """
 import datetime
 import json
@@ -21,6 +22,8 @@ RAIZ = pathlib.Path(__file__).resolve().parent.parent
 BOT = pathlib.Path(os.environ.get("DATOS_BOT", "/bot-datos"))
 DOMINICAL = pathlib.Path(os.environ.get("DOMINICAL", "/dominical"))   # el estado del dominical, del contenedor del boletín
 REDES = ("x", "bluesky", "linkedin")
+AVISOS_BOT = pathlib.Path(os.environ.get("AVISOS_BOT", "/avisos-bot"))   # la carpeta que recoge el Bot de IA Educativa
+LINKEDIN = "https://www.linkedin.com/in/jjdeharo/recent-activity/all/"   # LinkedIn no da el enlace de la publicación
 SECCIONES = ("ediciones", "biblioteca", "repositorio", "hace-un-ano", "reportajes")
 
 
@@ -44,6 +47,24 @@ def contenido(nombre):
 
 def domingo(fecha):
     return datetime.date.fromisoformat(fecha).isoweekday() == 6   # conversaciones del sábado: el número sale el domingo
+
+
+def enlace_dominical(fecha, r):
+    """El enlace de lo publicado en esa red, del registro del dominical («Publicado: https://…» tras «=== red»)."""
+    try:
+        lineas = (DOMINICAL / f"{fecha}.log").read_text(errors="replace").splitlines()
+    except OSError:
+        return ""
+    red, enlace = None, ""
+    for l in lineas:
+        m = re.search(r"=== (\w+)", l)
+        if m:
+            red = m.group(1)
+            continue
+        m = re.search(r"Publicado:\s*(https?://\S+)", l)
+        if m and red == r:
+            enlace = m.group(1)
+    return enlace
 
 
 def red_hecha(fecha, r):
@@ -217,7 +238,9 @@ def informe(fecha):
                 problemas.append("El dominical no ha salido: faltaba el vídeo.")
             for r, nom in (("x", "X"), ("bluesky", "Bluesky"), ("linkedin", "LinkedIn")):
                 if (DOMINICAL / f"{fecha}.{r}").exists():
-                    t.append(f"• Dominical en {nom}: publicado.")
+                    enlace = enlace_dominical(fecha, r) or (f"publicado (LinkedIn no da el enlace; tu actividad: {LINKEDIN})"
+                                                            if r == "linkedin" else "publicado")
+                    t.append(f"• Dominical en {nom}: {enlace}")
                 elif red_hecha(fecha, r):
                     t.append(f"• Dominical en {nom}: no ha salido tras dos intentos.")
                     problemas.append(f"El dominical no ha salido en {nom}.")
@@ -271,7 +294,11 @@ def main():
     texto = informe(fecha)
     print(texto)
     if "--enviar" in sys.argv:
-        subprocess.run(["avisar-juanjo", "--de", "Diario de IA Educativa", texto], check=False)
+        publica = (datetime.date.fromisoformat(fecha) + datetime.timedelta(days=1)).isoformat()
+        try:
+            (AVISOS_BOT / f"{publica}.informe.txt").write_text(texto + "\n")
+        except OSError:
+            subprocess.run(["avisar-juanjo", "--de", "Diario de IA Educativa", texto], check=False)
 
 
 if __name__ == "__main__":

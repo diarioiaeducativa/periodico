@@ -18,7 +18,9 @@ tarde, en cuanto se pueda dar el informe».
   quién se escribió por privado (y a quién no se pudo); Instagram (carrusel y, el domingo, «La semana en vídeo») y el
   dominical en X, Bluesky y LinkedIn; los fallos (plan B, reintentos de publicación, autoría y estilo sin corregir,
   traducciones quitadas, dibujos que siguen retirados y las líneas de ERROR y AVISO del registro), y cómo está la reserva.
-- Lo manda `reloj.sh` por Telegram (avisar-juanjo) una vez al día, en cuanto se puede dar (`--listo`): entre semana,
+- Lo manda el Bot de IA Educativa (Juanjo: «tienes que enviarlo por el bot de IA educativa, que es el que hace este
+  tipo de cosas de los grupos»): `reloj.sh` lo deja en `/avisos-bot/FECHA.informe.txt` y el bot se lo manda por privado
+  (su ADR 0040); si no puede dejarlo, va por avisar-juanjo. Se genera una vez al día, en cuanto se puede dar (`--listo`): entre semana,
   cuando han salido el número, los avisos, los privados y el carrusel (hacia las 7:10); el domingo, además, cuando han
   salido el vídeo de la semana y el dominical en las tres redes (o han dejado de intentarlo). Si algo se atasca, sale
   igual a las 9:05 (el domingo, a las 11:00) diciendo qué falta.
@@ -32,5 +34,5 @@ tarde, en cuanto se pueda dar el informe».
 ## Validación
 
 Con los datos del 15-11-2026: sale el número con sus tres piezas y la de reserva por su titular, el reportaje
-cambiado a mano, los tres avisos privados por nombre, los dos enlaces de Instagram y el aviso de castellano en las
+cambiado a mano, los tres avisos privados por nombre, los enlaces de Instagram, X y Bluesky (LinkedIn no da el de la publicación: se enlaza la actividad reciente) y el aviso de castellano en las
 ediciones traducidas; un dibujo retirado y vuelto a poner a mano no cuenta como retirado.
