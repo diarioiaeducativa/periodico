@@ -28,6 +28,15 @@ mencionarlas en el aviso de cada grupo.
 - **Solo a quien ha hablado alguna vez con el bot**: Telegram no deja a un bot escribir primero a nadie.
   Quien sube documentos o da de alta recursos ya lo ha hecho, por privado con el bot.
 
+- **Los recursos antiguos del repositorio** (15-11-2026). Los que se dieron de alta en la hoja y no con el bot no
+  están en su catálogo, así que, al salir «del fondo» o como pieza de reserva, nadie recibía el aviso (ese día, los
+  autores de GeoBreath y de un editor de cromos; se les avisó a mano). Juanjo: «sí, arréglalo así». Ahora, si un
+  recurso no está en el catálogo, `avisos-personas.py` busca en los grupos quién compartió su enlace (también escrito
+  sin https://) y lo da por autor solo si su nombre coincide con la autoría de la ficha; o la cuenta cuyo usuario es el
+  de la web (usuario.github.io). Si no sale exactamente una cuenta, no avisa a nadie. Comprobado con todo lo publicado
+  y la reserva: encuentra a los dos de ese día y a ninguno equivocado; a uno de la reserva (Pablo G. Guízar) no lo
+  encuentra, porque su enlace no está en los grupos con su nombre.
+
 ## Consecuencias
 
 - El diario sigue sin nombrar a quien solo sube un documento.

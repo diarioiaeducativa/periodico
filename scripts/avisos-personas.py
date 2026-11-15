@@ -8,7 +8,9 @@ aportado algo que sale en el número, con las piezas que lo cuentan, en los cinc
 Quién ha aportado cada pieza, sin IA y con los datos del bot (DATOS_BOT, /bot-datos):
 - Biblioteca: quien la subió, el «Aportado por Nombre (@usuario)» del mensaje que publicó el bot,
   o quien escribió el mensaje si lo publicó una persona.
-- Recursos del repositorio de VCE: quien dio de alta cada recurso con el bot (catalogo.json).
+- Recursos del repositorio de VCE: quien dio de alta cada recurso con el bot (catalogo.json); si no está (los
+  antiguos de la hoja), quien compartió su enlace en los grupos con un nombre que coincide con la autoría, o la cuenta
+  del usuario de la web (usuario.github.io), siempre que sea una sola.
 - Piezas del redactor: quien escribió el mensaje de la pieza, solo si la pieza lo nombra (es el
   autor del recurso que se cuenta; a quien opina o pregunta no se le nombra, encargos/redaccion.md).
 El bot decide si puede escribirle (solo a quien ha hablado alguna vez con él) y respeta a quien ha
@@ -93,6 +95,43 @@ def dueno_recurso(r, recursos):
     return None
 
 
+def _plano(t):
+    import unicodedata
+    return "".join(c for c in unicodedata.normalize("NFD", (t or "").lower()) if unicodedata.category(c) != "Mn")
+
+
+def _dir(u):
+    """Una dirección comparable: sin esquema, sin www, sin consulta y sin barra final."""
+    p = urllib.parse.urlparse((u or "").strip())
+    return (p.netloc.lower().removeprefix("www.") + p.path.rstrip("/")).lower()
+
+
+def quien_lo_compartio(r, por_grupo, por_usuario):
+    """Para los recursos que no se dieron de alta con el bot (los antiguos de la hoja, que salen «del fondo»): la
+    cuenta que compartió su enlace en los grupos, si su nombre coincide con la autoría de la ficha, o la cuenta cuyo
+    usuario es el de la web (usuario.github.io). Solo si sale una sola cuenta: con dudas, nadie (15-11-2026)."""
+    url = _dir(r.get("url"))
+    if not url:
+        return None
+    autoria = set(re.findall(r"\w{3,}", _plano(r.get("autoria"))))
+    cuentas = set()
+    host = url.split("/")[0]
+    if host.endswith(".github.io") and host[:-len(".github.io")] in por_usuario:
+        cuentas.add(por_usuario[host[:-len(".github.io")]])
+    for g in por_grupo.values():
+        for m in g.values():
+            if not es_persona(m):
+                continue
+            enlaces = re.findall(r"https?://[^\s)\]>»\"']+", m.get("texto") or "") + [(m.get("web") or {}).get("url") or ""]
+            # También la dirección escrita a secas, sin https:// («breath.edumind.es»)
+            if not any(e and _dir(e).startswith(url) for e in enlaces) and url not in (m.get("texto") or "").lower():
+                continue
+            nombre = set(re.findall(r"\w{3,}", _plano(m.get("autor")))) | {_plano(m.get("usuario"))}
+            if autoria & nombre:
+                cuentas.add(int(m["autor_id"]))
+    return next(iter(cuentas)) if len(cuentas) == 1 else None
+
+
 def titulares(fecha, pid):
     """El titular de la pieza en cada idioma (si una traducción falta, el castellano)."""
     salida = {}
@@ -135,7 +174,7 @@ def main():
         if p.get("seccion") == "biblioteca":
             quienes.add(de_la_biblioteca(m, por_usuario, por_nombre))
         for r in p.get("recursos") or []:
-            quienes.add(dueno_recurso(r, recursos))
+            quienes.add(dueno_recurso(r, recursos) or quien_lo_compartio(r, por_grupo, por_usuario))
         if p.get("seccion") != "biblioteca":
             # Un recurso del repositorio entre las fuentes: lo cuenta la pieza, y su autor lo dio de alta
             for x in p.get("fuentes") or []:
