@@ -41,6 +41,39 @@
         "Añadida la doble licencia que muestra la página (AGPL o EUPL-1.2) junto a la AGPL v3 de la ficha.",
         "Actualizado «comprobado»."
       ]
+    },
+    {
+      "id": "generador-de-cromos-para-gamificacion-ed",
+      "seccion": "vibecoding",
+      "repositorio": "fondo",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Do fondo do repositorio",
+      "titular": "Un editor web permite deseñar cromos coleccionables de fauna e flora para a aula",
+      "entradilla": "O Generador de Cromos Eco-Duel, creado por David Cordones, ofrece un formulario para compoñer tarxetas con datos de animais e plantas, cunha colección por curso, desde 1.º de Primaria ata 2.º de Bacharelato.",
+      "cuerpo": [
+        "O [Generador de Cromos Eco-Duel](https://elcordones.github.io/generador_cromos/) é un editor que se abre no navegador e mostra, á esquerda, un formulario e, á dereita, o cromo que se vai compoñendo. Segundo a ficha do repositorio, está pensado para crear material didáctico en forma de tarxetas coleccionables, resumir conceptos ou avaliar coñecementos de maneira lúdica. A ficha sitúao entre Primaria e formación do profesorado, e o seu autor é David Cordones.",
+        "O formulario pide o tipo de cromo (fauna ou flora), o nome, un grupo ou subtítulo (mamífero, ave, réptil, anfibio, peixe, insecto e outros, no caso da fauna) e unha imaxe que se sobe desde o dispositivo. Despois fíxanse valores como tamaño e velocidade con desprazadores, o nivel trófico (de produtor a superpredador), a raridade, a dieta, o hábitat, a actividade (diúrna, nocturna…) e un dato curioso. Cada cromo asígnase ademais a unha colección, que pode ser un curso, de 1.º de Primaria a 2.º de Bacharelato e FP Básica, ou unha opción personalizada, e leva un número.",
+        "Na aula, a ferramenta préstase a que o alumnado elabore os seus propios cromos tras investigar unha especie, ou a que o profesorado prepare unha colección para un xogo de comparación de características en Ciencias da Natureza. A interface pódese cambiar entre catalán, castelán e inglés, e o exemplo que mostra ao abrila, un xabaril, está en catalán. Baixo o cromo hai dous botóns, «Descarregar» e «Copiar»; a páxina non indica en que formato se descarga nin que se copia.",
+        "Ao abrir a páxina non se ve ningún rexistro nin inicio de sesión. O pé indica que o código ten licenza AGPL v3 e os contidos, CC BY-SA 4.0, o que coincide coa licenza declarada na ficha."
+      ],
+      "recursos": [
+        {
+          "id": "generador-de-cromos-para-gamificacion-ed",
+          "titulo": "Generador de Cromos para Gamificación Educativa",
+          "autoria": "David Cordones",
+          "url": "https://elcordones.github.io/generador_cromos/",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://ja.cat/generador_cromos",
+          "licencia": "AGPL v3 (código) · CC BY-SA 4.0 (contidos)",
+          "captura": "2026-11-14-generador-de-cromos-para-gamificacion-ed.jpg",
+          "captura_alt": "Editor de cromos co formulario á esquerda e, á dereita, un cromo de fauna chamado Senglar con tamaño 7, nivel 3 e velocidade 5, e os botóns Descarregar e Copiar enriba.",
+          "texto": []
+        }
+      ],
+      "fuentes": [
+        {"titulo": "Generador de Cromos Eco-Duel", "url": "https://elcordones.github.io/generador_cromos/"}
+      ],
+      "comprobado": "Repaso: se miró la captura (editor con cromo de ejemplo «Senglar», botones Descarregar y Copiar, selector CA, pie con autoría y licencias) y el texto visible de la entrada, y se abrió la web con WebFetch, que confirmó los campos del formulario, los botones, los idiomas CA/ES/EN, la ausencia de registro visible y las licencias del pie. Título, autoría, licencia, ficha y archivo de la captura coinciden con la entrada. No se ha probado la descarga ni la copia. No hay enlaces a lo ya publicado. Los otros dos candidatos no se han elegido y no se descartan."
     }
   ],
   "descartado": []

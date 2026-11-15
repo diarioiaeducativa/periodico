@@ -1,0 +1,50 @@
+{
+  "fecha": "2099-01-02",
+  "piezas": [
+    {
+      "id": "mcd-y-mcm-guia-interactiva-de-aprendizaj",
+      "seccion": "vibecoding",
+      "repositorio": "fondo",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Biltegiaren fondotik",
+      "titular": "Gida interaktibo bat ikasleek BKH eta MKT faktore lehenetan deskonposatuz kalkula ditzaten",
+      "entradilla": "«MCD · mcm» aplikazioak faktore lehenak arrastatzea proposatzen du, zatitzaile komun handienera eta multiplo komun txikienera iristeko. Nabigatzailean irekitzen da, konturik gabe, eta katalanez dago.",
+      "cuerpo": [
+        "«[MCD · mcm – Guia visual](https://ja.cat/mcd)» Felip Sarrocak sortutako web aplikazioa da, adimen artifizialaren (AA) laguntzaz, zatitzaile komun handiena (BKH) eta multiplo komun txikiena (MKT) lantzeko. Biltegiko fitxaren arabera, Lehen Hezkuntzarako eta Bigarren Hezkuntzarako pentsatuta dago, pentsamendu logiko-matematikoaren arloan, eta interfazea eta testuak katalanez daude.",
+        "Fitxaren arabera, aplikazioak ez du emaitza ematera mugatzen: prozesua gidatzen du, ikasleak berak irtenbidera irits dadin. Hasierako pantailan zenbaki oso positibo bat, bi, hiru edo lau sartzen dira eta «Comença» sakatzen da. Handik aurrera, lana zenbaki lehenak botoi-panel batetik dagokion laukira arrastatzean datza, zenbaki bakoitza deskonposatzeko; faktore bat errepikatzeak karratu bat, kubo bat eta abar adierazten du. Orriak gogorarazten du BKHk berretzaile txikieneko faktore komunak erabiltzen dituela, eta MKTk faktore guztiak, berretzaile handienarekin. «Comprova i calcula» botoiak lana egiaztatzen du eta emaitza kalkulatzen du.",
+        "Hiru modu daude, goiko aldean aukeratzen direnak. «Mode lliure» moduan, ikasleek nahi dituzten zenbakiak sartzen dituzte eta prozedura osoa egiten dute. «Pràctica» moduan, zailtasun bat (erraza, ertaina edo zaila) edo zenbaki multzo berri bat aukeratzen da. «Problemes» moduan, fitxak dioenez, testuinguruko problemak planteatzen dira; problema berri bat eskatzen da, BKH ala MKT kalkulatu aukeratzen da eta ebazpena hasten da.",
+        "Gelan, faktoreetan deskonposatzea sartzeko balio dezake, arbel digitalean proiektatuta; ikasleek euren erritmoan praktika dezaten ordenagailuarekin edo tabletarekin; edo bi kontzeptuak eguneroko egoeretan aplikatzea indartzeko. Katalanez dagoenez, bereziki baliagarria da hizkuntza horretako geletan; beste batzuetan, botoien hiztegiaren azalpen labur bat behar izan dezake.",
+        "Orria kontu edo erregistrorik gabe irekitzen da eta ez du kanpoko zerbitzurik aipatzen. Adierazitako lizentzia Creative Commons BY-NC-SA 4.0 da: partekatzea eta egokitzea baimentzen du, egiletza aitortuz, erabilera komertzialik gabe eta lizentzia berarekin."
+      ],
+      "recursos": [
+        {
+          "id": "mcd-y-mcm-guia-interactiva-de-aprendizaj",
+          "titulo": "MCD y mcm: Guía interactiva de aprendizaje",
+          "autoria": "Felip Sarroca",
+          "url": "https://ja.cat/mcd",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://ja.cat/mcd",
+          "licencia": "CC BY-NC-SA 4.0",
+          "captura": "2099-01-02-mcd-y-mcm-guia-interactiva-de-aprendizaj.jpg",
+          "captura_alt": "«MCD · mcm» aplikazioaren hasierako pantaila, hiru fitxarekin (Mode lliure, Pràctica, Problemes), zenbakietarako bi laukirekin eta «+ Afegeix nombre» eta «Comença» botoiekin.",
+          "texto": []
+        }
+      ],
+      "fuentes": [
+        {
+          "titulo": "MCD · mcm – Guia visual (katalanez)",
+          "url": "https://ja.cat/mcd"
+        }
+      ],
+      "comprobado": "Revisado: vista la captura de MCD · mcm (tres pestañas, dos casillas, «+ Afegeix nombre», «Comença», créditos y licencia CC BY-NC-SA 4.0) y abierta con WebFetch la web (ja.cat/mcd redirige a la web de la aplicación): confirma los tres modos, la entrada de 2 a 4 números, el arrastre de primos a casillas, las potencias por repetición, «Comprova i calcula», las dificultades Fàcil/Mitjana/Difícil, «Nou problema» con elección de MCD o mcm; sin cuenta ni servicio externo. No se pudo probar el funcionamiento interactivo completo; los problemas contextualizados constan en la ficha y se atribuyen a ella. Los otros dos candidatos (KineGraphIA, Terra Viva) no se eligieron y no se descartan."
+    }
+  ],
+  "descartado": [],
+  "repaso": [
+    "Quitado «arrastrar los factores a las zonas del MCD y del mcm» (no confirmado): ahora se dice que se arrastran primos a la casilla de cada número y se recoge lo que la página explica sobre exponentes.",
+    "Los problemas contextualizados se atribuyen a la ficha; quitado «pregunta qué números hay que descomponer» y «o ambos», no confirmados (la página ofrece elegir MCD o mcm).",
+    "Atribuida a la ficha la frase de que guía el proceso; nombre del botón «Comprova i calcula» y potencias según la página.",
+    "Entradilla: quitado «por cuenta propia» (dicho de la ficha); comprobado actualizado.",
+    "Confirmados título, autoría, licencia, enlaces, captura y captura_alt; extensión del cuerpo dentro del encargo."
+  ]
+}

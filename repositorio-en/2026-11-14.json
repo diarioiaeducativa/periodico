@@ -31,16 +31,58 @@
         }
       ],
       "fuentes": [
-        {"titulo": "GeoBreath (breath.edumind.es) (in Spanish)", "url": "https://breath.edumind.es"},
-        {"titulo": "GeoBreath code on GitHub (in Spanish)", "url": "https://github.com/edumind-es/geobreath"}
+        {
+          "titulo": "GeoBreath (breath.edumind.es) (in Spanish)",
+          "url": "https://breath.edumind.es"
+        },
+        {
+          "titulo": "GeoBreath code on GitHub (in Spanish)",
+          "url": "https://github.com/edumind-es/geobreath"
+        }
       ],
       "comprobado": "Se miró la captura de la página (figura cuadrada animada, selector ES/GL/CAT/EU/EN/ZH, contadores, ajustes), se leyó el texto visible (patrones, rutinas, apoyos, rondas, datos guardados en el dispositivo, licencia AGPL/EUPL) y se abrieron la web y el repositorio de GitHub con WebFetch, que confirmaron patrones, rutinas, seis lenguas y que la página principal no pide cuenta. No se probaron el sonido, la voz ni la vibración. Enlace a pieza:2026-11-06/edumind-miclase-sincronizacion comprobado en publicado.txt (misma familia EDUmind).",
       "repaso": [
         "Quitada la frase sobre pictogramas y voz para alumnado más pequeño (no se sostiene en la página).",
         "Enlazado GitHub en su primera mención en el cuerpo.",
         "Añadida la doble licencia que muestra la página (AGPL o EUPL-1.2) junto a la AGPL v3 de la ficha.",
-        "Actualizado “comprobado”."
+        "Actualizado «comprobado»."
       ]
+    },
+    {
+      "id": "generador-de-cromos-para-gamificacion-ed",
+      "seccion": "vibecoding",
+      "repositorio": "fondo",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "From the repository's back catalogue",
+      "titular": "A web editor lets teachers design collectable fauna and flora cards for the classroom",
+      "entradilla": "The Eco-Duel Card Generator, created by David Cordones, offers a form for composing cards with data on animals and plants, with one collection per school year, from Year 2 of primary to the second year of sixth form.",
+      "cuerpo": [
+        "The [Generador de Cromos Eco-Duel](https://elcordones.github.io/generador_cromos/) is an editor that opens in the browser and shows a form on the left and, on the right, the card as it is being put together. According to the repository's entry, it is meant for creating teaching material in the form of collectable cards, summarising concepts or assessing knowledge in a playful way. The entry places it between primary education and teacher training, and its author is David Cordones.",
+        "The form asks for the type of card (fauna or flora), the name, a group or subtitle (mammal, bird, reptile, amphibian, fish, insect and others, in the case of fauna) and an image uploaded from the device. Values such as size and speed are then set with sliders, along with the trophic level (from producer to super-predator), rarity, diet, habitat, activity (diurnal, nocturnal…) and a curious fact. Each card is also assigned to a collection, which can be a school year, from the first year of primary to the second year of sixth form and basic vocational training, or a custom option, and carries a number.",
+        "In class, the tool lends itself to students making their own cards after researching a species, or to teachers preparing a collection for a game comparing characteristics in natural sciences. The interface can be switched between Catalan, Spanish and English, and the example it shows on opening, a wild boar, is in Catalan. Under the card there are two buttons, “Descarregar” and “Copiar”; the page does not say in what format it downloads or what is copied.",
+        "On opening the page, no registration or login is visible. The footer states that the code is licensed under AGPL v3 and the contents under CC BY-SA 4.0, which matches the licence declared in the repository's entry."
+      ],
+      "recursos": [
+        {
+          "id": "generador-de-cromos-para-gamificacion-ed",
+          "titulo": "Generador de Cromos para Gamificación Educativa",
+          "autoria": "David Cordones",
+          "url": "https://elcordones.github.io/generador_cromos/",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://ja.cat/generador_cromos",
+          "licencia": "AGPL v3 (código) · CC BY-SA 4.0 (contenidos)",
+          "captura": "2026-11-14-generador-de-cromos-para-gamificacion-ed.jpg",
+          "captura_alt": "Card editor with the form on the left and, on the right, a fauna card called Senglar with size 7, level 3 and speed 5, and the buttons Descarregar and Copiar above it.",
+          "texto": []
+        }
+      ],
+      "fuentes": [
+        {
+          "titulo": "Generador de Cromos Eco-Duel (in Catalan)",
+          "url": "https://elcordones.github.io/generador_cromos/"
+        }
+      ],
+      "comprobado": "Repaso: se miró la captura (editor con cromo de ejemplo «Senglar», botones Descarregar y Copiar, selector CA, pie con autoría y licencias) y el texto visible de la entrada, y se abrió la web con WebFetch, que confirmó los campos del formulario, los botones, los idiomas CA/ES/EN, la ausencia de registro visible y las licencias del pie. Título, autoría, licencia, ficha y archivo de la captura coinciden con la entrada. No se ha probado la descarga ni la copia. No hay enlaces a lo ya publicado. Los otros dos candidatos no se han elegido y no se descartan."
     }
   ],
   "descartado": []

@@ -1,0 +1,50 @@
+{
+  "fecha": "2099-01-02",
+  "piezas": [
+    {
+      "id": "mcd-y-mcm-guia-interactiva-de-aprendizaj",
+      "seccion": "vibecoding",
+      "repositorio": "fondo",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "From the repository's back catalogue",
+      "titular": "An interactive guide for students to work out the GCD and LCM by breaking numbers into prime factors",
+      "entradilla": "“MCD · mcm” asks students to drag prime factors to reach the greatest common divisor and the least common multiple. It opens in the browser, needs no account, and is in Catalan.",
+      "cuerpo": [
+        "“[MCD · mcm – Guia visual](https://ja.cat/mcd)” is a web application created by Felip Sarroca, with the help of artificial intelligence, for working on the greatest common divisor (GCD, or MCD in Spanish and Catalan) and the least common multiple (LCM, or mcm). According to its entry in the repository, it is designed for primary and secondary school, in the area of logical-mathematical thinking, and its interface and texts are in Catalan.",
+        "According to its entry, the application does not simply give the result: it guides the process so that the student is the one who reaches the solution. On the opening screen, you enter two, three or four positive whole numbers and press “Comença”. From there, the work consists of dragging prime numbers from a panel of buttons to the matching box in order to break each number down; repeating a factor indicates a square, a cube, and so on. The page reminds users that the GCD uses the common factors with the lowest exponent and the LCM uses all the factors with the highest. A button, “Comprova i calcula”, checks the work and calculates the result.",
+        "There are three modes, chosen at the top. In “Mode lliure”, students enter whatever numbers they like and go through the procedure. In “Pràctica” you pick a difficulty (easy, medium or hard) or a new set of numbers. In “Problemes”, the entry says that problems set in real-life contexts are offered; you ask for a new problem, choose whether to calculate the GCD or the LCM, and start solving.",
+        "In class it can be used to introduce prime factorisation by projecting it on the interactive whiteboard, to let students practise at their own pace on a computer or tablet, or to reinforce how both concepts apply to everyday situations. Because it is in Catalan, it is especially useful in classrooms that work in that language; in others, the vocabulary of the buttons may need a brief explanation.",
+        "The page opens without an account or registration and mentions no external service. The declared licence is Creative Commons BY-NC-SA 4.0: it allows sharing and adapting with credit to the author, without commercial use and under the same licence."
+      ],
+      "recursos": [
+        {
+          "id": "mcd-y-mcm-guia-interactiva-de-aprendizaj",
+          "titulo": "MCD y mcm: Guía interactiva de aprendizaje",
+          "autoria": "Felip Sarroca",
+          "url": "https://ja.cat/mcd",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://ja.cat/mcd",
+          "licencia": "CC BY-NC-SA 4.0",
+          "captura": "2099-01-02-mcd-y-mcm-guia-interactiva-de-aprendizaj.jpg",
+          "captura_alt": "Opening screen of “MCD · mcm” with three tabs (Mode lliure, Pràctica, Problemes), two boxes for numbers and the buttons “+ Afegeix nombre” and “Comença”.",
+          "texto": []
+        }
+      ],
+      "fuentes": [
+        {
+          "titulo": "MCD · mcm – Guia visual (in Catalan)",
+          "url": "https://ja.cat/mcd"
+        }
+      ],
+      "comprobado": "Revisado: vista la captura de MCD · mcm (tres pestañas, dos casillas, «+ Afegeix nombre», «Comença», créditos y licencia CC BY-NC-SA 4.0) y abierta con WebFetch la web (ja.cat/mcd redirige a la web de la aplicación): confirma los tres modos, la entrada de 2 a 4 números, el arrastre de primos a casillas, las potencias por repetición, «Comprova i calcula», las dificultades Fàcil/Mitjana/Difícil, «Nou problema» con elección de MCD o mcm; sin cuenta ni servicio externo. No se pudo probar el funcionamiento interactivo completo; los problemas contextualizados constan en la ficha y se atribuyen a ella. Los otros dos candidatos (KineGraphIA, Terra Viva) no se eligieron y no se descartan."
+    }
+  ],
+  "descartado": [],
+  "repaso": [
+    "Quitado «arrastrar los factores a las zonas del MCD y del mcm» (no confirmado): ahora se dice que se arrastran primos a la casilla de cada número y se recoge lo que la página explica sobre exponentes.",
+    "Los problemas contextualizados se atribuyen a la ficha; quitado «pregunta qué números hay que descomponer» y «o ambos», no confirmados (la página ofrece elegir MCD o mcm).",
+    "Atribuida a la ficha la frase de que guía el proceso; nombre del botón «Comprova i calcula» y potencias según la página.",
+    "Entradilla: quitado «por cuenta propia» (dicho de la ficha); comprobado actualizado.",
+    "Confirmados título, autoría, licencia, enlaces, captura y captura_alt; extensión del cuerpo dentro del encargo."
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "fecha": "2099-01-03",
+  "piezas": [
+    {
+      "id": "coleccion-de-tutoriales-para-aprender-a",
+      "seccion": "vibecoding",
+      "repositorio": "fondo",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "From the repository's back catalogue",
+      "titular": "A collection of tutorials teaches how to save, organise and publish AI-generated code",
+      "entradilla": "Pablo G. Guízar brings together eight tutorials for anyone who already has code created by an AI assistant and needs to know what to do with it: Git, GitHub, refactoring, modules, React and deployment.",
+      "cuerpo": [
+        "The collection, titled “[Asistente de Código IA](https://pablogguizar.github.io/vibe-tutorial/)” when opened, was created by Pablo G. Guízar with the help of Gemini, according to the entry in the repository. It opens in the browser and looks like a code editor in a dark theme: on the left, the list of tutorials; in the centre, the work area; on the right, an instructions panel; and at the bottom, a command line. On entering, no tutorial is selected, and the panel says so with a message in English (“No tutorial selected”).",
+        "The list contains eight tutorials. The first three deal with version control: using Git to save the initial code written by the AI, cloning a GitHub repository, and pushing to GitHub the changes made in a cloned project. Three more follow on tidying code: refactoring it (“AI is fast, but not always tidy”, says the introduction), separating data from logic using JSON so it can be reused, and splitting a large JavaScript script into modules with import/export. The last two concern AI-generated React applications: installing their dependencies and running them, and publishing them on the web.",
+        "For teachers who create their own resources with artificial intelligence, the collection could serve as a self-training route for what comes after getting the code: keeping it, improving it and putting it online to share. The entry places it at university, adult education or self-learning and teacher training levels, describes it as a collection of interactive tutorials for beginners and marks it as available in Spanish and English. In what can be seen on opening it, the explanations are in Spanish.",
+        "The screenshot only shows the environment with no tutorial open and the start of the list, so the content of each tutorial and how the exercises are done could not be checked. The page does not ask for an account or payment. The work is licensed under Creative Commons BY (Attribution)."
+      ],
+      "recursos": [
+        {
+          "id": "coleccion-de-tutoriales-para-aprender-a",
+          "titulo": "Colección de tutoriales para aprender a gestionar el código generado con IA",
+          "autoria": "Pablo G. Guízar",
+          "url": "https://pablogguizar.github.io/vibe-tutorial/",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://pablogguizar.github.io/vibe-tutorial/",
+          "licencia": "Creative Commons BY (Attribution)",
+          "captura": "2099-01-03-coleccion-de-tutoriales-para-aprender-a.jpg",
+          "captura_alt": "Dark environment with the start of the list of tutorials on the left (four are visible), the instructions panel with “No tutorial selected” on the right and a command line at the bottom.",
+          "texto": []
+        }
+      ],
+      "fuentes": [
+        {
+          "titulo": "Collection of tutorials for learning to manage AI-generated code (in Spanish)",
+          "url": "https://pablogguizar.github.io/vibe-tutorial/"
+        }
+      ],
+      "comprobado": "Se miró la captura de la página (comienzo de la lista de tutoriales en la columna izquierda, de la que caben cuatro; panel «Instrucciones» con «No tutorial selected»; línea de comandos) y el texto visible, que enumera los ocho tutoriales. WebFetch devolvió solo el título «IDE Simulator», sin más contenido, por lo que no se ha usado. No se pudo abrir ningún tutorial, así que no se afirma nada sobre su funcionamiento más allá de la ficha, que se atribuye como tal."
+    }
+  ],
+  "descartado": [],
+  "repaso": [
+    "captura_alt: la captura solo deja ver cuatro de los ocho tutoriales (el resto lo da el texto visible); corregida la descripción.",
+    "Cuerpo: «la captura solo muestra el listado y el entorno vacío» pasa a «el entorno sin ningún tutorial abierto y el comienzo de la lista»; «funciona como una ruta» pasa a «puede servir como una ruta» (valoración no comprobable).",
+    "comprobado: ajustado a lo visto (cuatro tutoriales en la captura; WebFetch solo devolvió el título)."
+  ]
+}

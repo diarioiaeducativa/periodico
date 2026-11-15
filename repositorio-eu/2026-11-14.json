@@ -41,6 +41,39 @@
         "Añadida la doble licencia que muestra la página (AGPL o EUPL-1.2) junto a la AGPL v3 de la ficha.",
         "Actualizado «comprobado»."
       ]
+    },
+    {
+      "id": "generador-de-cromos-para-gamificacion-ed",
+      "seccion": "vibecoding",
+      "repositorio": "fondo",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Biltegiaren fondotik",
+      "titular": "Web-editore batek ikasgelarako fauna eta florako kromo bilgarriak diseinatzeko aukera ematen du",
+      "entradilla": "David Cordonesek sortutako Eco-Duel Kromo Sortzaileak formulario bat eskaintzen du animalia eta landareen datuekin txartelak osatzeko, ikasturte bakoitzeko bilduma batekin, Lehen Hezkuntzako 1. mailatik Batxilergoko 2. mailara arte.",
+      "cuerpo": [
+        "[Generador de Cromos Eco-Duel](https://elcordones.github.io/generador_cromos/) nabigatzailean irekitzen den editore bat da, eta ezkerrean formulario bat eta eskuinean osatzen ari den kromoa erakusten ditu. Biltegiko fitxaren arabera, txartel bilgarrien moduko material didaktikoa sortzeko, kontzeptuak laburbiltzeko edo ezagutzak modu ludikoan ebaluatzeko pentsatuta dago. Fitxak Lehen Hezkuntzatik irakasleen prestakuntzara bitartean kokatzen du, eta bere egilea David Cordones da.",
+        "Formularioak kromo mota (fauna edo flora), izena, talde edo azpititulu bat (ugaztuna, hegaztia, narrastia, anfibioa, arraina, intsektua eta beste, faunaren kasuan) eta gailutik igotzen den irudi bat eskatzen ditu. Gero, tamaina eta abiadura bezalako balioak finkatzen dira graduatzaileekin, baita maila trofikoa (ekoizletik super-harrapariraino), arraroa izatea, dieta, habitata, jarduera (egunekoa, gauekoa…) eta datu bitxi bat ere. Gainera, kromo bakoitza bilduma bati esleitzen zaio, ikasturte bat izan daitekeena, Lehen Hezkuntzako 1. mailatik Batxilergoko 2. mailara eta oinarrizko LHra, edo aukera pertsonalizatu bat, eta zenbaki bat izaten du.",
+        "Ikasgelan, tresna egokia da ikasleek espezie bat ikertu ondoren beren kromoak egin ditzaten, edo irakasleak Natur Zientzietan ezaugarriak alderatzeko jolas baterako bilduma bat prestatu dezan. Interfazea katalanera, gaztelaniara eta ingelesera alda daiteke, eta irekitzean erakusten duen adibidea, basurde bat, katalanez dago. Kromoaren azpian bi botoi daude, «Descarregar» eta «Copiar»; orriak ez du adierazten zer formatutan deskargatzen den ez zer kopiatzen den.",
+        "Orria irekitzean ez da erregistrorik ez saio-hasierarik ikusten. Oinarrian adierazten denez, kodeak AGPL v3 lizentzia du eta edukiek, CC BY-SA 4.0, fitxan aitortutako lizentziarekin bat datorrena."
+      ],
+      "recursos": [
+        {
+          "id": "generador-de-cromos-para-gamificacion-ed",
+          "titulo": "Generador de Cromos para Gamificación Educativa",
+          "autoria": "David Cordones",
+          "url": "https://elcordones.github.io/generador_cromos/",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://ja.cat/generador_cromos",
+          "licencia": "AGPL v3 (kodea) · CC BY-SA 4.0 (edukiak)",
+          "captura": "2026-11-14-generador-de-cromos-para-gamificacion-ed.jpg",
+          "captura_alt": "Kromo-editorea, ezkerrean formularioarekin eta eskuinean Senglar izeneko fauna-kromo batekin (tamaina 7, maila 3 eta abiadura 5), eta gainean Descarregar eta Copiar botoiekin.",
+          "texto": []
+        }
+      ],
+      "fuentes": [
+        {"titulo": "Generador de Cromos Eco-Duel (gaztelaniaz)", "url": "https://elcordones.github.io/generador_cromos/"}
+      ],
+      "comprobado": "Repaso: se miró la captura (editor con cromo de ejemplo «Senglar», botones Descarregar y Copiar, selector CA, pie con autoría y licencias) y el texto visible de la entrada, y se abrió la web con WebFetch, que confirmó los campos del formulario, los botones, los idiomas CA/ES/EN, la ausencia de registro visible y las licencias del pie. Título, autoría, licencia, ficha y archivo de la captura coinciden con la entrada. No se ha probado la descarga ni la copia. No hay enlaces a lo ya publicado. Los otros dos candidatos no se han elegido y no se descartan."
     }
   ],
   "descartado": []

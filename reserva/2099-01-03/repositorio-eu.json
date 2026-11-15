@@ -1,0 +1,47 @@
+{
+  "fecha": "2099-01-03",
+  "piezas": [
+    {
+      "id": "coleccion-de-tutoriales-para-aprender-a",
+      "seccion": "vibecoding",
+      "repositorio": "fondo",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Biltegiaren fondotik",
+      "titular": "Tutorial-bilduma batek AAk sortutako kodea gordetzen, ordenatzen eta argitaratzen irakasten du",
+      "entradilla": "Pablo G. Guízarrek zortzi tutorial bildu ditu AA-laguntzaile batek sortutako kodea duten eta harekin zer egin jakin behar dutenentzat: Git, GitHub, birfaktorizazioa, moduluak, React eta hedapena.",
+      "cuerpo": [
+        "Bilduma, irekitzean «[Asistente de Código IA](https://pablogguizar.github.io/vibe-tutorial/)» izenburua duena, Pablo G. Guízarrek sortu du Geminiren laguntzarekin, biltegiaren fitxan jasotzen denez. Nabigatzailean irekitzen da, eta gai ilunean dagoen kode-editore baten itxura du: ezkerrean, tutorialen zerrenda; erdian, lan-eremua; eskuinean, jarraibideen panela; eta behean, komando-lerroa. Sartzean ez dago tutorialik hautatuta, eta panelak ingelesezko mezu batekin adierazten du hori («No tutorial selected»).",
+        "Zerrendak zortzi tutorial ditu. Lehen hirurak bertsio-kontrolari buruzkoak dira: AAk idazten duen hasierako kodea Gitekin gordetzea, GitHubeko biltegi bat klonatzea eta klonatutako proiektu batean egindako aldaketak GitHubera igotzea. Hurrengo hiruk kodea ordenatzeari buruz dihardute: birfaktorizatzea («AA bizkorra da, baina ez beti txukuna», dio aurkezpenak), datuak logikatik bereiztea JSON bidez berrerabili ahal izateko, eta JavaScript script handi bat moduluetan banatzea import/export erabiliz. Azken biak AAk sortutako React aplikazioei dagozkie: haien mendekotasunak instalatzea eta exekutatzea, eta webean argitaratzea.",
+        "Adimen artifizialarekin euren baliabideak sortzen dituzten irakasleentzat, bilduma autoprestakuntza-bide gisa erabil daiteke kodea lortu ondoren datorrenerako: gordetzeko, hobetzeko eta partekatzeko linean jartzeko. Fitxak unibertsitate-mailan, helduen prestakuntzan edo autoikaskuntzan eta irakasleen prestakuntzan kokatzen du, hasiberrientzako tutorial interaktiboen bilduma gisa deskribatzen du eta gaztelaniaz eta ingelesez markatzen du. Irekitzean ikusten denaren arabera, azalpenak gaztelaniaz daude.",
+        "Pantaila-argazkiak tutorialik irekita gabeko ingurunea eta zerrendaren hasiera baino ez ditu erakusten; beraz, ezin izan da egiaztatu tutorial bakoitzaren garapena eta ariketak egiteko modua. Orrian ez da kontu-eskaerarik ez ordainketa-eskaerarik agertzen. Lana Creative Commons BY (Aitortza) lizentziarekin dago."
+      ],
+      "recursos": [
+        {
+          "id": "coleccion-de-tutoriales-para-aprender-a",
+          "titulo": "Colección de tutoriales para aprender a gestionar el código generado con IA",
+          "autoria": "Pablo G. Guízar",
+          "url": "https://pablogguizar.github.io/vibe-tutorial/",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://pablogguizar.github.io/vibe-tutorial/",
+          "licencia": "Creative Commons BY (Aitortza)",
+          "captura": "2099-01-03-coleccion-de-tutoriales-para-aprender-a.jpg",
+          "captura_alt": "Ingurune iluna: ezkerrean tutorial-zerrendaren hasiera (lau ikusten dira), eskuinean «No tutorial selected» dioen jarraibide-panela eta behean komando-lerroa.",
+          "texto": []
+        }
+      ],
+      "fuentes": [
+        {
+          "titulo": "Colección de tutoriales para aprender a gestionar el código generado con IA (gaztelaniaz)",
+          "url": "https://pablogguizar.github.io/vibe-tutorial/"
+        }
+      ],
+      "comprobado": "Se miró la captura de la página (comienzo de la lista de tutoriales en la columna izquierda, de la que caben cuatro; panel «Instrucciones» con «No tutorial selected»; línea de comandos) y el texto visible, que enumera los ocho tutoriales. WebFetch devolvió solo el título «IDE Simulator», sin más contenido, por lo que no se ha usado. No se pudo abrir ningún tutorial, así que no se afirma nada sobre su funcionamiento más allá de la ficha, que se atribuye como tal."
+    }
+  ],
+  "descartado": [],
+  "repaso": [
+    "captura_alt: la captura solo deja ver cuatro de los ocho tutoriales (el resto lo da el texto visible); corregida la descripción.",
+    "Cuerpo: «la captura solo muestra el listado y el entorno vacío» pasa a «el entorno sin ningún tutorial abierto y el comienzo de la lista»; «funciona como una ruta» pasa a «puede servir como una ruta» (valoración no comprobable).",
+    "comprobado: ajustado a lo visto (cuatro tutoriales en la captura; WebFetch solo devolvió el título)."
+  ]
+}
