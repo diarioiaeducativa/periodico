@@ -19,6 +19,8 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
   las 6:30, aviso si no está; a las 6:50, `publicar-nas.sh` (sitio,
   repositorio y avisos al bot, que los publica a las 7:00); a las 7:05, el
   carrusel de Instagram (ADR 0015).
+- **El informe del día** (ADR 0069): `scripts/informe-dia.py FECHA` (`--listo`, `--enviar`), que manda `reloj.sh` a Juanjo
+  en cuanto ha salido todo; el estado del dominical, en `/dominical` (del boletín, solo lectura).
 - **Estado y registro**: `estado/<fecha>.{listo,publicado,sin-numero,intentos,avisado}`
   y `registro/<fecha>.log`.
 

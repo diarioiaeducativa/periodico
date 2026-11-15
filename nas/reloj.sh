@@ -114,6 +114,13 @@ while true; do
       avisar "No se ha podido publicar el número de hoy en Instagram. Registro: /volume1/docker/diario-ia-educativa/repo/registro/$F.log"
     fi
   fi
+  # El informe del día para Juanjo (ADR 0069): en cuanto ha salido todo (entre semana, hacia las 7:10; el domingo,
+  # después del dominical), una vez. Si algo se atasca, sale igual a las 9:05 (el domingo, a las 11:00) diciendo qué falta.
+  limite=545; [ "$(date +%u)" = 7 ] && limite=660
+  if [ "$m" -ge 425 ] && [ ! -e "$E.informe" ] && { python3 scripts/informe-dia.py "$F" --listo || [ "$m" -ge "$limite" ]; }; then
+    touch "$E.informe"
+    python3 scripts/informe-dia.py "$F" --enviar >> "registro/$F.log" 2>&1
+  fi
   # El reel de la semana (ADR 0016 y 0027): el domingo a las 9:00, con el dominical en las demás redes
   if [ "$(date +%u)" = 7 ] && [ "$m" -ge 540 ] && [ -e "instagram/reel-$F/reel.mp4" ] && [ -e "$HOME/.config/diario-instagram.json" ] \
      && [ ! -e "$E.instagram-reel" ] && [ ! -e "$E.instagram-reel-intento" ]; then

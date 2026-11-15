@@ -232,6 +232,9 @@ def avisos(fecha, fallo):
                             ensure_ascii=False, indent=2) + "\n")
 
 
+TITULARES = {}   # clave de la pieza de reserva puesta -> sus titulares, para el informe del día (ADR 0069)
+
+
 def poner_una(fecha):
     """Añade al número de esas conversaciones la pieza de reserva vigente más antigua. Devuelve su clave, o
     None si no queda ninguna. Las que ya no responden se retiran por el camino."""
@@ -269,7 +272,9 @@ def poner_una(fecha):
         (RAIZ / "repositorio" / "capturas").mkdir(parents=True, exist_ok=True)
         shutil.move(str(f), RAIZ / "repositorio" / "capturas" / f.name.replace(clave, fecha))
     mover_dibujos(clave, fecha, r, None)
+    titulares_ = [p.get("titular", "") for p in json.loads((r / f"{t}.json").read_text()).get("piezas", [])]
     shutil.rmtree(r)
+    TITULARES[clave] = titulares_
     return clave
 
 
@@ -294,6 +299,7 @@ def usar(fecha, motivo="fallo"):
         if not propias:
             d["reserva"] = motivo
         d["piezas_reserva"] = d.get("piezas_reserva", []) + puestas
+        d["titulares_reserva"] = d.get("titulares_reserva", []) + [x for c in puestas for x in TITULARES.get(c, [])]
         d["motivo"] = (d.get("motivo") + " · " if d.get("motivo") else "") + \
             f"{len(puestas)} pieza(s) de reserva ({', '.join(puestas)}; {motivo if not propias else 'para completar'})"
         ed.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "\n")

@@ -70,5 +70,6 @@
 | [0066](0066-quien-es-quien-en-los-grupos.md) | Quién es quién en los grupos: por la cuenta, no por el nombre |
 | [0067](0067-normas-de-estilo-comprobadas.md) | Normas de estilo comprobadas cada noche: sin «quien» relativo y sin citas solo en inglés |
 | [0068](0068-numero-de-reserva.md) | El número de reserva: entero o por partes, y ningún número de menos de tres piezas |
+| [0069](0069-informe-del-dia.md) | El informe del día para Juanjo |
 
 Plantilla: [0000-plantilla.md](0000-plantilla.md). Para crear uno: `nuevo-adr "Título"`.

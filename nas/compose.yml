@@ -39,6 +39,8 @@ services:
       - ../boletin-semanal/home/.config/avisar-juanjo:/home/jjdeharo/.config/avisar-juanjo
       # Las claves de Internet Archive del boletín, solo para leer: los vídeos van allí (ADR 0037).
       - ../boletin-semanal/home/.config/internetarchive:/home/jjdeharo/.config/internetarchive:ro
+      # El estado del dominical (X, Bluesky, LinkedIn), que publica el boletín: solo para leer, para el informe del día (ADR 0069).
+      - ../boletin-semanal/home/.local/state/diario-dominical:/dominical:ro
 
   # La vista previa del número (ADR 0025): el sitio que monta generar.py, solo para la red de casa.
   # reloj.sh lo rehace a las 5:00 y avisa a Juanjo con el enlace. Solo lectura; sin agentes.
