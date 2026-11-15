@@ -331,9 +331,11 @@ def cartela(texto):
 # Cuando habla primero el de la derecha, los globos van en escalera (06-11-2026): se lee de izquierda
 # a derecha antes que de arriba abajo, y un globo solo un poco más alto no basta para marcar el orden.
 # El primero, arriba y hacia la derecha; el segundo, entero debajo y a la izquierda, sin que su borde
-# llegue a la cola del primero. Los personajes no se mueven. El de arriba, de 320 px (15-11-2026; antes 300):
-# con 300, una frase de unos 60 caracteres ocupaba tres líneas y la escalera no cabía (viñeta del 14-11).
+# llegue a la cola del primero. Los personajes no se mueven. El de arriba mide 320 px (15-11-2026; antes 300:
+# una frase de unos 60 caracteres ocupaba tres líneas y la escalera no cabía) y, si así no cabe, se ensancha lo
+# que haga falta, hasta todo el ancho de la viñeta (ESC_ANCHOS, el mismo día): los textos no se tocan (ADR 0022).
 ESC_ARRIBA, ESC_ABAJO, ESC_HUECO, ESC_MARGEN = 320, 256, 6, 6
+ESC_ANCHOS = (320, 340, 360, ANCHO - 16)
 
 
 def escalera(globos, pos):
@@ -348,29 +350,46 @@ def punta_de(quien, pos):
     return (pos[quien] + (6 if pos[quien] < 200 else -6), CABEZA[quien])
 
 
-def globos_escalera(globos, pos, y):
+def globos_escalera(globos, pos, y, ancho=ESC_ARRIBA):
     a, b = globos
-    arriba, _ = bocadillo(a.get("texto", ""), ANCHO - 8 - ESC_ARRIBA / 2, punta_de(a["quien"], pos), a.get("tipo", "habla"), y, ESC_ARRIBA)
-    y2 = y + alto_globo(a.get("texto", ""), ESC_ARRIBA) + ESC_HUECO
+    arriba, _ = bocadillo(a.get("texto", ""), ANCHO - 8 - ancho / 2, punta_de(a["quien"], pos), a.get("tipo", "habla"), y, ancho)
+    y2 = y + alto_globo(a.get("texto", ""), ancho) + ESC_HUECO
     abajo, _ = bocadillo(b.get("texto", ""), 8 + ESC_ABAJO / 2, punta_de(b["quien"], pos), b.get("tipo", "habla"), y2, ESC_ABAJO)
     return [arriba, abajo]
 
 
-def no_cabe(v):
-    """Si una viñeta en escalera no cabe: el globo de abajo taparía la cabeza de quien habla. Devuelve
-    el motivo, o None. Entonces los globos van lado a lado: los textos no se acortan."""
+def _escalera_de(v):
+    """Los dos globos de una viñeta en escalera, con su altura de partida y el límite de abajo; None si no va en escalera."""
     pos = {q: {"izquierda": 108, "centro": 200, "derecha": 292}.get((v.get(q) or {}).get("lugar"), 108 if q == "tiza" else 292)
            for q in ("tiza", "algoritmo") if v.get(q)}
     globos = [b for b in v.get("bocadillos", []) if b.get("quien") in pos][:2]
     if not escalera(globos, pos):
         return None
-    y = 44 if v.get("cartela") else 12
+    return globos, (44 if v.get("cartela") else 12), CABEZA[globos[1]["quien"]] - ESC_MARGEN
+
+
+def _fondo(globos, y, ancho):
     a, b = globos
-    fondo = y + alto_globo(a.get("texto", ""), ESC_ARRIBA) + ESC_HUECO + alto_globo(b.get("texto", ""), ESC_ABAJO)
-    limite = CABEZA[b["quien"]] - ESC_MARGEN
-    if fondo <= limite:
+    return y + alto_globo(a.get("texto", ""), ancho) + ESC_HUECO + alto_globo(b.get("texto", ""), ESC_ABAJO)
+
+
+def ancho_arriba(v):
+    """El ancho del globo de arriba con el que la escalera cabe: el más estrecho de ESC_ANCHOS; None si ninguno."""
+    e = _escalera_de(v)
+    if not e:
+        return ESC_ARRIBA
+    globos, y, limite = e
+    return next((w for w in ESC_ANCHOS if _fondo(globos, y, w) <= limite), None)
+
+
+def no_cabe(v):
+    """Si una viñeta en escalera no cabe ni con el globo de arriba a todo el ancho: el de abajo taparía la cabeza de
+    quien habla. Devuelve el motivo, o None. Entonces los globos van lado a lado: los textos no se acortan."""
+    e = _escalera_de(v)
+    if not e or ancho_arriba(v):
         return None
-    return f"habla primero quien está a la derecha, pero uno encima del otro los globos no caben (sobran {fondo - limite:.0f} px)"
+    globos, y, limite = e
+    return f"habla primero quien está a la derecha, pero uno encima del otro los globos no caben ni con el de arriba a todo el ancho (sobran {_fondo(globos, y, ESC_ANCHOS[-1]) - limite:.0f} px)"
 
 
 def comprobar(guion):
@@ -420,7 +439,7 @@ def panel(v, n, textos=None):
     # Si la escalera no cabe (lo publicado antes del 06-11-2026, o un ajuste que no bastó), los globos
     # van como antes: mejor un orden dudoso que un globo encima de la cabeza
     if escalera(globos, pos) and not no_cabe(v):
-        partes += globos_escalera(globos, pos, y)
+        partes += globos_escalera(globos, pos, y, ancho_arriba(v))
         globos_iter = []
     else:
         globos_iter = globos
@@ -567,6 +586,21 @@ if __name__ == "__main__":
         avisos = repite(sys.argv[2], ((d.get("elegida") or {}).get("guion")) or {})
         print("; ".join(avisos))
         sys.exit(1 if avisos else 0)
+    if sys.argv[1] == "--marcar-cabe":   # vineta.py --marcar-cabe vinetas/candidatas/FECHA.json (ADR 0022)
+        # Para el juez, que no puede ejecutar nada: en cada candidata, "cabe" (si sus globos van en el orden en que
+        # se leen) y, si no, "no_cabe" con el motivo de cada viñeta
+        f = sys.argv[2]
+        d = json.load(open(f))
+        for c in d.get("candidatas") or []:
+            motivos = [f"viñeta {i + 1}: {m}" for i, v in enumerate(((c.get("guion") or {}).get("vinetas") or [])[:3]) if (m := no_cabe(v))]
+            c["cabe"] = not motivos
+            if motivos:
+                c["no_cabe"] = motivos
+            else:
+                c.pop("no_cabe", None)
+        json.dump(d, open(f, "w"), ensure_ascii=False, indent=1)
+        print(f"{sum(1 for c in d.get('candidatas') or [] if c.get('cabe'))} de {len(d.get('candidatas') or [])} candidatas caben")
+        sys.exit(0)
     if sys.argv[1] == "--comprobar":   # vineta.py --comprobar vinetas/FECHA.json: sale con 1 si algo no cabe o falta el rótulo
         d = json.load(open(sys.argv[2]))
         fallos = comprobar(((d.get("elegida") or {}).get("guion") or {}) if "elegida" in d else d)

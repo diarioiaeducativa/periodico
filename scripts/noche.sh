@@ -174,8 +174,10 @@ wait $p1 $p2
 # 2 bis. Los dibujos, vistos en la página en claro y oscuro: programa, revisor y una vuelta más.
 revisar_dibujos
 
-# 3. El juez. Sin guiones o sin juez, el número sale sin viñeta.
+# 3. El juez. Sin guiones o sin juez, el número sale sin viñeta (y la reserva pone la suya, ADR 0068). Antes, un
+# programa marca qué candidatas caben con los globos en el orden en que se leen (ADR 0022): el juez no ejecuta nada.
 if json_ok "vinetas/candidatas/$FECHA.json"; then
+  python3 vineta.py --marcar-cabe "vinetas/candidatas/$FECHA.json" >> "$REG" 2>&1 || true
   agente "$OPUS" 4-juez 30
   json_ok "vinetas/$FECHA.json" || { log "el juez no dejó una viñeta válida: sale sin ella"; rm -f "vinetas/$FECHA.json"; }
   comprobar_vineta "vinetas/$FECHA.json"

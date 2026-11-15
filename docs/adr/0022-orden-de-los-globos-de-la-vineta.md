@@ -48,3 +48,10 @@ castellano, catalán e inglés), así que salió lado a lado y se leía antes la
 lo señaló («el bocadillo de algoritmo no debería estar encima de el de tiza?»). Con 320 px cabe en dos
 líneas. Medido en las 80 viñetas en escalera publicadas hasta ese día: cabe la del 14-11 en los tres
 idiomas, cinco anteriores solo pierden una línea en el globo de arriba y la del 12-11 sigue sin caber.
+
+Segundo cambio del 15-11-2026 (Juanjo: «sí, hazlo»): si con 320 px no cabe, el globo de arriba se ensancha lo que haga
+falta (340, 360 o todo el ancho de la viñeta, `ESC_ANCHOS`); las que ya cabían no cambian. Y antes del juez, `vineta.py
+--marcar-cabe` marca en cada candidata si cabe («cabe», «no_cabe»), porque el juez no ejecuta nada; su encargo le pide
+elegir la que cabe entre dos de gracia parecida, sin acortar textos. Medido en las 85 viñetas en escalera publicadas
+(y la de reserva): cabían 69 y caben 76; siguen sin caber 9, en las que lo que no cabe es el globo de abajo, que no
+puede crecer sin llegar a la cola del de arriba.
