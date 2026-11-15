@@ -220,7 +220,7 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
   sección en cada idioma, el filtro de Pagefind. La miniatura de cada resultado es la meta `imagen` que pone
   `indexado()`; lo que devuelve `indexado()` acaba en `</span` y lo cierra quien lo llama.
 - **Lectura en voz alta** (ADR 0073): «Escuchar» en artículos y reportajes, con la voz del dispositivo (Web Speech
-  API) y solo voces locales, salvo en Firefox; sin voz del idioma, no sale. `boton_escuchar()` y `SCRIPT_LECTOR` en
+  API) y solo voces locales, salvo en Firefox, eligiendo la mejor (`puntos()`); sin voz del idioma, no sale. `boton_escuchar()` y `SCRIPT_LECTOR` en
   `generar.py`. Si cambia lo que se lee o lo que se guarda (`diario.velocidad`), también la página de privacidad.
 - **Edición en papel** (ADR 0054): botón «Imprimir» en cada pieza y `FECHA/papel.html` para el número entero; la
   maqueta, en el `@media print` de `estaticos/diario.css`. Lo que solo va en papel lleva `solo-papel` y no sale nunca

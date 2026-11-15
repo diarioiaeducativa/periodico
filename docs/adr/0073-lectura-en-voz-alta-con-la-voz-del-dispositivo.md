@@ -18,6 +18,9 @@ propio, no recoge datos de quien lee (ADR 0033 y 0070) y se publica en GitHub Pa
   texto y la conexión de quien escucha a un tercero. Si en el idioma de la página no hay ninguna, el botón no sale.
   Excepción: Firefox marca como no locales las voces de speech-dispatcher en Linux, que funcionan en el equipo, y no
   tiene voces de red; en Firefox valen todas.
+- **La mejor voz del idioma**, no la primera: antes las neuronales o mejoradas (Piper, las «Mejorada» de Apple…) y
+  nunca las sintéticas antiguas (espeak…) si hay otra; después, la de la región del diario y la que el sistema tiene
+  por defecto (15-11-2026).
 - Mientras lee, el párrafo se marca y una barra fija abajo deja pausar, cambiar la velocidad y parar sin volver arriba.
   Pausar es callar y recordar la frase (`cancel()`), porque `pause()` y `resume()` fallan en Chrome de Android; el texto
   se trocea en frases agrupadas hasta unos 250 caracteres, y la pausa vuelve a la frase, no al párrafo.
@@ -56,15 +59,19 @@ propio, no recoge datos de quien lee (ADR 0033 y 0070) y se publica en GitHub Pa
   `en_*`, ninguna `gl_ES`.
 - Chrome 124 de Android (emulador `prueba-twa`, motor de voz de Google): voces locales `ca_ES`, `es_ES`, `es_US` y
   varias `en_*`; ninguna gallega ni vasca.
-- Chrome de escritorio en Linux (el de Juanjo): solo «Google …», todas de red (`localService: false`).
-- Firefox en Linux: `ca-ES` y `es-ES` de speech-dispatcher, marcadas como no locales.
+- Chrome de escritorio en Linux (el de Juanjo): solo «Google …», todas de red (`localService: false`). Abierto con
+  `--enable-speech-dispatcher`, ve las voces de speech-dispatcher como locales (en su equipo, las de espeak y las de
+  Piper `es_ES-sharvard-medium` y `ca_ES-upc_ona-medium`) y el botón sale.
+- Firefox en Linux: las voces de speech-dispatcher (en el equipo de Juanjo, solo las de Piper, su módulo por
+  defecto), marcadas como no locales.
 
 ## Riesgos y limitaciones
 
 - En gallego y en euskera el botón no saldrá en la mayoría de móviles Android ni en Chrome de Linux.
-- En Chrome de Linux no sale en ningún idioma. En Windows y en Mac, Chrome trae voces locales: hipótesis sin comprobar.
+- En Chrome de Linux no sale si no se abre con `--enable-speech-dispatcher` (y hay speech-dispatcher instalado). En
+  Windows y en Mac, Chrome trae voces locales: hipótesis sin comprobar.
 - iPhone y Safari reales sin probar: hipótesis de que funcionan (sus voces son locales).
-- La calidad y la velocidad real dependen de la voz de cada aparato; las de speech-dispatcher en Linux suenan robóticas.
+- La calidad y la velocidad real dependen de la voz de cada aparato: en Linux, espeak suena robótica y Piper, natural.
 
 ## Validación
 
@@ -80,3 +87,5 @@ propio, no recoge datos de quien lee (ADR 0033 y 0070) y se publica en GitHub Pa
 - `scripts/revisar-maqueta.js` con el botón visible, en cinco páginas (artículo, reportaje, Biblioteca; castellano,
   catalán y euskera), tres anchuras y dos temas: sin avisos.
 - Juanjo lo probó en su Firefox y lo aprobó para publicar (15-11-2026).
+- Elección de voz, con listas simuladas (Chrome de Linux con speech-dispatcher, espeak con región frente a Piper sin
+  ella, Android, iPhone con voz mejorada y Windows): elige Piper, la «Mejorada» y la de la región en cada caso.
