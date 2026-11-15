@@ -3,7 +3,8 @@
 # El vigilante de fuera de casa (ADR 0021): lo lanza GitHub Actions (.github/workflows/vigilante.yml),
 # por su horario y desde el hosting de IONOS (ionos/lanzar-vigilante.sh). Si a partir de las 9:10 de Madrid el número de hoy no está en la web (el NAS está
 # caído o no ha podido publicar, y ya ha dejado de reintentar a las 9:00), lo saca con una pieza de
-# reserva, lo publica y avisa a Juanjo. Sin IA: la reserva ya está escrita y repasada.
+# reserva (ADR 0068: sus piezas, su viñeta y «Hace un año», lo que haya), lo publica y avisa a Juanjo. Sin IA: la
+# reserva ya está escrita y repasada.
 #
 #   scripts/vigilante.sh             lo que hace GitHub Actions
 #   SIMULAR=1 scripts/vigilante.sh   todo menos subir nada y avisar, aunque no sea la hora
@@ -79,13 +80,13 @@ rsync -a --delete --exclude .git --exclude .github --exclude /comentarios/ --exc
 git config --global user.name "Diario de IA Educativa (vigilante)"
 git config --global user.email "diarioiaeducativa@users.noreply.github.com"
 git -C /tmp/sitio add -A
-git -C /tmp/sitio commit -qm "Número del $HOY, con la pieza de reserva (vigilante, ADR 0021)" &&
+git -C /tmp/sitio commit -qm "Número del $HOY, con el número de reserva (vigilante, ADR 0021 y 0068)" &&
   { git -C /tmp/sitio push -q || { git -C /tmp/sitio pull -q --rebase && git -C /tmp/sitio push -q; }; } ||   # la copia de los comentarios (ADR 0030) puede subir entretanto
   { avisar "Hoy ($HOY) no hay número en la web y no puedo subir el sitio con la reserva: queda a mano."; exit 1; }
 unset GIT_SSH_COMMAND
 
 # La redacción: lo que ha cambiado la reserva, para que el NAS no lo rehaga y mañana recupere el día
-git add -A ediciones repositorio reserva avisos publicado.txt $(ls -d repositorio-?? reportajes reportajes-?? ilustraciones ilustraciones-?? 2>/dev/null)   # ADR 0026 y 0028
-git commit -qm "Número del $HOY, con la pieza de reserva (vigilante, ADR 0021)" && git push -q ||
+git add -A ediciones repositorio reserva avisos publicado.txt $(ls -d repositorio-?? biblioteca biblioteca-?? vinetas vinetas-?? hace-un-ano hace-un-ano-?? reportajes reportajes-?? ilustraciones ilustraciones-?? 2>/dev/null)   # ADR 0026, 0028 y 0068
+git commit -qm "Número del $HOY, con el número de reserva (vigilante, ADR 0021 y 0068)" && git push -q ||
   echo "vigilante: AVISO: no se pudo subir la redacción"
-avisar "A las $(date +%H:%M) el número de hoy ($HOY) no estaba en la web: lo he publicado con un artículo de reserva. Los grupos no reciben aviso, porque el bot está en el NAS. Mira si el NAS está encendido o por qué no publicó."
+avisar "A las $(date +%H:%M) el número de hoy ($HOY) no estaba en la web: lo he publicado con el número de reserva. Los grupos no reciben aviso, porque el bot está en el NAS. Mira si el NAS está encendido o por qué no publicó."
