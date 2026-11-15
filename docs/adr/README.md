@@ -71,5 +71,6 @@
 | [0067](0067-normas-de-estilo-comprobadas.md) | Normas de estilo comprobadas cada noche: sin «quien» relativo y sin citas solo en inglés |
 | [0068](0068-numero-de-reserva.md) | El número de reserva: entero o por partes, y ningún número de menos de tres piezas |
 | [0069](0069-informe-del-dia.md) | El informe del día para Juanjo |
+| [0070](0070-pagina-de-privacidad-propia.md) | Página de privacidad propia |
 
 Plantilla: [0000-plantilla.md](0000-plantilla.md). Para crear uno: `nuevo-adr "Título"`.

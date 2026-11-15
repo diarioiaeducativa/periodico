@@ -185,7 +185,7 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
   lo guardado y `sin-conexion.html`); si cambia lo que guarda, subir `CACHE`. La app es una TWA en
   `android/` (`construeix.sh`, con la clave en `~/.config/diario-ia-educativa/android/`), vinculada por
   `estaticos/.well-known/assetlinks.json`, que no se borra. La política de privacidad de la ficha es
-  `redaccion.html#privacidad`: si se cambia ese apartado, que siga diciendo lo que guarda el dispositivo.
+  `privacidad.html` (ADR 0070): que siga diciendo lo que guarda el dispositivo.
 - **Imagen al compartir** (ADR 0010): la del número (`og/numeros/`) y la de cada pieza en cada idioma
   (`og/piezas/<idioma>/<fecha>-<id>.png`, aligeradas con Pillow); las hace `scripts/og-numero.py` en
   `publicar-nas.sh`. Tras corregir un titular en los cinco idiomas, `scripts/og-numero.py FECHA` rehace las de
@@ -203,6 +203,9 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
   tabla de un reportaje corta las columnas al imprimir: no volver atrás sin probar Firefox, Safari y el papel.
 - **Contacto** (ADR 0051 y 0064): `contacto.html`, con el correo (`CORREO_CONTACTO`, un reenvío de IONOS) y enlace en el pie de todas las
   páginas; es la dirección de la declaración de noticias de Google Play: no se renombra ni se quita del pie.
+- **Privacidad** (ADR 0070): `privacidad.html`, con enlace en el pie; en «La redacción», el apartado de las visitas solo
+  lleva a ella (conserva el ancla `#privacidad`). Si cambia el contador, el alojamiento, lo que guarda el dispositivo o un
+  servicio de terceros, se cambia en los cinco idiomas.
 - **Hemeroteca** (ADR 0053): un calendario por la fecha de cabecera, con el número elegido a la derecha (sus
   titulares, de `datos/AAAA-MM.json`, y su portada en miniatura, que `scripts/portadas.py` captura en
   `publicar-nas.sh` y se guarda en `portadas/`) y el resumen de cada semana. El día se elige con un clic, nunca

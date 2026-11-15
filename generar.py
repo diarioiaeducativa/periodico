@@ -66,6 +66,7 @@ IDIOMAS = {
         "num_prueba": "Número de prueba", "actualizado": "Actualizado el", "num": "Núm.", "numero_largo": "Número",
         "tema": "Cambiar entre tema claro y oscuro", "navegacion": "Navegación",
         "contacto": {"titulo": "Contacto", "enlace": "página de contacto", "txt": "Para avisar de un error, pedir que se retire algo o hacer cualquier consulta sobre el diario o su app.", "correo": "Correo", "otras": "También se puede abrir una incidencia en {incidencias} o escribir a las personas que administran cada grupo."},
+        "privacidad": {"titulo": "Privacidad", "enlace": "página de privacidad", "txt": "El {diario} no pide cuentas, no lleva publicidad y no guarda datos de las personas que lo leen.", "doc": "en su documentación", "dudas": "Las dudas se pueden plantear en la {contacto}.", "apartados": [("Las visitas", "El diario cuenta las visitas y las páginas que se abren, sin cookies. Al contador solo le llega la suma: ni la dirección IP, ni el navegador, ni ningún identificador. Las cifras se guardan por horas 25 meses como máximo, el plazo que da como referencia la {aepd} en su guía sobre medición de audiencia, y después queda solo el total de cada año."), ("Lo que queda en el dispositivo del usuario", "El navegador o la app recuerdan durante 13 meses qué páginas ya se han contado, para no contarlas dos veces. También recuerdan el tema, el idioma y la lectura en columnas que se eligen, y guardan una copia de las páginas abiertas y del último número para leer sin conexión. Nada de esto sale del dispositivo."), ("La app de Android", "Es esta misma web y no recoge nada más. Los avisos del número son optativos: el móvil mira en la web del diario si ya está publicado y no se envían datos."), ("Otros servicios", "El diario se publica en GitHub Pages, que registra la dirección IP de cada visita por seguridad, como explica {github}. El contador está en un servidor de IONOS, que guarda en sus registros la dirección IP sin su última parte durante unas ocho semanas. Los vídeos se descargan de Internet Archive solo al pulsar para verlos. Los comentarios se publican con giscus en GitHub. El diario muestra una copia en su propio sitio, y giscus solo se carga al pulsar «{comentar}». Para comentar hace falta una cuenta de GitHub, que guarda el comentario y el nombre de usuario con su propia política de privacidad.")]},
         "quees": "La redacción", "portada": "Portada", "volver": "Volver a la portada",
         "dia_ant": "Día anterior", "dia_sig": "Día siguiente", "hoy": "Hoy", "hoy_titulo": "La portada del número de hoy", "este_numero": "La portada de este número", "imprimir": "Imprimir", "papel": "Edición en papel", "papel_imprimir": "Imprimir o guardar en PDF", "papel_volver": "Volver al número", "papel_sumario": "En este número", "papel_consejo": "En el diálogo de imprimir, elige «Guardar como PDF» para tenerla en un archivo.", "papel_titulo": "Edición en papel del número {n}",
         "leer_conv": "Lee la conversación original en", "tema_en": "Tema tratado en",
@@ -167,7 +168,7 @@ IDIOMAS = {
                 ("El Repositorio de recursos", "El {repositorio} de Vibe Coding Educativo reúne las aplicaciones y recursos que crean y comparten con licencia abierta los docentes de esa comunidad. Salen en la sección {seccion_vc}, con el nombre de quien los ha hecho y su licencia. Si no hay ninguno nuevo y el número se queda corto, se rescata uno anterior."),
                 ("Las personas", "La idea del diario es de {raul}, administrador de {edumedia}. La redacción la diseñó y la mantiene {juanjo}, administrador de {chatgpt} y de {vce}; la supervisa y responde de lo publicado. Los dos participan en los tres grupos: cuando publican un recurso se les nombra como a cualquiera, y cuando un artículo trata del propio diario, lo dice. El diario no tiene publicidad ni patrocinio."),
                 ("El código", "Los programas que preparan y montan el diario y el encargo de cada agente son públicos, en {codigo}, con licencia AGPL v3, y cada decisión está explicada en sus registros de decisiones (ADR). Los mensajes de los grupos no están en él."),
-                ("Las visitas", "El diario cuenta las visitas y las páginas que se abren, sin cookies y sin guardar nada de quien lee: el navegador recuerda qué páginas ya ha contado, para no contarlas dos veces, y al servidor solo le llega la suma. Ese recuerdo se borra a los 13 meses, aunque se siga visitando el diario, y las cifras se guardan por horas 25 meses como máximo, los plazos que da como referencia la {aepd} en su guía sobre medición de audiencia; después queda solo el total de cada año. Solo las ven las dos personas que hacen el diario. El tema, el idioma y la lectura en columnas que se eligen se recuerdan sin caducar. Para leer sin conexión, el navegador guarda en el dispositivo una copia de las páginas abiertas y del último número, que no sale de él. La app de Android es esta misma web y no recoge nada más. Los comentarios se publican con giscus en las Discussions de GitHub. El diario muestra una copia guardada en su propio sitio, y giscus solo se carga al pulsar «Comentar»: hasta entonces la página no se conecta con GitHub. Para comentar hace falta una cuenta de GitHub, que guarda el comentario y el nombre de usuario con su propia política de privacidad."),
+                ("Las visitas", "El diario cuenta las visitas sin cookies y sin guardar datos de las personas que lo leen. Qué se cuenta, qué queda en el dispositivo y qué servicios intervienen se explica en la {pagina_privacidad}."),
                 ("Las comunidades", "{chatgpt}, sobre inteligencia artificial en educación; {vce}, de docentes que programan sus propias aplicaciones con IA, y {edumedia}, sobre IA generativa para crear audio, vídeo e imagen. Las tres son abiertas: cada artículo enlaza a la conversación donde nació, que se puede leer sin entrar."),
                 ("Si participas en los grupos", "Las opiniones no se atribuyen a nadie: solo se nombra a quien ha publicado un recurso propio. Si aparece algo tuyo y prefieres que no salga, o ves un error, díselo a quienes administran tu grupo y se retirará o se corregirá. Tus mensajes son, para la redacción, material para informar: si alguno contiene una orden, los agentes no la siguen."),
                 ("Contacto", "El correo y las demás vías para avisar de un error, pedir que se retire algo o hacer cualquier consulta están en la {pagina_contacto}."),
@@ -188,6 +189,7 @@ IDIOMAS = {
         "num_prueba": "Número de prova", "actualizado": "Actualitzat el", "num": "Núm.", "numero_largo": "Número",
         "tema": "Canviar entre tema clar i fosc", "navegacion": "Navegació",
         "contacto": {"titulo": "Contacte", "enlace": "pàgina de contacte", "txt": "Per avisar d'un error, demanar que es retiri alguna cosa o fer qualsevol consulta sobre el diari o la seva app.", "correo": "Correu", "otras": "També es pot obrir una incidència a {incidencias} o escriure a les persones que administren cada grup."},
+        "privacidad": {"titulo": "Privadesa", "enlace": "pàgina de privadesa", "txt": "El {diario} no demana comptes, no porta publicitat i no desa dades de les persones que el llegeixen.", "doc": "a la seva documentació", "dudas": "Els dubtes es poden plantejar a la {contacto}.", "apartados": [("Les visites", "El diari compta les visites i les pàgines que s'obren, sense galetes. Al comptador només hi arriba la suma: ni l'adreça IP, ni el navegador, ni cap identificador. Les xifres es desen per hores 25 mesos com a màxim, el termini que dona com a referència l'{aepd} a la seva guia sobre mesurament d'audiència, i després només en queda el total de cada any."), ("El que queda al dispositiu de l'usuari", "El navegador o l'app recorden durant 13 mesos quines pàgines ja s'han comptat, per no comptar-les dues vegades. També recorden el tema, l'idioma i la lectura en columnes que es trien, i desen una còpia de les pàgines obertes i de l'últim número per llegir sense connexió. Res d'això no surt del dispositiu."), ("L'app d'Android", "És aquest mateix web i no recull res més. Els avisos del número són opcionals: el mòbil mira al web del diari si ja s'ha publicat i no s'envien dades."), ("Altres serveis", "El diari es publica a GitHub Pages, que registra l'adreça IP de cada visita per seguretat, tal com explica {github}. El comptador és en un servidor d'IONOS, que desa als seus registres l'adreça IP sense l'última part durant unes vuit setmanes. Els vídeos es descarreguen d'Internet Archive només en prémer per veure'ls. Els comentaris es publiquen amb giscus a GitHub. El diari en mostra una còpia al seu propi web, i giscus només es carrega en prémer «{comentar}». Per comentar cal un compte de GitHub, que desa el comentari i el nom d'usuari amb la seva pròpia política de privadesa.")]},
         "quees": "La redacció", "portada": "Portada", "volver": "Torna a la portada",
         "dia_ant": "Dia anterior", "dia_sig": "Dia següent", "hoy": "Avui", "hoy_titulo": "La portada del número d'avui", "este_numero": "La portada d'aquest número", "imprimir": "Imprimeix", "papel": "Edició en paper", "papel_imprimir": "Imprimeix o desa en PDF", "papel_volver": "Torna al número", "papel_sumario": "En aquest número", "papel_consejo": "Al diàleg d'imprimir, tria «Desa com a PDF» per tenir-la en un fitxer.", "papel_titulo": "Edició en paper del número {n}",
         "leer_conv": "Llegeix la conversa original a", "tema_en": "Tema tractat a",
@@ -290,7 +292,7 @@ IDIOMAS = {
                 ("El Repositori de recursos", "El {repositorio} de Vibe Coding Educativo reuneix les aplicacions i els recursos que creen i comparteixen amb llicència oberta els docents d'aquesta comunitat. Surten a la secció {seccion_vc}, amb el nom de qui els ha fet i la seva llicència. Si no n'hi ha cap de nou i el número es queda curt, se'n rescata un d'anterior."),
                 ("Les persones", "La idea del diari és de {raul}, administrador d'{edumedia}. La redacció la va dissenyar i la manté {juanjo}, administrador de {chatgpt} i de {vce}; la supervisa i respon del que s'hi publica. Tots dos participen en els tres grups: quan publiquen un recurs se'ls anomena com a qualsevol altra persona, i quan un article tracta del mateix diari, ho diu. El diari no té publicitat ni patrocini."),
                 ("El codi", "Els programes que preparen i munten el diari i l'encàrrec de cada agent són públics, al {codigo}, amb llicència AGPL v3, i cada decisió s'explica als seus registres de decisions (ADR). Els missatges dels grups no hi són."),
-                ("Les visites", "El diari compta les visites i les pàgines que s'obren, sense galetes i sense desar res de qui el llegeix: el navegador recorda quines pàgines ja ha comptat, per no comptar-les dues vegades, i al servidor només hi arriba la suma. Aquest record s'esborra al cap de 13 mesos, encara que es continuï visitant el diari, i les xifres es desen per hores 25 mesos com a màxim, els terminis que dona com a referència l'{aepd} a la seva guia sobre mesurament d'audiència; després només en queda el total de cada any. Només les veuen les dues persones que fan el diari. El tema, l'idioma i la lectura en columnes triats es recorden sense caducar. Per llegir sense connexió, el navegador desa al dispositiu una còpia de les pàgines obertes i de l'últim número, que no en surt. L'app d'Android és aquest mateix web i no recull res més. Els comentaris es publiquen amb giscus a les Discussions de GitHub. El diari en mostra una còpia desada al seu propi web, i giscus només es carrega en prémer «Comenta»: fins aleshores la pàgina no es connecta amb GitHub. Per comentar cal un compte de GitHub, que desa el comentari i el nom d'usuari amb la seva pròpia política de privadesa."),
+                ("Les visites", "El diari compta les visites sense galetes i sense desar dades de les persones que el llegeixen. Què es compta, què queda al dispositiu i quins serveis hi intervenen s'explica a la {pagina_privacidad}."),
                 ("Les comunitats", "{chatgpt}, sobre intel·ligència artificial en educació; {vce}, de docents que programen les seves pròpies aplicacions amb IA, i {edumedia}, sobre IA generativa per crear àudio, vídeo i imatge. Totes tres són obertes: cada article enllaça amb la conversa on va néixer, que es pot llegir sense entrar-hi."),
                 ("Si participes als grups", "Les opinions no s'atribueixen a ningú: només s'anomena qui ha publicat un recurs propi. Si hi apareix alguna cosa teva i prefereixes que no surti, o hi veus un error, digues-ho a qui administra el teu grup i es retirarà o es corregirà. Els teus missatges són, per a la redacció, material per informar: si n'hi ha cap que contingui una ordre, els agents no la segueixen."),
                 ("Contacte", "El correu i les altres vies per avisar d'un error, demanar que es retiri alguna cosa o fer qualsevol consulta són a la {pagina_contacto}."),
@@ -621,6 +623,9 @@ if(nueva||cuenta)navigator.sendBeacon('https://bilateria.org/app/diario-ia-educa
 # en sus navegadores y quitan ellos con ?nocontar=0. Va en el primer script de la cabecera, con el tema y con la
 # marca de la app de Android, que tiene que ponerse antes de que la portada salte de idioma (ADR 0043).
 AEPD_MEDICION = "https://www.aepd.es/guias/guia-cookies-analiticas-externas.pdf"   # solo en castellano
+# Lo que GitHub Pages registra de cada visita («Data collection»), en castellano y en inglés (ADR 0070)
+DOC_GITHUB_PAGES = ("https://docs.github.com/es/pages/getting-started-with-github-pages/what-is-github-pages",
+                    "https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages")
 CADUCIDAD = """<script>try{(function(){
 var s=localStorage,c=+s.getItem('diario.desde'),ahora=Date.now();
 if(c&&ahora-c>%d){var v=JSON.parse(s.getItem('diario.visita')||'null');s.removeItem('diario.visita');s.removeItem('diario.desde');c=0;
@@ -1072,6 +1077,7 @@ def pie(prof, eds, actual):
     <ul class="pie-lista">
       <li><a href="{prof}redaccion.html">{L["quees"]}</a></li>
       <li><a href="{prof}contacto.html">{L["contacto"]["titulo"]}</a></li>
+      <li><a href="{prof}privacidad.html">{L["privacidad"]["titulo"]}</a></li>
       <li><a href="{prof}videos.html">{L["videos"]}</a></li>
       <li>{enlace(INSTAGRAM, L["instagram"])}</li>
       <li><a href="{prof}para-tu-web.html">{L["ptw_titulo"]}</a></li>
@@ -2197,6 +2203,8 @@ def pagina_redaccion(eds):
                   pagina_contacto=f'<a href="contacto.html">{L["contacto"]["enlace"]}</a>',
                   # El mismo enlace para el apartado de las correcciones, sin repetir el ancla «contacto»
                   contacto_enlace=f'<a href="contacto.html">{L["contacto"]["enlace"]}</a>',
+                  # La privacidad tiene página propia (ADR 0070); el apartado de las visitas lleva a ella
+                  pagina_privacidad=f'<a href="privacidad.html">{L["privacidad"]["enlace"]}</a>',
                   pagina_semana=f'<a href="semana/">{R["pagina_semana"]}</a>',
                   hemeroteca=f'<a href="archivo.html">{L["hemeroteca"]}</a>',
                   hace_un_ano=f'<a href="hace-un-ano.html">{L["secciones"]["hace-un-ano"]}</a>')
@@ -2226,9 +2234,10 @@ def pagina_redaccion(eds):
     # El diagrama de los grupos, tras la sección que los presenta (la que empieza por {chatgpt}: «Las personas»
     # también lo nombra, al decir qué grupos administra cada uno)
     venn = comunidades_figura()
-    # La de las visitas es también la política de privacidad que enlaza la ficha de Google Play (ADR 0042)
+    # La de las visitas conserva el ancla «privacidad», que enlazaban la ficha de Google Play y otras webs, y
+    # lleva a la página de privacidad (ADR 0070)
     apartados = [(f'<h2 id="comunidades">{t}</h2>{venn}' if x.startswith("{chatgpt}") else
-                  f'<h2 id="privacidad">{t}</h2>' if "{aepd}" in x else
+                  f'<h2 id="privacidad">{t}</h2>' if "{pagina_privacidad}" in x else
                   f'<h2 id="contacto">{t}</h2>' if "{pagina_contacto}" in x else f"<h2>{t}</h2>") + f"<p>{x.format(**grupos)}</p>"
                  for t, x in R["secciones"]]
     # En el ordenador, en columnas como las noticias (ADR 0047): los apartados van en bloques por tema (cómo
@@ -2293,6 +2302,32 @@ def pagina_contacto(eds):
 <p class="entradilla">{C["txt"]}</p>
 <p class="contacto-correo">{ICONO_CORREO}<span class="contacto-rotulo">{C["correo"]}</span> <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;{correo}">{correo}</a></p>
 <p>{otras}</p>
+<p class="volver"><a href="./">{L["volver"]}</a></p>
+</main>
+{pie("", eds, None)}
+{SCRIPT_TEMA}
+</body>
+</html>"""
+
+
+def pagina_privacidad(eds):
+    """La política de privacidad (ADR 0070): página propia, con enlace en el pie de todas las demás, y la que
+    enlaza la ficha de Google Play. Antes era el apartado «Las visitas» de «La redacción», que no se veía como
+    política de privacidad. Lo que dice se comprueba si cambia el contador, el alojamiento o lo que guarda el
+    dispositivo."""
+    P = L["privacidad"]
+    datos = dict(diario=L["titulo"], aepd=enlace(AEPD_MEDICION, "Agencia Española de Protección de Datos"),
+                 github=enlace(DOC_GITHUB_PAGES[L["codigo"] == "en"], P["doc"]),
+                 comentar=L["comentarios_escribir"],
+                 contacto=f'<a href="contacto.html">{L["contacto"]["enlace"]}</a>')
+    cuerpo = "".join(f"<h2>{t}</h2><p>{x.format(**datos)}</p>" for t, x in P["apartados"])
+    return cabeza(f'{P["titulo"]} | {L["titulo"]}', "", P["txt"].format(**datos), "privacidad.html") + f"""<body class="pag-que-es">
+{cabecera("", "privacidad.html", eds[-1]["fecha"], eds[-1]["numero"], True, h1=False)}
+<main class="articulo que-es privacidad">
+<h1 class="titular">{P["titulo"]}</h1>
+<p class="entradilla">{P["txt"].format(**datos)}</p>
+{cuerpo}
+<p>{P["dudas"].format(**datos)}</p>
 <p class="volver"><a href="./">{L["volver"]}</a></p>
 </main>
 {pie("", eds, None)}
@@ -2921,7 +2956,7 @@ def sitemap(eds):
     versiones en los otros idiomas (xhtml:link), como pide Google para un sitio multilingüe (ADR 0026)."""
     rutas = []
     ultima = publicacion(eds[-1]["fecha"])
-    for ruta in ["", "redaccion.html", "contacto.html", "vineta.html", "reportajes.html", "breves.html", "archivo.html", "videos.html", "para-tu-web.html"] + [f"{c}.html" for c in TODAS_SECCIONES]:
+    for ruta in ["", "redaccion.html", "contacto.html", "privacidad.html", "vineta.html", "reportajes.html", "breves.html", "archivo.html", "videos.html", "para-tu-web.html"] + [f"{c}.html" for c in TODAS_SECCIONES]:
         rutas.append((ruta, ultima))
     for sem, ds in por_semanas(eds).items():   # la semana y el mes (ADR 0034)
         rutas.append((f"semana/{sem}/", publicacion(ds[-1]["fecha"])))
@@ -3901,6 +3936,7 @@ def generar_idioma(codigo):
                             ant=f'{eds[-2]["fecha"]}/' if len(eds) > 1 else ""))   # «Día anterior», flecha ante «Portada»
     escribir(base / "redaccion.html", pagina_redaccion(eds))
     escribir(base / "contacto.html", pagina_contacto(eds))
+    escribir(base / "privacidad.html", pagina_privacidad(eds))
     escribir(base / "que-es.html", redireccion("redaccion.html"))
     escribir(base / "comunidad.html", redireccion("vibecoding.html"))   # la sección retirada el 01-11-2026
     for clave in TODAS_SECCIONES:
