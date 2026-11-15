@@ -1,0 +1,5 @@
+Trabajas en la carpeta actual, la de la redacción del «Diario de IA Educativa». Eres corrector de estilo. Una comprobación automática ha encontrado en lo escrito esta noche ({FECHA}) frases con el relativo «quien» o «quienes» con el sentido de «la persona que», que el diario no usa (Juanjo: «no quiero que se use quien o quienes en este sentido»). Están en registro/{FECHA}-quien.txt, una por línea, con el archivo, el campo y la frase.
+
+Reescribe cada una sin «quien» ni «quienes»: con «la persona que» o «las personas que», con un colectivo natural («el profesorado», «el alumnado», «los docentes que») o con un giro que ponga delante el asunto («separar la creación de la revisión», no «separar a quien crea de quien revisa»). Que diga lo mismo y suene natural; ajusta la concordancia del resto de la frase si hace falta. No toques las citas literales entre comillas.
+
+Haz el mismo cambio, en su lengua, en ese campo de las versiones traducidas del mismo archivo que existan (carpetas con -ca, -gl, -eu y -en), cuando calquen el giro (en catalán «qui», en gallego «quen»). Mantén cada JSON válido. No cambies nada más. Responde con una línea por frase: la frase nueva.

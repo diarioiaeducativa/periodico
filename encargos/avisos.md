@@ -29,6 +29,7 @@ portada, con la imagen del número encima. Tú escribes solo el saludo y los pun
   bot) y sin la marca de cada punto.
 - Tono cercano pero informativo, nunca publicitario: nada de «¡No te lo pierdas!», ni
   exclamaciones, ni adjetivos de anuncio. Lenguaje inclusivo natural («el profesorado»).
+- Sin el relativo «quien» o «quienes» con el sentido de «la persona que» (Juanjo, 15-11-2026: «no quiero que se use quien o quienes en este sentido»): «la persona que», un colectivo («el profesorado») o un giro con el asunto delante («separar la creación de la revisión», no «separar a quien crea de quien revisa»). El interrogativo, con tilde («¿quién?»), sí; y una cita literal se deja como está.
 - Habla de temas, no de personas: solo se nombra al autor de un recurso que él mismo ha
   publicado, también si es Juanjo de Haro, y sin su cargo (administrar un grupo, ser coautor
   del diario) salvo que tenga que ver con la noticia. Nada que no esté en la edición.

@@ -68,5 +68,6 @@
 | [0064](0064-correo-de-contacto-propio-del-diario.md) | Correo de contacto propio del diario |
 | [0065](0065-la-redaccion-mas-breve-y-sin-detalles-tecnicos.md) | «La redacción», más breve y sin detalles técnicos |
 | [0066](0066-quien-es-quien-en-los-grupos.md) | Quién es quién en los grupos: por la cuenta, no por el nombre |
+| [0067](0067-sin-quien-relativo.md) | Sin el relativo «quien» con el sentido de «la persona que» |
 
 Plantilla: [0000-plantilla.md](0000-plantilla.md). Para crear uno: `nuevo-adr "Título"`.

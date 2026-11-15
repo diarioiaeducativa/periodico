@@ -58,6 +58,7 @@ sale del reportaje. El programa lo pone al final, con su infografía y el rótul
   semana y, si lo hay, de qué trata el reportaje. Impersonal, sin enlaces (el programa añade el del
   número del domingo), sin etiquetas, sin emojis ni exclamaciones.
 - Tono informativo, nunca publicitario. Lenguaje inclusivo natural.
+- Sin el relativo «quien» o «quienes» con el sentido de «la persona que» (Juanjo, 15-11-2026: «no quiero que se use quien o quienes en este sentido»): «la persona que», un colectivo («el profesorado») o un giro con el asunto delante («separar la creación de la revisión», no «separar a quien crea de quien revisa»). El interrogativo, con tilde («¿quién?»), sí; y una cita literal se deja como está.
 
 ## Salida
 

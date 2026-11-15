@@ -71,6 +71,8 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
   números de cuenta de los autores están solo en `~/.config/diario-autores.json` del contenedor, no aquí.
   Otro «Juanjo» no es Juan José de Haro. `scripts/revisar-autoria.py --dia FECHA` (en `noche.sh`, con su
   corrector `28-autoria`) busca lo que se les atribuye y es de otra cuenta; `--todo` lo pasa por todo lo publicado.
+- **Sin «quien» relativo** (ADR 0067): ni «quien» ni «quienes» con el sentido de «la persona que». `scripts/revisar-quien.py`
+  lo busca cada noche (con su corrector `29-quien`); lo publicado antes del 15-11-2026 no se toca.
 - **Corregir una pieza publicada** (ADR 0055): el cambio va en los cinco idiomas a la vez
   (`ediciones`, `biblioteca`, `hace-un-ano` o `reportajes`, y sus `-ca`, `-gl`, `-eu`, `-en`), con la nota en
   `correccion` («Corregido el…», «Actualización del…» o «Nota añadida el…») y el día en `corregido`

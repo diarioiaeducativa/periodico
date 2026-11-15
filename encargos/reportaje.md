@@ -69,6 +69,7 @@ fondo y no haya tenido reportaje.
 
 - Castellano. Tono formal, informativo e impersonal, de reportaje de suplemento; nunca
   publicitario ni alarmista. Sin emojis. Lenguaje inclusivo pero natural.
+- Sin el relativo «quien» o «quienes» con el sentido de «la persona que» (Juanjo, 15-11-2026: «no quiero que se use quien o quienes en este sentido»): «la persona que», un colectivo («el profesorado») o un giro con el asunto delante («separar la creación de la revisión», no «separar a quien crea de quien revisa»). El interrogativo, con tilde («¿quién?»), sí; y una cita literal se deja como está.
 - Titular claro, con verbo, sin preguntas. Antetítulo de 2-5 palabras. Entradilla de dos o
   tres frases que diga de qué va y qué se lleva el lector.
   El titular no pasa de 90 caracteres, contando los espacios: lo que no quepa va al antetítulo o a la entradilla.
