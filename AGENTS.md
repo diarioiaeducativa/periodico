@@ -24,6 +24,9 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
 
 ## Lo que no se puede olvidar
 
+- **El número de reserva** (ADR 0068): piezas, viñeta, «Hace un año» por adelantado y reportaje, listos y
+  repuestos cada mañana (`reserva.sh`). `reserva.py usar FECHA relleno`, cada noche antes de traducir, completa
+  el número hasta tres piezas y pone la viñeta y «Hace un año» si faltan; la web no lo dice.
 - **Siempre sale un número** (ADR 0021 y 0028): si fallan los dos intentos,
   la reserva (`reserva/`, del fondo del repositorio y de la biblioteca, alternados; que `reserva.sh` repone cada mañana; las piezas
   caducan a los 60 días y los reportajes a los 28) y reintentos cada 10

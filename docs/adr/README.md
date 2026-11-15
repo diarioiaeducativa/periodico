@@ -69,5 +69,6 @@
 | [0065](0065-la-redaccion-mas-breve-y-sin-detalles-tecnicos.md) | «La redacción», más breve y sin detalles técnicos |
 | [0066](0066-quien-es-quien-en-los-grupos.md) | Quién es quién en los grupos: por la cuenta, no por el nombre |
 | [0067](0067-normas-de-estilo-comprobadas.md) | Normas de estilo comprobadas cada noche: sin «quien» relativo y sin citas solo en inglés |
+| [0068](0068-numero-de-reserva.md) | El número de reserva: entero o por partes, y ningún número de menos de tres piezas |
 
 Plantilla: [0000-plantilla.md](0000-plantilla.md). Para crear uno: `nuevo-adr "Título"`.
