@@ -1,7 +1,7 @@
 {
   "fecha": "2026-11-14",
   "hay_edicion": true,
-  "motivo": "Día flojo: el sábado solo dio una conversación con recorrido (Vibe Coding Educativo). ChatGPT-IA-edu solo trajo una respuesta sobre extensiones del navegador y convocatorias de un evento externo; EduMedia-IAG no escribió nada aparte del aviso del bot.",
+  "motivo": "Día flojo: el sábado solo dio una conversación con recorrido (Vibe Coding Educativo). ChatGPT-IA-edu solo trajo una respuesta sobre extensiones del navegador y convocatorias de un evento externo; EduMedia-IAG no escribió nada aparte del aviso del bot. · 1 pieza(s) de reserva (2099-01-01; para completar)",
   "piezas": [
     {
       "id": "revolucion-industrial-blender-codex",
@@ -17,11 +17,23 @@
         "La web completa, [La Revolució Industrial](https://ja.cat/revindustrial), es según el bot del grupo un atlas animado e interactivo en catalán para 4.º de ESO y 1.º de Bachillerato, con capítulos sobre máquinas, fábricas y transportes. Del mismo autor el diario contó antes [una web sobre el comercio de especias](pieza:2026-11-12/comerc-especies). Para un docente, la idea útil es que un agente de programación puede encadenar herramientas libres que uno no sabría manejar, aunque requiere pedir mejoras sucesivas."
       ],
       "fuentes": [
-        {"titulo": "La Revolució Industrial (atlas animado)", "url": "https://ja.cat/revindustrial"},
-        {"titulo": "Visor 3D de la máquina de Watt", "url": "https://felipsarroca.github.io/web/RevolucioIndustrial/visor-3d.html?m=watt"},
-        {"titulo": "El vapor · La Revolució Industrial", "url": "https://felipsarroca.github.io/web/RevolucioIndustrial/vapor.html"}
+        {
+          "titulo": "La Revolució Industrial (atlas animado)",
+          "url": "https://ja.cat/revindustrial"
+        },
+        {
+          "titulo": "Visor 3D de la máquina de Watt",
+          "url": "https://felipsarroca.github.io/web/RevolucioIndustrial/visor-3d.html?m=watt"
+        },
+        {
+          "titulo": "El vapor · La Revolució Industrial",
+          "url": "https://felipsarroca.github.io/web/RevolucioIndustrial/vapor.html"
+        }
       ],
-      "mensaje": {"grupo": "vce", "id": 14977},
+      "mensaje": {
+        "grupo": "vce",
+        "id": 14977
+      },
       "comprobado": "Revisados mensajes #14977-#14985 y la cabecera del mensaje #14977 con WebFetch (t.me/vceduca/14977: corresponde al tema). Abiertas las tres páginas con WebFetch: cargan, pero devuelven poco contenido (título; el visor describe giro, zoom, etiquetas numeradas y pausa; ninguna indica autoría ni método). ja.cat/revindustrial redirige a felipsarroca.github.io/web/RevolucioIndustrial/; la descripción (atlas animado, 4.º ESO y 1.º Bachillerato, máquinas, fábricas y transportes) coincide con la vista previa del enlace en el grupo. Lo de Blender, Codex y las iteraciones es el relato del autor (#14978, #14981), no verificable en la web. Búsqueda en el diario: Felip Sarroca aparece en otras piezas (La teva veu, Laboratori de formulació, comerç de espècies, repositorio); en este número solo tiene esta; Codex+Blender no se había contado como método de un docente. Quitado el nombre de quien comentó la diferencia.",
       "ilustracion": "Esquema en tres pasos: una petición escrita en lenguaje natural («haz la máquina de Watt con Blender») entra en un agente, que usa Blender y referencias históricas para producir un modelo 3D con piezas numeradas, con una flecha de vuelta que representa pedir más realismo.",
       "ilustracion_alt": "Esquema de izquierda a derecha: un globo de diálogo rotulado «Petición» lleva a un engranaje rotulado «Codex + Blender», que lleva a un cubo con tres puntos rotulado «Modelo 3D»; una flecha roja curva, rotulada «Más realismo», vuelve del modelo a la petición."
@@ -32,7 +44,10 @@
       "texto": "Eduvers, la plataforma de simulaciones que el diario [presentó el 12 de noviembre](pieza:2026-11-11/eduvers-simulaciones), tiene una simulación 3D para preparar una disolución de NaOH y valorar la acidez del vinagre, según su descripción.",
       "url": "https://eduvers.org/es/fisica-quimica/simulaciones/valoracion-vinagre",
       "grupo": "vce",
-      "mensaje": {"grupo": "vce", "id": 14988}
+      "mensaje": {
+        "grupo": "vce",
+        "id": 14988
+      }
     }
   ],
   "descartado": [
@@ -47,5 +62,8 @@
     "Breve de Eduvers reescrito sin nombrar a quien lo compartió (no es su autor) y atribuyendo lo del 3D a la descripción del recurso, que la propia página no confirma al abrirla.",
     "Ajustado en `descartado` el motivo de las extensiones (una existe en la tienda; la otra no se comprobó) y el de la referencia a Blender (ya contada el 9 y 10 de noviembre).",
     "Actualizado `comprobado`. Verificado: mensajes de la pieza, enlace del tema (#14977), redirección de ja.cat, no repetición con lo publicado. Sin cambios en titular (82 caracteres), entradilla ni reparto."
+  ],
+  "piezas_reserva": [
+    "2099-01-01"
   ]
 }
