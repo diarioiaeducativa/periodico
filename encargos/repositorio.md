@@ -94,6 +94,7 @@ de `publicado.txt`.
 - Castellano. Tono formal, informativo e impersonal, nunca publicitario: nada de «increíble»,
   «imprescindible» ni exclamaciones. Sin emojis. Lenguaje inclusivo pero natural.
 - Sin el relativo «quien» o «quienes» con el sentido de «la persona que» (Juanjo, 15-11-2026: «no quiero que se use quien o quienes en este sentido»): «la persona que», un colectivo («el profesorado») o un giro con el asunto delante («separar la creación de la revisión», no «separar a quien crea de quien revisa»). El interrogativo, con tilde («¿quién?»), sí; y una cita literal se deja como está.
+- Ninguna cita solo en inglés (Juanjo, 15-11-2026: «No debe haber fragmentos solo en inglés en idioma no inglés»): la cita original va con su traducción al lado, entre paréntesis («These results should not be used to punish students» («Estos resultados no deben usarse para castigar al alumnado»)), o directamente traducida. El título de una obra se deja en su idioma.
 - Titular claro, con verbo, que diga qué permite hacer el recurso (no solo su nombre). En modo
   semana, el titular resume lo de la semana («Formulación química, dictados en catalán y un
   mapa del potencial gravitatorio, nuevos en el repositorio»).

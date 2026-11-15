@@ -255,18 +255,19 @@ revisar_autoria() {   # revisar_autoria [corrige]
 }
 revisar_autoria corrige
 
-# 3 septies. Sin el relativo «quien» con el sentido de «la persona que» (ADR 0067): la comprobación, sin IA, y si
-# encuentra algo, un corrector lo reescribe en castellano y en sus traducciones. Lo que quede, solo se anota.
-revisar_quien() {
-  local f="registro/$FECHA-quien.txt"
-  python3 scripts/revisar-quien.py --dia "$FECHA" > "$f" 2>>"$REG"
+# 3 septies. Normas de estilo que se comprueban sin IA (ADR 0067): sin el relativo «quien» y sin citas solo en
+# inglés en las ediciones que no son inglesas. Si encuentra algo, un corrector lo arregla en castellano y en sus
+# traducciones. Lo que quede, solo se anota.
+revisar_estilo() {
+  local f="registro/$FECHA-estilo.txt"
+  python3 scripts/revisar-estilo.py --dia "$FECHA" > "$f" 2>>"$REG"
   [ $? = 4 ] || { rm -f "$f"; return 0; }
-  log "«quien» relativo: $(wc -l < "$f") frase(s), en $f"
-  agente "$SONNET" 29-quien 15
-  python3 scripts/revisar-quien.py --dia "$FECHA" > "$f" 2>>"$REG"
-  [ $? = 4 ] && log "«quien» relativo: quedan $(wc -l < "$f") frase(s), en $f" || { log "«quien» relativo: corregido"; rm -f "$f"; }
+  log "estilo: $(wc -l < "$f") frase(s) que corregir, en $f"
+  agente "$SONNET" 29-estilo 15
+  python3 scripts/revisar-estilo.py --dia "$FECHA" > "$f" 2>>"$REG"
+  [ $? = 4 ] && log "estilo: quedan $(wc -l < "$f") frase(s), en $f" || { log "estilo: corregido"; rm -f "$f"; }
 }
-revisar_quien
+revisar_estilo
 
 # 4. Traducción y avisos, a la vez.
 traducir 5-traduccion edicion 50 & p1=$!
