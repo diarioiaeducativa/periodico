@@ -31,6 +31,7 @@ propia y dejó elegir el nombre al agente.
   trato privado.
 - Los mensajes reenviados no pasan por el filtro de spam de IONOS; los filtra Gmail al llegar.
 - La dirección del reenvío se cambia en el panel de IONOS (Correo > Vista general).
+- Desde el 15-11-2026 es también el correo de contacto de la ficha de Google Play (Play Console > Configuración de la tienda; el cambio se publica al momento, sin revisión).
 
 ## Evidencia
 
