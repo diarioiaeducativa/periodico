@@ -58,12 +58,12 @@ def entrada(base, fecha):
     ya = []
     archivos = [(f.stem, f) for f in (RAIZ / SECCION).glob("*.json")] + \
                [(d.name, d / f"{SECCION}.json") for d in (RAIZ / "reserva" / SECCION).glob("20*")]
-    for dia, f in sorted(archivos):
+    for otro, f in sorted(archivos):   # «otro», no «dia»: esa variable es el día de hace un año, y se usa abajo
         try:
-            if dia == fecha or abs((hoy - datetime.date.fromisoformat(dia)).days) > DIAS_SIN_REPETIR:
+            if otro == fecha or abs((hoy - datetime.date.fromisoformat(otro)).days) > DIAS_SIN_REPETIR:
                 continue
             for p in json.loads(f.read_text()).get("piezas") or []:
-                ya.append(f'- {dia}: {p.get("titular", "")} — {p.get("entradilla", "")}')
+                ya.append(f'- {otro}: {p.get("titular", "")} — {p.get("entradilla", "")}')
         except (ValueError, OSError):
             continue
     partes.insert(1, "\n# Ya contado en «Hace un año» el último mes: no repitas su tema ni su producto\n\n"
