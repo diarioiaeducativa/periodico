@@ -54,7 +54,13 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
   sale en el número (su lista `personas`, con titulares), el carrusel de
   Instagram de las 7:05 (`scripts/instagram.py imagenes`, que se rehace) y
   la imagen al compartir de cada pieza si cambia un titular
-  (`scripts/og-numero.py FECHA`). El 14-11-2026 se cambió la viñeta y el
+  (`scripts/og-numero.py FECHA`).
+  **Y se rehace lo que ya se ha generado a partir de lo cambiado** (Juanjo, 15-11-2026: «tienes que rehacerlos al hacer
+  cambios! que no se te olvide»): no basta con mirarlo. El domingo, si cambia el reportaje o una pieza de la semana,
+  también el dominical (`dominical/FECHA.json`, sus textos corto y largo para X, Bluesky y LinkedIn) y «La semana en
+  vídeo» (`reels/FECHA.json`, su texto de Instagram, y el vídeo, que cierra con el reportaje: `scripts/reel-semana.sh`),
+  antes de las 9:00, que es cuando salen. El 15-11-2026 se cambió el reportaje a las 6:51 y el dominical y el vídeo
+  salieron a las 9:00 con el anterior. El 14-11-2026 se cambió la viñeta y el
   aviso de ChatGPT-IA-edu salió hablando de la anterior. Ya enviado, un
   aviso se edita con el bot (`editMessageText`, ADR 0037 del bot).
 - **Reportaje de reserva a propósito**: crear `estado/<sábado>.reportaje-reserva`
