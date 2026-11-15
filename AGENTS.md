@@ -53,6 +53,9 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
   aviso se edita con el bot (`editMessageText`, ADR 0037 del bot).
 - **Reportaje de reserva a propósito**: crear `estado/<sábado>.reportaje-reserva`
   (ADR 0028).
+- **Reportajes de reserva, uno por semana y varios a la vez** (ADR 0028): se escribe uno cuando el más reciente
+  cumple 7 días; caducan a los 28. El juez del sábado (`11b`) compara el nuevo con todos y devuelve «nuevo» o
+  la clave; `reserva_reportaje.py candidatos` los lista y `usar FECHA CLAVE` pone uno.
 - **La rama `instagram` del sitio se rehace cada día con push forzado**:
   GitHub ofrece «Compare & pull request»; no se fusiona nunca.
 - **Sin huecos** (ADR 0041): ninguna composición puede dejar espacios vacíos con ninguna cantidad de

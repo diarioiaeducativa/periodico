@@ -55,6 +55,16 @@ gustaría que pasados 6 meses saliese un artículo ya caduco». No se actualizab
   una pieza breve del 8-11, se precisó la regla de la repetición: descarta repetir la tesis de otro reportaje,
   no la de una pieza breve, que el reportaje debe enlazar (Juanjo: «aplícalo»).
 
+- **Un reportaje de reserva cada semana, y varios para elegir** (15-11-2026). Para que la reserva no se quede
+  vieja, se propuso bajar su caducidad de 28 a 7 días. Juanjo prefirió lo contrario: «mantener la caducidad y
+  aumentar así las opciones para elegir». Desde entonces `reserva.sh` escribe uno nuevo cuando el más reciente
+  cumple 7 días (`SEMANA`) o no queda ninguno, y se acumulan hasta que caducan a los 28: unos cuatro a la vez. El
+  jefe de reportajes elige un tema distinto de los que ya hay guardados. El sábado, el juez compara el nuevo con
+  todos los de reserva vigentes y devuelve «nuevo» o la clave del elegido; si el nuevo no sale y hay varios de
+  reserva, el mismo juez elige entre ellos. Sin juez (el plan B de las 6:30 y el vigilante de GitHub), sale el
+  más reciente. Cuesta lo mismo que reescribirlo cada semana (unos 17 minutos de agentes, dentro de la
+  suscripción), y lo escrito se aprovecha más.
+
 ## Alternativas descartadas
 
 - Rebajar al verificador para que siempre apruebe: publicaría lo no confirmado.

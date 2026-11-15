@@ -3,12 +3,14 @@
 """El reportaje de reserva: el domingo siempre hay reportaje (ADR 0028).
 
     scripts/reserva_reportaje.py cuantos         cuántos reportajes de reserva hay listos y vigentes
-    scripts/reserva_reportaje.py faltan          cuántos faltan para tener OBJETIVO
+    scripts/reserva_reportaje.py faltan          1 si toca escribir otro (el más reciente tiene SEMANA días o no hay ninguno), 0 si no
     scripts/reserva_reportaje.py clave           una clave libre para escribir el siguiente
     scripts/reserva_reportaje.py guardar CLAVE   pasa a reserva/reportajes/CLAVE/ lo que reportaje.sh escribió con esa clave
     scripts/reserva_reportaje.py caducar         retira los que pasan de CADUCA días (se escribirá otro)
-    scripts/reserva_reportaje.py candidato       la carpeta del que se usaría ahora (vigente y con sus fuentes vivas), o nada
-    scripts/reserva_reportaje.py usar AAAA-MM-DD pone uno en el número del domingo de ese sábado, si no tiene reportaje
+    scripts/reserva_reportaje.py candidato       la carpeta del que se usaría ahora sin juez (el más reciente vigente), o nada
+    scripts/reserva_reportaje.py candidatos      todos los vigentes con sus fuentes vivas, una carpeta por línea, el más reciente primero
+    scripts/reserva_reportaje.py usar AAAA-MM-DD [CLAVE]  pone uno en el número del domingo de ese sábado, si no tiene
+                                                 reportaje: el de CLAVE (el que eligió el juez) o, sin ella, el más reciente
 
 El sábado, si hay reportaje nuevo y uno de reserva, un juez elige el mejor (reportaje.sh, paso 11b, ADR 0028).
 
@@ -28,7 +30,8 @@ import urllib.request
 
 RAIZ = pathlib.Path(__file__).resolve().parent.parent
 RESERVA = RAIZ / "reserva" / "reportajes"
-OBJETIVO = 1         # reportajes de reserva que tiene que haber siempre listos
+SEMANA = 7           # días: cada semana se escribe uno de reserva nuevo, y se acumulan hasta que caducan (Juanjo,
+                     # 15-11-2026: «mantener la caducidad y aumentar así las opciones para elegir»), unos cuatro
 CADUCA = 28          # días: a partir de aquí se descarta y se escribe otro (Juanjo, 06-11-2026)
 PREFIJO = "2099-02-"
 TRADUCCIONES = ("ca", "gl", "eu", "en")
@@ -44,7 +47,7 @@ def escrito(d):
 
 
 def listos(hoy=None):
-    """Los reportajes de reserva válidos y vigentes, el más antiguo primero."""
+    """Los reportajes de reserva válidos y vigentes, el más reciente primero."""
     hoy = hoy or datetime.date.today()
     out = []
     for d in sorted(RESERVA.glob(PREFIJO + "*")):
@@ -53,7 +56,14 @@ def listos(hoy=None):
                 out.append(d)
         except (OSError, ValueError):
             pass
-    return out
+    return sorted(out, key=escrito, reverse=True)
+
+
+def faltan(hoy=None):
+    """1 si toca escribir uno nuevo: no hay ninguno vigente o el más reciente tiene SEMANA días o más."""
+    hoy = hoy or datetime.date.today()
+    ls = listos(hoy)
+    return 1 if not ls or (hoy - escrito(ls[0])).days >= SEMANA else 0
 
 
 def clave_libre():
@@ -132,19 +142,27 @@ def vigente(d):
     return len(malas) * 5 <= len(urls), f"{len(malas)} de {len(urls)} fuentes no responden"
 
 
-def candidato():
-    """El que usaría `usar` ahora: el más antiguo vigente cuyas fuentes respondan (los que no, se retiran)."""
+def candidatos():
+    """Los vigentes cuyas fuentes responden, el más reciente primero (los que no, se retiran)."""
     caducar()
+    out = []
     for d in listos():
         ok, motivo = vigente(d)
         if ok:
-            return d
-        retirar(d, motivo)
-    return None
+            out.append(d)
+        else:
+            retirar(d, motivo)
+    return out
 
 
-def usar(fecha):
-    """fecha: el sábado (la del número que sale el domingo)."""
+def candidato():
+    """El que usaría `usar` sin juez: el más reciente vigente."""
+    c = candidatos()
+    return c[0] if c else None
+
+
+def usar(fecha, clave=None):
+    """fecha: el sábado (la del número que sale el domingo); clave: el que eligió el juez (si no, el más reciente)."""
     actual = RAIZ / "reportajes" / f"{fecha}.json"
     try:
         if json.loads(actual.read_text()).get("hay_reportaje"):
@@ -152,7 +170,7 @@ def usar(fecha):
             return 4
     except (OSError, ValueError):
         pass
-    d = candidato()
+    d = RESERVA / clave if clave and (RESERVA / clave / "reportajes.json").exists() else candidato()
     if d:
         clave = d.name
         for f in d.glob("reportajes*.json"):
@@ -178,7 +196,7 @@ def main():
     if orden == "cuantos":
         print(len(listos()))
     elif orden == "faltan":
-        print(max(0, OBJETIVO - len(listos())))
+        print(faltan())
     elif orden == "clave":
         print(clave_libre())
     elif orden == "guardar":
@@ -188,8 +206,10 @@ def main():
     elif orden == "candidato":
         d = candidato()
         print(d.relative_to(RAIZ) if d else "")
+    elif orden == "candidatos":
+        print("\n".join(str(d.relative_to(RAIZ)) for d in candidatos()))
     elif orden == "usar":
-        sys.exit(usar(sys.argv[2]))
+        sys.exit(usar(sys.argv[2], sys.argv[3] if len(sys.argv) > 3 else None))
     else:
         print(__doc__)
         sys.exit(2)

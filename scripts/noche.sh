@@ -195,7 +195,18 @@ if [ "$(date -d "$FECHA" +%u)" = 6 ] || [ "${REPORTAJE:-0}" = 1 ]; then
   if [ "$codigo" != 0 ]; then   # el reportaje sale siempre (ADR 0028): si no ha podido ser, el de reserva
     [ "$codigo" = 2 ] || { log "el reportaje falló de forma inesperada"; rm -f reportajes/"$FECHA".json $(traducidos reportajes); }
     porque=$(grep 'sin reportaje: ' "$REG" | tail -1 | sed 's/.*sin reportaje: //')
-    if python3 scripts/reserva_reportaje.py usar "$FECHA" >> "$REG" 2>&1; then
+    # Con varios de reserva, el juez elige el mejor (ADR 0028); con uno o si no decide, el más reciente
+    elegido=""
+    cands=$(python3 scripts/reserva_reportaje.py candidatos 2>>"$REG")
+    if [ "$(printf '%s\n' "$cands" | grep -c .)" -gt 1 ]; then
+      rm -f "reportajes-borrador/$FECHA-eleccion.json"
+      lista=$(for c in $cands; do printf '%s/reportajes.json (clave %s; su infografía, en %s/ilustraciones/); ' "$c" "${c##*/}" "$c"; done)
+      agente "$OPUS" 11b-reportaje-eleccion 30 "No hay reportaje nuevo esta semana: elige solo entre los de reserva. Los de reserva: $lista"
+      elegido=$(python3 -c 'import json,sys; print(json.load(open(sys.argv[1])).get("elegido",""))' "reportajes-borrador/$FECHA-eleccion.json" 2>/dev/null)
+      log "juez de reportajes, entre los de reserva: ${elegido:-sin decisión (el más reciente)}"
+      [ "$elegido" = nuevo ] && elegido=""
+    fi
+    if python3 scripts/reserva_reportaje.py usar "$FECHA" $elegido >> "$REG" 2>&1; then
       log "el domingo sale con el reportaje de reserva"
       # Su infografía, mirada con el programa en su página (no se pudo al escribirla): si falla, sale sin ella
       rid=$(python3 -c 'import json,sys; print(json.load(open(sys.argv[1]))["id"])' "reportajes/$FECHA.json")

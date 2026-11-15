@@ -62,7 +62,9 @@ reportaje de la semana no haya podido salir, dentro de un mes como mucho. Elige 
 en ese tiempo: un documento de la Biblioteca digital (biblioteca/*.json) que merezca explicarse a fondo
 y no haya tenido reportaje, o un asunto de fondo de lo ya publicado (ediciones/, reportajes/). Nada
 que dependa de la fecha: ni «esta semana», ni «ayer», ni novedades que puedan cambiar en días. Sin
-mensajes de los grupos («mensajes»: []), salvo que enlaces piezas ya publicadas del diario.
+mensajes de los grupos («mensajes»: []), salvo que enlaces piezas ya publicadas del diario. Hay otros
+reportajes de reserva guardados (reserva/reportajes/*/reportajes.json, su titular y su entradilla): elige
+un tema distinto de todos ellos, para que el sábado el juez tenga opciones de verdad.
 RES
 else
   python3 scripts/semana.py "$DATOS" semanas "$FECHA" >> "$REG" 2>&1 || sin "la semana no tiene mensajes o no se pudieron leer"
@@ -104,18 +106,20 @@ json_ok "reportajes/$FECHA.json" || { log "el ilustrador estropeó el JSON del r
 # Uno de reserva no tiene número ni página donde mirar su infografía: se mira con el programa el
 # domingo en que salga (noche.sh), y si falla sale sin ella
 [ "${RESERVA:-0}" = 1 ] || revisar_dibujos "$(python3 -c 'import json,sys; print(json.load(open(sys.argv[1]))["id"])' "reportajes/$FECHA.json")"
-# 11b. Si hay uno de reserva, el juez de reportajes elige el mejor de los dos (ADR 0028). Si gana el de
-# reserva, se publica ese y el nuevo se guarda aparte, sin traducir; si no, el de reserva sigue guardado.
-if [ "${RESERVA:-0}" != 1 ] && cand=$(python3 scripts/reserva_reportaje.py candidato 2>>"$REG") && [ -n "$cand" ]; then
+# 11b. Si hay reportajes de reserva, el juez de reportajes elige el mejor entre el nuevo y todos ellos (ADR 0028).
+# Si gana uno de reserva, se publica ese y el nuevo se guarda aparte, sin traducir; los demás siguen guardados.
+if [ "${RESERVA:-0}" != 1 ] && cands=$(python3 scripts/reserva_reportaje.py candidatos 2>>"$REG") && [ -n "$cands" ]; then
   rm -f "reportajes-borrador/$FECHA-eleccion.json"
-  agente "$OPUS" 11b-reportaje-eleccion 20 "El de reserva: $cand/reportajes.json (su infografía, en $cand/ilustraciones/)."
+  lista=$(for c in $cands; do printf '%s/reportajes.json (clave %s; su infografía, en %s/ilustraciones/); ' "$c" "${c##*/}" "$c"; done)
+  agente "$OPUS" 11b-reportaje-eleccion 30 "Los de reserva: $lista"
   elegido=$(python3 -c 'import json,sys; print(json.load(open(sys.argv[1])).get("elegido",""))' "reportajes-borrador/$FECHA-eleccion.json" 2>/dev/null)
   log "juez de reportajes: ${elegido:-sin decisión (gana el nuevo)}"
-  if [ "$elegido" = reserva ]; then
+  case " $(echo $cands | xargs -n1 basename | tr '\n' ' ')" in *" $elegido "*) ;; *) [ -n "$elegido" ] && [ "$elegido" != nuevo ] && log "juez de reportajes: «$elegido» no es ninguno de reserva; gana el nuevo"; elegido=nuevo ;; esac
+  if [ "$elegido" != nuevo ]; then
     rid=$(python3 -c 'import json,sys; print(json.load(open(sys.argv[1]))["id"])' "reportajes/$FECHA.json")
     mv -f "reportajes/$FECHA.json" "reportajes-borrador/$FECHA-descartado.json"
     for f in ilustraciones/"$FECHA-$rid".svg; do [ -e "$f" ] && mv -f "$f" "reportajes-borrador/$FECHA-descartado-$rid.svg"; done
-    if python3 scripts/reserva_reportaje.py usar "$FECHA" >> "$REG" 2>&1; then
+    if python3 scripts/reserva_reportaje.py usar "$FECHA" "$elegido" >> "$REG" 2>&1; then
       # Su infografía no se pudo mirar en su página al escribirla: ahora sí, con revisor y una vuelta
       revisar_dibujos "$(python3 -c 'import json,sys; print(json.load(open(sys.argv[1]))["id"])' "reportajes/$FECHA.json")"
       log "reportaje listo (el de reserva): $(python3 -c 'import json,sys; print(json.load(open(sys.argv[1]))["titular"])' "reportajes/$FECHA.json")"
