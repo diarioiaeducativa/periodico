@@ -1472,6 +1472,49 @@ def franja_reserva(d):
     return f'<p class="aviso-reserva" role="note">{L["reserva_aviso"]}</p>'
 
 
+# El anuncio de la app de Android en la portada (ADR 0071): unos días tras salir en Google Play, hasta el
+# 22-11-2026, en el número que se publica ese día y en el navegador (la página guardada no lo enseña después)
+PROMO_APP_HASTA = "2026-11-22"
+PROMO_APP = {
+    "es": ("Nueva app para Android", "El diario, cada mañana en el móvil, con aviso opcional a las 7.", "Descargar en Google Play", "Cerrar el anuncio de la app"),
+    "ca": ("Nova app per a Android", "El diari, cada matí al mòbil, amb avís opcional a les 7.", "Descarrega-la a Google Play", "Tanca l'anunci de l'app"),
+    "gl": ("Nova app para Android", "O diario, cada mañá no móbil, con aviso opcional ás 7.", "Descargar en Google Play", "Pechar o anuncio da app"),
+    "eu": ("Android-erako aplikazio berria", "Egunkaria goizero mugikorrean, 7etan abisu aukerakoarekin.", "Deskargatu Google Play-n", "Itxi aplikazioaren iragarkia"),
+    "en": ("New Android app", "The paper on your phone every morning, with an optional alert at 7.", "Get it on Google Play", "Close the app announcement"),
+}
+# Algoritmo con los brazos en alto, con las formas de la viñeta (vineta.py)
+ALGORITMO_PROMO = ('<svg class="promo-app-ilu" viewBox="-50 208 100 122" aria-hidden="true">'
+                   '<path class="pa-linea pa-disc" d="M-18 314 L18 314 M-10 323 L10 323"/>'
+                   '<path class="pa-linea" d="M-28 264 L-44 234 M28 264 L44 234"/>'
+                   '<rect class="pa-cuerpo" x="-28" y="216" width="56" height="86" rx="7"/>'
+                   '<circle class="pa-ojo" cx="-7" cy="244" r="7"/><circle class="pa-ojo" cx="11" cy="244" r="7"/>'
+                   '<circle class="pa-pupila" cx="-7" cy="244" r="2.6"/><circle class="pa-pupila" cx="11" cy="244" r="2.6"/>'
+                   '<path class="pa-boca" d="M-6 256 Q2 265 10 256"/></svg>')
+ICONO_X = '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>'   # x
+
+
+def franja_app(d):
+    """El anuncio de la app (ADR 0071), a todo el ancho bajo las secciones: sin hueco al lado con ninguna
+    anchura. Sale oculto y lo enseña el navegador si tiene sentido: no dentro de la propia app, ni en iPhone
+    o iPad, que no pueden instalarla, ni si se ha cerrado, ni pasada la fecha."""
+    if not d or publicacion(d["fecha"]) > PROMO_APP_HASTA:
+        return ""
+    ante, txt, boton, cerrar = PROMO_APP[L["codigo"]]
+    url = f"https://play.google.com/store/apps/details?id=io.github.diarioiaeducativa&hl={L['codigo']}"
+    fin = datetime.date.fromisoformat(PROMO_APP_HASTA) + datetime.timedelta(days=1)
+    return f"""<aside class="promo-app" id="promo-app" aria-label="{e(ante)}" hidden>
+  {ALGORITMO_PROMO}
+  <p class="promo-app-txt"><strong>{ante}.</strong> {txt}</p>
+  <a class="promo-app-boton" href="{url}" target="_blank" rel="noopener">{boton}</a>
+  <button type="button" class="promo-app-cerrar" title="{e(cerrar)}" aria-label="{e(cerrar)}">{ICONO_X}</button>
+</aside>
+<script>(function(){{var a=document.getElementById('promo-app');if(!a)return;
+try{{if(sessionStorage.getItem('diario.app')||localStorage.getItem('diario.promo-app'))return;}}catch(_){{}}
+if(/iP(hone|ad|od)/.test(navigator.userAgent)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1))return;
+if(Date.now()>=new Date('{fin.isoformat()}T00:00:00').getTime())return;
+a.hidden=false;a.querySelector('.promo-app-cerrar').addEventListener('click',function(){{a.hidden=true;try{{localStorage.setItem('diario.promo-app','1');}}catch(_){{}}}});}})();</script>"""
+
+
 def franja_editorial(prof, d):
     """«Desde la redacción»: a todo el ancho bajo la barra de secciones, el día que la hay (el número 1)."""
     ed = d.get("editorial")
@@ -1585,6 +1628,7 @@ def pagina_portada(prof, ruta, eds, piezas, breves, fecha, cuenta, es_portada, a
 {cabecera(prof, ruta, fecha, cuenta, es_portada, h1=True if es_portada else "dia", activa="portada" if es_portada else "dia", ant=ant, sig=sig, dia=None if es_portada else dia,
           papel=f'{prof}{fecha}/papel.html?imprimir=1' if dia.get("piezas") else "")}
 <main class="portada">
+{franja_app(dia) if es_portada else ""}
 {franja_reserva(dia)}
 {franja_editorial(prof, dia)}
 {franja_reportaje(prof, rep) if arriba else ""}

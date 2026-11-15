@@ -206,6 +206,8 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
 - **Privacidad** (ADR 0070): `privacidad.html`, con enlace en el pie; en «La redacción», el apartado de las visitas solo
   lleva a ella (conserva el ancla `#privacidad`). Si cambia el contador, el alojamiento, lo que guarda el dispositivo o un
   servicio de terceros, se cambia en los cinco idiomas.
+- **Anuncio de la app** (ADR 0071): franja bajo las secciones de la portada hasta `PROMO_APP_HASTA` (22-11-2026); no
+  sale dentro de la app ni en iPhone, y se puede cerrar.
 - **Hemeroteca** (ADR 0053): un calendario por la fecha de cabecera, con el número elegido a la derecha (sus
   titulares, de `datos/AAAA-MM.json`, y su portada en miniatura, que `scripts/portadas.py` captura en
   `publicar-nas.sh` y se guarda en `portadas/`) y el resumen de cada semana. El día se elige con un clic, nunca
