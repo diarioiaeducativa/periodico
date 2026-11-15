@@ -12,71 +12,71 @@
     "en": "The week on video: 9 – 15 Nov 2026"
   },
   "descripcion": {
-    "es": "La semana en vídeo: detectores de IA, los nuevos modelos de Anthropic, Microsoft Classroom, Primer y un modelo 3D hecho con Codex, más el reportaje sobre material de clase creado por agentes.",
-    "ca": "La setmana en vídeo: detectors d'IA, els nous models d'Anthropic, Microsoft Classroom, Primer i un model 3D fet amb Codex, més el reportatge sobre material de classe creat per agents.",
-    "gl": "A semana en vídeo: detectores de IA, os novos modelos de Anthropic, Microsoft Classroom, Primer e un modelo 3D feito con Codex, máis a reportaxe sobre material de aula creado por axentes.",
-    "eu": "Astea bideoan: AA detektagailuak, Anthropicen eredu berriak, Microsoft Classroom, Primer eta Codexekin egindako 3D eredu bat, eta agenteek sortutako ikasgela-materialari buruzko erreportajea.",
-    "en": "The week in video: AI detectors, Anthropic's new models, Microsoft Classroom, Primer and a 3D model made with Codex, plus the feature on classroom materials created by AI agents."
+    "es": "La semana en vídeo: un cortometraje rodado en realidad virtual, los nuevos modelos de Anthropic, Microsoft Classroom, Primer y un modelo 3D hecho con Codex, más el reportaje sobre por qué los detectores de IA no sirven como prueba.",
+    "ca": "La setmana en vídeo: un curtmetratge rodat en realitat virtual, els nous models d'Anthropic, Microsoft Classroom, Primer i un model 3D fet amb Codex, més el reportatge sobre per què els detectors d'IA no serveixen com a prova.",
+    "gl": "A semana en vídeo: un curtametraxe rodado en realidade virtual, os novos modelos de Anthropic, Microsoft Classroom, Primer e un modelo 3D feito con Codex, máis a reportaxe sobre por que os detectores de IA non serven como proba.",
+    "eu": "Astea bideoan: errealitate birtualean filmatutako film labur bat, Anthropicen eredu berriak, Microsoft Classroom, Primer eta Codexekin egindako 3D eredu bat, eta AA detektagailuek zergatik ez duten froga gisa balio azaltzen duen erreportajea.",
+    "en": "The week in video: a short film shot in virtual reality, Anthropic's new models, Microsoft Classroom, Primer and a 3D model made with Codex, plus the feature on why AI detectors do not work as proof."
   },
   "pantalla": {
     "es": [
       "La semana. Lo más destacado del Diario de IA Educativa. 9 – 15 nov 2026.",
-      "Lunes 9. Detectores de IA. Un porcentaje de detector no prueba que se copiase. Mejor acompañarlo con borradores, versiones y una explicación oral",
+      "Lunes 9. Cine con IA. Un cortometraje se rueda dentro de la realidad virtual. Decorados en Blender y gafas Quest 3; las imágenes finales, con IA",
       "Martes 10. Claude 5.2. Anthropic lanza Fable 5.2 y Mythos 5.2. Mythos 5.2, solo para organizaciones verificadas; cifras de la propia empresa",
       "Miércoles 11. EduPrompts. EduGems pasa a llamarse EduPrompts. Google sustituye los Gems por Skills; el sitio ofrece 174 prompts",
-      "Jueves 12. Ciencia en SVG. Tres modelos dibujan una célula animal en SVG. Ninguno cometió errores de contenido, según quien hizo la prueba",
+      "Jueves 12. Ciencia en SVG. Tres modelos dibujan una célula animal en SVG. Ninguno cometió errores de contenido, según el autor de la prueba",
       "Viernes 13. Microsoft Classroom. Microsoft presenta Classroom para el trabajo de clase. Reúne tareas, notas e IA; llegará en 2027 sin coste en ciertos planes",
       "Sábado 14. Primer. Wharton publica Primer, simulaciones por conversación. Código abierto y experimental: no se ha evaluado en aulas",
       "Domingo 15. Blender con Codex. Codex modela en Blender la máquina de vapor. Un visor 3D que se gira con el ratón, para 4.º de ESO",
-      "Domingo 15. Material con IA. Los agentes ya hacen material de clase. Pedir el dibujo como código y que lo revise quien domina la materia",
+      "Domingo 15. Detectores de IA. Los detectores de IA no valen como prueba. Evaluar el proceso: usos declarados, borradores y una explicación oral",
       "Cada noticia, completa y con sus fuentes. diarioiaeducativa.github.io. Cada mañana a las 7:00."
     ],
     "ca": [
       "La setmana. El més destacat del Diari d'IA Educativa. 9 – 15 nov 2026.",
-      "Dilluns 9. Detectors d'IA. Un percentatge de detector no prova que s'hagi copiat. Millor acompanyar-lo amb esborranys, versions i una explicació oral",
+      "Dilluns 9. Cinema amb IA. Un curtmetratge es roda dins de la realitat virtual. Decorats en Blender i ulleres Quest 3; les imatges finals, amb IA",
       "Dimarts 10. Claude 5.2. Anthropic llança Fable 5.2 i Mythos 5.2. Mythos 5.2, només per a organitzacions verificades; xifres de l'empresa",
       "Dimecres 11. EduPrompts. EduGems passa a dir-se EduPrompts. Google substitueix els Gems per Skills; el lloc ofereix 174 prompts",
-      "Dijous 12. Ciència en SVG. Tres models dibuixen una cèl·lula animal en SVG. Cap va cometre errors de contingut, segons qui va fer la prova",
+      "Dijous 12. Ciència en SVG. Tres models dibuixen una cèl·lula animal en SVG. Cap va cometre errors de contingut, segons l'autor de la prova",
       "Divendres 13. Microsoft Classroom. Microsoft presenta Classroom per al treball de classe. Reuneix tasques, notes i IA; arribarà el 2027 sense cost en alguns plans",
       "Dissabte 14. Primer. Wharton publica Primer, simulacions per conversa. Codi obert i experimental: no s'ha avaluat a les aules",
       "Diumenge 15. Blender amb Codex. Codex modela en Blender la màquina de vapor. Un visor 3D que es gira amb el ratolí, per a 4t d'ESO",
-      "Diumenge 15. Material amb IA. Els agents ja fan material de classe. Demanar el dibuix com a codi i que el revisi qui domina la matèria",
+      "Diumenge 15. Detectors d'IA. Els detectors d'IA no valen com a prova. Avaluar el procés: usos declarats, esborranys i una explicació oral",
       "Cada notícia, completa i amb les fonts. diarioiaeducativa.github.io. Cada matí a les 7:00."
     ],
     "gl": [
       "A semana. O máis destacado do Diario de IA Educativa. 9 – 15 nov 2026.",
-      "Luns 9. Detectores de IA. Unha porcentaxe de detector non proba que se copiase. Mellor acompañala con borradores, versións e unha explicación oral",
+      "Luns 9. Cine con IA. Un curtametraxe ruédase dentro da realidade virtual. Decorados en Blender e lentes Quest 3; as imaxes finais, con IA",
       "Martes 10. Claude 5.2. Anthropic lanza Fable 5.2 e Mythos 5.2. Mythos 5.2, só para organizacións verificadas; cifras da propia empresa",
       "Mércores 11. EduPrompts. EduGems pasa a chamarse EduPrompts. Google substitúe os Gems por Skills; o sitio ofrece 174 prompts",
-      "Xoves 12. Ciencia en SVG. Tres modelos debuxan unha célula animal en SVG. Ningún cometeu erros de contido, segundo quen fixo a proba",
+      "Xoves 12. Ciencia en SVG. Tres modelos debuxan unha célula animal en SVG. Ningún cometeu erros de contido, segundo o autor da proba",
       "Venres 13. Microsoft Classroom. Microsoft presenta Classroom para o traballo de aula. Reúne tarefas, notas e IA; chegará en 2027 sen custo en certos plans",
       "Sábado 14. Primer. Wharton publica Primer, simulacións por conversa. Código aberto e experimental: non se avaliou en aulas",
       "Domingo 15. Blender con Codex. Codex modela en Blender a máquina de vapor. Un visor 3D que xira co rato, para 4.º da ESO",
-      "Domingo 15. Material con IA. Os axentes xa fan material de aula. Pedir o debuxo como código e que o revise quen domina a materia",
+      "Domingo 15. Detectores de IA. Os detectores de IA non valen como proba. Avaliar o proceso: usos declarados, borradores e unha explicación oral",
       "Cada noticia, completa e coas súas fontes. diarioiaeducativa.github.io. Cada mañá ás 7:00."
     ],
     "eu": [
       "Astea. Hezkuntzako AA Egunkariaren nabarmenena. 9 – 15 aza 2026.",
-      "Astelehena 9. AA detektagailuak. Detektagailuaren ehunekoak ez du kopia frogatzen. Hobe da zirriborroekin, bertsioekin eta ahozko azalpenarekin lagundu",
+      "Astelehena 9. AA zinema. Film laburra errealitate birtualaren barruan filmatzen da. Blenderreko dekoratuak eta Quest 3 betaurrekoak; azken irudiak, AAkin",
       "Asteartea 10. Claude 5.2. Anthropicek Fable 5.2 eta Mythos 5.2 aurkeztu ditu. Mythos 5.2, erakunde egiaztatuentzat soilik; zifrak enpresarenak dira",
       "Asteazkena 11. EduPrompts. EduGems izena aldatu du: EduPrompts. Googlek Gems Skills-ekin ordezkatzen ditu; 174 prompt ditu webguneak",
-      "Osteguna 12. Zientzia SVGn. Hiru ereduk animalia-zelula marrazten dute SVGn. Batek ere ez zuen eduki-akatsik egin, probatu duenaren arabera",
+      "Osteguna 12. Zientzia SVGn. Hiru ereduk animalia-zelula marrazten dute SVGn. Batek ere ez zuen eduki-akatsik egin, probaren egilearen arabera",
       "Ostirala 13. Microsoft Classroom. Microsoftek Classroom aurkeztu du, ikasgelarako. Zereginak, notak eta AA biltzen ditu; 2027an iritsiko da, plan batzuetan doan",
       "Larunbata 14. Primer. Whartonek Primer argitaratu du: elkarrizketatik simulaziora. Kode irekia eta esperimentala: ez da ikasgeletan ebaluatu",
       "Igandea 15. Blender eta Codex. Codexek Blenderren lurrun-makina modelatzen du. Sagua mugituz biratzen den 3D bisorea, DBHko 4. mailarako",
-      "Igandea 15. AAko materiala. Agenteek ikasgela-materiala egiten dute jada. Marrazkia kode gisa eskatu eta gaia menderatzen duenak berrikusi",
+      "Igandea 15. AA detektagailuak. AA detektagailuak ez dira froga. Prozesua ebaluatu: erabilera adierazia, zirriborroak eta ahozko azalpena",
       "Berri bakoitza, osorik eta bere iturriekin. diarioiaeducativa.github.io. Goizero 7:00etan."
     ],
     "en": [
       "The week. The highlights of Educational AI Daily. 9 – 15 Nov 2026.",
-      "Monday 9. AI detectors. A detector's percentage does not prove copying. Pair it with drafts, version history and an oral explanation",
+      "Monday 9. AI film. A short film is shot inside virtual reality. Sets built in Blender, a Quest 3 headset; final images made with AI",
       "Tuesday 10. Claude 5.2. Anthropic launches Fable 5.2 and Mythos 5.2. Mythos 5.2 only for verified organisations; figures are the firm's own",
       "Wednesday 11. EduPrompts. EduGems is renamed EduPrompts. Google is replacing Gems with Skills; the site offers 174 prompts",
-      "Thursday 12. Science in SVG. Three models draw an animal cell in SVG. None made content errors, according to the person who tested them",
+      "Thursday 12. Science in SVG. Three models draw an animal cell in SVG. None made content errors, according to the person who ran the test",
       "Friday 13. Microsoft Classroom. Microsoft unveils Classroom for schoolwork. Brings tasks, grades and AI together; due in 2027 at no extra cost on some plans",
       "Saturday 14. Primer. Wharton releases Primer: simulations from a chat. Open source and experimental: not yet evaluated in classrooms",
       "Sunday 15. Blender with Codex. Codex models a steam engine in Blender. A 3D viewer you turn with the mouse, for 4th-year ESO",
-      "Sunday 15. AI-made materials. AI agents now make classroom materials. Ask for the drawing as code and have an expert in the subject check it",
+      "Sunday 15. AI detectors. AI detectors do not work as proof. Assess the process: declared uses, drafts and a short oral explanation",
       "Every story, in full and with its sources. diarioiaeducativa.github.io. Every morning at 7:00 (Spain)."
     ]
   },
@@ -105,7 +105,7 @@
   "piezas": [
     {
       "fecha": "2026-11-08",
-      "id": "detector-ia-no-es-prueba"
+      "id": "buzz-cortometraje-vr"
     },
     {
       "fecha": "2026-11-09",
@@ -133,7 +133,7 @@
     },
     {
       "fecha": "2026-11-14",
-      "id": "material-didactico-agentes-ia-revision"
+      "id": "detectores-ia-evaluar-proceso"
     }
   ],
   "estilo": {
@@ -145,5 +145,6 @@
     "timbre": "cuadrada",
     "arpegio": false,
     "semilla": 685286
-  }
+  },
+  "instagram": "https://www.instagram.com/reel/DfwT4CKiLB3/"
 }

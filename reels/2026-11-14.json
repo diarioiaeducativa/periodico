@@ -3,10 +3,10 @@
   "noticias": [
     {
       "fecha": "2026-11-08",
-      "id": "detector-ia-no-es-prueba",
-      "golpe": {"es": "Detectores de IA", "ca": "Detectors d'IA", "gl": "Detectores de IA", "eu": "AA detektagailuak", "en": "AI detectors"},
-      "titular": {"es": "Un porcentaje de detector no prueba que se copiase", "ca": "Un percentatge de detector no prova que s'hagi copiat", "gl": "Unha porcentaxe de detector non proba que se copiase", "eu": "Detektagailuaren ehunekoak ez du kopia frogatzen", "en": "A detector's percentage does not prove copying"},
-      "dato": {"es": "Mejor acompañarlo con borradores, versiones y una explicación oral", "ca": "Millor acompanyar-lo amb esborranys, versions i una explicació oral", "gl": "Mellor acompañala con borradores, versións e unha explicación oral", "eu": "Hobe da zirriborroekin, bertsioekin eta ahozko azalpenarekin lagundu", "en": "Pair it with drafts, version history and an oral explanation"}
+      "id": "buzz-cortometraje-vr",
+      "golpe": {"es": "Cine con IA", "ca": "Cinema amb IA", "gl": "Cine con IA", "eu": "AA zinema", "en": "AI film"},
+      "titular": {"es": "Un cortometraje se rueda dentro de la realidad virtual", "ca": "Un curtmetratge es roda dins de la realitat virtual", "gl": "Un curtametraxe ruédase dentro da realidade virtual", "eu": "Film laburra errealitate birtualaren barruan filmatzen da", "en": "A short film is shot inside virtual reality"},
+      "dato": {"es": "Decorados en Blender y gafas Quest 3; las imágenes finales, con IA", "ca": "Decorats en Blender i ulleres Quest 3; les imatges finals, amb IA", "gl": "Decorados en Blender e lentes Quest 3; as imaxes finais, con IA", "eu": "Blenderreko dekoratuak eta Quest 3 betaurrekoak; azken irudiak, AAkin", "en": "Sets built in Blender, a Quest 3 headset; final images made with AI"}
     },
     {
       "fecha": "2026-11-09",
@@ -27,7 +27,7 @@
       "id": "svg-celula-tres-modelos",
       "golpe": {"es": "Ciencia en SVG", "ca": "Ciència en SVG", "gl": "Ciencia en SVG", "eu": "Zientzia SVGn", "en": "Science in SVG"},
       "titular": {"es": "Tres modelos dibujan una célula animal en SVG", "ca": "Tres models dibuixen una cèl·lula animal en SVG", "gl": "Tres modelos debuxan unha célula animal en SVG", "eu": "Hiru ereduk animalia-zelula marrazten dute SVGn", "en": "Three models draw an animal cell in SVG"},
-      "dato": {"es": "Ninguno cometió errores de contenido, según quien hizo la prueba", "ca": "Cap va cometre errors de contingut, segons qui va fer la prova", "gl": "Ningún cometeu erros de contido, segundo quen fixo a proba", "eu": "Batek ere ez zuen eduki-akatsik egin, probatu duenaren arabera", "en": "None made content errors, according to the person who tested them"}
+      "dato": {"es": "Ninguno cometió errores de contenido, según el autor de la prueba", "ca": "Cap va cometre errors de contingut, segons l'autor de la prova", "gl": "Ningún cometeu erros de contido, segundo o autor da proba", "eu": "Batek ere ez zuen eduki-akatsik egin, probaren egilearen arabera", "en": "None made content errors, according to the person who ran the test"}
     },
     {
       "fecha": "2026-11-12",
@@ -52,17 +52,17 @@
     }
   ],
   "reportaje": {
-    "golpe": {"es": "Material con IA", "ca": "Material amb IA", "gl": "Material con IA", "eu": "AAko materiala", "en": "AI-made materials"},
-    "titular": {"es": "Los agentes ya hacen material de clase", "ca": "Els agents ja fan material de classe", "gl": "Os axentes xa fan material de aula", "eu": "Agenteek ikasgela-materiala egiten dute jada", "en": "AI agents now make classroom materials"},
-    "dato": {"es": "Pedir el dibujo como código y que lo revise quien domina la materia", "ca": "Demanar el dibuix com a codi i que el revisi qui domina la matèria", "gl": "Pedir o debuxo como código e que o revise quen domina a materia", "eu": "Marrazkia kode gisa eskatu eta gaia menderatzen duenak berrikusi", "en": "Ask for the drawing as code and have an expert in the subject check it"}
+    "golpe": {"es": "Detectores de IA", "ca": "Detectors d'IA", "gl": "Detectores de IA", "eu": "AA detektagailuak", "en": "AI detectors"},
+    "titular": {"es": "Los detectores de IA no valen como prueba", "ca": "Els detectors d'IA no valen com a prova", "gl": "Os detectores de IA non valen como proba", "eu": "AA detektagailuak ez dira froga", "en": "AI detectors do not work as proof"},
+    "dato": {"es": "Evaluar el proceso: usos declarados, borradores y una explicación oral", "ca": "Avaluar el procés: usos declarats, esborranys i una explicació oral", "gl": "Avaliar o proceso: usos declarados, borradores e unha explicación oral", "eu": "Prozesua ebaluatu: erabilera adierazia, zirriborroak eta ahozko azalpena", "en": "Assess the process: declared uses, drafts and a short oral explanation"}
   },
   "descripcion": {
-    "es": "La semana en vídeo: detectores de IA, los nuevos modelos de Anthropic, Microsoft Classroom, Primer y un modelo 3D hecho con Codex, más el reportaje sobre material de clase creado por agentes.",
-    "ca": "La setmana en vídeo: detectors d'IA, els nous models d'Anthropic, Microsoft Classroom, Primer i un model 3D fet amb Codex, més el reportatge sobre material de classe creat per agents.",
-    "gl": "A semana en vídeo: detectores de IA, os novos modelos de Anthropic, Microsoft Classroom, Primer e un modelo 3D feito con Codex, máis a reportaxe sobre material de aula creado por axentes.",
-    "eu": "Astea bideoan: AA detektagailuak, Anthropicen eredu berriak, Microsoft Classroom, Primer eta Codexekin egindako 3D eredu bat, eta agenteek sortutako ikasgela-materialari buruzko erreportajea.",
-    "en": "The week in video: AI detectors, Anthropic's new models, Microsoft Classroom, Primer and a 3D model made with Codex, plus the feature on classroom materials created by AI agents."
+    "es": "La semana en vídeo: un cortometraje rodado en realidad virtual, los nuevos modelos de Anthropic, Microsoft Classroom, Primer y un modelo 3D hecho con Codex, más el reportaje sobre por qué los detectores de IA no sirven como prueba.",
+    "ca": "La setmana en vídeo: un curtmetratge rodat en realitat virtual, els nous models d'Anthropic, Microsoft Classroom, Primer i un model 3D fet amb Codex, més el reportatge sobre per què els detectors d'IA no serveixen com a prova.",
+    "gl": "A semana en vídeo: un curtametraxe rodado en realidade virtual, os novos modelos de Anthropic, Microsoft Classroom, Primer e un modelo 3D feito con Codex, máis a reportaxe sobre por que os detectores de IA non serven como proba.",
+    "eu": "Astea bideoan: errealitate birtualean filmatutako film labur bat, Anthropicen eredu berriak, Microsoft Classroom, Primer eta Codexekin egindako 3D eredu bat, eta AA detektagailuek zergatik ez duten froga gisa balio azaltzen duen erreportajea.",
+    "en": "The week in video: a short film shot in virtual reality, Anthropic's new models, Microsoft Classroom, Primer and a 3D model made with Codex, plus the feature on why AI detectors do not work as proof."
   },
-  "redes": "El dominical del Diario de IA Educativa: detectores de IA, los modelos Fable 5.2 y Mythos 5.2, Microsoft Classroom y Primer; y el reportaje sobre el material de clase que hacen los agentes.",
-  "instagram": "La semana en la educación con inteligencia artificial ha tenido de todo: un porcentaje de detector no basta para acusar de copiar, Anthropic ha presentado dos nuevos modelos, Microsoft ha anunciado Classroom y Wharton ha publicado Primer, un sistema abierto para crear simulaciones. El reportaje del domingo trata del material de clase que ya elaboran los agentes de IA, con láminas, vídeos y modelos 3D, y de por qué sigue haciendo falta que una persona experta lo revise."
+  "redes": "El dominical del Diario de IA Educativa: cine en realidad virtual, los modelos Fable 5.2 y Mythos 5.2, Microsoft Classroom y Primer; y el reportaje sobre por qué los detectores de IA no sirven como prueba.",
+  "instagram": "La semana en la educación con inteligencia artificial ha tenido de todo: un cortometraje que se rueda dentro de la realidad virtual, Anthropic con dos nuevos modelos, Microsoft con Classroom y Wharton con Primer, un sistema abierto para crear simulaciones. El reportaje del domingo explica por qué un detector de texto generado por IA da, como mucho, un indicio y no una prueba, y propone evaluar el proceso con usos declarados, borradores y una breve explicación oral."
 }
