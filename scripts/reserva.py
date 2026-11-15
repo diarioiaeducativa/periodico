@@ -250,7 +250,12 @@ def poner_una(fecha):
     for nombre, destino in [(f"{t}.json", t)] + [(f"{t}-{c}.json", f"{t}-{c}") for c in TRADUCCIONES]:
         f = r / nombre
         if not f.exists():
-            continue
+            # Sin esa traducción (las escritas antes de añadir el idioma): si el día ya tiene su archivo en ese idioma,
+            # la pieza va en castellano, porque si no esa edición la perdería (15-11-2026)
+            if destino != t and (RAIZ / destino / f"{fecha}.json").exists():
+                f = r / f"{t}.json"
+            else:
+                continue
         d = json.loads(f.read_text().replace(clave, fecha))   # la fecha y el nombre de la captura
         d["fecha"] = fecha
         g = RAIZ / destino / f"{fecha}.json"
