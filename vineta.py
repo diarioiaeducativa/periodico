@@ -331,8 +331,9 @@ def cartela(texto):
 # Cuando habla primero el de la derecha, los globos van en escalera (06-11-2026): se lee de izquierda
 # a derecha antes que de arriba abajo, y un globo solo un poco más alto no basta para marcar el orden.
 # El primero, arriba y hacia la derecha; el segundo, entero debajo y a la izquierda, sin que su borde
-# llegue a la cola del primero. Los personajes no se mueven.
-ESC_ARRIBA, ESC_ABAJO, ESC_HUECO, ESC_MARGEN = 300, 256, 6, 6
+# llegue a la cola del primero. Los personajes no se mueven. El de arriba, de 320 px (15-11-2026; antes 300):
+# con 300, una frase de unos 60 caracteres ocupaba tres líneas y la escalera no cabía (viñeta del 14-11).
+ESC_ARRIBA, ESC_ABAJO, ESC_HUECO, ESC_MARGEN = 320, 256, 6, 6
 
 
 def escalera(globos, pos):

@@ -16,7 +16,7 @@ números publicados hasta entonces. Juanjo lo señaló el 06-11-2026 con la viñ
   tira. Moverlos según quién habla primero resultaría antinatural en un escenario (Juanjo: «no
   resulta antinatural en un escenario?»).
 - **Escalera** (`vineta.py`, `globos_escalera`): si habla primero el de la derecha, su globo va
-  arriba y hacia la derecha (300 px de ancho) y el otro, entero debajo y a la izquierda (256 px,
+  arriba y hacia la derecha (320 px de ancho; 300 hasta el 15-11-2026) y el otro, entero debajo y a la izquierda (256 px,
   sin llegar a la cola del primero). Si habla primero el de la izquierda, como antes.
 - **La escena baja 18 px** (`BAJA`): el suelo, el decorado y los personajes bajan dentro del
   marco, y debajo del suelo quedan 8 px. Así caben los globos en escalera sin acortar los textos.
@@ -41,3 +41,10 @@ al 05-11-2026) caben en escalera con la escena bajada; sin bajarla, no cabían t
 captura las nueve tiras, con todos los escenarios, y la de ese día en anchura de móvil. Caso
 límite medido: sin cartela caben un texto de 90 caracteres arriba y uno de 50 abajo; con
 cartela, unos 60 y 27.
+
+Ensanche del 15-11-2026: en la viñeta del 14-11, «Te modelo en 3D cualquier máquina de la Revolución
+Industrial.» (62 caracteres) ocupaba tres líneas con 300 px y la escalera no cabía por 13 px (en
+castellano, catalán e inglés), así que salió lado a lado y se leía antes la respuesta de Tiza. Juanjo
+lo señaló («el bocadillo de algoritmo no debería estar encima de el de tiza?»). Con 320 px cabe en dos
+líneas. Medido en las 80 viñetas en escalera publicadas hasta ese día: cabe la del 14-11 en los tres
+idiomas, cinco anteriores solo pierden una línea en el globo de arriba y la del 12-11 sigue sin caber.
