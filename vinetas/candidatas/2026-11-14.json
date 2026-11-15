@@ -1,0 +1,133 @@
+{
+  "fecha": "2026-11-14",
+  "candidatas": [
+    {
+      "pieza": "revolucion-industrial-blender-codex",
+      "idea": "Algoritmo maneja Blender por su cuenta y presume de que puede con cualquier programa, hasta que Tiza le pasa la plataforma de las evaluaciones (remate mudo, giro en el rótulo).",
+      "guion": {"vinetas": [
+        {"cartela": "En la sala de profes, con un ordenador viejo.",
+         "escenario": "sala_profes",
+         "objeto": "portatil",
+         "tiza": {"expresion": "preocupado", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "orgulloso", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "tiza", "texto": "Mi ordenador no abre Blender.", "tipo": "habla"},
+           {"quien": "algoritmo", "texto": "Da igual: lo manejo yo por mi cuenta. Ese y cualquier programa.", "tipo": "habla"}]},
+        {"escenario": "sala_profes",
+         "objeto": "portatil",
+         "tiza": {"expresion": "pensativo", "postura": "pensar", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "riendo", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "tiza", "texto": "¿Cualquiera? Entonces, la plataforma de las evaluaciones.", "tipo": "habla"},
+           {"quien": "algoritmo", "texto": "Pan comido.", "tipo": "habla"}]},
+        {"cartela": "Tres horas después.",
+         "escenario": "sala_profes",
+         "objeto": "taza",
+         "lleva": "tiza",
+         "tiza": {"expresion": "neutral", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "cargando", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": []}
+      ]}
+    },
+    {
+      "pieza": "revolucion-industrial-blender-codex",
+      "idea": "Tiza le pide a Algoritmo más realismo, más detalle y números en las piezas de la máquina de Watt, como a quien entrega un trabajo, y a la tercera versión le pone un notable para que no se relaje.",
+      "guion": {"vinetas": [
+        {"cartela": "De noche, en casa, con la máquina de vapor de Watt.",
+         "escenario": "casa_noche",
+         "tiza": {"expresion": "neutral", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "orgulloso", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "algoritmo", "texto": "¡La máquina de Watt en 3D, hecha con Blender!", "tipo": "habla"},
+           {"quien": "tiza", "texto": "Le falta realismo. Y más detalle.", "tipo": "habla"}]},
+        {"cartela": "Segundo intento.",
+         "escenario": "casa_noche",
+         "tiza": {"expresion": "pensativo", "postura": "pensar", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "preocupado", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "algoritmo", "texto": "¿Y ahora?", "tipo": "habla"},
+           {"quien": "tiza", "texto": "Mejor. Ponle números y nombres a las partes.", "tipo": "habla"}]},
+        {"cartela": "Tercera versión.",
+         "escenario": "casa_noche",
+         "objeto": "folio",
+         "lleva": "tiza",
+         "tiza": {"expresion": "orgulloso", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "agotado", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "tiza", "texto": "Un notable. Que no se me relaje.", "tipo": "habla"}]}
+      ]}
+    },
+    {
+      "pieza": "revolucion-industrial-blender-codex",
+      "idea": "Algoritmo modela en 3D cualquier máquina de la Revolución Industrial, con nombres en cada parte, y Tiza le encarga una de época: la fotocopiadora, para saber cómo se llama la pieza que se atasca.",
+      "guion": {"vinetas": [
+        {"cartela": "En la fotocopiadora, que se ha vuelto a atascar.",
+         "escenario": "fotocopiadora",
+         "tiza": {"expresion": "enfadado", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "neutral", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "algoritmo", "texto": "Te modelo en 3D cualquier máquina de la Revolución Industrial.", "tipo": "habla"},
+           {"quien": "tiza", "texto": "¿Cualquiera?", "tipo": "habla"}]},
+        {"escenario": "fotocopiadora",
+         "tiza": {"expresion": "pensativo", "postura": "pensar", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "orgulloso", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "algoritmo", "texto": "Con imágenes de época, y números y nombres en cada parte.", "tipo": "habla"}]},
+        {"escenario": "fotocopiadora",
+         "tiza": {"expresion": "neutral", "postura": "senalar", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "sorprendido", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "tiza", "texto": "Pues esta es de época. Y ponle nombre a la pieza que se atasca.", "tipo": "habla"}]}
+      ]}
+    },
+    {
+      "pieza": "revolucion-industrial-blender-codex",
+      "idea": "Algoritmo usa Blender aunque el portátil de Tiza no lo abre y se ofrece a modelar más máquinas de la época; Tiza propone la suya para el capítulo del vapor.",
+      "guion": {"vinetas": [
+        {"cartela": "En el aula, preparando el tema del vapor.",
+         "escenario": "aula",
+         "objeto": "portatil",
+         "tiza": {"expresion": "harto", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "orgulloso", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "algoritmo", "texto": "La máquina de Watt en 3D, con Blender: gira, hace zoom y lleva etiquetas.", "tipo": "habla"},
+           {"quien": "tiza", "texto": "Mi portátil no abre Blender.", "tipo": "habla"}]},
+        {"escenario": "aula",
+         "objeto": "portatil",
+         "tiza": {"expresion": "pensativo", "postura": "pensar", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "riendo", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "algoritmo", "texto": "No hace falta: lo manejo yo. ¿Te hago también la Spinning Jenny?", "tipo": "habla"}]},
+        {"escenario": "aula",
+         "objeto": "portatil",
+         "tiza": {"expresion": "riendo", "postura": "senalar", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "sorprendido", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "tiza", "texto": "Mejor mete mi portátil en el capítulo de máquinas de vapor.", "tipo": "habla"}]}
+      ]}
+    },
+    {
+      "pieza": "breve-1",
+      "idea": "La simulación 3D de Eduvers para valorar el vinagre no derrama ni rompe nada, y Tiza le encuentra la ventaja de verdad: es como el laboratorio del centro, pero con material.",
+      "guion": {"vinetas": [
+        {"cartela": "En el aula de Física y Química, antes de la práctica.",
+         "escenario": "aula",
+         "tiza": {"expresion": "preocupado", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "neutral", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "algoritmo", "texto": "Eduvers tiene una simulación 3D para valorar la acidez del vinagre.", "tipo": "habla"},
+           {"quien": "tiza", "texto": "¿Y se prepara antes la disolución de NaOH?", "tipo": "habla"}]},
+        {"escenario": "aula",
+         "tiza": {"expresion": "pensativo", "postura": "pensar", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "orgulloso", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "algoritmo", "texto": "Claro. Y sin bata, sin gafas y sin nada que se derrame.", "tipo": "habla"}]},
+        {"escenario": "aula",
+         "tiza": {"expresion": "riendo", "postura": "encoger", "lugar": "izquierda", "mira": "derecha"},
+         "algoritmo": {"expresion": "avergonzado", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+         "bocadillos": [
+           {"quien": "tiza", "texto": "Vamos, como nuestro laboratorio, pero con material.", "tipo": "habla"}]}
+      ]}
+    }
+  ]
+}

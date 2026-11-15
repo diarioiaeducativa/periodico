@@ -1,0 +1,36 @@
+{
+  "fecha": "2026-11-14",
+  "elegida": {
+    "n": 3,
+    "pieza": "revolucion-industrial-blender-codex",
+    "idea": "Algoritmo modela en 3D cualquier máquina de la Revolución Industrial, con nombres en cada parte, y Tiza le encarga una de época: la fotocopiadora, para saber cómo se llama la pieza que se atasca.",
+    "guion": {"vinetas": [
+      {"cartela": "En la fotocopiadora, que se ha vuelto a atascar.",
+       "escenario": "fotocopiadora",
+       "tiza": {"expresion": "enfadado", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "neutral", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+       "bocadillos": [
+         {"quien": "algoritmo", "texto": "Te modelo en 3D cualquier máquina de la Revolución Industrial.", "tipo": "habla"},
+         {"quien": "tiza", "texto": "¿Cualquiera?", "tipo": "habla"}]},
+      {"escenario": "fotocopiadora",
+       "tiza": {"expresion": "harto", "postura": "pensar", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "riendo", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+       "bocadillos": [
+         {"quien": "algoritmo", "texto": "Con imágenes de época y cada parte numerada y con su nombre.", "tipo": "habla"}]},
+      {"escenario": "fotocopiadora",
+       "tiza": {"expresion": "neutral", "postura": "senalar", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "sorprendido", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+       "bocadillos": [
+         {"quien": "tiza", "texto": "Pues esta es de época. Ponle nombre a la pieza que se atasca.", "tipo": "habla"}]}
+    ]}
+  },
+  "motivo": "La 3 tiene el giro más sorprendente y más reconocible para cualquier docente: la fotocopiadora del centro como «máquina de época», y la petición práctica de saber cómo se llama la pieza que siempre se atasca. Nace de la noticia (modelos 3D con piezas numeradas y nombradas, referencias históricas) sin inventar datos y se entiende sin haberla leído. Remata Tiza, como pide la variedad tras dos remates de Algoritmo. La 4 tiene un remate parecido (el portátil viejo, al capítulo del vapor), más pegado a la noticia pero menos sorprendente; la 5 es buena, pero sobre el breve y con un arranque técnico (NaOH) que frena; la 1 depende de un «Tres horas después» previsible y de un «Pan comido» gastado; la 2 es correcta pero de sonrisa, sin golpe. Gracia de la elegida: 7, no hace falta afinarla más a fondo.",
+  "retoques": "Escenario fotocopiadora: libre (no salió en los tres números anteriores) y la noticia del chiste ocurre allí. Caras: en la viñeta 2, Tiza pasa de «pensativo» (la más repetida) a «harto» con la mano en la barbilla, y Algoritmo de «orgulloso» (de las más repetidas) a «riendo»; se mantienen «enfadado» de Tiza al principio (cara que no había salido) y «sorprendido» de Algoritmo al final. Sin objeto: la propia fotocopiadora del escenario es el objeto del chiste. Texto: viñeta 2, «Con imágenes de época y cada parte numerada y con su nombre» (antes «y números y nombres en cada parte»); viñeta 3, «Pues esta es de época. Ponle nombre a la pieza que se atasca» (quitado el «Y»). Rótulo de la viñeta 1 revisado: sitúa la escena sin adelantar el remate y tiene 48 caracteres; se deja. Ningún bocadillo pasa de 90 caracteres (el más largo, 62).",
+  "puntuaciones": [
+    {"n": 1, "gracia": 6, "claridad": 7, "remate": 6, "prohibiciones": "respeta", "nota": "Remate mudo con giro en el rótulo, bien para variar, pero «Tres horas después» con Algoritmo cargando es previsible y «Pan comido» está gastado. Repite «cargando», de las caras más usadas."},
+    {"n": 2, "gracia": 6, "claridad": 7, "remate": 6, "prohibiciones": "respeta", "nota": "Fiel a la noticia (más realismo, más detalle, números y nombres) y Tiza se pasa de lista como profesora; pero el notable «para que no se relaje» da sonrisa, no carcajada."},
+    {"n": 3, "gracia": 7, "claridad": 8, "remate": 7, "prohibiciones": "respeta", "nota": "La fotocopiadora como máquina de época es un giro sorprendente y reconocible; une la promesa de la noticia con un problema de cada día."},
+    {"n": 4, "gracia": 6, "claridad": 7, "remate": 7, "prohibiciones": "respeta", "nota": "El portátil viejo al capítulo del vapor es un buen remate y sale de la noticia (tarjeta gráfica antigua), pero menos sorprendente que la 3; la viñeta 2 recarga."},
+    {"n": 5, "gracia": 6, "claridad": 6, "remate": 7, "prohibiciones": "respeta", "nota": "«Como nuestro laboratorio, pero con material» es un buen remate, pero el arranque con la disolución de NaOH es técnico y frena, y es el breve, no la pieza del día."}
+  ]
+}

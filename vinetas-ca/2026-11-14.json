@@ -1,0 +1,28 @@
+{
+  "fecha": "2026-11-14",
+  "elegida": {
+    "n": 3,
+    "pieza": "revolucion-industrial-blender-codex",
+    "idea": "Algorisme modela en 3D qualsevol màquina de la Revolució Industrial, amb noms a cada part, i Guix li encarrega una d'època: la fotocopiadora, per saber com es diu la peça que s'encalla.",
+    "guion": {"vinetas": [
+      {"cartela": "A la fotocopiadora, que s'ha tornat a encallar.",
+       "escenario": "fotocopiadora",
+       "tiza": {"expresion": "enfadado", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "neutral", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+       "bocadillos": [
+         {"quien": "algoritmo", "texto": "Et modelo en 3D qualsevol màquina de la Revolució Industrial.", "tipo": "habla"},
+         {"quien": "tiza", "texto": "Qualsevol?", "tipo": "habla"}]},
+      {"escenario": "fotocopiadora",
+       "tiza": {"expresion": "harto", "postura": "pensar", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "riendo", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+       "bocadillos": [
+         {"quien": "algoritmo", "texto": "Amb imatges d'època i cada part numerada i amb el seu nom.", "tipo": "habla"}]},
+      {"escenario": "fotocopiadora",
+       "tiza": {"expresion": "neutral", "postura": "senalar", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "sorprendido", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+       "bocadillos": [
+         {"quien": "tiza", "texto": "Doncs aquesta és d'època. Posa nom a la peça que s'encalla.", "tipo": "habla"}]}
+    ]}
+  },
+  "traduccion": "automàtica amb IA"
+}

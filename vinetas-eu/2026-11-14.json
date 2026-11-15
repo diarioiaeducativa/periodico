@@ -1,0 +1,28 @@
+{
+  "fecha": "2026-11-14",
+  "elegida": {
+    "n": 3,
+    "pieza": "revolucion-industrial-blender-codex",
+    "idea": "Algoritmok Iraultza Industrialeko edozein makina modelatzen du 3D-n, atal bakoitzaren izenarekin, eta Klarionek garaiko bat eskatzen dio: fotokopiagailua, trabatzen den piezaren izena jakiteko.",
+    "guion": {"vinetas": [
+      {"cartela": "Fotokopiagailuaren aurrean, berriro trabatu da.",
+       "escenario": "fotocopiadora",
+       "tiza": {"expresion": "enfadado", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "neutral", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+       "bocadillos": [
+         {"quien": "algoritmo", "texto": "Iraultza Industrialeko edozein makina modelatuko dizut 3D-n.", "tipo": "habla"},
+         {"quien": "tiza", "texto": "Edozein?", "tipo": "habla"}]},
+      {"escenario": "fotocopiadora",
+       "tiza": {"expresion": "harto", "postura": "pensar", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "riendo", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+       "bocadillos": [
+         {"quien": "algoritmo", "texto": "Garaiko irudiekin, eta atal bakoitza zenbakituta eta izenez.", "tipo": "habla"}]},
+      {"escenario": "fotocopiadora",
+       "tiza": {"expresion": "neutral", "postura": "senalar", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "sorprendido", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+       "bocadillos": [
+         {"quien": "tiza", "texto": "Beno, hau garaikoa da. Jarri izena trabatzen den piezari.", "tipo": "habla"}]}
+    ]}
+  },
+  "traduccion": "itzulpen automatikoa AArekin"
+}

@@ -1,10 +1,10 @@
 {
-  "fecha": "2099-02-01",
+  "fecha": "2026-11-14",
   "hay_reportaje": true,
-  "motivo": "Reportaje de reserva, sin mensajes de la semana, sobre un asunto de fondo que no caduca en un mes: cómo evaluar cuando la IA puede hacer la tarea y por qué los detectores de texto generado no sirven como prueba. El diario lo ha tocado en piezas sueltas (el debate sobre la «caza de brujas» de los detectores, la guía para familias cuando la IA hace los deberes, el informe del MIT) y en dos documentos de la Biblioteca sin reportaje en este aspecto (el informe completo del comité del MIT y las Orientacions catalanas de 2026). Tiene estudios, fabricantes, normativa europea, criterio de la AEPD, guías españolas y práctica de aula, e interesa a cualquier docente que corrige trabajos. Los reportajes anteriores (agentes y datos del alumnado; edad para usar IA) no lo tratan. Tema y enfoque, del jefe de reportajes (2099-02-01-tema.json).",
+  "motivo": "Reportaje de reserva, sin mensajes de la semana, sobre un asunto de fondo que no caduca en un mes: cómo evaluar cuando la IA puede hacer la tarea y por qué los detectores de texto generado no sirven como prueba. El diario lo ha tocado en piezas sueltas (el debate sobre la «caza de brujas» de los detectores, la guía para familias cuando la IA hace los deberes, el informe del MIT) y en dos documentos de la Biblioteca sin reportaje en este aspecto (el informe completo del comité del MIT y las Orientacions catalanas de 2026). Tiene estudios, fabricantes, normativa europea, criterio de la AEPD, guías españolas y práctica de aula, e interesa a cualquier docente que corrige trabajos. Los reportajes anteriores (agentes y datos del alumnado; edad para usar IA) no lo tratan. Tema y enfoque, del jefe de reportajes (2026-11-14-tema.json).",
   "id": "detectores-ia-evaluar-proceso",
   "antetitulo": "Ebaluazioa eta AA",
-  "titular": "AAk sortutako testuen detektagailuek ez dute froga gisa balio, eta erakundeek prozesua ebaluatzea proposatzen dute",
+  "titular": "AA detektagailuek ez dute froga gisa balio, eta erakundeek prozesua ebaluatzea proposatzen dute",
   "entradilla": "Lan bat adimen artifizial batek idatzi duen jakitea agintzen duten programek akatsak egiten dituzte, baita AA erabili ez duen jendearekin ere, eta ez dute beren fabrikatzaileek ere gomendatzen horiekin zigortzea. Erreportaje honek azaltzen du zer dioten ikerketek, Europako Erregelamenduak, datuen babesak eta hezkuntza-gidek, eta kosturik gabeko plan bat proposatzen du edozein irakasgaitan bermeekin ebaluatzeko: zer erabilera onartzen diren adierazi, prozesuaren ebidentziak eskatu eta ikasleei entzun.",
   "apartados": [
     {
@@ -65,34 +65,98 @@
     "Alternatiba prozesua ebaluatzea da: zeregin bakoitzeko AAren erabilera adierazia, zirriborroak eta bertsioen historia, fasekako entregak eta ahozko azalpen labur bat."
   ],
   "relacionadas": [
-    {"fecha": "2026-11-01", "id": "detectores-caza-brujas"},
-    {"fecha": "2026-11-01", "id": "familias-deberes-ia"},
-    {"fecha": "2026-11-02", "id": "informe-mit-ia"}
+    {
+      "fecha": "2026-11-01",
+      "id": "detectores-caza-brujas"
+    },
+    {
+      "fecha": "2026-11-01",
+      "id": "familias-deberes-ia"
+    },
+    {
+      "fecha": "2026-11-02",
+      "id": "informe-mit-ia"
+    }
   ],
   "fuentes": [
-    {"titulo": "GPT detectors are biased against non-native English writers (Liang et al., Stanfordeko Unibertsitatea, Patterns, 2023) (ingelesez)", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10382961/"},
-    {"titulo": "Testing of Detection Tools for AI-Generated Text (Weber-Wulff et al., International Journal for Educational Integrity, 2023) (ingelesez)", "url": "https://arxiv.org/abs/2306.15666"},
-    {"titulo": "¿IA, Humano o híbrido?: Fiabilidad de herramientas de detección de IA en textos multiautoría (Queralt et al., Intelética, 2025) (gaztelaniaz)", "url": "https://journal.iberamia.org/index.php/inteletica/article/view/3753"},
-    {"titulo": "New AI classifier for indicating AI-written text (OpenAI, 2023-01-31, 2023-07-20ko kentze-oharrarekin) (ingelesez)", "url": "https://openai.com/index/new-ai-classifier-for-indicating-ai-written-text/"},
-    {"titulo": "Understanding false positives within our AI writing detection capabilities (Turnitin, 2023-03-16) (ingelesez)", "url": "https://www.turnitin.co.uk/blog/understanding-false-positives-within-our-ai-writing-detection-capabilities"},
-    {"titulo": "Understanding the false positive rate for sentences of our AI writing detection capability (Turnitin, 2023-06-14) (ingelesez)", "url": "https://www.turnitin.co.uk/blog/understanding-the-false-positive-rate-for-sentences-of-our-ai-writing-detection-capability"},
-    {"titulo": "What are the limitations of GPTZero's AI classifier? (GPTZero, laguntza-zentroa) (ingelesez)", "url": "https://support.gptzero.me/articles/1787085022-what-are-the-limitations-of-gptzeros-ai-classifier"},
-    {"titulo": "Reglamento (UE) 2024/1689 de Inteligencia Artificial (DOUE, BOEn) (gaztelaniaz)", "url": "https://www.boe.es/buscar/doc.php?id=DOUE-L-2024-81079"},
-    {"titulo": "Ley de IA: marco regulador (Europako Batzordea, 2026-10-19an eguneratua) (gaztelaniaz)", "url": "https://digital-strategy.ec.europa.eu/es/policies/regulatory-framework-ai"},
-    {"titulo": "Evaluación de la intervención humana en las decisiones automatizadas (AEPD, bloga, 2024-03-04) (gaztelaniaz)", "url": "https://www.aepd.es/prensa-y-comunicacion/blog/evaluacion-de-la-intervencion-humana-en-las-decisiones-automatizadas"},
-    {"titulo": "¿Pueden los centros educativos impartir clases y realizar exámenes online sin el consentimiento de los interesados? (AEPD) (gaztelaniaz)", "url": "https://www.aepd.es/preguntas-frecuentes/10-menores-y-educacion/FAQ-1009-pueden-los-centros-educativos-impartir-clases-y-realizar-examenes-online-sin-el-consentimiento-de-los-interesados"},
-    {"titulo": "Orientacions per a l’ús de la intel·ligència artificial als centres educatius (Kataluniako Generalitatea, 2026; kopia Liburutegi digitalean) (katalanez)", "url": "https://t.me/ChatGPTedu/21753/53605"},
-    {"titulo": "Guía sobre el uso de la inteligencia artificial en el ámbito educativo, 2.0 bertsioa (INTEF, 2026ko iraila) (gaztelaniaz)", "url": "https://intef.es/wp-content/uploads/2026/09/ACTUALIZACION-GUIA-DE-LA-IA-DEF-1-SEPT-2026-Publicable-v5-2.pdf"},
-    {"titulo": "Nueva versión de la «Guía sobre el uso de la inteligencia artificial en el ámbito educativo» (INTEF, 2026-09-08) (gaztelaniaz)", "url": "https://intef.es/Noticias/nueva-version-de-la-guia-sobre-el-uso-de-la-inteligencia-artificial-en-el-ambito-educativo/"},
-    {"titulo": "Report of MIT's Ad Hoc Committee on AI Use in Teaching, Learning, and Research Training (MIT, 2026-08-13) (ingelesez)", "url": "https://aiandeducation.mit.edu/report/"},
-    {"titulo": "The AI Assessment Scale (Perkins, Roe, Furze eta MacVaugh) (ingelesez)", "url": "https://aiassessmentscale.com/"},
-    {"titulo": "The AI Assessment Scale Revisited: A Framework for Educational Assessment (Perkins, Roe, Furze et al., arXiv, 2024-12-12) (ingelesez)", "url": "https://arxiv.org/abs/2412.09029"}
+    {
+      "titulo": "GPT detectors are biased against non-native English writers (Liang et al., Stanfordeko Unibertsitatea, Patterns, 2023) (ingelesez)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10382961/"
+    },
+    {
+      "titulo": "Testing of Detection Tools for AI-Generated Text (Weber-Wulff et al., International Journal for Educational Integrity, 2023) (ingelesez)",
+      "url": "https://arxiv.org/abs/2306.15666"
+    },
+    {
+      "titulo": "¿IA, Humano o híbrido?: Fiabilidad de herramientas de detección de IA en textos multiautoría (Queralt et al., Intelética, 2025) (gaztelaniaz)",
+      "url": "https://journal.iberamia.org/index.php/inteletica/article/view/3753"
+    },
+    {
+      "titulo": "New AI classifier for indicating AI-written text (OpenAI, 2023-01-31, 2023-07-20ko kentze-oharrarekin) (ingelesez)",
+      "url": "https://openai.com/index/new-ai-classifier-for-indicating-ai-written-text/"
+    },
+    {
+      "titulo": "Understanding false positives within our AI writing detection capabilities (Turnitin, 2023-03-16) (ingelesez)",
+      "url": "https://www.turnitin.co.uk/blog/understanding-false-positives-within-our-ai-writing-detection-capabilities"
+    },
+    {
+      "titulo": "Understanding the false positive rate for sentences of our AI writing detection capability (Turnitin, 2023-06-14) (ingelesez)",
+      "url": "https://www.turnitin.co.uk/blog/understanding-the-false-positive-rate-for-sentences-of-our-ai-writing-detection-capability"
+    },
+    {
+      "titulo": "What are the limitations of GPTZero's AI classifier? (GPTZero, laguntza-zentroa) (ingelesez)",
+      "url": "https://support.gptzero.me/articles/1787085022-what-are-the-limitations-of-gptzeros-ai-classifier"
+    },
+    {
+      "titulo": "Reglamento (UE) 2024/1689 de Inteligencia Artificial (DOUE, BOEn) (gaztelaniaz)",
+      "url": "https://www.boe.es/buscar/doc.php?id=DOUE-L-2024-81079"
+    },
+    {
+      "titulo": "Ley de IA: marco regulador (Europako Batzordea, 2026-10-19an eguneratua) (gaztelaniaz)",
+      "url": "https://digital-strategy.ec.europa.eu/es/policies/regulatory-framework-ai"
+    },
+    {
+      "titulo": "Evaluación de la intervención humana en las decisiones automatizadas (AEPD, bloga, 2024-03-04) (gaztelaniaz)",
+      "url": "https://www.aepd.es/prensa-y-comunicacion/blog/evaluacion-de-la-intervencion-humana-en-las-decisiones-automatizadas"
+    },
+    {
+      "titulo": "¿Pueden los centros educativos impartir clases y realizar exámenes online sin el consentimiento de los interesados? (AEPD) (gaztelaniaz)",
+      "url": "https://www.aepd.es/preguntas-frecuentes/10-menores-y-educacion/FAQ-1009-pueden-los-centros-educativos-impartir-clases-y-realizar-examenes-online-sin-el-consentimiento-de-los-interesados"
+    },
+    {
+      "titulo": "Orientacions per a l’ús de la intel·ligència artificial als centres educatius (Kataluniako Generalitatea, 2026; kopia Liburutegi digitalean) (katalanez)",
+      "url": "https://t.me/ChatGPTedu/21753/53605"
+    },
+    {
+      "titulo": "Guía sobre el uso de la inteligencia artificial en el ámbito educativo, 2.0 bertsioa (INTEF, 2026ko iraila) (gaztelaniaz)",
+      "url": "https://intef.es/wp-content/uploads/2026/09/ACTUALIZACION-GUIA-DE-LA-IA-DEF-1-SEPT-2026-Publicable-v5-2.pdf"
+    },
+    {
+      "titulo": "Nueva versión de la «Guía sobre el uso de la inteligencia artificial en el ámbito educativo» (INTEF, 2026-09-08) (gaztelaniaz)",
+      "url": "https://intef.es/Noticias/nueva-version-de-la-guia-sobre-el-uso-de-la-inteligencia-artificial-en-el-ambito-educativo/"
+    },
+    {
+      "titulo": "Report of MIT's Ad Hoc Committee on AI Use in Teaching, Learning, and Research Training (MIT, 2026-08-13) (ingelesez)",
+      "url": "https://aiandeducation.mit.edu/report/"
+    },
+    {
+      "titulo": "The AI Assessment Scale (Perkins, Roe, Furze eta MacVaugh) (ingelesez)",
+      "url": "https://aiassessmentscale.com/"
+    },
+    {
+      "titulo": "The AI Assessment Scale Revisited: A Framework for Educational Assessment (Perkins, Roe, Furze et al., arXiv, 2024-12-12) (ingelesez)",
+      "url": "https://arxiv.org/abs/2412.09029"
+    }
   ],
-  "mensaje": {"grupo": "chatgpt", "id": 53814},
+  "mensaje": {
+    "grupo": "chatgpt",
+    "id": 53814
+  },
   "comprobado": "Verificador, 08-11-2026, con WebFetch/WebSearch. Traducción al euskera del reportaje en castellano; datos, enlaces y comprobaciones, los del original.",
   "repaso": [
     "Traducción fiel del original; sin cambios de contenido."
   ],
   "ilustracion": "Infografía en dos columnas. A la izquierda, «Detector»: un texto con un porcentaje y un signo de interrogación, y tres avisos breves (falsos positivos, peor en segunda lengua, falla con textos mixtos), bajo el rótulo «Indicio, no prueba». A la derecha, «Proceso»: cuatro pasos en escalera (usos de IA declarados por tarea, borradores e historial de versiones, entregas por etapas, explicación oral breve) que llevan a una figura docente con una balanza y el rótulo «Decide una persona».",
-  "ilustracion_alt": "Bi zutabeko infografia. Ezkerrean, «Detektagailua» izenburuaren azpian, ehuneko-barra eta galdera-ikurra dituen dokumentu bat, eta hiru ohar (alerta-triangelu bat, bi globo eta erdi eta erdi banatutako laukizuzen bat) positibo faltsuak, bigarren hizkuntzan emaitza okerragoak eta testu mistoetako akatsak irudikatzen dituztenak; azpian, «Zantzua, ez froga» izenburua. Gezi batek eskuinera eramaten du, «Prozesua» izenburuaren azpira, non «Erabilera adierazia», «Zirriborroak», «Faseka» eta «Ahozko azalpena» izenburuko lau urratsek eskailera batean balantza duen pertsona batera eramaten duten, «Pertsonak erabakitzen du» izenburuarekin."
+  "ilustracion_alt": "Bi zutabeko infografia. Ezkerrean, «Detektagailua» izenburuaren azpian, ehuneko-barra eta galdera-ikurra dituen dokumentu bat, eta hiru ohar (alerta-triangelu bat, bi globo eta erdi eta erdi banatutako laukizuzen bat) positibo faltsuak, bigarren hizkuntzan emaitza okerragoak eta testu mistoetako akatsak irudikatzen dituztenak; azpian, «Zantzua, ez froga» izenburua. Gezi batek eskuinera eramaten du, «Prozesua» izenburuaren azpira, non «Erabilera adierazia», «Zirriborroak», «Faseka» eta «Ahozko azalpena» izenburuko lau urratsek eskailera batean balantza duen pertsona batera eramaten duten, «Pertsonak erabakitzen du» izenburuarekin.",
+  "reserva": "escrito el 2026-11-08 como reportaje de reserva (2099-02-01)"
 }

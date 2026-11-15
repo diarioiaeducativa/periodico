@@ -1,0 +1,47 @@
+{
+  "fecha": "2026-11-14",
+  "piezas": [
+    {
+      "id": "breath-ejercicio-de-respiracion-guiada-p",
+      "seccion": "vibecoding",
+      "repositorio": "fondo",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Del fondo del repositorio",
+      "titular": "GeoBreath guía ejercicios de respiración con figuras geométricas y ritmo ajustable",
+      "entradilla": "La aplicación de Luis Vilela Acuña marca con una figura animada cuándo inspirar, aguantar y exhalar. Se abre en el navegador, sin instalar nada, y está en seis lenguas.",
+      "cuerpo": [
+        "GeoBreath es una aplicación web de respiración guiada creada por Luis Vilela Acuña, dentro del conjunto de herramientas [EDUmind](pieza:2026-11-06/edumind-miclase-sincronizacion). En el repositorio figura con licencia AGPL v3 (la página añade la opción EUPL-1.2) y catalogada para Infantil, Primaria, Secundaria, Bachillerato y formación de adultos.",
+        "Al abrirla aparece una figura (círculo, triángulo, cuadrado, pentágono o hexágono) con un punto que recorre sus lados. En el centro, una indicación («Inspira», «Aguanta», «Exhala») dice qué fase toca. Cada lado corresponde a un tiempo: el valor se ajusta entre 1 y 10 segundos y, en el modo avanzado, se puede dar una duración distinta a cada fase. La pantalla muestra además el tiempo de sesión, los ciclos completados y un reto de 15 ciclos que se puede reiniciar.",
+        "Además del ritmo libre, ofrece cuatro patrones predefinidos: resonancia (unas 5,5 respiraciones por minuto), caja 4-4-4-4, 4-7-8 y suspiro fisiológico. También hay tres rutinas rápidas, llamadas «Calma rápida», «Foco estudio» y «Recupero exprés», cada una con su figura, su ritmo y su apoyo activado. Los apoyos sensoriales son sonido, vibración, pictogramas y voz, que se activan por separado; y se puede fijar un número de rondas, tras las cuales la sesión se detiene sola.",
+        "En clase puede servir para una pausa guiada al volver del patio, antes de un examen o en una tutoría, proyectada en la pizarra para todo el grupo. Según la propia página, los ajustes se guardan solo en el dispositivo y se pueden borrar desde un botón.",
+        "La interfaz tiene selector de idioma con castellano, gallego, catalán, euskera, inglés y chino. La página enseña un acceso a EDUmind, pero nada indica que haga falta cuenta para respirar con ella. El código es libre y está en [GitHub](https://github.com/edumind-es/geobreath)."
+      ],
+      "recursos": [
+        {
+          "id": "breath-ejercicio-de-respiracion-guiada-p",
+          "titulo": "Breath: Ejercicio de Respiración Guiada para la Calma (GeoBreath)",
+          "autoria": "Luis Vilela Acuña",
+          "url": "https://breath.edumind.es",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://breath.edumind.es",
+          "licencia": "AGPL v3",
+          "captura": "2026-11-14-breath-ejercicio-de-respiracion-guiada-p.jpg",
+          "captura_alt": "Pantalla de GeoBreath con un cuadrado en el que un punto recorre los lados, la indicación «Inspira» en el centro, los contadores de sesión y ciclos y el selector de figura y segundos por lado.",
+          "texto": []
+        }
+      ],
+      "fuentes": [
+        {"titulo": "GeoBreath (breath.edumind.es)", "url": "https://breath.edumind.es"},
+        {"titulo": "Código de GeoBreath en GitHub", "url": "https://github.com/edumind-es/geobreath"}
+      ],
+      "comprobado": "Se miró la captura de la página (figura cuadrada animada, selector ES/GL/CAT/EU/EN/ZH, contadores, ajustes), se leyó el texto visible (patrones, rutinas, apoyos, rondas, datos guardados en el dispositivo, licencia AGPL/EUPL) y se abrieron la web y el repositorio de GitHub con WebFetch, que confirmaron patrones, rutinas, seis lenguas y que la página principal no pide cuenta. No se probaron el sonido, la voz ni la vibración. Enlace a pieza:2026-11-06/edumind-miclase-sincronizacion comprobado en publicado.txt (misma familia EDUmind).",
+      "repaso": [
+        "Quitada la frase sobre pictogramas y voz para alumnado más pequeño (no se sostiene en la página).",
+        "Enlazado GitHub en su primera mención en el cuerpo.",
+        "Añadida la doble licencia que muestra la página (AGPL o EUPL-1.2) junto a la AGPL v3 de la ficha.",
+        "Actualizado «comprobado»."
+      ]
+    }
+  ],
+  "descartado": []
+}

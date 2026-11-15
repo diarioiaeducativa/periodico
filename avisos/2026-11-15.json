@@ -1,0 +1,63 @@
+{
+  "fecha": "2026-11-15",
+  "avisos": {
+    "chatgpt": {
+      "saludo": "Buenos días. Domingo de reportaje sobre los detectores de IA y la evaluación.",
+      "puntos": [
+        "El reportaje del domingo explica por qué los detectores de texto generado por IA no sirven como prueba y cómo evaluar el proceso del alumnado en cualquier materia, sin coste",
+        "Un docente pidió a Codex que modelara en Blender las máquinas de la Revolución Industrial para su web de 4.º de ESO, y consiguió un visor 3D de la máquina de vapor de Watt",
+        "La viñeta de Tiza y Algoritmo pide un modelo 3D de época con cada pieza numerada y con su nombre, y el encargo es la fotocopiadora del centro"
+      ]
+    },
+    "vce": {
+      "saludo": "Buenos días. Reportaje dominical y una aplicación para respirar con calma.",
+      "puntos": [
+        "El reportaje del domingo repasa qué dicen los estudios, los fabricantes y las guías educativas sobre los detectores de IA, y propone evaluar el proceso en lugar del producto",
+        "Con Codex y Blender, que su ordenador no podía abrir, Felip Sarroca i Gil obtuvo modelos 3D para su web sobre la Revolución Industrial; pidió más realismo en varias rondas",
+        "GeoBreath, de Luis Vilela Acuña, guía la respiración con una figura animada y ritmo ajustable; se abre en el navegador, sin instalar nada, y está en seis lenguas"
+      ]
+    },
+    "edumedia": {
+      "saludo": "Buenos días. Hoy toca reportaje, sobre los detectores de IA y la evaluación.",
+      "puntos": [
+        "El reportaje del domingo explica por qué el porcentaje de un detector de IA no prueba nada y qué proponen las instituciones: declarar los usos admitidos y pedir evidencias del proceso",
+        "Codex manejó Blender para generar un visor 3D de la máquina de vapor de Watt, con etiquetas en las piezas, pensado para una web de Ciencias Sociales de 4.º de ESO",
+        "Hace un año, Gemini iba y venía en las cuentas educativas; hoy es cada centro el que lo enciende o lo apaga"
+      ]
+    }
+  },
+  "instagram": "El reportaje de este domingo explica por qué los detectores de texto generado por IA no sirven como prueba: se equivocan, también con el alumnado que no la ha usado, y ni sus propios fabricantes aconsejan sancionar con ellos. Recoge lo que dicen los estudios, el Reglamento europeo, la protección de datos y las guías educativas, y propone un plan sin coste para evaluar el proceso en cualquier materia. El número trae además un visor 3D de la máquina de vapor creado con un agente que maneja Blender y una aplicación web de respiración guiada con figuras geométricas.",
+  "titulo": "Diario de IA Educativa · Núm. 14",
+  "fecha_texto": "Domingo, 15 de noviembre de 2026",
+  "url": "https://diarioiaeducativa.github.io/?n=14",
+  "imagen": "https://diarioiaeducativa.github.io/portadas/2026-11-14-es.jpg",
+  "personas": [
+    {
+      "id": 978013977,
+      "piezas": [
+        {
+          "es": {
+            "titular": "Un docente pide a Codex que modele en Blender las máquinas de la Revolución Industrial",
+            "url": "https://diarioiaeducativa.github.io/2026-11-14/revolucion-industrial-blender-codex.html"
+          },
+          "ca": {
+            "titular": "Un docent demana a Codex que modeli a Blender les màquines de la Revolució Industrial",
+            "url": "https://diarioiaeducativa.github.io/ca/2026-11-14/revolucion-industrial-blender-codex.html"
+          },
+          "gl": {
+            "titular": "Un docente pídelle a Codex que modele en Blender as máquinas da Revolución Industrial",
+            "url": "https://diarioiaeducativa.github.io/gl/2026-11-14/revolucion-industrial-blender-codex.html"
+          },
+          "eu": {
+            "titular": "Irakasle batek Codexi eskatu dio Blenderren Iraultza Industrialeko makinak modelatzeko",
+            "url": "https://diarioiaeducativa.github.io/eu/2026-11-14/revolucion-industrial-blender-codex.html"
+          },
+          "en": {
+            "titular": "A teacher asks Codex to model Industrial Revolution machines in Blender",
+            "url": "https://diarioiaeducativa.github.io/en/2026-11-14/revolucion-industrial-blender-codex.html"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "fecha": "2026-11-14",
+  "elegida": {
+    "n": 3,
+    "pieza": "revolucion-industrial-blender-codex",
+    "idea": "Algoritmo modela en 3D calquera máquina da Revolución Industrial, con nomes en cada parte, e Xiz encárgalle unha de época: a fotocopiadora, para saber como se chama a peza que se atasca.",
+    "guion": {
+      "vinetas": [
+        {
+          "cartela": "Na fotocopiadora, que volveu atascarse.",
+          "escenario": "fotocopiadora",
+          "tiza": {"expresion": "enfadado", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+          "algoritmo": {"expresion": "neutral", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+          "bocadillos": [
+            {"quien": "algoritmo", "texto": "Modelo en 3D calquera máquina da Revolución Industrial.", "tipo": "habla"},
+            {"quien": "tiza", "texto": "Calquera?", "tipo": "habla"}
+          ]
+        },
+        {
+          "escenario": "fotocopiadora",
+          "tiza": {"expresion": "harto", "postura": "pensar", "lugar": "izquierda", "mira": "derecha"},
+          "algoritmo": {"expresion": "riendo", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+          "bocadillos": [
+            {"quien": "algoritmo", "texto": "Con imaxes de época e cada parte numerada e co seu nome.", "tipo": "habla"}
+          ]
+        },
+        {
+          "escenario": "fotocopiadora",
+          "tiza": {"expresion": "neutral", "postura": "senalar", "lugar": "izquierda", "mira": "derecha"},
+          "algoritmo": {"expresion": "sorprendido", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+          "bocadillos": [
+            {"quien": "tiza", "texto": "Pois esta é de época. Pónlle nome á peza que se atasca.", "tipo": "habla"}
+          ]
+        }
+      ]
+    }
+  },
+  "traduccion": "automática con IA"
+}

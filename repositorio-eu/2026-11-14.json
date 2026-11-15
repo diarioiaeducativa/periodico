@@ -1,0 +1,47 @@
+{
+  "fecha": "2026-11-14",
+  "piezas": [
+    {
+      "id": "breath-ejercicio-de-respiracion-guiada-p",
+      "seccion": "vibecoding",
+      "repositorio": "fondo",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Biltegiaren fondotik",
+      "titular": "GeoBreath-ek arnasketa-ariketak gidatzen ditu figura geometrikoekin eta erritmo egokigarriarekin",
+      "entradilla": "Luis Vilela Acuñaren aplikazioak figura animatu batekin markatzen du noiz arnastu, eutsi eta botatu. Nabigatzailean irekitzen da, ezer instalatu gabe, eta sei hizkuntzatan dago.",
+      "cuerpo": [
+        "GeoBreath arnasketa gidatuko web-aplikazio bat da, Luis Vilela Acuñak sortua, [EDUmind](pieza:2026-11-06/edumind-miclase-sincronizacion) tresna-multzoaren barruan. Biltegian AGPL v3 lizentziarekin agertzen da (orriak EUPL-1.2 aukera ere gehitzen du) eta Haur Hezkuntzarako, Lehen Hezkuntzarako, Bigarren Hezkuntzarako, Batxilergorako eta helduen prestakuntzarako katalogatua dago.",
+        "Irekitzean, figura bat agertzen da (zirkulua, triangelua, karratua, pentagonoa edo hexagonoa), eta puntu bat bere aldeetan barrena mugitzen da. Erdian, adierazpen batek («Inspira», «Aguanta», «Exhala») zein fase dagokion esaten du. Alde bakoitza denbora bati dagokio: balioa 1 eta 10 segundo artean doitzen da eta, modu aurreratuan, fase bakoitzari iraupen desberdina eman dakioke. Pantailak, gainera, saioaren denbora, osatutako zikloak eta berrabiaraz daitekeen 15 zikloko erronka erakusten ditu.",
+        "Erritmo librearen ondoan, aurrez definitutako lau patroi eskaintzen ditu: erresonantzia (minutuko 5,5 arnasaldi inguru), 4-4-4-4 kutxa, 4-7-8 eta suspirio fisiologikoa. Hiru errutina azkar ere badaude, «Calma rápida», «Foco estudio» eta «Recupero exprés» izenekoak, bakoitza bere figurarekin, erritmoarekin eta aktibatutako laguntzarekin. Laguntza sentsorialak soinua, bibrazioa, pictogramak eta ahotsa dira, bereiz aktibatzen direnak; eta txanda-kopuru bat finkatu daiteke, eta txanda horien ondoren saioa bere kabuz gelditzen da.",
+        "Ikasgelan, atsedenaldiko patiotik itzultzean, azterketa baten aurretik edo tutoretza batean etenaldi gidatu gisa erabil daiteke, arbelean proiektatuta talde osoarentzat. Orriak berak dioenez, doikuntzak gailuan bakarrik gordetzen dira eta botoi batetik ezaba daitezke.",
+        "Interfazeak hizkuntza-hautatzailea du: gaztelania, galiziera, katalana, euskara, ingelesa eta txinera. Orriak EDUminderako sarbide bat erakusten du, baina ezerk ez du adierazten kontu bat behar denik harekin arnasteko. Kodea librea da eta [GitHub](https://github.com/edumind-es/geobreath)en dago."
+      ],
+      "recursos": [
+        {
+          "id": "breath-ejercicio-de-respiracion-guiada-p",
+          "titulo": "Breath: Ejercicio de Respiración Guiada para la Calma (GeoBreath)",
+          "autoria": "Luis Vilela Acuña",
+          "url": "https://breath.edumind.es",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://breath.edumind.es",
+          "licencia": "AGPL v3",
+          "captura": "2026-11-14-breath-ejercicio-de-respiracion-guiada-p.jpg",
+          "captura_alt": "GeoBreath-en pantaila, karratu batekin, non puntu bat aldeetan barrena mugitzen den, erdian «Inspira» adierazpenarekin, saioaren eta zikloen kontagailuekin eta figuraren eta alde bakoitzeko segundoen hautatzailearekin.",
+          "texto": []
+        }
+      ],
+      "fuentes": [
+        {"titulo": "GeoBreath (breath.edumind.es) (gaztelaniaz)", "url": "https://breath.edumind.es"},
+        {"titulo": "GeoBreath-en kodea GitHuben (gaztelaniaz)", "url": "https://github.com/edumind-es/geobreath"}
+      ],
+      "comprobado": "Se miró la captura de la página (figura cuadrada animada, selector ES/GL/CAT/EU/EN/ZH, contadores, ajustes), se leyó el texto visible (patrones, rutinas, apoyos, rondas, datos guardados en el dispositivo, licencia AGPL/EUPL) y se abrieron la web y el repositorio de GitHub con WebFetch, que confirmaron patrones, rutinas, seis lenguas y que la página principal no pide cuenta. No se probaron el sonido, la voz ni la vibración. Enlace a pieza:2026-11-06/edumind-miclase-sincronizacion comprobado en publicado.txt (misma familia EDUmind).",
+      "repaso": [
+        "Quitada la frase sobre pictogramas y voz para alumnado más pequeño (no se sostiene en la página).",
+        "Enlazado GitHub en su primera mención en el cuerpo.",
+        "Añadida la doble licencia que muestra la página (AGPL o EUPL-1.2) junto a la AGPL v3 de la ficha.",
+        "Actualizado «comprobado»."
+      ]
+    }
+  ],
+  "descartado": []
+}

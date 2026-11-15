@@ -1,0 +1,51 @@
+{
+  "fecha": "2026-11-14",
+  "hay_edicion": true,
+  "motivo": "Día frouxo: o sábado só deu unha conversa con percorrido (Vibe Coding Educativo). ChatGPT-IA-edu só trouxo unha resposta sobre extensións do navegador e convocatorias dun evento externo; EduMedia-IAG non escribiu nada á parte do aviso do bot.",
+  "piezas": [
+    {
+      "id": "revolucion-industrial-blender-codex",
+      "seccion": "vibecoding",
+      "importancia": 1,
+      "grupo": "vce",
+      "antetitulo": "Recurso da comunidade",
+      "titular": "Un docente pídelle a Codex que modele en Blender as máquinas da Revolución Industrial",
+      "entradilla": "Felip Sarroca i Gil conta que o seu ordenador non abre Blender, pero que Codex si o maneja e lle xerou modelos 3D para a súa web de 4.º da ESO.",
+      "cuerpo": [
+        "Felip Sarroca i Gil prepara unha web sobre a Revolución Industrial para Ciencias Sociais de 4.º da ESO e quería mostrar como funciona a máquina de vapor de Watt e outras da época, como a Spinning Jenny. Segundo conta no grupo, descubriu que Blender, o programa libre de modelado e renderizado, podía producir vídeos, pero a súa tarxeta gráfica, antiga, non lle permitía abrir a versión que instalou. Codex, en cambio, si pode usar o programa pola súa conta.",
+        "O seu método, tal como o describe: pedirlle a Codex, sen máis, que faga a máquina usando Blender. O propio axente buscou referencias, imaxes históricas e documentación e deseñou o modelo; non saíu ao primeiro intento, e pediulle un par de veces máis realismo e detalle, e que engadise números e nomes das partes. O resultado é [un visor 3D da máquina de Watt](https://felipsarroca.github.io/web/RevolucioIndustrial/visor-3d.html?m=watt), que se xira co rato e leva etiquetas; a páxina non indica como se fixo, iso consta só no que conta o seu autor. A mesma máquina existe tamén como [animación en SVG](https://felipsarroca.github.io/web/RevolucioIndustrial/vapor.html#watt) dentro do capítulo do vapor, e outro membro do grupo, ao comparalas, cualificou a diferenza de «abismal».",
+        "A web completa, [La Revolució Industrial](https://ja.cat/revindustrial), é segundo o bot do grupo un atlas animado e interactivo en catalán para 4.º da ESO e 1.º de Bacharelato, con capítulos sobre máquinas, fábricas e transportes. Do mesmo autor o diario contou antes [unha web sobre o comercio de especias](pieza:2026-11-12/comerc-especies). Para un docente, a idea útil é que un axente de programación pode encadear ferramentas libres que un non sabería manexar, aínda que require pedir melloras sucesivas."
+      ],
+      "fuentes": [
+        {"titulo": "La Revolució Industrial (atlas animado) (en catalán)", "url": "https://ja.cat/revindustrial"},
+        {"titulo": "Visor 3D da máquina de Watt", "url": "https://felipsarroca.github.io/web/RevolucioIndustrial/visor-3d.html?m=watt"},
+        {"titulo": "El vapor · La Revolució Industrial (en catalán)", "url": "https://felipsarroca.github.io/web/RevolucioIndustrial/vapor.html"}
+      ],
+      "mensaje": {"grupo": "vce", "id": 14977},
+      "comprobado": "Revisados as mensaxes #14977-#14985 e a cabeceira da mensaxe #14977 con WebFetch (t.me/vceduca/14977: corresponde ao tema). Abertas as tres páxinas con WebFetch: cargan, pero devolven pouco contido (título; o visor describe xiro, zoom, etiquetas numeradas e pausa; ningunha indica autoría nin método). ja.cat/revindustrial redirixe a felipsarroca.github.io/web/RevolucioIndustrial/; a descrición (atlas animado, 4.º da ESO e 1.º de Bacharelato, máquinas, fábricas e transportes) coincide coa vista previa da ligazón no grupo. O de Blender, Codex e as iteracións é o relato do autor (#14978, #14981), non verificable na web. Busca no diario: Felip Sarroca aparece noutras pezas (La teva veu, Laboratori de formulació, comerç de espècies, repositorio); neste número só ten esta; Codex+Blender non se contara como método dun docente. Retirado o nome de quen comentou a diferenza.",
+      "ilustracion": "Esquema en tres pasos: una petición escrita en lenguaje natural («haz la máquina de Watt con Blender») entra en un agente, que usa Blender y referencias históricas para producir un modelo 3D con piezas numeradas, con una flecha de vuelta que representa pedir más realismo.",
+      "ilustracion_alt": "Esquema de esquerda a dereita: un bocadillo de diálogo co rótulo «Petición» leva a unha engrenaxe co rótulo «Codex + Blender», que leva a un cubo con tres puntos co rótulo «Modelo 3D»; unha frecha vermella curva, co rótulo «Máis realismo», volve do modelo á petición."
+    }
+  ],
+  "breves": [
+    {
+      "texto": "Eduvers, a plataforma de simulacións que o diario [presentou o 12 de novembro](pieza:2026-11-11/eduvers-simulaciones), ten unha simulación 3D para preparar unha disolución de NaOH e valorar a acidez do vinagre, segundo a súa descrición.",
+      "url": "https://eduvers.org/es/fisica-quimica/simulaciones/valoracion-vinagre",
+      "grupo": "vce",
+      "mensaje": {"grupo": "vce", "id": 14988}
+    }
+  ],
+  "descartado": [
+    "Extensións para agochar os resumos de IA de Google (#54351, ChatGPT-IA-edu): resposta a unha pregunta do 7 de novembro; a primeira extensión existe na Chrome Web Store (comprobado con busca), pero a segunda non se puido comprobar e é só unha recomendación persoal, así que non se publica.",
+    "Sesión do Diálogo Aberto Global e manifesto transatlántico pola soberanía dixital (#54354, #54373, #54374): convocatoria e material dun evento externo compartido repetidamente, sen debate no grupo; non se pode comprobar o seu contido.",
+    "Avisos do bot, bot antiuserbots, /misrecursos e vídeo de TikTok de Adrián Fernández: administración interna ou promoción.",
+    "Referencia a Blender de David Cordones (#14991) e mensaxes de EduMedia-IAG do día 13 (Scribe v3, Primer): enlaza unha publicación de Raül Torres sobre Blender que o diario xa contou o 9 e o 10 de novembro (Buzz); Scribe v3 e Primer xa saíron o 14 de novembro no número do día.",
+    "EduMedia-IAG: sen mensaxes publicables o 14 de novembro."
+  ],
+  "repaso": [
+    "Retirado o nome de Juan José de Haro da peza (valoración «abismal»): quen opina non se nomea; agora «outro membro do grupo».",
+    "Breve de Eduvers reescrito sen nomear a quen o compartiu (non é o seu autor) e atribuíndo o do 3D á descrición do recurso, que a propia páxina non confirma ao abrila.",
+    "Axustado en `descartado` o motivo das extensións (unha existe na tenda; a outra non se comprobou) e o da referencia a Blender (xa contada o 9 e 10 de novembro).",
+    "Actualizado `comprobado`. Verificado: mensaxes da peza, ligazón do tema (#14977), redirección de ja.cat, non repetición co xa publicado. Sen cambios en titular (82 caracteres), entradilla nin reparto."
+  ]
+}

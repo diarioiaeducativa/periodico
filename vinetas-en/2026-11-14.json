@@ -1,0 +1,39 @@
+{
+  "fecha": "2026-11-14",
+  "elegida": {
+    "n": 3,
+    "pieza": "revolucion-industrial-blender-codex",
+    "idea": "Algorithm models any Industrial Revolution machine in 3D, with a name on every part, and Chalk commissions a period piece: the photocopier, to find out what the part that keeps jamming is called.",
+    "guion": {
+      "vinetas": [
+        {
+          "cartela": "At the photocopier, which has jammed again.",
+          "escenario": "fotocopiadora",
+          "tiza": {"expresion": "enfadado", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+          "algoritmo": {"expresion": "neutral", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+          "bocadillos": [
+            {"quien": "algoritmo", "texto": "I can model any Industrial Revolution machine for you in 3D.", "tipo": "habla"},
+            {"quien": "tiza", "texto": "Any of them?", "tipo": "habla"}
+          ]
+        },
+        {
+          "escenario": "fotocopiadora",
+          "tiza": {"expresion": "harto", "postura": "pensar", "lugar": "izquierda", "mira": "derecha"},
+          "algoritmo": {"expresion": "riendo", "postura": "arriba", "lugar": "derecha", "mira": "izquierda"},
+          "bocadillos": [
+            {"quien": "algoritmo", "texto": "With period images, and every part numbered and named.", "tipo": "habla"}
+          ]
+        },
+        {
+          "escenario": "fotocopiadora",
+          "tiza": {"expresion": "neutral", "postura": "senalar", "lugar": "izquierda", "mira": "derecha"},
+          "algoritmo": {"expresion": "sorprendido", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+          "bocadillos": [
+            {"quien": "tiza", "texto": "Well, this one is from the period. Name the part that keeps jamming.", "tipo": "habla"}
+          ]
+        }
+      ]
+    }
+  },
+  "traduccion": "automatic AI translation"
+}

@@ -1,0 +1,68 @@
+{
+  "fecha": "2026-11-14",
+  "noticias": [
+    {
+      "fecha": "2026-11-08",
+      "id": "detector-ia-no-es-prueba",
+      "golpe": {"es": "Detectores de IA", "ca": "Detectors d'IA", "gl": "Detectores de IA", "eu": "AA detektagailuak", "en": "AI detectors"},
+      "titular": {"es": "Un porcentaje de detector no prueba que se copiase", "ca": "Un percentatge de detector no prova que s'hagi copiat", "gl": "Unha porcentaxe de detector non proba que se copiase", "eu": "Detektagailuaren ehunekoak ez du kopia frogatzen", "en": "A detector's percentage does not prove copying"},
+      "dato": {"es": "Mejor acompañarlo con borradores, versiones y una explicación oral", "ca": "Millor acompanyar-lo amb esborranys, versions i una explicació oral", "gl": "Mellor acompañala con borradores, versións e unha explicación oral", "eu": "Hobe da zirriborroekin, bertsioekin eta ahozko azalpenarekin lagundu", "en": "Pair it with drafts, version history and an oral explanation"}
+    },
+    {
+      "fecha": "2026-11-09",
+      "id": "fable-mythos-5-2",
+      "golpe": {"es": "Claude 5.2", "ca": "Claude 5.2", "gl": "Claude 5.2", "eu": "Claude 5.2", "en": "Claude 5.2"},
+      "titular": {"es": "Anthropic lanza Fable 5.2 y Mythos 5.2", "ca": "Anthropic llança Fable 5.2 i Mythos 5.2", "gl": "Anthropic lanza Fable 5.2 e Mythos 5.2", "eu": "Anthropicek Fable 5.2 eta Mythos 5.2 aurkeztu ditu", "en": "Anthropic launches Fable 5.2 and Mythos 5.2"},
+      "dato": {"es": "Mythos 5.2, solo para organizaciones verificadas; cifras de la propia empresa", "ca": "Mythos 5.2, només per a organitzacions verificades; xifres de l'empresa", "gl": "Mythos 5.2, só para organizacións verificadas; cifras da propia empresa", "eu": "Mythos 5.2, erakunde egiaztatuentzat soilik; zifrak enpresarenak dira", "en": "Mythos 5.2 only for verified organisations; figures are the firm's own"}
+    },
+    {
+      "fecha": "2026-11-10",
+      "id": "edugems-eduprompts",
+      "golpe": {"es": "EduPrompts", "ca": "EduPrompts", "gl": "EduPrompts", "eu": "EduPrompts", "en": "EduPrompts"},
+      "titular": {"es": "EduGems pasa a llamarse EduPrompts", "ca": "EduGems passa a dir-se EduPrompts", "gl": "EduGems pasa a chamarse EduPrompts", "eu": "EduGems izena aldatu du: EduPrompts", "en": "EduGems is renamed EduPrompts"},
+      "dato": {"es": "Google sustituye los Gems por Skills; el sitio ofrece 174 prompts", "ca": "Google substitueix els Gems per Skills; el lloc ofereix 174 prompts", "gl": "Google substitúe os Gems por Skills; o sitio ofrece 174 prompts", "eu": "Googlek Gems Skills-ekin ordezkatzen ditu; 174 prompt ditu webguneak", "en": "Google is replacing Gems with Skills; the site offers 174 prompts"}
+    },
+    {
+      "fecha": "2026-11-11",
+      "id": "svg-celula-tres-modelos",
+      "golpe": {"es": "Ciencia en SVG", "ca": "Ciència en SVG", "gl": "Ciencia en SVG", "eu": "Zientzia SVGn", "en": "Science in SVG"},
+      "titular": {"es": "Tres modelos dibujan una célula animal en SVG", "ca": "Tres models dibuixen una cèl·lula animal en SVG", "gl": "Tres modelos debuxan unha célula animal en SVG", "eu": "Hiru ereduk animalia-zelula marrazten dute SVGn", "en": "Three models draw an animal cell in SVG"},
+      "dato": {"es": "Ninguno cometió errores de contenido, según quien hizo la prueba", "ca": "Cap va cometre errors de contingut, segons qui va fer la prova", "gl": "Ningún cometeu erros de contido, segundo quen fixo a proba", "eu": "Batek ere ez zuen eduki-akatsik egin, probatu duenaren arabera", "en": "None made content errors, according to the person who tested them"}
+    },
+    {
+      "fecha": "2026-11-12",
+      "id": "microsoft-classroom",
+      "golpe": {"es": "Microsoft Classroom", "ca": "Microsoft Classroom", "gl": "Microsoft Classroom", "eu": "Microsoft Classroom", "en": "Microsoft Classroom"},
+      "titular": {"es": "Microsoft presenta Classroom para el trabajo de clase", "ca": "Microsoft presenta Classroom per al treball de classe", "gl": "Microsoft presenta Classroom para o traballo de aula", "eu": "Microsoftek Classroom aurkeztu du, ikasgelarako", "en": "Microsoft unveils Classroom for schoolwork"},
+      "dato": {"es": "Reúne tareas, notas e IA; llegará en 2027 sin coste en ciertos planes", "ca": "Reuneix tasques, notes i IA; arribarà el 2027 sense cost en alguns plans", "gl": "Reúne tarefas, notas e IA; chegará en 2027 sen custo en certos plans", "eu": "Zereginak, notak eta AA biltzen ditu; 2027an iritsiko da, plan batzuetan doan", "en": "Brings tasks, grades and AI together; due in 2027 at no extra cost on some plans"}
+    },
+    {
+      "fecha": "2026-11-13",
+      "id": "primer-wharton",
+      "golpe": {"es": "Primer", "ca": "Primer", "gl": "Primer", "eu": "Primer", "en": "Primer"},
+      "titular": {"es": "Wharton publica Primer, simulaciones por conversación", "ca": "Wharton publica Primer, simulacions per conversa", "gl": "Wharton publica Primer, simulacións por conversa", "eu": "Whartonek Primer argitaratu du: elkarrizketatik simulaziora", "en": "Wharton releases Primer: simulations from a chat"},
+      "dato": {"es": "Código abierto y experimental: no se ha evaluado en aulas", "ca": "Codi obert i experimental: no s'ha avaluat a les aules", "gl": "Código aberto e experimental: non se avaliou en aulas", "eu": "Kode irekia eta esperimentala: ez da ikasgeletan ebaluatu", "en": "Open source and experimental: not yet evaluated in classrooms"}
+    },
+    {
+      "fecha": "2026-11-14",
+      "id": "revolucion-industrial-blender-codex",
+      "golpe": {"es": "Blender con Codex", "ca": "Blender amb Codex", "gl": "Blender con Codex", "eu": "Blender eta Codex", "en": "Blender with Codex"},
+      "titular": {"es": "Codex modela en Blender la máquina de vapor", "ca": "Codex modela en Blender la màquina de vapor", "gl": "Codex modela en Blender a máquina de vapor", "eu": "Codexek Blenderren lurrun-makina modelatzen du", "en": "Codex models a steam engine in Blender"},
+      "dato": {"es": "Un visor 3D que se gira con el ratón, para 4.º de ESO", "ca": "Un visor 3D que es gira amb el ratolí, per a 4t d'ESO", "gl": "Un visor 3D que xira co rato, para 4.º da ESO", "eu": "Sagua mugituz biratzen den 3D bisorea, DBHko 4. mailarako", "en": "A 3D viewer you turn with the mouse, for 4th-year ESO"}
+    }
+  ],
+  "reportaje": {
+    "golpe": {"es": "Material con IA", "ca": "Material amb IA", "gl": "Material con IA", "eu": "AAko materiala", "en": "AI-made materials"},
+    "titular": {"es": "Los agentes ya hacen material de clase", "ca": "Els agents ja fan material de classe", "gl": "Os axentes xa fan material de aula", "eu": "Agenteek ikasgela-materiala egiten dute jada", "en": "AI agents now make classroom materials"},
+    "dato": {"es": "Pedir el dibujo como código y que lo revise quien domina la materia", "ca": "Demanar el dibuix com a codi i que el revisi qui domina la matèria", "gl": "Pedir o debuxo como código e que o revise quen domina a materia", "eu": "Marrazkia kode gisa eskatu eta gaia menderatzen duenak berrikusi", "en": "Ask for the drawing as code and have an expert in the subject check it"}
+  },
+  "descripcion": {
+    "es": "La semana en vídeo: detectores de IA, los nuevos modelos de Anthropic, Microsoft Classroom, Primer y un modelo 3D hecho con Codex, más el reportaje sobre material de clase creado por agentes.",
+    "ca": "La setmana en vídeo: detectors d'IA, els nous models d'Anthropic, Microsoft Classroom, Primer i un model 3D fet amb Codex, més el reportatge sobre material de classe creat per agents.",
+    "gl": "A semana en vídeo: detectores de IA, os novos modelos de Anthropic, Microsoft Classroom, Primer e un modelo 3D feito con Codex, máis a reportaxe sobre material de aula creado por axentes.",
+    "eu": "Astea bideoan: AA detektagailuak, Anthropicen eredu berriak, Microsoft Classroom, Primer eta Codexekin egindako 3D eredu bat, eta agenteek sortutako ikasgela-materialari buruzko erreportajea.",
+    "en": "The week in video: AI detectors, Anthropic's new models, Microsoft Classroom, Primer and a 3D model made with Codex, plus the feature on classroom materials created by AI agents."
+  },
+  "redes": "El dominical del Diario de IA Educativa: detectores de IA, los modelos Fable 5.2 y Mythos 5.2, Microsoft Classroom y Primer; y el reportaje sobre el material de clase que hacen los agentes.",
+  "instagram": "La semana en la educación con inteligencia artificial ha tenido de todo: un porcentaje de detector no basta para acusar de copiar, Anthropic ha presentado dos nuevos modelos, Microsoft ha anunciado Classroom y Wharton ha publicado Primer, un sistema abierto para crear simulaciones. El reportaje del domingo trata del material de clase que ya elaboran los agentes de IA, con láminas, vídeos y modelos 3D, y de por qué sigue haciendo falta que una persona experta lo revise."
+}
