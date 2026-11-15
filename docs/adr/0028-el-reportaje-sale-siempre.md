@@ -50,7 +50,8 @@ gustaría que pasados 6 meses saliese un artículo ya caduco». No se actualizab
   pieza. Juanjo vio el nuevo «algo caótico y de escaso interés»: juntaba cinco asuntos de la semana. Se cambió
   a mano por el de reserva antes de publicar, y se decidió (Juanjo, «aplica los dos cambios»): el encargo del
   reportaje pide una sola idea sostenida de principio a fin, dicha en el titular; el juez la valora dentro del
-  interés y aplica su orden de forma estricta. Con estas reglas, ese domingo habría salido el de reserva.
+  interés y aplica su orden de forma estricta. Queda por ver cómo aplica el juez la regla de la tesis repetida:
+  la reserva de ese domingo desarrollaba a fondo la tesis de una pieza breve del 8-11.
 
 ## Alternativas descartadas
 
