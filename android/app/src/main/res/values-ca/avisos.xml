@@ -5,8 +5,8 @@
   <string name="avisos_canal_desc">Un avís cada matí, quan surt el número.</string>
   <string name="avisos_titulo">Ja és aquí el número %1$d</string>
   <string name="avisos_dialogo">Avisos del número</string>
-  <string name="avisos_texto">L\'app et pot avisar cada matí quan surt el número. Ho mira cap a les 7:00, hora peninsular, i, si encara no hi és, cada 15 minuts fins a les 9:30; Android ho pot endarrerir uns minuts per estalviar bateria. Per fer-ho, el mòbil només consulta el web del diari: no envia res a ningú.</string>
-  <string name="avisos_texto_activos">Els avisos estan activats: cada matí, quan surt el número, arriba una notificació. Ho mira cap a les 7:00, hora peninsular, i, si encara no hi és, cada 15 minuts fins a les 9:30.</string>
+  <string name="avisos_texto">L\'app et pot avisar cada matí, a les 7, quan surt el número. No s\'envien dades: el mòbil només mira al web del diari si ja s\'ha publicat.</string>
+  <string name="avisos_texto_activos">Els avisos estan activats: cada matí, a les 7, arriba una notificació amb el número del dia.</string>
   <string name="avisos_activar">Activa</string>
   <string name="avisos_desactivar">Desactiva</string>
   <string name="avisos_ahora_no">Ara no</string>
