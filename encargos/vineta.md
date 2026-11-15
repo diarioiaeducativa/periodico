@@ -61,8 +61,9 @@ Cada guion es un JSON:
   encoger (encogerse de hombros), sostener (lleva el objeto de mano), cruzar (brazos
   cruzados: escepticismo, paciencia que se acaba), cabeza (las manos a la cabeza: «¡madre
   mía!», el chasco) o jarras (manos en la cintura: reñir, exigir, plantarse).
-- `objeto`: pizarra, portatil o reloj (al fondo, en el centro), examenes o papeles
-  (un montón en el suelo, en el centro); libro, movil, notificaciones (el móvil que no
+- `objeto`: pizarra (de caballete; en el escenario aula no se dibuja, porque ya hay una en la
+  pared), portatil o reloj (al fondo, en el centro), examenes o papeles (un montón en el
+  suelo, en el centro); libro, movil, notificaciones (el móvil que no
   para), folio o taza (en la mano de quien tenga la postura «sostener»).
 - `escenario` (por viñeta): aula (pizarra y pupitres), sala_profes (corcho con notas y
   cafetera), fotocopiadora, claustro (la mesa larga tapa las piernas), casa_noche

@@ -76,5 +76,6 @@
 | [0072](0072-flechas-en-el-menu-del-movil.md) | Flechas en el menú del móvil |
 | [0073](0073-lectura-en-voz-alta-con-la-voz-del-dispositivo.md) | Lectura en voz alta con la voz del dispositivo |
 | [0074](0074-variedad-de-posturas-y-tres-gestos-nuevos.md) | Variedad de posturas en la viñeta y tres gestos nuevos |
+| [0075](0075-papeles-libro-y-pizarra-redibujados.md) | Papeles, libro y pizarra de la viñeta, redibujados |
 
 Plantilla: [0000-plantilla.md](0000-plantilla.md). Para crear uno: `nuevo-adr "Título"`.

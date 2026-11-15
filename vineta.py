@@ -184,14 +184,19 @@ CABEZA = {q: BAJA + SUELO - (SUELO - y) * ESCALA for q, y in {"tiza": SUELO - 16
 # ---------- Objetos ----------
 
 def objeto(nombre, x, y):
-    if nombre == "pizarra":
-        return (f'<g transform="translate({x - 60} 168)"><rect class="t fa" x="0" y="0" width="120" height="78" rx="3"/>'
-                f'<path class="t fino" d="M14 22 L70 22 M14 38 L92 38 M14 54 L56 54"/><path class="t" d="M30 78 L22 104 M90 78 L98 104"/></g>')
+    if nombre == "pizarra":   # verde y de caballete, con las patas en el suelo y sin tocar a nadie (15-11-2026)
+        return (f'<g transform="translate({x} 0)"><path class="t" d="M-14 152 L-46 {SUELO} M14 152 L46 {SUELO}"/>'
+                f'<rect class="pizarra-verde" x="-48" y="170" width="96" height="66" rx="3" style="stroke:var(--tinta);stroke-width:2.5"/>'
+                f'<path class="tiza-linea" d="M-36 188 L10 188 M-36 202 L24 202 M-36 216 L-4 216"/>'
+                f'<path class="t" d="M-52 238 L52 238"/></g>')
     if nombre == "portatil":
         return (f'<g transform="translate({x - 34} {SUELO - 48})"><rect class="t fa" x="6" y="0" width="56" height="38" rx="3"/>'
                 f'<path class="t" d="M0 46 L68 46 L62 38 L6 38 Z"/></g>')
     if nombre == "libro":
-        return f'<g transform="translate({x - 14} {y - 14})"><path class="t fa" d="M0 4 L14 0 L28 4 L28 26 L14 22 L0 26 Z"/><path class="t" d="M14 0 L14 22"/></g>'
+        # Abierto, con las páginas curvadas y el texto, y más grande: el de antes parecía un mapa plegado (15-11-2026)
+        return (f'<g transform="translate({x - 22} {y - 18})"><path class="t fa" d="M22 6 Q11 0 0 4 L0 32 Q11 28 22 34 Q33 28 44 32 L44 4 Q33 0 22 6 Z"/>'
+                f'<path class="t" d="M22 6 L22 34"/><path class="t fino" d="M5 11 Q11 9 17 12 M5 17 Q11 15 17 18 M5 23 Q11 21 17 24 '
+                f'M27 12 Q33 9 39 11 M27 18 Q33 15 39 17 M27 24 Q33 21 39 23"/></g>')
     if nombre == "movil":
         return f'<g transform="translate({x - 9} {y - 16})"><rect class="t fa" x="0" y="0" width="18" height="30" rx="3"/><path class="t" d="M6 25 L12 25"/></g>'
     if nombre == "folio":
@@ -204,10 +209,11 @@ def objeto(nombre, x, y):
     if nombre == "examenes":   # el montón de exámenes por corregir, en el suelo
         hojas = "".join(f'<rect class="t tz" x="{-26 + i}" y="{-8 * i - 8}" width="52" height="8" rx="1"/>' for i in range(5))
         return f'<g transform="translate({x} {SUELO})">{hojas}<path class="r" d="M-8 -50 L-3 -45 L8 -56"/></g>'
-    if nombre == "papeles":   # papeles revueltos en el suelo
-        return (f'<g transform="translate({x} {SUELO})"><path class="t tz" d="M-30 0 L-26 -14 L2 -10 L-2 0 Z"/>'
-                f'<path class="t tz" d="M-6 0 L-4 -20 L22 -18 L24 0 Z"/><path class="t tz" d="M-18 -18 L2 -30 L14 -14 L-6 -4 Z"/>'
-                f'<path class="cara fino" d="M-12 -18 L2 -26 M-8 -14 L6 -22"/></g>')
+    if nombre == "papeles":   # un montón de papeles revueltos en el suelo, con texto (15-11-2026)
+        hojas = "".join(f'<g transform="translate({dx} {dy}) rotate({a})"><rect class="t tz" x="-12" y="-15" width="24" height="30" rx="1"/>'
+                        f'<path class="cara fino" d="M-7 -8 L7 -8 M-7 -3 L7 -3 M-7 2 L7 2 M-7 7 L2 7"/></g>'
+                        for dx, dy, a in ((-30, -16, -14), (28, -16, 12), (-2, -16, 3), (-16, -40, -24), (16, -42, 20), (0, -58, -6)))
+        return f'<g transform="translate({x} {SUELO})">{hojas}</g>'
     if nombre == "notificaciones":   # el móvil que no para
         return (f'<g transform="translate({x - 9} {y - 16})"><rect class="t fa" x="0" y="0" width="18" height="30" rx="3"/>'
                 f'<circle class="fr" cx="17" cy="1" r="6"/><path class="r" d="M24 -8 L29 -12 M26 -1 L32 -1 M24 6 L29 10"/></g>')
@@ -419,7 +425,7 @@ def panel(v, n, textos=None):
     partes = [f'<path class="t fino" d="M14 {SUELO} L{ANCHO - 14} {SUELO}"/>']
     partes.append(escenario(v.get("escenario")))
     obj = v.get("objeto")
-    if obj in DE_FONDO:
+    if obj in DE_FONDO and not (obj == "pizarra" and v.get("escenario") == "aula"):   # en el aula ya hay una
         partes.append(objeto(obj, ANCHO / 2, 0))
     pos = {}
     manos = {}
