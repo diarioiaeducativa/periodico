@@ -1336,26 +1336,66 @@ SCRIPT_LECTOR = """<script>
     });
     return todos.filter(function(el){return !todos.some(function(o){return o!==el&&o.contains(el);});});
   }
+  // El texto de cada bloque, con el sitio de cada letra en la página: así se sabe dónde está lo que se lee
+  function mapa(el){
+    var w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT,{acceptNode:function(n){
+      return n.parentElement.closest('[hidden], .solo-papel, [aria-hidden="true"], svg')?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT;}});
+    var txt='', pos=[], n, esp=true;
+    while((n=w.nextNode())){
+      for(var k=0;k<n.data.length;k++){
+        var c=n.data[k];
+        if(/\\s/.test(c)){ if(esp) continue; c=' '; esp=true; } else esp=false;
+        txt+=c; pos.push([n,k]);
+      }
+    }
+    while(txt.slice(-1)===' '){ txt=txt.slice(0,-1); pos.pop(); }
+    return {txt:txt,pos:pos};
+  }
   // Cada bloque, en frases agrupadas hasta unos 250 caracteres: la pausa vuelve a la frase, no al párrafo
   function trocea(){
     var t=[];
     bloques().forEach(function(el){
-      var texto=el.innerText.replace(/\\s+/g,' ').trim(), frases=texto.match(/[^.!?…]+(?:[.!?…]+[»”")\\]]*|$)\\s*/g)||[texto], g='';
-      frases.forEach(function(f){ if(g&&(g+f).length>250){t.push({el:el,txt:g.trim()}); g='';} g+=f; });
-      if(g.trim()) t.push({el:el,txt:g.trim()});
+      var m=mapa(el), re=/[^.!?…]+(?:[.!?…]+[»”")\\]]*|$)\\s*/g, f, a=0, g0=-1, g1=-1;
+      function cierra(){ if(g0<0) return; while(g1>g0&&m.txt[g1-1]===' ') g1--; if(g1>g0) t.push({el:el,m:m,a:g0,b:g1,txt:m.txt.slice(g0,g1)}); g0=-1; }
+      while((f=re.exec(m.txt))&&f[0].length){
+        if(g0>=0&&f.index+f[0].length-g0>250) cierra();
+        if(g0<0) g0=f.index;
+        g1=f.index+f[0].length;
+      }
+      cierra();
     });
     return t;
   }
-  function marca(el){
-    if(marcado===el) return;
-    var seguia=!marcado||visible(marcado);
-    if(marcado) marcado.classList.remove('leyendo');
-    marcado=el;
-    if(!el) return;
-    el.classList.add('leyendo');
-    if(seguia&&!visible(el)) el.scrollIntoView({block:'center',behavior:'smooth'});
+  // Lo que se lee se queda siempre a la vista, fuera de la cabecera y de la barra de abajo
+  function banda(){
+    var abajo=innerHeight-(barra.hidden?16:innerHeight-barra.getBoundingClientRect().top+16);
+    return [56, Math.max(abajo,200)];
   }
-  function visible(el){var r=el.getBoundingClientRect(); return r.bottom>0&&r.top<innerHeight;}
+  function rango(m,a,b){
+    var r=document.createRange(), e=m.pos[b-1];
+    r.setStart(m.pos[a][0],m.pos[a][1]); r.setEnd(e[0],e[1]+1); return r;
+  }
+  function lleva(y){ scrollTo({top:Math.max(0,scrollY+y),behavior:'smooth'}); }
+  function sigue(m,a,b){
+    if(a>=b) return;
+    var rs=rango(m,a,b).getClientRects(); if(!rs.length) return;
+    var f=rs[0], l=rs[rs.length-1], bd=banda();
+    function dentro(r){ return r.top>=bd[0]&&r.bottom<=bd[1]; }
+    if(dentro(f)&&dentro(l)) return;
+    lleva(f.top-(bd[0]+(bd[1]-bd[0])*0.2));   // la línea que se lee, en la parte alta de lo que se ve
+  }
+  function marca(tr){
+    if(!tr){ if(marcado) marcado.classList.remove('leyendo'); marcado=null; return; }
+    var el=tr.el;
+    if(marcado!==el){
+      if(marcado) marcado.classList.remove('leyendo');
+      marcado=el;
+      el.classList.add('leyendo');
+      var r=el.getBoundingClientRect(), bd=banda();
+      if(r.height<=bd[1]-bd[0]){ lleva(r.top+r.height/2-(bd[0]+bd[1])/2); return; }   // si cabe, el párrafo en el centro
+    }
+    sigue(tr.m,tr.a,tr.b);
+  }
   function pinta(){
     [b,bp].forEach(function(x){
       x.classList.toggle('sonando',estado==='leyendo'); x.classList.toggle('en-pausa',estado==='pausa');
@@ -1370,7 +1410,10 @@ SCRIPT_LECTOR = """<script>
     u.voice=voz; u.lang=voz.lang;
     u.onend=function(){ if(mio!==turno||estado!=='leyendo') return; i++; lee(); };
     u.onerror=function(ev){ if(mio!==turno||estado!=='leyendo') return; if(ev.error==='interrupted'||ev.error==='canceled') return; i++; lee(); };
-    marca(tr.el);
+    // Palabra a palabra, donde el navegador lo dice: una frase puede acabar en la columna siguiente
+    u.onboundary=function(ev){ if(mio!==turno||(ev.name&&ev.name!=='word')) return;
+      var x=tr.a+ev.charIndex; sigue(tr.m,x,Math.min(tr.b,x+Math.max(1,ev.charLength||1))); };
+    marca(tr);
     ss.speak(u);
   }
   // Pausar es callar y recordar la frase: pause() y resume() fallan en Chrome de Android
