@@ -85,7 +85,7 @@ IDIOMAS = {
         # La semana y el mes (ADR 0034)
         "semana": "La semana", "semana_txt": "Todo lo que publicó el diario de lo que se habló en los grupos esa semana, por secciones, con el pódcast y el vídeo de cada grupo. Elige un grupo para ver solo lo suyo.", "semana_actual": "Resumen semanal", "grupo_filtro": "Ver lo de un grupo", "grupo_todos": "Todos", "sin_grupo": "Este grupo no tiene artículos esta semana.", "nb_h": "El pódcast y el vídeo de la semana", "nb_txt": "Cada lunes, NotebookLM, de Google, prepara un pódcast y un vídeo de cada grupo con su conversación completa de la semana, también lo que no ha salido en el diario. Un agente de IA los contrasta con la conversación antes de publicarlos.", "nb_es": "", "nb_pendiente": "El pódcast y el vídeo de cada grupo se añaden aquí el lunes por la mañana.", "nb_video": "Vídeo", "nb_ver": "Reproducir el vídeo de {g}", "nb_youtube": "Verlo en YouTube", "nb_podcast": "Pódcast", "nb_archive": "Escucharlo en Internet Archive", "cs_h": "Lo más importante de la semana", "cs_h_g": "Lo más importante de la semana en {g}", "cs_nota": "Lo escribe un agente de IA con lo que publicó el diario esa semana, y otro lo contrasta con cada artículo antes de publicarlo.", "numeros_semana": "Los números de la semana", "sem_ant": "Semana anterior", "sem_sig": "Semana siguiente", "todo_mes": "Todo el mes", "mes": "El mes", "mes_txt": "Las semanas del mes, con el artículo que abrió cada número.", "mes_ant": "Mes anterior", "mes_sig": "Mes siguiente", "por_meses": "Por meses", "anyo_ant": "Año anterior", "anyo_sig": "Año siguiente", "buscar_en": "Busca en {s}", "ver_semana": "La semana entera, por secciones", "con_nb": "Con el pódcast y el vídeo de cada grupo", 
         "todos_numeros": "Hemeroteca: todos los números",
-        "saltar": "Saltar al contenido", "compartir": "Compartir", "copiado": "Enlace copiado", "una_columna": "Una columna", "columnas": "Columnas", "una_columna_t": "Leer las noticias en una sola columna", "columnas_t": "Leer las noticias en columnas, como en un periódico", "compartir_breve": "Compartir este breve", "mas_en": "Más en", "mas_diario": "Más en el diario",
+        "saltar": "Saltar al contenido", "compartir": "Compartir", "copiado": "Enlace copiado", "una_columna": "Una columna", "columnas": "Columnas", "una_columna_t": "Leer las noticias en una sola columna", "escuchar": "Escuchar", "escuchar_t": "Leer el artículo en voz alta con una voz de tu dispositivo", "pausa": "Pausa", "seguir": "Seguir", "parar": "Parar", "lector": "Lectura en voz alta", "columnas_t": "Leer las noticias en columnas, como en un periódico", "compartir_breve": "Compartir este breve", "mas_en": "Más en", "mas_diario": "Más en el diario",
         "no_existe": "Esta página no existe",
         "sin_conexion": "Sin conexión",
         "sin_conexion_txt": "Esta página no está guardada en este dispositivo. Sin conexión se pueden leer las páginas que ya se han abierto y el último número que se cargó en la portada.",
@@ -208,7 +208,7 @@ IDIOMAS = {
         # La semana y el mes (ADR 0034)
         "semana": "La setmana", "semana_txt": "Tot el que va publicar el diari del que es va parlar als grups aquella setmana, per seccions, amb el pòdcast i el vídeo de cada grup. Tria un grup per veure només el seu.", "semana_actual": "Resum setmanal", "grupo_filtro": "Veure el d'un grup", "grupo_todos": "Tots", "sin_grupo": "Aquest grup no té articles aquesta setmana.", "nb_h": "El pòdcast i el vídeo de la setmana", "nb_txt": "Cada dilluns, NotebookLM, de Google, prepara un pòdcast i un vídeo de cada grup amb tota la seva conversa de la setmana, també el que no ha sortit al diari. Un agent d'IA els contrasta amb la conversa abans de publicar-los.", "nb_es": "Són en castellà.", "nb_pendiente": "El pòdcast i el vídeo de cada grup s'afegeixen aquí dilluns al matí.", "nb_video": "Vídeo", "nb_ver": "Reproduir el vídeo de {g}", "nb_youtube": "Mira'l a YouTube", "nb_podcast": "Pòdcast", "nb_archive": "Escolta'l a Internet Archive", "cs_h": "El més important de la setmana", "cs_h_g": "El més important de la setmana a {g}", "cs_nota": "L'escriu un agent d'IA amb el que va publicar el diari aquella setmana, i un altre el contrasta amb cada article abans de publicar-lo.", "numeros_semana": "Els números de la setmana", "sem_ant": "Setmana anterior", "sem_sig": "Setmana següent", "todo_mes": "Tot el mes", "mes": "El mes", "mes_txt": "Les setmanes del mes, amb l'article que va obrir cada número.", "mes_ant": "Mes anterior", "mes_sig": "Mes següent", "por_meses": "Per mesos", "anyo_ant": "Any anterior", "anyo_sig": "Any següent", "buscar_en": "Cerca a {s}", "ver_semana": "Tota la setmana, per seccions", "con_nb": "Amb el pòdcast i el vídeo de cada grup", 
         "todos_numeros": "Hemeroteca: tots els números",
-        "saltar": "Salta al contingut", "compartir": "Comparteix", "copiado": "Enllaç copiat", "una_columna": "Una columna", "columnas": "Columnes", "una_columna_t": "Llegir les notícies en una sola columna", "columnas_t": "Llegir les notícies en columnes, com en un diari", "compartir_breve": "Comparteix aquest breu", "mas_en": "Més a", "mas_diario": "Més al diari",
+        "saltar": "Salta al contingut", "compartir": "Comparteix", "copiado": "Enllaç copiat", "una_columna": "Una columna", "columnas": "Columnes", "una_columna_t": "Llegir les notícies en una sola columna", "escuchar": "Escolta", "escuchar_t": "Llegir l'article en veu alta amb una veu del teu dispositiu", "pausa": "Pausa", "seguir": "Continua", "parar": "Atura", "lector": "Lectura en veu alta", "columnas_t": "Llegir les notícies en columnes, com en un diari", "compartir_breve": "Comparteix aquest breu", "mas_en": "Més a", "mas_diario": "Més al diari",
         "no_existe": "Aquesta pàgina no existeix",
         "sin_conexion": "Sense connexió",
         "sin_conexion_txt": "Aquesta pàgina no està desada en aquest dispositiu. Sense connexió es poden llegir les pàgines que ja s'han obert i l'últim número que es va carregar a la portada.",
@@ -1280,6 +1280,111 @@ def boton_columnas():
             f'<span class="a-columnas" title="{e(L["columnas_t"])}">{COLUMNAS}{e(L["columnas"])}</span></button>')
 
 
+def _ico(formas):
+    return f'<svg class="ico" viewBox="0 0 24 24" aria-hidden="true">{formas}</svg>'
+
+
+ALTAVOZ = _ico('<path d="M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z"/>'
+               '<path d="M16 9a5 5 0 0 1 0 6"/><path d="M19.364 18.364a9 9 0 0 0 0-12.728"/>')   # volume-2
+PAUSA = _ico('<rect x="14" y="3" width="5" height="18" rx="1"/><rect x="5" y="3" width="5" height="18" rx="1"/>')   # pause
+SEGUIR = _ico('<path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"/>')   # play
+PARAR = _ico('<rect width="18" height="18" x="3" y="3" rx="2"/>')   # square
+
+
+def boton_escuchar():
+    """Lectura en voz alta: la hace la voz del propio dispositivo (Web Speech API), sin audios guardados ni
+    servidor. El botón nace oculto y SCRIPT_LECTOR lo enseña solo si hay una voz del idioma que funcione dentro
+    del dispositivo. Mientras lee, una barra fija abajo deja pausar y parar sin volver arriba."""
+    return (f'<button type="button" class="escuchar-boton" title="{e(L["escuchar_t"])}" hidden data-pagefind-ignore '
+            f'data-escuchar="{e(L["escuchar"])}" data-pausa="{e(L["pausa"])}" data-seguir="{e(L["seguir"])}">'
+            f'<span class="e-escuchar">{ALTAVOZ}</span><span class="e-pausa">{PAUSA}</span><span class="e-seguir">{SEGUIR}</span>'
+            f'<span class="e-rotulo">{e(L["escuchar"])}</span></button>'
+            f'<span class="lector-barra" role="group" aria-label="{e(L["lector"])}" hidden data-pagefind-ignore>'
+            f'<button type="button" class="lector-pausa" data-pausa="{e(L["pausa"])}" data-seguir="{e(L["seguir"])}">'
+            f'<span class="e-pausa">{PAUSA}</span><span class="e-seguir">{SEGUIR}</span><span class="e-rotulo">{e(L["pausa"])}</span></button>'
+            f'<button type="button" class="lector-parar">{PARAR}<span>{e(L["parar"])}</span></button></span>')
+
+
+SCRIPT_LECTOR = """<script>
+(function(){
+  // Lectura en voz alta con la voz del dispositivo. Solo voces locales (localService): las de red, como las
+  // «Google …» de Chrome o las «Online» de Edge, mandarían el texto y la conexión de quien escucha a un tercero.
+  // Firefox no tiene voces de red, pero marca como no locales las de speech-dispatcher en Linux: allí valen todas.
+  var b=document.querySelector('.escuchar-boton'), barra=document.querySelector('.lector-barra');
+  if(!b||!barra||!('speechSynthesis' in window)||!window.SpeechSynthesisUtterance) return;
+  var ss=window.speechSynthesis, idioma=(document.documentElement.lang||'es').toLowerCase().split('-')[0];
+  var firefox=/Firefox\\//.test(navigator.userAgent)&&!/Seamonkey/i.test(navigator.userAgent);
+  var REGION={es:'es-es',ca:'ca-es',gl:'gl-es',eu:'eu-es',en:'en-gb'};
+  var bp=barra.querySelector('.lector-pausa'), bs=barra.querySelector('.lector-parar');
+  var voz=null, trozos=null, i=0, estado='parado', turno=0, marcado=null;
+  function norma(v){return (v.lang||'').toLowerCase().replace('_','-');}
+  function elige(){
+    var vs=ss.getVoices().filter(function(v){return (v.localService||firefox)&&norma(v).split('-')[0]===idioma;});
+    var r=REGION[idioma];
+    return vs.filter(function(v){return norma(v)===r&&v.default;})[0]||vs.filter(function(v){return norma(v)===r;})[0]||
+           vs.filter(function(v){return v.default;})[0]||vs[0]||null;
+  }
+  function prepara(){ voz=elige(); b.hidden=!voz; if(!voz&&estado!=='parado') parar(); }
+  prepara();
+  if(ss.addEventListener) ss.addEventListener('voiceschanged',prepara); else ss.onvoiceschanged=prepara;
+  try{ss.cancel();}catch(_){}
+  // Lo que se lee: titular, entradilla y el texto, con sus ladillos y listas; ni dibujos, ni tablas, ni lo de papel
+  function bloques(){
+    var art=b.closest('article'), sel='.titular, .entradilla, .cuerpo p, .cuerpo h2, .cuerpo h3, .cuerpo li, .cuerpo blockquote';
+    var todos=[].slice.call(art.querySelectorAll(sel)).filter(function(el){
+      return !el.closest('.solo-papel, figure, .ilu, [data-pagefind-ignore], [hidden]')&&el.getClientRects().length&&el.innerText.trim();
+    });
+    return todos.filter(function(el){return !todos.some(function(o){return o!==el&&o.contains(el);});});
+  }
+  // Cada bloque, en frases agrupadas hasta unos 250 caracteres: la pausa vuelve a la frase, no al párrafo
+  function trocea(){
+    var t=[];
+    bloques().forEach(function(el){
+      var texto=el.innerText.replace(/\\s+/g,' ').trim(), frases=texto.match(/[^.!?…]+(?:[.!?…]+[»”")\\]]*|$)\\s*/g)||[texto], g='';
+      frases.forEach(function(f){ if(g&&(g+f).length>250){t.push({el:el,txt:g.trim()}); g='';} g+=f; });
+      if(g.trim()) t.push({el:el,txt:g.trim()});
+    });
+    return t;
+  }
+  function marca(el){
+    if(marcado===el) return;
+    var seguia=!marcado||visible(marcado);
+    if(marcado) marcado.classList.remove('leyendo');
+    marcado=el;
+    if(!el) return;
+    el.classList.add('leyendo');
+    if(seguia&&!visible(el)) el.scrollIntoView({block:'center',behavior:'smooth'});
+  }
+  function visible(el){var r=el.getBoundingClientRect(); return r.bottom>0&&r.top<innerHeight;}
+  function pinta(){
+    [b,bp].forEach(function(x){
+      x.classList.toggle('sonando',estado==='leyendo'); x.classList.toggle('en-pausa',estado==='pausa');
+      x.querySelector('.e-rotulo').textContent= estado==='leyendo'?x.dataset.pausa : estado==='pausa'?x.dataset.seguir : (x.dataset.escuchar||x.dataset.pausa);
+    });
+    barra.hidden=estado==='parado';
+    document.documentElement.classList.toggle('con-lector',estado!=='parado');
+  }
+  function lee(){
+    if(i>=trozos.length){parar();return;}
+    var mio=++turno, tr=trozos[i], u=new SpeechSynthesisUtterance(tr.txt);
+    u.voice=voz; u.lang=voz.lang;
+    u.onend=function(){ if(mio!==turno||estado!=='leyendo') return; i++; lee(); };
+    u.onerror=function(ev){ if(mio!==turno||estado!=='leyendo') return; if(ev.error==='interrupted'||ev.error==='canceled') return; i++; lee(); };
+    marca(tr.el);
+    ss.speak(u);
+  }
+  // Pausar es callar y recordar la frase: pause() y resume() fallan en Chrome de Android
+  function empieza(){ if(!voz) return; if(estado==='parado'){trozos=trocea(); i=0;} estado='leyendo'; pinta(); turno++; ss.cancel(); lee(); }
+  function pausa(){ estado='pausa'; turno++; ss.cancel(); pinta(); }
+  function parar(){ estado='parado'; turno++; try{ss.cancel();}catch(_){} marca(null); trozos=null; i=0; pinta(); }
+  function alterna(){ if(estado==='leyendo') pausa(); else empieza(); }
+  b.addEventListener('click',alterna); bp.addEventListener('click',alterna); bs.addEventListener('click',function(){parar(); b.focus();});
+  document.addEventListener('keydown',function(ev){ if(ev.key==='Escape'&&estado!=='parado') parar(); });
+  addEventListener('pagehide',function(){ try{ss.cancel();}catch(_){} });
+})();
+</script>"""
+
+
 def rotulos(p, mostrar_fecha, prof="", sin_seccion=False, boton=""):
     sec = p.get("seccion", "")
     fecha = f' <span class="fecha-pieza" data-pagefind-ignore>{fecha_rotulo(p)}</span>' if mostrar_fecha else ""
@@ -1793,7 +1898,7 @@ def articulo(prof, ruta, d, p, eds):
     elif recs:           # la semana del repositorio: un apartado por recurso, con su captura
         bloques = "".join(bloque_recurso(prof, p["id"], r) for r in recs)
     serie, ya_contados, otras = semana_repositorio(prof, p, eds)
-    rot = rotulos(p, True, prof, boton=boton_columnas())
+    rot = rotulos(p, True, prof, boton=boton_escuchar() + boton_columnas())
     linea, _, ante = rot.partition("\n  ")   # la línea de la sección, fuera de la cabeza; el antetítulo, dentro
     if not ante:   # sin sección: la línea del antetítulo lleva la fecha y el botón
         linea, ante = "", rot
@@ -1826,6 +1931,7 @@ def articulo(prof, ruta, d, p, eds):
 </main>
 {pie(prof, eds, d["fecha"])}
 {SCRIPT_TEMA}
+{SCRIPT_LECTOR}
 </body>
 </html>"""
 
@@ -1966,7 +2072,7 @@ def articulo_reportaje(prof, ruta, d, r, eds):
 <main class="articulo reportaje en-columnas">
   <article class="sec-reportaje"{indexado("reportaje", L["reportajes"], d["fecha"], imagen_buscador(d["fecha"], r))}>
     {qr_papel(ruta)}
-    <p class="seccion"><span><a href="{prof}reportajes.html">{icono("reportaje")} {L["reportaje"]}</a></span> <span class="seccion-dcha">{boton_columnas()} <span class="fecha-pieza">{fecha_corta(publicacion(r["fecha"]))}</span></span></p>
+    <p class="seccion"><span><a href="{prof}reportajes.html">{icono("reportaje")} {L["reportaje"]}</a></span> <span class="seccion-dcha">{boton_escuchar()}{boton_columnas()} <span class="fecha-pieza">{fecha_corta(publicacion(r["fecha"]))}</span></span></p>
     {cab}
     <div class="cuerpo">{"".join(apartados)}{cola_papel(ruta, origen(dict(r, grupo=(r.get("mensaje") or {}).get("grupo"))), comprobado)}</div>
     {f'<p class="correccion">{md(r["correccion"])}</p>' if r.get("correccion") else ""}
@@ -1981,6 +2087,7 @@ def articulo_reportaje(prof, ruta, d, r, eds):
 </main>
 {pie(prof, eds, d["fecha"])}
 {SCRIPT_TEMA}
+{SCRIPT_LECTOR}
 </body>
 </html>"""
 
