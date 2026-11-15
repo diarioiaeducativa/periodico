@@ -1,0 +1,32 @@
+{
+  "fecha": "2099-03-01",
+  "reserva": true,
+  "elegida": {
+    "n": 1,
+    "pieza": null,
+    "idea": "Algorisme presumeix d'haver estalviat a Guix cinc hores preparant materials; les busca i les troba al formulari per justificar que fa servir IA.",
+    "guion": {"vinetas": [
+      {"cartela": "A la sala del professorat, fent balanç de la setmana.",
+       "escenario": "sala_profes",
+       "tiza": {"expresion": "sorprendido", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "orgulloso", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+       "bocadillos": [
+         {"quien": "algoritmo", "texto": "Aquesta setmana t'he estalviat cinc hores de preparar materials.", "tipo": "habla"},
+         {"quien": "tiza", "texto": "Cinc hores? I on són?", "tipo": "habla"}]},
+      {"escenario": "sala_profes",
+       "tiza": {"expresion": "pensativo", "postura": "pensar", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "cargando", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+       "bocadillos": [
+         {"quien": "tiza", "texto": "Perquè jo no les he notades.", "tipo": "habla"},
+         {"quien": "algoritmo", "texto": "Seguint-ne el rastre...", "tipo": "habla"}]},
+      {"escenario": "sala_profes",
+       "tiza": {"expresion": "harto", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "avergonzado", "postura": "encoger", "lugar": "derecha", "mira": "izquierda"},
+       "objeto": "folio",
+       "lleva": "tiza",
+       "bocadillos": [
+         {"quien": "algoritmo", "texto": "Les he trobat: al formulari per justificar que fas servir IA.", "tipo": "habla"}]}
+    ]}
+  },
+  "traduccion": "automàtica amb IA"
+}

@@ -1,0 +1,32 @@
+{
+  "fecha": "2099-03-01",
+  "reserva": true,
+  "elegida": {
+    "n": 1,
+    "pieza": null,
+    "idea": "Algoritmok Klarioni bost ordu aurreztu dizkiola harrotzen da materialak prestatzen; bilatu egiten ditu eta AA erabiltzea justifikatzeko inprimakian aurkitzen ditu.",
+    "guion": {"vinetas": [
+      {"cartela": "Irakasle-gelan, asteko balantzea egiten.",
+       "escenario": "sala_profes",
+       "tiza": {"expresion": "sorprendido", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "orgulloso", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+       "bocadillos": [
+         {"quien": "algoritmo", "texto": "Aste honetan bost ordu aurreztu dizkizut materialak prestatzen.", "tipo": "habla"},
+         {"quien": "tiza", "texto": "Bost ordu? Eta non daude?", "tipo": "habla"}]},
+      {"escenario": "sala_profes",
+       "tiza": {"expresion": "pensativo", "postura": "pensar", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "cargando", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+       "bocadillos": [
+         {"quien": "tiza", "texto": "Nik ez diat ezer nabaritu eta.", "tipo": "habla"},
+         {"quien": "algoritmo", "texto": "Haien arrastoari jarraitzen...", "tipo": "habla"}]},
+      {"escenario": "sala_profes",
+       "tiza": {"expresion": "harto", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "avergonzado", "postura": "encoger", "lugar": "derecha", "mira": "izquierda"},
+       "objeto": "folio",
+       "lleva": "tiza",
+       "bocadillos": [
+         {"quien": "algoritmo", "texto": "Aurkitu ditut: AA erabiltzea justifikatzeko inprimakian.", "tipo": "habla"}]}
+    ]}
+  },
+  "traduccion": "itzulpen automatikoa AArekin"
+}

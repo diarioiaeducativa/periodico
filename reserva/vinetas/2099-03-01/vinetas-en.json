@@ -1,0 +1,43 @@
+{
+  "fecha": "2099-03-01",
+  "reserva": true,
+  "elegida": {
+    "n": 1,
+    "pieza": null,
+    "idea": "Algorithm boasts that it has saved Chalk five hours of preparing materials; it goes looking for them and finds them in the form for justifying the use of AI.",
+    "guion": {
+      "vinetas": [
+        {
+          "cartela": "In the staff room, looking back over the week.",
+          "escenario": "sala_profes",
+          "tiza": {"expresion": "sorprendido", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+          "algoritmo": {"expresion": "orgulloso", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+          "bocadillos": [
+            {"quien": "algoritmo", "texto": "This week I saved you five hours of preparing materials.", "tipo": "habla"},
+            {"quien": "tiza", "texto": "Five hours? So where are they?", "tipo": "habla"}
+          ]
+        },
+        {
+          "escenario": "sala_profes",
+          "tiza": {"expresion": "pensativo", "postura": "pensar", "lugar": "izquierda", "mira": "derecha"},
+          "algoritmo": {"expresion": "cargando", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+          "bocadillos": [
+            {"quien": "tiza", "texto": "Because I haven't noticed them.", "tipo": "habla"},
+            {"quien": "algoritmo", "texto": "Following their trail...", "tipo": "habla"}
+          ]
+        },
+        {
+          "escenario": "sala_profes",
+          "tiza": {"expresion": "harto", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+          "algoritmo": {"expresion": "avergonzado", "postura": "encoger", "lugar": "derecha", "mira": "izquierda"},
+          "objeto": "folio",
+          "lleva": "tiza",
+          "bocadillos": [
+            {"quien": "algoritmo", "texto": "Found them: in the form for justifying that you use AI.", "tipo": "habla"}
+          ]
+        }
+      ]
+    }
+  },
+  "traduccion": "automatic AI translation"
+}

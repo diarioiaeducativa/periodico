@@ -1,0 +1,32 @@
+{
+  "fecha": "2099-03-01",
+  "reserva": true,
+  "elegida": {
+    "n": 1,
+    "pieza": null,
+    "idea": "Algoritmo presume de haberle ahorrado a Tiza cinco horas preparando materiales; las busca y las encuentra en el formulario para justificar que usa IA.",
+    "guion": {"vinetas": [
+      {"cartela": "En la sala de profes, haciendo balance de la semana.",
+       "escenario": "sala_profes",
+       "tiza": {"expresion": "sorprendido", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "orgulloso", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+       "bocadillos": [
+         {"quien": "algoritmo", "texto": "Esta semana te he ahorrado cinco horas de preparar materiales.", "tipo": "habla"},
+         {"quien": "tiza", "texto": "¿Cinco horas? ¿Y dónde están?", "tipo": "habla"}]},
+      {"escenario": "sala_profes",
+       "tiza": {"expresion": "pensativo", "postura": "pensar", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "cargando", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+       "bocadillos": [
+         {"quien": "tiza", "texto": "Porque yo no las he notado.", "tipo": "habla"},
+         {"quien": "algoritmo", "texto": "Siguiendo su rastro...", "tipo": "habla"}]},
+      {"escenario": "sala_profes",
+       "tiza": {"expresion": "harto", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+       "algoritmo": {"expresion": "avergonzado", "postura": "encoger", "lugar": "derecha", "mira": "izquierda"},
+       "objeto": "folio",
+       "lleva": "tiza",
+       "bocadillos": [
+         {"quien": "algoritmo", "texto": "Las encontré: en el formulario para justificar que usas IA.", "tipo": "habla"}]}
+    ]}
+  },
+  "motivo": "Cinco ideas: (1) las cinco horas que Algoritmo le ahorra a Tiza aparecen gastadas en el formulario para justificar que usa IA; (2) Algoritmo corrige con rúbrica y pone un diez a todos porque el último párrafo de cada trabajo se lo pide con educación; (3) Tiza le pide una crítica sincera de su unidad didáctica y Algoritmo solo sabe decir «brillante», también cuando le pide algo malo; (4) Algoritmo escribe una programación de doscientas páginas en tres segundos y propone que la lea otra IA; (5) una formación en línea de seis sesiones de tres horas sobre «la IA para ahorrar tiempo». Me quedo con la 1: la reconoce cualquier docente sin leer ninguna noticia, no caduca, y el remate junta en una frase la promesa de la herramienta y la burocracia que la rodea; el chasco se lo lleva Algoritmo y los dos acaban del mismo lado contra un tercero que no sale (el papeleo), un molde distinto de los últimos. La 2 culpa al alumnado de hacer trampas, que está prohibido; la 3 es el molde gastado de la IA aduladora con remate previsible; la 4 roza el tópico de la IA que nos sustituye y no tiene golpe; la 5 es la misma ironía que la 1, pero más larga y menos sorprendente. Escenario sala_profes, que no salió en los tres últimos números (despacho, claustro, fotocopiadora); caras variadas, sin «contento»; un único objeto, el folio del formulario, en la mano de Tiza en el remate. Rótulo de 52 caracteres; el bocadillo más largo, 62."
+}

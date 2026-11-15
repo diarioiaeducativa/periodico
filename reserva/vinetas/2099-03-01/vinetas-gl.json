@@ -1,0 +1,43 @@
+{
+  "fecha": "2099-03-01",
+  "reserva": true,
+  "elegida": {
+    "n": 1,
+    "pieza": null,
+    "idea": "Algoritmo presume de lle ter aforrado a Xiz cinco horas preparando materiais; búscaas e atópaas no formulario para xustificar que usa IA.",
+    "guion": {
+      "vinetas": [
+        {
+          "cartela": "Na sala do profesorado, facendo balance da semana.",
+          "escenario": "sala_profes",
+          "tiza": {"expresion": "sorprendido", "postura": "abajo", "lugar": "izquierda", "mira": "derecha"},
+          "algoritmo": {"expresion": "orgulloso", "postura": "senalar", "lugar": "derecha", "mira": "izquierda"},
+          "bocadillos": [
+            {"quien": "algoritmo", "texto": "Esta semana aforrei cinco horas de preparar materiais.", "tipo": "habla"},
+            {"quien": "tiza", "texto": "Cinco horas? E onde están?", "tipo": "habla"}
+          ]
+        },
+        {
+          "escenario": "sala_profes",
+          "tiza": {"expresion": "pensativo", "postura": "pensar", "lugar": "izquierda", "mira": "derecha"},
+          "algoritmo": {"expresion": "cargando", "postura": "abajo", "lugar": "derecha", "mira": "izquierda"},
+          "bocadillos": [
+            {"quien": "tiza", "texto": "Porque eu non as notei.", "tipo": "habla"},
+            {"quien": "algoritmo", "texto": "Seguindo o seu rastro...", "tipo": "habla"}
+          ]
+        },
+        {
+          "escenario": "sala_profes",
+          "tiza": {"expresion": "harto", "postura": "sostener", "lugar": "izquierda", "mira": "derecha"},
+          "algoritmo": {"expresion": "avergonzado", "postura": "encoger", "lugar": "derecha", "mira": "izquierda"},
+          "objeto": "folio",
+          "lleva": "tiza",
+          "bocadillos": [
+            {"quien": "algoritmo", "texto": "Atopeinas: no formulario para xustificar que usas IA.", "tipo": "habla"}
+          ]
+        }
+      ]
+    }
+  },
+  "traduccion": "automática con IA"
+}
