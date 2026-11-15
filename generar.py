@@ -831,14 +831,45 @@ SCRIPT_FILAS = """<script>
      alto: unas pocas pasadas bastan para que se ajusten. En una columna, el ancho de siempre. */
   function semana(){
     document.querySelectorAll('.semana-franja').forEach(function(f){
-      var v=f.querySelector('video'),t=f.querySelector('.texto');if(!v||!t)return;v.style.width='';
+      var v=f.querySelector('video'),t=f.querySelector('.texto'),l=f.querySelector('.semana-piezas');if(!v||!t)return;
+      v.style.width='';if(l)l.classList.remove('dos-col');
       if(getComputedStyle(f).gridTemplateColumns.split(' ').length<2)return;
       var rem=parseFloat(getComputedStyle(document.documentElement).fontSize),i;
-      for(i=0;i<4;i++)v.style.width=Math.max(15*rem,Math.min(24*rem,t.getBoundingClientRect().height*9/16))+'px';
+      function ajusta(tope){for(i=0;i<6;i++)v.style.width=Math.max(11*rem,Math.min(tope*rem,t.getBoundingClientRect().height*9/16))+'px';}
+      ajusta(24);
+      /* Con muchas piezas, el texto es más alto de lo que el vídeo puede llegar: la lista, en dos columnas, y el
+         vídeo puede crecer hasta algo menos de la mitad del ancho */
+      if(l&&t.getBoundingClientRect().height-v.getBoundingClientRect().height>40){l.classList.add('dos-col');ajusta(Math.min(32,f.getBoundingClientRect().width*0.42/rem));}
+    });
+  }
+  /* Los breves y «Hace un año» (ADR 0041): el reparto de la fila se elige por lo que ocupa cada recuadro, no por
+     cuántos breves hay. Se prueban repartos de 2/3–1/3 a 1/3–2/3 y se queda el que deja menos hueco, contando lo
+     que «Hace un año» puede recortar de su entradilla (hasta dos líneas). Si aun así los breves se quedan cortos,
+     se enseñan breves anteriores (con su fecha) hasta llenar, y abajo, en «Breves anteriores», no se repiten. */
+  var REPARTOS=[[2,1],[1.6,1],[1.3,1],[1,1],[1,1.3],[1,1.6],[1,2]];
+  function hueco(b,h){var bb=fondo(b),bh=fondo(h),es=h.querySelectorAll(ENT),e=es[es.length-1],red=0;
+    if(e&&e.textContent.trim()){var lh=parseFloat(getComputedStyle(e).lineHeight)||24,n=Math.round(e.getBoundingClientRect().height/lh);red=Math.max(0,n-2)*lh;}
+    return bb>bh?bb-bh:Math.max(0,bh-red-bb);}
+  function breves(){
+    document.querySelectorAll('.fila-breves-hu').forEach(function(g){
+      var b=g.children[0],h=g.children[1],rs=[].slice.call(g.querySelectorAll('.breve-relleno')),bp=b&&b.querySelector('.bloque-piezas');
+      g.style.gridTemplateColumns='';rs.forEach(function(r){r.hidden=true;});
+      document.querySelectorAll('.sec-breves:not(.breves-dia) [data-breve]').forEach(function(x){x.hidden=false;});
+      if(!b||!h||getComputedStyle(g).gridTemplateColumns.split(' ').length<2)return;
+      [b,h].forEach(function(c){c.querySelectorAll(ENT).forEach(suelta);});
+      function mejor(){var m=null;REPARTOS.forEach(function(r){
+        g.style.gridTemplateColumns='minmax(0,'+r[0]+'fr) minmax(0,'+r[1]+'fr)';
+        if(bp){var vis=bp.querySelectorAll('.breve:not([hidden])').length;bp.style.setProperty('--n',b.getBoundingClientRect().width>560?Math.min(vis,2):1);}
+        var x=hueco(b,h);if(!m||x<m.x-4)m={r:r,x:x,n:bp&&bp.style.getPropertyValue('--n')};});
+        g.style.gridTemplateColumns='minmax(0,'+m.r[0]+'fr) minmax(0,'+m.r[1]+'fr)';if(bp&&m.n)bp.style.setProperty('--n',m.n);return m;}
+      var m=mejor(),k=0;
+      while(m.x>40&&k<rs.length&&fondo(b)<fondo(h)){rs[k].hidden=false;k++;m=mejor();}
+      rs.slice(0,k).forEach(function(r){document.querySelectorAll('.sec-breves:not(.breves-dia) [data-breve="'+r.dataset.breve+'"]').forEach(function(x){x.hidden=true;});});
     });
   }
   function igualar(){
     semana();
+    breves();
     document.querySelectorAll(SEL).forEach(function(g){
       var hijos=[].slice.call(g.children).filter(function(c){return c.offsetParent;});
       hijos.forEach(function(c){c.querySelectorAll(ENT).forEach(suelta);});
@@ -1296,11 +1327,18 @@ def boton_compartir(b):
             f'{COMPARTIR}<span></span></button>')
 
 
-def bloque_breves(breves, mostrar_fecha, en_bloque=False):
+def id_breve(b):
+    """Un identificador estable de cada breve, para reconocer el mismo breve en dos sitios de la portada."""
+    return f'{b["fecha"]}-{hashlib.sha1(b["texto"].encode()).hexdigest()[:8]}'
+
+
+def bloque_breves(breves, mostrar_fecha, en_bloque=False, relleno=()):
+    """Los breves. `relleno`: breves anteriores que salen ocultos en el recuadro de los breves del día; el
+    navegador enseña los que hagan falta para que no quede hueco al lado de «Hace un año» (ADR 0041)."""
     if not breves:
         return ""
     items = []
-    for b in breves:
+    for b in list(breves) + list(relleno):
         t = md(b["texto"])
         enl = []
         if b.get("url"):
@@ -1309,9 +1347,11 @@ def bloque_breves(breves, mostrar_fecha, en_bloque=False):
         if u:
             enl.append(enlace(u, L["conversacion"]))
         fecha = f'<span class="fecha-pieza">{fecha_corta(publicacion(b["fecha"]))}</span> ' if mostrar_fecha else ""
-        items.append(f'<li>{fecha}{t} {" ".join(enl)} {boton_compartir(b)}</li>')
+        items.append((b, f'{fecha}{t} {" ".join(enl)} {boton_compartir(b)}'))
     if en_bloque:
-        return "".join(f'<div class="breve">{i[4:-5]}</div>' for i in items)
+        return "".join(f'<div class="breve breve-relleno" data-breve="{id_breve(b)}" hidden>{i}</div>' if b in relleno and b not in breves
+                       else f'<div class="breve" data-breve="{id_breve(b)}">{i}</div>' for b, i in items)
+    items = [f'<li>{i}</li>' for b, i in items if b in breves]
     return f'<aside class="breves" aria-labelledby="t-breves"><h2 id="t-breves">{L["breves"]}</h2><ul>{"".join(items)}</ul></aside>'
 
 
@@ -1413,7 +1453,7 @@ def cuerpo_portada(prof, piezas, breves, mostrar_fecha, tira=""):
         n = min(len(hoy), 2 if hace_un_ano else 3)
         breves_dia = f"""<section class="bloque sec-breves breves-dia" aria-labelledby="b-breves-dia">
   <h2 id="b-breves-dia" class="bloque-titulo"><a href="{prof}breves.html">{icono("breves")} {L["breves"]}</a></h2>
-  <div class="bloque-piezas" style="--n:{n}">{bloque_breves(hoy, mostrar_fecha, en_bloque=True)}</div>
+  <div class="bloque-piezas" style="--n:{n}">{bloque_breves(hoy, mostrar_fecha, en_bloque=True, relleno=breves[:3] if hace_un_ano else ())}</div>
 </section>"""
     if mostrar_fecha:
         # Con un solo breve, su recuadro quedaba medio vacío al lado del de «Hace un año» (ADR 0041): entonces

@@ -82,12 +82,26 @@ viñeta pegada al reportaje. La portada mide unos 7.070 px en el ordenador (4.95
 
 ## Ajustes del 15-11-2026
 
-- **Breves y «Hace un año»**: con un solo breve, la fila invierte el reparto (`.breves-pocos`: un tercio para
-  los breves y dos para «Hace un año»). Medido a 1000-1366 px: con 2/1 quedaban 80-105 px vacíos bajo el breve;
-  con 1/2, como mucho 53. Juanjo descartó separarlos en dos franjas a todo el ancho («no me gusta así»).
-- **«La semana en vídeo»**: el vídeo crece hasta el alto del texto (entre 15 y 24rem, `semana()` en
-  `SCRIPT_FILAS`), y por debajo de 64rem el bloque va en una columna, porque el texto crece tanto que el vídeo no
-  llegaría.
+- **Breves y «Hace un año»**: el reparto de la fila lo elige el navegador por lo que ocupa cada recuadro, no por
+  cuántos breves hay (`breves()` en `SCRIPT_FILAS`): prueba de 2/3–1/3 a 1/3–2/3 y se queda el que deja menos hueco,
+  contando lo que «Hace un año» puede recortar de su entradilla. Si los breves siguen cortos, enseña breves
+  anteriores (con su fecha), que el generador deja ocultos en el recuadro (`relleno` de `bloque_breves()`, los tres
+  más recientes), y los esconde abajo, en «Breves anteriores», para que no salgan dos veces. Sin JavaScript, con un
+  solo breve, el reparto invertido (`.breves-pocos`). Juanjo descartó separarlos en dos franjas a todo el ancho («no
+  me gusta así») y eligió completar con breves anteriores antes que aceptar el hueco.
+- **«La semana en vídeo»**: el vídeo crece o mengua hasta el alto del texto (entre 11 y 24rem, `semana()` en
+  `SCRIPT_FILAS`); si aun así el texto es más alto, la lista va en dos columnas y el vídeo puede llegar a algo menos
+  de la mitad del ancho. Por debajo de 64rem, el bloque va en una columna.
 - **`scripts/revisar-maqueta.js`** cuenta ya los vídeos (antes medía el vídeo como si acabara en su borde de
   arriba) y no cuenta el texto de un desplegable cerrado, al que Chrome da medidas. Las dos cosas hacían que
   avisara de un hueco en «La semana en vídeo» mayor que el real.
+- **Casos simulados** (copia con breves y vídeos cambiados, nueve anchuras, Chromium y Firefox; tableta y móvil en
+  claro y oscuro): un breve corto, uno largo, dos cortos, dos largos, tres; la semana con 2, 7 y 10 artículos: sin
+  huecos. Con 14 artículos en la semana (el doble de lo normal) queda un hueco a unos 1100 px: lo caza la revisión de
+  la madrugada.
+- **Revisión de cada madrugada** (`scripts/revisar-maqueta.py`, que lanza `nas/reloj.sh` tras montar la vista previa
+  de las 5:00): la portada de cada idioma y la página del número a las nueve anchuras de `revisar-anchos.js`, con el
+  Chromium de Playwright del contenedor y la misma comprobación (`scripts/maqueta-pagina.js`, compartida con
+  `revisar-maqueta.js`). Si queda un hueco o una fila incompleta, avisa a Juanjo por Telegram con la captura del
+  bloque, a tiempo de arreglarlo antes de las 6:50, y el informe del día lo recoge. Capturas en
+  `registro/<fecha>-maqueta/`, un mes.

@@ -171,6 +171,12 @@ def informe(fecha):
     if reserva:
         tit = ed.get("titulares_reserva") or reserva
         t.append(f"• Artículos de reserva usados: {len(reserva)}: " + "; ".join(f"«{x[:110]}»" for x in tit) + ".")
+    # La maqueta, según la revisión de las 5:00 (scripts/revisar-maqueta.py, ADR 0041)
+    maq = leer(RAIZ / "registro" / f"{fecha}-maqueta.json")
+    if maq:
+        bloques = sorted({b for f in maq for b in f.get("bloques", [])}) or ["la portada"]
+        t.append(f"• Maqueta: la revisión de las 5:00 encontró huecos en {', '.join(bloques)}; se avisó entonces, con las capturas.")
+        problemas.append("La maqueta tenía huecos a las 5:00.")
     vin = leer(RAIZ / "vinetas" / f"{fecha}.json") or {}
     if not vin.get("elegida"):
         t.append("• Sin viñeta.")

@@ -76,7 +76,8 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
   ADR 0045).
   Antes de enseñar o publicar un cambio de maqueta, `scripts/revisar-maqueta.js` con `probar-web -s` en
   todas las páginas, idiomas y anchuras (cómo, en su cabecera), y `scripts/revisar-anchos.js` para las
-  intermedias: tiene que salir sin avisos. Dos avisos conocidos se dejan como están (Juanjo, 13-11-2026):
+  intermedias: tiene que salir sin avisos. La comprobación está en `scripts/maqueta-pagina.js`; cada madrugada la pasa
+  `scripts/revisar-maqueta.py` sobre la vista previa y avisa con la captura si queda un hueco. Dos avisos conocidos se dejan como están (Juanjo, 13-11-2026):
   la fila incompleta de `nb-grupos` en la página de la semana en tableta (tres grupos en dos columnas) y
   el hueco de `lista-videos` en `videos.html` mientras hay menos vídeos que columnas.
 - **Lectura automática bloqueada a propósito** (UNESCO en la Biblioteca): no
