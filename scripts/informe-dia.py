@@ -115,7 +115,7 @@ def avisos_del_registro(lineas):
     """Las líneas de ERROR y AVISO del registro de la noche, sin repetir, en corto."""
     vistas, out = set(), []
     for l in lineas:
-        m = re.search(r"\b(ERROR|AVISO):?\s*(.+)", l)
+        m = re.search(r"\b(ERROR|AVISO)\b:?\s+(\S.{2,})", l)   # «AVISO: …», no «AVISOS» ni restos sueltos
         if not m:
             continue
         t = re.sub(r"\s+", " ", m.group(2)).strip()[:160]
