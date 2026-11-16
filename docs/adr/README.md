@@ -84,5 +84,6 @@
 | [0080](0080-las-normas-del-diario-enlazadas-desde-la-redaccion.md) | Las normas del diario, enlazadas desde «La redacción» |
 | [0081](0081-las-normas-como-paginas-del-diario.md) | Las normas, como páginas del diario |
 | [0082](0082-la-redaccion-breve-y-el-diario-por-dentro.md) | «La redacción» breve y «El diario por dentro» |
+| [0083](0083-revision-de-estilo-cada-noche-con-programa-y-con-corrector.md) | Revisión de estilo cada noche, con programa y con corrector |
 
 Plantilla: [0000-plantilla.md](0000-plantilla.md). Para crear uno: `nuevo-adr "Título"`.

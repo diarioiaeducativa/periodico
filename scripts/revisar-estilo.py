@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # SPDX-License-Identifier: AGPL-3.0-or-later
-"""Dos normas de estilo de Juanjo que se pueden comprobar sin IA (ADR 0067), en lo escrito cada noche.
+"""Las normas del libro de estilo (encargos/estilo.md) que se pueden comprobar sin IA (ADR 0067 y 0083), en lo
+escrito cada noche.
 
     scripts/revisar-estilo.py --dia AAAA-MM-DD   lo escrito esa noche, en castellano y en las traducciones no inglesas
     scripts/revisar-estilo.py --todo             todo lo publicado (para medir)
@@ -11,6 +12,11 @@
 2. **Ninguna cita solo en inglés en una edición que no es inglesa** (15-11-2026: «No debe haber fragmentos solo en
    inglés en idioma no inglés»): la cita va traducida o con su traducción al lado, entre paréntesis. Una cita es
    inglesa si al menos una de cada cinco de sus palabras es de las más corrientes del inglés.
+3. **Vocabulario y forma** (ADR 0083), solo en castellano y fuera de las citas y las direcciones: «hoy», «ayer» y
+   «esta semana» (salvo en «Hace un año», que compara con el presente, y en los avisos, que salen ese mismo día);
+   «pieza» ante el lector; «el diario cuenta» o «contó»; «app», «online» y «link» en minúscula (los nombres propios
+   van con mayúscula); «la AI»; el condicional de rumor («habría lanzado»), y el porcentaje sin espacio («25%»).
+   Lo que es otro sentido o un nombre propio lo deja el corrector, que lo dice.
 Escribe una línea por frase, con la norma, y sale con 4; sin nada, con 0.
 """
 import datetime
@@ -33,6 +39,20 @@ INGLES = set("the an and or of to in for is are was were be been will would need
              "this these those by on as it its can could may should must have has had their our from at which who "
              "what when how does did if than more most only also into about".split())
 TRADUCIDA = re.compile(r"^\s*\(\s*[«“]")   # la traducción, al lado: «…» («…»)
+# Las normas de vocabulario y forma del libro de estilo (ADR 0083): (nombre, expresión, carpetas donde no vale)
+NORMAS = [
+    ("«hoy», «ayer» o «esta semana»: mejor la fecha o el día", re.compile(r"\b(?:[Hh]oy(?! en día)|[Aa]yer|[Ee]sta semana)\b"),
+     ("hace-un-ano", "avisos")),
+    ("«pieza»: ante el lector, «artículo»", re.compile(r"\b[Pp]iezas?\b"), ()),
+    ("«el diario cuenta»: mejor «publica» o «recoge»",
+     re.compile(r"\b(?:[Ee]l|[Ee]ste) diario (?:cuenta|contó|contaba|ha contado|contará)\b"), ()),
+    ("«app», «online» o «link»: mejor «aplicación», «en línea», «enlace»", re.compile(r"\b(?:apps?|online|links?)\b"), ()),
+    ("«AI»: en castellano, «IA»", re.compile(r"\b(?:la|una|de la|con la|por la) AI\b"), ()),
+    ("condicional de rumor: mejor «según…, ha…»",
+     re.compile(r"\bhabrían? (?:lanzado|presentado|anunciado|publicado|desarrollado|comprado|adquirido|filtrado|cerrado|despedido)\b"), ()),
+    ("porcentaje sin espacio: «25 %»", re.compile(r"\d%"), ()),
+]
+URL = re.compile(r"\]\([^)]*\)|https?://\S+|pieza:\S+")
 
 
 def inglesa(t):
@@ -55,6 +75,11 @@ def revisar(f, castellano):
         for fr in autoria.frases(t):
             if castellano and QUIEN.search(CITA.sub("", fr)):
                 out.append(f"{f.relative_to(RAIZ)} · {ruta} · «quien» relativo · «{fr.strip()[:300]}»")
+            if castellano:
+                limpio = URL.sub(" ", CITA.sub("", fr))
+                for nombre, expr, fuera in NORMAS:
+                    if f.parent.name not in fuera and expr.search(limpio):
+                        out.append(f"{f.relative_to(RAIZ)} · {ruta} · {nombre} · «{fr.strip()[:300]}»")
             for m in CITA.finditer(fr):
                 cita = m.group(1) or m.group(2) or ""
                 if inglesa(cita) and not TRADUCIDA.match(fr[m.end():]):

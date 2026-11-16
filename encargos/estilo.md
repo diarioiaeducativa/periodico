@@ -111,8 +111,8 @@ para los días sin noticias) están en «Cómo se hace el diario», `docs/como-s
   encuesta se presenta con quién lo hace y quién lo paga, y si es de la propia empresa, se dice
   («según un estudio de la propia OpenAI»). Una nota de prensa no se reproduce: se identifica y se
   reescribe.
-- **Cuando se habla de Anthropic o de Claude**, una frase recuerda que el diario lo escriben agentes de
-  Claude, para que el lector lo tenga en cuenta.
+- **Cuando un artículo trata de Anthropic o de Claude**, una frase recuerda que el diario lo escriben
+  agentes de Claude, para que el lector lo tenga en cuenta. Nombrarlos de pasada, en una lista, no lo pide.
 - **Las cifras, con la precisión de la fuente** (sin decimales que la fuente no da) y una proporción
   con su cantidad absoluta («el doble, de 10 a 20 centros»). Si la fuente da cifras distintas según
   la versión o el plan, se dice a cuál corresponde cada una. Del 20 % al 30 % son 10 puntos más, no
@@ -179,8 +179,11 @@ dónde consultar, formatos, vocabulario de la IA y lo propio de España) está e
 Unos programas repasan cada noche algunas de estas normas (ADR 0056, 0059 y 0067), pero no sustituyen
 al revisor:
 
-- `scripts/revisar-estilo.py`: el «quien» relativo y las citas solo en inglés; lo que encuentra lo
-  corrige un agente.
+- `scripts/revisar-estilo.py`: el «quien» relativo, las citas solo en inglés y las normas de vocabulario y
+  forma que se pueden buscar («hoy», «pieza», «el diario cuenta», «app», el condicional de rumor, el
+  porcentaje); lo que encuentra lo corrige un agente.
+- `scripts/comprobar-corrector.py`: que el corrector de estilo, un agente que repasa cada noche la
+  redacción de los artículos del día, no ha cambiado ningún dato.
 - `scripts/corregir-erratas.py`: «e» ante «i», «u» ante «o», las comillas españolas en inglés, y avisa
   de los titulares de más de 90 caracteres.
 - `scripts/revisar-idiomas.py`: castellano que se ha colado en una traducción.

@@ -298,6 +298,27 @@ revisar_autoria() {   # revisar_autoria [corrige]
 }
 revisar_autoria corrige
 
+# 3 sexies (después). El corrector de estilo (ADR 0083): lee los artículos del día como un lector cualquiera y corrige lo
+# que cuesta entender o no cumple el libro de estilo, sin tocar datos. Un programa comprueba después que no ha cambiado
+# cifras, enlaces, citas ni campos que no son texto; si los ha cambiado, vuelve la versión del revisor. Lo que cambia
+# queda en ediciones-borrador/FECHA-corrector.json. Nunca impide el número; CORRECTOR=1 lo enciende.
+corregir_estilo() {
+  [ "${CORRECTOR:-0}" = 1 ] || return 0   # apagado hasta que se apruebe tras la prueba (ADR 0083)
+  python3 -c 'import json,sys; d=json.load(open(sys.argv[1])); sys.exit(0 if d.get("hay_edicion") and d.get("piezas") else 1)' \
+    "ediciones/$FECHA.json" 2>/dev/null || return 0
+  local antes="ediciones-borrador/$FECHA-antes-corrector.json"
+  cp "ediciones/$FECHA.json" "$antes"
+  rm -f "ediciones-borrador/$FECHA-corrector.json"
+  agente "$OPUS" 36-corrector-estilo 25
+  if ! json_ok "ediciones/$FECHA.json" || ! python3 scripts/comprobar-corrector.py "$antes" "ediciones/$FECHA.json" >> "$REG" 2>&1; then
+    cp "$antes" "ediciones/$FECHA.json"
+    log "AVISO: el corrector de estilo cambió datos o rompió la edición: vuelve la versión del revisor"
+  else
+    log "corrector de estilo: $(python3 -c 'import json,sys; print(len(json.load(open(sys.argv[1]))), "cambios")' "ediciones-borrador/$FECHA-corrector.json" 2>/dev/null || echo "sin registro de cambios")"
+  fi
+}
+corregir_estilo
+
 # 3 septies. Normas de estilo que se comprueban sin IA (ADR 0067): sin el relativo «quien» y sin citas solo en
 # inglés en las ediciones que no son inglesas. Si encuentra algo, un corrector lo arregla en castellano y en sus
 # traducciones. Lo que quede, solo se anota.
