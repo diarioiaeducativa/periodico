@@ -301,9 +301,9 @@ revisar_autoria corrige
 # 3 sexies (después). El corrector de estilo (ADR 0083): lee los artículos del día como un lector cualquiera y corrige lo
 # que cuesta entender o no cumple el libro de estilo, sin tocar datos. Un programa comprueba después que no ha cambiado
 # cifras, enlaces, citas ni campos que no son texto; si los ha cambiado, vuelve la versión del revisor. Lo que cambia
-# queda en ediciones-borrador/FECHA-corrector.json. Nunca impide el número; CORRECTOR=1 lo enciende.
+# queda en ediciones-borrador/FECHA-corrector.json. Nunca impide el número; CORRECTOR=0 lo salta.
 corregir_estilo() {
-  [ "${CORRECTOR:-0}" = 1 ] || return 0   # apagado hasta que se apruebe tras la prueba (ADR 0083)
+  [ "${CORRECTOR:-1}" = 1 ] || return 0
   python3 -c 'import json,sys; d=json.load(open(sys.argv[1])); sys.exit(0 if d.get("hay_edicion") and d.get("piezas") else 1)' \
     "ediciones/$FECHA.json" 2>/dev/null || return 0
   local antes="ediciones-borrador/$FECHA-antes-corrector.json"

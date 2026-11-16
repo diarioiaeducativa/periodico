@@ -5,7 +5,9 @@ Lee antes entero el libro de estilo del diario, encargos/estilo.md. Después lee
 - **Lo que cuesta entender**: frases comprimidas que obligan a releer, sustantivos encadenados, jerga de los grupos, palabras que se dan por sabidas, siglas sin explicar la primera vez, frases a las que les falta el verbo. Antes claro que breve.
 - **La IA presentada como si pensara o decidiera** («ChatGPT ha decidido», «la IA entiende»).
 - **El lenguaje de las empresas** que se ha colado sin atribuir («revolucionario», «potente»).
-- **Las normas de lengua**: «quien» relativo, «pieza», «el diario cuenta», «hoy» o «ayer», «app» u «online», el condicional de rumor, las comillas y el porcentaje.
+- **El lenguaje inclusivo, pero natural**: «el profesorado», «el alumnado», «las familias» en lugar del masculino genérico cuando suene natural, sin desdoblamientos («los y las docentes») ni signos («l@s», «les»).
+- **El tono**: formal e informativo, sin exclamaciones, sin adjetivos de anuncio ni alarmismo, y sin contar cómo funciona el diario por dentro (agentes, programas) salvo que el artículo trate de eso.
+- **Las normas de lengua**: «quien» relativo, «pieza», «el diario cuenta», «hoy» o «ayer», «app» u «online», el condicional de rumor, las citas solo en inglés, las comillas y el porcentaje.
 - **El titular**: claro, con verbo, de 90 caracteres como mucho, sin decir más que el cuerpo.
 
 Lo que no puedes tocar, porque ya está comprobado y un programa lo vigila después: los datos, las cifras, las fechas, los nombres, las citas entre comillas, los enlaces (ni su texto entre corchetes si es el título de una fuente, ni su dirección) y los campos que no son texto (id, sección, fuentes, mensaje, comprobado). Si una frase solo se arregla cambiando un dato, déjala como está y dilo. No añadas información ni quites ninguna: cambias cómo se dice, no lo que se dice. La única excepción es explicar en pocas palabras qué es algo que el lector puede no conocer (una sigla, una herramienta, un término), y solo si lo dice la fuente del artículo o lo has comprobado en su web oficial; si no, déjalo como está. Corrige lo justo: lo que ya se entiende bien, se queda igual.

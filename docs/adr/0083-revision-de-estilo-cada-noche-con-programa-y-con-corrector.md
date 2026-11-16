@@ -18,7 +18,8 @@ que cuestan de entender, cuando el diario es para un público amplio, no para ex
    que deja lo que tiene otro sentido o es un nombre propio. Lo ya publicado no se toca: son normas nuevas.
 2. **Un corrector de estilo con IA** (`encargos/pasos/36-corrector-estilo.md`, Opus), cada noche, después del
    revisor y antes de traducir, sobre los artículos y breves del día: los lee como un lector cualquiera y corrige lo
-   que cuesta entender, la IA presentada como si pensara, el lenguaje de las empresas y las normas de lengua. Solo
+   que cuesta entender, la IA presentada como si pensara, el lenguaje de las empresas, el lenguaje inclusivo, el tono
+   y las normas de lengua. Solo
    cambia la redacción; puede explicar en pocas palabras qué es algo si lo dice la fuente o lo ha comprobado.
    `scripts/comprobar-corrector.py` comprueba después que siguen los mismos enlaces, las mismas citas, todas las
    cifras (solo se pueden añadir las de una fecha, al cambiar «ayer» por el día) y los mismos campos que no son
@@ -30,7 +31,7 @@ que cuestan de entender, cuando el diario es para un público amplio, no para ex
 
 - Los artículos del día salen escritos para un público amplio, y las traducciones parten del texto ya corregido.
 - Unos minutos más cada noche, con la misma suscripción.
-- El corrector empieza apagado (`CORRECTOR=1` lo enciende) hasta que se dé por buena su primera prueba.
+- El corrector está encendido desde el 16-11-2026, tras ver su primera prueba; `CORRECTOR=0` lo salta.
 
 ## Validación
 

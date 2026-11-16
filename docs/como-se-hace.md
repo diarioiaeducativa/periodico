@@ -126,14 +126,17 @@ El diario tiene escritos de antemano artículos y otras piezas, para que nunca f
 ## 6. Las revisiones
 
 **Con IA**: el revisor de cada tarea (fuentes, cifras, nombres y lo ya publicado), el revisor de dibujos,
-el juez de la viñeta y el verificador del reportaje y de «Hace un año».
+el juez de la viñeta, el verificador del reportaje y de «Hace un año» y, cada noche, un corrector de estilo
+que lee los artículos del día como un lector cualquiera y arregla lo que cuesta entender, sin tocar los
+datos (ADR 0083).
 
 **Con programas, sin IA**, cada noche:
 
 | Qué se comprueba | Registro de la decisión |
 | --- | --- |
 | Que ningún agente haya estropeado los archivos del número | ADR 0076 |
-| Que no se use «quien» con el sentido de «la persona que» ni haya citas solo en inglés (si las hay, un agente las corrige) | ADR 0067 |
+| Que no se use «quien» con el sentido de «la persona que» ni haya citas solo en inglés, «hoy» o «ayer», «app» u otras palabras que el libro de estilo desaconseja (si las hay, un agente las corrige) | ADR 0067 y 0083 |
+| Que el corrector de estilo no haya cambiado ninguna cifra, enlace ni cita | ADR 0083 |
 | Que no se atribuya a un autor del diario algo de otra persona que se llama igual (si pasa, un agente lo revisa) | ADR 0066 |
 | Erratas que siguen una regla fija, como «y» delante de «i», y titulares demasiado largos | ADR 0059 |
 | Que cada traducción tenga los mismos artículos, enlaces y dibujos que el original; si no, esa parte sale en castellano | ADR 0026 |
