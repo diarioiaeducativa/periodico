@@ -10,6 +10,7 @@ import hashlib
 import html
 import json
 import pathlib
+import posixpath
 import re
 import os
 import shutil
@@ -2518,6 +2519,7 @@ CORREO_CONTACTO = "diarioiaeducativa@bilateria.org"   # reenvío de IONOS al cor
 def pagina_redaccion(eds):
     """«La redacción»: quién hace el diario, empezando por el equipo de agentes y su organigrama."""
     R = L["redaccion"]
+    raiz = "../" * L["carpeta"].count("/")   # las normas solo están en castellano, en la raíz (ADR 0081)
     grupos = {k: enlace("https://t.me/" + a, n) for k, (n, a) in GRUPOS.items()}
     grupos.update(juanjo=enlace(WEB_JUANJO, "Juan José de Haro"), raul=enlace(WEB_RAUL, "Raül Torres"),
                   aepd=enlace(AEPD_MEDICION, "Agencia Española de Protección de Datos"),
@@ -2526,9 +2528,9 @@ def pagina_redaccion(eds):
                   repositorio=enlace(REPOSITORIO, L["repositorio_enlace"]), seccion_vc=f'<a href="vibecoding.html">{L["secciones"]["vibecoding"]}</a>',
                   codigo=enlace(CODIGO, L["codigo_enlace"]),
                   # Las normas, el libro de estilo y el del traductor, en el repositorio (ADR 0080)
-                  como_se_hace=enlace(CODIGO + "/blob/main/docs/como-se-hace.md", L["normas_enlaces"][0]),
-                  libro_estilo=enlace(CODIGO + "/blob/main/encargos/estilo.md", L["normas_enlaces"][1]),
-                  libro_traductor=enlace(CODIGO + "/blob/main/encargos/traduccion.md", L["normas_enlaces"][2]),
+                  como_se_hace=f'<a href="{raiz}normas.html">{L["normas_enlaces"][0]}</a>',
+                  libro_estilo=f'<a href="{raiz}estilo.html">{L["normas_enlaces"][1]}</a>',
+                  libro_traductor=f'<a href="{raiz}traduccion.html">{L["normas_enlaces"][2]}</a>',
                   # El contacto tiene página propia (ADR 0051); aquí queda un apartado breve que lleva a ella
                   pagina_contacto=f'<a href="contacto.html">{L["contacto"]["enlace"]}</a>',
                   # El mismo enlace para el apartado de las correcciones, sin repetir el ancla «contacto»
@@ -2664,6 +2666,117 @@ def pagina_privacidad(eds):
 {SCRIPT_TEMA}
 </body>
 </html>"""
+
+
+# Las normas públicas del diario (ADR 0080 y 0081): se leen de sus .md cada vez que se genera la web, así que
+# cambian solas al cambiar el documento. Solo en castellano: las ediciones traducidas las enlazan diciéndolo.
+DOCUMENTOS = {"normas.html": "docs/como-se-hace.md", "estilo.html": "encargos/estilo.md",
+              "traduccion.html": "encargos/traduccion.md"}
+
+
+def doc_enlace(url, origen):
+    """Un enlace de un documento: a otro de los tres, a su página; a algo del repositorio, a GitHub."""
+    if re.match(r"https?://", url):
+        return url, True
+    destino = posixpath.normpath(posixpath.join(posixpath.dirname(origen), url))
+    paginas = {v: k for k, v in DOCUMENTOS.items()}
+    if destino in paginas:
+        return paginas[destino], False
+    if destino == "docs/adr/README.md":
+        return CODIGO + "/tree/main/docs/adr", True
+    return f"{CODIGO}/blob/main/{destino}", True
+
+
+def doc_linea(t, origen):
+    """El Markdown de una línea de los documentos: código, negritas, cursivas y enlaces."""
+    codigos = []
+    t = re.sub(r"`([^`]+)`", lambda m: codigos.append(m.group(1)) or f"\x00{len(codigos) - 1}\x00", t)
+    t = e(t)
+    t = re.sub(r"\*\*([^*]+)\*\*", r"<strong>\1</strong>", t)
+    t = re.sub(r"(?<![*\w])\*(?!\s)([^*\n]+?)(?<!\s)\*(?![*\w])", r"<em>\1</em>", t)
+
+    def a(m):
+        url, fuera = doc_enlace(html.unescape(m.group(2)), origen)
+        return enlace(url, m.group(1)) if fuera else f'<a href="{e(url)}">{m.group(1)}</a>'
+    t = re.sub(r"\[([^\]]+)\]\(([^)\s]+)\)", a, t)
+    return re.sub("\x00(\\d+)\x00", lambda m: f"<code>{e(codigos[int(m.group(1))])}</code>", t)
+
+
+def doc_html(texto, origen):
+    """Los bloques de un documento: títulos, párrafos, listas, tablas y citas. Devuelve el título y el cuerpo."""
+    lineas, titulo, out, i = texto.splitlines(), "", [], 0
+    while i < len(lineas):
+        ln = lineas[i]
+        if not ln.strip():
+            i += 1
+        elif ln.startswith("# ") and not titulo:
+            titulo, i = ln[2:].strip(), i + 1
+        elif m := re.match(r"(#{2,4}) (.*)", ln):
+            n = len(m.group(1))
+            out.append(f"<h{n}>{doc_linea(m.group(2), origen)}</h{n}>")
+            i += 1
+        elif ln.startswith("|"):
+            filas = []
+            while i < len(lineas) and lineas[i].startswith("|"):
+                if not re.match(r"^\|[\s:|-]+\|$", lineas[i]):
+                    filas.append([c.strip() for c in lineas[i].strip().strip("|").split("|")])
+                i += 1
+            cab, cuerpo = filas[0], filas[1:]
+            th = "".join(f"<th>{doc_linea(c, origen)}</th>" for c in cab)
+            trs = "".join("<tr>" + "".join(f'<td data-col="{e(re.sub(r"[*`]", "", cab[j]))}">{doc_linea(c, origen)}</td>'
+                                            for j, c in enumerate(f)) + "</tr>" for f in cuerpo)
+            out.append(f'<figure class="tabla"><table><thead><tr>{th}</tr></thead><tbody>{trs}</tbody></table></figure>')
+        elif re.match(r"(- |\d+\. )", ln):
+            orden = bool(re.match(r"\d+\. ", ln))
+            items = []
+            while i < len(lineas) and (re.match(r"(- |\d+\. )", lineas[i]) or (lineas[i].startswith("  ") and items)):
+                if re.match(r"(- |\d+\. )", lineas[i]):
+                    items.append(re.sub(r"^(- |\d+\. )", "", lineas[i]))
+                else:
+                    items[-1] += " " + lineas[i].strip()
+                i += 1
+            tag = "ol" if orden else "ul"
+            out.append(f"<{tag}>" + "".join(f"<li>{doc_linea(x, origen)}</li>" for x in items) + f"</{tag}>")
+        elif ln.startswith(">"):
+            bloque = []
+            while i < len(lineas) and lineas[i].startswith(">"):
+                bloque.append(lineas[i].lstrip("> ").strip())
+                i += 1
+            out.append(f"<blockquote><p>{doc_linea(' '.join(bloque), origen)}</p></blockquote>")
+        else:
+            bloque = []
+            while i < len(lineas) and lineas[i].strip() and not re.match(r"(#{1,4} |\||- |\d+\. |>)", lineas[i]):
+                bloque.append(lineas[i].strip())
+                i += 1
+            out.append(f"<p>{doc_linea(' '.join(bloque), origen)}</p>")
+    return titulo, "\n".join(out)
+
+
+def pagina_documento(eds, ruta):
+    """Una de las normas públicas, con la maqueta del diario."""
+    origen = DOCUMENTOS[ruta]
+    titulo, cuerpo = doc_html((RAIZ / origen).read_text(), origen)
+    primero = re.search(r"<p>(.*?)</p>", cuerpo)
+    desc = re.sub(r"<[^>]+>", "", primero.group(1))[:200] if primero else titulo
+    pagina = cabeza(f"{titulo} | {L['titulo']}", "", desc, ruta) + f"""<body class="pag-que-es">
+{cabecera("", ruta, eds[-1]["fecha"], eds[-1]["numero"], True, h1=False)}
+<main class="articulo que-es documento">
+<h1 class="titular">{e(titulo)}</h1>
+{cuerpo}
+<p class="volver"><a href="redaccion.html">{L["quees"]}</a> · <a href="./">{L["volver"]}</a></p>
+</main>
+{pie("", eds, None)}
+{SCRIPT_TEMA}
+</body>
+</html>"""
+    # Solo existe en castellano: sin versiones en los otros idiomas, y el selector de idioma lleva a «La
+    # redacción» de cada uno, que dice que estos documentos están en castellano
+    for c in IDIOMAS:
+        if IDIOMAS[c]["carpeta"]:
+            carpeta = IDIOMAS[c]["carpeta"]
+            pagina = re.sub(rf'<link rel="alternate" hreflang="{c}" href="[^"]*/{carpeta}{re.escape(ruta)}">\n?', "", pagina)
+            pagina = pagina.replace(f'href="{carpeta}{ruta}"', f'href="{carpeta}redaccion.html"')
+    return pagina
 
 
 def redireccion(destino):
@@ -4267,6 +4380,9 @@ def generar_idioma(codigo):
     escribir(base / "redaccion.html", pagina_redaccion(eds))
     escribir(base / "contacto.html", pagina_contacto(eds))
     escribir(base / "privacidad.html", pagina_privacidad(eds))
+    if not L["carpeta"]:   # las normas públicas, solo en castellano (ADR 0081)
+        for ruta in DOCUMENTOS:
+            escribir(base / ruta, pagina_documento(eds, ruta))
     escribir(base / "que-es.html", redireccion("redaccion.html"))
     escribir(base / "comunidad.html", redireccion("vibecoding.html"))   # la sección retirada el 01-11-2026
     for clave in TODAS_SECCIONES:

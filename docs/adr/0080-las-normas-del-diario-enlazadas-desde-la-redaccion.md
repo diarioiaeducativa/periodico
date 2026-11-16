@@ -2,6 +2,9 @@
 
 Fecha: 2026-11-16 · Estado: aceptado
 
+> El [ADR 0081](0081-las-normas-como-paginas-del-diario.md), del mismo día, cambia el destino de los enlaces:
+> páginas propias del diario en lugar de GitHub.
+
 ## Contexto
 
 El diario tiene tres documentos públicos sobre cómo se hace: `docs/como-se-hace.md` (las normas, quién
