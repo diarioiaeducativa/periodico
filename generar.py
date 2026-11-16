@@ -2799,7 +2799,22 @@ def doc_linea(t, origen):
         return enlace(url, m.group(1)) if fuera else f'<a href="{e(url)}">{m.group(1)}</a>'
     t = re.sub(r"\[([^\]]+)\]\(([^)\s]+)\)", a, t)
     t = re.sub(r"\bADR (\d{4}(?:(?:, | y )\d{4})*)", lambda m: "ADR " + re.sub(r"\d{4}", doc_adr, m.group(1)), t)
-    return re.sub("\x00(\\d+)\x00", lambda m: f"<code>{e(codigos[int(m.group(1))])}</code>", t)
+    return re.sub("\x00(\\d+)\x00", lambda m: doc_codigo(codigos[int(m.group(1))], origen), t)
+
+
+def doc_codigo(c, origen):
+    """Un archivo o una carpeta del repositorio citado en el texto (`encargos/enlaces.md`, `encargos/`): se puede abrir
+    al pulsarlo, en otra pestaña, y la carpeta se nombra sin la barra final. Lo demás (`pieza:…`) queda como código."""
+    ruta = next((r for r in (c, posixpath.join(posixpath.dirname(origen), c))
+                 if r.strip("/") and not r.startswith(("http", "pieza:")) and (RAIZ / r).exists()), None)
+    texto = f"<code>{e(c.rstrip('/') if ruta else c)}</code>"
+    if not ruta:
+        return texto
+    ruta = posixpath.normpath(ruta)
+    paginas = {v: k for k, v in DOCUMENTOS.items()}
+    if ruta in paginas:
+        return f'<a href="{paginas[ruta]}">{texto}</a>'
+    return enlace(f"{CODIGO}/{'tree' if (RAIZ / ruta).is_dir() else 'blob'}/main/{ruta}", texto)
 
 
 def doc_html(texto, origen):

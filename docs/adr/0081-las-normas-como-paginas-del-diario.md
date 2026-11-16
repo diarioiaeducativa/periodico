@@ -22,7 +22,8 @@ que no son del diario. Se pidió una página propia, que siga al documento cuand
   apartados cortos no dejen huecos; solo las tablas cortan las columnas, y un texto muy corto entre dos
   tablas (menos de 400 caracteres) va a lo ancho.
 - Los enlaces entre los tres documentos llevan a sus páginas; cada mención «ADR 0026» enlaza a ese
-  registro en GitHub, y lo demás del código, también a GitHub.
+  registro en GitHub, y cada archivo o carpeta del repositorio citado en el texto (`encargos/`,
+  `scripts/idiomas.py`) se abre al pulsarlo, en otra pestaña, y la carpeta se nombra sin la barra final.
 - Solo en castellano, en la raíz. «La redacción» de cada idioma enlaza a ellas y dice que están en
   castellano; en estas páginas, el selector de idioma lleva a «La redacción» de cada lengua y no se
   anuncian versiones en otros idiomas.
