@@ -1,0 +1,144 @@
+{
+ "fecha": "2026-11-15",
+ "elegida": {
+  "n": 2,
+  "pieza": "declarar-uso-ia-transparencia",
+  "idea": "Tiza le encarga a Algoritmo la norma del centro que aclara cómo declarar la IA y, al leerla, se da cuenta de que la primera declaración tiene que ser la de la propia norma.",
+  "guion": {
+   "vinetas": [
+    {
+     "cartela": "En la sala de profes, redactando la norma sobre IA.",
+     "escenario": "sala_profes",
+     "objeto": "portatil",
+     "tiza": {
+      "expresion": "pensativo",
+      "postura": "pensar",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "orgulloso",
+      "postura": "arriba",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Hay que aclarar qué usos de IA son aceptables y cómo se declaran.",
+       "tipo": "habla"
+      },
+      {
+       "quien": "algoritmo",
+       "texto": "¡Te redacto la norma en un segundo!",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "sala_profes",
+     "objeto": "folio",
+     "lleva": "algoritmo",
+     "tiza": {
+      "expresion": "neutral",
+      "postura": "cruzar",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "orgulloso",
+      "postura": "sostener",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "algoritmo",
+       "texto": "Lista. Punto tres: todo uso de IA se declara, sin excepción.",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "sala_profes",
+     "objeto": "folio",
+     "lleva": "tiza",
+     "tiza": {
+      "expresion": "riendo",
+      "postura": "sostener",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "sorprendido",
+      "postura": "encoger",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Pues empezamos por la norma: «Usé IA para redactar esta norma…»",
+       "tipo": "habla"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "motivo": "La 4 es la más redonda: el reparto del modo Orchestrator (uno planifica, otro ejecuta, el primero retoma si el segundo se atasca) es fiel a la noticia y se convierte en algo que todo docente reconoce, la herramienta que se queda con la parte cómoda. El remate mudo funciona sin explicar nada: Tiza hundida ante el montón, Algoritmo aún «procesando», y el rótulo irónico cierra; además, el «retomo yo» de la segunda viñeta queda sin cumplir delante de quien lee. La 1 tiene un buen giro («la redacción fue mía» es la única verdad) pero repite el molde más gastado (Algoritmo se pasa de servicial y remata contento) y abrevia la plantilla real («La investigación y la redacción fueron mías»). La 3 tiene una ironía fina sobre la privacidad, pero el remate sarcástico de Tiza se explica un poco y harto/jarras es el cierre de siempre. La 5 tiene buena estructura de rondas, pero el remate («mejor como la primera») es previsible y no cabe. La 2 es floja: la autodeclaración de la norma no sorprende. Gracia de la elegida, 8: no hace falta afinarla a fondo.",
+ "retoques": "Texto: «uno planifica y el otro» pasa a «uno planifica y otro», más corto (el primer bocadillo de Tiza no cambia). Variedad: escenario casa_noche, libre en los tres números anteriores; objeto examenes, distinto del anterior (ninguno); el remate es mudo, con lo que no hereda quién dijo la última frase; caras agotado (sin usar) y cargando solo donde el chiste las pide. En la viñeta 1, Algoritmo pasa de senalar (su postura más repetida, 4) a jarras, que planta su plan con orgullo; Tiza conserva abajo en la viñeta 3 porque el remate mudo es justo el desplome. Rótulo de la viñeta 1 revisado: sitúa (casa, de noche, exámenes) sin adelantar el chiste, 49 caracteres. Ningún bocadillo pasa de 90 caracteres.",
+ "puntuaciones": [
+  {
+   "n": 1,
+   "pieza": "declarar-uso-ia-transparencia",
+   "gracia": 7,
+   "claridad": 8,
+   "remate": 7,
+   "prohibiciones": "respeta",
+   "cabe": true,
+   "nota": "Buen giro, pero molde gastado (exceso de celo de Algoritmo, que remata contento) y la plantilla citada se recorta respecto a la fuente."
+  },
+  {
+   "n": 2,
+   "pieza": "declarar-uso-ia-transparencia",
+   "gracia": 4,
+   "claridad": 7,
+   "remate": 4,
+   "prohibiciones": "respeta",
+   "cabe": true,
+   "nota": "La norma que debe declararse a sí misma es previsible y apenas hace reír."
+  },
+  {
+   "n": 3,
+   "pieza": "modern-web-guidance",
+   "gracia": 6,
+   "claridad": 6,
+   "remate": 6,
+   "prohibiciones": "respeta",
+   "cabe": true,
+   "nota": "Ironía de la IA que desconfía de los datos ajenos, bien traída de la noticia, pero el sarcasmo final necesita pensarse y el cierre harto/jarras es el habitual."
+  },
+  {
+   "n": 4,
+   "pieza": "gemini4-hydrogen-orchestrator",
+   "gracia": 8,
+   "claridad": 8,
+   "remate": 8,
+   "prohibiciones": "respeta",
+   "cabe": true,
+   "nota": "Fiel a cómo funciona Orchestrator, reconocible para cualquier docente y con remate mudo y giro en el rótulo."
+  },
+  {
+   "n": 5,
+   "pieza": "seedream-55",
+   "gracia": 6,
+   "claridad": 7,
+   "remate": 6,
+   "prohibiciones": "respeta",
+   "cabe": false,
+   "nota": "Las rondas cuentan bien la promesa de Seedream, pero el «como la primera» se ve venir; no cabe en la viñeta 1."
+  }
+ ],
+ "cambio": "16-11-2026, antes de publicar: se cambia la 4 por la 2 a mano, porque la 4 no se entendía."
+}

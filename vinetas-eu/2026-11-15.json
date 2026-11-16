@@ -1,0 +1,90 @@
+{
+ "fecha": "2026-11-15",
+ "elegida": {
+  "n": 2,
+  "pieza": "declarar-uso-ia-transparencia",
+  "idea": "Klarionak ikastetxeko araua eskatzen dio Algoritmori, IA nola adierazi argitzeko, eta irakurtzean konturatzen da lehen adierazpena arauarena berarena izan behar dela.",
+  "guion": {
+   "vinetas": [
+    {
+     "cartela": "Irakasleen gelan, IAri buruzko araua idazten.",
+     "escenario": "sala_profes",
+     "objeto": "portatil",
+     "tiza": {
+      "expresion": "pensativo",
+      "postura": "pensar",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "orgulloso",
+      "postura": "arriba",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Argitu behar da IAren zer erabilera diren onargarriak eta nola adierazten diren.",
+       "tipo": "habla"
+      },
+      {
+       "quien": "algoritmo",
+       "texto": "Segundo batean idatziko dizut araua!",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "sala_profes",
+     "objeto": "folio",
+     "lleva": "algoritmo",
+     "tiza": {
+      "expresion": "neutral",
+      "postura": "cruzar",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "orgulloso",
+      "postura": "sostener",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "algoritmo",
+       "texto": "Prest. Hirugarren puntua: IAren erabilera oro adierazi behar da, salbuespenik gabe.",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "sala_profes",
+     "objeto": "folio",
+     "lleva": "tiza",
+     "tiza": {
+      "expresion": "riendo",
+      "postura": "sostener",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "sorprendido",
+      "postura": "encoger",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Orduan, arautik hasiko gara: «IA erabili dut arau hau idazteko…»",
+       "tipo": "habla"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "traduccion": "itzulpen automatikoa AArekin"
+}

@@ -1,0 +1,41 @@
+{"semana": "2026-46", "hay_comentario": true,
+ "general": {
+  "titulo": "Astean prozesua ebaluatzea eskatu zen, detektagailuetan fidatu beharrean",
+  "parrafos": [
+   "Ebaluazioa izan zen gai sakonena. [Igandeko erreportajeak](pieza:2026-11-14/detectores-ia-evaluar-proceso) ikerketak, araudia eta hezkuntza-gidak aztertzen ditu, eta ondorioztatzen du sortutako testuaren detektagailu batek, gehienez ere, zantzu bat ematen duela; gainera, edozein ikasgairentzat kosturik gabeko plan bat proposatzen du: zeregin bakoitzean AAren zer erabilera onartzen diren adieraztea, zirriborroak eta entregak etapaka eskatzea eta ikasleen azalpen laburra gehitzea. Ingalaterrako unibertsitate-erregulatzailearekin bat dator, zeinak [froga gehiago eskatzen baititu formatu seguruetan, adibidez, bertako azterketetan edo ahozkoetan](pieza:2026-11-12/ofs-evaluacion-sin-ia), eta detektagailu baten emaitza, gehienez ere, beste froga bat dela uste baitu.",
+   "Beste ildoa [Claude Fable 5.2](pieza:2026-11-09/fable-mythos-5-2) izan zen, Anthropicek azaroaren 9an aurkeztu zuena eta taldeek berehala frogatu zutena gelako materialekin. Irakasle batek eskaera bakar batekin lortu zuen [fotosintesiari buruzko animazio ahotsduna](pieza:2026-11-10/fable-animacion-fotosintesis), batxilergorako «onargarriaren gainetik» zela iritzi ziona, eta [bigarren bideo batean, zelula-arnasketari buruzkoan](pieza:2026-11-11/respiracion-celular-revisor), eduki zientifikoa ekoitsi aurretik berrikusten duen agente bat gehitu zuen: AArekin materiala sortzen duen edonorentzat jarraibide baliagarria.",
+   "Vibe Coding Educativon, Felip Sarroca i Gilek [Codexi eskatu zion Blenderren modelatzeko Industria Iraultzako makinak](pieza:2026-11-14/revolucion-industrial-blender-codex), DBHko 4. mailako webgunerako, nahiz eta bere ordenagailuak ezin zuen programa ireki. Adibideak erakusten du programazio-agente batek irakasle batek erabiltzen jakingo ez lukeen tresna libreak erabil ditzakeela, hobekuntza segidak eskatzearen truke."
+  ],
+  "piezas": ["2026-11-14/detectores-ia-evaluar-proceso", "2026-11-12/ofs-evaluacion-sin-ia", "2026-11-09/fable-mythos-5-2", "2026-11-10/fable-animacion-fotosintesis", "2026-11-11/respiracion-celular-revisor", "2026-11-14/revolucion-industrial-blender-codex"]
+ },
+ "grupos": {
+  "chatgpt": {
+   "titulo": "Erakundeek jarraibideak eman zituzten ebaluatzeko eta AA zalantzan jartzen irakasteko",
+   "parrafos": [
+    "Ingalaterrako unibertsitate-erregulatzaileak ez zuen oharrarekin nahikotzat jo. [Bere gidak eta oinarri duen txostenak](pieza:2026-11-12/ofs-ia-educacion-superior), Advance HErekin egindakoak, dioenez, neurtzen dituen ezagutzarik gabe AArekin gaindi daitekeen proba bat ordezkatu egin behar da, eta Bathko Unibertsitatearen kasua jasotzen dute: AArik gabeko banda itxi bat eta AA kontuan hartuta diseinatutako beste ireki bat bereizten ditu. Ingalaterrako unibertsitateei zuzenduta badago ere, ebaluazioaren birdiseinuari buruzko kapituluak edozein mailatako irakasleei balio die.",
+    "Bigarren hezkuntzarako, UNESCOk [13 eta 15 urte arteko ikasleek AAren erantzunak zalantzan jar ditzaten bost unitate](pieza:2026-11-12/unesco-ia-decides) proposatzen ditu, guztietan errepikatzen diren bost galderarekin eta lan-arau batekin: AAren erantzuna pista gisa hartzea, ez iturri gisa. Atal bakoitza ikasgai independente gisa eman daiteke eta jarduera batzuk saio bakarrean sartzen dira; gida ingelesez dago.",
+    "Espainian, [INTEFek SIMOn aurkeztu zuen](pieza:2026-11-13/intef-guias-ia-simo) hezkuntzako AAri buruzko gidaren 2026ko eguneratzea eta ikastetxeetan txertatzeko orientabideak. Eta [Microsoftek Classroom iragarri zuen](pieza:2026-11-12/microsoft-classroom): zereginak, kalifikazioak eta AA tresnak pantaila bakar batean biltzen ditu, ez du Teams ordezkatzen eta 2027an iritsiko da, A1, A3, A5 eta A7 planak dituzten ikastetxeentzat kostu gehigarririk gabe."
+   ],
+   "piezas": ["2026-11-12/ofs-ia-educacion-superior", "2026-11-12/unesco-ia-decides", "2026-11-13/intef-guias-ia-simo", "2026-11-12/microsoft-classroom"]
+  },
+  "vce": {
+   "titulo": "Astean Fablek kodea eskatzen irakatsi zen eta gela- eta kontserbatorio-baliabideak gehitu ziren",
+   "parrafos": [
+    "Anthropicen eredu berriarekin programatzeko, [bere gidak azaltzen du Fable 5.2k modu desberdinean jokatzen duela kodearen jabe gisa nor agertzen den](pieza:2026-11-11/prompt-propiedad-codigo-fable): arduraduna dela esaten bazaio, errepikatutako kodea denboraren %75 inguruan bateratzen du, esaldi hori gabe %10 baino gutxiagotan, enpresaren proben arabera, baina token gehiago gastatzen ditu eta inork eskatu gabeko aldaketak egiten ditu. Horregatik, gutxieneko aldaketa egin nahi denean ez erabiltzea eta aldaketen laburpena berrikustea gomendatzen du.",
+    "Baliabideen artean, Aarón Fortuñoren [Relleu Obert](pieza:2026-11-12/relleu-obert)-ek benetako leku bat inprima daitekeen 3D maketa bihurtzen du; doakoa eta kode irekikoa da, eta egilearen arabera eredua nabigatzailean kalkulatzen du, zerbitzari batean daturik gorde gabe. Lehen hezkuntzako ikasleekin erliebea lantzetik sortu zen, paperak haientzat esanahi gutxi baitu.",
+    "Kontserbatorioen kudeaketa izan zen beste haria. José Luis Miralles Bonok [Tribunator](pieza:2026-11-10/tribunator) aurkeztu zuen, sarbide-proben epaimahaiak, gelak eta ordutegiak planifikatzen dituena eta gatazkarik ez dagoela egiaztatzen duena, eta Valentziako Erkidegoko 8/2026 Aginduaren [lehentasun-ordena aplikatzeko tresna bat](pieza:2026-11-12/prelacion-admision-conservatorios-cv). [Biltegiaren asteak](pieza:2026-11-13/semana-del-repositorio) haren beste hamahiru baliabide aurkezten ditu, zentro horien araudia, ordutegiak, plaza hutsak eta egutegiak dituztenak, jokoekin eta gelako tresnekin batera."
+   ],
+   "piezas": ["2026-11-11/prompt-propiedad-codigo-fable", "2026-11-12/relleu-obert", "2026-11-10/tribunator", "2026-11-12/prelacion-admision-conservatorios-cv", "2026-11-13/semana-del-repositorio"]
+  },
+  "edumedia": {
+   "titulo": "SVG eskemek eta agenteekin egindako simulazioek bideak irekitzen dituzte gelako materialerako",
+   "parrafos": [
+    "[Eredu aurreratu hirurekin egindako proba batek](pieza:2026-11-11/svg-celula-tres-modelos) animalia-zelularen laminak eman zituen eduki-akatsik gabe, SVGn, bektore-marrazkiaren formatuan, eskatuta. Egileak horri egozten dio eredua bera dela marrazkia idazten duena, baina hipotesi bat da oraindik egiaztatzeko; jarraibide praktikoa zehaztasuna garrantzitsua den eskemak horrela eskatzea da, eta hala ere berrikustea.",
+    "[Primer, Wharton Generative AI Labsena](pieza:2026-11-13/primer-wharton), kode irekiko sistema bat da: agente talde batek irakaslea elkarrizketatzen du, onartzeko diseinu bat aurkezten dio eta ikasleentzako simulazio bat eraikitzen du, saio bakoitzaren ondoren txostenekin. Egileek ohartarazten dute prototipo bat dela, ez dela gelan ebaluatu eta ikasleen pribatutasunari dagokionez ez dela berrikusi.",
+    "Klaseak edo elkarrizketak transkribatzeko, [ElevenLabsen Scribe v3](pieza:2026-11-13/elevenlabs-scribe-v3)-k gaztelaniazko akatsak %35 murrizten ditu, enpresaren arabera, baina lehenespenez Estatu Batuetan prozesatzen du, ikasleen ahotsekin kontuan hartzeko datua. Eta agenteak 3D programak erabiltzen hasi dira: [Unreal Engine 5.9](pieza:2026-11-12/unreal-engine-5-9-ia)-k MCP txertatzen du bertsio esperimental batean, eta [«Buzz»-en errodajeak](pieza:2026-11-09/buzz-flujo-claude-blender) Claude, Blender MCP bidez eta errealitate birtualeko betaurrekoak konbinatu zituen, kredituetan kostu handiarekin."
+   ],
+   "piezas": ["2026-11-11/svg-celula-tres-modelos", "2026-11-13/primer-wharton", "2026-11-13/elevenlabs-scribe-v3", "2026-11-12/unreal-engine-5-9-ia", "2026-11-09/buzz-flujo-claude-blender"]
+  }
+ },
+ "repaso": ["sin cambios: cada afirmación contrastada con su pieza (nombres, cifras, organismos, planes, plazos y advertencias coinciden), claves copiadas de la entrada y de su grupo, medida entre 150 y 250 palabras (general unas 228, ChatGPT-IA-edu unas 216, VCE unas 215, EduMedia-IAG unas 200) y a lo sumo seis enlaces."]
+}

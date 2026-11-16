@@ -1,0 +1,90 @@
+{
+ "fecha": "2026-11-15",
+ "elegida": {
+  "n": 2,
+  "pieza": "declarar-uso-ia-transparencia",
+  "idea": "Xiz encárgalle a Algoritmo a norma do centro que aclara como declarar a IA e, ao lela, decátase de que a primeira declaración ten que ser a da propia norma.",
+  "guion": {
+   "vinetas": [
+    {
+     "cartela": "Na sala de profes, redactando a norma sobre IA.",
+     "escenario": "sala_profes",
+     "objeto": "portatil",
+     "tiza": {
+      "expresion": "pensativo",
+      "postura": "pensar",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "orgulloso",
+      "postura": "arriba",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Hai que aclarar que usos da IA son aceptables e como se declaran.",
+       "tipo": "habla"
+      },
+      {
+       "quien": "algoritmo",
+       "texto": "Redáctoche a norma nun segundo!",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "sala_profes",
+     "objeto": "folio",
+     "lleva": "algoritmo",
+     "tiza": {
+      "expresion": "neutral",
+      "postura": "cruzar",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "orgulloso",
+      "postura": "sostener",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "algoritmo",
+       "texto": "Lista. Punto tres: todo uso da IA declárase, sen excepción.",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "sala_profes",
+     "objeto": "folio",
+     "lleva": "tiza",
+     "tiza": {
+      "expresion": "riendo",
+      "postura": "sostener",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "sorprendido",
+      "postura": "encoger",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Pois comezamos pola norma: «Usei IA para redactar esta norma…»",
+       "tipo": "habla"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "traduccion": "automática con IA"
+}

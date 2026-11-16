@@ -1,0 +1,41 @@
+{"semana": "2026-46", "hay_comentario": true,
+ "general": {
+  "titulo": "La setmana va demanar avaluar el procés en lloc de fiar-se dels detectors",
+  "parrafos": [
+   "L'avaluació va ser l'assumpte de més fons. [El reportatge del diumenge](pieza:2026-11-14/detectores-ia-evaluar-proceso) repassa estudis, normativa i guies educatives per concloure que un detector de text generat dona, com a molt, un indici, i proposa un pla sense cost per a qualsevol matèria: declarar quins usos de la IA s'admeten en cada tasca, demanar esborranys i lliuraments per etapes i afegir una explicació breu de l'alumnat. Coincideix amb el regulador universitari anglès, que [demana més proves en formats segurs, com exàmens presencials o orals](pieza:2026-11-12/ofs-evaluacion-sin-ia), i considera la sortida d'un detector, com a molt, una prova més.",
+   "L'altra línia va ser [Claude Fable 5.2](pieza:2026-11-09/fable-mythos-5-2), que Anthropic va presentar el 9 de novembre i que els grups van posar a prova de seguida amb materials d'aula. Un docent va obtenir amb un sol encàrrec [una animació amb veu sobre la fotosíntesi](pieza:2026-11-10/fable-animacion-fotosintesis), que va jutjar «més que acceptable» per a batxillerat, i en [un segon vídeo, sobre la respiració cel·lular](pieza:2026-11-11/respiracion-celular-revisor), va afegir un agent que revisa el contingut científic abans de produir-lo: una pauta útil per a qualsevol que generi material amb IA.",
+   "A Vibe Coding Educativo, Felip Sarroca i Gil [va demanar a Codex que modelés a Blender les màquines de la Revolució Industrial](pieza:2026-11-14/revolucion-industrial-blender-codex) per a la seva web de 4t d'ESO, tot i que el seu ordinador no podia obrir el programa. L'exemple mostra que un agent de programació pot manejar eines lliures que un docent no sabria fer servir, a canvi de demanar-li millores successives."
+  ],
+  "piezas": ["2026-11-14/detectores-ia-evaluar-proceso", "2026-11-12/ofs-evaluacion-sin-ia", "2026-11-09/fable-mythos-5-2", "2026-11-10/fable-animacion-fotosintesis", "2026-11-11/respiracion-celular-revisor", "2026-11-14/revolucion-industrial-blender-codex"]
+ },
+ "grupos": {
+  "chatgpt": {
+   "titulo": "Els organismes van donar pautes per avaluar i per ensenyar a qüestionar la IA",
+   "parrafos": [
+    "El regulador universitari anglès no es va quedar en l'avís. [La seva guia i l'informe en què es basa](pieza:2026-11-12/ofs-ia-educacion-superior), elaborat amb Advance HE, sostenen que una prova que es pot superar amb IA sense els coneixements que mesura s'ha de substituir, i recullen el cas de la Universitat de Bath, que separa un carril tancat, sense IA, i un altre d'obert, dissenyat comptant-hi. Encara que s'adreça a les universitats angleses, el seu capítol sobre el redisseny de l'avaluació serveix a docents de qualsevol nivell.",
+    "Per a secundària, la UNESCO proposa [cinc unitats perquè l'alumnat de 13 a 15 anys qüestioni les respostes de la IA](pieza:2026-11-12/unesco-ia-decides), amb cinc preguntes que es repeteixen en totes i una regla de treball: tractar una resposta d'IA com una pista, no com una font. Cada secció es pot donar com a lliçó independent i algunes activitats caben en una sola sessió; la guia és en anglès.",
+    "A Espanya, [l'INTEF presentava a SIMO](pieza:2026-11-13/intef-guias-ia-simo) l'actualització 2026 de la seva guia sobre la IA en educació i unes orientacions per integrar-la als centres. I [Microsoft va anunciar Classroom](pieza:2026-11-12/microsoft-classroom), que reuneix tasques, qualificacions i eines d'IA en una sola pantalla, no substitueix Teams i arribarà el 2027 sense cost addicional per als centres amb els plans A1, A3, A5 i A7."
+   ],
+   "piezas": ["2026-11-12/ofs-ia-educacion-superior", "2026-11-12/unesco-ia-decides", "2026-11-13/intef-guias-ia-simo", "2026-11-12/microsoft-classroom"]
+  },
+  "vce": {
+   "titulo": "La setmana va ensenyar a demanar codi a Fable i va sumar recursos per a l'aula i els conservatoris",
+   "parrafos": [
+    "Per programar amb el nou model d'Anthropic, [la seva guia explica que Fable 5.2 es comporta diferent segons qui figuri com a propietari del codi](pieza:2026-11-11/prompt-propiedad-codigo-fable): si se li diu que és el responsable, unifica el codi repetit al voltant del 75 % de les vegades, davant de menys del 10 % sense aquesta frase, segons les proves de l'empresa, però gasta més tokens i fa canvis que ningú no ha demanat. Per això recomana no fer-la servir quan es vol tocar el mínim i revisar el resum de canvis.",
+    "Entre els recursos, [Relleu Obert](pieza:2026-11-12/relleu-obert), d'Aarón Fortuño, converteix un lloc real en una maqueta 3D imprimible; és gratuït i de codi obert, i segons el seu autor calcula el model al navegador, sense desar dades en un servidor. Va néixer de treballar el relleu amb alumnat de primària, per a qui el paper resulta poc significatiu.",
+    "La gestió dels conservatoris va ser l'altre fil. José Luis Miralles Bono va presentar [Tribunator](pieza:2026-11-10/tribunator), que planifica tribunals, aules i horaris de les proves d'accés i comprova que no hi hagi conflictes, i [una eina per aplicar l'ordre de prelació](pieza:2026-11-12/prelacion-admision-conservatorios-cv) de l'Ordre 8/2026 a la Comunitat Valenciana. [La setmana del repositori](pieza:2026-11-13/semana-del-repositorio) presenta altres tretze recursos seus, amb normativa, horaris, vacants i calendaris d'aquests centres al costat de jocs i eines d'aula."
+   ],
+   "piezas": ["2026-11-11/prompt-propiedad-codigo-fable", "2026-11-12/relleu-obert", "2026-11-10/tribunator", "2026-11-12/prelacion-admision-conservatorios-cv", "2026-11-13/semana-del-repositorio"]
+  },
+  "edumedia": {
+   "titulo": "Els esquemes en SVG i les simulacions amb agents obren vies per al material d'aula",
+   "parrafos": [
+    "[Una prova amb tres models avançats](pieza:2026-11-11/svg-celula-tres-modelos) va donar làmines de la cèl·lula animal sense errors de contingut en demanar-les en SVG, el format de dibuix vectorial. El seu autor ho atribueix al fet que el mateix model escriu el dibuix, encara que és una hipòtesi per contrastar; la pauta pràctica és demanar així els esquemes on importa l'exactitud i revisar-los igualment.",
+    "[Primer, de Wharton Generative AI Labs](pieza:2026-11-13/primer-wharton), és un sistema de codi obert en què un equip d'agents entrevista el docent, li presenta un disseny per aprovar i construeix una simulació per a l'alumnat, amb informes després de cada sessió. Els seus autors adverteixen que és un prototip que no s'ha avaluat a les aules ni s'ha revisat en matèria de privacitat de l'alumnat.",
+    "Per transcriure classes o entrevistes, [Scribe v3 d'ElevenLabs](pieza:2026-11-13/elevenlabs-scribe-v3) redueix un 35 % els errors en castellà, segons l'empresa, però processa per defecte als Estats Units, una dada a tenir en compte amb veus de l'alumnat. I els agents comencen a manejar programes de 3D: [Unreal Engine 5.9](pieza:2026-11-12/unreal-engine-5-9-ia) incorpora MCP en una versió experimental, i [el rodatge de «Buzz»](pieza:2026-11-09/buzz-flujo-claude-blender) va combinar Claude, Blender per MCP i ulleres de realitat virtual, amb un cost alt en crèdits."
+   ],
+   "piezas": ["2026-11-11/svg-celula-tres-modelos", "2026-11-13/primer-wharton", "2026-11-13/elevenlabs-scribe-v3", "2026-11-12/unreal-engine-5-9-ia", "2026-11-09/buzz-flujo-claude-blender"]
+  }
+ },
+ "repaso": ["sin cambios: cada afirmación contrastada con su pieza (nombres, cifras, organismos, planes, plazos y advertencias coinciden), claves copiadas de la entrada y de su grupo, medida entre 150 y 250 palabras (general unas 228, ChatGPT-IA-edu unas 216, VCE unas 215, EduMedia-IAG unas 200) y a lo sumo seis enlaces."]
+}

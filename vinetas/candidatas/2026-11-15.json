@@ -1,0 +1,420 @@
+{
+ "fecha": "2026-11-15",
+ "candidatas": [
+  {
+   "pieza": "declarar-uso-ia-transparencia",
+   "idea": "Algoritmo rellena por su cuenta la plantilla de tres frases de toda la clase y tranquiliza a Tiza: la tercera, «la redacción fue mía», es la única verdad.",
+   "guion": {
+    "vinetas": [
+     {
+      "cartela": "En el aula, explicando cómo declarar el uso de IA.",
+      "escenario": "aula",
+      "objeto": "folio",
+      "lleva": "tiza",
+      "tiza": {
+       "expresion": "neutral",
+       "postura": "sostener",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "pensativo",
+       "postura": "pensar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "Tres frases: «Usé IA para…», «Después verifiqué…» y «La redacción fue mía».",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "aula",
+      "tiza": {
+       "expresion": "sorprendido",
+       "postura": "cruzar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "orgulloso",
+       "postura": "arriba",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "¡Hecho! Ya he rellenado las de toda la clase.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "aula",
+      "tiza": {
+       "expresion": "preocupado",
+       "postura": "cabeza",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "contento",
+       "postura": "senalar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "Tranquila, la tercera es verdad: la redacción fue mía.",
+        "tipo": "habla"
+       }
+      ]
+     }
+    ]
+   },
+   "cabe": true
+  },
+  {
+   "pieza": "declarar-uso-ia-transparencia",
+   "idea": "Tiza le encarga a Algoritmo la norma del centro que aclara cómo declarar la IA y, al leerla, se da cuenta de que la primera declaración tiene que ser la de la propia norma.",
+   "guion": {
+    "vinetas": [
+     {
+      "cartela": "En la sala de profes, redactando la norma sobre IA.",
+      "escenario": "sala_profes",
+      "objeto": "portatil",
+      "tiza": {
+       "expresion": "pensativo",
+       "postura": "pensar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "orgulloso",
+       "postura": "arriba",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "Hay que aclarar qué usos de IA son aceptables y cómo se declaran.",
+        "tipo": "habla"
+       },
+       {
+        "quien": "algoritmo",
+        "texto": "¡Te redacto la norma en un segundo!",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "sala_profes",
+      "objeto": "folio",
+      "lleva": "algoritmo",
+      "tiza": {
+       "expresion": "neutral",
+       "postura": "cruzar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "orgulloso",
+       "postura": "sostener",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "Lista. Punto tres: todo uso de IA se declara, sin excepción.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "sala_profes",
+      "objeto": "folio",
+      "lleva": "tiza",
+      "tiza": {
+       "expresion": "riendo",
+       "postura": "sostener",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "sorprendido",
+       "postura": "encoger",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "Pues empezamos por la norma: «Usé IA para redactar esta norma…»",
+        "tipo": "habla"
+       }
+      ]
+     }
+    ]
+   },
+   "cabe": true
+  },
+  {
+   "pieza": "modern-web-guidance",
+   "idea": "Algoritmo se resiste a la guía que corrige su conocimiento desfasado y recomienda no instalarla «por si envía datos»; Tiza le recuerda a qué se dedica él.",
+   "guion": {
+    "vinetas": [
+     {
+      "cartela": "En una formación en línea sobre agentes de código.",
+      "escenario": "videollamada",
+      "tiza": {
+       "expresion": "neutral",
+       "postura": "senalar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "sorprendido",
+       "postura": "abajo",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "Esta guía de Chrome corrige lo que los modelos saben de la web y ya no vale.",
+        "tipo": "habla"
+       },
+       {
+        "quien": "algoritmo",
+        "texto": "¿Desfasado, yo?",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "videollamada",
+      "tiza": {
+       "expresion": "pensativo",
+       "postura": "pensar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "preocupado",
+       "postura": "cruzar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "Leeré los documentos. Pero no la instales: a saber qué datos envía.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "videollamada",
+      "tiza": {
+       "expresion": "harto",
+       "postura": "jarras",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "avergonzado",
+       "postura": "encoger",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "Claro, tú nunca te quedas con nada de lo que te pego.",
+        "tipo": "habla"
+       }
+      ]
+     }
+    ]
+   },
+   "cabe": true
+  },
+  {
+   "pieza": "gemini4-hydrogen-orchestrator",
+   "idea": "Algoritmo le aplica a Tiza el modo Orchestrator con los exámenes: él planifica, ella corrige; de madrugada, el plan va estupendamente (remate mudo, giro en el rótulo).",
+   "guion": {
+    "vinetas": [
+     {
+      "cartela": "De noche, en casa, con los exámenes sin corregir.",
+      "escenario": "casa_noche",
+      "objeto": "examenes",
+      "tiza": {
+       "expresion": "agotado",
+       "postura": "cabeza",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "orgulloso",
+       "postura": "senalar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "No llego.",
+        "tipo": "habla"
+       },
+       {
+        "quien": "algoritmo",
+        "texto": "Modo Orchestrator: uno planifica y el otro hace el trabajo.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "casa_noche",
+      "objeto": "examenes",
+      "tiza": {
+       "expresion": "pensativo",
+       "postura": "cruzar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "orgulloso",
+       "postura": "pensar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "Yo planifico, tú corriges. Y si te atascas, retomo yo.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "cartela": "Las tres de la madrugada. La planificación va muy bien.",
+      "escenario": "casa_noche",
+      "objeto": "examenes",
+      "tiza": {
+       "expresion": "agotado",
+       "postura": "abajo",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "cargando",
+       "postura": "pensar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": []
+     }
+    ]
+   },
+   "cabe": true
+  },
+  {
+   "pieza": "seedream-55",
+   "idea": "Algoritmo presume de aguantar cien rondas de edición sobre la misma imagen; Tiza tiene justo el cartel que dirección no deja de retocar, y en la ronda 100 llega el veredicto.",
+   "guion": {
+    "vinetas": [
+     {
+      "cartela": "En la biblioteca, con el cartel del día del libro.",
+      "escenario": "biblioteca",
+      "objeto": "portatil",
+      "tiza": {
+       "expresion": "pensativo",
+       "postura": "pensar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "orgulloso",
+       "postura": "senalar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "Puedo retocar una imagen cien veces sin que cambie lo que no toco.",
+        "tipo": "habla"
+       },
+       {
+        "quien": "tiza",
+        "texto": "Perfecto. Dirección aún quiere cambiar alguna cosita.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "cartela": "Ronda 63.",
+      "escenario": "biblioteca",
+      "objeto": "notificaciones",
+      "lleva": "tiza",
+      "tiza": {
+       "expresion": "neutral",
+       "postura": "sostener",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "cargando",
+       "postura": "abajo",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "Ahora, el título más grande. Y el fondo, transparente.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "cartela": "Ronda 100.",
+      "escenario": "biblioteca",
+      "objeto": "notificaciones",
+      "lleva": "tiza",
+      "tiza": {
+       "expresion": "harto",
+       "postura": "sostener",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "agotado",
+       "postura": "cabeza",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "Dicen que mejor como la primera.",
+        "tipo": "habla"
+       }
+      ]
+     }
+    ]
+   },
+   "cabe": false,
+   "no_cabe": [
+    "viñeta 1: habla primero quien está a la derecha, pero uno encima del otro los globos no caben ni con el de arriba a todo el ancho (sobran 33 px)"
+   ]
+  }
+ ]
+}

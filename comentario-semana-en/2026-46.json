@@ -1,0 +1,41 @@
+{"semana": "2026-46", "hay_comentario": true,
+ "general": {
+  "titulo": "The week called for assessing the process rather than trusting detectors",
+  "parrafos": [
+   "Assessment was the matter of greatest substance. [Sunday's feature](pieza:2026-11-14/detectores-ia-evaluar-proceso) reviews studies, regulation and educational guidance to conclude that a detector of generated text provides, at most, an indication, and proposes a plan at no cost for any subject: declare which uses of AI are permitted in each task, ask for drafts and submissions in stages and add a short explanation from students. It chimes with the English university regulator, which [calls for more evidence in secure formats, such as in-person or oral exams](pieza:2026-11-12/ofs-evaluacion-sin-ia), and regards a detector's output as, at most, one more piece of evidence.",
+   "The other thread was [Claude Fable 5.2](pieza:2026-11-09/fable-mythos-5-2), which Anthropic unveiled on 9 November and which the groups quickly put to the test with classroom materials. One teacher obtained with a single request [an animation with a voiceover on photosynthesis](pieza:2026-11-10/fable-animacion-fotosintesis), which they judged “more than acceptable” for sixth-form students, and in [a second video, on cellular respiration](pieza:2026-11-11/respiracion-celular-revisor), added an agent that checks the scientific content before producing it: a useful guideline for anyone generating material with AI.",
+   "In Vibe Coding Educativo, Felip Sarroca i Gil [asked Codex to model the machines of the Industrial Revolution in Blender](pieza:2026-11-14/revolucion-industrial-blender-codex) for his Year 11 website, even though his computer could not open the program. The example shows that a coding agent can handle free tools that a teacher would not know how to use, in exchange for asking it for successive improvements."
+  ],
+  "piezas": ["2026-11-14/detectores-ia-evaluar-proceso", "2026-11-12/ofs-evaluacion-sin-ia", "2026-11-09/fable-mythos-5-2", "2026-11-10/fable-animacion-fotosintesis", "2026-11-11/respiracion-celular-revisor", "2026-11-14/revolucion-industrial-blender-codex"]
+ },
+ "grupos": {
+  "chatgpt": {
+   "titulo": "Public bodies issued guidance on assessing and on teaching students to question AI",
+   "parrafos": [
+    "The English university regulator did not stop at the warning. [Its guidance and the report it draws on](pieza:2026-11-12/ofs-ia-educacion-superior), produced with Advance HE, hold that an assessment that can be passed with AI without the knowledge it measures must be replaced, and include the case of the University of Bath, which separates a closed, AI-free lane from an open one designed with AI in mind. Although it is addressed to English universities, its chapter on redesigning assessment is useful to teachers at any level.",
+    "For secondary schools, UNESCO proposes [five units for students aged 13 to 15 to question AI's answers](pieza:2026-11-12/unesco-ia-decides), with five questions that recur in all of them and one working rule: treat an AI answer as a clue, not as a source. Each section can be taught as a stand-alone lesson and some activities fit into a single session; the guide is in English.",
+    "In Spain, [INTEF presented at SIMO](pieza:2026-11-13/intef-guias-ia-simo) the 2026 update of its guide on AI in education and some guidelines for integrating it in schools. And [Microsoft announced Classroom](pieza:2026-11-12/microsoft-classroom), which brings assignments, grades and AI tools together on a single screen, does not replace Teams and will arrive in 2027 at no extra cost for schools on the A1, A3, A5 and A7 plans."
+   ],
+   "piezas": ["2026-11-12/ofs-ia-educacion-superior", "2026-11-12/unesco-ia-decides", "2026-11-13/intef-guias-ia-simo", "2026-11-12/microsoft-classroom"]
+  },
+  "vce": {
+   "titulo": "The week showed how to ask Fable for code and added resources for the classroom and conservatoires",
+   "parrafos": [
+    "For programming with Anthropic's new model, [its guide explains that Fable 5.2 behaves differently depending on who is named as the owner of the code](pieza:2026-11-11/prompt-propiedad-codigo-fable): if it is told that it is the person responsible, it consolidates duplicated code around 75% of the time, compared with under 10% without that sentence, according to the company's tests, but it uses more tokens and makes changes that nobody has asked for. It therefore recommends not using it when you want to touch as little as possible, and checking the summary of changes.",
+    "Among the resources, [Relleu Obert](pieza:2026-11-12/relleu-obert), by Aarón Fortuño, turns a real place into a printable 3D model; it is free and open source, and according to its author it calculates the model in the browser, without storing data on a server. It grew out of working on relief with primary school pupils, for whom paper proves of little meaning.",
+    "The management of conservatoires was the other thread. José Luis Miralles Bono presented [Tribunator](pieza:2026-11-10/tribunator), which plans panels, rooms and timetables for entrance tests and checks that there are no clashes, and [a tool for applying the order of priority](pieza:2026-11-12/prelacion-admision-conservatorios-cv) laid down in Order 8/2026 in the Valencian Community. [The repository week](pieza:2026-11-13/semana-del-repositorio) presents thirteen other resources of his, with regulations, timetables, vacancies and calendars for these centres alongside games and classroom tools."
+   ],
+   "piezas": ["2026-11-11/prompt-propiedad-codigo-fable", "2026-11-12/relleu-obert", "2026-11-10/tribunator", "2026-11-12/prelacion-admision-conservatorios-cv", "2026-11-13/semana-del-repositorio"]
+  },
+  "edumedia": {
+   "titulo": "SVG diagrams and agent-based simulations open up routes for classroom material",
+   "parrafos": [
+    "[A test with three advanced models](pieza:2026-11-11/svg-celula-tres-modelos) produced charts of the animal cell without content errors when they were requested in SVG, the vector drawing format. Its author attributes this to the model itself writing the drawing, although that is a hypothesis yet to be tested; the practical guideline is to request diagrams this way where accuracy matters and to check them regardless.",
+    "[Primer, from Wharton Generative AI Labs](pieza:2026-11-13/primer-wharton), is an open-source system in which a team of agents interviews the teacher, presents a design for approval and builds a simulation for students, with reports after each session. Its authors warn that it is a prototype that has not been evaluated in classrooms or reviewed in terms of student privacy.",
+    "For transcribing lessons or interviews, [ElevenLabs' Scribe v3](pieza:2026-11-13/elevenlabs-scribe-v3) cuts errors in Spanish by 35%, according to the company, but processes by default in the United States, something to bear in mind with students' voices. And agents are starting to operate 3D programs: [Unreal Engine 5.9](pieza:2026-11-12/unreal-engine-5-9-ia) incorporates MCP in an experimental version, and [the shoot of “Buzz”](pieza:2026-11-09/buzz-flujo-claude-blender) combined Claude, Blender via MCP and virtual reality headsets, at a high cost in credits."
+   ],
+   "piezas": ["2026-11-11/svg-celula-tres-modelos", "2026-11-13/primer-wharton", "2026-11-13/elevenlabs-scribe-v3", "2026-11-12/unreal-engine-5-9-ia", "2026-11-09/buzz-flujo-claude-blender"]
+  }
+ },
+ "repaso": ["sin cambios: cada afirmación contrastada con su pieza (nombres, cifras, organismos, planes, plazos y advertencias coinciden), claves copiadas de la entrada y de su grupo, medida entre 150 y 250 palabras (general unas 228, ChatGPT-IA-edu unas 216, VCE unas 215, EduMedia-IAG unas 200) y a lo sumo seis enlaces."]
+}

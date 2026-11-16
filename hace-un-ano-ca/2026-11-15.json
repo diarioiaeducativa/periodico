@@ -1,0 +1,18 @@
+{"fecha": "2026-11-15", "hay_pieza": true,
+ "piezas": [{"id": "contrastar-varias-ia-model-council", "seccion": "hace-un-ano", "importancia": 3,
+             "grupo": "chatgpt", "fecha_original": "2025-11-16",
+             "antetitulo": "Comprovar què diu la IA",
+             "titular": "Contrastar diverses IA era un truc casolà; avui Perplexity ho fa en una sola consulta",
+             "entradilla": "Al novembre de 2025, per refiar-se d'una resposta es recomanava preguntar a dues o tres intel·ligències artificials i fer servir una altra per buscar-ne les discrepàncies. Al febrer de 2026, Perplexity va convertir aquest mètode en una funció.",
+             "cuerpo": [
+               "El 16 de novembre de 2025, a ChatGPT-IA-edu, es comentava un article sobre els riscos de donar per bo el que diu la IA sense sentit crític. La resposta va ser un mètode: quan importa la precisió, fer la mateixa petició a dos o tres models diferents, passar les respostes a un altre perquè assenyali en què discrepen i revisar després tot el procés en persona. També s'aconsellava demanar al model que expliqués el que deia, sobretot si no quadrava amb el que s'esperava: així es veu si patina.",
+               "El 5 de febrer de 2026, Perplexity va presentar [Model Council](https://www.perplexity.ai/hub/blog/introducing-model-council): una sola consulta va alhora a tres models, com Claude Opus 4.6, GPT-5.2 o Gemini 3.0, segons el seu anunci, i un altre model reuneix les respostes, resol els conflictes quan pot i assenyala en què coincideixen i en què no. Va sortir només a la web i per als subscriptors del seu pla Max.",
+               "El que aleshores exigia obrir diverses pestanyes i copiar i enganxar cap avui en una sola pregunta. L'última part del mètode, en canvi, no la substitueix cap funció: revisar el resultat continua sent tasca del docent."
+             ],
+             "fuentes": [
+               {"titulo": "Perplexity: Introducing Model Council (5-2-2026) (en anglès)", "url": "https://www.perplexity.ai/hub/blog/introducing-model-council"}
+             ],
+             "ilustracion_alt": "Díptic partit per una línia vertical. A l'esquerra, «Nov. 2025»: tres respostes de tres IA que una persona, dibuixada amb cap i espatlles i retolada «A mà», compara. A la dreta, «Avui»: les mateixes tres respostes entren en un únic requadre blau amb dues zones, «Coincideixen», amb una marca de verificació, i «Difereixen».",
+             "mensaje": {"grupo": "chatgpt", "id": 42154},
+             "comprobado": "Mensajes #42151, #42154, #42155, #42160 y #42161 de ChatGPT-IA-edu (16-11-2025) contra la entrada; el #42154 cargado en t.me/ChatGPTedu/42154 (16-11-2025, propone usar 2 o 3 IA y otra para las discrepancias). Blog oficial de Perplexity abierto: publicado el 5-2-2026; consulta a tres modelos a la vez (ejemplos Claude Opus 4.6, GPT 5.2, Gemini 3.0), sintetizador que resuelve conflictos cuando puede y muestra coincidencias y diferencias; solo web y plan Max, móvil «más adelante». No se afirma qué planes lo tienen hoy. Sin nada sobre Perplexity en publicado.txt, así que no hay enlace interno. Tema y producto no están en «Ya contado». Unas 224 palabras con la entradilla.",
+             "repaso": "sin cambios"}]}

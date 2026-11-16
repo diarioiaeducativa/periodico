@@ -1,0 +1,51 @@
+{
+  "fecha": "2026-11-15",
+  "piezas": [
+    {
+      "id": "enfonsar-la-flota",
+      "seccion": "vibecoding",
+      "repositorio": "dia",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "New in the repository",
+      "titular": "Battleships in Catalan, against the machine or online with a room code",
+      "entradilla": "“Enfonsar la flota” is a web version of the classic battleships game, with a 10×10 board, which works on coordinates and strategy in primary and secondary school.",
+      "cuerpo": [
+        "“Enfonsar la flota” is a Catalan version of the well-known battleships game, created by Felip Sarroca i Gil and shared in the Vibe Coding Educativo resource repository. The interface, in Catalan, opens directly in the browser, with no sign-up screen, and can be used on a computer or a phone.",
+        "The board is 10×10, with rows from A to J and columns from 1 to 10. Each player places five ships, horizontally or vertically, and turns alternate with shots reported as water, hit or sunk. The first person to sink the opponent's five ships wins. A “Regles” button explains how the game works within the page itself.",
+        "The start screen offers two modes. In “Partida en línia” a room is created and its code or a QR code is shared so that another person can join; a code received from someone else can also be entered. In “Contra la màquina” there are three difficulty levels, called Grumet (easy), Capità (medium) and Almirall (hard). According to the entry and its author's presentation, the mode against the machine also works offline, and the page offers a button to install it as an app on the device.",
+        "For primary and secondary teachers, the game can be useful in logical-mathematical thinking: locating squares with a letter and a number, reasoning from what is known about the board and planning a strategy. The online mode lets students play in pairs from different devices, while the mode against the machine lets each student practise on their own. Because it is in Catalan, it also fits work on the game's vocabulary in that language.",
+        "The page states that the code is published under the AGPL v3 licence and that the contents are CC BY-NC-SA 4.0. The buttons and texts shown are in Catalan only; the entry does not mention other languages."
+      ],
+      "recursos": [
+        {
+          "id": "enfonsar-la-flota",
+          "titulo": "Enfonsar la flota",
+          "autoria": "Felip Sarroca i Gil",
+          "url": "https://ja.cat/flota",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://ja.cat/flota",
+          "licencia": "AGPL v3 (code) · CC BY-NC-SA 4.0 (contents)",
+          "captura": "2026-11-15-enfonsar-la-flota.jpg",
+          "captura_alt": "Start screen of the game with two cards: “Partida en línia”, with a button to create a room and a code field, and “Contra la màquina”, with three difficulty levels.",
+          "texto": []
+        }
+      ],
+      "fuentes": [
+        {
+          "titulo": "Enfonsar la flota (in Catalan)",
+          "url": "https://ja.cat/flota"
+        },
+        {
+          "titulo": "Presentation in Vibe Coding Educativo (in Spanish)",
+          "url": "https://t.me/vceduca/7674/15021"
+        }
+      ],
+      "comprobado": "Se miró la captura (pantalla de inicio con “Partida en línia” y “Contra la màquina”, niveles Grumet, Capità y Almirall, botones Instal·la, So y Regles, pie con autoría y licencias; coincide con captura_alt) y el texto visible. Se abrió la web con WebFetch (el enlace redirige a felipsarroca.github.io/jocs/Flota/): reglas, cinco barcos, turnos alternos, sala con código o QR, instalación y modo contra la máquina sin conexión; la interfaz solo aparece en catalán y no hay selector de idioma. La entrada (título, autoría, licencia, ficha, captura, idiomas “Català”) coincide con la pieza. El mensaje de Telegram no se pudo leer con WebFetch; se comparó con el texto que trae la entrada. No se jugó una partida en línea. Lo de que funciona sin conexión se apoya en la ficha, el mensaje del autor y el texto de la página. Sin enlaces a lo ya publicado ni fuentes nombradas por enlazar."
+    }
+  ],
+  "descartado": [],
+  "repaso": [
+    "Párrafo 2: “Gana quien hunde antes…” → “Gana la persona que hunde antes…” (norma de estilo sobre “quien”).",
+    "Resto sin cambios: datos, autoría, licencia, ficha, captura y captura_alt coinciden con la entrada y la captura; extensión (~330 palabras) y titular (≤90) correctos."
+  ]
+}

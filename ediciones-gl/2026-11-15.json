@@ -1,0 +1,153 @@
+{
+  "fecha": "2026-11-15",
+  "hay_edicion": true,
+  "motivo": "Día normal: un debate sobre declarar o uso de IA no grupo xeral, dúas novidades de programación con axentes en Vibe Coding Educativo e unha de imaxe en EduMedia-IAG. O demais (Relleu Obert, Buzz, Eduvers, a máquina de vapor con Codex) xa estaba publicado.",
+  "piezas": [
+    {
+      "id": "declarar-uso-ia-transparencia",
+      "seccion": "debates",
+      "importancia": 1,
+      "grupo": "chatgpt",
+      "antetitulo": "Integridade académica",
+      "titular": "Declarar o uso de IA: un docente pide aos centros aclarar que usos son aceptables",
+      "entradilla": "Un docente pregunta se os centros, moi centrados en detectar traballos xerados con IA, explican con suficiente claridade que usos son aceptables e como declaralos.",
+      "cuerpo": [
+        "O debate habitual nos centros é como detectar os traballos feitos con IA. Un docente propuxo en ChatGPT-IA-edu desprazalo cara á transparencia do proceso, a partir de [«Verdad a medias: ¿hay que declarar cómo hemos utilizado la IA?»](https://profechef.substack.com/p/verdad-a-medias-hay-que-declarar), entrega da súa serie «Familias con inteligencia». O seu autor é [Chema Falcó](https://profechef.substack.com), profesor de secundaria e bacharelato; o diario xa contou outras entregas da serie sobre [os deberes feitos con IA](pieza:2026-11-01/familias-deberes-ia) e sobre [a porcentaxe dun detector](pieza:2026-11-08/detector-ia-no-es-prueba).",
+        "A entrega parte de dous alumnos de 1.º de Bacharelato, Laura e Pablo, nun traballo no que se permite usar IA se se declara. Laura usouna para ideas e para comprobar requisitos, pero o seu informe presenta o traballo como individual; Pablo declarou un uso mínimo e despois recoñeceu que recorrera a ela de forma exhaustiva. Segundo o autor, os casos serven para traballar co alumnado a integridade académica, a autoría, a responsabilidade e a trazabilidade da aprendizaxe, e defende que declarar non resta mérito, senón que fai verificable a autoría. Propón un modelo de tres frases («Usei IA para…», «Despois verifiquei…», «A investigación e a redacción foron miñas») e remite á guía do INTEF, que inclúe un modelo de declaración.",
+        "No grupo, o autor engadiu a pregunta de fondo para centros e docentes: se se está explicando con suficiente claridade que usos son aceptables, cales non e como deben declararse. Preocúpalle, dixo, que o alumnado que quere actuar correctamente perciba que declarar pode prexudicalo. A mensaxe pechou preguntando se se pide unha declaración de uso de IA e de que tipo; non consta que o grupo respondese no día.",
+        "A mesma idea de declarar os usos admitidos e pedir evidencias do proceso é a que propón [a reportaxe do domingo sobre os detectores de IA](pieza:2026-11-14/detectores-ia-evaluar-proceso)."
+      ],
+      "fuentes": [
+        {
+          "titulo": "«Verdad a medias: ¿hay que declarar cómo hemos utilizado la IA?» (Chema Falcó, Substack) (en castelán)",
+          "url": "https://profechef.substack.com/p/verdad-a-medias-hay-que-declarar"
+        }
+      ],
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 54407
+      },
+      "comprobado": "Mensaxes #54407 e #54408 (embed de Telegram). Entrada de Substack aberta (profechef.substack.com/p/verdad-a-medias-hay-que-declarar, 15-11-2026): Laura e Pablo de 1.º de Bacharelato, o modelo de tres frases, a remisión á guía do INTEF e que declarar non resta mérito. A preocupación do alumnado que teme prexudicarse é da mensaxe do autor no grupo, non figura na entrada; atribúese á mensaxe e o titular xa non a dá por feita. Nome do autor na cabeceira do seu Substack. Ligazóns ao publicado (familias-deberes-ia, detector-ia-no-es-prueba, detectores-ia-evaluar-proceso) comprobadas en publicado.txt e coa busca de texto: o diario xa citara a Falcó nesas dúas pezas.",
+      "ilustracion": "Esquema de dos caminos de un trabajo escolar: uno con 'proceso declarado' (borradores, herramientas usadas) que lleva a una balanza equilibrada, y otro con 'proceso oculto' que lleva a una interrogación; en medio, una pregunta 'qué usos son aceptables y cómo se declaran'.",
+      "ilustracion_alt": "Esquema coa pregunta «Que usos valen?» no alto. Á esquerda, un documento cunha frecha azul que leva a unha balanza, baixo o rótulo «Proceso declarado». Á dereita, un documento cunha frecha que leva a unha interrogación vermella, baixo o rótulo «Proceso agochado»."
+    },
+    {
+      "id": "modern-web-guidance",
+      "seccion": "vibecoding",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Programar con axentes",
+      "titular": "Chrome publica Modern Web Guidance 1.0, unha guía da web actual para axentes de código",
+      "entradilla": "A guía reúne solucións verificadas por expertos e datos de compatibilidade para corrixir o coñecemento desfasado dos modelos.",
+      "cuerpo": [
+        "En Vibe Coding Educativo comentouse que os modelos que xeran código poden estar adestrados con datos desfasados de desenvolvemento web e de infraestrutura. Como posible remedio compartiuse [Modern Web Guidance 1.0](https://developer.chrome.com/blog/modern-web-guidance-v1?hl=es-419), publicada o 10 de novembro por Chrome for Developers.",
+        "Segundo o artigo, inclúe unha base ampliada de guías con solucións compatibles entre navegadores, cada unha revisada por expertos, e datos de compatibilidade baseados en Baseline. Engade un fluxo de modernización que analiza o código existente (HTML, CSS, JavaScript e package.json) en busca de melloras seguras; nesta primeira versión, con análise estática dun número limitado de patróns. Tamén ofrece un panel público de avaliacións que compara resultados con e sen a guía. Instálase con `npx modern-web-guidance@latest install`, ou desde os mercados de complementos de axentes como Claude Code, Codex ou Cursor. Firefox e Edge súmanse a Chrome para dar soporte ao proxecto.",
+        "No grupo, unha persoa pasou o artigo a un asistente de IA, que recomendou consultar os documentos pero non instalar o programa por se envía datos a Google. O artigo non menciona que datos envía ou deixa de enviar, así que esa advertencia non se puido confirmar. Outra persoa contou que o seu asistente lle suxeriu o mesmo e unha alternativa: descargar a documentación en arquivos .md e engadila ao cartafol do proxecto ou como unha skill dos axentes."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Modern Web Guidance 1.0 (Chrome for Developers) (en castelán)",
+          "url": "https://developer.chrome.com/blog/modern-web-guidance-v1?hl=es-419"
+        }
+      ],
+      "mensaje": {
+        "grupo": "vce",
+        "id": 15015
+      },
+      "comprobado": "Artigo aberto: compoñentes, instalación (npx e mercados de Claude Code, Codex e Cursor), data (10-11-2026), análise estática limitada, panel público e que Firefox e Edge se suman a Chrome. Quítase «o proxecto naceu en Chrome» do borrador, que o artigo non di. O artigo non fala de telemetría; a advertencia sobre o envío de datos queda como non confirmada. Mensaxes #15015, #15019 e #15020 (embed de #15015 aberto). Sen publicacións anteriores sobre o tema no diario.",
+      "ilustracion": null,
+      "ilustracion_alt": "Tres cadros unidos por frechas: un arquivo cun reloxo, co rótulo «Datos vellos», unha guía de libro aberto, co rótulo «Guía web actual», e un arquivo de código cunha marca vermella de visto, co rótulo «Código actual»."
+    },
+    {
+      "id": "gemini4-hydrogen-orchestrator",
+      "seccion": "novedades",
+      "importancia": 3,
+      "grupo": "vce",
+      "antetitulo": "Google Antigravity",
+      "titular": "Antigravity incorpora Gemini 4 Hydrogen e un modo Orchestrator que reparte o traballo",
+      "entradilla": "Orchestrator combina Hydrogen con modelos máis potentes; o acceso depende do plan de pagamento de Google.",
+      "cuerpo": [
+        "Un membro de Vibe Coding Educativo sinalou que tiña pendente probar o modo Orchestrator de [Google Antigravity](https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity), anunciado o 12 de novembro xunto con Gemini 4 Hydrogen.",
+        "Segundo Google, Hydrogen serve para tarefas cotiás de programación e de axentes, con catro niveis de razoamento (baixo, medio, alto por defecto e un novo «xhigh»). Orchestrator é unha opción do despregable de modelos que o combina con outros máis potentes, como [Gemini 4 Carbon](pieza:2026-10-28/gemini4carbon): Carbon explora e planifica, Hydrogen edita e proba, e Carbon retoma se Hydrogen se atasca. Son cifras da empresa: na súa proba Terminal-Bench 4.1, Orchestrator achégase ao éxito de Carbon cun 24 % menos de cota e un 19 % menos de tempo de media.",
+        "Hydrogen chega de forma gradual ás subscricións de pagamento Google AI Pro e Ultra. Orchestrator con Carbon ou con Argon é para Google AI Ultra, e Orchestrator con Argon tamén para Google AI Pro de pagamento. As empresas poden acceder a ambos con Gemini for business. O diario contou o 29 de outubro que Carbon se presentou só para especialistas en ciberseguranza; a páxina de Antigravity non explica como se ampliou, así que convén comprobar na propia ferramenta que ofrece cada plan."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Gemini 4 Hydrogen and Orchestrator (Google Antigravity Blog) (en inglés)",
+          "url": "https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity"
+        }
+      ],
+      "mensaje": {
+        "grupo": "vce",
+        "id": 15016
+      },
+      "comprobado": "Entrada do blog de Antigravity aberta: data (12-11-2026), niveis, funcionamento, cifras (da empresa) e plans. Ligazón a gemini4carbon comprobada en publicado.txt; esa peza di que Carbon era só para especialistas en ciberseguranza, e a páxina de Antigravity ofrécello en Orchestrator a Ultra: engádese a salvidade. Mensaxe #15016 aberta.",
+      "ilustracion": null,
+      "ilustracion_alt": "Baixo o título «Orchestrator», dous cadros: á esquerda un cun esquema de ramas, co rótulo «Carbon planifica», e á dereita un cun arquivo de código, co rótulo «Hydrogen edita». Unha frecha leva o traballo do primeiro ao segundo e unha frecha vermella volve atrás, co rótulo «Se se atasca»."
+    },
+    {
+      "id": "seedream-55",
+      "seccion": "multimedia",
+      "importancia": 3,
+      "grupo": "edumedia",
+      "antetitulo": "Imaxe con IA",
+      "titular": "Seedream 5.5 promete manter unha imaxe estable en 100 roldas de edición",
+      "entradilla": "ByteDance presenta unha versión do seu xerador de imaxes pensada para seguir retocando a mesma imaxe sen que mude o que non se toca, e que xera fondos transparentes.",
+      "cuerpo": [
+        "ByteDance Seed presentou o 9 de novembro [Seedream 5.5](https://seed.bytedance.com/en/blog/more-realistic-images-more-stable-editing-across-100-rounds-introducing-seedream-5-5), que compartiu EduMedia-IAG. Segundo a empresa, conserva a nivel de píxel as zonas non editadas e reduce os cambios de cor e a perda de detalle, o que permite seguir traballando sobre unha mesma imaxe ata 100 roldas de edición; a súa demostración encadea 100 edicións sobre a mesma imaxe.",
+        "A segunda novidade é a xeración nativa de imaxes con canle alfa, con transparencia total e parcial, de modo que non fai falta quitar o fondo á parte. Pode resultar útil para preparar personaxes e elementos para materiais de aula. ByteDance engade melloras en luz, pel e materiais, e no texto dentro da imaxe; son datos da súa propia avaliación, sen detalles de mostra nin método.",
+        "A páxina enlaza o acceso a Dola e ao BytePlus Playground, pero non dá calendario de despregamento nin indica en que rexións estará dispoñible, polo que a súa dispoñibilidade en Europa non está confirmada. Anuncia tamén unha versión Pro da serie, sen data."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Introducing Seedream 5.5 (ByteDance Seed) (en inglés)",
+          "url": "https://seed.bytedance.com/en/blog/more-realistic-images-more-stable-editing-across-100-rounds-introducing-seedream-5-5"
+        }
+      ],
+      "mensaje": {
+        "grupo": "edumedia",
+        "id": 12252
+      },
+      "comprobado": "Entrada oficial aberta: data (09-11-2026), 100 roldas, canle alfa, melloras e cifras de avaliación (da empresa), accesos (Dola e BytePlus Playground), versión Pro sen data, sen rexións nin calendario. Titular acurtado (o do borrador pasaba de 90 caracteres). Quítase «sobre a imaxe dunha persoa», que non consta na fonte. Sen publicacións anteriores sobre Seedream.",
+      "ilustracion": null,
+      "ilustracion_alt": "Baixo o título «Seedream 5.5», unha imaxe pasa por frechas circulares, co rótulo «100 roldas», e sae igual que entrou. Á dereita, un círculo azul sobre un fondo de cadrados alternos, co rótulo «Fondo transparente»."
+    }
+  ],
+  "breves": [
+    {
+      "texto": "Segundo o Financial Times, recollido por Deseret News, Spotify prepara para principios de 2027 un complemento de pagamento (de 4 a 5 dólares ao mes, segundo esa información) para crear remesturas e versións con IA, con acordos con Universal, Merlin e Believe. Spotify non confirmou nin data nin prezo; en agosto xa anunciara o proxecto con Universal e Merlin.",
+      "url": "https://www.deseret.com/entertainment/2026/11/11/spotify-to-launch-ai-generated-remixes-and-covers/",
+      "grupo": "edumedia",
+      "mensaje": {
+        "grupo": "edumedia",
+        "id": 12256
+      }
+    },
+    {
+      "texto": "Intelética, revista de acceso aberto de IBERAMIA sobre intelixencia artificial, ética e sociedade, admite artigos en castelán, portugués e inglés.",
+      "url": "https://journal.iberamia.org/index.php/inteletica/index",
+      "grupo": "chatgpt",
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 54388
+      }
+    }
+  ],
+  "descartado": [
+    "Informe de Envato sobre IA no traballo creativo (53 % sen dicirllo ao cliente): a nota de prensa devolve 403 e a busca só atopa o primeiro informe, de 2025, con outras cifras; non se puido confirmar.",
+    "Xemelgo dixital dunha maqueta industrial con Manus e Antigravity (Magda Diaz-G): sen ligazón nin web que comprobar, só capturas.",
+    "Skill «Versiona tu canción favorita» (jc): sen ligazón nin recurso aberto que comprobar.",
+    "FigureLabs (xerador de figuras científicas): comentario dun membro, de pagamento, e advertiuse de erros; non se verificou o produto.",
+    "Simulación da captura de Starship en three.js (X): a publicación de X non se puido abrir.",
+    "Relleu Obert, Buzz e Eduvers: xa publicados (relleu-obert, buzz-*, eduvers-simulaciones) e sen novidade.",
+    "Aplicación do diario en Google Play, avisos do bot e sesión sobre soberanía dixital (sen relación con IA na aula): administración interna ou fóra de tema."
+  ],
+  "repaso": [
+    "Debate: aberta a entrada de Substack (o borrador non a tiña); o titular xa non dá por feito que o alumnado «teme» (iso é da mensaxe do autor, non da entrada), a entradilla xa non afirma que os centros «explican pouco», o corpo recolle o que di a entrada (caso de Laura e Pablo, modelo, INTEF) e enlázanse as dúas entregas anteriores de Falcó xa publicadas.",
+    "Modern Web Guidance: titular acurtado (94 a 88 caracteres); quitado «naceu en Chrome», que a fonte non di; engadidos Claude Code, Codex e Cursor como mercados.",
+    "Antigravity: engadida a salvidade de que o diario contou que Carbon era só para ciberseguranza e a páxina non explica o cambio.",
+    "Seedream: titular acurtado (de 102 a 73 caracteres) e quitado «sobre a imaxe dunha persoa», que non consta.",
+    "Breve de Spotify: a ligazón de TechCrunch (4-8-2026) non mencionaba Believe e dicía que non había data; cámbiase pola fonte compartida (Deseret, que cita o Financial Times) con data de principios de 2027, prezo e as cautelas.",
+    "Breve da flota: nome completo, tal como o publica o grupo, e funcionamento sen conexión. Breve de Intelética: sen cambios."
+  ]
+}

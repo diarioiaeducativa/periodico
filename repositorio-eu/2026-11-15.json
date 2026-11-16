@@ -1,0 +1,51 @@
+{
+  "fecha": "2026-11-15",
+  "piezas": [
+    {
+      "id": "enfonsar-la-flota",
+      "seccion": "vibecoding",
+      "repositorio": "dia",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Berria biltegian",
+      "titular": "Flota hondoratzea katalanez, makinaren aurka edo sareko gela-kode batekin",
+      "entradilla": "«Enfonsar la flota» ontzien joko klasikoaren web bertsioa da, 10×10eko taulakoa, eta koordenatuak eta estrategia lantzen ditu Lehen Hezkuntzan eta Derrigorrezko Bigarren Hezkuntzan.",
+      "cuerpo": [
+        "«Enfonsar la flota» flota hondoratzeko joko ezagunaren katalanezko bertsioa da. Felip Sarroca i Gilek sortu du eta Vibe Coding Educativoren Baliabideen biltegian partekatu da. Interfazea katalanez dago, nabigatzailean zuzenean irekitzen da, izena eman beharrik gabe, eta ordenagailutik zein telefono mugikorretik erabil daiteke.",
+        "Taula 10×10ekoa da, A-tik J-ra doazen errenkadekin eta 1etik 10era doazen zutabeekin. Jokalari bakoitzak bost ontzi jartzen ditu, horizontalean edo bertikalean, eta txandak txandakatzen dira, ura, ukitua edo hondoratua adierazten duten tiroekin. Aurkariaren bost ontziak lehenago hondoratzen dituen pertsonak irabazten du. «Regles» botoiak jokoaren funtzionamendua azaltzen du orrian bertan.",
+        "Hasierako pantailak bi modu eskaintzen ditu. «Partida en línia» moduan gela bat sortzen da, eta haren kodea edo QR bat partekatzen da beste pertsona bat sar dadin; jasotako kode bat ere sar daiteke. «Contra la màquina» moduan hiru zailtasun-mailatik bat aukeratzen da: Grumet (erraza), Capità (ertaina) eta Almirall (zaila). Fitxaren eta egilearen aurkezpenaren arabera, makinaren aurkako moduak konexiorik gabe ere funtzionatzen du, eta orriak gailuan aplikazio gisa instalatzeko botoi bat eskaintzen du.",
+        "Lehen eta Bigarren Hezkuntzako irakasleentzat, jokoa pentsamendu logiko-matematikoaren arloan erabil daiteke: letra eta zenbaki batekin laukiak kokatzea, taulari buruz dakigunetik abiatuta arrazoitzea eta estrategia bat planifikatzea. Lineako moduari esker, ikasleek bikoteka jolas dezakete gailu desberdinetatik, eta makinaren aurkako moduari esker, ikasle bakoitzak bere kabuz praktika dezake. Katalanez dagoenez, hizkuntza horretako jokoaren hiztegia lantzeko ere egokia da.",
+        "Orriak adierazten du kodea AGPL v3 lizentziarekin argitaratzen dela eta edukiak CC BY-NC-SA 4.0 lizentziapekoak direla. Ikusten diren botoiak eta testuak katalanez baino ez daude; fitxak ez du beste hizkuntzarik aipatzen."
+      ],
+      "recursos": [
+        {
+          "id": "enfonsar-la-flota",
+          "titulo": "Enfonsar la flota",
+          "autoria": "Felip Sarroca i Gil",
+          "url": "https://ja.cat/flota",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://ja.cat/flota",
+          "licencia": "AGPL v3 (kodea) · CC BY-NC-SA 4.0 (edukiak)",
+          "captura": "2026-11-15-enfonsar-la-flota.jpg",
+          "captura_alt": "Jokoaren hasierako pantaila, bi txartelekin: «Partida en línia», gela bat sortzeko botoiarekin eta kode-eremuarekin, eta «Contra la màquina», hiru zailtasun-mailarekin.",
+          "texto": []
+        }
+      ],
+      "fuentes": [
+        {
+          "titulo": "Enfonsar la flota (katalanez)",
+          "url": "https://ja.cat/flota"
+        },
+        {
+          "titulo": "Aurkezpena Vibe Coding Educativon (gaztelaniaz)",
+          "url": "https://t.me/vceduca/7674/15021"
+        }
+      ],
+      "comprobado": "Se miró la captura (pantalla de inicio con «Partida en línia» y «Contra la màquina», niveles Grumet, Capità y Almirall, botones Instal·la, So y Regles, pie con autoría y licencias; coincide con captura_alt) y el texto visible. Se abrió la web con WebFetch (el enlace redirige a felipsarroca.github.io/jocs/Flota/): reglas, cinco barcos, turnos alternos, sala con código o QR, instalación y modo contra la máquina sin conexión; la interfaz solo aparece en catalán y no hay selector de idioma. La entrada (título, autoría, licencia, ficha, captura, idiomas «Català») coincide con la pieza. El mensaje de Telegram no se pudo leer con WebFetch; se comparó con el texto que trae la entrada. No se jugó una partida en línea. Lo de que funciona sin conexión se apoya en la ficha, el mensaje del autor y el texto de la página. Sin enlaces a lo ya publicado ni fuentes nombradas por enlazar."
+    }
+  ],
+  "descartado": [],
+  "repaso": [
+    "Párrafo 2: «Gana quien hunde antes…» → «Gana la persona que hunde antes…» (norma de estilo sobre «quien»).",
+    "Resto sin cambios: datos, autoría, licencia, ficha, captura y captura_alt coinciden con la entrada y la captura; extensión (~330 palabras) y titular (≤90) correctos."
+  ]
+}

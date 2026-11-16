@@ -1,0 +1,41 @@
+{"semana": "2026-46", "hay_comentario": true,
+ "general": {
+  "titulo": "A semana pediu avaliar o proceso en lugar de fiarse dos detectores",
+  "parrafos": [
+   "A avaliación foi o asunto de máis fondo. [A reportaxe do domingo](pieza:2026-11-14/detectores-ia-evaluar-proceso) repasa estudos, normativa e guías educativas para concluír que un detector de texto xerado dá, como moito, un indicio, e propón un plan sen custo para calquera materia: declarar que usos da IA se admiten en cada tarefa, pedir borradores e entregas por etapas e engadir unha explicación breve do alumnado. Coincide co regulador universitario inglés, que [pide máis probas en formatos seguros, como exames presenciais ou orais](pieza:2026-11-12/ofs-evaluacion-sin-ia), e considera a saída dun detector, como moito, unha proba máis.",
+   "A outra liña foi [Claude Fable 5.2](pieza:2026-11-09/fable-mythos-5-2), que Anthropic presentou o 9 de novembro e que os grupos puxeron a proba de seguido con materiais de aula. Un docente obtivo cun só encargo [unha animación con voz sobre a fotosíntese](pieza:2026-11-10/fable-animacion-fotosintesis), que xulgou «máis que aceptable» para bacharelato, e nun [segundo vídeo, sobre a respiración celular](pieza:2026-11-11/respiracion-celular-revisor), engadiu un axente que revisa o contido científico antes de producilo: unha pauta útil para calquera que xere material con IA.",
+   "En Vibe Coding Educativo, Felip Sarroca i Gil [pediulle a Codex que modelase en Blender as máquinas da Revolución Industrial](pieza:2026-11-14/revolucion-industrial-blender-codex) para a súa web de 4.º da ESO, aínda que o seu ordenador non podía abrir o programa. O exemplo mostra que un axente de programación pode manexar ferramentas libres que un docente non sabería usar, a cambio de pedirlle melloras sucesivas."
+  ],
+  "piezas": ["2026-11-14/detectores-ia-evaluar-proceso", "2026-11-12/ofs-evaluacion-sin-ia", "2026-11-09/fable-mythos-5-2", "2026-11-10/fable-animacion-fotosintesis", "2026-11-11/respiracion-celular-revisor", "2026-11-14/revolucion-industrial-blender-codex"]
+ },
+ "grupos": {
+  "chatgpt": {
+   "titulo": "Os organismos deron pautas para avaliar e para ensinar a cuestionar a IA",
+   "parrafos": [
+    "O regulador universitario inglés non se quedou no aviso. [A súa guía e o informe no que se apoia](pieza:2026-11-12/ofs-ia-educacion-superior), elaborado con Advance HE, sosteñen que unha proba que se pode superar con IA sen os coñecementos que mide debe substituírse, e recollen o caso da Universidade de Bath, que separa un carril pechado, sen IA, e outro aberto, deseñado contando con ela. Aínda que se dirixe ás universidades inglesas, o seu capítulo sobre o redeseño da avaliación serve a docentes de calquera nivel.",
+    "Para secundaria, a UNESCO propón [cinco unidades para que o alumnado de 13 a 15 anos cuestione as respostas da IA](pieza:2026-11-12/unesco-ia-decides), con cinco preguntas que se repiten en todas e unha regra de traballo: tratar unha resposta de IA como unha pista, non como unha fonte. Cada sección pode darse como lección independente e algunhas actividades caben nunha soa sesión; a guía está en inglés.",
+    "En España, [o INTEF presentaba no SIMO](pieza:2026-11-13/intef-guias-ia-simo) a actualización 2026 da súa guía sobre a IA na educación e unhas orientacións para integrala nos centros. E [Microsoft anunciou Classroom](pieza:2026-11-12/microsoft-classroom), que reúne tarefas, cualificacións e ferramentas de IA nunha soa pantalla, non substitúe a Teams e chegará en 2027 sen custo adicional para os centros cos plans A1, A3, A5 e A7."
+   ],
+   "piezas": ["2026-11-12/ofs-ia-educacion-superior", "2026-11-12/unesco-ia-decides", "2026-11-13/intef-guias-ia-simo", "2026-11-12/microsoft-classroom"]
+  },
+  "vce": {
+   "titulo": "A semana ensinou a pedirlle código a Fable e sumou recursos para a aula e os conservatorios",
+   "parrafos": [
+    "Para programar co novo modelo de Anthropic, [a súa guía explica que Fable 5.2 compórtase distinto segundo quen figure como dono do código](pieza:2026-11-11/prompt-propiedad-codigo-fable): se se lle di que é o responsable, unifica o código repetido ao redor do 75 % das veces, fronte a menos do 10 % sen esa frase, segundo as probas da empresa, pero gasta máis tokens e fai cambios que ninguén pediu. Por iso recomenda non usala cando se quere tocar o mínimo e revisar o resumo de cambios.",
+    "Entre os recursos, [Relleu Obert](pieza:2026-11-12/relleu-obert), de Aarón Fortuño, converte un lugar real nunha maqueta 3D imprimible; é gratuíto e de código aberto, e segundo o seu autor calcula o modelo no navegador, sen gardar datos nun servidor. Naceu de traballar o relevo con alumnado de primaria, para o que o papel resulta pouco significativo.",
+    "A xestión dos conservatorios foi o outro fío. José Luis Miralles Bono presentou [Tribunator](pieza:2026-11-10/tribunator), que planifica tribunais, aulas e horarios das probas de acceso e comproba que non haxa conflitos, e [unha ferramenta para aplicar a orde de prelación](pieza:2026-11-12/prelacion-admision-conservatorios-cv) da Orde 8/2026 na Comunitat Valenciana. [A semana do repositorio](pieza:2026-11-13/semana-del-repositorio) presenta outros trece recursos seus, con normativa, horarios, vacantes e calendarios destes centros xunto a xogos e ferramentas de aula."
+   ],
+   "piezas": ["2026-11-11/prompt-propiedad-codigo-fable", "2026-11-12/relleu-obert", "2026-11-10/tribunator", "2026-11-12/prelacion-admision-conservatorios-cv", "2026-11-13/semana-del-repositorio"]
+  },
+  "edumedia": {
+   "titulo": "Os esquemas en SVG e as simulacións con axentes abren vías para o material de aula",
+   "parrafos": [
+    "[Unha proba con tres modelos avanzados](pieza:2026-11-11/svg-celula-tres-modelos) deu láminas da célula animal sen erros de contido ao pedilas en SVG, o formato de debuxo vectorial. O seu autor atribúeo a que o propio modelo escribe o debuxo, aínda que é unha hipótese por contrastar; a pauta práctica é pedir así os esquemas onde importa a exactitude e revisalos igualmente.",
+    "[Primer, de Wharton Generative AI Labs](pieza:2026-11-13/primer-wharton), é un sistema de código aberto no que un equipo de axentes entrevista o docente, preséntalle un deseño para aprobar e constrúe unha simulación para o alumnado, con informes despois de cada sesión. Os seus autores advirten de que é un prototipo que non se avaliou en aulas nin se revisou en materia de privacidade do alumnado.",
+    "Para transcribir clases ou entrevistas, [Scribe v3 de ElevenLabs](pieza:2026-11-13/elevenlabs-scribe-v3) reduce un 35 % os erros en español, segundo a empresa, pero procesa por defecto nos Estados Unidos, un dato a ter en conta con voces do alumnado. E os axentes comezan a manexar programas de 3D: [Unreal Engine 5.9](pieza:2026-11-12/unreal-engine-5-9-ia) incorpora MCP nunha versión experimental, e [a rodaxe de «Buzz»](pieza:2026-11-09/buzz-flujo-claude-blender) combinou Claude, Blender por MCP e lentes de realidade virtual, cun custo alto en créditos."
+   ],
+   "piezas": ["2026-11-11/svg-celula-tres-modelos", "2026-11-13/primer-wharton", "2026-11-13/elevenlabs-scribe-v3", "2026-11-12/unreal-engine-5-9-ia", "2026-11-09/buzz-flujo-claude-blender"]
+  }
+ },
+ "repaso": ["sin cambios: cada afirmación contrastada con su pieza (nombres, cifras, organismos, planes, plazos y advertencias coinciden), claves copiadas de la entrada y de su grupo, medida entre 150 y 250 palabras (general unas 228, ChatGPT-IA-edu unas 216, VCE unas 215, EduMedia-IAG unas 200) y a lo sumo seis enlaces."]
+}

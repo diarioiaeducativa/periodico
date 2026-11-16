@@ -1,0 +1,90 @@
+{
+ "fecha": "2026-11-15",
+ "elegida": {
+  "n": 2,
+  "pieza": "declarar-uso-ia-transparencia",
+  "idea": "Chalk asks Algorithm to draft the school policy on declaring AI use and, on reading it, realises the first declaration has to be the policy's own.",
+  "guion": {
+   "vinetas": [
+    {
+     "cartela": "In the staff room, drafting the AI policy.",
+     "escenario": "sala_profes",
+     "objeto": "portatil",
+     "tiza": {
+      "expresion": "pensativo",
+      "postura": "pensar",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "orgulloso",
+      "postura": "arriba",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "We need to clarify which uses of AI are acceptable and how to declare them.",
+       "tipo": "habla"
+      },
+      {
+       "quien": "algoritmo",
+       "texto": "I'll draft the policy in a second!",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "sala_profes",
+     "objeto": "folio",
+     "lleva": "algoritmo",
+     "tiza": {
+      "expresion": "neutral",
+      "postura": "cruzar",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "orgulloso",
+      "postura": "sostener",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "algoritmo",
+       "texto": "Done. Point three: every use of AI must be declared, no exceptions.",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "sala_profes",
+     "objeto": "folio",
+     "lleva": "tiza",
+     "tiza": {
+      "expresion": "riendo",
+      "postura": "sostener",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "sorprendido",
+      "postura": "encoger",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Then let's start with the policy: “I used AI to write this policy…”",
+       "tipo": "habla"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "traduccion": "automatic AI translation"
+}

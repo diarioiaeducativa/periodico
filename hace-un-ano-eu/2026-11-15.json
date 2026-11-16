@@ -1,0 +1,18 @@
+{"fecha": "2026-11-15", "hay_pieza": true,
+ "piezas": [{"id": "contrastar-varias-ia-model-council", "seccion": "hace-un-ano", "importancia": 3,
+             "grupo": "chatgpt", "fecha_original": "2025-11-16",
+             "antetitulo": "AAk dioena egiaztatzea",
+             "titular": "Hainbat AA alderatzea etxeko trikimailua zen; gaur Perplexityk kontsulta bakarrean egiten du",
+             "entradilla": "2025eko azaroan, erantzun batean fidatzeko, bi edo hiru adimen artifizialei galdetzea eta beste bat erabiltzea desadostasunak bilatzeko gomendatzen zen. 2026ko otsailean, Perplexityk metodo hori funtzio bihurtu zuen.",
+             "cuerpo": [
+               "2025eko azaroaren 16an, ChatGPT-IA-edu taldean, AAk dioena zentzu kritikorik gabe ontzat hartzearen arriskuei buruzko artikulu bat komentatu zen. Erantzuna metodo bat izan zen: zehaztasuna garrantzitsua denean, eskaera bera bi edo hiru eredu desberdini egin, erantzunak beste bati pasa zeintzuetan ez datozen bat adieraz dezan, eta gero prozesu osoa pertsonalki berrikusi. Ereduari berak esandakoa azaltzeko eskatzea ere aholkatzen zen, batez ere espero zenarekin bat ez zetorrenean: horrela ikusten da hanka sartzen ari den.",
+               "2026ko otsailaren 5ean, Perplexityk [Model Council](https://www.perplexity.ai/hub/blog/introducing-model-council) aurkeztu zuen: kontsulta bakar bat hiru ereduri bidaltzen zaie aldi berean, esaterako Claude Opus 4.6, GPT-5.2 edo Gemini 3.0, haien iragarpenaren arabera, eta beste eredu batek erantzunak biltzen ditu, gatazkak ebazten ditu ahal duenean eta zeintzuetan datozen bat eta zeintzuetan ez adierazten du. Webean bakarrik atera zen eta Max planeko harpidedunentzat.",
+               "Orduan hainbat fitxa irekitzea eta kopiatu eta itsastea eskatzen zuena gaur galdera bakar batean sartzen da. Metodoaren azken zatia, ordea, ez du funtzio batek ere ordezkatzen: emaitza berrikustea irakaslearen lana izaten jarraitzen du."
+             ],
+             "fuentes": [
+               {"titulo": "Perplexity: Introducing Model Council (5-2-2026) (ingelesez)", "url": "https://www.perplexity.ai/hub/blog/introducing-model-council"}
+             ],
+             "ilustracion_alt": "Diptikoa lerro bertikal batez erdibituta. Ezkerrean, «2025 aza.»: hiru AAren hiru erantzun, «Eskuz» errotulatutako pertsona batek (burua eta sorbaldak marraztuta) alderatzen dituena. Eskuinean, «Gaur»: hiru erantzun horiek berak laukizuzen urdin bakarrean sartzen dira, bi eremurekin: «Bat datoz», egiaztapen-marka batekin, eta «Ezberdinak».",
+             "mensaje": {"grupo": "chatgpt", "id": 42154},
+             "comprobado": "Mensajes #42151, #42154, #42155, #42160 y #42161 de ChatGPT-IA-edu (16-11-2025) contra la entrada; el #42154 cargado en t.me/ChatGPTedu/42154 (16-11-2025, propone usar 2 o 3 IA y otra para las discrepancias). Blog oficial de Perplexity abierto: publicado el 5-2-2026; consulta a tres modelos a la vez (ejemplos Claude Opus 4.6, GPT 5.2, Gemini 3.0), sintetizador que resuelve conflictos cuando puede y muestra coincidencias y diferencias; solo web y plan Max, móvil «más adelante». No se afirma qué planes lo tienen hoy. Sin nada sobre Perplexity en publicado.txt, así que no hay enlace interno. Tema y producto no están en «Ya contado». Unas 224 palabras con la entradilla.",
+             "repaso": "sin cambios"}]}

@@ -1,0 +1,51 @@
+{
+  "fecha": "2026-11-15",
+  "piezas": [
+    {
+      "id": "enfonsar-la-flota",
+      "seccion": "vibecoding",
+      "repositorio": "dia",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Nou al repositori",
+      "titular": "Enfonsar la flota en català, contra la màquina o en línia amb un codi de sala",
+      "entradilla": "«Enfonsar la flota» és una versió web del clàssic joc dels vaixells, amb tauler de 10×10, que treballa les coordenades i l'estratègia a primària i secundària.",
+      "cuerpo": [
+        "«Enfonsar la flota» és una versió en català del conegut joc d'enfonsar la flota, creada per Felip Sarroca i Gil i compartida en el Repositori de recursos de Vibe Coding Educativo. La interfície, en català, s'obre directament al navegador, sense pantalla de registre, i es pot fer servir tant des de l'ordinador com des del mòbil.",
+        "El tauler és de 10×10, amb files de l'A a la J i columnes de l'1 al 10. Cada jugador col·loca cinc vaixells, en horitzontal o vertical, i els torns s'alternen amb trets que s'indiquen com aigua, tocat o enfonsat. Guanya la persona que enfonsa abans els cinc vaixells del rival. Un botó de «Regles» explica el funcionament dins de la mateixa pàgina.",
+        "La pantalla d'inici ofereix dos modes. A «Partida en línia» es crea una sala i es comparteix el seu codi o un QR perquè una altra persona hi entri; també es pot introduir un codi rebut. A «Contra la màquina» es tria entre tres nivells de dificultat, anomenats Grumet (fàcil), Capità (mitjà) i Almirall (difícil). Segons la fitxa i la presentació del seu autor, el mode contra la màquina funciona també sense connexió, i la pàgina ofereix un botó per instal·lar-la com a aplicació al dispositiu.",
+        "Per al professorat de primària i secundària, el joc pot servir en l'àrea de pensament logicomatemàtic: ubicar caselles amb una lletra i un número, raonar a partir del que se sap del tauler i planificar una estratègia. El mode en línia permet que l'alumnat jugui per parelles des de dispositius diferents, i el mode contra la màquina, que cada estudiant practiqui pel seu compte. Com que està en català, també encaixa en el treball del vocabulari del joc en aquesta llengua.",
+        "La pàgina indica que el codi es publica amb llicència AGPL v3 i que els continguts són CC BY-NC-SA 4.0. Els botons i textos que es veuen són només en català; la fitxa no esmenta altres llengües."
+      ],
+      "recursos": [
+        {
+          "id": "enfonsar-la-flota",
+          "titulo": "Enfonsar la flota",
+          "autoria": "Felip Sarroca i Gil",
+          "url": "https://ja.cat/flota",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://ja.cat/flota",
+          "licencia": "AGPL v3 (codi) · CC BY-NC-SA 4.0 (continguts)",
+          "captura": "2026-11-15-enfonsar-la-flota.jpg",
+          "captura_alt": "Pantalla d'inici del joc amb dues targetes: «Partida en línia», amb botó per crear una sala i camp de codi, i «Contra la màquina», amb tres nivells de dificultat.",
+          "texto": []
+        }
+      ],
+      "fuentes": [
+        {
+          "titulo": "Enfonsar la flota",
+          "url": "https://ja.cat/flota"
+        },
+        {
+          "titulo": "Presentació a Vibe Coding Educativo",
+          "url": "https://t.me/vceduca/7674/15021"
+        }
+      ],
+      "comprobado": "Se miró la captura (pantalla de inicio con «Partida en línia» y «Contra la màquina», niveles Grumet, Capità y Almirall, botones Instal·la, So y Regles, pie con autoría y licencias; coincide con captura_alt) y el texto visible. Se abrió la web con WebFetch (el enlace redirige a felipsarroca.github.io/jocs/Flota/): reglas, cinco barcos, turnos alternos, sala con código o QR, instalación y modo contra la máquina sin conexión; la interfaz solo aparece en catalán y no hay selector de idioma. La entrada (título, autoría, licencia, ficha, captura, idiomas «Català») coincide con la pieza. El mensaje de Telegram no se pudo leer con WebFetch; se comparó con el texto que trae la entrada. No se jugó una partida en línea. Lo de que funciona sin conexión se apoya en la ficha, el mensaje del autor y el texto de la página. Sin enlaces a lo ya publicado ni fuentes nombradas por enlazar."
+    }
+  ],
+  "descartado": [],
+  "repaso": [
+    "Párrafo 2: «Gana quien hunde antes…» → «Gana la persona que hunde antes…» (norma de estilo sobre «quien»).",
+    "Resto sin cambios: datos, autoría, licencia, ficha, captura y captura_alt coinciden con la entrada y la captura; extensión (~330 palabras) y titular (≤90) correctos."
+  ]
+}

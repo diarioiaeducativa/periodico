@@ -1,0 +1,92 @@
+{
+  "fecha": "2026-11-16",
+  "avisos": {
+    "chatgpt": {
+      "saludo": "Buenos días. Novedad: los artículos del diario ya se pueden escuchar, con el botón «Escuchar» de cada uno. Hoy, una pregunta para los centros.",
+      "puntos": [
+        "Un docente plantea si los centros, tan pendientes de detectar trabajos hechos con IA, explican con claridad qué usos son aceptables y cómo declararlos",
+        "En la viñeta de Tiza y Algoritmo, la IA redacta en un segundo la norma que obliga a declarar todo uso de IA, y la primera declaración tiene que ser la de la propia norma",
+        "Intelética, la revista de acceso abierto de IBERAMIA sobre inteligencia artificial, ética y sociedad, admite artículos en castellano, portugués e inglés"
+      ]
+    },
+    "vce": {
+      "saludo": "Buenos días. Novedad: los artículos del diario ya se pueden escuchar, con el botón «Escuchar» de cada uno. Hoy, novedades para programar con agentes y un juego en catalán.",
+      "puntos": [
+        "Chrome publica Modern Web Guidance 1.0, una guía de soluciones web actuales pensada para corregir el conocimiento desfasado de los modelos que generan código",
+        "El modo Orchestrator de Google Antigravity reparte el trabajo entre modelos: uno explora y planifica, otro edita y prueba, y el primero retoma si el segundo se atasca",
+        "Felip Sarroca i Gil ha publicado «Enfonsar la flota», un hundir la flota en catalán con partida en línea o contra la máquina, que sirve para trabajar coordenadas"
+      ],
+      "url": "https://diarioiaeducativa.github.io/n/15-vce.html"
+    },
+    "edumedia": {
+      "saludo": "Buenos días. Novedad: los artículos del diario ya se pueden escuchar, con el botón «Escuchar» de cada uno. Hoy, imagen, música y una pregunta sobre transparencia.",
+      "puntos": [
+        "Seedream 5.5 promete mantener estable una misma imagen durante 100 rondas de edición y genera fondos transparentes sin recortar nada aparte",
+        "Según el Financial Times, Spotify prepara para 2027 un complemento de pago para crear remezclas y versiones con IA, aunque la plataforma no confirma fecha ni precio",
+        "A raíz de un debate en el grupo general: declarar cómo se ha usado la IA en un trabajo hace verificable la autoría y no resta mérito al resultado"
+      ],
+      "url": "https://diarioiaeducativa.github.io/n/15-edumedia.html"
+    }
+  },
+  "instagram": "Esta semana arranca con una pregunta para los centros educativos: además de detectar trabajos hechos con IA, ¿explican con claridad qué usos son aceptables y cómo declararlos? El número recoge también dos novedades para programar con agentes, una guía de Chrome con soluciones web actuales y un modo de Google Antigravity que reparte el trabajo entre varios modelos, y un generador de imágenes que promete mantener estable una imagen tras cien ediciones.",
+  "titulo": "Diario de IA Educativa · Núm. 15",
+  "fecha_texto": "Lunes, 16 de noviembre de 2026",
+  "url": "https://diarioiaeducativa.github.io/?n=15",
+  "imagen": "https://diarioiaeducativa.github.io/portadas/2026-11-15-es.jpg",
+  "personas": [
+    {
+      "id": 64519607,
+      "piezas": [
+        {
+          "es": {
+            "titular": "Declarar el uso de IA: un docente pide a los centros aclarar qué usos son aceptables",
+            "url": "https://diarioiaeducativa.github.io/2026-11-15/declarar-uso-ia-transparencia.html"
+          },
+          "ca": {
+            "titular": "Declarar l'ús de la IA: un docent demana als centres aclarir quins usos són acceptables",
+            "url": "https://diarioiaeducativa.github.io/ca/2026-11-15/declarar-uso-ia-transparencia.html"
+          },
+          "gl": {
+            "titular": "Declarar o uso de IA: un docente pide aos centros aclarar que usos son aceptables",
+            "url": "https://diarioiaeducativa.github.io/gl/2026-11-15/declarar-uso-ia-transparencia.html"
+          },
+          "eu": {
+            "titular": "AAren erabilera adieraztea: irakasle batek ikastetxeei argitasuna eskatzen die",
+            "url": "https://diarioiaeducativa.github.io/eu/2026-11-15/declarar-uso-ia-transparencia.html"
+          },
+          "en": {
+            "titular": "Declaring AI use: a teacher asks schools to clarify which uses are acceptable",
+            "url": "https://diarioiaeducativa.github.io/en/2026-11-15/declarar-uso-ia-transparencia.html"
+          }
+        }
+      ]
+    },
+    {
+      "id": 978013977,
+      "piezas": [
+        {
+          "es": {
+            "titular": "Hundir la flota en catalán, contra la máquina o en línea con un código de sala",
+            "url": "https://diarioiaeducativa.github.io/2026-11-15/enfonsar-la-flota.html"
+          },
+          "ca": {
+            "titular": "Enfonsar la flota en català, contra la màquina o en línia amb un codi de sala",
+            "url": "https://diarioiaeducativa.github.io/ca/2026-11-15/enfonsar-la-flota.html"
+          },
+          "gl": {
+            "titular": "Afundir a flota en catalán, contra a máquina ou en liña cun código de sala",
+            "url": "https://diarioiaeducativa.github.io/gl/2026-11-15/enfonsar-la-flota.html"
+          },
+          "eu": {
+            "titular": "Flota hondoratzea katalanez, makinaren aurka edo sareko gela-kode batekin",
+            "url": "https://diarioiaeducativa.github.io/eu/2026-11-15/enfonsar-la-flota.html"
+          },
+          "en": {
+            "titular": "Battleships in Catalan, against the machine or online with a room code",
+            "url": "https://diarioiaeducativa.github.io/en/2026-11-15/enfonsar-la-flota.html"
+          }
+        }
+      ]
+    }
+  ]
+}
