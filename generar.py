@@ -2720,7 +2720,7 @@ def doc_html(texto, origen):
             titulo, i = ln[2:].strip(), i + 1
         elif m := re.match(r"(#{2,4}) (.*)", ln):
             n = len(m.group(1))
-            clase = ' class="ladillo"' if n == 2 else ""   # los apartados cortan las columnas, como en el reportaje
+            clase = ' class="doc-apartado"' if n == 2 else ""   # dentro de las columnas, como en «La redacción»
             out.append(f"<h{n}{clase}>{doc_linea(m.group(2), origen)}</h{n}>")
             i += 1
         elif ln.startswith("|"):
@@ -2761,7 +2761,7 @@ def doc_html(texto, origen):
     entradilla = ""
     if out and out[0].startswith("<p>"):
         entradilla = out.pop(0)[3:-4]
-    # Un texto corto entre dos títulos o tablas no se reparte en columnas de una línea: va a lo ancho
+    # Solo las tablas cortan las columnas; un texto corto entre dos tablas no se reparte en columnas de una línea
     agrupado, tramo = [], []
 
     def cierra():
@@ -2770,7 +2770,7 @@ def doc_html(texto, origen):
             agrupado.append(f'<div class="corto">{"".join(tramo)}</div>' if largo < DOC_CORTO else "".join(tramo))
             tramo.clear()
     for bloque in out:
-        if bloque.startswith(('<h2 class="ladillo">', '<figure class="tabla">')):
+        if bloque.startswith('<figure class="tabla">'):
             cierra()
             agrupado.append(bloque)
         else:
@@ -2779,7 +2779,7 @@ def doc_html(texto, origen):
     return titulo, entradilla, "\n".join(agrupado)
 
 
-DOC_CORTO = 900   # caracteres por debajo de los cuales un tramo de texto no va en columnas
+DOC_CORTO = 400   # caracteres por debajo de los cuales un tramo de texto entre tablas no va en columnas
 
 
 def pagina_documento(eds, ruta):
