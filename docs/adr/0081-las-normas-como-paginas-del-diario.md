@@ -17,10 +17,10 @@ que no son del diario. Se pidió una página propia, que siga al documento cuand
   listas, tablas (con el estilo de las del reportaje, en fichas en el móvil), citas, negritas, cursivas,
   código y enlaces. No se añade ninguna dependencia ni hay que reconstruir el contenedor.
 - Maqueta de artículo largo: el primer párrafo de entradilla, el texto en columnas en el ordenador con el
-  botón «Una columna» (ADR 0044) y el botón «Escuchar» (ADR 0073). Los títulos de los apartados van dentro
-  de las columnas, como en «La redacción», sin partirse ni quedarse solos al pie de una, para que los
-  apartados cortos no dejen huecos; solo las tablas cortan las columnas, y un texto muy corto entre dos
-  tablas (menos de 400 caracteres) va a lo ancho.
+  botón «Una columna» (ADR 0044) y el botón «Escuchar» (ADR 0073). El texto va por tramos de unos pocos
+  apartados (unos 2.400 caracteres), cada uno en sus tres columnas, para no tener que subir y bajar varias
+  pantallas; los títulos van dentro de las columnas, juntos con lo primero que les sigue para que ninguno se
+  quede solo al pie de una; las tablas van a lo ancho, y un texto muy corto entre dos tablas, también.
 - Los enlaces entre los tres documentos llevan a sus páginas; cada mención «ADR 0026» enlaza a ese
   registro en GitHub, y cada archivo o carpeta del repositorio citado en el texto (`encargos/`,
   `scripts/idiomas.py`) se abre al pulsarlo, en otra pestaña, y la carpeta se nombra sin la barra final.

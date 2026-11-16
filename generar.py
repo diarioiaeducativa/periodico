@@ -2975,6 +2975,26 @@ def doc_html(texto, origen):
                 bloque.append(lineas[i].strip())
                 i += 1
             out.append(f"<p>{doc_linea(' '.join(bloque), origen)}</p>")
+    # Cada título va con lo primero que le sigue (su primer párrafo o el primer punto de su lista), en un trozo que no
+    # se parte: Firefox no respeta break-after y el título se quedaba solo al pie de una columna (como en «La redacción»)
+    unido, k = [], 0
+    while k < len(out):
+        x = out[k]
+        sig = out[k + 1] if k + 1 < len(out) else ""
+        if x.startswith('<h2 class="doc-apartado">') and sig.startswith("<p>"):
+            unido.append(f'<div class="doc-cabeza">{x}{sig}</div>')
+            k += 2
+        elif x.startswith('<h2 class="doc-apartado">') and sig[:4] in ("<ul>", "<ol>"):
+            tag = sig[1:3]
+            items = re.findall(r"<li>.*?</li>", sig, re.S)
+            unido.append(f'<div class="doc-cabeza">{x}<{tag}>{items[0]}</{tag}></div>')
+            if items[1:]:
+                unido.append(f'<{tag} class="doc-sigue">{"".join(items[1:])}</{tag}>')
+            k += 2
+        else:
+            unido.append(x)
+            k += 1
+    out = unido
     # El primer párrafo es la entradilla; se aparta antes de agrupar
     entradilla = ""
     if out and out[0].startswith("<p>"):
@@ -2994,9 +3014,31 @@ def doc_html(texto, origen):
         else:
             tramo.append(bloque)
     cierra()
-    return titulo, entradilla, "\n".join(agrupado)
+    # En el ordenador, por tramos de unos pocos apartados, cada uno en sus tres columnas (como «La redacción», ADR
+    # 0047): todo el documento en tres columnas obligaba a subir y bajar varias pantallas al acabar cada una
+    tramos, tramo, largo = [], [], 0
+
+    def corta():
+        nonlocal largo
+        if tramo:
+            tramos.append(f'<div class="doc-bloque">{"".join(tramo)}</div>')
+            tramo.clear()
+        largo = 0
+    for bloque in [x for b in agrupado for x in ([b] if b.startswith(('<figure', '<div class="corto">'))
+                                                 else re.split(r'(?=<div class="doc-cabeza">|<h2 class="doc-apartado">)', b)) if x]:
+        if bloque.startswith(('<figure class="tabla">', '<div class="corto">')):
+            corta()
+            tramos.append(bloque)
+            continue
+        if bloque.startswith(('<div class="doc-cabeza">', '<h2 class="doc-apartado">')) and largo >= DOC_TRAMO:
+            corta()
+        tramo.append(bloque)
+        largo += len(re.sub(r"<[^>]+>", "", bloque))
+    corta()
+    return titulo, entradilla, "\n".join(tramos)
 
 
+DOC_TRAMO = 2400   # caracteres de texto a partir de los cuales el siguiente apartado empieza un tramo nuevo
 DOC_CORTO = 400   # caracteres por debajo de los cuales un tramo de texto entre tablas no va en columnas
 
 
