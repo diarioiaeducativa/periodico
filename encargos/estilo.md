@@ -27,16 +27,14 @@ noticia, cómo se compone el número y la reserva no son estilo: están en `docs
 - Castellano correcto y natural. Las traducciones, en su apartado.
 - **Lenguaje inclusivo, pero natural**: «el profesorado», «el alumnado», «las familias»; sin
   desdoblamientos ni signos raros.
-- **Sin el relativo «quien» o «quienes»** con el sentido de «la persona que» (Juanjo, 15-11-2026:
-  «no quiero que se use quien o quienes en este sentido»): «la persona que», un colectivo («el
+- **Sin el relativo «quien» o «quienes»** con el sentido de «la persona que»: «la persona que», un colectivo («el
   profesorado») o un giro con el asunto delante («separar la creación de la revisión», no «separar a
   quien crea de quien revisa»). El interrogativo, con tilde («¿quién?»), sí; una cita literal se
   deja como está.
 - **Lo que publica el diario son «artículos»**, no «piezas» (la palabra solo es interna, en los
   campos de los archivos). Un artículo puede ser una noticia, un breve, un reportaje.
 - **Lo que hace el diario con un tema: lo «publica», lo «recoge»** o el tema «sale en» el diario;
-  no lo «cuenta» (Juanjo, 14-11-2026: «cuenta no forma parte de mi vocabulario en este
-  contexto»). «El diario publicó el 3 de noviembre…», «como recogió el diario…».
+  no lo «cuenta». «El diario publicó el 3 de noviembre…», «como recogió el diario…».
 - Los nombres de productos, aplicaciones, grupos y documentos, tal como los escribe quien los hace
   («ChatGPT», «Vibe Coding Educativo»). Un recurso en catalán u otra lengua se describe en castellano
   y conserva su nombre; el título de una obra queda en su idioma.
@@ -64,11 +62,10 @@ noticia, cómo se compone el número y la reserva no son estilo: están en `docs
   nombre completo de quien lo publica. Un nombre de pila no identifica a nadie: si el recurso no
   dice quién lo hace, «su autor», y que la web no lo indica. Nunca se completa un apellido.
 - **Quién es quién lo dice la marca del material, no el nombre** (ADR 0066): los autores del diario
-  son solo los mensajes marcados `[autor del diario: …]`; otro «Juanjo» u otro «Raül» es otra
-  persona. Las marcas no se publican.
-- **Los autores del diario, como cualquiera**: Juan José de Haro (así, aunque en los grupos firme
-  «Juanjo de Haro») y Raül Torres se nombran como crédito de sus recursos igual que los demás, y sin
-  más.
+  son solo los mensajes marcados `[autor del diario: …]`; otra persona con el mismo nombre de pila es
+  otra persona. Las marcas no se publican.
+- **Los autores del diario, como cualquiera**: se nombran como crédito de sus recursos igual que los
+  demás, con el nombre completo con que firman el diario, aunque en los grupos usen otro.
 - **Los cargos, solo si tienen que ver con la noticia** (administrar un grupo, ser coautor del
   diario): si no, la persona es un docente más.
 - **Si el artículo trata del propio diario, lo dice** con esas palabras («este diario»).
@@ -94,8 +91,7 @@ noticia, cómo se compone el número y la reserva no son estilo: están en `docs
 ## Citas y otros idiomas
 
 - Citas breves y exactas, entre comillas, y pocas: el artículo explica, no copia.
-- **Ninguna cita solo en inglés** (Juanjo, 15-11-2026: «No debe haber fragmentos solo en inglés en
-  idioma no inglés»): o traducida, o con la traducción al lado entre paréntesis.
+- **Ninguna cita solo en inglés**: o traducida, o con la traducción al lado entre paréntesis.
 - Lo oficial ajeno (el título de una norma, de un informe) queda en su idioma original.
 
 ## Fuentes y enlaces
