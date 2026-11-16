@@ -14,7 +14,8 @@ noticia, cómo se compone el número y la reserva no son estilo: están en `docs
   texto se entiende solo, sin haber leído los mensajes ni otros artículos: qué es, por qué importa a
   un docente y dónde encontrarlo.
 - Lo que interesa al lector, no cómo funciona el diario por dentro: nada de agentes, ficheros,
-  programas ni servidores en lo que se publica, salvo que el artículo trate del propio diario.
+  programas ni servidores en lo que se publica, salvo que el artículo trate del propio diario o de
+  Anthropic (apartado «Rigor»).
 
 ## Tono
 
@@ -35,6 +36,22 @@ noticia, cómo se compone el número y la reserva no son estilo: están en `docs
   campos de los archivos). Un artículo puede ser una noticia, un breve, un reportaje.
 - **Lo que hace el diario con un tema: lo «publica», lo «recoge»** o el tema «sale en» el diario;
   no lo «cuenta». «El diario publicó el 3 de noviembre…», «como recogió el diario…».
+- **La IA no piensa ni quiere.** Nada de verbos que dan mente o intención a un programa («piensa»,
+  «entiende», «quiere», «miente»): un modelo genera, responde o da un resultado. Lo que decide es una
+  empresa o una persona: «OpenAI ha limitado…», no «ChatGPT ha decidido…». Lo que un modelo inventa
+  es una «respuesta inventada»; «alucinación», solo explicada.
+- **Vocabulario**: «inteligencia artificial», en minúscula, y su sigla, IA, nunca AI, salvo en
+  nombres propios («Google AI Studio»). «Chatbot» y «alucinar», sin comillas. Mejor «aplicación» que
+  «app», «en línea» que «online», «enlace» que «link» y «aprendizaje automático» que «machine
+  learning». *Prompt*, en cursiva. Un término que el lector puede no conocer se explica la primera
+  vez.
+- **Siglas**: una poco conocida se desarrolla la primera vez («la Agencia Española de Protección de
+  Datos (AEPD)»); una técnica inglesa (LLM, API, MCP) va con lo que es («un modelo de lenguaje
+  (LLM), el tipo de programa que hay detrás de ChatGPT»). Si no se vuelve a usar, no se pone.
+- **Sin condicional de rumor**: no «OpenAI habría lanzado…», sino «según [fuente], OpenAI ha
+  lanzado…» o «es posible que…».
+- **Frases claras**: una idea por frase, la palabra corriente antes que la técnica y fuera las
+  metáforas gastadas («cambio de paradigma», «en la era de la IA»).
 - Los nombres de productos, aplicaciones, grupos y documentos, tal como los escribe quien los hace
   («ChatGPT», «Vibe Coding Educativo»). Un recurso en catalán u otra lengua se describe en castellano
   y conserva su nombre; el título de una obra queda en su idioma.
@@ -46,7 +63,8 @@ noticia, cómo se compone el número y la reserva no son estilo: están en `docs
   los espacios: lo que no quepa va al antetítulo o a la entradilla.
 - **Antetítulo**: de dos a cinco palabras, sin verbo: el tipo de cosa o el ámbito («Guía oficial»,
   «Nuevo en el repositorio», «Del fondo de EduMedia»).
-- **Entradilla**: una o dos frases que resumen el artículo (dos o tres en el reportaje).
+- **Entradilla**: una o dos frases que resumen el artículo (dos o tres en el reportaje). No repite el
+  titular: aporta lo siguiente.
 - **El titular y la entradilla no dicen más que el cuerpo ni que la fuente.** Lo que el cuerpo
   matiza («según la empresa», «en los planes de pago», «es una hipótesis del autor») no desaparece
   arriba. Una prueba sin nada con que comparar no «demuestra» ni «sugiere» una causa.
@@ -69,6 +87,9 @@ noticia, cómo se compone el número y la reserva no son estilo: están en `docs
 - **Los cargos, solo si tienen que ver con la noticia** (administrar un grupo, ser coautor del
   diario): si no, la persona es un docente más.
 - **Si el artículo trata del propio diario, lo dice** con esas palabras («este diario»).
+- **El alumnado**: no se publica nada que lo identifique (nombre, imagen, ni centro y curso juntos),
+  aunque aparezca en el material compartido. De una herramienta para el aula se dice, según sus
+  condiciones, si pide datos del alumnado y si los usa para entrenar sus modelos; si no consta, se dice.
 
 ## Rigor
 
@@ -78,9 +99,17 @@ noticia, cómo se compone el número y la reserva no son estilo: están en `docs
   fechas, cifras, autores ni funciones.
 - **Lo que anuncia una empresa, con sus condiciones**: en qué plan, a qué precio, hasta cuándo, en qué
   países. «Gratis» o «para todos» se contrasta con sus condiciones.
+- **El lenguaje de las empresas, atribuido o fuera**: «revolucionario», «potente» o «sin
+  precedentes», solo dentro de una cita atribuida; el texto dice qué hace el producto. Un estudio o una
+  encuesta se presenta con quién lo hace y quién lo paga, y si es de la propia empresa, se dice
+  («según un estudio de la propia OpenAI»). Una nota de prensa no se reproduce: se identifica y se
+  reescribe.
+- **Cuando se habla de Anthropic o de Claude**, una frase recuerda que el diario lo escriben agentes de
+  Claude, para que el lector lo tenga en cuenta.
 - **Las cifras, con la precisión de la fuente** (sin decimales que la fuente no da) y una proporción
   con su cantidad absoluta («el doble, de 10 a 20 centros»). Si la fuente da cifras distintas según
-  la versión o el plan, se dice a cuál corresponde cada una.
+  la versión o el plan, se dice a cuál corresponde cada una. Del 20 % al 30 % son 10 puntos más, no
+  un 10 % más. Mejor «uno de cada ocho docentes» que «el 12,5 %».
 - **Los datos que cambian se fechan** («a 1 de noviembre de 2026»); lo demás no lleva fecha.
 - **Una página oficial puede estar desactualizada**: si contradice lo que el diario ya publicó con el
   documento delante, manda lo publicado, y se dice.
@@ -91,6 +120,8 @@ noticia, cómo se compone el número y la reserva no son estilo: están en `docs
 ## Citas y otros idiomas
 
 - Citas breves y exactas, entre comillas, y pocas: el artículo explica, no copia.
+- **Lo que va entre comillas se busca tal cual en la fuente**; si no aparece, se quita o se
+  parafrasea. Una frase tomada de una fuente va entre comillas o se reescribe.
 - **Ninguna cita solo en inglés**: o traducida, o con la traducción al lado entre paréntesis.
 - Lo oficial ajeno (el título de una norma, de un informe) queda en su idioma original.
 
@@ -105,6 +136,7 @@ Lo detallado está en `encargos/enlaces.md`; lo esencial:
 - **Lo ya publicado que está claramente relacionado, enlazado** con su clave (`pieza:AAAA-MM-DD/id`),
   con un texto que diga de qué trata, nunca «aquí».
 - El texto de un enlace nunca es «mensaje 123» ni una dirección desnuda.
+- Un enlace que descarga un archivo lo dice: «la guía (PDF)».
 
 ## Forma
 
@@ -115,8 +147,9 @@ Lo detallado está en `encargos/enlaces.md`; lo esencial:
   dos o tres ideas en un texto largo.
 - Enlaces en Markdown (`[texto](url)`); en los textos para avisos y redes, texto plano (lo dicen sus
   guías).
-- **Lo que se guarda para otro día no depende del día** (los artículos de reserva, «Hace un año»
-  escrito por adelantado): nada de «hoy», «esta semana» ni «acaba de».
+- **Nunca «hoy», «ayer» ni «esta semana»**: la fecha o el día («el jueves 12»). El número sale el día
+  siguiente a las conversaciones y queda en la hemeroteca; lo que se guarda para otro día (la reserva,
+  «Hace un año» escrito por adelantado) tampoco dice «acaba de».
 
 ## Las traducciones
 
@@ -131,8 +164,17 @@ castellano y en el registro natural de cada lengua, no calcado. Lo que recibe ca
 - **Euskera**: batua de Euskaltzaindia; «irakasleak», «ikasleak»; la IA es «adimen artifiziala» (AA).
 - **Inglés**: británico; «teachers», «students»; el diario es «the paper»; comillas inglesas (“ ”) y
   el porcentaje pegado a la cifra (25%); lo que se dijo en inglés se copia de la fuente.
+- Lo propio de España (la ESO, las oposiciones, una comunidad autónoma, la LOMLOE) se explica en la
+  traducción, sobre todo en la inglesa.
 - Los nombres de productos y de los grupos no se traducen. Una fuente en otra lengua lleva su marca
   («(en castellà)», «(in Spanish)»).
+
+## Correcciones
+
+- Un error se corrige sin esperar a que nadie lo pida, en el mismo artículo, con su nota
+  («Corregido el…») y en los cinco idiomas (ADR 0055).
+- Si el error estaba en el titular, en los avisos o en las redes, la corrección llega también allí.
+- No se retira un artículo entero si basta con cambiar una parte.
 
 ## Lo que se comprueba sin IA
 
