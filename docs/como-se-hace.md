@@ -38,13 +38,13 @@ Las normas del número:
 
 | Norma | Dónde se aplica | Cómo se comprueba |
 | --- | --- | --- |
-| **Como mínimo tres artículos.** Lo que falte sale de la reserva. | `scripts/reserva.py` (`MINIMO`), cada noche antes de traducir (ADR 0068) | El programa cuenta los artículos del número. |
-| **Como mínimo un artículo de cada grupo.** Si un grupo no da para ninguno, entra uno de su reserva. | La redacción lo procura (`encargos/redaccion.md`); el revisor convierte en artículo un breve del grupo que falte; la reserva completa (ADR 0076 y 0077) | El revisor y el programa de la reserva. |
+| **Como mínimo tres artículos.** Lo que falte sale de la reserva. | El programa de la reserva, cada noche antes de traducir (ADR 0068) | El programa cuenta los artículos del número. |
+| **Como mínimo un artículo de cada grupo.** Si un grupo no da para ninguno, entra uno de su reserva. | La redacción lo procura; el revisor convierte en artículo un breve del grupo que falte; la reserva completa (ADR 0076 y 0077) | El revisor y el programa de la reserva. |
 | **Solo lo que se ha hablado en los grupos.** Nada de noticias generales de IA. | Encargo de la redacción | El revisor compara cada artículo con los mensajes. |
 | **No es noticia** la administración de los grupos, los saludos, las quejas personales ni la Biblioteca digital (que tiene su sección). | Encargo de la redacción | El revisor. |
 | **No se repite lo ya publicado.** Lo nuevo de un tema ya tratado sale como breve que enlaza el artículo anterior (ADR 0011). | Redacción y revisor, con el buscador de lo publicado (ADR 0061) | El revisor busca cada nombre y cada titular en todo lo publicado. |
 | **Nadie acapara el número**: como norma, un artículo por persona y dos por producto o empresa. | Encargo de la redacción | El revisor. |
-| **Si un día no da para un número digno, no lo hay**: no se rellena. Sale entonces la reserva. | Redacción (`hay_edicion: false`) y reserva | — |
+| **Si un día no da para un número digno, no lo hay**: no se rellena. Sale entonces la reserva. | Redacción y reserva | — |
 
 ## 2. Quién hace cada cosa
 
@@ -70,24 +70,22 @@ fuente y quita lo que no puede confirmar (ADR 0001).
 | Traductores | Uno por idioma, para cada texto. |
 | Portavoz | Los avisos de cada mañana en los tres grupos y el texto de Instagram. |
 
-Todos escriben con el [libro de estilo](../encargos/estilo.md); cada tarea tiene además su guía en
-`encargos/`.
+Todos escriben con el [libro de estilo](../encargos/estilo.md); cada tarea tiene además su propia guía.
 
 ## 3. El día a día
 
-Todo corre en un servidor doméstico, en un contenedor, con un reloj que mira cada cinco minutos qué
-toca (`nas/reloj.sh`). Lo que decide se apunta en `estado/`, así que reiniciarlo no repite nada.
+Un programa mira cada cinco minutos qué toca. Lo que ya ha hecho queda apuntado, así que nada se repite.
 
 | Hora | Qué pasa |
 | --- | --- |
-| 1:00 | La redacción prepara el número con las conversaciones del día anterior (`scripts/noche.sh`): redacción y repaso, dibujos, viñeta, Biblioteca, Repositorio, «Hace un año», reserva, comprobaciones, traducciones y avisos. Dos intentos como mucho. |
+| 1:00 | La redacción prepara el número con las conversaciones del día anterior: redacción y repaso, dibujos, viñeta, Biblioteca, Repositorio, «Hace un año», reserva, comprobaciones, traducciones y avisos. Dos intentos como mucho. |
 | 5:00 | Vista previa del número tal como saldrá, para la persona supervisora (ADR 0025), y un programa revisa la maqueta en nueve anchuras. |
 | 6:30 | Si el número aún no está, se para la redacción y sale con lo que haya o con la reserva (plan B). |
-| 6:50 | Publicación: la web, el repositorio, la imagen de cada artículo para compartir y los avisos para el bot (`scripts/publicar-nas.sh`). Si falla, se reintenta cada 10 minutos hasta las 9:00. |
+| 6:50 | Publicación: la web, el repositorio, la imagen de cada artículo para compartir y los avisos para el bot. Si falla, se reintenta cada 10 minutos hasta las 9:00. |
 | 7:00 | El Bot de IA Educativa publica el aviso en cada grupo y escribe por privado a las personas cuyo recurso sale en el número (ADR 0052). La aplicación de Android avisa del número nuevo (ADR 0043). |
 | 7:05 | El número sale en Instagram como carrusel (ADR 0015). |
 | Hacia las 7:10 | Informe del día para la persona supervisora: qué ha salido, si se usó la reserva y qué ha fallado (ADR 0069). |
-| 8:00 | Se repone la reserva (`scripts/reserva.sh`). |
+| 8:00 | Se repone la reserva. |
 | 9:00, domingo | El dominical («La semana en vídeo» con el reportaje) sale en Instagram, X, Bluesky y LinkedIn (ADR 0027). |
 | Desde las 9:10 | Un vigilante externo, en GitHub Actions, comprueba que el número ha salido y, si no, lo publica con la reserva; desde las 7:30 si el servidor no responde (ADR 0021). |
 | Miércoles | Búsqueda de enlaces caídos en lo publicado (ADR 0056). |
@@ -131,16 +129,16 @@ el juez de la viñeta y el verificador del reportaje y de «Hace un año».
 
 **Sin IA**, cada noche, con programas:
 
-| Qué | Programa |
+| Qué se comprueba | Registro de la decisión |
 | --- | --- |
-| Que cada archivo del número sea válido y no lo rompa ningún agente | `scripts/noche.sh` |
-| El «quien» relativo y las citas solo en inglés (un agente corrige lo que encuentra) | `scripts/revisar-estilo.py` (ADR 0067) |
-| Que no se atribuya a un autor del diario lo de otra persona con el mismo nombre (un agente lo mira) | `scripts/revisar-autoria.py` (ADR 0066) |
-| Erratas de regla fija y titulares de más de 90 caracteres | `scripts/corregir-erratas.py` (ADR 0059) |
-| Que cada traducción tenga los mismos artículos, enlaces y dibujos que el original; lo que no, sale en castellano | `scripts/idiomas.py` (ADR 0026) |
-| Castellano colado en una traducción | `scripts/revisar-idiomas.py` (ADR 0056) |
-| Que ninguna página deje huecos en ninguna anchura | `scripts/revisar-maqueta.py` (ADR 0041) |
-| Enlaces caídos, los miércoles | `scripts/revisar-enlaces.py` (ADR 0056) |
+| Que cada archivo del número sea válido y no lo rompa ningún agente | ADR 0076 |
+| El «quien» relativo y las citas solo en inglés (un agente corrige lo que encuentra) | ADR 0067 |
+| Que no se atribuya a un autor del diario lo de otra persona con el mismo nombre (un agente lo mira) | ADR 0066 |
+| Erratas de regla fija y titulares de más de 90 caracteres | ADR 0059 |
+| Que cada traducción tenga los mismos artículos, enlaces y dibujos que el original; lo que no, sale en castellano | ADR 0026 |
+| Castellano colado en una traducción | ADR 0056 |
+| Que ninguna página deje huecos en ninguna anchura | ADR 0041 |
+| Enlaces caídos, los miércoles | ADR 0056 |
 
 **Una persona** ve la vista previa de las 5:00 y puede pedir cambios antes de las 6:50, pero el diario no
 lo promete: si no hay respuesta, sale a su hora (ADR 0058).
@@ -196,4 +194,3 @@ Lo que aún no está resuelto o se apoya en una sola comprobación. Es el punto 
   pero ningún agente las revisa.
 - **El umbral del Repositorio** (cuándo un día es flojo y se tira del fondo) es provisional.
 - **Instagram tiene un solo intento**: si falla, se publica a mano.
-- **La vista previa solo se ve desde la red local** del servidor.
