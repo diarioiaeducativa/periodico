@@ -1,0 +1,17 @@
+{
+  "semana": "2026-46",
+  "grupos": {
+    "chatgpt": {
+      "resumen": "Bideoak ChatGPT-IA-edu taldeko 20 parte-hartzaileren 140 mezu errepasatzen ditu. Ebaluazioarekin hasten da: Ingalaterrako unibertsitate-erregulatzaileak azterketa presentzialetara eta ahozko defentsetara itzultzea eskatzen du, AA detektatzen saiatzen diren Moodle-ko plugin-en aurrean, eta testuliburuaren eta norberak sortutako materialaren arteko talka dago. Jarraian, 13 eta 15 urte arteko ikasleentzako UNESCOren gida, agenteekin kudeatutako etxe-automatizazioa, Anthropic-en eredu berriak eta subiranotasun digitalaren aldeko manifestu bat datoz.",
+      "origen": "El vídeo repasa 140 mensajes de 20 participantes de ChatGPT-IA-edu. Empieza por la evaluación: el regulador universitario inglés pide volver a exámenes presenciales y defensas orales, frente a plugins de Moodle que intentan detectar la IA, y el choque entre el libro de texto y el material propio. Sigue con la guía de la UNESCO para alumnado de 13 a 15 años, la domótica gestionada con agentes, los nuevos modelos de Anthropic y un manifiesto por la soberanía digital."
+    },
+    "vce": {
+      "resumen": "Bideoak Vibe Coding Educativo taldeko 25 parte-hartzaileren 158 mezu laburbiltzen ditu. Partekatutako aplikazioak aurkezten ditu, hala nola Xifres i Lletres, Pentagrama Maestro, Calendari, Tribunator, Reloj EDUmind, Atlas en xogo eta belsetana zaintzeko web bat. Komando-lerroaren eta Claude-ren aplikazioaren arteko eztabaida biltzen du, Fable 5.2-ri prompt-ak idazteko hiru aholku, eta Felip Sarroca i Gil-ek Codex eta Blender nola erabili zituen Watten lurrun-makina 3D-n lortzeko.",
+      "origen": "El vídeo resume 158 mensajes de 25 participantes de Vibe Coding Educativo. Presenta aplicaciones compartidas como Xifres i Lletres, Pentagrama Maestro, Calendari, Tribunator, Reloj EDUmind, Atlas en xogo y una web para preservar el belsetán. Recoge el debate entre la línea de comandos y la app de Claude, tres consejos para escribir prompts a Fable 5.2 y cómo Felip Sarroca i Gil usó Codex y Blender para obtener en 3D la máquina de vapor de Watt."
+    },
+    "edumedia": {
+      "resumen": "Bideoak EduMedia-IAG taldeko 10 parte-hartzaileren 99 mezu errepasatzen ditu. Juanjo de Haroren animazioetan jartzen du arreta, fotosintesiari eta zelula-arnasketari buruzkoetan, Fable 5.2-rekin eginak, eta marrazkiak SVG formatuan eskatzeko haren ideian: bere probetan, Claude-k, Gemini-k eta ChatGPT-k ez zuten akats zientifikorik egin, baina Claude-k bakarrik konbentzitu zuen ilustrazio gisa. Jarraian, Raül Torresen Buzz film laburra, OGVren Polvo eres eta X-Ray Mirror-en segurtasun-auditoria datoz.",
+      "origen": "El vídeo repasa 99 mensajes de 10 participantes de EduMedia-IAG. Se centra en las animaciones de Juanjo de Haro sobre la fotosíntesis y la respiración celular, hechas con Fable 5.2, y en su idea de pedir los dibujos en SVG: en su prueba, Claude, Gemini y ChatGPT no cometieron errores científicos, aunque solo Claude convenció como ilustración. Sigue con el cortometraje Buzz de Raül Torres, Polvo eres de OGV y la auditoría de seguridad de X-Ray Mirror."
+    }
+  }
+}

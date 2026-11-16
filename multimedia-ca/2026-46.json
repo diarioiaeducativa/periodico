@@ -1,0 +1,17 @@
+{
+  "semana": "2026-46",
+  "grupos": {
+    "chatgpt": {
+      "resumen": "El vídeo repassa 140 missatges de 20 participants de ChatGPT-IA-edu. Comença per l'avaluació: el regulador universitari anglès demana tornar als exàmens presencials i a les defenses orals, davant dels connectors de Moodle que intenten detectar la IA, i el xoc entre el llibre de text i el material propi. Continua amb la guia de la UNESCO per a alumnat de 13 a 15 anys, la domòtica gestionada amb agents, els nous models d'Anthropic i un manifest per la sobirania digital.",
+      "origen": "El vídeo repasa 140 mensajes de 20 participantes de ChatGPT-IA-edu. Empieza por la evaluación: el regulador universitario inglés pide volver a exámenes presenciales y defensas orales, frente a plugins de Moodle que intentan detectar la IA, y el choque entre el libro de texto y el material propio. Sigue con la guía de la UNESCO para alumnado de 13 a 15 años, la domótica gestionada con agentes, los nuevos modelos de Anthropic y un manifiesto por la soberanía digital."
+    },
+    "vce": {
+      "resumen": "El vídeo resumeix 158 missatges de 25 participants de Vibe Coding Educativo. Presenta aplicacions compartides com Xifres i Lletres, Pentagrama Maestro, Calendari, Tribunator, Reloj EDUmind, Atlas en xogo i un web per preservar el belsetán. Recull el debat entre la línia d'ordres i l'aplicació de Claude, tres consells per escriure prompts a Fable 5.2 i com Felip Sarroca i Gil va usar Codex i Blender per obtenir en 3D la màquina de vapor de Watt.",
+      "origen": "El vídeo resume 158 mensajes de 25 participantes de Vibe Coding Educativo. Presenta aplicaciones compartidas como Xifres i Lletres, Pentagrama Maestro, Calendari, Tribunator, Reloj EDUmind, Atlas en xogo y una web para preservar el belsetán. Recoge el debate entre la línea de comandos y la app de Claude, tres consejos para escribir prompts a Fable 5.2 y cómo Felip Sarroca i Gil usó Codex y Blender para obtener en 3D la máquina de vapor de Watt."
+    },
+    "edumedia": {
+      "resumen": "El vídeo repassa 99 missatges de 10 participants d'EduMedia-IAG. Se centra en les animacions de Juanjo de Haro sobre la fotosíntesi i la respiració cel·lular, fetes amb Fable 5.2, i en la seva idea de demanar els dibuixos en SVG: en la seva prova, Claude, Gemini i ChatGPT no van cometre errors científics, encara que només Claude va convèncer com a il·lustració. Continua amb el curtmetratge Buzz de Raül Torres, Polvo eres d'OGV i l'auditoria de seguretat de X-Ray Mirror.",
+      "origen": "El vídeo repasa 99 mensajes de 10 participantes de EduMedia-IAG. Se centra en las animaciones de Juanjo de Haro sobre la fotosíntesis y la respiración celular, hechas con Fable 5.2, y en su idea de pedir los dibujos en SVG: en su prueba, Claude, Gemini y ChatGPT no cometieron errores científicos, aunque solo Claude convenció como ilustración. Sigue con el cortometraje Buzz de Raül Torres, Polvo eres de OGV y la auditoría de seguridad de X-Ray Mirror."
+    }
+  }
+}
