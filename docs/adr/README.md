@@ -77,5 +77,6 @@
 | [0073](0073-lectura-en-voz-alta-con-la-voz-del-dispositivo.md) | Lectura en voz alta con la voz del dispositivo |
 | [0074](0074-variedad-de-posturas-y-tres-gestos-nuevos.md) | Variedad de posturas en la viñeta y tres gestos nuevos |
 | [0075](0075-papeles-libro-y-pizarra-redibujados.md) | Papeles, libro y pizarra de la viñeta, redibujados |
+| [0076](0076-los-json-del-numero-a-salvo-de-cada-agente-y-un-articulo-de-cada-grupo.md) | Los JSON del número, a salvo de cada agente, y un artículo de cada grupo |
 
 Plantilla: [0000-plantilla.md](0000-plantilla.md). Para crear uno: `nuevo-adr "Título"`.

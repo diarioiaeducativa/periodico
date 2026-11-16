@@ -42,9 +42,19 @@ REG="registro/$FECHA.log"
 
 log() { printf '%s  %s\n' "$(date '+%F %T')" "$*" | tee -a "$REG"; }
 
+# Los JSON del número (edición, traducciones, viñetas, avisos…) que un agente puede tocar.
+json_del_dia() { ls -1 */"$FECHA".json */*/"$FECHA".json */"$FECHA"-*.json "avisos/$PUBLICA.json" 2>/dev/null | sort -u; }
+
 # agente <modelo> <paso> <minutos>: lanza un agente con el encargo encargos/pasos/<paso>.md.
+# Antes, copia los JSON del número que son válidos; si al acabar alguno ha quedado roto, vuelve a la copia y
+# repite el agente una vez (ADR 0076: el 16-11-2026 el ilustrador rompió la edición al añadir las descripciones
+# de los dibujos y el número salió solo con la reserva).
 agente() {
-  local modelo=$1 paso=$2 minutos=$3 salida
+  local modelo=$1 paso=$2 minutos=$3 salida copia f rotos=""
+  copia=$(mktemp -d)
+  for f in $(json_del_dia); do
+    json_ok "$f" && { mkdir -p "$copia/$(dirname "$f")"; cp -p "$f" "$copia/$f"; }
+  done
   log "empieza $paso ($modelo)"
   salida=$(sed -e "s/{FECHA}/$FECHA/g" -e "s/{PUBLICA}/$PUBLICA/g" "encargos/pasos/$paso.md" \
     | timeout "$((minutos * 60))" claude -p --model "$modelo" \
@@ -54,6 +64,18 @@ agente() {
   local codigo=$?
   printf '%s\n' "$salida" >> "$REG"
   log "acaba $paso (código $codigo)"
+  for f in $(cd "$copia" && find . -name '*.json' | sed 's|^\./||'); do
+    json_ok "$f" || { cp -p "$copia/$f" "$f"; rotos="$rotos $f"; }
+  done
+  rm -rf "$copia"
+  if [ -n "$rotos" ]; then
+    log "AVISO: $paso dejó JSON roto:$rotos; vuelven a como estaban antes del agente"
+    if [ -z "${AGENTE_REPITE:-}" ]; then
+      AGENTE_REPITE=1 agente "$@"
+      return $?
+    fi
+    log "AVISO: $paso los ha vuelto a romper: sigue sin sus cambios en ellos"
+  fi
   return $codigo
 }
 
@@ -73,7 +95,7 @@ json_ok() { python3 -c 'import json,sys; json.load(open(sys.argv[1]))' "$1" 2>/d
 # día sin número, y ninguno pobre.
 solo_anexos() {
   local hay=0
-  python3 scripts/publicado.py >> "$REG" 2>&1
+  python3 scripts/publicado.py --sin "$FECHA" >> "$REG" 2>&1
   bash scripts/biblioteca.sh "$FECHA" && hay=1
   bash scripts/repositorio.sh "$FECHA" && hay=1
   bash scripts/hace-un-ano.sh "$FECHA"
@@ -135,7 +157,8 @@ case $estado_preparar in
      solo_anexos ;;
   *) log "ERROR: no se pudieron leer los mensajes de $DATOS"; exit 1 ;;
 esac
-python3 scripts/publicado.py >> "$REG" 2>&1
+# Lo publicado, sin el día que se prepara: si es un segundo intento, lo que dejó el primero no está publicado (ADR 0076)
+python3 scripts/publicado.py --sin "$FECHA" >> "$REG" 2>&1
 
 # 1. Redacción y repaso, por dos agentes distintos: el revisor no ha escrito nada (ADR 0001).
 # Es lo único imprescindible: cada paso se reintenta una vez, y sin repaso no hay número.

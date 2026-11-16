@@ -3,17 +3,24 @@
 """Escribe publicado.txt: lo ya publicado, para que la redacción no repita temas y enlace lo
 relacionado. Cada pieza va con su clave de enlace (`pieza:AAAA-MM-DD/id`), que generar.py
 convierte en el enlace a su página (encargos/enlaces.md). Incluye las piezas de la redacción,
-de la Biblioteca, del Repositorio de VCE (con sus recursos, ADR 0008) y los reportajes."""
+de la Biblioteca, del Repositorio de VCE (con sus recursos, ADR 0008) y los reportajes.
+
+    scripts/publicado.py [--sin AAAA-MM-DD]"""
 import datetime
 import json
 import pathlib
+import sys
 
 RAIZ = pathlib.Path(__file__).resolve().parent.parent
 dias = {}
+# --sin FECHA: sin ese día, el que se está preparando. Un segundo intento de la noche encontraba apuntado lo que
+# escribió el primero y la redacción lo daba por publicado (16-11-2026, ADR 0076).
+SIN = sys.argv[sys.argv.index("--sin") + 1] if "--sin" in sys.argv else None
 
 
 def apunta(fecha, linea):
-    dias.setdefault(fecha, []).append(linea)
+    if fecha != SIN:
+        dias.setdefault(fecha, []).append(linea)
 
 
 for f in sorted((RAIZ / "ediciones").glob("*.json")):

@@ -199,6 +199,29 @@ def piezas_del_dia(fecha):
     return n
 
 
+GRUPOS = ("chatgpt", "vce", "edumedia")   # cada número lleva como mínimo una pieza de cada grupo (Juanjo, 16-11-2026)
+
+
+def grupos_del_dia(fecha):
+    """Los grupos que ya tienen pieza en el número de esas conversaciones."""
+    out = set()
+    for c in ("ediciones", "biblioteca", "repositorio"):
+        g = RAIZ / c / f"{fecha}.json"
+        if g.exists():
+            d = json.loads(g.read_text())
+            if c != "ediciones" or d.get("hay_edicion"):
+                out |= {p.get("grupo") for p in d.get("piezas", [])}
+    return out
+
+
+def grupos_de(r):
+    """Los grupos de las piezas de una reserva."""
+    try:
+        return {p.get("grupo") for p in json.loads(principal(r).read_text()).get("piezas", [])}
+    except (OSError, ValueError):
+        return set()
+
+
 def titulares(fecha):
     out = []
     for c in ("ediciones", "biblioteca", "repositorio"):
@@ -235,12 +258,18 @@ def avisos(fecha, fallo):
 TITULARES = {}   # clave de la pieza de reserva puesta -> sus titulares, para el informe del día (ADR 0069)
 
 
-def poner_una(fecha):
-    """Añade al número de esas conversaciones la pieza de reserva vigente más antigua. Devuelve su clave, o
-    None si no queda ninguna. Las que ya no responden se retiran por el camino."""
+def poner_una(fecha, solo_grupos_que_faltan=False):
+    """Añade al número de esas conversaciones una pieza de reserva vigente: primero la más antigua de un grupo que
+    aún no tiene pieza en el número (ADR 0076) y, si no hay, la más antigua. Con solo_grupos_que_faltan, solo
+    una de un grupo que falte. Devuelve su clave, o None si no queda ninguna que valga. Las que ya no responden
+    se retiran por el camino."""
     caducar()
+    faltan = set(GRUPOS) - grupos_del_dia(fecha)
+    candidatas = [d for d in listas() if grupos_de(d) & faltan]
+    if not solo_grupos_que_faltan:
+        candidatas += [d for d in listas() if d not in candidatas]
     r = None
-    for d in listas():
+    for d in candidatas:
         ok, porque = vigente(d)
         if ok:
             r = d
@@ -280,13 +309,21 @@ def poner_una(fecha):
 
 def usar(fecha, motivo="fallo"):
     """El número de reserva (ADR 0068), entero o por partes: completa el número hasta MINIMO piezas con las de
-    reserva y, si le faltan, pone la viñeta y «Hace un año» de reserva. Un número sin ninguna pieza propia se
+    reserva (antes las de los grupos que no tienen pieza) y, si sigue faltando algún grupo y la reserva tiene de ese
+    grupo, también esa; si le faltan, pone la viñeta y «Hace un año» de reserva. Un número sin ninguna pieza propia se
     marca con `motivo` («fallo»: la web lo dice y la noche siguiente recupera ese día; «relleno»: no dice nada).
     Sale con 0 si ha puesto algo, con 4 si no hacía falta nada y con 3 si el número se queda sin piezas."""
     propias = piezas_del_dia(fecha)
     puestas = []
     while piezas_del_dia(fecha) < MINIMO:
         clave = poner_una(fecha)
+        if not clave:
+            break
+        puestas.append(clave)
+    # Y, aunque ya tenga MINIMO, una de cada grupo que siga sin pieza, si la reserva tiene de ese grupo (ADR 0076).
+    # Si el número no tiene ninguna pieza propia, no: es un número de reserva y no se gasta más de la cuenta.
+    while propias:
+        clave = poner_una(fecha, solo_grupos_que_faltan=True)
         if not clave:
             break
         puestas.append(clave)
