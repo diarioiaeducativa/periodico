@@ -166,6 +166,7 @@ IDIOMAS = {
             "ideas_titulo": 'Cómo funciona',
             "ideas": [('De los grupos al diario', 'Lo que se habla un día en tres grupos de docentes sale a la mañana siguiente, explicado para las personas que no están en ellos.'), ('Cada dato, comprobado', 'Cada artículo pasa por un agente que no lo ha escrito, que abre cada fuente y quita lo que no puede confirmar.'), ('Nunca un día sin número', 'Hay artículos escritos de antemano para que el diario salga aunque falle algo o no haya noticias.'), ('Una persona responde', 'Una persona supervisa el diario y responde de lo publicado. Sin publicidad ni datos de los lectores, y los errores se corrigen a la vista.')],
             "mas_titulo": 'Para saber más',
+            "mas_redaccion": ('La redacción', 'La versión breve: cómo funciona el diario, de un vistazo.'),
             "mas": [('El diario por dentro', 'Todos los detalles: el equipo de agentes, las secciones, las personas, los programas y la privacidad.'), ('Cómo se hace el diario', 'Las normas, quién las aplica y cómo se comprueban.'), ('Libro de estilo', 'Cómo escriben los agentes.'), ('Libro del traductor', 'Cómo se traduce a cada lengua.')],
             "dentro_titulo": 'El diario por dentro',
             "dentro_intro": 'Todo lo que explica cómo funciona el diario, para las personas que quieran conocerlo a fondo. La versión breve está en «La redacción».',
@@ -301,6 +302,7 @@ IDIOMAS = {
             "ideas_titulo": 'Com funciona',
             "ideas": [('Dels grups al diari', "El que es parla un dia en tres grups de docents surt l'endemà al matí, explicat per a les persones que no hi són."), ('Cada dada, comprovada', "Cada article passa per un agent que no l'ha escrit, que obre cada font i treu el que no pot confirmar."), ('Mai un dia sense número', 'Hi ha articles escrits per endavant perquè el diari surti encara que falli alguna cosa o no hi hagi notícies.'), ('Una persona en respon', "Una persona supervisa el diari i respon del que s'hi publica. Sense publicitat ni dades dels lectors, i els errors es corregeixen a la vista.")],
             "mas_titulo": 'Per saber-ne més',
+            "mas_redaccion": ('La redacció', "La versió breu: com funciona el diari, d'un cop d'ull."),
             "mas": [("El diari per dins", "Tots els detalls: l'equip d'agents, les seccions, les persones, els programes i la privadesa."), ('Com es fa el diari', 'Les normes, qui les aplica i com es comproven (en castellà).'), ("Llibre d'estil", 'Com escriuen els agents (en castellà).'), ('Llibre del traductor', 'Com es tradueix a cada llengua (en castellà).')],
             "dentro_titulo": 'El diari per dins',
             "dentro_intro": 'Tot el que explica com funciona el diari, per a les persones que el vulguin conèixer a fons. La versió breu és a «La redacció».',
@@ -2699,6 +2701,17 @@ def equipo_html(R):
                     for rotulo, items in turnos if items) + f'<p>{R["equipo_pie"]}</p>')
 
 
+def mas_html(R, raiz, actual):
+    """«Para saber más»: las cinco páginas que explican el diario (la breve, la completa y las tres normas), cada una
+    con enlaces a las otras cuatro (ADR 0082)."""
+    paginas = [("redaccion.html", R["mas_redaccion"]), ("dentro.html", R["mas"][0]),
+               (f"{raiz}normas.html", R["mas"][1]), (f"{raiz}estilo.html", R["mas"][2]), (f"{raiz}traduccion.html", R["mas"][3])]
+    items = "".join(f'<li><a href="{h}"><strong>{tt}</strong><span>{x}</span></a></li>'
+                    for h, (tt, x) in paginas if h.split("/")[-1] != actual)
+    return (f'<section class="red-mas" aria-labelledby="t-mas"><h2 id="t-mas">{R["mas_titulo"]}</h2>'
+            f'<ul>{items}</ul></section>')
+
+
 def pagina_redaccion(eds):
     """«La redacción», la versión breve para cualquier lector (ADR 0082): el organigrama con cómo se hace cada número,
     cuatro ideas, el equipo de agentes y, para saber más, «El diario por dentro» y las normas."""
@@ -2716,9 +2729,7 @@ def pagina_redaccion(eds):
         organigrama = ilustracion(pres["fecha"], pres["editorial"], ampliable=True)
     ideas = "".join(f'<li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true">{ICONOS_IDEAS[k]}</svg>'
                     f'<h3>{t}</h3><p>{x}</p></li>' for k, (t, x) in enumerate(R["ideas"]))
-    destinos = ["dentro.html", f"{raiz}normas.html", f"{raiz}estilo.html", f"{raiz}traduccion.html"]
-    mas = "".join(f'<li><a href="{destinos[k]}"><strong>{t}</strong><span>{x}</span></a></li>'
-                  for k, (t, x) in enumerate(R["mas"]))
+    mas = mas_html(R, raiz, "redaccion.html")
     # Las tres comunidades, con su emblema, centradas al pie (el mismo título que su apartado de la página completa)
     titulo_com = next(tt for tt, x in R["secciones"] if x.startswith("{chatgpt}"))
     cab = cabecera("", "redaccion.html", eds[-1]["fecha"], eds[-1]["numero"], True, h1=False, activa="redaccion")
@@ -2745,10 +2756,7 @@ def pagina_redaccion(eds):
 </section>
 </div>
 </section>
-<section class="red-mas" aria-labelledby="t-mas">
-<h2 id="t-mas">{R["mas_titulo"]}</h2>
-<ul>{mas}</ul>
-</section>
+{mas}
 <section class="red-comunidades" aria-labelledby="t-comunidades">
 <h2 id="t-comunidades">{titulo_com}</h2>
 {comunidades_figura()}
@@ -2800,6 +2808,7 @@ def pagina_dentro(eds):
 {cabeza_d}
 {resto}
 {enlace_pres}
+{mas_html(R, raiz, "dentro.html")}
 <p class="volver"><a href="redaccion.html">{L["quees"]}</a> · <a href="./">{L["volver"]}</a></p>
 </main>
 {pie("", eds, None)}
@@ -3006,6 +3015,7 @@ def pagina_documento(eds, ruta):
     {f'<p class="entradilla">{entradilla}</p>' if entradilla else ""}
     <div class="cuerpo">{cuerpo}</div>
   </article>
+  {mas_html(L["redaccion"], "", ruta)}
   <p class="volver"><a href="redaccion.html">{L["quees"]}</a> · <a href="./">{L["volver"]}</a></p>
 </main>
 {pie("", eds, None)}

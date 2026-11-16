@@ -19,6 +19,8 @@ fondo.
 - **«El diario por dentro»** (`dentro.html`), la versión completa: el equipo de agentes, todos los apartados que
   tenía antes «La redacción», en los mismos bloques (`BLOQUES_DENTRO`, antes `BLOQUES_REDACCION`, ADR 0047), y «Las
   instrucciones de cada agente», cada una enlazada a su guía (`GUIAS_AGENTES`).
+- Las cinco páginas que explican el diario («La redacción», «El diario por dentro» y las tres normas) llevan al pie
+  el mismo «Para saber más», con enlaces a las otras cuatro (`mas_html`).
 - Las dos, en los cinco idiomas. Los enlaces de fuera a un apartado que se ha ido (`redaccion.html#privacidad`,
   `#comunidades`, `#contacto`…) llevan solos al mismo apartado de la página completa; el enlace de las comunidades
   del pie va directamente allí.
