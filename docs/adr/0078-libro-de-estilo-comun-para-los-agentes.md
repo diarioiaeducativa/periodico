@@ -37,6 +37,18 @@ Al juntarlas se añadieron como normas comunes las que ya eran práctica o crite
 14-11-2026), comillas españolas, el porcentaje con espacio, nada de cómo funciona el diario por
 dentro en lo publicado y nada que dependa del día en lo que se guarda para otro.
 
+El mismo día se contrastó con los libros de estilo de otros medios y se añadieron las normas que
+faltaban: escribir sobre la IA sin darle mente ni intención y el vocabulario de la IA (libro de estilo
+de AP, Fundéu), las siglas (Fundéu, The Guardian), el lenguaje y los estudios de las empresas (BBC,
+CCMA, RTVE), el alumnado y sus datos (RTVE, pautas de IA de la BBC, código deontológico de los
+periodistas de Cataluña), las citas comprobadas literalmente (BBC), nunca «hoy» ni «ayer» y la
+entradilla que no repite el titular (RTVE), el condicional de rumor (Fundéu), porcentajes y puntos
+(BBC, CCMA), las correcciones (RTVE, CCMA, Maldita, Carta de París de RSF), el contexto local en las
+traducciones (CCMA), las frases claras (The Economist) y una frase de aviso cuando el artículo trata
+de Anthropic o de Claude, por conflicto de intereses. Se descartaron el aviso de IA en cada artículo
+(ya hay uno común), la réplica previa (imposible en una redacción nocturna) y lo que solo vale para
+radio, televisión o fotografía.
+
 ## Consecuencias
 
 - Una sola fuente: lo que se lee en el libro es lo que aplican los agentes.
