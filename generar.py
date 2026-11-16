@@ -137,7 +137,7 @@ IDIOMAS = {
         "redaccion": {
             "intro": "El Diario de IA Educativa lo escribe una redacción de 16 agentes de inteligencia artificial, cada uno con su oficio, y ninguno revisa su propio trabajo. Lo idean, lo diseñan y lo supervisan personas. Sale cada mañana a las 7:00 en castellano, catalán, gallego, euskera e inglés.",
             "proceso_titulo": "Cómo se hace cada número", "pagina_semana": "página",
-            "proceso_intro": "Cada número recoge lo que se habló el día anterior en los tres grupos. De madrugada, un programa reúne los mensajes del día; los agentes escriben, revisan, ilustran y traducen los artículos, y a las 7:00 el número se publica y se avisa en cada grupo. Los fines de semana se preparan, además, el reportaje, el vídeo y lo más importante de la semana.",
+            "proceso_intro": "Cada número recoge lo que se habló el día anterior en tres grupos abiertos de Telegram: {chatgpt}, sobre la inteligencia artificial en educación; {vce}, de docentes que programan sus propias aplicaciones con IA, y {edumedia}, sobre la IA para crear audio, vídeo e imagen. De madrugada, un programa reúne los mensajes del día; los agentes escriben, revisan, ilustran y traducen los artículos, y a las 7:00 el número se publica y se avisa en cada grupo. Los fines de semana se preparan, además, el reportaje, el vídeo y lo más importante de la semana.",
             "proceso_pie": "Si algo falla o una revisión no da un artículo por bueno, esa parte se queda fuera y el número sale igual. Si falla todo, sale un artículo de reserva, escrito y revisado otro día. No hay ningún día sin número.",
             "equipo_titulo": "El equipo",
             "organigrama_alt": "Organigrama de la redacción, en el que los agentes de IA van en cajas rellenas y los mensajes y lo publicado, solo con contorno: cada día, los mensajes de los grupos pasan del redactor al revisor, y los documentos de la Biblioteca digital y los recursos del repositorio, del documentalista al revisor. Del revisor salen dos caminos: el guionista y el juez de humor preparan la viñeta, y el ilustrador dibuja lo que explica cada noticia, con el revisor de dibujos, que le devuelve lo que no se ve bien. Todo acaba en el traductor, y el número sale a las 7:00 con un aviso del portavoz para cada grupo. Cada noche, además, el cronista busca en los mensajes de hace un año un tema que muestre cuánto ha cambiado todo y escribe «Hace un año», que contrasta un verificador y que pasa también por el ilustrador, el revisor de dibujos y el traductor. Los domingos, el jefe de reportajes, el reportero y el verificador preparan el reportaje, que pasa también por el ilustrador, el revisor de dibujos y el traductor; si hay uno de reserva, el juez de reportajes elige el mejor de los dos, y sale dentro del número. Además, el guionista de vídeo escribe «La semana en vídeo» con los números de la semana y el reportaje, y el vídeo sale en el número del domingo y, con el reportaje, a las 9:00 en las redes sociales. La noche del domingo, el comentarista escribe lo más importante de la semana a partir de sus números, un revisor lo contrasta y el traductor lo prepara en los otros idiomas para el resumen semanal.",
@@ -166,7 +166,7 @@ IDIOMAS = {
             "ideas_titulo": 'Cómo funciona',
             "ideas": [('De los grupos al diario', 'Lo que se habla un día en tres grupos de docentes sale a la mañana siguiente, explicado para las personas que no están en ellos.'), ('Cada dato, comprobado', 'Cada artículo pasa por un agente que no lo ha escrito, que abre cada fuente y quita lo que no puede confirmar.'), ('Nunca un día sin número', 'Hay artículos escritos de antemano para que el diario salga aunque falle algo o no haya noticias.'), ('Una persona responde', 'Una persona supervisa el diario y responde de lo publicado. Sin publicidad ni datos de los lectores, y los errores se corrigen a la vista.')],
             "mas_titulo": 'Para saber más',
-            "mas": [('El diario por dentro', 'Todos los detalles: las secciones, las personas, los programas y la privacidad.'), ('Cómo se hace el diario', 'Las normas, quién las aplica y cómo se comprueban.'), ('Libro de estilo', 'Cómo escriben los agentes.'), ('Libro del traductor', 'Cómo se traduce a cada lengua.')],
+            "mas": [('El diario por dentro', 'Todos los detalles: el equipo de agentes, las secciones, las personas, los programas y la privacidad.'), ('Cómo se hace el diario', 'Las normas, quién las aplica y cómo se comprueban.'), ('Libro de estilo', 'Cómo escriben los agentes.'), ('Libro del traductor', 'Cómo se traduce a cada lengua.')],
             "dentro_titulo": 'El diario por dentro',
             "dentro_intro": 'Todo lo que explica cómo funciona el diario, para las personas que quieran conocerlo a fondo. La versión breve está en «La redacción».',
             "instrucciones_titulo": 'Las instrucciones de cada agente',
@@ -272,7 +272,7 @@ IDIOMAS = {
         "redaccion": {
             "intro": "El Diari d'IA Educativa l'escriu una redacció de 16 agents d'intel·ligència artificial, cadascun amb el seu ofici, i cap no revisa la seva pròpia feina. L'ideen, el dissenyen i el supervisen persones. Surt cada matí a les 7.00 en castellà, i traduït al català, al gallec, al basc i a l'anglès.",
             "proceso_titulo": "Com es fa cada número", "pagina_semana": "pàgina",
-            "proceso_intro": "Cada número recull el que es va parlar el dia anterior als tres grups. De matinada, un programa aplega els missatges del dia; els agents escriuen, revisen, il·lustren i tradueixen els articles, i a les 7.00 el número es publica i s'avisa a cada grup. Els caps de setmana es preparen, a més, el reportatge, el vídeo i el més important de la setmana.",
+            "proceso_intro": "Cada número recull el que es va parlar el dia anterior en tres grups oberts de Telegram: {chatgpt}, sobre la intel·ligència artificial en educació; {vce}, de docents que programen les seves pròpies aplicacions amb IA, i {edumedia}, sobre la IA per crear àudio, vídeo i imatge. De matinada, un programa aplega els missatges del dia; els agents escriuen, revisen, il·lustren i tradueixen els articles, i a les 7.00 el número es publica i s'avisa a cada grup. Els caps de setmana es preparen, a més, el reportatge, el vídeo i el més important de la setmana.",
             "proceso_pie": "Si alguna cosa falla o una revisió no dona un article per bo, aquella part es queda fora i el número surt igualment. Si falla tot, surt un article de reserva, escrit i revisat un altre dia. No hi ha cap dia sense número.",
             "equipo_titulo": "L'equip",
             "organigrama_alt": "Organigrama de la redacció, en què els agents d'IA van en caixes plenes i els missatges i el que es publica, només amb contorn: cada dia, els missatges dels grups passen del redactor al revisor, i els documents de la Biblioteca digital i els recursos del repositori, del documentalista al revisor. Del revisor surten dos camins: el guionista i el jutge d'humor preparen la vinyeta, i l'il·lustrador dibuixa el que explica cada notícia, amb el revisor de dibuixos, que li torna el que no es veu bé. Tot acaba al traductor, i el número surt a les 7.00 amb un avís del portaveu per a cada grup. Cada nit, a més, el cronista busca als missatges de fa un any un tema que mostri quant ha canviat tot i escriu «Fa un any», que contrasta un verificador i que passa també per l'il·lustrador, el revisor de dibuixos i el traductor. Els diumenges, el cap de reportatges, el reporter i el verificador preparen el reportatge, que passa també per l'il·lustrador, el revisor de dibuixos i el traductor; si n'hi ha un de reserva, el jutge de reportatges tria el millor dels dos, i surt dins del número. A més, el guionista de vídeo escriu «La setmana en vídeo» amb els números de la setmana i el reportatge, i el vídeo surt al número del diumenge i, amb el reportatge, a les 9.00 a les xarxes socials. La nit del diumenge, el comentarista escriu el més important de la setmana a partir dels seus números, un revisor ho contrasta i el traductor ho prepara en els altres idiomes per al resum setmanal.",
@@ -301,7 +301,7 @@ IDIOMAS = {
             "ideas_titulo": 'Com funciona',
             "ideas": [('Dels grups al diari', "El que es parla un dia en tres grups de docents surt l'endemà al matí, explicat per a les persones que no hi són."), ('Cada dada, comprovada', "Cada article passa per un agent que no l'ha escrit, que obre cada font i treu el que no pot confirmar."), ('Mai un dia sense número', 'Hi ha articles escrits per endavant perquè el diari surti encara que falli alguna cosa o no hi hagi notícies.'), ('Una persona en respon', "Una persona supervisa el diari i respon del que s'hi publica. Sense publicitat ni dades dels lectors, i els errors es corregeixen a la vista.")],
             "mas_titulo": 'Per saber-ne més',
-            "mas": [('El diari per dins', 'Tots els detalls: les seccions, les persones, els programes i la privadesa.'), ('Com es fa el diari', 'Les normes, qui les aplica i com es comproven (en castellà).'), ("Llibre d'estil", 'Com escriuen els agents (en castellà).'), ('Llibre del traductor', 'Com es tradueix a cada llengua (en castellà).')],
+            "mas": [("El diari per dins", "Tots els detalls: l'equip d'agents, les seccions, les persones, els programes i la privadesa."), ('Com es fa el diari', 'Les normes, qui les aplica i com es comproven (en castellà).'), ("Llibre d'estil", 'Com escriuen els agents (en castellà).'), ('Llibre del traductor', 'Com es tradueix a cada llengua (en castellà).')],
             "dentro_titulo": 'El diari per dins',
             "dentro_intro": 'Tot el que explica com funciona el diari, per a les persones que el vulguin conèixer a fons. La versió breu és a «La redacció».',
             "instrucciones_titulo": 'Les instruccions de cada agent',
@@ -2581,11 +2581,28 @@ def redaccion_enlaces(R):
     return raiz, grupos
 
 
+def equipo_html(R):
+    """El equipo de agentes, en dos turnos (cada noche y el fin de semana): una entrada sin texto es el rótulo del
+    turno. El rótulo va con el primer agente en un bloque que no se parte, para que en columnas no se quede solo al
+    pie de una (Safari no respeta break-after y Firefox no admite saltos de columna forzados)."""
+    turnos = []
+    for rol, texto in R["equipo"]:
+        if texto is None:
+            turnos.append([f'<p class="equipo-turno">{rol}</p>', []])
+        else:
+            if not turnos:
+                turnos.append(["", []])
+            turnos[-1][1].append(f"<li><strong>{rol}</strong>: {texto}</li>")
+    return ("".join(f'<div class="turno-cabeza">{rotulo}<ul class="equipo">{items[0]}</ul></div>'
+                    + (f'<ul class="equipo">{"".join(items[1:])}</ul>' if items[1:] else "")
+                    for rotulo, items in turnos if items) + f'<p>{R["equipo_pie"]}</p>')
+
+
 def pagina_redaccion(eds):
     """«La redacción», la versión breve para cualquier lector (ADR 0082): el organigrama con cómo se hace cada número,
     cuatro ideas, el equipo de agentes y, para saber más, «El diario por dentro» y las normas."""
     R = L["redaccion"]
-    raiz, _ = redaccion_enlaces(R)
+    raiz, grupos = redaccion_enlaces(R)
     pres = next((d for d in eds if d.get("editorial")), None)
     # El organigrama de hoy, con los agentes del domingo; el de la presentación del número 1 queda como se publicó
     f = con_traduccion("ilustraciones", "redaccion-organigrama.svg")
@@ -2596,25 +2613,13 @@ def pagina_redaccion(eds):
                        f'<figcaption>{R["organigrama_pie"]}</figcaption></figure>')
     elif pres:
         organigrama = ilustracion(pres["fecha"], pres["editorial"], ampliable=True)
-    # El equipo, en dos turnos (cada noche y el fin de semana): una entrada sin texto es el rótulo del turno.
-    # El rótulo va con el primer agente en un bloque que no se parte, para que en columnas no se quede solo al
-    # pie de una (Safari no respeta break-after y Firefox no admite saltos de columna forzados)
-    turnos = []
-    for rol, texto in R["equipo"]:
-        if texto is None:
-            turnos.append([f'<p class="equipo-turno">{rol}</p>', []])
-        else:
-            if not turnos:
-                turnos.append(["", []])
-            turnos[-1][1].append(f"<li><strong>{rol}</strong>: {texto}</li>")
-    equipo = "".join(f'<div class="turno-cabeza">{rotulo}<ul class="equipo">{items[0]}</ul></div>'
-                     + (f'<ul class="equipo">{"".join(items[1:])}</ul>' if items[1:] else "")
-                     for rotulo, items in turnos if items) + f'<p>{R["equipo_pie"]}</p>'
     ideas = "".join(f'<li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true">{ICONOS_IDEAS[k]}</svg>'
                     f'<h3>{t}</h3><p>{x}</p></li>' for k, (t, x) in enumerate(R["ideas"]))
     destinos = ["dentro.html", f"{raiz}normas.html", f"{raiz}estilo.html", f"{raiz}traduccion.html"]
     mas = "".join(f'<li><a href="{destinos[k]}"><strong>{t}</strong><span>{x}</span></a></li>'
                   for k, (t, x) in enumerate(R["mas"]))
+    # Las tres comunidades, con su emblema, centradas al pie (el mismo título que su apartado de la página completa)
+    titulo_com = next(tt for tt, x in R["secciones"] if x.startswith("{chatgpt}"))
     cab = cabecera("", "redaccion.html", eds[-1]["fecha"], eds[-1]["numero"], True, h1=False, activa="redaccion")
     cabeza_red = cabeza_pieza(f"""<p class="antetitulo con-fecha"><span class="seccion-dcha">{boton_columnas()}</span></p>
 <h1 class="titular">{L["quees"]}</h1>
@@ -2631,7 +2636,7 @@ def pagina_redaccion(eds):
 {organigrama}
 <div class="red-texto">
 <h2>{R["proceso_titulo"]}</h2>
-<p>{R["proceso_intro"]}</p>
+<p>{R["proceso_intro"].format(**grupos)}</p>
 <p>{R["proceso_pie"]}</p>
 <section class="red-ideas" aria-labelledby="t-ideas">
 <h2 id="t-ideas">{R["ideas_titulo"]}</h2>
@@ -2639,13 +2644,13 @@ def pagina_redaccion(eds):
 </section>
 </div>
 </section>
-<section class="red-bloque">
-<h2>{R["equipo_titulo"]}</h2>
-{equipo}
-</section>
 <section class="red-mas" aria-labelledby="t-mas">
 <h2 id="t-mas">{R["mas_titulo"]}</h2>
 <ul>{mas}</ul>
+</section>
+<section class="red-comunidades" aria-labelledby="t-comunidades">
+<h2 id="t-comunidades">{titulo_com}</h2>
+{comunidades_figura()}
 </section>
 <p class="volver"><a href="./">{L["volver"]}</a></p>
 </main>
@@ -2680,8 +2685,9 @@ def pagina_dentro(eds):
     bloques = [list(b) for b in BLOQUES_DENTRO]
     usados = {i for b in bloques for i in b}
     bloques.append([i for i in range(len(apartados)) if i not in usados])
-    resto = "".join(f'<section class="red-bloque">{"".join(apartados[i] for i in b if i < len(apartados))}</section>'
-                    for b in bloques if any(i < len(apartados) for i in b))
+    resto = f'<section class="red-bloque" id="equipo"><h2>{R["equipo_titulo"]}</h2>{equipo_html(R)}</section>' + "".join(
+        f'<section class="red-bloque">{"".join(apartados[i] for i in b if i < len(apartados))}</section>'
+        for b in bloques if any(i < len(apartados) for i in b))
     enlace_pres = f'<p class="presentacion"><a href="{d_href(pres)}">{L["presentacion"]}</a></p>' if pres else ""
     cab = cabecera("", "dentro.html", eds[-1]["fecha"], eds[-1]["numero"], True, h1=False, activa="redaccion")
     cabeza_d = cabeza_pieza(f"""<p class="antetitulo con-fecha"><span><a href="redaccion.html">{L["quees"]}</a></span> <span class="seccion-dcha">{boton_columnas()}</span></p>
