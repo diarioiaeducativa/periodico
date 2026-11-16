@@ -26,6 +26,9 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
 
 ## Lo que no se puede olvidar
 
+- **El libro de estilo es `encargos/estilo.md`** (ADR 0078): lo común de todo lo que lee el público. Las guías de
+  `encargos/` solo llevan lo propio de su tarea y empiezan remitiendo a él. Una norma de estilo nueva se escribe allí,
+  no en cada guía.
 - **El número de reserva** (ADR 0068): piezas, viñeta, «Hace un año» por adelantado y reportaje, listos y
   repuestos cada mañana (`reserva.sh`). `reserva.py usar FECHA relleno`, cada noche antes de traducir, completa
   el número hasta tres piezas y pone la viñeta y «Hace un año» si faltan; la web no lo dice.

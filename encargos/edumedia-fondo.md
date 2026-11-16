@@ -44,8 +44,7 @@ ninguno de los que miras vale, no hay artículo.
   y sus límites (cuenta, edad, idioma, marca de agua, datos que pide).
 - Lo que se habló en el grupo, sin nombres de quien opinaba: «en el grupo se compartió…». Al
   autor de un recurso que él mismo publicó sí se le nombra, con las reglas de `encargos/redaccion.md`.
-- Las reglas de rigor, personas, fuentes y enlaces de `encargos/redaccion.md` y `encargos/enlaces.md`
-  valen igual. La fuente principal es la web oficial de la herramienta, con su nombre como texto del
+- Las normas del libro de estilo (`encargos/estilo.md`) y de `encargos/enlaces.md` valen enteras. La fuente principal es la web oficial de la herramienta, con su nombre como texto del
   enlace en su primera mención.
 - `ilustracion`: una idea para un dibujo que explique qué hace (un proceso, un antes y un después),
   nunca el logotipo ni una captura.

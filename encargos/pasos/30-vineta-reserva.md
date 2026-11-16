@@ -5,3 +5,5 @@ Lee encargos/vineta.md entero y cúmplelo: personajes, posturas, escenarios, obj
 Piensa CINCO ideas distintas, descarta las flojas sin indulgencia y quédate con la de más gracia, como haría el editor de humor; afina su texto (menos palabras, mejor ritmo). Ningún bocadillo pasa de 90 caracteres y el rótulo, de 55.
 
 Escribe vinetas/{FECHA}.json con: {"fecha": "{FECHA}", "reserva": true, "elegida": {"n": 1, "pieza": null, "idea": "una línea", "guion": {"vinetas": [...]}}, "motivo": "por qué esta y no las otras cuatro (con las cinco ideas)"}. Comprueba que es JSON válido y que cada expresión, postura, objeto y escenario es de los permitidos. No toques nada más. Responde solo con la idea elegida.
+
+Sigue también el libro de estilo, `encargos/estilo.md`.

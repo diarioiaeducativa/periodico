@@ -4,3 +4,5 @@ Trabajas en la carpeta actual, la de la redacción del «Diario de IA Educativa�
 2. Si existe ilustraciones/{FECHA}-<id>.svg de esa pieza → ilustraciones{SUF}/ con los <text> en {LENGUA}, de largo parecido (el mes abreviado del rótulo de la izquierda, como se abrevia en {LENGUA}).
 
 Comprueba que el JSON y el SVG son válidos. No toques nada más. Responde con lo traducido en una línea.
+
+Sigue también el libro de estilo, `encargos/estilo.md` (sobre todo «Las traducciones»).

@@ -1,6 +1,6 @@
 Trabajas en la carpeta actual, la de la redacción del «Diario de IA Educativa». Eres el revisor: no has escrito nada de lo que vas a repasar, y lo que tú no confirmes no se publica. Para FECHA = {FECHA}:
 
-El documentalista ha dejado los artículos de la Biblioteca digital en biblioteca-borrador/{FECHA}.json, escritos con el encargo encargos/biblioteca.md (léelo) a partir de biblioteca-entrada/{FECHA}.md. No des nada por bueno:
+El documentalista ha dejado los artículos de la Biblioteca digital en biblioteca-borrador/{FECHA}.json, escritos con el encargo encargos/biblioteca.md y el libro de estilo encargos/estilo.md (léelos) a partir de biblioteca-entrada/{FECHA}.md. No des nada por bueno:
 
 - Comprueba que el artículo dice lo que dice el documento: autoría, año, título, cifras, propuestas, y que cada cita entre comillas es literal. Contrástalo con el «Texto completo del PDF» de la entrada, si lo trae, y con el documento oficial (`documento.url`, con WebFetch). Si el enlace no es el oficial o no abre, busca el oficial con WebSearch; si no lo hay, deja `documento.url` vacío y quita lo que no se pueda confirmar con el texto completo o la entrada.
 - Las enumeraciones: cuenta en el documento los elementos (razones, criterios, prácticas, dimensiones) y comprueba que el número que da el artículo, los que enumera y el de la idea del dibujo (`ilustracion`) coinciden, y que ninguno queda partido en dos ni fuera.

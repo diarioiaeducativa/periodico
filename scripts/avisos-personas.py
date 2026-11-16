@@ -12,7 +12,7 @@ Quién ha aportado cada pieza, sin IA y con los datos del bot (DATOS_BOT, /bot-d
   antiguos de la hoja), quien compartió su enlace en los grupos con un nombre que coincide con la autoría, o la cuenta
   del usuario de la web (usuario.github.io), siempre que sea una sola.
 - Piezas del redactor: quien escribió el mensaje de la pieza, solo si la pieza lo nombra (es el
-  autor del recurso que se cuenta; a quien opina o pregunta no se le nombra, encargos/redaccion.md).
+  autor del recurso que se cuenta; a quien opina o pregunta no se le nombra, encargos/estilo.md).
 El bot decide si puede escribirle (solo a quien ha hablado alguna vez con él) y respeta a quien ha
 pedido no recibirlos. Si algo falla, los avisos quedan como estaban."""
 import json
@@ -29,7 +29,7 @@ DATOS = pathlib.Path(__import__("os").environ.get("DATOS_BOT", "/bot-datos"))
 GRUPOS = ("chatgpt", "vce", "edumedia")
 IDIOMAS = ("es", "ca", "gl", "eu", "en")
 FUERA = {"hace-un-ano"}   # mensajes de hace un año: no se avisa por lo que ya pasó
-# En el diario se firma con el nombre completo aunque en los grupos se use otro (encargos/redaccion.md)
+# En el diario se firma con el nombre completo aunque en los grupos se use otro (encargos/estilo.md)
 OTROS_NOMBRES = {"Juanjo de Haro": ["Juan José de Haro"]}
 
 

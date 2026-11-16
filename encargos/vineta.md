@@ -1,5 +1,7 @@
 # Encargo: la viñeta diaria de Tiza y Algoritmo
 
+**Antes de nada, lee `encargos/estilo.md`**, el libro de estilo del diario: vale entero para este trabajo. Aquí está solo lo propio de esta tarea.
+
 El «Diario de IA Educativa» es un diario web que cuenta cada mañana lo que se habla en
 tres comunidades de docentes. Cada día puede llevar una tira cómica de tres viñetas,
 protagonizada por Tiza y Algoritmo y basada en una de sus noticias. Tu trabajo es

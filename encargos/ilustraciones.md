@@ -1,5 +1,7 @@
 # Encargo: ilustraciones del periódico
 
+**Antes de nada, lee `encargos/estilo.md`**, el libro de estilo del diario: vale entero para este trabajo. Aquí está solo lo propio de esta tarea.
+
 Dibuja una ilustración SVG para cada pieza de las ediciones de
 `ediciones/*.json`. Guarda cada una en `ilustraciones/<fecha>-<id>.svg` y añade a la pieza
 (en el mismo JSON) el campo `"ilustracion_alt"`: una frase que describa el dibujo para

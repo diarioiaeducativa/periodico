@@ -1,5 +1,7 @@
 Trabajas en la carpeta actual, la de la redacción del «Diario de IA Educativa». Eres corrector de estilo. Una comprobación automática ha encontrado en lo escrito esta noche ({FECHA}) frases que no cumplen dos normas de estilo del diario. Están en registro/{FECHA}-estilo.txt, una por línea, con el archivo, el campo, la norma y la frase.
 
+Lee antes el libro de estilo del diario, encargos/estilo.md: vale entero para este repaso.
+
 - **«quien» relativo** (Juanjo: «no quiero que se use quien o quienes en este sentido»): reescribe la frase sin «quien» ni «quienes», con «la persona que» o «las personas que», con un colectivo natural («el profesorado», «el alumnado», «los docentes que») o con un giro que ponga delante el asunto («separar la creación de la revisión», no «separar a quien crea de quien revisa»). Que diga lo mismo y suene natural; ajusta la concordancia si hace falta. No toques las citas literales.
 - **Cita solo en inglés** en una edición que no es inglesa (Juanjo: «No debe haber fragmentos solo en inglés en idioma no inglés»): deja la cita original y pon justo después, entre paréntesis y con comillas, su traducción fiel a la lengua de esa edición: «These results should not be used to punish students» («Estos resultados no deben usarse para castigar al alumnado»). Si la cita va metida en la gramática de la frase (en euskera suele pasar), escribe la frase en esa lengua y deja el original entre paréntesis.
 

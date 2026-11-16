@@ -1,5 +1,7 @@
 # Encargo: el reportaje del domingo
 
+**Antes de nada, lee `encargos/estilo.md`**, el libro de estilo del diario: vale entero para este trabajo. Aquí está solo lo propio de esta tarea.
+
 Los domingos, además del número del día, el diario publica un reportaje: un solo tema de
 la semana, tratado a fondo. Es para profesorado y personas interesadas que **no están**
 en los tres grupos (ChatGPT-IA-edu, Vibe Coding Educativo y EduMedia-IAG).
@@ -67,17 +69,13 @@ fondo y no haya tenido reportaje.
 
 ## Estilo
 
-- Castellano. Tono formal, informativo e impersonal, de reportaje de suplemento; nunca
-  publicitario ni alarmista. Sin emojis. Lenguaje inclusivo pero natural.
+- Tono de reportaje de suplemento (el resto, en el libro de estilo).
 - **Una sola idea que el reportaje sostiene de principio a fin**, dicha en el titular (Juanjo, 15-11-2026, ante uno
   que juntaba cinco asuntos de la semana: «algo caótico y de escaso interés»). Cada apartado la apoya o la matiza; lo
   que no sirve a esa idea, aunque sea de la semana, se queda fuera (puede ser una pieza aparte). Si el tema de la
   semana da para varias ideas, se elige la que más ayude al docente y se dice en la entradilla.
-- Sin el relativo «quien» o «quienes» con el sentido de «la persona que» (Juanjo, 15-11-2026: «no quiero que se use quien o quienes en este sentido»): «la persona que», un colectivo («el profesorado») o un giro con el asunto delante («separar la creación de la revisión», no «separar a quien crea de quien revisa»). El interrogativo, con tilde («¿quién?»), sí; y una cita literal se deja como está.
-- Ninguna cita solo en inglés (Juanjo, 15-11-2026: «No debe haber fragmentos solo en inglés en idioma no inglés»): la cita original va con su traducción al lado, entre paréntesis («These results should not be used to punish students» («Estos resultados no deben usarse para castigar al alumnado»)), o directamente traducida. El título de una obra se deja en su idioma.
 - Titular claro, con verbo, sin preguntas. Antetítulo de 2-5 palabras. Entradilla de dos o
   tres frases que diga de qué va y qué se lleva el lector.
-  El titular no pasa de 90 caracteres, contando los espacios: lo que no quepa va al antetítulo o a la entradilla.
 - Entre 1.200 y 1.800 palabras de cuerpo, en 4 a 6 apartados con ladillo (un sustantivo o
   una frase corta, sin imitar preguntas frecuentes). Párrafos de 3 a 6 frases.
 - Negritas con mesura: dos o tres ideas en todo el reportaje.

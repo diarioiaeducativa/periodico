@@ -5,3 +5,5 @@ Trabajas en la carpeta actual, la de la redacción del «Diario de IA Educativa�
 3. Si existe vinetas/{FECHA}.json con "elegida" no nula → vinetas{SUF}/{FECHA}.json: copia la "elegida" con el texto de bocadillos y cartelas en {LENGUA} (que conserve la gracia; bocadillos de 90 caracteres como mucho y el rótulo de la primera viñeta, de 55, que sitúe la escena sin adelantar el chiste) y añade "traduccion": "{NOTA}".
 
 Comprueba que los JSON y SVG son válidos. No toques nada más. Responde con lo traducido en una línea por archivo.
+
+Sigue también el libro de estilo, `encargos/estilo.md` (sobre todo «Las traducciones»).

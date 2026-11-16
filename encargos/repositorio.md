@@ -1,5 +1,7 @@
 # Encargo: los recursos del Repositorio de Vibe Coding Educativo
 
+**Antes de nada, lee `encargos/estilo.md`**, el libro de estilo del diario: vale entero para este trabajo. Aquí está solo lo propio de esta tarea.
+
 El [Repositorio de recursos](https://vibe-coding-educativo.github.io/app_edu/) de Vibe Coding
 Educativo reúne las aplicaciones y recursos educativos digitales que el profesorado de esa
 comunidad crea, casi siempre con ayuda de la inteligencia artificial, y comparte con licencia
@@ -91,14 +93,9 @@ de `publicado.txt`.
 
 ## Estilo
 
-- Castellano. Tono formal, informativo e impersonal, nunca publicitario: nada de «increíble»,
-  «imprescindible» ni exclamaciones. Sin emojis. Lenguaje inclusivo pero natural.
-- Sin el relativo «quien» o «quienes» con el sentido de «la persona que» (Juanjo, 15-11-2026: «no quiero que se use quien o quienes en este sentido»): «la persona que», un colectivo («el profesorado») o un giro con el asunto delante («separar la creación de la revisión», no «separar a quien crea de quien revisa»). El interrogativo, con tilde («¿quién?»), sí; y una cita literal se deja como está.
-- Ninguna cita solo en inglés (Juanjo, 15-11-2026: «No debe haber fragmentos solo en inglés en idioma no inglés»): la cita original va con su traducción al lado, entre paréntesis («These results should not be used to punish students» («Estos resultados no deben usarse para castigar al alumnado»)), o directamente traducida. El título de una obra se deja en su idioma.
 - Titular claro, con verbo, que diga qué permite hacer el recurso (no solo su nombre). En modo
   semana, el titular resume lo de la semana («Formulación química, dictados en catalán y un
   mapa del potencial gravitatorio, nuevos en el repositorio»).
-  El titular no pasa de 90 caracteres, contando los espacios: lo que no quepa va al antetítulo o a la entradilla.
 - **dia** y **fondo**: entre 250 y 350 palabras de cuerpo, en párrafos de 3 a 5 frases.
 - **semana**: `cuerpo` con un solo párrafo breve de presentación (2 o 3 frases: cuántos
   recursos, de qué tratan); cada recurso, en su `texto`, con 80 a 120 palabras. No expliques qué

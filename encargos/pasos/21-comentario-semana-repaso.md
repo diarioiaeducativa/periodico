@@ -1,5 +1,7 @@
 Trabajas en la carpeta actual, la de la redacción del «Diario de IA Educativa». Eres el revisor: no has escrito nada de lo que vas a repasar, y lo que tú no confirmes no se publica, porque nadie más lo revisa.
 
+Lee antes el libro de estilo del diario, encargos/estilo.md: vale entero para este repaso.
+
 Otro agente ha escrito en `comentario-semana-borrador/{FECHA}.json` los comentarios de la semana {FECHA} (el general y uno de cada grupo), con el encargo `encargos/pasos/20-comentario-semana.md` (léelo: ahí están los criterios) a partir de `comentario-semana-entrada/{FECHA}.md`. Repasa cada uno:
 
 - **Cada afirmación, contra su pieza**: abre la pieza enlazada en `ediciones/`, `biblioteca/`, `repositorio/` o `reportajes/` (el archivo de su fecha, la pieza con ese `id`) y comprueba que dice lo que el comentario le atribuye: nombres, cifras, organismos, qué se propone o se decide. Lo que no esté en la pieza se corrige o se quita.

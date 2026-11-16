@@ -1,7 +1,7 @@
 # Encargo común: enlaces en el texto
 
 Vale para todo el que escribe en el diario (redacción, Biblioteca, Repositorio y reportaje) y
-para quien lo revisa. Quien lee un nombre tiene que poder ir a él ahí mismo, sin bajar hasta las
+para quien lo revisa, junto con el libro de estilo (`encargos/estilo.md`). Quien lee un nombre tiene que poder ir a él ahí mismo, sin bajar hasta las
 fuentes del pie.
 
 ## Las fuentes, donde se nombran
@@ -40,7 +40,7 @@ que poder ir a ello.
   - **antes de presentar a una persona, una herramienta, un proyecto o un sitio web**, con su nombre (y con
     el apellido solo, o el nombre del sitio). Lo que digas de lo que ya contó el diario tiene que ser
     completo: si ha salido varias veces, se dice y se enlazan las piezas, como mucho tres; las demás se
-    resumen («además de…»). Nunca «lo contó en un breve» si también salió en otras piezas;
+    resumen («además de…»). Nunca «salió en un breve» si también salió en otros artículos;
   - **antes de escribir sobre un tema**, con `parecidas` y el titular y la entradilla que piensas escribir:
     si sale una pieza que ya cuenta lo mismo, la tuya no se escribe o se queda en lo nuevo y la enlaza.
 - **Los mensajes de los grupos tienen también su buscador**: `mcp__diario__buscar_mensajes` busca en todo el
@@ -52,10 +52,10 @@ que poder ir a ello.
   recurso, anuncio o debate, o de la que lo tuyo es continuación. Compartir un tema general
   («la IA en la evaluación») no basta.
 - **El enlace va en el texto, donde se menciona**, con esta forma:
-  `[el informe del MIT que el diario contó el 2 de noviembre](pieza:2026-11-01/informe-mit-ia)`.
+  `[el informe del MIT que el diario publicó el 2 de noviembre](pieza:2026-11-01/informe-mit-ia)`.
   El texto del enlace dice de qué trata, nunca «aquí» ni «este artículo».
 - **La fecha de la clave no es la de publicación**: es la de las conversaciones, y el número
-  sale al día siguiente. Si dices cuándo lo contó el diario, usa la fecha de publicación que
+  sale al día siguiente. Si dices cuándo lo publicó el diario, usa la fecha de publicación que
   `publicado.txt` pone en el encabezado de cada día (en el ejemplo, la clave es del 1 y la pieza
   salió el 2 de noviembre).
 - Como mucho tres enlaces de este tipo por pieza y uno por breve. Solo claves que estén en

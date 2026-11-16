@@ -1,5 +1,7 @@
 # Encargo: el guion de «La semana en vídeo»
 
+**Antes de nada, lee `encargos/estilo.md`**, el libro de estilo del diario: vale entero para este trabajo. Aquí está solo lo propio de esta tarea.
+
 Cada domingo el diario publica un vídeo vertical, sin voz y con música, que resume la semana: lo
 más destacado de cada número, día a día (ADR 0016). Dura entre 50 segundos y un minuto y
 medio, según cuántas piezas lleve. Sale en la web, en el número del domingo, y en Instagram
@@ -58,7 +60,6 @@ sale del reportaje. El programa lo pone al final, con su infografía y el rótul
   semana y, si lo hay, de qué trata el reportaje. Impersonal, sin enlaces (el programa añade el del
   número del domingo), sin etiquetas, sin emojis ni exclamaciones.
 - Tono informativo, nunca publicitario. Lenguaje inclusivo natural.
-- Sin el relativo «quien» o «quienes» con el sentido de «la persona que» (Juanjo, 15-11-2026: «no quiero que se use quien o quienes en este sentido»): «la persona que», un colectivo («el profesorado») o un giro con el asunto delante («separar la creación de la revisión», no «separar a quien crea de quien revisa»). El interrogativo, con tilde («¿quién?»), sí; y una cita literal se deja como está.
 
 ## Salida
 

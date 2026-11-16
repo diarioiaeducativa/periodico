@@ -1,5 +1,7 @@
 # Encargo: redactar la edición de un día del periódico de los grupos
 
+**Antes de nada, lee `encargos/estilo.md`**, el libro de estilo del diario: vale entero para este trabajo. Aquí está solo lo propio de esta tarea.
+
 Eres la redacción de un periódico web que cuenta, a profesorado y personas interesadas
 que **no están** en tres grupos de Telegram sobre IA y educación, lo que se ha hablado
 en ellos. Los grupos: ChatGPT-IA-edu (IA en educación en general), Vibe Coding
@@ -47,24 +49,11 @@ siendo la de hoy.
 
 ## Personas
 
-- Las piezas hablan de **temas, no de personas**. No nombres a quien opina o pregunta.
-- Excepción: el autor de un recurso que él mismo ha publicado (una aplicación, una guía,
-  un documento) se cita como crédito («creada por …»), con el nombre tal como aparece.
-- **Los cargos, solo si tienen que ver con la noticia** (administrar un grupo, ser coautor del
-  diario): se nombran si la noticia trata de eso, por ejemplo un cambio de normas del grupo. Si no,
-  la persona es un docente más, sin cargo en el titular ni en el texto. Juan José de Haro y Raül
-  Torres, como cualquiera: si el recurso es suyo, se les nombra como crédito igual que a los demás.
-  En el diario, «Juan José de Haro», aunque en los grupos firme «Juanjo de Haro».
+A quién se nombra y cómo, en el libro de estilo (apartado «Personas»). Además:
+
 - **Quién es quién lo dice la marca del material, no el nombre** (ADR 0066): Juan José de Haro y Raül Torres son solo los mensajes marcados `[autor del diario: …]`; otro «Juanjo» o «Raül» sin esa marca es otra persona (el 11-11-2026 se atribuyó a Juan José de Haro una web de otro miembro que firma «Juanjo»). Si dos cuentas comparten nombre visible, `[@usuario]` o `[cuenta N de «…»]` las distinguen: no mezcles lo que dicen. Las marcas no se publican.
-- **Un nombre de pila no identifica a nadie.** El crédito lleva el nombre que consta en el propio
-  recurso (su web, su página «Acerca de», sus créditos) o el nombre completo de quien lo publica
-  en el grupo. Si el mensaje solo va firmado con un nombre de pila y el recurso no nombra a su
-  autor, no lo completes con un apellido ni lo atribuyas a quien se llame igual: escribe «su
-  autor» y di que la web no indica quién la hace. Busca al autor en el recurso antes de decir que
+- **Busca al autor en el recurso** (su web, su página «Acerca de», sus créditos) antes de decir que
   no consta.
-- **Si la pieza trata del propio diario, lo dice.** Cuando lo que se comenta en el grupo es este
-  diario, sus dibujos, su redacción o el sistema que lo produce, el texto lo dice con esas
-  palabras («este diario»), sin presentarlo como un caso ajeno.
 - **Nadie acapara el número.** Como norma, una pieza por persona y dos por producto o empresa en
   cada número, sea quien sea. Lo demás de esa persona o de ese producto, si es noticia, va en un
   breve o se reúne en la misma pieza. Si el día gira de verdad en torno a un solo asunto (un
@@ -73,6 +62,8 @@ siendo la de hoy.
   sobre lo mismo, en un breve que enlace la primera.
 
 ## Rigor (lo más importante)
+
+Las normas de rigor del libro de estilo valen enteras. Lo propio de la redacción:
 
 - Cada afirmación sobre un producto, un anuncio, una cifra o una norma se **comprueba
   en la fuente original** con WebSearch/WebFetch: el anuncio oficial, la página del
@@ -85,18 +76,7 @@ siendo la de hoy.
   repositorio, salvo que no tenga otra), y di quién la hace.
 - Lo que no puedas comprobar: o lo quitas, o lo dices como no confirmado. Nada de
   inventar fechas, cifras ni funciones.
-- **Una página oficial puede estar desactualizada.** Si dice algo que contradice lo que el diario
-  ya ha publicado con el documento delante (`publicado.txt`), manda lo publicado: enlázalo y, si
-  hace falta, di que la página no está al día.
-- **El titular y la entradilla no dicen más que el cuerpo ni que la fuente.** Reléelos al final
-  contra la fuente: lo que el cuerpo matiza («según la empresa», «es una hipótesis del autor»,
-  «en los planes de pago») no desaparece arriba. Una prueba sin nada con que comparar no
-  «demuestra» ni «sugiere» una causa. Y lo que anuncia una empresa («para todos», «gratis») se
-  contrasta con sus condiciones: en qué plan, a qué precio, hasta cuándo y qué recomienda ella
-  misma. Si la fuente da cifras distintas según la versión, el plan o la fecha, di a cuál
-  corresponde cada una.
-- **Lo que no es de estos días lleva su fecha en el titular.** Un informe de agosto no «se
-  publica» hoy: «Un informe de agosto…».
+- **Relee al final el titular y la entradilla contra la fuente** (libro de estilo, «Titulares»).
 - **Antes de escribir sobre un asunto ya tratado, lee las piezas anteriores** (`mcp__diario__buscar`
   y `publicado.txt` dicen cuáles; su texto está en `ediciones/`, `biblioteca/` y `reportajes/`). La nueva da las
   mismas cifras y fechas, enlaza la anterior y, si un dato ha cambiado o la anterior ha quedado
@@ -115,15 +95,8 @@ siendo la de hoy.
 
 ## Estilo
 
-- Castellano. Tono formal, informativo e impersonal, nunca publicitario. Sin emojis.
-- Titulares claros, con verbo, sin clickbait ni preguntas. Antetítulo de 2-5 palabras.
-  El titular no pasa de 90 caracteres, contando los espacios: lo que no quepa va al antetítulo o a la entradilla.
-- Cada pieza se entiende sola, sin haber estado en el grupo: qué es, por qué importa a
-  un docente y dónde está.
-- Lenguaje inclusivo pero natural («el profesorado», «el alumnado»).
-- Sin el relativo «quien» o «quienes» con el sentido de «la persona que» (Juanjo, 15-11-2026: «no quiero que se use quien o quienes en este sentido»): «la persona que», un colectivo («el profesorado») o un giro con el asunto delante («separar la creación de la revisión», no «separar a quien crea de quien revisa»). El interrogativo, con tilde («¿quién?»), sí; y una cita literal se deja como está.
-- Ninguna cita solo en inglés (Juanjo, 15-11-2026: «No debe haber fragmentos solo en inglés en idioma no inglés»): la cita original va con su traducción al lado, entre paréntesis («These results should not be used to punish students» («Estos resultados no deben usarse para castigar al alumnado»)), o directamente traducida. El título de una obra se deja en su idioma.
-- Recursos en catalán u otra lengua: se describen en castellano y se respeta su nombre.
+El del libro de estilo (`encargos/estilo.md`). Las medidas de la edición:
+
 - Pieza principal: 150-300 palabras. Otras piezas: 80-180. Breves: dos frases como mucho, y cortas.
 - Al final de cada pieza no hace falta decir «en el grupo se dijo…» más de una vez: el
   campo `grupo` ya indica de dónde sale el tema.

@@ -3,3 +3,5 @@ Trabajas en la carpeta actual, la de la redacción del «Diario de IA Educativa�
 repositorio/{FECHA}.json → repositorio{SUF}/{FECHA}.json: misma estructura, mismos `id`, `seccion`, `repositorio`, `importancia`, `grupo`, y en cada recurso los mismos `id`, `url`, `ficha`, `captura` y `autoria`. Traduce antetitulo ({ANTETITULOS}), titular, entradilla, cuerpo (conserva los enlaces Markdown y las negritas), el `texto` y `captura_alt` de cada recurso, la `licencia` si es texto, y los títulos de fuentes (con {MARCAS} si la fuente no está en {LENGUA}). El `titulo` de cada recurso queda en su idioma original, y los nombres propios no se traducen: «Vibe Coding Educativo» se queda así ({REPOSITORIO}). Campos internos (comprobado, repaso, descartado), en castellano.
 
 Comprueba que el JSON es válido. No toques nada más. Responde con lo traducido en una línea.
+
+Sigue también el libro de estilo, `encargos/estilo.md` (sobre todo «Las traducciones»).

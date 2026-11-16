@@ -1,5 +1,7 @@
 # Encargo: los artículos de la Biblioteca digital
 
+**Antes de nada, lee `encargos/estilo.md`**, el libro de estilo del diario: vale entero para este trabajo. Aquí está solo lo propio de esta tarea.
+
 La Biblioteca digital es el tema de ChatGPT-IA-edu donde los miembros dejan documentos sobre
 IA y educación: guías de las administraciones, informes de organismos, estudios, libros. Cada
 documento llega con una ficha (referencia, resumen, palabras clave, licencia). El diario dedica
@@ -91,15 +93,9 @@ de `publicado.txt`.
 
 ## Estilo
 
-- Castellano. Tono formal, informativo e impersonal, nunca publicitario. Sin emojis. Lenguaje
-  inclusivo pero natural.
-- Sin el relativo «quien» o «quienes» con el sentido de «la persona que» (Juanjo, 15-11-2026: «no quiero que se use quien o quienes en este sentido»): «la persona que», un colectivo («el profesorado») o un giro con el asunto delante («separar la creación de la revisión», no «separar a quien crea de quien revisa»). El interrogativo, con tilde («¿quién?»), sí; y una cita literal se deja como está.
-- Ninguna cita solo en inglés (Juanjo, 15-11-2026: «No debe haber fragmentos solo en inglés en idioma no inglés»): la cita original va con su traducción al lado, entre paréntesis («These results should not be used to punish students» («Estos resultados no deben usarse para castigar al alumnado»)), o directamente traducida. El título de una obra se deja en su idioma.
 - Titular claro, con verbo, que diga qué aporta el documento (no solo su título). Antetítulo de
   2-5 palabras con el tipo de documento («Guía oficial», «Informe de la UNESCO»).
-  El titular no pasa de 90 caracteres, contando los espacios: lo que no quepa va al antetítulo o a la entradilla.
 - Entre 400 y 700 palabras de cuerpo, en párrafos de 3 a 6 frases.
-- Documentos en catalán u otra lengua: se describen en castellano y se respeta su título.
 
 ## Salida
 

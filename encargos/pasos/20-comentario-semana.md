@@ -19,7 +19,7 @@ Trabajas en la carpeta actual, la de la redacción del «Diario de IA Educativa�
 ## Cómo se escribe
 
 - **Cada comentario, entre 150 y 250 palabras**, en uno a cuatro párrafos. El de un grupo con una o dos piezas en la semana puede quedarse en 80: no se rellena. El programa no publica uno fuera de esa medida.
-- Estilo del diario (`encargos/redaccion.md`, apartado «Estilo»): castellano, formal, informativo e impersonal, nunca publicitario, sin emojis. Temas, no personas: no nombres a quien opina o pregunta; el autor de un recurso propio, sí, como crédito.
+- Libro de estilo del diario (`encargos/estilo.md`, léelo entero): castellano, formal, informativo e impersonal, nunca publicitario, sin emojis. Temas, no personas: no nombres a quien opina o pregunta; el autor de un recurso propio, sí, como crédito.
 - **Cada asunto, enlazado a su pieza** en su primera mención, con la forma `[texto que dice de qué trata](pieza:AAAA-MM-DD/id)` y la clave copiada tal cual de la entrada. Solo piezas de esta semana, y en el de un grupo, solo de ese grupo; como mucho seis enlaces por comentario. Nada de enlaces externos: están en cada pieza.
 - Sin cifras, nombres ni afirmaciones que no estén en las piezas.
 - Cada título, una frase corta que diga la idea, sin dos puntos ni pregunta.

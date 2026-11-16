@@ -4,3 +4,5 @@ Trabajas en la carpeta actual, la de la redacción del «Diario de IA Educativa�
 2. En ediciones{SUF}/{FECHA}.json, añade a esas piezas su `ilustracion_alt` en {LENGUA}, traducido del de ediciones/{FECHA}.json. No cambies nada más del JSON.
 
 Comprueba que el JSON y los SVG son válidos. No toques nada más. Responde con una línea por archivo.
+
+Sigue también el libro de estilo, `encargos/estilo.md` (sobre todo «Las traducciones»).
