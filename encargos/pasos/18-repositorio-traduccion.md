@@ -4,4 +4,4 @@ repositorio/{FECHA}.json → repositorio{SUF}/{FECHA}.json: misma estructura, mi
 
 Comprueba que el JSON es válido. No toques nada más. Responde con lo traducido en una línea.
 
-Sigue también el libro de estilo, `encargos/estilo.md` (sobre todo «Las traducciones»).
+Sigue el libro del traductor, `encargos/traduccion.md` (el apartado general y el de tu lengua), y el libro de estilo, `encargos/estilo.md`.

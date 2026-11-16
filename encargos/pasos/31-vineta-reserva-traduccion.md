@@ -4,4 +4,4 @@ Copia "fecha", "reserva" y "elegida" con el texto de los bocadillos y del rótul
 
 Comprueba que el JSON es válido. No toques nada más. Responde con una línea: lo traducido.
 
-Sigue también el libro de estilo, `encargos/estilo.md` (sobre todo «Las traducciones»).
+Sigue el libro del traductor, `encargos/traduccion.md` (el apartado general y el de tu lengua), y el libro de estilo, `encargos/estilo.md`.

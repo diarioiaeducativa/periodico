@@ -80,5 +80,6 @@
 | [0076](0076-los-json-del-numero-a-salvo-de-cada-agente-y-un-articulo-de-cada-grupo.md) | Los JSON del número, a salvo de cada agente, y un artículo de cada grupo |
 | [0077](0077-reserva-del-fondo-de-edumedia-iag.md) | Reserva del fondo de EduMedia-IAG |
 | [0078](0078-libro-de-estilo-comun-para-los-agentes.md) | Libro de estilo común para los agentes |
+| [0079](0079-libro-del-traductor.md) | Libro del traductor |
 
 Plantilla: [0000-plantilla.md](0000-plantilla.md). Para crear uno: `nuevo-adr "Título"`.

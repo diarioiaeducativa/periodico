@@ -154,20 +154,9 @@ Lo detallado está en `encargos/enlaces.md`; lo esencial:
 ## Las traducciones
 
 Cada edición se traduce al catalán, al gallego, al euskera y al inglés, con el mismo criterio que el
-castellano y en el registro natural de cada lengua, no calcado. Lo que recibe cada traductor está en
-`scripts/idiomas.py`, que manda; en resumen:
-
-- **Catalán**: estándar del IEC; «el professorat», «l'alumnat»; «soc», sin tilde; las etapas, en
-  minúscula.
-- **Gallego**: normativa de la Real Academia Galega; «o profesorado», «o alumnado»; sin castellanismos
-  («encerado», no «pizarra»).
-- **Euskera**: batua de Euskaltzaindia; «irakasleak», «ikasleak»; la IA es «adimen artifiziala» (AA).
-- **Inglés**: británico; «teachers», «students»; el diario es «the paper»; comillas inglesas (“ ”) y
-  el porcentaje pegado a la cifra (25%); lo que se dijo en inglés se copia de la fuente.
-- Lo propio de España (la ESO, las oposiciones, una comunidad autónoma, la LOMLOE) se explica en la
-  traducción, sobre todo en la inglesa.
-- Los nombres de productos y de los grupos no se traducen. Una fuente en otra lengua lleva su marca
-  («(en castellà)», «(in Spanish)»).
+castellano y en el registro natural de cada lengua, no calcado. Cómo se hace en cada lengua (norma,
+dónde consultar, formatos, vocabulario de la IA y lo propio de España) está en el libro del traductor,
+`encargos/traduccion.md`.
 
 ## Correcciones
 

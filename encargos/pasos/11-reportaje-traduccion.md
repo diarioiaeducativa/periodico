@@ -5,4 +5,4 @@ Trabajas en la carpeta actual, la de la redacción del «Diario de IA Educativa�
 
 Comprueba que el JSON y el SVG son válidos. No toques nada más. Responde con lo traducido en una línea por archivo.
 
-Sigue también el libro de estilo, `encargos/estilo.md` (sobre todo «Las traducciones»).
+Sigue el libro del traductor, `encargos/traduccion.md` (el apartado general y el de tu lengua), y el libro de estilo, `encargos/estilo.md`.
