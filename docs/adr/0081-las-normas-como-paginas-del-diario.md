@@ -16,8 +16,12 @@ que no son del diario. Se pidió una página propia, que siga al documento cuand
 - Un convertidor propio (`doc_html`, `doc_linea`) para lo que usan estos documentos: títulos, párrafos,
   listas, tablas (con el estilo de las del reportaje, en fichas en el móvil), citas, negritas, cursivas,
   código y enlaces. No se añade ninguna dependencia ni hay que reconstruir el contenedor.
-- Los enlaces entre los tres documentos llevan a sus páginas; los que van a los ADR o a archivos del
-  código, a GitHub.
+- Maqueta de artículo largo: el primer párrafo de entradilla, el texto en columnas en el ordenador con el
+  botón «Una columna» (ADR 0044) y el botón «Escuchar» (ADR 0073). Cada apartado y cada tabla cortan las
+  columnas, y un tramo corto de texto (menos de 900 caracteres) va a lo ancho, para no repartir dos líneas
+  en tres columnas.
+- Los enlaces entre los tres documentos llevan a sus páginas; cada mención «ADR 0026» enlaza a ese
+  registro en GitHub, y lo demás del código, también a GitHub.
 - Solo en castellano, en la raíz. «La redacción» de cada idioma enlaza a ellas y dice que están en
   castellano; en estas páginas, el selector de idioma lleva a «La redacción» de cada lengua y no se
   anuncian versiones en otros idiomas.

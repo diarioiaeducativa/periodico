@@ -2687,6 +2687,12 @@ def doc_enlace(url, origen):
     return f"{CODIGO}/blob/main/{destino}", True
 
 
+def doc_adr(m):
+    """«0026» → el enlace a ese ADR en GitHub, si existe."""
+    f = next((RAIZ / "docs" / "adr").glob(f"{m.group(0)}-*.md"), None)
+    return enlace(f"{CODIGO}/blob/main/docs/adr/{f.name}", m.group(0)) if f else m.group(0)
+
+
 def doc_linea(t, origen):
     """El Markdown de una línea de los documentos: código, negritas, cursivas y enlaces."""
     codigos = []
@@ -2699,6 +2705,7 @@ def doc_linea(t, origen):
         url, fuera = doc_enlace(html.unescape(m.group(2)), origen)
         return enlace(url, m.group(1)) if fuera else f'<a href="{e(url)}">{m.group(1)}</a>'
     t = re.sub(r"\[([^\]]+)\]\(([^)\s]+)\)", a, t)
+    t = re.sub(r"\bADR (\d{4}(?:(?:, | y )\d{4})*)", lambda m: "ADR " + re.sub(r"\d{4}", doc_adr, m.group(1)), t)
     return re.sub("\x00(\\d+)\x00", lambda m: f"<code>{e(codigos[int(m.group(1))])}</code>", t)
 
 
@@ -2713,7 +2720,8 @@ def doc_html(texto, origen):
             titulo, i = ln[2:].strip(), i + 1
         elif m := re.match(r"(#{2,4}) (.*)", ln):
             n = len(m.group(1))
-            out.append(f"<h{n}>{doc_linea(m.group(2), origen)}</h{n}>")
+            clase = ' class="ladillo"' if n == 2 else ""   # los apartados cortan las columnas, como en el reportaje
+            out.append(f"<h{n}{clase}>{doc_linea(m.group(2), origen)}</h{n}>")
             i += 1
         elif ln.startswith("|"):
             filas = []
@@ -2749,24 +2757,51 @@ def doc_html(texto, origen):
                 bloque.append(lineas[i].strip())
                 i += 1
             out.append(f"<p>{doc_linea(' '.join(bloque), origen)}</p>")
-    return titulo, "\n".join(out)
+    # El primer párrafo es la entradilla; se aparta antes de agrupar
+    entradilla = ""
+    if out and out[0].startswith("<p>"):
+        entradilla = out.pop(0)[3:-4]
+    # Un texto corto entre dos títulos o tablas no se reparte en columnas de una línea: va a lo ancho
+    agrupado, tramo = [], []
+
+    def cierra():
+        if tramo:
+            largo = len(re.sub(r"<[^>]+>", "", "".join(tramo)))
+            agrupado.append(f'<div class="corto">{"".join(tramo)}</div>' if largo < DOC_CORTO else "".join(tramo))
+            tramo.clear()
+    for bloque in out:
+        if bloque.startswith(('<h2 class="ladillo">', '<figure class="tabla">')):
+            cierra()
+            agrupado.append(bloque)
+        else:
+            tramo.append(bloque)
+    cierra()
+    return titulo, entradilla, "\n".join(agrupado)
+
+
+DOC_CORTO = 900   # caracteres por debajo de los cuales un tramo de texto no va en columnas
 
 
 def pagina_documento(eds, ruta):
-    """Una de las normas públicas, con la maqueta del diario."""
+    """Una de las normas públicas, con la maqueta de un artículo largo: el primer párrafo de entradilla, el
+    texto en columnas en el ordenador (con «Una columna») y el botón «Escuchar» (ADR 0044 y 0073)."""
     origen = DOCUMENTOS[ruta]
-    titulo, cuerpo = doc_html((RAIZ / origen).read_text(), origen)
-    primero = re.search(r"<p>(.*?)</p>", cuerpo)
-    desc = re.sub(r"<[^>]+>", "", primero.group(1))[:200] if primero else titulo
-    pagina = cabeza(f"{titulo} | {L['titulo']}", "", desc, ruta) + f"""<body class="pag-que-es">
+    titulo, entradilla, cuerpo = doc_html((RAIZ / origen).read_text(), origen)
+    desc = re.sub(r"<[^>]+>", "", entradilla)[:200] or titulo
+    pagina = cabeza(f"{titulo} | {L['titulo']}", "", desc, ruta) + f"""<body class="pag-articulo">
 {cabecera("", ruta, eds[-1]["fecha"], eds[-1]["numero"], True, h1=False)}
-<main class="articulo que-es documento">
-<h1 class="titular">{e(titulo)}</h1>
-{cuerpo}
-<p class="volver"><a href="redaccion.html">{L["quees"]}</a> · <a href="./">{L["volver"]}</a></p>
+<main class="articulo documento en-columnas">
+  <article>
+    <p class="seccion"><span><a href="redaccion.html">{L["quees"]}</a></span> <span class="seccion-dcha">{boton_escuchar()}{boton_columnas()}</span></p>
+    <h1 class="titular">{e(titulo)}</h1>
+    {f'<p class="entradilla">{entradilla}</p>' if entradilla else ""}
+    <div class="cuerpo">{cuerpo}</div>
+  </article>
+  <p class="volver"><a href="redaccion.html">{L["quees"]}</a> · <a href="./">{L["volver"]}</a></p>
 </main>
 {pie("", eds, None)}
 {SCRIPT_TEMA}
+{SCRIPT_LECTOR}
 </body>
 </html>"""
     # Solo existe en castellano: sin versiones en los otros idiomas, y el selector de idioma lleva a «La
