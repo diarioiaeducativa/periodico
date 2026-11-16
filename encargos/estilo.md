@@ -171,8 +171,10 @@ castellano y en el registro natural de cada lengua, no calcado. Lo que recibe ca
 
 ## Correcciones
 
-- Un error se corrige sin esperar a que nadie lo pida, en el mismo artículo, con su nota
-  («Corregido el…») y en los cinco idiomas (ADR 0055).
+- Un error se corrige sin esperar a que nadie lo pida, en el mismo artículo y en los cinco idiomas, con
+  su nota al final (ADR 0055): «Corregido el…» (había un error), «Actualización del…» (el dato era
+  cierto y ha cambiado) o «Nota añadida el…» (faltaba algo). Una errata que no cambia el sentido se
+  corrige sin nota.
 - Si el error estaba en el titular, en los avisos o en las redes, la corrección llega también allí.
 - No se retira un artículo entero si basta con cambiar una parte.
 
