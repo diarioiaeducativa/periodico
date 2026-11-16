@@ -52,7 +52,7 @@ radio, televisión o fotografía.
 ## Consecuencias
 
 - Una sola fuente: lo que se lee en el libro es lo que aplican los agentes.
-- Los agentes leen unas 1.600 palabras más por tarea.
+- Los agentes leen unas 2.100 palabras más por tarea.
 - Las guías han perdido lo que repetían; si un agente empeora en algo, se mira primero si el libro
   lo dice con claridad.
 
