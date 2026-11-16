@@ -12,7 +12,7 @@ mejorarlo. Cómo se escribe está en el [libro de estilo](../encargos/estilo.md)
 decisión, en los [registros de decisiones](adr/README.md) (ADR), que se citan por su número.
 
 Cada norma dice **dónde se aplica** (qué agente o qué programa), **cómo se comprueba** y, si lo hay,
-**qué falta**. Los huecos conocidos se reúnen al final.
+**qué falta**. Lo que falta por mejorar se reúne al final.
 
 ## 1. El número
 
@@ -177,7 +177,7 @@ imagen; si cambia el reportaje, el dominical y el vídeo.
   que no hay publicidad ni patrocinio (ADR 0055 y 0065).
 - El código de la redacción es público (ADR 0019).
 
-## 10. Huecos conocidos
+## 10. Lo que falta por mejorar
 
 Lo que aún no está resuelto o se apoya en una sola comprobación. Es el punto de partida para mejorar:
 
