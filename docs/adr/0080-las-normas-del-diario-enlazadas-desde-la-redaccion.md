@@ -10,9 +10,8 @@ libro del traductor (`encargos/traduccion.md`, ADR 0079). Hacía falta decidir c
 la web sin llenar el pie de enlaces.
 
 Los medios de referencia no ponen sus normas sueltas en el pie: la BBC las tiene en sus «Editorial
-Guidelines», dentro de «About the BBC»; The Guardian, en «About us», con su código editorial; RTVE, en su
-manual de estilo, enlazado desde la información corporativa. El lector las encuentra en la página que
-explica quién hace el medio y cómo trabaja.
+Guidelines», dentro de «About the BBC», y The Guardian, en «About us», con su código editorial: el lector
+las encuentra en la página que explica quién hace el medio y cómo trabaja.
 
 ## Decisión
 
