@@ -52,14 +52,14 @@ noticia, cómo se compone el número y la reserva no son estilo: están en `docs
   lanzado…» o «es posible que…».
 - **Frases claras**: una idea por frase, la palabra corriente antes que la técnica y fuera las
   metáforas gastadas («cambio de paradigma», «en la era de la IA»).
-- Los nombres de productos, aplicaciones, grupos y documentos, tal como los escribe quien los hace
+- Los nombres de productos, aplicaciones, grupos y documentos, tal como los escribe la empresa o la persona que los hace
   («ChatGPT», «Vibe Coding Educativo»). Un recurso en catalán u otra lengua se describe en castellano
   y conserva su nombre; el título de una obra queda en su idioma.
 
 ## Titulares, antetítulos y entradillas
 
 - **Titular**: claro, con verbo, sin preguntas ni ganchos («no creerás…»). Dice qué aporta lo que
-  cuenta, no solo el nombre de la herramienta o del documento. **Como mucho 90 caracteres**, contando
+  recoge, no solo el nombre de la herramienta o del documento. **Como mucho 90 caracteres**, contando
   los espacios: lo que no quepa va al antetítulo o a la entradilla.
 - **Antetítulo**: de dos a cinco palabras, sin verbo: el tipo de cosa o el ámbito («Guía oficial»,
   «Nuevo en el repositorio», «Del fondo de EduMedia»).
@@ -73,11 +73,11 @@ noticia, cómo se compone el número y la reserva no son estilo: están en `docs
 
 ## Personas
 
-- **Temas, no personas.** No se nombra a quien opina o pregunta en los grupos, tampoco con «un
+- **Temas, no personas.** No se nombra a las personas que opinan o preguntan en los grupos, tampoco con «un
   miembro dijo…»: se recogen las posturas.
 - **Se nombra al autor de un recurso que él mismo ha publicado** (una aplicación, una guía, un
   documento), como crédito («creada por…»), con el nombre que consta en el propio recurso o el
-  nombre completo de quien lo publica. Un nombre de pila no identifica a nadie: si el recurso no
+  nombre completo de la persona que lo publica. Un nombre de pila no identifica a nadie: si el recurso no
   dice quién lo hace, «su autor», y que la web no lo indica. Nunca se completa un apellido.
 - **Quién es quién lo dice la marca del material, no el nombre** (ADR 0066): los autores del diario
   son solo los mensajes marcados `[autor del diario: …]`; otra persona con el mismo nombre de pila es
