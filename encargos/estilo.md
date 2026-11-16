@@ -5,8 +5,8 @@ leer el público (artículos, breves, reportajes, «Hace un año», comentarios 
 textos para redes y vídeos) y para las personas que lo mantienen. Se lee entero antes de empezar.
 
 Aquí está lo común. Cada tarea tiene además su guía en `encargos/` con lo propio (medidas, formato,
-tono de los avisos, la viñeta…); si una norma de aquí no vale para una tarea, su guía lo dice. Qué es
-noticia, cómo se compone el número y la reserva no son estilo: están en `docs/como-se-hace.md`.
+tono de los avisos, la viñeta…); si una norma de aquí no vale para una tarea, su guía lo dice. Las normas que no son de estilo (qué es noticia, qué lleva cada número y los artículos guardados
+para los días sin noticias) están en «Cómo se hace el diario», `docs/como-se-hace.md`.
 
 ## Para quién se escribe
 
