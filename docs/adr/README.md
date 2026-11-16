@@ -83,5 +83,6 @@
 | [0079](0079-libro-del-traductor.md) | Libro del traductor |
 | [0080](0080-las-normas-del-diario-enlazadas-desde-la-redaccion.md) | Las normas del diario, enlazadas desde «La redacción» |
 | [0081](0081-las-normas-como-paginas-del-diario.md) | Las normas, como páginas del diario |
+| [0082](0082-la-redaccion-breve-y-el-diario-por-dentro.md) | «La redacción» breve y «El diario por dentro» |
 
 Plantilla: [0000-plantilla.md](0000-plantilla.md). Para crear uno: `nuevo-adr "Título"`.

@@ -146,8 +146,8 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
   columnas de periódico, con el botón «Una columna» en la línea de la sección; las reglas, al final de
   `estaticos/diario.css`. Lo que tenga que cortar las columnas (un bloque nuevo dentro de `.cuerpo`) se
   añade a su lista de `column-span: all`. «La redacción» también (ADR 0047), en bloques por tema: un apartado nuevo
-  de `secciones` se coloca en `BLOQUES_REDACCION`, en el mismo orden en los cinco idiomas (el primer bloque va
-  junto al organigrama, en «Cómo se hace»). Sus textos son para lectores (ADR 0065): sin detalles técnicos,
+  de `secciones` se coloca en `BLOQUES_DENTRO` (va en «El diario por dentro», ADR 0082), en el mismo orden en los cinco idiomas. «La redacción» es la versión
+  breve: organigrama, «Cómo se hace cada número», cuatro ideas, «Para saber más» y las comunidades. Sus textos son para lectores (ADR 0065): sin detalles técnicos,
   «artículo» y no «pieza», y la cifra de agentes de la entrada, al día si cambia el equipo.
 - **Buscador** (ADR 0007): Pagefind, tras `generar.py`, solo en los
   `<article>` con `data-pagefind-body`.
