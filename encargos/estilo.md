@@ -13,6 +13,8 @@ noticia, cómo se compone el número y la reserva no son estilo: están en `docs
 - Para docentes y personas interesadas en la IA en educación que **no están** en los grupos. Cada
   texto se entiende solo, sin haber leído los mensajes ni otros artículos: qué es, por qué importa a
   un docente y dónde encontrarlo.
+- **Para un público muy amplio, no para expertos**: un docente de cualquier materia, una familia, una
+  persona que empieza con la IA. Si algo solo lo entiende quien ya sabe del tema, se reescribe.
 - Lo que interesa al lector, no cómo funciona el diario por dentro: nada de agentes, ficheros,
   programas ni servidores en lo que se publica, salvo que el artículo trate del propio diario o de
   Anthropic (apartado «Rigor»).
@@ -52,6 +54,11 @@ noticia, cómo se compone el número y la reserva no son estilo: están en `docs
   lanzado…» o «es posible que…».
 - **Frases claras**: una idea por frase, la palabra corriente antes que la técnica y fuera las
   metáforas gastadas («cambio de paradigma», «en la era de la IA»).
+- **Antes claro que breve.** Nada de expresiones comprimidas que obligan a releer: sustantivos
+  encadenados («flujo de generación multimodal con verificación cruzada»), jerga de los grupos,
+  palabras que se dan por sabidas o frases a las que les falta el verbo. Si una frase corta se entiende
+  peor que una algo más larga, va la larga: «un sistema que crea imágenes y vídeo y comprueba el
+  resultado con otro modelo».
 - Los nombres de productos, aplicaciones, grupos y documentos, tal como los escribe la empresa o la persona que los hace
   («ChatGPT», «Vibe Coding Educativo»). Un recurso en catalán u otra lengua se describe en castellano
   y conserva su nombre; el título de una obra queda en su idioma.
