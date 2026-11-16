@@ -14,7 +14,7 @@ noticia, cómo se compone el número y la reserva no son estilo: están en `docs
   texto se entiende solo, sin haber leído los mensajes ni otros artículos: qué es, por qué importa a
   un docente y dónde encontrarlo.
 - **Para un público muy amplio, no para expertos**: un docente de cualquier materia, una familia, una
-  persona que empieza con la IA. Si algo solo lo entiende quien ya sabe del tema, se reescribe.
+  persona que empieza con la IA. Si algo solo lo entienden las personas que ya saben del tema, se reescribe.
 - Lo que interesa al lector, no cómo funciona el diario por dentro: nada de agentes, ficheros,
   programas ni servidores en lo que se publica, salvo que el artículo trate del propio diario o de
   Anthropic (apartado «Rigor»).
