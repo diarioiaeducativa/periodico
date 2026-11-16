@@ -64,8 +64,15 @@ def comprobar(origen, dest, h):
         if not m or m.group(1) != h:
             malos.append("falta la huella del original en la primera línea")
         a, b = forma((RAIZ / origen).read_text(encoding="utf-8")), forma(t)
-        malos += [f"no tiene {k} iguales ({a[k] if not isinstance(a[k], list) else len(a[k])} frente a "
-                  f"{b[k] if not isinstance(b[k], list) else len(b[k])})" for k in a if a[k] != b[k]]
+        for k in a:
+            if a[k] == b[k]:
+                continue
+            if isinstance(a[k], list):   # qué falta y qué sobra, para saber qué ha cambiado el traductor
+                falta = [x for x in a[k] if x not in b[k]]
+                sobra = [x for x in b[k] if x not in a[k]]
+                malos.append(f"no tiene {k} iguales (falta {falta[:5]}, sobra {sobra[:5]})")
+            else:
+                malos.append(f"no tiene {k} iguales ({a[k]} frente a {b[k]})")
         if len(t) < 0.6 * len((RAIZ / origen).read_text(encoding="utf-8")):
             malos.append("es demasiado corta")
     if malos:

@@ -7,7 +7,7 @@ Escribe {DESTINO}, en Markdown:
 
 No se traduce:
 
-- lo que va entre acentos graves (`` `encargos/` ``, `` `pieza:AAAA-MM-DD/id` ``), que son nombres de archivos o de campos;
+- lo que va entre acentos graves, exactamente igual, letra por letra, aunque parezca una palabra corriente: son nombres de archivos, de campos o de valores que usa el programa del diario (`` `encargos/` ``, `` `pieza:AAAA-MM-DD/id` ``, `` `fuentes` ``, `` `grafico` ``, `` `barras` ``, `` `columnas` ``, `` `lineas` ``, `` `[autor del diario: …]` ``, `` `[texto](url)` ``). No añadas ni quites ninguno: el original tiene los mismos que tiene que tener la traducción;
 - la dirección de cada enlace (lo que va entre paréntesis tras `[texto]`); el texto del enlace sí, salvo que sea el título de una obra o de un documento;
 - las menciones a los registros de decisiones, que se dejan con la forma «ADR 0026», con las mismas cifras;
 - los nombres de productos, de empresas y de los grupos;
