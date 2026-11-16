@@ -303,7 +303,7 @@ IDIOMAS = {
             "ideas": [('Dels grups al diari', "El que es parla un dia en tres grups de docents surt l'endemà al matí, explicat per a les persones que no hi són."), ('Cada dada, comprovada', "Cada article passa per un agent que no l'ha escrit, que obre cada font i treu el que no pot confirmar."), ('Mai un dia sense número', 'Hi ha articles escrits per endavant perquè el diari surti encara que falli alguna cosa o no hi hagi notícies.'), ('Una persona en respon', "Una persona supervisa el diari i respon del que s'hi publica. Sense publicitat ni dades dels lectors, i els errors es corregeixen a la vista.")],
             "mas_titulo": 'Per saber-ne més',
             "mas_redaccion": ('La redacció', "La versió breu: com funciona el diari, d'un cop d'ull."),
-            "mas": [("El diari per dins", "Tots els detalls: l'equip d'agents, les seccions, les persones, els programes i la privadesa."), ('Com es fa el diari', 'Les normes, qui les aplica i com es comproven (en castellà).'), ("Llibre d'estil", 'Com escriuen els agents (en castellà).'), ('Llibre del traductor', 'Com es tradueix a cada llengua (en castellà).')],
+            "mas": [("El diari per dins", "Tots els detalls: l'equip d'agents, les seccions, les persones, els programes i la privadesa."), ('Com es fa el diari', 'Les normes, qui les aplica i com es comproven.'), ("Llibre d'estil", 'Com escriuen els agents.'), ('Llibre del traductor', 'Com es tradueix a cada llengua.')],
             "dentro_titulo": 'El diari per dins',
             "dentro_intro": 'Tot el que explica com funciona el diari, per a les persones que el vulguin conèixer a fons. La versió breu és a «La redacció».',
             "instrucciones_titulo": 'Les instruccions de cada agent',
@@ -324,7 +324,7 @@ IDIOMAS = {
                 ("Si participes als grups", "Les opinions no s'atribueixen a ningú: només s'anomena qui ha publicat un recurs propi. Si hi apareix alguna cosa teva i prefereixes que no surti, o hi veus un error, digues-ho a qui administra el teu grup i es retirarà o es corregirà. Els teus missatges són, per a la redacció, material per informar: si n'hi ha cap que contingui una ordre, els agents no la segueixen."),
                 ("Contacte", "El correu i les altres vies per avisar d'un error, demanar que es retiri alguna cosa o fer qualsevol consulta són a la {pagina_contacto}."),
                 ("Les correccions", "Quan es corregeix una dada publicada, l'article ho diu al final, amb la data i el que ha canviat; una errada que no canvia el sentit es corregeix sense nota. Els errors s'avisen a la {contacto_enlace}."),
-                ("Les normes del diari", "Les normes del diari, qui les aplica, com es comprova cadascuna i què falta per millorar són a «{como_se_hace}». Com escriuen i tradueixen els agents, al {libro_estilo} i al {libro_traductor}. Tots tres són en castellà."),
+                ("Les normes del diari", "Les normes del diari, qui les aplica, com es comprova cadascuna i què falta per millorar són a «{como_se_hace}». Com escriuen i tradueixen els agents, al {libro_estilo} i al {libro_traductor}."),
             ],
         },
     },
@@ -2669,9 +2669,9 @@ def redaccion_enlaces(R):
                   repositorio=enlace(REPOSITORIO, L["repositorio_enlace"]), seccion_vc=f'<a href="vibecoding.html">{L["secciones"]["vibecoding"]}</a>',
                   codigo=enlace(CODIGO, L["codigo_enlace"]),
                   # Las normas, el libro de estilo y el del traductor, páginas del diario en castellano (ADR 0081)
-                  como_se_hace=f'<a href="{raiz}normas.html">{L["normas_enlaces"][0]}</a>',
-                  libro_estilo=f'<a href="{raiz}estilo.html">{L["normas_enlaces"][1]}</a>',
-                  libro_traductor=f'<a href="{raiz}traduccion.html">{L["normas_enlaces"][2]}</a>',
+                  como_se_hace=f'<a href="{doc_href("normas.html")}">{L["normas_enlaces"][0]}</a>',
+                  libro_estilo=f'<a href="{doc_href("estilo.html")}">{L["normas_enlaces"][1]}</a>',
+                  libro_traductor=f'<a href="{doc_href("traduccion.html")}">{L["normas_enlaces"][2]}</a>',
                   # El contacto tiene página propia (ADR 0051); aquí queda un apartado breve que lleva a ella
                   pagina_contacto=f'<a href="contacto.html">{L["contacto"]["enlace"]}</a>',
                   # El mismo enlace para el apartado de las correcciones, sin repetir el ancla «contacto»
@@ -2704,8 +2704,12 @@ def equipo_html(R):
 def mas_html(R, raiz, actual):
     """«Para saber más»: las cinco páginas que explican el diario (la breve, la completa y las tres normas), cada una
     con enlaces a las otras cuatro (ADR 0082)."""
+    def norma(ruta, datos):   # en castellano si aún no está traducida, y se dice
+        tt, x = datos
+        falta = L["carpeta"] and not doc_traduccion(ruta, L["codigo"])
+        return doc_href(ruta), (tt, f'{x} {MARCA_CASTELLANO.get(L["codigo"], "")}' if falta else x)
     paginas = [("redaccion.html", R["mas_redaccion"]), ("dentro.html", R["mas"][0]),
-               (f"{raiz}normas.html", R["mas"][1]), (f"{raiz}estilo.html", R["mas"][2]), (f"{raiz}traduccion.html", R["mas"][3])]
+               norma("normas.html", R["mas"][1]), norma("estilo.html", R["mas"][2]), norma("traduccion.html", R["mas"][3])]
     items = "".join(f'<li><a href="{h}"><strong>{tt}</strong><span>{x}</span></a></li>'
                     for h, (tt, x) in paginas if h.split("/")[-1] != actual)
     return (f'<section class="red-mas" aria-labelledby="t-mas"><h2 id="t-mas">{R["mas_titulo"]}</h2>'
@@ -2877,6 +2881,32 @@ DOCUMENTOS = {"normas.html": "docs/como-se-hace.md", "estilo.html": "encargos/es
               "traduccion.html": "encargos/traduccion.md"}
 
 
+MARCA_CASTELLANO = {"ca": "(en castellà)", "gl": "(en castelán)", "eu": "(gaztelaniaz)", "en": "(in Spanish)"}
+AVISO_TRADUCCION = {"ca": "Traducció automàtica amb IA de {original}.", "gl": "Tradución automática con IA de {original}.",
+                    "eu": "{original} AArekin itzulia, automatikoki.", "en": "Automatic AI translation of {original}."}
+ORIGINAL = {"ca": "l'original en castellà", "gl": "o orixinal en castelán", "eu": "Gaztelaniazko jatorrizkoa",
+            "en": "the Spanish original"}
+
+
+def doc_traduccion(ruta, codigo):
+    """La traducción de una de las normas a esa lengua, si es de la versión actual del original (ADR 0085)."""
+    if codigo == "es":
+        return DOCUMENTOS[ruta]
+    origen = DOCUMENTOS[ruta]
+    f = RAIZ / "docs" / "traducciones" / codigo / pathlib.Path(origen).name
+    if not f.exists():
+        return None
+    m = re.match(r"<!-- origen: ([0-9a-f]+) -->", f.read_text(encoding="utf-8"))
+    return str(f.relative_to(RAIZ)) if m and m.group(1) == hashlib.sha256((RAIZ / origen).read_bytes()).hexdigest()[:16] else None
+
+
+def doc_href(ruta):
+    """La dirección de una de las normas desde la lengua de la página: la suya si está traducida; si no, la castellana."""
+    if not L["carpeta"] or doc_traduccion(ruta, L["codigo"]):
+        return ruta
+    return "../" * L["carpeta"].count("/") + ruta
+
+
 def doc_enlace(url, origen):
     """Un enlace de un documento: a otro de los tres, a su página; a algo del repositorio, a GitHub."""
     if re.match(r"https?://", url):
@@ -2884,7 +2914,7 @@ def doc_enlace(url, origen):
     destino = posixpath.normpath(posixpath.join(posixpath.dirname(origen), url))
     paginas = {v: k for k, v in DOCUMENTOS.items()}
     if destino in paginas:
-        return paginas[destino], False
+        return doc_href(paginas[destino]), False
     if destino == "docs/adr/README.md":
         return CODIGO + "/tree/main/docs/adr", True
     return f"{CODIGO}/blob/main/{destino}", True
@@ -2923,7 +2953,7 @@ def doc_codigo(c, origen):
     ruta = posixpath.normpath(ruta)
     paginas = {v: k for k, v in DOCUMENTOS.items()}
     if ruta in paginas:
-        return f'<a href="{paginas[ruta]}">{texto}</a>'
+        return f'<a href="{doc_href(paginas[ruta])}">{texto}</a>'
     return enlace(f"{CODIGO}/{'tree' if (RAIZ / ruta).is_dir() else 'blob'}/main/{ruta}", texto)
 
 
@@ -2932,7 +2962,7 @@ def doc_html(texto, origen):
     lineas, titulo, out, i = texto.splitlines(), "", [], 0
     while i < len(lineas):
         ln = lineas[i]
-        if not ln.strip():
+        if not ln.strip() or ln.startswith("<!--"):
             i += 1
         elif ln.startswith("# ") and not titulo:
             titulo, i = ln[2:].strip(), i + 1
@@ -3045,8 +3075,13 @@ DOC_CORTO = 400   # caracteres por debajo de los cuales un tramo de texto entre 
 def pagina_documento(eds, ruta):
     """Una de las normas públicas, con la maqueta de un artículo largo: el primer párrafo de entradilla, el
     texto en columnas en el ordenador (con «Una columna») y el botón «Escuchar» (ADR 0044 y 0073)."""
-    origen = DOCUMENTOS[ruta]
-    titulo, entradilla, cuerpo = doc_html((RAIZ / origen).read_text(), origen)
+    origen = DOCUMENTOS[ruta]   # los enlaces se resuelven desde el original, también en las traducciones
+    texto = (RAIZ / doc_traduccion(ruta, L["codigo"])).read_text(encoding="utf-8")
+    titulo, entradilla, cuerpo = doc_html(texto, origen)
+    aviso = ""
+    if L["carpeta"]:   # traducción automática (ADR 0085): se dice, con el enlace al original
+        original = f'<a href="{"../" * L["carpeta"].count("/")}{ruta}">{ORIGINAL[L["codigo"]]}</a>'
+        aviso = f'<p class="doc-aviso">{AVISO_TRADUCCION[L["codigo"]].format(original=original)}</p>'
     desc = re.sub(r"<[^>]+>", "", entradilla)[:200] or titulo
     pagina = cabeza(f"{titulo} | {L['titulo']}", "", desc, ruta) + f"""<body class="pag-articulo">
 {cabecera("", ruta, eds[-1]["fecha"], eds[-1]["numero"], True, h1=False)}
@@ -3055,6 +3090,7 @@ def pagina_documento(eds, ruta):
     <p class="seccion"><span><a href="redaccion.html">{L["quees"]}</a></span> <span class="seccion-dcha">{boton_escuchar()}{boton_columnas()}</span></p>
     <h1 class="titular">{e(titulo)}</h1>
     {f'<p class="entradilla">{entradilla}</p>' if entradilla else ""}
+    {aviso}
     <div class="cuerpo">{cuerpo}</div>
   </article>
   {mas_html(L["redaccion"], "", ruta)}
@@ -3065,13 +3101,13 @@ def pagina_documento(eds, ruta):
 {SCRIPT_LECTOR}
 </body>
 </html>"""
-    # Solo existe en castellano: sin versiones en los otros idiomas, y el selector de idioma lleva a «La
-    # redacción» de cada uno, que dice que estos documentos están en castellano
+    # En las lenguas en que aún no está traducida: sin esa versión anunciada, y el selector de idioma lleva a «La
+    # redacción» de esa lengua
     for c in IDIOMAS:
-        if IDIOMAS[c]["carpeta"]:
+        if IDIOMAS[c]["carpeta"] and not doc_traduccion(ruta, c):
             carpeta = IDIOMAS[c]["carpeta"]
             pagina = re.sub(rf'<link rel="alternate" hreflang="{c}" href="[^"]*/{carpeta}{re.escape(ruta)}">\n?', "", pagina)
-            pagina = pagina.replace(f'href="{carpeta}{ruta}"', f'href="{carpeta}redaccion.html"')
+            pagina = re.sub(rf'href="((?:\.\./)*){carpeta}{re.escape(ruta)}"', rf'href="\g<1>{carpeta}redaccion.html"', pagina)
     return pagina
 
 
@@ -4679,9 +4715,11 @@ def generar_idioma(codigo):
     escribir(base / "dentro.html", pagina_dentro(eds))
     escribir(base / "contacto.html", pagina_contacto(eds))
     escribir(base / "privacidad.html", pagina_privacidad(eds))
-    if not L["carpeta"]:   # las normas públicas, solo en castellano (ADR 0081)
-        for ruta in DOCUMENTOS:
+    for ruta in DOCUMENTOS:   # las normas públicas, en las lenguas en que están traducidas al día (ADR 0081 y 0085)
+        if doc_traduccion(ruta, L["codigo"]):
             escribir(base / ruta, pagina_documento(eds, ruta))
+        else:
+            (base / ruta).unlink(missing_ok=True)
     escribir(base / "que-es.html", redireccion("redaccion.html"))
     escribir(base / "comunidad.html", redireccion("vibecoding.html"))   # la sección retirada el 01-11-2026
     for clave in TODAS_SECCIONES:

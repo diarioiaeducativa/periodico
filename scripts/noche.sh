@@ -375,6 +375,9 @@ python3 scripts/subir-videos.py --minutos 15 >> "$REG" 2>&1 || log "AVISO: queda
 # sin IA, y avisa en el registro de los titulares de más de 90 caracteres (ADR 0059). No impide que el número salga.
 python3 scripts/corregir-erratas.py --dia "$FECHA" >> "$REG" 2>&1 || true
 
+# Las normas públicas en las otras lenguas (ADR 0085): solo si alguna ha cambiado desde su última traducción
+bash scripts/normas-traducir.sh >> "$REG" 2>&1 || log "AVISO: no se pudieron traducir las normas; esas lenguas enlazan al castellano"
+
 # 5. Que el sitio se genere con todo esto antes de darlo por listo.
 if ! python3 generar.py >> "$REG" 2>&1; then
   log "ERROR: el generador falla con la edición nueva"

@@ -86,5 +86,6 @@
 | [0082](0082-la-redaccion-breve-y-el-diario-por-dentro.md) | «La redacción» breve y «El diario por dentro» |
 | [0083](0083-revision-de-estilo-cada-noche-con-programa-y-con-corrector.md) | Revisión de estilo cada noche, con programa y con corrector |
 | [0084](0084-graficos-con-datos-dibujados-por-el-programa.md) | Gráficos con datos, dibujados por el programa |
+| [0085](0085-las-normas-traducidas-a-las-otras-lenguas.md) | Las normas, traducidas a las otras lenguas |
 
 Plantilla: [0000-plantilla.md](0000-plantilla.md). Para crear uno: `nuevo-adr "Título"`.
