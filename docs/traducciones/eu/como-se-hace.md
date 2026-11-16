@@ -1,7 +1,7 @@
 <!-- origen: 1c00f6a8d9a89f7c -->
-# Nola egiten da AA Hezitzailearen Egunkaria
+# Nola egiten da Hezkuntzako AA Egunkaria
 
-[AA Hezitzailearen Egunkariak](https://diarioiaeducativa.github.io/) goizero jasotzen du aurreko egunean irakasleen hiru Telegram talde irekitan hitz egindakoa: ChatGPT-IA-edu (adimen artifiziala hezkuntzan, oro har), Vibe Coding Educativo (beren aplikazioak AArekin programatzen dituzten irakasleak) eta EduMedia-IAG (irudia, audioa eta bideoa AArekin). AA agenteek idazten, berrikusten, ilustratzen eta itzultzen dute; pertsona batek gainbegiratzen du, eta argitaratutakoaren erantzule da.
+[Hezkuntzako AA Egunkariak](https://diarioiaeducativa.github.io/) goizero jasotzen du aurreko egunean irakasleen hiru Telegram talde irekitan hitz egindakoa: ChatGPT-IA-edu (adimen artifiziala hezkuntzan, oro har), Vibe Coding Educativo (beren aplikazioak AArekin programatzen dituzten irakasleak) eta EduMedia-IAG (irudia, audioa eta bideoa AArekin). AA agenteek idazten, berrikusten, ilustratzen eta itzultzen dute; pertsona batek gainbegiratzen du, eta argitaratutakoaren erantzule da.
 
 Dokumentu honek egunkariaren arauak eta haien aplikazioa biltzen ditu, nola egiten den ulertzeko eta hobetu ahal izateko. Nola idazten den [estilo-liburuan](../encargos/estilo.md) dago, eta nola itzultzen den, [itzultzailearen liburuan](../encargos/traduccion.md). Erabaki bakoitzaren zergatia [erabakien erregistroetan](adr/README.md) (ADR) dago, zenbakiaren arabera aipatuta.
 
@@ -63,7 +63,7 @@ Programa batek bost minuturik behin begiratzen du zer egin behar den, eta eginda
 | 5:00 | Zenbakia argitaratu aurretik ikus daiteke, pertsona gainbegiratzaileak berrikus dezan (ADR 0025). Programa batek egiaztatzen du orria ondo ikusten dela tamaina desberdinetako pantailetan. |
 | 6:30 | Zenbakia oraindik egin gabe badago, geldiarazten da, eta dagoenarekin edo gordetako artikuluekin ateratzen da. |
 | 6:50 | Web-orria argitaratzen da, eta artikulu bakoitza partekatzeko irudiak eta taldeetarako oharrak prestatzen dira. Zerbait huts egiten badu, 10 minuturik behin saiatzen da berriro, 9:00ak arte. |
-| 7:00 | AA Hezitzailearen Botak zenbakiaren oharra argitaratzen du talde bakoitzean, eta pribatuan idazten die egun horretan beren baliabidea ateratzen zaien pertsonei (ADR 0052). Egunkariaren Android aplikazioak zenbaki berriaren berri ematen du (ADR 0043). |
+| 7:00 | Bot de IA Educativak zenbakiaren oharra argitaratzen du talde bakoitzean, eta pribatuan idazten die egun horretan beren baliabidea ateratzen zaien pertsonei (ADR 0052). Egunkariaren Android aplikazioak zenbaki berriaren berri ematen du (ADR 0043). |
 | 7:05 | Zenbakia Instagramen ateratzen da (ADR 0015). |
 | 7:10 inguruan | Pertsona gainbegiratzaileak txosten bat jasotzen du: zer atera den, gordetako artikulurik erabili den eta zer huts egin duen (ADR 0069). |
 | 8:00 | Gordetzeko artikulu berri bat idazten da, behar bada. |

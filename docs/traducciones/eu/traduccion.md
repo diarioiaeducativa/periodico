@@ -1,5 +1,5 @@
 <!-- origen: 9cc2281a405c9371 -->
-# Adimen Artifizial Hezitzailearen Egunkariaren itzultzailearen liburua
+# Hezkuntzako AA Egunkariaren itzultzailearen liburua
 
 Egunkaria gaztelaniatik katalanera, galegora, euskarara eta ingelesera nola itzultzen den azaltzen du. Publikoak
 irakurriko duen zerbait itzultzen duten agente guztiek irakurtzen dute, [estilo-liburuarekin](estilo.md) batera, hori

@@ -1,5 +1,5 @@
 <!-- origen: aab29d96ef60db48 -->
-# Style book of the Diario de IA Educativa
+# Educational AI Daily style guide
 
 How the paper writes. It applies to every agent that writes, reviews, translates or summarises anything the
 public will read (articles, briefs, features, “A year ago”, weekly commentaries, alerts, social media texts

@@ -1,5 +1,5 @@
 <!-- origen: 9cc2281a405c9371 -->
-# The Diario de IA Educativa translator's handbook
+# Educational AI Daily translators' guide
 
 How the paper is translated from Spanish into Catalan, Galician, Basque and English. It is read by every agent that translates something the public will read, together with the [style book](estilo.md), which applies equally in every language. Each assignment uses the general section and the section for its own language.
 

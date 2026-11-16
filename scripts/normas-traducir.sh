@@ -24,7 +24,8 @@ while read -r origen destino huella lengua; do
   mkdir -p "$(dirname "$destino")"
   tmp="_37-normas-traduccion-$lengua"
   python3 scripts/idiomas.py encargo 37-normas-traduccion "$lengua" \
-    | sed -e "s|{ORIGEN}|$origen|g" -e "s|{DESTINO}|$destino|g" -e "s|{HASH}|$huella|g" > "encargos/pasos/$tmp.md"
+    | sed -e "s|{ORIGEN}|$origen|g" -e "s|{DESTINO}|$destino|g" -e "s|{HASH}|$huella|g" \
+          -e "s|{TITULO}|$(python3 -c 'import sys, generar; print(generar.IDIOMAS[sys.argv[1]]["titulo"])' "$lengua")|g" > "encargos/pasos/$tmp.md"
   log "empieza $destino"
   sed '' "encargos/pasos/$tmp.md" | timeout 2400 claude -p --model "$SONNET" \
     --permission-mode acceptEdits --allowedTools WebFetch WebSearch \

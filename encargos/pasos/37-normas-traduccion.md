@@ -13,4 +13,6 @@ No se traduce:
 - los nombres de productos, de empresas y de los grupos;
 - los ejemplos que el original da en castellano para explicar una norma del castellano (el «quien» relativo, «pieza», «el diario cuenta»…): se dejan en castellano, entre comillas, porque la norma trata de cómo se escribe en castellano; lo que los explica sí se traduce.
 
+El diario se llama en {LENGUA} «{TITULO}»: úsalo siempre así, en los títulos y en el texto, con la declinación que pida la frase. Los nombres del Bot de IA Educativa y de los grupos no se traducen.
+
 Que la traducción se lea natural en {LENGUA}, como un texto escrito en esa lengua, y que lo entienda cualquier lector. Comprueba al acabar que no falta ningún apartado ni ningún punto. No toques nada fuera de {DESTINO}. Responde en una línea: el documento traducido y si algo te ha planteado dudas.

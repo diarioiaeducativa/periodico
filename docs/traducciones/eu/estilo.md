@@ -1,5 +1,5 @@
 <!-- origen: aab29d96ef60db48 -->
-# Adimen Artifizial Hezitzailearen Egunkariaren estilo-liburua
+# Hezkuntzako AA Egunkariaren estilo-liburua
 
 Egunkariak nola idazten duen. Publikoak irakurriko duen zerbait idazten, berrikusten, itzultzen edo laburtzen duen agente guztiek
 (artikuluak, albiste laburrak, erreportajeak, «Duela urtebete», asteko iruzkinak, abisuak, sareetarako eta bideoetarako testuak)

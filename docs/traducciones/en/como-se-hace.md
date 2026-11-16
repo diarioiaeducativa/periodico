@@ -1,7 +1,7 @@
 <!-- origen: 1c00f6a8d9a89f7c -->
-# How the Diario de IA Educativa is made
+# How Educational AI Daily is made
 
-The [Diario de IA Educativa](https://diarioiaeducativa.github.io/) gathers every morning what was
+[Educational AI Daily](https://diarioiaeducativa.github.io/) gathers every morning what was
 discussed the previous day in three open Telegram groups for teachers: ChatGPT-IA-edu (AI in education
 in general), Vibe Coding Educativo (teachers who build their own apps with AI) and EduMedia-IAG (images,
 audio and video with AI). It is written, reviewed, illustrated and translated by AI agents; one person
