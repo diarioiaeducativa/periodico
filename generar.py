@@ -35,7 +35,10 @@ SECCIONES_FUERA = ["hace-un-ano"]   # con su página, pero sin entrada en el men
 # cómo trabajan los agentes; las secciones del diario; quién lo lee y quién lo hace. El último empieza por las
 # comunidades, con su diagrama arriba de la primera columna: en medio, al no poder partirse, dejaba un hueco
 # al pie de la última. Mismo orden en los cinco idiomas.
-BLOQUES_REDACCION = ((0, 1), (2, 3, 4, 5, 6), (10, 11, 7, 8, 14, 9, 13, 12))
+# «El diario por dentro» (ADR 0082): los apartados de la antigua «La redacción», en bloques por tema (cómo trabajan los
+# agentes; las secciones; quién lo lee y quién lo hace; lo que se publica y cómo se corrige), y al final las
+# instrucciones de cada agente
+BLOQUES_DENTRO = ((0, 1), (2, 3, 4, 5, 6), (10, 11, 7, 8, 14, 9, 13, 12))
 TODAS_SECCIONES = ORDEN_SECCIONES + SECCIONES_FUERA
 TEMA_BIBLIOTECA = "https://t.me/ChatGPTedu/21753"
 REPOSITORIO = "https://vibe-coding-educativo.github.io/app_edu/"   # el Repositorio de recursos de VCE (ADR 0008)
@@ -159,6 +162,15 @@ IDIOMAS = {
                 ("Comentarista", "el domingo por la noche escribe lo más importante de la semana: un texto general y uno de cada grupo."),
             ],
             "equipo_pie": "Son agentes de Claude, la inteligencia artificial de Anthropic.",
+            "ideas_titulo": 'Cómo funciona',
+            "ideas": [('De los grupos al diario', 'Lo que se habla un día en tres grupos de docentes sale a la mañana siguiente, explicado para las personas que no están en ellos.'), ('Cada dato, comprobado', 'Cada artículo pasa por un agente que no lo ha escrito, que abre cada fuente y quita lo que no puede confirmar.'), ('Nunca un día sin número', 'Hay artículos escritos de antemano para que el diario salga aunque falle algo o no haya noticias.'), ('Una persona responde', 'Una persona supervisa el diario y responde de lo publicado. Sin publicidad ni datos de los lectores, y los errores se corrigen a la vista.')],
+            "mas_titulo": 'Para saber más',
+            "mas": [('El diario por dentro', 'Todos los detalles: las secciones, las personas, los programas y la privacidad.'), ('Cómo se hace el diario', 'Las normas, quién las aplica y cómo se comprueban.'), ('Libro de estilo', 'Cómo escriben los agentes.'), ('Libro del traductor', 'Cómo se traduce a cada lengua.')],
+            "dentro_titulo": 'El diario por dentro',
+            "dentro_intro": 'Todo lo que explica cómo funciona el diario, para las personas que quieran conocerlo a fondo. La versión breve está en «La redacción».',
+            "instrucciones_titulo": 'Las instrucciones de cada agente',
+            "instrucciones_texto": 'Cada agente trabaja con unas instrucciones escritas, que son públicas en {carpeta}. Las de cada uno:',
+            "instrucciones_carpeta": 'el repositorio de la redacción',
             "secciones": [
                 ("Qué hace la inteligencia artificial y qué hacen los programas", "La inteligencia artificial hace lo que exige leer, escribir o juzgar. Lo que sigue reglas fijas lo hacen programas corrientes, sin inteligencia artificial: recoger los mensajes, medir los dibujos, dibujar la viñeta a partir de su guion, montar la web y los vídeos, componer su música y publicarlo todo a su hora en la web y en las redes."),
                 ("Lo que se comprueba", "Los grupos dicen de qué se habla; cada dato se comprueba fuera, en su fuente original (el anuncio oficial, la web del producto, el documento de la administración), enlazada donde el artículo la nombra y, todas juntas, al final. De una aplicación se comprueba lo que dice su web, no que funcione. Aun así puede haber errores."),
@@ -284,6 +296,15 @@ IDIOMAS = {
                 ("Comentarista", "el diumenge a la nit escriu el més important de la setmana: un text general i un de cada grup."),
             ],
             "equipo_pie": "Són agents de Claude, la intel·ligència artificial d'Anthropic.",
+            "ideas_titulo": 'Com funciona',
+            "ideas": [('Dels grups al diari', "El que es parla un dia en tres grups de docents surt l'endemà al matí, explicat per a les persones que no hi són."), ('Cada dada, comprovada', "Cada article passa per un agent que no l'ha escrit, que obre cada font i treu el que no pot confirmar."), ('Mai un dia sense número', 'Hi ha articles escrits per endavant perquè el diari surti encara que falli alguna cosa o no hi hagi notícies.'), ('Una persona en respon', "Una persona supervisa el diari i respon del que s'hi publica. Sense publicitat ni dades dels lectors, i els errors es corregeixen a la vista.")],
+            "mas_titulo": 'Per saber-ne més',
+            "mas": [('El diari per dins', 'Tots els detalls: les seccions, les persones, els programes i la privadesa.'), ('Com es fa el diari', 'Les normes, qui les aplica i com es comproven (en castellà).'), ("Llibre d'estil", 'Com escriuen els agents (en castellà).'), ('Llibre del traductor', 'Com es tradueix a cada llengua (en castellà).')],
+            "dentro_titulo": 'El diari per dins',
+            "dentro_intro": 'Tot el que explica com funciona el diari, per a les persones que el vulguin conèixer a fons. La versió breu és a «La redacció».',
+            "instrucciones_titulo": 'Les instruccions de cada agent',
+            "instrucciones_texto": 'Cada agent treballa amb unes instruccions escrites, que són públiques a {carpeta} (en castellà). Les de cadascun:',
+            "instrucciones_carpeta": 'el repositori de la redacció',
             "secciones": [
                 ("Què fa la intel·ligència artificial i què fan els programes", "La intel·ligència artificial fa el que demana llegir, escriure o jutjar. El que segueix regles fixes ho fan programes corrents, sense intel·ligència artificial: recollir els missatges, mesurar els dibuixos, dibuixar la vinyeta a partir del guió, muntar el web i els vídeos, compondre'n la música i publicar-ho tot a l'hora al web i a les xarxes."),
                 ("El que es comprova", "Els grups diuen de què es parla; cada dada es comprova fora, a la seva font original (l'anunci oficial, el web del producte, el document de l'administració), enllaçada on l'article l'anomena i, totes juntes, al final. D'una aplicació es comprova el que diu el seu web, no que funcioni. Tot i així hi pot haver errors. Aquesta edició és una traducció automàtica de la castellana, sense revisió professional."),
@@ -2451,7 +2472,7 @@ def pie_comunidades(prof):
     if not c:
         return ""
     texto = TXT_COMUNIDADES[L["codigo"]]["pie"].format(n=cifra(c["total"]))
-    return f'<p class="pie-comunidades"><a href="{prof}redaccion.html#comunidades">{emblema()}<span>{texto}</span></a></p>'
+    return f'<p class="pie-comunidades"><a href="{prof}dentro.html#comunidades">{emblema()}<span>{texto}</span></a></p>'
 
 
 GIRO_COMUNIDADES = 30   # grados: así el nombre de EduMedia-IAG no cae encima del total
@@ -2516,9 +2537,24 @@ def comunidades_figura(giro=None):
 CORREO_CONTACTO = "diarioiaeducativa@bilateria.org"   # reenvío de IONOS al correo de Juanjo (ADR 0064)
 
 
-def pagina_redaccion(eds):
-    """«La redacción»: quién hace el diario, empezando por el equipo de agentes y su organigrama."""
-    R = L["redaccion"]
+# Las instrucciones de cada agente, en el orden de «El equipo» (sin los rótulos de los turnos): la página completa
+# enlaza cada uno a la suya (ADR 0082). El traductor tiene su libro, que es página del diario.
+GUIAS_AGENTES = ["encargos/redaccion.md", "encargos/pasos/1-repaso.md", "encargos/biblioteca.md",
+                 "encargos/ilustraciones.md", "encargos/pasos/2b-revision-dibujos.md", "encargos/vineta.md",
+                 "encargos/pasos/4-juez.md", "encargos/pasos/23-hace-un-ano.md", "encargos/pasos/24-hace-un-ano-repaso.md",
+                 "traduccion.html", "encargos/avisos.md", "encargos/pasos/7-reportaje-tema.md", "encargos/reportaje.md",
+                 "encargos/pasos/11b-reportaje-eleccion.md", "encargos/reel.md", "encargos/pasos/20-comentario-semana.md"]
+# Los iconos de las cuatro ideas de «La redacción» (Lucide: messages-square, badge-check, calendar-check, user-check)
+ICONOS_IDEAS = [
+    '<path d="M16 10a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 14.286V4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/><path d="M20 9a2 2 0 0 1 2 2v10.286a.71.71 0 0 1-1.212.502l-2.202-2.202A2 2 0 0 0 17.172 19H10a2 2 0 0 1-2-2v-1"/>',
+    '<path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/><path d="m16 9-5.5 5.5L8 12"/>',
+    '<path d="M8 2v3"/><path d="M16 2v3"/><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="m9 15 2 2 4-4"/>',
+    '<path d="m16 11 2 2 4-4"/><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/>',
+]
+
+
+def redaccion_enlaces(R):
+    """Los enlaces que usan los textos de «La redacción» y de «El diario por dentro»."""
     raiz = "../" * L["carpeta"].count("/")   # las normas solo están en castellano, en la raíz (ADR 0081)
     grupos = {k: enlace("https://t.me/" + a, n) for k, (n, a) in GRUPOS.items()}
     grupos.update(juanjo=enlace(WEB_JUANJO, "Juan José de Haro"), raul=enlace(WEB_RAUL, "Raül Torres"),
@@ -2527,7 +2563,7 @@ def pagina_redaccion(eds):
                   biblioteca=enlace(TEMA_BIBLIOTECA, L["biblioteca_enlace"]), seccion_bib=f'<a href="biblioteca.html">{L["secciones"]["biblioteca"]}</a>',
                   repositorio=enlace(REPOSITORIO, L["repositorio_enlace"]), seccion_vc=f'<a href="vibecoding.html">{L["secciones"]["vibecoding"]}</a>',
                   codigo=enlace(CODIGO, L["codigo_enlace"]),
-                  # Las normas, el libro de estilo y el del traductor, en el repositorio (ADR 0080)
+                  # Las normas, el libro de estilo y el del traductor, páginas del diario en castellano (ADR 0081)
                   como_se_hace=f'<a href="{raiz}normas.html">{L["normas_enlaces"][0]}</a>',
                   libro_estilo=f'<a href="{raiz}estilo.html">{L["normas_enlaces"][1]}</a>',
                   libro_traductor=f'<a href="{raiz}traduccion.html">{L["normas_enlaces"][2]}</a>',
@@ -2540,6 +2576,14 @@ def pagina_redaccion(eds):
                   pagina_semana=f'<a href="semana/">{R["pagina_semana"]}</a>',
                   hemeroteca=f'<a href="archivo.html">{L["hemeroteca"]}</a>',
                   hace_un_ano=f'<a href="hace-un-ano.html">{L["secciones"]["hace-un-ano"]}</a>')
+    return raiz, grupos
+
+
+def pagina_redaccion(eds):
+    """«La redacción», la versión breve para cualquier lector (ADR 0082): el organigrama con cómo se hace cada número,
+    cuatro ideas, el equipo de agentes y, para saber más, «El diario por dentro» y las normas."""
+    R = L["redaccion"]
+    raiz, _ = redaccion_enlaces(R)
     pres = next((d for d in eds if d.get("editorial")), None)
     # El organigrama de hoy, con los agentes del domingo; el de la presentación del número 1 queda como se publicó
     f = con_traduccion("ilustraciones", "redaccion-organigrama.svg")
@@ -2563,30 +2607,19 @@ def pagina_redaccion(eds):
     equipo = "".join(f'<div class="turno-cabeza">{rotulo}<ul class="equipo">{items[0]}</ul></div>'
                      + (f'<ul class="equipo">{"".join(items[1:])}</ul>' if items[1:] else "")
                      for rotulo, items in turnos if items) + f'<p>{R["equipo_pie"]}</p>'
-    # El diagrama de los grupos, tras la sección que los presenta (la que empieza por {chatgpt}: «Las personas»
-    # también lo nombra, al decir qué grupos administra cada uno)
-    venn = comunidades_figura()
-    # La de las visitas conserva el ancla «privacidad», que enlazaban la ficha de Google Play y otras webs, y
-    # lleva a la página de privacidad (ADR 0070)
-    apartados = [(f'<h2 id="comunidades">{t}</h2>{venn}' if x.startswith("{chatgpt}") else
-                  f'<h2 id="privacidad">{t}</h2>' if "{pagina_privacidad}" in x else
-                  f'<h2 id="contacto">{t}</h2>' if "{pagina_contacto}" in x else f"<h2>{t}</h2>") + f"<p>{x.format(**grupos)}</p>"
-                 for t, x in R["secciones"]]
-    # En el ordenador, en columnas como las noticias (ADR 0047): los apartados van en bloques por tema (cómo
-    # trabajan los agentes, las secciones del diario, quién lo lee y quién lo hace), cada uno a lo ancho y con
-    # el texto en columnas, para que ningún bloque pase de una pantalla ni un apartado corto quede repartido
-    # en tres columnas de una línea. En una columna y en el móvil, todo sigue una detrás de otro.
-    # El primer bloque va junto al organigrama, tras el proceso, para que no quede un hueco a su lado
-    usados = {i for bloque in BLOQUES_REDACCION for i in bloque}
-    junto = "".join(apartados[i] for i in BLOQUES_REDACCION[0] if i < len(apartados))
-    bloques = [list(b) for b in BLOQUES_REDACCION[1:]] + [[i for i in range(len(apartados)) if i not in usados]]
-    resto = "".join(f'<section class="red-bloque">{"".join(apartados[i] for i in b if i < len(apartados))}</section>'
-                    for b in bloques if any(i < len(apartados) for i in b))
-    enlace_pres = f'<p class="presentacion"><a href="{d_href(pres)}">{L["presentacion"]}</a></p>' if pres else ""
+    ideas = "".join(f'<li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true">{ICONOS_IDEAS[k]}</svg>'
+                    f'<h3>{t}</h3><p>{x}</p></li>' for k, (t, x) in enumerate(R["ideas"]))
+    destinos = ["dentro.html", f"{raiz}normas.html", f"{raiz}estilo.html", f"{raiz}traduccion.html"]
+    mas = "".join(f'<li><a href="{destinos[k]}"><strong>{t}</strong><span>{x}</span></a></li>'
+                  for k, (t, x) in enumerate(R["mas"]))
     cab = cabecera("", "redaccion.html", eds[-1]["fecha"], eds[-1]["numero"], True, h1=False, activa="redaccion")
     cabeza_red = cabeza_pieza(f"""<p class="antetitulo con-fecha"><span class="seccion-dcha">{boton_columnas()}</span></p>
 <h1 class="titular">{L["quees"]}</h1>
 <p class="entradilla">{R["intro"]}</p>""", "")
+    # Los apartados que se han ido a «El diario por dentro» conservan su dirección: los enlaces de fuera que llevan
+    # a ellos (#privacidad, #comunidades, #contacto…) siguen hasta allí
+    salto = ("<script>(function(){var h=location.hash.slice(1);"
+             "if(h&&!document.getElementById(h))location.replace('dentro.html#'+h);})();</script>")
     return cabeza(f'{L["quees"]} | {L["titulo"]}', "", R["intro"], "redaccion.html") + f"""<body class="pag-que-es">
 {cab}
 <main class="articulo que-es redaccion en-columnas">
@@ -2597,16 +2630,67 @@ def pagina_redaccion(eds):
 <h2>{R["proceso_titulo"]}</h2>
 <p>{R["proceso_intro"]}</p>
 <p>{R["proceso_pie"]}</p>
-{junto}
+<section class="red-ideas" aria-labelledby="t-ideas">
+<h2 id="t-ideas">{R["ideas_titulo"]}</h2>
+<ul>{ideas}</ul>
+</section>
 </div>
 </section>
 <section class="red-bloque">
 <h2>{R["equipo_titulo"]}</h2>
 {equipo}
 </section>
+<section class="red-mas" aria-labelledby="t-mas">
+<h2 id="t-mas">{R["mas_titulo"]}</h2>
+<ul>{mas}</ul>
+</section>
+<p class="volver"><a href="./">{L["volver"]}</a></p>
+</main>
+{pie("", eds, None)}
+{SCRIPT_TEMA}
+{salto}
+</body>
+</html>"""
+
+
+def pagina_dentro(eds):
+    """«El diario por dentro», la versión completa (ADR 0082): todo lo que «La redacción» contaba antes, con el mismo
+    reparto en bloques y columnas (ADR 0047), y las instrucciones de cada agente."""
+    R = L["redaccion"]
+    raiz, grupos = redaccion_enlaces(R)
+    pres = next((d for d in eds if d.get("editorial")), None)
+    venn = comunidades_figura()
+    # La de las visitas conserva el ancla «privacidad», que enlazaban la ficha de Google Play y otras webs, y
+    # lleva a la página de privacidad (ADR 0070)
+    apartados = [(f'<h2 id="comunidades">{t}</h2>{venn}' if x.startswith("{chatgpt}") else
+                  f'<h2 id="privacidad">{t}</h2>' if "{pagina_privacidad}" in x else
+                  f'<h2 id="contacto">{t}</h2>' if "{pagina_contacto}" in x else f"<h2>{t}</h2>") + f"<p>{x.format(**grupos)}</p>"
+                 for t, x in R["secciones"]]
+    # Las instrucciones de cada agente, en el repositorio (y la del traductor, su libro, en el diario)
+    roles = [rol for rol, texto in R["equipo"] if texto is not None]
+    items = "".join(f'<li><a href="{raiz}{g}">{rol}</a></li>' if g.endswith(".html") else
+                    f'<li>{enlace(CODIGO + "/blob/main/" + g, rol)}</li>'
+                    for rol, g in zip(roles, GUIAS_AGENTES))
+    apartados.append(f'<h2 id="instrucciones">{R["instrucciones_titulo"]}</h2>'
+                     f'<p>{R["instrucciones_texto"].format(carpeta=enlace(CODIGO + "/tree/main/encargos", R["instrucciones_carpeta"]))}</p>'
+                     f'<ul class="red-guias">{items}</ul>')
+    bloques = [list(b) for b in BLOQUES_DENTRO]
+    usados = {i for b in bloques for i in b}
+    bloques.append([i for i in range(len(apartados)) if i not in usados])
+    resto = "".join(f'<section class="red-bloque">{"".join(apartados[i] for i in b if i < len(apartados))}</section>'
+                    for b in bloques if any(i < len(apartados) for i in b))
+    enlace_pres = f'<p class="presentacion"><a href="{d_href(pres)}">{L["presentacion"]}</a></p>' if pres else ""
+    cab = cabecera("", "dentro.html", eds[-1]["fecha"], eds[-1]["numero"], True, h1=False, activa="redaccion")
+    cabeza_d = cabeza_pieza(f"""<p class="antetitulo con-fecha"><span><a href="redaccion.html">{L["quees"]}</a></span> <span class="seccion-dcha">{boton_columnas()}</span></p>
+<h1 class="titular">{R["dentro_titulo"]}</h1>
+<p class="entradilla">{R["dentro_intro"]}</p>""", "")
+    return cabeza(f'{R["dentro_titulo"]} | {L["titulo"]}', "", R["dentro_intro"], "dentro.html") + f"""<body class="pag-que-es">
+{cab}
+<main class="articulo que-es redaccion en-columnas">
+{cabeza_d}
 {resto}
 {enlace_pres}
-<p class="volver"><a href="./">{L["volver"]}</a></p>
+<p class="volver"><a href="redaccion.html">{L["quees"]}</a> · <a href="./">{L["volver"]}</a></p>
 </main>
 {pie("", eds, None)}
 {SCRIPT_TEMA}
@@ -3434,7 +3518,7 @@ def sitemap(eds):
     versiones en los otros idiomas (xhtml:link), como pide Google para un sitio multilingüe (ADR 0026)."""
     rutas = []
     ultima = publicacion(eds[-1]["fecha"])
-    for ruta in ["", "redaccion.html", "contacto.html", "privacidad.html", "vineta.html", "reportajes.html", "breves.html", "archivo.html", "videos.html", "para-tu-web.html"] + [f"{c}.html" for c in TODAS_SECCIONES]:
+    for ruta in ["", "redaccion.html", "dentro.html", "contacto.html", "privacidad.html", "vineta.html", "reportajes.html", "breves.html", "archivo.html", "videos.html", "para-tu-web.html"] + [f"{c}.html" for c in TODAS_SECCIONES]:
         rutas.append((ruta, ultima))
     for sem, ds in por_semanas(eds).items():   # la semana y el mes (ADR 0034)
         rutas.append((f"semana/{sem}/", publicacion(ds[-1]["fecha"])))
@@ -4413,6 +4497,7 @@ def generar_idioma(codigo):
              pagina_portada("", "", eds, piezas, breves, eds[-1]["fecha"], eds[-1]["numero"], True,
                             ant=f'{eds[-2]["fecha"]}/' if len(eds) > 1 else ""))   # «Día anterior», flecha ante «Portada»
     escribir(base / "redaccion.html", pagina_redaccion(eds))
+    escribir(base / "dentro.html", pagina_dentro(eds))
     escribir(base / "contacto.html", pagina_contacto(eds))
     escribir(base / "privacidad.html", pagina_privacidad(eds))
     if not L["carpeta"]:   # las normas públicas, solo en castellano (ADR 0081)
