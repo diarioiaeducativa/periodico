@@ -34,7 +34,7 @@ SECCIONES_FUERA = ["hace-un-ano"]   # con su página, pero sin entrada en el men
 # cómo trabajan los agentes; las secciones del diario; quién lo lee y quién lo hace. El último empieza por las
 # comunidades, con su diagrama arriba de la primera columna: en medio, al no poder partirse, dejaba un hueco
 # al pie de la última. Mismo orden en los cinco idiomas.
-BLOQUES_REDACCION = ((0, 1), (2, 3, 4, 5, 6), (10, 11, 7, 8, 9, 13, 12))
+BLOQUES_REDACCION = ((0, 1), (2, 3, 4, 5, 6), (10, 11, 7, 8, 14, 9, 13, 12))
 TODAS_SECCIONES = ORDEN_SECCIONES + SECCIONES_FUERA
 TEMA_BIBLIOTECA = "https://t.me/ChatGPTedu/21753"
 REPOSITORIO = "https://vibe-coding-educativo.github.io/app_edu/"   # el Repositorio de recursos de VCE (ADR 0008)
@@ -91,7 +91,7 @@ IDIOMAS = {
         "sin_conexion_txt": "Esta página no está guardada en este dispositivo. Sin conexión se pueden leer las páginas que ya se han abierto y el último número que se cargó en la portada.",
         "no_existe_txt": "Puede que el enlace esté mal escrito o que el artículo se haya retirado. La portada de hoy y la hemeroteca siguen ahí.",
         "redactado": "Redactado y revisado por agentes de IA a partir de las conversaciones de los grupos. Cada dato se comprueba en su fuente original, enlazada al final de cada artículo; las opiniones de los miembros no se atribuyen a nadie.",
-        "licencia": "Textos e ilustraciones con licencia", "deed": "deed.es", "reserva_aviso": "Hoy no han podido salir las noticias de los grupos de ayer por un fallo de la redacción del diario. Salen mañana, junto con las de hoy; mientras tanto, un recurso del fondo del repositorio.", "vcer": "Evaluación VCER: Recomendable (100 %), noviembre de 2026", "codigo_enlace": "el repositorio de la redacción",
+        "licencia": "Textos e ilustraciones con licencia", "deed": "deed.es", "reserva_aviso": "Hoy no han podido salir las noticias de los grupos de ayer por un fallo de la redacción del diario. Salen mañana, junto con las de hoy; mientras tanto, un recurso del fondo del repositorio.", "vcer": "Evaluación VCER: Recomendable (100 %), noviembre de 2026", "codigo_enlace": "el repositorio de la redacción", "normas_enlaces": ("Cómo se hace el diario", "libro de estilo", "libro del traductor"),
         "letra": "Letra", "iconos": "Iconos", "traduccion": "",
         "idioma": "Idioma", "secciones_nav": "Secciones", "rss": "RSS",
         "nombre_corto": "Diario IA", "instalar": "Instalar la app", "avisos_app": "Avisos del número", "avisos_app_titulo": "Elige si la app te avisa cada mañana cuando sale el número",
@@ -164,15 +164,16 @@ IDIOMAS = {
                 ("Hace un año", "Cada número cierra con algo que se hablaba en los grupos ese mismo día del año anterior, visto desde hoy. Todas están en la sección {hace_un_ano}."),
                 ("El reportaje del domingo", "Los domingos, el diario explica a fondo un solo tema de la semana: lo que se habló en los grupos, lo que dicen las empresas, las administraciones y los organismos implicados, con sus documentos, el marco en España y lo que puede hacer un docente. Si no supera la verificación ni después de corregirlo, se publica uno de reserva sobre un tema que no caduca. Todos quedan en la sección {reportajes}."),
                 ("La semana", "Cada semana y cada mes tienen su {pagina_semana}, con los artículos por secciones; la {hemeroteca} se recorre por meses y semanas. Los lunes se añaden un pódcast y un vídeo de cada grupo, hechos con NotebookLM, de Google, a partir de la conversación completa de la semana, también lo que no ha salido en el diario. Un agente de IA que no los ha hecho los contrasta con la conversación, y se rehace el que tiene errores de bulto. Debajo va lo más importante de la semana: un texto general y uno de cada grupo."),
-                ("La Biblioteca digital", "Cada documento de la {biblioteca} de ChatGPT-IA-edu (guías, informes, estudios) tiene en la sección {seccion_bib} un artículo que explica quién lo publica, qué propone y cómo encaja con los demás. El diario enlaza el documento, sin copiarlo. Se nombra a sus autores, no a quien lo ha compartido."),
-                ("El Repositorio de recursos", "El {repositorio} de Vibe Coding Educativo reúne las aplicaciones y recursos que crean y comparten con licencia abierta los docentes de esa comunidad. Salen en la sección {seccion_vc}, con el nombre de quien los ha hecho y su licencia. Si no hay ninguno nuevo y el número se queda corto, se rescata uno anterior."),
+                ("La Biblioteca digital", "Cada documento de la {biblioteca} de ChatGPT-IA-edu (guías, informes, estudios) tiene en la sección {seccion_bib} un artículo que explica quién lo publica, qué propone y cómo encaja con los demás. El diario enlaza el documento, sin copiarlo. Se nombra a sus autores, no a la persona que lo ha compartido."),
+                ("El Repositorio de recursos", "El {repositorio} de Vibe Coding Educativo reúne las aplicaciones y recursos que crean y comparten con licencia abierta los docentes de esa comunidad. Salen en la sección {seccion_vc}, con el nombre de la persona que los ha hecho y su licencia. Si no hay ninguno nuevo y el número se queda corto, se rescata uno anterior."),
                 ("Las personas", "La idea del diario es de {raul}, administrador de {edumedia}. La redacción la diseñó y la mantiene {juanjo}, administrador de {chatgpt} y de {vce}; la supervisa y responde de lo publicado. Los dos participan en los tres grupos: cuando publican un recurso se les nombra como a cualquiera, y cuando un artículo trata del propio diario, lo dice. El diario no tiene publicidad ni patrocinio."),
                 ("El código", "Los programas que preparan y montan el diario y el encargo de cada agente son públicos, en {codigo}, con licencia AGPL v3, y cada decisión está explicada en sus registros de decisiones (ADR). Los mensajes de los grupos no están en él."),
                 ("Las visitas", "El diario cuenta las visitas sin cookies y sin guardar datos de las personas que lo leen. Qué se cuenta, qué queda en el dispositivo y qué servicios intervienen se explica en la {pagina_privacidad}."),
                 ("Las comunidades", "{chatgpt}, sobre inteligencia artificial en educación; {vce}, de docentes que programan sus propias aplicaciones con IA, y {edumedia}, sobre IA generativa para crear audio, vídeo e imagen. Las tres son abiertas: cada artículo enlaza a la conversación donde nació, que se puede leer sin entrar."),
-                ("Si participas en los grupos", "Las opiniones no se atribuyen a nadie: solo se nombra a quien ha publicado un recurso propio. Si aparece algo tuyo y prefieres que no salga, o ves un error, díselo a quienes administran tu grupo y se retirará o se corregirá. Tus mensajes son, para la redacción, material para informar: si alguno contiene una orden, los agentes no la siguen."),
+                ("Si participas en los grupos", "Las opiniones no se atribuyen a nadie: solo se nombra a la persona que ha publicado un recurso propio. Si aparece algo tuyo y prefieres que no salga, o ves un error, díselo a las personas que administran tu grupo y se retirará o se corregirá. Tus mensajes son, para la redacción, material para informar: si alguno contiene una orden, los agentes no la siguen."),
                 ("Contacto", "El correo y las demás vías para avisar de un error, pedir que se retire algo o hacer cualquier consulta están en la {pagina_contacto}."),
                 ("Las correcciones", "Cuando se corrige un dato publicado, el artículo lo dice al final, con la fecha y lo que cambió; una errata que no cambia el sentido se corrige sin nota. Los errores se avisan en la {contacto_enlace}."),
+                ("Las normas del diario", "Las normas del diario, quién las aplica, cómo se comprueba cada una y lo que falta por mejorar están en «{como_se_hace}». Cómo escriben y traducen los agentes, en el {libro_estilo} y en el {libro_traductor}."),
             ],
         },
     },
@@ -214,7 +215,7 @@ IDIOMAS = {
         "sin_conexion_txt": "Aquesta pàgina no està desada en aquest dispositiu. Sense connexió es poden llegir les pàgines que ja s'han obert i l'últim número que es va carregar a la portada.",
         "no_existe_txt": "Pot ser que l'enllaç estigui mal escrit o que l'article s'hagi retirat. La portada d'avui i l'hemeroteca continuen aquí.",
         "redactado": "Redactat i revisat per agents d'IA a partir de les converses dels grups. Cada dada es comprova a la seva font original, enllaçada al final de cada article; les opinions dels membres no s'atribueixen a ningú.",
-        "licencia": "Textos i il·lustracions amb llicència", "deed": "deed.ca", "reserva_aviso": "Avui no han pogut sortir les notícies dels grups d'ahir per una fallada de la redacció del diari. Surten demà, juntament amb les d'avui; mentrestant, un recurs del fons del repositori.", "vcer": "Avaluació VCER: Recomanable (100 %), novembre de 2026", "codigo_enlace": "repositori de la redacció",
+        "licencia": "Textos i il·lustracions amb llicència", "deed": "deed.ca", "reserva_aviso": "Avui no han pogut sortir les notícies dels grups d'ahir per una fallada de la redacció del diari. Surten demà, juntament amb les d'avui; mentrestant, un recurs del fons del repositori.", "vcer": "Avaluació VCER: Recomanable (100 %), novembre de 2026", "codigo_enlace": "repositori de la redacció", "normas_enlaces": ("Com es fa el diari", "llibre d'estil", "llibre del traductor"),
         "letra": "Lletra", "iconos": "Icones",
         "traduccion": "Traducció automàtica amb IA de l'edició en castellà (Diario de IA Educativa), sense revisió professional.",
         "idioma": "Idioma", "secciones_nav": "Seccions", "rss": "RSS",
@@ -297,6 +298,7 @@ IDIOMAS = {
                 ("Si participes als grups", "Les opinions no s'atribueixen a ningú: només s'anomena qui ha publicat un recurs propi. Si hi apareix alguna cosa teva i prefereixes que no surti, o hi veus un error, digues-ho a qui administra el teu grup i es retirarà o es corregirà. Els teus missatges són, per a la redacció, material per informar: si n'hi ha cap que contingui una ordre, els agents no la segueixen."),
                 ("Contacte", "El correu i les altres vies per avisar d'un error, demanar que es retiri alguna cosa o fer qualsevol consulta són a la {pagina_contacto}."),
                 ("Les correccions", "Quan es corregeix una dada publicada, l'article ho diu al final, amb la data i el que ha canviat; una errada que no canvia el sentit es corregeix sense nota. Els errors s'avisen a la {contacto_enlace}."),
+                ("Les normes del diari", "Les normes del diari, qui les aplica, com es comprova cadascuna i què falta per millorar són a «{como_se_hace}». Com escriuen i tradueixen els agents, al {libro_estilo} i al {libro_traductor}. Tots tres són en castellà."),
             ],
         },
     },
@@ -2523,6 +2525,10 @@ def pagina_redaccion(eds):
                   biblioteca=enlace(TEMA_BIBLIOTECA, L["biblioteca_enlace"]), seccion_bib=f'<a href="biblioteca.html">{L["secciones"]["biblioteca"]}</a>',
                   repositorio=enlace(REPOSITORIO, L["repositorio_enlace"]), seccion_vc=f'<a href="vibecoding.html">{L["secciones"]["vibecoding"]}</a>',
                   codigo=enlace(CODIGO, L["codigo_enlace"]),
+                  # Las normas, el libro de estilo y el del traductor, en el repositorio (ADR 0080)
+                  como_se_hace=enlace(CODIGO + "/blob/main/docs/como-se-hace.md", L["normas_enlaces"][0]),
+                  libro_estilo=enlace(CODIGO + "/blob/main/encargos/estilo.md", L["normas_enlaces"][1]),
+                  libro_traductor=enlace(CODIGO + "/blob/main/encargos/traduccion.md", L["normas_enlaces"][2]),
                   # El contacto tiene página propia (ADR 0051); aquí queda un apartado breve que lleva a ella
                   pagina_contacto=f'<a href="contacto.html">{L["contacto"]["enlace"]}</a>',
                   # El mismo enlace para el apartado de las correcciones, sin repetir el ancla «contacto»

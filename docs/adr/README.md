@@ -81,5 +81,6 @@
 | [0077](0077-reserva-del-fondo-de-edumedia-iag.md) | Reserva del fondo de EduMedia-IAG |
 | [0078](0078-libro-de-estilo-comun-para-los-agentes.md) | Libro de estilo común para los agentes |
 | [0079](0079-libro-del-traductor.md) | Libro del traductor |
+| [0080](0080-las-normas-del-diario-enlazadas-desde-la-redaccion.md) | Las normas del diario, enlazadas desde «La redacción» |
 
 Plantilla: [0000-plantilla.md](0000-plantilla.md). Para crear uno: `nuevo-adr "Título"`.
