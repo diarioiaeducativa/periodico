@@ -44,7 +44,8 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
   (`refs/notes/*`) pisando las locales, así que una nota puesta antes de actualizar se pierde sin aviso. El
   orden es el de `publicar-nas.sh`: `git pull --rebase`, la nota, `git push` y `git push origin refs/notes/ia`.
 - **Un artículo de cada grupo, como mínimo** (Juanjo, 16-11-2026; ADR 0076): la reserva completa primero con los
-  grupos que faltan. EduMedia-IAG no tiene reserva. Y cada agente de `noche.sh` trabaja con copia de los JSON del
+  grupos que faltan; hay reserva de los tres, dos piezas de cada uno (la de EduMedia-IAG, «Del fondo de EduMedia»,
+  con `scripts/edumedia-fondo.sh`, ADR 0077; caduca a los 30 días). Y cada agente de `noche.sh` trabaja con copia de los JSON del
   número: si deja uno roto, vuelve a la copia y se repite una vez.
 - **Cambiar un número antes de que salga**: editar
   `ediciones|vinetas(-ca)/FECHA.json` en el NAS y `docker exec

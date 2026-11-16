@@ -9,8 +9,9 @@
 # semanas (scripts/reserva.py y scripts/reserva_reportaje.py). Después escribe lo que falte, una cosa
 # cada vez:
 # - una pieza: un artículo del fondo del Repositorio de VCE con repositorio.sh (documentalista,
-#   revisor y traductores) o del fondo de la Biblioteca digital con biblioteca.sh (documentalista,
-#   revisor, ilustrador y traductores), alternándolos, con una clave provisional, guardado en reserva/;
+#   revisor y traductores), del fondo de la Biblioteca digital con biblioteca.sh (documentalista,
+#   revisor, ilustrador y traductores) o del historial de EduMedia-IAG con edumedia-fondo.sh (los mismos,
+#   ADR 0077): primero el del grupo que tenga menos, con una clave provisional, guardado en reserva/;
 # - el reportaje de reserva: con reportaje.sh y RESERVA=1 (jefe de reportajes, reportero,
 #   verificador, ilustrador y traductores), sobre un tema que no caduque, guardado en reserva/reportajes/.
 # Y lo sube a GitHub para que también pueda usarlo el vigilante de fuera de casa (.github/workflows/vigilante.yml).
@@ -29,20 +30,22 @@ codigo=0
 faltan=$(python3 scripts/reserva.py faltan)
 if [ "$faltan" -gt 0 ]; then
   CLAVE=$(python3 scripts/reserva.py clave)
-  # Del repositorio o de la biblioteca, la que tenga menos en la reserva (se alternan)
+  # Del grupo que tenga menos en la reserva: EduMedia, la biblioteca (ChatGPT-IA-edu) o el repositorio (VCE)
   FUENTE=$(python3 scripts/reserva.py siguiente)
   log "reserva: faltan $faltan piezas; se escribe una del fondo de $FUENTE con la clave $CLAVE"
   if [ "$FUENTE" = biblioteca ]; then
     BIBLIOTECA_MODO=fondo bash scripts/biblioteca.sh "$CLAVE" >> "$REG" 2>&1
+  elif [ "$FUENTE" = edumedia ]; then
+    bash scripts/edumedia-fondo.sh "$CLAVE" >> "$REG" 2>&1
   else
     REPOSITORIO_MODO=fondo bash scripts/repositorio.sh "$CLAVE" >> "$REG" 2>&1
   fi
   if ! python3 scripts/reserva.py guardar "$CLAVE" "$FUENTE" >> "$REG" 2>&1; then
     cat "registro/$CLAVE.log" >> "$REG" 2>/dev/null; rm -f "registro/$CLAVE.log"
-    if [ "$FUENTE" = biblioteca ]; then
-      # La biblioteca no ha dado pieza (ningún candidato vigente o legible): ese día, una del repositorio
+    if [ "$FUENTE" != repositorio ]; then
+      # La biblioteca o EduMedia no han dado pieza (ningún candidato vigente): ese día, una del repositorio
       CLAVE=$(python3 scripts/reserva.py clave)
-      log "reserva: la biblioteca no ha dado pieza; se escribe una del fondo del repositorio con la clave $CLAVE"
+      log "reserva: $FUENTE no ha dado pieza; se escribe una del fondo del repositorio con la clave $CLAVE"
       REPOSITORIO_MODO=fondo bash scripts/repositorio.sh "$CLAVE" >> "$REG" 2>&1
       python3 scripts/reserva.py guardar "$CLAVE" repositorio >> "$REG" 2>&1 || codigo=1
     else

@@ -39,10 +39,8 @@ Juanjo, al verlo: «como mínimo tiene que haber un artículo de cada grupo».
 ## Consecuencias
 
 - Un agente que rompe un JSON cuesta, como mucho, repetirlo; el número no se pierde.
-- La reserva solo tiene piezas de dos fuentes: el fondo del repositorio (Vibe Coding Educativo) y el
-  de la Biblioteca digital (ChatGPT-IA-edu). **EduMedia-IAG no tiene reserva**, así que un número sin
-  pieza propia de EduMedia sale sin ella. Cubrirlo exige una fuente de reserva nueva para ese grupo
-  (pendiente de decidir con Juanjo).
+- Al decidirlo, la reserva solo tenía piezas del fondo del repositorio (Vibe Coding Educativo) y de la
+  Biblioteca digital (ChatGPT-IA-edu); la de EduMedia-IAG llegó el mismo día con el ADR 0077.
 - Un día con muchas piezas de un solo grupo gasta una pieza más de la reserva.
 
 ## Validación

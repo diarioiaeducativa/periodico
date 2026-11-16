@@ -12,9 +12,10 @@
     scripts/reserva.py usar AAAA-MM-DD [fallo|relleno]
                                            completa el número de esas conversaciones con el número de reserva
 
-Una pieza de reserva es un artículo del fondo del Repositorio de VCE («Del fondo del repositorio») o,
-desde el 08-11-2026, del fondo de la Biblioteca digital («Del fondo de la biblioteca»), que se
-alternan para que el día que se use no toque siempre una aplicación.
+Una pieza de reserva es un artículo del fondo del Repositorio de VCE («Del fondo del repositorio»), desde el
+08-11-2026 del fondo de la Biblioteca digital («Del fondo de la biblioteca») y, desde el 16-11-2026, del historial
+de EduMedia-IAG («Del fondo de EduMedia», ADR 0077): uno por grupo, para que el número tenga siempre como mínimo un
+artículo de cada grupo. Se escribe primero el del grupo que tenga menos en la reserva.
 Puede caducar (el recurso cambia de dirección, desaparece o pasa a ser de pago): a los CADUCA días
 sin usarse se retira y se escribe otra, y antes de usarla se comprueba que el recurso sigue
 respondiendo (ADR 0028). La escribe repositorio.sh o biblioteca.sh, con su documentalista, su revisor y su
@@ -43,18 +44,28 @@ RESERVA = RAIZ / "reserva"
 OBJETIVO = 6          # piezas de reserva: dos números enteros (Juanjo, 15-11-2026; antes 3)
 MINIMO = 3            # piezas que lleva como mínimo cada número: lo que falte, de la reserva (Juanjo, 15-11-2026)
 CADUCA = 60           # días sin usarse: se retira y se escribe otra (Juanjo, 06-11-2026)
+CADUCA_TIPO = {"edumedia": 30}   # las herramientas de imagen y vídeo cambian antes de precio y condiciones (ADR 0077)
 TRADUCCIONES = ("ca", "gl", "eu", "en")   # los idiomas a los que se traduce (scripts/idiomas.py, ADR 0026)
 PREFIJO = "2099-01-"  # las claves provisionales: una fecha que nunca será un número
-TIPOS = ("repositorio", "biblioteca")   # las dos fuentes de la reserva
+TIPOS = ("edumedia", "biblioteca", "repositorio")   # las fuentes de la reserva, en este orden a la par
+# La carpeta del número adonde va cada tipo, que es también el nombre de su archivo en reserva/CLAVE/: la pieza de
+# EduMedia es una pieza más de la edición del día (ediciones/FECHA.json), en la sección Multimedia (ADR 0077)
+CARPETA = {"repositorio": "repositorio", "biblioteca": "biblioteca", "edumedia": "ediciones"}
 
 
 def tipo(d):
-    """repositorio o biblioteca, según lo que guarde la reserva."""
-    return "biblioteca" if (d / "biblioteca.json").exists() else "repositorio"
+    """repositorio, biblioteca o edumedia, según lo que guarde la reserva."""
+    if (d / "biblioteca.json").exists():
+        return "biblioteca"
+    return "edumedia" if (d / "ediciones.json").exists() else "repositorio"
 
 
 def principal(d):
-    return d / f"{tipo(d)}.json"
+    return d / f"{CARPETA[tipo(d)]}.json"
+
+
+def caduca(d):
+    return CADUCA_TIPO.get(tipo(d), CADUCA)
 
 
 def escrita(d):
@@ -72,7 +83,7 @@ def listas():
     for d in sorted(RESERVA.glob(PREFIJO + "*")):
         f = principal(d)
         try:
-            if json.loads(f.read_text()).get("piezas") and (hoy - escrita(d)).days <= CADUCA:
+            if json.loads(f.read_text()).get("piezas") and (hoy - escrita(d)).days <= caduca(d):
                 out.append(d)
         except (OSError, ValueError):
             pass
@@ -91,8 +102,8 @@ def retirar(d, motivo):
 def caducar():
     hoy = datetime.date.today()
     for d in sorted(RESERVA.glob(PREFIJO + "*")):
-        if principal(d).exists() and (hoy - escrita(d)).days > CADUCA:
-            retirar(d, f"escrita el {escrita(d)}, pasa de {CADUCA} días")
+        if principal(d).exists() and (hoy - escrita(d)).days > caduca(d):
+            retirar(d, f"escrita el {escrita(d)}, pasa de {caduca(d)} días")
 
 
 def vigente(d):
@@ -100,7 +111,8 @@ def vigente(d):
     sea rápido)."""
     import reserva_reportaje   # noqa: E402 — la misma comprobación de enlaces
     for p in json.loads(principal(d).read_text()).get("piezas", []):
-        urls = [r.get("url") for r in p.get("recursos", [])] + [(p.get("documento") or {}).get("url")]
+        urls = [r.get("url") for r in p.get("recursos", [])] + [(p.get("documento") or {}).get("url")] + \
+            [(p.get("herramienta") or {}).get("url")]
         for u in urls:
             if u and not reserva_reportaje.responde(u):
                 return False, f"{u} no responde"
@@ -108,11 +120,11 @@ def vigente(d):
 
 
 def siguiente():
-    """La fuente de la siguiente pieza: la que tenga menos en la reserva; a la par, la biblioteca."""
+    """La fuente de la siguiente pieza: la que tenga menos en la reserva; a la par, en el orden de TIPOS."""
     n = {t: 0 for t in TIPOS}
     for d in listas():
         n[tipo(d)] += 1
-    return "repositorio" if n["repositorio"] < n["biblioteca"] else "biblioteca"
+    return min(TIPOS, key=lambda t: n[t])
 
 
 def mover_dibujos(origen_clave, destino_clave, de, a):
@@ -129,7 +141,8 @@ def mover_dibujos(origen_clave, destino_clave, de, a):
 
 def clave_libre():
     usadas = {d.name for d in RESERVA.glob(PREFIJO + "*")} | \
-             {f.stem for c in ("repositorio", "repositorio-borrador", "biblioteca", "biblioteca-borrador")
+             {f.stem for c in ("repositorio", "repositorio-borrador", "biblioteca", "biblioteca-borrador",
+                               "ediciones", "ediciones-borrador")
               for f in (RAIZ / c).glob(PREFIJO + "*.json")}
     for n in range(1, 32):
         k = f"{PREFIJO}{n:02d}"
@@ -139,11 +152,33 @@ def clave_libre():
 
 
 def guardar(clave, fuente="repositorio"):
-    """De repositorio/ (o biblioteca/) a reserva/CLAVE/. Lo que el documentalista descartó se guarda
+    """De repositorio/ (o biblioteca/, o ediciones/ si es de EduMedia) a reserva/CLAVE/. Lo que el documentalista descartó se guarda
     igual, para que repositorio.py o biblioteca.py no vuelvan a proponerlo (cuentan reserva/ como ya
     contado)."""
     dest = RESERVA / clave
     dest.mkdir(parents=True, exist_ok=True)
+    if fuente == "edumedia":   # ADR 0077: con o sin pieza se guarda, para que sus descartes no se vuelvan a proponer
+        for c in ("",) + tuple(f"-{x}" for x in TRADUCCIONES):
+            f = RAIZ / f"ediciones{c}" / f"{clave}.json"
+            if f.exists():
+                shutil.move(str(f), dest / f"ediciones{c}.json")
+        if not (dest / "ediciones.json").exists():
+            borrador = RAIZ / "ediciones-borrador" / f"{clave}.json"
+            try:
+                b = json.loads(borrador.read_text())
+            except (OSError, ValueError):
+                b = {}
+            (dest / "ediciones.json").write_text(json.dumps(
+                {"fecha": clave, "fondo": "edumedia", "piezas": [], "breves": [],
+                 "descartado": list(b.get("descartado", [])) + [f"mensaje {(p.get('mensaje') or {}).get('id')}: el revisor no lo dio por bueno" for p in b.get("piezas", [])]},
+                ensure_ascii=False, indent=1) + "\n")
+        mover_dibujos(clave, clave, None, dest)
+        (dest / "escrita.txt").write_text(datetime.date.today().isoformat() + "\n")
+        for f in [RAIZ / "ediciones-borrador" / f"{clave}.json", RAIZ / "edumedia-fondo-entrada" / f"{clave}.md"]:
+            f.unlink(missing_ok=True)
+        ok = json.loads((dest / "ediciones.json").read_text()).get("piezas")
+        print(f"reserva: {clave} {'guardada (edumedia)' if ok else 'sin pieza (solo descartes)'}; listas: {len(listas())}")
+        return 0 if ok else 2
     if fuente == "biblioteca":
         for origen, nombre in [("biblioteca", "biblioteca.json")] + [(f"biblioteca-{c}", f"biblioteca-{c}.json") for c in TRADUCCIONES]:
             f = RAIZ / origen / f"{clave}.json"
@@ -278,7 +313,7 @@ def poner_una(fecha, solo_grupos_que_faltan=False):
     if r is None:
         return None
     clave = r.name
-    t = tipo(r)
+    t = CARPETA[tipo(r)]
     for nombre, destino in [(f"{t}.json", t)] + [(f"{t}-{c}.json", f"{t}-{c}") for c in TRADUCCIONES]:
         f = r / nombre
         if not f.exists():
@@ -295,6 +330,10 @@ def poner_una(fecha, solo_grupos_que_faltan=False):
             viejo = json.loads(g.read_text())
             viejo["piezas"] = viejo.get("piezas", []) + d.get("piezas", [])
             d = viejo
+        elif t == "ediciones":   # un día sin edición: solo la pieza, sin los descartes ni el repaso de la reserva
+            d = {"fecha": fecha, "motivo": "", "piezas": d.get("piezas", []), "breves": []}
+        if t == "ediciones":   # la pieza de EduMedia hace que el día tenga edición, aunque la redacción no la diera
+            d["hay_edicion"] = True
         g.parent.mkdir(exist_ok=True)
         g.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "\n")
     for f in (r / "capturas").glob("*.jpg"):
