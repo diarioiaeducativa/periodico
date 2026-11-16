@@ -123,7 +123,8 @@ Escribe `ediciones/<FECHA>.json` con esta forma (JSON válido, UTF-8):
       "fuentes": [{"titulo": "…", "url": "https://…"}],
       "mensaje": {"grupo": "chatgpt | vce | edumedia", "id": 14314},
       "comprobado": "qué se comprobó y dónde",
-      "ilustracion": "solo en la pieza de importancia 1: idea para un dibujo SVG explicativo (un esquema, una metáfora visual, un gráfico); null en las demás"
+      "ilustracion": "solo en la pieza de importancia 1: idea para un dibujo SVG explicativo (un esquema, una metáfora visual); null en las demás",
+      "grafico": "opcional, solo si la fuente da tres o más cifras comparables (libro de estilo, «Gráficos»): {\"tipo\": \"barras | columnas | lineas\", \"titulo\": \"…\", \"unidad\": \"%\", \"etiquetas\": [\"…\"], \"series\": [{\"nombre\": \"…\", \"valores\": [0]}], \"fuente\": {\"titulo\": \"…\", \"url\": \"https://…\"}, \"nota\": \"…\"}"
     }
   ],
   "breves": [{"texto": "…", "url": "https://… o null", "grupo": "…", "mensaje": {"grupo": "…", "id": 0}}],

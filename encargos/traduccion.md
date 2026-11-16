@@ -20,6 +20,8 @@ igual en todas las lenguas. Se lee el apartado general y el de la lengua de cada
   se mantienen (LOMLOE, INTEF, AEPD).
 - **Lo propio de España se explica** cuando el lector de esa lengua puede no conocerlo, sobre todo en
   inglés: una etapa educativa, las oposiciones, una comunidad autónoma.
+- **Un gráfico** (`grafico`) se traduce en su título, sus etiquetas, los nombres de las series y la nota; el
+  tipo, la unidad y los valores no se tocan, y el título de la fuente queda en su idioma original.
 - **Una fuente en otra lengua lleva su marca** («(en castellà)», «(in Spanish)»), como dice
   `scripts/idiomas.py`.
 - **Ante una duda, se consulta la obra de referencia de la lengua** (en su apartado) y no se resuelve de

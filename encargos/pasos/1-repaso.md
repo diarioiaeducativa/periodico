@@ -18,6 +18,7 @@ El redactor ha dejado su borrador en ediciones-borrador/{FECHA}.json, escrito co
 - Que cada grupo con algo publicable tenga al menos una pieza (encargos/redaccion.md). Si un grupo se queda sin pieza y en `descartado` o en los breves hay algo suyo que se puede comprobar, conviértelo en una pieza corta; si de verdad no hay nada, que `motivo` lo diga.
 - Si el borrador descarta algo por falta de fuente sin haberla buscado, búscala tú; si la encuentras y es noticia, puede salir como breve.
 - Comprueba con WebFetch https://t.me/<alias>/<id>?embed=1&mode=tme que cada `mensaje` corresponde al tema (alias: ChatGPTedu, vceduca, EduMediaIAG).
+- Si una pieza lleva `grafico`, comprueba cada valor, la unidad y las etiquetas contra la fuente, que todos salgan de la misma, y que cumpla el apartado «Gráficos» del libro de estilo; si un valor no se confirma, quita el gráfico entero.
 - Quita lo no confirmado: una frase, una pieza o un breve enteros si hace falta. Si quitas la pieza de importancia 1, sube a 1 la mejor de las demás. Si no queda nada publicable, `"hay_edicion": false` con el motivo.
 
 Corrige lo justo, sin reescribir lo que está bien, y escribe la versión final en ediciones/{FECHA}.json, con la misma forma que el borrador y un campo "repaso": la lista de cambios (o «sin cambios»). Actualiza `comprobado` en cada pieza con lo que has comprobado tú.

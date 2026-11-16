@@ -100,7 +100,9 @@ de `publicado.txt`.
   "antetitulo": "…",
   "titular": "…",
   "entradilla": "…",
-  "apartados": [{"ladillo": "…", "parrafos": ["…", "se admiten enlaces [texto](url) y **negritas**"]}],
+  "apartados": [{"ladillo": "…", "parrafos": ["…", "se admiten enlaces [texto](url) y **negritas**"],
+                 "tabla": "opcional: {\"titulo\", \"columnas\": [\"…\"], \"filas\": [[\"…\"]], \"nota\"}",
+                 "grafico": "opcional, como en encargos/redaccion.md y el apartado «Gráficos» del libro de estilo"}],
   "claves": ["tres a cinco ideas para llevarse, una frase cada una"],
   "relacionadas": [{"fecha": "AAAA-MM-DD", "id": "id de una pieza diaria de la semana sobre el tema"}],
   "fuentes": [{"titulo": "… (autor u organismo)", "url": "https://…"}],
@@ -110,6 +112,8 @@ de `publicado.txt`.
 }
 ```
 
+- `grafico`: en el apartado donde se dan tres o más cifras comparables de una misma fuente (un estudio, una
+  encuesta, una evolución), si ayudan a verlas de un vistazo. Lo dibuja el programa; el verificador comprueba cada valor.
 - `mensaje`: el mensaje donde arrancó la conversación principal sobre el tema.
 - `relacionadas`: solo piezas que existan en `ediciones/` (comprueba `fecha` e `id`).
 - `fuentes`: todas las fuentes externas del cuerpo, también las citadas de pasada. Lo que el texto nombra, enlazado también

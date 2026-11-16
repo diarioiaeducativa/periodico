@@ -87,7 +87,16 @@ def problemas_piezas(orig, trad, lista="piezas"):
             malos.append(f'{a["id"]}: no tiene los mismos enlaces')
         if ta and not 0.5 <= len(tb) / len(ta) <= 2.0:
             malos.append(f'{a["id"]}: el largo no cuadra ({len(tb)} frente a {len(ta)} caracteres)')
+        if valores_grafico(a) != valores_grafico(b):
+            malos.append(f'{a["id"]}: el gráfico no tiene los mismos datos')
     return malos
+
+
+def valores_grafico(p):
+    """Lo que no se traduce de un gráfico (ADR 0084): el tipo, la unidad, el número de etiquetas y los valores."""
+    g = p.get("grafico") or {}
+    return (g.get("tipo"), g.get("unidad"), len(g.get("etiquetas") or []),
+            [s.get("valores") for s in g.get("series") or []]) if g else None
 
 
 def leer(f):

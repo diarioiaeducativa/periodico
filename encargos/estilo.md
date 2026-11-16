@@ -158,6 +158,22 @@ Lo detallado está en `encargos/enlaces.md`; lo esencial:
   siguiente a las conversaciones y queda en la hemeroteca; lo que se guarda para otro día (la reserva,
   «Hace un año» escrito por adelantado) tampoco dice «acaba de».
 
+## Gráficos
+
+- **Un gráfico, solo cuando explica algo que el texto no deja ver de un vistazo**: tres o más cifras comparables
+  de la misma fuente (los resultados de un estudio, una encuesta, una evolución en el tiempo). No para adornar ni
+  para una o dos cifras, que se dicen en el texto.
+- **Lo dibuja el programa del diario a partir de los datos** (el campo `grafico` del artículo o del apartado del
+  reportaje, ADR 0084), nunca un agente a mano: barras horizontales (`barras`, para comparar), columnas
+  (`columnas`, para pocas categorías con etiquetas cortas) o líneas (`lineas`, para una evolución).
+- **Los datos, exactos y de una sola fuente**: los mismos valores que da la fuente, con su precisión, y la misma
+  unidad para todos. Las barras empiezan siempre en cero (el programa lo hace solo); nada de mezclar en un gráfico
+  cifras de fuentes distintas.
+- **Título que dice qué se mide**, no la conclusión («Redacciones humanas que los detectores tomaron por IA»), y
+  etiquetas cortas.
+- **La fuente, siempre**, enlazada; y en la nota, lo que hace falta para leerlo bien: cuántas personas o casos, de
+  dónde y cuándo, y si los datos son de la propia empresa («según la empresa»).
+
 ## Las traducciones
 
 Cada edición se traduce al catalán, al gallego, al euskera y al inglés, con el mismo criterio que el

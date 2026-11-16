@@ -11,7 +11,8 @@ esa frase, no los rótulos del dibujo). No cambies nada más de los JSON.
 ## Qué tiene que ser
 
 - **Explica la noticia, no la decora.** Un esquema del proceso, una comparación, una
-  metáfora visual clara o un pequeño gráfico con lo esencial. Nada de robots, cerebros
+  metáfora visual clara. Nunca un gráfico con datos (barras, líneas, porcentajes dibujados a escala): esos
+  los dibuja el programa del diario a partir de los valores comprobados (campo `grafico`, ADR 0084). Nada de robots, cerebros
   brillantes ni manos humanas tocando circuitos: son el tópico de la IA. Piensa en las
   infografías dibujadas a tinta de un buen diario.
 - Si la pieza tiene campo `ilustracion` con una idea, úsala como punto de partida; si no,

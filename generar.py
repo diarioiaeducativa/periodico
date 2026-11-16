@@ -2002,7 +2002,7 @@ def articulo(prof, ruta, d, p, eds):
     parrafos = [enlaces_biblioteca(prof, x, eds, p) for x in p.get("cuerpo", [])]
     # La capitular solo cuando el primer párrafo empieza por letra: con comillas o cifras queda rara
     cap = ' class="capitular"' if parrafos and parrafos[0][:1].isalpha() else ""
-    cuerpo = "".join(f"<p{cap if i == 0 else ''}>{md(x)}</p>" for i, x in enumerate(parrafos))
+    cuerpo = "".join(f"<p{cap if i == 0 else ''}>{md(x)}</p>" for i, x in enumerate(parrafos)) + grafico(p.get("grafico"))
     fuentes = "".join(f'<li>{enlace(f["url"], e(f["titulo"]))}</li>' for f in p.get("fuentes", []))
     comprobado = (f'<section class="comprobado" data-pagefind-ignore aria-labelledby="comp-{e(p["id"])}"><h2 id="comp-{e(p["id"])}">'
                   f'{L["comprobado"]}</h2><ul>{fuentes}</ul></section>') if fuentes else ""
@@ -2156,6 +2156,106 @@ def tabla(tb):
     return f'<figure class="tabla"><table>{titulo}<thead><tr>{cab}</tr></thead><tbody>{filas}</tbody></table>{nota}</figure>'
 
 
+# Los gráficos con datos (ADR 0084): los dibuja este programa a partir de los valores del artículo, que el revisor ha
+# comprobado en la fuente; ningún agente los dibuja a mano. Colores del diario, con su valor de reserva para las webs
+# que insertan el artículo (ADR 0032), donde no están las variables.
+COLOR_SERIE = ("var(--azul,#1c3faa)", "var(--rojo,#c8202c)", "var(--verde,#1a7f37)", "var(--tinta-2,#4f5562)")
+TINTA, FILETE = "var(--tinta,#16181d)", "var(--filete,#cfd2d8)"
+FUENTE_ROTULO = {"es": "Fuente", "ca": "Font", "gl": "Fonte", "eu": "Iturria", "en": "Source"}
+
+
+def cifra_grafico(v, unidad=""):
+    """Un valor con la forma de cada lengua (libro del traductor): coma decimal salvo en inglés; el porcentaje, con
+    espacio, pegado en inglés y delante en euskera."""
+    n = f"{v:,.{0 if float(v).is_integer() else 1}f}"
+    n = n if L["codigo"] == "en" else n.replace(",", " ").replace(".", ",").replace(" ", ".")
+    if unidad == "%":
+        return f"{n}%" if L["codigo"] == "en" else f"% {n}" if L["codigo"] == "eu" else f"{n} %"
+    return f"{n} {unidad}".strip()
+
+
+def techo(m, unidad):
+    """El final del eje: 100 en los porcentajes; si no, un número redondo por encima del mayor valor."""
+    if unidad == "%" and m <= 100:
+        return 100
+    paso = 10 ** max(0, len(str(int(m))) - 1)
+    return max(paso, -(-m // paso) * paso)
+
+
+def grafico(g):
+    """Un gráfico de barras («barras», horizontales; «columnas», verticales) o de líneas («lineas»):
+    {"tipo", "titulo", "unidad", "etiquetas": [...], "series": [{"nombre", "valores": [...]}], "fuente": {"titulo",
+    "url"}, "nota"}. Las barras empiezan siempre en cero. Para quien no ve el gráfico, la descripción lleva los datos."""
+    if not g or not g.get("etiquetas") or not g.get("series"):
+        return ""
+    tipo, unidad, et = g.get("tipo", "barras"), g.get("unidad", ""), g["etiquetas"]
+    series = [s for s in g["series"] if len(s.get("valores", [])) == len(et)]
+    if not series:
+        return ""
+    alto_max = techo(max(max(s["valores"]) for s in series), unidad)
+    leyenda, y0 = "", 0
+    if len(series) > 1:
+        x = 0
+        for k, s in enumerate(series):
+            leyenda += (f'<rect x="{x}" y="2" width="14" height="14" rx="2" style="fill:{COLOR_SERIE[k % 4]}"/>'
+                        f'<text x="{x + 20}" y="14" style="fill:{TINTA};font-size:14px">{e(s.get("nombre", ""))}</text>')
+            x += 34 + 8 * len(s.get("nombre", ""))
+        y0 = 34
+    # Estrecho, para que en el móvil las letras no se encojan: en el ordenador se ve a su tamaño, sin estirarse
+    ancho, partes = 420, []
+    if tipo == "barras":
+        fila = 30 + 18 * len(series)
+        for i, nombre in enumerate(et):
+            y = y0 + i * fila
+            partes.append(f'<text x="0" y="{y + 15}" style="fill:{TINTA};font-size:15px">{e(nombre)}</text>')
+            for k, s in enumerate(series):
+                v = s["valores"][i]
+                total = ancho - 72   # lo que queda a la derecha, para la cifra
+                w = max(1, total * v / alto_max)
+                yb = y + 22 + 18 * k
+                partes.append(f'<rect x="0" y="{yb}" width="{total}" height="14" rx="2" style="fill:{FILETE};opacity:.45"/>'
+                              f'<rect x="0" y="{yb}" width="{w:.1f}" height="14" rx="2" style="fill:{COLOR_SERIE[k % 4]}"/>'
+                              f'<text x="{total + 8}" y="{yb + 12}" style="fill:{TINTA};font-size:14px;font-weight:700">{e(cifra_grafico(v, unidad))}</text>')
+        alto = y0 + len(et) * fila
+    else:
+        base, arriba, izq = y0 + 250, y0 + 20, 8
+        largo = ancho - izq
+        rejilla = "".join(f'<line x1="{izq}" x2="{ancho}" y1="{base - (base - arriba) * f:.1f}" y2="{base - (base - arriba) * f:.1f}" style="stroke:{FILETE};stroke-width:1"/>'
+                          for f in (0.25, 0.5, 0.75, 1))
+        partes.append(rejilla + f'<line x1="{izq}" x2="{ancho}" y1="{base}" y2="{base}" style="stroke:{TINTA};stroke-width:1.5"/>')
+        hueco = largo / len(et)
+        for i, nombre in enumerate(et):
+            partes.append(f'<text x="{izq + hueco * (i + 0.5):.1f}" y="{base + 22}" text-anchor="middle" style="fill:{TINTA};font-size:15px">{e(nombre)}</text>')
+        for k, s in enumerate(series):
+            if tipo == "columnas":
+                w = min(56, hueco * 0.7 / len(series))
+                for i, v in enumerate(s["valores"]):
+                    h = (base - arriba) * v / alto_max
+                    x = izq + hueco * (i + 0.5) - w * len(series) / 2 + w * k
+                    partes.append(f'<rect x="{x:.1f}" y="{base - h:.1f}" width="{w - 3:.1f}" height="{h:.1f}" rx="2" style="fill:{COLOR_SERIE[k % 4]}"/>'
+                                  f'<text x="{x + (w - 3) / 2:.1f}" y="{base - h - 6:.1f}" text-anchor="middle" style="fill:{TINTA};font-size:14px;font-weight:700">{e(cifra_grafico(v, unidad))}</text>')
+            else:
+                puntos = [(izq + hueco * (i + 0.5), base - (base - arriba) * v / alto_max) for i, v in enumerate(s["valores"])]
+                partes.append(f'<polyline points="{" ".join(f"{x:.1f},{y:.1f}" for x, y in puntos)}" style="fill:none;stroke:{COLOR_SERIE[k % 4]};stroke-width:3"/>')
+                for (x, y), v in zip(puntos, s["valores"]):
+                    partes.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="4.5" style="fill:{COLOR_SERIE[k % 4]}"/>'
+                                  f'<text x="{x:.1f}" y="{y - 10:.1f}" text-anchor="middle" style="fill:{TINTA};font-size:14px;font-weight:700">{e(cifra_grafico(v, unidad))}</text>')
+        alto = base + 34
+    datos = "; ".join(", ".join(f"{nombre}: {cifra_grafico(s['valores'][i], unidad)}" for i, nombre in enumerate(et))
+                      if len(series) == 1 else f"{s.get('nombre', '')}: " + ", ".join(f"{nombre} {cifra_grafico(s['valores'][i], unidad)}" for i, nombre in enumerate(et))
+                      for s in series)
+    desc = e(f'{g.get("titulo", "")}. {datos}')
+    svg = (f'<svg viewBox="0 -4 {ancho} {alto + 8}" role="img" aria-label="{desc}" xmlns="http://www.w3.org/2000/svg" '
+           f'style="width:100%;max-width:{ancho}px;height:auto;font-family:inherit">{leyenda}{"".join(partes)}</svg>')
+    f = g.get("fuente") or {}
+    fuente = (f'{FUENTE_ROTULO.get(L["codigo"], "Fuente")}: {enlace(f["url"], e(f["titulo"])) if f.get("url") else e(f.get("titulo", ""))}'
+              if f.get("titulo") else "")
+    nota = md(g["nota"]) if g.get("nota") else ""
+    pie = ". ".join(x for x in (fuente, nota) if x)
+    return (f'<figure class="grafico"><p class="grafico-titulo">{e(g.get("titulo", ""))}</p>{svg}'
+            + (f'<figcaption>{pie}</figcaption>' if pie else "") + "</figure>")
+
+
 def texto_tabla(tb):
     """Lo que la tabla aporta al buscador."""
     if not tb:
@@ -2170,7 +2270,8 @@ def articulo_reportaje(prof, ruta, d, r, eds):
         pars = a.get("parrafos", [])
         cap = ' class="capitular"' if i == 0 and pars and pars[0][:1].isalpha() else ""
         texto = "".join(f"<p{cap if j == 0 else ''}>{md(x)}</p>" for j, x in enumerate(pars))
-        apartados.append((f'<h2 class="ladillo">{e(a["ladillo"])}</h2>' if a.get("ladillo") else "") + texto + tabla(a.get("tabla")))
+        apartados.append((f'<h2 class="ladillo">{e(a["ladillo"])}</h2>' if a.get("ladillo") else "") + texto + tabla(a.get("tabla"))
+                         + grafico(a.get("grafico")))
         if i == 0 and r.get("claves"):
             claves = "".join(f"<li>{md(c)}</li>" for c in r["claves"])
             apartados.append(f'<aside class="claves" aria-labelledby="claves-{e(r["id"])}"><h2 id="claves-{e(r["id"])}">{L["claves"]}</h2><ul>{claves}</ul></aside>')
@@ -4173,10 +4274,12 @@ def republicable(d, x, ruta, eds, reportaje=False):
             partes += [f"<p>{md(t)}</p>" for t in a.get("parrafos", [])]
             # La tabla se desplaza dentro de su marco: en un móvil no ensancha la página ajena
             partes.append(tabla(a.get("tabla")).replace('<figure class="tabla">', '<figure style="overflow-x:auto;margin:1em 0">'))
+            partes.append(grafico(a.get("grafico")))
         if x.get("claves"):
             partes.append(f'<h3>{L["claves"]}</h3><ul>{"".join(f"<li>{md(c)}</li>" for c in x["claves"])}</ul>')
     else:
         partes += [f"<p>{md(enlaces_biblioteca('../', t, eds, x))}</p>" for t in x.get("cuerpo", [])]
+        partes.append(grafico(x.get("grafico")))
         for r in x.get("recursos") or []:   # los recursos del repositorio, sin su captura ampliable
             titulo = enlace(r["url"], e(r["titulo"])) if r.get("url") else e(r["titulo"])
             datos = " · ".join(e(v) for v in (r.get("autoria"), r.get("licencia")) if v)
