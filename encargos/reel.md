@@ -31,7 +31,7 @@ salen en pantalla. Nadie los revisa antes de que se publiquen.
 - **dato**: el detalle que lo hace interesante, concreto y comprobable en la pieza. Como mucho
   90 caracteres.
 - Todo sale de la pieza: nada que no diga ella. Habla de temas, no de personas (se nombra solo
-  al autor de un recurso que él mismo ha publicado, también si es Juanjo de Haro, y sin su cargo
+  al autor de un recurso que él mismo ha publicado, también si es Juan José de Haro (así, no «Juanjo»), y sin su cargo
   salvo que tenga que ver con la noticia).
 - Cada idioma, natural y correcto, no calcado: catalán del IEC, gallego normativo, euskera batua
   («adimen artifiziala», AA) e inglés británico. Los mismos topes de caracteres en todos. Los nombres
