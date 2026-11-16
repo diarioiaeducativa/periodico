@@ -14,7 +14,7 @@
       "cuerpo": [
         "Felip Sarroca i Gilek Iraultza Industrialari buruzko webgune bat prestatzen du DBHko 4. mailako Gizarte Zientzietarako, eta Watten lurrun-makinak eta garaiko beste batzuek, hala nola Spinning Jenny-k, nola funtzionatzen duten erakutsi nahi zuen. Taldean kontatzen duenez, Blender, modelatzeko eta errenderizatzeko software librea, bideoak sortzeko gai zela ikusi zuen, baina bere txartel grafikoa zaharra zen eta ez zuen uzten instalatu zuen bertsioa irekitzen. Codexek, ordea, programa bere kabuz erabil dezake.",
         "Berak azaldu bezala, bere metodoa: Codexi zuzenean eskatu makina egiteko Blender erabiliz. Agenteak berak bilatu zituen erreferentziak, irudi historikoak eta dokumentazioa, eta ereduaren diseinua egin zuen; ez zen lehen saiakeran atera, eta pare bat aldiz errealismo eta xehetasun gehiago eskatu zion, baita atalen zenbakiak eta izenak gehitzeko ere. Emaitza [Watten makinaren 3D ikusgailu bat](https://felipsarroca.github.io/web/RevolucioIndustrial/visor-3d.html?m=watt) da, saguarekin biratzen dena eta etiketak dituena; orriak ez du adierazten nola egin zen, hori egileak kontatzen duenean soilik dago jasota. Makina bera [SVG animazio](https://felipsarroca.github.io/web/RevolucioIndustrial/vapor.html#watt) gisa ere badago lurrunaren kapituluan, eta taldeko beste kide batek, biak alderatzean, diferentzia «ikaragarritzat» jo zuen.",
-        "Webgune osoa, [La Revolució Industrial](https://ja.cat/revindustrial), taldeko botaren arabera, katalanezko atlas animatu eta interaktibo bat da DBHko 4. mailarako eta Batxilergoko 1. mailarako, makinei, fabrikei eta garraioei buruzko kapituluekin. Egile beraren beste lan bat lehenago kontatu zuen diarioak: [espezieen merkataritzari buruzko webgune bat](pieza:2026-11-12/comerc-especies). Irakasle batentzat, ideia baliagarria da programazio-agente batek ez dakizkien tresna libreak kateatu ditzakeela, baina hobekuntza segidak eskatu behar direla."
+        "Webgune osoa, [La Revolució Industrial](https://ja.cat/revindustrial), taldeko botaren arabera, katalanezko atlas animatu eta interaktibo bat da DBHko 4. mailarako eta Batxilergoko 1. mailarako, makinei, fabrikei eta garraioei buruzko kapituluekin. Egile beraren beste lan bat lehenago kontatu zuen egunkariak: [espezieen merkataritzari buruzko webgune bat](pieza:2026-11-12/comerc-especies). Irakasle batentzat, ideia baliagarria da programazio-agente batek ez dakizkien tresna libreak kateatu ditzakeela, baina hobekuntza segidak eskatu behar direla."
       ],
       "fuentes": [
         {"titulo": "La Revolució Industrial (atlas animatua) (katalanez)", "url": "https://ja.cat/revindustrial"},
@@ -29,7 +29,7 @@
   ],
   "breves": [
     {
-      "texto": "Eduvers simulazio-plataforma, [diarioak azaroaren 12an aurkeztua](pieza:2026-11-11/eduvers-simulaciones), 3D simulazio bat du NaOH disoluzio bat prestatzeko eta ozpinaren azidotasuna balioesteko, bere deskribapenaren arabera.",
+      "texto": "Eduvers simulazio-plataforma, [egunkariak azaroaren 12an aurkeztua](pieza:2026-11-11/eduvers-simulaciones), 3D simulazio bat du NaOH disoluzio bat prestatzeko eta ozpinaren azidotasuna balioesteko, bere deskribapenaren arabera.",
       "url": "https://eduvers.org/es/fisica-quimica/simulaciones/valoracion-vinagre",
       "grupo": "vce",
       "mensaje": {"grupo": "vce", "id": 14988}

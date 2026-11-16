@@ -43,10 +43,10 @@
       "importancia": 2,
       "grupo": "vce",
       "antetitulo": "Community resource",
-      "titular": "A gamified activity takes the gravitational field in Year 13 Physics to nine orbital missions",
+      "titular": "A gamified activity teaches the gravitational field through nine orbital missions",
       "entradilla": "“Misiones orbitales”, by El profe de la bata, asks students to create an astronaut and complete nine missions using interactive simulators. The practice version runs in the browser, with no accounts.",
       "cuerpo": [
-        "“[Misiones orbitales](https://elprofedelabata.github.io/misiones-orbitales/)” is a Physics activity for the second year of Spanish Bachillerato (Year 13) on the gravitational field, created by El profe de la bata. Students create their astronaut and complete nine missions; for each one they consult interactive simulators, from which they obtain the data needed to calculate orbital and escape velocities, apply Kepler’s laws, find orbital energy or deduce the mass of a star.",
+        "“[Misiones orbitales](https://elprofedelabata.github.io/misiones-orbitales/)” is a Physics activity for the second year of Spanish Bachillerato (students aged 17 to 18) on the gravitational field, created by El profe de la bata. Students create their astronaut and complete nine missions; for each one they consult interactive simulators, from which they obtain the data needed to calculate orbital and escape velocities, apply Kepler’s laws, find orbital energy or deduce the mass of a star.",
         "There are two versions. The practice version runs directly in the browser, with no accounts and unlimited attempts, although it is not intended for grading. The classroom version is installed with Google Apps Script, uses Google Workspace accounts, allows one attempt per mission, saves progress in a teacher’s spreadsheet and includes a dashboard for projecting. Scores are expressed in stars according to the error made: below 5% earns all of them.",
         "The project is distributed under a CC BY-NC-SA 4.0 licence."
       ],
@@ -77,7 +77,7 @@
       "titular": "A Geography teacher uses Gemini to build a counter of births and deaths around the world",
       "entradilla": "“Pulso Demográfico Mundial en Tiempo Real”, by Ricardo Chao Prieto, simulates in real time the births and deaths in each country, based on the UN’s population projections for 2026.",
       "cuerpo": [
-        "Ricardo Chao Prieto, a teacher of Geography and History, has embedded the app in [a post on Geografiando](https://geografiaagustinos.blogspot.com/2013/10/cuanta-gente-nace-y-muere-al-dia-en-el.html), the Year 9 Geography blog of the Agustinos Fathers’ school in León, and shared it in the group as made with Gemini. It starts from an estimated world population of about 8.326 billion people and keeps adding births, at an average of about 4.2 per second, and deaths, about 2 per second.",
+        "Ricardo Chao Prieto, a teacher of Geography and History, has embedded the app in [a post on Geografiando](https://geografiaagustinos.blogspot.com/2013/10/cuanta-gente-nace-y-muere-al-dia-en-el.html), the Geography blog for the third year of ESO of the Agustinos Fathers’ school in León, and shared it in the group as made with Gemini. It starts from an estimated world population of about 8.326 billion people and keeps adding births, at an average of about 4.2 per second, and deaths, about 2 per second.",
         "These are not real records but a statistical simulation using each country’s rates, as the app itself states. It shows the net growth accumulated during the session, lets users filter by continent, speed up by five or twenty times and pause, and includes a map and a table by country with its population, birth rate and death rate. The blog post accompanies it with the daily figures and a chart on the fall in the global fertility rate. For the classroom, it makes visible figures that are hard to picture when written down."
       ],
       "fuentes": [
