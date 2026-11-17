@@ -1,0 +1,108 @@
+{
+  "fecha": "2026-11-16",
+  "hay_edicion": true,
+  "motivo": "Día flojo. La conversación del día giró en torno a lo ya publicado el 16 de noviembre (declarar el uso de IA, Modern Web Guidance, Antigravity, Seedream, Spotify, Relleu Obert, Enfonsar la flota). Queda una pieza de VCE nueva y un breve de EduMedia-IAG; ChatGPT-IA-edu y EduMedia-IAG no tienen otra cosa publicable verificable (ver descartado). · 2 pieza(s) de reserva (2099-01-01, 2099-01-04; para completar)",
+  "piezas": [
+    {
+      "id": "celda-paletizado-3d",
+      "seccion": "vibecoding",
+      "importancia": 1,
+      "grupo": "vce",
+      "antetitulo": "Industria-simulazioa 3Dn",
+      "titular": "Paletizatze-gelaxka robotizatu bat nabigatzailean simulatzen da, eta eszena .glb formatuan esportatzen du",
+      "entradilla": "Eskuratu duen pertsonaren mezuaren arabera, aplikazioa AA ereduekin egin zen; industria-gelaxka birtual bat gelditu, berrabiarazi eta zaintzeko aukera ematen du, eta eszena Blenderrentzat esportatzeko ere bai.",
+      "cuerpo": [
+        "Magda Diaz-G-k Vibe Coding Educativo taldean paletizatze-gelaxka robotizatu baten 3Dko simulazio bat partekatu du, hau da, kutxak edo potoak palet baten gainean jartzen dituen makina batena. [«Celda Robotizada de Paletizado Industrial»](https://celda-robotizada-paletizado-blender.netlify.app/) orria gaztelaniaz dago eta nabigatzailean irekitzen da. Bere izenburuak «PINTURAS CROMO-MAX®» izena darama, eta kredituek «Ing. Magda Diaz»-i egozten diote.",
+        "Orriaren arabera, gelaxka martxan jarri, pausatu eta gelditu daiteke, larrialdi-geldialdiarekin eta berrabiaraztearekin, eta modu automatikoaren eta eskuzkoaren artean aldatu daiteke. Segurtasuneko ate optikoa norbaitek eten duela ere simula daiteke; ekoizpen-adierazleak (ziklo-denbora, erritmoa, erabilgarritasuna), gertaera-erregistroa, sentsoreak eta robotaren giltzaduren angeluak ikus daitezke, eta lau kamera-ikuspegiren artean aldatu.",
+        "Bere mezuaren arabera, eredua Gemini 4 Hydrogenekin egin zen, Googleren ereduarekin, egunkariak Antigravityri buruz hitz egitean [jaso zuenarekin](pieza:2026-11-15/gemini4-hydrogen-orchestrator), eta gero Claude-ren agente batekin xehetasun teknikoak gehitu zizkion, tartean Blenderrentzako fitxategia deskargatzea. Orriak eszena .glb formatuan esportatzeko aukera ematen du, Blenderrek ireki dezakeena. Blender instalatu gabe ikusteko, mezuak [InnerScene-ren lineako ikusgailua](https://innerscene.com/tools/blend-viewer) gomendatzen du, bere orriaren arabera Blenderren fitxategiak nabigatzailean irekitzen dituena, doakoa dena eta izen-ematerik eskatzen ez duena.",
+        "Horrelako simulazio batek automatizazioko eta robotikako ikasgelan balio lezake sentsoreak, segurtasuna eta mugimenduak nola koordinatzen diren behatzeko, benetako makinarik erabili gabe, nahiz eta mezuak ez duen ikasgelako erabilerari buruz hitz egiten. [AAz egindako 3D ereduen](pieza:2026-11-14/revolucion-industrial-blender-codex) beste kasu bat da, oraingoan helburu teknikoarekin. Orriak ez du esaten nola tratatzen dituen erabiltzen duenaren datuak."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Celda Robotizada de Paletizado Industrial (Ing. Magda Diaz-en aplikazioa) (gaztelaniaz)",
+          "url": "https://celda-robotizada-paletizado-blender.netlify.app/"
+        },
+        {
+          "titulo": "InnerScene: .blend fitxategien lineako ikusgailua (ingelesez)",
+          "url": "https://innerscene.com/tools/blend-viewer"
+        }
+      ],
+      "mensaje": {
+        "grupo": "vce",
+        "id": 15067
+      },
+      "comprobado": "Abierta la web de la celda: funciones, modos, vistas, exportación .glb, título con PINTURAS CROMO-MAX® y créditos «Ing. Magda Diaz» (@eaciweb); coincide con el nombre de quien la publica (Magda Diaz-G). Abierta la página de InnerScene: gratuito, sin registro, abre .blend en el navegador. Que se hizo con Gemini 4 Hydrogen y un agente de Claude es lo que dice el mensaje #15069, no comprobable. Mensaje #15067 comprobado en Telegram. Gemini 4 Hydrogen y la pieza de Blender enlazadas: están en publicado.txt. Quitada la afirmación de que sea docente o de que sirva en FP: el mensaje no lo dice.",
+      "ilustracion_alt": "Ezkerretik eskuinera doan eskema: nabigatzaile-leiho bat gelaxka robotizatu batekin (kutxadun zinta, besoa robotikoa eta paleta) eta segurtasun-ate optikoa markatzen duen lerro gorri bertikal bat; gezi urdin bat 3Dko kubo batera. Errotuluak: «Gelaxka nabigatzailean», «Ate optikoa», «.glb» eta «Blender».",
+      "ilustracion": "Esquema en tres pasos: una celda industrial con robot, cinta y palé (simulación en el navegador), una flecha etiquetada «.glb» y un cubo de Blender; con un candado de seguridad y una cortina óptica señalada en la celda."
+    },
+    {
+      "id": "eyejack-creator-realidad-aumentada",
+      "seccion": "multimedia",
+      "importancia": 3,
+      "grupo": "edumedia",
+      "antetitulo": "EduMediaren funtsetik",
+      "titular": "EyeJack Creator: irudi bati mugimendua ematea mugikorrean, errealitate areagotuarekin",
+      "entradilla": "Web batek irudi bati bideo edo animazio bat lotzeko aukera ematen du, mugikorrarekin irudira zuzenduta ikusteko. Doako bertsioak ikustaldiak, iraupena eta tamaina mugatzen ditu.",
+      "cuerpo": [
+        "[EyeJack Creator](https://creator.eyejack.io/) errealitate areagotuko lineako plataforma bat da. Abiarazle gisa jokatzen duen irudi bat igotzen da (JPG edo PNG), eta bideo bat, GIF bat edo PNG irudi-sekuentzia bat lotzen zaio; mugikorrarekin irudira zuzentzean, haren gainean erreproduzitzen da. Panelak ere jarri daitezke, finkoak edo animatuak, espazio batean ibilbideak egiteko. EduMedia-IAG taldean partekatu zen horrelako edukiak sortzeko baliabide gisa.",
+        "Ikasgelan, ikasleek irudi, audio edo bideoko AArekin sortzen dutena euskarri fisiko batekin lotzeko balio du. Adibidez, ikastetxeko kartel batek edo horma-irudi batek, eskaneatzean, ikasle beraiek egindako bideo azaltzaile labur bat erakuts dezake.",
+        "Hasteko, irudi abiarazlea igotzen da, gainean erreproduzituko den bideoa edo animazioa aukeratzen da, eta mugikorrean probatzen da aurrebistako QR kodearekin.",
+        "**Baldintzak.** Bere orriaren arabera, 2026ko azaroan, doako planak hilean 100 ikustaldi ditu, lan bakoitzeko 30 segundo arte eta paneletako proiektu bakoitzeko 3 MB; ikustaldiak agortzean, lanak desaktibatu egiten dira hurrengo hilera arte. Ordainpeko planak hilean 10 dolarretik hasten dira. Sarbidea saioa hasita egiten da, eta webak ez du adierazten gutxieneko adina ez zer datu biltzen dituen, beraz komeni da irakasleek sortzea lanak eta ikasleek ikusi baino ez egitea."
+      ],
+      "fuentes": [
+        {
+          "titulo": "EyeJack Creator (ingelesez)",
+          "url": "https://creator.eyejack.io/"
+        }
+      ],
+      "herramienta": {
+        "nombre": "EyeJack Creator",
+        "url": "https://creator.eyejack.io/"
+      },
+      "mensaje": {
+        "grupo": "edumedia",
+        "id": 5113
+      },
+      "comprobado": "Revisado el 16-11-2026: abierta la web oficial https://creator.eyejack.io/ (descripción, formatos JPG/PNG, vídeo, GIF y PNG secuenciales, paneles, vista previa por QR; planes Free, Artist 10 dólares al mes y Virtuoso 100 dólares al mes; plan gratuito con 100 visualizaciones al mes, 30 s por obra y 3 MB por proyecto de paneles, y obras desactivadas al agotarse las visualizaciones). La página no indica edad mínima, idiomas ni datos recogidos; el acceso es por inicio de sesión. Quitado «obras ilimitadas», que no consta en la página. Mensaje 5113 comprobado en t.me (enlace al recurso, compartido en EduMedia-IAG). Búsquedas «eyejack» y por titular en el diario y en los grupos: nada publicado.",
+      "ilustracion": "Antes y después: a la izquierda, un cartel de papel con un dibujo sencillo y un móvil que lo apunta con un código QR al lado; a la derecha, el mismo cartel con el móvil mostrando el dibujo cobrando movimiento sobre la pantalla.",
+      "ilustracion_alt": "Bi erditan banatutako eskema. Ezkerrean, «Lehen»: eguzki bat eta mendi bat marraztuta dituen kartel bat, QR kode bat eta hari zuzendutako mugikor bat, «Kartela» errotuluarekin. Eskuinean, «Gero»: kartel bera mugimendu-lerroekin eta marrazki animatua erakusten duen mugikor batekin, «Mugimenduan» errotuluarekin."
+    }
+  ],
+  "breves": [
+    {
+      "texto": "ElevenLabsen bideo-itzultzailearen orriak 90 hizkuntza baino gehiago iragartzen ditu, nahiz eta galderen atalak 29 baino gehiagoz hitz egin eta katalana ez aipatu. Fitxategi bakoitzeko minutu bateko edo 50 MBko muga adierazten du.",
+      "url": "https://elevenlabs.io/es/translate-video",
+      "grupo": "edumedia",
+      "mensaje": {
+        "grupo": "edumedia",
+        "id": 12277
+      }
+    }
+  ],
+  "descartado": [
+    "Informe de Envato sobre IA en el trabajo creativo (53 % sin decírselo al cliente): no se encontró la nota de prensa ni la cifra en otra fuente (la página devolvió 403 y la búsqueda solo mostró el informe anterior); sin comprobar, se descarta.",
+    "Lienzos de Google Sheets que se publican sin compartir las hojas (tuit de un usuario): no se encontró documentación oficial de Google que describa la opción de publicar; solo la captura del grupo.",
+    "Gemini Notebook «make me a site»: solo un tuit (X devolvió error) y no se encontró anuncio oficial.",
+    "Skill «Versiona tu canción» de jc para Gemini: sin enlace al recurso ni nada que comprobar, solo mensajes del 15 de noviembre.",
+    "FigureLabs (generador de figuras científicas): solo opiniones de miembros, sin comprobar y con errores señalados en un dibujo.",
+    "Comentarios sobre realidad aumentada, el vídeo de Mollick y el de Ryan Sael en EduMedia-IAG: opinión y enlaces a X sin fuente original comprobable.",
+    "App de Android del diario y botón «Escuchar»: tema del propio diario, sin interés para quien lee fuera.",
+    "Nuevo debate sobre declarar el uso de IA y entrada «Familias con inteligencia»: ya publicado el 16 de noviembre (declarar-uso-ia-transparencia).",
+    "Modern Web Guidance, Gemini 4 Hydrogen/Orchestrator, Seedream 5.5, Spotify, Relleu Obert, Eduvers, Buzz y Enfonsar la flota: ya publicados."
+  ],
+  "repaso": [
+    "Titular acortado y corregido: la página exporta en .glb, no a Blender directamente; entradilla rebajada (se quita «sirve para enseñar automatización en FP» y «docente», que el mensaje no dice).",
+    "Nombrada a Magda Diaz-G, que publica el recurso y cuyo nombre coincide con el crédito de la página; mencionado el título «PINTURAS CROMO-MAX®».",
+    "Párrafo final: el uso en el aula pasa a ser hipótesis expresa; se quita «no consta que recoja datos del alumnado».",
+    "Recomendación del visor atribuida al mensaje y no a «la autora».",
+    "Breve de ElevenLabs comprobado (90 idiomas, FAQ con 29, sin catalán, 1 minuto o 50 MB): sin cambios."
+  ],
+  "piezas_reserva": [
+    "2099-01-01",
+    "2099-01-04"
+  ],
+  "titulares_reserva": [
+    "EyeJack Creator: dar movimiento a una imagen en el móvil con realidad aumentada",
+    "El INTEF actualiza su guía de IA en educación con diez principios éticos y un plan por fases para que los centros la incorporen"
+  ]
+}

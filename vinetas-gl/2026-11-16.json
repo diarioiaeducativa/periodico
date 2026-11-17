@@ -1,0 +1,87 @@
+{
+ "fecha": "2026-11-16",
+ "elegida": {
+  "n": 6,
+  "pieza": "trama-comprensio-lectora",
+  "idea": "Algoritmo presume de ter lido nun segundo as 206 lecturas do catálogo e, cando Xiz lle pregunta de que trataba a primeira, responde coma quen non estudou.",
+  "guion": {
+   "vinetas": [
+    {
+     "cartela": "Na biblioteca, preparando fichas de lectura.",
+     "escenario": "biblioteca",
+     "tiza": {
+      "expresion": "neutral",
+      "postura": "sostener",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "contento",
+      "postura": "arriba",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "objeto": "libro",
+     "lleva": "tiza",
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Douscentas seis lecturas, cada unha coas súas preguntas de comprensión.",
+       "tipo": "habla"
+      },
+      {
+       "quien": "algoritmo",
+       "texto": "Xa as lin todas. Nun segundo.",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "biblioteca",
+     "tiza": {
+      "expresion": "pensativo",
+      "postura": "jarras",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "cargando",
+      "postura": "abajo",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "A ver: de que trataba a primeira?",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "biblioteca",
+     "tiza": {
+      "expresion": "orgulloso",
+      "postura": "cruzar",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "avergonzado",
+      "postura": "encoger",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "algoritmo",
+       "texto": "Iso entraba no exame?",
+       "tipo": "habla"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "traduccion": "automática con IA"
+}

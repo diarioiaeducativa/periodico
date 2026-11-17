@@ -1,0 +1,432 @@
+{
+ "fecha": "2026-11-16",
+ "candidatas": [
+  {
+   "pieza": "celda-paletizado-3d",
+   "idea": "Algoritmo le pone a la jornada de Tiza los indicadores de la celda y se lleva el susto al ver el registro de sucesos.",
+   "guion": {
+    "vinetas": [
+     {
+      "cartela": "De noche, en casa, con la celda robotizada simulada.",
+      "escenario": "casa_noche",
+      "tiza": {
+       "expresion": "sorprendido",
+       "postura": "sostener",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "contento",
+       "postura": "pensar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "taza",
+      "lleva": "tiza",
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "He puesto tu jornada en un panel, con los indicadores de la celda.",
+        "tipo": "habla"
+       },
+       {
+        "quien": "tiza",
+        "texto": "¿Mi jornada? A ver qué sale.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "casa_noche",
+      "tiza": {
+       "expresion": "orgulloso",
+       "postura": "sostener",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "cargando",
+       "postura": "cruzar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "taza",
+      "lleva": "tiza",
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "Disponibilidad: 100 %. Cadencia: alta. Paradas: ninguna.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "casa_noche",
+      "tiza": {
+       "expresion": "agotado",
+       "postura": "encoger",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "preocupado",
+       "postura": "cabeza",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "reloj",
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "Según el registro de sucesos, tu última pausa fue en agosto.",
+        "tipo": "habla"
+       }
+      ]
+     }
+    ]
+   },
+   "cabe": false,
+   "no_cabe": [
+    "viñeta 1: habla primero quien está a la derecha, pero uno encima del otro los globos no caben ni con el de arriba a todo el ancho (sobran 13 px)"
+   ]
+  },
+  {
+   "pieza": "celda-paletizado-3d",
+   "idea": "La cortina óptica para la celda en el acto; Tiza la prueba con la formación en línea, que sigue y sigue (remate mudo; la escena es una formación en línea a propósito).",
+   "guion": {
+    "vinetas": [
+     {
+      "cartela": "En una formación en línea, con la celda robotizada.",
+      "escenario": "videollamada",
+      "tiza": {
+       "expresion": "sorprendido",
+       "postura": "cruzar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "contento",
+       "postura": "pensar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "Si alguien cruza la cortina óptica, la celda se para en el acto.",
+        "tipo": "habla"
+       },
+       {
+        "quien": "tiza",
+        "texto": "¿En el acto? ¿Sin «una última cosa»?",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "videollamada",
+      "tiza": {
+       "expresion": "enfadado",
+       "postura": "jarras",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "pensativo",
+       "postura": "pensar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "Esta formación necesita una cortina de esas.",
+        "tipo": "habla"
+       },
+       {
+        "quien": "algoritmo",
+        "texto": "Pues crúzala tú, a ver si se para.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "cartela": "La formación, hora y media después.",
+      "escenario": "videollamada",
+      "tiza": {
+       "expresion": "agotado",
+       "postura": "arriba",
+       "lugar": "centro",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "avergonzado",
+       "postura": "encoger",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": []
+     }
+    ]
+   },
+   "cabe": false,
+   "no_cabe": [
+    "viñeta 1: habla primero quien está a la derecha, pero uno encima del otro los globos no caben ni con el de arriba a todo el ancho (sobran 13 px)"
+   ]
+  },
+  {
+   "pieza": "breve-1",
+   "idea": "El traductor de vídeo anuncia más de 90 idiomas; Algoritmo resuelve el límite de un minuto troceando la clase de Tiza y deja el catalán para luego.",
+   "guion": {
+    "vinetas": [
+     {
+      "cartela": "En la biblioteca, preparando una clase en vídeo.",
+      "escenario": "biblioteca",
+      "tiza": {
+       "expresion": "contento",
+       "postura": "senalar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "contento",
+       "postura": "jarras",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "Quiero mi clase de 50 minutos también en catalán.",
+        "tipo": "habla"
+       },
+       {
+        "quien": "algoritmo",
+        "texto": "Este traductor de vídeo anuncia más de 90 idiomas.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "biblioteca",
+      "tiza": {
+       "expresion": "preocupado",
+       "postura": "sostener",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "cargando",
+       "postura": "pensar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "movil",
+      "lleva": "tiza",
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "Sus preguntas hablan de 29 y no nombran el catalán. Y un minuto por archivo.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "biblioteca",
+      "tiza": {
+       "expresion": "sorprendido",
+       "postura": "cabeza",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "contento",
+       "postura": "encoger",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "Listo: tu clase, en cincuenta vídeos de un minuto. El catalán, ya veremos.",
+        "tipo": "habla"
+       }
+      ]
+     }
+    ]
+   },
+   "cabe": true
+  },
+  {
+   "pieza": "celda-paletizado-3d",
+   "idea": "La celda tiene modo automático y manual, como Tiza; el giro está en el rótulo del viernes a sexta hora (remate mudo).",
+   "guion": {
+    "vinetas": [
+     {
+      "cartela": "En el aula, en el recreo, con la celda robotizada.",
+      "escenario": "aula",
+      "tiza": {
+       "expresion": "contento",
+       "postura": "encoger",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "contento",
+       "postura": "pensar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "La celda tiene modo automático y modo manual.",
+        "tipo": "habla"
+       },
+       {
+        "quien": "tiza",
+        "texto": "Como yo.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "aula",
+      "tiza": {
+       "expresion": "riendo",
+       "postura": "jarras",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "sorprendido",
+       "postura": "cabeza",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "¿Tú también tienes modo automático?",
+        "tipo": "habla"
+       },
+       {
+        "quien": "tiza",
+        "texto": "Uno muy fiable. Se activa solo.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "cartela": "El viernes, a sexta hora.",
+      "escenario": "aula",
+      "tiza": {
+       "expresion": "agotado",
+       "postura": "senalar",
+       "lugar": "izquierda",
+       "mira": "izquierda"
+      },
+      "algoritmo": {
+       "expresion": "preocupado",
+       "postura": "cruzar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": []
+     }
+    ]
+   },
+   "cabe": true
+  },
+  {
+   "pieza": "celda-paletizado-3d",
+   "idea": "Algoritmo presume de parar cuando se lo piden, como la parada de emergencia de la celda, y el montón de papeles lo desmiente.",
+   "guion": {
+    "vinetas": [
+     {
+      "cartela": "En el despacho, viendo la celda robotizada.",
+      "escenario": "despacho",
+      "tiza": {
+       "expresion": "contento",
+       "postura": "cruzar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "sorprendido",
+       "postura": "cabeza",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "Le das a la parada de emergencia y se para todo, en el acto.",
+        "tipo": "habla"
+       },
+       {
+        "quien": "tiza",
+        "texto": "Qué envidia. ¿Tú tienes una de esas?",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "despacho",
+      "tiza": {
+       "expresion": "enfadado",
+       "postura": "jarras",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "contento",
+       "postura": "cruzar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "Claro: cuando me pides que pare, paro.",
+        "tipo": "habla"
+       },
+       {
+        "quien": "tiza",
+        "texto": "Te pedí un resumen de una línea.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "despacho",
+      "tiza": {
+       "expresion": "riendo",
+       "postura": "cabeza",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "avergonzado",
+       "postura": "encoger",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "papeles",
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "Y paré. En la página cuatro.",
+        "tipo": "habla"
+       }
+      ]
+     }
+    ]
+   },
+   "cabe": false,
+   "no_cabe": [
+    "viñeta 1: habla primero quien está a la derecha, pero uno encima del otro los globos no caben ni con el de arriba a todo el ancho (sobran 13 px)"
+   ]
+  }
+ ]
+}

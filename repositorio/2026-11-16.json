@@ -1,0 +1,42 @@
+{
+  "fecha": "2026-11-16",
+  "piezas": [
+    {
+      "id": "trama-comprensio-lectora",
+      "seccion": "vibecoding",
+      "repositorio": "dia",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Nuevo en el repositorio",
+      "titular": "Trama ofrece 206 lecturas con preguntas para preparar fichas de comprensión lectora",
+      "entradilla": "El catálogo, en catalán y en castellano, está pensado sobre todo para 4.º a 6.º de primaria y permite elegir las preguntas antes de imprimir la ficha o descargarla en PDF.",
+      "cuerpo": [
+        "**Trama** es un catálogo en línea de lecturas de comprensión lectora, creado por Aarón Fortuño. Se abre en el navegador, con el lema «Llegir és seguir el fil», y a 16 de noviembre de 2026 mostraba 206 lecturas. Cada una indica su tipo de texto (divulgación, narración, texto instructivo o carta), la lengua, el curso, la dificultad, el número de palabras y el de preguntas. Entre las que se ven en la portada hay, por ejemplo, un texto sobre un acueducto, otro sobre los porquets de Sant Antoni (cochinillas de la humedad) que se refugian bajo una piedra y una carta de una chica a su tía sobre una radio familiar.",
+        "El profesorado puede buscar por título, código o tema y filtrar por lengua, nivel, dificultad, extensión, temática, tipo de pregunta y tipo de texto. La propia página aclara que la extensión y la dificultad se valoran dentro de cada curso. Al pulsar «Prepara la fitxa» en una lectura, se eligen las preguntas y se adapta la ficha (formato, espacio de respuesta y encabezado) antes de imprimirla o descargarla en PDF. Según la descripción de la ficha del repositorio, la ficha lleva también solucionario, útil para corregir sin preparar las respuestas aparte.",
+        "Las lecturas están en catalán y en castellano, y la interfaz se puede cambiar entre ambas lenguas. Según la información de la web, 96 lecturas existen en las dos lenguas, de modo que una misma actividad puede usarse en un aula bilingüe o en la otra versión de un centro. Las lecturas son de primaria, con cursos de 4.º a 6.º en lo que muestra la portada.",
+        "Otra función es importar y exportar lecturas propias en formato JSON, un archivo de texto con una estructura fija (título, lengua y párrafos y, si se quiere, preguntas y respuestas). Así, un docente puede añadir sus textos al catálogo en su navegador; según la web, las lecturas importadas se guardan en el propio navegador.",
+        "Trama es gratuita, no pide cuenta para consultar el catálogo y es un proyecto de [ortogra.fi](https://ortogra.fi), de donde ya salió [Fil i compte](pieza:2026-11-05/fil-i-compte), que prepara fichas de problemas de matemáticas. El código se publica con licencia MIT y los textos, preguntas y respuestas, con licencia CC BY 4.0, que permite reutilizarlos citando la autoría. La web no detalla qué datos del alumnado trata, si los trata: en lo visible, la herramienta la usa el docente y el alumnado trabaja con la ficha impresa."
+      ],
+      "recursos": [
+        {
+          "id": "trama-comprensio-lectora",
+          "titulo": "Trama · Comprensió lectora",
+          "autoria": "Aarón Fortuño",
+          "url": "https://trama.ortogra.fi/",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://trama.ortogra.fi/",
+          "licencia": "MIT (código) · CC BY 4.0 (contenidos)",
+          "captura": "2026-11-16-trama-comprensio-lectora.jpg",
+          "captura_alt": "Catálogo de lecturas de Trama con filtros a la izquierda y tarjetas con ilustración, título, curso, dificultad y botón «Prepara la fitxa».",
+          "texto": []
+        }
+      ],
+      "fuentes": [
+        {"titulo": "Trama · Comprensió lectora", "url": "https://trama.ortogra.fi/"},
+        {"titulo": "ortogra.fi", "url": "https://ortogra.fi"}
+      ],
+      "comprobado": "Se miró la captura (catálogo de 206 lecturas, filtros, tarjetas con «Prepara la fitxa», selector de idioma), el texto visible de la página y se abrió la web con WebFetch (idiomas, 96 lecturas en las dos lenguas, solucionario, importación en JSON, licencias, autoría) y ortogra.fi (incluye Trama y Fil i compte). Fil i compte consta en publicado.txt (2026-11-05) y trata de fichas de matemáticas de ortogra.fi. No se pudo probar la ficha ni el PDF. No había mensaje del autor en la entrada."
+    }
+  ],
+  "descartado": [],
+  "repaso": ["Quitada la referencia al «momento de la revisión» (cómo trabaja el diario) y fechado el dato: «a 16 de noviembre de 2026»", "Actualizado «comprobado» con lo verificado; resto sin cambios"]
+}

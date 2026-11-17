@@ -1,0 +1,42 @@
+{
+  "fecha": "2026-11-16",
+  "piezas": [
+    {
+      "id": "trama-comprensio-lectora",
+      "seccion": "vibecoding",
+      "repositorio": "dia",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Berria biltegian",
+      "titular": "Tramak 206 irakurgai eskaintzen ditu, irakurmen-ulermeneko fitxak prestatzeko galderekin",
+      "entradilla": "Katalanezko eta gaztelaniazko katalogoa batez ere Lehen Hezkuntzako 4. mailatik 6.era arteko ikasleentzat pentsatuta dago, eta fitxa inprimatu edo PDF gisa deskargatu aurretik galderak aukeratzeko aukera ematen du.",
+      "cuerpo": [
+        "**Trama** irakurmen-ulermeneko irakurgaien lineako katalogo bat da, Aarón Fortuñok sortua. Nabigatzailean irekitzen da, «Llegir és seguir el fil» lemarekin, eta 2026ko azaroaren 16an 206 irakurgai erakusten zituen. Bakoitzak testu mota (dibulgazioa, narrazioa, jarraibide-testua edo gutuna), hizkuntza, maila, zailtasuna, hitz kopurua eta galdera kopurua adierazten ditu. Azalean ikusten direnen artean daude, adibidez, akueduktu bati buruzko testu bat, harri baten azpian babesten diren Sant Antoniko porquetei (hezetasunaren zomorroei) buruzko beste bat, eta neska batek izebari familiako irrati bati buruz idatzitako gutun bat.",
+        "Irakasleek izenburuaren, kodearen edo gaiaren arabera bilatu dezakete, eta hizkuntzaren, mailaren, zailtasunaren, luzeraren, gaiaren, galdera motaren eta testu motaren arabera iragazi. Orriak berak azaltzen du luzera eta zailtasuna maila bakoitzaren barruan neurtzen direla. Irakurgai batean «Prepara la fitxa» sakatzean, galderak aukeratzen dira eta fitxa egokitzen da (formatua, erantzunerako tartea eta goiburua), inprimatu edo PDF gisa deskargatu aurretik. Biltegiko fitxaren azalpenaren arabera, fitxak soluzioak ere ekartzen ditu, erantzunak bereizita prestatu gabe zuzentzeko baliagarriak.",
+        "Irakurgaiak katalanez eta gaztelaniaz daude, eta interfazea bi hizkuntzen artean alda daiteke. Webaren informazioaren arabera, 96 irakurgai bi hizkuntzetan daude, beraz jarduera bera ikasgela elebidun batean erabil daiteke, edo ikastetxe bateko beste bertsioan. Irakurgaiak Lehen Hezkuntzakoak dira, eta azalean 4. mailatik 6.era arteko mailak ageri dira.",
+        "Beste funtzio bat norberaren irakurgaiak JSON formatuan inportatu eta esportatzea da, egitura finkoa duen testu-fitxategia (izenburua, hizkuntza eta paragrafoak, eta nahi izanez gero, galderak eta erantzunak). Horrela, irakasle batek bere testuak gehi ditzake katalogora bere nabigatzailean; webaren arabera, inportatutako irakurgaiak nabigatzailean bertan gordetzen dira.",
+        "Trama doakoa da, ez du konturik eskatzen katalogoa kontsultatzeko, eta [ortogra.fi](https://ortogra.fi)-ren proiektu bat da; handik atera zen lehen ere [Fil i compte](pieza:2026-11-05/fil-i-compte), matematika-problemen fitxak prestatzen dituena. Kodea MIT lizentziarekin argitaratzen da, eta testuak, galderak eta erantzunak CC BY 4.0 lizentziarekin, egilea aipatuta berrerabiltzeko aukera ematen duena. Webak ez du zehazten ikasleen zer datu tratatzen dituen, tratatzen baditu: ikusten denaren arabera, irakasleak erabiltzen du tresna, eta ikasleek fitxa inprimatuarekin lan egiten dute."
+      ],
+      "recursos": [
+        {
+          "id": "trama-comprensio-lectora",
+          "titulo": "Trama · Comprensió lectora",
+          "autoria": "Aarón Fortuño",
+          "url": "https://trama.ortogra.fi/",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://trama.ortogra.fi/",
+          "licencia": "MIT (kodea) · CC BY 4.0 (edukiak)",
+          "captura": "2026-11-16-trama-comprensio-lectora.jpg",
+          "captura_alt": "Tramaren irakurgai-katalogoa: ezkerrean iragazkiak, eta eskuinean irudia, izenburua, maila, zailtasuna eta «Prepara la fitxa» botoia dituzten txartelak.",
+          "texto": []
+        }
+      ],
+      "fuentes": [
+        {"titulo": "Trama · Comprensió lectora (katalanez eta gaztelaniaz)", "url": "https://trama.ortogra.fi/"},
+        {"titulo": "ortogra.fi", "url": "https://ortogra.fi"}
+      ],
+      "comprobado": "Se miró la captura (catálogo de 206 lecturas, filtros, tarjetas con «Prepara la fitxa», selector de idioma), el texto visible de la página y se abrió la web con WebFetch (idiomas, 96 lecturas en las dos lenguas, solucionario, importación en JSON, licencias, autoría) y ortogra.fi (incluye Trama y Fil i compte). Fil i compte consta en publicado.txt (2026-11-05) y trata de fichas de matemáticas de ortogra.fi. No se pudo probar la ficha ni el PDF. No había mensaje del autor en la entrada."
+    }
+  ],
+  "descartado": [],
+  "repaso": ["Quitada la referencia al «momento de la revisión» (cómo trabaja el diario) y fechado el dato: «a 16 de noviembre de 2026»", "Actualizado «comprobado» con lo verificado; resto sin cambios"]
+}

@@ -1,0 +1,108 @@
+{
+  "fecha": "2026-11-16",
+  "hay_edicion": true,
+  "motivo": "A quiet day. The day's conversation revolved around what had already been published on 16 November (declaring the use of AI, Modern Web Guidance, Antigravity, Seedream, Spotify, Relleu Obert, Enfonsar la flota). One new item from VCE and one short from EduMedia-IAG remain; ChatGPT-IA-edu and EduMedia-IAG have nothing else publishable and verifiable (see discarded). · 2 reserve item(s) (2099-01-01, 2099-01-04; to fill up)",
+  "piezas": [
+    {
+      "id": "celda-paletizado-3d",
+      "seccion": "vibecoding",
+      "importancia": 1,
+      "grupo": "vce",
+      "antetitulo": "Industrial simulation in 3D",
+      "titular": "A robotic palletising cell is simulated in the browser and exports the scene as .glb",
+      "entradilla": "According to the message of the person who shared it, the app was built with AI models; it lets users stop, resume and monitor a virtual industrial cell and export the scene for Blender.",
+      "cuerpo": [
+        "Magda Diaz-G has shared in Vibe Coding Educativo a 3D simulation of a robotic palletising cell, that is, a machine that stacks boxes or tins on a pallet. The page, [“Celda Robotizada de Paletizado Industrial”](https://celda-robotizada-paletizado-blender.netlify.app/) (“Industrial Robotic Palletising Cell”), is in Spanish and opens in the browser. Its title carries the name “PINTURAS CROMO-MAX®” and its credits attribute it to “Ing. Magda Diaz”.",
+        "According to the page, it lets users start, pause and stop the cell, with an emergency stop and a reset, and switch between automatic and manual mode. It can also simulate someone breaking the safety light curtain, show production indicators (cycle time, rate, availability), the event log, the sensors and the angles of the robot’s joints, and switch between four camera views.",
+        "According to its message, the model was built with Gemini 4 Hydrogen, the Google model that the paper [reported on](pieza:2026-11-15/gemini4-hydrogen-orchestrator) when discussing Antigravity, and technical details were then added with a Claude agent, including the download of the file for Blender. The page offers to export the scene in .glb format, which Blender can open. To view it without installing Blender, the message recommends the [InnerScene online viewer](https://innerscene.com/tools/blend-viewer), which, according to its own page, opens Blender files in the browser, is free and requires no registration.",
+        "A simulation like this could be useful in an automation and robotics class to observe how sensors, safety and movements are coordinated without access to a real machine, although the message does not mention classroom use. It is another case of [3D models made with AI](pieza:2026-11-14/revolucion-industrial-blender-codex), this time with a technical purpose. The page does not say how it handles the data of the person using it."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Celda Robotizada de Paletizado Industrial (app by Ing. Magda Diaz) (in Spanish)",
+          "url": "https://celda-robotizada-paletizado-blender.netlify.app/"
+        },
+        {
+          "titulo": "InnerScene: online .blend file viewer",
+          "url": "https://innerscene.com/tools/blend-viewer"
+        }
+      ],
+      "mensaje": {
+        "grupo": "vce",
+        "id": 15067
+      },
+      "comprobado": "Cell website opened: functions, modes, views, .glb export, title with PINTURAS CROMO-MAX® and credits “Ing. Magda Diaz” (@eaciweb); matches the name of the person who posted it (Magda Diaz-G). InnerScene page opened: free, no registration, opens .blend files in the browser. That it was built with Gemini 4 Hydrogen and a Claude agent is what message #15069 says, which cannot be checked. Message #15067 checked on Telegram. Gemini 4 Hydrogen and the Blender piece linked: they are in publicado.txt. Removed the claim that she is a teacher or that it is useful in vocational training: the message does not say so.",
+      "ilustracion_alt": "Diagram from left to right: a browser window with a robotic cell (conveyor with boxes, robot arm and pallet) and a vertical red line marking the safety curtain; a blue arrow towards a 3D cube. Labels: “Cell in the browser”, “Light curtain”, “.glb” and “Blender”.",
+      "ilustracion": "Three-step diagram: an industrial cell with a robot, conveyor and pallet (simulation in the browser), an arrow labelled “.glb” and a Blender cube; with a safety padlock and a light curtain marked on the cell."
+    },
+    {
+      "id": "eyejack-creator-realidad-aumentada",
+      "seccion": "multimedia",
+      "importancia": 3,
+      "grupo": "edumedia",
+      "antetitulo": "From the EduMedia archive",
+      "titular": "EyeJack Creator: bringing an image to life on your phone with augmented reality",
+      "entradilla": "A website lets you attach a video or animation to an image and watch it on your phone by pointing at it. The free version limits views, duration and size.",
+      "cuerpo": [
+        "[EyeJack Creator](https://creator.eyejack.io/) is an online augmented reality platform. You upload an image that acts as a trigger (JPG or PNG) and attach a video, a GIF or a sequence of PNG images, which plays over it when you point your phone at it. It also lets you place panels, static or animated, in a space to create walk-through tours. It was shared in the EduMedia-IAG group as a resource for creating this kind of content.",
+        "In the classroom it can link what students produce with image, audio or video AI to a physical medium. For example, a school poster or a mural whose drawing, when scanned, shows a short explanatory video made by the students themselves.",
+        "To get started, you upload the trigger image, choose the video or animation that will play over it and test it on your phone using the preview QR code.",
+        "**Terms.** According to its page, as of November 2026, the free plan includes 100 views a month, up to 30 seconds per artwork and 3 MB per panel project; once the views run out, artworks are deactivated until the following month. Paid plans start at $10 a month. Access requires logging in, and the website does not state the minimum age or what data it collects, so it is advisable for teachers to create the artworks and for students only to view them."
+      ],
+      "fuentes": [
+        {
+          "titulo": "EyeJack Creator",
+          "url": "https://creator.eyejack.io/"
+        }
+      ],
+      "herramienta": {
+        "nombre": "EyeJack Creator",
+        "url": "https://creator.eyejack.io/"
+      },
+      "mensaje": {
+        "grupo": "edumedia",
+        "id": 5113
+      },
+      "comprobado": "Checked on 16-11-2026: official website https://creator.eyejack.io/ opened (description, JPG/PNG formats, video, GIF and sequential PNGs, panels, QR preview; Free, Artist at $10 a month and Virtuoso at $100 a month plans; free plan with 100 views a month, 30 s per artwork and 3 MB per panel project, and artworks deactivated when views run out). The page does not state minimum age, languages or data collected; access is by login. Removed “unlimited artworks”, which does not appear on the page. Message 5113 checked on t.me (link to the resource, shared in EduMedia-IAG). Searches for “eyejack” and by headline in the paper and in the groups: nothing published.",
+      "ilustracion": "Before and after: on the left, a paper poster with a simple drawing and a phone pointing at it, with a QR code beside it; on the right, the same poster with the phone showing the drawing coming to life on the screen.",
+      "ilustracion_alt": "Diagram in two halves. On the left, “Before”: a poster with a drawn sun and mountain, a QR code and a phone pointing at it, labelled “Poster”. On the right, “After”: the same poster with motion lines and a phone showing the animated drawing, labelled “In motion”."
+    }
+  ],
+  "breves": [
+    {
+      "texto": "ElevenLabs’ video translator page advertises more than 90 languages, although its FAQ section speaks of more than 29 and does not mention Catalan. It states a limit of one minute or 50 MB per file.",
+      "url": "https://elevenlabs.io/es/translate-video",
+      "grupo": "edumedia",
+      "mensaje": {
+        "grupo": "edumedia",
+        "id": 12277
+      }
+    }
+  ],
+  "descartado": [
+    "Envato report on AI in creative work (53% without telling the client): neither the press release nor the figure was found in another source (the page returned 403 and the search only showed the previous report); unchecked, so discarded.",
+    "Google Sheets canvases published without sharing the sheets (a user’s tweet): no official Google documentation describing the publishing option was found; only the screenshot from the group.",
+    "Gemini Notebook “make me a site”: only a tweet (X returned an error) and no official announcement found.",
+    "jc’s “Versiona tu canción” skill for Gemini: no link to the resource and nothing to check, only messages from 15 November.",
+    "FigureLabs (scientific figure generator): only members’ opinions, unchecked and with errors pointed out in a drawing.",
+    "Comments on augmented reality, Mollick’s video and Ryan Sael’s video in EduMedia-IAG: opinion and links to X with no verifiable original source.",
+    "The paper’s Android app and the “Listen” button: a topic about the paper itself, of no interest to readers outside.",
+    "New debate on declaring the use of AI and the “Familias con inteligencia” instalment: already published on 16 November (declarar-uso-ia-transparencia).",
+    "Modern Web Guidance, Gemini 4 Hydrogen/Orchestrator, Seedream 5.5, Spotify, Relleu Obert, Eduvers, Buzz and Enfonsar la flota: already published."
+  ],
+  "repaso": [
+    "Headline shortened and corrected: the page exports to .glb, not directly to Blender; standfirst toned down (removed “useful for teaching automation in vocational training” and “teacher”, which the message does not say).",
+    "Magda Diaz-G named, as the person who posts the resource and whose name matches the page’s credit; the title “PINTURAS CROMO-MAX®” mentioned.",
+    "Final paragraph: classroom use becomes an explicit hypothesis; removed “there is no record that it collects students’ data”.",
+    "Recommendation of the viewer attributed to the message and not to “the author”.",
+    "ElevenLabs short checked (90 languages, FAQ with 29, no Catalan, 1 minute or 50 MB): no changes."
+  ],
+  "piezas_reserva": [
+    "2099-01-01",
+    "2099-01-04"
+  ],
+  "titulares_reserva": [
+    "EyeJack Creator: bringing an image to life on your phone with augmented reality",
+    "INTEF updates its guide to AI in education with ten ethical principles and a phased plan for schools to adopt it"
+  ]
+}

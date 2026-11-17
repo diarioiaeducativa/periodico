@@ -1,0 +1,108 @@
+{
+  "fecha": "2026-11-16",
+  "hay_edicion": true,
+  "motivo": "Día flojo. La conversación del día giró en torno a lo ya publicado el 16 de noviembre (declarar el uso de IA, Modern Web Guidance, Antigravity, Seedream, Spotify, Relleu Obert, Enfonsar la flota). Queda una pieza de VCE nueva y un breve de EduMedia-IAG; ChatGPT-IA-edu y EduMedia-IAG no tienen otra cosa publicable verificable (ver descartado). · 2 pieza(s) de reserva (2099-01-01, 2099-01-04; para completar)",
+  "piezas": [
+    {
+      "id": "celda-paletizado-3d",
+      "seccion": "vibecoding",
+      "importancia": 1,
+      "grupo": "vce",
+      "antetitulo": "Simulació industrial en 3D",
+      "titular": "Una cel·la robotitzada de paletització se simula al navegador i exporta l'escena en .glb",
+      "entradilla": "Segons el missatge de la persona que la comparteix, l'aplicació es va fer amb models d'IA; permet aturar, reprendre i vigilar una cel·la industrial virtual i exportar l'escena per a Blender.",
+      "cuerpo": [
+        "Magda Diaz-G ha compartit a Vibe Coding Educativo una simulació en 3D d'una cel·la robotitzada de paletització, és a dir, d'una màquina que col·loca caixes o pots sobre un palet. La pàgina, [«Celda Robotizada de Paletizado Industrial»](https://celda-robotizada-paletizado-blender.netlify.app/), és en castellà i s'obre al navegador. El seu títol porta el nom «PINTURAS CROMO-MAX®» i els seus crèdits l'atribueixen a «Ing. Magda Diaz».",
+        "Segons la pàgina, permet posar en marxa, pausar i aturar la cel·la, amb parada d'emergència i reinici, i canviar entre un mode automàtic i un altre de manual. També es pot simular que algú interromp la cortina òptica de seguretat, veure els indicadors de producció (temps de cicle, cadència, disponibilitat), el registre de successos, els sensors i els angles de les articulacions del robot, i canviar entre quatre vistes de càmera.",
+        "Segons el seu missatge, el model es va fer amb Gemini 4 Hydrogen, el model de Google que el diari [va recollir](pieza:2026-11-15/gemini4-hydrogen-orchestrator) en parlar d'Antigravity, i després hi va afegir detalls tècnics amb un agent de Claude, entre els quals la descàrrega de l'arxiu per a Blender. La pàgina ofereix exportar l'escena en format .glb, que Blender pot obrir. Per veure-la sense instal·lar Blender, el missatge recomana el [visor en línia d'InnerScene](https://innerscene.com/tools/blend-viewer), que segons la seva pròpia pàgina obre arxius de Blender al navegador, és gratuït i no demana registre.",
+        "Una simulació així podria servir a classe d'automatització i robòtica per observar com es coordinen sensors, seguretat i moviments sense accedir a una màquina real, tot i que el missatge no parla del seu ús a l'aula. És un altre cas de [models 3D fets amb IA](pieza:2026-11-14/revolucion-industrial-blender-codex), aquesta vegada amb una finalitat tècnica. La pàgina no diu com tracta les dades de la persona que l'usa."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Celda Robotizada de Paletizado Industrial (aplicació d'Ing. Magda Diaz) (en castellà)",
+          "url": "https://celda-robotizada-paletizado-blender.netlify.app/"
+        },
+        {
+          "titulo": "InnerScene: visor d'arxius .blend en línia (en anglès)",
+          "url": "https://innerscene.com/tools/blend-viewer"
+        }
+      ],
+      "mensaje": {
+        "grupo": "vce",
+        "id": 15067
+      },
+      "comprobado": "Abierta la web de la celda: funciones, modos, vistas, exportación .glb, título con PINTURAS CROMO-MAX® y créditos «Ing. Magda Diaz» (@eaciweb); coincide con el nombre de quien la publica (Magda Diaz-G). Abierta la página de InnerScene: gratuito, sin registro, abre .blend en el navegador. Que se hizo con Gemini 4 Hydrogen y un agente de Claude es lo que dice el mensaje #15069, no comprobable. Mensaje #15067 comprobado en Telegram. Gemini 4 Hydrogen y la pieza de Blender enlazadas: están en publicado.txt. Quitada la afirmación de que sea docente o de que sirva en FP: el mensaje no lo dice.",
+      "ilustracion_alt": "Esquema d'esquerra a dreta: una finestra de navegador amb una cel·la robotitzada (cinta amb caixes, braç robòtic i palet) i una línia vermella vertical que marca la cortina de seguretat; una fletxa blava cap a un cub en 3D. Rètols: «Cel·la al navegador», «Cortina òptica», «.glb» i «Blender».",
+      "ilustracion": "Esquema en tres pasos: una celda industrial con robot, cinta y palé (simulación en el navegador), una flecha etiquetada «.glb» y un cubo de Blender; con un candado de seguridad y una cortina óptica señalada en la celda."
+    },
+    {
+      "id": "eyejack-creator-realidad-aumentada",
+      "seccion": "multimedia",
+      "importancia": 3,
+      "grupo": "edumedia",
+      "antetitulo": "Del fons d'EduMedia",
+      "titular": "EyeJack Creator: donar moviment a una imatge al mòbil amb realitat augmentada",
+      "entradilla": "Una web permet associar un vídeo o una animació a una imatge i veure'ls amb el mòbil en apuntar-hi. La versió gratuïta limita les visualitzacions, la durada i la mida.",
+      "cuerpo": [
+        "[EyeJack Creator](https://creator.eyejack.io/) és una plataforma en línia de realitat augmentada. Es puja una imatge que fa de disparador (JPG o PNG) i se li associa un vídeo, un GIF o una seqüència d'imatges PNG, que es reprodueix sobre ella en apuntar-hi amb el mòbil. També permet col·locar panells, fixos o animats, en un espai per fer recorreguts. Es va compartir al grup EduMedia-IAG com a recurs per crear aquest tipus de contingut.",
+        "A classe serveix per unir amb un suport físic allò que l'alumnat produeix amb IA d'imatge, àudio o vídeo. Per exemple, un cartell del centre o un mural el dibuix del qual, en escanejar-lo, mostri un breu vídeo explicatiu fet pels mateixos estudiants.",
+        "Per començar, es puja la imatge disparadora, es tria el vídeo o l'animació que es reproduirà a sobre i es prova al mòbil amb el codi QR de la vista prèvia.",
+        "**Condicions.** Segons la seva pàgina, a novembre de 2026, el pla gratuït inclou 100 visualitzacions al mes, fins a 30 segons per obra i 3 MB per projecte de panells; quan s'esgoten les visualitzacions, les obres es desactiven fins al mes següent. Els plans de pagament comencen en 10 dòlars al mes. L'accés passa per un inici de sessió, i la web no indica l'edat mínima ni quines dades recull, de manera que convé que el professorat creï les obres i que l'alumnat només les vegi."
+      ],
+      "fuentes": [
+        {
+          "titulo": "EyeJack Creator (en anglès)",
+          "url": "https://creator.eyejack.io/"
+        }
+      ],
+      "herramienta": {
+        "nombre": "EyeJack Creator",
+        "url": "https://creator.eyejack.io/"
+      },
+      "mensaje": {
+        "grupo": "edumedia",
+        "id": 5113
+      },
+      "comprobado": "Revisado el 16-11-2026: abierta la web oficial https://creator.eyejack.io/ (descripción, formatos JPG/PNG, vídeo, GIF y PNG secuenciales, paneles, vista previa por QR; planes Free, Artist 10 dólares al mes y Virtuoso 100 dólares al mes; plan gratuito con 100 visualizaciones al mes, 30 s por obra y 3 MB por proyecto de paneles, y obras desactivadas al agotarse las visualizaciones). La página no indica edad mínima, idiomas ni datos recogidos; el acceso es por inicio de sesión. Quitado «obras ilimitadas», que no consta en la página. Mensaje 5113 comprobado en t.me (enlace al recurso, compartido en EduMedia-IAG). Búsquedas «eyejack» y por titular en el diario y en los grupos: nada publicado.",
+      "ilustracion": "Antes y después: a la izquierda, un cartel de papel con un dibujo sencillo y un móvil que lo apunta con un código QR al lado; a la derecha, el mismo cartel con el móvil mostrando el dibujo cobrando movimiento sobre la pantalla.",
+      "ilustracion_alt": "Esquema en dues meitats. A l'esquerra, «Abans»: un cartell amb un sol i una muntanya dibuixats, un codi QR i un mòbil que l'apunta, amb el rètol «Cartell». A la dreta, «Després»: el mateix cartell amb línies de moviment i un mòbil que mostra el dibuix animat, amb el rètol «En moviment»."
+    }
+  ],
+  "breves": [
+    {
+      "texto": "La pàgina del traductor de vídeo d'ElevenLabs anuncia més de 90 idiomes, tot i que la secció de preguntes en esmenta més de 29 i no hi menciona el català. Indica un límit d'un minut o 50 MB per arxiu.",
+      "url": "https://elevenlabs.io/es/translate-video",
+      "grupo": "edumedia",
+      "mensaje": {
+        "grupo": "edumedia",
+        "id": 12277
+      }
+    }
+  ],
+  "descartado": [
+    "Informe de Envato sobre IA en el trabajo creativo (53 % sin decírselo al cliente): no se encontró la nota de prensa ni la cifra en otra fuente (la página devolvió 403 y la búsqueda solo mostró el informe anterior); sin comprobar, se descarta.",
+    "Lienzos de Google Sheets que se publican sin compartir las hojas (tuit de un usuario): no se encontró documentación oficial de Google que describa la opción de publicar; solo la captura del grupo.",
+    "Gemini Notebook «make me a site»: solo un tuit (X devolvió error) y no se encontró anuncio oficial.",
+    "Skill «Versiona tu canción» de jc para Gemini: sin enlace al recurso ni nada que comprobar, solo mensajes del 15 de noviembre.",
+    "FigureLabs (generador de figuras científicas): solo opiniones de miembros, sin comprobar y con errores señalados en un dibujo.",
+    "Comentarios sobre realidad aumentada, el vídeo de Mollick y el de Ryan Sael en EduMedia-IAG: opinión y enlaces a X sin fuente original comprobable.",
+    "App de Android del diario y botón «Escuchar»: tema del propio diario, sin interés para quien lee fuera.",
+    "Nuevo debate sobre declarar el uso de IA y entrada «Familias con inteligencia»: ya publicado el 16 de noviembre (declarar-uso-ia-transparencia).",
+    "Modern Web Guidance, Gemini 4 Hydrogen/Orchestrator, Seedream 5.5, Spotify, Relleu Obert, Eduvers, Buzz y Enfonsar la flota: ya publicados."
+  ],
+  "repaso": [
+    "Titular acortado y corregido: la página exporta en .glb, no a Blender directamente; entradilla rebajada (se quita «sirve para enseñar automatización en FP» y «docente», que el mensaje no dice).",
+    "Nombrada a Magda Diaz-G, que publica el recurso y cuyo nombre coincide con el crédito de la página; mencionado el título «PINTURAS CROMO-MAX®».",
+    "Párrafo final: el uso en el aula pasa a ser hipótesis expresa; se quita «no consta que recoja datos del alumnado».",
+    "Recomendación del visor atribuida al mensaje y no a «la autora».",
+    "Breve de ElevenLabs comprobado (90 idiomas, FAQ con 29, sin catalán, 1 minuto o 50 MB): sin cambios."
+  ],
+  "piezas_reserva": [
+    "2099-01-01",
+    "2099-01-04"
+  ],
+  "titulares_reserva": [
+    "EyeJack Creator: dar movimiento a una imagen en el móvil con realidad aumentada",
+    "El INTEF actualiza su guía de IA en educación con diez principios éticos y un plan por fases para que los centros la incorporen"
+  ]
+}

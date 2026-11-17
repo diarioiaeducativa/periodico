@@ -1,0 +1,116 @@
+{
+  "fecha": "2026-11-17",
+  "avisos": {
+    "chatgpt": {
+      "saludo": "Buenos días. Una guía oficial de IA para los centros y una idea para llevar al aula.",
+      "puntos": [
+        "El INTEF actualiza su guía de IA en educación: diez principios éticos y un plan de siete fases para que los centros la incorporen, con anexos para el aula",
+        "En la viñeta de Tiza y Algoritmo, la IA presume de haberse leído 206 lecturas en un segundo, hasta que le preguntan de qué trataba la primera",
+        "EyeJack Creator asocia un vídeo a una imagen y lo muestra en el móvil al apuntar a ella; el plan gratuito limita a 100 visualizaciones al mes"
+      ]
+    },
+    "vce": {
+      "saludo": "Buenos días. Fichas de lectura para primaria y una fábrica robotizada que se simula en el navegador.",
+      "puntos": [
+        "Trama, de Aarón Fortuño, reúne 206 lecturas en catalán y castellano con preguntas para preparar fichas de comprensión lectora e imprimirlas o bajarlas en PDF",
+        "Una celda robotizada de paletizado se simula en el navegador, con parada de emergencia y cortina de seguridad, y exporta la escena en .glb para Blender"
+      ]
+    },
+    "edumedia": {
+      "saludo": "Buenos días. Realidad aumentada con el móvil y una duda sobre el traductor de vídeo de ElevenLabs.",
+      "puntos": [
+        "Con EyeJack Creator, un cartel o un mural pueden mostrar un vídeo hecho por el alumnado al apuntarles con el móvil; el plan gratuito tiene límites",
+        "La página del traductor de vídeo de ElevenLabs anuncia más de 90 idiomas, pero su sección de preguntas habla de más de 29 y no cita el catalán"
+      ],
+      "url": "https://diarioiaeducativa.github.io/n/16-edumedia.html"
+    }
+  },
+  "instagram": "Un recorrido por recursos que el profesorado puede probar en el aula. El número recoge la versión 2.0 de la guía del INTEF sobre inteligencia artificial en educación, con diez principios éticos y un plan por fases para los centros, un catálogo de 206 lecturas para fichas de comprensión lectora en catalán y castellano y una herramienta de realidad aumentada que añade vídeo a una imagen al apuntar con el móvil. Incluye también una simulación en 3D de una celda industrial robotizada que se abre en el navegador.",
+  "titulo": "Diario de IA Educativa · Núm. 16",
+  "fecha_texto": "Martes, 17 de noviembre de 2026",
+  "url": "https://diarioiaeducativa.github.io/?n=16",
+  "imagen": "https://diarioiaeducativa.github.io/portadas/2026-11-16-es.jpg",
+  "personas": [
+    {
+      "id": 755846810,
+      "piezas": [
+        {
+          "es": {
+            "titular": "Una celda robotizada de paletizado se simula en el navegador y exporta la escena en .glb",
+            "url": "https://diarioiaeducativa.github.io/2026-11-16/celda-paletizado-3d.html"
+          },
+          "ca": {
+            "titular": "Una cel·la robotitzada de paletització se simula al navegador i exporta l'escena en .glb",
+            "url": "https://diarioiaeducativa.github.io/ca/2026-11-16/celda-paletizado-3d.html"
+          },
+          "gl": {
+            "titular": "Unha cela robotizada de paletizado simúlase no navegador e exporta a escena en .glb",
+            "url": "https://diarioiaeducativa.github.io/gl/2026-11-16/celda-paletizado-3d.html"
+          },
+          "eu": {
+            "titular": "Paletizatze-gelaxka robotizatu bat nabigatzailean simulatzen da, eta eszena .glb formatuan esportatzen du",
+            "url": "https://diarioiaeducativa.github.io/eu/2026-11-16/celda-paletizado-3d.html"
+          },
+          "en": {
+            "titular": "A robotic palletising cell is simulated in the browser and exports the scene as .glb",
+            "url": "https://diarioiaeducativa.github.io/en/2026-11-16/celda-paletizado-3d.html"
+          }
+        }
+      ]
+    },
+    {
+      "id": 218499880,
+      "piezas": [
+        {
+          "es": {
+            "titular": "El INTEF actualiza su guía de IA en educación con diez principios éticos y un plan por fases para que los centros la incorporen",
+            "url": "https://diarioiaeducativa.github.io/2026-11-16/intef-guia-ia-v2.html"
+          },
+          "ca": {
+            "titular": "L'INTEF actualitza la seva guia d'IA en educació amb deu principis ètics i un pla per fases perquè els centres la incorporin",
+            "url": "https://diarioiaeducativa.github.io/ca/2026-11-16/intef-guia-ia-v2.html"
+          },
+          "gl": {
+            "titular": "O INTEF actualiza a súa guía de IA na educación con dez principios éticos e un plan por fases para que os centros a incorporen",
+            "url": "https://diarioiaeducativa.github.io/gl/2026-11-16/intef-guia-ia-v2.html"
+          },
+          "eu": {
+            "titular": "INTEFek eguneratu du hezkuntzako AAri buruzko gida: hamar printzipio etiko eta ikastetxeek txertatzeko fasekako plan bat",
+            "url": "https://diarioiaeducativa.github.io/eu/2026-11-16/intef-guia-ia-v2.html"
+          },
+          "en": {
+            "titular": "INTEF updates its guide to AI in education with ten ethical principles and a phased plan for schools to adopt it",
+            "url": "https://diarioiaeducativa.github.io/en/2026-11-16/intef-guia-ia-v2.html"
+          }
+        }
+      ]
+    },
+    {
+      "id": 7198698,
+      "piezas": [
+        {
+          "es": {
+            "titular": "Trama ofrece 206 lecturas con preguntas para preparar fichas de comprensión lectora",
+            "url": "https://diarioiaeducativa.github.io/2026-11-16/trama-comprensio-lectora.html"
+          },
+          "ca": {
+            "titular": "Trama ofereix 206 lectures amb preguntes per preparar fitxes de comprensió lectora",
+            "url": "https://diarioiaeducativa.github.io/ca/2026-11-16/trama-comprensio-lectora.html"
+          },
+          "gl": {
+            "titular": "Trama ofrece 206 lecturas con preguntas para preparar fichas de comprensión lectora",
+            "url": "https://diarioiaeducativa.github.io/gl/2026-11-16/trama-comprensio-lectora.html"
+          },
+          "eu": {
+            "titular": "Tramak 206 irakurgai eskaintzen ditu, irakurmen-ulermeneko fitxak prestatzeko galderekin",
+            "url": "https://diarioiaeducativa.github.io/eu/2026-11-16/trama-comprensio-lectora.html"
+          },
+          "en": {
+            "titular": "Trama offers 206 reading texts with questions for building reading comprehension worksheets",
+            "url": "https://diarioiaeducativa.github.io/en/2026-11-16/trama-comprensio-lectora.html"
+          }
+        }
+      ]
+    }
+  ]
+}

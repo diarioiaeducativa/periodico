@@ -156,3 +156,7 @@
 - breve: Según el Financial Times, recogido por Deseret News, Spotify prepara para principios de 20
 - breve: Intelética, revista de acceso abierto de IBERAMIA sobre inteligencia artificial, ética y s
 - pieza:2026-11-15/enfonsar-la-flota (repositorio) Hundir la flota en catalán, contra la máquina o en línea con un código de sala — recursos con artículo: Enfonsar la flota (https://ja.cat/flota)
+
+## 2026-11-16 (publicado el martes 17 de noviembre de 2026)
+- pieza:2026-11-16/celda-paletizado-3d (vibecoding) Una celda robotizada de paletizado se simula en el navegador y exporta la escena en .glb
+- breve: La página del traductor de vídeo de ElevenLabs anuncia más de 90 idiomas, aunque su secció

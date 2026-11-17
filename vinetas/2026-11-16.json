@@ -1,0 +1,130 @@
+{
+ "fecha": "2026-11-16",
+ "elegida": {
+  "n": 6,
+  "pieza": "trama-comprensio-lectora",
+  "idea": "Algoritmo presume de haberse leído en un segundo las 206 lecturas del catálogo y, cuando Tiza le pregunta de qué trataba la primera, responde como quien no ha estudiado.",
+  "guion": {
+   "vinetas": [
+    {
+     "cartela": "En la biblioteca, preparando fichas de lectura.",
+     "escenario": "biblioteca",
+     "tiza": {
+      "expresion": "neutral",
+      "postura": "sostener",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "contento",
+      "postura": "arriba",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "objeto": "libro",
+     "lleva": "tiza",
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Doscientas seis lecturas, cada una con sus preguntas de comprensión.",
+       "tipo": "habla"
+      },
+      {
+       "quien": "algoritmo",
+       "texto": "Ya me las he leído todas. En un segundo.",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "biblioteca",
+     "tiza": {
+      "expresion": "pensativo",
+      "postura": "jarras",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "cargando",
+      "postura": "abajo",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "A ver: ¿de qué trataba la primera?",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "biblioteca",
+     "tiza": {
+      "expresion": "orgulloso",
+      "postura": "cruzar",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "avergonzado",
+      "postura": "encoger",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "algoritmo",
+       "texto": "¿Eso entraba en el examen?",
+       "tipo": "habla"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "motivo": "Viñeta rehecha en la revisión antes de publicar (17-11-2026): la que eligió el juez, la 5 de las candidatas, sobre la parada de emergencia de la celda robotizada, no se entendía. La anterior, en vinetas/sustituidas/. La 5 es la única con un remate que sorprende de verdad: la IA que se jacta de obedecer el «para» y lo hace con cuatro páginas; todo docente lo reconoce y la parada de emergencia de la celda (dato real de la pieza) lo engancha a la noticia. Remata Algoritmo, como pide la variedad tras dos remates de Tiza. No cabe, pero su gracia (7) supera a las que caben (3 y 4, con 6): manda la gracia. La 1 tiene buena idea pero el chiste ya está dicho en la segunda viñeta («Paradas: ninguna») y el remate lo repite. La 2 es confusa (¿quién cruza qué en la tercera?) y apunta a quien da la formación. La 3 es correcta con los datos del breve pero la segunda viñeta es un listado de cifras y el remate se reparte en dos golpes. La 4 tiene un remate mudo que no se entiende sin adivinar qué es el «modo automático» de Tiza. Ninguna incumple las prohibiciones ni se inventa datos.",
+ "retoques": "Guion nuevo, sobre el catálogo de lecturas del Repositorio: escenario biblioteca, libre en los tres números anteriores; remata Algoritmo, tras dos remates de Tiza, y el chasco es suyo. Rótulo de 47 caracteres; ningún bocadillo pasa de 90.",
+ "puntuaciones": [
+  {
+   "n": 1,
+   "gracia": 6,
+   "claridad": 7,
+   "remate": 5,
+   "prohibiciones": "respeta",
+   "cabe": false
+  },
+  {
+   "n": 2,
+   "gracia": 5,
+   "claridad": 4,
+   "remate": 4,
+   "prohibiciones": "respeta (roza reírse de quien imparte la formación)",
+   "cabe": false
+  },
+  {
+   "n": 3,
+   "gracia": 6,
+   "claridad": 6,
+   "remate": 6,
+   "prohibiciones": "respeta",
+   "cabe": true
+  },
+  {
+   "n": 4,
+   "gracia": 6,
+   "claridad": 5,
+   "remate": 5,
+   "prohibiciones": "respeta",
+   "cabe": true
+  },
+  {
+   "n": 5,
+   "gracia": 7,
+   "claridad": 8,
+   "remate": 8,
+   "prohibiciones": "respeta",
+   "cabe": false
+  }
+ ]
+}

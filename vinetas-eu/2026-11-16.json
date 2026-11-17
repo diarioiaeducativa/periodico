@@ -1,0 +1,131 @@
+{
+ "fecha": "2026-11-16",
+ "elegida": {
+  "n": 6,
+  "pieza": "trama-comprensio-lectora",
+  "idea": "Algoritmok harro dio katalogoko 206 irakurgaiak segundo batean irakurri dituela eta, Klarionek lehenengoa zeri buruzkoa zen galdetzean, ikasi ez duenak bezala erantzuten du.",
+  "guion": {
+   "vinetas": [
+    {
+     "cartela": "Liburutegian, irakurketa-fitxak prestatzen.",
+     "escenario": "biblioteca",
+     "tiza": {
+      "expresion": "neutral",
+      "postura": "sostener",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "contento",
+      "postura": "arriba",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "objeto": "libro",
+     "lleva": "tiza",
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Berrehun eta sei irakurgai, bakoitza bere ulermen-galderekin.",
+       "tipo": "habla"
+      },
+      {
+       "quien": "algoritmo",
+       "texto": "Denak irakurri ditut dagoeneko. Segundo batean.",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "biblioteca",
+     "tiza": {
+      "expresion": "pensativo",
+      "postura": "jarras",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "cargando",
+      "postura": "abajo",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Ea, ba: zeri buruzkoa zen lehenengoa?",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "biblioteca",
+     "tiza": {
+      "expresion": "orgulloso",
+      "postura": "cruzar",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "avergonzado",
+      "postura": "encoger",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "algoritmo",
+       "texto": "Hori azterketan sartzen zen?",
+       "tipo": "habla"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "motivo": "La 5 es la única con un remate que sorprende de verdad: la IA que se jacta de obedecer el «para» y lo hace con cuatro páginas; todo docente lo reconoce y la parada de emergencia de la celda (dato real de la pieza) lo engancha a la noticia. Remata Algoritmo, como pide la variedad tras dos remates de Tiza. No cabe, pero su gracia (7) supera a las que caben (3 y 4, con 6): manda la gracia. La 1 tiene buena idea pero el chiste ya está dicho en la segunda viñeta («Paradas: ninguna») y el remate lo repite. La 2 es confusa (¿quién cruza qué en la tercera?) y apunta a quien da la formación. La 3 es correcta con los datos del breve pero la segunda viñeta es un listado de cifras y el remate se reparte en dos golpes. La 4 tiene un remate mudo que no se entiende sin adivinar qué es el «modo automático» de Tiza. Ninguna incumple las prohibiciones ni se inventa datos.",
+ "retoques": "Texto: primer bocadillo acortado («Pulsas la parada de emergencia y se para en el acto.») y «Qué envidia. ¿Tú tienes una?», sin alargar nada; «Claro: si me pides que pare, paro.». Rótulo reescrito para que diga de qué va sin adelantar el chiste: «En el despacho, probando una celda robotizada virtual.» (54 caracteres). Escenario: despacho, libre en los tres números anteriores, se mantiene; el montón de papeles en el despacho ayuda al remate. Caras y posturas: en la viñeta 1, Algoritmo pasa de sorprendido con las manos a la cabeza (no casaba con presumir) a contento en jarras, y Tiza de contento a agotado con la taza (la envidia de quien no puede parar; agotado no ha salido en los números anteriores); en la 2, Tiza cruza los brazos en vez de ponerlos en jarras; en la 3, Algoritmo acaba contento señalando los papeles en lugar de avergonzado (la IA segura de sí misma también cuando se equivoca: el chasco es de Tiza) y Tiza sorprendida con las manos a la cabeza en vez de riendo, que fue como acabó en el número anterior. Sin orgulloso para Algoritmo, la cara que más se ha repetido. Ningún bocadillo pasa de 90 caracteres.",
+ "puntuaciones": [
+  {
+   "n": 1,
+   "gracia": 6,
+   "claridad": 7,
+   "remate": 5,
+   "prohibiciones": "respeta",
+   "cabe": false
+  },
+  {
+   "n": 2,
+   "gracia": 5,
+   "claridad": 4,
+   "remate": 4,
+   "prohibiciones": "respeta (roza reírse de quien imparte la formación)",
+   "cabe": false
+  },
+  {
+   "n": 3,
+   "gracia": 6,
+   "claridad": 6,
+   "remate": 6,
+   "prohibiciones": "respeta",
+   "cabe": true
+  },
+  {
+   "n": 4,
+   "gracia": 6,
+   "claridad": 5,
+   "remate": 5,
+   "prohibiciones": "respeta",
+   "cabe": true
+  },
+  {
+   "n": 5,
+   "gracia": 7,
+   "claridad": 8,
+   "remate": 8,
+   "prohibiciones": "respeta",
+   "cabe": false
+  }
+ ],
+ "traduccion": "itzulpen automatikoa AArekin"
+}
