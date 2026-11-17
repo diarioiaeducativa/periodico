@@ -112,7 +112,9 @@ def comprobar(fecha):
     faltan, errores = {}, {}
     for x in prog:
         lista = rotulos(RAIZ / x["svg"])
-        if not lista:
+        # Sin respuesta del revisor (no ha llegado a ejecutarse: límite de uso, fallo), como antes del ADR 0089:
+        # el dibujo no se retira por eso
+        if not lista or x["id"] not in vis:
             continue
         dichos = {normal(r.get("rotulo")): r for r in (vis.get(x["id"], {}).get("recuentos") or []) if isinstance(r, dict)}
         t = textos.get(x["id"], "")

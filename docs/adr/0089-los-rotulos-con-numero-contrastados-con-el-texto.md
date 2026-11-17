@@ -46,6 +46,8 @@ cuerpo de la pieza: solo leí el titular y la entradilla». Corrección del dibu
 
 ## Riesgos y limitaciones
 
+- Si el revisor no llega a responder (límite de uso de la suscripción, fallo), el dibujo no se retira por eso: pasa
+  con la comprobación del programa, como antes. Así se vio en el repaso del 17-11, cortado por el límite de uso.
 - Un rótulo con un número escrito de una forma que el programa no reconoce no se contrasta (solo castellano).
 - La cita se compara sin enlaces, comillas, negritas ni mayúsculas; una cita que cambie una palabra no vale.
 
