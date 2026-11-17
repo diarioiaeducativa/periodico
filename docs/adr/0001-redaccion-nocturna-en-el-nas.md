@@ -26,9 +26,9 @@ avisos que encuentra en `datos/diario/<fecha>.json` (ADR 0025 del bot).
   restaurar en otra máquina), un número cuya edición ya está en GitHub no se rehace.
 - Los siete agentes de la redacción, con los encargos de `encargos/` y el modelo fijado por
   su nombre exacto: redactor, revisor, ilustrador, traductor y autor de los avisos con
-  Sonnet 5.5 (`claude-sonnet-5-5`); guionista y juez de humor con Opus 5.5
-  (`claude-opus-5-5`), que ganó la prueba a ciegas del 01-11-2026. Los que no dependen
-  entre sí trabajan a la vez.
+  Sonnet 5.5 (`claude-sonnet-5-5`); guionista y juez de humor con Fable 5.2
+  (`claude-fable-5-2`) desde el 17-11-2026 (ADR 0086; antes, con Opus 5.5, que ganó la
+  prueba a ciegas del 01-11-2026 frente a Sonnet). Los que no dependen entre sí trabajan a la vez.
 - **Redactor y revisor son dos agentes distintos** (`encargos/pasos/1-redaccion.md` y
   `1-repaso.md`): el redactor deja su borrador en `ediciones-borrador/` y el revisor, en una
   sesión aparte que no ha escrito nada, abre cada fuente y deja la versión final en

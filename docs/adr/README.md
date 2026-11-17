@@ -87,5 +87,6 @@
 | [0083](0083-revision-de-estilo-cada-noche-con-programa-y-con-corrector.md) | Revisión de estilo cada noche, con programa y con corrector |
 | [0084](0084-graficos-con-datos-dibujados-por-el-programa.md) | Gráficos con datos, dibujados por el programa |
 | [0085](0085-las-normas-traducidas-a-las-otras-lenguas.md) | Las normas, traducidas a las otras lenguas |
+| [0086](0086-la-vineta-la-escribe-y-la-elige-fable.md) | La viñeta la escribe y la elige Fable |
 
 Plantilla: [0000-plantilla.md](0000-plantilla.md). Para crear uno: `nuevo-adr "Título"`.

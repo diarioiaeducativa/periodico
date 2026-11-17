@@ -15,7 +15,7 @@ PUBLICA=$(date -d "$FECHA + 1 day" +%F)
 SITIO="${SITIO_REPO:-/sitio}"
 AVISOS_BOT="${AVISOS_BOT:-/avisos-bot}"
 REG="registro/$FECHA.log"
-NOTA="Modelo: Claude Sonnet 5.5 (claude-sonnet-5-5) y Claude Opus 5.5 (claude-opus-5-5) · Claude Code, redacción nocturna en el NAS"
+NOTA="Modelo: Claude Sonnet 5.5 (claude-sonnet-5-5), Claude Opus 5.5 (claude-opus-5-5) y, en la viñeta, Claude Fable 5.2 (claude-fable-5-2) · Claude Code, redacción nocturna en el NAS"
 
 log() { printf '%s  %s\n' "$(date '+%F %T')" "$*" | tee -a "$REG"; }
 

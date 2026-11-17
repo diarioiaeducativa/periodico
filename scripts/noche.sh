@@ -37,6 +37,7 @@ PUBLICA=$(date -d "$FECHA + 1 day" +%F)
 DATOS="${DATOS_BOT:-/bot-datos}"
 SONNET="${MODELO_SONNET:-claude-sonnet-5-5}"
 OPUS="${MODELO_OPUS:-claude-opus-5-5}"
+FABLE="${MODELO_FABLE:-claude-fable-5-2}"   # la viñeta: guionista y juez (ADR 0086)
 mkdir -p registro estado ediciones-borrador vinetas/candidatas avisos
 REG="registro/$FECHA.log"
 
@@ -192,7 +193,7 @@ python3 scripts/publicado.py >> "$REG" 2>&1
 mkdir -p vinetas/recientes
 python3 vineta.py --recientes "$FECHA" > "vinetas/recientes/$FECHA.md" 2>>"$REG"
 agente "$SONNET" 2-ilustraciones 40 & p1=$!
-agente "$OPUS" 3-guiones 40 & p2=$!
+agente "$FABLE" 3-guiones 40 & p2=$!
 wait $p1 $p2
 # 2 bis. Los dibujos, vistos en la página en claro y oscuro: programa, revisor y una vuelta más.
 revisar_dibujos
@@ -201,7 +202,7 @@ revisar_dibujos
 # programa marca qué candidatas caben con los globos en el orden en que se leen (ADR 0022): el juez no ejecuta nada.
 if json_ok "vinetas/candidatas/$FECHA.json"; then
   python3 vineta.py --marcar-cabe "vinetas/candidatas/$FECHA.json" >> "$REG" 2>&1 || true
-  agente "$OPUS" 4-juez 30
+  agente "$FABLE" 4-juez 30
   json_ok "vinetas/$FECHA.json" || { log "el juez no dejó una viñeta válida: sale sin ella"; rm -f "vinetas/$FECHA.json"; }
   comprobar_vineta "vinetas/$FECHA.json"
   [ -e "vinetas/$FECHA.json" ] && { m=$(python3 vineta.py --repite "$FECHA" "vinetas/$FECHA.json") || log "variedad de la viñeta: $m"; }

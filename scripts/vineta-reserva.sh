@@ -13,7 +13,7 @@ cd "$RAIZ"
 FECHA=$(python3 scripts/reserva_vineta.py clave) || exit 1
 PUBLICA="$FECHA"
 SONNET="${MODELO_SONNET:-claude-sonnet-5-5}"
-OPUS="${MODELO_OPUS:-claude-opus-5-5}"
+FABLE="${MODELO_FABLE:-claude-fable-5-2}"   # la viñeta (ADR 0086)
 mkdir -p registro vinetas
 REG="registro/$FECHA.log"
 
@@ -36,7 +36,7 @@ agente() {   # el mismo de noche.sh: sin terminal y sin leer fuera de la redacci
 
 log "=== viñeta de reserva, con la clave $FECHA"
 rm -f vinetas/"$FECHA".json $(traducidos vinetas)
-agente "$OPUS" 30-vineta-reserva 20
+agente "$FABLE" 30-vineta-reserva 20
 if ! python3 -c 'import json,sys; sys.exit(0 if json.load(open(sys.argv[1])).get("elegida") else 1)' "vinetas/$FECHA.json" 2>/dev/null; then
   log "sin viñeta de reserva: el humorista no dejó una válida"
   rm -f vinetas/"$FECHA".json

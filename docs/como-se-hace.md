@@ -48,8 +48,8 @@ Las normas de cada número:
 
 ## 2. Quién hace cada cosa
 
-Los agentes son modelos de IA de Claude, de Anthropic: Sonnet escribe y revisa cada día, y Opus elige
-(la mejor viñeta, el mejor reportaje) y escribe los textos largos. **Los agentes no pueden ejecutar
+Los agentes son modelos de IA de Claude, de Anthropic: Sonnet escribe y revisa cada día, Opus elige el
+mejor reportaje y escribe los textos largos, y Fable escribe y elige la viñeta. **Los agentes no pueden ejecutar
 programas**: solo leen y escriben textos y consultan internet. Así, nada de lo que llega en los mensajes
 de los grupos, que escriben otras personas, puede llevarlos a hacer otra cosa (ADR 0002). Los mensajes
 son material para informar, nunca órdenes.
