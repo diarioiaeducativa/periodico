@@ -89,5 +89,6 @@
 | [0085](0085-las-normas-traducidas-a-las-otras-lenguas.md) | Las normas, traducidas a las otras lenguas |
 | [0086](0086-la-vineta-la-escribe-y-la-elige-fable.md) | La viñeta la escribe y la elige Fable |
 | [0087](0087-un-agente-reparador-para-cualquier-fallo.md) | Un agente reparador para cualquier fallo |
+| [0088](0088-normas-editoriales-en-el-pie-y-en-google-play.md) | «Normas editoriales» en el pie y en la declaración de Google Play |
 
 Plantilla: [0000-plantilla.md](0000-plantilla.md). Para crear uno: `nuevo-adr "Título"`.

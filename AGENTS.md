@@ -224,6 +224,8 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
   tabla de un reportaje corta las columnas al imprimir: no volver atrás sin probar Firefox, Safari y el papel.
 - **Contacto** (ADR 0051 y 0064): `contacto.html`, con el correo (`CORREO_CONTACTO`, un reenvío de IONOS) y enlace en el pie de todas las
   páginas; es la dirección de la declaración de noticias de Google Play: no se renombra ni se quita del pie.
+- **Normas editoriales** (ADR 0088): `normas.html`, enlazada en el pie de todas las páginas como «Normas editoriales»;
+  es la dirección de las directrices editoriales de la declaración de Google Play: no se renombra ni se quita del pie.
 - **Privacidad** (ADR 0070): `privacidad.html`, con enlace en el pie; en «La redacción», el apartado de las visitas solo
   lleva a ella (conserva el ancla `#privacidad`). Si cambia el contador, el alojamiento, lo que guarda el dispositivo o un
   servicio de terceros, se cambia en los cinco idiomas.
