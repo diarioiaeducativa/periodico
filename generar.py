@@ -544,6 +544,8 @@ def cargar():
             d["piezas"].sort(key=lambda p: p.get("importancia", 3))
             for p in d["piezas"]:
                 p["fecha"] = d["fecha"]
+                if isinstance(p.get("cuerpo"), str):   # un texto seguido, no una lista: sin esto, una letra por párrafo
+                    p["cuerpo"] = [x.strip() for x in re.split(r"\n\s*\n", p["cuerpo"]) if x.strip()]
             for i, b in enumerate(d.get("breves", []), 1):
                 b["fecha"], b["n"] = d["fecha"], i   # cada breve tiene su página: AAAA-MM-DD/breve-N.html
             r = RAIZ / "reportajes" / f.name   # el reportaje del domingo, con el número que sale ese día (ADR 0004)

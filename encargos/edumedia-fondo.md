@@ -62,7 +62,7 @@ pieza y sin breves:
   "motivo": "por qué se ha elegido este",
   "piezas": [{
     "id": "…", "seccion": "multimedia", "importancia": 3, "grupo": "edumedia",
-    "antetitulo": "Del fondo de EduMedia", "titular": "…", "entradilla": "…", "cuerpo": "…",
+    "antetitulo": "Del fondo de EduMedia", "titular": "…", "entradilla": "…", "cuerpo": ["párrafo", "párrafo"],
     "fuentes": [{"titulo": "…", "url": "https://…"}],
     "herramienta": {"nombre": "…", "url": "la web oficial que se comprobará antes de publicarlo"},
     "mensaje": {"grupo": "edumedia", "id": 0},

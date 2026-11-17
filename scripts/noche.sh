@@ -333,6 +333,10 @@ revisar_estilo() {
 }
 revisar_estilo
 
+# 4 (antes). La forma de las piezas, sin IA: un cuerpo que llega como un texto seguido pasa a lista de párrafos
+# antes de traducir y de generar, venga de la redacción, de la reserva o de un corrector (ADR 0077).
+python3 scripts/forma.py "ediciones/$FECHA.json" >> "$REG" 2>&1 || true
+
 # 4. Traducción y avisos, a la vez.
 traducir 5-traduccion edicion 50 & p1=$!
 agente "$SONNET" 6-avisos 20 & p2=$!

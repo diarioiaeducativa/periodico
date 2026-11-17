@@ -243,6 +243,11 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
   las 7:00 y cada 15 minutos hasta las 9:30. Su código está en `android/avisos/` y lo engancha `aplicar.py`
   (lo lanza `construeix.sh`), porque `bubblewrap update` lo borra del manifiesto. Para probar, el emulador
   `prueba-twa` (`ANDROID_AVD_HOME=~/.config/.android/avd`), sin ventana; el registro, `adb logcat -s Avisos`.
+- **La forma de las piezas** (ADR 0077): el cuerpo es una lista de párrafos. `scripts/forma.py ARCHIVO`, sin IA,
+  parte el que llega como texto seguido (tras el revisor de `edumedia-fondo.sh` y antes de traducir en `noche.sh`),
+  y `cargar()` lo parte al leer. Un encargo nuevo con modelo de JSON lo pide como lista.
+- **Rehacer una traducción quitada antes de publicar**: arreglar el original y, en el contenedor,
+  `scripts/traducir-dia.sh FECHA` (traduce solo lo que falta), `generar.py` y `scripts/revisar-idiomas.py --dia FECHA`.
 - **Cinco idiomas** (ADR 0026): `/ca/`, `/gl/`, `/eu/` y `/en/`;
   traducción nocturna (`scripts/traducir.sh`) y de un día ya publicado
   (`scripts/traducir-dia.sh FECHA [idiomas]`, en una copia fuera de `/home`).
