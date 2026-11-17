@@ -5,7 +5,8 @@ traductor y la comprobación de lo traducido, sin IA.
 
     scripts/idiomas.py lista                          los idiomas a los que se traduce
     scripts/idiomas.py encargo PASO IDIOMA            el encargo encargos/pasos/PASO.md para ese idioma
-    scripts/idiomas.py comprobar TIPO FECHA IDIOMA [--conservar]   comprueba lo traducido; quita lo que no vale
+    scripts/idiomas.py comprobar TIPO FECHA IDIOMA [--conservar] [--mirar]   comprueba lo traducido; quita lo que no vale
+                                                      (con --mirar, solo lo dice)
     scripts/idiomas.py falta TIPO FECHA IDIOMA        dice lo que tenía que estar traducido y no está
 
 TIPO: edicion (edición, viñeta y dibujos), dibujos, vineta (la de reserva, sola), biblioteca, repositorio, reportaje, hace-un-ano, comentario-semana
@@ -63,6 +64,13 @@ def encargo(paso, c):
 
 
 ENLACE = re.compile(r"\]\((?:https?://|pieza:)")
+
+MIRAR = False   # con --mirar, comprobar dice lo que quitaría y no toca nada (lo usa el reparador para medir)
+
+
+def quitar(f):
+    if not MIRAR:
+        f.unlink()
 
 
 def textos(x):
@@ -133,25 +141,26 @@ def comprobar_json(carpeta, fecha, c, lista="piezas", conservar=False):
     o, trad = leer(orig) or {}, leer(f)
     if not isinstance(trad, dict) or not isinstance(trad.get(lista) or [], list) \
             or not all(isinstance(p, dict) for p in trad.get(lista) or []):
-        f.unlink()
+        quitar(f)
         return [f"{nombre} quitado: " + ("no es un JSON válido" if trad is None else "no tiene la forma del original")]
     por = problemas_por_pieza(o, trad, lista)
     if por is None:
-        f.unlink()
+        quitar(f)
         return [f"{nombre} quitado: no tiene las mismas piezas"]
     breves_mal = carpeta == "ediciones" and len(o.get("breves") or []) != len(trad.get("breves") or [])
     malos = [f"{i}: {x}" for i, m in por.items() for x in m] + (["no tiene los mismos breves"] if breves_mal else [])
     if not malos:
         return []
     if not conservar:
-        f.unlink()
+        quitar(f)
         return [f"{nombre} quitado: " + "; ".join(malos)]
     for i, p in enumerate(trad.get(lista) or []):
         if p.get("id") in por:
             trad[lista][i] = dict(copy.deepcopy(o[lista][i]), sin_traducir=True)
     if breves_mal:
         trad["breves"] = copy.deepcopy(o.get("breves") or [])
-    f.write_text(json.dumps(trad, ensure_ascii=False, indent=1) + "\n")
+    if not MIRAR:
+        f.write_text(json.dumps(trad, ensure_ascii=False, indent=1) + "\n")
     return [f"{nombre}: sale en castellano solo lo que no vale ({'; '.join(malos)}); lo demás, traducido"]
 
 
@@ -195,7 +204,7 @@ def comprobar_vineta(fecha, c):
                 if any(not (x.get("texto") or "").strip() for x in b.get("bocadillos") or []):
                     malos.append(f"viñeta {i}: un bocadillo vacío")
     if malos:
-        f.unlink()
+        quitar(f)
         return [f"vinetas-{c}/{fecha}.json quitado: " + "; ".join(malos)]
     return []
 
@@ -208,7 +217,7 @@ def comprobar_dibujos(fecha, c):
             if not raiz.tag.endswith("svg"):
                 raise ValueError("no es un SVG")
         except (ET.ParseError, ValueError) as ex:
-            f.unlink()
+            quitar(f)
             salida.append(f"ilustraciones-{c}/{f.name} quitado: {ex}")
     return salida
 
@@ -237,7 +246,7 @@ def comprobar(tipo, fecha, c, conservar=False):
                 if ta and not 0.5 <= len(tb) / len(ta) <= 2.0:
                     malos.append(f"el largo no cuadra ({len(tb)} frente a {len(ta)} caracteres)")
             if malos:
-                f.unlink()
+                quitar(f)
                 salida.append(f"reportajes-{c}/{fecha}.json quitado: " + "; ".join(malos))
         return salida
     if tipo in ("biblioteca", "repositorio"):
@@ -260,6 +269,7 @@ if __name__ == "__main__":
     elif orden == "encargo":
         sys.stdout.write(encargo(sys.argv[2], sys.argv[3]))
     elif orden == "comprobar":
+        MIRAR = "--mirar" in sys.argv[5:]
         quitado = comprobar(sys.argv[2], sys.argv[3], sys.argv[4], conservar="--conservar" in sys.argv[5:])
         for linea in quitado:
             print(f"traducción: {linea}")

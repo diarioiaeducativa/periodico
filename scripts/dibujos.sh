@@ -57,7 +57,9 @@ revisar_dibujos() {
     retirados="$retirados $id"
   done
   log "sin dibujo, porque sigue mal tras rehacerlo:$retirados"
-  avisar-juanjo --de "Diario de IA Educativa" "Sale sin dibujo, porque el revisor lo rechazó dos veces:$retirados. Motivos en /volume1/docker/diario-ia-educativa/repo/revision/$FECHA/rehacer.json" >/dev/null 2>&1 || true
+  # Al reparador (ADR 0087); si no responde, el aviso de siempre
+  m="Sale sin dibujo, porque el revisor lo rechazó dos veces:$retirados. Motivos en /volume1/docker/diario-ia-educativa/repo/revision/$FECHA/rehacer.json"
+  python3 scripts/reparador.py incidencia "$m" >/dev/null 2>&1 || avisar-juanjo --de "Diario de IA Educativa" "$m" >/dev/null 2>&1 || true
   python3 generar.py >> "$REG" 2>&1
 }
 

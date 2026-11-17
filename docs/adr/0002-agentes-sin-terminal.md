@@ -34,3 +34,11 @@ carpeta del bot.
 
 Un mensaje podría colar texto en una pieza; el revisor compara cada pieza con los mensajes y
 las fuentes, y lo publicado se puede corregir a mano.
+
+## Excepción del 17-11-2026: el reparador (ADR 0087)
+
+Un solo agente tiene terminal: el reparador, que actúa cuando algo falla. No es un agente de la
+redacción: no escribe ni lee los mensajes de los grupos como material, trabaja en una copia y un
+programa comprueba lo que hace antes de aplicarlo. El riesgo que esta decisión evita (que un texto
+ajeno dé órdenes a un agente con acceso al token y a las claves) vuelve a existir para él, acotado
+como explica el ADR 0087.

@@ -43,6 +43,15 @@ REG="registro/$FECHA.log"
 
 log() { printf '%s  %s\n' "$(date '+%F %T')" "$*" | tee -a "$REG"; }
 
+# Lo que falla va al reparador (scripts/reparador.py, ADR 0087), que lanza un agente que lo arregla y avisa después;
+# si el reparador no responde, el aviso de siempre. Al acabar se le pasan también los AVISO y ERROR que esta noche
+# deje en el registro, desde la línea en que empieza.
+incidencia() {
+  python3 scripts/reparador.py incidencia --fecha "$FECHA" "$@" >/dev/null 2>&1 \
+    || avisar-juanjo --de "Diario de IA Educativa" "${!#}" >/dev/null 2>&1 || true
+}
+INICIO_REG=$(wc -l < "$REG" 2>/dev/null || echo 0)
+
 # Los JSON del número (edición, traducciones, viñetas, avisos…) que un agente puede tocar.
 json_del_dia() { ls -1 */"$FECHA".json */*/"$FECHA".json */"$FECHA"-*.json "avisos/$PUBLICA.json" 2>/dev/null | sort -u; }
 
@@ -114,7 +123,7 @@ solo_anexos() {
     exit 0
   fi
   log "ERROR: ni piezas, ni repositorio, ni reserva: hoy no hay número"
-  avisar-juanjo --de "Diario de IA Educativa" "Hoy no hay número: no había nada que contar, no ha salido nada del repositorio y no queda ninguna pieza de reserva. Registro: /volume1/docker/diario-ia-educativa/repo/registro/$FECHA.log" >> "$REG" 2>&1
+  incidencia "Hoy no hay número: no había nada que contar, no ha salido nada del repositorio y no queda ninguna pieza de reserva. Registro: /volume1/docker/diario-ia-educativa/repo/registro/$FECHA.log" >> "$REG" 2>&1
   touch "estado/$FECHA.sin-numero"
   exit 0
 }
@@ -249,10 +258,10 @@ if [ "$(date -d "$FECHA" +%u)" = 6 ] || [ "${REPORTAJE:-0}" = 1 ]; then
       if [ -e "estado/$FECHA.reportaje-reserva" ]; then
         avisar-juanjo --de "Diario de IA Educativa" "Como pediste, el domingo sale con el reportaje de reserva, y mañana se escribe otro de reserva. Registro: /volume1/docker/diario-ia-educativa/repo/registro/$FECHA.log" >/dev/null 2>&1 || true
       else
-        avisar-juanjo --de "Diario de IA Educativa" "El reportaje de esta semana no ha podido salir (${porque:-fallo inesperado}): el domingo sale con el reportaje de reserva, y mañana se escribe otro de reserva. Registro: /volume1/docker/diario-ia-educativa/repo/registro/$FECHA.log" >/dev/null 2>&1 || true
+        incidencia "El reportaje de esta semana no ha podido salir (${porque:-fallo inesperado}): el domingo sale con el reportaje de reserva, y mañana se escribe otro de reserva. Registro: /volume1/docker/diario-ia-educativa/repo/registro/$FECHA.log"
       fi
     else
-      avisar-juanjo --de "Diario de IA Educativa" "El número del domingo sale sin reportaje: no ha podido salir (${porque:-fallo inesperado}) y no queda ningún reportaje de reserva que valga. Registro: /volume1/docker/diario-ia-educativa/repo/registro/$FECHA.log" >/dev/null 2>&1 || true
+      incidencia "El número del domingo sale sin reportaje: no ha podido salir (${porque:-fallo inesperado}) y no queda ningún reportaje de reserva que valga. Registro: /volume1/docker/diario-ia-educativa/repo/registro/$FECHA.log"
     fi
   fi
 fi
@@ -295,7 +304,7 @@ revisar_autoria() {   # revisar_autoria [corrige]
     python3 scripts/revisar-autoria.py --dia "$FECHA" > "$f" 2>>"$REG"
     [ $? = 4 ] || { log "autoría: corregido"; rm -f "$f"; return 0; }
   fi
-  avisar-juanjo --de "Diario de IA Educativa" "Puede que el número atribuya a un autor del diario algo que es de otra persona; míralo en la vista previa. Casos: /volume1/docker/diario-ia-educativa/repo/$f" >/dev/null 2>&1 || true
+  incidencia "Puede que el número atribuya a un autor del diario algo que es de otra persona; míralo en la vista previa. Casos: /volume1/docker/diario-ia-educativa/repo/$f"
 }
 revisar_autoria corrige
 
@@ -359,7 +368,7 @@ revisar_autoria
 revisar_dibujos_traducidos
 # Lo que se quitó de alguna traducción esta noche, en un solo aviso (ADR 0026): esa edición sale con el castellano
 if [ -s "registro/$FECHA-traduccion.txt" ]; then
-  avisar-juanjo --de "Diario de IA Educativa" "Alguna traducción del número de hoy no ha pasado la comprobación y esa parte sale en castellano: $(sort -u "registro/$FECHA-traduccion.txt" | tr '\n' ' ')Registro: /volume1/docker/diario-ia-educativa/repo/registro/$FECHA.log" >/dev/null 2>&1 || true
+  incidencia "Alguna traducción del número de hoy no ha pasado la comprobación y esa parte sale en castellano: $(sort -u "registro/$FECHA-traduccion.txt" | tr '\n' ' ')Registro: /volume1/docker/diario-ia-educativa/repo/registro/$FECHA.log"
 fi
 
 # 4 ter. El sábado, «La semana en vídeo» para el número del domingo (ADR 0016). Nunca impide el número.
@@ -388,10 +397,12 @@ fi
 # Lo mira un programa, sin IA, en el sitio recién generado; no impide que el número salga.
 if ! python3 scripts/revisar-idiomas.py --dia "$FECHA" > "registro/$FECHA-idiomas.txt" 2>>"$REG"; then
   log "AVISO: queda castellano en las ediciones traducidas: $(wc -l < "registro/$FECHA-idiomas.txt") textos (registro/$FECHA-idiomas.txt)"
-  avisar-juanjo --de "Diario de IA Educativa" "En las ediciones traducidas del número de hoy quedan $(wc -l < "registro/$FECHA-idiomas.txt") textos en castellano. El primero: $(head -1 "registro/$FECHA-idiomas.txt" | cut -f1-3 | cut -c1-220). Lista: /volume1/docker/diario-ia-educativa/repo/registro/$FECHA-idiomas.txt" >> "$REG" 2>&1 || true
+  incidencia "En las ediciones traducidas del número de hoy quedan $(wc -l < "registro/$FECHA-idiomas.txt") textos en castellano. El primero: $(head -1 "registro/$FECHA-idiomas.txt" | cut -f1-3 | cut -c1-220). Lista: /volume1/docker/diario-ia-educativa/repo/registro/$FECHA-idiomas.txt"
 fi
 touch "estado/$FECHA.listo"
 log "listo: número del $PUBLICA preparado"
+# Los AVISO y ERROR de esta noche, al reparador: si no hay nada que arreglar, no se le dice nada a nadie (ADR 0087)
+python3 scripts/reparador.py incidencia --sin-aviso --fecha "$FECHA" --registro "$REG" --desde "$INICIO_REG" >/dev/null 2>&1 || true
 
 # Una vez por semana, los enlaces caídos de lo ya publicado (ADR 0056): un programa, sin IA, que va despacio
 # y en segundo plano, con el número ya listo; avisa de los que llevan dos semanas seguidas caídos.

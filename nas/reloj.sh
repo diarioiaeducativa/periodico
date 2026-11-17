@@ -19,11 +19,17 @@
 #   cuando llega   el pódcast y el vídeo de la semana del boletín (multimedia/*.json), con el número del día ya
 #                  publicado, volver a publicar solo la web (scripts/publicar-web.sh, ADR 0034)
 #
+# Lo que falla no se le avisa directamente a Juanjo: pasa por el reparador (scripts/reparador.py, ADR 0087), que
+# lanza un agente que lo arregla y avisa después; si no puede, llega el aviso de siempre. `avisar` queda para lo
+# que solo informa (la vista previa, «ya está publicado»).
+#
 # Todo lo que decide se apunta en estado/, así que reiniciar el contenedor no repite nada.
 set -u
 cd /proyecto
 
 avisar() { avisar-juanjo --de "Diario de IA Educativa" "$1" >/dev/null 2>&1 || true; }
+# incidencia [--sin-aviso] [--bloqueo] "qué ha fallado": al reparador; si el reparador no responde, el aviso de siempre
+incidencia() { python3 scripts/reparador.py incidencia "$@" >/dev/null 2>&1 || avisar "${!#}"; }
 minutos() { echo $(( 10#$(date +%H) * 60 + 10#$(date +%M) )); }
 
 # La copia de los comentarios (ADR 0030), aparte: no espera a la vuelta de cinco minutos ni la retrasa
@@ -33,21 +39,30 @@ while true; do
   F=$(date -d yesterday +%F)
   E=estado/$F
   m=$(minutos)
-  if [ "$m" -ge 60 ] && [ ! -e "$E.listo" ] && [ ! -e "$E.sin-numero" ] && [ ! -e "$E.en-marcha" ]; then
+  # Mientras el reparador arregla lo que impidió preparar el número, la noche no se repite (ADR 0087). Una marca
+  # de más de una hora es de un reparador que murió: no cuenta.
+  find estado/reparador/bloqueo -mmin +60 -delete 2>/dev/null
+  if [ "$m" -ge 60 ] && [ ! -e "$E.listo" ] && [ ! -e "$E.sin-numero" ] && [ ! -e "$E.en-marcha" ] \
+     && [ ! -e estado/reparador/bloqueo ]; then
     intentos=$(cat "$E.intentos" 2>/dev/null || echo 0)
     if [ "$intentos" -lt 2 ]; then
       echo $((intentos + 1)) > "$E.intentos"
       touch "$E.en-marcha"
       # En un grupo de procesos propio (setsid), para poder pararlo entero con sus agentes; en
       # en-marcha queda su número
-      ( setsid timeout 5h scripts/noche.sh "$F" & echo $! > "$E.en-marcha"; wait $!; rm -f "$E.en-marcha" ) &
+      # Si acaba mal y sin número, al reparador, antes de quitar la marca: el segundo intento espera a que acabe
+      ( setsid timeout 5h scripts/noche.sh "$F" & echo $! > "$E.en-marcha"; wait $!; c=$?
+        if [ "$c" != 0 ] && [ ! -e "$E.listo" ] && [ ! -e "$E.sin-numero" ] && [ ! -e "$E.avisado" ]; then   # si la paró el plan B, avisa él
+          incidencia --bloqueo --fecha "$F" "La redacción no ha podido preparar el número de hoy: scripts/noche.sh ha acabado con el código $c. Final del registro registro/$F.log: $(tail -12 "registro/$F.log" 2>/dev/null | cut -c1-260 | tr '\n' '|')"
+        fi
+        rm -f "$E.en-marcha" ) &
     fi
   fi
   # Plan B (ADR 0021): no puede haber ningún día sin número. Si los dos intentos han fallado, o a
   # las 6:30 si aún no está, se para la redacción y sale lo que haya o una pieza de reserva.
   intentos=$(cat "$E.intentos" 2>/dev/null || echo 0)
   if [ "$m" -ge 60 ] && [ ! -e "$E.listo" ] && [ ! -e "$E.sin-numero" ] && [ ! -e "$E.avisado" ] \
-     && { [ "$m" -ge 390 ] || { [ "$intentos" -ge 2 ] && [ ! -e "$E.en-marcha" ]; }; }; then
+     && { [ "$m" -ge 390 ] || { [ "$intentos" -ge 2 ] && [ ! -e "$E.en-marcha" ] && [ ! -e estado/reparador/bloqueo ]; }; }; then
     touch "$E.avisado"
     if [ -e "$E.en-marcha" ]; then
       pg=$(cat "$E.en-marcha")
@@ -57,10 +72,10 @@ while true; do
     python3 scripts/reserva.py usar "$F" fallo >> "registro/$F.log" 2>&1
     case $? in
       0) touch "$E.listo"
-         avisar "La redacción no ha podido preparar el número de hoy ($intentos intentos): sale con el número de reserva, y las noticias de ayer salen mañana. Registro: /volume1/docker/diario-ia-educativa/repo/registro/$F.log" ;;
+         incidencia "La redacción no ha podido preparar el número de hoy ($intentos intentos): sale con el número de reserva, y las noticias de ayer salen mañana. Registro: /volume1/docker/diario-ia-educativa/repo/registro/$F.log" ;;
       4) touch "$E.listo"
-         avisar "La redacción se ha atascado después del repaso ($intentos intentos): el número sale con lo que estaba hecho. Registro: /volume1/docker/diario-ia-educativa/repo/registro/$F.log" ;;
-      *) avisar "Hoy no hay número: la redacción ha fallado ($intentos intentos) y no queda ningún artículo de reserva. Registro: /volume1/docker/diario-ia-educativa/repo/registro/$F.log" ;;
+         incidencia "La redacción se ha atascado después del repaso ($intentos intentos): el número sale con lo que estaba hecho. Registro: /volume1/docker/diario-ia-educativa/repo/registro/$F.log" ;;
+      *) incidencia "Hoy no hay número: la redacción ha fallado ($intentos intentos) y no queda ningún artículo de reserva. Registro: /volume1/docker/diario-ia-educativa/repo/registro/$F.log" ;;
     esac
   fi
   # La vista previa (ADR 0025): desde las 5:00 y hasta que se publica, el número tal como saldrá,
@@ -79,8 +94,12 @@ while true; do
         # Y la maqueta (ADR 0041): la portada de cada idioma y la página del número a nueve anchuras; si queda un
         # hueco, otro aviso con la captura, a tiempo de arreglarlo antes de las 6:50
         python3 scripts/revisar-maqueta.py "$F" >> "registro/$F.log" 2>&1 || true
+        # Los huecos ya le han llegado con su captura: al reparador van sin aviso, por si tienen arreglo
+        if [ -s "registro/$F-maqueta.json" ] && [ "$(tr -d ' \n' < "registro/$F-maqueta.json")" != "[]" ]; then
+          incidencia --sin-aviso --fecha "$F" "La revisión de maqueta ha encontrado huecos en el número de hoy (registro/$F-maqueta.json): $(cut -c1-700 "registro/$F-maqueta.json" | tr '\n' ' ')"
+        fi
       else
-        avisar "No se ha podido montar la vista previa del número de hoy; sale igual a las 6:50. Registro: /volume1/docker/diario-ia-educativa/repo/registro/$F.log"
+        incidencia "No se ha podido montar la vista previa del número de hoy; sale igual a las 6:50. Registro: /volume1/docker/diario-ia-educativa/repo/registro/$F.log"
       fi
     elif [ ! -e "$E.vista-previa-espera" ] && [ ! -e "$E.sin-numero" ]; then
       touch "$E.vista-previa-espera"
@@ -94,10 +113,10 @@ while true; do
     if scripts/publicar-nas.sh "$F"; then
       [ -e "$E.publicar-fallo" ] && avisar "Ya está: el número de hoy se ha publicado, con retraso."
     elif [ "$m" -ge 540 ]; then
-      avisar "No se ha podido publicar el número de hoy: lo he intentado desde las 6:50 hasta las 9:00. Queda a mano. Registro: /volume1/docker/diario-ia-educativa/repo/registro/$F.log"
+      incidencia "No se ha podido publicar el número de hoy: lo he intentado desde las 6:50 hasta las 9:00. Queda a mano. Registro: /volume1/docker/diario-ia-educativa/repo/registro/$F.log"
       touch "$E.publicado"
     else
-      [ -e "$E.publicar-fallo" ] || avisar "No se ha podido publicar el número de hoy a su hora: lo reintento cada 10 minutos hasta las 9:00. Registro: /volume1/docker/diario-ia-educativa/repo/registro/$F.log"
+      [ -e "$E.publicar-fallo" ] || incidencia "No se ha podido publicar el número de hoy a su hora: lo reintento cada 10 minutos hasta las 9:00. Registro: /volume1/docker/diario-ia-educativa/repo/registro/$F.log"
       echo "$m" > "$E.publicar-fallo"
     fi
     rm -f "$E.publicando"
@@ -107,14 +126,14 @@ while true; do
   if [ "$m" -ge 480 ] && [ -e "$E.publicado" ] && [ ! -e "$R" ]; then
     touch "$R"
     ( scripts/reserva.sh >/dev/null 2>&1
-      [ "$(python3 scripts/reserva.py cuantas)" -gt 0 ] || avisar "No queda ningún artículo de reserva del diario y hoy no se ha podido escribir otro. Registro: /volume1/docker/diario-ia-educativa/repo/registro/reserva-$(date +%F).log" ) &
+      [ "$(python3 scripts/reserva.py cuantas)" -gt 0 ] || incidencia "No queda ningún artículo de reserva del diario y hoy no se ha podido escribir otro. Registro: /volume1/docker/diario-ia-educativa/repo/registro/reserva-$(date +%F).log" ) &
   fi
   # Instagram (ADR 0015): solo si el número salió y hay permiso guardado. Un intento: si falla, a mano.
   if [ "$m" -ge 425 ] && [ -e "$E.publicado" ] && [ -d "instagram/$F" ] && [ -e "$HOME/.config/diario-instagram.json" ] \
      && [ ! -e "$E.instagram" ] && [ ! -e "$E.instagram-intento" ]; then
     touch "$E.instagram-intento"
     if ! python3 scripts/instagram.py publicar "$F" >> "registro/$F.log" 2>&1; then
-      avisar "No se ha podido publicar el número de hoy en Instagram. Registro: /volume1/docker/diario-ia-educativa/repo/registro/$F.log"
+      incidencia "No se ha podido publicar el número de hoy en Instagram. Registro: /volume1/docker/diario-ia-educativa/repo/registro/$F.log"
     fi
   fi
   # El informe del día para Juanjo (ADR 0069): en cuanto ha salido todo (entre semana, hacia las 7:10; el domingo,
@@ -129,14 +148,14 @@ while true; do
      && [ ! -e "$E.instagram-reel" ] && [ ! -e "$E.instagram-reel-intento" ]; then
     touch "$E.instagram-reel-intento"
     if ! python3 scripts/instagram.py reel "$F" >> "registro/$F.log" 2>&1; then
-      avisar "No se ha podido publicar en Instagram el reel de la semana. Registro: /volume1/docker/diario-ia-educativa/repo/registro/$F.log"
+      incidencia "No se ha podido publicar en Instagram el reel de la semana. Registro: /volume1/docker/diario-ia-educativa/repo/registro/$F.log"
     fi
   fi
   H=estado/instagram-permiso-$(date +%F)
   if [ "$m" -ge 720 ] && [ -e "$HOME/.config/diario-instagram.json" ] && [ ! -e "$H" ]; then
     touch "$H"
     if ! { python3 scripts/instagram.py renovar && python3 scripts/instagram.py comprobar; } >> "registro/instagram-permiso.log" 2>&1; then
-      avisar "El permiso de Instagram del diario falla al renovarlo o comprobarlo; mañana no se publicará el carrusel si no se arregla. Registro: /volume1/docker/diario-ia-educativa/repo/registro/instagram-permiso.log"
+      incidencia "El permiso de Instagram del diario falla al renovarlo o comprobarlo; mañana no se publicará el carrusel si no se arregla. Registro: /volume1/docker/diario-ia-educativa/repo/registro/instagram-permiso.log"
     fi
   fi
   # El pódcast y el vídeo de la semana (ADR 0034): cuando el boletín deja o cambia un multimedia/*.json, se
@@ -152,7 +171,7 @@ while true; do
       rm -f estado/multimedia.fallo
     else
       rm -f "$marca"
-      [ -e estado/multimedia.fallo ] || avisar "No se ha podido publicar en la web el pódcast y el vídeo de la semana; lo reintento cada media hora. Registro: /volume1/docker/diario-ia-educativa/repo/registro/multimedia.log"
+      [ -e estado/multimedia.fallo ] || incidencia "No se ha podido publicar en la web el pódcast y el vídeo de la semana; lo reintento cada media hora. Registro: /volume1/docker/diario-ia-educativa/repo/registro/multimedia.log"
       date +%s > estado/multimedia.fallo
     fi
     rm -f estado/multimedia.publicando

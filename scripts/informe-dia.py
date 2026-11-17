@@ -269,6 +269,17 @@ def informe(fecha):
     if retirados:
         problemas.append(f"{len(retirados)} dibujo(s) retirado(s) por no pasar la revisión.")
     otros = [a for a in avisos_del_registro(lineas) if not re.search(r"Internet Archive|quedan sin subir", a)]
+    # Lo que hizo el reparador con los fallos de este número (ADR 0087)
+    try:
+        reparaciones = [json.loads(x) for x in (RAIZ / "registro" / "reparador.jsonl").read_text().splitlines() if x.strip()]
+    except (OSError, ValueError):
+        reparaciones = []
+    for r in reparaciones:
+        if r.get("fecha") != fecha:
+            continue
+        que = " ".join(str((r.get("informe") or {}).get("que_fallaba") or r.get("motivo") or "").split())[:220]
+        problemas.append({"arreglado": "El reparador arregló un fallo: ", "nada_que_arreglar": "El reparador miró un aviso y no había nada que arreglar: ",
+                          }.get(r.get("resultado"), "El reparador no pudo arreglar un fallo: ") + que)
     t += ["", "FALLOS Y AVISOS"]
     if problemas or otros:
         t += [f"• {p}" for p in problemas]

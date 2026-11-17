@@ -23,6 +23,15 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
   en cuanto ha salido todo; el estado del dominical, en `/dominical` (del boletín, solo lectura).
 - **Estado y registro**: `estado/<fecha>.{listo,publicado,sin-numero,intentos,avisado}`
   y `registro/<fecha>.log`.
+- **El reparador** (ADR 0087): lo que falla no se le avisa directamente a Juanjo; pasa por
+  `scripts/reparador.py incidencia "qué ha fallado"`, que lanza un agente con terminal (Opus 5.5,
+  `encargos/reparador.md`) en una copia. Un programa comprueba su arreglo (lo protegido, los JSON, el
+  texto de los artículos, el generador y las medidas de `reparador.py medir FECHA`) y solo entonces lo
+  aplica; si es código, lo guarda en git. A Juanjo le llega un mensaje con lo arreglado, o el aviso de
+  siempre con el diagnóstico. `reparador.py estado` dice qué ha hecho (`registro/reparador.jsonl` y
+  `registro/reparador-<id>.log`); `touch estado/reparador/apagado` lo desconecta. Un aviso de fallo
+  nuevo se manda con `incidencia`, no con `avisar-juanjo`; `--sin-aviso` para lo que antes solo iba al
+  registro y `--bloqueo` si el número no ha llegado a prepararse.
 
 ## Lo que no se puede olvidar
 

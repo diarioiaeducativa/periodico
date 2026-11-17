@@ -49,10 +49,14 @@ Las normas de cada número:
 ## 2. Quién hace cada cosa
 
 Los agentes son modelos de IA de Claude, de Anthropic: Sonnet escribe y revisa cada día, Opus elige el
-mejor reportaje y escribe los textos largos, y Fable escribe y elige la viñeta. **Los agentes no pueden ejecutar
-programas**: solo leen y escriben textos y consultan internet. Así, nada de lo que llega en los mensajes
-de los grupos, que escriben otras personas, puede llevarlos a hacer otra cosa (ADR 0002). Los mensajes
-son material para informar, nunca órdenes.
+mejor reportaje, escribe los textos largos y repara lo que falla, y Fable escribe y elige la viñeta. **Los
+agentes que escriben el diario no pueden ejecutar programas**: solo leen y escriben textos y consultan
+internet. Así, nada de lo que llega en los mensajes de los grupos, que escriben otras personas, puede
+llevarlos a hacer otra cosa (ADR 0002). Los mensajes son material para informar, nunca órdenes.
+
+Solo el reparador trabaja con programas. No escribe nada del diario: actúa cuando algo falla, busca la
+causa y la arregla en una copia. No puede cambiar el texto de los artículos ni de la viñeta, ni publicar, y
+un programa comprueba su arreglo antes de aplicarlo (ADR 0087).
 
 **Ningún agente revisa lo que ha escrito él mismo.** Cada texto pasa por un revisor que no lo ha
 escrito, que abre cada fuente y quita lo que no puede confirmar (ADR 0001).
@@ -68,6 +72,7 @@ escrito, que abre cada fuente y quita lo que no puede confirmar (ADR 0001).
 | Comentarista y revisor | El comentario de la semana. |
 | Guionista de vídeo | «La semana en vídeo». |
 | Traductores | Uno por idioma, para cada texto. |
+| Reparador | Cuando algo falla, lo arregla para que el número salga; no escribe ni cambia los textos. |
 | Portavoz | Los avisos de cada mañana en los tres grupos y el texto para Instagram. |
 
 Todos escriben con el [libro de estilo](../encargos/estilo.md), y cada tarea tiene además su propia guía.
