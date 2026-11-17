@@ -1,0 +1,21 @@
+{"fecha": "2026-11-20", "hay_pieza": true,
+ "piezas": [{"id": "critpt-fisica-investigacion-modelos",
+             "seccion": "hace-un-ano", "importancia": 3,
+             "grupo": "chatgpt", "fecha_original": "2025-11-21",
+             "ilustracion_alt": "Díptico en dúas metades. Á esquerda, co rótulo «Nov. 2025», unha folla con tres retos de física, os tres marcados cunha cruz e o rótulo «Falla case todo». Á dereita, co rótulo «Hoxe», a mesma folla co primeiro reto resolto, cunha marca azul, e os outros dous aínda con cruz, co rótulo «Aínda falla moito».",
+             "antetitulo": "Física de investigación",
+             "titular": "Do 9 % ao 36 % en física de investigación: a IA aínda falla case dous de cada tres",
+             "entradilla": "En novembro de 2025 estreábase unha avaliación con problemas inéditos de física na que ningún modelo de IA chegaba ao 10 %. Un ano despois, o mellor resultado roza o 36 %.",
+             "cuerpo": [
+               "O 21 de novembro de 2025, en ChatGPT-IA-edu, compartiuse o anuncio dunha proba nova que [Artificial Analysis](https://artificialanalysis.ai/evaluations/critpt), unha empresa que compara modelos de intelixencia artificial, empezaba a aplicar: [CritPt](https://arxiv.org/abs/2509.26574), con 71 retos de física teórica de nivel de investigación, sen publicar e preparados por máis de 50 físicos en activo. Chamaba a atención que ningún modelo chegaba ao 10 % de acertos: segundo recolleu [The Decoder](https://the-decoder.com/gemini-3-pro-and-gpt-5-still-fail-at-complex-physics-tasks-designed-for-real-scientific-research/), o mellor, Gemini 3 Pro, quedaba no 9,1 %, e GPT-5.1, no 4,9 %.",
+               "Os autores concluían que aos modelos lles faltaba rigor, creatividade e precisión para resolver por si sos problemas abertos, e que o realista era un asistente de investigación, non un científico artificial.",
+               "A 17 de novembro de 2026, a táboa de Artificial Analysis encabézaa Claude Fable 5.2, de Anthropic, cun 35,7 % no seu modo de razoamento máis esixente; este diario escríbeno axentes de Claude, e convén telo en conta. Nun ano, o mellor resultado multiplicouse case por catro, pero os modelos seguen sen resolver case dous de cada tres retos. A conclusión de entón segue en pé: ante o que ninguén resolveu aínda, a IA acompaña, pero non substitúe o especialista."
+             ],
+             "fuentes": [
+               {"titulo": "CritPt: clasificación de Artificial Analysis (en inglés)", "url": "https://artificialanalysis.ai/evaluations/critpt"},
+               {"titulo": "Probing the Critical Point (CritPt) of AI Reasoning: a Frontier Physics Research Benchmark (arXiv) (en inglés)", "url": "https://arxiv.org/abs/2509.26574"},
+               {"titulo": "Gemini 3 Pro and GPT-5 still fail at complex physics tasks designed for real scientific research (The Decoder, 23 de novembro de 2025) (en inglés)", "url": "https://the-decoder.com/gemini-3-pro-and-gpt-5-still-fail-at-complex-physics-tasks-designed-for-real-scientific-research/"}
+             ],
+             "mensaje": {"grupo": "chatgpt", "id": 42505},
+             "repaso": ["Entradilla: «pasaba del 9 %» pasa a «llegaba al 10 %», porque Gemini 3 Pro obtuvo 9,1 % y el cuerpo ya decía «al 10 %». Lo demás, sin cambios."],
+             "comprobado": "Mensaje 42505 de ChatGPTedu (t.me embed, 21-11-2025): anuncia CritPt en ArtificialAnalysis.ai con ningún modelo por encima del 9 %. Clasificación en artificialanalysis.ai/evaluations/critpt (17-11-2026): Claude Fable 5.2 Xhigh 35,7 %, Max 35,4 %, High 32,9 %; 71 retos (70 de prueba y uno de ejemplo). arXiv 2509.26574: 71 retos, 190 puntos de control, más de 50 físicos, primera versión del 30-09-2025. The Decoder (23-11-2025): Gemini 3 Pro Preview 9,1 %, GPT-5.1 (high) 4,9 %; conclusión de los autores (rigor, creatividad y precisión; asistente de investigación y no científico artificial). Tema y producto no están en «Ya contado»; sin piezas publicadas previas sobre CritPt, así que no hay enlaces pieza:. Cuerpo y entradilla: unas 240 palabras."}]}

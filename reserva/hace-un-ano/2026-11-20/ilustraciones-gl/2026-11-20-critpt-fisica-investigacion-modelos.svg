@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340">
+<line class="t" x1="300" y1="20" x2="300" y2="320"/>
+<text class="lbl" x="150" y="40" text-anchor="middle">Nov. 2025</text>
+<text class="lbl" x="450" y="40" text-anchor="middle">Hoxe</text>
+<rect class="t" x="80" y="65" width="140" height="215" rx="8"/>
+<rect class="fa" x="108" y="85" width="32" height="32" rx="4"/>
+<path class="t" d="M116 93l16 16M132 93l-16 16"/>
+<path class="t" d="M152 95h50M152 107h34"/>
+<rect class="fa" x="108" y="147" width="32" height="32" rx="4"/>
+<path class="t" d="M116 155l16 16M132 155l-16 16"/>
+<path class="t" d="M152 157h50M152 169h34"/>
+<rect class="fa" x="108" y="209" width="32" height="32" rx="4"/>
+<path class="t" d="M116 217l16 16M132 217l-16 16"/>
+<path class="t" d="M152 219h50M152 231h34"/>
+<text class="lbl" x="150" y="311" text-anchor="middle">Falla case todo</text>
+<rect class="t" x="380" y="65" width="140" height="215" rx="8"/>
+<rect class="fz" x="408" y="85" width="32" height="32" rx="4"/>
+<path class="a" d="M415 101l8 8 11-14"/>
+<path class="a" d="M452 95h50M452 107h34"/>
+<rect class="fa" x="408" y="147" width="32" height="32" rx="4"/>
+<path class="t" d="M416 155l16 16M432 155l-16 16"/>
+<path class="t" d="M452 157h50M452 169h34"/>
+<rect class="fa" x="408" y="209" width="32" height="32" rx="4"/>
+<path class="t" d="M416 217l16 16M432 217l-16 16"/>
+<path class="t" d="M452 219h50M452 231h34"/>
+<text class="lbl" x="450" y="311" text-anchor="middle">Aínda falla moito</text>
+</svg>

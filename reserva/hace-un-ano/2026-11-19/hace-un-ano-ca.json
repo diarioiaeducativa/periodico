@@ -1,0 +1,29 @@
+{"fecha": "2026-11-19", "hay_pieza": true,
+ "piezas": [{"id": "chatgpt-for-teachers-solo-estados-unidos",
+             "seccion": "hace-un-ano", "importancia": 3,
+             "grupo": "chatgpt", "ilustracion_alt": "Díptic. A l'esquerra, «Nov. 2025»: un globus terraqüi amb una sola xinxeta sobre «EUA» i a sota un cadenat tancat. A la dreta, «Avui»: el mateix globus amb tres xinxetes blaves sobre «EUA» i el cadenat continua tancat, al costat del rètol «Espanya».", "fecha_original": "2025-11-20",
+             "antetitulo": "OpenAI a les aules",
+             "titular": "ChatGPT gratuït per a docents només als Estats Units: un any després, la frontera continua",
+             "entradilla": "Al novembre de 2025, OpenAI estrenava ChatGPT for Teachers i el professorat espanyol es demanava si arribaria. Un any després ha crescut a les escoles dels Estats Units, però no ha creuat l'oceà.",
+             "cuerpo": [
+               "El 20 de novembre de 2025, a ChatGPT-IA-edu, es va compartir l'anunci de [ChatGPT for Teachers](https://openai.com/index/chatgpt-for-teachers/), un espai de ChatGPT per a docents, gratuït fins al juny de 2027 per al professorat verificat de primària i secundària dels Estats Units. La primera pregunta va ser si servia per a la resta del món; la resposta, que no, i que caldria esperar. Al grup es llegia com una resposta a Gemini.",
+               "El 26 d'agost de 2026, OpenAI [el va estendre a més districtes escolars dels Estats Units](https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts/): 55 sistemes escolars més, de 20 estats, amb més de 100.000 docents i treballadors. Segons el seu [butlletí educatiu de setembre](https://edunewsletter.openai.com/p/the-edu-prompt-issue-5), ja treballa amb més de 100 organitzacions escolars de 30 estats. Les condicions continuen reservant-lo al professorat verificat d'aquest país, i la gratuïtat arriba ara fins al juny de 2028, segons [EdTech Innovation Hub](https://www.edtechinnovationhub.com/news/openai-expands-chatgpt-for-teachers-to-55-more-us-school-systems).",
+               "Per a la resta del món, OpenAI ha triat un altre camí: [Education for Countries](https://openai.com/index/edu-for-countries/), presentat al gener de 2026 a Davos, que porta ChatGPT Edu als sistemes educatius mitjançant acords amb governs i universitats. Entre els vuit primers participants hi ha Estònia, Grècia, Eslovàquia i la conferència de rectors italiana; Espanya no hi era. Un any després, la pregunta del grup té la mateixa resposta: caldrà esperar."
+             ],
+             "fuentes": [
+               {"titulo": "ChatGPT for Teachers (OpenAI) (en anglès)", "url": "https://openai.com/index/chatgpt-for-teachers/"},
+               {"titulo": "Bringing ChatGPT for Teachers to more US school districts (OpenAI) (en anglès)", "url": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts/"},
+               {"titulo": "The Edu Prompt, número 5, 1 de setembre de 2026 (butlletí d'OpenAI per a educació) (en anglès)", "url": "https://edunewsletter.openai.com/p/the-edu-prompt-issue-5"},
+               {"titulo": "OpenAI expands ChatGPT for Teachers to 55 more US school systems (EdTech Innovation Hub) (en anglès)", "url": "https://www.edtechinnovationhub.com/news/openai-expands-chatgpt-for-teachers-to-55-more-us-school-systems"},
+               {"titulo": "Education for Countries (OpenAI) (en anglès)", "url": "https://openai.com/index/edu-for-countries/"},
+               {"titulo": "OpenAI announces Education for Countries at Davos (EdTech Innovation Hub) (en anglès)", "url": "https://edtechinnovationhub.com/news/openai-announces-education-for-countries-scaling-ai-for-national-education-systems-at-davos"}
+             ],
+             "mensaje": {"grupo": "chatgpt", "id": 42392},
+             "comprobado": "Mensaje 42392 (ChatGPT-IA-edu, 20-11-2025) comprobado en t.me: es el anuncio de ChatGPT for Teachers, gratuito para docentes verificados de K-12 de EE. UU. hasta junio de 2027; las respuestas de la entrada (42397, 42400-42401) dicen que es solo para EE. UU. Boletín oficial de OpenAI para educación (1-9-2026, leído): 55 sistemas escolares más, 20 estados, más de 100.000 docentes y personal, más de 100 organizaciones K-12 en 30 estados. La fecha del 26 de agosto de 2026 (anuncio de OpenAI, 403 a la lectura automática) viene de resultados de búsqueda. EdTech Innovation Hub (leída): sigue para docentes, líderes y personal verificados de K-12 de EE. UU., gratis hasta junio de 2028. Education for Countries (EdTech Innovation Hub, leída): Davos, enero de 2026; primeros participantes Estonia, Grecia, Jordania, Kazajistán, Eslovaquia, Trinidad y Tobago, Emiratos y la conferencia de rectores italiana; España no está. No se afirma nada de cohortes posteriores (la página de OpenAI no carga). El diario no ha publicado nada sobre el tema.",
+             "repaso": [
+               "Quitada la cláusula «con garantías de privacidad y controles para los centros» y la de Gemini y las cuentas educativas de Google, para hacer sitio y por no estar contrastadas con la fuente.",
+               "La fecha de la ampliación, concretada: 26 de agosto de 2026.",
+               "Añadido que la gratuidad llega hasta junio de 2028 (EdTech Innovation Hub), con su fuente.",
+               "«España no figura» pasa a «no estaba entre ellos», limitado a los ocho primeros participantes, porque no se ha podido leer la lista de cohortes posteriores.",
+               "Titular, entradilla y medida (240 palabras) correctos; mensaje 42392 y datos de entonces, confirmados."
+             ]}]}

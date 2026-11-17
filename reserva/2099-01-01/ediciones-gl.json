@@ -1,0 +1,38 @@
+{
+  "fecha": "2099-01-01",
+  "hay_edicion": true,
+  "fondo": "edumedia",
+  "motivo": "Herramienta de edición de imagen consolidada, gratuita para individuos según su web oficial, útil para retocar y maquetar las imágenes que el alumnado o el docente generan con IA; no ha salido en el diario.",
+  "piezas": [{
+    "id": "affinity-diseno-gratuito",
+    "seccion": "multimedia",
+    "importancia": 3,
+    "grupo": "edumedia",
+    "antetitulo": "Do fondo de EduMedia",
+    "titular": "Affinity reúne fotografía, vectores e maquetación nun programa gratuíto",
+    "entradilla": "Serve para retocar e compoñer as imaxes que se xeran con IA. A web oficial preséntao como gratuíto para particulares, coas funcións de IA só nos plans de pagamento de Canva.",
+    "cuerpo": [
+      "[Affinity](https://www.affinity.studio/) é un programa de deseño que une nunha soa aplicación a edición de fotografía, o debuxo vectorial e a maquetación de páxinas. Segundo a súa web oficial, é gratuíto para particulares e está dispoñible para Mac, Windows e iPad. No grupo compartiuse cando se fixo gratuíto, e varias persoas do grupo situárono, tras probalo, como alternativa a programas como Photoshop ou GIMP, aínda que se sinalou que a curva de aprendizaxe é maior.",
+      "Na aula serve para completar o traballo con imaxes xeradas con IA: recortar un fondo, corrixir un detalle, engadir un texto ou montar un cartaz, un cómic ou a portada dun proxecto. Unha actividade posible é pedirlle ao alumnado que xere ilustracións cunha ferramenta de IA e as ordene despois nunha páxina maquetada, con título e lenda da imaxe.",
+      "Para comezar descárgase o programa desde a súa web, cuxos botóns de descarga pasan por un inicio de sesión de Canva, e ábrese un documento novo. As funcións de IA que inclúe, segundo a web, requiren un plan de pagamento de Canva; o resto do programa non as precisa.",
+      "Límites: a web non indica unha idade mínima nin detalla as condicións de uso, e remite aos termos e á política de privacidade de Canva. Convén lelos antes de plantexar o seu uso con alumnado menor e, mentres tanto, que o use o docente. Os centros que necesiten inicio de sesión único deben acudir a Canva Enterprise ou Canva Education."
+    ],
+    "fuentes": [
+      {"titulo": "Affinity, web oficial (en inglés)", "url": "https://www.affinity.studio/"}
+    ],
+    "herramienta": {"nombre": "Affinity", "url": "https://www.affinity.studio/"},
+    "mensaje": {"grupo": "edumedia", "id": 5512},
+    "comprobado": "Revisado de nuevo con WebFetch en https://www.affinity.studio/: «Professional design, photo editing, and page layout in one app»; Mac, Windows e iPad; «free for individuals»; las herramientas de IA requieren un plan premium de Canva; los botones de descarga pasan por un inicio de sesión de Canva (la web no dice expresamente que la cuenta sea obligatoria, por eso se redacta como «pasan por»); SSO mediante Canva Enterprise o Education; sin edad mínima ni precios, con enlaces a términos y privacidad de Canva (canva.com). Mensaje 5512 abierto en t.me/EduMediaIAG/5512?embed=1&mode=tme: es el enlace a la web de Affinity. Conversación del grupo (5511, 5530, 5532): la gratuidad, la comparación con GIMP/Photoshop y la mayor curva de aprendizaje constan; sin nombres en el texto. Sin resultados para «Affinity» en el buscador del diario ni piezas parecidas (nada por el estilo ya publicado). Sin enlaces pieza:. Titular de 76 caracteres; cuerpo de unas 230 palabras; sin referencias al día de salida.",
+    "ilustracion": "Un antes y un después: a la izquierda, varias imágenes sueltas generadas con IA, desordenadas; a la derecha, una misma página de cartel bien compuesta con esas imágenes recortadas, un título y un pie, con tres herramientas simbolizadas (pincel de foto, pluma de vectores y rejilla de página) que confluyen en una sola ventana.",
+    "ilustracion_alt": "Imaxes soltas e inclinadas, co rótulo «Soltas», pasan por tres ferramentas, un pincel («Foto»), unha pluma («Vectores») e unha reixa («Maquetaxe»), que conflúen nunha soa xanela onde queda unha páxina de cartaz con título, dúas imaxes e unha lenda, co rótulo «Cartaz»."
+  }],
+  "breves": [],
+  "descartado": [],
+  "repaso": [
+    "«Varias personas lo probaron como alternativa» → «varias personas del grupo lo situaron, tras probarlo, como alternativa» y «requiere algo más de práctica» → «la curva de aprendizaje es mayor» (como se dijo en el grupo).",
+    "Descarga: la web no dice que la cuenta de Canva sea obligatoria, solo que los botones pasan por un inicio de sesión; se ha redactado así.",
+    "IA: «solo se activan con un plan de pago» → «requieren un plan de pago de Canva», como dice la web.",
+    "Límites: reordenado para decir primero que no hay edad mínima; contenido igual.",
+    "Actualizado `comprobado` con la nueva verificación; sin otros cambios."
+  ]
+}

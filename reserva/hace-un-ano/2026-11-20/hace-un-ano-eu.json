@@ -1,0 +1,21 @@
+{"fecha": "2026-11-20", "hay_pieza": true,
+ "piezas": [{"id": "critpt-fisica-investigacion-modelos",
+             "seccion": "hace-un-ano", "importancia": 3,
+             "grupo": "chatgpt", "fecha_original": "2025-11-21",
+             "ilustracion_alt": "Diptikoa bi erdi. Ezkerrean, «2025 aza.» errotuluarekin, fisikako hiru erronkako orri bat, hirurak gurutzez markatuta eta «Ia denak huts egiten du» errotuluarekin. Eskuinean, «Gaur» errotuluarekin, orri bera, lehen erronka ebatzita, marka urdin batekin, eta beste biak oraindik gurutzez markatuta, «Oraindik huts asko» errotuluarekin.",
+             "antetitulo": "Ikerketa-fisika",
+             "titular": "Ikerketa-fisikan % 9tik % 36ra: AAk oraindik hiru erronkatik ia bi huts egiten ditu",
+             "entradilla": "2025eko azaroan, ikerketa-mailako fisika-problema argitaragabeekin egindako ebaluazio bat aurkeztu zen, eta AA eredu batek ere ez zuen % 10era iristen. Urtebete geroago, emaitzarik onena % 36ra gerturatzen da.",
+             "cuerpo": [
+               "2025eko azaroaren 21ean, ChatGPT-IA-edu taldean, proba berri baten iragarpena partekatu zen. [Artificial Analysis](https://artificialanalysis.ai/evaluations/critpt) adimen artifizialeko ereduak alderatzen dituen enpresak aplikatzen hasi zen proba hori: [CritPt](https://arxiv.org/abs/2509.26574), ikerketa-mailako fisika teorikoko 71 erronkarekin, argitaragabeak eta 50 fisikari aktibok baino gehiagok prestatuak. Arreta ematen zuen eredu batek ere ez zuela asmatzen % 10era iristen: [The Decoder](https://the-decoder.com/gemini-3-pro-and-gpt-5-still-fail-at-complex-physics-tasks-designed-for-real-scientific-research/) hedabideak jaso zuenez, onenak, Gemini 3 Prok, % 9,1 lortu zuen, eta GPT-5.1ek, % 4,9.",
+               "Egileen ondorioa zen ereduek zorroztasuna, sormena eta zehaztasuna falta zituztela problema irekiak bakarrik ebazteko, eta errealista zena ikerketa-laguntzaile bat zela, ez zientzialari artifizial bat.",
+               "2026ko azaroaren 17an, Artificial Analysisen taulan Anthropicen Claude Fable 5.2 dago buru, % 35,7rekin, arrazoibide-modurik zorrotzenean; egunkari hau Claude-ren agenteek idazten dute, eta kontuan hartzea komeni da. Urte batean, emaitzarik onena ia lau aldiz handitu da, baina ereduek oraindik ez dituzte hiru erronkatik ia bi ebazten. Orduko ondorioak zutik jarraitzen du: inork oraindik ebatzi ez duenaren aurrean, AAk lagundu egiten du, baina ez du espezialistaren lekua hartzen."
+             ],
+             "fuentes": [
+               {"titulo": "CritPt: Artificial Analysisen sailkapena (ingelesez)", "url": "https://artificialanalysis.ai/evaluations/critpt"},
+               {"titulo": "Probing the Critical Point (CritPt) of AI Reasoning: a Frontier Physics Research Benchmark (arXiv) (ingelesez)", "url": "https://arxiv.org/abs/2509.26574"},
+               {"titulo": "Gemini 3 Pro and GPT-5 still fail at complex physics tasks designed for real scientific research (The Decoder, 2025eko azaroaren 23a) (ingelesez)", "url": "https://the-decoder.com/gemini-3-pro-and-gpt-5-still-fail-at-complex-physics-tasks-designed-for-real-scientific-research/"}
+             ],
+             "mensaje": {"grupo": "chatgpt", "id": 42505},
+             "repaso": ["Entradilla: «pasaba del 9 %» pasa a «llegaba al 10 %», porque Gemini 3 Pro obtuvo 9,1 % y el cuerpo ya decía «al 10 %». Lo demás, sin cambios."],
+             "comprobado": "Mensaje 42505 de ChatGPTedu (t.me embed, 21-11-2025): anuncia CritPt en ArtificialAnalysis.ai con ningún modelo por encima del 9 %. Clasificación en artificialanalysis.ai/evaluations/critpt (17-11-2026): Claude Fable 5.2 Xhigh 35,7 %, Max 35,4 %, High 32,9 %; 71 retos (70 de prueba y uno de ejemplo). arXiv 2509.26574: 71 retos, 190 puntos de control, más de 50 físicos, primera versión del 30-09-2025. The Decoder (23-11-2025): Gemini 3 Pro Preview 9,1 %, GPT-5.1 (high) 4,9 %; conclusión de los autores (rigor, creatividad y precisión; asistente de investigación y no científico artificial). Tema y producto no están en «Ya contado»; sin piezas publicadas previas sobre CritPt, así que no hay enlaces pieza:. Cuerpo y entradilla: unas 240 palabras."}]}

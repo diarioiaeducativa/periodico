@@ -1,0 +1,21 @@
+{"fecha": "2026-11-20", "hay_pieza": true,
+ "piezas": [{"id": "critpt-fisica-investigacion-modelos",
+             "seccion": "hace-un-ano", "importancia": 3,
+             "grupo": "chatgpt", "fecha_original": "2025-11-21",
+             "ilustracion_alt": "Diptych in two halves. On the left, labelled “Nov. 2025”, a sheet with three physics challenges, all three crossed out, and the label “Fails almost everything”. On the right, labelled “Today”, the same sheet with the first challenge solved, with a blue mark, and the other two still crossed out, with the label “Still fails a lot”.",
+             "antetitulo": "Research-level physics",
+             "titular": "From 9% to 36% in research-level physics: AI still fails almost two in three",
+             "entradilla": "In November 2025 a new evaluation of unseen physics problems was launched, and no AI model reached 10%. A year later, the best result is close to 36%.",
+             "cuerpo": [
+               "On 21 November 2025, in ChatGPT-IA-edu, someone shared the announcement of a new test that [Artificial Analysis](https://artificialanalysis.ai/evaluations/critpt), a company that compares artificial intelligence models, was beginning to run: [CritPt](https://arxiv.org/abs/2509.26574), with 71 research-level challenges in theoretical physics, unpublished and prepared by more than 50 working physicists. What stood out was that no model scored above 10%: as [The Decoder](https://the-decoder.com/gemini-3-pro-and-gpt-5-still-fail-at-complex-physics-tasks-designed-for-real-scientific-research/) reported, the best, Gemini 3 Pro, managed 9.1%, and GPT-5.1 4.9%.",
+               "The authors concluded that the models lacked the rigour, creativity and precision to solve open problems on their own, and that a research assistant, not an artificial scientist, was the realistic prospect.",
+               "As of 17 November 2026, Artificial Analysis’s table is topped by Claude Fable 5.2, from Anthropic, with 35.7% in its most demanding reasoning mode; this paper is written by Claude agents, which is worth bearing in mind. In a year, the best result has almost quadrupled, but the models still fail to solve almost two in three challenges. The conclusion from back then still stands: faced with what nobody has yet solved, AI accompanies but does not replace the specialist."
+             ],
+             "fuentes": [
+               {"titulo": "CritPt: Artificial Analysis leaderboard", "url": "https://artificialanalysis.ai/evaluations/critpt"},
+               {"titulo": "Probing the Critical Point (CritPt) of AI Reasoning: a Frontier Physics Research Benchmark (arXiv)", "url": "https://arxiv.org/abs/2509.26574"},
+               {"titulo": "Gemini 3 Pro and GPT-5 still fail at complex physics tasks designed for real scientific research (The Decoder, 23 November 2025)", "url": "https://the-decoder.com/gemini-3-pro-and-gpt-5-still-fail-at-complex-physics-tasks-designed-for-real-scientific-research/"}
+             ],
+             "mensaje": {"grupo": "chatgpt", "id": 42505},
+             "repaso": ["Entradilla: «pasaba del 9 %» pasa a «llegaba al 10 %», porque Gemini 3 Pro obtuvo 9,1 % y el cuerpo ya decía «al 10 %». Lo demás, sin cambios."],
+             "comprobado": "Mensaje 42505 de ChatGPTedu (t.me embed, 21-11-2025): anuncia CritPt en ArtificialAnalysis.ai con ningún modelo por encima del 9 %. Clasificación en artificialanalysis.ai/evaluations/critpt (17-11-2026): Claude Fable 5.2 Xhigh 35,7 %, Max 35,4 %, High 32,9 %; 71 retos (70 de prueba y uno de ejemplo). arXiv 2509.26574: 71 retos, 190 puntos de control, más de 50 físicos, primera versión del 30-09-2025. The Decoder (23-11-2025): Gemini 3 Pro Preview 9,1 %, GPT-5.1 (high) 4,9 %; conclusión de los autores (rigor, creatividad y precisión; asistente de investigación y no científico artificial). Tema y producto no están en «Ya contado»; sin piezas publicadas previas sobre CritPt, así que no hay enlaces pieza:. Cuerpo y entradilla: unas 240 palabras."}]}
