@@ -5,12 +5,16 @@ traductor y la comprobación de lo traducido, sin IA.
 
     scripts/idiomas.py lista                          los idiomas a los que se traduce
     scripts/idiomas.py encargo PASO IDIOMA            el encargo encargos/pasos/PASO.md para ese idioma
-    scripts/idiomas.py comprobar TIPO FECHA IDIOMA    comprueba lo traducido; quita lo que no vale
+    scripts/idiomas.py comprobar TIPO FECHA IDIOMA [--conservar]   comprueba lo traducido; quita lo que no vale
+    scripts/idiomas.py falta TIPO FECHA IDIOMA        dice lo que tenía que estar traducido y no está
 
 TIPO: edicion (edición, viñeta y dibujos), dibujos, vineta (la de reserva, sola), biblioteca, repositorio, reportaje, hace-un-ano, comentario-semana
 o multimedia (estos dos, con la semana AAAA-WW en lugar de la fecha). Lo que se
 quita deja la página de ese idioma con el castellano, como cuando falta una traducción. Sale con 1
-si ha quitado algo, y lo dice en una línea."""
+si ha quitado algo, y lo dice en una línea. `traducir.sh` repite entonces la traducción una vez, y esa segunda
+vez comprueba con --conservar: si las piezas son las mismas y solo fallan algunas, el archivo se queda, con esas
+piezas en castellano (`sin_traducir`) y las demás traducidas, para que un artículo no deje sin traducir el número."""
+import copy
 import json
 import pathlib
 import re
@@ -18,6 +22,8 @@ import sys
 import xml.etree.ElementTree as ET
 
 RAIZ = pathlib.Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+from forma import parrafos  # noqa: E402
 
 IDIOMAS = {
     "ca": {
@@ -70,26 +76,37 @@ def textos(x):
     return []
 
 
-def problemas_piezas(orig, trad, lista="piezas"):
-    """Lo que no cuadra entre una lista de piezas y su traducción."""
+def problemas_por_pieza(orig, trad, lista="piezas"):
+    """Lo que no cuadra entre una lista de piezas y su traducción: None si no son las mismas piezas; si lo
+    son, {id: [problemas]} con las que fallan. Los párrafos se cuentan como los cuenta el generador: un cuerpo
+    que es un texto seguido vale lo mismo que su lista de párrafos (scripts/forma.py)."""
     p_o, p_t = orig.get(lista) or [], trad.get(lista) or []
     if [p.get("id") for p in p_o] != [p.get("id") for p in p_t]:
-        return ["no tiene las mismas piezas"]
-    malos = []
+        return None
+    malos = {}
     for a, b in zip(p_o, p_t):
+        m = []
         for campo in ("titular", "entradilla"):
-            if a.get(campo) and not (b.get(campo) or "").strip():
-                malos.append(f'{a["id"]}: falta {campo}')
-        if len(a.get("cuerpo") or []) != len(b.get("cuerpo") or []):
-            malos.append(f'{a["id"]}: no tiene los mismos párrafos')
+            if a.get(campo) and not str(b.get(campo) or "").strip():
+                m.append(f"falta {campo}")
+        if len(parrafos(a.get("cuerpo")) or []) != len(parrafos(b.get("cuerpo")) or []):
+            m.append("no tiene los mismos párrafos")
         ta, tb = " ".join(textos(a)), " ".join(textos(b))
         if len(ENLACE.findall(ta)) != len(ENLACE.findall(tb)):
-            malos.append(f'{a["id"]}: no tiene los mismos enlaces')
+            m.append("no tiene los mismos enlaces")
         if ta and not 0.5 <= len(tb) / len(ta) <= 2.0:
-            malos.append(f'{a["id"]}: el largo no cuadra ({len(tb)} frente a {len(ta)} caracteres)')
+            m.append(f"el largo no cuadra ({len(tb)} frente a {len(ta)} caracteres)")
         if valores_grafico(a) != valores_grafico(b):
-            malos.append(f'{a["id"]}: el gráfico no tiene los mismos datos')
+            m.append("el gráfico no tiene los mismos datos")
+        if m:
+            malos[a["id"]] = m
     return malos
+
+
+def problemas_piezas(orig, trad, lista="piezas"):
+    """Lo mismo, en una lista de frases."""
+    por = problemas_por_pieza(orig, trad, lista)
+    return ["no tiene las mismas piezas"] if por is None else [f"{i}: {x}" for i, m in por.items() for x in m]
 
 
 def valores_grafico(p):
@@ -106,20 +123,56 @@ def leer(f):
         return None
 
 
-def comprobar_json(carpeta, fecha, c, lista="piezas"):
+def comprobar_json(carpeta, fecha, c, lista="piezas", conservar=False):
+    """Comprueba una traducción con su original. Lo que no vale se quita; con `conservar` (el segundo intento),
+    si las piezas son las mismas, el archivo se queda con las que fallan en castellano y las demás traducidas."""
     orig, f = RAIZ / carpeta / f"{fecha}.json", RAIZ / f"{carpeta}-{c}" / f"{fecha}.json"
     if not f.exists() or not orig.exists():
         return []
-    trad = leer(f)
-    malos = ["no es un JSON válido"] if trad is None else problemas_piezas(leer(orig) or {}, trad, lista)
-    if carpeta == "ediciones" and trad is not None:
-        o = leer(orig) or {}
-        if len(o.get("breves") or []) != len(trad.get("breves") or []):
-            malos.append("no tiene los mismos breves")
-    if malos:
+    nombre = f"{carpeta}-{c}/{fecha}.json"
+    o, trad = leer(orig) or {}, leer(f)
+    if not isinstance(trad, dict) or not isinstance(trad.get(lista) or [], list) \
+            or not all(isinstance(p, dict) for p in trad.get(lista) or []):
         f.unlink()
-        return [f"{carpeta}-{c}/{fecha}.json quitado: " + "; ".join(malos)]
-    return []
+        return [f"{nombre} quitado: " + ("no es un JSON válido" if trad is None else "no tiene la forma del original")]
+    por = problemas_por_pieza(o, trad, lista)
+    if por is None:
+        f.unlink()
+        return [f"{nombre} quitado: no tiene las mismas piezas"]
+    breves_mal = carpeta == "ediciones" and len(o.get("breves") or []) != len(trad.get("breves") or [])
+    malos = [f"{i}: {x}" for i, m in por.items() for x in m] + (["no tiene los mismos breves"] if breves_mal else [])
+    if not malos:
+        return []
+    if not conservar:
+        f.unlink()
+        return [f"{nombre} quitado: " + "; ".join(malos)]
+    for i, p in enumerate(trad.get(lista) or []):
+        if p.get("id") in por:
+            trad[lista][i] = dict(copy.deepcopy(o[lista][i]), sin_traducir=True)
+    if breves_mal:
+        trad["breves"] = copy.deepcopy(o.get("breves") or [])
+    f.write_text(json.dumps(trad, ensure_ascii=False, indent=1) + "\n")
+    return [f"{nombre}: sale en castellano solo lo que no vale ({'; '.join(malos)}); lo demás, traducido"]
+
+
+# Lo que cada tipo tiene que dejar traducido: la carpeta y las claves que dicen que el original tiene algo
+PRINCIPAL = {"edicion": ("ediciones", ("piezas", "breves")), "biblioteca": ("biblioteca", ("piezas",)),
+             "repositorio": ("repositorio", ("piezas",)), "hace-un-ano": ("hace-un-ano", ("piezas",)),
+             "reportaje": ("reportajes", ("apartados",)), "vineta": ("vinetas", ("elegida",))}
+
+
+def falta(tipo, fecha, c):
+    """Lo que tenía que estar traducido y no está: el traductor no lo escribió (se cortó, falló) o la
+    comprobación lo quitó. Con el original vacío o sin original no falta nada."""
+    pares = [PRINCIPAL[tipo]] if tipo in PRINCIPAL else []
+    if tipo == "edicion":
+        pares.append(PRINCIPAL["vineta"])
+    salida = []
+    for carpeta, claves in pares:
+        o = leer(RAIZ / carpeta / f"{fecha}.json")
+        if isinstance(o, dict) and any(o.get(k) for k in claves) and not (RAIZ / f"{carpeta}-{c}" / f"{fecha}.json").exists():
+            salida.append(f"{carpeta}-{c}/{fecha}.json no está")
+    return salida
 
 
 def comprobar_vineta(fecha, c):
@@ -160,9 +213,9 @@ def comprobar_dibujos(fecha, c):
     return salida
 
 
-def comprobar(tipo, fecha, c):
+def comprobar(tipo, fecha, c, conservar=False):
     if tipo == "edicion":
-        return comprobar_json("ediciones", fecha, c) + comprobar_vineta(fecha, c) + comprobar_dibujos(fecha, c)
+        return comprobar_json("ediciones", fecha, c, conservar=conservar) + comprobar_vineta(fecha, c) + comprobar_dibujos(fecha, c)
     if tipo == "dibujos":
         return comprobar_dibujos(fecha, c)
     if tipo == "vineta":   # la viñeta de reserva, sola (ADR 0068)
@@ -188,9 +241,9 @@ def comprobar(tipo, fecha, c):
                 salida.append(f"reportajes-{c}/{fecha}.json quitado: " + "; ".join(malos))
         return salida
     if tipo in ("biblioteca", "repositorio"):
-        return comprobar_json(tipo, fecha, c) + comprobar_dibujos(fecha, c)
+        return comprobar_json(tipo, fecha, c, conservar=conservar) + comprobar_dibujos(fecha, c)
     if tipo == "hace-un-ano":   # ADR 0040
-        return comprobar_json(tipo, fecha, c) + comprobar_dibujos(fecha, c)
+        return comprobar_json(tipo, fecha, c, conservar=conservar) + comprobar_dibujos(fecha, c)
     if tipo == "comentario-semana":   # aquí «fecha» es la semana, AAAA-WW (ADR 0038)
         from comentario_semana import traduccion
         return traduccion(fecha, c)
@@ -207,10 +260,15 @@ if __name__ == "__main__":
     elif orden == "encargo":
         sys.stdout.write(encargo(sys.argv[2], sys.argv[3]))
     elif orden == "comprobar":
-        quitado = comprobar(sys.argv[2], sys.argv[3], sys.argv[4])
+        quitado = comprobar(sys.argv[2], sys.argv[3], sys.argv[4], conservar="--conservar" in sys.argv[5:])
         for linea in quitado:
             print(f"traducción: {linea}")
         sys.exit(1 if quitado else 0)
+    elif orden == "falta":
+        faltan = falta(sys.argv[2], sys.argv[3], sys.argv[4])
+        for linea in faltan:
+            print(f"traducción: {linea}")
+        sys.exit(1 if faltan else 0)
     else:
         print(__doc__)
         sys.exit(2)

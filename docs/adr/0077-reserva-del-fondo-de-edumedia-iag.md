@@ -77,7 +77,7 @@ Una tercera fuente de reserva, «Del fondo de EduMedia», escrita como las otras
   traducidas del número («no tiene los mismos párrafos») y el generador pintó en castellano una letra
   por párrafo. Se vio en la vista previa, antes de publicar: se partió el cuerpo en sus cuatro
   párrafos y se rehicieron las traducciones (`scripts/traducir-dia.sh`). Para que no se repita: el
-  encargo pide la lista; `scripts/forma.py`, sin IA, parte un cuerpo que llegue como texto, tras el
-  revisor en `edumedia-fondo.sh` y antes de traducir en `noche.sh`; y `cargar()` de `generar.py` lo
-  parte también al leer, por si llega por otro camino. Probado con el archivo que falló: cuatro
+  encargo pide la lista; `scripts/forma.py`, sin IA, parte un cuerpo que llegue como texto, antes de
+  cada traducción (lo llama `traducir`, en `scripts/traducir.sh`; ADR 0026); y `cargar()` de
+  `generar.py` lo parte también al leer, por si llega por otro camino. Probado con el archivo que falló: cuatro
   párrafos, lo demás idéntico, y una segunda pasada no cambia nada.

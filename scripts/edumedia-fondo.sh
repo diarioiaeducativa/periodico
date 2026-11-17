@@ -66,7 +66,6 @@ for intento in 1 2; do
 done
 ids=$(piezas "ediciones/$FECHA.json")
 [ -n "$ids" ] || { log "edumedia-fondo: el revisor no da el artículo por bueno"; exit 2; }
-python3 scripts/forma.py "ediciones/$FECHA.json" >> "$REG" 2>&1 || true   # el cuerpo, lista de párrafos, antes de dibujar y traducir
 
 cp "ediciones/$FECHA.json" "ediciones-borrador/$FECHA-antes-dibujo.json"
 agente "$SONNET" 34-edumedia-fondo-ilustracion 30

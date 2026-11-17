@@ -244,8 +244,13 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
   (lo lanza `construeix.sh`), porque `bubblewrap update` lo borra del manifiesto. Para probar, el emulador
   `prueba-twa` (`ANDROID_AVD_HOME=~/.config/.android/avd`), sin ventana; el registro, `adb logcat -s Avisos`.
 - **La forma de las piezas** (ADR 0077): el cuerpo es una lista de párrafos. `scripts/forma.py ARCHIVO`, sin IA,
-  parte el que llega como texto seguido (tras el revisor de `edumedia-fondo.sh` y antes de traducir en `noche.sh`),
-  y `cargar()` lo parte al leer. Un encargo nuevo con modelo de JSON lo pide como lista.
+  parte el que llega como texto seguido; lo llama `traducir` antes de cada traducción, y `cargar()` lo parte al
+  leer. Un encargo nuevo con modelo de JSON lo pide como lista.
+- **Una traducción que no vale no deja el número en castellano** (ADR 0026, cambio del 17-11-2026): `traducir`
+  (`scripts/traducir.sh`) repite una vez la que no pasa la comprobación o no se ha escrito, diciéndole al
+  traductor qué falló; si la segunda tampoco vale entera, `idiomas.py comprobar --conservar` deja en castellano
+  solo los artículos que fallan (`sin_traducir`) y el resto traducido. Un tipo nuevo de pieza que se traduzca
+  entra en `PRINCIPAL` de `idiomas.py`, o no se sabrá que falta.
 - **Rehacer una traducción quitada antes de publicar**: arreglar el original y, en el contenedor,
   `scripts/traducir-dia.sh FECHA` (traduce solo lo que falta), `generar.py` y `scripts/revisar-idiomas.py --dia FECHA`.
 - **Cinco idiomas** (ADR 0026): `/ca/`, `/gl/`, `/eu/` y `/en/`;

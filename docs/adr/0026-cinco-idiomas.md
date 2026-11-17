@@ -76,3 +76,43 @@ la vista previa entera (servida desde el NAS) y la aprobó el 06-11-2026: «Vist
   revisa. Se declara automática; si llegan correcciones, se incorporan a los encargos.
 - Tiempo de la noche: cuatro idiomas en dos tandas, unos cuatro minutos más cuando todo va bien. Con
   los tiempos máximos, el plan B de las 6:30 (ADR 0021) sigue cubriendo el número.
+
+## Cambio del 17-11-2026: una traducción que no vale se repite, y un artículo no deja sin traducir el número
+
+**Qué pasó.** En el número del 17-11-2026, un artículo de la reserva tenía el cuerpo como un texto
+seguido y no como lista de párrafos (ADR 0077). Los cuatro traductores lo tradujeron bien, en cuatro
+párrafos, y la comprobación, que contaba 1.333 «párrafos» en el original (sus caracteres), quitó las
+cuatro ediciones enteras: dos artículos y un breve en castellano en las cuatro lenguas. No hubo
+reintento; solo un aviso a la 1:16. Se arregló a mano antes de publicar.
+
+**Qué cambia**, todo en `scripts/traducir.sh` e `scripts/idiomas.py`, para cualquier cosa que se
+traduzca con `traducir` (edición, Biblioteca, Repositorio, «Hace un año», reportaje, reserva):
+
+1. **El original, antes de traducirlo**: `scripts/forma.py` le da la forma debida. Si el original
+   está mal formado, fallan a la vez todas las lenguas; y la comprobación cuenta los párrafos como
+   el generador, así que un cuerpo en un texto vale lo mismo que su lista.
+2. **Segundo intento**: la traducción que no pasa la comprobación, o que el traductor no ha llegado
+   a escribir (`idiomas.py falta`), se repite una vez, con el motivo añadido al encargo.
+3. **Se conserva lo que vale**: si la segunda tampoco pasa pero las piezas son las mismas, el
+   archivo se queda con las piezas que fallan en castellano (marcadas `sin_traducir`) y las demás
+   traducidas (`idiomas.py comprobar --conservar`). Solo se quita entero si no es JSON, no tiene la
+   forma del original o no trae las mismas piezas.
+4. Lo que al final queda en castellano se sigue apuntando en `registro/FECHA-traduccion.txt` y se
+   avisa, como antes.
+
+**Alternativas descartadas.** Dejarlo en el arreglo de la causa concreta (el encargo que pedía el
+cuerpo como texto): la siguiente pieza mal formada, o un traductor que se corta, habrían vuelto a
+dejar el número en castellano. Repetir más de una vez: con el mismo original y el mismo encargo, un
+tercer intento rara vez cambia el resultado y alarga la noche.
+
+**Validación.** En una copia, con un traductor simulado y los archivos del 17-11-2026: (1) el
+original con el cuerpo en un texto y traducciones correctas: pasan a la primera; (2) un párrafo de
+menos la primera vez y bien la segunda: queda traducido, sin aviso; (3) un párrafo de menos las dos
+veces: ese artículo en castellano y el otro traducido, con aviso; (4) el traductor no escribe nada
+ninguna vez: aviso de que no está; (5) no escribe nada la primera vez y bien la segunda: traducido.
+La regla nueva da por buenas las 172 traducciones ya publicadas. El generador publica un número con
+un artículo `sin_traducir`. Pendiente: verlo en una noche real.
+
+**Riesgos.** El segundo intento alarga la noche solo cuando algo falla (unos dos minutos por lengua).
+Un artículo en castellano dentro de una edición traducida no lleva ningún letrero: lo detecta
+`revisar-idiomas.py` y se avisa.
