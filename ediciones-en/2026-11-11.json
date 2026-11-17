@@ -153,9 +153,9 @@
       },
       "comprobado": "Opened the page: 19 simulations, with the areas and filters by area and topic described; the draft's list said “ramp”, which on the page is “Inclined plane” (corrected). The page gives no author or licence; the authorship (Juan José de Haro) and the plans come from message 14858, checked on Telegram, where he appears as the author.",
       "ilustracion": null,
-      "ilustracion_alt": "Three cards under the label “19 simulations”: the parabolic trajectory of a ball, “Physics”; a flask, “Chemistry”; and a 3D cube, “3D lab”.",
-      "correccion": "Corrected on 13 November 2026: an earlier version attributed Eduvers to Juan José de Haro, who is not its author. The website does not say who makes it.",
-      "corregido": "2026-11-13"
+      "ilustracion_alt": "Three cards under the label “Simulations and labs”: the parabolic trajectory of a ball, “Physics”; a flask, “Chemistry”; and a 3D cube, “3D lab”.",
+      "correccion": "Corrected on 13 November 2026: an earlier version attributed Eduvers to Juan José de Haro, who is not its author. The website does not say who makes it. Corrected on 17 November 2026: the drawing labelled three cards that are subject areas, not simulations, “19 simulations”.",
+      "corregido": "2026-11-17"
     }
   ],
   "breves": [],

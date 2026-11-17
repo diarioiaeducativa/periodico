@@ -153,9 +153,9 @@
       },
       "comprobado": "Abierta la página: 19 simulaciones, con las áreas y filtros por área y tema descritos; la lista del borrador decía «rampa», que en la página es «Plano inclinado» (corregido). La página no indica autor ni licencia; la autoría (Juan José de Haro) y los planes salen del mensaje 14858, comprobado en Telegram, donde figura como autor.",
       "ilustracion": null,
-      "ilustracion_alt": "«19 simulazio» errotuluaren azpian hiru txartel: bola baten ibilbide parabolikoa, «Fisika»; matraze bat, «Kimika»; eta 3Dko kubo bat, «3D laborategia».",
-      "correccion": "2026ko azaroaren 13an zuzendua: aurreko bertsio batek Eduvers Juan José de Haroren lantzat jotzen zuen, baina ez da haren egilea. Webak ez du adierazten nor dagoen horren atzean.",
-      "corregido": "2026-11-13"
+      "ilustracion_alt": "«Simulazioak eta laborategiak» errotuluaren azpian hiru txartel: bola baten ibilbide parabolikoa, «Fisika»; matraze bat, «Kimika»; eta 3Dko kubo bat, «3D laborategia».",
+      "correccion": "2026ko azaroaren 13an zuzendua: aurreko bertsio batek Eduvers Juan José de Haroren lantzat jotzen zuen, baina ez da haren egilea. Webak ez du adierazten nor dagoen horren atzean. 2026ko azaroaren 17an zuzendua: marrazkiak «19 simulazio» zioen eremuak diren hiru txartelen gainean, ez simulazioak.",
+      "corregido": "2026-11-17"
     }
   ],
   "breves": [],

@@ -153,9 +153,9 @@
       },
       "comprobado": "Abierta la página: 19 simulaciones, con las áreas y filtros por área y tema descritos; la lista del borrador decía «rampa», que en la página es «Plano inclinado» (corregido). La página no indica autor ni licencia; la autoría (Juan José de Haro) y los planes salen del mensaje 14858, comprobado en Telegram, donde figura como autor.",
       "ilustracion": null,
-      "ilustracion_alt": "Tres targetes sota el rètol «19 simulacions»: la trajectòria parabòlica d'una bola, «Física»; un matràs, «Química»; i un cub en 3D, «Laboratori 3D».",
-      "correccion": "Corregit el 13 de novembre de 2026: una versió anterior atribuïa Eduvers a Juan José de Haro, que no n'és l'autor. El web no indica qui el fa.",
-      "corregido": "2026-11-13"
+      "ilustracion_alt": "Tres targetes sota el rètol «Simulacions i laboratoris»: la trajectòria parabòlica d'una bola, «Física»; un matràs, «Química»; i un cub en 3D, «Laboratori 3D».",
+      "correccion": "Corregit el 13 de novembre de 2026: una versió anterior atribuïa Eduvers a Juan José de Haro, que no n'és l'autor. El web no indica qui el fa. Corregit el 17 de novembre de 2026: el dibuix retolava «19 simulacions» sobre tres targetes que són àrees, no simulacions.",
+      "corregido": "2026-11-17"
     }
   ],
   "breves": [],

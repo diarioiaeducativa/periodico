@@ -60,7 +60,9 @@
       },
       "comprobado": "Reviewer: opened the Holmio website (118 elements, six accusations, case of the day, archive, free practice, light and dark modes, image for sharing; signed by El profe de la bata). Checked message t.me/vceduca/14749. The points about Claude Code, the technologies, GitHub Pages, the absence of registration and the verified data are what its author says and have not been verified. The relationship between Dani García and the website’s signature is taken from the message. The key pieza:2026-11-03/misiones-orbitales is in publicado.txt, also by El profe de la bata. The accuracy of the cases has not been checked.",
       "ilustracion": null,
-      "ilustracion_alt": "A grid of squares imitating the periodic table, with the label “Case of the day” above and “118 elements” below; a blue magnifying glass points at one square. On the right, six circles, one with a red cross, labelled “6 accusations”."
+      "ilustracion_alt": "A grid of squares imitating the periodic table, with the label “Case of the day” above and “One case per element” below; a blue magnifying glass points at one square. On the right, six circles, one with a red cross, labelled “6 accusations”.",
+      "correccion": "Corrected on 17 November 2026: the drawing labelled a grid of 32 squares “118 elements”; it now says “One case per element”.",
+      "corregido": "2026-11-17"
     },
     {
       "id": "incluxat-conservatorio",

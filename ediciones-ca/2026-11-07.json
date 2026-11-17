@@ -60,7 +60,9 @@
       },
       "comprobado": "Revisor: abierta la web de Holmio (118 elementos, seis acusaciones, caso del día, archivo, práctica libre, modo claro y oscuro, imagen para compartir; firma El profe de la bata). Comprobado el mensaje t.me/vceduca/14749. Lo de Claude Code, las tecnologías, GitHub Pages, la ausencia de registro y los datos contrastados es lo que dice su autor y no se ha verificado. La relación entre Dani García y la firma de la web se toma del mensaje. La clave pieza:2026-11-03/misiones-orbitales está en publicado.txt, también de El profe de la bata. No se ha comprobado la exactitud de los casos.",
       "ilustracion": null,
-      "ilustracion_alt": "Una quadrícula de caselles que imita la taula periòdica, amb el rètol «Cas del dia» a sobre i «118 elements» a sota; una lupa blava assenyala una casella. A la dreta, sis cercles, un amb una creu vermella, amb el rètol «6 acusacions»."
+      "ilustracion_alt": "Una quadrícula de caselles que imita la taula periòdica, amb el rètol «Cas del dia» a sobre i «Un cas per element» a sota; una lupa blava assenyala una casella. A la dreta, sis cercles, un amb una creu vermella, amb el rètol «6 acusacions».",
+      "correccion": "Corregit el 17 de novembre de 2026: el dibuix retolava «118 elements» sota una quadrícula de 32 caselles; ara diu «Un cas per element».",
+      "corregido": "2026-11-17"
     },
     {
       "id": "incluxat-conservatorio",

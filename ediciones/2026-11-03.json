@@ -66,7 +66,9 @@
       },
       "comprobado": "Repositorio de GitHub (WebFetch, repasado): descripción, nueve misiones, dos versiones, práctica sin cuentas e intentos ilimitados, versión de clase con Apps Script, hoja y panel, estrellas (error <5 % = todas), autoría y licencia CC BY-NC-SA 4.0. La demo carga (modo práctica, contador de 18 estrellas) pero no muestra autoría ni licencia. Se han quitado lo no confirmado en la fuente: nombres concretos de los simuladores, «tercera ley» de Kepler, «datos nuevos en cada intento», «mismo código y puntúan igual». Mensaje de Telegram 14590 comprobado.",
       "ilustracion": null,
-      "ilustracion_alt": "Un planeta rodeado por una órbita elíptica azul con nueve puntos, uno por misión («9 misiones»), y a la derecha tres estrellas que se obtienen con un error inferior al 5 % («Error < 5 %»)."
+      "ilustracion_alt": "Un planeta rodeado por una órbita elíptica azul con nueve puntos, uno por misión («9 misiones»), y a la derecha tres estrellas rotuladas «Todas las estrellas», que se obtienen con un error inferior al 5 % («Error < 5 %»).",
+      "correccion": "Corregido el 17 de noviembre de 2026: el dibujo rotulaba «Tres estrellas», una cifra que no da la actividad; con un error inferior al 5 % se obtienen todas.",
+      "corregido": "2026-11-17"
     },
     {
       "id": "pulso-demografico",
