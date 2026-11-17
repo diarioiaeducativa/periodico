@@ -54,7 +54,7 @@
       },
       "comprobado": "Revisor: contrastado con el texto completo del PDF de la entrada (cita literal, desafíos y medidas de la tabla 1, Reglamento y alto riesgo, edad de 14 años, siete fases de 2.3.2, diez principios con buena práctica y práctica a revisar, cifras ambientales, anexos 1 a 3, nota final sobre ChatGPT y Gemini, primera versión de 2024). La noticia oficial del INTEF (intef.es, 8 de septiembre de 2026) confirma versión 2.0, septiembre de 2026, novedades y licencia CC BY-SA; su enlace de descarga (run.gob.es) lleva a un PDF del INTEF cuyo número de páginas no se pudo contrastar con el de la entrada, por eso el enlace del documento es la noticia oficial. Las cifras ambientales y la edad de 14 años son las que da la guía, sin comprobar en sus fuentes. Los títulos de los tres documentos de la biblioteca enlazados figuran en la lista de la entrada (el de la OCDE/Comisión Europea es la referencia que cita la guía); no se abrieron esos documentos. No hay piezas publicadas sobre esta guía en publicado.txt. Vigencia: sin edición posterior encontrada.",
       "ilustracion": "Esquema en tres columnas (alumnado, profesorado, centro) sobre una base común con los cuatro ámbitos de la alfabetización en IA (interactuar, crear, gestionar, modelar); sobre la columna del centro, una escalera de siete peldaños que acaba en un círculo de revisión.",
-      "ilustracion_alt": "Giza figura bat duten hiru txartel, «Ikasleak», «Irakasleak» eta «Ikastetxea» izenekoak, «Lau eremu» izeneko oinarri baten gainean; ikastetxearen txartelaren gainean, «Zazpi fase» izeneko zazpi mailako eskailera bat igotzen da, berrikuspen-gezi bat duen zirkulu batean amaitzen dena.",
+      "ilustracion_alt": "Giza figura bat duten hiru txartel, «Ikasleak», «Irakasleak» eta «Ikastetxea» izenekoak, «Hiru profil» izeneko oinarri baten gainean; ikastetxearen txartelaren gainean, «Zazpi fase» izeneko zazpi mailako eskailera bat igotzen da, berrikuspen-gezi bat duen zirkulu batean amaitzen dena.",
       "repaso": [
         "Quitado «adopta como marco el Reglamento europeo de IA» (el texto lo trata como contexto normativo, no como marco adoptado).",
         "Quitado «etapas no universitarias» (no confirmado en el texto) y «unas 114 páginas», sustituido por «más de cien páginas».",
@@ -62,7 +62,9 @@
         "Orientaciones v3.0: se quita que «se ocupa en detalle» del tema de datos (solo consta su título en la entrada); se deja la relación comprobable.",
         "Precisado que el priorizar herramientas es de las puestas a disposición o autorizadas por las administraciones educativas, y que las cifras ambientales son «según la guía».",
         "Recortado el cuerpo a menos de 700 palabras (quitado «aprender para, con y sobre la IA», que no se pudo confirmar, y duplicidades)."
-      ]
+      ],
+      "correccion": "2026ko azaroaren 17an zuzendua: marrazkiak gidaren hiru profilak «Lau eremu» izeneko oinarri baten gainean jartzen zituen; lau eremuak AAren alfabetatzearenak dira, ez profilak.",
+      "corregido": "2026-11-17"
     }
   ],
   "ya_contado": [],

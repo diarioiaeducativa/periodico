@@ -127,6 +127,8 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
   `noche.sh` los sábados (o con `REPORTAJE=1`).
 - **Revisión de dibujos** (ADR 0005): `scripts/revisar-dibujos.py`; lo que
   sigue mal va a `revision/FECHA/retirados/` y avisa.
+  Los rótulos con número (ADR 0089): el revisor dice de cada uno de qué frase sale y cuántos objetos lo
+  representan, y `scripts/recuentos.py comprobar FECHA` lo comprueba; `recuentos.py inventario` lista los dibujos con cifras.
 - **Biblioteca** (ADR 0006): `scripts/biblioteca.sh FECHA [ids]`.
 - **Repositorio de VCE** (ADR 0008 y 0018): `scripts/repositorio.sh FECHA
   [urls]`; la cola se calcula cada noche; los viernes, «La semana del

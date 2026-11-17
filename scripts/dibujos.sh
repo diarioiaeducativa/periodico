@@ -15,9 +15,17 @@ _ronda_dibujos() {   # deja revision/FECHA/rehacer.json con lo que no pasa; vac�
     0|4) ;;
     *) log "AVISO: no se pudieron revisar los dibujos (navegador): salen sin revisión"; return 1 ;;
   esac
-  rm -f "revision/$FECHA/visual.json"
+  rm -f "revision/$FECHA/visual.json" "revision/$FECHA/recuentos.json"
   python3 -c 'import json,sys; sys.exit(0 if json.load(open(sys.argv[1]))["dibujos"] else 1)' "revision/$FECHA/es.json" || return 0
   agente "$SONNET" 2b-revision-dibujos 15
+  # Los rótulos con número (ADR 0089): si el revisor no los ha contrastado todos con el texto, otra vez; lo que
+  # siga sin contrastar, o no cuadre, vuelve al ilustrador
+  python3 scripts/recuentos.py comprobar "$FECHA" > /dev/null 2>> "$REG"
+  if [ $? = 3 ]; then
+    log "el revisor no ha contrastado con el texto todos los rótulos con número: vuelve a mirarlos"
+    agente "$SONNET" 2b-revision-dibujos 15
+    python3 scripts/recuentos.py comprobar "$FECHA" > /dev/null 2>> "$REG"
+  fi
   python3 - "$FECHA" <<'PY'
 import json, pathlib, sys
 d = pathlib.Path("revision") / sys.argv[1]
@@ -26,12 +34,17 @@ try:
     vis = {x["id"]: x for x in json.loads((d / "visual.json").read_text())["dibujos"]}
 except Exception:
     vis = {}
+try:
+    rec = json.loads((d / "recuentos.json").read_text())
+except Exception:
+    rec = {}
 rehacer = []
 for x in prog:
     motivos = list(x.get("problemas") or [])
     v = vis.get(x["id"])
     if v and v.get("veredicto") == "rehacer" and v.get("motivo"):
         motivos.append(v["motivo"])
+    motivos += rec.get("errores", {}).get(x["id"], []) + rec.get("faltan", {}).get(x["id"], [])
     if motivos:
         rehacer.append({"id": x["id"], "titular": x["titular"], "svg": x["svg"], "capturas": x.get("capturas", []), "motivos": motivos})
 (d / "rehacer.json").write_text(json.dumps({"dibujos": rehacer}, ensure_ascii=False, indent=1))

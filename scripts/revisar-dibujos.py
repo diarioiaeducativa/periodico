@@ -27,6 +27,8 @@ import threading
 
 from playwright.sync_api import sync_playwright
 
+from recuentos import rotulos
+
 RAIZ = pathlib.Path(__file__).resolve().parent.parent
 SITIO = RAIZ / "sitio"
 CLASES = {"t", "a", "r", "fa", "ft", "fz", "lbl"}
@@ -101,8 +103,11 @@ def dibujos(fecha, idioma):
         if not svg.exists() and sufijo:
             continue   # sin traducción, la página catalana usa el dibujo castellano, ya revisado
         if svg.exists():
-            out.append({"id": p["id"], "titular": p.get("titular", ""), "svg": str(svg.relative_to(RAIZ)),
-                        "pagina": f"{carpeta}{fecha}/{p['id']}.html"})
+            d = {"id": p["id"], "titular": p.get("titular", ""), "svg": str(svg.relative_to(RAIZ)),
+                 "pagina": f"{carpeta}{fecha}/{p['id']}.html"}
+            if idioma == "es":   # lo que el revisor visual tiene que contrastar con el texto (ADR 0089)
+                d["rotulos_numero"] = [r["rotulo"] for r in rotulos(svg)]
+            out.append(d)
     return out
 
 
