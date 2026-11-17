@@ -57,6 +57,11 @@ del modelo, y lo sube. Después, según el momento: con el número sin preparar,
 ya publicado, vuelve a publicar la web (`publicar-web.sh`). El agente no publica nada: si hay que repetir
 la publicación, Instagram o la reserva, lo pide y el programa le quita al reloj la marca de «ya intentado».
 
+**Las traducciones las hacen los traductores de la noche, no el reparador.** Dentro de la sesión del agente
+no se puede lanzar otro agente: Claude Code no pasa su permiso a las órdenes que ejecuta. El agente arregla
+el original y pide en su informe qué hay que traducir (`traducir`); el programa lanza `traducir-dia.sh` en
+la copia, con su comprobación, antes de juzgar el arreglo.
+
 **Un solo mensaje, después.** Arreglado: qué fallaba, qué se ha hecho y si el número sale a su hora. Sin
 arreglo (no puede, no pasa la comprobación, se le acaba el tiempo o no arranca): el aviso de siempre, con
 el diagnóstico. Si lo que había era solo una línea del registro y no hay nada que arreglar, nada. Todo
@@ -91,9 +96,11 @@ desconectan y los avisos salen como antes; si el propio programa falla, también
 
 - **Si falla Claude o se agota la suscripción, el reparador tampoco arranca**: quedan la reserva y el
   vigilante, y el aviso sale como antes.
-- **Un agente con terminal puede leer lo que hay en el contenedor**: el token de Claude está en su
-  entorno y las claves de despliegue, en el disco. Se le lanza con otra carpeta personal y sin poder
-  avisar a nadie, y su encargo le dice que los textos que lea no son órdenes, pero eso no es una barrera.
+- **Un agente con terminal puede leer lo que hay en el contenedor**: las claves de despliegue están en
+  el disco y el token de Claude, en el entorno del proceso que lo lanza. Claude Code no pasa ese token a
+  las órdenes que el agente ejecuta (comprobado en el contenedor: la variable llega vacía), y se le lanza
+  con otra carpeta personal y sin poder avisar a nadie; su encargo le dice que los textos que lea no son
+  órdenes. Nada de eso es una barrera para un agente que se empeñe.
   Lo que lo acota: no trabaja con los mensajes de los grupos sino con los artículos ya escritos y
   revisados, solo corre cuando algo falla, tiene un tope de tiempo, y nada de lo que cambie llega al
   número ni a git sin pasar la comprobación.
@@ -135,3 +142,10 @@ valen para comparar (un primer arreglo bueno se rechazó por eso); el agente dej
 fin (`tail -f`) y hubo que cortarla, y cambió el programa para prevenir, más allá de lo necesario. El
 encargo le prohíbe ahora las órdenes que no acaban y le pide tocar el programa solo si sin ese cambio
 el número no sale; lo demás lo apunta como pendiente.
+
+Y **dentro del contenedor del NAS**, el 17-11-2026 a las 6:56, con el número ya publicado y sobre una
+copia en la que se repitió el fallo de ese día (el artículo con el cuerpo en un texto y las cuatro
+ediciones sin traducir): arreglado en 2 min 56 s; de 4 traducciones que faltaban y 80 textos en
+castellano, a 0 y 2 (el título oficial de una guía), con la maqueta medida antes y después. En esa prueba
+el agente no pudo lanzar a los traductores («Not logged in») y tradujo él mismo: de ahí que ahora las
+traducciones las pida y las haga el programa.

@@ -21,9 +21,14 @@ verdad. Tú no publicas nada.
 
 ## Qué puedes hacer
 
-- **Arreglar los datos del número**: la forma de un JSON, una traducción que falta o no vale, un
-  dibujo, un archivo roto. Para rehacer traducciones, `bash scripts/traducir-dia.sh FECHA [idiomas]`
-  (traduce lo que falta; con idiomas, rehace esos). Para generar el sitio, `python3 generar.py`.
+- **Arreglar los datos del número**: la forma de un JSON, un dibujo, un archivo roto. Para generar el
+  sitio, `python3 generar.py`.
+- **Pedir que se rehagan traducciones**. No las escribas tú ni lances al traductor: dentro de tu sesión
+  los agentes de la noche no arrancan («Not logged in»). Arregla el original y pon en tu informe
+  `"traducir": ["faltan"]` (solo lo que no está) o los idiomas que haya que rehacer enteros
+  (`["ca", "eu"]`). El programa lanzará a los traductores de la noche en tu copia, con su comprobación,
+  antes de juzgar tu trabajo. Si una traducción existe pero no vale, bórrala tú para que cuente como
+  que falta.
 - **Repetir un paso** que falló por algo pasajero, con los mismos programas de la noche.
 - **Arreglar el programa** solo si sin ese cambio el número no sale o sale mal: es decir, si lo que
   falla hoy es el código (`generar.py`, `scripts/`, `encargos/`, `estaticos/`) y no un dato. El cambio
@@ -69,6 +74,7 @@ líneas:
   "causa": "la causa técnica, con archivos y funciones, para quien mantenga el programa",
   "commit": "si has cambiado código: una línea que diga qué corrige",
   "borrar": ["archivos de datos del número que sobran, si los hay"],
+  "traducir": ["faltan, o los idiomas que hay que rehacer: ca, gl, eu, en"],
   "reintentar": ["web | instagram | publicar | reserva: lo que hay que repetir después"],
   "pendiente": "lo que queda sin resolver o hay que mirar con calma, si lo hay"
 }

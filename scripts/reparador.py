@@ -422,6 +422,20 @@ def lanzar_agente(copia, incs, fecha, fase, minutos, medidas, ident):
     return codigo, round(time.time() - inicio), datos.get("total_cost_usd")
 
 
+def traducir_lo_pedido(copia, fecha, informe):
+    """Las traducciones que el agente pide rehacer las hacen aquí los traductores de la noche, en la copia y antes
+    de comprobar: dentro de la sesión del agente no se pueden lanzar, porque Claude Code no pasa su permiso a las
+    órdenes que ejecuta. `traducir` es una lista de idiomas, o ["faltan"] para traducir solo lo que no está."""
+    pedido = [str(x) for x in informe.get("traducir") or []]
+    if not pedido:
+        return ""
+    validos = correr([sys.executable, "scripts/idiomas.py", "lista"], copia)[1].split()
+    idiomas = [c for c in pedido if c in validos]
+    entorno = dict(os.environ, REPARADOR="0", REPARADOR_NO_LANZAR="1")
+    codigo, salida = correr(["bash", "scripts/traducir-dia.sh", fecha, *idiomas], copia, tope=30 * 60, entorno=entorno)
+    return f"traducir-dia.sh {' '.join(idiomas) or '(lo que falta)'}: código {codigo}; {salida.strip().splitlines()[-1][:160] if salida.strip() else ''}"
+
+
 # --- atender -------------------------------------------------------------------------------------------------
 
 def esperar(condicion, hasta_minuto, cada=30):
@@ -498,9 +512,10 @@ def una_reparacion(incs):
             reenviar(incs, " ".join(str(informe.get("que_fallaba") or "").split())[:800] + " "
                      + " ".join(str(informe.get("pendiente") or informe.get("que_he_hecho") or "").split())[:800], siempre=True)
             return
+        traducido = traducir_lo_pedido(copia, fecha, informe)
         cambiados, borrar, medidas, problemas = comprobar(copia, fecha, antes_archivos, antes_textos, antes_medidas, informe)
-        resultado.update(despues=medidas, cambiados=cambiados, borrados=borrar)
-        if not problemas and not cambiados and not borrar and not (informe.get("reintentar") or []):
+        resultado.update(despues=medidas, cambiados=cambiados, borrados=borrar, traducido=traducido)
+        if not problemas and not cambiados and not borrar and not (informe.get("reintentar") or []) and not traducido:
             problemas.append("dice que lo ha arreglado pero no ha cambiado nada")
         if not problemas and fase == "antes" and (estado("publicando") or estado("publicado")):
             esperar(lambda: estado("publicado") and not estado("publicando"), minutos_del_dia() + 20)
