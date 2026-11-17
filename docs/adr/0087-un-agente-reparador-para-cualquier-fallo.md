@@ -149,3 +149,8 @@ ediciones sin traducir): arreglado en 2 min 56 s; de 4 traducciones que faltaban
 castellano, a 0 y 2 (el título oficial de una guía), con la maqueta medida antes y después. En esa prueba
 el agente no pudo lanzar a los traductores («Not logged in») y tradujo él mismo: de ahí que ahora las
 traducciones las pida y las haga el programa.
+
+Repetida a las 7:03 con ese cambio: el agente partió el artículo en sus párrafos y pidió las traducciones
+(59 s); el programa lanzó a los traductores de la noche (3 min 36 s) y la comprobación lo dio por bueno,
+con las mismas medidas: de 4 traducciones que faltaban y 80 textos en castellano, a 0 y 2. En total, seis
+minutos.

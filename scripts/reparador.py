@@ -534,6 +534,8 @@ def una_reparacion(incs):
         partes = ["🔧 Diario: había un fallo y el reparador lo ha arreglado.",
                   "Qué fallaba: " + " ".join(str(informe.get("que_fallaba") or "").split())[:700],
                   "Qué ha hecho: " + " ".join(str(informe.get("que_he_hecho") or "").split())[:900]]
+        if traducido:
+            partes.append("Las traducciones que faltaban las han hecho después los traductores de la noche.")
         if codigo_git:
             partes.append("Ha cambiado el programa (" + ", ".join(codigo_git)[:300] + ") y está guardado en el repositorio.")
         if informe.get("pendiente"):

@@ -84,5 +84,6 @@ líneas:
   o ya estaba resuelto. `no_se_puede`: no hay arreglo a tu alcance o no te da tiempo; explica por qué
   en `que_fallaba` y qué habría que hacer en `pendiente`.
 - `que_fallaba` y `que_he_hecho` le llegan tal cual a una persona por el móvil: frases cortas, en
-  castellano llano, con la consecuencia práctica.
+  castellano llano, con la consecuencia práctica. Si pides traducciones, no escribas que «hay que
+  traducir»: el mensaje ya dirá que las han hecho los traductores.
 - Mejor un arreglo pequeño y seguro que uno ambicioso: si dudas entre dos, el que cambia menos.
