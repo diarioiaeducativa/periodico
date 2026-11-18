@@ -213,8 +213,9 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
   (`og/piezas/<idioma>/<fecha>-<id>.png`, aligeradas con Pillow); las hace `scripts/og-numero.py` en
   `publicar-nas.sh`. Tras corregir un titular en los cinco idiomas, `scripts/og-numero.py FECHA` rehace las de
   ese día.
-- **Compartir como imagen** (ADR 0090): el botón «Imagen» de cada artículo dibuja en el navegador una tarjeta de
-  1080 × 1350 (`estaticos/compartir-imagen.js`) con lo que hay en la página, y ofrece compartirla, copiarla o guardarla;
+- **Compartir** (ADR 0090): el botón «Compartir» de cada artículo despliega el enlace (compartir o copiar) y una
+  imagen de 1080 × 1350 que dibuja el navegador (`estaticos/compartir.js`) con lo que hay en la página (compartir,
+  copiar o guardar);
   no se guarda ninguna imagen. Si cambian las clases de la cabecera, del titular, de la entradilla o de la sección,
   o la meta `imagen` de Pagefind, comprobar que la tarjeta sigue saliendo entera.
 - **Comprobaciones sin IA** (ADR 0056): cada noche, `scripts/revisar-idiomas.py --dia FECHA` busca castellano

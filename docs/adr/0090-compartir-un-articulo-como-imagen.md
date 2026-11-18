@@ -1,4 +1,4 @@
-# 90. Compartir un artículo como imagen, dibujada en el navegador
+# 90. Compartir un artículo como imagen, dibujada en el navegador, desde el botón «Compartir»
 
 Fecha: 2026-11-18 · Estado: aceptado
 
@@ -11,13 +11,28 @@ entradilla, no»). Añadírsela no convenía: esa imagen es la de la vista previ
 WhatsApp y LinkedIn ya ponen la entradilla en texto al lado, que saldría dos veces, y el titular se leería peor en
 la miniatura. Decidió que la tarjeta se dibujara en el navegador («vale, hazlo dibujado en el navegador») y que,
 además, se copiara («se tiene que copiar también para poder pegarlo facilmente»). La primera versión copiaba sola al
-pulsar; él propuso que quien pulsa elija («no es mejor que permita guardar o copiar?») y lo aprobó con un menú.
+pulsar; él propuso que quien pulsa elija («no es mejor que permita guardar o copiar?»), y la segunda, un botón
+«Imagen» con su menú junto a «Compartir». Al final propuso juntarlo todo («quizás se podria unificar todo en el
+botón compartir, poniendo allí todas las opciones») y lo aprobó. También pidió que cada opción dijera lo que hace:
+«con el menú del dispositivo» no lo entendía («yo no sabía lo que era y la mayoria tampoco»).
 
 ## Decisión
 
-Un botón «Imagen» (`como-imagen`) en las acciones de cada artículo y reportaje (`acciones()` en `generar.py`), con
-sus textos en los cinco idiomas (`imagen`, `imagen_t`, `imagen_copiada`). El código está en
-`estaticos/compartir-imagen.js`, un archivo común que solo cargan las páginas con el botón:
+Todo lo de compartir un artículo o un reportaje va en su botón «Compartir», que despliega un menú con el aspecto
+del de «Para tu web» (`llevar-menu`, `llevar-op`), generado por `acciones()` en `generar.py` con sus textos en los
+cinco idiomas. Cada opción dice lo que hace, sin nombres técnicos:
+
+- «Compartir el enlace» («Envía el enlace del artículo a la app que elijas») y «Compartir como imagen» («Envía una
+  imagen del artículo, con el enlace, a la app que elijas»): el menú de compartir del sistema. Solo salen donde lo
+  hay: el móvil, la app y el ordenador con Windows, Mac o ChromeOS; no en Linux ni en Firefox de ordenador.
+- «Copiar el enlace», solo donde no hay menú de compartir, y dice «Enlace copiado».
+- «Copiar la imagen» («Para pegarla en un mensaje o una publicación»), que no sale si el navegador no deja copiar
+  imágenes, y dice «Imagen copiada».
+- «Guardar la imagen» («Se descarga como archivo PNG»).
+
+Si compartir o copiar la imagen fallan, se descarga. Los breves conservan su botón de compartir, solo con el enlace.
+
+El código está en `estaticos/compartir.js`, un archivo común que solo cargan las páginas con el botón. La imagen:
 
 - Dibuja en un lienzo de 1080 × 1350 (4:5, el formato vertical que X, Instagram y WhatsApp enseñan entero) la
   cabecera del diario, el número y la fecha, la sección con su color, el titular, la entradilla y el dibujo, con la
@@ -30,13 +45,6 @@ sus textos en los cinco idiomas (`imagen`, `imagen_t`, `imagen_copiada`). El có
   de `fuentes/`.
 - Se prepara cuando el botón está a punto de verse, no al pulsarlo: Safari solo abre el menú de compartir dentro
   del gesto de quien pulsa.
-- El botón despliega un menú, con el aspecto del de «Para tu web» (`llevar-menu`, `llevar-op`): «Compartir…», que
-  abre el menú de compartir del sistema con la imagen, el titular y el enlace y solo sale donde lo hay (móvil, app;
-  en el ordenador, Windows, Mac y ChromeOS, no Linux ni Firefox). Su descripción dice lo que hace, «Envía la imagen,
-  con el titular y el enlace, a la app que elijas», sin hablar del «menú del dispositivo», que Juanjo no entendió
-  («yo no sabía lo que era y la mayoria tampoco»);
-  «Copiar la imagen», que la pone en el portapapeles y dice «Imagen copiada», y no sale si el navegador no deja
-  copiar imágenes; y «Guardar la imagen», que la descarga como PNG. Si compartir o copiar fallan, se descarga.
 
 ## Alternativas descartadas
 
@@ -45,6 +53,10 @@ sus textos en los cinco idiomas (`imagen`, `imagen_t`, `imagen_copiada`). El có
 - Una segunda imagen por artículo y lengua hecha en el NAS: unos 5 MB más a la semana en el repositorio del sitio.
 - Copiar sin preguntar al pulsar (la primera versión): quien pulsa no sabe qué ha pasado y en el ordenador no
   había forma de guardarla.
+- Un botón «Imagen» aparte, con su menú (la segunda versión, publicada unas horas): no se entendía qué hacía
+  y repartía en dos lo que es una sola cosa. Unificado, compartir el enlace en el móvil pasa de uno a dos toques.
+- Un menú propio con enlaces a X, Bluesky, LinkedIn, WhatsApp o Telegram donde no hay menú del sistema: solo
+  llevarían el texto, no la imagen, y habría que mantenerlos si cambian esas webs.
 - Elegir un trozo del texto y compartirlo como cita: queda para cuando se pida.
 
 ## Consecuencias
@@ -60,7 +72,7 @@ Firefox desde la 127.
 
 ## Riesgos y limitaciones
 
-- Firefox de escritorio no tiene menú de compartir: solo copiar y guardar. Firefox para Android no está comprobado.
+- Linux y Firefox de escritorio no tienen menú de compartir: solo copiar y guardar. Firefox para Android no está comprobado.
 - En WebKitGTK (el WebKit de las pruebas) el lienzo no aplica todos los pesos de la letra variable y la cabecera
   sale menos gruesa; en Safari de verdad, por comprobar.
 - Un artículo sin dibujo ni captura sale sin imagen, solo con el texto.
@@ -75,3 +87,9 @@ el portapapeles un `image/png` (unos 150 kB) y dice «Image copied»; «Guardar�
 el menú se cierra tras cada acción. La fila de botones cabe a 360 px sin desbordar, en claro
 y oscuro, y `revisar-maqueta.js` sale sin avisos en escritorio, tableta y móvil. Publicado el mismo día a petición de Juanjo
 («y publicalo ya»), sin esperar a su prueba en el móvil, que queda pendiente.
+
+Con el botón único, el mismo día, en local y en los tres navegadores: en el ordenador salen «Copiar el enlace»,
+«Copiar la imagen» y «Guardar la imagen»; con el menú de compartir simulado, «Compartir el enlace», «Compartir como
+imagen», «Copiar la imagen» y «Guardar la imagen», y cada una hace lo suyo (el enlace que se comparte o se copia es
+la dirección pública del artículo); el menú se cierra tras cada una. Los breves siguen compartiendo su enlace. La
+maqueta, sin avisos.

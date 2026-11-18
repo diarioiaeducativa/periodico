@@ -1,10 +1,11 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
-// Compartir un artículo como imagen (ADR 0090). La tarjeta (cabecera del diario, número y fecha, sección,
-// titular, entradilla y dibujo) la dibuja el navegador de quien lee, con lo que ya hay en la página: no se
-// guarda en el sitio ni se pide a ningún servidor. El botón ofrece copiarla, guardarla y, donde el dispositivo
-// tiene menú de compartir (el móvil, la app), compartirla con el titular y el enlace.
+// Compartir un artículo (ADR 0090): el botón «Compartir» despliega todas las formas de hacerlo. El enlace se
+// comparte con el menú de compartir del sistema o, donde no lo hay (el ordenador con Linux, Firefox), se copia.
+// La imagen (cabecera del diario, número y fecha, sección, titular, entradilla y dibujo) la dibuja el navegador
+// de quien lee, con lo que ya hay en la página: no se guarda en el sitio ni se pide a ningún servidor. Se puede
+// compartir (donde hay menú), copiar o guardar.
 (function () {
-  var boton = document.querySelector('button.como-imagen');
+  var boton = document.querySelector('button.abre-compartir');
   if (!boton || !window.HTMLCanvasElement) return;
 
   var W = 1080, H = 1350, M = 72, ANCHO = W - 2 * M;
@@ -191,7 +192,7 @@
     return navigator.clipboard.write([new ClipboardItem({ 'image/png': blob })]);
   }
 
-  // «Imagen copiada», en la opción y para quien no lo ve (la misma región viva que el resto de la página)
+  // «Copiado», en la opción y para quien no lo ve (la misma región viva que el resto de la página)
   function hecho(op, t) {
     var r = op.querySelector('span'), antes = r.textContent;
     r.textContent = t; op.classList.add('hecho');
@@ -201,37 +202,54 @@
     setTimeout(function () { r.textContent = antes; op.classList.remove('hecho'); cierra(); }, 1600);
   }
 
-  // El botón despliega tres opciones: compartir (solo donde el dispositivo tiene menú de compartir: el móvil, la
-  // app), copiar y guardar. Se cierra al pulsar fuera o con Escape, como «Para tu web»
-  var menu = document.getElementById('menu-imagen');
+  // Copiar texto: el portapapeles o, si no lo deja (sin HTTPS), un campo oculto
+  function copiaTexto(texto) {
+    if (navigator.clipboard && window.isSecureContext) return navigator.clipboard.writeText(texto);
+    return new Promise(function (ok, mal) {
+      var t = document.createElement('textarea'); t.value = texto; t.setAttribute('readonly', ''); t.style.position = 'fixed'; t.style.opacity = '0';
+      document.body.append(t); t.select(); try { document.execCommand('copy') ? ok() : mal(); } catch (x) { mal(x); } t.remove();
+    });
+  }
+
+  // Las opciones que salen dependen de lo que deja el navegador: compartir (el enlace o la imagen) solo donde hay
+  // menú de compartir del sistema, y entonces no hace falta copiar el enlace; copiar la imagen, donde se puede.
+  // Se cierra al pulsar fuera o con Escape, como «Para tu web»
+  var menu = document.getElementById('menu-compartir');
   if (!menu) return;
-  var opCompartir = menu.querySelector('[data-accion="compartir"]');
-  if (navigator.canShare && window.File && navigator.canShare({ files: [new File([''], 'x.png', { type: 'image/png' })] })) opCompartir.hidden = false;
-  if (!(navigator.clipboard && navigator.clipboard.write && window.ClipboardItem && window.isSecureContext))
-    menu.querySelector('[data-accion="copiar"]').hidden = true;
+  var op = function (a) { return menu.querySelector('[data-accion="' + a + '"]'); };
+  if (navigator.share) { op('enlace').hidden = false; op('copiar-enlace').hidden = true; }
+  if (navigator.canShare && window.File && navigator.canShare({ files: [new File([''], 'x.png', { type: 'image/png' })] })) op('imagen').hidden = false;
+  if (!(navigator.clipboard && navigator.clipboard.write && window.ClipboardItem && window.isSecureContext)) op('copiar-imagen').hidden = true;
   function cierra() { if (!menu.hidden) { menu.hidden = true; boton.setAttribute('aria-expanded', 'false'); } }
   boton.addEventListener('click', function (ev) {
     ev.stopPropagation(); pide();
     var abre = menu.hidden; menu.hidden = !abre; boton.setAttribute('aria-expanded', abre ? 'true' : 'false');
-    if (abre) menu.querySelector('.imagen-op:not([hidden])').focus();
+    if (abre) menu.querySelector('.compartir-op:not([hidden])').focus();
   });
   document.addEventListener('click', function (ev) { if (!menu.hidden && !menu.contains(ev.target) && !boton.contains(ev.target)) cierra(); });
   document.addEventListener('keydown', function (ev) { if (ev.key === 'Escape' && !menu.hidden) { cierra(); boton.focus(); } });
 
-  [].forEach.call(menu.querySelectorAll('.imagen-op'), function (op) {
-    op.addEventListener('click', function () {
-      op.disabled = true;
+  var d = null;
+  function enlace() { if (!d) d = datos(); return d; }
+  // Quien cierra el menú de compartir sin elegir nada no ha tenido un error
+  function trasCompartir(e) { if (!e || e.name === 'AbortError') cierra(); }
+
+  [].forEach.call(menu.querySelectorAll('.compartir-op'), function (b) {
+    b.addEventListener('click', function () {
+      var accion = b.dataset.accion, x = enlace();
+      if (accion === 'enlace') { navigator.share({ title: x.titular || document.title, url: x.url }).then(cierra, trasCompartir); return; }
+      if (accion === 'copiar-enlace') { copiaTexto(x.url).then(function () { hecho(b, b.dataset.hecho); }, cierra); return; }
+      b.disabled = true;
       pide().then(function (r) {
         var nombre = 'diario-ia-educativa-' + r.d.nombre + '.png';
-        var accion = op.dataset.accion;
-        if (accion === 'compartir') {
+        if (accion === 'imagen') {
           var f = new File([r.blob], nombre, { type: 'image/png' });
           return navigator.share({ files: [f], title: r.d.titular, text: r.d.titular + '\n' + r.d.url })
-            .then(cierra, function (e) { if (e && e.name === 'AbortError') cierra(); else descarga(r.blob, nombre); });
+            .then(cierra, function (e) { if (e && e.name === 'AbortError') cierra(); else { descarga(r.blob, nombre); cierra(); } });
         }
-        if (accion === 'copiar') return copia(r.blob).then(function () { hecho(op, op.dataset.hecho); }, function () { descarga(r.blob, nombre); cierra(); });
+        if (accion === 'copiar-imagen') return copia(r.blob).then(function () { hecho(b, b.dataset.hecho); }, function () { descarga(r.blob, nombre); cierra(); });
         descarga(r.blob, nombre); cierra();
-      }).catch(function () {}).then(function () { op.disabled = false; });
+      }).catch(function () {}).then(function () { b.disabled = false; });
     });
   });
 })();
