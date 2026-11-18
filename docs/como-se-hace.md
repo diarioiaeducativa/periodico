@@ -16,7 +16,7 @@ falta por mejorar se reúne al final.
 
 ## 1. El número
 
-**Lo que se habla un día sale en el diario a la mañana siguiente**, a las 7:00, en cinco idiomas:
+**Lo que se habla un día sale en el diario a la mañana siguiente**, a las 7:00 (hora peninsular española), en cinco idiomas:
 castellano, catalán, gallego, euskera e inglés (ADR 0026).
 
 Un número lleva:
@@ -79,7 +79,8 @@ Todos escriben con el [libro de estilo](../encargos/estilo.md), y cada tarea tie
 
 ## 3. Un día en el diario
 
-Un programa mira cada cinco minutos qué toca hacer y apunta lo que ya ha hecho, para no repetir nada.
+Un programa mira cada cinco minutos qué toca hacer y apunta lo que ya ha hecho, para no repetir nada. Las horas son
+peninsulares españolas: UTC+1 en invierno y UTC+2 en verano.
 
 | Hora | Qué pasa |
 | --- | --- |

@@ -92,5 +92,6 @@
 | [0088](0088-normas-editoriales-en-el-pie-y-en-google-play.md) | «Normas editoriales» en el pie y en la declaración de Google Play |
 | [0089](0089-los-rotulos-con-numero-contrastados-con-el-texto.md) | Los rótulos con número, contrastados con el texto |
 | [0090](0090-compartir-un-articulo-como-imagen.md) | Compartir un artículo como imagen, dibujada en el navegador, desde el botón «Compartir» |
+| [0091](0091-horas-con-su-huso.md) | Las horas, con su huso |
 
 Plantilla: [0000-plantilla.md](0000-plantilla.md). Para crear uno: `nuevo-adr "Título"`.

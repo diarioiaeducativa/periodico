@@ -135,7 +135,7 @@ IDIOMAS = {
         "claves": "Claves", "en_el_diario": "En el diario esta semana", "semana_repo": "Cada sábado, el diario repasa los recursos que han entrado durante la semana en el {repositorio} de Vibe Coding Educativo, la colección de aplicaciones y materiales con licencia abierta que crea y comparte el profesorado de esa comunidad.", "ya_contados": "Ya publicados en el diario", "otras_semanas": "Otras semanas del repositorio", "sin_reportajes": "Todavía no hay reportajes.",
         "reportajes_txt": "Cada domingo, un tema de la semana tratado a fondo.", "palabras": "minutos de lectura",
         "redaccion": {
-            "intro": "El Diario de IA Educativa lo escribe una redacción de 16 agentes de inteligencia artificial, cada uno con su oficio, y ninguno revisa su propio trabajo. Lo idean, lo diseñan y lo supervisan personas. Sale cada mañana a las 7:00 en castellano, catalán, gallego, euskera e inglés.",
+            "intro": "El Diario de IA Educativa lo escribe una redacción de 16 agentes de inteligencia artificial, cada uno con su oficio, y ninguno revisa su propio trabajo. Lo idean, lo diseñan y lo supervisan personas. Sale cada mañana a las 7:00, {huso}, en castellano, catalán, gallego, euskera e inglés.",
             "proceso_titulo": "Cómo se hace cada número", "pagina_semana": "página",
             "proceso_intro": "Cada número recoge lo que se habló el día anterior en los tres grupos abiertos de Telegram: {chatgpt}, sobre la inteligencia artificial en educación; {vce}, de docentes que programan sus propias aplicaciones con IA, y {edumedia}, sobre la IA para crear audio, vídeo e imagen. De madrugada, un programa reúne los mensajes del día; los agentes escriben, revisan, ilustran y traducen los artículos, y a las 7:00 el número se publica y se avisa en cada grupo. Los fines de semana se preparan, además, el reportaje, el vídeo y lo más importante de la semana.",
             "proceso_pie": "Si algo falla o una revisión no da un artículo por bueno, esa parte se queda fuera y el número sale igual. Si falla todo, sale un artículo de reserva, escrito y revisado otro día. No hay ningún día sin número.",
@@ -271,7 +271,7 @@ IDIOMAS = {
         "claves": "Claus", "en_el_diario": "Al diari aquesta setmana", "semana_repo": "Cada dissabte, el diari repassa els recursos que han entrat durant la setmana al {repositorio} de Vibe Coding Educativo, la col·lecció d'aplicacions i materials amb llicència oberta que crea i comparteix el professorat d'aquesta comunitat.", "ya_contados": "Ja publicats al diari", "otras_semanas": "Altres setmanes del repositori", "sin_reportajes": "Encara no hi ha reportatges.",
         "reportajes_txt": "Cada diumenge, un tema de la setmana tractat a fons.", "palabras": "minuts de lectura",
         "redaccion": {
-            "intro": "El Diari d'IA Educativa l'escriu una redacció de 16 agents d'intel·ligència artificial, cadascun amb el seu ofici, i cap no revisa la seva pròpia feina. L'ideen, el dissenyen i el supervisen persones. Surt cada matí a les 7.00 en castellà, i traduït al català, al gallec, al basc i a l'anglès.",
+            "intro": "El Diari d'IA Educativa l'escriu una redacció de 16 agents d'intel·ligència artificial, cadascun amb el seu ofici, i cap no revisa la seva pròpia feina. L'ideen, el dissenyen i el supervisen persones. Surt cada matí a les 7.00, {huso}, en castellà, i traduït al català, al gallec, al basc i a l'anglès.",
             "proceso_titulo": "Com es fa cada número", "pagina_semana": "pàgina",
             "proceso_intro": "Cada número recull el que es va parlar el dia anterior als tres grups oberts de Telegram: {chatgpt}, sobre la intel·ligència artificial en educació; {vce}, de docents que programen les seves pròpies aplicacions amb IA, i {edumedia}, sobre la IA per crear àudio, vídeo i imatge. De matinada, un programa aplega els missatges del dia; els agents escriuen, revisen, il·lustren i tradueixen els articles, i a les 7.00 el número es publica i s'avisa a cada grup. Els caps de setmana es preparen, a més, el reportatge, el vídeo i el més important de la setmana.",
             "proceso_pie": "Si alguna cosa falla o una revisió no dona un article per bo, aquella part es queda fora i el número surt igualment. Si falla tot, surt un article de reserva, escrit i revisat un altre dia. No hi ha cap dia sense número.",
@@ -393,6 +393,21 @@ def hora_de_salida(sale):
     """Las 7:00 de Madrid del día de publicación, pasadas a UTC (el cambio de hora no la mueve)."""
     return datetime.datetime.combine(datetime.date.fromisoformat(sale), datetime.time(7),
                                      ZoneInfo("Europe/Madrid")).astimezone(datetime.timezone.utc)
+
+
+# El huso de las horas de la web, que son de Madrid, para quien lee desde cualquier parte del mundo
+# (Juanjo, 18-11-2026; ADR 0091): «peninsular» porque Canarias va una hora por detrás, y con el desfase
+# respecto a UTC del día de salida, que cambia con el horario de verano
+HUSO = {"es": "hora peninsular española (UTC{d})", "ca": "hora peninsular espanyola (UTC{d})",
+        "gl": "hora peninsular española (UTC{d})", "eu": "(Espainiako penintsulako ordua, UTC{d})",
+        "en": "{abrev} (UTC{d})"}
+
+
+def huso(sale, codigo):
+    """El huso de las 7:00 del día de salida en la lengua `codigo`: «hora peninsular española (UTC+1)»."""
+    madrid = hora_de_salida(sale).astimezone(ZoneInfo("Europe/Madrid"))
+    horas = int(madrid.utcoffset().total_seconds() // 3600)
+    return HUSO[codigo].format(d=f"{horas:+d}", abrev="CEST" if madrid.dst() else "CET")
 
 
 def romano(n):
@@ -1809,11 +1824,11 @@ def franja_reserva(d):
 # 22-11-2026, en el número que se publica ese día y en el navegador (la página guardada no lo enseña después)
 PROMO_APP_HASTA = "2026-11-22"
 PROMO_APP = {
-    "es": ("Nueva app para Android", "El diario, cada mañana en el móvil, con aviso opcional a las 7.", "Descargar en Google Play", "Cerrar el anuncio de la app"),
-    "ca": ("Nova app per a Android", "El diari, cada matí al mòbil, amb avís opcional a les 7.", "Descarrega-la a Google Play", "Tanca l'anunci de l'app"),
-    "gl": ("Nova app para Android", "O diario, cada mañá no móbil, con aviso opcional ás 7.", "Descargar en Google Play", "Pechar o anuncio da app"),
-    "eu": ("Android-erako aplikazio berria", "Egunkaria goizero mugikorrean, 7etan abisu aukerakoarekin.", "Deskargatu Google Play-n", "Itxi aplikazioaren iragarkia"),
-    "en": ("New Android app", "The paper on your phone every morning, with an optional alert at 7.", "Get it on Google Play", "Close the app announcement"),
+    "es": ("Nueva app para Android", "El diario, cada mañana en el móvil, con aviso opcional a las 7:00, {huso}.", "Descargar en Google Play", "Cerrar el anuncio de la app"),
+    "ca": ("Nova app per a Android", "El diari, cada matí al mòbil, amb avís opcional a les 7.00, {huso}.", "Descarrega-la a Google Play", "Tanca l'anunci de l'app"),
+    "gl": ("Nova app para Android", "O diario, cada mañá no móbil, con aviso opcional ás 7:00, {huso}.", "Descargar en Google Play", "Pechar o anuncio da app"),
+    "eu": ("Android-erako aplikazio berria", "Egunkaria goizero mugikorrean, 7:00etan {huso} abisu aukerakoarekin.", "Deskargatu Google Play-n", "Itxi aplikazioaren iragarkia"),
+    "en": ("New Android app", "The paper on your phone every morning, with an optional alert at 7am {huso}.", "Get it on Google Play", "Close the app announcement"),
 }
 # Algoritmo con los brazos en alto, con las formas de la viñeta (vineta.py)
 ALGORITMO_PROMO = ('<svg class="promo-app-ilu" viewBox="-50 208 100 122" aria-hidden="true">'
@@ -1833,6 +1848,7 @@ def franja_app(d):
     if not d or publicacion(d["fecha"]) > PROMO_APP_HASTA:
         return ""
     ante, txt, boton, cerrar = PROMO_APP[L["codigo"]]
+    txt = txt.replace("{huso}", huso(publicacion(d["fecha"]), L["codigo"]))
     url = f"https://play.google.com/store/apps/details?id=io.github.diarioiaeducativa&hl={L['codigo']}"
     fin = datetime.date.fromisoformat(PROMO_APP_HASTA) + datetime.timedelta(days=1)
     return f"""<aside class="promo-app" id="promo-app" aria-label="{e(ante)}" hidden>
@@ -2749,6 +2765,7 @@ def pagina_redaccion(eds):
     """«La redacción», la versión breve para cualquier lector (ADR 0082): el organigrama con cómo se hace cada número,
     cuatro ideas, el equipo de agentes y, para saber más, «El diario por dentro» y las normas."""
     R = L["redaccion"]
+    intro = R["intro"].replace("{huso}", huso(publicacion(eds[-1]["fecha"]), L["codigo"]))
     raiz, grupos = redaccion_enlaces(R)
     pres = next((d for d in eds if d.get("editorial")), None)
     # El organigrama de hoy, con los agentes del domingo; el de la presentación del número 1 queda como se publicó
@@ -2768,12 +2785,12 @@ def pagina_redaccion(eds):
     cab = cabecera("", "redaccion.html", eds[-1]["fecha"], eds[-1]["numero"], True, h1=False, activa="redaccion")
     cabeza_red = cabeza_pieza(f"""<p class="antetitulo con-fecha"><span class="seccion-dcha">{boton_columnas()}</span></p>
 <h1 class="titular">{L["quees"]}</h1>
-<p class="entradilla">{R["intro"]}</p>""", "")
+<p class="entradilla">{intro}</p>""", "")
     # Los apartados que se han ido a «El diario por dentro» conservan su dirección: los enlaces de fuera que llevan
     # a ellos (#privacidad, #comunidades, #contacto…) siguen hasta allí
     salto = ("<script>(function(){var h=location.hash.slice(1);"
              "if(h&&!document.getElementById(h))location.replace('dentro.html#'+h);})();</script>")
-    return cabeza(f'{L["quees"]} | {L["titulo"]}', "", R["intro"], "redaccion.html") + f"""<body class="pag-que-es">
+    return cabeza(f'{L["quees"]} | {L["titulo"]}', "", intro, "redaccion.html") + f"""<body class="pag-que-es">
 {cab}
 <main class="articulo que-es redaccion en-columnas">
 {cabeza_red}

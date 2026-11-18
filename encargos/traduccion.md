@@ -44,7 +44,7 @@ igual en todas las lenguas. Se lee el apartado general y el de la lengua de cada
   el estilo periodístico de la radio y la televisión públicas.
 
 **Formato**
-- Horas con punto: «a les 10.30».
+- Horas con punto: «a les 10.30»; el huso, «(hora peninsular espanyola, UTC+1)».
 - Porcentaje con espacio: «10 %», como pide el Optimot.
 - Millares con punto (115.000); ordinales «4t d'ESO», «1r de batxillerat».
 - Cargos, etapas educativas y asignaturas en minúscula («primària», «batxillerat»); los organismos, en
@@ -75,7 +75,7 @@ igual en todas las lenguas. Se lee el apartado general y el de la lengua de cada
   (terminología) y el [Nomenclátor](https://toponimia.xunta.gal/gl) (topónimos de Galicia).
 
 **Formato**
-- Horas con punto: «ás 10.30».
+- Horas con punto: «ás 10.30»; el huso, «(hora peninsular española, UTC+1)».
 - Porcentaje con espacio: «30 %».
 - Millares con espacio: «115 000».
 - Cargos, días, meses y etapas en minúscula: «educación primaria», «bacharelato», «educación secundaria».
@@ -107,7 +107,7 @@ igual en todas las lenguas. Se lee el apartado general y el de la lengua de cada
 - [Kalkoen Behatokia](https://www.ehu.eus/ehg/kalkoak/) de la UPV/EHU: calcos del castellano.
 
 **Formato** (norma 203 de Euskaltzaindia)
-- Horas: «10:30ean». Fechas: «2026ko azaroaren 13an».
+- Horas: «10:30ean»; el huso, «(Espainiako penintsulako ordua, UTC+1)». Fechas: «2026ko azaroaren 13an».
 - Porcentaje con el signo delante y espacio: «% 35».
 - Millares con espacio: «115 000».
 - Cargos en minúscula; organismos y etapas educativas en mayúscula («Lehen Hezkuntza», «Batxilergoa»),
@@ -137,7 +137,8 @@ igual en todas las lenguas. Se lee el apartado general y el de la lengua de cada
 - [IATE](https://iate.europa.eu) (terminología de la UE) y el [Oxford Learner's Dictionary](https://www.oxfordlearnersdictionaries.com).
 
 **Formato**
-- Fechas: «13 November 2026». Horas: «10.30am», como The Guardian.
+- Fechas: «13 November 2026». Horas: «10.30am», como The Guardian; el huso,
+  «10.30am CET (UTC+1)», o CEST (UTC+2) en verano, y la de fuera con la de origen: «10am PT (6pm CET, UTC+1)».
 - Porcentaje pegado a la cifra: «35%». Millares con coma: «115,000».
 - Comillas inglesas (“ ”), nunca las españolas; ortografía en -ise («organise»).
 - Cargos, etapas y organismos genéricos en minúscula («the education ministry», «secondary education»).

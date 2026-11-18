@@ -118,6 +118,11 @@ para los días sin noticias) están en «Cómo se hace el diario», `docs/como-s
   la versión o el plan, se dice a cuál corresponde cada una. Del 20 % al 30 % son 10 puntos más, no
   un 10 % más. Mejor «uno de cada ocho docentes» que «el 12,5 %».
 - **Los datos que cambian se fechan** («a 1 de noviembre de 2026»); lo demás no lleva fecha.
+- **Toda hora, con su huso**, porque el diario se lee en todo el mundo (ADR 0091). La de España:
+  «a las 10:30 (hora peninsular española, UTC+1)», UTC+2 en verano; «peninsular», porque Canarias va
+  una hora por detrás. La de fuera, con la de origen y la equivalente en España: «a las 10:00 de
+  California (19:00 en la España peninsular, UTC+1)». Si un texto da varias horas del mismo sitio, el
+  huso va la primera vez.
 - **Una página oficial puede estar desactualizada**: si contradice lo que el diario ya publicó con el
   documento delante, manda lo publicado, y se dice.
 - **Antes de juzgar un enlace, se abre**: la dirección no dice lo que hay en la página ni su fecha.
