@@ -31,7 +31,10 @@ sus textos en los cinco idiomas (`imagen`, `imagen_t`, `imagen_copiada`). El có
 - Se prepara cuando el botón está a punto de verse, no al pulsarlo: Safari solo abre el menú de compartir dentro
   del gesto de quien pulsa.
 - El botón despliega un menú, con el aspecto del de «Para tu web» (`llevar-menu`, `llevar-op`): «Compartir…», que
-  abre el menú del dispositivo con la imagen, el titular y el enlace y solo sale donde lo hay (móvil, app);
+  abre el menú de compartir del sistema con la imagen, el titular y el enlace y solo sale donde lo hay (móvil, app;
+  en el ordenador, Windows, Mac y ChromeOS, no Linux ni Firefox). Su descripción dice lo que hace, «Envía la imagen,
+  con el titular y el enlace, a la app que elijas», sin hablar del «menú del dispositivo», que Juanjo no entendió
+  («yo no sabía lo que era y la mayoria tampoco»);
   «Copiar la imagen», que la pone en el portapapeles y dice «Imagen copiada», y no sale si el navegador no deja
   copiar imágenes; y «Guardar la imagen», que la descarga como PNG. Si compartir o copiar fallan, se descarga.
 
