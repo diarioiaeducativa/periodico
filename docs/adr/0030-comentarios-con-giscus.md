@@ -16,7 +16,9 @@ no se abre al público (trabaja solo, sin que nadie se conecte a él).
   giscus y los administradores abren hilos, y cualquiera responde. La app de giscus está instalada solo
   en ese repositorio, con permiso de leer metadatos y escribir en Discussions.
 - **Solo GitHub**: para comentar hace falta una cuenta de GitHub. Juanjo descartó añadir un enlace a la
-  conversación de Telegram para quien no la tenga. Un aviso encima del recuadro lo dice y enlaza el
+  conversación de Telegram para quien no la tenga. Tampoco quiso abrirlos a quien no tenga cuenta con
+  Cusdis (comentarios con solo un nombre y aprobación a mano), propuesto el 07-11-2026: «cusdis
+  descartado» (18-11-2026). Un aviso encima del recuadro lo dice y enlaza el
   alta: «Para comentar hace falta una cuenta gratuita de GitHub. Los comentarios son públicos y se
   guardan en GitHub.»
 - **Un hilo por pieza, el mismo en los cinco idiomas**: `mapping=specific` con la ruta de la pieza sin
