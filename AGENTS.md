@@ -215,7 +215,7 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
   ese día.
 - **Compartir** (ADR 0090): el botón «Compartir» de cada artículo despliega el enlace (compartir o copiar) y una
   imagen de 1080 × 1350 que dibuja el navegador (`estaticos/compartir.js`) con lo que hay en la página (compartir,
-  copiar o guardar);
+  copiar o guardar); la viñeta, el mismo botón (`boton_vineta()`), con la tira en horizontal y su «A partir de»;
   no se guarda ninguna imagen. Si cambian las clases de la cabecera, del titular, de la entradilla o de la sección,
   o la meta `imagen` de Pagefind, comprobar que la tarjeta sigue saliendo entera.
 - **Comprobaciones sin IA** (ADR 0056): cada noche, `scripts/revisar-idiomas.py --dia FECHA` busca castellano

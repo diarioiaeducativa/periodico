@@ -89,7 +89,7 @@ IDIOMAS = {
         # La semana y el mes (ADR 0034)
         "semana": "La semana", "semana_txt": "Todo lo que publicó el diario de lo que se habló en los grupos esa semana, por secciones, con el pódcast y el vídeo de cada grupo. Elige un grupo para ver solo lo suyo.", "semana_actual": "Resumen semanal", "grupo_filtro": "Ver lo de un grupo", "grupo_todos": "Todos", "sin_grupo": "Este grupo no tiene artículos esta semana.", "nb_h": "El pódcast y el vídeo de la semana", "nb_txt": "Cada lunes, NotebookLM, de Google, prepara un pódcast y un vídeo de cada grupo con su conversación completa de la semana, también lo que no ha salido en el diario. Un agente de IA los contrasta con la conversación antes de publicarlos.", "nb_es": "", "nb_pendiente": "El pódcast y el vídeo de cada grupo se añaden aquí el lunes por la mañana.", "nb_video": "Vídeo", "nb_ver": "Reproducir el vídeo de {g}", "nb_youtube": "Verlo en YouTube", "nb_podcast": "Pódcast", "nb_archive": "Escucharlo en Internet Archive", "cs_h": "Lo más importante de la semana", "cs_h_g": "Lo más importante de la semana en {g}", "cs_nota": "Lo escribe un agente de IA con lo que publicó el diario esa semana, y otro lo contrasta con cada artículo antes de publicarlo.", "numeros_semana": "Los números de la semana", "sem_ant": "Semana anterior", "sem_sig": "Semana siguiente", "todo_mes": "Todo el mes", "mes": "El mes", "mes_txt": "Las semanas del mes, con el artículo que abrió cada número.", "mes_ant": "Mes anterior", "mes_sig": "Mes siguiente", "por_meses": "Por meses", "anyo_ant": "Año anterior", "anyo_sig": "Año siguiente", "buscar_en": "Busca en {s}", "ver_semana": "La semana entera, por secciones", "con_nb": "Con el pódcast y el vídeo de cada grupo", 
         "todos_numeros": "Hemeroteca: todos los números",
-        "saltar": "Saltar al contenido", "compartir": "Compartir", "copiado": "Enlace copiado", "compartir_enlace": "Compartir el enlace", "compartir_enlace_d": "Envía el enlace del artículo a la app que elijas", "copiar_enlace": "Copiar el enlace", "copiar_enlace_d": "Para pegarlo en un mensaje o una publicación", "imagen_copiada": "Imagen copiada", "imagen_compartir": "Compartir como imagen", "imagen_compartir_d": "Envía una imagen del artículo, con el enlace, a la app que elijas", "imagen_copiar": "Copiar la imagen", "imagen_copiar_d": "Para pegarla en un mensaje o una publicación", "imagen_guardar": "Guardar la imagen", "imagen_guardar_d": "Se descarga como archivo PNG", "una_columna": "Una columna", "columnas": "Columnas", "una_columna_t": "Leer las noticias en una sola columna", "escuchar": "Escuchar", "escuchar_t": "Leer el artículo en voz alta con una voz de tu dispositivo", "pausa": "Pausa", "seguir": "Seguir", "parar": "Parar", "lector": "Lectura en voz alta", "velocidad_t": "Velocidad de lectura", "lector_estados": "Leyendo en voz alta|Lectura en pausa|Lectura parada", "columnas_t": "Leer las noticias en columnas, como en un periódico", "compartir_breve": "Compartir este breve", "mas_en": "Más en", "mas_diario": "Más en el diario",
+        "saltar": "Saltar al contenido", "compartir": "Compartir", "copiado": "Enlace copiado", "compartir_enlace": "Compartir el enlace", "compartir_enlace_d": "Envía el enlace del artículo a la app que elijas", "copiar_enlace": "Copiar el enlace", "copiar_enlace_d": "Para pegarlo en un mensaje o una publicación", "imagen_copiada": "Imagen copiada", "vineta_enlace_d": "Envía el enlace de la viñeta a la app que elijas", "vineta_imagen_d": "Envía una imagen de la viñeta, con el enlace, a la app que elijas", "imagen_compartir": "Compartir como imagen", "imagen_compartir_d": "Envía una imagen del artículo, con el enlace, a la app que elijas", "imagen_copiar": "Copiar la imagen", "imagen_copiar_d": "Para pegarla en un mensaje o una publicación", "imagen_guardar": "Guardar la imagen", "imagen_guardar_d": "Se descarga como archivo PNG", "una_columna": "Una columna", "columnas": "Columnas", "una_columna_t": "Leer las noticias en una sola columna", "escuchar": "Escuchar", "escuchar_t": "Leer el artículo en voz alta con una voz de tu dispositivo", "pausa": "Pausa", "seguir": "Seguir", "parar": "Parar", "lector": "Lectura en voz alta", "velocidad_t": "Velocidad de lectura", "lector_estados": "Leyendo en voz alta|Lectura en pausa|Lectura parada", "columnas_t": "Leer las noticias en columnas, como en un periódico", "compartir_breve": "Compartir este breve", "mas_en": "Más en", "mas_diario": "Más en el diario",
         "no_existe": "Esta página no existe",
         "sin_conexion": "Sin conexión",
         "sin_conexion_txt": "Esta página no está guardada en este dispositivo. Sin conexión se pueden leer las páginas que ya se han abierto y el último número que se cargó en la portada.",
@@ -224,7 +224,7 @@ IDIOMAS = {
         # La semana y el mes (ADR 0034)
         "semana": "La setmana", "semana_txt": "Tot el que va publicar el diari del que es va parlar als grups aquella setmana, per seccions, amb el pòdcast i el vídeo de cada grup. Tria un grup per veure només el seu.", "semana_actual": "Resum setmanal", "grupo_filtro": "Veure el d'un grup", "grupo_todos": "Tots", "sin_grupo": "Aquest grup no té articles aquesta setmana.", "nb_h": "El pòdcast i el vídeo de la setmana", "nb_txt": "Cada dilluns, NotebookLM, de Google, prepara un pòdcast i un vídeo de cada grup amb tota la seva conversa de la setmana, també el que no ha sortit al diari. Un agent d'IA els contrasta amb la conversa abans de publicar-los.", "nb_es": "Són en castellà.", "nb_pendiente": "El pòdcast i el vídeo de cada grup s'afegeixen aquí dilluns al matí.", "nb_video": "Vídeo", "nb_ver": "Reproduir el vídeo de {g}", "nb_youtube": "Mira'l a YouTube", "nb_podcast": "Pòdcast", "nb_archive": "Escolta'l a Internet Archive", "cs_h": "El més important de la setmana", "cs_h_g": "El més important de la setmana a {g}", "cs_nota": "L'escriu un agent d'IA amb el que va publicar el diari aquella setmana, i un altre el contrasta amb cada article abans de publicar-lo.", "numeros_semana": "Els números de la setmana", "sem_ant": "Setmana anterior", "sem_sig": "Setmana següent", "todo_mes": "Tot el mes", "mes": "El mes", "mes_txt": "Les setmanes del mes, amb l'article que va obrir cada número.", "mes_ant": "Mes anterior", "mes_sig": "Mes següent", "por_meses": "Per mesos", "anyo_ant": "Any anterior", "anyo_sig": "Any següent", "buscar_en": "Cerca a {s}", "ver_semana": "Tota la setmana, per seccions", "con_nb": "Amb el pòdcast i el vídeo de cada grup", 
         "todos_numeros": "Hemeroteca: tots els números",
-        "saltar": "Salta al contingut", "compartir": "Comparteix", "copiado": "Enllaç copiat", "compartir_enlace": "Comparteix l'enllaç", "compartir_enlace_d": "Envia l'enllaç de l'article a l'app que triïs", "copiar_enlace": "Copia l'enllaç", "copiar_enlace_d": "Per enganxar-lo en un missatge o una publicació", "imagen_copiada": "Imatge copiada", "imagen_compartir": "Comparteix com a imatge", "imagen_compartir_d": "Envia una imatge de l'article, amb l'enllaç, a l'app que triïs", "imagen_copiar": "Copia la imatge", "imagen_copiar_d": "Per enganxar-la en un missatge o una publicació", "imagen_guardar": "Desa la imatge", "imagen_guardar_d": "Es baixa com a fitxer PNG", "una_columna": "Una columna", "columnas": "Columnes", "una_columna_t": "Llegir les notícies en una sola columna", "escuchar": "Escolta", "escuchar_t": "Llegir l'article en veu alta amb una veu del teu dispositiu", "pausa": "Pausa", "seguir": "Continua", "parar": "Atura", "lector": "Lectura en veu alta", "velocidad_t": "Velocitat de lectura", "lector_estados": "S'està llegint en veu alta|Lectura en pausa|Lectura aturada", "columnas_t": "Llegir les notícies en columnes, com en un diari", "compartir_breve": "Comparteix aquest breu", "mas_en": "Més a", "mas_diario": "Més al diari",
+        "saltar": "Salta al contingut", "compartir": "Comparteix", "copiado": "Enllaç copiat", "compartir_enlace": "Comparteix l'enllaç", "compartir_enlace_d": "Envia l'enllaç de l'article a l'app que triïs", "copiar_enlace": "Copia l'enllaç", "copiar_enlace_d": "Per enganxar-lo en un missatge o una publicació", "imagen_copiada": "Imatge copiada", "vineta_enlace_d": "Envia l'enllaç de la vinyeta a l'app que triïs", "vineta_imagen_d": "Envia una imatge de la vinyeta, amb l'enllaç, a l'app que triïs", "imagen_compartir": "Comparteix com a imatge", "imagen_compartir_d": "Envia una imatge de l'article, amb l'enllaç, a l'app que triïs", "imagen_copiar": "Copia la imatge", "imagen_copiar_d": "Per enganxar-la en un missatge o una publicació", "imagen_guardar": "Desa la imatge", "imagen_guardar_d": "Es baixa com a fitxer PNG", "una_columna": "Una columna", "columnas": "Columnes", "una_columna_t": "Llegir les notícies en una sola columna", "escuchar": "Escolta", "escuchar_t": "Llegir l'article en veu alta amb una veu del teu dispositiu", "pausa": "Pausa", "seguir": "Continua", "parar": "Atura", "lector": "Lectura en veu alta", "velocidad_t": "Velocitat de lectura", "lector_estados": "S'està llegint en veu alta|Lectura en pausa|Lectura aturada", "columnas_t": "Llegir les notícies en columnes, com en un diari", "compartir_breve": "Comparteix aquest breu", "mas_en": "Més a", "mas_diario": "Més al diari",
         "no_existe": "Aquesta pàgina no existeix",
         "sin_conexion": "Sense connexió",
         "sin_conexion_txt": "Aquesta pàgina no està desada en aquest dispositiu. Sense connexió es poden llegir les pàgines que ja s'han obert i l'últim número que es va carregar a la portada.",
@@ -1742,7 +1742,16 @@ def cuerpo_portada(prof, piezas, breves, mostrar_fecha, tira=""):
     return html_
 
 
-def bloque_vineta(prof, eds, fecha, en_archivo=False, pieza=None):
+def entre_comillas(texto):
+    """Un título citado, con las comillas de cada lengua: angulares y, dentro, inglesas; en inglés, dobles y,
+    dentro, simples. Sin el punto final, que va fuera."""
+    texto = texto.rstrip().removesuffix(".")
+    if L["codigo"] == "en":
+        return "\u201c" + texto.replace("\u201c", "\u2018").replace("\u201d", "\u2019") + "\u201d"
+    return "«" + texto.replace("«", "\u201c").replace("»", "\u201d") + "»"
+
+
+def bloque_vineta(prof, eds, fecha, en_archivo=False, pieza=None, compartir=True):
     """La tira del día, si la hay: solo falta si fallan los guiones o el juez, o si los cinco incumplen las prohibiciones.
     Con `pieza`, la de esa noticia, debajo de su artículo: solo si trata de ella, y sin «A partir de…»."""
     f = con_traduccion("vinetas", f"{fecha}.json")
@@ -1764,11 +1773,28 @@ def bloque_vineta(prof, eds, fecha, en_archivo=False, pieza=None):
         origen_txt = ""
     else:
         origen_txt = L["a_partir_dia"]
+    # El mismo origen, sin enlace, para la imagen al compartir: la imagen viaja sola y es lo que sitúa la tira.
+    # El titular, entre comillas, como el título de un artículo (RAE), para que se vea dónde empieza
+    if p or b:
+        origen_plano = f'{L["a_partir"]} {entre_comillas(p["titular"] if p else titulo_breve(b))}.'
+    else:
+        origen_plano = html.unescape(re.sub(r"<[^>]+>", "", origen_txt))
     return f"""<section class="vineta sec-vineta" aria-labelledby="t-vineta-{fecha}">
   <h2 id="t-vineta-{fecha}" class="vineta-titulo"><span>{"" if en_archivo else f'<a href="{prof}vineta.html">{icono("vineta")} {L["vineta_titulo"]}</a>'}</span> <span class="fecha-pieza">{fecha_corta(publicacion(fecha))}</span></h2>
   <div class="tira">{vineta.tira(elegida["guion"], {"panel": L["vin_panel"], "tiza": L["nombre_tiza"], "algoritmo": L["nombre_algoritmo"], "pensando": L["vin_pensando"], "comillas": "“”" if L["codigo"] == "en" else "«»"})}</div>
   {"" if pieza or not origen_txt else f'<p class="vineta-origen">{origen_txt}</p>'}
+  {boton_vineta(prof, fecha, origen_plano) if compartir else ""}
 </section>"""
+
+
+def boton_vineta(prof, fecha, origen=""):
+    """«Compartir» de la viñeta (ADR 0090): su enlace lleva a la página del número, a la tira; la imagen, en
+    horizontal, la dibuja el navegador con los tres paneles."""
+    datos = (f' data-url="{e(BASE + L["carpeta"] + fecha + "/#t-vineta-" + fecha)}" data-titulo="{e(L["vineta_titulo"])}"'
+             f' data-fecha="{e(mayus(fecha_larga(publicacion(fecha))))}" data-nombre="vineta-{fecha}"'
+             + (f' data-origen="{e(origen)}"' if origen else ""))
+    return (f'<div class="acciones vineta-acciones" data-pagefind-ignore>'
+            f'{menu_compartir("menu-vineta-" + fecha, L["vineta_enlace_d"], L["vineta_imagen_d"], datos)}</div>{script_compartir(prof)}')
 
 
 def franja_reserva(d):
@@ -2104,7 +2130,7 @@ def pagina_papel(d, eds):
 <div class="papel-barra"><a href="./">{L["papel_volver"]}</a><button type="button" class="compartir imprimir">{IMPRESORA}<span>{L["papel_imprimir"]}</span></button><p>{L["papel_consejo"]}</p></div>
 <nav class="papel-sumario" aria-labelledby="t-sumario"><h2 id="t-sumario">{L["papel_sumario"]}</h2><ul>{sumario}</ul></nav>
 {cuerpo}
-{bloque_vineta(prof, eds, d["fecha"])}
+{bloque_vineta(prof, eds, d["fecha"], compartir=False)}
 {bloque_breves(d.get("breves", []), False)}
 <p class="solo-papel papel-creditos papel-creditos-final">{creditos_papel(ruta)}</p>
 </main>
@@ -4390,6 +4416,29 @@ def republicable(d, x, ruta, eds, reportaje=False):
     return absoluto("\n".join(p for p in partes if p), url)
 
 
+def menu_compartir(ident, enlace_d, imagen_d, datos=""):
+    """El botón «Compartir» y su menú (ADR 0090): el enlace (compartirlo o copiarlo) y la imagen que dibuja el
+    navegador (compartirla, copiarla o guardarla). Qué opciones salen lo decide compartir.js según el navegador."""
+    def op(accion, rotulo, desc, extra="", oculto=" hidden"):
+        return (f'<button type="button" class="llevar-op compartir-op" data-accion="{accion}"{extra}{oculto}>'
+                f'<b>{L[rotulo]}</b><span>{e(desc)}</span></button>')
+    return (f'<span class="llevar"><button type="button" class="compartir abre-compartir" aria-expanded="false" '
+            f'aria-controls="{ident}"{datos}>{COMPARTIR}<span>{L["compartir"]}</span></button>'
+            f'<span class="llevar-menu" id="{ident}" hidden>'
+            + op("enlace", "compartir_enlace", enlace_d)
+            + op("copiar-enlace", "copiar_enlace", L["copiar_enlace_d"], f' data-hecho="{e(L["copiado"])}"', "")
+            + op("imagen", "imagen_compartir", imagen_d)
+            + op("copiar-imagen", "imagen_copiar", L["imagen_copiar_d"], f' data-hecho="{e(L["imagen_copiada"])}"', "")
+            + op("guardar-imagen", "imagen_guardar", L["imagen_guardar_d"], "", "")
+            + '</span></span>')
+
+
+def script_compartir(prof):
+    """El código del botón «Compartir». Puede salir más de una vez en una página (un artículo y su viñeta):
+    el navegador lo descarga una vez y el propio código no se ejecuta dos."""
+    return f'<script src="{recursos(prof)}compartir.js?v={version_estatico("compartir.js")}" defer></script>'
+
+
 def acciones(fecha, x, ruta, d, eds, reportaje=False, llevar=True):
     """Compartir y «Para tu web»: un botón que despliega la tarjeta para incrustar, la pieza entera para
     republicarla y la página con el resto de opciones. El texto republicable va en un <template>, fuera
@@ -4405,17 +4454,8 @@ def acciones(fecha, x, ruta, d, eds, reportaje=False, llevar=True):
               f'<a class="llevar-op llevar-mas" href="{prof}para-tu-web.html">{L["llevar_mas"]}</a></span></span>')
     if not llevar:   # el editorial no entra en el widget ni en los canales: solo se comparte
         llevar = ""
-    botones = (f'<div class="acciones" data-pagefind-ignore><span class="llevar"><button type="button" class="compartir abre-compartir" '
-               f'aria-expanded="false" aria-controls="menu-compartir">{COMPARTIR}<span>{L["compartir"]}</span></button>'
-               f'<span class="llevar-menu" id="menu-compartir" hidden>'
-               f'<button type="button" class="llevar-op compartir-op" data-accion="enlace" hidden><b>{L["compartir_enlace"]}</b><span>{e(L["compartir_enlace_d"])}</span></button>'
-               f'<button type="button" class="llevar-op compartir-op" data-accion="copiar-enlace" data-hecho="{e(L["copiado"])}"><b>{L["copiar_enlace"]}</b><span>{e(L["copiar_enlace_d"])}</span></button>'
-               f'<button type="button" class="llevar-op compartir-op" data-accion="imagen" hidden><b>{L["imagen_compartir"]}</b><span>{e(L["imagen_compartir_d"])}</span></button>'
-               f'<button type="button" class="llevar-op compartir-op" data-accion="copiar-imagen" data-hecho="{e(L["imagen_copiada"])}"><b>{L["imagen_copiar"]}</b><span>{e(L["imagen_copiar_d"])}</span></button>'
-               f'<button type="button" class="llevar-op compartir-op" data-accion="guardar-imagen"><b>{L["imagen_guardar"]}</b><span>{e(L["imagen_guardar_d"])}</span></button>'
-               f'</span></span>'
-               f'<button type="button" class="compartir imprimir">{IMPRESORA}<span>{L["imprimir"]}</span></button>{llevar}</div>'
-               f'<script src="{recursos(prof)}compartir.js?v={version_estatico("compartir.js")}" defer></script>')
+    botones = (f'<div class="acciones" data-pagefind-ignore>{menu_compartir("menu-compartir", L["compartir_enlace_d"], L["imagen_compartir_d"])}'
+               f'<button type="button" class="compartir imprimir">{IMPRESORA}<span>{L["imprimir"]}</span></button>{llevar}</div>{script_compartir(prof)}')
     if not llevar:
         return botones, ""
     plantilla = f'<template id="republicar">{republicable(d, x, ruta, eds, reportaje)}</template>'

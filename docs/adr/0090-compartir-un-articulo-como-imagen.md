@@ -32,7 +32,19 @@ cinco idiomas. Cada opción dice lo que hace, sin nombres técnicos:
 
 Si compartir o copiar la imagen fallan, se descarga. Los breves conservan su botón de compartir, solo con el enlace.
 
-El código está en `estaticos/compartir.js`, un archivo común que solo cargan las páginas con el botón. La imagen:
+**La viñeta** (`boton_vineta()`, debajo de cada tira: portada, día, «La viñeta» y bajo su artículo; no en la edición en
+papel) lleva el mismo botón. Su enlace va a la página del número, a la tira (`FECHA/#t-vineta-FECHA`), porque no tiene
+página propia. Su imagen es siempre horizontal, como la tira en el ordenador (Juanjo: «siempre deberia compartirse en
+horizontal»): 1920 de ancho, con el nombre del diario, el título de la viñeta y la fecha en una línea, los tres paneles
+en fila, «A partir de «titular».» debajo («eso situa la accion de la tira comica») y el nombre del sitio al pie. El
+titular va entre comillas de su lengua, en redonda (`entre_comillas()`): comillas como pide la RAE para el título de
+un artículo, que dejan ver dónde empieza; sin dos puntos, que la RAE no admite entre la preposición y su término.
+Los paneles se dibujan con las reglas «.vineta …» de las hojas de la página, copiadas dentro de cada SVG con los
+colores del tema claro. En el móvil los bocadillos se leen al ampliar la imagen; en el ordenador y la tableta, a la
+primera.
+
+El código está en `estaticos/compartir.js`, un archivo común que solo cargan las páginas con el botón (si sale dos veces,
+se ejecuta una). La imagen de un artículo:
 
 - Dibuja en un lienzo de 1080 × 1350 (4:5, el formato vertical que X, Instagram y WhatsApp enseñan entero) la
   cabecera del diario, el número y la fecha, la sección con su color, el titular, la entradilla y el dibujo, con la
@@ -57,6 +69,8 @@ El código está en `estaticos/compartir.js`, un archivo común que solo cargan 
   y repartía en dos lo que es una sola cosa. Unificado, compartir el enlace en el móvil pasa de uno a dos toques.
 - Un menú propio con enlaces a X, Bluesky, LinkedIn, WhatsApp o Telegram donde no hay menú del sistema: solo
   llevarían el texto, no la imagen, y habría que mantenerlos si cambian esas webs.
+- La dirección completa de la página en la imagen: nadie la escribe a mano («si a alguien le interesa la busca»);
+  basta el nombre del sitio.
 - Elegir un trozo del texto y compartirlo como cita: queda para cuando se pida.
 
 ## Consecuencias
@@ -93,3 +107,7 @@ Con el botón único, el mismo día, en local y en los tres navegadores: en el o
 imagen», «Copiar la imagen» y «Guardar la imagen», y cada una hace lo suyo (el enlace que se comparte o se copia es
 la dirección pública del artículo); el menú se cierra tras cada una. Los breves siguen compartiendo su enlace. La
 maqueta, sin avisos.
+
+La viñeta, el mismo día, en local y en los tres navegadores: la imagen en castellano, catalán, euskera e inglés, con
+los colores claros también con el tema oscuro, y el «A partir de» más largo publicado (130 caracteres) en una línea;
+en una página con el botón de un artículo y el de su viñeta, cada uno comparte lo suyo.
