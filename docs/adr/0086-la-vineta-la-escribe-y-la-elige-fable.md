@@ -50,5 +50,5 @@ y Opus 5.5 para elegir el reportaje y para los textos largos.
 
 ## Validación
 
-Pendiente: la viñeta del número del 18-11-2026, la primera con el cambio; en su registro tienen que
-figurar `3-guiones` y `4-juez` con `claude-fable-5-2`.
+La viñeta del número del 18-11-2026, la primera con el cambio: en `registro/2026-11-17.log`, `3-guiones`
+(1:05 a 1:09) y `4-juez` (1:10 a 1:12) figuran con `claude-fable-5-2` y acaban con código 0.

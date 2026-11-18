@@ -154,3 +154,8 @@ Repetida a las 7:03 con ese cambio: el agente partió el artículo en sus párra
 (59 s); el programa lanzó a los traductores de la noche (3 min 36 s) y la comprobación lo dio por bueno,
 con las mismas medidas: de 4 traducciones que faltaban y 80 textos en castellano, a 0 y 2. En total, seis
 minutos.
+
+Primera noche real, la del número del 18-11-2026: actuó en la fase «antes» (1:24) por el aviso del
+corrector de estilo, cuyos cambios se habían descartado como está previsto. En 28 s midió el número (todo
+a 0), respondió «nada que arreglar» sin tocar nada, dejó como pendiente para una persona una entradilla
+que nombra algo que el cuerpo no recoge, y el número salió a su hora (6:51).

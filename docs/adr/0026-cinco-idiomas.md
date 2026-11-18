@@ -111,7 +111,9 @@ menos la primera vez y bien la segunda: queda traducido, sin aviso; (3) un párr
 veces: ese artículo en castellano y el otro traducido, con aviso; (4) el traductor no escribe nada
 ninguna vez: aviso de que no está; (5) no escribe nada la primera vez y bien la segunda: traducido.
 La regla nueva da por buenas las 172 traducciones ya publicadas. El generador publica un número con
-un artículo `sin_traducir`. Pendiente: verlo en una noche real.
+un artículo `sin_traducir`. Primera noche real, la del número del 18-11-2026: las cuatro traducciones
+pasaron a la primera, sin segundo intento ni `registro/2026-11-17-traduccion.txt`. Queda pendiente verlo
+actuar la primera noche en que una traducción falle.
 
 **Riesgos.** El segundo intento alarga la noche solo cuando algo falla (unos dos minutos por lengua).
 Un artículo en castellano dentro de una edición traducida no lleva ningún letrero: lo detecta
