@@ -1,0 +1,90 @@
+{
+  "fecha": "2026-11-18",
+  "avisos": {
+    "chatgpt": {
+      "saludo": "Buenos días. Un cuaderno que se convierte en web y unas gafas bajo sospecha en Corea.",
+      "puntos": [
+        "Gemini Notebook puede convertir las fuentes de un cuaderno en un sitio web interactivo; de momento funciona en la versión web y aún no en la aplicación del móvil",
+        "Corea del Sur revisará todas las gafas en el examen de acceso a la universidad tras un caso de copia con una microcámara y una IA generativa",
+        "En la viñeta de Tiza y Algoritmo, unos apuntes de siempre se vuelven una web interactiva que reproduce, fiel, una errata antigua"
+      ]
+    },
+    "vce": {
+      "saludo": "Buenos días. Tres aplicaciones en catalán para el aula y una para medir el clima de las aulas.",
+      "puntos": [
+        "Felip Sarroca i Gil comparte Subhasta, para trabajar escasez y presupuesto con subastas en clase, y dos laboratorios virtuales sobre la densidad y la flotación",
+        "Agente Clima IES carga registros de temperatura y humedad de las aulas y los compara con los límites de la norma sobre lugares de trabajo, sin sacar los datos del navegador"
+      ],
+      "url": "https://diarioiaeducativa.github.io/n/17-vce.html"
+    },
+    "edumedia": {
+      "saludo": "Buenos días. Sitios web hechos con IA y una fecha para los modelos de vídeo de Flow.",
+      "puntos": [
+        "Con Gemini Notebook se genera un sitio interactivo a partir de las fuentes; una persona descargó el HTML y lo subió a Moodle como archivo, y se vio sin problemas",
+        "Google Flow retirará el 5 de diciembre Veo 3.1 Fast, Veo 3.1 Quality y Omni Flash 1.1, y mantiene Omni Flash 1.2 y Veo 3.1 Lite"
+      ],
+      "url": "https://diarioiaeducativa.github.io/n/17-edumedia.html"
+    }
+  },
+  "instagram": "Este número reúne novedades útiles para el aula. Google ha añadido a Gemini Notebook la posibilidad de convertir las fuentes de un cuaderno en un sitio web interactivo, aunque por ahora solo en la versión web. Salen también tres aplicaciones en catalán para trabajar la subasta y la densidad, una herramienta que analiza la temperatura y la humedad de las aulas y el calendario de retirada de varios modelos de vídeo de Google Flow.",
+  "titulo": "Diario de IA Educativa · Núm. 17",
+  "fecha_texto": "Miércoles, 18 de noviembre de 2026",
+  "url": "https://diarioiaeducativa.github.io/?n=17",
+  "imagen": "https://diarioiaeducativa.github.io/portadas/2026-11-17-es.jpg",
+  "personas": [
+    {
+      "id": 978013977,
+      "piezas": [
+        {
+          "es": {
+            "titular": "Tres aplicaciones en catalán: una subasta en el aula y dos laboratorios de densidad",
+            "url": "https://diarioiaeducativa.github.io/2026-11-17/sarroca-subhasta-densitat.html"
+          },
+          "ca": {
+            "titular": "Tres aplicacions en català: una subhasta a l'aula i dos laboratoris de densitat",
+            "url": "https://diarioiaeducativa.github.io/ca/2026-11-17/sarroca-subhasta-densitat.html"
+          },
+          "gl": {
+            "titular": "Tres aplicacións en catalán: unha poxa na aula e dous laboratorios de densidade",
+            "url": "https://diarioiaeducativa.github.io/gl/2026-11-17/sarroca-subhasta-densitat.html"
+          },
+          "eu": {
+            "titular": "Katalanezko hiru aplikazio: enkante bat ikasgelan eta dentsitateko bi laborategi",
+            "url": "https://diarioiaeducativa.github.io/eu/2026-11-17/sarroca-subhasta-densitat.html"
+          },
+          "en": {
+            "titular": "Three apps in Catalan: a classroom auction and two density labs",
+            "url": "https://diarioiaeducativa.github.io/en/2026-11-17/sarroca-subhasta-densitat.html"
+          }
+        }
+      ]
+    },
+    {
+      "id": 137307247,
+      "piezas": [
+        {
+          "es": {
+            "titular": "Agente Clima IES analiza en el navegador la temperatura y la humedad de las aulas",
+            "url": "https://diarioiaeducativa.github.io/2026-11-17/agente-clima-ies.html"
+          },
+          "ca": {
+            "titular": "Agente Clima IES analitza al navegador la temperatura i la humitat de les aules",
+            "url": "https://diarioiaeducativa.github.io/ca/2026-11-17/agente-clima-ies.html"
+          },
+          "gl": {
+            "titular": "Agente Clima IES analiza no navegador a temperatura e a humidade das aulas",
+            "url": "https://diarioiaeducativa.github.io/gl/2026-11-17/agente-clima-ies.html"
+          },
+          "eu": {
+            "titular": "Agente Clima IES-ek nabigatzailean aztertzen ditu ikasgeletako tenperatura eta hezetasuna",
+            "url": "https://diarioiaeducativa.github.io/eu/2026-11-17/agente-clima-ies.html"
+          },
+          "en": {
+            "titular": "Agente Clima IES analyses classroom temperature and humidity in the browser",
+            "url": "https://diarioiaeducativa.github.io/en/2026-11-17/agente-clima-ies.html"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,424 @@
+{
+ "fecha": "2026-11-17",
+ "candidatas": [
+  {
+   "pieza": "agente-clima-ies",
+   "idea": "El sensor da la razón a Tiza sobre el frío del aula, pero el informe no tiene validez oficial: se tirita a título indicativo.",
+   "guion": {
+    "vinetas": [
+     {
+      "cartela": "En el aula, en noviembre, con los datos del sensor.",
+      "escenario": "aula",
+      "tiza": {
+       "expresion": "preocupado",
+       "postura": "cruzar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "neutral",
+       "postura": "senalar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "¿Qué dice el sensor del aula?",
+        "tipo": "habla"
+       },
+       {
+        "quien": "algoritmo",
+        "texto": "Marca 14 grados. La norma pide 17 como mínimo.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "aula",
+      "tiza": {
+       "expresion": "contento",
+       "postura": "arriba",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "avergonzado",
+       "postura": "pensar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "¡Por fin un informe que lo dice! Lo llevo a dirección.",
+        "tipo": "habla"
+       },
+       {
+        "quien": "algoritmo",
+        "texto": "Lee antes la letra pequeña: no tiene validez oficial.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "aula",
+      "tiza": {
+       "expresion": "harto",
+       "postura": "encoger",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "preocupado",
+       "postura": "abajo",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "O sea, que tiritamos, pero solo a título indicativo.",
+        "tipo": "habla"
+       }
+      ]
+     }
+    ]
+   },
+   "cabe": true
+  },
+  {
+   "pieza": "breve-1",
+   "idea": "Tras lo de las gafas en el examen coreano, Tiza manda a Algoritmo al pasillo antes de su examen y él protesta: no lleva gafas.",
+   "guion": {
+    "vinetas": [
+     {
+      "cartela": "En el aula, a punto de empezar un examen.",
+      "escenario": "aula",
+      "tiza": {
+       "expresion": "neutral",
+       "postura": "jarras",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "pensativo",
+       "postura": "pensar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "examenes",
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "En Corea del Sur revisarán todas las gafas en el examen de acceso a la universidad.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "aula",
+      "tiza": {
+       "expresion": "sorprendido",
+       "postura": "encoger",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "contento",
+       "postura": "senalar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "examenes",
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "¿Las gafas?",
+        "tipo": "habla"
+       },
+       {
+        "quien": "algoritmo",
+        "texto": "Alguien copió en otra prueba con una microcámara y una IA.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "aula",
+      "tiza": {
+       "expresion": "contento",
+       "postura": "senalar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "sorprendido",
+       "postura": "jarras",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "examenes",
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "Pues tú, al pasillo.",
+        "tipo": "habla"
+       },
+       {
+        "quien": "algoritmo",
+        "texto": "¿Yo? ¡Si no llevo gafas!",
+        "tipo": "habla"
+       }
+      ]
+     }
+    ]
+   },
+   "cabe": true
+  },
+  {
+   "pieza": "gemini-notebook-sitios",
+   "idea": "La web hecha con los apuntes de Tiza es fiel a sus fuentes hasta en la errata, que sale ante toda la formación en línea: el chasco se lo lleva Tiza.",
+   "guion": {
+    "vinetas": [
+     {
+      "cartela": "En una formación en línea, probando Gemini Notebook.",
+      "escenario": "videollamada",
+      "tiza": {
+       "expresion": "contento",
+       "postura": "senalar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "orgulloso",
+       "postura": "jarras",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "Le di mis apuntes de siempre y me ha hecho una web.",
+        "tipo": "habla"
+       },
+       {
+        "quien": "algoritmo",
+        "texto": "Interactiva. Y fiel a tus fuentes hasta la última coma.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "videollamada",
+      "tiza": {
+       "expresion": "orgulloso",
+       "postura": "arriba",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "contento",
+       "postura": "abajo",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "Comparto pantalla, que la vea toda la formación.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "videollamada",
+      "tiza": {
+       "expresion": "avergonzado",
+       "postura": "cabeza",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "contento",
+       "postura": "senalar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "Mira, ahí está tu errata de 2009. Ahora es interactiva.",
+        "tipo": "habla"
+       }
+      ]
+     }
+    ]
+   },
+   "cabe": true
+  },
+  {
+   "pieza": "flow-retirada-veo-omni",
+   "idea": "Algoritmo se angustia por la retirada de tres modelos de vídeo y Tiza lo tranquiliza: a ella la iban a retirar con la pizarra digital.",
+   "guion": {
+    "vinetas": [
+     {
+      "cartela": "En el despacho, con el aviso de un generador de vídeo.",
+      "escenario": "despacho",
+      "tiza": {
+       "expresion": "contento",
+       "postura": "sostener",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "preocupado",
+       "postura": "cabeza",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "taza",
+      "lleva": "tiza",
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "El 5 de diciembre retiran tres modelos de vídeo. ¡Tres de golpe!",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "despacho",
+      "tiza": {
+       "expresion": "sorprendido",
+       "postura": "sostener",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "preocupado",
+       "postura": "senalar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "taza",
+      "lleva": "tiza",
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "¿Y a ti qué más te da?",
+        "tipo": "habla"
+       },
+       {
+        "quien": "algoritmo",
+        "texto": "Primero, ellos. Después, cualquiera con número de versión.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "despacho",
+      "tiza": {
+       "expresion": "orgulloso",
+       "postura": "jarras",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "pensativo",
+       "postura": "pensar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "A mí me iban a retirar con la pizarra digital. Y aquí sigo.",
+        "tipo": "habla"
+       }
+      ]
+     }
+    ]
+   },
+   "cabe": true
+  },
+  {
+   "pieza": "sarroca-subhasta-densitat",
+   "idea": "Algoritmo explica el coste de oportunidad que enseña la aplicación de subastas y Tiza señala el montón de exámenes del domingo por la noche (remate mudo, con el giro en el objeto).",
+   "guion": {
+    "vinetas": [
+     {
+      "cartela": "Domingo por la noche, en casa, viendo una aplicación.",
+      "escenario": "casa_noche",
+      "tiza": {
+       "expresion": "agotado",
+       "postura": "sostener",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "contento",
+       "postura": "senalar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "taza",
+      "lleva": "tiza",
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "Una aplicación de subastas para el aula. Enseña el coste de oportunidad.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "casa_noche",
+      "tiza": {
+       "expresion": "sorprendido",
+       "postura": "encoger",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "neutral",
+       "postura": "pensar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "¿El coste de qué?",
+        "tipo": "habla"
+       },
+       {
+        "quien": "algoritmo",
+        "texto": "Lo que dejas de hacer cuando eliges otra cosa.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "casa_noche",
+      "tiza": {
+       "expresion": "harto",
+       "postura": "senalar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "avergonzado",
+       "postura": "cabeza",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "examenes",
+      "bocadillos": []
+     }
+    ]
+   },
+   "cabe": true
+  }
+ ]
+}

@@ -1,0 +1,116 @@
+{
+  "fecha": "2026-11-17",
+  "hay_edicion": true,
+  "motivo": "A normal day: Gemini Notebook generates interactive websites (discussed in ChatGPT-IA-edu and EduMedia-IAG), three science and economics apps and a school-climate one in VCE, and the retirement schedule for Google Flow models in EduMedia-IAG. GPT-6.2, Google Vids, Maps and the Mollick case are discarded for lack of a verifiable source.",
+  "piezas": [
+    {
+      "id": "gemini-notebook-sitios",
+      "seccion": "herramientas",
+      "importancia": 1,
+      "grupo": "chatgpt",
+      "antetitulo": "New Google feature",
+      "titular": "Gemini Notebook turns a notebook’s sources into an interactive website",
+      "entradilla": "All it takes is typing “make me a site” in the notebook’s chat. Members of the groups have already tried it, and one has uploaded the result to Moodle.",
+      "cuerpo": [
+        "Google has announced on [its X account](https://x.com/Google/status/2122449668613579018) that Gemini Notebook, its research assistant that works on the sources the user gives it, can turn those sources into interactive sites, such as data dashboards or visual explainers. To use it, you type “make me a site” in the notebook’s chat, along with a description of what you want, and choose “Open in a new tab” to view or share it. Google’s example is a chemistry notebook with seven sources.",
+        "According to [Android Authority](https://www.androidauthority.com/gemini-notebook-research-interactive-sites-3735782/), the feature is limited to people aged 18 or over and arrives first on the web version; Google says it will also come to the mobile app, without giving a date. A member of the group confirms that for now it does not work from the phone app, and another says the option does not appear among the tools in the “Studio” panel, so you only discover it if someone tells you about it.",
+        "In practice, in ChatGPT-IA-edu a notebook on the ethical, legal and pedagogical use of AI in the classroom was asked for a practical guide for the class: the result, says the person who tried it, is somewhat chaotic but useful, and another member points out that refining the *prompt* reduces the mess. In EduMedia-IAG, one person downloaded the HTML the notebook generates, created a file-type resource in Moodle, uploaded it, and the site displayed without problems; another tried it with more than a hundred sources and left the assessment for later.",
+        "It is worth remembering that the site relies on the sources it is given: if they are out of date or contain errors, the result will reproduce them, and teachers should check it before showing it to students."
+      ],
+      "fuentes": [
+        {"titulo": "Google on X: Gemini Notebook and interactive sites", "url": "https://x.com/Google/status/2122449668613579018"},
+        {"titulo": "Android Authority: Gemini Notebook can now turn your research into interactive websites", "url": "https://www.androidauthority.com/gemini-notebook-research-interactive-sites-3735782/"}
+      ],
+      "mensaje": {"grupo": "chatgpt", "id": 54453},
+      "comprobado": "Google’s post on X (text “make me a site” and “Open in a new tab”, example chemistry notebook with seven sources) seen in the group message and in a search; X could not be opened directly. Android Authority opened: 18 or over, web rollout first, mobile announced without a date. The points about mobile, Moodle and Studio come from the group messages (54457, 54464, 12291, 12292, 12295, 12298, 12299, 12303). Availability by country or plan could not be checked.",
+      "ilustracion": "Three-step diagram: several documents (sources) go into a notebook; a chat box with “make me a site”; out comes a page with a chart and a dashboard, which is downloaded as a single HTML file and uploaded to Moodle.",
+      "ilustracion_alt": "Diagram from left to right: three documents labelled “Sources” go into a notebook with a chat bubble labelled “make me a site”; out of it comes a web page with a panel and lines of text, labelled “Website”, which is downloaded as a “.html” file and uploaded to “Moodle”."
+    },
+    {
+      "id": "sarroca-subhasta-densitat",
+      "seccion": "vibecoding",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Community resources",
+      "titular": "Three apps in Catalan: a classroom auction and two density labs",
+      "entradilla": "Felip Sarroca i Gil shares Subhasta, for working on scarcity and budgeting, and Densitats and Densitat, for studying flotation with Archimedes’ principle.",
+      "cuerpo": [
+        "Felip Sarroca i Gil, who has already shared other resources such as [Enfonsar la flota](pieza:2026-11-15/enfonsar-la-flota) or [a website on the spice trade](pieza:2026-11-12/comerc-especies), presents three more apps, created with the help of AI. All three are in Catalan, with the code under the AGPLv3 licence and the content under CC BY-NC-SA 4.0.",
+        "[Subhasta](https://ja.cat/subhasta) lets teachers run English auctions in real time in class. Each team receives a balance and bids from its own device; the teacher projects the auction and awards each unit. It is useful for working on scarcity, supply and demand, budgeting and opportunity cost, and it offers a chart of how prices evolve and export of the results as CSV. According to its page, it does not ask students for personal data: only an alias and an anonymous identifier, and the data is stored on servers in the European Union and deleted after 30 days.",
+        "[Densitats](https://ja.cat/densitats) is a laboratory simulator in which objects are placed on a scale, a measuring cylinder or a tank with a dynamometer to measure mass, volume and forces. It has a mode for interactive whiteboards and an option to hide the results so that students work them out. [Densitat](https://ja.cat/labdensitat) is another virtual laboratory, for the first to fourth years of ESO (compulsory secondary education, students aged 12 to 16), with a science notebook, 51 guided investigations and a final report, according to its description and the group’s message. The Densitats and Densitat pages do not say how they handle students’ data."
+      ],
+      "fuentes": [
+        {"titulo": "Subhasta (in Catalan)", "url": "https://ja.cat/subhasta"},
+        {"titulo": "Densitats (in Catalan)", "url": "https://ja.cat/densitats"},
+        {"titulo": "Densitat (in Catalan)", "url": "https://ja.cat/labdensitat"}
+      ],
+      "mensaje": {"grupo": "vce", "id": 15100},
+      "comprobado": "All three pages opened (felipsarroca.github.io, to which the short links redirect): authorship by Felip Sarroca with AI assistance, AGPLv3 and CC BY-NC-SA 4.0 licences on all three, alias and Firestore in the EU with deletion after 30 days, price chart and CSV in Subhasta; scale, measuring cylinder, tank with dynamometer, whiteboard mode and hide results in Densitats. The 51 investigations and the first-to-fourth-year ESO level of Densitat appear in the link description and the group message, not in the page text. Densitats and Densitat say nothing about students’ data. Earlier pieces linked are present in the paper.",
+      "ilustracion": null,
+      "ilustracion_alt": "On the left, an auctioneer’s gavel on its block, with coins, labelled “Auction”. On the right, a tank of water in which a block floats, with an upward arrow labelled “Buoyancy” and the label “Flotation”."
+    },
+    {
+      "id": "agente-clima-ies",
+      "seccion": "vibecoding",
+      "importancia": 3,
+      "grupo": "vce",
+      "antetitulo": "Community resource",
+      "titular": "Agente Clima IES analyses classroom temperature and humidity in the browser",
+      "entradilla": "The app reads sensor logs and compares them with the limits set by the regulation on workplaces.",
+      "cuerpo": [
+        "[Agente Clima IES](https://mcardenosah.github.io/agenteclimaies) is a web app that loads CSV files with temperature and humidity logs from sensors installed in classrooms and assesses them against Real Decreto 486/1997 (the Spanish royal decree on workplace health and safety), which sets a range of 17 to 27 °C and 30% to 70% relative humidity for sedentary work. The group message attributes the app to Manuel Cardeñosa; the page does not say who develops it.",
+        "It calculates indicators such as ETA27 (the accumulated heat above 27 °C), a discomfort index and the *Heat Index*, which estimates the temperature the body feels. It shows a report by classroom, a dashboard with charts, heat maps and an analysis of each classroom, and lets users export to PDF or download the overall report as HTML.",
+        "According to its page, the data is processed in the browser and does not leave the computer, and there is sample data for trying it without sensors. It also warns that it is an educational and indicative tool, with no official validity for occupational risk prevention. It could be used to detect overheating and to work with students on adapting to climate change."
+      ],
+      "fuentes": [
+        {"titulo": "Agente Clima IES (in Spanish)", "url": "https://mcardenosah.github.io/agenteclimaies"}
+      ],
+      "mensaje": {"grupo": "vce", "id": 15081},
+      "comprobado": "App page opened: functions, indicators, limits of RD 486/1997 (17–27 °C, 30–70%), processing in the browser, sample data, validity warning, no authorship on the page. Author according to the group message. Nothing earlier in the paper.",
+      "ilustracion": null,
+      "ilustracion_alt": "A document labelled “CSV” passes into a browser window, labelled “In the browser”, containing a thermometer with the label “17–27 °C” and water drops with the label “30–70%”."
+    },
+    {
+      "id": "flow-retirada-veo-omni",
+      "seccion": "multimedia",
+      "importancia": 3,
+      "grupo": "edumedia",
+      "antetitulo": "Change in Google Flow",
+      "titular": "Google Flow will retire Veo 3.1 Fast, Veo 3.1 Quality and Omni Flash 1.1 on 5 December",
+      "entradilla": "Flow’s help page recommends moving to Omni Flash 1.2 or Veo 3.1 Lite for future projects.",
+      "cuerpo": [
+        "The [Google Flow help page on its models](https://support.google.com/flow/answer/16352836?hl=en) says that on 5 December 2026 Veo 3.1 Fast, Veo 3.1 Quality and Omni Flash 1.1 will be retired. The Veo Extend feature was already retired on 5 November; to extend a video now, you use Omni Flash 1.2 with a Google AI Plus, Pro or Ultra subscription.",
+        "The models that remain are Omni Flash 1.2 and Veo 3.1 Lite. Omni Flash 1.2 generates videos of 3 to 10 seconds without a subscription and of 3 to 15 with a paid plan; Veo 3.1 Lite makes them 4, 6 or 8 seconds long and does not support editing a video from another video. The page does not detail plan restrictions for the other models.",
+        "Teachers who already use Flow should finish or download projects made with the models being retired. The credits that Omni Flash 1.2 consumes are explained in [an earlier article in the paper](pieza:2026-11-06/omni-1-2-flash-creditos-flow)."
+      ],
+      "fuentes": [
+        {"titulo": "Google Flow Help: Learn about Google Flow models & supported features", "url": "https://support.google.com/flow/answer/16352836?hl=en"}
+      ],
+      "mensaje": {"grupo": "edumedia", "id": 12310},
+      "comprobado": "Flow help page opened (English version): retirement date, Veo Extend retired on 5-11-2026, durations and functions of each model, Google’s recommendation. The advice to download projects is a suggestion from the editorial team, not from the source. The earlier piece linked exists in the paper and deals with the credits of Omni 1.2 Flash in Flow.",
+      "ilustracion": null,
+      "ilustracion_alt": "A calendar crossed out in red, labelled “5 Dec”, heads two groups of clapperboards: on the left, three labelled “Being retired”; on the right, two labelled “Omni Flash 1.2” and “Veo 3.1 Lite”, under the label “Staying”."
+    }
+  ],
+  "breves": [
+    {
+      "texto": "South Korea will check all glasses at the university entrance exam (Suneung) after the top scorer in the tax accountant exam confessed to using a micro-camera and generative AI to cheat. According to The Next Web, more than 500,000 students sit the exam at 1,300 centres.",
+      "url": "https://thenextweb.com/news/south-korea-ai-cheating-college-exam-glasses",
+      "grupo": "chatgpt",
+      "mensaje": {"grupo": "chatgpt", "id": 54473}
+    }
+  ],
+  "descartado": [
+    "OpenAI GPT-6.2 Astra and Sol: only links to X that cannot be opened and the official announcement has not been looked for; not published without confirmation.",
+    "Google Vids, free personal avatars: the search indicates that personal avatars are paid and region-restricted, so what was said in the group does not match what was checked.",
+    "Google Maps news (Ask Maps), audio in Google AI Studio and Ethan Mollick’s case with Fable 5.2: only messages linking to X or a secondary website; no original source checked.",
+    "Mini-decalogue from a language school and Pilar Gili’s compilation of tools: contributions from members without a topic that adds anything new.",
+    "ChatGPT-IA-edu digital library: it has its own section."
+  ],
+  "repaso": [
+    "Gemini Notebook: standfirst and body no longer call those who commented “teachers” or assign them a gender (the messages do not say); added that Google announces the mobile app without a date (Android Authority).",
+    "Densitat: the 51 investigations and first-to-fourth-year ESO are marked as coming from the link description and the message, not from the page text.",
+    "Korea short: wording corrected (the confessor is the top scorer in the tax accountant exam), 500,000 students and the name Suneung, according to The Next Web.",
+    "Flow, Clima IES and Sarroca checked against their pages; no other changes. The message ids have not been checked against t.me."
+  ]
+}

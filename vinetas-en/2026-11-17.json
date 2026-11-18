@@ -1,0 +1,85 @@
+{
+ "fecha": "2026-11-17",
+ "elegida": {
+  "n": 3,
+  "pieza": "gemini-notebook-sitios",
+  "idea": "The website built from Chalk’s trusty old notes is faithful to its sources right down to the typo from 2009, which now appears in front of the whole online training session: Chalk takes the embarrassment, and Algorithm points it out, delighted.",
+  "guion": {
+   "vinetas": [
+    {
+     "cartela": "In an online training session, trying a new tool.",
+     "escenario": "videollamada",
+     "tiza": {
+      "expresion": "contento",
+      "postura": "senalar",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "orgulloso",
+      "postura": "jarras",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "I gave it my trusty old notes and it made me a website.",
+       "tipo": "habla"
+      },
+      {
+       "quien": "algoritmo",
+       "texto": "Interactive. And faithful to your sources down to the last comma.",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "videollamada",
+     "tiza": {
+      "expresion": "orgulloso",
+      "postura": "arriba",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "contento",
+      "postura": "senalar",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "I’ll share my screen so everyone can see it.",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "videollamada",
+     "tiza": {
+      "expresion": "avergonzado",
+      "postura": "cabeza",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "contento",
+      "postura": "senalar",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "algoritmo",
+       "texto": "Look, your typo from 2009. Now it’s interactive.",
+       "tipo": "habla"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "traduccion": "automatic AI translation"
+}

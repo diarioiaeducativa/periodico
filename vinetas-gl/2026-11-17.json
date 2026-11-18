@@ -1,0 +1,85 @@
+{
+ "fecha": "2026-11-17",
+ "elegida": {
+  "n": 3,
+  "pieza": "gemini-notebook-sitios",
+  "idea": "A web feita cos apuntamentos de sempre de Xiz é fiel ás súas fontes ata na errata de 2009, que sae ante toda a formación en liña: o chasco lévao Xiz, e Algoritmo sinálalla ben contento.",
+  "guion": {
+   "vinetas": [
+    {
+     "cartela": "Nunha formación en liña, estreando ferramenta.",
+     "escenario": "videollamada",
+     "tiza": {
+      "expresion": "contento",
+      "postura": "senalar",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "orgulloso",
+      "postura": "jarras",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Déixeille os meus apuntamentos de sempre e fíxome unha web.",
+       "tipo": "habla"
+      },
+      {
+       "quien": "algoritmo",
+       "texto": "Interactiva. E fiel ás túas fontes ata a última coma.",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "videollamada",
+     "tiza": {
+      "expresion": "orgulloso",
+      "postura": "arriba",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "contento",
+      "postura": "senalar",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Comparto pantalla, para que a vexa todo o mundo.",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "videollamada",
+     "tiza": {
+      "expresion": "avergonzado",
+      "postura": "cabeza",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "contento",
+      "postura": "senalar",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "algoritmo",
+       "texto": "Mira, a túa errata de 2009. Agora é interactiva.",
+       "tipo": "habla"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "traduccion": "automática con IA"
+}

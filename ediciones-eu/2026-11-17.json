@@ -1,0 +1,116 @@
+{
+  "fecha": "2026-11-17",
+  "hay_edicion": true,
+  "motivo": "Día normal: Gemini Notebook genera sitios interactivos (comentado en ChatGPT-IA-edu y EduMedia-IAG), tres aplicaciones de ciencias y economía y una de clima escolar en VCE, y el calendario de retirada de modelos de Google Flow en EduMedia-IAG. GPT-6.2, Google Vids, Maps y el caso de Mollick se descartan por falta de fuente comprobable.",
+  "piezas": [
+    {
+      "id": "gemini-notebook-sitios",
+      "seccion": "herramientas",
+      "importancia": 1,
+      "grupo": "chatgpt",
+      "antetitulo": "Googleren funtzio berria",
+      "titular": "Gemini Notebookek koaderno bateko iturriak webgune interaktibo bihurtzen ditu",
+      "entradilla": "Koadernoko txatean «make me a site» idaztea nahikoa da. Taldeetako kideek probatu dute jada, eta batek emaitza Moodlera igo du.",
+      "cuerpo": [
+        "Googlek [bere X kontuan](https://x.com/Google/status/2122449668613579018) jakinarazi du Gemini Notebookek, erabiltzaileak emandako iturrien gainean lan egiten duen ikerketa-laguntzaileak, iturri horiek gune interaktibo bihur ditzakeela, esaterako datu-panelak edo azalpen bisualak. Erabiltzeko, koadernoko txatean «make me a site» idazten da, nahi dena deskribatuta, eta «Open in a new tab» aukeratzen da gunea ikusteko edo partekatzeko. Googleren adibidea zazpi iturri dituen kimika-koaderno bat da.",
+        "[Android Authority](https://www.androidauthority.com/gemini-notebook-research-interactive-sites-3735782/)-ren arabera, funtzioa 18 urte edo gehiagoko pertsonei dago mugatua eta weberako bertsioan iristen da lehenik; Googlek dio mugikorreko aplikaziora ere helduko dela, daturik eman gabe. Taldeko kide batek berretsi du oraingoz ez dabilela mugikorreko aplikaziotik, eta beste batek dio aukera ez dagoela «Studio» panelaren tresnen artean, beraz norbaitek abisatzen badu bakarrik aurkitzen dela.",
+        "Praktikan, ChatGPT-IA-edu taldean AAren erabilera etiko, legal eta pedagogikoari buruzko koaderno bati ikasgelarako gida praktiko bat eskatu zitzaion: emaitza, probatu zuen pertsonaren esanetan, nahasi samarra baina erabilgarria da, eta beste kide batek dio *prompt*-a doitzeak nahaste hori murrizten duela. EduMedia-IAG taldean, pertsona batek koadernoak sortzen duen HTMLa deskargatu zuen, Moodlen fitxategi motako baliabide bat sortu eta bertara igo zuen, eta gunea arazorik gabe ikusi zen; beste batek ehun iturri baino gehiagorekin probatu zuen eta balorazioa geroko utzi zuen.",
+        "Gogoratu behar da gunea emandako iturrietan oinarritzen dela: iturriak zaharkituta badaude edo akatsak badituzte, emaitzak errepikatu egingo ditu, eta irakasleek berrikusi egin behar dute ikasleei erakutsi aurretik."
+      ],
+      "fuentes": [
+        {"titulo": "Google X-en: Gemini Notebook eta gune interaktiboak (ingelesez)", "url": "https://x.com/Google/status/2122449668613579018"},
+        {"titulo": "Android Authority: Gemini Notebook can now turn your research into interactive websites (ingelesez)", "url": "https://www.androidauthority.com/gemini-notebook-research-interactive-sites-3735782/"}
+      ],
+      "mensaje": {"grupo": "chatgpt", "id": 54453},
+      "comprobado": "Publicación de Google en X (texto «make me a site» y «Open in a new tab», cuaderno de ejemplo de química con siete fuentes) vista en el mensaje del grupo y en búsqueda; X no se pudo abrir directamente. Android Authority abierto: 18 años o más, despliegue en la web primero, móvil anunciado sin fecha. Lo del móvil, Moodle y Studio, de los mensajes del grupo (54457, 54464, 12291, 12292, 12295, 12298, 12299, 12303). No se ha podido contrastar la disponibilidad por países ni por plan.",
+      "ilustracion": "Esquema de tres pasos: varios documentos (fuentes) entran en un cuaderno; un cuadro de chat con «make me a site»; sale una página con un gráfico y un panel, que se descarga como un solo archivo HTML y se sube a Moodle.",
+      "ilustracion_alt": "Ezkerretik eskuinera doan eskema: «Iturriak» errotulua duten hiru dokumentu «make me a site» errotulua duen txat-globo bat daraman koaderno batean sartzen dira; handik panel batekin eta testu-lerroekin «Webgunea» errotulua duen web-orri bat ateratzen da, «.html» fitxategi gisa deskargatzen dena eta «Moodle»-ra igotzen dena."
+    },
+    {
+      "id": "sarroca-subhasta-densitat",
+      "seccion": "vibecoding",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Komunitatearen baliabideak",
+      "titular": "Katalanezko hiru aplikazio: enkante bat ikasgelan eta dentsitateko bi laborategi",
+      "entradilla": "Felip Sarroca i Gilek Subhasta partekatu du, urritasuna eta aurrekontua lantzeko, eta Densitats eta Densitat, flotazioa Arkimedesen printzipioarekin aztertzeko.",
+      "cuerpo": [
+        "Felip Sarroca i Gilek, [Enfonsar la flota](pieza:2026-11-15/enfonsar-la-flota) edo [espeziei buruzko web bat](pieza:2026-11-12/comerc-especies) bezalako beste baliabide batzuk ere partekatu dituenak, hiru aplikazio gehiago aurkeztu ditu, AAren laguntzaz sortuak. Hirurak katalanez daude, kodea AGPLv3 lizentziapean eta edukiak CC BY-NC-SA 4.0 lizentziapean dituztela.",
+        "[Subhasta](https://ja.cat/subhasta)-k ikasgelan denbora errealeko enkante ingelesak egiteko aukera ematen du. Talde bakoitzak saldo bat jasotzen du eta bere gailutik egiten du eskaintza; irakasleak enkantea proiektatzen du eta unitate bakoitza esleitzen du. Urritasuna, eskaintza eta eskaria, aurrekontua eta aukera-kostua lantzeko balio du, eta prezioen bilakaeraren grafiko bat eta emaitzen CSV esportazioa eskaintzen ditu. Bere orriaren arabera, ez die ikasleei datu pertsonalik eskatzen: ezizen bat eta identifikatzaile anonimo bat baino ez, eta datuak Europar Batasuneko zerbitzarietan gordetzen dira eta 30 egunera ezabatzen dira.",
+        "[Densitats](https://ja.cat/densitats) laborategi-simulagailu bat da, non objektuak balantza batean, probeta batean edo dinamometrodun depositu batean jartzen diren masa, bolumena eta indarrak neurtzeko. Arbel digitalerako modu bat du, eta emaitzak ezkutatzeko aukera bat, ikasleek kalkula ditzaten. [Densitat](https://ja.cat/labdensitat) beste laborategi birtual bat da, Derrigorrezko Bigarren Hezkuntzako (DBH) 1. eta 4. mailetarako, koaderno zientifikoarekin, 51 ikerketa gidatuekin eta azken txosten batekin, bere azalpenaren eta taldeko mezuaren arabera. Densitats eta Densitat-i dagokienez, orriek ez dute esaten nola tratatzen dituzten ikasleen datuak."
+      ],
+      "fuentes": [
+        {"titulo": "Subhasta (katalanez)", "url": "https://ja.cat/subhasta"},
+        {"titulo": "Densitats (katalanez)", "url": "https://ja.cat/densitats"},
+        {"titulo": "Densitat (katalanez)", "url": "https://ja.cat/labdensitat"}
+      ],
+      "mensaje": {"grupo": "vce", "id": 15100},
+      "comprobado": "Abiertas las tres páginas (felipsarroca.github.io, a las que redirigen los enlaces cortos): autoría de Felip Sarroca con asistencia de IA, licencias AGPLv3 y CC BY-NC-SA 4.0 en las tres, alias y Firestore en la UE con borrado a los 30 días, gráfico de precios y CSV en Subhasta; balanza, probeta, tanque con dinamómetro, modo pizarra y ocultar resultados en Densitats. Los 51 investigaciones y el nivel 1.º–4.º de ESO de Densitat constan en la descripción del enlace y el mensaje del grupo, no en el texto de la página. Densitats y Densitat no dicen nada de datos del alumnado. Piezas anteriores enlazadas, presentes en el diario.",
+      "ilustracion": null,
+      "ilustracion_alt": "Ezkerrean, enkantegile baten mailua bere oinarriaren gainean, txanponekin, «Enkantea» errotulua duela. Eskuinean, urez betetako depositu bat, bloke bat flotatzen duela, gora doan gezi batekin, «Bultzada» errotulua duena, eta «Flotazioa» errotulua."
+    },
+    {
+      "id": "agente-clima-ies",
+      "seccion": "vibecoding",
+      "importancia": 3,
+      "grupo": "vce",
+      "antetitulo": "Komunitatearen baliabidea",
+      "titular": "Agente Clima IES-ek nabigatzailean aztertzen ditu ikasgeletako tenperatura eta hezetasuna",
+      "entradilla": "Aplikazioak sentsoreen erregistroak irakurtzen ditu eta lantokiei buruzko arauaren mugekin alderatzen ditu.",
+      "cuerpo": [
+        "[Agente Clima IES](https://mcardenosah.github.io/agenteclimaies) ikasgeletan instalatutako sentsoreen tenperatura- eta hezetasun-erregistroak dituzten CSV fitxategiak kargatzen dituen web-aplikazio bat da, eta 486/1997 Errege Dekretuaren arabera ebaluatzen ditu; dekretu horrek lan sedentarioetarako 17 eta 27 °C arteko tartea eta % 30 eta % 70 arteko hezetasun erlatiboa ezartzen ditu. Taldeko mezuak Manuel Cardeñosari egozten dio aplikazioa; orriak ez du esaten nork garatu duen.",
+        "ETA27 (27 °C-tik gorako metatutako beroa), eroso ez sentitzeko indize bat eta *Heat Index* bezalako adierazleak kalkulatzen ditu; azken horrek gorputzak sentitzen duen tenperatura zenbatesten du. Gelaka txosten bat, grafikoak dituen panel bat, mapa termikoak eta gela bakoitzaren azterketa erakusten ditu, eta PDFra esportatzeko edo txosten orokorra HTML formatuan deskargatzeko aukera ematen du.",
+        "Bere orriaren arabera, datuak nabigatzailean prozesatzen dira eta ez dira ordenagailutik ateratzen, eta adibide-datuak daude sentsorerik gabe probatzeko. Halaber, ohartarazten du tresna hezigarri eta orientagarri bat dela, lan-arriskuen prebentziorako baliozkotasun ofizialik gabea. Gehiegizko berotzea detektatzeko eta ikasleekin klima-aldaketara egokitzea lantzeko balio dezake."
+      ],
+      "fuentes": [
+        {"titulo": "Agente Clima IES (gaztelaniaz)", "url": "https://mcardenosah.github.io/agenteclimaies"}
+      ],
+      "mensaje": {"grupo": "vce", "id": 15081},
+      "comprobado": "Abierta la página de la aplicación: funciones, indicadores, límites del RD 486/1997 (17–27 °C, 30–70 %), procesamiento en el navegador, datos de ejemplo, aviso de validez, sin autoría en la página. Autor según el mensaje del grupo. No había nada previo en el diario.",
+      "ilustracion": null,
+      "ilustracion_alt": "«CSV» errotulua duen dokumentu bat nabigatzaile-leiho batera igarotzen da, «Nabigatzailean» errotulua duena; barruan termometro bat dago, «17–27 °C» errotulua duena, eta ur-tanta batzuk, «% 30–70» errotulua dutenak."
+    },
+    {
+      "id": "flow-retirada-veo-omni",
+      "seccion": "multimedia",
+      "importancia": 3,
+      "grupo": "edumedia",
+      "antetitulo": "Google Flow-en aldaketa",
+      "titular": "Google Flow-k abenduaren 5ean kenduko ditu Veo 3.1 Fast, Veo 3.1 Quality eta Omni Flash 1.1",
+      "entradilla": "Flow-ren laguntza-orriak etorkizuneko proiektuetarako Omni Flash 1.2ra edo Veo 3.1 Litera pasatzea gomendatzen du.",
+      "cuerpo": [
+        "[Google Flow-ren ereduei buruzko laguntza-orriak](https://support.google.com/flow/answer/16352836?hl=es) dioenez, 2026ko abenduaren 5ean Veo 3.1 Fast, Veo 3.1 Quality eta Omni Flash 1.1 kenduko dira. Azaroaren 5ean kendu zen jada Veo Extend funtzioa; orain bideo bat luzatzeko Omni Flash 1.2 erabiltzen da, Google AI Plus, Pro edo Ultra harpidetzarekin.",
+        "Mantentzen diren ereduak Omni Flash 1.2 eta Veo 3.1 Lite dira. Omni Flash 1.2-k 3 eta 10 segundo arteko bideoak sortzen ditu harpidetzarik gabe eta 3 eta 15 artekoak ordainpeko plan batekin; Veo 3.1 Litek 4, 6 edo 8 segundokoak egiten ditu eta ez du onartzen beste bideo batetik abiatuta bideoa editatzea. Orriak ez ditu zehazten gainerako ereduen planen araberako murrizketak.",
+        "Flow dagoeneko erabiltzen duten irakasleentzat komeni da kentzen diren ereduekin egindako proiektuak amaitzea edo deskargatzea. Omni Flash 1.2-k kontsumitzen dituen kredituak [egunkariaren aurreko artikulu batek](pieza:2026-11-06/omni-1-2-flash-creditos-flow) azaltzen ditu."
+      ],
+      "fuentes": [
+        {"titulo": "Google Flow-ren laguntza: eredu eta funtzio bateragarriak (gaztelaniaz)", "url": "https://support.google.com/flow/answer/16352836?hl=es"}
+      ],
+      "mensaje": {"grupo": "edumedia", "id": 12310},
+      "comprobado": "Abierta la página de ayuda de Flow: fecha de retirada, Veo Extend retirado el 5-11-2026, duraciones y funciones de cada modelo, recomendación de Google. El consejo de descargar los proyectos es una sugerencia de la redacción, no de la fuente. La pieza anterior enlazada existe en el diario y trata de los créditos de Omni 1.2 Flash en Flow.",
+      "ilustracion": null,
+      "ilustracion_alt": "Gorriz marraztutako egutegi batek, «Abe 5» errotulua duenak, bi klaketa-multzo gidatzen ditu: ezkerrean, hiru, «Kentzen dira» errotulua dutenak; eskuinean, bi, «Omni Flash 1.2» eta «Veo 3.1 Lite» errotuluak dituztenak, «Mantentzen dira» errotuluaren azpian."
+    }
+  ],
+  "breves": [
+    {
+      "texto": "Hego Koreak betaurreko guztiak aztertuko ditu unibertsitatera sartzeko azterketan (Suneung), zerga-kontulariaren azterketako lehen sailkatuak mikrokamera bat eta AA sortzaile bat erabili zituela aitortu ostean kopiatzeko. The Next Web-en arabera, azterketa 500 000 ikaslek baino gehiagok egiten dute 1 300 ikastetxetan.",
+      "url": "https://thenextweb.com/news/south-korea-ai-cheating-college-exam-glasses",
+      "grupo": "chatgpt",
+      "mensaje": {"grupo": "chatgpt", "id": 54473}
+    }
+  ],
+  "descartado": [
+    "OpenAI GPT-6.2 Astra y Sol: solo hay enlaces a X que no se pueden abrir y no se ha buscado el anuncio oficial; no se publica sin confirmarlo.",
+    "Google Vids, avatares personales gratis: la búsqueda indica que los avatares personales son de pago y con restricciones regionales, así que lo dicho en el grupo no coincide con lo comprobado.",
+    "Novedades de Google Maps (Ask Maps), audio en Google AI Studio y el caso de Ethan Mollick con Fable 5.2: solo mensajes con enlace a X o a una web secundaria; sin fuente original comprobada.",
+    "Minidecálogo de una escuela de idiomas y recopilación de herramientas de Pilar Gili: aportaciones de miembros sin un asunto que aporte algo nuevo.",
+    "Biblioteca digital de ChatGPT-IA-edu: tiene su propia sección."
+  ],
+  "repaso": [
+    "Gemini Notebook: entradilla y cuerpo sin atribuir «docente» ni género a quienes comentaron (los mensajes no lo dicen); añadido que Google anuncia la app móvil sin fecha (Android Authority).",
+    "Densitat: los 51 investigaciones y 1.º–4.º de ESO se marcan como procedentes de la descripción del enlace y del mensaje, no del texto de la página.",
+    "Breve de Corea: redacción corregida (el confesante es el número uno del examen de contador tributario), 500.000 estudiantes y nombre Suneung, según The Next Web.",
+    "Flow, Clima IES y Sarroca confirmados contra sus páginas; sin otros cambios. No se han contrastado con t.me los ids de mensaje."
+  ]
+}

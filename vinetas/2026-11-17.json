@@ -1,0 +1,128 @@
+{
+ "fecha": "2026-11-17",
+ "elegida": {
+  "n": 3,
+  "pieza": "gemini-notebook-sitios",
+  "idea": "La web hecha con los apuntes de siempre de Tiza es fiel a sus fuentes hasta en la errata de 2009, que sale ante toda la formación en línea: el chasco se lo lleva Tiza, y Algoritmo se la señala tan contento.",
+  "guion": {
+   "vinetas": [
+    {
+     "cartela": "En una formación en línea, estrenando herramienta.",
+     "escenario": "videollamada",
+     "tiza": {
+      "expresion": "contento",
+      "postura": "senalar",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "orgulloso",
+      "postura": "jarras",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Le di mis apuntes de siempre y me ha hecho una web.",
+       "tipo": "habla"
+      },
+      {
+       "quien": "algoritmo",
+       "texto": "Interactiva. Y fiel a tus fuentes hasta la última coma.",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "videollamada",
+     "tiza": {
+      "expresion": "orgulloso",
+      "postura": "arriba",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "contento",
+      "postura": "senalar",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Comparto pantalla, que la vea todo el mundo.",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "videollamada",
+     "tiza": {
+      "expresion": "avergonzado",
+      "postura": "cabeza",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "contento",
+      "postura": "senalar",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "algoritmo",
+       "texto": "Mira, tu errata de 2009. Ahora es interactiva.",
+       "tipo": "habla"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "motivo": "La 3 es la que tiene el remate más redondo: «tu errata de 2009, ahora es interactiva» sorprende, es breve y sale de la advertencia de la propia noticia (el sitio reproduce los errores de las fuentes), y se entiende sin haberla leído: todo docente tiene unos apuntes de siempre con una errata vieja. «Hasta la última coma» lo siembra en la primera viñeta sin delatarlo. El chasco se lo lleva Tiza, que no es el molde de los tres números anteriores (en los tres acabó mal Algoritmo), y la ironía va a la tecnología y a lo que nos pasa con ella, no a nadie. La errata y el año son de la escena, no datos de la noticia. La 1 es la segunda: «tiritamos, pero solo a título indicativo» es una buena frase y los datos (17 grados, sin validez oficial) son los de la pieza, pero el remate es menos visual, Tiza acaba harta otra vez y el chiste descansa en el aviso de una aplicación de un miembro del grupo, que conviene no rozar. La 2 es correcta con el breve, pero dedica dos viñetas a contar la noticia y el remate («no llevo gafas») se ve venir. La 4 tiene su mejor frase en la segunda viñeta («cualquiera con número de versión») y el remate, amable, la baja; además roza, aunque le dé la vuelta, el tópico de la sustitución. La 5 no se entiende: los exámenes aparecen de golpe en la tercera viñeta y no queda claro qué coste señala Tiza ni por qué se avergüenza Algoritmo. Ninguna incumple las prohibiciones ni se inventa datos de la noticia; las cinco caben.",
+ "retoques": "Remate más corto («Mira, tu errata de 2009. Ahora es interactiva.», sin «ahí está», que ya lo dice el gesto de señalar). Segundo bocadillo de Tiza: «todo el mundo» en vez de «toda la formación», que repetía el rótulo. El primer bocadillo no se toca. Rótulo reescrito, de 50 caracteres: sitúa igual (una formación en línea, una herramienta nueva) sin nombrar el producto de una empresa en una tira cuyo chiste es que la herramienta reproduce un error. Escenario videollamada: libre, no salió en los tres números anteriores, y sirve al chiste (el público que ve la errata). En la segunda viñeta Algoritmo pasa de «abajo» (de sus posturas más repetidas) a «senalar», y la mantiene en la tercera con la misma cara: él no cambia, la que se hunde es Tiza (de orgullosa con los brazos en alto a avergonzada con las manos a la cabeza, dos posturas que no habían salido). «Orgulloso» en Algoritmo solo en la primera viñeta, donde el chiste lo pide. Sin objeto. Remata Algoritmo, como ayer, pero anteayer remató Tiza: no hay dos remates seguidos del mismo que obliguen a cambiar. Ningún bocadillo pasa de 90 caracteres (el más largo, 55).",
+ "puntuaciones": [
+  {
+   "n": 1,
+   "gracia": 7,
+   "claridad": 8,
+   "remate": 7,
+   "prohibiciones": "respeta (la ironía va a la falta de validez oficial, no a la aplicación ni a su autor, pero lo roza)",
+   "cabe": true
+  },
+  {
+   "n": 2,
+   "gracia": 6,
+   "claridad": 7,
+   "remate": 6,
+   "prohibiciones": "respeta",
+   "cabe": true
+  },
+  {
+   "n": 3,
+   "gracia": 8,
+   "claridad": 8,
+   "remate": 8,
+   "prohibiciones": "respeta",
+   "cabe": true
+  },
+  {
+   "n": 4,
+   "gracia": 6,
+   "claridad": 6,
+   "remate": 5,
+   "prohibiciones": "respeta (roza el tópico de la sustitución, dándole la vuelta)",
+   "cabe": true
+  },
+  {
+   "n": 5,
+   "gracia": 5,
+   "claridad": 4,
+   "remate": 4,
+   "prohibiciones": "respeta",
+   "cabe": true
+  }
+ ]
+}

@@ -1,0 +1,85 @@
+{
+ "fecha": "2026-11-17",
+ "elegida": {
+  "n": 3,
+  "pieza": "gemini-notebook-sitios",
+  "idea": "El web fet amb els apunts de sempre de Guix és fidel a les seves fonts fins i tot en l'errata del 2009, que apareix davant de tota la formació en línia: el xasco se l'emporta Guix, i l'Algorisme li ho assenyala tan content.",
+  "guion": {
+   "vinetas": [
+    {
+     "cartela": "En una formació en línia, estrenant eina.",
+     "escenario": "videollamada",
+     "tiza": {
+      "expresion": "contento",
+      "postura": "senalar",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "orgulloso",
+      "postura": "jarras",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Li he donat els meus apunts de sempre i m'ha fet un web.",
+       "tipo": "habla"
+      },
+      {
+       "quien": "algoritmo",
+       "texto": "Interactiu. I fidel a les teves fonts fins a l'última coma.",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "videollamada",
+     "tiza": {
+      "expresion": "orgulloso",
+      "postura": "arriba",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "contento",
+      "postura": "senalar",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Comparteixo pantalla, que ho vegi tothom.",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "videollamada",
+     "tiza": {
+      "expresion": "avergonzado",
+      "postura": "cabeza",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "contento",
+      "postura": "senalar",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "algoritmo",
+       "texto": "Mira, la teva errata del 2009. Ara és interactiva.",
+       "tipo": "habla"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "traduccion": "automàtica amb IA"
+}

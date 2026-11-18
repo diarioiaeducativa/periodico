@@ -1,0 +1,94 @@
+{
+ "fecha": "2026-11-17",
+ "elegida": {
+  "n": 3,
+  "pieza": "gemini-notebook-sitios",
+  "idea": "Tizaren betiko apunteekin egindako webgunea fidela da bere iturriekiko 2009ko akatsa barne, eta lineako prestakuntza osoaren aurrean agertzen da: Tizak jasotzen du kolpea, eta Algoritmok pozik seinalatzen dio.",
+  "guion": {
+   "vinetas": [
+    {
+     "cartela": "Lineako prestakuntza batean, tresna estreinatzen.",
+     "escenario": "videollamada",
+     "tiza": {
+      "expresion": "contento",
+      "postura": "senalar",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "orgulloso",
+      "postura": "jarras",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Betiko apunteak eman dizkiot, eta webgune bat egin dit.",
+       "tipo": "habla"
+      },
+      {
+       "quien": "algoritmo",
+       "texto": "Interaktiboa. Eta zure iturriekiko fidela, azken komaraino.",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "videollamada",
+     "tiza": {
+      "expresion": "orgulloso",
+      "postura": "arriba",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "contento",
+      "postura": "senalar",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Pantaila partekatuko dut, denek ikus dezaten.",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "videollamada",
+     "tiza": {
+      "expresion": "avergonzado",
+      "postura": "cabeza",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "contento",
+      "postura": "senalar",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "algoritmo",
+       "texto": "Begira, zure 2009ko akatsa. Orain interaktiboa da.",
+       "tipo": "habla"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "motivo": "La 3 es la que tiene el remate más redondo.",
+ "retoques": "Texto traducido al euskera; rótulo de 47 caracteres.",
+ "puntuaciones": [
+  {"n": 1, "gracia": 7, "claridad": 8, "remate": 7, "prohibiciones": "respeta", "cabe": true},
+  {"n": 2, "gracia": 6, "claridad": 7, "remate": 6, "prohibiciones": "respeta", "cabe": true},
+  {"n": 3, "gracia": 8, "claridad": 8, "remate": 8, "prohibiciones": "respeta", "cabe": true},
+  {"n": 4, "gracia": 6, "claridad": 6, "remate": 5, "prohibiciones": "respeta", "cabe": true},
+  {"n": 5, "gracia": 5, "claridad": 4, "remate": 4, "prohibiciones": "respeta", "cabe": true}
+ ],
+ "traduccion": "itzulpen automatikoa AArekin"
+}

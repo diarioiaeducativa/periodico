@@ -159,4 +159,14 @@
 
 ## 2026-11-16 (publicado el martes 17 de noviembre de 2026)
 - pieza:2026-11-16/celda-paletizado-3d (vibecoding) Una celda robotizada de paletizado se simula en el navegador y exporta la escena en .glb
+- pieza:2026-11-16/eyejack-creator-realidad-aumentada (multimedia) EyeJack Creator: dar movimiento a una imagen en el móvil con realidad aumentada
 - breve: La página del traductor de vídeo de ElevenLabs anuncia más de 90 idiomas, aunque su secció
+- pieza:2026-11-16/intef-guia-ia-v2 (biblioteca) El INTEF actualiza su guía de IA en educación con diez principios éticos y un plan por fases para que los centros la incorporen
+- pieza:2026-11-16/trama-comprensio-lectora (repositorio) Trama ofrece 206 lecturas con preguntas para preparar fichas de comprensión lectora — recursos con artículo: Trama · Comprensió lectora (https://trama.ortogra.fi/)
+
+## 2026-11-17 (publicado el miércoles 18 de noviembre de 2026)
+- pieza:2026-11-17/gemini-notebook-sitios (herramientas) Gemini Notebook convierte las fuentes de un cuaderno en un sitio web interactivo
+- pieza:2026-11-17/sarroca-subhasta-densitat (vibecoding) Tres aplicaciones en catalán: una subasta en el aula y dos laboratorios de densidad
+- pieza:2026-11-17/agente-clima-ies (vibecoding) Agente Clima IES analiza en el navegador la temperatura y la humedad de las aulas
+- pieza:2026-11-17/flow-retirada-veo-omni (multimedia) Google Flow retirará el 5 de diciembre Veo 3.1 Fast, Veo 3.1 Quality y Omni Flash 1.1
+- breve: Corea del Sur revisará todas las gafas en el examen de acceso a la universidad (Suneung) t
