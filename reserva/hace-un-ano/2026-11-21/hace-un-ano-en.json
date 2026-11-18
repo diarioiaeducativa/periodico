@@ -1,0 +1,21 @@
+{"fecha": "2026-11-21", "hay_pieza": true,
+ "piezas": [{"id": "nano-banana-pro-poligonos-precio",
+   "seccion": "hace-un-ano", "importancia": 3,
+   "ilustracion_alt": "Diptych split by a vertical line. On the left, “Nov. 2025”: four ink-coloured banknotes and below them “$0.134”. On the right, “Today”: a single blue banknote, a quarter as many, and below it “$0.0336”.",
+   "grupo": "chatgpt", "fecha_original": "2025-11-22",
+   "antetitulo": "AI images",
+   "titular": "The image model that drew a nine-sided shape with eleven sides has been replaced in Gemini",
+   "entradilla": "In November 2025, Google’s new image model got some polygons right and others wrong. In February 2026 Nano Banana 2 replaced it in Gemini, and for developers there is another that costs a quarter as much per 1K image.",
+   "cuerpo": [
+     "On 22 November 2025, two days after its launch, ChatGPT-IA-edu put Nano Banana Pro, Google’s model for creating and editing images, to the test. It drew a regular heptagon well, where its predecessor gave it six sides, but its nonagon came out with eleven. It was taken for granted that it would be enough to wait a few weeks for Google to refine it. In EduMedia-IAG, people went over its cost for developers: $0.134 per 1K or 2K image and $0.24 at 4K.",
+     "On 26 February 2026, Google introduced [Nano Banana 2](https://blog.google/innovation-and-ai/technology/ai/nano-banana-2/), which replaces the Pro in the Gemini app; the Pro remains available to Google AI Pro and Ultra subscribers, who can request it when regenerating an image. On 6 October came Nano Banana 2.1, which, according to its [release notes](https://aistudio.google.com/docs/changelog), follows instructions better.",
+     "The Pro costs the same as a year ago: as of 18 November 2026, the [official price list](https://aistudio.google.com/docs/pricing) still shows $0.134 and $0.24. Nano Banana 2.1 charges $0.0336 per 1K image, a quarter as much, and $0.113 at 4K. Google gives no figures on how accurate it is with polygons."
+   ],
+   "fuentes": [
+     {"titulo": "Nano Banana 2: Combining Pro capabilities with lightning-fast speed (Google, 26-2-2026)", "url": "https://blog.google/innovation-and-ai/technology/ai/nano-banana-2/"},
+     {"titulo": "Gemini API release notes (Google AI Studio)", "url": "https://aistudio.google.com/docs/changelog"},
+     {"titulo": "Gemini API pricing (Google AI Studio)", "url": "https://aistudio.google.com/docs/pricing"}
+   ],
+   "mensaje": {"grupo": "chatgpt", "id": 42534},
+   "comprobado": "Mensaje chatgpt:42534 en t.me/ChatGPTedu (22-11-2025): Nano Banana Pro hizo bien el heptágono; el modelo anterior lo hacía de seis lados (el eneágono de once lados es del 42541, de la entrada). Blog de Google (26-02-2026): Nano Banana 2 sustituye a Nano Banana Pro en los modelos Fast, Thinking y Pro de Gemini; el Pro sigue para suscriptores de AI Pro y Ultra al regenerar desde el menú de tres puntos (la fuente no dice «por defecto» en Gemini, y se ha quitado). Notas de versión: Gemini 3 Pro Image preview el 20-11-2025; Nano Banana 2 el 26-02-2026; Nano Banana 2.1 disponible el 06-10-2026, con mejor seguimiento de las instrucciones. Página de precios consultada el 18-11-2026: Gemini 3 Pro Image, 0,134 dólares (1K/2K) y 0,24 (4K); Nano Banana 2.1, 0,0336 (1K), 0,0504 (2K) y 0,113 (4K). Las cifras de 2025 coinciden con edumedia:6397. Sin fuente oficial sobre la exactitud geométrica actual, y no se afirma nada de ella.",
+   "repaso": ["Titular y entradilla: la fuente no dice que Nano Banana 2 sea «el modelo por defecto» de Gemini, sino que sustituye al Pro en los modelos de la aplicación; reescritos en ese sentido.", "Entradilla: «cuatro veces más barato» precisado como «la cuarta parte por imagen de 1K» (en 4K la rebaja es menor).", "Cuerpo: «dejó de ser por defecto» cambiado por «sustituye»; «Se daba por hecho que habría que esperar» matizado a «bastaría esperar»; última frase sin personificar al modelo.", "Mensajes, fechas, versiones y precios comprobados; 226 palabras aprox."]}]}

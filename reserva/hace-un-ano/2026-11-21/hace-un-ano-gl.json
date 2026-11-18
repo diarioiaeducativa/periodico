@@ -1,0 +1,21 @@
+{"fecha": "2026-11-21", "hay_pieza": true,
+ "piezas": [{"id": "nano-banana-pro-poligonos-precio",
+   "seccion": "hace-un-ano", "importancia": 3,
+   "ilustracion_alt": "Díptico cunha liña vertical no centro. Á esquerda, «nov. 2025»: catro billetes de tinta e debaixo «0,134 $». Á dereita, «Hoxe»: un só billete azul, a cuarta parte, e debaixo «0,0336 $».",
+   "grupo": "chatgpt", "fecha_original": "2025-11-22",
+   "antetitulo": "Imaxes con IA",
+   "titular": "O modelo de imaxes que debuxou un eneágono de once lados foi substituído en Gemini",
+   "entradilla": "En novembro de 2025, o novo modelo de imaxes de Google acertaba uns polígonos e fallaba outros. En febreiro de 2026 Nano Banana 2 substituíuno en Gemini e, para as persoas desenvolvedoras hai outro que custa a cuarta parte por imaxe de 1K.",
+   "cuerpo": [
+     "O 22 de novembro de 2025, dous días despois da súa estrea, en ChatGPT-IA-edu púñase a proba Nano Banana Pro, o modelo de Google para crear e editar imaxes. Debuxaba ben un heptágono regular, que o seu antecesor facía de seis lados, pero o eneágono saíalle de once. Dábase por feito que bastaría agardar unhas semanas a que Google o afinase. En EduMedia-IAG repasábase o seu custo para desenvolvedores: 0,134 dólares por imaxe de 1K ou 2K e 0,24 en 4K.",
+     "O 26 de febreiro de 2026, Google presentou [Nano Banana 2](https://blog.google/innovation-and-ai/technology/ai/nano-banana-2/), que substitúe o Pro na aplicación Gemini; o Pro segue para as persoas subscritoras de Google AI Pro e Ultra, que poden pedilo ao rexenerar unha imaxe. O 6 de outubro chegou Nano Banana 2.1, que segundo as súas [notas de versión](https://aistudio.google.com/docs/changelog) segue mellor as instrucións.",
+     "O Pro custa o mesmo que hai un ano: a 18 de novembro de 2026, a [tarifa oficial](https://aistudio.google.com/docs/pricing) mantén os 0,134 e 0,24 dólares. Nano Banana 2.1 cobra 0,0336 dólares por imaxe de 1K, a cuarta parte, e 0,113 en 4K. Google non dá datos sobre o seu acerto cos polígonos."
+   ],
+   "fuentes": [
+     {"titulo": "Nano Banana 2: Combining Pro capabilities with lightning-fast speed (Google, 26 de febreiro de 2026) (en inglés)", "url": "https://blog.google/innovation-and-ai/technology/ai/nano-banana-2/"},
+     {"titulo": "Notas de versión da API de Gemini (Google AI Studio) (en castelán)", "url": "https://aistudio.google.com/docs/changelog"},
+     {"titulo": "Prezos da API de Gemini (Google AI Studio) (en castelán)", "url": "https://aistudio.google.com/docs/pricing"}
+   ],
+   "mensaje": {"grupo": "chatgpt", "id": 42534},
+   "comprobado": "Mensaje chatgpt:42534 en t.me/ChatGPTedu (22-11-2025): Nano Banana Pro hizo bien el heptágono; el modelo anterior lo hacía de seis lados (el eneágono de once lados es del 42541, de la entrada). Blog de Google (26-02-2026): Nano Banana 2 sustituye a Nano Banana Pro en los modelos Fast, Thinking y Pro de Gemini; el Pro sigue para suscriptores de AI Pro y Ultra al regenerar desde el menú de tres puntos (la fuente no dice «por defecto» en Gemini, y se ha quitado). Notas de versión: Gemini 3 Pro Image preview el 20-11-2025; Nano Banana 2 el 26-02-2026; Nano Banana 2.1 disponible el 06-10-2026, con mejor seguimiento de las instrucciones. Página de precios consultada el 18-11-2026: Gemini 3 Pro Image, 0,134 dólares (1K/2K) y 0,24 (4K); Nano Banana 2.1, 0,0336 (1K), 0,0504 (2K) y 0,113 (4K). Las cifras de 2025 coinciden con edumedia:6397. Sin fuente oficial sobre la exactitud geométrica actual, y no se afirma nada de ella.",
+   "repaso": ["Titular y entradilla: la fuente no dice que Nano Banana 2 sea «el modelo por defecto» de Gemini, sino que sustituye al Pro en los modelos de la aplicación; reescritos en ese sentido.", "Entradilla: «cuatro veces más barato» precisado como «la cuarta parte por imagen de 1K» (en 4K la rebaja es menor).", "Cuerpo: «dejó de ser por defecto» cambiado por «sustituye»; «Se daba por hecho que habría que esperar» matizado a «bastaría esperar»; última frase sin personificar al modelo.", "Mensajes, fechas, versiones y precios comprobados; 226 palabras aprox."]}]}

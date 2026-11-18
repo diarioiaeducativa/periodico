@@ -1,0 +1,54 @@
+{
+  "fecha": "2099-01-04",
+  "piezas": [
+    {
+      "id": "bm-pantalla-infantil",
+      "seccion": "biblioteca",
+      "importancia": 2,
+      "grupo": "chatgpt",
+      "antetitulo": "Del fondo de la biblioteca",
+      "titular": "El Banco Mundial propone sustituir el límite de horas de pantalla por hábitos familiares concretos en la primera infancia",
+      "entradilla": "Un informe de 2025 del Banco Mundial reúne la evidencia sobre pantallas y desarrollo en menores de cinco años y la traduce en estrategias para familias, escuelas, pediatras y diseñadores de productos.",
+      "cuerpo": [
+        "«[El tiempo frente a la pantalla en la educación infantil: Equilibrar la balanza digital](https://documents1.worldbank.org/curated/en/099936107302595687/pdf/IDU-0808127e-05ed-4216-875b-bdc965de11c5.pdf)» es un informe del Banco Mundial firmado por Ezequiel Molina, el quinto de la serie «Innovaciones Digitales en la Educación», producto de la Práctica Global de Educación para América Latina y el Caribe. Según sus agradecimientos, se elaboró entre marzo y diciembre de 2025. El diario lo recupera del fondo de la [Biblioteca digital de ChatGPT-IA-edu](https://t.me/ChatGPTedu/21753/50895) porque sigue vigente: la [página del Banco Mundial](https://www.bancomundial.org/es/programs/educacion-america-latina-caribe/publication/el-tiempo-frente-a-la-pantalla-en-la-educacion-infantil) no registra ninguna edición posterior ni retirada.",
+        "El punto de partida es una cifra: el preescolar medio pasa unas dos horas al día frente a una pantalla, el doble del límite de una hora que la OMS fijó en 2019 para niños de 2 a 5 años. Superan esa hora el 59,5 % en Chandigarh (India), el 91 % en Selangor (Malasia) y el 69 % en Ceará (Brasil); en Etiopía, el 62 % en zonas urbanas frente al 15 % en las rurales. La tabla del informe usa umbrales distintos (una o dos horas) y marca alguna cifra como estimada, así que las comparaciones piden cautela.",
+        "Lo que cambia respecto a un aviso de «menos pantallas» es el diagnóstico: el informe sostiene que la preocupación central es lo que la pantalla desplaza (la conversación, el juego, la actividad física y el sueño) más que la pantalla en sí. Recoge efectos asociados al exceso en lenguaje, atención, sueño y habilidades socioemocionales, y la «tecnointerferencia», es decir, cómo el uso del móvil por parte de los adultos interrumpe la interacción con el niño. Insiste en que son asociaciones (cita un estudio transversal que no permite establecer causalidad) y reconoce que la «niñera digital» responde a necesidades reales de las familias, no solo a malas decisiones. Resume su postura así: «El objetivo no es eliminar las pantallas, sino establecer pautas de uso que protejan las experiencias fundamentales para el desarrollo».",
+        "La parte más aprovechable es el marco de formación de hábitos, con cinco principios: identificar las señales que disparan el uso de pantallas y sustituirlas, formular planes «si… entonces», reorganizar el entorno, empezar con cambios mínimos anclados en rutinas y apoyarse en otras familias. De ahí salen cuatro líneas de intervención: talleres para madres y padres con avisos de seguimiento por SMS o WhatsApp durante al menos cuatro semanas, alternativas atractivas (préstamo de kits de juego, lectura dialógica, ludotecas), acuerdos familiares con zonas y horarios sin pantalla y redes de apoyo entre iguales. El informe considera que tienen la evidencia más clara los talleres con hábitos, la lectura dialógica y las comidas sin pantallas, y reconoce que el resto necesita más estudios.",
+        "La inteligencia artificial aparece en un capítulo propio, presentado como una «frontera de innovación»: asistentes de crianza dentro de WhatsApp, capas de sistema que detectan la visualización pasiva y sugieren pausas, y plataformas de coaching. El propio informe admite que «Aún no existen experimentos de campo sobre chatbots para el manejo del tiempo frente a la pantalla»; apoya la idea en estudios de salud mental. Pide privacidad desde el diseño, derivación a personas para los casos complejos y diseño para teléfonos modestos. Una nota inicial declara que el texto se redactó con ayuda analítica de varios sistemas de IA, con contribuciones revisadas y aprobadas por autores humanos.",
+        "Conviene leerlo con dos precauciones. Habla de primera infancia, no de alumnado de primaria o secundaria, y su base empírica es sobre todo observacional. Además, da dos cifras distintas para su base de evidencia: más de 80 estudios en 18 países en el resumen y más de 50 estudios con revisión por pares en la introducción. Para la IA y los menores, la Biblioteca tiene otros documentos: el [informe del Foro Económico Mundial sobre seguridad infantil con IA que el diario publicó el 2 de noviembre](pieza:2026-11-02/wef-infancia-ia), el [estudio sobre si hay una edad adecuada para usar la IA en el aula](pieza:2026-11-02/unesco-edad-ia) y el [informe de la APA sobre el aprendizaje con tecnología educativa](https://t.me/ChatGPTedu/21753/52166), que cubre de 5 a 18 años.",
+        "Para un docente, sirve sobre todo en infantil y en los primeros cursos de primaria. El capítulo 4 es un buen punto de partida para una reunión con familias, y el apartado 6.2 reúne medidas para el centro: mensajes coherentes, ejemplos de actividades sin pantalla y préstamo de materiales. El apéndice A trae una plantilla de plan familiar adaptada de la herramienta Family Media Plan de la Academia Americana de Pediatría. Para ir al grano, conviene leer primero el resumen ejecutivo y después las secciones 4.5 y 6."
+      ],
+      "documento": {
+        "titulo": "El tiempo frente a la pantalla en la educación infantil: Equilibrar la balanza digital",
+        "autoria": "Ezequiel Molina (Banco Mundial)",
+        "anyo": "2025",
+        "idioma": "castellano",
+        "licencia": "Uso no comercial permitido, total o parcial, citando la fuente (derechos del Banco Mundial)",
+        "url": "https://documents1.worldbank.org/curated/en/099936107302595687/pdf/IDU-0808127e-05ed-4216-875b-bdc965de11c5.pdf"
+      },
+      "fuentes": [
+        {"titulo": "El tiempo frente a la pantalla en la educación infantil (PDF del Banco Mundial)", "url": "https://documents1.worldbank.org/curated/en/099936107302595687/pdf/IDU-0808127e-05ed-4216-875b-bdc965de11c5.pdf"},
+        {"titulo": "Página de la publicación en el Banco Mundial", "url": "https://www.bancomundial.org/es/programs/educacion-america-latina-caribe/publication/el-tiempo-frente-a-la-pantalla-en-la-educacion-infantil"},
+        {"titulo": "El documento en la Biblioteca digital de ChatGPT-IA-edu", "url": "https://t.me/ChatGPTedu/21753/50895"},
+        {"titulo": "Informe de la APA sobre aprendizaje con tecnología educativa (Biblioteca)", "url": "https://t.me/ChatGPTedu/21753/52166"}
+      ],
+      "mensaje": {"grupo": "chatgpt", "id": 50895},
+      "comprobado": "Texto completo del PDF tal como está en la biblioteca, contrastado con el cuerpo: cifras de la tabla 1, cinco principios de hábitos, cuatro líneas de intervención, cuatro semanas de avisos, sección 4.5, capítulo 5 (cita sobre chatbots), secciones 6.2, apéndice A, las dos cifras de estudios (80 en el resumen, 50 en la introducción) y las dos citas literales. Página oficial del Banco Mundial (WebFetch): autor, enlace al PDF, sin edición posterior ni retirada; una búsqueda web confirma que es el Brief nº 5 de la serie, de 2025 (la URL en inglés lleva «not-in-use» sin explicación en la página). No abrí el PDF alojado en el Banco Mundial, solo el de la biblioteca. Los dos enlaces a piezas del 2 de noviembre existen en publicado.txt y tratan de IA e infancia.",
+      "ilustracion": "Esquema en círculo con las cinco palancas del hábito (señal, plan «si… entonces», entorno, pequeño cambio, apoyo de otras familias) alrededor de un niño y un adulto leyendo juntos, con una pantalla apagada en una cesta de carga al fondo.",
+      "ilustracion_alt": "Un adulto y un niño leen juntos un libro abierto dentro de un círculo; a su alrededor, con flechas hacia ellos, cinco palancas del hábito: una campana con el rótulo «Señal», un recorrido con «Plan «si… entonces»», una casa con «Entorno», un brote con «Cambio mínimo» y un grupo de personas con «Otras familias»; debajo, una pantalla tachada apagada."
+    }
+  ],
+  "ya_contado": [],
+  "descartado": [
+    "mensaje 52166: informe de la APA (2026), que parece vigente pero la entrada solo trae la ficha; no lo he leído en su fuente oficial y se queda para otra ocasión, sin artículo hoy.",
+    "mensaje 52272: «The algorithm in the room» (UNESCO, 2026), 26 ensayos; no se elige hoy porque se escogió el del Banco Mundial, y no he comprobado en internet si hay edición posterior, así que no queda descartado por estar superado."
+  ],
+  "repaso": [
+    "Enlazado el documento en su primera mención (título al PDF oficial) y la página del Banco Mundial en el primer párrafo.",
+    "Autoría: Molina firma; la Práctica Global de Educación es quien produce la serie (no se le atribuye a él pertenecer a ella); añadido «quinto de la serie» (Brief N.º 5, comprobado).",
+    "Quitado «el texto avisa de que las cifras no son comparables» (no consta así): ahora se describe lo que la tabla hace (umbrales distintos, alguna cifra estimada).",
+    "Quitado «lista para imprimir» del apéndice A (no consta); precisado que la herramienta es Family Media Plan; quitada la construcción con «quien» (ADR 0067).",
+    "Concretado que los avisos de seguimiento son por SMS o WhatsApp (4.1); recortes de redacción para quedar por debajo de 700 palabras.",
+    "Sin cambios en cifras, citas (literales), enumeraciones (cinco principios, cuatro líneas) ni idea del dibujo; enlaces pieza: válidos."
+  ]
+}

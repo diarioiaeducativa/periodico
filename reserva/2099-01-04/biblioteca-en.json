@@ -1,0 +1,54 @@
+{
+  "fecha": "2099-01-04",
+  "piezas": [
+    {
+      "id": "bm-pantalla-infantil",
+      "seccion": "biblioteca",
+      "importancia": 2,
+      "grupo": "chatgpt",
+      "antetitulo": "From the library archive",
+      "titular": "The World Bank proposes replacing screen-time limits with concrete family habits in early childhood",
+      "entradilla": "A 2025 World Bank report gathers the evidence on screens and development in children under five and turns it into strategies for families, schools, paediatricians and product designers.",
+      "cuerpo": [
+        "“[Screen Time in Early Childhood Education: Balancing the Digital Scale](https://documents1.worldbank.org/curated/en/099936107302595687/pdf/IDU-0808127e-05ed-4216-875b-bdc965de11c5.pdf)” is a World Bank report signed by Ezequiel Molina, the fifth in the “Digital Innovations in Education” series, produced by the Education Global Practice for Latin America and the Caribbean. According to its acknowledgements, it was prepared between March and December 2025. The paper is recovering it from the archive of the [ChatGPT-IA-edu digital library](https://t.me/ChatGPTedu/21753/50895) because it remains current: the [World Bank page](https://www.bancomundial.org/es/programs/educacion-america-latina-caribe/publication/el-tiempo-frente-a-la-pantalla-en-la-educacion-infantil) records no later edition and no withdrawal.",
+        "The starting point is a figure: the average preschooler spends around two hours a day in front of a screen, double the one-hour limit that the WHO set in 2019 for children aged 2 to 5. Those exceeding that hour are 59.5% in Chandigarh (India), 91% in Selangor (Malaysia) and 69% in Ceará (Brazil); in Ethiopia, 62% in urban areas against 15% in rural ones. The report's table uses different thresholds (one or two hours) and marks some figures as estimates, so comparisons call for caution.",
+        "What sets it apart from a “less screen time” warning is the diagnosis: the report argues that the central concern is what the screen displaces (conversation, play, physical activity and sleep) more than the screen itself. It records effects associated with excess use on language, attention, sleep and social-emotional skills, and “technoference”, that is, how adults' phone use interrupts interaction with the child. It stresses that these are associations (it cites a cross-sectional study that cannot establish causality) and acknowledges that the “digital babysitter” meets real needs of families, not just poor decisions. It sums up its position thus: “The goal is not to eliminate screens, but to establish usage guidelines that protect the experiences fundamental to development”.",
+        "The most useful part is the habit-formation framework, with five principles: identify the cues that trigger screen use and replace them, draw up “if… then” plans, reorganise the environment, start with minimal changes anchored in routines, and lean on other families. From these come four lines of intervention: workshops for mothers and fathers with follow-up reminders by SMS or WhatsApp for at least four weeks, attractive alternatives (play-kit lending, dialogic reading, toy libraries), family agreements with screen-free zones and times, and peer support networks. The report considers that habit workshops, dialogic reading and screen-free meals have the clearest evidence, and acknowledges that the rest needs more studies.",
+        "Artificial intelligence appears in a chapter of its own, presented as an “innovation frontier”: parenting assistants inside WhatsApp, system layers that detect passive viewing and suggest breaks, and coaching platforms. The report itself admits that “There are as yet no field experiments on chatbots for managing screen time”; it bases the idea on mental health studies. It calls for privacy by design, referral to people for complex cases and design for modest phones. An opening note states that the text was drafted with analytical help from several AI systems, with contributions reviewed and approved by human authors.",
+        "It should be read with two precautions. It deals with early childhood, not primary or secondary school students, and its empirical base is mostly observational. It also gives two different figures for its evidence base: more than 80 studies in 18 countries in the summary and more than 50 peer-reviewed studies in the introduction. On AI and children, the library has other documents: the [World Economic Forum report on child safety with AI that the paper published on 2 November](pieza:2026-11-02/wef-infancia-ia), the [study on whether there is a suitable age to use AI in the classroom](pieza:2026-11-02/unesco-edad-ia) and the [APA report on learning with educational technology](https://t.me/ChatGPTedu/21753/52166), which covers ages 5 to 18.",
+        "For a teacher, it is most useful in early years and the first years of primary school. Chapter 4 is a good starting point for a meeting with families, and section 6.2 brings together measures for the school: consistent messages, examples of screen-free activities and lending of materials. Appendix A provides a family plan template adapted from the American Academy of Pediatrics' Family Media Plan tool. To get straight to the point, it is worth reading the executive summary first and then sections 4.5 and 6."
+      ],
+      "documento": {
+        "titulo": "El tiempo frente a la pantalla en la educación infantil: Equilibrar la balanza digital",
+        "autoria": "Ezequiel Molina (World Bank)",
+        "anyo": "2025",
+        "idioma": "Spanish",
+        "licencia": "Non-commercial use permitted, in whole or in part, citing the source (World Bank rights)",
+        "url": "https://documents1.worldbank.org/curated/en/099936107302595687/pdf/IDU-0808127e-05ed-4216-875b-bdc965de11c5.pdf"
+      },
+      "fuentes": [
+        {"titulo": "Screen Time in Early Childhood Education (World Bank PDF) (in Spanish)", "url": "https://documents1.worldbank.org/curated/en/099936107302595687/pdf/IDU-0808127e-05ed-4216-875b-bdc965de11c5.pdf"},
+        {"titulo": "Publication page at the World Bank (in Spanish)", "url": "https://www.bancomundial.org/es/programs/educacion-america-latina-caribe/publication/el-tiempo-frente-a-la-pantalla-en-la-educacion-infantil"},
+        {"titulo": "The document in the ChatGPT-IA-edu digital library (in Spanish)", "url": "https://t.me/ChatGPTedu/21753/50895"},
+        {"titulo": "APA report on learning with educational technology (library)", "url": "https://t.me/ChatGPTedu/21753/52166"}
+      ],
+      "mensaje": {"grupo": "chatgpt", "id": 50895},
+      "comprobado": "Texto completo del PDF tal como está en la biblioteca, contrastado con el cuerpo: cifras de la tabla 1, cinco principios de hábitos, cuatro líneas de intervención, cuatro semanas de avisos, sección 4.5, capítulo 5 (cita sobre chatbots), secciones 6.2, apéndice A, las dos cifras de estudios (80 en el resumen, 50 en la introducción) y las dos citas literales. Página oficial del Banco Mundial (WebFetch): autor, enlace al PDF, sin edición posterior ni retirada; una búsqueda web confirma que es el Brief nº 5 de la serie, de 2025 (la URL en inglés lleva «not-in-use» sin explicación en la página). No abrí el PDF alojado en el Banco Mundial, solo el de la biblioteca. Los dos enlaces a piezas del 2 de noviembre existen en publicado.txt y tratan de IA e infancia.",
+      "ilustracion": "Esquema en círculo con las cinco palancas del hábito (señal, plan «si… entonces», entorno, pequeño cambio, apoyo de otras familias) alrededor de un niño y un adulto leyendo juntos, con una pantalla apagada en una cesta de carga al fondo.",
+      "ilustracion_alt": "An adult and a child read an open book together inside a circle; around them, with arrows pointing towards them, five habit levers: a bell labelled “Cue”, a route labelled “‘If… then’ plan”, a house labelled “Environment”, a sprout labelled “Minimal change” and a group of people labelled “Other families”; below, a crossed-out, switched-off screen."
+    }
+  ],
+  "ya_contado": [],
+  "descartado": [
+    "mensaje 52166: informe de la APA (2026), que parece vigente pero la entrada solo trae la ficha; no lo he leído en su fuente oficial y se queda para otra ocasión, sin artículo hoy.",
+    "mensaje 52272: «The algorithm in the room» (UNESCO, 2026), 26 ensayos; no se elige hoy porque se escogió el del Banco Mundial, y no he comprobado en internet si hay edición posterior, así que no queda descartado por estar superado."
+  ],
+  "repaso": [
+    "Enlazado el documento en su primera mención (título al PDF oficial) y la página del Banco Mundial en el primer párrafo.",
+    "Autoría: Molina firma; la Práctica Global de Educación es quien produce la serie (no se le atribuye a él pertenecer a ella); añadido «quinto de la serie» (Brief N.º 5, comprobado).",
+    "Quitado «el texto avisa de que las cifras no son comparables» (no consta así): ahora se describe lo que la tabla hace (umbrales distintos, alguna cifra estimada).",
+    "Quitado «lista para imprimir» del apéndice A (no consta); precisado que la herramienta es Family Media Plan; quitada la construcción con «quien» (ADR 0067).",
+    "Concretado que los avisos de seguimiento son por SMS o WhatsApp (4.1); recortes de redacción para quedar por debajo de 700 palabras.",
+    "Sin cambios en cifras, citas (literales), enumeraciones (cinco principios, cuatro líneas) ni idea del dibujo; enlaces pieza: válidos."
+  ]
+}

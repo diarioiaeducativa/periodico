@@ -1,0 +1,21 @@
+{"fecha": "2026-11-21", "hay_pieza": true,
+ "piezas": [{"id": "nano-banana-pro-poligonos-precio",
+   "seccion": "hace-un-ano", "importancia": 3,
+   "ilustracion_alt": "Díptic amb una línia vertical al centre. A l'esquerra, «Nov. 2025»: quatre bitllets de tinta i a sota «0,134 $». A la dreta, «Avui»: un sol bitllet blau, la quarta part, i a sota «0,0336 $».",
+   "grupo": "chatgpt", "fecha_original": "2025-11-22",
+   "antetitulo": "Imatges amb IA",
+   "titular": "El model d'imatges que va dibuixar un eneàgon d'onze costats ha estat substituït a Gemini",
+   "entradilla": "Al novembre de 2025, el nou model d'imatges de Google encertava alguns polígons i en fallava d'altres. Al febrer de 2026 Nano Banana 2 el va substituir a Gemini, i per als desenvolupadors n'hi ha un altre que costa la quarta part per imatge d'1K.",
+   "cuerpo": [
+     "El 22 de novembre de 2025, dos dies després de l'estrena, a ChatGPT-IA-edu es posava a prova Nano Banana Pro, el model de Google per crear i editar imatges. Dibuixava bé un heptàgon regular, que el seu antecessor feia de sis costats, però l'eneàgon li sortia d'onze. Es donava per fet que bastaria esperar unes setmanes que Google l'afinés. A EduMedia-IAG es repassava el seu cost per als desenvolupadors: 0,134 dòlars per imatge d'1K o 2K i 0,24 en 4K.",
+     "El 26 de febrer de 2026, Google va presentar [Nano Banana 2](https://blog.google/innovation-and-ai/technology/ai/nano-banana-2/), que substitueix el Pro a l'aplicació Gemini; el Pro continua per als subscriptors de Google AI Pro i Ultra, que el poden demanar en regenerar una imatge. El 6 d'octubre va arribar Nano Banana 2.1, que, segons les seves [notes de versió](https://aistudio.google.com/docs/changelog), segueix millor les instruccions.",
+     "El Pro costa el mateix que fa un any: a 18 de novembre de 2026, la [tarifa oficial](https://aistudio.google.com/docs/pricing) manté els 0,134 i 0,24 dòlars. Nano Banana 2.1 cobra 0,0336 dòlars per imatge d'1K, la quarta part, i 0,113 en 4K. Google no dona dades sobre l'encert amb els polígons."
+   ],
+   "fuentes": [
+     {"titulo": "Nano Banana 2: Combining Pro capabilities with lightning-fast speed (Google, 26 de febrer de 2026) (en anglès)", "url": "https://blog.google/innovation-and-ai/technology/ai/nano-banana-2/"},
+     {"titulo": "Notes de versió de l'API de Gemini (Google AI Studio) (en anglès)", "url": "https://aistudio.google.com/docs/changelog"},
+     {"titulo": "Preus de l'API de Gemini (Google AI Studio) (en anglès)", "url": "https://aistudio.google.com/docs/pricing"}
+   ],
+   "mensaje": {"grupo": "chatgpt", "id": 42534},
+   "comprobado": "Mensaje chatgpt:42534 en t.me/ChatGPTedu (22-11-2025): Nano Banana Pro hizo bien el heptágono; el modelo anterior lo hacía de seis lados (el eneágono de once lados es del 42541, de la entrada). Blog de Google (26-02-2026): Nano Banana 2 sustituye a Nano Banana Pro en los modelos Fast, Thinking y Pro de Gemini; el Pro sigue para suscriptores de AI Pro y Ultra al regenerar desde el menú de tres puntos (la fuente no dice «por defecto» en Gemini, y se ha quitado). Notas de versión: Gemini 3 Pro Image preview el 20-11-2025; Nano Banana 2 el 26-02-2026; Nano Banana 2.1 disponible el 06-10-2026, con mejor seguimiento de las instrucciones. Página de precios consultada el 18-11-2026: Gemini 3 Pro Image, 0,134 dólares (1K/2K) y 0,24 (4K); Nano Banana 2.1, 0,0336 (1K), 0,0504 (2K) y 0,113 (4K). Las cifras de 2025 coinciden con edumedia:6397. Sin fuente oficial sobre la exactitud geométrica actual, y no se afirma nada de ella.",
+   "repaso": ["Titular y entradilla: la fuente no dice que Nano Banana 2 sea «el modelo por defecto» de Gemini, sino que sustituye al Pro en los modelos de la aplicación; reescritos en ese sentido.", "Entradilla: «cuatro veces más barato» precisado como «la cuarta parte por imagen de 1K» (en 4K la rebaja es menor).", "Cuerpo: «dejó de ser por defecto» cambiado por «sustituye»; «Se daba por hecho que habría que esperar» matizado a «bastaría esperar»; última frase sin personificar al modelo.", "Mensajes, fechas, versiones y precios comprobados; 226 palabras aprox."]}]}

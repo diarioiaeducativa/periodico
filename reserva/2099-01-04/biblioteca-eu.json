@@ -1,0 +1,54 @@
+{
+  "fecha": "2099-01-04",
+  "piezas": [
+    {
+      "id": "bm-pantalla-infantil",
+      "seccion": "biblioteca",
+      "importancia": 2,
+      "grupo": "chatgpt",
+      "antetitulo": "Liburutegiaren funtsetik",
+      "titular": "Munduko Bankuak pantaila-orduen muga ordezkatzea proposatzen du, haurtzaro goiztiarrean familia-ohitura zehatzekin",
+      "entradilla": "Munduko Bankuaren 2025eko txosten batek bost urtetik beherakoen pantailei eta garapenari buruzko ebidentzia biltzen du, eta familientzako, eskoletarako, pediatrentzako eta produktu-diseinatzaileentzako estrategia bihurtzen du.",
+      "cuerpo": [
+        "«[Pantailaren aurrean emandako denbora haur-hezkuntzan: balantza digitala orekatzea](https://documents1.worldbank.org/curated/en/099936107302595687/pdf/IDU-0808127e-05ed-4216-875b-bdc965de11c5.pdf)» Ezequiel Molinak sinatutako Munduko Bankuaren txosten bat da, «Berrikuntza digitalak hezkuntzan» seriearen bosgarrena, Latinoamerika eta Karibeko Hezkuntzaren Praktika Globalaren produktua. Esker onen arabera, 2025eko martxoaren eta abenduaren artean egin zen. Egunkariak [ChatGPT-IA-edu liburutegi digitalaren](https://t.me/ChatGPTedu/21753/50895) funtsetik berreskuratzen du, indarrean jarraitzen duelako: [Munduko Bankuaren orriak](https://www.bancomundial.org/es/programs/educacion-america-latina-caribe/publication/el-tiempo-frente-a-la-pantalla-en-la-educacion-infantil) ez du ez ondorengo argitalpenik ez kenketarik jasotzen.",
+        "Abiapuntua zifra bat da: batez beste, eskolaurrekoek egunean bi ordu inguru ematen dituzte pantaila baten aurrean, hau da, OMEk 2019an 2 eta 5 urte arteko haurrentzat ezarritako ordubeteko mugaren bikoitza. Ordu hori gainditzen dute Chandigarhen (India) % 59,5ek, Selangorren (Malaysia) % 91k eta Cearán (Brasil) % 69k; Etiopian, hiriguneetan % 62k eta landaguneetan % 15ek. Txostenaren taulak muga desberdinak erabiltzen ditu (ordu bat edo bi) eta zifraren bat zenbatetsi gisa markatzen du; beraz, konparazioak kontuz hartu behar dira.",
+        "«Pantaila gutxiago» abisu batekin alderatuta, diagnostikoa da aldatzen dena: txostenak dio kezka nagusia pantailak desplazatzen duena dela (elkarrizketa, jolasa, jarduera fisikoa eta lo egitea), ez hainbeste pantaila bera. Gehiegizko erabilerari lotutako ondorioak jasotzen ditu hizkuntzan, arretan, loan eta gaitasun sozioemozionaletan, baita «teknoetena» ere, hau da, helduek telefono mugikorra erabiltzeak haurrarekiko elkarrekintza nola eteten duen. Harreman horiek elkarketak direla azpimarratzen du (kausalitatea ezartzen uzten ez duen ebakidura-azterlan bat aipatzen du) eta aitortzen du «haurtzaintza digitalak» familien benetako beharrei erantzuten diela, ez soilik erabaki txarrei. Bere jarrera honela laburtzen du: «Helburua ez da pantailak ezabatzea, garapenerako funtsezko esperientziak babesten dituzten erabilera-jarraibideak ezartzea baizik».",
+        "Zatirik aprobetxagarriena ohitura-sorkuntzaren markoa da, bost printziporekin: pantailen erabilera abiarazten duten seinaleak identifikatu eta ordezkatzea, «baldin… orduan» planak formulatzea, ingurunea berrantolatzea, errutinetan ainguratutako aldaketa minimoekin hastea eta beste familia batzuengan oinarritzea. Hortik lau esku-hartze-ildo ateratzen dira: gurasoentzako tailerrak, SMS edo WhatsApp bidezko jarraipen-abisuekin gutxienez lau astez, alternativa erakargarriak (jolas-kit-en maileguak, irakurketa elkarrizketatua, ludotekak), pantailarik gabeko guneak eta ordutegiak dituzten familia-akordioak eta berdinen arteko laguntza-sareak. Txostenaren arabera, ebidentzia argiena ohituren tailerrek, irakurketa elkarrizketatuak eta pantailarik gabeko otorduek dute, eta gainerakoek ikerketa gehiago behar dituztela aitortzen du.",
+        "Adimen artifiziala (AA) bere kapitulu propioan agertzen da, «berrikuntza-muga» gisa aurkeztuta: WhatsAppen barruko gurasotasun-laguntzaileak, ikustaldi pasiboa detektatzen eta etenaldiak iradokitzen dituzten sistema-geruzak eta coaching-plataformak. Txostenak berak onartzen du «Oraindik ez dago pantaila-denboraren kudeaketarako txatbotei buruzko landa-esperimenturik»; ideia osasun mentaleko azterlanetan oinarritzen du. Diseinutik pribatutasuna eskatzen du, kasu konplexuetarako pertsonengana bideratzea eta telefono xumeetarako diseinua. Hasierako ohar batek adierazten du testua AA sistema batzuen laguntza analitikoarekin idatzi zela, egile giza-baten berrikusitako eta onartutako ekarpenekin.",
+        "Bi kontuz hartuta irakurtzea komeni da. Haurtzaro goiztiarraz ari da, ez lehen edo bigarren hezkuntzako ikasleez, eta bere oinarri enpirikoa batez ere behaketazkoa da. Gainera, bere ebidentzia-oinarrirako bi zifra desberdin ematen ditu: 18 herrialdetako 80 azterlan baino gehiago laburpenean, eta parekideen berrikuspena duten 50 azterlan baino gehiago sarreran. AAri eta adingabeei dagokienez, Liburutegiak beste dokumentu batzuk ditu: [Munduko Ekonomia Foroaren haurren segurtasunari eta AAri buruzko txostena, egunkariak azaroaren 2an argitaratu zuena](pieza:2026-11-02/wef-infancia-ia), [AA gelan erabiltzeko adin egokirik ote dagoen aztertzen duen azterlana](pieza:2026-11-02/unesco-edad-ia) eta [APAren txostena teknologia hezigarriarekin ikasteari buruz](https://t.me/ChatGPTedu/21753/52166), 5 eta 18 urte artekoak hartzen dituena.",
+        "Irakasle batentzat, batez ere haur-hezkuntzan eta lehen hezkuntzako lehen mailetan balio du. 4. kapitulua abiapuntu ona da familiekin egiteko bilera baterako, eta 6.2 atalak ikastetxerako neurriak biltzen ditu: mezu koherenteak, pantailarik gabeko jardueren adibideak eta materialen mailegua. A eranskinak familia-plan baten txantiloia dakar, Pediatriako Amerikako Akademiaren Family Media Plan tresnatik egokitua. Zuzenean joateko, komeni da lehenik laburpen betearazlea irakurtzea eta gero 4.5 eta 6. atalak."
+      ],
+      "documento": {
+        "titulo": "El tiempo frente a la pantalla en la educación infantil: Equilibrar la balanza digital",
+        "autoria": "Ezequiel Molina (Munduko Bankua)",
+        "anyo": "2025",
+        "idioma": "gaztelania",
+        "licencia": "Merkataritza-xederik gabeko erabilera onartzen da, osorik edo zati batean, iturria aipatuz (Munduko Bankuaren eskubideak)",
+        "url": "https://documents1.worldbank.org/curated/en/099936107302595687/pdf/IDU-0808127e-05ed-4216-875b-bdc965de11c5.pdf"
+      },
+      "fuentes": [
+        {"titulo": "Pantailaren aurrean emandako denbora haur-hezkuntzan (Munduko Bankuaren PDFa) (gaztelaniaz)", "url": "https://documents1.worldbank.org/curated/en/099936107302595687/pdf/IDU-0808127e-05ed-4216-875b-bdc965de11c5.pdf"},
+        {"titulo": "Argitalpenaren orria Munduko Bankuan (gaztelaniaz)", "url": "https://www.bancomundial.org/es/programs/educacion-america-latina-caribe/publication/el-tiempo-frente-a-la-pantalla-en-la-educacion-infantil"},
+        {"titulo": "Dokumentua ChatGPT-IA-edu liburutegi digitalean (gaztelaniaz)", "url": "https://t.me/ChatGPTedu/21753/50895"},
+        {"titulo": "APAren txostena teknologia hezigarriarekin ikasteari buruz (liburutegian) (ingelesez)", "url": "https://t.me/ChatGPTedu/21753/52166"}
+      ],
+      "mensaje": {"grupo": "chatgpt", "id": 50895},
+      "comprobado": "Texto completo del PDF tal como está en la biblioteca, contrastado con el cuerpo: cifras de la tabla 1, cinco principios de hábitos, cuatro líneas de intervención, cuatro semanas de avisos, sección 4.5, capítulo 5 (cita sobre chatbots), secciones 6.2, apéndice A, las dos cifras de estudios (80 en el resumen, 50 en la introducción) y las dos citas literales. Página oficial del Banco Mundial (WebFetch): autor, enlace al PDF, sin edición posterior ni retirada; una búsqueda web confirma que es el Brief nº 5 de la serie, de 2025 (la URL en inglés lleva «not-in-use» sin explicación en la página). No abrí el PDF alojado en el Banco Mundial, solo el de la biblioteca. Los dos enlaces a piezas del 2 de noviembre existen en publicado.txt y tratan de IA e infancia.",
+      "ilustracion": "Esquema en círculo con las cinco palancas del hábito (señal, plan «si… entonces», entorno, pequeño cambio, apoyo de otras familias) alrededor de un niño y un adulto leyendo juntos, con una pantalla apagada en una cesta de carga al fondo.",
+      "ilustracion_alt": "Heldu bat eta haur bat liburu ireki bat elkarrekin irakurtzen ari dira zirkulu baten barruan; haien inguruan, geziekin haiengana, ohituraren bost palanka: kanpai bat «Seinalea» idatzita, ibilbide bat «‹Baldin… orduan› plana» idatzita, etxe bat «Ingurunea» idatzita, kimu bat «Aldaketa minimoa» idatzita eta pertsona-talde bat «Beste familia batzuk» idatzita; azpian, itzalitako pantaila marratu bat."
+    }
+  ],
+  "ya_contado": [],
+  "descartado": [
+    "mensaje 52166: informe de la APA (2026), que parece vigente pero la entrada solo trae la ficha; no lo he leído en su fuente oficial y se queda para otra ocasión, sin artículo hoy.",
+    "mensaje 52272: «The algorithm in the room» (UNESCO, 2026), 26 ensayos; no se elige hoy porque se escogió el del Banco Mundial, y no he comprobado en internet si hay edición posterior, así que no queda descartado por estar superado."
+  ],
+  "repaso": [
+    "Enlazado el documento en su primera mención (título al PDF oficial) y la página del Banco Mundial en el primer párrafo.",
+    "Autoría: Molina firma; la Práctica Global de Educación es quien produce la serie (no se le atribuye a él pertenecer a ella); añadido «quinto de la serie» (Brief N.º 5, comprobado).",
+    "Quitado «el texto avisa de que las cifras no son comparables» (no consta así): ahora se describe lo que la tabla hace (umbrales distintos, alguna cifra estimada).",
+    "Quitado «lista para imprimir» del apéndice A (no consta); precisado que la herramienta es Family Media Plan; quitada la construcción con «quien» (ADR 0067).",
+    "Concretado que los avisos de seguimiento son por SMS o WhatsApp (4.1); recortes de redacción para quedar por debajo de 700 palabras.",
+    "Sin cambios en cifras, citas (literales), enumeraciones (cinco principios, cuatro líneas) ni idea del dibujo; enlaces pieza: válidos."
+  ]
+}

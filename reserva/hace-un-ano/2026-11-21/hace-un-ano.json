@@ -1,0 +1,21 @@
+{"fecha": "2026-11-21", "hay_pieza": true,
+ "piezas": [{"id": "nano-banana-pro-poligonos-precio",
+   "seccion": "hace-un-ano", "importancia": 3,
+   "ilustracion_alt": "Díptico con una línea vertical en el centro. A la izquierda, «Nov. 2025»: cuatro billetes de tinta y debajo «0,134 $». A la derecha, «Hoy»: un solo billete azul, la cuarta parte, y debajo «0,0336 $».",
+   "grupo": "chatgpt", "fecha_original": "2025-11-22",
+   "antetitulo": "Imágenes con IA",
+   "titular": "El modelo de imágenes que dibujó un eneágono de once lados fue sustituido en Gemini",
+   "entradilla": "En noviembre de 2025, el nuevo modelo de imágenes de Google acertaba unos polígonos y fallaba otros. En febrero de 2026 Nano Banana 2 lo sustituyó en Gemini, y para los desarrolladores hay otro que cuesta la cuarta parte por imagen de 1K.",
+   "cuerpo": [
+     "El 22 de noviembre de 2025, dos días después de su estreno, en ChatGPT-IA-edu se ponía a prueba Nano Banana Pro, el modelo de Google para crear y editar imágenes. Dibujaba bien un heptágono regular, que su antecesor hacía de seis lados, pero el eneágono le salía de once. Se daba por hecho que bastaría esperar unas semanas a que Google lo afinara. En EduMedia-IAG se repasaba su coste para desarrolladores: 0,134 dólares por imagen de 1K o 2K y 0,24 en 4K.",
+     "El 26 de febrero de 2026, Google presentó [Nano Banana 2](https://blog.google/innovation-and-ai/technology/ai/nano-banana-2/), que sustituye al Pro en la aplicación Gemini; el Pro sigue para suscriptores de Google AI Pro y Ultra, que pueden pedirlo al regenerar una imagen. El 6 de octubre llegó Nano Banana 2.1, que según sus [notas de versión](https://aistudio.google.com/docs/changelog) sigue mejor las instrucciones.",
+     "El Pro cuesta lo mismo que hace un año: a 18 de noviembre de 2026, la [tarifa oficial](https://aistudio.google.com/docs/pricing) mantiene los 0,134 y 0,24 dólares. Nano Banana 2.1 cobra 0,0336 dólares por imagen de 1K, la cuarta parte, y 0,113 en 4K. Google no da datos sobre su acierto con los polígonos."
+   ],
+   "fuentes": [
+     {"titulo": "Nano Banana 2: Combining Pro capabilities with lightning-fast speed (Google, 26 de febrero de 2026)", "url": "https://blog.google/innovation-and-ai/technology/ai/nano-banana-2/"},
+     {"titulo": "Notas de versión de la API de Gemini (Google AI Studio)", "url": "https://aistudio.google.com/docs/changelog"},
+     {"titulo": "Precios de la API de Gemini (Google AI Studio)", "url": "https://aistudio.google.com/docs/pricing"}
+   ],
+   "mensaje": {"grupo": "chatgpt", "id": 42534},
+   "comprobado": "Mensaje chatgpt:42534 en t.me/ChatGPTedu (22-11-2025): Nano Banana Pro hizo bien el heptágono; el modelo anterior lo hacía de seis lados (el eneágono de once lados es del 42541, de la entrada). Blog de Google (26-02-2026): Nano Banana 2 sustituye a Nano Banana Pro en los modelos Fast, Thinking y Pro de Gemini; el Pro sigue para suscriptores de AI Pro y Ultra al regenerar desde el menú de tres puntos (la fuente no dice «por defecto» en Gemini, y se ha quitado). Notas de versión: Gemini 3 Pro Image preview el 20-11-2025; Nano Banana 2 el 26-02-2026; Nano Banana 2.1 disponible el 06-10-2026, con mejor seguimiento de las instrucciones. Página de precios consultada el 18-11-2026: Gemini 3 Pro Image, 0,134 dólares (1K/2K) y 0,24 (4K); Nano Banana 2.1, 0,0336 (1K), 0,0504 (2K) y 0,113 (4K). Las cifras de 2025 coinciden con edumedia:6397. Sin fuente oficial sobre la exactitud geométrica actual, y no se afirma nada de ella.",
+   "repaso": ["Titular y entradilla: la fuente no dice que Nano Banana 2 sea «el modelo por defecto» de Gemini, sino que sustituye al Pro en los modelos de la aplicación; reescritos en ese sentido.", "Entradilla: «cuatro veces más barato» precisado como «la cuarta parte por imagen de 1K» (en 4K la rebaja es menor).", "Cuerpo: «dejó de ser por defecto» cambiado por «sustituye»; «Se daba por hecho que habría que esperar» matizado a «bastaría esperar»; última frase sin personificar al modelo.", "Mensajes, fechas, versiones y precios comprobados; 226 palabras aprox."]}]}

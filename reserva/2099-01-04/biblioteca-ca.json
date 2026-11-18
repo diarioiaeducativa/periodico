@@ -1,0 +1,54 @@
+{
+  "fecha": "2099-01-04",
+  "piezas": [
+    {
+      "id": "bm-pantalla-infantil",
+      "seccion": "biblioteca",
+      "importancia": 2,
+      "grupo": "chatgpt",
+      "antetitulo": "Del fons de la biblioteca",
+      "titular": "El Banc Mundial proposa substituir el límit d'hores de pantalla per hàbits familiars concrets a la primera infància",
+      "entradilla": "Un informe del 2025 del Banc Mundial reuneix l'evidència sobre pantalles i desenvolupament en menors de cinc anys i la tradueix en estratègies per a famílies, escoles, pediatres i dissenyadors de productes.",
+      "cuerpo": [
+        "«[El tiempo frente a la pantalla en la educación infantil: Equilibrar la balanza digital](https://documents1.worldbank.org/curated/en/099936107302595687/pdf/IDU-0808127e-05ed-4216-875b-bdc965de11c5.pdf)» és un informe del Banc Mundial signat per Ezequiel Molina, el cinquè de la sèrie «Innovaciones Digitales en la Educación», producte de la Pràctica Global d'Educació per a Amèrica Llatina i el Carib. Segons els seus agraïments, es va elaborar entre març i desembre del 2025. El diari el recupera del fons de la [Biblioteca digital de ChatGPT-IA-edu](https://t.me/ChatGPTedu/21753/50895) perquè continua vigent: la [pàgina del Banc Mundial](https://www.bancomundial.org/es/programs/educacion-america-latina-caribe/publication/el-tiempo-frente-a-la-pantalla-en-la-educacion-infantil) no registra cap edició posterior ni cap retirada.",
+        "El punt de partida és una xifra: l'infant mitjà d'edat preescolar passa unes dues hores al dia davant d'una pantalla, el doble del límit d'una hora que l'OMS va fixar el 2019 per a nens de 2 a 5 anys. Superen aquesta hora el 59,5 % a Chandigarh (l'Índia), el 91 % a Selangor (Malàisia) i el 69 % a Ceará (el Brasil); a Etiòpia, el 62 % a les zones urbanes davant del 15 % a les rurals. La taula de l'informe fa servir llindars diferents (una o dues hores) i marca alguna xifra com a estimada, de manera que les comparacions demanen prudència.",
+        "El que canvia respecte a un avís de «menys pantalles» és el diagnòstic: l'informe sosté que la preocupació central és el que la pantalla desplaça (la conversa, el joc, l'activitat física i el son) més que la pantalla en si. Recull efectes associats a l'excés en llenguatge, atenció, son i habilitats socioemocionals, i la «tecnointerferència», és a dir, com l'ús del mòbil per part dels adults interromp la interacció amb l'infant. Insisteix que són associacions (cita un estudi transversal que no permet establir causalitat) i reconeix que la «mainadera digital» respon a necessitats reals de les famílies, no només a males decisions. Resumeix la seva postura així: «L'objectiu no és eliminar les pantalles, sinó establir pautes d'ús que protegeixin les experiències fonamentals per al desenvolupament».",
+        "La part més aprofitable és el marc de formació d'hàbits, amb cinc principis: identificar els senyals que disparen l'ús de pantalles i substituir-los, formular plans «si… llavors», reorganitzar l'entorn, començar amb canvis mínims ancorats en rutines i recolzar-se en altres famílies. D'aquí surten quatre línies d'intervenció: tallers per a mares i pares amb avisos de seguiment per SMS o WhatsApp durant almenys quatre setmanes, alternatives atractives (préstec de kits de joc, lectura dialògica, ludoteques), acords familiars amb zones i horaris sense pantalla i xarxes de suport entre iguals. L'informe considera que tenen l'evidència més clara els tallers amb hàbits, la lectura dialògica i els àpats sense pantalles, i reconeix que la resta necessita més estudis.",
+        "La intel·ligència artificial apareix en un capítol propi, presentat com una «frontera d'innovació»: assistents de criança dins de WhatsApp, capes de sistema que detecten la visualització passiva i suggereixen pauses, i plataformes de coaching. El mateix informe admet que «Encara no existeixen experiments de camp sobre xatbots per a la gestió del temps davant la pantalla»; recolza la idea en estudis de salut mental. Demana privadesa des del disseny, derivació a persones per als casos complexos i disseny per a telèfons modestos. Una nota inicial declara que el text es va redactar amb ajuda analítica de diversos sistemes d'IA, amb contribucions revisades i aprovades per autors humans.",
+        "Convé llegir-lo amb dues precaucions. Parla de primera infància, no d'alumnat de primària o secundària, i la seva base empírica és sobretot observacional. A més, dona dues xifres diferents per a la seva base d'evidència: més de 80 estudis en 18 països al resum i més de 50 estudis amb revisió per parells a la introducció. Per a la IA i els menors, la Biblioteca té altres documents: l'[informe del Fòrum Econòmic Mundial sobre seguretat infantil amb IA que el diari va publicar el 2 de novembre](pieza:2026-11-02/wef-infancia-ia), l'[estudi sobre si hi ha una edat adequada per usar la IA a l'aula](pieza:2026-11-02/unesco-edad-ia) i l'[informe de l'APA sobre l'aprenentatge amb tecnologia educativa](https://t.me/ChatGPTedu/21753/52166), que cobreix de 5 a 18 anys.",
+        "Per a un docent, serveix sobretot a infantil i als primers cursos de primària. El capítol 4 és un bon punt de partida per a una reunió amb famílies, i l'apartat 6.2 reuneix mesures per al centre: missatges coherents, exemples d'activitats sense pantalla i préstec de materials. L'apèndix A porta una plantilla de pla familiar adaptada de l'eina Family Media Plan de l'Acadèmia Americana de Pediatria. Per anar al gra, convé llegir primer el resum executiu i després les seccions 4.5 i 6."
+      ],
+      "documento": {
+        "titulo": "El tiempo frente a la pantalla en la educación infantil: Equilibrar la balanza digital",
+        "autoria": "Ezequiel Molina (Banc Mundial)",
+        "anyo": "2025",
+        "idioma": "castellà",
+        "licencia": "Ús no comercial permès, total o parcial, citant la font (drets del Banc Mundial)",
+        "url": "https://documents1.worldbank.org/curated/en/099936107302595687/pdf/IDU-0808127e-05ed-4216-875b-bdc965de11c5.pdf"
+      },
+      "fuentes": [
+        {"titulo": "El tiempo frente a la pantalla en la educación infantil (PDF del Banc Mundial) (en castellà)", "url": "https://documents1.worldbank.org/curated/en/099936107302595687/pdf/IDU-0808127e-05ed-4216-875b-bdc965de11c5.pdf"},
+        {"titulo": "Pàgina de la publicació al Banc Mundial (en castellà)", "url": "https://www.bancomundial.org/es/programs/educacion-america-latina-caribe/publication/el-tiempo-frente-a-la-pantalla-en-la-educacion-infantil"},
+        {"titulo": "El document a la Biblioteca digital de ChatGPT-IA-edu (en castellà)", "url": "https://t.me/ChatGPTedu/21753/50895"},
+        {"titulo": "Informe de l'APA sobre aprenentatge amb tecnologia educativa (Biblioteca)", "url": "https://t.me/ChatGPTedu/21753/52166"}
+      ],
+      "mensaje": {"grupo": "chatgpt", "id": 50895},
+      "comprobado": "Texto completo del PDF tal como está en la biblioteca, contrastado con el cuerpo: cifras de la tabla 1, cinco principios de hábitos, cuatro líneas de intervención, cuatro semanas de avisos, sección 4.5, capítulo 5 (cita sobre chatbots), secciones 6.2, apéndice A, las dos cifras de estudios (80 en el resumen, 50 en la introducción) y las dos citas literales. Página oficial del Banco Mundial (WebFetch): autor, enlace al PDF, sin edición posterior ni retirada; una búsqueda web confirma que es el Brief nº 5 de la serie, de 2025 (la URL en inglés lleva «not-in-use» sin explicación en la página). No abrí el PDF alojado en el Banco Mundial, solo el de la biblioteca. Los dos enlaces a piezas del 2 de noviembre existen en publicado.txt y tratan de IA e infancia.",
+      "ilustracion": "Esquema en círculo con las cinco palancas del hábito (señal, plan «si… entonces», entorno, pequeño cambio, apoyo de otras familias) alrededor de un niño y un adulto leyendo juntos, con una pantalla apagada en una cesta de carga al fondo.",
+      "ilustracion_alt": "Un adult i un infant llegeixen junts un llibre obert dins d'un cercle; al seu voltant, amb fletxes cap a ells, cinc palanques de l'hàbit: una campana amb el rètol «Senyal», un recorregut amb «Pla “si… llavors”», una casa amb «Entorn», un borró amb «Canvi mínim» i un grup de persones amb «Altres famílies»; a sota, una pantalla ratllada i apagada."
+    }
+  ],
+  "ya_contado": [],
+  "descartado": [
+    "mensaje 52166: informe de la APA (2026), que parece vigente pero la entrada solo trae la ficha; no lo he leído en su fuente oficial y se queda para otra ocasión, sin artículo hoy.",
+    "mensaje 52272: «The algorithm in the room» (UNESCO, 2026), 26 ensayos; no se elige hoy porque se escogió el del Banco Mundial, y no he comprobado en internet si hay edición posterior, así que no queda descartado por estar superado."
+  ],
+  "repaso": [
+    "Enlazado el documento en su primera mención (título al PDF oficial) y la página del Banco Mundial en el primer párrafo.",
+    "Autoría: Molina firma; la Práctica Global de Educación es quien produce la serie (no se le atribuye a él pertenecer a ella); añadido «quinto de la serie» (Brief N.º 5, comprobado).",
+    "Quitado «el texto avisa de que las cifras no son comparables» (no consta así): ahora se describe lo que la tabla hace (umbrales distintos, alguna cifra estimada).",
+    "Quitado «lista para imprimir» del apéndice A (no consta); precisado que la herramienta es Family Media Plan; quitada la construcción con «quien» (ADR 0067).",
+    "Concretado que los avisos de seguimiento son por SMS o WhatsApp (4.1); recortes de redacción para quedar por debajo de 700 palabras.",
+    "Sin cambios en cifras, citas (literales), enumeraciones (cinco principios, cuatro líneas) ni idea del dibujo; enlaces pieza: válidos."
+  ]
+}
