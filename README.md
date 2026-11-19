@@ -73,6 +73,9 @@ despliegue, que son secretas y se crean de nuevo. En una máquina con Docker:
    `remote.origin.fetch` también para `+refs/notes/*:refs/notes/*`.
 5. `docker compose up -d`. No hace falta copiar `estado/`: un número cuya edición ya está en
    GitHub no se vuelve a preparar ni a publicar.
+6. La columna de opinión (ADR 0092) necesita además el agente de noticias (`noticias-chatgpt-ia-edu`, con su cuenta
+   de ChatGPT) y, en el crontab de la máquina, no del contenedor, la línea de la cabecera de `nas/columnista.sh`
+   (en el NAS, con `sudo crontab -u jjdeharo`). Sin ellos, el diario sale igual, sin columna nueva.
 
 El lanzador del vigilante (ADR 0021) no corre en el NAS sino en un hosting con cron:
 `ionos/lanzar-vigilante.sh` explica en su cabecera la carpeta, el token de GitHub de grano fino
