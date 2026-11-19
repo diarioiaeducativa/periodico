@@ -1937,12 +1937,17 @@ def franja_hace_un_ano(prof, p):
 </section>"""
 
 
+def firma_opinion(p):
+    """«Por GPT-6.2-Astra (OpenAI)»: el modelo que firma la columna de opinión (ADR 0092), en cada lengua."""
+    return f'<p class="firma">{e(L["opinion_firma"].format(autor=p["autor"]))}</p>' if p.get("autor") else ""
+
+
 def franja_opinion(prof, p):
     """La columna de opinión de los miércoles (ADR 0092): una franja a todo el ancho, sin dibujo, con la firma del
     modelo que la escribe a la vista, para que nadie la tome por información del diario."""
     if not p:
         return ""
-    firma = f'<p class="firma">{e(L["opinion_firma"].format(autor=p["autor"]))}</p>' if p.get("autor") else ""
+    firma = firma_opinion(p)
     return f"""<section class="editorial opinion-franja sec-opinion sin-ilu" aria-labelledby="op-{e(p["id"])}">
   <div class="texto">
     <p class="seccion"><span><a href="{prof}opinion.html">{icono("opinion")} {L["secciones"]["opinion"]}</a></span> <span class="fecha-pieza">{fecha_rotulo(p)}</span></p>
@@ -2101,7 +2106,7 @@ def articulo(prof, ruta, d, p, eds):
         bloques = "".join(bloque_recurso(prof, p["id"], r) for r in recs)
     serie, ya_contados, otras = semana_repositorio(prof, p, eds)
     # La columna de opinión (ADR 0092): firmada por el modelo que la escribe, con la nota al final
-    firma = f'<p class="firma">{e(L["opinion_firma"].format(autor=p["autor"]))}</p>' if p.get("autor") else ""
+    firma = firma_opinion(p)
     if p.get("autor"):
         cuerpo += f'<p class="nota-opinion">{e(L["opinion_nota"].format(autor=p["autor"]))}</p>'
     rot = rotulos(p, True, prof, boton=boton_escuchar() + boton_columnas())
@@ -3993,6 +3998,18 @@ def mes_pub(fecha):
     return publicacion(fecha)[:7]
 
 
+def lista_opinion(prof, ps):
+    """La página de «Opinión» (ADR 0092): las columnas no llevan dibujo, así que van una debajo de otra, solo texto y con
+    la firma, en recuadros como el del número; en una rejilla, cada una ocupaba la casilla de un dibujo con un icono."""
+    return '<div class="lista-opinion">' + "".join(f"""<article class="pieza opinion-item sec-opinion">
+  {rotulos(p, True, prof, True)}
+  <h2 class="titular"><a href="{href(prof, p)}">{e(p["titular"])}</a></h2>
+  {firma_opinion(p)}
+  <p class="entradilla">{e(p.get("entradilla"))}</p>
+  <p class="leer"><a href="{href(prof, p)}">{L["leer_opinion"]}</a></p>
+</article>""" for p in ps) + "</div>"
+
+
 def lista_seccion(eds, clave):
     todas = [p for d in reversed(eds) for p in d["piezas"]
              if p.get("seccion") == clave or (clave == "biblioteca" and p.get("biblioteca"))]
@@ -4000,7 +4017,8 @@ def lista_seccion(eds, clave):
     return {"carpeta": clave, "pagina": f"{clave}.html", "nombre": nombre, "icono": icono(clave), "clase": f"sec-{clave}",
             "activa": clave, "meta": L["descripciones"][clave].format(enlace=L["biblioteca_enlace"], repositorio=L["repositorio_enlace"]),
             "descripcion": descripcion(clave), "items": todas, "fecha": lambda p: p["fecha"], "n": RECIENTES["seccion"],
-            "pintar": lambda prof, ps: en_filas([pieza(prof, p, "destacada", 2, True, True, sin_seccion=True, relleno=True) for p in ps], "fila-seccion"),
+            "pintar": lista_opinion if clave == "opinion" else
+                      lambda prof, ps: en_filas([pieza(prof, p, "destacada", 2, True, True, sin_seccion=True, relleno=True) for p in ps], "fila-seccion"),
             "indice": indice_mes, "filtro": nombre,
             "vacio": L["sin_piezas"], "main": "portada", "scripts": SCRIPT_FILAS}
 
