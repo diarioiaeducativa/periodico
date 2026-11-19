@@ -1699,7 +1699,7 @@ def bloque_alterno(prof, ps, apertura, mostrar_fecha):
     return f'<div class="bloque-piezas alt-b" style="--n:3">{fila}</div>'
 
 
-def cuerpo_portada(prof, piezas, breves, mostrar_fecha, tira="", op_semana=None):
+def cuerpo_portada(prof, piezas, breves, mostrar_fecha, tira=""):
     """Como en un periódico: la apertura a todo el ancho, una fila de destacadas con dibujo,
     la viñeta y, debajo, un bloque por sección con su título a la izquierda (al estilo de
     The Guardian). Las secciones sin piezas no salen. En la portada, los breves del último número
@@ -1731,7 +1731,7 @@ def cuerpo_portada(prof, piezas, breves, mostrar_fecha, tira="", op_semana=None)
     # y las destacadas se reparten en filas (cuatro, en dos filas de dos)
     if len(mas_hoy) == 1:
         destacadas.append(mas_hoy.pop())
-    html_ = apertura_portada(prof, p0, opinion or op_semana, mostrar_fecha)
+    html_ = apertura_portada(prof, p0, opinion, mostrar_fecha)   # el día que sale, el anuncio junto a la apertura (ADR 0092)
     if destacadas:
         html_ += en_filas([pieza(prof, p, "destacada", 2, True, mostrar_fecha, relleno=True) for p in destacadas], "fila-destacadas")
     if mas_hoy:
@@ -1975,6 +1975,23 @@ def anuncio_opinion(prof, p):
 </section>"""
 
 
+def franja_opinion(prof, p):
+    """La columna de opinión de los miércoles (ADR 0092): una franja a todo el ancho, sin dibujo, con la firma del
+    modelo que la escribe a la vista, para que nadie la tome por información del diario."""
+    if not p:
+        return ""
+    firma = firma_opinion(p)
+    return f"""<section class="editorial opinion-franja sec-opinion sin-ilu" aria-labelledby="op-{e(p["id"])}">
+  <div class="texto">
+    <p class="seccion"><span><a href="{prof}opinion.html">{icono("opinion")} {L["secciones"]["opinion"]}</a></span> <span class="fecha-pieza">{fecha_rotulo(p)}</span></p>
+    <h2 id="op-{e(p["id"])}" class="titular"><a href="{href(prof, p)}">{e(p["titular"])}</a></h2>
+    {firma}
+    <p class="entradilla">{e(p["entradilla"])}</p>
+    <p class="leer"><a href="{href(prof, p)}">{L["leer_opinion"]}</a></p>
+  </div>
+</section>"""
+
+
 def recuadro_hace_un_ano(prof, p):
     """«Hace un año» en pequeño, en un recuadro sepia junto a los breves (ADR 0040): el rótulo arriba y el díptico
     en miniatura, a un lado del titular y la entradilla, para que el recuadro no doble en altura a los breves. Sola, a todo el ancho, se veía demasiado grande para una pieza de memoria."""
@@ -2009,14 +2026,17 @@ def reportaje_reciente(eds, fecha):
 
 def opinion_reciente(eds, fecha):
     """La última columna de opinión de la semana que acaba en `fecha` (ADR 0092): como el reportaje, sigue en la
-    portada los días siguientes, junto a la apertura, hasta que sale la siguiente."""
+    portada los días siguientes, después de la viñeta, hasta que sale la siguiente."""
     desde = (datetime.date.fromisoformat(fecha) - datetime.timedelta(days=DIAS_PORTADA - 1)).isoformat()
     return next((p for d in reversed(eds) if desde <= d["fecha"] <= fecha for p in d["piezas"] if p.get("seccion") == "opinion"), None)
 
 
-def tras_la_vineta(prof, rep):
-    """Lo de días anteriores que sigue en la portada después de la viñeta: el reportaje de la semana."""
-    return franja_reportaje(prof, rep) if rep else ""
+def tras_la_vineta(prof, rep, op):
+    """Lo de días anteriores que sigue en la portada después de la viñeta: el reportaje y la columna de la semana, lo
+    más reciente primero."""
+    franjas = sorted([(r["fecha"], franja_reportaje(prof, r)) for r in [rep] if r] + [(o["fecha"], franja_opinion(prof, o)) for o in [op] if o],
+                     key=lambda x: x[0], reverse=True)
+    return "".join(f for _, f in franjas)
 
 
 def descripcion_dia(dia, piezas):
@@ -2038,8 +2058,10 @@ def pagina_portada(prof, ruta, eds, piezas, breves, fecha, cuenta, es_portada, a
     # los demás días, después de la viñeta, que es del número de hoy (ADR 0004)
     rep = reportaje_reciente(eds, fecha) if es_portada else dia.get("reportaje")
     arriba = bool(rep) and rep["fecha"] == fecha
-    # La columna de opinión de la semana, junto a la apertura de la portada; en la página de un número, la suya (ADR 0092)
+    # La columna, el día que sale, en un anuncio junto a la apertura; en la portada de los días siguientes, en su franja
+    # después de la viñeta (ADR 0092)
     op = opinion_reciente(eds, fecha) if es_portada else None
+    op = op if op and op["fecha"] != fecha else None
     # La portada se describe con el lema del diario; la página de cada día, con lo que trae ese número
     descripcion = L["lema"] if es_portada else descripcion_dia(dia, piezas)
     return cabeza(titulo, prof, descripcion, ruta, portada=es_portada) + f"""<body class="pag-portada">
@@ -2050,7 +2072,7 @@ def pagina_portada(prof, ruta, eds, piezas, breves, fecha, cuenta, es_portada, a
 {franja_reserva(dia)}
 {franja_editorial(prof, dia)}
 {franja_reportaje(prof, rep) if arriba else ""}
-{cuerpo_portada(prof, piezas, breves, es_portada, bloque_vineta(prof, eds, fecha) + bloque_semana_video(prof, eds, fecha) + tras_la_vineta(prof, None if arriba else rep), op)}
+{cuerpo_portada(prof, piezas, breves, es_portada, bloque_vineta(prof, eds, fecha) + bloque_semana_video(prof, eds, fecha) + tras_la_vineta(prof, None if arriba else rep, op))}
 </main>
 {pie(prof, eds, None if es_portada else fecha)}
 {SCRIPT_TEMA}
