@@ -54,6 +54,13 @@ días flojos («sí»). En los 18 números del 28-10 al 14-11-2026, dos bajaron 
 - En los planes B, «Hace un año» por adelantado se pone sin revisar su dibujo (no hay revisor a esa hora).
 - Un «Hace un año» escrito siete días antes dice cómo están las cosas ese día, no el de su publicación.
 
+- **Las claves provisionales no se publican** (19-11-2026): mientras se prepara la reserva, sus archivos de trabajo
+  (`2099-01-NN`, `2099-02-NN`, `2099-03-NN`) están en `ediciones/`, `biblioteca/` y las demás carpetas del número, y
+  una publicación a mano en ese rato los sacaba en la web como un número de 2099 (pasó el 16-11 con
+  `multimedia/2099-01.html`, que siguió publicada, y el 19-11, deshecho al momento). `generar.py` no carga ningún
+  nombre que empiece por `CLAVE_PROVISIONAL` («2099-»). Probado en una copia con `ediciones/2099-01-07.json`: 22 días,
+  como sin él, y ninguna página de 2099.
+
 ## Validación
 
 En una copia del diario con los datos del 15-11-2026, sin IA: el número del 14-11 (dos piezas) pasó a tres con una de

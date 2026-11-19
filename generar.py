@@ -21,6 +21,7 @@ from zoneinfo import ZoneInfo
 import vineta
 
 RAIZ = pathlib.Path(__file__).resolve().parent
+CLAVE_PROVISIONAL = "2099-"   # las fechas de trabajo de la reserva (scripts/reserva.py y compañía): nunca son un número
 SITIO = RAIZ / "sitio"
 NOMBRE = "Diario de IA Educativa"     # en castellano; cada idioma lleva el suyo en IDIOMAS
 DIAS_PORTADA = 7        # los breves y el reportaje de la portada, de esta última semana
@@ -527,7 +528,10 @@ def boton_ampliar(contenido, desc):
 
 def cargar():
     eds = []
-    nombres = sorted({f.name for c in ("ediciones", "biblioteca", "repositorio") for f in (RAIZ / c).glob("*.json")})
+    # Las claves provisionales de la reserva (2099-01-NN, 2099-02-NN, 2099-03-NN) dejan sus archivos de trabajo en
+    # estas carpetas mientras se preparan: nunca son un número, y una publicación a mano en ese rato los sacaba en la web
+    nombres = sorted({f.name for c in ("ediciones", "biblioteca", "repositorio") for f in (RAIZ / c).glob("*.json")
+                      if not f.name.startswith(CLAVE_PROVISIONAL)})
     for nombre in nombres:
         f = RAIZ / "ediciones" / nombre
         d = json.loads(con_traduccion("ediciones", nombre).read_text()) if f.exists() else {}
