@@ -117,6 +117,9 @@ para los días sin noticias) están en «Cómo se hace el diario», `docs/como-s
   con su cantidad absoluta («el doble, de 10 a 20 centros»). Si la fuente da cifras distintas según
   la versión o el plan, se dice a cuál corresponde cada una. Del 20 % al 30 % son 10 puntos más, no
   un 10 % más. Mejor «uno de cada ocho docentes» que «el 12,5 %».
+- **Una norma, aplicada al caso**: si el artículo cuenta lo que exige una ley o una autoridad, dice también
+  qué supone para lo que trata (si hace falta permiso, un aviso o nada), y no deja que el lector saque la
+  conclusión (Juanjo, 19-11-2026, ante las condiciones de la AEPD en la pieza de Umami: «debes hacerlo tú»).
 - **Los datos que cambian se fechan** («a 1 de noviembre de 2026»); lo demás no lleva fecha.
 - **Toda hora, con su huso**, porque el diario se lee en todo el mundo (ADR 0091). La de España:
   «a las 10:30 (hora peninsular española, UTC+1)», UTC+2 en verano; «peninsular», porque Canarias va
