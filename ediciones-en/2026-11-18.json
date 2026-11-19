@@ -43,13 +43,18 @@
       "cuerpo": [
         "The Parliament of Galicia gave final approval on Tuesday 17 November 2026 to the Digital Education Law (Ley de educación digital), according to [Galicia Confidencial](https://www.galiciaconfidencial.com/noticia/6095050-parlamento-galego-aproba-definitivamente-lei-educacion-dixital-entre-criticas-do-psdeg-e-do-bng). The law regulates the use of phones, screens and artificial intelligence in schools. The Partido Popular de Galicia (PPdeG) voted in favour, Democracia Ourensana abstained, and the Bloque Nacionalista Galego (BNG) and the Partido dos Socialistas de Galicia (PSdeG) voted against.",
         "According to that report, the law limits the individual use of electronic devices depending on students’ age, up to the fifth year of primary school, and allows phones for educational purposes from the third year of ESO (compulsory secondary education, students aged 14 to 15). It also bans recording lessons without authorisation, whether in person or online, and extends teachers’ authority to the digital sphere.",
-        "The report says the law includes regulation of the use of AI in classrooms, but does not detail its rules; the paper has not been able to read the approved text, so the content of that section remains unconfirmed. The opposition criticised that only 4 of the PSdeG’s 158 amendments and 6 of the BNG’s 69 were accepted, and called for more consensus with the education community.",
-        "In the group, the news was shared as the first regional digital education law, with a chapter on AI. The “first” claim comes, in the report, from the regional education minister (conselleiro), Román Rodríguez, who maintains that Galicia is the first autonomous community to pass a specific law to regulate technology and AI in classrooms; the paper has not checked this against another source, nor whether there is a separate chapter on AI."
+        "The text that reached the plenary session, the [Education Committee’s report](https://www.parlamentodegalicia.es/sitios/web/BibliotecaBoletinsOficiais/B120458_2.pdf) published on 10 November in the Official Bulletin of the Parliament of Galicia, gives AI a title of its own, Title VI. State schools and their staff may only use AI systems authorised by the regional education department (Consellería), which will list them in a catalogue, and schools must explain to students and families in advance what they are used for and what data they process. The text allows AI to be used to personalise learning, prepare materials that teachers review before handing them out, mark multiple-choice tests with the grade validated by a teacher, and offer assistants that answer questions outside class hours. It bans using it to replace teachers or to make decisions about students without human supervision, as well as facial recognition, emotion analysis and profiling that could lead to discrimination. In practice, once the law comes into force, teachers in Galicia’s state schools will not be able to use any AI tool that is not in that catalogue.",
+        "The opposition criticised that only 4 of the PSdeG’s 158 amendments and 6 of the BNG’s 69 were accepted, and called for more consensus with the education community.",
+        "In the group, the news was shared as the first regional digital education law, with a chapter on AI. The “first” claim comes, in the report, from the regional education minister (conselleiro), Román Rodríguez, who maintains that Galicia is the first autonomous community to pass a specific law to regulate technology and AI in classrooms; the paper has not checked this against another source."
       ],
       "fuentes": [
         {
           "titulo": "Galicia aproba a lei que regulará os móbiles, as pantallas e a intelixencia artificial nas aulas (Galicia Confidencial) (in Galician)",
           "url": "https://www.galiciaconfidencial.com/noticia/6095050-parlamento-galego-aproba-definitivamente-lei-educacion-dixital-entre-criticas-do-psdeg-e-do-bng"
+        },
+        {
+          "titulo": "Ditame da Comisión 4ª, Educación e Cultura, sobre o Proxecto de lei de educación dixital de Galicia (BOPG n.º 458, fascículo 2) (in Galician)",
+          "url": "https://www.parlamentodegalicia.es/sitios/web/BibliotecaBoletinsOficiais/B120458_2.pdf"
         }
       ],
       "mensaje": {
@@ -58,7 +63,9 @@
       },
       "comprobado": "Checked the Galicia Confidencial report: date (17-11-2026), votes, age limits, recordings and amendments. AI appears as regulation and “related provisions”, with no rules or chapter of its own described. The claim of “first autonomous community” is the conselleiro’s, quoted in the report (the draft said the report did not include it: corrected); not checked against another source. The approved text has not been located. Message 54496 matches the topic. The paper’s search tool: not published before.",
       "ilustracion": null,
-      "ilustracion_alt": "Diagram: a parliament building leads to a law, from which come a phone crossed out in red and a video camera. Labels: Parliament, Digital law, Phones, No recording."
+      "ilustracion_alt": "Diagram: a parliament building leads to a law, from which come a phone crossed out in red and a video camera. Labels: Parliament, Digital law, Phones, No recording.",
+      "correccion": "Update on 19 November 2026: added what the text that reached the plenary session says about AI, published in the Official Bulletin of the Parliament of Galicia; an earlier version described it as unconfirmed.",
+      "corregido": "2026-11-19"
     },
     {
       "id": "educamadrid-agente-ia",

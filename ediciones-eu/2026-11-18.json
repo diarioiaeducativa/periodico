@@ -43,13 +43,18 @@
       "cuerpo": [
         "Galiziako Parlamentuak behin betiko onartu zuen 2026ko azaroaren 17an, asteartea, Hezkuntza digitalaren legea, [Galicia Confidencial](https://www.galiciaconfidencial.com/noticia/6095050-parlamento-galego-aproba-definitivamente-lei-educacion-dixital-entre-criticas-do-psdeg-e-do-bng)-ek jakinarazi duenez. Arauak ikastetxeetan mugikorren, pantailen eta adimen artifizialaren erabilera arautzen du. Aldeko botoa eman zuen Galiziako Alderdi Popularrak (PPdeG), abstenitu egin zen Democracia Ourensana eta aurka bozkatu zuten Galiziako Blokeak (BNG) eta Galiziako Alderdi Sozialistak (PSdeG).",
         "Kronika horren arabera, legeak gailu elektronikoen erabilera indibiduala mugatzen du ikasleen adinaren arabera, Lehen Hezkuntzako 5. mailara arte, eta mugikorrak helburu pedagogikoetarako onartzen ditu DBHko 3. mailatik aurrera. Halaber, debekatzen du baimenik gabe klaseak grabatzea, aurrez aurrekoak zein linekoak, eta irakasleen autoritatea eremu digitalera hedatzen du.",
-        "Kronikak adierazten du legeak ikasgeletan AAren erabileraren araudia barne hartzen duela, baina ez ditu bere arauak zehazten; egunkari honek ez du onartutako testua irakurri ahal izan, beraz atal horren edukia baieztatu gabe geratzen da. Oposizioak kritikatu zuen PSdeGren 158 zuzenketatik 4 eta BNGren 69 zuzenketatik 6 baino ez onartzea, eta hezkuntza-komunitatearekin adostasun handiagoa eskatu zuen.",
-        "Taldean albistea Hezkuntza digitalari buruzko autonomia-erkidegoko lehen lege gisa partekatu zen, AAri buruzko kapitulu batekin. «Lehen» hori kronikan Hezkuntza kontseilaria den Román Rodríguezek dio, eta berak defendatzen du Galizia dela teknologia eta AA ikasgeletan arautzeko lege espezifiko bat onartzen duen lehen autonomia-erkidegoa; egunkari honek ez du beste iturri batekin kontrastatu, ezta AAri buruzko kapitulu propio bat dagoenik ere."
+        "Osoko bilkurara iritsi zen testuak, azaroaren 10ean Galiziako Parlamentuaren Aldizkari Ofizialean argitaratutako [Hezkuntza Batzordearen irizpenak](https://www.parlamentodegalicia.es/sitios/web/BibliotecaBoletinsOficiais/B120458_2.pdf), titulu propio bat eskaintzen dio AAri, VI.a. Ikastetxe publikoek eta haien langileek Hezkuntza Sailak baimendutako AA sistemak baino ezin izango dituzte erabili, eta sailak katalogo batean bilduko ditu; ikastetxeek aldez aurretik azaldu beharko diete ikasleei eta familiei zertarako erabiltzen dituzten eta zer datu tratatzen dituzten. Testuak baimentzen du AA erabiltzea ikaskuntza pertsonalizatzeko, irakasleek ikasleei eman aurretik berrikusten dituzten materialak prestatzeko, test motako probak zuzentzeko irakasle batek nota baliozkotuta, eta klase-ordutegitik kanpo zalantzak argitzen dituzten laguntzaileak eskaintzeko. Debekatzen du irakasleak ordeztea edo ikasleei buruz giza gainbegiratzerik gabe erabakitzea, aurpegi-ezagutza, emozioen analisia eta diskriminazioa eragin dezaketen profilak egitea. Praktikan, legea indarrean sartzen denean, Galiziako ikastetxe publikoetako irakasleek ezin izango dute katalogo horretan ez dagoen AA tresnarik erabili.",
+        "Oposizioak kritikatu zuen PSdeGren 158 zuzenketatik 4 eta BNGren 69 zuzenketatik 6 baino ez onartzea, eta hezkuntza-komunitatearekin adostasun handiagoa eskatu zuen.",
+        "Taldean albistea Hezkuntza digitalari buruzko autonomia-erkidegoko lehen lege gisa partekatu zen, AAri buruzko kapitulu batekin. «Lehen» hori kronikan Hezkuntza kontseilaria den Román Rodríguezek dio, eta berak defendatzen du Galizia dela teknologia eta AA ikasgeletan arautzeko lege espezifiko bat onartzen duen lehen autonomia-erkidegoa; egunkari honek ez du beste iturri batekin kontrastatu."
       ],
       "fuentes": [
         {
           "titulo": "Galicia aproba a lei que regulará os móbiles, as pantallas e a intelixencia artificial nas aulas (Galicia Confidencial) (galegoz)",
           "url": "https://www.galiciaconfidencial.com/noticia/6095050-parlamento-galego-aproba-definitivamente-lei-educacion-dixital-entre-criticas-do-psdeg-e-do-bng"
+        },
+        {
+          "titulo": "Ditame da Comisión 4ª, Educación e Cultura, sobre o Proxecto de lei de educación dixital de Galicia (BOPG n.º 458, fascículo 2) (galegoz)",
+          "url": "https://www.parlamentodegalicia.es/sitios/web/BibliotecaBoletinsOficiais/B120458_2.pdf"
         }
       ],
       "mensaje": {
@@ -58,7 +63,9 @@
       },
       "comprobado": "Revisada la crónica de Galicia Confidencial: fecha (17-11-2026), votos, límites por edad, grabaciones y enmiendas. La IA aparece como regulación y «disposiciones relacionadas», sin reglas ni capítulo propio descrito. La afirmación de «primera comunidad autónoma» es del conselleiro, citado en la crónica (el borrador decía que la crónica no la recogía: corregido); no contrastada con otra fuente. No se ha localizado el texto aprobado. Mensaje 54496 corresponde al tema. Buscador del diario: no publicado antes.",
       "ilustracion": null,
-      "ilustracion_alt": "Eskema bat: parlamentu-eraikin batek lege batera darama, eta handik gorriz marratutako mugikor bat eta bideo-kamera bat ateratzen dira. Errotuluak: Legebiltzarra, Lege digitala, Mugikorrak, Grabatu gabe."
+      "ilustracion_alt": "Eskema bat: parlamentu-eraikin batek lege batera darama, eta handik gorriz marratutako mugikor bat eta bideo-kamera bat ateratzen dira. Errotuluak: Legebiltzarra, Lege digitala, Mugikorrak, Grabatu gabe.",
+      "correccion": "2026ko azaroaren 19ko eguneratzea: osoko bilkurara iritsi zen testuak AAri buruz arautzen duena gehitu da, Galiziako Parlamentuaren Aldizkari Ofizialean argitaratua; aurreko bertsio batek baieztatu gabekotzat jotzen zuen.",
+      "corregido": "2026-11-19"
     },
     {
       "id": "educamadrid-agente-ia",

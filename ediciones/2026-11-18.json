@@ -43,22 +43,29 @@
       "cuerpo": [
         "El Parlamento de Galicia aprobó definitivamente el martes 17 de noviembre de 2026 la Ley de educación digital, según informa [Galicia Confidencial](https://www.galiciaconfidencial.com/noticia/6095050-parlamento-galego-aproba-definitivamente-lei-educacion-dixital-entre-criticas-do-psdeg-e-do-bng). La norma regula el uso de móviles, pantallas e inteligencia artificial en los centros. Votaron a favor el Partido Popular de Galicia (PPdeG), se abstuvo Democracia Ourensana y votaron en contra el Bloque Nacionalista Galego (BNG) y el Partido dos Socialistas de Galicia (PSdeG).",
         "Según esa crónica, la ley limita el uso individual de dispositivos electrónicos según la edad del alumnado, hasta 5.º de Primaria, y permite los móviles con fines pedagógicos desde 3.º de la ESO. También prohíbe grabar clases sin autorización, presenciales o en línea, y extiende la autoridad del profesorado al ámbito digital.",
-        "La crónica indica que la ley incluye la regulación del uso de la IA en las aulas, pero no detalla sus reglas; este diario no ha podido leer el texto aprobado, así que el contenido de ese apartado queda sin confirmar. La oposición criticó que solo se aceptaran 4 de las 158 enmiendas del PSdeG y 6 de las 69 del BNG, y reclamó más consenso con la comunidad educativa.",
-        "En el grupo se compartió la noticia como la primera ley autonómica de educación digital, con un capítulo sobre IA. Lo de «primera» lo dice en la crónica el conselleiro de Educación, Román Rodríguez, que sostiene que Galicia es la primera comunidad autónoma en aprobar una ley específica para regular la tecnología y la IA en las aulas; este diario no lo ha contrastado con otra fuente, y tampoco que haya un capítulo propio sobre IA."
+        "El texto que llegó al pleno, el [dictamen de la Comisión de Educación](https://www.parlamentodegalicia.es/sitios/web/BibliotecaBoletinsOficiais/B120458_2.pdf) publicado el 10 de noviembre en el Boletín Oficial del Parlamento de Galicia, dedica a la IA un título propio, el VI. Los centros públicos y su personal solo podrán usar sistemas de IA autorizados por la Consellería de Educación, que los recogerá en un catálogo, y los centros tendrán que explicar antes al alumnado y a las familias para qué los usan y qué datos tratan. El texto permite usarla para personalizar el aprendizaje, preparar materiales que el profesorado revisa antes de entregarlos, corregir pruebas tipo test con la nota validada por un docente y ofrecer asistentes que resuelvan dudas fuera del horario de clase. Prohíbe que sustituya al profesorado o que decida sobre el alumnado sin supervisión humana, el reconocimiento facial, el análisis de emociones y la elaboración de perfiles que puedan discriminar. En la práctica, cuando la ley entre en vigor, el profesorado de los centros públicos gallegos no podrá usar ninguna herramienta de IA que no figure en ese catálogo.",
+        "La oposición criticó que solo se aceptaran 4 de las 158 enmiendas del PSdeG y 6 de las 69 del BNG, y reclamó más consenso con la comunidad educativa.",
+        "En el grupo se compartió la noticia como la primera ley autonómica de educación digital, con un capítulo sobre IA. Lo de «primera» lo dice en la crónica el conselleiro de Educación, Román Rodríguez, que sostiene que Galicia es la primera comunidad autónoma en aprobar una ley específica para regular la tecnología y la IA en las aulas; este diario no lo ha contrastado con otra fuente."
       ],
       "fuentes": [
         {
           "titulo": "Galicia aproba a lei que regulará os móbiles, as pantallas e a intelixencia artificial nas aulas (Galicia Confidencial)",
           "url": "https://www.galiciaconfidencial.com/noticia/6095050-parlamento-galego-aproba-definitivamente-lei-educacion-dixital-entre-criticas-do-psdeg-e-do-bng"
+        },
+        {
+          "titulo": "Ditame da Comisión 4ª, Educación e Cultura, sobre o Proxecto de lei de educación dixital de Galicia (BOPG n.º 458, fascículo 2)",
+          "url": "https://www.parlamentodegalicia.es/sitios/web/BibliotecaBoletinsOficiais/B120458_2.pdf"
         }
       ],
       "mensaje": {
         "grupo": "chatgpt",
         "id": 54496
       },
-      "comprobado": "Revisada la crónica de Galicia Confidencial: fecha (17-11-2026), votos, límites por edad, grabaciones y enmiendas. La IA aparece como regulación y «disposiciones relacionadas», sin reglas ni capítulo propio descrito. La afirmación de «primera comunidad autónoma» es del conselleiro, citado en la crónica (el borrador decía que la crónica no la recogía: corregido); no contrastada con otra fuente. No se ha localizado el texto aprobado. Mensaje 54496 corresponde al tema. Buscador del diario: no publicado antes.",
+      "comprobado": "Revisada la crónica de Galicia Confidencial: fecha (17-11-2026), votos, límites por edad, grabaciones y enmiendas. La IA aparece como regulación y «disposiciones relacionadas», sin reglas ni capítulo propio descrito. La afirmación de «primera comunidad autónoma» es del conselleiro, citado en la crónica (el borrador decía que la crónica no la recogía: corregido); no contrastada con otra fuente. No se ha localizado el texto aprobado. Mensaje 54496 corresponde al tema. Buscador del diario: no publicado antes. Actualizado el 19-11-2026 con el Ditame de la Comisión 4ª (BOPG n.º 458, fascículo 2, 10-11-2026), leído entero: Título VI, artículos 56 a 62 (58.1 solo sistemas autorizados por la Consellería; 59 usos permitidos; 60 prohibidos). El servidor del Parlamento bloquea la descarga automática; se leyó el PDF descargado desde Chrome.",
       "ilustracion": null,
-      "ilustracion_alt": "Esquema: un edificio de parlamento lleva a una ley, de la que salen un móvil tachado en rojo y una cámara de vídeo. Rótulos: Parlamento, Ley digital, Móviles, Sin grabar."
+      "ilustracion_alt": "Esquema: un edificio de parlamento lleva a una ley, de la que salen un móvil tachado en rojo y una cámara de vídeo. Rótulos: Parlamento, Ley digital, Móviles, Sin grabar.",
+      "correccion": "Actualización del 19 de noviembre de 2026: se añade lo que regula sobre la IA el texto que llegó al pleno, publicado en el Boletín Oficial del Parlamento de Galicia; una versión anterior lo daba por no confirmado.",
+      "corregido": "2026-11-19"
     },
     {
       "id": "educamadrid-agente-ia",

@@ -43,13 +43,18 @@
       "cuerpo": [
         "El Parlament de Galícia va aprovar definitivament el dimarts 17 de novembre de 2026 la Llei d'educació digital, segons informa [Galicia Confidencial](https://www.galiciaconfidencial.com/noticia/6095050-parlamento-galego-aproba-definitivamente-lei-educacion-dixital-entre-criticas-do-psdeg-e-do-bng). La norma regula l'ús de mòbils, pantalles i intel·ligència artificial als centres. Hi van votar a favor el Partido Popular de Galicia (PPdeG), es va abstenir Democracia Ourensana i hi van votar en contra el Bloque Nacionalista Galego (BNG) i el Partido dos Socialistas de Galicia (PSdeG).",
         "Segons aquesta crònica, la llei limita l'ús individual de dispositius electrònics segons l'edat de l'alumnat, fins a 5è de primària, i permet els mòbils amb finalitats pedagògiques des de 3r d'ESO. També prohibeix gravar classes sense autorització, presencials o en línia, i estén l'autoritat del professorat a l'àmbit digital.",
-        "La crònica indica que la llei inclou la regulació de l'ús de la IA a les aules, però no en detalla les regles; aquest diari no ha pogut llegir el text aprovat, de manera que el contingut d'aquest apartat queda sense confirmar. L'oposició va criticar que només s'acceptessin 4 de les 158 esmenes del PSdeG i 6 de les 69 del BNG, i va reclamar més consens amb la comunitat educativa.",
-        "Al grup es va compartir la notícia com la primera llei autonòmica d'educació digital, amb un capítol sobre IA. Allò de «primera» ho diu a la crònica el conseller d'Educació, Román Rodríguez, que sosté que Galícia és la primera comunitat autònoma a aprovar una llei específica per regular la tecnologia i la IA a les aules; aquest diari no ho ha contrastat amb una altra font, i tampoc que hi hagi un capítol propi sobre IA."
+        "El text que va arribar al ple, el [dictamen de la Comissió d'Educació](https://www.parlamentodegalicia.es/sitios/web/BibliotecaBoletinsOficiais/B120458_2.pdf) publicat el 10 de novembre al Butlletí Oficial del Parlament de Galícia, dedica a la IA un títol propi, el VI. Els centres públics i el seu personal només podran fer servir sistemes d'IA autoritzats per la Conselleria d'Educació, que els recollirà en un catàleg, i els centres hauran d'explicar abans a l'alumnat i a les famílies per a què els fan servir i quines dades tracten. El text permet fer-la servir per personalitzar l'aprenentatge, preparar materials que el professorat revisa abans de lliurar-los, corregir proves tipus test amb la nota validada per un docent i oferir assistents que resolguin dubtes fora de l'horari de classe. Prohibeix que substitueixi el professorat o que decideixi sobre l'alumnat sense supervisió humana, el reconeixement facial, l'anàlisi d'emocions i l'elaboració de perfils que puguin discriminar. A la pràctica, quan la llei entri en vigor, el professorat dels centres públics gallecs no podrà fer servir cap eina d'IA que no figuri en aquest catàleg.",
+        "L'oposició va criticar que només s'acceptessin 4 de les 158 esmenes del PSdeG i 6 de les 69 del BNG, i va reclamar més consens amb la comunitat educativa.",
+        "Al grup es va compartir la notícia com la primera llei autonòmica d'educació digital, amb un capítol sobre IA. Allò de «primera» ho diu a la crònica el conseller d'Educació, Román Rodríguez, que sosté que Galícia és la primera comunitat autònoma a aprovar una llei específica per regular la tecnologia i la IA a les aules; aquest diari no ho ha contrastat amb una altra font."
       ],
       "fuentes": [
         {
           "titulo": "Galicia aproba a lei que regulará os móbiles, as pantallas e a intelixencia artificial nas aulas (Galicia Confidencial) (en gallec)",
           "url": "https://www.galiciaconfidencial.com/noticia/6095050-parlamento-galego-aproba-definitivamente-lei-educacion-dixital-entre-criticas-do-psdeg-e-do-bng"
+        },
+        {
+          "titulo": "Ditame da Comisión 4ª, Educación e Cultura, sobre o Proxecto de lei de educación dixital de Galicia (BOPG n.º 458, fascículo 2) (en gallec)",
+          "url": "https://www.parlamentodegalicia.es/sitios/web/BibliotecaBoletinsOficiais/B120458_2.pdf"
         }
       ],
       "mensaje": {
@@ -58,7 +63,9 @@
       },
       "comprobado": "Revisada la crónica de Galicia Confidencial: fecha (17-11-2026), votos, límites por edad, grabaciones y enmiendas. La IA aparece como regulación y «disposiciones relacionadas», sin reglas ni capítulo propio descrito. La afirmación de «primera comunidad autónoma» es del conselleiro, citado en la crónica (el borrador decía que la crónica no la recogía: corregido); no contrastada con otra fuente. No se ha localizado el texto aprobado. Mensaje 54496 corresponde al tema. Buscador del diario: no publicado antes.",
       "ilustracion": null,
-      "ilustracion_alt": "Esquema: un edifici de parlament porta a una llei, de la qual surten un mòbil ratllat en vermell i una càmera de vídeo. Rètols: Parlament, Llei digital, Mòbils, Sense gravar."
+      "ilustracion_alt": "Esquema: un edifici de parlament porta a una llei, de la qual surten un mòbil ratllat en vermell i una càmera de vídeo. Rètols: Parlament, Llei digital, Mòbils, Sense gravar.",
+      "correccion": "Actualització del 19 de novembre de 2026: s'hi afegeix el que regula sobre la IA el text que va arribar al ple, publicat al Butlletí Oficial del Parlament de Galícia; una versió anterior ho donava per no confirmat.",
+      "corregido": "2026-11-19"
     },
     {
       "id": "educamadrid-agente-ia",
