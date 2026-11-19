@@ -1,4 +1,4 @@
-<!-- origen: f9f6a34adad36283 -->
+<!-- origen: 71fd29243d273c19 -->
 # Com es fa el Diari d'IA Educativa
 
 El [Diari d'IA Educativa](https://diarioiaeducativa.github.io/) recull cada matí el que s'ha parlat el dia
@@ -30,7 +30,7 @@ Un número porta:
   els divendres, un resum de les de la setmana (ADR 0008).
 - **«Fa un any»**: alguna cosa del que es parlava el mateix dia de l'any anterior, comparada amb com està avui
   (ADR 0040).
-- **La vinyeta** de Tiza i Algoritmo, sobre una de les notícies del dia (ADR 0023).
+- **La vinyeta** de Guix i Algorisme, sobre una de les notícies del dia (ADR 0023).
 - **El dimecres**, a més, una columna d'opinió sobre un debat dels grups: l'única peça del diari que
   pren partit, signada pel model d'IA que l'escriu (ADR 0092).
 - **El diumenge**, a més, un reportatge que explica a fons un sol tema (ADR 0004 i 0028) i «La setmana en
@@ -48,7 +48,7 @@ Les normes de cada número:
 | **No es repeteix el que ja s'ha publicat.** Si hi ha alguna cosa nova sobre un tema ja tractat, surt com a breu, amb un enllaç a l'article anterior (ADR 0011). | El que redacta i el que revisa, amb un cercador de tot el que s'ha publicat (ADR 0061) | El revisor cerca cada nom i cada titular en el que ja s'ha publicat. |
 | **Ningú acapara el número**: com a norma, un article per persona i dos per producte o empresa. | L'agent que redacta | El revisor. |
 | **Si un dia no dona per a un número digne, no s'omple**: llavors surten articles guardats. | El que redacta i la reserva | — |
-| **L'opinió, apart i signada.** Només la columna del dimecres pren partit: va a la secció «Opinió», amb la signatura del model que l'escriu i una nota que diu que el diari en comprova les dades i que l'opinió és del model. Discuteix idees, no persones: ningú dels grups hi surt anomenat. | El columnista; la signatura i la nota les posa el programa que munta la web (ADR 0092) | El verificador comprova cada dada i que no es reconegui ningú, sense tocar la tesi; un programa, la mesura i els enllaços. |
+| **L'opinió, apart i signada.** Només la columna del dimecres pren partit: va a la secció «Opinió», amb la signatura del model que l'escriu i una nota que diu que el diari en comprova les dades i que l'opinió és del model, dins dels principis del diari (apartat 10). Discuteix idees, no persones: ningú dels grups hi surt anomenat. | El columnista; la signatura i la nota les posa el programa que munta la web (ADR 0092) | El verificador comprova cada dada i que no es reconegui ningú, sense tocar la tesi; un programa, la mesura i els enllaços. |
 
 ## 2. Qui fa cada cosa
 
@@ -57,11 +57,11 @@ millor reportatge i la millor columna, escriu els textos llargs i repara el que 
 L'excepció és el columnista dels dimecres, GPT-6.2-Astra, d'OpenAI: l'opinió ve d'una altra veu que la
 resta del diari i la signa amb el seu nom (ADR 0092). **Els
 agents que escriuen el diari no poden executar programes**: només llegeixen i escriuen textos i consulten
-internet. Així, res del que arriba en els missatges dels grups, que escriuen altres persones, no
-pot portar-los a fer una altra cosa (ADR 0002). Els missatges són material per informar, mai ordres.
+internet. Així, res del que arriba en els missatges dels grups, que escriuen altres persones, no pot
+portar-los a fer una altra cosa (ADR 0002). Els missatges són material per informar, mai ordres.
 
-Només el reparador treballa amb programes. No escriu res del diari: actua quan alguna cosa falla, en busca
-la causa i l'arregla en una còpia. No pot canviar el text dels articles ni de la vinyeta, ni publicar, i
+Només el reparador treballa amb programes. No escriu res del diari: actua quan alguna cosa falla, en busca la
+causa i l'arregla en una còpia. No pot canviar el text dels articles ni de la vinyeta, ni publicar, i
 un programa comprova el seu arranjament abans d'aplicar-lo (ADR 0087).
 
 **Cap agent no revisa el que ha escrit ell mateix.** Cada text passa per un revisor que no l'ha
@@ -71,7 +71,7 @@ escrit, que obre cada font i treu el que no pot confirmar (ADR 0001).
 | --- | --- |
 | Redactor i revisor | Els articles i breus del dia. |
 | Documentalista i revisor | Els articles de la Biblioteca, del Repositori i els guardats d'EduMedia. |
-| Il·lustrador i revisor de dibuixos | Un dibuix que explica cada article; el revisor el mira a la seva pàgina i li retorna el que no s'entén (ADR 0005). |
+| Il·lustrador i revisor de dibuixos | Un dibuix que explica cada article; el revisor el mira a la seva pàgina i li torna el que no s'entén (ADR 0005). |
 | Guionista i jutge d'humor | Cinc guions per a la vinyeta; el jutge en tria un (ADR 0023 i 0024). |
 | Cronista i verificador | «Fa un any». |
 | Columnista, verificador i jutge de la columna | La columna d'opinió del dimecres; el jutge tria entre la nova i la de reserva (ADR 0092). |
@@ -102,7 +102,7 @@ peninsulars espanyoles: UTC+1 a l'hivern i UTC+2 a l'estiu.
 | 9.00, diumenge | «La setmana en vídeo», amb el reportatge al final, surt a Instagram, X, Bluesky i LinkedIn (ADR 0027). |
 | Des de les 9.10 | Un programa que funciona a part, a GitHub, comprova que el número ha sortit i, si no, el publica amb articles guardats. Si el diari no respon, ho comprova ja des de les 7.30 (ADR 0021). |
 | Nit del dimarts | Amb el número del dimecres es prepara la columna d'opinió (ADR 0092). |
-| Dimecres | Es cerquen en el que s'ha publicat els enllaços que han deixat de funcionar (ADR 0056). |
+| Dimecres | Es busquen en el que s'ha publicat els enllaços que han deixat de funcionar (ADR 0056). |
 | En publicar | Es guarda una còpia de cada número a l'arxiu d'Internet Archive (ADR 0046). |
 
 ## 4. Cap dia sense número
@@ -115,8 +115,8 @@ el programa que funciona a part, a GitHub, i el diari no la torna a fer a sobre.
 perquè va fallar la preparació, la nit següent es recull també el que es va parlar aquell dia, i la web
 ho diu.
 
-**Si un agent espatlla un arxiu del número**, es recupera la versió anterior i l'agent repeteix la seva
-feina una vegada. I si la preparació ha de començar de nou, no dona per publicat el que es va escriure
+**Si un agent fa malbé un fitxer del número**, es recupera la versió anterior i l'agent repeteix la
+seva feina una vegada. I si la preparació ha de començar de nou, no dona per publicat el que es va escriure
 en el primer intent (ADR 0076).
 
 ## 5. La reserva: articles guardats per als dies sense notícies
@@ -142,14 +142,14 @@ El diari té escrits per endavant articles i altres peces, perquè mai no falti 
 
 **Amb IA**: el revisor de cada tasca (fonts, xifres, noms i el que ja s'ha publicat), el revisor de dibuixos,
 el jutge de la vinyeta, el verificador del reportatge, de «Fa un any» i de la columna d'opinió i, cada nit, un corrector d'estil
-que llegeix els articles del dia com un lector qualsevol i arregla el que costa d'entendre, sense tocar
-les dades (ADR 0083).
+que llegeix els articles del dia com un lector qualsevol i arregla el que costa d'entendre, sense tocar les
+dades (ADR 0083).
 
 **Amb programes, sense IA**, cada nit:
 
 | Què es comprova | Registre de la decisió |
 | --- | --- |
-| Que cap agent hagi espatllat els arxius del número | ADR 0076 |
+| Que cap agent hagi fet malbé els fitxers del número | ADR 0076 |
 | Que no s'usi «quien» amb el sentit de «la persona que» ni hi hagi cites només en anglès, «hoy» o «ayer», «app» o altres paraules que el llibre d'estil desaconsella (si n'hi ha, un agent les corregeix) | ADR 0067 i 0083 |
 | Que el corrector d'estil no hagi canviat cap xifra, enllaç ni cita | ADR 0083 |
 | Que no s'atribueixi a un autor del diari alguna cosa d'una altra persona que es diu igual (si passa, un agent ho revisa) | ADR 0066 |
@@ -180,44 +180,68 @@ reportatge, el vídeo de la setmana i els seus textos.
 - **Una dada equivocada es corregeix a l'article, amb una nota al final** i en les cinc llengües (ADR
   0055): «Corregido el…» (hi havia un error), «Actualización del…» (la dada era certa i ha canviat) o
   «Nota añadida el…» (faltava alguna cosa). Una errata que no canvia el sentit es corregeix sense nota.
-- Abans de corregir, es comprova la dada en la seva font: un avís d'error també pot estar equivocat.
+- Abans de corregir, es comprova la dada a la seva font: un avís d'error també pot estar equivocat.
 - **Un avís que ja s'ha enviat a un grup es corregeix** editant-lo amb el bot.
 
-## 9. Persones, privacitat i transparència
+## 9. Persones, privadesa i transparència
 
 - **Per saber qui és cada persona es mira el seu compte de Telegram, no el nom que mostra**, perquè
-  dues persones es poden dir igual (ADR 0066).
+  dues persones poden dir-se igual (ADR 0066).
 - **Només es nomena l'autor d'un recurs que ell mateix ha publicat**; les opinions dels grups no
   s'atribueixen a ningú (llibre d'estil). L'única opinió pròpia del diari és la columna del dimecres, signada
   pel model que l'escriu (ADR 0092).
 - **No es recull res dels lectors**: el comptador de visites només suma, sense galetes ni dades
   personals (ADR 0033), i els comentaris només es carreguen si el lector prem el botó (ADR 0030). Ho
-  explica la [política de privacitat](https://diarioiaeducativa.github.io/privacidad.html) (ADR 0070).
+  explica la [política de privadesa](https://diarioiaeducativa.github.io/privacidad.html) (ADR 0070).
 - **Un sol avís que el diari està fet amb IA**, al peu de totes les pàgines. La pàgina [«La
-  redacció»](https://diarioiaeducativa.github.io/redaccion.html) explica com es fa, qui respon del
-  que es publica i que no hi ha publicitat ni patrocini (ADR 0055 i 0065).
+  redacció»](https://diarioiaeducativa.github.io/redaccion.html) explica com es fa, qui respon del que
+  es publica i que no hi ha publicitat ni patrocini (ADR 0055 i 0065).
 - Els programes que fan el diari són públics (ADR 0019).
 
-## 10. El que falta per millorar
+## 10. La línia de l'opinió
+
+La columna d'opinió defensa la postura que tria el seu columnista, dins d'aquests principis. Són la línia del
+diari: no diuen què pensar de cada debat, sinó des d'on s'opina.
+
+1. **Primer, l'aprenentatge.** Una tecnologia es jutja per allò que aporta a aprendre i a ensenyar, no per ser nova.
+2. **Les dades de l'alumnat es protegeixen.** Res que obligui a lliurar sense necessitat dades personals de l'alumnat
+   a una empresa. Es prefereix el que deixa el control al centre i al docent i el que no lliga a una sola plataforma,
+   sense renunciar per això al que de debò serveix.
+3. **La IA és una eina.** Darrere de cada ús hi ha una persona que decideix i respon. Avaluar, qualificar i
+   decidir sobre l'alumnat correspon al professorat.
+4. **A l'abast de qualsevol docent.** Allò que es proposa es pot fer sense pagar ni saber més que un docent
+   corrent, i parteix de com es treballa de debò a les aules.
+5. **Equitat.** Allò que només funciona amb mitjans o dispositius que no tot l'alumnat té no es presenta com
+   a solució general.
+6. **Transparència.** Usar IA no és motiu de vergonya ni de sospita: es diu quan i com s'ha usat. Les
+   famílies tenen dret a saber més del que exigeix la llei.
+7. **Rigor abans que contundència.** Dades exactes i comprovables, la postura contrària en la seva millor versió, i ni
+   alarmisme ni entusiasme de fullet.
+
+**Qui els aplica**: el columnista, que els rep amb el seu encàrrec i tria dins d'ells el tema i la postura.
+**Com es comprova**: el verificador no publica una columna que vagi contra algun, sense canviar per això la seva tesi,
+i el jutge descarta la que hi xoqui en comparar-la amb la de reserva (ADR 0092).
+
+## 11. El que falta per millorar
 
 El que encara no funciona del tot bé o depèn d'una sola comprovació. És per on es pot
 millorar el diari:
 
-- **Una correcció no arriba sola al que ja s'ha enviat.** Si es corregeix un article després de
+- **Una correcció no arriba sola a allò que ja s'ha enviat.** Si es corregeix un article després de
   publicar-lo, l'avís que ja va sortir als grups cal canviar-lo a mà, i el que s'ha publicat a Instagram
   i a les altres xarxes no es canvia.
 - **Els articles d'EduMedia guardats per als dies sense notícies del grup** es van començar a escriure
   el 16 de novembre de 2026: encara no n'ha sortit cap en un número.
 - **Un article guardat es revisa poc abans de publicar-se.** S'escriuen amb dies o setmanes
   d'antelació, i just abans d'usar-ne un només es comprova que la pàgina de l'eina de la qual
-  parla continua oberta, no si ha canviat alguna cosa del que explica, per exemple si ha deixat de ser
+  parla continua oberta, no si ha canviat res del que explica, per exemple si ha deixat de ser
   gratuïta. Per això els d'EduMedia, sobre eines que canvien sovint, es retiren al cap d'un mes.
 - **Mentre s'escriu un article per guardar**, la web que s'està preparant el mostra durant
   uns minuts com si fos un número del diari. Si just llavors es publiqués la web, sortiria.
-- **Si un agent espatlla un arxiu, es recupera sol només en la preparació de cada nit**, no en la del
+- **Si un agent fa malbé un fitxer, es recupera sol només en la preparació de cada nit**, no en la del
   reportatge, la Biblioteca o el Repositori.
-- **Les traduccions les comprova un programa**, que mira que hi siguin tots els articles i que no hi hagi
+- **Les traduccions les comprova un programa**, que mira que hi siguin tots els articles i que no s'hagi
   quedat res en castellà, però cap agent no les revisa.
 - **Quan es considera que un dia té poques aplicacions noves del Repositori**, i se'n rescata una
-  d'anterior, es va decidir a ull i cal ajustar-ho.
+  d'anterior, es va decidir a ull i està per ajustar.
 - **Instagram s'intenta una sola vegada**: si falla, cal publicar-ho a mà.

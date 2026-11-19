@@ -1,4 +1,4 @@
-<!-- origen: f9f6a34adad36283 -->
+<!-- origen: 71fd29243d273c19 -->
 # Hezkuntzako AA Egunkaria nola egiten den
 
 [Hezkuntzako AA Egunkariak](https://diarioiaeducativa.github.io/) goiz oro biltzen du aurreko egunean irakasleen
@@ -30,7 +30,7 @@ Zenbaki batek hauek ditu:
   asteko aplikazioen laburpen bat (ADR 0008).
 - **«Duela urtebete»**: urte bat lehenago egun berean hitz egiten zenaren zerbait, gaur dagoenarekin
   alderatuta (ADR 0040).
-- **Tiza eta Algoritmoren bineta**, eguneko albisteetako bati buruzkoa (ADR 0023).
+- **Klarion eta Algoritmoren bineta**, eguneko albisteetako bati buruzkoa (ADR 0023).
 - **Asteazkenetan**, gainera, taldeetako eztabaida bati buruzko iritzi-zutabe bat: egunkariko pieza bakarra, alderdi
   hartzen duena, eta idazten duen AA ereduak sinatua (ADR 0092).
 - **Igandeetan**, gainera, gai bakar bat sakon azaltzen duen erreportaje bat (ADR 0004 eta 0028) eta «Astea
@@ -48,7 +48,7 @@ Zenbaki bakoitzaren arauak:
 | **Argitaratutakoa ez da errepikatzen.** Lehen jorratutako gai bati buruz berririk badago, albiste labur gisa ateratzen da, aurreko artikulurako estekarekin (ADR 0011). | Idazten eta berrikusten dutenek, argitaratutako guztiaren bilatzaile batekin (ADR 0061) | Berrikusleak izen eta titular bakoitza argitaratutakoan bilatzen du. |
 | **Inork ez du zenbakia monopolizatzen**: arau gisa, pertsona bakoitzeko artikulu bat eta produktu edo enpresa bakoitzeko bi. | Idazten duen agenteak | Berrikusleak. |
 | **Egun batek ez badu zenbaki duin baterako ematen, ez da betetzen**: orduan gordetako artikuluak ateratzen dira. | Idazten duenak eta erreserbak | — |
-| **Iritzia, bereizita eta sinatuta.** Asteazkeneko zutabeak soilik hartzen du alderdi: «Iritzia» atalean doa, idazten duen ereduaren sinadurarekin eta egunkariak datuak egiaztatzen dituela eta iritzia ereduarena dela dioen ohar batekin. Ideiak eztabaidatzen ditu, ez pertsonak: taldeetako inor ez da izendatzen. | Zutabegileak; sinadura eta oharra webgunea muntatzen duen programak jartzen ditu (ADR 0092) | Egiaztatzaileak datu bakoitza eta inor ez dela ezagun egiten begiratzen du, tesiari ukitu gabe; programa batek, luzera eta estekak. |
+| **Iritzia, bereizita eta sinatuta.** Asteazkeneko zutabeak soilik hartzen du alderdi: «Iritzia» atalean doa, idazten duen ereduaren sinadurarekin eta egunkariak datuak egiaztatzen dituela eta iritzia ereduarena dela dioen ohar batekin, egunkariaren printzipioen barruan (10. atala). Ideiak eztabaidatzen ditu, ez pertsonak: taldeetako inor ez da izendatzen. | Zutabegileak; sinadura eta oharra webgunea muntatzen duen programak jartzen ditu (ADR 0092) | Egiaztatzaileak datu bakoitza eta inor ez dela ezagun egiten begiratzen du, tesiari ukitu gabe; programa batek, luzera eta estekak. |
 
 ## 2. Nork egiten duen zer
 
@@ -198,7 +198,33 @@ aldatzen bada, asteko bideoa eta bere testuak.
   babesik (ADR 0055 eta 0065).
 - Egunkaria egiten duten programak publikoak dira (ADR 0019).
 
-## 10. Hobetzeke dagoena
+## 10. Iritziaren ildoa
+
+Iritzi-zutabeak bere zutabegileak aukeratzen duen jarrera defendatzen du, printzipio hauen barruan. Egunkariaren ildoa
+dira: ez dute esaten eztabaida bakoitzaz zer pentsatu, baizik eta nondik iritzia eman.
+
+1. **Lehenik, ikaskuntza.** Teknologia bat ikasten eta irakasten laguntzeko ekartzen duenaren arabera epaitzen da, ez
+   berria delako.
+2. **Ikasleen datuak babesten dira.** Ezer ez, beharrik gabe ikasleen datu pertsonalak enpresa bati ematera behartzen
+   duenik. Kontrola ikastetxeari eta irakasleari uzten dionari eta plataforma bakar bati lotzen ez zaionari
+   ematen zaio lehentasuna, benetan balio duenari uko egin gabe.
+3. **AA tresna bat da.** Erabilera bakoitzaren atzean erabakitzen eta erantzuten duen pertsona bat dago. Ikasleak
+   ebaluatzea, kalifikatzea eta haiei buruz erabakitzea irakasleei dagokie.
+4. **Edozein irakasleren eskura.** Proposatzen dena ordaindu gabe eta irakasle arrunt batek dakien baino gehiago jakin
+   gabe egin daiteke, eta geletan benetan nola lan egiten den oinarri hartzen du.
+5. **Ekitatea.** Ikasle guztiek ez dituzten baliabideekin edo gailuekin bakarrik funtzionatzen duena ez da irtenbide
+   orokor gisa aurkezten.
+6. **Gardentasuna.** AA erabiltzea ez da lotsatzeko ez susmatzeko arrazoi: noiz eta nola erabili den esaten da.
+   Familiek legeak eskatzen duena baino gehiago jakiteko eskubidea dute.
+7. **Zorroztasuna, indarra baino lehen.** Datu zehatzak eta egiaztagarriak, kontrako jarrera bere bertsiorik onenean, eta
+   ez alarmismorik ez prospektu-gisako gogo biziegirik.
+
+**Nork aplikatzen dituen**: zutabegileak, bere enkarguarekin jasotzen dituena eta haien barruan gaia eta jarrera
+aukeratzen dituena.
+**Nola egiaztatzen den**: egiaztatzaileak ez du argitaratzen horietako baten aurka doan zutaberik, horregatik tesia
+aldatu gabe, eta epaileak haiekin talka egiten duena baztertzen du erreserbakoarekin alderatzean (ADR 0092).
+
+## 11. Hobetzeke dagoena
 
 Oraindik oso ondo funtzionatzen ez duena edo egiaztapen bakar baten mende dagoena. Hortik hobetu daiteke egunkaria:
 
