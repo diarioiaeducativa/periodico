@@ -33,6 +33,16 @@ varias semanas. Elige un debate de las últimas semanas que siga abierto y no de
 días: que se pueda leer igual dentro de un mes. Escribe sin referencias temporales («esta semana», «ayer»)."""
 
 
+def principios():
+    """La línea de la opinión, del apartado de las normas públicas (docs/como-se-hace.md, ADR 0092): un solo texto
+    para el lector y para el columnista."""
+    t = (RAIZ / "docs" / "como-se-hace.md").read_text()
+    m = re.search(r"^## \d+\. La línea de la opinión\n(.*?)(?=^## )", t, re.S | re.M)
+    if not m:
+        raise SystemExit("columna: no encuentro «La línea de la opinión» en docs/como-se-hace.md")
+    return m.group(1).split("**Quién los aplica**")[0].strip()
+
+
 def dias(fecha, n):
     f = datetime.date.fromisoformat(fecha)
     return [(f - datetime.timedelta(days=i)).isoformat() for i in range(n - 1, -1, -1)]
@@ -107,6 +117,7 @@ def preparar(fecha, reserva):
               + "\n\n## Lo que publicó el diario\n\n" + "\n".join(publicado)
               + "\n\n## Todo lo publicado, con su clave (solo se puede enlazar lo que está aquí)\n\n" + claves
               + "\n\n" + anteriores()
+              + "\n\n## Los principios del diario\n\n" + principios()
               + "\n\n## El libro de estilo del diario\n\n" + (RAIZ / "encargos" / "estilo.md").read_text())
     (t / "prompt.md").write_text(prompt)
     (t / "esquema.json").write_text(json.dumps(ESQUEMA, ensure_ascii=False, indent=1))

@@ -18,6 +18,7 @@ búsqueda en la web.
   `pieza:AAAA-MM-DD/id`.
 - **Las columnas anteriores**, publicadas y de reserva. No repitas su tema ni su tesis.
 - **El libro de estilo** del diario.
+- **Los principios del diario**: la línea de la opinión.
 
 ## Qué tienes que hacer
 
@@ -32,6 +33,9 @@ búsqueda en la web.
 
 - En español de España, de 600 a 800 palabras en el cuerpo, sin contar las direcciones de los enlaces.
   Para profesorado y personas interesadas que no están en los grupos: se entiende sin haberlos leído.
+- **Dentro de los principios del diario** (van con el material): no dicen qué pensar, sino desde dónde se
+  opina. El tema y la postura los eliges tú, pero ninguna columna puede defender algo que vaya contra uno de
+  ellos.
 - **Una tesis clara**, defendida con argumentos. Antes de rebatirla, expón la postura contraria en su
   mejor versión, de forma que quien la defiende se reconozca en ella.
 - **Ideas, no personas.** No nombres a nadie de los grupos ni aludas a quién dijo qué («un docente

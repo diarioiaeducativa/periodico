@@ -133,7 +133,7 @@ IDIOMAS = {
         "buscar_txt": "Busca en todo lo publicado en el diario, en castellano: artículos, breves, reportajes y la Biblioteca. Encuentra también las formas de una misma palabra: «evaluar» encuentra «evaluación».",
         "resultados_1": "1 resultado", "resultados_n": "{n} resultados", "sin_resultados": "No hay nada publicado con esas palabras.",
         "todas": "Todas", "mas_resultados": "Más resultados", "buscando": "Buscando…", "sin_buscador": "El buscador no ha podido cargarse.",
-        "reportaje": "El reportaje del domingo", "reportajes": "Reportajes", "leer_reportaje": "Leer el reportaje", "leer_hace_un_ano": "Leer cómo ha cambiado", "leer_opinion": "Leer la columna", "opinion_firma": "Por {autor}", "opinion_quien": "Columnista de IA · {modelo}, de {casa}", "opinion_nota": "Columna de opinión escrita por {autor}. El diario comprueba sus datos; la opinión es del modelo.",
+        "reportaje": "El reportaje del domingo", "reportajes": "Reportajes", "leer_reportaje": "Leer el reportaje", "leer_hace_un_ano": "Leer cómo ha cambiado", "leer_opinion": "Leer la columna", "opinion_firma": "Por {autor}", "opinion_quien": "Columnista de IA · {modelo}, de {casa}", "opinion_nota": "Columna de opinión escrita por {autor}. El diario comprueba sus datos; la opinión es del modelo, dentro de los {principios} del diario.", "principios_txt": "principios",
         "claves": "Claves", "en_el_diario": "En el diario esta semana", "semana_repo": "Cada sábado, el diario repasa los recursos que han entrado durante la semana en el {repositorio} de Vibe Coding Educativo, la colección de aplicaciones y materiales con licencia abierta que crea y comparte el profesorado de esa comunidad.", "ya_contados": "Ya publicados en el diario", "otras_semanas": "Otras semanas del repositorio", "sin_reportajes": "Todavía no hay reportajes.",
         "reportajes_txt": "Cada domingo, un tema de la semana tratado a fondo.", "palabras": "minutos de lectura",
         "redaccion": {
@@ -274,7 +274,7 @@ IDIOMAS = {
         "buscar_txt": "Cerca en tot el que s'ha publicat al diari, en català: articles, breus, reportatges i la Biblioteca. Troba també les formes d'una mateixa paraula: «avaluar» troba «avaluació».",
         "resultados_1": "1 resultat", "resultados_n": "{n} resultats", "sin_resultados": "No hi ha res publicat amb aquestes paraules.",
         "todas": "Totes", "mas_resultados": "Més resultats", "buscando": "Cercant…", "sin_buscador": "El cercador no s'ha pogut carregar.",
-        "reportaje": "El reportatge del diumenge", "reportajes": "Reportatges", "leer_reportaje": "Llegeix el reportatge", "leer_hace_un_ano": "Llegeix com ha canviat", "leer_opinion": "Llegeix la columna", "opinion_firma": "Per {autor}", "opinion_quien": "Columnista d'IA · {modelo}, d'{casa}", "opinion_nota": "Columna d'opinió escrita per {autor}. El diari en comprova les dades; l'opinió és del model.",
+        "reportaje": "El reportatge del diumenge", "reportajes": "Reportatges", "leer_reportaje": "Llegeix el reportatge", "leer_hace_un_ano": "Llegeix com ha canviat", "leer_opinion": "Llegeix la columna", "opinion_firma": "Per {autor}", "opinion_quien": "Columnista d'IA · {modelo}, d'{casa}", "opinion_nota": "Columna d'opinió escrita per {autor}. El diari en comprova les dades; l'opinió és del model, dins dels {principios} del diari.", "principios_txt": "principis",
         "claves": "Claus", "en_el_diario": "Al diari aquesta setmana", "semana_repo": "Cada dissabte, el diari repassa els recursos que han entrat durant la setmana al {repositorio} de Vibe Coding Educativo, la col·lecció d'aplicacions i materials amb llicència oberta que crea i comparteix el professorat d'aquesta comunitat.", "ya_contados": "Ja publicats al diari", "otras_semanas": "Altres setmanes del repositori", "sin_reportajes": "Encara no hi ha reportatges.",
         "reportajes_txt": "Cada diumenge, un tema de la setmana tractat a fons.", "palabras": "minuts de lectura",
         "redaccion": {
@@ -1965,11 +1965,19 @@ ASTRA = ('<rect class="as-piedra" x="11" y="86" width="78" height="8" rx="2.5"/>
          '<path class="as-rasgo" d="M42.5 59 Q50 65 58 57.5"/>')
 # La biografía, en la ficha de arriba de la página «Opinión»: solo lo que hace en el diario (ADR 0092), en cada lengua
 COLUMNISTAS = {"GPT-6.2-Astra (OpenAI)": {"nombre": "Astra", "modelo": "GPT-6.2-Astra", "casa": "OpenAI", "dibujo": ASTRA, "bio": {
-    "es": "Astra es GPT-6.2-Astra, un modelo de inteligencia artificial de OpenAI. Cada miércoles elige un debate de la semana en los grupos del diario, se documenta y escribe una columna en la que toma partido. El resto del diario lo escriben agentes de Claude, de Anthropic, así que la opinión sale de otra voz. Un verificador comprueba sus datos sin tocar su opinión, que es del modelo.",
-    "ca": "Astra és GPT-6.2-Astra, un model d'intel·ligència artificial d'OpenAI. Cada dimecres tria un debat de la setmana als grups del diari, es documenta i escriu una columna en què pren partit. La resta del diari l'escriuen agents de Claude, d'Anthropic, de manera que l'opinió surt d'una altra veu. Un verificador en comprova les dades sense tocar-ne l'opinió, que és del model.",
-    "gl": "Astra é GPT-6.2-Astra, un modelo de intelixencia artificial de OpenAI. Cada mércores escolle un debate da semana nos grupos do diario, documéntase e escribe unha columna na que toma partido. O resto do diario escríbeno axentes de Claude, de Anthropic, así que a opinión sae doutra voz. Un verificador comproba os seus datos sen tocar a súa opinión, que é do modelo.",
-    "eu": "Astra GPT-6.2-Astra da, OpenAIren adimen artifizialeko eredu bat. Asteazkenero, egunkariaren taldeetako asteko eztabaida bat aukeratzen du, informazioa biltzen du eta zutabe bat idazten du, jarrera argi bat hartuta. Egunkariaren gainerakoa Anthropicen Claude AA agenteek idazten dute; beraz, iritzia beste ahots batetik dator. Egiaztatzaile batek datuak egiaztatzen ditu, iritziari ukitu gabe; iritzia ereduarena da.",
-    "en": "Astra is GPT-6.2-Astra, an artificial intelligence model from OpenAI. Every Wednesday it picks a debate of the week in the paper's groups, researches it and writes a column that takes a side. The rest of the paper is written by Claude agents, from Anthropic, so the opinion comes from a different voice. A fact-checker verifies its facts without touching its opinion, which is the model's own."}}}
+    "es": "Astra es GPT-6.2-Astra, un modelo de inteligencia artificial de OpenAI. Cada miércoles elige un debate de la semana en los grupos del diario, se documenta y escribe una columna en la que toma partido. El resto del diario lo escriben agentes de Claude, de Anthropic, así que la opinión sale de otra voz. Un verificador comprueba sus datos sin tocar su opinión, que es del modelo, dentro de los {principios} del diario.",
+    "ca": "Astra és GPT-6.2-Astra, un model d'intel·ligència artificial d'OpenAI. Cada dimecres tria un debat de la setmana als grups del diari, es documenta i escriu una columna en què pren partit. La resta del diari l'escriuen agents de Claude, d'Anthropic, de manera que l'opinió surt d'una altra veu. Un verificador en comprova les dades sense tocar-ne l'opinió, que és del model, dins dels {principios} del diari.",
+    "gl": "Astra é GPT-6.2-Astra, un modelo de intelixencia artificial de OpenAI. Cada mércores escolle un debate da semana nos grupos do diario, documéntase e escribe unha columna na que toma partido. O resto do diario escríbeno axentes de Claude, de Anthropic, así que a opinión sae doutra voz. Un verificador comproba os seus datos sen tocar a súa opinión, que é do modelo, dentro dos {principios} do diario.",
+    "eu": "Astra GPT-6.2-Astra da, OpenAIren adimen artifizialeko eredu bat. Asteazkenero, egunkariaren taldeetako asteko eztabaida bat aukeratzen du, informazioa biltzen du eta zutabe bat idazten du, jarrera argi bat hartuta. Egunkariaren gainerakoa Anthropicen Claude AA agenteek idazten dute; beraz, iritzia beste ahots batetik dator. Egiaztatzaile batek datuak egiaztatzen ditu, iritziari ukitu gabe; iritzia ereduarena da, egunkariaren {principios} barruan.",
+    "en": "Astra is GPT-6.2-Astra, an artificial intelligence model from OpenAI. Every Wednesday it picks a debate of the week in the paper's groups, researches it and writes a column that takes a side. The rest of the paper is written by Claude agents, from Anthropic, so the opinion comes from a different voice. A fact-checker verifies its facts without touching its opinion, which is the model's own, within the paper's {principios}."}}}
+
+
+def enlace_principios(prof):
+    """El enlace a «La línea de la opinión», el apartado de las normas con los principios del diario (ADR 0092), por
+    su número, que es el mismo en todas las lenguas."""
+    m = re.search(r"^## (\d+)\. La línea de la opinión", (RAIZ / "docs" / "como-se-hace.md").read_text(), re.M)
+    ancla = f"#apartado-{m.group(1)}" if m else ""
+    return f'<a href="{prof}{doc_href("normas.html")}{ancla}">{e(L["principios_txt"])}</a>'
 
 
 def quien_columnista(c):
@@ -2203,7 +2211,8 @@ def articulo(prof, ruta, d, p, eds):
     # La columna de opinión (ADR 0092): firmada por el modelo que la escribe, con la nota al final
     firma = firma_opinion(p)
     if p.get("autor"):
-        cuerpo += f'<p class="nota-opinion">{e(L["opinion_nota"].format(autor=p["autor"]))}</p>'
+        nota = e(L["opinion_nota"].format(autor=p["autor"], principios="\x00")).replace("\x00", enlace_principios(prof))
+        cuerpo += f'<p class="nota-opinion">{nota}</p>'
     rot = rotulos(p, True, prof, boton=boton_escuchar() + boton_columnas())
     linea, _, ante = rot.partition("\n  ")   # la línea de la sección, fuera de la cabeza; el antetítulo, dentro
     if not ante:   # sin sección: la línea del antetítulo lleva la fecha y el botón
@@ -3153,7 +3162,10 @@ def doc_html(texto, origen):
         elif m := re.match(r"(#{2,4}) (.*)", ln):
             n = len(m.group(1))
             clase = ' class="doc-apartado"' if n == 2 else ""   # dentro de las columnas, como en «La redacción»
-            out.append(f"<h{n}{clase}>{doc_linea(m.group(2), origen)}</h{n}>")
+            # Los apartados numerados, con un ancla por su número, la misma en todas las lenguas (`#apartado-10`)
+            num = re.match(r"(\d+)\. ", m.group(2)) if n == 2 else None
+            ancla = f' id="apartado-{num.group(1)}"' if num else ""
+            out.append(f"<h{n}{clase}{ancla}>{doc_linea(m.group(2), origen)}</h{n}>")
             i += 1
         elif ln.startswith("|"):
             filas = []
@@ -3195,10 +3207,10 @@ def doc_html(texto, origen):
     while k < len(out):
         x = out[k]
         sig = out[k + 1] if k + 1 < len(out) else ""
-        if x.startswith('<h2 class="doc-apartado">') and sig.startswith("<p>"):
+        if x.startswith('<h2 class="doc-apartado"') and sig.startswith("<p>"):
             unido.append(f'<div class="doc-cabeza">{x}{sig}</div>')
             k += 2
-        elif x.startswith('<h2 class="doc-apartado">') and sig[:4] in ("<ul>", "<ol>"):
+        elif x.startswith('<h2 class="doc-apartado"') and sig[:4] in ("<ul>", "<ol>"):
             tag = sig[1:3]
             items = re.findall(r"<li>.*?</li>", sig, re.S)
             unido.append(f'<div class="doc-cabeza">{x}<{tag}>{items[0]}</{tag}></div>')
@@ -3239,12 +3251,12 @@ def doc_html(texto, origen):
             tramo.clear()
         largo = 0
     for bloque in [x for b in agrupado for x in ([b] if b.startswith(('<figure', '<div class="corto">'))
-                                                 else re.split(r'(?=<div class="doc-cabeza">|<h2 class="doc-apartado">)', b)) if x]:
+                                                 else re.split(r'(?=<div class="doc-cabeza">|<h2 class="doc-apartado")', b)) if x]:
         if bloque.startswith(('<figure class="tabla">', '<div class="corto">')):
             corta()
             tramos.append(bloque)
             continue
-        if bloque.startswith(('<div class="doc-cabeza">', '<h2 class="doc-apartado">')) and largo >= DOC_TRAMO:
+        if bloque.startswith(('<div class="doc-cabeza">', '<h2 class="doc-apartado"')) and largo >= DOC_TRAMO:
             corta()
         tramo.append(bloque)
         largo += len(re.sub(r"<[^>]+>", "", bloque))
@@ -4095,7 +4107,7 @@ def mes_pub(fecha):
     return publicacion(fecha)[:7]
 
 
-def ficha_columnista(c):
+def ficha_columnista(prof, c):
     """Arriba de la página «Opinión», una vez por columnista (ADR 0092): su dibujo, su nombre, quién es y su biografía,
     como la página de un columnista en un diario."""
     bio = c.get("bio", {}).get(L["codigo"]) or c.get("bio", {}).get("es", "")
@@ -4104,7 +4116,7 @@ def ficha_columnista(c):
   <div class="columnista-texto">
     <p class="columnista-nombre">{e(c["nombre"])}</p>
     <p class="firma-quien">{quien_columnista(c)}</p>
-    <p class="columnista-bio">{e(bio)}</p>
+    <p class="columnista-bio">{e(bio).replace("{principios}", enlace_principios(prof))}</p>
   </div>
 </section>"""
 
@@ -4114,7 +4126,7 @@ def lista_opinion(prof, ps):
     una debajo de otra, solo texto, en recuadros como el del número (en una rejilla, cada una ocupaba la casilla de un
     dibujo con un icono). La firma no se repite en cada columna; si hay más de un columnista, sí, para saber de quién es."""
     autores = list(dict.fromkeys(p.get("autor") for p in ps if p.get("autor")))
-    fichas = "".join(ficha_columnista(COLUMNISTAS[a]) for a in autores if a in COLUMNISTAS)
+    fichas = "".join(ficha_columnista(prof, COLUMNISTAS[a]) for a in autores if a in COLUMNISTAS)
     varios = len(autores) > 1 or any(a not in COLUMNISTAS for a in autores)
     return fichas + '<div class="lista-opinion">' + "".join(f"""<article class="pieza opinion-item sec-opinion">
   {rotulos(p, True, prof, True)}

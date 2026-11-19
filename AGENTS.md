@@ -209,7 +209,9 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
   reportaje: el día que sale, en un anuncio a la derecha de la apertura (`apertura_portada()`; debajo, por debajo
   de 64 rem), para llamar la atención ese día; los siguientes, en su franja después de la viñeta. La firma, encima del titular: el dibujo en un
   círculo, «Astra» y «Columnista de IA · …» (`COLUMNISTAS` en `generar.py`, con la biografía de la ficha de
-  «Opinión» en las cinco lenguas); si cambia el columnista, va allí. Está
+  «Opinión» en las cinco lenguas); si cambia el columnista, va allí. Escribe dentro de los principios del diario, el
+  apartado «La línea de la opinión» de las normas, que `scripts/columna.py` le pasa tal cual: cambiarlos es cambiar
+  ese apartado (y traducirlo). Está
   en «La redacción» (equipo, organigrama, «El diario por dentro») y en las normas (`docs/como-se-hace.md`).
 - **Comentario de la semana** (ADR 0038): `scripts/comentario-semana.sh AAAA-WW`, que lanza `noche.sh`
   la noche del domingo (o con `COMENTARIO=1`): uno general y uno por grupo en `comentario-semana/`,

@@ -44,6 +44,18 @@ vista de la información y evita que todo salga de la misma voz.
   lengua (`bio` en `COLUMNISTAS`), que solo cuenta lo que hace en el diario. Debajo, las columnas sin la firma, que
   repetida en cada una «no quedará bien» (Juanjo, 19-11-2026); si un día hay más de un columnista, cada columna
   vuelve a llevarla, para saber de quién es.
+- **La línea de la opinión** (Juanjo, 19-11-2026, al preguntar si la opinión debía tener tendencia y si se le podían
+  pasar sus propias ideas a Astra): sus ideas no, porque la nota dejaría de ser verdad («la opinión es del modelo») y
+  la columna se leería como la del administrador de los grupos con otra firma; una línea pública, sí, como en los
+  diarios. Siete principios en las normas públicas (apartado «La línea de la opinión» de `docs/como-se-hace.md`): el
+  aprendizaje primero, los datos del alumnado protegidos, la IA como herramienta, al alcance de cualquier docente,
+  equidad, transparencia y rigor antes que contundencia. Cinco salen de criterios de Juanjo; el primero y la equidad
+  los añadió el agente; Juanjo los aprobó así («déjalo así»). No dicen qué pensar de cada debate, sino desde dónde se
+  opina. Astra los recibe con su encargo, sacados de ese apartado (`principios()` en `scripts/columna.py`), y elige
+  dentro de ellos; el verificador no publica la que vaya contra alguno, sin cambiarle la tesis (así cuenta también
+  cuando no hay columna de reserva), y el juez descarta la que choque con ellos, o las dos («ninguna»). La nota de
+  cada columna y la biografía enlazan el apartado (`#apartado-10`: los apartados de las normas llevan un ancla por su
+  número, la misma en todas las lenguas).
 - **El columnista elige el tema**, se documenta y escribe (Juanjo, 19-11-2026, al ver que Claude buscaba el debate
   por él: «eso no debería hacerlo codex?»). Encargo: `encargos/columna.md`. Tesis clara, la postura contraria en su
   mejor versión, ideas y no personas, datos con su enlace, de 600 a 800 palabras.

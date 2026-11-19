@@ -6,6 +6,8 @@ Un modelo de otra casa, que firma la columna, ha escrito `columnas-borrador/{FEC
 
 - **Cada dato, contra su fuente**: abre con WebFetch cada URL de `fuentes` y de los enlaces del cuerpo, y comprueba que dice lo que la columna le atribuye (nombres, cifras, fechas, lo que recomienda cada documento). Si una fuente no carga, busca otra oficial con WebSearch; si no la hay, quita la afirmación o déjala como opinión del columnista, sin dato.
 - **Lo que se atribuye a los grupos**, contra los mensajes del material, sin tergiversar ni exagerar; y la nota, que diga de verdad qué mensajes recogen el debate.
+- **Los principios del diario** (apartado «La línea de la opinión» de docs/como-se-hace.md): si la columna defiende
+  algo que va contra uno de ellos, no la arregles cambiando la tesis: `"hay_pieza": false`, con el principio y por qué.
 - **Ni una persona de los grupos**: ni su nombre ni una alusión que permita reconocerla («un docente de tal centro…»). Las personas públicas y las instituciones, sí.
 - **Los ejemplos inventados**, presentados como tales, no como hechos.
 - **Los enlaces a lo ya publicado** (`pieza:AAAA-MM-DD/id`): que estén en `publicado.txt` y traten lo mismo.

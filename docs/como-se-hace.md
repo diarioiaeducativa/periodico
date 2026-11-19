@@ -47,7 +47,7 @@ Las normas de cada número:
 | **No se repite lo ya publicado.** Si hay algo nuevo sobre un tema ya tratado, sale como breve, con un enlace al artículo anterior (ADR 0011). | El que redacta y el que revisa, con un buscador de todo lo publicado (ADR 0061) | El revisor busca cada nombre y cada titular en lo ya publicado. |
 | **Nadie acapara el número**: como norma, un artículo por persona y dos por producto o empresa. | El agente que redacta | El revisor. |
 | **Si un día no da para un número digno, no se rellena**: entonces salen artículos guardados. | El que redacta y la reserva | — |
-| **La opinión, aparte y firmada.** Solo la columna del miércoles toma partido: va en la sección «Opinión», con la firma del modelo que la escribe y una nota que dice que el diario comprueba sus datos y que la opinión es del modelo. Discute ideas, no personas: nadie de los grupos sale nombrado. | El columnista; la firma y la nota las pone el programa que monta la web (ADR 0092) | El verificador comprueba cada dato y que no se reconozca a nadie, sin tocar la tesis; un programa, la medida y los enlaces. |
+| **La opinión, aparte y firmada.** Solo la columna del miércoles toma partido: va en la sección «Opinión», con la firma del modelo que la escribe y una nota que dice que el diario comprueba sus datos y que la opinión es del modelo, dentro de los principios del diario (apartado 10). Discute ideas, no personas: nadie de los grupos sale nombrado. | El columnista; la firma y la nota las pone el programa que monta la web (ADR 0092) | El verificador comprueba cada dato y que no se reconozca a nadie, sin tocar la tesis; un programa, la medida y los enlaces. |
 
 ## 2. Quién hace cada cosa
 
@@ -197,7 +197,31 @@ reportaje, el vídeo de la semana y sus textos.
   lo publicado y que no hay publicidad ni patrocinio (ADR 0055 y 0065).
 - Los programas que hacen el diario son públicos (ADR 0019).
 
-## 10. Lo que falta por mejorar
+## 10. La línea de la opinión
+
+La columna de opinión defiende la postura que elige su columnista, dentro de estos principios. Son la línea del
+diario: no dicen qué pensar de cada debate, sino desde dónde se opina.
+
+1. **Primero, el aprendizaje.** Una tecnología se juzga por lo que aporta a aprender y a enseñar, no por ser nueva.
+2. **Los datos del alumnado se protegen.** Nada que obligue a entregar sin necesidad datos personales del alumnado
+   a una empresa. Se prefiere lo que deja el control al centro y al docente y lo que no ata a una sola plataforma,
+   sin renunciar por ello a lo que de verdad sirve.
+3. **La IA es una herramienta.** Detrás de cada uso hay una persona que decide y responde. Evaluar, calificar y
+   decidir sobre el alumnado le corresponde al profesorado.
+4. **Al alcance de cualquier docente.** Lo que se propone se puede hacer sin pagar ni saber más que un docente
+   corriente, y parte de cómo se trabaja de verdad en las aulas.
+5. **Equidad.** Lo que solo funciona con medios o dispositivos que no todo el alumnado tiene no se presenta como
+   solución general.
+6. **Transparencia.** Usar IA no es motivo de vergüenza ni de sospecha: se dice cuándo y cómo se ha usado. Las
+   familias tienen derecho a saber más de lo que exige la ley.
+7. **Rigor antes que contundencia.** Datos exactos y comprobables, la postura contraria en su mejor versión, y ni
+   alarmismo ni entusiasmo de folleto.
+
+**Quién los aplica**: el columnista, que los recibe con su encargo y elige dentro de ellos el tema y la postura.
+**Cómo se comprueba**: el verificador no publica una columna que vaya contra alguno, sin cambiar por eso su tesis,
+y el juez descarta la que choque con ellos al compararla con la de reserva (ADR 0092).
+
+## 11. Lo que falta por mejorar
 
 Lo que todavía no funciona del todo bien o depende de una sola comprobación. Es por donde se puede
 mejorar el diario:

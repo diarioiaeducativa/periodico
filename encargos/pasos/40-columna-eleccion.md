@@ -11,7 +11,9 @@ Léelas enteras y elige la mejor para publicar, con estos criterios y en este or
 
 Gana la que puntúe más en el primero; si empatan, la solidez, y después el rigor y la escritura. Si empatan en todo, la nueva.
 - La actualidad no suma puntos: solo descarta la de reserva si algo suyo se ha quedado desfasado desde que se escribió.
-- Repetir el tema o la tesis de una columna ya publicada (`columnas/`) la descarta.
+- Repetir el tema o la tesis de una columna ya publicada (`columnas/`) la descarta, y también defender algo que vaya
+  contra uno de los principios del diario (apartado «La línea de la opinión» de docs/como-se-hace.md). Si las dos
+  chocan con ellos, `"elegido": "ninguna"`.
 - Lo que se arregla en un minuto (un titular largo, una errata) no decide nada.
 - No importa cuál de las dos coincide con lo que piensas: juzgas el argumento, no la postura.
 

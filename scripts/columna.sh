@@ -119,7 +119,8 @@ if [ "$hay_nueva" = 1 ] && [ -n "$RES" ]; then
   agente "$OPUS" 40-columna-eleccion 20 "La de reserva: $RES"
   elegida=$(python3 -c 'import json,sys; print(json.load(open(sys.argv[1])).get("elegido",""))' "$B-eleccion.json" 2>/dev/null)
   log "juez de la columna: ${elegida:-sin decisión (la nueva)}"
-  [ "$elegida" = reserva ] || elegida=nueva
+  # «ninguna»: las dos chocan con los principios del diario (ADR 0092)
+  [ "$elegida" = reserva ] || [ "$elegida" = ninguna ] || elegida=nueva
 elif [ "$hay_nueva" = 1 ]; then
   elegida=nueva
 elif [ -n "$RES" ]; then
@@ -132,6 +133,11 @@ case $elegida in
     python3 scripts/columna.py descartar >> "$REG" 2>&1 ;;
   reserva)
     python3 scripts/columna.py usar "$FECHA" >> "$REG" 2>&1 || { log "sin columna: no se pudo poner la de reserva"; exit 2; } ;;
+  ninguna)
+    # La de reserva también choca con los principios: fuera, y reserva.sh escribe otra por la mañana
+    python3 scripts/columna.py descartar >> "$REG" 2>&1
+    log "sin columna: el juez ve que las dos van contra los principios del diario"
+    exit 2 ;;
   *)
     log "sin columna: ni la nueva vale ni queda una de reserva"
     exit 2 ;;
