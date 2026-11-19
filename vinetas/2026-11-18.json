@@ -1,0 +1,137 @@
+{
+ "fecha": "2026-11-18",
+ "elegida": {
+  "n": 1,
+  "pieza": "stanford-evidencia-ia-escuela",
+  "idea": "En la junta de evaluación, Algoritmo pregunta qué nota saca según los 52 estudios que ha reunido Stanford; la nota es floja y se defiende con que al alumnado le gusta. Tiza: «También le gusta el recreo». El chasco se lo lleva Algoritmo y remata Tiza. El claustro es donde ocurre la escena (una junta de evaluación) y además está libre.",
+  "guion": {
+   "vinetas": [
+    {
+     "cartela": "En la junta de evaluación, con las notas de la IA.",
+     "escenario": "claustro",
+     "tiza": {
+      "expresion": "neutral",
+      "postura": "sostener",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "contento",
+      "postura": "jarras",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "objeto": "folio",
+     "lleva": "tiza",
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Stanford ha reunido 52 estudios sobre la IA en la escuela.",
+       "tipo": "habla"
+      },
+      {
+       "quien": "algoritmo",
+       "texto": "¿Y qué nota saco?",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "claustro",
+     "tiza": {
+      "expresion": "preocupado",
+      "postura": "sostener",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "sorprendido",
+      "postura": "cabeza",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "objeto": "folio",
+     "lleva": "tiza",
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Resultados desiguales. Ningún uso mejora el aprendizaje de forma consistente.",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "claustro",
+     "tiza": {
+      "expresion": "contento",
+      "postura": "encoger",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "preocupado",
+      "postura": "arriba",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "algoritmo",
+       "texto": "¡Pero al alumnado le gusto!",
+       "tipo": "habla"
+      },
+      {
+       "quien": "tiza",
+       "texto": "También le gusta el recreo.",
+       "tipo": "habla"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "motivo": "La 1 tiene el mejor remate de las cinco: «También le gusta el recreo» son cinco palabras, sorprende y dice de un golpe lo que la revisión advierte (que al alumnado le guste no siempre se traduce en mejores resultados). Se entiende sin haber leído la noticia, porque la segunda viñeta da lo necesario, y sale del artículo principal del número. Los datos son los de la noticia y no añade ninguno: 52 estudios, resultados desiguales, ningún uso mejora el aprendizaje de forma consistente. Stanford se nombra como fuente, no como blanco; la ironía va al argumento de la tecnología, no al alumnado. Remata Tiza y el chasco es de Algoritmo, que es lo que pide el resumen tras dos remates seguidos de Algoritmo. La 4 es la segunda y se queda cerca: el desvío funciona (se espera una pregunta inconfesable y llega «¿qué es exactamente una situación de aprendizaje?») y todo docente español lo reconoce, pero descansa en una jerga que no entiende una familia ni sobrevive bien a la traducción, sale de un breve y Tiza acaba avergonzada como en el número anterior. La 2 tiene un buen giro en el rótulo («40 guardias más») y un molde distinto (los dos contra un tercero), pero el remate mudo es más previsible (las horas que se ahorran siempre se las queda alguien), el primer bocadillo es largo (85 caracteres) y roza el culpar a los equipos directivos; las guardias son de la escena, no un dato de la noticia. La 3 fuerza el paso central («el ámbito digital eres tú») para llegar a «en mi clase no se flota», que es simpático pero pequeño. La 5 gasta la primera viñeta en explicar la noticia y el remate («otra para ti») es una pulla sin mucho motivo: Algoritmo no ha hecho nada mal en la tira. Ninguna incumple las prohibiciones ni se inventa datos de la noticia; las cinco caben.",
+ "retoques": "Tercera viñeta, bocadillo de Algoritmo: «¡Pero al alumnado le gusto!» en vez de «¡Pero al alumnado le gusta la experiencia!»: más corto, más de su carácter (se lo toma como algo personal, que es de lo que va la tira: sus notas) y deja el remate de Tiza en paralelo («le gusto» / «le gusta el recreo»). El remate y el primer bocadillo no se tocan; el de la segunda viñeta tampoco, porque son las palabras de la noticia y es lo que permite entender el chiste sin haberla leído. Rótulo: está, tiene 50 caracteres y sitúa (dónde y de qué va) sin adelantar el remate; se deja. Escenario claustro: libre (no salió en los tres números anteriores) y es donde ocurre la escena. Caras y posturas: las de la candidata ya recorren el repertorio y se dejan casi todas. Tiza pasa por tres caras (neutral al leer el acta, preocupada al dar la nota, que no había salido, y contenta al rematar) y acaba encogiéndose de hombros, postura que no había usado; «sostener» es obligada mientras lleva el folio, y «neutral» en la primera viñeta la pide el chiste (la lectura solemne frente al aplomo de Algoritmo). Algoritmo empieza contento y en jarras, que es de sus caras más repetidas pero el chiste la necesita (cuanto más seguro, mejor la caída), pasa a sorprendido con las manos a la cabeza (postura sin usar) y acaba preocupado (cara sin usar) con los brazos en alto, que es el gesto de la protesta. Objeto folio: salió hace tres números, no en el anterior, y aquí es el acta con las notas. Remata Tiza, como pedía el resumen. Ningún bocadillo pasa de 90 caracteres (el más largo, 77).",
+ "puntuaciones": [
+  {
+   "n": 1,
+   "gracia": 8,
+   "claridad": 9,
+   "remate": 9,
+   "prohibiciones": "respeta",
+   "cabe": true
+  },
+  {
+   "n": 2,
+   "gracia": 7,
+   "claridad": 7,
+   "remate": 7,
+   "prohibiciones": "respeta (la ironía va a la organización del centro; roza el culpar a los equipos directivos)",
+   "cabe": true
+  },
+  {
+   "n": 3,
+   "gracia": 6,
+   "claridad": 6,
+   "remate": 6,
+   "prohibiciones": "respeta",
+   "cabe": true
+  },
+  {
+   "n": 4,
+   "gracia": 7,
+   "claridad": 7,
+   "remate": 8,
+   "prohibiciones": "respeta",
+   "cabe": true
+  },
+  {
+   "n": 5,
+   "gracia": 6,
+   "claridad": 6,
+   "remate": 5,
+   "prohibiciones": "respeta (parte de la idea de un miembro del grupo sin reírse de él)",
+   "cabe": true
+  }
+ ]
+}

@@ -1,29 +1,28 @@
-<!-- origen: aab29d96ef60db48 -->
+<!-- origen: 55be3cd9e913f257 -->
 # Llibre d'estil del Diari d'IA Educativa
 
 Com escriu el diari. Val per a tot agent que escriu, revisa, tradueix o resumeix alguna cosa que llegirà el
 públic (articles, breus, reportatges, «Fa un any», comentaris de la setmana, avisos, textos per a xarxes i
 vídeos) i per a les persones que el mantenen. Es llegeix sencer abans de començar.
 
-Aquí hi ha el que és comú. Cada tasca té, a més, la seva guia a `encargos/` amb el que li és propi (mesures,
-format, to dels avisos, la vinyeta…); si una norma d'aquí no val per a una tasca, la seva guia ho diu. Les normes que no són d'estil (què és notícia, què porta cada número i els articles guardats
-per als dies sense notícies) són a «Com es fa el diari», `docs/como-se-hace.md`.
+Aquí hi ha el que és comú. Cada tasca té a més la seva guia a `encargos/` amb el que li és propi (mesures,
+format, to dels avisos, la vinyeta…); si una norma d'aquí no val per a una tasca, la seva guia ho diu. Les normes que no són d'estil (què és notícia, què porta cada número i els articles guardats per als dies sense notícies) són a «Com es fa el diari», `docs/como-se-hace.md`.
 
 ## Per a qui s'escriu
 
-- Per a docents i persones interessades en la IA en l'educació que **no són** als grups. Cada
-  text s'entén sol, sense haver llegit els missatges ni altres articles: què és, per què importa a
-  un docent i on trobar-ho.
+- Per a docents i persones interessades en la IA en educació que **no són** als grups. Cada text
+  s'entén sol, sense haver llegit els missatges ni altres articles: què és, per què importa a un docent i
+  on trobar-ho.
 - **Per a un públic molt ampli, no per a experts**: un docent de qualsevol matèria, una família, una
-  persona que comença amb la IA. Si una cosa només l'entenen les persones que ja en saben, es reescriu.
-- El que interessa al lector, no com funciona el diari per dins: res d'agents, fitxers,
-  programes ni servidors en el que es publica, llevat que l'article tracti del diari mateix o
-  d'Anthropic (apartat «Rigor»).
+  persona que comença amb la IA. Si alguna cosa només l'entenen les persones que ja en saben, es reescriu.
+- El que interessa al lector, no com funciona el diari per dins: res d'agents, fitxers, programes ni
+  servidors en el que es publica, tret que l'article tracti del diari mateix o d'Anthropic (apartat
+  «Rigor»).
 
 ## To
 
-- Formal, informatiu i impersonal. Mai publicitari («increíble», «imprescindible», «revoluciona»)
-  ni alarmista. Sense exclamacions ni emojis.
+- Formal, informatiu i impersonal. Mai publicitari («increïble», «imprescindible», «revoluciona») ni
+  alarmista. Sense exclamacions ni emojis.
 - Les guies dels avisos i de la vinyeta permeten un to més proper; mai d'anunci.
 
 ## Llengua
@@ -31,19 +30,19 @@ per als dies sense notícies) són a «Com es fa el diari», `docs/como-se-hace.
 - Castellà correcte i natural. Les traduccions, al seu apartat.
 - **Llenguatge inclusiu, però natural**: «el profesorado», «el alumnado», «las familias»; sense
   desdoblaments ni signes estranys.
-- **Sense el relatiu «quien» o «quienes»** amb el sentit de «la persona que»: «la persona que», un col·lectiu («el
-  profesorado») o un gir amb l'assumpte al davant («separar la creación de la revisión», no «separar a
+- **Sense el relatiu «quien» o «quienes»** amb el sentit de «la persona que»: «la persona que», un col·lectiu
+  («el profesorado») o un gir amb l'assumpte al davant («separar la creación de la revisión», no «separar a
   quien crea de quien revisa»). L'interrogatiu, amb accent («¿quién?»), sí; una cita literal es
-  deixa tal com és.
-- **El que publica el diari són «artículos»**, no «piezas» (la paraula només és interna, als
-  camps dels arxius). Un article pot ser una notícia, un breu, un reportatge.
-- **El que fa el diari amb un tema: el «publica», el «recoge»** o el tema «sale en» el diari;
-  no el «cuenta». «El diario publicó el 3 de noviembre…», «como recogió el diario…».
-- **La IA no pensa ni vol.** Cap verb que doni ment o intenció a un programa («piensa»,
-  «entiende», «quiere», «miente»): un model genera, respon o dona un resultat. El que decideix és una
+  deixa tal com està.
+- **El que publica el diari són «articles»**, no «peces» («pieza» només és interna, als camps dels
+  arxius). Un article pot ser una notícia, un breu, un reportatge.
+- **El que fa el diari amb un tema: el «publica», el «recull»** o el tema «surt al» diari; no
+  el «conta» («cuenta»). «El diario publicó el 3 de noviembre…», «como recogió el diario…».
+- **La IA no pensa ni vol.** Res de verbs que donen ment o intenció a un programa («piensa»,
+  «entiende», «quiere», «miente»): un model genera, respon o dona un resultat. Qui decideix és una
   empresa o una persona: «OpenAI ha limitado…», no «ChatGPT ha decidido…». El que un model s'inventa
   és una «respuesta inventada»; «alucinación», només explicada.
-- **Vocabulari**: «inteligencia artificial», en minúscula, i la seva sigla, IA, mai AI, llevat de
+- **Vocabulari**: «inteligencia artificial», en minúscula, i la seva sigla, IA, mai AI, llevat dels
   noms propis («Google AI Studio»). «Chatbot» i «alucinar», sense cometes. Millor «aplicación» que
   «app», «en línea» que «online», «enlace» que «link» i «aprendizaje automático» que «machine
   learning». *Prompt*, en cursiva. Un terme que el lector pot no conèixer s'explica la primera
@@ -55,38 +54,38 @@ per als dies sense notícies) són a «Com es fa el diari», `docs/como-se-hace.
   lanzado…» o «es posible que…».
 - **Frases clares**: una idea per frase, la paraula corrent abans que la tècnica i fora les
   metàfores gastades («cambio de paradigma», «en la era de la IA»).
-- **Abans clar que breu.** Cap expressió comprimida que obligui a rellegir: substantius
-  encadenats («flujo de generación multimodal con verificación cruzada»), argot dels grups,
-  paraules que es donen per sabudes o frases a les quals els falta el verb. Si una frase curta s'entén
-  pitjor que una de més llarga, va la llarga: «un sistema que crea imágenes y vídeo y comprueba el
+- **Abans clar que breu.** Res d'expressions comprimides que obliguen a rellegir: substantius
+  encadenats («flujo de generación multimodal con verificación cruzada»), argot dels grups, paraules
+  que es donen per sabudes o frases a les quals els falta el verb. Si una frase curta s'entén pitjor que
+  una una mica més llarga, va la llarga: «un sistema que crea imágenes y vídeo y comprueba el
   resultado con otro modelo».
-- Els noms de productes, aplicacions, grups i documents, tal com els escriu l'empresa o la persona que els fa
-  («ChatGPT», «Vibe Coding Educativo»). Un recurs en català o en una altra llengua es descriu en castellà
+- Els noms de productes, aplicacions, grups i documents, tal com els escriu l'empresa o la persona que
+  els fa («ChatGPT», «Vibe Coding Educativo»). Un recurs en català o en una altra llengua es descriu en castellà
   i conserva el seu nom; el títol d'una obra queda en la seva llengua.
 
 ## Titulars, avantítols i entradetes
 
-- **Titular**: clar, amb verb, sense preguntes ni ganxos («no creerás…»). Diu què aporta el que
+- **Titular**: clar, amb verb, sense preguntes ni reclams («no creerás…»). Diu què aporta el que
   recull, no només el nom de l'eina o del document. **Com a molt 90 caràcters**, comptant
-  els espais: el que no hi càpiga va a l'avantítol o a l'entradeta.
+  els espais: el que no càpiga va a l'avantítol o a l'entradeta.
 - **Avantítol**: de dues a cinc paraules, sense verb: el tipus de cosa o l'àmbit («Guía oficial»,
   «Nuevo en el repositorio», «Del fondo de EduMedia»).
 - **Entradeta**: una o dues frases que resumeixen l'article (dues o tres en el reportatge). No repeteix el
-  titular: aporta el que ve després.
+  titular: aporta el que ve a continuació.
 - **El titular i l'entradeta no diuen més que el cos ni que la font.** El que el cos
-  matisa («segons l'empresa», «en els plans de pagament», «és una hipòtesi de l'autor») no desapareix
-  a dalt. Una prova sense res amb què comparar no «demostra» ni «suggereix» una causa.
-- **El que no és d'aquests dies porta la seva data al titular**: un informe d'agost no «es publica»
-  avui, és «Un informe d'agost…».
+  matisa («según la empresa», «en los planes de pago», «es una hipótesis del autor») no desapareix
+  a dalt. Una prova sense res amb què comparar no «demuestra» ni «sugiere» una causa.
+- **El que no és d'aquests dies porta la seva data al titular**: un informe d'agost no «se publica»
+  avui, és «Un informe de agosto…».
 
 ## Persones
 
 - **Temes, no persones.** No es nomena les persones que opinen o pregunten als grups, tampoc amb «un
-  membre va dir…»: es recullen les postures.
+  miembro dijo…»: es recullen les postures.
 - **Es nomena l'autor d'un recurs que ell mateix ha publicat** (una aplicació, una guia, un
-  document), com a crèdit («creada per…»), amb el nom que consta al recurs mateix o el
+  document), com a crèdit («creada por…»), amb el nom que consta al recurs mateix o el
   nom complet de la persona que el publica. Un nom de pila no identifica ningú: si el recurs no
-  diu qui el fa, «el seu autor», i que la web no ho indica. Mai no es completa un cognom.
+  diu qui el fa, «su autor», i que el web no ho indica. Mai no es completa un cognom.
 - **Qui és qui ho diu la marca del material, no el nom** (ADR 0066): els autors del diari
   són només els missatges marcats `[autor del diario: …]`; una altra persona amb el mateix nom de pila és
   una altra persona. Les marques no es publiquen.
@@ -106,7 +105,7 @@ per als dies sense notícies) són a «Com es fa el diari», `docs/como-se-hace.
 - **El que no es pot comprovar, es treu o es diu com a no confirmat.** Res d'inventar
   dates, xifres, autors ni funcions.
 - **El que anuncia una empresa, amb les seves condicions**: en quin pla, a quin preu, fins quan, en quins
-  països. «Gratis» o «per a tothom» es contrasta amb les seves condicions.
+  països. «Gratis» o «para todos» es contrasta amb les seves condicions.
 - **El llenguatge de les empreses, atribuït o fora**: «revolucionario», «potente» o «sin
   precedentes», només dins d'una cita atribuïda; el text diu què fa el producte. Un estudi o una
   enquesta es presenta amb qui el fa i qui el paga, i si és de la mateixa empresa, es diu
@@ -116,53 +115,58 @@ per als dies sense notícies) són a «Com es fa el diari», `docs/como-se-hace.
   agents de Claude, perquè el lector ho tingui en compte. Nomenar-los de passada, en una llista, no ho demana.
 - **Les xifres, amb la precisió de la font** (sense decimals que la font no dona) i una proporció
   amb la seva quantitat absoluta («el doble, de 10 a 20 centros»). Si la font dona xifres diferents segons
-  la versió o el pla, es diu a quina correspon cada una. Del 20 % al 30 % són 10 punts més, no
-  un 10 % més. Millor «un de cada vuit docents» que «el 12,5 %».
-- **Les dades que canvien es daten** («a 1 de novembre de 2026»); la resta no porta data.
+  la versió o el pla, es diu a quina correspon cadascuna. Del 20 % al 30 % són 10 punts més, no
+  un 10 % més. Millor «uno de cada ocho docentes» que «el 12,5 %».
+- **Les dades que canvien es daten** («a 1 de noviembre de 2026»); la resta no porta data.
+- **Tota hora, amb el seu fus**, perquè el diari es llegeix a tot el món (ADR 0091). La d'Espanya:
+  «a las 10:30 (hora peninsular española, UTC+1)», UTC+2 a l'estiu; «peninsular», perquè Canàries va
+  una hora per darrere. La de fora, amb la d'origen i l'equivalent a Espanya: «a las 10:00 de
+  California (19:00 en la España peninsular, UTC+1)». Si un text dona diverses hores del mateix lloc, el
+  fus va la primera vegada.
 - **Una pàgina oficial pot estar desactualitzada**: si contradiu el que el diari ja va publicar amb el
   document al davant, mana el publicat, i es diu.
 - **Abans de jutjar un enllaç, s'obre**: l'adreça no diu què hi ha a la pàgina ni la seva data.
 - **El que el diari ja va publicar, igual**: un article sobre un assumpte ja tractat dona les mateixes
   xifres i dates que l'anterior, l'enllaça i, si alguna cosa ha canviat, ho diu.
 
-## Cites i altres idiomes
+## Cites i altres llengües
 
 - Cites breus i exactes, entre cometes, i poques: l'article explica, no copia.
-- **El que va entre cometes es busca tal qual a la font**; si no hi apareix, es treu o es
-  parafraseja. Una frase presa d'una font va entre cometes o es reescriu.
+- **El que va entre cometes es busca tal qual a la font**; si no apareix, es treu o es
+  parafrasejà. Una frase presa d'una font va entre cometes o es reescriu.
 - **Cap cita només en anglès**: o traduïda, o amb la traducció al costat entre parèntesis.
-- El que és oficial i aliè (el títol d'una norma, d'un informe) queda en la seva llengua original.
+- L'oficial aliè (el títol d'una norma, d'un informe) queda en la seva llengua original.
 
 ## Fonts i enllaços
 
 El detall és a `encargos/enlaces.md`; l'essencial:
 
-- **El que es nomena s'enllaça on es nomena**, en la seva primera menció i amb el seu nom com a text de
-  l'enllaç; al peu, a `fuentes`, totes.
+- **El que es nomena s'enllaça on es nomena**, a la seva primera menció i amb el seu nom com a text de
+  l'enllaç; al peu, a `fuentes`, tots.
 - **A la font original i oficial**, en castellà (o en català) si existeix aquesta versió; una
-  eina, a la web que farà servir el lector, no al seu repositori de codi.
+  eina, al web que farà servir el lector, no al seu repositori de codi.
 - **El que ja s'ha publicat i està clarament relacionat, enllaçat** amb la seva clau (`pieza:AAAA-MM-DD/id`),
   amb un text que digui de què tracta, mai «aquí».
-- El text d'un enllaç mai no és «mensaje 123» ni una adreça nua.
+- El text d'un enllaç mai és «mensaje 123» ni una adreça nua.
 - Un enllaç que descarrega un arxiu ho diu: «la guía (PDF)».
 
 ## Forma
 
-- **Cometes espanyoles** («»); dins d'elles, les angleses (“”).
+- **Cometes espanyoles** («»); dins d'aquestes, les angleses (“”).
 - **El percentatge, amb espai** (25 %); els milers, amb punt (1.200); les monedes, amb el seu nom
   («10 dólares», «4 euros»).
 - Paràgrafs de tres a sis frases en els textos llargs (cada guia dona la seva mesura). Negretes amb mesura:
   dues o tres idees en un text llarg.
 - Enllaços en Markdown (`[texto](url)`); en els textos per a avisos i xarxes, text pla (ho diuen les seves
   guies).
-- **Mai «hoy», «ayer» ni «esta semana»**: la data o el dia («el jueves 12»). El número surt l'endemà
-  de les converses i queda a l'hemeroteca; el que es guarda per a un altre dia (la reserva,
-  «Fa un any» escrit per endavant) tampoc no diu «acaba de».
+- **Mai «hoy», «ayer» ni «esta semana»**: la data o el dia («el jueves 12»). El número surt el dia
+  següent a les converses i queda a l'hemeroteca; el que es guarda per a un altre dia (la reserva,
+  «Fa un any» escrit per avançat) tampoc no diu «acaba de».
 
 ## Gràfics
 
 - **Un gràfic, només quan explica alguna cosa que el text no deixa veure d'un cop d'ull**: tres o més xifres comparables
-  de la mateixa font (els resultats d'un estudi, d'una enquesta, una evolució en el temps). No per adornar ni
+  de la mateixa font (els resultats d'un estudi, una enquesta, una evolució en el temps). No per adornar ni
   per a una o dues xifres, que es diuen al text.
 - **El dibuixa el programa del diari a partir de les dades** (el camp `grafico` de l'article o de l'apartat del
   reportatge, ADR 0084), mai un agent a mà: barres horitzontals (`barras`, per comparar), columnes
@@ -172,8 +176,8 @@ El detall és a `encargos/enlaces.md`; l'essencial:
   xifres de fonts diferents.
 - **Títol que diu què es mesura**, no la conclusió («Redacciones humanas que los detectores tomaron por IA»), i
   etiquetes curtes.
-- **La font, sempre**, enllaçada; i a la nota, el que cal per llegir-lo bé: quantes persones o casos, d'on
-  i quan, i si les dades són de la mateixa empresa («según la empresa»).
+- **La font, sempre**, enllaçada; i a la nota, el que cal per llegir-lo bé: quantes persones o casos, d'on i
+  quan, i si les dades són de la mateixa empresa («según la empresa»).
 
 ## Les traduccions
 
@@ -184,24 +188,24 @@ on consultar, formats, vocabulari de la IA i el que és propi d'Espanya) és al 
 
 ## Correccions
 
-- Un error es corregeix sense esperar que ningú ho demani, en el mateix article i en els cinc idiomes, amb
+- Un error es corregeix sense esperar que ningú ho demani, al mateix article i en els cinc idiomes, amb
   la seva nota al final (ADR 0055): «Corregido el…» (hi havia un error), «Actualización del…» (la dada era
-  certa i ha canviat) o «Nota añadida el…» (faltava alguna cosa). Una errata que no canvia el sentit es
+  certa i ha canviat) o «Nota añadida el…» (faltava alguna cosa). Una errada que no canvia el sentit es
   corregeix sense nota.
 - Si l'error era al titular, als avisos o a les xarxes, la correcció arriba també allà.
-- No es retira un article sencer si n'hi ha prou amb canviar-ne una part.
+- No es retira un article sencer si n'hi ha prou amb canviar una part.
 
 ## El que es comprova sense IA
 
-Alguns programes repassen cada nit algunes d'aquestes normes (ADR 0056, 0059 i 0067), però no substitueixen
+Uns programes repassen cada nit algunes d'aquestes normes (ADR 0056, 0059 i 0067), però no substitueixen
 el revisor:
 
 - `scripts/revisar-estilo.py`: el «quien» relatiu, les cites només en anglès i les normes de vocabulari i
-  forma que es poden buscar («hoy», «pieza», «el diario cuenta», «app», el condicional de rumor, el
+  forma que es poden cercar («hoy», «pieza», «el diario cuenta», «app», el condicional de rumor, el
   percentatge); el que troba ho corregeix un agent.
 - `scripts/comprobar-corrector.py`: que el corrector d'estil, un agent que repassa cada nit la
   redacció dels articles del dia, no ha canviat cap dada.
-- `scripts/corregir-erratas.py`: «e» davant de «i», «u» davant de «o», les cometes espanyoles en anglès, i avisa
-  dels titulars de més de 90 caràcters.
+- `scripts/corregir-erratas.py`: «e» davant de «i», «u» davant de «o», les cometes espanyoles en
+  anglès, i avisa dels titulars de més de 90 caràcters.
 - `scripts/revisar-idiomas.py`: castellà que s'ha colat en una traducció.
 - `scripts/revisar-autoria.py`: el que s'atribueix a un autor del diari i és d'un altre compte.

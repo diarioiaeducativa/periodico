@@ -1,0 +1,94 @@
+{
+ "fecha": "2026-11-18",
+ "elegida": {
+  "n": 1,
+  "pieza": "stanford-evidencia-ia-escuela",
+  "idea": "Na xunta de avaliación, Algoritmo pregunta que nota saca segundo os 52 estudos que reuniu Stanford; a nota é frouxa e el deféndese con que ao alumnado lle gusta. Xiz: «Tamén lle gusta o recreo». O chasco lévao Algoritmo e remata Xiz. O claustro é onde ocorre a escena (unha xunta de avaliación) e ademais está libre.",
+  "guion": {
+   "vinetas": [
+    {
+     "cartela": "Na xunta de avaliación, coas notas da IA.",
+     "escenario": "claustro",
+     "tiza": {
+      "expresion": "neutral",
+      "postura": "sostener",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "contento",
+      "postura": "jarras",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "objeto": "folio",
+     "lleva": "tiza",
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Stanford reuniu 52 estudos sobre a IA na escola.",
+       "tipo": "habla"
+      },
+      {
+       "quien": "algoritmo",
+       "texto": "E que nota saco?",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "claustro",
+     "tiza": {
+      "expresion": "preocupado",
+      "postura": "sostener",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "sorprendido",
+      "postura": "cabeza",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "objeto": "folio",
+     "lleva": "tiza",
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Resultados desiguais. Ningún uso mellora a aprendizaxe de forma consistente.",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "claustro",
+     "tiza": {
+      "expresion": "contento",
+      "postura": "encoger",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "preocupado",
+      "postura": "arriba",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "algoritmo",
+       "texto": "Pero ao alumnado gústolle!",
+       "tipo": "habla"
+      },
+      {
+       "quien": "tiza",
+       "texto": "Tamén lle gusta o recreo.",
+       "tipo": "habla"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "traduccion": "automática con IA"
+}

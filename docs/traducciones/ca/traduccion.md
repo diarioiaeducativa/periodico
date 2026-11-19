@@ -1,17 +1,17 @@
-<!-- origen: 9cc2281a405c9371 -->
+<!-- origen: 2856bceb652c83cb -->
 # Llibre del traductor del Diari d'IA Educativa
 
-Com es tradueix el diari del castellà al català, al gallec, a l'euskera i a l'anglès. El llegeixen tots els
-agents que tradueixen alguna cosa que llegirà el públic, a més del [llibre d'estil](estilo.md), que val
+Com es tradueix el diari del castellà al català, al gallec, a l'èuscar i a l'anglès. El llegeixen tots els
+agents que tradueixen alguna cosa que ha de llegir el públic, a més del [llibre d'estil](estilo.md), que val
 igual en totes les llengües. Es llegeix l'apartat general i el de la llengua de cada encàrrec.
 
 ## Per a totes les llengües
 
-- **Es tradueix el sentit, en el registre natural de cada llengua**, com l'escriuria un periodista
+- **Es tradueix el sentit, en el registre natural de cada llengua**, tal com l'escriuria un periodista
   d'aquesta llengua: sense calcs del castellà en l'ordre de les paraules, les preposicions ni les
   expressions.
 - **El mateix contingut**: els mateixos articles, enllaços, xifres, negretes i cursives que l'original.
-  No s'hi afegeix ni s'hi treu informació, tret de l'explicació d'allò que és propi d'Espanya (més avall).
+  No s'afegeix ni se suprimeix informació, tret de l'explicació del que és propi d'Espanya (més avall).
 - **Els noms no es tradueixen**: productes, aplicacions, empreses i els tres grups («Vibe Coding
   Educativo», «EduMedia-IAG»). Els personatges de la vinyeta sí que tenen nom en cada llengua
   (`scripts/idiomas.py`).
@@ -19,14 +19,14 @@ igual en totes les llengües. Es llegeix l'apartat general i el de la llengua de
   Un organisme espanyol es tradueix si té una forma habitual en la llengua (el ministeri, una conselleria);
   els que tenen nom propi en la seva llengua no (Generalitat, Xunta, Ertzaintza). Les sigles oficials
   es mantenen (LOMLOE, INTEF, AEPD).
-- **Allò que és propi d'Espanya s'explica** quan el lector d'aquesta llengua pot no conèixer-ho, sobretot en
+- **Allò propi d'Espanya s'explica** quan el lector d'aquesta llengua pot no conèixer-ho, sobretot en
   anglès: una etapa educativa, les oposicions, una comunitat autònoma.
 - **Un gràfic** (`grafico`) es tradueix en el títol, les etiquetes, els noms de les sèries i la nota; el
-  tipus, la unitat i els valors no es toquen, i el títol de la font es queda en la llengua original.
+  tipus, la unitat i els valors no es toquen, i el títol de la font es queda en la seva llengua original.
 - **Una font en una altra llengua porta la seva marca** («(en castellà)», «(in Spanish)»), com diu
   `scripts/idiomas.py`.
-- **Davant d'un dubte, es consulta l'obra de referència de la llengua** (en el seu apartat) i no es resol de
-  memòria. Si una obra no deixa llegir, se'n busca la mateixa resposta en una altra de la llista.
+- **Davant d'un dubte, es consulta l'obra de referència de la llengua** (en el seu apartat) i no es resol
+  de memòria. Si una obra no deixa llegir, es busca la mateixa resposta en una altra de la llista.
 - **El mateix terme sempre**: el lèxic de la IA de cada llengua està fixat més avall. No s'alternen
   formes («xatbot» i «chatbot» en el mateix número).
 - **Allò correcte no es corregeix**: si una forma sembla estranya però la recull la norma, es deixa.
@@ -45,7 +45,7 @@ igual en totes les llengües. Es llegeix l'apartat general i el de la llengua de
   l'estil periodístic de la ràdio i la televisió públiques.
 
 **Format**
-- Hores amb punt: «a les 10.30».
+- Hores amb punt: «a les 10.30»; el fus, «(hora peninsular espanyola, UTC+1)».
 - Percentatge amb espai: «10 %», com demana l'Optimot.
 - Milers amb punt (115.000); ordinals «4t d'ESO», «1r de batxillerat».
 - Càrrecs, etapes educatives i assignatures en minúscula («primària», «batxillerat»); els organismes, en
@@ -76,14 +76,14 @@ igual en totes les llengües. Es llegeix l'apartat general i el de la llengua de
   (terminologia) i el [Nomenclátor](https://toponimia.xunta.gal/gl) (topònims de Galícia).
 
 **Format**
-- Hores amb punt: «ás 10.30».
+- Hores amb punt: «ás 10.30»; el fus, «(hora peninsular española, UTC+1)».
 - Percentatge amb espai: «30 %».
 - Milers amb espai: «115 000».
 - Càrrecs, dies, mesos i etapes en minúscula: «educación primaria», «bacharelato», «educación secundaria».
 - Topònims de Catalunya i del País Basc en la seva forma oficial: «Girona», «Donostia».
 
 **Vocabulari**
-- «o profesorado», «o alumnado»; vigila el gènere («o xiz») i evita els castellanismes («encerado», no
+- «o profesorado», «o alumnado»; cuida el gènere («o xiz») i evita els castellanismes («encerado», no
   «pizarra»; «relatorios», no «ponencias»).
 - IA: «intelixencia artificial (IA)», «IA xerativa», «modelo de linguaxe (LLM)», «axente de IA»,
   «aprendizaxe automática», «código aberto», «aplicación». Els quatre últims no són en el
@@ -95,9 +95,9 @@ igual en totes les llengües. Es llegeix l'apartat general i el de la llengua de
   equivoca», no «só equivócase».
 - «Ambos» porta article davant del substantiu: «ambos os modelos».
 
-## Euskera
+## Èuscar
 
-**Norma**: euskara batua d'Euskaltzaindia, en registre periodístic.
+**Norma**: èuscar batua d'Euskaltzaindia, en registre periodístic.
 
 **On consultar**
 - [Normes d'Euskaltzaindia](https://www.euskaltzaindia.eus/index.php?option=com_euskaltzaindiarenarauak&view=frontpage&Itemid=1723&lang=eu)
@@ -108,11 +108,11 @@ igual en totes les llengües. Es llegeix l'apartat general i el de la llengua de
 - [Kalkoen Behatokia](https://www.ehu.eus/ehg/kalkoak/) de la UPV/EHU: calcs del castellà.
 
 **Format** (norma 203 d'Euskaltzaindia)
-- Hores: «10:30ean». Dates: «2026ko azaroaren 13an».
+- Hores: «10:30ean»; el fus, «(Espainiako penintsulako ordua, UTC+1)». Dates: «2026ko azaroaren 13an».
 - Percentatge amb el signe davant i espai: «% 35».
 - Milers amb espai: «115 000».
 - Càrrecs en minúscula; organismes i etapes educatives en majúscula («Lehen Hezkuntza», «Batxilergoa»),
-  com mana la norma 200.
+  tal com mana la norma 200.
 - Sigles i noms declinats sense guionet: «AAren», «ElevenLabsen».
 - Topònims: normes 32 (Espanya), 151 (regions) i 38 (països).
 
@@ -120,7 +120,7 @@ igual en totes les llengües. Es llegeix l'apartat general i el de la llengua de
 - «irakasleak», «ikasleak»; el diari és «egunkaria», mai «diarioa»; un centre educatiu és
   «ikastetxea», no «zentroa».
 - IA: «adimen artifiziala (AA)», «AA sortzailea», «ikaste automatikoa», «kode irekia», «aplikazioa»,
-  «txatbota». El model de llenguatge i l'agent d'IA no tenen terme normalitzat: el diari usa
+  «txatbota». El model de llenguatge i l'agent d'IA no tenen terme normalitzat: el diari fa servir
   «hizkuntza-eredua» i «AA agentea».
 - *Prompt*, en cursiva, sense traduir: no té terme normalitzat.
 
@@ -138,7 +138,8 @@ igual en totes les llengües. Es llegeix l'apartat general i el de la llengua de
 - [IATE](https://iate.europa.eu) (terminologia de la UE) i l'[Oxford Learner's Dictionary](https://www.oxfordlearnersdictionaries.com).
 
 **Format**
-- Dates: «13 November 2026». Hores: «10.30am», com The Guardian.
+- Dates: «13 November 2026». Hores: «10.30am», com The Guardian; el fus,
+  «10.30am CET (UTC+1)», o CEST (UTC+2) a l'estiu, i la de fora amb la d'origen: «10am PT (6pm CET, UTC+1)».
 - Percentatge enganxat a la xifra: «35%». Milers amb coma: «115,000».
 - Cometes angleses (“ ”), mai les espanyoles; ortografia en -ise («organise»).
 - Càrrecs, etapes i organismes genèrics en minúscula («the education ministry», «secondary education»).
@@ -150,7 +151,7 @@ igual en totes les llengües. Es llegeix l'apartat general i el de la llengua de
   «hallucination», «open-source» (amb guionet davant del substantiu), «app».
 - Allò que en l'original es va dir en anglès es copia de la font, no es retradueix.
 
-**Allò que és propi d'Espanya**
+**Allò propi d'Espanya**
 - Un organisme, amb el seu nom descriptiu en anglès i la sigla original: «the Spanish education
   ministry», «Spain's education law (LOMLOE)»; mai una sigla anglesa inventada.
 - «autonomous community» (comunitat autònoma), «regional education ministry» (conselleria),

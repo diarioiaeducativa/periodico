@@ -1,0 +1,48 @@
+{
+  "fecha": "2026-11-18",
+  "piezas": [
+    {
+      "id": "cmu-tutoria-socratica-errores",
+      "seccion": "biblioteca",
+      "importancia": 2,
+      "grupo": "chatgpt",
+      "antetitulo": "Estudi experimental",
+      "titular": "Un experiment amb 400 adults conclou que un tutor d'IA socràtic ensenya més que explicar l'error",
+      "entradilla": "Investigadors de Carnegie Mellon comparen quatre maneres de donar retroacció després d'un error i suggereixen que el que funciona és tornar l'alumne a la tasca fins que l'encerti.",
+      "cuerpo": [
+        "Michael W. Asher, Meng Cao i Paulo F. Carvalho, de l'Institut d'Interacció Persona-Ordinador de la Universitat Carnegie Mellon, van publicar el 15 de novembre del 2026 a arXiv un estudi que posa a prova una intuïció molt estesa: que un model de llenguatge ajuda més a aprendre com millor explica per què s'ha equivocat l'estudiant. És un article de recerca, amb l'experiment preregistrat i amb les dades i el codi oberts, no una guia ni una recomanació oficial.",
+        "El punt de partida és que els tutors d'IA avaluats fins ara han donat resultats modestos. Els autors recorden l'assaig de dos anys amb Khanmigo en 18 centres de secundària, de Philip Oreopoulos i Nicole Low, on l'efecte sobre les proves estandarditzades va ser petit i l'estudiant mitjà va parlar amb el tutor només en el 17 % de les sessions en què va cometre errors. La seva hipòtesi és que un xatbot que espera que li pregunten arriba tard: la persona que falla sol abandonar. Proposen un tutor proactiu, integrat en el cicle de pràctica i correcció.",
+        "L'experiment va reunir 400 adults dels Estats Units que no sabien plantejar equacions de restricció (per exemple, la que relaciona els metres de tanca disponibles amb les dimensions d'un recinte). Després de cada intent en tres problemes, se'ls va assignar a l'atzar una de quatre maneres de retroacció: veure només la resposta correcta; una explicació genèrica escrita per endavant; aquesta explicació més una altra de personalitzada sobre l'error, generada al moment per Gemini 3.5 Flash; o una conversa amb un tutor, el mateix model, que tenia prohibit donar la resposta i havia de guiar amb preguntes socràtiques.",
+        "Els resultats afavoreixen el tutor socràtic. Va portar els participants a corregir per ells mateixos 131 dels seus 206 errors (el 64 %), i van treure 9 punts percentuals més (0,24 desviacions típiques) que els grups amb explicacions en tres preguntes finals semblants a les practicades. També van dir que la sessió els havia resultat més interessant, menys frustrant i menys costosa, tot i que va durar gairebé el doble: 13,3 minuts de mitjana, davant d'entre 6,8 i 7,3 en les altres condicions. Les explicacions personalitzades no van millorar les genèriques, i cap de les dues no va superar de manera fiable mostrar simplement la resposta correcta.",
+        "Convé llegir-ho amb els seus límits, que els autors reconeixen. L'avantatge del tutor va aparèixer només en problemes com els practicats, no en la pregunta sobre un objectiu no ensenyat ni en el problema que en combinava diversos, i la diferència en la prova final té una p de 0,048, just a la vora del que és significatiu. Es va tractar d'una sola sessió d'uns vint minuts, amb un tema de matemàtiques i adults, no pas amb alumnat escolar. A més, la condició socràtica reunia diverses coses alhora (tornar-ho a intentar, preguntes adaptades i un to encoratjador), de manera que el disseny no separa quina d'aquestes produeix l'efecte. Tampoc no compara amb el mateix temps dedicat a més exercicis, i el cost, uns 12 cèntims de dòlar per participant, creix amb els usuaris.",
+        "D'aquí en treuen un marc que anomenen d'experiència de domini: la pràctica va abans que l'explicació, la dificultat ha de produir errors informatius sense desbordar, i l'estudiant necessita poder reintentar fins a aconseguir-ho. La seva lectura és que el valor d'un tutor d'IA no és explicar l'error amb més precisió, sinó convertir-lo en un encert propi.",
+        "Per al professorat, l'estudi no prova cap pràctica d'aula, però deixa pistes de disseny que es poden assajar: demanar a l'assistent que no doni la solució i que descompongui el problema en preguntes més petites, i exigir un primer intent abans de qualsevol ajuda. Com a context, el diari ha publicat el 18 de novembre [la revisió de Stanford de 52 estudis causals sobre IA a l'escola](pieza:2026-11-18/stanford-evidencia-ia-escuela), que parla de resultats desiguals. Per començar, n'hi ha prou de llegir el resum i les seccions 4 i 5.2 de l'article."
+      ],
+      "documento": {
+        "titulo": "Turning Errors into Successes: Designing LLM Tutoring Around Scaffolded Error Correction",
+        "autoria": "Michael W. Asher, Meng Cao i Paulo F. Carvalho (Carnegie Mellon University)",
+        "anyo": "2026",
+        "idioma": "anglès",
+        "licencia": "CC BY 4.0",
+        "url": "https://arxiv.org/abs/2611.20061v1"
+      },
+      "fuentes": [
+        {"titulo": "Asher, Cao i Carvalho (2026), Turning Errors into Successes, arXiv:2611.20061 (en anglès)", "url": "https://arxiv.org/abs/2611.20061v1"},
+        {"titulo": "Stanford reuneix 52 estudis causals sobre IA a l'escola i hi veu resultats desiguals", "url": "pieza:2026-11-18/stanford-evidencia-ia-escuela"}
+      ],
+      "mensaje": {"grupo": "chatgpt", "id": 54509},
+      "comprobado": "Leído el texto completo del PDF de la entrada hasta el final de la discusión y las limitaciones (no las referencias en detalle) y contrastadas con él todas las cifras, condiciones, límites y el marco. Abierta la página oficial de arXiv (arxiv.org/abs/2611.20061v1): título, autores, envío del 15-11-2026, licencia CC BY 4.0, 400 adultos, 0,24 DT y 64 %. No se abrió el PDF en arXiv ni el material suplementario, el repositorio de datos ni el preregistro. Las cifras de Khanmigo son las que cita el propio artículo, no contrastadas con el estudio original. Stanford: pieza ya publicada, clave presente en publicado.txt. Extensión del cuerpo: unas 650 palabras.",
+      "ilustracion": "Esquema de dos caminos tras un error: arriba, el estudiante falla y recibe una explicación (genérica o personalizada) y pasa al siguiente problema; abajo, falla, el tutor le hace una pregunta más pequeña, el estudiante reintenta y llega a la respuesta correcta, con un bucle de intento, error, pregunta y acierto. Un rótulo marca el 64 % de errores resueltos con el tutor.",
+      "ilustracion_alt": "Dos camins després d'un error, marcat amb una creu vermella. A dalt, l'error porta a un requadre «Explicació» i d'allà als problemes següents. A baix, l'error porta a «Pregunta», després a «Reintent», amb una fletxa que torna de «Reintent» a «Pregunta» mentre no s'encerta, i finalment a una marca de verificació sota el rètol «Encert». A sobre, el rètol «64 %»."
+    }
+  ],
+  "ya_contado": [],
+  "descartado": [],
+  "repaso": [
+    "Cifras, autoría, fecha, condiciones y límites confirmados con el texto completo y la página de arXiv.",
+    "Entradilla: «concluyen» pasa a «sugieren» (los autores dicen «suggest»).",
+    "Khanmigo: «el alumnado mediano» (es el estudiante mediano quien participó en el 17 %); quitado el rango 0,06-0,08 para ajustar la extensión.",
+    "Párrafo del profesorado: aclarado que el estudio no prueba prácticas de aula, solo da pistas de diseño; quitada una frase repetida sobre Stanford.",
+    "Recortadas frases menores (los tres problemas, el máximo de ocho respuestas, Pittsburgh, «reclutados en línea») para quedar bajo 700 palabras."
+  ]
+}

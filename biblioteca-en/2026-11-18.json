@@ -1,0 +1,48 @@
+{
+  "fecha": "2026-11-18",
+  "piezas": [
+    {
+      "id": "cmu-tutoria-socratica-errores",
+      "seccion": "biblioteca",
+      "importancia": 2,
+      "grupo": "chatgpt",
+      "antetitulo": "Experimental study",
+      "titular": "Experiment with 400 adults finds a Socratic AI tutor teaches more than explaining the mistake",
+      "entradilla": "Carnegie Mellon researchers compare four ways of giving feedback after a mistake and suggest that what works is sending the student back to the task until they get it right.",
+      "cuerpo": [
+        "Michael W. Asher, Meng Cao and Paulo F. Carvalho, of Carnegie Mellon University's Human-Computer Interaction Institute, published a study on arXiv on 15 November 2026 that tests a widely held intuition: that a language model helps students learn more the better it explains why they went wrong. It is a research paper, with a preregistered experiment and open data and code, not a guide or an official recommendation.",
+        "The starting point is that the AI tutors evaluated so far have produced modest results. The authors recall the two-year trial of Khanmigo in 18 secondary schools, by Philip Oreopoulos and Nicole Low, in which the effect on standardised tests was small and the median student talked to the tutor in only 17% of the sessions in which they made mistakes. Their hypothesis is that a chatbot that waits to be asked comes too late: people who fail tend to give up. They propose a proactive tutor, built into the cycle of practice and correction.",
+        "The experiment brought together 400 adults in the United States who did not know how to set up constraint equations (for example, the one relating the metres of fencing available to the dimensions of an enclosure). After each attempt at three problems, they were randomly assigned one of four forms of feedback: seeing only the correct answer; a generic, pre-written explanation; that explanation plus a personalised one about their own mistake, generated on the spot by Gemini 3.5 Flash; or a conversation with a tutor, the same model, which was forbidden from giving the answer and had to guide them with Socratic questions.",
+        "The results favour the Socratic tutor. It led participants to correct 131 of their 206 mistakes themselves (64%), and they scored 9 percentage points higher (0.24 standard deviations) than the groups given explanations on three final questions similar to those they had practised. They also said the session had been more interesting, less frustrating and less costly, although it lasted almost twice as long: 13.3 minutes on average against between 6.8 and 7.3 in the other conditions. Personalised explanations did not improve on generic ones, and neither reliably outperformed simply showing the correct answer.",
+        "It should be read with its limits, which the authors acknowledge. The tutor's advantage appeared only on problems like those practised, not on the question about an untaught objective or on the problem that combined several, and the difference in the final test has a p-value of 0.048, right on the edge of significance. It was a single session of about twenty minutes, on one maths topic and with adults, not school students. Moreover, the Socratic condition bundled several things together (trying again, tailored questions and an encouraging tone), so the design does not separate which of them produces the effect. Nor does it compare with the same time spent on more exercises, and the cost, about 12 US cents per participant, grows with the number of users.",
+        "From this they draw a framework they call mastery experience: practice comes before explanation, the difficulty should produce informative errors without overwhelming, and the student needs to be able to retry until they succeed. Their reading is that the value of an AI tutor lies not in explaining the mistake more precisely but in turning it into a success of the student's own.",
+        "For teachers, the study does not prove any classroom practice, but it leaves design clues that can be tried out: asking the assistant not to give the solution and to break the problem down into smaller questions, and requiring a first attempt before any help. For context, the paper carried [Stanford's review of 52 causal studies on AI in schools](pieza:2026-11-18/stanford-evidencia-ia-escuela) on 18 November, which reports uneven results. To get started, it is enough to read the abstract and sections 4 and 5.2 of the paper."
+      ],
+      "documento": {
+        "titulo": "Turning Errors into Successes: Designing LLM Tutoring Around Scaffolded Error Correction",
+        "autoria": "Michael W. Asher, Meng Cao and Paulo F. Carvalho (Carnegie Mellon University)",
+        "anyo": "2026",
+        "idioma": "English",
+        "licencia": "CC BY 4.0",
+        "url": "https://arxiv.org/abs/2611.20061v1"
+      },
+      "fuentes": [
+        {"titulo": "Asher, Cao and Carvalho (2026), Turning Errors into Successes, arXiv:2611.20061", "url": "https://arxiv.org/abs/2611.20061v1"},
+        {"titulo": "Stanford brings together 52 causal studies on AI in schools and sees uneven results", "url": "pieza:2026-11-18/stanford-evidencia-ia-escuela"}
+      ],
+      "mensaje": {"grupo": "chatgpt", "id": 54509},
+      "comprobado": "Leído el texto completo del PDF de la entrada hasta el final de la discusión y las limitaciones (no las referencias en detalle) y contrastadas con él todas las cifras, condiciones, límites y el marco. Abierta la página oficial de arXiv (arxiv.org/abs/2611.20061v1): título, autores, envío del 15-11-2026, licencia CC BY 4.0, 400 adultos, 0,24 DT y 64 %. No se abrió el PDF en arXiv ni el material suplementario, el repositorio de datos ni el preregistro. Las cifras de Khanmigo son las que cita el propio artículo, no contrastadas con el estudio original. Stanford: pieza ya publicada, clave presente en publicado.txt. Extensión del cuerpo: unas 650 palabras.",
+      "ilustracion": "Esquema de dos caminos tras un error: arriba, el estudiante falla y recibe una explicación (genérica o personalizada) y pasa al siguiente problema; abajo, falla, el tutor le hace una pregunta más pequeña, el estudiante reintenta y llega a la respuesta correcta, con un bucle de intento, error, pregunta y acierto. Un rótulo marca el 64 % de errores resueltos con el tutor.",
+      "ilustracion_alt": "Two paths after a mistake, marked with a red cross. At the top, the mistake leads to a box labelled “Explanation” and from there to the next problems. At the bottom, the mistake leads to “Question”, then to “Retry”, with an arrow returning from “Retry” to “Question” until the answer is right, and finally to a tick under the label “Success”. Above, the label “64%”."
+    }
+  ],
+  "ya_contado": [],
+  "descartado": [],
+  "repaso": [
+    "Cifras, autoría, fecha, condiciones y límites confirmados con el texto completo y la página de arXiv.",
+    "Entradilla: “concluyen” pasa a “sugieren” (los autores dicen “suggest”).",
+    "Khanmigo: “el alumnado mediano” (es el estudiante mediano quien participó en el 17 %); quitado el rango 0,06-0,08 para ajustar la extensión.",
+    "Párrafo del profesorado: aclarado que el estudio no prueba prácticas de aula, solo da pistas de diseño; quitada una frase repetida sobre Stanford.",
+    "Recortadas frases menores (los tres problemas, el máximo de ocho respuestas, Pittsburgh, “reclutados en línea”) para quedar bajo 700 palabras."
+  ]
+}

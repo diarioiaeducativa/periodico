@@ -1,0 +1,214 @@
+{
+  "fecha": "2026-11-18",
+  "hay_edicion": true,
+  "motivo": "Día normal: la actualización de la revisión de Stanford sobre IA en las escuelas, dos novedades de administraciones (Galicia y Madrid) en ChatGPT-IA-edu, una herramienta de música y vídeo en EduMedia-IAG y una conversación sobre analítica respetuosa con la privacidad en Vibe Coding Educativo. Gemini Notebook, Flow y las aplicaciones de Sarroca y Agente Clima ya salieron en el número 17. GPT-6.2 Astra y Sol ocuparon el grupo de EduMedia-IAG, pero no se ha hallado anuncio oficial de OpenAI con fecha, planes ni precios; solo se recoge su guía de Codex en un breve.",
+  "piezas": [
+    {
+      "id": "stanford-evidencia-ia-escuela",
+      "seccion": "herramientas",
+      "importancia": 1,
+      "grupo": "chatgpt",
+      "antetitulo": "Stanfordeko ikerketa",
+      "titular": "Stanfordek eskolan AAri buruzko 52 azterketa kausal bildu ditu eta emaitza desberdinak ikusten ditu",
+      "entradilla": "Azaroko berrikuspenak 20 lanetatik 52ra pasatzen da eta ondorioztatzen du AA material berria ulertzeko hobeto dagoela zereginak egiteko baino, baina ez dagoela erabilera bakar bat ere ikaskuntza modu koherentean hobetzen duenik.",
+      "cuerpo": [
+        "Stanfordeko Unibertsitateko SCALE ekimenak 2026ko azaroaren 10ean argitaratu zuen [«The Evidence Base on AI in K-12: A November 2026 Review»](https://scale.stanford.edu/ai/evidence-base-review/evidence-base-ai-k12-november-review), martxoko berrikuspenaren eguneratzea. Azterketa kausalak baino ez ditu biltzen, hau da, saiakuntza ausazkoak eta antzeko diseinuak, AAri efektu bat egotzi ahal izateko. 20 lanetatik 52ra pasatzen da, 32 berri 2025eko urriaren eta 2026ko ekainaren artean argitaratuak. Berrietatik bost, ikasleengan zentratuak, Estatu Batuetako eskoletan egin ziren; aurreko berrikuspenean, bat ere ez.",
+        "Berrikuspenaren arabera, AA ikaskuntza laguntzeko erabiltzea egokiagoa dela dirudi zereginak egiteko erabiltzea baino: Brasilgo unibertsitate-ikasleekin egindako azterketa batean, lana AArekin egiteak okerrera egin zuen ondorengo ebaluazio batean, AArik gabe. Hala ere, erabilera-mota batek ere ez du ikaskuntza modu koherentean hobetzen, eta ikasleei esperientzia gustatzeak ez du beti emaitza hobeetan islatzen.",
+        "Aipatzen dituen kasuen artean, Turkiakoa dago, 193 irakaslerekin eta 5. eta 12. mailako 2 816 ikaslerekin: irakasleei GPT-4o-n oinarritutako AA laguntzaile bat ematea ikasleen motibazioa eta konfiantza murriztu zuen; aurretik errendimendu txikiena zuten irakasleekin, notek behera egin zuten. Beste batean, Sierra Leonan, 7. eta 8. mailako 1 423 matematika-ikaslerekin, hobekuntza ikusi zen irakasleek Gemini Guided Learning, Googleren laguntzailearen ikasketa gidatuko modua, beren klaseen erdian txertatu zutenean; Googleren eta Fab AIren talde batek sinatzen du, eta Google.org berrikuspenaren beraren finantzatzaileen artean dago.",
+        "Egileek berek ohartarazten dute emaitzak ezin direla Estatu Batuetako eskola-sistema osora orokortu, ekitateari eta epe luzeko efektuei buruzko ebidentzia urria dela eta azterketa asko preprint-ak direla, hau da, adituek berrikusi gabe zabaldutako lanak."
+      ],
+      "fuentes": [
+        {
+          "titulo": "The Evidence Base on AI in K-12: A November 2026 Review (SCALE, Stanford) (ingelesez)",
+          "url": "https://scale.stanford.edu/ai/evidence-base-review/evidence-base-ai-k12-november-review"
+        }
+      ],
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 54498
+      },
+      "comprobado": "Revisado por segunda vez con la página de SCALE (Stanford): fecha 10-11-2026, 20 a 52 estudios, 32 nuevos, cinco de alumnado en K-12 de EE. UU., Turquía (193 docentes, 2.816 estudiantes de 5.º a 12.º, GPT-4o, preprint), Sierra Leona (1.423 estudiantes de 7.º y 8.º, equipo de Google y Fab AI; Google.org financia la revisión, no consta que financie ese estudio) y limitaciones. El ejemplo de rendimiento peor sin IA es de universitarios de Brasil. Buscador del diario: tema no publicado antes. Mensaje 54498 corresponde al tema.",
+      "ilustracion": "Esquema con dos caminos desde un alumno ante un asistente de IA: «entender material nuevo» (una flecha ascendente con signo de interrogación suave) y «producir la tarea» (una flecha descendente), con una balanza al fondo que indica «resultados desiguales».",
+      "ilustracion_alt": "Eskema bat: pertsona batek laguntzaile bat erabiltzen du, eta handik bi bide ateratzen dira: bat «Ulertu» errotulura eta bestea, gorriz, «Zeregina egin» errotulura; amaieran, balantza bat. Errotuluak: Laguntzailea, Ulertu, Zeregina egin, Desberdinak.",
+      "grafico": null
+    },
+    {
+      "id": "galicia-ley-educacion-digital",
+      "seccion": "novedades",
+      "importancia": 2,
+      "grupo": "chatgpt",
+      "antetitulo": "Autonomia-erkidegoko araudia",
+      "titular": "Galiziako Parlamentuak ikasgeletan mugikorrak, pantailak eta AA arautzen dituen legea onartu du",
+      "entradilla": "Hezkuntza digitalaren legeak gailuen erabilera indibiduala mugatzen du Lehen Hezkuntzako 5. mailara arte, eta PPdeGren aldeko botoekin onartu zen, BNGk eta PSdeGk uko eginda.",
+      "cuerpo": [
+        "Galiziako Parlamentuak behin betiko onartu zuen 2026ko azaroaren 17an, asteartea, Hezkuntza digitalaren legea, [Galicia Confidencial](https://www.galiciaconfidencial.com/noticia/6095050-parlamento-galego-aproba-definitivamente-lei-educacion-dixital-entre-criticas-do-psdeg-e-do-bng)-ek jakinarazi duenez. Arauak ikastetxeetan mugikorren, pantailen eta adimen artifizialaren erabilera arautzen du. Aldeko botoa eman zuen Galiziako Alderdi Popularrak (PPdeG), abstenitu egin zen Democracia Ourensana eta aurka bozkatu zuten Galiziako Blokeak (BNG) eta Galiziako Alderdi Sozialistak (PSdeG).",
+        "Kronika horren arabera, legeak gailu elektronikoen erabilera indibiduala mugatzen du ikasleen adinaren arabera, Lehen Hezkuntzako 5. mailara arte, eta mugikorrak helburu pedagogikoetarako onartzen ditu DBHko 3. mailatik aurrera. Halaber, debekatzen du baimenik gabe klaseak grabatzea, aurrez aurrekoak zein linekoak, eta irakasleen autoritatea eremu digitalera hedatzen du.",
+        "Kronikak adierazten du legeak ikasgeletan AAren erabileraren araudia barne hartzen duela, baina ez ditu bere arauak zehazten; egunkari honek ez du onartutako testua irakurri ahal izan, beraz atal horren edukia baieztatu gabe geratzen da. Oposizioak kritikatu zuen PSdeGren 158 zuzenketatik 4 eta BNGren 69 zuzenketatik 6 baino ez onartzea, eta hezkuntza-komunitatearekin adostasun handiagoa eskatu zuen.",
+        "Taldean albistea Hezkuntza digitalari buruzko autonomia-erkidegoko lehen lege gisa partekatu zen, AAri buruzko kapitulu batekin. «Lehen» hori kronikan Hezkuntza kontseilaria den Román Rodríguezek dio, eta berak defendatzen du Galizia dela teknologia eta AA ikasgeletan arautzeko lege espezifiko bat onartzen duen lehen autonomia-erkidegoa; egunkari honek ez du beste iturri batekin kontrastatu, ezta AAri buruzko kapitulu propio bat dagoenik ere."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Galicia aproba a lei que regulará os móbiles, as pantallas e a intelixencia artificial nas aulas (Galicia Confidencial) (galegoz)",
+          "url": "https://www.galiciaconfidencial.com/noticia/6095050-parlamento-galego-aproba-definitivamente-lei-educacion-dixital-entre-criticas-do-psdeg-e-do-bng"
+        }
+      ],
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 54496
+      },
+      "comprobado": "Revisada la crónica de Galicia Confidencial: fecha (17-11-2026), votos, límites por edad, grabaciones y enmiendas. La IA aparece como regulación y «disposiciones relacionadas», sin reglas ni capítulo propio descrito. La afirmación de «primera comunidad autónoma» es del conselleiro, citado en la crónica (el borrador decía que la crónica no la recogía: corregido); no contrastada con otra fuente. No se ha localizado el texto aprobado. Mensaje 54496 corresponde al tema. Buscador del diario: no publicado antes.",
+      "ilustracion": null,
+      "ilustracion_alt": "Eskema bat: parlamentu-eraikin batek lege batera darama, eta handik gorriz marratutako mugikor bat eta bideo-kamera bat ateratzen dira. Errotuluak: Legebiltzarra, Lege digitala, Mugikorrak, Grabatu gabe."
+    },
+    {
+      "id": "educamadrid-agente-ia",
+      "seccion": "novedades",
+      "importancia": 2,
+      "grupo": "chatgpt",
+      "antetitulo": "Hezkuntza-administrazioa",
+      "titular": "Madrilek AA agente bat gehitu dio EducaMadrid-i, material pertsonalizatuak prestatzen dituena",
+      "entradilla": "Madrilgo Erkidegoaren arabera, agentea bere Digitalizazio Kontseilaritzako funtzionarioek garatu dute eta funts publikoekin sostengatutako ikastetxeetako irakasleek erabil dezakete.",
+      "cuerpo": [
+        "Madrilgo Erkidegoak 2026ko azaroaren 16an iragarri zuen, [bere webguneko ohar batean](https://www.comunidad.madrid/noticias/2026/11/16/comunidad-madrid-incorpora-plataforma-educamadrid-agente-ia-genera-tiempo-real-contenidos-personalizados-cada-estudiante), adimen artifizialeko agente bat EducaMadrid plataforman. Oharraren arabera, ikasle bakoitzarentzat eduki pertsonalizatuak sortzen ditu denbora errealean, eta Digitalizazio Kontseilaritzako funtzionarioek garatu dute.",
+        "Bere eginkizunen artean, oharrak hauek aipatzen ditu: berariazko hezkuntza-iturrietatik abiatuta apunteak eta errefortzu-dokumentuak egitea, plataforman bertan zuzentzen diren autoebaluazio-galdetegiak sortzea, ikasle bakoitzaren bilakaera jarraitzea eta hainbat hizkuntzatan posta elektronikoak idaztea edo berrikustea. Irakasleei zuzenduta dago, eta horiek materialak molda ditzakete; eskualdeko funts publikoekin sostengatutako ikastetxe guztiek erabil dezakete. Administrazioak kalkulatzen du irakasle bakoitzari urtean 40 ordu inguru aska dakizkiokeela ohiko zereginetatik.",
+        "Oharrak ez du adierazten zer AA eredu erabiltzen duen, non ostatatzen den, ezta ikasleen datuak nola tratatzen diren ere. Horiek izan ziren, hain zuzen, taldean planteatu ziren zalantzak, sortuko dituen edukien kalitatearekin batera. Administrazioaren lehen urrats gisa ere baloratu zen."
+      ],
+      "fuentes": [
+        {
+          "titulo": "La Comunidad de Madrid incorpora a la plataforma EducaMadrid un agente de IA (Comunidad de Madrid) (gaztelaniaz)",
+          "url": "https://www.comunidad.madrid/noticias/2026/11/16/comunidad-madrid-incorpora-plataforma-educamadrid-agente-ia-genera-tiempo-real-contenidos-personalizados-cada-estudiante"
+        }
+      ],
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 54513
+      },
+      "comprobado": "Revisada de nuevo la nota oficial de la Comunidad de Madrid (16-11-2026): funciones, destinatarios (profesorado; la nota menciona también la comunicación con familias y usuarios de las Escuelas Oficiales de Idiomas), 40 horas anuales, centros sostenidos con fondos públicos, desarrollo por funcionarios de la Consejería de Digitalización; confirmado que no dice modelo, alojamiento ni tratamiento de datos. Mensaje 54513 corresponde al tema. Buscador del diario: EducaMadrid solo aparece en un reportaje anterior sobre edades, sin tratar este agente.",
+      "ilustracion": null,
+      "ilustracion_alt": "Eskema bat: irakasle batek agente bat erabiltzen du, eta handik hiru emaitza ateratzen dira: dokumentu bat, egiaztapen-marka bat eta gutun-azal bat. Errotuluak: Irakaslea, Agentea, Apunteak, Galdetegiak, Mezuak."
+    },
+    {
+      "id": "suno-visuals",
+      "seccion": "multimedia",
+      "importancia": 3,
+      "grupo": "edumedia",
+      "antetitulo": "Musika eta bideoa",
+      "titular": "Sunok Visuals jarri du abian, bere abestiekin letradun bideoak eta azalak sortzeko",
+      "entradilla": "Funtzioak 15 segundora arteko klipak sortzen ditu, eta abestien kredituez bereizitako kredituekin ordaintzen da.",
+      "cuerpo": [
+        "Sunok, AAdun musika-plataformak, 2026ko azaroaren 17an aurkeztu zuen [Visuals](https://suno.com/blog/introducing-visuals), bere abestiak ilustratzeko tresna bat: erritmoa jarraitzen duten letradun bideoak, disko-azalak eta argazki batetik abiatutako klipak. Webean eta iOS eta Androiderako aplikazioetan dago eskuragarri.",
+        "Iragarpenaren arabera, klipek 15 segundora arte irauten dute eta testuarekin luzatu, editatu eta berregin daitezke. Visualsen kredituak, erabilera bakoitza ordaintzeko unitateak, abestienetatik bereizita erosten dira. Sunok artistak, pertsona publikoak edo babestutako lanak irudikatzen dituzten eskaerak eta igoerak blokeatzen ditu, igotzen denaren eskubideak daudela berresteko eskatzen du, eta ur-marka jartzen die irudi eta bideo hauei plataformatik kanpo partekatu aurretik.",
+        "Ikasgelarako, ikasleek sortutako abestiak ilustratzeko balio dezake, betiere aurretik erabilera-baldintzak berrikusiz eta adingabeen irudirik igo gabe."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Introducing Visuals (Suno) (ingelesez)",
+          "url": "https://suno.com/blog/introducing-visuals"
+        }
+      ],
+      "mensaje": {
+        "grupo": "edumedia",
+        "id": 12321
+      },
+      "comprobado": "Revisado de nuevo el anuncio de Suno (17-11-2026): funciones, web, iOS y Android, 15 segundos, créditos aparte, bloqueos, marcas de agua, confirmación de derechos. No dice precio de cada generación; la frase sobre el aula es una sugerencia de la redacción, no de la fuente. Mensaje 12321 corresponde al tema. Buscador del diario: Suno no se había tratado antes.",
+      "ilustracion": null,
+      "ilustracion_alt": "Eskema bat: nota musikal batetik hiru gezi ateratzen dira hiru txartelera: bideo-klaketa bat, irudi bat eta kamera bat. Errotuluak: Abestia, Letradun bideoa, Azala, 15 s-ko klipa, Kreditu bereiziak."
+    },
+    {
+      "id": "umami-analitica-privacidad",
+      "seccion": "vibecoding",
+      "importancia": 3,
+      "grupo": "vce",
+      "antetitulo": "Garapenerako trikimailua",
+      "titular": "Irakasle batek bere aplikazioen erabilera neurtzen du Umamirekin, cookierik gabeko estatistikekin",
+      "entradilla": "Tresna honek ikasleek zer funtzio erabiltzen dituzten jakiteko aukera ematen du, izenik edo posta elektronikorik jaso gabe.",
+      "cuerpo": [
+        "Bere irakurgaien katalogoa [Trama](pieza:2026-11-16/trama-comprensio-lectora) aurkeztean, bere egileak taldean azaldu zuen [Umami](https://umami.is/) erabiltzen duela, web-orriak nola erabiltzen diren erregistratzen duen kode irekiko sistema bat, bere hezkuntza-aplikazioetatik zeintzuk erabiltzen diren gehien eta zer ekintza egiten diren jakiteko (jarduera bat hasi, maila bat aukeratu, material bat deskargatu). Horrekin erabakitzen du non jarri ahalegina.",
+        "Umamik cookierik gabe funtzionatzen du eta ez du gordetzen orria bisitatzen duten pertsonen IP helbidea, baina bai gutxi gorabeherako hiria, nabigatzailea eta gailu mota. Doan instala daiteke zerbitzari edo ordenagailu propio batean, MIT lizentziapean, software librearen lizentzia bat, edo hodeiko bertsioa erabil daiteke; haren [doako planak](https://umami.is/pricing) 100.000 gertaera onartzen ditu hilean webgune bakar batean, eta datuak sei hilabetez gordetzen ditu.",
+        "Cookierik ez erabiltzeak ez du abisatzetik salbuesten. [Datuak Babesteko Espainiako Agentziak](https://www.aepd.es/guias/guia-cookies-analiticas-externas.pdf) baimenik eskatu gabe audientzia neurtzea onartzen du, baldin eta datuak estatistika propioetarako baino ez badira, hirugarrenei lagatzen ez bazaizkie eta gehienez 25 hilabetez gordetzen badira, baina pribatutasun-politikan azaltzeko eskatzen du. Beraz, Umami horrela erabilita ez da baimenik eskatu behar ezta cookien abisurik erakutsi ere, baina bai aplikazioaren pribatutasun-politikan azaldu haren erabilera neurtzen dela, eta datuak ez gorde 25 hilabete baino gehiagoz.",
+        "Haren beste ideia bat ariketa edo irudi bakoitzean abisu-bandera batzuk jartzea da, aplikazioa erabiltzen duen pertsonak akats bat klik batekin seinala dezan, formulariorik edo posta elektronikorik gabe."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Umami (ingelesez)",
+          "url": "https://umami.is/"
+        },
+        {
+          "titulo": "Trama · Comprensió lectora (katalanez)",
+          "url": "https://trama.ortogra.fi/"
+        },
+        {
+          "titulo": "Umami · Prezioak (ingelesez)",
+          "url": "https://umami.is/pricing"
+        },
+        {
+          "titulo": "AEPD · Uso de cookies para herramientas de medición de audiencia (gaztelaniaz)",
+          "url": "https://www.aepd.es/guias/guia-cookies-analiticas-externas.pdf"
+        }
+      ],
+      "mensaje": {
+        "grupo": "vce",
+        "id": 15112
+      },
+      "comprobado": "Abierta la web de Umami: código abierto, sin cookies ni datos personales, autoalojamiento gratis con licencia MIT; no consta en ella el límite del plan gratuito (el de 100.000 eventos que cita el docente se omite). Abierta la web de Trama: usa Umami (instancia propia de ortogra.fi), sin enviar textos personales ni códigos de aula, y recibe los avisos de la bandera. Autor de Trama, según su web, Aarón Fortuño; no se nombra porque el mensaje lo firma una cuenta con otro nombre visible. Enlazada la pieza anterior sobre Trama (2026-11-16). Buscador del diario: Umami no se había tratado. Mensaje 15112 corresponde al tema.",
+      "ilustracion": null,
+      "ilustracion_alt": "Eskema bat: aplikazio-leiho bat, klik egiten duen erakusle batekin, bere erabilera panel batera bidaltzen du, begi marratu batekin; alboan, gorriz marratutako gaileta bat eta bandera bat. Errotuluak: Aplikazioa, Umami, Cookierik ez, Akats-abisua."
+    }
+  ],
+  "breves": [
+    {
+      "texto": "Googlek aldi baterako harien funtzioa zabaltzen ari da bere bilatzailearen AA moduan: elkarrizketa horietako galderak ez dira historialean gordetzen eta ez dute pertsonalizazioan eragiten, azaroaren 17ko iragarpenaren arabera.",
+      "url": "https://blog.google/products-and-platforms/products/search/temporary-threads-ai-mode",
+      "grupo": "chatgpt",
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 54503
+      }
+    },
+    {
+      "texto": "[Trama](pieza:2026-11-16/trama-comprensio-lectora)-k 245 irakurgai ditu jada katalanez eta gaztelaniaz, Lehen Hezkuntzako 3. mailatik DBHko 1. mailara arte, bere webgunearen arabera.",
+      "url": "https://trama.ortogra.fi/",
+      "grupo": "vce",
+      "mensaje": {
+        "grupo": "vce",
+        "id": 15112
+      }
+    },
+    {
+      "texto": "ChatGPT Learn-ek gida bat argitaratu du GPT-6.2 Astra eta Soli zereginak eskatzeko Codex-en, OpenAIren programazio-laguntzailean; orriak ez du adierazten noiz kaleratuko den ezta zer planetan egongo den ere.",
+      "url": "https://learn.chatgpt.com/guides/prompting-gpt-6-2-astra",
+      "grupo": "edumedia",
+      "mensaje": {
+        "grupo": "edumedia",
+        "id": 12332
+      }
+    },
+    {
+      "texto": "Kling AIk Kling Image 4.0 iragarri du, zuzenean 8K bereizmenean sortutako irudiekin, hainbat hizkuntzatako testuarekin eta eskaera bakoitzean elkarren artean koherenteak diren 10 irudirekin, azaroaren 17ko komunikatuaren arabera; ez du adierazten eskuragarritasunik ezta prezioik ere.",
+      "url": "https://www.manilatimes.net/2026/11/18/tmt-newswire/media-outreach-newswire/kling-ai-launches-kling-image-40-with-photographic-realism-and-native-8k-generation/2472379",
+      "grupo": "edumedia",
+      "mensaje": {
+        "grupo": "edumedia",
+        "id": 12323
+      }
+    }
+  ],
+  "descartado": [
+    "Corea del Sur y las gafas en el examen de acceso: el breve ya salió en el número 17 (18-11-2026); se quita para no repetirlo.",
+    "GPT-6.2 Astra y Sol como lanzamiento: la búsqueda no encontró anuncio oficial de OpenAI con fecha, planes ni precios (solo filtraciones); solo se recoge la guía de ChatGPT Learn en un breve.",
+    "Genie 4, nuevo modelo Neon de Gemini, avatares de Google Vids y Gemini 4 Carbon con /swarm: solo enlaces a X sin fuente oficial abierta; la búsqueda de Genie 4 no halló nada oficial. No se confirman.",
+    "Estudio sobre tutor socrático con 400 personas (arXiv 2611.20061): documento de la Biblioteca digital, que tiene su propia sección.",
+    "Cambio de ajustes de privacidad de Gemini (captura de un aviso): sin fuente oficial localizada.",
+    "Celda robotizada en un galpón (Magda Diaz-G): continuación de un tema ya publicado, con enlace de Netlify sin fuente comprobable; no se publica.",
+    "Búsqueda de formación en IA para personal administrativo (pregunta sin respuesta) y minidecálogo de una escuela de idiomas: opiniones personales sin noticia."
+  ],
+  "repaso": [
+    "Stanford: entradilla rebajada («parece más prometedora»); aclarado que el ejemplo de peor rendimiento sin IA es de universitarios de Brasil; la financiación de Google.org es de la revisión, no consta del estudio de Sierra Leona.",
+    "Galicia: corregido el error del borrador: la crónica sí recoge lo de «primera comunidad», pero como afirmación del conselleiro, sin contrastar; el «capítulo sobre IA» del grupo no consta.",
+    "Umami: Trama enlaza ahora la pieza ya publicada (2026-11-16).",
+    "Breve de Corea del Sur quitado: ya salió en el número 17.",
+    "Breve de ChatGPT Learn: precisado que la guía cubre Astra y Sol.",
+    "Añadido un breve de Kling Image 4.0 (comunicado de la empresa abierto; sin disponibilidad ni precios).",
+    "Madrid y Suno: verificados sin cambios."
+  ]
+}

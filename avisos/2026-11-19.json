@@ -1,0 +1,91 @@
+{
+  "fecha": "2026-11-19",
+  "avisos": {
+    "chatgpt": {
+      "saludo": "Buenos días. Evidencia sobre la IA en la escuela, normativa y administración, y un tutor que pregunta.",
+      "puntos": [
+        "Stanford reúne 52 estudios con resultados desiguales: la IA parece más útil para entender material nuevo que para hacer las tareas, pero ningún uso mejora el aprendizaje de forma consistente",
+        "Galicia aprueba una ley sobre móviles, pantallas e IA en las aulas, y Madrid incorpora a EducaMadrid un agente de IA que prepara materiales para el profesorado",
+        "En la Biblioteca digital, un experimento de Carnegie Mellon con 400 adultos: un tutor de IA que guía con preguntas, sin dar la respuesta, enseñó más que explicar el error"
+      ]
+    },
+    "vce": {
+      "saludo": "Buenos días. Medir el uso de una aplicación educativa sin cookies.",
+      "puntos": [
+        "Un docente usa Umami, un sistema de estadísticas de código abierto y sin cookies, para saber qué funciones de sus aplicaciones usa más el alumnado",
+        "Otra idea de ese docente: poner banderas de aviso en cada ejercicio o imagen para señalar un error con un clic, sin formularios ni correo",
+        "Trama, el catálogo de lecturas de esa misma aplicación, ya reúne 245 textos en catalán y castellano, de 3.º de primaria a 1.º de ESO"
+      ],
+      "url": "https://diarioiaeducativa.github.io/n/18-vce.html"
+    },
+    "edumedia": {
+      "saludo": "Buenos días. Dos novedades para crear vídeo e imagen con IA.",
+      "puntos": [
+        "Suno presenta Visuals: vídeos con letra, portadas de álbum y clips de hasta 15 segundos a partir de sus canciones, con créditos que se compran aparte de los de música",
+        "Kling AI anuncia Kling Image 4.0, que genera imágenes en 8K, con texto en varios idiomas y hasta 10 imágenes coherentes entre sí por petición; no indica precios"
+      ],
+      "url": "https://diarioiaeducativa.github.io/n/18-edumedia.html"
+    }
+  },
+  "instagram": "Este número trae un repaso de Stanford a 52 estudios sobre inteligencia artificial en la escuela, con resultados desiguales, y dos novedades de administraciones educativas: una ley gallega sobre móviles, pantallas e IA y un agente de IA en la plataforma educativa de Madrid. También recoge un experimento con 400 adultos en el que un tutor que hace preguntas, en vez de explicar el error, ayudó más a aprender, una forma de medir el uso de una aplicación sin cookies y una herramienta de Suno para crear vídeos a partir de canciones.",
+  "titulo": "Diario de IA Educativa · Núm. 18",
+  "fecha_texto": "Jueves, 19 de noviembre de 2026",
+  "url": "https://diarioiaeducativa.github.io/?n=18",
+  "imagen": "https://diarioiaeducativa.github.io/portadas/2026-11-18-es.jpg",
+  "personas": [
+    {
+      "id": 218499880,
+      "piezas": [
+        {
+          "es": {
+            "titular": "Un experimento con 400 adultos halla que un tutor de IA socrático enseña más que explicar el error",
+            "url": "https://diarioiaeducativa.github.io/2026-11-18/cmu-tutoria-socratica-errores.html"
+          },
+          "ca": {
+            "titular": "Un experiment amb 400 adults conclou que un tutor d'IA socràtic ensenya més que explicar l'error",
+            "url": "https://diarioiaeducativa.github.io/ca/2026-11-18/cmu-tutoria-socratica-errores.html"
+          },
+          "gl": {
+            "titular": "Un experimento con 400 adultos conclúe que un titor de IA socrático ensina máis ca explicar o erro",
+            "url": "https://diarioiaeducativa.github.io/gl/2026-11-18/cmu-tutoria-socratica-errores.html"
+          },
+          "eu": {
+            "titular": "400 helduren esperimentu batek ondorioztatu du AA tutore sokratiko batek akatsa azaltzeak baino gehiago irakasten duela",
+            "url": "https://diarioiaeducativa.github.io/eu/2026-11-18/cmu-tutoria-socratica-errores.html"
+          },
+          "en": {
+            "titular": "Experiment with 400 adults finds a Socratic AI tutor teaches more than explaining the mistake",
+            "url": "https://diarioiaeducativa.github.io/en/2026-11-18/cmu-tutoria-socratica-errores.html"
+          }
+        }
+      ]
+    },
+    {
+      "id": 7198698,
+      "piezas": [
+        {
+          "es": {
+            "titular": "Un docente mide el uso de sus aplicaciones con Umami, unas estadísticas sin cookies",
+            "url": "https://diarioiaeducativa.github.io/2026-11-18/umami-analitica-privacidad.html"
+          },
+          "ca": {
+            "titular": "Un docent mesura l'ús de les seves aplicacions amb Umami, unes estadístiques sense galetes",
+            "url": "https://diarioiaeducativa.github.io/ca/2026-11-18/umami-analitica-privacidad.html"
+          },
+          "gl": {
+            "titular": "Un docente mide o uso das súas aplicacións con Umami, unhas estatísticas sen cookies",
+            "url": "https://diarioiaeducativa.github.io/gl/2026-11-18/umami-analitica-privacidad.html"
+          },
+          "eu": {
+            "titular": "Irakasle batek bere aplikazioen erabilera neurtzen du Umamirekin, cookierik gabeko estatistikekin",
+            "url": "https://diarioiaeducativa.github.io/eu/2026-11-18/umami-analitica-privacidad.html"
+          },
+          "en": {
+            "titular": "A teacher measures the use of their apps with Umami, cookie-free statistics",
+            "url": "https://diarioiaeducativa.github.io/en/2026-11-18/umami-analitica-privacidad.html"
+          }
+        }
+      ]
+    }
+  ]
+}

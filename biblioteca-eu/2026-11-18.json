@@ -1,0 +1,48 @@
+{
+  "fecha": "2026-11-18",
+  "piezas": [
+    {
+      "id": "cmu-tutoria-socratica-errores",
+      "seccion": "biblioteca",
+      "importancia": 2,
+      "grupo": "chatgpt",
+      "antetitulo": "Azterlan esperimentala",
+      "titular": "400 helduren esperimentu batek ondorioztatu du AA tutore sokratiko batek akatsa azaltzeak baino gehiago irakasten duela",
+      "entradilla": "Carnegie Mellon-eko ikertzaileek huts egin ondoren feedbacka emateko lau modu alderatu dituzte, eta iradokitzen dute funtzionatzen duena ikaslea zereginera itzultzea dela, asmatu arte.",
+      "cuerpo": [
+        "Michael W. Asher, Meng Cao eta Paulo F. Carvalho ikertzaileek, Carnegie Mellon Unibertsitateko Pertsona eta Ordenagailuaren Arteko Elkarrekintzaren Institutukoek, azterlan bat argitaratu zuten arXiven 2026ko azaroaren 15ean, oso hedatua dagoen intuizio bat probatzeko: hizkuntza-eredu batek hobeto laguntzen duela ikasten, ikasleak zergatik huts egin duen zenbat eta hobeto azaldu. Ikerketa-artikulu bat da, aurrez erregistratutako esperimentuarekin eta datu eta kode irekiekin; ez da gida bat, ezta gomendio ofizial bat ere.",
+        "Abiapuntua da orain arte ebaluatutako AA tutoreek emaitza apalak eman dituztela. Egileek gogorarazten dute Philip Oreopoulosek eta Nicole Low-k Khanmigorekin egindako bi urteko saiakuntza, Bigarren Hezkuntzako 18 ikastetxetan, non ebaluazio estandarizatuetan eragina txikia izan zen eta ikasle ertainak akatsak egin zituen saioen % 17tan bakarrik hitz egin zuen tutorearekin. Haien hipotesia da galdetzearen zain geratzen den txatbot batek berandu iristen dela: huts egiten duen pertsonak sarritan alde egiten du. Tutore proaktibo bat proposatzen dute, praktika- eta zuzenketa-zikloan txertatua.",
+        "Esperimentuak Estatu Batuetako 400 heldu bildu zituen, murrizketa-ekuazioak plantea zitezkeenik ez zekitenak (adibidez, eskura dauden hesi-metroak eta esparru baten neurriak lotzen dituena). Hiru problemetako saiakera bakoitzaren ondoren, zorizko lau feedback-modutako bat esleitu zitzaien: erantzun zuzena bakarrik ikustea; aurrez idatzitako azalpen generiko bat; azalpen hori gehi haien akatsari buruzko beste bat, pertsonalizatua, Gemini 3.5 Flashek momentuan sortua; edo tutore batekin elkarrizketa bat, eredu bera, erantzuna ematea debekatuta zuena eta galdera sokratikoekin gidatu behar zuena.",
+        "Emaitzek tutore sokratikoaren alde egiten dute. Parte-hartzaileek beren kabuz zuzentzera eraman zituen beren 206 akatsetatik 131 (% 64), eta azken hiru galderetan, praktikatutakoen antzekoak, 9 ehuneko-puntu gehiago atera zituzten (0,24 desbideratze tipiko) azalpenak jaso zituzten taldeek baino. Saioa interesgarriagoa, frustrazio gutxiagokoa eta kostu txikiagokoa izan zela ere esan zuten, nahiz eta ia bi aldiz luzeagoa izan: batez beste 13,3 minutu, beste baldintzetan 6,8 eta 7,3 artekoa izan zenean. Azalpen pertsonalizatuek ez zuten generikoak hobetu, eta bietako batek ere ez zuen modu fidagarrian gainditu erantzun zuzena erakustea besterik gabe.",
+        "Egileek aitortzen dituzten mugekin irakurri behar da. Tutorearen abantaila praktikatuen antzeko problemetan bakarrik agertu zen, ez irakatsi gabeko helburu bati buruzko galderan, ezta hainbat gauza uztartzen zituen problemaren aurrean ere, eta azken probako aldeak 0,048ko p du, esanguratsuaren muturrean. Hogei bat minutuko saio bakarra izan zen, matematikako gai batekin eta helduekin, ez eskola-ikasleekin. Gainera, baldintza sokratikoak hainbat gauza batera biltzen zituen (berriz saiatzea, galdera egokituak eta tonu adoretsua), beraz diseinuak ez du bereizten zeinek sortzen duen efektua. Ez du konparatzen ere denbora bera ariketa gehiagotan emanda, eta kostua, parte-hartzaileko 12 dolar-zentimo inguru, erabiltzaileekin batera hazten da.",
+        "Hortik, domeinu-esperientzia deitzen dioten esparru bat ateratzen dute: praktika azalpenaren aurretik doa, zailtasunak akats informatzaileak sortu behar ditu gainezkatu gabe, eta ikasleak berriz saiatu ahal izan behar du lortu arte. Haien irakurketa da AA tutore baten balioa ez dagoela akatsa zehaztasun handiagoz azaltzean, baizik eta berea den asmatze bihurtzean.",
+        "Irakasleentzat, azterlanak ez du frogatzen gela-praktika bat, baina proba daitezkeen diseinu-pistak uzten ditu: laguntzaileari irtenbidea ez emateko eta problema galdera txikiagoetan deskonposatzeko eskatzea, eta edozein laguntzaren aurretik lehen saiakera bat exijitzea. Testuinguru gisa, egunkariak azaroaren 18an argitaratu du [Stanfordek eskolako AAri buruzko 52 azterlan kausalen gainean egindako berrikuspena](pieza:2026-11-18/stanford-evidencia-ia-escuela), emaitza desberdinez mintzo dena. Hasteko, nahikoa da artikuluaren laburpena eta 4. eta 5.2. ataletara irakurtzea."
+      ],
+      "documento": {
+        "titulo": "Turning Errors into Successes: Designing LLM Tutoring Around Scaffolded Error Correction",
+        "autoria": "Michael W. Asher, Meng Cao eta Paulo F. Carvalho (Carnegie Mellon University)",
+        "anyo": "2026",
+        "idioma": "ingelesa",
+        "licencia": "CC BY 4.0",
+        "url": "https://arxiv.org/abs/2611.20061v1"
+      },
+      "fuentes": [
+        {"titulo": "Asher, Cao eta Carvalho (2026), Turning Errors into Successes, arXiv:2611.20061 (ingelesez)", "url": "https://arxiv.org/abs/2611.20061v1"},
+        {"titulo": "Stanfordek eskolako AAri buruzko 52 azterlan kausal bildu ditu eta emaitza desberdinak ikusten ditu", "url": "pieza:2026-11-18/stanford-evidencia-ia-escuela"}
+      ],
+      "mensaje": {"grupo": "chatgpt", "id": 54509},
+      "comprobado": "Leído el texto completo del PDF de la entrada hasta el final de la discusión y las limitaciones (no las referencias en detalle) y contrastadas con él todas las cifras, condiciones, límites y el marco. Abierta la página oficial de arXiv (arxiv.org/abs/2611.20061v1): título, autores, envío del 15-11-2026, licencia CC BY 4.0, 400 adultos, 0,24 DT y 64 %. No se abrió el PDF en arXiv ni el material suplementario, el repositorio de datos ni el preregistro. Las cifras de Khanmigo son las que cita el propio artículo, no contrastadas con el estudio original. Stanford: pieza ya publicada, clave presente en publicado.txt. Extensión del cuerpo: unas 650 palabras.",
+      "ilustracion": "Esquema de dos caminos tras un error: arriba, el estudiante falla y recibe una explicación (genérica o personalizada) y pasa al siguiente problema; abajo, falla, el tutor le hace una pregunta más pequeña, el estudiante reintenta y llega a la respuesta correcta, con un bucle de intento, error, pregunta y acierto. Un rótulo marca el 64 % de errores resueltos con el tutor.",
+      "ilustracion_alt": "Bi bide akats baten ondoren, gurutze gorri batez markatua. Goian, akatsak «Azalpena» koadro batera darama, eta handik hurrengo problemetara. Behean, akatsak «Galdera»ra darama, gero «Berriz saiatu»ra, gezi batek «Berriz saiatu»tik «Galdera»ra itzultzen duela asmatzen ez den bitartean, eta azkenik «Asmatu» izeneko errotuluaren azpiko egiaztapen-marka batera. Gainean, «% 64» errotulua."
+    }
+  ],
+  "ya_contado": [],
+  "descartado": [],
+  "repaso": [
+    "Cifras, autoría, fecha, condiciones y límites confirmados con el texto completo y la página de arXiv.",
+    "Entradilla: «concluyen» pasa a «sugieren» (los autores dicen «suggest»).",
+    "Khanmigo: «el alumnado mediano» (es el estudiante mediano quien participó en el 17 %); quitado el rango 0,06-0,08 para ajustar la extensión.",
+    "Párrafo del profesorado: aclarado que el estudio no prueba prácticas de aula, solo da pistas de diseño; quitada una frase repetida sobre Stanford.",
+    "Recortadas frases menores (los tres problemas, el máximo de ocho respuestas, Pittsburgh, «reclutados en línea») para quedar bajo 700 palabras."
+  ]
+}

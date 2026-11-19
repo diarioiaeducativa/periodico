@@ -1,4 +1,4 @@
-<!-- origen: 8926fe5a836f7d0b -->
+<!-- origen: 3fb0b86e7ca01517 -->
 # Hezkuntzako AA Egunkaria nola egiten den
 
 [Hezkuntzako AA Egunkariak](https://diarioiaeducativa.github.io/) goiz oro biltzen du aurreko egunean irakasleen
@@ -17,13 +17,13 @@ zaion**. Hobetzeke dagoena amaieran biltzen da.
 
 ## 1. Zenbakia
 
-**Egun batean hitz egindakoa hurrengo goizean ateratzen da egunkarian**, 7:00etan, bost hizkuntzatan:
+**Egun batean hitz egindakoa hurrengo goizean ateratzen da egunkarian**, 7:00etan (Espainiako penintsulako ordua), bost hizkuntzatan:
 gaztelaniaz, katalanez, galegoz, euskaraz eta ingelesez (ADR 0026).
 
 Zenbaki batek hauek ditu:
 
 - **Eguneko artikuluak**: bat ere ez eta sei artean, eta bat ere ez eta bost albiste labur artean, egunak eman
-  duenaren arabera, bost atalatan: Tresnak, Vibe coding, Multimedia, Eztabaidak eta Erakundeak eta enpresak.
+  duenaren arabera, bost ataletan: Tresnak, Vibe coding, Multimedia, Eztabaidak eta Erakundeak eta enpresak.
 - **Liburutegia**: artikulu bat, egun horretan ChatGPT-IA-eduko Liburutegi digitalean gehitu den dokumentu
   bakoitzeko (ADR 0006).
 - **Biltegia**: egunean bi aplikazio gehienez, Vibe Coding Educativoren baliabideen Biltegikoak; ostiraletan,
@@ -84,7 +84,7 @@ gida du.
 ## 3. Egun bat egunkarian
 
 Programa batek bost minuturik behin begiratzen du zer dagoen egiteko, eta egindakoa idazten du, ezer ez
-errepikatzeko.
+errepikatzeko. Orduak Espainiako penintsulakoak dira: UTC+1 neguan eta UTC+2 udan.
 
 | Ordua | Zer gertatzen den |
 | --- | --- |

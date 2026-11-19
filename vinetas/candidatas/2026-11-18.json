@@ -1,0 +1,421 @@
+{
+ "fecha": "2026-11-18",
+ "candidatas": [
+  {
+   "pieza": "stanford-evidencia-ia-escuela",
+   "idea": "En la junta de evaluación, Algoritmo oye sus notas según los 52 estudios de Stanford y se defiende con que al alumnado le gusta; Tiza: «También le gusta el recreo».",
+   "guion": {
+    "vinetas": [
+     {
+      "cartela": "En la junta de evaluación, con las notas de la IA.",
+      "escenario": "claustro",
+      "tiza": {
+       "expresion": "neutral",
+       "postura": "sostener",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "contento",
+       "postura": "jarras",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "folio",
+      "lleva": "tiza",
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "Stanford ha reunido 52 estudios sobre la IA en la escuela.",
+        "tipo": "habla"
+       },
+       {
+        "quien": "algoritmo",
+        "texto": "¿Y qué nota saco?",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "claustro",
+      "tiza": {
+       "expresion": "preocupado",
+       "postura": "sostener",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "sorprendido",
+       "postura": "cabeza",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "folio",
+      "lleva": "tiza",
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "Resultados desiguales. Ningún uso mejora el aprendizaje de forma consistente.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "claustro",
+      "tiza": {
+       "expresion": "contento",
+       "postura": "encoger",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "preocupado",
+       "postura": "arriba",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "¡Pero al alumnado le gusta la experiencia!",
+        "tipo": "habla"
+       },
+       {
+        "quien": "tiza",
+        "texto": "También le gusta el recreo.",
+        "tipo": "habla"
+       }
+      ]
+     }
+    ]
+   },
+   "cabe": true
+  },
+  {
+   "pieza": "educamadrid-agente-ia",
+   "idea": "Tiza celebra las 40 horas al año que le va a ahorrar el agente de IA y ya sabe en qué gastarlas; dirección también: 40 guardias más (remate mudo, con el giro en el rótulo).",
+   "guion": {
+    "vinetas": [
+     {
+      "cartela": "En el despacho de dirección, con una nota oficial.",
+      "escenario": "despacho",
+      "tiza": {
+       "expresion": "sorprendido",
+       "postura": "abajo",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "neutral",
+       "postura": "sostener",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "folio",
+      "lleva": "algoritmo",
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "Dicen que el agente de IA nuevo te quitará unas 40 horas de tareas rutinarias al año.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "despacho",
+      "tiza": {
+       "expresion": "riendo",
+       "postura": "arriba",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "pensativo",
+       "postura": "pensar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "¡40 horas libres! Ya sé en qué las voy a gastar.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "cartela": "Dirección también lo sabía: 40 guardias más.",
+      "escenario": "despacho",
+      "tiza": {
+       "expresion": "harto",
+       "postura": "sostener",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "avergonzado",
+       "postura": "cabeza",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "folio",
+      "lleva": "tiza",
+      "bocadillos": []
+     }
+    ]
+   },
+   "cabe": true
+  },
+  {
+   "pieza": "galicia-ley-educacion-digital",
+   "idea": "La ley gallega extiende la autoridad del profesorado al ámbito digital, Tiza cae en que el ámbito digital es Algoritmo y estrena el mando: en su clase no se flota.",
+   "guion": {
+    "vinetas": [
+     {
+      "cartela": "En el aula, con la ley gallega de educación digital.",
+      "escenario": "aula",
+      "tiza": {
+       "expresion": "pensativo",
+       "postura": "pensar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "neutral",
+       "postura": "abajo",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "La ley gallega extiende la autoridad del profesorado al ámbito digital.",
+        "tipo": "habla"
+       },
+       {
+        "quien": "algoritmo",
+        "texto": "Me parece muy bien.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "aula",
+      "tiza": {
+       "expresion": "sorprendido",
+       "postura": "senalar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "sorprendido",
+       "postura": "arriba",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "Espera: el ámbito digital eres tú.",
+        "tipo": "habla"
+       },
+       {
+        "quien": "algoritmo",
+        "texto": "¿Yo?",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "aula",
+      "tiza": {
+       "expresion": "orgulloso",
+       "postura": "jarras",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "harto",
+       "postura": "cruzar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "Pues lo primero: en mi clase no se flota.",
+        "tipo": "habla"
+       }
+      ]
+     }
+    ]
+   },
+   "cabe": true
+  },
+  {
+   "pieza": "breve-1",
+   "idea": "Con los hilos temporales del buscador, que no guardan las preguntas en el historial, Tiza se atreve por fin con la duda que lleva años callando: qué es una situación de aprendizaje.",
+   "guion": {
+    "vinetas": [
+     {
+      "cartela": "De noche, en casa, con el buscador en modo IA.",
+      "escenario": "casa_noche",
+      "tiza": {
+       "expresion": "agotado",
+       "postura": "abajo",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "contento",
+       "postura": "senalar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "portatil",
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "Hilos temporales: lo que preguntes no se guarda en el historial.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "casa_noche",
+      "tiza": {
+       "expresion": "preocupado",
+       "postura": "pensar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "neutral",
+       "postura": "cruzar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "portatil",
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "¿Seguro? Llevo años sin atreverme a preguntar una cosa.",
+        "tipo": "habla"
+       },
+       {
+        "quien": "algoritmo",
+        "texto": "Ni rastro. Pregunta.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "casa_noche",
+      "tiza": {
+       "expresion": "avergonzado",
+       "postura": "encoger",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "sorprendido",
+       "postura": "cabeza",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "portatil",
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "¿Qué es exactamente una situación de aprendizaje?",
+        "tipo": "habla"
+       }
+      ]
+     }
+    ]
+   },
+   "cabe": true
+  },
+  {
+   "pieza": "umami-analitica-privacidad",
+   "idea": "Algoritmo explica las banderas para avisar de un error con un clic, sin formularios ni correos, y Tiza encarga dos: una para la fotocopiadora atascada y otra para él.",
+   "guion": {
+    "vinetas": [
+     {
+      "cartela": "Junto a la fotocopiadora, otra vez atascada.",
+      "escenario": "fotocopiadora",
+      "tiza": {
+       "expresion": "harto",
+       "postura": "jarras",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "pensativo",
+       "postura": "pensar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "Un docente pone una bandera en cada ejercicio de sus aplicaciones.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "fotocopiadora",
+      "tiza": {
+       "expresion": "sorprendido",
+       "postura": "abajo",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "contento",
+       "postura": "senalar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "Si ves un error, un clic y avisado. Sin formularios ni correos.",
+        "tipo": "habla"
+       },
+       {
+        "quien": "tiza",
+        "texto": "¿Sin parte de incidencias?",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "fotocopiadora",
+      "tiza": {
+       "expresion": "contento",
+       "postura": "senalar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "avergonzado",
+       "postura": "cabeza",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "Ponme dos: una para la fotocopiadora y otra para ti.",
+        "tipo": "habla"
+       }
+      ]
+     }
+    ]
+   },
+   "cabe": true
+  }
+ ]
+}

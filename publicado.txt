@@ -170,3 +170,14 @@
 - pieza:2026-11-17/agente-clima-ies (vibecoding) Agente Clima IES analiza en el navegador la temperatura y la humedad de las aulas
 - pieza:2026-11-17/flow-retirada-veo-omni (multimedia) Google Flow retirará el 5 de diciembre Veo 3.1 Fast, Veo 3.1 Quality y Omni Flash 1.1
 - breve: Corea del Sur revisará todas las gafas en el examen de acceso a la universidad (Suneung) t
+
+## 2026-11-18 (publicado el jueves 19 de noviembre de 2026)
+- pieza:2026-11-18/stanford-evidencia-ia-escuela (herramientas) Stanford reúne 52 estudios causales sobre IA en la escuela y ve resultados desiguales
+- pieza:2026-11-18/galicia-ley-educacion-digital (novedades) El Parlamento de Galicia aprueba la ley que regula móviles, pantallas e IA en las aulas
+- pieza:2026-11-18/educamadrid-agente-ia (novedades) Madrid incorpora a EducaMadrid un agente de IA que prepara materiales personalizados
+- pieza:2026-11-18/suno-visuals (multimedia) Suno lanza Visuals para crear vídeos con letra y portadas a partir de sus canciones
+- pieza:2026-11-18/umami-analitica-privacidad (vibecoding) Un docente mide el uso de sus aplicaciones con Umami, analítica sin cookies
+- breve: Google despliega hilos temporales en el Modo IA de su buscador: las preguntas no se guarda
+- breve: [Trama](pieza:2026-11-16/trama-comprensio-lectora) ya tiene 245 lecturas en catalán y cast
+- breve: ChatGPT Learn publica una guía para pedir tareas a GPT-6.2 Astra y Sol en Codex; la página
+- breve: Kling AI anuncia Kling Image 4.0, con imágenes en 8K nativo, texto en varios idiomas y has

@@ -1,0 +1,214 @@
+{
+  "fecha": "2026-11-18",
+  "hay_edicion": true,
+  "motivo": "A normal day: the update to Stanford’s review of AI in schools, two news items from administrations (Galicia and Madrid) in ChatGPT-IA-edu, a music and video tool in EduMedia-IAG and a conversation about privacy-friendly analytics in Vibe Coding Educativo. Gemini Notebook, Flow and the Sarroca and Agente Clima apps already appeared in issue 17. GPT-6.2 Astra and Sol dominated the EduMedia-IAG group, but no official OpenAI announcement with a date, plans or prices has been found; only its Codex guide is included, in a brief.",
+  "piezas": [
+    {
+      "id": "stanford-evidencia-ia-escuela",
+      "seccion": "herramientas",
+      "importancia": 1,
+      "grupo": "chatgpt",
+      "antetitulo": "Stanford study",
+      "titular": "Stanford gathers 52 causal studies on AI in schools and sees uneven results",
+      "entradilla": "The November review goes from 20 to 52 studies and concludes that AI looks more promising for understanding new material than for producing assignments, but no use improves learning consistently.",
+      "cuerpo": [
+        "Stanford University’s SCALE initiative published [“The Evidence Base on AI in K-12: A November 2026 Review”](https://scale.stanford.edu/ai/evidence-base-review/evidence-base-ai-k12-november-review) on 10 November 2026, an update of its March review. It includes only causal studies, that is, randomised trials and similar designs that make it possible to attribute an effect to AI. It goes from 20 to 52 studies, 32 of them new and published between October 2025 and June 2026. Five of the new ones, focused on students, were carried out in US schools, compared with none in the previous review.",
+        "According to the review, using AI to support learning looks more favourable than using it to do the assignments: in a study of university students in Brazil, producing the work with AI worsened performance in a later assessment without it. Even so, no type of use improves learning consistently, and students liking the experience does not always translate into better results.",
+        "Among the cases it cites is one in Turkey, with 193 teachers and 2,816 students from grades 5 to 12, in which giving teachers an AI assistant based on GPT-4o reduced students’ motivation and confidence; marks fell with teachers who had lower prior performance. Another, in Sierra Leone, with 1,423 mathematics students in grades 7 and 8, showed an improvement when teachers built Gemini Guided Learning, the guided-study mode of Google’s assistant, into half of their lessons; it is signed by a team from Google and Fab AI, and Google.org is among the funders of the review itself.",
+        "The authors themselves warn that the results cannot be generalised to the whole US school system, that the evidence on equity and long-term effects is scarce and that many studies are preprints, that is, papers circulated without peer review."
+      ],
+      "fuentes": [
+        {
+          "titulo": "The Evidence Base on AI in K-12: A November 2026 Review (SCALE, Stanford)",
+          "url": "https://scale.stanford.edu/ai/evidence-base-review/evidence-base-ai-k12-november-review"
+        }
+      ],
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 54498
+      },
+      "comprobado": "Checked a second time against the SCALE (Stanford) page: date 10-11-2026, 20 to 52 studies, 32 new, five on students in US K-12, Turkey (193 teachers, 2,816 students in grades 5 to 12, GPT-4o, preprint), Sierra Leone (1,423 students in grades 7 and 8, team from Google and Fab AI; Google.org funds the review, it is not stated that it funds that study) and limitations. The example of worse performance without AI is from university students in Brazil. The paper’s search tool: topic not published before. Message 54498 matches the topic.",
+      "ilustracion": "Diagram with two paths from a student facing an AI assistant: “understand new material” (an upward arrow with a soft question mark) and “produce the task” (a downward arrow), with a balance at the back indicating “uneven results”.",
+      "ilustracion_alt": "Diagram: a person uses an assistant, from which two paths lead: one towards “Understand” and another, in red, towards “Do the task”, and at the end a balance. Labels: Assistant, Understand, Do the task, Uneven.",
+      "grafico": null
+    },
+    {
+      "id": "galicia-ley-educacion-digital",
+      "seccion": "novedades",
+      "importancia": 2,
+      "grupo": "chatgpt",
+      "antetitulo": "Regional legislation",
+      "titular": "Galicia’s parliament passes the law regulating phones, screens and AI in classrooms",
+      "entradilla": "The Digital Education Law limits individual use of devices up to the fifth year of primary school and was passed with the votes of the PPdeG and the opposition of the BNG and the PSdeG.",
+      "cuerpo": [
+        "The Parliament of Galicia gave final approval on Tuesday 17 November 2026 to the Digital Education Law (Ley de educación digital), according to [Galicia Confidencial](https://www.galiciaconfidencial.com/noticia/6095050-parlamento-galego-aproba-definitivamente-lei-educacion-dixital-entre-criticas-do-psdeg-e-do-bng). The law regulates the use of phones, screens and artificial intelligence in schools. The Partido Popular de Galicia (PPdeG) voted in favour, Democracia Ourensana abstained, and the Bloque Nacionalista Galego (BNG) and the Partido dos Socialistas de Galicia (PSdeG) voted against.",
+        "According to that report, the law limits the individual use of electronic devices depending on students’ age, up to the fifth year of primary school, and allows phones for educational purposes from the third year of ESO (compulsory secondary education, students aged 14 to 15). It also bans recording lessons without authorisation, whether in person or online, and extends teachers’ authority to the digital sphere.",
+        "The report says the law includes regulation of the use of AI in classrooms, but does not detail its rules; the paper has not been able to read the approved text, so the content of that section remains unconfirmed. The opposition criticised that only 4 of the PSdeG’s 158 amendments and 6 of the BNG’s 69 were accepted, and called for more consensus with the education community.",
+        "In the group, the news was shared as the first regional digital education law, with a chapter on AI. The “first” claim comes, in the report, from the regional education minister (conselleiro), Román Rodríguez, who maintains that Galicia is the first autonomous community to pass a specific law to regulate technology and AI in classrooms; the paper has not checked this against another source, nor whether there is a separate chapter on AI."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Galicia aproba a lei que regulará os móbiles, as pantallas e a intelixencia artificial nas aulas (Galicia Confidencial) (in Galician)",
+          "url": "https://www.galiciaconfidencial.com/noticia/6095050-parlamento-galego-aproba-definitivamente-lei-educacion-dixital-entre-criticas-do-psdeg-e-do-bng"
+        }
+      ],
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 54496
+      },
+      "comprobado": "Checked the Galicia Confidencial report: date (17-11-2026), votes, age limits, recordings and amendments. AI appears as regulation and “related provisions”, with no rules or chapter of its own described. The claim of “first autonomous community” is the conselleiro’s, quoted in the report (the draft said the report did not include it: corrected); not checked against another source. The approved text has not been located. Message 54496 matches the topic. The paper’s search tool: not published before.",
+      "ilustracion": null,
+      "ilustracion_alt": "Diagram: a parliament building leads to a law, from which come a phone crossed out in red and a video camera. Labels: Parliament, Digital law, Phones, No recording."
+    },
+    {
+      "id": "educamadrid-agente-ia",
+      "seccion": "novedades",
+      "importancia": 2,
+      "grupo": "chatgpt",
+      "antetitulo": "Education administration",
+      "titular": "Madrid adds to EducaMadrid an AI agent that prepares personalised materials",
+      "entradilla": "According to the Community of Madrid, the agent was developed by civil servants in its regional digital ministry and can be used by teachers in publicly funded schools.",
+      "cuerpo": [
+        "The Community of Madrid announced on 16 November 2026, in [a note on its website](https://www.comunidad.madrid/noticias/2026/11/16/comunidad-madrid-incorpora-plataforma-educamadrid-agente-ia-genera-tiempo-real-contenidos-personalizados-cada-estudiante), an artificial intelligence agent on the EducaMadrid platform. According to the note, it generates personalised content for each student in real time and was developed by civil servants in the regional digital ministry (Consejería de Digitalización).",
+        "Among its functions, the note lists producing notes and revision documents from the platform’s own educational sources, creating self-assessment quizzes that are marked within the platform itself, tracking each student’s progress and drafting or reviewing emails in several languages. It is aimed at teachers, who can adapt the materials, and can be used by all publicly funded schools in the region. The administration estimates it will free up some 40 hours a year of routine tasks for each teacher.",
+        "The note does not say which AI model it uses, where it is hosted or how students’ data is handled. Those were precisely the doubts raised in the group, along with the quality of the content it generates. It was also seen as a first step by the administration."
+      ],
+      "fuentes": [
+        {
+          "titulo": "La Comunidad de Madrid incorpora a la plataforma EducaMadrid un agente de IA (Comunidad de Madrid) (in Spanish)",
+          "url": "https://www.comunidad.madrid/noticias/2026/11/16/comunidad-madrid-incorpora-plataforma-educamadrid-agente-ia-genera-tiempo-real-contenidos-personalizados-cada-estudiante"
+        }
+      ],
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 54513
+      },
+      "comprobado": "Checked again the official note from the Community of Madrid (16-11-2026): functions, intended users (teachers; the note also mentions communication with families and users of the Official Language Schools), 40 hours a year, publicly funded schools, development by civil servants of the Consejería de Digitalización; confirmed that it does not state the model, hosting or data handling. Message 54513 matches the topic. The paper’s search tool: EducaMadrid appears only in an earlier feature on ages, without covering this agent.",
+      "ilustracion": null,
+      "ilustracion_alt": "Diagram: a teacher uses an agent, from which three results come: a document, a tick and an envelope. Labels: Teacher, Agent, Notes, Quizzes, Emails."
+    },
+    {
+      "id": "suno-visuals",
+      "seccion": "multimedia",
+      "importancia": 3,
+      "grupo": "edumedia",
+      "antetitulo": "Music and video",
+      "titular": "Suno launches Visuals to create lyric videos and cover art from its songs",
+      "entradilla": "The feature generates clips of up to 15 seconds and is paid for with credits separate from those for songs.",
+      "cuerpo": [
+        "Suno, the AI music platform, presented [Visuals](https://suno.com/blog/introducing-visuals) on 17 November 2026, a tool for illustrating its songs: lyric videos that follow the rhythm, album covers and clips made from a photo. It is available on the web and in the iOS and Android apps.",
+        "According to the announcement, the clips last up to 15 seconds and can be extended, edited and regenerated with text. Visuals credits, the units used to pay for each use, are bought separately from song credits. Suno blocks requests and uploads that depict artists, public figures or protected works, asks users to confirm they hold the rights to what they upload and watermarks these images and videos before they are shared outside the platform.",
+        "In the classroom, it could be used to illustrate songs created by students, always checking its terms of use first and without uploading images of minors."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Introducing Visuals (Suno)",
+          "url": "https://suno.com/blog/introducing-visuals"
+        }
+      ],
+      "mensaje": {
+        "grupo": "edumedia",
+        "id": 12321
+      },
+      "comprobado": "Checked again Suno’s announcement (17-11-2026): features, web, iOS and Android, 15 seconds, separate credits, blocks, watermarks, confirmation of rights. It does not state the price of each generation; the sentence about the classroom is a suggestion from the editorial team, not from the source. Message 12321 matches the topic. The paper’s search tool: Suno had not been covered before.",
+      "ilustracion": null,
+      "ilustracion_alt": "Diagram: a musical note with three arrows towards three cards: a video clapperboard, an image and a camera. Labels: Song, Lyric video, Cover art, 15 s clip, Credits sold separately."
+    },
+    {
+      "id": "umami-analitica-privacidad",
+      "seccion": "vibecoding",
+      "importancia": 3,
+      "grupo": "vce",
+      "antetitulo": "Development tip",
+      "titular": "A teacher measures the use of their apps with Umami, cookie-free statistics",
+      "entradilla": "This tool shows which features students use without collecting names or email addresses.",
+      "cuerpo": [
+        "Presenting his catalogue of reading texts, [Trama](pieza:2026-11-16/trama-comprensio-lectora), its author explained in the group that he uses [Umami](https://umami.is/), an open-source system that records how web pages are used, to find out which of his educational apps are used most and what actions are taken (starting an activity, choosing a level, downloading a resource). With that he decides where to put his effort.",
+        "Umami works without cookies and does not store the IP address of the people visiting the page, though it does store their approximate city, browser and device type. It can be installed for free on your own server or computer, under the MIT licence, a free-software licence, or used through its cloud version, whose [free plan](https://umami.is/pricing) allows 100,000 events a month on a single website and keeps the data for six months.",
+        "Not using cookies does not exempt a site from telling its users. The [Spanish Data Protection Agency](https://www.aepd.es/guias/guia-cookies-analiticas-externas.pdf) (AEPD) allows audience measurement without asking for consent if the data are used only for the site's own statistics, are not passed on to third parties and are kept for no more than 25 months, but it requires this to be explained in the privacy policy. So with Umami used this way there is no need to ask for permission or show a cookie banner, but the app's privacy policy must explain that its use is measured, and the data must not be kept for more than 25 months.",
+        "Another idea of his is to put warning flags on each exercise or image, so that the person using the app can report a mistake with one click, without forms or email."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Umami",
+          "url": "https://umami.is/"
+        },
+        {
+          "titulo": "Trama · Comprensió lectora (in Catalan)",
+          "url": "https://trama.ortogra.fi/"
+        },
+        {
+          "titulo": "Umami · Pricing",
+          "url": "https://umami.is/pricing"
+        },
+        {
+          "titulo": "AEPD · Uso de cookies para herramientas de medición de audiencia (in Spanish)",
+          "url": "https://www.aepd.es/guias/guia-cookies-analiticas-externas.pdf"
+        }
+      ],
+      "mensaje": {
+        "grupo": "vce",
+        "id": 15112
+      },
+      "comprobado": "Opened the Umami website: open source, no cookies or personal data, free self-hosting under the MIT licence; the limit of the free plan is not stated there (the 100,000-event limit the teacher cites is omitted). Opened the Trama website: it uses Umami (its own instance at ortogra.fi), without sending personal texts or class codes, and receives the flag reports. Author of Trama, according to its website, Aarón Fortuño; not named because the message is signed by an account with a different visible name. Linked the earlier piece on Trama (2026-11-16). The paper’s search tool: Umami had not been covered. Message 15112 matches the topic.",
+      "ilustracion": null,
+      "ilustracion_alt": "Diagram: an app window with a pointer clicking sends its usage to a dashboard with a crossed-out eye; beside it, a cookie crossed out in red and a flag. Labels: App, Umami, No cookies, Error flag."
+    }
+  ],
+  "breves": [
+    {
+      "texto": "Google is rolling out temporary threads in AI Mode in its search engine: the questions in those conversations are not saved in the history or used for personalisation, according to its announcement of 17 November.",
+      "url": "https://blog.google/products-and-platforms/products/search/temporary-threads-ai-mode",
+      "grupo": "chatgpt",
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 54503
+      }
+    },
+    {
+      "texto": "[Trama](pieza:2026-11-16/trama-comprensio-lectora) now has 245 reading texts in Catalan and Spanish, from the third year of primary school to the first year of ESO, according to its own website.",
+      "url": "https://trama.ortogra.fi/",
+      "grupo": "vce",
+      "mensaje": {
+        "grupo": "vce",
+        "id": 15112
+      }
+    },
+    {
+      "texto": "ChatGPT Learn publishes a guide to giving tasks to GPT-6.2 Astra and Sol in Codex, OpenAI’s programming assistant; the page does not state a launch date or plans.",
+      "url": "https://learn.chatgpt.com/guides/prompting-gpt-6-2-astra",
+      "grupo": "edumedia",
+      "mensaje": {
+        "grupo": "edumedia",
+        "id": 12332
+      }
+    },
+    {
+      "texto": "Kling AI announces Kling Image 4.0, with images generated directly in 8K resolution, text in several languages and up to 10 mutually consistent images per request, according to its statement of 17 November; it does not state availability or prices.",
+      "url": "https://www.manilatimes.net/2026/11/18/tmt-newswire/media-outreach-newswire/kling-ai-launches-kling-image-40-with-photographic-realism-and-native-8k-generation/2472379",
+      "grupo": "edumedia",
+      "mensaje": {
+        "grupo": "edumedia",
+        "id": 12323
+      }
+    }
+  ],
+  "descartado": [
+    "South Korea and glasses at the university entrance exam: the brief already appeared in issue 17 (18-11-2026); removed to avoid repeating it.",
+    "GPT-6.2 Astra and Sol as a launch: the search found no official OpenAI announcement with a date, plans or prices (only leaks); only the ChatGPT Learn guide is included, in a brief.",
+    "Genie 4, the new Gemini Neon model, Google Vids avatars and Gemini 4 Carbon with /swarm: only links to X with no official source opened; the search for Genie 4 found nothing official. Not confirmed.",
+    "Study on a Socratic tutor with 400 people (arXiv 2611.20061): a document from the digital Library, which has its own section.",
+    "Change to Gemini’s privacy settings (screenshot of a notice): no official source located.",
+    "Robotised cell in a shed (Magda Diaz-G): continuation of an already published topic, with a Netlify link without a verifiable source; not published.",
+    "Search for AI training for administrative staff (question without an answer) and a mini-decalogue from a language school: personal opinions, not news."
+  ],
+  "repaso": [
+    "Stanford: standfirst toned down (“looks more promising”); clarified that the example of worse performance without AI is from university students in Brazil; the Google.org funding is of the review, not stated for the Sierra Leone study.",
+    "Galicia: corrected the draft’s error: the report does include the “first community” claim, but as the conselleiro’s assertion, unchecked; the “chapter on AI” from the group is not confirmed.",
+    "Umami: Trama now links to the already published piece (2026-11-16).",
+    "South Korea brief removed: it already appeared in issue 17.",
+    "ChatGPT Learn brief: specified that the guide covers Astra and Sol.",
+    "Added a brief on Kling Image 4.0 (company statement opened; no availability or prices).",
+    "Madrid and Suno: verified with no changes."
+  ]
+}

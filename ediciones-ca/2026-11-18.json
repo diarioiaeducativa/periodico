@@ -1,0 +1,214 @@
+{
+  "fecha": "2026-11-18",
+  "hay_edicion": true,
+  "motivo": "Día normal: la actualización de la revisión de Stanford sobre IA en las escuelas, dos novedades de administraciones (Galicia y Madrid) en ChatGPT-IA-edu, una herramienta de música y vídeo en EduMedia-IAG y una conversación sobre analítica respetuosa con la privacidad en Vibe Coding Educativo. Gemini Notebook, Flow y las aplicaciones de Sarroca y Agente Clima ya salieron en el número 17. GPT-6.2 Astra y Sol ocuparon el grupo de EduMedia-IAG, pero no se ha hallado anuncio oficial de OpenAI con fecha, planes ni precios; solo se recoge su guía de Codex en un breve.",
+  "piezas": [
+    {
+      "id": "stanford-evidencia-ia-escuela",
+      "seccion": "herramientas",
+      "importancia": 1,
+      "grupo": "chatgpt",
+      "antetitulo": "Estudi de Stanford",
+      "titular": "Stanford reuneix 52 estudis causals sobre IA a l'escola i en veu resultats desiguals",
+      "entradilla": "La revisió de novembre passa de 20 a 52 treballs i conclou que la IA sembla més prometedora per entendre material nou que per produir tasques, però cap ús millora l'aprenentatge de manera consistent.",
+      "cuerpo": [
+        "La iniciativa SCALE de la Universitat de Stanford va publicar el 10 de novembre de 2026 [«The Evidence Base on AI in K-12: A November 2026 Review»](https://scale.stanford.edu/ai/evidence-base-review/evidence-base-ai-k12-november-review), una actualització de la seva revisió de març. Recull només estudis causals, és a dir, assaigs aleatoritzats i dissenys semblants que permeten atribuir un efecte a la IA. Passa de 20 a 52 treballs, amb 32 de nous publicats entre octubre de 2025 i juny de 2026. Cinc dels nous, centrats en l'alumnat, es van fer en escoles dels Estats Units, enfront de cap a la revisió anterior.",
+        "Segons la revisió, l'ús de la IA per donar suport a l'aprenentatge sembla més favorable que fer-la servir per fer les tasques: en un estudi amb universitaris del Brasil, produir el treball amb IA va empitjorar el rendiment en una avaluació posterior sense ella. Tot i això, cap tipus d'ús millora l'aprenentatge de manera consistent, i que a l'alumnat li agradi l'experiència no sempre es tradueix en millors resultats.",
+        "Entre els casos que cita n'hi ha un a Turquia, amb 193 docents i 2.816 estudiants de 5è a 12è grau, en què donar al professorat un assistent d'IA basat en GPT-4o va reduir la motivació i la confiança de l'alumnat; les notes van baixar amb els docents de menor rendiment previ. Un altre, a Sierra Leone, amb 1.423 estudiants de matemàtiques de 7è i 8è grau, va mostrar una millora quan els docents van integrar Gemini Guided Learning, el mode d'estudi guiat de l'assistent de Google, en la meitat de les seves classes; el signa un equip de Google i Fab AI, i Google.org figura entre els finançadors de la mateixa revisió.",
+        "Els mateixos autors adverteixen que els resultats no es poden generalitzar a tot el sistema escolar nord-americà, que l'evidència sobre equitat i efectes a llarg termini és escassa i que molts estudis són *preprints*, és a dir, treballs difosos sense revisió per parells."
+      ],
+      "fuentes": [
+        {
+          "titulo": "The Evidence Base on AI in K-12: A November 2026 Review (SCALE, Stanford) (en anglès)",
+          "url": "https://scale.stanford.edu/ai/evidence-base-review/evidence-base-ai-k12-november-review"
+        }
+      ],
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 54498
+      },
+      "comprobado": "Revisado por segunda vez con la página de SCALE (Stanford): fecha 10-11-2026, 20 a 52 estudios, 32 nuevos, cinco de alumnado en K-12 de EE. UU., Turquía (193 docentes, 2.816 estudiantes de 5.º a 12.º, GPT-4o, preprint), Sierra Leona (1.423 estudiantes de 7.º y 8.º, equipo de Google y Fab AI; Google.org financia la revisión, no consta que financie ese estudio) y limitaciones. El ejemplo de rendimiento peor sin IA es de universitarios de Brasil. Buscador del diario: tema no publicado antes. Mensaje 54498 corresponde al tema.",
+      "ilustracion": "Esquema con dos caminos desde un alumno ante un asistente de IA: «entender material nuevo» (una flecha ascendente con signo de interrogación suave) y «producir la tarea» (una flecha descendente), con una balanza al fondo que indica «resultados desiguales».",
+      "ilustracion_alt": "Esquema: una persona fa servir un assistent, del qual surten dos camins: un cap a «Entendre» i un altre, en vermell, cap a «Produir tasca», i al final una balança. Rètols: Assistent, Entendre, Produir tasca, Desiguals.",
+      "grafico": null
+    },
+    {
+      "id": "galicia-ley-educacion-digital",
+      "seccion": "novedades",
+      "importancia": 2,
+      "grupo": "chatgpt",
+      "antetitulo": "Normativa autonòmica",
+      "titular": "El Parlament de Galícia aprova la llei que regula mòbils, pantalles i IA a les aules",
+      "entradilla": "La Llei d'educació digital limita l'ús individual de dispositius fins a 5è de primària i es va aprovar amb els vots del PPdeG i el rebuig del BNG i el PSdeG.",
+      "cuerpo": [
+        "El Parlament de Galícia va aprovar definitivament el dimarts 17 de novembre de 2026 la Llei d'educació digital, segons informa [Galicia Confidencial](https://www.galiciaconfidencial.com/noticia/6095050-parlamento-galego-aproba-definitivamente-lei-educacion-dixital-entre-criticas-do-psdeg-e-do-bng). La norma regula l'ús de mòbils, pantalles i intel·ligència artificial als centres. Hi van votar a favor el Partido Popular de Galicia (PPdeG), es va abstenir Democracia Ourensana i hi van votar en contra el Bloque Nacionalista Galego (BNG) i el Partido dos Socialistas de Galicia (PSdeG).",
+        "Segons aquesta crònica, la llei limita l'ús individual de dispositius electrònics segons l'edat de l'alumnat, fins a 5è de primària, i permet els mòbils amb finalitats pedagògiques des de 3r d'ESO. També prohibeix gravar classes sense autorització, presencials o en línia, i estén l'autoritat del professorat a l'àmbit digital.",
+        "La crònica indica que la llei inclou la regulació de l'ús de la IA a les aules, però no en detalla les regles; aquest diari no ha pogut llegir el text aprovat, de manera que el contingut d'aquest apartat queda sense confirmar. L'oposició va criticar que només s'acceptessin 4 de les 158 esmenes del PSdeG i 6 de les 69 del BNG, i va reclamar més consens amb la comunitat educativa.",
+        "Al grup es va compartir la notícia com la primera llei autonòmica d'educació digital, amb un capítol sobre IA. Allò de «primera» ho diu a la crònica el conseller d'Educació, Román Rodríguez, que sosté que Galícia és la primera comunitat autònoma a aprovar una llei específica per regular la tecnologia i la IA a les aules; aquest diari no ho ha contrastat amb una altra font, i tampoc que hi hagi un capítol propi sobre IA."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Galicia aproba a lei que regulará os móbiles, as pantallas e a intelixencia artificial nas aulas (Galicia Confidencial) (en gallec)",
+          "url": "https://www.galiciaconfidencial.com/noticia/6095050-parlamento-galego-aproba-definitivamente-lei-educacion-dixital-entre-criticas-do-psdeg-e-do-bng"
+        }
+      ],
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 54496
+      },
+      "comprobado": "Revisada la crónica de Galicia Confidencial: fecha (17-11-2026), votos, límites por edad, grabaciones y enmiendas. La IA aparece como regulación y «disposiciones relacionadas», sin reglas ni capítulo propio descrito. La afirmación de «primera comunidad autónoma» es del conselleiro, citado en la crónica (el borrador decía que la crónica no la recogía: corregido); no contrastada con otra fuente. No se ha localizado el texto aprobado. Mensaje 54496 corresponde al tema. Buscador del diario: no publicado antes.",
+      "ilustracion": null,
+      "ilustracion_alt": "Esquema: un edifici de parlament porta a una llei, de la qual surten un mòbil ratllat en vermell i una càmera de vídeo. Rètols: Parlament, Llei digital, Mòbils, Sense gravar."
+    },
+    {
+      "id": "educamadrid-agente-ia",
+      "seccion": "novedades",
+      "importancia": 2,
+      "grupo": "chatgpt",
+      "antetitulo": "Administració educativa",
+      "titular": "Madrid incorpora a EducaMadrid un agent d'IA que prepara materials personalitzats",
+      "entradilla": "Segons la Comunitat de Madrid, l'agent l'han desenvolupat funcionaris de la seva Conselleria de Digitalització i el pot fer servir el professorat dels centres sostinguts amb fons públics.",
+      "cuerpo": [
+        "La Comunitat de Madrid va anunciar el 16 de novembre de 2026, en [una nota de la seva web](https://www.comunidad.madrid/noticias/2026/11/16/comunidad-madrid-incorpora-plataforma-educamadrid-agente-ia-genera-tiempo-real-contenidos-personalizados-cada-estudiante), un agent d'intel·ligència artificial a la plataforma EducaMadrid. Segons la nota, genera continguts personalitzats per a cada estudiant en temps real i l'han desenvolupat funcionaris de la Conselleria de Digitalització.",
+        "Entre les seves funcions, la nota cita elaborar apunts i documents de reforç a partir de fonts educatives pròpies, crear qüestionaris d'autoavaluació que es corregeixen a la mateixa plataforma, fer el seguiment de l'evolució de cada estudiant i redactar o revisar correus electrònics en diversos idiomes. S'adreça al professorat, que pot adaptar els materials, i el poden fer servir tots els centres de la regió sostinguts amb fons públics. L'administració calcula que alliberarà unes 40 hores l'any de tasques rutinàries a cada docent.",
+        "La nota no indica quin model d'IA fa servir, on s'allotja ni com es tracten les dades de l'alumnat. Aquests van ser precisament els dubtes que es van plantejar al grup, juntament amb la qualitat dels continguts que generi. També es va valorar com un primer pas de l'administració."
+      ],
+      "fuentes": [
+        {
+          "titulo": "La Comunitat de Madrid incorpora a la plataforma EducaMadrid un agent d'IA (Comunitat de Madrid) (en castellà)",
+          "url": "https://www.comunidad.madrid/noticias/2026/11/16/comunidad-madrid-incorpora-plataforma-educamadrid-agente-ia-genera-tiempo-real-contenidos-personalizados-cada-estudiante"
+        }
+      ],
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 54513
+      },
+      "comprobado": "Revisada de nuevo la nota oficial de la Comunidad de Madrid (16-11-2026): funciones, destinatarios (profesorado; la nota menciona también la comunicación con familias y usuarios de las Escuelas Oficiales de Idiomas), 40 horas anuales, centros sostenidos con fondos públicos, desarrollo por funcionarios de la Consejería de Digitalización; confirmado que no dice modelo, alojamiento ni tratamiento de datos. Mensaje 54513 corresponde al tema. Buscador del diario: EducaMadrid solo aparece en un reportaje anterior sobre edades, sin tratar este agente.",
+      "ilustracion": null,
+      "ilustracion_alt": "Esquema: una persona docent fa servir un agent, del qual surten tres resultats: un document, una marca de verificació i un sobre. Rètols: Docent, Agent, Apunts, Qüestionaris, Correus."
+    },
+    {
+      "id": "suno-visuals",
+      "seccion": "multimedia",
+      "importancia": 3,
+      "grupo": "edumedia",
+      "antetitulo": "Música i vídeo",
+      "titular": "Suno llança Visuals per crear vídeos amb lletra i portades a partir de les seves cançons",
+      "entradilla": "La funció genera clips de fins a 15 segons i es paga amb crèdits a part dels de les cançons.",
+      "cuerpo": [
+        "Suno, la plataforma de música amb IA, va presentar el 17 de novembre de 2026 [Visuals](https://suno.com/blog/introducing-visuals), una eina per il·lustrar les seves cançons: vídeos amb lletra que segueixen el ritme, portades d'àlbum i clips a partir d'una foto. Està disponible al web i a les aplicacions d'iOS i Android.",
+        "Segons l'anunci, els clips duren fins a 15 segons i es poden estendre, editar i regenerar amb text. Els crèdits de Visuals, les unitats amb què es paga cada ús, es compren per separat dels de cançons. Suno bloqueja les peticions i les pujades que representin artistes, figures públiques o obres protegides, demana confirmar que es tenen drets sobre el que es puja i posa marques d'aigua en aquestes imatges i vídeos abans de compartir-los fora de la plataforma.",
+        "Per a l'aula, pot servir per il·lustrar cançons creades per l'alumnat, sempre revisant abans les condicions d'ús i sense pujar imatges de menors."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Introducing Visuals (Suno) (en anglès)",
+          "url": "https://suno.com/blog/introducing-visuals"
+        }
+      ],
+      "mensaje": {
+        "grupo": "edumedia",
+        "id": 12321
+      },
+      "comprobado": "Revisado de nuevo el anuncio de Suno (17-11-2026): funciones, web, iOS y Android, 15 segundos, créditos aparte, bloqueos, marcas de agua, confirmación de derechos. No dice precio de cada generación; la frase sobre el aula es una sugerencia de la redacción, no de la fuente. Mensaje 12321 corresponde al tema. Buscador del diario: Suno no se había tratado antes.",
+      "ilustracion": null,
+      "ilustracion_alt": "Esquema: una nota musical amb tres fletxes cap a tres targetes: una claqueta de vídeo, una imatge i una càmera. Rètols: Cançó, Vídeo amb lletra, Portada, Clip de 15 s, Crèdits a part."
+    },
+    {
+      "id": "umami-analitica-privacidad",
+      "seccion": "vibecoding",
+      "importancia": 3,
+      "grupo": "vce",
+      "antetitulo": "Truc de desenvolupament",
+      "titular": "Un docent mesura l'ús de les seves aplicacions amb Umami, unes estadístiques sense galetes",
+      "entradilla": "Aquesta eina permet saber quines funcions fa servir l'alumnat sense recollir noms ni correus.",
+      "cuerpo": [
+        "En presentar el seu catàleg de lectures [Trama](pieza:2026-11-16/trama-comprensio-lectora), el seu autor va explicar al grup que fa servir [Umami](https://umami.is/), un sistema de codi obert que registra com s'usen les pàgines web, per saber quines de les seves aplicacions educatives s'usen més i quines accions es fan (iniciar una activitat, triar un nivell, descarregar un material). Amb això decideix on dedicar l'esforç.",
+        "Umami funciona sense galetes i no desa l'adreça IP de les persones que visiten la pàgina, però sí la seva ciutat aproximada, el navegador i el tipus de dispositiu. Es pot instal·lar gratis en un servidor o en un ordinador propi, amb llicència MIT, una llicència de programari lliure, o fer servir la seva versió al núvol, el [pla gratuït](https://umami.is/pricing) de la qual admet 100.000 esdeveniments al mes en un sol web i conserva les dades sis mesos.",
+        "Que no faci servir galetes no eximeix d'avisar. L'[Agència Espanyola de Protecció de Dades](https://www.aepd.es/guias/guia-cookies-analiticas-externas.pdf) permet mesurar l'audiència sense demanar consentiment si les dades només serveixen per a estadístiques pròpies, no se cedeixen a tercers i es conserven com a màxim 25 mesos, però exigeix explicar-ho a la política de privadesa. Per tant, amb Umami fet servir així no cal demanar permís ni mostrar un avís de galetes, però sí explicar a la política de privadesa de l'aplicació que se'n mesura l'ús, i no conservar les dades més de 25 mesos.",
+        "Una altra idea seva és posar unes banderes d'avís a cada exercici o imatge, de manera que la persona que fa servir l'aplicació assenyali un error amb un clic, sense formularis ni correu."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Umami (en anglès)",
+          "url": "https://umami.is/"
+        },
+        {
+          "titulo": "Trama · Comprensió lectora",
+          "url": "https://trama.ortogra.fi/"
+        },
+        {
+          "titulo": "Umami · Preus (en anglès)",
+          "url": "https://umami.is/pricing"
+        },
+        {
+          "titulo": "AEPD · Uso de cookies para herramientas de medición de audiencia (en castellà)",
+          "url": "https://www.aepd.es/guias/guia-cookies-analiticas-externas.pdf"
+        }
+      ],
+      "mensaje": {
+        "grupo": "vce",
+        "id": 15112
+      },
+      "comprobado": "Abierta la web de Umami: código abierto, sin cookies ni datos personales, autoalojamiento gratis con licencia MIT; no consta en ella el límite del plan gratuito (el de 100.000 eventos que cita el docente se omite). Abierta la web de Trama: usa Umami (instancia propia de ortogra.fi), sin enviar textos personales ni códigos de aula, y recibe los avisos de la bandera. Autor de Trama, según su web, Aarón Fortuño; no se nombra porque el mensaje lo firma una cuenta con otro nombre visible. Enlazada la pieza anterior sobre Trama (2026-11-16). Buscador del diario: Umami no se había tratado. Mensaje 15112 corresponde al tema.",
+      "ilustracion": null,
+      "ilustracion_alt": "Esquema: una finestra d'aplicació amb un punter que fa clic envia el seu ús a un tauler amb un ull ratllat; al costat, una galeta ratllada en vermell i una bandera. Rètols: Aplicació, Umami, Sense galetes, Avís d'error."
+    }
+  ],
+  "breves": [
+    {
+      "texto": "Google desplega fils temporals al Mode IA del seu cercador: les preguntes d'aquestes converses no es guarden a l'historial ni influeixen en la personalització, segons el seu anunci del 17 de novembre.",
+      "url": "https://blog.google/products-and-platforms/products/search/temporary-threads-ai-mode",
+      "grupo": "chatgpt",
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 54503
+      }
+    },
+    {
+      "texto": "[Trama](pieza:2026-11-16/trama-comprensio-lectora) ja té 245 lectures en català i castellà, de 3r de primària a 1r d'ESO, segons el seu web.",
+      "url": "https://trama.ortogra.fi/",
+      "grupo": "vce",
+      "mensaje": {
+        "grupo": "vce",
+        "id": 15112
+      }
+    },
+    {
+      "texto": "ChatGPT Learn publica una guia per demanar tasques a GPT-6.2 Astra i Sol a Codex, l'assistent de programació d'OpenAI; la pàgina no indica data de llançament ni plans.",
+      "url": "https://learn.chatgpt.com/guides/prompting-gpt-6-2-astra",
+      "grupo": "edumedia",
+      "mensaje": {
+        "grupo": "edumedia",
+        "id": 12332
+      }
+    },
+    {
+      "texto": "Kling AI anuncia Kling Image 4.0, amb imatges generades directament en resolució 8K, text en diversos idiomes i fins a 10 imatges coherents entre elles a cada petició, segons el seu comunicat del 17 de novembre; no indica disponibilitat ni preus.",
+      "url": "https://www.manilatimes.net/2026/11/18/tmt-newswire/media-outreach-newswire/kling-ai-launches-kling-image-40-with-photographic-realism-and-native-8k-generation/2472379",
+      "grupo": "edumedia",
+      "mensaje": {
+        "grupo": "edumedia",
+        "id": 12323
+      }
+    }
+  ],
+  "descartado": [
+    "Corea del Sur y las gafas en el examen de acceso: el breve ya salió en el número 17 (18-11-2026); se quita para no repetirlo.",
+    "GPT-6.2 Astra y Sol como lanzamiento: la búsqueda no encontró anuncio oficial de OpenAI con fecha, planes ni precios (solo filtraciones); solo se recoge la guía de ChatGPT Learn en un breve.",
+    "Genie 4, nuevo modelo Neon de Gemini, avatares de Google Vids y Gemini 4 Carbon con /swarm: solo enlaces a X sin fuente oficial abierta; la búsqueda de Genie 4 no halló nada oficial. No se confirman.",
+    "Estudio sobre tutor socrático con 400 personas (arXiv 2611.20061): documento de la Biblioteca digital, que tiene su propia sección.",
+    "Cambio de ajustes de privacidad de Gemini (captura de un aviso): sin fuente oficial localizada.",
+    "Celda robotizada en un galpón (Magda Diaz-G): continuación de un tema ya publicado, con enlace de Netlify sin fuente comprobable; no se publica.",
+    "Búsqueda de formación en IA para personal administrativo (pregunta sin respuesta) y minidecálogo de una escuela de idiomas: opiniones personales sin noticia."
+  ],
+  "repaso": [
+    "Stanford: entradilla rebajada («parece más prometedora»); aclarado que el ejemplo de peor rendimiento sin IA es de universitarios de Brasil; la financiación de Google.org es de la revisión, no consta del estudio de Sierra Leona.",
+    "Galicia: corregido el error del borrador: la crónica sí recoge lo de «primera comunidad», pero como afirmación del conselleiro, sin contrastar; el «capítulo sobre IA» del grupo no consta.",
+    "Umami: Trama enlaza ahora la pieza ya publicada (2026-11-16).",
+    "Breve de Corea del Sur quitado: ya salió en el número 17.",
+    "Breve de ChatGPT Learn: precisado que la guía cubre Astra y Sol.",
+    "Añadido un breve de Kling Image 4.0 (comunicado de la empresa abierto; sin disponibilidad ni precios).",
+    "Madrid y Suno: verificados sin cambios."
+  ]
+}

@@ -1,0 +1,94 @@
+{
+ "fecha": "2026-11-18",
+ "elegida": {
+  "n": 1,
+  "pieza": "stanford-evidencia-ia-escuela",
+  "idea": "A la junta d'avaluació, l'Algorisme pregunta quina nota treu segons els 52 estudis que ha reunit Stanford; la nota és fluixa i es defensa dient que a l'alumnat li agrada. Guix: «També li agrada el pati». El xasco se l'emporta l'Algorisme i remata Guix.",
+  "guion": {
+   "vinetas": [
+    {
+     "cartela": "A la junta d'avaluació, amb les notes de la IA.",
+     "escenario": "claustro",
+     "tiza": {
+      "expresion": "neutral",
+      "postura": "sostener",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "contento",
+      "postura": "jarras",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "objeto": "folio",
+     "lleva": "tiza",
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Stanford ha reunit 52 estudis sobre la IA a l'escola.",
+       "tipo": "habla"
+      },
+      {
+       "quien": "algoritmo",
+       "texto": "I quina nota trec?",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "claustro",
+     "tiza": {
+      "expresion": "preocupado",
+      "postura": "sostener",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "sorprendido",
+      "postura": "cabeza",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "objeto": "folio",
+     "lleva": "tiza",
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Resultats desiguals. Cap ús millora l'aprenentatge de manera consistent.",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "claustro",
+     "tiza": {
+      "expresion": "contento",
+      "postura": "encoger",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "preocupado",
+      "postura": "arriba",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "algoritmo",
+       "texto": "Però a l'alumnat li agrado!",
+       "tipo": "habla"
+      },
+      {
+       "quien": "tiza",
+       "texto": "També li agrada el pati.",
+       "tipo": "habla"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "traduccion": "automàtica amb IA"
+}

@@ -1,0 +1,94 @@
+{
+ "fecha": "2026-11-18",
+ "elegida": {
+  "n": 1,
+  "pieza": "stanford-evidencia-ia-escuela",
+  "idea": "At the assessment meeting, Algorithm asks what grade it gets according to the 52 studies Stanford has gathered; the grade is poor and it defends itself by saying the students like it. Chalk: “They like break time too.” Algorithm takes the blow and Chalk delivers the punchline. The staff room is where the scene happens (an assessment meeting) and it is also free.",
+  "guion": {
+   "vinetas": [
+    {
+     "cartela": "At the assessment meeting, with the AI’s grades.",
+     "escenario": "claustro",
+     "tiza": {
+      "expresion": "neutral",
+      "postura": "sostener",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "contento",
+      "postura": "jarras",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "objeto": "folio",
+     "lleva": "tiza",
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Stanford has gathered 52 studies on AI in schools.",
+       "tipo": "habla"
+      },
+      {
+       "quien": "algoritmo",
+       "texto": "And what grade do I get?",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "claustro",
+     "tiza": {
+      "expresion": "preocupado",
+      "postura": "sostener",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "sorprendido",
+      "postura": "cabeza",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "objeto": "folio",
+     "lleva": "tiza",
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Uneven results. No use improves learning consistently.",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "claustro",
+     "tiza": {
+      "expresion": "contento",
+      "postura": "encoger",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "preocupado",
+      "postura": "arriba",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "algoritmo",
+       "texto": "But the students like me!",
+       "tipo": "habla"
+      },
+      {
+       "quien": "tiza",
+       "texto": "They like break time too.",
+       "tipo": "habla"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "traduccion": "automatic AI translation"
+}

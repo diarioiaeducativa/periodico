@@ -1,4 +1,4 @@
-<!-- origen: 9cc2281a405c9371 -->
+<!-- origen: 2856bceb652c83cb -->
 # Hezkuntzako AA Egunkariaren itzultzailearen liburua
 
 Egunkaria gaztelaniatik katalanera, galegora, euskarara eta ingelesera nola itzultzen den azaltzen du. Publikoak
@@ -12,7 +12,7 @@ hizkuntza guztietan berdin baliatzen baita. Atal orokorra eta eskaera bakoitzeko
 - **Eduki bera**: jatorrizkoaren artikulu, esteka, zifra, letra lodi eta etzan berberak. Ez da informaziorik
   gehitzen edo kentzen, Espainiari dagozkionen azalpena izan ezik (jarraian).
 - **Izenak ez dira itzultzen**: produktuak, aplikazioak, enpresak eta hiru taldeak («Vibe Coding
-  Educativo», «EduMedia-IAG»). Bineta-ko pertsonaiek, ordea, izena dute hizkuntza bakoitzean
+  Educativo», «EduMedia-IAG»). Binetako pertsonaiek, ordea, izena dute hizkuntza bakoitzean
   (`scripts/idiomas.py`).
 - **Besteren ofiziala jatorrizko hizkuntzan uzten da**: lege, txosten edo gida baten izenburua.
   Espainiako erakunde bat itzultzen da hizkuntzan ohiko forma badu (ministerioa, kontseilaritza);
@@ -44,7 +44,7 @@ hizkuntza guztietan berdin baliatzen baita. Atal orokorra eta eskaera bakoitzeko
   irrati eta telebista publikoen kazetaritza-estiloa.
 
 **Formatua**
-- Orduak puntuarekin: «a les 10.30».
+- Orduak puntuarekin: «a les 10.30»; ordu-eremua, «(hora peninsular espanyola, UTC+1)».
 - Ehunekoa tarteduna: «10 %», Optimotek eskatzen duen bezala.
 - Milakoak puntuarekin (115.000); ordinalak «4t d'ESO», «1r de batxillerat».
 - Karguak, hezkuntza-etapak eta ikasgaiak minuskulaz («primària», «batxillerat»); erakundeak,
@@ -75,7 +75,7 @@ hizkuntza guztietan berdin baliatzen baita. Atal orokorra eta eskaera bakoitzeko
   (terminologia) eta [Nomenclátor](https://toponimia.xunta.gal/gl) (Galiziako toponimoak).
 
 **Formatua**
-- Orduak puntuarekin: «ás 10.30».
+- Orduak puntuarekin: «ás 10.30»; ordu-eremua, «(hora peninsular española, UTC+1)».
 - Ehunekoa tarteduna: «30 %».
 - Milakoak tarteduna: «115 000».
 - Karguak, egunak, hilabeteak eta etapak minuskulaz: «educación primaria», «bacharelato», «educación secundaria».
@@ -107,7 +107,7 @@ hizkuntza guztietan berdin baliatzen baita. Atal orokorra eta eskaera bakoitzeko
 - UPV/EHUren [Kalkoen Behatokia](https://www.ehu.eus/ehg/kalkoak/): gaztelaniaren kalkoak.
 
 **Formatua** (Euskaltzaindiaren 203. araua)
-- Orduak: «10:30ean». Datak: «2026ko azaroaren 13an».
+- Orduak: «10:30ean»; ordu-eremua, «(Espainiako penintsulako ordua, UTC+1)». Datak: «2026ko azaroaren 13an».
 - Ehunekoa, zeinua aurretik eta tartearekin: «% 35».
 - Milakoak tarteduna: «115 000».
 - Karguak minuskulaz; erakundeak eta hezkuntza-etapak maiuskulaz («Lehen Hezkuntza», «Batxilergoa»),
@@ -137,7 +137,8 @@ hizkuntza guztietan berdin baliatzen baita. Atal orokorra eta eskaera bakoitzeko
 - [IATE](https://iate.europa.eu) (EBren terminologia) eta [Oxford Learner's Dictionary](https://www.oxfordlearnersdictionaries.com).
 
 **Formatua**
-- Datak: «13 November 2026». Orduak: «10.30am», The Guardianek bezala.
+- Datak: «13 November 2026». Orduak: «10.30am», The Guardianek bezala; ordu-eremua,
+  «10.30am CET (UTC+1)», edo CEST (UTC+2) udan, eta kanpokoa jatorrizkoarekin batera: «10am PT (6pm CET, UTC+1)».
 - Ehunekoa zifrari itsatsita: «35%». Milakoak komarekin: «115,000».
 - Ingeles komatxoak (“ ”), inoiz ez gaztelaniazkoak; -ise ortografia («organise»).
 - Kargu, etapa eta erakunde generikoak minuskulaz («the education ministry», «secondary education»).

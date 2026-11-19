@@ -1,0 +1,103 @@
+{
+ "fecha": "2026-11-18",
+ "elegida": {
+  "n": 1,
+  "pieza": "stanford-evidencia-ia-escuela",
+  "idea": "Ebaluazio-batzarrean, Algoritmok galdetzen du zer nota ateratzen duen Stanfordek bildu dituen 52 azterketen arabera; nota apala da eta ikasleei gustatzen zaiela argudiatuz defendatzen da. Tiza: «Atsedenaldia ere gustatzen zaie». Algoritmok jasotzen du kolpea eta Tizak borobiltzen du. Ikastetxeko irakasle-gela da (ebaluazio-batzar bat) eta, gainera, libre dago.",
+  "guion": {
+   "vinetas": [
+    {
+     "cartela": "Ebaluazio-batzarrean, AAren notekin.",
+     "escenario": "claustro",
+     "tiza": {
+      "expresion": "neutral",
+      "postura": "sostener",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "contento",
+      "postura": "jarras",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "objeto": "folio",
+     "lleva": "tiza",
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Stanfordek eskolan AAri buruzko 52 azterketa bildu ditu.",
+       "tipo": "habla"
+      },
+      {
+       "quien": "algoritmo",
+       "texto": "Eta zer nota ateratzen dut?",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "claustro",
+     "tiza": {
+      "expresion": "preocupado",
+      "postura": "sostener",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "sorprendido",
+      "postura": "cabeza",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "objeto": "folio",
+     "lleva": "tiza",
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Emaitza desberdinak. Erabilera batek ere ez du ikaskuntza koherenteki hobetzen.",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "claustro",
+     "tiza": {
+      "expresion": "contento",
+      "postura": "encoger",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "preocupado",
+      "postura": "arriba",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "algoritmo",
+       "texto": "Baina ikasleei gustatzen natzaie!",
+       "tipo": "habla"
+      },
+      {
+       "quien": "tiza",
+       "texto": "Atsedenaldia ere gustatzen zaie.",
+       "tipo": "habla"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "motivo": "La 1 tiene el mejor remate de las cinco: «También le gusta el recreo» sorprende y dice de un golpe lo que la revisión advierte.",
+ "retoques": "Texto traducido al euskera; rótulo de 35 caracteres; ningún bocadillo pasa de 90 caracteres.",
+ "puntuaciones": [
+  {"n": 1, "gracia": 8, "claridad": 9, "remate": 9, "prohibiciones": "respeta", "cabe": true},
+  {"n": 2, "gracia": 7, "claridad": 7, "remate": 7, "prohibiciones": "respeta", "cabe": true},
+  {"n": 3, "gracia": 6, "claridad": 6, "remate": 6, "prohibiciones": "respeta", "cabe": true},
+  {"n": 4, "gracia": 7, "claridad": 7, "remate": 8, "prohibiciones": "respeta", "cabe": true},
+  {"n": 5, "gracia": 6, "claridad": 6, "remate": 5, "prohibiciones": "respeta", "cabe": true}
+ ],
+ "traduccion": "itzulpen automatikoa AArekin"
+}

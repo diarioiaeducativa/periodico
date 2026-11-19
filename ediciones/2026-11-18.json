@@ -1,0 +1,214 @@
+{
+  "fecha": "2026-11-18",
+  "hay_edicion": true,
+  "motivo": "Día normal: la actualización de la revisión de Stanford sobre IA en las escuelas, dos novedades de administraciones (Galicia y Madrid) en ChatGPT-IA-edu, una herramienta de música y vídeo en EduMedia-IAG y una conversación sobre analítica respetuosa con la privacidad en Vibe Coding Educativo. Gemini Notebook, Flow y las aplicaciones de Sarroca y Agente Clima ya salieron en el número 17. GPT-6.2 Astra y Sol ocuparon el grupo de EduMedia-IAG, pero no se ha hallado anuncio oficial de OpenAI con fecha, planes ni precios; solo se recoge su guía de Codex en un breve.",
+  "piezas": [
+    {
+      "id": "stanford-evidencia-ia-escuela",
+      "seccion": "herramientas",
+      "importancia": 1,
+      "grupo": "chatgpt",
+      "antetitulo": "Estudio de Stanford",
+      "titular": "Stanford reúne 52 estudios causales sobre IA en la escuela y ve resultados desiguales",
+      "entradilla": "La revisión de noviembre pasa de 20 a 52 trabajos y concluye que la IA parece más prometedora para entender material nuevo que para producir tareas, pero ningún uso mejora el aprendizaje de forma consistente.",
+      "cuerpo": [
+        "La iniciativa SCALE de la Universidad de Stanford publicó el 10 de noviembre de 2026 [«The Evidence Base on AI in K-12: A November 2026 Review»](https://scale.stanford.edu/ai/evidence-base-review/evidence-base-ai-k12-november-review), una actualización de su revisión de marzo. Recoge solo estudios causales, es decir, ensayos aleatorizados y diseños parecidos que permiten atribuir un efecto a la IA. Pasa de 20 a 52 trabajos, con 32 nuevos publicados entre octubre de 2025 y junio de 2026. Cinco de los nuevos, centrados en el alumnado, se hicieron en escuelas de Estados Unidos, frente a ninguno en la revisión anterior.",
+        "Según la revisión, el uso de la IA para apoyar el aprendizaje parece más favorable que usarla para hacer las tareas: en un estudio con universitarios de Brasil, producir el trabajo con IA empeoró el rendimiento en una evaluación posterior sin ella. Aun así, ningún tipo de uso mejora el aprendizaje de forma consistente, y que al alumnado le guste la experiencia no siempre se traduce en mejores resultados.",
+        "Entre los casos que cita hay uno en Turquía, con 193 docentes y 2.816 estudiantes de 5.º a 12.º grado, en el que dar al profesorado un asistente de IA basado en GPT-4o redujo la motivación y la confianza del alumnado; las notas bajaron con los docentes de menor rendimiento previo. Otro, en Sierra Leona, con 1.423 estudiantes de matemáticas de 7.º y 8.º grado, mostró una mejora al integrar los docentes Gemini Guided Learning, el modo de estudio guiado del asistente de Google, en la mitad de sus clases; lo firma un equipo de Google y Fab AI, y Google.org figura entre los financiadores de la propia revisión.",
+        "Los propios autores advierten de que los resultados no son generalizables a todo el sistema escolar estadounidense, de que la evidencia sobre equidad y efectos a largo plazo es escasa y de que muchos estudios son preprints, es decir, trabajos difundidos sin revisión por pares."
+      ],
+      "fuentes": [
+        {
+          "titulo": "The Evidence Base on AI in K-12: A November 2026 Review (SCALE, Stanford)",
+          "url": "https://scale.stanford.edu/ai/evidence-base-review/evidence-base-ai-k12-november-review"
+        }
+      ],
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 54498
+      },
+      "comprobado": "Revisado por segunda vez con la página de SCALE (Stanford): fecha 10-11-2026, 20 a 52 estudios, 32 nuevos, cinco de alumnado en K-12 de EE. UU., Turquía (193 docentes, 2.816 estudiantes de 5.º a 12.º, GPT-4o, preprint), Sierra Leona (1.423 estudiantes de 7.º y 8.º, equipo de Google y Fab AI; Google.org financia la revisión, no consta que financie ese estudio) y limitaciones. El ejemplo de rendimiento peor sin IA es de universitarios de Brasil. Buscador del diario: tema no publicado antes. Mensaje 54498 corresponde al tema.",
+      "ilustracion": "Esquema con dos caminos desde un alumno ante un asistente de IA: «entender material nuevo» (una flecha ascendente con signo de interrogación suave) y «producir la tarea» (una flecha descendente), con una balanza al fondo que indica «resultados desiguales».",
+      "ilustracion_alt": "Esquema: una persona usa un asistente, del que salen dos caminos: uno hacia «Entender» y otro, en rojo, hacia «Producir tarea», y al final una balanza. Rótulos: Asistente, Entender, Producir tarea, Desiguales.",
+      "grafico": null
+    },
+    {
+      "id": "galicia-ley-educacion-digital",
+      "seccion": "novedades",
+      "importancia": 2,
+      "grupo": "chatgpt",
+      "antetitulo": "Normativa autonómica",
+      "titular": "El Parlamento de Galicia aprueba la ley que regula móviles, pantallas e IA en las aulas",
+      "entradilla": "La Ley de educación digital limita el uso individual de dispositivos hasta 5.º de Primaria y se aprobó con los votos del PPdeG y el rechazo del BNG y el PSdeG.",
+      "cuerpo": [
+        "El Parlamento de Galicia aprobó definitivamente el martes 17 de noviembre de 2026 la Ley de educación digital, según informa [Galicia Confidencial](https://www.galiciaconfidencial.com/noticia/6095050-parlamento-galego-aproba-definitivamente-lei-educacion-dixital-entre-criticas-do-psdeg-e-do-bng). La norma regula el uso de móviles, pantallas e inteligencia artificial en los centros. Votaron a favor el Partido Popular de Galicia (PPdeG), se abstuvo Democracia Ourensana y votaron en contra el Bloque Nacionalista Galego (BNG) y el Partido dos Socialistas de Galicia (PSdeG).",
+        "Según esa crónica, la ley limita el uso individual de dispositivos electrónicos según la edad del alumnado, hasta 5.º de Primaria, y permite los móviles con fines pedagógicos desde 3.º de la ESO. También prohíbe grabar clases sin autorización, presenciales o en línea, y extiende la autoridad del profesorado al ámbito digital.",
+        "La crónica indica que la ley incluye la regulación del uso de la IA en las aulas, pero no detalla sus reglas; este diario no ha podido leer el texto aprobado, así que el contenido de ese apartado queda sin confirmar. La oposición criticó que solo se aceptaran 4 de las 158 enmiendas del PSdeG y 6 de las 69 del BNG, y reclamó más consenso con la comunidad educativa.",
+        "En el grupo se compartió la noticia como la primera ley autonómica de educación digital, con un capítulo sobre IA. Lo de «primera» lo dice en la crónica el conselleiro de Educación, Román Rodríguez, que sostiene que Galicia es la primera comunidad autónoma en aprobar una ley específica para regular la tecnología y la IA en las aulas; este diario no lo ha contrastado con otra fuente, y tampoco que haya un capítulo propio sobre IA."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Galicia aproba a lei que regulará os móbiles, as pantallas e a intelixencia artificial nas aulas (Galicia Confidencial)",
+          "url": "https://www.galiciaconfidencial.com/noticia/6095050-parlamento-galego-aproba-definitivamente-lei-educacion-dixital-entre-criticas-do-psdeg-e-do-bng"
+        }
+      ],
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 54496
+      },
+      "comprobado": "Revisada la crónica de Galicia Confidencial: fecha (17-11-2026), votos, límites por edad, grabaciones y enmiendas. La IA aparece como regulación y «disposiciones relacionadas», sin reglas ni capítulo propio descrito. La afirmación de «primera comunidad autónoma» es del conselleiro, citado en la crónica (el borrador decía que la crónica no la recogía: corregido); no contrastada con otra fuente. No se ha localizado el texto aprobado. Mensaje 54496 corresponde al tema. Buscador del diario: no publicado antes.",
+      "ilustracion": null,
+      "ilustracion_alt": "Esquema: un edificio de parlamento lleva a una ley, de la que salen un móvil tachado en rojo y una cámara de vídeo. Rótulos: Parlamento, Ley digital, Móviles, Sin grabar."
+    },
+    {
+      "id": "educamadrid-agente-ia",
+      "seccion": "novedades",
+      "importancia": 2,
+      "grupo": "chatgpt",
+      "antetitulo": "Administración educativa",
+      "titular": "Madrid incorpora a EducaMadrid un agente de IA que prepara materiales personalizados",
+      "entradilla": "Según la Comunidad de Madrid, el agente lo han desarrollado funcionarios de su Consejería de Digitalización y puede usarlo el profesorado de los centros sostenidos con fondos públicos.",
+      "cuerpo": [
+        "La Comunidad de Madrid anunció el 16 de noviembre de 2026, en [una nota de su web](https://www.comunidad.madrid/noticias/2026/11/16/comunidad-madrid-incorpora-plataforma-educamadrid-agente-ia-genera-tiempo-real-contenidos-personalizados-cada-estudiante), un agente de inteligencia artificial en la plataforma EducaMadrid. Según la nota, genera contenidos personalizados para cada estudiante en tiempo real y lo han desarrollado funcionarios de la Consejería de Digitalización.",
+        "Entre sus funciones, la nota cita elaborar apuntes y documentos de refuerzo a partir de fuentes educativas propias, crear cuestionarios de autoevaluación que se corrigen en la propia plataforma, seguir la evolución de cada estudiante y redactar o revisar correos electrónicos en varios idiomas. Se dirige al profesorado, que puede adaptar los materiales, y lo pueden usar todos los centros de la región sostenidos con fondos públicos. La administración calcula que liberará unas 40 horas al año de tareas rutinarias a cada docente.",
+        "La nota no indica qué modelo de IA usa, dónde se aloja ni cómo se tratan los datos del alumnado. Esas fueron precisamente las dudas que se plantearon en el grupo, junto con la calidad de los contenidos que genere. También se valoró como un primer paso de la administración."
+      ],
+      "fuentes": [
+        {
+          "titulo": "La Comunidad de Madrid incorpora a la plataforma EducaMadrid un agente de IA (Comunidad de Madrid)",
+          "url": "https://www.comunidad.madrid/noticias/2026/11/16/comunidad-madrid-incorpora-plataforma-educamadrid-agente-ia-genera-tiempo-real-contenidos-personalizados-cada-estudiante"
+        }
+      ],
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 54513
+      },
+      "comprobado": "Revisada de nuevo la nota oficial de la Comunidad de Madrid (16-11-2026): funciones, destinatarios (profesorado; la nota menciona también la comunicación con familias y usuarios de las Escuelas Oficiales de Idiomas), 40 horas anuales, centros sostenidos con fondos públicos, desarrollo por funcionarios de la Consejería de Digitalización; confirmado que no dice modelo, alojamiento ni tratamiento de datos. Mensaje 54513 corresponde al tema. Buscador del diario: EducaMadrid solo aparece en un reportaje anterior sobre edades, sin tratar este agente.",
+      "ilustracion": null,
+      "ilustracion_alt": "Esquema: una persona docente usa un agente, del que salen tres resultados: un documento, una marca de verificación y un sobre. Rótulos: Docente, Agente, Apuntes, Cuestionarios, Correos."
+    },
+    {
+      "id": "suno-visuals",
+      "seccion": "multimedia",
+      "importancia": 3,
+      "grupo": "edumedia",
+      "antetitulo": "Música y vídeo",
+      "titular": "Suno lanza Visuals para crear vídeos con letra y portadas a partir de sus canciones",
+      "entradilla": "La función genera clips de hasta 15 segundos y se paga con créditos aparte de los de las canciones.",
+      "cuerpo": [
+        "Suno, la plataforma de música con IA, presentó el 17 de noviembre de 2026 [Visuals](https://suno.com/blog/introducing-visuals), una herramienta para ilustrar sus canciones: vídeos con letra que siguen el ritmo, portadas de álbum y clips a partir de una foto. Está disponible en la web y en las aplicaciones de iOS y Android.",
+        "Según el anuncio, los clips duran hasta 15 segundos y se pueden extender, editar y regenerar con texto. Los créditos de Visuals, las unidades con que se paga cada uso, se compran por separado de los de canciones. Suno bloquea las peticiones y subidas que representen a artistas, figuras públicas u obras protegidas, pide confirmar que se tienen derechos sobre lo que se sube y pone marcas de agua en estas imágenes y vídeos antes de compartirlos fuera de la plataforma.",
+        "Para el aula, puede servir para ilustrar canciones creadas por el alumnado, siempre revisando antes sus condiciones de uso y sin subir imágenes de menores."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Introducing Visuals (Suno)",
+          "url": "https://suno.com/blog/introducing-visuals"
+        }
+      ],
+      "mensaje": {
+        "grupo": "edumedia",
+        "id": 12321
+      },
+      "comprobado": "Revisado de nuevo el anuncio de Suno (17-11-2026): funciones, web, iOS y Android, 15 segundos, créditos aparte, bloqueos, marcas de agua, confirmación de derechos. No dice precio de cada generación; la frase sobre el aula es una sugerencia de la redacción, no de la fuente. Mensaje 12321 corresponde al tema. Buscador del diario: Suno no se había tratado antes.",
+      "ilustracion": null,
+      "ilustracion_alt": "Esquema: una nota musical con tres flechas hacia tres tarjetas: una clapperboard de vídeo, una imagen y una cámara. Rótulos: Canción, Vídeo con letra, Portada, Clip de 15 s, Créditos aparte."
+    },
+    {
+      "id": "umami-analitica-privacidad",
+      "seccion": "vibecoding",
+      "importancia": 3,
+      "grupo": "vce",
+      "antetitulo": "Truco de desarrollo",
+      "titular": "Un docente mide el uso de sus aplicaciones con Umami, unas estadísticas sin cookies",
+      "entradilla": "Esta herramienta permite saber qué funciones usa el alumnado sin recoger nombres ni correos.",
+      "cuerpo": [
+        "Al presentar su catálogo de lecturas [Trama](pieza:2026-11-16/trama-comprensio-lectora), su autor explicó en el grupo que usa [Umami](https://umami.is/), un sistema de código abierto que registra cómo se usan las páginas web, para saber cuáles de sus aplicaciones educativas se usan más y qué acciones se hacen (iniciar una actividad, elegir un nivel, descargar un material). Con eso decide dónde dedicar el esfuerzo.",
+        "Umami funciona sin cookies y no guarda la dirección IP de las personas que visitan la página, aunque sí su ciudad aproximada, el navegador y el tipo de dispositivo. Se puede instalar gratis en un servidor o en un ordenador propio, con licencia MIT, una licencia de software libre, o usar su versión en la nube, cuyo [plan gratuito](https://umami.is/pricing) admite 100.000 eventos al mes en una sola web y guarda los datos seis meses.",
+        "Que no use cookies no exime de avisar. La [Agencia Española de Protección de Datos](https://www.aepd.es/guias/guia-cookies-analiticas-externas.pdf) permite medir la audiencia sin pedir consentimiento si los datos solo sirven para estadísticas propias, no se ceden a terceros y se conservan como máximo 25 meses, pero exige explicarlo en la política de privacidad. Por tanto, con Umami usado así no hace falta pedir permiso ni mostrar un aviso de cookies, pero sí explicar en la política de privacidad de la aplicación que se mide su uso, y no guardar los datos más de 25 meses.",
+        "Otra idea suya es poner unas banderas de aviso en cada ejercicio o imagen, de modo que la persona que usa la aplicación señale un error con un clic, sin formularios ni correo."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Umami",
+          "url": "https://umami.is/"
+        },
+        {
+          "titulo": "Trama · Comprensió lectora",
+          "url": "https://trama.ortogra.fi/"
+        },
+        {
+          "titulo": "Umami · Precios",
+          "url": "https://umami.is/pricing"
+        },
+        {
+          "titulo": "AEPD · Uso de cookies para herramientas de medición de audiencia",
+          "url": "https://www.aepd.es/guias/guia-cookies-analiticas-externas.pdf"
+        }
+      ],
+      "mensaje": {
+        "grupo": "vce",
+        "id": 15112
+      },
+      "comprobado": "Abierta la web de Umami: código abierto, sin cookies ni datos personales, autoalojamiento gratis con licencia MIT; no consta en ella el límite del plan gratuito (el de 100.000 eventos que cita el docente se omite). Abierta la web de Trama: usa Umami (instancia propia de ortogra.fi), sin enviar textos personales ni códigos de aula, y recibe los avisos de la bandera. Autor de Trama, según su web, Aarón Fortuño; no se nombra porque el mensaje lo firma una cuenta con otro nombre visible. Enlazada la pieza anterior sobre Trama (2026-11-16). Buscador del diario: Umami no se había tratado. Mensaje 15112 corresponde al tema. Ampliado el 19-11-2026 antes de publicar: plan gratuito confirmado en umami.is/pricing (100.000 eventos al mes, una web, seis meses); en el código de Umami (v3.5.0) no guarda la IP (sesión = hash de web, IP, navegador y sal mensual) y sí país, región, ciudad, navegador, sistema, dispositivo, pantalla e idioma; condiciones de la exención de consentimiento en la guía de la AEPD de enero de 2024 (finalidad estadística propia, sin terceros, 25 meses, informar en la política de privacidad).",
+      "ilustracion": null,
+      "ilustracion_alt": "Esquema: una ventana de aplicación con un puntero que hace clic envía su uso a un panel con un ojo tachado; al lado, una galleta tachada en rojo y una bandera. Rótulos: Aplicación, Umami, Sin cookies, Aviso de error."
+    }
+  ],
+  "breves": [
+    {
+      "texto": "Google despliega hilos temporales en el Modo IA de su buscador: las preguntas de esas conversaciones no se guardan en el historial ni influyen en la personalización, según su anuncio del 17 de noviembre.",
+      "url": "https://blog.google/products-and-platforms/products/search/temporary-threads-ai-mode",
+      "grupo": "chatgpt",
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 54503
+      }
+    },
+    {
+      "texto": "[Trama](pieza:2026-11-16/trama-comprensio-lectora) ya tiene 245 lecturas en catalán y castellano, de 3.º de primaria a 1.º de ESO, según su propia web.",
+      "url": "https://trama.ortogra.fi/",
+      "grupo": "vce",
+      "mensaje": {
+        "grupo": "vce",
+        "id": 15112
+      }
+    },
+    {
+      "texto": "ChatGPT Learn publica una guía para pedir tareas a GPT-6.2 Astra y Sol en Codex, el asistente de programación de OpenAI; la página no indica fecha de lanzamiento ni planes.",
+      "url": "https://learn.chatgpt.com/guides/prompting-gpt-6-2-astra",
+      "grupo": "edumedia",
+      "mensaje": {
+        "grupo": "edumedia",
+        "id": 12332
+      }
+    },
+    {
+      "texto": "Kling AI anuncia Kling Image 4.0, con imágenes generadas directamente en resolución 8K, texto en varios idiomas y hasta 10 imágenes coherentes entre sí en cada petición, según su comunicado del 17 de noviembre; no indica disponibilidad ni precios.",
+      "url": "https://www.manilatimes.net/2026/11/18/tmt-newswire/media-outreach-newswire/kling-ai-launches-kling-image-40-with-photographic-realism-and-native-8k-generation/2472379",
+      "grupo": "edumedia",
+      "mensaje": {
+        "grupo": "edumedia",
+        "id": 12323
+      }
+    }
+  ],
+  "descartado": [
+    "Corea del Sur y las gafas en el examen de acceso: el breve ya salió en el número 17 (18-11-2026); se quita para no repetirlo.",
+    "GPT-6.2 Astra y Sol como lanzamiento: la búsqueda no encontró anuncio oficial de OpenAI con fecha, planes ni precios (solo filtraciones); solo se recoge la guía de ChatGPT Learn en un breve.",
+    "Genie 4, nuevo modelo Neon de Gemini, avatares de Google Vids y Gemini 4 Carbon con /swarm: solo enlaces a X sin fuente oficial abierta; la búsqueda de Genie 4 no halló nada oficial. No se confirman.",
+    "Estudio sobre tutor socrático con 400 personas (arXiv 2611.20061): documento de la Biblioteca digital, que tiene su propia sección.",
+    "Cambio de ajustes de privacidad de Gemini (captura de un aviso): sin fuente oficial localizada.",
+    "Celda robotizada en un galpón (Magda Diaz-G): continuación de un tema ya publicado, con enlace de Netlify sin fuente comprobable; no se publica.",
+    "Búsqueda de formación en IA para personal administrativo (pregunta sin respuesta) y minidecálogo de una escuela de idiomas: opiniones personales sin noticia."
+  ],
+  "repaso": [
+    "Stanford: entradilla rebajada («parece más prometedora»); aclarado que el ejemplo de peor rendimiento sin IA es de universitarios de Brasil; la financiación de Google.org es de la revisión, no consta del estudio de Sierra Leona.",
+    "Galicia: corregido el error del borrador: la crónica sí recoge lo de «primera comunidad», pero como afirmación del conselleiro, sin contrastar; el «capítulo sobre IA» del grupo no consta.",
+    "Umami: Trama enlaza ahora la pieza ya publicada (2026-11-16).",
+    "Breve de Corea del Sur quitado: ya salió en el número 17.",
+    "Breve de ChatGPT Learn: precisado que la guía cubre Astra y Sol.",
+    "Añadido un breve de Kling Image 4.0 (comunicado de la empresa abierto; sin disponibilidad ni precios).",
+    "Madrid y Suno: verificados sin cambios."
+  ]
+}
