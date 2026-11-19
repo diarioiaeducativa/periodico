@@ -31,7 +31,7 @@ MAQUETA = "diario"
 # Dirección pública del sitio, para los enlaces absolutos del RSS y de la vista previa al compartir
 BASE = os.environ.get("PERIODICO_BASE", "https://diarioiaeducativa.github.io/")
 ORDEN_SECCIONES = ["herramientas", "vibecoding", "multimedia", "debates", "novedades", "biblioteca"]
-SECCIONES_FUERA = ["hace-un-ano"]   # con su página, pero sin entrada en el menú: se llega desde el número y el pie (ADR 0040)
+SECCIONES_FUERA = ["hace-un-ano", "opinion"]   # con su página, pero sin entrada en el menú: se llega desde el número y el pie (ADR 0040 y 0092)
 # «La redacción» en columnas (ADR 0047): los apartados de `secciones`, por su posición, en bloques por tema:
 # cómo trabajan los agentes; las secciones del diario; quién lo lee y quién lo hace. El último empieza por las
 # comunidades, con su diagrama arriba de la primera columna: en medio, al no poder partirse, dejaba un hueco
@@ -67,7 +67,7 @@ IDIOMAS = {
         "meses": ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto",
                   "septiembre", "octubre", "noviembre", "diciembre"],
         "secciones": {"herramientas": "Herramientas", "vibecoding": "Vibe coding", "multimedia": "Multimedia",
-                      "debates": "Debates", "novedades": "Instituciones y empresas", "biblioteca": "Biblioteca", "hace-un-ano": "Hace un año"},
+                      "debates": "Debates", "novedades": "Instituciones y empresas", "biblioteca": "Biblioteca", "hace-un-ano": "Hace un año", "opinion": "Opinión"},
         "num_prueba": "Número de prueba", "actualizado": "Actualizado el", "num": "Núm.", "numero_largo": "Número",
         "tema": "Cambiar entre tema claro y oscuro", "navegacion": "Navegación",
         "contacto": {"titulo": "Contacto", "enlace": "página de contacto", "txt": "Para avisar de un error, pedir que se retire algo o hacer cualquier consulta sobre el diario o su app.", "correo": "Correo", "otras": "También se puede abrir una incidencia en {incidencias} o escribir a las personas que administran cada grupo."},
@@ -107,6 +107,7 @@ IDIOMAS = {
         "sin_vinetas": "Todavía no hay viñetas.",
         "descripciones": {
             "hace-un-ano": "Cada día, algo que se hablaba en los grupos el mismo día del año anterior, visto desde hoy: lo que ha cambiado, lo que ya no existe y lo que el tiempo ha resuelto.",
+            "opinion": "Cada miércoles, una columna que toma partido en un debate educativo. La escribe un modelo de IA, que la firma con su nombre; el diario comprueba sus datos, y la opinión es del modelo.",
             "herramientas": "Asistentes, servicios y modelos de inteligencia artificial de los que se habla en los grupos, explicados desde su uso docente: qué ofrecen, en qué condiciones y para qué puede servir cada uno en clase.",
             "vibecoding": "Aplicaciones que el profesorado crea describiéndolas a una inteligencia artificial, sin necesidad de saber programar, y lo que se aprende en los grupos para hacerlas: instrucciones para generar recursos, agentes de programación y soluciones a problemas habituales. Cada aplicación se presenta con el nombre de su autor o autora, y las que entran en el {repositorio} de Vibe Coding Educativo tienen aquí su artículo.",
             "multimedia": "Audio, vídeo e imagen con inteligencia artificial generativa: las herramientas para crear voces, ilustraciones y vídeos, y los flujos de trabajo que comparten los grupos para producir material educativo.",
@@ -132,7 +133,7 @@ IDIOMAS = {
         "buscar_txt": "Busca en todo lo publicado en el diario, en castellano: artículos, breves, reportajes y la Biblioteca. Encuentra también las formas de una misma palabra: «evaluar» encuentra «evaluación».",
         "resultados_1": "1 resultado", "resultados_n": "{n} resultados", "sin_resultados": "No hay nada publicado con esas palabras.",
         "todas": "Todas", "mas_resultados": "Más resultados", "buscando": "Buscando…", "sin_buscador": "El buscador no ha podido cargarse.",
-        "reportaje": "El reportaje del domingo", "reportajes": "Reportajes", "leer_reportaje": "Leer el reportaje", "leer_hace_un_ano": "Leer cómo ha cambiado",
+        "reportaje": "El reportaje del domingo", "reportajes": "Reportajes", "leer_reportaje": "Leer el reportaje", "leer_hace_un_ano": "Leer cómo ha cambiado", "leer_opinion": "Leer la columna", "opinion_firma": "Por {autor}", "opinion_nota": "Columna de opinión escrita por {autor}. El diario comprueba sus datos; la opinión es del modelo.",
         "claves": "Claves", "en_el_diario": "En el diario esta semana", "semana_repo": "Cada sábado, el diario repasa los recursos que han entrado durante la semana en el {repositorio} de Vibe Coding Educativo, la colección de aplicaciones y materiales con licencia abierta que crea y comparte el profesorado de esa comunidad.", "ya_contados": "Ya publicados en el diario", "otras_semanas": "Otras semanas del repositorio", "sin_reportajes": "Todavía no hay reportajes.",
         "reportajes_txt": "Cada domingo, un tema de la semana tratado a fondo.", "palabras": "minutos de lectura",
         "redaccion": {
@@ -202,7 +203,7 @@ IDIOMAS = {
         "meses": ["gener", "febrer", "març", "abril", "maig", "juny", "juliol", "agost",
                   "setembre", "octubre", "novembre", "desembre"],
         "secciones": {"herramientas": "Eines", "vibecoding": "Vibe coding", "multimedia": "Multimèdia",
-                      "debates": "Debats", "novedades": "Institucions i empreses", "biblioteca": "Biblioteca", "hace-un-ano": "Fa un any"},
+                      "debates": "Debats", "novedades": "Institucions i empreses", "biblioteca": "Biblioteca", "hace-un-ano": "Fa un any", "opinion": "Opinió"},
         "num_prueba": "Número de prova", "actualizado": "Actualitzat el", "num": "Núm.", "numero_largo": "Número",
         "tema": "Canviar entre tema clar i fosc", "navegacion": "Navegació",
         "contacto": {"titulo": "Contacte", "enlace": "pàgina de contacte", "txt": "Per avisar d'un error, demanar que es retiri alguna cosa o fer qualsevol consulta sobre el diari o la seva app.", "correo": "Correu", "otras": "També es pot obrir una incidència a {incidencias} o escriure a les persones que administren cada grup."},
@@ -243,6 +244,7 @@ IDIOMAS = {
         "sin_vinetas": "Encara no hi ha vinyetes.",
         "descripciones": {
             "hace-un-ano": "Cada dia, alguna cosa que es parlava als grups el mateix dia de l'any anterior, vista des d'avui: el que ha canviat, el que ja no existeix i el que el temps ha resolt.",
+            "opinion": "Cada dimecres, una columna que pren partit en un debat educatiu. L'escriu un model d'IA, que la signa amb el seu nom; el diari en comprova les dades, i l'opinió és del model.",
             "herramientas": "Assistents, serveis i models d'intel·ligència artificial dels quals es parla als grups, explicats des del seu ús docent: què ofereixen, en quines condicions i per a què pot servir cadascun a classe.",
             "vibecoding": "Aplicacions que el professorat crea descrivint-les a una intel·ligència artificial, sense necessitat de saber programar, i el que s'aprèn als grups per fer-les: instruccions per generar recursos, agents de programació i solucions a problemes habituals. Cada aplicació es presenta amb el nom del seu autor o autora, i les que entren al {repositorio} de Vibe Coding Educativo hi tenen el seu article.",
             "multimedia": "Àudio, vídeo i imatge amb intel·ligència artificial generativa: les eines per crear veus, il·lustracions i vídeos, i els fluxos de treball que comparteixen els grups per produir material educatiu.",
@@ -268,7 +270,7 @@ IDIOMAS = {
         "buscar_txt": "Cerca en tot el que s'ha publicat al diari, en català: articles, breus, reportatges i la Biblioteca. Troba també les formes d'una mateixa paraula: «avaluar» troba «avaluació».",
         "resultados_1": "1 resultat", "resultados_n": "{n} resultats", "sin_resultados": "No hi ha res publicat amb aquestes paraules.",
         "todas": "Totes", "mas_resultados": "Més resultats", "buscando": "Cercant…", "sin_buscador": "El cercador no s'ha pogut carregar.",
-        "reportaje": "El reportatge del diumenge", "reportajes": "Reportatges", "leer_reportaje": "Llegeix el reportatge", "leer_hace_un_ano": "Llegeix com ha canviat",
+        "reportaje": "El reportatge del diumenge", "reportajes": "Reportatges", "leer_reportaje": "Llegeix el reportatge", "leer_hace_un_ano": "Llegeix com ha canviat", "leer_opinion": "Llegeix la columna", "opinion_firma": "Per {autor}", "opinion_nota": "Columna d'opinió escrita per {autor}. El diari en comprova les dades; l'opinió és del model.",
         "claves": "Claus", "en_el_diario": "Al diari aquesta setmana", "semana_repo": "Cada dissabte, el diari repassa els recursos que han entrat durant la setmana al {repositorio} de Vibe Coding Educativo, la col·lecció d'aplicacions i materials amb llicència oberta que crea i comparteix el professorat d'aquesta comunitat.", "ya_contados": "Ja publicats al diari", "otras_semanas": "Altres setmanes del repositori", "sin_reportajes": "Encara no hi ha reportatges.",
         "reportajes_txt": "Cada diumenge, un tema de la setmana tractat a fons.", "palabras": "minuts de lectura",
         "redaccion": {
@@ -559,6 +561,12 @@ def cargar():
                 for x in hu.get("piezas", []):
                     x["importancia"] = 9
                 d["piezas"] = d["piezas"] + hu.get("piezas", [])
+        if d.get("piezas") and (RAIZ / "columnas" / nombre).exists():   # la columna de opinión de los miércoles (ADR 0092)
+            col = json.loads(con_traduccion("columnas", nombre).read_text())
+            if col.get("hay_pieza"):
+                for x in col.get("piezas", []):
+                    x["importancia"], x["seccion"] = 8, "opinion"
+                d["piezas"] = d["piezas"] + col.get("piezas", [])
         if d.get("piezas"):
             d["piezas"].sort(key=lambda p: p.get("importancia", 3))
             for p in d["piezas"]:
@@ -1705,7 +1713,8 @@ def cuerpo_portada(prof, piezas, breves, mostrar_fecha, tira=""):
     # artículos de la Biblioteca, justo debajo en «Más del día»; los bloques, para los días anteriores
     # «Hace un año» (ADR 0040), con lo de hoy pero fuera de las filas: en su franja a todo el ancho, para que no
     # deje una fila de tres columnas con una sola pieza. Los de días anteriores no salen en la portada.
-    hace_un_ano = next((p for p in demas if p.get("seccion") in SECCIONES_FUERA and p["fecha"] == p0["fecha"]), None)
+    hace_un_ano = next((p for p in demas if p.get("seccion") == "hace-un-ano" and p["fecha"] == p0["fecha"]), None)
+    opinion = next((p for p in demas if p.get("seccion") == "opinion" and p["fecha"] == p0["fecha"]), None)   # ADR 0092
     demas = [p for p in demas if p.get("seccion") not in SECCIONES_FUERA]
     mas_hoy = [p for p in demas if p["fecha"] == p0["fecha"]]
     demas = [p for p in demas if p not in mas_hoy]
@@ -1731,7 +1740,7 @@ def cuerpo_portada(prof, piezas, breves, mostrar_fecha, tira=""):
     if mostrar_fecha:
         # Con un solo breve, su recuadro quedaba medio vacío al lado del de «Hace un año» (ADR 0041): entonces
         # «Hace un año» se ensancha y los breves se estrechan
-        html_ += breves_y_hace_un_ano(prof, breves_dia, hace_un_ano, pocos=len(hoy) < 2)
+        html_ += franja_opinion(prof, opinion) + breves_y_hace_un_ano(prof, breves_dia, hace_un_ano, pocos=len(hoy) < 2)
     html_ += tira
     visibles, ultima = 0, None
     for clave in ORDEN_SECCIONES:
@@ -1759,7 +1768,7 @@ def cuerpo_portada(prof, piezas, breves, mostrar_fecha, tira=""):
   <h2 id="b-breves" class="bloque-titulo"><a href="{prof}breves.html">{icono("breves")} {L["breves_antes"] if mostrar_fecha else L["breves"]}</a></h2>
   <div class="bloque-piezas" style="--n:{min(len(sueltas) + (len(breves) if breves else 0), 2 if hu_aqui else 3)}">{lista}</div>
 </section>"""
-    html_ += final if mostrar_fecha else breves_y_hace_un_ano(prof, final, hace_un_ano, pocos=len(sueltas) + len(breves or []) < 2)
+    html_ += final if mostrar_fecha else franja_opinion(prof, opinion) + breves_y_hace_un_ano(prof, final, hace_un_ano, pocos=len(sueltas) + len(breves or []) < 2)
     return html_
 
 
@@ -1928,6 +1937,23 @@ def franja_hace_un_ano(prof, p):
 </section>"""
 
 
+def franja_opinion(prof, p):
+    """La columna de opinión de los miércoles (ADR 0092): una franja a todo el ancho, sin dibujo, con la firma del
+    modelo que la escribe a la vista, para que nadie la tome por información del diario."""
+    if not p:
+        return ""
+    firma = f'<p class="firma">{e(L["opinion_firma"].format(autor=p["autor"]))}</p>' if p.get("autor") else ""
+    return f"""<section class="editorial opinion-franja sec-opinion sin-ilu" aria-labelledby="op-{e(p["id"])}">
+  <div class="texto">
+    <p class="seccion"><span><a href="{prof}opinion.html">{icono("opinion")} {L["secciones"]["opinion"]}</a></span> <span class="fecha-pieza">{fecha_rotulo(p)}</span></p>
+    <h2 id="op-{e(p["id"])}" class="titular"><a href="{href(prof, p)}">{e(p["titular"])}</a></h2>
+    {firma}
+    <p class="entradilla">{e(p["entradilla"])}</p>
+    <p class="leer"><a href="{href(prof, p)}">{L["leer_opinion"]}</a></p>
+  </div>
+</section>"""
+
+
 def recuadro_hace_un_ano(prof, p):
     """«Hace un año» en pequeño, en un recuadro sepia junto a los breves (ADR 0040): el rótulo arriba y el díptico
     en miniatura, a un lado del titular y la entradilla, para que el recuadro no doble en altura a los breves. Sola, a todo el ancho, se veía demasiado grande para una pieza de memoria."""
@@ -2074,6 +2100,10 @@ def articulo(prof, ruta, d, p, eds):
     elif recs:           # la semana del repositorio: un apartado por recurso, con su captura
         bloques = "".join(bloque_recurso(prof, p["id"], r) for r in recs)
     serie, ya_contados, otras = semana_repositorio(prof, p, eds)
+    # La columna de opinión (ADR 0092): firmada por el modelo que la escribe, con la nota al final
+    firma = f'<p class="firma">{e(L["opinion_firma"].format(autor=p["autor"]))}</p>' if p.get("autor") else ""
+    if p.get("autor"):
+        cuerpo += f'<p class="nota-opinion">{e(L["opinion_nota"].format(autor=p["autor"]))}</p>'
     rot = rotulos(p, True, prof, boton=boton_escuchar() + boton_columnas())
     linea, _, ante = rot.partition("\n  ")   # la línea de la sección, fuera de la cabeza; el antetítulo, dentro
     if not ante:   # sin sección: la línea del antetítulo lleva la fecha y el botón
@@ -2081,7 +2111,7 @@ def articulo(prof, ruta, d, p, eds):
     cab = cabeza_pieza(f"""{ante}
     <h1 class="titular">{sin_viuda(e(p["titular"]))}</h1>
     <p class="entradilla">{e(p.get("entradilla"))}</p>
-    {serie}""", "" if len(p.get("recursos") or []) > 1 else ilustracion(d["fecha"], p, prof, ampliable=True))
+    {firma}{serie}""", "" if len(p.get("recursos") or []) > 1 else ilustracion(d["fecha"], p, prof, ampliable=True))
     return cabeza(f'{p["titular"]} | {L["titulo"]}', prof, p.get("entradilla", ""), ruta,
                   datos=datos_noticia(p["titular"], ruta, d["fecha"], imagen_pieza(d["fecha"], p)[0], p.get("corregido"))) + f"""<body class="pag-articulo">
 {cabecera(prof, ruta, d["fecha"], d["numero"], False, h1=False, dia=d)}
@@ -3324,6 +3354,8 @@ def bloque_notebook(sem, m):
 </section>"""
 
 
+ICONOS["opinion"] = ('<path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/>'
+                     '<path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/>')   # quote (ADR 0092)
 ICONOS["hace-un-ano"] = ('<path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M12 7v5l4 2"/>')   # rotate-ccw-clock (ADR 0040)
 ICONOS["comentario"] = ('<path d="M14 14a2 2 0 0 0 2-2V8h-2"/><path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"/>'
                         '<path d="M8 14a2 2 0 0 0 2-2V8H8"/>')   # message-square-quote
@@ -4212,6 +4244,7 @@ COLOR_SUELTO = {
     "vibecoding": ("#1d7547", "#e2f1e8", "#bfe0cc"), "novedades": ("#6a3d9e", "#eee6f7", "#d8c6ee"),
     "multimedia": ("#a8206f", "#fae4f0", "#f2bedb"), "reportaje": ("#1c3faa", "#eef1fa", "#dfe5f7"),
     "biblioteca": ("#0b6e79", "#e0f2f3", "#b7e1e5"), "hace-un-ano": ("#7a4f2a", "#f6ede3", "#e8d3bd"),
+    "opinion": ("#4a3f6b", "#efedf5", "#dcd7ea"),
 }
 SUELTO_BASE = {"--ilu-tinta": "#16181d", "--ilu-rojo": "#c8202c", "--c-herramientas": "#1c3faa",
                "--c-comunidad": "#1d7547", "--c-multimedia": "#a8206f"}

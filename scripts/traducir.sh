@@ -45,6 +45,7 @@ traducir() {
   case $tipo in
     edicion) orig="ediciones/$FECHA.json" ;;
     biblioteca|repositorio|hace-un-ano) orig="$tipo/$FECHA.json" ;;
+    columna) orig="columnas/$FECHA.json" ;;
   esac
   if [ -n "$orig" ]; then   # la forma del original, antes de traducirlo (scripts/forma.py)
     m=$(python3 scripts/forma.py "$orig" 2>&1)

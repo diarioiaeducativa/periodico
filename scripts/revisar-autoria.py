@@ -33,7 +33,7 @@ import os  # noqa: E402
 
 DATOS = pathlib.Path(os.environ.get("DATOS_BOT", "/bot-datos"))
 GRUPOS = {"chatgpt": "ChatGPTedu", "vce": "vceduca", "edumedia": "EduMediaIAG"}
-SECCIONES = ("ediciones", "reportajes", "biblioteca", "hace-un-ano", "repositorio")
+SECCIONES = ("ediciones", "reportajes", "biblioteca", "hace-un-ano", "repositorio", "columnas")
 IDIOMAS = ("", "-ca", "-gl", "-eu", "-en")
 # Lo que no se publica: notas de los agentes, la descripción para el ilustrador, la nota de corrección
 INTERNOS = {"repaso", "comprobado", "correccion", "motivo", "ilustracion", "mensaje", "idea", "fuentes",

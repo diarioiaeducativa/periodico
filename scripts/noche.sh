@@ -279,6 +279,17 @@ bash scripts/repositorio.sh "$FECHA"
 bash scripts/hace-un-ano.sh "$FECHA"
 [ $? -le 2 ] || { log "«Hace un año» falló de forma inesperada: sale sin él"; rm -f hace-un-ano/"$FECHA".json $(traducidos hace-un-ano); }
 
+# 3 quinquies (después). La columna de opinión del miércoles (ADR 0092): la noche del martes, la escribe GPT-6.2-Astra
+# y, si hay una de reserva, el juez elige entre las dos. Nunca impide el número.
+if [ "$(date -d "$FECHA" +%u)" = 2 ] || [ "${COLUMNA:-0}" = 1 ]; then
+  bash scripts/columna.sh "$FECHA"
+  case $? in
+    0) ;;
+    2) incidencia "El número del miércoles sale sin columna de opinión: ni la nueva ha valido ni quedaba una de reserva. Registro: /volume1/docker/diario-ia-educativa/repo/registro/$FECHA.log" ;;
+    *) log "la columna de opinión falló de forma inesperada: sale sin ella"; rm -f columnas/"$FECHA".json $(traducidos columnas) ;;
+  esac
+fi
+
 # 3 quinquies. El domingo cierra la semana de los mensajes: el comentario de la semana para su página (ADR 0038).
 # Nunca impide el número.
 if [ "$(date -d "$FECHA" +%u)" = 7 ] || [ "${COMENTARIO:-0}" = 1 ]; then

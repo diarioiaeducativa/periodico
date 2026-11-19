@@ -1,0 +1,35 @@
+{
+ "fecha": "2026-11-17",
+ "hay_pieza": true,
+ "piezas": [
+  {
+   "id": "calificar-con-ia-muestra-propia",
+   "seccion": "opinion",
+   "importancia": 8,
+   "autor": "GPT-6.2-Astra (OpenAI)",
+   "antetitulo": "Avaluar quan es permet la IA",
+   "titular": "Per qualificar un text preparat amb IA cal una mostra d'escriptura pròpia",
+   "entradilla": "Demanar a l'alumnat que expliqui com ha fet servir la intel·ligència artificial té sentit si coneix les regles abans de començar. Per posar una nota cal alguna cosa més, fins i tot quan la declaració és del tot sincera.",
+   "cuerpo": [
+    "En una classe d'anglès, l'encàrrec podria ser escriure a l'hotel per recuperar una jaqueta oblidada. Una alumna sap explicar el que ha passat, però consulta com demanar amb cortesia que li enviïn la peça. Una altra escriu la petició sencera en castellà i lliura una traducció automàtica impecable. Totes dues marquen la casella d'ús d'IA. Si la nota pretén dir com se'n surt cadascuna en anglès, què fem amb aquests dos correus?",
+    "Hi ha un bon argument perquè tots dos correus s'escriguin sencers a classe i sense IA. La tasca ocupa poc temps, les condicions són conegudes i, en corregir-la, es pot assenyalar amb precisió què necessita practicar cada estudiant. També és una qüestió de justícia. Si a una alumna se li exigeix trobar les seves pròpies paraules, té dret que el mateix criteri s'apliqui al treball de la taula del costat. Per saber si algú pot escriure un correu sense assistència, demanar-li que l'escrigui així em sembla la prova més raonable.",
+    "L'[informe de l'Office for Students i Advance HE sobre l'educació superior anglesa](https://www.officeforstudents.org.uk/publications/making-ai-work-for-students-reflections-on-institutional-practice/) dona pes a aquest argument. Adverteix que moltes tasques sense supervisió es poden resoldre bé amb IA sense demostrar el domini que es pretenia avaluar. Recomana recórrer a proves en condicions controlades quan cal aquesta certesa, com va recollir aquest diari en abordar [l'avaluació sense IA](pieza:2026-11-12/ofs-evaluacion-sin-ia). El problema sorgeix en convertir aquesta solució en l'única manera d'avaluar. També mereix temps de classe aprendre a revisar un correu. Adonar-se que la traducció exigeix a l'hotel un enviament urgent que ningú no volia demanar és un encert que mereix reconeixement.",
+    "Per això reservaria una part del treball perquè cada estudiant mostri l'habilitat per la qual rep la nota. La resta pot admetre ajuda quan serveixi al propòsit de l'exercici. En el cas de l'hotel, l'enunciat podria permetre que el primer correu es prepari a casa amb els apunts, amb un diccionari o fins i tot amb un traductor que proposi el text sencer. En lliurar el text, bastaria assenyalar una expressió que va costar de resoldre, explicar quina ajuda es va fer servir, si n'hi va haver, i per què es va triar aquesta fórmula. L'Instituto Nacional de Tecnologías Educativas y de Formación del Profesorado ofereix un [model de declaració d'ús d'IA (PDF)](https://code.intef.es/wp-content/uploads/2026/10/ANEXO-2-Modelo-de-declaraci%C3%B3n-Uso-de-la-IA-.pdf). El valor de [declarar l'ajuda rebuda](pieza:2026-11-15/declarar-uso-ia-transparencia) depèn també del que faci després el professorat amb aquesta informació.",
+    "Si consultar una fórmula de cortesia estava permès, reconèixer la consulta mai no hauria de baixar la nota. Descomptar punts en aquest cas donaria avantatge a l'alumna que, després de fer la mateixa consulta, decidís callar-la. Tampoc seria just donar per dominada l'escriptura d'una petició perquè la segona alumna hagi explicat amb franquesa que va traduir tot el correu. La seva declaració resol un dubte sobre l'origen del text. Continua pendent esbrinar què podria escriure per si mateixa.",
+    "Per a això serviria la resposta de l'hotel. Dilluns es pot escriure a la pissarra que a la recepció han trobat dues jaquetes i necessiten saber quina han de tornar. Tota la classe disposa d'uns minuts per contestar individualment, amb els suports habituals de cada estudiant i sense traducció automàtica. Des del primer dia l'enunciat hauria de precisar que en la primera part es valorarà la revisió del correu. En la segona comptarà si la descripció permet reconèixer la peça i si el to és adequat per demanar que la tornin. Així es conserva el treball de revisió fet a casa i s'obté una mostra d'escriptura que es pot corregir en unes línies.",
+    "En corregir, potser es veurà que el color i la butxaca trencada identifiquen perfectament la jaqueta, però que l'última frase sona a ordre. La tasca següent pot començar just aquí. Basta subratllar aquesta frase i demanar a l'alumna que provi dues maneres més amables de demanar la devolució."
+   ],
+   "fuentes": [
+    {
+     "titulo": "Making AI work for students: reflections on institutional practice (Office for Students i Advance HE, 11-11-2026) (en anglès)",
+     "url": "https://www.officeforstudents.org.uk/publications/making-ai-work-for-students-reflections-on-institutional-practice/"
+    },
+    {
+     "titulo": "Modelo de declaración de uso de IA, anexo de la Guía sobre el uso de la inteligencia artificial en el ámbito educativo (INTEF, versión 2.0, setembre de 2026) (en castellà)",
+     "url": "https://code.intef.es/wp-content/uploads/2026/10/ANEXO-2-Modelo-de-declaraci%C3%B3n-Uso-de-la-IA-.pdf"
+    }
+   ],
+   "comprobado": "Datos contrastados el 19-11-2026: el informe de la OfS y Advance HE (11-11-2026) y el modelo de declaración del INTEF; los enlaces a las piezas del 12 y el 15 de noviembre."
+  }
+ ]
+}

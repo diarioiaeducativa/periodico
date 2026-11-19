@@ -31,7 +31,7 @@ _spec = importlib.util.spec_from_file_location("autoria", RAIZ / "scripts" / "re
 autoria = importlib.util.module_from_spec(_spec)
 _spec.loader.exec_module(autoria)
 
-SECCIONES = ("ediciones", "reportajes", "biblioteca", "hace-un-ano", "repositorio")
+SECCIONES = ("ediciones", "reportajes", "biblioteca", "hace-un-ano", "repositorio", "columnas")
 IDIOMAS = ("", "-ca", "-gl", "-eu")   # el inglés no: allí una cita inglesa es su idioma
 QUIEN = re.compile(r"\b[Qq]uien(es)?\b")
 CITA = re.compile(r"«([^»]*)»|“([^”]*)”")

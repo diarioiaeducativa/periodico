@@ -9,7 +9,7 @@ traductor y la comprobación de lo traducido, sin IA.
                                                       (con --mirar, solo lo dice)
     scripts/idiomas.py falta TIPO FECHA IDIOMA        dice lo que tenía que estar traducido y no está
 
-TIPO: edicion (edición, viñeta y dibujos), dibujos, vineta (la de reserva, sola), biblioteca, repositorio, reportaje, hace-un-ano, comentario-semana
+TIPO: edicion (edición, viñeta y dibujos), dibujos, vineta (la de reserva, sola), biblioteca, repositorio, reportaje, hace-un-ano, columna, comentario-semana
 o multimedia (estos dos, con la semana AAAA-WW en lugar de la fecha). Lo que se
 quita deja la página de ese idioma con el castellano, como cuando falta una traducción. Sale con 1
 si ha quitado algo, y lo dice en una línea. `traducir.sh` repite entonces la traducción una vez, y esa segunda
@@ -167,7 +167,8 @@ def comprobar_json(carpeta, fecha, c, lista="piezas", conservar=False):
 # Lo que cada tipo tiene que dejar traducido: la carpeta y las claves que dicen que el original tiene algo
 PRINCIPAL = {"edicion": ("ediciones", ("piezas", "breves")), "biblioteca": ("biblioteca", ("piezas",)),
              "repositorio": ("repositorio", ("piezas",)), "hace-un-ano": ("hace-un-ano", ("piezas",)),
-             "reportaje": ("reportajes", ("apartados",)), "vineta": ("vinetas", ("elegida",))}
+             "reportaje": ("reportajes", ("apartados",)), "vineta": ("vinetas", ("elegida",)),
+             "columna": ("columnas", ("piezas",))}   # la columna de opinión (ADR 0092)
 
 
 def falta(tipo, fecha, c):
@@ -253,6 +254,8 @@ def comprobar(tipo, fecha, c, conservar=False):
         return comprobar_json(tipo, fecha, c, conservar=conservar) + comprobar_dibujos(fecha, c)
     if tipo == "hace-un-ano":   # ADR 0040
         return comprobar_json(tipo, fecha, c, conservar=conservar) + comprobar_dibujos(fecha, c)
+    if tipo == "columna":   # la columna de opinión de los miércoles (ADR 0092)
+        return comprobar_json("columnas", fecha, c, conservar=conservar)
     if tipo == "comentario-semana":   # aquí «fecha» es la semana, AAAA-WW (ADR 0038)
         from comentario_semana import traduccion
         return traduccion(fecha, c)

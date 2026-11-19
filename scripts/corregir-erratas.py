@@ -25,7 +25,7 @@ import pathlib
 import re
 
 RAIZ = pathlib.Path(__file__).resolve().parent.parent
-CASTELLANO = ["ediciones", "biblioteca", "hace-un-ano", "reportajes", "repositorio", "comentario-semana",
+CASTELLANO = ["ediciones", "biblioteca", "hace-un-ano", "reportajes", "repositorio", "columnas", "comentario-semana",
               "vinetas", "multimedia", "reserva"]
 INGLES = [c + "-en" for c in CASTELLANO if c != "reserva"] + ["ilustraciones-en"]
 TITULAR_MAX = 90

@@ -46,3 +46,6 @@ android/build/
 android/app/build/
 android/.gradle/
 /cache/
+# La columna de opinión (ADR 0092): el material del columnista y los borradores se rehacen cada vez
+columnas-trabajo/
+columnas-borrador/

@@ -67,6 +67,15 @@ else
   log "reserva: reportaje de reserva listo"
 fi
 
+# La columna de opinión de reserva (ADR 0092): una, si no queda ninguna (el miércoles se usa o se descarta)
+if [ -z "$(python3 scripts/columna.py reserva)" ]; then
+  log "reserva: falta la columna de opinión de reserva; se escribe"
+  REG_COLUMNA=registro/reserva-columna.log RESERVA=1 bash scripts/columna.sh "$(date -d yesterday +%F)" >/dev/null 2>&1 || codigo=1
+  cat registro/reserva-columna.log >> "$REG" 2>/dev/null; rm -f registro/reserva-columna.log
+else
+  log "reserva: columna de reserva lista"
+fi
+
 # La viñeta de reserva (ADR 0068): una, si no queda ninguna vigente
 python3 scripts/reserva_vineta.py caducar >> "$REG" 2>&1
 if [ "$(python3 scripts/reserva_vineta.py faltan)" -gt 0 ]; then
@@ -86,7 +95,7 @@ done
 git add -A reserva
 if ! git diff --cached --quiet; then
   git commit -qm "Reserva: $(date +%F)" && git pull -q --rebase &&
-  git notes --ref=ia add -f -m "Modelo: Claude Sonnet 5.5 (claude-sonnet-5-5) y Claude Opus 5.5 (claude-opus-5-5) · Claude Code, reserva en el NAS" HEAD &&
+  git notes --ref=ia add -f -m "Modelo: Claude Sonnet 5.5 (claude-sonnet-5-5) y Claude Opus 5.5 (claude-opus-5-5) · Claude Code, reserva en el NAS; la columna de reserva, GPT-6.2-Astra (gpt-6.2-astra) · Codex" HEAD &&
   git push -q && git push -q origin refs/notes/ia || log "AVISO: no se pudo subir la reserva a GitHub"
 fi
 log "reserva: $(python3 scripts/reserva.py cuantas) piezas, $(python3 scripts/reserva_reportaje.py cuantos) reportaje(s), $(python3 scripts/reserva_vineta.py cuantas) viñeta(s) y $(ls -d reserva/hace-un-ano/20* 2>/dev/null | wc -l) «Hace un año» listos"

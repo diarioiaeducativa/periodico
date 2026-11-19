@@ -200,6 +200,13 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
   del año anterior al de publicación (±1 día), una pieza en `hace-un-ano/` de 150 a 250 palabras, sin
   repetir tema del último mes, con un díptico «Entonces / Ahora»; en la portada, un recuadro a todo el
   ancho con lo de hoy; sección sin entrada en el menú (`SECCIONES_FUERA`), con enlace en el pie.
+- **La columna de opinión** (ADR 0092): los miércoles, `scripts/columna.sh FECHA` (la noche del martes, o con
+  `COLUMNA=1`), en `columnas/`, sección `opinion` (sin menú, como «Hace un año»), firmada por el modelo (`autor`). La
+  escribe GPT-6.2-Astra, que elige el tema: el contenedor deja el encargo con el material y un `pedido` en
+  `columnas-trabajo/<clave>/`, y `nas/columnista.sh` (crontab del NAS, cada minuto) lanza Codex en la caja del agente de
+  noticias, sin terminal. El verificador no toca la tesis. Siempre una de reserva (`reserva/columnas/`, la escribe
+  `reserva.sh`): el juez elige entre las dos y la otra se descarta. Es una prueba sin anunciar: no sale en «La
+  redacción» ni en las normas.
 - **Comentario de la semana** (ADR 0038): `scripts/comentario-semana.sh AAAA-WW`, que lanza `noche.sh`
   la noche del domingo (o con `COMENTARIO=1`): uno general y uno por grupo en `comentario-semana/`,
   de 150 a 250 palabras; `scripts/comentario_semana.py comprobar` dice si vale.

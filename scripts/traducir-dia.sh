@@ -42,7 +42,8 @@ pendientes() {
 }
 PEDIDOS="$*"
 for par in "ediciones 5-traduccion edicion" "biblioteca 15-biblioteca-traduccion biblioteca" \
-           "repositorio 18-repositorio-traduccion repositorio" "reportajes 11-reportaje-traduccion reportaje"; do
+           "repositorio 18-repositorio-traduccion repositorio" "reportajes 11-reportaje-traduccion reportaje" \
+           "columnas 38-columna-traduccion columna"; do
   set -- $par
   hay_piezas "$1/$FECHA.json" || continue
   TRADUCCIONES=$(pendientes "$1")

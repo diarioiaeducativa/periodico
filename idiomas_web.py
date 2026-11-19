@@ -12,7 +12,7 @@ GL = {
     "meses": ["xaneiro", "febreiro", "marzo", "abril", "maio", "xuño", "xullo", "agosto",
               "setembro", "outubro", "novembro", "decembro"],
     "secciones": {"herramientas": "Ferramentas", "vibecoding": "Vibe coding", "multimedia": "Multimedia",
-                  "debates": "Debates", "novedades": "Institucións e empresas", "biblioteca": "Biblioteca", "hace-un-ano": "Hai un ano"},
+                  "debates": "Debates", "novedades": "Institucións e empresas", "biblioteca": "Biblioteca", "hace-un-ano": "Hai un ano", "opinion": "Opinión"},
     "num_prueba": "Número de proba", "actualizado": "Actualizado o", "num": "Núm.", "numero_largo": "Número", "anyo": "Ano",
     "tema": "Cambiar entre tema claro e escuro", "navegacion": "Navegación",
     "contacto": {"titulo": "Contacto", "enlace": "páxina de contacto", "txt": "Para avisar dun erro, pedir que se retire algo ou facer calquera consulta sobre o diario ou a súa app.", "correo": "Correo", "otras": "Tamén se pode abrir unha incidencia en {incidencias} ou escribir ás persoas que administran cada grupo."},
@@ -53,6 +53,7 @@ GL = {
     "sin_vinetas": "Aínda non hai viñetas.",
     "descripciones": {
         "hace-un-ano": "Cada día, algo do que se falaba nos grupos o mesmo día do ano anterior, visto desde hoxe: o que cambiou, o que xa non existe e o que o tempo resolveu.",
+            "opinion": "Cada mércores, unha columna que toma partido nun debate educativo. Escríbea un modelo de IA, que a asina co seu nome; o diario comproba os seus datos, e a opinión é do modelo.",
         "herramientas": "Asistentes, servizos e modelos de intelixencia artificial dos que se fala nos grupos, explicados desde o seu uso docente: que ofrecen, en que condicións e para que pode servir cada un na clase.",
         "vibecoding": "Aplicacións que o profesorado crea describíndoas a unha intelixencia artificial, sen necesidade de saber programar, e o que se aprende nos grupos para facelas: instrucións para xerar recursos, axentes de programación e solucións a problemas habituais. Cada aplicación preséntase co nome do seu autor ou autora, e as que entran no {repositorio} de Vibe Coding Educativo teñen aquí o seu artigo.",
         "multimedia": "Audio, vídeo e imaxe con intelixencia artificial xerativa: as ferramentas para crear voces, ilustracións e vídeos, e os fluxos de traballo que comparten os grupos para producir material educativo.",
@@ -78,7 +79,7 @@ GL = {
     "buscar_txt": "Busca en todo o publicado no diario, en galego: artigos, breves, reportaxes e a Biblioteca.",
     "resultados_1": "1 resultado", "resultados_n": "{n} resultados", "sin_resultados": "Non hai nada publicado con esas palabras.",
     "todas": "Todas", "mas_resultados": "Máis resultados", "buscando": "Buscando…", "sin_buscador": "O buscador non puido cargarse.",
-    "reportaje": "A reportaxe do domingo", "reportajes": "Reportaxes", "leer_reportaje": "Ler a reportaxe", "leer_hace_un_ano": "Le como cambiou",
+    "reportaje": "A reportaxe do domingo", "reportajes": "Reportaxes", "leer_reportaje": "Ler a reportaxe", "leer_hace_un_ano": "Le como cambiou", "leer_opinion": "Ler a columna", "opinion_firma": "Por {autor}", "opinion_nota": "Columna de opinión escrita por {autor}. O diario comproba os seus datos; a opinión é do modelo.",
     "claves": "Claves", "en_el_diario": "No diario esta semana", "semana_repo": "Cada sábado, o diario repasa os recursos que entraron durante a semana no {repositorio} de Vibe Coding Educativo, a colección de aplicacións e materiais con licenza aberta que crea e comparte o profesorado desa comunidade.", "ya_contados": "Xa publicados no diario", "otras_semanas": "Outras semanas do repositorio", "sin_reportajes": "Aínda non hai reportaxes.",
     "reportajes_txt": "Cada domingo, un tema da semana tratado a fondo.", "palabras": "minutos de lectura",
     "redaccion": {
@@ -149,7 +150,7 @@ EU = {
     "meses": ["urtarrila", "otsaila", "martxoa", "apirila", "maiatza", "ekaina", "uztaila", "abuztua",
               "iraila", "urria", "azaroa", "abendua"],
     "secciones": {"herramientas": "Tresnak", "vibecoding": "Vibe coding", "multimedia": "Multimedia",
-                  "debates": "Eztabaidak", "novedades": "Erakundeak eta enpresak", "biblioteca": "Liburutegia", "hace-un-ano": "Duela urtebete"},
+                  "debates": "Eztabaidak", "novedades": "Erakundeak eta enpresak", "biblioteca": "Liburutegia", "hace-un-ano": "Duela urtebete", "opinion": "Iritzia"},
     "num_prueba": "Proba-zenbakia", "actualizado": "Eguneratua:", "num": "Zk.", "numero_largo": "Zenbakia", "anyo": "urtea",
     "tema": "Aldatu gai argiaren eta ilunaren artean", "navegacion": "Nabigazioa",
     "contacto": {"titulo": "Harremanetarako", "enlace": "harremanetarako orrian", "txt": "Akats baten berri emateko, zerbait kentzeko eskatzeko edo egunkariari edo haren aplikazioari buruzko edozein kontsulta egiteko.", "correo": "Posta elektronikoa", "otras": "Intzidentzia bat ere ireki daiteke {incidencias} plataforman, edo talde bakoitza administratzen duten pertsonei idatzi."},
@@ -190,6 +191,7 @@ EU = {
     "sin_vinetas": "Oraindik ez dago binetarik.",
     "descripciones": {
         "hace-un-ano": "Egunero, taldeetan aurreko urteko egun berean hitz egiten zen zerbait, gaurtik begiratuta: zer aldatu den, zer ez dagoen jada eta denborak zer konpondu duen.",
+            "opinion": "Asteazkenero, hezkuntzako eztabaida batean jarrera hartzen duen zutabe bat. AA eredu batek idazten du eta bere izenarekin sinatzen du; egunkariak datuak egiaztatzen ditu, eta iritzia ereduarena da.",
         "herramientas": "Taldeetan aipatzen diren adimen artifizialeko laguntzaileak, zerbitzuak eta ereduak, irakaskuntzarako erabileratik azalduta: zer eskaintzen duten, zein baldintzatan eta bakoitza eskolan zertarako izan daitekeen baliagarri.",
         "vibecoding": "Irakasleek adimen artifizial bati deskribatuz sortzen dituzten aplikazioak, programatzen jakin beharrik gabe, eta haiek egiteko taldeetan ikasten dena: baliabideak sortzeko jarraibideak, programazio-agenteak eta ohiko arazoen konponbideak. Aplikazio bakoitza egilearen izenarekin aurkezten da, eta Vibe Coding Educativoren {repositorio} sartzen direnek hemen dute beren artikulua.",
         "multimedia": "Audioa, bideoa eta irudia adimen artifizial sortzailearekin: ahotsak, ilustrazioak eta bideoak sortzeko tresnak, eta taldeek hezkuntza-materiala ekoizteko partekatzen dituzten lan-fluxuak.",
@@ -215,7 +217,7 @@ EU = {
     "buscar_txt": "Bilatu egunkarian argitaratutako guztian, euskaraz: artikuluak, laburrak, erreportajeak eta Liburutegia.",
     "resultados_1": "Emaitza 1", "resultados_n": "{n} emaitza", "sin_resultados": "Ez dago hitz horiekin argitaratutako ezer.",
     "todas": "Guztiak", "mas_resultados": "Emaitza gehiago", "buscando": "Bilatzen…", "sin_buscador": "Ezin izan da bilatzailea kargatu.",
-    "reportaje": "Igandeko erreportajea", "reportajes": "Erreportajeak", "leer_reportaje": "Irakurri erreportajea", "leer_hace_un_ano": "Irakurri nola aldatu den",
+    "reportaje": "Igandeko erreportajea", "reportajes": "Erreportajeak", "leer_reportaje": "Irakurri erreportajea", "leer_hace_un_ano": "Irakurri nola aldatu den", "leer_opinion": "Irakurri zutabea", "opinion_firma": "Egilea: {autor}", "opinion_nota": "{autor} ereduak idatzitako iritzi-zutabea. Egunkariak datuak egiaztatzen ditu; iritzia ereduarena da.",
     "claves": "Gakoak", "en_el_diario": "Egunkarian aste honetan", "semana_repo": "Vibe Coding Educativoren {repositorio} komunitate horretako irakasleek sortu eta lizentzia irekiarekin partekatzen dituzten aplikazio eta materialen bilduma da. Larunbatero, egunkariak astean zehar bertan sartu diren baliabideak errepasatzen ditu.", "ya_contados": "Egunkarian lehendik argitaratuak", "otras_semanas": "Biltegiaren beste asteak", "sin_reportajes": "Oraindik ez dago erreportajerik.",
     "reportajes_txt": "Igandero, asteko gai bat sakon landua.", "palabras": "minutuko irakurketa",
     "redaccion": {
@@ -286,7 +288,7 @@ EN = {
     "meses": ["January", "February", "March", "April", "May", "June", "July", "August",
               "September", "October", "November", "December"],
     "secciones": {"herramientas": "Tools", "vibecoding": "Vibe coding", "multimedia": "Multimedia",
-                  "debates": "Debates", "novedades": "Institutions & Industry", "biblioteca": "Library", "hace-un-ano": "A year ago"},
+                  "debates": "Debates", "novedades": "Institutions & Industry", "biblioteca": "Library", "hace-un-ano": "A year ago", "opinion": "Opinion"},
     "num_prueba": "Trial issue", "actualizado": "Updated on", "num": "No.", "numero_largo": "Issue", "anyo": "Vol.",
     "tema": "Switch between light and dark theme", "navegacion": "Navigation",
     "contacto": {"titulo": "Contact", "enlace": "contact page", "txt": "To report an error, ask for something to be removed or make any other enquiry about the paper or its app.", "correo": "Email", "otras": "You can also open an issue on {incidencias} or write to the people who run each group."},
@@ -327,6 +329,7 @@ EN = {
     "sin_vinetas": "There are no comic strips yet.",
     "descripciones": {
         "hace-un-ano": "Every day, something the groups were discussing on the same day a year earlier, seen from today: what has changed, what no longer exists and what time has settled.",
+            "opinion": "Every Wednesday, a column that takes a side in an education debate. It is written by an AI model, which signs it with its name; the paper checks its facts, and the opinion is the model's.",
         "herramientas": "Artificial intelligence assistants, services and models discussed in the groups, explained from a teaching point of view: what they offer, on what terms and what each one can be used for in class.",
         "vibecoding": "Apps that teachers create by describing them to an artificial intelligence, without needing to know how to code, and what the groups learn about making them: instructions for generating resources, coding agents and solutions to common problems. Each app is presented with its author's name, and those that join the Vibe Coding Educativo {repositorio} have their article here.",
         "multimedia": "Audio, video and images with generative artificial intelligence: the tools for creating voices, illustrations and videos, and the workflows the groups share for producing educational material.",
@@ -352,7 +355,7 @@ EN = {
     "buscar_txt": "Search everything published in the paper, in English: articles, briefs, features and the Library. It also finds forms of the same word: “assess” finds “assessment”.",
     "resultados_1": "1 result", "resultados_n": "{n} results", "sin_resultados": "Nothing has been published with those words.",
     "todas": "All", "mas_resultados": "More results", "buscando": "Searching…", "sin_buscador": "The search could not be loaded.",
-    "reportaje": "The Sunday feature", "reportajes": "Features", "leer_reportaje": "Read the feature", "leer_hace_un_ano": "Read how it has changed",
+    "reportaje": "The Sunday feature", "reportajes": "Features", "leer_reportaje": "Read the feature", "leer_hace_un_ano": "Read how it has changed", "leer_opinion": "Read the column", "opinion_firma": "By {autor}", "opinion_nota": "Opinion column written by {autor}. The paper checks its facts; the opinion is the model's.",
     "claves": "Key points", "en_el_diario": "In the paper this week", "semana_repo": "Every Saturday, the paper reviews the resources added during the week to the Vibe Coding Educativo {repositorio}, the collection of openly licensed apps and materials created and shared by teachers in that community.", "ya_contados": "Already covered in the paper", "otras_semanas": "Other weeks of the repository", "sin_reportajes": "There are no features yet.",
     "reportajes_txt": "Every Sunday, one topic of the week in depth.", "palabras": "minute read",
     "redaccion": {
