@@ -13,7 +13,11 @@ de que estaban en castellano. Se pidió que también se puedan leer en cada leng
 
 - El original sigue siendo el castellano, que es lo que leen los agentes. La traducción de cada documento va en
   `docs/traducciones/<lengua>/<nombre>.md`, con la huella del original en la primera línea.
-- `scripts/normas-traducir.sh`, cada noche en `noche.sh`: si un original ha cambiado o falta su traducción, un agente
+- **La traducción se hace en el momento de cambiar el original** (Juanjo, 19-11-2026: «la traduccion debe ser al
+  momento de cambiar el articulo»): el agente que cambia uno de los tres documentos lanza en el mismo trabajo
+  `scripts/normas-traducir.sh` en el contenedor y vuelve a publicar la web con las traducciones, que sube también al
+  repositorio. La pasada de cada noche queda como red para lo que se haya escapado.
+- `scripts/normas-traducir.sh`, también cada noche en `noche.sh`: si un original ha cambiado o falta su traducción, un agente
   por lengua lo traduce (`encargos/pasos/37-normas-traduccion.md`), con el libro del traductor, las cuatro lenguas a
   la vez. `scripts/normas_traducir.py` comprueba después que la traducción tiene los mismos títulos, puntos, filas de
   tabla, nombres de archivo, enlaces y números de ADR que el original; si no, se quita. Casi todas las noches no hay
@@ -27,8 +31,9 @@ de que estaban en castellano. Se pidió que también se puedan leer en cada leng
 
 ## Consecuencias
 
-- Cada lector puede leer las normas en su lengua; un cambio en el original se traduce la noche siguiente, y mientras
-  tanto esa lengua enlaza al castellano.
+- Cada lector puede leer las normas en su lengua; un cambio en el original se traduce en el momento. Hasta el
+  19-11-2026 se traducía la noche siguiente, y mientras tanto esa lengua enlazaba al castellano: ese día una norma
+  nueva del libro de estilo dejó sus cuatro traducciones en castellano al publicar la web por la mañana.
 - La primera vez, unas 6.300 palabras por lengua; después, solo los documentos que cambien.
 
 ## Validación

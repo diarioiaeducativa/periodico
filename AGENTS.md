@@ -41,7 +41,10 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
 - **El libro del traductor es `encargos/traduccion.md`** (ADR 0079): norma, obras de consulta, formatos y vocabulario
   de la IA de cada lengua. Una forma nueva de una lengua se fija allí.
 - **Las tres normas públicas, en cada lengua** (ADR 0085): el original es el castellano; la traducción, en
-  `docs/traducciones/<lengua>/`, la rehace `scripts/normas-traducir.sh` cada noche si el original ha cambiado.
+  `docs/traducciones/<lengua>/`. **Quien cambie un original lo traduce en el mismo trabajo** (Juanjo, 19-11-2026):
+  `scripts/normas-traducir.sh` en el contenedor, `generar.py` y publicar la web, subiendo también
+  `docs/traducciones/`; si no, al publicar, esas lenguas pasan a enseñar el castellano. La pasada de `noche.sh` es solo
+  la red.
 - **El número de reserva** (ADR 0068): piezas, viñeta, «Hace un año» por adelantado y reportaje, listos y
   repuestos cada mañana (`reserva.sh`). `reserva.py usar FECHA relleno`, cada noche antes de traducir, completa
   el número hasta tres piezas y pone la viñeta y «Hace un año» si faltan; la web no lo dice.
