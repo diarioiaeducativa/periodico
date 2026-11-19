@@ -39,7 +39,7 @@ SECCIONES_FUERA = ["hace-un-ano", "opinion"]   # con su página, pero sin entrad
 # «El diario por dentro» (ADR 0082): los apartados de la antigua «La redacción», en bloques por tema (cómo trabajan los
 # agentes; las secciones; quién lo lee y quién lo hace; lo que se publica y cómo se corrige), y al final las
 # instrucciones de cada agente
-BLOQUES_DENTRO = ((0, 1), (2, 3, 4, 5, 6), (10, 11, 7, 8, 14, 9, 13, 12))
+BLOQUES_DENTRO = ((0, 1), (2, 3, 4, 5, 6, 7), (11, 12, 8, 9, 15, 10, 14, 13))   # con la columna de opinión, la 4 (ADR 0092)
 TODAS_SECCIONES = ORDEN_SECCIONES + SECCIONES_FUERA
 TEMA_BIBLIOTECA = "https://t.me/ChatGPTedu/21753"
 REPOSITORIO = "https://vibe-coding-educativo.github.io/app_edu/"   # el Repositorio de recursos de VCE (ADR 0008)
@@ -137,12 +137,12 @@ IDIOMAS = {
         "claves": "Claves", "en_el_diario": "En el diario esta semana", "semana_repo": "Cada sábado, el diario repasa los recursos que han entrado durante la semana en el {repositorio} de Vibe Coding Educativo, la colección de aplicaciones y materiales con licencia abierta que crea y comparte el profesorado de esa comunidad.", "ya_contados": "Ya publicados en el diario", "otras_semanas": "Otras semanas del repositorio", "sin_reportajes": "Todavía no hay reportajes.",
         "reportajes_txt": "Cada domingo, un tema de la semana tratado a fondo.", "palabras": "minutos de lectura",
         "redaccion": {
-            "intro": "El Diario de IA Educativa lo escribe una redacción de 16 agentes de inteligencia artificial, cada uno con su oficio, y ninguno revisa su propio trabajo. Lo idean, lo diseñan y lo supervisan personas. Sale cada mañana a las 7:00, {huso}, en castellano, catalán, gallego, euskera e inglés.",
+            "intro": "El Diario de IA Educativa lo escribe una redacción de 18 agentes de inteligencia artificial, cada uno con su oficio, y ninguno revisa su propio trabajo. Lo idean, lo diseñan y lo supervisan personas. Sale cada mañana a las 7:00, {huso}, en castellano, catalán, gallego, euskera e inglés.",
             "proceso_titulo": "Cómo se hace cada número", "pagina_semana": "página",
-            "proceso_intro": "Cada número recoge lo que se habló el día anterior en los tres grupos abiertos de Telegram: {chatgpt}, sobre la inteligencia artificial en educación; {vce}, de docentes que programan sus propias aplicaciones con IA, y {edumedia}, sobre la IA para crear audio, vídeo e imagen. De madrugada, un programa reúne los mensajes del día; los agentes escriben, revisan, ilustran y traducen los artículos, y a las 7:00 el número se publica y se avisa en cada grupo. Los fines de semana se preparan, además, el reportaje, el vídeo y lo más importante de la semana.",
+            "proceso_intro": "Cada número recoge lo que se habló el día anterior en los tres grupos abiertos de Telegram: {chatgpt}, sobre la inteligencia artificial en educación; {vce}, de docentes que programan sus propias aplicaciones con IA, y {edumedia}, sobre la IA para crear audio, vídeo e imagen. De madrugada, un programa reúne los mensajes del día; los agentes escriben, revisan, ilustran y traducen los artículos, y a las 7:00 el número se publica y se avisa en cada grupo. Los miércoles sale, además, una columna de opinión, y los fines de semana se preparan el reportaje, el vídeo y lo más importante de la semana.",
             "proceso_pie": "Si algo falla o una revisión no da un artículo por bueno, esa parte se queda fuera y el número sale igual. Si falla todo, sale un artículo de reserva, escrito y revisado otro día. No hay ningún día sin número.",
             "equipo_titulo": "El equipo",
-            "organigrama_alt": "Organigrama de la redacción, en el que los agentes de IA van en cajas rellenas y los mensajes y lo publicado, solo con contorno: cada día, los mensajes de los grupos pasan del redactor al revisor, y los documentos de la Biblioteca digital y los recursos del repositorio, del documentalista al revisor. Del revisor salen dos caminos: el guionista y el juez de humor preparan la viñeta, y el ilustrador dibuja lo que explica cada noticia, con el revisor de dibujos, que le devuelve lo que no se ve bien. Todo acaba en el traductor, y el número sale a las 7:00 con un aviso del portavoz para cada grupo. Cada noche, además, el cronista busca en los mensajes de hace un año un tema que muestre cuánto ha cambiado todo y escribe «Hace un año», que contrasta un verificador y que pasa también por el ilustrador, el revisor de dibujos y el traductor. Los domingos, el jefe de reportajes, el reportero y el verificador preparan el reportaje, que pasa también por el ilustrador, el revisor de dibujos y el traductor; si hay uno de reserva, el juez de reportajes elige el mejor de los dos, y sale dentro del número. Además, el guionista de vídeo escribe «La semana en vídeo» con los números de la semana y el reportaje, y el vídeo sale en el número del domingo y, con el reportaje, a las 9:00 en las redes sociales. La noche del domingo, el comentarista escribe lo más importante de la semana a partir de sus números, un revisor lo contrasta y el traductor lo prepara en los otros idiomas para el resumen semanal.",
+            "organigrama_alt": "Organigrama de la redacción, en el que los agentes de IA van en cajas rellenas y los mensajes y lo publicado, solo con contorno: cada día, los mensajes de los grupos pasan del redactor al revisor, y los documentos de la Biblioteca digital y los recursos del repositorio, del documentalista al revisor. Del revisor salen dos caminos: el guionista y el juez de humor preparan la viñeta, y el ilustrador dibuja lo que explica cada noticia, con el revisor de dibujos, que le devuelve lo que no se ve bien. Todo acaba en el traductor, y el número sale a las 7:00 con un aviso del portavoz para cada grupo. Cada noche, además, el cronista busca en los mensajes de hace un año un tema que muestre cuánto ha cambiado todo y escribe «Hace un año», que contrasta un verificador y que pasa también por el ilustrador, el revisor de dibujos y el traductor. Los domingos, el jefe de reportajes, el reportero y el verificador preparan el reportaje, que pasa también por el ilustrador, el revisor de dibujos y el traductor; si hay uno de reserva, el juez de reportajes elige el mejor de los dos, y sale dentro del número. Además, el guionista de vídeo escribe «La semana en vídeo» con los números de la semana y el reportaje, y el vídeo sale en el número del domingo y, con el reportaje, a las 9:00 en las redes sociales. La noche del domingo, el comentarista escribe lo más importante de la semana a partir de sus números, un revisor lo contrasta y el traductor lo prepara en los otros idiomas para el resumen semanal. Los miércoles, el columnista, GPT-6.2-Astra, de OpenAI, escribe con los mensajes de la semana la columna de opinión, que contrasta el verificador; el juez de la columna elige entre la nueva y la de reserva, y el traductor la prepara en los otros idiomas.",
             "organigrama_pie": 'El camino de cada número: de los mensajes de los grupos, a la izquierda, a lo que se publica, a la derecha, pasando por cada agente de IA. Se amplía al pulsarlo.',
             "equipo": [
                 ("Cada noche", None),
@@ -154,9 +154,12 @@ IDIOMAS = {
                 ("Guionista", "escribe cinco guiones para la viñeta de Tiza y Algoritmo, sus dos personajes."),
                 ("Juez de humor", "elige el mejor guion, sin haber escrito ninguno, y lo afina."),
                 ("Cronista", "busca en los mensajes de hace un año justo un tema que muestre cuánto ha cambiado todo, comprueba en internet cómo está hoy y escribe «Hace un año»."),
-                ("Verificador", "no escribe nada: contrasta «Hace un año» y el reportaje con sus fuentes y quita lo que no puede confirmar."),
+                ("Verificador", "no escribe nada: contrasta «Hace un año», la columna de opinión y el reportaje con sus fuentes y quita lo que no puede confirmar; de la columna no toca la opinión."),
                 ("Traductor", "prepara las ediciones en catalán, gallego, euskera e inglés."),
                 ("Portavoz", "escribe cada mañana el aviso del número, distinto para cada grupo."),
+                ("Los miércoles", None),
+                ("Columnista", "GPT-6.2-Astra, de OpenAI: elige un debate de la semana, se documenta y escribe la columna de opinión, que firma con su nombre."),
+                ("Juez de la columna", "compara la columna nueva con la de reserva, sin haber escrito ninguna, y elige la que se publica."),
                 ("El fin de semana", None),
                 ("Jefe de reportajes", "elige el tema de la semana que merece el reportaje del domingo, su enfoque y a quién hay que consultar."),
                 ("Reportero", "investiga ese tema fuera de los grupos, en los documentos de las empresas, las administraciones y los organismos implicados, y escribe el reportaje."),
@@ -164,7 +167,7 @@ IDIOMAS = {
                 ("Guionista de vídeo", "el sábado elige lo más destacado de la semana, al menos un artículo de cada número, y escribe en los cinco idiomas los textos de «La semana en vídeo» y el que lo acompaña en las redes."),
                 ("Comentarista", "el domingo por la noche escribe lo más importante de la semana: un texto general y uno de cada grupo."),
             ],
-            "equipo_pie": "Son agentes de Claude, la inteligencia artificial de Anthropic.",
+            "equipo_pie": "Son agentes de Claude, la inteligencia artificial de Anthropic, salvo el columnista, que es GPT-6.2-Astra, de OpenAI.",
             "ideas_titulo": 'Cómo funciona',
             "ideas": [('De los grupos al diario', 'Lo que se habla un día en tres grupos de docentes sale a la mañana siguiente, explicado para las personas que no están en ellos.'), ('Cada dato, comprobado', 'Cada artículo pasa por un agente que no lo ha escrito, que abre cada fuente y quita lo que no puede confirmar.'), ('Nunca un día sin número', 'Hay artículos escritos de antemano para que el diario salga aunque falle algo o no haya noticias.'), ('Una persona responde', 'Una persona supervisa el diario y responde de lo publicado. Sin publicidad ni datos de los lectores, y los errores se corrigen a la vista.')],
             "mas_titulo": 'Para saber más',
@@ -180,6 +183,7 @@ IDIOMAS = {
                 ("Lo que se comprueba", "Los grupos dicen de qué se habla; cada dato se comprueba fuera, en su fuente original (el anuncio oficial, la web del producto, el documento de la administración), enlazada donde el artículo la nombra y, todas juntas, al final. De una aplicación se comprueba lo que dice su web, no que funcione. Aun así puede haber errores."),
                 ("Hace un año", "Cada número cierra con algo que se hablaba en los grupos ese mismo día del año anterior, visto desde hoy. Todas están en la sección {hace_un_ano}."),
                 ("El reportaje del domingo", "Los domingos, el diario explica a fondo un solo tema de la semana: lo que se habló en los grupos, lo que dicen las empresas, las administraciones y los organismos implicados, con sus documentos, el marco en España y lo que puede hacer un docente. Si no supera la verificación ni después de corregirlo, se publica uno de reserva sobre un tema que no caduca. Todos quedan en la sección {reportajes}."),
+                ("La columna de opinión", "Todo lo demás del diario informa; los miércoles, una columna de opinión toma partido en un debate de los grupos. La escribe GPT-6.2-Astra, de OpenAI, mientras que el resto de la redacción son agentes de Claude: así, la opinión sale de otra voz. El columnista elige el tema y firma con su nombre, y un verificador comprueba cada dato sin tocar la opinión. Discute ideas, nunca a las personas de los grupos. Siempre hay otra escrita de reserva, y un juez elige la mejor de las dos. Todas están en la sección {opinion}."),
                 ("La semana", "Cada semana y cada mes tienen su {pagina_semana}, con los artículos por secciones; la {hemeroteca} se recorre por meses y semanas. Los lunes se añaden un pódcast y un vídeo de cada grupo, hechos con NotebookLM, de Google, a partir de la conversación completa de la semana, también lo que no ha salido en el diario. Un agente de IA que no los ha hecho los contrasta con la conversación, y se rehace el que tiene errores de bulto. Debajo va lo más importante de la semana: un texto general y uno de cada grupo."),
                 ("La Biblioteca digital", "Cada documento de la {biblioteca} de ChatGPT-IA-edu (guías, informes, estudios) tiene en la sección {seccion_bib} un artículo que explica quién lo publica, qué propone y cómo encaja con los demás. El diario enlaza el documento, sin copiarlo. Se nombra a sus autores, no a la persona que lo ha compartido."),
                 ("El Repositorio de recursos", "El {repositorio} de Vibe Coding Educativo reúne las aplicaciones y recursos que crean y comparten con licencia abierta los docentes de esa comunidad. Salen en la sección {seccion_vc}, con el nombre de la persona que los ha hecho y su licencia. Si no hay ninguno nuevo y el número se queda corto, se rescata uno anterior."),
@@ -274,12 +278,12 @@ IDIOMAS = {
         "claves": "Claus", "en_el_diario": "Al diari aquesta setmana", "semana_repo": "Cada dissabte, el diari repassa els recursos que han entrat durant la setmana al {repositorio} de Vibe Coding Educativo, la col·lecció d'aplicacions i materials amb llicència oberta que crea i comparteix el professorat d'aquesta comunitat.", "ya_contados": "Ja publicats al diari", "otras_semanas": "Altres setmanes del repositori", "sin_reportajes": "Encara no hi ha reportatges.",
         "reportajes_txt": "Cada diumenge, un tema de la setmana tractat a fons.", "palabras": "minuts de lectura",
         "redaccion": {
-            "intro": "El Diari d'IA Educativa l'escriu una redacció de 16 agents d'intel·ligència artificial, cadascun amb el seu ofici, i cap no revisa la seva pròpia feina. L'ideen, el dissenyen i el supervisen persones. Surt cada matí a les 7.00, {huso}, en castellà, i traduït al català, al gallec, al basc i a l'anglès.",
+            "intro": "El Diari d'IA Educativa l'escriu una redacció de 18 agents d'intel·ligència artificial, cadascun amb el seu ofici, i cap no revisa la seva pròpia feina. L'ideen, el dissenyen i el supervisen persones. Surt cada matí a les 7.00, {huso}, en castellà, i traduït al català, al gallec, al basc i a l'anglès.",
             "proceso_titulo": "Com es fa cada número", "pagina_semana": "pàgina",
-            "proceso_intro": "Cada número recull el que es va parlar el dia anterior als tres grups oberts de Telegram: {chatgpt}, sobre la intel·ligència artificial en educació; {vce}, de docents que programen les seves pròpies aplicacions amb IA, i {edumedia}, sobre la IA per crear àudio, vídeo i imatge. De matinada, un programa aplega els missatges del dia; els agents escriuen, revisen, il·lustren i tradueixen els articles, i a les 7.00 el número es publica i s'avisa a cada grup. Els caps de setmana es preparen, a més, el reportatge, el vídeo i el més important de la setmana.",
+            "proceso_intro": "Cada número recull el que es va parlar el dia anterior als tres grups oberts de Telegram: {chatgpt}, sobre la intel·ligència artificial en educació; {vce}, de docents que programen les seves pròpies aplicacions amb IA, i {edumedia}, sobre la IA per crear àudio, vídeo i imatge. De matinada, un programa aplega els missatges del dia; els agents escriuen, revisen, il·lustren i tradueixen els articles, i a les 7.00 el número es publica i s'avisa a cada grup. Els dimecres surt, a més, una columna d'opinió, i els caps de setmana es preparen el reportatge, el vídeo i el més important de la setmana.",
             "proceso_pie": "Si alguna cosa falla o una revisió no dona un article per bo, aquella part es queda fora i el número surt igualment. Si falla tot, surt un article de reserva, escrit i revisat un altre dia. No hi ha cap dia sense número.",
             "equipo_titulo": "L'equip",
-            "organigrama_alt": "Organigrama de la redacció, en què els agents d'IA van en caixes plenes i els missatges i el que es publica, només amb contorn: cada dia, els missatges dels grups passen del redactor al revisor, i els documents de la Biblioteca digital i els recursos del repositori, del documentalista al revisor. Del revisor surten dos camins: el guionista i el jutge d'humor preparen la vinyeta, i l'il·lustrador dibuixa el que explica cada notícia, amb el revisor de dibuixos, que li torna el que no es veu bé. Tot acaba al traductor, i el número surt a les 7.00 amb un avís del portaveu per a cada grup. Cada nit, a més, el cronista busca als missatges de fa un any un tema que mostri quant ha canviat tot i escriu «Fa un any», que contrasta un verificador i que passa també per l'il·lustrador, el revisor de dibuixos i el traductor. Els diumenges, el cap de reportatges, el reporter i el verificador preparen el reportatge, que passa també per l'il·lustrador, el revisor de dibuixos i el traductor; si n'hi ha un de reserva, el jutge de reportatges tria el millor dels dos, i surt dins del número. A més, el guionista de vídeo escriu «La setmana en vídeo» amb els números de la setmana i el reportatge, i el vídeo surt al número del diumenge i, amb el reportatge, a les 9.00 a les xarxes socials. La nit del diumenge, el comentarista escriu el més important de la setmana a partir dels seus números, un revisor ho contrasta i el traductor ho prepara en els altres idiomes per al resum setmanal.",
+            "organigrama_alt": "Organigrama de la redacció, en què els agents d'IA van en caixes plenes i els missatges i el que es publica, només amb contorn: cada dia, els missatges dels grups passen del redactor al revisor, i els documents de la Biblioteca digital i els recursos del repositori, del documentalista al revisor. Del revisor surten dos camins: el guionista i el jutge d'humor preparen la vinyeta, i l'il·lustrador dibuixa el que explica cada notícia, amb el revisor de dibuixos, que li torna el que no es veu bé. Tot acaba al traductor, i el número surt a les 7.00 amb un avís del portaveu per a cada grup. Cada nit, a més, el cronista busca als missatges de fa un any un tema que mostri quant ha canviat tot i escriu «Fa un any», que contrasta un verificador i que passa també per l'il·lustrador, el revisor de dibuixos i el traductor. Els diumenges, el cap de reportatges, el reporter i el verificador preparen el reportatge, que passa també per l'il·lustrador, el revisor de dibuixos i el traductor; si n'hi ha un de reserva, el jutge de reportatges tria el millor dels dos, i surt dins del número. A més, el guionista de vídeo escriu «La setmana en vídeo» amb els números de la setmana i el reportatge, i el vídeo surt al número del diumenge i, amb el reportatge, a les 9.00 a les xarxes socials. La nit del diumenge, el comentarista escriu el més important de la setmana a partir dels seus números, un revisor ho contrasta i el traductor ho prepara en els altres idiomes per al resum setmanal. Els dimecres, el columnista, GPT-6.2-Astra, d'OpenAI, escriu amb els missatges de la setmana la columna d'opinió, que contrasta el verificador; el jutge de la columna tria entre la nova i la de reserva, i el traductor la prepara en els altres idiomes.",
             "organigrama_pie": "El camí de cada número: dels missatges dels grups, a l'esquerra, al que es publica, a la dreta, passant per cada agent d'IA. S'amplia en prémer-lo.",
             "equipo": [
                 ("Cada nit", None),
@@ -291,9 +295,12 @@ IDIOMAS = {
                 ("Guionista", "escriu cinc guions per a la vinyeta de Guix i Algorisme, els seus dos personatges."),
                 ("Jutge d'humor", "tria el millor guió, sense haver-ne escrit cap, i l'afina."),
                 ("Cronista", "busca als missatges de fa just un any un tema que mostri quant ha canviat tot, comprova a internet com està avui i escriu «Fa un any»."),
-                ("Verificador", "no escriu res: contrasta «Fa un any» i el reportatge amb les seves fonts i treu el que no pot confirmar."),
+                ("Verificador", "no escriu res: contrasta «Fa un any», la columna d'opinió i el reportatge amb les seves fonts i treu el que no pot confirmar; de la columna no en toca l'opinió."),
                 ("Traductor", "prepara aquesta edició en català a partir de la castellana, el Diario de IA Educativa."),
                 ("Portaveu", "escriu cada matí l'avís del número, diferent per a cada grup."),
+                ("Els dimecres", None),
+                ("Columnista", "GPT-6.2-Astra, d'OpenAI: tria un debat de la setmana, es documenta i escriu la columna d'opinió, que signa amb el seu nom."),
+                ("Jutge de la columna", "compara la columna nova amb la de reserva, sense haver-ne escrit cap, i tria la que es publica."),
                 ("El cap de setmana", None),
                 ("Cap de reportatges", "tria el tema de la setmana que mereix el reportatge del diumenge, el seu enfocament i a qui cal consultar."),
                 ("Reporter", "investiga aquest tema fora dels grups, als documents de les empreses, les administracions i els organismes implicats, i escriu el reportatge."),
@@ -301,7 +308,7 @@ IDIOMAS = {
                 ("Guionista de vídeo", "el dissabte tria el més destacat de la setmana, com a mínim un article de cada número, i escriu en les cinc llengües els textos de «La setmana en vídeo» i el que l'acompanya a les xarxes."),
                 ("Comentarista", "el diumenge a la nit escriu el més important de la setmana: un text general i un de cada grup."),
             ],
-            "equipo_pie": "Són agents de Claude, la intel·ligència artificial d'Anthropic.",
+            "equipo_pie": "Són agents de Claude, la intel·ligència artificial d'Anthropic, llevat del columnista, que és GPT-6.2-Astra, d'OpenAI.",
             "ideas_titulo": 'Com funciona',
             "ideas": [('Dels grups al diari', "El que es parla un dia en tres grups de docents surt l'endemà al matí, explicat per a les persones que no hi són."), ('Cada dada, comprovada', "Cada article passa per un agent que no l'ha escrit, que obre cada font i treu el que no pot confirmar."), ('Mai un dia sense número', 'Hi ha articles escrits per endavant perquè el diari surti encara que falli alguna cosa o no hi hagi notícies.'), ('Una persona en respon', "Una persona supervisa el diari i respon del que s'hi publica. Sense publicitat ni dades dels lectors, i els errors es corregeixen a la vista.")],
             "mas_titulo": 'Per saber-ne més',
@@ -317,6 +324,7 @@ IDIOMAS = {
                 ("El que es comprova", "Els grups diuen de què es parla; cada dada es comprova fora, a la seva font original (l'anunci oficial, el web del producte, el document de l'administració), enllaçada on l'article l'anomena i, totes juntes, al final. D'una aplicació es comprova el que diu el seu web, no que funcioni. Tot i així hi pot haver errors. Aquesta edició és una traducció automàtica de la castellana, sense revisió professional."),
                 ("Fa un any", "Cada número tanca amb alguna cosa que es parlava als grups aquell mateix dia de l'any anterior, vista des d'avui. Totes són a la secció {hace_un_ano}."),
                 ("El reportatge del diumenge", "Els diumenges, el diari explica a fons un sol tema de la setmana: el que es va parlar als grups, el que diuen les empreses, les administracions i els organismes implicats, amb els seus documents, el marc a Espanya i el que pot fer un docent. Si no supera la verificació ni després de corregir-lo, se'n publica un de reserva sobre un tema que no caduca. Tots queden a la secció {reportajes}."),
+                ("La columna d'opinió", "Tota la resta del diari informa; els dimecres, una columna d'opinió pren partit en un debat dels grups. L'escriu GPT-6.2-Astra, d'OpenAI, mentre que la resta de la redacció són agents de Claude: així, l'opinió surt d'una altra veu. El columnista tria el tema i la signa amb el seu nom, i un verificador en comprova cada dada sense tocar l'opinió. Discuteix idees, mai les persones dels grups. Sempre n'hi ha una altra escrita de reserva, i un jutge tria la millor de les dues. Totes són a la secció {opinion}."),
                 ("La setmana", "Cada setmana i cada mes tenen la seva {pagina_semana}, amb els articles per seccions; l'{hemeroteca} es recorre per mesos i setmanes. Els dilluns s'hi afegeixen un pòdcast i un vídeo de cada grup, fets amb NotebookLM, de Google, a partir de tota la conversa de la setmana, també el que no ha sortit al diari. Són en castellà. Un agent d'IA que no els ha fet els contrasta amb la conversa, i es refà el que té errors greus. A sota hi ha el més important de la setmana: un text general i un de cada grup."),
                 ("La Biblioteca digital", "Cada document de la {biblioteca} de ChatGPT-IA-edu (guies, informes, estudis) té a la secció {seccion_bib} un article que explica qui el publica, què proposa i com encaixa amb els altres. El diari enllaça el document, sense copiar-lo. S'anomenen els autors, no qui l'ha compartit."),
                 ("El Repositori de recursos", "El {repositorio} de Vibe Coding Educativo reuneix les aplicacions i els recursos que creen i comparteixen amb llicència oberta els docents d'aquesta comunitat. Surten a la secció {seccion_vc}, amb el nom de qui els ha fet i la seva llicència. Si no n'hi ha cap de nou i el número es queda curt, se'n rescata un d'anterior."),
@@ -1178,7 +1186,8 @@ def pie(prof, eds, actual):
         for d in list(reversed(eds))[:DIAS_PIE])
     mirar = (f'<li><a href="{prof}semana/{semana_de(eds[-1]["fecha"])}/">{L["semana_actual"]}</a></li>'
              f'<li><a href="{prof}archivo.html">{L["todos_numeros"]}</a></li>'
-             f'<li><a href="{prof}hace-un-ano.html">{L["secciones"]["hace-un-ano"]}</a></li>')
+             f'<li><a href="{prof}hace-un-ano.html">{L["secciones"]["hace-un-ano"]}</a></li>'
+             f'<li><a href="{prof}opinion.html">{L["secciones"]["opinion"]}</a></li>')
     grupos = "".join(f'<li>{enlace("https://t.me/" + a, n)}: <span class="pie-grupo-desc">{L["grupos_desc"][k]}</span></li>'
                      for k, (n, a) in GRUPOS.items())
     trad = f'<p>{L["traduccion"]}</p>' if L["traduccion"] else ""
@@ -1741,6 +1750,8 @@ def cuerpo_portada(prof, piezas, breves, mostrar_fecha, tira=""):
         # Con un solo breve, su recuadro quedaba medio vacío al lado del de «Hace un año» (ADR 0041): entonces
         # «Hace un año» se ensancha y los breves se estrechan
         html_ += franja_opinion(prof, opinion) + breves_y_hace_un_ano(prof, breves_dia, hace_un_ano, pocos=len(hoy) < 2)
+    else:   # la columna de su día, antes de la viñeta, que cierra siempre lo del día (ADR 0092)
+        html_ += franja_opinion(prof, opinion)
     html_ += tira
     visibles, ultima = 0, None
     for clave in ORDEN_SECCIONES:
@@ -1768,7 +1779,7 @@ def cuerpo_portada(prof, piezas, breves, mostrar_fecha, tira=""):
   <h2 id="b-breves" class="bloque-titulo"><a href="{prof}breves.html">{icono("breves")} {L["breves_antes"] if mostrar_fecha else L["breves"]}</a></h2>
   <div class="bloque-piezas" style="--n:{min(len(sueltas) + (len(breves) if breves else 0), 2 if hu_aqui else 3)}">{lista}</div>
 </section>"""
-    html_ += final if mostrar_fecha else franja_opinion(prof, opinion) + breves_y_hace_un_ano(prof, final, hace_un_ano, pocos=len(sueltas) + len(breves or []) < 2)
+    html_ += final if mostrar_fecha else breves_y_hace_un_ano(prof, final, hace_un_ano, pocos=len(sueltas) + len(breves or []) < 2)
     return html_
 
 
@@ -1991,6 +2002,21 @@ def reportaje_reciente(eds, fecha):
     return next((d["reportaje"] for d in reversed(eds) if desde <= d["fecha"] <= fecha and d.get("reportaje")), None)
 
 
+def opinion_reciente(eds, fecha):
+    """La última columna de opinión de la semana que acaba en `fecha` (ADR 0092): como el reportaje, sigue en la
+    portada los días siguientes, después de la viñeta, hasta que sale la siguiente."""
+    desde = (datetime.date.fromisoformat(fecha) - datetime.timedelta(days=DIAS_PORTADA - 1)).isoformat()
+    return next((p for d in reversed(eds) if desde <= d["fecha"] <= fecha for p in d["piezas"] if p.get("seccion") == "opinion"), None)
+
+
+def tras_la_vineta(prof, rep, op):
+    """Lo de días anteriores que sigue en la portada después de la viñeta: el reportaje y la columna de la semana, lo
+    más reciente primero."""
+    franjas = sorted([(r["fecha"], franja_reportaje(prof, r)) for r in [rep] if r] + [(o["fecha"], franja_opinion(prof, o)) for o in [op] if o],
+                     key=lambda x: x[0], reverse=True)
+    return "".join(f for _, f in franjas)
+
+
 def descripcion_dia(dia, piezas):
     """Lo que trae un número, para los buscadores y para la vista previa al compartirlo: los titulares
     de sus piezas principales, con el reportaje delante si lo tiene. Hasta tres, enteros, sin pasar de
@@ -2010,6 +2036,9 @@ def pagina_portada(prof, ruta, eds, piezas, breves, fecha, cuenta, es_portada, a
     # los demás días, después de la viñeta, que es del número de hoy (ADR 0004)
     rep = reportaje_reciente(eds, fecha) if es_portada else dia.get("reportaje")
     arriba = bool(rep) and rep["fecha"] == fecha
+    # La columna de su día va con lo del número, antes de la viñeta; en la portada de los días siguientes, después (ADR 0092)
+    op = opinion_reciente(eds, fecha) if es_portada else None
+    op = op if op and op["fecha"] != fecha else None
     # La portada se describe con el lema del diario; la página de cada día, con lo que trae ese número
     descripcion = L["lema"] if es_portada else descripcion_dia(dia, piezas)
     return cabeza(titulo, prof, descripcion, ruta, portada=es_portada) + f"""<body class="pag-portada">
@@ -2020,7 +2049,7 @@ def pagina_portada(prof, ruta, eds, piezas, breves, fecha, cuenta, es_portada, a
 {franja_reserva(dia)}
 {franja_editorial(prof, dia)}
 {franja_reportaje(prof, rep) if arriba else ""}
-{cuerpo_portada(prof, piezas, breves, es_portada, bloque_vineta(prof, eds, fecha) + bloque_semana_video(prof, eds, fecha) + ("" if arriba else franja_reportaje(prof, rep)))}
+{cuerpo_portada(prof, piezas, breves, es_portada, bloque_vineta(prof, eds, fecha) + bloque_semana_video(prof, eds, fecha) + tras_la_vineta(prof, None if arriba else rep, op))}
 </main>
 {pie(prof, eds, None if es_portada else fecha)}
 {SCRIPT_TEMA}
@@ -2733,7 +2762,8 @@ CORREO_CONTACTO = "diarioiaeducativa@bilateria.org"   # reenvío de IONOS al cor
 GUIAS_AGENTES = ["encargos/redaccion.md", "encargos/pasos/1-repaso.md", "encargos/biblioteca.md",
                  "encargos/ilustraciones.md", "encargos/pasos/2b-revision-dibujos.md", "encargos/vineta.md",
                  "encargos/pasos/4-juez.md", "encargos/pasos/23-hace-un-ano.md", "encargos/pasos/24-hace-un-ano-repaso.md",
-                 "traduccion.html", "encargos/avisos.md", "encargos/pasos/7-reportaje-tema.md", "encargos/reportaje.md",
+                 "traduccion.html", "encargos/avisos.md", "encargos/columna.md", "encargos/pasos/40-columna-eleccion.md",
+                 "encargos/pasos/7-reportaje-tema.md", "encargos/reportaje.md",
                  "encargos/pasos/11b-reportaje-eleccion.md", "encargos/reel.md", "encargos/pasos/20-comentario-semana.md"]
 # Los iconos de las cuatro ideas de «La redacción» (Lucide: messages-square, badge-check, calendar-check, user-check)
 ICONOS_IDEAS = [
@@ -2766,7 +2796,8 @@ def redaccion_enlaces(R):
                   pagina_privacidad=f'<a href="privacidad.html">{L["privacidad"]["enlace"]}</a>',
                   pagina_semana=f'<a href="semana/">{R["pagina_semana"]}</a>',
                   hemeroteca=f'<a href="archivo.html">{L["hemeroteca"]}</a>',
-                  hace_un_ano=f'<a href="hace-un-ano.html">{L["secciones"]["hace-un-ano"]}</a>')
+                  hace_un_ano=f'<a href="hace-un-ano.html">{L["secciones"]["hace-un-ano"]}</a>',
+                  opinion=f'<a href="opinion.html">{L["secciones"]["opinion"]}</a>')
     return raiz, grupos
 
 

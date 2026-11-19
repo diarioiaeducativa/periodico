@@ -205,8 +205,9 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
   escribe GPT-6.2-Astra, que elige el tema: el contenedor deja el encargo con el material y un `pedido` en
   `columnas-trabajo/<clave>/`, y `nas/columnista.sh` (crontab del NAS, cada minuto) lanza Codex en la caja del agente de
   noticias, sin terminal. El verificador no toca la tesis. Siempre una de reserva (`reserva/columnas/`, la escribe
-  `reserva.sh`): el juez elige entre las dos y la otra se descarta. Es una prueba sin anunciar: no sale en «La
-  redacción» ni en las normas.
+  `reserva.sh`): el juez elige entre las dos y la otra se descarta. En la portada sigue toda la semana, como el
+  reportaje: el día que sale, antes de la viñeta (que cierra siempre lo del día); los siguientes, después. Está
+  en «La redacción» (equipo, organigrama, «El diario por dentro») y en las normas (`docs/como-se-hace.md`).
 - **Comentario de la semana** (ADR 0038): `scripts/comentario-semana.sh AAAA-WW`, que lanza `noche.sh`
   la noche del domingo (o con `COMENTARIO=1`): uno general y uno por grupo en `comentario-semana/`,
   de 150 a 250 palabras; `scripts/comentario_semana.py comprobar` dice si vale.

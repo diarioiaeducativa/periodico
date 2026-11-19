@@ -1,6 +1,6 @@
 # 92. La columna de opinión de los miércoles, escrita por un modelo de otra casa
 
-Fecha: 2026-11-19 · Estado: aceptado (en prueba, sin anunciar)
+Fecha: 2026-11-19 · Estado: aceptado
 
 ## Contexto
 
@@ -9,7 +9,8 @@ propuso (19-11-2026) un artículo de opinión semanal escrito por «un agente de
 un tema polémico de la semana. Se descartó una columna diaria: en los grupos no hay un debate de verdad cada día,
 y un mismo columnista a diario repite sus manías de estilo. Pidió además que siempre haya una de reserva, como con el
 reportaje: «al ser de opinión no es tan importante la fecha… en el momento de publicar se elige uno y el otro se
-descarta». La primera salió como prueba no anunciada en el número del 18-11-2026.
+descarta». La primera salió en el número del 18-11-2026, sin anunciarla; ese mismo día pidió contarla en «La
+redacción» «y donde haga falta».
 
 El resto del diario lo escriben modelos de Claude. Que la opinión la firme un modelo de otra casa la separa a la
 vista de la información y evita que todo salga de la misma voz.
@@ -17,7 +18,11 @@ vista de la información y evita que todo salga de la misma voz.
 ## Decisión
 
 - **Una columna los miércoles**, en la sección «Opinión» (`opinion`, en `SECCIONES_FUERA`: con su página y sin
-  entrada en el menú), con una franja a todo el ancho en el número, sin dibujo. La firma el modelo con su nombre
+  entrada en el menú, con enlace en el pie), con una franja a todo el ancho en el número, sin dibujo. En la portada
+  sigue toda la semana, como el reportaje (`opinion_reciente()`): el día que sale, antes de la viñeta, porque la
+  viñeta cierra siempre lo del día (Juanjo, 19-11-2026); los días siguientes, después, con el reportaje, lo más
+  reciente primero (`tras_la_vineta()`). En la página de la sección, las columnas van una debajo de otra en recuadros
+  de texto: en la rejilla de las secciones, sin dibujo, ocupaban la casilla de un dibujo con el icono. La firma el modelo con su nombre
   exacto («Por GPT-6.2-Astra (OpenAI)», campo `autor`) y lleva al final una nota fija: el diario comprueba sus datos
   y la opinión es del modelo. Ni la firma ni la nota las escribe el columnista: las pone el generador, en cada lengua.
 - **El columnista elige el tema**, se documenta y escribe (Juanjo, 19-11-2026, al ver que Claude buscaba el debate
@@ -60,8 +65,11 @@ vista de la información y evita que todo salga de la misma voz.
 
 - La consulta de Codex depende del acceso de la cuenta de ChatGPT del agente de noticias, que este renueva cada
   día al ejecutarse; si un día caduca, falla la columna nueva y sale la de reserva.
-- La sección no sale en «La redacción» ni en las normas editoriales mientras es una prueba sin anunciar. Si se
-  anuncia, hay que contarla allí, en los cinco idiomas (ADR 0085).
+- «La redacción» la cuenta en los cinco idiomas: 18 agentes, el columnista y el juez de la columna en el equipo
+  («Los miércoles»), su fila en el organigrama, el apartado de «El diario por dentro» y la excepción a «Son agentes
+  de Claude». Las normas (`docs/como-se-hace.md`) la recogen en el número, en la tabla de normas, en «Quién hace cada
+  cosa», en el horario, en la reserva y en las revisiones. Si cambia el modelo que la escribe, hay que cambiarlo en
+  todos esos sitios.
 
 ## Alternativas descartadas
 

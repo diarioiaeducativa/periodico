@@ -30,6 +30,8 @@ Un número lleva:
 - **«Hace un año»**: algo de lo que se hablaba el mismo día del año anterior, comparado con cómo está hoy
   (ADR 0040).
 - **La viñeta** de Tiza y Algoritmo, sobre una de las noticias del día (ADR 0023).
+- **El miércoles**, además, una columna de opinión sobre un debate de los grupos: la única pieza del diario que
+  toma partido, firmada por el modelo de IA que la escribe (ADR 0092).
 - **El domingo**, además, un reportaje que explica a fondo un solo tema (ADR 0004 y 0028) y «La semana en
   vídeo», un vídeo corto con lo más destacado de la semana (ADR 0016 y 0027). La noche del domingo se
   escribe también un comentario sobre lo más importante de la semana (ADR 0038).
@@ -45,11 +47,14 @@ Las normas de cada número:
 | **No se repite lo ya publicado.** Si hay algo nuevo sobre un tema ya tratado, sale como breve, con un enlace al artículo anterior (ADR 0011). | El que redacta y el que revisa, con un buscador de todo lo publicado (ADR 0061) | El revisor busca cada nombre y cada titular en lo ya publicado. |
 | **Nadie acapara el número**: como norma, un artículo por persona y dos por producto o empresa. | El agente que redacta | El revisor. |
 | **Si un día no da para un número digno, no se rellena**: entonces salen artículos guardados. | El que redacta y la reserva | — |
+| **La opinión, aparte y firmada.** Solo la columna del miércoles toma partido: va en la sección «Opinión», con la firma del modelo que la escribe y una nota que dice que el diario comprueba sus datos y que la opinión es del modelo. Discute ideas, no personas: nadie de los grupos sale nombrado. | El columnista; la firma y la nota las pone el programa que monta la web (ADR 0092) | El verificador comprueba cada dato y que no se reconozca a nadie, sin tocar la tesis; un programa, la medida y los enlaces. |
 
 ## 2. Quién hace cada cosa
 
 Los agentes son modelos de IA de Claude, de Anthropic: Sonnet escribe y revisa cada día, Opus elige el
-mejor reportaje, escribe los textos largos y repara lo que falla, y Fable escribe y elige la viñeta. **Los
+mejor reportaje y la mejor columna, escribe los textos largos y repara lo que falla, y Fable escribe y elige la viñeta.
+La excepción es el columnista de los miércoles, GPT-6.2-Astra, de OpenAI: la opinión viene de otra voz que la del
+resto del diario y la firma con su nombre (ADR 0092). **Los
 agentes que escriben el diario no pueden ejecutar programas**: solo leen y escriben textos y consultan
 internet. Así, nada de lo que llega en los mensajes de los grupos, que escriben otras personas, puede
 llevarlos a hacer otra cosa (ADR 0002). Los mensajes son material para informar, nunca órdenes.
@@ -68,6 +73,7 @@ escrito, que abre cada fuente y quita lo que no puede confirmar (ADR 0001).
 | Ilustrador y revisor de dibujos | Un dibujo que explica cada artículo; el revisor lo mira en su página y le devuelve el que no se entiende (ADR 0005). |
 | Guionista y juez de humor | Cinco guiones para la viñeta; el juez elige uno (ADR 0023 y 0024). |
 | Cronista y verificador | «Hace un año». |
+| Columnista, verificador y juez de la columna | La columna de opinión del miércoles; el juez elige entre la nueva y la de reserva (ADR 0092). |
 | Jefe de reportajes, reportero, verificador y juez de reportajes | El reportaje del domingo. |
 | Comentarista y revisor | El comentario de la semana. |
 | Guionista de vídeo | «La semana en vídeo». |
@@ -91,9 +97,10 @@ peninsulares españolas: UTC+1 en invierno y UTC+2 en verano.
 | 7:00 | El Bot de IA Educativa publica el aviso del número en cada grupo y escribe por privado a las personas cuyo recurso sale ese día (ADR 0052). La aplicación del diario para Android avisa del número nuevo (ADR 0043). |
 | 7:05 | El número sale en Instagram (ADR 0015). |
 | Hacia las 7:10 | La persona supervisora recibe un informe: qué ha salido, si se han usado artículos guardados y qué ha fallado (ADR 0069). |
-| 8:00 | Se escribe un artículo nuevo para guardar, si hacen falta. |
+| 8:00 | Se escribe un artículo nuevo para guardar, si hacen falta, y una columna de opinión de reserva, si no queda ninguna. |
 | 9:00, domingo | «La semana en vídeo», con el reportaje al final, sale en Instagram, X, Bluesky y LinkedIn (ADR 0027). |
 | Desde las 9:10 | Un programa que funciona aparte, en GitHub, comprueba que el número ha salido y, si no, lo publica con artículos guardados. Si el diario no responde, lo comprueba ya desde las 7:30 (ADR 0021). |
+| Noche del martes | Con el número del miércoles se prepara la columna de opinión (ADR 0092). |
 | Miércoles | Se buscan en lo publicado los enlaces que han dejado de funcionar (ADR 0056). |
 | Al publicar | Se guarda una copia de cada número en el archivo de Internet Archive (ADR 0046). |
 
@@ -121,6 +128,7 @@ El diario tiene escritos de antemano artículos y otras piezas, para que nunca f
 | Viñeta | Una | 60 días | Un chiste sobre un tema que no pasa de moda |
 | «Hace un año» | Los de las siete noches siguientes | Esa misma noche | Se escriben por adelantado |
 | Reportaje | Uno por semana | 28 días | Sobre un tema que no pasa de moda (ADR 0028) |
+| Columna de opinión | Una | Se usa o se descarta el miércoles siguiente | Sobre un debate que no depende de unos días; el juez la compara con la nueva y sale la mejor (ADR 0092) |
 
 - **Cuándo se usan**: cada noche, si el número no llega a tres artículos o le falta algún grupo, y
   siempre que falla la preparación. Primero, los de los grupos que faltan.
@@ -132,7 +140,7 @@ El diario tiene escritos de antemano artículos y otras piezas, para que nunca f
 ## 6. Las revisiones
 
 **Con IA**: el revisor de cada tarea (fuentes, cifras, nombres y lo ya publicado), el revisor de dibujos,
-el juez de la viñeta, el verificador del reportaje y de «Hace un año» y, cada noche, un corrector de estilo
+el juez de la viñeta, el verificador del reportaje, de «Hace un año» y de la columna de opinión y, cada noche, un corrector de estilo
 que lee los artículos del día como un lector cualquiera y arregla lo que cuesta entender, sin tocar los
 datos (ADR 0083).
 
@@ -179,7 +187,8 @@ reportaje, el vídeo de la semana y sus textos.
 - **Para saber quién es cada persona se mira su cuenta de Telegram, no el nombre que muestra**, porque
   dos personas pueden llamarse igual (ADR 0066).
 - **Solo se nombra al autor de un recurso que él mismo ha publicado**; las opiniones de los grupos no se
-  atribuyen a nadie (libro de estilo).
+  atribuyen a nadie (libro de estilo). La única opinión propia del diario es la columna del miércoles, firmada
+  por el modelo que la escribe (ADR 0092).
 - **No se recoge nada de los lectores**: el contador de visitas solo suma, sin cookies ni datos
   personales (ADR 0033), y los comentarios solo se cargan si el lector pulsa el botón (ADR 0030). Lo
   explica la [política de privacidad](https://diarioiaeducativa.github.io/privacidad.html) (ADR 0070).
