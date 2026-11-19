@@ -5,8 +5,8 @@
   <string name="avisos_canal_desc">Un aviso cada mañana, cuando sale el número.</string>
   <string name="avisos_titulo">Ya está el número %1$d</string>
   <string name="avisos_dialogo">Avisos del número</string>
-  <string name="avisos_texto">La app puede avisarte cada mañana, a las 7, cuando sale el número. No se envían datos: el móvil solo mira en la web del diario si ya está publicado.</string>
-  <string name="avisos_texto_activos">Los avisos están activados: cada mañana, a las 7, llega una notificación con el número del día.</string>
+  <string name="avisos_texto">La app puede avisarte cada mañana, a las 7:00 (hora peninsular española), cuando sale el número. No se envían datos: el móvil solo mira en la web del diario si ya está publicado.</string>
+  <string name="avisos_texto_activos">Los avisos están activados: cada mañana, a las 7:00 (hora peninsular española), llega una notificación con el número del día.</string>
   <string name="avisos_activar">Activar</string>
   <string name="avisos_desactivar">Desactivar</string>
   <string name="avisos_ahora_no">Ahora no</string>

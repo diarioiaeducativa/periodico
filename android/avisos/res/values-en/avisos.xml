@@ -5,8 +5,8 @@
   <string name="avisos_canal_desc">One alert each morning, when the new issue is out.</string>
   <string name="avisos_titulo">Issue %1$d is out</string>
   <string name="avisos_dialogo">New issue alerts</string>
-  <string name="avisos_texto">The app can let you know each morning, at 7, when the new issue is out. No data is sent: your phone only checks the paper\'s website to see whether it is out.</string>
-  <string name="avisos_texto_activos">Alerts are on: each morning, at 7, you get a notification with the day\'s issue.</string>
+  <string name="avisos_texto">The app can let you know each morning at 7:00 a.m. CET/CEST when the new issue is out. No data is sent: your phone only checks the paper\'s website to see whether it is out.</string>
+  <string name="avisos_texto_activos">Alerts are on: each morning at 7:00 a.m. CET/CEST, you get a notification with the day\'s issue.</string>
   <string name="avisos_activar">Turn on</string>
   <string name="avisos_desactivar">Turn off</string>
   <string name="avisos_ahora_no">Not now</string>

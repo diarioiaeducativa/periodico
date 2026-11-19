@@ -28,10 +28,12 @@ estilo y el del traductor fijaban cómo se escribe una hora en cada lengua, pero
   vez. El libro del traductor (`encargos/traduccion.md`) da la forma de cada lengua.
 - **Lo ya publicado se queda como está**: la norma vale desde ahora.
 
-## Pendiente
+## App de Android
 
-Los textos de la propia app de Android («cada mañana, a las 7») no cambian hasta su próxima versión, que pasa por
-la revisión de Google Play.
+La app 1.0.3 (versionCode 4, 19-11-2026) da también el huso en el texto de los avisos (`android/avisos/res/`):
+«a las 7:00 (hora peninsular española)» y, en inglés, «7:00 a.m. CET/CEST». A diferencia de la web, sin el desfase
+respecto a UTC, porque el texto de la app es fijo y no puede cambiar con el horario de verano; el aviso salta a las
+7:00 de Madrid todo el año (ADR 0043), así que la frase vale en las dos épocas.
 
 ## Validación
 
@@ -39,3 +41,7 @@ la revisión de Google Play.
 sin ningún `{huso}` sin sustituir. `huso()` da UTC+1 el 28-03-2026 y el 25-10-2026, y UTC+2 el 29-03-2026 y el
 01-07-2026 (los días del cambio de hora, con las 7:00 ya pasado el cambio). `scripts/revisar-maqueta.py` a las
 nueve anchuras: sin huecos.
+
+App 1.0.3 (19-11-2026): `aapt` confirma versionCode 4 y los textos nuevos en las cinco lenguas; `apksigner`, la
+clave de subida de siempre. En el emulador `prueba-twa`, el diálogo de los avisos en las cinco lenguas: el texto
+cabe sin cortarse.
