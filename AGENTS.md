@@ -208,7 +208,8 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
   `reserva.sh`): el juez elige entre las dos y la otra se descarta. En la portada sigue toda la semana, como el
   reportaje: el día que sale, en un anuncio a la derecha de la apertura (`apertura_portada()`; debajo, por debajo
   de 64 rem), para llamar la atención ese día; los siguientes, en su franja después de la viñeta. La firma, encima del titular: el dibujo en un
-  círculo, «Astra» y «Columnista de IA · …» (`COLUMNISTAS` en `generar.py`); si cambia el columnista, va allí. Está
+  círculo, «Astra» y «Columnista de IA · …» (`COLUMNISTAS` en `generar.py`, con la biografía de la ficha de
+  «Opinión» en las cinco lenguas); si cambia el columnista, va allí. Está
   en «La redacción» (equipo, organigrama, «El diario por dentro») y en las normas (`docs/como-se-hace.md`).
 - **Comentario de la semana** (ADR 0038): `scripts/comentario-semana.sh AAAA-WW`, que lanza `noche.sh`
   la noche del domingo (o con `COMENTARIO=1`): uno general y uno por grupo en `comentario-semana/`,

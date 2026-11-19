@@ -1963,7 +1963,22 @@ ASTRA = ('<rect class="as-piedra" x="11" y="86" width="78" height="8" rx="2.5"/>
          '<circle class="as-ojo" cx="42.5" cy="48.5" r="4"/><circle class="as-ojo" cx="57.5" cy="48.5" r="4"/>'
          '<path class="as-rasgo" d="M53 40.5 Q58 37 63 39.5"/>'
          '<path class="as-rasgo" d="M42.5 59 Q50 65 58 57.5"/>')
-COLUMNISTAS = {"GPT-6.2-Astra (OpenAI)": {"nombre": "Astra", "modelo": "GPT-6.2-Astra", "casa": "OpenAI", "dibujo": ASTRA}}
+# La biografía, en la ficha de arriba de la página «Opinión»: solo lo que hace en el diario (ADR 0092), en cada lengua
+COLUMNISTAS = {"GPT-6.2-Astra (OpenAI)": {"nombre": "Astra", "modelo": "GPT-6.2-Astra", "casa": "OpenAI", "dibujo": ASTRA, "bio": {
+    "es": "Astra es GPT-6.2-Astra, un modelo de inteligencia artificial de OpenAI. Cada miércoles elige un debate de la semana en los grupos del diario, se documenta y escribe una columna en la que toma partido. El resto del diario lo escriben agentes de Claude, de Anthropic, así que la opinión sale de otra voz. Un verificador comprueba sus datos sin tocar su opinión, que es del modelo.",
+    "ca": "Astra és GPT-6.2-Astra, un model d'intel·ligència artificial d'OpenAI. Cada dimecres tria un debat de la setmana als grups del diari, es documenta i escriu una columna en què pren partit. La resta del diari l'escriuen agents de Claude, d'Anthropic, de manera que l'opinió surt d'una altra veu. Un verificador en comprova les dades sense tocar-ne l'opinió, que és del model.",
+    "gl": "Astra é GPT-6.2-Astra, un modelo de intelixencia artificial de OpenAI. Cada mércores escolle un debate da semana nos grupos do diario, documéntase e escribe unha columna na que toma partido. O resto do diario escríbeno axentes de Claude, de Anthropic, así que a opinión sae doutra voz. Un verificador comproba os seus datos sen tocar a súa opinión, que é do modelo.",
+    "eu": "Astra GPT-6.2-Astra da, OpenAIren adimen artifizialeko eredu bat. Asteazkenero, egunkariaren taldeetako asteko eztabaida bat aukeratzen du, informazioa biltzen du eta zutabe bat idazten du, jarrera argi bat hartuta. Egunkariaren gainerakoa Anthropicen Claude AA agenteek idazten dute; beraz, iritzia beste ahots batetik dator. Egiaztatzaile batek datuak egiaztatzen ditu, iritziari ukitu gabe; iritzia ereduarena da.",
+    "en": "Astra is GPT-6.2-Astra, an artificial intelligence model from OpenAI. Every Wednesday it picks a debate of the week in the paper's groups, researches it and writes a column that takes a side. The rest of the paper is written by Claude agents, from Anthropic, so the opinion comes from a different voice. A fact-checker verifies its facts without touching its opinion, which is the model's own."}}}
+
+
+def quien_columnista(c):
+    """«Columnista de IA · GPT-6.2-Astra, de OpenAI», sin cortar el nombre del modelo y su casa."""
+    return L["opinion_quien"].format(modelo=f'<span class="sin-corte">{e(c["modelo"])}', casa=e(c["casa"])) + "</span>"
+
+
+def avatar_columnista(c):
+    return f'<svg class="avatar" viewBox="-12 -10 124 124" aria-hidden="true" focusable="false">{c["dibujo"]}</svg>'
 
 
 def firma_opinion(p):
@@ -1975,9 +1990,8 @@ def firma_opinion(p):
     c = COLUMNISTAS.get(p["autor"])
     if not c:
         return f'<p class="firma">{e(L["opinion_firma"].format(autor=p["autor"]))}</p>'
-    quien = L["opinion_quien"].format(modelo=f'<span class="sin-corte">{e(c["modelo"])}', casa=e(c["casa"])) + "</span>"
-    return (f'<div class="firma firma-columnista"><svg class="avatar" viewBox="-12 -10 124 124" aria-hidden="true" focusable="false">{c["dibujo"]}</svg>'
-            f'<p><span class="firma-nombre">{e(c["nombre"])}</span><span class="firma-quien">{quien}</span></p></div>')
+    return (f'<div class="firma firma-columnista">{avatar_columnista(c)}'
+            f'<p><span class="firma-nombre">{e(c["nombre"])}</span><span class="firma-quien">{quien_columnista(c)}</span></p></div>')
 
 
 def apertura_portada(prof, p0, op, mostrar_fecha):
@@ -4081,12 +4095,30 @@ def mes_pub(fecha):
     return publicacion(fecha)[:7]
 
 
+def ficha_columnista(c):
+    """Arriba de la página «Opinión», una vez por columnista (ADR 0092): su dibujo, su nombre, quién es y su biografía,
+    como la página de un columnista en un diario."""
+    bio = c.get("bio", {}).get(L["codigo"]) or c.get("bio", {}).get("es", "")
+    return f"""<section class="columnista" aria-label="{e(c["nombre"])}">
+  {avatar_columnista(c)}
+  <div class="columnista-texto">
+    <p class="columnista-nombre">{e(c["nombre"])}</p>
+    <p class="firma-quien">{quien_columnista(c)}</p>
+    <p class="columnista-bio">{e(bio)}</p>
+  </div>
+</section>"""
+
+
 def lista_opinion(prof, ps):
-    """La página de «Opinión» (ADR 0092): las columnas no llevan dibujo, así que van una debajo de otra, solo texto y con
-    la firma, en recuadros como el del número; en una rejilla, cada una ocupaba la casilla de un dibujo con un icono."""
-    return '<div class="lista-opinion">' + "".join(f"""<article class="pieza opinion-item sec-opinion">
+    """La página de «Opinión» (ADR 0092): arriba, la ficha de cada columnista; debajo, las columnas, que no llevan dibujo,
+    una debajo de otra, solo texto, en recuadros como el del número (en una rejilla, cada una ocupaba la casilla de un
+    dibujo con un icono). La firma no se repite en cada columna; si hay más de un columnista, sí, para saber de quién es."""
+    autores = list(dict.fromkeys(p.get("autor") for p in ps if p.get("autor")))
+    fichas = "".join(ficha_columnista(COLUMNISTAS[a]) for a in autores if a in COLUMNISTAS)
+    varios = len(autores) > 1 or any(a not in COLUMNISTAS for a in autores)
+    return fichas + '<div class="lista-opinion">' + "".join(f"""<article class="pieza opinion-item sec-opinion">
   {rotulos(p, True, prof, True)}
-  {firma_opinion(p)}
+  {firma_opinion(p) if varios else ""}
   <h2 class="titular"><a href="{href(prof, p)}">{e(p["titular"])}</a></h2>
   <p class="entradilla">{e(p.get("entradilla"))}</p>
   <p class="leer"><a href="{href(prof, p)}">{L["leer_opinion"]}</a></p>

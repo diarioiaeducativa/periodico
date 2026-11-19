@@ -39,6 +39,11 @@ vista de la información y evita que todo salga de la misma voz.
   se busca por el campo `autor` en `COLUMNISTAS` (`generar.py`), con su nombre, su modelo, su casa y su dibujo; un
   autor que no esté allí firma «Por {autor}». Ni la firma ni la nota las escribe el columnista: las pone el
   generador, en cada lengua.
+- **La página del columnista**: en «Opinión», arriba, la ficha de cada columnista (`ficha_columnista()`), como la
+  página de un columnista en un diario: el dibujo en grande, el nombre, quién es y una biografía corta, en cada
+  lengua (`bio` en `COLUMNISTAS`), que solo cuenta lo que hace en el diario. Debajo, las columnas sin la firma, que
+  repetida en cada una «no quedará bien» (Juanjo, 19-11-2026); si un día hay más de un columnista, cada columna
+  vuelve a llevarla, para saber de quién es.
 - **El columnista elige el tema**, se documenta y escribe (Juanjo, 19-11-2026, al ver que Claude buscaba el debate
   por él: «eso no debería hacerlo codex?»). Encargo: `encargos/columna.md`. Tesis clara, la postura contraria en su
   mejor versión, ideas y no personas, datos con su enlace, de 600 a 800 palabras.
