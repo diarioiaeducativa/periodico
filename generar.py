@@ -133,7 +133,7 @@ IDIOMAS = {
         "buscar_txt": "Busca en todo lo publicado en el diario, en castellano: artículos, breves, reportajes y la Biblioteca. Encuentra también las formas de una misma palabra: «evaluar» encuentra «evaluación».",
         "resultados_1": "1 resultado", "resultados_n": "{n} resultados", "sin_resultados": "No hay nada publicado con esas palabras.",
         "todas": "Todas", "mas_resultados": "Más resultados", "buscando": "Buscando…", "sin_buscador": "El buscador no ha podido cargarse.",
-        "reportaje": "El reportaje del domingo", "reportajes": "Reportajes", "leer_reportaje": "Leer el reportaje", "leer_hace_un_ano": "Leer cómo ha cambiado", "leer_opinion": "Leer la columna", "opinion_firma": "Por {autor}", "opinion_nota": "Columna de opinión escrita por {autor}. El diario comprueba sus datos; la opinión es del modelo.",
+        "reportaje": "El reportaje del domingo", "reportajes": "Reportajes", "leer_reportaje": "Leer el reportaje", "leer_hace_un_ano": "Leer cómo ha cambiado", "leer_opinion": "Leer la columna", "opinion_firma": "Por {autor}", "opinion_quien": "Columnista de IA · {modelo}, de {casa}", "opinion_nota": "Columna de opinión escrita por {autor}. El diario comprueba sus datos; la opinión es del modelo.",
         "claves": "Claves", "en_el_diario": "En el diario esta semana", "semana_repo": "Cada sábado, el diario repasa los recursos que han entrado durante la semana en el {repositorio} de Vibe Coding Educativo, la colección de aplicaciones y materiales con licencia abierta que crea y comparte el profesorado de esa comunidad.", "ya_contados": "Ya publicados en el diario", "otras_semanas": "Otras semanas del repositorio", "sin_reportajes": "Todavía no hay reportajes.",
         "reportajes_txt": "Cada domingo, un tema de la semana tratado a fondo.", "palabras": "minutos de lectura",
         "redaccion": {
@@ -274,7 +274,7 @@ IDIOMAS = {
         "buscar_txt": "Cerca en tot el que s'ha publicat al diari, en català: articles, breus, reportatges i la Biblioteca. Troba també les formes d'una mateixa paraula: «avaluar» troba «avaluació».",
         "resultados_1": "1 resultat", "resultados_n": "{n} resultats", "sin_resultados": "No hi ha res publicat amb aquestes paraules.",
         "todas": "Totes", "mas_resultados": "Més resultats", "buscando": "Cercant…", "sin_buscador": "El cercador no s'ha pogut carregar.",
-        "reportaje": "El reportatge del diumenge", "reportajes": "Reportatges", "leer_reportaje": "Llegeix el reportatge", "leer_hace_un_ano": "Llegeix com ha canviat", "leer_opinion": "Llegeix la columna", "opinion_firma": "Per {autor}", "opinion_nota": "Columna d'opinió escrita per {autor}. El diari en comprova les dades; l'opinió és del model.",
+        "reportaje": "El reportatge del diumenge", "reportajes": "Reportatges", "leer_reportaje": "Llegeix el reportatge", "leer_hace_un_ano": "Llegeix com ha canviat", "leer_opinion": "Llegeix la columna", "opinion_firma": "Per {autor}", "opinion_quien": "Columnista d'IA · {modelo}, d'{casa}", "opinion_nota": "Columna d'opinió escrita per {autor}. El diari en comprova les dades; l'opinió és del model.",
         "claves": "Claus", "en_el_diario": "Al diari aquesta setmana", "semana_repo": "Cada dissabte, el diari repassa els recursos que han entrat durant la setmana al {repositorio} de Vibe Coding Educativo, la col·lecció d'aplicacions i materials amb llicència oberta que crea i comparteix el professorat d'aquesta comunitat.", "ya_contados": "Ja publicats al diari", "otras_semanas": "Altres setmanes del repositori", "sin_reportajes": "Encara no hi ha reportatges.",
         "reportajes_txt": "Cada diumenge, un tema de la setmana tractat a fons.", "palabras": "minuts de lectura",
         "redaccion": {
@@ -1946,9 +1946,33 @@ def franja_hace_un_ano(prof, p):
 </section>"""
 
 
+# Los columnistas de «Opinión» (ADR 0092), por el `autor` que pone la columna: el nombre corto con que firma, el modelo
+# exacto, su casa y su dibujo. Astra: una columna dórica con cara (la columnista hecha columna), que dibujó Fable; va
+# en un círculo, como la foto de un columnista, y sus clases `as-*` siguen el tema (diario.css). Un autor que no esté
+# aquí firma «Por {autor}».
+ASTRA = ('<rect class="as-piedra" x="11" y="86" width="78" height="8" rx="2.5"/>'
+         '<path class="as-fuste" d="M31.5 30 L68.5 30 L72 86 L28 86 Z"/>'
+         '<path class="as-estria" d="M37 72 L36.5 82 M45.7 72 L45.5 82 M54.3 72 L54.5 82 M63 72 L63.5 82"/>'
+         '<path class="as-piedra" d="M29 32.5 C25 29.5 22 25.5 20.5 20.5 L79.5 20.5 C78 25.5 75 29.5 71 32.5 Z"/>'
+         '<rect class="as-piedra" x="17" y="7" width="66" height="11" rx="2.5"/>'
+         '<circle class="as-ojo" cx="42.5" cy="48.5" r="4"/><circle class="as-ojo" cx="57.5" cy="48.5" r="4"/>'
+         '<path class="as-rasgo" d="M53 40.5 Q58 37 63 39.5"/>'
+         '<path class="as-rasgo" d="M42.5 59 Q50 65 58 57.5"/>')
+COLUMNISTAS = {"GPT-6.2-Astra (OpenAI)": {"nombre": "Astra", "modelo": "GPT-6.2-Astra", "casa": "OpenAI", "dibujo": ASTRA}}
+
+
 def firma_opinion(p):
-    """«Por GPT-6.2-Astra (OpenAI)»: el modelo que firma la columna de opinión (ADR 0092), en cada lengua."""
-    return f'<p class="firma">{e(L["opinion_firma"].format(autor=p["autor"]))}</p>' if p.get("autor") else ""
+    """La firma de la columna de opinión (ADR 0092), encima del titular, como en La Vanguardia: el dibujo del columnista
+    en un círculo, su nombre y, debajo, que es un modelo de IA, con su nombre exacto y su casa, en cada lengua. Sin ficha en
+    COLUMNISTAS, «Por GPT-6.2-Astra (OpenAI)»."""
+    if not p.get("autor"):
+        return ""
+    c = COLUMNISTAS.get(p["autor"])
+    if not c:
+        return f'<p class="firma">{e(L["opinion_firma"].format(autor=p["autor"]))}</p>'
+    quien = L["opinion_quien"].format(modelo=f'<span class="sin-corte">{e(c["modelo"])}', casa=e(c["casa"])) + "</span>"
+    return (f'<div class="firma firma-columnista"><svg class="avatar" viewBox="-12 -10 124 124" aria-hidden="true" focusable="false">{c["dibujo"]}</svg>'
+            f'<p><span class="firma-nombre">{e(c["nombre"])}</span><span class="firma-quien">{quien}</span></p></div>')
 
 
 def apertura_portada(prof, p0, op, mostrar_fecha):
@@ -1968,8 +1992,8 @@ def anuncio_opinion(prof, p):
     escribe a la vista, para que nadie la tome por información del diario, y el enlace a la columna entera."""
     return f"""<section class="opinion-anuncio sec-opinion" aria-labelledby="op-{e(p["id"])}">
   <p class="seccion"><span><a href="{prof}opinion.html">{icono("opinion")} {L["secciones"]["opinion"]}</a></span> <span class="fecha-pieza">{fecha_rotulo(p)}</span></p>
-  <h2 id="op-{e(p["id"])}" class="titular"><a href="{href(prof, p)}">{e(p["titular"])}</a></h2>
   {firma_opinion(p)}
+  <h2 id="op-{e(p["id"])}" class="titular"><a href="{href(prof, p)}">{e(p["titular"])}</a></h2>
   <p class="entradilla">{e(p["entradilla"])}</p>
   <p class="leer"><a href="{href(prof, p)}">{L["leer_opinion"]}</a></p>
 </section>"""
@@ -1984,8 +2008,8 @@ def franja_opinion(prof, p):
     return f"""<section class="editorial opinion-franja sec-opinion sin-ilu" aria-labelledby="op-{e(p["id"])}">
   <div class="texto">
     <p class="seccion"><span><a href="{prof}opinion.html">{icono("opinion")} {L["secciones"]["opinion"]}</a></span> <span class="fecha-pieza">{fecha_rotulo(p)}</span></p>
-    <h2 id="op-{e(p["id"])}" class="titular"><a href="{href(prof, p)}">{e(p["titular"])}</a></h2>
     {firma}
+    <h2 id="op-{e(p["id"])}" class="titular"><a href="{href(prof, p)}">{e(p["titular"])}</a></h2>
     <p class="entradilla">{e(p["entradilla"])}</p>
     <p class="leer"><a href="{href(prof, p)}">{L["leer_opinion"]}</a></p>
   </div>
@@ -2165,10 +2189,10 @@ def articulo(prof, ruta, d, p, eds):
     linea, _, ante = rot.partition("\n  ")   # la línea de la sección, fuera de la cabeza; el antetítulo, dentro
     if not ante:   # sin sección: la línea del antetítulo lleva la fecha y el botón
         linea, ante = "", rot
-    cab = cabeza_pieza(f"""{ante}
+    cab = cabeza_pieza(f"""{firma}{ante}
     <h1 class="titular">{sin_viuda(e(p["titular"]))}</h1>
     <p class="entradilla">{e(p.get("entradilla"))}</p>
-    {firma}{serie}""", "" if len(p.get("recursos") or []) > 1 else ilustracion(d["fecha"], p, prof, ampliable=True))
+    {serie}""", "" if len(p.get("recursos") or []) > 1 else ilustracion(d["fecha"], p, prof, ampliable=True))
     return cabeza(f'{p["titular"]} | {L["titulo"]}', prof, p.get("entradilla", ""), ruta,
                   datos=datos_noticia(p["titular"], ruta, d["fecha"], imagen_pieza(d["fecha"], p)[0], p.get("corregido"))) + f"""<body class="pag-articulo">
 {cabecera(prof, ruta, d["fecha"], d["numero"], False, h1=False, dia=d)}
@@ -4057,8 +4081,8 @@ def lista_opinion(prof, ps):
     la firma, en recuadros como el del número; en una rejilla, cada una ocupaba la casilla de un dibujo con un icono."""
     return '<div class="lista-opinion">' + "".join(f"""<article class="pieza opinion-item sec-opinion">
   {rotulos(p, True, prof, True)}
-  <h2 class="titular"><a href="{href(prof, p)}">{e(p["titular"])}</a></h2>
   {firma_opinion(p)}
+  <h2 class="titular"><a href="{href(prof, p)}">{e(p["titular"])}</a></h2>
   <p class="entradilla">{e(p.get("entradilla"))}</p>
   <p class="leer"><a href="{href(prof, p)}">{L["leer_opinion"]}</a></p>
 </article>""" for p in ps) + "</div>"

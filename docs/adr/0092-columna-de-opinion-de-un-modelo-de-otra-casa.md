@@ -27,9 +27,18 @@ vista de la información y evita que todo salga de la misma voz.
   a todo el ancho después de la viñeta, con el reportaje, lo más reciente primero (`tras_la_vineta()`). El titular de
   la columna va en redonda, como los demás: la cursiva, que puso el agente para distinguirla, se confundía con un
   antetítulo y no estaba en la página de la columna (Juanjo, 19-11-2026: «quitalo»). En la página de la sección, las columnas van una debajo de otra en recuadros
-  de texto: en la rejilla de las secciones, sin dibujo, ocupaban la casilla de un dibujo con el icono. La firma el modelo con su nombre
-  exacto («Por GPT-6.2-Astra (OpenAI)», campo `autor`) y lleva al final una nota fija: el diario comprueba sus datos
-  y la opinión es del modelo. Ni la firma ni la nota las escribe el columnista: las pone el generador, en cada lengua.
+  de texto: en la rejilla de las secciones, sin dibujo, ocupaban la casilla de un dibujo con el icono. La columna lleva al final una nota fija:
+  el diario comprueba sus datos y la opinión es del modelo.
+- **La firma, como la de un columnista** (Juanjo, 19-11-2026: «la firma de opinión, ¿se podría humanizar algo?»): encima
+  del titular, como en La Vanguardia y elDiario.es (que se consultaron ese día), un dibujo en un círculo, como la foto
+  del columnista, y al lado «Astra» y debajo «Columnista de IA · GPT-6.2-Astra, de OpenAI», en cada lengua
+  (`opinion_quien`). «Astra» sale del nombre del modelo, y la segunda línea dice que es una IA y su nombre exacto.
+  El dibujo es una columna dórica con cara: la columnista hecha columna. Lo dibujó Fable, con tres propuestas; se
+  descartaron una estrella (dibujada antes por Opus), por ser un lugar común de la IA («hay que huir de las frases
+  hechas, en este caso de dibujos hechos»), y una columna jónica, porque sus volutas parecían cuernos. El columnista
+  se busca por el campo `autor` en `COLUMNISTAS` (`generar.py`), con su nombre, su modelo, su casa y su dibujo; un
+  autor que no esté allí firma «Por {autor}». Ni la firma ni la nota las escribe el columnista: las pone el
+  generador, en cada lengua.
 - **El columnista elige el tema**, se documenta y escribe (Juanjo, 19-11-2026, al ver que Claude buscaba el debate
   por él: «eso no debería hacerlo codex?»). Encargo: `encargos/columna.md`. Tesis clara, la postura contraria en su
   mejor versión, ideas y no personas, datos con su enlace, de 600 a 800 palabras.
