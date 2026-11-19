@@ -1,0 +1,44 @@
+{
+  "fecha": "2099-01-05",
+  "hay_edicion": true,
+  "fondo": "edumedia",
+  "motivo": "Herramienta consolidada, útil en clase (escanear objetos y espacios para crear modelos 3D), con plan gratuito vigente y sin artículo previo en el diario; en el grupo se probó con el sensor LiDAR del móvil y la versión gratuita.",
+  "piezas": [{
+    "id": "polycam-escaneo-3d",
+    "seccion": "multimedia",
+    "importancia": 3,
+    "grupo": "edumedia",
+    "antetitulo": "Do fondo de EduMedia",
+    "titular": "Polycam converte obxectos e espazos en modelos 3D coa cámara do móbil",
+    "entradilla": "A aplicación escanea o que hai diante e xera un modelo que se pode xirar, medir e compartir. O seu plan gratuíto ten límites claros.",
+    "cuerpo": [
+      "[Polycam](https://poly.cam/) é unha plataforma de escaneo 3D: percórrese un obxecto ou unha sala coa cámara dun móbil ou dunha tableta e o programa xera un modelo tridimensional e medidas. No grupo compartiuse que, con LiDAR (un sensor de distancia que traen algúns dispositivos), o modo gratuíto funciona moi ben.",
+      "Na aula serve, por exemplo, para que o alumnado de Tecnoloxía ou de Plástica escanee unha maqueta ou unha escultura e a analice desde todos os ángulos, ou para conservar en dixital unha peza fráxil que non se pode manipular.",
+      "Para comezar instálase a aplicación, créase unha conta e escóllese o tipo de captura: obxecto, espazo ou fotografías. Despois rodéase o escaneado amodo.",
+      "Segundo a súa [páxina de prezos](https://poly.cam/pricing), en novembro de 2026 o plan gratuíto permite 150 imaxes por captura, vídeos de 3 minutos, 3 capturas con IA e 10 de fotogrametría (modelos creados a partir de fotos). Só exporta en formato GLTF, os vídeos levan marca de auga e as ligazóns compartidas son públicas. O modo espazo, con LiDAR, só está en dispositivos iOS compatibles. O plan Basic custa 150 dólares ao ano ou 30 ao mes.",
+      "O seu [aviso de privacidade](https://poly.cam/privacy_policy) non fixa unha idade mínima, di que o servizo non é para nenos nin para imaxes de persoas identificables, e que pode ceder os contidos a terceiros, tamén para adestrar modelos de IA. Por iso convén que o use o profesorado e escanee só obxectos ou espazos sen alumnado."
+    ],
+    "fuentes": [
+      {"titulo": "Polycam (en inglés)", "url": "https://poly.cam/"},
+      {"titulo": "Polycam: plans e prezos (en inglés)", "url": "https://poly.cam/pricing"},
+      {"titulo": "Polycam: aviso de privacidade (en inglés)", "url": "https://poly.cam/privacy_policy"}
+    ],
+    "herramienta": {"nombre": "Polycam", "url": "https://poly.cam/"},
+    "mensaje": {"grupo": "edumedia", "id": 7576},
+    "comprobado": "Revisado de nuevo. poly.cam: plataforma de captura 3D (espacios, objetos, planos, medidas) con móvil o tableta, apps gratuitas en App Store y Google Play. poly.cam/pricing: plan gratuito con 150 imágenes por captura, vídeos de 3 min, 3 capturas con IA, 10 de fotogrametría, exportación solo GLTF, marca de agua en vídeo, enlaces públicos (los privados, de pago); el modo espacio (LiDAR) está en el plan gratuito pero solo en iOS compatible; Basic, 150 dólares al año o 30 al mes. poly.cam/privacy_policy: sin edad mínima general, servicio no para niños ni para imágenes de personas identificables, posible cesión de contenidos a terceros, también para entrenar IA. Mensaje 7576 (t.me embed) es el enlace a poly.cam; en la conversación, el mensaje 7586 dice que en modo gratuito con LiDAR funciona muy bien. No sale en el diario (buscar: Polycam, 0 resultados; parecidas sin coincidencia).",
+    "ilustracion": "Un antes y un después: a la izquierda, una mano con un móvil rodeando una pequeña escultura sobre una mesa con líneas de puntos que marcan el recorrido; a la derecha, el mismo objeto como malla tridimensional girando en una pantalla, con una regla que señala una medida.",
+    "ilustracion_alt": "Antes e despois: á esquerda, unha escultura sobre unha mesa rodeada por unha liña de puntos que percorre un móbil, co rótulo «Escaneo»; á dereita, a mesma figura como malla de puntos e liñas nunha pantalla, cunha frecha de xiro e unha liña de medida en vermello, cos rótulos «Modelo 3D» e «Medida»."
+  }],
+  "breves": [],
+  "descartado": [
+    "mensaje 177: chat.qwen.ai no devuelve contenido al abrirlo (página vacía) y no se puede confirmar que el vídeo gratuito siga vigente.",
+    "mensaje 401: es el boletín semanal del propio grupo, no una herramienta ni una técnica."
+  ],
+  "repaso": [
+    "Cuerpo recortado a unas 230 palabras (superaba las 250): quitados el plano, la frase de realidad aumentada y la espera del procesado.",
+    "«Resultados aceptables» cambiado por lo que dijo el grupo (mensaje 7586): con LiDAR, el modo gratuito funciona muy bien.",
+    "Añadido que el modo espacio (LiDAR) solo está en iOS compatible, según la página de precios.",
+    "«A 19 de noviembre de 2026» por «en noviembre de 2026»; quitada la frase sobre equipos profesionales.",
+    "`comprobado` actualizado. Resto verificado: precios, límites, privacidad, no repetida en el diario, antetítulo y titular (<90 caracteres)."
+  ]
+}
