@@ -81,8 +81,8 @@ veinticinco meses» (garantía 3, p. 4).
   es una cookie firmada de 90 días, solo para ellos. Cada uno cambia su contraseña desde el panel
   («Cambiar contraseña», a petición de Juanjo el 08-11-2026), que reescribe `config.php`; la firma
   de la sesión incluye la contraseña, así que al cambiarla se cierran las sesiones de los demás
-  navegadores. Muestra las visitas de hoy, de 7 y de 30 días; la
-  gráfica de visitas; y las páginas más abiertas y el reparto por idioma en el periodo elegido. Se
+  navegadores. Muestra las visitas de hoy, de 7 y de 30 días y en total (con los años de los que ya
+  solo queda la suma); la gráfica de visitas; y las páginas más abiertas y el reparto por idioma en el periodo elegido. Se
   pone al día cada minuto mientras está a la vista.
 - **La gráfica se elige por horas, días, semanas, meses o años** (09-11-2026, a petición de Juanjo):
   las últimas 24 horas, los últimos 30 días, las últimas 12 semanas (de lunes a domingo, con el
@@ -92,6 +92,15 @@ veinticinco meses» (garantía 3, p. 4).
   ratón o con el dedo y, si no se señala ninguna, el de la más reciente. Las fechas se pintan en hora
   de España esté donde esté quien mira. Las cifras van sobre todas las barras si caben; si no, solo
   sobre la más alta y la última.
+- **La gráfica mide visitas o páginas por visita, y puede acumular** (19-11-2026, a petición de Juanjo,
+  que pidió «las páginas vistas por usuario y gráficos acumulativos»). Como el contador no distingue
+  personas, no hay cifra por usuario: la medida es páginas por visita (páginas abiertas entre visitas),
+  y el panel lo explica en la nota de arriba. Por horas esa cifra baila (una visita que cruza la hora
+  suma páginas en la siguiente sin visita nueva); por días o más, es fiable. «Acumulado» suma desde la
+  primera barra que se ve, no desde el principio del contador (Juanjo, 19-11-2026: «que sea en
+  relación a las visitas mostradas, no al total»), así que la última barra coincide con el total de
+  la línea de resumen; vale con las dos medidas y con todos los periodos. El resumen y el detalle dan
+  a la vez visitas, páginas abiertas y páginas por visita.
 - **Se dice en «La redacción»**, en los cinco idiomas: qué se cuenta, que no hay cookies ni datos de
   quien lee, cuánto se guarda (la cuenta de la visita en el navegador, 13 meses; las cifras, 25 meses, y después solo el total de cada año, con la guía de la AEPD
   enlazada, solo en castellano) y quién lo ve.
@@ -127,3 +136,7 @@ veinticinco meses» (garantía 3, p. 4).
   tableta, con tema claro y oscuro: sin errores, sin desbordamiento y sin rótulos que se pisen o se
   salgan. En el hosting (PHP 8.4), el mantenimiento escribe `totales.json`, que da 403 desde la web,
   y las cinco series devuelven las mismas sumas que el detalle de los dos días que hay.
+- Medidas y acumulado (19-11-2026), en una copia local con los datos reales, en Chromium, Firefox y
+  WebKit, en escritorio y en móvil, con tema claro y oscuro: sin errores ni desbordamiento; el
+  acumulado empieza en la primera barra y la última coincide con el resumen. Después, en la web
+  publicada, como página de prueba aparte antes de sustituir el panel.

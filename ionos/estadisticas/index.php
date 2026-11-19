@@ -219,8 +219,15 @@ if (isset($_GET['datos'])) {
     foreach (array_slice($paginas, 0, 30, true) as $r => $c) {
         $top[] = ['ruta' => $r, 'titulo' => $titulos[$r] ?? '', 'n' => $c];
     }
+    // El total desde el principio, con los años de los que ya solo queda la suma
+    $tv = $tp = 0;
+    foreach ($anios as $x) {
+        $tv += $x[0];
+        $tp += $x[1];
+    }
     echo json_encode([
         'hoy' => $suma(1), 'semana' => $suma(7), 'mes' => $suma(30),
+        'total' => ['visitas' => $tv, 'paginas' => $tp],
         'periodo' => $periodo, 'top' => $top, 'idiomas' => $idiomas,
         'tipo' => $tipo, 'serie' => serie($tipo, $dias, $anios, $hoy),
         'actualizado' => (new DateTimeImmutable('now', $MADRID))->format('H:i'),
@@ -258,7 +265,7 @@ header { display:flex; flex-wrap:wrap; align-items:baseline; justify-content:spa
 h1 { font-size:1.4rem; margin:.3rem 0; }
 h2 { font-size:1.05rem; margin:1.4rem 0 .5rem; }
 .aviso { color:var(--tinta-2); font-size:.9rem; margin:0; }
-.cifras { display:grid; grid-template-columns:repeat(3, 1fr); gap:.6rem; margin-top:.8rem; }
+.cifras { display:grid; grid-template-columns:repeat(4, 1fr); gap:.6rem; margin-top:.8rem; }
 .cifra { background:var(--papel); border:1px solid var(--linea); border-radius:10px; padding:.7rem .8rem; }
 .cifra b { display:block; font-size:2rem; line-height:1.1; }
 .cifra span { color:var(--tinta-2); font-size:.85rem; }
@@ -269,6 +276,8 @@ svg .b.sel { fill:var(--tinta); }
 svg text { font-size:13px; fill:var(--tinta-2); text-anchor:middle; font-variant-numeric:tabular-nums; }
 .detalle { margin:.5rem 0 0; font-size:.95rem; min-height:1.45em; }
 .periodos + .aviso { margin-top:.5rem; }
+.periodos + .periodos { margin-top:.4rem; }
+#acumulado { margin-left:.5rem; }
 .periodos + .caja, .aviso + .caja { margin-top:.6rem; }
 .periodos { display:flex; flex-wrap:wrap; gap:.3rem; }
 .periodos button { font:inherit; font-size:.9rem; padding:.3rem .7rem; border:1px solid var(--linea); border-radius:99px; background:var(--papel); color:var(--tinta); cursor:pointer; }
@@ -284,6 +293,7 @@ form.entrar label { display:block; margin:.7rem 0 .25rem; font-weight:600; }
 form.entrar input { width:100%; font:inherit; padding:.5rem .6rem; border:1px solid var(--linea); border-radius:6px; background:var(--fondo); color:var(--tinta); }
 form.entrar button { margin-top:1rem; font:inherit; font-weight:600; padding:.55rem 1rem; border:0; border-radius:6px; background:var(--tinta); color:var(--papel); cursor:pointer; }
 .error { color:var(--acento); }
+@media (max-width: 40rem) { .cifras { grid-template-columns:repeat(2, 1fr); } }
 @media (max-width: 30rem) { .cifra b { font-size:1.5rem; } }
 </style>
 </head>
@@ -321,15 +331,19 @@ form.entrar button { margin-top:1rem; font:inherit; font-weight:600; padding:.55
     <p class="aviso">Al día a las <span id="hora">…</span> · <a href="?clave">Cambiar contraseña</a> · <a href="?salir">Salir</a></p>
     <?php if (isset($_GET['cambiada'])): ?><p class="aviso" role="status">Contraseña cambiada.</p><?php endif; ?>
   </header>
-  <p class="aviso">Una visita es una persona que entra en el diario; si vuelve tras 30 minutos sin abrir ninguna página, cuenta otra vez. Los días van en hora de España.</p>
+  <p class="aviso">Una visita es una persona que entra en el diario; si vuelve tras 30 minutos sin abrir ninguna página, cuenta otra vez. Las páginas por visita son las páginas abiertas entre las visitas: no se cuentan personas, así que no hay cifra por usuario. Los días van en hora de España.</p>
   <div class="cifras">
     <div class="cifra"><b id="c-hoy">–</b><span>visitas hoy</span></div>
     <div class="cifra"><b id="c-semana">–</b><span>visitas en 7 días</span></div>
     <div class="cifra"><b id="c-mes">–</b><span>visitas en 30 días</span></div>
+    <div class="cifra"><b id="c-total">–</b><span>visitas en total</span></div>
   </div>
   <h2>Visitas en el tiempo</h2>
   <div class="periodos" id="series" role="group" aria-label="Qué cuenta cada barra de la gráfica">
     <button type="button" data-s="hora">Horas</button><button type="button" data-s="dia">Días</button><button type="button" data-s="semana">Semanas</button><button type="button" data-s="mes">Meses</button><button type="button" data-s="anio">Años</button>
+  </div>
+  <div class="periodos" id="medidas" role="group" aria-label="Qué mide la gráfica">
+    <button type="button" data-m="visitas">Visitas</button><button type="button" data-m="ppv">Páginas por visita</button><button type="button" id="acumulado" aria-pressed="false">Acumulado</button>
   </div>
   <p class="aviso" id="resumen">&nbsp;</p>
   <div class="caja"><svg id="grafica" role="img"></svg><p class="detalle" id="detalle" aria-live="polite">&nbsp;</p></div>
@@ -343,13 +357,15 @@ form.entrar button { margin-top:1rem; font:inherit; font-weight:600; padding:.55
 </main>
 <script>
 (function(){
-  var periodo = '7', serie = 'dia', datos = null, elegida = null;
+  var periodo = '7', serie = 'dia', datos = null, elegida = null, medida = 'visitas', acumulado = false, vals = [];
   var IDI = {es:'castellano', ca:'catalán', gl:'gallego', eu:'euskera', en:'inglés'};
   var fmt = new Intl.NumberFormat('es-ES');
+  var fmt1 = new Intl.NumberFormat('es-ES', {minimumFractionDigits:1, maximumFractionDigits:1});
   function el(id){ return document.getElementById(id); }
   function texto(t){ var d=document.createElement('div'); d.textContent=t; return d.innerHTML; }
   function cuantas(n, uno, varios){ return fmt.format(n)+' '+(n===1 ? uno : varios); }
-  function sumas(v, p){ return cuantas(v,'visita','visitas')+' · '+cuantas(p,'página abierta','páginas abiertas'); }
+  function sumas(v, p){ return cuantas(v,'visita','visitas')+' · '+cuantas(p,'página abierta','páginas abiertas')+(v ? ' · '+fmt1.format(p/v)+' páginas por visita' : ''); }
+  function cifra(y){ return medida==='ppv' ? fmt1.format(y) : fmt.format(y); }
   function mayus(t){ return t.charAt(0).toUpperCase()+t.slice(1); }
 
   // Las fechas, siempre en hora de España, esté donde esté quien mira
@@ -357,6 +373,7 @@ form.entrar button { margin-top:1rem; font:inherit; font-weight:600; padding:.55
   var fDia = new Intl.DateTimeFormat('es-ES', {weekday:'long', day:'numeric', month:'long', timeZone:TZ});
   var fDiaMes = new Intl.DateTimeFormat('es-ES', {day:'numeric', month:'long', timeZone:TZ});
   var fMes = new Intl.DateTimeFormat('es-ES', {month:'long', year:'numeric', timeZone:TZ});
+  var fFecha = new Intl.DateTimeFormat('es-ES', {day:'numeric', month:'long', year:'numeric', timeZone:TZ});
   var fMesCorto = new Intl.DateTimeFormat('es-ES', {month:'short', timeZone:TZ});
   var fPartes = new Intl.DateTimeFormat('es-ES', {day:'numeric', month:'numeric', hour:'numeric', hourCycle:'h23', timeZone:TZ});
   function mediodia(c){ return new Date(c+'T12:00:00Z'); }   // un día, sin que la zona lo cambie
@@ -388,39 +405,50 @@ form.entrar button { margin-top:1rem; font:inherit; font-weight:600; padding:.55
       largo:function(c){ return 'Año '+c; }}
   };
 
+  // Lo que pinta cada barra: lo de su periodo o, en el acumulado, la suma desde la primera barra que se ve
+  function valores(){
+    var out=[], tv=0, tp=0;
+    datos.serie.forEach(function(s,i){
+      tv=acumulado ? tv+s.v : s.v; tp=acumulado ? tp+s.p : s.p;
+      out[i]={v:tv, p:tp, y:medida==='ppv' ? (tv ? tp/tv : 0) : tv};
+    });
+    return out;
+  }
   function detalle(){
     if(!datos || !datos.serie.length){ el('detalle').innerHTML='&nbsp;'; return; }
-    var i = elegida===null ? datos.serie.length-1 : elegida, s=datos.serie[i];
-    el('detalle').innerHTML='<b>'+texto(SERIES[datos.tipo].largo(s.c))+':</b> '+sumas(s.v, s.p);
+    var i = elegida===null ? datos.serie.length-1 : elegida, s=vals[i];
+    el('detalle').innerHTML='<b>'+texto(SERIES[datos.tipo].largo(datos.serie[i].c))+(acumulado && i>0 ? ', acumulado desde '+texto(SERIES[datos.tipo].corto(datos.serie[0].c)) : '')+':</b> '+sumas(s.v, s.p);
     document.querySelectorAll('#grafica .b').forEach(function(b){ b.classList.toggle('sel', elegida!==null && +b.dataset.i===elegida); });
   }
   function grafica(){
     var S=SERIES[datos.tipo], serie=datos.serie, svg=el('grafica');
+    vals=valores();
     var W=Math.max(280, svg.clientWidth||600), H=200, abajo=24, arriba=20;
-    var max=Math.max(1, Math.max.apply(null, serie.map(function(s){return s.v;})));
+    var max=Math.max(medida==='ppv' ? 0.1 : 1, Math.max.apply(null, vals.map(function(s){return s.y;})));
     var paso=W/Math.max(serie.length, S.hueco), barra=Math.min(paso-Math.min(4, paso*.3), 48), h='';
     var tv=0, tp=0; serie.forEach(function(s){ tv+=s.v; tp+=s.p; });
-    el('resumen').textContent=S.rango+': '+sumas(tv, tp);
+    var rango=S.rango;
+    el('resumen').textContent=rango+': '+sumas(tv, tp);
     svg.setAttribute('viewBox', '0 0 '+W+' '+H);
-    svg.setAttribute('aria-label', 'Gráfica de visitas. '+S.rango+': '+sumas(tv, tp)+'.');
+    svg.setAttribute('aria-label', 'Gráfica de '+(medida==='ppv' ? 'páginas por visita' : 'visitas')+'. '+rango+': '+sumas(tv, tp)+'.');
     // Los rótulos de abajo, cada tantos como quepan, contando desde la barra más reciente
     var anchoRotulo=Math.max.apply(null, serie.map(function(s){return S.corto(s.c).length;}).concat(1))*7.5+10;
     var cada=Math.max(1, Math.ceil(anchoRotulo/paso));
     // Las cifras de arriba, en todas las barras si caben; si no, solo en la más alta y en la última
-    var todas=fmt.format(max).length*8+4 <= paso, iMax=-1;
-    serie.forEach(function(s,i){ if(s.v===max && iMax<0) iMax=i; });
+    var todas=cifra(max).length*8+4 <= paso, iMax=-1;
+    vals.forEach(function(s,i){ if(s.y===max && iMax<0) iMax=i; });
     serie.forEach(function(s,i){
-      var alto=(H-abajo-arriba)*s.v/max, x=i*paso+(paso-barra)/2, y=H-abajo-alto, medio=i*paso+paso/2;
+      var valor=vals[i].y, alto=(H-abajo-arriba)*valor/max, x=i*paso+(paso-barra)/2, y=H-abajo-alto, medio=i*paso+paso/2;
       if(alto) h+='<rect class="b" data-i="'+i+'" x="'+x.toFixed(1)+'" y="'+y.toFixed(1)+'" width="'+barra.toFixed(1)+'" height="'+alto.toFixed(1)+'" rx="2"/>';
-      var ultima=i===serie.length-1, lejos=Math.abs(i-iMax)*paso > fmt.format(max).length*8+12;
-      var mitad=fmt.format(s.v).length*4+1;   // la cifra no se sale por los lados
-      if(s.v && (todas || i===iMax || (ultima && lejos))) h+='<text x="'+Math.min(Math.max(medio, mitad), W-mitad).toFixed(1)+'" y="'+(y-4).toFixed(1)+'">'+fmt.format(s.v)+'</text>';
+      var ultima=i===serie.length-1, lejos=Math.abs(i-iMax)*paso > cifra(max).length*8+12;
+      var mitad=cifra(valor).length*4+1;   // la cifra no se sale por los lados
+      if(valor && (todas || i===iMax || (ultima && lejos))) h+='<text x="'+Math.min(Math.max(medio, mitad), W-mitad).toFixed(1)+'" y="'+(y-4).toFixed(1)+'">'+cifra(valor)+'</text>';
       if((serie.length-1-i)%cada===0) h+='<text x="'+Math.min(Math.max(medio, anchoRotulo/2-4), W-anchoRotulo/2+4).toFixed(1)+'" y="'+(H-6)+'">'+texto(S.corto(s.c))+'</text>';
     });
     h+='<line x1="0" x2="'+W+'" y1="'+(H-abajo)+'" y2="'+(H-abajo)+'" stroke="var(--linea)"/>';
     // Encima, una franja por barra de arriba abajo, para acertar con el dedo
     serie.forEach(function(s,i){
-      h+='<rect data-i="'+i+'" x="'+(i*paso).toFixed(1)+'" y="0" width="'+paso.toFixed(1)+'" height="'+H+'" fill="transparent"><title>'+texto(S.largo(s.c)+': '+sumas(s.v, s.p))+'</title></rect>';
+      h+='<rect data-i="'+i+'" x="'+(i*paso).toFixed(1)+'" y="0" width="'+paso.toFixed(1)+'" height="'+H+'" fill="transparent"><title>'+texto(S.largo(s.c)+(acumulado && i>0 ? ', acumulado desde '+S.corto(serie[0].c) : '')+': '+sumas(vals[i].v, vals[i].p))+'</title></rect>';
     });
     svg.innerHTML=h;
     if(elegida!==null && elegida>=serie.length) elegida=null;
@@ -431,6 +459,7 @@ form.entrar button { margin-top:1rem; font:inherit; font-weight:600; padding:.55
     el('c-hoy').textContent=fmt.format(d.hoy.visitas);
     el('c-semana').textContent=fmt.format(d.semana.visitas);
     el('c-mes').textContent=fmt.format(d.mes.visitas);
+    el('c-total').textContent=fmt.format(d.total.visitas);
     if(datos && datos.tipo!==d.tipo) elegida=null;
     datos=d;
     grafica();
@@ -461,6 +490,21 @@ form.entrar button { margin-top:1rem; font:inherit; font-weight:600; padding:.55
   }
   botones('series', 's', serie, function(v){ serie=v; });
   botones('periodos', 'p', periodo, function(v){ periodo=v; });
+  // Qué mide la gráfica y si acumula: no hace falta pedir nada al servidor, solo volver a pintarla
+  var ms=document.querySelectorAll('#medidas button[data-m]'), ac=el('acumulado');
+  ms.forEach(function(b){
+    b.setAttribute('aria-pressed', b.dataset.m===medida ? 'true' : 'false');
+    b.addEventListener('click', function(){
+      ms.forEach(function(x){ x.setAttribute('aria-pressed', x===b ? 'true' : 'false'); });
+      medida=b.dataset.m;
+      if(datos) grafica();
+    });
+  });
+  ac.addEventListener('click', function(){
+    acumulado=!acumulado;
+    ac.setAttribute('aria-pressed', acumulado ? 'true' : 'false');
+    if(datos) grafica();
+  });
   // Al pasar el ratón o tocar una barra, su detalle debajo; con el ratón fuera, vuelve la más reciente
   var g=el('grafica');
   function elige(e){ var i=e.target && e.target.dataset ? e.target.dataset.i : undefined; if(i!==undefined && +i!==elegida){ elegida=+i; detalle(); } }
