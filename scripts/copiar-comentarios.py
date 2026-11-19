@@ -5,6 +5,7 @@ Lo lanza scripts/copiar-comentarios.sh cada dos minutos desde el reloj del NAS. 
 categoría «Comentarios» del repositorio del sitio todos los hilos que abre giscus (titulados con la ruta de la
 pieza, AAAA-MM-DD/id) y deja uno por pieza en comentarios/AAAA-MM-DD/id.json. Cada página los lee de ahí, del
 propio diario: quien solo lee no se conecta con giscus ni con GitHub, y giscus se carga solo al pulsar «Comentar».
+Deja además comentarios/indice.json con la lista de las piezas que tienen comentarios.
 
 Siempre lo rehace todo: así un comentario editado, borrado u ocultado al moderar desaparece también de la copia.
 El texto es el HTML que da GitHub, pasado por una lista cerrada de etiquetas: nada de imágenes ni de otro
@@ -200,6 +201,12 @@ def main():
         with open(ruta, "w", encoding="utf-8") as f:
             json.dump({"comentarios": lista}, f, ensure_ascii=False, indent=1)
             f.write("\n")
+    # El índice de las piezas con comentarios: cada página lo mira antes de pedir su archivo, para no pedir uno que
+    # no existe (un 404 en la consola de cada pieza sin comentarios). Siempre se escribe, aunque esté vacío.
+    os.makedirs(carpeta, exist_ok=True)
+    with open(os.path.join(carpeta, "indice.json"), "w", encoding="utf-8") as f:
+        json.dump({"piezas": sorted(nuevos)}, f, ensure_ascii=False)
+        f.write("\n")
     print(f"{len(nuevos)} piezas con comentarios; {sum(len(v) for v in nuevos.values())} comentarios")
 
 

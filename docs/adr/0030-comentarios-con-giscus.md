@@ -70,9 +70,12 @@ no se abre al público (trabaja solo, sin que nadie se conecte a él).
     el destino de los enlaces (solo `http`, `https` y `mailto`), sin scripts, estilos ni SVG, y sin imágenes,
     que quedan como enlace, para que leer no cargue nada de fuera. Sin avatares. Un comentario ocultado no
     sale; uno borrado, solo si tiene respuestas («Comentario borrado»), para no dejarlas sueltas.
-  - La pieza pide su archivo al propio diario y, si lo hay, enseña los comentarios con sus respuestas encima
-    del aviso y del botón, que ahora dice «Comentar» (en los cinco idiomas). Si aún no hay comentarios, la
-    petición da 404 y solo queda el botón. Al pulsarlo se carga giscus como antes y la copia se oculta, porque
+  - La pieza mira primero el índice de las piezas con comentarios (`comentarios/indice.json`, que escribe la copia
+    en cada vuelta, también vacío) y, si está en él, pide su archivo al propio diario y enseña los comentarios con
+    sus respuestas encima del aviso y del botón, que ahora dice «Comentar» (en los cinco idiomas). Si no está, no
+    pide nada más y solo queda el botón. Hasta el 19-11-2026 pedía siempre su archivo, y cada pieza sin comentarios
+    dejaba un 404 en la consola (Juanjo: «arregla lo del error de los comentarios»). Si falta el índice, pide el
+    archivo directamente, como antes, para que un fallo del índice no esconda los comentarios. Al pulsarlo se carga giscus como antes y la copia se oculta, porque
     giscus enseña el hilo entero. La fecha, con las mismas reglas que el resto del diario (`fecha_corta` y
     `fecha_con_anyo`, el año solo si no es el actual) y la hora local: el euskera no está en todos los navegadores.
   - La publicación no toca `comentarios/` (`--exclude /comentarios/` en `publicar-nas.sh`, `publicar-web.sh`,
