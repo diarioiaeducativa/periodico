@@ -890,8 +890,10 @@ SCRIPT_FILAS = """<script>
   /* Los breves y «Hace un año» (ADR 0041): el reparto de la fila se elige por lo que ocupa cada recuadro, no por
      cuántos breves hay. Se prueban repartos de 2/3–1/3 a 1/3–2/3 y se queda el que deja menos hueco, contando lo
      que «Hace un año» puede recortar de su entradilla (hasta dos líneas). Si aun así los breves se quedan cortos,
-     se enseñan breves anteriores (con su fecha) hasta llenar, y abajo, en «Breves anteriores», no se repiten. */
-  var REPARTOS=[[2,1],[1.6,1],[1.3,1],[1,1],[1,1.3],[1,1.6],[1,2]];
+     se enseñan breves anteriores (con su fecha) hasta llenar, y abajo, en «Breves anteriores», no se repiten.
+     Si los breves son más altos que «Hace un año» incluso en 2/3, se prueba a estrecharlo más (hasta 2,8 a 1), que
+     así crece hacia abajo; van al final, para que solo se elijan cuando dejan claramente menos hueco. */
+  var REPARTOS=[[2,1],[1.6,1],[1.3,1],[1,1],[1,1.3],[1,1.6],[1,2],[2.4,1],[2.8,1]];
   function hueco(b,h){var bb=fondo(b),bh=fondo(h),es=h.querySelectorAll(ENT),e=es[es.length-1],red=0;
     if(e&&e.textContent.trim()){var lh=parseFloat(getComputedStyle(e).lineHeight)||24,n=Math.round(e.getBoundingClientRect().height/lh);red=Math.max(0,n-2)*lh;}
     return bb>bh?bb-bh:Math.max(0,bh-red-bb);}
