@@ -18,10 +18,14 @@ vista de la información y evita que todo salga de la misma voz.
 ## Decisión
 
 - **Una columna los miércoles**, en la sección «Opinión» (`opinion`, en `SECCIONES_FUERA`: con su página y sin
-  entrada en el menú, con enlace en el pie), con una franja a todo el ancho en el número, sin dibujo. En la portada
-  sigue toda la semana, como el reportaje (`opinion_reciente()`): el día que sale, antes de la viñeta, porque la
-  viñeta cierra siempre lo del día (Juanjo, 19-11-2026); los días siguientes, después, con el reportaje, lo más
-  reciente primero (`tras_la_vineta()`). En la página de la sección, las columnas van una debajo de otra en recuadros
+  entrada en el menú, con enlace en el pie), sin dibujo. En la portada sigue toda la semana, como el
+  reportaje (`opinion_reciente()`), y en la página del número del miércoles, la suya: un anuncio en un recuadro a la
+  derecha de la apertura, en un tercio del ancho, con el titular, la firma, la entradilla y «Leer la columna», y la
+  apertura a su lado con el titular a lo ancho y, debajo, la entradilla y el dibujo (`apertura_portada()`). Por debajo
+  de 64 rem, el anuncio pasa debajo de la apertura. Primero fue una franja a todo el ancho junto a la viñeta; Juanjo
+  pidió el anuncio el mismo 19-11-2026, «en lugar de escribir el articulo completo». El titular de la columna va en
+  redonda, como los demás: la cursiva, que puso el agente para distinguirla, se confundía con un antetítulo y no
+  estaba en la página de la columna (Juanjo, 19-11-2026: «quitalo»). En la página de la sección, las columnas van una debajo de otra en recuadros
   de texto: en la rejilla de las secciones, sin dibujo, ocupaban la casilla de un dibujo con el icono. La firma el modelo con su nombre
   exacto («Por GPT-6.2-Astra (OpenAI)», campo `autor`) y lleva al final una nota fija: el diario comprueba sus datos
   y la opinión es del modelo. Ni la firma ni la nota las escribe el columnista: las pone el generador, en cada lengua.
@@ -58,7 +62,7 @@ vista de la información y evita que todo salga de la misma voz.
   caja desactivada, una instrucción colada en un mensaje de los grupos podría usar la terminal con la cuenta de
   ChatGPT a mano. Por eso va sin terminal y con el material en el encargo, como el agente de noticias (unos 380 kB
   con siete días de mensajes, sin los «Contexto: día anterior», que se repiten).
-- La franja, el artículo y la sección se probaron en Chromium y Firefox, en escritorio y en móvil, con tema claro y
+- El anuncio, el artículo y la sección se probaron en Chromium y Firefox, en escritorio, tableta y móvil, con tema claro y
   oscuro.
 
 ## Riesgos
