@@ -1,4 +1,4 @@
-<!-- origen: 2856bceb652c83cb -->
+<!-- origen: 56f62be900e21585 -->
 # Libro do tradutor do Diario de IA Educativa
 
 Como se traduce o diario do castelán ao catalán, ao galego, ao éuscaro e ao inglés. Lérono todos os
@@ -28,7 +28,7 @@ igual en todas as linguas. Lese o apartado xeral e o da lingua de cada encargo.
 - **Ante unha dúbida, consúltase a obra de referencia da lingua** (no seu apartado) e non se resolve de
   memoria. Se unha obra non deixa ler, búscase a mesma resposta noutra da lista.
 - **O mesmo termo sempre**: o léxico da IA de cada lingua está fixado abaixo. Non se alternan
-  formas («xatbot» e «chatbot» no mesmo número).
+  formas («bot de conversa» e «chatbot» no mesmo número).
 - **O correcto non se corrixe**: se unha forma parece rara pero a recolle a norma, déixase.
 
 ## Catalán
@@ -37,8 +37,11 @@ igual en todas as linguas. Lese o apartado xeral e o da lingua de cada encargo.
 
 **Onde consultar**
 - [Optimot](https://aplicacions.llengua.gencat.cat/llc/AppJava/index.html): busca á vez no
-  dicionario do IEC, nas fichas de dúbidas e na terminoloxía do TERMCAT. É a vía para o TERMCAT,
-  cuxa web non deixa ler aos programas.
+  dicionario do IEC, nas fichas de dúbidas e na terminoloxía do TERMCAT.
+- A terminoloxía do TERMCAT, tamén coa ferramenta `buscar_termcat`: busca nos dicionarios que o TERMCAT
+  publica en aberto ([Terminologia oberta](https://www.termcat.cat/ca/terminologia-oberta): a Neoloteca, a de
+  intelixencia artificial, a de educación e a de produtos informáticos) e dá o termo catalán, os seus equivalentes e
+  a definición. Un termo normalizado manda sobre calquera outra forma.
 - [Diccionari de la llengua catalana (DIEC2)](https://dlc.iec.cat/), [Gramàtica (GIEC)](https://giec.iec.cat/)
   e [Ortografia](https://oiec.iec.cat/) do IEC.
 - [ésAdir](https://www.esadir.cat/) e o [Llibre d'estil de 3Cat](https://www.3cat.cat/llibredestil/):
@@ -58,7 +61,7 @@ igual en todas as linguas. Lese o apartado xeral e o da lingua de cada encargo.
   «aprenentatge automàtic», «al·lucinació», «codi obert», «aplicació».
 - *Prompt*: «indicació», o termo normalizado polo TERMCAT; a primeira vez, co inglés en cursiva
   entre parénteses: «una indicació (*prompt*)».
-- *Chatbot*: «xatbot».
+- *Chatbot*: «bot de conversa», o termo normalizado polo TERMCAT.
 
 **Calcos que non**: «en base a», «a nivell de». **Correctos, non se cambian**: «degut a», «sí que», «app».
 
