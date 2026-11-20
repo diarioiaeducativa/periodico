@@ -28,7 +28,7 @@ while read -r origen destino huella lengua; do
           -e "s|{TITULO}|$(python3 -c 'import sys, generar; print(generar.IDIOMAS[sys.argv[1]]["titulo"])' "$lengua")|g" > "encargos/pasos/$tmp.md"
   log "empieza $destino"
   sed '' "encargos/pasos/$tmp.md" | timeout 2400 claude -p --model "$SONNET" \
-    --permission-mode acceptEdits --allowedTools WebFetch WebSearch \
+    --permission-mode acceptEdits --mcp-config scripts/buscar-mcp.json --allowedTools WebFetch WebSearch mcp__diario \
     --disallowedTools "Bash" "Read(//home/**)" "Read(//proc/**)" "Read(//sitio/**)" "Read(//etc/**)" \
     --output-format text >> "$REG" 2>&1
   rm -f "encargos/pasos/$tmp.md"

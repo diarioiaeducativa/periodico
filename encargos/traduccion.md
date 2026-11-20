@@ -27,7 +27,7 @@ igual en todas las lenguas. Se lee el apartado general y el de la lengua de cada
 - **Ante una duda, se consulta la obra de referencia de la lengua** (en su apartado) y no se resuelve de
   memoria. Si una obra no deja leer, se busca la misma respuesta en otra de la lista.
 - **El mismo término siempre**: el léxico de la IA de cada lengua está fijado abajo. No se alternan
-  formas («xatbot» y «chatbot» en el mismo número).
+  formas («bot de conversa» y «chatbot» en el mismo número).
 - **Lo correcto no se corrige**: si una forma parece rara pero la recoge la norma, se deja.
 
 ## Catalán
@@ -36,8 +36,11 @@ igual en todas las lenguas. Se lee el apartado general y el de la lengua de cada
 
 **Dónde consultar**
 - [Optimot](https://aplicacions.llengua.gencat.cat/llc/AppJava/index.html): busca a la vez en el
-  diccionario del IEC, en las fichas de dudas y en la terminología del TERMCAT. Es la vía para el TERMCAT,
-  cuya web no deja leer a los programas.
+  diccionario del IEC, en las fichas de dudas y en la terminología del TERMCAT.
+- La terminología del TERMCAT, también con la herramienta `buscar_termcat`: busca en los diccionarios que el TERMCAT
+  publica en abierto ([Terminologia oberta](https://www.termcat.cat/ca/terminologia-oberta): la Neoloteca, la de
+  inteligencia artificial, la de educación y la de productos informáticos) y da el término catalán, sus equivalentes y
+  la definición. Un término normalizado manda sobre cualquier otra forma.
 - [Diccionari de la llengua catalana (DIEC2)](https://dlc.iec.cat/), [Gramàtica (GIEC)](https://giec.iec.cat/)
   y [Ortografia](https://oiec.iec.cat/) del IEC.
 - [ésAdir](https://www.esadir.cat/) y el [Llibre d'estil de 3Cat](https://www.3cat.cat/llibredestil/):
@@ -57,7 +60,7 @@ igual en todas las lenguas. Se lee el apartado general y el de la lengua de cada
   «aprenentatge automàtic», «al·lucinació», «codi obert», «aplicació».
 - *Prompt*: «indicació», el término normalizado por el TERMCAT; la primera vez, con el inglés en cursiva
   entre paréntesis: «una indicació (*prompt*)».
-- *Chatbot*: «xatbot».
+- *Chatbot*: «bot de conversa», el término normalizado por el TERMCAT.
 
 **Calcos que no**: «en base a», «a nivell de». **Correctos, no se cambian**: «degut a», «sí que», «app».
 

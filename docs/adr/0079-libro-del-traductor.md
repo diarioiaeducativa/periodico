@@ -2,6 +2,9 @@
 
 Fecha: 2026-11-16 · Estado: aceptado
 
+> El [ADR 0094](0094-la-terminologia-del-termcat-para-los-agentes.md) da a los agentes la terminología del TERMCAT
+> (sus diccionarios abiertos) y cambia «xatbot» por «bot de conversa», el término normalizado.
+
 ## Contexto
 
 Cada traductor recibía de `scripts/idiomas.py` una línea por lengua (la norma de la academia, cómo se

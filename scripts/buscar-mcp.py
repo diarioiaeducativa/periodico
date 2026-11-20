@@ -4,7 +4,8 @@
 entrada y la salida estándar, sin dependencias. Los agentes del diario no tienen consola (`Bash` está
 prohibido, porque leen mensajes de Telegram que escribe cualquiera); esta herramienta solo busca.
 
-Lo carga cada agente con `--mcp-config scripts/buscar-mcp.json`, y su permiso es `mcp__diario` (las tres herramientas).
+Lo carga cada agente con `--mcp-config scripts/buscar-mcp.json`, y su permiso es `mcp__diario` (todas las herramientas).
+«buscar_termcat» busca en los diccionarios abiertos del TERMCAT (ADR 0094, scripts/termcat.py).
 """
 import json
 import pathlib
@@ -13,6 +14,7 @@ import sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from buscar import buscar   # noqa: E402
 from buscar_mensajes import buscar_mensajes, contexto   # noqa: E402
+from termcat import buscar as buscar_termcat   # noqa: E402
 
 HERRAMIENTA = {
     "name": "buscar",
@@ -72,6 +74,26 @@ CONTEXTO = {
 }
 
 
+TERMCAT = {
+    "name": "buscar_termcat",
+    "description": (
+        "Busca un término en la terminología del TERMCAT, el centro de terminología de la lengua catalana: la Neoloteca "
+        "(los términos que ha normalizado su Consell Supervisor) y sus diccionarios de inteligencia artificial, de "
+        "educación y de productos informáticos, descargados de su web en abierto. Se le da la palabra en inglés, en "
+        "castellano o en catalán («prompt», «chatbot», «alucinación») y devuelve el término catalán, si está "
+        "normalizado, sus sinónimos, los equivalentes en otras lenguas y la definición. Úsalo al traducir o escribir en "
+        "catalán un término técnico: un término normalizado manda sobre cualquier otra forma. Si no sale, el Optimot."),
+    "inputSchema": {
+        "type": "object",
+        "properties": {
+            "palabras": {"type": "string", "description": "El término que se busca, en inglés, castellano o catalán."},
+            "maximo": {"type": "integer", "description": "Cuántas fichas, 8 por omisión."},
+        },
+        "required": ["palabras"],
+    },
+}
+
+
 def responde(mid, resultado=None, error=None):
     m = {"jsonrpc": "2.0", "id": mid}
     m.update({"error": error} if error else {"result": resultado})
@@ -92,13 +114,15 @@ for linea in sys.stdin:
         responde(mid, {"protocolVersion": version, "capabilities": {"tools": {}},
                        "serverInfo": {"name": "diario", "version": "1.0.0"}})
     elif metodo == "tools/list":
-        responde(mid, {"tools": [HERRAMIENTA, MENSAJES, CONTEXTO]})
+        responde(mid, {"tools": [HERRAMIENTA, MENSAJES, CONTEXTO, TERMCAT]})
     elif metodo == "tools/call":
         par = msg.get("params") or {}
         a, nombre = par.get("arguments") or {}, par.get("name")
         try:
             if nombre == "contexto_mensaje":
                 texto = contexto(a.get("mensaje") or "")
+            elif nombre == "buscar_termcat":
+                texto = buscar_termcat(a.get("palabras") or "", int(a.get("maximo") or 8))
             elif not a.get("palabras") and not a.get("parecidas"):
                 raise ValueError("Falta qué buscar: «palabras» o «parecidas».")
             elif nombre == "buscar_mensajes":

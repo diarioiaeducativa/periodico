@@ -159,6 +159,8 @@ estado_preparar=$?
 # El índice de los mensajes de los grupos, entero (ADR 0061): recoge también los editados. Cada consulta añade
 # después los nuevos, así que si falla los agentes buscan igual en el de la noche anterior.
 DATOS_BOT="$DATOS" python3 scripts/buscar_mensajes.py --indexar >> "$REG" 2>&1 || log "AVISO: no se pudo rehacer el índice de los mensajes; queda el anterior"
+# La terminología del TERMCAT para los agentes (ADR 0094): se vuelve a bajar cada 30 días; si falla, queda la anterior
+python3 scripts/termcat.py descargar --si-toca >> "$REG" 2>&1 || log "AVISO: no se pudo poner al día la terminología del TERMCAT; queda la anterior"
 case $estado_preparar in
   0) ;;
   3) log "ningún mensaje en ningún grupo"

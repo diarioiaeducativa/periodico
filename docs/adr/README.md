@@ -95,5 +95,6 @@
 | [0091](0091-horas-con-su-huso.md) | Las horas, con su huso |
 | [0092](0092-columna-de-opinion-de-un-modelo-de-otra-casa.md) | La columna de opinión de los miércoles, escrita por un modelo de otra casa |
 | [0093](0093-las-instrucciones-de-los-agentes-como-paginas.md) | Las instrucciones de los agentes, como páginas del diario y listadas en el libro de estilo |
+| [0094](0094-la-terminologia-del-termcat-para-los-agentes.md) | La terminología del TERMCAT, al alcance de los agentes |
 
 Plantilla: [0000-plantilla.md](0000-plantilla.md). Para crear uno: `nuevo-adr "Título"`.

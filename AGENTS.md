@@ -40,7 +40,9 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
   no en cada guía. Cada guía sale además como página del diario (`guia-<nombre>.html`, solo en castellano, ADR 0093),
   y su lista, en la página del libro de estilo, la añade `generar.py`: no se escribe en `estilo.md`.
 - **El libro del traductor es `encargos/traduccion.md`** (ADR 0079): norma, obras de consulta, formatos y vocabulario
-  de la IA de cada lengua. Una forma nueva de una lengua se fija allí.
+  de la IA de cada lengua. Una forma nueva de una lengua se fija allí. La terminología del TERMCAT, por sus
+  diccionarios abiertos (el Cercaterm tiene una protección contra robots que no se salta): `scripts/termcat.py`, que
+  `noche.sh` pone al día cada 30 días, y la herramienta `buscar_termcat` de los agentes (ADR 0094).
 - **Las tres normas públicas, en cada lengua** (ADR 0085): el original es el castellano; la traducción, en
   `docs/traducciones/<lengua>/`. **Quien cambie un original lo traduce en el mismo trabajo** (Juanjo, 19-11-2026):
   `scripts/normas-traducir.sh` en el contenedor, `generar.py` y publicar la web, subiendo también

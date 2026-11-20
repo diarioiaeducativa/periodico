@@ -2,6 +2,9 @@
 
 Fecha: 2026-11-14 · Estado: aceptado
 
+> El [ADR 0094](0094-la-terminologia-del-termcat-para-los-agentes.md) añade al servidor la herramienta
+> `buscar_termcat`.
+
 ## Contexto
 
 Los agentes que escriben y revisan el diario sabían qué se había publicado por `publicado.txt`, que solo
