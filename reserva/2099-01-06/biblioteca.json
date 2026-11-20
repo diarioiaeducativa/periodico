@@ -1,0 +1,9 @@
+{
+ "fecha": "2099-01-06",
+ "piezas": [],
+ "descartado": [
+  "mensaje 50331: INTEF, Orientaciones sobre herramientas digitales y protección de datos, v3.0 (junio de 2026, noticia del INTEF del 13-07-2026). Sigue vigente (es la última versión, sustituye a la de 2024), pero no se pudo leer el documento: el PDF oficial (intef.es/wp-content/uploads/2026/07/Orientaciones_sobre_el_uso_de_herramientas_digital.pdf) llegó como bytes comprimidos sin texto extraíble, y la entrada solo trae el enlace a la noticia. La noticia da la cifra (1.144 herramientas frente a 627), el modelo de evaluación y el apartado de accesibilidad, pero no su contenido ni sus criterios; una búsqueda posterior no halló otra fuente que los describa. Con eso no hay artículo de 400 a 700 palabras sin inventar. Merece reintentarse si se consigue el texto del PDF.",
+  "mensaje 50894: Molina (2025), El tiempo frente a la pantalla en la educación infantil, Banco Mundial. La entrada solo trae la ficha (sin enlace oficial ni texto) y no se localizó ni leyó el documento en su fuente; no se puede comprobar que siga siendo la edición vigente ni escribir sobre su contenido.",
+  "mensaje 53159: Mark Anderson, Pedagogy First, Technology Second. Vigente (el sitio lo declara recurso fijo, © 2026, sin edición nueva; 144 estrategias en seis áreas; guía de 35 páginas CC BY-NC-ND 4.0), pero solo se pudo leer la página de presentación, no la guía ni las estrategias, y no es un documento sobre IA: la página y la ficha no bastan para un artículo digno que diga algo más que la ficha."
+ ]
+}

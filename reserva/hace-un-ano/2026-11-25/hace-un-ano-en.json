@@ -1,0 +1,24 @@
+{"fecha": "2026-11-25", "hay_pieza": true,
+ "piezas": [{"id": "gemini-marca-agua-visible-ajuste",
+   "ilustracion_alt": "Diptych of two identical images. On the left, “Nov. 2025”: an image with a visible star in the corner and a padlock, labelled “Ultra only”. On the right, “Today”: the same image with the star crossed out in blue and a switched-on toggle, labelled “One setting”.",
+   "seccion": "hace-un-ano", "importancia": 3,
+   "grupo": "chatgpt", "fecha_original": "2025-11-26",
+   "antetitulo": "Watermarks",
+   "titular": "Removing Gemini’s visible watermark was a paid perk; a year on, it takes one setting",
+   "entradilla": "In November 2025 it was surprising that Google let some subscribers remove the mark that flags their images as AI-generated. Since August 2026, almost any user can switch it off; the invisible mark stays.",
+   "cuerpo": [
+     "On 26 November 2025, in ChatGPT-IA-edu, people were surprised that Google’s paid plans allowed the visible watermark to be removed from Gemini images, when the company itself championed [SynthID](https://deepmind.google/models/synthid/), the invisible mark it uses to identify what its models generate. According to the [Nano Banana Pro announcement](https://blog.google/technology/ai/nano-banana-pro/), of 20 November, the visible star disappeared only for Google AI Ultra subscribers; the invisible one stayed on everything.",
+     "A year later, that privilege is just another setting. Since August 2026, according to [Search Engine Journal](https://www.searchenginejournal.com/google-lets-you-turn-off-visible-watermarks-in-gemini/586145/) and the [Gemini Help page](https://support.google.com/gemini/answer/17405358?hl=es), users in most countries can switch the visible mark on or off for images, videos and music in the settings; in South Korea, India and Vietnam, only with AI Ultra. SynthID and content credentials (C2PA, metadata that indicates a file’s origin) always remain.",
+     "For the classroom, the consequence is clear: an image without the star no longer signals its origin at a glance. Gemini can [check whether a file carries SynthID](https://support.google.com/gemini/answer/16722517?hl=es); in November 2025 it did so only for images, and it now covers video and audio, although it only recognises what was created with Google’s tools."
+   ],
+   "fuentes": [
+     {"titulo": "Gestionar los ajustes de marca de agua en las aplicaciones de Gemini (Gemini Help, in Spanish)", "url": "https://support.google.com/gemini/answer/17405358?hl=es"},
+     {"titulo": "Verificar imágenes, vídeos y audio generados por IA (Gemini Help, in Spanish)", "url": "https://support.google.com/gemini/answer/16722517?hl=es"},
+     {"titulo": "Introducing Nano Banana Pro (Google, 20-11-2025)", "url": "https://blog.google/technology/ai/nano-banana-pro/"},
+     {"titulo": "How we’re bringing AI image verification to the Gemini app (Google, 20-11-2025)", "url": "https://blog.google/innovation-and-ai/products/ai-image-verification-gemini-app/"},
+     {"titulo": "Google Lets You Turn Off Visible Watermarks In Gemini (Search Engine Journal)", "url": "https://www.searchenginejournal.com/google-lets-you-turn-off-visible-watermarks-in-gemini/586145/"},
+     {"titulo": "SynthID (Google DeepMind)", "url": "https://deepmind.google/models/synthid/"}
+   ],
+   "mensaje": {"grupo": "chatgpt", "id": 42839},
+   "comprobado": "Mensaje 42839 de ChatGPT-IA-edu (embed de Telegram, 26-11-2025): dice que los planes de pago de Google permiten desactivar las marcas de agua. Anuncio de Nano Banana Pro (blog.google, 20-11-2025): marca visible mantenida en usuarios gratuitos y de Google AI Pro, retirada en Google AI Ultra; SynthID en todo. Anuncio de la verificación en Gemini (20-11-2025): solo imágenes, vídeo y audio como ampliación futura. Ayuda de Gemini 17405358 (es): ajuste de la marca visible para imágenes, vídeo y música; en Corea del Sur, la India y Vietnam solo con AI Ultra; SynthID y C2PA no se ven afectados (sin fecha en la página). Search Engine Journal (artículo del 17-08-2026): anuncio de Josh Woodward en X un viernes de agosto; Google no publica lista de países y el ajuste no aparece donde la ley exige marca visible. Ayuda 16722517 (es): verificación de imagen, vídeo y audio; solo reconoce contenido de herramientas de Google. DeepMind: SynthID es marca imperceptible. No se afirma nada sobre la UE ni la Ley de IA. Medida: 224 palabras con la entradilla.",
+   "repaso": "Cuerpo: «cada usuario» pasa a «los usuarios de la mayoría de los países» (Google no da lista y el ajuste no sale donde la ley exige la marca) y se atribuye el cambio de agosto a Search Engine Journal y a la ayuda, porque la ayuda no lleva fecha; «no dice nada de su origen» pasa a «ya no avisa a simple vista de su origen» (los metadatos C2PA siguen). Mensaje, fechas, fuentes y contraste comprobados; sin repetición con lo ya contado."}]}

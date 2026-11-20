@@ -1,0 +1,49 @@
+{
+  "fecha": "2099-01-07",
+  "piezas": [
+    {
+      "id": "mecanografia-app",
+      "seccion": "vibecoding",
+      "repositorio": "fondo",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Biltegiaren fondotik",
+      "titular": "Teklatuarekin idazteko joko bat mekanografia praktikatzeko, gaztelaniaz eta katalanez",
+      "entradilla": "Juan José de Harok sortutako Mecanografía Appek teklatuko praktika nabigatzaileko partida bihurtzen du, abiadura- eta zehaztasun-markagailuekin eta irakasleak alda dezakeen hiztegiarekin.",
+      "cuerpo": [
+        "Mecanografía App, irekitzean KeyBlitz izenarekin aurkezten dena, teklatuarekin idazten trebatzeko joko bat da. Juan José de Harok sortu zuen, eta [Creative Commons BY-SA](https://creativecommons.org/licenses/by-sa/4.0/deed.es) lizentziarekin partekatzen du. Biltegiko fitxaren arabera, [Grok](https://grok.com/)en laguntzaz egin zuen, eta Lehen Hezkuntzarako, Derrigorrezko Bigarren Hezkuntzarako, Batxilergorako eta helduen autoikaskuntzarako egokia da.",
+        "Pantaila sinplea da. Goian lau markagailu ikusten dira: puntuazioa (zehaztasuna eta abiadura konbinatzen dituena), maila, minutuko hitzak eta zehaztasun-ehunekoa. Behean testu-koadro bat dago, «Escribe aquí…», eta Configuración, Iniciar, Pausar, Cargar palabras eta Reiniciar botoiak. Ideia da partidan agertzen diren hitzak koadro horretan idaztea; markagailuek abiadura eta akatsak jasotzen dituzte.",
+        "Gelarako erabilgarriena hiztegia itxia ez izatea da. «Cargar palabras» aukerarekin irakasleak testu bat itsats dezake edo fitxategi bat aukeratu, eta aplikazioak hitz bereziak ateratzen ditu handik. Horrela, unitate bateko lexikoarekin, ikasgai bateko terminoekin edo irakurtzen ari den testu batekin praktika daiteke. Configuración atalean abiadura, zailtasuna (erraza, ertaina edo zaila), soinua eta hizkuntza doitzen dira; hizkuntza gaztelania edo katalana izan daiteke.",
+        "Komeni da ikusten dena eta ikusten ez dena argitzea. Fitxak ikasgai egituratuez, ariketez eta teklatuaren banaketari buruzko probez hitz egiten du; orria irekitzean, ordea, mailak dituen praktika-joko bat agertzen da, ikusgai dagoen gidatutako ikasgairik gabe. Horregatik, mekanografia-ikastaro oso gisa baino hobeto egokitzen da minutu gutxiko entrenamendu erregular gisa, itsu-itsuan idaztea sendotzeko.",
+        "Nabigatzailean zuzenean erabiltzen da, ezer deskargatu gabe, eta orriak ez du konturik eskatzen. Ez du zehazten puntuazioak edo doikuntzak gordetzen dituen ere. Oinean egiletza («Aplicación hecha por Juan José de Haro») eta lizentziarako esteka ageri dira; lizentziak berrerabiltzea eta egokitzea baimentzen du, egiletza aitortu eta berdin partekatzen bada."
+      ],
+      "recursos": [
+        {
+          "id": "mecanografia-app",
+          "titulo": "Mecanografía App",
+          "autoria": "Juanjo de Haro",
+          "url": "https://bilateria.org/app/mecanografia/mecanografia-app.html",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://bilateria.org/app/mecanografia/mecanografia-app.html",
+          "licencia": "Creative Commons BY-SA (Aitorpena-PartekatuBerdin)",
+          "captura": "2099-01-07-mecanografia-app.jpg",
+          "captura_alt": "Joko-pantaila, atzealde urdin ilunarekin, oraindik hasi gabe: goian puntuazio, maila, minutuko hitzak eta zehaztasun markagailuak; behean «Escribe aquí…» koadroa eta Configuración, Iniciar, Pausar, Cargar palabras eta Reiniciar botoiak.",
+          "texto": []
+        }
+      ],
+      "fuentes": [
+        {"titulo": "Mecanografía App (KeyBlitz) (gaztelaniaz eta katalanez)", "url": "https://bilateria.org/app/mecanografia/mecanografia-app.html"},
+        {"titulo": "Creative Commons BY-SA 4.0 (gaztelaniaz)", "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.es"},
+        {"titulo": "Grok", "url": "https://grok.com/"}
+      ],
+      "comprobado": "Vista la captura (marcadores, cuadro de escritura y botones, partida sin empezar: no se ven palabras cayendo) y abierta la página con WebFetch (que no ejecuta JavaScript pero describió configuración, carga de palabras, autoría y licencia). Idiomas castellano y catalán confirmados en Configuración y en la ficha. Abierta la licencia CC BY-SA 4.0. No se ve en la página que las palabras caigan ni lecciones o tests de la ficha; no se ha jugado una partida. La entrada no trae mensaje de presentación; «Grok» y los niveles recomendados son de la ficha. Sin enlaces a lo ya publicado: no hay nada en publicado.txt sobre este recurso."
+    }
+  ],
+  "descartado": [],
+  "repaso": [
+    "Titular y entradilla: quitado «palabras que caen» y «antes de que llegue abajo», que no se ven en la captura ni en la página (la partida aparece sin empezar).",
+    "Autoría en el texto: «Juan José de Haro», como consta en el propio recurso (y coherente con el pie citado); «autoria» se deja como en la ficha.",
+    "Quitado «para quien empieza y para quien quiere ganar soltura» (relativo «quien» y no confirmado) y «cuanto más rápido… más nivel» (no comprobado).",
+    "Grok y los niveles recomendados, atribuidos a la ficha; enlazados Creative Commons BY-SA y Grok en su primera mención y añadidos a fuentes.",
+    "captura_alt: indica que la partida aún no ha empezado."
+  ]
+}

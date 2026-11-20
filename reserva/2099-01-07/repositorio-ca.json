@@ -1,0 +1,49 @@
+{
+  "fecha": "2099-01-07",
+  "piezas": [
+    {
+      "id": "mecanografia-app",
+      "seccion": "vibecoding",
+      "repositorio": "fondo",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Del fons del repositori",
+      "titular": "Un joc d'escriptura amb teclat per practicar mecanografia, en castellà i en català",
+      "entradilla": "Mecanografía App, creada per Juan José de Haro, converteix la pràctica del teclat en una partida al navegador, amb marcadors de velocitat i precisió i un vocabulari que el docent pot canviar.",
+      "cuerpo": [
+        "Mecanografía App, que en obrir-se es presenta com a KeyBlitz, és un joc per entrenar l'escriptura amb teclat. L'ha creat Juan José de Haro i el comparteix amb llicència [Creative Commons BY-SA](https://creativecommons.org/licenses/by-sa/4.0/deed.es). Segons la fitxa del repositori, el va fer amb l'ajuda de [Grok](https://grok.com/) i és adequat per a primària, secundària, batxillerat i també per a l'autoaprenentatge de persones adultes.",
+        "La pantalla és senzilla. A dalt es veuen quatre marcadors: la puntuació (que combina precisió i velocitat), el nivell, les paraules per minut i el percentatge de precisió. A baix hi ha un quadre de text, «Escribe aquí…», i els botons Configuración, Iniciar, Pausar, Cargar palabras i Reiniciar. La idea és escriure en aquest quadre les paraules que van apareixent a la partida; els marcadors recullen la velocitat i els errors.",
+        "El més útil per a la classe és que el vocabulari no està tancat. Amb «Cargar palabras» el docent pot enganxar un text o triar un arxiu, i l'aplicació n'extreu les paraules diferents. Així es pot practicar amb el lèxic d'una unitat, amb termes d'una matèria o amb un text que s'estigui llegint. A Configuración s'ajusten la velocitat, la dificultat (fàcil, mitjana o difícil), el so i la llengua, que pot ser castellà o català.",
+        "Convé precisar què es veu i què no. La fitxa parla de lliçons estructurades, exercicis i tests sobre la disposició del teclat; en obrir la pàgina, el que apareix és un joc de pràctica amb nivells, sense lliçons guiades visibles. Per això encaixa millor com a entrenament regular de pocs minuts, per consolidar l'escriptura a cegues, que no pas com a curs complet de mecanografia.",
+        "Es fa servir directament al navegador, sense descarregar res, i la pàgina no demana compte. Tampoc no indica si desa les puntuacions o els ajustos. Al peu hi figuren l'autoria («Aplicación hecha por Juan José de Haro») i l'enllaç a la llicència, que permet reutilitzar-la i adaptar-la sempre que se'n reconegui l'autoria i es comparteixi igual."
+      ],
+      "recursos": [
+        {
+          "id": "mecanografia-app",
+          "titulo": "Mecanografía App",
+          "autoria": "Juanjo de Haro",
+          "url": "https://bilateria.org/app/mecanografia/mecanografia-app.html",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://bilateria.org/app/mecanografia/mecanografia-app.html",
+          "licencia": "Creative Commons BY-SA (Reconeixement-CompartirIgual)",
+          "captura": "2099-01-07-mecanografia-app.jpg",
+          "captura_alt": "Pantalla del joc amb fons blau fosc, encara sense començar: a dalt els marcadors de puntuació, nivell, paraules per minut i precisió; a baix el quadre «Escribe aquí…» i els botons Configuración, Iniciar, Pausar, Cargar palabras i Reiniciar.",
+          "texto": []
+        }
+      ],
+      "fuentes": [
+        {"titulo": "Mecanografía App (KeyBlitz)", "url": "https://bilateria.org/app/mecanografia/mecanografia-app.html"},
+        {"titulo": "Creative Commons BY-SA 4.0 (en castellà)", "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.es"},
+        {"titulo": "Grok", "url": "https://grok.com/"}
+      ],
+      "comprobado": "Vista la captura (marcadores, cuadro de escritura y botones, partida sin empezar: no se ven palabras cayendo) y abierta la página con WebFetch (que no ejecuta JavaScript pero describió configuración, carga de palabras, autoría y licencia). Idiomas castellano y catalán confirmados en Configuración y en la ficha. Abierta la licencia CC BY-SA 4.0. No se ve en la página que las palabras caigan ni lecciones o tests de la ficha; no se ha jugado una partida. La entrada no trae mensaje de presentación; «Grok» y los niveles recomendados son de la ficha. Sin enlaces a lo ya publicado: no hay nada en publicado.txt sobre este recurso."
+    }
+  ],
+  "descartado": [],
+  "repaso": [
+    "Titular y entradilla: quitado «palabras que caen» y «antes de que llegue abajo», que no se ven en la captura ni en la página (la partida aparece sin empezar).",
+    "Autoría en el texto: «Juan José de Haro», como consta en el propio recurso (y coherente con el pie citado); «autoria» se deja como en la ficha.",
+    "Quitado «para quien empieza y para quien quiere ganar soltura» (relativo «quien» y no confirmado) y «cuanto más rápido… más nivel» (no comprobado).",
+    "Grok y los niveles recomendados, atribuidos a la ficha; enlazados Creative Commons BY-SA y Grok en su primera mención y añadidos a fuentes.",
+    "captura_alt: indica que la partida aún no ha empezado."
+  ]
+}

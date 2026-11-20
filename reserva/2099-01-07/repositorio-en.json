@@ -1,0 +1,49 @@
+{
+  "fecha": "2099-01-07",
+  "piezas": [
+    {
+      "id": "mecanografia-app",
+      "seccion": "vibecoding",
+      "repositorio": "fondo",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "From the repository's back catalogue",
+      "titular": "A keyboard typing game for practising touch typing, in Spanish and Catalan",
+      "entradilla": "Mecanografía App, created by Juan José de Haro, turns keyboard practice into a game in the browser, with speed and accuracy scores and vocabulary that teachers can change.",
+      "cuerpo": [
+        "Mecanografía App, which presents itself as KeyBlitz when opened, is a game for training keyboard typing. It was created by Juan José de Haro, who shares it under a [Creative Commons BY-SA](https://creativecommons.org/licenses/by-sa/4.0/deed.es) licence. According to the repository's description of the entry, he made it with the help of [Grok](https://grok.com/) and it is suitable for primary school, secondary school (ESO), Bachillerato (the final two years of secondary school, ages 16 to 18) and also for adults teaching themselves.",
+        "The screen is simple. Across the top are four counters: the score (which combines accuracy and speed), the level, words per minute and the accuracy percentage. Below is a text box, “Escribe aquí…” (“Write here…”), and the buttons “Configuración” (settings), “Iniciar” (start), “Pausar” (pause), “Cargar palabras” (load words) and “Reiniciar” (restart). The idea is to type into that box the words that appear during the game; the counters record speed and mistakes.",
+        "What is most useful for the classroom is that the vocabulary is not fixed. With “Cargar palabras”, teachers can paste in a text or choose a file, and the app extracts the distinct words from it. That makes it possible to practise with the vocabulary of a unit, with the terms of a subject or with a text the class is reading. In “Configuración” you can adjust the speed, the difficulty (easy, medium or hard), the sound and the language, which can be Spanish or Catalan.",
+        "It is worth being precise about what can and cannot be seen. The repository's description mentions structured lessons, exercises and tests on the keyboard layout; when the page is opened, what appears is a practice game with levels, with no guided lessons visible. For that reason it works better as regular training for a few minutes, to consolidate touch typing, than as a complete typing course.",
+        "It is used directly in the browser, with nothing to download, and the page does not ask for an account. Nor does it say whether it saves scores or settings. At the bottom are the credit (“Aplicación hecha por Juan José de Haro”, “App made by Juan José de Haro”) and the link to the licence, which allows it to be reused and adapted as long as the author is credited and it is shared on the same terms."
+      ],
+      "recursos": [
+        {
+          "id": "mecanografia-app",
+          "titulo": "Mecanografía App",
+          "autoria": "Juanjo de Haro",
+          "url": "https://bilateria.org/app/mecanografia/mecanografia-app.html",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://bilateria.org/app/mecanografia/mecanografia-app.html",
+          "licencia": "Creative Commons BY-SA (Attribution-ShareAlike)",
+          "captura": "2099-01-07-mecanografia-app.jpg",
+          "captura_alt": "Screen of the game on a dark blue background, not yet started: at the top the counters for score, level, words per minute and accuracy; below, the “Escribe aquí…” (“Write here…”) box and the buttons Configuración, Iniciar, Pausar, Cargar palabras and Reiniciar.",
+          "texto": []
+        }
+      ],
+      "fuentes": [
+        {"titulo": "Mecanografía App (KeyBlitz) (in Spanish)", "url": "https://bilateria.org/app/mecanografia/mecanografia-app.html"},
+        {"titulo": "Creative Commons BY-SA 4.0 (in Spanish)", "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.es"},
+        {"titulo": "Grok", "url": "https://grok.com/"}
+      ],
+      "comprobado": "Vista la captura (marcadores, cuadro de escritura y botones, partida sin empezar: no se ven palabras cayendo) y abierta la página con WebFetch (que no ejecuta JavaScript pero describió configuración, carga de palabras, autoría y licencia). Idiomas castellano y catalán confirmados en Configuración y en la ficha. Abierta la licencia CC BY-SA 4.0. No se ve en la página que las palabras caigan ni lecciones o tests de la ficha; no se ha jugado una partida. La entrada no trae mensaje de presentación; «Grok» y los niveles recomendados son de la ficha. Sin enlaces a lo ya publicado: no hay nada en publicado.txt sobre este recurso."
+    }
+  ],
+  "descartado": [],
+  "repaso": [
+    "Titular y entradilla: quitado «palabras que caen» y «antes de que llegue abajo», que no se ven en la captura ni en la página (la partida aparece sin empezar).",
+    "Autoría en el texto: «Juan José de Haro», como consta en el propio recurso (y coherente con el pie citado); «autoria» se deja como en la ficha.",
+    "Quitado «para quien empieza y para quien quiere ganar soltura» (relativo «quien» y no confirmado) y «cuanto más rápido… más nivel» (no comprobado).",
+    "Grok y los niveles recomendados, atribuidos a la ficha; enlazados Creative Commons BY-SA y Grok en su primera mención y añadidos a fuentes.",
+    "captura_alt: indica que la partida aún no ha empezado."
+  ]
+}
