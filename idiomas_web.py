@@ -122,8 +122,8 @@ GL = {
         "dentro_titulo": 'O diario por dentro',
         "dentro_intro": 'Todo o que explica como funciona o diario, para as persoas que queiran coñecelo a fondo. A versión breve está en «A redacción».',
         "instrucciones_titulo": 'As instrucións de cada axente',
-        "instrucciones_texto": 'Cada axente traballa cunhas instrucións escritas, que son públicas en {carpeta} (en castelán). As de cada un:',
-        "instrucciones_carpeta": 'o repositorio da redacción',
+        "instrucciones_texto": 'Cada axente traballa cunhas instrucións escritas, que son públicas no {carpeta} (en castelán). As de cada un:',
+        "instrucciones_carpeta": 'repositorio da redacción',
         "secciones": [
             ("Que fai a intelixencia artificial e que fan os programas", "A intelixencia artificial fai o que esixe ler, escribir ou xulgar. O que segue regras fixas fano programas correntes, sen intelixencia artificial: recoller as mensaxes, medir os debuxos, debuxar a viñeta a partir do seu guión, montar a web e os vídeos, compoñer a súa música e publicalo todo á súa hora na web e nas redes."),
             ("O que se comproba", "Os grupos din de que se fala; cada dato compróbase fóra, na súa fonte orixinal (o anuncio oficial, a web do produto, o documento da administración), ligada onde o artigo a nomea e, todas xuntas, ao final. Dunha aplicación compróbase o que di a súa web, non que funcione. Aínda así pode haber erros. Esta edición é unha tradución automática da castelá, sen revisión profesional."),

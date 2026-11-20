@@ -317,8 +317,8 @@ IDIOMAS = {
             "dentro_titulo": 'El diari per dins',
             "dentro_intro": 'Tot el que explica com funciona el diari, per a les persones que el vulguin conèixer a fons. La versió breu és a «La redacció».',
             "instrucciones_titulo": 'Les instruccions de cada agent',
-            "instrucciones_texto": 'Cada agent treballa amb unes instruccions escrites, que són públiques a {carpeta} (en castellà). Les de cadascun:',
-            "instrucciones_carpeta": 'el repositori de la redacció',
+            "instrucciones_texto": 'Cada agent treballa amb unes instruccions escrites, que són públiques al {carpeta} (en castellà). Les de cadascun:',
+            "instrucciones_carpeta": 'repositori de la redacció',
             "secciones": [
                 ("Què fa la intel·ligència artificial i què fan els programes", "La intel·ligència artificial fa el que demana llegir, escriure o jutjar. El que segueix regles fixes ho fan programes corrents, sense intel·ligència artificial: recollir els missatges, mesurar els dibuixos, dibuixar la vinyeta a partir del guió, muntar el web i els vídeos, compondre'n la música i publicar-ho tot a l'hora al web i a les xarxes."),
                 ("El que es comprova", "Els grups diuen de què es parla; cada dada es comprova fora, a la seva font original (l'anunci oficial, el web del producte, el document de l'administració), enllaçada on l'article l'anomena i, totes juntes, al final. D'una aplicació es comprova el que diu el seu web, no que funcioni. Tot i així hi pot haver errors. Aquesta edició és una traducció automàtica de la castellana, sense revisió professional."),
@@ -2849,6 +2849,17 @@ ICONOS_IDEAS = [
 ]
 
 
+def guias_html(R):
+    """Las instrucciones de cada agente, en el repositorio (y la del traductor, su libro, en el diario): en «El diario
+    por dentro» y en la página del libro de estilo, de la misma lista (ADR 0093)."""
+    roles = [rol for rol, texto in R["equipo"] if texto is not None]
+    paginas = {v: k for k, v in DOCUMENTOS.items()}
+    items = "".join(f'<li><a href="{doc_href(g if g.endswith(".html") else paginas[g])}">{rol}</a></li>'
+                    for rol, g in zip(roles, GUIAS_AGENTES))
+    return (f'<p>{R["instrucciones_texto"].format(carpeta=enlace(CODIGO + "/tree/main/encargos", R["instrucciones_carpeta"]))}</p>'
+            f'<ul class="red-guias">{items}</ul>')
+
+
 def redaccion_enlaces(R):
     """Los enlaces que usan los textos de «La redacción» y de «El diario por dentro»."""
     raiz = "../" * L["carpeta"].count("/")   # las normas solo están en castellano, en la raíz (ADR 0081)
@@ -2980,14 +2991,7 @@ def pagina_dentro(eds):
                   f'<h2 id="privacidad">{t}</h2>' if "{pagina_privacidad}" in x else
                   f'<h2 id="contacto">{t}</h2>' if "{pagina_contacto}" in x else f"<h2>{t}</h2>") + f"<p>{x.format(**grupos)}</p>"
                  for t, x in R["secciones"]]
-    # Las instrucciones de cada agente, en el repositorio (y la del traductor, su libro, en el diario)
-    roles = [rol for rol, texto in R["equipo"] if texto is not None]
-    items = "".join(f'<li><a href="{raiz}{g}">{rol}</a></li>' if g.endswith(".html") else
-                    f'<li>{enlace(CODIGO + "/blob/main/" + g, rol)}</li>'
-                    for rol, g in zip(roles, GUIAS_AGENTES))
-    apartados.append(f'<h2 id="instrucciones">{R["instrucciones_titulo"]}</h2>'
-                     f'<p>{R["instrucciones_texto"].format(carpeta=enlace(CODIGO + "/tree/main/encargos", R["instrucciones_carpeta"]))}</p>'
-                     f'<ul class="red-guias">{items}</ul>')
+    apartados.append(f'<h2 id="instrucciones">{R["instrucciones_titulo"]}</h2>{guias_html(R)}')
     bloques = [list(b) for b in BLOQUES_DENTRO]
     usados = {i for b in bloques for i in b}
     bloques.append([i for i in range(len(apartados)) if i not in usados])
@@ -3072,6 +3076,13 @@ def pagina_privacidad(eds):
 # cambian solas al cambiar el documento. Solo en castellano: las ediciones traducidas las enlazan diciéndolo.
 DOCUMENTOS = {"normas.html": "docs/como-se-hace.md", "estilo.html": "encargos/estilo.md",
               "traduccion.html": "encargos/traduccion.md"}
+# Las instrucciones de los agentes, también como páginas (ADR 0093): todas las guías de `encargos/` y los encargos de
+# paso de los agentes que no tienen guía propia. Solo en castellano, mientras cambian tanto: no se traducen.
+GUIAS_PAGINAS = {f"guia-{pathlib.Path(g).stem}.html": g for g in
+                 sorted(str(f.relative_to(RAIZ)) for f in (RAIZ / "encargos").glob("*.md")
+                        if f.name not in ("estilo.md", "traduccion.md")) +
+                 [g for g in GUIAS_AGENTES if g.startswith("encargos/pasos/")]}
+DOCUMENTOS.update(GUIAS_PAGINAS)
 
 
 MARCA_CASTELLANO = {"ca": "(en castellà)", "gl": "(en castelán)", "eu": "(gaztelaniaz)", "en": "(in Spanish)"}
@@ -3085,6 +3096,8 @@ def doc_traduccion(ruta, codigo):
     """La traducción de una de las normas a esa lengua, si es de la versión actual del original (ADR 0085)."""
     if codigo == "es":
         return DOCUMENTOS[ruta]
+    if ruta in GUIAS_PAGINAS:
+        return None
     origen = DOCUMENTOS[ruta]
     f = RAIZ / "docs" / "traducciones" / codigo / pathlib.Path(origen).name
     if not f.exists():
@@ -3139,7 +3152,8 @@ def doc_codigo(c, origen):
     """Un archivo o una carpeta del repositorio citado en el texto (`encargos/enlaces.md`, `encargos/`): se puede abrir
     al pulsarlo, en otra pestaña, y la carpeta se nombra sin la barra final. Lo demás (`pieza:…`) queda como código."""
     ruta = next((r for r in (c, posixpath.join(posixpath.dirname(origen), c))
-                 if r.strip("/") and not r.startswith(("http", "pieza:")) and (RAIZ / r).exists()), None)
+                 if r.strip("/") and not r.startswith(("http", "pieza:")) and (RAIZ / r).exists()
+                 and re.search(r"[/.]", c)), None)   # una ruta, no una palabra que coincide con una carpeta (`multimedia`)
     texto = f"<code>{e(c.rstrip('/') if ruta else c)}</code>"
     if not ruta:
         return texto
@@ -3148,6 +3162,21 @@ def doc_codigo(c, origen):
     if ruta in paginas:
         return f'<a href="{doc_href(paginas[ruta])}">{texto}</a>'
     return enlace(f"{CODIGO}/{'tree' if (RAIZ / ruta).is_dir() else 'blob'}/main/{ruta}", texto)
+
+
+def li_primer_nivel(h):
+    """Los <li> de primer nivel de una lista, con lo que lleven dentro."""
+    items, nivel, ini = [], 0, 0
+    for m in re.finditer(r"<(/?)li>", h):
+        if not m.group(1):
+            nivel += 1
+            if nivel == 1:
+                ini = m.start()
+        else:
+            nivel -= 1
+            if nivel == 0:
+                items.append(h[ini:m.end()])
+    return items
 
 
 def doc_html(texto, origen):
@@ -3167,6 +3196,14 @@ def doc_html(texto, origen):
             ancla = f' id="apartado-{num.group(1)}"' if num else ""
             out.append(f"<h{n}{clase}{ancla}>{doc_linea(m.group(2), origen)}</h{n}>")
             i += 1
+        elif ln.startswith("```"):   # un ejemplo de formato (el JSON que se pide), tal cual y a lo ancho
+            i += 1
+            bloque = []
+            while i < len(lineas) and not lineas[i].startswith("```"):
+                bloque.append(lineas[i])
+                i += 1
+            i += 1
+            out.append(f'<figure class="tabla doc-codigo"><pre><code>{e(chr(10).join(bloque))}</code></pre></figure>')
         elif ln.startswith("|"):
             filas = []
             while i < len(lineas) and lineas[i].startswith("|"):
@@ -3180,15 +3217,21 @@ def doc_html(texto, origen):
             out.append(f'<figure class="tabla"><table><thead><tr>{th}</tr></thead><tbody>{trs}</tbody></table></figure>')
         elif re.match(r"(- |\d+\. )", ln):
             orden = bool(re.match(r"\d+\. ", ln))
-            items = []
+            items = []   # [texto, [subpuntos]]: los puntos sangrados son de un segundo nivel
             while i < len(lineas) and (re.match(r"(- |\d+\. )", lineas[i]) or (lineas[i].startswith("  ") and items)):
                 if re.match(r"(- |\d+\. )", lineas[i]):
-                    items.append(re.sub(r"^(- |\d+\. )", "", lineas[i]))
+                    items.append([re.sub(r"^(- |\d+\. )", "", lineas[i]), []])
+                elif re.match(r" +(- |\d+\. )", lineas[i]):
+                    items[-1][1].append(re.sub(r"^ +(- |\d+\. )", "", lineas[i]))
+                elif items[-1][1]:
+                    items[-1][1][-1] += " " + lineas[i].strip()
                 else:
-                    items[-1] += " " + lineas[i].strip()
+                    items[-1][0] += " " + lineas[i].strip()
                 i += 1
             tag = "ol" if orden else "ul"
-            out.append(f"<{tag}>" + "".join(f"<li>{doc_linea(x, origen)}</li>" for x in items) + f"</{tag}>")
+            out.append(f"<{tag}>" + "".join(f"<li>{doc_linea(x, origen)}" + (
+                "<ul>" + "".join(f"<li>{doc_linea(s, origen)}</li>" for s in sub) + "</ul>" if sub else "") + "</li>"
+                for x, sub in items) + f"</{tag}>")
         elif ln.startswith(">"):
             bloque = []
             while i < len(lineas) and lineas[i].startswith(">"):
@@ -3212,7 +3255,7 @@ def doc_html(texto, origen):
             k += 2
         elif x.startswith('<h2 class="doc-apartado"') and sig[:4] in ("<ul>", "<ol>"):
             tag = sig[1:3]
-            items = re.findall(r"<li>.*?</li>", sig, re.S)
+            items = li_primer_nivel(sig[4:-5])
             unido.append(f'<div class="doc-cabeza">{x}<{tag}>{items[0]}</{tag}></div>')
             if items[1:]:
                 unido.append(f'<{tag} class="doc-sigue">{"".join(items[1:])}</{tag}>')
@@ -3234,7 +3277,7 @@ def doc_html(texto, origen):
             agrupado.append(f'<div class="corto">{"".join(tramo)}</div>' if largo < DOC_CORTO else "".join(tramo))
             tramo.clear()
     for bloque in out:
-        if bloque.startswith('<figure class="tabla">'):
+        if bloque.startswith('<figure class="tabla'):
             cierra()
             agrupado.append(bloque)
         else:
@@ -3252,7 +3295,7 @@ def doc_html(texto, origen):
         largo = 0
     for bloque in [x for b in agrupado for x in ([b] if b.startswith(('<figure', '<div class="corto">'))
                                                  else re.split(r'(?=<div class="doc-cabeza">|<h2 class="doc-apartado")', b)) if x]:
-        if bloque.startswith(('<figure class="tabla">', '<div class="corto">')):
+        if bloque.startswith(('<figure class="tabla', '<div class="corto">')):
             corta()
             tramos.append(bloque)
             continue
@@ -3274,7 +3317,18 @@ def pagina_documento(eds, ruta):
     origen = DOCUMENTOS[ruta]   # los enlaces se resuelven desde el original, también en las traducciones
     texto = (RAIZ / doc_traduccion(ruta, L["codigo"])).read_text(encoding="utf-8")
     titulo, entradilla, cuerpo = doc_html(texto, origen)
-    aviso = ""
+    if ruta in GUIAS_PAGINAS:   # las instrucciones de un agente (ADR 0093): qué son, y el original con su historial
+        if not titulo:   # los encargos de paso no tienen título: el del agente que los sigue
+            rol = next(r for r, g in zip([r for r, x in L["redaccion"]["equipo"] if x is not None], GUIAS_AGENTES)
+                       if g == origen)
+            titulo = f"Instrucciones del {rol[0].lower()}{rol[1:]}"
+        llaves = " Lo que va entre llaves, como {FECHA}, lo pone el programa cada vez." if re.search(r"\{[A-Z_]+\}", texto) else ""
+        guia_aviso = (f'<p class="doc-aviso">Las instrucciones con las que trabaja este agente, tal como las lee.{llaves} '
+                      f'El original, con sus cambios, está en {enlace(f"{CODIGO}/blob/main/{origen}", "el repositorio")}.</p>')
+    if ruta == "estilo.html":   # las guías de cada agente, tras el párrafo que las nombra; no van en el .md (ADR 0093)
+        cuerpo = re.sub(r'(<p>(?:(?!</p>).)*?/tree/main/encargos".*?</p>)', lambda m: m.group(1) + guias_html(L["redaccion"]),
+                        cuerpo, count=1, flags=re.S)
+    aviso = guia_aviso if ruta in GUIAS_PAGINAS else ""
     if L["carpeta"]:   # traducción automática (ADR 0085): se dice, con el enlace al original
         original = f'<a href="{"../" * L["carpeta"].count("/")}{ruta}">{ORIGINAL[L["codigo"]]}</a>'
         aviso = f'<p class="doc-aviso">{AVISO_TRADUCCION[L["codigo"]].format(original=original)}</p>'

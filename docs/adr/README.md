@@ -94,5 +94,6 @@
 | [0090](0090-compartir-un-articulo-como-imagen.md) | Compartir un artículo como imagen, dibujada en el navegador, desde el botón «Compartir» |
 | [0091](0091-horas-con-su-huso.md) | Las horas, con su huso |
 | [0092](0092-columna-de-opinion-de-un-modelo-de-otra-casa.md) | La columna de opinión de los miércoles, escrita por un modelo de otra casa |
+| [0093](0093-las-instrucciones-de-los-agentes-como-paginas.md) | Las instrucciones de los agentes, como páginas del diario y listadas en el libro de estilo |
 
 Plantilla: [0000-plantilla.md](0000-plantilla.md). Para crear uno: `nuevo-adr "Título"`.

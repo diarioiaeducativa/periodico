@@ -2,6 +2,9 @@
 
 Fecha: 2026-11-16 · Estado: aceptado
 
+> El [ADR 0093](0093-las-instrucciones-de-los-agentes-como-paginas.md) publica también así las guías de los agentes,
+> solo en castellano.
+
 ## Contexto
 
 El ADR 0080 enlazó desde «La redacción» los tres documentos de normas (`docs/como-se-hace.md`,

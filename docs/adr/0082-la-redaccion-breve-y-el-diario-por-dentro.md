@@ -2,6 +2,9 @@
 
 Fecha: 2026-11-16 · Estado: aceptado
 
+> El [ADR 0093](0093-las-instrucciones-de-los-agentes-como-paginas.md) lleva la lista de las instrucciones también al
+> libro de estilo, y cada una a una página del diario en lugar de a GitHub.
+
 ## Contexto
 
 «La redacción» había ido sumando apartados (el proceso, el equipo, las secciones, las personas, el código, las

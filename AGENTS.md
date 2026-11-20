@@ -37,7 +37,8 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
 
 - **El libro de estilo es `encargos/estilo.md`** (ADR 0078): lo común de todo lo que lee el público. Las guías de
   `encargos/` solo llevan lo propio de su tarea y empiezan remitiendo a él. Una norma de estilo nueva se escribe allí,
-  no en cada guía.
+  no en cada guía. Cada guía sale además como página del diario (`guia-<nombre>.html`, solo en castellano, ADR 0093),
+  y su lista, en la página del libro de estilo, la añade `generar.py`: no se escribe en `estilo.md`.
 - **El libro del traductor es `encargos/traduccion.md`** (ADR 0079): norma, obras de consulta, formatos y vocabulario
   de la IA de cada lengua. Una forma nueva de una lengua se fija allí.
 - **Las tres normas públicas, en cada lengua** (ADR 0085): el original es el castellano; la traducción, en
