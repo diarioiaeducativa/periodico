@@ -280,6 +280,8 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
   las 7:00 y cada 15 minutos hasta las 9:30. Su código está en `android/avisos/` y lo engancha `aplicar.py`
   (lo lanza `construeix.sh`), porque `bubblewrap update` lo borra del manifiesto. Para probar, el emulador
   `prueba-twa` (`ANDROID_AVD_HOME=~/.config/.android/avd`), sin ventana; el registro, `adb logcat -s Avisos`.
+  Dentro de la app, la portada los ofrece en una tarjeta («Activar» · «Ahora no», ADR 0095) hasta que se pulsa
+  un botón o el enlace del pie, que se queda para apagarlos o encenderlos después.
 - **La forma de las piezas** (ADR 0077): el cuerpo es una lista de párrafos. `scripts/forma.py ARCHIVO`, sin IA,
   parte el que llega como texto seguido; lo llama `traducir` antes de cada traducción, y `cargar()` lo parte al
   leer. Un encargo nuevo con modelo de JSON lo pide como lista.

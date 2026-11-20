@@ -16,7 +16,8 @@ import android.widget.Toast;
 
 /**
  * La ventana de «Avisos del número» (ADR 0043), que abre el enlace del pie de la app
- * (intent://avisos?idioma=XX#Intent;scheme=diarioia;…). Dice qué hacen los avisos, deja encenderlos o
+ * (intent://avisos?idioma=XX#Intent;scheme=diarioia;…), o la tarjeta de la portada que ofrece
+ * encenderlos, con «&activar=1», que los enciende sin la ventana. Dice qué hacen los avisos, deja encenderlos o
  * apagarlos y, al encenderlos, pide el permiso de notificaciones si Android lo exige. Sin pantalla
  * propia: solo el cuadro de diálogo, sobre la app, con el tema claro u oscuro del sistema.
  */
@@ -30,6 +31,16 @@ public class AvisosActivity extends Activity {
         String idioma = d != null ? d.getQueryParameter("idioma") : null;
         if (idioma != null && Avisos.IDIOMAS.contains(idioma)) {
             Avisos.prefs(this).edit().putString("idioma", idioma).apply();
+        }
+        // «Activar» de la tarjeta de la portada (ADR 0095): directo, sin la ventana. Si ya están, solo se dice.
+        if (d != null && "1".equals(d.getQueryParameter("activar"))) {
+            if (Avisos.activos(this) && Avisos.permitidas(this)) {
+                Toast.makeText(this, Avisos.localizado(this).getString(R.string.avisos_activados), Toast.LENGTH_SHORT).show();
+                finish();
+            } else {
+                activar();
+            }
+            return;
         }
         mostrar();
     }

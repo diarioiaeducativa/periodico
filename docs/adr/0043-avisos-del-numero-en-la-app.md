@@ -43,6 +43,7 @@ Lo que no se puede hacer como se pidió:
   y que el móvil solo consulta la web, y pide el permiso de notificaciones al encenderlos. Si se negó,
   lleva a los ajustes de Android. Nada sale al abrir la app (ninguna ventana al entrar). También se
   pueden quitar desde los ajustes de notificaciones de Android, como en cualquier app.
+  Desde el 20-11-2026, la portada de la app los ofrece además en una tarjeta (ADR 0095).
 - **La app se reconoce** porque Chrome abre la primera página con `android-app://io.github.diarioiaeducativa`
   como referencia. La marca se guarda en la sesión (`sessionStorage`), no para siempre, porque la app
   comparte la memoria del sitio con Chrome y en Chrome el enlace no haría nada. La pone `CADUCIDAD`, el

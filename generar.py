@@ -1106,6 +1106,7 @@ SCRIPT_TEMA = """<script>
   // La marca la pone CADUCIDAD, el primer script de la cabecera, antes de que la portada salte de idioma.
   var av=document.querySelector('.avisos-app');
   if(av){try{if(sessionStorage.getItem('diario.app'))av.hidden=false;}catch(_){}}
+  if(av)av.addEventListener('click',function(){try{localStorage.setItem('diario.oferta-avisos','1');}catch(_){}});   // ADR 0095
   // «Para tu web» (ADR 0032): el botón despliega sus opciones y se cierra al pulsar fuera o con Escape
   var bl=document.querySelector('.llevar-boton'), ml=document.getElementById('menu-llevar');
   function cerrarLlevar(){ if(ml&&!ml.hidden){ml.hidden=true; bl.setAttribute('aria-expanded','false');} }
@@ -1893,6 +1894,44 @@ if(Date.now()>=new Date('{fin.isoformat()}T00:00:00').getTime())return;
 a.hidden=false;a.querySelector('.promo-app-cerrar').addEventListener('click',function(){{a.hidden=true;try{{localStorage.setItem('diario.promo-app','1');}}catch(_){{}}}});}})();</script>"""
 
 
+# La oferta de los avisos del número dentro de la app (ADR 0095), en el sitio del anuncio de la app: los dos no
+# coinciden nunca, porque uno sale solo fuera de la app y el otro solo dentro
+OFERTA_AVISOS = {
+    "es": ("Aviso del número cada mañana", "La app te avisa hacia las 7:00, {huso}, cuando sale el número, con el titular de la apertura.", "Activar", "Ahora no"),
+    "ca": ("Avís del número cada matí", "L'app t'avisa cap a les 7.00, {huso}, quan surt el número, amb el titular d'obertura.", "Activa", "Ara no"),
+    "gl": ("Aviso do número cada mañá", "A app avísate arredor das 7:00, {huso}, cando sae o número, co titular da apertura.", "Activar", "Agora non"),
+    "eu": ("Zenbakiaren abisua goizero", "Aplikazioak abisatuko dizu 7:00ak aldera {huso}, zenbakia ateratzen denean, irekierako izenburuarekin.", "Aktibatu", "Orain ez"),
+    "en": ("New issue alert every morning", "The app lets you know around 7am {huso} when the new issue is out, with its lead headline.", "Turn on", "Not now"),
+}
+# Campana que suena (bell-ring de Lucide, ISC), la de los avisos de meteo-local
+CAMPANA = ('<svg class="oferta-avisos-ilu" viewBox="0 0 24 24" aria-hidden="true"><path d="M10.268 21a2 2 0 0 0 3.464 0"/>'
+           '<path d="M22 8c0-2.3-.8-4.3-2-6"/><path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 '
+           '12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"/><path d="M4 2C2.8 3.7 2 5.7 2 8"/></svg>')
+
+
+def franja_avisos(d):
+    """La oferta de los avisos del número (ADR 0095), como la tarjeta de meteo-local: a todo el ancho bajo las
+    secciones, con «Activar» y «Ahora no». Sale oculta y solo la enseña la app de Android (la marca de sesión
+    `diario.app`, como el enlace «Avisos del número» del pie), hasta que se pulsa uno de los dos botones o ese
+    enlace: la web no sabe si los avisos están encendidos, porque eso lo guarda la parte de Android. «Activar» abre
+    la ventana nativa con `activar=1`, que desde la versión 1.0.4 los enciende sin ella; las anteriores la enseñan."""
+    if not d:
+        return ""
+    ante, txt, si, no = OFERTA_AVISOS[L["codigo"]]
+    txt = txt.replace("{huso}", huso(publicacion(d["fecha"]), L["codigo"]))
+    url = f"intent://avisos?idioma={L['codigo']}&amp;activar=1#Intent;scheme=diarioia;package=io.github.diarioiaeducativa;end"
+    return f"""<aside class="promo-app oferta-avisos" id="oferta-avisos" aria-label="{e(ante)}" hidden>
+  {CAMPANA}
+  <p class="promo-app-txt"><strong>{ante}.</strong> {txt}</p>
+  <a class="promo-app-boton oferta-si" href="{url}">{si}</a>
+  <button type="button" class="oferta-no">{no}</button>
+</aside>
+<script>(function(){{var a=document.getElementById('oferta-avisos');if(!a)return;
+try{{if(!sessionStorage.getItem('diario.app')||localStorage.getItem('diario.oferta-avisos'))return;}}catch(_){{return;}}
+function fuera(){{a.hidden=true;try{{localStorage.setItem('diario.oferta-avisos','1');}}catch(_){{}}}}
+a.hidden=false;a.querySelector('.oferta-si').addEventListener('click',fuera);a.querySelector('.oferta-no').addEventListener('click',fuera);}})();</script>"""
+
+
 def franja_editorial(prof, d):
     """«Desde la redacción»: a todo el ancho bajo la barra de secciones, el día que la hay (el número 1)."""
     ed = d.get("editorial")
@@ -2120,6 +2159,7 @@ def pagina_portada(prof, ruta, eds, piezas, breves, fecha, cuenta, es_portada, a
           papel=f'{prof}{fecha}/papel.html?imprimir=1' if dia.get("piezas") else "")}
 <main class="portada">
 {franja_app(dia) if es_portada else ""}
+{franja_avisos(dia) if es_portada else ""}
 {franja_reserva(dia)}
 {franja_editorial(prof, dia)}
 {franja_reportaje(prof, rep) if arriba else ""}
