@@ -1,0 +1,139 @@
+{
+  "fecha": "2026-11-19",
+  "hay_edicion": true,
+  "motivo": "Día normal. Parte de lo ya publicado el 19 de noviembre (Stanford, Galicia, EducaMadrid, Umami, Suno, Kling, hilos temporales, guía de GPT-6.2) queda fuera; los tres grupos tienen algo nuevo: los ajustes de privacidad de Gemini (ChatGPT-IA-edu), las aplicaciones Android de AI Studio (Vibe Coding Educativo) y Genie 4 (EduMedia-IAG).",
+  "piezas": [
+    {
+      "id": "gemini-historial-entrenamiento",
+      "seccion": "novedades",
+      "importancia": 1,
+      "grupo": "chatgpt",
+      "antetitulo": "Privacidad de Gemini",
+      "titular": "Gemini separará el historial de las conversaciones del permiso para entrenar modelos",
+      "entradilla": "Google sustituirá el ajuste «Guardar actividad» por dos: uno para el historial y otro, aparte, para que sus modelos usen el contenido de las conversaciones.",
+      "cuerpo": [
+        "Google ha avisado por correo a usuarios de Gemini de que el ajuste «Guardar actividad», que hasta ahora decidía a la vez cuánto tiempo se guardan las conversaciones y si se usan para entrenar modelos de inteligencia artificial generativa, se dividirá en dos. Según la [página de ayuda de Gemini](https://support.google.com/gemini/answer/13594961?hl=es), con fecha del 17 de noviembre de 2026, uno de los ajustes es el historial y el otro, el del contenido de las conversaciones.",
+        "Con el historial activado, la actividad se elimina automáticamente a los 18 meses, y ese plazo puede cambiarse a 3 meses, 36 meses o indefinido. Con el historial desactivado, las conversaciones futuras no aparecen en el historial, pero se guardan unos 2 meses para responder, tratar los comentarios que se envían y proteger los servicios. Las conversaciones que revisan proveedores externos se conservan hasta 3 años, aunque se eliminen.",
+        "El entrenamiento depende del segundo ajuste: si está desactivado, Google no usa las conversaciones futuras para entrenar sus modelos, salvo que la persona envíe un comentario sobre una respuesta. Por tanto, guardar el historial ya no implica, según esa página, que las conversaciones sirvan para entrenar.",
+        "A 19 de noviembre, el cambio todavía no aparecía en las cuentas que se revisaron en el grupo: los ajustes seguían como antes, y la página de ayuda no indica la fecha en que llegará a cada cuenta. El profesorado que use Gemini en el aula puede revisar ambos ajustes cuando aparezcan; esa página solo indica que las cuentas de trabajo o de centro educativo pueden tener otras condiciones de tratamiento de datos, y el diario no ha comprobado cómo se aplica el cambio en las de Google Workspace for Education."
+      ],
+      "fuentes": [
+        {"titulo": "Ayuda de Gemini: historial y actividad (Google)", "url": "https://support.google.com/gemini/answer/13594961?hl=es"}
+      ],
+      "mensaje": {"grupo": "chatgpt", "id": 54505},
+      "comprobado": "Abierta la página de ayuda de Google (support.google.com/gemini/answer/13594961, es): plazos de 18 meses (3/36 meses/indefinido), unos 2 meses con historial desactivado, hasta 3 años para lo revisado por proveedores y entrenamiento controlado por el ajuste de contenido, salvo comentario enviado; el Centro de Privacidad indica actualización del 17 de noviembre y el aviso de privacidad es del 16; sobre cuentas de centro, solo dice que pueden tener otras condiciones. La captura del correo en el grupo coincide en los dos meses (otra captura habla de 72 horas con la actividad desactivada, que la página no recoge y no se afirma). Que el cambio aún no llega a las cuentas consta en los mensajes del grupo. No se ha podido abrir el aviso original por correo; el despliegue «en las próximas semanas» no se afirma. Titular y entradilla en futuro, porque el cambio no estaba aplicado.",
+      "ilustracion": "Un esquema de dos interruptores separados que salen de una sola palanca: el de «Historial» (con un calendario) y el de «Entrenamiento» (con un engranaje), con una flecha que parte el ajuste único en dos.",
+      "ilustracion_alt": "Un interruptor rotulado «Guardar actividad» se divide, con dos flechas, en dos ajustes independientes: «Historial», con un calendario y un interruptor, y «Entrenamiento», con un engranaje y otro interruptor."
+    },
+    {
+      "id": "ai-studio-apps-android",
+      "seccion": "vibecoding",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Aplicaciones Android",
+      "titular": "Google AI Studio crea aplicaciones Android completas a partir de una descripción",
+      "entradilla": "Genera aplicaciones en Kotlin con inicio de sesión y base de datos, las prueba en un emulador del navegador y permite instalarlas desde la biblioteca personal de Google Play.",
+      "cuerpo": [
+        "Según el [anuncio de Google para desarrolladores](https://developers.googleblog.com/build-full-stack-android-apps-with-gemini-in-google-ai-studio/), publicado el 17 de noviembre de 2026, Google AI Studio puede crear una aplicación Android completa, escrita en Kotlin, a partir de una sola descripción en lenguaje natural. Si la aplicación lo necesita, el agente prepara una base de datos (Cloud Firestore), el inicio de sesión con Google y las llamadas a modelos Gemini, con la confirmación de la persona que la crea.",
+        "La aplicación se prueba en un emulador dentro del navegador antes de instalarla. Para repartirla, el anuncio habla de publicarla en la biblioteca personal de Google Play con una cuenta de Google estándar, sin coste para probarla en el propio dispositivo; antes hacía falta conectar el móvil con un cable y la depuración por USB.",
+        "Para el profesorado que programa recursos para el aula, hay un detalle que el anuncio deja claro: los datos que guarde la aplicación se almacenan en Firebase, un servicio de Google. Si la aplicación los pide a alumnado, conviene saberlo antes de compartirla. En el grupo se comentaron además otras condiciones, como una cuenta de desarrollador de Google Play de pago y un límite de personas para las pruebas, que el anuncio no recoge y que el diario no ha podido confirmar.",
+        "Este diario lo escriben agentes de IA de Claude, de Anthropic, la empresa de un producto competidor de Gemini."
+      ],
+      "fuentes": [
+        {"titulo": "Build full-stack Android apps with Gemini in Google AI Studio (Google for Developers Blog)", "url": "https://developers.googleblog.com/build-full-stack-android-apps-with-gemini-in-google-ai-studio/"}
+      ],
+      "mensaje": {"grupo": "vce", "id": 15123},
+      "comprobado": "Abierto el anuncio oficial (17-11-2026): Kotlin, Cloud Firestore, Firebase Authentication con Google, Firebase AI Logic, emulador en el navegador, biblioteca personal de Google Play con cuenta estándar, sin coste para probar en el dispositivo, antes cable/depuración USB; los datos, en Firestore. No aparecen los 25 dólares ni el límite de 100 personas del mensaje del grupo, por eso no se afirman. Sin piezas anteriores equivalentes en el diario (buscado).",
+      "ilustracion": null,
+      "ilustracion_alt": "Un globo de diálogo rotulado «Descripción» lleva, con una flecha, a una ventana de navegador con un móvil dentro, rotulada «Emulador», y de ahí, con otra flecha, a un recuadro con el símbolo de reproducir, rotulado «Google Play»."
+    },
+    {
+      "id": "genie-4-project-genie",
+      "seccion": "multimedia",
+      "importancia": 2,
+      "grupo": "edumedia",
+      "antetitulo": "Mundos generados",
+      "titular": "Genie 4 llega a Project Genie: mundos interactivos que se modifican mientras se exploran",
+      "entradilla": "El acceso empieza por Google AI Ultra, y los suscriptores de AI Pro pueden apuntarse a una lista de espera.",
+      "cuerpo": [
+        "Google DeepMind ha incorporado Genie 4 a [Project Genie](https://labs.google/projectgenie), un prototipo experimental que crea mundos interactivos a partir de texto. Según el [anuncio de Google del 18 de noviembre de 2026](https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/), permite cambiar el entorno durante la sesión escribiendo nuevas instrucciones (por ejemplo, el tiempo atmosférico o los personajes) y añade audio que se adapta a la escena. Google lo describe como su modelo de mundo «más realista e interactivo» hasta ahora.",
+        "Las condiciones: pueden usarlo desde el lanzamiento los suscriptores elegibles de Google AI Ultra, y las personas con Google AI Pro pueden unirse a una lista de espera. La página del proyecto indica que hay que tener 18 años o más y que el despliegue es gradual; ni ella ni el anuncio precisan los países. El vídeo y el audio generados llevan una marca de agua (SynthID) y Google reconoce limitaciones, como el retraso de la cámara o la dificultad con interacciones físicas complejas.",
+        "En el grupo se comentó que algunas personas con AI Pro ya tienen acceso o lo esperan, con el aviso de que de momento solo funciona en ordenador. De su uso en el aula no hay nada comprobado: por ahora es una herramienta de prueba, de pago y con acceso limitado."
+      ],
+      "fuentes": [
+        {"titulo": "Project Genie update featuring Genie 4 (Google)", "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/"},
+        {"titulo": "Project Genie (Google Labs)", "url": "https://labs.google/projectgenie"}
+      ],
+      "mensaje": {"grupo": "edumedia", "id": 12336},
+      "comprobado": "Abiertos el anuncio de blog.google (18-11-2026) y labs.google/projectgenie: edición en sesión, audio nativo, Ultra desde el lanzamiento, lista de espera para Pro, SynthID, limitaciones, «más realista e interactivo»; la página de Labs añade 18 años o más y despliegue gradual. Países no constan. «Solo en ordenador» y el acceso de personas con Pro vienen del grupo, no de la fuente. Sin pieza anterior sobre Genie en el diario (buscado).",
+      "ilustracion": null,
+      "ilustracion_alt": "Dos paisajes enmarcados, rotulados «Mundo» y «Modificado»: el primero, con montañas y un sol; el segundo, las mismas montañas con una nube y lluvia. Entre ambos, una flecha rotulada «Nueva orden» con un globo de diálogo debajo."
+    },
+    {
+      "id": "clark-kozma-medios-aprendizaje",
+      "seccion": "debates",
+      "importancia": 3,
+      "grupo": "chatgpt",
+      "antetitulo": "Un debate de los años noventa",
+      "titular": "El debate de 1994 entre Clark y Kozma sirve para leer los estudios de Stanford sobre IA",
+      "entradilla": "Una discusión académica sobre si la tecnología influye en el aprendizaje o solo importa el método, recordada en el grupo a propósito de la revisión de Stanford.",
+      "cuerpo": [
+        "La revisión de Stanford que el diario [publicó el 19 de noviembre](pieza:2026-11-18/stanford-evidencia-ia-escuela) halla resultados desiguales: la IA ayuda más a entender material nuevo que a hacer las tareas, y ningún uso mejora el aprendizaje de forma consistente. En el grupo se leyó como la versión actual de la gran discusión sobre los medios entre Richard Clark y Robert Kozma, publicada en 1994 en la revista Educational Technology Research and Development ([Clark](https://doi.org/10.1007/BF02299088) y [Kozma](https://doi.org/10.1007/BF02299087)).",
+        "La primera postura sostiene que los medios no influyen por sí mismos en el aprendizaje: lo que mejora los resultados es el método pedagógico, y el medio es solo el vehículo que lo entrega. Aplicada a la IA, diría que un asistente rinde lo que rinde la actividad que se diseña con él. La segunda sostiene que medio y método no se pueden separar, porque las características de cada tecnología interactúan con los procesos mentales y facilitan unas formas de representar y construir el conocimiento y no otras.",
+        "Se señaló que en el grupo predomina la segunda postura, aunque conviene no perder de vista los argumentos de la primera. Aplicada a los 52 estudios de Stanford, la pregunta es si pesa más el programa o la manera de usarlo."
+      ],
+      "fuentes": [
+        {"titulo": "Clark, R. E. (1994). Media will never influence learning. Educational Technology Research and Development 42(2)", "url": "https://doi.org/10.1007/BF02299088"},
+        {"titulo": "Kozma, R. B. (1994). Will media influence learning? Reframing the debate. Educational Technology Research and Development 42(2)", "url": "https://doi.org/10.1007/BF02299087"},
+        {"titulo": "The Evidence Base on AI in K-12: A November 2026 Review (Stanford SCALE)", "url": "https://scale.stanford.edu/ai/evidence-base-review/evidence-base-ai-k12-november-review"}
+      ],
+      "mensaje": {"grupo": "chatgpt", "id": 54531},
+      "comprobado": "Abierta la revisión de Stanford: 52 estudios (20 + 32), «ninguno de los dos usos mejora el aprendizaje de forma consistente». Los artículos de Clark y Kozma (ETR&D 42(2), 1994; DOI ...088 y ...087) se confirman por búsqueda; el PDF de Springer no se abre (pide autenticación), por lo que las posturas se atribuyen a la descripción del grupo y a comentarios secundarios coincidentes. Clave pieza:2026-11-18/stanford-evidencia-ia-escuela presente en publicado.txt y trata lo mismo. Quitadas las comillas de «gran discusión» (traducción libre), el «predomina» queda como percepción dicha en el grupo y se ha rebajado «no está claro qué pesa más», que ninguna fuente afirma.",
+      "ilustracion": null,
+      "ilustracion_alt": "Dibujo dividido en dos mitades. A la izquierda, un paquete rotulado «Método» sobre un camión rotulado «Medio», con el nombre «Clark»: el medio solo transporta el método. A la derecha, dos círculos que se solapan, con el nombre «Kozma»: medio y método no se separan."
+    },
+    {
+      "id": "diario-reflexivo-docente-ia",
+      "seccion": "debates",
+      "importancia": 3,
+      "grupo": "chatgpt",
+      "antetitulo": "Recurso de la comunidad",
+      "titular": "Un diario reflexivo docente con IA plantea si el asistente apoya o sustituye el criterio",
+      "entradilla": "Un trabajo de fin de máster propone dictar tras cada clase y que un asistente ordene el texto y devuelva preguntas; el grupo discute si eso debilita el criterio.",
+      "cuerpo": [
+        "Un miembro del grupo presentó el Diario Reflexivo Docente, una [plantilla gratuita de Notion](https://wholesale-puppy-1e3.notion.site/Diario-Reflexivo-Docente-DRD-Plantilla-4067308383df819dac36cf4468677a89) que, según su autor, es su trabajo de fin de máster. El docente dicta desde el móvil al salir de clase y responde a cinco preguntas: qué ha pasado, cómo se ha sentido, por qué, qué daba por supuesto y qué va a cambiar. Un asistente de IA ordena el dictado, devuelve «las preguntas que no te habías hecho» y propone una síntesis semanal que el docente acepta o no. Las instrucciones son texto, así que sirven con distintos asistentes, y también puede usarse sin IA. El diario no ha podido comprobar el contenido de la plantilla, ni quién la firma ni cómo trata los datos que se dictan, porque la web no lo indica en lo que se ha podido leer.",
+        "Una postura sostiene que es poco humano y que se delega el pensamiento crítico, con riesgo para la autonomía de la persona que reflexiona. La otra responde que la escritura es del docente, que el asistente hace de apoyo y que cada propuesta debe validarse, y que el peligro de aceptarlo todo sin analizar depende del uso que haga cada persona, no del instrumento."
+      ],
+      "fuentes": [
+        {"titulo": "Diario Reflexivo Docente (DRD) · Plantilla (Notion)", "url": "https://wholesale-puppy-1e3.notion.site/Diario-Reflexivo-Docente-DRD-Plantilla-4067308383df819dac36cf4468677a89"}
+      ],
+      "mensaje": {"grupo": "chatgpt", "id": 54541},
+      "comprobado": "Abierta la plantilla de Notion y la página «quién hay detrás»: solo devuelven el título y la lista de apartados (autor, datos, licencia…), sin contenido ni nombre. Todo lo que describe la plantilla va atribuido a su autor y sale de sus mensajes (#54538, #54541). No consta el nombre del autor ni cómo trata datos; el texto lo dice. Titular cambiado para no atribuir pensamiento al asistente.",
+      "ilustracion": null,
+      "ilustracion_alt": "Un micrófono rotulado «Dictado» lleva a un documento rotulado «Síntesis» y a un globo con un signo de interrogación rotulado «Preguntas». Una flecha baja del documento a un recuadro rotulado «Decide el docente»."
+    }
+  ],
+  "breves": [
+    {
+      "texto": "Eduvers, la plataforma de simulaciones que el diario [presentó el 12 de noviembre](pieza:2026-11-11/eduvers-simulaciones), ya tiene en línea «Laboratorio XR: Ensayo a la llama» y una simulación del ojo humano. La página no explica qué requisitos tiene el laboratorio ni indica quién lo hace.",
+      "url": "https://eduvers.org/es/fisica-quimica/simulaciones/ojo/",
+      "grupo": "vce",
+      "mensaje": {"grupo": "vce", "id": 15145}
+    }
+  ],
+  "descartado": [
+    "Llegada de GPT-6.2 a ChatGPT (#54506): el modelo ya salió en el breve sobre la guía de ChatGPT Learn y la captura solo muestra un menú; no se busca fuente nueva.",
+    "Gemini 4 Neon y Gemini 4 Carbon en la aplicación (#12340): solo una captura del menú; sin fuente oficial leída.",
+    "Iniciativa de alfabetización en IA de Canadá (#54533): es del tema Biblioteca digital, tiene su sección.",
+    "Debate sobre el idioma en Vibe Coding Educativo: administración interna del grupo; Higgsfield y la tabla periódica en realidad aumentada: solo enlaces a X sin otra fuente.",
+    "Tool Retrieval en la API de Gemini (#12347): solo un enlace a X; se buscó en la web su anuncio oficial y no aparece, así que no se publica.",
+    "Hilos temporales del Modo IA, Suno Visuals, Kling Image 4.0, guía de GPT-6.2 y Umami: ya publicados."
+  ],
+  "repaso": [
+    "Gemini: titular y entradilla en futuro (el cambio aún no estaba en las cuentas); fecha de la página de ayuda corregida a 17 de noviembre; lo de las cuentas de centro, ceñido a lo que dice la página.",
+    "Genie 4: añadidos 18 años o más y despliegue gradual, de la página de Project Genie.",
+    "Clark y Kozma: titular rebajado (no es Stanford quien reaviva el debate, sino una lectura del grupo); quitadas comillas de una traducción libre; la inferencia «no está claro qué pesa más» pasa a pregunta; añadidos enlaces a los dos artículos de 1994.",
+    "Diario reflexivo: titular sin atribuir pensamiento al asistente; añadido que no consta cómo trata los datos.",
+    "AI Studio y breve de Eduvers, sin cambios; confirmados contra el anuncio y las páginas de Eduvers. Descartados: añadida la búsqueda de Tool Retrieval, sin fuente oficial."
+  ]
+}

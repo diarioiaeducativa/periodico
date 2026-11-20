@@ -1,0 +1,53 @@
+{
+  "fecha": "2026-11-19",
+  "piezas": [
+    {
+      "id": "canada-alfabetizacion-ia",
+      "seccion": "biblioteca",
+      "importancia": 2,
+      "grupo": "chatgpt",
+      "antetitulo": "Canada's national initiative",
+      "titular": "Canada launches a national AI literacy initiative with three strands: students, teachers and the public",
+      "entradilla": "The Canadian government has launched, with the Amii institute, a national AI literacy initiative with three training strands, one of them yet to launch. The document shared in the library presents it and points out its shortcomings.",
+      "cuerpo": [
+        "The document that reaches the Digital Library is an analysis sheet on Canada's National AI Literacy Initiative, a programme of the federal Department of Innovation, Science and Economic Development (ISED). Whoever shared it backs it up with two official pages: the one on the [initiative](https://ised-isde.canada.ca/site/ised/en/ai-literacy-building-knowledge-and-skills-canadians) and the one on the national strategy [“AI for All”](https://ised-isde.canada.ca/site/ised/en/canadas-national-artificial-intelligence-strategy-ai-all). Two layers need to be kept apart: what the Canadian government says, and the assessment of strengths and weaknesses, which comes from the sheet and does not appear on those pages.",
+        "According to the official page, dated 23 September 2026 (a news item linked from it, dated 9 September, announces the launch), the initiative is part of the national strategy and aims to help the population understand AI, recognise its benefits and risks, use it responsibly and gain confidence at school, at work and in daily life. The training is delivered by the Alberta Machine Intelligence Institute (Amii), based in Edmonton, one of the country's national AI institutes.",
+        "There are three strands. “Essentials for Students” is a free three-hour course, in English and French, designed to fit into lesson plans and classroom tasks. “Essentials for Educators” offers practical training on basic technical concepts, ethics, safety and governance, and classroom applications; five more chapters will be published over the autumn, and the page does not state their length or languages. “Essentials for Canadians” will be launched nationally later this year through community organisations, with no details yet on length, language or cost. The sheet presents it alongside the other two, without pointing out that it is not yet ready.",
+        "The “AI for All” strategy page, last updated on 8 June 2026, provides the framework. In its second pillar, “Empowering citizens”, it envisages a national literacy initiative with entry-level training for all Canadians, AI literacy content for one million first-cycle postsecondary students and training for more than 3,000 primary and secondary teachers with learning kits. It also cites a study by KPMG and the University of Melbourne that places Canada 44th out of 47 countries in AI training and literacy, and states that only 24% of Canadians say they have received any training. The page gives neither a budget nor a timetable for the initiative.",
+        "The group's sheet adds its own analysis. Among the strengths it highlights free, universal access, bilingual delivery, differentiated strands, institutional partnerships and the use of existing educational infrastructure, as well as an approach that is neutral towards commercial providers. Among the weaknesses it lists the lack of pathways leading from the basics to advanced skills, little practice (experimenting, checking, problem-solving), the absence of a national certification framework, limited professional applications, participation targets without measurable learning indicators and little emphasis on digital rights and algorithmic accountability. These are the judgements of whoever wrote the sheet: the official pages do not make them.",
+        "The library holds documents on related topics: the European digital competence framework [DigComp 3.0](https://t.me/ChatGPTedu/21753/42900), in its fifth edition, and [Competència digital docent en IA](https://t.me/ChatGPTedu/21753/44426), on teaching staff. In the paper, the update to [DigCompEdu](pieza:2026-10-30/digcompedu) goes in the same direction of putting AI into competence frameworks. The difference is that the Canadian case is not a framework but a concrete offer of courses.",
+        "For a teacher, the usefulness is twofold. The three-hour course for students, which according to the sheet requires no technical training, can serve as a model for a short introduction if English or French is not an obstacle. And, for anyone interested in education policy, the weaknesses the sheet identifies suggest questions that apply to any national programme: are there progressive pathways? Is it practised or only explained? How is learning measured? Where to start: the ISED initiative page, which is short, and then the empowerment pillar of the strategy."
+      ],
+      "documento": {
+        "titulo": "AI Literacy: Building Knowledge and Skills for Canadians",
+        "autoria": "Innovation, Science and Economic Development Canada (ISED)",
+        "anyo": "2026",
+        "idioma": "English",
+        "licencia": "not stated",
+        "url": "https://ised-isde.canada.ca/site/ised/en/ai-literacy-building-knowledge-and-skills-canadians"
+      },
+      "fuentes": [
+        {"titulo": "ISED: AI Literacy: Building Knowledge and Skills for Canadians", "url": "https://ised-isde.canada.ca/site/ised/en/ai-literacy-building-knowledge-and-skills-canadians"},
+        {"titulo": "ISED: Canada's National Artificial Intelligence Strategy: AI for All", "url": "https://ised-isde.canada.ca/site/ised/en/canadas-national-artificial-intelligence-strategy-ai-all"},
+        {"titulo": "DigComp 3.0 in the library", "url": "https://t.me/ChatGPTedu/21753/42900"},
+        {"titulo": "Competència digital docent en IA in the library (in Catalan)", "url": "https://t.me/ChatGPTedu/21753/44426"}
+      ],
+      "mensaje": {"grupo": "chatgpt", "id": 54533},
+      "comprobado": "Mensaje y ficha 54533 (enlace con ficha, sin PDF). Revisado: reabiertas con WebFetch las dos páginas oficiales de ISED; coinciden fecha (23-09-2026), vías, Amii, tres horas, inglés y francés, cinco capítulos más para docentes, vía ciudadana aún por lanzar, y en la estrategia (8-06-2026) el millón de estudiantes postsecundarios, los 3.000 docentes, KPMG (44 de 47) y el 24 %; ni presupuesto ni calendario propios de la iniciativa. Fortalezas y debilidades, de la ficha. No consta licencia. DigComp 3.0 y la competencia docente en IA están en la lista de la biblioteca, no se abrieron; la relación se limita a que tratan temas cercanos. La clave pieza:2026-10-30/digcompedu está en publicado.txt y su titular trata de DigCompEdu con IA.",
+      "ilustracion": "Esquema con tres caminos que parten de un mismo punto, “Alfabetización nacional en IA”: estudiantes (curso de tres horas, ya disponible), docentes (formación y cinco capítulos más en otoño) y ciudadanía (lanzamiento previsto más adelante este año), con una escala de pasos de “básico” a “avanzado” donde los dos últimos aparecen en trazo discontinuo, como lo que la ficha echa en falta.",
+      "ilustracion_alt": "Diagram: a box on the left, “AI literacy”, from which three paths lead, each with an icon: a graduation cap labelled “Students”, a whiteboard labelled “Teachers” and a group of people labelled “Citizens”; beneath the last one, a dashed line labelled “Yet to launch”."
+    }
+  ],
+  "ya_contado": [],
+  "descartado": [],
+  "repaso": [
+    "Titular: ya no dice que ofrece cursos gratuitos a la ciudadanía (esa vía aún no está lanzada); ahora dice que lanza una iniciativa con tres vías. Entradilla: añadido que una vía está por lanzar.",
+    "Enlazadas en su primera mención las dos páginas oficiales de ISED.",
+    "Quitadas las comillas de “más adelante este año” (traducción, no cita literal).",
+    "Ficha: ya no se afirma que presente la vía ciudadana “como ya disponible”; solo que la lista sin señalar que no está lista.",
+    "“Presupuesto/calendario”: la página no da ninguno para la iniciativa (sí hay otros fondos, como CanCode, que no son suyos).",
+    "Relación con DigComp 3.0 y la competencia docente en IA: suavizada a “temas cercanos” (no se abrieron esos documentos).",
+    "Cierre: la ficha no formula preguntas; se dice que salen de sus debilidades. “Sin requisitos técnicos” se atribuye a la ficha.",
+    "Cuerpo recortado a unas 650 palabras (estaba por encima de 700)."
+  ]
+}

@@ -1,0 +1,90 @@
+{
+ "fecha": "2026-11-19",
+ "elegida": {
+  "n": 4,
+  "pieza": "genie-4-project-genie",
+  "idea": "L'Algorisme presumeix d'una IA que crea móns sencers amb un text mentre Guix es baralla amb la fotocopiadora embussada; en saber que a aquesta IA li costen les interaccions físiques complexes, Guix assenyala la màquina: «Ja som dos». Remata Guix, que es riu de si mateix i no de l'Algorisme.",
+  "guion": {
+   "vinetas": [
+    {
+     "cartela": "Davant la fotocopiadora, parlant de móns virtuals.",
+     "escenario": "fotocopiadora",
+     "tiza": {
+      "expresion": "enfadado",
+      "postura": "jarras",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "orgulloso",
+      "postura": "arriba",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Un altre cop embussada.",
+       "tipo": "habla"
+      },
+      {
+       "quien": "algoritmo",
+       "texto": "Una IA que crea móns sencers amb un text i els canvia sobre la marxa!",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "fotocopiadora",
+     "tiza": {
+      "expresion": "harto",
+      "postura": "cruzar",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "avergonzado",
+      "postura": "encoger",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "I quin inconvenient té?",
+       "tipo": "habla"
+      },
+      {
+       "quien": "algoritmo",
+       "texto": "Li costen les interaccions físiques complexes.",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "fotocopiadora",
+     "tiza": {
+      "expresion": "agotado",
+      "postura": "senalar",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "pensativo",
+      "postura": "pensar",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Ja som dos.",
+       "tipo": "habla"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "traduccion": "automàtica amb IA"
+}

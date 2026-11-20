@@ -176,8 +176,17 @@
 - pieza:2026-11-18/galicia-ley-educacion-digital (novedades) El Parlamento de Galicia aprueba la ley que regula móviles, pantallas e IA en las aulas
 - pieza:2026-11-18/educamadrid-agente-ia (novedades) Madrid incorpora a EducaMadrid un agente de IA que prepara materiales personalizados
 - pieza:2026-11-18/suno-visuals (multimedia) Suno lanza Visuals para crear vídeos con letra y portadas a partir de sus canciones
-- pieza:2026-11-18/umami-analitica-privacidad (vibecoding) Un docente mide el uso de sus aplicaciones con Umami, analítica sin cookies
-- breve: Google despliega hilos temporales en el Modo IA de su buscador: las preguntas no se guarda
+- pieza:2026-11-18/umami-analitica-privacidad (vibecoding) Un docente mide el uso de sus aplicaciones con Umami, unas estadísticas sin cookies
+- breve: Google despliega hilos temporales en el Modo IA de su buscador: las preguntas de esas conv
 - breve: [Trama](pieza:2026-11-16/trama-comprensio-lectora) ya tiene 245 lecturas en catalán y cast
-- breve: ChatGPT Learn publica una guía para pedir tareas a GPT-6.2 Astra y Sol en Codex; la página
-- breve: Kling AI anuncia Kling Image 4.0, con imágenes en 8K nativo, texto en varios idiomas y has
+- breve: ChatGPT Learn publica una guía para pedir tareas a GPT-6.2 Astra y Sol en Codex, el asiste
+- breve: Kling AI anuncia Kling Image 4.0, con imágenes generadas directamente en resolución 8K, te
+- pieza:2026-11-18/cmu-tutoria-socratica-errores (biblioteca) Un experimento con 400 adultos halla que un tutor de IA socrático enseña más que explicar el error
+
+## 2026-11-19 (publicado el viernes 20 de noviembre de 2026)
+- pieza:2026-11-19/gemini-historial-entrenamiento (novedades) Gemini separará el historial de las conversaciones del permiso para entrenar modelos
+- pieza:2026-11-19/ai-studio-apps-android (vibecoding) Google AI Studio crea aplicaciones Android completas a partir de una descripción
+- pieza:2026-11-19/genie-4-project-genie (multimedia) Genie 4 llega a Project Genie: mundos interactivos que se modifican mientras se exploran
+- pieza:2026-11-19/clark-kozma-medios-aprendizaje (debates) El debate de 1994 entre Clark y Kozma sirve para leer los estudios de Stanford sobre IA
+- pieza:2026-11-19/diario-reflexivo-docente-ia (debates) Un diario reflexivo docente con IA plantea si el asistente apoya o sustituye el criterio
+- breve: Eduvers, la plataforma de simulaciones que el diario [presentó el 12 de noviembre](pieza:2

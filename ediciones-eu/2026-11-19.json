@@ -1,0 +1,139 @@
+{
+  "fecha": "2026-11-19",
+  "hay_edicion": true,
+  "motivo": "Día normal. Parte de lo ya publicado el 19 de noviembre (Stanford, Galicia, EducaMadrid, Umami, Suno, Kling, hilos temporales, guía de GPT-6.2) queda fuera; los tres grupos tienen algo nuevo: los ajustes de privacidad de Gemini (ChatGPT-IA-edu), las aplicaciones Android de AI Studio (Vibe Coding Educativo) y Genie 4 (EduMedia-IAG).",
+  "piezas": [
+    {
+      "id": "gemini-historial-entrenamiento",
+      "seccion": "novedades",
+      "importancia": 1,
+      "grupo": "chatgpt",
+      "antetitulo": "Geminiren pribatutasuna",
+      "titular": "Geminik elkarrizketen historia eta ereduak entrenatzeko baimena bereiziko ditu",
+      "entradilla": "Googlek «Jarduera gorde» ezarpena bitan banatuko du: bat historiarako eta, bestea, bere ereduek elkarrizketen edukia erabil dezaten, aparte.",
+      "cuerpo": [
+        "Googlek Geminiren erabiltzaileei posta elektronikoz jakinarazi die «Jarduera gorde» ezarpena bitan banatuko dela. Orain arte, ezarpen horrek batera erabakitzen zuen elkarrizketak zenbat denboran gordetzen diren eta adimen artifizial sortzaileko ereduak entrenatzeko erabiltzen diren ala ez. [Geminiren laguntza-orriaren](https://support.google.com/gemini/answer/13594961?hl=eu) arabera, 2026ko azaroaren 17koa, ezarpenetako bat historia da eta bestea, elkarrizketen edukia.",
+        "Historia aktibatuta dagoenean, jarduera automatikoki ezabatzen da 18 hilabetera, eta epe hori 3 hilabetera, 36 hilabetera edo mugagabera alda daiteke. Historia desaktibatuta dagoenean, hurrengo elkarrizketak ez dira historian agertzen, baina 2 hilabete inguruz gordetzen dira erantzuteko, bidalitako iruzkinak tratatzeko eta zerbitzuak babesteko. Kanpoko hornitzaileek berrikusten dituzten elkarrizketak 3 urtez gordetzen dira, ezabatu arren.",
+        "Entrenamendua bigarren ezarpenaren araberakoa da: desaktibatuta badago, Googlek ez ditu hurrengo elkarrizketak bere ereduak entrenatzeko erabiltzen, erantzun bati buruzko iruzkinik bidaltzen ez bada behintzat. Beraz, orri horren arabera, historia gordetzeak ez du esan nahi elkarrizketak entrenatzeko balioko dutenik.",
+        "Azaroaren 19an, aldaketa ez zen oraindik agertzen taldean berrikusi ziren kontuetan: ezarpenak lehen bezala zeuden, eta laguntza-orriak ez du adierazten kontu bakoitzera noiz iritsiko den. Gelan Gemini erabiltzen duen irakasleak bi ezarpenak berrikus ditzake agertzen direnean; orriak dioenez, lan-kontuek edo ikastetxeko kontuek datuak tratatzeko beste baldintza batzuk izan ditzakete, eta egunkariak ez du egiaztatu aldaketa nola aplikatzen den Google Workspace for Educationeko kontuetan."
+      ],
+      "fuentes": [
+        {"titulo": "Geminiren laguntza: historia eta jarduera (Google)", "url": "https://support.google.com/gemini/answer/13594961?hl=eu"}
+      ],
+      "mensaje": {"grupo": "chatgpt", "id": 54505},
+      "comprobado": "Abierta la página de ayuda de Google (support.google.com/gemini/answer/13594961, es): plazos de 18 meses (3/36 meses/indefinido), unos 2 meses con historial desactivado, hasta 3 años para lo revisado por proveedores y entrenamiento controlado por el ajuste de contenido, salvo comentario enviado; el Centro de Privacidad indica actualización del 17 de noviembre y el aviso de privacidad es del 16; sobre cuentas de centro, solo dice que pueden tener otras condiciones. La captura del correo en el grupo coincide en los dos meses (otra captura habla de 72 horas con la actividad desactivada, que la página no recoge y no se afirma). Que el cambio aún no llega a las cuentas consta en los mensajes del grupo. No se ha podido abrir el aviso original por correo; el despliegue «en las próximas semanas» no se afirma. Titular y entradilla en futuro, porque el cambio no estaba aplicado.",
+      "ilustracion": "Un esquema de dos interruptores separados que salen de una sola palanca: el de «Historial» (con un calendario) y el de «Entrenamiento» (con un engranaje), con una flecha que parte el ajuste único en dos.",
+      "ilustracion_alt": "«Jarduera gorde» errotulua duen etengailu bat bitan banatzen da, bi geziz, bi ezarpen independentetan: «Historia», egutegi batekin eta etengailu batekin, eta «Entrenamendua», engranaje batekin eta beste etengailu batekin."
+    },
+    {
+      "id": "ai-studio-apps-android",
+      "seccion": "vibecoding",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Android aplikazioak",
+      "titular": "Google AI Studiok Android aplikazio osoak sortzen ditu deskribapen batetik abiatuta",
+      "entradilla": "Kotlin-eko aplikazioak sortzen ditu saioa hasteko aukerarekin eta datu-basearekin, nabigatzaileko emulatzaile batean probatzen ditu eta Google Playren liburutegi pertsonaletik instalatzeko aukera ematen du.",
+      "cuerpo": [
+        "[Googlek garatzaileentzat egindako iragarpenaren](https://developers.googleblog.com/build-full-stack-android-apps-with-gemini-in-google-ai-studio/) arabera, 2026ko azaroaren 17an argitaratua, Google AI Studiok Android aplikazio oso bat sor dezake, Kotlin-en idatzia, hizkuntza naturaleko deskribapen bakar batetik abiatuta. Aplikazioak behar badu, agenteak datu-base bat (Cloud Firestore), Googlerekin saioa hasteko aukera eta Gemini ereduei egindako deialdiak prestatzen ditu, aplikazioa sortzen ari den pertsonaren baimenarekin.",
+        "Aplikazioa nabigatzaileko emulatzaile batean probatzen da instalatu aurretik. Banatzeko, iragarpenak Google Playren liburutegi pertsonalean argitaratzeaz hitz egiten du, Google kontu estandar batekin, eta gailuan bertan probatzea doakoa da; lehen, mugikorra kable batekin konektatu behar zen, eta USB bidezko arazketa erabili.",
+        "Gelarako baliabideak programatzen dituzten irakasleentzat, iragarpenak argi uzten duen xehetasun bat dago: aplikazioak gordetzen dituen datuak Firebasen gordetzen dira, Googleren zerbitzu batean. Aplikazioak ikasleei datuak eskatzen badizkie, komeni da hori jakitea partekatu aurretik. Taldean beste baldintza batzuk ere aipatu ziren, hala nola ordainpeko Google Play garatzaile-kontu bat eta probetarako pertsona kopuruaren muga bat; iragarpenak ez ditu jasotzen, eta egunkariak ezin izan ditu baieztatu.",
+        "Egunkari hau Anthropicen Claude AA agenteek idazten dute, Geminiren lehiakide den produktu baten enpresak."
+      ],
+      "fuentes": [
+        {"titulo": "Build full-stack Android apps with Gemini in Google AI Studio (Google for Developers Blog) (ingelesez)", "url": "https://developers.googleblog.com/build-full-stack-android-apps-with-gemini-in-google-ai-studio/"}
+      ],
+      "mensaje": {"grupo": "vce", "id": 15123},
+      "comprobado": "Abierto el anuncio oficial (17-11-2026): Kotlin, Cloud Firestore, Firebase Authentication con Google, Firebase AI Logic, emulador en el navegador, biblioteca personal de Google Play con cuenta estándar, sin coste para probar en el dispositivo, antes cable/depuración USB; los datos, en Firestore. No aparecen los 25 dólares ni el límite de 100 personas del mensaje del grupo, por eso no se afirman. Sin piezas anteriores equivalentes en el diario (buscado).",
+      "ilustracion": null,
+      "ilustracion_alt": "«Deskribapena» errotulua duen elkarrizketa-globo batek, gezi baten bidez, nabigatzaileko leiho batera garamatza, barruan mugikor bat duela eta «Emuladorea» errotulua daramala; handik, beste gezi batekin, erreproduzitzeko ikurra duen laukizuzen batera, «Google Play» errotulua duena."
+    },
+    {
+      "id": "genie-4-project-genie",
+      "seccion": "multimedia",
+      "importancia": 2,
+      "grupo": "edumedia",
+      "antetitulo": "Sortutako munduak",
+      "titular": "Genie 4 Project Geniera iritsi da: aztertu bitartean alda daitezkeen mundu interaktiboak",
+      "entradilla": "Sarbidea Google AI Ultratik hasten da, eta AI Proko harpidedunak itxaron-zerrenda batean izena eman dezakete.",
+      "cuerpo": [
+        "Google DeepMindek Genie 4 gehitu dio [Project Genieri](https://labs.google/projectgenie), testutik mundu interaktiboak sortzen dituen prototipo esperimental bati. [Googleren 2026ko azaroaren 18ko iragarpenaren](https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/) arabera, saioan zehar ingurunea aldatzea ahalbidetzen du jarraibide berriak idatzita (adibidez, eguraldia edo pertsonaiak), eta eszenara egokitzen den audioa gehitzen du. Googlek dioenez, orain arteko bere mundu-eredurik «errealistena eta interaktiboena» da.",
+        "Baldintzak: Google AI Ultraren harpidedun egokiek erabil dezakete abian jartzen denetik, eta Google AI Pro dutenek itxaron-zerrenda batean sar daitezke. Proiektuaren orriak adierazten du 18 urte edo gehiago izan behar direla eta hedapena pixkanakakoa dela; ez orriak ez iragarpenak ez dituzte herrialdeak zehazten. Sortutako bideoak eta audioak ur-marka bat (SynthID) daramate, eta Googlek mugak onartzen ditu, hala nola kamerak duen atzerapena edo elkarrekintza fisiko konplexuekin dagoen zailtasuna.",
+        "Taldean esan zen AI Pro duten batzuek jada sarbidea dutela edo itxaroten ari direla, eta oraingoz ordenagailuan soilik dabilela ohartarazi zen. Gelan erabiltzeari buruz ez dago ezer egiaztaturik: oraingoz proba-tresna bat da, ordainpekoa eta sarbide mugatukoa."
+      ],
+      "fuentes": [
+        {"titulo": "Project Genie update featuring Genie 4 (Google) (ingelesez)", "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/"},
+        {"titulo": "Project Genie (Google Labs) (ingelesez)", "url": "https://labs.google/projectgenie"}
+      ],
+      "mensaje": {"grupo": "edumedia", "id": 12336},
+      "comprobado": "Abiertos el anuncio de blog.google (18-11-2026) y labs.google/projectgenie: edición en sesión, audio nativo, Ultra desde el lanzamiento, lista de espera para Pro, SynthID, limitaciones, «más realista e interactivo»; la página de Labs añade 18 años o más y despliegue gradual. Países no constan. «Solo en ordenador» y el acceso de personas con Pro vienen del grupo, no de la fuente. Sin pieza anterior sobre Genie en el diario (buscado).",
+      "ilustracion": null,
+      "ilustracion_alt": "Bi paisaia markoztatu, «Mundua» eta «Aldatua» errotuluekin: lehenengoan, mendiak eta eguzki bat; bigarrenean, mendi berberak hodei batekin eta euriarekin. Bien artean, «Agindu berria» errotulua duen gezi bat, eta azpian elkarrizketa-globo bat."
+    },
+    {
+      "id": "clark-kozma-medios-aprendizaje",
+      "seccion": "debates",
+      "importancia": 3,
+      "grupo": "chatgpt",
+      "antetitulo": "Laurogeita hamarreko hamarkadako eztabaida bat",
+      "titular": "Clarken eta Kozmaren 1994ko eztabaidak balio du Stanfordeko AAren azterketak irakurtzeko",
+      "entradilla": "Teknologiak ikaskuntzan eragiten ote duen ala metodoa soilik axola ote duen galdetzen duen eztabaida akademiko bat, taldean gogoratua Stanfordeko berrikuspenaren harira.",
+      "cuerpo": [
+        "Egunkariak [azaroaren 19an argitaratu zuen](pieza:2026-11-18/stanford-evidencia-ia-escuela) Stanfordeko berrikuspenak emaitza desberdinak aurkitzen ditu: AAk material berria ulertzen gehiago laguntzen du zereginak egiten baino, eta ez dago erabilera bakar bat ere ikaskuntza modu koherentean hobetzen duenik. Taldean, Richard Clarken eta Robert Kozmaren arteko hedabideei buruzko eztabaida handiaren egungo bertsio gisa irakurri zen; 1994an argitaratu zen Educational Technology Research and Development aldizkarian ([Clark](https://doi.org/10.1007/BF02299088) eta [Kozma](https://doi.org/10.1007/BF02299087)).",
+        "Lehen jarrerak dio hedabideek ez dutela berez ikaskuntzan eragiten: emaitzak hobetzen duena metodo pedagogikoa da, eta hedabidea, hura eramaten duen ibilgailua baino ez. AAri aplikatuta, laguntzaile batek berarekin diseinatutako jarduerak ematen duen adina emango lukeela esango luke. Bigarrenak dio hedabidea eta metodoa ezin direla bereizi, teknologia bakoitzaren ezaugarriek prozesu mentalekin elkarreragiten dutelako eta ezagutza irudikatzeko eta eraikitzeko modu batzuk errazten dituztelako, besteak ez.",
+        "Adierazi zen taldean bigarren jarrera nagusitzen dela, nahiz eta komeni den lehenaren argudioak ez ahaztea. Stanfordeko 52 azterketei aplikatuta, galdera da zerk pisatzen duen gehiago, programak ala erabiltzeko moduak."
+      ],
+      "fuentes": [
+        {"titulo": "Clark, R. E. (1994). Media will never influence learning. Educational Technology Research and Development 42(2) (ingelesez)", "url": "https://doi.org/10.1007/BF02299088"},
+        {"titulo": "Kozma, R. B. (1994). Will media influence learning? Reframing the debate. Educational Technology Research and Development 42(2) (ingelesez)", "url": "https://doi.org/10.1007/BF02299087"},
+        {"titulo": "The Evidence Base on AI in K-12: A November 2026 Review (Stanford SCALE) (ingelesez)", "url": "https://scale.stanford.edu/ai/evidence-base-review/evidence-base-ai-k12-november-review"}
+      ],
+      "mensaje": {"grupo": "chatgpt", "id": 54531},
+      "comprobado": "Abierta la revisión de Stanford: 52 estudios (20 + 32), «ninguno de los dos usos mejora el aprendizaje de forma consistente». Los artículos de Clark y Kozma (ETR&D 42(2), 1994; DOI ...088 y ...087) se confirman por búsqueda; el PDF de Springer no se abre (pide autenticación), por lo que las posturas se atribuyen a la descripción del grupo y a comentarios secundarios coincidentes. Clave pieza:2026-11-18/stanford-evidencia-ia-escuela presente en publicado.txt y trata lo mismo. Quitadas las comillas de «gran discusión» (traducción libre), el «predomina» queda como percepción dicha en el grupo y se ha rebajado «no está claro qué pesa más», que ninguna fuente afirma.",
+      "ilustracion": null,
+      "ilustracion_alt": "Bi erditan banatutako marrazkia. Ezkerrean, «Metodoa» errotulua duen pakete bat «Bitartekoa» errotulua duen kamioi baten gainean, «Clark» izenarekin: bitartekoak metodoa garraiatzen du soilik. Eskuinean, gainjartzen diren bi zirkulu, «Kozma» izenarekin: bitartekoa eta metodoa ezin dira bereizi."
+    },
+    {
+      "id": "diario-reflexivo-docente-ia",
+      "seccion": "debates",
+      "importancia": 3,
+      "grupo": "chatgpt",
+      "antetitulo": "Komunitatearen baliabide bat",
+      "titular": "AArekin egindako irakasle-egunkari hausnarkari batek galdetzen du laguntzaileak irizpidea laguntzen ala ordezkatzen duen",
+      "entradilla": "Master-amaierako lan batek proposatzen du klase bakoitzaren ondoren diktatzea eta laguntzaile batek testua ordenatu eta galderak itzul ditzala; taldeak eztabaidatzen du horrek irizpidea ahultzen duen.",
+      "cuerpo": [
+        "Taldeko kide batek Irakasle Egunkari Hausnarkaria aurkeztu zuen, [Notioneko plantilla doako bat](https://wholesale-puppy-1e3.notion.site/Diario-Reflexivo-Docente-DRD-Plantilla-4067308383df819dac36cf4468677a89), bere egilearen arabera bere master-amaierako lana dena. Irakasleak mugikorretik diktatzen du klasetik irtetean eta bost galderari erantzuten die: zer gertatu den, nola sentitu den, zergatik, zer ustez zuen begi-bistakotzat eta zer aldatuko duen. AA laguntzaile batek diktatua ordenatzen du, «egin ez zenituen galderak» itzultzen ditu eta asteko sintesi bat proposatzen du, irakasleak onartu ala ez. Jarraibideak testua dira, beraz laguntzaile desberdinekin balio dute, eta AArik gabe ere erabil daiteke. Egunkariak ezin izan du plantillaren edukia egiaztatu, ezta nork sinatzen duen edo diktatzen diren datuak nola tratatzen diren ere, webak ez baitu hori adierazten irakurri ahal izan den horretan.",
+        "Jarrera batek dio gutxi gizatiarra dela eta pentsamendu kritikoa delegatzen dela, hausnartzen duen pertsonaren autonomiarentzat arriskuarekin. Besteak erantzuten du idazketa irakaslearena dela, laguntzaileak laguntza-lana egiten duela eta proposamen bakoitza balioztatu behar dela, eta aztertu gabe dena onartzeko arriskua pertsona bakoitzak egiten duen erabileraren araberakoa dela, ez tresnaren araberakoa."
+      ],
+      "fuentes": [
+        {"titulo": "Diario Reflexivo Docente (DRD) · Plantilla (Notion) (gaztelaniaz)", "url": "https://wholesale-puppy-1e3.notion.site/Diario-Reflexivo-Docente-DRD-Plantilla-4067308383df819dac36cf4468677a89"}
+      ],
+      "mensaje": {"grupo": "chatgpt", "id": 54541},
+      "comprobado": "Abierta la plantilla de Notion y la página «quién hay detrás»: solo devuelven el título y la lista de apartados (autor, datos, licencia…), sin contenido ni nombre. Todo lo que describe la plantilla va atribuido a su autor y sale de sus mensajes (#54538, #54541). No consta el nombre del autor ni cómo trata datos; el texto lo dice. Titular cambiado para no atribuir pensamiento al asistente.",
+      "ilustracion": null,
+      "ilustracion_alt": "«Diktatua» errotulua duen mikrofono batek «Sintesia» errotulua duen dokumentu batera eta «Galderak» errotulua duen galdera-ikurreko globo batera garamatza. Dokumentutik gezi bat jaisten da «Irakasleak erabakitzen du» errotulua duen laukizuzen batera."
+    }
+  ],
+  "breves": [
+    {
+      "texto": "Eduvers simulazio-plataformak, egunkariak [azaroaren 12an aurkeztu zuenak](pieza:2026-11-11/eduvers-simulaciones), «Laboratorio XR: Ensayo a la llama» eta giza begiaren simulazio bat ditu dagoeneko linean. Orriak ez du azaltzen laborategiak zer eskakizun dituen ez nork egiten duen.",
+      "url": "https://eduvers.org/es/fisica-quimica/simulaciones/ojo/",
+      "grupo": "vce",
+      "mensaje": {"grupo": "vce", "id": 15145}
+    }
+  ],
+  "descartado": [
+    "Llegada de GPT-6.2 a ChatGPT (#54506): el modelo ya salió en el breve sobre la guía de ChatGPT Learn y la captura solo muestra un menú; no se busca fuente nueva.",
+    "Gemini 4 Neon y Gemini 4 Carbon en la aplicación (#12340): solo una captura del menú; sin fuente oficial leída.",
+    "Iniciativa de alfabetización en IA de Canadá (#54533): es del tema Biblioteca digital, tiene su sección.",
+    "Debate sobre el idioma en Vibe Coding Educativo: administración interna del grupo; Higgsfield y la tabla periódica en realidad aumentada: solo enlaces a X sin otra fuente.",
+    "Tool Retrieval en la API de Gemini (#12347): solo un enlace a X; se buscó en la web su anuncio oficial y no aparece, así que no se publica.",
+    "Hilos temporales del Modo IA, Suno Visuals, Kling Image 4.0, guía de GPT-6.2 y Umami: ya publicados."
+  ],
+  "repaso": [
+    "Gemini: titular y entradilla en futuro (el cambio aún no estaba en las cuentas); fecha de la página de ayuda corregida a 17 de noviembre; lo de las cuentas de centro, ceñido a lo que dice la página.",
+    "Genie 4: añadidos 18 años o más y despliegue gradual, de la página de Project Genie.",
+    "Clark y Kozma: titular rebajado (no es Stanford quien reaviva el debate, sino una lectura del grupo); quitadas comillas de una traducción libre; la inferencia «no está claro qué pesa más» pasa a pregunta; añadidos enlaces a los dos artículos de 1994.",
+    "Diario reflexivo: titular sin atribuir pensamiento al asistente; añadido que no consta cómo trata los datos.",
+    "AI Studio y breve de Eduvers, sin cambios; confirmados contra el anuncio y las páginas de Eduvers. Descartados: añadida la búsqueda de Tool Retrieval, sin fuente oficial."
+  ]
+}

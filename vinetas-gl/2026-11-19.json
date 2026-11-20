@@ -1,0 +1,90 @@
+{
+ "fecha": "2026-11-19",
+ "elegida": {
+  "n": 4,
+  "pieza": "genie-4-project-genie",
+  "idea": "Algoritmo presume dunha IA que crea mundos enteiros cun texto mentres Xiz loita coa fotocopiadora atascada; ao saber que a esa IA lle custan as interaccións físicas complexas, Xiz sinala a máquina: «Xa somos dous». Remata Xiz, que se ri de si mesma e non de Algoritmo.",
+  "guion": {
+   "vinetas": [
+    {
+     "cartela": "Ante a fotocopiadora, falando de mundos virtuais.",
+     "escenario": "fotocopiadora",
+     "tiza": {
+      "expresion": "enfadado",
+      "postura": "jarras",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "orgulloso",
+      "postura": "arriba",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Outra vez atascada.",
+       "tipo": "habla"
+      },
+      {
+       "quien": "algoritmo",
+       "texto": "Unha IA que crea mundos enteiros cun texto e cámbiaos sobre a marcha!",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "fotocopiadora",
+     "tiza": {
+      "expresion": "harto",
+      "postura": "cruzar",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "avergonzado",
+      "postura": "encoger",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "E que pega ten?",
+       "tipo": "habla"
+      },
+      {
+       "quien": "algoritmo",
+       "texto": "Custan as interaccións físicas complexas.",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "fotocopiadora",
+     "tiza": {
+      "expresion": "agotado",
+      "postura": "senalar",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "pensativo",
+      "postura": "pensar",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Xa somos dous.",
+       "tipo": "habla"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "traduccion": "automática con IA"
+}

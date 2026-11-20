@@ -1,0 +1,133 @@
+{
+ "fecha": "2026-11-19",
+ "elegida": {
+  "n": 4,
+  "pieza": "genie-4-project-genie",
+  "idea": "Algoritmo presume de una IA que crea mundos enteros con un texto mientras Tiza pelea con la fotocopiadora atascada; al saber que a esa IA le cuestan las interacciones físicas complejas, Tiza señala la máquina: «Ya somos dos». Remata Tiza, que se ríe de sí misma y no de Algoritmo.",
+  "guion": {
+   "vinetas": [
+    {
+     "cartela": "Ante la fotocopiadora, hablando de mundos virtuales.",
+     "escenario": "fotocopiadora",
+     "tiza": {
+      "expresion": "enfadado",
+      "postura": "jarras",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "orgulloso",
+      "postura": "arriba",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Otra vez atascada.",
+       "tipo": "habla"
+      },
+      {
+       "quien": "algoritmo",
+       "texto": "¡Una IA que crea mundos enteros con un texto y los cambia sobre la marcha!",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "fotocopiadora",
+     "tiza": {
+      "expresion": "harto",
+      "postura": "cruzar",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "avergonzado",
+      "postura": "encoger",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "¿Y qué pega tiene?",
+       "tipo": "habla"
+      },
+      {
+       "quien": "algoritmo",
+       "texto": "Le cuestan las interacciones físicas complejas.",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "fotocopiadora",
+     "tiza": {
+      "expresion": "agotado",
+      "postura": "senalar",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "pensativo",
+      "postura": "pensar",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Ya somos dos.",
+       "tipo": "habla"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "motivo": "La 4 tiene el mejor remate de las cinco: «Ya somos dos» son tres palabras, llegan por sorpresa y juntan de golpe las dos escenas que la tira llevaba en paralelo, la IA que fabrica mundos y la docente que no puede con una fotocopiadora. La jerga de la limitación («interacciones físicas complejas») es justo lo que hace gracia al caer sobre un atasco de papel, y la fotocopiadora la reconoce cualquier docente sin haber leído la noticia. Los datos son los de la pieza y no añade ninguno: mundos a partir de texto, que se cambian durante la sesión, y la dificultad reconocida con las interacciones físicas complejas. No nombra a la empresa ni al producto, y de quien se ríe Tiza es de sí misma. Su gracia llega a 7, así que solo se ha afinado lo justo. La 2 tiene una frase final muy buena («Si no me las había hecho, por algo sería»), pero el blanco es el lema literal del recurso que ha presentado un miembro del grupo, su trabajo de fin de máster, y la tira toma partido contra él en un debate que el artículo deja abierto: roza la prohibición de reírse de autores de recursos; además acaba con Tiza harta, el final más gastado. La 3 tiene un remate con carácter (Algoritmo se apunta los aciertos y deja los fallos al método), pero necesita un primer bocadillo de 82 caracteres para explicar un debate académico y el remate son dos frases: llega más despacio. La 1 es simpática («pido traslado al emulador») pero depende de saber qué es un emulador, y la segunda viñeta ya adelanta medio chiste. La 5 es la más floja: seis bocadillos, el primero de 84 caracteres, se va en explicar la noticia, estira «enviar un comentario» hasta «corregir» y el remate llega en dos pasos, el segundo explicando el primero. Ninguna se inventa datos de la noticia; las cinco caben.",
+ "retoques": "Primera viñeta, bocadillo de Algoritmo: «¡Una IA que crea mundos enteros con un texto y los cambia sobre la marcha!» en vez de «¡Mundos enteros creados con un texto, y los cambias mientras los exploras!»: dice de qué se habla (una IA), que es lo que permite entender después «¿qué pega tiene?» y «le cuestan» sin haber leído la noticia. Tiene los mismos 74 caracteres que el original; el primer bocadillo de esa viñeta («Otra vez atascada.») no se toca. No he podido volver a pasar la comprobación de si cabe: conviene repetirla. Segunda viñeta, bocadillo de Algoritmo: «Le cuestan las interacciones físicas complejas.» en vez de «Reconocen que le cuestan…»: sobraba un sujeto que no sale en la tira, y la cara avergonzada ya dice que lo reconoce; queda más corto (47 caracteres) y la jerga llega limpia al remate. El remate no se toca. Rótulo: está, tiene 52 caracteres y sitúa (dónde están y de qué hablan) sin adelantar el chiste; se deja. Escenario fotocopiadora: libre (no salió en los tres números anteriores) y es el chiste mismo; la máquina se dibuja en el centro, así que Tiza la señala en la tercera viñeta al decir «Ya somos dos». Sin objeto: el centro lo ocupa la fotocopiadora. Caras: Algoritmo pasa de «contento» (su cara más repetida, cuatro veces) a «orgulloso» en la primera viñeta, que es presumir y hace mayor la caída a «avergonzado» en la segunda; Tiza pasa de «pensativo» a «harto» en la segunda (el «¿y qué pega tiene?» es de retranca, no de duda), con lo que recorre tres caras que no habían salido: enfadada, harta y agotada. Posturas: se dejan; Tiza usa jarras, cruzar y señalar, y Algoritmo acaba en «pensar», que no había usado; «arriba» en la primera viñeta está entre sus repetidas, pero el chiste la pide (el entusiasmo ajeno al atasco). El molde: remata Tiza, como en el número anterior, pero los dos últimos remates no son del mismo personaje y el chiste es de otro tipo (ayer el chasco fue de Algoritmo; hoy Tiza se reconoce en el fallo de la máquina); acaban Tiza agotada y Algoritmo pensativo, que no repiten ningún final de los tres números anteriores. Ningún bocadillo pasa de 90 caracteres (el más largo, 74).",
+ "puntuaciones": [
+  {
+   "n": 1,
+   "gracia": 7,
+   "claridad": 6,
+   "remate": 7,
+   "prohibiciones": "respeta",
+   "cabe": true
+  },
+  {
+   "n": 2,
+   "gracia": 7,
+   "claridad": 8,
+   "remate": 8,
+   "prohibiciones": "respeta, pero la roza: el blanco es el lema literal del recurso de un miembro del grupo",
+   "cabe": true
+  },
+  {
+   "n": 3,
+   "gracia": 7,
+   "claridad": 6,
+   "remate": 7,
+   "prohibiciones": "respeta",
+   "cabe": true
+  },
+  {
+   "n": 4,
+   "gracia": 8,
+   "claridad": 8,
+   "remate": 9,
+   "prohibiciones": "respeta",
+   "cabe": true
+  },
+  {
+   "n": 5,
+   "gracia": 6,
+   "claridad": 6,
+   "remate": 6,
+   "prohibiciones": "respeta",
+   "cabe": true
+  }
+ ]
+}

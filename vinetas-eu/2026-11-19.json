@@ -1,0 +1,99 @@
+{
+ "fecha": "2026-11-19",
+ "elegida": {
+  "n": 4,
+  "pieza": "genie-4-project-genie",
+  "idea": "Algoritmok testu batekin mundu osoak sortzen dituen AA batez harro hitz egiten du, Tiza fotokopiagailu trabatuarekin borrokan ari den bitartean; AA horri elkarrekintza fisiko konplexuak zailak zaizkiola jakitean, Tizak makina seinalatzen du: «Bi gara, orduan». Tizak borobiltzen du, bere buruaz barre eginez eta ez Algoritmoz.",
+  "guion": {
+   "vinetas": [
+    {
+     "cartela": "Fotokopiagailuaren aurrean, mundu birtualez hizketan.",
+     "escenario": "fotocopiadora",
+     "tiza": {
+      "expresion": "enfadado",
+      "postura": "jarras",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "orgulloso",
+      "postura": "arriba",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Berriz ere trabatuta.",
+       "tipo": "habla"
+      },
+      {
+       "quien": "algoritmo",
+       "texto": "Testu batekin mundu osoak sortzen dituen AA bat, eta bidean aldatu ere egiten ditu!",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "fotocopiadora",
+     "tiza": {
+      "expresion": "harto",
+      "postura": "cruzar",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "avergonzado",
+      "postura": "encoger",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Eta zer eragozpen du?",
+       "tipo": "habla"
+      },
+      {
+       "quien": "algoritmo",
+       "texto": "Elkarrekintza fisiko konplexuak zailak zaizkio.",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "fotocopiadora",
+     "tiza": {
+      "expresion": "agotado",
+      "postura": "senalar",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "pensativo",
+      "postura": "pensar",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Bi gara, orduan.",
+       "tipo": "habla"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "motivo": "Texto traducido al euskera: «Ya somos dos» es el remate, que junta la IA que fabrica mundos y la docente que no puede con la fotocopiadora.",
+ "retoques": "Texto traducido al euskera; rótulo de 53 caracteres; ningún bocadillo pasa de 90 caracteres.",
+ "puntuaciones": [
+  {"n": 1, "gracia": 7, "claridad": 6, "remate": 7, "prohibiciones": "respeta", "cabe": true},
+  {"n": 2, "gracia": 7, "claridad": 8, "remate": 8, "prohibiciones": "respeta", "cabe": true},
+  {"n": 3, "gracia": 7, "claridad": 6, "remate": 7, "prohibiciones": "respeta", "cabe": true},
+  {"n": 4, "gracia": 8, "claridad": 8, "remate": 9, "prohibiciones": "respeta", "cabe": true},
+  {"n": 5, "gracia": 6, "claridad": 6, "remate": 6, "prohibiciones": "respeta", "cabe": true}
+ ],
+ "traduccion": "itzulpen automatikoa AArekin"
+}

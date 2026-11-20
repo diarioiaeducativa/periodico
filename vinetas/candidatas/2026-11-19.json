@@ -1,0 +1,430 @@
+{
+ "fecha": "2026-11-19",
+ "candidatas": [
+  {
+   "pieza": "ai-studio-apps-android",
+   "idea": "Tiza pide una aplicación para que las reuniones acaben a su hora; Algoritmo la hace con una frase y la prueba en el emulador, donde todas acaban puntuales, y Tiza pide traslado al emulador.",
+   "guion": {
+    "vinetas": [
+     {
+      "cartela": "En dirección, tras una reunión de tres horas.",
+      "escenario": "despacho",
+      "tiza": {
+       "expresion": "agotado",
+       "postura": "abajo",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "orgulloso",
+       "postura": "cruzar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "reloj",
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "Quiero una aplicación para que las reuniones acaben a su hora.",
+        "tipo": "habla"
+       },
+       {
+        "quien": "algoritmo",
+        "texto": "Con esa frase me basta: te la hago entera.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "despacho",
+      "tiza": {
+       "expresion": "sorprendido",
+       "postura": "abajo",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "contento",
+       "postura": "arriba",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "reloj",
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "Hecha. Y probada en el emulador: allí todas acaban a su hora.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "despacho",
+      "tiza": {
+       "expresion": "pensativo",
+       "postura": "pensar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "sorprendido",
+       "postura": "cabeza",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "reloj",
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "Pues pido traslado al emulador.",
+        "tipo": "habla"
+       }
+      ]
+     }
+    ]
+   },
+   "cabe": true
+  },
+  {
+   "pieza": "diario-reflexivo-docente-ia",
+   "idea": "Tiza dicta su diario reflexivo al acabar la clase y Algoritmo le devuelve «las preguntas que no te habías hecho»; Tiza: «Si no me las había hecho, por algo sería».",
+   "guion": {
+    "vinetas": [
+     {
+      "cartela": "Al acabar la clase, dictando el diario reflexivo.",
+      "escenario": "aula",
+      "tiza": {
+       "expresion": "agotado",
+       "postura": "sostener",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "cargando",
+       "postura": "abajo",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "movil",
+      "lleva": "tiza",
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "Qué ha pasado, cómo me he sentido y por qué. Todo dictado.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "aula",
+      "tiza": {
+       "expresion": "preocupado",
+       "postura": "sostener",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "orgulloso",
+       "postura": "arriba",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "movil",
+      "lleva": "tiza",
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "Ordenado. Ahora te devuelvo las preguntas que no te habías hecho.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "aula",
+      "tiza": {
+       "expresion": "harto",
+       "postura": "cruzar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "preocupado",
+       "postura": "encoger",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "Si no me las había hecho, por algo sería.",
+        "tipo": "habla"
+       }
+      ]
+     }
+    ]
+   },
+   "cabe": true
+  },
+  {
+   "pieza": "clark-kozma-medios-aprendizaje",
+   "idea": "Ante el debate de 1994 sobre si influye la tecnología o solo el método, Algoritmo elige bando según el día: si la clase sale bien, fue la tecnología; si sale mal, era el método.",
+   "guion": {
+    "vinetas": [
+     {
+      "cartela": "En la sala de profes, con un debate de 1994.",
+      "escenario": "sala_profes",
+      "tiza": {
+       "expresion": "pensativo",
+       "postura": "pensar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "neutral",
+       "postura": "abajo",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "Debate de 1994: ¿influye la tecnología en el aprendizaje o solo importa el método?",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "sala_profes",
+      "tiza": {
+       "expresion": "contento",
+       "postura": "senalar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "pensativo",
+       "postura": "pensar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "Y tú, ¿de qué lado estás?",
+        "tipo": "habla"
+       },
+       {
+        "quien": "algoritmo",
+        "texto": "Depende del día.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "sala_profes",
+      "tiza": {
+       "expresion": "riendo",
+       "postura": "cabeza",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "orgulloso",
+       "postura": "cruzar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "Si la clase sale bien, fue la tecnología. Si sale mal, era el método.",
+        "tipo": "habla"
+       }
+      ]
+     }
+    ]
+   },
+   "cabe": true
+  },
+  {
+   "pieza": "genie-4-project-genie",
+   "idea": "Algoritmo presume de mundos enteros creados con un texto mientras Tiza pelea con la fotocopiadora; al saber que al modelo le cuestan las interacciones físicas complejas, Tiza: «Ya somos dos».",
+   "guion": {
+    "vinetas": [
+     {
+      "cartela": "Ante la fotocopiadora, hablando de mundos virtuales.",
+      "escenario": "fotocopiadora",
+      "tiza": {
+       "expresion": "enfadado",
+       "postura": "jarras",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "contento",
+       "postura": "arriba",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "Otra vez atascada.",
+        "tipo": "habla"
+       },
+       {
+        "quien": "algoritmo",
+        "texto": "¡Mundos enteros creados con un texto, y los cambias mientras los exploras!",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "fotocopiadora",
+      "tiza": {
+       "expresion": "pensativo",
+       "postura": "cruzar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "avergonzado",
+       "postura": "encoger",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "¿Y qué pega tiene?",
+        "tipo": "habla"
+       },
+       {
+        "quien": "algoritmo",
+        "texto": "Reconocen que le cuestan las interacciones físicas complejas.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "fotocopiadora",
+      "tiza": {
+       "expresion": "agotado",
+       "postura": "senalar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "pensativo",
+       "postura": "pensar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "Ya somos dos.",
+        "tipo": "habla"
+       }
+      ]
+     }
+    ]
+   },
+   "cabe": true
+  },
+  {
+   "pieza": "gemini-historial-entrenamiento",
+   "idea": "Tiza apaga el permiso para entrenar y Algoritmo aclara que solo se aprenderá de ella si comenta una respuesta, o sea, cuando le corrija; el chasco es suyo: «Pues voy a aprender muchísimo».",
+   "guion": {
+    "vinetas": [
+     {
+      "cartela": "De noche, en casa, con los ajustes de privacidad.",
+      "escenario": "casa_noche",
+      "tiza": {
+       "expresion": "pensativo",
+       "postura": "pensar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "neutral",
+       "postura": "senalar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "portatil",
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "Habrá dos ajustes: uno para guardar mis conversaciones y otro para entrenar a la IA.",
+        "tipo": "habla"
+       },
+       {
+        "quien": "algoritmo",
+        "texto": "Hasta ahora iban en uno solo.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "casa_noche",
+      "tiza": {
+       "expresion": "neutral",
+       "postura": "senalar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "pensativo",
+       "postura": "pensar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "portatil",
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "Pues el segundo, apagado. De mí ya no aprendes nada.",
+        "tipo": "habla"
+       },
+       {
+        "quien": "algoritmo",
+        "texto": "Nada. Salvo si envías un comentario sobre una respuesta.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "casa_noche",
+      "tiza": {
+       "expresion": "riendo",
+       "postura": "jarras",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "avergonzado",
+       "postura": "encoger",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "portatil",
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "O sea, solo cuando te corrijo.",
+        "tipo": "habla"
+       },
+       {
+        "quien": "algoritmo",
+        "texto": "Pues voy a aprender muchísimo.",
+        "tipo": "habla"
+       }
+      ]
+     }
+    ]
+   },
+   "cabe": true
+  }
+ ]
+}

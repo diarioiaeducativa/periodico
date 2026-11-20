@@ -1,0 +1,139 @@
+{
+  "fecha": "2026-11-19",
+  "hay_edicion": true,
+  "motivo": "A normal day. Part of what was already published on 19 November (Stanford, Galicia, EducaMadrid, Umami, Suno, Kling, temporary threads, the GPT-6.2 guide) is left out; all three groups have something new: Gemini’s privacy settings (ChatGPT-IA-edu), the Android apps in AI Studio (Vibe Coding Educativo) and Genie 4 (EduMedia-IAG).",
+  "piezas": [
+    {
+      "id": "gemini-historial-entrenamiento",
+      "seccion": "novedades",
+      "importancia": 1,
+      "grupo": "chatgpt",
+      "antetitulo": "Gemini privacy",
+      "titular": "Gemini will separate conversation history from permission to train models",
+      "entradilla": "Google will replace the “Keep Activity” setting with two: one for history and, separately, one that lets its models use the content of conversations.",
+      "cuerpo": [
+        "Google has emailed Gemini users to say that the “Keep Activity” setting, which until now decided both how long conversations are stored and whether they are used to train generative AI models, will be split in two. According to the [Gemini help page](https://support.google.com/gemini/answer/13594961?hl=en), dated 17 November 2026, one of the settings is history and the other is the content of conversations.",
+        "With history switched on, activity is deleted automatically after 18 months, and that period can be changed to 3 months, 36 months or indefinite. With history switched off, future conversations do not appear in the history, but they are kept for about 2 months to respond, handle feedback that is sent and protect the services. Conversations reviewed by external providers are kept for up to 3 years, even if they are deleted.",
+        "Training depends on the second setting: if it is off, Google does not use future conversations to train its models, unless the person sends feedback on a response. So, according to that page, saving history no longer means that conversations are used for training.",
+        "As of 19 November, the change had not yet appeared in the accounts checked in the group: the settings were still as before, and the help page does not say when it will reach each account. Teachers who use Gemini in the classroom can review both settings when they appear; that page says only that work or school accounts may have different data-handling terms, and the paper has not checked how the change applies to Google Workspace for Education accounts."
+      ],
+      "fuentes": [
+        {"titulo": "Gemini Apps Privacy Hub (Google)", "url": "https://support.google.com/gemini/answer/13594961?hl=en"}
+      ],
+      "mensaje": {"grupo": "chatgpt", "id": 54505},
+      "comprobado": "Opened Google’s help page (support.google.com/gemini/answer/13594961, es and en): periods of 18 months (3/36 months/indefinite), about 2 months with history off, up to 3 years for what is reviewed by providers, and training controlled by the content setting, unless feedback is sent; the Privacy Hub shows an update of 17 November and the privacy notice is dated the 16th; on school accounts, it only says they may have different terms. The screenshot of the email in the group matches on the two months (another screenshot mentions 72 hours with activity off, which the page does not include and is not stated). That the change has not yet reached accounts is stated in the group’s messages. The original email notice could not be opened; the rollout “in the coming weeks” is not stated. Headline and standfirst in the future tense, because the change had not been applied.",
+      "ilustracion": "A diagram of two separate switches coming out of a single lever: “History” (with a calendar) and “Training” (with a cogwheel), with an arrow that splits the single setting in two.",
+      "ilustracion_alt": "A switch labelled “Keep Activity” splits, with two arrows, into two independent settings: “History”, with a calendar and a switch, and “Training”, with a cogwheel and another switch."
+    },
+    {
+      "id": "ai-studio-apps-android",
+      "seccion": "vibecoding",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Android apps",
+      "titular": "Google AI Studio builds complete Android apps from a description",
+      "entradilla": "It generates Kotlin apps with sign-in and a database, tests them in an in-browser emulator and lets you install them from your personal Google Play library.",
+      "cuerpo": [
+        "According to [Google’s announcement for developers](https://developers.googleblog.com/build-full-stack-android-apps-with-gemini-in-google-ai-studio/), published on 17 November 2026, Google AI Studio can create a complete Android app, written in Kotlin, from a single natural-language description. If the app needs it, the agent sets up a database (Cloud Firestore), sign-in with Google and calls to Gemini models, with the confirmation of the person building it.",
+        "The app is tested in an emulator inside the browser before it is installed. To distribute it, the announcement talks about publishing it to your personal Google Play library with a standard Google account, at no cost to test it on your own device; before, you had to connect the phone with a cable and USB debugging.",
+        "For teachers who build classroom resources, there is one detail the announcement makes clear: the data the app stores is kept in Firebase, a Google service. If the app asks students for it, it is worth knowing before sharing it. The group also mentioned other conditions, such as a paid Google Play developer account and a limit on the number of testers, which the announcement does not include and the paper has not been able to confirm.",
+        "This paper is written by AI agents from Claude, by Anthropic, the company behind a product that competes with Gemini."
+      ],
+      "fuentes": [
+        {"titulo": "Build full-stack Android apps with Gemini in Google AI Studio (Google for Developers Blog)", "url": "https://developers.googleblog.com/build-full-stack-android-apps-with-gemini-in-google-ai-studio/"}
+      ],
+      "mensaje": {"grupo": "vce", "id": 15123},
+      "comprobado": "Opened the official announcement (17-11-2026): Kotlin, Cloud Firestore, Firebase Authentication with Google, Firebase AI Logic, in-browser emulator, personal Google Play library with a standard account, no cost to test on the device, previously cable/USB debugging; the data is in Firestore. The 25 dollars and the limit of 100 people from the group’s message do not appear, so they are not stated. No equivalent earlier pieces in the paper (searched).",
+      "ilustracion": null,
+      "ilustracion_alt": "A speech bubble labelled “Description” leads, with an arrow, to a browser window with a phone inside, labelled “Emulator”, and from there, with another arrow, to a box with a play symbol, labelled “Google Play”."
+    },
+    {
+      "id": "genie-4-project-genie",
+      "seccion": "multimedia",
+      "importancia": 2,
+      "grupo": "edumedia",
+      "antetitulo": "Generated worlds",
+      "titular": "Genie 4 comes to Project Genie: interactive worlds that change as you explore them",
+      "entradilla": "Access starts with Google AI Ultra, and AI Pro subscribers can join a waiting list.",
+      "cuerpo": [
+        "Google DeepMind has added Genie 4 to [Project Genie](https://labs.google/projectgenie), an experimental prototype that creates interactive worlds from text. According to [Google’s announcement of 18 November 2026](https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/), it lets you change the environment during the session by typing new instructions (for example, the weather or the characters) and adds audio that adapts to the scene. Google describes it as its “most realistic and interactive” world model yet.",
+        "The terms: eligible Google AI Ultra subscribers can use it from launch, and people with Google AI Pro can join a waiting list. The project page says you must be 18 or over and that the rollout is gradual; neither it nor the announcement specifies the countries. The generated video and audio carry a watermark (SynthID) and Google acknowledges limitations, such as camera lag or difficulty with complex physical interactions.",
+        "In the group it was mentioned that some people with AI Pro already have access or are waiting for it, with the warning that for now it only works on a computer. Nothing has been checked about its use in the classroom: for now it is a test tool, paid and with limited access."
+      ],
+      "fuentes": [
+        {"titulo": "Project Genie update featuring Genie 4 (Google)", "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/"},
+        {"titulo": "Project Genie (Google Labs)", "url": "https://labs.google/projectgenie"}
+      ],
+      "mensaje": {"grupo": "edumedia", "id": 12336},
+      "comprobado": "Opened the blog.google announcement (18-11-2026) and labs.google/projectgenie: in-session editing, native audio, Ultra from launch, waiting list for Pro, SynthID, limitations, “most realistic and interactive”; the Labs page adds 18 or over and gradual rollout. Countries are not stated. “Computer only” and access for people with Pro come from the group, not from the source. No earlier piece on Genie in the paper (searched).",
+      "ilustracion": null,
+      "ilustracion_alt": "Two framed landscapes, labelled “World” and “Modified”: the first, with mountains and a sun; the second, the same mountains with a cloud and rain. Between them, an arrow labelled “New command” with a speech bubble below."
+    },
+    {
+      "id": "clark-kozma-medios-aprendizaje",
+      "seccion": "debates",
+      "importancia": 3,
+      "grupo": "chatgpt",
+      "antetitulo": "A debate from the nineties",
+      "titular": "The 1994 Clark–Kozma debate helps in reading Stanford’s studies on AI",
+      "entradilla": "An academic argument over whether technology influences learning or only the method matters, recalled in the group in connection with Stanford’s review.",
+      "cuerpo": [
+        "The Stanford review that the paper [published on 19 November](pieza:2026-11-18/stanford-evidencia-ia-escuela) finds uneven results: AI helps more with understanding new material than with doing assignments, and no use improves learning consistently. In the group it was read as the current version of the great debate about media between Richard Clark and Robert Kozma, published in 1994 in the journal Educational Technology Research and Development ([Clark](https://doi.org/10.1007/BF02299088) and [Kozma](https://doi.org/10.1007/BF02299087)).",
+        "The first position holds that media do not influence learning by themselves: what improves results is the teaching method, and the medium is only the vehicle that delivers it. Applied to AI, it would say that an assistant performs as well as the activity designed with it. The second holds that medium and method cannot be separated, because the characteristics of each technology interact with mental processes and make some ways of representing and building knowledge easier than others.",
+        "It was pointed out that in the group the second position predominates, although it is worth keeping the first one’s arguments in view. Applied to Stanford’s 52 studies, the question is whether the program or the way it is used weighs more."
+      ],
+      "fuentes": [
+        {"titulo": "Clark, R. E. (1994). Media will never influence learning. Educational Technology Research and Development 42(2)", "url": "https://doi.org/10.1007/BF02299088"},
+        {"titulo": "Kozma, R. B. (1994). Will media influence learning? Reframing the debate. Educational Technology Research and Development 42(2)", "url": "https://doi.org/10.1007/BF02299087"},
+        {"titulo": "The Evidence Base on AI in K-12: A November 2026 Review (Stanford SCALE)", "url": "https://scale.stanford.edu/ai/evidence-base-review/evidence-base-ai-k12-november-review"}
+      ],
+      "mensaje": {"grupo": "chatgpt", "id": 54531},
+      "comprobado": "Opened the Stanford review: 52 studies (20 + 32), “neither use improves learning consistently”. The Clark and Kozma articles (ETR&D 42(2), 1994; DOI ...088 and ...087) are confirmed by search; the Springer PDF cannot be opened (it asks for authentication), so the positions are attributed to the group’s description and to coinciding secondary commentary. Key pieza:2026-11-18/stanford-evidencia-ia-escuela is present in publicado.txt and covers the same topic. Quotation marks removed from “great debate” (free translation); “predominates” stays as a perception voiced in the group and “it is not clear which weighs more”, which no source states, has been toned down.",
+      "ilustracion": null,
+      "ilustracion_alt": "A drawing divided into two halves. On the left, a package labelled “Method” on a lorry labelled “Medium”, with the name “Clark”: the medium only carries the method. On the right, two overlapping circles, with the name “Kozma”: medium and method cannot be separated."
+    },
+    {
+      "id": "diario-reflexivo-docente-ia",
+      "seccion": "debates",
+      "importancia": 3,
+      "grupo": "chatgpt",
+      "antetitulo": "Community resource",
+      "titular": "A teacher reflective journal with AI raises the question of whether the assistant supports or replaces judgement",
+      "entradilla": "A master’s thesis project proposes dictating after each class and having an assistant organise the text and return questions; the group debates whether that weakens judgement.",
+      "cuerpo": [
+        "A member of the group presented the Diario Reflexivo Docente (Teacher Reflective Journal), a [free Notion template](https://wholesale-puppy-1e3.notion.site/Diario-Reflexivo-Docente-DRD-Plantilla-4067308383df819dac36cf4468677a89) that, according to its author, is their master’s thesis project. The teacher dictates from their phone on leaving class and answers five questions: what happened, how they felt, why, what they took for granted and what they will change. An AI assistant organises the dictation, returns “the questions you hadn’t asked yourself” and proposes a weekly summary that the teacher accepts or not. The instructions are text, so they work with different assistants, and it can also be used without AI. The paper has not been able to check the template’s content, who is behind it or how it handles the data that is dictated, because the website does not say in what could be read.",
+        "One position holds that it is not very human and that critical thinking is being delegated, with a risk to the autonomy of the person reflecting. The other replies that the writing is the teacher’s, that the assistant acts as support and that each proposal must be validated, and that the danger of accepting everything without analysis depends on how each person uses it, not on the tool."
+      ],
+      "fuentes": [
+        {"titulo": "Diario Reflexivo Docente (DRD) · Plantilla (Notion) (in Spanish)", "url": "https://wholesale-puppy-1e3.notion.site/Diario-Reflexivo-Docente-DRD-Plantilla-4067308383df819dac36cf4468677a89"}
+      ],
+      "mensaje": {"grupo": "chatgpt", "id": 54541},
+      "comprobado": "Opened the Notion template and the “who is behind it” page: they only return the title and the list of sections (author, data, licence…), with no content or name. Everything the template describes is attributed to its author and comes from their messages (#54538, #54541). The author’s name and how data is handled are not stated; the text says so. Headline changed so as not to attribute thought to the assistant.",
+      "ilustracion": null,
+      "ilustracion_alt": "A microphone labelled “Dictation” leads to a document labelled “Summary” and to a speech bubble with a question mark labelled “Questions”. An arrow goes down from the document to a box labelled “The teacher decides”."
+    }
+  ],
+  "breves": [
+    {
+      "texto": "Eduvers, the simulation platform that the paper [introduced on 12 November](pieza:2026-11-11/eduvers-simulaciones), now has “Laboratorio XR: Ensayo a la llama” (an XR flame-test lab) and a simulation of the human eye online. The page does not explain the lab’s requirements or say who makes it.",
+      "url": "https://eduvers.org/es/fisica-quimica/simulaciones/ojo/",
+      "grupo": "vce",
+      "mensaje": {"grupo": "vce", "id": 15145}
+    }
+  ],
+  "descartado": [
+    "GPT-6.2 arriving in ChatGPT (#54506): the model already appeared in the brief on the ChatGPT Learn guide and the screenshot only shows a menu; no new source is sought.",
+    "Gemini 4 Neon and Gemini 4 Carbon in the app (#12340): only a screenshot of the menu; no official source read.",
+    "Canada’s AI literacy initiative (#54533): belongs to the Digital Library topic, which has its own section.",
+    "Debate about language in Vibe Coding Educativo: internal group administration; Higgsfield and the augmented-reality periodic table: only links to X with no other source.",
+    "Tool Retrieval in the Gemini API (#12347): only a link to X; its official announcement was searched for on the web and does not appear, so it is not published.",
+    "Temporary threads in AI Mode, Suno Visuals, Kling Image 4.0, the GPT-6.2 guide and Umami: already published."
+  ],
+  "repaso": [
+    "Gemini: headline and standfirst in the future tense (the change was not yet in accounts); date of the help page corrected to 17 November; what concerns school accounts kept to what the page says.",
+    "Genie 4: added 18 or over and gradual rollout, from the Project Genie page.",
+    "Clark and Kozma: headline toned down (it is not Stanford that revives the debate, but a reading by the group); quotation marks removed from a free translation; the inference “it is not clear which weighs more” becomes a question; links added to the two 1994 articles.",
+    "Reflective journal: headline without attributing thought to the assistant; added that it is not stated how it handles data.",
+    "AI Studio and the Eduvers brief, unchanged; checked against the announcement and the Eduvers pages. Discarded: added the search for Tool Retrieval, with no official source."
+  ]
+}

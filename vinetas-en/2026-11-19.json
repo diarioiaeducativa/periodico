@@ -1,0 +1,90 @@
+{
+ "fecha": "2026-11-19",
+ "elegida": {
+  "n": 4,
+  "pieza": "genie-4-project-genie",
+  "idea": "Algorithm boasts about an AI that creates whole worlds from a text while Chalk fights with the jammed photocopier; on learning that this AI struggles with complex physical interactions, Chalk points at the machine: “That makes two of us.” Chalk delivers the punchline, laughing at themself and not at Algorithm.",
+  "guion": {
+   "vinetas": [
+    {
+     "cartela": "By the photocopier, talking about virtual worlds.",
+     "escenario": "fotocopiadora",
+     "tiza": {
+      "expresion": "enfadado",
+      "postura": "jarras",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "orgulloso",
+      "postura": "arriba",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Jammed again.",
+       "tipo": "habla"
+      },
+      {
+       "quien": "algoritmo",
+       "texto": "An AI that creates whole worlds from a text and changes them on the fly!",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "fotocopiadora",
+     "tiza": {
+      "expresion": "harto",
+      "postura": "cruzar",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "avergonzado",
+      "postura": "encoger",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "What’s the catch?",
+       "tipo": "habla"
+      },
+      {
+       "quien": "algoritmo",
+       "texto": "It struggles with complex physical interactions.",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "fotocopiadora",
+     "tiza": {
+      "expresion": "agotado",
+      "postura": "senalar",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "pensativo",
+      "postura": "pensar",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "That makes two of us.",
+       "tipo": "habla"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "traduccion": "automatic AI translation"
+}
