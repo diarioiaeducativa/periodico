@@ -189,6 +189,16 @@ def informe(fecha):
         t.append(f"• «Hace un año»: sí{' (escrito por adelantado)' if adelantado else ''}.")
     else:
         t.append("• Sin «Hace un año».")
+    # El corrector de estilo (ADR 0083): cuántos cambios aplicó y cuántos se descartaron por tocar datos
+    corr = [l for l in lineas if re.search(r"\bcorrector de estilo: \S+ cambios", l)]
+    if corr:
+        m = re.search(r"corrector de estilo: (\S+) cambios(?:, (\S+) descartados)?", corr[-1])
+        hechos, desc = m.group(1), m.group(2)
+        if desc and hechos.isdigit() and desc.isdigit():
+            t.append(f"• Corrector de estilo: {int(hechos) - int(desc)} cambio(s) de redacción aplicados; "
+                     f"{desc} descartado(s) por tocar datos, como está previsto.")
+        else:
+            t.append(f"• Corrector de estilo: {hechos} cambio(s) de redacción aplicados.")
     if domingo(fecha):
         rep = leer(RAIZ / "reportajes" / f"{fecha}.json") or {}
         if rep.get("hay_reportaje"):
@@ -280,6 +290,10 @@ def informe(fecha):
         que = " ".join(str((r.get("informe") or {}).get("que_fallaba") or r.get("motivo") or "").split())[:220]
         problemas.append({"arreglado": "El reparador arregló un fallo: ", "nada_que_arreglar": "El reparador miró un aviso y no había nada que arreglar: ",
                           }.get(r.get("resultado"), "El reparador no pudo arreglar un fallo: ") + que)
+    # Lo que el reparador ya ha mirado no se repite como «Del registro»
+    vistos = " ".join(str(i) for r in reparaciones if r.get("fecha") == fecha for i in r.get("incidencias") or [])
+    vistos = re.sub(r"\s+", " ", vistos)
+    otros = [a for a in otros if a[:120] not in vistos]
     t += ["", "FALLOS Y AVISOS"]
     if problemas or otros:
         t += [f"• {p}" for p in problemas]

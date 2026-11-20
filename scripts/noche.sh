@@ -321,22 +321,30 @@ revisar_autoria corrige
 
 # 3 sexies (después). El corrector de estilo (ADR 0083): lee los artículos del día como un lector cualquiera y corrige lo
 # que cuesta entender o no cumple el libro de estilo, sin tocar datos. Un programa comprueba después que no ha cambiado
-# cifras, enlaces, citas ni campos que no son texto; si los ha cambiado, vuelve la versión del revisor. Lo que cambia
-# queda en ediciones-borrador/FECHA-corrector.json. Nunca impide el número; CORRECTOR=0 lo salta.
+# cifras, enlaces, citas ni campos que no son texto: los textos donde los ha cambiado vuelven a la redacción del
+# revisor y el resto de sus cambios se queda; si ha roto la edición o tocado lo que no es texto, vuelve entera. Lo que
+# cambia queda en ediciones-borrador/FECHA-corrector.json. Nunca impide el número; CORRECTOR=0 lo salta.
 corregir_estilo() {
   [ "${CORRECTOR:-1}" = 1 ] || return 0
   python3 -c 'import json,sys; d=json.load(open(sys.argv[1])); sys.exit(0 if d.get("hay_edicion") and d.get("piezas") else 1)' \
     "ediciones/$FECHA.json" 2>/dev/null || return 0
-  local antes="ediciones-borrador/$FECHA-antes-corrector.json"
+  local antes="ediciones-borrador/$FECHA-antes-corrector.json" cambios="ediciones-borrador/$FECHA-corrector.json" rc=0 n
   cp "ediciones/$FECHA.json" "$antes"
-  rm -f "ediciones-borrador/$FECHA-corrector.json"
+  rm -f "$cambios"
   agente "$OPUS" 36-corrector-estilo 25
-  if ! json_ok "ediciones/$FECHA.json" || ! python3 scripts/comprobar-corrector.py "$antes" "ediciones/$FECHA.json" >> "$REG" 2>&1; then
-    cp "$antes" "ediciones/$FECHA.json"
-    log "AVISO: el corrector de estilo cambió datos o rompió la edición: vuelve la versión del revisor"
+  if json_ok "ediciones/$FECHA.json"; then
+    python3 scripts/comprobar-corrector.py --arreglar --registro "$cambios" "$antes" "ediciones/$FECHA.json" >> "$REG" 2>&1 || rc=$?
   else
-    log "corrector de estilo: $(python3 -c 'import json,sys; print(len(json.load(open(sys.argv[1]))), "cambios")' "ediciones-borrador/$FECHA-corrector.json" 2>/dev/null || echo "sin registro de cambios")"
+    rc=5
   fi
+  n=$(python3 -c 'import json,sys; c=json.load(open(sys.argv[1])); print(len(c), sum(1 for x in c if x.get("descartado")))' "$cambios" 2>/dev/null)
+  n=${n:-"? ?"}
+  case $rc in
+    0) log "corrector de estilo: ${n%% *} cambios" ;;
+    3) log "corrector de estilo: ${n%% *} cambios, ${n##* } descartados por tocar datos (esos textos, con la redacción del revisor)" ;;
+    *) cp "$antes" "ediciones/$FECHA.json"
+       log "AVISO: el corrector de estilo rompió la edición o cambió algo que no es texto: vuelve entera la versión del revisor" ;;
+  esac
 }
 corregir_estilo
 
