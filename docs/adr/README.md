@@ -97,5 +97,6 @@
 | [0093](0093-las-instrucciones-de-los-agentes-como-paginas.md) | Las instrucciones de los agentes, como páginas del diario y listadas en el libro de estilo |
 | [0094](0094-la-terminologia-del-termcat-para-los-agentes.md) | La terminología del TERMCAT, al alcance de los agentes |
 | [0095](0095-oferta-de-los-avisos-en-la-portada-de-la-app.md) | Oferta de los avisos del número en la portada de la app |
+| [0096](0096-la-app-abre-tambien-sin-chrome-con-el-navegador-interno-de-android.md) | La app abre también sin Chrome, con el navegador interno de Android |
 
 Plantilla: [0000-plantilla.md](0000-plantilla.md). Para crear uno: `nuevo-adr "Título"`.

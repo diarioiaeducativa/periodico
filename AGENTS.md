@@ -226,7 +226,8 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
 - **App de Android y lectura sin conexión** (ADR 0042): `estaticos/sw.js` (primero la red; sin ella,
   lo guardado y `sin-conexion.html`); si cambia lo que guarda, subir `CACHE`. La app es una TWA en
   `android/` (`construeix.sh`, con la clave en `~/.config/diario-ia-educativa/android/`), vinculada por
-  `estaticos/.well-known/assetlinks.json`, que no se borra. La política de privacidad de la ficha es
+  `estaticos/.well-known/assetlinks.json`, que no se borra. Sin Chrome, abre en el WebView de Android (ADR 0096), donde
+  la web no sabe que está en la app. La política de privacidad de la ficha es
   `privacidad.html` (ADR 0070): que siga diciendo lo que guarda el dispositivo.
 - **Imagen al compartir** (ADR 0010): la del número (`og/numeros/`) y la de cada pieza en cada idioma
   (`og/piezas/<idioma>/<fecha>-<id>.png`, aligeradas con Pillow); las hace `scripts/og-numero.py` en

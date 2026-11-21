@@ -100,8 +100,8 @@ número sin conexión («sí, hazlo con el service worker»).
   probable, no imposible.
 - Lo que se guarda depende de lo que el navegador deje: si el dispositivo va justo de espacio, puede
   borrarlo.
-- Sin Chrome (u otro navegador compatible con TWA) en el móvil, la app abre la web en una pestaña
-  personalizada, con barra de dirección.
+- Sin Chrome (u otro navegador compatible con TWA) en el móvil, la app abre la web en el navegador interno
+  de Android (ADR 0096); antes de la 1.0.5 se cerraba sin abrir nada.
 - Solo Android; en iPhone y iPad, la web instalable del ADR 0013, que ahora también funciona sin
   conexión.
 
