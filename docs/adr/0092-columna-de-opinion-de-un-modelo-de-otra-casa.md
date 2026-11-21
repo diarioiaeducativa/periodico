@@ -66,6 +66,8 @@ vista de la información y evita que todo salga de la misma voz.
   `40-columna-eleccion`) elige la mejor y la otra se descarta; si la nueva no vale, sale la de reserva. La mañana
   siguiente, `reserva.sh` escribe otra si no queda ninguna (con los mensajes de la última semana y las piezas de
   las cuatro últimas, sobre un debate que no dependa de unos días). Así, cada semana Astra escribe dos columnas.
+  El informe del día la cuenta en «RESERVA» y avisa si falta (`scripts/informe-dia.py`; añadido el 21-11-2026,
+  cuando Juanjo vio que no salía).
 - **Dónde corre el columnista** (`nas/columnista.sh`, cada minuto en el crontab del NAS): `scripts/columna.sh`, en el
   contenedor del diario, deja en `columnas-trabajo/<clave>/` el encargo con todo el material dentro (`prompt.md`), la
   forma de la respuesta (`esquema.json`) y un `pedido`; el NAS lanza Codex en la caja del agente de noticias

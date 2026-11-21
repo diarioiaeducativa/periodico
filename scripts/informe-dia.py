@@ -306,13 +306,17 @@ def informe(fecha):
     # 5. La reserva
     sys.path.insert(0, str(RAIZ / "scripts"))
     try:
-        import reserva, reserva_reportaje, reserva_vineta, reserva_hace_un_ano   # noqa: E401, E402
+        import reserva, reserva_reportaje, reserva_vineta, reserva_hace_un_ano, columna   # noqa: E401, E402
         hu_n = len([d for d in reserva_hace_un_ano.RESERVA.glob("20*")])
+        col_n = 1 if columna.la_reserva() else 0   # la columna de opinión de reserva (ADR 0092): siempre una
         t += ["", "RESERVA",
-              f"• {len(reserva.listas())} artículos (objetivo {reserva.OBJETIVO}), {len(reserva_reportaje.listos())} reportaje(s), "
+              f"• {len(reserva.listas())} artículos (objetivo {reserva.OBJETIVO}), {'una' if col_n else 'ninguna'} columna de opinión, "
+              f"{len(reserva_reportaje.listos())} reportaje(s), "
               f"{len(reserva_vineta.listas())} viñeta(s) y {hu_n} «Hace un año» por adelantado."]
         if len(reserva.listas()) < reserva.MINIMO:
             t.append("  Menos artículos de los que necesita un número entero: se reponen uno cada mañana.")
+        if not col_n:
+            t.append("  Falta la columna de opinión de reserva: se escribe mañana por la mañana.")
     except Exception as ex:  # noqa: BLE001 — el informe sale igual sin este apartado
         t += ["", f"RESERVA: no se ha podido contar ({type(ex).__name__})."]
     return "\n".join(t)
