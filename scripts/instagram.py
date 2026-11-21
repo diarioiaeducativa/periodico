@@ -184,7 +184,7 @@ def panel_vineta(d, guion, n, origen):
     return cabeza() + f"""<div class="ig sec-vineta">
 {barra(d)}
 <p class="vt">{e(generar.L["vineta_titulo"])} <span>{n}/3</span></p>
-<div class="panel-ig vineta">{vineta.panel(v, n)}</div>
+<div class="panel-ig vineta">{vineta.panel(v, n, con_gorro=vineta.navidad(generar.publicacion(d["fecha"])))}</div>
 {pie}
 </div></body></html>"""
 

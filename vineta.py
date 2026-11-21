@@ -117,9 +117,36 @@ def brazos(postura, hombro_y, medio, clase, barbilla=18, cabeza=58):
     return f'<path class="{clase}" d="{d}"/>', mano
 
 
+# ---------- El gorro de Papá Noel (Juanjo, 21-11-2026) ----------
+# En las vacaciones de Navidad (del 22 de diciembre a Reyes, las de Cataluña, por la fecha de publicación del
+# número), Tiza y Algoritmo llevan gorro. Lo pasa quien pinta (generar.py, instagram.py) con `navidad()`.
+NAVIDAD = ("12-22", "01-06")
+
+
+def navidad(publica):
+    """¿El número que sale ese día (AAAA-MM-DD) cae en las vacaciones de Navidad?"""
+    md = publica[5:10]
+    return md >= NAVIDAD[0] or md <= NAVIDAD[1]
+
+
+def gorro(x, y, ancho, giro=0, grueso=""):
+    """Origen en el centro del borde de abajo del ribete; la punta cae hacia atrás (x negativa). Rojo y blanco
+    fijos en los dos temas; el contorno, con la tinta del tema. `grueso`: un factor CSS para el trazo (las orejas
+    de la cabecera lo engordan con --k)."""
+    s = ancho / 100
+    trazo = f"calc({2.5 / s:.2f}px * {grueso})" if grueso else f"{2.5 / s:.2f}"
+    return (f'<g transform="translate({x} {y}) rotate({giro}) scale({s})" style="stroke:var(--tinta);stroke-width:{trazo}" '
+            'stroke-linejoin="round" stroke-linecap="round">'
+            '<path fill="#d62f2f" d="M42 -14 C46 -40 42 -74 16 -90 C-8 -104 -40 -94 -54 -64 C-44 -72 -30 -76 -18 -70 '
+            'C-32 -56 -42 -36 -44 -14 Z"/>'
+            f'<path fill="none" style="stroke:#a81f24;stroke-width:{4 / s:.2f}" opacity=".55" d="M22 -80 C32 -60 34 -40 30 -16"/>'
+            '<rect x="-52" y="-20" width="104" height="22" rx="11" fill="#ffffff"/>'
+            '<circle cx="-55" cy="-62" r="13" fill="#ffffff"/></g>')
+
+
 # ---------- Personajes ----------
 
-def tiza(cx, mira, expr, postura):
+def tiza(cx, mira, expr, postura, con_gorro=False):
     """Una barra de tiza con la punta gastada: el oficio de enseñar."""
     arriba, abajo, medio = SUELO - 150, SUELO - 18, 21
     cuerpo = (f'<path class="tz" d="M{-medio} {abajo - 10} L{-medio} {arriba + 12} Q{-medio} {arriba + 2} {-medio + 8} {arriba + 4} '
@@ -135,11 +162,12 @@ def tiza(cx, mira, expr, postura):
     # El brazo que cruza el cuerpo (pensar, sostener): en tema oscuro la tinta es clara como la tiza y no se
     # veía; va sobre un borde del color del papel, como el de Algoritmo (06-11-2026). En tema claro no se nota.
     borde = br.replace('class="t"', 'class="a-borde"') if postura in CRUZAN else ""
-    g = f'{piernas}{cuerpo}{vetas}{polvo}{rostro}{borde}{br}'
+    sombrero = gorro(1, arriba + 8, 52, -8) if con_gorro else ""
+    g = f'{piernas}{cuerpo}{vetas}{polvo}{rostro}{sombrero}{borde}{br}'
     return envolver(cx, mira, g), mano_abs(cx, mira, mano)
 
 
-def algoritmo(cx, mira, expr, postura):
+def algoritmo(cx, mira, expr, postura, con_gorro=False):
     """Un cursor de bloque que flota y parpadea: la IA, siempre dispuesta y no siempre acertada."""
     abajo, alto, medio = SUELO - 30, 86, 28
     arriba = abajo - alto
@@ -160,7 +188,8 @@ def algoritmo(cx, mira, expr, postura):
             'class="fpupila" cx="0" cy="16"', 'class="fsp" cx="0" cy="16"').replace('class="fpupila" cx="7" cy="16"', 'class="fsp" cx="7" cy="16"')
     # El brazo que cruza el cuerpo azul (pensar, sostener), sobre un borde del color del papel para que se vea (06-11-2026)
     borde = br.replace('class="a"', 'class="a-borde"') if postura in CRUZAN else ""
-    g = f'{flota}{cuerpo}{parpadeo}{rostro}{borde}{br}'
+    sombrero = gorro(0, arriba + 7, 64, -8) if con_gorro else ""
+    g = f'{flota}{cuerpo}{parpadeo}{rostro}{sombrero}{borde}{br}'
     return envolver(cx, mira, g), mano_abs(cx, mira, mano)
 
 
@@ -419,7 +448,7 @@ def comprobar(guion):
     return fallos
 
 
-def panel(v, n, textos=None):
+def panel(v, n, textos=None, con_gorro=False):
     """Una viñeta. `v`: {"cartela"?, "tiza": {...}, "algoritmo": {...}, "objeto"?, "bocadillos": [...]}."""
     marco = f'<rect class="marco" x="1.5" y="1.5" width="{ANCHO - 3}" height="{ALTO - 3}" rx="4"/>'
     partes = [f'<path class="t fino" d="M14 {SUELO} L{ANCHO - 14} {SUELO}"/>']
@@ -438,7 +467,7 @@ def panel(v, n, textos=None):
         mira = p.get("mira") or ("derecha" if x < 200 else "izquierda")
         expr = p.get("expresion") if p.get("expresion") in EXPRESIONES else "neutral"
         post = p.get("postura") if p.get("postura") in POSTURAS else "abajo"
-        svg, mano = personajes[quien](x, mira, expr, post)
+        svg, mano = personajes[quien](x, mira, expr, post, con_gorro)
         partes.append(svg)
         pos[quien] = x
         if post == "sostener":
@@ -501,8 +530,8 @@ def panel(v, n, textos=None):
 TEXTOS_ES = {"panel": "Viñeta", "tiza": "Tiza", "algoritmo": "Algoritmo", "pensando": "pensando"}
 
 
-def tira(guion, textos=None):
-    return "".join(f'<div class="vineta-panel">{panel(v, i + 1, textos)}</div>' for i, v in enumerate(guion.get("vinetas", [])[:3]))
+def tira(guion, textos=None, con_gorro=False):
+    return "".join(f'<div class="vineta-panel">{panel(v, i + 1, textos, con_gorro)}</div>' for i, v in enumerate(guion.get("vinetas", [])[:3]))
 
 
 # ---------- Variedad: lo que salió en los números anteriores ----------

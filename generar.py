@@ -1281,16 +1281,20 @@ ALGORITMO_OREJA = (
     '<path class="a" d="M-28 264 L-44 234 M28 264 L44 234"/>')
 
 
-def orejas(prof):
+def orejas(prof, con_gorro=False):
     """Los dos personajes a los lados de la cabecera, de pie sobre el filete doble: Tiza a la izquierda y
     Algoritmo a la derecha, como en la viñeta (ADR 0022). Cada uno dice su nombre al pasar por encima y lleva
-    a «La viñeta», donde salen cada día."""
+    a «La viñeta», donde salen cada día. En las vacaciones de Navidad, con gorro (vineta.navidad)."""
     def una(lado, nombre, caja, dibujo):
         x, y, w, h = caja
         return (f'<a class="oreja oreja-{lado}" href="{prof}vineta.html" title="{nombre}" aria-label="{nombre}: {L["vineta"]}">'
                 f'<svg viewBox="{x} {y} {w} {h}" width="{w}" height="{h}" aria-hidden="true" focusable="false">{dibujo}</svg></a>')
-    return (f'<div class="orejas">{una("izq", L["nombre_tiza"], (-36, 162, 72, 172), TIZA_OREJA)}'
-            f'{una("der", L["nombre_algoritmo"], (-50, 162, 100, 172), ALGORITMO_OREJA)}</div>')
+    tiza, algo = TIZA_OREJA, ALGORITMO_OREJA
+    if con_gorro:   # el SVG deja ver lo que sale por arriba (overflow: visible), así que la caja no cambia
+        tiza += vineta.gorro(1, 190, 52, -8, "var(--k)")
+        algo += vineta.gorro(0, 223, 64, -8, "var(--k)")
+    return (f'<div class="orejas">{una("izq", L["nombre_tiza"], (-36, 162, 72, 172), tiza)}'
+            f'{una("der", L["nombre_algoritmo"], (-50, 162, 100, 172), algo)}</div>')
 
 
 def cabecera(prof, ruta, fecha, cuenta, es_portada, h1=True, activa=None, ant="", sig="", dia=None, papel=""):
@@ -1314,7 +1318,7 @@ def cabecera(prof, ruta, fecha, cuenta, es_portada, h1=True, activa=None, ant=""
   </div>
   <{etiqueta} class="mancheta">{nombre}</{etiqueta}>
   <p class="lema">{L["lema"]}</p>
-  {orejas(prof)}
+  {orejas(prof, vineta.navidad(sale))}
   {barra_secciones(prof, activa, ant, sig, dia if dia and dia.get("fecha") != ULTIMA else None)}
 </header>"""
 
@@ -1826,7 +1830,7 @@ def bloque_vineta(prof, eds, fecha, en_archivo=False, pieza=None, compartir=True
         origen_plano = html.unescape(re.sub(r"<[^>]+>", "", origen_txt))
     return f"""<section class="vineta sec-vineta" aria-labelledby="t-vineta-{fecha}">
   <h2 id="t-vineta-{fecha}" class="vineta-titulo"><span>{"" if en_archivo else f'<a href="{prof}vineta.html">{icono("vineta")} {L["vineta_titulo"]}</a>'}</span> <span class="fecha-pieza">{fecha_corta(publicacion(fecha))}</span></h2>
-  <div class="tira">{vineta.tira(elegida["guion"], {"panel": L["vin_panel"], "tiza": L["nombre_tiza"], "algoritmo": L["nombre_algoritmo"], "pensando": L["vin_pensando"], "comillas": "“”" if L["codigo"] == "en" else "«»"})}</div>
+  <div class="tira">{vineta.tira(elegida["guion"], {"panel": L["vin_panel"], "tiza": L["nombre_tiza"], "algoritmo": L["nombre_algoritmo"], "pensando": L["vin_pensando"], "comillas": "“”" if L["codigo"] == "en" else "«»"}, vineta.navidad(publicacion(fecha)))}</div>
   {"" if pieza or not origen_txt else f'<p class="vineta-origen">{origen_txt}</p>'}
   {boton_vineta(prof, fecha, origen_plano) if compartir else ""}
 </section>"""
@@ -5155,6 +5159,10 @@ def main():
     # sitio/ no está en el repositorio y se rehace entero cada vez.
     SITIO.mkdir(exist_ok=True)
     shutil.copytree(RAIZ / "estaticos", SITIO, dirs_exist_ok=True)
+    # En las vacaciones de Navidad, Tiza y Algoritmo con gorro también en el icono (el número sale el día que se genera)
+    if vineta.navidad(datetime.date.today().isoformat()):
+        shutil.copy(RAIZ / "estaticos" / "favicon-navidad.svg", SITIO / "favicon.svg")
+        shutil.copy(RAIZ / "estaticos" / "favicon-navidad-32.png", SITIO / "favicon-32.png")
     shutil.rmtree(SITIO / "capturas", ignore_errors=True)
     if (RAIZ / "repositorio" / "capturas").exists():   # las capturas de los recursos, para los dos idiomas (ADR 0008)
         shutil.copytree(RAIZ / "repositorio" / "capturas", SITIO / "capturas", dirs_exist_ok=True)
