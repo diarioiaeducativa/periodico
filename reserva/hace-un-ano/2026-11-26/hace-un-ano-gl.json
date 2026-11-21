@@ -1,0 +1,20 @@
+{"fecha": "2026-11-26", "hay_pieza": true,
+ "piezas": [{"id": "digcomp-digcompedu-espera",
+             "seccion": "hace-un-ano", "importancia": 3,
+             "grupo": "chatgpt", "fecha_original": "2025-11-27",
+             "antetitulo": "Marcos europeos",
+             "titular": "Chegou DigComp 3.0 e agardábase o marco docente; un ano despois aínda é un borrador",
+             "entradilla": "En novembro de 2025, a Comisión Europea poñía a IA no marco de competencia dixital da cidadanía e o profesorado preguntaba cando chegaría ao seu. A versión definitiva non se espera ata a primavera de 2027.",
+             "cuerpo": [
+               "O 27 de novembro de 2025, en ChatGPT-IA-edu, compartiuse [DigComp 3.0](https://joint-research-centre.ec.europa.eu/jrc-news-and-updates/european-commission-updates-its-digital-competence-framework-digcomp-2025-11-27_en), a nova edición do marco europeo de competencia dixital, publicada ese mesmo día. Trouxera máis de 500 resultados de aprendizaxe e a IA, tamén a xerativa, repartida por todas as súas áreas. Entre o eloxio e a dúbida de se abondaría, a pregunta que seguiu foi outra: cando se actualizaría DigCompEdu, o marco da competencia dixital do profesorado, vixente desde 2017. Non se coñecía data; apostábase pola Digital Learning Week da UNESCO.",
+               "A espera foi máis longa. A Comisión lanzou a actualización de [DigCompEdu](https://joint-research-centre.ec.europa.eu/DigCompEdu_en) en maio de 2026, como [publicou o diario o 31 de outubro](pieza:2026-10-30/digcompedu), e segundo o Centro Común de Investigación (JRC) a versión final está prevista para a primavera de 2027. O borrador mantén as seis áreas de competencia, integra a alfabetización en IA do profesorado en todo o marco e pide entender como xeran os seus resultados estes sistemas e onde poden fallar.",
+               "Un ano despois, polo tanto, a cidadanía ten o seu marco con IA e o profesorado segue traballando cun anterior a ChatGPT, mentres se revisa o que o substituirá."
+             ],
+             "fuentes": [
+               {"titulo": "European Commission updates its Digital Competence Framework (DigComp) (Centro Común de Investigación, 27 de novembro de 2025) (en inglés)", "url": "https://joint-research-centre.ec.europa.eu/jrc-news-and-updates/european-commission-updates-its-digital-competence-framework-digcomp-2025-11-27_en"},
+               {"titulo": "DigCompEdu (Centro Común de Investigación, Comisión Europea) (en inglés)", "url": "https://joint-research-centre.ec.europa.eu/DigCompEdu_en"}
+             ],
+             "ilustracion_alt": "Díptico. Á esquerda, «Nov. 2025»: o documento «DigComp» cunha marca de feito e o documento «DigCompEdu» cun signo de interrogación. Á dereita, «Hoxe»: o primeiro segue coa súa marca e o segundo, «Borrador», é un documento de bordo descontinuo cun lapis.",
+             "mensaje": {"grupo": "chatgpt", "id": 42905},
+             "repaso": ["«Nadie tenía fecha» pasa a «No se conocía fecha» (el mensaje dice «que yo sepa no tiene fecha»)."],
+             "comprobado": "Mensajes de la entrada del 27-11-2025 (ChatGPT-IA-edu): #42898 (DigComp 3.0 publicado, IA importante), #42905 (pregunta por la actualización de DigCompEdu, comprobado en t.me/ChatGPTedu/42905), #42906 y #42908 (sin fecha; hipótesis de la Digital Learning Week), #42899 (duda de si bastaría). Sin nombres de personas. Noticia del JRC (abierta el 21-11-2026): publicada el 27-11-2025, más de 500 resultados de aprendizaje, IA incluida la generativa integrada en todas las áreas. Página del JRC sobre DigCompEdu (abierta el 21-11-2026 y confirmada por búsqueda): actualización lanzada en mayo de 2026, versión final prevista para la primavera de 2027, seis áreas, alfabetización en IA integrada en todo el marco, entender cómo producen resultados los sistemas y dónde fallan, original de 2017; es un borrador. Enlace pieza:2026-10-30/digcompedu presente en publicado.txt y del mismo tema; el número salió el 31 de octubre. Tema distinto de los «Hace un año» del último mes (el del 12-11 trataba del marco AILit)."}]}

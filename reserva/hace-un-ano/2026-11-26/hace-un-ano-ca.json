@@ -1,0 +1,20 @@
+{"fecha": "2026-11-26", "hay_pieza": true,
+ "piezas": [{"id": "digcomp-digcompedu-espera",
+             "seccion": "hace-un-ano", "importancia": 3,
+             "grupo": "chatgpt", "fecha_original": "2025-11-27",
+             "antetitulo": "Marcs europeus",
+             "titular": "Va arribar DigComp 3.0 i s'esperava el marc docent; un any després encara és un esborrany",
+             "entradilla": "Al novembre de 2025, la Comissió Europea posava la IA en el marc de competència digital de la ciutadania i el professorat preguntava quan arribaria al seu. La versió definitiva no s'espera fins a la primavera de 2027.",
+             "cuerpo": [
+               "El 27 de novembre de 2025, a ChatGPT-IA-edu, es compartia [DigComp 3.0](https://joint-research-centre.ec.europa.eu/jrc-news-and-updates/european-commission-updates-its-digital-competence-framework-digcomp-2025-11-27_en), la nova edició del marc europeu de competència digital, publicada aquell mateix dia. Portava més de 500 resultats d'aprenentatge i la IA, també la generativa, repartida per totes les àrees. Entre l'elogi i el dubte de si n'hi hauria prou, la pregunta que va seguir va ser una altra: quan s'actualitzaria DigCompEdu, el marc de la competència digital del professorat, vigent des del 2017. No se'n coneixia la data; s'apostava per la Digital Learning Week de la UNESCO.",
+               "L'espera ha estat més llarga. La Comissió va llançar l'actualització de [DigCompEdu](https://joint-research-centre.ec.europa.eu/DigCompEdu_en) el maig de 2026, com [va publicar el diari el 31 d'octubre](pieza:2026-10-30/digcompedu), i segons el Centre Comú de Recerca (JRC) la versió final està prevista per a la primavera de 2027. L'esborrany manté les sis àrees de competència, integra l'alfabetització en IA del professorat en tot el marc i demana entendre com generen els resultats aquests sistemes i on poden fallar.",
+               "Un any després, doncs, la ciutadania té el seu marc amb IA i el professorat continua treballant amb un d'anterior a ChatGPT, mentre es revisa el que el substituirà."
+             ],
+             "fuentes": [
+               {"titulo": "European Commission updates its Digital Competence Framework (DigComp) (Centre Comú de Recerca, 27 de novembre de 2025, en anglès)", "url": "https://joint-research-centre.ec.europa.eu/jrc-news-and-updates/european-commission-updates-its-digital-competence-framework-digcomp-2025-11-27_en"},
+               {"titulo": "DigCompEdu (Centre Comú de Recerca, Comissió Europea, en anglès)", "url": "https://joint-research-centre.ec.europa.eu/DigCompEdu_en"}
+             ],
+             "ilustracion_alt": "Díptic. A l'esquerra, «Nov. 2025»: el document «DigComp» amb una marca de fet i el document «DigCompEdu» amb un signe d'interrogació. A la dreta, «Avui»: el primer continua amb la seva marca i el segon, «Esborrany», és un document de vora discontínua amb un llapis.",
+             "mensaje": {"grupo": "chatgpt", "id": 42905},
+             "repaso": ["«Nadie tenía fecha» pasa a «No se conocía fecha» (el mensaje dice «que yo sepa no tiene fecha»)."],
+             "comprobado": "Mensajes de la entrada del 27-11-2025 (ChatGPT-IA-edu): #42898 (DigComp 3.0 publicado, IA importante), #42905 (pregunta por la actualización de DigCompEdu, comprobado en t.me/ChatGPTedu/42905), #42906 y #42908 (sin fecha; hipótesis de la Digital Learning Week), #42899 (duda de si bastaría). Sin nombres de personas. Noticia del JRC (abierta el 21-11-2026): publicada el 27-11-2025, más de 500 resultados de aprendizaje, IA incluida la generativa integrada en todas las áreas. Página del JRC sobre DigCompEdu (abierta el 21-11-2026 y confirmada por búsqueda): actualización lanzada en mayo de 2026, versión final prevista para la primavera de 2027, seis áreas, alfabetización en IA integrada en todo el marco, entender cómo producen resultados los sistemas y dónde fallan, original de 2017; es un borrador. Enlace pieza:2026-10-30/digcompedu presente en publicado.txt y del mismo tema; el número salió el 31 de octubre. Tema distinto de los «Hace un año» del último mes (el del 12-11 trataba del marco AILit)."}]}
