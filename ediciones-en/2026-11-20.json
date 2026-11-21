@@ -1,0 +1,140 @@
+{
+ "fecha": "2026-11-20",
+ "hay_edicion": true,
+ "motivo": "A normal day: ChatGPT-IA-edu contributes two institutional items (the Council of the EU and Google with US school districts), EduMedia-IAG an animation festival’s policy and Vibe Coding Educativo the Trama update. The rest was already published (Genie 4, AI Studio, Eduvers, Gemini) or is group administration (a debate about languages).",
+ "piezas": [
+  {
+   "id": "consejo-ue-competencias-ia",
+   "seccion": "novedades",
+   "importancia": 1,
+   "grupo": "chatgpt",
+   "antetitulo": "European Union",
+   "titular": "The Council of the EU approves conclusions on citizens’ AI skills",
+   "entradilla": "Member states back the idea that people of all ages should learn to use artificial intelligence critically and responsibly. These are policy guidelines, not a rule that binds schools.",
+   "cuerpo": [
+    "The Council of the European Union, which brings together the governments of the member states, [approved conclusions on 19 November 2026](https://www.consilium.europa.eu/en/press/press-releases/2026/11/19/equipping-europeans-for-the-age-of-ai-council-approves-conclusions/) entitled “Equipping Europeans for the age of AI”. According to its press release, they stress the need for people, at every stage of life, to have the skills and competences to engage with artificial intelligence critically and responsibly.",
+    "The text put forward for approval, already agreed by all delegations ([Council document 14902/26](https://data.consilium.europa.eu/doc/document/ST-14902-2026-INIT/en/pdf)), lists the new skills that are needed: “prompting, critical evaluation and verification of AI-generated outputs”, the use of AI for problem posing and problem-solving, and “the ability to recognise when not to use AI”. It also calls for attention to risks such as overdependence on these tools, disinformation, cyberbullying, algorithmic biases, learning loss, cognitive offloading and privacy, and for a rethink of assessment to safeguard learning outcomes and academic integrity.",
+    "Teachers feature in two requests to the Member States: to support their initial education and continuous professional development so that they reach sufficient levels of AI literacy, and to guide schools in drawing up their own policies on AI use, covering academic integrity, plagiarism, copyright, transparency and disclosure of AI use. When updating curricula, it asks them to use as references the European Digital Competence Framework DigComp 3.0, the European guidelines on the ethical use of AI and data in teaching and learning, and the AI literacy framework for primary and secondary education by the OECD and the European Union, which the paper covered in [this article on its publication in June](pieza:2026-11-12/marco-alfabetizacion-ia-ocde-comision).",
+    "The text gives weight to digital sovereignty: it says that “reducing dependencies associated with AI tools and technologies developed outside Europe, including in education and training, is critical”, and encourages the use of “European open-source options”. Among other things, it asks the European Commission to develop AI literacy frameworks for citizens at other stages of life and to keep offering professional learning for teachers through networks such as the European School Education Platform.",
+    "Council conclusions are political guidance: they set a common direction but create no direct obligations for a school or a teacher. What changes in curricula or training will depend on what each Member State and each education authority decides. The final version will be published in the Official Journal of the European Union."
+   ],
+   "fuentes": [
+    {
+     "titulo": "Council of the EU: “Equipping Europeans for the age of AI: Council approves conclusions”",
+     "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/11/19/equipping-europeans-for-the-age-of-ai-council-approves-conclusions/"
+    },
+    {
+     "titulo": "Council of the EU: “Draft Council conclusions on skills and competences to engage with artificial intelligence (AI)” (document 14902/26)",
+     "url": "https://data.consilium.europa.eu/doc/document/ST-14902-2026-INIT/en/pdf"
+    }
+   ],
+   "mensaje": {
+    "grupo": "chatgpt",
+    "id": 54574
+   },
+   "comprobado": "Review: the Council’s press release also returns 403 to the reviewer; the title, the date (19-11-2026, in the address and in the preview of message #54574) and the description match what the piece says. A search confirms that document ST 14902/2026 is the draft conclusions on AI competences, scheduled for approval on 19-11-2026, and that it cites the EU–OECD framework (the PDF could not be read). The linked piece on the framework exists and deals with it. The non-binding nature of Council conclusions is general. Nothing is claimed about specific commitments, teacher training or requests to the Commission, which appear only in the group’s message and could not be confirmed.",
+   "ilustracion": "A three-step diagram: a common European framework (top), each state adapting it to its curricula (middle) and classrooms (bottom), with a dotted arrow indicating that it is guidance and not an obligation.",
+   "ilustracion_alt": "A diagram of three steps joined by arrows: a building with columns, “European framework”; a flag, “Each state”; and an open book, “Classrooms”. The dotted red arrow between the last two is labelled “Guidance only”."
+  },
+  {
+   "id": "google-distritos-ia-buscador",
+   "seccion": "novedades",
+   "importancia": 2,
+   "grupo": "chatgpt",
+   "antetitulo": "United States",
+   "titular": "Chicago weighs its options if Google withdraws search from districts that reject its AI",
+   "entradilla": "According to the Chicago Sun-Times, Google warns that school districts that do not allow its AI tools will lose access to search next year.",
+   "cuerpo": [
+    "The Chicago Sun-Times [reported on 11 November](https://chicago.suntimes.com/education/2026/11/11/what-to-know-about-cps-and-ai-as-chicago-students-risk-losing-access-to-google-search) that Chris Phillips, Google’s vice-president of education, told the New York Times that schools that ban AI entirely will not have access to search. The newspaper gives no exact date: it speaks of “next year”. Google, it adds, switches off the AI features of its education tools by default for primary and secondary students until administrators turn them on, as the paper already reported in [this article on Google’s announcement](pieza:2026-11-03/google-ia-cuentas-escolares).",
+    "Chicago Public Schools, a large US district, block ChatGPT, Claude and Gemini on student accounts. They have not yet decided how to respond: they are exploring how to switch off the search engine’s AI mode separately and, if they cannot keep search without it, they will look for other search engines. Cybernews reports that about 30 people protested outside Google’s office in Chicago.",
+    "This is a story from the United States and for now does not affect schools in Spain. It is of interest as an example of a debate that may arrive: what to do when a basic school service mixes search with AI features the school may not have authorised."
+   ],
+   "fuentes": [
+    {
+     "titulo": "Chicago Sun-Times: “What to know about CPS and AI as Chicago students risk losing access to Google search”",
+     "url": "https://chicago.suntimes.com/education/2026/11/11/what-to-know-about-cps-and-ai-as-chicago-students-risk-losing-access-to-google-search"
+    },
+    {
+     "titulo": "Cybernews: “Google AI ultimatum sparks Chicago school backlash”",
+     "url": "https://cybernews.com/ai-news/google-gemini-protest-chicago-school"
+    }
+   ],
+   "mensaje": {
+    "grupo": "chatgpt",
+    "id": 54578
+   },
+   "comprobado": "Review: the Chicago Sun-Times article (11-11-2026) was opened: Phillips’s statement to the NYT, Google’s condition for next year, CPS blocks ChatGPT, Claude and Gemini, has not decided and is exploring removing the AI mode or looking for other providers, and the AI features of the education tools switched off until administrators turn them on. “Because both are tightly integrated” was removed, as the article does not include it (it appears only in the group’s message). Cybernews could not be opened (403): the figure of about 30 protesters comes from its description in the preview. A link was added to the article already published on 3 November about Google’s announcement. What the message says about New York and Los Angeles or about the note of 15 November is not included, as it could not be confirmed.",
+   "ilustracion": null,
+   "ilustracion_alt": "A building, “District”, with an arrow labelled “Rejects AI” pointing to a magnifying glass crossed out with a red circle, “Search”, and below it the question “No access?”."
+  },
+  {
+   "id": "manchester-festival-sin-ia",
+   "seccion": "multimedia",
+   "importancia": 3,
+   "grupo": "edumedia",
+   "antetitulo": "Animation festivals",
+   "titular": "Manchester Animation Festival will not accept films made with generative AI from 2027",
+   "entradilla": "The British festival announced it on 13 November together with this year’s awards. Its director presents it as a way of backing animation artists.",
+   "cuerpo": [
+    "According to [Señal News](https://senalnews.com/en/events/manchester-animation-festival-unveils-2026-winners-), the Manchester Animation Festival announced on 13 November 2026 that, from 2027, it will stop accepting films created with generative artificial intelligence, the kind that produces images, text or video from the instructions it receives. It did so together with the winners of this year’s edition and the opening of its 2027 call for entries.",
+    "Its director, Steve Henderson, said the new policy puts artists first and that the festival wants to support the creators who make animation possible. The article does not explain how the origin of submitted works will be checked.",
+    "For the audiovisual or art classroom, it is a useful piece of information: if students have made a project with generative AI and want to enter it in festivals, it is worth reading the rules first, because some are starting to exclude it."
+   ],
+   "fuentes": [
+    {
+     "titulo": "Señal News: “Manchester Animation Festival unveils 2026 winners”",
+     "url": "https://senalnews.com/en/events/manchester-animation-festival-unveils-2026-winners-"
+    }
+   ],
+   "mensaje": {
+    "grupo": "edumedia",
+    "id": 12371
+   },
+   "comprobado": "Review: the Señal News article was opened: date (13-11-2026, after the festival of 8 to 12), 2027 policy announced when the call for entries opened, Henderson’s words (“puts artists first”), and that it does not explain how it will be checked. The festival’s official rules were not found. What the message says about other festivals, the Oscars and the BAFTAs is not included as it could not be confirmed.",
+   "ilustracion": null,
+   "ilustracion_alt": "A film clapperboard, “AI film”, with an arrow labelled “From 2027” cut by a red bar that does not reach the building with columns, “Festival”."
+  },
+  {
+   "id": "trama-universos-variantes",
+   "seccion": "vibecoding",
+   "importancia": 3,
+   "grupo": "vce",
+   "antetitulo": "Community news",
+   "titular": "Trama adds readings grouped into “universes” and versions of different difficulty",
+   "entradilla": "The reading-comprehension catalogue lets you choose readings that share the same world and versions of the same text at different levels. Its author asks for help translating it into Galician, Basque and Aranese.",
+   "cuerpo": [
+    "[Trama](https://trama.ortogra.fi/), the catalogue of readings with questions and printable worksheets created by Aarón Fortuño, which the paper [introduced on 17 November](pieza:2026-11-16/trama-comprensio-lectora), adds two features. “Universes” group independent readings that share a place, characters or a world, and can be read in any order. “Variants” are versions of the same reading at different levels of difficulty, so that the whole class can work on the same story at once. The site itself presents them as a Universal Design for Learning measure.",
+    "The author asks in the group for help reviewing and translating the interface and the readings into Galician, Basque and Aranese (the variety of Occitan spoken in the Aran Valley), because they lack the knowledge needed to check that the translations are correct. For now, the readings are in Catalan and Spanish. According to its page, no account has to be created, it uses no cookies, and class codes are stored in the browser."
+   ],
+   "fuentes": [
+    {
+     "titulo": "Trama · Comprensió lectora (in Catalan)",
+     "url": "https://trama.ortogra.fi/"
+    }
+   ],
+   "mensaje": {
+    "grupo": "vce",
+    "id": 15172
+   },
+   "comprobado": "Review: trama.ortogra.fi was opened: filters for universes and variants, reference to Universal Design for Learning, authorship by Aarón Fortuño, readings in Catalan and Spanish, no accounts or cookies, class codes in the browser. The request for translators comes from the group’s message (#15173). The number of readings is not given, because the website and the paper’s earlier article give different figures. “The website is in Catalan and Spanish” was changed to “the readings”, which is what the page says (the interface is chosen separately).",
+   "ilustracion": null,
+   "ilustracion_alt": "On the left, three open books inside a dotted circle, “Universe”; on the right, three stacked sheets with lines of text of different lengths, “Variants”."
+  }
+ ],
+ "breves": [],
+ "descartado": [
+  "End of World Labs’ Marble on 8 January 2027 (EduMedia, #12382): a forwarded email and the search found no official confirmation; not published.",
+  "Muse, Meta’s assistant (#54564): an introductory message from a newcomer, by invitation and with no official source found.",
+  "Genie 4, Google AI Studio on Android, Eduvers, Gemini history and the reflective journal: already published on 20 November or the 19th; nothing new that can be checked.",
+  "Debate about language in Vibe Coding Educativo: administration and internal rules of the group.",
+  "The book “La IA agéntica en la educación” and Cuadernos de Pedagogía no. 580: Digital Library documents, which have their own section.",
+  "Marco (an LMS with Streamlit and Supabase, #15149): no website or resource to check.",
+  "Maniobres (#15176) and repository news (#15171): bot notices; covered by the repository section."
+ ],
+ "repaso": [
+  "Council of the EU: headline shortened from 91 to 86 characters; “checked” expanded with what was verified (draft ST 14902/2026 and the EU–OECD framework by search; the press release is still unopened).",
+  "Chicago: removed “because both are tightly integrated” (not in the article); specified that Phillips said it to the NYT and that AI features are off by default in the education tools; linked the article of 3 November on Google’s announcement; “other alternatives” becomes “other search providers”.",
+  "Trama: “the website is in Catalan and Spanish” becomes “the readings”, as the page says.",
+  "Manchester: unchanged."
+ ]
+}

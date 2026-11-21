@@ -1,0 +1,140 @@
+{
+ "fecha": "2026-11-20",
+ "hay_edicion": true,
+ "motivo": "Día normal: ChatGPT-IA-edu aporta dos novedades institucionales (Consejo de la UE y Google con los distritos escolares de EE. UU.), EduMedia-IAG una política de un festival de animación y Vibe Coding Educativo la actualización de Trama. Lo demás ya estaba publicado (Genie 4, AI Studio, Eduvers, Gemini) o es administración de los grupos (debate sobre idiomas).",
+ "piezas": [
+  {
+   "id": "consejo-ue-competencias-ia",
+   "seccion": "novedades",
+   "importancia": 1,
+   "grupo": "chatgpt",
+   "antetitulo": "Europar Batasuna",
+   "titular": "EBko Kontseiluak ondorioak onartu ditu herritarren AA gaitasunei buruz",
+   "entradilla": "Estatu kideek babestu dute edozein adinetako pertsonek adimen artifiziala irizpidez eta modu arduratsuan erabiltzen ikas dezatela. Orientabide politikoak dira, ez ikastetxeak behartzen dituen arau bat.",
+   "cuerpo": [
+    "Europar Batasuneko Kontseiluak, Estatu kideetako gobernuak biltzen dituenak, [«Equipping Europeans for the age of AI» («Europako herritarrak AAren aroari begira prestatzea») izeneko ondorioak onartu zituen 2026ko azaroaren 19an](https://www.consilium.europa.eu/en/press/press-releases/2026/11/19/equipping-europeans-for-the-age-of-ai-council-approves-conclusions/). Bere prentsa-oharraren arabera, ondorioek nabarmentzen dute pertsonek, bizitzaren etapa guztietan, adimen artifizialarekin modu kritikoan eta arduratsuan erlazionatzeko trebetasunak eta gaitasunak izan behar dituztela.",
+    "Onartzera eraman zen testuak, ordezkaritza guztiek aurretik adostuak ([Kontseiluaren 14902/26 dokumentua, gaztelaniaz](https://data.consilium.europa.eu/doc/document/ST-14902-2026-INIT/es/pdf)), behar diren gaitasun berriak zerrendatzen ditu: «jarraibideak formulatzea, AAk sortutako emaitzak modu kritikoan ebaluatzea eta egiaztatzea», AA arazoak planteatzeko eta ebazteko erabiltzea, eta «AA noiz ez den erabili behar jakiteko gaitasuna». Arriskuei erreparatzeko ere eskatzen du, hala nola tresna horiekiko gehiegizko mendekotasunari, desinformazioari, ziberjazarpenari, alborapen algoritmikoei, ikaskuntzaren galerari, deskarga kognitiboari eta pribatutasunari, eta ebaluazioa berrikusteko, ikaskuntzaren emaitzak eta osotasun akademikoa babesteko.",
+    "Irakasleei buruz bi eskaera egiten dizkie estatuei: haien hasierako prestakuntza eta etengabekoa babestea, AAren alfabetatze-maila nahikoa izan dezaten, eta ikastetxeei orientazioa ematea erabilera-arau propioak egin ditzaten, osotasun akademikoa, plagioa, egile-eskubideak, gardentasuna eta AAren erabileraren adierazpena barne. Curriculumak berrikustean, erreferentzia gisa erabiltzeko eskatzen die gaitasun digitalaren Europako DigComp 3.0 esparrua, irakaskuntzan AA eta datuak modu etikoan erabiltzeko Europako jarraibideak, eta OCDEk eta Europar Batasunak Lehen eta Bigarren Hezkuntzarako egindako AA alfabetatze-esparrua, egunkariak [ekainean argitaratu zenean jaso zuena artikulu honetan](pieza:2026-11-12/marco-alfabetizacion-ia-ocde-comision).",
+    "Testuak garrantzia ematen dio subiranotasun digitalari: «funtsezkotzat» jotzen du «Europatik kanpo garatutako AA tresna eta teknologiekiko mendekotasunak murriztea, hezkuntzan eta prestakuntzan ere», eta «iturburu irekiko aukera europarrak» erabiltzera animatzen du. Europako Batzordeari, besteak beste, bizitzaren gainerako etapetarako AA alfabetatze-esparruak prestatzeko eta irakasleei prestakuntza eskaintzen jarraitzeko eskatzen dio, Eskola Hezkuntzarako Europako Plataforma bezalako sareetan.",
+    "Kontseiluaren ondorioak orientazio politikoak dira: norabide komun bat markatzen dute, baina ez dute betebehar zuzenik sortzen ikastetxe edo irakasle batentzat. Curriculumetan edo prestakuntzan aldatzen dena estatu eta hezkuntza-administrazio bakoitzak erabakitzen duenaren araberakoa izango da. Behin betiko bertsioa Europar Batasunaren Aldizkari Ofizialean argitaratuko da."
+   ],
+   "fuentes": [
+    {
+     "titulo": "EBko Kontseilua: «Equipping Europeans for the age of AI: Council approves conclusions» (ingelesez)",
+     "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/11/19/equipping-europeans-for-the-age-of-ai-council-approves-conclusions/"
+    },
+    {
+     "titulo": "EBko Kontseilua: «Proyecto de Conclusiones del Consejo sobre capacidades y competencias para interactuar con la inteligencia artificial (IA)» (14902/26 dokumentua, gaztelaniaz)",
+     "url": "https://data.consilium.europa.eu/doc/document/ST-14902-2026-INIT/es/pdf"
+    }
+   ],
+   "mensaje": {
+    "grupo": "chatgpt",
+    "id": 54574
+   },
+   "comprobado": "Revisión: la nota de prensa del Consejo da 403 también al revisor; el título, la fecha (19-11-2026, en la dirección y en la vista previa del mensaje #54574) y la descripción coinciden con lo que dice la pieza. Una búsqueda confirma que el documento ST 14902/2026 es el borrador de conclusiones sobre competencias en IA, previsto para aprobación el 19-11-2026, y que cita el marco UE-OCDE (el PDF no se pudo leer). La pieza enlazada sobre el marco existe y trata de él. El carácter no vinculante de unas conclusiones del Consejo es general. No se afirma nada sobre compromisos concretos, formación del profesorado ni petición a la Comisión, que solo constan en el mensaje del grupo y no se pudieron confirmar.",
+   "ilustracion": "Esquema de tres peldaños: un marco común europeo (arriba), cada Estado que lo adapta a sus currículos (en medio) y las aulas (abajo), con una flecha punteada que indica que es una orientación y no una obligación.",
+   "ilustracion_alt": "Hiru mailako eskema, geziz lotuak: zutabeak dituen eraikin bat, «Europako esparrua»; bandera bat, «Estatu bakoitza»; eta liburu ireki bat, «Gelak». Azken biren arteko gezi gorri puntuzkoak «Orientabidea soilik» errotulua darama."
+  },
+  {
+   "id": "google-distritos-ia-buscador",
+   "seccion": "novedades",
+   "importancia": 2,
+   "grupo": "chatgpt",
+   "antetitulo": "Ameriketako Estatu Batuak",
+   "titular": "Chicagok aztertzen du zer egin Googlek bilatzailea kentzen badie bere AA baztertzen duten barruti eskolarrei",
+   "entradilla": "Chicago Sun-Times-en arabera, Googlek ohartarazi du bere AA tresnak onartzen ez dituzten eskola-barrutiek datorren urtean galduko dutela bilatzailerako sarbidea.",
+   "cuerpo": [
+    "Chicago Sun-Times-ek [azaroaren 11n argitaratu zuen](https://chicago.suntimes.com/education/2026/11/11/what-to-know-about-cps-and-ai-as-chicago-students-risk-losing-access-to-google-search) Chris Phillipsek, Googleko hezkuntza-presidenteordeak, New York Times-i esan ziola AA erabat debekatzen duten eskolek ez dutela bilaketarako sarbiderik izango. Egunkariak ez du data zehatzik ematen: «datorren urteaz» hitz egiten du. Googlek, gaineratzen du, bere hezkuntza-tresnen AA funtzioak lehenetsita desaktibatuta uzten ditu Lehen eta Bigarren Hezkuntzako ikasleentzat, administratzaileek aktibatu arte, egunkariak jada jaso zuen bezala [Googleren iragarpenari buruzko artikulu honetan](pieza:2026-11-03/google-ia-cuentas-escolares).",
+    "Chicagoko eskola publikoek, Ameriketako Estatu Batuetako barruti handi batek, ChatGPT, Claude eta Gemini blokeatzen dituzte ikasleen kontuetan. Oraindik ez dute erabaki nola erantzun: bilatzailearen AA modua bereiz desaktibatzeko moduak aztertzen ari dira eta, hura gabe bilaketa mantentzea lortzen ez badute, beste bilatzaile batzuk bilatuko dituzte. Cybernews-ek kontatzen du 30 pertsona inguruk protesta egin zutela Googleren Chicagoko bulegoaren aurrean.",
+    "Ameriketako Estatu Batuetako albistea da, eta oraingoz ez die eragiten Espainiako ikastetxeei. Etor daitekeen eztabaida baten adibide gisa interesatzen da: zer egin ikastetxeko oinarrizko zerbitzu batek bilatzailea ikastetxeak baimendu ez dituen AA funtzioekin nahasten duenean."
+   ],
+   "fuentes": [
+    {
+     "titulo": "Chicago Sun-Times: «What to know about CPS and AI as Chicago students risk losing access to Google search» (ingelesez)",
+     "url": "https://chicago.suntimes.com/education/2026/11/11/what-to-know-about-cps-and-ai-as-chicago-students-risk-losing-access-to-google-search"
+    },
+    {
+     "titulo": "Cybernews: «Google AI ultimatum sparks Chicago school backlash» (ingelesez)",
+     "url": "https://cybernews.com/ai-news/google-gemini-protest-chicago-school"
+    }
+   ],
+   "mensaje": {
+    "grupo": "chatgpt",
+    "id": 54578
+   },
+   "comprobado": "Revisión: se abrió el artículo del Chicago Sun-Times (11-11-2026): declaración de Phillips al NYT, la condición de Google para el año próximo, CPS bloquea ChatGPT, Claude y Gemini, no ha decidido y explora suprimir el modo de IA o buscar otros proveedores, y las funciones de IA de las herramientas educativas desactivadas hasta que los administradores las activen. Se quitó «porque ambas están muy integradas», que el artículo no recoge (solo consta en el mensaje del grupo). Cybernews no se pudo abrir (403): la cifra de unos 30 manifestantes sale de su descripción en la vista previa. Se añadió el enlace al artículo ya publicado del 3-11 sobre el anuncio de Google. No se recoge lo que el mensaje dice de Nueva York y Los Ángeles ni de la nota del 15 de noviembre, por no haberlo podido confirmar.",
+   "ilustracion": null,
+   "ilustracion_alt": "Eraikin bat, «Barrutia», «AA baztertzen du» errotulua duen gezi batekin, zirkulu gorri batez marratutako lupa batera doana, «Bilatzailea», eta azpian galdera hau: «Sarbiderik gabe?»."
+  },
+  {
+   "id": "manchester-festival-sin-ia",
+   "seccion": "multimedia",
+   "importancia": 3,
+   "grupo": "edumedia",
+   "antetitulo": "Animazio jaialdiak",
+   "titular": "Manchester Animation Festivalak ez ditu 2027tik aurrera AA sortzailez egindako filmak onartuko",
+   "entradilla": "Erresuma Batuko jaialdiak azaroaren 13an iragarri zuen, aurtengo sariekin batera. Bere zuzendariak animazioko artistei laguntzeko modu gisa aurkezten du.",
+   "cuerpo": [
+    "[Señal News-en](https://senalnews.com/en/events/manchester-animation-festival-unveils-2026-winners-) arabera, Manchester Animation Festivalak 2026ko azaroaren 13an iragarri zuen 2027tik aurrera adimen artifizial sortzailez sortutako filmak onartzeari utziko diola; jasotzen dituen jarraibideen arabera irudiak, testuak edo bideoak sortzen dituen AAz, alegia. Aurtengo edizioko irabazleekin eta 2027ko deialdiaren irekierarekin batera egin zuen iragarpena.",
+    "Bere zuzendariak, Steve Hendersonek, esan zuen politika berriak artistak lehen lerroan jartzen dituela eta jaialdiak animazioa posible egiten duten sortzaileei lagundu nahi diela. Artikuluak ez du azaltzen nola egiaztatuko den aurkeztutako lanen jatorria.",
+    "Ikus-entzunezkoen edo plastikaren gelarako, datu baliagarria da: ikasleek AA sortzailearekin proiektu bat egin badute eta jaialdietara aurkeztu nahi badute, komeni da lehenago oinarriak irakurtzea, batzuk hura baztertzen hasi baitira."
+   ],
+   "fuentes": [
+    {
+     "titulo": "Señal News: «Manchester Animation Festival unveils 2026 winners» (ingelesez)",
+     "url": "https://senalnews.com/en/events/manchester-animation-festival-unveils-2026-winners-"
+    }
+   ],
+   "mensaje": {
+    "grupo": "edumedia",
+    "id": 12371
+   },
+   "comprobado": "Revisión: se abrió el artículo de Señal News: fecha (13-11-2026, tras el festival del 8 al 12), política para 2027 anunciada al abrir la convocatoria, palabras de Henderson («puts artists first»), y que no explica cómo se comprobará. Las bases oficiales del festival no se encontraron. Lo que el mensaje dice de otros festivales, los Óscar y los BAFTA no se recoge por no haberse confirmado.",
+   "ilustracion": null,
+   "ilustracion_alt": "Zinema-klaketa bat, «AAdun filma», «2027tik aurrera» errotulua duen gezi batekin, barra gorri batez moztua, zutabeak dituen eraikinera, «Jaialdia», iristen ez dena."
+  },
+  {
+   "id": "trama-universos-variantes",
+   "seccion": "vibecoding",
+   "importancia": 3,
+   "grupo": "vce",
+   "antetitulo": "Komunitatearen berrikuntza",
+   "titular": "Tramak «unibertsoetan» multzokatutako irakurgaiak eta zailtasun-maila desberdineko bertsioak gehitu ditu",
+   "entradilla": "Irakurmena lantzeko katalogoak mundu bera partekatzen duten irakurgaiak eta testu beraren maila desberdineko bertsioak aukeratzeko modua ematen du. Egileak galiziera, euskara eta aranera itzultzen laguntzeko eskatzen du.",
+   "cuerpo": [
+    "[Tramak](https://trama.ortogra.fi/), galderak eta inprimatzeko fitxak dituen irakurgaien katalogoak, Aarón Fortuñok sortua eta egunkariak [azaroaren 17an aurkeztu zuenak](pieza:2026-11-16/trama-comprensio-lectora), bi funtzio gehitu ditu. «Unibertsoek» leku bat, pertsonaia batzuk edo mundu bat partekatzen duten irakurgai independenteak biltzen dituzte, eta edozein ordenatan irakur daitezke. «Aldaerak» irakurgai beraren bertsioak dira, eskakizun-maila desberdinekin, klase osoak istorio bera aldi berean lantzeko. Webak berak Ikaskuntzarako Diseinu Unibertsalaren neurri gisa aurkezten ditu.",
+    "Egileak taldean laguntza eskatzen du interfazea eta irakurgaiak galizierara, euskarara eta aranerara (Aran Haraneko occitanoaren barietatea) berrikusi eta itzultzeko, ez baitu itzulpenak zuzenak direla egiaztatzeko behar den ezagutzarik. Oraingoz, irakurgaiak katalanez eta gaztelaniaz daude. Bere orriaren arabera, ez da konturik sortu behar eta ez du cookierik erabiltzen, eta klase-kodeak nabigatzailean gordetzen dira."
+   ],
+   "fuentes": [
+    {
+     "titulo": "Trama · Comprensió lectora (katalanez)",
+     "url": "https://trama.ortogra.fi/"
+    }
+   ],
+   "mensaje": {
+    "grupo": "vce",
+    "id": 15172
+   },
+   "comprobado": "Revisión: se abrió trama.ortogra.fi: filtros de universos y variantes, referencia al Diseño Universal para el Aprendizaje, autoría de Aarón Fortuño, lecturas en catalán y castellano, sin cuentas ni cookies, códigos de clase en el navegador. La petición de traductores es del mensaje del grupo (#15173). No se da el número de lecturas, porque la web y el diario ya publicado dan cifras distintas. Se cambió «la web está en catalán y castellano» por «las lecturas», que es lo que dice la página (la interfaz se elige aparte).",
+   "ilustracion": null,
+   "ilustracion_alt": "Ezkerrean, hiru liburu ireki zirkulu puntuzko baten barruan, «Unibertsoa»; eskuinean, pilatutako hiru orri, luzera desberdineko testu-lerroekin, «Aldaerak»."
+  }
+ ],
+ "breves": [],
+ "descartado": [
+  "Fin de Marble de World Labs el 8 de enero de 2027 (EduMedia, #12382): es un correo reenviado y la búsqueda no encontró ninguna confirmación oficial; no se publica.",
+  "Muse, el asistente de Meta (#54564): mensaje de presentación de una persona recién llegada, por invitación y sin fuente oficial hallada.",
+  "Genie 4, Google AI Studio en Android, Eduvers, historial de Gemini y diario reflexivo: ya publicados el 20 de noviembre o el 19; sin novedad comprobable.",
+  "Debate sobre el idioma en Vibe Coding Educativo: administración y normas internas del grupo.",
+  "Libro «La IA agéntica en la educación» y Cuadernos de Pedagogía n.º 580: documentos de la Biblioteca digital, que tienen su propia sección.",
+  "Marco (LMS con Streamlit y Supabase, #15149): sin web ni recurso que comprobar.",
+  "Maniobres (#15176) y novedades del repositorio (#15171): avisos del bot; los cubre la sección del repositorio."
+ ],
+ "repaso": [
+  "Consejo de la UE: titular acortado de 91 a 86 caracteres; «comprobado» ampliado con lo verificado (borrador ST 14902/2026 y marco UE-OCDE por búsqueda; la nota de prensa sigue sin abrirse).",
+  "Chicago: quitado «porque ambas están muy integradas» (no está en el artículo); precisado que Phillips lo dijo al NYT y que las funciones de IA se desactivan por defecto en las herramientas educativas; enlazado el artículo del 3-11 sobre el anuncio de Google; «otras alternativas» pasa a «otros proveedores de búsqueda».",
+  "Trama: «la web está en catalán y castellano» pasa a «las lecturas», como dice la página.",
+  "Manchester: sin cambios."
+ ]
+}

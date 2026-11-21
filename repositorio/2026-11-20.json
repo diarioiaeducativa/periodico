@@ -1,0 +1,101 @@
+{
+ "fecha": "2026-11-20",
+ "piezas": [
+  {
+   "id": "semana-del-repositorio",
+   "seccion": "vibecoding",
+   "repositorio": "semana",
+   "importancia": 2,
+   "grupo": "vce",
+   "antetitulo": "La semana del repositorio",
+   "titular": "Un puzle de trenes en catalán para planificar maniobras, nuevo en el repositorio",
+   "entradilla": "El Repositorio de recursos de Vibe Coding Educativo suma en la semana que termina el 20 de noviembre ocho recursos: uno se presenta aquí y siete ya tuvieron su artículo.",
+   "cuerpo": [
+    "El recurso que queda por contar es «Maniobres · Cada moviment compta», un juego de lógica de Felip Sarroca i Gil, autor también de cinco de los que ya tuvieron su artículo en el diario."
+   ],
+   "recursos": [
+    {
+     "id": "maniobres-cada-moviment-compta",
+     "titulo": "Maniobres · Cada moviment compta",
+     "autoria": "Felip Sarroca i Gil",
+     "url": "https://ja.cat/maniobres",
+     "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://ja.cat/maniobres",
+     "licencia": "AGPL v3 (código) · CC BY-NC-SA 4.0 (contenidos)",
+     "captura": "2026-11-20-maniobres-cada-moviment-compta.jpg",
+     "captura_alt": "Pantalla de bienvenida del juego sobre un tablero de vías con vagones numerados de colores, con un campo para escribir el nombre de jugador.",
+     "texto": [
+      "Es un puzle ferroviario, en catalán, basado en el problema Inglenook: hay que formar en la vía A un tren con los vagones numerados en un orden dado, moviéndolos entre varias vías con una locomotora. Se arrastran los vagones de una vía a la locomotora y de esta a otra vía, y cada nivel marca un mínimo de movimientos; la pantalla cuenta movimientos y tiempo, y ofrece deshacer, reiniciar, pista y un nuevo reto. Según su autor, el alumnado puede subir su resultado a un ránking público. Según la ficha, está pensado para primaria, secundaria, bachillerato y adultos, y trabaja la planificación y la lógica. Se juega en el navegador, pidiendo solo un nombre de jugador."
+     ]
+    }
+   ],
+   "fuentes": [
+    {
+     "titulo": "Maniobres · Cada moviment compta",
+     "url": "https://ja.cat/maniobres"
+    },
+    {
+     "titulo": "Presentación en Vibe Coding Educativo",
+     "url": "https://t.me/vceduca/7674/15176"
+    }
+   ],
+   "comprobado": "Se miró la captura (pantalla de bienvenida con campo de nombre sobre el tablero con vías, vagones y locomotora) y el texto visible de la página (nivel fácil, 40 puntos con el mínimo, contadores, botones Desfer, Reiniciar, Pista, Nou repte, pestañas Jugar, Rànquing, Sobre el joc, Com s'hi juga). WebFetch redirige a felipsarroca.github.io/jocs/Maniobres/ y solo devuelve la carga inicial (necesita JavaScript): confirma catalán, autoría y licencias. El mensaje de presentación no se pudo abrir (Telegram solo da la plantilla); se usó el de la entrada. El ránking público y los niveles salen de la ficha y del mensaje del autor, no se han visto funcionando. Autoría de Sarroca en cinco artículos previos comprobada con la lista de la entrada.",
+   "ya_contados": [
+    {
+     "fecha": "2026-11-14",
+     "id": "revolucion-industrial-blender-codex",
+     "titulo": "La Revolució Industrial",
+     "autoria": "Felip Sarroca i Gil",
+     "url": "https://ja.cat/revindustrial"
+    },
+    {
+     "fecha": "2026-11-15",
+     "id": "enfonsar-la-flota",
+     "titulo": "Enfonsar la flota",
+     "autoria": "Felip Sarroca i Gil",
+     "url": "https://ja.cat/flota"
+    },
+    {
+     "fecha": "2026-11-16",
+     "id": "trama-comprensio-lectora",
+     "titulo": "Trama · Comprensió lectora",
+     "autoria": "Aarón Fortuño",
+     "url": "https://trama.ortogra.fi/"
+    },
+    {
+     "fecha": "2026-11-17",
+     "id": "agente-clima-ies",
+     "titulo": "Agente Clima IES",
+     "autoria": "Manuel Cardeñosa",
+     "url": "https://mcardenosah.github.io/agenteclimaies"
+    },
+    {
+     "fecha": "2026-11-17",
+     "id": "sarroca-subhasta-densitat",
+     "titulo": "Subhasta",
+     "autoria": "Felip Sarroca i Gil",
+     "url": "https://ja.cat/subhasta"
+    },
+    {
+     "fecha": "2026-11-17",
+     "id": "sarroca-subhasta-densitat",
+     "titulo": "Densitats",
+     "autoria": "Felip Sarroca i Gil",
+     "url": "https://ja.cat/densitats"
+    },
+    {
+     "fecha": "2026-11-17",
+     "id": "sarroca-subhasta-densitat",
+     "titulo": "Densitat · Laboratori virtual de densitat i flotació",
+     "autoria": "Felip Sarroca i Gil",
+     "url": "https://ja.cat/labdensitat"
+    }
+   ]
+  }
+ ],
+ "descartado": [],
+ "repaso": [
+  "Cuerpo: «tres» corregido a «cinco» (la entrada lista cinco recursos de Felip Sarroca ya contados) y quitado «esta semana» y «salieron».",
+  "Los niveles, atribuidos a la ficha («Según la ficha…»).",
+  "Actualizado `comprobado`."
+ ]
+}

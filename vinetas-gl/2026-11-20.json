@@ -1,0 +1,84 @@
+{
+ "fecha": "2026-11-20",
+ "elegida": {
+  "n": 2,
+  "pieza": "manchester-festival-sin-ia",
+  "idea": "Algoritmo remata unha curta de animación en doce segundos; Xiz cóntalle que o festival non aceptará películas feitas con IA xerativa desde 2027, e el pregunta como se fai sen IA. O rótulo final di todo: «Tres horas despois: fotograma 2». Remate mudo, co xiro no rótulo, e o chasco lévao Algoritmo.",
+  "guion": {
+   "vinetas": [
+    {
+     "cartela": "Na aula de plástica, cunha curta para un festival.",
+     "escenario": "aula",
+     "tiza": {
+      "expresion": "neutral",
+      "postura": "cruzar",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "riendo",
+      "postura": "arriba",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "objeto": "portatil",
+     "bocadillos": [
+      {
+       "quien": "algoritmo",
+       "texto": "Curta de animación rematada! En doce segundos.",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "aula",
+     "tiza": {
+      "expresion": "preocupado",
+      "postura": "encoger",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "sorprendido",
+      "postura": "cabeza",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "objeto": "portatil",
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "O festival non aceptará películas feitas con IA xerativa desde 2027.",
+       "tipo": "habla"
+      },
+      {
+       "quien": "algoritmo",
+       "texto": "E sen IA como se fai?",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "cartela": "Tres horas despois: fotograma 2.",
+     "escenario": "aula",
+     "tiza": {
+      "expresion": "pensativo",
+      "postura": "pensar",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "agotado",
+      "postura": "sostener",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "objeto": "folio",
+     "lleva": "algoritmo",
+     "bocadillos": []
+    }
+   ]
+  }
+ },
+ "traduccion": "automática con IA"
+}

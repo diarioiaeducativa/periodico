@@ -1,0 +1,127 @@
+{
+ "fecha": "2026-11-20",
+ "elegida": {
+  "n": 2,
+  "pieza": "manchester-festival-sin-ia",
+  "idea": "Algoritmo acaba un corto de animación en doce segundos; Tiza le cuenta que el festival no aceptará películas hechas con IA generativa desde 2027, y él pregunta cómo se hace sin IA. El rótulo final lo dice todo: «Tres horas después: fotograma 2». Remate mudo, con el giro en el rótulo, y el chasco se lo lleva Algoritmo.",
+  "guion": {
+   "vinetas": [
+    {
+     "cartela": "En el aula de plástica, con un corto para un festival.",
+     "escenario": "aula",
+     "tiza": {
+      "expresion": "neutral",
+      "postura": "cruzar",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "riendo",
+      "postura": "arriba",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "objeto": "portatil",
+     "bocadillos": [
+      {
+       "quien": "algoritmo",
+       "texto": "¡Corto de animación terminado! En doce segundos.",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "aula",
+     "tiza": {
+      "expresion": "preocupado",
+      "postura": "encoger",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "sorprendido",
+      "postura": "cabeza",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "objeto": "portatil",
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "El festival no aceptará películas hechas con IA generativa desde 2027.",
+       "tipo": "habla"
+      },
+      {
+       "quien": "algoritmo",
+       "texto": "¿Y sin IA cómo se hace?",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "cartela": "Tres horas después: fotograma 2.",
+     "escenario": "aula",
+     "tiza": {
+      "expresion": "pensativo",
+      "postura": "pensar",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "agotado",
+      "postura": "sostener",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "objeto": "folio",
+     "lleva": "algoritmo",
+     "bocadillos": []
+    }
+   ]
+  }
+ },
+ "motivo": "La 2 y la 5 son las dos mejores y están parejas en gracia (8); decide la variedad, y gana la 2. Su chiste se entiende sin haber leído la noticia: la IA que hace un corto en doce segundos descubre lo que cuesta la animación cuando hay que hacerla a mano, y el remate no necesita ni una palabra de los personajes: el rótulo «Tres horas después: fotograma 2» y Algoritmo con ojeras y un folio en la mano. La ironía cae sobre la tecnología (su prisa, su «¿y sin IA cómo se hace?»), no sobre el festival ni sobre quienes animan, y no toma partido en el debate. Los datos son los de la pieza y no añade ninguno: un festival de animación que no aceptará películas hechas con IA generativa desde 2027; los doce segundos y las tres horas son de la tira, no de la noticia. Su gracia llega a 7, así que solo se ha afinado el ritmo. La 5 («Revisado. Me he puesto un diez») tiene un remate corto y muy reconocible para cualquier docente, y la segunda viñeta clava la noticia («Traducir no era el problema. ¿Quién comprueba que están bien?»), pero es justo el molde más gastado: Algoritmo remata por exceso de celo y Tiza acaba con las manos en la cabeza; a igual gracia, pierde. La 4 tiene una frase final con ingenio («Yo voy por la de \"tienes razón, disculpa la confusión\"»), pero el puente de las «etapas» está algo forzado, la primera viñeta se va en explicar la noticia con 83 caracteres y el remate pide reconocer la muletilla. La 3 («¡Las actas del claustro!») tiene una comparación simpática, pero empieza con un «Trae» sin sujeto que no dice de qué se habla, tarda dos viñetas en plantear y vuelve al claustro, que ya fue el tema del número del 18. La 1 es la más floja: Algoritmo hace de chantajista («conmigo o sin buscador»), lo que roza su carácter (nunca amenazante) y pone el blanco en la decisión de una empresa reconocible aunque no se nombre; el remate mudo de Tiza con un libro es el tópico de la vuelta al papel y su primer bocadillo tiene 87 caracteres. Ninguna se inventa datos de la noticia; las cinco caben.",
+ "retoques": "Primera viñeta, bocadillo de Algoritmo: «¡Corto de animación terminado! En doce segundos.» en vez de «…Me ha llevado doce segundos.»: más corto (48 caracteres) y con el golpe en la cifra, que es lo que luego contrasta con las tres horas. Segunda viñeta, bocadillo de Tiza: «El festival no aceptará películas hechas con IA generativa desde 2027.» en vez de «El festival de Manchester no aceptará…»: el rótulo ya ha dicho que el corto es para un festival, así que el nombre sobraba; baja de 84 a 70 caracteres, la viñeta respira y la tira no señala a nadie por su nombre. Es el primer bocadillo de esa viñeta y se acorta, no se alarga, así que sigue cabiendo. «¿Y sin IA cómo se hace?» y el rótulo de la tercera no se tocan: son el chiste. Rótulo de la primera viñeta: está, tiene 54 caracteres y sitúa (dónde están y de qué va) sin adelantar el chiste; se deja. Escenario aula: libre (no salió en los tres números anteriores) y es donde pasa la escena, el aula de plástica; se mantiene en las tres viñetas. Objetos: el portátil en las dos primeras y el folio en la mano de Algoritmo en la tercera; que el portátil desaparezca es parte del remate (ya no hay máquina, solo papel). El folio salió el día 18, no en el número anterior, y el chiste lo pide. Caras: se dejan; ninguno de los dos pone «contento», Algoritmo estrena «riendo» y recorre riendo, sorprendido y agotado, y Tiza, neutral, preocupada y pensativa, sin ninguna de sus repetidas. Posturas: se dejan; Algoritmo empieza con «arriba», que está entre sus repetidas y fue la de ayer, pero el chiste la pide (la euforia de la que cae a las manos en la cabeza y al folio), y acaba en «sostener», que no había usado; Tiza acaba en «pensar», que tampoco había usado y en el remate mudo hace de profesora de plástica que examina el fotograma. El molde: Tiza dijo la última frase en los dos números anteriores; hoy el remate es mudo, con el giro en el rótulo, y el chasco es de Algoritmo; acaban Tiza pensativa y Algoritmo agotado, un final que no repite ninguno de los tres anteriores. Ningún bocadillo pasa de 90 caracteres (el más largo, 70).",
+ "puntuaciones": [
+  {
+   "n": 1,
+   "gracia": 6,
+   "claridad": 6,
+   "remate": 6,
+   "prohibiciones": "respeta, pero las roza: Algoritmo sale amenazante («conmigo o sin buscador») y el blanco es la decisión de una empresa reconocible, aunque no se nombre",
+   "cabe": true
+  },
+  {
+   "n": 2,
+   "gracia": 8,
+   "claridad": 8,
+   "remate": 8,
+   "prohibiciones": "respeta",
+   "cabe": true
+  },
+  {
+   "n": 3,
+   "gracia": 7,
+   "claridad": 6,
+   "remate": 7,
+   "prohibiciones": "respeta",
+   "cabe": true
+  },
+  {
+   "n": 4,
+   "gracia": 7,
+   "claridad": 7,
+   "remate": 8,
+   "prohibiciones": "respeta",
+   "cabe": true
+  },
+  {
+   "n": 5,
+   "gracia": 8,
+   "claridad": 9,
+   "remate": 8,
+   "prohibiciones": "respeta",
+   "cabe": true
+  }
+ ]
+}

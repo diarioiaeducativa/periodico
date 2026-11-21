@@ -1,0 +1,89 @@
+{
+  "fecha": "2026-11-21",
+  "avisos": {
+    "chatgpt": {
+      "saludo": "Buenos días. Dos noticias sobre IA y escuela, a los dos lados del Atlántico.",
+      "puntos": [
+        "El Consejo de la UE aprobó el 19 de noviembre unas conclusiones para que la ciudadanía aprenda a usar la IA con criterio; son orientaciones, no una norma que obligue a los centros",
+        "Según el Chicago Sun-Times, Google avisa de que los distritos escolares que no permitan sus herramientas de IA perderán el acceso a su buscador el año próximo"
+      ]
+    },
+    "vce": {
+      "saludo": "Buenos días. Un puzle de trenes y una web de lecturas que crece.",
+      "puntos": [
+        "«Maniobres · Cada moviment compta», de Felip Sarroca i Gil, es un puzle ferroviario en catalán: hay que ordenar vagones entre varias vías con el mínimo de movimientos",
+        "Trama, el catálogo de lecturas con preguntas creado por Aarón Fortuño, añade «universos» de lecturas que comparten mundo y versiones del mismo texto con distinto nivel"
+      ],
+      "url": "https://diarioiaeducativa.github.io/n/20-vce.html"
+    },
+    "edumedia": {
+      "saludo": "Buenos días. Un festival de animación cierra la puerta a la IA generativa.",
+      "puntos": [
+        "El Manchester Animation Festival anunció el 13 de noviembre que desde 2027 no aceptará películas hechas con IA generativa; conviene leer las bases antes de presentar proyectos del alumnado",
+        "En la viñeta de Tiza y Algoritmo, un corto de animación terminado en doce segundos descubre lo que cuesta hacerlo a mano"
+      ],
+      "url": "https://diarioiaeducativa.github.io/n/20-edumedia.html"
+    }
+  },
+  "instagram": "Este número recoge las conclusiones que el Consejo de la Unión Europea aprobó el 19 de noviembre para que la ciudadanía aprenda a usar la inteligencia artificial con criterio, y la advertencia de Google a los distritos escolares de Estados Unidos que no permitan sus herramientas de IA. También trata de un festival británico de animación que no aceptará películas hechas con IA generativa desde 2027, de un juego de trenes en catalán para practicar la lógica y de un catálogo de lecturas que añade versiones de distinto nivel.",
+  "titulo": "Diario de IA Educativa · Núm. 20",
+  "fecha_texto": "Sábado, 21 de noviembre de 2026",
+  "url": "https://diarioiaeducativa.github.io/?n=20",
+  "imagen": "https://diarioiaeducativa.github.io/portadas/2026-11-20-es.jpg",
+  "personas": [
+    {
+      "id": 978013977,
+      "piezas": [
+        {
+          "es": {
+            "titular": "Un puzle de trenes en catalán para planificar maniobras, nuevo en el repositorio",
+            "url": "https://diarioiaeducativa.github.io/2026-11-20/semana-del-repositorio.html"
+          },
+          "ca": {
+            "titular": "Un trencaclosques de trens en català per planificar maniobres, nou al repositori",
+            "url": "https://diarioiaeducativa.github.io/ca/2026-11-20/semana-del-repositorio.html"
+          },
+          "gl": {
+            "titular": "Un crebacabezas de trens en catalán para planificar manobras, novo no repositorio",
+            "url": "https://diarioiaeducativa.github.io/gl/2026-11-20/semana-del-repositorio.html"
+          },
+          "eu": {
+            "titular": "Maniobrak planifikatzeko katalanezko tren-puzzle bat, berria biltegian",
+            "url": "https://diarioiaeducativa.github.io/eu/2026-11-20/semana-del-repositorio.html"
+          },
+          "en": {
+            "titular": "A Catalan-language train puzzle for planning shunting moves is new in the repository",
+            "url": "https://diarioiaeducativa.github.io/en/2026-11-20/semana-del-repositorio.html"
+          }
+        }
+      ]
+    },
+    {
+      "id": 7198698,
+      "piezas": [
+        {
+          "es": {
+            "titular": "Trama añade lecturas agrupadas por «universos» y versiones de distinta dificultad",
+            "url": "https://diarioiaeducativa.github.io/2026-11-20/trama-universos-variantes.html"
+          },
+          "ca": {
+            "titular": "Trama afegeix lectures agrupades per «universos» i versions de diferent dificultat",
+            "url": "https://diarioiaeducativa.github.io/ca/2026-11-20/trama-universos-variantes.html"
+          },
+          "gl": {
+            "titular": "Trama engade lecturas agrupadas por «universos» e versións de distinta dificultade",
+            "url": "https://diarioiaeducativa.github.io/gl/2026-11-20/trama-universos-variantes.html"
+          },
+          "eu": {
+            "titular": "Tramak «unibertsoetan» multzokatutako irakurgaiak eta zailtasun-maila desberdineko bertsioak gehitu ditu",
+            "url": "https://diarioiaeducativa.github.io/eu/2026-11-20/trama-universos-variantes.html"
+          },
+          "en": {
+            "titular": "Trama adds readings grouped into “universes” and versions of different difficulty",
+            "url": "https://diarioiaeducativa.github.io/en/2026-11-20/trama-universos-variantes.html"
+          }
+        }
+      ]
+    }
+  ]
+}

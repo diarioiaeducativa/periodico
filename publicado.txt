@@ -190,3 +190,10 @@
 - pieza:2026-11-19/clark-kozma-medios-aprendizaje (debates) El debate de 1994 entre Clark y Kozma sirve para leer los estudios de Stanford sobre IA
 - pieza:2026-11-19/diario-reflexivo-docente-ia (debates) Un diario reflexivo docente con IA plantea si el asistente apoya o sustituye el criterio
 - breve: Eduvers, la plataforma de simulaciones que el diario [presentó el 12 de noviembre](pieza:2
+- pieza:2026-11-19/canada-alfabetizacion-ia (biblioteca) Canadá lanza una iniciativa nacional de alfabetización en IA con tres vías: estudiantes, docentes y ciudadanía
+
+## 2026-11-20 (publicado el sábado 21 de noviembre de 2026)
+- pieza:2026-11-20/consejo-ue-competencias-ia (novedades) El Consejo de la UE aprueba conclusiones sobre las competencias de la ciudadanía en IA
+- pieza:2026-11-20/google-distritos-ia-buscador (novedades) Chicago estudia qué hacer si Google retira su buscador a los distritos que rechazan su IA
+- pieza:2026-11-20/manchester-festival-sin-ia (multimedia) El Manchester Animation Festival no aceptará películas hechas con IA generativa desde 2027
+- pieza:2026-11-20/trama-universos-variantes (vibecoding) Trama añade lecturas agrupadas por «universos» y versiones de distinta dificultad

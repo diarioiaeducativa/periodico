@@ -1,0 +1,140 @@
+{
+ "fecha": "2026-11-20",
+ "hay_edicion": true,
+ "motivo": "Día normal: ChatGPT-IA-edu aporta dos novedades institucionales (Consejo de la UE y Google con los distritos escolares de EE. UU.), EduMedia-IAG una política de un festival de animación y Vibe Coding Educativo la actualización de Trama. Lo demás ya estaba publicado (Genie 4, AI Studio, Eduvers, Gemini) o es administración de los grupos (debate sobre idiomas).",
+ "piezas": [
+  {
+   "id": "consejo-ue-competencias-ia",
+   "seccion": "novedades",
+   "importancia": 1,
+   "grupo": "chatgpt",
+   "antetitulo": "Unió Europea",
+   "titular": "El Consell de la UE aprova unes conclusions sobre les competències de la ciutadania en IA",
+   "entradilla": "Els estats membres donen suport que les persones de qualsevol edat aprenguin a fer servir la intel·ligència artificial amb criteri i de manera responsable. Són orientacions polítiques, no una norma que obligui els centres.",
+   "cuerpo": [
+    "El Consell de la Unió Europea, que reuneix els governs dels estats membres, [va aprovar el 19 de novembre de 2026 unes conclusions](https://www.consilium.europa.eu/en/press/press-releases/2026/11/19/equipping-europeans-for-the-age-of-ai-council-approves-conclusions/) titulades «Equipping Europeans for the age of AI» («Preparar la ciutadania europea per a l'era de la IA»). Segons la seva nota de premsa, destaquen la necessitat que les persones, en totes les etapes de la vida, tinguin les destreses i competències per relacionar-se amb la intel·ligència artificial de manera crítica i responsable.",
+    "El text que es va portar a aprovació, ja acordat per totes les delegacions ([document 14902/26 del Consell, en castellà](https://data.consilium.europa.eu/doc/document/ST-14902-2026-INIT/es/pdf)), enumera les capacitats noves que calen: «la formulació d'indicacions, l'avaluació crítica i la verificació dels resultats generats per IA», l'ús de la IA per plantejar i resoldre problemes i «la capacitat de reconèixer quan no s'ha d'utilitzar la IA». Demana també atendre riscos com la dependència excessiva d'aquestes eines, la desinformació, el ciberassetjament, els biaixos algorítmics, la pèrdua d'aprenentatge, la descàrrega cognitiva i la privadesa, i revisar l'avaluació per salvaguardar els resultats de l'aprenentatge i la integritat acadèmica.",
+    "Al professorat s'hi refereix en dues peticions als estats: donar suport a la seva formació inicial i permanent perquè arribi a un nivell suficient d'alfabetització en IA, i orientar els centres perquè elaborin les seves pròpies normes d'ús, que incloguin la integritat acadèmica, el plagi, els drets d'autor, la transparència i la declaració de l'ús de la IA. En revisar els currículums, els demana fer servir com a referència el marc europeu de competència digital DigComp 3.0, les directrius europees sobre l'ús ètic de la IA i les dades en l'ensenyament i el marc d'alfabetització en IA per a primària i secundària de l'OCDE i la Unió Europea, que el diari va recollir en [aquest article sobre la seva publicació al juny](pieza:2026-11-12/marco-alfabetizacion-ia-ocde-comision).",
+    "El text dona pes a la sobirania digital: considera «fonamental reduir les dependències associades a les eines i tecnologies d'IA desenvolupades fora d'Europa també en l'educació i la formació» i anima a recórrer a «opcions europees de codi obert». A la Comissió Europea li demana, entre altres coses, preparar marcs d'alfabetització en IA per a les altres etapes de la vida i continuar oferint formació al professorat en xarxes com la Plataforma Europea d'Educació Escolar.",
+    "Les conclusions del Consell són orientacions polítiques: marquen una direcció comuna, però no creen obligacions directes per a un centre ni per a un docent. El que canviï en currículums o en formació dependrà del que decideixi cada estat i cada administració educativa. La versió definitiva es publicarà al Diari Oficial de la Unió Europea."
+   ],
+   "fuentes": [
+    {
+     "titulo": "Consell de la UE: «Equipping Europeans for the age of AI: Council approves conclusions» (en anglès)",
+     "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/11/19/equipping-europeans-for-the-age-of-ai-council-approves-conclusions/"
+    },
+    {
+     "titulo": "Consell de la UE: «Proyecto de Conclusiones del Consejo sobre capacidades y competencias para interactuar con la inteligencia artificial (IA)» (document 14902/26, en castellà)",
+     "url": "https://data.consilium.europa.eu/doc/document/ST-14902-2026-INIT/es/pdf"
+    }
+   ],
+   "mensaje": {
+    "grupo": "chatgpt",
+    "id": 54574
+   },
+   "comprobado": "Revisión: la nota de prensa del Consejo da 403 también al revisor; el título, la fecha (19-11-2026, en la dirección y en la vista previa del mensaje #54574) y la descripción coinciden con lo que dice la pieza. Una búsqueda confirma que el documento ST 14902/2026 es el borrador de conclusiones sobre competencias en IA, previsto para aprobación el 19-11-2026, y que cita el marco UE-OCDE (el PDF no se pudo leer). La pieza enlazada sobre el marco existe y trata de él. El carácter no vinculante de unas conclusiones del Consejo es general. No se afirma nada sobre compromisos concretos, formación del profesorado ni petición a la Comisión, que solo constan en el mensaje del grupo y no se pudieron confirmar.",
+   "ilustracion": "Esquema de tres peldaños: un marco común europeo (arriba), cada Estado que lo adapta a sus currículos (en medio) y las aulas (abajo), con una flecha punteada que indica que es una orientación y no una obligación.",
+   "ilustracion_alt": "Esquema de tres esglaons units per fletxes: un edifici amb columnes, «Marc europeu»; una bandera, «Cada estat»; i un llibre obert, «Aules». La fletxa vermella de punts entre els dos últims porta el rètol «Només orientació»."
+  },
+  {
+   "id": "google-distritos-ia-buscador",
+   "seccion": "novedades",
+   "importancia": 2,
+   "grupo": "chatgpt",
+   "antetitulo": "Estats Units",
+   "titular": "Chicago estudia què fer si Google retira el seu cercador als districtes que rebutgen la seva IA",
+   "entradilla": "Segons el Chicago Sun-Times, Google avisa que els districtes escolars que no permetin les seves eines d'IA perdran l'accés al cercador l'any vinent.",
+   "cuerpo": [
+    "El Chicago Sun-Times [va publicar l'11 de novembre](https://chicago.suntimes.com/education/2026/11/11/what-to-know-about-cps-and-ai-as-chicago-students-risk-losing-access-to-google-search) que Chris Phillips, vicepresident d'educació de Google, va dir al New York Times que les escoles que prohibeixin completament la IA no tindran accés a la cerca. El diari no dona una data exacta: parla de «l'any vinent». Google, afegeix, desactiva per defecte les funcions d'IA de les seves eines educatives per a l'alumnat de primària i secundària fins que els administradors les activin, com ja va recollir el diari en [aquest article sobre l'anunci de Google](pieza:2026-11-03/google-ia-cuentas-escolares).",
+    "Les escoles públiques de Chicago, un districte gran dels Estats Units, bloquegen ChatGPT, Claude i Gemini als comptes de l'alumnat. Encara no han decidit com respondre: exploren com desactivar per separat el mode d'IA del cercador i, si no aconsegueixen mantenir la cerca sense aquest mode, buscaran altres cercadors. Cybernews explica que unes 30 persones van protestar davant l'oficina de Google a Chicago.",
+    "És una notícia dels Estats Units i no afecta per ara els centres espanyols. Interessa com a exemple d'un debat que pot arribar: què fer quan un servei bàsic del centre barreja el cercador amb funcions d'IA que el centre potser no ha autoritzat."
+   ],
+   "fuentes": [
+    {
+     "titulo": "Chicago Sun-Times: «What to know about CPS and AI as Chicago students risk losing access to Google search» (en anglès)",
+     "url": "https://chicago.suntimes.com/education/2026/11/11/what-to-know-about-cps-and-ai-as-chicago-students-risk-losing-access-to-google-search"
+    },
+    {
+     "titulo": "Cybernews: «Google AI ultimatum sparks Chicago school backlash» (en anglès)",
+     "url": "https://cybernews.com/ai-news/google-gemini-protest-chicago-school"
+    }
+   ],
+   "mensaje": {
+    "grupo": "chatgpt",
+    "id": 54578
+   },
+   "comprobado": "Revisión: se abrió el artículo del Chicago Sun-Times (11-11-2026): declaración de Phillips al NYT, la condición de Google para el año próximo, CPS bloquea ChatGPT, Claude y Gemini, no ha decidido y explora suprimir el modo de IA o buscar otros proveedores, y las funciones de IA de las herramientas educativas desactivadas hasta que los administradores las activen. Se quitó «porque ambas están muy integradas», que el artículo no recoge (solo consta en el mensaje del grupo). Cybernews no se pudo abrir (403): la cifra de unos 30 manifestantes sale de su descripción en la vista previa. Se añadió el enlace al artículo ya publicado del 3-11 sobre el anuncio de Google. No se recoge lo que el mensaje dice de Nueva York y Los Ángeles ni de la nota del 15 de noviembre, por no haberlo podido confirmar.",
+   "ilustracion": null,
+   "ilustracion_alt": "Un edifici, «Districte», amb una fletxa rotulada «Rebutja la IA» que apunta a una lupa travessada per un cercle vermell, «Cercador», i a sota la pregunta «Sense accés?»."
+  },
+  {
+   "id": "manchester-festival-sin-ia",
+   "seccion": "multimedia",
+   "importancia": 3,
+   "grupo": "edumedia",
+   "antetitulo": "Festivals d'animació",
+   "titular": "El Manchester Animation Festival no acceptarà pel·lícules fetes amb IA generativa a partir del 2027",
+   "entradilla": "El festival britànic ho va anunciar el 13 de novembre juntament amb els premis d'enguany. El seu director ho presenta com una manera de donar suport als artistes de l'animació.",
+   "cuerpo": [
+    "Segons [Señal News](https://senalnews.com/en/events/manchester-animation-festival-unveils-2026-winners-), el Manchester Animation Festival va anunciar el 13 de novembre de 2026 que, a partir del 2027, deixarà d'acceptar pel·lícules creades amb intel·ligència artificial generativa, la que produeix imatges, textos o vídeos segons les instruccions que rep. Ho va fer juntament amb els guanyadors de l'edició d'enguany i l'obertura de la convocatòria del 2027.",
+    "El seu director, Steve Henderson, va dir que la nova política situa els artistes en primer lloc i que el festival vol donar suport als creadors que fan possible l'animació. L'article no explica com es comprovarà l'origen de les obres presentades.",
+    "Per a l'aula d'audiovisuals o de plàstica, és un fet útil: si l'alumnat ha fet un projecte amb IA generativa i vol presentar-lo a festivals, convé llegir abans les seves bases, perquè alguns comencen a excloure-la."
+   ],
+   "fuentes": [
+    {
+     "titulo": "Señal News: «Manchester Animation Festival unveils 2026 winners» (en anglès)",
+     "url": "https://senalnews.com/en/events/manchester-animation-festival-unveils-2026-winners-"
+    }
+   ],
+   "mensaje": {
+    "grupo": "edumedia",
+    "id": 12371
+   },
+   "comprobado": "Revisión: se abrió el artículo de Señal News: fecha (13-11-2026, tras el festival del 8 al 12), política para 2027 anunciada al abrir la convocatoria, palabras de Henderson («puts artists first»), y que no explica cómo se comprobará. Las bases oficiales del festival no se encontraron. Lo que el mensaje dice de otros festivales, los Óscar y los BAFTA no se recoge por no haberse confirmado.",
+   "ilustracion": null,
+   "ilustracion_alt": "Una claqueta de cinema, «Pel·lícula amb IA», amb una fletxa rotulada «A partir del 2027» tallada per una barra vermella que no arriba a l'edifici amb columnes, «Festival»."
+  },
+  {
+   "id": "trama-universos-variantes",
+   "seccion": "vibecoding",
+   "importancia": 3,
+   "grupo": "vce",
+   "antetitulo": "Novetat de la comunitat",
+   "titular": "Trama afegeix lectures agrupades per «universos» i versions de diferent dificultat",
+   "entradilla": "El catàleg de comprensió lectora permet triar lectures que comparteixen un mateix món i versions del mateix text amb diferent nivell. El seu autor demana ajuda per traduir-lo al gallec, a l'èuscar i a l'aranès.",
+   "cuerpo": [
+    "[Trama](https://trama.ortogra.fi/), el catàleg de lectures amb preguntes i fitxes imprimibles creat per Aarón Fortuño, que el diari [va presentar el 17 de novembre](pieza:2026-11-16/trama-comprensio-lectora), incorpora dues funcions. Els «universos» agrupen lectures independents que comparteixen un lloc, uns personatges o un món, i es poden llegir en qualsevol ordre. Les «variants» són versions d'una mateixa lectura amb diferent nivell d'exigència, perquè tota la classe treballi la mateixa història alhora. El mateix web les presenta com una mesura del Disseny Universal per a l'Aprenentatge.",
+    "L'autor demana al grup ajuda per revisar i traduir la interfície i les lectures al gallec, a l'èuscar i a l'aranès (la varietat de l'occità que es parla a la Vall d'Aran), perquè no té els coneixements necessaris per comprovar que les traduccions siguin correctes. Per ara, les lectures són en català i castellà. Segons la seva pàgina, no cal crear cap compte ni fa servir cookies, i els codis de classe es guarden al navegador."
+   ],
+   "fuentes": [
+    {
+     "titulo": "Trama · Comprensió lectora",
+     "url": "https://trama.ortogra.fi/"
+    }
+   ],
+   "mensaje": {
+    "grupo": "vce",
+    "id": 15172
+   },
+   "comprobado": "Revisión: se abrió trama.ortogra.fi: filtros de universos y variantes, referencia al Diseño Universal para el Aprendizaje, autoría de Aarón Fortuño, lecturas en catalán y castellano, sin cuentas ni cookies, códigos de clase en el navegador. La petición de traductores es del mensaje del grupo (#15173). No se da el número de lecturas, porque la web y el diario ya publicado dan cifras distintas. Se cambió «la web está en catalán y castellano» por «las lecturas», que es lo que dice la página (la interfaz se elige aparte).",
+   "ilustracion": null,
+   "ilustracion_alt": "A l'esquerra, tres llibres oberts dins d'un cercle de punts, «Univers»; a la dreta, tres fulls apilats amb línies de text de diferent longitud, «Variants»."
+  }
+ ],
+ "breves": [],
+ "descartado": [
+  "Fin de Marble de World Labs el 8 de enero de 2027 (EduMedia, #12382): es un correo reenviado y la búsqueda no encontró ninguna confirmación oficial; no se publica.",
+  "Muse, el asistente de Meta (#54564): mensaje de presentación de una persona recién llegada, por invitación y sin fuente oficial hallada.",
+  "Genie 4, Google AI Studio en Android, Eduvers, historial de Gemini y diario reflexivo: ya publicados el 20 de noviembre o el 19; sin novedad comprobable.",
+  "Debate sobre el idioma en Vibe Coding Educativo: administración y normas internas del grupo.",
+  "Libro «La IA agéntica en la educación» y Cuadernos de Pedagogía n.º 580: documentos de la Biblioteca digital, que tienen su propia sección.",
+  "Marco (LMS con Streamlit y Supabase, #15149): sin web ni recurso que comprobar.",
+  "Maniobres (#15176) y novedades del repositorio (#15171): avisos del bot; los cubre la sección del repositorio."
+ ],
+ "repaso": [
+  "Consejo de la UE: titular acortado de 91 a 86 caracteres; «comprobado» ampliado con lo verificado (borrador ST 14902/2026 y marco UE-OCDE por búsqueda; la nota de prensa sigue sin abrirse).",
+  "Chicago: quitado «porque ambas están muy integradas» (no está en el artículo); precisado que Phillips lo dijo al NYT y que las funciones de IA se desactivan por defecto en las herramientas educativas; enlazado el artículo del 3-11 sobre el anuncio de Google; «otras alternativas» pasa a «otros proveedores de búsqueda».",
+  "Trama: «la web está en catalán y castellano» pasa a «las lecturas», como dice la página.",
+  "Manchester: sin cambios."
+ ]
+}

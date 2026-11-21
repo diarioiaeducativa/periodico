@@ -1,0 +1,84 @@
+{
+ "fecha": "2026-11-20",
+ "elegida": {
+  "n": 2,
+  "pieza": "manchester-festival-sin-ia",
+  "idea": "Algorithm finishes an animated short in twelve seconds; Chalk tells them the festival will not accept films made with generative AI from 2027, and Algorithm asks how it is done without AI. The final caption says it all: “Three hours later: frame 2.” A silent punchline, with the twist in the caption, and the disappointment falls to Algorithm.",
+  "guion": {
+   "vinetas": [
+    {
+     "cartela": "In the art classroom, with a short for a festival.",
+     "escenario": "aula",
+     "tiza": {
+      "expresion": "neutral",
+      "postura": "cruzar",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "riendo",
+      "postura": "arriba",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "objeto": "portatil",
+     "bocadillos": [
+      {
+       "quien": "algoritmo",
+       "texto": "Animated short finished! In twelve seconds.",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "aula",
+     "tiza": {
+      "expresion": "preocupado",
+      "postura": "encoger",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "sorprendido",
+      "postura": "cabeza",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "objeto": "portatil",
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "The festival won’t accept films made with generative AI from 2027.",
+       "tipo": "habla"
+      },
+      {
+       "quien": "algoritmo",
+       "texto": "So how do you do it without AI?",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "cartela": "Three hours later: frame 2.",
+     "escenario": "aula",
+     "tiza": {
+      "expresion": "pensativo",
+      "postura": "pensar",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "agotado",
+      "postura": "sostener",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "objeto": "folio",
+     "lleva": "algoritmo",
+     "bocadillos": []
+    }
+   ]
+  }
+ },
+ "traduccion": "automatic AI translation"
+}

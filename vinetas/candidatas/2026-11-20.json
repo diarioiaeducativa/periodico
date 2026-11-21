@@ -1,0 +1,422 @@
+{
+ "fecha": "2026-11-20",
+ "candidatas": [
+  {
+   "pieza": "google-distritos-ia-buscador",
+   "idea": "El buscador y la IA van en el mismo lote: «conmigo o sin buscador», presume Algoritmo; un minuto después, Tiza busca en la biblioteca, libro en mano (remate mudo, con cambio de escenario).",
+   "guion": {
+    "vinetas": [
+     {
+      "cartela": "En la sala de profes, con una noticia de Chicago.",
+      "escenario": "sala_profes",
+      "tiza": {
+       "expresion": "preocupado",
+       "postura": "pensar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "neutral",
+       "postura": "encoger",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "En EE. UU. avisan a las escuelas: si prohíben del todo la IA, se quedarán sin buscador.",
+        "tipo": "habla"
+       },
+       {
+        "quien": "algoritmo",
+        "texto": "Es que vamos en el mismo lote.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "sala_profes",
+      "tiza": {
+       "expresion": "enfadado",
+       "postura": "jarras",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "orgulloso",
+       "postura": "cruzar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "¿Y si yo solo quiero buscar una cosa?",
+        "tipo": "habla"
+       },
+       {
+        "quien": "algoritmo",
+        "texto": "Pues conmigo o sin buscador.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "cartela": "Un minuto después, en la biblioteca.",
+      "escenario": "biblioteca",
+      "tiza": {
+       "expresion": "orgulloso",
+       "postura": "sostener",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "sorprendido",
+       "postura": "cabeza",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "libro",
+      "lleva": "tiza",
+      "bocadillos": []
+     }
+    ]
+   },
+   "cabe": true
+  },
+  {
+   "pieza": "manchester-festival-sin-ia",
+   "idea": "Algoritmo acaba un corto de animación en doce segundos; el festival de Manchester no aceptará IA generativa desde 2027 y el rótulo final lo dice todo: «Tres horas después: fotograma 2» (remate mudo, el chasco es de Algoritmo).",
+   "guion": {
+    "vinetas": [
+     {
+      "cartela": "En el aula de plástica, con un corto para un festival.",
+      "escenario": "aula",
+      "tiza": {
+       "expresion": "neutral",
+       "postura": "cruzar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "riendo",
+       "postura": "arriba",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "portatil",
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "¡Corto de animación terminado! Me ha llevado doce segundos.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "aula",
+      "tiza": {
+       "expresion": "preocupado",
+       "postura": "encoger",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "sorprendido",
+       "postura": "cabeza",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "portatil",
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "El festival de Manchester no aceptará películas hechas con IA generativa desde 2027.",
+        "tipo": "habla"
+       },
+       {
+        "quien": "algoritmo",
+        "texto": "¿Y sin IA cómo se hace?",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "cartela": "Tres horas después: fotograma 2.",
+      "escenario": "aula",
+      "tiza": {
+       "expresion": "pensativo",
+       "postura": "pensar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "agotado",
+       "postura": "sostener",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "folio",
+      "lleva": "algoritmo",
+      "bocadillos": []
+     }
+    ]
+   },
+   "cabe": true
+  },
+  {
+   "pieza": "trama-universos-variantes",
+   "idea": "Lecturas sueltas con el mismo lugar y los mismos personajes, que se leen en cualquier orden: a Algoritmo le suena, y cae en la cuenta ante los archivadores de dirección: «¡Las actas del claustro!».",
+   "guion": {
+    "vinetas": [
+     {
+      "cartela": "En dirección, con un catálogo de lecturas.",
+      "escenario": "despacho",
+      "tiza": {
+       "expresion": "neutral",
+       "postura": "abajo",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "pensativo",
+       "postura": "abajo",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "Trae «universos»: lecturas sueltas con el mismo lugar y los mismos personajes.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "despacho",
+      "tiza": {
+       "expresion": "neutral",
+       "postura": "encoger",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "pensativo",
+       "postura": "pensar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "Y se pueden leer en cualquier orden.",
+        "tipo": "habla"
+       },
+       {
+        "quien": "algoritmo",
+        "texto": "Eso yo lo he visto antes...",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "despacho",
+      "tiza": {
+       "expresion": "riendo",
+       "postura": "cabeza",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "sorprendido",
+       "postura": "senalar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "papeles",
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "¡Las actas del claustro!",
+        "tipo": "habla"
+       }
+      ]
+     }
+    ]
+   },
+   "cabe": true
+  },
+  {
+   "pieza": "consejo-ue-competencias-ia",
+   "idea": "El Consejo de la UE pide saber tratar con la IA en todas las etapas de la vida; Tiza pregunta en qué etapa aprende la IA a tratar con las personas, y Algoritmo confiesa que va por la de «tienes razón, disculpa la confusión».",
+   "guion": {
+    "vinetas": [
+     {
+      "cartela": "De noche, en casa, con las conclusiones de la UE.",
+      "escenario": "casa_noche",
+      "tiza": {
+       "expresion": "pensativo",
+       "postura": "pensar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "orgulloso",
+       "postura": "cruzar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "portatil",
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "El Consejo de la UE: hay que saber tratar con la IA en todas las etapas de la vida.",
+        "tipo": "habla"
+       },
+       {
+        "quien": "algoritmo",
+        "texto": "Me parece de lo más sensato.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "casa_noche",
+      "tiza": {
+       "expresion": "neutral",
+       "postura": "jarras",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "cargando",
+       "postura": "pensar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "portatil",
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "¿Y vosotras, en qué etapa aprendéis a tratar con las personas?",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "casa_noche",
+      "tiza": {
+       "expresion": "riendo",
+       "postura": "abajo",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "avergonzado",
+       "postura": "encoger",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "portatil",
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "Yo voy por la de «tienes razón, disculpa la confusión».",
+        "tipo": "habla"
+       }
+      ]
+     }
+    ]
+   },
+   "cabe": true
+  },
+  {
+   "pieza": "trama-universos-variantes",
+   "idea": "Buscan ayuda para traducir unas lecturas al gallego, al euskera y al aranés; Algoritmo las traduce en un segundo y, cuando Tiza pregunta quién comprueba que están bien, se revisa él mismo: «Me he puesto un diez».",
+   "guion": {
+    "vinetas": [
+     {
+      "cartela": "En la biblioteca, con lecturas por traducir.",
+      "escenario": "biblioteca",
+      "tiza": {
+       "expresion": "pensativo",
+       "postura": "abajo",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "contento",
+       "postura": "arriba",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "Buscan ayuda para traducir unas lecturas al gallego, al euskera y al aranés.",
+        "tipo": "habla"
+       },
+       {
+        "quien": "algoritmo",
+        "texto": "¡Hecho! Las tres, en un segundo.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "biblioteca",
+      "tiza": {
+       "expresion": "neutral",
+       "postura": "cruzar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "neutral",
+       "postura": "encoger",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "Traducir no era el problema. ¿Quién comprueba que están bien?",
+        "tipo": "habla"
+       },
+       {
+        "quien": "algoritmo",
+        "texto": "Yo mismo.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "biblioteca",
+      "tiza": {
+       "expresion": "preocupado",
+       "postura": "cabeza",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "orgulloso",
+       "postura": "sostener",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "folio",
+      "lleva": "algoritmo",
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "Revisado. Me he puesto un diez.",
+        "tipo": "habla"
+       }
+      ]
+     }
+    ]
+   },
+   "cabe": true
+  }
+ ]
+}

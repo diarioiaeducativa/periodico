@@ -1,0 +1,84 @@
+{
+ "fecha": "2026-11-20",
+ "elegida": {
+  "n": 2,
+  "pieza": "manchester-festival-sin-ia",
+  "idea": "Algoritmok animazio-film labur bat amaitzen du hamabi segundotan; Tizak esaten dio jaialdiak ez dituela 2027tik aurrera AA sortzailez egindako filmak onartuko, eta hark galdetzen du AArik gabe nola egiten den. Azken errotuluak dena esaten du: «Hiru ordu geroago: 2. fotograma». Amaiera mutua, bihurgunea errotuluan, eta Algoritmok hartzen du ezustekoa.",
+  "guion": {
+   "vinetas": [
+    {
+     "cartela": "Plastikako gelan, jaialdi baterako film labur batekin.",
+     "escenario": "aula",
+     "tiza": {
+      "expresion": "neutral",
+      "postura": "cruzar",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "riendo",
+      "postura": "arriba",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "objeto": "portatil",
+     "bocadillos": [
+      {
+       "quien": "algoritmo",
+       "texto": "Animazio-filma amaituta! Hamabi segundotan.",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "aula",
+     "tiza": {
+      "expresion": "preocupado",
+      "postura": "encoger",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "sorprendido",
+      "postura": "cabeza",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "objeto": "portatil",
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Jaialdiak ez ditu 2027tik aurrera AA sortzailez egindako filmak onartuko.",
+       "tipo": "habla"
+      },
+      {
+       "quien": "algoritmo",
+       "texto": "Eta AArik gabe, nola egiten da?",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "cartela": "Hiru ordu geroago: 2. fotograma.",
+     "escenario": "aula",
+     "tiza": {
+      "expresion": "pensativo",
+      "postura": "pensar",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "agotado",
+      "postura": "sostener",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "objeto": "folio",
+     "lleva": "algoritmo",
+     "bocadillos": []
+    }
+   ]
+  }
+ },
+ "traduccion": "itzulpen automatikoa AArekin"
+}
