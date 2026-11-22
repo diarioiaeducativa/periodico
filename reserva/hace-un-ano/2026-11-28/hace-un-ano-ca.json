@@ -1,0 +1,24 @@
+{"fecha": "2026-11-28", "hay_pieza": true,
+ "piezas": [{"id": "problemas-erdos-ia",
+   "seccion": "hace-un-ano", "importancia": 3,
+   "grupo": "chatgpt", "fecha_original": "2025-11-30",
+   "antetitulo": "Matemàtiques amb IA",
+   "titular": "D'un problema d'Erdős resolt a mitges a una conjectura de 1946 refutada per la IA",
+   "entradilla": "Al novembre de 2025 es celebrava que un sistema d'IA havia demostrat per si sol un problema matemàtic obert des de feia uns 30 anys. Va resultar un avenç parcial; el 2026, la IA ja aporta resultats que els matemàtics donen per bons.",
+   "cuerpo": [
+     "El 30 de novembre de 2025, a ChatGPT-IA-edu, es compartia com «un bon exemple de fins on pot arribar la IA» que [Aristotle](https://harmonic.fun/), un sistema de l'empresa Harmonic especialitzat en matemàtiques, havia demostrat el problema 124 de Paul Erdős. La demostració estava escrita en [Lean](https://lean-lang.org/), un llenguatge que permet a un ordinador comprovar cada pas.",
+     "El resultat era menor del que semblava: el [registre d'aportacions de la IA als problemes d'Erdős](https://github.com/teorth/erdosproblems/wiki/AI-contributions-to-Erd%C5%91s-problems), del repositori del matemàtic Terence Tao, l'anota com a «resultat parcial».",
+     "El 2026 el pas ha estat un altre. Al gener, el problema 728 es va resoldre amb GPT-5.2 Pro i es va comprovar amb Aristotle, tot i que després es va trobar un treball anterior similar. El 20 de maig, [OpenAI va anunciar](https://openai.com/index/model-disproves-discrete-geometry-conjecture/) que un model intern, no disponible per al públic, havia refutat la conjectura de les distàncies unitàries que Erdős va plantejar el 1946, amb una demostració revisada per matemàtics aliens a l'empresa.",
+     "Segons [Quanta Magazine](https://www.quantamagazine.org/why-the-legendary-erdos-problems-are-falling-to-ai-20260803/) (3 d'agost de 2026), la majoria dels resultats arribaven d'afeccionats i estudiants amb models públics. I hi recull l'advertència del responsable de la base de dades: circulen articles de 100 a 200 pàgines generats amb IA que cap persona no ha llegit."
+   ],
+   "fuentes": [
+     {"titulo": "AI contributions to Erdős problems (wiki de teorth/erdosproblems) (en anglès)", "url": "https://github.com/teorth/erdosproblems/wiki/AI-contributions-to-Erd%C5%91s-problems"},
+     {"titulo": "OpenAI: model disproves discrete geometry conjecture (en anglès)", "url": "https://openai.com/index/model-disproves-discrete-geometry-conjecture/"},
+     {"titulo": "Quanta Magazine: Why the Legendary Erdős Problems Are Falling to AI (en anglès)", "url": "https://www.quantamagazine.org/why-the-legendary-erdos-problems-are-falling-to-ai-20260803/"},
+     {"titulo": "Harmonic: Aristotle (en anglès)", "url": "https://harmonic.fun/"},
+     {"titulo": "Lean (en anglès)", "url": "https://lean-lang.org/"}
+   ],
+   "mensaje": {"grupo": "chatgpt", "id": 43024},
+   "ilustracion_alt": "Díptic partit per una línia vertical. A l'esquerra, «Nov. 2025»: un document rotulat «Problema 124» i un cercle mig ple rotulat «Parcial». A la dreta, «Avui»: el mateix document, rotulat «Conjectura 1946», amb un segell blau de verificació.",
+   "repaso": ["Problema 728: quitado «sin que apareciera una demostración anterior»; la wiki de Tao anota un trabajo previo similar (Pomerance, 2014) hallado el 5-6 de enero de 2026.", "«Casi 30 años» pasa a «unos 30 años» (el mensaje dice «más de 30», el tuit «casi 30»).", "Quanta: fechada la afirmación y acortada para ajustar la medida (~248 palabras); «modelos públicos» en lugar de «al alcance de cualquiera»."],
+   "comprobado": "Mensaje 43024 (ChatGPTedu, 30-11-2025) verificado en t.me: Aristotle, problema 124, «más de 30 años». Wiki de teorth/erdosproblems: problema 124 (29-11-2025) «Partial result (Lean)»; problema 728 (6-1-2026, Aristotle y GPT-5.2 Pro) «Full solution (Lean)», con literatura previa similar de Pomerance (2014). Anuncio de OpenAI abierto (20-5-2026): conjetura de distancias unitarias de Erdős (1946), modelo interno, verificada por matemáticos externos. Quanta (3-8-2026) abierto: 728 resuelto hacia el 4-1-2026 con GPT-5.2 Pro y comprobado con Aristotle; mayoría de resultados de aficionados y estudiantes con modelos públicos; advertencia de Bloom sobre artículos de 100 a 200 páginas sin leer. harmonic.fun abierta (Aristotle, de Harmonic). Tema no repetido en el último mes ni en publicado.txt; sin enlaces pieza:."}]}

@@ -1,0 +1,24 @@
+{"fecha": "2026-11-28", "hay_pieza": true,
+ "piezas": [{"id": "problemas-erdos-ia",
+   "seccion": "hace-un-ano", "importancia": 3,
+   "grupo": "chatgpt", "fecha_original": "2025-11-30",
+   "antetitulo": "Mathematics with AI",
+   "titular": "From a half-solved Erdős problem to a 1946 conjecture disproved by AI",
+   "entradilla": "In November 2025, people celebrated an AI system having single-handedly proved a mathematical problem that had been open for some 30 years. It turned out to be partial progress; in 2026, AI is producing results that mathematicians accept as sound.",
+   "cuerpo": [
+     "On 30 November 2025, ChatGPT-IA-edu shared as “a good example of how far AI can go” the news that [Aristotle](https://harmonic.fun/), a mathematics-focused system from the company Harmonic, had proved Paul Erdős’s problem 124. The proof was written in [Lean](https://lean-lang.org/), a language that lets a computer check every step.",
+     "The result was smaller than it seemed: the [record of AI contributions to Erdős problems](https://github.com/teorth/erdosproblems/wiki/AI-contributions-to-Erd%C5%91s-problems), kept in the repository of the mathematician Terence Tao, lists it as a “partial result”.",
+     "In 2026 the step has been a different one. In January, problem 728 was solved with GPT-5.2 Pro and checked with Aristotle, although a similar earlier piece of work was later found. On 20 May, [OpenAI announced](https://openai.com/index/model-disproves-discrete-geometry-conjecture/) that an internal model, not available to the public, had disproved the unit distance conjecture that Erdős posed in 1946, with a proof reviewed by mathematicians outside the company.",
+     "According to [Quanta Magazine](https://www.quantamagazine.org/why-the-legendary-erdos-problems-are-falling-to-ai-20260803/) (3 August 2026), most of the results came from amateurs and students using public models. It also reports the warning of the person in charge of the database: papers of 100 to 200 pages generated with AI, which no one has read, are in circulation."
+   ],
+   "fuentes": [
+     {"titulo": "AI contributions to Erdős problems (wiki de teorth/erdosproblems)", "url": "https://github.com/teorth/erdosproblems/wiki/AI-contributions-to-Erd%C5%91s-problems"},
+     {"titulo": "OpenAI: model disproves discrete geometry conjecture", "url": "https://openai.com/index/model-disproves-discrete-geometry-conjecture/"},
+     {"titulo": "Quanta Magazine: Why the Legendary Erdős Problems Are Falling to AI", "url": "https://www.quantamagazine.org/why-the-legendary-erdos-problems-are-falling-to-ai-20260803/"},
+     {"titulo": "Harmonic: Aristotle", "url": "https://harmonic.fun/"},
+     {"titulo": "Lean", "url": "https://lean-lang.org/"}
+   ],
+   "mensaje": {"grupo": "chatgpt", "id": 43024},
+   "ilustracion_alt": "Diptych split by a vertical line. On the left, “Nov. 2025”: a document labelled “Problem 124” and a half-filled circle labelled “Partial”. On the right, “Today”: the same document, labelled “1946 conjecture”, with a blue verification seal.",
+   "repaso": ["Problema 728: quitado «sin que apareciera una demostración anterior»; la wiki de Tao anota un trabajo previo similar (Pomerance, 2014) hallado el 5-6 de enero de 2026.", "«Casi 30 años» pasa a «unos 30 años» (el mensaje dice «más de 30», el tuit «casi 30»).", "Quanta: fechada la afirmación y acortada para ajustar la medida (~248 palabras); «modelos públicos» en lugar de «al alcance de cualquiera»."],
+   "comprobado": "Mensaje 43024 (ChatGPTedu, 30-11-2025) verificado en t.me: Aristotle, problema 124, «más de 30 años». Wiki de teorth/erdosproblems: problema 124 (29-11-2025) «Partial result (Lean)»; problema 728 (6-1-2026, Aristotle y GPT-5.2 Pro) «Full solution (Lean)», con literatura previa similar de Pomerance (2014). Anuncio de OpenAI abierto (20-5-2026): conjetura de distancias unitarias de Erdős (1946), modelo interno, verificada por matemáticos externos. Quanta (3-8-2026) abierto: 728 resuelto hacia el 4-1-2026 con GPT-5.2 Pro y comprobado con Aristotle; mayoría de resultados de aficionados y estudiantes con modelos públicos; advertencia de Bloom sobre artículos de 100 a 200 páginas sin leer. harmonic.fun abierta (Aristotle, de Harmonic). Tema no repetido en el último mes ni en publicado.txt; sin enlaces pieza:."}]}

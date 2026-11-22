@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340">
+<line class="t" x1="300" y1="20" x2="300" y2="320"/>
+<text class="lbl" x="150" y="36" text-anchor="middle">Nov. 2025</text>
+<text class="lbl" x="450" y="36" text-anchor="middle">Avui</text>
+<g class="t li4" transform="translate(102 60) scale(4)"><!-- Lucide: file-text (ISC) --><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"/><path d="M14 2v5a1 1 0 0 0 1 1h5"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></g>
+<text class="lbl" x="150" y="186" text-anchor="middle">Problema 124</text>
+<path class="fa" d="M150 206 A30 30 0 0 0 150 266 Z"/>
+<circle class="t" cx="150" cy="236" r="30"/>
+<text class="lbl" x="150" y="316" text-anchor="middle">Parcial</text>
+<g class="a li4" transform="translate(402 60) scale(4)"><!-- Lucide: file-text (ISC) --><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"/><path d="M14 2v5a1 1 0 0 0 1 1h5"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></g>
+<text class="lbl" x="450" y="186" text-anchor="middle">Conjectura 1946</text>
+<g class="a li4" transform="translate(402 200) scale(4)"><!-- Lucide: badge-check (ISC) --><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/><path d="m16 9-5.5 5.5L8 12"/></g>
+</svg>

@@ -1,0 +1,103 @@
+{
+  "fecha": "2099-02-02",
+  "hay_reportaje": true,
+  "motivo": "Reportaje de reserva, sin mensajes de la semana. El jefe de reportajes eligió el coste ambiental de la IA: ningún reportaje lo ha tratado, sale en ChatGPT-IA-edu desde 2024 con debate de argumentos (y como objeción en los centros), tiene actores con documentos propios (AIE, Google, OpenAI, Mistral, ONU, UE) y marco en España, y las dos fichas de la Biblioteca que lo tocan (la guía 2.0 del INTEF y el manual del CESDi) repiten de segunda mano cifras que no verifican. No depende de la fecha: todas las cifras van fechadas.",
+  "id": "ia-consumo-agua-energia-cifras",
+  "antetitulo": "IA i medi ambient",
+  "titular": "La IA gasta energia i aigua, però les xifres per consulta que circulen mesuren coses diferents",
+  "entradilla": "Els centres de dades que fan funcionar la intel·ligència artificial consumeixen cada any més electricitat, com estima l'Agència Internacional de l'Energia, i també aigua. Les xifres «per pregunta» que repeteixen guies i claustres, en canvi, surten de càlculs de 2023 i canvien segons què es mesura i qui ho mesura. Aquest reportatge explica d'on ve cada número, què obliga a declarar la llei europea i com convertir aquesta incertesa en una activitat d'aula.",
+  "apartados": [
+    {
+      "ladillo": "Les xifres de les guies vénen de càlculs de 2023",
+      "parrafos": [
+        "A ChatGPT-IA-edu l'impacte ambiental de la IA fa anys que surt. A l'octubre de 2025, un docent va explicar que al seu centre es rebutjava la IA amb dues frases: que ja hi havia docents i que [«gasta molta aigua»](https://t.me/ChatGPTedu/41255). Al setembre de 2026 es va recollir la idea d'una formadora: el debat oscil·la entre celebrar la IA sense crítica i rebutjar-la amb [arguments basats en la por sense entrar a fons](https://t.me/ChatGPTedu/52604). Ja a l'octubre de 2024 es va discutir si la despesa és només en el desenvolupament dels models o també en [l'ús de tothom](https://t.me/ChatGPTedu/16193), si n'hi ha prou amb [comparar cost i benefici](https://t.me/ChatGPTedu/16195) i per què no es mira igual [les xarxes socials o els mòbils](https://t.me/ChatGPTedu/16205).",
+        "Les guies educatives han portat al paper dues xifres concretes. La [guia 2.0 de l'INTEF sobre IA en educació, que va recollir aquest diari](pieza:2026-11-16/intef-guia-ia-v2), afirma que una consulta a una IA generativa consumeix deu vegades més electricitat que una cerca tradicional i que entre deu i cinquanta preguntes equivalen a mig litre d'aigua. El manual urgent del CESDi de la Universidad Nacional de General San Martín repeteix la primera a partir d'un informe de 2024 del Tecnológico de Monterrey. La mateixa comparació va circular al grup en [un article compartit a l'octubre de 2024](https://t.me/ChatGPTedu/16410).",
+        "La de l'electricitat té un origen rastrejable. Segons una anàlisi de Josh You per a [Epoch AI](https://epoch.ai/gradient-updates/how-much-energy-does-chatgpt-use), un centre de recerca sobre IA, l'estimació d'uns 3 watts hora (Wh) per consulta procedeix d'un càlcul d'Alex de Vries de 2023, que al seu torn partia d'una estimació de febrer de 2023 per a GPT-3.5: xips d'una generació anterior i respostes de 2.000 *tokens* (fragments de paraula), que l'autor considera poc representatives. Epoch AI va refer el compte al febrer de 2025 per a GPT-4o i va arribar a uns 0,3 Wh per consulta típica, deu vegades menys, i tot i això la considera una estimació pessimista.",
+        "La de l'aigua surt de l'estudi [«Making AI Less “Thirsty”»](https://arxiv.org/abs/2304.03271), de Pengfei Li, Jianyi Yang, Mohammad A. Islam i Shaolei Ren, la primera versió del qual és d'abril de 2023. Calcula que GPT-3 necessitava mig litre d'aigua per a unes 10 a 50 respostes de longitud mitjana, segons quan i on s'executés. **Aquest compte suma l'aigua que s'evapora en refrigerar el centre de dades i la que consumeixen les centrals que en produeixen l'electricitat**, que és la major part: en la mitjana dels Estats Units que dona l'estudi, 14,7 dels 16,9 mil·lilitres per resposta."
+      ]
+    },
+    {
+      "ladillo": "Google, OpenAI i Mistral mesuren consultes diferents",
+      "parrafos": [
+        "A l'estiu de 2025, tres empreses van publicar xifres pròpies. Google va difondre el 21 d'agost de 2025 [una entrada al seu bloc](https://cloud.google.com/blog/products/infrastructure/measuring-the-environmental-impact-of-ai-inference) i [un article tècnic](https://arxiv.org/abs/2508.15734) signats per personal de l'empresa: la consulta de text mitjana a l'aplicació de Gemini, amb dades de maig de 2025, gasta 0,24 Wh, emet 0,03 grams de CO₂ equivalent i consumeix 0,26 mil·lilitres d'aigua, unes cinc gotes. El seu mètode compta també les màquines en reserva i la refrigeració. La mateixa Google adverteix que ningú aliè a l'empresa n'ha verificat les dades.",
+        "La xifra d'OpenAI no ve d'un estudi, sinó d'una entrada del bloc del seu conseller delegat, Sam Altman, [«The Gentle Singularity»](https://blog.samaltman.com/the-gentle-singularity), de juny de 2025: la consulta mitjana a ChatGPT usa uns 0,34 Wh i 0,000085 galons d'aigua, uns 0,3 mil·lilitres, sense explicar el mètode ni el model. Mistral AI va publicar el 22 de juliol de 2025 [una anàlisi de cicle de vida](https://mistral.ai/news/our-contribution-to-a-global-environmental-standard-for-ai), feta amb la consultora Carbone 4 i l'agència francesa ADEME, que inclou la fabricació dels servidors. Segons l'empresa, una resposta de 400 *tokens* del seu assistent Le Chat suposa 1,14 grams de CO₂ equivalent i 45 mil·lilitres d'aigua.",
+        "Sasha Luccioni i Theo Alves Da Costa, de l'empresa Hugging Face, van comparar les tres declaracions el 17 de setembre de 2025 en [una anàlisi del seu bloc](https://huggingface.co/blog/sasha/environmental-impact-disclosures): cada empresa usa mètodes i supòsits diferents. Google només compta l'aigua dels seus centres, no la de les centrals; OpenAI no diu què és una consulta mitjana ni quin model mesura; Mistral no dona l'electricitat per resposta. A més, la mida de la consulta canvia el resultat: Epoch AI estima que amb un document llarg pot rondar els 2,5 Wh."
+      ],
+      "tabla": {
+        "titulo": "Les xifres per consulta que circulen i què mesura cadascuna",
+        "columnas": ["Font i data", "Xifra", "Què mesura"],
+        "filas": [
+          ["Alex de Vries, segons Epoch AI (2023)", "Uns 3 Wh per consulta", "Estimació per a GPT-3.5 amb xips de 2023 i respostes llargues"],
+          ["Li, Yang, Islam i Ren (2023)", "Mig litre cada 10 a 50 respostes", "GPT-3; aigua del centre de dades i de les centrals elèctriques"],
+          ["Epoch AI (febrer de 2025)", "Uns 0,3 Wh", "Estimació externa per a GPT-4o, consulta típica"],
+          ["Mistral AI (juliol de 2025)", "1,14 g de CO₂ equivalent i 45 ml d'aigua", "Resposta de 400 tokens, amb la fabricació dels equips"],
+          ["Sam Altman, OpenAI (juny de 2025)", "0,34 Wh i uns 0,3 ml", "Mitjana de ChatGPT, sense mètode publicat"],
+          ["Google (agost de 2025)", "0,24 Wh i 0,26 ml", "Mediana de Gemini; només l'aigua del centre de dades"]
+        ],
+        "nota": "Les xifres no són comparables entre elles: canvien el model, l'any, la mitjana o la mediana, la mida de la consulta i la part de la despesa que es compta. Les de les empreses són de les mateixes empreses."
+      }
+    },
+    {
+      "ladillo": "La despesa total creix encara que cada consulta gasti menys",
+      "parrafos": [
+        "Segons l'informe [«Energy and AI»](https://www.iea.org/reports/energy-and-ai/executive-summary) de l'Agència Internacional de l'Energia (AIE), de 2025, els centres de dades van consumir el 2024 uns 415 terawatts hora (TWh), al voltant de l'1,5 % de l'electricitat mundial, i arribaran a uns 945 TWh el 2030, una mica més del que consumeix avui el Japó. En la seva actualització d'abril de 2026, [«Key Questions on Energy and AI»](https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary), l'AIE estima que el consum va pujar un 17 % el 2025, fins a 485 TWh, i que el dels centres dedicats a la IA va créixer un 50 %. Alhora, **l'energia de cada tasca d'IA ha baixat almenys deu vegades per any** en els últims anys, segons la mateixa agència.",
+        "Google il·lustra les dues tendències alhora. Segons el seu article tècnic, l'energia de la seva consulta mitjana es va dividir per 33 entre maig de 2024 i maig de 2025, i les seves emissions, per 44. Però en [el seu informe ambiental del 30 de juny de 2026](https://blog.google/company-news/outreach-and-initiatives/sustainability/2026-environmental-report/), l'empresa dona per al 2025 un augment del 37 % de la seva demanda d'electricitat, el més gran de la seva història, i un 25 % més d'emissions a la seva cadena de subministrament. Luccioni i Alves Da Costa ho resumeixen així: la despesa per unitat pot baixar mentre les unitats es multipliquen i el total creix.",
+        "També importa quina fase gasta més. Segons la nota de premsa de la Universitat de les Nacions Unides (UNU) sobre l'informe [«Environmental Cost of AI's Energy Use: Carbon, Water and Land Footprints»](https://unu.edu/inweh/news/environmental-cost-of-AIs-Enrgy-Use-carbon-water-and-land-footprints), del seu institut de l'aigua (UNU-INWEH) i datat el 3 de juny de 2026, fer servir els models ja entrenats suposa entre el 80 % i el 90 % de l'energia de la IA; entrenar-los és la resta. La nota adverteix a més que emetre poc carboni no vol dir gastar poca aigua: amb una altra electricitat o en una zona amb menys aigua, la mateixa resposta deixa una altra petjada. Una [notícia de premsa sobre un informe de l'ONU](https://t.me/ChatGPTedu/49276) amb aquest assumpte es va compartir al grup el 4 de juny."
+      ]
+    },
+    {
+      "ladillo": "La UE demana dades d'energia que el públic no veu",
+      "parrafos": [
+        "El [Reglament (UE) 2024/1689](https://www.boe.es/buscar/doc.php?id=DOUE-L-2024-81079), el Reglament europeu d'IA, obliga des del 2 d'agost de 2025 les empreses que ofereixen models d'ús general, com els que hi ha darrere de ChatGPT o Gemini, a documentar «el consumo de energía conocido o estimado del modelo» (annex XI); si no el coneixen, el poden estimar a partir dels recursos de càlcul usats. Aquesta documentació, segons l'article 53, és per a l'Oficina Europea d'IA i les autoritats nacionals quan la demanin, no per al públic. Per a un centre educatiu, el reglament no afegeix cap obligació sobre aquest punt, i a novembre de 2026 no consta una etiqueta pública que indiqui el consum de cada eina.",
+        "Els centres de dades tenen la seva pròpia norma. La directiva europea d'eficiència energètica i el [Reglament Delegat (UE) 2024/1364](https://eur-lex.europa.eu/eli/reg_del/2024/1364/oj/spa) obliguen els que demanden 500 quilowatts o més per als seus equips informàtics a publicar cada any indicadors d'energia i sostenibilitat i a enviar-los, abans del 15 de maig, a una base de dades europea, segons explica el [Ministerio para la Transición Ecológica](https://www.miteco.gob.es/es/energia/eficiencia/centros-de-datos.html). El ministeri tramita a més un reial decret de sostenibilitat per a aquests centres, amb audiències públiques el 2025 i el 2026; a novembre de 2026, la seva pàgina no el dona per aprovat.",
+        "A l'escola, el tema ja té lloc. El [Real Decreto 217/2022](https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975), d'ensenyaments mínims de l'ESO, inclou en la competència digital (descriptor CD4) que l'alumnat protegeixi també el medi ambient en usar les tecnologies i en faci un ús crític i sostenible. Entre els deu principis ètics de la guia de l'INTEF hi ha el de benestar i sostenibilitat. I a EduMedia-IAG es van [compartir les prioritats de l'associació de docents d'informàtica CSTA i d'AI4K12](https://t.me/EduMediaIAG/1148), que en la seva [proposta de 2025](https://csteachers.org/ai-priorities/) demanen explorar l'impacte ambiental de la IA als graus 3 a 5, investigar-ne els efectes positius i negatius als graus 6 a 8 i dissenyar maneres de reduir-los als graus 9 a 12."
+      ]
+    },
+    {
+      "ladillo": "Rastrejar una xifra serveix d'activitat en qualsevol matèria",
+      "parrafos": [
+        "Un docent no ha d'escollir entre «la IA gasta molta aigua» i «és una gota»: pot convertir la pregunta en una activitat sense cost per a ciències, tecnologia, geografia o educació en valors cívics i ètics. Primer pas: portar a classe una xifra d'una guia, una notícia o un missatge i buscar-ne l'origen, amb tres preguntes: de quin any és, quin model mesurava i quina part de la despesa comptava. Amb la taula d'aquest reportatge es veu que el mig litre i les cinc gotes no es contradiuen: mesuren coses diferents.",
+        "Segon pas: comparar ordres de magnitud amb usos quotidians i preguntar-se qui fa la comparació. Google equipara la seva consulta mitjana a uns nou segons de televisió i Altman, a allò que gasta un forn en poc més d'un segon: les dues comparacions són de les empreses. Per provar escenaris serveix [What Uses More?](https://what-uses-more.com/), una eina en línia creada per Jon Ippolito a la iniciativa Learn with AI i [compartida al grup al setembre de 2025](https://t.me/ChatGPTedu/38136): compara l'energia i l'aigua de tasques d'IA amb una cerca o una pel·lícula, és en anglès i avisa que els seus valors són estimacions a partir de fonts incompletes i sovint contradictòries.",
+        "Tercer pas: acordar criteris d'ús amb l'alumnat. Segons [l'informe de la UNESCO i el University College London (UCL)](https://www.unesco.org/es/articles/modelos-de-lenguaje-grandes-de-ia-un-nuevo-informe-revela-como-reducir-el-consumo-de-energia-en-un) de juliol de 2025, els models petits adaptats a una tasca poden reduir el consum «fins a un 90 %», i les peticions i respostes més curtes, «en més del 50 %», en els experiments de l'estudi. **Fer servir el model més lleuger que serveixi per a la tasca és la recomanació comuna de la UNU i de la UNESCO**, i l'estudi «[Power Hungry Processing](https://arxiv.org/abs/2311.16863)», de Luccioni, Yacine Jernite i Emma Strubell (2023), va mesurar que els models generatius d'ús general gasten ordres de magnitud més que els d'una sola tasca. A la pràctica: un cercador o un diccionari per a una dada, peticions concretes i no generar imatges a cegues.",
+        "Cap d'aquestes fonts demana renunciar a la IA: l'AIE preveu que el consum dels centres de dades es dupliqui d'aquí al 2030 encara que cada tasca sigui més eficient, i un dels autors de l'informe de la UNU aclareix que no és un al·legat contra la intel·ligència artificial."
+      ]
+    }
+  ],
+  "claves": [
+    "Els centres de dades consumeixen cada vegada més electricitat: l'AIE estima 485 TWh el 2025 i prop de 950 TWh el 2030.",
+    "Les xifres per consulta de les guies («deu vegades una cerca», «mig litre cada 10 a 50 preguntes») són estimacions de 2023 per als models d'aleshores.",
+    "Google, OpenAI i Mistral van publicar el 2025 xifres pròpies que no són comparables: cadascuna mesura una consulta diferent i compta parts diferents de la despesa.",
+    "El Reglament europeu d'IA obliga a documentar el consum d'energia dels models, però davant les autoritats, no davant el públic.",
+    "A classe, rastrejar l'origen d'una xifra i escollir el model més lleuger que serveixi són dues activitats sense cost."
+  ],
+  "relacionadas": [],
+  "fuentes": [
+    {"titulo": "Measuring the environmental impact of AI inference (Google Cloud, 21-08-2025) (en anglès)", "url": "https://cloud.google.com/blog/products/infrastructure/measuring-the-environmental-impact-of-ai-inference"},
+    {"titulo": "Measuring the environmental impact of delivering AI at Google Scale (Elsworth i altres, Google, arXiv 2508.15734) (en anglès)", "url": "https://arxiv.org/abs/2508.15734"},
+    {"titulo": "The Gentle Singularity (Sam Altman, juny de 2025) (en anglès)", "url": "https://blog.samaltman.com/the-gentle-singularity"},
+    {"titulo": "Our contribution to a global environmental standard for AI (Mistral AI, 22-07-2025) (en anglès)", "url": "https://mistral.ai/news/our-contribution-to-a-global-environmental-standard-for-ai"},
+    {"titulo": "How much energy does ChatGPT use? (Josh You, Epoch AI, 07-02-2025) (en anglès)", "url": "https://epoch.ai/gradient-updates/how-much-energy-does-chatgpt-use"},
+    {"titulo": "Making AI Less “Thirsty” (Li, Yang, Islam i Ren, arXiv 2304.03271) (en anglès)", "url": "https://arxiv.org/abs/2304.03271"},
+    {"titulo": "What kind of environmental impacts are AI companies disclosing? (Luccioni i Alves Da Costa, Hugging Face, 17-09-2025) (en anglès)", "url": "https://huggingface.co/blog/sasha/environmental-impact-disclosures"},
+    {"titulo": "Power Hungry Processing: Watts Driving the Cost of AI Deployment? (Luccioni, Jernite i Strubell, arXiv 2311.16863) (en anglès)", "url": "https://arxiv.org/abs/2311.16863"},
+    {"titulo": "Energy and AI, resum executiu (Agència Internacional de l'Energia, 2025) (en anglès)", "url": "https://www.iea.org/reports/energy-and-ai/executive-summary"},
+    {"titulo": "Key Questions on Energy and AI, resum executiu (Agència Internacional de l'Energia, 2026) (en anglès)", "url": "https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary"},
+    {"titulo": "Google: 11.º informe ambiental anual (30-06-2026) (en anglès)", "url": "https://blog.google/company-news/outreach-and-initiatives/sustainability/2026-environmental-report/"},
+    {"titulo": "Environmental Cost of AI's Energy Use: Carbon, Water and Land Footprints (UNU-INWEH, 03-06-2026) (en anglès)", "url": "https://unu.edu/inweh/news/environmental-cost-of-AIs-Enrgy-Use-carbon-water-and-land-footprints"},
+    {"titulo": "Reglamento (UE) 2024/1689, de inteligencia artificial (BOE, DOUE-L-2024-81079) (en castellà)", "url": "https://www.boe.es/buscar/doc.php?id=DOUE-L-2024-81079"},
+    {"titulo": "Reglamento Delegado (UE) 2024/1364, primera fase del régimen común de calificación de los centros de datos (EUR-Lex) (en castellà)", "url": "https://eur-lex.europa.eu/eli/reg_del/2024/1364/oj/spa"},
+    {"titulo": "Centros de datos (Ministerio para la Transición Ecológica y el Reto Demográfico) (en castellà)", "url": "https://www.miteco.gob.es/es/energia/eficiencia/centros-de-datos.html"},
+    {"titulo": "Real Decreto 217/2022, enseñanzas mínimas de la ESO (BOE) (en castellà)", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975"},
+    {"titulo": "AI Learning Priorities for All K-12 Students (CSTA i AI4K12, 2025) (en anglès)", "url": "https://csteachers.org/ai-priorities/"},
+    {"titulo": "What Uses More? (Jon Ippolito, Learn with AI) (en anglès)", "url": "https://what-uses-more.com/"},
+    {"titulo": "Modelos de lenguaje grandes de IA: un nuevo informe revela cómo reducir el consumo de energía en un 90 % (UNESCO, 08-07-2025) (en castellà)", "url": "https://www.unesco.org/es/articles/modelos-de-lenguaje-grandes-de-ia-un-nuevo-informe-revela-como-reducir-el-consumo-de-energia-en-un"},
+    {"titulo": "INTEF: Nueva versión de la «Guía sobre el uso de la inteligencia artificial en el ámbito educativo» (en castellà)", "url": "https://intef.es/Noticias/nueva-version-de-la-guia-sobre-el-uso-de-la-inteligencia-artificial-en-el-ambito-educativo/"}
+  ],
+  "mensaje": {"grupo": "chatgpt", "id": 16121},
+  "comprobado": "Traducción del reportaje en castellano; comprobado allí.",
+  "ilustracion": "Infografía en dos mitades. A la izquierda, «Cada consulta»: una fila de seis vasos de agua de tamaños muy distintos, rotulados con su fuente y año (Li 2023, Mistral 2025, Altman 2025, Google 2025), con una lupa que muestra qué cuenta cada uno (solo el centro de datos, también la central eléctrica, también la fabricación). A la derecha, «Todos los centros de datos»: columnas de electricidad de la AIE que crecen de 415 TWh en 2024 a 485 TWh en 2025 y unos 950 TWh en 2030. Abajo, una línea con tres pasos para el aula: rastrear la cifra, comparar órdenes de magnitud, elegir el modelo más ligero.",
+  "ilustracion_alt": "Infografia en dues meitats. A l'esquerra, «Cada consulta»: quatre gots d'aigua de mides molt diferents i una lupa amb el rètol «Què compta». A la dreta, «Tots els centres»: una escala ascendent amb un servidor sobre el primer esglaó, rotulat «2024», i un llamp vermell a l'últim, rotulat «2030». A baix, tres passos per a l'aula units per fletxes: «Rastrejar», «Comparar» i «Model lleuger».",
+  "repaso": [
+    "Traducción al catalán del reportaje en castellano; el repaso está en la versión original."
+  ]
+}
