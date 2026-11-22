@@ -16,7 +16,7 @@
       ]
     },
     {
-      "ladillo": "Entender o entregar",
+      "ladillo": "Con IA el trabajo mejora, pero lo aprendido no siempre",
       "parrafos": [
         "La conclusión central de Stanford es que la IA parece funcionar mejor para aprender cuando el alumnado la usa como apoyo para comprender que cuando la usa para producir el trabajo, aunque ninguno de los dos usos mejora el aprendizaje de forma constante. Su resumen lo dice así: «the effects of generative AI depend on how it is designed and used» («los efectos de la IA generativa dependen de cómo se diseña y de cómo se usa»).",
         "Un estudio de la versión de marzo lo muestra con claridad. Un equipo encabezado por Hamsa Bastani, de la Universidad de Pensilvania, publicó en junio de 2025 en la revista PNAS «[Generative AI without guardrails can harm learning](https://doi.org/10.1073/pnas.2422633122)»: casi 1.000 estudiantes de secundaria de Turquía practicaron matemáticas con dos asistentes basados en GPT-4, uno que imitaba ChatGPT y otro con instrucciones pensadas para proteger el aprendizaje. En la práctica, las notas mejoraron un 48 % con el primero y un 127 % con el segundo. Sin la herramienta, el alumnado del primero sacó un 17 % menos que el que nunca la había tenido; con el segundo, ese daño se atenuó en gran parte.",
@@ -25,7 +25,7 @@
       ]
     },
     {
-      "ladillo": "Un tutor que pregunta",
+      "ladillo": "Un tutor que pregunta ayuda si forma parte de la actividad",
       "parrafos": [
         "Si producir el trabajo con IA perjudica, una salida es que la IA no dé la respuesta. Michael W. Asher, Meng Cao y Paulo F. Carvalho, de la Universidad Carnegie Mellon, publicaron el 15 de noviembre de 2026 «[Turning Errors into Successes](https://arxiv.org/abs/2611.20061v1)», un experimento con 400 adultos de Estados Unidos que aprendían a plantear ecuaciones. Tras cada error, unos recibían la respuesta correcta o una explicación, y otros conversaban con un tutor de IA que guiaba con preguntas hasta la solución. Con el tutor corrigieron por sí mismos el 64 % de sus errores (131 de 206) y sacaron 9 puntos porcentuales más en la prueba final que con las explicaciones. [El diario publicó el experimento el 19 de noviembre](pieza:2026-11-18/cmu-tutoria-socratica-errores).",
         "En el grupo se presentó defendiendo que [la IA funciona muy bien como tutor socrático y hay que insistir en ese uso](https://t.me/ChatGPTedu/54508), y su [ficha entró en la Biblioteca digital](https://t.me/ChatGPTedu/21753/54510); también aquí participó un autor de este diario. Los límites los reconocen los propios autores: es un preprint, con adultos, en una sola sesión de unos veinte minutos, y la ventaja apareció solo en problemas parecidos a los practicados.",
@@ -82,14 +82,14 @@
       }
     },
     {
-      "ladillo": "El medio y el método",
+      "ladillo": "Clark y Kozma ya discutían si aprender depende del medio",
       "parrafos": [
         "En el grupo, los resultados de Stanford se leyeron como [la versión actual de un viejo debate](https://t.me/ChatGPTedu/54531) de la tecnología educativa. Richard E. Clark sostuvo en «[Reconsidering Research on Learning from Media](https://doi.org/10.3102/00346543053004445)» (1983) que los medios solo llevan la enseñanza, y lo repitió en «[Media will never influence learning](https://doi.org/10.1007/BF02299088)» (1994): lo que hace aprender es el método. Robert B. Kozma le respondió en «[Will media influence learning? Reframing the debate](https://doi.org/10.1007/BF02299087)» (1994) que medio y método no se separan, porque lo que permite hacer cada tecnología interactúa con la manera en que la persona aprende. [El diario recogió ese debate el 20 de noviembre](pieza:2026-11-19/clark-kozma-medios-aprendizaje).",
         "La misma voz que trajo el debate reconoció que el grupo se inclina por Kozma y pidió [no perder de vista los argumentos de Clark](https://t.me/ChatGPTedu/54532). Los estudios dan razones a las dos posturas. Para Clark, en el experimento de Bastani los dos asistentes usaban el mismo modelo, y lo que cambió el resultado fueron las instrucciones, es decir, el método. Para Kozma, un tutor que adapta sus preguntas a cada error hace algo que un libro de ejercicios no puede hacer. Las dos lecturas coinciden en lo que importa a un docente: la herramienta, sin una actividad bien pensada, no garantiza nada."
       ]
     },
     {
-      "ladillo": "Lo que piden las instituciones",
+      "ladillo": "La UE, el INTEF y Galicia ponen condiciones al uso de la IA",
       "parrafos": [
         "El Consejo de la Unión Europea, que reúne a los Gobiernos de los Estados miembros, [aprobó el 19 de noviembre de 2026 unas conclusiones](https://www.consilium.europa.eu/en/press/press-releases/2026/11/19/equipping-europeans-for-the-age-of-ai-council-approves-conclusions/) sobre las competencias de la ciudadanía en IA. Su [texto en castellano](https://data.consilium.europa.eu/doc/document/ST-14902-2026-INIT/es/pdf) incluye «la capacidad de reconocer cuándo no se debe utilizar la IA» y pide atender a riesgos como la dependencia excesiva, la pérdida de aprendizaje y la descarga cognitiva. Son orientaciones políticas: no obligan a ningún centro ni a ningún docente. [El diario las recogió el 20 de noviembre](pieza:2026-11-20/consejo-ue-competencias-ia).",
         "En España, el documento estatal de referencia es la [Guía sobre el uso de la inteligencia artificial en el ámbito educativo](https://intef.es/Noticias/nueva-version-de-la-guia-sobre-el-uso-de-la-inteligencia-artificial-en-el-ambito-educativo/) del Instituto Nacional de Tecnologías Educativas y de Formación del Profesorado (INTEF), versión 2.0, de septiembre de 2026. Parte de que «La cuestión central no debe ser, por tanto, si se utiliza o no IA, sino cómo, para qué y en qué condiciones». Entre los desafíos del alumnado sitúa la «ilusión de competencia», creer que se domina lo que ha hecho la herramienta, y propone tareas que hagan visible el proceso, defensas orales y práctica sin IA en las fases iniciales. No obliga, pero respalda a un docente que quiera organizar así sus clases.",
@@ -97,7 +97,7 @@
       ]
     },
     {
-      "ladillo": "Una actividad que obligue a pensar",
+      "ladillo": "Cuatro pasos para el aula, gratis y sin programar",
       "parrafos": [
         "Todo esto se puede llevar al aula sin pagar nada ni saber programar. Lo primero es pedir un intento propio antes de cualquier ayuda: el experimento de Carnegie Mellon pone la práctica antes que la explicación, y la guía del INTEF recomienda practicar sin IA al principio.",
         "Lo segundo es que el asistente pregunte en lugar de responder. ChatGPT tiene desde julio de 2025 un [modo de estudio](https://openai.com/index/chatgpt-study-mode/), también en el plan gratuito; según su [página de ayuda en castellano](https://help.openai.com/es-es/articles/11780217-chatgpt-study-mode-faq), se activa con el botón «+» y la opción «Estudiar». OpenAI advierte de que puede comportarse de forma desigual entre conversaciones, y el alumnado puede desactivarlo cuando quiera. Google ofrece en Gemini el [Aprendizaje guiado](https://blog.google/intl/es-es/aprendizaje-guiado-en-gemini-comprender-mas-alla-de-las-respuestas/), que según la empresa busca «ayudarte a construir una comprensión profunda en lugar de solo obtener respuestas». Con cualquier asistente se pueden escribir instrucciones parecidas: que no dé la solución, que haga una pregunta cada vez y que devuelva al estudiante al problema tras un error.",

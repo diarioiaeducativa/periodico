@@ -16,7 +16,7 @@
       ]
     },
     {
-      "ladillo": "Ulertu ala entregatu",
+      "ladillo": "AArekin lana hobetzen da, baina ikasitakoa ez beti",
       "parrafos": [
         "Stanforden ondorio nagusia da AAk hobeto funtzionatzen duela ikasteko ikasleek ulertzeko euskarri gisa erabiltzen dutenean, lana egiteko erabiltzen dutenean baino, nahiz eta bi erabileretako batek ere ez duen ikaskuntza etengabe hobetzen. Bere laburpenak honela dio: «the effects of generative AI depend on how it is designed and used» («AA sortzailearen eraginak nola diseinatzen eta nola erabiltzen den horren araberakoak dira»).",
         "Martxoko bertsioko ikerketa batek argi erakusten du. Hamsa Bastani Pennsylvaniako Unibertsitateko ikertzaileak gidatutako talde batek *PNAS* aldizkarian argitaratu zuen 2025eko ekainean «[Generative AI without guardrails can harm learning](https://doi.org/10.1073/pnas.2422633122)»: Turkiako ia 1 000 bigarren hezkuntzako ikaslek matematika praktikatu zuten GPT-4n oinarritutako bi laguntzailerekin, bata ChatGPT imitatzen zuena eta bestea ikaskuntza babesteko pentsatutako jarraibideekin. Praktikan, notak % 48 hobetu ziren lehenengoarekin eta % 127 bigarrenarekin. Tresnarik gabe, lehenengoko ikasleek % 17 gutxiago atera zuten inoiz erabili ez zuten ikasleek baino; bigarrenarekin, kaltea neurri handi batean arindu zen.",
@@ -25,7 +25,7 @@
       ]
     },
     {
-      "ladillo": "Galdetzen duen tutore bat",
+      "ladillo": "Galdetzen duen tutoreak laguntzen du jardueraren parte bada",
       "parrafos": [
         "Lana AAz egiteak kalte egiten badu, irtenbide bat da AAk erantzuna ez ematea. Michael W. Asher, Meng Cao eta Paulo F. Carvalho Carnegie Mellon Unibertsitateko ikertzaileek 2026ko azaroaren 15ean argitaratu zuten «[Turning Errors into Successes](https://arxiv.org/abs/2611.20061v1)», ekuazioak plantetatzen ikasten ari ziren Estatu Batuetako 400 helduri egindako esperimentu bat. Akats bakoitzaren ondoren, batzuek erantzun zuzena edo azalpen bat jasotzen zuten, eta besteek AA bidezko tutore batekin hitz egiten zuten, galderen bidez irtenbidera gidatzen zituenarekin. Tutorearekin beren akatsen % 64 zuzendu zituzten bere kabuz (206tik 131) eta azken proban 9 ehuneko-puntu gehiago lortu zituzten azalpenekin baino. [Egunkariak azaroaren 19an argitaratu zuen esperimentua](pieza:2026-11-18/cmu-tutoria-socratica-errores).",
         "Taldean, [AA oso ondo dabilela tutore sokratiko gisa eta erabilera horri eutsi behar zaiola](https://t.me/ChatGPTedu/54508) defendatuz aurkeztu zen, eta bere [fitxa Liburutegi digitalean sartu zen](https://t.me/ChatGPTedu/21753/54510); hemen ere egunkari honen egile batek parte hartu zuen. Mugak egileek berek aitortzen dituzte: preprint bat da, helduekin, hogei minutuko saio bakarrean, eta abantaila praktikatutakoen antzeko problemetan soilik agertu zen.",
@@ -82,14 +82,14 @@
       }
     },
     {
-      "ladillo": "Euskarria eta metodoa",
+      "ladillo": "Clarkek eta Kozmak aspaldi eztabaidatu zuten euskarriak ikaskuntzan eragiten duen",
       "parrafos": [
         "Taldean, Stanforden emaitzak hezkuntza-teknologiaren [betiko eztabaida baten egungo bertsio](https://t.me/ChatGPTedu/54531) gisa irakurri ziren. Richard E. Clarkek «[Reconsidering Research on Learning from Media](https://doi.org/10.3102/00346543053004445)» lanean (1983) defendatu zuen euskarriek irakaskuntza garraiatzen dutela soilik, eta «[Media will never influence learning](https://doi.org/10.1007/BF02299088)» lanean (1994) berretsi zuen: ikasarazten duena metodoa da. Robert B. Kozmak «[Will media influence learning? Reframing the debate](https://doi.org/10.1007/BF02299087)» lanean (1994) erantzun zion euskarria eta metodoa ezin direla bereizi, teknologia bakoitzak egiteko ematen duenak pertsonak ikasteko duen moduarekin elkarreragiten duelako. [Egunkariak azaroaren 20an jaso zuen eztabaida hori](pieza:2026-11-19/clark-kozma-medios-aprendizaje).",
         "Eztabaida ekarri zuen ahotsak berak aitortu zuen taldea Kozmaren alde dagoela, eta [Clarken argudioak ez galtzeko](https://t.me/ChatGPTedu/54532) eskatu zuen. Ikerketek bi jarreren aldeko arrazoiak ematen dituzte. Clarkentzat, Bastaniren esperimentuan bi laguntzaileek eredu bera erabiltzen zuten, eta emaitza aldatu zutenak jarraibideak izan ziren, hau da, metodoa. Kozmarentzat, akats bakoitzera bere galderak egokitzen dituen tutore batek ariketa-liburu batek egin ezin duen zerbait egiten du. Bi irakurketek bat egiten dute irakasle batentzat garrantzitsua denarekin: tresnak, ondo pentsatutako jarduerarik gabe, ez du ezer bermatzen."
       ]
     },
     {
-      "ladillo": "Erakundeek eskatzen dutena",
+      "ladillo": "EBk, INTEFek eta Galiziak baldintzak jartzen dizkiote AAren erabilerari",
       "parrafos": [
         "Europar Batasuneko Kontseiluak, estatu kideetako gobernuak biltzen dituenak, [2026ko azaroaren 19an ondorio batzuk onartu zituen](https://www.consilium.europa.eu/en/press/press-releases/2026/11/19/equipping-europeans-for-the-age-of-ai-council-approves-conclusions/) herritarren AA-gaitasunei buruz. Haren [gaztelaniazko testuak](https://data.consilium.europa.eu/doc/document/ST-14902-2026-INIT/es/pdf) «AA noiz ez den erabili behar ezagutzeko gaitasuna» jasotzen du, eta mendekotasun gehiegizkoa, ikaskuntza-galera eta karga kognitiboaren delegazioa bezalako arriskuei erreparatzeko eskatzen du. Orientazio politikoak dira: ez dute inongo ikastetxe edo irakasle behartzen. [Egunkariak azaroaren 20an jaso zituen](pieza:2026-11-20/consejo-ue-competencias-ia).",
         "Espainian, estatuko erreferentziazko dokumentua Irakasleen Prestakuntza eta Hezkuntza Teknologietarako Institutu Nazionalaren (INTEF) [Guía sobre el uso de la inteligencia artificial en el ámbito educativo](https://intef.es/Noticias/nueva-version-de-la-guia-sobre-el-uso-de-la-inteligencia-artificial-en-el-ambito-educativo/) gida da, 2.0 bertsioa, 2026ko irailekoa. Hau du abiapuntu: «gai nagusia, beraz, ez da AA erabiltzen den ala ez, baizik eta nola, zertarako eta zer baldintzatan». Ikasleen erronken artean «gaitasun-ilusioa» jartzen du, hau da, tresnak egindakoa menderatzen dela sinestea, eta prozesua ikusgai egiten duten zereginak, ahozko defentsak eta hasierako faseetan AArik gabeko praktika proposatzen ditu. Ez du inor behartzen, baina horrela antolatu nahi duen irakaslea babesten du.",
@@ -97,7 +97,7 @@
       ]
     },
     {
-      "ladillo": "Pentsatzera behartzen duen jarduera",
+      "ladillo": "Lau urrats ikasgelarako, doan eta programatu gabe",
       "parrafos": [
         "Hau guztia ikasgelara eraman daiteke ezer ordaindu gabe eta programatzen jakin gabe. Lehenengoa da edozein laguntzaren aurretik norberaren saiakera eskatzea: Carnegie Melloneko esperimentuak praktika azalpenaren aurretik jartzen du, eta INTEFen gidak AArik gabe hasieran praktikatzea gomendatzen du.",
         "Bigarrena da laguntzaileak erantzun beharrean galdetzea. ChatGPTk 2025eko uztailetik du [ikasketa modua](https://openai.com/index/chatgpt-study-mode/), doako planean ere; [gaztelaniazko laguntza-orriaren](https://help.openai.com/es-es/articles/11780217-chatgpt-study-mode-faq) arabera, «+» botoiarekin eta «Estudiar» aukerarekin aktibatzen da. OpenAIk ohartarazten du elkarrizketen artean modu irregularrean jokatu dezakeela, eta ikasleek nahi duten unean desaktiba dezakete. Googlek Geminin [Ikaskuntza gidatua](https://blog.google/intl/es-es/aprendizaje-guiado-en-gemini-comprender-mas-alla-de-las-respuestas/) eskaintzen du, enpresaren arabera «erantzunak lortzea soilik ez, ulermen sakona eraikitzen laguntzea» helburu duena. Edozein laguntzailerekin antzeko jarraibideak idatz daitezke: irtenbidea ez dezala eman, aldi bakoitzean galdera bakarra egin dezala eta akats baten ondoren ikaslea problemara itzul dezala.",
