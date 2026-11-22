@@ -1,0 +1,128 @@
+{
+ "fecha": "2026-11-21",
+ "elegida": {
+  "n": 5,
+  "pieza": "android-distribucion-limitada-50",
+  "idea": "Android deja repartir una aplicación propia a 50 dispositivos sin pasar por la tienda; Algoritmo teme que no lleguen para las tabletas del centro, Tiza cuenta las que encienden y contesta: «Me sobran 46». Remata Tiza, con la resta a cargo del lector, y Algoritmo se queda procesando.",
+  "guion": {
+   "vinetas": [
+    {
+     "cartela": "En la sala de profes, con una aplicación para clase.",
+     "escenario": "sala_profes",
+     "tiza": {
+      "expresion": "contento",
+      "postura": "abajo",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "orgulloso",
+      "postura": "senalar",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "algoritmo",
+       "texto": "¡Android deja repartir tu aplicación a 50 dispositivos sin pasar por la tienda!",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "sala_profes",
+     "tiza": {
+      "expresion": "pensativo",
+      "postura": "pensar",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "preocupado",
+      "postura": "abajo",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "algoritmo",
+       "texto": "¿Te llegará con 50 para las tabletas del centro?",
+       "tipo": "habla"
+      },
+      {
+       "quien": "tiza",
+       "texto": "Espera, que cuento las que encienden...",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "sala_profes",
+     "tiza": {
+      "expresion": "harto",
+      "postura": "encoger",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "cargando",
+      "postura": "pensar",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Me sobran 46.",
+       "tipo": "habla"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "motivo": "Gana la 5, con un punto de gracia sobre las siguientes (8 frente a 7): no decide la variedad, decide la gracia. Es la más concreta y la que mejor remata: tres palabras, una cifra y una resta que hace el lector (de 50 sobran 46: encienden cuatro). Se entiende sin haber leído la noticia, porque la primera viñeta la cuenta entera y lo demás lo reconoce cualquier docente: el carro de tabletas del centro, del que arrancan unas pocas. La ironía cae sobre el estado del material y sobre el entusiasmo de la tecnología ante un límite que al aula le viene grande, no sobre ninguna persona ni sobre la empresa, que solo se nombra para dar la noticia. Los datos son los de la pieza (50 dispositivos, sin pasar por la tienda, las tabletas del centro como uso posible); las cuatro que encienden son de la tira. Su gracia llega a 7, así que solo se ha afinado el ritmo. La 2 («Esa es la oficial») tiene la mejor última frase después de la 5 y un molde menos visto (los dos contra la plataforma de las notas, remata Algoritmo), pero pide demasiado para llegar: tres viñetas cargadas de texto, una primera de 83 caracteres que explica dos vías sin decir de qué, y un «avisa: puede romperse sin previo aviso» que obliga a releer; quien no ha leído la noticia llega cansado al remate. La 1 («El portátil, el móvil y estas horas también son personales») es certera y muy de docente, pero más amarga que graciosa, el remate es largo (70 caracteres) y lleva un «Lo normal» que lo anuncia; además Algoritmo presenta la vía como buena para «los cuadernos del centro» y la noticia dice justo que las cuentas de centro no sirven: vale como planteamiento, pero confunde. La 4 (la burocracia como máquina de Rube Goldberg, «solicitud de un cable para el proyector») es una comparación simpática y bien dirigida, contra el papeleo y no contra el simulador ni su autora, pero es la más previsible, gasta dos viñetas en explicar qué es una máquina de Rube Goldberg y el «Esa es la gracia» roza explicar el chiste. La 3 («Tan lejos todavía no llega») es la más floja: el remate es un juego con «lejos» de poco vuelo, la primera viñeta es la entradilla de la noticia puesta en un bocadillo y Tiza acaba con las manos en la cabeza, una reacción mayor que el chiste. Ninguna se inventa datos de la noticia; las cinco respetan las prohibiciones y las cinco caben.",
+ "retoques": "Primera viñeta, bocadillo de Algoritmo: «¡Android deja repartir tu aplicación a 50 dispositivos sin pasar por la tienda!» en vez de «…una aplicación propia a 50 dispositivos…»: baja de 87 a 79 caracteres y el «tu» mete a Tiza en la escena (el rótulo ya dice que hay una aplicación para clase). Se acorta, no se alarga. Tercera viñeta: «Me sobran 46.» en vez de «Me sobran cuarenta y seis.»: la cifra en números, como el 50 de las dos viñetas anteriores, para que la resta salte a la vista sin traducir de letras a números; es el chiste y queda en 13 caracteres. Segunda viñeta: no se toca; su primer bocadillo (el de Algoritmo, 48 caracteres) queda igual, así que sigue cabiendo, y el «las que encienden» de Tiza es el giro que prepara el remate. Rótulo de la primera viñeta: está, tiene 52 caracteres y sitúa (dónde están y de qué va) sin adelantar el chiste; se deja. Escenario sala_profes: libre (los tres números anteriores fueron aula, fotocopiadora y claustro) y sirve a la escena, dos colegas hablando del material del centro; se mantiene en las tres viñetas. Sin objeto: el escenario ya sitúa, y así no se repite ni el portátil ni el folio de los números anteriores. Caras: Tiza pasa de contenta (la noticia es buena, y de ahí cae) a pensativa (cuenta) y a harta; «contento» es el recurso fácil, pero aquí es lo que siente y dura una viñeta, y no usa «neutral» ni «preocupado», sus más repetidas. Algoritmo va de orgulloso a preocupado y acaba en «cargando», la única cara que no había salido en los tres números anteriores, y que aquí hace de segundo remate: la máquina rapidísima se queda procesando una resta, o lo que la resta dice. Posturas: Algoritmo acababa con «abajo» dos viñetas seguidas; en la tercera pasa a «pensar» (mano a la barbilla, haciendo la cuenta), y no usa ninguna de sus repetidas («arriba», «cabeza»): «senalar» y «abajo» no habían salido. Tiza empieza con «abajo», que no había usado; «encoger», en el remate, está entre sus repetidas, pero el chiste la pide: es la resignación seca de «es lo que hay», y las libres («arriba», «cabeza») lo convertirían en drama. El molde: los dos últimos remates fueron uno mudo (día 20) y uno de Tiza (día 19), así que no hay dos seguidos del mismo personaje; hoy remata Tiza, pero no con el molde gastado (no es Algoritmo quien se pasa de celo): la que cierra es ella, con una cifra, y el chasco se queda en Algoritmo. Acaban Tiza harta y Algoritmo cargando, un final que no repite ninguno de los tres anteriores. Ningún bocadillo pasa de 90 caracteres (el más largo, 79).",
+ "puntuaciones": [
+  {
+   "n": 1,
+   "gracia": 7,
+   "claridad": 7,
+   "remate": 7,
+   "prohibiciones": "respeta",
+   "cabe": true
+  },
+  {
+   "n": 2,
+   "gracia": 7,
+   "claridad": 6,
+   "remate": 8,
+   "prohibiciones": "respeta",
+   "cabe": true
+  },
+  {
+   "n": 3,
+   "gracia": 6,
+   "claridad": 7,
+   "remate": 6,
+   "prohibiciones": "respeta, pero el remate roza el juego de palabras fácil (con «lejos»)",
+   "cabe": true
+  },
+  {
+   "n": 4,
+   "gracia": 7,
+   "claridad": 7,
+   "remate": 7,
+   "prohibiciones": "respeta: el blanco es la burocracia, no el simulador ni su autora; «Esa es la gracia» roza explicar el chiste",
+   "cabe": true
+  },
+  {
+   "n": 5,
+   "gracia": 8,
+   "claridad": 8,
+   "remate": 9,
+   "prohibiciones": "respeta",
+   "cabe": true
+  }
+ ]
+}

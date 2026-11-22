@@ -1,0 +1,120 @@
+{
+  "fecha": "2026-11-21",
+  "hay_edicion": true,
+  "motivo": "Día normal. ChatGPT-IA-edu xira arredor da API de Gemini Notebook; Vibe Coding Educativo achega a distribución limitada de Android e un simulador compartido; EduMedia-IAG, as exploracións inmersivas de Gemini. O do Consello da UE, Chicago, Manchester, Trama, Maniobres e Genie 4 xa está publicado.",
+  "piezas": [
+    {
+      "id": "gemini-notebook-api-oficial",
+      "seccion": "herramientas",
+      "importancia": 1,
+      "grupo": "chatgpt",
+      "antetitulo": "Automatizar cadernos",
+      "titular": "Gemini Notebook xa ten API oficial, aínda que limitada e en versión preliminar",
+      "entradilla": "Permite crear cadernos e engadirlles fontes desde outros programas, pero só con contas persoais. Unha biblioteca de código non oficial fai máis, aínda que pode deixar de funcionar sen aviso.",
+      "cuerpo": [
+        "Google publicou na súa [documentación para desenvolvedores](https://developers.google.com/notebook/docs) a API de Gemini Notebook, o antigo NotebookLM, o asistente que responde a partir das fontes que se lle suben. Unha API é unha vía para que outros programas usen un servizo sen entrar na súa web. Segundo a propia documentación, está en «acceso anticipado» (versión preliminar pública) e aínda non admite contas de Google Workspace, o tipo de conta que adoitan usar os centros: só contas persoais.",
+        "Con ela pódense crear, listar e actualizar cadernos e engadirlles fontes: páxinas web, vídeos de YouTube, texto, Markdown e arquivos como PDF, documentos, audio e imaxes. A documentación menciona ademais un servidor MCP, unha vía para conectar o servizo con asistentes de IA que escriben código.",
+        "No grupo ChatGPT-IA-edu compartiuse a novidade xunto con ideas de uso docente xeradas con Gemini, como un caderno cos documentos do centro que se actualice só ou resumos en audio enviados á aula virtual. Esas ideas son propostas, non funcións probadas; varias esixirían operacións (preguntar, xerar audios) que a documentación non recolle.",
+        "No grupo tamén se explicou como se automatizan xa cadernos cunha API non oficial; a comparativa compartida refírese a [notebooklm-py](https://github.com/teng-lin/notebooklm-py), unha biblioteca de código feita pola comunidade. A súa propia presentación (o arquivo README) avisa de que se apoia en «APIs de Google non documentadas», que poden cambiar sen aviso, e de que serve sobre todo para prototipos e proxectos persoais. A postura expresada foi seguir con ela, polo de agora, en lugar de pasar á API oficial. Un centro con contas de Workspace non pode usar a oficial por agora.",
+        "O diario xa [publicou](pieza:2026-11-17/gemini-notebook-sitios) outra novidade de Gemini Notebook: converter un caderno nun sitio web interactivo."
+      ],
+      "fuentes": [
+        {"titulo": "Documentación da API de Gemini Notebook (Google) (en inglés)", "url": "https://developers.google.com/notebook/docs"},
+        {"titulo": "notebooklm-py (biblioteca non oficial) (en inglés)", "url": "https://github.com/teng-lin/notebooklm-py"}
+      ],
+      "mensaje": {"grupo": "chatgpt", "id": 54598},
+      "comprobado": "Documentación de Google aberta: nome, estado «Early Access Public Preview», só contas persoais, operacións e servidor MCP. README de notebooklm-py aberto: non oficial, APIs non documentadas, aviso de roturas, recomendado para prototipos e proxectos persoais. Mensaxe 54598 comprobada en Telegram. Os usos docentes atribúense a ideas do grupo, non comprobadas. Quitouse a frase que daba por feito que había que agardar a que a oficial admitise Workspace.",
+      "ilustracion": "Esquema de dúas portas a un mesmo caderno: unha oficial, con cadeado e cartel «só contas persoais», e outra lateral, non oficial, cun cartel de «pode romperse».",
+      "ilustracion_alt": "Esquema de dous camiños cara a un mesmo caderno: o de arriba, rotulado «API oficial», pasa por un cadeado e leva o rótulo «Só persoais»; o de abaixo, rotulado «Non oficial», vai en trazo descontinuo vermello co rótulo «Pode romperse». Á dereita, o caderno, rotulado «Caderno».",
+      "grafico": null
+    },
+    {
+      "id": "android-distribucion-limitada-50",
+      "seccion": "vibecoding",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Aplicacións para a aula",
+      "titular": "Android permite compartir unha aplicación propia con ata 50 dispositivos sen Google Play",
+      "entradilla": "A conta de distribución limitada é gratuíta e está pensada para as persoas que crean aplicacións para clase ou para un grupo pequeno.",
+      "cuerpo": [
+        "Segundo a [guía de Google para desenvolvedores](https://developer.android.com/developer-verification/guides/limited-distribution?hl=es-419), unha conta de distribución limitada permite rexistrar aplicacións e compartilas con ata 50 dispositivos que as persoas que os usan autorizasen de forma expresa. É un tipo de conta gratuíto, pensado para persoas afeccionadas ou que están aprendendo e para traballos de clase. No grupo Vibe Coding Educativo comentouse que o límite era antes de 20 dispositivos; a guía actual só recolle a cifra de 50.",
+        "O reparto funciona cun proceso de confirmación mediante códigos QR ou ligazóns: a persoa dona do móbil ou da tableta dá o seu consentimento no aparello, e o dispositivo queda rexistrado na consola de desenvolvedores de Android. Así, unha aplicación feita para un grupo pode probarse nos móbiles do alumnado ou nas tabletas do centro sen pasar pola tenda.",
+        "Hai requisitos: unha conta de Google con verificación en dous pasos, un perfil de pagamentos de Google vinculado (que serve para indicar o nome legal e o enderezo) e un correo de contacto. Non se pide documento de identidade. Antes de repartir unha aplicación ao alumnado, convén ter en conta que datos do estudantado garda, algo que depende de como estea feita.",
+        "É unha vía distinta da [aplicación completa que crea Google AI Studio](pieza:2026-11-19/ai-studio-apps-android), que se instala desde Google Play."
+      ],
+      "fuentes": [
+        {"titulo": "Rexístrate para a distribución limitada en dispositivos Android (Android Developers) (en castelán)", "url": "https://developer.android.com/developer-verification/guides/limited-distribution?hl=es-419"}
+      ],
+      "mensaje": {"grupo": "vce", "id": 15187},
+      "comprobado": "Guía oficial aberta: ata 50 dispositivos autorizados, gratuíta, QR ou ligazóns, requisitos, sen documento de identidade. O paso de 20 a 50 só o afirma a mensaxe do grupo (comprobado en Telegram); a guía non menciona a cifra anterior, por iso se atribúe ao grupo. Titular acurtado de 103 a menos de 90 caracteres. Ligazón á peza de AI Studio de 2026-11-19 comprobada en publicado.txt.",
+      "ilustracion": null,
+      "ilustracion_alt": "Un código QR, rotulado «Código QR», cunha frecha cara a unha cuadrícula de móbiles seguida de puntos suspensivos e o rótulo «Ata 50 dispositivos»; abaixo, unha cruz vermella e o rótulo «Sen Google Play».",
+      "grafico": null
+    },
+    {
+      "id": "gemini-exploraciones-inmersivas",
+      "seccion": "multimedia",
+      "importancia": 3,
+      "grupo": "edumedia",
+      "antetitulo": "Gemini para estudar",
+      "titular": "Gemini ofrece desde outubro percorridos visuais e interactivos por temas para estudar",
+      "entradilla": "As exploracións inmersivas son unha biblioteca de temas xa preparados que se percorren por capas. Segundo o grupo, non se poden crear temas propios, e a experiencia só está en seis idiomas, sen castelán.",
+      "cuerpo": [
+        "Google [presentou o 28 de outubro](https://blog.google/innovation-and-ai/products/gemini-app/immersive-explorations-student-hub/) unha biblioteca de exploracións inmersivas na aplicación de Gemini: experiencias visuais e interactivas que percorren un tema por capas, desde sistemas microscópicos ata o espazo profundo. Chégase a elas desde a sección para estudantes de Gemini, e Google anuncia que pronto poderán abrirse tamén dentro dunha conversa e levarán narración en audio.",
+        "En EduMedia-IAG comentouse o 21 de novembro que se vían os exemplos pero non se podía crear unha exploración propia. Na captura compartida no grupo, a biblioteca inclúe temas como os cuásares, a física do raio, o Imperio persa ou a era mesozoica. O artigo de Google non menciona a creación de exploracións propias.",
+        "Segundo o mesmo artigo de Google, a experiencia está en inglés, indonesio, hindi, portugués do Brasil, francés e chinés simplificado; nos demais idiomas, incluído o castelán, é só en inglés por agora. Na aula, iso condiciona o seu uso co alumnado que non lea inglés."
+      ],
+      "fuentes": [
+        {"titulo": "Exploracións inmersivas no espazo para estudantes de Gemini (Google) (en inglés)", "url": "https://blog.google/innovation-and-ai/products/gemini-app/immersive-explorations-student-hub/"}
+      ],
+      "mensaje": {"grupo": "edumedia", "id": 12384},
+      "comprobado": "Entrada oficial do blog de Google aberta: data 28 de outubro de 2026, funcionamento, idiomas, narración en audio próxima, acceso desde o hub de estudantes, dispoñible para todos os usuarios. Mensaxe 12384 comprobada en Telegram. Os temas (cuásares, Imperio persa, mesozoica) saen das capturas e do tuit do grupo; o blog cita outros exemplos. Que non se poden crear propias di o grupo, non a entrada: atribúese na entradilla. «Interface» substituído por «experiencia», que é o que di a fonte. Sen peza anterior no diario.",
+      "ilustracion": null,
+      "ilustracion_alt": "Á esquerda, círculos concéntricos como capas que se percorren, rotulados «Por capas»; á dereita, un globo terráqueo riscado cunha raia vermella, cos rótulos «6 idiomas» e «Sen castelán».",
+      "grafico": null
+    },
+    {
+      "id": "maquina-rube-goldberg-simple",
+      "seccion": "vibecoding",
+      "importancia": 3,
+      "grupo": "vce",
+      "antetitulo": "Da comunidade",
+      "titular": "Un simulador permite construír máquinas de Rube Goldberg e analizar as súas pancas",
+      "entradilla": "O alumnado coloca pezas sobre un taboleiro, pon en marcha a cadea e revisa o punto de apoio, a carga e a forza de cada máquina simple. Está en catalán.",
+      "cuerpo": [
+        "Mercè Feu compartiu en Vibe Coding Educativo o seu [simulador de máquinas de Rube Goldberg](https://mfeu-edu.github.io/simulador-maquines-simples/). Unha máquina de Rube Goldberg é unha cadea de pezas que reaccionan unhas ás outras. Na páxina, en catalán, colócanse, xíranse e duplícanse as pezas sobre unha cuadrícula na que cada cadro representa un metro, e prémese «Engega» para ver a simulación.",
+        "Unha ferramenta de análise indica que máquinas simples se usaron e marca en cada peza o punto de apoio, a carga e a forza aplicada, o que permite pasar do xogo á física. O simulador permite gardar a máquina como unha ligazón e cargala despois, e ten un apartado de «retos iniciais para practicar». A autora propóxeo para Ciencia e Tecnoloxía de secundaria.",
+        "O código é software libre, con licenza AGPL v3. A páxina non di se garda algún dato nin cal."
+      ],
+      "fuentes": [
+        {"titulo": "Màquina de Rube Goldberg (amb màquines simples) (en catalán)", "url": "https://mfeu-edu.github.io/simulador-maquines-simples/"}
+      ],
+      "mensaje": {"grupo": "vce", "id": 15196},
+      "comprobado": "Páxina da aplicación aberta: descrición, controis («Engega»), análise de pancas, ligazón para gardar, AGPL v3. Mensaxe 15196 comprobada en Telegram. A páxina non indica autoría nin nivel: saen da mensaxe da propia Mercè Feu, que comparte o seu simulador. Quitado «Non fai falta iniciar sesión» (a páxina non o di) e rebaixados os retos: a páxina só mostra o encabezado, sen retos listados. Sen peza anterior nin mensaxes previas sobre el.",
+      "ilustracion": null,
+      "ilustracion_alt": "Unha panca sobre un punto de apoio triangular, rotulado «Apoio»; á esquerda, unha frecha vermella cara abaixo co rótulo «Forza», e á dereita, un bloque sobre a panca co rótulo «Carga».",
+      "grafico": null
+    }
+  ],
+  "breves": [
+    {
+      "texto": "Google DeepMind ofrece, en inglés, unha guía interactiva que explica co seu modelo Gemma 4 como un modelo de linguaxe, o tipo de programa que hai detrás de ChatGPT, xera a partir dun texto o fragmento que vén a continuación. Percorre cinco etapas, desde dividir o texto ata o formato de chat.",
+      "url": "https://gemma.ai/learn/how-llms-work/",
+      "grupo": "chatgpt",
+      "mensaje": {"grupo": "chatgpt", "id": 54610}
+    }
+  ],
+  "descartado": [
+    "Aviso de World Labs sobre o peche de Marble (8 de xaneiro de 2027): só consta nun correo reenviado no grupo; busquei o anuncio na web e na prensa e non apareceu, así que non se publica.",
+    "Consello da UE, Chicago e Google, festival de Manchester, Trama, Maniobres e Genie 4: xa publicados o 21 de novembro ou antes; sen novidade real.",
+    "Documentos da Biblioteca dixital (conclusións do Consello, manual de Abya Yala): teñen a súa sección.",
+    "Comentarios sobre o uso de varias linguas no grupo, mensaxes de agradecemento, avisos do bot antiuserbots e uso de cotas de Claude e AI Studio: administración do grupo ou conversa persoal."
+  ],
+  "repaso": [
+    "Gemini Notebook: quitada a frase que presentaba como feito que había que agardar a que a API oficial admita Workspace; aclarado que a biblioteca citada sae da comparativa do grupo.",
+    "Android: titular acurtado de 103 a uns 83 caracteres.",
+    "Exploracións inmersivas: a entradilla atribúe ao grupo que non se poden crear propias e di «experiencia» en vez de «interface».",
+    "Rube Goldberg: quitado «Non fai falta iniciar sesión» (non consta) e matizados os retos iniciais (só hai o encabezado).",
+    "Breve de Gemma 4 e resto de datos confirmados coas súas fontes e coas mensaxes."
+  ]
+}

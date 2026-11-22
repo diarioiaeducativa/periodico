@@ -1,0 +1,85 @@
+{
+ "fecha": "2026-11-21",
+ "elegida": {
+  "n": 5,
+  "pieza": "android-distribucion-limitada-50",
+  "idea": "Android lets you share your own app with 50 devices without going through the store; Algorithm worries that won’t be enough for the school’s tablets, Chalk counts the ones that switch on and replies: “I’ve got 46 to spare.” Chalk delivers the punchline, leaving the subtraction to the reader, and Algorithm is left processing.",
+  "guion": {
+   "vinetas": [
+    {
+     "cartela": "In the staff room, with an app for class.",
+     "escenario": "sala_profes",
+     "tiza": {
+      "expresion": "contento",
+      "postura": "abajo",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "orgulloso",
+      "postura": "senalar",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "algoritmo",
+       "texto": "Android lets you share your app with 50 devices without going through the store!",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "sala_profes",
+     "tiza": {
+      "expresion": "pensativo",
+      "postura": "pensar",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "preocupado",
+      "postura": "abajo",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "algoritmo",
+       "texto": "Will 50 be enough for the school’s tablets?",
+       "tipo": "habla"
+      },
+      {
+       "quien": "tiza",
+       "texto": "Hang on, let me count the ones that switch on...",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "sala_profes",
+     "tiza": {
+      "expresion": "harto",
+      "postura": "encoger",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "cargando",
+      "postura": "pensar",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "I’ve got 46 to spare.",
+       "tipo": "habla"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "traduccion": "automatic AI translation"
+}

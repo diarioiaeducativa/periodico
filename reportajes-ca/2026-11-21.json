@@ -1,0 +1,201 @@
+{
+  "fecha": "2026-11-21",
+  "hay_reportaje": true,
+  "motivo": "Es el asunto que más días ocupó en la semana y el que abrió un debate con argumentos: la actualización de la revisión de Stanford sobre la evidencia causal de la IA en la escuela (18 de noviembre), su lectura a la luz del debate Clark-Kozma (19 de noviembre) y el experimento de Carnegie Mellon sobre la tutoría socrática, que entró en la Biblioteca digital el 18. Tiene recorrido largo en los grupos (tutores socráticos y descarga cognitiva desde 2024-2025), actores con documentos (Stanford, OCDE, Consejo de la UE, INTEF, Google y OpenAI) y una consecuencia práctica para cualquier docente: no es lo mismo usar la IA para entender que para entregar. Ningún reportaje anterior lo ha tratado. La idea que sostiene el reportaje es que la investigación no dice si la IA hace aprender o no, sino que depende de para qué se use, y que el diseño de la actividad pesa más que el formato de la herramienta.",
+  "id": "ia-aprender-entender-o-entregar",
+  "antetitulo": "El que diu la recerca",
+  "titular": "La IA ajuda més a aprendre quan serveix per entendre que quan fa la tasca",
+  "entradilla": "Una revisió de la Universitat de Stanford reuneix ja 52 estudis que mesuren l'efecte de la IA en l'aprenentatge: fer-la servir per entendre material nou surt més ben parat que fer-la servir per produir el treball, encara que cap ús no millora els resultats de manera constant. Aquest reportatge explica com llegir aquests estudis, per què un tutor que pregunta no n'hi ha prou per si sol i què pot fer un docent perquè la IA no faci el treball de l'alumnat.",
+  "apartados": [
+    {
+      "ladillo": "La revisió de Stanford només admet estudis causals",
+      "parrafos": [
+        "La iniciativa SCALE de la Universitat de Stanford va publicar el 10 de novembre de 2026 «[The Evidence Base on AI in K-12: A November 2026 Review](https://scale.stanford.edu/ai/evidence-base-review/evidence-base-ai-k12-november-review)», signada per Seth Walker, Lily Fesler, JP Martinez Claeys, Chris Agnew i Susanna Loeb. Només admet estudis causals: assaigs que reparteixen a l'atzar els participants entre un grup que fa servir la IA i un altre que no, o dissenys semblants que permeten atribuir a l'eina la diferència de resultats. Amb aquest filtre hi van entrar 32 treballs nous, que se sumen als 20 de la versió de març: 52 en total. [El diari va publicar la revisió el 19 de novembre](pieza:2026-11-18/stanford-evidencia-ia-escuela).",
+        "Encara són pocs, i la mateixa revisió n'explica el motiu. La majoria dels nous es van fer a la universitat: només cinc tracten de l'alumnat d'escoles dels Estats Units, de les etapes que allà anomenen K-12, d'infantil fins al final de secundària. Molts són *preprints*, treballs difosos sense revisió per parells, i en la majoria els efectes es van mesurar entre uns dies i una setmana després. Els autors adverteixen que les seves conclusions no es poden generalitzar a totes les escoles dels Estats Units. La financen la Walton Family Foundation, la Overdeck Family Foundation i Google.org, la branca filantròpica de Google.",
+        "A ChatGPT-IA-edu es va [compartir el 18 de novembre](https://t.me/ChatGPTedu/54498) amb un [resum de les conclusions](https://t.me/ChatGPTedu/54500) i dos dels casos, el de [Turquia, amb docents](https://t.me/ChatGPTedu/54501) i el de [Sierra Leone](https://t.me/ChatGPTedu/54502); en aquest intercanvi van participar els autors d'aquest diari. Davant d'un titular del tipus «la IA millora l'aprenentatge», la revisió ajuda a fer-se tres preguntes: comparat amb què, mesurat amb l'eina al davant o sense, i quant de temps després."
+      ]
+    },
+    {
+      "ladillo": "Entendre o lliurar",
+      "parrafos": [
+        "La conclusió central de Stanford és que la IA sembla funcionar millor per aprendre quan l'alumnat la fa servir com a suport per comprendre que quan la fa servir per produir el treball, encara que cap dels dos usos no millora l'aprenentatge de manera constant. El seu resum ho diu així: «the effects of generative AI depend on how it is designed and used» («els efectes de la IA generativa depenen de com es dissenya i de com es fa servir»).",
+        "Un estudi de la versió de març ho mostra amb claredat. Un equip encapçalat per Hamsa Bastani, de la Universitat de Pennsilvània, va publicar el juny de 2025 a la revista PNAS «[Generative AI without guardrails can harm learning](https://doi.org/10.1073/pnas.2422633122)»: gairebé 1.000 estudiants de secundària de Turquia van practicar matemàtiques amb dos assistents basats en GPT-4, un que imitava ChatGPT i un altre amb instruccions pensades per protegir l'aprenentatge. A la pràctica, les notes van millorar un 48 % amb el primer i un 127 % amb el segon. Sense l'eina, l'alumnat del primer va treure un 17 % menys que el que mai no l'havia tinguda; amb el segon, aquest dany es va atenuar en gran part.",
+        "Els estudis nous van en el mateix sentit. Al Brasil, 85 universitaris van preparar una presentació amb ChatGPT o amb recursos tradicionals: els primers hi van dedicar menys temps, però en una prova 45 dies després van treure menys nota (Barcaui, 2025).",
+        "La revisió afegeix un avís: la IA pot millorar l'experiència de l'alumnat encara que no millori el que aprèn. En diversos estudis, els estudiants van valorar la retroalimentació de la IA com a més clara o motivadora que la d'altres fonts, amb resultats d'aprenentatge semblants. És a dir, **que a l'alumnat li agradi una activitat amb IA no prova que aprengui més**. L'OCDE arriba a una cosa semblant al seu [Digital Education Outlook 2026](https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/01/oecd-digital-education-outlook-2026_940e0dd8/062a7394-en.pdf) (PDF, en anglès): segons el [resum de la plataforma europea de Competències i Ocupacions Digitals](https://digital-skills-jobs.europa.eu/en/latest/news/oecd-digital-education-outlook-2026-how-generative-ai-can-support-learning-when-used), amb bots de conversa generalistes l'alumnat lliura millors treballs, però l'avantatge desapareix o s'inverteix als exàmens sense ells."
+      ]
+    },
+    {
+      "ladillo": "Un tutor que pregunta",
+      "parrafos": [
+        "Si produir el treball amb IA perjudica, una sortida és que la IA no doni la resposta. Michael W. Asher, Meng Cao i Paulo F. Carvalho, de la Universitat Carnegie Mellon, van publicar el 15 de novembre de 2026 «[Turning Errors into Successes](https://arxiv.org/abs/2611.20061v1)», un experiment amb 400 adults dels Estats Units que aprenien a plantejar equacions. Després de cada error, uns rebien la resposta correcta o una explicació, i altres conversaven amb un tutor d'IA que els guiava amb preguntes fins a la solució. Amb el tutor van corregir per si mateixos el 64 % dels seus errors (131 de 206) i van treure 9 punts percentuals més a la prova final que amb les explicacions. [El diari va publicar l'experiment el 19 de novembre](pieza:2026-11-18/cmu-tutoria-socratica-errores).",
+        "Al grup es va presentar defensant que [la IA funciona molt bé com a tutor socràtic i cal insistir en aquest ús](https://t.me/ChatGPTedu/54508), i la seva [fitxa va entrar a la Biblioteca digital](https://t.me/ChatGPTedu/21753/54510); també aquí va participar un autor d'aquest diari. Els límits els reconeixen els mateixos autors: és un *preprint*, amb adults, en una sola sessió d'uns vint minuts, i l'avantatge va aparèixer només en problemes semblants als practicats.",
+        "Altres estudis de la revisió de Stanford, resumits a la taula, obliguen a matisar: amb 199 universitaris, la resposta immediata va funcionar millor que les pistes graduals. A Sierra Leone, en canvi, 1.423 estudiants van millorar en matemàtiques quan els seus docents van integrar l'aprenentatge guiat de Gemini en la meitat de les classes durant vuit setmanes; ho signen un equip de Google i l'organització Fab AI.",
+        "Aquests resultats apunten que **el disseny de l'activitat pesa més que el format del tutor**: preguntar en lloc de respondre ajuda quan forma part d'una tasca pensada pel docent. Als grups l'assumpte té història: el juny de 2025, Juan José de Haro va compartir [un tutor socràtic amb IA](https://t.me/ChatGPTedu/31133)."
+      ],
+      "tabla": {
+        "titulo": "Estudis sobre tutors d'IA que cita la revisió de Stanford",
+        "columnas": [
+          "Estudi",
+          "Participants",
+          "Què es va comparar",
+          "Resultat"
+        ],
+        "filas": [
+          [
+            "Bastani i altres (2025, PNAS)",
+            "Gairebé 1.000 estudiants de secundària, Turquia",
+            "Assistent tipus ChatGPT i assistent amb salvaguardes, en la pràctica de matemàtiques",
+            "Sense l'eina, el primer grup va treure un 17 % menys que el que mai no l'havia tinguda; les salvaguardes van atenuar el dany"
+          ],
+          [
+            "Asher, Cao i Carvalho (2026, preprint)",
+            "400 adults, Estats Units",
+            "Tutor que pregunta després de l'error i explicacions",
+            "Millors resultats amb el tutor en problemes com els practicats"
+          ],
+          [
+            "Cao i altres (2026, preprint)",
+            "199 universitaris, Estats Units",
+            "Resposta immediata i pistes graduals",
+            "Millors resultats amb la resposta immediata"
+          ],
+          [
+            "Oreopoulos i altres (2026)",
+            "6.997 estudiants de 6è a 8è grau, Estats Units",
+            "Pràctica de matemàtiques amb tutor d'IA i sense",
+            "Pràctica més lenta, sense millora en allò après"
+          ],
+          [
+            "Kao i altres (2025, preprint)",
+            "90 estudiants de 10è grau, Taiwan",
+            "Preguntes socràtiques del mode d'estudi de ChatGPT",
+            "Millor argumentació i pensament crític"
+          ],
+          [
+            "LearnLM Team, Google i Fab AI (2026)",
+            "1.423 estudiants de 7è i 8è grau, Sierra Leone",
+            "Aprenentatge guiat de Gemini integrat pel docent i classe habitual",
+            "Millora en matemàtiques"
+          ]
+        ],
+        "nota": "Font: «The Evidence Base on AI in K-12: A November 2026 Review», SCALE, Universitat de Stanford, 10 de novembre de 2026; l'estudi de Bastani i altres figura a la versió de març. Els cursos són els del sistema de cada país. Un *preprint* és un treball difós sense revisió per parells."
+      }
+    },
+    {
+      "ladillo": "El mitjà i el mètode",
+      "parrafos": [
+        "Al grup, els resultats de Stanford es van llegir com [la versió actual d'un vell debat](https://t.me/ChatGPTedu/54531) de la tecnologia educativa. Richard E. Clark va sostenir a «[Reconsidering Research on Learning from Media](https://doi.org/10.3102/00346543053004445)» (1983) que els mitjans només porten l'ensenyament, i ho va repetir a «[Media will never influence learning](https://doi.org/10.1007/BF02299088)» (1994): el que fa aprendre és el mètode. Robert B. Kozma li va respondre a «[Will media influence learning? Reframing the debate](https://doi.org/10.1007/BF02299087)» (1994) que mitjà i mètode no se separen, perquè el que permet fer cada tecnologia interactua amb la manera com la persona aprèn. [El diari va recollir aquest debat el 20 de novembre](pieza:2026-11-19/clark-kozma-medios-aprendizaje).",
+        "La mateixa veu que va portar el debat va reconèixer que el grup s'inclina per Kozma i va demanar [no perdre de vista els arguments de Clark](https://t.me/ChatGPTedu/54532). Els estudis donen raons a les dues postures. Per a Clark, a l'experiment de Bastani els dos assistents feien servir el mateix model, i el que va canviar el resultat van ser les instruccions, és a dir, el mètode. Per a Kozma, un tutor que adapta les preguntes a cada error fa una cosa que un llibre d'exercicis no pot fer. Les dues lectures coincideixen en el que importa a un docent: l'eina, sense una activitat ben pensada, no garanteix res."
+      ]
+    },
+    {
+      "ladillo": "El que demanen les institucions",
+      "parrafos": [
+        "El Consell de la Unió Europea, que reuneix els governs dels estats membres, [va aprovar el 19 de novembre de 2026 unes conclusions](https://www.consilium.europa.eu/en/press/press-releases/2026/11/19/equipping-europeans-for-the-age-of-ai-council-approves-conclusions/) sobre les competències de la ciutadania en IA. El seu [text en castellà](https://data.consilium.europa.eu/doc/document/ST-14902-2026-INIT/es/pdf) inclou «la capacitat de reconèixer quan no s'ha d'utilitzar la IA» i demana atendre riscos com la dependència excessiva, la pèrdua d'aprenentatge i la descàrrega cognitiva. Són orientacions polítiques: no obliguen cap centre ni cap docent. [El diari les va recollir el 20 de novembre](pieza:2026-11-20/consejo-ue-competencias-ia).",
+        "A Espanya, el document estatal de referència és la [Guía sobre el uso de la inteligencia artificial en el ámbito educativo](https://intef.es/Noticias/nueva-version-de-la-guia-sobre-el-uso-de-la-inteligencia-artificial-en-el-ambito-educativo/) de l'Instituto Nacional de Tecnologías Educativas y de Formación del Profesorado (INTEF), versió 2.0, de setembre de 2026. Parteix que «La cuestión central no debe ser, por tanto, si se utiliza o no IA, sino cómo, para qué y en qué condiciones» (la qüestió central no ha de ser, doncs, si es fa servir o no IA, sinó com, per a què i en quines condicions). Entre els desafiaments de l'alumnat situa la «il·lusió de competència», creure que es domina el que ha fet l'eina, i proposa tasques que facin visible el procés, defenses orals i pràctica sense IA en les fases inicials. No obliga, però avala un docent que vulgui organitzar així les seves classes.",
+        "Galícia ha anat més enllà. El seu Parlament va aprovar el 17 de novembre de 2026 la Llei d'educació digital, el [text dictaminat](https://www.parlamentodegalicia.es/sitios/web/BibliotecaBoletinsOficiais/B120458_2.pdf) de la qual dedica un títol a la IA: permet, entre altres usos, assistents que resolguin dubtes fora de l'horari de classe, prohibeix que substitueixi el professorat i limita els centres públics als sistemes d'un catàleg de la Conselleria d'Educació. Quan entri en vigor, un docent d'un centre públic gallec només podrà proposar un assistent que pregunti si figura en aquest catàleg."
+      ]
+    },
+    {
+      "ladillo": "Una activitat que obligui a pensar",
+      "parrafos": [
+        "Tot això es pot portar a l'aula sense pagar res ni saber programar. El primer és demanar un intent propi abans de qualsevol ajuda: l'experiment de Carnegie Mellon posa la pràctica abans de l'explicació, i la guia de l'INTEF recomana practicar sense IA al principi.",
+        "El segon és que l'assistent pregunti en lloc de respondre. ChatGPT té des del juliol de 2025 un [mode d'estudi](https://openai.com/index/chatgpt-study-mode/), també al pla gratuït; segons la seva [pàgina d'ajuda en castellà](https://help.openai.com/es-es/articles/11780217-chatgpt-study-mode-faq), s'activa amb el botó «+» i l'opció «Estudiar». OpenAI adverteix que pot comportar-se de manera desigual entre converses, i l'alumnat el pot desactivar quan vulgui. Google ofereix a Gemini l'[Aprenentatge guiat](https://blog.google/intl/es-es/aprendizaje-guiado-en-gemini-comprender-mas-alla-de-las-respuestas/), que segons l'empresa busca «ajudar-te a construir una comprensió profunda en lloc de només obtenir respostes». Amb qualsevol assistent es poden escriure instruccions semblants: que no doni la solució, que faci una pregunta cada vegada i que torni l'estudiant al problema després d'un error.",
+        "El tercer és separar la tasca d'entendre de la de lliurar: la IA pot explicar un concepte amb altres paraules o plantejar preguntes, i quedar fora del producte que s'avalua. És el que va fer una escola d'idiomes amb un [decàleg d'usos adequats i inadequats](https://t.me/ChatGPTedu/54469): practicar converses, resoldre dubtes o revisar textos, sí; presentar com a propi un treball fet per la IA, no. I l'últim, el que més ensenyen els estudis: **comprovar el que s'ha après sense l'eina**, i no només al moment, amb una prova breu o una explicació oral dies després. És la manera de distingir una activitat que ha agradat d'una que ha ensenyat."
+      ]
+    }
+  ],
+  "claves": [
+    "La revisió de Stanford reuneix 52 estudis causals: fer servir la IA per entendre surt més ben parat que fer-la servir per produir el treball, però cap ús no millora l'aprenentatge de manera constant.",
+    "Que a l'alumnat li agradi una activitat amb IA no prova que aprengui més: l'efecte es mesura sense l'eina i dies després.",
+    "Un tutor que pregunta en lloc de respondre ajuda quan forma part d'una activitat dissenyada pel docent, no per si sol.",
+    "El Consell de la UE i la guia de l'INTEF apunten en la mateixa direcció: saber quan no fer servir la IA, fer visible el procés i practicar sense IA al principi.",
+    "Un docent pot començar sense cost: intent propi primer, mode d'estudi o instruccions de tutor, separar entendre de lliurar i comprovar sense l'eina."
+  ],
+  "relacionadas": [
+    {
+      "fecha": "2026-11-18",
+      "id": "stanford-evidencia-ia-escuela"
+    },
+    {
+      "fecha": "2026-11-19",
+      "id": "clark-kozma-medios-aprendizaje"
+    },
+    {
+      "fecha": "2026-11-20",
+      "id": "consejo-ue-competencias-ia"
+    }
+  ],
+  "fuentes": [
+    {
+      "titulo": "The Evidence Base on AI in K-12: A November 2026 Review (SCALE, Universitat de Stanford) (en anglès)",
+      "url": "https://scale.stanford.edu/ai/evidence-base-review/evidence-base-ai-k12-november-review"
+    },
+    {
+      "titulo": "Bastani i altres (2025). Generative AI without guardrails can harm learning: Evidence from high school mathematics. PNAS 122(26) (en anglès)",
+      "url": "https://doi.org/10.1073/pnas.2422633122"
+    },
+    {
+      "titulo": "OECD Digital Education Outlook 2026 (OCDE, PDF) (en anglès)",
+      "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/01/oecd-digital-education-outlook-2026_940e0dd8/062a7394-en.pdf"
+    },
+    {
+      "titulo": "OECD Digital Education Outlook 2026: how generative AI can support learning (plataforma europea de Competències i Ocupacions Digitals) (en anglès)",
+      "url": "https://digital-skills-jobs.europa.eu/en/latest/news/oecd-digital-education-outlook-2026-how-generative-ai-can-support-learning-when-used"
+    },
+    {
+      "titulo": "Asher, Cao i Carvalho (2026). Turning Errors into Successes: Designing LLM Tutoring Around Scaffolded Error Correction. arXiv:2611.20061 (Carnegie Mellon) (en anglès)",
+      "url": "https://arxiv.org/abs/2611.20061v1"
+    },
+    {
+      "titulo": "Clark, R. E. (1983). Reconsidering Research on Learning from Media. Review of Educational Research 53(4) (en anglès)",
+      "url": "https://doi.org/10.3102/00346543053004445"
+    },
+    {
+      "titulo": "Clark, R. E. (1994). Media will never influence learning. Educational Technology Research and Development 42(2) (en anglès)",
+      "url": "https://doi.org/10.1007/BF02299088"
+    },
+    {
+      "titulo": "Kozma, R. B. (1994). Will media influence learning? Reframing the debate. Educational Technology Research and Development 42(2) (en anglès)",
+      "url": "https://doi.org/10.1007/BF02299087"
+    },
+    {
+      "titulo": "Consejo de la UE: «Equipping Europeans for the age of AI: Council approves conclusions» (nota de premsa, 19-11-2026) (en anglès)",
+      "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/11/19/equipping-europeans-for-the-age-of-ai-council-approves-conclusions/"
+    },
+    {
+      "titulo": "Consejo de la UE: Proyecto de Conclusiones del Consejo sobre capacidades y competencias para interactuar con la inteligencia artificial (document 14902/26) (en castellà)",
+      "url": "https://data.consilium.europa.eu/doc/document/ST-14902-2026-INIT/es/pdf"
+    },
+    {
+      "titulo": "INTEF: Nueva versión de la «Guía sobre el uso de la inteligencia artificial en el ámbito educativo» (versió 2.0) (en castellà)",
+      "url": "https://intef.es/Noticias/nueva-version-de-la-guia-sobre-el-uso-de-la-inteligencia-artificial-en-el-ambito-educativo/"
+    },
+    {
+      "titulo": "Ditame da Comisión 4ª sobre o Proxecto de lei de educación dixital de Galicia (BOPG n.º 458, fascículo 2) (en gallec)",
+      "url": "https://www.parlamentodegalicia.es/sitios/web/BibliotecaBoletinsOficiais/B120458_2.pdf"
+    },
+    {
+      "titulo": "OpenAI: Introducing study mode (29-07-2025) (en anglès)",
+      "url": "https://openai.com/index/chatgpt-study-mode/"
+    },
+    {
+      "titulo": "OpenAI: Usar el Modo de estudio en ChatGPT (centre d'ajuda) (en castellà)",
+      "url": "https://help.openai.com/es-es/articles/11780217-chatgpt-study-mode-faq"
+    },
+    {
+      "titulo": "Google: Aprendizaje guiado en Gemini: comprender más allá de las respuestas (Maureen Heymans, 2-9-2025) (en castellà)",
+      "url": "https://blog.google/intl/es-es/aprendizaje-guiado-en-gemini-comprender-mas-alla-de-las-respuestas/"
+    }
+  ],
+  "mensaje": {
+    "grupo": "chatgpt",
+    "id": 54498
+  },
+  "comprobado": "Traducción del reportaje en castellano; comprobado allí.",
+  "repaso": [
+    "Traducción al catalán del reportaje en castellano; el repaso está en la versión original."
+  ],
+  "ilustracion": "Infografía con dos caminos que parten de un estudiante ante un asistente de IA. Arriba, «Entregar»: la IA produce el trabajo, la nota de práctica sube y, en la prueba sin IA, la barra baja (rótulo «Sin la herramienta: −17 %»). Abajo, «Entender»: intento propio, el asistente pregunta, el estudiante reintenta y acierta (rótulo «64 % de errores corregidos por uno mismo»), y en la prueba sin IA la barra se mantiene. Debajo, cuatro iconos con las recomendaciones: intento primero, tutor que pregunta, separar entender de entregar, comprobar sin IA.",
+  "ilustracion_alt": "Infografia: un estudiant davant d'un assistent d'IA amb dos camins. A dalt, «Lliurar»: la IA fa el treball i, sense l'eina, el resultat cau: «Sense l'eina: −17 %». A baix, «Entendre»: l'assistent pregunta i l'estudiant corregeix els seus errors: «64 % corregits sols». A sota, quatre recomanacions: «Intent propi», «Tutor pregunta», «Separar tasques» i «Comprovar sense IA»."
+}

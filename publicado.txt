@@ -197,3 +197,11 @@
 - pieza:2026-11-20/google-distritos-ia-buscador (novedades) Chicago estudia qué hacer si Google retira su buscador a los distritos que rechazan su IA
 - pieza:2026-11-20/manchester-festival-sin-ia (multimedia) El Manchester Animation Festival no aceptará películas hechas con IA generativa desde 2027
 - pieza:2026-11-20/trama-universos-variantes (vibecoding) Trama añade lecturas agrupadas por «universos» y versiones de distinta dificultad
+- pieza:2026-11-20/semana-del-repositorio (repositorio) Un puzle de trenes en catalán para planificar maniobras, nuevo en el repositorio — recursos con artículo: Maniobres · Cada moviment compta (https://ja.cat/maniobres)
+
+## 2026-11-21 (publicado el domingo 22 de noviembre de 2026)
+- pieza:2026-11-21/gemini-notebook-api-oficial (herramientas) Gemini Notebook ya tiene API oficial, aunque limitada y en versión preliminar
+- pieza:2026-11-21/android-distribucion-limitada-50 (vibecoding) Android permite repartir una app propia a 50 dispositivos sin pasar por Google Play
+- pieza:2026-11-21/gemini-exploraciones-inmersivas (multimedia) Gemini ofrece exploraciones inmersivas: recorridos visuales por temas, desde los cuásares al Imperio persa
+- pieza:2026-11-21/maquina-rube-goldberg-simple (vibecoding) Un simulador permite construir máquinas de Rube Goldberg y analizar sus palancas
+- breve: Google DeepMind ofrece, en inglés, una guía interactiva que explica con su modelo Gemma 4 

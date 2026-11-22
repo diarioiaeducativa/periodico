@@ -1,0 +1,92 @@
+{
+  "fecha": "2026-11-22",
+  "avisos": {
+    "chatgpt": {
+      "saludo": "Buenos días. Domingo de reportaje, con una pregunta de fondo sobre IA y aprendizaje.",
+      "puntos": [
+        "Reportaje del domingo: una revisión de la Universidad de Stanford con 52 estudios indica que la IA ayuda más a aprender cuando sirve para entender que cuando hace la tarea",
+        "Un manual argentino para profesorado de secundaria, nuevo en la Biblioteca digital, propone preguntar para qué y con qué consecuencias se usa la IA, también las ambientales y laborales",
+        "Google ha publicado una API oficial de Gemini Notebook, en versión preliminar y solo para cuentas personales, así que los centros con cuentas de Workspace aún no pueden usarla"
+      ]
+    },
+    "vce": {
+      "saludo": "Buenos días. Reportaje del domingo y dos novedades para quien crea aplicaciones.",
+      "puntos": [
+        "Reportaje del domingo sobre cómo usar la IA en clase: los estudios que reúne Stanford apuntan a que da mejor resultado para entender que para entregar la tarea hecha",
+        "Android permite repartir una aplicación propia a hasta 50 dispositivos sin pasar por Google Play, con una cuenta de distribución limitada que es gratuita",
+        "Mercè Feu ha creado, en catalán, un simulador de máquinas de Rube Goldberg donde el alumnado coloca piezas y analiza el punto de apoyo, la carga y la fuerza de cada una"
+      ],
+      "url": "https://diarioiaeducativa.github.io/n/21-vce.html"
+    },
+    "edumedia": {
+      "saludo": "Buenos días. El domingo trae reportaje y un recorrido visual por temas de estudio.",
+      "puntos": [
+        "Reportaje del domingo sobre lo que dicen 52 estudios: la IA da mejor resultado como apoyo para comprender un tema que para producir el trabajo del alumnado",
+        "Las exploraciones inmersivas de Gemini recorren por capas temas como los cuásares o la era mesozoica; en castellano, por ahora, solo están en inglés",
+        "En la viñeta de Tiza y Algoritmo, una aplicación para clase puede repartirse a 50 dispositivos, y falta saber cuántas tabletas del centro encienden"
+      ],
+      "url": "https://diarioiaeducativa.github.io/n/21-edumedia.html"
+    }
+  },
+  "instagram": "El reportaje de este domingo repasa lo que dicen 52 estudios reunidos por la Universidad de Stanford: la inteligencia artificial parece ayudar más a aprender cuando se usa para entender un tema que cuando hace la tarea, y plantea cómo llevarlo al aula sin coste. El número recoge además un manual argentino que invita al profesorado a preguntarse por los costes ambientales y laborales de la IA, la API oficial de Gemini Notebook, que de momento solo admite cuentas personales, y la posibilidad de repartir una aplicación propia a 50 dispositivos Android sin pasar por la tienda.",
+  "titulo": "Diario de IA Educativa · Núm. 21",
+  "fecha_texto": "Domingo, 22 de noviembre de 2026",
+  "url": "https://diarioiaeducativa.github.io/?n=21",
+  "imagen": "https://diarioiaeducativa.github.io/portadas/2026-11-21-es.jpg",
+  "personas": [
+    {
+      "id": 218499880,
+      "piezas": [
+        {
+          "es": {
+            "titular": "Un manual argentino lleva al aula el coste ambiental, laboral y social de la IA",
+            "url": "https://diarioiaeducativa.github.io/2026-11-21/manual-ia-aula-abya-yala.html"
+          },
+          "ca": {
+            "titular": "Un manual argentí porta a l'aula el cost ambiental, laboral i social de la IA",
+            "url": "https://diarioiaeducativa.github.io/ca/2026-11-21/manual-ia-aula-abya-yala.html"
+          },
+          "gl": {
+            "titular": "Un manual arxentino leva á aula o custo ambiental, laboral e social da IA",
+            "url": "https://diarioiaeducativa.github.io/gl/2026-11-21/manual-ia-aula-abya-yala.html"
+          },
+          "eu": {
+            "titular": "Argentinar eskuliburu batek AAren kostu ekologikoa, lan-kostua eta gizarte-kostua ikasgelara eramaten ditu",
+            "url": "https://diarioiaeducativa.github.io/eu/2026-11-21/manual-ia-aula-abya-yala.html"
+          },
+          "en": {
+            "titular": "An Argentine handbook brings the environmental, labour and social costs of AI into the classroom",
+            "url": "https://diarioiaeducativa.github.io/en/2026-11-21/manual-ia-aula-abya-yala.html"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5993963773,
+      "piezas": [
+        {
+          "es": {
+            "titular": "Un simulador permite construir máquinas de Rube Goldberg y analizar sus palancas",
+            "url": "https://diarioiaeducativa.github.io/2026-11-21/maquina-rube-goldberg-simple.html"
+          },
+          "ca": {
+            "titular": "Un simulador permet construir màquines de Rube Goldberg i analitzar-ne les palanques",
+            "url": "https://diarioiaeducativa.github.io/ca/2026-11-21/maquina-rube-goldberg-simple.html"
+          },
+          "gl": {
+            "titular": "Un simulador permite construír máquinas de Rube Goldberg e analizar as súas pancas",
+            "url": "https://diarioiaeducativa.github.io/gl/2026-11-21/maquina-rube-goldberg-simple.html"
+          },
+          "eu": {
+            "titular": "Simulagailu batean Rube Goldbergen makinak eraiki eta palankak azter daitezke",
+            "url": "https://diarioiaeducativa.github.io/eu/2026-11-21/maquina-rube-goldberg-simple.html"
+          },
+          "en": {
+            "titular": "A simulator lets you build Rube Goldberg machines and analyse their levers",
+            "url": "https://diarioiaeducativa.github.io/en/2026-11-21/maquina-rube-goldberg-simple.html"
+          }
+        }
+      ]
+    }
+  ]
+}

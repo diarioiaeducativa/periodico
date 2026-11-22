@@ -1,0 +1,61 @@
+{
+  "fecha": "2026-11-21",
+  "piezas": [
+    {
+      "id": "manual-ia-aula-abya-yala",
+      "seccion": "biblioteca",
+      "importancia": 2,
+      "grupo": "chatgpt",
+      "antetitulo": "Irakasleentzako eskuliburua",
+      "titular": "Argentinar eskuliburu batek AAren kostu ekologikoa, lan-kostua eta gizarte-kostua ikasgelara eramaten ditu",
+      "entradilla": "Bi ikertzailek Bigarren Hezkuntzako irakasleei proposatzen diete adimen artifiziala zertarako, nondik eta zer ondoriorekin erabiltzen den galdetzea, nola erabili erabaki aurretik. 2026ko eskuliburuak Latinoamerikako eta feminista den ikuspegia du abiapuntu.",
+      "cuerpo": [
+        "*Manual urgente sobre IA en el aula: miradas y análisis de la esfera digital desde Abya Yala* liburu digitala da, 56 orrikoa, 2026an Buenos Airesen argitaratua, General San Martín Unibertsitate Nazionaleko (UNSAM) Gizarte Digitalaren Ikasketa Zentroaren (CESDi) Miradas bildumaren barruan. Mariana Ferrarellik eta Natalia Corvalánek koordinatu eta sinatzen dute; hitzaurrea Flora Partenio zentroko koordinatzaileak idatzi du, eta 2026ko abuztuan datatua dago. «Abya Yala» da herri indigenek Amerikako kontinenteari ematen dioten izena, eta ikuspuntua adierazten du: Latinoamerika, ikuspegi feminista eta deskolonialekin. Bigarren Hezkuntzako irakasleei zuzenduta dago, eta ez du ezagutza teknikorik eskatzen.",
+        "Tesia da AA ez dela soilik tresna bat, enpresen, Estatuen, ikastetxeen eta irakasleen erabakien sare bat baizik. Horregatik gonbidatzen du galdetzera zer baldintzatan eta zer hezkuntza-proiekturekin txertatzen den. Horri gehitzen dio «eraginkortasunaren paradigmatik zaintzaren paradigmara pasatzea», eta horrekin ulertzen du loturei, ikasleen pribatutasunari eta irakaskuntzaren baldintzei arreta ematea. Posizio aitortua da, ez balantze neutroa: «hezkuntza-berrikuntzari buruzko diskurtso globalak tentsionatu» nahi ditu, hitzaurrearen arabera.",
+        "Sei kapituluek ikasgelarako gakoekin (edo «tips»ekin), «¿Sabías que…?» atal batekin eta baliabideekin amaitzen dira. Lehenengoak AA datuen, ereduen eta diseinu-erabakien sare gisa jorratzen du. Bigarrenak haren promesak eta metaforak aztertzen ditu (adimena, aurrerapena, mehatxua, ispilua), eta iragarki bat edo prentsa-ohar bat aztertzea proposatzen du: zer agintzen duen, zer arazo dagoela suposatzen duen eta zer uzten duen kanpoan. Hirugarrenak erakusten du algoritmoek nola erreproduzitzen dituzten desberdintasunak (COMPAS, itzulpen automatikoa, aurpegi-ezagutza), eta AAren enpresa handiak nork zuzentzen dituen ikertzea proposatzen du.",
+        "Laugarren kapitulua da materialena. 2024ko Monterreyko Teknologikoaren txosten bat aipatzen du, zeinaren arabera AA sortzaileari egindako eskaera batek web-bilaketa klasiko batek baino hamar aldiz elektrizitate gehiago kontsumitzen duen, eta datu-zentroen urari eta etiketatze-lan humanoari heltzen die. Adibide gisa, 2023ko kazetaritza-ikerketa bat jasotzen du: OpenAIk Kenian azpikontratatu zituen pertsonek ordubeteko 1,32 eta 2 dolar artean kobratzen zuten, gutxi gorabehera. Bigarren eskuko datuak dira, eta eskuliburuak ez ditu egiaztatzen; komeni da haien iturrietara jotzea ikasgelan erabili aurretik. Jarduera erabilgarri bat proposatzen du: galdera bera AA bati eta bilatzaile bati egin, eta konparatu iturriak, egiletzak eta datak bilatzen diren.",
+        "Bosgarren kapituluak gogorarazten du teknologiak berez ez duela ikaskuntza hobetzen, eta AArekin irakastea (sortutako testu bat aztertzea, prozesu historiko bati buruzko erantzunak alderatzea) eta AArentzat irakastea (sistemek zer datu biltzen dituzten ulertzea) bereizten ditu. UNICEF eta UNESCOren 2025eko Kids Online inkesta aipatzen du: Argentinan, nerabeen % 76k ChatGPT ezagutzen eta erabiltzen du, eta hiru pertsonatik bik eskolako zereginetan erabili du. Seigarrenak araudia errepasatzen du (Europako Erregelamendua, NBEren 2024ko ebazpena, Brasil, Uruguai, Txile, Buenos Aires probintzia). Erregelamenduaren irakurketa sintetikoa da: hezkuntza arrisku handikotzat aurkezten du osoko, testuak erabilera zehatzei aplikatzen dien arren; jatorrizkoak agintzen du.",
+        "Europako esparruen bila bazabiltza, egunkariak jada jaso zituen [EBko Kontseiluaren ondorioak AA gaitasunei buruz](pieza:2026-11-20/consejo-ue-competencias-ia), Europatik kanpoko teknologien mendekotasuna ere jorratzen dutenak. Beste ikuspegi batekin, hedabide- eta informazio-alfabetatzearenarekin, [UNESCOren bost unitateko proposamena 13 eta 15 urte bitarteko ikasleentzat](pieza:2026-11-12/unesco-ia-decides) dago. Eskuliburu honek beste galdera bat jartzen du lehen planoan: nork hartzen ditu bere gain AA funtzionatzeko kostuak.",
+        "Hasteko, hitzaurreak eta hasierako «iparrorratzak» adierazten dute kapitulu bakoitza zein kasutarako baliagarria den: lehenengoa prestakuntza-jardunaldi baterako, bigarrena herritartasun digitalerako, laugarrena ingurumen-hezkuntzarako eta seigarrena zuzendaritza-taldeentzat. Haren mugak jarrera zehatzeko eta Argentinan zentratutako lan batenak dira: ez da tresnen gida bat, eta ez ditu ikaskuntza-emaitzak ebaluatzen. Lizentziak, CC BY-NC-ND 3.0, partekatzea eta aipatzea baimentzen ditu, baina ez egokitzea."
+      ],
+      "documento": {
+        "titulo": "Manual urgente sobre IA en el aula: miradas y análisis de la esfera digital desde Abya Yala",
+        "autoria": "Mariana Ferrarelli eta Natalia Corvalán (koordinazioa); Flora Partenioren hitzaurrea. Centro de Estudios de la Sociedad Digital (CESDi), EIDAES-UNSAM",
+        "anyo": "2026",
+        "idioma": "gaztelania",
+        "licencia": "CC BY-NC-ND 3.0",
+        "url": ""
+      },
+      "fuentes": [
+        {"titulo": "Manual urgente sobre IA en el aula, ChatGPT-IA-edu taldeko Biblioteka digitalean (PDFa duen mezua) (gaztelaniaz)", "url": "https://t.me/ChatGPTedu/21753/54608"},
+        {"titulo": "Conclusiones del Consejo de la UE sobre competencias en IA (gaztelaniaz)", "url": "https://data.consilium.europa.eu/doc/document/ST-14902-2026-INIT/es/pdf"}
+      ],
+      "mensaje": {"grupo": "chatgpt", "id": 54608},
+      "comprobado": "Leído entero el texto completo del PDF de la biblioteca (56 páginas: prólogo, introducción, «brújula», seis capítulos, cierre y glosario) y contrastado en el repaso con cada dato del artículo: autoría y coordinación, prólogo de agosto de 2026, citas literales, cifras (diez veces más electricidad, 1,32 a 2 dólares por hora, 76 % y dos de cada tres, que son del manual y este toma de otras fuentes, y así se dice), actividades y licencia. La ficha enlaza a un archivo de Google Drive que WebFetch no deja leer (solo muestra «MANUAL IA_CESDi_EIDAES_VF.pdf») y las búsquedas del repaso tampoco localizaron el manual en un sitio oficial del CESDi o la UNSAM; por eso `documento.url` queda vacío. El enlace del Consejo de la UE abre (PDF de 2026); el mensaje de Telegram no se puede ver con WebFetch. La lectura del Reglamento europeo de IA es del manual; que el texto aplica el alto riesgo a usos concretos de la educación es conocimiento general, no se ha reabierto el reglamento. Enlaces a la pieza del Consejo de la UE y a la de la UNESCO: claves en publicado.txt; de la de la UNESCO se ha leído su titular y entradilla (guía complementaria del currículo de alfabetización mediática e informacional).",
+      "ilustracion_alt": "Geruzen eskema bat: «AA laguntzailea» errotulua duen pantaila bat, «Erabakiak», «Datu-zentroak» eta «Etiketatzea» izeneko hiru geruza pilatuen gainean dago, eta lupa bat haietatik jaisten da, gezi gorri baten ondoan eta «Zer ondoriorekin?» galderarekin.",
+      "ilustracion": "Esquema de capas, de la superficie a la base: una pantalla con un asistente de IA y debajo, apiladas, las capas ocultas que lo sostienen (decisiones de diseño, centros de datos con agua y electricidad, personas que etiquetan datos), con una lupa que baja por ellas y la pregunta «¿para qué, desde dónde y con qué consecuencias?»."
+    }
+  ],
+  "ya_contado": [
+    {
+      "mensaje": {"grupo": "chatgpt", "id": 54594},
+      "fecha": "2026-11-20",
+      "id": "consejo-ue-competencias-ia",
+      "titular": "El Consejo de la UE aprueba conclusiones sobre las competencias de la ciudadanía en IA",
+      "motivo": "Es el mismo documento (14902/26, proyecto de conclusiones del Consejo): la pieza lo enlaza como fuente y su campo «comprobado» dice que se completó el 21-11-2026 con el texto leído entero en su PDF oficial. Revisado contra el texto completo de la entrada (53 puntos): la pieza recoge las capacidades nuevas, los riesgos, la evaluación, la formación del profesorado, las políticas de centro, DigComp 3.0 y el marco OCDE-UE, la soberanía digital y las peticiones a la Comisión. Quedan sin tocar apartados menores (educación infantil, familias, FP y universidad, aprendizaje permanente, inclusión), que no justifican un segundo artículo."
+    }
+  ],
+  "descartado": [],
+  "repaso": [
+    "Entradilla: «El texto, de agosto de 2026» pasa a «El manual, de 2026»: solo el prólogo está fechado en agosto.",
+    "Cuerpo, párrafo 1: la editorial pasa a «colección Miradas del CESDi» (la ficha catalográfica pone a Florencia Partenio como editora); el prólogo se atribuye a Flora Partenio, coordinadora del centro.",
+    "Cuerpo, párrafo 2: «el giro lo resume en…» se corrige, porque la frase del paradigma del cuidado es un desplazamiento distinto de la pregunta por las condiciones (capítulo 5); y la cita «qué puede hacer la inteligencia artificial por la educación» se parafrasea para no pasar de dos citas.",
+    "Cuerpo, párrafo 3: no todos los capítulos terminan con «claves para el aula» (el 3 trae «Tips para el aula»), y COMPAS no es «el sistema judicial estadounidense»: es una herramienta usada en él.",
+    "Cuerpo, párrafo 4: añadido «aproximadamente» a la franja de 1,32 a 2 dólares, como dice el manual; «comparar relatos de un mismo hecho histórico» pasa a «respuestas sobre un mismo proceso histórico»; frases del reglamento europeo ajustadas.",
+    "Párrafo de enlaces: quitada la afirmación de que ni el Consejo de la UE ni la UNESCO desarrollan la pregunta sobre quién paga los costes (no comprobada, la de la UNESCO ni siquiera se había leído); la relación que queda es verificable. El enfoque de la guía de la UNESCO se precisa con su entradilla.",
+    "Ilustración: no eran seis peldaños (la lista tenía cuatro elementos) y la pregunta no es del manual; ahora, «para qué, desde dónde y con qué consecuencias» (capítulo 1).",
+    "Extensión: recortada de unas 840 a unas 670 palabras (el borrador pasaba de 700).",
+    "documento.url sigue vacío: no se localizó una fuente oficial del manual.",
+    "ya_contado: el Consejo de la UE (mensaje 54594) se mantiene; la pieza leyó el PDF entero y cubre lo central. Su «comprobado» arrastra todavía la frase «el PDF no se pudo leer» de la primera versión, contradicha por el añadido del 21-11 (no se toca, está fuera de biblioteca/)."
+  ]
+}

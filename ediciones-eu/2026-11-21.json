@@ -1,0 +1,120 @@
+{
+  "fecha": "2026-11-21",
+  "hay_edicion": true,
+  "motivo": "Día normal. ChatGPT-IA-edu gira en torno a la API de Gemini Notebook; Vibe Coding Educativo aporta la distribución limitada de Android y un simulador compartido; EduMedia-IAG, las exploraciones inmersivas de Gemini. Lo del Consejo de la UE, Chicago, Manchester, Trama, Maniobres y Genie 4 ya está publicado.",
+  "piezas": [
+    {
+      "id": "gemini-notebook-api-oficial",
+      "seccion": "herramientas",
+      "importancia": 1,
+      "grupo": "chatgpt",
+      "antetitulo": "Koadernoak automatizatzea",
+      "titular": "Gemini Notebookek API ofiziala du jada, mugatua eta aurrebertsioan bada ere",
+      "entradilla": "Koadernoak sortzeko eta iturriak gehitzeko aukera ematen du beste programa batzuetatik, baina kontu pertsonalekin soilik. Kode-liburutegi ez-ofizial batek gehiago egiten du, baina ohartarazi gabe utz diezaioke funtzionatzeari.",
+      "cuerpo": [
+        "Googlek Gemini Notebook-en APIa argitaratu du [garatzaileentzako dokumentazioan](https://developers.google.com/notebook/docs). Gemini Notebook NotebookLM zen lehen, igotzen zaizkion iturrietatik abiatuta erantzuten duen laguntzailea. API bat beste programa batzuek zerbitzu bat haren webgunera sartu gabe erabiltzeko bidea da. Dokumentazioak berak dioenez, «sarbide aurreratuan» (aurrebista publikoan) dago, eta oraindik ez ditu Google Workspace kontuak onartzen, ikastetxeek erabili ohi duten kontu mota: kontu pertsonalak soilik.",
+        "Horrekin koadernoak sortu, zerrendatu eta eguneratu daitezke, eta iturriak gehitu: web-orriak, YouTubeko bideoak, testua, Markdown eta PDF, dokumentu, audio eta irudi bezalako fitxategiak. Dokumentazioak MCP zerbitzari bat ere aipatzen du, zerbitzua kodea idazten duten AA laguntzaileekin lotzeko bide bat.",
+        "ChatGPT-IA-edu taldean, berrikuntza hori Geminirekin sortutako irakaskuntza-erabilerako ideiekin batera partekatu zen, hala nola ikastetxeko dokumentuekin berez eguneratzen den koaderno batekin edo ikasgela birtualera bidalitako audio-laburpenekin. Ideia horiek proposamenak dira, ez frogatutako funtzioak; hainbatek dokumentazioak jasotzen ez dituen eragiketak (galdetzea, audioak sortzea) beharko lituzkete.",
+        "Taldean, koadernoak API ez-ofizial batekin jada nola automatizatzen diren ere azaldu zen; partekatutako alderaketak [notebooklm-py](https://github.com/teng-lin/notebooklm-py) aipatzen du, komunitateak egindako kode-liburutegi bat. Haren aurkezpenak berak (README fitxategiak) ohartarazten du «dokumentatu gabeko Google APIetan» oinarritzen dela, ohartarazi gabe alda daitezkeenak, eta batez ere prototipoetarako eta proiektu pertsonaletarako balio duela. Adierazitako jarrera, oraingoz, API ofizialera pasatu beharrean liburutegi horrekin jarraitzea izan zen. Workspace kontuak dituen ikastetxe batek ezin du ofiziala erabili oraingoz.",
+        "Egunkariak [argitaratu zuen](pieza:2026-11-17/gemini-notebook-sitios) Gemini Notebook-en beste berrikuntza bat: koaderno bat webgune interaktibo bihurtzea."
+      ],
+      "fuentes": [
+        {"titulo": "Gemini Notebook-en APIaren dokumentazioa (Google) (ingelesez)", "url": "https://developers.google.com/notebook/docs"},
+        {"titulo": "notebooklm-py (kode-liburutegi ez-ofiziala) (ingelesez)", "url": "https://github.com/teng-lin/notebooklm-py"}
+      ],
+      "mensaje": {"grupo": "chatgpt", "id": 54598},
+      "comprobado": "Documentación de Google abierta: nombre, estado «Early Access Public Preview», solo cuentas personales, operaciones y servidor MCP. README de notebooklm-py abierto: no oficial, APIs no documentadas, aviso de roturas, recomendado para prototipos y proyectos personales. Mensaje 54598 comprobado en Telegram. Los usos docentes se atribuyen a ideas del grupo, no comprobadas. Se ha quitado la frase que daba por hecho que había que esperar a que la oficial admitiera Workspace.",
+      "ilustracion": "Esquema de dos puertas a un mismo cuaderno: una oficial, con candado y cartel «solo cuentas personales», y otra lateral, no oficial, con un cartel de «puede romperse».",
+      "ilustracion_alt": "Koaderno beranterako bi bideren eskema: goikoak, «API ofiziala» errotulua duenak, giltzarrapo batetik pasatzen da eta «Pertsonalak soilik» errotulua darama; behekoak, «Ez-ofiziala» errotulua duenak, marra etenezko gorriz doa eta «Hautsi daiteke» errotulua darama. Eskuinean, koadernoa, «Koadernoa» errotuluarekin.",
+      "grafico": null
+    },
+    {
+      "id": "android-distribucion-limitada-50",
+      "seccion": "vibecoding",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Ikasgelarako aplikazioak",
+      "titular": "Androidek 50 gailuri arte partekatzen uzten du norberaren aplikazioa, Google Play gabe",
+      "entradilla": "Banaketa mugatuko kontua doakoa da, eta ikasgelarako edo talde txiki baterako aplikazioak sortzen dituzten pertsonentzat pentsatuta dago.",
+      "cuerpo": [
+        "[Googlek garatzaileentzat duen gidaren](https://developer.android.com/developer-verification/guides/limited-distribution?hl=es-419) arabera, banaketa mugatuko kontu batek aplikazioak erregistratzeko eta 50 gailuri arte partekatzeko aukera ematen du, betiere gailuen erabiltzaileek berariaz baimendutakoak. Doako kontu mota bat da, zaletuentzat edo ikasten ari direnentzat eta ikasgelako lanetarako pentsatua. Vibe Coding Educativo taldean esan zen muga lehen 20 gailukoa zela; gaur egungo gidak 50eko kopurua soilik jasotzen du.",
+        "Banaketak QR kodeen edo estekaren bidezko berrespen-prozesu batekin funtzionatzen du: telefono mugikorraren edo tabletaren jabeak baimena ematen du gailuan bertan, eta gailua Androiden garatzaile-kontsolan erregistratzen da. Horrela, talde baterako egindako aplikazio bat ikasleen mugikorretan edo ikastetxeko tabletetan proba daiteke, dendatik pasatu gabe.",
+        "Baldintzak badaude: bi urratseko egiaztapena duen Google kontu bat, lotutako Google ordainketa-profil bat (izen legala eta helbidea adierazteko balio duena) eta harremanetarako posta elektroniko bat. Ez da nortasun-agiririk eskatzen. Aplikazio bat ikasleei banatu aurretik, komeni da kontuan hartzea ikasleen zer datu gordetzen dituen, aplikazioa nola egin den araberakoa dena.",
+        "[Google AI Studiok sortzen duen aplikazio osoaren](pieza:2026-11-19/ai-studio-apps-android) bide desberdina da; hura Google Playtik instalatzen da."
+      ],
+      "fuentes": [
+        {"titulo": "Android gailuetan banaketa mugaturako izena eman (Android Developers) (gaztelaniaz)", "url": "https://developer.android.com/developer-verification/guides/limited-distribution?hl=es-419"}
+      ],
+      "mensaje": {"grupo": "vce", "id": 15187},
+      "comprobado": "Guía oficial abierta: hasta 50 dispositivos autorizados, gratuita, QR o enlaces, requisitos, sin documento de identidad. El paso de 20 a 50 solo lo afirma el mensaje del grupo (comprobado en Telegram); la guía no menciona la cifra anterior, por eso se atribuye al grupo. Titular acortado de 103 a menos de 90 caracteres. Enlace a la pieza de AI Studio de 2026-11-19 comprobado en publicado.txt.",
+      "ilustracion": null,
+      "ilustracion_alt": "QR kode bat, «QR kodea» errotuluarekin, geziz mugikor-koadrikula baterantz doana, eta ondoren etenpuntuak eta «Gehienez 50 gailu» errotulua; behean, gurutze gorri bat eta «Google Play gabe» errotulua.",
+      "grafico": null
+    },
+    {
+      "id": "gemini-exploraciones-inmersivas",
+      "seccion": "multimedia",
+      "importancia": 3,
+      "grupo": "edumedia",
+      "antetitulo": "Gemini ikasteko",
+      "titular": "Geminik urritik gaiaren araberako ikus-ibilbide interaktiboak eskaintzen ditu ikasteko",
+      "entradilla": "Esplorazio murgilgarriak aurrez prestatutako gaien liburutegi bat dira, geruzaka egiten dena. Taldearen arabera, ezin dira gai propioak sortu, eta esperientzia sei hizkuntzatan soilik dago, gaztelaniarik gabe.",
+      "cuerpo": [
+        "Googlek [urriaren 28an aurkeztu zuen](https://blog.google/innovation-and-ai/products/gemini-app/immersive-explorations-student-hub/) esplorazio murgilgarrien liburutegi bat Gemini aplikazioan: gai bat geruzaka zeharkatzen duten esperientzia bisual eta interaktiboak, sistema mikroskopikoetatik espazio sakonera arte. Geminiren ikasleentzako atalatik iristen da haietara, eta Googlek iragartzen du laster elkarrizketa baten barruan ere irekitzeko aukera izango dela, eta audio-narrazioa izango dutela.",
+        "EduMedia-IAG taldean azaroaren 21ean komentatu zen adibideak ikusten zirela, baina ezin zela esplorazio propiorik sortu. Taldean partekatutako pantaila-argazkian, liburutegiak gai hauek biltzen ditu: kuasarrak, tximistaren fisika, Persiar Inperioa edo Mesozoikoa. Googleren artikuluak ez du esplorazio propioak sortzea aipatzen.",
+        "Googleren artikulu beraren arabera, esperientzia ingelesez, indonesieraz, hindiz, Brasilgo portugesez, frantsesez eta txinera sinplifikatuz dago; gainerako hizkuntzetan, gaztelania barne, ingelesez soilik dago oraingoz. Ikasgelan, horrek baldintzatzen du ingelesa irakurtzen ez duten ikasleekin erabiltzea."
+      ],
+      "fuentes": [
+        {"titulo": "Esplorazio murgilgarriak espazioan Geminiren ikasleentzat (Google) (ingelesez)", "url": "https://blog.google/innovation-and-ai/products/gemini-app/immersive-explorations-student-hub/"}
+      ],
+      "mensaje": {"grupo": "edumedia", "id": 12384},
+      "comprobado": "Entrada oficial del blog de Google abierta: fecha 28 de octubre de 2026, funcionamiento, idiomas, narración en audio próxima, acceso desde el hub de estudiantes, disponible para todos los usuarios. Mensaje 12384 comprobado en Telegram. Los temas (cuásares, Imperio persa, mesozoica) salen de las capturas y del tuit del grupo; el blog cita otros ejemplos. Que no se pueden crear propias lo dice el grupo, no la entrada: se atribuye en la entradilla. «Interfaz» sustituido por «experiencia», que es lo que dice la fuente. Sin pieza anterior en el diario.",
+      "ilustracion": null,
+      "ilustracion_alt": "Ezkerrean, zirkulu zentrukideak zeharkatzen diren geruzak balira bezala, «Geruzaka» errotuluarekin; eskuinean, lur-globo bat marra gorri batez gurutzatuta, «6 hizkuntza» eta «Gaztelaniarik ez» errotuluekin.",
+      "grafico": null
+    },
+    {
+      "id": "maquina-rube-goldberg-simple",
+      "seccion": "vibecoding",
+      "importancia": 3,
+      "grupo": "vce",
+      "antetitulo": "Komunitatetik",
+      "titular": "Simulagailu batean Rube Goldbergen makinak eraiki eta palankak azter daitezke",
+      "entradilla": "Ikasleek piezak taula batean jartzen dituzte, katea martxan jartzen dute eta makina bakoitzaren euskarri-puntua, karga eta indarra berrikusten dituzte. Katalanez dago.",
+      "cuerpo": [
+        "Mercè Feuk Vibe Coding Educativo taldean partekatu du bere [Rube Goldbergen makinen simulagailua](https://mfeu-edu.github.io/simulador-maquines-simples/). Rube Goldbergen makina bat elkarri erantzuten dioten piezen kate bat da. Orrian, katalanez, piezak jarri, biratu eta bikoiztu egiten dira laukiak metro bat adierazten duen koadrikula batean, eta «Engega» sakatzen da simulazioa ikusteko.",
+        "Azterketa-tresna batek makina sinple zeintzuk erabili diren adierazten du, eta pieza bakoitzean euskarri-puntua, karga eta aplikatutako indarra markatzen ditu, jokotik fisikara pasatzeko aukera ematen duena. Simulagailuak makina esteka gisa gordetzeko eta gero kargatzeko aukera ematen du, eta «praktikatzeko hasierako erronkak» atal bat du. Egileak Bigarren Hezkuntzako Zientzia eta Teknologiarako proposatzen du.",
+        "Kodea software librea da, AGPL v3 lizentziarekin. Orriak ez du esaten daturik gordetzen duen, ezta zein den ere."
+      ],
+      "fuentes": [
+        {"titulo": "Màquina de Rube Goldberg (amb màquines simples) (katalanez)", "url": "https://mfeu-edu.github.io/simulador-maquines-simples/"}
+      ],
+      "mensaje": {"grupo": "vce", "id": 15196},
+      "comprobado": "Página de la aplicación abierta: descripción, controles («Engega»), análisis de palancas, enlace para guardar, AGPL v3. Mensaje 15196 comprobado en Telegram. La página no indica autoría ni nivel: salen del mensaje de la propia Mercè Feu, que comparte su simulador. Quitado «No hace falta iniciar sesión» (la página no lo dice) y rebajados los retos: la página solo muestra el encabezado, sin retos listados. Sin pieza anterior ni mensajes previos sobre él.",
+      "ilustracion": null,
+      "ilustracion_alt": "Palanka bat euskarri-puntu hirukoitz baten gainean, «Euskarria» errotuluarekin; ezkerrean, beherantz doan gezi gorri bat «Indarra» errotuluarekin, eta eskuinean, palankaren gaineko bloke bat «Karga» errotuluarekin.",
+      "grafico": null
+    }
+  ],
+  "breves": [
+    {
+      "texto": "Google DeepMindek, ingelesez, gida interaktibo bat eskaintzen du, bere Gemma 4 ereduarekin azaltzen duena hizkuntza-eredu batek, ChatGPTren atzean dagoen programa motak, testu batetik abiatuta datorren zatia nola sortzen duen. Bost etapa zeharkatzen ditu, testua zatitzetik txat-formatura arte.",
+      "url": "https://gemma.ai/learn/how-llms-work/",
+      "grupo": "chatgpt",
+      "mensaje": {"grupo": "chatgpt", "id": 54610}
+    }
+  ],
+  "descartado": [
+    "Aviso de World Labs sobre el cierre de Marble (8 de enero de 2027): solo consta en un correo reenviado en el grupo; busqué el anuncio en la web y en la prensa y no apareció, así que no se publica.",
+    "Consejo de la UE, Chicago y Google, festival de Manchester, Trama, Maniobres y Genie 4: ya publicados el 21 de noviembre o antes; sin novedad real.",
+    "Documentos de la Biblioteca digital (conclusiones del Consejo, manual de Abya Yala): tienen su sección.",
+    "Comentarios sobre el uso de varias lenguas en el grupo, mensajes de agradecimiento, avisos del bot antiuserbots y uso de cuotas de Claude y AI Studio: administración del grupo o charla personal."
+  ],
+  "repaso": [
+    "Gemini Notebook: quitada la frase que presentaba como hecho que había que esperar a que la API oficial admita Workspace; aclarado que la librería citada sale de la comparativa del grupo.",
+    "Android: titular acortado de 103 a unos 83 caracteres.",
+    "Exploraciones inmersivas: la entradilla atribuye al grupo que no se pueden crear propias y dice «experiencia» en vez de «interfaz».",
+    "Rube Goldberg: quitado «No hace falta iniciar sesión» (no consta) y matizados los retos iniciales (solo hay el encabezado).",
+    "Breve de Gemma 4 y resto de datos confirmados con sus fuentes y con los mensajes."
+  ]
+}

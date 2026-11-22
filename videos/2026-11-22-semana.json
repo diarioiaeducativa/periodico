@@ -1,0 +1,154 @@
+{
+  "id": "2026-11-22-semana",
+  "tipo": "semana",
+  "publicado": "2026-11-22",
+  "dia": "2026-11-21",
+  "duracion": 68,
+  "titulo": {
+    "es": "La semana en vídeo: 16 – 22 nov 2026",
+    "ca": "La setmana en vídeo: 16 – 22 nov 2026",
+    "gl": "A semana en vídeo: 16 – 22 nov 2026",
+    "en": "The week on video: 16 – 22 Nov 2026",
+    "eu": "Astea bideoan: 16 – 22 aza 2026"
+  },
+  "descripcion": {
+    "es": "Lo más destacado de la semana en el Diario de IA Educativa: de la declaración del uso de IA a la ley gallega, con el reportaje sobre cuándo ayuda la IA a aprender.",
+    "ca": "El més destacat de la setmana al Diario de IA Educativa: de la declaració de l'ús d'IA a la llei gallega, amb el reportatge sobre quan ajuda la IA a aprendre.",
+    "gl": "O máis destacado da semana no Diario de IA Educativa: da declaración do uso de IA á lei galega, coa reportaxe sobre cando axuda a IA a aprender.",
+    "en": "The week's highlights in the Diario de IA Educativa: from declaring AI use to Galicia's new law, with the feature on when AI helps learning.",
+    "eu": "Astearen gertakari nagusiak Diario de IA Educativa egunkarian: AA erabilera aitortzetik Galiziako legera, eta AAk noiz laguntzen duen ikasten azaltzen duen erreportajea."
+  },
+  "pantalla": {
+    "es": [
+      "La semana. Lo más destacado del Diario de IA Educativa. 16 – 22 nov 2026.",
+      "Lunes 16. Declarar el uso de IA. Piden aclarar qué usos de IA son aceptables. Plantilla de tres frases para declarar el uso y remisión a la guía del INTEF",
+      "Lunes 16. Seedream 5.5. Seedream 5.5 promete 100 rondas de edición estables. Genera imágenes con canal alfa, con transparencia total y parcial",
+      "Martes 17. Realidad aumentada. EyeJack da movimiento a una imagen en el móvil. El plan gratuito permite 100 visualizaciones al mes y 30 segundos por obra",
+      "Miércoles 18. Gemini Notebook. Gemini Notebook crea sitios web interactivos. Basta escribir «make me a site» en el chat; limitado a mayores de 18 años",
+      "Jueves 19. Ley en Galicia. Galicia aprueba una ley sobre móviles e IA en las aulas. Los centros públicos solo podrán usar sistemas de IA de un catálogo oficial",
+      "Viernes 20. Privacidad de Gemini. Gemini separará el historial del permiso para entrenar. Con el historial activado, la actividad se elimina a los 18 meses",
+      "Sábado 21. Consejo de la UE. La UE aprueba conclusiones sobre competencias en IA. Piden saber cuándo no usar la IA; son orientaciones, no obligan a los centros",
+      "Domingo 22. Android sin Play. Android permite compartir una app con 50 dispositivos. La cuenta de distribución limitada es gratuita y se confirma con códigos QR",
+      "Domingo 22. Entender o entregar. La IA ayuda más a aprender si sirve para entender. Lo útil: comprobar lo aprendido sin la herramienta, días después",
+      "Cada noticia, completa y con sus fuentes. diarioiaeducativa.github.io. Cada mañana a las 7:00."
+    ],
+    "ca": [
+      "La setmana. El més destacat del Diari d'IA Educativa. 16 – 22 nov 2026.",
+      "Dilluns 16. Declarar l'ús d'IA. Demanen aclarir quins usos d'IA són acceptables. Plantilla de tres frases per declarar l'ús i remissió a la guia de l'INTEF",
+      "Dilluns 16. Seedream 5.5. Seedream 5.5 promet 100 rondes d'edició estables. Genera imatges amb canal alfa, amb transparència total i parcial",
+      "Dimarts 17. Realitat augmentada. EyeJack dona moviment a una imatge al mòbil. El pla gratuït permet 100 visualitzacions al mes i 30 segons per obra",
+      "Dimecres 18. Gemini Notebook. Gemini Notebook crea llocs web interactius. N'hi ha prou d'escriure «make me a site» al xat; només majors de 18 anys",
+      "Dijous 19. Llei a Galícia. Galícia aprova una llei sobre mòbils i IA a les aules. Els centres públics només podran usar sistemes d'IA d'un catàleg oficial",
+      "Divendres 20. Privadesa de Gemini. Gemini separarà l'historial del permís per entrenar. Amb l'historial activat, l'activitat s'elimina als 18 mesos",
+      "Dissabte 21. Consell de la UE. La UE aprova conclusions sobre competències en IA. Demanen saber quan no usar la IA; són orientacions, no obliguen els centres",
+      "Diumenge 22. Android sense Play. Android permet compartir una app amb 50 dispositius. El compte de distribució limitada és gratuït i es confirma amb codis QR",
+      "Diumenge 22. Entendre o lliurar. La IA ajuda més a aprendre si serveix per entendre. Cal comprovar el que s'ha après sense l'eina, dies després",
+      "Cada notícia, completa i amb les fonts. diarioiaeducativa.github.io. Cada matí a les 7:00."
+    ],
+    "gl": [
+      "A semana. O máis destacado do Diario de IA Educativa. 16 – 22 nov 2026.",
+      "Luns 16. Declarar o uso de IA. Piden aclarar que usos de IA son aceptables. Modelo de tres frases para declarar o uso e remisión á guía do INTEF",
+      "Luns 16. Seedream 5.5. Seedream 5.5 promete 100 roldas de edición estables. Xera imaxes con canle alfa, con transparencia total e parcial",
+      "Martes 17. Realidade aumentada. EyeJack dá movemento a unha imaxe no móbil. O plan gratuíto permite 100 visualizacións ao mes e 30 segundos por obra",
+      "Mércores 18. Gemini Notebook. Gemini Notebook crea sitios web interactivos. Abonda con escribir «make me a site» no chat; só para maiores de 18 anos",
+      "Xoves 19. Lei en Galicia. Galicia aproba unha lei sobre móbiles e IA nas aulas. Os centros públicos só poderán usar sistemas de IA dun catálogo oficial",
+      "Venres 20. Privacidade de Gemini. Gemini separará o historial do permiso para adestrar. Co historial activado, a actividade elimínase aos 18 meses",
+      "Sábado 21. Consello da UE. A UE aproba conclusións sobre competencias en IA. Piden saber cando non usar a IA; son orientacións, non obrigan os centros",
+      "Domingo 22. Android sen Play. Android permite compartir unha app con 50 dispositivos. A conta de distribución limitada é gratuíta e confírmase con códigos QR",
+      "Domingo 22. Entender ou entregar. A IA axuda máis a aprender se serve para entender. Convén comprobar o aprendido sen a ferramenta, días despois",
+      "Cada noticia, completa e coas súas fontes. diarioiaeducativa.github.io. Cada mañá ás 7:00."
+    ],
+    "en": [
+      "The week. The highlights of Educational AI Daily. 16 – 22 Nov 2026.",
+      "Monday 16. Declaring AI use. Call for clarity on which AI uses are acceptable. A three-sentence template for declaring use, and a pointer to INTEF's guide",
+      "Monday 16. Seedream 5.5. Seedream 5.5 promises 100 stable editing rounds. Generates images with an alpha channel, fully or partly transparent",
+      "Tuesday 17. Augmented reality. EyeJack brings an image to life on a phone. The free plan allows 100 views a month and 30 seconds per work",
+      "Wednesday 18. Gemini Notebook. Gemini Notebook builds interactive websites. Just type ‘make me a site’ in the chat; for people aged 18 and over",
+      "Thursday 19. Galician law. Galicia passes a law on phones and AI in classrooms. Public schools may only use AI systems from an official catalogue",
+      "Friday 20. Gemini privacy. Gemini will separate history from training consent. With history on, activity is deleted automatically after 18 months",
+      "Saturday 21. EU Council. The EU approves conclusions on AI skills. Calls for knowing when not to use AI; guidance, not an obligation for schools",
+      "Sunday 22. Android without Play. Android lets you share an app with 50 devices. The limited-distribution account is free and uses QR codes to confirm",
+      "Sunday 22. Understand or submit. AI helps learning more when it aids understanding. Check what was learned without the tool, days later",
+      "Every story, in full and with its sources. diarioiaeducativa.github.io. Every morning at 7:00 (Spain)."
+    ],
+    "eu": [
+      "Astea. Hezkuntzako AA Egunkariaren nabarmenena. 16 – 22 aza 2026.",
+      "Astelehena 16. AA erabilera aitortu. Zein AA erabilera onargarri diren argitzea eskatu dute. Hiru esaldiko txantiloia erabilera aitortzeko, eta INTEFen gidarako lotura",
+      "Astelehena 16. Seedream 5.5. Seedream 5.5: 100 edizio-txanda egonkor. Alfa kanaleko irudiak sortzen ditu, gardentasun osoz eta partzialez",
+      "Asteartea 17. Errealitate areagotua. EyeJack-ek irudi bati mugimendua ematen dio mugikorrean. Doako planak hilean 100 bistaratze eta lan bakoitzeko 30 segundo onartzen ditu",
+      "Asteazkena 18. Gemini Notebook. Gemini Notebook-ek webgune interaktiboak sortzen ditu. «make me a site» idatzi behar da txatean; 18 urtetik gorakoentzat soilik",
+      "Osteguna 19. Galiziako legea. Galiziak gelako mugikorrak eta AA arautzen ditu. Ikastetxe publikoek katalogo ofizial bateko AA sistemak soilik erabiliko dituzte",
+      "Ostirala 20. Gemini pribatutasuna. Gemini: historiala eta entrenamendua bereiziko dira. Historiala aktibatuta dagoenean, jarduera 18 hilabetera ezabatzen da",
+      "Larunbata 21. EBko Kontseilua. EBk AAren gaineko gaitasunei buruzko ondorioak onartu ditu. AA noiz ez erabili jakitea eskatzen da; orientabideak dira, ez betebeharrak",
+      "Igandea 22. Android, Play gabe. Androidek app bat 50 gailurekin partekatzen uzten du. Banaketa mugatuko kontua doakoa da eta QR kodeekin berresten da",
+      "Igandea 22. Ulertu ala entregatu. AAk gehiago laguntzen du ikasten ulertzeko balio badu. Ikasitakoa tresnarik gabe egiaztatu, egun batzuk geroago",
+      "Berri bakoitza, osorik eta bere iturriekin. diarioiaeducativa.github.io. Goizero 7:00etan."
+    ]
+  },
+  "archivos": {
+    "es": {
+      "video": "2026-11-22-semana-es.mp4",
+      "poster": "2026-11-22-semana-es.jpg"
+    },
+    "ca": {
+      "video": "2026-11-22-semana-ca.mp4",
+      "poster": "2026-11-22-semana-ca.jpg"
+    },
+    "gl": {
+      "video": "2026-11-22-semana-gl.mp4",
+      "poster": "2026-11-22-semana-gl.jpg"
+    },
+    "en": {
+      "video": "2026-11-22-semana-en.mp4",
+      "poster": "2026-11-22-semana-en.jpg"
+    }
+  },
+  "piezas": [
+    {
+      "fecha": "2026-11-15",
+      "id": "declarar-uso-ia-transparencia"
+    },
+    {
+      "fecha": "2026-11-15",
+      "id": "seedream-55"
+    },
+    {
+      "fecha": "2026-11-16",
+      "id": "eyejack-creator-realidad-aumentada"
+    },
+    {
+      "fecha": "2026-11-17",
+      "id": "gemini-notebook-sitios"
+    },
+    {
+      "fecha": "2026-11-18",
+      "id": "galicia-ley-educacion-digital"
+    },
+    {
+      "fecha": "2026-11-19",
+      "id": "gemini-historial-entrenamiento"
+    },
+    {
+      "fecha": "2026-11-20",
+      "id": "consejo-ue-competencias-ia"
+    },
+    {
+      "fecha": "2026-11-21",
+      "id": "android-distribucion-limitada-50"
+    },
+    {
+      "fecha": "2026-11-21",
+      "id": "ia-aprender-entender-o-entregar"
+    }
+  ],
+  "estilo": {
+    "tempo": 112,
+    "tonica": "mi",
+    "modo": "menor",
+    "progresion": "i-VI-III-VII",
+    "bateria": "quebrada",
+    "timbre": "sierra",
+    "arpegio": true,
+    "semilla": 189462
+  }
+}

@@ -1,0 +1,85 @@
+{
+ "fecha": "2026-11-21",
+ "elegida": {
+  "n": 5,
+  "pieza": "android-distribucion-limitada-50",
+  "idea": "Android deixa repartir unha aplicación propia a 50 dispositivos sen pasar pola tenda; Algoritmo teme que non cheguen para as tabletas do centro, Xiz conta as que acenden e responde: «Sóbranme 46». Remata Xiz, coa resta a cargo do lector, e Algoritmo queda procesando.",
+  "guion": {
+   "vinetas": [
+    {
+     "cartela": "Na sala do profesorado, cunha aplicación para clase.",
+     "escenario": "sala_profes",
+     "tiza": {
+      "expresion": "contento",
+      "postura": "abajo",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "orgulloso",
+      "postura": "senalar",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "algoritmo",
+       "texto": "Android deixa repartir a túa aplicación a 50 dispositivos sen pasar pola tenda!",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "sala_profes",
+     "tiza": {
+      "expresion": "pensativo",
+      "postura": "pensar",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "preocupado",
+      "postura": "abajo",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "algoritmo",
+       "texto": "Chegarache con 50 para as tabletas do centro?",
+       "tipo": "habla"
+      },
+      {
+       "quien": "tiza",
+       "texto": "Espera, que conto as que acenden...",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "sala_profes",
+     "tiza": {
+      "expresion": "harto",
+      "postura": "encoger",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "cargando",
+      "postura": "pensar",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Sóbranme 46.",
+       "tipo": "habla"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "traduccion": "automática con IA"
+}

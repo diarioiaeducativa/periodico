@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340">
+<circle class="fa a" cx="150" cy="150" r="110"/>
+<circle class="t" cx="150" cy="150" r="75"/>
+<circle class="a" cx="150" cy="150" r="40"/>
+<circle class="ft" cx="150" cy="150" r="8"/>
+<text class="lbl" x="150" y="312" text-anchor="middle">Por capas</text>
+<g class="t li4" transform="translate(352 60) scale(4)"><!-- Lucide: globe (ISC) --><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></g>
+<text class="lbl" x="400" y="200" text-anchor="middle">6 idiomas</text>
+<line class="r" x1="340" y1="48" x2="460" y2="172"/>
+<text class="lbl" x="400" y="312" text-anchor="middle">Sen castelán</text>
+</svg>

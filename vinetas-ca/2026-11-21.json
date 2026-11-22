@@ -1,0 +1,94 @@
+{
+ "fecha": "2026-11-21",
+ "elegida": {
+  "n": 5,
+  "pieza": "android-distribucion-limitada-50",
+  "idea": "Android deixa repartir una aplicació pròpia a 50 dispositius sense passar per la botiga; l'Algorisme tem que no n'hi hagi prou per a les tauletes del centre, Guix compta les que s'encenen i respon: «Me'n sobren 46». Remata Guix, amb la resta a càrrec del lector, i l'Algorisme es queda processant.",
+  "guion": {
+   "vinetas": [
+    {
+     "cartela": "A la sala de professorat, amb una aplicació per a classe.",
+     "escenario": "sala_profes",
+     "tiza": {
+      "expresion": "contento",
+      "postura": "abajo",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "orgulloso",
+      "postura": "senalar",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "algoritmo",
+       "texto": "Android deixa repartir la teva aplicació a 50 dispositius sense passar per la botiga!",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "sala_profes",
+     "tiza": {
+      "expresion": "pensativo",
+      "postura": "pensar",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "preocupado",
+      "postura": "abajo",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "algoritmo",
+       "texto": "T'hi arribarà amb 50 per a les tauletes del centre?",
+       "tipo": "habla"
+      },
+      {
+       "quien": "tiza",
+       "texto": "Espera, que compto les que s'encenen...",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "sala_profes",
+     "tiza": {
+      "expresion": "harto",
+      "postura": "encoger",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "cargando",
+      "postura": "pensar",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Me'n sobren 46.",
+       "tipo": "habla"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "motivo": "Gana la 5, con un punto de gracia sobre las siguientes (8 frente a 7): no decide la variedad, decide la gracia. Es la más concreta y la que mejor remata: tres palabras, una cifra y una resta que hace el lector (de 50 sobran 46: encienden cuatro).",
+ "retoques": "Primera viñeta, bocadillo de Algoritmo: «tu» mete a Tiza en la escena. Tercera viñeta: «Me sobran 46.» con la cifra en números. Ningún bocadillo pasa de 90 caracteres (el más largo, 84).",
+ "puntuaciones": [
+  {"n": 1, "gracia": 7, "claridad": 7, "remate": 7, "prohibiciones": "respeta", "cabe": true},
+  {"n": 2, "gracia": 7, "claridad": 6, "remate": 8, "prohibiciones": "respeta", "cabe": true},
+  {"n": 3, "gracia": 6, "claridad": 7, "remate": 6, "prohibiciones": "respeta, pero el remate roza el juego de palabras fácil (con «lejos»)", "cabe": true},
+  {"n": 4, "gracia": 7, "claridad": 7, "remate": 7, "prohibiciones": "respeta: el blanco es la burocracia, no el simulador ni su autora; «Esa es la gracia» roza explicar el chiste", "cabe": true},
+  {"n": 5, "gracia": 8, "claridad": 8, "remate": 9, "prohibiciones": "respeta", "cabe": true}
+ ],
+ "traduccion": "automàtica amb IA"
+}

@@ -1,0 +1,416 @@
+{
+ "fecha": "2026-11-21",
+ "candidatas": [
+  {
+   "pieza": "gemini-notebook-api-oficial",
+   "idea": "La vía oficial para automatizar los cuadernos solo admite cuentas personales, no las del centro; a Tiza, de noche en casa, le parece lo normal: «El portátil, el móvil y estas horas también son personales» (remata Tiza).",
+   "guion": {
+    "vinetas": [
+     {
+      "cartela": "De noche, en casa, con los cuadernos de Gemini.",
+      "escenario": "casa_noche",
+      "tiza": {
+       "expresion": "pensativo",
+       "postura": "pensar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "contento",
+       "postura": "senalar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "reloj",
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "¡Gemini Notebook ya tiene vía oficial para automatizar los cuadernos del centro!",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "casa_noche",
+      "tiza": {
+       "expresion": "contento",
+       "postura": "arriba",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "avergonzado",
+       "postura": "encoger",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "reloj",
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "¡Por fin! ¿Y entro con la cuenta del centro?",
+        "tipo": "habla"
+       },
+       {
+        "quien": "algoritmo",
+        "texto": "De momento solo admite cuentas personales.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "casa_noche",
+      "tiza": {
+       "expresion": "agotado",
+       "postura": "abajo",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "avergonzado",
+       "postura": "abajo",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "reloj",
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "Lo normal. El portátil, el móvil y estas horas también son personales.",
+        "tipo": "habla"
+       }
+      ]
+     }
+    ]
+   },
+   "cabe": true
+  },
+  {
+   "pieza": "gemini-notebook-api-oficial",
+   "idea": "La vía no oficial hace más, pero avisa de que puede romperse sin previo aviso; a Tiza le parece un detalle, porque la plataforma de las notas se cae cada evaluación y jamás ha avisado. «Esa es la oficial», remata Algoritmo (los dos, contra la plataforma).",
+   "guion": {
+    "vinetas": [
+     {
+      "cartela": "En una formación en línea sobre automatizar cuadernos.",
+      "escenario": "videollamada",
+      "tiza": {
+       "expresion": "pensativo",
+       "postura": "pensar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "neutral",
+       "postura": "senalar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "Hay dos vías: la oficial, que de momento hace poco, y una no oficial, que hace más.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "videollamada",
+      "tiza": {
+       "expresion": "contento",
+       "postura": "senalar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "preocupado",
+       "postura": "abajo",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "Eso sí, la no oficial avisa: puede romperse sin previo aviso.",
+        "tipo": "habla"
+       },
+       {
+        "quien": "tiza",
+        "texto": "Mira qué detalle: avisa.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "videollamada",
+      "tiza": {
+       "expresion": "harto",
+       "postura": "cruzar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "neutral",
+       "postura": "encoger",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "La plataforma de las notas se cae cada evaluación y jamás ha avisado.",
+        "tipo": "habla"
+       },
+       {
+        "quien": "algoritmo",
+        "texto": "Esa es la oficial.",
+        "tipo": "habla"
+       }
+      ]
+     }
+    ]
+   },
+   "cabe": true
+  },
+  {
+   "pieza": "gemini-exploraciones-inmersivas",
+   "idea": "Las exploraciones de Gemini recorren un tema de lo microscópico al espacio profundo; Tiza se ilusiona con los cuásares y el Imperio persa y pregunta si están en castellano: «Tan lejos todavía no llega» (el chasco es de Algoritmo).",
+   "guion": {
+    "vinetas": [
+     {
+      "cartela": "En la biblioteca, con las exploraciones de Gemini.",
+      "escenario": "biblioteca",
+      "tiza": {
+       "expresion": "contento",
+       "postura": "abajo",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "orgulloso",
+       "postura": "cruzar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "Exploraciones inmersivas: recorren un tema de lo microscópico al espacio profundo.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "biblioteca",
+      "tiza": {
+       "expresion": "sorprendido",
+       "postura": "arriba",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "cargando",
+       "postura": "pensar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "Cuásares, el Imperio persa, la era mesozoica... ¡Menudo viaje! ¿Y en castellano?",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "biblioteca",
+      "tiza": {
+       "expresion": "harto",
+       "postura": "cabeza",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "avergonzado",
+       "postura": "encoger",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "Tan lejos todavía no llega.",
+        "tipo": "habla"
+       }
+      ]
+     }
+    ]
+   },
+   "cabe": true
+  },
+  {
+   "pieza": "maquina-rube-goldberg-simple",
+   "idea": "Algoritmo presenta el simulador de máquinas de Rube Goldberg, una cadena larguísima de piezas para acabar haciendo algo sencillísimo; Tiza señala los papeles de dirección: «Aquí ya tenemos una. Se llama solicitud de un cable para el proyector» (remata Tiza, contra la burocracia).",
+   "guion": {
+    "vinetas": [
+     {
+      "cartela": "En dirección, con un simulador de máquinas en cadena.",
+      "escenario": "despacho",
+      "tiza": {
+       "expresion": "neutral",
+       "postura": "abajo",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "contento",
+       "postura": "senalar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "papeles",
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "Máquinas de Rube Goldberg: una pieza empuja a otra, que suelta otra, que mueve otra...",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "despacho",
+      "tiza": {
+       "expresion": "pensativo",
+       "postura": "pensar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "orgulloso",
+       "postura": "cruzar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "papeles",
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "¿Y tanta vuelta para qué?",
+        "tipo": "habla"
+       },
+       {
+        "quien": "algoritmo",
+        "texto": "Para acabar haciendo algo sencillísimo. Esa es la gracia.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "despacho",
+      "tiza": {
+       "expresion": "riendo",
+       "postura": "senalar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "pensativo",
+       "postura": "pensar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "papeles",
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "Aquí ya tenemos una. Se llama «solicitud de un cable para el proyector».",
+        "tipo": "habla"
+       }
+      ]
+     }
+    ]
+   },
+   "cabe": true
+  },
+  {
+   "pieza": "android-distribucion-limitada-50",
+   "idea": "Android deja repartir una aplicación propia a 50 dispositivos sin pasar por la tienda; Algoritmo teme que no lleguen para las tabletas del centro, Tiza cuenta las que encienden y contesta: «Me sobran cuarenta y seis» (remata Tiza).",
+   "guion": {
+    "vinetas": [
+     {
+      "cartela": "En la sala de profes, con una aplicación para clase.",
+      "escenario": "sala_profes",
+      "tiza": {
+       "expresion": "contento",
+       "postura": "abajo",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "orgulloso",
+       "postura": "senalar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "¡Android deja repartir una aplicación propia a 50 dispositivos sin pasar por la tienda!",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "sala_profes",
+      "tiza": {
+       "expresion": "pensativo",
+       "postura": "pensar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "preocupado",
+       "postura": "abajo",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "¿Te llegará con 50 para las tabletas del centro?",
+        "tipo": "habla"
+       },
+       {
+        "quien": "tiza",
+        "texto": "Espera, que cuento las que encienden...",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "sala_profes",
+      "tiza": {
+       "expresion": "harto",
+       "postura": "encoger",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "cargando",
+       "postura": "abajo",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "Me sobran cuarenta y seis.",
+        "tipo": "habla"
+       }
+      ]
+     }
+    ]
+   },
+   "cabe": true
+  }
+ ]
+}

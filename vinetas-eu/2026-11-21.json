@@ -1,0 +1,85 @@
+{
+ "fecha": "2026-11-21",
+ "elegida": {
+  "n": 5,
+  "pieza": "android-distribucion-limitada-50",
+  "idea": "Androidek aukera ematen du norberaren aplikazioa 50 gailuri banatzeko dendatik pasatu gabe; Algoritmok beldur da ikastetxeko tabletentzat ez ote den nahikoa izango, Tizak pizten direnak zenbatzen ditu eta erantzuten du: «46 soberan». Tizak amaitzen du, kenketa irakurlearen esku utzita, eta Algoritmo prozesatzen geratzen da.",
+  "guion": {
+   "vinetas": [
+    {
+     "cartela": "Irakasle-gelan, ikasgelarako aplikazio batekin.",
+     "escenario": "sala_profes",
+     "tiza": {
+      "expresion": "contento",
+      "postura": "abajo",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "orgulloso",
+      "postura": "senalar",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "algoritmo",
+       "texto": "Androidek uzten dizu zure aplikazioa 50 gailuri banatzen, dendatik pasatu gabe!",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "sala_profes",
+     "tiza": {
+      "expresion": "pensativo",
+      "postura": "pensar",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "preocupado",
+      "postura": "abajo",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "algoritmo",
+       "texto": "50ekin nahikoa izango duzu ikastetxeko tabletentzat?",
+       "tipo": "habla"
+      },
+      {
+       "quien": "tiza",
+       "texto": "Itxaron, pizten direnak zenbatuko ditut...",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "sala_profes",
+     "tiza": {
+      "expresion": "harto",
+      "postura": "encoger",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "cargando",
+      "postura": "pensar",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "46 soberan.",
+       "tipo": "habla"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "traduccion": "itzulpen automatikoa AArekin"
+}

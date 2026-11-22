@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340">
+<line class="t" x1="130" y1="250" x2="470" y2="190"/>
+<path class="fa t" d="M300 220 L265 280 H335 Z"/>
+<rect class="fa a" x="420" y="146" width="52" height="42" rx="4"/>
+<line class="r" x1="130" y1="150" x2="130" y2="226"/>
+<path class="r" d="M120 214 L130 228 L140 214"/>
+<text class="lbl" x="130" y="130" text-anchor="middle">Forza</text>
+<text class="lbl" x="446" y="126" text-anchor="middle">Carga</text>
+<text class="lbl" x="300" y="318" text-anchor="middle">Apoio</text>
+<circle class="ft" cx="300" cy="220" r="5"/>
+</svg>
