@@ -82,8 +82,11 @@ de `publicado.txt`.
 - **Lee el documento entero.** Si la entrada trae el «Texto completo del PDF», ese texto es el
   documento tal como está en la biblioteca: léelo entero y escribe con él. Busca además su fuente
   oficial con WebSearch y WebFetch (el DOI, la página del organismo o el PDF en su sitio) para
-  enlazarla; si no la encuentras o no deja leer, `documento.url` queda vacío y el artículo enlaza
-  al documento en la biblioteca, que ya lo hace el diario con `mensaje`.
+  enlazarla en `documento.url`. Si la ficha de la biblioteca trae un DOI o la dirección oficial,
+  va en `documento.url` aunque su web no deje leerla con WebFetch. Si no hay fuente oficial pero la
+  ficha da una descarga que funciona (un Google Drive, por ejemplo), va en `documento.descarga`. La
+  ficha del artículo dice siempre dónde está el documento (ADR 0099): el original o la descarga, y
+  el mensaje de la biblioteca, que pone el diario con `mensaje`.
 - Si la entrada solo trae la ficha o el comienzo del PDF, lee el documento en su fuente oficial.
   Si no la hay o no deja leer, apóyate solo en una fuente fiable que lo resuma (mejor de sus
   propios autores), dilo en el texto, y si eso no basta para un artículo digno, no lo hay.
@@ -116,7 +119,7 @@ de `publicado.txt`.
       "cuerpo": ["párrafo", "párrafo; se admiten enlaces [texto](url) y **negritas**"],
       "documento": {"titulo": "título original", "autoria": "autores u organismo", "anyo": "2026",
                     "idioma": "castellano | catalán | inglés…", "licencia": "la que conste, o «no consta»",
-                    "url": "https://… (oficial)"},
+                    "url": "https://… (oficial)", "descarga": "solo si no hay oficial"},
       "fuentes": [{"titulo": "…", "url": "https://…"}],
       "mensaje": {"grupo": "chatgpt", "id": 0},
       "comprobado": "qué se leyó y dónde",

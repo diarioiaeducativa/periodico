@@ -77,7 +77,7 @@ def enlaces():
                     ANOTADAS.add(clave)
                 urls = {x.get("url") for x in p.get("fuentes", []) if isinstance(x, dict)} | {p.get("url")}
                 urls |= {u for t in textos(p) for u in ENLACE_MD.findall(t)}
-                urls.add((p.get("documento") or {}).get("url"))
+                urls |= {(p.get("documento") or {}).get(k) for k in ("url", "descarga")}
                 for u in urls:
                     if u and u.startswith("http") and urllib.parse.urlsplit(u).hostname not in FUERA:
                         out.setdefault(u.rstrip(".,;"), []).append(clave)

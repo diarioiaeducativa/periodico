@@ -124,7 +124,8 @@ IDIOMAS = {
         "video_idioma": "Vídeo en castellano.", "nb_castellano": "", "video_enlace": "Enlace a este vídeo",
         "todos_videos": "Todos los vídeos",
         "biblioteca_enlace": "Biblioteca digital", "el_documento": "El documento", "doc_titulo": "Título", "doc_autoria": "Autoría",
-        "doc_anyo": "Año", "doc_idioma": "Idioma", "doc_licencia": "Licencia", "doc_leer": "Leer el documento en su fuente oficial",
+        "doc_anyo": "Año", "doc_idioma": "Idioma", "doc_licencia": "Licencia", "doc_leer": "Leer el documento", "doc_oficial": "en su fuente oficial", "doc_descarga": "en {sitio}",
+        "doc_biblioteca": "en la Biblioteca digital de ChatGPT-IA-edu",
         "en_biblioteca": "Ver el documento en la Biblioteca digital de ChatGPT-IA-edu",
         "repositorio_enlace": "Repositorio de recursos", "el_recurso": "El recurso", "rec_titulo": "Nombre", "rec_autoria": "Autoría",
         "rec_licencia": "Licencia", "rec_abrir": "Abrir el recurso", "rec_ficha": "Su ficha en el repositorio",
@@ -265,7 +266,8 @@ IDIOMAS = {
         "video_idioma": "Vídeo en castellà.", "nb_castellano": "Resum, vídeo i pòdcast en castellà.", "video_enlace": "Enllaç a aquest vídeo",
         "todos_videos": "Tots els vídeos",
         "biblioteca_enlace": "Biblioteca digital", "el_documento": "El document", "doc_titulo": "Títol", "doc_autoria": "Autoria",
-        "doc_anyo": "Any", "doc_idioma": "Idioma", "doc_licencia": "Llicència", "doc_leer": "Llegeix el document a la font oficial",
+        "doc_anyo": "Any", "doc_idioma": "Idioma", "doc_licencia": "Llicència", "doc_leer": "Llegeix el document", "doc_oficial": "a la font oficial", "doc_descarga": "a {sitio}",
+        "doc_biblioteca": "a la Biblioteca digital de ChatGPT-IA-edu",
         "en_biblioteca": "Mira el document a la Biblioteca digital de ChatGPT-IA-edu",
         "repositorio_enlace": "Repositori de recursos", "el_recurso": "El recurs", "rec_titulo": "Nom", "rec_autoria": "Autoria",
         "rec_licencia": "Llicència", "rec_abrir": "Obre el recurs", "rec_ficha": "La seva fitxa al repositori",
@@ -489,6 +491,17 @@ def md(t):
 
 def icono(seccion):
     return f'<svg class="ico" viewBox="0 0 24 24" aria-hidden="true">{ICONOS.get(seccion, "")}</svg>'
+
+
+SITIOS = {"drive.google.com": "Google Drive", "docs.google.com": "Google Drive", "dropbox.com": "Dropbox",
+          "zenodo.org": "Zenodo", "github.com": "GitHub", "onedrive.live.com": "OneDrive", "1drv.ms": "OneDrive"}
+
+
+def sitio_web(u):
+    """El nombre del sitio de una descarga: «Google Drive», o el dominio sin «www.»."""
+    h = urllib.parse.urlsplit(u).hostname or ""
+    h = h.removeprefix("www.")
+    return SITIOS.get(h, h)
 
 
 def url_mensaje(m):
@@ -2243,7 +2256,16 @@ def articulo(prof, ruta, d, p, eds):
     if doc:
         filas = "".join(f"<dt>{L[k]}</dt><dd>{e(doc.get(c))}</dd>" for k, c in
                         (("doc_titulo", "titulo"), ("doc_autoria", "autoria"), ("doc_anyo", "anyo"), ("doc_idioma", "idioma"), ("doc_licencia", "licencia")) if doc.get(c))
-        leer = f'<p class="doc-leer" data-pagefind-ignore>{enlace(doc["url"], L["doc_leer"])}</p>' if doc.get("url") else ""
+        # Siempre dónde está el documento (Juanjo, 22-11-2026, ADR 0099): el original oficial o, si no lo hay, la
+        # descarga que da su ficha, y el mensaje de la Biblioteca digital donde lo guarda la comunidad
+        donde = []
+        if doc.get("url"):
+            donde.append(enlace(doc["url"], L["doc_oficial"]))
+        elif doc.get("descarga"):
+            donde.append(enlace(doc["descarga"], L["doc_descarga"].format(sitio=sitio_web(doc["descarga"]))))
+        if p.get("seccion") == "biblioteca" and url_mensaje(p.get("mensaje")):
+            donde.append(enlace(url_mensaje(p.get("mensaje")), L["doc_biblioteca"]))
+        leer = (f'<p class="doc-leer" data-pagefind-ignore>{L["doc_leer"]}: {" · ".join(donde)}</p>') if donde else ""
         ficha_doc = f'<aside class="ficha-doc" aria-labelledby="doc-{e(p["id"])}"><h2 id="doc-{e(p["id"])}">{L["el_documento"]}</h2><dl>{filas}</dl>{leer}</aside>'
     recs = p.get("recursos") or []
     bloques = ""
