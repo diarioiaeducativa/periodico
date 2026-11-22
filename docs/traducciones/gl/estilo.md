@@ -1,12 +1,12 @@
-<!-- origen: 175bb82642affdd1 -->
+<!-- origen: 3013453471ea3480 -->
 # Libro de estilo do Diario de IA Educativa
 
 Como escribe o diario. Vale para todo axente que escribe, revisa, traduce ou resume algo que vai
 ler o público (artigos, breves, reportaxes, «Hai un ano», comentarios da semana, avisos,
-textos para redes e vídeos) e para as persoas que o manteñen. Éntrase a lelo enteiro antes de comezar.
+textos para redes e vídeos) e para as persoas que o manteñen. Léese enteiro antes de comezar.
 
-Aquí está o común. Cada tarefa ten ademais a súa guía en `encargos/` co propio (medidas, formato,
-ton dos avisos, a viñeta…); se unha norma de aquí non vale para unha tarefa, a súa guía dío. As normas que non son de estilo (que é noticia, que leva cada número e os artigos gardados
+Aquí está o común. Cada tarefa ten ademais a súa guía en `encargos/` co que lle é propio (medidas, formato,
+ton dos avisos, a viñeta…); se unha norma de aquí non vale para unha tarefa, a súa guía di que non. As normas que non son de estilo (que é noticia, que leva cada número e os artigos gardados
 para os días sen noticias) están en «Como se fai o diario», `docs/como-se-hace.md`.
 
 ## Para quen se escribe
@@ -16,7 +16,7 @@ para os días sen noticias) están en «Como se fai o diario», `docs/como-se-ha
   un docente e onde atopalo.
 - **Para un público moi amplo, non para expertos**: un docente de calquera materia, unha familia, unha
   persoa que comeza coa IA. Se algo só o entenden as persoas que xa saben do tema, reescríbese.
-- O que lle interesa ao lector, non como funciona o diario por dentro: nada de axentes, ficheiros,
+- O que interesa ao lector, non como funciona o diario por dentro: nada de axentes, ficheiros,
   programas nin servidores no que se publica, salvo que o artigo trate do propio diario ou de
   Anthropic (apartado «Rigor»).
 
@@ -24,28 +24,28 @@ para os días sen noticias) están en «Como se fai o diario», `docs/como-se-ha
 
 - Formal, informativo e impersoal. Nunca publicitario («incrible», «imprescindible», «revoluciona»)
   nin alarmista. Sen exclamacións nin emojis.
-- As guías dos avisos e da viñeta permiten un ton máis achegado; nunca de anuncio.
+- As guías dos avisos e da viñeta permiten un ton máis próximo; nunca de anuncio.
 
 ## Lingua
 
 - Castelán correcto e natural. As traducións, no seu apartado.
-- **Linguaxe inclusiva, pero natural**: «el profesorado», «el alumnado», «las familias»; sen
+- **Linguaxe inclusiva, pero natural**: «o profesorado», «o alumnado», «as familias»; sen
   desdobramentos nin signos raros.
 - **Sen o relativo «quien» ou «quienes»** co sentido de «la persona que»: «la persona que», un colectivo («el
-  profesorado») ou un xiro co asunto por diante («separar la creación de la revisión», non «separar a
+  profesorado») ou un xiro co asunto diante («separar la creación de la revisión», non «separar a
   quien crea de quien revisa»). O interrogativo, con til («¿quién?»), si; unha cita literal
   déixase como está.
-- **O que publica o diario son «artículos»**, non «piezas» (a palabra só é interna, nos
+- **O que publica o diario son «artigos»**, non «pezas» («pieza» só é unha palabra interna, nos
   campos dos arquivos). Un artigo pode ser unha noticia, un breve, unha reportaxe.
-- **O que fai o diario cun tema: «publícao», «recóllao»** ou o tema «sale en» o diario;
-  non o «cuenta». «El diario publicó el 3 de noviembre…», «como recogió el diario…».
-- **A IA non pensa nin quere.** Nada de verbos que lle dan mente ou intención a un programa («piensa»,
+- **O que fai o diario cun tema: «publícao», «recólleo»** ou o tema «sae» no diario;
+  non o «conta» («cuenta»). «El diario publicó el 3 de noviembre…», «como recogió el diario…».
+- **A IA non pensa nin quere.** Nada de verbos que dan mente ou intención a un programa («piensa»,
   «entiende», «quiere», «miente»): un modelo xera, responde ou dá un resultado. O que decide é unha
   empresa ou unha persoa: «OpenAI ha limitado…», non «ChatGPT ha decidido…». O que un modelo inventa
-  é unha «respuesta inventada»; «alucinación», só explicada.
-- **Vocabulario**: «inteligencia artificial», en minúscula, e a súa sigla, IA, nunca AI, salvo en
-  nomes propios («Google AI Studio»). «Chatbot» e «alucinar», sen comiñas. Mellor «aplicación» ca
-  «app», «en línea» ca «online», «enlace» ca «link» e «aprendizaje automático» ca «machine
+  é unha «resposta inventada»; «alucinación», só explicada.
+- **Vocabulario**: «intelixencia artificial», en minúscula, e a súa sigla, IA, nunca AI, salvo en
+  nomes propios («Google AI Studio»). «Chatbot» e «alucinar», sen comiñas. Mellor «aplicación» que
+  «app», «en liña» que «online», «ligazón» que «link» e «aprendizaxe automática» que «machine
   learning». *Prompt*, en cursiva. Un termo que o lector pode non coñecer explícase a primeira
   vez.
 - **Siglas**: unha pouco coñecida desenvólvese a primeira vez («la Agencia Española de Protección de
@@ -55,7 +55,7 @@ para os días sen noticias) están en «Como se fai o diario», `docs/como-se-ha
   lanzado…» ou «es posible que…».
 - **Frases claras**: unha idea por frase, a palabra corrente antes ca a técnica e fóra as
   metáforas gastadas («cambio de paradigma», «en la era de la IA»).
-- **Antes claro ca breve.** Nada de expresións comprimidas que obrigan a reler: substantivos
+- **Antes claro que breve.** Nada de expresións comprimidas que obrigan a reler: substantivos
   encadeados («flujo de generación multimodal con verificación cruzada»), xerga dos grupos,
   palabras que se dan por sabidas ou frases ás que lles falta o verbo. Se unha frase curta se entende
   peor ca unha algo máis longa, vai a longa: «un sistema que crea imágenes y vídeo y comprueba el
@@ -64,20 +64,22 @@ para os días sen noticias) están en «Como se fai o diario», `docs/como-se-ha
   («ChatGPT», «Vibe Coding Educativo»). Un recurso en catalán ou outra lingua descríbese en castelán
   e conserva o seu nome; o título dunha obra queda no seu idioma.
 
-## Titulares, antetítulos e entradiñas
+## Titulares, antetítulos e entradillas
 
-- **Titular**: claro, con verbo, sen preguntas nin ganchos («non o vas crer…»). Di que achega o que
-  recolle, non só o nome da ferramenta ou do documento. **Como moito 90 caracteres**, contando
-  os espazos: o que non caiba vai ao antetítulo ou á entradiña.
+- **Titular**: claro, con verbo, sen preguntas nin ganchos («non creerás…»). Di que achega o que
+  recolle, non só o nome da ferramenta ou do documento. **Como máximo 90 caracteres**, contando
+  os espazos: o que non caiba vai ao antetítulo ou á entradilla.
 - **Antetítulo**: de dúas a cinco palabras, sen verbo: o tipo de cousa ou o ámbito («Guía oficial»,
-  «Novo no repositorio», «Do fondo de EduMedia»).
-- **Entradiña**: unha ou dúas frases que resumen o artigo (dúas ou tres na reportaxe). Non repite o
+  «Nuevo en el repositorio», «Del fondo de EduMedia»). Como nos ladillos, nin comeza por «Qué», «Lo que», «Cómo»
+  ou «Por qué» nin leva «lo» cun participio ou un adxectivo: «Estudios sobre IA y aprendizaje», non «Lo que dice la
+  investigación».
+- **Entradilla**: unha ou dúas frases que resumen o artigo (dúas ou tres na reportaxe). Non repite o
   titular: achega o seguinte.
-- **O titular e a entradiña non din máis ca o corpo nin ca a fonte.** O que o corpo
-  matiza («segundo a empresa», «nos plans de pagamento», «é unha hipótese do autor») non
-  desaparece arriba. Unha proba sen nada con que comparar non «demostra» nin «suxire» unha causa.
+- **O titular e a entradilla non din máis ca o corpo nin ca a fonte.** O que o corpo
+  matiza («según la empresa», «en los planes de pago», «es una hipótesis del autor») non desaparece
+  arriba. Unha proba sen nada con que comparar non «demostra» nin «suxire» unha causa.
 - **Ladillos** (os títulos dos apartados dunha reportaxe): un titular pequeno que di o que conta o seu apartado
-  (quen fai que, o dato), con verbo se se pode e como moito 60 caracteres: «La revisión de Stanford solo admite
+  (quen fai que, o dato), con verbo se se pode e como máximo 60 caracteres: «La revisión de Stanford solo admite
   estudios causales», non «Qué cuenta como prueba». Nada de etiquetas que valerían para calquera texto: nin comezar
   por «Qué», «Lo que», «Cómo» ou «Por qué», nin parellas abstractas («Entender o entregar», «El medio y el método»,
   «Del producto al proceso»), nin «Más allá de…», nin «lo» cun participio ou un adxectivo, estea onde estea («lo aprendido», «lo importante»).
@@ -88,7 +90,7 @@ para os días sen noticias) están en «Como se fai o diario», `docs/como-se-ha
 ## Persoas
 
 - **Temas, non persoas.** Non se nomea as persoas que opinan ou preguntan nos grupos, tampouco con «un
-  membro dixo…»: recóllense as posturas.
+  miembro dijo…»: recóllense as posturas.
 - **Nómease o autor dun recurso que el mesmo publicou** (unha aplicación, unha guía, un
   documento), como crédito («creada por…»), co nome que consta no propio recurso ou o
   nome completo da persoa que o publica. Un nome de pía non identifica a ninguén: se o recurso non
@@ -96,13 +98,13 @@ para os días sen noticias) están en «Como se fai o diario», `docs/como-se-ha
 - **Quen é quen di a marca do material, non o nome** (ADR 0066): os autores do diario
   son só as mensaxes marcadas `[autor del diario: …]`; outra persoa co mesmo nome de pía é
   outra persoa. As marcas non se publican.
-- **Os autores do diario, coma calquera**: nómeanse como crédito dos seus recursos igual que os
-  demais, co nome completo con que asinan o diario, aínda que nos grupos usen outro.
+- **Os autores do diario, coma calquera**: nomeanse como crédito dos seus recursos igual que os
+  demais, co nome completo co que asinan o diario, aínda que nos grupos usen outro.
 - **Os cargos, só se teñen que ver coa noticia** (administrar un grupo, ser coautor do
   diario): se non, a persoa é un docente máis.
-- **Se o artigo trata do propio diario, dío** con esas palabras («este diario»).
+- **Se o artigo trata do propio diario, di que si** con esas palabras («este diario»).
 - **O alumnado**: non se publica nada que o identifique (nome, imaxe, nin centro e curso xuntos),
-  aínda que apareza no material compartido. dunha ferramenta para a aula dise, segundo as súas
+  aínda que apareza no material compartido. Dunha ferramenta para a aula dise, segundo as súas
   condicións, se pide datos do alumnado e se os usa para adestrar os seus modelos; se non consta, dise.
 
 ## Rigor
@@ -126,18 +128,18 @@ para os días sen noticias) están en «Como se fai o diario», `docs/como-se-ha
   un 10 % máis. Mellor «un de cada oito docentes» ca «o 12,5 %».
 - **Unha norma, aplicada ao caso**: se o artigo conta o que esixe unha lei ou unha autoridade, di tamén
   que supón para o que trata (se fai falta permiso, un aviso ou nada), e non deixa que o lector saque a
-  conclusión (Juanjo, 19-11-2026, ante as condicións da AEPD na peza de Umami: «debes hacerlo tú»).
-- **Os datos que cambian datanse** («a 1 de novembro de 2026»); o demais non leva data.
+  conclusión (Juanjo, 19-11-2026, ante as condicións da AEPD no artigo de Umami: «debes hacerlo tú»).
+- **Os datos que cambian fíxanse cunha data** («a 1 de novembro de 2026»); o demais non leva data.
 - **Toda hora, co seu fuso**, porque o diario se le en todo o mundo (ADR 0091). A de España:
   «ás 10.30 (hora peninsular española, UTC+1)», UTC+2 en verán; «peninsular», porque Canarias vai
   unha hora por detrás. A de fóra, coa de orixe e a equivalente en España: «ás 10.00 de
   California (19.00 na España peninsular, UTC+1)». Se un texto dá varias horas do mesmo sitio, o
   fuso vai a primeira vez.
-- **Unha páxina oficial pode estar desactualizada**: se contradi o que o diario xa publicou co
+- **Unha páxina oficial pode estar desactualizada**: se contradí o que o diario xa publicou co
   documento diante, manda o publicado, e dise.
 - **Antes de xulgar unha ligazón, ábrese**: o enderezo non di o que hai na páxina nin a súa data.
 - **O que o diario xa publicou, igual**: un artigo sobre un asunto xa tratado dá as mesmas
-  cifras e datas ca o anterior, enlázao e, se algo cambiou, dío.
+  cifras e datas ca o anterior, enlázao e, se algo cambiou, di que si.
 
 ## Citas e outros idiomas
 
@@ -157,17 +159,17 @@ O detallado está en `encargos/enlaces.md`; o esencial:
   ferramenta, á web que usará o lector, non ao seu repositorio de código.
 - **O xa publicado que está claramente relacionado, enlazado** coa súa clave (`pieza:AAAA-MM-DD/id`),
   cun texto que diga de que trata, nunca «aquí».
-- O texto dunha ligazón nunca é «mensaxe 123» nin un enderezo espido.
-- Unha ligazón que descarga un arquivo dío: «a guía (PDF)».
+- O texto dunha ligazón nunca é «mensaje 123» nin un enderezo espido.
+- Unha ligazón que descarga un arquivo di que si: «la guía (PDF)».
 
 ## Forma
 
 - **Comiñas españolas** («»); dentro delas, as inglesas (“”).
-- **A porcentaxe, con espazo** (25 %); os millares, con punto (1.200), como se escribe en castelán; as moedas, co seu nome
+- **A porcentaxe, con espazo** (25 %); os millares, con punto (1.200), nos textos en castelán; as moedas, co seu nome
   («10 dólares», «4 euros»).
-- Parágrafos de tres a seis frases nos textos longos (cada guía dá a súa medida). Negritas con tino:
+- Parágrafos de tres a seis frases nos textos longos (cada guía dá a súa medida). Negriñas con mesura:
   dúas ou tres ideas nun texto longo.
-- Ligazóns en Markdown (`[texto](url)`); nos textos para avisos e redes, texto plano (dínollo as súas
+- Ligazóns en Markdown (`[texto](url)`); nos textos para avisos e redes, texto plano (dío as súas
   guías).
 - **Nunca «hoy», «ayer» nin «esta semana»**: a data ou o día («el jueves 12»). O número sae o día
   seguinte ás conversas e queda na hemeroteca; o que se garda para outro día (a reserva,
@@ -182,7 +184,7 @@ O detallado está en `encargos/enlaces.md`; o esencial:
   reportaxe, ADR 0084), nunca un axente a man: barras horizontais (`barras`, para comparar), columnas
   (`columnas`, para poucas categorías con etiquetas curtas) ou liñas (`lineas`, para unha evolución).
 - **Os datos, exactos e dunha soa fonte**: os mesmos valores que dá a fonte, coa súa precisión, e a mesma
-  unidade para todos. As barras empezan sempre en cero (o programa faino soo); nada de mesturar nun gráfico
+  unidade para todos. As barras empezan sempre en cero (o programa faino só); nada de mesturar nun gráfico
   cifras de fontes distintas.
 - **Título que di que se mide**, non a conclusión («Redacciones humanas que los detectores tomaron por IA»), e
   etiquetas curtas.
@@ -198,11 +200,11 @@ onde consultar, formatos, vocabulario da IA e o propio de España) está no libr
 
 ## Correccións
 
-- Un erro corríxese sen agardar a que ninguén o pida, no mesmo artigo e nos cinco idiomas, coa
+- Un erro corrixese sen esperar a que ninguén o pida, no mesmo artigo e nos cinco idiomas, coa
   súa nota ao final (ADR 0055): «Corregido el…» (había un erro), «Actualización del…» (o dato era
   certo e cambiou) ou «Nota añadida el…» (faltaba algo). Unha errata que non cambia o sentido
-  corríxese sen nota.
-- Se o erro estaba no titular, nos avisos ou nas redes, a corrección chega tamén aí.
+  corrixese sen nota.
+- Se o erro estaba no titular, nos avisos ou nas redes, a corrección chega tamén alí.
 - Non se retira un artigo enteiro se abonda con cambiar unha parte.
 
 ## O que se comproba sen IA
@@ -212,11 +214,11 @@ o revisor:
 
 - `scripts/revisar-estilo.py`: o «quien» relativo, as citas só en inglés e as normas de vocabulario e
   forma que se poden buscar («hoy», «pieza», «el diario cuenta», «app», o condicional de rumor, a
-  porcentaxe) e os ladillos das reportaxes con moldes de etiqueta ou xa usados; o que atopa corríxeo un
+  porcentaxe) e os ladillos das reportaxes con moldes de etiqueta ou xa usados; o que atopa corrixeo un
   axente.
 - `scripts/comprobar-corrector.py`: que o corrector de estilo, un axente que repasa cada noite a
   redacción dos artigos do día, non cambiou ningún dato.
 - `scripts/corregir-erratas.py`: «e» ante «i», «u» ante «o», as comiñas españolas en inglés, e avisa
   dos titulares de máis de 90 caracteres.
 - `scripts/revisar-idiomas.py`: castelán que se coou nunha tradución.
-- `scripts/revisar-autoria.py`: o que se atribúe a un autor do diario e é doutra conta.
+- `scripts/revisar-autoria.py`: o que se lle atribúe a un autor do diario e é doutra conta.

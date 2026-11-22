@@ -69,7 +69,9 @@ para los días sin noticias) están en «Cómo se hace el diario», `docs/como-s
   recoge, no solo el nombre de la herramienta o del documento. **Como mucho 90 caracteres**, contando
   los espacios: lo que no quepa va al antetítulo o a la entradilla.
 - **Antetítulo**: de dos a cinco palabras, sin verbo: el tipo de cosa o el ámbito («Guía oficial»,
-  «Nuevo en el repositorio», «Del fondo de EduMedia»).
+  «Nuevo en el repositorio», «Del fondo de EduMedia»). Como en los ladillos, ni empieza por «Qué», «Lo que», «Cómo»
+  o «Por qué» ni lleva «lo» con un participio o un adjetivo: «Estudios sobre IA y aprendizaje», no «Lo que dice la
+  investigación».
 - **Entradilla**: una o dos frases que resumen el artículo (dos o tres en el reportaje). No repite el
   titular: aporta lo siguiente.
 - **El titular y la entradilla no dicen más que el cuerpo ni que la fuente.** Lo que el cuerpo

@@ -117,7 +117,7 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
   cita solo en inglés en una edición no inglesa (va con su traducción al lado). `scripts/revisar-estilo.py` las
   busca cada noche (con su corrector `29-estilo`); los «quien» publicados antes del 15-11-2026 no se tocan. También
   los ladillos de los reportajes (ADR 0098): ni moldes de etiqueta («Qué…», «Lo que…», «X o Y»…) ni uno ya usado; el
-  reportero recibe los publicados en `reportajes-borrador/ladillos-usados.txt`.
+  mismo molde de pregunta o «Lo que…», tampoco en los antetítulos de ninguna sección; el reportero recibe los publicados en `reportajes-borrador/ladillos-usados.txt`.
 - **Corregir una pieza publicada** (ADR 0055): el cambio va en los cinco idiomas a la vez
   (`ediciones`, `biblioteca`, `hace-un-ano` o `reportajes`, y sus `-ca`, `-gl`, `-eu`, `-en`), con la nota en
   `correccion` («Corregido el…», «Actualización del…» o «Nota añadida el…») y el día en `corregido`

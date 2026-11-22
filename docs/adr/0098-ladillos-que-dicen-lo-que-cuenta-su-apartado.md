@@ -26,6 +26,13 @@ hacer un docente» dos veces, el 31-10 y el 7-11.
   anterior o de reserva (comparados sin mayúsculas, tildes ni signos; uno de reserva puesto en `reportajes/` no se
   compara consigo mismo, porque tiene el mismo titular). El corrector reescribe el ladillo con lo que dice el
   apartado, en las cinco lenguas, también en inglés.
+- **También en los antetítulos, de cualquier sección** (añadido el 22-11-2026 por la noche): el reportaje salió con
+  el antetítulo «Lo que dice la investigación», que la comprobación no miraba. Juanjo: «No habiamos dicho de no poner
+  lo con este sentido?». Pasó a «Estudios sobre IA y aprendizaje», en las cinco lenguas y sin nota de corrección,
+  porque no cambia el sentido (ADR 0055). La norma 5 de `revisar-estilo.py` aplica a los antetítulos en castellano
+  solo dos moldes: empezar como una pregunta o con «Lo que», y «lo» con participio o adjetivo. Las parejas no, porque
+  un ámbito como «Del fondo de EduMedia» o «IA y edad en el aula» es un antetítulo correcto. Con `--todo`, sobre todo
+  lo publicado, solo señala ese antetítulo.
 - **Lo publicado no se rehace**: la norma vale desde el reportaje del 22-11-2026, cuyo primer ladillo pasó a «La
   revisión de Stanford solo admite estudios causales» antes de salir. Los otros tres ladillos de ese reportaje que la
   comprobación señala se dejaron como estaban, porque Juanjo solo pidió cambiar el primero.

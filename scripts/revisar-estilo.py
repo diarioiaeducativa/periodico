@@ -22,6 +22,9 @@ escrito cada noche.
    «Del X al Y», «X o Y», «El X y el Y», «X frente a Y», «Más allá de…», «lo aprendido») ni un ladillo ya usado en otro
    reportaje.
    El corrector lo reescribe en las cinco lenguas.
+5. **Antetítulos sin esos moldes** (22-11-2026, ante «Lo que dice la investigación»: «No habiamos dicho de no
+   poner lo con este sentido?»), en todo lo escrito en castellano: ni empezar como una pregunta o con «Lo que», ni
+   «lo» con participio o adjetivo. El corrector lo reescribe en las cinco lenguas.
 Escribe una línea por frase, con la norma, y sale con 4; sin nada, con 0.
 """
 import datetime
@@ -106,6 +109,33 @@ def usados(f, titular):
     return out
 
 
+# En los antetítulos, solo los moldes que no dependen de la forma de titular: «Del fondo de EduMedia» es un ámbito
+ANTE = [MOLDES[0], MOLDES[-1]]
+
+
+def antetitulos(d, ruta=""):
+    """(ruta, antetítulo) de todo el JSON, esté donde esté el campo."""
+    if isinstance(d, dict):
+        for k, v in d.items():
+            r = f"{ruta}.{k}" if ruta else k
+            if k == "antetitulo" and isinstance(v, str):
+                yield r, v
+            else:
+                yield from antetitulos(v, r)
+    elif isinstance(d, list):
+        for i, v in enumerate(d):
+            yield from antetitulos(v, f"{ruta}[{i}]")
+
+
+def revisar_antetitulos(f, d):
+    out = []
+    for ruta, a in antetitulos(d):
+        for nombre, expr in ANTE:
+            if expr.search(a.strip()):
+                out.append(f"{f.relative_to(RAIZ)} · {ruta} · antetítulo genérico: {nombre} · «{a.strip()}»")
+    return out
+
+
 def revisar_ladillos(f):
     titular, ls = ladillos(f)
     if not ls:
@@ -155,6 +185,8 @@ def revisar(f, castellano):
                 cita = m.group(1) or m.group(2) or ""
                 if inglesa(cita) and not TRADUCIDA.match(fr[m.end():]):
                     out.append(f"{f.relative_to(RAIZ)} · {ruta} · cita solo en inglés: {m.group(0)[:120]} · «{fr.strip()[:300]}»")
+    if castellano:
+        out += revisar_antetitulos(f, d)
     if castellano and f.parent.name == "reportajes":
         out += revisar_ladillos(f)
     return out
