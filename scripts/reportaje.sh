@@ -79,6 +79,15 @@ if ! hay "reportajes-borrador/$FECHA-tema.json"; then   # siempre hay reportaje:
   hay "reportajes-borrador/$FECHA-tema.json" || sin "el jefe de reportajes no ha encontrado tema ni a la segunda"
 fi
 
+# Los ladillos ya publicados, para que el reportero no repita ninguno (ADR 0098)
+python3 - > reportajes-borrador/ladillos-usados.txt <<'PY' 2>>"$REG"
+import glob, json
+for f in sorted(glob.glob("reportajes/20*.json")) + sorted(glob.glob("reserva/reportajes/*/reportajes.json")):
+    try:
+        print("\n".join(a["ladillo"] for a in json.load(open(f)).get("apartados", []) if a.get("ladillo")))
+    except (OSError, ValueError, KeyError):
+        pass
+PY
 for intento in 1 2; do
   agente "$OPUS" 8-reportaje-redaccion 60
   json_ok "reportajes-borrador/$FECHA.json" && break

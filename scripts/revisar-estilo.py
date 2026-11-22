@@ -17,6 +17,10 @@ escrito cada noche.
    «pieza» ante el lector; «el diario cuenta» o «contó»; «app», «online» y «link» en minúscula (los nombres propios
    van con mayúscula); «la AI»; el condicional de rumor («habría lanzado»), y el porcentaje sin espacio («25%»).
    Lo que es otro sentido o un nombre propio lo deja el corrector, que lo dice.
+4. **Ladillos que dicen lo que cuenta su apartado** (ADR 0098; 22-11-2026, ante «Qué cuenta como prueba»: «se ve
+   enseguida que son de ia»), en los reportajes en castellano: ni moldes de etiqueta («Qué…», «Lo que…», «Cómo…»,
+   «Del X al Y», «X o Y», «El X y el Y», «X frente a Y», «Más allá de…») ni un ladillo ya usado en otro reportaje.
+   El corrector lo reescribe en las cinco lenguas.
 Escribe una línea por frase, con la norma, y sale con 4; sin nada, con 0.
 """
 import datetime
@@ -25,6 +29,7 @@ import json
 import pathlib
 import re
 import sys
+import unicodedata
 
 RAIZ = pathlib.Path(__file__).resolve().parent.parent
 _spec = importlib.util.spec_from_file_location("autoria", RAIZ / "scripts" / "revisar-autoria.py")
@@ -53,6 +58,66 @@ NORMAS = [
     ("porcentaje sin espacio: «25 %»", re.compile(r"\d%"), ()),
 ]
 URL = re.compile(r"\]\([^)]*\)|https?://\S+|pieza:\S+")
+# Los moldes de ladillo que suenan a IA (ADR 0098): etiquetas que valdrían para cualquier texto
+MOLDES = [
+    ("empieza como una pregunta o con «Lo que»",
+     re.compile(r"^¿?(?:Qué|Que|Cómo|Por qué|Para qué|Cuándo|Dónde|Quién|Quiénes|Cuál|Cuáles|Cuánto|Cuántos|Cuánta|"
+                r"Cuántas|Lo que|Lo \w+ que)\b")),
+    ("pareja abstracta «Del X al Y»", re.compile(r"^De(?:l| la| los| las)? \w+ (?:a|al|a la|a los|a las) \w+$")),
+    ("pareja abstracta «X o Y»", re.compile(r"^\w+ o \w+$")),
+    ("pareja abstracta «El X y el Y»", re.compile(r"^(?:El|La|Los|Las) \w+ y (?:el|la|los|las) \w+$")),
+    ("pareja abstracta «X frente a Y»", re.compile(r"^(?:\w+ ){0,2}\w+ frente a (?:\w+ ){0,2}\w+$")),
+    ("frase hecha «Más allá de…»", re.compile(r"^Más allá del?\b")),
+]
+
+
+def normal(t):
+    t = unicodedata.normalize("NFD", t.lower())
+    return " ".join(re.sub(r"[^\w ]", " ", "".join(c for c in t if not unicodedata.combining(c))).split())
+
+
+def ladillos(f):
+    try:
+        d = json.loads(f.read_text())
+    except (OSError, ValueError):
+        return None, []
+    return d.get("titular"), [(i, a.get("ladillo") or "") for i, a in enumerate(d.get("apartados") or [])]
+
+
+def usados(f, titular):
+    """Los ladillos de los reportajes anteriores a este y de los de reserva: {ladillo normalizado: archivo}.
+    Uno de reserva ya puesto en reportajes/ tiene el mismo titular que su original: ese no cuenta."""
+    out = {}
+    otros = [g for g in (RAIZ / "reportajes").glob("20*.json") if g.stem < f.stem]
+    otros += list((RAIZ / "reserva" / "reportajes").glob("*/reportajes.json"))
+    for g in sorted(otros):
+        if g.resolve() == f.resolve():
+            continue
+        t, ls = ladillos(g)
+        if t != titular:
+            for _, l in ls:
+                out.setdefault(normal(l), g.relative_to(RAIZ))
+    return out
+
+
+def revisar_ladillos(f):
+    titular, ls = ladillos(f)
+    if not ls:
+        return []
+    out, previos, aqui = [], usados(f, titular), set()
+    for i, l in ls:
+        l = l.strip()
+        if not l:
+            continue
+        sitio = f"{f.relative_to(RAIZ)} · apartados[{i}].ladillo · ladillo genérico"
+        for nombre, expr in MOLDES:
+            if expr.search(l):
+                out.append(f"{sitio}: {nombre} · «{l}»")
+        n = normal(l)
+        if n in previos or n in aqui:
+            out.append(f"{sitio}: repite uno ya usado ({previos.get(n, 'en este mismo reportaje')}) · «{l}»")
+        aqui.add(n)
+    return out
 
 
 def inglesa(t):
@@ -84,6 +149,8 @@ def revisar(f, castellano):
                 cita = m.group(1) or m.group(2) or ""
                 if inglesa(cita) and not TRADUCIDA.match(fr[m.end():]):
                     out.append(f"{f.relative_to(RAIZ)} · {ruta} · cita solo en inglés: {m.group(0)[:120]} · «{fr.strip()[:300]}»")
+    if castellano and f.parent.name == "reportajes":
+        out += revisar_ladillos(f)
     return out
 
 

@@ -76,8 +76,9 @@ fondo y no haya tenido reportaje.
   semana da para varias ideas, se elige la que más ayude al docente y se dice en la entradilla.
 - Titular claro, con verbo, sin preguntas. Antetítulo de 2-5 palabras. Entradilla de dos o
   tres frases que diga de qué va y qué se lleva el lector.
-- Entre 1.200 y 1.800 palabras de cuerpo, en 4 a 6 apartados con ladillo (un sustantivo o
-  una frase corta, sin imitar preguntas frecuentes). Párrafos de 3 a 6 frases.
+- Entre 1.200 y 1.800 palabras de cuerpo, en 4 a 6 apartados con ladillo. Cada ladillo dice lo que cuenta su
+  apartado, como manda el libro de estilo («Ladillos»), y no repite ninguno de los ya publicados, que están en
+  `reportajes-borrador/ladillos-usados.txt`. Párrafos de 3 a 6 frases.
 - Negritas con mesura: dos o tres ideas en todo el reportaje.
 - Se entiende solo, sin haber estado en los grupos ni haber leído las piezas diarias.
 

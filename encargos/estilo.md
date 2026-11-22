@@ -75,6 +75,11 @@ para los días sin noticias) están en «Cómo se hace el diario», `docs/como-s
 - **El titular y la entradilla no dicen más que el cuerpo ni que la fuente.** Lo que el cuerpo
   matiza («según la empresa», «en los planes de pago», «es una hipótesis del autor») no desaparece
   arriba. Una prueba sin nada con que comparar no «demuestra» ni «sugiere» una causa.
+- **Ladillos** (los títulos de los apartados de un reportaje): un titular pequeño que dice lo que cuenta su apartado
+  (quién hace qué, el dato), con verbo si se puede y como mucho 60 caracteres: «La revisión de Stanford solo admite
+  estudios causales», no «Qué cuenta como prueba». Nada de etiquetas que valdrían para cualquier texto: ni empezar
+  por «Qué», «Lo que», «Cómo» o «Por qué», ni parejas abstractas («Entender o entregar», «El medio y el método»,
+  «Del producto al proceso»), ni «Más allá de…». Ninguno repite el de otro reportaje.
 - **Lo que no es de estos días lleva su fecha en el titular**: un informe de agosto no «se publica»
   hoy, es «Un informe de agosto…».
 
@@ -205,7 +210,8 @@ al revisor:
 
 - `scripts/revisar-estilo.py`: el «quien» relativo, las citas solo en inglés y las normas de vocabulario y
   forma que se pueden buscar («hoy», «pieza», «el diario cuenta», «app», el condicional de rumor, el
-  porcentaje); lo que encuentra lo corrige un agente.
+  porcentaje) y los ladillos de los reportajes con moldes de etiqueta o ya usados; lo que encuentra lo corrige un
+  agente.
 - `scripts/comprobar-corrector.py`: que el corrector de estilo, un agente que repasa cada noche la
   redacción de los artículos del día, no ha cambiado ningún dato.
 - `scripts/corregir-erratas.py`: «e» ante «i», «u» ante «o», las comillas españolas en inglés, y avisa

@@ -99,5 +99,6 @@
 | [0095](0095-oferta-de-los-avisos-en-la-portada-de-la-app.md) | Oferta de los avisos del número en la portada de la app |
 | [0096](0096-la-app-abre-tambien-sin-chrome-con-el-navegador-interno-de-android.md) | La app abre también sin Chrome, con el navegador interno de Android |
 | [0097](0097-tiza-y-algoritmo-con-gorro-en-navidad.md) | Tiza y Algoritmo con gorro en las vacaciones de Navidad |
+| [0098](0098-ladillos-que-dicen-lo-que-cuenta-su-apartado.md) | Ladillos que dicen lo que cuenta su apartado |
 
 Plantilla: [0000-plantilla.md](0000-plantilla.md). Para crear uno: `nuevo-adr "Título"`.
