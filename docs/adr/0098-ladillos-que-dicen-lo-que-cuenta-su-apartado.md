@@ -15,8 +15,10 @@ hacer un docente» dos veces, el 31-10 y el 7-11.
 
 - **La norma, en el libro de estilo** (`encargos/estilo.md`, «Ladillos»): cada ladillo es un titular pequeño que dice
   lo que cuenta su apartado (quién hace qué, el dato), con verbo si se puede y como mucho 60 caracteres. Ni empieza
-  por «Qué», «Lo que», «Cómo» o «Por qué», ni es una pareja abstracta, ni «Más allá de…», ni repite el de otro
-  reportaje. El encargo del reportaje remite a ella.
+  por «Qué», «Lo que», «Cómo» o «Por qué», ni es una pareja abstracta, ni «Más allá de…», ni usa «lo» con un
+  participio o un adjetivo («lo aprendido»), ni repite el de otro reportaje. Lo del «lo» se añadió el mismo día, cuando
+  Juanjo vio «Con IA el trabajo mejora, pero lo aprendido no siempre»: «No me gusta ese LO. me da la impresión que es
+  lo mismo de antes». El encargo del reportaje remite a ella.
 - **El reportero recibe los ladillos ya publicados**: `reportaje.sh` deja en `reportajes-borrador/ladillos-usados.txt`
   los de `reportajes/` y los de los reportajes de reserva antes de que escriba.
 - **Una comprobación sin IA** en `scripts/revisar-estilo.py` (norma 4), que ya pasa cada noche con su corrector

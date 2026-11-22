@@ -11,7 +11,7 @@ Lee antes el libro de estilo del diario, encargos/estilo.md: vale entero para es
 - **«AI»** con artículo español: «IA».
 - **Condicional de rumor** («habría lanzado»): «según [la fuente], ha lanzado» o «es posible que haya lanzado», con la fuente que dé el artículo.
 - **Porcentaje sin espacio**: «25 %».
-- **Ladillo genérico** (el título de un apartado de reportaje): reescríbelo como un titular pequeño que diga lo que cuenta ese apartado, sacado de sus párrafos: quién hace qué, el dato o la cifra, con verbo si se puede y como mucho 60 caracteres («La revisión de Stanford solo admite estudios causales», no «Qué cuenta como prueba»). Que no empiece por «Qué», «Lo que», «Cómo» ni «Por qué», que no sea una pareja abstracta («Entender o entregar», «El medio y el método», «Del producto al proceso») y que no repita el ladillo de otro reportaje (los de reportajes/*.json). No digas nada que no esté en el apartado.
+- **Ladillo genérico** (el título de un apartado de reportaje): reescríbelo como un titular pequeño que diga lo que cuenta ese apartado, sacado de sus párrafos: quién hace qué, el dato o la cifra, con verbo si se puede y como mucho 60 caracteres («La revisión de Stanford solo admite estudios causales», no «Qué cuenta como prueba»). Que no empiece por «Qué», «Lo que», «Cómo» ni «Por qué», que no sea una pareja abstracta («Entender o entregar», «El medio y el método», «Del producto al proceso»), que no use «lo» con participio o adjetivo («lo aprendido», «lo importante») y que no repita el ladillo de otro reportaje (los de reportajes/*.json). No digas nada que no esté en el apartado.
 
 Si una frase de la lista no incumple de verdad la norma (otro sentido, un nombre propio), no la cambies y dilo en tu respuesta.
 

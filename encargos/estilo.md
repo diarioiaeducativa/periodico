@@ -79,7 +79,8 @@ para los días sin noticias) están en «Cómo se hace el diario», `docs/como-s
   (quién hace qué, el dato), con verbo si se puede y como mucho 60 caracteres: «La revisión de Stanford solo admite
   estudios causales», no «Qué cuenta como prueba». Nada de etiquetas que valdrían para cualquier texto: ni empezar
   por «Qué», «Lo que», «Cómo» o «Por qué», ni parejas abstractas («Entender o entregar», «El medio y el método»,
-  «Del producto al proceso»), ni «Más allá de…». Ninguno repite el de otro reportaje.
+  «Del producto al proceso»), ni «Más allá de…», ni «lo» con un participio o un adjetivo, esté donde esté («lo aprendido», «lo importante»).
+  Ninguno repite el de otro reportaje.
 - **Lo que no es de estos días lleva su fecha en el titular**: un informe de agosto no «se publica»
   hoy, es «Un informe de agosto…».
 

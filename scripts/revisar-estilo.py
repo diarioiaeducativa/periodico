@@ -19,7 +19,8 @@ escrito cada noche.
    Lo que es otro sentido o un nombre propio lo deja el corrector, que lo dice.
 4. **Ladillos que dicen lo que cuenta su apartado** (ADR 0098; 22-11-2026, ante «Qué cuenta como prueba»: «se ve
    enseguida que son de ia»), en los reportajes en castellano: ni moldes de etiqueta («Qué…», «Lo que…», «Cómo…»,
-   «Del X al Y», «X o Y», «El X y el Y», «X frente a Y», «Más allá de…») ni un ladillo ya usado en otro reportaje.
+   «Del X al Y», «X o Y», «El X y el Y», «X frente a Y», «Más allá de…», «lo aprendido») ni un ladillo ya usado en otro
+   reportaje.
    El corrector lo reescribe en las cinco lenguas.
 Escribe una línea por frase, con la norma, y sale con 4; sin nada, con 0.
 """
@@ -68,6 +69,11 @@ MOLDES = [
     ("pareja abstracta «El X y el Y»", re.compile(r"^(?:El|La|Los|Las) \w+ y (?:el|la|los|las) \w+$")),
     ("pareja abstracta «X frente a Y»", re.compile(r"^(?:\w+ ){0,2}\w+ frente a (?:\w+ ){0,2}\w+$")),
     ("frase hecha «Más allá de…»", re.compile(r"^Más allá del?\b")),
+    # «lo aprendido», «lo importante», esté donde esté (Juanjo, 22-11-2026: «No me gusta ese LO»)
+    ("«lo» con participio o adjetivo («lo aprendido»)",
+     re.compile(r"\b[Ll]o (?:\w+(?:ad|id)[oa]|hecho|dicho|escrito|visto|puesto|importante|esencial|fundamental|"
+                r"principal|nuevo|mejor|peor|bueno|malo|único|mismo|demás|básico|necesario|posible|difícil|fácil|"
+                r"justo|cierto|propio|contrario)\b")),
 ]
 
 
