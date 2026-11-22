@@ -129,6 +129,7 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
 
 ## Piezas
 
+- **Qué sale cada día** (el detalle, en cada pieza): el reportaje, el domingo (se escribe la noche del sábado, con la fecha del sábado en `reportajes/`); la columna de opinión, el miércoles (la noche del martes); el comentario de la semana, con el número del lunes (la noche del domingo); «La semana del repositorio», el viernes; «Hace un año», cada día; «La semana en vídeo», la noche del sábado, y el dominical, el domingo a las 9:00.
 - **Reportaje del domingo** (ADR 0004): `scripts/reportaje.sh`, que lanza
   `noche.sh` los sábados (o con `REPORTAJE=1`).
 - **Revisión de dibujos** (ADR 0005): `scripts/revisar-dibujos.py`; lo que
