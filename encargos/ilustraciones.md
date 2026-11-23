@@ -30,7 +30,8 @@ esa frase, no los rótulos del dibujo). No cambies nada más de los JSON.
     `r`: trazo rojo (como mucho un detalle por dibujo: una marca, una flecha clave),
   - `fa`: relleno azul pálido (fondos de formas), `ft`: relleno de tinta (puntos,
     detalles macizos pequeños), `fz`: relleno azul,
-  - `lbl`: rótulos de texto (como mucho cinco, de una a tres palabras, en castellano).
+  - `lbl`: rótulos de texto (como mucho cinco, de una a tres palabras, en castellano). Para
+    destacar uno, `class="a lbl"` (o `r lbl`): sale en ese color, sin contorno.
 - Trazo de línea limpia, como dibujado con rotulador fino; la hoja ya pone grosor 2,5 y
   extremos redondeados. Formas sencillas, mucho aire, composición equilibrada que use
   todo el ancho.

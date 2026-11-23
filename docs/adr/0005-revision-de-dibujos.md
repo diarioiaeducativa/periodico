@@ -40,3 +40,23 @@ comprobación con programa y un revisor con IA, y lo aprobó.
   dibujo estropeado a propósito (forma sin clase, rótulos pisados y fuera del dibujo) detecta
   todo, el revisor dice qué quitar, el ilustrador lo arregla y la segunda ronda lo aprueba en un
   minuto; con un ilustrador simulado que no arregla nada, la pieza sale sin dibujo y se avisa.
+
+## Ampliación del 23-11-2026: rótulos con contorno
+
+El número del 22-11-2026 salió con dos rótulos ilegibles: «Dirección creativa» y «IA revela»
+llevaban `class="a lbl"` para destacarlos, y la clase `a` les ponía el trazo de 2,5 de los dibujos,
+que emborronaba las letras hasta no leerse. Pasó las dos revisiones: el programa no miraba el
+contorno de los rótulos y el revisor visual dio el dibujo por bueno con una captura a tamaño real
+(514 px de ancho), donde el borrón parece una negrita. Juanjo lo vio en la web.
+
+- **La hoja de estilo** (`estaticos/comun.css`) quita el contorno a todo `<text>` con clase de
+  trazo (`t`, `a`, `r`) y pinta del color de la clase los que llevan `a` o `r`: destacar un rótulo
+  con su color es útil y el ilustrador lo seguirá haciendo, así que se admite y se dice en
+  `encargos/ilustraciones.md`. Arregla también lo ya publicado, la tarjeta de compartir e Instagram,
+  que usan la misma hoja.
+- **El programa** avisa de cualquier rótulo con contorno, venga de donde venga.
+- **Las capturas** se hacen a doble resolución, para que el revisor visual vea la letra.
+
+Validación (23-11-2026), sobre el día 22 en los cinco idiomas: con la hoja anterior, el programa
+marca los dos rótulos en los dos temas; con la nueva, los cuatro dibujos pasan, también el contraste
+del rótulo en color (4,5:1), y las capturas se leen bien.

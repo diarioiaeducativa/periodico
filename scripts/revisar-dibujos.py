@@ -60,6 +60,9 @@ MEDIR = """(fig) => {
   rotulos.forEach(r => {
     if (r.b.left < caja.left - 1 || r.b.right > caja.right + 1 || r.b.top < caja.top - 1 || r.b.bottom > caja.bottom + 1)
       out.push(`el rótulo «${r.t}» se sale del dibujo`);
+    const st = getComputedStyle(r.el);   // un contorno en las letras las emborrona hasta no leerse
+    if (st.stroke !== 'none' && parseFloat(st.strokeWidth) > 0 && rgb(st.stroke)[3] !== 0)
+      out.push(`el rótulo «${r.t}» lleva contorno (${st.strokeWidth}): las letras se emborronan`);
     const c = contraste(rgb(getComputedStyle(r.el).fill), fondo);
     if (c < 4.5) out.push(`el rótulo «${r.t}» tiene poco contraste con el fondo (${c.toFixed(1)}:1)`);
   });
@@ -140,7 +143,8 @@ def main():
             nav = pw.chromium.launch()
             try:
                 for tema, nombre in (("light", "claro"), ("dark", "oscuro")):
-                    pg = nav.new_page(color_scheme=tema, viewport={"width": 1100, "height": 900})
+                    # a doble resolución: a tamaño real, unas letras emborronadas pasan por buenas (22-11-2026)
+                    pg = nav.new_page(color_scheme=tema, viewport={"width": 1100, "height": 900}, device_scale_factor=2)
                     pg.set_default_timeout(20000)
                     for d in lista:
                         pg.goto(base + d["pagina"], wait_until="load")
