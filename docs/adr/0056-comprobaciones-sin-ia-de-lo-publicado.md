@@ -25,8 +25,10 @@ Dos programas corrientes, sin IA, que no impiden nunca que el número salga:
   parecen castellano. Un texto corto (hasta 20 palabras: un rótulo, un dato de una ficha) basta que lleve
   una palabra que no existe en esa lengua («y», «con», «los», «las» en catalán); uno largo necesita tres
   distintas y una de cada doce. No cuenta lo marcado con `lang="es"`, los títulos en cursiva o entre
-  comillas, las fuentes de «Comprobado en», el texto de los enlaces en la regla de una sola palabra, ni
-  una lista de nombres propios. Lo que encuentra va a `registro/FECHA-idiomas.txt` y a un aviso a quien
+  comillas, las fuentes de «Comprobado en», el título de la ficha de un documento o un recurso (desde el
+  23-11-2026: «Editor Musical Interactivo con Audio» y el título de un manual de la Biblioteca daban falsas
+  alarmas; la ficha lo marca con `class="titulo-original"` y, si se sabe, con el `lang` de su idioma), el
+  texto de los enlaces en la regla de una sola palabra, ni una lista de nombres propios. Lo que encuentra va a `registro/FECHA-idiomas.txt` y a un aviso a quien
   revisa el número, antes de que salga.
 - **`scripts/revisar-enlaces.py --avisar`**, la noche del miércoles, en segundo plano y con el número ya
   listo: abre los enlaces externos de todo lo publicado (155 direcciones de 102 servidores el 13-11) y da

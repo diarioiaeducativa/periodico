@@ -2249,8 +2249,29 @@ def enlaces_recurso(r):
     return " · ".join(partes)
 
 
+# El idioma de un documento, tal como lo escribe su ficha en cualquiera de las cinco ediciones, a su código
+IDIOMAS_DOC = {n: c for c, ns in {
+    "es": "castellano español castellà espanyol gaztelania gaztelaniaz espainiera spanish castilian",
+    "ca": "catalán català catalán katalana katalanez catalan",
+    "gl": "gallego galego galiziera galizieraz galician",
+    "eu": "euskera basc éuscaro euskara euskaraz vasco basque",
+    "en": "inglés anglès inglés ingelesa ingelesez english",
+    "fr": "francés francès francés frantsesa frantsesez french",
+    "pt": "portugués portuguès portugués portugesa portugesez portuguese",
+}.items() for n in ns.split()}
+
+
+def dd_titulo(titulo, idioma=""):
+    """El título de una ficha va como es, sin traducir: se marca como título original para que el comprobador de
+    las traducciones no lo tome por castellano colado (scripts/revisar-idiomas.py) y, si se sabe su idioma, con
+    él, para que los lectores de pantalla lo pronuncien bien (Juanjo, 23-11-2026)."""
+    c = IDIOMAS_DOC.get((idioma or "").strip().lower(), "")
+    lang = f' lang="{c}"' if c and c != L["codigo"] else ""
+    return f'<dd class="titulo-original"{lang}>{e(titulo)}</dd>'
+
+
 def ficha_recurso(pid, r):
-    filas = "".join(f"<dt>{L[k]}</dt><dd>{e(r.get(c))}</dd>" for k, c in
+    filas = "".join(f"<dt>{L[k]}</dt>" + (dd_titulo(r[c]) if c == "titulo" else f"<dd>{e(r.get(c))}</dd>") for k, c in
                     (("rec_titulo", "titulo"), ("rec_autoria", "autoria"), ("rec_licencia", "licencia")) if r.get(c))
     return (f'<aside class="ficha-doc" aria-labelledby="rec-{e(pid)}"><h2 id="rec-{e(pid)}">{L["el_recurso"]}</h2>'
             f'<dl>{filas}</dl><p class="doc-leer" data-pagefind-ignore>{enlaces_recurso(r)}</p></aside>')
@@ -2279,7 +2300,7 @@ def articulo(prof, ruta, d, p, eds):
     doc = p.get("documento") or {}
     ficha_doc = ""
     if doc:
-        filas = "".join(f"<dt>{L[k]}</dt><dd>{e(doc.get(c))}</dd>" for k, c in
+        filas = "".join(f"<dt>{L[k]}</dt>" + (dd_titulo(doc[c], doc.get("idioma")) if c == "titulo" else f"<dd>{e(doc.get(c))}</dd>") for k, c in
                         (("doc_titulo", "titulo"), ("doc_autoria", "autoria"), ("doc_anyo", "anyo"), ("doc_idioma", "idioma"), ("doc_licencia", "licencia")) if doc.get(c))
         # Siempre dónde está el documento (Juanjo, 22-11-2026, ADR 0099): el original oficial o, si no lo hay, la
         # descarga que da su ficha, y el mensaje de la Biblioteca digital donde lo guarda la comunidad

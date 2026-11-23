@@ -15,7 +15,8 @@ en esa lengua.
 Escribe una línea por hallazgo (idioma, página y el texto) y termina con 1 si hay alguno.
 
 No se cuenta como castellano: lo marcado con `lang="es"`, los títulos en cursiva y entre comillas (obras y
-citas, que no se traducen), las fuentes de «Comprobado en» (se citan con su título original), los nombres
+citas, que no se traducen), las fuentes de «Comprobado en» y el título de la ficha de un documento o un
+recurso (se citan con su título original; la ficha lo marca con `class="titulo-original"`), los nombres
 propios de la lista y las páginas que guardan el texto de otros (los datos del widget). Es un detector de
 errores de bulto: prefiere callar una frase dudosa a dar un aviso falso cada mañana.
 """
@@ -59,6 +60,7 @@ FUERA = re.compile(
     r"<(script|style|template|svg|code|pre)\b.*?</\1>"
     r"|<(em|i|cite|q)\b[^>]*>.*?</\2>"
     r"|<section class=\"comprobado\".*?</section>"
+    r"|<dd class=\"titulo-original\"[^>]*>.*?</dd>"
     r"|<(\w+)\b[^>]*\blang=\"es\"[^>]*>.*?</\3>"
     r"|<(\w+)\b[^>]*\bhreflang=\"es\"[^>]*>.*?</\4>",
     re.S)
