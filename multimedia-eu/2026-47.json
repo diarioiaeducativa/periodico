@@ -1,0 +1,17 @@
+{
+  "semana": "2026-47",
+  "grupos": {
+    "chatgpt": {
+      "resumen": "Bideoak ChatGPT-IA-edu taldeko 18 parte-hartzaileren 98 mezu errepasatzen ditu. Clark eta Kozmaren arteko eztabaidatik abiatzen da, emaitza ezberdinak dituzten Stanfordeko 52 azterlan kausalak irakurtzeko, eta Carnegie Mellon-eko azterlan batetik, galderen bidez gidatzen duen AA tutore bati buruzkoa. Jarraian, Notion-en diktatua ordenatzen duen irakasleen gogoeta-egunkari bat, hizkuntza-eskola baten dekalogoa, Galiziako hezkuntza digitalaren legea eta Kanadako AA alfabetatzea datoz.",
+      "origen": "El vídeo repasa 98 mensajes de 18 participantes de ChatGPT-IA-edu. Parte del debate entre Clark y Kozma para leer los 52 estudios causales de Stanford, de resultados desiguales, y un estudio de Carnegie Mellon sobre un tutor de IA que guía con preguntas. Sigue con un diario reflexivo docente que ordena el dictado en Notion, el decálogo de una escuela de idiomas, la ley gallega de educación digital y la alfabetización en IA de Canadá."
+    },
+    "vce": {
+      "resumen": "Bideoak Vibe Coding Educativo taldeko 18 parte-hartzaileren 58 mezu errepasatzen ditu. Trama aurkezten du, Aarón Fortuñoren irakurgaien katalogoa, unibertsoekin, zailtasun-aldaerekin eta cookierik gabeko analitikarekin; Magda Diaz-Gren zelula robotizatua, Gemini eta Claude-rekin egina; garra-proba egiteko laborategi bat errealitate hedatuan, eta Agente Clima IES. Azaltzen du, halaber, zenbat kostatzen den aplikazio bat Google Play-n argitaratzea, eta taldearen hizkuntzari buruzko eztabaida jasotzen du.",
+      "origen": "El vídeo repasa 58 mensajes de 18 participantes de Vibe Coding Educativo. Presenta Trama, el catálogo de lecturas de Aarón Fortuño, con universos, variantes de dificultad y analítica sin cookies; la celda robotizada de Magda Diaz-G, hecha con Gemini y Claude; un laboratorio de ensayo a la llama en realidad extendida y Agente Clima IES. Explica también qué cuesta publicar una app en Google Play y recoge el debate sobre el idioma del grupo."
+    },
+    "edumedia": {
+      "resumen": "Bideoak EduMedia-IAG taldeko zortzi parte-hartzaileren 116 mezu errepasatzen ditu. Azaltzen du nola eraman Moodle-ra Gemini Notebook-eko gune bat, eta Genie 4-ren probak eta Ethan Mollicken esperimentua ere jasotzen ditu, agenteek sortutako 450 mundu baino gehiagorekin. Suno Visuals, Kling Image 4.0, Google Vids-en avatar doakeak eta GPT-6.2 Astra aztertzen ditu, eta oharrekin amaitzen du: Manchester Animation Festival-ek AA sortzailea debekatu izana, Marble-ren itxiera eta Google Flow-k kentzen dituen ereduak.",
+      "origen": "El vídeo repasa 116 mensajes de ocho participantes de EduMedia-IAG. Explica cómo llevar a Moodle un sitio de Gemini Notebook, las pruebas de Genie 4 y el experimento de Ethan Mollick con más de 450 mundos creados por agentes. Recorre Suno Visuals, Kling Image 4.0, los avatares gratuitos de Google Vids y GPT-6.2 Astra, y cierra con avisos: el veto del Manchester Animation Festival a la IA generativa, el cierre de Marble y los modelos que retira Google Flow."
+    }
+  }
+}

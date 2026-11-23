@@ -1,0 +1,17 @@
+{
+  "semana": "2026-47",
+  "grupos": {
+    "chatgpt": {
+      "resumen": "The video looks back over 98 messages from 18 participants in ChatGPT-IA-edu. It starts from the debate between Clark and Kozma to read the 52 causal studies from Stanford, whose results are uneven, and a Carnegie Mellon study on an AI tutor that guides students with questions. It goes on to a teacher's reflective journal organised from dictation in Notion, a language school's ten-point code, the Galician digital education law and AI literacy in Canada.",
+      "origen": "El vídeo repasa 98 mensajes de 18 participantes de ChatGPT-IA-edu. Parte del debate entre Clark y Kozma para leer los 52 estudios causales de Stanford, de resultados desiguales, y un estudio de Carnegie Mellon sobre un tutor de IA que guía con preguntas. Sigue con un diario reflexivo docente que ordena el dictado en Notion, el decálogo de una escuela de idiomas, la ley gallega de educación digital y la alfabetización en IA de Canadá."
+    },
+    "vce": {
+      "resumen": "The video looks back over 58 messages from 18 participants in Vibe Coding Educativo. It presents Trama, Aarón Fortuño's catalogue of readings, with universes, difficulty variants and cookie-free analytics; Magda Diaz-G's robotised cell, made with Gemini and Claude; an extended-reality laboratory for flame tests and Agente Clima IES. It also explains what it costs to publish an app on Google Play and covers the debate about the group's language.",
+      "origen": "El vídeo repasa 58 mensajes de 18 participantes de Vibe Coding Educativo. Presenta Trama, el catálogo de lecturas de Aarón Fortuño, con universos, variantes de dificultad y analítica sin cookies; la celda robotizada de Magda Diaz-G, hecha con Gemini y Claude; un laboratorio de ensayo a la llama en realidad extendida y Agente Clima IES. Explica también qué cuesta publicar una app en Google Play y recoge el debate sobre el idioma del grupo."
+    },
+    "edumedia": {
+      "resumen": "The video looks back over 116 messages from eight participants in EduMedia-IAG. It explains how to bring a Gemini Notebook site into Moodle, the tests of Genie 4 and Ethan Mollick's experiment with more than 450 worlds created by agents. It runs through Suno Visuals, Kling Image 4.0, Google Vids' free avatars and GPT-6.2 Astra, and closes with warnings: the Manchester Animation Festival's ban on generative AI, the closure of Marble and the models Google Flow is withdrawing.",
+      "origen": "El vídeo repasa 116 mensajes de ocho participantes de EduMedia-IAG. Explica cómo llevar a Moodle un sitio de Gemini Notebook, las pruebas de Genie 4 y el experimento de Ethan Mollick con más de 450 mundos creados por agentes. Recorre Suno Visuals, Kling Image 4.0, los avatares gratuitos de Google Vids y GPT-6.2 Astra, y cierra con avisos: el veto del Manchester Animation Festival a la IA generativa, el cierre de Marble y los modelos que retira Google Flow."
+    }
+  }
+}
