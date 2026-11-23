@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # SPDX-License-Identifier: AGPL-3.0-or-later
 # Vuelve a publicar solo la web, sin avisos al bot ni Instagram, cuando el proceso del boletín deja en
-# multimedia/AAAA-WW.json el pódcast y el vídeo de NotebookLM de la semana (ADR 0034). Lo lanza reloj.sh,
+# multimedia/AAAA-WW.json el pódcast y el vídeo de Gemini Notebook de la semana (ADR 0034). Lo lanza reloj.sh,
 # siempre con el número del día ya publicado. Guarda además ese archivo en el repositorio de la redacción.
 #
 #   scripts/publicar-web.sh

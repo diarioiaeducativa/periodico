@@ -62,6 +62,9 @@ para los días sin noticias) están en «Cómo se hace el diario», `docs/como-s
 - Los nombres de productos, aplicaciones, grupos y documentos, tal como los escribe la empresa o la persona que los hace
   («ChatGPT», «Vibe Coding Educativo»). Un recurso en catalán u otra lengua se describe en castellano
   y conserva su nombre; el título de una obra queda en su idioma.
+- **Con su nombre de ahora**, aunque el mensaje o la fuente use el antiguo: NotebookLM se llama Gemini Notebook
+  desde el 16 de julio de 2026. La primera vez, si ayuda a reconocerlo, «Gemini Notebook (antes NotebookLM)»;
+  «Hace un año» usa el de entonces, porque habla de entonces.
 
 ## Titulares, antetítulos y entradillas
 

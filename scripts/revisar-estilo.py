@@ -15,7 +15,8 @@ escrito cada noche.
 3. **Vocabulario y forma** (ADR 0083), solo en castellano y fuera de las citas y las direcciones: «hoy», «ayer» y
    «esta semana» (salvo en «Hace un año», que compara con el presente, y en los avisos, que salen ese mismo día);
    «pieza» ante el lector; «el diario cuenta» o «contó»; «app», «online» y «link» en minúscula (los nombres propios
-   van con mayúscula); «la AI»; el condicional de rumor («habría lanzado»), y el porcentaje sin espacio («25%»).
+   van con mayúscula); «la AI»; el condicional de rumor («habría lanzado»); el porcentaje sin espacio («25%»), y
+   el nombre antiguo de un producto («NotebookLM», salvo «antes NotebookLM» o en «Hace un año»).
    Lo que es otro sentido o un nombre propio lo deja el corrector, que lo dice.
 4. **Ladillos que dicen lo que cuenta su apartado** (ADR 0098; 22-11-2026, ante «Qué cuenta como prueba»: «se ve
    enseguida que son de ia»), en los reportajes en castellano: ni moldes de etiqueta («Qué…», «Lo que…», «Cómo…»,
@@ -60,6 +61,10 @@ NORMAS = [
     ("condicional de rumor: mejor «según…, ha…»",
      re.compile(r"\bhabrían? (?:lanzado|presentado|anunciado|publicado|desarrollado|comprado|adquirido|filtrado|cerrado|despedido)\b"), ()),
     ("porcentaje sin espacio: «25 %»", re.compile(r"\d%"), ()),
+    # Los productos, con su nombre de ahora (23-11-2026: «en el diario aparece NotebookLM, pero ya no se llama así»);
+    # el antiguo solo detrás de «antes», «antiguo» o «entonces». «Hace un año» habla de cuando se llamaba así
+    ("«NotebookLM»: se llama Gemini Notebook desde el 16-07-2026; si hace falta, «Gemini Notebook (antes NotebookLM)»",
+     re.compile(r"(?<!antes )(?<!antiguo )(?<!entonces )\bNotebookLM\b"), ("hace-un-ano",)),
 ]
 URL = re.compile(r"\]\([^)]*\)|https?://\S+|pieza:\S+")
 # Los moldes de ladillo que suenan a IA (ADR 0098): etiquetas que valdrían para cualquier texto

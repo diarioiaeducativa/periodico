@@ -80,7 +80,7 @@
       "entradilla": "«El comerç de les espècies» proposa nou capítols interactius, pensats segons el seu autor per a secundària i batxillerat.",
       "cuerpo": [
         "[El comerç de les espècies](https://ja.cat/especies), creada segons el grup per Felip Sarroca i Gil, parteix d'una pregunta: per què unes llavors tan petites van moure vaixells, diners i imperis. Recorre des dels viatges de Marco Polo fins a l'actualitat en nou capítols, cadascun amb una infografia, mapes i activitats, i acaba amb un repte en què s'argumenta la pròpia resposta.",
-        "La web inclou calculadores, mapes de vents, un joc de mercaders, preguntes amb correcció immediata, una opció de lectura fàcil i un glossari. El progrés es desa només al navegador. L'autor explica que, abans de dissenyar-la, va demanar a Codex que es connectés a NotebookLM mitjançant MCP per crear un quadern, reunir fonts i generar materials."
+        "La web inclou calculadores, mapes de vents, un joc de mercaders, preguntes amb correcció immediata, una opció de lectura fàcil i un glossari. El progrés es desa només al navegador. L'autor explica que, abans de dissenyar-la, va demanar a Codex que es connectés a Gemini Notebook (abans NotebookLM) mitjançant MCP per crear un quadern, reunir fonts i generar materials."
       ],
       "fuentes": [
         {"titulo": "El comerç de les espècies", "url": "https://ja.cat/especies"}

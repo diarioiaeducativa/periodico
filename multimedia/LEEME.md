@@ -1,7 +1,7 @@
 # El pódcast y el vídeo de cada semana
 
 Aquí deja el proceso del boletín semanal (contenedor `boletin-semanal` del NAS) un archivo por semana ISO,
-`AAAA-WW.json`, con el pódcast y el vídeo de NotebookLM de cada grupo (ADR 0034). Cuando aparece o cambia,
+`AAAA-WW.json`, con el pódcast y el vídeo de Gemini Notebook de cada grupo (ADR 0034). Cuando aparece o cambia,
 `nas/reloj.sh` vuelve a publicar la web con `scripts/publicar-web.sh`, con el número del día ya publicado.
 
 ```json

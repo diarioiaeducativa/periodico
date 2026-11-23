@@ -25,7 +25,7 @@ propuesta añadió: «no hay que poner detalles técnicos que a los lectores no 
   importa a quien escribe en los grupos, en «Si participas en los grupos»: un mensaje con una orden no la hace
   cumplir. Todo eso sigue explicado en sus ADR (0002, 0021, 0005…).
 - **Se queda lo que es transparencia sobre la IA o privacidad**: qué hace la IA y qué los programas, que el
-  pódcast y el vídeo los hace NotebookLM, y «Las visitas» con sus plazos, que es la política de privacidad de
+  pódcast y el vídeo los hace Gemini Notebook, y «Las visitas» con sus plazos, que es la política de privacidad de
   la app (ADR 0042).
 - **Vocabulario del lector** (Juanjo, 14-11-2026): «artículo» en vez de «pieza», argot de redacción, en todos
   los textos fijos del diario y en los avisos de la reserva; el diario «recoge» o «publica», no «cuenta» («cuenta

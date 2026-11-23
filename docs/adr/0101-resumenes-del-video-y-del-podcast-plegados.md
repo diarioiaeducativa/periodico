@@ -4,7 +4,7 @@ Fecha: 2026-11-23 · Estado: aceptado
 
 ## Contexto
 
-En la página de la semana, cada grupo tiene su vídeo y su pódcast de NotebookLM (ADR 0034). El vídeo llevaba debajo
+En la página de la semana, cada grupo tiene su vídeo y su pódcast de Gemini Notebook (ADR 0034). El vídeo llevaba debajo
 su resumen de unas 72 palabras (ADR 0057), entero; el pódcast, ninguno, porque el boletín solo escribía la
 descripción del vídeo para YouTube. Juanjo pidió el 23-11-2026 que el resumen se abriera al pulsarlo y que el pódcast
 tuviera el suyo. La primera versión plegada ponía un rótulo «Resumen» bajo cada vídeo, y con el pódcast habrían

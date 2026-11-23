@@ -80,7 +80,7 @@
       "entradilla": "«El comerç de les espècies» webguneak bederatzi kapitulu interaktibo proposatzen ditu, bere egilearen arabera bigarren hezkuntzarako eta batxilergorako pentsatuak.",
       "cuerpo": [
         "[El comerç de les espècies](https://ja.cat/especies), taldearen arabera Felip Sarroca i Gilek sortua, galdera batetik abiatzen da: zergatik mugitu zituzten hain hazi txikiek ontziak, dirua eta inperioak. Marco Poloren bidaietatik gaur egunera arte egiten du ibilbidea bederatzi kapitulutan, bakoitza infografia, mapa eta jarduerekin, eta norberaren erantzuna argudiatzen den erronka batekin amaitzen da.",
-        "Webguneak kalkulagailuak, haize-mapak, merkatarien joko bat, berehalako zuzenketadun galderak, irakurketa erraztuko aukera bat eta glosario bat ditu. Aurrerapena nabigatzailean bakarrik gordetzen da. Egileak kontatzen du, diseinatu aurretik, Codexi eskatu ziola NotebookLMrekin MCP bidez konektatzeko koaderno bat sortzeko, iturriak biltzeko eta materialak sortzeko."
+        "Webguneak kalkulagailuak, haize-mapak, merkatarien joko bat, berehalako zuzenketadun galderak, irakurketa erraztuko aukera bat eta glosario bat ditu. Aurrerapena nabigatzailean bakarrik gordetzen da. Egileak kontatzen du, diseinatu aurretik, Codexi eskatu ziola Gemini Notebook-ekin (lehen NotebookLM) MCP bidez konektatzeko koaderno bat sortzeko, iturriak biltzeko eta materialak sortzeko."
       ],
       "fuentes": [
         {"titulo": "El comerç de les espècies (katalanez)", "url": "https://ja.cat/especies"}

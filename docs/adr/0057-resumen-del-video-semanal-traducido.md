@@ -4,7 +4,7 @@ Fecha: 2026-11-13 · Estado: aceptado
 
 ## Contexto
 
-Cada lunes el boletín semanal deja en `multimedia/AAAA-WW.json` el vídeo y el pódcast de NotebookLM de cada
+Cada lunes el boletín semanal deja en `multimedia/AAAA-WW.json` el vídeo y el pódcast de Gemini Notebook de cada
 grupo y unas 70 palabras, en castellano, sobre lo que cuenta el vídeo (ADR 0034). En las ediciones en
 catalán, gallego, euskera e inglés ese resumen salía en castellano; desde el ADR 0056 iba al menos marcado
 como castellano y con una línea que lo decía. Traducirlo quedó entonces como posibilidad, porque llega

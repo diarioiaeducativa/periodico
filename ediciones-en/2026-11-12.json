@@ -80,7 +80,7 @@
       "entradilla": "“El comerç de les espècies” offers nine interactive chapters, designed, according to its author, for secondary school and sixth-form students.",
       "cuerpo": [
         "[El comerç de les espècies](https://ja.cat/especies) (“The spice trade”), created according to the group by Felip Sarroca i Gil, starts from a question: why did such tiny seeds set ships, money and empires in motion? It runs from the voyages of Marco Polo to the present day in nine chapters, each with an infographic, maps and activities, and ends with a challenge in which students argue their own answer.",
-        "The site includes calculators, wind maps, a merchant game, questions with instant feedback, an easy-reading option and a glossary. Progress is saved only in the browser. The author says that, before designing it, he asked Codex to connect to NotebookLM via MCP to create a notebook, gather sources and generate materials."
+        "The site includes calculators, wind maps, a merchant game, questions with instant feedback, an easy-reading option and a glossary. Progress is saved only in the browser. The author says that, before designing it, he asked Codex to connect to Gemini Notebook (formerly NotebookLM) via MCP to create a notebook, gather sources and generate materials."
       ],
       "fuentes": [
         {"titulo": "El comerç de les espècies (in Catalan)", "url": "https://ja.cat/especies"}

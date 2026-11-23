@@ -5,7 +5,7 @@ Fecha: 2026-11-09 · Estado: aceptado
 ## Contexto
 
 La página de cada semana (ADR 0034) lista unas 40 piezas por titular, con el pódcast y el vídeo de
-NotebookLM de cada grupo, pero no dice qué fue lo importante: quien no ha leído los números tiene que
+Gemini Notebook de cada grupo, pero no dice qué fue lo importante: quien no ha leído los números tiene que
 deducirlo de la lista. Juanjo pidió (09-11-2026) un comentario que lo destaque, después del vídeo y el
 pódcast, con una longitud mínima, y que fuera uno por grupo, con uno general si se quería.
 
