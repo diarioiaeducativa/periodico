@@ -29,6 +29,7 @@ Juanjo, 13-11-2026, sabiendo que el vídeo y el pódcast seguirán en castellano
   día.
 - **Con el resumen traducido desaparece la línea «Resumen, vídeo y pódcast en castellano»** de ese grupo: la
   cabecera del bloque ya dice que el pódcast y el vídeo están en castellano.
+- **Desde el 23-11-2026, plegado y con el del pódcast al lado** (ADR 0101), que se traduce igual.
 
 ## Alternativas descartadas
 

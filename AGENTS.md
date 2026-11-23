@@ -227,6 +227,8 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
   `publicar-web.sh` lanza antes `scripts/multimedia-traducir.sh`, que traduce el resumen de cada grupo a
   `multimedia-XX/` (un agente por idioma) solo si falta o si el resumen ha cambiado; `scripts/multimedia.py
   pendientes` dice qué falta. Sin traducción al día, esa edición lo enseña en castellano y lo dice.
+  Desde la semana 2026-47 llega también el del pódcast (`resumen_podcast`, ADR 0101); los dos salen plegados en
+  su entradilla (`resumen_plegado()`).
 - **App de Android y lectura sin conexión** (ADR 0042): `estaticos/sw.js` (primero la red; sin ella,
   lo guardado y `sin-conexion.html`); si cambia lo que guarda, subir `CACHE`. La app es una TWA en
   `android/` (`construeix.sh`, con la clave en `~/.config/diario-ia-educativa/android/`), vinculada por

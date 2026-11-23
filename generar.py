@@ -901,7 +901,7 @@ SCRIPT_FILAS = """<script>
    antes se queda sin texto) y cada una enseña las líneas que caben hasta ahí. La entradilla entera está en el
    artículo. Se rehace al cambiar el ancho. En una sola columna (el móvil) no se toca nada. */
 (function(){
-  var SEL='.fila-destacadas,.mas-dia,.alt-b,.alt-a,.fila-seccion,.fila-breves-hu,.nb-grupos',ENT='.entradilla,.nb-resumen';
+  var SEL='.fila-destacadas,.mas-dia,.alt-b,.alt-a,.fila-seccion,.fila-breves-hu,.nb-grupos',ENT='.entradilla';
   /* Hasta dónde llega lo visible de una pieza: lo que oculta una entradilla recortada no cuenta (ADR 0045) */
   function fondo(el){var m=el.getBoundingClientRect().top,w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT),n,r,i,rs,a,tope;
     while((n=w.nextNode())){if(!n.textContent.trim())continue;tope=Infinity;for(a=n.parentElement;a&&a!==el.parentElement;a=a.parentElement)if(getComputedStyle(a).overflow!=='visible')tope=Math.min(tope,a.getBoundingClientRect().bottom);
@@ -3535,16 +3535,33 @@ def cargar_multimedia(sem):
         return {}
 
 
-def resumen_traducido(sem, g, original):
-    """El resumen del vídeo de un grupo en la lengua de la edición (ADR 0057), si está traducido y la traducción
-    salió del texto de ahora: el boletín puede cambiar el resumen después, y la anterior ya no vale."""
+def resumen_traducido(sem, g, original, campo="resumen"):
+    """El resumen del vídeo (o, con `campo="resumen_podcast"`, del pódcast, ADR 0101) de un grupo en la lengua de la
+    edición (ADR 0057), si está traducido y la traducción salió del texto de ahora: el boletín puede cambiar el
+    resumen después, y la anterior ya no vale."""
     if not L["sufijo"]:
         return None
     try:
         x = json.loads((RAIZ / f"multimedia{L['sufijo']}" / f"{sem}.json").read_text())["grupos"][g]
     except (OSError, ValueError, KeyError, TypeError):
         return None
-    return (x.get("resumen") or None) if isinstance(x, dict) and x.get("origen") == original.strip() else None
+    origen = "origen" if campo == "resumen" else "origen_podcast"
+    return (x.get(campo) or None) if isinstance(x, dict) and x.get(origen) == original.strip() else None
+
+
+def resumen_plegado(sem, g, texto, campo="resumen"):
+    """Un resumen del vídeo o del pódcast, plegado: se abre al pulsarlo (Juanjo, 23-11-2026). El boletín
+    lo escribe en castellano, como el vídeo y el pódcast, y se traduce aparte (ADR 0057). Mientras falta la
+    traducción, en las otras ediciones se marca como castellano (para los lectores de pantalla) y se dice, en vez
+    de pasar por traducido."""
+    trad = resumen_traducido(sem, g, texto, campo)
+    ajeno = L["codigo"] != "es" and not trad
+    lang = ' lang="es"' if ajeno else ""
+    # Cerrado, sus dos primeras líneas, cortadas con «…», y una flecha; al pulsarlo, entero. Sin un rótulo
+    # «Resumen», que se repetía en cada ficha (Juanjo, 23-11-2026)
+    return (f'<details class="nb-plegable"><summary><span class="nb-resumen"{lang}>{e(trad or texto)}</span>'
+            f'<svg class="nb-flecha" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary></details>'
+            + (f'<p class="nb-idioma">{L["nb_castellano"]}</p>' if ajeno else ""))
 
 
 def id_youtube(url):
@@ -3578,20 +3595,13 @@ def bloque_notebook(sem, m):
         if vid:
             video = (f'<div class="nb-video"><button type="button" class="nb-play" data-yt="{e(vid)}" '
                      f'aria-label="{e(L["nb_ver"].format(g=nombre))}">{PLAY}<span>{L["nb_video"]}</span></button></div>')
-        # El resumen lo escribe el boletín en castellano, como el vídeo y el pódcast, y se traduce aparte
-        # (ADR 0057). Mientras falta la traducción, en las otras ediciones se marca como castellano (para los
-        # lectores de pantalla) y se dice, en vez de pasar por traducido
-        resumen = ""
-        if x.get("resumen"):
-            trad = resumen_traducido(sem, g, x["resumen"])
-            ajeno = L["codigo"] != "es" and not trad
-            lang = ' lang="es"' if ajeno else ""
-            resumen = (f'<p class="nb-resumen"{lang}>{e(trad or x["resumen"])}</p>'
-                       + (f'<p class="nb-idioma">{L["nb_castellano"]}</p>' if ajeno else ""))
+        # Cada uno, plegado bajo lo suyo: el del vídeo bajo el vídeo y el del pódcast bajo el audio (ADR 0101)
+        resumen = resumen_plegado(sem, g, x["resumen"]) if x.get("resumen") else ""
         audio = ""
         if x.get("podcast_mp3"):
             audio = (f'<p class="nb-rotulo">{L["nb_podcast"]}</p>'
-                     f'<audio controls preload="none" src="{e(x["podcast_mp3"])}"></audio>')
+                     f'<audio controls preload="none" src="{e(x["podcast_mp3"])}"></audio>'
+                     + (resumen_plegado(sem, g, x["resumen_podcast"], "resumen_podcast") if x.get("resumen_podcast") else ""))
         enlaces = []
         if x.get("video"):
             enlaces.append(enlace(x["video"], L["nb_youtube"]))

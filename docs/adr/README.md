@@ -102,5 +102,6 @@
 | [0098](0098-ladillos-que-dicen-lo-que-cuenta-su-apartado.md) | Ladillos que dicen lo que cuenta su apartado |
 | [0099](0099-la-ficha-del-documento-dice-siempre-donde-esta.md) | La ficha del documento dice siempre dónde está |
 | [0100](0100-el-lunes-la-portada-anuncia-el-resumen-semanal.md) | El lunes, la portada anuncia el resumen semanal |
+| [0101](0101-resumenes-del-video-y-del-podcast-plegados.md) | Los resúmenes del vídeo y del pódcast, plegados en su entradilla |
 
 Plantilla: [0000-plantilla.md](0000-plantilla.md). Para crear uno: `nuevo-adr "Título"`.

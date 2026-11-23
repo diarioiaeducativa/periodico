@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # SPDX-License-Identifier: AGPL-3.0-or-later
-"""El resumen del vídeo semanal de cada grupo en las otras lenguas (ADR 0057). Sin IA: solo dice qué falta por
+"""Los resúmenes del vídeo y del pódcast semanales de cada grupo en las otras lenguas (ADR 0057 y 0101). Sin IA: solo dice qué falta por
 traducir y comprueba lo traducido.
 
     scripts/multimedia.py pendientes                 una línea por semana con algo por traducir: «AAAA-WW ca gl…»
@@ -29,20 +29,28 @@ def leer(f):
         return None
 
 
+# Cada resumen y la clave en que la traducción guarda el texto en castellano del que salió
+CAMPOS = {"resumen": "origen", "resumen_podcast": "origen_podcast"}
+
+
 def resumenes(sem):
-    """{grupo: resumen en castellano} de los grupos que lo tienen."""
+    """{grupo: {campo: resumen en castellano}} de los grupos que tienen alguno."""
     d = leer(RAIZ / "multimedia" / f"{sem}.json") or {}
     g = d.get("grupos")
-    return {k: v["resumen"].strip() for k, v in (g if isinstance(g, dict) else {}).items()
-            if isinstance(v, dict) and isinstance(v.get("resumen"), str) and v["resumen"].strip()}
+    r = {}
+    for k, v in (g if isinstance(g, dict) else {}).items():
+        x = {c: v[c].strip() for c in CAMPOS if isinstance(v, dict) and isinstance(v.get(c), str) and v[c].strip()}
+        if x:
+            r[k] = x
+    return r
 
 
 def al_dia(sem, c):
     """Si la traducción a ese idioma tiene todos los resúmenes y salió del texto de ahora."""
     t = (leer(RAIZ / f"multimedia-{c}" / f"{sem}.json") or {}).get("grupos")
     t = t if isinstance(t, dict) else {}
-    return all(isinstance(t.get(g), dict) and t[g].get("origen") == r and (t[g].get("resumen") or "").strip()
-               for g, r in resumenes(sem).items())
+    return all(isinstance(t.get(g), dict) and t[g].get(CAMPOS[k]) == r and (t[g].get(k) or "").strip()
+               for g, x in resumenes(sem).items() for k, r in x.items())
 
 
 def pendientes():
@@ -66,19 +74,21 @@ def traduccion(sem, c):
     if not isinstance(grupos, dict):
         malos.append("no es un JSON válido con sus grupos")
     else:
-        for g, r in orig.items():
+        for g, campos in orig.items():
             x = grupos.get(g)
-            tr = (x.get("resumen") or "").strip() if isinstance(x, dict) and isinstance(x.get("resumen"), str) else ""
-            if not tr:
-                malos.append(f"{g}: falta el resumen")
-            elif tr == r:
-                malos.append(f"{g}: está sin traducir")
-            elif not 0.5 <= len(tr) / len(r) <= 2.0:
-                malos.append(f"{g}: el largo no cuadra ({len(tr)} frente a {len(r)} caracteres)")
+            for k, r in campos.items():
+                tr = (x.get(k) or "").strip() if isinstance(x, dict) and isinstance(x.get(k), str) else ""
+                if not tr:
+                    malos.append(f"{g}: falta {k}")
+                elif tr == r:
+                    malos.append(f"{g}: {k} está sin traducir")
+                elif not 0.5 <= len(tr) / len(r) <= 2.0:
+                    malos.append(f"{g}: el largo de {k} no cuadra ({len(tr)} frente a {len(r)} caracteres)")
     if malos:
         f.unlink()
         return [f"multimedia-{c}/{sem}.json quitado: " + "; ".join(malos)]
-    limpio = {"semana": sem, "grupos": {g: {"resumen": grupos[g]["resumen"].strip(), "origen": r} for g, r in orig.items()}}
+    limpio = {"semana": sem, "grupos": {g: {kk: v for k, r in campos.items() for kk, v in ((k, grupos[g][k].strip()), (CAMPOS[k], r))}
+                                        for g, campos in orig.items()}}
     f.write_text(json.dumps(limpio, ensure_ascii=False, indent=2) + "\n")
     return []
 
