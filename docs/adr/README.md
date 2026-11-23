@@ -101,5 +101,6 @@
 | [0097](0097-tiza-y-algoritmo-con-gorro-en-navidad.md) | Tiza y Algoritmo con gorro en las vacaciones de Navidad |
 | [0098](0098-ladillos-que-dicen-lo-que-cuenta-su-apartado.md) | Ladillos que dicen lo que cuenta su apartado |
 | [0099](0099-la-ficha-del-documento-dice-siempre-donde-esta.md) | La ficha del documento dice siempre dónde está |
+| [0100](0100-el-lunes-la-portada-anuncia-el-resumen-semanal.md) | El lunes, la portada anuncia el resumen semanal |
 
 Plantilla: [0000-plantilla.md](0000-plantilla.md). Para crear uno: `nuevo-adr "Título"`.

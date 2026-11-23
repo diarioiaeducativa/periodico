@@ -222,6 +222,7 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
 - **Comentario de la semana** (ADR 0038): `scripts/comentario-semana.sh AAAA-WW`, que lanza `noche.sh`
   la noche del domingo (o con `COMENTARIO=1`): uno general y uno por grupo en `comentario-semana/`,
   de 150 a 250 palabras; `scripts/comentario_semana.py comprobar` dice si vale.
+  El lunes, la portada lo anuncia junto a la apertura (`anuncio_semana()`, ADR 0100).
 - **Resumen del vídeo semanal, traducido** (ADR 0057): cuando el boletín deja o cambia `multimedia/AAAA-WW.json`,
   `publicar-web.sh` lanza antes `scripts/multimedia-traducir.sh`, que traduce el resumen de cada grupo a
   `multimedia-XX/` (un agente por idioma) solo si falta o si el resumen ha cambiado; `scripts/multimedia.py
