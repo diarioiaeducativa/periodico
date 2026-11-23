@@ -1,0 +1,20 @@
+{"fecha": "2026-11-29", "hay_pieza": true,
+ "piezas": [{"id": "telegram-cocoon-ia-resumenes-editor", "seccion": "hace-un-ano", "importancia": 3,
+             "grupo": "chatgpt", "fecha_original": "2025-11-30",
+             "antetitulo": "AA mezularitzan",
+             "titular": "Telegramek bere AArentzako sare bat estreinatu zuen; urtebete geroago, testuak laburbildu eta zuzentzen ditu",
+             "entradilla": "2025eko azaroan, Telegramek berezko sare bat jarri zuen martxan adimen artifizialeko etorkizuneko funtzioetarako, oraindik probatu ezin zirenak. Urtebete geroago, sare horrek argitalpen luzeak laburbiltzen ditu, eta mezuak zuzendu, berridatzi eta itzultzen ditu.",
+             "cuerpo": [
+               "2025eko azaroaren 30ean, ChatGPT-IA-edu taldean, Telegramek [Cocoon](https://cocoon.org/) jarri zuela martxan partekatu zen, jabe askoren ordenagailuen artean banatutako kalkulu-sare bat, eta AA funtzioak laster iritsiko zirela aplikaziora ere iragarri zuen. Ideia zen txartel grafikoen jabeek beren ekipoa uztea TON kriptomonetaren truke. Orduan azpiegitura hutsa zen: ez zegoen ezer erabiltzeko.",
+               "2026ko urtarrilaren 3an, Telegramek [AA bidezko laburpenak iragarri zituen](https://telegram.org/blog/new-design-ai-summaries) kanaletako argitalpen luzeetarako eta irakurketa azkarreko orrietarako (Instant View), Cocoon-en ostatatutako eredu irekiekin sortuak. Martxoaren 31n [AA bidezko testu-editore bat](https://telegram.org/blog/ai-editor-mighty-polls-and-more) gehitu zuen idazteko barran: gramatika zuzentzen du, beste estilo batean berridazten du edo idatzitakoa itzultzen du.",
+               "Enpresaren arabera, eskaera bakoitza zifratu egiten da eta ingurune konfidentzial batean prozesatzen da, erabiltzaileen datuetara sartu gabe; haien iragarpenek ez dute argitzen funtzio horiek doakoak diren edo Premium harpidetza behar duten. Telegramen taldeak edo kanalak dituzten irakasleentzat, duela urtebete erabilera ikusgarririk gabeko sare bat zena bidaltzeko botoiaren ondoko ikono bat da jada."
+             ],
+             "fuentes": [
+               {"titulo": "Cocoon (Confidential Compute Open Network) (ingelesez)", "url": "https://cocoon.org/"},
+               {"titulo": "Telegram: AI Summaries, New Design and More (2026ko urtarrilaren 3a) (ingelesez)", "url": "https://telegram.org/blog/new-design-ai-summaries"},
+               {"titulo": "Telegram: AI Editor, Mighty Polls, Live Photos, Bots Managed by Bots, and More (2026ko martxoaren 31) (ingelesez)", "url": "https://telegram.org/blog/ai-editor-mighty-polls-and-more"}
+             ],
+             "ilustracion_alt": "Diptikoa. Ezkerrean, «2025 aza.» errotuluarekin: AArik gabeko txat-leiho bat eta, azpian, hiru prozesadore ilaran, «Cocoon» errotuluarekin. Eskuinean, «Gaur» errotuluarekin: txat-leiho bera, AAren txinpart urdin batekin, lerro urdin batez hiru prozesadoreetako batera lotua, «Laburpena eta editorea» errotuluarekin.",
+             "mensaje": {"grupo": "chatgpt", "id": 43048},
+             "comprobado": "Mensaje 43048 de ChatGPTedu (t.me embed): 30-11-2025, enlace a TestingCatalog: Telegram lanzó Cocoon, red de cálculo descentralizada para futuras herramientas de IA, 'AI features soon'. cocoon.org: red de Telegram, propietarios de GPU reciben TON, privacidad. Blog de Telegram 3-1-2026: resúmenes de publicaciones largas e Instant View con modelos abiertos en Cocoon, peticiones cifradas; no dice si es gratis o Premium. Blog 31-3-2026: editor de IA (gramática, estilos, traducción) en la barra de mensajes, con Cocoon, 'zero access to user data'; tampoco aclara el plan. Tema no repetido respecto a los últimos 30 días.",
+             "repaso": ["Última frase: «un botón junto al de enviar» pasa a «un icono junto al botón de enviar» (el blog habla de un icono «Ai» sobre la flecha de enviar, que aparece tras más de tres líneas).", "Quitado «y que las peticiones viajaran cifradas» de lo de 2025: ni el mensaje ni cocoon.org lo decían entonces; el cifrado queda atribuido a la empresa en el tercer párrafo."]}]}

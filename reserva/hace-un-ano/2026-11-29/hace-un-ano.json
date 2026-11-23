@@ -1,0 +1,20 @@
+{"fecha": "2026-11-29", "hay_pieza": true,
+ "piezas": [{"id": "telegram-cocoon-ia-resumenes-editor", "seccion": "hace-un-ano", "importancia": 3,
+             "grupo": "chatgpt", "fecha_original": "2025-11-30",
+             "antetitulo": "IA en la mensajería",
+             "titular": "Telegram estrenaba una red para su IA; un año después resume y retoca textos",
+             "entradilla": "En noviembre de 2025, Telegram ponía en marcha una red propia para sus futuras funciones de inteligencia artificial, que aún no se podían probar. Un año después, esa red resume publicaciones largas y corrige, reescribe y traduce mensajes.",
+             "cuerpo": [
+               "El 30 de noviembre de 2025, en ChatGPT-IA-edu, se compartió la noticia de que Telegram había lanzado [Cocoon](https://cocoon.org/), una red de cálculo repartida entre ordenadores de muchos propietarios, con el aviso de que las funciones de IA llegarían pronto a la aplicación. La idea era que los dueños de tarjetas gráficas prestaran su equipo a cambio de la criptomoneda TON. Entonces era solo infraestructura: no había nada que usar.",
+               "El 3 de enero de 2026, Telegram [anunció resúmenes con IA](https://telegram.org/blog/new-design-ai-summaries) de las publicaciones largas de los canales y de las páginas de lectura rápida (Instant View), generados con modelos abiertos alojados en Cocoon. El 31 de marzo añadió [un editor de textos con IA](https://telegram.org/blog/ai-editor-mighty-polls-and-more) en la barra de escritura: corrige la gramática, reescribe en otro estilo o traduce lo escrito.",
+               "Según la empresa, cada petición se cifra y se procesa en un entorno confidencial, sin acceso a los datos de los usuarios; sus anuncios no aclaran si estas funciones son gratuitas o exigen la suscripción Premium. Para el profesorado que lleva grupos o canales en Telegram, lo que hace un año era una red sin uso visible es ya un icono junto al botón de enviar."
+             ],
+             "fuentes": [
+               {"titulo": "Cocoon (Confidential Compute Open Network)", "url": "https://cocoon.org/"},
+               {"titulo": "Telegram: AI Summaries, New Design and More (3 de enero de 2026)", "url": "https://telegram.org/blog/new-design-ai-summaries"},
+               {"titulo": "Telegram: AI Editor, Mighty Polls, Live Photos, Bots Managed by Bots, and More (31 de marzo de 2026)", "url": "https://telegram.org/blog/ai-editor-mighty-polls-and-more"}
+             ],
+             "ilustracion_alt": "Díptico. A la izquierda, «Nov. 2025»: una ventana de chat sin nada de IA y, debajo, tres procesadores en fila con el rótulo «Cocoon». A la derecha, «Hoy»: la misma ventana de chat con una chispa azul de IA, unida por una línea azul a uno de los tres procesadores, con el rótulo «Resumen y editor».",
+             "mensaje": {"grupo": "chatgpt", "id": 43048},
+             "comprobado": "Mensaje 43048 de ChatGPTedu (t.me embed): 30-11-2025, enlace a TestingCatalog: Telegram lanzó Cocoon, red de cálculo descentralizada para futuras herramientas de IA, 'AI features soon'. cocoon.org: red de Telegram, propietarios de GPU reciben TON, privacidad. Blog de Telegram 3-1-2026: resúmenes de publicaciones largas e Instant View con modelos abiertos en Cocoon, peticiones cifradas; no dice si es gratis o Premium. Blog 31-3-2026: editor de IA (gramática, estilos, traducción) en la barra de mensajes, con Cocoon, 'zero access to user data'; tampoco aclara el plan. Tema no repetido respecto a los últimos 30 días.",
+             "repaso": ["Última frase: «un botón junto al de enviar» pasa a «un icono junto al botón de enviar» (el blog habla de un icono «Ai» sobre la flecha de enviar, que aparece tras más de tres líneas).", "Quitado «y que las peticiones viajaran cifradas» de lo de 2025: ni el mensaje ni cocoon.org lo decían entonces; el cifrado queda atribuido a la empresa en el tercer párrafo."]}]}
