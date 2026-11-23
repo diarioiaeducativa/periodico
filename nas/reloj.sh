@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # SPDX-License-Identifier: AGPL-3.0-or-later
-# El reloj del diario dentro de su contenedor del NAS. Cada cinco minutos mira qué toca:
+# El reloj del diario dentro de su contenedor del NAS. Cada cinco minutos en punto (:00, :05…) mira qué toca:
 #
 #   desde la 1:00   preparar el número con las conversaciones de ayer (scripts/noche.sh),
 #                   dos intentos como mucho
@@ -176,5 +176,9 @@ while true; do
     fi
     rm -f estado/multimedia.publicando
   fi
-  sleep 300
+  # Hasta el siguiente múltiplo de cinco minutos (las 6:50 en punto, no hasta cinco minutos después): con un
+  # «sleep 300» fijo, la vuelta caía donde la dejaba el arranque del contenedor y la publicación de las 6:50
+  # empezaba entre las 6:51 y las 6:55 (Juanjo, 23-11-2026). Los husos de Madrid son de horas enteras, así que
+  # los múltiplos en UTC lo son también en hora local.
+  sleep $(( 300 - $(date +%s) % 300 ))
 done
