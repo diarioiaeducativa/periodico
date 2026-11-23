@@ -1,0 +1,91 @@
+{
+ "fecha": "2026-11-22",
+ "elegida": {
+  "n": 2,
+  "pieza": "autoria-cuento-ilustrado-ia",
+  "idea": "Algoritmo expón o caso do día: un alumno escribe un conto e a IA ilústrao, quen o asina? No centro iso está resolto desde sempre: Xiz redacta, xefatura retoca e dirección asina; a autoría reconóceselle cando sae unha errata. Remata Xiz, con retranca e contra o circuíto de sinaturas, que non sae; Algoritmo queda cortado.",
+  "guion": {
+   "vinetas": [
+    {
+     "cartela": "No despacho de dirección, agardando unha sinatura.",
+     "escenario": "despacho",
+     "tiza": {
+      "expresion": "agotado",
+      "postura": "sostener",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "pensativo",
+      "postura": "senalar",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "objeto": "folio",
+     "lleva": "tiza",
+     "bocadillos": [
+      {
+       "quien": "algoritmo",
+       "texto": "Un alumno escribe un conto e a IA ilústrao. Quen o asina?",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "despacho",
+     "tiza": {
+      "expresion": "orgulloso",
+      "postura": "sostener",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "preocupado",
+      "postura": "encoger",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "objeto": "folio",
+     "lleva": "tiza",
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Aquí iso está resolto: eu redacto, xefatura retoca e dirección asina.",
+       "tipo": "habla"
+      },
+      {
+       "quien": "algoritmo",
+       "texto": "E a autoría?",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "despacho",
+     "tiza": {
+      "expresion": "neutral",
+      "postura": "sostener",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "sorprendido",
+      "postura": "abajo",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "objeto": "folio",
+     "lleva": "tiza",
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Esa reconóscenma cando sae unha errata.",
+       "tipo": "habla"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "traduccion": "automática con IA"
+}

@@ -1,0 +1,91 @@
+{
+ "fecha": "2026-11-22",
+ "elegida": {
+  "n": 2,
+  "pieza": "autoria-cuento-ilustrado-ia",
+  "idea": "Algorithm raises the case of the day: a student writes a story and AI illustrates it, so who signs it? At school that has always been settled: Chalk drafts, the deputy head edits and the head signs; authorship is only acknowledged when a typo turns up. Chalk delivers the wry punchline, against the chain of signatures, which never appears; Algorithm is left speechless.",
+  "guion": {
+   "vinetas": [
+    {
+     "cartela": "In the head’s office, waiting for a signature.",
+     "escenario": "despacho",
+     "tiza": {
+      "expresion": "agotado",
+      "postura": "sostener",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "pensativo",
+      "postura": "senalar",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "objeto": "folio",
+     "lleva": "tiza",
+     "bocadillos": [
+      {
+       "quien": "algoritmo",
+       "texto": "A student writes a story and AI illustrates it. Who signs it?",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "despacho",
+     "tiza": {
+      "expresion": "orgulloso",
+      "postura": "sostener",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "preocupado",
+      "postura": "encoger",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "objeto": "folio",
+     "lleva": "tiza",
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "That’s settled here: I draft, the deputy head edits and the head signs.",
+       "tipo": "habla"
+      },
+      {
+       "quien": "algoritmo",
+       "texto": "And the authorship?",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "despacho",
+     "tiza": {
+      "expresion": "neutral",
+      "postura": "sostener",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "sorprendido",
+      "postura": "abajo",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "objeto": "folio",
+     "lleva": "tiza",
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "They only credit me with that when a typo turns up.",
+       "tipo": "habla"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "traduccion": "automatic AI translation"
+}

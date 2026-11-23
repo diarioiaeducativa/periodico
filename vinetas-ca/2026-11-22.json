@@ -1,0 +1,100 @@
+{
+ "fecha": "2026-11-22",
+ "elegida": {
+  "n": 2,
+  "pieza": "autoria-cuento-ilustrado-ia",
+  "idea": "L'Algorisme planteja el cas del dia: un alumne escriu un conte i la IA l'il·lustra, qui el signa? Al centre això està resolt de sempre: Guix redacta, la cap d'estudis retoca i la direcció signa; l'autoria te la reconeixen quan surt una errata. Remata Guix, amb retranca i contra el circuit de signatures, que no surt; l'Algorisme es queda tallat.",
+  "guion": {
+   "vinetas": [
+    {
+     "cartela": "Al despatx de direcció, esperant una signatura.",
+     "escenario": "despacho",
+     "tiza": {
+      "expresion": "agotado",
+      "postura": "sostener",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "pensativo",
+      "postura": "senalar",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "objeto": "folio",
+     "lleva": "tiza",
+     "bocadillos": [
+      {
+       "quien": "algoritmo",
+       "texto": "Un alumne escriu un conte i la IA l'il·lustra. Qui el signa?",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "despacho",
+     "tiza": {
+      "expresion": "orgulloso",
+      "postura": "sostener",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "preocupado",
+      "postura": "encoger",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "objeto": "folio",
+     "lleva": "tiza",
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Aquí això està resolt: jo redacto, cap d'estudis retoca i direcció signa.",
+       "tipo": "habla"
+      },
+      {
+       "quien": "algoritmo",
+       "texto": "I l'autoria?",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "despacho",
+     "tiza": {
+      "expresion": "neutral",
+      "postura": "sostener",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "sorprendido",
+      "postura": "abajo",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "objeto": "folio",
+     "lleva": "tiza",
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Aquesta me la reconeixen quan surt una errata.",
+       "tipo": "habla"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "motivo": "Gana la 2. Es la que mejor remata: la pregunta de la noticia (quién firma cuando uno escribe y otro ejecuta) se da la vuelta hacia algo que todo docente conoce, el papel que redacta una y firma otro, y la última frase, «Esa me la reconocen cuando sale una errata», es corta, seca y no se ve venir. Se entiende sin haber leído la noticia, porque la primera viñeta cuenta el caso en una línea. La ironía cae sobre el circuito de firmas del centro, la burocracia, no sobre ninguna persona. Las cinco respetan las prohibiciones; caben todas menos la 3.",
+ "retoques": "Primera viñeta, bocadillo de Algoritmo: «Un alumno escribe un cuento y la IA lo ilustra. ¿Quién lo firma?» en vez de la versión más técnica; baja de 69 a 64 caracteres. Escenario despacho, objeto folio. Ningún bocadillo pasa de 90 caracteres (el más largo, 70).",
+ "puntuaciones": [
+  {"n": 1, "gracia": 6, "claridad": 7, "remate": 7, "prohibiciones": "respeta", "cabe": true},
+  {"n": 2, "gracia": 8, "claridad": 8, "remate": 8, "prohibiciones": "respeta: el blanco es el circuito de firmas del centro, no una persona ni el alumno del supuesto", "cabe": true},
+  {"n": 3, "gracia": 8, "claridad": 7, "remate": 6, "prohibiciones": "respeta, pero roza reírse del alumnado", "cabe": false},
+  {"n": 4, "gracia": 7, "claridad": 9, "remate": 7, "prohibiciones": "respeta", "cabe": true},
+  {"n": 5, "gracia": 7, "claridad": 5, "remate": 8, "prohibiciones": "respeta", "cabe": true}
+ ],
+ "traduccion": "automàtica amb IA"
+}

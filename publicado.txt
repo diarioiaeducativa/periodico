@@ -201,7 +201,14 @@
 
 ## 2026-11-21 (publicado el domingo 22 de noviembre de 2026)
 - pieza:2026-11-21/gemini-notebook-api-oficial (herramientas) Gemini Notebook ya tiene API oficial, aunque limitada y en versión preliminar
-- pieza:2026-11-21/android-distribucion-limitada-50 (vibecoding) Android permite repartir una app propia a 50 dispositivos sin pasar por Google Play
-- pieza:2026-11-21/gemini-exploraciones-inmersivas (multimedia) Gemini ofrece exploraciones inmersivas: recorridos visuales por temas, desde los cuásares al Imperio persa
+- pieza:2026-11-21/android-distribucion-limitada-50 (vibecoding) Android permite compartir una aplicación propia con hasta 50 dispositivos sin Google Play
+- pieza:2026-11-21/gemini-exploraciones-inmersivas (multimedia) Gemini ofrece desde octubre recorridos visuales e interactivos por temas para estudiar
 - pieza:2026-11-21/maquina-rube-goldberg-simple (vibecoding) Un simulador permite construir máquinas de Rube Goldberg y analizar sus palancas
 - breve: Google DeepMind ofrece, en inglés, una guía interactiva que explica con su modelo Gemma 4 
+- pieza:2026-11-21/manual-ia-aula-abya-yala (biblioteca) Un manual argentino lleva al aula el coste ambiental, laboral y social de la IA
+- pieza:2026-11-21/ia-aprender-entender-o-entregar (reportaje) La IA ayuda más a aprender cuando sirve para entender que cuando hace la tarea
+
+## 2026-11-22 (publicado el lunes 23 de noviembre de 2026)
+- pieza:2026-11-22/autoria-cuento-ilustrado-ia (debates) Un supuesto de cuento ilustrado con IA y premiado plantea quién firma la obra
+- pieza:2026-11-22/informes-a-viva-voz (vibecoding) Una aplicación convierte respuestas habladas en informes de evaluación para las familias
+- pieza:2026-11-22/buzz-cortometraje-terminado (multimedia) Raül Torres publica «Buzz», el cortometraje terminado, y su making-of paso a paso

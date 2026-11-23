@@ -1,0 +1,111 @@
+{
+  "fecha": "2026-11-22",
+  "hay_edicion": true,
+  "motivo": "Día normal y flojo en noticias nuevas: el domingo se repite buena parte de lo ya publicado (Gemini Notebook, Android, exploraciones de Gemini). Hay una pieza de cada grupo: un debate sobre autoría en ChatGPT-IA-edu, una aplicación nueva en Vibe Coding Educativo y el cortometraje terminado y su making-of en EduMedia-IAG.",
+  "piezas": [
+    {
+      "id": "autoria-cuento-ilustrado-ia",
+      "seccion": "debates",
+      "importancia": 1,
+      "grupo": "chatgpt",
+      "antetitulo": "Autoría y evaluación",
+      "titular": "Un caso imaginado plantea quién firma un cuento premiado e ilustrado con IA",
+      "entradilla": "Una entrega de la serie «Familias con inteligencia» imagina un caso: un alumno declara que ha usado la IA, gana un concurso y una compañera lo cuestiona. Chema Falcó pide a los centros criterios claros.",
+      "cuerpo": [
+        "En ChatGPT-IA-edu se compartió una nueva entrega de la serie «Familias con inteligencia», titulada «[¿Quién firma?](https://profechef.substack.com/p/quien-firma)», de Chema Falcó. Plantea un caso imaginado, que su autor presenta como genérico: un alumno de 3.º de ESO escribe un cuento, genera las ilustraciones con una herramienta de IA y declara su uso. Las bases del concurso literario de su instituto piden «obras originales» y no excluyen la IA, así que gana el primer premio. Una compañera que ha ilustrado a mano cuestiona que eso sea dibujar.",
+        "El texto recoge dos miradas del caso: la del alumno, que defiende que la historia y cada decisión sobre las imágenes son suyas, y la de la compañera, que sostiene que generar imágenes no es dibujar. Falcó concluye que la autoría del cuento es del alumno y que dirigir (elegir, descartar, organizar y retocar) es un acto creativo, pero distinto de ejecutar. Por eso, conviene reconocer las dos aportaciones sin confundirlas.",
+        "Como criterios, la entrega propone redactar bases lo bastante claras para que no haya ambigüedad sobre el uso de la IA, y pedir al alumnado que declare ese uso y pueda enseñar el proceso. Para las familias, sugiere reconstruir juntos qué inventó el niño, qué decidió y qué delegó en la herramienta. En el grupo, Falcó planteó la pregunta de fondo: si los sistemas de evaluación distinguen entre ejecución, dirección creativa y autoría o solo valoran el resultado final.",
+        "El diario ya recogió otras entregas de la serie: sobre [declarar el uso de la IA](pieza:2026-11-15/declarar-uso-ia-transparencia) y sobre [el porcentaje de un detector que no prueba nada](pieza:2026-11-08/detector-ia-no-es-prueba). El caso de esta entrega es un supuesto planteado por su autor, no un hecho verificado."
+      ],
+      "fuentes": [
+        {
+          "titulo": "¿Quién firma? (Chema Falcó, «Familias con inteligencia»)",
+          "url": "https://profechef.substack.com/p/quien-firma"
+        }
+      ],
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 54628
+      },
+      "comprobado": "Abierta la entrada de Substack de Chema Falcó (22-11-2026): caso («Imaginemos esta escena», «caso genérico»), posturas y criterios comprobados contra su texto; la distinción entre dirigir y ejecutar es la conclusión del autor, no una postura de terceros. Declarar el uso y enseñar el proceso, del mensaje de Falcó en el grupo. Entregas anteriores comprobadas en publicado.txt. No se recoge el ejemplo de un colegio de Taiwán que cita la entrada, porque no se ha verificado.",
+      "ilustracion": "Un esquema con tres aportaciones separadas por llaves —texto, dirección creativa (elegir y retocar) y ejecución (generar imágenes)— que apuntan a un cuento, y debajo un cartel de «bases del concurso» que decide cuáles cuentan.",
+      "ilustracion_alt": "Tres rótulos, «Texto», «Dirección creativa» y «Ejecución», agrupados por una llave que apunta a un libro rotulado «Cuento»; debajo, un cartel con una medalla y el rótulo «Bases del concurso», con una flecha discontinua roja hacia el cuento."
+    },
+    {
+      "id": "informes-a-viva-voz",
+      "seccion": "vibecoding",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Aplicación de la comunidad",
+      "titular": "Una aplicación convierte respuestas habladas en informes de evaluación para las familias",
+      "entradilla": "«Informes a viva voz», de Ernesto Boixader, pide al docente que responda a tres o a siete preguntas sobre cada estudiante, y con esas respuestas la IA redacta el informe.",
+      "cuerpo": [
+        "Ernesto Boixader presentó en Vibe Coding Educativo [«Informes a viva voz»](https://eboixader-del.github.io/mi-web/informes-de-evaluacion/), una aplicación creada por él para los informes de evaluación. Según su descripción, el docente responde por voz o por escrito a unas preguntas sobre cada estudiante, con una versión de tres preguntas y otra de siete. La IA redacta con esas respuestas un informe adaptado a la materia, al curso y a quién va dirigido, y el docente lo revisa y decide la versión final.",
+        "La página de la aplicación, bajo el nombre «A viva voz», ofrece tres accesos, uno para ChatGPT, otro para Claude y otro para Gemini. Es decir, el informe lo genera la IA del servicio que elija cada docente.",
+        "Antes de usarla con datos reales conviene tener en cuenta que la página no indica qué datos del alumnado se piden ni dice nada de privacidad. Lo que se escriba sobre un alumno lo procesará el servicio elegido, y cada centro debe comprobar sus condiciones, sobre todo si lo escrito incluye nombres o datos de salud o de situación personal."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Informes a viva voz (Ernesto Boixader)",
+          "url": "https://eboixader-del.github.io/mi-web/informes-de-evaluacion/"
+        }
+      ],
+      "mensaje": {
+        "grupo": "vce",
+        "id": 15204
+      },
+      "comprobado": "Abierta la web de la aplicación (título «Informes de evaluación · A viva voz»): tres accesos (ChatGPT, Claude, Gemini); no consta información de privacidad ni de datos del alumnado ni autor. Funcionamiento (3 o 7 preguntas, revisión por el docente) tomado del mensaje de Ernesto Boixader, que dice haberla creado. Boixader no había salido antes en el diario.",
+      "ilustracion": null,
+      "ilustracion_alt": "Un micrófono rotulado «Voz», con el rótulo «3 o 7 preguntas», una flecha hacia un robot rotulado «IA redacta» y otra hacia un documento rotulado «Informe»; debajo, una persona con el rótulo «Docente revisa»."
+    },
+    {
+      "id": "buzz-cortometraje-terminado",
+      "seccion": "multimedia",
+      "importancia": 2,
+      "grupo": "edumedia",
+      "antetitulo": "Cine con IA",
+      "titular": "Raül Torres publica su cortometraje «Buzz» y explica paso a paso cómo lo hizo",
+      "entradilla": "El director cuenta en una página y en un vídeo cómo rodó a mano en realidad virtual y dejó a la IA solo el revelado de las imágenes.",
+      "cuerpo": [
+        "Raül Torres compartió en EduMedia-IAG [«Buzz»](https://www.youtube.com/watch?v=j2XJSyWlVZ8), el cortometraje que el diario ya había recogido [en un adelanto](pieza:2026-11-08/buzz-cortometraje-vr) y [en su flujo de trabajo](pieza:2026-11-09/buzz-flujo-claude-blender). Según la descripción del vídeo, es un corto de guerra y terror rodado con unas gafas Quest 3 sobre un decorado 3D.",
+        "El making-of, en [una página](https://raultorres-ia.github.io/apps/buzz_making_off/) y [en vídeo](https://www.youtube.com/watch?v=ROi4QuPJtrU), explica seis pasos: un guion pensado para la continuidad, el decorado básico en Blender, el rodaje con las gafas, la conversión de esas tomas en planos con Seedance 2.5, el sonido con ElevenLabs y el montaje y el color en DaVinci Resolve. La idea que defiende es que la IA no dirige la película: dónde está cada personaje, cuánto dura un plano y cómo se mueve la cámara se decide a mano, y la IA solo desarrolla esa imagen, como un laboratorio revela un negativo.",
+        "El vídeo termina con cuatro consejos del autor: lo que no esté en el decorado, la IA lo inventará; conviene rodar a mano para dar a la cámara una intención; hay que usar fotogramas del propio montaje como referencia, y reparar cada fallo donde cueste menos, el ritmo en el montaje y la luz en el color. Para el aula, sirve como ejemplo de un flujo de producción en el que el alumnado decide el plano antes de generarlo."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Buzz | AI Short Film (YouTube)",
+          "url": "https://www.youtube.com/watch?v=j2XJSyWlVZ8"
+        },
+        {
+          "titulo": "BUZZ · Making Off (página de Raül Torres)",
+          "url": "https://raultorres-ia.github.io/apps/buzz_making_off/"
+        },
+        {
+          "titulo": "Buzz Behind the Scenes (YouTube)",
+          "url": "https://www.youtube.com/watch?v=ROi4QuPJtrU"
+        }
+      ],
+      "mensaje": {
+        "grupo": "edumedia",
+        "id": 12398
+      },
+      "comprobado": "Abierta la página del making-of: seis pasos y herramientas coinciden; la idea del «negativo» aparece en la página y en la descripción del vídeo del making-of, de donde salen también los consejos. No se da la duración ni la ausencia de diálogo: la descripción de YouTube habla de cuatro minutos y medio sin diálogo y la página, de 3:34 y una frase susurrada. Raül Torres es autor del diario y se le nombra como autor del recurso, que él mismo publicó. Los vídeos no se han podido ver. Piezas anteriores comprobadas en publicado.txt.",
+      "ilustracion": null,
+      "ilustracion_alt": "Una cadena de cuatro pasos con flechas: un cubo rotulado «Decorado 3D», unas gafas de realidad virtual rotuladas «Rodaje a mano», un robot rotulado «IA revela» y una claqueta rotulada «Buzz»; bajo los dos pasos centrales, un corchete rojo discontinuo."
+    }
+  ],
+  "breves": [],
+  "descartado": [
+    "API oficial de Gemini Notebook y casos de uso de David Cordones: ya publicado el 21-11 (pieza gemini-notebook-api-oficial); lo nuevo del hilo, el interés de un miembro por probar la API no oficial, no aporta un dato nuevo.",
+    "Guía interactiva de Gemma 4: ya salió en un breve del 21-11.",
+    "Android a 50 dispositivos, simulador de Mercè Feu y exploraciones inmersivas de Gemini: ya publicados el 21-11.",
+    "Documentos de la Biblioteca digital (conclusiones del Consejo de la UE y manual de Abya Yala): tienen su propia sección.",
+    "Mensajes de agradecimiento, aplausos, avisos del bot antiuserbots y comentarios sobre límites de uso de Claude: no son noticia."
+  ],
+  "repaso": [
+    "Debate de «¿Quién firma?»: el titular y la entradilla daban por real un caso que la fuente presenta como imaginado («Imaginemos esta escena», «caso genérico»); ahora dicen «supuesto» e «imagina», y el cuerpo lo avisa desde el principio.",
+    "Debate: las tres «posturas» no estaban en la fuente (la distinción dirigir/ejecutar y lo de las bases son la conclusión del autor, no posturas de terceros); reescrito con las dos miradas que sí recoge (alumno y compañera) y la conclusión de Falcó.",
+    "«Buzz»: quitadas la duración (cuatro minutos y medio según YouTube, 3:34 según la página) y la ausencia de diálogo (la página habla de una frase susurrada), porque las fuentes se contradicen.",
+    "«Informes a viva voz»: sin cambios (título de la página, accesos y ausencia de privacidad confirmados); Boixader no había salido antes."
+  ]
+}

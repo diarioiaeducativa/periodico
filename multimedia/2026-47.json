@@ -1,0 +1,25 @@
+{
+ "semana": "2026-47",
+ "desde": "2026-11-16",
+ "hasta": "2026-11-22",
+ "grupos": {
+  "chatgpt": {
+   "video": "https://www.youtube.com/watch?v=_8yTRh3WGPM",
+   "podcast": "https://archive.org/details/boletinia_2026",
+   "podcast_mp3": "https://archive.org/download/boletinia_2026/boletinia_audio2026-47.mp3",
+   "resumen": "El vídeo repasa 98 mensajes de 18 participantes de ChatGPT-IA-edu. Parte del debate entre Clark y Kozma para leer los 52 estudios causales de Stanford, de resultados desiguales, y un estudio de Carnegie Mellon sobre un tutor de IA que guía con preguntas. Sigue con un diario reflexivo docente que ordena el dictado en Notion, el decálogo de una escuela de idiomas, la ley gallega de educación digital y la alfabetización en IA de Canadá."
+  },
+  "vce": {
+   "video": "https://www.youtube.com/watch?v=IsKv72cLxLQ",
+   "podcast": "https://archive.org/details/vce_2026",
+   "podcast_mp3": "https://archive.org/download/vce_2026/vce_audio2026-47.mp3",
+   "resumen": "El vídeo repasa 58 mensajes de 18 participantes de Vibe Coding Educativo. Presenta Trama, el catálogo de lecturas de Aarón Fortuño, con universos, variantes de dificultad y analítica sin cookies; la celda robotizada de Magda Diaz-G, hecha con Gemini y Claude; un laboratorio de ensayo a la llama en realidad extendida y Agente Clima IES. Explica también qué cuesta publicar una app en Google Play y recoge el debate sobre el idioma del grupo."
+  },
+  "edumedia": {
+   "video": "https://www.youtube.com/watch?v=2s1xmdDli7c",
+   "podcast": "https://archive.org/details/edumedia_2026",
+   "podcast_mp3": "https://archive.org/download/edumedia_2026/edumedia_audio2026-47.mp3",
+   "resumen": "El vídeo repasa 116 mensajes de ocho participantes de EduMedia-IAG. Explica cómo llevar a Moodle un sitio de Gemini Notebook, las pruebas de Genie 4 y el experimento de Ethan Mollick con más de 450 mundos creados por agentes. Recorre Suno Visuals, Kling Image 4.0, los avatares gratuitos de Google Vids y GPT-6.2 Astra, y cierra con avisos: el veto del Manchester Animation Festival a la IA generativa, el cierre de Marble y los modelos que retira Google Flow."
+  }
+ }
+}

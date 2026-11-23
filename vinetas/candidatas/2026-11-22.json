@@ -1,0 +1,432 @@
+{
+ "fecha": "2026-11-22",
+ "candidatas": [
+  {
+   "pieza": "autoria-cuento-ilustrado-ia",
+   "idea": "Tiza evalúa un cuento ilustrado con IA y Algoritmo le propone puntuar por separado autoría, dirección creativa y ejecución; el rótulo final lo desmonta: la plataforma de notas tiene una casilla, del 1 al 10 (remate mudo, los dos contra la plataforma).",
+   "guion": {
+    "vinetas": [
+     {
+      "cartela": "En la biblioteca, evaluando un cuento ilustrado.",
+      "escenario": "biblioteca",
+      "tiza": {
+       "expresion": "neutral",
+       "postura": "sostener",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "neutral",
+       "postura": "abajo",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "libro",
+      "lleva": "tiza",
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "La historia es suya. Los dibujos los dirigió él y los ejecutó la IA.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "biblioteca",
+      "tiza": {
+       "expresion": "orgulloso",
+       "postura": "sostener",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "contento",
+       "postura": "senalar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "libro",
+      "lleva": "tiza",
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "Pues evalúa por separado autoría, dirección creativa y ejecución.",
+        "tipo": "habla"
+       },
+       {
+        "quien": "tiza",
+        "texto": "Tres notas distintas. Es lo justo.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "cartela": "La plataforma de notas: una casilla, del 1 al 10.",
+      "escenario": "biblioteca",
+      "tiza": {
+       "expresion": "agotado",
+       "postura": "cabeza",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "preocupado",
+       "postura": "encoger",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "portatil",
+      "bocadillos": []
+     }
+    ]
+   },
+   "cabe": true
+  },
+  {
+   "pieza": "autoria-cuento-ilustrado-ia",
+   "idea": "Algoritmo pregunta quién firma si uno dirige y otro ejecuta; en el centro eso está resuelto: Tiza redacta, jefatura retoca y dirección firma, y la autoría se la reconocen cuando sale una errata (remata Tiza, contra la burocracia).",
+   "guion": {
+    "vinetas": [
+     {
+      "cartela": "En el despacho de dirección, esperando una firma.",
+      "escenario": "despacho",
+      "tiza": {
+       "expresion": "agotado",
+       "postura": "sostener",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "pensativo",
+       "postura": "senalar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "folio",
+      "lleva": "tiza",
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "Un alumno dirige y la IA ejecuta los dibujos. ¿Quién firma el cuento?",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "despacho",
+      "tiza": {
+       "expresion": "orgulloso",
+       "postura": "sostener",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "neutral",
+       "postura": "encoger",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "folio",
+      "lleva": "tiza",
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "Aquí eso está resuelto: yo redacto, jefatura retoca y dirección firma.",
+        "tipo": "habla"
+       },
+       {
+        "quien": "algoritmo",
+        "texto": "¿Y la autoría?",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "despacho",
+      "tiza": {
+       "expresion": "neutral",
+       "postura": "sostener",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "sorprendido",
+       "postura": "abajo",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "folio",
+      "lleva": "tiza",
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "Esa me la reconocen cuando sale una errata.",
+        "tipo": "habla"
+       }
+      ]
+     }
+    ]
+   },
+   "cabe": true
+  },
+  {
+   "pieza": "informes-a-viva-voz",
+   "idea": "Algoritmo redacta el informe según a quién vaya dirigido: «trabaja cuando le apetece» se convierte para la familia en «un gran potencial, que dosifica con criterio» y, para el equipo docente, en «trabaja cuando le apetece» (remata Algoritmo y los dos acaban de acuerdo).",
+   "guion": {
+    "vinetas": [
+     {
+      "cartela": "En el claustro, con los informes para las familias.",
+      "escenario": "claustro",
+      "tiza": {
+       "expresion": "neutral",
+       "postura": "jarras",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "neutral",
+       "postura": "senalar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "Dímelo de viva voz y yo redacto el informe según a quién vaya dirigido.",
+        "tipo": "habla"
+       },
+       {
+        "quien": "tiza",
+        "texto": "Para la familia: trabaja cuando le apetece.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "claustro",
+      "tiza": {
+       "expresion": "sorprendido",
+       "postura": "arriba",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "contento",
+       "postura": "cruzar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "«Muestra un gran potencial, que dosifica con criterio.»",
+        "tipo": "habla"
+       },
+       {
+        "quien": "tiza",
+        "texto": "¿Y para el equipo docente?",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "claustro",
+      "tiza": {
+       "expresion": "riendo",
+       "postura": "cabeza",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "neutral",
+       "postura": "encoger",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "«Trabaja cuando le apetece.»",
+        "tipo": "habla"
+       }
+      ]
+     }
+    ]
+   },
+   "cabe": false,
+   "no_cabe": [
+    "viñeta 1: habla primero quien está a la derecha, pero uno encima del otro los globos no caben ni con el de arriba a todo el ancho (sobran 13 px)"
+   ]
+  },
+  {
+   "pieza": "informes-a-viva-voz",
+   "idea": "Tiza dicta de noche los informes de evaluación y en casa dicen que lleva horas hablando sola; Algoritmo la tranquiliza, «Sola no. Hablas conmigo», y eso es justo lo que les preocupa (remata Tiza).",
+   "guion": {
+    "vinetas": [
+     {
+      "cartela": "De noche, en casa, dictando informes de evaluación.",
+      "escenario": "casa_noche",
+      "tiza": {
+       "expresion": "neutral",
+       "postura": "senalar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "cargando",
+       "postura": "abajo",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "reloj",
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "Tercera respuesta: participa mucho y debe repasar las tildes.",
+        "tipo": "habla"
+       },
+       {
+        "quien": "algoritmo",
+        "texto": "Recibido. Redacto el informe. Siguiente.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "casa_noche",
+      "tiza": {
+       "expresion": "preocupado",
+       "postura": "abajo",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "contento",
+       "postura": "jarras",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "reloj",
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "En casa dicen que llevo toda la noche hablando sola.",
+        "tipo": "habla"
+       },
+       {
+        "quien": "algoritmo",
+        "texto": "Sola no. Hablas conmigo.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "casa_noche",
+      "tiza": {
+       "expresion": "agotado",
+       "postura": "encoger",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "sorprendido",
+       "postura": "abajo",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "reloj",
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "Eso es lo que les preocupa.",
+        "tipo": "habla"
+       }
+      ]
+     }
+    ]
+   },
+   "cabe": true
+  },
+  {
+   "pieza": "buzz-cortometraje-terminado",
+   "idea": "Tiza decide el plano y Algoritmo solo lo revela, pero lo que falta en el decorado lo inventa la IA; Tiza se teme lo peor y el invento resulta ser un proyector que enciende a la primera (remata Algoritmo y Tiza lo celebra).",
+   "guion": {
+    "vinetas": [
+     {
+      "cartela": "En un taller en línea de cine con IA.",
+      "escenario": "videollamada",
+      "tiza": {
+       "expresion": "orgulloso",
+       "postura": "senalar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "neutral",
+       "postura": "abajo",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "Yo decido el plano y tú solo lo revelas, como un laboratorio. Decorado: un aula.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "videollamada",
+      "tiza": {
+       "expresion": "preocupado",
+       "postura": "cabeza",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "contento",
+       "postura": "senalar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "Revelado. Y lo que faltaba en el decorado lo he inventado yo.",
+        "tipo": "habla"
+       },
+       {
+        "quien": "tiza",
+        "texto": "Ya estamos. ¿El qué?",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "videollamada",
+      "tiza": {
+       "expresion": "riendo",
+       "postura": "arriba",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "avergonzado",
+       "postura": "encoger",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "Un proyector que enciende a la primera.",
+        "tipo": "habla"
+       }
+      ]
+     }
+    ]
+   },
+   "cabe": true
+  }
+ ]
+}

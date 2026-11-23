@@ -1,0 +1,111 @@
+{
+  "fecha": "2026-11-22",
+  "hay_edicion": true,
+  "motivo": "A normal day, light on new items: on Sundays much of what has already been published is repeated (Gemini Notebook, Android, Gemini explorations). There is one item from each group: a debate on authorship in ChatGPT-IA-edu, a new app in Vibe Coding Educativo, and the finished short film and its making-of in EduMedia-IAG.",
+  "piezas": [
+    {
+      "id": "autoria-cuento-ilustrado-ia",
+      "seccion": "debates",
+      "importancia": 1,
+      "grupo": "chatgpt",
+      "antetitulo": "Authorship and assessment",
+      "titular": "An imagined case asks who signs a prize-winning story illustrated with AI",
+      "entradilla": "An instalment of the series “Familias con inteligencia” imagines a case: a student declares that they used AI, wins a competition and a classmate challenges it. Chema Falcó asks schools for clear criteria.",
+      "cuerpo": [
+        "A new instalment of the series “Familias con inteligencia”, titled “[¿Quién firma?](https://profechef.substack.com/p/quien-firma)” (“Who signs?”) and written by Chema Falcó, was shared in ChatGPT-IA-edu. It sets out an imagined case, which its author presents as generic: a student in the third year of ESO (compulsory secondary education, ages 14 to 15) writes a story, generates the illustrations with an AI tool and declares that they used it. The rules of the school’s literary competition ask for “original works” and do not exclude AI, so the student wins first prize. A classmate who has illustrated her entry by hand questions whether that counts as drawing.",
+        "The text sets out two views of the case: the student’s, who argues that the story and every decision about the images are theirs, and the classmate’s, who maintains that generating images is not drawing. Falcó concludes that the authorship of the story belongs to the student and that directing (choosing, discarding, organising and retouching) is a creative act, but a different one from executing. It is therefore worth recognising both contributions without confusing them.",
+        "As criteria, the instalment proposes drafting rules clear enough to leave no ambiguity about the use of AI, and asking students to declare that use and be able to show the process. For families, it suggests working out together what the child invented, what they decided and what they delegated to the tool. In the group, Falcó raised the underlying question: whether assessment systems distinguish between execution, creative direction and authorship, or only value the final result.",
+        "The paper has already covered other instalments of the series: on [declaring the use of AI](pieza:2026-11-15/declarar-uso-ia-transparencia) and on [the percentage from a detector that proves nothing](pieza:2026-11-08/detector-ia-no-es-prueba). The case in this instalment is a scenario set out by its author, not a verified fact."
+      ],
+      "fuentes": [
+        {
+          "titulo": "¿Quién firma? (Chema Falcó, “Familias con inteligencia”) (in Spanish)",
+          "url": "https://profechef.substack.com/p/quien-firma"
+        }
+      ],
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 54628
+      },
+      "comprobado": "Chema Falcó’s Substack post opened (22 November 2026): case (“Imaginemos esta escena”, “caso genérico”), views and criteria checked against his text; the distinction between directing and executing is the author’s conclusion, not the view of third parties. Declaring use and showing the process come from Falcó’s message in the group. Earlier instalments checked in publicado.txt. The example of a school in Taiwan cited in the post is not included, because it has not been verified.",
+      "ilustracion": "A diagram with three separate contributions joined by a brace —text, creative direction (choosing and retouching) and execution (generating images)— pointing to a story, and below it a “competition rules” notice that decides which ones count.",
+      "ilustracion_alt": "Three labels, “Text”, “Creative direction” and “Execution”, grouped by a brace that points to a book labelled “Story”; below, a notice with a medal and the label “Competition rules”, with a dashed red arrow towards the story."
+    },
+    {
+      "id": "informes-a-viva-voz",
+      "seccion": "vibecoding",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Community app",
+      "titular": "An app turns spoken answers into assessment reports for families",
+      "entradilla": "“Informes a viva voz”, by Ernesto Boixader, asks teachers to answer three or seven questions about each student, and AI writes the report from those answers.",
+      "cuerpo": [
+        "Ernesto Boixader presented [“Informes a viva voz”](https://eboixader-del.github.io/mi-web/informes-de-evaluacion/) in Vibe Coding Educativo, an app he created for assessment reports. According to his description, teachers answer questions about each student, by voice or in writing, with one version of three questions and another of seven. From those answers AI writes a report adapted to the subject, the year group and the intended reader, and the teacher reviews it and decides the final version.",
+        "The app’s page, under the name “A viva voz”, offers three links: one for ChatGPT, one for Claude and one for Gemini. In other words, the report is generated by the AI of whichever service each teacher chooses.",
+        "Before using it with real data, it is worth bearing in mind that the page does not say what student data is requested and says nothing about privacy. Whatever is written about a student will be processed by the chosen service, and each school should check its terms, especially if the text includes names or data on health or personal circumstances."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Informes a viva voz (Ernesto Boixader) (in Spanish)",
+          "url": "https://eboixader-del.github.io/mi-web/informes-de-evaluacion/"
+        }
+      ],
+      "mensaje": {
+        "grupo": "vce",
+        "id": 15204
+      },
+      "comprobado": "The app’s website opened (title “Informes de evaluación · A viva voz”): three links (ChatGPT, Claude, Gemini); no information on privacy, student data or author. How it works (3 or 7 questions, review by the teacher) taken from Ernesto Boixader’s message, in which he says he created it. Boixader had not appeared in the paper before.",
+      "ilustracion": null,
+      "ilustracion_alt": "A microphone labelled “Voice”, with the label “3 or 7 questions”, an arrow to a robot labelled “AI writes” and another to a document labelled “Report”; below, a person with the label “Teacher reviews”."
+    },
+    {
+      "id": "buzz-cortometraje-terminado",
+      "seccion": "multimedia",
+      "importancia": 2,
+      "grupo": "edumedia",
+      "antetitulo": "Cinema with AI",
+      "titular": "Raül Torres releases his short film “Buzz” and explains step by step how he made it",
+      "entradilla": "The director explains on a web page and in a video how he shot it by hand in virtual reality and left only the developing of the images to AI.",
+      "cuerpo": [
+        "Raül Torres shared in EduMedia-IAG [“Buzz”](https://www.youtube.com/watch?v=j2XJSyWlVZ8), the short film that the paper had already covered [in a preview](pieza:2026-11-08/buzz-cortometraje-vr) and [in its workflow](pieza:2026-11-09/buzz-flujo-claude-blender). According to the video’s description, it is a war and horror short shot with a Quest 3 headset on a 3D set.",
+        "The making-of, on [a web page](https://raultorres-ia.github.io/apps/buzz_making_off/) and [in a video](https://www.youtube.com/watch?v=ROi4QuPJtrU), explains six steps: a script designed for continuity, the basic set in Blender, shooting with the headset, turning those takes into shots with Seedance 2.5, sound with ElevenLabs, and editing and colour in DaVinci Resolve. The idea he defends is that AI does not direct the film: where each character is, how long a shot lasts and how the camera moves are decided by hand, and AI only develops that image, as a laboratory develops a negative.",
+        "The video ends with four tips from the author: whatever is not on the set, AI will invent; it is best to shoot by hand to give the camera an intention; frames from the edit itself should be used as a reference; and each flaw should be fixed where it costs least, rhythm in the edit and light in the colour grade. For the classroom, it works as an example of a production workflow in which students decide the shot before generating it."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Buzz | AI Short Film (YouTube)",
+          "url": "https://www.youtube.com/watch?v=j2XJSyWlVZ8"
+        },
+        {
+          "titulo": "BUZZ · Making Off (Raül Torres’s page) (in Spanish)",
+          "url": "https://raultorres-ia.github.io/apps/buzz_making_off/"
+        },
+        {
+          "titulo": "Buzz Behind the Scenes (YouTube)",
+          "url": "https://www.youtube.com/watch?v=ROi4QuPJtrU"
+        }
+      ],
+      "mensaje": {
+        "grupo": "edumedia",
+        "id": 12398
+      },
+      "comprobado": "The making-of page opened: six steps and tools match; the idea of the “negative” appears on the page and in the making-of video’s description, which is also where the tips come from. The running time and the absence of dialogue are not given: the YouTube description speaks of four and a half minutes without dialogue and the page of 3:34 and one whispered line. Raül Torres is an author of the paper and is named as the author of the resource, which he published himself. The videos could not be watched. Earlier items checked in publicado.txt.",
+      "ilustracion": null,
+      "ilustracion_alt": "A chain of four steps with arrows: a cube labelled “3D set”, virtual reality glasses labelled “Shot by hand”, a robot labelled “AI develops” and a clapperboard labelled “Buzz”; beneath the two middle steps, a dashed red bracket."
+    }
+  ],
+  "breves": [],
+  "descartado": [
+    "Official Gemini Notebook API and David Cordones’s use cases: already published on 21 November (item gemini-notebook-api-oficial); what is new in the thread, a member’s interest in trying the unofficial API, adds no new fact.",
+    "Interactive Gemma 4 guide: already appeared in a brief on 21 November.",
+    "Android at 50 devices, Mercè Feu’s simulator and Gemini’s immersive explorations: already published on 21 November.",
+    "Documents in the Digital Library (Council of the EU conclusions and the Abya Yala manual): they have their own section.",
+    "Messages of thanks, applause, notices from the anti-userbot bot and comments on Claude usage limits: not news."
+  ],
+  "repaso": [
+    "Debate on “¿Quién firma?”: the headline and standfirst took as real a case that the source presents as imagined (“Imaginemos esta escena”, “caso genérico”); they now say “imagined” and “imagines”, and the body warns of it from the start.",
+    "Debate: the three “views” were not in the source (the directing/executing distinction and the point about the rules are the author’s conclusion, not the views of third parties); rewritten with the two views it does include (student and classmate) and Falcó’s conclusion.",
+    "“Buzz”: removed the running time (four and a half minutes according to YouTube, 3:34 according to the page) and the absence of dialogue (the page mentions one whispered line), because the sources contradict each other.",
+    "“Informes a viva voz”: no changes (page title, links and absence of privacy information confirmed); Boixader had not appeared before."
+  ]
+}

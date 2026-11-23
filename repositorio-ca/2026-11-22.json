@@ -1,0 +1,46 @@
+{
+  "fecha": "2026-11-22",
+  "piezas": [
+    {
+      "id": "editor-musical-interactivo-con-audio",
+      "seccion": "vibecoding",
+      "repositorio": "fondo",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Del fons del repositori",
+      "titular": "Un editor que converteix la notació ABC en partitura i la reprodueix al navegador",
+      "entradilla": "María Teresa González va crear un editor musical senzill: s'escriu la melodia com a text, apareix la partitura i es pot escoltar, sense instal·lar res.",
+      "cuerpo": [
+        "L'«Editor Musical Interactivo con Audio» és una pàgina web de María Teresa González, compartida amb llicència Creative Commons BY-SA (Reconeixement-CompartirIgual), segons consta a la fitxa del repositori. La seva autora el va presentar al grup Vibe Coding Educativo el juny del 2025, publicat a GitHub i a Netlify. Està pensat, segons la fitxa, per a primària i secundària, dins de l'àrea d'Arts i Humanitats, i està en castellà.",
+        "En obrir-lo es veu a l'esquerra un quadre de text on s'escriu la música en notació ABC, un format de text que descriu una melodia amb lletres i barres de compàs. La pàgina porta un exemple ja escrit, una escala de Do major amb el seu títol, el compàs i la tonalitat. A la dreta, sota «Partitura generada», es dibuixa el pentagrama amb la clau de sol, el compàs de 4/4 i les notes.",
+        "A sobre de la partitura hi ha dos controls d'àudio, «Reproducir» i «Parar», amb un lliscador de tempo (120 pulsacions per minut en obrir-lo) i un altre de volum (75 %). Sota el quadre de text hi ha botons per generar la partitura i, a més, els rotulats «1 Línea», «2 Líneas», «3 Líneas», «4 Líneas» i «Ritmo». La captura no permet saber què fa exactament cadascun d'aquests darrers, de manera que convé provar-los abans de planificar una classe.",
+        "Per a un docent de música, el més valuós és que l'alumnat pot escriure, escoltar, corregir i tornar a escoltar la seva pròpia melodia sense necessitat d'instruments ni d'un programa d'edició complex. Segons la fitxa, que recull el que diu la seva autora, es pot fer servir amb la pissarra digital per a dictats melòdics, creació col·lectiva, correcció de partitures amb errors o traducció de fragments rítmics.",
+        "La contrapartida és que exigeix aprendre la notació ABC, cosa que a secundària pot ser un contingut més de l'aula, però que a primària requerirà que el professorat doni les pautes o prepari melodies de partida. S'utilitza directament des del navegador, sense compte visible a la pàgina. Un recurs modest, però útil per portar el pentagrama i el so a qualsevol aula amb un ordinador."
+      ],
+      "recursos": [
+        {
+          "id": "editor-musical-interactivo-con-audio",
+          "titulo": "Editor Musical Interactivo con Audio",
+          "autoria": "María Teresa González",
+          "url": "https://mtgonzalezm.github.io/editor-musicalsonido-teresagonzalez/",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://mtgonzalezm.github.io/editor-musicalsonido-teresagonzalez/",
+          "licencia": "Creative Commons BY-SA (Reconeixement-CompartirIgual)",
+          "captura": "2026-11-22-editor-musical-interactivo-con-audio.jpg",
+          "captura_alt": "Editor amb un quadre de text en notació ABC a l'esquerra i, a la dreta, els controls d'àudio i la partitura d'una escala de Do major.",
+          "texto": []
+        }
+      ],
+      "fuentes": [
+        {"titulo": "Editor Musical Interactivo con Audio", "url": "https://mtgonzalezm.github.io/editor-musicalsonido-teresagonzalez/"},
+        {"titulo": "Presentació a Vibe Coding Educativo (en castellà)", "url": "https://t.me/vceduca/1674"}
+      ],
+      "comprobado": "Abierta la web con WebFetch (editor ABC, botones Generar, 1-4 Líneas, Ritmo, Reproducir/Parar, tempo y volumen; sin selector de idioma; sin autoría ni licencia visibles en la página, constan en la ficha) y vista la captura: escala de Do mayor dibujada en pentagrama, con deslizadores de tempo y volumen. No se ha comprobado qué hacen los botones de líneas y Ritmo. Contrastados con la entrada el título, la autoría, la licencia, la ficha, la captura y el mensaje de la autora (21-06-2025). Sin enlaces a lo ya publicado: no hay artículo relacionado en publicado.txt.",
+      "repaso": [
+        "Licencia y autoría atribuidas a la ficha, porque la página no las muestra.",
+        "Entradilla: quitado «al momento» (hay que pulsar «Reproducir»).",
+        "Actualizado «comprobado»."
+      ]
+    }
+  ],
+  "descartado": []
+}

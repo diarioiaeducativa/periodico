@@ -1,0 +1,91 @@
+{
+ "fecha": "2026-11-22",
+ "elegida": {
+  "n": 2,
+  "pieza": "autoria-cuento-ilustrado-ia",
+  "idea": "Algoritmok eguneko kasua planteatzen du: ikasle batek ipuin bat idazten du eta AAk ilustratzen du, nork sinatzen du? Ikastetxean hori betidanik konponduta dago: Tizak idazten du, buruzagitzak moldatzen du eta zuzendaritzak sinatzen du; egiletza akats bat ateratzen denean aitortzen diote. Tizak amaitzen du, sinadura-zirkuituaren kontra eta ironiaz, eta Algoritmo mutu geratzen da.",
+  "guion": {
+   "vinetas": [
+    {
+     "cartela": "Zuzendaritzako bulegoan, sinadura baten zain.",
+     "escenario": "despacho",
+     "tiza": {
+      "expresion": "agotado",
+      "postura": "sostener",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "pensativo",
+      "postura": "senalar",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "objeto": "folio",
+     "lleva": "tiza",
+     "bocadillos": [
+      {
+       "quien": "algoritmo",
+       "texto": "Ikasle batek ipuin bat idazten du eta AAk ilustratzen du. Nork sinatzen du?",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "despacho",
+     "tiza": {
+      "expresion": "orgulloso",
+      "postura": "sostener",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "preocupado",
+      "postura": "encoger",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "objeto": "folio",
+     "lleva": "tiza",
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Hemen badago irtenbidea: nik idatzi, buruzagitzak moldatu, zuzendaritzak sinatu.",
+       "tipo": "habla"
+      },
+      {
+       "quien": "algoritmo",
+       "texto": "Eta egiletza?",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "despacho",
+     "tiza": {
+      "expresion": "neutral",
+      "postura": "sostener",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "sorprendido",
+      "postura": "abajo",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "objeto": "folio",
+     "lleva": "tiza",
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Hori akats bat ateratzen denean aitortzen didate.",
+       "tipo": "habla"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "traduccion": "itzulpen automatikoa AArekin"
+}

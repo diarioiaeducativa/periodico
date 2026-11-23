@@ -1,0 +1,144 @@
+{
+  "fecha": "2026-11-23",
+  "avisos": {
+    "chatgpt": {
+      "saludo": "Buenos días. Para empezar la semana, una pregunta sobre autoría y evaluación.",
+      "puntos": [
+        "Un caso imaginado plantea quién firma un cuento premiado en un concurso escolar cuyas ilustraciones generó una IA, y qué criterios pueden fijar los centros en sus bases",
+        "Una aplicación convierte las respuestas habladas del docente en informes de evaluación, aunque su página no dice qué datos del alumnado pide ni qué se hace con ellos",
+        "La viñeta de Tiza y Algoritmo vuelve sobre la firma de un cuento ilustrado con IA, pero desde el despacho de dirección"
+      ]
+    },
+    "vce": {
+      "saludo": "Buenos días. Dos aplicaciones de la comunidad para empezar la semana.",
+      "puntos": [
+        "«Informes a viva voz», de Ernesto Boixader, pide al docente tres o siete respuestas sobre cada estudiante y deja que la IA redacte el informe de evaluación, que luego se revisa",
+        "Del fondo del repositorio sale el «Editor Musical Interactivo con Audio», de María Teresa González: se escribe una melodía en notación ABC, se dibuja la partitura y se escucha en el navegador"
+      ],
+      "url": "https://diarioiaeducativa.github.io/n/22-vce.html"
+    },
+    "edumedia": {
+      "saludo": "Buenos días. Llega el final de un cortometraje que ya había salido en estas páginas.",
+      "puntos": [
+        "Raül Torres publica «Buzz», su cortometraje hecho con gafas de realidad virtual, y explica en seis pasos cómo la IA solo revela unas imágenes que se han rodado a mano",
+        "Un editor web sencillo permite escribir una melodía como texto, ver la partitura en pantalla y escucharla sin instalar nada, útil para trabajar el sonido en el aula de música"
+      ],
+      "url": "https://diarioiaeducativa.github.io/n/22-edumedia.html"
+    }
+  },
+  "instagram": "Una entrega de la serie «Familias con inteligencia» imagina un caso que cualquier centro podría vivir: un cuento premiado en un concurso escolar con ilustraciones generadas por una IA. Plantea quién es el autor y qué criterios conviene fijar en las bases. El número recoge también una aplicación que convierte las respuestas habladas del docente en informes de evaluación, un editor que dibuja la partitura de una melodía escrita como texto y la reproduce en el navegador, y el cortometraje «Buzz», rodado a mano en realidad virtual, con el detalle de cómo se hizo.",
+  "titulo": "Diario de IA Educativa · Núm. 22",
+  "fecha_texto": "Lunes, 23 de noviembre de 2026",
+  "url": "https://diarioiaeducativa.github.io/?n=22",
+  "imagen": "https://diarioiaeducativa.github.io/portadas/2026-11-22-es.jpg",
+  "personas": [
+    {
+      "id": 64519607,
+      "piezas": [
+        {
+          "es": {
+            "titular": "Un caso imaginado plantea quién firma un cuento premiado e ilustrado con IA",
+            "url": "https://diarioiaeducativa.github.io/2026-11-22/autoria-cuento-ilustrado-ia.html"
+          },
+          "ca": {
+            "titular": "Un cas imaginat planteja qui signa un conte premiat i il·lustrat amb IA",
+            "url": "https://diarioiaeducativa.github.io/ca/2026-11-22/autoria-cuento-ilustrado-ia.html"
+          },
+          "gl": {
+            "titular": "Un caso imaxinado plantexa quen asina un conto premiado e ilustrado con IA",
+            "url": "https://diarioiaeducativa.github.io/gl/2026-11-22/autoria-cuento-ilustrado-ia.html"
+          },
+          "eu": {
+            "titular": "Imajinatutako kasu batek galdetzen du nork sinatzen duen AArekin ilustratutako ipuin sarituaren egiletza",
+            "url": "https://diarioiaeducativa.github.io/eu/2026-11-22/autoria-cuento-ilustrado-ia.html"
+          },
+          "en": {
+            "titular": "An imagined case asks who signs a prize-winning story illustrated with AI",
+            "url": "https://diarioiaeducativa.github.io/en/2026-11-22/autoria-cuento-ilustrado-ia.html"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5697941705,
+      "piezas": [
+        {
+          "es": {
+            "titular": "Una aplicación convierte respuestas habladas en informes de evaluación para las familias",
+            "url": "https://diarioiaeducativa.github.io/2026-11-22/informes-a-viva-voz.html"
+          },
+          "ca": {
+            "titular": "Una aplicació converteix respostes parlades en informes d'avaluació per a les famílies",
+            "url": "https://diarioiaeducativa.github.io/ca/2026-11-22/informes-a-viva-voz.html"
+          },
+          "gl": {
+            "titular": "Unha aplicación converte respostas faladas en informes de avaliación para as familias",
+            "url": "https://diarioiaeducativa.github.io/gl/2026-11-22/informes-a-viva-voz.html"
+          },
+          "eu": {
+            "titular": "Aplikazio batek ahoz emandako erantzunak familientzako ebaluazio-txosten bihurtzen ditu",
+            "url": "https://diarioiaeducativa.github.io/eu/2026-11-22/informes-a-viva-voz.html"
+          },
+          "en": {
+            "titular": "An app turns spoken answers into assessment reports for families",
+            "url": "https://diarioiaeducativa.github.io/en/2026-11-22/informes-a-viva-voz.html"
+          }
+        }
+      ]
+    },
+    {
+      "id": 6920519550,
+      "piezas": [
+        {
+          "es": {
+            "titular": "Raül Torres publica su cortometraje «Buzz» y explica paso a paso cómo lo hizo",
+            "url": "https://diarioiaeducativa.github.io/2026-11-22/buzz-cortometraje-terminado.html"
+          },
+          "ca": {
+            "titular": "Raül Torres publica el seu curtmetratge «Buzz» i explica pas a pas com el va fer",
+            "url": "https://diarioiaeducativa.github.io/ca/2026-11-22/buzz-cortometraje-terminado.html"
+          },
+          "gl": {
+            "titular": "Raül Torres publica o seu curtametraxe «Buzz» e explica paso a paso como o fixo",
+            "url": "https://diarioiaeducativa.github.io/gl/2026-11-22/buzz-cortometraje-terminado.html"
+          },
+          "eu": {
+            "titular": "Raül Torresek «Buzz» film laburra argitaratu du eta pausoz pauso azaldu du nola egin zuen",
+            "url": "https://diarioiaeducativa.github.io/eu/2026-11-22/buzz-cortometraje-terminado.html"
+          },
+          "en": {
+            "titular": "Raül Torres releases his short film “Buzz” and explains step by step how he made it",
+            "url": "https://diarioiaeducativa.github.io/en/2026-11-22/buzz-cortometraje-terminado.html"
+          }
+        }
+      ]
+    },
+    {
+      "id": 930440199,
+      "piezas": [
+        {
+          "es": {
+            "titular": "Un editor que convierte la notación ABC en partitura y la reproduce en el navegador",
+            "url": "https://diarioiaeducativa.github.io/2026-11-22/editor-musical-interactivo-con-audio.html"
+          },
+          "ca": {
+            "titular": "Un editor que converteix la notació ABC en partitura i la reprodueix al navegador",
+            "url": "https://diarioiaeducativa.github.io/ca/2026-11-22/editor-musical-interactivo-con-audio.html"
+          },
+          "gl": {
+            "titular": "Un editor que converte a notación ABC en partitura e a reproduce no navegador",
+            "url": "https://diarioiaeducativa.github.io/gl/2026-11-22/editor-musical-interactivo-con-audio.html"
+          },
+          "eu": {
+            "titular": "ABC notazioa partitura bihurtzen duen eta nabigatzailean erreproduzitzen duen editore bat",
+            "url": "https://diarioiaeducativa.github.io/eu/2026-11-22/editor-musical-interactivo-con-audio.html"
+          },
+          "en": {
+            "titular": "An editor that turns ABC notation into a score and plays it in the browser",
+            "url": "https://diarioiaeducativa.github.io/en/2026-11-22/editor-musical-interactivo-con-audio.html"
+          }
+        }
+      ]
+    }
+  ]
+}

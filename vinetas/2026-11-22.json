@@ -1,0 +1,134 @@
+{
+ "fecha": "2026-11-22",
+ "elegida": {
+  "n": 2,
+  "pieza": "autoria-cuento-ilustrado-ia",
+  "idea": "Algoritmo plantea el caso del día: un alumno escribe un cuento y la IA lo ilustra, ¿quién lo firma? En el centro eso está resuelto desde siempre: Tiza redacta, jefatura retoca y dirección firma; la autoría se la reconocen cuando sale una errata. Remata Tiza, con retranca y contra el circuito de firmas, que no sale; Algoritmo se queda cortado.",
+  "guion": {
+   "vinetas": [
+    {
+     "cartela": "En el despacho de dirección, esperando una firma.",
+     "escenario": "despacho",
+     "tiza": {
+      "expresion": "agotado",
+      "postura": "sostener",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "pensativo",
+      "postura": "senalar",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "objeto": "folio",
+     "lleva": "tiza",
+     "bocadillos": [
+      {
+       "quien": "algoritmo",
+       "texto": "Un alumno escribe un cuento y la IA lo ilustra. ¿Quién lo firma?",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "despacho",
+     "tiza": {
+      "expresion": "orgulloso",
+      "postura": "sostener",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "preocupado",
+      "postura": "encoger",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "objeto": "folio",
+     "lleva": "tiza",
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Aquí eso está resuelto: yo redacto, jefatura retoca y dirección firma.",
+       "tipo": "habla"
+      },
+      {
+       "quien": "algoritmo",
+       "texto": "¿Y la autoría?",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "despacho",
+     "tiza": {
+      "expresion": "neutral",
+      "postura": "sostener",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "sorprendido",
+      "postura": "abajo",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "objeto": "folio",
+     "lleva": "tiza",
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Esa me la reconocen cuando sale una errata.",
+       "tipo": "habla"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "motivo": "Gana la 2. Es la que mejor remata: la pregunta de la noticia (quién firma cuando uno escribe y otro ejecuta) se da la vuelta hacia algo que todo docente conoce, el papel que redacta una y firma otro, y la última frase, «Esa me la reconocen cuando sale una errata», es corta, seca y no se ve venir. Se entiende sin haber leído la noticia, porque la primera viñeta cuenta el caso en una línea. La ironía cae sobre el circuito de firmas del centro, la burocracia, no sobre ninguna persona, ni sobre el alumno del supuesto, ni sobre el autor de la entrega; «jefatura» y «dirección» son aquí escalones del trámite, sin nombre ni caricatura. No se inventa nada de la pieza: el alumno escribe el cuento, las ilustraciones las genera una IA y la pregunta es quién firma; lo del despacho es de la tira. Su gracia llega a 7 (un 8), así que solo se ha afinado el ritmo. La 3 (el informe según a quién vaya dirigido) empata en gracia y tiene la mejor frase suelta de las cinco, «Muestra un gran potencial, que dosifica con criterio», pero esa frase está en la segunda viñeta y la tercera baja: en cuanto Tiza pregunta por el equipo docente, la respuesta se adivina. Además no cabe (en la primera viñeta habla primero quien está a la derecha, con 71 y 43 caracteres), y el chiste roza reírse de un alumno, aunque sea genérico, y enseña a los docentes diciendo una cosa a las familias y otra entre ellos, en un diario que también leen familias. Con gracia parecida, se elige la que cabe y la que remata mejor; la variedad (en la 3 remata Algoritmo) no decide. La 4 («Sola no. Hablas conmigo» / «Eso es lo que les preocupa») es la más limpia y la más clara, y muy humana, pero el remate es amable y previsible: una sonrisa, no más. La 5 (lo que falta en el decorado lo inventa la IA: «Un proyector que enciende a la primera») tiene un buen remate y un molde poco visto (Tiza lo celebra), pero la primera viñeta, de 80 caracteres, pide haber leído la noticia para entender lo de «revelar» y «decorado»; el taller en línea no sale en la pieza, y el motor del chiste, el material del centro que no enciende, es el mismo de la viñeta de ayer («las que encienden»). La 1 (tres notas y una plataforma con una sola casilla) es certera y va al fondo de la noticia, pero es más una observación que un chiste: el remate lo cuenta entero el rótulo de la tercera viñeta, la primera está cargada de jerga («los dirigió él y los ejecutó la IA») y el «Es lo justo» de Tiza es relleno para llegar al final. Las cinco respetan las prohibiciones; caben todas menos la 3.",
+ "retoques": "Primera viñeta, bocadillo de Algoritmo: «Un alumno escribe un cuento y la IA lo ilustra. ¿Quién lo firma?» en vez de «Un alumno dirige y la IA ejecuta los dibujos. ¿Quién firma el cuento?»: baja de 69 a 64 caracteres y lo entiende quien no ha leído la noticia («dirige» y «ejecuta» son el vocabulario de la entrega, y sin ella no se sabe qué dirige el alumno); además deja a la vista el paralelo con la respuesta de Tiza: escribe, ilustra, firma; redacto, retoca, firma. Sigue siendo lo que cuenta la pieza: el alumno escribe el cuento y genera las ilustraciones con una IA. Segunda y tercera viñeta: los textos no se tocan; el primer bocadillo de la segunda (el de Tiza, 70 caracteres) queda igual y habla primero quien está a la izquierda, así que cabe. Rótulo de la primera viñeta: está, tiene 49 caracteres y sitúa (dónde están y a qué esperan) sin contar el chiste; se deja. Escenario despacho: libre (los tres números anteriores fueron sala de profes, aula y fotocopiadora) y es donde tiene que pasar, a la puerta de la firma; se mantiene en las tres viñetas. Objeto: el folio, que es el papel que espera la firma y lo lleva Tiza; salió el día 20, no en el número anterior, que no llevaba objeto, y el chiste lo pide. Caras de Tiza: agotada (lleva rato esperando), orgullosa (el aplomo con retranca de «eso está resuelto») y neutral en el remate, que se dice sin subrayarlo; no usa ninguna de sus más repetidas (pensativo, harto, contento), y «harto», que le iría a la última frase, fue su final de ayer. Caras de Algoritmo: pensativo al plantear el caso; en la segunda pasa de «neutral» a «preocupado», porque en el reparto de Tiza falta justo lo que pregunta y la cara tiene que decirlo; acaba sorprendido. «Orgulloso», su cara más repetida, no sale. Posturas: Tiza sostiene el folio las tres viñetas, una postura que no había usado en los tres números anteriores y que el objeto exige; lo que cambia en ella es la cara. Algoritmo señala, se encoge de hombros con la pregunta y acaba con los brazos caídos: aquí «abajo» es elegida, es quedarse cortado, y unas manos a la cabeza serían una reacción mayor que un remate dicho en seco; no usa «pensar» ni «arriba», sus más repetidas. El molde: los dos últimos remates fueron de Tiza (día 21) y mudo (día 20), así que no hay dos seguidos del mismo personaje y hoy puede rematar ella; no es el molde gastado (Algoritmo literal y Tiza harta): Tiza es la lista, el blanco es un tercero que no sale y el chasco se queda en Algoritmo. Acaban Tiza neutral y Algoritmo sorprendido, un final que no repite ninguno de los tres anteriores. Ningún bocadillo pasa de 90 caracteres (el más largo, 70).",
+ "puntuaciones": [
+  {
+   "n": 1,
+   "gracia": 6,
+   "claridad": 7,
+   "remate": 7,
+   "prohibiciones": "respeta; el rótulo de la tercera viñeta cuenta el remate entero y roza explicar el chiste",
+   "cabe": true
+  },
+  {
+   "n": 2,
+   "gracia": 8,
+   "claridad": 8,
+   "remate": 8,
+   "prohibiciones": "respeta: el blanco es el circuito de firmas del centro (la burocracia), no una persona ni el alumno del supuesto",
+   "cabe": true
+  },
+  {
+   "n": 3,
+   "gracia": 8,
+   "claridad": 7,
+   "remate": 6,
+   "prohibiciones": "respeta, pero roza reírse del alumnado («trabaja cuando le apetece») y enseña un doble lenguaje con las familias",
+   "cabe": false
+  },
+  {
+   "n": 4,
+   "gracia": 7,
+   "claridad": 9,
+   "remate": 7,
+   "prohibiciones": "respeta",
+   "cabe": true
+  },
+  {
+   "n": 5,
+   "gracia": 7,
+   "claridad": 5,
+   "remate": 8,
+   "prohibiciones": "respeta; el taller en línea no sale en la noticia, pero no se le atribuye ningún dato",
+   "cabe": true
+  }
+ ]
+}

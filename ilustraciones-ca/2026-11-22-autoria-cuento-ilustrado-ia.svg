@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340">
+<text class="lbl" x="40" y="62">Text</text>
+<text class="a lbl" x="40" y="132">Direcció creativa</text>
+<text class="lbl" x="40" y="202">Execució</text>
+<path class="t" d="M262 40 C282 40 282 60 282 90 C282 110 292 120 304 125 C292 130 282 140 282 160 C282 190 282 215 262 215"/>
+<line class="t" x1="304" y1="125" x2="350" y2="125"/>
+<g class="a li4" transform="translate(360 77) scale(4)"><!-- Lucide: book (ISC) --><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"/></g>
+<text class="lbl" x="408" y="200" text-anchor="middle">Conte</text>
+<rect class="fa t" x="40" y="250" width="520" height="62" rx="8"/>
+<g class="t li2" transform="translate(60 257) scale(2)"><!-- Lucide: award (ISC) --><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/><circle cx="12" cy="8" r="6"/></g>
+<text class="lbl" x="130" y="288">Bases del concurs</text>
+<path class="r" d="M408 250 V212" stroke-dasharray="6 8"/>
+<path class="r" d="M398 224 L408 212 L418 224"/>
+</svg>

@@ -1,0 +1,111 @@
+{
+  "fecha": "2026-11-22",
+  "hay_edicion": true,
+  "motivo": "Día normal y flojo en noticias nuevas: el domingo se repite buena parte de lo ya publicado (Gemini Notebook, Android, exploraciones de Gemini). Hay una pieza de cada grupo: un debate sobre autoría en ChatGPT-IA-edu, una aplicación nueva en Vibe Coding Educativo y el cortometraje terminado y su making-of en EduMedia-IAG.",
+  "piezas": [
+    {
+      "id": "autoria-cuento-ilustrado-ia",
+      "seccion": "debates",
+      "importancia": 1,
+      "grupo": "chatgpt",
+      "antetitulo": "Egiletza eta ebaluazioa",
+      "titular": "Imajinatutako kasu batek galdetzen du nork sinatzen duen AArekin ilustratutako ipuin sarituaren egiletza",
+      "entradilla": "«Familias con inteligencia» seriearen kapitulu batek kasu bat imajinatzen du: ikasle batek AA erabili duela adierazi du, lehiaketa bat irabazi du eta ikaskide batek zalantzan jarri du. Chema Falcók ikastetxeei irizpide argiak eskatzen dizkie.",
+      "cuerpo": [
+        "ChatGPT-IA-edu taldean «Familias con inteligencia» seriearen kapitulu berri bat partekatu zen, Chema Falcóren «[¿Quién firma?](https://profechef.substack.com/p/quien-firma)». Imajinatutako kasu bat azaltzen du, egileak generikotzat aurkezten duena: DBHko 3. mailako ikasle batek ipuin bat idazten du, irudiak AA tresna batekin sortzen ditu eta erabilera hori adierazten du. Bere institutuko literatura-lehiaketaren oinarriek «jatorrizko lanak» eskatzen dituzte eta ez dute AA baztertzen; beraz, lehen saria irabazten du. Eskuz ilustratu duen ikaskide batek zalantzan jartzen du hori marraztea denik.",
+        "Testuak kasuaren bi ikuspegi biltzen ditu: ikaslearena, istorioa eta irudiei buruzko erabaki guztiak berarenak direla defendatzen duena, eta ikaskidearena, irudiak sortzea ez dela marraztea dioena. Falcók ondorioztatzen du ipuinaren egiletza ikaslearena dela eta zuzentzea (aukeratu, baztertu, antolatu eta moldatzea) sormen-ekintza dela, baina gauzatzetik bereizia. Horregatik, komeni da bi ekarpenak aitortzea, nahastu gabe.",
+        "Irizpide gisa, kapitulu honek proposatzen du oinarriak AAren erabilerari buruzko anbiguotasunik ez uzteko adina argi idaztea, eta ikasleei erabilera hori adierazteko eta prozesua erakusteko eskatzea. Familientzat, ipuina nork asmatu zuen, zer erabaki zuen eta zer utzi zion tresnari elkarrekin berreraikitzea iradokitzen du. Taldean, Falcók funtsezko galdera planteatu zuen: ebaluazio-sistemek gauzatzea, sormen-zuzendaritza eta egiletza bereizten dituzten ala azken emaitza soilik baloratzen duten.",
+        "Egunkariak serieko beste kapitulu batzuk jaso zituen lehenago: [AAren erabilera adierazteari](pieza:2026-11-15/declarar-uso-ia-transparencia) buruzkoa eta [ezer frogatzen ez duen detektagailu baten ehunekoari](pieza:2026-11-08/detector-ia-no-es-prueba) buruzkoa. Kapitulu honetako kasua egileak planteatutako hipotesi bat da, ez egiaztatutako gertaera bat."
+      ],
+      "fuentes": [
+        {
+          "titulo": "¿Quién firma? (Chema Falcó, «Familias con inteligencia») (gaztelaniaz)",
+          "url": "https://profechef.substack.com/p/quien-firma"
+        }
+      ],
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 54628
+      },
+      "comprobado": "Abierta la entrada de Substack de Chema Falcó (22-11-2026): caso («Imaginemos esta escena», «caso genérico»), posturas y criterios comprobados contra su texto; la distinción entre dirigir y ejecutar es la conclusión del autor, no una postura de terceros. Declarar el uso y enseñar el proceso, del mensaje de Falcó en el grupo. Entregas anteriores comprobadas en publicado.txt. No se recoge el ejemplo de un colegio de Taiwán que cita la entrada, porque no se ha verificado.",
+      "ilustracion": "Un esquema con tres aportaciones separadas por llaves —texto, dirección creativa (elegir y retocar) y ejecución (generar imágenes)— que apuntan a un cuento, y debajo un cartel de «bases del concurso» que decide cuáles cuentan.",
+      "ilustracion_alt": "«Testua», «Sormen-zuzendaritza» eta «Gauzatzea» errotuluak, giltza batez multzokatuak, «Ipuina» errotulua duen liburu batera begira; behean, domina bat eta «Lehiaketaren oinarriak» errotulua dituen kartel bat, ipuinerantz doan gezi eten gorri batekin."
+    },
+    {
+      "id": "informes-a-viva-voz",
+      "seccion": "vibecoding",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Komunitatearen aplikazioa",
+      "titular": "Aplikazio batek ahoz emandako erantzunak familientzako ebaluazio-txosten bihurtzen ditu",
+      "entradilla": "Ernesto Boixaderren «Informes a viva voz» aplikazioak irakasleari ikasle bakoitzari buruzko hiru edo zazpi galderari erantzuteko eskatzen dio, eta erantzun horiekin AAk txostena idazten du.",
+      "cuerpo": [
+        "Ernesto Boixaderrek Vibe Coding Educativo taldean aurkeztu zuen [«Informes a viva voz»](https://eboixader-del.github.io/mi-web/informes-de-evaluacion/), ebaluazio-txostenetarako berak sortutako aplikazio bat. Haren azalpenaren arabera, irakasleak ahoz edo idatziz erantzuten die ikasle bakoitzari buruzko galdera batzuei, hiru galderako bertsio batekin eta zazpiko beste batekin. AAk erantzun horiekin txosten bat idazten du, irakasgaira, mailara eta nori zuzenduta dagoen egokitua, eta irakasleak berrikusi egiten du eta azken bertsioa erabakitzen du.",
+        "Aplikazioaren orriak, «A viva voz» izenburuarekin, hiru sarbide eskaintzen ditu: bat ChatGPTrentzat, bestea Clauderentzat eta hirugarrena Geminirentzat. Hau da, txostena irakasle bakoitzak aukeratzen duen zerbitzuko AAk sortzen du.",
+        "Benetako datuekin erabili aurretik, kontuan izan behar da orriak ez duela adierazten ikasleei buruzko zer datu eskatzen diren eta ez duela ezer esaten pribatutasunaz. Ikasle bati buruz idazten dena aukeratutako zerbitzuak prozesatuko du, eta ikastetxe bakoitzak haren baldintzak egiaztatu behar ditu, batez ere idatzitakoak izenak edo osasun- edo egoera pertsonalaren datuak badakartza."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Informes a viva voz (Ernesto Boixader) (gaztelaniaz)",
+          "url": "https://eboixader-del.github.io/mi-web/informes-de-evaluacion/"
+        }
+      ],
+      "mensaje": {
+        "grupo": "vce",
+        "id": 15204
+      },
+      "comprobado": "Abierta la web de la aplicación (título «Informes de evaluación · A viva voz»): tres accesos (ChatGPT, Claude, Gemini); no consta información de privacidad ni de datos del alumnado ni autor. Funcionamiento (3 o 7 preguntas, revisión por el docente) tomado del mensaje de Ernesto Boixader, que dice haberla creado. Boixader no había salido antes en el diario.",
+      "ilustracion": null,
+      "ilustracion_alt": "«Ahotsa» errotulua duen mikrofono bat, «3 edo 7 galdera» errotuluarekin, «AAk idazten du» errotulua duen robot batera doan gezi bat eta «Txostena» errotulua duen dokumentu batera doan beste bat; behean, pertsona bat, «Irakasleak berrikusten du» errotuluarekin."
+    },
+    {
+      "id": "buzz-cortometraje-terminado",
+      "seccion": "multimedia",
+      "importancia": 2,
+      "grupo": "edumedia",
+      "antetitulo": "AArekin egindako zinema",
+      "titular": "Raül Torresek «Buzz» film laburra argitaratu du eta pausoz pauso azaldu du nola egin zuen",
+      "entradilla": "Zuzendariak orri batean eta bideo batean kontatzen du errealitate birtualean eskuz grabatu zuela eta AAri irudien errebelatzea baino ez ziola utzi.",
+      "cuerpo": [
+        "Raül Torresek EduMedia-IAG taldean partekatu zuen [«Buzz»](https://www.youtube.com/watch?v=j2XJSyWlVZ8), egunkariak lehenago jaso zuen film laburra, [aurrerapen batean](pieza:2026-11-08/buzz-cortometraje-vr) eta [lan-fluxuan](pieza:2026-11-09/buzz-flujo-claude-blender). Bideoaren azalpenaren arabera, gerra- eta beldur-filma laburra da, Quest 3 betaurrekoekin 3D dekorazio baten gainean grabatua.",
+        "Making of-a, [orri batean](https://raultorres-ia.github.io/apps/buzz_making_off/) eta [bideoan](https://www.youtube.com/watch?v=ROi4QuPJtrU), sei urratsetan azaltzen da: jarraitutasunerako pentsatutako gidoia, Blenderreko oinarrizko dekorazioa, betaurrekoekin grabatzea, grabazio horiek Seedance 2.5ekin planoetan bihurtzea, ElevenLabsekin soinua eta DaVinci Resolven muntaketa eta kolorea. Defendatzen duen ideia da AAk ez duela filma zuzentzen: pertsonaia bakoitza non dagoen, plano batek zenbat irauten duen eta kamera nola mugitzen den eskuz erabakitzen da, eta AAk irudi hori garatzen baino ez du egiten, laborategi batek negatibo bat errebelatzen duen bezala.",
+        "Bideoak egilearen lau aholkurekin amaitzen da: dekoratuan ez dagoena AAk asmatuko du; komeni da eskuz grabatzea, kamerari asmoa emateko; muntaketaren beraren fotogramak erabili behar dira erreferentzia gisa, eta akats bakoitza gutxien kostatzen den tokian konpondu, erritmoa muntaketan eta argia kolorean. Ikasgelarako, adibide baliagarria da ikasleek planoa sortu aurretik erabakitzen duten ekoizpen-fluxu baterako."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Buzz | AI Short Film (YouTube) (ingelesez)",
+          "url": "https://www.youtube.com/watch?v=j2XJSyWlVZ8"
+        },
+        {
+          "titulo": "BUZZ · Making Off (Raül Torresen orria) (ingelesez)",
+          "url": "https://raultorres-ia.github.io/apps/buzz_making_off/"
+        },
+        {
+          "titulo": "Buzz Behind the Scenes (YouTube) (ingelesez)",
+          "url": "https://www.youtube.com/watch?v=ROi4QuPJtrU"
+        }
+      ],
+      "mensaje": {
+        "grupo": "edumedia",
+        "id": 12398
+      },
+      "comprobado": "Abierta la página del making-of: seis pasos y herramientas coinciden; la idea del «negativo» aparece en la página y en la descripción del vídeo del making-of, de donde salen también los consejos. No se da la duración ni la ausencia de diálogo: la descripción de YouTube habla de cuatro minutos y medio sin diálogo y la página, de 3:34 y una frase susurrada. Raül Torres es autor del diario y se le nombra como autor del recurso, que él mismo publicó. Los vídeos no se han podido ver. Piezas anteriores comprobadas en publicado.txt.",
+      "ilustracion": null,
+      "ilustracion_alt": "Lau urratseko kate bat geziekin: «3D dekoratua» errotulua duen kubo bat, «Eskuzko grabaketa» errotulua duten errealitate birtualeko betaurrekoak, «AAk errebelatzen du» errotulua duen robot bat eta «Buzz» errotulua duen klaketa bat; erdiko bi urratsen azpian, korapilo gorri eten bat."
+    }
+  ],
+  "breves": [],
+  "descartado": [
+    "API oficial de Gemini Notebook y casos de uso de David Cordones: ya publicado el 21-11 (pieza gemini-notebook-api-oficial); lo nuevo del hilo, el interés de un miembro por probar la API no oficial, no aporta un dato nuevo.",
+    "Guía interactiva de Gemma 4: ya salió en un breve del 21-11.",
+    "Android a 50 dispositivos, simulador de Mercè Feu y exploraciones inmersivas de Gemini: ya publicados el 21-11.",
+    "Documentos de la Biblioteca digital (conclusiones del Consejo de la UE y manual de Abya Yala): tienen su propia sección.",
+    "Mensajes de agradecimiento, aplausos, avisos del bot antiuserbots y comentarios sobre límites de uso de Claude: no son noticia."
+  ],
+  "repaso": [
+    "Debate de «¿Quién firma?»: el titular y la entradilla daban por real un caso que la fuente presenta como imaginado («Imaginemos esta escena», «caso genérico»); ahora dicen «supuesto» e «imagina», y el cuerpo lo avisa desde el principio.",
+    "Debate: las tres «posturas» no estaban en la fuente (la distinción dirigir/ejecutar y lo de las bases son la conclusión del autor, no posturas de terceros); reescrito con las dos miradas que sí recoge (alumno y compañera) y la conclusión de Falcó.",
+    "«Buzz»: quitadas la duración (cuatro minutos y medio según YouTube, 3:34 según la página) y la ausencia de diálogo (la página habla de una frase susurrada), porque las fuentes se contradicen.",
+    "«Informes a viva voz»: sin cambios (título de la página, accesos y ausencia de privacidad confirmados); Boixader no había salido antes."
+  ]
+}

@@ -1,0 +1,45 @@
+{"semana": "2026-47", "hay_comentario": true,
+ "general": {
+  "titulo": "La investigación ve más provecho en usar la IA para entender y las administraciones fijan condiciones",
+  "parrafos": [
+   "La investigación fue el asunto de más fondo. [La revisión de Stanford, que reúne ya 52 estudios causales](pieza:2026-11-18/stanford-evidencia-ia-escuela), concluye que la IA parece salir mejor parada cuando ayuda a entender material nuevo que cuando produce las tareas, aunque ningún uso mejora el aprendizaje de forma consistente. [El reportaje del domingo](pieza:2026-11-21/ia-aprender-entender-o-entregar) la explica junto con un experimento de Carnegie Mellon con un tutor que guía con preguntas, y propone cuatro pasos sin coste: un intento propio antes de cualquier ayuda, un asistente que pregunte en lugar de responder, separar entender de entregar y comprobar sin la herramienta lo que se ha aprendido.",
+   "Las administraciones también pusieron condiciones. [El Parlamento de Galicia aprobó la Ley de educación digital](pieza:2026-11-18/galicia-ley-educacion-digital), que en el texto que llegó al pleno solo permite a los centros públicos sistemas de IA del catálogo de la Consellería y prohíbe que la IA decida sobre el alumnado sin supervisión humana. [El Consejo de la UE aprobó unas conclusiones](pieza:2026-11-20/consejo-ue-competencias-ia) que piden formar al profesorado y orientar a los centros para que elaboren sus normas de uso, aunque son orientaciones políticas que no obligan a ningún centro.",
+   "En Vibe Coding Educativo destacó que [Android permite compartir una aplicación propia con hasta 50 dispositivos sin Google Play](pieza:2026-11-21/android-distribucion-limitada-50), con una cuenta gratuita pensada para clase. Y en EduMedia-IAG, Raül Torres publicó [«Buzz» terminado y su making-of](pieza:2026-11-22/buzz-cortometraje-terminado), que muestra un rodaje en el que el plano se decide a mano y la IA solo lo revela."
+  ],
+  "piezas": ["2026-11-18/stanford-evidencia-ia-escuela", "2026-11-21/ia-aprender-entender-o-entregar", "2026-11-18/galicia-ley-educacion-digital", "2026-11-20/consejo-ue-competencias-ia", "2026-11-21/android-distribucion-limitada-50", "2026-11-22/buzz-cortometraje-terminado"]
+ },
+ "grupos": {
+  "chatgpt": {
+   "titulo": "La guía del INTEF y los cambios de Gemini piden revisar cómo se usa la IA en clase",
+   "parrafos": [
+    "Lo más aprovechable para el aula fue [la versión 2.0 de la guía del INTEF](pieza:2026-11-16/intef-guia-ia-v2), de septiembre de 2026. Además de diez principios éticos y un plan por fases para los centros, trae anexos listos para usar: situaciones de aprendizaje por etapa, un modelo de declaración de uso de IA para el alumnado y un cuestionario de reflexión. En Madrid, [EducaMadrid incorpora un agente que prepara apuntes y cuestionarios](pieza:2026-11-18/educamadrid-agente-ia) para el profesorado de los centros sostenidos con fondos públicos, aunque la nota oficial no dice qué modelo usa ni cómo trata los datos del alumnado.",
+    "En Gemini, [Google separará el historial de las conversaciones del permiso para entrenar sus modelos](pieza:2026-11-19/gemini-historial-entrenamiento): guardar el historial dejará de implicar que las conversaciones sirvan para entrenar, y conviene revisar los dos ajustes cuando lleguen a la cuenta. Gemini Notebook, el antiguo NotebookLM, [convierte las fuentes de un cuaderno en un sitio web interactivo](pieza:2026-11-17/gemini-notebook-sitios) y [estrena una API oficial](pieza:2026-11-21/gemini-notebook-api-oficial), una vía para que otros programas lo usen, que por ahora solo admite cuentas personales, no las de Google Workspace que suelen usar los centros.",
+    "El debate de más fondo fue la autoría. [Un supuesto de cuento ilustrado con IA que gana un concurso](pieza:2026-11-22/autoria-cuento-ilustrado-ia), de la serie «Familias con inteligencia» de Chema Falcó, distingue entre dirigir y ejecutar, y propone que los centros fijen bases claras y que el alumnado declare el uso de la IA y pueda enseñar su proceso."
+   ],
+   "piezas": ["2026-11-16/intef-guia-ia-v2", "2026-11-18/educamadrid-agente-ia", "2026-11-19/gemini-historial-entrenamiento", "2026-11-17/gemini-notebook-sitios", "2026-11-21/gemini-notebook-api-oficial", "2026-11-22/autoria-cuento-ilustrado-ia"]
+  },
+  "vce": {
+   "titulo": "Las aplicaciones de aula ganan vías para llegar al alumnado sin descuidar sus datos",
+   "parrafos": [
+    "Hay dos vías nuevas para llevar una aplicación propia a los móviles del alumnado. [Google AI Studio crea aplicaciones Android completas a partir de una descripción](pieza:2026-11-19/ai-studio-apps-android), las prueba en un emulador del navegador y permite instalarlas desde la biblioteca personal de Google Play; los datos que guarden quedan en Firebase, un servicio de Google, algo que conviene saber si se piden al alumnado. La otra es [la cuenta gratuita de distribución limitada de Android](pieza:2026-11-21/android-distribucion-limitada-50), que permite compartir una aplicación con hasta 50 dispositivos autorizados sin pasar por la tienda.",
+    "Entre los recursos, [Trama](pieza:2026-11-16/trama-comprensio-lectora), el catálogo de comprensión lectora de Aarón Fortuño, en catalán y castellano, [añadió después «universos» de lecturas y versiones de distinta dificultad](pieza:2026-11-20/trama-universos-variantes), para que toda la clase trabaje la misma historia; su autor busca ayuda para traducirlo al gallego, al euskera y al aranés. [«Informes a viva voz»](pieza:2026-11-22/informes-a-viva-voz), de Ernesto Boixader, convierte las respuestas del docente, habladas o escritas, en informes de evaluación para las familias, redactados con ChatGPT, Claude o Gemini; como la página no dice nada de privacidad, cada centro debe comprobar las condiciones del servicio antes de usarla con datos reales.",
+    "Sobre esos datos, [un docente mide el uso de sus aplicaciones con Umami](pieza:2026-11-18/umami-analitica-privacidad), unas estadísticas sin cookies; según la Agencia Española de Protección de Datos, así no hace falta pedir permiso, pero sí explicarlo en la política de privacidad y no guardar los datos más de 25 meses."
+   ],
+   "piezas": ["2026-11-19/ai-studio-apps-android", "2026-11-21/android-distribucion-limitada-50", "2026-11-16/trama-comprensio-lectora", "2026-11-20/trama-universos-variantes", "2026-11-22/informes-a-viva-voz", "2026-11-18/umami-analitica-privacidad"]
+  },
+  "edumedia": {
+   "titulo": "«Buzz» muestra un cine con IA en el que el plano se decide a mano",
+   "parrafos": [
+    "[«Buzz», el cortometraje de Raül Torres, ya está terminado](pieza:2026-11-22/buzz-cortometraje-terminado), con un making-of en página y en vídeo que explica sus seis pasos: guion, decorado en Blender, rodaje con gafas de realidad virtual, conversión en planos con Seedance 2.5, sonido con ElevenLabs y montaje en DaVinci Resolve. La idea que defiende sirve para el aula: dónde está cada personaje, cuánto dura un plano y cómo se mueve la cámara se decide a mano, y la IA solo desarrolla la imagen, como un laboratorio revela un negativo. En sentido contrario, [el Manchester Animation Festival no aceptará películas hechas con IA generativa desde 2027](pieza:2026-11-20/manchester-festival-sin-ia), así que antes de presentar un proyecto del alumnado a un festival conviene leer sus bases.",
+    "Algunos cambios afectan a proyectos en marcha. [Google Flow retirará el 5 de diciembre tres de sus modelos](pieza:2026-11-17/flow-retirada-veo-omni), Veo 3.1 Fast, Veo 3.1 Quality y Omni Flash 1.1, y su ayuda recomienda pasar a Omni Flash 1.2 o a Veo 3.1 Lite. [Suno lanza Visuals](pieza:2026-11-18/suno-visuals), que ilustra canciones con vídeos con letra y clips de hasta 15 segundos, con créditos aparte. Y [las exploraciones inmersivas de Gemini](pieza:2026-11-21/gemini-exploraciones-inmersivas) ofrecen recorridos interactivos por temas ya preparados, pero no están en castellano: se ven en inglés."
+   ],
+   "piezas": ["2026-11-22/buzz-cortometraje-terminado", "2026-11-20/manchester-festival-sin-ia", "2026-11-17/flow-retirada-veo-omni", "2026-11-18/suno-visuals", "2026-11-21/gemini-exploraciones-inmersivas"]
+  }
+ },
+ "repaso": [
+  "General: título sin «los estudios piden», que sobreafirma (Stanford dice que ningún uso mejora el aprendizaje de forma consistente); ahora «La investigación ve más provecho en usar la IA para entender…».",
+  "General: «sale mejor parada» pasa a «parece salir mejor parada», como en la entradilla de la pieza de Stanford.",
+  "Vibe Coding Educativo: «añadió en pocos días» pasa a «añadió después» (la pieza no dice el plazo); «respuestas habladas» pasa a «habladas o escritas» (la pieza dice por voz o por escrito).",
+  "Resto comprobado contra sus piezas (nombres, cifras, organismos, claves, grupo de cada enlace) sin cambios; los tres grupos con artículos en la semana tienen su comentario."
+]
+}
