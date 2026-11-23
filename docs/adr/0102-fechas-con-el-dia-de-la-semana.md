@@ -15,6 +15,12 @@ no caber.
 - **Todas las fechas, con su día**: `fecha_corta()` y `fecha_con_anyo()` lo ponen por defecto con `con_dia()`
   («lunes, 23 de noviembre»; en euskera, detrás, como en la fecha larga: «azaroaren 23a, astelehena»). Las fechas
   de los comentarios, que monta el navegador, usan el mismo patrón con el día (`{s}`).
+- **Con el año si no es el de ahora** (Juanjo, 23-11-2026): «lunes, 3 de agosto» se confundiría dentro de un año con
+  el de entonces, en el archivo, las listas de reportajes y columnas, los artículos antiguos y el buscador. Una fecha
+  de otro año lleva el suyo («lunes, 3 de agosto de 2026»); las de este año, no, para no alargar sin necesidad los
+  rótulos del número del día. «El año en curso» es el de cuando se genera la web (`ANYO_ACTUAL`), que se rehace
+  entera cada mañana: el 1 de enero todas las fechas del año anterior pasan a llevar el suyo. Las de los comentarios
+  ya lo hacían así. `ANYO_ACTUAL=2027 python3 generar.py` enseña cómo se verá.
 - **Una excepción**: el rótulo del reportaje, que ya dice «El reportaje del domingo»; con el día quedaba
   «domingo, domingo, 22 de noviembre» (`dia=False`).
 - **La cifra de los grupos** (la imagen que pueden insertar otras webs) lleva el día abreviado, con las abreviaturas
@@ -28,10 +34,12 @@ no caber.
 
 ## Alternativas descartadas
 
+- **El año siempre**: alarga cada rótulo y repite «de 2026» en todas las fechas del número del día sin aportar nada.
+
 - **El día abreviado en el móvil** («lun., 23 de nov.»): la medida no lo pide, y dos formatos según la pantalla
   complican el código y las pruebas.
 
 ## Validación
 
-Generado en una copia aparte y medido con Playwright (fecha partida o rótulo partido, en 360 y 390 píxeles); probado
+Generado en una copia aparte, también como si fuera 2027, y medido con Playwright (fecha partida o rótulo partido, en 360 y 390 píxeles); probado
 con `probar-web` en Chromium, Firefox y WebKit, y las fechas de los comentarios, con uno real, en cuatro lenguas.

@@ -456,10 +456,19 @@ def con_dia(texto, dia):
     return f"{texto}, {dia}" if L["codigo"] == "eu" else f"{dia}, {texto}"
 
 
-def fecha_corta(iso, dia=True):
-    """«Lunes, 23 de noviembre», sin el año. Con `dia=False`, sin el día de la semana: solo donde ya se dice (el
-    rótulo «El reportaje del domingo») o para montar un patrón."""
+# El año en curso, el de cuando se genera la web (cada día): una fecha de otro año lleva el suyo. Se puede fijar
+# para probar cómo se verá la web otro año (ANYO_ACTUAL=2027)
+ANYO_ACTUAL = int(os.environ.get("ANYO_ACTUAL") or datetime.date.today().year)
+
+
+def fecha_corta(iso, dia=True, anyo=None):
+    """«Lunes, 23 de noviembre», sin el año si es el de ahora; si es de otro año, con el suyo («lunes, 3 de agosto de
+    2026»), para que no se confunda con la misma fecha de este año (Juanjo, 23-11-2026). Con `dia=False`, sin el día
+    de la semana: solo donde ya se dice (el rótulo «El reportaje del domingo») o para montar un patrón; con
+    `anyo=False`, nunca con el año (un patrón)."""
     d = datetime.date.fromisoformat(iso)
+    if anyo is None and d.year != ANYO_ACTUAL:
+        return fecha_con_anyo(iso, dia=dia)
     mes = L["meses"][d.month - 1]
     if L["codigo"] == "en":
         t = f"{d.day} {mes}"
@@ -850,7 +859,7 @@ def comentarios(ruta):
     # Las fechas, con las mismas reglas que el resto del diario (no todos los navegadores saben euskera):
     # por cada mes, el patrón con el día ({d}) y, si no es de este año, con el año ({a})
     textos = json.dumps({"borrado": L["comentarios_borrado"],
-                         "mes": [con_dia(fecha_corta(f"2000-{m:02d}-28", dia=False).replace("28", "{d}"), "{s}") for m in range(1, 13)],
+                         "mes": [con_dia(fecha_corta(f"2000-{m:02d}-28", dia=False, anyo=False).replace("28", "{d}"), "{s}") for m in range(1, 13)],
                          "mes_anyo": [con_dia(fecha_con_anyo(f"2000-{m:02d}-28", dia=False).replace("28", "{d}").replace("2000", "{a}"), "{s}")
                                       for m in range(1, 13)],
                          "dias": L["dias"]}, ensure_ascii=False)
