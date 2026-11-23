@@ -103,5 +103,6 @@
 | [0099](0099-la-ficha-del-documento-dice-siempre-donde-esta.md) | La ficha del documento dice siempre dónde está |
 | [0100](0100-el-lunes-la-portada-anuncia-el-resumen-semanal.md) | El lunes, la portada anuncia el resumen semanal |
 | [0101](0101-resumenes-del-video-y-del-podcast-plegados.md) | Los resúmenes del vídeo y del pódcast, plegados en su entradilla |
+| [0102](0102-fechas-con-el-dia-de-la-semana.md) | Las fechas, con el día de la semana |
 
 Plantilla: [0000-plantilla.md](0000-plantilla.md). Para crear uno: `nuevo-adr "Título"`.

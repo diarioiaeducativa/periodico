@@ -449,14 +449,25 @@ def mes_largo(iso):
     return f"{mayus(mes)} de {d.year}"
 
 
-def fecha_corta(iso):
+def con_dia(texto, dia):
+    """Una fecha con el día de la semana, en su sitio según la lengua: «lunes, 23 de noviembre»; en euskera,
+    detrás, como en la fecha larga («azaroaren 23a, astelehena»). Siempre que se da una fecha, con su día
+    (Juanjo, 23-11-2026)."""
+    return f"{texto}, {dia}" if L["codigo"] == "eu" else f"{dia}, {texto}"
+
+
+def fecha_corta(iso, dia=True):
+    """«Lunes, 23 de noviembre», sin el año. Con `dia=False`, sin el día de la semana: solo donde ya se dice (el
+    rótulo «El reportaje del domingo») o para montar un patrón."""
     d = datetime.date.fromisoformat(iso)
     mes = L["meses"][d.month - 1]
     if L["codigo"] == "en":
-        return f"{d.day} {mes}"
-    if L["codigo"] == "eu":
-        return f"{mes}ren {d.day}a"
-    return f"{d.day} {de_mes(mes)}"
+        t = f"{d.day} {mes}"
+    elif L["codigo"] == "eu":
+        t = f"{mes}ren {d.day}a"
+    else:
+        t = f"{d.day} {de_mes(mes)}"
+    return con_dia(t, L["dias"][d.weekday()]) if dia else t
 
 
 def e(t):
@@ -839,9 +850,10 @@ def comentarios(ruta):
     # Las fechas, con las mismas reglas que el resto del diario (no todos los navegadores saben euskera):
     # por cada mes, el patrón con el día ({d}) y, si no es de este año, con el año ({a})
     textos = json.dumps({"borrado": L["comentarios_borrado"],
-                         "mes": [fecha_corta(f"2000-{m:02d}-28").replace("28", "{d}") for m in range(1, 13)],
-                         "mes_anyo": [fecha_con_anyo(f"2000-{m:02d}-28").replace("28", "{d}").replace("2000", "{a}")
-                                      for m in range(1, 13)]}, ensure_ascii=False)
+                         "mes": [con_dia(fecha_corta(f"2000-{m:02d}-28", dia=False).replace("28", "{d}"), "{s}") for m in range(1, 13)],
+                         "mes_anyo": [con_dia(fecha_con_anyo(f"2000-{m:02d}-28", dia=False).replace("28", "{d}").replace("2000", "{a}"), "{s}")
+                                      for m in range(1, 13)],
+                         "dias": L["dias"]}, ensure_ascii=False)
     # Lo ya comentado se lee de la copia que guarda el propio diario (comentarios/AAAA-MM-DD/id.json, ADR 0030),
     # sin conectarse con giscus ni con GitHub; giscus se carga solo al pulsar «Comentar», y entonces la copia se
     # oculta, porque giscus enseña el hilo entero
@@ -859,7 +871,7 @@ def comentarios(ruta):
       function esc(s){{return String(s).replace(/[&<>"]/g,function(c){{return {{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}}[c];}});}}
       function fecha(iso){{
         var d=new Date(iso), a=d.getFullYear(), p=(a===new Date().getFullYear()? T.mes : T.mes_anyo)[d.getMonth()];
-        return p.replace('{{d}}',d.getDate()).replace('{{a}}',a)+', '+('0'+d.getHours()).slice(-2)+':'+('0'+d.getMinutes()).slice(-2);
+        return p.replace('{{d}}',d.getDate()).replace('{{a}}',a).replace('{{s}}',T.dias[(d.getDay()+6)%7])+', '+('0'+d.getHours()).slice(-2)+':'+('0'+d.getMinutes()).slice(-2);
       }}
       function uno(c){{
         var autor=c.perfil? '<a href="'+esc(c.perfil)+'" target="_blank" rel="noopener nofollow">'+esc(c.autor)+'</a>' : esc(c.autor);
@@ -1980,7 +1992,7 @@ def franja_reportaje(prof, r):
         return ""
     return f"""<section class="editorial reportaje-franja" aria-labelledby="rep-{e(r["id"])}">
   <div class="texto">
-    <p class="seccion"><span><a href="{prof}reportajes.html">{icono("reportaje")} {L["reportaje"]}</a></span> <span class="fecha-pieza">{fecha_corta(publicacion(r["fecha"]))}</span></p>
+    <p class="seccion"><span><a href="{prof}reportajes.html">{icono("reportaje")} {L["reportaje"]}</a></span> <span class="fecha-pieza">{fecha_corta(publicacion(r["fecha"]), dia=False)}</span></p>
     <p class="antetitulo">{e(r["antetitulo"])}</p>
     <h2 id="rep-{e(r["id"])}" class="titular"><a href="{href(prof, r)}">{e(r["titular"])}</a></h2>
     <p class="entradilla">{e(r["entradilla"])}</p>
@@ -2600,7 +2612,7 @@ def articulo_reportaje(prof, ruta, d, r, eds):
 <main class="articulo reportaje en-columnas">
   <article class="sec-reportaje"{indexado("reportaje", L["reportajes"], d["fecha"], imagen_buscador(d["fecha"], r))}>
     {qr_papel(ruta)}
-    <p class="seccion"><span><a href="{prof}reportajes.html">{icono("reportaje")} {L["reportaje"]}</a></span> <span class="seccion-dcha">{boton_escuchar()}{boton_columnas()} <span class="fecha-pieza">{fecha_corta(publicacion(r["fecha"]))}</span></span></p>
+    <p class="seccion"><span><a href="{prof}reportajes.html">{icono("reportaje")} {L["reportaje"]}</a></span> <span class="seccion-dcha">{boton_escuchar()}{boton_columnas()} <span class="fecha-pieza">{fecha_corta(publicacion(r["fecha"]), dia=False)}</span></span></p>
     {cab}
     <div class="cuerpo">{"".join(apartados)}{cola_papel(ruta, origen(dict(r, grupo=(r.get("mensaje") or {}).get("grupo"))), comprobado)}</div>
     {f'<p class="correccion">{md(r["correccion"])}</p>' if r.get("correccion") else ""}
@@ -2818,7 +2830,7 @@ TXT_COMUNIDADES = {
     "gl": {"pie": "{n} persoas en tres comunidades", "personas": "membros", "total": "persoas distintas", "fecha": "a {f}",
            "nota": "{fecha}.",
            "alt": "Diagrama dos tres grupos de Telegram do diario, con tres círculos que se cruzan. ChatGPT-IA-edu ten {chatgpt} membros; Vibe Coding Educativo, {vce}, e EduMedia-IAG, {edumedia}. Só en ChatGPT-IA-edu están {s_chatgpt}; só en Vibe Coding Educativo, {s_vce}, e só en EduMedia-IAG, {s_edumedia}. En ChatGPT-IA-edu e Vibe Coding Educativo, sen EduMedia-IAG, {chatgpt_vce}; en ChatGPT-IA-edu e EduMedia-IAG, sen Vibe Coding Educativo, {chatgpt_edumedia}; en Vibe Coding Educativo e EduMedia-IAG, sen ChatGPT-IA-edu, {vce_edumedia}, e nos tres, {tres}. En total, {total} persoas distintas, {f}."},
-    "eu": {"pie": "{n} pertsona hiru komunitatetan", "personas": "kide", "total": "pertsona desberdin", "fecha": "{f}n",
+    "eu": {"pie": "{n} pertsona hiru komunitatetan", "personas": "kide", "total": "pertsona desberdin", "fecha": "{f}",
            "nota": "{fecha}.",
            "alt": "Egunkariaren Telegrameko hiru taldeen diagrama, elkar gurutzatzen diren hiru zirkulurekin. ChatGPT-IA-edu taldeak {chatgpt} kide ditu; Vibe Coding Educativo taldeak, {vce}, eta EduMedia-IAG taldeak, {edumedia}. ChatGPT-IA-edu taldean soilik {s_chatgpt} daude; Vibe Coding Educativo taldean soilik, {s_vce}, eta EduMedia-IAG taldean soilik, {s_edumedia}. ChatGPT-IA-edu eta Vibe Coding Educativo taldeetan, EduMedia-IAG gabe, {chatgpt_vce}; ChatGPT-IA-edu eta EduMedia-IAG taldeetan, Vibe Coding Educativo gabe, {chatgpt_edumedia}; Vibe Coding Educativo eta EduMedia-IAG taldeetan, ChatGPT-IA-edu gabe, {vce_edumedia}, eta hiruretan, {tres}. Guztira, {total} pertsona desberdin, {f}."},
     "en": {"pie": "{n} people in three communities", "personas": "members", "total": "different people", "fecha": "as of {f}",
@@ -2834,14 +2846,17 @@ def cifra(n):
     return str(n) if n < 10000 else f"{n:,}".replace(",", " ")
 
 
+# El día de la semana en inesivo, para «2026ko azaroaren 6an, ostiralean» («el viernes 6 de noviembre de 2026»)
+DIAS_EU_INESIVO = ["astelehenean", "asteartean", "asteazkenean", "ostegunean", "ostiralean", "larunbatean", "igandean"]
+
+
 def fecha_dia(iso):
-    """«6 de noviembre de 2026», sin el día de la semana."""
+    """«Viernes, 6 de noviembre de 2026», con el día de la semana. En euskera, ya en inesivo («2026ko azaroaren 6an,
+    ostiralean»), porque la cifra de la web lo pide («a {f}»)."""
     d = datetime.date.fromisoformat(iso)
-    if L["codigo"] == "en":
-        return f"{d.day} {L['meses'][d.month - 1]} {d.year}"
     if L["codigo"] == "eu":
-        return f"{d.year}ko {L['meses'][d.month - 1]}ren {d.day}a"
-    return f"{fecha_corta(iso)} de {d.year}"
+        return f"{d.year}ko {L['meses'][d.month - 1]}ren {d.day}an, {DIAS_EU_INESIVO[d.weekday()]}"
+    return fecha_con_anyo(iso)
 
 
 MESES_ABREV = {"es": "ene feb mar abr may jun jul ago sept oct nov dic", "ca": "gen. febr. març abr. maig juny jul. ag. set. oct. nov. des.",
@@ -2849,15 +2864,21 @@ MESES_ABREV = {"es": "ene feb mar abr may jun jul ago sept oct nov dic", "ca": "
                "en": "Jan Feb Mar Apr May Jun Jul Aug Sept Oct Nov Dec"}
 
 
+# Las abreviaturas normativas de los días, de lunes a domingo (las de la RAE, el IEC, la RAG y el Gobierno Vasco)
+DIAS_ABREV = {"es": "lun. mar. miérc. juev. vier. sáb. dom.", "ca": "dl. dt. dc. dj. dv. ds. dg.",
+              "gl": "l. m. mc. x. v. s. d.", "eu": "al. as. az. og. or. lr. ig.", "en": "Mon Tue Wed Thu Fri Sat Sun"}
+
+
 def fecha_abrev(iso):
-    """«6 nov. 2026» (en euskera, «2026 aza. 6»; en inglés, «6 Nov 2026»)."""
+    """«vier. 6 nov. 2026» (en euskera, «2026 aza. 6, or.»; en inglés, «Fri 6 Nov 2026»)."""
     d = datetime.date.fromisoformat(iso)
     mes = MESES_ABREV[L["codigo"]].split()[d.month - 1]
+    dia = DIAS_ABREV[L["codigo"]].split()[d.weekday()]
     if L["codigo"] in ("es", "gl"):
         mes += "."
     if L["codigo"] == "eu":
-        return f"{d.year} {mes} {d.day}"
-    return f"{d.day} {mes} {d.year}"
+        return f"{d.year} {mes} {d.day}, {dia}"
+    return f"{dia} {d.day} {mes} {d.year}"
 
 
 def comunidades_datos():
@@ -4604,15 +4625,17 @@ def imagen_pieza(fecha, x):
     return None, None
 
 
-def fecha_con_anyo(iso):
-    """«8 de noviembre de 2026», sin el día de la semana, en el idioma de la página."""
+def fecha_con_anyo(iso, dia=True):
+    """«Domingo, 8 de noviembre de 2026», en el idioma de la página; con `dia=False`, sin el día de la semana."""
     d = datetime.date.fromisoformat(iso)
     mes = L["meses"][d.month - 1]
     if L["codigo"] == "en":
-        return f"{d.day} {mes} {d.year}"
-    if L["codigo"] == "eu":
-        return f"{d.year}ko {mes}ren {d.day}a"
-    return f"{d.day} {de_mes(mes)} de {d.year}"
+        t = f"{d.day} {mes} {d.year}"
+    elif L["codigo"] == "eu":
+        t = f"{d.year}ko {mes}ren {d.day}a"
+    else:
+        t = f"{d.day} {de_mes(mes)} de {d.year}"
+    return con_dia(t, L["dias"][d.weekday()]) if dia else t
 
 
 def grupo_de(x):
