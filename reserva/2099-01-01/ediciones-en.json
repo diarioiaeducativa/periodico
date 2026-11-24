@@ -1,0 +1,39 @@
+{
+  "fecha": "2099-01-01",
+  "hay_edicion": true,
+  "fondo": "edumedia",
+  "motivo": "Ideogram es una herramienta consolidada de imagen, con plan gratuito, que sigue en línea y cuya función de personajes consistentes sirve para crear materiales de aula con el mismo protagonista; no ha salido en el diario.",
+  "piezas": [{
+    "id": "ideogram-personajes-coherentes",
+    "seccion": "multimedia",
+    "importancia": 3,
+    "grupo": "edumedia",
+    "antetitulo": "From the EduMedia archive",
+    "titular": "Ideogram lets you repeat the same character across several images for classroom materials",
+    "entradilla": "The image tool includes a free plan with weekly credits. On that plan, images are public, and students who are minors need their family’s permission.",
+    "cuerpo": [
+      "[Ideogram](https://ideogram.ai/) is an online platform for generating and editing images with artificial intelligence. In the EduMedia-IAG group, members shared its characters feature, which keeps the appearance of the same character across different images. According to [the company’s own help pages](https://docs.ideogram.ai/frequently-asked-questions), you add between one and five reference images and name the character in the description (*prompt*) using its tag; it can also be saved in the library for reuse.",
+      "In the classroom it can be used, for example, to create a mascot for a reading or a project and show it in several scenes: an illustrated story, a comic to revise vocabulary or a sequence explaining a scientific process with the same protagonist. Teachers can prepare the material and project it, or guide students as they create it.",
+      "To get started, you create an account, upload a clear image of the character or generate a first one, and then describe the new scenes. The help pages do not make clear which plans include this feature, and it may vary by workspace: it is worth trying it out before planning the activity.",
+      "Free accounts created with Google or Apple receive 30 credits each week, according to the help pages as of 24 November 2026; accounts created with an email address and password receive no credits. Images on the free plan are public, so they must not include students’ data or images. According to the [terms of use](https://ideogram.ai/legal/tos), users must be at least 13, and those under the legal age of majority need a parent or guardian to accept the terms. It is preferable for the teacher to use the account."
+    ],
+    "fuentes": [
+      {"titulo": "Ideogram", "url": "https://ideogram.ai/"},
+      {"titulo": "Ideogram frequently asked questions", "url": "https://docs.ideogram.ai/frequently-asked-questions"},
+      {"titulo": "Ideogram terms of use", "url": "https://ideogram.ai/legal/tos"}
+    ],
+    "herramienta": {"nombre": "Ideogram", "url": "https://ideogram.ai/"},
+    "mensaje": {"grupo": "edumedia", "id": 1184},
+    "comprobado": "Revisado el 24-11-2026: web oficial ideogram.ai (plataforma de generación y edición de imágenes; cuentas gratuitas con Google, Apple o Microsoft reciben créditos semanales variables, con correo y contraseña no; función de personajes con imágenes de referencia); preguntas frecuentes en docs.ideogram.ai (30 créditos semanales con Google o Apple, imágenes del plan gratuito públicas, personajes con 1 a 5 imágenes y etiqueta, biblioteca de personajes, sin precisar planes); condiciones en ideogram.ai/legal/tos (13 años como mínimo; menores de edad legal, solo con aceptación de madre, padre o tutor). No aparece en lo publicado por el diario. Mensaje 1184 de EduMedia-IAG verificado (recomienda la herramienta «Character»; sin opiniones de terceros).",
+    "ilustracion": "Un mismo personaje sencillo, dibujado a partir de una hoja con tres imágenes de referencia a la izquierda, que aparece a la derecha en cuatro viñetas de escenas distintas.",
+    "ilustracion_alt": "Three reference images of a character, labelled “References”, and an arrow pointing to four panels showing the same character in different scenes (sun, waves, tree and cloud), labelled “Same character”."
+  }],
+  "breves": [],
+  "descartado": [],
+  "repaso": [
+    "Comprobados en su fuente los créditos, la edad mínima, las imágenes públicas y los personajes: correctos.",
+    "Añadido que las cuentas con correo y contraseña no reciben créditos (web oficial).",
+    "Enlazadas en su primera mención la ayuda y las condiciones de uso.",
+    "Recortado el cuerpo para quedar en 250 palabras o menos."
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "fecha": "2099-01-01",
+  "hay_edicion": true,
+  "fondo": "edumedia",
+  "motivo": "Ideogram es una herramienta consolidada de imagen, con plan gratuito, que sigue en línea y cuya función de personajes consistentes sirve para crear materiales de aula con el mismo protagonista; no ha salido en el diario.",
+  "piezas": [{
+    "id": "ideogram-personajes-coherentes",
+    "seccion": "multimedia",
+    "importancia": 3,
+    "grupo": "edumedia",
+    "antetitulo": "Del fondo de EduMedia",
+    "titular": "Ideogram permite repetir un mismo personaje en varias imágenes para materiales de aula",
+    "entradilla": "La herramienta de imagen incluye un plan gratuito con créditos semanales. Sus imágenes, en ese plan, son públicas, y el alumnado necesita autorización familiar si es menor de edad.",
+    "cuerpo": [
+      "[Ideogram](https://ideogram.ai/) es una plataforma en línea para generar y editar imágenes con inteligencia artificial. En el grupo EduMedia-IAG se compartió su función de personajes, que mantiene el aspecto de un mismo personaje en imágenes distintas. Según [la ayuda de la propia empresa](https://docs.ideogram.ai/frequently-asked-questions), se añaden entre una y cinco imágenes de referencia y se nombra al personaje en la descripción (*prompt*) mediante su etiqueta; también se puede guardar en la biblioteca para reutilizarlo.",
+      "En clase sirve, por ejemplo, para crear una mascota de una lectura o de un proyecto y mostrarla en varias escenas: un cuento ilustrado, un cómic de repaso de vocabulario o una secuencia que explique un proceso científico con el mismo protagonista. El profesorado puede preparar el material y proyectarlo, o guiar al alumnado en la creación.",
+      "Para empezar, se crea una cuenta, se sube una imagen clara del personaje o se genera una primera, y después se describen las escenas nuevas. La ayuda no aclara qué planes incluyen esta función, y puede variar según el espacio de trabajo: conviene probarla antes de planificar la actividad.",
+      "Las cuentas gratuitas creadas con Google o Apple reciben 30 créditos cada semana, según la ayuda a 24 de noviembre de 2026; las creadas con correo y contraseña no reciben créditos. Las imágenes del plan gratuito son públicas, así que no deben incluir datos ni imágenes del alumnado. Según las [condiciones de uso](https://ideogram.ai/legal/tos), hay que tener al menos 13 años, y las personas menores de edad legal necesitan que su madre, padre o tutor acepte los términos. Es preferible que la cuenta la use el docente."
+    ],
+    "fuentes": [
+      {"titulo": "Ideogram", "url": "https://ideogram.ai/"},
+      {"titulo": "Preguntas frecuentes de Ideogram", "url": "https://docs.ideogram.ai/frequently-asked-questions"},
+      {"titulo": "Condiciones de uso de Ideogram", "url": "https://ideogram.ai/legal/tos"}
+    ],
+    "herramienta": {"nombre": "Ideogram", "url": "https://ideogram.ai/"},
+    "mensaje": {"grupo": "edumedia", "id": 1184},
+    "comprobado": "Revisado el 24-11-2026: web oficial ideogram.ai (plataforma de generación y edición de imágenes; cuentas gratuitas con Google, Apple o Microsoft reciben créditos semanales variables, con correo y contraseña no; función de personajes con imágenes de referencia); preguntas frecuentes en docs.ideogram.ai (30 créditos semanales con Google o Apple, imágenes del plan gratuito públicas, personajes con 1 a 5 imágenes y etiqueta, biblioteca de personajes, sin precisar planes); condiciones en ideogram.ai/legal/tos (13 años como mínimo; menores de edad legal, solo con aceptación de madre, padre o tutor). No aparece en lo publicado por el diario. Mensaje 1184 de EduMedia-IAG verificado (recomienda la herramienta «Character»; sin opiniones de terceros).",
+    "ilustracion": "Un mismo personaje sencillo, dibujado a partir de una hoja con tres imágenes de referencia a la izquierda, que aparece a la derecha en cuatro viñetas de escenas distintas.",
+    "ilustracion_alt": "Tres imágenes de referencia de un personaje, con el rótulo «Referencias», y una flecha hacia cuatro viñetas con el mismo personaje en escenas distintas (sol, olas, árbol y nube), con el rótulo «Mismo personaje»."
+  }],
+  "breves": [],
+  "descartado": [],
+  "repaso": [
+    "Comprobados en su fuente los créditos, la edad mínima, las imágenes públicas y los personajes: correctos.",
+    "Añadido que las cuentas con correo y contraseña no reciben créditos (web oficial).",
+    "Enlazadas en su primera mención la ayuda y las condiciones de uso.",
+    "Recortado el cuerpo para quedar en 250 palabras o menos."
+  ]
+}
