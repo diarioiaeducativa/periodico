@@ -35,7 +35,9 @@
       "comprobado": "The guide’s website opened (twice): 1,144 INTEF tools, 360 unofficial apps from the VCE repository, meaning of the traffic light, filters, three-question assistant, notice that it is indicative and has no official link, run by Juan José de Haro, AGPL v3 code and creation with AI. The figures 717/281/194 are those of the author’s infographic in the messages (the website does not show them in the text read), which is why they are attributed to it. Link to the Library taken from the entry’s list of documents. Message 15228 checked on Telegram. No earlier item on this guide in the paper.",
       "ilustracion": "Un semáforo de tres luces (verde, amarillo, rojo) con una lupa sobre una lista de herramientas, y debajo tres cuadros que dicen qué significa cada color.",
       "ilustracion_alt": "A traffic light with three lights: the red one, labelled “Do not use”; the amber one, labelled “With school permission”; and the green one, labelled “Can be used”. On the right, a list with a magnifying glass and the label “1,144 tools”.",
-      "grafico": null
+      "grafico": null,
+      "correccion": "Update on 24 November 2026: the author has removed the Vibe Coding Educativo repository apps from the guide, which once again covers only the INTEF tools. The privacy traffic light for those apps can now be found in the [repository itself](https://vibe-coding-educativo.github.io/app_edu/).",
+      "corregido": "2026-11-24"
     },
     {
       "id": "corea-dimision-ministro-ia-examen",

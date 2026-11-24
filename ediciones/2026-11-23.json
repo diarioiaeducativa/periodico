@@ -35,7 +35,9 @@
       "comprobado": "Abierta la web de la guía (dos veces): 1.144 herramientas del INTEF, 360 aplicaciones del repositorio VCE no oficiales, significado del semáforo, filtros, asistente de tres preguntas, aviso de que es orientativa y sin vínculo oficial, dirigida por Juan José de Haro, código AGPL v3 y creación con IA. Las cifras 717/281/194 son las de la infografía del autor en los mensajes (la web no las muestra en el texto leído), por eso se atribuyen a ella. Enlace a la Biblioteca tomado de la lista de documentos de la entrada. Mensaje 15228 comprobado en Telegram. Sin pieza previa sobre esta guía en el diario.",
       "ilustracion": "Un semáforo de tres luces (roja, ámbar y verde) con una lupa sobre una lista de herramientas.",
       "ilustracion_alt": "Un semáforo con tres luces: la roja, con el rótulo «No usar»; la ámbar, con «Con permiso del centro»; y la verde, con «Se puede usar». A la derecha, una lista con una lupa y el rótulo «1.144 herramientas».",
-      "grafico": null
+      "grafico": null,
+      "correccion": "Actualización del 24 de noviembre de 2026: el autor retiró de la guía las aplicaciones del repositorio de Vibe Coding Educativo, y la web vuelve a recoger solo las herramientas del INTEF. El semáforo de privacidad de esas aplicaciones se consulta ahora en el [propio repositorio](https://vibe-coding-educativo.github.io/app_edu/).",
+      "corregido": "2026-11-24"
     },
     {
       "id": "corea-dimision-ministro-ia-examen",
