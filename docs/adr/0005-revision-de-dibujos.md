@@ -60,3 +60,24 @@ contorno de los rótulos y el revisor visual dio el dibujo por bueno con una cap
 Validación (23-11-2026), sobre el día 22 en los cinco idiomas: con la hoja anterior, el programa
 marca los dos rótulos en los dos temas; con la nueva, los cuatro dibujos pasan, también el contraste
 del rótulo en color (4,5:1), y las capturas se leen bien.
+
+## Ampliación del 24-11-2026: colores con significado y rótulos que cambian de sentido
+
+La vista previa del 23-11-2026 traía un semáforo («Guía de privacidad de herramientas educativas») con
+la luz roja solo dibujada en su contorno, la de en medio vacía y la de abajo con el color de la sección,
+y con el rótulo «Sin datos» para las herramientas que no tratan datos personales. Juanjo preguntó qué
+quería decir «Sin datos» y pidió las luces de rojo, amarillo o naranja y verde, y que no volviera a pasar.
+La causa: la hoja de los dibujos no tenía más colores que la tinta, el de la sección y el rojo de trazo,
+y ni el ilustrador ni el revisor miraban si un acortamiento cambiaba el sentido.
+
+- La hoja (`estaticos/comun.css`) suma tres rellenos fijos, iguales en los dos temas: `sr` (rojo),
+  `sa` (ámbar) y `sv` (verde), solo para lo que en la realidad significa algo por su color. El
+  programa los admite como clases de la hoja.
+- La guía del ilustrador (`encargos/ilustraciones.md`) dice que un semáforo lleva siempre sus tres
+  colores y que un rótulo, leído solo, dice lo mismo que la pieza.
+- El revisor visual (`encargos/pasos/2b-revision-dibujos.md`) devuelve el dibujo si faltan los colores
+  de verdad o si un rótulo acortado cambia de sentido.
+
+Hipótesis sin comprobar: que el revisor visual detecte en adelante los rótulos ambiguos; es un juicio,
+no una medida, y se verá en los próximos números. El dibujo del 23-11 se corrigió a mano en los cinco
+idiomas antes de publicarse.

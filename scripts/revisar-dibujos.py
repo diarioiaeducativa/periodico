@@ -31,7 +31,7 @@ from recuentos import rotulos
 
 RAIZ = pathlib.Path(__file__).resolve().parent.parent
 SITIO = RAIZ / "sitio"
-CLASES = {"t", "a", "r", "fa", "ft", "fz", "lbl"}
+CLASES = {"t", "a", "r", "fa", "ft", "fz", "sr", "sa", "sv", "lbl"}
 
 MEDIR = """(fig) => {
   const svg = fig.querySelector('svg'), caja = svg.getBoundingClientRect(), out = [];

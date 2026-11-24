@@ -8,6 +8,8 @@ Mira con Read las dos capturas de cada dibujo y lee su pieza (en ediciones/{FECH
 - Rótulos que tocan o cruzan trazos de forma que cuesta leerlos; flechas o líneas que no llegan a donde apuntan; partes cortadas por el borde.
 - Explica lo que dice la pieza y no le contradice: las cifras y los recuentos de los rótulos («Siete criterios») son los del texto; no es solo decorativo; nada de robots ni cerebros.
 - Lo que representa un objeto real (una pantalla, un teclado, un documento) se reconoce y mantiene sus proporciones.
+- Lo que en la realidad significa algo por su color lleva sus colores de verdad: un semáforo, con las luces rellenas de rojo, ámbar y verde (clases `sr`, `sa`, `sv`); si salen azules, del color de la sección o vacías, rehacer.
+- Cada rótulo, leído solo y sin la pieza, se entiende como dice el texto: un acortamiento que cambia el sentido («Sin datos» por «no trata datos personales», que se lee como «no hay información») es un error de bulto.
 
 **Los rótulos con número, uno por uno.** En es.json, `rotulos_numero` lista los rótulos de cada dibujo que llevan un número («Cuatro ámbitos», «Siete fases», «45 orientaciones»). Para cada uno, lee la pieza entera, cuerpo incluido (no te quedes en el titular y la entradilla), y averigua qué cuenta ese número según el texto y si en el dibujo hay objetos que lo representen. No basta con que el número salga en el texto: tiene que nombrar lo que el dibujo pone junto a él. Si un rótulo «Cuatro ámbitos» sostiene tres tarjetas de perfiles, está mal aunque el texto diga «cuatro ámbitos»: los perfiles no son los ámbitos. Un programa comprueba tu respuesta: si falta un rótulo o la frase citada no está en el texto, el dibujo vuelve al ilustrador.
 

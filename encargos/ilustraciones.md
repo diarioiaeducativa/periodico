@@ -21,6 +21,9 @@ esa frase, no los rótulos del dibujo). No cambies nada más de los JSON.
   proporciones y sus elementos reales.
 - Con los rótulos que necesite para entenderse sin leer la pieza: nombran las partes y
   los pasos del esquema.
+- Cada rótulo, leído solo, dice lo mismo que la pieza: si se acorta, que no cambie de
+  sentido. «Sin datos» por «no trata datos personales» se lee como «no hay información»;
+  mejor lo que significa para quien lo usa («Se puede usar»).
 
 ## Cómo se dibuja (obligatorio, lo exige la hoja de estilo)
 
@@ -30,6 +33,9 @@ esa frase, no los rótulos del dibujo). No cambies nada más de los JSON.
     `r`: trazo rojo (como mucho un detalle por dibujo: una marca, una flecha clave),
   - `fa`: relleno azul pálido (fondos de formas), `ft`: relleno de tinta (puntos,
     detalles macizos pequeños), `fz`: relleno azul,
+  - `sr`, `sa` y `sv`: relleno rojo, ámbar y verde de verdad, solo para lo que en la realidad
+    significa algo por su color (las luces de un semáforo, de arriba abajo: `sr`, `sa`, `sv`).
+    Un semáforo siempre lleva sus tres colores: nunca con el azul de la sección ni sin rellenar.
   - `lbl`: rótulos de texto (como mucho cinco, de una a tres palabras, en castellano). Para
     destacar uno, `class="a lbl"` (o `r lbl`): sale en ese color, sin contorno.
 - Trazo de línea limpia, como dibujado con rotulador fino; la hoja ya pone grosor 2,5 y

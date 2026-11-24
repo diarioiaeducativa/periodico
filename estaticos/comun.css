@@ -85,6 +85,11 @@ main:focus { outline: none; }
 .ilu .fa { fill: var(--ilu-relleno); stroke: none; }
 .ilu .ft { fill: var(--ilu-tinta); stroke: none; }
 .ilu .fz { fill: var(--ilu-azul); stroke: none; }
+/* Colores que en la realidad significan algo (las luces de un semáforo): los de verdad, iguales en los dos temas,
+   para que el rojo, el ámbar y el verde no salgan del color de la sección (24-11-2026) */
+.ilu .sr { fill: #e0403a; stroke: none; }
+.ilu .sa { fill: #f2a516; stroke: none; }
+.ilu .sv { fill: #2fa84f; stroke: none; }
 .ilu .lbl { fill: var(--ilu-tinta); font-family: 'Newsreader', Georgia, serif; font-style: italic; font-size: 18px; }
 /* Un rótulo con la clase de un trazo (class="a lbl") se destaca con su color, nunca con contorno: el grosor de 2,5
    de los trazos emborrona las letras hasta no leerse (22-11-2026) */
