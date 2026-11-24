@@ -23,6 +23,13 @@ import vineta
 RAIZ = pathlib.Path(__file__).resolve().parent
 CLAVE_PROVISIONAL = "2099-"   # las fechas de trabajo de la reserva (scripts/reserva.py y compañía): nunca son un número
 SITIO = RAIZ / "sitio"
+# Para revisar los dibujos de la reserva (ADR 0005 y 0068): con PERIODICO_SITIO_RESERVA=<carpeta>, el sitio sale con las
+# claves provisionales en esa carpeta, que nunca puede ser sitio/: se revisan sin que lleguen a la web
+SITIO_RESERVA = os.environ.get("PERIODICO_SITIO_RESERVA")
+if SITIO_RESERVA:
+    SITIO = pathlib.Path(SITIO_RESERVA).resolve()
+    if SITIO == (RAIZ / "sitio").resolve() or SITIO == pathlib.Path("/sitio"):
+        raise SystemExit("generar.py: PERIODICO_SITIO_RESERVA no puede ser la carpeta de la web")
 NOMBRE = "Diario de IA Educativa"     # en castellano; cada idioma lleva el suyo en IDIOMAS
 DIAS_PORTADA = 7        # los breves y el reportaje de la portada, de esta última semana
 POR_SECCION = 3         # piezas de días anteriores en el bloque de cada sección de la portada: una fila entera
@@ -572,9 +579,10 @@ def boton_ampliar(contenido, desc):
 def cargar():
     eds = []
     # Las claves provisionales de la reserva (2099-01-NN, 2099-02-NN, 2099-03-NN) dejan sus archivos de trabajo en
-    # estas carpetas mientras se preparan: nunca son un número, y una publicación a mano en ese rato los sacaba en la web
+    # estas carpetas mientras se preparan: nunca son un número, y una publicación a mano en ese rato los sacaba en la web.
+    # Solo entran en el sitio aparte en que se revisan sus dibujos (SITIO_RESERVA)
     nombres = sorted({f.name for c in ("ediciones", "biblioteca", "repositorio") for f in (RAIZ / c).glob("*.json")
-                      if not f.name.startswith(CLAVE_PROVISIONAL)})
+                      if SITIO_RESERVA or not f.name.startswith(CLAVE_PROVISIONAL)})
     for nombre in nombres:
         f = RAIZ / "ediciones" / nombre
         d = json.loads(con_traduccion("ediciones", nombre).read_text()) if f.exists() else {}
@@ -5267,7 +5275,7 @@ def generar_idioma(codigo):
 def main():
     # Los archivos fijos (estilos, fuentes, iconos, imágenes para redes) viven en estaticos/;
     # sitio/ no está en el repositorio y se rehace entero cada vez.
-    SITIO.mkdir(exist_ok=True)
+    SITIO.mkdir(parents=True, exist_ok=True)
     shutil.copytree(RAIZ / "estaticos", SITIO, dirs_exist_ok=True)
     # En las vacaciones de Navidad, Tiza y Algoritmo con gorro también en el icono (el número sale el día que se genera)
     if vineta.navidad(datetime.date.today().isoformat()):

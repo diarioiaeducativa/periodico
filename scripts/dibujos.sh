@@ -9,9 +9,16 @@
 #                               la página catalana usa el castellano, ya revisado
 
 _ronda_dibujos() {   # deja revision/FECHA/rehacer.json con lo que no pasa; vacío si todo pasa
-  python3 generar.py >> "$REG" 2>&1 || { log "AVISO: el generador falla: los dibujos no se revisan"; return 1; }
-  python3 scripts/revisar-dibujos.py "$FECHA" es "$@" >> "$REG" 2>&1
-  case $? in
+  # Una clave de la reserva (2099-…) no tiene páginas en la web: se generan en un sitio aparte solo para revisarlas
+  # (generar.py y revisar-dibujos.py con PERIODICO_SITIO_RESERVA), que se borra al acabar
+  local aparte="" r
+  case $FECHA in 2099-*) aparte="revision/$FECHA/sitio-reserva" ;; esac
+  PERIODICO_SITIO_RESERVA="${aparte:+$PWD/$aparte}" python3 generar.py >> "$REG" 2>&1 \
+    || { log "AVISO: el generador falla: los dibujos no se revisan"; [ -n "$aparte" ] && rm -rf "$aparte"; return 1; }
+  PERIODICO_SITIO_RESERVA="${aparte:+$PWD/$aparte}" python3 scripts/revisar-dibujos.py "$FECHA" es "$@" >> "$REG" 2>&1
+  r=$?
+  [ -n "$aparte" ] && rm -rf "$aparte"
+  case $r in
     0|4) ;;
     *) log "AVISO: no se pudieron revisar los dibujos (navegador): salen sin revisión"; return 1 ;;
   esac

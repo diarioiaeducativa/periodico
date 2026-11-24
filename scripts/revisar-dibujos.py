@@ -20,6 +20,7 @@ Sale con 0 si todo está bien, 4 si algún dibujo tiene problemas y 1 si no ha p
 import functools
 import http.server
 import json
+import os
 import pathlib
 import socketserver
 import sys
@@ -30,7 +31,9 @@ from playwright.sync_api import sync_playwright
 from recuentos import rotulos
 
 RAIZ = pathlib.Path(__file__).resolve().parent.parent
-SITIO = RAIZ / "sitio"
+# Los dibujos de la reserva (claves 2099-…) se revisan en el sitio aparte que genera generar.py con
+# PERIODICO_SITIO_RESERVA (ADR 0005 y 0068): la web nunca tiene páginas para ellos
+SITIO = pathlib.Path(os.environ.get("PERIODICO_SITIO_RESERVA") or RAIZ / "sitio")
 CLASES = {"t", "a", "r", "fa", "ft", "fz", "sr", "sa", "sv", "lbl"}
 
 MEDIR = """(fig) => {

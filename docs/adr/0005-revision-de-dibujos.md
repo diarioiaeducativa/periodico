@@ -81,3 +81,21 @@ y ni el ilustrador ni el revisor miraban si un acortamiento cambiaba el sentido.
 Hipótesis sin comprobar: que el revisor visual detecte en adelante los rótulos ambiguos; es un juicio,
 no una medida, y se verá en los próximos números. El dibujo del 23-11 se corrigió a mano en los cinco
 idiomas antes de publicarse.
+
+## Ampliación del 24-11-2026: los dibujos de la reserva se revisan en un sitio aparte
+
+Desde el 19-11-2026 (ADR 0068), `generar.py` no carga las claves provisionales de la reserva (`2099-…`), para que
+no lleguen nunca a la web. Pero el revisor abre cada dibujo en su página del sitio, así que los artículos de reserva
+con dibujo (`edumedia-fondo.sh` y `biblioteca.sh`) se quedaban sin página y el programa los daba por malos («la página
+no muestra el dibujo»): tras dos vueltas al ilustrador, salían sin dibujo. Pasó el 24-11-2026 con el de Polycam, del
+fondo de EduMedia, que el reparador devolvió a mano.
+
+- Con `PERIODICO_SITIO_RESERVA=<carpeta>`, `generar.py` carga también las claves provisionales y escribe el sitio en
+  esa carpeta; se niega si es `sitio/` o `/sitio`. `revisar-dibujos.py` sirve las páginas desde la misma carpeta.
+- `_ronda_dibujos()` (`scripts/dibujos.sh`), cuando la clave empieza por `2099-`, genera ese sitio en
+  `revision/CLAVE/sitio-reserva/` (fuera del repositorio, en `.gitignore`), revisa y lo borra. Con una fecha normal
+  no cambia nada.
+
+Validación (24-11-2026), en una copia con `ediciones/2099-01-05.json` y su dibujo: la ronda genera la página aparte,
+el programa da el dibujo por bueno en los dos temas y deja las capturas, la carpeta se borra al acabar, el
+`generar.py` normal sigue sin ninguna página de 2099 y, apuntando la variable a `sitio/`, el generador se niega.
