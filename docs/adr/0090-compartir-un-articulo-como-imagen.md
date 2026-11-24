@@ -111,3 +111,13 @@ maqueta, sin avisos.
 La viñeta, el mismo día, en local y en los tres navegadores: la imagen en castellano, catalán, euskera e inglés, con
 los colores claros también con el tema oscuro, y el «A partir de» más largo publicado (130 caracteres) en una línea;
 en una página con el botón de un artículo y el de su viñeta, cada uno comparte lo suyo.
+
+## Linux, sin «Compartir como imagen y enlace» (24-11-2026)
+
+La opción se llama «Compartir como imagen y enlace» (antes, «como imagen»), porque manda las dos cosas. En Linux no
+sale: ni Chrome ni Firefox tienen allí el menú de compartir del sistema (`navigator.share` no existe; comprobado con
+Chromium y Firefox de Playwright y en el Chrome 158 de Juanjo), y sin él una web no puede pasar una imagen a otra
+aplicación. Se descartaron una lista de destinos (Telegram, WhatsApp, X…) que abriera el elegido con el enlace y la
+imagen ya copiada para pegarla, y copiar la imagen y el enlace juntos al portapapeles: al pegar, cada aplicación coge un
+solo formato y en mensajería y redes el enlace se pierde. Juanjo: «lo dejamos como esta». En Linux quedan copiar el
+enlace, copiar la imagen y guardarla.
