@@ -9,12 +9,12 @@
       "grupo": "vce",
       "antetitulo": "Recurs de la comunitat",
       "titular": "Un cercador permet saber si una eina digital compleix les orientacions de l'INTEF",
-      "entradilla": "La guia classifica amb un semàfor 1.144 eines analitzades per l'INTEF i, com a afegit no oficial, 360 aplicacions del repositori de Vibe Coding Educativo.",
+      "entradilla": "La guia classifica amb un semàfor les 1.144 eines analitzades per l'INTEF.",
       "cuerpo": [
         "Juan José de Haro, coautor d'aquest diari, ha creat la [Guía de privacidad de herramientas educativas](https://guia-privacidad-edu.github.io/), un web per consultar de manera ràpida les eines que l'INTEF (Instituto Nacional de Tecnologías Educativas y de Formación del Profesorado) va analitzar en la versió 3.0 de les seves Orientaciones sobre el uso de herramientas digitales desde la perspectiva de la protección de datos. El document de l'INTEF és a la Biblioteca digital del grup ChatGPT-IA-edu, [on es va compartir el 14 de juliol de 2026](https://t.me/ChatGPTedu/21753/50331).",
         "El web recull les 1.144 eines de l'INTEF amb el seu color al semàfor; segons la infografia amb què el seu autor la va presentar al grup, 717 són en verd, 281 en groc i 194 en vermell. Segons la mateixa guia, el verd correspon a eines que no tracten dades personals i es poden fer servir seguint les advertències; el groc, a les que necessiten permís del centre i complir condicions; i el vermell, a les que no compleixen la normativa europea de protecció de dades i no s'han de fer servir amb l'alumnat.",
         "Al web es pot cercar una eina per nom o descripció i filtrar-la per categoria, per qui la fa servir (qualsevol persona, alumnat o només professorat) i per condicions pràctiques: sense registre, programari lliure, que es pugui incrustar en un altre web o amb accessibilitat. També ofereix un assistent de tres preguntes per a les persones que no saben quins filtres triar, i cada consulta genera un enllaç per compartir-la.",
-        "El 23 de novembre el seu autor va afegir al cercador 360 aplicacions del repositori de Vibe Coding Educativo, valorades amb el formulari d'avaluació que les Orientaciones inclouen en un annex. Aquestes valoracions no són oficials. La mateixa pàgina adverteix que la guia és orientativa i que la responsabilitat de l'ús de cada eina és del docent. Segons l'autor, el codi té llicència AGPL v3 i en la creació va comptar amb ajuda d'IA.",
+        "La mateixa pàgina adverteix que la guia és orientativa i que la responsabilitat de l'ús de cada eina és del docent. Segons l'autor, el codi té llicència AGPL v3 i en la creació va comptar amb ajuda d'IA.",
         "Als grups es va comentar que algunes fitxes tenen errors d'espaiat. L'autor els va atribuir al fet que el text s'havia copiat del PDF i va dir que els revisaria."
       ],
       "fuentes": [
@@ -35,7 +35,7 @@
       "ilustracion": "Un semáforo de tres luces (verde, amarillo, rojo) con una lupa sobre una lista de herramientas, y debajo tres cuadros que dicen qué significa cada color.",
       "ilustracion_alt": "Un semàfor amb tres llums: la vermella, amb el rètol «No utilitzar»; l'ambre, amb «Amb permís del centre»; i la verda, amb «Es pot utilitzar». A la dreta, una llista amb una lupa i el rètol «1.144 eines».",
       "grafico": null,
-      "correccion": "Actualització del 24 de novembre de 2026: l'autor ha retirat de la guia les aplicacions del repositori de Vibe Coding Educativo, i el web torna a recollir només les eines de l'INTEF. El semàfor de privacitat d'aquestes aplicacions es consulta ara al [mateix repositori](https://vibe-coding-educativo.github.io/app_edu/).",
+      "correccion": "Actualització del 24 de novembre de 2026: l'autor ha retirat de la guia les 360 aplicacions del repositori de Vibe Coding Educativo que hi havia afegit el 23 de novembre, amb una valoració no oficial, i el web torna a recollir només les eines de l'INTEF. El semàfor de privacitat d'aquestes aplicacions es consulta ara al [mateix repositori](https://vibe-coding-educativo.github.io/app_edu/).",
       "corregido": "2026-11-24"
     },
     {
