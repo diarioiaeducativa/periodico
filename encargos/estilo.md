@@ -102,8 +102,9 @@ para los días sin noticias) están en «Cómo se hace el diario», `docs/como-s
   otra persona. Las marcas no se publican.
 - **Los autores del diario, como cualquiera**: se nombran como crédito de sus recursos igual que los
   demás, con el nombre completo con que firman el diario, aunque en los grupos usen otro.
-- **Los cargos, solo si tienen que ver con la noticia** (administrar un grupo, ser coautor del
-  diario): si no, la persona es un docente más.
+- **Los cargos, solo si tienen que ver con la noticia** (administrar un grupo, ser responsable del
+  diario): si no, la persona es un docente más. Que un recurso sea de un autor del diario no lo hace tener
+  que ver: «responsable de este diario» solo va si el artículo trata del propio diario.
 - **Si el artículo trata del propio diario, lo dice** con esas palabras («este diario»).
 - **El alumnado**: no se publica nada que lo identifique (nombre, imagen, ni centro y curso juntos),
   aunque aparezca en el material compartido. De una herramienta para el aula se dice, según sus

@@ -114,7 +114,7 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
   Otro «Juanjo» no es Juan José de Haro. `scripts/revisar-autoria.py --dia FECHA` (en `noche.sh`, con su
   corrector `28-autoria`) busca lo que se les atribuye y es de otra cuenta; `--todo` lo pasa por todo lo publicado.
 - **Normas de estilo comprobadas** (ADR 0067): ni «quien» ni «quienes» con el sentido de «la persona que», y ninguna
-  cita solo en inglés en una edición no inglesa (va con su traducción al lado). `scripts/revisar-estilo.py` las
+  cita solo en inglés en una edición no inglesa (va con su traducción al lado). Ni el cargo de una persona en el diario («responsable de este diario») si el artículo no trata del diario. `scripts/revisar-estilo.py` las
   busca cada noche (con su corrector `29-estilo`); los «quien» publicados antes del 15-11-2026 no se tocan. También
   los ladillos de los reportajes (ADR 0098): ni moldes de etiqueta («Qué…», «Lo que…», «X o Y»…) ni uno ya usado; el
   mismo molde de pregunta o «Lo que…», tampoco en los antetítulos de ninguna sección; el reportero recibe los publicados en `reportajes-borrador/ladillos-usados.txt`.

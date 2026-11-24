@@ -76,7 +76,7 @@ de `publicado.txt`.
   Haro», también en `autoria`, aunque la ficha diga «Juanjo», pero solo si el mensaje que lo compartió
   lleva la marca `[autor del diario: Juan José de Haro]`; si no, es otra persona y se nombra tal como figura
   en la ficha (ADR 0066). Los cargos (administrar un grupo,
-  ser coautor del diario), solo si tienen que ver con la noticia.
+  ser responsable del diario), solo si tienen que ver con la noticia.
 - En modo **semana**, los recursos de una misma persona van juntos y seguidos, y la pieza
   puede decirlo («Felip Sarroca suma esta semana tres aplicaciones de química…»).
 

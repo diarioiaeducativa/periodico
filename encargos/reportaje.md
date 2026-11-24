@@ -42,7 +42,7 @@ fondo y no haya tenido reportaje.
   Markdown: `[texto](https://t.me/<alias>/<id>)` (alias: ChatGPTedu, vceduca, EduMediaIAG).
   Solo se nombra a quien ha publicado un recurso propio, como crédito, también si es Juan José de Haro (así, no «Juanjo»;
   es solo quien lleva en el material la marca `[autor del diario: Juan José de Haro]`: otro «Juanjo» es otra persona),
-  y sin su cargo (administrar un grupo, ser coautor del diario) salvo que tenga que ver con la noticia.
+  y sin su cargo (administrar un grupo, ser responsable del diario) salvo que tenga que ver con la noticia.
   Si las posturas que recoges son sobre todo de los autores del diario (Juan José de Haro y Raül
   Torres), dilo en el texto sin atribuirles la opinión («en este intercambio participaron los
   autores de este diario») y busca otras voces en los grupos. Y no cierres dando la razón a una

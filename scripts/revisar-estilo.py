@@ -16,7 +16,8 @@ escrito cada noche.
    «esta semana» (salvo en «Hace un año», que compara con el presente, y en los avisos, que salen ese mismo día);
    «pieza» ante el lector; «el diario cuenta» o «contó»; «app», «online» y «link» en minúscula (los nombres propios
    van con mayúscula); «la AI»; el condicional de rumor («habría lanzado»); el porcentaje sin espacio («25%»), y
-   el nombre antiguo de un producto («NotebookLM», salvo «antes NotebookLM» o en «Hace un año»).
+   el nombre antiguo de un producto («NotebookLM», salvo «antes NotebookLM» o en «Hace un año»), y el cargo de una persona
+   en el diario («responsable de este diario»), que solo va si el artículo trata del propio diario.
    Lo que es otro sentido o un nombre propio lo deja el corrector, que lo dice.
 4. **Ladillos que dicen lo que cuenta su apartado** (ADR 0098; 22-11-2026, ante «Qué cuenta como prueba»: «se ve
    enseguida que son de ia»), en los reportajes en castellano: ni moldes de etiqueta («Qué…», «Lo que…», «Cómo…»,
@@ -65,6 +66,12 @@ NORMAS = [
     # el antiguo solo detrás de «antes», «antiguo» o «entonces». «Hace un año» habla de cuando se llamaba así
     ("«NotebookLM»: se llama Gemini Notebook desde el 16-07-2026; si hace falta, «Gemini Notebook (antes NotebookLM)»",
      re.compile(r"(?<!antes )(?<!antiguo )(?<!entonces )\bNotebookLM\b"), ("hace-un-ano",)),
+    # El cargo en el diario, solo si el artículo trata del propio diario (24-11-2026, ante «Juan José de Haro, coautor
+    # de este diario, ha creado la Guía…»: «cuando se hablaba de temas normales no se nombraba el cargo»)
+    ("cargo en el diario: solo si el artículo trata del propio diario",
+     # «participaron los autores de este diario» no es un cargo: es el aviso que pide el reportaje (reportaje.md)
+     re.compile(r"(?<!participó un )(?<!participó una )(?<!participaron los )(?<!participaron dos )\b(?:co-?)?(?:autor|autora|autores|autoras|responsables?|creador|creadora|creadores|fundador|fundadora|"
+                r"fundadores|director|directora|editor|editora)\b (?:de este [Dd]iario|del diario)\b"), ()),
 ]
 URL = re.compile(r"\]\([^)]*\)|https?://\S+|pieza:\S+")
 # Los moldes de ladillo que suenan a IA (ADR 0098): etiquetas que valdrían para cualquier texto

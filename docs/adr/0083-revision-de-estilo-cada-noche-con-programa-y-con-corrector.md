@@ -51,3 +51,11 @@ que cuestan de entender, cuando el diario es para un público amplio, no para ex
   estaba en el titular. Con la edición del 19-11 y cambios de prueba, `--arreglar` deja «Genie 4» y la redacción, y
   devuelve solo la entradilla con una cifra nueva y el breve con un enlace nuevo; vuelta a comprobar, sale limpia. Un
   campo que no es texto cambiado y un JSON roto siguen devolviendo la edición entera.
+- Cargo en el diario (24-11-2026): un artículo sobre la guía de privacidad de un autor del diario lo presentaba como
+  «coautor de este diario», aunque la guía no tiene nada que ver con el diario y el libro de estilo ya decía que los
+  cargos solo van si tienen que ver con la noticia. Juanjo: «cuando se hablaba de temas normales no se nombraba el
+  cargo»; y, donde sí vaya, «responsable», no «coautor». `revisar-estilo.py` busca ahora «autor», «responsable»,
+  «creador», «fundador», «director» o «editor» «de este diario» o «del diario», salvo el aviso de participación que
+  pide el reportaje («participaron los autores de este diario»), y el corrector lo quita si el artículo no trata del
+  propio diario. Con `--todo`, tras corregir ese artículo, no queda ningún caso; la expresión, probada con siete
+  frases (también «el editor del Diario de Navarra», que no salta).
