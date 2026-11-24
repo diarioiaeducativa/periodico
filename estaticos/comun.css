@@ -169,14 +169,14 @@ main:focus { outline: none; }
 }
 
 /* Viñeta: Tiza y Algoritmo. La tiza es blanca en los dos temas; el cursor, azul. */
-:root { --tiza: #ffffff; --cara: #16181d; }
+:root { --tiza: #ffffff; --cara: #16181d; --algoritmo: var(--azul); }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --tiza: #f1f1ec; } }
 :root[data-theme="dark"] { --tiza: #f1f1ec; }
 .vineta .tira svg { display: block; width: 100%; height: auto; }
 .vineta .marco { fill: var(--papel); stroke: var(--tinta); stroke-width: 2.5; }
 .vineta .t, .vineta .a { fill: none; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
 .vineta .t { stroke: var(--tinta); }
-.vineta .a { stroke: var(--azul); }
+.vineta .a { stroke: var(--algoritmo); }
 /* El brazo de Algoritmo lleva debajo un borde del color del papel, para que se vea sobre su cuerpo azul */
 /* Bajo el brazo que cruza el cuerpo de un personaje (Algoritmo y Tiza): un borde del color del papel */
 .vineta .a-borde { fill: none; stroke: var(--papel); stroke-width: 7; stroke-linecap: round; stroke-linejoin: round; }
@@ -184,7 +184,7 @@ main:focus { outline: none; }
 .vineta .discontinuo { stroke-dasharray: 4 5; stroke-width: 2; }
 .vineta .fa { fill: var(--ilu-relleno); }
 .vineta .ft { fill: var(--tinta); stroke: none; }
-.vineta .fz { fill: var(--azul); stroke: none; }
+.vineta .fz { fill: var(--algoritmo); stroke: none; }
 .vineta .tz { fill: var(--tiza); stroke: var(--cara); stroke-width: 2.5; stroke-linejoin: round; }
 .vineta .cara { fill: none; stroke: var(--cara); stroke-width: 2.2; stroke-linecap: round; }
 .vineta .fcara { fill: var(--cara); }
@@ -321,4 +321,10 @@ main:focus { outline: none; }
     --c-hace-un-ano: #7a4f2a;  --t-hace-un-ano: #f6ede3;  --m-hace-un-ano: #e8d3bd;
     --c-opinion: #4a3f6b;      --t-opinion: #efedf5;      --m-opinion: #dcd7ea;
   }
+}
+/* Al imprimir, el azul del texto pasa a negro (enlaces), pero no el de los dibujos: Algoritmo, el azul de los dibujos
+   y el color del reportaje se imprimen con el azul del tema claro (24-11-2026, ADR 0054). Va al final para ganar a
+   los temas claro y oscuro. */
+@media print {
+  :root, :root[data-theme] { --algoritmo: #1c3faa; --ilu-azul: #1c3faa; --c-reportaje: #1c3faa; }
 }

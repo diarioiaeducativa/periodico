@@ -35,6 +35,10 @@ admite GitHub Pages (1 GB por web).
 - **Los dibujos, con los colores del tema claro** aunque se esté leyendo en oscuro: con el tema oscuro elegido,
   las secciones y los rellenos de los dibujos se imprimían con sus colores oscuros sobre papel blanco. Un
   bloque `@media print` al final de `comun.css` repone los claros.
+- **Algoritmo, azul también en papel** (24-11-2026): la impresión pone el azul del texto en negro (los enlaces), y
+  con él salían negros Algoritmo, el azul de los dibujos y el color del reportaje. Juanjo lo vio al imprimir. Los
+  personajes usan ahora su propia variable (`--algoritmo`) y un bloque `@media print` al final de `comun.css` les
+  da, a ellos, al azul de los dibujos y al reportaje, el azul del tema claro.
 
 ## Alternativas descartadas
 

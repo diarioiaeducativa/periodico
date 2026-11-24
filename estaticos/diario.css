@@ -48,10 +48,10 @@
 }
 .orejas .t, .orejas .a { fill: none; stroke-width: calc(2.5px * var(--k)); stroke-linecap: round; stroke-linejoin: round; }
 .orejas .t { stroke: var(--tinta); }
-.orejas .a { stroke: var(--azul); }
+.orejas .a { stroke: var(--algoritmo); }
 .orejas .discontinuo { stroke-dasharray: calc(4px * var(--k)) calc(5px * var(--k)); stroke-width: calc(2px * var(--k)); }
 .orejas .ft { fill: var(--tinta); stroke: none; }
-.orejas .fz { fill: var(--azul); stroke: none; }
+.orejas .fz { fill: var(--algoritmo); stroke: none; }
 .orejas .tz { fill: var(--tiza); stroke: var(--cara); stroke-width: calc(2.5px * var(--k)); stroke-linejoin: round; }
 .orejas .cara { fill: none; stroke: var(--cara); stroke-width: calc(2.2px * var(--k)); stroke-linecap: round; }
 .orejas .veta { stroke-width: calc(1.6px * var(--k)); }
