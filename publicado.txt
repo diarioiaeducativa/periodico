@@ -215,6 +215,8 @@
 - pieza:2026-11-22/editor-musical-interactivo-con-audio (repositorio) Un editor que convierte la notación ABC en partitura y la reproduce en el navegador — recursos con artículo: Editor Musical Interactivo con Audio (https://mtgonzalezm.github.io/editor-musicalsonido-teresagonzalez/)
 
 ## 2026-11-23 (publicado el martes 24 de noviembre de 2026)
-- pieza:2026-11-23/guia-privacidad-herramientas-intef (vibecoding) Un buscador permite saber si una herramienta digital cumple las orientaciones del INTEF
-- pieza:2026-11-23/corea-dimision-ministro-ia-examen (novedades) Dimite el ministro de Educación de Corea del Sur por las medidas contra las trampas con IA en el examen de acceso
+- pieza:2026-11-23/guia-privacidad-herramientas-intef (vibecoding) Las orientaciones de privacidad del INTEF pasan del PDF a una web con buscador y filtros
+- pieza:2026-11-23/corea-dimision-ministro-ia-examen (novedades) Dimite el ministro de Educación surcoreano por las medidas contra las trampas con IA
+- pieza:2026-11-23/affinity-diseno-gratuito (multimedia) Affinity une edición de fotos, dibujo vectorial y maquetación, gratis para particulares
 - breve: Raül Torres ha salido de la lista de espera de Project Genie, el modelo de Google que crea
+- pieza:2026-11-23/comparador-interactivo-de-chatbots-gratu (repositorio) Un comparador permite elegir qué chatbot gratuito conviene según lo que se necesite — recursos con artículo: Comparador interactivo de chatbots gratuitos (https://bilateria.org/docs/bilateria/comparacion_chatbots.html)
