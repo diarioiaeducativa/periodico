@@ -1,0 +1,85 @@
+{
+  "fecha": "2026-11-24",
+  "avisos": {
+    "chatgpt": {
+      "saludo": "Buenos días. Martes con un examen, un semáforo y un chiste de despacho.",
+      "puntos": [
+        "Dimite el ministro de Educación de Corea del Sur tras las medidas de última hora contra las trampas con IA en el examen de acceso a la universidad, entre ellas lápices obligatorios y alertas en los móviles",
+        "Un buscador con semáforo indica si cada herramienta digital cumple las orientaciones del INTEF sobre protección de datos: son 1.144 analizadas, y 360 aplicaciones más con valoración no oficial",
+        "La viñeta de Tiza y Algoritmo se ríe del semáforo de privacidad con una pregunta sobre el color que le tocaría a la propia IA"
+      ],
+      "url": "https://diarioiaeducativa.github.io/n/23-chatgpt.html"
+    },
+    "vce": {
+      "saludo": "Buenos días. Hoy, dos herramientas para elegir mejor qué usar.",
+      "puntos": [
+        "La «Guía de privacidad de herramientas educativas», de Juan José de Haro, reúne en un buscador las 1.144 herramientas del INTEF y 360 aplicaciones del repositorio, estas con una valoración no oficial",
+        "Del fondo del repositorio llega el «Comparador interactivo de chatbots gratuitos», de Juan José de Haro: se marca cuánto importa cada característica y la página ordena los chatbots según esas preferencias"
+      ]
+    },
+    "edumedia": {
+      "saludo": "Buenos días. Un programa de diseño gratuito para dar forma a lo que genera la IA.",
+      "puntos": [
+        "Affinity junta edición de fotos, dibujo vectorial y maquetación en una sola aplicación, gratuita para particulares, y sirve para recortar, corregir y componer imágenes generadas con IA",
+        "Project Genie, el modelo de Google que crea mundos interactivos, ya no tiene lista de espera para quien tiene Google AI Pro, y en el diario se ha ido contando desde la presentación de Genie 4"
+      ],
+      "url": "https://diarioiaeducativa.github.io/n/23-edumedia.html"
+    }
+  },
+  "instagram": "El número trae la dimisión del ministro de Educación de Corea del Sur por las medidas de última hora contra las trampas con IA en el examen nacional de acceso a la universidad. Recoge también una guía web que clasifica con un semáforo más de mil herramientas digitales según las orientaciones sobre protección de datos del INTEF, y un programa de diseño gratuito para particulares que sirve para retocar y maquetar imágenes creadas con IA.",
+  "titulo": "Diario de IA Educativa · Núm. 23",
+  "fecha_texto": "Martes, 24 de noviembre de 2026",
+  "url": "https://diarioiaeducativa.github.io/?n=23",
+  "imagen": "https://diarioiaeducativa.github.io/portadas/2026-11-23-es.jpg",
+  "personas": [
+    {
+      "id": 218499880,
+      "piezas": [
+        {
+          "es": {
+            "titular": "Un buscador permite saber si una herramienta digital cumple las orientaciones del INTEF",
+            "url": "https://diarioiaeducativa.github.io/2026-11-23/guia-privacidad-herramientas-intef.html"
+          },
+          "ca": {
+            "titular": "Un cercador permet saber si una eina digital compleix les orientacions de l'INTEF",
+            "url": "https://diarioiaeducativa.github.io/ca/2026-11-23/guia-privacidad-herramientas-intef.html"
+          },
+          "gl": {
+            "titular": "Un buscador permite saber se unha ferramenta dixital cumpre as orientacións do INTEF",
+            "url": "https://diarioiaeducativa.github.io/gl/2026-11-23/guia-privacidad-herramientas-intef.html"
+          },
+          "eu": {
+            "titular": "Bilatzaile batek tresna digital bat INTEFen gomendioetara egokitzen den jakiteko aukera ematen du",
+            "url": "https://diarioiaeducativa.github.io/eu/2026-11-23/guia-privacidad-herramientas-intef.html"
+          },
+          "en": {
+            "titular": "A search tool shows whether a digital tool meets the INTEF’s guidelines",
+            "url": "https://diarioiaeducativa.github.io/en/2026-11-23/guia-privacidad-herramientas-intef.html"
+          }
+        },
+        {
+          "es": {
+            "titular": "Un comparador permite elegir qué chatbot gratuito conviene según lo que se necesite",
+            "url": "https://diarioiaeducativa.github.io/2026-11-23/comparador-interactivo-de-chatbots-gratu.html"
+          },
+          "ca": {
+            "titular": "Un comparador permet triar quin bot de conversa gratuït convé segons el que es necessiti",
+            "url": "https://diarioiaeducativa.github.io/ca/2026-11-23/comparador-interactivo-de-chatbots-gratu.html"
+          },
+          "gl": {
+            "titular": "Un comparador permite elixir que chatbot gratuíto convén segundo o que se necesite",
+            "url": "https://diarioiaeducativa.github.io/gl/2026-11-23/comparador-interactivo-de-chatbots-gratu.html"
+          },
+          "eu": {
+            "titular": "Konparatzaile batek behar duzunaren araberako txatbot doakoa aukeratzen laguntzen du",
+            "url": "https://diarioiaeducativa.github.io/eu/2026-11-23/comparador-interactivo-de-chatbots-gratu.html"
+          },
+          "en": {
+            "titular": "A comparison tool helps you choose which free chatbot suits your needs",
+            "url": "https://diarioiaeducativa.github.io/en/2026-11-23/comparador-interactivo-de-chatbots-gratu.html"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+ "fecha": "2026-11-23",
+ "elegida": {
+  "n": 1,
+  "pieza": "guia-privacidad-herramientas-intef",
+  "idea": "Chalk checks the privacy traffic light for her tools and asks Algorithm what colour he comes out as; “Blue, as always,” he boasts, and in the last panel he blushes while Chalk points at him, laughing (silent punchline; the twist is in the colour and the joke is on Algorithm).",
+  "guion": {
+   "vinetas": [
+    {
+     "cartela": "In the library, checking a privacy guide.",
+     "escenario": "biblioteca",
+     "tiza": {
+      "expresion": "contento",
+      "postura": "senalar",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "neutral",
+      "postura": "pensar",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "objeto": "portatil",
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "This one, green: fine to use. This one, red: not with students.",
+       "tipo": "habla"
+      },
+      {
+       "quien": "algoritmo",
+       "texto": "How handy, a traffic light.",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "biblioteca",
+     "tiza": {
+      "expresion": "pensativo",
+      "postura": "jarras",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "orgulloso",
+      "postura": "cruzar",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "objeto": "portatil",
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "And what colour are you?",
+       "tipo": "habla"
+      },
+      {
+       "quien": "algoritmo",
+       "texto": "Me? Blue, as always.",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "biblioteca",
+     "tiza": {
+      "expresion": "riendo",
+      "postura": "senalar",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "avergonzado",
+      "postura": "encoger",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "objeto": "portatil",
+     "bocadillos": []
+    }
+   ]
+  }
+ },
+ "traduccion": "automatic AI translation"
+}

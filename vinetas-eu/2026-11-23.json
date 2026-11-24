@@ -1,0 +1,87 @@
+{
+ "fecha": "2026-11-23",
+ "elegida": {
+  "n": 1,
+  "pieza": "guia-privacidad-herramientas-intef",
+  "idea": "Tizak bere tresnen pribatutasun-semaforoa kontsultatzen du eta Algoritmori galdetzen dio zer kolore ateratzen zaion; «Urdina, beti bezala», dio harro, eta azken binetan gorritu egiten da, Tizak barrez seinalatzen duen bitartean (amaiera mutua; txantxa kolorean dago eta Algoritmo geratzen da kokoteraino).",
+  "guion": {
+   "vinetas": [
+    {
+     "cartela": "Liburutegian, pribatutasun-gida bat kontsultatzen.",
+     "escenario": "biblioteca",
+     "tiza": {
+      "expresion": "contento",
+      "postura": "senalar",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "neutral",
+      "postura": "pensar",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "objeto": "portatil",
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Hau, berdea: erabil daiteke. Hau, gorria: ikasleekin, ez.",
+       "tipo": "habla"
+      },
+      {
+       "quien": "algoritmo",
+       "texto": "Zein praktikoa, semaforo bat.",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "biblioteca",
+     "tiza": {
+      "expresion": "pensativo",
+      "postura": "jarras",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "orgulloso",
+      "postura": "cruzar",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "objeto": "portatil",
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Eta zu, zer kolore atera zara?",
+       "tipo": "habla"
+      },
+      {
+       "quien": "algoritmo",
+       "texto": "Ni? Urdina, beti bezala.",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "biblioteca",
+     "tiza": {
+      "expresion": "riendo",
+      "postura": "senalar",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "avergonzado",
+      "postura": "encoger",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "objeto": "portatil",
+     "bocadillos": []
+    }
+   ]
+  }
+ },
+ "traduccion": "itzulpen automatikoa AArekin"
+}

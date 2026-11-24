@@ -1,0 +1,130 @@
+{
+ "fecha": "2026-11-23",
+ "elegida": {
+  "n": 1,
+  "pieza": "guia-privacidad-herramientas-intef",
+  "idea": "Tiza consulta el semáforo de privacidad de sus herramientas y le pregunta a Algoritmo de qué color sale él; «Azul, como siempre», presume, y en la última viñeta se pone colorado mientras Tiza lo señala riendo (remate mudo; el giro está en el color y el chasco es de Algoritmo).",
+  "guion": {
+   "vinetas": [
+    {
+     "cartela": "En la biblioteca, consultando una guía de privacidad.",
+     "escenario": "biblioteca",
+     "tiza": {
+      "expresion": "contento",
+      "postura": "senalar",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "neutral",
+      "postura": "pensar",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "objeto": "portatil",
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Esta, en verde: se puede usar. Esta, en rojo: con el alumnado, no.",
+       "tipo": "habla"
+      },
+      {
+       "quien": "algoritmo",
+       "texto": "Qué práctico, un semáforo.",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "biblioteca",
+     "tiza": {
+      "expresion": "pensativo",
+      "postura": "jarras",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "orgulloso",
+      "postura": "cruzar",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "objeto": "portatil",
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "¿Y tú de qué color sales?",
+       "tipo": "habla"
+      },
+      {
+       "quien": "algoritmo",
+       "texto": "¿Yo? Azul, como siempre.",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "biblioteca",
+     "tiza": {
+      "expresion": "riendo",
+      "postura": "senalar",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "avergonzado",
+      "postura": "encoger",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "objeto": "portatil",
+     "bocadillos": []
+    }
+   ]
+  }
+ },
+ "motivo": "Gana la 1. Es la única cuyo remate no se ve venir y la única que solo puede hacerse con estos dos personajes: el semáforo de la noticia (verde, amarillo, rojo) se cruza con el color de Algoritmo, que presume de azul «como siempre» y acaba colorado, es decir, en rojo, sin que nadie lo diga. Remate mudo y corto, con el chiste en el dibujo. Se entiende sin haber leído la noticia, porque la primera viñeta explica el semáforo en una línea («en rojo: con el alumnado, no») y la segunda pone el color sobre la mesa. La ironía cae sobre la tecnología (la IA que da por hecho que el examen de privacidad no va con ella), no sobre el autor de la guía, ni sobre el INTEF, ni sobre ninguna herramienta con nombre. No se inventa datos: el significado del verde y del rojo es el de la pieza, y lo de Algoritmo es de la tira, no una valoración que se atribuya a la guía. Su gracia llega a 7 (un 7,5), así que se ha afinado el dibujo y el rótulo, no el texto. La 4 (las instrucciones «siempre llegan con margen» y la que acaba de llegar «es para mañana») es la segunda: clara, reconocible para cualquier docente y bien dirigida a la burocracia, pero en cuanto Algoritmo presume del margen se adivina lo que viene; un 7 justo, y con gracia algo menor que la 1. La 2 tiene la mejor frase suelta («En amarillo, de toda la vida, se acelera»), pero está en la segunda viñeta y la tercera, «Por eso el permiso lo da el centro y no tú», es una réplica razonable más que un remate: la tira baja al final. La 5 (un mundo donde la fotocopiadora no se atasque, y para ese hay lista de espera) es correcta y enlaza bien con el breve, pero la fotocopiadora atascada es el tópico más usado de la sala de profesores y el remate, amable, no pasa de sonrisa. La 3 es la más floja: no se entiende por qué solo suena el móvil de Tiza en un claustro donde todo el mundo lleva el suyo, el giro depende del rótulo de la tercera viñeta y el primer bocadillo, de 84 caracteres, es un titular leído en voz alta. Las cinco respetan las prohibiciones y las cinco caben. La variedad no ha decidido: tanto el remate mudo de la 1 como el de Algoritmo en la 4 cumplen lo que pide hoy el resumen.",
+ "retoques": "Textos: no se tocan. Los cuatro bocadillos ya son cortos y con buen ritmo (66, 26, 25 y 24 caracteres; ninguno pasa de 90), y el primero de la primera viñeta no se alarga, así que sigue cabiendo. Rótulo de la primera viñeta: estaba y cumplía la medida («En la biblioteca, eligiendo herramientas para clase.», 52 caracteres), pero no decía de qué va, y la privacidad es lo que da sentido al rojo de Algoritmo; pasa a ser «En la biblioteca, consultando una guía de privacidad.» (53 caracteres), que sitúa el lugar y el asunto sin adelantar el chiste; que elige herramientas ya lo dice el primer bocadillo. Escenario biblioteca: libre (los tres números anteriores fueron despacho, sala de profes y aula) y se mantiene en las tres viñetas. Objeto: el portátil, donde Tiza consulta la guía; el chiste lo pide y no es el del número anterior (folio). Tercera viñeta, Tiza: de «harto» con los brazos cruzados a «riendo» y «senalar». Tiza harta es el final más gastado (fue el del día 21) y aquí restaba: en un remate mudo el dibujo tiene que llevar la mirada al rubor, y que ella lo señale riéndose lo hace sin explicar nada; la risa es de colega, no de burla. Señala dos veces, en la primera al portátil y en la tercera a Algoritmo, y ese eco es parte del chiste: el semáforo pasa de la pantalla a él. Primera viñeta, Algoritmo: de «contento» y «abajo» a «neutral» y «pensar»; así no hay dos «contento» en la misma viñeta, mira la pantalla con interés en vez de estar con los brazos caídos («abajo» es de sus posturas más repetidas) y su recorrido de caras es más limpio: neutral, orgulloso, avergonzado. Segunda viñeta: se deja como estaba; el «pensativo» de Tiza, aunque es de sus caras repetidas, lo pide el chiste (la pregunta hecha con falsa inocencia), con las manos en jarras, que no había usado; Algoritmo, orgulloso y con los brazos cruzados, postura que tampoco había usado. Final: Tiza riendo y Algoritmo avergonzado, dos caras que no cierran ninguno de los tres números anteriores («avergonzado» no había salido). El molde: Tiza dijo la última frase los dos días anteriores y hoy el remate es mudo, con el chasco para Algoritmo; no es el molde de Algoritmo literal y Tiza harta.",
+ "puntuaciones": [
+  {
+   "n": 1,
+   "gracia": 7.5,
+   "claridad": 7,
+   "remate": 8,
+   "prohibiciones": "respeta: la ironía va a la IA, no al autor de la guía ni a ninguna herramienta con nombre; el color de Algoritmo es de la tira, no un dato de la guía",
+   "cabe": true
+  },
+  {
+   "n": 2,
+   "gracia": 6.5,
+   "claridad": 8,
+   "remate": 6,
+   "prohibiciones": "respeta; el significado del amarillo (permiso del centro) es el de la pieza",
+   "cabe": true
+  },
+  {
+   "n": 3,
+   "gracia": 4.5,
+   "claridad": 4,
+   "remate": 5,
+   "prohibiciones": "respeta; las alertas de emergencia para localizar móviles están en la pieza, pero el giro depende del rótulo de la tercera viñeta y no se entiende por qué solo suena un móvil",
+   "cabe": true
+  },
+  {
+   "n": 4,
+   "gracia": 7,
+   "claridad": 8,
+   "remate": 7,
+   "prohibiciones": "respeta: cita la dimisión como hecho, sin reírse del ministro; el blanco es la burocracia de aquí",
+   "cabe": true
+  },
+  {
+   "n": 5,
+   "gracia": 6,
+   "claridad": 7,
+   "remate": 6,
+   "prohibiciones": "respeta; no nombra la empresa ni a la persona del breve",
+   "cabe": true
+  }
+ ]
+}

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340">
+<rect class="t fa" x="60" y="40" width="70" height="260" rx="22"/>
+<circle class="sr" cx="95" cy="92" r="24"/>
+<circle class="sa" cx="95" cy="170" r="24"/>
+<circle class="sv" cx="95" cy="248" r="24"/>
+<text class="lbl" x="150" y="100">Do not use</text>
+<text class="lbl" x="150" y="178">With school permission</text>
+<text class="lbl" x="150" y="256">Can be used</text>
+<text class="lbl" x="500" y="60" text-anchor="middle">1,144 tools</text>
+<g class="t li4" transform="translate(415 90) scale(4)"><!-- Lucide: list (ISC) --><path d="M3 5h.01"/><path d="M3 12h.01"/><path d="M3 19h.01"/><path d="M8 5h13"/><path d="M8 12h13"/><path d="M8 19h13"/></g>
+<g class="a li4" transform="translate(470 170) scale(4)"><!-- Lucide: search (ISC) --><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></g>
+</svg>

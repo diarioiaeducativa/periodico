@@ -1,0 +1,123 @@
+{
+  "fecha": "2026-11-23",
+  "hay_edicion": true,
+  "motivo": "A normal day. ChatGPT-IA-edu: the resignation of South Korea’s education minister. Vibe Coding Educativo: the privacy guide to educational tools based on the INTEF’s work. EduMedia-IAG only has the follow-up on Project Genie (already published), which goes in a brief; the rest of that group (Buzz) already appeared on 23 November. · 1 reserve item (2099-01-01; to fill the issue)",
+  "piezas": [
+    {
+      "id": "guia-privacidad-herramientas-intef",
+      "seccion": "vibecoding",
+      "importancia": 1,
+      "grupo": "vce",
+      "antetitulo": "Community resource",
+      "titular": "A search tool shows whether a digital tool meets the INTEF’s guidelines",
+      "entradilla": "The guide uses a traffic-light system to classify 1,144 tools analysed by the INTEF and, as an unofficial addition, 360 apps from the Vibe Coding Educativo repository.",
+      "cuerpo": [
+        "Juan José de Haro, co-author of this paper, has created the [Guía de privacidad de herramientas educativas](https://guia-privacidad-edu.github.io/) (Guide to privacy in educational tools), a website for quickly looking up the tools that the INTEF (Spain’s National Institute of Educational Technologies and Teacher Training) analysed in version 3.0 of its guidelines on the use of digital tools from a data protection perspective. The INTEF document is in the Digital Library of the ChatGPT-IA-edu group, [where it was shared on 14 July 2026](https://t.me/ChatGPTedu/21753/50331).",
+        "The website lists the INTEF’s 1,144 tools with their traffic-light colour; according to the infographic with which its author presented it in the group, 717 are green, 281 amber and 194 red. According to the guide itself, green means tools that do not process personal data and can be used following the warnings; amber, those that need the school’s permission and the fulfilment of certain conditions; and red, those that do not comply with European data protection rules and should not be used with students.",
+        "On the website you can search for a tool by name or description and filter by category, by who uses it (anyone, students or teachers only) and by practical conditions: no registration, free software, embeddable in another website or accessible. It also offers a three-question assistant for people who do not know which filters to choose, and each search generates a link to share it.",
+        "On 23 November its author added to the search tool 360 apps from the Vibe Coding Educativo repository, assessed with the evaluation form that the guidelines include in an annex. These assessments are not official. The page itself warns that the guide is indicative and that responsibility for the use of each tool lies with the teacher. According to the author, the code is licensed under AGPL v3 and AI helped to create it.",
+        "In the groups it was mentioned that some entries have spacing errors. The author put them down to the text having been copied from the PDF and said he would review them."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Guía de privacidad de herramientas educativas (in Spanish)",
+          "url": "https://guia-privacidad-edu.github.io/"
+        },
+        {
+          "titulo": "INTEF guidelines v3.0 in the ChatGPT-IA-edu Digital Library (in Spanish)",
+          "url": "https://t.me/ChatGPTedu/21753/50331"
+        }
+      ],
+      "mensaje": {
+        "grupo": "vce",
+        "id": 15228
+      },
+      "comprobado": "The guide’s website opened (twice): 1,144 INTEF tools, 360 unofficial apps from the VCE repository, meaning of the traffic light, filters, three-question assistant, notice that it is indicative and has no official link, run by Juan José de Haro, AGPL v3 code and creation with AI. The figures 717/281/194 are those of the author’s infographic in the messages (the website does not show them in the text read), which is why they are attributed to it. Link to the Library taken from the entry’s list of documents. Message 15228 checked on Telegram. No earlier item on this guide in the paper.",
+      "ilustracion": "Un semáforo de tres luces (verde, amarillo, rojo) con una lupa sobre una lista de herramientas, y debajo tres cuadros que dicen qué significa cada color.",
+      "ilustracion_alt": "A traffic light with three lights: the red one, labelled “Do not use”; the amber one, labelled “With school permission”; and the green one, labelled “Can be used”. On the right, a list with a magnifying glass and the label “1,144 tools”.",
+      "grafico": null
+    },
+    {
+      "id": "corea-dimision-ministro-ia-examen",
+      "seccion": "novedades",
+      "importancia": 2,
+      "grupo": "chatgpt",
+      "antetitulo": "Exam and AI cheating",
+      "titular": "South Korea’s education minister resigns over measures against AI cheating",
+      "entradilla": "Last-minute changes to prevent the use of AI in the national university entrance exam caused difficulties for students and teachers.",
+      "cuerpo": [
+        "According to a news agency report published by [Infobae](https://www.infobae.com/america/agencias/2026/11/22/dimite-el-ministro-de-educacion-por-los-cambios-de-ultima-hora-contra-el-uso-de-ia-en-la-selectividad/), South Korea’s president, Lee Jae Myung, accepted the resignation of the education minister, Choi Kyo Jin, on Sunday 22 November 2026. The cause was the rules introduced at the last minute for the national university entrance exam (the Suneung, the equivalent of Spain’s selectividad) to curb cheating with artificial intelligence.",
+        "The measures included the compulsory use of pencils, stickers over clothing buttons to prevent hidden cameras, and emergency phone alerts to locate candidates who had not handed in their devices. The ministry detected 111 possible infringements related to electronic devices. The minister acknowledged the lack of preparation and took responsibility for the difficulties caused.",
+        "The tougher approach came after, according to Infobae, a case of AI copying in another official exam set off alarm bells. In the ChatGPT-IA-edu group the news was discussed, along with whether oral exams would be viable in a test with so many candidates: the majority view was that they would not, because of the number of students, and that other means must be found."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Dimite el ministro de Educación por los cambios de última hora contra el uso de IA en la selectividad (Infobae) (in Spanish)",
+          "url": "https://www.infobae.com/america/agencias/2026/11/22/dimite-el-ministro-de-educacion-por-los-cambios-de-ultima-hora-contra-el-uso-de-ia-en-la-selectividad/"
+        }
+      ],
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 54647
+      },
+      "comprobado": "The Infobae article (a news agency report) opened: resignation accepted on Sunday, measures, 111 possible infringements and the earlier copying case (a candidate with the top mark in tax accounting, according to Yonhap). Names of the president and the minister as the report gives them. Message 54647 checked on Telegram. Everything is attributed to Infobae because it could not be corroborated with another source. The paper reported the earlier case in a brief on 18 November.",
+      "ilustracion": null,
+      "ilustracion_alt": "Three steps from left to right: a pencil labelled “Pencil only”, a mobile phone crossed out with a red line and labelled “No phones”, and a person labelled “Resignation”.",
+      "grafico": null
+    },
+    {
+      "id": "affinity-diseno-gratuito",
+      "seccion": "multimedia",
+      "importancia": 3,
+      "grupo": "edumedia",
+      "antetitulo": "From the EduMedia archive",
+      "titular": "Affinity brings photo editing, vector drawing and page layout together in one free program",
+      "entradilla": "It is useful for retouching and composing images generated with AI. Its official website presents it as free for individuals, with the AI features available only on Canva’s paid plans.",
+      "cuerpo": [
+        "[Affinity](https://www.affinity.studio/) is a design program that combines photo editing, vector drawing and page layout in a single application. According to its official website, it is free for individuals and available for Mac, Windows and iPad. It was shared in the group when it became free, and several members, having tried it, placed it as an alternative to programs such as Photoshop or GIMP, although it was pointed out that the learning curve is steeper.",
+        "In the classroom it helps to round off work with AI-generated images: cutting out a background, fixing a detail, adding text or putting together a poster, a comic or the cover of a project. One possible activity is to ask students to generate illustrations with an AI tool and then arrange them on a laid-out page, with a title and captions.",
+        "To get started, download the program from its website, whose download buttons go through a Canva sign-in, and open a new document. The AI features it includes, according to the website, require a paid Canva plan; the rest of the program does not need them.",
+        "Limits: the website gives no minimum age and does not detail the terms of use, referring instead to Canva’s terms and privacy policy. It is worth reading them before proposing its use with underage students and, in the meantime, letting the teacher use it. Schools that need single sign-on should turn to Canva Enterprise or Canva Education."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Affinity, official website",
+          "url": "https://www.affinity.studio/"
+        }
+      ],
+      "herramienta": {
+        "nombre": "Affinity",
+        "url": "https://www.affinity.studio/"
+      },
+      "mensaje": {
+        "grupo": "edumedia",
+        "id": 5512
+      },
+      "comprobado": "Checked again with WebFetch at https://www.affinity.studio/: “Professional design, photo editing, and page layout in one app”; Mac, Windows and iPad; “free for individuals”; the AI tools require a premium Canva plan; the download buttons go through a Canva sign-in (the website does not expressly say that an account is required, which is why it is worded as “go through”); SSO via Canva Enterprise or Education; no minimum age or prices, with links to Canva’s terms and privacy policy (canva.com). Message 5512 opened at t.me/EduMediaIAG/5512?embed=1&mode=tme: it is the link to Affinity’s website. Group conversation (5511, 5530, 5532): the free pricing, the comparison with GIMP/Photoshop and the steeper learning curve are all there; no names in the text. No results for “Affinity” in the paper’s search tool nor similar items (nothing of the kind already published). No pieza: links. Headline of 76 characters; body of about 230 words; no references to the day of publication.",
+      "ilustracion": "Un antes y un después: a la izquierda, varias imágenes sueltas generadas con IA, desordenadas; a la derecha, una misma página de cartel bien compuesta con esas imágenes recortadas, un título y un pie, con tres herramientas simbolizadas (pincel de foto, pluma de vectores y rejilla de página) que confluyen en una sola ventana.",
+      "ilustracion_alt": "Loose, tilted images, labelled “Loose”, pass through three tools, a brush (“Photo”), a pen (“Vectors”) and a grid (“Layout”), which converge in a single window where a poster page remains, with a title, two images and a caption, labelled “Poster”."
+    }
+  ],
+  "breves": [
+    {
+      "texto": "Raül Torres has come off the waiting list for Project Genie, the Google model that creates interactive worlds, and has access through his Google AI Pro subscription, as [the paper reported when presenting Genie 4](pieza:2026-11-19/genie-4-project-genie).",
+      "url": null,
+      "grupo": "edumedia",
+      "mensaje": {
+        "grupo": "edumedia",
+        "id": 12414
+      }
+    }
+  ],
+  "descartado": [
+    "“Cuatro formas de usar la IA” (article by Juan José de Haro, message 54644): the message has no link and I could not open the original, so it cannot be checked.",
+    "“Cómo crear tu primera aplicación” (guide in VCE, message 15214): the group’s own orientation content, with no link.",
+    "Question about an alternative to Symbaloo without registration (message 15235): no replies, not news.",
+    "Trama: question about open source and a reply with the repository (messages 15213 and 15220): a minor detail of a topic already published.",
+    "“Informes a viva voz”, “Buzz” and the ABC editor: already published in this day’s issue."
+  ],
+  "repaso": [
+    "Traffic-light figures (717/281/194): attributed to the author’s infographic, because the website does not confirm them in its text.",
+    "The rest checked against the guide’s website, Infobae and the messages: no further changes."
+  ]
+}

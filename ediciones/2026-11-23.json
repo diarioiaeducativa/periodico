@@ -1,0 +1,129 @@
+{
+  "fecha": "2026-11-23",
+  "hay_edicion": true,
+  "motivo": "Día normal. ChatGPT-IA-edu: la dimisión del ministro de Educación de Corea del Sur. Vibe Coding Educativo: la guía de privacidad de herramientas educativas basada en el INTEF. EduMedia-IAG solo tiene la continuación de Project Genie (ya publicado), que va en un breve; lo demás de ese grupo (Buzz) ya salió el 23 de noviembre. · 1 pieza(s) de reserva (2099-01-01; para completar)",
+  "piezas": [
+    {
+      "id": "guia-privacidad-herramientas-intef",
+      "seccion": "vibecoding",
+      "importancia": 1,
+      "grupo": "vce",
+      "antetitulo": "Recurso de la comunidad",
+      "titular": "Un buscador permite saber si una herramienta digital cumple las orientaciones del INTEF",
+      "entradilla": "La guía clasifica con un semáforo 1.144 herramientas analizadas por el INTEF y, como añadido no oficial, 360 aplicaciones del repositorio de Vibe Coding Educativo.",
+      "cuerpo": [
+        "Juan José de Haro, coautor de este diario, ha creado la [Guía de privacidad de herramientas educativas](https://guia-privacidad-edu.github.io/), una web para consultar de forma rápida las herramientas que el INTEF (Instituto Nacional de Tecnologías Educativas y de Formación del Profesorado) analizó en la versión 3.0 de sus Orientaciones sobre el uso de herramientas digitales desde la perspectiva de la protección de datos. El documento del INTEF está en la Biblioteca digital del grupo ChatGPT-IA-edu, [donde se compartió el 14 de julio de 2026](https://t.me/ChatGPTedu/21753/50331).",
+        "La web recoge las 1.144 herramientas del INTEF con su color en el semáforo; según la infografía con la que su autor la presentó en el grupo, 717 están en verde, 281 en amarillo y 194 en rojo. Según la propia guía, el verde corresponde a herramientas que no tratan datos personales y pueden usarse siguiendo las advertencias; el amarillo, a las que necesitan permiso del centro y cumplir condiciones; y el rojo, a las que no cumplen la normativa europea de protección de datos y no deben usarse con el alumnado.",
+        "En la web se puede buscar una herramienta por nombre o descripción y filtrar por categoría, por quién la usa (cualquiera, alumnado o solo profesorado) y por condiciones prácticas: sin registro, software libre, que se pueda incrustar en otra web o con accesibilidad. También ofrece un asistente de tres preguntas para las personas que no saben qué filtros elegir, y cada consulta genera un enlace para compartirla.",
+        "El 23 de noviembre su autor añadió al buscador 360 aplicaciones del repositorio de Vibe Coding Educativo, valoradas con el formulario de evaluación que las Orientaciones incluyen en un anexo. Esas valoraciones no son oficiales. La propia página advierte de que la guía es orientativa y de que la responsabilidad del uso de cada herramienta es del docente. Según el autor, el código tiene licencia AGPL v3 y la creación contó con ayuda de IA.",
+        "En los grupos se comentó que algunas fichas tienen fallos de espaciado. El autor los atribuyó a que el texto se había copiado del PDF y dijo que los revisaría."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Guía de privacidad de herramientas educativas",
+          "url": "https://guia-privacidad-edu.github.io/"
+        },
+        {
+          "titulo": "Orientaciones del INTEF v3.0 en la Biblioteca digital de ChatGPT-IA-edu",
+          "url": "https://t.me/ChatGPTedu/21753/50331"
+        }
+      ],
+      "mensaje": {
+        "grupo": "vce",
+        "id": 15228
+      },
+      "comprobado": "Abierta la web de la guía (dos veces): 1.144 herramientas del INTEF, 360 aplicaciones del repositorio VCE no oficiales, significado del semáforo, filtros, asistente de tres preguntas, aviso de que es orientativa y sin vínculo oficial, dirigida por Juan José de Haro, código AGPL v3 y creación con IA. Las cifras 717/281/194 son las de la infografía del autor en los mensajes (la web no las muestra en el texto leído), por eso se atribuyen a ella. Enlace a la Biblioteca tomado de la lista de documentos de la entrada. Mensaje 15228 comprobado en Telegram. Sin pieza previa sobre esta guía en el diario.",
+      "ilustracion": "Un semáforo de tres luces (roja, ámbar y verde) con una lupa sobre una lista de herramientas.",
+      "ilustracion_alt": "Un semáforo con tres luces: la roja, con el rótulo «No usar»; la ámbar, con «Con permiso del centro»; y la verde, con «Se puede usar». A la derecha, una lista con una lupa y el rótulo «1.144 herramientas».",
+      "grafico": null
+    },
+    {
+      "id": "corea-dimision-ministro-ia-examen",
+      "seccion": "novedades",
+      "importancia": 2,
+      "grupo": "chatgpt",
+      "antetitulo": "Examen y trampas con IA",
+      "titular": "Dimite el ministro de Educación surcoreano por las medidas contra las trampas con IA",
+      "entradilla": "Los cambios de última hora para evitar el uso de IA en el examen nacional de acceso a la universidad provocaron dificultades a estudiantes y profesorado.",
+      "cuerpo": [
+        "Según una nota de agencia que publica [Infobae](https://www.infobae.com/america/agencias/2026/11/22/dimite-el-ministro-de-educacion-por-los-cambios-de-ultima-hora-contra-el-uso-de-ia-en-la-selectividad/), el presidente de Corea del Sur, Lee Jae Myung, aceptó el domingo 22 de noviembre de 2026 la renuncia del ministro de Educación, Choi Kyo Jin. La causa fueron las normas introducidas a última hora en el examen nacional de acceso a la universidad (Suneung, el equivalente a la selectividad) para frenar las trampas con inteligencia artificial.",
+        "Entre las medidas figuraban el uso obligatorio de lápices, pegatinas sobre los botones de la ropa para impedir cámaras ocultas y alertas de emergencia en los móviles para localizar a los aspirantes que no habían entregado sus dispositivos. El ministerio detectó 111 posibles infracciones relacionadas con aparatos electrónicos. El ministro reconoció la falta de preparación y asumió la responsabilidad por las dificultades causadas.",
+        "El endurecimiento llegó después de que, según Infobae, un caso de copia con IA en otro examen oficial hiciera saltar las alarmas. En el grupo ChatGPT-IA-edu se comentó la noticia y se debatió si en una prueba con tantos aspirantes serían viables los exámenes orales: la postura mayoritaria fue que no, por el número de estudiantes, y que hay que buscar otros medios."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Dimite el ministro de Educación por los cambios de última hora contra el uso de IA en la selectividad (Infobae)",
+          "url": "https://www.infobae.com/america/agencias/2026/11/22/dimite-el-ministro-de-educacion-por-los-cambios-de-ultima-hora-contra-el-uso-de-ia-en-la-selectividad/"
+        }
+      ],
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 54647
+      },
+      "comprobado": "Abierto el artículo de Infobae (agencia): dimisión aceptada el domingo, medidas, 111 posibles infracciones y el caso previo de copia (aspirante con la mejor nota en contabilidad fiscal, según Yonhap). Nombres del presidente y del ministro tal como los da la nota. Mensaje 54647 comprobado en Telegram. Todo va atribuido a Infobae porque no se ha podido contrastar con otra fuente. El diario recogió el caso previo en un breve el 18 de noviembre.",
+      "ilustracion": null,
+      "ilustracion_alt": "Tres pasos de izquierda a derecha: un lápiz con el rótulo «Solo lápiz», un móvil tachado con una raya roja y el rótulo «Sin móviles», y una persona con el rótulo «Dimisión».",
+      "grafico": null
+    },
+    {
+      "id": "affinity-diseno-gratuito",
+      "seccion": "multimedia",
+      "importancia": 3,
+      "grupo": "edumedia",
+      "antetitulo": "Del fondo de EduMedia",
+      "titular": "Affinity une edición de fotos, dibujo vectorial y maquetación, gratis para particulares",
+      "entradilla": "Sirve para retocar y componer las imágenes que se generan con IA. La web oficial lo presenta como gratuito para particulares; sus funciones de IA, según la misma web, solo están en los planes de pago de Canva.",
+      "cuerpo": [
+        "[Affinity](https://www.affinity.studio/) es un programa de diseño que une en una sola aplicación la edición de fotografía, el dibujo vectorial y la maquetación de páginas. Según su web oficial, es gratuito para particulares y está disponible para Mac, Windows e iPad. En el grupo EduMedia-IAG se compartió cuando se hizo gratuito, y varias personas del grupo lo situaron, tras probarlo, como alternativa a programas como Photoshop o GIMP, aunque se señaló que cuesta más aprender a usarlo.",
+        "En clase sirve para completar el trabajo con imágenes generadas con IA: recortar un fondo, corregir un detalle, añadir un texto o montar un cartel, un cómic o la portada de un proyecto. Una actividad posible es pedir al alumnado que genere ilustraciones con una herramienta de IA y las ordene después en una página maquetada, con título y pie de imagen.",
+        "Para empezar, se descarga el programa desde su web, donde los botones de descarga llevan a un inicio de sesión de Canva, y se abre un documento nuevo. Las funciones de IA que incluye, según la web, requieren un plan de pago de Canva; el resto del programa no las necesita.",
+        "Límites: la web no indica una edad mínima ni detalla las condiciones de uso, y remite a los términos y la política de privacidad de Canva. Conviene leerlos antes de plantear su uso con alumnado menor y, mientras tanto, que lo use el docente. Los centros que necesiten inicio de sesión único deben acudir a Canva Enterprise o Canva Education."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Affinity, web oficial",
+          "url": "https://www.affinity.studio/"
+        }
+      ],
+      "herramienta": {
+        "nombre": "Affinity",
+        "url": "https://www.affinity.studio/"
+      },
+      "mensaje": {
+        "grupo": "edumedia",
+        "id": 5512
+      },
+      "comprobado": "Revisado de nuevo con WebFetch en https://www.affinity.studio/: «Professional design, photo editing, and page layout in one app»; Mac, Windows e iPad; «free for individuals»; las herramientas de IA requieren un plan premium de Canva; los botones de descarga pasan por un inicio de sesión de Canva (la web no dice expresamente que la cuenta sea obligatoria, por eso se redacta como «pasan por»); SSO mediante Canva Enterprise o Education; sin edad mínima ni precios, con enlaces a términos y privacidad de Canva (canva.com). Mensaje 5512 abierto en t.me/EduMediaIAG/5512?embed=1&mode=tme: es el enlace a la web de Affinity. Conversación del grupo (5511, 5530, 5532): la gratuidad, la comparación con GIMP/Photoshop y la mayor curva de aprendizaje constan; sin nombres en el texto. Sin resultados para «Affinity» en el buscador del diario ni piezas parecidas (nada por el estilo ya publicado). Sin enlaces pieza:. Titular de 76 caracteres; cuerpo de unas 230 palabras; sin referencias al día de salida.",
+      "ilustracion": "Un antes y un después: a la izquierda, varias imágenes sueltas generadas con IA, desordenadas; a la derecha, una misma página de cartel bien compuesta con esas imágenes recortadas, un título y un pie, con tres herramientas simbolizadas (pincel de foto, pluma de vectores y rejilla de página) que confluyen en una sola ventana.",
+      "ilustracion_alt": "Imágenes sueltas e inclinadas, con el rótulo «Sueltas», pasan por tres herramientas, un pincel («Foto»), una pluma («Vectores») y una rejilla («Maqueta»), que confluyen en una sola ventana donde queda una página de cartel con título, dos imágenes y un pie, con el rótulo «Cartel»."
+    }
+  ],
+  "breves": [
+    {
+      "texto": "Raül Torres ha salido de la lista de espera de Project Genie, el modelo de Google que crea mundos interactivos, y tiene acceso con su suscripción a Google AI Pro, como recogió [el diario al presentar Genie 4](pieza:2026-11-19/genie-4-project-genie).",
+      "url": null,
+      "grupo": "edumedia",
+      "mensaje": {
+        "grupo": "edumedia",
+        "id": 12414
+      }
+    }
+  ],
+  "descartado": [
+    "«Cuatro formas de usar la IA» (artículo de Juan José de Haro, mensaje 54644): el mensaje no trae enlace y no pude abrir el original, así que no se puede comprobar.",
+    "«Cómo crear tu primera aplicación» (guía en VCE, mensaje 15214): contenido de orientación del propio grupo, sin enlace.",
+    "Pregunta sobre una alternativa a Symbaloo sin registro (mensaje 15235): sin respuestas, no es noticia.",
+    "Trama: pregunta sobre el código abierto y respuesta con el repositorio (mensajes 15213 y 15220): detalle menor de un tema ya publicado.",
+    "«Informes a viva voz», «Buzz» y el editor ABC: ya publicados en el número de este día."
+  ],
+  "repaso": [
+    "Cifras del semáforo (717/281/194): atribuidas a la infografía del autor, porque la web no las confirma en su texto.",
+    "Resto comprobado contra la web de la guía, Infobae y los mensajes: sin más cambios."
+  ],
+  "piezas_reserva": [
+    "2099-01-01"
+  ],
+  "titulares_reserva": [
+    "Affinity reúne fotografía, vectores y maquetación en un programa gratuito"
+  ]
+}

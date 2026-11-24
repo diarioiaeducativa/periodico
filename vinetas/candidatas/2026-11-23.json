@@ -1,0 +1,400 @@
+{
+ "fecha": "2026-11-23",
+ "candidatas": [
+  {
+   "pieza": "guia-privacidad-herramientas-intef",
+   "idea": "Tiza consulta el semáforo de privacidad de sus herramientas y le pregunta a Algoritmo de qué color sale él; «Azul, como siempre», presume, y en la última viñeta se pone colorado (remate mudo, el chasco es de Algoritmo).",
+   "guion": {
+    "vinetas": [
+     {
+      "cartela": "En la biblioteca, eligiendo herramientas para clase.",
+      "escenario": "biblioteca",
+      "tiza": {
+       "expresion": "contento",
+       "postura": "senalar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "contento",
+       "postura": "abajo",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "portatil",
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "Esta, en verde: se puede usar. Esta, en rojo: con el alumnado, no.",
+        "tipo": "habla"
+       },
+       {
+        "quien": "algoritmo",
+        "texto": "Qué práctico, un semáforo.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "biblioteca",
+      "tiza": {
+       "expresion": "pensativo",
+       "postura": "jarras",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "orgulloso",
+       "postura": "cruzar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "portatil",
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "¿Y tú de qué color sales?",
+        "tipo": "habla"
+       },
+       {
+        "quien": "algoritmo",
+        "texto": "¿Yo? Azul, como siempre.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "biblioteca",
+      "tiza": {
+       "expresion": "harto",
+       "postura": "cruzar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "avergonzado",
+       "postura": "encoger",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "portatil",
+      "bocadillos": []
+     }
+    ]
+   },
+   "cabe": true
+  },
+  {
+   "pieza": "guia-privacidad-herramientas-intef",
+   "idea": "En una formación en línea, Tiza aprende que las herramientas en amarillo necesitan permiso del centro y recuerda que en amarillo, de toda la vida, se acelera; Algoritmo la frena: por eso el permiso lo da el centro y no ella (Tiza se pasa de lista y remata Algoritmo).",
+   "guion": {
+    "vinetas": [
+     {
+      "cartela": "En una formación en línea sobre protección de datos.",
+      "escenario": "videollamada",
+      "tiza": {
+       "expresion": "preocupado",
+       "postura": "pensar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "neutral",
+       "postura": "senalar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "Verde, se usa. Rojo, con el alumnado no. ¿Y las de amarillo?",
+        "tipo": "habla"
+       },
+       {
+        "quien": "algoritmo",
+        "texto": "Con permiso del centro.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "videollamada",
+      "tiza": {
+       "expresion": "orgulloso",
+       "postura": "arriba",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "pensativo",
+       "postura": "pensar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "En amarillo, de toda la vida, se acelera.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "videollamada",
+      "tiza": {
+       "expresion": "avergonzado",
+       "postura": "encoger",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "harto",
+       "postura": "jarras",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "Por eso el permiso lo da el centro y no tú.",
+        "tipo": "habla"
+       }
+      ]
+     }
+    ]
+   },
+   "cabe": true
+  },
+  {
+   "pieza": "corea-dimision-ministro-ia-examen",
+   "idea": "Tiza cuenta en el claustro que en un examen de Corea del Sur enviaron alertas de emergencia para localizar móviles; Algoritmo manda una de prueba y solo suena un móvil, el de Tiza (remate mudo, con el giro en el rótulo y en el objeto; el chasco es de Tiza).",
+   "guion": {
+    "vinetas": [
+     {
+      "cartela": "En el claustro, organizando la vigilancia de exámenes.",
+      "escenario": "claustro",
+      "tiza": {
+       "expresion": "neutral",
+       "postura": "senalar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "pensativo",
+       "postura": "pensar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "En un examen de Corea del Sur enviaron alertas de emergencia para localizar móviles.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "claustro",
+      "tiza": {
+       "expresion": "sorprendido",
+       "postura": "arriba",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "contento",
+       "postura": "arriba",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "Buena idea. Mando una de prueba al claustro.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "cartela": "Solo suena un móvil.",
+      "escenario": "claustro",
+      "tiza": {
+       "expresion": "avergonzado",
+       "postura": "sostener",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "orgulloso",
+       "postura": "jarras",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "notificaciones",
+      "lleva": "tiza",
+      "bocadillos": []
+     }
+    ]
+   },
+   "cabe": true
+  },
+  {
+   "pieza": "corea-dimision-ministro-ia-examen",
+   "idea": "Tiza lee que en Corea del Sur cambiaron las normas del examen a última hora y dimitió el ministro; Algoritmo presume de que aquí las instrucciones llegan con margen, hasta que entra una en el móvil: es para mañana (remata Algoritmo, avergonzado, y Tiza se ríe: los dos contra la burocracia).",
+   "guion": {
+    "vinetas": [
+     {
+      "cartela": "De noche, en casa, leyendo las noticias del día.",
+      "escenario": "casa_noche",
+      "tiza": {
+       "expresion": "sorprendido",
+       "postura": "sostener",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "neutral",
+       "postura": "abajo",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "movil",
+      "lleva": "tiza",
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "Corea del Sur: cambian las normas del examen a última hora y dimite el ministro.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "casa_noche",
+      "tiza": {
+       "expresion": "harto",
+       "postura": "sostener",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "orgulloso",
+       "postura": "jarras",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "movil",
+      "lleva": "tiza",
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "Aquí no pasaría. Las instrucciones siempre llegan con margen.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "casa_noche",
+      "tiza": {
+       "expresion": "riendo",
+       "postura": "sostener",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "avergonzado",
+       "postura": "encoger",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "notificaciones",
+      "lleva": "tiza",
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "Acaba de llegar una. Es para mañana.",
+        "tipo": "habla"
+       }
+      ]
+     }
+    ]
+   },
+   "cabe": true
+  },
+  {
+   "pieza": "breve-1",
+   "idea": "Algoritmo presume de que la IA ya crea mundos interactivos enteros y se ofrece a hacer uno; Tiza pide uno donde la fotocopiadora no se atasque, y para ese hay lista de espera (remata Algoritmo).",
+   "guion": {
+    "vinetas": [
+     {
+      "cartela": "En la fotocopiadora, hablando de mundos virtuales.",
+      "escenario": "fotocopiadora",
+      "tiza": {
+       "expresion": "enfadado",
+       "postura": "jarras",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "orgulloso",
+       "postura": "arriba",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "Ya hay IA que crea mundos interactivos enteros. Pídeme uno.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "fotocopiadora",
+      "tiza": {
+       "expresion": "pensativo",
+       "postura": "senalar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "cargando",
+       "postura": "abajo",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "Uno donde esta fotocopiadora no se atasque.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "fotocopiadora",
+      "tiza": {
+       "expresion": "agotado",
+       "postura": "cabeza",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "neutral",
+       "postura": "encoger",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "Para ese hay lista de espera.",
+        "tipo": "habla"
+       }
+      ]
+     }
+    ]
+   },
+   "cabe": true
+  }
+ ]
+}

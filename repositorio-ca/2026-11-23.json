@@ -1,0 +1,47 @@
+{
+  "fecha": "2026-11-23",
+  "piezas": [
+    {
+      "id": "comparador-interactivo-de-chatbots-gratu",
+      "seccion": "vibecoding",
+      "repositorio": "fondo",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Del fons del repositori",
+      "titular": "Un comparador permet triar quin bot de conversa gratuït convé segons el que es necessiti",
+      "entradilla": "Juan José de Haro va crear una aplicació web en què es marca la importància de cada característica i s'obté una classificació personalitzada de bots de conversa gratuïts.",
+      "cuerpo": [
+        "Triar un assistent d'IA entre la quantitat de bots de conversa gratuïts que hi ha no és senzill, i menys quan cada docent necessita coses diferents: uns volen generar imatges, uns altres pujar documents o fer servir un mode de raonament. El comparador interactiu de bots de conversa gratuïts, creat per Juan José de Haro, parteix d'aquesta idea: no hi ha un millor bot de conversa en abstracte, sinó el que s'adiu amb el que valora cada persona.",
+        "La pàgina es divideix en dues columnes. A l'esquerra, «Asignar importancia» llista les característiques, cadascuna amb un control lliscant que per defecte està en «Media», tret de l'edat mínima d'ús, que comença en «Indiferente»: personalització de les respostes, memòria entre converses, generació d'imatges i de vídeo, intèrpret de codi, compartir converses senceres, lectura de les imatges dels PDF, càlculs exactes mitjançant programació, mode de raonament, cerca profunda, xat privat, creació d'agents, llenç editable, presentacions, connexió amb altres serveis, versió de consola, aprenentatge guiat i edat mínima d'ús. A la dreta, «Resultados» ordena els bots de conversa amb un percentatge i una etiqueta («Excelente», «Bueno», «Correcto», «Regular»). En obrir-la, amb els valors per defecte, encapçala Qwen (91 %) i segueixen, amb el 83 %, Gemini, Grok, ChatGPT, Perplexity i Copilot; entre els tretze que es comparen figuren també Kimi, Claude, DeepSeek i Meta AI.",
+        "A classe té dos usos clars. Un és pràctic: abans de recomanar una eina a l'alumnat o a altres companys, s'ajusten els lliscadors a les necessitats reals (per exemple, restar pes a la generació de vídeo i donar-lo al xat privat o a l'edat mínima) i es veu com canvia la classificació. L'altre és formatiu: serveix en cursos de formació del professorat per parlar de què diferencia uns assistents d'altres i de per què una classificació depèn dels criteris triats. La mateixa pàgina ho adverteix: la qualificació és subjectiva i pot variar segons les necessitats de cada usuari. No indica la data de les dades, de manera que convé contrastar les funcions de cada servei abans de decidir, perquè aquestes canvien amb freqüència.",
+        "S'obre al navegador, sense compte ni instal·lació. Segons la fitxa, està en castellà, es va crear amb Claude i es publica amb llicència Creative Commons BY-SA. El seu autor la va presentar a ChatGPT-IA-edu juntament amb un article, [«¿Qué IA me conviene? Comparativa de chatbots»](https://educacion.bilateria.org/que-ia-me-conviene-comparativa-de-chatbots), que explica la comparativa."
+      ],
+      "recursos": [
+        {
+          "id": "comparador-interactivo-de-chatbots-gratu",
+          "titulo": "Comparador interactivo de chatbots gratuitos",
+          "autoria": "Juan José de Haro",
+          "url": "https://bilateria.org/docs/bilateria/comparacion_chatbots.html",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://bilateria.org/docs/bilateria/comparacion_chatbots.html",
+          "licencia": "Creative Commons BY-SA (Reconeixement-CompartirIgual)",
+          "captura": "2026-11-23-comparador-interactivo-de-chatbots-gratu.jpg",
+          "captura_alt": "Dues columnes: a l'esquerra, lliscadors d'importància de cada característica; a la dreta, la classificació de bots de conversa amb percentatges, encapçalada per Qwen amb el 91 %.",
+          "texto": []
+        }
+      ],
+      "fuentes": [
+        {"titulo": "Comparador interactivo de chatbots gratuitos", "url": "https://bilateria.org/docs/bilateria/comparacion_chatbots.html"},
+        {"titulo": "Presentació a ChatGPT-IA-edu (en castellà)", "url": "https://t.me/ChatGPTedu/22121"},
+        {"titulo": "¿Qué IA me conviene? Comparativa de chatbots (en castellà)", "url": "https://educacion.bilateria.org/que-ia-me-conviene-comparativa-de-chatbots"}
+      ],
+      "comprobado": "Captura y texto visible de la página: deslizadores de importancia (todos en «Media» salvo la edad mínima, en «Indiferente»), clasificación de trece chatbots con porcentajes, nota de calificación subjetiva, autoría y licencia CC BY-SA. WebFetch del recurso devolvió una redirección sin resultados (se generan con JavaScript); manda la captura. Abierto el artículo enlazado: existe, es de Juan José de Haro, compara trece chatbots y enlaza la aplicación. No se verificaron los datos de cada chatbot. El mensaje de presentación lleva la marca de autor del diario. Sin enlaces a lo ya publicado: ninguna clave de publicado.txt trata de esto.",
+      "repaso": [
+        "Autoría: «Juan José de Haro», no «Juanjo de Haro» (el mensaje que lo compartió lleva la marca de autor del diario).",
+        "Corregido que todos los deslizadores empiezan en «Media»: la edad mínima empieza en «Indiferente»; «con todo en Media» pasa a «con los valores por defecto».",
+        "Enlazado el artículo «¿Qué IA me conviene?» en su primera mención.",
+        "Actualizado `comprobado`."
+      ]
+    }
+  ],
+  "descartado": []
+}

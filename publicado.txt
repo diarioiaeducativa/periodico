@@ -209,6 +209,12 @@
 - pieza:2026-11-21/ia-aprender-entender-o-entregar (reportaje) La IA ayuda más a aprender cuando sirve para entender que cuando hace la tarea
 
 ## 2026-11-22 (publicado el lunes 23 de noviembre de 2026)
-- pieza:2026-11-22/autoria-cuento-ilustrado-ia (debates) Un supuesto de cuento ilustrado con IA y premiado plantea quién firma la obra
+- pieza:2026-11-22/autoria-cuento-ilustrado-ia (debates) Un caso imaginado plantea quién firma un cuento premiado e ilustrado con IA
 - pieza:2026-11-22/informes-a-viva-voz (vibecoding) Una aplicación convierte respuestas habladas en informes de evaluación para las familias
-- pieza:2026-11-22/buzz-cortometraje-terminado (multimedia) Raül Torres publica «Buzz», el cortometraje terminado, y su making-of paso a paso
+- pieza:2026-11-22/buzz-cortometraje-terminado (multimedia) Raül Torres publica su cortometraje «Buzz» y explica paso a paso cómo lo hizo
+- pieza:2026-11-22/editor-musical-interactivo-con-audio (repositorio) Un editor que convierte la notación ABC en partitura y la reproduce en el navegador — recursos con artículo: Editor Musical Interactivo con Audio (https://mtgonzalezm.github.io/editor-musicalsonido-teresagonzalez/)
+
+## 2026-11-23 (publicado el martes 24 de noviembre de 2026)
+- pieza:2026-11-23/guia-privacidad-herramientas-intef (vibecoding) Un buscador permite saber si una herramienta digital cumple las orientaciones del INTEF
+- pieza:2026-11-23/corea-dimision-ministro-ia-examen (novedades) Dimite el ministro de Educación de Corea del Sur por las medidas contra las trampas con IA en el examen de acceso
+- breve: Raül Torres ha salido de la lista de espera de Project Genie, el modelo de Google que crea

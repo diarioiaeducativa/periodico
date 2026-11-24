@@ -1,0 +1,47 @@
+{
+  "fecha": "2026-11-23",
+  "piezas": [
+    {
+      "id": "comparador-interactivo-de-chatbots-gratu",
+      "seccion": "vibecoding",
+      "repositorio": "fondo",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Biltegiaren fondotik",
+      "titular": "Konparatzaile batek behar duzunaren araberako txatbot doakoa aukeratzen laguntzen du",
+      "entradilla": "Juan José de Harok web-aplikazio bat sortu du, non ezaugarri bakoitzaren garrantzia markatzen den eta txatbot doakoen sailkapen pertsonalizatua lortzen den.",
+      "cuerpo": [
+        "AA laguntzaile bat aukeratzea ez da erraza dagoen txatbot doakoen kopuru handian, eta are zailagoa irakasle bakoitzak gauza desberdinak behar dituenean: batzuek irudiak sortu nahi dituzte, besteek dokumentuak igo edo arrazoitze-modua erabili. Juan José de Harok sortutako txatbot doakoen konparatzaile interaktiboak ideia horretatik abiatzen da: ez dago txatbot onenik abstraktuki, pertsona bakoitzak baloratzen duenarekin bat datorrena baizik.",
+        "Orria bi zutabetan banatuta dago. Ezkerrean, «Asignar importancia» atalak ezaugarriak zerrendatzen ditu, bakoitza graduatzaile batekin, defektuz «Media» posizioan dagoena, erabilera-adin minimoa izan ezik, «Indiferente» posizioan hasten baita: erantzunen pertsonalizazioa, elkarrizketen arteko memoria, irudien eta bideoen sorkuntza, kode-interpretea, elkarrizketa osoak partekatzea, PDFetako irudiak irakurtzea, programazioaren bidezko kalkulu zehatzak, arrazoitze-modua, bilaketa sakona, txat pribatua, agenteen sorkuntza, canvas editagarria, aurkezpenak, beste zerbitzu batzuekiko konexioa, kontsola-bertsioa, ikaskuntza gidatua eta erabilera-adin minimoa. Eskuinean, «Resultados» atalak txatbotak ordenatzen ditu, ehuneko batekin eta etiketa batekin («Excelente», «Bueno», «Correcto», «Regular»). Irekitzean, defektuzko balioekin, Qwen dago buru (% 91), eta haren atzetik, % 83rekin, Gemini, Grok, ChatGPT, Perplexity eta Copilot datoz; konparatzen diren hamahiru horien artean Kimi, Claude, DeepSeek eta Meta AI ere badaude.",
+        "Ikasgelan bi erabilera argi ditu. Bata praktikoa da: ikasleei edo beste irakasle batzuei tresna bat gomendatu aurretik, graduatzaileak benetako beharretara egokitzen dira (adibidez, bideo-sorkuntzari pisua kendu eta txat pribatuari edo adin minimoari eman) eta sailkapena nola aldatzen den ikusten da. Bestea prestakuntzakoa da: irakasleen prestakuntza-ikastaroetan balio du laguntzaile batzuk besteengandik zerk bereizten dituen eta sailkapen bat aukeratutako irizpideen araberakoa zergatik den lantzeko. Orriak berak ohartarazten du: kalifikazioa subjektiboa da eta erabiltzaile bakoitzaren beharren arabera alda daiteke. Ez du datuen data adierazten; beraz, komeni da zerbitzu bakoitzaren funtzioak egiaztatzea erabaki aurretik, maiz aldatzen baitira.",
+        "Nabigatzailean irekitzen da, konturik edo instalaziorik gabe. Fitxaren arabera, gaztelaniaz dago, Claudekin sortu zen eta Creative Commons BY-SA lizentziarekin argitaratzen da. Egileak ChatGPT-IA-edu taldean aurkeztu zuen, artikulu batekin batera: [«¿Qué IA me conviene? Comparativa de chatbots»](https://educacion.bilateria.org/que-ia-me-conviene-comparativa-de-chatbots), konparazioa azaltzen duena."
+      ],
+      "recursos": [
+        {
+          "id": "comparador-interactivo-de-chatbots-gratu",
+          "titulo": "Comparador interactivo de chatbots gratuitos",
+          "autoria": "Juan José de Haro",
+          "url": "https://bilateria.org/docs/bilateria/comparacion_chatbots.html",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://bilateria.org/docs/bilateria/comparacion_chatbots.html",
+          "licencia": "Creative Commons BY-SA (Aitortu-PartekatuBerdin)",
+          "captura": "2026-11-23-comparador-interactivo-de-chatbots-gratu.jpg",
+          "captura_alt": "Bi zutabe: ezkerrean, ezaugarri bakoitzaren garrantziaren graduatzaileak; eskuinean, txatbot-sailkapena ehunekoekin, Qwen buru duela, % 91rekin.",
+          "texto": []
+        }
+      ],
+      "fuentes": [
+        {"titulo": "Comparador interactivo de chatbots gratuitos (gaztelaniaz)", "url": "https://bilateria.org/docs/bilateria/comparacion_chatbots.html"},
+        {"titulo": "ChatGPT-IA-eduko aurkezpena (gaztelaniaz)", "url": "https://t.me/ChatGPTedu/22121"},
+        {"titulo": "¿Qué IA me conviene? Comparativa de chatbots (gaztelaniaz)", "url": "https://educacion.bilateria.org/que-ia-me-conviene-comparativa-de-chatbots"}
+      ],
+      "comprobado": "Captura y texto visible de la página: deslizadores de importancia (todos en «Media» salvo la edad mínima, en «Indiferente»), clasificación de trece chatbots con porcentajes, nota de calificación subjetiva, autoría y licencia CC BY-SA. WebFetch del recurso devolvió una redirección sin resultados (se generan con JavaScript); manda la captura. Abierto el artículo enlazado: existe, es de Juan José de Haro, compara trece chatbots y enlaza la aplicación. No se verificaron los datos de cada chatbot. El mensaje de presentación lleva la marca de autor del diario. Sin enlaces a lo ya publicado: ninguna clave de publicado.txt trata de esto.",
+      "repaso": [
+        "Autoría: «Juan José de Haro», no «Juanjo de Haro» (el mensaje que lo compartió lleva la marca de autor del diario).",
+        "Corregido que todos los deslizadores empiezan en «Media»: la edad mínima empieza en «Indiferente»; «con todo en Media» pasa a «con los valores por defecto».",
+        "Enlazado el artículo «¿Qué IA me conviene?» en su primera mención.",
+        "Actualizado `comprobado`."
+      ]
+    }
+  ],
+  "descartado": []
+}

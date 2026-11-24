@@ -1,0 +1,47 @@
+{
+  "fecha": "2026-11-23",
+  "piezas": [
+    {
+      "id": "comparador-interactivo-de-chatbots-gratu",
+      "seccion": "vibecoding",
+      "repositorio": "fondo",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "From the repository's back catalogue",
+      "titular": "A comparison tool helps you choose which free chatbot suits your needs",
+      "entradilla": "Juan José de Haro created a web app where you rate the importance of each feature and get a personalised ranking of free chatbots.",
+      "cuerpo": [
+        "Choosing an AI assistant from the many free chatbots available is not easy, still less when every teacher needs different things: some want to generate images, others to upload documents or use a reasoning mode. The interactive comparison of free chatbots, created by Juan José de Haro, starts from that idea: there is no best chatbot in the abstract, only the one that fits what each person values.",
+        "The page is split into two columns. On the left, “Asignar importancia” (assign importance) lists the features, each with a slider that is set to “Media” (medium) by default, except for minimum age of use, which starts at “Indiferente” (indifferent): personalisation of responses, memory between conversations, image and video generation, code interpreter, sharing whole conversations, reading the images in PDFs, exact calculations through programming, reasoning mode, deep search, private chat, creating agents, editable canvas, presentations, connection to other services, command-line version, guided learning and minimum age of use. On the right, “Resultados” (results) ranks the chatbots with a percentage and a label (“Excelente”, “Bueno”, “Correcto”, “Regular”). When it opens, with the default values, Qwen leads (91%), followed, on 83%, by Gemini, Grok, ChatGPT, Perplexity and Copilot; the thirteen chatbots compared also include Kimi, Claude, DeepSeek and Meta AI.",
+        "In the classroom it has two clear uses. One is practical: before recommending a tool to students or colleagues, you adjust the sliders to your real needs (for example, giving less weight to video generation and more to private chat or minimum age) and see how the ranking changes. The other is educational: it works in teacher training courses to discuss what sets one assistant apart from another and why a ranking depends on the criteria chosen. The page itself warns that the rating is subjective and may vary according to each user's needs. It does not give the date of the data, so it is worth checking each service's features before deciding, because they change often.",
+        "It opens in the browser, with no account or installation. According to the entry, it is in Spanish, was created with Claude and is published under a Creative Commons BY-SA licence. Its author presented it in ChatGPT-IA-edu together with an article, [“¿Qué IA me conviene? Comparativa de chatbots”](https://educacion.bilateria.org/que-ia-me-conviene-comparativa-de-chatbots) (in Spanish), which explains the comparison."
+      ],
+      "recursos": [
+        {
+          "id": "comparador-interactivo-de-chatbots-gratu",
+          "titulo": "Comparador interactivo de chatbots gratuitos",
+          "autoria": "Juan José de Haro",
+          "url": "https://bilateria.org/docs/bilateria/comparacion_chatbots.html",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://bilateria.org/docs/bilateria/comparacion_chatbots.html",
+          "licencia": "Creative Commons BY-SA (Attribution-ShareAlike)",
+          "captura": "2026-11-23-comparador-interactivo-de-chatbots-gratu.jpg",
+          "captura_alt": "Two columns: on the left, sliders for the importance of each feature; on the right, the ranking of chatbots with percentages, led by Qwen on 91%.",
+          "texto": []
+        }
+      ],
+      "fuentes": [
+        {"titulo": "Comparador interactivo de chatbots gratuitos (in Spanish)", "url": "https://bilateria.org/docs/bilateria/comparacion_chatbots.html"},
+        {"titulo": "Presentation in ChatGPT-IA-edu (in Spanish)", "url": "https://t.me/ChatGPTedu/22121"},
+        {"titulo": "¿Qué IA me conviene? Comparativa de chatbots (in Spanish)", "url": "https://educacion.bilateria.org/que-ia-me-conviene-comparativa-de-chatbots"}
+      ],
+      "comprobado": "Captura y texto visible de la página: deslizadores de importancia (todos en “Media” salvo la edad mínima, en “Indiferente”), clasificación de trece chatbots con porcentajes, nota de calificación subjetiva, autoría y licencia CC BY-SA. WebFetch del recurso devolvió una redirección sin resultados (se generan con JavaScript); manda la captura. Abierto el artículo enlazado: existe, es de Juan José de Haro, compara trece chatbots y enlaza la aplicación. No se verificaron los datos de cada chatbot. El mensaje de presentación lleva la marca de autor del diario. Sin enlaces a lo ya publicado: ninguna clave de publicado.txt trata de esto.",
+      "repaso": [
+        "Autoría: “Juan José de Haro”, no “Juanjo de Haro” (el mensaje que lo compartió lleva la marca de autor del diario).",
+        "Corregido que todos los deslizadores empiezan en “Media”: la edad mínima empieza en “Indiferente”; “con todo en Media” pasa a “con los valores por defecto”.",
+        "Enlazado el artículo “¿Qué IA me conviene?” en su primera mención.",
+        "Actualizado `comprobado`."
+      ]
+    }
+  ],
+  "descartado": []
+}

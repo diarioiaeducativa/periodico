@@ -1,0 +1,87 @@
+{
+ "fecha": "2026-11-23",
+ "elegida": {
+  "n": 1,
+  "pieza": "guia-privacidad-herramientas-intef",
+  "idea": "Xiz consulta o semáforo de privacidade das súas ferramentas e pregúntalle a Algoritmo de que cor sae el; «Azul, como sempre», presume, e na última viñeta ponse colorado mentres Xiz o sinala rindo (remate mudo; o xiro está na cor e o chasco é de Algoritmo).",
+  "guion": {
+   "vinetas": [
+    {
+     "cartela": "Na biblioteca, consultando unha guía de privacidade.",
+     "escenario": "biblioteca",
+     "tiza": {
+      "expresion": "contento",
+      "postura": "senalar",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "neutral",
+      "postura": "pensar",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "objeto": "portatil",
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Esta, en verde: pódese usar. Esta, en vermello: co alumnado, non.",
+       "tipo": "habla"
+      },
+      {
+       "quien": "algoritmo",
+       "texto": "Que práctico, un semáforo.",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "biblioteca",
+     "tiza": {
+      "expresion": "pensativo",
+      "postura": "jarras",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "orgulloso",
+      "postura": "cruzar",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "objeto": "portatil",
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "E ti, de que cor sales?",
+       "tipo": "habla"
+      },
+      {
+       "quien": "algoritmo",
+       "texto": "Eu? Azul, como sempre.",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "biblioteca",
+     "tiza": {
+      "expresion": "riendo",
+      "postura": "senalar",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "avergonzado",
+      "postura": "encoger",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "objeto": "portatil",
+     "bocadillos": []
+    }
+   ]
+  }
+ },
+ "traduccion": "automática con IA"
+}
