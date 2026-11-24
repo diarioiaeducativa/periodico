@@ -70,7 +70,9 @@ para los días sin noticias) están en «Cómo se hace el diario», `docs/como-s
 
 - **Titular**: claro, con verbo, sin preguntas ni ganchos («no creerás…»). Dice qué aporta lo que
   recoge, no solo el nombre de la herramienta o del documento. **Como mucho 90 caracteres**, contando
-  los espacios: lo que no quepa va al antetítulo o a la entradilla.
+  los espacios: lo que no quepa va al antetítulo o a la entradilla. Sin abusar del arranque «Un…» o
+  «Una…» («Un buscador permite…»): de vez en cuando vale, pero mejor empezar por lo que cambia o por quién
+  actúa («Las orientaciones de privacidad del INTEF pasan del PDF a una web con buscador y filtros»).
 - **Antetítulo**: de dos a cinco palabras, sin verbo: el tipo de cosa o el ámbito («Guía oficial»,
   «Nuevo en el repositorio», «Del fondo de EduMedia»). Como en los ladillos, ni empieza por «Qué», «Lo que», «Cómo»
   o «Por qué» ni lleva «lo» con un participio o un adjetivo: «Estudios sobre IA y aprendizaje», no «Lo que dice la
