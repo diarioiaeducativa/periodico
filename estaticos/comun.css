@@ -169,7 +169,7 @@ main:focus { outline: none; }
 }
 
 /* Viñeta: Tiza y Algoritmo. La tiza es blanca en los dos temas; el cursor, azul. */
-:root { --tiza: #ffffff; --cara: #16181d; --algoritmo: var(--azul); }
+:root { --tiza: #ffffff; --cara: #16181d; --ojo: #fbfbf9; --algoritmo: var(--azul); }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --tiza: #f1f1ec; } }
 :root[data-theme="dark"] { --tiza: #f1f1ec; }
 .vineta .tira svg { display: block; width: 100%; height: auto; }
@@ -188,8 +188,9 @@ main:focus { outline: none; }
 .vineta .tz { fill: var(--tiza); stroke: var(--cara); stroke-width: 2.5; stroke-linejoin: round; }
 .vineta .cara { fill: none; stroke: var(--cara); stroke-width: 2.2; stroke-linecap: round; }
 .vineta .fcara { fill: var(--cara); }
-.vineta .ojo { fill: var(--papel); }
-.vineta .fpupila { fill: var(--tinta); }
+/* Los ojos de Algoritmo, iguales en los dos temas: blancos con la pupila oscura (24-11-2026) */
+.vineta .ojo { fill: var(--ojo); }
+.vineta .fpupila { fill: var(--cara); }
 .vineta .sp { fill: none; stroke: var(--papel); stroke-width: 2.4; stroke-linecap: round; }
 .vineta .fsp { fill: var(--papel); }
 .vineta .polvo { opacity: 0.5; }

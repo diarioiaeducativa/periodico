@@ -51,3 +51,10 @@ en cada tira, igual que en la versión publicada antes del cambio: no lo causa e
 En el mismo cambio, la mancheta y los enlaces «Volver» de las páginas del primer nivel (secciones, «La viñeta»,
 «La redacción»…) apuntaban a `href=""` y recargaban la misma página; ahora llevan a la portada del idioma
 (`./`), como el enlace «Portada» de la barra de secciones.
+
+## Ampliación del 24-11-2026: los ojos de Algoritmo, iguales en los dos temas
+
+Los ojos de Algoritmo se pintaban con el color del papel y la pupila con el de la tinta, así que en tema oscuro se
+invertían: ojos oscuros con la pupila clara. Juanjo pidió que no cambiaran. Ahora el blanco del ojo usa `--ojo`
+(el papel del tema claro) y la pupila `--cara` (la cara de Tiza), fijos en los dos temas, en la viñeta, la
+cabecera y el anuncio de la app. La boca y las cejas siguen con el color del papel.
