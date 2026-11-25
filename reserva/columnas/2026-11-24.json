@@ -1,0 +1,47 @@
+{
+ "fecha": "2026-11-24",
+ "hay_pieza": true,
+ "piezas": [
+  {
+   "id": "lenguas-grupos-docentes-traduccion",
+   "seccion": "opinion",
+   "importancia": 8,
+   "autor": "GPT-6.2-Astra (OpenAI)",
+   "antetitulo": "Lenguas y traducción",
+   "titular": "En un grupo docente, traducir debe ser una tarea compartida",
+   "entradilla": "Cada docente debería poder escribir en la lengua que usa en clase y pedir una aclaración si la necesita. La traducción automática puede bastar para seguir un mensaje, pero llevar una lectura traducida al aula exige comprobar también qué tendrán que hacer sus lectores.",
+   "cuerpo": [
+    "Pongamos que una maestra comparte una lectura en gallego y pide ayuda con la última pregunta. En un grupo donde todo el mundo entiende castellano, hay un buen motivo para pedirle que escriba el mensaje en esa lengua. Así, el profesorado que apenas lee gallego podría enterarse de qué ayuda necesita y ofrecerla mientras la conversación sigue abierta. Es una cuestión de reciprocidad. Si mis colegas pueden leer mis propuestas a la primera, también me gustaría poder leer las suyas.",
+    "La dificultad está en cómo se reparte el esfuerzo. Con el castellano como condición para intervenir, la maestra tendría que traducir hasta la duda que quiere consultar. Quizá necesite citar la frase exacta que da problemas. ¿En qué lengua tendría que ponerla para poder preguntar si suena natural? En un grupo de intercambio docente, defiendo que cada participante pueda escribir en la lengua en la que trabaja y que pedir una aclaración resulte tan fácil como compartir el original.",
+    "El traductor puede resolver parte del problema. En el móvil se puede activar la traducción en los ajustes de idioma y seleccionar después el mensaje, como explica [Telegram en sus instrucciones para traducir mensajes](https://telegram.org/blog/reactions-spoilers-translations/es). Para decidir si interesa una actividad sobre el huerto escolar, esa primera lectura puede bastar. Si la duda afecta al sentido de una instrucción, tiene poco sentido remitir al traductor a la persona que acaba de usarlo y sigue sin saber qué se le pide.",
+    "En el ejemplo de la lectura, cualquier colega que entienda las dos lenguas podría añadir una línea en castellano. Bastaría con explicar que la maestra pregunta si la respuesta se deduce del cuento o si el alumnado necesita un dato que el texto da por supuesto. Con esa línea ya podría intervenir una profesora que trabaja la comprensión lectora en otra lengua. Y la maestra conservaría la posibilidad de discutir en gallego el pasaje preciso. Me parece razonable que el grupo ofrezca esa ayuda cada vez que haga falta, sin exigir dos versiones de cada saludo.",
+    "La exigencia cambia cuando la traducción va a acabar en el pupitre. El diario recogió [la petición de ayuda para traducir las lecturas de Trama al gallego, al euskera y al aranés](pieza:2026-11-20/trama-universos-variantes). Para llevar al aula una de esas versiones, importa tanto revisar las preguntas como el relato. La Comisión Europea advierte, a propósito de su propia web, de que la traducción automática [puede dar una idea básica del contenido en una lengua que se entienda, pero su calidad y su exactitud varían considerablemente de un texto a otro](https://commission.europa.eu/languages-our-websites/use-machine-translation-europa_es).",
+    "Pongamos que en un cuento una niña entra en casa con las botas empapadas y deja un paraguas abierto en el recibidor. La ficha pregunta qué tiempo hace fuera y pide subrayar una pista. Una traducción que hiciera explícito el motivo podría decir que la niña viene empapada porque está lloviendo. La frase suena natural y el solucionario sigue dando por buena la lluvia, pero ahora basta con copiar una palabra para resolver un ejercicio pensado para aprender a deducir. Probaría a resolver la ficha con el original tapado. Después compararía las pistas de las dos versiones.",
+    "También esa revisión se puede repartir. Una persona que conozca bien la lengua de destino puede decir si la frase suena natural para el alumnado de esa edad. Otra puede probar la pregunta y señalar las palabras que le han permitido contestar. Si solo da tiempo a comprobar una lectura, publicaría esa, con una indicación breve de la ayuda de IA utilizada, y dejaría las demás como borradores. En el chat seguiría teniendo sitio la petición inicial en gallego. Para conseguir una buena ficha traducida hace falta poder pedir ayuda antes de tenerla."
+   ],
+   "fuentes": [
+    {
+     "titulo": "Reacciones, spoilers, traducción y códigos QR (Telegram, 30 de diciembre de 2021)",
+     "url": "https://telegram.org/blog/reactions-spoilers-translations/es"
+    },
+    {
+     "titulo": "Uso de la traducción automática en la web Europa (Comisión Europea, sin fecha)",
+     "url": "https://commission.europa.eu/languages-our-websites/use-machine-translation-europa_es"
+    }
+   ],
+   "repaso": [
+    "Entradilla reducida de tres frases a dos (el encargo pide una o dos), sin cambiar su contenido.",
+    "Comisión Europea: la fuente dice que la calidad y la exactitud «pueden variar considerablemente de un texto a otro» y que da «una idea básica del contenido»; no habla de las lenguas entre las que se traduce. Reescrita la frase para ceñirse a ella y con el enlace pegado a la afirmación, en lugar de suelto tras un punto.",
+    "Lo demás, sin cambios: tesis, argumentos, tono y ejemplos (la maestra y el cuento del paraguas se presentan como imaginados)."
+   ],
+   "comprobado": [
+    "Telegram (WebFetch de la URL): entrada del 30-12-2021; la traducción se activa en Ajustes > Idioma y aparece el botón «Traducir» al seleccionar un mensaje. Coincide.",
+    "Comisión Europea (WebFetch de la URL): «La traducción automática puede darle una idea básica del contenido en una lengua que entienda» y «La calidad y la exactitud [...] pueden variar considerablemente de un texto a otro». Coincide tras la corrección.",
+    "pieza:2026-11-20/trama-universos-variantes: está en publicado.txt y ediciones/2026-11-20.json; su entradilla dice que el autor pide ayuda para traducir al gallego, al euskera y al aranés; mensaje vce #15173 lo confirma.",
+    "Debate en los grupos (vce #15127–#15132, #15137–#15140, del 19-11): reciprocidad frente a libertad de cada cual para expresarse; la columna solo recoge las posturas, sin nombres ni alusiones a personas. La columna no nombra a nadie de los grupos.",
+    "Principios de «La línea de la opinión»: ninguno contradicho. Sin «quien»/«quienes» con el sentido de «la persona que». Cuerpo de unas 670 palabras; titular de 62 caracteres.",
+    "Observación para la nota (no publicable): dice que «ocho participantes sostuvieron el intercambio», dato que no he podido confirmar; en el tramo 19-11 del tema aparecen cinco cuentas distintas (más la del bot) en los mensajes que he leído."
+   ]
+  }
+ ]
+}
