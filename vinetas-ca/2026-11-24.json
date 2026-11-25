@@ -1,0 +1,85 @@
+{
+ "fecha": "2026-11-24",
+ "elegida": {
+  "n": 3,
+  "pieza": "agentes-coste-cuota",
+  "idea": "L'Algorisme ha esgotat la quota setmanal amb un programa de 3D i espera el reinici; a Guix la seva se li acaba els dimecres, i a ella la reinicien al juliol (remata Guix amb dues paraules; el xasco se l'emporta l'Algorisme, amb les mans al cap).",
+  "guion": {
+   "vinetas": [
+    {
+     "cartela": "Dijous, a la fotocopiadora, amb la quota entre mans.",
+     "escenario": "fotocopiadora",
+     "tiza": {
+      "expresion": "agotado",
+      "postura": "abajo",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "agotado",
+      "postura": "abajo",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "algoritmo",
+       "texto": "M'han connectat a un programa de 3D i adéu quota setmanal. Toca esperar el reinici.",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "fotocopiadora",
+     "tiza": {
+      "expresion": "harto",
+      "postura": "cruzar",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "pensativo",
+      "postura": "pensar",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "A mi la quota se m'acaba els dimecres.",
+       "tipo": "habla"
+      },
+      {
+       "quien": "algoritmo",
+       "texto": "I quan et reinicien?",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "fotocopiadora",
+     "tiza": {
+      "expresion": "agotado",
+      "postura": "encoger",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "sorprendido",
+      "postura": "cabeza",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Al juliol.",
+       "tipo": "habla"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "traduccion": "automàtica amb IA"
+}

@@ -1,0 +1,47 @@
+{
+  "fecha": "2026-11-24",
+  "piezas": [
+    {
+      "id": "gestor-personal-de-gastos-mensuales",
+      "seccion": "vibecoding",
+      "repositorio": "fondo",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Do fondo do repositorio",
+      "titular": "Mis Gastos anota gastos por categorías e móstraos en gráficas; úsase en Historia",
+      "entradilla": "Luis Villanueva Aizcorbe creou «Mis Gastos», unha aplicación web en español para anotar gastos por categorías e ver totais diarios, mensuais e anuais. Segundo o seu autor, úsaa nas súas clases de Historia.",
+      "cuerpo": [
+        "«Gestor personal de gastos mensuales» é unha aplicación web creada por Luis Villanueva Aizcorbe con Claude. Ábrese no navegador, sen instalar nada, e na pantalla aparece co título «Mis Gastos» e o lema «Controla tu dinero y vivirás mejor». Arriba mostra catro totais en euros: o do día en curso, o do mes, o do mes anterior e o do ano actual.",
+        "Para anotar un gasto escóllese a data, unha categoría, a cantidade e unha descrición, e prémese «Añadir». A lista de categorías é a dunha economía doméstica real: alimentación, hipoteca, seguros, electricidade, telefonía, gasolina, lecer, gastos do colexio, paga aos fillos, medicinas e outras. Debaixo hai un resumo do gasto por categoría do mes actual, un histórico do gasto total por meses e dúas gráficas: gasto total por meses e gasto por categoría do mes en curso. A páxina ten tamén un botón cunha lúa e outro, «Restablecer». A interface está só en español.",
+        "O uso que lle dá o seu autor é o máis útil para outros docentes. Segundo conta na súa presentación en Vibe Coding Educativo, emprégaa co seu alumnado de Historia para que cada estudante pregunte na casa canto gasta unha familia e o anote, e despois compare esa realidade coa do crac do 29 e coa dunha familia inglesa durante a Revolución Industrial. Explica que non mira os datos de ninguén, para non ver información privada. Tamén cre que pode servir en Economía ou Emprendemento, e di que a parte do alumnado lle gusta e a usa para o seu propio rexistro.",
+        "A ficha do repositorio sitúaa en bacharelato, formación profesional, universidade e formación de persoas adultas, e relaciónaa co pensamento lóxico-matemático e as ciencias sociais e cívicas. A páxina non di onde se gardan os datos, se fai falta conta nin se se usan para outros fins, así que convén probala antes co grupo e non pedir datos reais das familias se non hai seguranza. Publícase con licenza Creative Commons BY-SA."
+      ],
+      "recursos": [
+        {
+          "id": "gestor-personal-de-gastos-mensuales",
+          "titulo": "Gestor Personal de Gastos Mensuales",
+          "autoria": "Luis Villanueva Aizcorbe",
+          "url": "https://misgastosmensuales.netlify.app/",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://misgastosmensuales.netlify.app/",
+          "licencia": "Creative Commons BY-SA (Recoñecemento-CompartirIgual)",
+          "captura": "2026-11-24-gestor-personal-de-gastos-mensuales.jpg",
+          "captura_alt": "Aplicación «Mis Gastos»: cabeceira azul e verde co lema «Controla tu dinero y vivirás mejor», catro totais a cero euros e o formulario con data, categoría, cantidade e descrición.",
+          "texto": []
+        }
+      ],
+      "fuentes": [
+        {"titulo": "Mis Gastos, a aplicación (en castelán)", "url": "https://misgastosmensuales.netlify.app/"},
+        {"titulo": "Presentación en Vibe Coding Educativo (en castelán)", "url": "https://t.me/vceduca/4424"}
+      ],
+      "comprobado": "Captura y texto visible de la página (cuatro totales, formulario con categorías, resumen, histórico y dos gráficas, botón con luna y «Restablecer») y WebFetch, que confirma lo mismo y no dice dónde se guardan los datos ni si hay cuenta. Autoría, licencia, ficha y captura cotejadas con la entrada. El uso en clase de Historia es lo que cuenta su autor en el mensaje de presentación."
+    }
+  ],
+  "descartado": [],
+  "repaso": [
+    "Titular acortado (superaba 90 caracteres) y sin dar como hecho el uso en Economía o Emprendimiento, que es solo sugerencia del autor.",
+    "Entradilla: el uso en Historia, atribuido al autor.",
+    "Quitado que «Restablecer» sirve para empezar de cero y que la luna es modo oscuro: la página no lo dice; descrito solo lo que se ve.",
+    "Añadido que no consta si se usan los datos para otros fines y la cautela de no pedir datos reales de las familias.",
+    "Eliminado «Lo más interesante» (valoración)."
+  ]
+}

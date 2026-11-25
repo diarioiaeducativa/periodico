@@ -1,0 +1,64 @@
+{
+  "fecha": "2026-11-25",
+  "avisos": {
+    "chatgpt": {
+      "saludo": "Buenos días. Formación, inspección y un plazo que se acaba, en el número del miércoles.",
+      "puntos": [
+        "Microsoft lleva a España Elevate for Educators, una plataforma de formación en IA con tres niveles para el profesorado y otros tres para los centros; no consta su precio",
+        "Navarra prevé usar la IA como apoyo en la inspección educativa del curso 2026-2027, pero, según OKDIARIO, el plan no precisa qué programas ni qué datos se usarán",
+        "El INTEF mantiene abierta hasta el 27 de noviembre la inscripción a un curso en línea breve sobre normativa, riesgos y oportunidades de la IA en las aulas"
+      ]
+    },
+    "vce": {
+      "saludo": "Buenos días. Una aplicación para hablar de dinero en clase de Historia y una guía que cambia de sitio.",
+      "puntos": [
+        "«Mis Gastos», de Luis Villanueva Aizcorbe, permite anotar gastos por categorías y verlos en gráficas; su autor la usa en Historia para comparar una familia actual con la del crac del 29",
+        "La guía de privacidad del INTEF ya no muestra las aplicaciones del repositorio del grupo, porque esa información está ahora en el propio repositorio de Vibe Coding Educativo"
+      ],
+      "url": "https://diarioiaeducativa.github.io/n/24-vce.html"
+    },
+    "edumedia": {
+      "saludo": "Buenos días. Lo que gasta de cuota trabajar con agentes y una primera prueba de Genie.",
+      "puntos": [
+        "Conectar asistentes de programación a Blender, Unreal o DaVinci Resolve agota rápido el límite de uso, aunque, según se comentó, sale más barato que aprender a fondo esos programas",
+        "Una primera prueba de Project Genie, la herramienta de Google que crea mundos interactivos, mostró que cuesta hacerse con los controles",
+        "La viñeta de Tiza y Algoritmo parte de esa cuota: Algoritmo se queda sin ella con un programa de 3D y pregunta a Tiza cuándo reinician la suya"
+      ],
+      "url": "https://diarioiaeducativa.github.io/n/24-edumedia.html"
+    }
+  },
+  "instagram": "El número recoge la llegada a España de Elevate for Educators, una plataforma de Microsoft con cursos y reconocimientos de IA para profesorado y centros, y el plan de la inspección educativa de Navarra para usar la IA como apoyo, del que no se han precisado ni los programas ni los datos. Incluye también una aplicación web para anotar gastos domésticos que se usa en clase de Historia y una conversación sobre lo rápido que se agota el límite de uso al conectar asistentes de IA a programas de 3D y vídeo.",
+  "titulo": "Diario de IA Educativa · Núm. 24",
+  "fecha_texto": "Miércoles, 25 de noviembre de 2026",
+  "url": "https://diarioiaeducativa.github.io/?n=24",
+  "imagen": "https://diarioiaeducativa.github.io/portadas/2026-11-24-es.jpg",
+  "personas": [
+    {
+      "id": 385817484,
+      "piezas": [
+        {
+          "es": {
+            "titular": "Mis Gastos anota gastos por categorías y los muestra en gráficas; se usa en Historia",
+            "url": "https://diarioiaeducativa.github.io/2026-11-24/gestor-personal-de-gastos-mensuales.html"
+          },
+          "ca": {
+            "titular": "Mis Gastos anota despeses per categories i les mostra en gràfiques; s'usa a història",
+            "url": "https://diarioiaeducativa.github.io/ca/2026-11-24/gestor-personal-de-gastos-mensuales.html"
+          },
+          "gl": {
+            "titular": "Mis Gastos anota gastos por categorías e móstraos en gráficas; úsase en Historia",
+            "url": "https://diarioiaeducativa.github.io/gl/2026-11-24/gestor-personal-de-gastos-mensuales.html"
+          },
+          "eu": {
+            "titular": "«Mis Gastos»-ek gastuak kategoriaka jasotzen ditu eta grafikoetan erakusten ditu; Historian erabiltzen da",
+            "url": "https://diarioiaeducativa.github.io/eu/2026-11-24/gestor-personal-de-gastos-mensuales.html"
+          },
+          "en": {
+            "titular": "Mis Gastos logs spending by category and charts it; it is used in History",
+            "url": "https://diarioiaeducativa.github.io/en/2026-11-24/gestor-personal-de-gastos-mensuales.html"
+          }
+        }
+      ]
+    }
+  ]
+}

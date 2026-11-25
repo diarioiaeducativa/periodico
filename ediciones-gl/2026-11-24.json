@@ -1,0 +1,97 @@
+{
+  "fecha": "2026-11-24",
+  "hay_edicion": true,
+  "motivo": "",
+  "piezas": [
+    {
+      "id": "microsoft-elevate-educators",
+      "seccion": "novedades",
+      "importancia": 1,
+      "grupo": "chatgpt",
+      "antetitulo": "Formación docente en IA",
+      "titular": "Microsoft leva a España Elevate for Educators, formación en IA para docentes",
+      "entradilla": "A plataforma reúne cursos, seminarios en directo e unha comunidade de docentes, con tres niveis de recoñecemento para o profesorado e outros tres para os centros.",
+      "cuerpo": [
+        "Microsoft anunciou a chegada a España de [Elevate for Educators](https://elevateforeducators.microsoft.com/?lang=es), unha plataforma en liña de formación en intelixencia artificial para profesorado e centros. Forma parte de Microsoft Elevate, o programa co que a empresa di querer ampliar o acceso á IA e ás competencias dixitais. Segundo a información de [Zonamovilidad](https://www.zonamovilidad.es/microsoft-lanza-espana-plataforma-formar-docentes-inteligencia-artificial), a plataforma ofrece recursos e ferramentas prácticas, cursos, seminarios web en directo, un centro de axuda e unha comunidade internacional de docentes, cun grupo específico en LinkedIn para o profesorado español.",
+        "O profesorado avanza por tres niveis (Explorer, Expert e Fellow) e os centros por outros tres (Pathfinder, Showcase e Beacon). Pódese entrar nos niveis iniciais en calquera momento do ano. As entidades Founderz e Letcraft achegarán contidos específicos para España a partir de 2027. A convocatoria dos recoñecementos Microsoft Elevate Expert Educator e Showcase School está aberta desde novembro, e o prazo de candidaturas do profesorado remata o 11 de decembro.",
+        "A información publicada non indica o prezo nin se o acceso é gratuíto, e a páxina oficial tampouco o di. Tampouco consta que datos do profesorado pide a plataforma. As cifras proceden da propia Microsoft: máis de 100 000 docentes na plataforma, 2 014 deles en España, e un 53 % de docentes enquisados que non recibiron formación formal en IA da súa institución, segundo o informe AI in Education Report 2026 da empresa."
+      ],
+      "fuentes": [
+        {"titulo": "Microsoft Elevate for Educators (en castelán)", "url": "https://elevateforeducators.microsoft.com/?lang=es"},
+        {"titulo": "Zonamovilidad: Microsoft lanza en España una plataforma para formar a los docentes en IA (en castelán)", "url": "https://www.zonamovilidad.es/microsoft-lanza-espana-plataforma-formar-docentes-inteligencia-artificial"}
+      ],
+      "mensaje": {"grupo": "chatgpt", "id": 54664},
+      "comprobado": "Leída la noticia de Zonamovilidad (23-11-2026): niveles, plazo del 11 de diciembre (docentes, Expert Educator), Founderz y Letcraft desde 2027, cifras y LinkedIn confirmados. Abierta la página oficial: confirma la comunidad de más de 100.000 docentes y la convocatoria Expert Educator/Showcase School abierta, pero no detalla niveles, plazos ni precio (se dice que no constan). No había piezas anteriores sobre Elevate en el diario.",
+      "ilustracion": "Una escalera de tres peldaños para el profesorado y otra de tres para los centros, que suben hacia una comunidad de docentes.",
+      "ilustracion_alt": "Dúas escaleiras de tres chanzos, unha co rótulo «Profesorado» e outra «Centros», cuxas frechas levan a un grupo de persoas co rótulo «Comunidade docente»."
+    },
+    {
+      "id": "navarra-inspeccion-ia",
+      "seccion": "novedades",
+      "importancia": 2,
+      "grupo": "chatgpt",
+      "antetitulo": "Administración educativa",
+      "titular": "Navarra prevé usar IA na inspección educativa sen precisar que programas nin que datos",
+      "entradilla": "O plan de actuación da inspección para o curso 2026-2027 inclúe a IA como apoio, pero non concreta ferramentas nin garantías sobre os datos, segundo OKDIARIO.",
+      "cuerpo": [
+        "Segundo [OKDIARIO Navarra](https://navarra.okdiario.com/navarra/sociedad/inteligencia-artificial-llega-inspeccion-colegios-navarra-abre-dudas-datos/20261123151101668653.html), o Boletín Oficial de Navarra publicou o luns 23 de novembro de 2026 o Plan Anual de Actuación del Servicio de Inspección Educativa para o curso 2026-2027, aprobado pola Resolución 715/2026, do 6 de novembro. O diario non puido comprobar o texto no boletín oficial.",
+        "O plan prevé usar a IA como apoio para elaborar cuestionarios, comparar normativa, analizar datos e xerar informes. Indica que non substituirá a inspección nin tomará decisións por si soa sobre docentes, alumnado ou centros.",
+        "O que o plan non precisa, segundo o mesmo medio, é que programas se usarán, se serán da Administración ou comerciais, que información poderá introducirse, se os datos se anonimizarán e como se evitará que documentación confidencial pase a servizos externos. O medio chama a atención sobre os datos de menores, a confidencialidade e o risco de erros ao comparar normativa, e considera imprescindible que unha persoa revise os resultados."
+      ],
+      "fuentes": [
+        {"titulo": "OKDIARIO Navarra: La inteligencia artificial llega a la inspección de los colegios de Navarra (en castelán)", "url": "https://navarra.okdiario.com/navarra/sociedad/inteligencia-artificial-llega-inspeccion-colegios-navarra-abre-dudas-datos/20261123151101668653.html"}
+      ],
+      "mensaje": {"grupo": "chatgpt", "id": 54662},
+      "comprobado": "Leída la noticia de OKDIARIO: resolución, fechas, usos y dudas coinciden con el texto. Buscada la Resolución 715/2026 en la web sin encontrarla; todo se atribuye al medio.",
+      "ilustracion": null,
+      "ilustracion_alt": "Un documento cunha lupa co rótulo «Inspección» apunta a unha caixa pechada cun interrogante, co rótulo «IA como apoio» e «Sen precisar», e dela sae unha frecha cara a unha lupa cunha marca de verificación, co rótulo «Revisión humana»."
+    },
+    {
+      "id": "agentes-coste-cuota",
+      "seccion": "multimedia",
+      "importancia": 2,
+      "grupo": "edumedia",
+      "antetitulo": "Conversa no grupo",
+      "titular": "Conectar a IA a Blender ou Unreal esgota moi rápido o límite de uso, segundo EduMedia-IAG",
+      "entradilla": "Segundo se comentou no grupo, conectar asistentes de programación a programas de creación en 3D e vídeo dispara o consumo, aínda que sae máis barato que formarse nesos programas.",
+      "cuerpo": [
+        "En EduMedia-IAG xurdiu o martes 24 unha conversa sobre o rápido que se esgota o límite de uso dos asistentes de programación. Ao conectalos a programas de creación como Blender, Unreal, Magnific ou DaVinci Resolve, segundo se comentou, o consumo dispárase.",
+        "A explicación que se deu é que esas conexións gastan moito porque o axente, o asistente que manexa o outro programa, ten que facer cada paso do traballo, e que convén elixir o modelo con coidado e ser prudente coas peticións. Aínda así, apuntouse que sae máis barato que aprender a fondo un programa complexo: a unha persoa que non sabe usalo e non ten tempo, cústalle en cota o que doutro modo lle custaría en formación.",
+        "Ademais, algunha persoa do grupo xa esgotou a súa cota semanal e debe agardar a que se reinicie. Son comentarios dunha conversa breve, non datos sobre os límites de ningunha empresa, que cambian segundo o plan."
+      ],
+      "fuentes": [
+        {"titulo": "Conversa en EduMedia-IAG (en castelán)", "url": "https://t.me/EduMediaIAG/12421"}
+      ],
+      "mensaje": {"grupo": "edumedia", "id": 12421},
+      "comprobado": "Contrastado con los mensajes #12421-#12439 del grupo. Quitada la «tercera postura» sobre habilidades (el mensaje #12435 es ambiguo) y el planteamiento de debate: era una conversación breve con poco desacuerdo. No se afirma ninguna cifra ni condición de plan. Sin atribuir a personas.",
+      "ilustracion": null,
+      "ilustracion_alt": "Un terminal co rótulo «Axente» conéctase cun cubo co rótulo «Programa 3D» e cunha película co rótulo «Vídeo», que levan a unha batería case baleira co rótulo «Cota esgotada»; debaixo, un libro aberto co rótulo «Formarse custa máis»."
+    }
+  ],
+  "breves": [
+    {
+      "texto": "En EduMedia-IAG compartiuse unha primeira proba de Project Genie, a ferramenta de Google que crea mundos interactivos: custou facerse cos controis. O diario xa publicou un artigo sobre [Genie 4 en Project Genie](pieza:2026-11-19/genie-4-project-genie).",
+      "url": null,
+      "grupo": "edumedia",
+      "mensaje": {"grupo": "edumedia", "id": 12446}
+    },
+    {
+      "texto": "Segundo se explicou no grupo Vibe Coding Educativo, a guía de privacidade que clasifica cun semáforo as ferramentas analizadas polo INTEF (Instituto Nacional de Tecnologías Educativas y de Formación del Profesorado) xa non mostra as aplicacións do repositorio do grupo, porque esa información está agora no propio repositorio. Antecedente: [a guía, publicada como web con buscador](pieza:2026-11-23/guia-privacidad-herramientas-intef).",
+      "url": "https://vibe-coding-educativo.github.io/app_edu/",
+      "grupo": "vce",
+      "mensaje": {"grupo": "vce", "id": 15250}
+    },
+    {
+      "texto": "Gemini xa lle mostra a un usuario a opción para desactivar o uso das súas conversas para adestrar os modelos de Google, segundo unha captura compartida en ChatGPT-IA-edu. Contexto: [o cambio anunciado](pieza:2026-11-19/gemini-historial-entrenamiento).",
+      "url": null,
+      "grupo": "chatgpt",
+      "mensaje": {"grupo": "chatgpt", "id": 54668}
+    },
+    {
+      "texto": "Segundo o cartaz compartido en ChatGPT-IA-edu, o INTEF mantén aberta ata o 27 de novembro a inscrición no NOOC (un curso en liña aberto e moi breve) «IA en las aulas: normativa, riesgos y oportunidades».",
+      "url": "https://formacion.intef.es/abierta/",
+      "grupo": "chatgpt",
+      "mensaje": {"grupo": "chatgpt", "id": 54667}
+    }
+  ]
+}

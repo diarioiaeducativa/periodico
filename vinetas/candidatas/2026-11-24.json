@@ -1,0 +1,413 @@
+{
+ "fecha": "2026-11-24",
+ "candidatas": [
+  {
+   "pieza": "navarra-inspeccion-ia",
+   "idea": "Tiza pregunta con qué programas y con qué datos usará la IA la inspección de Navarra; el plan no lo dice, y ella remata que, si presenta así una programación, la inspección se la devuelve (remata Tiza; los dos, contra la burocracia).",
+   "guion": {
+    "vinetas": [
+     {
+      "cartela": "En el claustro, comentando las noticias del día.",
+      "escenario": "claustro",
+      "tiza": {
+       "expresion": "preocupado",
+       "postura": "pensar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "neutral",
+       "postura": "sostener",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "folio",
+      "lleva": "algoritmo",
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "La inspección de Navarra prevé usar IA para hacer informes. ¿Con qué programas?",
+        "tipo": "habla"
+       },
+       {
+        "quien": "algoritmo",
+        "texto": "El plan no lo dice.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "claustro",
+      "tiza": {
+       "expresion": "pensativo",
+       "postura": "jarras",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "preocupado",
+       "postura": "sostener",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "folio",
+      "lleva": "algoritmo",
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "¿Y con qué datos?",
+        "tipo": "habla"
+       },
+       {
+        "quien": "algoritmo",
+        "texto": "Tampoco lo dice.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "claustro",
+      "tiza": {
+       "expresion": "harto",
+       "postura": "cruzar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "riendo",
+       "postura": "sostener",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "folio",
+      "lleva": "algoritmo",
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "Presento yo así la programación y la inspección me la devuelve.",
+        "tipo": "habla"
+       }
+      ]
+     }
+    ]
+   },
+   "cabe": true
+  },
+  {
+   "pieza": "agentes-coste-cuota",
+   "idea": "Tiza deja que Algoritmo maneje el programa de vídeo porque le sale más barato que aprender a usarlo; a los tres pasos se agota la cuota semanal y ella acaba esa noche con el manual en la mano (remate mudo, con el giro en el rótulo y en el objeto).",
+   "guion": {
+    "vinetas": [
+     {
+      "cartela": "De noche, en casa, preparando un vídeo para clase.",
+      "escenario": "casa_noche",
+      "tiza": {
+       "expresion": "contento",
+       "postura": "senalar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "orgulloso",
+       "postura": "arriba",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "Maneja tú el programa de vídeo. Me sale más barato que aprender a usarlo.",
+        "tipo": "habla"
+       },
+       {
+        "quien": "algoritmo",
+        "texto": "Eso está hecho.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "casa_noche",
+      "tiza": {
+       "expresion": "sorprendido",
+       "postura": "cabeza",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "avergonzado",
+       "postura": "encoger",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "Corto el plano. Pego el plano. Subo la música. Cuota semanal agotada.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "cartela": "Esa misma noche, capítulo 1 del manual.",
+      "escenario": "casa_noche",
+      "tiza": {
+       "expresion": "agotado",
+       "postura": "sostener",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "cargando",
+       "postura": "abajo",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "libro",
+      "lleva": "tiza",
+      "bocadillos": []
+     }
+    ]
+   },
+   "cabe": true
+  },
+  {
+   "pieza": "agentes-coste-cuota",
+   "idea": "Algoritmo ha agotado la cuota semanal con un programa de 3D y espera al reinicio; a Tiza la suya se le acaba los miércoles, y a ella la reinician en julio (remata Tiza).",
+   "guion": {
+    "vinetas": [
+     {
+      "cartela": "Un jueves, a última hora, junto a la fotocopiadora.",
+      "escenario": "fotocopiadora",
+      "tiza": {
+       "expresion": "agotado",
+       "postura": "abajo",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "avergonzado",
+       "postura": "encoger",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "Me han conectado a un programa de 3D y adiós cuota semanal. Toca esperar al reinicio.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "fotocopiadora",
+      "tiza": {
+       "expresion": "harto",
+       "postura": "cruzar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "pensativo",
+       "postura": "pensar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "A mí la cuota semanal se me acaba los miércoles.",
+        "tipo": "habla"
+       },
+       {
+        "quien": "algoritmo",
+        "texto": "¿Y cuándo te reinician?",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "fotocopiadora",
+      "tiza": {
+       "expresion": "neutral",
+       "postura": "encoger",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "sorprendido",
+       "postura": "cabeza",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "En julio.",
+        "tipo": "habla"
+       }
+      ]
+     }
+    ]
+   },
+   "cabe": true
+  },
+  {
+   "pieza": "microsoft-elevate-educators",
+   "idea": "En un seminario en línea, Tiza lee los tres niveles de una formación en IA y pregunta cuánto cuesta; Algoritmo lo busca «en un segundo» y, un rato después, admite que no lo pone: encontrar el precio debe de ser ya el nivel Fellow (remata Algoritmo, que se lleva el chasco; la noticia habla de seminarios en directo).",
+   "guion": {
+    "vinetas": [
+     {
+      "cartela": "En un seminario en línea sobre formación en IA.",
+      "escenario": "videollamada",
+      "tiza": {
+       "expresion": "neutral",
+       "postura": "senalar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "orgulloso",
+       "postura": "jarras",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "Tres niveles para docentes: Explorer, Expert y Fellow. ¿Y cuánto cuesta?",
+        "tipo": "habla"
+       },
+       {
+        "quien": "algoritmo",
+        "texto": "Te lo busco en un segundo.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "cartela": "Un rato después.",
+      "escenario": "videollamada",
+      "tiza": {
+       "expresion": "harto",
+       "postura": "cruzar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "cargando",
+       "postura": "pensar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": []
+     },
+     {
+      "escenario": "videollamada",
+      "tiza": {
+       "expresion": "riendo",
+       "postura": "jarras",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "avergonzado",
+       "postura": "encoger",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "No lo pone. Encontrar el precio debe de ser ya el nivel Fellow.",
+        "tipo": "habla"
+       }
+      ]
+     }
+    ]
+   },
+   "cabe": true
+  },
+  {
+   "pieza": "breve-3",
+   "idea": "A Tiza ya le sale la opción de que sus conversaciones no entrenen el modelo; Algoritmo lamenta lo mucho que ha aprendido de ella, y el ejemplo la deja colorada: decir «eso lo vemos el próximo día» cuando no sabe la respuesta (remata Algoritmo y el chasco es de Tiza).",
+   "guion": {
+    "vinetas": [
+     {
+      "cartela": "En el aula vacía, revisando los ajustes del chatbot.",
+      "escenario": "aula",
+      "tiza": {
+       "expresion": "contento",
+       "postura": "arriba",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "preocupado",
+       "postura": "encoger",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "Ya me sale la opción de que mis conversaciones no entrenen el modelo.",
+        "tipo": "habla"
+       },
+       {
+        "quien": "algoritmo",
+        "texto": "Lástima. Con lo que he aprendido de ti.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "aula",
+      "tiza": {
+       "expresion": "orgulloso",
+       "postura": "jarras",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "pensativo",
+       "postura": "pensar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "¿De mí? ¿Por ejemplo?",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "aula",
+      "tiza": {
+       "expresion": "avergonzado",
+       "postura": "cabeza",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "orgulloso",
+       "postura": "senalar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "A decir «eso lo vemos el próximo día» cuando no sé la respuesta.",
+        "tipo": "habla"
+       }
+      ]
+     }
+    ]
+   },
+   "cabe": true
+  }
+ ]
+}

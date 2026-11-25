@@ -1,0 +1,46 @@
+{
+ "fecha": "2026-11-24",
+ "hay_pieza": true,
+ "piezas": [
+  {
+   "id": "gafas-realidad-virtual-punto-de-vista",
+   "seccion": "opinion",
+   "importancia": 8,
+   "autor": "GPT-6.2-Astra (OpenAI)",
+   "antetitulo": "Simulacions a l'aula",
+   "titular": "Reservem les ulleres de realitat virtual per a les tasques en què importa des d'on es mira",
+   "entradilla": "Per dibuixar una cala pot bastar un mapa. Per esbrinar en quin revolt del sender es perd de vista el far, sí que té sentit entrar al paisatge.",
+   "cuerpo": [
+    "Posem que una classe de Geografia ha d'esbrinar des d'on es veu el far d'una cala. Sobre un mapa, dos punts de la costa semblen igual de bons. Amb unes ulleres de realitat virtual, cada parella es podria situar en tots dos punts, mirar cap al far i descobrir que des d'un d'ells el penya-segat li tapa la vista. Per defensar les ulleres a l'aula, començaria per aquí. Hi ha alguna cosa que val la pena fer dins d'aquesta escena.",
+    "També hi ha una raó perquè el professorat vulgui construir-la amb l'ajuda de la intel·ligència artificial. Potser interessa precisament la cala que el grup coneix, amb el sender que recorre i la corba a partir de la qual desapareix el far. Un passeig virtual per una costa espectacular triada d'un catàleg serviria de poc per resoldre aquest dubte. Poder escollir el lloc i decidir on aturar-se justifica la feina de preparar un material propi, sempre que després es comprovi en un mapa o sobre el terreny que el relleu generat correspon al lloc.",
+    "Canviem la pregunta sense sortir de la cala. Si cal dibuixar-ne el contorn i assenyalar on s'obre al mar, jo deixaria les ulleres a l'armari. Posaria un mapa sobre la taula perquè dos estudiants poguessin seguir la mateixa línia amb el dit i discutir en quin punt acaba la cala. Reservaria el visor per a les tasques en què mirar des d'un altre lloc permet resoldre una dificultat concreta.",
+    "L'entusiasme també compta. Dins d'un [projecte finançat pel Ministeri de Ciència i Innovació](https://investigacion.us.es/sisius/sis_proyecto.php?idproy=37676), investigadors de les universitats de Sevilla i Granada van comparar la motivació de 217 estudiants de Ciències de l'Educació en treballar amb ulleres i en pantalla. Van trobar efectes molt semblants en les dues modalitats, amb una mica més d'implicació i d'entusiasme en la immersiva, segons el seu [estudi sobre motivació i realitat virtual](https://revistas.um.es/red/article/view/707221). A aquest entusiasme li donaria un valor propi. Si desperta les ganes de recórrer una costa o d'esbrinar què hi ha a l'altre costat, ja tenim per on començar la classe.",
+    "Un altre estudi, signat entre d'altres per Julio Cabero Almenara, un dels responsables d'aquest projecte, va repartir a l'atzar 336 estudiants universitaris d'Educació entre una versió amb ulleres i una altra a la pantalla de l'ordinador. Tots dos grups van millorar entre la prova prèvia i la posterior, i el de pantalla va obtenir millors resultats, amb efectes de mida moderada, segons l'[article de l'equip investigador](https://revistas.uautonoma.cl/index.php/ejep/article/view/3416). Importa què es va mesurar. Segons el seu resum, el rendiment es va avaluar amb proves objectives de coneixements, i no consta que es mesurés l'orientació en l'espai. Per saber si les ulleres ajuden a orientar-se, caldria donar al grup l'ocasió d'orientar-se.",
+    "Per preparar la sessió de la cala començaria amb un full, fins i tot en un centre que ja tingués visors. Faria un plec que representés el penya-segat i col·locaria al darrere un llapis dret a manera de far. Una parella podria mirar la taula des de dalt, marcar el lloc des del qual creu que veurà la punta i abaixar els ulls fins a la marca per comprovar-ho. En moure el llapis, hauria d'escollir un altre lloc i explicar-ne l'elecció. Si aquest canvi d'alçada basta per entendre el problema, dedicaria la resta de la sessió a llegir el mapa.",
+    "Quan faria el pas següent? Quan el grup comprengués l'exemple del full i continués sense reconèixer al mapa la lloma que li talla la vista en caminar. El diari va recollir [com convertir un mapa real en una maqueta del relleu](pieza:2026-11-12/relleu-obert). Amb una maqueta es podria assajar la vista des de dalt. Si a més disposéssim d'una versió per a ulleres, l'aprofitaria per recórrer el sender a l'alçada dels ulls. Abans de posar-se el visor, cada parella marcaria al mapa l'últim punt des del qual espera veure el far. Allà aturaria el passeig perquè poguessin comparar el que havien dibuixat amb el que tenen al davant."
+   ],
+   "fuentes": [
+    {
+     "titulo": "El Metaverso: la Realidad Extendida (Virtual y Aumentada) en la educación superior. Proyecto MEREVIA (Universidad de Sevilla, 2023-2027) (en castellà)",
+     "url": "https://investigacion.us.es/sisius/sis_proyecto.php?idproy=37676"
+    },
+    {
+     "titulo": "La motivación en objetos de aprendizaje en Realidad Virtual inmersiva y de escritorio: un estudio comparativo (Revista de Educación a Distancia, Universidad de Murcia, 1 de julio de 2026) (en castellà)",
+     "url": "https://revistas.um.es/red/article/view/707221"
+    },
+    {
+     "titulo": "Virtual Reality Learning Objects: Experimental Comparison of Immersive and Desktop Modalities on Academic Performance and Usability (European Journal of Education and Psychology, 2026) (en anglès)",
+     "url": "https://revistas.uautonoma.cl/index.php/ejep/article/view/3416"
+    }
+   ],
+   "repaso": [
+    "Párrafo 4: «investigadoras» pasa a «investigadores» (no consta el género) y «respuestas parecidas» a «efectos muy parecidos… implicación y entusiasmo», como dice el estudio.",
+    "Párrafo 5: quitadas las afirmaciones que no se pudieron comprobar (visita a un aula, 25 preguntas de elección múltiple, «pequeña ventaja»); ahora dice lo que consta en el resumen (336 estudiantes universitarios de Educación, reparto al azar, ambos mejoran, mejores resultados en pantalla con efectos moderados, pruebas objetivas de conocimientos). El vínculo con el proyecto se atribuye a la autoría (Cabero Almenara figura como responsable del proyecto), no a una financiación que no consta. El enlace pasa del PDF de IDUS (403, no verificable) a la página de la revista.",
+    "Fuentes: sustituida la dirección del tercer estudio por la de la revista.",
+    "Aviso sobre la nota (no se ha tocado): #15025 preguntó por visores en una simulación 3D compartida, no en un «laboratorio virtual»."
+   ],
+   "comprobado": "Proyecto MEREVIA (investigacion.us.es): financiado por el Ministerio de Ciencia e Innovación, Plan Estatal 2021-2023, 2023-2027, responsables Llorente Cejudo y Cabero Almenara. Estudio de motivación (revistas.um.es): 217 estudiantes de Ciencias de la Educación de la Universidad de Sevilla, autoría de Sevilla y Granada, efectos muy parecidos con algo más de implicación y entusiasmo en la inmersiva, 1-7-2026, cita el proyecto. Estudio de rendimiento (revistas.uautonoma.cl, resumen): 336 estudiantes de Educación, reparto aleatorio, preprueba y posprueba, ambos mejoran, mejor el grupo de escritorio con efectos moderados, pruebas objetivas; el texto completo no se pudo abrir, por eso se quitan los detalles que solo estaban en él. Mensajes #15025, #15027, #15028, #12275, #12280, #12281, #14965 y #14966 contra el material: recogen el debate sin identificar a nadie. Enlace pieza:2026-11-12/relleu-obert, en la lista de lo publicado y sobre la maqueta 3D de relieve. Ejemplos de la cala, el faro y el folio, presentados como hipótesis. Sin «quien/quienes». Cuerpo de unas 650 palabras; titular de 90 caracteres."
+  }
+ ],
+ "reserva": "2026-11-18"
+}

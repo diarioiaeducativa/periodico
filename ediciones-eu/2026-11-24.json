@@ -1,0 +1,97 @@
+{
+  "fecha": "2026-11-24",
+  "hay_edicion": true,
+  "motivo": "",
+  "piezas": [
+    {
+      "id": "microsoft-elevate-educators",
+      "seccion": "novedades",
+      "importancia": 1,
+      "grupo": "chatgpt",
+      "antetitulo": "Irakasleen prestakuntza AAn",
+      "titular": "Microsoftek Espainiara ekarri du Elevate for Educators, irakasleentzako AA prestakuntza",
+      "entradilla": "Plataformak ikastaroak, zuzeneko mintegiak eta irakasleen komunitate bat biltzen ditu, irakasleentzako hiru aitortza-mailarekin eta ikastetxeentzako beste hiruarekin.",
+      "cuerpo": [
+        "Microsoftek [Elevate for Educators](https://elevateforeducators.microsoft.com/?lang=es) Espainiara iritsi dela jakinarazi du, irakasleei eta ikastetxeei zuzendutako adimen artifizialaren (AA) prestakuntza-plataforma bat, sarean. Microsoft Elevate programaren barruan dago, enpresak AArako sarbidea eta gaitasun digitalak zabaldu nahi dituela dioen programan, hain zuzen. [Zonamovilidad](https://www.zonamovilidad.es/microsoft-lanza-espana-plataforma-formar-docentes-inteligencia-artificial)-en informazioaren arabera, plataformak baliabide eta tresna praktikoak, ikastaroak, zuzeneko webinarrak, laguntza-zentro bat eta irakasleen nazioarteko komunitate bat eskaintzen ditu, Espainiako irakasleentzako LinkedIn talde espezifiko batekin.",
+        "Irakasleek hiru mailatan egiten dute aurrera (Explorer, Expert eta Fellow) eta ikastetxeek beste hiruretan (Pathfinder, Showcase eta Beacon). Hasierako mailetan urteko edozein unetan sar daiteke. Founderz eta Letcraft erakundeek Espainiarako eduki espezifikoak ekarriko dituzte 2027tik aurrera. Microsoft Elevate Expert Educator eta Showcase School aitortzen deialdia azaroaz geroztik dago irekita, eta irakasleen hautagaitzen epea abenduaren 11n amaitzen da.",
+        "Argitaratutako informazioak ez du prezioa adierazten, ezta sarbidea doakoa den ere, eta webgune ofizialak ere ez du esaten. Ez dago jakiterik, gainera, plataformak irakasleen zer datu eskatzen dituen. Zifrak Microsofterenak berarenak dira: 100 000 irakasle baino gehiago plataforman, horietatik 2 014 Espainian, eta inkestatutako irakasleen % 53k ez du bere erakundearen AA prestakuntza formalik jaso, enpresaren AI in Education Report 2026 txostenaren arabera."
+      ],
+      "fuentes": [
+        {"titulo": "Microsoft Elevate for Educators (gaztelaniaz)", "url": "https://elevateforeducators.microsoft.com/?lang=es"},
+        {"titulo": "Zonamovilidad: Microsoft lanza en España una plataforma para formar a los docentes en IA (gaztelaniaz)", "url": "https://www.zonamovilidad.es/microsoft-lanza-espana-plataforma-formar-docentes-inteligencia-artificial"}
+      ],
+      "mensaje": {"grupo": "chatgpt", "id": 54664},
+      "comprobado": "Leída la noticia de Zonamovilidad (23-11-2026): niveles, plazo del 11 de diciembre (docentes, Expert Educator), Founderz y Letcraft desde 2027, cifras y LinkedIn confirmados. Abierta la página oficial: confirma la comunidad de más de 100.000 docentes y la convocatoria Expert Educator/Showcase School abierta, pero no detalla niveles, plazos ni precio (se dice que no constan). No había piezas anteriores sobre Elevate en el diario.",
+      "ilustracion": "Una escalera de tres peldaños para el profesorado y otra de tres para los centros, que suben hacia una comunidad de docentes.",
+      "ilustracion_alt": "Hiru mailako bi eskailera, bata «Irakasleak» etiketarekin eta bestea «Ikastetxeak» etiketarekin, eta haien geziek «Irakasleen komunitatea» etiketadun pertsona-talde batera eramaten dute."
+    },
+    {
+      "id": "navarra-inspeccion-ia",
+      "seccion": "novedades",
+      "importancia": 2,
+      "grupo": "chatgpt",
+      "antetitulo": "Hezkuntza-administrazioa",
+      "titular": "Nafarroak AA erabiltzea aurreikusi du hezkuntza-ikuskaritzan, zein programa eta zein datu zehaztu gabe",
+      "entradilla": "Ikuskaritzaren 2026-2027 ikasturterako jarduketa-planak AA laguntza gisa jasotzen du, baina ez ditu tresnak ezta datuen bermeak ere zehazten, OKDIARIOren arabera.",
+      "cuerpo": [
+        "[OKDIARIO Navarra](https://navarra.okdiario.com/navarra/sociedad/inteligencia-artificial-llega-inspeccion-colegios-navarra-abre-dudas-datos/20261123151101668653.html)ren arabera, Nafarroako Aldizkari Ofizialak 2026ko azaroaren 23an, astelehenean, argitaratu zuen Hezkuntza Ikuskaritza Zerbitzuaren 2026-2027 ikasturterako Urteko Jarduketa Plana, azaroaren 6ko 715/2026 Ebazpenaren bidez onartua. Egunkariak ez du aldizkari ofizialeko testua egiaztatu ahal izan.",
+        "Planak AA laguntza gisa erabiltzea aurreikusten du galdetegiak prestatzeko, araudia alderatzeko, datuak aztertzeko eta txostenak sortzeko. Adierazten du ez duela ikuskaritzaren ordez jardungo, ezta irakasleei, ikasleei edo ikastetxeei buruzko erabakirik hartuko bere kabuz ere.",
+        "Planak zehazten ez duena, hedabide beraren arabera, hauxe da: zein programa erabiliko diren, Administrazioarenak ala merkataritzakoak izango diren, zer informazio sartu ahal izango den, datuak anonimizatuko ote diren eta nola saihestuko den dokumentazio konfidentziala kanpoko zerbitzuetara pasatzea. Hedabideak adingabeen datuei, konfidentzialtasunari eta araudia alderatzean akatsak izateko arriskuari erreparatzen die, eta ezinbestekotzat jotzen du pertsona batek emaitzak berrikustea."
+      ],
+      "fuentes": [
+        {"titulo": "OKDIARIO Navarra: La inteligencia artificial llega a la inspección de los colegios de Navarra (gaztelaniaz)", "url": "https://navarra.okdiario.com/navarra/sociedad/inteligencia-artificial-llega-inspeccion-colegios-navarra-abre-dudas-datos/20261123151101668653.html"}
+      ],
+      "mensaje": {"grupo": "chatgpt", "id": 54662},
+      "comprobado": "Leída la noticia de OKDIARIO: resolución, fechas, usos y dudas coinciden con el texto. Buscada la Resolución 715/2026 en la web sin encontrarla; todo se atribuye al medio.",
+      "ilustracion": null,
+      "ilustracion_alt": "Lupa duen dokumentu batek, «Ikuskaritza» etiketarekin, kutxa itxi bat seinalatzen du; kutxak galdera-ikurra du eta «AA laguntza gisa» eta «Zehaztu gabe» etiketak ditu. Kutxatik gezi bat dator egiaztapen-marka duen lupa batera, «Giza berrikuspena» etiketarekin."
+    },
+    {
+      "id": "agentes-coste-cuota",
+      "seccion": "multimedia",
+      "importancia": 2,
+      "grupo": "edumedia",
+      "antetitulo": "Taldeko elkarrizketa",
+      "titular": "AA Blender edo Unrealekin lotzeak erabilera-muga oso azkar agortzen du, EduMedia-IAGen arabera",
+      "entradilla": "Taldean komentatu zenez, programazio-laguntzaileak 3D eta bideo sorkuntza-programekin lotzeak kontsumoa areagotzen du, nahiz eta programa horiek ikasteak baino merkeago irteten den.",
+      "cuerpo": [
+        "EduMedia-IAGen, asteartean 24an, elkarrizketa bat sortu zen programazio-laguntzaileen erabilera-muga zein azkar agortzen den jakiteko. Blender, Unreal, Magnific edo DaVinci Resolve bezalako sorkuntza-programekin lotzen direnean, komentatu zenez, kontsumoa izugarri hazten da.",
+        "Emandako azalpena zen konexio horiek asko gastatzen dutela, agenteak, beste programa kudeatzen duen laguntzaileak, lanaren urrats bakoitza egin behar duelako, eta eredua kontuz aukeratzea eta eskaerekin zuhurra izatea komeni dela. Hala ere, adierazi zen programa konplexu bat sakon ikastea baino merkeago irteten dela: erabiltzen ez dakien eta denborarik ez duen pertsona batentzat, bestela prestakuntzan kostatuko litzaiokeena kuotan kostatzen zaio.",
+        "Gainera, taldeko norbaitek jada agortu du asteko kuota eta berrabiarazi arte itxaron behar du. Elkarrizketa labur bateko iruzkinak dira, ez inolako enpresaren mugei buruzko datuak, planaren arabera aldatzen baitira."
+      ],
+      "fuentes": [
+        {"titulo": "Conversación en EduMedia-IAG (gaztelaniaz)", "url": "https://t.me/EduMediaIAG/12421"}
+      ],
+      "mensaje": {"grupo": "edumedia", "id": 12421},
+      "comprobado": "Contrastado con los mensajes #12421-#12439 del grupo. Quitada la «tercera postura» sobre habilidades (el mensaje #12435 es ambiguo) y el planteamiento de debate: era una conversación breve con poco desacuerdo. No se afirma ninguna cifra ni condición de plan. Sin atribuir a personas.",
+      "ilustracion": null,
+      "ilustracion_alt": "«Agentea» etiketadun terminal bat «3D programa» etiketadun kubo batekin eta «Bideoa» etiketadun film batekin lotzen da, eta biek «Kuota agortuta» etiketadun ia hutsik dagoen bateria batera eramaten dute; azpian, liburu irekia, «Ikastea garestiagoa da» etiketarekin."
+    }
+  ],
+  "breves": [
+    {
+      "texto": "EduMedia-IAGen Project Genie-ren lehen proba bat partekatu da, Googleren mundu interaktiboak sortzen dituen tresnarena: kontrolak menderatzea kostatu zen. Egunkariak jada argitaratu zuen [Genie 4 Project Genie-n](pieza:2026-11-19/genie-4-project-genie) artikulu bat.",
+      "url": null,
+      "grupo": "edumedia",
+      "mensaje": {"grupo": "edumedia", "id": 12446}
+    },
+    {
+      "texto": "Vibe Coding Educativo taldean azaldu zenez, INTEFek (Irakasleen Prestakuntzarako eta Teknologia Hezitzaileetarako Institutu Nazionala) aztertutako tresnak semaforo batekin sailkatzen dituen pribatutasun-gidak ez ditu jada erakusten taldearen biltegiko aplikazioak, informazio hori orain biltegian bertan dagoelako. Aurrekaria: [gida, bilatzaileduna den web gisa argitaratua](pieza:2026-11-23/guia-privacidad-herramientas-intef).",
+      "url": "https://vibe-coding-educativo.github.io/app_edu/",
+      "grupo": "vce",
+      "mensaje": {"grupo": "vce", "id": 15250}
+    },
+    {
+      "texto": "Geminik erabiltzaile bati erakusten dio jada bere elkarrizketak Googleren ereduak entrenatzeko erabiltzea desaktibatzeko aukera, ChatGPT-IA-edu taldean partekatutako pantaila-argazki baten arabera. Testuingurua: [iragarritako aldaketa](pieza:2026-11-19/gemini-historial-entrenamiento).",
+      "url": null,
+      "grupo": "chatgpt",
+      "mensaje": {"grupo": "chatgpt", "id": 54668}
+    },
+    {
+      "texto": "ChatGPT-IA-edu taldean partekatutako kartelaren arabera, INTEFek azaroaren 27ra arte irekita dauka NOOCaren (lineako ikastaro ireki eta oso laburra) «IA en las aulas: normativa, riesgos y oportunidades» izeneko izen-ematea.",
+      "url": "https://formacion.intef.es/abierta/",
+      "grupo": "chatgpt",
+      "mensaje": {"grupo": "chatgpt", "id": 54667}
+    }
+  ]
+}

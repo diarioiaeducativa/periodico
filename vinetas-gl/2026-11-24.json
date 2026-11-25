@@ -1,0 +1,85 @@
+{
+ "fecha": "2026-11-24",
+ "elegida": {
+  "n": 3,
+  "pieza": "agentes-coste-cuota",
+  "idea": "Algoritmo esgotou a cota semanal cun programa de 3D e agarda o reinicio; a Xiz acábaselle a súa os mércores, e a ela reinícianlla en xullo (remata Xiz con dúas palabras; o chasco lévao Algoritmo, coas mans na cabeza).",
+  "guion": {
+   "vinetas": [
+    {
+     "cartela": "Xoves, na fotocopiadora, dándolle voltas á cota.",
+     "escenario": "fotocopiadora",
+     "tiza": {
+      "expresion": "agotado",
+      "postura": "abajo",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "agotado",
+      "postura": "abajo",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "algoritmo",
+       "texto": "Conectáronme a un programa de 3D e adeus á cota semanal. Toca agardar o reinicio.",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "fotocopiadora",
+     "tiza": {
+      "expresion": "harto",
+      "postura": "cruzar",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "pensativo",
+      "postura": "pensar",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "A min a cota acábaseme os mércores.",
+       "tipo": "habla"
+      },
+      {
+       "quien": "algoritmo",
+       "texto": "E ti, cando te reinician?",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "fotocopiadora",
+     "tiza": {
+      "expresion": "agotado",
+      "postura": "encoger",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "sorprendido",
+      "postura": "cabeza",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "En xullo.",
+       "tipo": "habla"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "traduccion": "automática con IA"
+}

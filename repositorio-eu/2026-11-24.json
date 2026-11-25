@@ -1,0 +1,47 @@
+{
+  "fecha": "2026-11-24",
+  "piezas": [
+    {
+      "id": "gestor-personal-de-gastos-mensuales",
+      "seccion": "vibecoding",
+      "repositorio": "fondo",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Biltegiaren fondotik",
+      "titular": "«Mis Gastos»-ek gastuak kategoriaka jasotzen ditu eta grafikoetan erakusten ditu; Historian erabiltzen da",
+      "entradilla": "Luis Villanueva Aizcorbek «Mis Gastos» sortu du, gastuak kategoriaka jasotzeko eta eguneko, hilabeteko eta urteko guztizkoak ikusteko gaztelaniazko web-aplikazioa. Egilearen arabera, Historia-klaseetan erabiltzen du.",
+      "cuerpo": [
+        "«Gestor personal de gastos mensuales» Luis Villanueva Aizcorbek Claudekin sortutako web-aplikazioa da. Nabigatzailean irekitzen da, ezer instalatu gabe, eta pantailan «Mis Gastos» izenburuarekin eta «Controla tu dinero y vivirás mejor» leloarekin agertzen da. Goiko aldean lau guztizko erakusten ditu eurotan: egun horretakoa, hilabetekoa, aurreko hilabetekoa eta uneko urtekoa.",
+        "Gastu bat jasotzeko, data, kategoria, zenbatekoa eta deskribapena aukeratzen dira, eta «Añadir» sakatzen da. Kategorien zerrenda benetako etxeko ekonomia batena da: elikadura, hipoteka, aseguruak, elektrizitatea, telefonia, gasolina, aisia, ikastetxeko gastuak, seme-alabentzako diru-poltsikoa, sendagaiak eta beste batzuk. Azpian, uneko hilabeteko gastuaren laburpena dago kategoriaka, hilabeteka sailkatutako gastu osoaren historikoa eta bi grafiko: hilabeteko gastu osoa eta uneko hilabeteko gastua kategoriaka. Orriak ilargi bat duen botoi bat ere badu, eta beste bat, «Restablecer». Interfazea gaztelaniaz soilik dago.",
+        "Egileak ematen dion erabilera da gainerako irakasleentzat baliagarriena. Vibe Coding Educativon egindako aurkezpenean kontatzen duenez, Historiako ikasleekin erabiltzen du: ikasle bakoitzak etxean galdetzen du familia batek zenbat gastatzen duen eta jaso egiten du, eta gero errealitate hori 29ko krakarekin eta Industria Iraultzan ingeles familia batek zuenarekin alderatzen dute. Azaltzen duenez, ez du inoren daturik begiratzen, informazio pribatua ez ikusteko. Ekonomian edo Ekintzailetzan ere balio dezakeela uste du, eta ikasleen zati bati gustatu egiten zaiola eta bere erregistro propiorako erabiltzen duela dio.",
+        "Biltegiaren fitxak Batxilergoan, Lanbide Heziketan, Unibertsitatean eta helduen prestakuntzan kokatzen du, eta pentsamendu logiko-matematikoarekin eta gizarte- eta herritartasun-zientziekin lotzen du. Orriak ez du esaten datuak non gordetzen diren, kontua behar den ala ez, ezta beste xedeetarako erabiltzen diren ere; beraz, komeni da taldearekin erabili aurretik probatzea eta familien benetako daturik ez eskatzea, ziurtasunik ez badago. Creative Commons BY-SA lizentziarekin argitaratzen da."
+      ],
+      "recursos": [
+        {
+          "id": "gestor-personal-de-gastos-mensuales",
+          "titulo": "Gestor Personal de Gastos Mensuales",
+          "autoria": "Luis Villanueva Aizcorbe",
+          "url": "https://misgastosmensuales.netlify.app/",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://misgastosmensuales.netlify.app/",
+          "licencia": "Creative Commons BY-SA (Aitortu-PartekatuBerdin)",
+          "captura": "2026-11-24-gestor-personal-de-gastos-mensuales.jpg",
+          "captura_alt": "«Mis Gastos» aplikazioa: goiburu urdin eta berdea, «Controla tu dinero y vivirás mejor» leloarekin, zero euroko lau guztizko eta formularioa data, kategoria, zenbateko eta deskribapen eremuekin.",
+          "texto": []
+        }
+      ],
+      "fuentes": [
+        {"titulo": "Mis Gastos, aplikazioa (gaztelaniaz)", "url": "https://misgastosmensuales.netlify.app/"},
+        {"titulo": "Vibe Coding Educativoko aurkezpena (gaztelaniaz)", "url": "https://t.me/vceduca/4424"}
+      ],
+      "comprobado": "Captura y texto visible de la página (cuatro totales, formulario con categorías, resumen, histórico y dos gráficas, botón con luna y «Restablecer») y WebFetch, que confirma lo mismo y no dice dónde se guardan los datos ni si hay cuenta. Autoría, licencia, ficha y captura cotejadas con la entrada. El uso en clase de Historia es lo que cuenta su autor en el mensaje de presentación."
+    }
+  ],
+  "descartado": [],
+  "repaso": [
+    "Titular acortado (superaba 90 caracteres) y sin dar como hecho el uso en Economía o Emprendimiento, que es solo sugerencia del autor.",
+    "Entradilla: el uso en Historia, atribuido al autor.",
+    "Quitado que «Restablecer» sirve para empezar de cero y que la luna es modo oscuro: la página no lo dice; descrito solo lo que se ve.",
+    "Añadido que no consta si se usan los datos para otros fines y la cautela de no pedir datos reales de las familias.",
+    "Eliminado «Lo más interesante» (valoración)."
+  ]
+}

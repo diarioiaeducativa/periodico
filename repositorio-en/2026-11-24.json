@@ -1,0 +1,47 @@
+{
+  "fecha": "2026-11-24",
+  "piezas": [
+    {
+      "id": "gestor-personal-de-gastos-mensuales",
+      "seccion": "vibecoding",
+      "repositorio": "fondo",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "From the repository's back catalogue",
+      "titular": "Mis Gastos logs spending by category and charts it; it is used in History",
+      "entradilla": "Luis Villanueva Aizcorbe created “Mis Gastos”, a Spanish-language web app for logging expenses by category and viewing daily, monthly and yearly totals. According to its author, he uses it in his History classes.",
+      "cuerpo": [
+        "“Gestor personal de gastos mensuales” (personal monthly expenses manager) is a web app created by Luis Villanueva Aizcorbe with Claude. It opens in the browser, with nothing to install, and appears on screen with the title “Mis Gastos” (my expenses) and the motto “Controla tu dinero y vivirás mejor” (control your money and you will live better). At the top it shows four totals in euros: the current day's, this month's, last month's and the current year's.",
+        "To log an expense, you choose the date, a category, the amount and a description, and press “Añadir” (add). The list of categories is that of a real household budget: food, mortgage, insurance, electricity, telephone, petrol, leisure, school costs, children's pocket money, medicines and others. Below are a summary of spending by category for the current month, a history of total spending by month and two charts: total spending by month and spending by category for the current month. The page also has a button with a moon and another, “Restablecer” (reset). The interface is in Spanish only.",
+        "The use its author makes of it is the most helpful part for other teachers. According to his presentation in Vibe Coding Educativo, he uses it with his History students so that each one asks at home how much a family spends and logs it, and then compares that reality with the Wall Street crash of 1929 and with an English family during the Industrial Revolution. He explains that he does not look at anyone's data, so as not to see private information. He also thinks it could be useful in Economics or Entrepreneurship, and says that some students like it and use it for their own records.",
+        "The repository entry places it in Bachillerato (the final two years of secondary school, ages 16 to 18), vocational training, university and adult education, and links it with logical-mathematical thinking and the social and civic sciences. The page does not say where the data is stored, whether an account is needed or whether the data is used for other purposes, so it is best to try it out with the group first and not ask for real family data unless you are sure. It is published under a Creative Commons BY-SA licence."
+      ],
+      "recursos": [
+        {
+          "id": "gestor-personal-de-gastos-mensuales",
+          "titulo": "Gestor Personal de Gastos Mensuales",
+          "autoria": "Luis Villanueva Aizcorbe",
+          "url": "https://misgastosmensuales.netlify.app/",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://misgastosmensuales.netlify.app/",
+          "licencia": "Creative Commons BY-SA (Attribution-ShareAlike)",
+          "captura": "2026-11-24-gestor-personal-de-gastos-mensuales.jpg",
+          "captura_alt": "The “Mis Gastos” app: a blue and green header with the motto “Controla tu dinero y vivirás mejor”, four totals at zero euros and the form with date, category, amount and description.",
+          "texto": []
+        }
+      ],
+      "fuentes": [
+        {"titulo": "Mis Gastos, the app (in Spanish)", "url": "https://misgastosmensuales.netlify.app/"},
+        {"titulo": "Presentation in Vibe Coding Educativo (in Spanish)", "url": "https://t.me/vceduca/4424"}
+      ],
+      "comprobado": "Captura y texto visible de la página (cuatro totales, formulario con categorías, resumen, histórico y dos gráficas, botón con luna y “Restablecer”) y WebFetch, que confirma lo mismo y no dice dónde se guardan los datos ni si hay cuenta. Autoría, licencia, ficha y captura cotejadas con la entrada. El uso en clase de Historia es lo que cuenta su autor en el mensaje de presentación."
+    }
+  ],
+  "descartado": [],
+  "repaso": [
+    "Titular acortado (superaba 90 caracteres) y sin dar como hecho el uso en Economía o Emprendimiento, que es solo sugerencia del autor.",
+    "Entradilla: el uso en Historia, atribuido al autor.",
+    "Quitado que “Restablecer” sirve para empezar de cero y que la luna es modo oscuro: la página no lo dice; descrito solo lo que se ve.",
+    "Añadido que no consta si se usan los datos para otros fines y la cautela de no pedir datos reales de las familias.",
+    "Eliminado “Lo más interesante” (valoración)."
+  ]
+}

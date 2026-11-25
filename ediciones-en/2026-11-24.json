@@ -1,0 +1,110 @@
+{
+  "fecha": "2026-11-24",
+  "hay_edicion": true,
+  "motivo": "A normal day: two news items on administration and business in ChatGPT-IA-edu, a conversation in EduMedia-IAG about the usage-quota cost of connecting agents to creative programs, and follow-ups on topics already published in VCE and EduMedia-IAG.",
+  "piezas": [
+    {
+      "id": "microsoft-elevate-educators",
+      "seccion": "novedades",
+      "importancia": 1,
+      "grupo": "chatgpt",
+      "antetitulo": "AI training for teachers",
+      "titular": "Microsoft brings Elevate for Educators, AI training for teachers, to Spain",
+      "entradilla": "The platform brings together courses, live seminars and a community of teachers, with three levels of recognition for teachers and another three for schools.",
+      "cuerpo": [
+        "Microsoft has announced the arrival in Spain of [Elevate for Educators](https://elevateforeducators.microsoft.com/?lang=es), an online platform for AI training aimed at teachers and schools. It is part of Microsoft Elevate, the programme with which the company says it wants to widen access to AI and digital skills. According to [Zonamovilidad](https://www.zonamovilidad.es/microsoft-lanza-espana-plataforma-formar-docentes-inteligencia-artificial), the platform offers practical resources and tools, courses, live webinars, a help centre and an international community of teachers, with a dedicated LinkedIn group for Spanish teachers.",
+        "Teachers progress through three levels (Explorer, Expert and Fellow) and schools through another three (Pathfinder, Showcase and Beacon). The initial levels can be joined at any time of the year. The organisations Founderz and Letcraft will provide content specific to Spain from 2027. The call for the Microsoft Elevate Expert Educator and Showcase School awards has been open since November, and the deadline for teachers’ applications is 11 December.",
+        "The published information does not say what it costs or whether access is free, and the official page does not say either. Nor is it stated what data about teachers the platform asks for. The figures come from Microsoft itself: more than 100,000 teachers on the platform, 2,014 of them in Spain, and 53% of surveyed teachers who have not received formal AI training from their institution, according to the company’s AI in Education Report 2026."
+      ],
+      "fuentes": [
+        {"titulo": "Microsoft Elevate for Educators (in Spanish)", "url": "https://elevateforeducators.microsoft.com/?lang=es"},
+        {"titulo": "Zonamovilidad: Microsoft lanza en España una plataforma para formar a los docentes en IA (in Spanish)", "url": "https://www.zonamovilidad.es/microsoft-lanza-espana-plataforma-formar-docentes-inteligencia-artificial"}
+      ],
+      "mensaje": {"grupo": "chatgpt", "id": 54664},
+      "comprobado": "Read the Zonamovilidad article (23-11-2026): levels, 11 December deadline (teachers, Expert Educator), Founderz and Letcraft from 2027, figures and LinkedIn all confirmed. Opened the official page: it confirms the community of more than 100,000 teachers and the open Expert Educator/Showcase School call, but gives no detail on levels, deadlines or price (the text says these are not stated). There were no earlier items on Elevate in the paper.",
+      "ilustracion": "Una escalera de tres peldaños para el profesorado y otra de tres para los centros, que suben hacia una comunidad de docentes.",
+      "ilustracion_alt": "Two staircases of three steps, one labelled “Teachers” and the other “Schools”, whose arrows lead to a group of people labelled “Teacher community”."
+    },
+    {
+      "id": "navarra-inspeccion-ia",
+      "seccion": "novedades",
+      "importancia": 2,
+      "grupo": "chatgpt",
+      "antetitulo": "Education administration",
+      "titular": "Navarre plans to use AI in school inspection without saying which programs or what data",
+      "entradilla": "The inspectorate’s action plan for the 2026-2027 school year includes AI as a support tool but does not specify tools or data safeguards, according to OKDIARIO.",
+      "cuerpo": [
+        "According to [OKDIARIO Navarra](https://navarra.okdiario.com/navarra/sociedad/inteligencia-artificial-llega-inspeccion-colegios-navarra-abre-dudas-datos/20261123151101668653.html), the Official Gazette of Navarre (the region’s official bulletin) published on Monday 23 November 2026 the Annual Action Plan of the Educational Inspection Service for the 2026-2027 school year, approved by Resolution 715/2026 of 6 November. The paper has not been able to check the text in the official gazette.",
+        "The plan envisages using AI as a support tool to draw up questionnaires, compare regulations, analyse data and generate reports. It states that AI will not replace the inspectorate or take decisions on its own about teachers, students or schools.",
+        "What the plan does not specify, according to the same outlet, is which programs will be used, whether they will belong to the administration or be commercial, what information may be entered, whether data will be anonymised and how confidential documentation will be kept from passing to external services. The outlet draws attention to minors’ data, confidentiality and the risk of errors when comparing regulations, and considers it essential for a person to review the results."
+      ],
+      "fuentes": [
+        {"titulo": "OKDIARIO Navarra: La inteligencia artificial llega a la inspección de los colegios de Navarra (in Spanish)", "url": "https://navarra.okdiario.com/navarra/sociedad/inteligencia-artificial-llega-inspeccion-colegios-navarra-abre-dudas-datos/20261123151101668653.html"}
+      ],
+      "mensaje": {"grupo": "chatgpt", "id": 54662},
+      "comprobado": "Read the OKDIARIO article: resolution, dates, uses and doubts match the text. Searched the web for Resolution 715/2026 without finding it; everything is attributed to the outlet.",
+      "ilustracion": null,
+      "ilustracion_alt": "A document with a magnifying glass labelled “Inspection” points to a closed box with a question mark, labelled “AI as support” and “Unspecified”, and from it an arrow leads to a magnifying glass with a tick, labelled “Human review”."
+    },
+    {
+      "id": "agentes-coste-cuota",
+      "seccion": "multimedia",
+      "importancia": 2,
+      "grupo": "edumedia",
+      "antetitulo": "Conversation in the group",
+      "titular": "Connecting AI to Blender or Unreal uses up the usage limit very quickly, according to EduMedia-IAG",
+      "entradilla": "According to the group, connecting coding assistants to 3D and video creation programs sends consumption soaring, although it works out cheaper than learning those programs.",
+      "cuerpo": [
+        "In EduMedia-IAG on Tuesday 24 November a conversation arose about how quickly the usage limit of coding assistants runs out. When they are connected to creative programs such as Blender, Unreal, Magnific or DaVinci Resolve, the group said, consumption soars.",
+        "The explanation given was that these connections use a lot because the agent, the assistant that operates the other program, has to carry out every step of the work, and that it pays to choose the model carefully and be cautious with requests. Even so, it was suggested that it works out cheaper than learning a complex program in depth: for someone who cannot use it and has no time, it costs in quota what it would otherwise cost in training.",
+        "In addition, one member of the group has already used up their weekly quota and must wait for it to reset. These are comments from a short conversation, not data on any company’s limits, which vary by plan."
+      ],
+      "fuentes": [
+        {"titulo": "Conversation in EduMedia-IAG (in Spanish)", "url": "https://t.me/EduMediaIAG/12421"}
+      ],
+      "mensaje": {"grupo": "edumedia", "id": 12421},
+      "comprobado": "Checked against messages #12421-#12439 of the group. Removed the “third position” on skills (message #12435 is ambiguous) and the framing as a debate: it was a short conversation with little disagreement. No figures or plan conditions are stated. No attribution to individuals.",
+      "ilustracion": null,
+      "ilustracion_alt": "A terminal labelled “Agent” connects to a cube labelled “3D program” and to a film strip labelled “Video”, which lead to an almost empty battery labelled “Quota used up”; below, an open book labelled “Learning costs more”."
+    }
+  ],
+  "breves": [
+    {
+      "texto": "A first trial of Project Genie, Google’s tool for creating interactive worlds, has been shared in EduMedia-IAG: the controls took some getting used to. The paper has already published an article on [Genie 4 in Project Genie](pieza:2026-11-19/genie-4-project-genie).",
+      "url": null,
+      "grupo": "edumedia",
+      "mensaje": {"grupo": "edumedia", "id": 12446}
+    },
+    {
+      "texto": "According to what was explained in the Vibe Coding Educativo group, the privacy guide that uses a traffic light to classify the tools analysed by the INTEF (Spain’s National Institute of Educational Technologies and Teacher Training) no longer shows the apps from the group’s repository, because that information is now in the repository itself. Background: [the guide, published as a website with search](pieza:2026-11-23/guia-privacidad-herramientas-intef).",
+      "url": "https://vibe-coding-educativo.github.io/app_edu/",
+      "grupo": "vce",
+      "mensaje": {"grupo": "vce", "id": 15250}
+    },
+    {
+      "texto": "Gemini now shows one user the option to switch off the use of their conversations to train Google’s models, according to a screenshot shared in ChatGPT-IA-edu. Background: [the announced change](pieza:2026-11-19/gemini-historial-entrenamiento).",
+      "url": null,
+      "grupo": "chatgpt",
+      "mensaje": {"grupo": "chatgpt", "id": 54668}
+    },
+    {
+      "texto": "According to the poster shared in ChatGPT-IA-edu, the INTEF is keeping enrolment open until 27 November for the NOOC (a very short open online course) “IA en las aulas: normativa, riesgos y oportunidades” (AI in the classroom: regulation, risks and opportunities).",
+      "url": "https://formacion.intef.es/abierta/",
+      "grupo": "chatgpt",
+      "mensaje": {"grupo": "chatgpt", "id": 54667}
+    }
+  ],
+  "descartado": [
+    "“Cuatro formas de usar la IA” (article by an author of the paper): shared on 23 November, with no link in the material to open and check it.",
+    "Request for a Symbaloo-style link board with no registration (23 November): question with no reply.",
+    "Internal administration of the groups (spam, bot, the “Cómo crear tu primera aplicación” guide from the group’s rules): not news."
+  ],
+  "repaso": [
+    "Microsoft Elevate headline shortened from 95 to 77 characters; added that the official page does not state the price either; checked and updated after opening the official page.",
+    "Agent quota item: moved from “debates” to “multimedia”; removed “the group discusses whether it is worth it” and the “third position” (message #12435 does not say what the item had it say); headline, standfirst and body toned down to a short conversation.",
+    "Genie brief: removed “after coming off the waiting list”, which no message says.",
+    "VCE repository brief: attributed to what was explained in the group (the linked page did not load its data when opened).",
+    "INTEF NOOC brief: attributed to the poster; the INTEF website returned a 502 error and could not be checked.",
+    "Navarre: confirmed with OKDIARIO; the resolution cannot be found in the gazette, as already stated in the text. No further changes."
+  ]
+}

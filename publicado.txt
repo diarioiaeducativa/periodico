@@ -220,3 +220,12 @@
 - pieza:2026-11-23/affinity-diseno-gratuito (multimedia) Affinity une edición de fotos, dibujo vectorial y maquetación, gratis para particulares
 - breve: Raül Torres ha salido de la lista de espera de Project Genie, el modelo de Google que crea
 - pieza:2026-11-23/comparador-interactivo-de-chatbots-gratu (repositorio) Un comparador permite elegir qué chatbot gratuito conviene según lo que se necesite — recursos con artículo: Comparador interactivo de chatbots gratuitos (https://bilateria.org/docs/bilateria/comparacion_chatbots.html)
+
+## 2026-11-24 (publicado el miércoles 25 de noviembre de 2026)
+- pieza:2026-11-24/microsoft-elevate-educators (novedades) Microsoft lleva a España Elevate for Educators, formación en IA para docentes
+- pieza:2026-11-24/navarra-inspeccion-ia (novedades) Navarra prevé usar IA en la inspección educativa sin precisar qué programas ni qué datos
+- pieza:2026-11-24/agentes-coste-cuota (multimedia) Conectar agentes de IA con Blender o Unreal agota la cuota muy rápido, cuentan en EduMedia-IAG
+- breve: Un miembro de EduMedia-IAG ha probado Project Genie, de Google, y cuenta que le costó hace
+- breve: Según se explicó en VCE, la guía de privacidad con el semáforo del INTEF ya no enseña las 
+- breve: Gemini ya muestra a un usuario la opción para desactivar que sus conversaciones entrenen l
+- breve: Según el cartel compartido en el grupo, el INTEF mantiene abierta hasta el 27 de noviembre

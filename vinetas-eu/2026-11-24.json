@@ -1,0 +1,85 @@
+{
+ "fecha": "2026-11-24",
+ "elegida": {
+  "n": 3,
+  "pieza": "agentes-coste-cuota",
+  "idea": "Algoritmok asteko kuota agortu du 3D programa batekin eta berrabiarazi arte itxaroten du; Tizaren kuota asteazkenetan amaitzen zaio, eta berari uztailean berrabiarazten diote (Tizak bi hitzekin amaitzen du; txasko guztia Algoritmok hartzen du, eskuak buruan).",
+  "guion": {
+   "vinetas": [
+    {
+     "cartela": "Ostegunean, fotokopiagailuaren ondoan, kuotaren kontuekin.",
+     "escenario": "fotocopiadora",
+     "tiza": {
+      "expresion": "agotado",
+      "postura": "abajo",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "agotado",
+      "postura": "abajo",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "algoritmo",
+       "texto": "3D programa batera konektatu naute eta agur asteko kuota. Berrabiarazi arte itxaron.",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "fotocopiadora",
+     "tiza": {
+      "expresion": "harto",
+      "postura": "cruzar",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "pensativo",
+      "postura": "pensar",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Nire kuota asteazkenetan amaitzen zait.",
+       "tipo": "habla"
+      },
+      {
+       "quien": "algoritmo",
+       "texto": "Eta noiz berrabiarazten dizute?",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "fotocopiadora",
+     "tiza": {
+      "expresion": "agotado",
+      "postura": "encoger",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "sorprendido",
+      "postura": "cabeza",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Uztailean.",
+       "tipo": "habla"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "traduccion": "itzulpen automatikoa AArekin"
+}

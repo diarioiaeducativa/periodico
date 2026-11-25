@@ -1,0 +1,85 @@
+{
+ "fecha": "2026-11-24",
+ "elegida": {
+  "n": 3,
+  "pieza": "agentes-coste-cuota",
+  "idea": "Algorithm has used up his weekly quota on a 3D program and is waiting for the reset; Chalk’s runs out on Wednesdays, and hers resets in July (Chalk delivers the punchline in two words; the letdown falls on Algorithm, hands on his head).",
+  "guion": {
+   "vinetas": [
+    {
+     "cartela": "Thursday, at the photocopier, fretting over quotas.",
+     "escenario": "fotocopiadora",
+     "tiza": {
+      "expresion": "agotado",
+      "postura": "abajo",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "agotado",
+      "postura": "abajo",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "algoritmo",
+       "texto": "They hooked me up to a 3D program and bye-bye weekly quota. Now I wait for the reset.",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "fotocopiadora",
+     "tiza": {
+      "expresion": "harto",
+      "postura": "cruzar",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "pensativo",
+      "postura": "pensar",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Mine runs out on Wednesdays.",
+       "tipo": "habla"
+      },
+      {
+       "quien": "algoritmo",
+       "texto": "And when do they reset you?",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "fotocopiadora",
+     "tiza": {
+      "expresion": "agotado",
+      "postura": "encoger",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "sorprendido",
+      "postura": "cabeza",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "In July.",
+       "tipo": "habla"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "traduccion": "automatic AI translation"
+}

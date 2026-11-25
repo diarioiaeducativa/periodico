@@ -1,0 +1,110 @@
+{
+  "fecha": "2026-11-24",
+  "hay_edicion": true,
+  "motivo": "Día normal: dos noticias de administración y empresa en ChatGPT-IA-edu, una conversación sobre el coste en cuota de conectar agentes a programas de creación en EduMedia-IAG y continuaciones de temas ya publicados en VCE y EduMedia-IAG.",
+  "piezas": [
+    {
+      "id": "microsoft-elevate-educators",
+      "seccion": "novedades",
+      "importancia": 1,
+      "grupo": "chatgpt",
+      "antetitulo": "Formación docente en IA",
+      "titular": "Microsoft lleva a España Elevate for Educators, formación en IA para docentes",
+      "entradilla": "La plataforma reúne cursos, seminarios en directo y una comunidad de docentes, con tres niveles de reconocimiento para el profesorado y otros tres para los centros.",
+      "cuerpo": [
+        "Microsoft ha anunciado la llegada a España de [Elevate for Educators](https://elevateforeducators.microsoft.com/?lang=es), una plataforma en línea de formación en inteligencia artificial para profesorado y centros. Forma parte de Microsoft Elevate, el programa con el que la empresa dice querer ampliar el acceso a la IA y las competencias digitales. Según la información de [Zonamovilidad](https://www.zonamovilidad.es/microsoft-lanza-espana-plataforma-formar-docentes-inteligencia-artificial), la plataforma ofrece recursos y herramientas prácticas, cursos, seminarios web en directo, un centro de ayuda y una comunidad internacional de docentes, con un grupo específico en LinkedIn para el profesorado español.",
+        "El profesorado avanza por tres niveles (Explorer, Expert y Fellow) y los centros por otros tres (Pathfinder, Showcase y Beacon). Se puede entrar en los niveles iniciales en cualquier momento del año. Las entidades Founderz y Letcraft aportarán contenidos específicos para España a partir de 2027. La convocatoria de los reconocimientos Microsoft Elevate Expert Educator y Showcase School está abierta desde noviembre, y el plazo de candidaturas del profesorado termina el 11 de diciembre.",
+        "La información publicada no indica el precio ni si el acceso es gratuito, y la página oficial tampoco lo dice. Tampoco consta qué datos del profesorado pide la plataforma. Las cifras proceden de la propia Microsoft: más de 100.000 docentes en la plataforma, 2.014 de ellos en España, y un 53 % de docentes encuestados que no han recibido formación formal en IA de su institución, según el informe AI in Education Report 2026 de la empresa."
+      ],
+      "fuentes": [
+        {"titulo": "Microsoft Elevate for Educators", "url": "https://elevateforeducators.microsoft.com/?lang=es"},
+        {"titulo": "Zonamovilidad: Microsoft lanza en España una plataforma para formar a los docentes en IA", "url": "https://www.zonamovilidad.es/microsoft-lanza-espana-plataforma-formar-docentes-inteligencia-artificial"}
+      ],
+      "mensaje": {"grupo": "chatgpt", "id": 54664},
+      "comprobado": "Leída la noticia de Zonamovilidad (23-11-2026): niveles, plazo del 11 de diciembre (docentes, Expert Educator), Founderz y Letcraft desde 2027, cifras y LinkedIn confirmados. Abierta la página oficial: confirma la comunidad de más de 100.000 docentes y la convocatoria Expert Educator/Showcase School abierta, pero no detalla niveles, plazos ni precio (se dice que no constan). No había piezas anteriores sobre Elevate en el diario.",
+      "ilustracion": "Una escalera de tres peldaños para el profesorado y otra de tres para los centros, que suben hacia una comunidad de docentes.",
+      "ilustracion_alt": "Dos escaleras de tres peldaños, una rotulada «Profesorado» y otra «Centros», cuyas flechas llevan a un grupo de personas rotulado «Comunidad docente»."
+    },
+    {
+      "id": "navarra-inspeccion-ia",
+      "seccion": "novedades",
+      "importancia": 2,
+      "grupo": "chatgpt",
+      "antetitulo": "Administración educativa",
+      "titular": "Navarra prevé usar IA en la inspección educativa sin precisar qué programas ni qué datos",
+      "entradilla": "El plan de actuación de la inspección para el curso 2026-2027 incluye la IA como apoyo, pero no concreta herramientas ni garantías sobre los datos, según OKDIARIO.",
+      "cuerpo": [
+        "Según [OKDIARIO Navarra](https://navarra.okdiario.com/navarra/sociedad/inteligencia-artificial-llega-inspeccion-colegios-navarra-abre-dudas-datos/20261123151101668653.html), el Boletín Oficial de Navarra publicó el lunes 23 de noviembre de 2026 el Plan Anual de Actuación del Servicio de Inspección Educativa para el curso 2026-2027, aprobado por la Resolución 715/2026, de 6 de noviembre. El diario no ha podido comprobar el texto en el boletín oficial.",
+        "El plan prevé usar la IA como apoyo para elaborar cuestionarios, comparar normativa, analizar datos y generar informes. Indica que no sustituirá a la inspección ni tomará decisiones por su cuenta sobre docentes, alumnado o centros.",
+        "Lo que el plan no precisa, según el mismo medio, es qué programas se usarán, si serán de la Administración o comerciales, qué información podrá introducirse, si los datos se anonimizarán y cómo se evitará que documentación confidencial pase a servicios externos. El medio llama la atención sobre los datos de menores, la confidencialidad y el riesgo de errores al comparar normativa, y considera imprescindible que una persona revise los resultados."
+      ],
+      "fuentes": [
+        {"titulo": "OKDIARIO Navarra: La inteligencia artificial llega a la inspección de los colegios de Navarra", "url": "https://navarra.okdiario.com/navarra/sociedad/inteligencia-artificial-llega-inspeccion-colegios-navarra-abre-dudas-datos/20261123151101668653.html"}
+      ],
+      "mensaje": {"grupo": "chatgpt", "id": 54662},
+      "comprobado": "Leída la noticia de OKDIARIO: resolución, fechas, usos y dudas coinciden con el texto. Buscada la Resolución 715/2026 en la web sin encontrarla; todo se atribuye al medio.",
+      "ilustracion": null,
+      "ilustracion_alt": "Un documento con lupa rotulado «Inspección» apunta a una caja cerrada con un interrogante, rotulada «IA como apoyo» y «Sin precisar», y de ella sale una flecha hacia una lupa con una marca de verificación, rotulada «Revisión humana»."
+    },
+    {
+      "id": "agentes-coste-cuota",
+      "seccion": "multimedia",
+      "importancia": 2,
+      "grupo": "edumedia",
+      "antetitulo": "Conversación en el grupo",
+      "titular": "Conectar la IA a Blender o Unreal agota muy rápido el límite de uso, según EduMedia-IAG",
+      "entradilla": "Según se comentó en el grupo, conectar asistentes de programación a programas de creación en 3D y vídeo dispara el consumo, aunque sale más barato que formarse en esos programas.",
+      "cuerpo": [
+        "En EduMedia-IAG surgió el martes 24 una conversación sobre lo rápido que se agota el límite de uso de los asistentes de programación. Al conectarlos a programas de creación como Blender, Unreal, Magnific o DaVinci Resolve, según se comentó, el consumo se dispara.",
+        "La explicación que se dio es que esas conexiones gastan mucho porque el agente, el asistente que maneja el otro programa, tiene que hacer cada paso del trabajo, y que conviene elegir el modelo con cuidado y ser prudente con las peticiones. Aun así, se apuntó que sale más barato que aprender a fondo un programa complejo: a una persona que no sabe usarlo y no tiene tiempo, le cuesta en cuota lo que de otro modo le costaría en formación.",
+        "Además, alguna persona del grupo ya ha agotado su cuota semanal y debe esperar a que se reinicie. Son comentarios de una conversación breve, no datos sobre los límites de ninguna empresa, que cambian según el plan."
+      ],
+      "fuentes": [
+        {"titulo": "Conversación en EduMedia-IAG", "url": "https://t.me/EduMediaIAG/12421"}
+      ],
+      "mensaje": {"grupo": "edumedia", "id": 12421},
+      "comprobado": "Contrastado con los mensajes #12421-#12439 del grupo. Quitada la «tercera postura» sobre habilidades (el mensaje #12435 es ambiguo) y el planteamiento de debate: era una conversación breve con poco desacuerdo. No se afirma ninguna cifra ni condición de plan. Sin atribuir a personas.",
+      "ilustracion": null,
+      "ilustracion_alt": "Un terminal rotulado «Agente» se conecta con un cubo rotulado «Programa 3D» y con una película rotulada «Vídeo», que llevan a una batería casi vacía rotulada «Cuota agotada»; debajo, un libro abierto rotulado «Formarse cuesta más»."
+    }
+  ],
+  "breves": [
+    {
+      "texto": "En EduMedia-IAG se ha compartido una primera prueba de Project Genie, la herramienta de Google que crea mundos interactivos: costó hacerse con los controles. El diario ya publicó un artículo sobre [Genie 4 en Project Genie](pieza:2026-11-19/genie-4-project-genie).",
+      "url": null,
+      "grupo": "edumedia",
+      "mensaje": {"grupo": "edumedia", "id": 12446}
+    },
+    {
+      "texto": "Según se explicó en el grupo Vibe Coding Educativo, la guía de privacidad que clasifica con un semáforo las herramientas analizadas por el INTEF (Instituto Nacional de Tecnologías Educativas y de Formación del Profesorado) ya no muestra las aplicaciones del repositorio del grupo, porque esa información está ahora en el propio repositorio. Antecedente: [la guía, publicada como web con buscador](pieza:2026-11-23/guia-privacidad-herramientas-intef).",
+      "url": "https://vibe-coding-educativo.github.io/app_edu/",
+      "grupo": "vce",
+      "mensaje": {"grupo": "vce", "id": 15250}
+    },
+    {
+      "texto": "Gemini ya muestra a un usuario la opción para desactivar el uso de sus conversaciones para entrenar los modelos de Google, según una captura compartida en ChatGPT-IA-edu. Contexto: [el cambio anunciado](pieza:2026-11-19/gemini-historial-entrenamiento).",
+      "url": null,
+      "grupo": "chatgpt",
+      "mensaje": {"grupo": "chatgpt", "id": 54668}
+    },
+    {
+      "texto": "Según el cartel compartido en ChatGPT-IA-edu, el INTEF mantiene abierta hasta el 27 de noviembre la inscripción al NOOC (un curso en línea abierto y muy breve) «IA en las aulas: normativa, riesgos y oportunidades».",
+      "url": "https://formacion.intef.es/abierta/",
+      "grupo": "chatgpt",
+      "mensaje": {"grupo": "chatgpt", "id": 54667}
+    }
+  ],
+  "descartado": [
+    "Cuatro formas de usar la IA (artículo de un autor del diario): compartido el 23-11, sin enlace en el material para abrirlo y comprobarlo.",
+    "Solicitud de un tablero de enlaces tipo Symbaloo sin registro (23-11): pregunta sin respuesta.",
+    "Administración interna de los grupos (spam, bot, guía «Cómo crear tu primera aplicación» de las normas del grupo): no es noticia."
+  ],
+  "repaso": [
+    "Titular de Microsoft Elevate acortado de 95 a 77 caracteres; añadido que la página oficial tampoco indica precio; comprobado actualizado tras abrir la página oficial.",
+    "Pieza de cuota de agentes: pasa de «debates» a «multimedia»; quitado el «grupo discute si compensa» y la «tercera postura» (el mensaje #12435 no dice lo que la pieza le hacía decir); titular, entradilla y cuerpo rebajados a conversación breve.",
+    "Breve de Genie: quitado «tras salir de la lista de espera», que no dice ningún mensaje.",
+    "Breve del repositorio de VCE: atribuido a lo explicado en el grupo (la página enlazada no cargaba sus datos al abrirla).",
+    "Breve del NOOC del INTEF: atribuido al cartel; la web del INTEF dio error 502 y no se pudo contrastar.",
+    "Navarra: confirmada con OKDIARIO; la resolución no se encuentra en el boletín, ya dicho en el texto. Sin más cambios."
+  ]
+}

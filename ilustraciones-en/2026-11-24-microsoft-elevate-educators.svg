@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340">
+<path class="t fa" d="M40 150 V125 H90 V100 H140 V75 H190 V150 Z"/>
+<path class="t fa" d="M40 290 V265 H90 V240 H140 V215 H190 V290 Z"/>
+<text class="lbl" x="115" y="182" text-anchor="middle">Teachers</text>
+<text class="lbl" x="115" y="322" text-anchor="middle">Schools</text>
+<path class="a" d="M210 90 C265 90 270 160 325 165 M313 156 L325 165 L311 172"/>
+<path class="a" d="M210 230 C265 230 270 180 325 175 M311 168 L325 175 L313 184"/>
+<g class="a li4" transform="translate(375 100) scale(4)"><!-- Lucide: users (ISC) --><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><path d="M16 3.128a4 4 0 0 1 0 7.744"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><circle cx="9" cy="7" r="4"/></g>
+<text class="lbl" x="440" y="250" text-anchor="middle">Teacher community</text>
+</svg>

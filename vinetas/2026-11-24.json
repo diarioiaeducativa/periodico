@@ -1,0 +1,128 @@
+{
+ "fecha": "2026-11-24",
+ "elegida": {
+  "n": 3,
+  "pieza": "agentes-coste-cuota",
+  "idea": "Algoritmo ha agotado la cuota semanal con un programa de 3D y espera al reinicio; a Tiza la suya se le acaba los miércoles, y a ella la reinician en julio (remata Tiza con dos palabras; el chasco se lo lleva Algoritmo, con las manos en la cabeza).",
+  "guion": {
+   "vinetas": [
+    {
+     "cartela": "Jueves, en la fotocopiadora, a vueltas con la cuota.",
+     "escenario": "fotocopiadora",
+     "tiza": {
+      "expresion": "agotado",
+      "postura": "abajo",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "agotado",
+      "postura": "abajo",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "algoritmo",
+       "texto": "Me han conectado a un programa de 3D y adiós cuota semanal. Toca esperar al reinicio.",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "fotocopiadora",
+     "tiza": {
+      "expresion": "harto",
+      "postura": "cruzar",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "pensativo",
+      "postura": "pensar",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "A mí la cuota se me acaba los miércoles.",
+       "tipo": "habla"
+      },
+      {
+       "quien": "algoritmo",
+       "texto": "¿Y cuándo te reinician?",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "fotocopiadora",
+     "tiza": {
+      "expresion": "agotado",
+      "postura": "encoger",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "sorprendido",
+      "postura": "cabeza",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "En julio.",
+       "tipo": "habla"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "motivo": "Gana la 3. Tiene el mejor remate de las cinco y el más corto: «En julio.», dos palabras que no se ven venir y que cualquier docente reconoce al instante. El chiste sale de la noticia (la cuota semanal que se agota al conectar el agente a un programa de 3D y la espera al reinicio, las dos cosas en la pieza) y le da la vuelta: la que de verdad va sin cuota es Tiza. Se entiende sin haber leído la noticia, porque la primera viñeta explica en una frase qué es la cuota y qué es el reinicio, y la pregunta ingenua de Algoritmo («¿Y cuándo te reinician?») deja el remate servido sin anunciarlo. No se inventa datos: no da cifras ni condiciones de ningún plan, no nombra programas ni empresas y no se ríe de nadie del grupo; la ironía va a los límites de la herramienta y al cansancio propio. Su gracia es un 8, así que solo se ha afinado el ritmo y el dibujo. La 5 (Algoritmo ha aprendido de Tiza a decir «eso lo vemos el próximo día» cuando no sabe la respuesta) es la segunda y tiene el molde más fresco, con Algoritmo rematando y el chasco para Tiza, pero su remate es una frase de 62 caracteres que se va desplegando, no un golpe; un 7,5, y la distancia con la 3 está en el remate, no es gracia parecida, así que la variedad no decide. La 2 (el manual esa misma noche) es correcta y fiel a la pieza, pero el giro depende del rótulo de la tercera viñeta, sería el segundo remate mudo seguido, el programa de vídeo no se ve en ningún sitio y «cargando» no es la cara de un Algoritmo sin cuota. La 1 (presento yo así la programación y la inspección me la devuelve) tiene una buena réplica final, reconocible y bien dirigida a la burocracia, pero su primer bocadillo es un titular leído en voz alta, da por hecho en boca de los personajes («El plan no lo dice») lo que la pieza solo atribuye a un medio sin haber podido comprobar el boletín, y señala por su nombre a una administración concreta. La 4 es la más floja: el remate obliga a recordar que Fellow es el nivel más alto, y los nombres de los niveles identifican a la empresa aunque no se la nombre. Las cinco respetan las prohibiciones y las cinco caben. Sobre el molde: Tiza dijo la última frase el 21 y el 22, pero el remate de ayer fue mudo, así que los dos últimos no son del mismo personaje; además, no es el molde gastado (Algoritmo literal y Tiza harta): aquí el chasco es de Algoritmo y Tiza acaba encogiéndose de hombros.",
+ "retoques": "Textos: el primer bocadillo de la segunda viñeta pasa de «A mí la cuota semanal se me acaba los miércoles.» a «A mí la cuota se me acaba los miércoles.» (de 48 a 40 caracteres): «semanal» ya lo ha dicho Algoritmo en la viñeta anterior y sin repetirlo la frase llega antes a «los miércoles»; se acorta, no se alarga, así que sigue cabiendo. Los demás no se tocan (85, 23 y 9 caracteres; ninguno pasa de 90). Rótulo de la primera viñeta: estaba y cumplía la medida («Un jueves, a última hora, junto a la fotocopiadora.», 51 caracteres), pero decía dónde y cuándo y no de qué va; pasa a ser «Jueves, en la fotocopiadora, a vueltas con la cuota.» (52 caracteres), que conserva el jueves (lo necesita «los miércoles»), sitúa el lugar y el asunto y no adelanta nada: «la cuota», sin decir de quién, vale para los dos. Escenario fotocopiadora: libre (los tres números anteriores fueron biblioteca, despacho y sala de profes) y se mantiene en las tres viñetas. Sin objeto: el chiste no lo necesita y los dos que han salido estos días (portátil y folio) descansan. Primera viñeta, Algoritmo: de «avergonzado» y «encoger» a «agotado» y «abajo». Avergonzado y encogido de hombros es exactamente como acabó ayer, y «encoger» es de sus posturas más repetidas; con ojeras y los brazos caídos se ve que se ha quedado sin cuota, y queda igual que Tiza a su lado, un jueves a última hora, que es el paralelo del que vive el chiste. Tercera viñeta, Tiza: de «neutral» a «agotado», con el mismo encogimiento de hombros; Tiza neutral y Algoritmo sorprendido era el final del día 22, y las ojeras dicen «En julio.» mejor que una cara sin gesto. Su recorrido queda agotada, harta (con los brazos cruzados, postura que no había usado estos días) y agotada otra vez, resignada. Tercera viñeta, Algoritmo: se deja «sorprendido» con las manos en la cabeza, postura que no había usado; el chasco lo pide. Segunda viñeta, Algoritmo: se deja «pensativo» y «pensar», aunque «pensar» es de sus posturas repetidas, porque la pregunta ingenua hecha con la mano en la barbilla es lo que prepara el remate. Final: Tiza agotada y Algoritmo sorprendido; el par no repite el de ninguno de los tres números anteriores.",
+ "puntuaciones": [
+  {
+   "n": 1,
+   "gracia": 7,
+   "claridad": 7.5,
+   "remate": 7.5,
+   "prohibiciones": "respeta, con cautela: el blanco es la burocracia, pero nombra a una administración concreta y afirma sin atribuir («El plan no lo dice») lo que la pieza solo atribuye a un medio, sin haber podido comprobar el boletín",
+   "cabe": true
+  },
+  {
+   "n": 2,
+   "gracia": 7,
+   "claridad": 7.5,
+   "remate": 7,
+   "prohibiciones": "respeta; lo de que sale más barato que aprender el programa y la cuota semanal agotada están en la pieza, y no nombra programas ni empresas",
+   "cabe": true
+  },
+  {
+   "n": 3,
+   "gracia": 8,
+   "claridad": 9,
+   "remate": 9,
+   "prohibiciones": "respeta: la ironía va a los límites de la herramienta y al cansancio propio de Tiza; la cuota semanal, el programa de 3D y la espera al reinicio están en la pieza, sin cifras ni nombres",
+   "cabe": true
+  },
+  {
+   "n": 4,
+   "gracia": 6,
+   "claridad": 6.5,
+   "remate": 6,
+   "prohibiciones": "respeta por poco: no nombra la empresa, pero los nombres de los niveles la identifican; que no consta el precio es lo que dice la pieza",
+   "cabe": true
+  },
+  {
+   "n": 5,
+   "gracia": 7.5,
+   "claridad": 8,
+   "remate": 7,
+   "prohibiciones": "respeta: no nombra la empresa ni a quien compartió la captura; el chasco de Tiza es amable y de personaje, no una burla al profesorado",
+   "cabe": true
+  }
+ ]
+}
