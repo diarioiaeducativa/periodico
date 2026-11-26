@@ -1,0 +1,115 @@
+{
+  "fecha": "2026-11-25",
+  "hay_edicion": true,
+  "motivo": "Día flojo. Lo más publicable es la versión 4.0 de la guía Vibe Coding Responsable, de VCE. ChatGPT-IA-edu y EduMedia-IAG no aportan nada nuevo del día: lo de Navarra, Microsoft, el curso del INTEF y la cuota de uso ya salió en el número 24, y lo demás son enlaces o preguntas sueltas. · 1 pieza(s) de reserva (2099-01-01; para completar)",
+  "piezas": [
+    {
+      "id": "vibe-responsable-4",
+      "seccion": "vibecoding",
+      "importancia": 1,
+      "grupo": "vce",
+      "antetitulo": "Guía de la comunidad",
+      "titular": "Vibe Coding Responsable 4.0: lo publicado en abierto debe poder reutilizarse",
+      "entradilla": "La versión 4.0 de la guía de Juan José de Haro explica que la excepción educativa de los derechos de autor no ampara lo que se publica en una web abierta.",
+      "cuerpo": [
+        "Juan José de Haro ha publicado la versión 4.0 de la guía [Vibe Coding Responsable](https://vibe-coding-educativo.github.io/vibe-responsable/es/capitulo-6.html), un conjunto de recomendaciones para docentes que crean materiales educativos con ayuda de la inteligencia artificial. La guía, con licencia CC BY-SA 4.0, ya salió en el diario en [la semana del repositorio del 7 de noviembre](pieza:2026-11-06/semana-del-repositorio), que la recogió entre las novedades.",
+        "El cambio que destaca su autor en el grupo Vibe Coding Educativo afecta al profesorado que comparte materiales. La excepción de los derechos de autor que la Unión Europea prevé para la enseñanza, según el capítulo «Antes de publicar: diez recomendaciones», solo cubre el uso bajo la responsabilidad del centro, en el aula o en plataformas cerradas. Un material publicado en abierto queda fuera de ella, y por tanto todo lo que incorpore debe permitir su reutilización: no puede incluir imágenes ni textos protegidos.",
+        "Esto tiene una consecuencia práctica para el profesorado que programa con ayuda de la IA: el asistente de IA puede enlazar imágenes de otras webs sin que conste su licencia. La guía recomienda sustituir cada una por otra de licencia conocida y guardarla dentro del propio material. Si un elemento no permite la reutilización o no se sabe su licencia, lo prudente es cambiarlo.",
+        "Según el autor, el cambio se apoya en las directrices de la Comisión Europea sobre contenidos educativos digitales, «[Toma de decisiones fundamentadas sobre contenidos educativos digitales](https://doi.org/10.2766/1574949)». Ese documento está en la [Biblioteca digital de ChatGPT-IA-edu](https://t.me/ChatGPTedu/21753/54678). La página de la guía no detalla qué más ha cambiado en la versión 4.0."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Vibe Coding Responsable, capítulo «Antes de publicar: diez recomendaciones»",
+          "url": "https://vibe-coding-educativo.github.io/vibe-responsable/es/capitulo-6.html"
+        },
+        {
+          "titulo": "Toma de decisiones fundamentadas sobre contenidos educativos digitales (Comisión Europea)",
+          "url": "https://doi.org/10.2766/1574949"
+        },
+        {
+          "titulo": "Documento en la Biblioteca digital de ChatGPT-IA-edu",
+          "url": "https://t.me/ChatGPTedu/21753/54678"
+        }
+      ],
+      "mensaje": {
+        "grupo": "vce",
+        "id": 15285
+      },
+      "comprobado": "Revisor: abierto el capítulo 6 de la guía: excepción de la UE solo bajo la responsabilidad del centro (aula o plataformas cerradas), publicación en abierto fuera de ella y con contenidos reutilizables, IA que enlaza imágenes sin licencia y recomendación de sustituirlas; autor (© 2026 Juan José de Haro) y CC BY-SA 4.0. Ficha de la Oficina de Publicaciones de la UE: título, autoría de la DG de Educación de la Comisión y 2025 (16-12-2025), así que no se repite «marzo». Mensaje de la Biblioteca (ChatGPTedu/54678): mismo título en PDF. Mensaje 15285 de VCE coincide con el tema. La semana del repositorio del 7-11 recoge la guía. La página no explica los cambios de la 4.0.",
+      "ilustracion": "Dos estanterías: una cerrada, dentro de un aula, con imágenes de cualquier procedencia; otra abierta, hacia la calle, donde solo entran materiales con un sello de licencia libre.",
+      "grafico": null,
+      "ilustracion_alt": "Dos estanterías con imágenes. A la izquierda, una estantería cerrada con un candado y el rótulo «Aula cerrada». A la derecha, una estantería abierta con una insignia de verificación y el rótulo «Licencia conocida». Entre ambas, una flecha con el rótulo «Abierta»."
+    },
+    {
+      "id": "ideogram-personajes-coherentes",
+      "seccion": "multimedia",
+      "importancia": 3,
+      "grupo": "edumedia",
+      "antetitulo": "Del fondo de EduMedia",
+      "titular": "Ideogram permite repetir un mismo personaje en varias imágenes para materiales de aula",
+      "entradilla": "La herramienta, que crea imágenes con inteligencia artificial, incluye un plan gratuito con créditos semanales. Sus imágenes, en ese plan, son públicas, y el alumnado necesita autorización familiar si es menor de edad.",
+      "cuerpo": [
+        "[Ideogram](https://ideogram.ai/) es una plataforma en línea para generar y editar imágenes con inteligencia artificial. En el grupo EduMedia-IAG se compartió su función de personajes, que mantiene el aspecto de un mismo personaje en imágenes distintas. Según [la ayuda de la propia empresa](https://docs.ideogram.ai/frequently-asked-questions), se añaden entre una y cinco imágenes de referencia y se nombra al personaje en la descripción (*prompt*) mediante su etiqueta; también se puede guardar en la biblioteca para reutilizarlo.",
+        "En clase sirve, por ejemplo, para crear una mascota de una lectura o de un proyecto y mostrarla en varias escenas: un cuento ilustrado, un cómic de repaso de vocabulario o una secuencia que explique un proceso científico con el mismo protagonista. El profesorado puede preparar el material y proyectarlo, o guiar al alumnado en la creación.",
+        "Para empezar, se crea una cuenta, se sube una imagen clara del personaje o se genera una primera, y después se describen las escenas nuevas. La ayuda no aclara qué planes incluyen esta función, y su disponibilidad puede variar según el espacio de trabajo: conviene probarla antes de planificar la actividad.",
+        "Las cuentas gratuitas creadas con Google o Apple reciben 30 créditos cada semana, según la ayuda a 24 de noviembre de 2026; las creadas con correo y contraseña no reciben créditos. Las imágenes del plan gratuito son públicas, así que no deben incluir datos ni imágenes del alumnado. Según las [condiciones de uso](https://ideogram.ai/legal/tos), hay que tener al menos 13 años, y las personas menores de edad legal necesitan que su madre, padre o tutor acepte los términos. Es preferible que la cuenta la use el docente."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Ideogram",
+          "url": "https://ideogram.ai/"
+        },
+        {
+          "titulo": "Preguntas frecuentes de Ideogram",
+          "url": "https://docs.ideogram.ai/frequently-asked-questions"
+        },
+        {
+          "titulo": "Condiciones de uso de Ideogram",
+          "url": "https://ideogram.ai/legal/tos"
+        }
+      ],
+      "herramienta": {
+        "nombre": "Ideogram",
+        "url": "https://ideogram.ai/"
+      },
+      "mensaje": {
+        "grupo": "edumedia",
+        "id": 1184
+      },
+      "comprobado": "Revisado el 24-11-2026: web oficial ideogram.ai (plataforma de generación y edición de imágenes; cuentas gratuitas con Google, Apple o Microsoft reciben créditos semanales variables, con correo y contraseña no; función de personajes con imágenes de referencia); preguntas frecuentes en docs.ideogram.ai (30 créditos semanales con Google o Apple, imágenes del plan gratuito públicas, personajes con 1 a 5 imágenes y etiqueta, biblioteca de personajes, sin precisar planes); condiciones en ideogram.ai/legal/tos (13 años como mínimo; menores de edad legal, solo con aceptación de madre, padre o tutor). No aparece en lo publicado por el diario. Mensaje 1184 de EduMedia-IAG verificado (recomienda la herramienta «Character»; sin opiniones de terceros).",
+      "ilustracion": "Un mismo personaje sencillo, dibujado a partir de una hoja con tres imágenes de referencia a la izquierda, que aparece a la derecha en cuatro viñetas de escenas distintas.",
+      "ilustracion_alt": "Tres imágenes de referencia de un personaje, con el rótulo «Referencias», y una flecha hacia cuatro viñetas con el mismo personaje en escenas distintas (sol, olas, árbol y nube), con el rótulo «Mismo personaje»."
+    }
+  ],
+  "breves": [
+    {
+      "texto": "El acortador de enlaces ja.cat no cargaba el miércoles 25 por la mañana y, según se comentó en el grupo, la causa era una incidencia de su proveedor de DNS, Dinahosting. En el grupo se propuso una solución provisional que solo vale para el ordenador en que se aplica.",
+      "url": "https://ja.cat/",
+      "grupo": "vce",
+      "mensaje": {
+        "grupo": "vce",
+        "id": 15269
+      }
+    }
+  ],
+  "descartado": [
+    "Navarra, Microsoft Elevate for Educators y el curso del INTEF: ya salieron en el número 24 (mensajes del 24).",
+    "Guía de privacidad del INTEF que deja de mostrar el repositorio: ya salió en el número 24.",
+    "Cuota de uso de Codex, Claude y MCP, y prueba de Genie: ya en el número 24 (mensajes del 24).",
+    "Aprende y Juega (más de 500 actividades): busqué su web y no indica quién la hace, ni nada de datos de menores; no se puede comprobar lo que dice el mensaje (cifra de actividades, autoría).",
+    "Enlace de La Vanguardia sobre superinteligencia: solo un comentario de una línea, sin debate ni fuente que contrastar.",
+    "Plantillas rellenables de un docente andaluz (pregunta de Alicia) y recurso de Ciencias de 5.º de K con comentarios de otro miembro: peticiones personales sin respuesta con contenido.",
+    "Documentos de la Biblioteca digital (marco AILit de la OCDE y la UE, directrices de la UE): tienen su sección."
+  ],
+  "repaso": [
+    "Titular acortado (de 103 a 76 caracteres) y rebajado: la guía dice que lo publicado en abierto debe permitir su reutilización, no que exija «licencia libre».",
+    "Cuerpo: la excepción cubre el aula o plataformas cerradas (según la guía); «sin que conste su licencia» en lugar de «sin indicar»; añadida la idea de reutilización.",
+    "Comprobado: guía, ficha de la UE (2025, no «marzo»), mensaje de la Biblioteca, mensajes 15285 y 15269 y el enlace a la semana del repositorio del 7-11. El breve de ja.cat coincide con los mensajes 15269-15278."
+  ],
+  "piezas_reserva": [
+    "2099-01-01"
+  ],
+  "titulares_reserva": [
+    "Ideogram permite repetir un mismo personaje en varias imágenes para materiales de aula"
+  ]
+}

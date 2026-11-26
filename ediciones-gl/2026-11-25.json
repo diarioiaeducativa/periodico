@@ -1,0 +1,95 @@
+{
+  "fecha": "2026-11-25",
+  "motivo": "",
+  "piezas": [
+    {
+      "id": "vibe-responsable-4",
+      "seccion": "vibecoding",
+      "importancia": 1,
+      "grupo": "vce",
+      "antetitulo": "Guía da comunidade",
+      "titular": "Vibe Coding Responsable 4.0: o publicado en aberto debe poder reutilizarse",
+      "entradilla": "A versión 4.0 da guía de Juan José de Haro explica que a excepción educativa dos dereitos de autoría non ampara o que se publica nunha web aberta.",
+      "cuerpo": [
+        "Juan José de Haro publicou a versión 4.0 da guía [Vibe Coding Responsable](https://vibe-coding-educativo.github.io/vibe-responsable/gl/capitulo-6.html), un conxunto de recomendacións para docentes que crean materiais educativos coa axuda da intelixencia artificial. A guía, con licenza CC BY-SA 4.0, xa saíu no diario na [semana do repositorio do 7 de novembro](pieza:2026-11-06/semana-del-repositorio), que a recolleu entre as novidades.",
+        "O cambio que destaca o seu autor no grupo Vibe Coding Educativo afecta o profesorado que comparte materiais. A excepción dos dereitos de autoría que a Unión Europea prevé para o ensino, segundo o capítulo «Antes de publicar: dez recomendacións», só cobre o uso baixo a responsabilidade do centro, na aula ou en plataformas pechadas. Un material publicado en aberto queda fóra dela e, polo tanto, todo o que incorpore debe permitir a súa reutilización: non pode incluír imaxes nin textos protexidos.",
+        "Isto ten unha consecuencia práctica para o profesorado que programa coa axuda da IA: o asistente de IA pode ligar imaxes doutras webs sen que conste a súa licenza. A guía recomenda substituír cada unha por outra de licenza coñecida e gardala dentro do propio material. Se un elemento non permite a reutilización ou non se sabe a súa licenza, o prudente é cambialo.",
+        "Segundo o autor, o cambio apóiase nas directrices da Comisión Europea sobre contidos educativos dixitais, «[Toma de decisiones fundamentadas sobre contenidos educativos digitales](https://doi.org/10.2766/1574949)». Ese documento está na [Biblioteca dixital de ChatGPT-IA-edu](https://t.me/ChatGPTedu/21753/54678). A páxina da guía non detalla que máis cambiou na versión 4.0."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Vibe Coding Responsable, capítulo «Antes de publicar: dez recomendacións»",
+          "url": "https://vibe-coding-educativo.github.io/vibe-responsable/gl/capitulo-6.html"
+        },
+        {
+          "titulo": "Toma de decisiones fundamentadas sobre contenidos educativos digitales (Comisión Europea) (en castelán)",
+          "url": "https://doi.org/10.2766/1574949"
+        },
+        {
+          "titulo": "Documento na Biblioteca dixital de ChatGPT-IA-edu (en castelán)",
+          "url": "https://t.me/ChatGPTedu/21753/54678"
+        }
+      ],
+      "mensaje": {
+        "grupo": "vce",
+        "id": 15285
+      },
+      "comprobado": "Revisor: abierto el capítulo 6 de la guía: excepción de la UE solo bajo la responsabilidad del centro (aula o plataformas cerradas), publicación en abierto fuera de ella y con contenidos reutilizables, IA que enlaza imágenes sin licencia y recomendación de sustituirlas; autor (© 2026 Juan José de Haro) y CC BY-SA 4.0. Ficha de la Oficina de Publicaciones de la UE: título, autoría de la DG de Educación de la Comisión y 2025 (16-12-2025), así que no se repite «marzo». Mensaje de la Biblioteca (ChatGPTedu/54678): mismo título en PDF. Mensaje 15285 de VCE coincide con el tema. La semana del repositorio del 7-11 recoge la guía. La página no explica los cambios de la 4.0.",
+      "ilustracion": "Dos estanterías: una cerrada, dentro de un aula, con imágenes de cualquier procedencia; otra abierta, hacia la calle, donde solo entran materiales con un sello de licencia libre.",
+      "grafico": null,
+      "ilustracion_alt": "Dúas estantarías con imaxes. Á esquerda, unha estantaría pechada cun cadeado e o rótulo «Aula pechada». Á dereita, unha estantaría aberta cunha insignia de verificación e o rótulo «Licenza coñecida». Entre ambas, unha frecha co rótulo «Aberta»."
+    },
+    {
+      "id": "ideogram-personajes-coherentes",
+      "seccion": "multimedia",
+      "importancia": 3,
+      "grupo": "edumedia",
+      "antetitulo": "Do fondo de EduMedia",
+      "titular": "Ideogram permite repetir un mesmo personaxe en varias imaxes para materiais de aula",
+      "entradilla": "A ferramenta, que crea imaxes con intelixencia artificial, inclúe un plan gratuíto con créditos semanais. As súas imaxes, nese plan, son públicas, e o alumnado necesita autorización familiar se é menor de idade.",
+      "cuerpo": [
+        "[Ideogram](https://ideogram.ai/) é unha plataforma en liña para xerar e editar imaxes con intelixencia artificial. No grupo EduMedia-IAG compartiuse a súa función de personaxes, que mantén o aspecto dun mesmo personaxe en imaxes distintas. Segundo [a axuda da propia empresa](https://docs.ideogram.ai/frequently-asked-questions), engádense entre unha e cinco imaxes de referencia e nómease o personaxe na descrición (*prompt*) mediante a súa etiqueta; tamén se pode gardar na biblioteca para reutilizalo.",
+        "Na aula serve, por exemplo, para crear unha mascota dunha lectura ou dun proxecto e amosala en varias escenas: un conto ilustrado, un cómic de repaso de vocabulario ou unha secuencia que explique un proceso científico co mesmo protagonista. O profesorado pode preparar o material e proxectalo, ou guiar o alumnado na creación.",
+        "Para comezar, créase unha conta, sóbese unha imaxe clara do personaxe ou xérase unha primeira, e despois descríbense as escenas novas. A axuda non aclara que plans inclúen esta función, e a súa dispoñibilidade pode variar segundo o espazo de traballo: convén probala antes de planificar a actividade.",
+        "As contas gratuítas creadas con Google ou Apple reciben 30 créditos cada semana, segundo a axuda a 24 de novembro de 2026; as creadas con correo e contrasinal non reciben créditos. As imaxes do plan gratuíto son públicas, así que non deben incluír datos nin imaxes do alumnado. Segundo as [condicións de uso](https://ideogram.ai/legal/tos), cómpre ter polo menos 13 anos, e as persoas menores de idade legal necesitan que a súa nai, pai ou titor acepte os termos. É preferible que a conta a use o docente."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Ideogram (en inglés)",
+          "url": "https://ideogram.ai/"
+        },
+        {
+          "titulo": "Preguntas frecuentes de Ideogram (en inglés)",
+          "url": "https://docs.ideogram.ai/frequently-asked-questions"
+        },
+        {
+          "titulo": "Condicións de uso de Ideogram (en inglés)",
+          "url": "https://ideogram.ai/legal/tos"
+        }
+      ],
+      "herramienta": {
+        "nombre": "Ideogram",
+        "url": "https://ideogram.ai/"
+      },
+      "mensaje": {
+        "grupo": "edumedia",
+        "id": 1184
+      },
+      "comprobado": "Revisado el 24-11-2026: web oficial ideogram.ai (plataforma de generación y edición de imágenes; cuentas gratuitas con Google, Apple o Microsoft reciben créditos semanales variables, con correo y contraseña no; función de personajes con imágenes de referencia); preguntas frecuentes en docs.ideogram.ai (30 créditos semanales con Google o Apple, imágenes del plan gratuito públicas, personajes con 1 a 5 imágenes y etiqueta, biblioteca de personajes, sin precisar planes); condiciones en ideogram.ai/legal/tos (13 años como mínimo; menores de edad legal, solo con aceptación de madre, padre o tutor). No aparece en lo publicado por el diario. Mensaje 1184 de EduMedia-IAG verificado (recomienda la herramienta «Character»; sin opiniones de terceros).",
+      "ilustracion": "Un mismo personaje sencillo, dibujado a partir de una hoja con tres imágenes de referencia a la izquierda, que aparece a la derecha en cuatro viñetas de escenas distintas.",
+      "ilustracion_alt": "Tres imaxes de referencia dun personaxe, co rótulo «Referencias», e unha frecha cara a catro viñetas co mesmo personaxe en escenas distintas (sol, ondas, árbore e nube), co rótulo «Mesmo personaxe»."
+    }
+  ],
+  "breves": [
+    {
+      "texto": "O acurtador de ligazóns ja.cat non cargaba o mércores 25 pola mañá e, segundo se comentou no grupo, a causa era unha incidencia do seu provedor de DNS, Dinahosting. No grupo propúxose unha solución provisional que só vale para o ordenador no que se aplica.",
+      "url": "https://ja.cat/",
+      "grupo": "vce",
+      "mensaje": {
+        "grupo": "vce",
+        "id": 15269
+      }
+    }
+  ],
+  "hay_edicion": true
+}

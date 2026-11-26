@@ -1,0 +1,85 @@
+{
+ "fecha": "2026-11-25",
+ "elegida": {
+  "n": 4,
+  "pieza": "vibe-responsable-4",
+  "idea": "Irekian argitaratu aurretik, Algoritmok lizentzia ezagunik ez duen guztia kentzen du, eta Klarionen zelulako marrazkia bakarrik geratzen da: segurtasunez berea da, ez baita inorenaren antzekoa (Algoritmok amaitzen du, eta Klarionek hartzen du txasko).",
+  "guion": {
+   "vinetas": [
+    {
+     "cartela": "Ikasgelan, apunte batzuk argitaratzeko prestatzen.",
+     "escenario": "aula",
+     "tiza": {
+      "expresion": "neutral",
+      "postura": "jarras",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "orgulloso",
+      "postura": "arriba",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Irekian joango bada, kendu lizentzia ezagunik ez duen guztia.",
+       "tipo": "habla"
+      },
+      {
+       "quien": "algoritmo",
+       "texto": "Eginda. Irudi bat geratu da.",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "aula",
+     "tiza": {
+      "expresion": "sorprendido",
+      "postura": "arriba",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "neutral",
+      "postura": "jarras",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Bat bakarrik? Zein?",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "aula",
+     "tiza": {
+      "expresion": "avergonzado",
+      "postura": "cruzar",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "contento",
+      "postura": "senalar",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "algoritmo",
+       "texto": "Zeure zelularen marrazkia. Zurea da, ziur: ez da inorena bezalakoa.",
+       "tipo": "habla"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "traduccion": "itzulpen automatikoa AArekin"
+}

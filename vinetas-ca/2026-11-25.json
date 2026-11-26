@@ -1,0 +1,85 @@
+{
+ "fecha": "2026-11-25",
+ "elegida": {
+  "n": 4,
+  "pieza": "vibe-responsable-4",
+  "idea": "Abans de publicar en obert, l'Algorisme treu tot el que no té llicència coneguda i només queda el dibuix de la cèl·lula de Guix: és seu segur, perquè no s'assembla a cap (remata l'Algorisme i el xasco és de Guix).",
+  "guion": {
+   "vinetas": [
+    {
+     "cartela": "A l'aula, preparant uns apunts per publicar-los.",
+     "escenario": "aula",
+     "tiza": {
+      "expresion": "neutral",
+      "postura": "jarras",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "orgulloso",
+      "postura": "arriba",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Si va en obert, fora tot el que no tingui llicència coneguda.",
+       "tipo": "habla"
+      },
+      {
+       "quien": "algoritmo",
+       "texto": "Fet. Ha quedat una imatge.",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "aula",
+     "tiza": {
+      "expresion": "sorprendido",
+      "postura": "arriba",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "neutral",
+      "postura": "jarras",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Només una? Quina?",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "aula",
+     "tiza": {
+      "expresion": "avergonzado",
+      "postura": "cruzar",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "contento",
+      "postura": "senalar",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "algoritmo",
+       "texto": "El teu dibuix de la cèl·lula. És teu segur: no s'assembla a cap.",
+       "tipo": "habla"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "traduccion": "automàtica amb IA"
+}

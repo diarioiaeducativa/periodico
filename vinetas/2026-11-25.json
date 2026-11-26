@@ -1,0 +1,138 @@
+{
+ "fecha": "2026-11-25",
+ "elegida": {
+  "n": 4,
+  "pieza": "vibe-responsable-4",
+  "idea": "Antes de publicar en abierto, Algoritmo quita todo lo que no tiene licencia conocida y solo queda el dibujo de la célula de Tiza: es suyo seguro, porque no se parece a ninguna (remata Algoritmo y el chasco es de Tiza).",
+  "guion": {
+   "vinetas": [
+    {
+     "cartela": "En el aula, preparando unos apuntes para publicarlos.",
+     "escenario": "aula",
+     "tiza": {
+      "expresion": "neutral",
+      "postura": "jarras",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "orgulloso",
+      "postura": "arriba",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Si va en abierto, fuera todo lo que no tenga licencia conocida.",
+       "tipo": "habla"
+      },
+      {
+       "quien": "algoritmo",
+       "texto": "Hecho. Ha quedado una imagen.",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "aula",
+     "tiza": {
+      "expresion": "sorprendido",
+      "postura": "arriba",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "neutral",
+      "postura": "jarras",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "¿Solo una? ¿Cuál?",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "aula",
+     "tiza": {
+      "expresion": "avergonzado",
+      "postura": "cruzar",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "contento",
+      "postura": "senalar",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "algoritmo",
+       "texto": "Tu dibujo de la célula. Es tuyo seguro: no se parece a ninguna.",
+       "tipo": "habla"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "motivo": "La 4 tiene el remate más inesperado y el más corto de explicar: la limpieza de licencias deja una sola imagen y el elogio de Algoritmo («es tuyo seguro») es en realidad una crítica al dibujo de Tiza. Se entiende sin haber leído la noticia, no inventa ningún dato de ella (la recomendación de quitar lo que no tenga licencia conocida está en la pieza) y la broma recae en Tiza, que es un personaje, no en nadie real. Además cambia el molde: los remates hablados de los números anteriores fueron de Tiza, y hoy remata Algoritmo con la sinceridad y el chasco es de ella. La 1 (la pizarra de fondo que convierte la web en aula) es la segunda: buena, pero es el molde gastado de Algoritmo literal, y su primera frase pide saber qué es la excepción educativa. La 2 acaba explicando el problema en vez de rematarlo; la 3 se ve venir desde la segunda viñeta; la 5 tiene un remate difuso que mezcla dos ideas (compartir y no encontrar).",
+ "retoques": "Remate recortado: «no se parece a ninguna otra» pasa a «no se parece a ninguna», que acaba en seco y deja oír «a ninguna célula». El primer bocadillo no se toca. Posturas: Tiza abre en jarras (exige la limpieza) en lugar de señalar, repetida en los números anteriores; Algoritmo espera en jarras en la segunda viñeta en lugar de «abajo», también repetida, y abre orgulloso en vez de contento para que «contento» quede solo en el remate, donde su inocencia hace el chiste. Escenario aula: libre, se mantiene. Sin objeto: el del número anterior tampoco se repite. Rótulo correcto (53 caracteres, sitúa sin adelantar). Ningún bocadillo pasa de 90 caracteres.",
+ "puntuaciones": [
+  {
+   "n": 1,
+   "pieza": "vibe-responsable-4",
+   "gracia": 7,
+   "claridad": 6,
+   "remate": 7,
+   "respeta_prohibiciones": true,
+   "cabe": true,
+   "comentario": "La pizarra de fondo que convierte la web en aula es una buena imagen, y la viñeta muda del medio da ritmo. Pero es el molde de Algoritmo literal, y «la excepción educativa» deja fuera a quien no ha leído la noticia."
+  },
+  {
+   "n": 2,
+   "pieza": "vibe-responsable-4",
+   "gracia": 5,
+   "claridad": 7,
+   "remate": 4,
+   "respeta_prohibiciones": true,
+   "cabe": true,
+   "comentario": "Fiel a la noticia, pero el remate de Tiza resume el problema en vez de dar un giro: explica el chiste. La gracia está en la segunda viñeta («ni las he copiado») y la tercera la apaga."
+  },
+  {
+   "n": 3,
+   "pieza": "breve-1",
+   "gracia": 6,
+   "claridad": 7,
+   "remate": 6,
+   "respeta_prohibiciones": true,
+   "cabe": true,
+   "comentario": "El rótulo «Ordenador 4 de 30» funciona y el remate mudo varía, pero el chiste se ve venir desde «hay treinta ordenadores». La frase del apaño está copiada del breve y suena a nota, no a diálogo."
+  },
+  {
+   "n": 4,
+   "pieza": "vibe-responsable-4",
+   "gracia": 8,
+   "claridad": 8,
+   "remate": 8,
+   "respeta_prohibiciones": true,
+   "cabe": true,
+   "comentario": "El mejor remate: sorprende, es corto y tiene doble lectura. Se entiende sin la noticia y el chasco es de Tiza, que cambia el molde de los últimos números."
+  },
+  {
+   "n": 5,
+   "pieza": "vibe-responsable-4",
+   "gracia": 4,
+   "claridad": 5,
+   "remate": 4,
+   "respeta_prohibiciones": true,
+   "cabe": true,
+   "comentario": "El remate junta dos ideas (quería compartirlo y la plataforma es un laberinto) y ninguna acaba de golpear. Las caras no acompañan: Tiza harta antes de que pase nada y riendo al final sin motivo claro."
+  }
+ ]
+}

@@ -1,0 +1,47 @@
+{
+  "fecha": "2026-11-25",
+  "piezas": [
+    {
+      "id": "transcribe-herramienta-local-de-transcri",
+      "seccion": "vibecoding",
+      "repositorio": "fondo",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Del fons del repositori",
+      "titular": "Transcriure àudio i vídeo i crear subtítols sense que l'arxiu surti de l'ordinador",
+      "entradilla": "Transcribe converteix gravacions en text i en subtítols amb el model Whisper, dins del navegador i sense enviar res a tercers. L'ha creat Juan José de Haro.",
+      "cuerpo": [
+        "Transcribe és una aplicació web que passa a text un arxiu d'àudio o de vídeo i permet baixar el resultat com a text pla o com a subtítols. L'ha creat Juan José de Haro i s'obre al navegador, sense instal·lar res. La pàgina diu que no s'envien dades a tercers: tot passa al mateix navegador, cosa que importa amb gravacions de classe o veus de l'alumnat.",
+        "L'ús és directe. Es prem «Seleccionar audio o vídeo», es carrega un arxiu local, s'escull el model (Whisper Tiny, Base o Small; Base ve per defecte, «el mejor equilibrio entre velocidad y calidad para la mayoría de los usos», segons la mateixa pàgina) i es prem «Iniciar transcripción». Segons el seu autor, el model es baixa la primera vegada, de manera que la primera transcripció és la més lenta. També es pot importar un arxiu SRT o VTT per corregir-lo.",
+        "El més útil per a una persona docent és l'editor. El text surt en fragments amb marques de temps, que es poden llegir i modificar mentre es reprodueix l'àudio o el vídeo, i en seleccionar un fragment el reproductor salta a aquest punt. La pàgina ofereix control de velocitat, de 0,75x a 2x, i botons per desfer i refer.",
+        "Pot servir per subtitular vídeos propis i fer-los més accessibles, per obtenir la transcripció d'una classe gravada o d'una entrevista, o perquè l'alumnat repassi una exposició per escrit. Com que la intel·ligència artificial es pot equivocar amb noms propis, tecnicismes o veus poc clares, convé revisar el text abans d'usar-lo.",
+        "La interfície està en castellà, català, gallec, basc i anglès, amb un selector a la cantonada superior. Segons el seu autor, conserva per defecte deu transcripcions, nombre modificable. El codi té llicència AGPL v3 i, segons la fitxa del repositori, l'aplicació s'adreça a secundària, batxillerat, formació professional, universitat i formació de persones adultes i del professorat."
+      ],
+      "recursos": [
+        {
+          "id": "transcribe-herramienta-local-de-transcri",
+          "titulo": "Transcribe: Herramienta Local de Transcripción de Audio y Vídeo",
+          "autoria": "Juan José de Haro",
+          "url": "https://jjdeharo.github.io/transcribe/",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://jjdeharo.github.io/transcribe/",
+          "licencia": "AGPL v3",
+          "captura": "2026-11-25-transcribe-herramienta-local-de-transcri.jpg",
+          "captura_alt": "Pàgina de Transcribe amb els botons per seleccionar àudio o vídeo i importar SRT o VTT, el selector de model Whisper, l'estat de la transcripció i el quadre del text extret.",
+          "texto": []
+        }
+      ],
+      "fuentes": [
+        {"titulo": "Transcribe (en castellà)", "url": "https://jjdeharo.github.io/transcribe/"},
+        {"titulo": "Presentació a Vibe Coding Educativo (en castellà)", "url": "https://t.me/vceduca/7674/10639"},
+        {"titulo": "Presentació a ChatGPT-IA-edu (en castellà)", "url": "https://t.me/ChatGPTedu/47801"}
+      ],
+      "comprobado": "Captura y texto visible de la página (navegador real): botones de carga de archivo e importación de SRT/VTT, modelos Whisper Tiny/Base/Small (Base por defecto), selector de idioma (Auto, es, en, ca, gl, eu), licencia AGPLv3, enlace de sugerencias y errores; la captura enseña la mitad superior (el editor y deshacer/rehacer salen en el texto visible). WebFetch solo devolvió el título (la página necesita JavaScript) y los enlaces de Telegram no mostraron el texto del mensaje: la descarga del modelo la primera vez y las diez transcripciones conservadas vienen del mensaje del autor recogido en la entrada, y van como suyas. Niveles, idiomas y autoría, de la entrada; mensaje con marca de autor del diario, por eso se le nombra Juan José de Haro. No se ha probado a transcribir un archivo.",
+      "repaso": [
+        "Cuerpo recortado de unas 400 a unas 340 palabras (límite del encargo): quitada la frase «está pensado para obtener subtítulos de calidad» y otras redundancias.",
+        "«Las diez últimas transcripciones» pasa a «diez transcripciones»: el mensaje del autor no dice «últimas».",
+        "`comprobado` actualizado con lo realmente verificado."
+      ]
+    }
+  ],
+  "descartado": []
+}

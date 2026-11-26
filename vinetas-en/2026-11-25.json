@@ -1,0 +1,85 @@
+{
+ "fecha": "2026-11-25",
+ "elegida": {
+  "n": 4,
+  "pieza": "vibe-responsable-4",
+  "idea": "Before publishing openly, Algorithm strips out everything without a known licence and only Chalk’s drawing of a cell is left: it is certainly hers, because it looks like no other (Algorithm delivers the punchline and the letdown falls on Chalk).",
+  "guion": {
+   "vinetas": [
+    {
+     "cartela": "In the classroom, preparing notes to publish.",
+     "escenario": "aula",
+     "tiza": {
+      "expresion": "neutral",
+      "postura": "jarras",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "orgulloso",
+      "postura": "arriba",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "If it’s going public, out with everything without a known licence.",
+       "tipo": "habla"
+      },
+      {
+       "quien": "algoritmo",
+       "texto": "Done. One image is left.",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "aula",
+     "tiza": {
+      "expresion": "sorprendido",
+      "postura": "arriba",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "neutral",
+      "postura": "jarras",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Just one? Which one?",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "aula",
+     "tiza": {
+      "expresion": "avergonzado",
+      "postura": "cruzar",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "contento",
+      "postura": "senalar",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "algoritmo",
+       "texto": "Your drawing of the cell. Definitely yours: it looks like no cell at all.",
+       "tipo": "habla"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "traduccion": "automatic AI translation"
+}

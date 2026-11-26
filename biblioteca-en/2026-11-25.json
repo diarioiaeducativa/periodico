@@ -1,0 +1,84 @@
+{
+  "fecha": "2026-11-25",
+  "piezas": [
+    {
+      "id": "ailit-ocde-ue-marco",
+      "seccion": "biblioteca",
+      "importancia": 2,
+      "grupo": "chatgpt",
+      "antetitulo": "OECD and EU framework",
+      "titular": "OECD and EU set out four areas of AI literacy for primary and secondary schools",
+      "entradilla": "The non-binding AILit framework describes in 19 competences, with three levels of progression and classroom examples, what students should know, do and value when it comes to artificial intelligence.",
+      "cuerpo": [
+        "“[Empowering learners for the age of AI](https://doi.org/10.2766/9487009)” is the title of the AILit Framework, a joint initiative of the European Commission and the Organisation for Economic Co-operation and Development (OECD). It was produced with the support of CodeAI, an AI education organisation, and a group of twelve experts from several countries. The European Commission [presented it in Brussels on 18 June 2026](https://education.ec.europa.eu/node/3537); the document notes that it builds on a draft from May 2025, later revised after an international consultation.",
+        "The starting point is a distinction the text underlines: “AI literacy is not the same as using AI tools”. It takes an understanding of how these systems work, a critical evaluation of their outputs and a decision about when to use them, including the decision not to use them. Among its basic ideas are that an AI system is not human, that it generates results from statistical patterns without understanding or intent, and that students should describe it without attributing human traits to it.",
+        "The framework organises learning into four areas, presented in order: engaging with AI, creating with AI, managing AI and designing AI. The first (seven competences) is about recognising where AI is present, judging whether an output should be accepted, revised or rejected, and analysing bias and the use of energy and resources. In “creating” (four competences) AI is a collaborator that does not replace the student's own ideas, and authenticity and intellectual property are addressed. “Managing” (four) means deciding whether AI is the right tool for a task and dividing the work between people and machines. “Designing” (four) is the most technical: investigating who a system is designed for, evaluating it against criteria and proposing improvements. The text itself warns that this last area may need more time and support.",
+        "Each competence is broken down into knowledge, skills and attitudes, and into expectations at basic, intermediate and advanced levels which, according to the document, do not correspond to specific ages or school years. The classroom examples are concrete. In “AI or not AI”, students sort devices and apps according to whether or not they use AI. In another activity they move to corners of the classroom labelled “AI only”, “With AI help”, “Humans only” or “I don't know” and defend their choice.",
+        "The document does not hide its doubts. It cites data from TALIS 2024, the OECD's international survey of teachers: on average, only one in three teachers uses AI and three in four say they lack the knowledge to teach with it. It acknowledges that the evidence on the effectiveness of generative AI for learning “remains mixed” and that students who use it may produce better work without making lasting progress.",
+        "It has clear limits. It is not binding, its views do not necessarily reflect the official positions of the EU and it does not set out to guide how to apply the AI Act. More than 2,000 people from more than 100 countries took part in the consultation on the draft (from May to October 2025). The paper has already covered the [conclusions of the Council of the EU on AI competences](pieza:2026-11-20/consejo-ue-competencias-ia) and the [Canadian AI literacy initiative](pieza:2026-11-19/canada-alfabetizacion-ia), which deal with the same subject. The library also includes [DigComp 3.0](https://t.me/ChatGPTedu/21753/42900), the European digital competence framework on which this one builds, and [an earlier entry with the same title](https://t.me/ChatGPTedu/21753/49714), from 22 June 2026.",
+        "For a teacher, the most useful parts are the sheets for each competence, with activities ready to adapt to any subject, and the sections devoted to schools and families. One way to start is to read the four areas and pick a single competence, such as evaluating AI outputs, to try out a classroom example. The licence is CC BY 4.0, with specific conditions for translations and adaptations."
+      ],
+      "documento": {
+        "titulo": "Cómo preparar a los alumnos para la era de la IA: Marco de competencias sobre IA para la educación primaria y secundaria (original: Empowering learners for the age of AI: An AI literacy framework for primary and secondary education)",
+        "autoria": "OECD / European Union (European Commission), with CodeAI",
+        "anyo": "2026",
+        "idioma": "Spanish (translation of the English original)",
+        "licencia": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "url": "https://doi.org/10.2766/9487009"
+      },
+      "fuentes": [
+        {"titulo": "Cómo preparar a los alumnos para la era de la IA (EU edition, DOI) (in Spanish)", "url": "https://doi.org/10.2766/9487009"},
+        {"titulo": "Empowering learners for the age of AI (OECD Publishing, English original)", "url": "https://doi.org/10.1787/65cd27d4-en"},
+        {"titulo": "Presentation of the framework at the European Commission (18 June 2026)", "url": "https://education.ec.europa.eu/node/3537"}
+      ],
+      "mensaje": {"grupo": "chatgpt", "id": 54674},
+      "comprobado": "Revisor: contrastado con el texto completo del PDF de la entrada (créditos, introducción, fundamentos, ámbitos y competencias 7+4+4+4, consulta, TALIS): doce personas expertas, CodeAI, borrador de mayo de 2025, consulta de mayo a octubre de 2025 con más de 2000 personas y más de 100 países, cita literal “Alfabetización en IA no es lo mismo que el uso de herramientas de IA”, “siguen siendo dispares”, rincones del aula, niveles no ligados a cursos, no vinculante, CC BY 4.0. Abierta la página de la Comisión (education.ec.europa.eu/node/3537): presentación el 18-06-2026 en Bruselas, 4 dimensiones y 19 competencias. Una búsqueda confirma el original en inglés (DOI 10.1787/65cd27d4-en, OCDE); el DOI 10.2766/9487009 es el de la ficha de la biblioteca y no se pudo abrir (404 con WebFetch), por eso se deja el de la ficha. Enlaces a mensajes de la biblioteca (42900, 49714) comprobados en la lista de la entrada; piezas enlazadas en publicado.txt. Recortado el cuerpo por pasarse de 700 palabras.",
+      "ilustracion": "Cuatro peldaños ascendentes etiquetados Interactuar, Crear, Gestionar y Moldear, con el número de competencias de cada uno (7, 4, 4, 4); junto al último, una pequeña ficha con tres niveles (básico, intermedio, avanzado).",
+      "ilustracion_alt": "Staircase of four ascending steps labelled “Engage”, “Create”, “Manage” and “Design”; above each step there is one dot per competence: seven on the first and four on each of the others. On the right, a card with three lines of increasing length and the label “3 levels”."
+    },
+    {
+      "id": "ue-contenidos-educativos-digitales",
+      "seccion": "biblioteca",
+      "importancia": 2,
+      "grupo": "chatgpt",
+      "antetitulo": "EU guidelines",
+      "titular": "Eight EU criteria for choosing and evaluating digital educational content in the classroom",
+      "entradilla": "A non-binding European Commission guide supports teachers and school leadership teams from selecting a resource to evaluating its effect.",
+      "cuerpo": [
+        "“[Making informed decisions on digital educational content](https://doi.org/10.2766/1574949)” (title translated from the Spanish edition) is a guide from the European Commission's Directorate-General for Education, Youth, Sport and Culture, published by the EU Publications Office. It was produced with a group of experts from publishers, education technology companies, trade unions, universities and European bodies, with the manuscript completed in October 2025. It defines digital educational content as any educational resource in digital format. It is aimed mainly at teachers and school leadership teams, does not define curricula and warns that it is not binding.",
+        "The guide has three parts. The first explains what this content is for: reinforcing an explanation, working in small groups, practising, creating or assessing. The advantages it cites are accessibility, differentiating work according to level, immediate feedback in assessments, quick updating and analysis of usage data.",
+        "At the heart of the document are eight quality criteria, which according to the text synthesise 65 quality frameworks and academic documents: pedagogical suitability and alignment with the curriculum, engaging learning experiences, design, accessibility and inclusion, reliability, impact and evaluation, legal compliance, technical interoperability and financial viability. Each one includes what to look for in the classroom and in the school, a quick check and questions to ask. The guide suggests that teachers prioritise the criteria closest to the classroom, that the leadership team start with the financial, technical and legal ones and that everyone weigh all eight, for example with a radar chart.",
+        "Artificial intelligence appears throughout. Content generated with AI, the guide says, must be clearly labelled as such and used with care, and it is worth checking where its data comes from and whether it reflects the school's values. It mentions that providers must disclose when someone is interacting with an AI system, under Article 50 of the AI Act, and that works created entirely with AI, with little human input, are normally not protected by copyright. It recommends not feeding protected content into generative AI tools.",
+        "On the legal side, it asks schools to require a data processing agreement from the provider and to be wary of resources that ask for a camera, chat or links to unknown third parties. On licences, it warns that using a resource in an educational context does not mean it can be freely copied, adapted or redistributed. That the guide is not binding does not change what the General Data Protection Regulation or the AI Act require: these are rules the school must comply with, with or without it. In this same issue, [Responsible Vibe Coding 4.0](pieza:2026-11-25/vibe-responsable-4) applies the copyright exception for teaching to what is published openly; this article deals with the rest of the document.",
+        "The third part moves on to everyday decisions: selection, creation, access, use and adaptation, and evaluation, with steps, questions and fictional scenarios. On cost, it recommends calculating the total cost, including licences, training and support, and asking how a free resource is funded. The products it cites are illustrative and do not imply endorsement by the Commission.",
+        "For a teacher, it is useful as a checklist before adopting a tool, and for a leadership team, as a basis for a school policy. The questions under “Ask yourself these questions” can be taken almost as they are to a department meeting. The library holds related documents, such as the [EU ethical guidelines on AI and data for educators (2022)](https://t.me/ChatGPTedu/21753/21845), which this guide recommends consulting, and the [principles for procuring digital educational platforms](https://t.me/ChatGPTedu/21753/47839), which deal with a neighbouring subject."
+      ],
+      "documento": {
+        "titulo": "Toma de decisiones fundamentadas sobre contenidos educativos digitales: Directrices de la UE para docentes y educadores",
+        "autoria": "European Commission, Directorate-General for Education, Youth, Sport and Culture (Publications Office of the European Union)",
+        "anyo": "2026",
+        "idioma": "Spanish",
+        "licencia": "Creative Commons Attribution 4.0 International (CC BY 4.0), according to the document itself",
+        "url": "https://doi.org/10.2766/1574949"
+      },
+      "fuentes": [
+        {"titulo": "Toma de decisiones fundamentadas sobre contenidos educativos digitales (EU Publications Office) (in Spanish)", "url": "https://doi.org/10.2766/1574949"},
+        {"titulo": "Record at the EU Publications Office (in Spanish)", "url": "https://op.europa.eu/publication/manifestation_identifier/PUB_NC0125180ESN"}
+      ],
+      "mensaje": {"grupo": "chatgpt", "id": 54678},
+      "comprobado": "Revisor: contrastado con el texto completo del PDF de la entrada: grupo de expertos (FEP, European EdTech Alliance, ETUCE, universidades), manuscrito de octubre de 2025, “Luxemburgo, 2026”, CC BY 4.0, no vinculante y sin definir currículos, ocho criterios (los ocho enumerados coinciden con la figura del apartado 3), 65 marcos, prioridades de docentes y directivos, gráfico radial, artículo 50 de la Ley de IA, obras íntegramente con IA, acuerdo de tratamiento de datos, cámara y chat, licencias, coste total de propiedad, productos ilustrativos. Abierta la ficha de la Oficina de Publicaciones (op.europa.eu): autoría DG EAC, ISBN y DOI coinciden; no indica licencia y da publicación de 2025 (16-12-2025), mientras el PDF dice “Luxemburgo, 2026”; se deja 2026, que es lo que dicen el PDF y la ficha de la biblioteca. La pieza vibe-responsable-4 leyó el capítulo 6 de otra guía y la ficha de la Oficina de Publicaciones, no este documento, por lo que no se da por contado y se enlaza (es del mismo número, no del 25 de noviembre: se quita esa fecha). Enlaces a mensajes de la biblioteca (21845, 47839) comprobados en la lista de la entrada. Recortado el cuerpo por pasarse de 700 palabras (quitadas las fuentes habituales y los escenarios ficticios).",
+      "ilustracion": "Un octógono (gráfico radial) con los ocho criterios en los vértices y una línea irregular que marca los puntos fuertes y débiles de un recurso, con una lupa sobre el criterio de cumplimiento legal.",
+      "ilustracion_alt": "An octagon with eight vertices and spokes from the centre, labelled “Eight criteria”. Inside, an irregular blue line joins points at varying distances from each vertex, marking a resource's strengths and weaknesses. A red magnifying glass points at one of the vertices, labelled “Legal compliance”."
+    }
+  ],
+  "ya_contado": [],
+  "descartado": [],
+  "repaso": [
+    "ailit-ocde-ue-marco: cifras, cita, fechas y autoría confirmadas con el PDF y la página de la Comisión; enumeración 7+4+4+4=19 coincide con el texto y con la ilustración.",
+    "ailit-ocde-ue-marco: enlazados en su primera mención el título del documento (DOI de la ficha) y la presentación del 18-06-2026.",
+    "ailit-ocde-ue-marco: recortado el cuerpo a menos de 700 palabras (PISA 2029, frase sobre el chatbot, ejemplo de comparar recomendaciones, matiz de Informática, advertencia sobre un solo docente, temas pedidos en la consulta).",
+    "ue-contenidos-educativos-digitales: datos confirmados con el PDF; ocho criterios enumerados y coinciden con la ilustración.",
+    "ue-contenidos-educativos-digitales: enlazado el título del documento en su primera mención; “el diario recogió el 25 de noviembre” pasa a “en este mismo número” (la clave es la fecha de las conversaciones, no la de publicación).",
+    "ue-contenidos-educativos-digitales: recortado el cuerpo a menos de 700 palabras (ejemplos de contenido, fuentes habituales, coste energético, escenarios ficticios)."
+  ]
+}

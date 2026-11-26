@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340">
+<rect class="fa t" x="30" y="40" width="80" height="70" rx="4"/>
+<circle class="t" cx="70" cy="64" r="10"/><circle class="ft" cx="66" cy="62" r="1.5"/><circle class="ft" cx="74" cy="62" r="1.5"/><rect class="fz t" x="58" y="76" width="24" height="24" rx="7"/>
+<rect class="fa t" x="30" y="130" width="80" height="70" rx="4"/>
+<circle class="t" cx="70" cy="154" r="10"/><circle class="ft" cx="66" cy="152" r="1.5"/><circle class="ft" cx="74" cy="152" r="1.5"/><rect class="fz t" x="58" y="166" width="24" height="24" rx="7"/>
+<rect class="fa t" x="30" y="220" width="80" height="70" rx="4"/>
+<circle class="t" cx="70" cy="244" r="10"/><circle class="ft" cx="66" cy="242" r="1.5"/><circle class="ft" cx="74" cy="242" r="1.5"/><rect class="fz t" x="58" y="256" width="24" height="24" rx="7"/>
+<text class="lbl" x="70" y="318" text-anchor="middle">Referències</text>
+<path class="a" d="M128 165 H212 M200 154 L212 165 L200 176"/>
+<rect class="t" x="240" y="40" width="165" height="120" rx="6"/>
+<circle class="t" cx="375" cy="68" r="10"/><path class="t" d="M375 50 V54 M393 68 H389 M357 68 H361"/>
+<path class="t" d="M240 140 H405"/>
+<circle class="fa t" cx="310" cy="78" r="14"/><circle class="ft" cx="305" cy="76" r="2"/><circle class="ft" cx="315" cy="76" r="2"/><rect class="fz t" x="296" y="94" width="28" height="30" rx="8"/>
+<rect class="t" x="420" y="40" width="165" height="120" rx="6"/>
+<path class="t" d="M420 135 C440 123 455 147 475 135 C495 123 510 147 530 135 C550 123 565 147 585 135"/>
+<circle class="fa t" cx="490" cy="78" r="14"/><circle class="ft" cx="485" cy="76" r="2"/><circle class="ft" cx="495" cy="76" r="2"/><rect class="fz t" x="476" y="94" width="28" height="30" rx="8"/>
+<rect class="t" x="240" y="175" width="165" height="120" rx="6"/>
+<path class="t" d="M240 275 H405"/>
+<rect class="fa t" x="366" y="228" width="8" height="47"/><circle class="fa t" cx="370" cy="214" r="20"/>
+<circle class="fa t" cx="310" cy="213" r="14"/><circle class="ft" cx="305" cy="211" r="2"/><circle class="ft" cx="315" cy="211" r="2"/><rect class="fz t" x="296" y="229" width="28" height="30" rx="8"/>
+<rect class="t" x="420" y="175" width="165" height="120" rx="6"/>
+<path class="t" d="M520 205 a8 8 0 0 1 8 -8 a12 12 0 0 1 22 4 a8 8 0 0 1 2 16 H524 a8 8 0 0 1 -4 -12 Z"/>
+<path class="t" d="M420 275 H585"/>
+<circle class="fa t" cx="470" cy="213" r="14"/><circle class="ft" cx="465" cy="211" r="2"/><circle class="ft" cx="475" cy="211" r="2"/><rect class="fz t" x="456" y="229" width="28" height="30" rx="8"/>
+<text class="a lbl" x="412" y="324" text-anchor="middle">Mateix personatge</text>
+</svg>

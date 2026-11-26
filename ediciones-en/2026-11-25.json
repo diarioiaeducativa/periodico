@@ -1,0 +1,95 @@
+{
+  "fecha": "2026-11-25",
+  "motivo": "",
+  "piezas": [
+    {
+      "id": "vibe-responsable-4",
+      "seccion": "vibecoding",
+      "importancia": 1,
+      "grupo": "vce",
+      "antetitulo": "Community guide",
+      "titular": "Vibe Coding Responsable 4.0: anything published openly must be reusable",
+      "entradilla": "Version 4.0 of Juan José de Haro’s guide explains that the educational exception in copyright law does not cover what is published on an open website.",
+      "cuerpo": [
+        "Juan José de Haro has published version 4.0 of the guide [Vibe Coding Responsable](https://vibe-coding-educativo.github.io/vibe-responsable/es/capitulo-6.html), a set of recommendations for teachers who create educational materials with the help of artificial intelligence. The guide, licensed under CC BY-SA 4.0, has already appeared in the paper, in [the repository’s weekly round-up of 7 November](pieza:2026-11-06/semana-del-repositorio), which listed it among the new releases.",
+        "The change its author highlights in the Vibe Coding Educativo group affects teachers who share materials. The copyright exception that the European Union provides for teaching, according to the chapter “Antes de publicar: diez recomendaciones” (“Before publishing: ten recommendations”), covers only use under the school’s responsibility, in the classroom or on closed platforms. Material published openly falls outside it, and so everything it contains must allow reuse: it cannot include protected images or texts.",
+        "This has a practical consequence for teachers who code with the help of AI: the AI assistant may link to images from other websites without their licence being stated. The guide recommends replacing each one with another image under a known licence and storing it inside the material itself. If an element does not allow reuse, or its licence is unknown, the prudent course is to change it.",
+        "According to the author, the change is based on the European Commission’s guidelines on digital educational content, “[Making informed decisions about digital educational content](https://doi.org/10.2766/1574949)”. That document is in the [ChatGPT-IA-edu digital library](https://t.me/ChatGPTedu/21753/54678). The guide’s page does not say what else has changed in version 4.0."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Vibe Coding Responsable, chapter “Antes de publicar: diez recomendaciones” (in Spanish)",
+          "url": "https://vibe-coding-educativo.github.io/vibe-responsable/es/capitulo-6.html"
+        },
+        {
+          "titulo": "Making informed decisions about digital educational content (European Commission)",
+          "url": "https://doi.org/10.2766/1574949"
+        },
+        {
+          "titulo": "Document in the ChatGPT-IA-edu digital library (in Spanish)",
+          "url": "https://t.me/ChatGPTedu/21753/54678"
+        }
+      ],
+      "mensaje": {
+        "grupo": "vce",
+        "id": 15285
+      },
+      "comprobado": "Revisor: abierto el capítulo 6 de la guía: excepción de la UE solo bajo la responsabilidad del centro (aula o plataformas cerradas), publicación en abierto fuera de ella y con contenidos reutilizables, IA que enlaza imágenes sin licencia y recomendación de sustituirlas; autor (© 2026 Juan José de Haro) y CC BY-SA 4.0. Ficha de la Oficina de Publicaciones de la UE: título, autoría de la DG de Educación de la Comisión y 2025 (16-12-2025), así que no se repite “marzo”. Mensaje de la Biblioteca (ChatGPTedu/54678): mismo título en PDF. Mensaje 15285 de VCE coincide con el tema. La semana del repositorio del 7-11 recoge la guía. La página no explica los cambios de la 4.0.",
+      "ilustracion": "Dos estanterías: una cerrada, dentro de un aula, con imágenes de cualquier procedencia; otra abierta, hacia la calle, donde solo entran materiales con un sello de licencia libre.",
+      "grafico": null,
+      "ilustracion_alt": "Two shelves of images. On the left, a closed shelf with a padlock labelled “Closed classroom”. On the right, an open shelf with a verification badge labelled “Known licence”. Between them, an arrow labelled “Open”."
+    },
+    {
+      "id": "ideogram-personajes-coherentes",
+      "seccion": "multimedia",
+      "importancia": 3,
+      "grupo": "edumedia",
+      "antetitulo": "From the EduMedia archive",
+      "titular": "Ideogram lets you repeat the same character across several images for classroom materials",
+      "entradilla": "The image tool includes a free plan with weekly credits. On that plan, images are public, and students who are minors need their family’s permission.",
+      "cuerpo": [
+        "[Ideogram](https://ideogram.ai/) is an online platform for generating and editing images with artificial intelligence. In the EduMedia-IAG group, members shared its characters feature, which keeps the appearance of the same character across different images. According to [the company’s own help pages](https://docs.ideogram.ai/frequently-asked-questions), you add between one and five reference images and name the character in the description (*prompt*) using its tag; it can also be saved in the library for reuse.",
+        "In the classroom it can be used, for example, to create a mascot for a reading or a project and show it in several scenes: an illustrated story, a comic to revise vocabulary or a sequence explaining a scientific process with the same protagonist. Teachers can prepare the material and project it, or guide students as they create it.",
+        "To get started, you create an account, upload a clear image of the character or generate a first one, and then describe the new scenes. The help pages do not make clear which plans include this feature, and it may vary by workspace: it is worth trying it out before planning the activity.",
+        "Free accounts created with Google or Apple receive 30 credits each week, according to the help pages as of 24 November 2026; accounts created with an email address and password receive no credits. Images on the free plan are public, so they must not include students’ data or images. According to the [terms of use](https://ideogram.ai/legal/tos), users must be at least 13, and those under the legal age of majority need a parent or guardian to accept the terms. It is preferable for the teacher to use the account."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Ideogram",
+          "url": "https://ideogram.ai/"
+        },
+        {
+          "titulo": "Ideogram frequently asked questions",
+          "url": "https://docs.ideogram.ai/frequently-asked-questions"
+        },
+        {
+          "titulo": "Ideogram terms of use",
+          "url": "https://ideogram.ai/legal/tos"
+        }
+      ],
+      "herramienta": {
+        "nombre": "Ideogram",
+        "url": "https://ideogram.ai/"
+      },
+      "mensaje": {
+        "grupo": "edumedia",
+        "id": 1184
+      },
+      "comprobado": "Revisado el 24-11-2026: web oficial ideogram.ai (plataforma de generación y edición de imágenes; cuentas gratuitas con Google, Apple o Microsoft reciben créditos semanales variables, con correo y contraseña no; función de personajes con imágenes de referencia); preguntas frecuentes en docs.ideogram.ai (30 créditos semanales con Google o Apple, imágenes del plan gratuito públicas, personajes con 1 a 5 imágenes y etiqueta, biblioteca de personajes, sin precisar planes); condiciones en ideogram.ai/legal/tos (13 años como mínimo; menores de edad legal, solo con aceptación de madre, padre o tutor). No aparece en lo publicado por el diario. Mensaje 1184 de EduMedia-IAG verificado (recomienda la herramienta “Character”; sin opiniones de terceros).",
+      "ilustracion": "Un mismo personaje sencillo, dibujado a partir de una hoja con tres imágenes de referencia a la izquierda, que aparece a la derecha en cuatro viñetas de escenas distintas.",
+      "ilustracion_alt": "Three reference images of a character, labelled “References”, and an arrow pointing to four panels showing the same character in different scenes (sun, waves, tree and cloud), labelled “Same character”."
+    }
+  ],
+  "breves": [
+    {
+      "texto": "The ja.cat link shortener failed to load on the morning of Wednesday 25th and, according to a comment in the group, the cause was an incident at its DNS provider, Dinahosting. A temporary workaround was suggested in the group, but it only works on the computer where it is applied.",
+      "url": "https://ja.cat/",
+      "grupo": "vce",
+      "mensaje": {
+        "grupo": "vce",
+        "id": 15269
+      }
+    }
+  ],
+  "hay_edicion": true
+}

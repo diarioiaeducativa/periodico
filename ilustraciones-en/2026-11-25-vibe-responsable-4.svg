@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340">
+<g class="t li3" transform="translate(104 14) scale(3)"><!-- Lucide: lock (ISC) --><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></g>
+<rect class="t fa" x="40" y="110" width="200" height="160" rx="8"/>
+<path class="t" d="M40 190 H240"/>
+<rect class="t" x="58" y="135" width="40" height="40" rx="4"/>
+<rect class="t" x="110" y="135" width="40" height="40" rx="4"/>
+<rect class="t" x="162" y="135" width="60" height="40" rx="4"/>
+<rect class="t" x="58" y="215" width="60" height="40" rx="4"/>
+<rect class="t" x="130" y="215" width="40" height="40" rx="4"/>
+<text class="lbl" x="140" y="306" text-anchor="middle">Closed classroom</text>
+<g class="a li3" transform="translate(424 14) scale(3)"><!-- Lucide: badge-check (ISC) --><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/><path d="m16 9-5.5 5.5L8 12"/></g>
+<path class="t" d="M360 110 V270 M560 110 V270 M360 110 H560 M360 190 H560 M360 270 H560"/>
+<rect class="t fa" x="378" y="135" width="40" height="40" rx="4"/>
+<rect class="t fa" x="430" y="135" width="40" height="40" rx="4"/>
+<rect class="t fa" x="482" y="135" width="60" height="40" rx="4"/>
+<rect class="t fa" x="378" y="215" width="60" height="40" rx="4"/>
+<rect class="t fa" x="450" y="215" width="40" height="40" rx="4"/>
+<circle class="fz" cx="398" cy="155" r="5"/>
+<circle class="fz" cx="450" cy="155" r="5"/>
+<circle class="fz" cx="512" cy="155" r="5"/>
+<circle class="fz" cx="408" cy="235" r="5"/>
+<circle class="fz" cx="470" cy="235" r="5"/>
+<text class="a lbl" x="460" y="306" text-anchor="middle">Known licence</text>
+<path class="a" d="M262 190 H338 M326 181 L338 190 L326 199"/>
+<text class="lbl" x="300" y="170" text-anchor="middle">Open</text>
+</svg>

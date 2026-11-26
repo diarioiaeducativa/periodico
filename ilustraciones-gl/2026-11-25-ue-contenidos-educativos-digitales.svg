@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340">
+<path class="t fa" d="M180 170 L215 85 L300 50 L385 85 L420 170 L385 255 L300 290 L215 255 Z"/>
+<path class="t" d="M300 170 L180 170 M300 170 L215 85 M300 170 L300 50 M300 170 L385 85 M300 170 L420 170 M300 170 L385 255 M300 170 L300 290 M300 170 L215 255"/>
+<path class="a" d="M204 170 L257 128 L300 62 L351 119 L384 170 L330 200 L300 266 L236 234 Z"/>
+<circle class="ft" cx="180" cy="170" r="5"/><circle class="ft" cx="215" cy="85" r="5"/><circle class="ft" cx="300" cy="50" r="5"/><circle class="ft" cx="385" cy="85" r="5"/><circle class="ft" cx="420" cy="170" r="5"/><circle class="ft" cx="385" cy="255" r="5"/><circle class="ft" cx="300" cy="290" r="5"/><circle class="ft" cx="215" cy="255" r="5"/>
+<g class="r li3" transform="translate(352 222) scale(3)"><!-- Lucide: search (ISC) --><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></g>
+<text class="lbl" x="85" y="176" text-anchor="middle">Oito criterios</text>
+<text class="lbl" x="505" y="318" text-anchor="middle">Cumprimento legal</text>
+</svg>

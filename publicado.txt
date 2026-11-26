@@ -224,8 +224,13 @@
 ## 2026-11-24 (publicado el miércoles 25 de noviembre de 2026)
 - pieza:2026-11-24/microsoft-elevate-educators (novedades) Microsoft lleva a España Elevate for Educators, formación en IA para docentes
 - pieza:2026-11-24/navarra-inspeccion-ia (novedades) Navarra prevé usar IA en la inspección educativa sin precisar qué programas ni qué datos
-- pieza:2026-11-24/agentes-coste-cuota (multimedia) Conectar agentes de IA con Blender o Unreal agota la cuota muy rápido, cuentan en EduMedia-IAG
-- breve: Un miembro de EduMedia-IAG ha probado Project Genie, de Google, y cuenta que le costó hace
-- breve: Según se explicó en VCE, la guía de privacidad con el semáforo del INTEF ya no enseña las 
-- breve: Gemini ya muestra a un usuario la opción para desactivar que sus conversaciones entrenen l
-- breve: Según el cartel compartido en el grupo, el INTEF mantiene abierta hasta el 27 de noviembre
+- pieza:2026-11-24/agentes-coste-cuota (multimedia) Conectar la IA a Blender o Unreal agota muy rápido el límite de uso, según EduMedia-IAG
+- breve: En EduMedia-IAG se ha compartido una primera prueba de Project Genie, la herramienta de Go
+- breve: Según se explicó en el grupo Vibe Coding Educativo, la guía de privacidad que clasifica co
+- breve: Gemini ya muestra a un usuario la opción para desactivar el uso de sus conversaciones para
+- breve: Según el cartel compartido en ChatGPT-IA-edu, el INTEF mantiene abierta hasta el 27 de nov
+- pieza:2026-11-24/gestor-personal-de-gastos-mensuales (repositorio) Mis Gastos anota gastos por categorías y los muestra en gráficas; se usa en Historia — recursos con artículo: Gestor Personal de Gastos Mensuales (https://misgastosmensuales.netlify.app/)
+
+## 2026-11-25 (publicado el jueves 26 de noviembre de 2026)
+- pieza:2026-11-25/vibe-responsable-4 (vibecoding) Vibe Coding Responsable 4.0: lo publicado en abierto debe poder reutilizarse
+- breve: El acortador de enlaces ja.cat no cargaba el miércoles 25 por la mañana y, según se coment

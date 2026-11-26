@@ -1,0 +1,47 @@
+{
+  "fecha": "2026-11-25",
+  "piezas": [
+    {
+      "id": "transcribe-herramienta-local-de-transcri",
+      "seccion": "vibecoding",
+      "repositorio": "fondo",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Biltegiaren fondotik",
+      "titular": "Audioa eta bideoa transkribatu, azpitituluak sortu, fitxategia ordenagailutik atera gabe",
+      "entradilla": "Transcribe-k grabazioak testu eta azpititulu bihurtzen ditu Whisper ereduarekin, nabigatzailearen barruan eta hirugarrenei ezer bidali gabe. Juan José de Harok sortu du.",
+      "cuerpo": [
+        "Transcribe audio- edo bideo-fitxategi bat testu bihurtzen duen web-aplikazioa da, eta emaitza testu soil gisa edo azpitituluak balira bezala deskargatzeko aukera ematen du. Juan José de Harok sortu du, eta nabigatzailean irekitzen da, ezer instalatu gabe. Orriak dio ez zaiela daturik bidaltzen hirugarrenei: dena nabigatzailean bertan gertatzen da, eta hori garrantzitsua da klaseko grabazioekin edo ikasleen ahotsekin lan egitean.",
+        "Erabilera zuzena da. «Seleccionar audio o vídeo» sakatzen da, tokiko fitxategi bat kargatzen da, eredua aukeratzen da (Whisper Tiny, Base edo Small; Base dator lehenetsita, orriaren beraren arabera «erabilera gehienetarako abiaduraren eta kalitatearen arteko oreka onena») eta «Iniciar transcripción» sakatzen da. Egilearen arabera, eredua lehen aldian deskargatzen da; beraz, lehen transkripzioa da motelena. SRT edo VTT fitxategi bat ere inporta daiteke, zuzentzeko.",
+        "Irakasle batentzat erabilgarriena editorea da. Testua denbora-markadun zatitan ateratzen da, eta audioa edo bideoa erreproduzitzen den bitartean irakurri eta alda daiteke; zati bat hautatzean, erreproduzigailua puntu horretara jauzi egiten da. Orriak abiadura-kontrola eskaintzen du, 0,75x-tik 2x-ra, eta desegiteko eta berregiteko botoiak.",
+        "Baliagarria izan daiteke norberaren bideoak azpititulatzeko eta irisgarriagoak egiteko, grabatutako klase baten edo elkarrizketa baten transkripzioa lortzeko, edo ikasleek azalpen bat idatziz berrikusteko. Adimen artifizialak akatsak egin ditzakeenez izen propioekin, termino teknikoekin edo ahots lauso samarrekin, komeni da testua berrikustea erabili aurretik.",
+        "Interfazea gaztelaniaz, katalanez, galegoz, euskaraz eta ingelesez dago, goiko eskuineko izkinan hizkuntza-hautatzaile batekin. Egilearen arabera, lehenespenez hamar transkripzio gordetzen ditu, eta zenbakia alda daiteke. Kodeak AGPL v3 lizentzia du eta, biltegiaren fitxaren arabera, aplikazioa Bigarren Hezkuntzara, Batxilergora, Lanbide Heziketara, Unibertsitatera eta helduen eta irakasleen prestakuntzara zuzenduta dago."
+      ],
+      "recursos": [
+        {
+          "id": "transcribe-herramienta-local-de-transcri",
+          "titulo": "Transcribe: Herramienta Local de Transcripción de Audio y Vídeo",
+          "autoria": "Juan José de Haro",
+          "url": "https://jjdeharo.github.io/transcribe/",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://jjdeharo.github.io/transcribe/",
+          "licencia": "AGPL v3",
+          "captura": "2026-11-25-transcribe-herramienta-local-de-transcri.jpg",
+          "captura_alt": "Transcribe orria: audioa edo bideoa hautatzeko eta SRT edo VTT inportatzeko botoiak, Whisper ereduaren hautatzailea, transkripzioaren egoera eta ateratako testuaren koadroa.",
+          "texto": []
+        }
+      ],
+      "fuentes": [
+        {"titulo": "Transcribe (gaztelaniaz)", "url": "https://jjdeharo.github.io/transcribe/"},
+        {"titulo": "Vibe Coding Educativoko aurkezpena (gaztelaniaz)", "url": "https://t.me/vceduca/7674/10639"},
+        {"titulo": "ChatGPT-IA-edun egindako aurkezpena (gaztelaniaz)", "url": "https://t.me/ChatGPTedu/47801"}
+      ],
+      "comprobado": "Captura y texto visible de la página (navegador real): botones de carga de archivo e importación de SRT/VTT, modelos Whisper Tiny/Base/Small (Base por defecto), selector de idioma (Auto, es, en, ca, gl, eu), licencia AGPLv3, enlace de sugerencias y errores; la captura enseña la mitad superior (el editor y deshacer/rehacer salen en el texto visible). WebFetch solo devolvió el título (la página necesita JavaScript) y los enlaces de Telegram no mostraron el texto del mensaje: la descarga del modelo la primera vez y las diez transcripciones conservadas vienen del mensaje del autor recogido en la entrada, y van como suyas. Niveles, idiomas y autoría, de la entrada; mensaje con marca de autor del diario, por eso se le nombra Juan José de Haro. No se ha probado a transcribir un archivo.",
+      "repaso": [
+        "Cuerpo recortado de unas 400 a unas 340 palabras (límite del encargo): quitada la frase «está pensado para obtener subtítulos de calidad» y otras redundancias.",
+        "«Las diez últimas transcripciones» pasa a «diez transcripciones»: el mensaje del autor no dice «últimas».",
+        "`comprobado` actualizado con lo realmente verificado."
+      ]
+    }
+  ],
+  "descartado": []
+}

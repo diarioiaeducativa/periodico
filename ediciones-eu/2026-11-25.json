@@ -1,0 +1,95 @@
+{
+  "fecha": "2026-11-25",
+  "motivo": "",
+  "piezas": [
+    {
+      "id": "vibe-responsable-4",
+      "seccion": "vibecoding",
+      "importancia": 1,
+      "grupo": "vce",
+      "antetitulo": "Komunitatearen gida",
+      "titular": "Vibe Coding Responsable 4.0: irekian argitaratutakoa berrerabiltzeko modukoa izan behar da",
+      "entradilla": "Juan José de Haroren gidaren 4.0 bertsioak azaltzen du egile-eskubideen salbuespen hezitzaileak ez duela babesten web ireki batean argitaratzen dena.",
+      "cuerpo": [
+        "Juan José de Harok [Vibe Coding Responsable](https://vibe-coding-educativo.github.io/vibe-responsable/es/capitulo-6.html) gidaren 4.0 bertsioa argitaratu du, adimen artifizialaren laguntzaz material hezitzaileak sortzen dituzten irakasleentzako gomendio-sorta bat. Gida, CC BY-SA 4.0 lizentziapekoa, [azaroaren 7ko biltegiaren asteari](pieza:2026-11-06/semana-del-repositorio) buruzko zenbakian agertu zen jada, berrien artean.",
+        "Egileak Vibe Coding Educativo taldean nabarmendu duen aldaketak materialak partekatzen dituzten irakasleei eragiten die. Europako Batasunak irakaskuntzarako aurreikusten duen egile-eskubideen salbuespenak, «Antes de publicar: diez recomendaciones» kapituluaren arabera, ikastetxearen erantzukizunpeko erabilera soilik estaltzen du: ikasgelan edo plataforma itxietan. Irekian argitaratutako materiala salbuespen horretatik kanpo geratzen da, eta, beraz, bere baitan sartzen den guztiak berrerabilera onartu behar du: ezin ditu babestutako irudirik edo testurik izan.",
+        "Horrek ondorio praktikoa du AAren laguntzaz programatzen duten irakasleentzat: AA laguntzaileak beste webguneetako irudiak lotu ditzake, haien lizentzia jakin gabe. Gidak gomendatzen du horietako bakoitza lizentzia ezaguneko beste batekin ordezkatzea eta materialaren barruan gordetzea. Elementu batek berrerabilera onartzen ez badu edo haren lizentzia ezagutzen ez bada, zuhurrena aldatzea da.",
+        "Egilearen arabera, aldaketa Europako Batzordeak eduki hezitzaile digitalei buruz emandako jarraibideetan oinarritzen da: «[Toma de decisiones fundamentadas sobre contenidos educativos digitales](https://doi.org/10.2766/1574949)». Dokumentu hori [ChatGPT-IA-eduko liburutegi digitalean](https://t.me/ChatGPTedu/21753/54678) dago. Gidaren orriak ez du zehazten 4.0 bertsioan beste zer aldatu den."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Vibe Coding Responsable, «Antes de publicar: diez recomendaciones» kapitulua (gaztelaniaz)",
+          "url": "https://vibe-coding-educativo.github.io/vibe-responsable/es/capitulo-6.html"
+        },
+        {
+          "titulo": "Toma de decisiones fundamentadas sobre contenidos educativos digitales (Europako Batzordea) (gaztelaniaz)",
+          "url": "https://doi.org/10.2766/1574949"
+        },
+        {
+          "titulo": "Dokumentua ChatGPT-IA-eduko liburutegi digitalean (gaztelaniaz)",
+          "url": "https://t.me/ChatGPTedu/21753/54678"
+        }
+      ],
+      "mensaje": {
+        "grupo": "vce",
+        "id": 15285
+      },
+      "comprobado": "Revisor: abierto el capítulo 6 de la guía: excepción de la UE solo bajo la responsabilidad del centro (aula o plataformas cerradas), publicación en abierto fuera de ella y con contenidos reutilizables, IA que enlaza imágenes sin licencia y recomendación de sustituirlas; autor (© 2026 Juan José de Haro) y CC BY-SA 4.0. Ficha de la Oficina de Publicaciones de la UE: título, autoría de la DG de Educación de la Comisión y 2025 (16-12-2025), así que no se repite «marzo». Mensaje de la Biblioteca (ChatGPTedu/54678): mismo título en PDF. Mensaje 15285 de VCE coincide con el tema. La semana del repositorio del 7-11 recoge la guía. La página no explica los cambios de la 4.0.",
+      "ilustracion": "Dos estanterías: una cerrada, dentro de un aula, con imágenes de cualquier procedencia; otra abierta, hacia la calle, donde solo entran materiales con un sello de licencia libre.",
+      "grafico": null,
+      "ilustracion_alt": "Irudiz betetako bi apal. Ezkerrean, apal itxi bat kandado batekin eta «Ikasgela itxia» etiketarekin. Eskuinean, apal ireki bat egiaztapen-intsignia batekin eta «Lizentzia ezaguna» etiketarekin. Biren artean, gezi bat «Irekia» etiketarekin."
+    },
+    {
+      "id": "ideogram-personajes-coherentes",
+      "seccion": "multimedia",
+      "importancia": 3,
+      "grupo": "edumedia",
+      "antetitulo": "EduMediaren funtsetik",
+      "titular": "Ideogramek pertsonaia bera hainbat iruditan errepikatzeko aukera ematen du ikasgelako materialetarako",
+      "entradilla": "Irudi-tresnak doako plan bat du, asteko kredituekin. Plan horretako irudiak publikoak dira, eta ikasleek familiaren baimena behar dute adingabeak badira.",
+      "cuerpo": [
+        "[Ideogram](https://ideogram.ai/) adimen artifizialarekin irudiak sortzeko eta editatzeko lineako plataforma bat da. EduMedia-IAG taldean pertsonaien funtzioa partekatu zen, pertsonaia beraren itxura irudi desberdinetan mantentzen duena. [Enpresaren beraren laguntzaren](https://docs.ideogram.ai/frequently-asked-questions) arabera, bost irudi arte gehitzen dira erreferentzia gisa, eta pertsonaia deskribapenean (*prompt*) bere etiketaren bidez izendatzen da; liburutegian ere gorde daiteke, berriz erabiltzeko.",
+        "Ikasgelan, adibidez, irakurketa edo proiektu baten maskota sortzeko eta hainbat eszenatan erakusteko balio du: ipuin ilustratu bat, hiztegia errepasatzeko komiki bat edo prozesu zientifiko bat azaltzen duen sekuentzia bat, protagonista berarekin. Irakasleek materiala prestatu eta proiektatu dezakete, edo ikasleak sormenean gida ditzakete.",
+        "Hasteko, kontu bat sortzen da, pertsonaiaren irudi garbi bat igotzen da edo lehen bat sortzen da, eta gero eszena berriak deskribatzen dira. Laguntzak ez du argitzen zer planek dituzten funtzio hau, eta lan-eremuaren arabera alda daiteke: komeni da probatzea jarduera planifikatu aurretik.",
+        "Googlerekin edo Applerekin sortutako doako kontuek 30 kreditu jasotzen dituzte astero, laguntzaren arabera, 2026ko azaroaren 24an; posta elektronikoarekin eta pasahitzarekin sortutakoek ez dute kreditirik jasotzen. Doako planeko irudiak publikoak dira, beraz, ez dute ikasleen daturik edo irudirik izan behar. [Erabilera-baldintzen](https://ideogram.ai/legal/tos) arabera, gutxienez 13 urte izan behar dira, eta adin legalera iritsi gabeko pertsonek amak, aitak edo tutoreak baldintzak onartzea behar dute. Hobe da kontua irakasleak erabiltzea."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Ideogram (ingelesez)",
+          "url": "https://ideogram.ai/"
+        },
+        {
+          "titulo": "Ideogrameko ohiko galderak (ingelesez)",
+          "url": "https://docs.ideogram.ai/frequently-asked-questions"
+        },
+        {
+          "titulo": "Ideogrameko erabilera-baldintzak (ingelesez)",
+          "url": "https://ideogram.ai/legal/tos"
+        }
+      ],
+      "herramienta": {
+        "nombre": "Ideogram",
+        "url": "https://ideogram.ai/"
+      },
+      "mensaje": {
+        "grupo": "edumedia",
+        "id": 1184
+      },
+      "comprobado": "Revisado el 24-11-2026: web oficial ideogram.ai (plataforma de generación y edición de imágenes; cuentas gratuitas con Google, Apple o Microsoft reciben créditos semanales variables, con correo y contraseña no; función de personajes con imágenes de referencia); preguntas frecuentes en docs.ideogram.ai (30 créditos semanales con Google o Apple, imágenes del plan gratuito públicas, personajes con 1 a 5 imágenes y etiqueta, biblioteca de personajes, sin precisar planes); condiciones en ideogram.ai/legal/tos (13 años como mínimo; menores de edad legal, solo con aceptación de madre, padre o tutor). No aparece en lo publicado por el diario. Mensaje 1184 de EduMedia-IAG verificado (recomienda la herramienta «Character»; sin opiniones de terceros).",
+      "ilustracion": "Un mismo personaje sencillo, dibujado a partir de una hoja con tres imágenes de referencia a la izquierda, que aparece a la derecha en cuatro viñetas de escenas distintas.",
+      "ilustracion_alt": "Pertsonaia baten hiru erreferentzia-irudi, «Erreferentziak» etiketarekin, eta gezi bat pertsonaia bera eszena desberdinetan duten lau binetetara (eguzkia, olatuak, zuhaitza eta hodeia), «Pertsonaia bera» etiketarekin."
+    }
+  ],
+  "breves": [
+    {
+      "texto": "ja.cat lotura-laburtzailea ez zen kargatzen azaroaren 25eko asteazkenean goizean, eta, taldean komentatu zenez, arrazoia bere DNS hornitzaileak, Dinahostingek, izandako gorabehera bat zen. Taldean behin-behineko konponbide bat proposatu zen, aplikatzen den ordenagailuan soilik balio duena.",
+      "url": "https://ja.cat/",
+      "grupo": "vce",
+      "mensaje": {
+        "grupo": "vce",
+        "id": 15269
+      }
+    }
+  ],
+  "hay_edicion": true
+}

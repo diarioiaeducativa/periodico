@@ -1,0 +1,405 @@
+{
+ "fecha": "2026-11-25",
+ "candidatas": [
+  {
+   "pieza": "vibe-responsable-4",
+   "idea": "La excepción educativa vale en el aula y no en una web abierta; Algoritmo lo arregla poniéndole a la web una pizarra de fondo (remata Algoritmo, que se pasa de listo).",
+   "guion": {
+    "vinetas": [
+     {
+      "cartela": "De noche, en casa, a punto de publicar una web.",
+      "escenario": "casa_noche",
+      "tiza": {
+       "expresion": "preocupado",
+       "postura": "senalar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "neutral",
+       "postura": "abajo",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "La excepción educativa vale en el aula. En una web abierta, no.",
+        "tipo": "habla"
+       },
+       {
+        "quien": "algoritmo",
+        "texto": "Dame un segundo.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "casa_noche",
+      "tiza": {
+       "expresion": "pensativo",
+       "postura": "cruzar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "cargando",
+       "postura": "pensar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": []
+     },
+     {
+      "escenario": "casa_noche",
+      "tiza": {
+       "expresion": "sorprendido",
+       "postura": "cabeza",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "orgulloso",
+       "postura": "jarras",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "Arreglado: le he puesto a la web una pizarra de fondo. Ya es un aula.",
+        "tipo": "habla"
+       }
+      ]
+     }
+    ]
+   },
+   "cabe": true
+  },
+  {
+   "pieza": "vibe-responsable-4",
+   "idea": "Algoritmo ha llenado la web de Tiza de fotos de otras webs, sin licencia que conste y solo enlazadas; Tiza concluye que no saben si pueden usarlas y, encima, no las tienen (remata Tiza).",
+   "guion": {
+    "vinetas": [
+     {
+      "cartela": "En la sala de profesores, repasando una web de clase.",
+      "escenario": "sala_profes",
+      "tiza": {
+       "expresion": "pensativo",
+       "postura": "pensar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "orgulloso",
+       "postura": "arriba",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "Tu web de los volcanes, lista. Con doce fotos espectaculares.",
+        "tipo": "habla"
+       },
+       {
+        "quien": "tiza",
+        "texto": "¿De quién son las fotos?",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "sala_profes",
+      "tiza": {
+       "expresion": "preocupado",
+       "postura": "jarras",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "contento",
+       "postura": "senalar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "¿Con qué licencia?",
+        "tipo": "habla"
+       },
+       {
+        "quien": "algoritmo",
+        "texto": "No consta. Pero ni las he copiado: solo las he enlazado de otras webs.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "sala_profes",
+      "tiza": {
+       "expresion": "enfadado",
+       "postura": "cruzar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "avergonzado",
+       "postura": "abajo",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "O sea: no sabemos si podemos usarlas y, encima, no las tenemos.",
+        "tipo": "habla"
+       }
+      ]
+     }
+    ]
+   },
+   "cabe": true
+  },
+  {
+   "pieza": "breve-1",
+   "idea": "El acortador de enlaces no carga y Algoritmo tiene un apaño que solo vale para el ordenador en que se aplica; en el aula hay treinta, y acaba agotado en el cuarto (remate mudo, con el giro en el rótulo; el chasco es de Algoritmo).",
+   "guion": {
+    "vinetas": [
+     {
+      "cartela": "En el aula de informática, con el acortador caído.",
+      "escenario": "aula",
+      "tiza": {
+       "expresion": "preocupado",
+       "postura": "senalar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "orgulloso",
+       "postura": "jarras",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "El enlace corto de la actividad no carga. Falla el acortador.",
+        "tipo": "habla"
+       },
+       {
+        "quien": "algoritmo",
+        "texto": "Tengo un apaño. Solo vale para el ordenador en que se aplica.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "aula",
+      "tiza": {
+       "expresion": "neutral",
+       "postura": "cruzar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "contento",
+       "postura": "arriba",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "En esta aula hay treinta ordenadores.",
+        "tipo": "habla"
+       },
+       {
+        "quien": "algoritmo",
+        "texto": "Voy uno por uno. Es un momento.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "cartela": "Ordenador 4 de 30.",
+      "escenario": "aula",
+      "tiza": {
+       "expresion": "pensativo",
+       "postura": "pensar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "agotado",
+       "postura": "abajo",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "reloj",
+      "bocadillos": []
+     }
+    ]
+   },
+   "cabe": true
+  },
+  {
+   "pieza": "vibe-responsable-4",
+   "idea": "Antes de publicar en abierto, Algoritmo quita todo lo que no tiene licencia conocida y solo queda el dibujo de la célula de Tiza: es suyo seguro, porque no se parece a ninguna otra (remata Algoritmo y el chasco es de Tiza).",
+   "guion": {
+    "vinetas": [
+     {
+      "cartela": "En el aula, preparando unos apuntes para publicarlos.",
+      "escenario": "aula",
+      "tiza": {
+       "expresion": "neutral",
+       "postura": "senalar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "contento",
+       "postura": "arriba",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "Si va en abierto, fuera todo lo que no tenga licencia conocida.",
+        "tipo": "habla"
+       },
+       {
+        "quien": "algoritmo",
+        "texto": "Hecho. Ha quedado una imagen.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "aula",
+      "tiza": {
+       "expresion": "sorprendido",
+       "postura": "arriba",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "neutral",
+       "postura": "abajo",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "¿Solo una? ¿Cuál?",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "aula",
+      "tiza": {
+       "expresion": "avergonzado",
+       "postura": "cruzar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "contento",
+       "postura": "senalar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "Tu dibujo de la célula. Es tuyo seguro: no se parece a ninguna otra.",
+        "tipo": "habla"
+       }
+      ]
+     }
+    ]
+   },
+   "cabe": true
+  },
+  {
+   "pieza": "vibe-responsable-4",
+   "idea": "Con sus imágenes, el material de Tiza solo vale en la plataforma cerrada del centro; Algoritmo propone subirlo allí, pero ella quería compartirlo, y ahí dentro no lo encuentra ni ella (remata Tiza; los dos, contra la plataforma).",
+   "guion": {
+    "vinetas": [
+     {
+      "cartela": "En el claustro, hablando de publicar materiales.",
+      "escenario": "claustro",
+      "tiza": {
+       "expresion": "pensativo",
+       "postura": "pensar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "neutral",
+       "postura": "abajo",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "Con estas imágenes solo puedo usarlo en la plataforma cerrada del centro.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "claustro",
+      "tiza": {
+       "expresion": "harto",
+       "postura": "cruzar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "orgulloso",
+       "postura": "senalar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "Pues súbelo ahí y listo.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "claustro",
+      "tiza": {
+       "expresion": "riendo",
+       "postura": "encoger",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "preocupado",
+       "postura": "cabeza",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "Quería compartirlo. Ahí dentro no lo encuentro ni yo.",
+        "tipo": "habla"
+       }
+      ]
+     }
+    ]
+   },
+   "cabe": true
+  }
+ ]
+}

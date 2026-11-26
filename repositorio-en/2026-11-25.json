@@ -1,0 +1,47 @@
+{
+  "fecha": "2026-11-25",
+  "piezas": [
+    {
+      "id": "transcribe-herramienta-local-de-transcri",
+      "seccion": "vibecoding",
+      "repositorio": "fondo",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "From the repository's back catalogue",
+      "titular": "Transcribe audio and video and create subtitles without the file leaving your computer",
+      "entradilla": "Transcribe turns recordings into text and subtitles with the Whisper model, inside the browser and without sending anything to third parties. It was created by Juan José de Haro.",
+      "cuerpo": [
+        "Transcribe is a web app that turns an audio or video file into text and lets you download the result as plain text or as subtitles. It was created by Juan José de Haro and opens in the browser, with nothing to install. The page says no data is sent to third parties: everything happens in the browser itself, which matters with recordings of lessons or students' voices.",
+        "Using it is straightforward. You press “Seleccionar audio o vídeo” (select audio or video), load a local file, choose the model (Whisper Tiny, Base or Small; Base is the default, “the best balance between speed and quality for most uses”, according to the page itself) and press “Iniciar transcripción” (start transcription). According to its author, the model is downloaded the first time, so the first transcription is the slowest. You can also import an SRT or VTT file to correct it.",
+        "The most useful part for a teacher is the editor. The text appears in segments with timestamps, which can be read and edited while the audio or video plays, and selecting a segment makes the player jump to that point. The page offers speed control, from 0.75x to 2x, and undo and redo buttons.",
+        "It can be used to subtitle your own videos and make them more accessible, to get a transcript of a recorded lesson or an interview, or to let students review a presentation in writing. Because artificial intelligence can get proper names, technical terms or unclear voices wrong, it is best to check the text before using it.",
+        "The interface is in Spanish, Catalan, Galician, Basque and English, with a selector in the top corner. According to its author, it keeps ten transcriptions by default, a number that can be changed. The code is licensed under AGPL v3 and, according to the repository entry, the app is aimed at secondary school, Bachillerato (the final two years of secondary school, ages 16 to 18), vocational training, university and adult and teacher education."
+      ],
+      "recursos": [
+        {
+          "id": "transcribe-herramienta-local-de-transcri",
+          "titulo": "Transcribe: Herramienta Local de Transcripción de Audio y Vídeo",
+          "autoria": "Juan José de Haro",
+          "url": "https://jjdeharo.github.io/transcribe/",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://jjdeharo.github.io/transcribe/",
+          "licencia": "AGPL v3",
+          "captura": "2026-11-25-transcribe-herramienta-local-de-transcri.jpg",
+          "captura_alt": "The Transcribe page with buttons to select audio or video and to import SRT or VTT files, the Whisper model selector, the transcription status and the box for the extracted text.",
+          "texto": []
+        }
+      ],
+      "fuentes": [
+        {"titulo": "Transcribe, the app", "url": "https://jjdeharo.github.io/transcribe/"},
+        {"titulo": "Presentation in Vibe Coding Educativo (in Spanish)", "url": "https://t.me/vceduca/7674/10639"},
+        {"titulo": "Presentation in ChatGPT-IA-edu (in Spanish)", "url": "https://t.me/ChatGPTedu/47801"}
+      ],
+      "comprobado": "Captura y texto visible de la página (navegador real): botones de carga de archivo e importación de SRT/VTT, modelos Whisper Tiny/Base/Small (Base por defecto), selector de idioma (Auto, es, en, ca, gl, eu), licencia AGPLv3, enlace de sugerencias y errores; la captura enseña la mitad superior (el editor y deshacer/rehacer salen en el texto visible). WebFetch solo devolvió el título (la página necesita JavaScript) y los enlaces de Telegram no mostraron el texto del mensaje: la descarga del modelo la primera vez y las diez transcripciones conservadas vienen del mensaje del autor recogido en la entrada, y van como suyas. Niveles, idiomas y autoría, de la entrada; mensaje con marca de autor del diario, por eso se le nombra Juan José de Haro. No se ha probado a transcribir un archivo.",
+      "repaso": [
+        "Cuerpo recortado de unas 400 a unas 340 palabras (límite del encargo): quitada la frase “está pensado para obtener subtítulos de calidad” y otras redundancias.",
+        "“Las diez últimas transcripciones” pasa a “diez transcripciones”: el mensaje del autor no dice “últimas”.",
+        "`comprobado` actualizado con lo realmente verificado."
+      ]
+    }
+  ],
+  "descartado": []
+}

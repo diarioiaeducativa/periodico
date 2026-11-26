@@ -1,0 +1,85 @@
+{
+ "fecha": "2026-11-25",
+ "elegida": {
+  "n": 4,
+  "pieza": "vibe-responsable-4",
+  "idea": "Antes de publicar en aberto, Algoritmo quita todo o que non ten licenza coñecida e só queda o debuxo da célula de Xiz: é seu seguro, porque non se parece a ningunha (remata Algoritmo e o chasco leva Xiz).",
+  "guion": {
+   "vinetas": [
+    {
+     "cartela": "Na aula, preparando uns apuntamentos para publicalos.",
+     "escenario": "aula",
+     "tiza": {
+      "expresion": "neutral",
+      "postura": "jarras",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "orgulloso",
+      "postura": "arriba",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Se vai en aberto, fóra todo o que non teña licenza coñecida.",
+       "tipo": "habla"
+      },
+      {
+       "quien": "algoritmo",
+       "texto": "Feito. Quedou unha imaxe.",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "aula",
+     "tiza": {
+      "expresion": "sorprendido",
+      "postura": "arriba",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "neutral",
+      "postura": "jarras",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Só unha? Cal?",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "aula",
+     "tiza": {
+      "expresion": "avergonzado",
+      "postura": "cruzar",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "contento",
+      "postura": "senalar",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "algoritmo",
+       "texto": "O teu debuxo da célula. É teu seguro: non se parece a ningunha.",
+       "tipo": "habla"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "traduccion": "automática con IA"
+}

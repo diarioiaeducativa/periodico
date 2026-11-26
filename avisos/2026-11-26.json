@@ -1,0 +1,130 @@
+{
+  "fecha": "2026-11-26",
+  "avisos": {
+    "chatgpt": {
+      "saludo": "Buenos días. Dos documentos europeos para pensar la IA en el aula, en el número del jueves.",
+      "puntos": [
+        "El marco AILit, de la OCDE y la Comisión Europea, ordena la alfabetización en IA de primaria y secundaria en cuatro ámbitos y 19 competencias, con tres niveles y ejemplos de aula",
+        "Una guía de la Comisión Europea propone ocho criterios para elegir y evaluar contenidos educativos digitales, con preguntas que el profesorado puede llevar a una reunión de departamento",
+        "Vibe Coding Responsable 4.0 recuerda que la excepción de derechos de autor para la enseñanza no cubre lo que se publica en una web abierta"
+      ]
+    },
+    "vce": {
+      "saludo": "Buenos días. Una guía que se actualiza y una herramienta que transcribe sin salir del ordenador.",
+      "puntos": [
+        "La versión 4.0 de Vibe Coding Responsable, de Juan José de Haro, advierte de que un material publicado en abierto debe poder reutilizarse y de que un asistente de IA puede enlazar imágenes sin licencia conocida",
+        "Transcribe, creada por Juan José de Haro, pasa audio y vídeo a texto y subtítulos con Whisper dentro del navegador, sin enviar el archivo a terceros, y permite corregir el resultado en un editor",
+        "La viñeta de Tiza y Algoritmo parte de la guía: tras quitar todo lo que carece de licencia conocida, solo queda un dibujo"
+      ]
+    },
+    "edumedia": {
+      "saludo": "Buenos días. Un mismo personaje en muchas imágenes y una guía sobre licencias.",
+      "puntos": [
+        "Ideogram permite mantener el aspecto de un personaje en varias imágenes a partir de una a cinco de referencia, útil para una mascota de proyecto o un cuento ilustrado",
+        "El plan gratuito de Ideogram hace públicas las imágenes y exige autorización familiar si el alumnado es menor de edad, así que conviene que la cuenta la use el docente",
+        "Una guía de la Comisión Europea recuerda que usar un recurso en el aula no implica poder copiarlo o redistribuirlo, un aviso útil al preparar materiales con imágenes"
+      ],
+      "url": "https://diarioiaeducativa.github.io/n/25-edumedia.html"
+    }
+  },
+  "instagram": "El número trae dos documentos europeos sobre inteligencia artificial en la escuela: un marco de la OCDE y la Comisión Europea que define cuatro ámbitos y 19 competencias de alfabetización en IA, y una guía con ocho criterios para elegir y evaluar contenidos educativos digitales. Se explica también por qué lo publicado en abierto debe poder reutilizarse, aunque la excepción de derechos de autor ampare el uso en el aula, y se presentan una herramienta que transcribe audio y vídeo sin que el archivo salga del ordenador y otra que mantiene el mismo personaje en varias imágenes.",
+  "titulo": "Diario de IA Educativa · Núm. 25",
+  "fecha_texto": "Jueves, 26 de noviembre de 2026",
+  "url": "https://diarioiaeducativa.github.io/?n=25",
+  "imagen": "https://diarioiaeducativa.github.io/portadas/2026-11-25-es.jpg",
+  "personas": [
+    {
+      "id": 218499880,
+      "piezas": [
+        {
+          "es": {
+            "titular": "Vibe Coding Responsable 4.0: lo publicado en abierto debe poder reutilizarse",
+            "url": "https://diarioiaeducativa.github.io/2026-11-25/vibe-responsable-4.html"
+          },
+          "ca": {
+            "titular": "Vibe Coding Responsable 4.0: el que es publica en obert ha de poder reutilitzar-se",
+            "url": "https://diarioiaeducativa.github.io/ca/2026-11-25/vibe-responsable-4.html"
+          },
+          "gl": {
+            "titular": "Vibe Coding Responsable 4.0: o publicado en aberto debe poder reutilizarse",
+            "url": "https://diarioiaeducativa.github.io/gl/2026-11-25/vibe-responsable-4.html"
+          },
+          "eu": {
+            "titular": "Vibe Coding Responsable 4.0: irekian argitaratutakoa berrerabiltzeko modukoa izan behar da",
+            "url": "https://diarioiaeducativa.github.io/eu/2026-11-25/vibe-responsable-4.html"
+          },
+          "en": {
+            "titular": "Vibe Coding Responsable 4.0: anything published openly must be reusable",
+            "url": "https://diarioiaeducativa.github.io/en/2026-11-25/vibe-responsable-4.html"
+          }
+        },
+        {
+          "es": {
+            "titular": "OCDE y UE fijan cuatro ámbitos de alfabetización en IA para primaria y secundaria",
+            "url": "https://diarioiaeducativa.github.io/2026-11-25/ailit-ocde-ue-marco.html"
+          },
+          "ca": {
+            "titular": "L'OCDE i la UE fixen quatre àmbits d'alfabetització en IA per a primària i secundària",
+            "url": "https://diarioiaeducativa.github.io/ca/2026-11-25/ailit-ocde-ue-marco.html"
+          },
+          "gl": {
+            "titular": "A OCDE e a UE fixan catro ámbitos de alfabetización en IA para primaria e secundaria",
+            "url": "https://diarioiaeducativa.github.io/gl/2026-11-25/ailit-ocde-ue-marco.html"
+          },
+          "eu": {
+            "titular": "OCDEk eta EBk AA alfabetatzearen lau eremu zehaztu dituzte lehen eta bigarren hezkuntzarako",
+            "url": "https://diarioiaeducativa.github.io/eu/2026-11-25/ailit-ocde-ue-marco.html"
+          },
+          "en": {
+            "titular": "OECD and EU set out four areas of AI literacy for primary and secondary schools",
+            "url": "https://diarioiaeducativa.github.io/en/2026-11-25/ailit-ocde-ue-marco.html"
+          }
+        },
+        {
+          "es": {
+            "titular": "Ocho criterios de la UE para elegir y evaluar contenidos educativos digitales en el aula",
+            "url": "https://diarioiaeducativa.github.io/2026-11-25/ue-contenidos-educativos-digitales.html"
+          },
+          "ca": {
+            "titular": "Vuit criteris de la UE per triar i avaluar continguts educatius digitals a l'aula",
+            "url": "https://diarioiaeducativa.github.io/ca/2026-11-25/ue-contenidos-educativos-digitales.html"
+          },
+          "gl": {
+            "titular": "Oito criterios da UE para elixir e avaliar contidos educativos dixitais na aula",
+            "url": "https://diarioiaeducativa.github.io/gl/2026-11-25/ue-contenidos-educativos-digitales.html"
+          },
+          "eu": {
+            "titular": "EBren zortzi irizpide hezkuntza-eduki digitalak aukeratu eta ebaluatzeko gelan",
+            "url": "https://diarioiaeducativa.github.io/eu/2026-11-25/ue-contenidos-educativos-digitales.html"
+          },
+          "en": {
+            "titular": "Eight EU criteria for choosing and evaluating digital educational content in the classroom",
+            "url": "https://diarioiaeducativa.github.io/en/2026-11-25/ue-contenidos-educativos-digitales.html"
+          }
+        },
+        {
+          "es": {
+            "titular": "Transcribir audio y vídeo y crear subtítulos sin que el archivo salga del ordenador",
+            "url": "https://diarioiaeducativa.github.io/2026-11-25/transcribe-herramienta-local-de-transcri.html"
+          },
+          "ca": {
+            "titular": "Transcriure àudio i vídeo i crear subtítols sense que l'arxiu surti de l'ordinador",
+            "url": "https://diarioiaeducativa.github.io/ca/2026-11-25/transcribe-herramienta-local-de-transcri.html"
+          },
+          "gl": {
+            "titular": "Transcribir audio e vídeo e crear subtítulos sen que o ficheiro saia do ordenador",
+            "url": "https://diarioiaeducativa.github.io/gl/2026-11-25/transcribe-herramienta-local-de-transcri.html"
+          },
+          "eu": {
+            "titular": "Audioa eta bideoa transkribatu, azpitituluak sortu, fitxategia ordenagailutik atera gabe",
+            "url": "https://diarioiaeducativa.github.io/eu/2026-11-25/transcribe-herramienta-local-de-transcri.html"
+          },
+          "en": {
+            "titular": "Transcribe audio and video and create subtitles without the file leaving your computer",
+            "url": "https://diarioiaeducativa.github.io/en/2026-11-25/transcribe-herramienta-local-de-transcri.html"
+          }
+        }
+      ]
+    }
+  ]
+}
