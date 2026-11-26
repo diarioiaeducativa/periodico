@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340">
+<g class="t li4" transform="translate(40 80) scale(4)"><!-- Lucide: mic (ISC) --><path d="M12 19v3"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><rect x="9" y="2" width="6" height="13" rx="3"/></g>
+<text class="lbl" x="88" y="204" text-anchor="middle">Voz propia</text>
+<path class="t" d="M50 250 C60 232 70 268 80 250 C90 232 100 268 110 250 C120 232 126 262 134 250"/>
+<line class="a" x1="152" y1="140" x2="232" y2="140"/>
+<path class="a" d="M220 129 L232 140 L220 151"/>
+<circle class="fa t" cx="310" cy="100" r="30"/>
+<circle class="ft" cx="300" cy="94" r="2.5"/><circle class="ft" cx="320" cy="94" r="2.5"/>
+<path class="t" d="M302 112 Q310 120 318 112"/>
+<rect class="fz t" x="268" y="140" width="84" height="100" rx="22"/>
+<path class="a" d="M366 90 Q376 102 366 114 M378 80 Q394 102 378 124 M390 70 Q412 102 390 134"/>
+<text class="a lbl" x="310" y="278" text-anchor="middle">Avatar</text>
+<g class="t li4" transform="translate(462 80) scale(4)"><!-- Lucide: file-text (ISC) --><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"/><path d="M14 2v5a1 1 0 0 0 1 1h5"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></g>
+<text class="lbl" x="510" y="204" text-anchor="middle">Guion</text>
+<path class="t" d="M458 170 H424 M434 160 L424 170 L434 180"/>
+<text class="r lbl" x="300" y="320" text-anchor="middle">Con permiso</text>
+</svg>

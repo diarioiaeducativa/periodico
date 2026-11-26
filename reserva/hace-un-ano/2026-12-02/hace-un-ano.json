@@ -1,0 +1,23 @@
+{"fecha": "2026-12-02", "hay_pieza": true,
+ "piezas": [{"id": "kling-voz-cinco-lenguas",
+   "seccion": "hace-un-ano", "importancia": 3,
+   "grupo": "edumedia", "fecha_original": "2025-12-03",
+   "antetitulo": "Vídeo con sonido",
+   "ilustracion_alt": "Díptico en dos mitades. A la izquierda, «Nov. 2025»: una cámara de vídeo con dos bocadillos de voz y el rótulo «Inglés y chino». A la derecha, «Hoy»: la misma cámara con cinco bocadillos en azul y el rótulo «Cinco lenguas».",
+   "titular": "Kling 2.6 solo hablaba inglés y chino; 3.0 añadió el español y 4.0, más lenguas",
+   "entradilla": "En diciembre de 2025, el primer modelo de vídeo de Kling con sonido propio se presentaba como rival de Veo 3, pero sus voces no salían en castellano. Desde febrero de 2026, Kling 3.0 genera diálogos también en español.",
+   "cuerpo": [
+     "El 3 de diciembre de 2025, en EduMedia-IAG, se comentaba el estreno de Kling 2.6, de la empresa china Kuaishou: según la empresa, su primer modelo que generaba a la vez el vídeo y el sonido, con efectos y voces sincronizadas con los labios. Se le veía como rival de Veo 3, el modelo de Google, y se auguraba que Google respondería antes de fin de año. Un ejemplo compartido señalaba un límite: la voz solo salía en inglés.",
+     "La [guía oficial de Kling 2.6](https://kling.ai/quickstart/klingai-video-26-audio-user-guide) lo precisaba: solo admitía voz en chino y en inglés, y un diálogo en otra lengua se traducía al inglés. Los clips duraban 5 o 10 segundos.",
+     "El 5 de febrero de 2026, Kuaishou [presentó Kling 3.0](https://technode.global/prnasia/kling-ai-launches-3-0-model-ushering-in-an-era-where-everyone-can-be-a-director/), primero para los suscriptores de su plan Ultra. Según su [guía de uso](https://kling.ai/quickstart/klingai-video-3-model-user-guide), genera diálogos en chino, inglés, japonés, coreano y español, permite cambiar de idioma dentro del mismo vídeo y alarga los clips hasta 15 segundos.",
+     "Según el [blog de Kling](https://kling.ai/blog/kling-4-vs-3?tab=product-features), la versión 4.0, con lanzamiento previsto en octubre de 2026, añade portugués, alemán, francés, hindi y otras lenguas, y clips de hasta 30 segundos. La fuente no concreta cuáles; no consta si entran el catalán, el gallego o el euskera."
+   ],
+   "fuentes": [
+     {"titulo": "KLING VIDEO 2.6 User Guide (Kling AI)", "url": "https://kling.ai/quickstart/klingai-video-26-audio-user-guide"},
+     {"titulo": "Kling AI Launches 3.0 Model (nota de prensa, 5 de febrero de 2026)", "url": "https://technode.global/prnasia/kling-ai-launches-3-0-model-ushering-in-an-era-where-everyone-can-be-a-director/"},
+     {"titulo": "KLING VIDEO 3.0 Model User Guide (Kling AI)", "url": "https://kling.ai/quickstart/klingai-video-3-model-user-guide"},
+     {"titulo": "Kling 4.0 vs 3.0 (blog de Kling AI)", "url": "https://kling.ai/blog/kling-4-vs-3?tab=product-features"}
+   ],
+   "mensaje": {"grupo": "edumedia", "id": 6671},
+   "comprobado": "Mensaje 6671 de EduMediaIAG (t.me embed): 3-12-2025, Kling 2.6 con sincronización labial y sonido, «buen competidor» de Veo 3; la predicción sobre Google es de #6686 y el límite del inglés, de #6682 (entrada). Guía de Kling 2.6 en kling.ai: solo voz en chino e inglés, otras lenguas se traducen al inglés, clips de 5 o 10 s. Nota de prensa de Kuaishou (TechNode): 5-2-2026, Kling 3.0 en acceso anticipado para suscriptores Ultra, cinco lenguas, hasta 15 s. Guía de Kling 3.0: cinco lenguas, cambio de idioma en un vídeo, 3 a 15 s. Blog oficial de Kling (kling.ai/blog/kling-4-vs-3): Kling 4.0 lanzamiento en octubre de 2026, añade portugués, alemán, francés, hindi «y más», hasta 30 s; la página de producto de 4.0 no lista lenguas. El diario no había publicado nada de Kling vídeo. El resultado de la predicción sobre Google no se ha comprobado y no se afirma.",
+   "repaso": ["Titular: añadido Kling 4.0, que existe (blog oficial de Kling) y hacía incompleto el contraste; reescrito para caber en 90 caracteres.", "Cuerpo: quitada la afirmación de que catalán, gallego y euskera «siguen fuera» (con 4.0 no consta); nuevo párrafo sobre Kling 4.0, atribuido a su blog y sin concretar lenguas.", "«Se daba por hecho que Google respondería» pasa a «se auguraba» (era la opinión de una persona); el límite del inglés se atribuye a un ejemplo compartido, no a «las pruebas que circulaban».", "Quitada la frase sobre el aula de habla hispana; fuentes y «comprobado» actualizados."]}]}

@@ -1,0 +1,40 @@
+{
+  "fecha": "2099-01-01",
+  "hay_edicion": true,
+  "fondo": "edumedia",
+  "motivo": "HeyGen es una herramienta consolidada de audio y vídeo, con versión gratuita suficiente para probarla en clase, que el diario no ha tratado y cuya web sigue activa con las condiciones comprobadas. El resto de candidatos eran vídeos, ejemplos de uso, GPT personalizados, productos de pago o noticias.",
+  "piezas": [{
+    "id": "heygen-clonar-voz-avatar",
+    "seccion": "multimedia",
+    "importancia": 3,
+    "grupo": "edumedia",
+    "antetitulo": "Do fondo de EduMedia",
+    "titular": "HeyGen clona unha voz para vídeos con avatar e o seu plan gratuíto admite tres ao mes",
+    "entradilla": "A ferramenta converte un texto en audio ou nun vídeo con presentador, usando unha voz clonada a partir dunha gravación breve. Só a pode usar unha persoa adulta e co consentimento do titular da voz.",
+    "cuerpo": [
+      "[HeyGen](https://www.heygen.com/tool/ai-voice-cloning) é un servizo en liña que clona unha voz a partir dunha mostra gravada e a usa para ler calquera texto, en audio ou nun vídeo con presentador virtual cos beizos sincronizados. No grupo EduMedia-IAG compartiuse como forma de crear un avatar con imaxe e voz propias.",
+      "Na aula, un docente pode gravar a súa voz unha vez e producir explicacións breves, instrucións dunha actividade ou resumos para o alumnado ausente, ou versións noutras linguas para as familias, sen volver gravar.",
+      "Créase unha conta, sóbese unha mostra de voz, escríbese o texto e escóllese audio ou vídeo. Segundo a web, a 26 de novembro de 2026, o plan gratuíto inclúe unha voz clonada e tres vídeos ao mes de ata un minuto, con marca de auga; a clonación profesional esixe un plan de pagamento.",
+      "As condicións de uso esixen ter 18 anos ou máis, así que a usa o docente, non o alumnado. A voz debe ser a propia ou contar con permiso escrito do seu titular, e non serve para suplantar a ninguén. Os plans de pagamento permiten á empresa usar os contidos para adestrar os seus modelos; o plan gratuíto non o menciona, pero a empresa pode tratar datos persoais para desenvolver os seus modelos, así que non se deben subir voces nin imaxes do alumnado."
+    ],
+    "fuentes": [
+      {"titulo": "HeyGen: clonación de voz con IA (en inglés)", "url": "https://www.heygen.com/tool/ai-voice-cloning"},
+      {"titulo": "HeyGen: plans e prezos (en inglés)", "url": "https://www.heygen.com/pricing"},
+      {"titulo": "HeyGen: condicións de uso (en inglés)", "url": "https://www.heygen.com/terms"}
+    ],
+    "herramienta": {"nombre": "HeyGen", "url": "https://www.heygen.com/tool/ai-voice-cloning"},
+    "mensaje": {"grupo": "edumedia", "id": 157},
+    "comprobado": "Páginas de clonación de voz, precios y condiciones de uso de HeyGen, consultadas el 26-11-2026: plan gratuito con una voz clonada y tres vídeos al mes de hasta un minuto con marca de agua; consentimiento obligatorio; 18 años o más (condiciones); licencia de entrenamiento en los planes Creator, Pro y Business, no mencionada en el gratuito, aunque la sección 1 permite tratar datos personales para desarrollar modelos sin distinguir plan; la clonación profesional está en el plan Pro. Mensaje 157 de EduMedia-IAG verificado en t.me (embed). El diario no lo había publicado (buscador y parecidas sin resultados).",
+    "ilustracion": "Un micrófono y una forma de onda a la izquierda que, por una flecha, se transforman a la derecha en un presentador de dibujo sencillo con ondas de sonido saliendo de la boca, junto a un guion en papel; sin logotipos ni capturas.",
+    "ilustracion_alt": "Un micrófono cunha onda de son, co rótulo «Voz propia», leva por unha frecha a un presentador de debuxo sinxelo con ondas de son saíndo da boca, co rótulo «Avatar»; á dereita, un guion en papel, co rótulo «Guion», cunha frecha cara ao presentador; abaixo, en vermello, «Con permiso»."
+  }],
+  "breves": [],
+  "descartado": [],
+  "repaso": [
+    "Texto recortado de unas 295 a unas 225 palabras (el límite es 250).",
+    "Titular acortado (de 88 a 81 caracteres).",
+    "Datos personales: la web (sección 1) permite tratarlos para desarrollar modelos en todos los planes; se ha matizado que el gratuito «no lo menciona» en lugar de insinuar que no hay uso.",
+    "Quitada la cifra de «tres primeros minutos» de la muestra, que la web contradice parcialmente (indica un minuto de habla clara).",
+    "Comprobados precio, plan gratuito, edad (18), consentimiento, mensaje 157 y ausencia en el diario: correctos."
+  ]
+}
