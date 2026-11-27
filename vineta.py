@@ -10,6 +10,7 @@ dibujo es siempre el mismo y todo el esfuerzo de la IA va al humor.
 Clases de color: las de comun.css (t, a, r, fa, ft, fz) y las propias de la viñeta
 (tz: cuerpo de la tiza, cara: rasgos sobre la tiza, sp: rasgos sobre el cursor)."""
 import html
+import re
 import textwrap
 
 ANCHO, ALTO, SUELO = 400, 360, 332
@@ -333,8 +334,17 @@ def delante(nombre):
 
 # ---------- Bocadillos ----------
 
+# Un número no se separa de su signo (27-11-2026): «107 %!» se partía y el «%!» quedaba solo en la línea de abajo.
+# Lo mismo usa generar.py para el texto de la web.
+NUMERO_Y_SIGNO = re.compile(r"(\d) (?=[%‰€$°])")
+
+
+def unir_signos(texto):
+    return NUMERO_Y_SIGNO.sub("\\1\u00a0", texto or "")
+
+
 def lineas(texto, ancho_chars):
-    return textwrap.wrap(texto, ancho_chars) or [""]
+    return textwrap.wrap(unir_signos(texto), ancho_chars) or [""]
 
 
 def bocadillo(texto, cx, punta, tipo="habla", y0=12, ancho=172):

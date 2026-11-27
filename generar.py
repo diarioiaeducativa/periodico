@@ -487,7 +487,7 @@ def fecha_corta(iso, dia=True, anyo=None):
 
 
 def e(t):
-    return html.escape(t or "", quote=True)
+    return html.escape(vineta.unir_signos(t), quote=True)   # «107 %», sin partir entre el número y el signo
 
 
 def enlace(url, texto):
