@@ -356,7 +356,11 @@ def bocadillo(texto, cx, punta, tipo="habla", y0=12, ancho=172):
                        for f, r in ((0.35, 6), (0.7, 3.5)))
         return forma + cola + texto_svg, alto
     forma = f'<rect class="globo" x="{x0}" y="{y0}" width="{ancho}" height="{alto}" rx="14"/>'
-    cola = (f'<path class="globo-cola" d="M{base - 9} {y0 + alto - 1} L{px} {py} L{base + 9} {y0 + alto - 1}"/>')
+    # La cola en dos capas (27-11-2026): primero el relleno, que empieza 3 unidades dentro del globo y tapa su borde
+    # con margen, y después las dos líneas. Con el relleno empezando justo en el borde, al escalar la viñeta quedaba
+    # una línea fina en la base de la cola.
+    cola = (f'<path class="globo-cola-fondo" d="M{base - 8} {fondo - 3} L{px} {py} L{base + 8} {fondo - 3} Z"/>'
+            f'<path class="globo-cola" d="M{base - 9} {fondo - 1} L{px} {py} L{base + 9} {fondo - 1}"/>')
     return forma + cola + texto_svg, alto
 
 
