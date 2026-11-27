@@ -1,0 +1,12 @@
+{
+ "fecha": "2099-01-01",
+ "fondo": "edumedia",
+ "piezas": [],
+ "breves": [],
+ "descartado": [
+  "mensaje 62: Civitai; su web responde 403 a la lectura automática y no se ha podido comprobar en la web oficial; según su propia guía educativa, el contenido para adultos es solo para mayores de 18 años y el servicio exige esa edad, y en el grupo se advirtió de modelos con sesgos machistas; no es adecuado para plantear en clase",
+  "mensaje 209: Seedance (seedanceai.net) no es gratuito (todos los planes son de pago, comprobado hoy en su web) y se declara plataforma independiente, no oficial de ByteDance",
+  "mensaje 843: el boletín EduMedia-IAG de Raül Torres es un resumen de conversaciones del propio grupo; hoy su página muestra «No se encontraron boletines», no explica ninguna herramienta ni técnica y su autoría no consta en la página",
+  "mensaje 2104: Google Labs es un portal de experimentos cambiantes, no una herramienta ni una técnica concreta; la página no da precio, edad ni países, y el diario ya publicó Project Genie"
+ ]
+}

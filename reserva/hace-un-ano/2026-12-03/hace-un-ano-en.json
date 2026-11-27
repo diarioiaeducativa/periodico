@@ -1,0 +1,22 @@
+{"fecha": "2026-12-03", "hay_pieza": true,
+ "piezas": [{"id": "workspace-studio-centros-menores",
+             "seccion": "hace-un-ano", "importancia": 3,
+             "grupo": "chatgpt", "fecha_original": "2025-12-04",
+             "antetitulo": "Automation in Google Workspace",
+             "titular": "Workspace Studio reached schools, but without AI for under-18s",
+             "entradilla": "In December 2025, Google opened its tool for building agents without coding to businesses and promised it would soon come to schools. It arrived in 2026 in all education editions, but in accounts for minors its AI features do not work.",
+             "cuerpo": [
+               "On 4 December 2025, in ChatGPT-IA-edu, someone shared that [Google Workspace Studio](https://workspaceupdates.googleblog.com/2025/12/workspace-studio.html) was now available to business customers: a space for visually building workflows that automate tasks in Gmail, Drive or Sheets. For education domains it was announced as coming “soon”, and the conversation warned that it would be for people aged 18 and over only.",
+               "On 21 January 2026, at the Bett show, Google [announced](https://blog.google/products-and-platforms/products/education/bett26-premium-ai/) that Workspace Studio would be a core service in all editions of Google Workspace for Education. At the end of November 2026, according to its [help page](https://support.google.com/workspace-studio/answer/16782648?hl=es), it can be used by Education Fundamentals, Standard and Plus accounts and by the Teaching and Learning add-on, if the school has turned on Gemini. Since 7 May 2026 it has been fully available in Spanish, according to the [Google Workspace Updates blog](https://workspaceupdates.googleblog.com/2026/05/google-workspace-studio-available-in-more-languages.html).",
+               "The warning from back then still stands. In education accounts, people under 18 cannot use the AI steps, even in a workflow that someone else shares with them. For teachers it is useful for automating their own work; for students under 18 only the automations without Gemini are left."
+             ],
+             "fuentes": [
+               {"titulo": "Workspace Studio (Google Workspace Updates, 3 December 2025, updated on 19 March 2026)", "url": "https://workspaceupdates.googleblog.com/2025/12/workspace-studio.html"},
+               {"titulo": "Premium Google AI for more educators and students (Google, Bett 2026, 21 January 2026)", "url": "https://blog.google/products-and-platforms/products/education/bett26-premium-ai/"},
+               {"titulo": "Access to Workspace Studio (Workspace Studio Help, in Spanish)", "url": "https://support.google.com/workspace-studio/answer/16782648?hl=es"},
+               {"titulo": "Google Workspace Studio available in more languages (Google Workspace Updates, 7 May 2026)", "url": "https://workspaceupdates.googleblog.com/2026/05/google-workspace-studio-available-in-more-languages.html"}
+             ],
+             "ilustracion_alt": "Diptych. On the left, “Dec. 2025”: an email, an AI step and a spreadsheet linked by arrows, with an hourglass and the label “Soon”. On the right, “Today”: the same workflow, with the AI step in blue and a padlock with the label “Over-18s only”.",
+             "mensaje": {"grupo": "chatgpt", "id": 43202},
+             "comprobado": "Mensaje t.me/ChatGPTedu/43202 (4-12-2025): enlace a un tuit sobre Workspace Studio para empresas y «en nada» en EDU; la advertencia de «solo mayores de 18» está en #43205. Workspace Updates (3-12-2025, nota del 19-3-2026): Education Fundamentals, Standard y Plus; menores de 18 sin agentes con Gemini ni pasos de IA; lanzado a todos los dominios. Blog de Google (Bett 2026): «a core service in all Google Workspace for Education editions»; la página no muestra fecha, el 21-1-2026 es el de Bett, no confirmado en la propia página. Ayuda de Workspace Studio: ediciones Education y Teaching and Learning, Gemini habilitado por el administrador, menores de 18 sin pasos de IA, pasos de IA quitados al abrir un flujo compartido. Workspace Updates (7-5-2026): español completo, también en Education. Sin repetición con «Ya contado» (la pieza del 14-11 trata de Gemini en cuentas educativas, no de Studio).",
+             "repaso": ["Cambiado «alumnado de secundaria» por «alumnado menor de 18 años», porque la fuente habla de menores de 18, no de secundaria.", "La fecha del 21-1-2026 de la página de Bett no figura en la propia página: queda anotado en «comprobado». Palabras: 245."]}]}

@@ -1,0 +1,54 @@
+{
+  "fecha": "2099-01-08",
+  "piezas": [
+    {
+      "id": "signo-de-funciones-exponenciales-simulad",
+      "seccion": "vibecoding",
+      "repositorio": "fondo",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Biltegiaren fondotik",
+      "titular": "Orri batek funtzio esponentzialak proposatzen ditu haien zeinua lantzeko",
+      "entradilla": "«Funtzio esponentzialen zeinuak» orriak funtzio bat planteatzen du, f(x) = 3ˣ + 1 bezalakoa, eta haren zeinua zehaztea eskatzen du. Nabigatzailean irekitzen da, gaztelaniaz edo katalanez, Creative Commons BY-SA lizentziarekin.",
+      "cuerpo": [
+        "«Funtzio esponentzialen zeinuak» web-aplikazio praktikoa da, eta fitxaren arabera Bigarren Hezkuntzarako eta Batxilergorako pentsatuta dago, pentsamendu logiko-matematikoaren arloan. Juan José de Harok sortu zuen, fitxaren arabera Claude erabilita, eta [Vibe Coding Educativoren Baliabideen biltegian](https://vibe-coding-educativo.github.io/app_edu/) dago 2025eko ekainetik.",
+        "Irekitzean txartel bakar bat agertzen da, «Zehaztu funtzioaren zeinuak» aginduarekin eta adierazpen batekin, pantaila-argazkian f(x) = 3ˣ + 1. Azpian bi botoi daude: «Egiaztatu», erantzuna egiaztatzeko, eta «Funtzio berria», beste adibide batera pasatzeko. Goian eskuinean, CA eta ES botoiek hizkuntza aldatzen dute katalanaren eta gaztelaniaren artean, fitxak aipatzen dituen bi hizkuntzak.",
+        "Irakasleentzat, erabilgarriena sinpletasuna da. Praktika labur eta errepikagarria da ideia zehatz baterako: oinarriak, berreturaren berretzaileak eta gehitzen edo kentzen denak nola eragiten duten funtzio esponentzial baten zeinuan. Gelan proiektatu daiteke adibide batzuk denen artean ebazteko, edo ikasleen eskura utzi daiteke banakako errepasorako. Fitxak azalpen interaktibo gisa deskribatzen du, oinarria eta berretzailea aldatzeko aukerarekin; irekitzean ikusten dena, ordea, proposatutako funtzioekin egindako praktika eta haien egiaztapena da, beraz komeni da probatzea nola erabili erabaki aurretik.",
+        "Ez du konturik eskatzen ez instalaziorik: nahikoa da esteka edozein nabigatzailetan irekitzea. Orrian ez da zailtasun-mailarik ez ezarpenik ikusten, eta ez da zehazten ikasleen daturik gordetzen duen.",
+        "Lana [Creative Commons BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.es) lizentziarekin banatzen da (Aitortu-PartekatuBerdin), beraz berrerabili eta egokitu daiteke, egiletza aipatuta eta eratorritako bertsioak lizentzia berarekin partekatuta."
+      ],
+      "recursos": [
+        {
+          "id": "signo-de-funciones-exponenciales-simulad",
+          "titulo": "Signo de Funciones Exponenciales - Simulador Interactivo",
+          "autoria": "Juan José de Haro",
+          "url": "https://bilateria.org/app/mat/funciones/signos/signes_funcions_exponencials_app.html",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://bilateria.org/app/mat/funciones/signos/signes_funcions_exponencials_app.html",
+          "licencia": "Creative Commons BY-SA (Aitortu-PartekatuBerdin)",
+          "captura": "2099-01-08-signo-de-funciones-exponenciales-simulad.jpg",
+          "captura_alt": "«Praktikatu funtzio esponentzialen zeinuak» izenburuko orria, f(x) = 3^x + 1 funtzioa duen txartel bat eta «Egiaztatu» eta «Funtzio berria» botoiak; goian eskuinean, CA eta ES botoiak.",
+          "texto": []
+        }
+      ],
+      "fuentes": [
+        {"titulo": "Funtzio esponentzialen zeinuak (gaztelaniaz)", "url": "https://bilateria.org/app/mat/funciones/signos/signes_funcions_exponencials_app.html"},
+        {"titulo": "Vibe Coding Educativoren Baliabideen biltegia (gaztelaniaz)", "url": "https://vibe-coding-educativo.github.io/app_edu/"},
+        {"titulo": "CC BY-SA 4.0 lizentzia (gaztelaniaz)", "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.es"}
+      ],
+      "comprobado": "Se miró la captura (tarjeta con f(x)=3^x+1, botones Verificar y Nueva función, selector CA/ES, créditos «Aplicación hecha por Juan José de Haro» y licencia BY-SA) y el texto visible. WebFetch devolvió la versión en catalán con los mismos botones y un apartado «Solució»; no se pudo probar la corrección de las respuestas. Idiomas CA y ES vistos; niveles de dificultad no vistos. Niveles y plataforma (Claude) son de la ficha y van como tal."
+    }
+  ],
+  "descartado": [
+    {"url": "https://bilateria.org/app/juegos/rueda", "motivo": "La captura y el texto solo muestran el aviso de cookies y de «aplicación creada por otra persona» de Gemini; no se ve qué hace el recurso."},
+    {"url": "https://ja.cat/adaptacio", "motivo": "La captura y el texto solo muestran el aviso de cookies y de «aplicación creada por otra persona» de Gemini; no se ve qué hace el recurso."}
+  ],
+  "repaso": [
+    "Titular acortado y sin la afirmación «ejemplos que cambian», no comprobada (superaba o rozaba los 90 caracteres).",
+    "Entradilla: «de uso libre» sustituido por la licencia exacta.",
+    "Niveles y uso de Claude pasan a «según la ficha», porque la página no los muestra.",
+    "Autoría «Juan José de Haro», como firma la propia página (la ficha dice «Juanjo»; la entrada no trae mensaje con marca de autor).",
+    "Quitados «bien maquetada» y el cierre valorativo («buen ejemplo…»).",
+    "Enlazados el Repositorio de recursos y la licencia CC BY-SA en su primera mención; añadido el repositorio a fuentes.",
+    "Descartados confirmados (solo se ve el aviso de Gemini en captura y texto)."
+  ]
+}

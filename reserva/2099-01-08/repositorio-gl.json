@@ -1,0 +1,54 @@
+{
+  "fecha": "2099-01-08",
+  "piezas": [
+    {
+      "id": "signo-de-funciones-exponenciales-simulad",
+      "seccion": "vibecoding",
+      "repositorio": "fondo",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Do fondo do repositorio",
+      "titular": "Unha páxina propón funcións exponenciais para practicar o seu signo",
+      "entradilla": "«Signos de funciones exponenciales» plantexa unha función, como f(x) = 3ˣ + 1, e pide determinar o seu signo. Ábrese no navegador, en castelán ou catalán, con licenza Creative Commons BY-SA.",
+      "cuerpo": [
+        "«Signos de funciones exponenciales» é unha aplicación web de práctica que, segundo a súa ficha, está pensada para secundaria e bacharelato, dentro da área de pensamento lóxico-matemático. Creouna Juan José de Haro, que segundo a ficha empregou Claude, e está no [Repositorio de recursos de Vibe Coding Educativo](https://vibe-coding-educativo.github.io/app_edu/) desde xuño de 2025.",
+        "Ao abrila aparece unha soa tarxeta coa consigna «Determina los signos de la función» e unha expresión, que na captura é f(x) = 3ˣ + 1. Debaixo hai dous botóns: «Verificar», para comprobar a resposta, e «Nueva función», para pasar a outro exemplo. Arriba á dereita, os botóns CA e ES cambian o idioma entre catalán e castelán, que son os dous que declara a ficha.",
+        "Para o profesorado, o útil é a súa sinxeleza. Serve como práctica breve e repetible sobre unha idea concreta: como inflúen a base e o expoñente, e o que se suma ou se resta, no signo dunha función exponencial. Pode proxectarse na aula para resolver varios exemplos en común, ou deixarse á disposición do alumnado como repaso individual. A ficha descríbea como unha exploración interactiva na que se varían base e expoñente; no que se ve ao abrila, o que hai é a práctica con funcións propostas e a súa verificación, así que convén probala antes de decidir como usala.",
+        "Non pide conta nin instalación: abonda con abrir a ligazón en calquera navegador. Na páxina non se ven niveis de dificultade nin axustes, e tampouco se indica se garda datos do alumnado.",
+        "A obra distribúese con licenza [Creative Commons BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.es) (Recoñecemento-CompartirIgual), de xeito que se pode reutilizar e adaptar citando a autoría e compartindo as versións derivadas coa mesma licenza."
+      ],
+      "recursos": [
+        {
+          "id": "signo-de-funciones-exponenciales-simulad",
+          "titulo": "Signo de Funciones Exponenciales - Simulador Interactivo",
+          "autoria": "Juan José de Haro",
+          "url": "https://bilateria.org/app/mat/funciones/signos/signes_funcions_exponencials_app.html",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://bilateria.org/app/mat/funciones/signos/signes_funcions_exponencials_app.html",
+          "licencia": "Creative Commons BY-SA (Recoñecemento-CompartirIgual)",
+          "captura": "2099-01-08-signo-de-funciones-exponenciales-simulad.jpg",
+          "captura_alt": "Páxina co título «Practica los signos de funciones exponenciales», unha tarxeta coa función f(x) = 3^x + 1 e os botóns «Verificar» e «Nueva función»; arriba á dereita, os botóns CA e ES.",
+          "texto": []
+        }
+      ],
+      "fuentes": [
+        {"titulo": "Signos de funciones exponenciales (en castelán)", "url": "https://bilateria.org/app/mat/funciones/signos/signes_funcions_exponencials_app.html"},
+        {"titulo": "Repositorio de recursos de Vibe Coding Educativo (en castelán)", "url": "https://vibe-coding-educativo.github.io/app_edu/"},
+        {"titulo": "Licenza Creative Commons BY-SA 4.0 (en castelán)", "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.es"}
+      ],
+      "comprobado": "Se miró la captura (tarjeta con f(x)=3^x+1, botones Verificar y Nueva función, selector CA/ES, créditos «Aplicación hecha por Juan José de Haro» y licencia BY-SA) y el texto visible. WebFetch devolvió la versión en catalán con los mismos botones y un apartado «Solució»; no se pudo probar la corrección de las respuestas. Idiomas CA y ES vistos; niveles de dificultad no vistos. Niveles y plataforma (Claude) son de la ficha y van como tal."
+    }
+  ],
+  "descartado": [
+    {"url": "https://bilateria.org/app/juegos/rueda", "motivo": "La captura y el texto solo muestran el aviso de cookies y de «aplicación creada por otra persona» de Gemini; no se ve qué hace el recurso."},
+    {"url": "https://ja.cat/adaptacio", "motivo": "La captura y el texto solo muestran el aviso de cookies y de «aplicación creada por otra persona» de Gemini; no se ve qué hace el recurso."}
+  ],
+  "repaso": [
+    "Titular acortado y sin la afirmación «ejemplos que cambian», no comprobada (superaba o rozaba los 90 caracteres).",
+    "Entradilla: «de uso libre» sustituido por la licencia exacta.",
+    "Niveles y uso de Claude pasan a «según la ficha», porque la página no los muestra.",
+    "Autoría «Juan José de Haro», como firma la propia página (la ficha dice «Juanjo»; la entrada no trae mensaje con marca de autor).",
+    "Quitados «bien maquetada» y el cierre valorativo («buen ejemplo…»).",
+    "Enlazados el Repositorio de recursos y la licencia CC BY-SA en su primera mención; añadido el repositorio a fuentes.",
+    "Descartados confirmados (solo se ve el aviso de Gemini en captura y texto)."
+  ]
+}
