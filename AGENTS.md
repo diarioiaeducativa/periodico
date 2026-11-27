@@ -88,7 +88,8 @@ pieza está en `docs/adr/`; aquí, lo que hay que saber para trabajar en él.
   antes de las 9:00, que es cuando salen. El 15-11-2026 se cambió el reportaje a las 6:51 y el dominical y el vídeo
   salieron a las 9:00 con el anterior. El 14-11-2026 se cambió la viñeta y el
   aviso de ChatGPT-IA-edu salió hablando de la anterior. Ya enviado, un
-  aviso se edita con el bot (`editMessageText`, ADR 0037 del bot).
+  aviso se edita con el bot (`editMessageText`, ADR 0037 del bot): son dos mensajes, la portada y el texto
+  (ADR 0054 del bot), y sus números están en `datos/diario/<fecha>.publicado.json` del bot.
 - **Reportaje de reserva a propósito**: crear `estado/<sábado>.reportaje-reserva`
   (ADR 0028).
 - **Reportajes de reserva, uno por semana y varios a la vez** (ADR 0028): se escribe uno cuando el más reciente
