@@ -1,0 +1,85 @@
+{
+ "fecha": "2026-11-26",
+ "elegida": {
+  "n": 3,
+  "pieza": "coursera-udemy-habilidades-2026",
+  "idea": "Enrolments in critical thinking are up 107%, according to the platform that sells the courses: when she asks who wrote the report, Chalk has already passed the first topic (Algorithm delivers the punchline and it is Chalk who comes out well; video call because it is about online courses).",
+  "guion": {
+   "vinetas": [
+    {
+     "cartela": "In an online training session, going over a report.",
+     "escenario": "videollamada",
+     "tiza": {
+      "expresion": "neutral",
+      "postura": "abajo",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "sorprendido",
+      "postura": "arriba",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "algoritmo",
+       "texto": "Enrolments in critical-thinking courses are up 107%!",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "videollamada",
+     "tiza": {
+      "expresion": "pensativo",
+      "postura": "pensar",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "neutral",
+      "postura": "encoger",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "And who wrote the report?",
+       "tipo": "habla"
+      },
+      {
+       "quien": "algoritmo",
+       "texto": "The platform that sells the courses.",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "videollamada",
+     "tiza": {
+      "expresion": "orgulloso",
+      "postura": "encoger",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "riendo",
+      "postura": "senalar",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "algoritmo",
+       "texto": "Congratulations: you’ve passed the first topic.",
+       "tipo": "habla"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "traduccion": "automatic AI translation"
+}

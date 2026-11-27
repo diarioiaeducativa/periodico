@@ -233,4 +233,14 @@
 
 ## 2026-11-25 (publicado el jueves 26 de noviembre de 2026)
 - pieza:2026-11-25/vibe-responsable-4 (vibecoding) Vibe Coding Responsable 4.0: lo publicado en abierto debe poder reutilizarse
+- pieza:2026-11-25/ideogram-personajes-coherentes (multimedia) Ideogram permite repetir un mismo personaje en varias imágenes para materiales de aula
 - breve: El acortador de enlaces ja.cat no cargaba el miércoles 25 por la mañana y, según se coment
+- pieza:2026-11-25/ailit-ocde-ue-marco (biblioteca) OCDE y UE fijan cuatro ámbitos de alfabetización en IA para primaria y secundaria
+- pieza:2026-11-25/ue-contenidos-educativos-digitales (biblioteca) Ocho criterios de la UE para elegir y evaluar contenidos educativos digitales en el aula
+- pieza:2026-11-25/transcribe-herramienta-local-de-transcri (repositorio) Transcribir audio y vídeo y crear subtítulos sin que el archivo salga del ordenador — recursos con artículo: Transcribe: Herramienta Local de Transcripción de Audio y Vídeo (https://jjdeharo.github.io/transcribe/)
+
+## 2026-11-26 (publicado el viernes 27 de noviembre de 2026)
+- pieza:2026-11-26/claude-proyectos-hilos (herramientas) Los proyectos de Claude pasan de carpeta a conversación que reparte el trabajo en hilos
+- pieza:2026-11-26/estacion-tren-agencia-viajes (vibecoding) Una agencia de viajes en tren sirve para practicar matemáticas básicas en ESO
+- pieza:2026-11-26/coursera-udemy-habilidades-2026 (novedades) Un informe de Coursera mide la demanda de cursos de IA y de habilidades humanas
+- breve: La conversación sobre consola o aplicación de escritorio para programar con agentes contin

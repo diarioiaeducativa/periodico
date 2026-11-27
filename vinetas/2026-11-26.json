@@ -1,0 +1,138 @@
+{
+ "fecha": "2026-11-26",
+ "elegida": {
+  "n": 3,
+  "pieza": "coursera-udemy-habilidades-2026",
+  "idea": "Las inscripciones en pensamiento crítico suben un 107 %, según la plataforma que vende los cursos: al preguntar quién firma el informe, Tiza ya ha aprobado el primer tema (remata Algoritmo y la que queda bien es Tiza; videollamada porque va de cursos en línea).",
+  "guion": {
+   "vinetas": [
+    {
+     "cartela": "En una formación en línea, repasando un informe.",
+     "escenario": "videollamada",
+     "tiza": {
+      "expresion": "neutral",
+      "postura": "abajo",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "sorprendido",
+      "postura": "arriba",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "algoritmo",
+       "texto": "¡Las inscripciones en cursos de pensamiento crítico han subido un 107 %!",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "videollamada",
+     "tiza": {
+      "expresion": "pensativo",
+      "postura": "pensar",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "neutral",
+      "postura": "encoger",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "¿Y quién ha hecho el informe?",
+       "tipo": "habla"
+      },
+      {
+       "quien": "algoritmo",
+       "texto": "La plataforma que vende los cursos.",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "videollamada",
+     "tiza": {
+      "expresion": "orgulloso",
+      "postura": "encoger",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "riendo",
+      "postura": "senalar",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "algoritmo",
+       "texto": "Enhorabuena: has aprobado el primer tema.",
+       "tipo": "habla"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "motivo": "La 3 es la única con un giro de verdad: la pregunta de Tiza («¿quién ha hecho el informe?») es ya el pensamiento crítico del que habla la cifra, y el remate lo dice sin explicarlo, en seis palabras. Se entiende sin haber leído la noticia y no inventa nada: el 107 % interanual de inscripciones en pensamiento crítico está en la pieza, y también que el informe es de la propia empresa, con datos de su actividad. No nombra a ninguna empresa («la plataforma que vende los cursos») y la ironía va al informe de parte, no a nadie. Cambia además el molde: remata Algoritmo, pero sin literalidad ni exceso de celo, y Tiza no acaba harta sino que queda bien; los dos últimos remates hablados fueron uno de cada personaje, así que no hay obligación de cambiar de voz. Cabe. La 5 (la vía cortada, «así acaban mis programaciones») es la segunda: reconocible y bien rematada, pero es una comparación, no un giro. La 1 tiene una buena idea (el trabajo en grupo donde trabajan todos) y un remate que la explica. La 2 depende de que Algoritmo se ofenda sin mucho motivo, su remate mudo es tibio y además no cabe. La 4 plantea bien el contraste y lo apaga con un remate que es una frase del breve.",
+ "retoques": "Remate recortado: «acabas de aprobar el primer tema» pasa a «has aprobado el primer tema», más seco. El primer bocadillo no se toca. Tiza, en la tercera viñeta, deja «harto» y «cruzar»: no casaban con un elogio y «cruzar» es de sus posturas más repetidas en los números anteriores; acaba orgullosa y encogiéndose de hombros (falsa modestia), que dobla el chiste. Algoritmo conserva sus caras (sorprendido, neutral, riendo), ninguna de las repetidas salvo el «neutral» de la segunda viñeta, que el chiste necesita: da la respuesta sin ver lo que implica. Escenario videollamada: libre y propio de la noticia (cursos en línea), se mantiene. Sin objeto. Rótulo correcto (48 caracteres, sitúa sin adelantar el chiste). Ningún bocadillo pasa de 90 caracteres.",
+ "puntuaciones": [
+  {
+   "n": 1,
+   "pieza": "claude-proyectos-hilos",
+   "gracia": 7,
+   "claridad": 7,
+   "remate": 5,
+   "respeta_prohibiciones": true,
+   "cabe": true,
+   "comentario": "La idea es buena y de aula: un trabajo en grupo donde trabajan todos no es un trabajo en grupo. Pero el remate la enuncia entera en vez de dejarla caer, y «hilos» pide haber leído la noticia."
+  },
+  {
+   "n": 2,
+   "pieza": "estacion-tren-agencia-viajes",
+   "gracia": 6,
+   "claridad": 7,
+   "remate": 5,
+   "respeta_prohibiciones": true,
+   "cabe": false,
+   "comentario": "La coevaluación entre dos IA es un buen hallazgo y no inventa nada (el autor las alternó para que se revisaran), pero el enfado de Algoritmo es forzado y el remate mudo solo confirma lo dicho en la segunda viñeta. No cabe."
+  },
+  {
+   "n": 3,
+   "pieza": "coursera-udemy-habilidades-2026",
+   "gracia": 8,
+   "claridad": 8,
+   "remate": 8,
+   "respeta_prohibiciones": true,
+   "cabe": true,
+   "comentario": "El mejor giro: la pregunta de Tiza es el pensamiento crítico del que presume la cifra, y el remate lo señala sin explicarlo. Datos fieles a la pieza, ninguna empresa nombrada, y Tiza no acaba harta."
+  },
+  {
+   "n": 4,
+   "pieza": "breve-1",
+   "gracia": 6,
+   "claridad": 7,
+   "remate": 4,
+   "respeta_prohibiciones": true,
+   "cabe": true,
+   "comentario": "El contraste de la segunda viñeta (me las pide todo el mundo y no se hace sola ninguna) es lo mejor, y la tercera lo apaga: «ni desde la consola ni desde la aplicación» es el breve, no un remate, y solo lo pilla quien conoce el debate."
+  },
+  {
+   "n": 5,
+   "pieza": "estacion-tren-agencia-viajes",
+   "gracia": 7,
+   "claridad": 8,
+   "remate": 7,
+   "respeta_prohibiciones": true,
+   "cabe": true,
+   "comentario": "Reconocible para cualquier docente y fiel a la actividad (al final se corta la vía y hay que rehacer el viaje). La ironía va a las programaciones, no a la actividad ni a su autor. Es una comparación más que una sorpresa: segunda."
+  }
+ ]
+}

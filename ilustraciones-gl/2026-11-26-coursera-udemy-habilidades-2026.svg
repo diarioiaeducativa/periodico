@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340">
+<circle class="t fa" cx="230" cy="170" r="100"/>
+<circle class="t fa" cx="370" cy="170" r="100"/>
+<path class="a fz" d="M300 98.6 A100 100 0 0 1 300 241.4 A100 100 0 0 1 300 98.6 Z"/>
+<path class="a" d="M300 286 V250"/>
+<g class="t li3" transform="translate(504 120) scale(3)"><!-- Lucide: globe (ISC) --><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></g>
+<text class="lbl" x="190" y="46" text-anchor="middle">Cursos de IA</text>
+<text class="lbl" x="410" y="46" text-anchor="middle">Destrezas humanas</text>
+<text class="a lbl" x="300" y="316" text-anchor="middle">Índice novo</text>
+<text class="lbl" x="540" y="228" text-anchor="middle">98 países</text>
+</svg>

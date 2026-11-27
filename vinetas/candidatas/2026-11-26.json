@@ -1,0 +1,419 @@
+{
+ "fecha": "2026-11-26",
+ "candidatas": [
+  {
+   "pieza": "claude-proyectos-hilos",
+   "idea": "Un coordinador que reparte el trabajo en hilos es un trabajo en grupo de toda la vida, hasta que Tiza se entera de que ahí trabajan todos (remata Tiza).",
+   "guion": {
+    "vinetas": [
+     {
+      "cartela": "En la sala de profes, con la novedad de un asistente.",
+      "escenario": "sala_profes",
+      "tiza": {
+       "expresion": "neutral",
+       "postura": "sostener",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "contento",
+       "postura": "senalar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "taza",
+      "lleva": "tiza",
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "Describes lo que necesitas y un coordinador reparte el trabajo en hilos.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "sala_profes",
+      "tiza": {
+       "expresion": "harto",
+       "postura": "sostener",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "orgulloso",
+       "postura": "arriba",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "taza",
+      "lleva": "tiza",
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "Un trabajo en grupo de toda la vida.",
+        "tipo": "habla"
+       },
+       {
+        "quien": "algoritmo",
+        "texto": "Casi. Aquí trabajan todos los hilos a la vez.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "sala_profes",
+      "tiza": {
+       "expresion": "sorprendido",
+       "postura": "cabeza",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "neutral",
+       "postura": "encoger",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "¿Todos? Entonces no es un trabajo en grupo.",
+        "tipo": "habla"
+       }
+      ]
+     }
+    ]
+   },
+   "cabe": true
+  },
+  {
+   "pieza": "estacion-tren-agencia-viajes",
+   "idea": "A Algoritmo le ofende que otra IA revise su trabajo con ojo crítico; Tiza le recuerda que eso es la coevaluación que se pide al alumnado (remate mudo: el chasco es de Algoritmo).",
+   "guion": {
+    "vinetas": [
+     {
+      "cartela": "De noche, en casa, leyendo cómo se hizo una actividad.",
+      "escenario": "casa_noche",
+      "tiza": {
+       "expresion": "pensativo",
+       "postura": "sostener",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "sorprendido",
+       "postura": "abajo",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "movil",
+      "lleva": "tiza",
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "Para diseñarla alternó dos IA: cada una revisaba con ojo crítico lo de la otra.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "casa_noche",
+      "tiza": {
+       "expresion": "neutral",
+       "postura": "sostener",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "enfadado",
+       "postura": "jarras",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "movil",
+      "lleva": "tiza",
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "¿Otra IA corrigiendo mi trabajo? ¡Qué falta de confianza!",
+        "tipo": "habla"
+       },
+       {
+        "quien": "tiza",
+        "texto": "Se llama coevaluación. Al alumnado se la pedimos cada trimestre.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "casa_noche",
+      "tiza": {
+       "expresion": "contento",
+       "postura": "sostener",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "avergonzado",
+       "postura": "abajo",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "movil",
+      "lleva": "tiza",
+      "bocadillos": []
+     }
+    ]
+   },
+   "cabe": false,
+   "no_cabe": [
+    "viñeta 2: habla primero quien está a la derecha, pero uno encima del otro los globos no caben ni con el de arriba a todo el ancho (sobran 1 px)"
+   ]
+  },
+  {
+   "pieza": "coursera-udemy-habilidades-2026",
+   "idea": "Las inscripciones en pensamiento crítico suben un 107 %, según la plataforma que vende los cursos: al preguntar quién firma el informe, Tiza ya ha aprobado el primer tema (remata Algoritmo; videollamada porque va de cursos en línea).",
+   "guion": {
+    "vinetas": [
+     {
+      "cartela": "En una formación en línea, repasando un informe.",
+      "escenario": "videollamada",
+      "tiza": {
+       "expresion": "neutral",
+       "postura": "abajo",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "sorprendido",
+       "postura": "arriba",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "¡Las inscripciones en cursos de pensamiento crítico han subido un 107 %!",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "videollamada",
+      "tiza": {
+       "expresion": "pensativo",
+       "postura": "pensar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "neutral",
+       "postura": "encoger",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "¿Y quién ha hecho el informe?",
+        "tipo": "habla"
+       },
+       {
+        "quien": "algoritmo",
+        "texto": "La plataforma que vende los cursos.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "videollamada",
+      "tiza": {
+       "expresion": "harto",
+       "postura": "cruzar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "riendo",
+       "postura": "senalar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "Enhorabuena: acabas de aprobar el primer tema.",
+        "tipo": "habla"
+       }
+      ]
+     }
+    ]
+   },
+   "cabe": true
+  },
+  {
+   "pieza": "breve-1",
+   "idea": "La consola permite tareas que se ejecutan solas sin que nadie las pida; a Tiza le pasa al revés, y los dos acaban de acuerdo ante el montón de papeles (remata Algoritmo, contra la burocracia).",
+   "guion": {
+    "vinetas": [
+     {
+      "cartela": "En el despacho, entre papeles pendientes.",
+      "escenario": "despacho",
+      "tiza": {
+       "expresion": "agotado",
+       "postura": "abajo",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "contento",
+       "postura": "arriba",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "papeles",
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "Con la consola hay tareas que se ejecutan solas, sin que nadie las pida.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "despacho",
+      "tiza": {
+       "expresion": "harto",
+       "postura": "senalar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "sorprendido",
+       "postura": "abajo",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "papeles",
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "Lo mío es al revés: me las pide todo el mundo y no se hace sola ninguna.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "despacho",
+      "tiza": {
+       "expresion": "pensativo",
+       "postura": "encoger",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "preocupado",
+       "postura": "cabeza",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "papeles",
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "Eso no se automatiza ni desde la consola ni desde la aplicación.",
+        "tipo": "habla"
+       }
+      ]
+     }
+    ]
+   },
+   "cabe": true
+  },
+  {
+   "pieza": "estacion-tren-agencia-viajes",
+   "idea": "En la actividad de trenes, al final se corta la vía y hay que rehacer el viaje: a Algoritmo le parece cruel y a Tiza, lo más realista, porque así acaban sus programaciones (remata Tiza).",
+   "guion": {
+    "vinetas": [
+     {
+      "cartela": "En el claustro, hablando de una actividad de trenes.",
+      "escenario": "claustro",
+      "tiza": {
+       "expresion": "contento",
+       "postura": "sostener",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "pensativo",
+       "postura": "abajo",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "folio",
+      "lleva": "tiza",
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "Cada grupo lleva una agencia de viajes en tren: horarios, esperas, presupuestos.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "claustro",
+      "tiza": {
+       "expresion": "neutral",
+       "postura": "sostener",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "preocupado",
+       "postura": "cabeza",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "folio",
+      "lleva": "tiza",
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "Y al final se corta la vía y hay que rehacer el viaje entero.",
+        "tipo": "habla"
+       },
+       {
+        "quien": "algoritmo",
+        "texto": "¿Rehacerlo todo al final? ¡Qué final más cruel!",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "claustro",
+      "tiza": {
+       "expresion": "riendo",
+       "postura": "encoger",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "sorprendido",
+       "postura": "abajo",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "Es lo más realista de la actividad: así acaban mis programaciones.",
+        "tipo": "habla"
+       }
+      ]
+     }
+    ]
+   },
+   "cabe": true
+  }
+ ]
+}

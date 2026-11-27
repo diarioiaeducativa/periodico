@@ -1,0 +1,85 @@
+{
+ "fecha": "2026-11-26",
+ "elegida": {
+  "n": 3,
+  "pieza": "coursera-udemy-habilidades-2026",
+  "idea": "As inscricións en pensamento crítico soben un 107 %, segundo a plataforma que vende os cursos: ao preguntar quen asina o informe, Xiz xa aprobou o primeiro tema (remata Algoritmo e a que queda ben é Xiz; videochamada porque vai de cursos en liña).",
+  "guion": {
+   "vinetas": [
+    {
+     "cartela": "Nunha formación en liña, repasando un informe.",
+     "escenario": "videollamada",
+     "tiza": {
+      "expresion": "neutral",
+      "postura": "abajo",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "sorprendido",
+      "postura": "arriba",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "algoritmo",
+       "texto": "As inscricións en cursos de pensamento crítico subiron un 107 %!",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "videollamada",
+     "tiza": {
+      "expresion": "pensativo",
+      "postura": "pensar",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "neutral",
+      "postura": "encoger",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "E quen fixo o informe?",
+       "tipo": "habla"
+      },
+      {
+       "quien": "algoritmo",
+       "texto": "A plataforma que vende os cursos.",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "videollamada",
+     "tiza": {
+      "expresion": "orgulloso",
+      "postura": "encoger",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "riendo",
+      "postura": "senalar",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "algoritmo",
+       "texto": "Parabéns: aprobaches o primeiro tema.",
+       "tipo": "habla"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "traduccion": "automática con IA"
+}

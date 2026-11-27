@@ -1,0 +1,49 @@
+{
+  "fecha": "2026-11-26",
+  "piezas": [
+    {
+      "id": "comic-elements-v-2-aprendiendo-la-estruc",
+      "seccion": "vibecoding",
+      "repositorio": "fondo",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Do fondo do repositorio",
+      "titular": "Elemental Cómics presenta a táboa periódica cun cómic por elemento, segundo o seu autor",
+      "entradilla": "Unha táboa periódica interactiva que, segundo o seu autor, abre cada elemento como un cómic seguido de actividades de comprensión. Creouna Ernest Boixader e compártese con licenza aberta.",
+      "cuerpo": [
+        "Elemental Cómics é unha táboa periódica que se explora co rato. Ao abrila aparecen os 118 elementos, cada un nunha caixa co seu número atómico, o seu símbolo e o seu nome. Unha fila de botóns permite filtralos por familias: alcalinos, alcalinotérreos, metais de transición, metaloides, halóxenos, gases nobres, lantánidos e actínidos, entre outras. O código de cores distingue cada grupo a simple vista.",
+        "Segundo a ficha, ao premer un elemento pódese ler un cómic sobre el e, despois, facer actividades de comprensión con distintos niveis de dificultade. O seu autor, na mensaxe coa que o compartiu en Vibe Coding Educativo, descríbeas como actividades de tipo DOK, os niveis de profundidade do coñecemento. Esa parte, a dos cómics e os retos, non aparece na captura da portada: o que se ve é a táboa e o seu filtro, e o demais cóntase segundo o seu autor.",
+        "Para o profesorado de Física e Química, serve como porta de entrada á táboa periódica: o alumnado escolle un elemento, lé o seu cómic e compróbao co reto. Pode servir como actividade de aula, de reforzo ou de traballo autónomo. A ficha sitúao desde primaria ata a universidade e a formación profesional, nas áreas de Ciencia e Tecnoloxía e de Linguaxe e Comunicación, e está en español.",
+        "Úsase directamente no navegador, sen descarga. Na propia páxina figura que todos os cómics se crearon coa intelixencia artificial [Gemini Notebook](https://notebook.google.com/) (antes NotebookLM), e o seu autor conta que a aplicación a fixo con esa ferramenta e con [Google AI Studio](https://aistudio.google.com/). Está creada por Ernest Boixader (Eboixader na ficha), co selo de CSI Flors, e publícase coa licenza Creative Commons Recoñecemento-NonComercial-CompartirIgual 4.0: pódese reutilizar e adaptar citando a autoría, sen fins comerciais e compartindo igual."
+      ],
+      "recursos": [
+        {
+          "id": "comic-elements-v-2-aprendiendo-la-estruc",
+          "titulo": "Comic Elements v.2: Aprendiendo la Estructura del Cómic",
+          "autoria": "Eboixader",
+          "url": "https://eboixader.github.io/Comic-Elements-v.2/",
+          "ficha": "https://vibe-coding-educativo.github.io/app_edu/?ids=https://eboixader.github.io/Comic-Elements-v.2/",
+          "licencia": "CC BY-NC-SA 4.0",
+          "captura": "2026-11-26-comic-elements-v-2-aprendiendo-la-estruc.jpg",
+          "captura_alt": "Táboa periódica de cores sobre fondo escuro, co título «Elemental Cómics», botóns de filtro por familias e as primeiras filas de elementos.",
+          "texto": []
+        }
+      ],
+      "fuentes": [
+        {"titulo": "Elemental Cómics - Tabla Periódica (en castelán)", "url": "https://eboixader.github.io/Comic-Elements-v.2/"},
+        {"titulo": "Presentación en Vibe Coding Educativo (en castelán)", "url": "https://t.me/vceduca/7674/8408"},
+        {"titulo": "NotebookLM", "url": "https://notebook.google.com/"},
+        {"titulo": "Google AI Studio", "url": "https://aistudio.google.com/"},
+        {"titulo": "Licenza CC BY-NC-SA 4.0", "url": "http://creativecommons.org/licenses/by-nc-sa/4.0/"}
+      ],
+      "comprobado": "Captura vista: portada con el título, los filtros por familias y la tabla en colores. Texto visible de la entrada leído: los 118 elementos, el pie de autoría y licencia y la nota sobre NotebookLM; ficha y mensaje del autor cotejados. WebFetch solo devolvió el título (la página necesita JavaScript), así que los cómics y las actividades no se han visto y se atribuyen a la ficha y al mensaje del autor. Abiertos notebook.google.com (Gemini Notebook, antes NotebookLM) y aistudio.google.com.",
+      "repaso": [
+        "Titular y entradilla: lo de los cómics y retos, que no se ve en la captura, pasa a «según su autor».",
+        "NotebookLM: enlazado en su primera mención, con su nombre actual (Gemini Notebook) y enlace a notebook.google.com (el antiguo redirige).",
+        "Google AI Studio: enlazado y añadido a fuentes.",
+        "Autoría, licencia, ficha, captura y captura_alt comprobados con la entrada: correctos."
+      ]
+    }
+  ],
+  "descartado": []
+}

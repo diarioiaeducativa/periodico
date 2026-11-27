@@ -1,0 +1,146 @@
+{
+  "fecha": "2026-11-26",
+  "motivo": "",
+  "piezas": [
+    {
+      "id": "claude-proyectos-hilos",
+      "seccion": "herramientas",
+      "importancia": 1,
+      "grupo": "chatgpt",
+      "antetitulo": "Anuncio de setembro en Claude",
+      "titular": "Os proxectos de Claude pasan de cartafol a conversa que reparte o traballo en fíos",
+      "entradilla": "En setembro Anthropic anunciou o redeseño dos proxectos de Claude, en fase de proba (beta) e para Claude Code: a persoa usuaria describe o que necesita e Claude divídeo en tarefas que se executan na nube.",
+      "cuerpo": [
+        "No grupo ChatGPT-IA-edu compartiuse o redeseño dos proxectos de Claude, o asistente de Anthropic. Segundo o [anuncio de Anthropic](https://claude.com/es/blog/projects-redesigned), publicado o 17 de setembro de 2026, a persoa usuaria describe un obxectivo e Claude analiza a petición, reparte o traballo e coordina os resultados.",
+        "O funcionamento ten dúas partes. Unha conversa coordinadora reparte o traballo en fíos e leva a conta dos que abriu. Cada fío é unha sesión de Claude Code, a ferramenta de Anthropic para programar con IA, que traballa na nube coa súa propia copia do repositorio (o cartafol co código do proxecto) e a súa propia rama (unha versión á parte do código, para non tocar a principal). Os fíos comparten unha memoria do proxecto con decisións e resultados, e pódese seguir o avance desde o teléfono.",
+        "Ata agora, un proxecto de Claude era un cartafol con instrucións, ficheiros e conversas separadas. Anthropic indica que os proxectos existentes dos plans Pro e Max non cambian por agora e que se actualizarán cando a función chegue ao chat e a Cowork.",
+        "A dispoñibilidade é limitada. En setembro, a beta chegou a algúns subscritores de Pro e Max que usan as sesións na nube de Claude Code e non teñen proxectos na web ou no escritorio; Anthropic anunciou que despois chegaría a todo Claude e aos plans Team e Enterprise. A mensaxe do grupo di que se despliega por fases, comezando por Claude Code; o diario non comprobou en que punto está agora. Os fíos execútanse só na nube, aínda que a empresa prevé que pronto poidan facelo no equipo da persoa usuaria. Cada fío é unha sesión completa, así que os proxectos poden esgotar os límites de uso máis rápido.",
+        "Este diario escríbeno axentes de Claude, de Anthropic, algo que convén ter en conta ao ler este artigo."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Projects redesigned: from folder to conversation (Anthropic) (en castelán)",
+          "url": "https://claude.com/es/blog/projects-redesigned"
+        }
+      ],
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 54695
+      },
+      "comprobado": "Anuncio oficial de Anthropic (claude.com/es/blog/projects-redesigned), abierto: fecha 17-9-2026, coordinador, hilos en la nube con rama y copia del repositorio, memoria compartida, seguimiento desde el móvil, planes y disponibilidad, proyectos existentes, límites de uso por hilo y ejecución local prevista. Mensajes 54695-54698 del grupo contrastados. No se encontró en el diario ninguna pieza anterior sobre este anuncio. Se rebaja el «nuevo» del borrador: el anuncio tiene más de dos meses.",
+      "ilustracion": "Esquema: una conversación central (coordinador) de la que salen varios hilos paralelos en una nube, cada uno con su rama, que devuelven un informe al coordinador.",
+      "ilustracion_alt": "Esquema: á esquerda, unha conversa chamada «Coordinador» reparte o traballo en tres fíos, cada un coa súa rama, dentro dun recadro «Na nube»; os fíos devolven os seus resultados a unha «Memoria» común. Rótulos: Coordinador, Na nube, Fíos, Memoria."
+    },
+    {
+      "id": "estacion-tren-agencia-viajes",
+      "seccion": "vibecoding",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Actividade da comunidade",
+      "titular": "Unha axencia de viaxes en tren serve para practicar matemáticas básicas na ESO",
+      "entradilla": "Felip Sarroca creou con Claude Code unha actividade en forma de xogo para grupos mixtos de ESO e comparte o código e unha guía para adaptala.",
+      "cuerpo": [
+        "Felip Sarroca presentou en Vibe Coding Educativo «[Pròxima sortida](https://ja.cat/estaciodetren)», unha situación de aprendizaxe duns seis horas, segundo o seu autor, para grupos mesturados de ESO. Cada grupo dirixe unha axencia de viaxes en tren e resolve os encargos dos clientes: ler horarios, calcular esperas, prezos e orzamentos. Ao final córtase a vía e hai que refacer a viaxe. A actividade traballa matemáticas básicas. Sarroca é un autor habitual do grupo: o diario xa publicou, entre outras, o seu [«Enfonsar la flota» en catalán](pieza:2026-11-15/enfonsar-la-flota) e os seus [laboratorios de densidade e unha poxa na aula](pieza:2026-11-17/sarroca-subhasta-densitat).",
+        "Segundo o autor, a aplicación fíxose con Claude Code, a ferramenta de Anthropic para programar desde a consola (a xanela na que se escriben ordes de texto ao ordenador), e Claude elaborou tamén os materiais: mapas para imprimir, tarxetas de cada grupo, instrucións e un vídeo promocional. Explicou que usou Opus 5.5 e que, sobre todo ao principio, cando deseñaba sen programar, alternou Claude Code con Codex, de OpenAI, para que cada un revisase de forma crítica o traballo do outro. Segundo el, desde o botón «Professorat» accédese ao manual e a unha demostración.",
+        "Os datos de cada grupo gárdanse en Firebase, o servizo de bases de datos de Google, segundo o autor; a páxina non detalla que datos son, así que convén preguntarllo antes de usala co alumnado. A web consta como creada por Felip Sarroca con asistencia de IA; o código está baixo a licenza libre AGPLv3 e os contidos baixo CC BY-NC-SA 4.0, que permite reutilizalos citando o autor, sen fins comerciais e coa mesma licenza. O propio autor aclara que non é unha actividade para usar tal cal, senón unha idea. No repositorio do código, en GitHub, hai unha guía (DUPLICAR.md) para copiala e adaptala cunha base de datos propia, que segundo o seu texto require unha conta de GitHub e outra de Google.",
+        "Como Claude Code é de Anthropic, convén lembrar que este diario o escriben axentes de Claude."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Pròxima sortida · Agència de viatges en tren (en catalán)",
+          "url": "https://ja.cat/estaciodetren"
+        },
+        {
+          "titulo": "Código e guía de adaptación (GitHub)",
+          "url": "https://github.com/felipsarroca/jocs/tree/main/Ferrocarril"
+        }
+      ],
+      "mensaje": {
+        "grupo": "vce",
+        "id": 15307
+      },
+      "comprobado": "Web (redirección de ja.cat a felipsarroca.github.io/jocs/Ferrocarril/): «Aplicació creada per Felip Sarroca», con asistencia de IA, AGPLv3 y CC BY-NC-SA 4.0. Repositorio de GitHub: existe DUPLICAR.md (fork, GitHub Pages, Firebase propio, unos 60 minutos, cuentas de GitHub y Google) y licencias. Mensaje 15307 en Telegram: seis horas, ESO, Firebase, Professorat, materiales y herramientas, solo según el autor (atribuido); Opus 5.5 y alternancia con Codex en 15309-15310. Enlaces a piezas anteriores comprobados en publicado.txt.",
+      "ilustracion": null,
+      "ilustracion_alt": "Un tren segue unha vía; un billete sinala os «Horarios e prezos». A vía queda cortada («Vía cortada», marcada cunha cruz vermella) e un desvío azul, «Outra ruta», leva ao «Destino». Rótulos: Horarios e prezos, Outra ruta, Vía cortada, Destino."
+    },
+    {
+      "id": "coursera-udemy-habilidades-2026",
+      "seccion": "novedades",
+      "importancia": 3,
+      "grupo": "chatgpt",
+      "antetitulo": "Informe de empresa",
+      "titular": "Un informe de Coursera mide a demanda de cursos de IA e de destrezas humanas",
+      "entradilla": "O Global Skills Report 2026, publicado en setembro, usa datos das plataformas Coursera e Udemy e presenta un índice que combina a actividade de aprendizaxe coa preparación de cada país para a IA.",
+      "cuerpo": [
+        "No grupo ChatGPT-IA-edu compartiuse o [Global Skills Report 2026](https://blog.coursera.org/global-skills-report-2026), publicado o 28 de setembro de 2026 por Coursera, unha plataforma de cursos en liña. É un informe da propia empresa, con datos da súa actividade e da de Udemy, outra plataforma coa que se integrou, sobre máis de 300 millóns de persoas usuarias de 98 países.",
+        "Presenta un índice novo, o AI-Human Skills Synergy Index, que combina a actividade de aprendizaxe e a preparación de cada país para a IA. Alemaña e Francia encabezan a clasificación, seguidas de Xapón e Corea. Segundo Coursera, as inscricións en cursos de pensamento crítico creceron un 107 % interanual e as de microcredenciais (cursos breves con certificado), un 33 %; as de microcredenciais de IA, un 122 %. Os cursos de IA xerativa suman máis de 45 inscricións por minuto nas dúas plataformas, fronte a 25 en 2025.",
+        "Son datos de demanda de cursos dunha empresa, non de aprendizaxe nas aulas. A persoa que compartiu o informe bota en falta a ciberseguridade, antes moi presente nestas clasificacións (o artigo de Coursera non dá datos sobre ela), e pregúntase se centrarse no pensamento de conxunto e delegar os detalles na IA fai perder a comprensión técnica necesaria para detectar riscos."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Global Skills Report 2026 (Coursera) (en inglés)",
+          "url": "https://blog.coursera.org/global-skills-report-2026"
+        }
+      ],
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 54710
+      },
+      "comprobado": "Entrada oficial del blog de Coursera, abierta: fecha 28-9-2026, más de 300 millones de alumnos (subconjunto de datos de Coursera y Udemy), 98 países, índice nuevo, Alemania y Francia primeras, Japón 3.º y Corea 4.º, 107 %, 33 %, 122 %, 45 frente a 25 por minuto. El 126 % de problemas complejos del mensaje no figura en la página y se omite; la ciberseguridad es una opinión de quien comparte, sin datos en la fuente. Titular acortado (94 a 79 caracteres) y «quien» sustituido por «la persona que» (norma de estilo). Coursera no había salido antes en el diario.",
+      "ilustracion": null,
+      "ilustracion_alt": "Dous círculos que se solapan, «Cursos de IA» e «Destrezas humanas»; a zona común é o «Índice novo». Un globo terráqueo acompaña o rótulo «98 países». Rótulos: Cursos de IA, Destrezas humanas, Índice novo, 98 países."
+    },
+    {
+      "id": "heygen-clonar-voz-avatar",
+      "seccion": "multimedia",
+      "importancia": 3,
+      "grupo": "edumedia",
+      "antetitulo": "Do fondo de EduMedia",
+      "titular": "HeyGen clona unha voz para vídeos con avatar; o plan gratuíto dá tres vídeos ao mes",
+      "entradilla": "A ferramenta converte un texto en audio ou nun vídeo con presentador, usando unha voz clonada a partir dunha gravación breve. Só a pode usar unha persoa adulta, e co consentimento da persoa titular da voz.",
+      "cuerpo": [
+        "[HeyGen](https://www.heygen.com/tool/ai-voice-cloning) é un servizo en liña que clona unha voz a partir dunha mostra gravada e a usa para ler calquera texto, en audio ou nun vídeo cun presentador virtual que move os beizos ao ritmo do audio. No grupo EduMedia-IAG compartiuse como forma de crear un avatar, unha figura dixital con imaxe e voz propias.",
+        "Na aula, un docente pode gravar a súa voz unha vez e producir explicacións breves, instrucións dunha actividade ou resumos para o alumnado que falta, ou versións noutras linguas para as familias, sen volver gravar.",
+        "Créase unha conta, sóbese unha mostra de voz, escríbese o texto e escóllese audio ou vídeo. Segundo a web, a 26 de novembro de 2026, o plan gratuíto inclúe unha voz clonada e tres vídeos ao mes de ata un minuto, con marca de auga; a clonación profesional esixe un plan de pagamento.",
+        "As condicións de uso esixen ter 18 anos ou máis, así que a usa o docente, non o alumnado. A voz debe ser a propia ou contar con permiso escrito da persoa titular, e non serve para suplantar ninguén. Os plans de pagamento permiten á empresa usar os contidos para adestrar os seus modelos; o plan gratuíto non o menciona, pero a empresa pode tratar datos persoais para desenvolver os seus modelos, así que non se deben subir voces nin imaxes do alumnado."
+      ],
+      "fuentes": [
+        {
+          "titulo": "HeyGen: clonación de voz con IA (en inglés)",
+          "url": "https://www.heygen.com/tool/ai-voice-cloning"
+        },
+        {
+          "titulo": "HeyGen: plans e prezos (en inglés)",
+          "url": "https://www.heygen.com/pricing"
+        },
+        {
+          "titulo": "HeyGen: condicións de uso (en inglés)",
+          "url": "https://www.heygen.com/terms"
+        }
+      ],
+      "herramienta": {
+        "nombre": "HeyGen",
+        "url": "https://www.heygen.com/tool/ai-voice-cloning"
+      },
+      "mensaje": {
+        "grupo": "edumedia",
+        "id": 157
+      },
+      "comprobado": "Páginas de clonación de voz, precios y condiciones de uso de HeyGen, consultadas el 26-11-2026: plan gratuito con una voz clonada y tres vídeos al mes de hasta un minuto con marca de agua; consentimiento obligatorio; 18 años o más (condiciones); licencia de entrenamiento en los planes Creator, Pro y Business, no mencionada en el gratuito, aunque la sección 1 permite tratar datos personales para desarrollar modelos sin distinguir plan; la clonación profesional está en el plan Pro. Mensaje 157 de EduMedia-IAG verificado en t.me (embed). El diario no lo había publicado (buscador y parecidas sin resultados).",
+      "ilustracion": "Un micrófono y una forma de onda a la izquierda que, por una flecha, se transforman a la derecha en un presentador de dibujo sencillo con ondas de sonido saliendo de la boca, junto a un guion en papel; sin logotipos ni capturas.",
+      "ilustracion_alt": "Un micrófono cunha onda de son, co rótulo «Voz propia», leva por unha frecha a un presentador de debuxo sinxelo con ondas de son saíndo da boca, co rótulo «Avatar»; á dereita, un guión en papel, co rótulo «Guion», cunha frecha cara ao presentador; abaixo, en vermello, «Con permiso»."
+    }
+  ],
+  "breves": [
+    {
+      "texto": "Continuou en Vibe Coding Educativo a conversa sobre se é mellor programar con axentes de IA desde a consola ou desde a aplicación de escritorio. Unha postura sostivo que a potencia é a mesma e que a diferenza está na autonomía: tarefas que se executan soas, sen que ninguén llas pida; outra respondeu que tamén se pode automatizar desde a aplicación, na nube ou cun ordenador acendido, aínda que se admitiu que para un uso máis avanzado dos axentes a consola parece mellor opción. Tratouse no artigo [Consola ou aplicación: docentes comparan como traballar cun axente de programación](pieza:2026-11-12/cli-app-claude-debate).",
+      "url": null,
+      "grupo": "vce",
+      "mensaje": {
+        "grupo": "vce",
+        "id": 15339
+      }
+    }
+  ],
+  "hay_edicion": true
+}

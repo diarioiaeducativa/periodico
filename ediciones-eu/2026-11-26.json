@@ -1,0 +1,146 @@
+{
+  "fecha": "2026-11-26",
+  "motivo": "",
+  "piezas": [
+    {
+      "id": "claude-proyectos-hilos",
+      "seccion": "herramientas",
+      "importancia": 1,
+      "grupo": "chatgpt",
+      "antetitulo": "Claude-ren irailaren iragarkia",
+      "titular": "Claude-ren proiektuak karpeta izatetik lana hariotan banatzen duen elkarrizketa izatera igaro dira",
+      "entradilla": "Irailean Anthropic-ek Claude-ren proiektuen birdiseinua iragarri zuen, proba-fasean (beta) eta Claude Coderako: erabiltzaileak behar duena azaltzen du, eta Claude-k hodeian exekutatzen diren zereginetan banatzen du.",
+      "cuerpo": [
+        "ChatGPT-IA-edu taldean Claude-ren proiektuen birdiseinua partekatu zen; Claude Anthropic-en laguntzailea da. [Anthropic-en iragarkiaren](https://claude.com/es/blog/projects-redesigned) arabera, 2026ko irailaren 17an argitaratua, erabiltzaileak helburu bat azaltzen du, eta Claudek eskaera aztertu, lana banatu eta emaitzak koordinatzen ditu.",
+        "Funtzionamenduak bi zati ditu. Koordinatzaile den elkarrizketa batek lana hariotan banatzen du, eta irekitakoen kontua daramka. Hari bakoitza Claude Code-ren saio bat da, Anthropic-ek AArekin programatzeko duen tresna, eta hodeian lan egiten du, bere biltegiaren kopiarekin (proiektuaren kodea duen karpeta) eta bere adarrarekin (kodearen bertsio bereizi bat, nagusia ez ukitzeko). Hariek proiektuaren memoria partekatzen dute, erabaki eta emaitzekin, eta aurrerapena telefonotik jarrai daiteke.",
+        "Orain arte, Claude-ren proiektu bat jarraibideak, fitxategiak eta elkarrizketa bereiziak zituen karpeta bat zen. Anthropic-ek adierazi du Pro eta Max planetako lehendik dauden proiektuak, oraingoz, ez direla aldatuko, eta funtzioa txatera eta Coworkera iristean eguneratuko direla.",
+        "Eskuragarritasuna mugatua da. Irailean, beta Pro eta Max planetako harpidedun batzuengana iritsi zen, Claude Code-ren hodeiko saioak erabiltzen dituztenengana eta webean edo mahaigainean proiekturik ez dutenengana; Anthropic-ek iragarri zuen geroago Claude osora eta Team eta Enterprise planetara iritsiko zela. Taldeko mezuak dioenez, faseka zabaltzen ari da, Claude Codetik hasita; egunkariak ez du egiaztatu orain zein puntutan dagoen. Hariak hodeian bakarrik exekutatzen dira, nahiz eta enpresak aurreikusten duen laster erabiltzailearen ekipoan ere exekutatu ahal izatea. Hari bakoitza saio oso bat denez, proiektuek erabilera-mugak azkarrago agor ditzakete.",
+        "Egunkari hau Anthropic-en Claude agenteek idazten dute, artikulu hau irakurtzean kontuan hartzea komeni den zerbait."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Projects redesigned: from folder to conversation (Anthropic) (ingelesez)",
+          "url": "https://claude.com/es/blog/projects-redesigned"
+        }
+      ],
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 54695
+      },
+      "comprobado": "Anuncio oficial de Anthropic (claude.com/es/blog/projects-redesigned), abierto: fecha 17-9-2026, coordinador, hilos en la nube con rama y copia del repositorio, memoria compartida, seguimiento desde el móvil, planes y disponibilidad, proyectos existentes, límites de uso por hilo y ejecución local prevista. Mensajes 54695-54698 del grupo contrastados. No se encontró en el diario ninguna pieza anterior sobre este anuncio. Se rebaja el «nuevo» del borrador: el anuncio tiene más de dos meses.",
+      "ilustracion": "Esquema: una conversación central (coordinador) de la que salen varios hilos paralelos en una nube, cada uno con su rama, que devuelven un informe al coordinador.",
+      "ilustracion_alt": "Eskema bat: ezkerrean, «Koordinatzailea» izeneko elkarrizketa batek lana hiru harien artean banatzen du, bakoitza bere adarrarekin, «Hodeian» laukian; hariek beren emaitzak «Memoria» komun batera bidaltzen dituzte. Errotuluak: Koordinatzailea, Hodeian, Hariak, Memoria."
+    },
+    {
+      "id": "estacion-tren-agencia-viajes",
+      "seccion": "vibecoding",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Komunitatearen jarduera",
+      "titular": "Trenezko bidaia-agentzia bat DBHko oinarrizko matematikak praktikatzeko erabil daiteke",
+      "entradilla": "Felip Sarrocak Claude Code-rekin jolas moduko jarduera bat sortu du DBHko talde mistoentzat, eta kodea eta egokitzeko gida partekatu ditu.",
+      "cuerpo": [
+        "Felip Sarrocak Vibe Coding Educativo taldean «[Pròxima sortida](https://ja.cat/estaciodetren)» aurkeztu zuen, egileak esanda sei ordu ingurukoa den ikaskuntza-egoera bat DBHko talde nahastuentzat. Talde bakoitzak trenezko bidaia-agentzia bat zuzentzen du, eta bezeroen eskaerak ebazten ditu: ordutegiak irakurri, itxaronaldiak, prezioak eta aurrekontuak kalkulatu. Azkenean trenbidea mozten da, eta bidaia berregin behar da. Jarduerak oinarrizko matematikak lantzen ditu. Sarroca taldeko egile ohikoa da: egunkariak, besteak beste, bere [«Hundir la flota» katalanez](pieza:2026-11-15/enfonsar-la-flota) eta bere [dentsitate-laborategiak eta gelako enkante bat](pieza:2026-11-17/sarroca-subhasta-densitat) argitaratu ditu.",
+        "Egilearen arabera, aplikazioa Claude Code-rekin egin zen, Anthropic-ek kontsolatik programatzeko duen tresnarekin (ordenagailuari testuzko aginduak idazten zaizkion leihoa), eta Claude-k materialak ere prestatu zituen: inprimatzeko mapak, talde bakoitzaren txartelak, jarraibideak eta promozio-bideo bat. Azaldu zuen Opus 5.5 erabili zuela eta, batez ere hasieran, programatu gabe diseinatzen ari zenean, Claude Code eta OpenAIren Codex txandakatu zituela, bakoitzak besteak egindako lana modu kritikoan berrikus zezan. Haren esanetan, «Professorat» botoitik eskuliburura eta demo batera iristen da.",
+        "Talde bakoitzaren datuak Firebasen gordetzen dira, Google-ren datu-baseen zerbitzuan, egilearen arabera; orriak ez du zehazten zer datu diren, beraz komeni da hari galdetzea ikasleekin erabili aurretik. Webean Felip Sarrocak IAren laguntzarekin sortutakoa dela ageri da; kodeak AGPLv3 lizentzia librea du eta edukiek CC BY-NC-SA 4.0, egilea aipatuta, helburu komertzialik gabe eta lizentzia bera erabilita berrerabiltzeko aukera ematen duena. Egileak berak argitzen du ez dela jarduera bat dagoen bezala erabiltzeko, ideia bat baizik. Kodearen biltegian, GitHuben, gida bat (DUPLICAR.md) dago kopiatzeko eta datu-base propio batekin egokitzeko; testuaren arabera, GitHub-eko kontu bat eta Google-ko beste bat behar dira.",
+        "Claude Code Anthropic-ena denez, gogoratu behar da egunkari hau Claude agenteek idazten dutela."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Pròxima sortida · Agència de viatges en tren (katalanez)",
+          "url": "https://ja.cat/estaciodetren"
+        },
+        {
+          "titulo": "Kodea eta egokitzeko gida (GitHub) (gaztelaniaz)",
+          "url": "https://github.com/felipsarroca/jocs/tree/main/Ferrocarril"
+        }
+      ],
+      "mensaje": {
+        "grupo": "vce",
+        "id": 15307
+      },
+      "comprobado": "Web (redirección de ja.cat a felipsarroca.github.io/jocs/Ferrocarril/): «Aplicació creada per Felip Sarroca», con asistencia de IA, AGPLv3 y CC BY-NC-SA 4.0. Repositorio de GitHub: existe DUPLICAR.md (fork, GitHub Pages, Firebase propio, unos 60 minutos, cuentas de GitHub y Google) y licencias. Mensaje 15307 en Telegram: seis horas, ESO, Firebase, Professorat, materiales y herramientas, solo según el autor (atribuido); Opus 5.5 y alternancia con Codex en 15309-15310. Enlaces a piezas anteriores comprobados en publicado.txt.",
+      "ilustracion": null,
+      "ilustracion_alt": "Tren bat trenbide bati jarraitzen dio; billete batek «Ordutegiak eta prezioak» adierazten ditu. Trenbidea moztuta dago («Trenbide mozketa», gurutze gorriz markatuta), eta ibilbide urdin batek, «Beste ibilbidea», «Helmugara» eramaten du. Errotuluak: Ordutegiak eta prezioak, Beste ibilbidea, Trenbide mozketa, Helmuga."
+    },
+    {
+      "id": "coursera-udemy-habilidades-2026",
+      "seccion": "novedades",
+      "importancia": 3,
+      "grupo": "chatgpt",
+      "antetitulo": "Enpresa baten txostena",
+      "titular": "Coursera-ren txosten batek AA ikastaroen eta giza trebetasunen eskaria neurtzen du",
+      "entradilla": "Irailean argitaratutako Global Skills Report 2026-k Coursera eta Udemy plataformen datuak erabiltzen ditu, eta ikaskuntza-jarduera eta herrialde bakoitzaren AArako prestakuntza uztartzen dituen indize bat aurkezten du.",
+      "cuerpo": [
+        "ChatGPT-IA-edu taldean [Global Skills Report 2026](https://blog.coursera.org/global-skills-report-2026) partekatu zen, Courserak 2026ko irailaren 28an argitaratua; Coursera lineako ikastaro-plataforma bat da. Enpresaren beraren txosten bat da, bere jarduerako eta Udemy-rena, integratu den beste plataforma baten, datuekin, 98 herrialdetako 300 milioi pertsona baino gehiagori buruzkoa.",
+        "AI-Human Skills Synergy Index izeneko indize berri bat aurkezten du, ikaskuntza-jarduera eta herrialde bakoitzaren AArako prestakuntza uztartzen dituena. Alemania eta Frantzia daude sailkapenaren buruan, Japonia eta Korea ondoren. Courseraren arabera, pentsamendu kritikoko ikastaroetako izen-emateak % 107 hazi ziren urtetik urtera, eta mikroakreditazioetakoak (ziurtagiria duten ikastaro laburrak), % 33; AAren mikroakreditazioetakoak, % 122. AA sortzailearen ikastaroek minutuko 45 izen-emate baino gehiago batzen dituzte bi plataformetan, 2025ean 25 ziren bitartean.",
+        "Enpresa baten ikastaroen eskariaren datuak dira, ez gelako ikaskuntzarenak. Txostena partekatu zuen pertsonak ziberseguritatea falta duela dio, lehen sailkapen hauetan oso presente zegoena (Courseraren artikuluak ez du horri buruzko daturik ematen), eta galdetzen du ea multzoaren pentsamenduan zentratzeak eta xehetasunak AAren esku uzteak arriskuak detektatzeko behar den ulermen teknikoa galtzea ekartzen duen."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Global Skills Report 2026 (Coursera) (ingelesez)",
+          "url": "https://blog.coursera.org/global-skills-report-2026"
+        }
+      ],
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 54710
+      },
+      "comprobado": "Entrada oficial del blog de Coursera, abierta: fecha 28-9-2026, más de 300 millones de alumnos (subconjunto de datos de Coursera y Udemy), 98 países, índice nuevo, Alemania y Francia primeras, Japón 3.º y Corea 4.º, 107 %, 33 %, 122 %, 45 frente a 25 por minuto. El 126 % de problemas complejos del mensaje no figura en la página y se omite; la ciberseguridad es una opinión de quien comparte, sin datos en la fuente. Titular acortado (94 a 79 caracteres) y «quien» sustituido por «la persona que» (norma de estilo). Coursera no había salido antes en el diario.",
+      "ilustracion": null,
+      "ilustracion_alt": "Bi zirkulu gainjarri, «AA ikastaroak» eta «Giza trebetasunak»; zona komuna «Indize berria» da. Lur-globo batek «98 herrialde» errotuluarekin laguntzen du. Errotuluak: AA ikastaroak, Giza trebetasunak, Indize berria, 98 herrialde."
+    },
+    {
+      "id": "heygen-clonar-voz-avatar",
+      "seccion": "multimedia",
+      "importancia": 3,
+      "grupo": "edumedia",
+      "antetitulo": "EduMediaren funtsetik",
+      "titular": "HeyGenek ahotsa klonatzen du avatarra duten bideoetarako, eta doako planak hiru onartzen ditu hilean",
+      "entradilla": "Tresnak testu bat audio bihurtzen du, edo aurkezle bat duen bideo bihurtzen, grabazio labur batetik klonatutako ahots batekin. Heldu batek bakarrik erabil dezake, eta ahotsaren baimenarekin.",
+      "cuerpo": [
+        "[HeyGen](https://www.heygen.com/tool/ai-voice-cloning) lineako zerbitzu bat da: grabatutako lagin batetik ahotsa klonatzen du, eta ahots horrekin edozein testu irakurtzen du, audioan edo ezpainak sinkronizatuta dituen aurkezle birtual bat duen bideoan. EduMedia-IAG taldean norberaren irudia eta ahotsa dituen avatar bat sortzeko modu gisa partekatu zen.",
+        "Gelan, irakasle batek behin bakarrik graba dezake bere ahotsa, eta azalpen laburrak, jarduera baten argibideak edo falta den ikasleentzako laburpenak sortu, edo familientzako beste hizkuntzetako bertsioak, berriz grabatu gabe.",
+        "Kontu bat sortzen da, ahots-lagin bat igotzen da, testua idazten da, eta audioa edo bideoa aukeratzen da. Webaren arabera, 2026ko azaroaren 26an, doako planak ahots klonatu bat eta hilean minutu bateko hiru bideo ditu, ur-markarekin; klonazio profesionalak ordainpeko plana behar du.",
+        "Erabilera-baldintzek 18 urte edo gehiago izatea eskatzen dute, beraz irakasleak erabiltzen du, ez ikasleek. Ahotsa norberarena izan behar da, edo titularraren idatzizko baimena izan behar da, eta ezin da inor ordezkatzeko erabili. Ordainpeko planetan enpresak edukiak bere ereduak entrenatzeko erabil ditzake; doako planak ez du aipatzen, baina enpresak datu pertsonalak tratatu ditzake bere ereduak garatzeko, beraz ez dira ikasleen ahotsik edo irudirik igo behar."
+      ],
+      "fuentes": [
+        {
+          "titulo": "HeyGen: AAren bidezko ahots-klonazioa (ingelesez)",
+          "url": "https://www.heygen.com/tool/ai-voice-cloning"
+        },
+        {
+          "titulo": "HeyGen: planak eta prezioak (ingelesez)",
+          "url": "https://www.heygen.com/pricing"
+        },
+        {
+          "titulo": "HeyGen: erabilera-baldintzak (ingelesez)",
+          "url": "https://www.heygen.com/terms"
+        }
+      ],
+      "herramienta": {
+        "nombre": "HeyGen",
+        "url": "https://www.heygen.com/tool/ai-voice-cloning"
+      },
+      "mensaje": {
+        "grupo": "edumedia",
+        "id": 157
+      },
+      "comprobado": "Páginas de clonación de voz, precios y condiciones de uso de HeyGen, consultadas el 26-11-2026: plan gratuito con una voz clonada y tres vídeos al mes de hasta un minuto con marca de agua; consentimiento obligatorio; 18 años o más (condiciones); licencia de entrenamiento en los planes Creator, Pro y Business, no mencionada en el gratuito, aunque la sección 1 permite tratar datos personales para desarrollar modelos sin distinguir plan; la clonación profesional está en el plan Pro. Mensaje 157 de EduMedia-IAG verificado en t.me (embed). El diario no lo había publicado (buscador y parecidas sin resultados).",
+      "ilustracion": "Un micrófono y una forma de onda a la izquierda que, por una flecha, se transforman a la derecha en un presentador de dibujo sencillo con ondas de sonido saliendo de la boca, junto a un guion en papel; sin logotipos ni capturas.",
+      "ilustracion_alt": "Mikrofono bat, soinu-uhin batekin eta «Ahots propioa» errotuluarekin, gezi batez marrazki sinple bateko aurkezle batengana doa, ahotik soinu-uhinak ateratzen dituela eta «Avatarra» errotuluarekin; eskuinean, paperezko gidoi bat, «Gidoia» errotuluarekin, aurkezlerantz gezi batekin; behean, gorriz, «Baimenarekin»."
+    }
+  ],
+  "breves": [
+    {
+      "texto": "Vibe Coding Educativo taldean jarraitu zuen AA agenteekin kontsolatik ala mahaigaineko aplikaziotik programatzea hobe den ala ez eztabaidatzeak. Jarrera batek defendatu zuen potentzia berbera dela eta aldea autonomian dagoela: inork eskatu gabe beren kabuz exekutatzen diren zereginetan; beste batek erantzun zuen aplikaziotik ere automatiza daitekeela, hodeian edo ordenagailua piztuta utzita, nahiz eta onartu zen agenteen erabilera aurreratuago baterako kontsola aukera hobea dela dirudiela. Honetan landu zen: [Kontsola ala aplikazioa: irakasleek programazio-agente batekin lan egiteko moduak alderatzen dituzte](pieza:2026-11-12/cli-app-claude-debate).",
+      "url": null,
+      "grupo": "vce",
+      "mensaje": {
+        "grupo": "vce",
+        "id": 15339
+      }
+    }
+  ],
+  "hay_edicion": true
+}

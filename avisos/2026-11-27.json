@@ -1,0 +1,37 @@
+{
+  "fecha": "2026-11-27",
+  "avisos": {
+    "chatgpt": {
+      "saludo": "Buenos días. Del reparto de tareas entre hilos de Claude a un informe sobre cursos de IA.",
+      "puntos": [
+        "Los proyectos de Claude se rediseñan: una conversación coordinadora reparte el trabajo en hilos que se ejecutan en la nube. Está en beta y el despliegue es por fases",
+        "El Global Skills Report 2026 de Coursera mide la demanda de cursos de IA y de habilidades humanas, pero son datos de una empresa sobre sus cursos, no sobre el aprendizaje en las aulas",
+        "La viñeta de Tiza y Algoritmo parte de ese informe y de quién lo firma"
+      ]
+    },
+    "vce": {
+      "saludo": "Buenos días. Un tren que se corta, una tabla periódica en cómic y un debate que sigue.",
+      "puntos": [
+        "Felip Sarroca comparte «Pròxima sortida», una actividad de ESO en la que cada grupo dirige una agencia de viajes en tren y hace cálculos con horarios y precios; el código es libre y trae una guía para adaptarlo",
+        "Elemental Cómics, de Ernest Boixader, es una tabla periódica interactiva en la que cada elemento se abre como un cómic con actividades, según su autor; se usa en el navegador y tiene licencia abierta",
+        "Sigue la conversación sobre programar con agentes desde la consola o desde la aplicación de escritorio, con argumentos a favor de cada opción"
+      ],
+      "url": "https://diarioiaeducativa.github.io/n/26-vce.html"
+    },
+    "edumedia": {
+      "saludo": "Buenos días. Voz clonada para vídeos con avatar y cómics hechos con IA.",
+      "puntos": [
+        "HeyGen clona una voz a partir de una grabación breve y la usa en audio o en vídeo con presentador virtual; el plan gratuito da tres vídeos al mes, con marca de agua",
+        "Con HeyGen hace falta ser mayor de edad y contar con permiso de quien es dueño de la voz, así que lo usa el profesorado y no conviene subir voces ni imágenes del alumnado",
+        "En la tabla periódica Elemental Cómics, los cómics de cada elemento se han creado con Gemini Notebook, antes NotebookLM, y la web puede abrirse sin descargar nada"
+      ],
+      "url": "https://diarioiaeducativa.github.io/n/26-edumedia.html"
+    }
+  },
+  "instagram": "El número reúne una herramienta de Anthropic que reparte un encargo en varias tareas paralelas en la nube y un informe de una plataforma de cursos sobre la demanda de formación en inteligencia artificial, con la salvedad de que son datos de la propia empresa. También hay un servicio que clona una voz para crear vídeos con presentador virtual, con sus condiciones de edad y consentimiento, y dos propuestas de aula hechas por docentes: una agencia de viajes en tren para practicar matemáticas y una tabla periódica en cómic.",
+  "titulo": "Diario de IA Educativa · Núm. 26",
+  "fecha_texto": "Viernes, 27 de noviembre de 2026",
+  "url": "https://diarioiaeducativa.github.io/?n=26",
+  "imagen": "https://diarioiaeducativa.github.io/portadas/2026-11-26-es.jpg",
+  "personas": []
+}

@@ -1,0 +1,85 @@
+{
+ "fecha": "2026-11-26",
+ "elegida": {
+  "n": 3,
+  "pieza": "coursera-udemy-habilidades-2026",
+  "idea": "Pentsamendu kritikoko izen-emateak % 107 igo dira, ikastaroak saltzen dituen plataformaren arabera: txostenaren egilea nor den galdetuta, Klarionek lehen gaia gainditu du (Algoritmok amaitzen du, eta ondo geratzen dena Klarion da; bideo-deia lineako ikastaroei buruzkoa delako).",
+  "guion": {
+   "vinetas": [
+    {
+     "cartela": "Lineako prestakuntza batean, txosten bat errepasatzen.",
+     "escenario": "videollamada",
+     "tiza": {
+      "expresion": "neutral",
+      "postura": "abajo",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "sorprendido",
+      "postura": "arriba",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "algoritmo",
+       "texto": "Pentsamendu kritikoko ikastaroetako izen-emateak % 107 igo dira!",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "videollamada",
+     "tiza": {
+      "expresion": "pensativo",
+      "postura": "pensar",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "neutral",
+      "postura": "encoger",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Eta nork egin du txostena?",
+       "tipo": "habla"
+      },
+      {
+       "quien": "algoritmo",
+       "texto": "Ikastaroak saltzen dituen plataformak.",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "videollamada",
+     "tiza": {
+      "expresion": "orgulloso",
+      "postura": "encoger",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "riendo",
+      "postura": "senalar",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "bocadillos": [
+      {
+       "quien": "algoritmo",
+       "texto": "Zorionak: lehen gaia gainditu duzu.",
+       "tipo": "habla"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "traduccion": "itzulpen automatikoa AArekin"
+}

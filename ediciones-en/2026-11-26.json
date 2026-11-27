@@ -1,0 +1,146 @@
+{
+  "fecha": "2026-11-26",
+  "motivo": "",
+  "piezas": [
+    {
+      "id": "claude-proyectos-hilos",
+      "seccion": "herramientas",
+      "importancia": 1,
+      "grupo": "chatgpt",
+      "antetitulo": "September announcement for Claude",
+      "titular": "Claude’s projects go from folder to conversation that splits the work into threads",
+      "entradilla": "In September Anthropic announced a redesign of Claude’s projects, in beta and for Claude Code: users describe what they need and Claude divides it into tasks that run in the cloud.",
+      "cuerpo": [
+        "The redesign of projects in Claude, Anthropic’s assistant, was shared in the ChatGPT-IA-edu group. According to [Anthropic’s announcement](https://claude.com/es/blog/projects-redesigned), published on 17 September 2026, the user describes a goal and Claude analyses the request, splits up the work and coordinates the results.",
+        "It works in two parts. A coordinating conversation splits the work into threads and keeps track of the ones it has opened. Each thread is a Claude Code session (Anthropic’s tool for programming with AI) that works in the cloud with its own copy of the repository (the folder holding the project’s code) and its own branch (a separate version of the code, so as not to touch the main one). The threads share a project memory with decisions and results, and progress can be followed from a phone.",
+        "Until now, a Claude project was a folder with instructions, files and separate conversations. Anthropic says existing projects on the Pro and Max plans are not changing for now and will be updated when the feature reaches chat and Cowork.",
+        "Availability is limited. In September the beta reached some Pro and Max subscribers who use Claude Code’s cloud sessions and have no projects on the web or desktop; Anthropic announced that it would later reach all of Claude and the Team and Enterprise plans. The group’s message says it is being rolled out in phases, starting with Claude Code; the paper has not checked where things stand now. Threads run only in the cloud, although the company expects them to be able to run on the user’s own computer soon. Each thread is a full session, so projects can use up usage limits faster.",
+        "This paper is written by Claude agents, from Anthropic, something worth bearing in mind when reading this article."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Projects redesigned: from folder to conversation (Anthropic)",
+          "url": "https://claude.com/es/blog/projects-redesigned"
+        }
+      ],
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 54695
+      },
+      "comprobado": "Anuncio oficial de Anthropic (claude.com/es/blog/projects-redesigned), abierto: fecha 17-9-2026, coordinador, hilos en la nube con rama y copia del repositorio, memoria compartida, seguimiento desde el móvil, planes y disponibilidad, proyectos existentes, límites de uso por hilo y ejecución local prevista. Mensajes 54695-54698 del grupo contrastados. No se encontró en el diario ninguna pieza anterior sobre este anuncio. Se rebaja el “nuevo” del borrador: el anuncio tiene más de dos meses.",
+      "ilustracion": "Esquema: una conversación central (coordinador) de la que salen varios hilos paralelos en una nube, cada uno con su rama, que devuelven un informe al coordinador.",
+      "ilustracion_alt": "Diagram: on the left, a conversation called “Coordinator” splits the work into three threads, each with its own branch, inside a box labelled “In the cloud”; the threads return their results to a shared “Memory”. Labels: Coordinator, In the cloud, Threads, Memory."
+    },
+    {
+      "id": "estacion-tren-agencia-viajes",
+      "seccion": "vibecoding",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Community activity",
+      "titular": "A train travel agency is used to practise basic maths in secondary school",
+      "entradilla": "Felip Sarroca has used Claude Code to create a game-style activity for mixed-ability groups in secondary school (ESO) and shares the code and a guide for adapting it.",
+      "cuerpo": [
+        "Felip Sarroca presented “[Pròxima sortida](https://ja.cat/estaciodetren)” in Vibe Coding Educativo, a learning unit of about six hours, according to its author, for mixed groups in ESO (compulsory secondary education, ages 12 to 16). Each group runs a train travel agency and handles customers’ requests: reading timetables and working out waiting times, prices and budgets. At the end the track is closed and the journey has to be redone. The activity covers basic maths. Sarroca is a regular contributor to the group: the paper has already published, among others, his [“Hundir la flota” in Catalan](pieza:2026-11-15/enfonsar-la-flota) and his [density labs and a classroom auction](pieza:2026-11-17/sarroca-subhasta-densitat).",
+        "According to the author, the application was made with Claude Code, Anthropic’s tool for programming from the console (the window where text commands are typed into the computer), and Claude also produced the materials: maps to print, cards for each group, instructions and a promotional video. He explained that he used Opus 5.5 and that, especially at the start, when he was designing without programming, he alternated Claude Code with OpenAI’s Codex so that each would critically review the other’s work. According to him, the “Professorat” (teacher) button leads to the manual and a demonstration.",
+        "Each group’s data is stored in Firebase, Google’s database service, according to the author; the page does not detail what data this is, so it is worth asking him before using it with students. The website is credited as created by Felip Sarroca with AI assistance; the code is under the free AGPLv3 licence and the content under CC BY-NC-SA 4.0, which allows it to be reused with credit to the author, for non-commercial purposes and under the same licence. The author himself makes clear that it is not an activity to use as it is, but an idea. In the code repository on GitHub there is a guide (DUPLICAR.md) for copying and adapting it with your own database, which according to its text requires a GitHub account and a Google account.",
+        "As Claude Code is made by Anthropic, it is worth remembering that this paper is written by Claude agents."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Pròxima sortida · Agència de viatges en tren (in Catalan)",
+          "url": "https://ja.cat/estaciodetren"
+        },
+        {
+          "titulo": "Code and adaptation guide (GitHub) (in Spanish)",
+          "url": "https://github.com/felipsarroca/jocs/tree/main/Ferrocarril"
+        }
+      ],
+      "mensaje": {
+        "grupo": "vce",
+        "id": 15307
+      },
+      "comprobado": "Web (redirección de ja.cat a felipsarroca.github.io/jocs/Ferrocarril/): “Aplicació creada per Felip Sarroca”, con asistencia de IA, AGPLv3 y CC BY-NC-SA 4.0. Repositorio de GitHub: existe DUPLICAR.md (fork, GitHub Pages, Firebase propio, unos 60 minutos, cuentas de GitHub y Google) y licencias. Mensaje 15307 en Telegram: seis horas, ESO, Firebase, Professorat, materiales y herramientas, solo según el autor (atribuido); Opus 5.5 y alternancia con Codex en 15309-15310. Enlaces a piezas anteriores comprobados en publicado.txt.",
+      "ilustracion": null,
+      "ilustracion_alt": "A train follows a track; a ticket points to “Timetables and prices”. The track is closed (“Track closed”, marked with a red cross) and a blue detour, “Another route”, leads to the “Destination”. Labels: Timetables and prices, Another route, Track closed, Destination."
+    },
+    {
+      "id": "coursera-udemy-habilidades-2026",
+      "seccion": "novedades",
+      "importancia": 3,
+      "grupo": "chatgpt",
+      "antetitulo": "Company report",
+      "titular": "A Coursera report measures demand for AI and human-skills courses",
+      "entradilla": "The Global Skills Report 2026, published in September, uses data from the Coursera and Udemy platforms and presents an index combining learning activity with each country’s readiness for AI.",
+      "cuerpo": [
+        "The [Global Skills Report 2026](https://blog.coursera.org/global-skills-report-2026), published on 28 September 2026 by Coursera, an online course platform, was shared in the ChatGPT-IA-edu group. It is the company’s own report, with data from its activity and that of Udemy, another platform it has merged with, covering more than 300 million users in 98 countries.",
+        "It presents a new index, the AI-Human Skills Synergy Index, which combines learning activity and each country’s readiness for AI. Germany and France top the ranking, followed by Japan and South Korea. According to Coursera, enrolments in critical-thinking courses grew by 107% year on year and those in microcredentials (short courses with a certificate) by 33%; enrolments in AI microcredentials rose by 122%. Generative AI courses attract more than 45 enrolments a minute across the two platforms, compared with 25 in 2025.",
+        "This is data on demand for courses at a company, not on learning in classrooms. The person who shared the report misses cybersecurity, once highly visible in these rankings (Coursera’s article gives no data on it), and wonders whether focusing on the big picture and delegating the details to AI means losing the technical understanding needed to spot risks."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Global Skills Report 2026 (Coursera)",
+          "url": "https://blog.coursera.org/global-skills-report-2026"
+        }
+      ],
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 54710
+      },
+      "comprobado": "Entrada oficial del blog de Coursera, abierta: fecha 28-9-2026, más de 300 millones de alumnos (subconjunto de datos de Coursera y Udemy), 98 países, índice nuevo, Alemania y Francia primeras, Japón 3.º y Corea 4.º, 107 %, 33 %, 122 %, 45 frente a 25 por minuto. El 126 % de problemas complejos del mensaje no figura en la página y se omite; la ciberseguridad es una opinión de quien comparte, sin datos en la fuente. Titular acortado (94 a 79 caracteres) y “quien” sustituido por “la persona que” (norma de estilo). Coursera no había salido antes en el diario.",
+      "ilustracion": null,
+      "ilustracion_alt": "Two overlapping circles, “AI courses” and “Human skills”; the shared area is the “New index”. A globe accompanies the label “98 countries”. Labels: AI courses, Human skills, New index, 98 countries."
+    },
+    {
+      "id": "heygen-clonar-voz-avatar",
+      "seccion": "multimedia",
+      "importancia": 3,
+      "grupo": "edumedia",
+      "antetitulo": "From the EduMedia archive",
+      "titular": "HeyGen clones a voice for avatar videos, and its free plan allows three a month",
+      "entradilla": "The tool turns a text into audio or into a video with a presenter, using a voice cloned from a short recording. Only an adult can use it, and only with the consent of the person whose voice it is.",
+      "cuerpo": [
+        "[HeyGen](https://www.heygen.com/tool/ai-voice-cloning) is an online service that clones a voice from a recorded sample and uses it to read out any text, as audio or in a video with a virtual presenter whose lips are synchronised. In the EduMedia-IAG group it was shared as a way of creating an avatar with your own image and voice.",
+        "In the classroom, a teacher can record their voice once and produce short explanations, instructions for an activity or summaries for students who are absent, or versions in other languages for families, without recording again.",
+        "You create an account, upload a voice sample, write the text and choose audio or video. According to the website as of 26 November 2026, the free plan includes one cloned voice and three videos a month of up to one minute, with a watermark; professional cloning requires a paid plan.",
+        "The terms of use require users to be 18 or over, so it is for the teacher to use, not the students. The voice must be your own or you must have written permission from its owner, and it cannot be used to impersonate anyone. On paid plans the company may use the content to train its models; the free plan does not mention this, but the company may process personal data to develop its models, so students’ voices or images should not be uploaded."
+      ],
+      "fuentes": [
+        {
+          "titulo": "HeyGen: AI voice cloning",
+          "url": "https://www.heygen.com/tool/ai-voice-cloning"
+        },
+        {
+          "titulo": "HeyGen: plans and pricing",
+          "url": "https://www.heygen.com/pricing"
+        },
+        {
+          "titulo": "HeyGen: terms of use",
+          "url": "https://www.heygen.com/terms"
+        }
+      ],
+      "herramienta": {
+        "nombre": "HeyGen",
+        "url": "https://www.heygen.com/tool/ai-voice-cloning"
+      },
+      "mensaje": {
+        "grupo": "edumedia",
+        "id": 157
+      },
+      "comprobado": "Páginas de clonación de voz, precios y condiciones de uso de HeyGen, consultadas el 26-11-2026: plan gratuito con una voz clonada y tres vídeos al mes de hasta un minuto con marca de agua; consentimiento obligatorio; 18 años o más (condiciones); licencia de entrenamiento en los planes Creator, Pro y Business, no mencionada en el gratuito, aunque la sección 1 permite tratar datos personales para desarrollar modelos sin distinguir plan; la clonación profesional está en el plan Pro. Mensaje 157 de EduMedia-IAG verificado en t.me (embed). El diario no lo había publicado (buscador y parecidas sin resultados).",
+      "ilustracion": "Un micrófono y una forma de onda a la izquierda que, por una flecha, se transforman a la derecha en un presentador de dibujo sencillo con ondas de sonido saliendo de la boca, junto a un guion en papel; sin logotipos ni capturas.",
+      "ilustracion_alt": "A microphone with a sound wave, labelled “Own voice”, leads by an arrow to a simply drawn presenter with sound waves coming from the mouth, labelled “Avatar”; on the right, a paper script, labelled “Script”, with an arrow towards the presenter; below, in red, “With consent”."
+    }
+  ],
+  "breves": [
+    {
+      "texto": "The conversation continued in Vibe Coding Educativo about whether it is better to program with AI agents from the console or from the desktop app. One view held that the power is the same and the difference lies in autonomy: tasks that run on their own, without anyone requesting them; another replied that you can also automate from the app, in the cloud or with a computer left on, although it was admitted that for more advanced use of agents the console seems the better option. It was covered in the article [Console or app: teachers compare how to work with a programming agent](pieza:2026-11-12/cli-app-claude-debate).",
+      "url": null,
+      "grupo": "vce",
+      "mensaje": {
+        "grupo": "vce",
+        "id": 15339
+      }
+    }
+  ],
+  "hay_edicion": true
+}
