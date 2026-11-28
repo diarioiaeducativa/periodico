@@ -55,6 +55,12 @@ directa de que un sitio publica noticias y de cuáles son las nuevas. Juanjo apr
 
 - Hipótesis pendiente de validación: que Google lea el mapa. Se comprueba en Search Console (Indexación >
   Sitemaps) unos días después de enviarlo.
+- Comprobación del 28-11-2026: Search Console ya tiene el informe de rendimiento de Google News (5
+  impresiones y 1 clic desde el 15-11, solo la portada), pero los dos mapas seguían «No se ha podido
+  obtener» desde su envío del 15-11 y solo había una página indexada. La prueba en tiempo real dice que
+  Googlebot descarga `sitemap-news.xml` y que las piezas se pueden indexar, así que el fallo no está en el
+  sitio. Se volvieron a enviar los dos mapas y se pidió la indexación de dos piezas del 27-11 y de
+  `archivo.html`. Queda por ver si Google los lee.
 
 ## Validación
 
