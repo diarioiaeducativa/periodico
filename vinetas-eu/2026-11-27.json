@@ -1,0 +1,81 @@
+{
+ "fecha": "2026-11-27",
+ "elegida": {
+  "n": 1,
+  "pieza": "google-workspace-agentes-mcp",
+  "idea": "Agenteak posta bi segundotan idazten du, baina orain Tizaren baieztapena behar du, eta Tizak «gero begiratuko dut» dio: hiru egun geroago «kargatzen» geratzen dena Algoritmo da (amaiera mutua, ezustekoa berarena da).",
+  "guion": {
+   "vinetas": [
+    {
+     "cartela": "Bulegoan, familientzako posta batekin.",
+     "escenario": "despacho",
+     "tiza": {
+      "expresion": "pensativo",
+      "postura": "sostener",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "orgulloso",
+      "postura": "senalar",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "objeto": "taza",
+     "lleva": "tiza",
+     "bocadillos": [
+      {
+       "quien": "algoritmo",
+       "texto": "Familientzako posta, bi segundotan idatzita. Zuk baieztatzea baino ez dago falta.",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "despacho",
+     "tiza": {
+      "expresion": "harto",
+      "postura": "sostener",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "contento",
+      "postura": "abajo",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "objeto": "taza",
+     "lleva": "tiza",
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Gero begiratuko dut.",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "cartela": "Hiru egun geroago.",
+     "escenario": "despacho",
+     "tiza": {
+      "expresion": "contento",
+      "postura": "sostener",
+      "lugar": "izquierda",
+      "mira": "izquierda"
+     },
+     "algoritmo": {
+      "expresion": "cargando",
+      "postura": "cruzar",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "objeto": "taza",
+     "lleva": "tiza",
+     "bocadillos": []
+    }
+   ]
+  }
+ },
+ "traduccion": "itzulpen automatikoa AArekin"
+}

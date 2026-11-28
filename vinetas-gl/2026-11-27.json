@@ -1,0 +1,81 @@
+{
+ "fecha": "2026-11-27",
+ "elegida": {
+  "n": 1,
+  "pieza": "google-workspace-agentes-mcp",
+  "idea": "O axente escribe o correo en dous segundos, pero agora necesita a confirmación de Xiz, que «logo o mira»: tres días despois, quen se queda «cargando» é Algoritmo (remate mudo, o chasco é del).",
+  "guion": {
+   "vinetas": [
+    {
+     "cartela": "No despacho, cun correo para as familias.",
+     "escenario": "despacho",
+     "tiza": {
+      "expresion": "pensativo",
+      "postura": "sostener",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "orgulloso",
+      "postura": "senalar",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "objeto": "taza",
+     "lleva": "tiza",
+     "bocadillos": [
+      {
+       "quien": "algoritmo",
+       "texto": "Correo ás familias, escrito en dous segundos. Só falta que o confirmes ti.",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "despacho",
+     "tiza": {
+      "expresion": "harto",
+      "postura": "sostener",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "contento",
+      "postura": "abajo",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "objeto": "taza",
+     "lleva": "tiza",
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Logo mírollo.",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "cartela": "Tres días despois.",
+     "escenario": "despacho",
+     "tiza": {
+      "expresion": "contento",
+      "postura": "sostener",
+      "lugar": "izquierda",
+      "mira": "izquierda"
+     },
+     "algoritmo": {
+      "expresion": "cargando",
+      "postura": "cruzar",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "objeto": "taza",
+     "lleva": "tiza",
+     "bocadillos": []
+    }
+   ]
+  }
+ },
+ "traduccion": "automática con IA"
+}

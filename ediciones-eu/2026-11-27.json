@@ -1,0 +1,163 @@
+{
+  "fecha": "2026-11-27",
+  "motivo": "",
+  "piezas": [
+    {
+      "id": "google-workspace-agentes-mcp",
+      "seccion": "novedades",
+      "importancia": 1,
+      "grupo": "chatgpt",
+      "antetitulo": "Google Workspace-ren berria",
+      "titular": "Googlek eskatuko du 2027ko otsailetik AA agenteek bere tresnak erabil ditzaten",
+      "entradilla": "Gmail, Drive edo Docs-en irakurri edo idatziko duten agenteek Googleren tresna propioetatik pasatu beharko dute, eta tresna horiek baieztapena eskatzen dute posta bat bidali edo baimenak aldatu aurretik.",
+      "cuerpo": [
+        "Googlek 2026ko azaroaren 25ean iragarri zuen, [Google Cloud blogean](https://cloud.google.com/blog/products/identity-security/deploying-agents-safely-in-your-enterprise), Workspace-ren MCP zerbitzariak eta komando-lerroko tresna (CLI, aginduak idatziz erabiltzen dena) eskuragarri daudela orokorrean. AA agentea bere kabuz zereginak egiten dituen programa bat da; MCP beste aplikazio batzuekin konektatzeko estandar bat da, eta MCP zerbitzaria sarbide hori ematen dion programa. Googlerenek Gmail, Drive, Docs, Kalkulu-orriak, Aurkezpenak, Calendar, Chat eta Zereginak hartzen dituzte.",
+        "Iragarpenaren arabera, Workspace-n AA tresnei buruzko Googleren erantsi berriarekin, agenteek zerbitzari horiek edo CLI tresna erabili beharko dituzte egungo programazio-interfazeen (API) ordez. Eskakizun teknikoa 2027ko otsailaren 1ean hasiko da. Agente ez diren ohiko aplikazioek API ohikoekin jarrai dezakete. Gainera, agenteek kredentzial propioekin eta gutxieneko baimenekin identifikatu beharko dute beren burua.",
+        "Tresna horiek erabiltzaileari berariazko baieztapena eskatzen diote posta bat bidali, fitxategi baten partekatze-baimenak aldatu edo edizio masiboak egin aurretik. Zirriborroak sortzea edo dokumentuak laburtzea bezalako zereginak galdetu gabe egin daitezke. Googlek, datarik gabe, murrizketak iragarri ditu agente batek mezu edo karpeta jakin batzuk ikus ez ditzan.",
+        "Iragarpenak ez du zehazten Workspace-ren zein planetan aplikatzen den, ezta hezkuntzakoei modu desberdinean eragiten dien ere. Ikastetxe bateko posta edo dokumentuak antolatzeko agente bat erabiltzen dutenek data hori baino lehen egokitu beharko dute agentea, eta komeni da Googleren dokumentazioa kontsultatzea. Egunkariak [agente bati baimenak eman aurretik zer erabaki komeni den azaltzen duen erreportaje bat](pieza:2026-10-31/agentes-ia-permisos-datos-alumnado) argitaratu zuen."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Deploying agents safely in your enterprise (Google Cloud Blog) (ingelesez)",
+          "url": "https://cloud.google.com/blog/products/identity-security/deploying-agents-safely-in-your-enterprise"
+        }
+      ],
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 54713
+      },
+      "comprobado": "Abierto el anuncio del blog de Google Cloud (25-11-2026): servidores MCP y CLI de Workspace disponibles, servicios cubiertos, adendo para agentes, aplicación del 1-2-2027, credenciales OAuth propias y permisos mínimos, confirmación humana, restricciones «próximamente» sin fecha, apps tradicionales con las API; no menciona planes ni educación. Quitada la frase que enlazaba la pieza sobre Chicago y el buscador (otro asunto) y puesto el reportaje de permisos de agentes. Mensaje de Telegram comprobado.",
+      "ilustracion": "Esquema: un agente de IA a la izquierda; en medio una puerta con el rótulo «MCP / CLI» y una mano que confirma; a la derecha Gmail, Drive y Docs.",
+      "ilustracion_alt": "Ezkerretik eskuinera doan eskema: «Agentea» errotuludun robot-ikono bat «MCP / CLI» errotuludun ate ireki baterantz doa; atearen gainean baieztatzen duen pertsona bat dago, egiaztapen-marka batekin; atetik «Gmail», «Drive» eta «Docs» errotuludun hiru ikonotarako lerroak ateratzen dira.",
+      "grafico": null
+    },
+    {
+      "id": "edweek-uso-ia-docentes-62",
+      "seccion": "novedades",
+      "importancia": 2,
+      "grupo": "chatgpt",
+      "antetitulo": "AEBetako irakasleen inkesta",
+      "titular": "AEBetako irakasleen artean AAren erabilera % 62an geratu da, 2025ean baino puntu bat gehiago",
+      "entradilla": "EdWeek-ek 2026ko abuztutik urrira 590 irakasleri egindako inkestak erakusten du erabilera, 2023 eta 2025 artean ia bikoiztu zena, ia ez dela hazi ikasturte honetan.",
+      "cuerpo": [
+        "EdWeek Research Center-ek AEBetako irakasle guztien ordezkari diren 590 irakasleri 2026ko abuztutik urrira egindako inkestaren arabera, % 62k AA tresnak erabiltzen ditu ikasgelan ikasturte honetan, gutxienez pixka bat. 2025ean % 61 zen, eta 2023an, % 34. Informazioa Education Week-ek argitaratu zuen eta [GovTech](https://www.govtech.com/education/k-12/proportion-of-teachers-using-ai-powered-tools-plateaus-around-62)-ek berrargitaratu zuen azaroaren 25ean.",
+        "Urrira arte, irakasleen % 64k AAri buruzko prestakuntza-saio bat jaso zuen gutxienez. Kontsultatutako adituek geldialdiaren arrazoi posibleak aipatzen dituzte: AA hartzeko prest zegoen irakasleria dagoeneko hartu duela, auzo batzuetan pantailen erabilerarekiko errefusa gero eta handiagoa dela, orientabide argirik eza eta probatzeko denbora gutxi. Artikuluak arrazoi horiek posible gisa aurkezten ditu, ez frogatu gisa.",
+        "Informazio beraren arabera, 2026ko beste inkesta batzuek hazkundea erakusten dute: RANDena aipatzen du, zeinaren arabera matematika irakasteko erabilera % 45etik % 74ra pasatu zen 2025 eta 2026 artean. Datuak AEBetakoak dira, eta ez dute ezer esaten Espainiari buruz."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Proportion of Teachers Using AI-Powered Tools Plateaus Around 62% (GovTech) (ingelesez)",
+          "url": "https://www.govtech.com/education/k-12/proportion-of-teachers-using-ai-powered-tools-plateaus-around-62"
+        }
+      ],
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 54717
+      },
+      "comprobado": "Abierto el artículo de GovTech (Education Week, Lauraine Langreo, 25-11-2026): 590 docentes, agosto-octubre 2026, 62 % frente a 61 % en 2025 y 34 % en 2023, 64 % con formación, causas posibles y cifra de RAND. Entradilla rebajada a «casi duplicarse» (34 % a 61 %). Mensaje de Telegram comprobado.",
+      "ilustracion": null,
+      "ilustracion_alt": "Hiru tarteko eskailera bat: «2023» eta «2025» artean indarrez igotzen da, «Ia bikoiztu da» errotuluarekin, eta «2025» eta «2026» artean ia lau geratzen da, «Puntu bat gehiago» errotuluarekin, irakasleria irudikatzen duen pertsona-talde baten azpian.",
+      "grafico": null
+    },
+    {
+      "id": "sentit-comprension-oral-catalan",
+      "seccion": "vibecoding",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "VCEren biltegitik",
+      "titular": "Sentit-ek katalanezko entzumen-ulermenak biltzen ditu ahots sintetikoekin eta inprimatzeko fitxekin",
+      "entradilla": "Aarón Fortuñok, Codex-ekin, ikasleek paperean erantzuten dituzten entzute-jardueren biltegi ireki bat sortu du.",
+      "cuerpo": [
+        "[Sentit](https://sentit.ortogra.fi), Aarón Fortuñorena, MIT lizentziadun kode irekiko web bat da, katalanez entzumena lantzeko. Egilearen arabera, 139 jarduera baliozkotu ditu, bakoitza galderekin, ebazpenekin, transkripzioarekin eta ilustrazioarekin. Irakasleek maila, zailtasuna, iraupena edo jarduera-mota aukeratzen dute eta fitxa prestatzen dute. Bere egilea da, halaber, irakurgaien katalogoa den [Trama](pieza:2026-11-16/trama-comprensio-lectora)rena, eta audioekin diktatuak egiteko [Plec](pieza:2026-10-28/plec-dictados)-ena.",
+        "Ikasleek paperean erantzuten dute eta audioa QR kode baten bidez entzuten dute, konfigurazioa dagoeneko barne duena: errepikapenak, galderak irakurtzeko denbora, etenaldiak eta abiadura. Galderak irekiak edo aukera anitzekoak izan daitezke. Interfazea katalanez eta gaztelaniaz dago, eta egileak ikasturteak, mailak eta hizkuntzak zabaltzeko asmoa du, gaztelaniaz hasita.",
+        "Egileak taldean azaltzen du audioak nola egiten diren: gidoia eta galderak idazten dira, bigarren AA agente batek eta pertsona batek berrikusten dituzte, Gemini-ren ahots-ereduarekin ahotsak sortzen dira, audio osoa entzuten da eta musikarekin eta giro-soinuekin muntatzen da, kredituekin. Maiz izaten diren arazoen artean aipatzen ditu gaizki ahoskatutako hitzak, saltatutako esaldiak eta esaldi bat zuzentzean ahotsaren tinbrea aldatzea. Gemini-ren doako kuotarekin, eskaera bakoitzean hainbat jarduera elkartu behar izan zituen eta audioak gero moztu. Beste pertsona batzuei eskatzen die katalanezko ahots sintetikoekin dituzten esperientziak kontatzeko.",
+        "Egilearen arabera, webgunea estatikoa da, ez du erabiltzaile-konturik eta ez ditu ikasleen erantzunak biltzen; orriak berak dio bisiten estatistikak [Umami](pieza:2026-11-18/umami-analitica-privacidad)-rekin biltzen dituela, eta pertsona bakoitzak bere nabigatzailean desaktiba ditzakeela."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Sentit · Comprensió oral (katalanez)",
+          "url": "https://sentit.ortogra.fi"
+        }
+      ],
+      "mensaje": {
+        "grupo": "vce",
+        "id": 15402
+      },
+      "comprobado": "Abierta la web de Sentit: autor Aarón Fortuño, licencia MIT, interfaz en catalán y castellano, QR en fichas A4, preguntas abiertas o ABCD, Umami con exclusión del navegador, sin cuentas. La cifra de 139 actividades y el proceso de audio son del mensaje del autor (la web no da el total actual: el registro de cambios cita 119 en una versión anterior). Añadidos enlaces a Trama, Plec y Umami, ya publicados, comprobados en publicado.txt. Mensaje de Telegram comprobado; no había nada publicado antes sobre Sentit.",
+      "ilustracion": null,
+      "ilustracion_alt": "«Katalanezko entzumen-ulermena» errotuluaren azpian, geziz lotutako hiru urrats: soinu-uhinak, «Ahots sintetikoa» errotuluarekin; kode bat, «QR kodea» errotuluarekin, eta paper-orri bat, «Paperezko fitxa» errotuluarekin.",
+      "grafico": null
+    },
+    {
+      "id": "polycam-escaneo-3d",
+      "seccion": "multimedia",
+      "importancia": 3,
+      "grupo": "edumedia",
+      "antetitulo": "EduMedia taldeko funtsetik",
+      "titular": "Polycamek objektuak eta espazioak 3D ereduetan bihurtzen ditu mugikorraren kamerarekin",
+      "entradilla": "Aplikazioak aurrean dagoena eskaneatzen du eta biratu, neurtu eta partekatu daitekeen eredu bat sortzen du. Doako planak muga argiak ditu.",
+      "cuerpo": [
+        "[Polycam](https://poly.cam/) 3D eskaneatzeko plataforma bat da: objektu bat edo gela bat mugikor edo tableta baten kamerarekin ibiltzen da, eta programak hiru dimentsioko eredu bat eta neurriak sortzen ditu. Taldean partekatu zenez, LiDAR-ekin (gailu batzuek dakarten distantzia-sentsore bat), doako moduak oso ondo funtzionatzen du.",
+        "Ikasgelan, adibidez, Teknologiako edo Plastikako ikasleek maketa bat edo eskultura bat eskaneatu eta ikuspegi guztietatik aztertzeko balio dezake, edo manipulatu ezin den pieza hauskor bat digitalean gordetzeko.",
+        "Hasteko, aplikazioa instalatzen da, kontu bat sortzen da eta harrapaketa-mota aukeratzen da: objektua, espazioa edo argazkiak. Gero, eskaneatzen dena poliki-poliki inguratzen da.",
+        "Bere [prezioen orriaren](https://poly.cam/pricing) arabera, 2026ko azaroan doako planak harrapaketa bakoitzeko 150 irudi, 3 minutuko bideoak, AAren bidezko 3 harrapaketa eta 10 fotogrametria (argazkietatik sortutako ereduak) onartzen ditu. GLTF formatuan baino ez du esportatzen, bideoek ur-marka dute eta partekatutako estekak publikoak dira. Espazio modua, LiDAR-ekin, iOS gailu bateragarrietan baino ez dago. Basic planak 150 dolar balio du urtean edo 30 hilean.",
+        "Bere [pribatutasun-oharrak](https://poly.cam/privacy_policy) ez du gutxieneko adinik ezartzen, zerbitzua ez dela haurrentzat ezta identifikatu daitezkeen pertsonen irudientzat ere dio, eta edukiak hirugarrenei lagatzeko aukera duela, baita AA ereduak entrenatzeko ere. Horregatik komeni da irakasleek erabil dezaten eta ikaslerik gabeko objektuak edo espazioak bakarrik eskaneatzea."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Polycam (ingelesez)",
+          "url": "https://poly.cam/"
+        },
+        {
+          "titulo": "Polycam: planak eta prezioak (ingelesez)",
+          "url": "https://poly.cam/pricing"
+        },
+        {
+          "titulo": "Polycam: pribatutasun-oharra (ingelesez)",
+          "url": "https://poly.cam/privacy_policy"
+        }
+      ],
+      "herramienta": {
+        "nombre": "Polycam",
+        "url": "https://poly.cam/"
+      },
+      "mensaje": {
+        "grupo": "edumedia",
+        "id": 7576
+      },
+      "comprobado": "Revisado de nuevo. poly.cam: plataforma de captura 3D (espacios, objetos, planos, medidas) con móvil o tableta, apps gratuitas en App Store y Google Play. poly.cam/pricing: plan gratuito con 150 imágenes por captura, vídeos de 3 min, 3 capturas con IA, 10 de fotogrametría, exportación solo GLTF, marca de agua en vídeo, enlaces públicos (los privados, de pago); el modo espacio (LiDAR) está en el plan gratuito pero solo en iOS compatible; Basic, 150 dólares al año o 30 al mes. poly.cam/privacy_policy: sin edad mínima general, servicio no para niños ni para imágenes de personas identificables, posible cesión de contenidos a terceros, también para entrenar IA. Mensaje 7576 (t.me embed) es el enlace a poly.cam; en la conversación, el mensaje 7586 dice que en modo gratuito con LiDAR funciona muy bien. No sale en el diario (buscar: Polycam, 0 resultados; parecidas sin coincidencia).",
+      "ilustracion": "Un antes y un después: a la izquierda, una mano con un móvil rodeando una pequeña escultura sobre una mesa con líneas de puntos que marcan el recorrido; a la derecha, el mismo objeto como malla tridimensional girando en una pantalla, con una regla que señala una medida.",
+      "ilustracion_alt": "Aurretik eta ondoren: ezkerrean, mahai baten gaineko eskultura bat, mugikor baten ibilbidea markatzen duen puntu-lerro batez inguratua, «Eskaneatzea» errotuluarekin; eskuinean, figura bera puntuz eta lerroz osatutako sare gisa pantaila batean, biraketa-gezi batekin eta neurri-lerro gorri batekin, «3D eredua» eta «Neurria» errotuluekin."
+    }
+  ],
+  "breves": [
+    {
+      "texto": "Claude-ren artefaktuak, txatbotak sortzen dituen eduki eta aplikazio txikiak, Mac eta Windows-eko aplikazio gisa instala daitezke. Funtzioa proba-fasean (beta) dago, eta plan guztietan, HIPAA (osasun-datuei buruzko AEBetako legea) aplikatzen zaien erakundeenetan eta instalazio hibridoetan izan ezik; aplikazio bakoitzak baimenak eskatzen ditu, eta Anthropicek ez ditu aurrez berrikusten. Egunkari hau Claude-ren agenteek idazten dute.",
+      "url": "https://claude.com/resources/articles/install-as-app",
+      "grupo": "vce",
+      "mensaje": {
+        "grupo": "vce",
+        "id": 15389
+      }
+    },
+    {
+      "texto": "Pinterestek familiei aukera ematen die nerabe seme-alabek AAz sortutako zenbat eduki ikusten duten mugatzeko, eta erreprodukzio automatikoaren eta jakinarazpenen kontrolak gehitzen ditu. TechCrunch-en arabera, hori eskaintzen duten lehen sare handietako bat da, nahiz eta AAren edukiaren aurkako iragazki orokorrek ez duten beti saihesten agertzea. Artikuluak ez ditu herrialdeak ezta kontu-motak ere zehazten.",
+      "url": "https://techcrunch.com/2026/11/24/pinterest-will-now-let-parents-limit-the-ai-generated-content-their-teens-see/",
+      "grupo": "chatgpt",
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 54724
+      }
+    },
+    {
+      "texto": "[Claude konsolatik, aginduak idatziz, ala mahaigaineko aplikaziotik erabiltzeari buruzko eztabaidaren](pieza:2026-11-12/cli-app-claude-debate) ondoren, Juan José de Harok berriz egin du bere infografia, hezkuntza-vibe coding-aren urratsekin (aplikazioak sortzea AAri hizkera arruntean eskatuta), eta orain maila «aurreratua» eta «aditua» bereizten ditu, konsolak autonomia gehiago ematen duelako.",
+      "url": null,
+      "grupo": "vce",
+      "mensaje": {
+        "grupo": "vce",
+        "id": 15383
+      }
+    }
+  ],
+  "hay_edicion": true
+}

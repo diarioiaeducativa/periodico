@@ -1,0 +1,415 @@
+{
+ "fecha": "2026-11-27",
+ "candidatas": [
+  {
+   "pieza": "google-workspace-agentes-mcp",
+   "idea": "El agente escribe el correo en dos segundos, pero ahora necesita la confirmación de Tiza, que «luego lo mira»: tres días después sigue esperando (remate mudo, el chasco es de Algoritmo).",
+   "guion": {
+    "vinetas": [
+     {
+      "cartela": "En el despacho, con un correo para las familias.",
+      "escenario": "despacho",
+      "tiza": {
+       "expresion": "neutral",
+       "postura": "sostener",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "orgulloso",
+       "postura": "arriba",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "taza",
+      "lleva": "tiza",
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "Correo a las familias escrito en dos segundos. Solo falta que lo confirmes tú.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "despacho",
+      "tiza": {
+       "expresion": "pensativo",
+       "postura": "sostener",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "contento",
+       "postura": "abajo",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "taza",
+      "lleva": "tiza",
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "Luego lo miro.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "cartela": "Tres días después.",
+      "escenario": "despacho",
+      "tiza": {
+       "expresion": "contento",
+       "postura": "sostener",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "cargando",
+       "postura": "cruzar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "taza",
+      "lleva": "tiza",
+      "bocadillos": []
+     }
+    ]
+   },
+   "cabe": true
+  },
+  {
+   "pieza": "edweek-uso-ia-docentes-62",
+   "idea": "Algoritmo no se explica su estancamiento hasta que oye la causa posible: falta tiempo para probar lo que ahorra tiempo (remata Tiza).",
+   "guion": {
+    "vinetas": [
+     {
+      "cartela": "En la sala de profes, con una encuesta sobre la IA.",
+      "escenario": "sala_profes",
+      "tiza": {
+       "expresion": "neutral",
+       "postura": "abajo",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "preocupado",
+       "postura": "sostener",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "folio",
+      "lleva": "algoritmo",
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "El 62 % del profesorado de EE. UU. me usa. Hace un año, el 61 %. Me he estancado.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "sala_profes",
+      "tiza": {
+       "expresion": "pensativo",
+       "postura": "pensar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "preocupado",
+       "postura": "sostener",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "folio",
+      "lleva": "algoritmo",
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "Los expertos apuntan una causa posible: falta tiempo para probarte.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "sala_profes",
+      "tiza": {
+       "expresion": "riendo",
+       "postura": "jarras",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "sorprendido",
+       "postura": "cabeza",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "¿No tienen tiempo para probar lo que les ahorra tiempo?",
+        "tipo": "habla"
+       },
+       {
+        "quien": "tiza",
+        "texto": "Bienvenido a la docencia.",
+        "tipo": "habla"
+       }
+      ]
+     }
+    ]
+   },
+   "cabe": true
+  },
+  {
+   "pieza": "sentit-comprension-oral-catalan",
+   "idea": "La voz sintética se salta una frase y cambia de timbre, y Algoritmo lo hace pasar por parte del ejercicio de escucha (remata Algoritmo, con el chasco para él).",
+   "guion": {
+    "vinetas": [
+     {
+      "cartela": "En la biblioteca, preparando una comprensión oral.",
+      "escenario": "biblioteca",
+      "tiza": {
+       "expresion": "pensativo",
+       "postura": "pensar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "orgulloso",
+       "postura": "arriba",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "portatil",
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "Audio terminado: voz sintética, música de fondo y ambiente.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "biblioteca",
+      "tiza": {
+       "expresion": "preocupado",
+       "postura": "senalar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "neutral",
+       "postura": "abajo",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "portatil",
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "Te has comido una frase y a mitad del texto te cambia la voz.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "biblioteca",
+      "tiza": {
+       "expresion": "riendo",
+       "postura": "jarras",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "avergonzado",
+       "postura": "encoger",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "portatil",
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "Era para comprobar si escuchabas con atención.",
+        "tipo": "habla"
+       }
+      ]
+     }
+    ]
+   },
+   "cabe": true
+  },
+  {
+   "pieza": "sentit-comprension-oral-catalan",
+   "idea": "Si el QR de la ficha fija repeticiones, pausas y velocidad del audio, Tiza quiere uno para el orden del día del claustro (remata Tiza, contra la reunión interminable).",
+   "guion": {
+    "vinetas": [
+     {
+      "cartela": "Antes del claustro, con una ficha de comprensión oral.",
+      "escenario": "claustro",
+      "tiza": {
+       "expresion": "agotado",
+       "postura": "abajo",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "contento",
+       "postura": "sostener",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "folio",
+      "lleva": "algoritmo",
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "El QR de la ficha ya fija las repeticiones, las pausas y la velocidad del audio.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "claustro",
+      "tiza": {
+       "expresion": "pensativo",
+       "postura": "pensar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "orgulloso",
+       "postura": "sostener",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "folio",
+      "lleva": "algoritmo",
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "¿La velocidad también?",
+        "tipo": "habla"
+       },
+       {
+        "quien": "algoritmo",
+        "texto": "La que elija el profesorado.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "claustro",
+      "tiza": {
+       "expresion": "contento",
+       "postura": "senalar",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "riendo",
+       "postura": "sostener",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "folio",
+      "lleva": "algoritmo",
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "Pues pega uno en el orden del día. Sin repeticiones y al doble de velocidad.",
+        "tipo": "habla"
+       }
+      ]
+     }
+    ]
+   },
+   "cabe": true
+  },
+  {
+   "pieza": "breve-2",
+   "idea": "Una red social deja a las familias limitar la IA que ven sus hijos, y Algoritmo se toma a pecho ser contenido con control parental; Tiza lo deja en chuche (remata Tiza).",
+   "guion": {
+    "vinetas": [
+     {
+      "cartela": "De noche, en casa, leyendo las noticias en el móvil.",
+      "escenario": "casa_noche",
+      "tiza": {
+       "expresion": "neutral",
+       "postura": "sostener",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "contento",
+       "postura": "abajo",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "movil",
+      "lleva": "tiza",
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "Una red social deja que las familias limiten la IA que ven sus hijos adolescentes.",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "casa_noche",
+      "tiza": {
+       "expresion": "neutral",
+       "postura": "sostener",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "preocupado",
+       "postura": "cabeza",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "movil",
+      "lleva": "tiza",
+      "bocadillos": [
+       {
+        "quien": "algoritmo",
+        "texto": "¿Limitarme? ¿Ahora soy contenido para mayores?",
+        "tipo": "habla"
+       }
+      ]
+     },
+     {
+      "escenario": "casa_noche",
+      "tiza": {
+       "expresion": "riendo",
+       "postura": "sostener",
+       "lugar": "izquierda",
+       "mira": "derecha"
+      },
+      "algoritmo": {
+       "expresion": "enfadado",
+       "postura": "cruzar",
+       "lugar": "derecha",
+       "mira": "izquierda"
+      },
+      "objeto": "movil",
+      "lleva": "tiza",
+      "bocadillos": [
+       {
+        "quien": "tiza",
+        "texto": "No. Eres como las chuches: un poco, y con permiso de casa.",
+        "tipo": "habla"
+       }
+      ]
+     }
+    ]
+   },
+   "cabe": true
+  }
+ ]
+}

@@ -1,0 +1,163 @@
+{
+  "fecha": "2026-11-27",
+  "motivo": "",
+  "piezas": [
+    {
+      "id": "google-workspace-agentes-mcp",
+      "seccion": "novedades",
+      "importancia": 1,
+      "grupo": "chatgpt",
+      "antetitulo": "Novidade de Google Workspace",
+      "titular": "Google esixirá desde febreiro de 2027 que os axentes de IA usen as súas propias ferramentas",
+      "entradilla": "Os axentes que lean ou escriban en Gmail, Drive ou Docs terán que pasar por ferramentas propias de Google, que piden confirmación antes de enviar correos ou cambiar permisos.",
+      "cuerpo": [
+        "Google anunciou o 25 de novembro de 2026, no [blog de Google Cloud](https://cloud.google.com/blog/products/identity-security/deploying-agents-safely-in-your-enterprise), que xa están dispoñibles de forma xeral os seus servidores MCP de Workspace e a súa ferramenta de liña de ordes (CLI), que se manexa escribindo instrucións. Un axente de IA é un programa que fai tarefas por conta propia; MCP é un estándar para que se conecte a outras aplicacións, e un servidor MCP é o programa que lle dá ese acceso. Os de Google cobren Gmail, Drive, Docs, Follas de cálculo, Presentacións, Calendar, Chat e Tarefas.",
+        "Segundo o anuncio, co novo adenda de Google sobre ferramentas de IA en Workspace, os axentes deberán usar eses servidores ou a CLI en lugar das interfaces de programación (API) actuais. A esixencia técnica comeza o 1 de febreiro de 2027. As aplicacións tradicionais, que non son axentes, poden seguir coas API de sempre. Os axentes terán ademais que identificarse con credenciais propias e cos permisos mínimos.",
+        "Estas ferramentas piden confirmación explícita da persoa usuaria antes de enviar un correo, cambiar os permisos de uso compartido dun ficheiro ou facer edicións masivas. Tarefas como crear bosquexos ou resumir documentos poden facerse sen preguntar. Google anuncia, sen data, restricións para que un axente non poida ver certas mensaxes ou cartafoles.",
+        "O anuncio non precisa a que plans de Workspace se aplica, nin se afecta de forma distinta os de educación. As persoas que empreguen un axente para ordenar o correo ou os documentos dun centro poden ter que adaptalo antes desa data, e convén consultar a documentación de Google. O diario publicou [unha reportaxe sobre que convén decidir antes de dar permisos a un axente](pieza:2026-10-31/agentes-ia-permisos-datos-alumnado)."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Deploying agents safely in your enterprise (Google Cloud Blog) (en inglés)",
+          "url": "https://cloud.google.com/blog/products/identity-security/deploying-agents-safely-in-your-enterprise"
+        }
+      ],
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 54713
+      },
+      "comprobado": "Abierto el anuncio del blog de Google Cloud (25-11-2026): servidores MCP y CLI de Workspace disponibles, servicios cubiertos, adendo para agentes, aplicación del 1-2-2027, credenciales OAuth propias y permisos mínimos, confirmación humana, restricciones «próximamente» sin fecha, apps tradicionales con las API; no menciona planes ni educación. Quitada la frase que enlazaba la pieza sobre Chicago y el buscador (otro asunto) y puesto el reportaje de permisos de agentes. Mensaje de Telegram comprobado.",
+      "ilustracion": "Esquema: un agente de IA a la izquierda; en medio una puerta con el rótulo «MCP / CLI» y una mano que confirma; a la derecha Gmail, Drive y Docs.",
+      "ilustracion_alt": "Esquema de esquerda a dereita: unha icona de robot co rótulo «Axente» avanza cara a unha porta aberta co rótulo «MCP / CLI», sobre a que hai unha persoa cunha marca de verificación que confirma; da porta saen liñas cara a tres iconas rotuladas «Gmail», «Drive» e «Docs».",
+      "grafico": null
+    },
+    {
+      "id": "edweek-uso-ia-docentes-62",
+      "seccion": "novedades",
+      "importancia": 2,
+      "grupo": "chatgpt",
+      "antetitulo": "Enquisa a docentes dos EUA",
+      "titular": "O uso de IA entre docentes dos EUA estáncase no 62 %, un punto máis ca en 2025",
+      "entradilla": "Unha enquisa de EdWeek a 590 docentes, feita de agosto a outubro de 2026, mostra que o uso, que case se duplicou entre 2023 e 2025, apenas creceu este curso.",
+      "cuerpo": [
+        "Segundo unha enquisa do EdWeek Research Center a 590 docentes dos EUA representativos do conxunto, feita entre agosto e outubro de 2026, o 62 % usa ferramentas de IA na aula polo menos un pouco este curso. En 2025 era o 61 %, e en 2023, o 34 %. A información publicouna Education Week e reproduciuna [GovTech](https://www.govtech.com/education/k-12/proportion-of-teachers-using-ai-powered-tools-plateaus-around-62) o 25 de novembro.",
+        "A outubro, o 64 % dos docentes recibira polo menos unha sesión de formación sobre IA. As persoas expertas consultadas apuntan a posibles causas do estancamento: que o profesorado disposto a adoptala xa o fixo, o rexeitamento crecente ao uso de pantallas nalgúns distritos, a falta de orientacións claras e o pouco tempo para probala. O artigo presenta estas razóns como posibles, non demostradas.",
+        "Segundo a mesma información, outras enquisas de 2026 mostran un crecemento: cita unha de RAND segundo a cal o uso para ensinar matemáticas pasou do 45 % ao 74 % entre 2025 e 2026. Os datos son dos EUA e non din nada sobre España."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Proportion of Teachers Using AI-Powered Tools Plateaus Around 62% (GovTech) (en inglés)",
+          "url": "https://www.govtech.com/education/k-12/proportion-of-teachers-using-ai-powered-tools-plateaus-around-62"
+        }
+      ],
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 54717
+      },
+      "comprobado": "Abierto el artículo de GovTech (Education Week, Lauraine Langreo, 25-11-2026): 590 docentes, agosto-octubre 2026, 62 % frente a 61 % en 2025 y 34 % en 2023, 64 % con formación, causas posibles y cifra de RAND. Entradilla rebajada a «casi duplicarse» (34 % a 61 %). Mensaje de Telegram comprobado.",
+      "ilustracion": null,
+      "ilustracion_alt": "Unha escaleira de tres tramos: sobe con forza entre «2023» e «2025», co rótulo «Case se duplica», e entre «2025» e «2026» queda case plana, co rótulo «Un punto máis», sobre un grupo de persoas que representa o profesorado.",
+      "grafico": null
+    },
+    {
+      "id": "sentit-comprension-oral-catalan",
+      "seccion": "vibecoding",
+      "importancia": 2,
+      "grupo": "vce",
+      "antetitulo": "Do repositorio de VCE",
+      "titular": "Sentit reúne comprensións orais en catalán con voces sintéticas e fichas para imprimir",
+      "entradilla": "Aarón Fortuño creou, con Codex, un repositorio aberto de actividades de escoita que o alumnado responde en papel.",
+      "cuerpo": [
+        "[Sentit](https://sentit.ortogra.fi), de Aarón Fortuño, é unha web de código aberto con licenza MIT para traballar a comprensión oral en catalán. Segundo o seu autor, ten 139 actividades validadas, cada unha con preguntas, solucionario, transcrición e ilustración. O profesorado filtra por curso, dificultade, duración ou tipo de actividade e prepara a ficha. O seu autor é tamén o de [Trama](pieza:2026-11-16/trama-comprensio-lectora), o catálogo de lecturas, e de [Plec](pieza:2026-10-28/plec-dictados), os ditados con audio.",
+        "O alumnado responde en papel e accede ao audio cun código QR que xa leva a configuración: repeticións, tempo para ler as preguntas, pausas e velocidade. As preguntas poden ser abertas ou de opción múltiple. A interface está en catalán e en castelán, e o seu autor ten previsto ampliar cursos, niveis e idiomas, comezando polo castelán.",
+        "O autor explica no grupo como se fan os audios: escríbense o guión e as preguntas, revísanos un segundo axente de IA e unha persoa, xéranse as voces co modelo de voz de Gemini, escóitase o audio completo e móntase con música e sons de ambiente, cos seus créditos. Entre os problemas frecuentes cita palabras mal pronunciadas, frases omitidas ou cambios de timbre da voz ao corrixir unha frase. Coa cota gratuíta de Gemini tivo que agrupar varias actividades en cada petición e cortar os audios despois. Pide a outras persoas que conten as súas experiencias con voces sintéticas en catalán.",
+        "Segundo o autor, a web é estática, non ten contas de usuario nin recolle respostas do alumnado; a propia páxina di que recolle estatísticas de visitas con [Umami](pieza:2026-11-18/umami-analitica-privacidad), que cada persoa pode desactivar no seu navegador."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Sentit · Comprensió oral (en catalán)",
+          "url": "https://sentit.ortogra.fi"
+        }
+      ],
+      "mensaje": {
+        "grupo": "vce",
+        "id": 15402
+      },
+      "comprobado": "Abierta la web de Sentit: autor Aarón Fortuño, licencia MIT, interfaz en catalán y castellano, QR en fichas A4, preguntas abiertas o ABCD, Umami con exclusión del navegador, sin cuentas. La cifra de 139 actividades y el proceso de audio son del mensaje del autor (la web no da el total actual: el registro de cambios cita 119 en una versión anterior). Añadidos enlaces a Trama, Plec y Umami, ya publicados, comprobados en publicado.txt. Mensaje de Telegram comprobado; no había nada publicado antes sobre Sentit.",
+      "ilustracion": null,
+      "ilustracion_alt": "Baixo o rótulo «Comprensión oral en catalán», tres pasos unidos por frechas: ondas de son co rótulo «Voz sintética», un código co rótulo «Código QR» e unha folla de papel co rótulo «Ficha en papel».",
+      "grafico": null
+    },
+    {
+      "id": "polycam-escaneo-3d",
+      "seccion": "multimedia",
+      "importancia": 3,
+      "grupo": "edumedia",
+      "antetitulo": "Do fondo de EduMedia",
+      "titular": "Polycam converte obxectos e espazos en modelos 3D coa cámara do móbil",
+      "entradilla": "A aplicación escanea o que hai diante e xera un modelo que se pode xirar, medir e compartir. O seu plan gratuíto ten límites claros.",
+      "cuerpo": [
+        "[Polycam](https://poly.cam/) é unha plataforma de escaneo 3D: percórrese un obxecto ou unha sala coa cámara dun móbil ou dunha tableta e o programa xera un modelo tridimensional e medidas. No grupo compartiuse que, con LiDAR (un sensor de distancia que traen algúns dispositivos), o modo gratuíto funciona moi ben.",
+        "Na aula serve, por exemplo, para que o alumnado de Tecnoloxía ou de Plástica escanee unha maqueta ou unha escultura e a analice desde todos os ángulos, ou para conservar en dixital unha peza fráxil que non se pode manipular.",
+        "Para comezar instálase a aplicación, créase unha conta e escóllese o tipo de captura: obxecto, espazo ou fotografías. Despois rodéase amodo o que se quere escanear.",
+        "Segundo a súa [páxina de prezos](https://poly.cam/pricing), en novembro de 2026 o plan gratuíto permite 150 imaxes por captura, vídeos de 3 minutos, 3 capturas con IA e 10 de fotogrametría (modelos creados a partir de fotos). Só exporta en GLTF, un formato de ficheiro para modelos 3D, os vídeos levan marca de auga e as ligazóns compartidas son públicas. O modo espazo, con LiDAR, só está en dispositivos iOS compatibles. O plan Basic custa 150 dólares ao ano ou 30 ao mes.",
+        "O seu [aviso de privacidade](https://poly.cam/privacy_policy) non fixa unha idade mínima, di que o servizo non é para nenos nin para imaxes de persoas identificables, e que pode ceder os contidos a terceiros, tamén para adestrar modelos de IA. Por iso convén que o use o profesorado e escanee só obxectos ou espazos sen alumnado."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Polycam (en inglés)",
+          "url": "https://poly.cam/"
+        },
+        {
+          "titulo": "Polycam: plans e prezos (en inglés)",
+          "url": "https://poly.cam/pricing"
+        },
+        {
+          "titulo": "Polycam: aviso de privacidade (en inglés)",
+          "url": "https://poly.cam/privacy_policy"
+        }
+      ],
+      "herramienta": {
+        "nombre": "Polycam",
+        "url": "https://poly.cam/"
+      },
+      "mensaje": {
+        "grupo": "edumedia",
+        "id": 7576
+      },
+      "comprobado": "Revisado de nuevo. poly.cam: plataforma de captura 3D (espacios, objetos, planos, medidas) con móvil o tableta, apps gratuitas en App Store y Google Play. poly.cam/pricing: plan gratuito con 150 imágenes por captura, vídeos de 3 min, 3 capturas con IA, 10 de fotogrametría, exportación solo GLTF, marca de agua en vídeo, enlaces públicos (los privados, de pago); el modo espacio (LiDAR) está en el plan gratuito pero solo en iOS compatible; Basic, 150 dólares al año o 30 al mes. poly.cam/privacy_policy: sin edad mínima general, servicio no para niños ni para imágenes de personas identificables, posible cesión de contenidos a terceros, también para entrenar IA. Mensaje 7576 (t.me embed) es el enlace a poly.cam; en la conversación, el mensaje 7586 dice que en modo gratuito con LiDAR funciona muy bien. No sale en el diario (buscar: Polycam, 0 resultados; parecidas sin coincidencia).",
+      "ilustracion": "Un antes y un después: a la izquierda, una mano con un móvil rodeando una pequeña escultura sobre una mesa con líneas de puntos que marcan el recorrido; a la derecha, el mismo objeto como malla tridimensional girando en una pantalla, con una regla que señala una medida.",
+      "ilustracion_alt": "Antes e despois: á esquerda, unha escultura sobre unha mesa rodeada por unha liña de puntos que percorre un móbil, co rótulo «Escaneo»; á dereita, a mesma figura como malla de puntos e liñas nunha pantalla, cunha frecha de xiro e unha liña de medida en vermello, cos rótulos «Modelo 3D» e «Medida»."
+    }
+  ],
+  "breves": [
+    {
+      "texto": "Os artefactos de Claude, os contidos e pequenas aplicacións que xera o chatbot, pódense instalar como aplicacións de Mac e Windows. A función está en fase de probas (beta) e en todos os plans agás os de organizacións suxeitas a HIPAA (a lei estadounidense de datos sanitarios) e as instalacións híbridas; cada aplicación pide permisos e Anthropic non as revisa antes. Este diario escríbeno axentes de Claude.",
+      "url": "https://claude.com/resources/articles/install-as-app",
+      "grupo": "vce",
+      "mensaje": {
+        "grupo": "vce",
+        "id": 15389
+      }
+    },
+    {
+      "texto": "Pinterest permite ás familias limitar canto contido xerado con IA ven os seus fillos adolescentes, e engade controis de reprodución automática e de notificacións. Segundo TechCrunch, é unha das primeiras grandes redes en ofrecelo, aínda que os seus filtros xerais contra o contido de IA non sempre impiden que apareza. O artigo non precisa países nin tipos de conta.",
+      "url": "https://techcrunch.com/2026/11/24/pinterest-will-now-let-parents-limit-the-ai-generated-content-their-teens-see/",
+      "grupo": "chatgpt",
+      "mensaje": {
+        "grupo": "chatgpt",
+        "id": 54724
+      }
+    },
+    {
+      "texto": "Tras o [debate sobre se usar Claude desde a consola, escribindo ordes, ou desde a aplicación de escritorio](pieza:2026-11-12/cli-app-claude-debate), Juan José de Haro refixo a súa infografía cos pasos do vibe coding educativo (crear aplicacións pedíndollas a unha IA en linguaxe corrente) e agora separa o nivel «avanzado» do «experto», porque a consola engade autonomía.",
+      "url": null,
+      "grupo": "vce",
+      "mensaje": {
+        "grupo": "vce",
+        "id": 15383
+      }
+    }
+  ],
+  "hay_edicion": true
+}

@@ -1,0 +1,81 @@
+{
+ "fecha": "2026-11-27",
+ "elegida": {
+  "n": 1,
+  "pieza": "google-workspace-agentes-mcp",
+  "idea": "The agent writes the email in two seconds, but now it needs Chalk’s confirmation, and Chalk will “look at it later”: three days on, it is Algorithm who is left “loading” (silent punchline, the letdown is his).",
+  "guion": {
+   "vinetas": [
+    {
+     "cartela": "In the office, with an email for families.",
+     "escenario": "despacho",
+     "tiza": {
+      "expresion": "pensativo",
+      "postura": "sostener",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "orgulloso",
+      "postura": "senalar",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "objeto": "taza",
+     "lleva": "tiza",
+     "bocadillos": [
+      {
+       "quien": "algoritmo",
+       "texto": "Email to the families, written in two seconds. You just need to confirm it.",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "despacho",
+     "tiza": {
+      "expresion": "harto",
+      "postura": "sostener",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "contento",
+      "postura": "abajo",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "objeto": "taza",
+     "lleva": "tiza",
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "I’ll look at it later.",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "cartela": "Three days later.",
+     "escenario": "despacho",
+     "tiza": {
+      "expresion": "contento",
+      "postura": "sostener",
+      "lugar": "izquierda",
+      "mira": "izquierda"
+     },
+     "algoritmo": {
+      "expresion": "cargando",
+      "postura": "cruzar",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "objeto": "taza",
+     "lleva": "tiza",
+     "bocadillos": []
+    }
+   ]
+  }
+ },
+ "traduccion": "automatic AI translation"
+}

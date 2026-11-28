@@ -243,4 +243,14 @@
 - pieza:2026-11-26/claude-proyectos-hilos (herramientas) Los proyectos de Claude pasan de carpeta a conversación que reparte el trabajo en hilos
 - pieza:2026-11-26/estacion-tren-agencia-viajes (vibecoding) Una agencia de viajes en tren sirve para practicar matemáticas básicas en ESO
 - pieza:2026-11-26/coursera-udemy-habilidades-2026 (novedades) Un informe de Coursera mide la demanda de cursos de IA y de habilidades humanas
-- breve: La conversación sobre consola o aplicación de escritorio para programar con agentes contin
+- pieza:2026-11-26/heygen-clonar-voz-avatar (multimedia) HeyGen clona una voz para vídeos con avatar; el plan gratuito da tres vídeos al mes
+- breve: Continuó en Vibe Coding Educativo la conversación sobre si es mejor programar con agentes 
+- pieza:2026-11-26/comic-elements-v-2-aprendiendo-la-estruc (repositorio) Elemental Cómics presenta la tabla periódica con un cómic por elemento, según su autor — recursos con artículo: Comic Elements v.2: Aprendiendo la Estructura del Cómic (https://eboixader.github.io/Comic-Elements-v.2/)
+
+## 2026-11-27 (publicado el sábado 28 de noviembre de 2026)
+- pieza:2026-11-27/google-workspace-agentes-mcp (novedades) Google exigirá desde febrero de 2027 que los agentes de IA usen sus servidores MCP o CLI
+- pieza:2026-11-27/edweek-uso-ia-docentes-62 (novedades) El uso de IA entre el profesorado estadounidense se estanca: el 62 % la usa, un punto más que en 2025
+- pieza:2026-11-27/sentit-comprension-oral-catalan (vibecoding) Sentit reúne comprensiones orales en catalán con voces sintéticas y fichas para imprimir
+- breve: Los artefactos de Claude se pueden instalar como aplicaciones de Mac y Windows, en beta y 
+- breve: Pinterest permite a las familias limitar cuánto contenido generado con IA ven sus hijos ad
+- breve: Tras el [debate sobre consola o aplicación de escritorio](pieza:2026-11-12/cli-app-claude-

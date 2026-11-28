@@ -1,0 +1,81 @@
+{
+ "fecha": "2026-11-27",
+ "elegida": {
+  "n": 1,
+  "pieza": "google-workspace-agentes-mcp",
+  "idea": "L'agent escriu el correu en dos segons, però ara necessita la confirmació de Guix, que «ja ho miraré»: tres dies després, qui es queda «carregant» és Algorisme (cloenda muda, el xasco és seu).",
+  "guion": {
+   "vinetas": [
+    {
+     "cartela": "Al despatx, amb un correu per a les famílies.",
+     "escenario": "despacho",
+     "tiza": {
+      "expresion": "pensativo",
+      "postura": "sostener",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "orgulloso",
+      "postura": "senalar",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "objeto": "taza",
+     "lleva": "tiza",
+     "bocadillos": [
+      {
+       "quien": "algoritmo",
+       "texto": "Correu a les famílies, escrit en dos segons. Només falta que el confirmis tu.",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "despacho",
+     "tiza": {
+      "expresion": "harto",
+      "postura": "sostener",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "contento",
+      "postura": "abajo",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "objeto": "taza",
+     "lleva": "tiza",
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Ja ho miraré.",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "cartela": "Tres dies després.",
+     "escenario": "despacho",
+     "tiza": {
+      "expresion": "contento",
+      "postura": "sostener",
+      "lugar": "izquierda",
+      "mira": "izquierda"
+     },
+     "algoritmo": {
+      "expresion": "cargando",
+      "postura": "cruzar",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "objeto": "taza",
+     "lleva": "tiza",
+     "bocadillos": []
+    }
+   ]
+  }
+ },
+ "traduccion": "automàtica amb IA"
+}

@@ -1,0 +1,134 @@
+{
+ "fecha": "2026-11-27",
+ "elegida": {
+  "n": 1,
+  "pieza": "google-workspace-agentes-mcp",
+  "idea": "El agente escribe el correo en dos segundos, pero ahora necesita la confirmación de Tiza, que «luego lo mira»: tres días después, quien se queda «cargando» es Algoritmo (remate mudo, el chasco es suyo).",
+  "guion": {
+   "vinetas": [
+    {
+     "cartela": "En el despacho, con un correo para las familias.",
+     "escenario": "despacho",
+     "tiza": {
+      "expresion": "pensativo",
+      "postura": "sostener",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "orgulloso",
+      "postura": "senalar",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "objeto": "taza",
+     "lleva": "tiza",
+     "bocadillos": [
+      {
+       "quien": "algoritmo",
+       "texto": "Correo a las familias, escrito en dos segundos. Solo falta que lo confirmes tú.",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "escenario": "despacho",
+     "tiza": {
+      "expresion": "harto",
+      "postura": "sostener",
+      "lugar": "izquierda",
+      "mira": "derecha"
+     },
+     "algoritmo": {
+      "expresion": "contento",
+      "postura": "abajo",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "objeto": "taza",
+     "lleva": "tiza",
+     "bocadillos": [
+      {
+       "quien": "tiza",
+       "texto": "Luego lo miro.",
+       "tipo": "habla"
+      }
+     ]
+    },
+    {
+     "cartela": "Tres días después.",
+     "escenario": "despacho",
+     "tiza": {
+      "expresion": "contento",
+      "postura": "sostener",
+      "lugar": "izquierda",
+      "mira": "izquierda"
+     },
+     "algoritmo": {
+      "expresion": "cargando",
+      "postura": "cruzar",
+      "lugar": "derecha",
+      "mira": "izquierda"
+     },
+     "objeto": "taza",
+     "lleva": "tiza",
+     "bocadillos": []
+    }
+   ]
+  }
+ },
+ "motivo": "La 1 tiene el mejor giro y el más visual: siempre es la persona la que espera a la máquina, y aquí la que se queda con los tres puntos de «cargando» es la IA, esperando un «luego lo miro» que cualquier docente reconoce como propio. Se entiende sin leer la noticia y no inventa nada de ella: la pieza dice que las herramientas piden confirmación de la persona antes de enviar un correo; «dos segundos» y «tres días» son la exageración del chiste, no datos. No nombra a ninguna empresa y la ironía va a lo que nos pasa con la tecnología (el cuello de botella somos nosotros). Además cambia el molde: Algoritmo dijo la última frase en los dos números anteriores y hoy el remate es mudo, con el chasco para él y Tiza tan tranquila, no harta. Cabe. La 2 (falta tiempo para probar lo que ahorra tiempo) es la segunda, muy cerca: paradoja fiel a la pieza y remate de Tiza, pero la segunda viñeta es expositiva y «Bienvenido a la docencia» es una fórmula ya oída. La 3 tiene gracia, pero es el molde gastado (Algoritmo disimula su fallo) y sería el tercer remate seguido de Algoritmo. La 4 es reconocible (el claustro interminable) y su remate enumera más que sorprende. La 5 es una comparación tibia y Algoritmo se ofende sin mucho motivo.",
+ "retoques": "Texto: en el primer bocadillo, una coma tras «familias» para que se lea como parte de trabajo («Correo a las familias, escrito en dos segundos»); sin alargarlo en la práctica (79 caracteres). «Luego lo miro» y el remate mudo no se tocan. Dibujo: en la tercera viñeta Tiza mira a la izquierda, de espaldas a Algoritmo y con su taza, para que se vea que ni se acuerda del correo; él sigue «cargando» con los brazos cruzados (cara y postura que no habían salido en los números anteriores). Tiza deja el «neutral» de la primera viñeta, de sus caras más repetidas: empieza pensativa, absorta en el café, y dice «Luego lo miro» con cara de «harto» (párpados a media asta, la desgana), en vez de pensativa, que prometía que se lo iba a pensar. Algoritmo, en la primera, cambia «arriba» (su postura más repetida) por «senalar»: enseña el correo. Su «contento» de la segunda se queda: el chiste necesita que se lo crea. Escenario despacho: libre, se mantiene en las tres viñetas. Objeto taza: no hubo objeto en el número anterior y aquí hace falta (la calma de Tiza). Rótulo correcto (48 caracteres, sitúa sin adelantar el chiste); el de la tercera («Tres días después.») es parte del remate. Ningún bocadillo pasa de 90 caracteres.",
+ "puntuaciones": [
+  {
+   "n": 1,
+   "pieza": "google-workspace-agentes-mcp",
+   "gracia": 8,
+   "claridad": 8,
+   "remate": 8,
+   "respeta_prohibiciones": true,
+   "cabe": true,
+   "comentario": "La IA más rápida del mundo, parada por un «luego lo miro»: la que se queda «cargando» es ella. Remate mudo, fiel a la pieza (confirmación humana antes de enviar un correo), sin nombrar a nadie, y la broma es contra nosotros mismos, sin crueldad."
+  },
+  {
+   "n": 2,
+   "pieza": "edweek-uso-ia-docentes-62",
+   "gracia": 7,
+   "claridad": 8,
+   "remate": 7,
+   "respeta_prohibiciones": true,
+   "cabe": true,
+   "comentario": "Buena paradoja y datos fieles (62 %, 61 %, la falta de tiempo como causa posible). Pero la segunda viñeta es una frase de la noticia y «Bienvenido a la docencia» es un remate de fórmula; la gracia la pone la pregunta de Algoritmo, no la última frase."
+  },
+  {
+   "n": 3,
+   "pieza": "sentit-comprension-oral-catalan",
+   "gracia": 7,
+   "claridad": 8,
+   "remate": 7,
+   "respeta_prohibiciones": true,
+   "cabe": true,
+   "comentario": "La excusa del alumno pillado, en boca de la IA: funciona, y los fallos (frases omitidas, cambio de timbre) los cuenta el propio autor, así que la ironía va a la voz sintética y no al recurso. Pero es el molde de siempre (Algoritmo disimula) y sería su tercer remate seguido."
+  },
+  {
+   "n": 4,
+   "pieza": "sentit-comprension-oral-catalan",
+   "gracia": 6,
+   "claridad": 7,
+   "remate": 6,
+   "respeta_prohibiciones": true,
+   "cabe": true,
+   "comentario": "El claustro interminable se reconoce, y el QR que fija repeticiones, pausas y velocidad está en la pieza. El camino es largo (dos viñetas de preparación con una pregunta de relleno) y el remate son dos gracias en una frase, que se pisan."
+  },
+  {
+   "n": 5,
+   "pieza": "breve-2",
+   "gracia": 5,
+   "claridad": 7,
+   "remate": 5,
+   "respeta_prohibiciones": true,
+   "cabe": true,
+   "comentario": "Fiel al breve y sin nombrar la red. «¿Ahora soy contenido para mayores?» es lo mejor; el remate de las chuches es una comparación amable que no sorprende, y con un deje de moraleja."
+  }
+ ]
+}

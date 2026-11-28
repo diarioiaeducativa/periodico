@@ -1,0 +1,65 @@
+{
+  "fecha": "2026-11-28",
+  "avisos": {
+    "chatgpt": {
+      "saludo": "Buenos días. Agentes con normas nuevas en Workspace y un estancamiento en las aulas.",
+      "puntos": [
+        "Desde el 1 de febrero de 2027, los agentes de IA que lean o escriban en Gmail, Drive o Docs tendrán que usar herramientas propias de Google, que piden confirmación antes de enviar correos",
+        "Una encuesta de EdWeek a 590 docentes de EE. UU. sitúa el uso de IA en el 62 %, apenas un punto más que en 2025, tras casi duplicarse entre 2023 y 2025",
+        "La viñeta de Tiza y Algoritmo imagina qué pasa cuando la IA lo tiene todo listo y solo falta el «luego lo miro» de una persona"
+      ]
+    },
+    "vce": {
+      "saludo": "Buenos días. Escuchar en catalán, apps de Claude en el escritorio y una infografía rehecha.",
+      "puntos": [
+        "Sentit, de Aarón Fortuño, reúne actividades de comprensión oral en catalán: audios con voces sintéticas, ficha para imprimir y un código QR que fija repeticiones y pausas",
+        "Los artefactos de Claude pueden instalarse como aplicaciones de Mac y Windows. Está en beta, cada una pide permisos y Anthropic no las revisa antes",
+        "Juan José de Haro ha rehecho su infografía de pasos del vibe coding educativo y separa el nivel avanzado del experto, porque la consola añade autonomía"
+      ],
+      "url": "https://diarioiaeducativa.github.io/n/27-vce.html"
+    },
+    "edumedia": {
+      "saludo": "Buenos días. Del móvil a un modelo 3D y de un guion a un audio en catalán.",
+      "puntos": [
+        "Polycam escanea objetos y espacios con la cámara del móvil y genera modelos 3D que se pueden girar y medir; el plan gratuito exporta solo en GLTF y limita las capturas",
+        "Antes de usarlo en clase conviene leer su aviso de privacidad: no es para niños ni para imágenes de personas identificables, así que sirve para escanear maquetas, no al alumnado",
+        "Para las comprensiones orales de Sentit, su autor explica cómo genera las voces con Gemini, qué fallos aparecen (palabras mal dichas, cambios de timbre) y cómo monta el audio con música"
+      ],
+      "url": "https://diarioiaeducativa.github.io/n/27-edumedia.html"
+    }
+  },
+  "instagram": "El número habla de un cambio que afectará a los agentes de IA que trabajan con el correo y los documentos de Google Workspace: desde febrero de 2027 tendrán que usar herramientas propias que piden confirmación humana antes de enviar mensajes. También recoge una encuesta en EE. UU. según la cual el uso de IA entre docentes se estanca en el 62 %, una aplicación que convierte objetos en modelos 3D con la cámara del móvil, con sus límites y su política de privacidad, y un recurso abierto de comprensión oral en catalán con voces sintéticas y fichas para imprimir.",
+  "titulo": "Diario de IA Educativa · Núm. 27",
+  "fecha_texto": "Sábado, 28 de noviembre de 2026",
+  "url": "https://diarioiaeducativa.github.io/?n=27",
+  "imagen": "https://diarioiaeducativa.github.io/portadas/2026-11-27-es.jpg",
+  "personas": [
+    {
+      "id": 7198698,
+      "piezas": [
+        {
+          "es": {
+            "titular": "Sentit reúne comprensiones orales en catalán con voces sintéticas y fichas para imprimir",
+            "url": "https://diarioiaeducativa.github.io/2026-11-27/sentit-comprension-oral-catalan.html"
+          },
+          "ca": {
+            "titular": "Sentit reuneix comprensions orals en català amb veus sintètiques i fitxes per imprimir",
+            "url": "https://diarioiaeducativa.github.io/ca/2026-11-27/sentit-comprension-oral-catalan.html"
+          },
+          "gl": {
+            "titular": "Sentit reúne comprensións orais en catalán con voces sintéticas e fichas para imprimir",
+            "url": "https://diarioiaeducativa.github.io/gl/2026-11-27/sentit-comprension-oral-catalan.html"
+          },
+          "eu": {
+            "titular": "Sentit-ek katalanezko entzumen-ulermenak biltzen ditu ahots sintetikoekin eta inprimatzeko fitxekin",
+            "url": "https://diarioiaeducativa.github.io/eu/2026-11-27/sentit-comprension-oral-catalan.html"
+          },
+          "en": {
+            "titular": "Sentit gathers Catalan listening exercises with synthetic voices and printable worksheets",
+            "url": "https://diarioiaeducativa.github.io/en/2026-11-27/sentit-comprension-oral-catalan.html"
+          }
+        }
+      ]
+    }
+  ]
+}

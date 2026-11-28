@@ -1,0 +1,62 @@
+{
+ "fecha": "2026-11-27",
+ "piezas": [
+  {
+   "id": "semana-del-repositorio",
+   "seccion": "vibecoding",
+   "repositorio": "semana",
+   "importancia": 2,
+   "grupo": "vce",
+   "antetitulo": "La semana del repositorio",
+   "titular": "Máquinas simples, privacidad, viajes en tren y comprensión oral, nuevos en el repositorio",
+   "entradilla": "El Repositorio de recursos de Vibe Coding Educativo suma en la semana que termina el 27 de noviembre cuatro recursos: ninguno queda por presentar aquí, porque los cuatro ya tuvieron su artículo.",
+   "cuerpo": [
+    "La semana reúne una propuesta de física con máquinas simples de Mercè Feu, una guía sobre la privacidad de las herramientas educativas de Juanjo de Haro, una agencia de viajes en tren de Felip Sarroca i Gil y un recurso de comprensión oral de Aarón Fortuño. Debajo se enlaza el artículo que el diario dedicó a cada uno."
+   ],
+   "recursos": [],
+   "fuentes": [
+    {
+     "titulo": "Repositorio de recursos de Vibe Coding Educativo",
+     "url": "https://vibe-coding-educativo.github.io/app_edu/"
+    }
+   ],
+   "comprobado": "Se ha leído la entrada del día: los cuatro recursos de la semana ya tuvieron su artículo (cifras cuadradas: 4 en la semana, 0 por presentar, 4 ya contados), así que no queda ninguno por abrir ni describir. Se ha abierto la web del repositorio (abre; el listado no carga sin JavaScript). La pieza resume la semana solo a partir de la lista de la entrada.",
+   "repaso": [
+    "Titular acortado a 89 caracteres (el original tenía 104, por encima del tope de 90) y sin afirmar «dos recursos en catalán», que no se podía confirmar con la entrada.",
+    "Quitado «en catalán» del recurso de Aarón Fortuño, no comprobado.",
+    "Cifras de la entradilla comprobadas con la entrada: 4 en la semana, 0 presentados, 4 ya contados."
+   ],
+   "ya_contados": [
+    {
+     "fecha": "2026-11-21",
+     "id": "maquina-rube-goldberg-simple",
+     "titulo": "Màquina de Rube Goldberg (amb màquines simples)",
+     "autoria": "Mercè Feu",
+     "url": "https://mfeu-edu.github.io/simulador-maquines-simples/"
+    },
+    {
+     "fecha": "2026-11-23",
+     "id": "guia-privacidad-herramientas-intef",
+     "titulo": "Guía de privacidad de herramientas educativas",
+     "autoria": "Juanjo de Haro",
+     "url": "https://guia-privacidad-edu.github.io/"
+    },
+    {
+     "fecha": "2026-11-26",
+     "id": "estacion-tren-agencia-viajes",
+     "titulo": "Pròxima sortida · Agència de viatges en tren",
+     "autoria": "Felip Sarroca i Gil",
+     "url": "http://ja.cat/estaciodetren"
+    },
+    {
+     "fecha": "2026-11-27",
+     "id": "sentit-comprension-oral-catalan",
+     "titulo": "Sentit · Comprensió oral",
+     "autoria": "Aarón Fortuño",
+     "url": "https://sentit.ortogra.fi/"
+    }
+   ]
+  }
+ ],
+ "descartado": []
+}
