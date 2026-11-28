@@ -968,6 +968,7 @@ SCRIPT_FILAS = """<script>
     document.querySelectorAll('.fila-breves-hu').forEach(function(g){
       var b=g.children[0],h=g.children[1],rs=[].slice.call(g.querySelectorAll('.breve-relleno')),bp=b&&b.querySelector('.bloque-piezas');
       g.style.gridTemplateColumns='';rs.forEach(function(r){r.hidden=true;});
+      var il=h&&h.querySelector('.ilu');if(il){il.style.cssFloat='';il.style.width='';il.style.margin='';}
       document.querySelectorAll('.sec-breves:not(.breves-dia) [data-breve]').forEach(function(x){x.hidden=false;});
       if(!b||!h||getComputedStyle(g).gridTemplateColumns.split(' ').length<2)return;
       [b,h].forEach(function(c){c.querySelectorAll(ENT).forEach(suelta);});
@@ -977,6 +978,11 @@ SCRIPT_FILAS = """<script>
         var x=hueco(b,h);if(!m||x<m.x-4)m={r:r,x:x,n:bp&&bp.style.getPropertyValue('--n')};});
         g.style.gridTemplateColumns='minmax(0,'+m.r[0]+'fr) minmax(0,'+m.r[1]+'fr)';if(bp&&m.n)bp.style.setProperty('--n',m.n);return m;}
       var m=mejor(),k=0;
+      /* Si los breves siguen más altos que «Hace un año» incluso en su reparto más estrecho, el díptico deja de ir
+         al lado del titular y ocupa todo el ancho del recuadro, que así crece hacia abajo; se queda solo si deja
+         claramente menos hueco */
+      if(il&&m.x>40&&fondo(b)>fondo(h)){var m0=m;il.style.cssFloat='none';il.style.width='100%';il.style.margin='0.3rem 0 0.6rem';m=mejor();
+        if(!(m.x<m0.x-4)){il.style.cssFloat='';il.style.width='';il.style.margin='';m=mejor();}}
       while(m.x>40&&k<rs.length&&fondo(b)<fondo(h)){rs[k].hidden=false;k++;m=mejor();}
       rs.slice(0,k).forEach(function(r){document.querySelectorAll('.sec-breves:not(.breves-dia) [data-breve="'+r.dataset.breve+'"]').forEach(function(x){x.hidden=true;});});
     });
