@@ -1,0 +1,41 @@
+{
+  "fecha": "2099-01-05",
+  "hay_edicion": true,
+  "fondo": "edumedia",
+  "motivo": "Vheer sigue en línea y con versión gratuita sin marca de agua; no ha salido en el diario; sirve para imagen y vídeo en clase, y sus condiciones (datos, edad, uso comercial) constan en su web. Qwen Chat no se pudo comprobar en su web oficial.",
+  "piezas": [{
+    "id": "vheer-imagenes-y-video-gratis",
+    "seccion": "multimedia",
+    "importancia": 3,
+    "grupo": "edumedia",
+    "antetitulo": "EduMediaren artxibotik",
+    "titular": "Vheer-ek irudiak eta bideoak sortzen ditu nabigatzailetik, ur-marka gabeko plan doako batekin",
+    "entradilla": "Webgune honek irudi- eta bideo-sorgailuak eta berriz ukitzeko hainbat tresna biltzen ditu leku bakar batean. Komeni da lehenago erabilera-baldintzak irakurtzea.",
+    "cuerpo": [
+      "[Vheer](https://vheer.com/) testu batetik edo beste irudi batetik abiatuta irudiak eta bideoak sortzen dituen webgunea da, eta baliabide osagarriak ere eskaintzen ditu: atzealdea kentzea, aurpegiak lausotzea, tamaina aldatzea edo irudi bateko testua ateratzea. Taldean aukera doako gisa partekatu zen; probatu zuen pertsona baten arabera, haren irudiak Googleren irudien azpitik gelditzen dira zertxobait, eta oraingoz ez zuela ezer balio adierazi zen.",
+      "Gelan, adibidez, irakasleek ipuin kolektibo baten ilustrazioak prestatzeko balio du: eszena bakoitzaren deskribapena idatzi eta hitz bakar bat aldatzean zer aldatzen den alderatu daiteke. Aurpegien lausotzea erabil daiteke argazki bat proiektatu aurretik.",
+      "Hasteko, nahikoa da webgunea irekitzea, tresna aukeratzea eta *prompt* bat (ereduari emandako jarraibidea) idaztea. Webgunearen orri nagusiaren arabera, izena eman gabe eta ur-markarik gabe has daiteke. Haren [prezioen orriaren](https://vheer.com/pricing) arabera, 2026ko azaroaren 28an plan doakoak 50 kreditu ematen ditu hilean erabilera pertsonalerako; ordainpeko planak 9,99 dolarretik hasten dira hilean, eta eredu premiumetarako sarbidea ematen dute.",
+      "Haren [erabilera-baldintzen](https://vheer.com/terms) arabera, Vheer-ek ez ditu erabiltzaileen edukiak ereduak entrenatzeko erabiltzen, eta igotako edo sortutako fitxategiak sei orduro ezabatzen ditu. Plan doakoan, kalitate handiko ereduaren eta Kontext editorearen irudiak erabilera pertsonal eta ez-komertzialerako soilik dira. Baldintzek ez dute gutxieneko adinik ezartzen; hortaz, komeni da irakaslea izatea tresna erabiltzen duena, ikasleek beren argazkirik edo beste inorenik igo gabe."
+    ],
+    "fuentes": [
+      {"titulo": "Vheer (ingelesez)", "url": "https://vheer.com/"},
+      {"titulo": "Vheer: erabilera-baldintzak (ingelesez)", "url": "https://vheer.com/terms"},
+      {"titulo": "Vheer: prezioak (ingelesez)", "url": "https://vheer.com/pricing"}
+    ],
+    "herramienta": {"nombre": "Vheer", "url": "https://vheer.com/"},
+    "mensaje": {"grupo": "edumedia", "id": 1499},
+    "comprobado": "Revisado el 28-11-2026 en vheer.com (portada, precios y condiciones): herramientas listadas, inicio sin registro y sin marca de agua, plan gratuito de 50 créditos al mes para uso personal, planes de pago desde 9,99 dólares al mes con modelos premium, sin entrenamiento con el contenido, borrado cada 6 horas, uso no comercial en el plan gratuito solo para el modelo de calidad y Kontext Editor (las demás herramientas admiten uso comercial), sin edad mínima indicada. La portada anuncia «generaciones ilimitadas», pero la página de precios da 50 créditos: se cuenta la de precios. Mensaje 1499 de EduMediaIAG comprobado (comparación con Imagen 4 de Google, «por los momentos es gratis»). Nada sobre Vheer en el diario (buscar y parecidas).",
+    "ilustracion_alt": "Esaldi bat idatzita daukan txartel batek, «Esaldia» etiketarekin, gezi batez eszena bereko bi emaitzetara garamatza, «Irudia» eta «Bideoa»; «Irakaslea» etiketadun esku batek bietatik bat hautatzen du eta irudiarena egiaztatzen du.",
+    "ilustracion": "Dos paneles: a la izquierda una frase escrita en una tarjeta; a la derecha, la misma escena como imagen y como fotograma de un vídeo, con una mano de docente eligiendo entre ambas."
+  }],
+  "breves": [],
+  "descartado": [
+    "mensaje 177: Qwen Chat (chat.qwen.ai) no devuelve contenido al abrirla y no hay fuente oficial que confirme hoy el vídeo gratuito, sus límites ni su edad mínima"
+  ],
+  "repaso": [
+    "Párrafo 1: el grupo no la presentó como «alternativa a los generadores de pago» ni advirtió de cambios de condiciones; se recoge lo dicho (algo por debajo de Google, de momento gratis).",
+    "Párrafo 3: «a fecha del último control» sustituido por «a 28 de noviembre de 2026»; enlazadas en su primera mención la página de precios; añadido que los planes de pago dan acceso a los modelos premium.",
+    "Párrafo 4: enlazadas las condiciones de uso; la restricción de uso no comercial se precisa (solo modelo de calidad y Kontext Editor; las demás herramientas admiten uso comercial).",
+    "Párrafo 2 acortado para mantener el cuerpo en 250 palabras o menos; «comprobado» actualizado."
+  ]
+}

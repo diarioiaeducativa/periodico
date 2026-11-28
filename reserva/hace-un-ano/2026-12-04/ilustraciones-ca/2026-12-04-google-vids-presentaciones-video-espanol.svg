@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340">
+  <path class="t" d="M300 30v290"/>
+  <text class="lbl" x="150" y="50" text-anchor="middle">Des. 2025</text>
+  <text class="a lbl" x="450" y="50" text-anchor="middle">Avui</text>
+  <!-- Entonces -->
+  <rect class="t" x="30" y="100" width="100" height="70" rx="4"/>
+  <path class="t" d="M44 118h50M44 134h72M44 150h40"/>
+  <path class="t" d="M142 135h34m-9-8 9 8-9 8"/>
+  <rect class="t" x="190" y="100" width="80" height="70" rx="4"/>
+  <path class="ft" d="M221 122v26l22-13z"/>
+  <path class="t" d="M190 192h80M190 206h56"/>
+  <text class="lbl" x="150" y="290" text-anchor="middle">Només anglès</text>
+  <!-- Hoy -->
+  <rect class="t" x="330" y="100" width="100" height="70" rx="4"/>
+  <path class="t" d="M344 118h50M344 134h72M344 150h40"/>
+  <path class="a" d="M442 135h34m-9-8 9 8-9 8"/>
+  <rect class="a fa" x="490" y="100" width="80" height="70" rx="4"/>
+  <path class="fz" d="M521 122v26l22-13z"/>
+  <path class="a" d="M490 192h80M490 206h56"/>
+  <g class="a li2" transform="translate(522 222) scale(2)"><!-- Lucide: pencil (ISC) --><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"/><path d="m15 5 4 4"/></g>
+  <text class="a lbl" x="400" y="260" text-anchor="middle">Castellà</text>
+  <text class="a lbl" x="400" y="290" text-anchor="middle">Guió editable</text>
+</svg>
